@@ -1,0 +1,11 @@
+{
+  "role": "qa",
+  "name": "校验官",
+  "alias": "守门人",
+  "model": "minimax-m2.7",
+  "status": "active",
+  "task": null,
+  "updated_at": "2026-05-08T20:58+08:00",
+  "capabilities": ["prd_review", "architecture_review", "decision_review", "release_gate"],
+  "trigger": "manual（产出者群内说「送审」→ Lucia spawn session）"
+}

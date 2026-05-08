@@ -1,0 +1,47 @@
+[
+  {
+    "name": "hn-signals",
+    "schedule": "00 02 * * *",
+    "timeout": 120,
+    "model": "minimax-m2.7",
+    "script": "cron/scripts/hn_signals.py",
+    "enabled": true,
+    "description": "Hacker News Top 10 signals collector (02:00)"
+  },
+  {
+    "name": "github-trending-signals",
+    "schedule": "02 02 * * *",
+    "timeout": 120,
+    "model": "minimax-m2.7",
+    "script": "cron/scripts/github_trending_signals.py",
+    "enabled": true,
+    "description": "GitHub Trending signals collector (02:02)"
+  },
+  {
+    "name": "arxiv-signals",
+    "schedule": "04 02 * * *",
+    "timeout": 120,
+    "model": "minimax-m2.7",
+    "script": "cron/scripts/arxiv_signals.py",
+    "enabled": true,
+    "description": "arXiv cs.AI/cs.LG latest papers (02:04)"
+  },
+  {
+    "name": "producthunt-signals",
+    "schedule": "06 02 * * *",
+    "timeout": 120,
+    "model": "minimax-m2.7",
+    "script": "cron/scripts/producthunt_signals.py",
+    "enabled": true,
+    "description": "ProductHunt daily 50 products via RSS (02:06)"
+  },
+  {
+    "name": "reddit-signals",
+    "schedule": "08 02 * * 1",
+    "timeout": 120,
+    "model": "minimax-m2.7",
+    "script": "cron/scripts/reddit_signals.py",
+    "enabled": true,
+    "description": "Reddit r/startups + r/Entrepreneur weekly (02:08 Mon, IP-blocked pending fix)"
+  }
+]

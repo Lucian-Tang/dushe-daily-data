@@ -1,0 +1,118 @@
+# 行业热点日报 - 信源配置
+# 由 Thomas 制定 (industry-daily-sources-20260507.md)
+# Stephen 更新于 2026-05-07
+
+sources:
+  # ===== 自动驾驶 =====
+  - name: "Waymo Blog"
+    url: "https://waymo.com/blog/feed/"
+    type: "rss"
+    category: "auto"
+    lang: "en"
+    priority: 1
+
+  - name: "The Verge Transportation"
+    url: "https://www.theverge.com/rss/transportation/index.xml"
+    type: "rss"
+    category: "auto"
+    lang: "en"
+    priority: 2
+
+  - name: "机器之心 自动驾驶"
+    url: "https://www.jiqizhixin.com/section/auto"
+    type: "rss"
+    category: "auto"
+    lang: "zh"
+    priority: 2
+
+  - name: "HN Autonomous Driving"
+    url: "https://hnrss.org/newest?q=autonomous+driving"
+    type: "rss"
+    category: "auto"
+    lang: "en"
+    priority: 3
+
+  - name: "arXiv Robotics"
+    url: "https://arxiv.org/rss/cs.RO"
+    type: "rss"
+    category: "auto"
+    lang: "en"
+    priority: 3
+
+  # ===== 机器人 =====
+  - name: "IEEE Spectrum Robotics"
+    url: "https://spectrum.ieee.org/robotics/rss"
+    type: "rss"
+    category: "robot"
+    lang: "en"
+    priority: 1
+
+  - name: "Boston Dynamics Blog"
+    url: "https://www.bostondynamics.com/blog/rss.xml"
+    type: "rss"
+    category: "robot"
+    lang: "en"
+    priority: 1
+
+  - name: "机器之心 机器人"
+    url: "https://www.jiqizhixin.com/section/robotics"
+    type: "rss"
+    category: "robot"
+    lang: "zh"
+    priority: 2
+
+  - name: "arXiv Robotics (duplicate, maps to auto)"
+    url: "https://arxiv.org/rss/cs.RO"
+    type: "rss"
+    category: "robot"
+    lang: "en"
+    priority: 3
+
+  # ===== AI =====
+  - name: "Anthropic Research Blog"
+    url: "https://www.anthropic.com/news/rss"
+    type: "rss"
+    category: "ai"
+    lang: "en"
+    priority: 1
+
+  - name: "OpenAI Blog"
+    url: "https://openai.com/blog/rss/"
+    type: "rss"
+    category: "ai"
+    lang: "en"
+    priority: 1
+
+  - name: "量子位 AI"
+    url: "https://www.qbitai.com/"
+    type: "rss"
+    category: "ai"
+    lang: "zh"
+    priority: 2
+
+  - name: "HN AI"
+    url: "https://hnrss.org/newest?tags=ai"
+    type: "rss"
+    category: "ai"
+    lang: "en"
+    priority: 3
+
+  - name: "arXiv cs.AI"
+    url: "https://arxiv.org/rss/cs.AI"
+    type: "rss"
+    category: "ai"
+    lang: "en"
+    priority: 3
+
+  - name: "arXiv cs.LG"
+    url: "https://arxiv.org/rss/cs.LG"
+    type: "rss"
+    category: "ai"
+    lang: "en"
+    priority: 3
+
+# 每个赛道最多选多少条进入日报
+limits:
+  auto: 5
+  robot: 5
+  ai: 5

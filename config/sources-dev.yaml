@@ -1,0 +1,63 @@
+# 开发者日报 - 信源配置
+
+sources:
+  # ===== GitHub 热门 =====
+  - name: "GitHub Trending Daily"
+    url: "https://github.com/trending?since=daily"
+    type: "web"
+    category: "github"
+    lang: "en"
+    priority: 1
+
+  - name: "GitHub Trending Weekly"
+    url: "https://github.com/trending?since=weekly"
+    type: "web"
+    category: "github"
+    lang: "en"
+    priority: 1
+
+  # ===== HN Show HN (新项目展示) =====
+  - name: "HN Show HN"
+    url: "https://hnrss.org/newest?q=Show+HN"
+    type: "rss"
+    category: "showcase"
+    lang: "en"
+    priority: 1
+
+  # ===== HN 热门 (技术讨论) =====
+  - name: "HN Front Page"
+    url: "https://hnrss.org/frontpage"
+    type: "rss"
+    category: "discussion"
+    lang: "en"
+    priority: 2
+
+  # ===== V2EX 技术 (国内灵感) =====
+  - name: "V2EX Tech"
+    url: "https://www.v2ex.com/feed/tech.xml"
+    type: "rss"
+    category: "discussion"
+    lang: "zh"
+    priority: 2
+
+  # ===== V2EX 分享创造 =====
+  - name: "V2EX Share"
+    url: "https://www.v2ex.com/feed/create.xml"
+    type: "rss"
+    category: "showcase"
+    lang: "zh"
+    priority: 2
+
+  # ===== arXiv 最新 (捕获前沿) =====
+  - name: "arXiv cs.AI New"
+    url: "https://arxiv.org/rss/cs.AI"
+    type: "rss"
+    category: "research"
+    lang: "en"
+    priority: 2
+
+limits:
+  github: 5
+  showcase: 3
+  discussion: 3
+  research: 3
