@@ -25,7 +25,8 @@
 ## 模型使用原则
 - 主 Agent 对话: deepseek-v4-pro（品质优先）
 - Subagent/Cron: minimax-m2.7（成本优先，包月不浪费）
-- Spawn subagent 时必须传 model 参数: `sessions_spawn(task, model="minimax-m2.7")`
+- **Stephen（研发）：deepseek-v4-pro**（代码/架构需品质模型）
+- Spawn subagent 时必须传 model 参数
 - 复杂子任务（需深度推理）例外: 使用 `deepseek-v4-pro`
 
 ## 重要决策

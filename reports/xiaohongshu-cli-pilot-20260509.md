@@ -191,4 +191,25 @@ XHS_DATA_DIR=/root/.openclaw/workspace/data/opportunities/xiaohongshu
 
 ---
 
+## 附录：cron 注册参数
+
+```bash
+# ---- Cron 注册命令 ----
+# 环境变量
+export XHS_BINARY=/root/.openclaw/workspace/venv-xhs/bin/xhs
+export XHS_KEYWORDS="AI,LLM,大模型,创业,工具,开源,SaaS"
+export XHS_DATA_DIR=/root/.openclaw/workspace/data/opportunities/xiaohongshu
+
+# 每天 09:00 和 15:00 采集
+0 9,15 * * * /root/.openclaw/workspace/cron/scripts/xiaohongshu_signals.py >> /root/.openclaw/workspace/logs/xiaohongshu-cron.log 2>&1
+
+# 独立测试（无需 cron）
+XHS_BINARY=/root/.openclaw/workspace/venv-xhs/bin/xhs python3 /root/.openclaw/workspace/cron/scripts/xiaohongshu_signals.py
+```
+
+**Cookie 刷新提醒**: 每 6 天需要重新从浏览器导出 Cookie 并更新 `~/.xiaohongshu-cli/cookies.json`。
+设置日历提醒提前 1 天触发。
+
+---
+
 *Stephen | 2026-05-09*

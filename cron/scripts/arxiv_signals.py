@@ -57,7 +57,7 @@ def parse_arxiv_xml(xml_data):
             title = entry.find("atom:title", ns)
             summary = entry.find("atom:summary", ns)
             published = entry.find("atom:published", ns)
-           arxiv_id = entry.find("atom:id", ns)
+            arxiv_id = entry.find("atom:id", ns)
             
             title_text = title.text.strip().replace("\n", " ") if title is not None else ""
             summary_text = summary.text.strip().replace("\n", " ") if summary is not None else ""
