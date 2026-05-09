@@ -1,0 +1,32 @@
+{
+  "date": "2026-05-09",
+  "category": "cs.AI",
+  "fetched_at": "2026-05-09T16:10:15Z",
+  "papers": [
+    {
+      "id": "2605.06651",
+      "title": "AI Co-Mathematician: Accelerating Mathematicians with Agentic AI",
+      "abstract": "We introduce the AI co-mathematician, a workbench for mathematicians to interactively leverage AI agents to pursue open-ended research. The AI co-mathematician is optimized to provide holistic support for the exploratory and iterative reality of mathematical workflows, including ideation, literature search, computational exploration, theorem proving and theory building. By providing an asynchronous, stateful workspace that manages uncertainty, refines user intent, tracks failed hypotheses, and outputs native mathematical artifacts, the system mirrors human collaborative work."
+    },
+    {
+      "id": "2605.06641",
+      "title": "A Benchmark for Ceramic Glaze Property Prediction and Image Generation",
+      "abstract": "Developing ceramic glazes is a costly, time-consuming process of trial and error due to complex chemistry, placing a significant burden on independent artists. While recent advances in multimodal AI offer a modern solution, the field lacks the large-scale datasets required to train these models. We propose GlazyBench, the first dataset for AI-assisted glaze design. Comprising 23,148 real glaze formulations, GlazyBench supports two primary tasks: predicting post-firing surface properties, such as color and transparency, from raw materials, and generating accurate visual representations of the glaze based on these properties. We establish comprehensive baselines for property prediction using traditional machine learning and large language models, alongside image generation benchmarks using deep generative and large multimodal models. Our experiments demonstrate promising yet challenging results. GlazyBench pioneers a new research direction in AI-assisted material design, providing a standardized benchmark for systematic evaluation."
+    },
+    {
+      "id": "2605.06638",
+      "title": "Can RL Teach Long-Horizon Reasoning to LLMs? Expressiveness Is Key",
+      "abstract": "Reinforcement learning (RL) has been applied to improve large language model (LLM) reasoning, yet the systematic study of how training scales with task difficulty has been hampered by the lack of controlled, scalable environments. We introduce ScaleLogic, a synthetic logical reasoning framework that offers independent control over two axes of difficulty: the depth of the required proof planning (i.e., the horizon) and the expressiveness of the underlying logic. Our proposed framework supports a wide range of logics: from simple implication-only logic (\"if-then\") towards more expressive first-order reasoning with conjunction (\"and\"), disjunction (\"or\"), negation (\"not\"), and universal quantification (\"for all\"). Using this framework, we show that the RL training compute $T$ follows a power law with respect to reasoning depth $D$ ($T \\propto D^{\\gamma}$, $R^{2} > 0.99$), and that the scaling exponent $\\gamma$ increases monotonically with logical expressiveness, from $1.04$ to $2.60$. On downstream mathematics and general reasoning benchmarks, more expressive training settings yield both larger performance gains (up to $+10.66$ points) and more compute-efficient transfer compared to less expressive settings, demonstrating that what a model is trained on, not just how much it is trained, shapes downstream transfer. We further show that the power-law relationship holds across multiple RL methods, and curriculum-based training substantially improves scaling efficiency."
+    },
+    {
+      "id": "2605.06623",
+      "title": "Joint Prompt Optimization for LLM-based Multi-Agent Systems",
+      "abstract": "Large language model (LLM)-based Multi-agent systems (MAS) have shown promise in tackling complex collaborative tasks, where agents are typically orchestrated via role-specific prompts. While the quality of these prompts is pivotal, jointly optimizing them across interacting agents remains a non-trivial challenge, primarily due to the misalignment between local agent objectives and holistic system goals. To address this, we introduce MASPO, a novel framework designed to automatically and iteratively refine prompts across the entire system. A core innovation of MASPO is its joint evaluation mechanism, which assesses prompts not merely by their local validity, but by their capacity to facilitate downstream success for successor agents. This effectively bridges the gap between local interactions and global outcomes without relying on ground-truth labels. Furthermore, MASPO employs a data-driven evolutionary beam search to efficiently navigate the high-dimensional prompt space. Extensive empirical evaluations across 6 diverse tasks demonstrate that MASPO consistently outperforms state-of-the-art prompt optimization methods, achieving an average accuracy improvement of 2.9. We release our code at https://github.com/wangzx1219/MASPO."
+    },
+    {
+      "id": "2605.06614",
+      "title": "Learning Skill Curation for Self-Evolving Agents",
+      "abstract": "LLM-based agents are increasingly deployed to handle streaming tasks, yet they often remain one-off problem solvers that fail to learn from past interactions. Reusable skills distilled from experience provide a natural substrate for self-evolution, where high-quality skill curation serves as the key bottleneck. Existing approaches either rely on manual skill curation, prescribe heuristic skill operations, or train for short-horizon skill operations. However, they still struggle to learn complex long-term curation policies from indirect and delayed feedback. To tackle this challenge, we propose SkillOS, an experience-driven RL training recipe for learning skill curation in self-evolving agents. SkillOS pairs a frozen agent executor that retrieves and applies skills with a trainable skill curator that updates an external SkillRepo from accumulated experience. To provide lear"
+    }
+  ]
+}
