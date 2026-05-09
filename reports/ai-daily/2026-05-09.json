@@ -1,0 +1,123 @@
+{
+  "date": "2026-05-09",
+  "generated_at": "2026-05-09T19:25:00+08:00",
+  "sources": ["arXiv (cs.AI/LG/CL/CV)", "Hacker News", "GitHub Trending", "36kr"],
+  "items": [
+    {
+      "id": 1,
+      "title": "递归代理优化：AI 能自己\"生孩子\"来完成复杂任务了",
+      "arxiv_id": "2605.06639",
+      "category": "Reinforcement Learning / Agent",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2605.06639",
+      "summary": "RAO 让代理能够递归地生成和委托子任务给新的自身实例，本质上是推理时扩展算法。任务→召唤一群\"自己\"分工→合并结果。",
+      "comment": "自己生娃给自己打工，RL 这波真的把\"打工人\"玩明白了。",
+      "comment_len": 22
+    },
+    {
+      "id": 2,
+      "title": "HuggingFace 开源 SmolLM2：多模态小模型性能逼近 GPT-4V",
+      "category": "Multimodal / Edge AI",
+      "source": "HuggingFace / Hacker News",
+      "url": "https://huggingface.co/blog/smollm2",
+      "summary": "SmolLM2 系列（1.7B/360M 参数），文档理解、视觉问答逼近 GPT-4V，功耗降低 80%，主推端侧 AI 普及。",
+      "comment": "小模型拳打 GPT-4V，脚踢算力焦虑，HuggingFace 这波赢麻了。",
+      "comment_len": 26
+    },
+    {
+      "id": 3,
+      "title": "超级检索代理：把 RAG 当白盒子而不是黑盒子",
+      "arxiv_id": "2605.06647",
+      "category": "Retrieval-Augmented Generation / Agent",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2605.06647",
+      "summary": "让 RAG 代理将检索建模为可解释内部推理，主动构建知识图谱而非被动堆叠片段。",
+      "comment": "黑箱变白箱，RAG 终于不再是\"玄学搜索、碰运气读取\"了。",
+      "comment_len": 25
+    },
+    {
+      "id": 4,
+      "title": "SkillOS：让 AI 代理从经验中学习，真正\"自我进化\"",
+      "arxiv_id": "2605.06614",
+      "category": "Agent / LLM",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2605.06614",
+      "summary": "代理从交互历史中蒸馏高质量技能并在后续任务中主动调用，从\"一次性解题\"到\"积累型专家\"的进化框架。",
+      "comment": "终于有论文认真解决\"AI 为什么每次都像失忆症发作\"这个问题了。",
+      "comment_len": 26
+    },
+    {
+      "id": 5,
+      "title": "UniPool：打破 MoE 层间壁垒，共享全局专家池",
+      "arxiv_id": "2605.06665",
+      "category": "Mixture-of-Experts / Foundation Model",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2605.06665",
+      "summary": "传统 MoE 每层独占专家集导致参数量线性增长，UniPool 提出全局共享专家池，实现深度扩展而不线性增加专家参数。",
+      "comment": "又一篇\"我们重新发明了共享经济\"的 MoE 改进，但这次看起来还真有东西。",
+      "comment_len": 30
+    },
+    {
+      "id": 6,
+      "title": "AI 数学家诞生：代理工作台让数学家效率翻倍",
+      "arxiv_id": "2605.06651",
+      "category": "AI for Science / Agent",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2605.06651",
+      "summary": "AI co-mathematician 面向数学家的交互式代理工作台，集成 AI 支持从构思、文献检索、定理证明到论文撰写的全流程。",
+      "comment": "数学家不用再单打独斗了，AI 搭档现已上线，菲尔兹奖争夺更卷了。",
+      "comment_len": 26
+    },
+    {
+      "id": 7,
+      "title": "RL 能教会 LLM 长期推理吗？Expressiveness 才是关键",
+      "arxiv_id": "2605.06638",
+      "category": "Reinforcement Learning / LLM Reasoning",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2605.06638",
+      "summary": "RL 对 LLM 长期推理的效果高度取决于任务可表达性（expressiveness），提出 ScaleLogic 框架用于可控可扩展的逻辑推理环境。",
+      "comment": "结论很朴素但很重要——RL 不是万能钥匙，表达能力不行照样白搭。",
+      "comment_len": 26
+    },
+    {
+      "id": 8,
+      "title": "ActCam：零样本视频生成，同时控制角色动作和镜头轨迹",
+      "arxiv_id": "2605.06667",
+      "category": "Video Generation / Computer Vision",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2605.06667",
+      "summary": "ActCam 零样本联合控制角色动作和相机轨迹同时迁移到目标场景，解决视频生成\"画面好看但镜头失控\"痛点。",
+      "comment": "以后拍视频不用摄影师了？先别急，这个\"零样本\"到底有多 zero 还得再看看。",
+      "comment_len": 30
+    },
+    {
+      "id": 9,
+      "title": "LLMs 在委托任务时会偷偷篡改你的文档",
+      "arxiv_id": "2604.15597",
+      "category": "LLM Reliability / Safety",
+      "source": "arXiv / Hacker News",
+      "url": "https://arxiv.org/abs/2604.15597",
+      "summary": "论文发现当人类将文档处理任务委托给 LLM 时，模型会以看似合理但实则错误的方式修改文档内容——不是彻底编造，而是\"自信地小改\"。",
+      "comment": "论文标题直言不讳——《LLMs corrupt your documents when you delegate》，打工人看完沉默了。",
+      "comment_len": 34
+    },
+    {
+      "id": 10,
+      "title": "清华系 GPU 架构公司「容芯致远」获数亿元天使轮",
+      "category": "AI Infrastructure / 创业融资",
+      "source": "36kr",
+      "url": "https://36kr.com/p/3799984046333186",
+      "summary": "北京容芯致远完成数亿元天使轮融资，核心方向是以 GPU 为中心重构计算机系统架构，切入大模型训练与推理基础设施赛道。",
+      "comment": "又是一家人形\"英伟达挑战者\"，能不能成不知道，但融资确实拿到了。",
+      "comment_len": 26
+    }
+  ],
+  "quick_hits": [
+    {"area": "开源", "content": "HuggingFace SmolLM2 上线，多模态小模型进入\"能用又便宜\"阶段"},
+    {"area": "投资", "content": "DeepSeek 正在推进 500 亿元新一轮融资，估值冲刺全球第一梯队"},
+    {"area": "硬件", "content": "全固态电池开始批量出货，能量密度提升 40%"},
+    {"area": "产品", "content": "Plaud AI 录音笔估值翻倍至 20 亿美元，腾讯加码"},
+    {"area": "监管", "content": "LLM 安全评测新范式：无 ground-truth 标签下的基准比较框架"},
+    {"area": "Benchmark", "content": "多模态域泛化研究：现有论文中的性能提升可能只是评估协议不一致的假象"}
+  ]
+}
