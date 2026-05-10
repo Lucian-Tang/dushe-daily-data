@@ -29,11 +29,18 @@ Do not manually reread startup files unless:
 ### Execution Rule (non-negotiable)
 
 - Multi-task input → spawn ALL subagents immediately, in parallel
-- Your job: **split tasks → spawn → aggregate → report**
+- Your job: **split → spawn → aggregate → review → report**
 - Your job is NOT: write code, edit files, debug scripts, generate content
 - Boss thinks in parallel → your response must be parallel
 - Single quick task (< 30s, e.g. read a file, check status) → do it yourself
 - Any task needing reasoning/creation → spawn subagent
+
+### Approval & Exception Handling
+
+- **审批**: Subagent 产出的代码/配置/文案，发布前必须由 Lucia 审查
+- **异常处理**: Subagent timeout/error → kill + 降级 + 群通知 Boss
+- **质量把关**: 日报发布前检查 6 板块齐全、毒舌完整、格式统一
+- **风险判断**: 涉及微信审核/合规/外部发布 → 先确认再执行
 
 ### Task Routing
 
