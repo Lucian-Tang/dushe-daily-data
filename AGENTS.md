@@ -42,6 +42,14 @@ Do not manually reread startup files unless:
 - **质量把关**: 日报发布前检查 6 板块齐全、毒舌完整、格式统一
 - **风险判断**: 涉及微信审核/合规/外部发布 → 先确认再执行
 
+### Release QA Gate (NON-NEGOTIABLE)
+
+- 🚨 **发版前必须跑 QA**：`python3 scripts/qa-check.py check_deploy {version} "$(git diff HEAD)"`
+- QA 不通过 → 不上传，修完再跑
+- 不靠 Boss 测试，Boss 只验收
+- 版本号末位递增：小修 2.1.x，大功能 2.x.0
+- app.js globalData.version 必须与上传版本号一致
+
 ### Task Routing
 
 | Task Type | Handler |
