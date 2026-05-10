@@ -1,0 +1,50 @@
+/* ===== 引导页 ===== */
+.onboarding { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: #0A0A12; z-index: 100; }
+.onboard-swiper { height: 100vh; }
+.ob-slide { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; padding: 60rpx; text-align: center; }
+.ob-emoji { font-size: 120rpx; margin-bottom: 40rpx; }
+.ob-title { font-size: 36rpx; color: #E8E8E8; font-weight: 600; line-height: 1.5; }
+.ob-desc { font-size: 28rpx; color: #888; margin-top: 20rpx; line-height: 1.6; }
+.ob-cta { margin-top: 60rpx; padding: 24rpx 80rpx; background: linear-gradient(135deg, #FFD700, #FFA500); border-radius: 48rpx; animation: cta-pulse 2s ease-in-out infinite; }
+@keyframes cta-pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+.ob-cta-text { font-size: 34rpx; color: #0A0A12; font-weight: 700; }
+.ob-skip { position: absolute; top: 80rpx; right: 32rpx; padding: 16rpx; }
+.ob-skip text { font-size: 28rpx; color: #555; }
+
+/* ===== 主页 ===== */
+.page-home { min-height: 100vh; background: #0A0A12; display: flex; flex-direction: column; }
+
+/* 鉴赏Hero */
+.hero-swiper { height: 56vh; }
+.hero-card { position: relative; height: 100%; }
+.hero-image { width: 100%; height: 100%; display: block; }
+.hero-overlay { position: absolute; bottom: 0; left: 0; right: 0; padding: 48rpx 40rpx 36rpx; background: linear-gradient(transparent 0%, rgba(10,10,18,0.82) 45%, rgba(10,10,18,0.97) 100%); }
+.hero-tag { font-size: 22rpx; color: rgba(201,168,76,0.7); letter-spacing: 2rpx; margin-bottom: 14rpx; display: block; }
+.hero-title { font-size: 42rpx; color: #FFF; font-weight: 700; display: block; margin-bottom: 12rpx; letter-spacing: 3rpx; }
+.hero-desc { font-size: 26rpx; color: rgba(255,255,255,0.65); display: block; line-height: 1.7; }
+
+/* 反馈行 */
+.reaction-row { display: flex; align-items: center; justify-content: center; padding: 36rpx 48rpx; gap: 0; }
+.r-btn { display: flex; flex-direction: column; align-items: center; padding: 16rpx 36rpx; transition: opacity 0.2s; }
+.r-btn:active { opacity: 0.5; }
+.r-emoji { font-size: 34rpx; }
+.r-text { font-size: 20rpx; color: #555; margin-top: 8rpx; letter-spacing: 1rpx; }
+.r-sep { width: 1rpx; height: 32rpx; background: rgba(255,255,255,0.05); }
+
+/* 今日挑战 */
+.invite { display: flex; align-items: center; justify-content: space-between; margin: 20rpx 48rpx; padding: 32rpx 40rpx; border-top: 1rpx solid rgba(255,255,255,0.04); border-bottom: 1rpx solid rgba(255,255,255,0.04); }
+.invite:active { background: rgba(255,215,0,0.015); }
+.invite-text { font-size: 30rpx; color: #BBB; font-weight: 500; letter-spacing: 3rpx; }
+.invite-arrow { font-size: 32rpx; color: #C9A84C; }
+
+/* 段位行 */
+.rank-line { display: flex; align-items: center; margin: 28rpx 48rpx 40rpx; padding: 0; }
+.rank-line:active { opacity: 0.7; }
+.rl-icon { font-size: 34rpx; margin-right: 14rpx; }
+.rl-name { font-size: 26rpx; font-weight: 600; margin-right: 18rpx; min-width: 84rpx; }
+.rl-bar { flex: 1; height: 4rpx; background: rgba(255,255,255,0.06); border-radius: 2rpx; margin-right: 14rpx; }
+.rl-fill { height: 100%; border-radius: 2rpx; transition: width 0.6s ease; }
+.rl-score { font-size: 22rpx; color: #555; }
+
+/* 金线（每页底部统一元素） */
+.gold-line { height: 1rpx; background: linear-gradient(90deg, transparent, rgba(201,168,76,0.12), transparent); margin: 0 48rpx; flex-shrink: 0; }

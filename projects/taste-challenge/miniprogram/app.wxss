@@ -1,0 +1,26 @@
+/* 品味挑战 - 全局样式 */
+page {
+  background: #0A0A12;
+  color: #E8E8E8;
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif;
+  font-size: 28rpx;
+}
+
+view, text, image {
+  box-sizing: border-box;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  font-size: inherit;
+  line-height: inherit;
+}
+button::after {
+  border: none;
+}
+
+/* ===== 金线（全产品统一元素） ===== */
+.gold-line { height: 1rpx; background: linear-gradient(90deg, transparent, rgba(201,168,76,0.12), transparent); margin: 40rpx 48rpx 20rpx; flex-shrink: 0; }

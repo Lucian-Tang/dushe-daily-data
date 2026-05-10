@@ -1,0 +1,52 @@
+<view class="page-gallery">
+  <view class="gallery-header">
+    <text class="gallery-title">鉴赏</text>
+    <text class="gallery-sub">每天一段好内容，喂饱你的品味</text>
+  </view>
+
+  <swiper class="gallery-swiper" vertical="{{true}}" current="{{currentIdx}}" bindchange="onSwiperChange"
+    indicator-dots="{{false}}" circular="{{false}}">
+    <swiper-item wx:for="{{feedItems}}" wx:key="id">
+      <scroll-view class="feed-scroll" scroll-y="{{true}}" enhanced="{{true}}" show-scrollbar="{{false}}">
+        <view class="feed-item">
+          <!-- 内容图片/封面 -->
+          <view class="feed-image-wrap" wx:if="{{item.image}}">
+            <image class="feed-image" src="{{item.image}}" mode="aspectFill" lazy-load />
+            <view class="feed-image-badge">
+              <text>{{item.typeEmoji}} {{item.typeLabel}}</text>
+            </view>
+          </view>
+
+          <!-- 文字类内容的特殊展示 -->
+          <view class="feed-text-hero" wx:if="{{item.type === 'writing'}}">
+            <text class="feed-text-title">{{item.title}}</text>
+            <text class="feed-text-subtitle">{{item.subtitle}}</text>
+          </view>
+
+          <!-- 内容信息 -->
+          <view class="feed-info">
+            <text class="feed-source">{{item.source}}</text>
+            <text class="feed-name">{{item.title}}</text>
+            <text class="feed-subtitle" wx:if="{{item.subtitle}}">{{item.subtitle}}</text>
+            <text class="feed-desc">{{item.description}}</text>
+
+            <!-- 琢光栏 -->
+            <view class="feed-insight">
+              <text class="insight-label">💡 琢光</text>
+              <text class="insight-text">{{item.insight}}</text>
+            </view>
+
+            <!-- 互动提示 -->
+            <view class="feed-action-hint">
+              <text class="hint-emoji">🎤</text>
+              <text class="hint-text">长按录音，说说你的感受</text>
+            </view>
+          </view>
+
+          <view class="feed-spacer"></view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+<view class="gold-line"></view>
+</view>

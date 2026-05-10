@@ -1,0 +1,55 @@
+<view class="page-challenge">
+  <!-- 顶部进度 -->
+  <view class="challenge-bar" wx:if="{{!loading}}">
+    <text class="bar-mode">{{mode === 'daily' ? '今日挑战' : '分类练习'}}</text>
+    <text class="bar-progress">{{currentIndex + 1}} / {{totalCount}}</text>
+  </view>
+
+  <block wx:if="{{!loading && question}}">
+    <view class="q-card">
+      <view class="q-tag" style="background: {{getTagColor(question.type)}}">{{getTagLabel(question.type)}}</view>
+      
+      <!-- 题目文本 -->
+      <text class="q-text">{{question.question}}</text>
+
+      <!-- 参考图片（有 image 字段的题型） -->
+      <view class="q-image-wrap" wx:if="{{question.image}}">
+        <image class="q-image" src="{{question.image}}" mode="aspectFit" lazy-load />
+      </view>
+
+      <!-- 选项列表 -->
+      <view class="options">
+        <view 
+          class="option-item {{selectedOption === idx ? (idx === answerIdx ? 'correct' : 'wrong') : ''}} {{showResult && idx === answerIdx ? 'correct' : ''}}"
+          wx:for="{{question.options}}" 
+          wx:key="*this"
+          wx:for-index="idx"
+          catchtap="selectOption"
+          data-idx="{{idx}}"
+        >
+          <text class="opt-letter">{{['A','B','C'][idx]}}.</text>
+          <text class="opt-text">{{item}}</text>
+          <text wx:if="{{showResult && idx === answerIdx}}"> ✅</text>
+          <text wx:if="{{showResult && selectedOption === idx && idx !== answerIdx}}"> ❌</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 结果说明 -->
+    <view class="explanation" wx:if="{{showResult}}">
+      <text class="exp-title">{{isCorrect ? '🎉 回答正确' : '😅 回答错误'}}</text>
+      <text class="exp-text">{{question.explanation}}</text>
+    </view>
+
+    <!-- 操作按钮 -->
+    <view class="challenge-actions" wx:if="{{showResult}}">
+      <button class="btn-primary" wx:if="{{!isLast}}" bindtap="nextQuestion">下一题 →</button>
+      <button class="btn-primary" wx:else bindtap="finishChallenge">查看结果 🏆</button>
+    </view>
+  </block>
+
+  <view class="loading" wx:if="{{loading}}">
+    <text>🔍 正在准备挑战...</text>
+  </view>
+<view class="gold-line"></view>
+</view>

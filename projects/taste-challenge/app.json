@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/quiz/quiz",
+    "pages/result/result",
+    "pages/profile/profile",
+    "pages/leaderboard/leaderboard",
+    "pages/pk/pk"
+  ],
+  "window": {
+    "navigationBarTitleText": "品味挑战",
+    "navigationBarBackgroundColor": "#1a1a2e",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#0f0f1a"
+  },
+  "tabBar": {
+    "color": "#888",
+    "selectedColor": "#FFD700",
+    "backgroundColor": "#1a1a2e",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "挑战",
+        "iconPath": "images/tab-challenge.png",
+        "selectedIconPath": "images/tab-challenge-active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "images/tab-profile.png",
+        "selectedIconPath": "images/tab-profile-active.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000
+  },
+  "usingComponents": {}
+}

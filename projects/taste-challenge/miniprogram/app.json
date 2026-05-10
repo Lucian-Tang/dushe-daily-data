@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/challenge/challenge",
+    "pages/result/result",
+    "pages/profile/profile",
+    "pages/categories/categories",
+    "pages/gallery/gallery",
+    "pages/card/card",
+    "pages/pk/pk",
+    "pages/pk-result/pk-result"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#0A0A12",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "琢光",
+    "backgroundColor": "#0A0A12"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#FFD700",
+    "backgroundColor": "#0A0A12",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "今日",
+        "iconPath": "assets/images/icons/today.png",
+        "selectedIconPath": "assets/images/icons/today-active.png"
+      },
+      {
+        "pagePath": "pages/challenge/challenge",
+        "text": "训练",
+        "iconPath": "assets/images/icons/training.png",
+        "selectedIconPath": "assets/images/icons/training-active.png"
+      },
+      {
+        "pagePath": "pages/gallery/gallery",
+        "text": "鉴赏",
+        "iconPath": "assets/images/icons/gallery.png",
+        "selectedIconPath": "assets/images/icons/gallery-active.png"
+      },
+      {
+        "pagePath": "pages/card/card",
+        "text": "名片",
+        "iconPath": "assets/images/icons/card.png",
+        "selectedIconPath": "assets/images/icons/card-active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "assets/images/icons/profile.png",
+        "selectedIconPath": "assets/images/icons/profile-active.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

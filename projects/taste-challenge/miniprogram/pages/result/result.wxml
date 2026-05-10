@@ -1,0 +1,39 @@
+<view class="page-result">
+  <!-- 得分环 -->
+  <view class="score-hero">
+    <view class="score-circle">
+      <text class="score-num">{{score}}</text>
+      <text class="score-unit">分</text>
+    </view>
+    <view class="score-detail">
+      <text class="detail-row">答对 {{correct}}/{{total}} 题</text>
+      <text class="detail-row">正确率 {{correctPercent}}%</text>
+    </view>
+  </view>
+
+  <!-- 段位 + 彩虹屁 -->
+  <view class="rank-banner">
+    <text class="rank-emoji">{{rankIcon}}</text>
+    <view class="rank-info">
+      <text class="rank-name">{{rankName}}</text>
+      <text class="rank-praise">{{praiseText}}</text>
+      <view class="rank-tag-row">
+        <text class="rank-tag {{praiseTag === '夸' ? 'praise' : praiseTag === '激将' ? 'challenge' : 'encourage'}}">{{praiseTag === '夸' ? '👍' : praiseTag === '激将' ? '💪' : '💛'}} {{praiseTag}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 操作按钮 -->
+  <view class="actions">
+    <button class="btn-primary" bindtap="shareResult" open-type="share">📤 炫耀一下</button>
+    <button class="btn-secondary" bindtap="challengeAgain">🔄 再来一局</button>
+    <button class="btn-secondary" bindtap="goHome">🏠 返回首页</button>
+  </view>
+
+  <canvas type="2d" id="shareCanvas" class="share-canvas" wx:if="{{showCanvas}}"></canvas>
+
+  <view class="brand-stamp">
+    <text>Luxmind · 琢光</text>
+  </view>
+<view class="gold-line"></view>
+</view>

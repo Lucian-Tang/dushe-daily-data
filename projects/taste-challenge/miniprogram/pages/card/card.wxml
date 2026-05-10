@@ -1,0 +1,55 @@
+<!-- 琢光 · 名片
+     设计铁律：数据即身份，暗处生光 -->
+
+<view class="page-card">
+  <!-- 徽章环 -->
+  <view class="badge-hero">
+    <view class="badge-ring" style="border-color: {{rank.color}}; box-shadow: 0 0 40rpx {{rank.color}}22;">
+      <text class="badge-emoji">{{rank.icon}}</text>
+    </view>
+    <text class="badge-name" style="color: {{rank.color}}">{{rank.name}}</text>
+    <text class="badge-sub">AI 时代品味身份</text>
+  </view>
+
+  <!-- 叙事：不是数据，是你的旅程 -->
+  <view class="narrative" wx:if="{{totalGames > 0}}">
+    <text class="narr-text">你已完成 <text class="narr-hl">{{totalGames}}</text> 次挑战，答对 <text class="narr-hl">{{totalCorrect}}</text> 题，正确率 <text class="narr-hl">{{accuracy}}%</text>。</text>
+    <text class="narr-text" wx:if="{{totalGames >= 7}}">连续打卡一周——这不是运气，是你在认真打磨自己的眼光。</text>
+    <text class="narr-text" wx:if="{{accuracy >= 80}}">你的判断力已经超过大多数人了。继续下去。</text>
+    <text class="narr-text" wx:if="{{accuracy < 50 && totalGames > 0}}">品味不是比赛。每一次选择都在帮你更了解自己。</text>
+  </view>
+  <view class="narrative" wx:else>
+    <text class="narr-text narr-empty">完成第一次挑战后，这里会讲述你的品味故事。</text>
+  </view>
+
+  <!-- 能力维度 -->
+  <view class="dims">
+    <view class="dim" wx:for="{{dimensions}}" wx:key="name">
+      <view class="dim-top"><text class="dim-icon">{{item.icon}}</text><text class="dim-name">{{item.name}}</text><text class="dim-val" wx:if="{{!item.locked}}">{{item.score}}</text><text class="dim-val dim-locked" wx:else>—</text></view>
+      <view class="dim-bar"><view class="dim-fill" style="width: {{item.locked ? '0' : item.score + '%'}}; background: {{item.locked ? '#222' : rank.color}};"></view></view>
+    </view>
+  </view>
+
+  <!-- Vibe标签 -->
+  <view class="vibes" wx:if="{{vibeTags.length > 0}}">
+    <text class="vibes-label">你的标签</text>
+    <view class="vibes-row">
+      <text class="vibe-tag" wx:for="{{vibeTags}}" wx:key="*this">{{item}}</text>
+    </view>
+  </view>
+
+  <!-- 战绩 -->
+  <view class="stats" wx:if="{{totalGames > 0}}">
+    <view class="stat"><text class="stat-val">{{totalGames}}</text><text class="stat-lbl">挑战</text></view>
+    <view class="stat-sep"></view>
+    <view class="stat"><text class="stat-val">{{accuracy}}%</text><text class="stat-lbl">正确率</text></view>
+    <view class="stat-sep"></view>
+    <view class="stat"><text class="stat-val">{{score}}</text><text class="stat-lbl">积分</text></view>
+  </view>
+
+  <!-- 分享 -->
+  <button class="share-btn" open-type="share">分享我的名片</button>
+
+  <!-- 金线 -->
+  <view class="gold-line"></view>
+</view>

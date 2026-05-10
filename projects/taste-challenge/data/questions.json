@@ -1,0 +1,591 @@
+{
+  "version": "1.0.0",
+  "created": "2026-05-09",
+  "description": "Luxmind 品味挑战 - 题库",
+  "questions": [
+    {
+      "id": "ext_001",
+      "type": "ai_vs_real",
+      "difficulty": 1,
+      "question": "以下图片是AI生成的还是真实拍摄的？",
+      "image": "https://lucian-tang.github.io/taste-challenge-data/images/ext_001.jpg",
+      "options": [
+        "AI生成",
+        "真实拍摄"
+      ],
+      "answer": "AI生成",
+      "explanation": "图片中的光线过于完美对称，阴影边缘过于柔和，且背景中的纹理呈现出AI常见的'泡沫'状噪点模式，这些是AI生成图像的典型特征。真实摄影会有更自然的景深虚化和光线散射。",
+      "tags": [
+        "AI识别",
+        "摄影",
+        "光线分析",
+        "入门"
+      ]
+    },
+    {
+      "id": "ext_002",
+      "type": "ai_vs_real",
+      "difficulty": 2,
+      "question": "判断：这张产品展示图是AI生成还是实拍？",
+      "image": "https://lucian-tang.github.io/taste-challenge-data/images/ext_002.jpg",
+      "options": [
+        "AI生成",
+        "真实拍摄"
+      ],
+      "answer": "真实拍摄",
+      "explanation": "仔细观察可以发现：1）反光有真实的折射变形，而非完美对称；2）材质纹理有自然的磨损和颗粒感；3）背景散景的光斑有真实的镜头口径蚀效应。AI很难完美复现这种光学物理特性的细节。",
+      "tags": [
+        "AI识别",
+        "产品摄影",
+        "材质分析",
+        "进阶"
+      ]
+    },
+    {
+      "id": "ext_003",
+      "type": "ai_vs_real",
+      "difficulty": 3,
+      "question": "以下这张人像照片是AI生成还是真实拍摄？",
+      "image": "https://lucian-tang.github.io/taste-challenge-data/images/ext_003.jpg",
+      "options": [
+        "AI生成",
+        "真实拍摄"
+      ],
+      "answer": "AI生成",
+      "explanation": "虽然肉眼很难分辨，但放大观察可发现：耳垂与耳环交界处的边缘有轻微的模糊融合、头发丝的走向在某些区域过于规律统一、瞳孔中没有自然的镜头反光点。这些是当前AI生成人像的残余缺陷。",
+      "tags": [
+        "AI识别",
+        "人像",
+        "细节分析",
+        "高级"
+      ]
+    },
+    {
+      "id": "ext_004",
+      "type": "prompt_compare",
+      "difficulty": 1,
+      "question": "哪个提示词最可能生成左边的插画风格？",
+      "image": "https://lucian-tang.github.io/taste-challenge-data/images/ext_004.jpg",
+      "options": [
+        "A: flat illustration, pastel colors, geometric shapes, minimal design, 2024 style",
+        "B: photorealistic, ultra detailed, 8K, golden hour lighting, dramatic clouds",
+        "C: watercolor texture, soft edges, hand-painted feel, muted tones, whimsical"
+      ],
+      "answer": "A",
+      "explanation": "左侧插画具有明显的扁平化设计特征：纯色块、无渐变、简洁的集合形状、清新的马卡龙配色。这正是'flat illustration + pastel colors + geometric shapes'这类提示词的标准产出。选项B描述的是逼真风格，选项C描述的是水彩手绘风格。",
+      "tags": [
+        "提示词对决",
+        "插画风格",
+        "扁平设计",
+        "入门"
+      ]
+    },
+    {
+      "id": "ext_005",
+      "type": "prompt_compare",
+      "difficulty": 2,
+      "question": "左边这张海报是哪个提示词生成的？",
+      "image": "https://lucian-tang.github.io/taste-challenge-data/images/ext_005.jpg",
+      "options": [
+        "A: brutalist web design, harsh contrasts, raw typography, black and white",
+        "B: Swiss style poster, grid layout, Helvetica font, red accent, clean hierarchy",
+        "C: art deco pattern, golden borders, symmetrical layout, vintage luxury feel"
+      ],
+      "answer": "B",
+      "explanation": "海报呈现典型的瑞士设计风格（International Typographic Style）：严格的网格布局、清晰的视觉层次、无衬线字体（类Helvetica）、红色作为唯一的点缀色。这与B选项的描述完全吻合。A是粗野主义，C是装饰艺术风格，都不符合。",
+      "tags": [
+        "提示词对决",
+        "海报设计",
+        "瑞士风格",
+        "进阶"
+      ]
+    },
+    {
+      "id": "ext_006",
+      "type": "prompt_compare",
+      "difficulty": 3,
+      "question": "左边这张概念图最可能是哪个复合提示词的结果？",
+      "image": "https://lucian-tang.github.io/taste-challenge-data/images/ext_006.jpg",
+      "options": [
+        "A: cyberpunk city, neon lights, rainy streets, cinematic lighting, unsplash style",
+        "B: vaporwave aesthetic, retrofuturism, pink purple gradient, 80s nostalgia, grid horizon",
+        "C: solarpunk village, eco architecture, lush greenery, golden hour, documentary photography"
+      ],
+      "answer": "B",
+      "explanation": "图中天空呈现粉紫渐变、地平线上有标志性的透视网格、整体氛围充满80年代复古未来主义色彩，这些元素精准指向蒸汽波美学。选项A是赛博朋克（偏暗、霓虹夜景），选项C是太阳朋克（自然绿色为主色调），都不符合图中粉紫复古的基调。",
+      "tags": [
+        "提示词对决",
+        "概念图",
+        "蒸汽波",
+        "高级"
+      ]
+    },
+    {
+      "id": "ext_007",
+      "type": "design_compare",
+      "difficulty": 1,
+      "question": "以下两个App启动页，哪一个在视觉上更符合现代简约设计趋势？",
+      "image": "https://lucian-tang.github.io/taste-challenge-data/images/ext_007.jpg",
+      "options": [
+        "A (左)",
+        "B (右)"
+      ],
+      "answer": "A (左)",
+      "explanation": "左侧启动页采用了：1）大量留白，给内容呼吸空间；2）单色或低饱和度配色；3）简单的图标和字体层级；4）没有任何不必要的装饰元素。这符合当前iOS/Android设计语言的趋势。右侧页面信息过载、色彩过多，在现代审美中显得过时。",
+      "tags": [
+        "设计审美",
+        "App设计",
+        "简约风格",
+        "入门"
+      ]
+    },
+    {
+      "id": "ext_008",
+      "type": "design_compare",
+      "difficulty": 2,
+      "question": "两张品牌Logo，哪一个在设计上更具辨识度与延展性？",
+      "image": "https://lucian-tang.github.io/taste-challenge-data/images/ext_008.jpg",
+      "options": [
+        "A (左)",
+        "B (右)"
+      ],
+      "answer": "A (左)",
+      "explanation": "左侧Logo具备优秀Logo设计的核心要素：1）形状简洁，适合缩小到App图标尺寸仍清晰可辨；2）单一色彩或有限配色方案，便于印刷和数字化应用；3）图形具有独特性，不与其他品牌混淆。右侧Logo过于复杂，线条密集，缩小后会糊成一片，延展性差。",
+      "tags": [
+        "设计审美",
+        "品牌设计",
+        "Logo延展性",
+        "进阶"
+      ]
+    },
+    {
+      "id": "ext_009",
+      "type": "design_compare",
+      "difficulty": 3,
+      "question": "两个数据仪表盘设计，哪一个在信息可视化上更专业？",
+      "image": "https://lucian-tang.github.io/taste-challenge-data/images/ext_009.jpg",
+      "options": [
+        "A (左)",
+        "B (右)"
+      ],
+      "answer": "B (右)",
+      "explanation": "右侧仪表盘遵循了Edward Tufte的信息可视化原则：数据墨水比最大化、无装饰性图表元素、使用统一的色彩编码、在需要对比时使用并排柱状图而非3D效果。左侧使用了大量渐变、阴影和3D效果，这些视觉噪音反而干扰了数据的快速读取。",
+      "tags": [
+        "设计审美",
+        "数据可视化",
+        "仪表盘设计",
+        "高级"
+      ]
+    },
+    {
+      "id": "ext_010",
+      "type": "copy_judge",
+      "difficulty": 1,
+      "question": "以下两款咖啡产品的文案，哪一句更能在社交媒体引发传播？",
+      "options": [
+        "A: 我们的咖啡豆产自哥伦比亚海拔1500米高原，采用手工采摘，每一颗都经过精挑细选。",
+        "B: 凌晨4点的CBD，有人还在改PPT。还好我们有续命咖啡。"
+      ],
+      "answer": "B",
+      "explanation": "社交媒体传播的核心是引发共鸣或情绪反应。B文案用'凌晨4点''改PPT''续命咖啡'精准击中了都市白领的痛点场景，形成强烈的代入感和自嘲幽默，容易引发评论和分享。A是标准的产品说明书式文案，信息完整但缺乏传播性。",
+      "tags": [
+        "文案评判",
+        "社交媒体",
+        "共鸣感",
+        "入门"
+      ]
+    },
+    {
+      "id": "ext_011",
+      "type": "copy_judge",
+      "difficulty": 2,
+      "question": "两款护肤品的主打文案，哪一个品牌定位更清晰？",
+      "options": [
+        "A: 科学护肤，温和有效，适合所有肤质，让你的肌肤焕发光彩。",
+        "B: 我们只做一件事：把维生素C的浓度做到极致。原料表只有7种成分，其他都是杂质。"
+      ],
+      "answer": "B",
+      "explanation": "品牌定位的核心是差异化与具体化。B文案通过'只做一件事''浓度极致''7种成分'建立了一个清晰可信的品牌故事：专注、极简、成分透明。A文案看似正面，但'科学护肤''温和有效''焕发光彩'是所有护肤品都在说的话，毫无差异化竞争力。",
+      "tags": [
+        "文案评判",
+        "品牌定位",
+        "差异化",
+        "进阶"
+      ]
+    },
+    {
+      "id": "ext_012",
+      "type": "copy_judge",
+      "difficulty": 3,
+      "question": "以下三则招聘文案，哪一个最能吸引优秀设计师投递？",
+      "options": [
+        "A: 诚聘UI设计师，要求精通Figma/Sketch，5年以上经验，薪资面议。",
+        "B: 我们正在找一位对像素颗粒感有强迫症的设计师。不需要你'精通'某款软件，但如果你看到别人的作品有0.5px的错位就浑身难受——来聊聊。",
+        "C: 知名互联网公司招聘设计师，福利好，平台大，机会多，简历投递邮箱hr@company.com"
+      ],
+      "answer": "B",
+      "explanation": "优秀设计师（尤其是创意型人才）的求职决策基于文化认同和成长空间。B文案精准对标了设计师群体的心理特征：1）用'像素强迫症'找到同类，建立情感共鸣；2）反传统地弱化工具要求，强调审美品味；3）用'来聊聊'而非'投递简历'降低了参与门槛。C是千篇一律的JD，A则过于冷冰冰。",
+      "tags": [
+        "文案评判",
+        "招聘文案",
+        "创意写作",
+        "高级"
+      ]
+    },
+    {
+      "id": "ext_013",
+      "type": "ai_vs_real",
+      "difficulty": 1,
+      "question": "以下这张食物摄影是AI生成还是实拍？",
+      "image": "https://lucian-tang.github.io/taste-challenge-data/images/ext_013.jpg",
+      "options": [
+        "AI生成",
+        "真实拍摄"
+      ],
+      "answer": "AI生成",
+      "explanation": "AI生成的美食图通常有以下破绽：蒸汽的形态过于规律像烟雾效果而非真实蒸汽、食材切面的纹理过于均匀缺乏天然质感、酱汁的流动形态有雕塑感而非液体自然流淌的痕迹。真实美食摄影会有更随机的光线散射和食材自然形态。",
+      "tags": [
+        "AI识别",
+        "美食摄影",
+        "质感分析",
+        "入门"
+      ]
+    },
+    {
+      "id": "ext_014",
+      "type": "ai_vs_real",
+      "difficulty": 2,
+      "question": "判断：这张建筑摄影是AI生成还是实拍？",
+      "image": "https://lucian-tang.github.io/taste-challenge-data/images/ext_014.jpg",
+      "options": [
+        "AI生成",
+        "真实拍摄"
+      ],
+      "answer": "真实拍摄",
+      "explanation": "真实建筑摄影的特征：1）玻璃幕墙的反光有真实的景物倒影和色调偏移；2）建筑结构线条在透视上有符合物理规律的延伸；3）天空的云层有自然的大气散射效果。AI生成的建筑图在反射和透视上常有物理逻辑错误。",
+      "tags": [
+        "AI识别",
+        "建筑摄影",
+        "结构分析",
+        "进阶"
+      ]
+    },
+    {
+      "id": "ext_015",
+      "type": "ai_vs_real",
+      "difficulty": 3,
+      "question": "这张宠物照片是AI生成还是真实拍摄？",
+      "image": "https://lucian-tang.github.io/taste-challenge-data/images/ext_015.jpg",
+      "options": [
+        "AI生成",
+        "真实拍摄"
+      ],
+      "answer": "AI生成",
+      "explanation": "当前AI生成动物时最常见的缺陷在于：毛发纹路在边缘处出现不自然的融合或消失（尤其是四肢与身体的连接处）、眼睛的瞳孔高光位置不符合物理光源方向、舌头的纹理和光感不自然。本图中狗的毛发在爪尖处有明显的边界模糊，属于典型AI痕迹。",
+      "tags": [
+        "AI识别",
+        "宠物摄影",
+        "毛发细节",
+        "高级"
+      ]
+    },
+    {
+      "id": "ext_016",
+      "type": "prompt_compare",
+      "difficulty": 1,
+      "question": "左边这张电商商品图最可能对应哪个提示词？",
+      "image": "https://lucian-tang.github.io/taste-challenge-data/images/ext_016.jpg",
+      "options": [
+        "A: white background product photography, studio lighting, clean, minimal",
+        "B: moody dark background, dramatic rim light, cinematic product shot, luxury feel",
+        "C: outdoor natural lighting, lifestyle context, warm tones, organic feel"
+      ],
+      "answer": "A",
+      "explanation": "左侧商品图是典型的白底电商拍摄风格：纯白背景、无杂影、统一柔和的正面光源或45度侧光、商品在画面中清晰突出。这正是商业产品摄影中最常见也最通用的白底图拍摄标准。",
+      "tags": [
+        "提示词对决",
+        "电商摄影",
+        "产品展示",
+        "入门"
+      ]
+    },
+    {
+      "id": "ext_017",
+      "type": "prompt_compare",
+      "difficulty": 2,
+      "question": "左边这张头像/头像墙设计是哪个风格提示词的产出？",
+      "image": "https://lucian-tang.github.io/taste-challenge-data/images/ext_017.jpg",
+      "options": [
+        "A: isometric 2.5D illustration, flat colors, geometric characters, clean shadow",
+        "B: watercolor children's book illustration, soft edges, warm palette, character focused",
+        "C: dark noir comic style, high contrast black and white, dramatic hatching lines"
+      ],
+      "answer": "A",
+      "explanation": "图中人物是典型的等距2.5D插画风格：身体由简洁的几何形状构成（圆柱、立方体变形）、统一的平涂色彩、无渐变、有清晰的45度视角和统一方向的平面阴影。这些都是等距插画的核心语法特征。",
+      "tags": [
+        "提示词对决",
+        "插画风格",
+        "等距设计",
+        "进阶"
+      ]
+    },
+    {
+      "id": "ext_018",
+      "type": "prompt_compare",
+      "difficulty": 3,
+      "question": "左边这张UI界面截图最可能是哪个提示词的设计方向？",
+      "image": "https://lucian-tang.github.io/taste-challenge-data/images/ext_018.jpg",
+      "options": [
+        "A: neumorphism UI, soft shadows, extruded elements, light gray background, subtle depth",
+        "B: glassmorphism UI, frosted glass panels, blur backdrop, translucent overlapping cards",
+        "C: brutalist UI, raw grid, oversized typography, black borders, stark contrast"
+      ],
+      "answer": "B",
+      "explanation": "界面中卡片呈现出明显的毛玻璃质感：半透明背景、模糊的背景透出、细微的边框高光、分层叠放时的光影模糊效果。这些都是玻璃拟态（glassmorphism）的标志性特征，常见于iOS和macOS的系统界面设计。",
+      "tags": [
+        "提示词对决",
+        "UI设计",
+        "玻璃拟态",
+        "高级"
+      ]
+    },
+    {
+      "id": "ext_019",
+      "type": "design_compare",
+      "difficulty": 1,
+      "question": "两段产品标题的排版，哪一个更符合移动端阅读习惯？",
+      "image": "https://lucian-tang.github.io/taste-challenge-data/images/ext_019.jpg",
+      "options": [
+        "A (左)",
+        "B (右)"
+      ],
+      "answer": "A (左)",
+      "explanation": "左侧标题排版字号对比明确（主标题大、副标题小）、行间距舒适、每行字数适中便于扫读、无装饰性元素干扰。移动端用户的阅读习惯是快速扫视而非逐字阅读，因此字号对比和留白至关重要。右侧排版字号差异小，整体灰蒙蒙一片，重点不突出。",
+      "tags": [
+        "设计审美",
+        "移动端设计",
+        "排版层级",
+        "入门"
+      ]
+    },
+    {
+      "id": "ext_020",
+      "type": "design_compare",
+      "difficulty": 2,
+      "question": "两张会员权益页的设计，哪一个转化逻辑更清晰？",
+      "image": "https://lucian-tang.github.io/taste-challenge-data/images/ext_020.jpg",
+      "options": [
+        "A (左)",
+        "B (右)"
+      ],
+      "answer": "B (右)",
+      "explanation": "右侧权益页的设计优势：1）核心卖点用醒目的免费icon承载，一眼可扫描；2）次要权益用简洁文字列表保持呼吸感；3）底部有明确的CTA按钮且在视觉权重上突出。左侧把所有权益做成了密密麻麻的图标网格，用户无法快速判断'我买这个值不值'。",
+      "tags": [
+        "设计审美",
+        "会员设计",
+        "转化设计",
+        "进阶"
+      ]
+    },
+    {
+      "id": "ext_021",
+      "type": "design_compare",
+      "difficulty": 3,
+      "question": "两套车载HMI（人机界面）界面设计方案，哪一个在驾驶安全维度更合理？",
+      "image": "https://lucian-tang.github.io/taste-challenge-data/images/ext_021.jpg",
+      "options": [
+        "A (左)",
+        "B (右)"
+      ],
+      "answer": "A (左)",
+      "explanation": "驾驶场景下HMI设计的核心原则是：减少眼球移动、降低认知负担、确保关键信息在视野中心。左侧设计将核心驾驶信息（时速、导航）放在驾驶员视线自然向下30度范围内的区域，色彩对比度高且无干扰动画。右侧设计将信息分散在屏幕两侧，驾驶时需要大幅眼球移动，存在安全隐患。",
+      "tags": [
+        "设计审美",
+        "HMI设计",
+        "驾驶安全",
+        "高级"
+      ]
+    },
+    {
+      "id": "ext_022",
+      "type": "copy_judge",
+      "difficulty": 1,
+      "question": "以下两句产品Slogan，哪个更有记忆度？",
+      "options": [
+        "A: 品质生活，从每天一杯咖啡开始。",
+        "B: 每天叫醒你的，不是闹钟，是这杯咖啡。"
+      ],
+      "answer": "B",
+      "explanation": "好的Slogan需要制造画面感和情绪连接。B用'叫醒'这个动词和'闹钟'这个日常元素制造了强烈的清晨场景联想，用户会不自觉代入自己匆忙起床的经历。A是典型的功能性陈述，平淡无记忆点。",
+      "tags": [
+        "文案评判",
+        "Slogan创作",
+        "记忆点",
+        "入门"
+      ]
+    },
+    {
+      "id": "ext_023",
+      "type": "copy_judge",
+      "difficulty": 2,
+      "question": "两款知识付费课程的详情页文案标题，哪一个更能激发购买欲？",
+      "options": [
+        "A: 30天学会数据分析，零基础到就业水平的实战课程。",
+        "B: 别人用3年才踩完的坑，我们用30天让你绕过去。"
+      ],
+      "answer": "B",
+      "explanation": "营销文案的核心是击中用户痛点并给出解决方案的愿景。B文案精准利用了'损失厌恶'心理：用户的恐惧不是'学不会'，而是'比别人慢'——'30天绕过去'直接给出了超越同龄人的希望感。A是课程介绍，不是广告文案，两者功能完全不同。",
+      "tags": [
+        "文案评判",
+        "营销文案",
+        "心理战术",
+        "进阶"
+      ]
+    },
+    {
+      "id": "ext_024",
+      "type": "copy_judge",
+      "difficulty": 3,
+      "question": "三个品牌的第一人称'品牌自述'文案片段，哪一个最能建立信任感？",
+      "options": [
+        "A: 我们致力于为用户提供最优质的产品和服务，您的满意是我们的追求。",
+        "B: 我们踩过的坑比用户多，所以我们的产品就是帮用户绕开这些坑。3年前我们自己跑跨境电商，被清关坑了17次，才有了今天的这套系统。",
+        "C: 选择我们，就是选择了专业、品质与信赖。我们值得您的托付。"
+      ],
+      "answer": "B",
+      "explanation": "信任感在文案中来自具体性而非承诺。B文案通过'踩坑17次''跨境电商''清关'这些具体细节，建立了一种'过来人'的可信度——这比任何'品质保证'的空话都更有说服力。叙事型品牌故事（storytelling）之所以有效，是因为用户记住了故事，而不只是记住了承诺。A和C都是空洞的企业套话。",
+      "tags": [
+        "文案评判",
+        "品牌故事",
+        "信任建立",
+        "高级"
+      ]
+    },
+    {
+      "id": "ext_025",
+      "type": "ai_vs_real",
+      "difficulty": 2,
+      "question": "这张风景照片是AI生成还是真实拍摄？",
+      "image": "https://lucian-tang.github.io/taste-challenge-data/images/ext_025.jpg",
+      "options": [
+        "AI生成",
+        "真实拍摄"
+      ],
+      "answer": "AI生成",
+      "explanation": "AI生成的风景图破绽：1）云层的层次感过于完美，呈现出不自然的几何分层；2）水面反射与实际景色不完全对称；3）植被的边缘有过渡柔和的模糊感，缺乏风吹草动的自然质感；4）光线的色温变化过于线性。真实自然景观有更多随机性和不完美的细节。",
+      "tags": [
+        "AI识别",
+        "风景摄影",
+        "自然细节",
+        "进阶"
+      ]
+    },
+    {
+      "id": "ext_026",
+      "type": "prompt_compare",
+      "difficulty": 2,
+      "question": "左边这张3D渲染图是哪个提示词风格的产出？",
+      "image": "https://lucian-tang.github.io/taste-challenge-data/images/ext_026.jpg",
+      "options": [
+        "A: Pixar-style 3D render, cute characters, bright colors, studio lighting, toy-like materials",
+        "B: low poly 3D art, geometric mountains, sunset gradient, calm and minimal, game art style",
+        "C: hyperrealistic 3D product render, soft studio lighting, subtle reflections, white background"
+      ],
+      "answer": "B",
+      "explanation": "图中呈现典型的Low Poly低多边形风格：所有物体都由三角面或四边形的平面构成、没有平滑的曲面过度、色彩以大块渐变形式存在（如日落的天空）。这种风格源于早期3D游戏美术，至今仍在数字艺术和游戏设计领域广泛使用。",
+      "tags": [
+        "提示词对决",
+        "3D渲染",
+        "低多边形",
+        "进阶"
+      ]
+    },
+    {
+      "id": "ext_027",
+      "type": "design_compare",
+      "difficulty": 2,
+      "question": "两套图标集（icon set），哪一套的系统性更强？",
+      "image": "https://lucian-tang.github.io/taste-challenge-data/images/ext_027.jpg",
+      "options": [
+        "A (左)",
+        "B (右)"
+      ],
+      "answer": "A (左)",
+      "explanation": "一套高质量图标集的核心标准是系统性：1）统一的视觉重量（线条粗细一致）；2）统一的圆角半径或尖角风格；3）统一的填充/线性风格（不混用）；4）统一的透视角度。左侧图标集在以上所有维度都保持高度一致，而右侧混用了实心与线性两种风格，视觉上不协调。",
+      "tags": [
+        "设计审美",
+        "图标设计",
+        "设计系统",
+        "进阶"
+      ]
+    },
+    {
+      "id": "ext_028",
+      "type": "ai_vs_real",
+      "difficulty": 3,
+      "question": "这张艺术画作是AI生成还是人类画家创作？",
+      "image": "https://lucian-tang.github.io/taste-challenge-data/images/ext_028.jpg",
+      "options": [
+        "AI生成",
+        "人类画家创作"
+      ],
+      "answer": "人类画家创作",
+      "explanation": "关键鉴别点：1）画面中有高度个人化的笔触节奏变化，这是AI目前最难模仿的；2）色彩过渡有不规则的偶发性，这是真实颜料混合的自然结果；3）画布边缘有自然的溢色痕迹和物理磨损；4）整体构图有AI难以理解的叙事逻辑和情感表达。AI生成的艺术作品在笔触层面通常过于均匀和'正确'。",
+      "tags": [
+        "AI识别",
+        "艺术画作",
+        "笔触分析",
+        "高级"
+      ]
+    }
+  ],
+  "categories": {
+    "image": "图像审美",
+    "text": "文字品味",
+    "design": "设计判断"
+  },
+  "difficulties": {
+    "1": "入门",
+    "2": "进阶",
+    "3": "专家"
+  },
+  "tiers": [
+    {
+      "name": "观察者",
+      "icon": "👁️",
+      "min_score": 0,
+      "color": "#CD7F32"
+    },
+    {
+      "name": "鉴赏者",
+      "icon": "🎨",
+      "min_score": 500,
+      "color": "#C0C0C0"
+    },
+    {
+      "name": "品鉴师",
+      "icon": "✨",
+      "min_score": 1500,
+      "color": "#FFD700"
+    },
+    {
+      "name": "审美家",
+      "icon": "💎",
+      "min_score": 3500,
+      "color": "#4169E1"
+    },
+    {
+      "name": "品味大师",
+      "icon": "👑",
+      "min_score": 7000,
+      "color": "#8B00FF"
+    },
+    {
+      "name": "灯塔",
+      "icon": "🗼",
+      "min_score": 12000,
+      "color": "#FF4500"
+    }
+  ],
+  "achievements": []
+}

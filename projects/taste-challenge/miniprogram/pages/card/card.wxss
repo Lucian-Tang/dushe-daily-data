@@ -1,0 +1,47 @@
+/* 琢光 · 名片 */
+.page-card { min-height: 100vh; background: #0A0A12; padding: 60rpx 40rpx 80rpx; }
+
+/* 徽章 */
+.badge-hero { display: flex; flex-direction: column; align-items: center; margin-bottom: 48rpx; }
+.badge-ring { width: 160rpx; height: 160rpx; border-radius: 50%; border: 3rpx solid; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.02); }
+.badge-emoji { font-size: 72rpx; }
+.badge-name { font-size: 44rpx; font-weight: 700; margin-top: 24rpx; letter-spacing: 4rpx; }
+.badge-sub { font-size: 24rpx; color: #555; margin-top: 8rpx; letter-spacing: 2rpx; }
+
+/* 叙事 */
+.narrative { margin-bottom: 40rpx; padding: 32rpx; background: rgba(255,255,255,0.015); border-radius: 16rpx; border: 1rpx solid rgba(255,255,255,0.04); }
+.narr-text { font-size: 28rpx; color: #999; line-height: 2; display: block; }
+.narr-hl { color: #FFD700; font-weight: 600; }
+.narr-empty { color: #444; text-align: center; }
+
+/* 维度 */
+.dims { margin-bottom: 32rpx; }
+.dim { margin-bottom: 28rpx; }
+.dim:last-child { margin-bottom: 0; }
+.dim-top { display: flex; align-items: center; margin-bottom: 10rpx; }
+.dim-icon { font-size: 28rpx; margin-right: 10rpx; }
+.dim-name { font-size: 26rpx; color: #888; flex: 1; }
+.dim-val { font-size: 30rpx; font-weight: 700; color: #E8E8E8; }
+.dim-locked { color: #333 !important; }
+.dim-bar { height: 6rpx; background: rgba(255,255,255,0.05); border-radius: 3rpx; }
+.dim-fill { height: 100%; border-radius: 3rpx; transition: width 0.8s ease; }
+
+/* Vibe */
+.vibes { margin-bottom: 32rpx; }
+.vibes-label { font-size: 20rpx; color: #444; text-transform: uppercase; letter-spacing: 4rpx; display: block; margin-bottom: 14rpx; }
+.vibes-row { display: flex; flex-wrap: wrap; gap: 12rpx; }
+.vibe-tag { font-size: 24rpx; color: #C9A84C; background: rgba(201,168,76,0.06); padding: 8rpx 22rpx; border-radius: 20rpx; border: 1rpx solid rgba(201,168,76,0.1); }
+
+/* 战绩 */
+.stats { display: flex; align-items: center; padding: 32rpx; background: rgba(255,255,255,0.015); border-radius: 16rpx; margin-bottom: 40rpx; }
+.stat { flex: 1; text-align: center; }
+.stat-val { font-size: 40rpx; font-weight: 700; color: #E8E8E8; display: block; }
+.stat-lbl { font-size: 22rpx; color: #555; display: block; margin-top: 8rpx; }
+.stat-sep { width: 1rpx; height: 44rpx; background: rgba(255,255,255,0.06); }
+
+/* 分享 */
+.share-btn { width: 100%; padding: 28rpx; background: linear-gradient(135deg, #C9A84C, #A68A2E); border-radius: 48rpx; color: #0A0A12; font-size: 30rpx; font-weight: 700; border: none; letter-spacing: 2rpx; }
+.share-btn:active { opacity: 0.85; }
+
+/* 金线 */
+.gold-line { height: 1rpx; background: linear-gradient(90deg, transparent, rgba(201,168,76,0.15), transparent); margin-top: 60rpx; }

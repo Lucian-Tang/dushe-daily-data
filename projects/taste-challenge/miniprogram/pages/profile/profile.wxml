@@ -1,0 +1,24 @@
+<view class="page-profile">
+  <view class="profile-hero">
+    <text class="profile-emoji">{{rank.icon}}</text>
+    <text class="profile-rank" style="color: {{rank.color}}">{{rank.name}}</text>
+    <text class="profile-score">累计得分 {{score}}</text>
+  </view>
+
+  <view class="section">
+    <view class="section-title">近期挑战</view>
+    <view class="history-list">
+      <view class="history-item" wx:for="{{history}}" wx:key="index">
+        <text class="h-date">{{item.date}}</text>
+        <text class="h-score" style="color: {{item.correct === item.total ? '#FFD700' : '#888'}}">{{item.correct}}/{{item.total}}</text>
+      </view>
+      <view class="empty" wx:if="{{history.length === 0}}">
+        <text>还没有挑战记录，去试试吧 →</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="brand-footer">
+    <text>Luxmind · 品味挑战</text>
+  </view>
+</view>

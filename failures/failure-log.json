@@ -1,0 +1,85 @@
+{
+  "failures": [
+    {
+      "date": "2026-05-10",
+      "time": "06:20",
+      "type": "feishu-doc-truncation",
+      "cause": "一次写入内容过长被飞书截断，只剩末尾板块",
+      "symptom": "日报只显示创投板块",
+      "fix": "分多次 append 写入，每次不超过3个板块",
+      "rule_added": "Feishu doc: 单次写入 < 5000 字符，多板块分批 append"
+    },
+    {
+      "date": "2026-05-10",
+      "time": "06:25",
+      "type": "missing-section",
+      "cause": "产品设计板块未生成，design-daily cron 虽有数据但 subagent 未触发",
+      "symptom": "日报缺少产品设计板块",
+      "fix": "手动抓取 ProductHunt 数据并生成报告",
+      "rule_added": "发布前检查: 所有板块(行业/开发者/AI/社会/创投/设计)必须齐全"
+    },
+    {
+      "date": "2026-05-10",
+      "time": "03:05",
+      "type": "cron-timeout-no-report",
+      "cause": "signal-aggregator cron timeout 后状态 error，无通知",
+      "symptom": "日报链路中断，下游报告无输入",
+      "fix": "重建 cron，timeout 120s，心跳监控 timeout 事件",
+      "rule_added": "Cron timeout 必须主动通知 + 自动重试"
+    },
+    {
+      "date": "2026-05-10",
+      "time": "06:30",
+      "type": "subagent-timeout",
+      "cause": "startup-daily-gen subagent 超时(300s)，模型卡在输出 Show HN 列表",
+      "symptom": "创投日报缺失，需手动生成",
+      "fix": "直接基于 raw_articles 数据手写报告",
+      "rule_added": "Subagent >80% timeout 无输出 → kill + 降级处理"
+    }
+  ],
+  "rules_active": [
+    {
+      "id": "R001",
+      "trigger": "before_publish_daily",
+      "check": "all_sections_present",
+      "desc": "行业/开发者/AI/社会/创投/设计 6个板块必须齐全",
+      "action": "缺失 → 自动生成或拉取对应 subagent 结果"
+    },
+    {
+      "id": "R002",
+      "trigger": "before_publish_daily",
+      "check": "each_item_has_commentary",
+      "desc": "每条新闻必须有 🔥 毒舌点评",
+      "action": "缺失 → 补充毒舌"
+    },
+    {
+      "id": "R003",
+      "trigger": "before_publish_daily",
+      "check": "feishu_doc_block_count",
+      "desc": "飞书文档 > 100 blocks (确保内容完整)",
+      "action": "不足 → 重写"
+    },
+    {
+      "id": "R004",
+      "trigger": "after_cron_error",
+      "check": "cron_status_notify",
+      "desc": "任何 cron error/timeout 必须主动群通知",
+      "action": "不通知 → 心跳扫描补发"
+    },
+    {
+      "id": "R005",
+      "trigger": "after_subagent_spawn",
+      "check": "subagent_silence_detection",
+      "desc": "Subagent >80% timeout 无输出自动 kill",
+      "action": "kill + 群通知 + 降级处理"
+    },
+    {
+      "id": "R006",
+      "trigger": "before_final_reply",
+      "check": "self_review_checklist",
+      "desc": "回复前自检: 格式完整? 链接有效? 板块齐全?",
+      "action": "逐项确认后发送"
+    }
+  ],
+  "updated_at": "2026-05-10T10:08:00+08:00"
+}

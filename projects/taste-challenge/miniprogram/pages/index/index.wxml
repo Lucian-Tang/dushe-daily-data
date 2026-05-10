@@ -1,0 +1,52 @@
+<!-- 琢光 · 今日
+     设计铁律：暗处生光，一屏一事，触而不迫 -->
+
+<view class="onboarding" wx:if="{{showOnboarding}}">
+  <swiper class="onboard-swiper" current="{{currentSlide}}" bindchange="onSlideChange" indicator-dots="{{true}}" indicator-color="rgba(255,215,0,0.1)" indicator-active-color="#FFD700">
+    <swiper-item>
+      <view class="ob-slide"><text class="ob-emoji">🤖</text><text class="ob-title">AI已经能画出以假乱真的图</text><text class="ob-desc">分辨不出来的人，正在成为"被喂养"的那一个。</text></view>
+    </swiper-item>
+    <swiper-item>
+      <view class="ob-slide"><text class="ob-emoji">⚡</text><text class="ob-title">但你的判断力，可以比AI更强</text><text class="ob-desc">每天鉴赏一段好内容，做几道判断题。</text></view>
+    </swiper-item>
+    <swiper-item>
+      <view class="ob-slide ob-final"><text class="ob-emoji">🚀</text><text class="ob-title">你准备好了吗？</text>
+        <view class="ob-cta" bindtap="startChallenge"><text class="ob-cta-text">开始琢光之旅</text></view>
+      </view>
+    </swiper-item>
+  </swiper>
+  <view class="ob-skip" wx:if="{{currentSlide < 2}}" bindtap="startChallenge"><text>跳过</text></view>
+</view>
+
+<view class="page-home" wx:else>
+  <!-- 鉴赏Hero：一张画，一个瞬间，占56%屏高 -->
+  <swiper class="hero-swiper" current="{{currentFeedIdx}}" bindchange="onFeedChange" indicator-dots="{{true}}" indicator-color="rgba(215,185,80,0.15)" indicator-active-color="#C9A84C">
+    <swiper-item>
+      <view class="hero-card"><image class="hero-image" src="/images/curated/curated_1_starry.png" mode="aspectFill" /><view class="hero-overlay"><text class="hero-tag">🎨 MoMA 馆藏</text><text class="hero-title">《星月夜》· 梵高</text><text class="hero-desc">1889年，圣雷米精神病院窗外。漩涡般的星空不是疯狂，是一个人在最黑暗的地方看见的光。</text></view></view>
+    </swiper-item>
+    <swiper-item>
+      <view class="hero-card"><image class="hero-image" src="/images/curated/curated_2_apple.png" mode="aspectFill" /><view class="hero-overlay"><text class="hero-tag">🏛️ Foster + Partners</text><text class="hero-title">Apple Park 访客中心</text><text class="hero-desc">碳纤维屋顶，没有一根柱子。极简不是省材料，是让每一条线都有理由存在。</text></view></view>
+    </swiper-item>
+    <swiper-item>
+      <view class="hero-card"><image class="hero-image" src="/images/curated/curated_3_afghan.png" mode="aspectFill" /><view class="hero-overlay"><text class="hero-tag">📷 国家地理 1985</text><text class="hero-title">阿富汗少女</text><text class="hero-desc">一张照片改变了世界对难民的看法。那双眼睛说的比任何一篇文章都多。</text></view></view>
+    </swiper-item>
+  </swiper>
+
+  <!-- 反馈行 -->
+  <view class="reaction-row">
+    <view class="r-btn" bindtap="onFeedReact" data-reaction="like"><text class="r-emoji">✨</text><text class="r-text">喜欢</text></view>
+    <view class="r-sep"></view>
+    <view class="r-btn" bindtap="onFeedReact" data-reaction="insight"><text class="r-emoji">💡</text><text class="r-text">启发</text></view>
+    <view class="r-sep"></view>
+    <view class="r-btn" bindtap="onFeedReact" data-reaction="meh"><text class="r-emoji">👌</text><text class="r-text">已阅</text></view>
+  </view>
+
+  <!-- 今日挑战 -->
+  <view class="invite" bindtap="startDaily"><text class="invite-text">今日挑战</text><text class="invite-arrow">→</text></view>
+
+  <!-- 段位行 -->
+  <view class="rank-line" bindtap="goCard"><text class="rl-icon">{{rank.icon}}</text><text class="rl-name" style="color: {{rank.color}}">{{rank.name}}</text><view class="rl-bar"><view class="rl-fill" style="width: {{progressPercent}}%; background: {{rank.color}}"></view></view><text class="rl-score">{{score}}</text></view>
+
+  <!-- 金线 -->
+  <view class="gold-line"></view>
+</view>

@@ -1,0 +1,40 @@
+.page-gallery { height: 100vh; background: #0A0A12; }
+
+.gallery-header { padding: 60rpx 32rpx 20rpx; }
+.gallery-title { font-size: 48rpx; font-weight: 700; color: #FFD700; display: block; }
+.gallery-sub { font-size: 26rpx; color: #666; display: block; margin-top: 8rpx; }
+
+.gallery-swiper { height: calc(100vh - 160rpx); }
+
+.feed-scroll { height: 100%; }
+.feed-item { padding-bottom: 60rpx; }
+
+/* 图片展示 */
+.feed-image-wrap { position: relative; width: 100%; height: 560rpx; }
+.feed-image { width: 100%; height: 100%; }
+.feed-image-badge { position: absolute; top: 24rpx; left: 24rpx; padding: 6rpx 16rpx; background: rgba(0,0,0,0.5); border-radius: 8rpx; backdrop-filter: blur(8px); }
+.feed-image-badge text { font-size: 22rpx; color: rgba(255,255,255,0.8); }
+
+/* 文字类特殊展示 */
+.feed-text-hero { padding: 80rpx 32rpx 40rpx; text-align: center; }
+.feed-text-title { font-size: 64rpx; color: #FFD700; font-weight: 800; display: block; letter-spacing: 4rpx; }
+.feed-text-subtitle { font-size: 26rpx; color: #666; display: block; margin-top: 12rpx; }
+
+/* 内容信息区 */
+.feed-info { padding: 32rpx 32rpx 0; }
+.feed-source { font-size: 22rpx; color: rgba(255,215,0,0.7); text-transform: uppercase; letter-spacing: 2rpx; }
+.feed-name { font-size: 38rpx; color: #E8E8E8; font-weight: 700; display: block; margin-top: 12rpx; line-height: 1.3; }
+.feed-subtitle { font-size: 26rpx; color: #888; display: block; margin-top: 8rpx; }
+.feed-desc { font-size: 28rpx; color: #AAA; line-height: 1.8; margin-top: 24rpx; }
+
+/* 品味栏 */
+.feed-insight { margin-top: 32rpx; padding: 24rpx; background: linear-gradient(135deg, rgba(255,215,0,0.05), rgba(255,165,0,0.03)); border-radius: 16rpx; border-left: 4rpx solid rgba(255,215,0,0.3); }
+.insight-label { font-size: 24rpx; color: #FFD700; font-weight: 600; display: block; }
+.insight-text { font-size: 26rpx; color: #CCC; line-height: 1.7; display: block; margin-top: 8rpx; }
+
+/* 语音互动提示 */
+.feed-action-hint { margin-top: 40rpx; padding: 24rpx; background: rgba(255,255,255,0.02); border-radius: 16rpx; text-align: center; border: 1rpx dashed rgba(255,255,255,0.08); }
+.hint-emoji { font-size: 32rpx; }
+.hint-text { font-size: 24rpx; color: #555; display: block; margin-top: 8rpx; }
+
+.feed-spacer { height: 40rpx; }
