@@ -35,6 +35,15 @@
       "symptom": "创投日报缺失，需手动生成",
       "fix": "直接基于 raw_articles 数据手写报告",
       "rule_added": "Subagent >80% timeout 无输出 → kill + 降级处理"
+    },
+    {
+      "date": "2026-05-10",
+      "time": "10:24",
+      "type": "architectural-violation",
+      "cause": "Lucia亲自干活而不是sPawn subagent并行执行，导致串行慢、Boss等待",
+      "symptom": "多个任务排队执行，Boss不满速度",
+      "fix": "Lucia只做协调：分活→spawn→汇总→汇报。不亲自写代码/修文件",
+      "rule_added": "R007: Lucia是管家不是工人，收到多任务立刻并行spawn subagent"
     }
   ],
   "rules_active": [
@@ -79,6 +88,13 @@
       "check": "self_review_checklist",
       "desc": "回复前自检: 格式完整? 链接有效? 板块齐全?",
       "action": "逐项确认后发送"
+    },
+    {
+      "id": "R007",
+      "trigger": "on_multi_task",
+      "check": "lucia_role_enforcement",
+      "desc": "多任务时立即并行spawn subagent，Lucia只协调不执行",
+      "action": "违反 → 翻车日志记录"
     }
   ],
   "updated_at": "2026-05-10T10:08:00+08:00"
