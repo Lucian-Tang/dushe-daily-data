@@ -36,6 +36,11 @@
 
 ### 数据发布
 - [ ] GitHub push 后验证 index.json 有所有频道
+- [ ] 🚨 发版前运行 QA: `python3 scripts/qa-check.py check_deploy {version} "$(git diff HEAD)"`
+- [ ] 版本号末位递增 (2.1.x 小修，2.x.0 大功能)
+- [ ] app.js globalData.version 与上传版本一致
+- [ ] 关于页版本号显示正确
+- [ ] QA 通过后才上传，不靠 Boss 测试
 - [ ] 小程序上传后确认版本号正确
 - [ ] 飞书文档 URL 确保 Boss 有编辑权限
 

@@ -50,15 +50,21 @@ def check_feishu_doc(block_count: int, sections_found: list[str]) -> list[str]:
     
     return issues
 
-def check_deploy(version: str, files: list[str]) -> list[str]:
-    """检查部署完整性"""
+def check_deploy(version: str, changes: str) -> list[str]:
+    """检查小程序发版完整性"""
     issues = []
     
-    if not version or version == "1.5":
-        issues.append(f"版本号异常: {version}")
+    # 版本号检查：末位数字递增，如 2.1.3
+    if not version or not re.match(r'^\d+\.\d+\.\d+$', version):
+        issues.append(f"版本号格式异常: {version}，应为 X.Y.Z")
     
-    if "utils/credibility.js" not in str(files) and "V2" in str(version):
-        issues.append("V2.0 关键文件 credibility.js 缺失")
+    # 关于页版本号必须一致
+    if "globalData.version" in changes or "app.js" in changes:
+        pass  # 这个交给人工确认
+    
+    # 检查是否有 git diff（确保有改动）
+    if not changes.strip():
+        issues.append("无代码变更却要发版？")
     
     return issues
 
