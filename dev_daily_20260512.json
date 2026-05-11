@@ -1,0 +1,98 @@
+[
+  {
+    "title": "CUDA-oxide：Nvidia 官方 Rust 转 CUDA 编译器正式上线",
+    "content": "Nvidia 官方实验室 NVLabs 发布了 CUDA-oxide，一个用 Rust 编写的 CUDA 编译器。这意味着 GPU 编程终于可以用现代内存安全语言来写了——Nvidia 自己在推 Rust 而非继续维护 C++ 泥潭。编译器直接对接 CUDA 生态，支持 NVIDIA GPU 硬件调度，Rust 开发者从此可以用 safe 代码写高性能 CUDA kernel。193 分、54 条评论，说明社区对这件事的期待不是一般的高。",
+    "quote": "Nvidia 终于承认 C++ 是技术债了，Rust 才是真爱？代码还没跑，先把祖传 C++ 换了。",
+    "source": "Hacker News",
+    "url": "https://nvlabs.github.io/cuda-oxide/index.html",
+    "published": "2026-05-11"
+  },
+  {
+    "title": "手写代码卷土重来：开发者放弃 IDE 重拾纸笔",
+    "content": "一位开发者宣布回归手写代码，引发 HN 818 分大讨论，490 条评论爆仓。这不是复古怀旧——作者认为手写代码能强迫你思考架构而非被 IDE 自动补全牵着走，调试时也更能理解代码全貌。评论区分成两派：有人觉得这是效率倒退，另一些人则认为 AI 时代手写思考才是真正的差异化技能。",
+    "quote": "818 分，说明被 IDE 养废的程序员比想象中多。",
+    "source": "Hacker News",
+    "url": "https://blog.k10s.dev/im-going-back-to-writing-code-by-hand/",
+    "published": "2026-05-11"
+  },
+  {
+    "title": "本地模型惊悚好用：M4 24GB 内存跑 AI 的实操指南",
+    "content": "一位开发者详细分享了在 Mac M4（24GB 内存）上运行本地大模型的经验，501 分、151 条评论。M4 的统一内存架构让跑 7B-14B 模型成为现实，无需联网、无需 API 费用、数据不离本机。Apple Silicon 的生态优势在这里体现得淋漓尽致——对于隐私敏感型开发者和离线办公场景，这套方案已经可用。",
+    "quote": "Apple 靠 M4 悄悄赢了 AI 私有化这一局，Intel 和 AMD 还在做梦。",
+    "source": "Hacker News",
+    "url": "https://jola.dev/posts/running-local-models-on-m4",
+    "published": "2026-05-10"
+  },
+  {
+    "title": "软件工程师可能不再是终身职业——HN 爆发大讨论",
+    "content": "一篇深度长文在 HN 拿到 170 分、317 条评论，论证软件工程可能不再是一个能从业到退休的终身职业。作者的核心论点是：AI 正在压缩初级工程师的岗位需求，而高级岗位的增长速度无法吸收增量。这不是泛泛的「AI 会取代程序员」，而是从招聘数据、技能半衰期和行业结构变化出发的严肃分析。",
+    "quote": "焦虑贩卖文的 317 条评论里，大概有 200 条是同行在找共鸣。",
+    "source": "Hacker News",
+    "url": "https://www.seangoedecke.com/software-engineering-may-no-longer-be-a-lifetime-career/",
+    "published": "2026-05-11"
+  },
+  {
+    "title": "AI 编程 agent 如何真正降低维护成本？James Shore 给出答案",
+    "content": "著名敏捷教练 James Shore 撰文分析为什么大多数 AI 编程 agent 反而会增加维护成本。他指出：AI 生成的代码往往缺乏可读性和一致性，随着时间推移，技术债会累积到无法维护的程度。真正的 AI 工具应该减少代码总量、保持代码风格一致，而不是产出更多「能跑但没人看得懂」的代码。317 分、92 条评论，对于正在大规模引入 AI coding tools 的团队来说，这是一篇值得认真对待的反思文章。",
+    "quote": "James Shore 说 AI 会让你欠下技术债——这大概是第一个敢说实话的人。",
+    "source": "Hacker News",
+    "url": "https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-maintenance-costs",
+    "published": "2026-05-10"
+  },
+  {
+    "title": "Obsidian 插件被滥用部署远程控制木马：知识管理工具成攻击跳板",
+    "content": "安全研究机构发现 Obsidian 插件生态被攻击者用于部署远程访问木马 Phantom Pulse RAT。攻击者发布含有恶意代码的插件，诱使知识管理重度用户安装。327 分、197 条评论。这类攻击利用了用户对插件来源的信任，以及 Obsidian 作为本地优先工具的安全假象。财务、法律、研究等高度敏感信息的从业者，是主要风险群体。",
+    "quote": "你的笔记软件比你更早知道你要被黑。",
+    "source": "Hacker News",
+    "url": "https://cyber.netsecops.io/articles/obsidian-plugin-abused-in-campaign-to-deploy-phantom-pulse-rat/",
+    "published": "2026-05-10"
+  },
+  {
+    "title": "Gmail 注册强制发短信+扫码：Google 的账号安全又在作妖",
+    "content": "Google 悄悄更新了 Gmail 注册流程：现在不只要求扫描 QR 码，还必须向 Google 发送一条短信才能完成验证。没有实体手机的人彻底无法注册 Google 账号了。争议的核心：短信验证本质上是隐私泄漏，Google 在用双因素认证的幌子收集用户手机号。对于隐私倡导者和需要匿名注册服务的开发者来说，这是一个需要绕开的坑。",
+    "quote": "Google：用你的隐私数据当门票进入我的生态，妙啊。",
+    "source": "Hacker News",
+    "url": "https://discuss.privacyguides.net/t/google-account-registration-now-requires-sending-an-sms-via-phone-instead-of-receiving-an-sms/36082",
+    "published": "2026-05-11"
+  },
+  {
+    "title": "GrapheneOS 炮轰硬件认证是垄断工具：TPM 的黑暗面",
+    "content": "隐私移动 OS 项目 GrapheneOS 发长文猛烈抨击硬件认证（Hardware Attestation）机制，称其被大厂用作排除竞争、锁定用户的垄断工具。2006 分、674 条评论，爆炸级别讨论。核心论点：当你需要通过硬件 TPM 进行「认证」才能使用某些服务时，实际上是将对设备数据的控制权交给了平台方。",
+    "quote": "TPM 的全称应该是「Trusted Prison Manager」。",
+    "source": "Hacker News",
+    "url": "https://grapheneos.social/@GrapheneOS/116550899908879585",
+    "published": "2026-05-10"
+  },
+  {
+    "title": "文档解析引擎 Knowhere 开源：专治 AI 幻觉，结构化输出",
+    "content": "一款叫 Knowhere 的 AI 文档解析插件正式开源，专治非结构化数据的 AI 幻觉问题。作者在 V2EX 发帖介绍：模型越来越强，但一碰文档就容易乱读一气。这个工具的核心价值在于把 PDF、扫描件、网页等非结构化数据可靠地提取为结构化输出，让 AI 应用真正可用。开发者若在做文档类 AI 产品，这个开源库值得一试。",
+    "quote": "AI 幻觉的解药不是更好的模型，是更好的解析器。",
+    "source": "V2EX",
+    "url": "https://github.com/Ontos-AI/knowhere",
+    "published": "2026-05-11"
+  },
+  {
+    "title": "程序员工作报告生成 Skill：一键从 Git Commit 出日报周报",
+    "content": "一款基于本地 Git 仓库 commit 数据自动生成中文工作日报、周报、月报、季度总结的工具在 V2EX 获得关注。支持推送到企业微信，对于需要每周向上级汇报但懒得自己写的工程师来说，这是摸鱼利器。安装到全局即可使用，支持多种报告周期。开源地址已提供。",
+    "quote": "从此周报不再是创作，而是 Ctrl+C/V 的艺术。",
+    "source": "V2EX",
+    "url": "https://github.com/umlink/daily-report-skill",
+    "published": "2026-05-11"
+  },
+  {
+    "title": "vibe coding 端口敲门工具：knock-proxy 用 TCP 认证隐藏服务",
+    "content": "knock-proxy 是一个用 .NET + mihomo 写的端口敲门（port knocking）工具，通过 HMAC-SHA256 二次认证来隐藏 SSH、RDP、数据库管理端口等敏感服务。服务端用防火墙默认 DROP 公网端口，客户端先发送 knock 序列，验证后才临时放行。对于暴露在公网的服务器管理员来说，这是比仅仅靠密码保护更靠谱的方案。",
+    "quote": "把服务藏起来不让黑客看见，比给黑客建个门卫强多了。",
+    "source": "V2EX",
+    "url": "https://github.com/knock-proxy/knock-proxy",
+    "published": "2026-05-11"
+  },
+  {
+    "title": "iOS 原生 SSH 客户端 NexusShell：非科班独立开发者的心血",
+    "content": "一位非科班独立开发者分享了自己用 SwiftUI 开发 macOS SSH 客户端 NexusShell 的完整过程。从 GPT-4 辅助编程到独立完成整个客户端，上架 App Store 并持续迭代。这是 AI 时代独立开发的一个缩影：不是传统 CS 背景，也能做出生产级工具。macOS SSH 客户端市场确实缺少好用的原生选项，这个项目填补了这个空白。",
+    "quote": "不用科班出身，不用刷 LeetCode，一个 SSH 客户端就够吃了。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1211839",
+    "published": "2026-05-11"
+  }
+]
