@@ -1,1 +1,56 @@
-[{"title": "ZAYA1-8B：AMD全栈训练的推理MoE，700M激活参数叫板DeepSeek-R1", "content": "Zyphra这波操作挺骚——AMD MI300X从零训练推理模型，700M激活参数就能在AIME'25跑到91.9%，直接逼平DeepSeek-R1-0528。AMD ROCm生态这次算是秀了一把肌肉，MoE+RL的四阶段训练cascade有点东西。", "quote": "Zyphra这波操作挺骚——AMD MI300X从零训练推理模型，700M激活参数就能在AIME'25跑到91.9%，直接逼平DeepSeek-R1-0528。AMD ROCm生态这次算是秀了一把肌肉，MoE+RL的四阶段训练cascade有点东西。", "source": "arXiv cs.AI | arXiv:2605.05365", "url": "", "category": "model-release"}, {"title": "CyberSecQwen-4B：4B参数吊打8B专精安全模型，SOC分析师的本地神器", "content": "4B参数比8B还准，CTI-MCQ领先8.7个百分点，还能在12GB消费卡上跑。数据不出内网的场景这不就是标准答案？开源协议还Apache 2.0，厂商们还等什么？", "quote": "4B参数比8B还准，CTI-MCQ领先8.7个百分点，还能在12GB消费卡上跑。数据不出内网的场景这不就是标准答案？开源协议还Apache 2.0，厂商们还等什么？", "source": "HuggingFace Blog | AMD Developer Hackathon", "url": "", "category": "model-release"}, {"title": "EMO：AllenAI让MoE专家自己学会模块化，12.5%专家保留97%性能", "content": "标准MoE专家爱学标点符号，EMO专家自发组队学医学/法律/代码——同样是万亿token训练，差别怎么就这么大？文档级路由信号这招简单粗暴但有效。稀疏模型部署的帕累托 frontier，被这一篇顶到新位置了。", "quote": "标准MoE专家爱学标点符号，EMO专家自发组队学医学/法律/代码——同样是万亿token训练，差别怎么就这么大？文档级路由信号这招简单粗暴但有效。稀疏模型部署的帕累托 frontier，被这一篇顶到新位置了。", "source": "HuggingFace Blog | AllenAI", "url": "", "category": "academic"}, {"title": "APMs：通过标注行为反推安全策略，80%+准确率的「读心术」来了", "content": "不用问标注员「你怎么想的」，直接从标注行为猜他脑子里在想啥——这思路很野。80%准确率说明安全标注员的决策确实有规律可循。对AI safety policy设计来说，这是个金矿。", "quote": "不用问标注员「你怎么想的」，直接从标注行为猜他脑子里在想啥——这思路很野。80%准确率说明安全标注员的决策确实有规律可循。对AI safety policy设计来说，这是个金矿。", "source": "arXiv cs.AI | arXiv:2605.05329", "url": "", "category": "academic"}, {"title": "Partial Evidence Bench：Agent权限边界的新考验——证据在门外你看见了没？", "content": "企业Agent常见死法——访问控制正确但答案是残缺的。72个任务、3个场景家族，基准测试直接把这个「静默过滤」定为灾难级不安全行为。搞企业AI的应用同学，这篇值得细读。", "quote": "企业Agent常见死法——访问控制正确但答案是残缺的。72个任务、3个场景家族，基准测试直接把这个「静默过滤」定为灾难级不安全行为。搞企业AI的应用同学，这篇值得细读。", "source": "arXiv cs.AI | arXiv:2605.05379", "url": "", "category": "academic"}, {"title": "vLLM V0→V1迁移避坑指南：RL训练中的推理一致性", "content": "在线RL最怕Train-Inference Mismatch。ServiceNow这篇把四个坑（logprob语义、运行时默认值、inflight权重更新、fp32 lm_head）拆解得清清楚楚，MiniMax-M1也踩过同一个坑——做RL训练的团队，这篇是必读存档。", "quote": "在线RL最怕Train-Inference Mismatch。ServiceNow这篇把四个坑（logprob语义、运行时默认值、inflight权重更新、fp32 lm_head）拆解得清清楚楚，MiniMax-M1也踩过同一个坑——做RL训练的团队，这篇是必读存档。", "source": "HuggingFace Blog | ServiceNow AI", "url": "", "category": "ai-application"}]
+[
+  {
+    "title": "ZAYA1-8B：AMD全栈训练的推理MoE，700M激活参数叫板DeepSeek-R1",
+    "content": "Zyphra这波操作挺骚——AMD MI300X从零训练推理模型，700M激活参数就能在AIME'25跑到91.9%，直接逼平DeepSeek-R1-0528。AMD ROCm生态这次算是秀了一把肌肉，MoE+RL的四阶段训练cascade有点东西。",
+    "quote": "Zyphra这波操作挺骚——AMD MI300X从零训练推理模型，700M激活参数就能在AIME'25跑到91.9%，直接逼平DeepSeek-R1-0528。AMD ROCm生态这次算是秀了一把肌肉，MoE+RL的四阶段训练cascade有点东西。",
+    "source": "arXiv cs.AI | arXiv:2605.05365",
+    "url": "",
+    "category": "model-release",
+    "published": "2026-05-08T08:00:00+08:00"
+  },
+  {
+    "title": "CyberSecQwen-4B：4B参数吊打8B专精安全模型，SOC分析师的本地神器",
+    "content": "4B参数比8B还准，CTI-MCQ领先8.7个百分点，还能在12GB消费卡上跑。数据不出内网的场景这不就是标准答案？开源协议还Apache 2.0，厂商们还等什么？",
+    "quote": "4B参数比8B还准，CTI-MCQ领先8.7个百分点，还能在12GB消费卡上跑。数据不出内网的场景这不就是标准答案？开源协议还Apache 2.0，厂商们还等什么？",
+    "source": "HuggingFace Blog | AMD Developer Hackathon",
+    "url": "",
+    "category": "model-release",
+    "published": "2026-05-08T08:15:00+08:00"
+  },
+  {
+    "title": "EMO：AllenAI让MoE专家自己学会模块化，12.5%专家保留97%性能",
+    "content": "标准MoE专家爱学标点符号，EMO专家自发组队学医学/法律/代码——同样是万亿token训练，差别怎么就这么大？文档级路由信号这招简单粗暴但有效。稀疏模型部署的帕累托 frontier，被这一篇顶到新位置了。",
+    "quote": "标准MoE专家爱学标点符号，EMO专家自发组队学医学/法律/代码——同样是万亿token训练，差别怎么就这么大？文档级路由信号这招简单粗暴但有效。稀疏模型部署的帕累托 frontier，被这一篇顶到新位置了。",
+    "source": "HuggingFace Blog | AllenAI",
+    "url": "",
+    "category": "academic",
+    "published": "2026-05-08T08:30:00+08:00"
+  },
+  {
+    "title": "APMs：通过标注行为反推安全策略，80%+准确率的「读心术」来了",
+    "content": "不用问标注员「你怎么想的」，直接从标注行为猜他脑子里在想啥——这思路很野。80%准确率说明安全标注员的决策确实有规律可循。对AI safety policy设计来说，这是个金矿。",
+    "quote": "不用问标注员「你怎么想的」，直接从标注行为猜他脑子里在想啥——这思路很野。80%准确率说明安全标注员的决策确实有规律可循。对AI safety policy设计来说，这是个金矿。",
+    "source": "arXiv cs.AI | arXiv:2605.05329",
+    "url": "",
+    "category": "academic",
+    "published": "2026-05-08T08:45:00+08:00"
+  },
+  {
+    "title": "Partial Evidence Bench：Agent权限边界的新考验——证据在门外你看见了没？",
+    "content": "企业Agent常见死法——访问控制正确但答案是残缺的。72个任务、3个场景家族，基准测试直接把这个「静默过滤」定为灾难级不安全行为。搞企业AI的应用同学，这篇值得细读。",
+    "quote": "企业Agent常见死法——访问控制正确但答案是残缺的。72个任务、3个场景家族，基准测试直接把这个「静默过滤」定为灾难级不安全行为。搞企业AI的应用同学，这篇值得细读。",
+    "source": "arXiv cs.AI | arXiv:2605.05379",
+    "url": "",
+    "category": "academic",
+    "published": "2026-05-08T09:00:00+08:00"
+  },
+  {
+    "title": "vLLM V0→V1迁移避坑指南：RL训练中的推理一致性",
+    "content": "在线RL最怕Train-Inference Mismatch。ServiceNow这篇把四个坑（logprob语义、运行时默认值、inflight权重更新、fp32 lm_head）拆解得清清楚楚，MiniMax-M1也踩过同一个坑——做RL训练的团队，这篇是必读存档。",
+    "quote": "在线RL最怕Train-Inference Mismatch。ServiceNow这篇把四个坑（logprob语义、运行时默认值、inflight权重更新、fp32 lm_head）拆解得清清楚楚，MiniMax-M1也踩过同一个坑——做RL训练的团队，这篇是必读存档。",
+    "source": "HuggingFace Blog | ServiceNow AI",
+    "url": "",
+    "category": "ai-application",
+    "published": "2026-05-08T09:15:00+08:00"
+  }
+]
