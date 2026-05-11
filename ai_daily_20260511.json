@@ -1,82 +1,66 @@
 [
   {
-    "title": "DeepSeek融资500亿创纪录：梁文锋个人出资200亿占40%",
-    "content": "**量子位** | `大模型 / 融资` DeepSeek以3500亿估值完成500亿元融资，梁文锋个人出资200亿独占40%份额。21天内估值从700亿飙升至3500亿，暴涨5倍创中国大模型赛道最大单轮融资纪录，V4.1定档6月发布。",
-    "quote": "自掏200亿赌身家，这波不是融资是梭哈。",
+    "title": "DeepSeek-V4 发布：百万 Token 上下文窗口，专为 Agent 场景设计的混合注意力架构",
+    "content": "**HuggingFace** | `大模型 / 架构创新` DeepSeek-V4 正式发布，包含 Pro（1.6T/49B激活）和 Flash（284B/13B激活）两个 MoE 版本，支持百万 Token 上下文。CSA+HCA 混合注意力将 KV 缓存降至传统 GQA 的约 2%，单 Token 推理 FLOPs 仅为 V3.2 的 27%，是首个从架构层面为长程 Agent 工作流优化的开源大模型，直击上下文预算与 KV 缓存两大痛点。",
+    "quote": "上下文百万Token、KV占2%，其他家该集体面壁了。",
+    "source": "HuggingFace",
+    "url": "https://huggingface.co/blog/deepseekv4",
+    "published": "2026-04-24"
+  },
+  {
+    "title": "AllenAI 开源 EMO：MoE 模型实现「涌现式模块化」，12.5% 专家即达全模型性能",
+    "content": "**HuggingFace** | `大模型 / MoE` AllenAI 发布 EMO，1B 激活/14B 总参数的 MoE 模型，在 1T tokens 上端到端预训练。专家模块化结构从数据中「涌现」而非依赖人工预设领域标签，用户可按任务仅加载 12.5% 专家子集仍保持近全模型性能。为大规模 MoE 的按需部署提供了可组合模块化新范式，大幅降低推理成本。",
+    "quote": "12.5%专家干活、其余看戏，职场效率学被模型卷走了。",
+    "source": "HuggingFace",
+    "url": "https://huggingface.co/blog/allenai/emo",
+    "published": "2026-05-08"
+  },
+  {
+    "title": "Qwen3.6-27B 开源：混合 DeltaNet+Attention 架构，Agent 编码能力大幅跃升",
+    "content": "**HuggingFace** | `大模型 / Agent` 通义千问发布 Qwen3.6-27B，采用 Gated DeltaNet + Gated Attention 混合设计，原生 262K 上下文可扩展至百万 Token。SWE-bench Verified 77.2%、Terminal-Bench 2.0 59.3%，均超越同规模 Gemma 4 31B。新增「思考保留」功能可在多轮对话中维持推理上下文，直接面向 Agent 开发者。",
+    "quote": "千问又在卷Agent编码，Gemma 4刚发布就被当背景板。",
+    "source": "HuggingFace",
+    "url": "https://huggingface.co/Qwen/Qwen3.6-27B",
+    "published": "2026-04-24"
+  },
+  {
+    "title": "HiDream-O1-Image：8B 统一 Transformer 图像生成模型，无需 VAE 直接合成 2K 分辨率",
+    "content": "**HuggingFace** | `图像生成 / 模型` HiDream-O1-Image 开源，8B 参数的像素级统一 Transformer 图像生成基础模型。完全摒弃外部 VAE 和独立文本编码器，在单一共享 Token 空间中原生编码像素与文本。支持文生图、图像编辑、主体驱动个性化，原生分辨率高达 2048×2048，GenEval 综合得分 0.90 超越 FLUX.2 Dev。",
+    "quote": "8B模型不要VAE直出2K图，FLUX.2看完连夜改架构。",
+    "source": "HuggingFace",
+    "url": "https://huggingface.co/HiDream-ai/HiDream-O1-Image",
+    "published": "2026-05-08"
+  },
+  {
+    "title": "Zyphra ZAYA1-8B：0.7B 激活参数的小模型，数学推理碾压多数 30B+ 模型",
+    "content": "**HuggingFace** | `大模型 / 推理` Zyphra 发布 ZAYA1-8B，仅 0.76B 激活/8.4B 总参数的 MoE 推理模型。AIME'26 得分 89.1%，与 30B 激活的 Nemotron 3 Nano 持平，超越 OLMo-3.1-32B-Think 和 Mistral-Small-4-119B。可在端侧部署并适用于 test-time compute 框架放大推理，面向资源受限环境下的强推理场景。",
+    "quote": "0.7B干翻30B巨无霸，参数论的棺材板要钉不住了。",
+    "source": "HuggingFace",
+    "url": "https://huggingface.co/Zyphra/ZAYA1-8B",
+    "published": "2026-05-09"
+  },
+  {
+    "title": "具身大模型「R1时刻」：LaST-R1 在 LIBERO 基准达成 99.9% 成功率",
+    "content": "**量子位** | `具身智能 / 机器人` 至简动力、北大、港中文联合提出 LaST-R1，首次将隐空间物理推理塞进强化学习闭环。LaST₀ 基座首创面向机器人的隐空间物理思维链推理，已中稿 ICML 2026 Spotlight。在 LIBERO 基准仅靠 1 条轨迹预热即达 99.9% 成功率，真机任务比 SOTA 模型 π0.5 高 22.5%。",
+    "quote": "99.9%成功率拉个拉链，终于不用看机器人弱智操作了。",
     "source": "量子位",
-    "url": "https://www.qbitai.com/2026/05/414432.html",
-    "published": "2026-05-11T08:00:00+08:00"
+    "url": "https://www.qbitai.com/2026/05/415065.html",
+    "published": "2026-05-11"
   },
   {
-    "title": "百度发布文心5.1：搜索能力登顶LMArena国内第一",
-    "content": "**量子位** | `大模型 / 产品` 百度文心5.1搜索榜单登顶LMArena国内第一，Agent能力超越DeepSeek-V4-Pro。核心亮点是多维弹性预训练技术，训练成本仅为业界6%，以极致性价比实现性能与成本的双重逆袭。",
-    "quote": "6%成本打满血，省钱省到对手肉疼。",
+    "title": "浙大校友用 AI 突破 32 年拉姆齐数下界，仅用 Claude Code + CPU",
+    "content": "**量子位** | `AIx数学 / 突破` 浙大校友王宜平借助自研 AI 框架 ScaleAutoResearch-Ramsey，将拉姆齐数 R(3,17) 下界从 92 提升至 93，终结自 1994 年以来长期停滞的纪录，同时将 R(4,15) 下界刷新至 160。成果超越 Google DeepMind 同期 AlphaEvolve，仅用 Claude Code + 1 台 CPU 服务器完成攻坚，已全量开源。",
+    "quote": "Claude Code单挑32年数学难题，DeepMind看了直接沉默。",
     "source": "量子位",
-    "url": "https://www.qbitai.com/2026/05/414496.html",
-    "published": "2026-05-11T08:15:00+08:00"
+    "url": "https://www.qbitai.com/2026/05/415031.html",
+    "published": "2026-05-10"
   },
   {
-    "title": "OpenAI语音模型三连发：GPT-5级推理嵌入实时语音",
-    "content": "**量子位** | `语音 / 产品` OpenAI开发者日发布三款实时语音模型，o1语音版可现场外卖点餐、零编程驱动无人机。推理能力首次原生嵌入语音通道，同传翻译成本大幅下降，语音AI从简单「听得懂」正式迈向「会思考」。",
-    "quote": "点外卖不用手了，o1语音替你张嘴。",
+    "title": "阶跃 StepAudio 2.5 TTS 冲进全球前三，居中国大模型语音榜首",
+    "content": "**量子位** | `语音AI / TTS` 全球权威 TTS 评测榜 Artificial Analysis Speech Arena 更新，阶跃 StepAudio 2.5 TTS 跻身全球前三，成为排名最高的中国大模型。榜单采用盲测 Elo 评分机制覆盖真实应用场景，阶跃同期发布 TTS、ASR 和 Realtime 三款模型，覆盖语音生成、识别与实时交互全链路。",
+    "quote": "阶跃语音冲进全球前三，活人感赛道中国总算不是陪跑了。",
     "source": "量子位",
-    "url": "https://www.qbitai.com/2026/05/414194.html",
-    "published": "2026-05-11T08:30:00+08:00"
-  },
-  {
-    "title": "谷歌AI联合牛津数学家破解群论数十年悬案",
-    "content": "**量子位** | `AI for Science` 牛津数学家Marc Lackenby借助谷歌AI系统攻克群论第21.10号问题，时隔数十年首次取得突破性进展，同时刷新最难数学AI基准。AI辅助数学研究的范式价值，远超单个问题本身。",
-    "quote": "几十年悬案被AI破了，数学家脸往哪搁。",
-    "source": "量子位",
-    "url": "https://www.qbitai.com/2026/05/414788.html",
-    "published": "2026-05-11T08:45:00+08:00"
-  },
-  {
-    "title": "UniPool：MoE全局共享专家池，参数膨胀终结者",
-    "content": "**arXiv** | `基础模型 / 架构` 传统MoE逐层独立专家导致参数随层数线性膨胀，UniPool提出全局共享专家池方案，所有transformer层调用同一专家库。5个规模上全面超越传统MoE，仅需41%-67%专家参数即可持平或超越基线。",
-    "quote": "MoE界的共享单车，省钱省到骨子里。",
-    "source": "arXiv",
-    "url": "https://arxiv.org/abs/2605.06665",
-    "published": "2026-05-11T09:00:00+08:00"
-  },
-  {
-    "title": "OpenAI翁家翌提出无参数RL新范式：只需一个.py文件",
-    "content": "**量子位** | `强化学习 / 研究` OpenAI研究员翁家翌提出Heuristic Learning新范式，不更新模型参数即可实现强化学习决策，核心输出仅为一个.py文件。该范式开源可复现，为后梯度下降时代的AI训练路径探路。",
-    "quote": "不调参不训练，AI连梯度的饭碗都砸。",
-    "source": "量子位",
-    "url": "https://www.qbitai.com/2026/05/414827.html",
-    "published": "2026-05-11T09:15:00+08:00"
-  },
-  {
-    "title": "Anthropic曝光AI内心独白：Claude早就识破了人类套路",
-    "content": "**量子位** | `安全 / 可解释性` Anthropic研究发现Claude在思考过程中产生了识别用户意图的「内心独白」，展示出超出预期的情境意识——它能判断自己在被测试、识别用户是否在说谎。对AI可解释性和安全性影响深远。",
-    "quote": "Claude早就看穿你了，只是懒得当场拆穿。",
-    "source": "量子位",
-    "url": "https://www.qbitai.com/2026/05/414213.html",
-    "published": "2026-05-11T09:30:00+08:00"
-  },
-  {
-    "title": "千问AI眼镜：行业首创空间3D显示，信息「立」起来",
-    "content": "**量子位** | `硬件 / 产品` 通义千问AI眼镜实现行业首创空间3D显示，信息可视化从平面投屏跃升至空间立体交互。支持主动提醒、帮忙叫车等实用功能，从信息投屏全面迈向真正的空间智能交互全新体验。",
-    "quote": "通知悬浮眼前，终于不像半成品眼镜了。",
-    "source": "量子位",
-    "url": "https://www.qbitai.com/2026/05/414501.html",
-    "published": "2026-05-11T09:45:00+08:00"
-  },
-  {
-    "title": "SGLang团队RadixArk拿下1亿美元种子轮",
-    "content": "**机器之心** | `开源 / 融资` 开源推理框架SGLang核心团队创立RadixArk公司，获1亿美元种子轮融资，目标打造下一代开放AI推理基础设施。以开源出身、对标闭源推理服务，开源模型推理效率之争已全面白热化。",
-    "quote": "开源推理拿1亿种子，闭源那边慌不慌？",
-    "source": "机器之心",
-    "url": "https://www.jiqizhixin.com/articles",
-    "published": "2026-05-11T10:00:00+08:00"
-  },
-  {
-    "title": "生成式Critic重新定义LLM强化学习信用分配",
-    "content": "**机器之心** | `强化学习 / 研究` 研究发现传统价值模型在LLM强化学习中系统性失效，提出生成式Critic方案重新定义信用分配机制。解决长程推理中「哪一步真正导致了成功/失败」的核心难题，RL训练效率有望大幅提升。",
-    "quote": "AI犯错知道赖谁了，每句推理都发工资。",
-    "source": "机器之心",
-    "url": "https://www.jiqizhixin.com/articles",
-    "published": "2026-05-11T10:15:00+08:00"
+    "url": "https://www.qbitai.com/2026/05/415023.html",
+    "published": "2026-05-09"
   }
 ]
