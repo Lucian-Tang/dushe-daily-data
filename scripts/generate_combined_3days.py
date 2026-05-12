@@ -128,7 +128,7 @@ def main():
     print(f"[combined_3days] ✅ 生成 {out_fname}，共 {total_items} 条数据")
     
     # 更新 index.json 添加 combined_3days 字段
-    index_data['combined_3days'] = out_fname
+    index_data['combined_3days'] = {today_date: out_fname}
     with open('index.json', 'w', encoding='utf-8') as f:
         json.dump(index_data, f, ensure_ascii=False, indent=2)
     
