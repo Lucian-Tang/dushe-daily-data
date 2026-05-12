@@ -239,146 +239,82 @@
     {
       "title": "🐑 Shepherd：Meta-Agent 运行框架，用 Lean 证明器给 Agent 环境做版本控制",
       "content": "Meta-Agent 系统（Agent 操控 Agent）面临两大工程难题：Agent 状态难以追踪回滚、多 Agent 并行探索时计算成本爆炸。Shepherd 提出将 Meta-Agent 操作形式化为函数，用 Lean 证明语言机械化核心操作，并记录每次 Agent-环境交互为带类型的 Git-like 执行 trace。在这种形式化下，任何历史状态都可以 fork 并回放——比 Docker fork 快 5 倍，prompt 缓存复用率达 95% 以上。在 TerminalBench-2 上，Tree-RL fork 策略将任务完成率从 34.2% 提升到 39.4%；pair coding 场景 supervisor 干预使通过率从 28.8% 升至 54.7%。这对需要高可靠 Agent 协作的研究和工程团队是基础设施级别的贡献，已开源。",
-      "quote": "💬 Docker 都要被你气死了——5 倍速 fork 加 95% prompt 缓存，这才是 Agent 该有的基础设施。",
+      "quote": "",
       "source": "arXiv (cs.AI)",
       "url": "https://arxiv.org/abs/2605.10913",
-      "published": "2026-05-12"
+      "published": "2026-05-13"
     },
     {
       "title": "🎬 WorldReasonBench：视频生成模型是\"世界模拟器\"吗？首个物理对齐压力测试来了",
-      "content": "Seedance2.0、Veo3.1 等商业视频生成系统已能生成高度逼真动态场景学界开始讨论视频生成器是否在演化为\"世界模拟器\"，但此前缺乏系统性验证框架。WorldReasonBench 从人类Aligned 的角度出发，将视频生成器视为未来世界状态预测器进行压力测试，考察模型在长程物理交互、因果链条、多实体碰撞等场景的合理性。揭示了当前最强商业系统在物理可信度上的具体短板。为视频生成进入科学模拟、机器人规划等高可靠性场景提供了首个严格评测基准。",
-      "quote": "💬 视频生成模型吹自己是世界模拟器？先跑完 WorldReasonBench 再说大话。",
+      "content": "Seedance2.0、Veo3.1 等商业视频生成系统已能生成高度逼真动态场景，学界开始讨论视频生成器是否在演化为\"世界模拟器\"，但此前缺乏系统性验证框架。WorldReasonBench 从人类Aligned 的角度出发，将视频生成器视为未来世界状态预测器进行压力测试，考察模型在长程物理交互、因果链条、多实体碰撞等场景的合理性。揭示了当前最强商业系统在物理可信度上的具体短板，为视频生成进入科学模拟、机器人规划等高可靠性场景提供了首个严格评测基准。",
+      "quote": "",
       "source": "arXiv (cs.AI / cs.CV)",
       "url": "https://arxiv.org/abs/2605.10434",
-      "published": "2026-05-12"
+      "published": "2026-05-13"
     },
     {
       "title": "🖼️ Qwen-Image-2.0：统一图文生成与编辑，单一框架搞定高保真图像创作",
       "content": "图像生成和编辑长期被视为两个独立任务——前者追求创造力，后者追求精确控制。Qwen-Image-2.0 试图用单一统一模型同时搞定：既能在高分辨率下生成逼真图像，又能基于指令对图像特定区域进行精准编辑，保持风格和身份一致性。该工作在多个图文生成和编辑 benchmark 上验证了统一的可行性，减少了部署多个专用模型的工程成本。对需要一站式图像创作/编辑能力的应用层团队值得关注。",
-      "quote": "💬 SD 党和 DALL-E 党别吵了，Qwen 一个模型全包——就是不知道内存顶不顶得住。",
+      "quote": "",
       "source": "HuggingFace Paper",
       "url": "https://huggingface.co/papers/2605.10730",
-      "published": "2026-05-12"
+      "published": "2026-05-13"
     },
     {
       "title": "📐 Soohak：数学家出题评测LLM研究级数学能力，比 IMO 更难的新基准",
       "content": "LLM 在 IMO（国际数学奥林匹克）拿金牌的消息余温尚存，但业界已经意识到 IMO 评测存在上限过低、与真实研究数学脱节的问题。Soohak 由数学家亲自出题，构建面向研究级数学能力的新基准——题目更开放、证明链条更长、跨领域综合要求更高，不存在标准答案可供背诵。在这套更难、更接近真实学术场景的题目上对前沿 LLM 进行系统评测，揭示当前模型在研究级数学推理上的真实差距。对推动 LLM 数学能力向科研渗透有重要参考价值。",
-      "quote": "💬 IMO 金牌已经是过去式了——数学家出的新考卷，让 GPT 和 Gemini 再考一次。",
+      "quote": "",
       "source": "arXiv (cs.AI / cs.LG)",
       "url": "https://arxiv.org/abs/2605.09063",
-      "published": "2026-05-12"
+      "published": "2026-05-13"
     },
     {
       "title": "📄 Dystruct：扩散语言模型的动态结构化解码，无需重训练即可变长输出",
       "content": "扩散语言模型（DLM）以并行解码著称，但主流方案需要预先指定输出长度，严重限制了在开放式问答、长文档生成等真实场景的灵活性。已有的一些变长方案要么需要昂贵重训练，要么只依赖局部置信度信号，容易产生语义不连贯。Dystruct 提出了无需训练的贝叶斯结构化解码框架，将输出长度、块边界和解码调度联合建模为动态结构推理过程，每步融合局部不确定性与结构化信号，实现灵活块扩展。在多个基准测试上，生成质量和灵活性均超越固定长度和现有变长基线。",
-      "quote": "💬 扩散语言模型输出长度固定这个毛病，终于有人用贝叶斯方法根治了。",
+      "quote": "",
       "source": "HuggingFace Paper",
       "url": "https://huggingface.co/papers/2605.09820",
-      "published": "2026-05-12"
+      "published": "2026-05-13"
     },
     {
       "title": "🌍 SimWorld Studio：Unreal Engine 5 生成可自进化 3D 机器人训练世界",
       "content": "代码 Agent 有沙盒，机器人 Agent 却只能靠手绘场景训练——这是 Embodied AI 领域的老大难问题。SimWorld Studio 构建在 Unreal Engine 5 上的开源平台，核心是 SimCoder 工具增强型编码 Agent：接收语言/图像指令，写 UE5 代码生成物理真实的 3D 交互环境，并通过编译器反馈、VLM 评审等自进化完善环境和技能库。生成 Gym 风格环境用于 Agent 训练，并支持环境- Agent 共演化：Agent 进步后系统自动提升环境难度。具身导航案例中，共演化策略比固定环境训练成功率提升 18 点，比无训练 Agent 提升 40 点。",
-      "quote": "💬 黄仁勋的机器人训练靠物理引擎，SimWorld 靠 UE5——3D 机器人训练的 OpenAI Gym 时刻来了。",
+      "quote": "",
       "source": "HuggingFace Paper",
       "url": "https://huggingface.co/papers/2605.09423",
-      "published": "2026-05-12"
+      "published": "2026-05-13"
     },
     {
       "title": "🎮 G-Zero：无需任何数据，从零开始的自博弈开放式内容生成",
       "content": "LLM 在可验证领域（代码解题、数学证明）已经能自演化，但在开放式任务（写作、创意生成）中，自演化依赖 LLM judge 做 proxy 评估，存在能力瓶颈和 reward hacking 问题。G-Zero 提出完全从零开始的 self-play 框架：无需任何外部数据或 LLM judge，直接通过双代理对称博弈让模型自主发现和优化开放式生成策略。在开放式写作、对话生成等任务上，G-Zero 超越依赖外部 judge 的自演化基线，且不存在 reward hacking 问题。为开放式生成任务的自训练提供了全新范式。",
-      "quote": "💬 没有 judge 也能自己玩得转？G-Zero 把开放式生成的自演化带进了无师之境。",
+      "quote": "",
       "source": "arXiv (cs.AI / cs.CL)",
       "url": "https://arxiv.org/abs/2605.09959",
-      "published": "2026-05-12"
+      "published": "2026-05-13"
     },
     {
       "title": "🏷️ Auto-Rubric as Reward：把隐式偏好变成可验证标准，多模态对齐新思路",
       "content": "多模态生成模型对齐的最大痛点：标量奖励或 pairwise 标签过于稀疏，无法提供细粒度优化信号，导致 reward hacking。Auto-Rubric as Reward（ARR）将 LLM 内部化的偏好知识外化为 prompt 特异的评分 rubric——把模糊的人类意图拆解成独立可验证的质量维度，zero-shot 即可部署。训练阶段用 Rubric Policy Optimization（RPO）将多维 rubric 蒸馏为鲁棒二值奖励，替代不透明标量回归。在文生图和图像编辑 benchmark 上，ARR-RPO 超越 pairwise reward model 和 VLM judge，且解决了位置偏见等评估偏差问题。",
-      "quote": "💬 模糊的人类偏好终于有了可量化的尺子——ARR 把多模态对齐的窗户纸捅穿了。",
+      "quote": "",
       "source": "arXiv (cs.AI)",
       "url": "https://arxiv.org/abs/2605.08354",
-      "published": "2026-05-12"
+      "published": "2026-05-13"
     },
     {
       "title": "🔬 VLM 可靠性不在注意力图里：3-7B 模型的隐藏状态才是答案",
-      "content": "学界长期有个直觉：VLM 的 attention map 越sharp，模型越可靠。但本研究用 VLM Reliability Probe（VRP）系统性地证伪了这个假设：注意力结构对正确性的预测能力接近零（pooled R_pb = 0.001），即使注意力被完全破坏（top-30% patch masking）准确率也只下降 8-11pp。真正可靠的是 hidden-state geometry：单层 hidden-state linear probe 在 POPE 上达 AUROC > 0.95。进一步发现架构差异巨大：LLaVA 的可靠性集中在单一脆弱的后期瓶颈，而 PaliGemma 和 Qwen2-VL 分布式地分散在早期层，即使破坏 50% hidden dimension 也只下降 1pp。对 VLM 监控和可解释性设计有直接工程指导意义。",
-      "quote": "💬 attention map 好看不等于模型靠谱——这研究让看图吃饭的监控方案全得重来。",
+      "content": "学界长期有个直觉：VLM 的 attention map 越 sharp，模型越可靠。但本研究用 VLM Reliability Probe（VRP）系统性地证伪了这个假设：注意力结构对正确性的预测能力接近零（pooled R_pb = 0.001），即使注意力被完全破坏（top-30% patch masking）准确率也只下降 8-11pp。真正可靠的是 hidden-state geometry：单层 hidden-state linear probe 在 POPE 上达 AUROC > 0.95。进一步发现架构差异巨大：LLaVA 的可靠性集中在单一脆弱的后期瓶颈，而 PaliGemma 和 Qwen2-VL 分布式地分散在早期层，即使破坏 50% hidden dimension 也只下降 1pp。对 VLM 监控和可解释性设计有直接工程指导意义。",
+      "quote": "",
       "source": "arXiv (cs.AI / cs.CV / cs.LG)",
       "url": "https://arxiv.org/abs/2605.08200",
-      "published": "2026-05-12"
+      "published": "2026-05-13"
     },
     {
       "title": "🛒 SalesSim + UserGRPO：LLM 零售用户模拟器终于知道自己是谁了",
       "content": "多模态 LLM 驱动的零售对话系统需要真实用户模拟器来训练销售 Agent，但现有方案把用户模拟当成表层对话生成——完全忽略了真实消费者有多复杂：多维度背景、偏好、dealbreaker 都不一样。SalesSim 将用户模拟重新定义为基于 Agent 的 grounded 决策过程，评测 6 个 SOTA 模型发现即使最强模型也仅有不到 79% persona 对齐度，且容易被销售 Agent 说服带偏。提出 UserGRPO——多轮多目标 RL recipe，同时优化对话流畅度和 persona 对齐，基线提升 13.8%。对电商对话系统训练和评估有直接价值。",
-      "quote": "💬 AI 用户模拟器被销售 Agent 一忽悠就背叛人设？UserGRPO 给你拉回来。",
+      "quote": "",
       "source": "arXiv (cs.CL)",
       "url": "https://arxiv.org/abs/2605.08334",
-      "published": "2026-05-12"
-    },
-    {
-      "title": "DeepSeek-V4 发布：百万 Token 上下文窗口，专为 Agent 场景设计的混合注意力架构",
-      "content": "**HuggingFace** | `大模型 / 架构创新` DeepSeek-V4 正式发布，包含 Pro（1.6T/49B激活）和 Flash（284B/13B激活）两个 MoE 版本，支持百万 Token 上下文。CSA+HCA 混合注意力将 KV 缓存降至传统 GQA 的约 2%，单 Token 推理 FLOPs 仅为 V3.2 的 27%，是首个从架构层面为长程 Agent 工作流优化的开源大模型，直击上下文预算与 KV 缓存两大痛点。",
-      "quote": "上下文百万Token、KV占2%，其他家该集体面壁了。",
-      "source": "HuggingFace",
-      "url": "https://huggingface.co/blog/deepseekv4",
-      "published": "2026-04-24"
-    },
-    {
-      "title": "AllenAI 开源 EMO：MoE 模型实现「涌现式模块化」，12.5% 专家即达全模型性能",
-      "content": "**HuggingFace** | `大模型 / MoE` AllenAI 发布 EMO，1B 激活/14B 总参数的 MoE 模型，在 1T tokens 上端到端预训练。专家模块化结构从数据中「涌现」而非依赖人工预设领域标签，用户可按任务仅加载 12.5% 专家子集仍保持近全模型性能。为大规模 MoE 的按需部署提供了可组合模块化新范式，大幅降低推理成本。",
-      "quote": "12.5%专家干活、其余看戏，职场效率学被模型卷走了。",
-      "source": "HuggingFace",
-      "url": "https://huggingface.co/blog/allenai/emo",
-      "published": "2026-05-08"
-    },
-    {
-      "title": "Qwen3.6-27B 开源：混合 DeltaNet+Attention 架构，Agent 编码能力大幅跃升",
-      "content": "**HuggingFace** | `大模型 / Agent` 通义千问发布 Qwen3.6-27B，采用 Gated DeltaNet + Gated Attention 混合设计，原生 262K 上下文可扩展至百万 Token。SWE-bench Verified 77.2%、Terminal-Bench 2.0 59.3%，均超越同规模 Gemma 4 31B。新增「思考保留」功能可在多轮对话中维持推理上下文，直接面向 Agent 开发者。",
-      "quote": "千问又在卷Agent编码，Gemma 4刚发布就被当背景板。",
-      "source": "HuggingFace",
-      "url": "https://huggingface.co/Qwen/Qwen3.6-27B",
-      "published": "2026-04-24"
-    },
-    {
-      "title": "HiDream-O1-Image：8B 统一 Transformer 图像生成模型，无需 VAE 直接合成 2K 分辨率",
-      "content": "**HuggingFace** | `图像生成 / 模型` HiDream-O1-Image 开源，8B 参数的像素级统一 Transformer 图像生成基础模型。完全摒弃外部 VAE 和独立文本编码器，在单一共享 Token 空间中原生编码像素与文本。支持文生图、图像编辑、主体驱动个性化，原生分辨率高达 2048×2048，GenEval 综合得分 0.90 超越 FLUX.2 Dev。",
-      "quote": "8B模型不要VAE直出2K图，FLUX.2看完连夜改架构。",
-      "source": "HuggingFace",
-      "url": "https://huggingface.co/HiDream-ai/HiDream-O1-Image",
-      "published": "2026-05-08"
-    },
-    {
-      "title": "Zyphra ZAYA1-8B：0.7B 激活参数的小模型，数学推理碾压多数 30B+ 模型",
-      "content": "**HuggingFace** | `大模型 / 推理` Zyphra 发布 ZAYA1-8B，仅 0.76B 激活/8.4B 总参数的 MoE 推理模型。AIME'26 得分 89.1%，与 30B 激活的 Nemotron 3 Nano 持平，超越 OLMo-3.1-32B-Think 和 Mistral-Small-4-119B。可在端侧部署并适用于 test-time compute 框架放大推理，面向资源受限环境下的强推理场景。",
-      "quote": "0.7B干翻30B巨无霸，参数论的棺材板要钉不住了。",
-      "source": "HuggingFace",
-      "url": "https://huggingface.co/Zyphra/ZAYA1-8B",
-      "published": "2026-05-09"
-    },
-    {
-      "title": "具身大模型「R1时刻」：LaST-R1 在 LIBERO 基准达成 99.9% 成功率",
-      "content": "**量子位** | `具身智能 / 机器人` 至简动力、北大、港中文联合提出 LaST-R1，首次将隐空间物理推理塞进强化学习闭环。LaST₀ 基座首创面向机器人的隐空间物理思维链推理，已中稿 ICML 2026 Spotlight。在 LIBERO 基准仅靠 1 条轨迹预热即达 99.9% 成功率，真机任务比 SOTA 模型 π0.5 高 22.5%。",
-      "quote": "99.9%成功率拉个拉链，终于不用看机器人弱智操作了。",
-      "source": "量子位",
-      "url": "https://www.qbitai.com/2026/05/415065.html",
-      "published": "2026-05-11"
-    },
-    {
-      "title": "浙大校友用 AI 突破 32 年拉姆齐数下界，仅用 Claude Code + CPU",
-      "content": "**量子位** | `AIx数学 / 突破` 浙大校友王宜平借助自研 AI 框架 ScaleAutoResearch-Ramsey，将拉姆齐数 R(3,17) 下界从 92 提升至 93，终结自 1994 年以来长期停滞的纪录，同时将 R(4,15) 下界刷新至 160。成果超越 Google DeepMind 同期 AlphaEvolve，仅用 Claude Code + 1 台 CPU 服务器完成攻坚，已全量开源。",
-      "quote": "Claude Code单挑32年数学难题，DeepMind看了直接沉默。",
-      "source": "量子位",
-      "url": "https://www.qbitai.com/2026/05/415031.html",
-      "published": "2026-05-10"
-    },
-    {
-      "title": "阶跃 StepAudio 2.5 TTS 冲进全球前三，居中国大模型语音榜首",
-      "content": "**量子位** | `语音AI / TTS` 全球权威 TTS 评测榜 Artificial Analysis Speech Arena 更新，阶跃 StepAudio 2.5 TTS 跻身全球前三，成为排名最高的中国大模型。榜单采用盲测 Elo 评分机制覆盖真实应用场景，阶跃同期发布 TTS、ASR 和 Realtime 三款模型，覆盖语音生成、识别与实时交互全链路。",
-      "quote": "阶跃语音冲进全球前三，活人感赛道中国总算不是陪跑了。",
-      "source": "量子位",
-      "url": "https://www.qbitai.com/2026/05/415023.html",
-      "published": "2026-05-09"
+      "published": "2026-05-13"
     }
   ],
   "startup": [
