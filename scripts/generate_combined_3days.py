@@ -100,7 +100,7 @@ def main():
     for section in SECTIONS:
         # 收集3天数据：今日 + 最近2天历史
         today_file = index_data.get(section, '')
-        recent_files = get_recent_files(section, index_data, max_days=2)
+        recent_files = get_recent_files(section, index_data, max_days=3)
         
         # 按日期从新到旧排列（今日优先）
         items_by_day = []
