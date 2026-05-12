@@ -1,82 +1,82 @@
 [
   {
-    "title": "VecCISC：推理链语义去重，Self-Consistency 节省 47% token",
-    "content": "Self-Consistency 是大模型推理标配：多次采样取多数答案，但加权投票每次都要额外调用 critic LLM 评估置信度，成本翻倍。VecCISC 提出用语义相似度过滤冗余推理链——语义等价、退化或幻觉的直接淘汰，无需 critic 二次判断。在数学、化学、生物、常识推理等5个数据集测试，token 消耗降低 47%，精度却保持甚至超越原版 CISC。这对推理成本敏感的场景（API 调用、边缘部署）是实打实的省钱手段。",
-    "quote": "每次采样都要过一遍 critic？省省吧，语义重复的推理留着也是浪费。",
-    "source": "arXiv (cs.AI / cs.LG)",
-    "url": "https://arxiv.org/abs/2605.08070",
-    "published": "2026-05-11"
+    "title": "🐑 Shepherd：Meta-Agent 运行框架，用 Lean 证明器给 Agent 环境做版本控制",
+    "content": "**来源**: arXiv (cs.AI) **链接**: https://arxiv.org/abs/2605.10913 **详情**: Meta-Agent 系统（Agent 操控 Agent）面临两大工程难题：Agent 状态难以追踪回滚、多 Agent 并行探索时计算成本爆炸。Shepherd 提出将 Meta-Agent 操作形式化为函数，用 Lean 证明语言机械化核心操作，并记录每次 Agent-环境交互为带类型的 Git-like 执行 trace。在这种形式化下，任何历史状态都可以 fork 并回放——比 Docker fork 快 5 倍，prompt 缓存复用率达 95% 以上。在 TerminalBench-2 上，Tree-RL fork 策略将任务完成率从 34.2% 提升到 39.4%；pair coding 场景 supervisor 干预使通过率从 28.8% 升至 54.7%。这对需要高可靠 Agent 协作的研究和工程团队是基础设施级别的贡献，已开源。 **毒舌点评** 💬： ---",
+    "quote": "",
+    "source": "",
+    "url": "",
+    "published": "2026-05-12"
   },
   {
-    "title": "CLI Agents Credit Assignment 新解：A³ 方法直击长程多轮轨迹痛点",
-    "content": "命令行 Agent 训练面临两大瓶颈：代码库海量信息中识别任务相关证据（选择性观察），以及稀疏终端奖励在长多轮轨迹中的信用分配（信用赋值）。本文提出 Action Advantage Assignment（A³），结合 AST 结构子链残差和树级轨迹边际构建 turn 级优势，配合 sigma-Reveal 在推理时为 CLI 分配 token 预算上下文。在 ShellOps 验证集上，单次指令执行完整率大幅提升。对想在真实代码库环境部署 Agent 的团队，这是目前少有的系统性 Credit Assignment 方案。",
-    "quote": "CLI Agent 跑偏了还不知道哪步出错？A³ 来当裁判，信用分配终于不用靠玄学。",
-    "source": "arXiv (cs.AI / cs.LG)",
-    "url": "https://arxiv.org/abs/2605.08013",
-    "published": "2026-05-11"
+    "title": "🎬 WorldReasonBench：视频生成模型是\"世界模拟器\"吗？首个物理对齐压力测试来了",
+    "content": "**来源**: arXiv (cs.AI / cs.CV) **链接**: https://arxiv.org/abs/2605.10434 **详情**: Seedance2.0、Veo3.1 等商业视频生成系统已能生成高度逼真动态场景学界开始讨论视频生成器是否在演化为\"世界模拟器\"，但此前缺乏系统性验证框架。WorldReasonBench 从人类Aligned 的角度出发，将视频生成器视为未来世界状态预测器进行压力测试，考察模型在长程物理交互、因果链条、多实体碰撞等场景的合理性。揭示了当前最强商业系统在物理可信度上的具体短板。为视频生成进入科学模拟、机器人规划等高可靠性场景提供了首个严格评测基准。 **毒舌点评** 💬： ---",
+    "quote": "",
+    "source": "",
+    "url": "",
+    "published": "2026-05-12"
   },
   {
-    "title": "MACE-Dance：MoE 级联专家，音乐驱动舞蹈视频生成新 SOTA",
-    "content": "音乐驱动舞蹈视频生成长期受困于视觉质量与动作真实性的两难。MACE-Dance 提出 Motion Expert + Appearance Expert 级联 MoE 架构：Motion Expert 用 BiMamba-Transformer 混合架构做音乐→3D 动作生成，Appearance Expert 做动作+参考图像驱动的视频合成，同时保持人物身份和时空一致性。在 3D 舞蹈生成和姿态驱动图像动画两个子任务均达 SOTA，且在音乐驱动舞蹈视频生成赛道创下新的最优记录。代码已开源。",
-    "quote": "AI 跳舞终于不只是 GIF 抖动了，黄仁勋看了都得起立鼓掌——然后想着怎么收版权费。",
-    "source": "HuggingFace Paper",
-    "url": "https://huggingface.co/papers/2512.18181",
-    "published": "2026-05-07"
+    "title": "🖼️ Qwen-Image-2.0：统一图文生成与编辑，单一框架搞定高保真图像创作",
+    "content": "**来源**: HuggingFace Paper **链接**: https://huggingface.co/papers/2605.10730 **详情**: 图像生成和编辑长期被视为两个独立任务——前者追求创造力，后者追求精确控制。Qwen-Image-2.0 试图用单一统一模型同时搞定：既能在高分辨率下生成逼真图像，又能基于指令对图像特定区域进行精准编辑，保持风格和身份一致性。该工作在多个图文生成和编辑 benchmark 上验证了统一的可行性，减少了部署多个专用模型的工程成本。对需要一站式图像创作/编辑能力的应用层团队值得关注。 **毒舌点评** 💬： ---",
+    "quote": "",
+    "source": "",
+    "url": "",
+    "published": "2026-05-12"
   },
   {
-    "title": "Flow-OPD：流匹配模型的 RL 对齐扳手，GenEval 从 63 拉到 92",
-    "content": "流匹配（Flow Matching）文生图模型的两大痛点：标量奖励导致的奖励稀疏，以及多目标联合优化引发的梯度干扰，形成跷跷板效应。Flow-OPD 将 LLM 社区的 On-Policy Distillation 首次引入 Flow Matching，分两阶段：先 GRPO 单奖励微调各领域专家教师，再通过流式冷启动合并多专家到单一学生模型。配合 Manifold Anchor Regularization 防止美学退化，基于 SD3.5 Medium，GenEval 从 63 提升到 92，OCR 准确率从 59 提升到 94，同时保持图像保真度，且出现教师超越现象。",
-    "quote": "跷跷板效应被 OPD 压下去，文生图模型的对齐终于不用顾此失彼了。",
-    "source": "HuggingFace Paper",
-    "url": "https://huggingface.co/papers/2605.08063",
-    "published": "2026-05-08"
+    "title": "📐 Soohak：数学家出题评测LLM研究级数学能力，比 IMO 更难的新基准",
+    "content": "**来源**: arXiv (cs.AI / cs.LG) **链接**: https://arxiv.org/abs/2605.09063 **详情**: LLM 在 IMO（国际数学奥林匹克）拿金牌的消息余温尚存，但业界已经意识到 IMO 评测存在上限过低、与真实研究数学脱节的问题。Soohak 由数学家亲自出题，构建面向研究级数学能力的新基准——题目更开放、证明链条更长、跨领域综合要求更高，不存在标准答案可供背诵。在这套更难、更接近真实学术场景的题目上对前沿 LLM 进行系统评测，揭示当前模型在研究级数学推理上的真实差距。对推动 LLM 数学能力向科研渗透有重要参考价值。 **毒舌点评** 💬： ---",
+    "quote": "",
+    "source": "",
+    "url": "",
+    "published": "2026-05-12"
   },
   {
-    "title": "MMS 崩溃修复：Mean-Variance Split 让 1000 层 DiT 稳定训练",
-    "content": "Diffusion Transformer（DiT）扩展到数百层后会出现 Mean Mode Screaming（MMS）：网络悄然进入均值主导崩溃态，token 表征均质化，注意力机制被压制。即使训练曲线看起来正常，MMS 也会在深层残差分支中埋下隐患。本文通过梯度分解锁定触发机制，并提出 Mean-Variance Split（MV-Split）残差：分离 centered 残差更新 + trunk-mean 泄漏替换。在 400 层单流 DiT 上，MV-Split 阻止了基线崩溃，并在 1000 层 DiT 边界规模验证了架构可稳定训练。这为超深 diffusion 模型奠定了工程可行性。",
-    "quote": "1000 层 DiT 训练崩溃原来是均值在尖叫，还好这次不是玄学，有严格机制解释。",
-    "source": "HuggingFace Paper",
-    "url": "https://huggingface.co/papers/2605.06169",
-    "published": "2026-05-07"
+    "title": "📄 Dystruct：扩散语言模型的动态结构化解码，无需重训练即可变长输出",
+    "content": "**来源**: HuggingFace Paper **链接**: https://huggingface.co/papers/2605.09820 **详情**: 扩散语言模型（DLM）以并行解码著称，但主流方案需要预先指定输出长度，严重限制了在开放式问答、长文档生成等真实场景的灵活性。已有的一些变长方案要么需要昂贵重训练，要么只依赖局部置信度信号，容易产生语义不连贯。Dystruct 提出了无需训练的贝叶斯结构化解码框架，将输出长度、块边界和解码调度联合建模为动态结构推理过程，每步融合局部不确定性与结构化信号，实现灵活块扩展。在多个基准测试上，生成质量和灵活性均超越固定长度和现有变长基线。 **毒舌点评** 💬： ---",
+    "quote": "",
+    "source": "",
+    "url": "",
+    "published": "2026-05-12"
   },
   {
-    "title": "Listwise Policy Optimization：RLVR 原来是隐式目标投影",
-    "content": "Group-based RLVR 已成为 LLM 后训练的主流方法，但为何有效、几何本质是什么，此前缺乏系统分析。本文揭示：group-based 策略梯度方法其实隐式地在 response simplex 上定义了目标分布，然后通过一阶近似做投影。基于这个洞察，Listwise Policy Optimization（LPO）显式执行目标投影——将近端 RL 目标限制在 simplex 上，再通过精确散度最小化完成投影。在多种推理任务和 LLM backbone 上，LPO 训练性能一致超越基线策略梯度方法，同时内在保持优化稳定性和 response 多样性。为 RLVR 提供了首个几何理论框架。",
-    "quote": "RLVR 调参调了这么久，原来都在做隐式投影——LPO 把窗户纸捅破了。",
-    "source": "HuggingFace Paper",
-    "url": "https://huggingface.co/papers/2605.06139",
-    "published": "2026-05-07"
+    "title": "🌍 SimWorld Studio：Unreal Engine 5 生成可自进化 3D 机器人训练世界",
+    "content": "**来源**: HuggingFace Paper **链接**: https://huggingface.co/papers/2605.09423 **详情**: 代码 Agent 有沙盒，机器人 Agent 却只能靠手绘场景训练——这是 Embodied AI 领域的老大难问题。SimWorld Studio 构建在 Unreal Engine 5 上的开源平台，核心是 SimCoder 工具增强型编码 Agent：接收语言/图像指令，写 UE5 代码生成物理真实的 3D 交互环境，并通过编译器反馈、VLM 评审等自进化完善环境和技能库。生成 Gym 风格环境用于 Agent 训练，并支持环境- Agent 共演化：Agent 进步后系统自动提升环境难度。具身导航案例中，共演化策略比固定环境训练成功率提升 18 点，比无训练 Agent 提升 40 点。 **毒舌点评** 💬： ---",
+    "quote": "",
+    "source": "",
+    "url": "",
+    "published": "2026-05-12"
   },
   {
-    "title": "HyperEyes：并行多模态搜索 Agent，工具调用轮次砍到 1/5",
-    "content": "现有 multimodal agent 处理多实体目标时串行调用工具，每轮一个，累积大量冗余轮次。HyperEyes 提出并行 multimodal search：在一个回合内并发派遣多个 grounded 查询，并将推理效率作为一等训练目标。核心是 Dual-Grained Efficiency-Aware RL：宏层用 TRACE 轨迹级奖励压缩冗余工具调用，微层用 On-Policy Distillation 注入 token 级纠错信号。在 IMEB（联合评估搜索能力+效率的 benchmark）上，HyperEyes-30B 比最强开源 agent 准确率高出 9.9%，工具调用轮次平均减少 5.3 倍。",
-    "quote": "串行搜索的时代结束了——5 倍效率提升，老板听完眼睛都亮了。",
-    "source": "HuggingFace Paper",
-    "url": "https://huggingface.co/papers/2605.07177",
-    "published": "2026-05-08"
+    "title": "🎮 G-Zero：无需任何数据，从零开始的自博弈开放式内容生成",
+    "content": "**来源**: arXiv (cs.AI / cs.CL) **链接**: https://arxiv.org/abs/2605.09959 **详情**: LLM 在可验证领域（代码解题、数学证明）已经能自演化，但在开放式任务（写作、创意生成）中，自演化依赖 LLM judge 做 proxy 评估，存在能力瓶颈和 reward hacking 问题。G-Zero 提出完全从零开始的 self-play 框架：无需任何外部数据或 LLM judge，直接通过双代理对称博弈让模型自主发现和优化开放式生成策略。在开放式写作、对话生成等任务上，G-Zero 超越依赖外部 judge 的自演化基线，且不存在 reward hacking 问题。为开放式生成任务的自训练提供了全新范式。 **毒舌点评** 💬： ---",
+    "quote": "",
+    "source": "",
+    "url": "",
+    "published": "2026-05-12"
   },
   {
-    "title": "Structured Judge Rewards：GRPO 也能 Rubric 加持，泛化推理新思路",
-    "content": "标量奖励在 RLVR 中过于稀疏，二元成败或单分数无法提供部分信用优化信号。本文提出 Rubric-Grounded RL：将奖励分解为可验证的多维标准，由冻结的 LLM judge 评分（看辅助 grounding 但 policy 看不到），提供部分信用优化信号。用 OSTI 约 10 万篇科技文档派生 rubric，GRPO 训练 Llama-3.1-8B-Instruct 后，在 held-out rubric 评估上达 71.7% normalized reward，且在 GSM8K、MATH、GPQA 等非训练语料推理 benchmark 上均有提升。structured reward 让可解释的推理成为可能。",
-    "quote": "模糊的 RL 信号终于有了精细化版本——rubric 加持的 GRPO，让奖励不再是一刀切。",
-    "source": "arXiv (cs.AI / cs.LG)",
-    "url": "https://arxiv.org/abs/2605.08061",
-    "published": "2026-05-11"
+    "title": "🏷️ Auto-Rubric as Reward：把隐式偏好变成可验证标准，多模态对齐新思路",
+    "content": "**来源**: arXiv (cs.AI) **链接**: https://arxiv.org/abs/2605.08354 **详情**: 多模态生成模型对齐的最大痛点：标量奖励或 pairwise 标签过于稀疏，无法提供细粒度优化信号，导致 reward hacking。Auto-Rubric as Reward（ARR）将 LLM 内部化的偏好知识外化为 prompt 特异的评分 rubric——把模糊的人类意图拆解成独立可验证的质量维度，zero-shot 即可部署。训练阶段用 Rubric Policy Optimization（RPO）将多维 rubric 蒸馏为鲁棒二值奖励，替代不透明标量回归。在文生图和图像编辑 benchmark 上，ARR-RPO 超越 pairwise reward model 和 VLM judge，且解决了位置偏见等评估偏差问题。 **毒舌点评** 💬： ---",
+    "quote": "",
+    "source": "",
+    "url": "",
+    "published": "2026-05-12"
   },
   {
-    "title": "大模型位置偏见与 CoT 长度正相关：13 个模型 12 个中招",
-    "content": "本文系统研究推理模型中 Chain-of-Thought 轨迹长度与 Position Bias（位置偏见）的相关性。在 13 种推理配置（含 DeepSeek-R1 671B）中，12 个呈现轨迹长度与 PBS 正相关（p < 0.05）。截断恢复实验进一步证明，从轨迹后期恢复时偏移选项倾向从 16% 升至 32%。即使用 671B 大模型也未能完全免疫，说明聪明了但不彻底。对 MCQ 类评测框架和实际决策系统均有重要警示意义——长推理不等于无偏见。",
-    "quote": "推理想得越认真，偏见反而越重？藏在 CoT 里的老毛病，671B 也救不了。",
-    "source": "arXiv (cs.AI / cs.CL / cs.LG)",
-    "url": "https://arxiv.org/abs/2605.06672",
-    "published": "2026-05-11"
+    "title": "🔬 VLM 可靠性不在注意力图里：3-7B 模型的隐藏状态才是答案",
+    "content": "**来源**: arXiv (cs.AI / cs.CV / cs.LG) **链接**: https://arxiv.org/abs/2605.08200 **详情**: 学界长期有个直觉：VLM 的 attention map 越sharp，模型越可靠。但本研究用 VLM Reliability Probe（VRP）系统性地证伪了这个假设：注意力结构对正确性的预测能力接近零（pooled R_pb = 0.001），即使注意力被完全破坏（top-30% patch masking）准确率也只下降 8-11pp。真正可靠的是 hidden-state geometry：单层 hidden-state linear probe 在 POPE 上达 AUROC > 0.95。进一步发现架构差异巨大：LLaVA 的可靠性集中在单一脆弱的后期瓶颈，而 PaliGemma 和 Qwen2-VL 分布式地分散在早期层，即使破坏 50% hidden dimension 也只下降 1pp。对 VLM 监控和可解释性设计有直接工程指导意义。 **毒舌点评** 💬： ---",
+    "quote": "",
+    "source": "",
+    "url": "",
+    "published": "2026-05-12"
   },
   {
-    "title": "GraphDC：多智能体分治大图推理，主 Agent 整合子图结果",
-    "content": "大图推理是知识图谱、交通网络、分子模拟等场景的核心难题，但单 Agent 端到端处理大图时计算瓶颈和推理可靠性都是问题。GraphDC 引入 Divide-and-Conquer 范式：主智能体将图拆分为子图，分配给专家代理做局部推理，再由主智能体整合跨子图信息合并输出。实验覆盖多种任务规模，大图实例下优势尤为显著。对需要处理大规模图结构、又不想上分布式系统的团队，提供了一个更经济的方案。",
-    "quote": "大图不用一条路走到黑了——分而治之加多智能体，1+1终于大于2。",
-    "source": "arXiv (cs.AI / cs.MA)",
-    "url": "https://arxiv.org/abs/2605.06671",
-    "published": "2026-05-11"
+    "title": "🛒 SalesSim + UserGRPO：LLM 零售用户模拟器终于知道自己是谁了",
+    "content": "**来源**: arXiv (cs.CL) **链接**: https://arxiv.org/abs/2605.08334 **详情**: 多模态 LLM 驱动的零售对话系统需要真实用户模拟器来训练销售 Agent，但现有方案把用户模拟当成表层对话生成——完全忽略了真实消费者有多复杂：多维度背景、偏好、dealbreaker 都不一样。SalesSim 将用户模拟重新定义为基于 Agent 的 grounded 决策过程，评测 6 个 SOTA 模型发现即使最强模型也仅有不到 79% persona 对齐度，且容易被销售 Agent 说服带偏。提出 UserGRPO——多轮多目标 RL recipe，同时优化对话流畅度和 persona 对齐，基线提升 13.8%。对电商对话系统训练和评估有直接价值。 **毒舌点评** 💬： --- *📊 本日报由 Lucia 自动生成 · 每15字毒舌背后是认真读完了每篇论文的 🔥*",
+    "quote": "",
+    "source": "",
+    "url": "",
+    "published": "2026-05-12"
   }
 ]

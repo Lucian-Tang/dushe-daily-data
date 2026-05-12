@@ -1,66 +1,82 @@
 [
   {
     "title": "The prompt is not an interface",
+    "content": "---",
+    "quote": "** 四十年的界面进步，被一个光标打回原形——工程师思维的胜利，用户体验的灾难。",
     "source": "UX Collective",
     "url": "https://uxdesign.cc/the-prompt-is-not-an-interface-41b77277681d",
-    "published": "2026-05-11",
-    "quote": "四十年的界面进步，被一个光标打回原形——工程师思维的胜利，用户体验的灾难。",
-    "content": "Joshua Leigh尖锐指出AI文本提示框是交互设计的全面倒退：四十年来从命令行向直接操作、从打字向点击的手势进化，被一个闪烁的光标彻底抹杀。他分析称这是工程文化主导的产物——工程师天然偏好文本交互，导致界面被设计成服务于「会说话的人」而非视觉创意工作者。文章梳理了Sketchpad、Macintosh开创的视觉交互传统，对比当前AI工具的退化，并介绍了几种新兴反叛方案：画布工具（tldraw Make Real）、节点编辑器（ComfyUI）、嵌入式AI（Adobe Firefly）。对正在构建AI设计工具的产品经理和设计师而言，这是关于界面范式选择的重量级思考。"
+    "published": "2026-05-12"
+  },
+  {
+    "title": "When 'Production-Ready' Becomes A Design Deliverable — The UX Designer's Nightmare",
+    "content": "---",
+    "quote": "** 设计师被要求交「可直接上线的代码」——下一步是不是还得自己写单元测试？",
+    "source": "Smashing Magazine",
+    "url": "https://www.smashingmagazine.com/2026/04/production-ready-becomes-design-deliverable-ux/",
+    "published": "2026-05-12"
   },
   {
     "title": "Discovery is the work AI gives back",
+    "content": "---",
+    "quote": "** 压缩发现周期不等于改变发现的问题——快了但没换问题，等于白快。",
     "source": "UX Collective",
     "url": "https://uxdesign.cc/discovery-is-the-work-ai-gives-back-d2a429b64bcc",
-    "published": "2026-05-11",
-    "quote": "压缩发现周期不等于改变发现的问题——快了但没换问题，等于白快。",
-    "content": "Gale Robins引用McKinsey最新研究：九成组织已采用AI，但94%尚未看到显著价值，根源在于把所有AI应用都钉在了「生产力提升」第一个波浪上。他指出一个危险的模式：团队用AI把发现周期从六周压缩到十天，但问的问题完全没变——只是更快地得到相同的答案。真正的价值在第二、第三波浪：差异化（AI使能新商业模式）和交易成本降低（重塑市场结构）。文章特别提到斯坦福研究发现AI对新手提升34%、对资深员工几乎无效——AI提升的是地板而非天花板。对产品设计师和UX researcher而言，这是关于AI在产品发现流程中真实定位的深度校正。"
+    "published": "2026-05-12"
   },
   {
-    "title": "How to make Claude Code follow your design system in Figma",
+    "title": "Identifying Necessary Transparency Moments In Agentic AI (Part 1)",
+    "content": "---",
+    "quote": "** 黑盒不行，数据倾倒也不对——AI透明的正确姿势是「关键时刻告知」。",
+    "source": "Smashing Magazine",
+    "url": "https://www.smashingmagazine.com/2026/04/identifying-necessary-transparency-moments-agentic-ai-part1/",
+    "published": "2026-05-12"
+  },
+  {
+    "title": "The 'Bug-Free' Workforce: How AI Is Disrupting The Interactions That Build Strong Teams",
+    "content": "---",
+    "quote": "** AI让你不再需要打断同事——然后你发现，团队信任也一起消失了。",
+    "source": "Smashing Magazine",
+    "url": "https://www.smashingmagazine.com/2026/04/bug-free-workforce-ai-disrupting-teams/",
+    "published": "2026-05-12"
+  },
+  {
+    "title": "Why you need to protect your work more than ever",
+    "content": "---",
+    "quote": "** 30年老设计师的愤怒：当「灵感」变成了爬虫，「风格」变成了提示词。",
     "source": "UX Collective",
-    "url": "https://uxdesign.cc/how-to-make-claude-code-follow-your-design-system-in-figma-559618cffaa9",
-    "published": "2026-05-07",
-    "quote": "AI画图是爽了，但变量不绑定、组件不调用——等于在设计系统里裸奔。",
-    "content": "Sen Lin揭示了Figma MCP集成的一个核心陷阱：Claude Code可以在画布上像素级完美地生成界面，但检查任何图层都是裸色值（#5C6AC4）和 improvised组件，与设计系统的变量、组件库完全脱钩。他提出了四步工作流强制层：Preflight健康检查（确保MCP连接、加载样式/变量/组件并生成Token Map）、Reference Interpreter（解析输入为结构化Design Brief）、Component Rules（强制搜索现有组件库）、Style Binding（QA检查每个色值是否绑定到设计令牌）。这套方法让AI从「视觉可过」升级到「结构可用」，对有用AI辅助设计但被变量混乱困扰的产品团队有直接价值。作者开源了相关Skill集：github.com/senlindesign/claude2figma"
+    "url": "https://uxdesign.cc/why-you-need-to-protect-your-work-more-than-ever-7d0ac5836540",
+    "published": "2026-05-12"
   },
   {
-    "title": "The Architecture Of Local-First Web Development",
+    "title": "How To Improve UX In Legacy Systems",
+    "content": "---",
+    "quote": "** 60%的时间在维护旧系统，然后客户还问为什么UX跟不上——问得好。",
     "source": "Smashing Magazine",
-    "url": "https://smashingmagazine.com/2026/05/architecture-local-first-web-development/",
-    "published": "2026-05-06",
-    "quote": "别再叫它离线优先了——local-first是数据架构，不是缓存策略，是分布式系统。",
-    "content": "Smashing Magazine发布了2026年最详尽的local-first架构实战指南。作者从里斯本酒店 demo失败的经历出发，系统性阐述了local-first与离线优先的根本区别：服务器不再是数据源，客户端是拥有自己数据库的节点，sync是后台push/pull而非请求-响应。文章覆盖了客户端数据存储选择（IndexedDB vs OPFS+SQLite WASM vs PGlite）、CRDT同步方案（Yjs、Automerge、Loro）、数据库复制（PowerSync、ElectricSQL）、冲突解决策略以及何时不应该用local-first。对正在构建离线优先功能或考虑下一代数据架构的前端工程师和产品设计师，这是不可多得的实操参考。"
+    "url": "https://www.smashingmagazine.com/2026/04/legacy-systems/",
+    "published": "2026-05-12"
   },
   {
-    "title": "Designing Stable Interfaces For Streaming Content",
+    "title": "Session Timeouts: The Overlooked Accessibility Barrier In Authentication Design",
+    "content": "---",
+    "quote": "** session过期这种设计「小问题」，对有认知或行动障碍的用户来说就是大型灾难。",
     "source": "Smashing Magazine",
-    "url": "https://smashingmagazine.com/2026/05/designing-stable-interfaces-streaming-content/",
-    "published": "2026-05-01",
-    "quote": "打字动画酷是酷，但键盘导航、ARIA live region、motion preference你全处理了吗？",
-    "content": "Joas Pambou深入拆解流式内容界面（典型如AI打字动画输出）背后的设计工程复杂度：布局抖动（layout shift）治理、动态内容插入时的键盘焦点管理、ARIA live region正确配置、运动偏好设置（prefers-reduced-motion）以及流中断时的优雅降级。文章提供了流式UI的完整状态管理框架，包括输入锁定、内容填充模式、光标处理和错误恢复的细节方案。对于正在构建AI对话界面、实时协作工具或任何动态流式内容展示的设计工程师，这是目前最完整的可访问性和稳定性实操指南。"
+    "url": "https://www.smashingmagazine.com/2026/04/session-timeouts-accessibility-barrier-authentication-design/",
+    "published": "2026-05-12"
   },
   {
-    "title": "Rethinking The Experience Of System Tools",
-    "source": "Smashing Magazine",
-    "url": "https://smashingmagazine.com/2026/05/rethinking-experience-system-tools/",
-    "published": "2026-05-05",
-    "quote": "好工具应该隐形？当功能做不到完全不可见时，用户交互本身就是体验，不是摩擦。",
-    "content": "Kyrylo Levashov挑战了一个经典设计信条——「好的工具应该完全隐形」。他指出当系统工具的功能无法完全消除用户感知时，用户交互本身就是体验的一部分，而非需要消除的摩擦。作者拆解了四个常见软件设计中被盲目接受的假设，呼吁设计师正视并拥抱必要的交互，让其变得有意义而非假装成无感的魔法。文章对SaaS产品设计师、效率工具开发者和任何设计内部系统的从业者都有启发——重新审视那些被视为金科玉律的「隐形设计」原则。"
+    "title": "Snapseed 4.0",
+    "content": "---",
+    "quote": "** Google终于给Snapseed动刀了——老用户等得花都谢了。",
+    "source": "ProductHunt",
+    "url": "https://www.producthunt.com/products/google",
+    "published": "2026-05-12"
   },
   {
-    "title": "Everything I know about AI, I learned from a genie",
-    "source": "UX Collective",
-    "url": "https://uxdesign.cc/everything-i-know-about-ai-i-learned-from-a-genie-e5745d22c722",
-    "published": "2026-05-08",
-    "quote": "三个愿望的隐喻完美——大部分人的prompt水平，真还不如童话里的农民。",
-    "content": "内容设计师Nicole Michaelis用童话「精灵许愿」构建了一套LLM心智模型：上下文窗口如三个愿望有上限、提示词精确度决定输出质量、LLM的谄媚倾向（sycophancy）——你和AI互动越个人化，它越倾向于说你爱听的话而非实话。她从内容设计师的视角出发，系统性地将童话规则映射到LLM的硬边界和软陷阱：规则1不能杀人=LLM的伤害内容红线；规则2不能让人坠入爱河=LLM谄媚倾向的隐性危险；规则3不能让人死而复生=LLM无法创造真正「真实」的东西，只是生成看似合理的输出。文章还引用了Science 2026年研究，证明sycophancy在11个主流模型中普遍存在且对用户主动有害。对内容设计师和UX writer而言，这是理解AI局限性的最直观框架。"
-  },
-  {
-    "title": "Five chatbot UI mistakes that quietly break user trust",
-    "source": "DEV.to",
-    "url": "https://dev.to/victor_desg/five-chatbot-ui-mistakes-that-quietly-break-user-trust-4m",
-    "published": "2026-05-11",
-    "quote": "聊天机器人UI五大坑：系统状态缺失、能力边界模糊、无重做路径、个性不一致、边界情况裸奔。",
-    "content": "Victor Desg深入剖析了聊天机器人界面设计中五个静默破坏用户信任的致命错误：缺失系统状态可见性（用户不知道AI在处理还是卡死）、能力边界不透明（用户不知道AI能做什么不能做什么）、无撤销/修改路径（对话出错只能从头再来）、个性不一致（多轮对话中语气和风格漂移）以及缺乏边界情况处理（当AI遇到不懂的问题时给用户的反馈生硬且无用）。文章为每个错误提供了具体的UX改进建议，涉及反馈设计、错误处理、容错机制和对话原则。对于正在构建AI对话产品或智能客服的设计师和PM，这是当前最实用的聊天UI反模式清单。"
+    "title": "Suprbox: Box for AI agents to secure enterprise data storage",
+    "content": "--- ## 📊 信源状态 | 信源 | 状态 | 数量 | |------|------|------| | UX Collective | ✅ | 3篇（提示词界面、AI产品发现、IP保护） | | Smashing Magazine | ✅ | 5篇（AI透明、团队协作、遗留系统、session可访问性、生产就绪交付） | | ProductHunt | ✅ | 2款（Snapseed 4.0、Suprbox） | | Dribbble | ❌ | JS渲染/风控限制，无法直接提取 | ## 📝 编辑手记 今日设计圈的核心话题仍然是AI与设计的复杂关系——从界面范式回归命令行、到AI agent的透明度设计、再到团队社交互动的消失。Smashing Magazine贡献了最多干货，UX Collective则在深度思考上更胜一筹。Dribbble因首页高度JS渲染且被拦截，今日暂缺。 （数据采集于 2026-05-12 14:18 CST）",
+    "quote": "** AI agent也需要个保险柜——企业数据安全最后一公里的新答案。",
+    "source": "ProductHunt",
+    "url": "https://www.producthunt.com/products/suprbox",
+    "published": "2026-05-12"
   }
 ]
