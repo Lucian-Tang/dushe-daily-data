@@ -23,7 +23,7 @@ fi
 
 # ---- Step 2: 复制数据到 Git 仓库 ----
 log "[copy] 复制数据文件..."
-cd "$WORKSPACE/dushe-daily-data"
+cd "$WORKSPACE"
 cp "$WORKSPACE/data/raw_articles_"*.json . 2>/dev/null || log "[copy] raw_articles 无新文件"
 cp "$WORKSPACE/data/raw_dev_"*.json . 2>/dev/null || log "[copy] raw_dev 无新文件"
 cp "$WORKSPACE/data/raw_social_"*.json . 2>/dev/null || log "[copy] raw_social 无新文件"
@@ -40,7 +40,7 @@ fi
 
 # ---- Step 3: 使用 gen-index.py 生成 index.json（统一入口）----
 log "[index] 使用 gen-index.py 生成 index.json..."
-cd "$WORKSPACE/dushe-daily-data"
+cd "$WORKSPACE"
 GEN_INDEX="$(dirname "$WORKSPACE")/scripts/gen-index.py"
 if python3 "$GEN_INDEX" --path . --quiet 2>&1; then
     log "[index] index.json 生成完成"
@@ -148,7 +148,7 @@ fi
 
 # ---- Step 5: Git commit & push ----
 log "[git] commit & push..."
-cd "$WORKSPACE/dushe-daily-data"
+cd "$WORKSPACE"
 git add -A
 git commit -m "📊 $(date +%Y-%m-%d) 日报数据自动推送" || log "[git] 无变更，跳过 commit"
 git push origin main 2>&1 | tail -1
