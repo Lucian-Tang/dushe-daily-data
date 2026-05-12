@@ -27,13 +27,20 @@ cd "$WORKSPACE/dushe-daily-data"
 cp "$WORKSPACE/data/raw_articles_"*.json . 2>/dev/null || log "[copy] raw_articles 无新文件"
 cp "$WORKSPACE/data/raw_dev_"*.json . 2>/dev/null || log "[copy] raw_dev 无新文件"
 cp "$WORKSPACE/data/raw_social_"*.json . 2>/dev/null || log "[copy] raw_social 无新文件"
+cp "$WORKSPACE/data/raw_design_"*.json . 2>/dev/null || log "[copy] raw_design 无新文件"
+cp "$WORKSPACE/data/raw_startup_"*.json . 2>/dev/null || log "[copy] raw_startup 无新文件"
 
-# ---- Step 3: 生成 index.json（完整版，包含所有板块 + 合并文件）----
-log "[index] 生成完整 index.json..."
-python3 -c "
+# ---- Step 3: 使用 gen-index.py 生成 index.json（统一入口）----
+log "[index] 使用 gen-index.py 生成 index.json..."
+cd "$WORKSPACE/dushe-daily-data"
+GEN_INDEX="$(dirname "$WORKSPACE")/scripts/gen-index.py"
+if python3 "$GEN_INDEX" --path . --quiet 2>&1; then
+    log "[index] index.json 生成完成"
+else
+    log "[index] gen-index.py 失败，回退到内联生成..."
+    python3 -c "
 import json, os, glob, hashlib
 
-# 检测所有可用板块文件
 section_map = {
     'industry': ('raw_articles', 'industry_daily'),
     'dev': ('raw_dev', 'dev_daily'),
@@ -47,15 +54,12 @@ section_map = {
 latest = {}
 history = {}
 checksums = {}
-today_files = {}  # 今天的日报文件，用于生成合并文件
 
 for section, (raw_prefix, daily_prefix) in section_map.items():
-    # 优先使用 daily 文件
     if daily_prefix:
         daily_files = sorted(glob.glob(daily_prefix + '_*.json'))
         if daily_files:
             latest[section] = daily_files[-1]
-            # 收集今天的文件
             for f in daily_files:
                 date_str = f.replace(daily_prefix + '_', '').replace('.json', '').replace('_', '')
                 if date_str not in history:
@@ -65,25 +69,18 @@ for section, (raw_prefix, daily_prefix) in section_map.items():
                 history[date_str][section].append(f)
             continue
     
-    # fallback 到 raw 文件
     if raw_prefix:
         raw_files = sorted(glob.glob(raw_prefix + '_*.json'))
         if raw_files:
             latest[section] = raw_files[-1]
 
-# 压缩 history 为简洁格式
 compressed_history = {}
 for date_str, sections in history.items():
     compressed_history[date_str] = sections
 
-# 生成 checksums
 for fname in glob.glob('*_daily_*.json') + glob.glob('raw_*.json'):
     with open(fname, 'rb') as f:
         checksums[fname] = hashlib.sha256(f.read()).hexdigest()
-
-# 生成合并文件（combined_all_YYYYMMDD.json）
-today = os.path.basename(__file__) if '__file__' in dir() else ''
-today_str = os.environ.get('DATE_STR', '') or ''
 
 index = {
     'schemaVersion': '2.0',
@@ -93,7 +90,7 @@ index = {
     'checksums': checksums
 }
 
-# 尝试生成合并文件
+# 生成合并文件
 try:
     combined = {}
     for section in ['industry', 'dev', 'ai', 'startup', 'design']:
@@ -105,7 +102,6 @@ try:
                     combined[section] = data
     
     if combined:
-        # 从文件名提取日期
         import re
         date_match = None
         for fname in latest.values():
@@ -128,6 +124,7 @@ with open('index.json', 'w', encoding='utf-8') as f:
 
 print(f'[index] generated: {len(latest)} sections, {len(combined)} combined')
 "
+fi
 
 # ---- Step 4: Git commit & push ----
 # ---- Step 3.5: 数据新鲜度检查 ----

@@ -43,5 +43,29 @@
     "script": "cron/scripts/reddit_signals.py",
     "enabled": true,
     "description": "Reddit r/startups + r/Entrepreneur weekly (02:08 Mon, IP-blocked pending fix)"
+  },
+  {
+    "name": "dev-signals",
+    "schedule": "0 20 * * *",
+    "timeout": 180,
+    "script": "scripts/fetch_dev.py",
+    "enabled": true,
+    "description": "Dev日报信源采集 (HN/V2EX/OSChina/Dev.to/博客园/GitHub Trending) 20:00 CST"
+  },
+  {
+    "name": "design-signals",
+    "schedule": "0 21 * * *",
+    "timeout": 180,
+    "script": "scripts/fetch_design.py",
+    "enabled": true,
+    "description": "设计日报信源采集 (SmashingMag/UXCollective/ProductHunt Design/Awwwards) 21:00 CST"
+  },
+  {
+    "name": "startup-signals",
+    "schedule": "30 21 * * *",
+    "timeout": 180,
+    "script": "scripts/fetch_startup.py",
+    "enabled": true,
+    "description": "创业日报信源采集 (TechCrunch/ProductHunt/HN FrontPage) 21:30 CST"
   }
 ]
