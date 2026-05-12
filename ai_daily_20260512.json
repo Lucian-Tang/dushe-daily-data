@@ -1,7 +1,7 @@
 [
   {
-    "title": "🐑 Shepherd：Meta-Agent 运行框架，用 Lean 证明器给 Agent 环境做版本控制",
-    "content": "**来源**: arXiv (cs.AI) **链接**: https://arxiv.org/abs/2605.10913 **详情**: Meta-Agent 系统（Agent 操控 Agent）面临两大工程难题：Agent 状态难以追踪回滚、多 Agent 并行探索时计算成本爆炸。Shepherd 提出将 Meta-Agent 操作形式化为函数，用 Lean 证明语言机械化核心操作，并记录每次 Agent-环境交互为带类型的 Git-like 执行 trace。在这种形式化下，任何历史状态都可以 fork 并回放——比 Docker fork 快 5 倍，prompt 缓存复用率达 95% 以上。在 TerminalBench-2 上，Tree-RL fork 策略将任务完成率从 34.2% 提升到 39.4%；pair coding 场景 supervisor 干预使通过率从 28.8% 升至 54.7%。这对需要高可靠 Agent 协作的研究和工程团队是基础设施级别的贡献，已开源。 **毒舌点评** 💬： ---",
+    "title": "🐑 Shepherd：MetaAgent 运行框架，用 Lean 证明器给 Agent 环境做版本控制",
+    "content": "**来源**: arXiv (cs.AI) **链接**: https://arxiv.org/abs/2605.10913 **详情**: MetaAgent 系统（Agent 操控 Agent）面临两大工程难题：Agent 状态难以追踪回滚、多 Agent 并行探索时计算成本爆炸。Shepherd 提出将 MetaAgent 操作形式化为函数，用 Lean 证明语言机械化核心操作，并记录每次 Agent-环境交互为带类型的 Git-like 执行 trace。在这种形式化下，任何历史状态都可以 fork 并回放——比 Docker fork 快 5 倍，prompt 缓存复用率达 95% 以上。在 TerminalBench-2 上，Tree-RL fork 策略将任务完成率从 34.2% 提升到 39.4%；pair coding 场景 supervisor 干预使通过率从 28.8% 升至 54.7%。这对需要高可靠 Agent 协作的研究和工程团队是基础设施级别的贡献，已开源。 **毒舌点评** 💬： ---",
     "quote": "",
     "source": "",
     "url": "",
