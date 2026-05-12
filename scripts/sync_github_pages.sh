@@ -130,9 +130,54 @@ print(f'[index] generated: {len(latest)} sections, {len(combined)} combined')
 "
 
 # ---- Step 4: Git commit & push ----
+# ---- Step 3.5: 数据新鲜度检查 ----
+log "[qa] 数据新鲜度检查..."
+python3 "$SCRIPT_DIR/check-freshness.py" --warn 2>&1 | tee -a "$LOG_DIR/sync-github.log"
+log "[qa] 数据新鲜度检查完成（仅警告，不阻塞）"
 log "[git] commit & push..."
 git add -A
 git commit -m "📊 $(date +%Y-%m-%d) 日报数据自动推送" || log "[git] 无变更，跳过 commit"
 git push origin main 2>&1 | tail -1
 
 log "[done] sync OK | $(date)"
+
+# ---- Step 2.5: 数据新鲜度检查 ----
+log "[qa] 数据新鲜度检查..."
+python3 -c "
+import json, os, sys, glob, re
+from datetime import datetime, timezone, timedelta
+
+TZ = timezone(timedelta(hours=8))
+TODAY = datetime.now(TZ).strftime('%Y-%m-%d')
+
+os.chdir('$WORKSPACE/dushe-daily-data')
+errors = []
+for section, fname in [('industry','industry_daily'), ('dev','dev_daily'), ('ai','ai_daily'),
+                        ('startup','startup_daily'), ('design','design_daily')]:
+    latest = None
+    for f in sorted(glob.glob(f'{fname}_*.json'), reverse=True):
+        latest = f; break
+    if not latest:
+        errors.append(f'[STALE] {section}: 无可用文件')
+        continue
+    with open(latest) as fh:
+        items = json.load(fh)
+    today_items = [it for it in items if it.get('published','').startswith(TODAY)]
+    if not today_items:
+        errors.append(f'[NO_TODAY] {section}: {len(items)}条，0条今日（最新: {items[0].get(\"published\",\"?\") if items else \"空\"}）')
+    else:
+        print(f'  ✅ {section}: {len(today_items)}/{len(items)} 条是今天的')
+
+if errors:
+    print('[QA FAILED]')
+    for e in errors: print(f'  ❌ {e}')
+    sys.exit(1)
+else:
+    print('[QA PASS] 所有板块都有今日数据')
+" 2>&1 | tee -a "$LOG_DIR/sync-github.log"
+
+if [ ${PIPESTATUS[0]} -ne 0 ]; then
+    log "[qa] ❌ 数据新鲜度检查不通过，但继续执行（不阻塞）"
+else
+    log "[qa] ✅ 数据新鲜度检查通过"
+fi
