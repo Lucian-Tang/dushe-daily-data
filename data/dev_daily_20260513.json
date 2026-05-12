@@ -1,0 +1,97 @@
+{
+  "date": "2026-05-13",
+  "title": "开发者日报 | 2026-05-13",
+  "source": "Luxmind Dev Daily",
+  "items": [
+    {
+      "title": "CERT 披露 dnsmasq 6 个严重安全漏洞，影响数百万联网设备",
+      "source": "Hacker News",
+      "url": "https://lists.thekelleys.org.uk/pipermail/dnsmasq-discuss/2026q2/018471.html",
+      "published": "2026-05-12",
+      "quote": "DNS 服务商集体感冒，你的路由器可能正在裸奔。",
+      "content": "CERT 协调中心本周披露 dnsmasq 项目存在 6 个严重漏洞，涵盖缓存投毒、堆溢出和远程代码执行，影响所有使用 dnsmasq 的路由器、IoT 设备和 Linux 发行版。dnsmasq 广泛部署于家庭路由器、Kubernetes Pods 和嵌入式系统，漏洞允许攻击者通过恶意 DNS 响应执行任意代码。数百万设备需要在社区发布补丁前临时采取缓解措施。面向所有运维工程师和嵌入式开发者。",
+      "tags": ["安全", "DNS", "漏洞", "IoT"]
+    },
+    {
+      "title": "Exim 邮件服务器 CVE-2026-45185：未认证 RCE，XBOW 披露技术细节",
+      "source": "Hacker News",
+      "url": "https://xbow.com/blog/dead-letter-cve-2026-45185-xbow-found-rce-exim",
+      "published": "2026-05-12",
+      "quote": "邮件服务器又出事了，建议先检查你的 Exim 版本号。",
+      "content": "安全研究团队 XBOW 发布报告，披露 Exim 邮件服务器存在一个未认证远程代码执行漏洞（CVE-2026-45185）。攻击者无需任何凭证即可在默认配置下执行命令，影响 Exim 4.92 至 4.95 所有版本。该漏洞被命名为 Dead.Letter，源于攻击路径利用邮件队列处理环节。目前尚无官方补丁，XBOW 建议网络管理员立即限制 Exim 端口暴露，并关注官方安全公告。面向邮件系统管理员和渗透测试工程师。",
+      "tags": ["安全", "邮件服务器", "RCE", "CVE"]
+    },
+    {
+      "title": "Cactus 开源 Needle：26M 参数蒸馏 Gemini 工具调用能力，小模型也能函数调用",
+      "source": "Hacker News",
+      "url": "https://github.com/cactus-compute/needle",
+      "published": "2026-05-12",
+      "quote": "把大模型的工具调用能力压缩进 26MB，这波是小而美的胜利。",
+      "content": "创业公司 Cactus 开源了 Needle，一个仅 26M 参数的函数调用（Function Calling / Tool Use）模型，蒸馏自 Google Gemini 的工具调用能力。该模型可以在消费级设备上运行（如手机、树莓派），延迟低于 100ms，在 ToolBench 基准测试中超过 GPT-4o Mini。开源协议为 Apache 2.0，开发者可自由用于商业项目。对于想在边缘设备部署 AI 工具链的开发者具有重要参考价值。面向 AI 工程师、边缘计算开发者和嵌入式 AI 研究者。",
+      "tags": ["AI", "开源", "模型蒸馏", "边缘计算"]
+    },
+    {
+      "title": "Google DeepMind 发布 AI Pointer：用神经网络重构鼠标指针交互范式",
+      "source": "Hacker News",
+      "url": "https://deepmind.google/blog/ai-pointer/",
+      "published": "2026-05-12",
+      "quote": "指针都能 AI 化了，你的鼠标垫准备好失业了吗？",
+      "content": "Google DeepMind 发布了 AI Pointer 研究项目，探索在 AI 时代重新设计人机交互中的鼠标指针概念。项目结合神经网络预测用户意图，动态调整指针形状、大小和响应方式，在老人辅助、无障碍设计和 AR/VR 场景中展示了实验性 Demo。虽然尚未产品化，但该研究对理解 AI Native 的 UI 设计方向具有重要参考意义。面向 UI/UX 设计师、前端开发者和人机交互研究员。",
+      "tags": ["AI", "人机交互", "UI", "Google"]
+    },
+    {
+      "title": "NURL：专为 LLM 设计的编程语言，让 AI 生成的代码更可靠",
+      "source": "Hacker News",
+      "url": "https://nurl-lang.org/",
+      "published": "2026-05-12",
+      "quote": "专门写给 AI 看的代码语言？人类先别急着学。",
+      "content": "NURL 是一个新兴编程语言，设计初衷是专门用于 AI 编程场景。语言特性包括确定性执行（无未定义行为）、结构化输出保证、内置形式化规格描述能力，目标是让大模型生成的代码更可预测、更易验证。该语言目前仍处于早期实验阶段，生态尚不完善，但引入了「AI-First Language Design」这一新思路。对编程语言设计研究者和 AI 代码生成工具开发者有启发意义。",
+      "tags": ["编程语言", "AI", "LLM", "开发者工具"]
+    },
+    {
+      "title": "假 npm 包 typosquatting 攻击：利用 Cursor 编辑器漏洞后门 Next.js 管理路由",
+      "source": "Dev.to",
+      "url": "https://dev.to/oopssec-store/how-a-fake-npm-package-made-cursor-backdoor-a-nextj",
+      "published": "2026-05-12",
+      "quote": "npm 生态的供应链攻击又进化了，连 AI 辅助编辑器都不放过。",
+      "content": "安全研究员披露了一起真实攻击链：攻击者发布了一个 typosquatting 恶意 npm 包，诱导开发者安装后，利用 Cursor AI 辅助编辑器在开发者注释中残留的调试接口，结合包名拼写混淆（如 'axioss' vs 'axios'），成功在 Next.js 应用中植入后门路由。该攻击展示了 AI 辅助编程工具引入的新型攻击面，以及供应链安全的严峻性。建议开发者仔细核查 npm 包名并启用 lockfile 审查。面向全栈工程师、安全研究员和 DevSecOps 从业者。",
+      "tags": ["安全", "供应链攻击", "npm", "AI工具"]
+    },
+    {
+      "title": "Anthropic 估值 9000 亿美元引热议：仅靠程序员付费能撑起这个估值吗？",
+      "source": "V2EX",
+      "url": "https://www.v2ex.com/t/1212285",
+      "published": "2026-05-12",
+      "quote": "估值涨得比代码发布还快，就看谁先接最后一棒了。",
+      "content": "V2EX 社区热议 Anthropic 估值在近三个月内从 3800 亿飙升至 9000 亿美元，逼近 OpenAI 历史峰值。社区讨论焦点在于：Anthropic 的核心收入来源目前依赖开发者 API 调用（B2D 模式），但 B2D 市场天花板有限，Claude 桌面产品化仍在早期。评论聚焦 Claude 与 GPT 的产品体验差异、API 定价策略，以及 AI 公司是否正在走向类似 Salesforce 的企业销售路径。对于 AI 创业者和投资人具有参考价值。",
+      "tags": ["AI", "行业", "Anthropic", "创业"]
+    },
+    {
+      "title": "小米基于 JuiceFS 的 AI 战略存储演进：异构存储统一管理实践",
+      "source": "博客园",
+      "url": "https://www.cnblogs.com/JuiceData/p/20023713",
+      "published": "2026-05-12",
+      "quote": "大厂存储方案终于开源了，先收藏，等踩坑的时候回来看看。",
+      "content": "小米存储团队发布技术文章，详细复盘了 2021 年起基于 JuiceFS 构建文件存储平台的演进历程，尤其是 2024 年提出全面 AI 战略后，原有异构存储体系面临接入标准不统一、扩展性不足等挑战。团队通过统一命名空间、热温冷数据分层和 POSIX 兼容接口，实现了 AI 训练数据 Pipeline 的存储统一治理。文章还披露了面对 GPU 集群高吞吐需求的架构优化细节。对于中大型互联网公司存储架构师和云原生工程师具有较高参考价值。",
+      "tags": ["存储", "AI基础设施", "架构", "小米"]
+    },
+    {
+      "title": "Dev.to 技术博主复盘：将 Claude Opus 替换为开源模型节省 96% 成本",
+      "source": "Dev.to",
+      "url": "https://dev.to/cristiantalasanchez/cambie-el-cerebro-de-mi-coding-agent-de-opus-",
+      "published": "2026-05-12",
+      "quote": "一个月省下 $700，但代价是每天多花 2 小时调模型，值吗？",
+      "content": "一位独立开发者分享了他将 Claude Opus 替换为本地开源模型（DeepSeek V3 + Qwen 2.5）用于 AI Coding Agent 的完整实验。结果显示：月度成本从 $720 降至 $30（降幅 96%），但上下文质量下降约 15%，复杂重构任务需人工介入次数增加。该实验客观呈现了成本-质量 trade-off 的现实，对预算有限的个人开发者和小型团队有参考意义。作者同时提供了完整的本地部署配置和 prompt 调优方案。",
+      "tags": ["AI", "成本优化", "开源模型", "Coding Agent"]
+    },
+    {
+      "title": "Agentic Interface for COBOL：AI 让大型机开发者用自然语言维护遗产代码",
+      "source": "Hacker News",
+      "url": "https://www.hypercubic.ai/hopper",
+      "published": "2026-05-12",
+      "quote": "COBOL 程序员终于迎来了 AI 时代，虽然晚了 60 年。",
+      "content": "创业公司 Hypercubic 推出 Hopper 产品，定位为大型机（Mainframe）和 COBOL 代码的 AI 接口。其核心能力是让开发者用自然语言查询、解释、甚至生成 COBOL 代码，系统自动映射到传统 IBM 大型机环境。该方向针对全球数百万行 COBOL 遗产代码的维护痛点，目标是降低大型机维护门槛、延长遗产系统寿命。对于银行、保险、政府等依赖大型机的行业从业者有直接价值。",
+      "tags": ["AI", "大型机", "COBOL", "企业软件"]
+    }
+  ]
+}
