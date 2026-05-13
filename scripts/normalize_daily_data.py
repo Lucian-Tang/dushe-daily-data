@@ -16,6 +16,7 @@ normalize_daily_data.py - 日报CDN数据规范化
 import os
 import sys
 import json
+import hashlib
 import re
 import glob
 import argparse
@@ -27,6 +28,18 @@ if os.path.basename(DATA_DIR) == 'scripts':
 
 DAILY_PATTERN = re.compile(r'^(\w+)_daily_(\d{8})\.json$')
 MAX_DAYS_BACK = 2  # 保留最近3天（今天+2天前）
+
+
+def gen_uid(section, title, url=""):
+    """生成稳定的 uid：{section}_{8位hex哈希(title+url)}"""
+    key = (title or '') + '|' + (url or '')
+    key = key.lower()
+    key = re.sub(r'[^\u0000-\uFFFF]', '', key)  # 去掉 emoji（非BMP平面）
+    key = key.replace('：', ':').replace('—', '-').replace('–', '-')
+    key = re.sub(r'\s*:\s*', ': ', key)
+    key = re.sub(r'\s+', ' ', key).strip()
+    h = hashlib.md5(key.encode('utf-8')).hexdigest()[:8]
+    return f"{section}_{h}"
 
 
 def normalize_item(item, filename_date):
@@ -89,10 +102,17 @@ def normalize_file(filepath, dry_run=False):
         return 0, 0, [f'{filename}: 不是数组格式(实际{type(data).__name__})，跳过']
 
     fixed_count = 0
+    uid_count = 0
     all_fixed_info = []
     clean_items = []
 
     for item in data:
+        # 注入 uid（稳定唯一标识符，用于收藏/已读/投票的主键）
+        if 'uid' not in item:
+            uid = gen_uid(section, item.get('title', ''), item.get('url', ''))
+            item['uid'] = uid
+            uid_count += 1
+
         # 按3天过滤旧数据
         try:
             pub = item.get('published', '')
@@ -109,9 +129,12 @@ def normalize_file(filepath, dry_run=False):
             all_fixed_info.extend(issues)
         clean_items.append(item)
 
-    if not dry_run and fixed_count > 0:
+    if not dry_run and (fixed_count > 0 or uid_count > 0):
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(clean_items, f, ensure_ascii=False, indent=2)
+
+    if uid_count > 0:
+        all_fixed_info.insert(0, f'注入 {uid_count} 个 uid')
 
     return len(data), len(clean_items), all_fixed_info
 

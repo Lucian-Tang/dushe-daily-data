@@ -11,6 +11,27 @@ from datetime import datetime, timezone, timedelta, date
 
 SECTIONS = ['industry', 'dev', 'ai', 'startup', 'design']
 
+# ===== 唯一标识符 uid =====
+def gen_uid(section: str, title: str, url: str = "") -> str:
+    """
+    生成稳定的 uid：{section}_{8位hex哈希(title+url)}
+    同一篇文章（相同标题+URL）跨天保持同一 uid
+    用于收藏/已读/投票等持久化标识
+    """
+    import hashlib
+    # 归一化：去掉 emoji（非BMP字符）、统一标点、小写
+    key = (title or '') + '|' + (url or '')
+    key = key.lower()
+    key = re.sub(r'[^\u0000-\uFFFF]', '', key)  # 去掉大部分 emoji（非BMP平面）
+    key = key.replace('：', ':').replace('—', '-').replace('–', '-').replace('—', '-')
+    # 统一标点前后的空格：去掉冒号前的空格，确保冒号后有一个空格
+    key = re.sub(r'\s*:\s*', ': ', key)
+    key = re.sub(r'\s+', ' ', key).strip()
+    # 短哈希（8位hex）
+    h = hashlib.md5(key.encode('utf-8')).hexdigest()[:8]
+    return f"{section}_{h}"
+
+
 def get_recent_files(section, index_data, max_days=3):
     """从 index.json history 中获取最近 max_days 个文件路径（排除今日）"""
     history = index_data.get('history', {})
@@ -74,18 +95,22 @@ def filter_recent(items, max_days_back=3, today_date=None):
     return result
 
 
-def merge_and_deduplicate(items_by_day):
+def merge_and_deduplicate(items_by_day, section=""):
     """
     合并多日数据，按 URL 去重，保留最新日期的版本
+    同时为每条注入 uid（若已存在则不覆盖）
     items_by_day: [(date_str, items_list), ...] 按日期从新到旧排列
     """
     url_to_item = {}
     date_priority = {}
     
     for i, (date_str, items) in enumerate(items_by_day):
-        # 日期越新优先级越高（索引0是最新的）
         priority = len(items_by_day) - i
         for item in items:
+            # 注入 uid（客户端持久化的主键，不覆盖已有 uid）
+            if 'uid' not in item:
+                uid_str = gen_uid(section, item.get('title', ''), item.get('url', ''))
+                item['uid'] = uid_str
             url = item.get('url', '')
             if not url:
                 continue
@@ -93,7 +118,6 @@ def merge_and_deduplicate(items_by_day):
                 url_to_item[url] = item
                 date_priority[url] = priority
             elif date_priority.get(url, 0) < priority:
-                # 用更新的版本替换
                 url_to_item[url] = item
                 date_priority[url] = priority
     
@@ -146,7 +170,7 @@ def main():
                 items_by_day.append((date_str, load_items_from_file(fname)))
         
         # 合并去重
-        merged = merge_and_deduplicate(items_by_day)
+        merged = merge_and_deduplicate(items_by_day, section=section)
         # 过滤掉超过3天的旧数据
         merged = filter_recent(merged, max_days_back=2, today_date=today_date)
         combined[section] = merged
