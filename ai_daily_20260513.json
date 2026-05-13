@@ -88,5 +88,59 @@
     "url": "https://arxiv.org/abs/2605.08334",
     "published": "2026-05-13",
     "uid": "ai_fdd4cdf9"
+  },
+  {
+    "title": "🧠 Needle：26M 参数工具调用模型，蒸馏 Gemini 3.1 跑在手表上",
+    "content": "从 Gemini 3.1 蒸馏出仅 26M 参数的 Simple Attention Network，专门用于单次工具调用（single-shot function call）。最大亮点是权重复合开源，可在 Mac/PC 本地微调，生产环境预填达到 6000 tok/s、解码 1200 tok/s。在消费级设备（手机、手表、眼镜）上对比 FunctionGemma-270M、Qwen-0.6B 等更大模型表现出竞争力。对追求边缘 AI 和 on-device AI 的开发者，这是当前最小的可用工具调用方案。",
+    "quote": "大模型卷不动了开始卷纳米模型 🔥",
+    "source": "Hacker News (Show HN)",
+    "url": "https://github.com/cactus-compute/needle",
+    "published": "2026-05-13",
+    "uid": "ai_eedd4cfa"
+  },
+  {
+    "title": "🖱️ DeepMind 重新发明鼠标指针：AI Pointer 点一下就知道你要什么",
+    "content": "DeepMind 发布 AI Pointer 概念，重新定义计算机最基础的交互元素——鼠标指针。四个交互原则：保持工作流不打断（无需切换到 AI 窗口）、看图说话（AI 自动理解指针所指内容）、支持「这个」「那个」的自然简略表达、将像素转化为可操作实体。已集成到 Chrome 和 Googlebook 笔记本中，用 Gemini 驱动。对于所有日常电脑使用者而言，这是 AI 原生 UI 的里程碑式设计。",
+    "quote": "五十年不变的小箭头终于要成精了 🔥",
+    "source": "DeepMind Google Blog",
+    "url": "https://deepmind.google/blog/ai-pointer/",
+    "published": "2026-05-13",
+    "uid": "ai_bdc84dfb"
+  },
+  {
+    "title": "⚖️ Anthropic 发布 20+ 法律行业 MCP 连接器，Claude 全面接入法律科技栈",
+    "content": "Anthropic 为 Claude 发布 20+ 个 MCP 连接器，覆盖合同生命周期系统（Definely）、文档管理（DocuSign、Box）、研究平台（Thomson Reuters）、电子取证（Harvey）等，同时推出 12 个垂直领域插件和 Word/Outlook/Excel/PowerPoint 深度集成。法律专业人士已成为 Claude Cowork 最活跃用户群体。Claude 还通过 Free Law Project 等公益组织推动法律普惠。对法律科技从业者和企业法务团队影响深远。",
+    "quote": "律师终于可以跟AI说人话而不是写prompt 🔥",
+    "source": "Anthropic Blog",
+    "url": "https://claude.com/blog/claude-for-the-legal-industry",
+    "published": "2026-05-13",
+    "uid": "ai_bc0e5dfc"
+  },
+  {
+    "title": "🔬 SenseNova-U1：商汤统一图文理解与生成，NEO-unify 架构登场",
+    "content": "商汤发布 SenseNova-U1，基于 NEO-unify 架构的完全统一多模态理解与生成模型。核心突破：理解和生成不再走两条孤立管线，共享同一个表征空间。8B-MoT 和 A3B-MoT 两个变体在传统 VLM 基准上匹敌纯理解模型，同时具备高保真图生能力，在 X2I 合成、文字密集型图表生成、交错图文生成等任务上表现优异。初步证据表明该架构还能扩展到 VLA 和世界模型场景。",
+    "quote": "理解派和生成派打了几年的架终于被商汤劝和了 🔥",
+    "source": "arXiv (cs.CV)",
+    "url": "https://arxiv.org/abs/2605.12500",
+    "published": "2026-05-13",
+    "uid": "ai_ce1f6efd"
+  },
+  {
+    "title": "🤖 World Action Models：具身 AI 的下一个前沿，综述统一世界模型与动作生成",
+    "content": "综述性论文系统性定义了「世界动作模型」（WAM）新范式——将世界模型（预测物理环境演化）与动作生成统一为联合概率分布，区别于传统 VLA 模型的纯反应式观察-动作映射。论文由复旦、港大等机构合作完成，梳理了碎片化的文献脉络，澄清了 WAM 与相关概念的边界。对于机器人学习和具身 AI 领域的学者与工程师，这是理解该方向最佳的统一理论框架。",
+    "quote": "让机器人不光会动还得会预测动完世界啥样 🔥",
+    "source": "HuggingFace Paper (arXiv 2605.12090)",
+    "url": "https://huggingface.co/papers/2605.12090",
+    "published": "2026-05-13",
+    "uid": "ai_dc2f7efe"
+  },
+  {
+    "title": "📊 Gallup 正式研究 AI 模拟人类调查：合成响应替代真人问卷",
+    "content": "全球知名民调机构 Gallup 宣布与 AI 公司 Simile 合作，研究用 AI 模拟生成「合成调查响应」。其目标不是替代基于概率抽样的严谨调查，而是探索 AI 模拟能否加深对人类思维与行为的理解。Simile 的 AI 模拟方法将接受 Gallup 的独立验证。这对市场调研、产品研究、社会科学领域意味着样本获取方式可能的范式转变——AI 可以模拟特定人群的反馈。",
+    "quote": "以后市场调研不是问真人而是问AI：人类终于可以清静了 🔥",
+    "source": "Gallup / The Verge",
+    "url": "https://news.gallup.com/opinion/methodology/709373/gallup-begins-research-synthetic-responses.aspx",
+    "published": "2026-05-13",
+    "uid": "ai_ed307ffe"
   }
 ]
