@@ -7,7 +7,7 @@ import json
 import os
 import sys
 import re
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timezone, timedelta, date
 
 SECTIONS = ['industry', 'dev', 'ai', 'startup', 'design']
 
@@ -42,6 +42,36 @@ def load_items_from_file(filepath):
     except Exception as e:
         print(f"  [warn] 加载失败 {filepath}: {e}", file=sys.stderr)
         return []
+
+def filter_recent(items, max_days_back=3, today_date=None):
+    """
+    过滤掉超过 max_days_back 天的 item
+    只保留 published 日期在最近 max_days_back 天内的 item
+    """
+    if not today_date:
+        today_date = datetime.now(timezone(timedelta(hours=8))).strftime('%Y%m%d')
+    try:
+        today = datetime.strptime(str(today_date)[:8], '%Y%m%d').date()
+    except:
+        return items  # 如果日期解析失败则不过滤
+    
+    result = []
+    cutoff = today - timedelta(days=max_days_back)
+    for item in items:
+        pub = item.get('published', '')
+        if not pub:
+            continue  # 无日期的不展示
+        try:
+            # 尝试解析各种日期格式
+            # 统一只取前10个字符 (YYYY-MM-DD)
+            pub_clean = pub[:10]
+            item_date = datetime.strptime(pub_clean, '%Y-%m-%d').date()
+            if item_date >= cutoff:
+                result.append(item)
+        except:
+            result.append(item)  # 无法解析的日期保持原样
+    return result
+
 
 def merge_and_deduplicate(items_by_day):
     """
@@ -116,6 +146,8 @@ def main():
         
         # 合并去重
         merged = merge_and_deduplicate(items_by_day)
+        # 过滤掉超过3天的旧数据
+        merged = filter_recent(merged, max_days_back=3, today_date=today_date)
         combined[section] = merged
         total_items += len(merged)
         print(f"  {section}: {len(merged)} 条（来源: {today_file}, {len(recent_files)} 天历史）")
