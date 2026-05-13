@@ -177,6 +177,12 @@ def main():
         total_items += len(merged)
         print(f"  {section}: {len(merged)} 条（来源: {today_file}, {len(recent_files)} 天历史）")
     
+    # 合并后按 collectedAt 降序排列（同一天内新内容排前面）
+    for section in SECTIONS:
+        items = combined.get(section, [])
+        items.sort(key=lambda x: x.get('collectedAt', f"{today_date[:4]}-{today_date[4:6]}-{today_date[6:]}T00:00:00"), reverse=True)
+        combined[section] = items
+    
     # 写入 combined_3days 文件
     out_fname = f'combined_3days_{today_date}.json'
     with open(out_fname, 'w', encoding='utf-8') as f:

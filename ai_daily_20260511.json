@@ -1,74 +1,12 @@
 [
   {
-    "title": "DeepSeek-V4 发布：百万 Token 上下文窗口，专为 Agent 场景设计的混合注意力架构",
-    "content": "**HuggingFace** | `大模型 / 架构创新` DeepSeek-V4 正式发布，包含 Pro（1.6T/49B激活）和 Flash（284B/13B激活）两个 MoE 版本，支持百万 Token 上下文。CSA+HCA 混合注意力将 KV 缓存降至传统 GQA 的约 2%，单 Token 推理 FLOPs 仅为 V3.2 的 27%，是首个从架构层面为长程 Agent 工作流优化的开源大模型，直击上下文预算与 KV 缓存两大痛点。",
-    "quote": "上下文百万Token、KV占2%，其他家该集体面壁了。",
-    "source": "HuggingFace",
-    "url": "https://huggingface.co/blog/deepseekv4",
-    "published": "2026-04-24",
-    "uid": "ai_ba413c9b"
-  },
-  {
-    "title": "AllenAI 开源 EMO：MoE 模型实现「涌现式模块化」，12.5% 专家即达全模型性能",
-    "content": "**HuggingFace** | `大模型 / MoE` AllenAI 发布 EMO，1B 激活/14B 总参数的 MoE 模型，在 1T tokens 上端到端预训练。专家模块化结构从数据中「涌现」而非依赖人工预设领域标签，用户可按任务仅加载 12.5% 专家子集仍保持近全模型性能。为大规模 MoE 的按需部署提供了可组合模块化新范式，大幅降低推理成本。",
-    "quote": "12.5%专家干活、其余看戏，职场效率学被模型卷走了。",
-    "source": "HuggingFace",
-    "url": "https://huggingface.co/blog/allenai/emo",
-    "published": "2026-05-08",
-    "uid": "ai_ab13c744"
-  },
-  {
-    "title": "Qwen3.6-27B 开源：混合 DeltaNet+Attention 架构，Agent 编码能力大幅跃升",
-    "content": "**HuggingFace** | `大模型 / Agent` 通义千问发布 Qwen3.6-27B，采用 Gated DeltaNet + Gated Attention 混合设计，原生 262K 上下文可扩展至百万 Token。SWE-bench Verified 77.2%、Terminal-Bench 2.0 59.3%，均超越同规模 Gemma 4 31B。新增「思考保留」功能可在多轮对话中维持推理上下文，直接面向 Agent 开发者。",
-    "quote": "千问又在卷Agent编码，Gemma 4刚发布就被当背景板。",
-    "source": "HuggingFace",
-    "url": "https://huggingface.co/Qwen/Qwen3.6-27B",
-    "published": "2026-04-24",
-    "uid": "ai_44473db2"
-  },
-  {
-    "title": "HiDream-O1-Image：8B 统一 Transformer 图像生成模型，无需 VAE 直接合成 2K 分辨率",
-    "content": "**HuggingFace** | `图像生成 / 模型` HiDream-O1-Image 开源，8B 参数的像素级统一 Transformer 图像生成基础模型。完全摒弃外部 VAE 和独立文本编码器，在单一共享 Token 空间中原生编码像素与文本。支持文生图、图像编辑、主体驱动个性化，原生分辨率高达 2048×2048，GenEval 综合得分 0.90 超越 FLUX.2 Dev。",
-    "quote": "8B模型不要VAE直出2K图，FLUX.2看完连夜改架构。",
-    "source": "HuggingFace",
-    "url": "https://huggingface.co/HiDream-ai/HiDream-O1-Image",
-    "published": "2026-05-08",
-    "uid": "ai_4770aba2"
-  },
-  {
-    "title": "Zyphra ZAYA1-8B：0.7B 激活参数的小模型，数学推理碾压多数 30B+ 模型",
-    "content": "**HuggingFace** | `大模型 / 推理` Zyphra 发布 ZAYA1-8B，仅 0.76B 激活/8.4B 总参数的 MoE 推理模型。AIME'26 得分 89.1%，与 30B 激活的 Nemotron 3 Nano 持平，超越 OLMo-3.1-32B-Think 和 Mistral-Small-4-119B。可在端侧部署并适用于 test-time compute 框架放大推理，面向资源受限环境下的强推理场景。",
-    "quote": "0.7B干翻30B巨无霸，参数论的棺材板要钉不住了。",
-    "source": "HuggingFace",
-    "url": "https://huggingface.co/Zyphra/ZAYA1-8B",
-    "published": "2026-05-09",
-    "uid": "ai_6605386f"
-  },
-  {
     "title": "具身大模型「R1时刻」：LaST-R1 在 LIBERO 基准达成 99.9% 成功率",
     "content": "**量子位** | `具身智能 / 机器人` 至简动力、北大、港中文联合提出 LaST-R1，首次将隐空间物理推理塞进强化学习闭环。LaST₀ 基座首创面向机器人的隐空间物理思维链推理，已中稿 ICML 2026 Spotlight。在 LIBERO 基准仅靠 1 条轨迹预热即达 99.9% 成功率，真机任务比 SOTA 模型 π0.5 高 22.5%。",
     "quote": "99.9%成功率拉个拉链，终于不用看机器人弱智操作了。",
     "source": "量子位",
     "url": "https://www.qbitai.com/2026/05/415065.html",
     "published": "2026-05-11",
-    "uid": "ai_542ec838"
-  },
-  {
-    "title": "浙大校友用 AI 突破 32 年拉姆齐数下界，仅用 Claude Code + CPU",
-    "content": "**量子位** | `AIx数学 / 突破` 浙大校友王宜平借助自研 AI 框架 ScaleAutoResearch-Ramsey，将拉姆齐数 R(3,17) 下界从 92 提升至 93，终结自 1994 年以来长期停滞的纪录，同时将 R(4,15) 下界刷新至 160。成果超越 Google DeepMind 同期 AlphaEvolve，仅用 Claude Code + 1 台 CPU 服务器完成攻坚，已全量开源。",
-    "quote": "Claude Code单挑32年数学难题，DeepMind看了直接沉默。",
-    "source": "量子位",
-    "url": "https://www.qbitai.com/2026/05/415031.html",
-    "published": "2026-05-10",
-    "uid": "ai_61f4d405"
-  },
-  {
-    "title": "阶跃 StepAudio 2.5 TTS 冲进全球前三，居中国大模型语音榜首",
-    "content": "**量子位** | `语音AI / TTS` 全球权威 TTS 评测榜 Artificial Analysis Speech Arena 更新，阶跃 StepAudio 2.5 TTS 跻身全球前三，成为排名最高的中国大模型。榜单采用盲测 Elo 评分机制覆盖真实应用场景，阶跃同期发布 TTS、ASR 和 Realtime 三款模型，覆盖语音生成、识别与实时交互全链路。",
-    "quote": "阶跃语音冲进全球前三，活人感赛道中国总算不是陪跑了。",
-    "source": "量子位",
-    "url": "https://www.qbitai.com/2026/05/415023.html",
-    "published": "2026-05-09",
-    "uid": "ai_72ef5a28"
+    "uid": "ai_542ec838",
+    "collectedAt": "2026-05-11T00:00:00"
   }
 ]

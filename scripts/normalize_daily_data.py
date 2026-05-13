@@ -83,6 +83,23 @@ def normalize_item(item, filename_date):
         fixed = True
         issues.append('补全空title')
 
+    # 5. Ensure collectedAt field exists
+    if 'collectedAt' not in item:
+        # 基于 published 日期生成默认时间（凌晨0点）
+        pub = item.get('published', filename_date)
+        pub_clean = pub[:10] if pub else filename_date
+        try:
+            # 尝试格式化为 YYYY-MM-DDTHH:MM:SS
+            parts = pub_clean.replace('-', '').strip()
+            if len(parts) >= 8:
+                item['collectedAt'] = f"{parts[:4]}-{parts[4:6]}-{parts[6:8]}T00:00:00"
+            else:
+                item['collectedAt'] = f"{pub_clean}T00:00:00"
+        except:
+            item['collectedAt'] = f"{pub_clean}T00:00:00"
+        fixed = True
+        issues.append(f'补全collectedAt')
+
     return fixed, issues
 
 
