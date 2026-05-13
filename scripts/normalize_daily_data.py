@@ -58,14 +58,12 @@ def normalize_item(item, filename_date):
         fixed = True
         issues.append(f'补全url字段')
 
-    # 3. Check content
+    # 3. Check content - 小程序接受空content（!""=true 不触发低质过滤），
+    #    但若填充过短的文字（<50字）反而会被isLowQuality过滤
+    #    所以不填充content，保留原样
     content = item.get('content', '')
-    if not content or len(content.strip()) < MIN_CONTENT_LENGTH:
-        quote = item.get('quote', '') or item.get('comment', '')
-        if len(quote) >= MIN_CONTENT_LENGTH:
-            item['content'] = quote
-            fixed = True
-            issues.append(f'content过短({len(content)}字)，复用quote')
+    if not content:
+        pass  # 空content = 小程序用quote字段兜底，不做填充
 
     # 4. Ensure title exists
     if not item.get('title', ''):

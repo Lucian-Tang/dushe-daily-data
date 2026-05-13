@@ -38,6 +38,14 @@ else
     log "[daily-json] ⚠️ JSON 生成失败（检查是否有 MD 报告文件）"
 fi
 
+# ---- Step 2.6: 数据规范化（修复URL/日期格式/过滤旧数据）----
+log "[normalize] 开始数据规范化..."
+if python3 "$SCRIPT_DIR/normalize_daily_data.py" 2>&1 | tee -a "$LOG_DIR/sync-github.log"; then
+    log "[normalize] ✅ 数据规范化完成"
+else
+    log "[normalize] ⚠️ 规范化失败（不阻塞后续流程）"
+fi
+
 # ---- Step 3: 使用 gen-index.py 生成 index.json（统一入口）----
 log "[index] 使用 gen-index.py 生成 index.json..."
 cd "$WORKSPACE"
