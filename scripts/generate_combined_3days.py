@@ -62,11 +62,12 @@ def filter_recent(items, max_days_back=3, today_date=None):
         if not pub:
             continue  # 无日期的不展示
         try:
-            # 尝试解析各种日期格式
-            # 统一只取前10个字符 (YYYY-MM-DD)
+            # 统一为 YYYY-MM-DD 格式，去掉时间戳尾部
             pub_clean = pub[:10]
             item_date = datetime.strptime(pub_clean, '%Y-%m-%d').date()
             if item_date >= cutoff:
+                # 统一 published 字段为日期格式，避免小程序显示 '2026-05-11T02:50:03...'
+                item['published'] = pub_clean
                 result.append(item)
         except:
             result.append(item)  # 无法解析的日期保持原样
