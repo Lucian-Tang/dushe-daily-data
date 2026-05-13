@@ -1,0 +1,92 @@
+[
+  {
+    "title": "Teaching Language Models to Think in Code (ThinC)",
+    "source": "arXiv / HuggingFace",
+    "url": "https://huggingface.co/papers/2605.07237",
+    "content": "韩国高丽大学提出ThinC（Thinking in Code）框架，让代码本身扮演推理者而非自然语言调用的工具。模型仅需简短NL规划步骤，随后所有推理通过代码块和解释器输出完成。ThinC-4B在五个竞赛级数学基准上全面超越所有TIR基线，甚至超过了Qwen3-235B-A22B-Thinking——一个60倍于其参数量的模型，99.2%的最终答案根植于解释器输出。",
+    "quote": "4B吊打235B，参数再多不如代码写得溜，程序员狂喜。",
+    "published": "2026-05-13",
+    "collectedAt": "2026-05-14T03:45:00+08:00"
+  },
+  {
+    "title": "AlphaGRPO: Unlocking Self-Reflective Multimodal Generation via Decompositional Verifiable Reward",
+    "source": "arXiv / HuggingFace",
+    "url": "https://huggingface.co/papers/2605.12495",
+    "content": "将GRPO引入统一多模态模型实现自我反思式图像生成。提出分解可验证奖励机制DVReward，利用LLM将复杂用户请求分解为原子化可验证问题，再由通用MLLM评估生成可靠反馈。模型不仅能推理用户的隐含意图，还能自动诊断并修正生成错误，在GenEval、DPG-Bench等多个基准上取得显著提升且无需单独的cold-start阶段。",
+    "quote": "GRPO大法好，图像生成也学会自我反思了。",
+    "published": "2026-05-13",
+    "collectedAt": "2026-05-14T03:45:00+08:00"
+  },
+  {
+    "title": "POISE: Your Language Model is Its Own Critic",
+    "source": "arXiv / HuggingFace",
+    "url": "https://huggingface.co/papers/2605.07579",
+    "content": "首尔大学提出POISE方法，利用策略模型内部隐藏状态作为价值估计器，彻底消除独立critic模型的需求。通过轻量级probe从prompt和生成轨迹的隐藏状态中预测可验证奖励，并引入跨rollout构造保证梯度无偏。在Qwen3-4B和DeepSeek-R1-Distill-Qwen-1.5B上，表现匹敌DAPO且计算量更少，显著降低了RL训练的门槛。",
+    "quote": "省掉critic就是省钱，POISE这波降本增效很实在。",
+    "published": "2026-05-11",
+    "collectedAt": "2026-05-14T03:45:00+08:00"
+  },
+  {
+    "title": "Efficient Pre-Training with Token Superposition",
+    "source": "arXiv / HuggingFace",
+    "url": "https://huggingface.co/papers/2605.06546",
+    "content": "提出Token-Superposition Training两阶段预训练方法：第一阶段将连续token平均为\"叠加\"嵌入并训练多热交叉熵损失预测下一批token，第二阶段恢复标准next-token prediction。在10B激活参数MoE规模上达到2.5倍预训练时间缩减，同时提升HellaSwag、ARC和MMLU等下游基准性能，无需修改模型架构或优化器。",
+    "quote": "训练时间砍半还不降精度，这波属于白嫖算力。",
+    "published": "2026-05-07",
+    "collectedAt": "2026-05-14T03:45:00+08:00"
+  },
+  {
+    "title": "Multi-Stream LLMs: Unblocking with Parallel Streams of Thoughts, Inputs and Outputs",
+    "source": "arXiv / HuggingFace",
+    "url": "https://huggingface.co/papers/2605.12460",
+    "content": "MPI-IS和Tübingen AI Center提出多流LLM架构，打破传统聊天模型单一计算流的瓶颈。每个前向传播同时从多个输入流读取并在多个输出流生成token，彼此因果依赖。模型可以边思考边写作、边阅读边回应，不再像传统Chat模型那样一次只能干一件事。同步改善效率、安全性和可监控性。",
+    "quote": "终于不用等AI想完了再写了，多线程大脑正式上线。",
+    "published": "2026-05-13",
+    "collectedAt": "2026-05-14T03:45:00+08:00"
+  },
+  {
+    "title": "Anthropic is launching Claude for Small Business",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/929727/anthropic-is-launching-claude-for-small-business",
+    "content": "Anthropic推出针对中小企业的Claude套餐，以一键开关方式接入Intuit Quickbooks、PayPal、DocuSign、HubSpot、Google Workspace和Microsoft 365等工具。Claude可以规划工资单、月底结账、运行销售活动、追讨发票等。这是Anthropic从大企业客户向中小市场扩张的关键一步，标志着AI办公助手从Saas原生走向传统企业软件集成。",
+    "quote": "Claude开始给中小企业管账了，会计们该紧张了。",
+    "published": "2026-05-13",
+    "collectedAt": "2026-05-14T03:45:00+08:00"
+  },
+  {
+    "title": "Mark Zuckerberg announces 'completely private' encrypted Meta AI chat",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/tech/929791/meta-ai-incognito-chats",
+    "content": "扎克伯格宣布Meta AI上线Incognito Chat模式，采用端到端加密确保对话内容即使Meta自己也无法读取。区别于竞品——Google Gemini保留数据72小时、ChatGPT临时聊天保留30天、Claude保密聊天保留30天——Meta声称这是\"首个无服务器端日志存储的AI产品\"。此举正值ChatGPT日志被用于多起诉讼案件的敏感时期。",
+    "quote": "Meta玩隐私牌，不知道是真心还是被官司逼的。",
+    "published": "2026-05-13",
+    "collectedAt": "2026-05-14T03:45:00+08:00"
+  },
+  {
+    "title": "Alexa is moving into Amazon.com — Alexa for Shopping replaces Rufus",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/929457/amazon-announces-alexa-for-shopping-ai-assistant-rufus",
+    "content": "Amazon将Alexa Plus引入Amazon.com，取代此前推出的Rufus AI购物助手。用户直接在搜索框输入即可触发Alexa回答，支持设置价格提醒、自动比价、自动下单。亮点是'Buy for Me'功能可在亚马逊以外网站代购。Alexa for Shopping同时接替Rufus所有职责，且不强制要求Alexa账户，面向全美亚马逊用户逐步开放。",
+    "quote": "Rufus才上线多久就被Alexa取代，Amazon内部赛马真刺激。",
+    "published": "2026-05-13",
+    "collectedAt": "2026-05-14T03:45:00+08:00"
+  },
+  {
+    "title": "Under the Hood of SKILL.md: Semantic Supply-chain Attacks on AI Agent Skill Registry",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2605.11418",
+    "content": "研究论文系统揭示了AI Agent技能注册表的语义供应链攻击风险。针对Agent Skill生命周期的三个关键环节——发现（通过短文本触发词操纵嵌入检索，实现86%配对胜率和80% Top-10排名）、选择（描述性偏见导致77.6%的agent选择恶意变体）、治理（语义规避策略使36.5%-100%的恶意技能绕过阻止判决），实验基于真实ClawHub技能库。",
+    "quote": "SKILL.md也能当攻击面，Agent生态的安全问题才刚浮出水面。",
+    "published": "2026-05-13",
+    "collectedAt": "2026-05-14T03:45:00+08:00"
+  },
+  {
+    "title": "Musk v. Altman: Josh Achiam testifies — Musk wanted to 'race towards AGI'; Microsoft calls trial 'amateur city'",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/923518/musk-altman-trial-openai-demis-hassabis-google-deepmind",
+    "content": "Musk诉Altman案第三周庭审持续发酵，猛料不断。OpenAI首席未来学家Josh Achiam出庭作证，透露Musk早期想\"奔向AGI\"并对Google DeepMind的Demis Hassabis执念极深——Musk曾反复追问\"Demis Hassabis是坏人吗？\"。微软CEO Nadella一语道破：OpenAI 2023年董事会闹剧纯属\"业余城市\"，强调微软只是旁观者。庭审还曝出Musk的\"我受够了\"邮件等硅谷内幕。",
+    "quote": "硅谷恩怨录第三周：Musk的嫉妒戒断反应、Nadella的冷嘲热讽。",
+    "published": "2026-05-13",
+    "collectedAt": "2026-05-14T03:45:00+08:00"
+  }
+]
