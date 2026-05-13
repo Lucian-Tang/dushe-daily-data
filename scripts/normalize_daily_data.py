@@ -26,8 +26,7 @@ if os.path.basename(DATA_DIR) == 'scripts':
     DATA_DIR = os.path.dirname(DATA_DIR)
 
 DAILY_PATTERN = re.compile(r'^(\w+)_daily_(\d{8})\.json$')
-MAX_DAYS_BACK = 3  # 仅保留最近3天的数据
-MIN_CONTENT_LENGTH = 30
+MAX_DAYS_BACK = 2  # 保留最近3天（今天+2天前）
 
 
 def normalize_item(item, filename_date):
@@ -53,8 +52,8 @@ def normalize_item(item, filename_date):
         if url_match:
             item['url'] = url_match.group(0)
         else:
-            # url 字段必须有值，哪怕使用备用值
-            item['url'] = f'https://example.com/article/{abs(hash(item.get("title","")))}'
+            # url 字段不能为空（小程序会静默丢弃），用占位符
+            item['url'] = '#'
         fixed = True
         issues.append(f'补全url字段')
 

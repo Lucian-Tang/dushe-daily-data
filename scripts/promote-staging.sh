@@ -67,7 +67,7 @@ if [ "${1:-}" = "--force" ]; then
     log "[2/5] ⚠️ 跳过 QA 校验（--force）"
 else
     log "[2/5] 运行 QA 校验..."
-    QA_REPORT=$(python3 "$SCRIPT_DIR/../scripts/morning-pipeline-check.py" --date "$(date +%Y-%m-%d)" 2>&1)
+    QA_REPORT=$(python3 "$SCRIPT_DIR/../../scripts/morning-pipeline-check.py" --date "$(date +%Y-%m-%d)" 2>&1)
     echo "$QA_REPORT" | tee -a "$LOG_FILE"
     
     if echo "$QA_REPORT" | grep -q "整体状态: ✅ OK"; then
