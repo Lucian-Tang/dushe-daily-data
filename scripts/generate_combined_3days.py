@@ -147,7 +147,7 @@ def main():
         # 合并去重
         merged = merge_and_deduplicate(items_by_day)
         # 过滤掉超过3天的旧数据
-        merged = filter_recent(merged, max_days_back=3, today_date=today_date)
+        merged = filter_recent(merged, max_days_back=2, today_date=today_date)
         combined[section] = merged
         total_items += len(merged)
         print(f"  {section}: {len(merged)} 条（来源: {today_file}, {len(recent_files)} 天历史）")
