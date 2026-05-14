@@ -65,7 +65,7 @@ def gen_uid(section: str, title: str, url: str = "") -> str:
     key = (title or '') + '|' + (url or '')
     key = key.lower()
     key = re.sub(r'[^\u0000-\uFFFF]', '', key)  # 去掉大部分 emoji(非BMP平面)
-    key = key.replace(':', ':').replace('-', '-').replace('-', '-').replace('-', '-')
+    key = key.replace('：', ':').replace('—', '-').replace('–', '-')
     # 统一标点前后的空格:去掉冒号前的空格,确保冒号后有一个空格
     key = re.sub(r'\s*:\s*', ': ', key)
     key = re.sub(r'\s+', ' ', key).strip()
