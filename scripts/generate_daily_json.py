@@ -47,33 +47,56 @@ def parse_dev(text):
     return items
 
 def parse_ai(text):
+    """
+    解析AI日报MD,同时支持晨报(## N. Title)和晚间(### N. Title)两种格式。
+    晨报字段: **来源：**、**链接：**、**毒舌点评：**、**详情**
+    晚间字段: **信源：**、**链接：**、**毒舌：**、无**详情**,content在标题和毒舌之间
+    """
     items = []
-    for part in re.split(r'\n###\s+\d+\.\s+', text)[1:]:
+    for part in re.split(r'\n#{2,3}\s+\d+\.\s+', text)[1:]:
         lines = part.strip().split('\n')
         title = lines[0].strip() if lines else ''
         if not title: continue
         src = url = quote = content = ''
-        for i, l in enumerate(lines[1:]):
+        content_lines = []
+
+        # Regex for metadata fields (support both **Field：** and - **Field**：)
+        re_source = re.compile(r'[- ]*\*\*来源[：:]*\*{0,2}\s*(.+)')
+        re_xinyuan = re.compile(r'[- ]*\*\*信源[：:]*\*{0,2}\s*(.+)')
+        re_link = re.compile(r'[- ]*\*\*链接[：:]*\*{0,2}\s*(.+)')
+        re_douche_pd = re.compile(r'[- ]*\*\*毒舌点评[：:]*\*{0,2}\s*(.+)')
+        re_douche = re.compile(r'[- ]*\*\*毒舌[：:]*\*{0,2}\s*(.+)')
+
+        for l in lines[1:]:
             s = l.strip()
-            if not s or s == '---': continue
-            m = re.match(r'\*\*来源\*\*[：:]\s*(.+)', s)
-            if m: src = clean_source(m.group(1)); continue
-            m = re.match(r'\*\*链接\*\*[：:]\s*(.+)', s)
-            if m: url = clean_url(m.group(1)); continue
-            if s.startswith('**详情'):
-                for cl in lines[i+2:]:
-                    cls = cl.strip()
-                    if not cls or cls == '---': break
-                    if '**来源**' in cls or '**链接**' in cls or '**毒舌' in cls: break
-                    content += cls + ' '
-                content = content.strip()
+            if not s or s == '---':
                 continue
-            if '**毒舌点评**' in s or '**毒舌**' in s:
-                m2 = re.search(r'[：:]\s*(.+)', s.split('💬')[-1] if '💬' in s else s)
-                if m2: quote = m2.group(1).strip(); continue
-        if not content:
-            m = re.search(r'\*\*详情\*\*[：:](.*?)(?=\*\*毒舌点评|\*\*来源|\*\*链接|$)', part, re.DOTALL)
-            if m: content = re.sub(r'\s+', ' ', m.group(1)).strip()
+
+            # Source matching (morning: **来源：**, evening: **信源：**)
+            m = re_source.match(s) or re_xinyuan.match(s)
+            if m:
+                val = m.group(1).strip()
+                if not src: src = val
+                continue
+
+            # Link matching
+            m = re_link.match(s)
+            if m:
+                val = m.group(1).strip()
+                url_m = re.search(r'(https?://[^\s\)\]]+)', val)
+                if url_m and not url: url = clean_url(url_m.group(1))
+                continue
+
+            # Douche matching (morning: **毒舌点评：**, evening: **毒舌：**)
+            m = re_douche_pd.match(s) or re_douche.match(s)
+            if m:
+                quote = m.group(1).strip()
+                continue
+
+            # Not metadata → this is content
+            content_lines.append(s)
+
+        content = ' '.join(content_lines).strip()
         items.append(dict(title=title, content=content, quote=quote, source=src, url=url))
     return items
 
