@@ -179,10 +179,25 @@ git pull origin staging
 git checkout main
 git pull origin main
 git merge staging --no-edit || {
-    log "❌ 合并冲突！请手动解决"
-    git merge --abort
-    git checkout staging
-    exit 1
+    log "⚠️ 合并冲突！自动兜底：以 staging 为准覆盖..."
+    # 兜底策略：遇到冲突时，以 staging 的内容为准（staging 是上游数据源）
+    git merge --abort 2>/dev/null
+    
+    # 方案1: -X theirs 自动选择 staging 版本
+    if git merge -X theirs staging --no-edit 2>&1; then
+        log "✅ 自动合并成功（-X theirs）"
+    else
+        # 方案2: 强制从 staging 拉取所有文件覆盖
+        log "⚠️ -X theirs 失败，强制覆盖..."
+        git merge --abort 2>/dev/null
+        git checkout staging -- .
+        git commit -m "auto-sync: force staging into main at $(date +%Y%m%d-%H%M%S)" --no-edit 2>/dev/null || {
+            log "❌ 所有合并尝试均失败，请手动处理"
+            git checkout staging
+            exit 1
+        }
+        log "✅ 强制覆盖成功（staging → main）"
+    fi
 }
 
 # ── index.json 校验（防止旧版覆盖）──
