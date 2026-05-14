@@ -31,8 +31,8 @@
   --quote-border: #07c160;
   --tag-bg: rgba(7, 193, 96, 0.10);
   --tag-text: #07c160;
-  --shadow: 0 1px 3px rgba(0,0,0,0.08);
-  --shadow-hover: 0 2px 8px rgba(0,0,0,0.10);
+  --shadow: 0 2px 8px rgba(0,0,0,0.10);
+  --shadow-hover: 0 4px 16px rgba(0,0,0,0.15);
   --tab-bg: #F5F5F5;
   --backdrop-bg: rgba(250, 250, 250, 0.92);
   --cat-industry: #5B7FBB;
@@ -235,8 +235,8 @@ a:hover { text-decoration: underline; }
   border: none;
   box-shadow: var(--shadow);
   border-radius: var(--radius);
-  padding: 16px;
-  margin-bottom: 10px;
+  padding: 18px 20px;
+  margin-bottom: 14px;
   cursor: pointer;
   transition: all 0.15s ease;
   position: relative;
@@ -274,12 +274,8 @@ a:hover { text-decoration: underline; }
 }
 
 .card-body {
-  font-size: 0.85rem; color: var(--text-dim);
+  font-size: 0.85rem; color: var(--text);
   line-height: 1.55;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
   margin-bottom: 10px;
 }
 
@@ -308,172 +304,16 @@ a:hover { text-decoration: underline; }
   font-size: 0.72rem; color: var(--text-dim);
 }
 
-.card-link-hint {
+.card-source-link {
   display: flex; align-items: center; gap: 4px;
-  font-size: 0.7rem; color: var(--text-dim);
-  opacity: 0.6; transition: opacity 0.15s;
-}
-.card:hover .card-link-hint { opacity: 1; }
-
-/* ================================================================ */
-/*  DETAIL VIEW                                                      */
-/* ================================================================ */
-
-.detail-backdrop {
-  position: fixed; inset: 0;
-  z-index: 200;
-  background: var(--bg);
-  overflow-y: auto;
-  animation: slideIn 0.25s ease-out;
-  transition: background 0.3s;
-}
-
-@keyframes slideIn {
-  from { opacity: 0; transform: translateY(12px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-.detail-container {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 16px;
-}
-
-/* Back bar */
-.back-bar {
-  display: flex; align-items: center; gap: 10px;
-  padding: 12px 0;
-  border-bottom: 1px solid var(--border);
-  margin-bottom: 20px;
-  position: sticky; top: 0; z-index: 10;
-  background: var(--backdrop-bg);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
-
-.back-btn {
-  display: flex; align-items: center; gap: 6px;
-  padding: 6px 14px;
-  background: var(--bg-card);
-  box-shadow: var(--shadow);
-  border: none;
-  border-radius: 20px;
-  color: var(--text);
-  font-size: 0.85rem;
-  cursor: pointer;
+  font-size: 0.7rem; color: var(--green);
   font-weight: 500;
-  transition: all 0.15s;
-}
-.back-btn:hover { box-shadow: var(--shadow-hover); }
-.back-btn:active { transform: scale(0.96); }
-
-.back-icon { font-size: 1rem; line-height: 1; }
-
-.back-category {
-  font-size: 0.75rem;
-  color: var(--text-dim);
-  padding: 4px 10px;
-  background: var(--tag-bg);
-  border-radius: 12px;
-}
-
-
-/* Detail header */
-.detail-header { margin-bottom: 20px; }
-
-.detail-header .detail-title {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--text-bright);
-  line-height: 1.45;
-  margin-bottom: 12px;
-}
-
-.detail-meta {
-  display: flex; align-items: center; gap: 12px;
-  flex-wrap: wrap;
-  font-size: 0.78rem;
-  color: var(--text-dim);
-}
-
-.detail-meta .source-tag {
-  padding: 2px 10px;
-  background: var(--tag-bg);
-  color: var(--tag-text);
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 0.75rem;
-}
-
-/* Detail content */
-.detail-content {
-  font-size: 0.95rem;
-  line-height: 1.8;
-  color: var(--text);
-  margin-bottom: 24px;
-  white-space: pre-wrap;
-  word-break: break-word;
-}
-
-/* Quote block in detail */
-.detail-quote-block {
-  margin-bottom: 28px;
-  padding: 16px 18px;
-  background: var(--quote-bg);
-  border-left: 4px solid var(--quote-border);
-  border-radius: 0 10px 10px 0;
-}
-
-.detail-quote-block .detail-quote-label {
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--green);
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
-  margin-bottom: 8px;
-  display: flex; align-items: center; gap: 6px;
-}
-
-.detail-quote-block .detail-quote-text {
-  font-size: 0.92rem;
-  line-height: 1.65;
-  color: var(--green);
-  font-style: italic;
-}
-
-/* Source link button */
-.detail-source-link {
-  display: inline-flex; align-items: center; gap: 8px;
-  padding: 10px 24px;
-  background: var(--green);
-  color: #fff;
-  border-radius: 24px;
-  font-size: 0.9rem;
-  font-weight: 600;
   text-decoration: none;
-  transition: all 0.15s;
-  border: none;
-  cursor: pointer;
-  margin-bottom: 8px;
+  transition: opacity 0.15s;
 }
-.detail-source-link:hover {
-  background: var(--green-dim);
-  text-decoration: none;
-  box-shadow: 0 4px 16px rgba(7, 193, 96, 0.3);
-}
-.detail-source-link:active { transform: scale(0.97); }
+.card-source-link:hover { opacity: 0.8; text-decoration: underline; }
 
-.detail-url-hint {
-  font-size: 0.7rem;
-  color: var(--text-dim);
-  word-break: break-all;
-}
 
-.detail-divider {
-  margin: 28px 0;
-  border: none;
-  border-top: 1px solid var(--border);
-}
 
 /* ========== States ========== */
 .state-message {
@@ -523,21 +363,12 @@ a:hover { text-decoration: underline; }
 @media (max-width: 480px) {
   .header { padding: 10px 12px 0; }
   .main { padding: 12px; }
-  .card { padding: 14px; margin-bottom: 8px; }
+  .card { padding: 16px; margin-bottom: 12px; }
   .card-title { font-size: 0.9rem; }
-  .card-body { font-size: 0.82rem; -webkit-line-clamp: 2; }
+  .card-body { font-size: 0.82rem; }
   .card-quote { font-size: 0.78rem; }
   .tab { padding: 8px 14px; font-size: 0.82rem; }
   .date-heading { padding: 8px 10px; font-size: 0.75rem; }
-
-  .detail-container { padding: 12px; }
-  .detail-header .detail-title { font-size: 1.1rem; }
-  .detail-content { font-size: 0.9rem; }
-  .detail-quote-block { padding: 12px 14px; }
-}
-
-@media (min-width: 768px) {
-  .card-body { -webkit-line-clamp: 3; }
 }
 </style>
 </head>
@@ -546,7 +377,7 @@ a:hover { text-decoration: underline; }
 <!-- ===== Header ===== -->
 <header class="header" id="appHeader">
   <div class="header-top">
-    <div class="logo" onclick="navigateHome()" title="返回首页">
+    <div class="logo" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="返回顶部">
       <span class="logo-dot"></span>
       <span>有数Feed</span>
     </div>
@@ -586,39 +417,6 @@ a:hover { text-decoration: underline; }
   </div>
 </main>
 
-<!-- ===== Detail View (hidden by default) ===== -->
-<div class="detail-backdrop" id="detailView" style="display:none;">
-  <div class="detail-container" id="detailContainer">
-    <div class="back-bar">
-      <button class="back-btn" onclick="closeDetail()" aria-label="返回列表">
-        <span class="back-icon">←</span> 返回
-      </button>
-      <span class="back-category" id="detailCategory">行业</span>
-    </div>
-
-    <div class="detail-header">
-      <h1 class="detail-title" id="detailTitle">--</h1>
-      <div class="detail-meta">
-        <span>📅 <span id="detailDate">--</span></span>
-        <span class="source-tag" id="detailSource">--</span>
-      </div>
-    </div>
-
-    <div class="detail-quote-block" id="detailQuoteBlock">
-      <div class="detail-quote-label">💬 毒舌点评</div>
-      <div class="detail-quote-text" id="detailQuote">--</div>
-    </div>
-
-    <div class="detail-content" id="detailContent">--</div>
-
-    <hr class="detail-divider">
-
-    <a class="detail-source-link" id="detailSourceLink" href="#" target="_blank" rel="noopener">
-      查看原文 ↗
-    </a>
-    <div class="detail-url-hint" id="detailUrlHint" style="margin-top:6px;"></div>
-  </div>
-</div>
 
 <footer class="footer" id="appFooter">
   <div><span class="logo-text">有数Feed</span> — 每日科技快讯 · Demo</div>
@@ -634,7 +432,6 @@ const CAT_ICONS = { industry: '🏭', dev: '💻', ai: '🤖', startup: '🚀', 
 
 let allData = {};
 let currentTab = 'industry';
-let currentView = 'list'; // 'list' | 'detail'
 
 /* ========== DOM ========== */
 const $ = (s) => document.querySelector(s);
@@ -775,27 +572,18 @@ function groupByDate(items) {
   return sortedKeys.map(k => ({ label: k, items: groups[k] }));
 }
 
-/* ========== Item Lookup ========== */
-function findItemByUid(uid) {
-  for (const cat of CATEGORIES) {
-    const items = allData[cat] || [];
-    for (const item of items) {
-      if (item.uid === uid) return { item, category: cat };
-    }
-  }
-  return null;
-}
-
 /* ========== Rendering (List) ========== */
 function renderCard(item) {
-  const uid = item.uid || '';
   const source = item.source || '未知';
   const title = item.title || '无标题';
   const content = item.content || '';
   const quote = item.quote || '';
+  const url = item.url || '';
+  const hasUrl = url && url !== '#';
+  const escUrl = url.replace(/"/g, '&quot;');
 
   return `
-    <article class="card" data-uid="${escHtml(uid)}" onclick="openDetail('${escAttr(uid)}')">
+    <article class="card" data-url="${escUrl}" onclick="var u=this.dataset.url;if(u)window.open(u,'_blank','noopener')">
       <div class="card-header">
         <div class="card-title">${escHtml(title)}</div>
         <span class="card-source">${escHtml(source)}</span>
@@ -808,7 +596,7 @@ function renderCard(item) {
       </div>` : ''}
       <div class="card-footer">
         <span>${item.published ? formatDate(item.published) : ''}</span>
-        <span class="card-link-hint">📖 查看详情</span>
+        ${hasUrl ? `<a class="card-source-link" href="${escUrl}" target="_blank" rel="noopener" onclick="event.stopPropagation()">查看原文 →</a>` : '<span class="card-source-link" style="color:var(--text-dim)">暂无链接</span>'}
       </div>
     </article>
   `;
@@ -818,10 +606,6 @@ function escHtml(str) {
   const div = document.createElement('div');
   div.textContent = str;
   return div.innerHTML;
-}
-
-function escAttr(str) {
-  return str.replace(/'/g, "\\'").replace(/"/g, '&quot;');
 }
 
 function renderTab(tabKey) {
@@ -879,127 +663,6 @@ function toggleDateSection(sectionId) {
   }
 }
 
-/* ========== Rendering (Detail) ========== */
-function renderDetail(item, category) {
-  const title = item.title || '无标题';
-  const content = item.content || '（暂无正文）';
-  const quote = item.quote || '';
-  const source = item.source || '未知来源';
-  const url = item.url || '#';
-  const published = item.published || '';
-
-  $('#detailTitle').textContent = title;
-  $('#detailDate').textContent = published ? formatDate(published) : '日期未知';
-  $('#detailSource').textContent = source;
-  $('#detailCategory').textContent = CAT_LABELS[category] || category;
-  $('#detailContent').textContent = content;
-
-  // Quote block
-  const quoteBlock = $('#detailQuoteBlock');
-  if (quote) {
-    quoteBlock.style.display = '';
-    $('#detailQuote').textContent = quote;
-  } else {
-    quoteBlock.style.display = 'none';
-  }
-
-  // Source link
-  const linkEl = $('#detailSourceLink');
-  if (url && url !== '#') {
-    linkEl.href = url;
-    linkEl.style.display = '';
-    let displayUrl = url.replace(/^https?:\/\//, '');
-    if (displayUrl.length > 60) displayUrl = displayUrl.slice(0, 60) + '…';
-    $('#detailUrlHint').textContent = displayUrl;
-  } else {
-    linkEl.style.display = 'none';
-    $('#detailUrlHint').textContent = '';
-  }
-}
-
-function openDetail(uid) {
-  const result = findItemByUid(uid);
-  if (!result) return;
-
-  const newHash = `#detail/${uid}`;
-  if (location.hash !== newHash) {
-    history.pushState({ view: 'detail', uid }, '', newHash);
-  }
-  showDetailView(result.item, result.category);
-}
-
-function closeDetail() {
-  history.back();
-}
-
-function showDetailView(item, category) {
-  currentView = 'detail';
-  $('#mainContent').style.display = 'none';
-  $('#tabNav').style.display = 'none';
-  $('#appFooter').style.display = 'none';
-  $('#headerMeta').style.display = 'none';
-  $('#themeToggle').style.display = 'none';
-  $('#detailView').style.display = '';
-  renderDetail(item, category);
-  $('#detailView').scrollTop = 0;
-}
-
-function showListView() {
-  currentView = 'list';
-  $('#mainContent').style.display = '';
-  $('#tabNav').style.display = '';
-  $('#appFooter').style.display = '';
-  $('#headerMeta').style.display = '';
-  $('#themeToggle').style.display = '';
-  $('#detailView').style.display = 'none';
-}
-
-function navigateHome() {
-  if (currentView === 'detail') {
-    history.back();
-  }
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-/* ========== Hash Routing ========== */
-function handleHash() {
-  const hash = location.hash;
-  if (!hash) {
-    if (currentView === 'detail') showListView();
-    return;
-  }
-
-  const detailMatch = hash.match(/^#detail\/(.+)$/);
-  if (detailMatch) {
-    const uid = detailMatch[1];
-    const result = findItemByUid(uid);
-    if (result) {
-      showDetailView(result.item, result.category);
-    } else {
-      console.warn('Detail UID not found:', uid);
-      history.replaceState({ view: 'list' }, '', '#');
-      showListView();
-    }
-    return;
-  }
-
-  if (currentView === 'detail') showListView();
-}
-
-window.addEventListener('hashchange', handleHash);
-window.addEventListener('popstate', (e) => {
-  if (currentView === 'detail') {
-    showListView();
-  }
-});
-
-/* ========== Keyboard shortcut ========== */
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && currentView === 'detail') {
-    closeDetail();
-  }
-});
-
 /* ========== Tab Switching ========== */
 function switchTab(tabKey) {
   currentTab = tabKey;
@@ -1034,7 +697,6 @@ async function init() {
       });
     });
 
-    handleHash();
   } catch (err) {
     $('main#mainContent').innerHTML = `
       <div class="state-message">
