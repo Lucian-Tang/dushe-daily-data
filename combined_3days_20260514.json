@@ -285,6 +285,114 @@
   ],
   "dev": [
     {
+      "title": "** CloakHQ/CloakBrowser — Stealth Chromium that passes every bot detection test",
+      "content": "** 开源隐形 Chromium 浏览器 CloakBrowser 通过源码级修改绕过所有反爬检测机制，30 项机器人检测全部通过，可直接替代 Playwright。对于爬虫开发者、自动化测试工程师和反爬工程师而言，这是打破攻防平衡的重量级工具。今日 GitHub Trending 排名第二，单日暴涨 1800+ Stars。",
+      "quote": "** 反爬工哭晕在厕所，爬虫工笑出了声，GitHub Trending 成了战场。",
+      "source": "GitHub Trending",
+      "url": "https://github.com/CloakHQ/CloakBrowser",
+      "published": "2026-05-14",
+      "uid": "dev_758c47d9"
+    },
+    {
+      "title": "** tinyhumansai/openhuman — Your Personal AI super intelligence",
+      "content": "** Personal AI 项目 openhuman 以 Rust 编写，主打私有、简单、强力的个人超级智能助手。GitHub Trending 排名第三，单日 1600+ Stars 加冕，反映开发者社区对本地化、可自部署的私有人工智能的强烈需求。对比云上 AI 服务高昂成本和数据隐私问题，自托管 AI 正在成为新趋势。",
+      "quote": "** 当 OpenAI 涨价到你心痛，Rust 项目就成了唯一的温暖。",
+      "source": "GitHub Trending",
+      "url": "https://github.com/tinyhumansai/openhuman",
+      "published": "2026-05-14",
+      "uid": "dev_4b58de79"
+    },
+    {
+      "title": "** agentmemory — #1 Persistent memory for AI coding agents based on real-world benchmarks",
+      "content": "** agentmemory 开源项目为 Claude Code、Cursor、Gemini CLI、Codex 等全部主流 AI 编码 agent 提供持久化记忆能力，通过 MCP/hooks/REST API 接入。无需反复向 AI 解释项目上下文，真实基准测试优化方案。所有重度 AI 编程辅助工具使用者的刚需组件，今日 Trending 第四。",
+      "quote": "** 终于有人解决了 AI 刚聊完就失忆的现代程序员噩梦。",
+      "source": "GitHub Trending",
+      "url": "https://github.com/rohitg00/agentmemory",
+      "published": "2026-05-14",
+      "uid": "dev_6361d123"
+    },
+    {
+      "title": "** supertone-inc/supertonic — Lightning-Fast, On-Device, Multilingual TTS",
+      "content": "** supertone-inc 推出 supertonic，一个基于 ONNX 运行时原生执行的极速本地多语言 TTS Swift 开源项目，无 API 调用成本。1000+ Stars 登榜意味着边缘设备上的 TTS 已足够可用。对语音助手开发者、无障碍应用团队和本地化产品来说，这是替代云端 TTS 服务的第一步。",
+      "quote": "** TTS 终于不卡了，不用对着设备喊第二遍了！",
+      "source": "GitHub Trending",
+      "url": "https://github.com/supertone-inc/supertonic",
+      "published": "2026-05-14",
+      "uid": "dev_a5a10682"
+    },
+    {
+      "title": "** trycua/cua — Open-source infrastructure for Computer-Use Agents",
+      "content": "** cua 提供开源基础设施，用于训练和评估能控制完整桌面（macOS/Linux/Windows）的 AI 代理。包含沙箱环境、SDK 和基准测试集，允许 AI agent 操控真实操作系统。AI 从\"聊天框\"到\"操控桌面\"的关键进化，对自动化运维、软件测试和 RPA 领域有颠覆性影响。",
+      "quote": "** AI 帮你装 AI，你负责喝咖啡——这剧本我好像看过。",
+      "source": "GitHub Trending",
+      "url": "https://github.com/trycua/cua",
+      "published": "2026-05-14",
+      "uid": "dev_f3f5ebc0"
+    },
+    {
+      "title": "** Linux gaming is faster because Windows APIs are becoming Linux kernel features",
+      "content": "** 深度分析文章揭示 Linux 游戏性能反超 Windows 的关键原因：不是 Linux 变快了，而是 Windows API 正通过 Wine/Proton 变成 Linux 内核原生特性。大量 Win32 调用走上原生路径而非模拟层，让 Linux 游戏实现了低层优势。对 Linux 桌面用户、游戏开发者和操作系统生态观察者来说，这是历史转折点。",
+      "quote": "** Windows API 成了 Linux 内核特性，微软知识产权部血压拉满。",
+      "source": "Hacker News",
+      "url": "https://www.xda-developers.com/linux-gaming-is-getting-faster-because-windows-apis-are-becoming-linux-kernel-features/",
+      "published": "2026-05-14",
+      "uid": "dev_98fad421"
+    },
+    {
+      "title": "** Reverting the incremental GC in Python 3.14 and 3.15",
+      "content": "** Python 核心团队决定在 3.14 和 3.15 版本中还原已引入的增量 GC（垃圾回收）机制，因某些场景下触发了难以追踪的性能退化。CPython 选择保守策略：宁可回滚也不让稳定性打折扣。对所有 Python 开发者都是重要信号——短期激进优化不如长期稳定可靠。",
+      "quote": "** 增量 GC 被撤了，Python 用行动说明：不优化也是一种优化。",
+      "source": "Hacker News",
+      "url": "https://discuss.python.org/t/reverting-the-incremental-gc-in-python-3-14-and-3-15/107014",
+      "published": "2026-05-14",
+      "uid": "dev_0f9ff773"
+    },
+    {
+      "title": "** A History of IDEs at Google",
+      "content": "** 详尽长文回顾 Google 过去 20 年 IDE 发展史：从内部工具 MoonEdit、Cider 到 Flutter 依赖的 IntelliJ 插件，再到现在的 Project IDX。揭示了 Google 内部工具文化与外部开源策略之间的复杂博弈。对关心开发者体验、工具链设计和大型企业工程文化的工程师极具参考价值。",
+      "quote": "** Google 内部工具比外部产品好十倍——这条定律至今还在生效。",
+      "source": "Hacker News",
+      "url": "https://laurent.le-brun.eu/blog/a-history-of-ides-at-google",
+      "published": "2026-05-14",
+      "uid": "dev_4a761414"
+    },
+    {
+      "title": "** 当 AI 开始写代码，谁来保证它不会翻车？",
+      "content": "** 博客园热门技术文章直接点出 AI 代码的核心痛点：语法层面完美无瑕，业务逻辑和边界条件处理却频频翻车。作者呼吁建立 AI 代码审查标准和质量门禁，不要盲目信任 AI 输出。对依赖 AI 辅助编程但缺乏审查文化的开发团队有现实警示意义。",
+      "quote": "** AI 写出完美代码跑出完美故障，而你只能完美背锅。",
+      "source": "博客园",
+      "url": "https://www.cnblogs.com/joy99/p/20036855",
+      "published": "2026-05-14",
+      "uid": "dev_d85bc514"
+    },
+    {
+      "title": "** 企业级嵌入模型微调实战，基于 RTX 4000 算力",
+      "content": "** 实战教程详解基于 RTX 4000 系列显卡的企业级嵌入模型（Embedding Model）微调全流程，覆盖数据准备、模型选择、微调训练到生产部署。对于 RAG 应用开发者和需要定制化语义搜索理解的中小团队极其实用，大幅降低 E5/BGE 等嵌入模型的微调门槛。",
+      "quote": "** RTX 4000 微调嵌入模型，大数据工程师终于不再馋 A100 了。",
+      "source": "博客园",
+      "url": "https://www.cnblogs.com/Java-Starter/p/20034874",
+      "published": "2026-05-14",
+      "uid": "dev_30ffbdea"
+    },
+    {
+      "title": "** Visual Studio Code 1.120 发布",
+      "content": "** 微软发布 VS Code 1.120 月度更新版本，带来编辑器性能优化、语言协议增强和更多 AI 辅助编程功能的集成。作为全球最广泛使用的代码编辑器，每一次迭代都在影响数千万开发者的日常编码体验。更新内容涵盖核心编辑器改进和扩展生态完善。",
+      "quote": "** VS Code 一月一更，你的项目一月一改需求。互相伤害。",
+      "source": "开源中国",
+      "url": "https://www.oschina.net/news/440141/vs-code-1-120-released",
+      "published": "2026-05-14",
+      "uid": "dev_3ed27926"
+    },
+    {
+      "title": "** 前端失业，有点点迷茫",
+      "content": "** V2EX 热帖引发前端开发者大规模职场焦虑讨论。AI 编程工具日趋成熟使企业认为前端门槛降低，叠加供大于求的就业市场，一批前端工程师面临失业或被迫转行的困境。折射出 AI 时代程序员群体的深刻职业危机，全栈化与更深层技术壁垒成为自救方向。",
+      "quote": "** AI 还没取代程序员，HR 先觉得自己可以不要前端了。",
+      "source": "V2EX",
+      "url": "https://www.v2ex.com/t/1212445",
+      "published": "2026-05-14",
+      "uid": "dev_5b831259"
+    },
+    {
       "title": "Bun 从 Zig 到 Rust 的迁移已实锤，下个版本可能成为最后一个 Zig 版本",
       "url": "https://www.v2ex.com/t/1211992",
       "source": "V2EX",
@@ -355,24 +463,6 @@
       "quote": "一个镜像工具默默迭代到 4.0，比某些'颠覆性'产品还靠谱。",
       "published": "2026-05-13",
       "uid": "dev_64018ce8"
-    },
-    {
-      "title": "agentmemory — #1 Persistent memory for AI coding agents",
-      "url": "https://github.com/rohitg00/agentmemory",
-      "source": "GitHub Trending",
-      "content": "agentmemory 开源项目为所有主流 AI 编码 agent 提供持久化记忆能力，支持 Claude Code、Cursor、Gemini CLI、Codex 乃至 OpenClaw。通过 MCP/hooks/REST API 接入，让 agent 记住上下文不再需要反复解释，解决方案参考了真实基准测试。所有重度使用 AI 编程工具的开发者的刚需项目。",
-      "quote": "给 AI 装记忆体，下一个创业方向是给 AI 买养老保险。",
-      "published": "2026-05-13",
-      "uid": "dev_7eb4facb"
-    },
-    {
-      "title": "CloakHQ/CloakBrowser — Stealth Chromium that passes every bot detection test",
-      "url": "https://github.com/CloakHQ/CloakBrowser",
-      "source": "GitHub Trending",
-      "content": "CloakBrowser 是一个源码级修改、能通过所有反爬检测的'隐形'Chromium 浏览器。可直接替换 Playwright，30 项反爬测试全部通过，解决了爬虫开发者和自动化测试工程师被 Cloudflare 等防护系统阻拦的长期痛点。8000+ Stars 的今日热门项目。",
-      "quote": "反爬工程师和爬虫工程师的军备竞赛，又交了一次火。",
-      "published": "2026-05-13",
-      "uid": "dev_5731630e"
     },
     {
       "title": "代码是 AI 写的，生产事故谁背锅？",
@@ -804,6 +894,114 @@
     }
   ],
   "startup": [
+    {
+      "title": "林俊旸创业，新公司估值约20亿美金",
+      "content": "前通义千问负责人林俊旸正式创办AI实验室，新公司估值已达到约20亿美金。作为国内大模型领域最具影响力的技术负责人之一，林俊旸的创业项目吸引了多家顶级VC关注，团队核心成员多来自阿里达摩院，目标是在基础模型与垂直应用之间找到差异化定位。 💬 *毒舌点评：千问之父出走，AI江湖又要掀桌子了。*",
+      "quote": "",
+      "source": "36氪",
+      "url": "https://36kr.com/p/3807382930251523?f=rss",
+      "published": "2026-05-14",
+      "uid": "startup_4f3d757b"
+    },
+    {
+      "title": "Origin Lab raises $8M to help video game companies sell data to world-model builders",
+      "content": "Origin Lab 获800万美元融资，搭建游戏公司向AI世界模型开发者出售数据的交易平台。随着世界模型成为下一代AI竞争焦点，高质量3D场景数据需求激增。Origin Lab将作为中间市场连接游戏厂商和AI实验室，让游戏中的虚拟环境数据变现。 💬 *毒舌点评：游戏公司的隐藏资产终于被发现了——原来我们打的游戏都是AI的饲料。*",
+      "quote": "",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/05/13/origin-lab-raises-8m-to-help-video-game-companies-sell-data-to-world-model-builders/",
+      "published": "2026-05-14",
+      "uid": "startup_baa470ba"
+    },
+    {
+      "title": "Amazon launches an AI shopping assistant for the search bar, powered by Alexa+",
+      "content": "亚马逊推出由Alexa+驱动的AI购物助手，直接集成在搜索栏中，支持语音和触控交互，覆盖移动端、桌面端和Echo Show智能屏。该助手能提供更个性化的商品推荐并自动化跨平台购物流程，标志着电商巨头正式将AI对话式购物作为核心体验升级方向。 💬 *毒舌点评：以后逛亚马逊连买什么都不用自己想了，AI替你决定。*",
+      "quote": "",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/05/13/amazon-launches-an-ai-shopping-assistant-for-the-search-bar-powered-by-alexa/",
+      "published": "2026-05-14",
+      "uid": "startup_7fe9370e"
+    },
+    {
+      "title": "Instagram’s new ‘Instants’ feature combines elements from Snapchat and BeReal",
+      "content": "Instagram 推出名为 Instants 的新功能，允许用户与密友或互相关注者分享一次性查看的消失照片，24小时内有效且不可编辑。这明显借鉴了 Snapchat 阅后即焚和 BeReal 即时分享的玩法，试图在年轻用户群体中夺回社交时间。 💬 *毒舌点评：Instagram 的借鉴功力又升级了，Snapchat 和 BeReal 合二为一。*",
+      "quote": "",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/05/13/instagrams-new-instants-feature-combines-elements-from-snapchat-and-bereal/",
+      "published": "2026-05-14",
+      "uid": "startup_6f4325c8"
+    },
+    {
+      "title": "WhatsApp adds an incognito mode in Meta AI chats",
+      "content": "Meta 为 WhatsApp 的 AI 对话增加隐身模式，在该模式下对话记录不会被保存，关闭聊天后消息自动消失。扎克伯格称这是首个不记录对话内容的AI产品。对日益关注隐私的用户而言，这是一次重要的产品差异化尝试。 💬 *毒舌点评：AI聊天也搞阅后即焚，是不是怕自己说的话被秋后算账？*",
+      "quote": "",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/05/13/whatsapp-adds-an-incognito-mode-in-meta-ai-chats/",
+      "published": "2026-05-14",
+      "uid": "startup_dca088d6"
+    },
+    {
+      "title": "宇树发布载人变形机甲，定价390万起",
+      "content": "宇树科技正式发布载人变形机甲产品，起售价390万元人民币。该产品兼具行走和轮式移动能力，定位面向高端消费和特殊应用场景。这一大胆定价引发广泛讨论，被视为中国机器人公司从工业级向消费级跨界的标志性事件。 💬 *毒舌点评：390万，不是车不是房，是一个能走能跑的机器甲壳虫。*",
+      "quote": "",
+      "source": "36氪",
+      "url": "https://36kr.com/p/3806970999955201?f=rss",
+      "published": "2026-05-14",
+      "uid": "startup_c256cadf"
+    },
+    {
+      "title": "Anduril raises $5B, doubles valuation to $61B",
+      "content": "防务科技公司 Anduril 宣布完成50亿美元新一轮融资，估值飙升至610亿美元，由 Thrive Capital 和 a16z 领投。该公司2025年营收已达22亿美元。这笔融资是今年最大规模科技融资之一，反映了AI军事应用领域的投资热潮持续升温。 💬 *毒舌点评：打仗的生意永远不缺投资人，610亿估值，战争果然是印钞机。*",
+      "quote": "",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/05/13/anduril-raises-5b-doubles-valuation-to-61b/",
+      "published": "2026-05-14",
+      "uid": "startup_3e7422ac"
+    },
+    {
+      "title": "Rivian spinoff Mind Robotics raises another $400M",
+      "content": "从 Rivian 分拆出来的 Mind Robotics 再次获得4亿美元融资，累计融资已超10亿美元。这家机器人公司专注于将电动汽车技术转化为通用机器人平台，此次融资表明资本市场对从汽车到机器人的技术迁移路径持续看好。 💬 *毒舌点评：Rivian 分拆的机器人公司都融了10亿了，母公司还在亏呢。*",
+      "quote": "",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/05/13/rivian-spinoff-mind-robotics-raises-another-400m/",
+      "published": "2026-05-14",
+      "uid": "startup_a5934169"
+    },
+    {
+      "title": "清华系光计算芯片企业完成数千万天使轮融资，瞄准全波光计算架构",
+      "content": "一家清华背景的光计算芯片创业公司完成数千万元天使轮融资，聚焦全波光计算架构研发。传统电子芯片在AI算力爆发下面临功耗墙瓶颈，光计算被认为是突破方向之一。该公司致力于用光子替代电子进行矩阵运算，目标是在AI推理场景实现百倍能效提升。 💬 *毒舌点评：光计算又来了，这次是真的能落地还是继续画饼？*",
+      "quote": "",
+      "source": "36氪",
+      "url": "https://36kr.com/p/3807043342475009?f=rss",
+      "published": "2026-05-14",
+      "uid": "startup_77a8b44f"
+    },
+    {
+      "title": "Geothermal startup Fervo Energy pops 33% in IPO debut fueled by AI data center demand",
+      "content": "增强型地热创业公司 Fervo Energy 上市首日大涨33%，IPO规模多次上调。AI数据中心的电力需求疯狂增长，地热被视为稳定清洁能源的关键来源。Fervo的技术能让原本不适合地热发电的地区也能利用地热能，吃尽了AI能源焦虑的红利。 💬 *毒舌点评：AI 把地球都烧热了，地热公司反而赚翻了，这生意妙啊。*",
+      "quote": "",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/05/13/geothermal-startup-fervo-energy-pops-33-in-ipo-debut-fueled-by-ai-data-center-demand/",
+      "published": "2026-05-14",
+      "uid": "startup_170d7850"
+    },
+    {
+      "title": "Anthropic courts a new kind of customer: small business owners",
+      "content": "Anthropic 正在拓展面向小微企业主的产品线，标志着AI平台战争从500强大企业下沉到全美3600万小企业。新服务更注重易用性和即开即用，降低AI使用门槛。对投资者而言，这表明AI平台的下一波增长引擎是长尾市场而非头部客户。 💬 *毒舌点评：大企业客户卷不动了，AI巨头终于想起来美国还有3600万家小公司。*",
+      "quote": "",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/05/13/anthropic-courts-a-new-kind-of-customer-small-business-owners/",
+      "published": "2026-05-14",
+      "uid": "startup_487fa7f0"
+    },
+    {
+      "title": "吴泳铭：阿里AI模型与应用ARR 6月季度将破100亿元，年底超300亿元",
+      "content": "阿里集团CEO吴泳铭透露，阿里AI模型与应用的年化经常性收入（ARR）将在6月季度突破100亿元，年底有望超过300亿元。这一数字远超市场预期，显示阿里云加通义系列已在AI商业化方面取得实质性进展，成为中国AI变现的重要风向标。 💬 *毒舌点评：谁说中国AI赚不到钱？阿里这300亿的flag立得够硬。*",
+      "quote": "",
+      "source": "36氪",
+      "url": "https://36kr.com/newsflashes/3807659228913156?f=rss",
+      "published": "2026-05-14",
+      "uid": "startup_8e79c53f"
+    },
     {
       "title": "Kevin Hartz's A* just closed its third fund with $450 million",
       "url": "https://techcrunch.com/2026/05/12/kevin-hartzs-a-just-closed-its-third-fund-with-450-million/",
