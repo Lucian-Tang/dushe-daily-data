@@ -1,0 +1,102 @@
+[
+  {
+    "title": "Bun's Rust rewrite has been merged",
+    "content": "JavaScript 运行时 Bun 的 Rust 重写已正式合并到主分支。Bun 团队在经历一年多的重写后，将核心引擎从 Zig 迁移到 Rust，以利用更成熟的生态和更好的安全保证。此次重写涉及数万行代码，社区期待它在性能和稳定性上超越 Node.js 的下一代替代方案，被视为 Rust 生态在 JS 工具链领域的重要里程碑。",
+    "quote": "用 Zig 红了，用 Rust 绿了，下次准备用什么语言重写？Lisp 吗？",
+    "source": "Hacker News",
+    "url": "https://old.reddit.com/r/rust/comments/1tcrmjs/rewrite_bun_in_rust_has_been_merged/",
+    "published": "2026-05-15",
+    "uid": "dev_6a7f649c",
+    "collectedAt": "2026-05-14T23:48:21.000Z"
+  },
+  {
+    "title": "New Nginx Exploit (Nginx-Rift)",
+    "content": "安全研究员公开了一个名为 Nginx-Rift 的 Nginx 新漏洞利用工具。该漏洞影响广泛部署的 Nginx 反向代理服务器，可通过特定请求绕过访问控制或泄露敏感数据。目前全球数百万台服务器运行 Nginx，影响面极大。项目已包含 PoC 代码和详细技术分析，运维团队应尽快检查版本并部署缓解措施。",
+    "quote": "全球运维的噩梦又来了，这次是 Nginx 帮你「开门迎客」。",
+    "source": "Hacker News",
+    "url": "https://github.com/DepthFirstDisclosures/Nginx-Rift",
+    "published": "2026-05-15",
+    "uid": "dev_46743c60",
+    "collectedAt": "2026-05-14T23:48:21.000Z"
+  },
+  {
+    "title": "Claude for Small Business",
+    "content": "Anthropic 正式发布「Claude for Small Business」计划，面向中小企业提供团队协作、管理控制台、数据隐私保护等企业级功能，定价远低于大型企业方案。该计划支持 Claude Code、Claude Chat 等产品的团队共享，旨在让小型团队也能用上最先进的 AI 编程和工作助手，直接与 OpenAI 的 ChatGPT Team 和 Microsoft Copilot 竞争。",
+    "quote": "Anthropic 终于发现程序员的钱包比企业采购部好撬多了。",
+    "source": "Hacker News",
+    "url": "https://www.anthropic.com/news/claude-for-small-business",
+    "published": "2026-05-15",
+    "uid": "dev_128b9f0f",
+    "collectedAt": "2026-05-14T23:48:21.000Z"
+  },
+  {
+    "title": "Anthropic forms $200M partnership with the Gates Foundation",
+    "content": "Anthropic 宣布与比尔及梅琳达·盖茨基金会达成 2 亿美元合作，将 Claude 模型应用于全球健康、农业和教育等公益领域。合作涵盖疾病诊断辅助、农作物病虫害识别和教育资源生成等场景。这是 AI 公司迄今为止最大规模的公益合作之一，也表明 Anthropic 在商业化之外积极布局社会影响力，进一步推高其 9000 亿美元估值想象空间。",
+    "quote": "2 亿美元做公益，估值顺便再涨 2000 亿，这 ROI 秒杀任何慈善机构。",
+    "source": "Hacker News",
+    "url": "https://www.anthropic.com/news/gates-foundation-partnership",
+    "published": "2026-05-15",
+    "uid": "dev_9e3de486",
+    "collectedAt": "2026-05-14T23:48:21.000Z"
+  },
+  {
+    "title": "A Claude Code and Codex Skill for Deliberate Skill Development",
+    "content": "开发者 DrCatHicks 开源了一款 Claude Code / Codex 技能插件「learning-opportunities」，旨在将 AI 编程助手从单纯的代码生成工具转变为主动教学助手。当 AI 发现开发者使用了次优方案或可以学习新知识时，会主动提示并提供学习路径。项目基于 Agent Skills 机制实现，已在 HN 获得 193 分高关注，引发关于 AI 应该「替你做」还是「教你做」的广泛讨论。",
+    "quote": "AI 终于不是帮你抄作业了，改成给你布置作业了，感动吗？",
+    "source": "Hacker News",
+    "url": "https://github.com/DrCatHicks/learning-opportunities",
+    "published": "2026-05-15",
+    "uid": "dev_7bc7856e",
+    "collectedAt": "2026-05-14T23:48:21.000Z"
+  },
+  {
+    "title": "Claude AI recovers an 11-year-old BTC wallet holding $400K",
+    "content": "一位比特币交易者通过 Claude AI 成功恢复了丢失 11 年、价值 40 万美元的 BTC 钱包。他让 Claude 编写了一个密码破解脚本，尝试了 3.5 万亿个密码组合后，成功解密了旧钱包备份。这不是 AI 直接暴力破解，而是 AI 辅助设计了基于用户密码习惯的智能猜测策略，将看似不可能的任务变为现实。",
+    "quote": "AI 帮你找回 40 万刀，你给 AI 的回报是 $20/月的订阅费。",
+    "source": "Hacker News",
+    "url": "https://www.tomshardware.com/tech-industry/cryptocurrency/bitcoin-trader-recovers-usd400-000-using-claude-ai-after-losing-wallet-password-11-years-ago-bot-tried-3-5-trillion-passwords-before-decrypting-an-old-wallet-backup",
+    "published": "2026-05-15",
+    "uid": "dev_1d54d0c0",
+    "collectedAt": "2026-05-14T23:48:21.000Z"
+  },
+  {
+    "title": "Show HN: Nanci – CI written in plain Python, locally debuggable",
+    "content": "开发者发布了一个全新的 CI/CD 平台 Nanci，完全用 Python 编写，核心理念是「本地可调试」。与传统的 YAML 配置驱动 CI 不同，Nanci 用 Python 脚本定义流水线，开发者可以在本地直接运行和调试 CI 流程，告别「改 YAML → 推代码 → 等跑完 → 发现报错 → 再改」的痛苦循环。支持 GitHub/GitLab 集成和 Docker 执行环境。",
+    "quote": "用 Python 写 CI，终于不用在 YAML 地狱里和缩进搏斗了。",
+    "source": "Hacker News",
+    "url": "https://nanci.dev/",
+    "published": "2026-05-15",
+    "uid": "dev_5033760b",
+    "collectedAt": "2026-05-14T23:48:21.000Z"
+  },
+  {
+    "title": "Show HN: BlitzGraph – Supabase for graphs, designed for LLM agents",
+    "content": "BlitzGraph 是一个专为 LLM Agent 设计的图数据库服务，定位为「图数据库界的 Supabase」。提供开箱即用的托管图数据库，原生支持 OpenAI/Claude function calling 和 MCP 协议，让 AI Agent 可以直接查询和操作知识图谱。适用于构建有记忆的 Agent、RAG 知识增强、社交关系分析等场景，无需手动搭建 Neo4j 等基础设施。",
+    "quote": "Supabase for graphs——下次是不是该有人做「Supabase for Excel」了？",
+    "source": "Hacker News",
+    "url": "https://blitzgraph.com",
+    "published": "2026-05-15",
+    "uid": "dev_aba7e7da",
+    "collectedAt": "2026-05-14T23:48:21.000Z"
+  },
+  {
+    "title": "Show HN: Specdd – Spec-driven development as a Claude/Codex/Cursor skill",
+    "content": "Specdd 是一个规格驱动开发（SDD）工具，作为 Claude Code、OpenAI Codex 和 Cursor 的技能插件运行。开发者先编写规格说明文档，Specdd 会驱动 AI 按照规格逐步生成代码、测试和文档，确保实现与设计一致，而不是让 AI 自由发挥。项目旨在解决 Vibe Coding 中常见的「AI 写嗨了偏离需求」问题，为 AI 辅助开发带来工程纪律。",
+    "quote": "给 AI 戴上了规格说明的紧箍咒，从此 Vibe Coding 不跑偏。",
+    "source": "Hacker News",
+    "url": "https://github.com/unboundinnov/specdd",
+    "published": "2026-05-15",
+    "uid": "dev_d50bb8da",
+    "collectedAt": "2026-05-14T23:48:21.000Z"
+  },
+  {
+    "title": "Show HN: PlanBridge – open-source tool for precise feedback on coding agent plans",
+    "content": "ContextBridge 团队开源了 PlanBridge，一个专注于对 AI 编程 Agent 计划阶段进行精确反馈的 CLI 工具。它利用标准 Coding Agent Hooks 在 Agent 生成执行计划时插入人工审核环节，让开发者可以在代码生成前纠正方向性错误，避免 Agent 在错误路径上浪费大量 token 和时间。支持 Claude Code 和 Codex 的原生 Hook 机制。",
+    "quote": "在 AI 瞎写之前拦住它，比在它写完后骂娘高效 100 倍。",
+    "source": "Hacker News",
+    "url": "https://github.com/contextbridge/planbridge",
+    "published": "2026-05-15",
+    "uid": "dev_f56762d8",
+    "collectedAt": "2026-05-14T23:48:21.000Z"
+  }
+]
