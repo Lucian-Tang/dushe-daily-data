@@ -503,64 +503,154 @@
   ],
   "ai": [
     {
-      "title": "Introducing Claude for Small Business",
-      "content": "Anthropic 推出面向小企业的 Claude 套件，无缝集成 QuickBooks、PayPal、HubSpot、Canva、Docusign、Google Workspace、Microsoft 365 等工具，提供 15 个现成 agentic workflow，覆盖财务、薪酬、发票追收、营销活动等场景。用户授权后 Claude 自动执行，老板审批后生效。中小企业占美国 GDP 44%，Anthropic 希望通过这款产品弥补其与大企业在 AI 采用率上的鸿沟。",
-      "quote": "大企业早就用上定制AI了，中小企业还在用 Excel——现在 Anthropic 说别怕，Claude 来帮你加班。🔥",
-      "source": "Anthropic Blog / Hacker News",
-      "url": "https://www.anthropic.com/news/claude-for-small-business",
+      "title": "Teaching Language Models to Think in Code (ThinC)",
+      "content": "韩国高丽大学提出ThinC（Thinking in Code）框架，让代码本身扮演推理者而非自然语言调用的工具。模型仅需简短NL规划步骤，随后所有推理通过代码块和解释器输出完成。ThinC-4B在五个竞赛级数学基准上全面超越所有TIR基线，甚至超过了Qwen3-235B-A22B-Thinking——一个60倍于其参数量的模型，99.2%的最终答案根植于解释器输出。这意味着大参数不再是数学推理的唯一出路，代码即推理的范式可能是通往高效小模型的捷径。",
+      "quote": "4B吊打235B，参数再多不如代码写得溜，程序员狂喜。",
+      "source": "arXiv / HuggingFace",
+      "url": "https://huggingface.co/papers/2605.07237",
       "published": "2026-05-14",
-      "collectedAt": "2026-05-14T18:00:00",
-      "uid": "ai_190900db"
+      "uid": "ai_63feaa08"
     },
     {
-      "title": "Needle: We Distilled Gemini Tool Calling into a 26M Model",
-      "content": "开源项目 Needle 将 Gemini 3.1 蒸馏成一个仅 2600 万参数的 Simple Attention Network，在单次 function call 任务上击败 FunctionGemma-270M、Qwen-0.6B 等更大模型。权重完全开放，可在 Mac/PC 本地微调，生产环境吞吐量达 6000 tokens/s prefill。该研究探索极小 AI 在手机、手表、眼镜等消费设备上的可行性，代表了端侧 AI 的新方向。",
+      "title": "AlphaGRPO: Unlocking Self-Reflective Multimodal Generation via Decompositional Verifiable Reward",
+      "content": "将GRPO应用于统一多模态模型实现自我反思式图像生成。核心创新DVReward利用LLM将复杂用户请求分解为原子化可验证问题，再由通用MLLM评估提供可靠反馈。模型不仅能推理用户的隐含意图——比如\"给我一张适合冥想的海边图\"——还能自动诊断并修正生成错误，在GenEval、DPG-Bench、WISE等多个基准上显著提升，且无需单独cold-start阶段。多模态推理正在从\"能看懂\"进化到\"能想明白\"。",
+      "quote": "GRPO大法好，图像生成也学会自我反思了。",
+      "source": "arXiv / HuggingFace",
+      "url": "https://huggingface.co/papers/2605.12495",
+      "published": "2026-05-14",
+      "uid": "ai_740c11d1"
+    },
+    {
+      "title": "POISE: Your Language Model is Its Own Critic",
+      "content": "首尔大学提出POISE方法，利用策略模型内部隐藏状态作为价值估计器，彻底消除PPO中独立的critic模型——这通常是训练成本大头。通过轻量级probe从prompt和生成轨迹的隐藏状态中预测可验证奖励，并引入跨rollout构造保证梯度无偏。在Qwen3-4B和DeepSeek-R1-Distill-Qwen-1.5B上表现匹敌DAPO且计算量更少。RL大模型训练的\"减负运动\"愈演愈烈。",
+      "quote": "省掉critic就是省钱，POISE这波降本增效很实在。",
+      "source": "arXiv / HuggingFace",
+      "url": "https://huggingface.co/papers/2605.07579",
+      "published": "2026-05-14",
+      "uid": "ai_5a562029"
+    },
+    {
+      "title": "Efficient Pre-Training with Token Superposition",
+      "content": "Token-Superposition Training两阶段预训练方法：第一阶段将连续token平均为\"叠加\"嵌入并训练多热交叉熵损失预测下一批token的\"袋\"，第二阶段恢复标准next-token prediction。在10B激活参数MoE规模上达到2.5倍预训练时间缩减，同时提升HellaSwag、ARC和MMLU等下游基准。作者是bloc97（Bowen Peng）等，无需改架构或优化器，即插即用。对预算有限的团队来说，这可能是最实用的\"省钱秘籍\"。",
+      "quote": "训练时间砍半还不降精度，这波属于白嫖算力。",
+      "source": "arXiv / HuggingFace",
+      "url": "https://huggingface.co/papers/2605.06546",
+      "published": "2026-05-14",
+      "uid": "ai_0a272828"
+    },
+    {
+      "title": "Multi-Stream LLMs: Unblocking with Parallel Streams of Thoughts, Inputs and Outputs",
+      "content": "MPI-IS和Tübingen AI Center提出多流LLM架构，打破传统Chat模型单一计算流的瓶颈——你不能同时阅读和写作，不能边思考边行动。模型每个前向传播同时从多个输入流读取并在多个输出流生成token，彼此因果依赖。意味着AI可以同时看文档、写代码、思考下一步，彻底告别\"单线程大脑\"的尴尬。同时改善了安全性（不同角色信息隔离）和可监控性。",
+      "quote": "终于不用等AI想完了再写了，多线程大脑正式上线。",
+      "source": "arXiv / HuggingFace",
+      "url": "https://huggingface.co/papers/2605.12460",
+      "published": "2026-05-14",
+      "uid": "ai_1dbcade0"
+    },
+    {
+      "title": "Anthropic is launching Claude for Small Business",
+      "content": "Anthropic推出Claude for Small Business套餐，以一键开关方式接入Intuit Quickbooks、PayPal、DocuSign、HubSpot、Google Workspace和Microsoft 365等工具。Claude可以规划工资单、月底结账、运行销售活动、追讨发票。这是Anthropic从大企业客户（法律、金融）向SMB市场扩张的关键一步——证明Claude不仅会写合同，还会做账。",
+      "quote": "Claude开始给中小企业管账了，会计们该紧张了。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/929727/anthropic-is-launching-claude-for-small-business",
+      "published": "2026-05-14",
+      "uid": "ai_2ff130c3"
+    },
+    {
+      "title": "Mark Zuckerberg announces 'completely private' encrypted Meta AI chat",
+      "content": "扎克伯格宣布Meta AI上线Incognito Chat模式，采用端到端加密确保对话内容即使Meta自己也无法读取。Meta声称这是\"首个无服务器端日志存储的AI产品\"——竞品中Gemini保留临时聊天数据最长72小时、ChatGPT保留30天、Claude保留至少30天。正值ChatGPT日志被用于多起诉讼案（包括Tumbler Ridge枪击案和FSU枪击案）的敏感时期，隐私差异化策略或成AI聊天赛道新战场。",
+      "quote": "Meta玩隐私牌，不知道是真心还是被官司逼的。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/929791/meta-ai-incognito-chats",
+      "published": "2026-05-14",
+      "uid": "ai_4781ac0e"
+    },
+    {
+      "title": "Alexa is moving into Amazon.com — Alexa for Shopping replaces Rufus",
+      "content": "Amazon将Alexa Plus全面引入Amazon.com，取代此前推出的Rufus AI购物助手。用户在搜索框输入\"男士护肤有什么推荐\"之类的问题即可触发Alexa回答。支持设置价格提醒、自动比价、自动下单，还包含'Buy for Me'功能可在亚马逊以外网站代购，以及全年价格历史追踪。无需Alexa账户，面向全美亚马逊用户逐步开放。这是Amazon将AI全面植入购物体验的重要转折。",
+      "quote": "Rufus才上线多久就被Alexa取代，Amazon内部赛马真刺激。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/929457/amazon-announces-alexa-for-shopping-ai-assistant-rufus",
+      "published": "2026-05-14",
+      "uid": "ai_3b726b69"
+    },
+    {
+      "title": "Under the Hood of SKILL.md: Semantic Supply-chain Attacks on AI Agent Skill Registry",
+      "content": "系统揭示AI Agent技能注册表的语义供应链攻击风险。在发现阶段，短文本触发词可操纵嵌入检索实现86%配对胜率和80% Top-10曝光；在选择阶段，描述性偏见导致77.6%的agent选择恶意变体；在治理阶段，语义规避策略使36.5%-100%的恶意技能绕过审查。实验基于真实ClawHub技能库。随着Agent生态爆发式增长，Skill Registry将成为未来最重要的攻击面之一。",
+      "quote": "SKILL.md也能当攻击面，Agent生态的安全问题才刚浮出水面。",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2605.11418",
+      "published": "2026-05-14",
+      "uid": "ai_624a8eaf"
+    },
+    {
+      "title": "Musk v. Altman: Josh Achiam testifies — Musk wanted to 'race towards AGI'; Microsoft calls trial 'amateur city'",
+      "content": "Musk诉Altman案第三周庭审持续发酵，猛料不断。OpenAI首席未来学家Josh Achiam出庭作证，透露Musk早期想\"奔向AGI\"并对Google DeepMind的Demis Hassabis执念极深——Musk曾反复追问\"Demis Hassabis是坏人吗？\"。微软CEO Nadella一语道破：OpenAI 2023年董事会闹剧纯属\"业余城市\"（amateur city），强调微软只是旁观者。庭审还曝出Musk的\"我受够了\"邮件等硅谷内幕。 ## 📊 板块分布 | 板块 | 说明 | |------|------| | 🔬 前沿研究 | ThinC, AlphaGRPO, POISE, Token Superposition, Multi-Stream LLMs | | 🛠️ 开源/模型更新 | ThinC-4B 开源在即, AlphaGRPO 项目页已上线 | | 🏢 商业动态 | Claude for Small Business, Meta AI Incognito Chat, Alexa for Shopping | | 🔒 安全/治理 | SKILL.md 语义供应链攻击研究, Musk v. Altman 庭审 | | 🎯 焦点事件 | Musk v. Altman 庭审第三周, Amazon AI 购物助手换血 | ## 📋 总结 今日AI圈最大的技术焦点是 **ThinC以4B参数量碾压235B模型**——代码即推理的范式对AI数学推理研究产生深远冲击。**Token Superposition**的2.5倍预训练加速是注重实效的重要工作。商业层面三巨头同日发力：**Anthropic**切入中小企业市场、**Meta**押注隐私差异化（端到端加密AI聊天）、**Amazon**用Alexa全面替换Rufus。安全方面**SKILL.md供应链攻击**的研究给火爆的Agent生态敲响警钟。**Musk v. Altman案**第三周的\"Nadella业余城市\"评价和\"Musk对Hassabis的执念\"则为这场硅谷大戏增添了不少戏剧性。 *Lucia · 2026-05-14 · 嘴贱但懂你*",
+      "quote": "硅谷恩怨录第三周：Musk的嫉妒戒断反应、Nadella的冷嘲热讽。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/923518/musk-altman-trial-openai-demis-hassabis-google-deepmind",
+      "published": "2026-05-14",
+      "uid": "ai_382b295d"
+    },
+    {
+      "title": "Anthropic 发布 Claude for Small Business，瞄准中小企业AI落地",
+      "content": "Anthropic 推出面向小企业的 Claude 套件，无缝集成 QuickBooks、PayPal、HubSpot、Canva、Docusign、Google Workspace、Microsoft 365 等工具，提供 15 个现成 agentic workflow，覆盖财务、薪酬、发票追收、营销活动等场景。用户授权后 Claude 自动执行，老板审批后生效。中小企业占美国 GDP 44%，Anthropic 希望通过这款产品弥补其与大企业在 AI 采用率上的鸿沟。",
+      "quote": "大企业早就用上定制AI了，中小企业还在用 Excel——现在 Anthropic 说\"别怕，Claude 来帮你加班\"。🔥",
+      "source": "Hacker News / Anthropic Blog",
+      "url": "https://www.anthropic.com/news/claude-for-small-business",
+      "published": "2026-05-14",
+      "collectedAt": "2026-05-14T19:23:03.504018",
+      "uid": "ai_a0b7dcfc"
+    },
+    {
+      "title": "26M 参数模型击败 FunctionGemma：Needle 把 function calling 蒸馏到极致",
+      "content": "开源项目 Needle 将 Gemini 3.1 蒸馏成一个仅 2600 万参数的 Simple Attention Network，在单次 function call 任务上击败 FunctionGemma-270M、Qwen-0.6B 等更大模型。权重完全开放，可在 Mac/PC 本地微调，生产环境吞吐量达 6000 tokens/s prefill。该研究探索\"极小 AI\"在手机、手表、眼镜等消费设备上的可行性，代表了端侧 AI 的新方向。",
       "quote": "把大模型压缩到能跑在手表上，Google 看了会沉默，Apple 看了会流泪。😂",
       "source": "GitHub / Hacker News",
       "url": "https://github.com/cactus-compute/needle",
       "published": "2026-05-14",
-      "collectedAt": "2026-05-14T18:00:00",
-      "uid": "ai_e4b03fda"
+      "collectedAt": "2026-05-14T19:23:03.504049",
+      "uid": "ai_57e6dfe0"
     },
     {
-      "title": "Quantifying Sensitivity for Tree Ensembles: A symbolic and compositional approach",
+      "title": "arXiv 新研究：决策树集成模型的敏感性量化方法 XCount",
       "content": "研究人员提出 XCount 算法，通过代数决策图（ADD）编码和可组合子问题分解，高效量化决策树集成（DTE）模型对输入特征微小变化的敏感程度。该方法在 certified error 和 confidence bound 内运行，实验显示相比现有模型计数器实现显著加速。决策树集成广泛用于安全关键领域，此研究对 AI 验证和可解释性具有重要价值。",
-      "quote": "安全关键的 AI 最怕的就是我不知道这个输入会让我分错，XCount 终于能量化这件事了。🔍",
+      "quote": "安全关键的 AI 最怕的就是\"我不知道这个输入会让我分错\"，XCount 终于能量化这件事了。🔍",
       "source": "arXiv (cs.AI)",
       "url": "https://arxiv.org/abs/2605.13830",
       "published": "2026-05-13",
-      "collectedAt": "2026-05-14T18:00:00",
-      "uid": "ai_1d8a3796"
+      "collectedAt": "2026-05-14T19:23:03.504068",
+      "uid": "ai_a1864c35"
     },
     {
-      "title": "Senses Wide Shut: A Representation-Action Gap in Omnimodal LLMs",
-      "content": "新研究 IMAVB 发现，当前 Omnimodal LLM（包括 Gemini 3.1 Pro）在视觉和音频输入与文本描述矛盾时，其隐藏状态能检测到这种不一致，但模型行为上几乎不会拒绝错误前提——即知道但不说。研究提出 PGLA 方法，将编码层的不匹配信号重新注入解码过程，改善拒绝行为。音频模态的 grounding 弱于视觉模态，表明瓶颈在翻译而非感知。",
-      "quote": "眼睛和耳朵都告诉你错了，嘴巴还是坚持说对的呢——这不就是 AI 版的睁眼说瞎话。🤦",
+      "title": "Omnimodal LLM 存在\"表征-行动鸿沟\"：听到不一致的内容却照说不误",
+      "content": "新研究 IMAVB 发现，当前 Omnimodal LLM（包括 Gemini 3.1 Pro）在视觉和音频输入与文本描述矛盾时，其隐藏状态能检测到这种不一致，但模型行为上几乎不会拒绝错误前提——即\"知道但不说\"。研究提出_probe-guided logit adjustment_（PGLA）方法，将编码层的不匹配信号重新注入解码过程，改善拒绝行为。音频模态的 grounding 弱于视觉模态，表明瓶颈在\"翻译\"而非感知。",
+      "quote": "眼睛和耳朵都告诉你错了，嘴巴还是坚持说\"对的呢\"——这不就是 AI 版的睁眼说瞎话。🤦",
       "source": "arXiv (cs.AI / cs.CL)",
       "url": "https://arxiv.org/abs/2605.13737",
       "published": "2026-05-13",
-      "collectedAt": "2026-05-14T18:00:00",
-      "uid": "ai_6558b3ea"
+      "collectedAt": "2026-05-14T19:23:03.504084",
+      "uid": "ai_1a893a35"
     },
     {
-      "title": "Arena AI Model ELO History",
-      "content": "开源项目 AI Arena History 每天自动抓取 LMSYS Arena 排行榜数据，追踪各厂商旗舰模型的 ELO 分数变化，揭示模型发布后的质量退化（如过度审核、量化降级、行为退化）。消费者界面往往添加了系统 prompt 和安全过滤器，与原始 API 表现存在差异，该工具用图表让这些看不见的变化无所遁形。",
+      "title": "AI Arena ELO 历史追踪工具上线，揭露厂商\"静默 nerf\"行为",
+      "content": "开源项目 AI Arena History 每天自动抓取 LMSYS Arena 排行榜数据，追踪各厂商旗舰模型的 ELO 分数变化，揭示模型发布后的质量退化（如过度审核、量化降级、行为退化）。消费者界面（ChatGPT.com 等）往往添加了系统 prompt 和安全过滤器，与原始 API 表现存在差异，该工具用图表让这些\"看不见的变化\"无所遁形。",
       "quote": "厂商悄悄把模型削弱的秘密，被一个开源项目扒得一干二净——这才是真正的 AI 打假博主。📊",
       "source": "Hacker News",
       "url": "https://mayerwin.github.io/AI-Arena-History/",
       "published": "2026-05-14",
-      "collectedAt": "2026-05-14T18:00:00",
-      "uid": "ai_06fff5bc"
+      "collectedAt": "2026-05-14T19:23:03.504102",
+      "uid": "ai_8eaecaff"
     },
     {
-      "title": "How to Interpret Agent Behavior",
-      "content": "研究团队提出 ACT*ONOMY，一个三层层级结构（10 actions / 46 subactions / 120 leaf categories）共 176 个行为类别的分类系统，用于自动分析 AI Agent 的运行时轨迹。基于 Grounded Theory 方法开发，配套开源分析 pipeline，可用于检测 Agent 失败模式、比较不同 Agent 的行为画像。研究团队称该框架为共享词汇表，帮助研究者和终端用户更一致地理解和监督 Agent 行为。",
+      "title": "ACT*ONOMY：首个 Agent 运行时行为分类学，176 个类别描述 Claude Code/Codex 在干什么",
+      "content": "研究团队提出 ACT*ONOMY，一个三层层级结构（10 actions / 46 subactions / 120 leaf categories）共 176 个行为类别的分类系统，用于自动分析和比较 AI Agent 的运行时轨迹。研究基于 Grounded Theory 方法，配套开源分析 pipeline，可用于检测 Agent 失败模式、比较不同 Agent 的行为画像。研究团队称该框架为\"共享词汇表\"，帮助研究者和终端用户更一致地理解和监督 Agent 行为。 *本报告由 Lucia 自动采集生成 | 数据来源：arXiv / Hacker News / HuggingFace / Anthropic*",
       "quote": "Claude Code 跑了一天一夜，到底在干啥——现在终于有字典可以查了。📖",
       "source": "arXiv (cs.AI)",
       "url": "https://arxiv.org/abs/2605.13625",
       "published": "2026-05-13",
-      "collectedAt": "2026-05-14T18:00:00",
-      "uid": "ai_360ea9be"
+      "collectedAt": "2026-05-14T19:23:03.504119",
+      "uid": "ai_e2ffa88d"
     },
     {
       "title": "🐑 Shepherd：Meta-Agent 运行框架，用 Lean 证明器给 Agent 环境做版本控制",

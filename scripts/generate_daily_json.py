@@ -29,21 +29,25 @@ def clean_url(s):
 
 def parse_dev(text):
     items = []
-    for part in re.split(r'\n##\s+\d+\.\s+', text)[1:]:
+    for part in re.split(r'\n#{2,3}\s+\d+\.\s+', text)[1:]:
         lines = part.strip().split('\n')
         title = lines[0].strip() if lines else ''
         if not title: continue
-        src = url = quote = ''
+        src = url = quote = content = ''
         for l in lines[1:]:
             s = l.strip()
-            if s == '---': continue
-            m = re.match(r'-\s*\*\*来源[：:]\s*(.+)', s)
+            if s == '---' or not s: continue
+            m = re.match(r'[- ]*\*\*来源[：:]\s*(.+)', s)
             if m: src = clean_source(m.group(1)); continue
-            m = re.match(r'-\s*\*\*链接[：:]\s*(.+)', s)
+            m = re.match(r'[- ]*\*\*链接[：:]\s*(.+)', s)
             if m: url = clean_url(m.group(1)); continue
-            m = re.match(r'-\s*\*\*毒舌[^：:]*[：:]\s*(.+)', s)
+            m = re.match(r'[- ]*\*\*毒舌[^：:]*[：:]\s*(.+)', s)
             if m: quote = m.group(1).strip(); continue
-        items.append(dict(title=title, content='', quote=quote, source=src, url=url))
+            m = re.match(r'[- ]*\*\*内容[：:]\s*(.+)', s)
+            if m: content = m.group(1).strip(); continue
+            m = re.match(r'[- ]*\*\*标题[：:]\s*(.+)', s)
+            if m: title = m.group(1).strip(); continue
+        items.append(dict(title=title, content=content, quote=quote, source=src, url=url))
     return items
 
 def parse_ai(text):
@@ -123,37 +127,34 @@ def parse_design(text):
     return items
 
 def parse_startup(text):
-    """## Emoji Title | **N. Title** | Content | 来源：Source | url"""
+    """Parse startup MD with format: ### Title | **来源：** | **链接：** | > *毒舌点评：*"""
     items = []
-    # Find all bold-numbered titles: **N. Title**
-    for part in re.split(r'\n\*\*\d+\.\s+', text)[1:]:
+    for part in re.split(r'\n###\s+', text)[1:]:
         lines = part.strip().split('\n')
         title = lines[0].strip() if lines else ''
-        if title.endswith('**'): title = title[:-2]
         if not title: continue
-        src = url = content = ''
+        src = url = quote = content = ''
         for l in lines[1:]:
             s = l.strip()
             if not s or s.startswith('---') or s.startswith('##'): continue
-            # 来源：Source | URL or 来源：Source\nURL
-            m = re.search(r'来源[：:]\s*(.+?)(?:\s*\|\s*|\s*\n\s*)(https?://\S+)', s + '\n')
-            if not m:
-                m = re.search(r'来源[：:]\s*(.+)', s)
+            m = re.match(r'\*\*来源[：:]\s*(.+)', s)
+            if m: src = clean_source(m.group(1)); continue
+            m = re.search(r'\*\*链接[\w]*[：:]\s*(.+)', s)
             if m:
-                if not src: src = clean_source(m.group(1)) if m.lastindex >= 1 else '?'
-                if not url and m.lastindex >= 2:
-                    url_by_match = m.group(2).strip()
-                    # clean up if there's trailing content
-                    url_by_match = re.sub(r'[\s\)]+$', '', url_by_match)
-                    url = url_by_match
+                val = m.group(1).strip()
+                url_m = re.search(r'(https?://[^\s\)\]]+)', val)
+                if url_m: url = clean_url(url_m.group(1))
+                if not url: url = clean_url(val)
                 continue
-            # URL
-            m = re.search(r'(https?://[^\s\)\]]+)', s)
-            if m and not url: url = m.group(1).strip().rstrip(')')
-            # Content
-            if len(s) > 15:
+            if s.startswith('> '):
+                content += s[2:].strip() + ' '
+                continue
+            m = re.match(r'.*毒舌[^：:]*[：:]\s*(.+)', s)
+            if m: quote = m.group(1).strip(); continue
+            # General content (not metadata)
+            if len(s) > 10 and not s.startswith('**'):
                 content += s + ' '
-        items.append(dict(title=title, content=content.strip()[:500], quote='', source=src, url=url))
+        items.append(dict(title=title, content=content.strip(), quote=quote, source=src, url=url))
     return items
 
 def parse_industry(text):
