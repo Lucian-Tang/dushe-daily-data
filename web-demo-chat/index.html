@@ -153,6 +153,51 @@ body {
   background: rgba(233,69,96,0.15);
   color: var(--accent-glow);
 }
+.chip-sm {
+  padding: 6px 14px;
+  font-size: 12.5px;
+  border-radius: 16px;
+}
+
+/* Bottom switch bar inside AI reply */
+.bottom-switch {
+  margin-top: 14px;
+  border-top: 1px solid var(--divider);
+  padding-top: 10px;
+}
+.bottom-switch .switch-label {
+  font-size: 12px;
+  color: var(--text-dim);
+  margin-bottom: 8px;
+}
+.bottom-switch .switch-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.load-more-wrap {
+  margin-top: 10px;
+  text-align: center;
+}
+.btn-load-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 22px;
+  border-radius: 20px;
+  border: 1px dashed var(--chip-border);
+  background: var(--chip-bg);
+  color: var(--text-dim);
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-load-more:hover {
+  border-color: var(--accent);
+  color: var(--accent-glow);
+  background: rgba(233,69,96,0.06);
+}
 
 /* Highlight item inside AI message (NOT a card - just text + button) */
 .highlight {
@@ -534,19 +579,36 @@ function getSummaryText(key) {
   return intros[key] || `${name}方向今天有 ${count}条精选。给你挑了几个重点👇`;
 }
 
-function buildHighlights(key) {
-  const items = allData[key] || [];
-  // Pick top items (prioritize ones with good quotes)
-  const sorted = [...items].sort((a, b) => {
-    const aScore = (a.quote && a.quote.length > 5 ? 2 : 0) + (a.content.length > 30 ? 1 : 0);
-    const bScore = (b.quote && b.quote.length > 5 ? 2 : 0) + (b.content.length > 30 ? 1 : 0);
-    return bScore - aScore;
-  });
-  const highlights = sorted.slice(0, 8);
+// Cached sorted items per key to avoid re-sorting on load-more
+const _sortedCache = {};
+function getSortedItems(key) {
+  if (!_sortedCache[key]) {
+    const items = allData[key] || [];
+    _sortedCache[key] = [...items].sort((a, b) => {
+      const aScore = (a.quote && a.quote.length > 5 ? 2 : 0) + (a.content.length > 30 ? 1 : 0);
+      const bScore = (b.quote && b.quote.length > 5 ? 2 : 0) + (b.content.length > 30 ? 1 : 0);
+      return bScore - aScore;
+    });
+  }
+  return _sortedCache[key];
+}
 
-  let html = `<p>${getSummaryText(key)}</p>`;
+function buildHighlights(key, offset = 0, limit = 8) {
+  const sorted = getSortedItems(key);
+  const total = sorted.length;
+  const highlights = sorted.slice(offset, offset + limit);
+  const remaining = total - offset - limit;
+  const isFirstPage = offset === 0;
+
+  let html = '';
+  if (isFirstPage) {
+    html += `<p>${getSummaryText(key)}</p>`;
+  } else {
+    html += `<p>📌 继续看「${SECTION_EMOJI[key]} ${SECTION_NAMES[key]}」方向（第${offset + 1}-${offset + highlights.length}条）👇</p>`;
+  }
 
   highlights.forEach((item, i) => {
+    const globalIdx = offset + i;
     const title = item.title.replace(/^\*+\s*/, '').trim();
     const desc = item.content ? item.content.substring(0, 100) + (item.content.length > 100 ? '…' : '') : '';
     html += `
@@ -554,13 +616,56 @@ function buildHighlights(key) {
         <div class="hl-title">📌 ${title}</div>
         <div class="hl-desc">${desc}</div>
         ${item.quote ? `<div class="hl-insight">💡 ${item.quote}</div>` : ''}
-        <button class="btn-detail" onclick="showDetail('${key}', ${i})">💡 查看详情</button>
+        <button class="btn-detail" onclick="showDetail('${key}', ${globalIdx})">💡 查看详情</button>
       </div>
     `;
   });
 
-  html += `<p style="margin-top:12px;font-size:13px;color:var(--text-dim);">${items.length > 8 ? `还有${items.length - 8}条没列出来，感兴趣的话跟我说～` : '以上就是这个方向今天的精华啦，有感兴趣的吗？'}</p>`;
+  // Bottom category switch (always show)
+  html += buildBottomSwitch(key);
+
+  // Load more button if remaining
+  if (remaining > 0) {
+    html += `<div class="load-more-wrap">
+      <button class="btn-load-more" onclick="loadMore('${key}', ${offset + limit})">
+        📌 加载更多「${SECTION_NAMES[key]}」方向内容（还剩${remaining}条）
+      </button>
+    </div>`;
+  }
+
   return html;
+}
+
+function buildBottomSwitch(currentKey) {
+  const otherKeys = Object.keys(SECTION_NAMES).filter(k => k !== currentKey);
+  const chips = otherKeys.map(key =>
+    `<span class="chip chip-sm" onclick="selectCategory('${key}')">${SECTION_EMOJI[key]} ${SECTION_NAMES[key]}</span>`
+  ).join('');
+
+  // Always show 'all' if not already viewing all
+  const allChip = currentKey !== 'all'
+    ? `<span class="chip chip-sm" onclick="selectCategory('all')">📋 全部</span>`
+    : '';
+
+  return `
+    <div class="bottom-switch">
+      <div class="switch-label">▶ 还想看看其他方向？</div>
+      <div class="switch-chips">
+        ${chips}${allChip}
+      </div>
+    </div>
+  `;
+}
+
+async function loadMore(key, offset) {
+  if (!loaded) return;
+  addTyping();
+  await delay(600 + Math.random() * 400);
+  removeTyping();
+  const html = buildHighlights(key, offset, 8);
+  addMsg('ai', html);
+  // Scroll to this new message
+  setTimeout(scrollToBottom, 100);
 }
 
 function buildAllSummary() {
@@ -572,17 +677,14 @@ function buildAllSummary() {
     html += `<p style="margin:8px 0;">${SECTION_EMOJI[key]} <strong>${name}</strong>：${items.length}条精选</p>`;
   });
 
-  html += `<p style="margin-top:10px;font-size:13px;color:var(--text-dim);">点击上方按钮选择具体方向，我给你展开讲讲～</p>`;
+  // Bottom switch (show all individual categories)
+  html += buildBottomSwitch('all');
   return html;
 }
 
 // ── DETAIL MODAL ──
 function showDetail(key, index) {
-  const items = [...(allData[key] || [])].sort((a, b) => {
-    const aScore = (a.quote && a.quote.length > 5 ? 2 : 0) + (a.content.length > 30 ? 1 : 0);
-    const bScore = (b.quote && b.quote.length > 5 ? 2 : 0) + (b.content.length > 30 ? 1 : 0);
-    return bScore - aScore;
-  });
+  const items = getSortedItems(key);
   const item = items[index];
   if (!item) return;
 
@@ -695,6 +797,9 @@ async function init() {
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
     allData = await resp.json();
     loaded = true;
+
+    // Pre-populate sort cache
+    Object.keys(allData).forEach(k => getSortedItems(k));
 
     // Remove loading message
     chatEl.innerHTML = '';
