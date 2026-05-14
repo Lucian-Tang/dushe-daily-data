@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>有数Feed — 每日科技快讯</title>
+<style>
+/* ========== Reset & Variables ========== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --green: #07c160;
+  --green-dim: #05a050;
+  --green-glow: rgba(7, 193, 96, 0.15);
+  --bg: #0d1117;
+  --bg-card: #161b22;
+  --bg-card-hover: #1c2330;
+  --border: #30363d;
+  --text: #c9d1d9;
+  --text-dim: #8b949e;
+  --text-bright: #f0f6fc;
+  --quote-bg: rgba(7, 193, 96, 0.06);
+  --quote-border: #07c160;
+  --tag-bg: rgba(7, 193, 96, 0.12);
+  --tag-text: #07c160;
+  --shadow: 0 1px 3px rgba(0,0,0,0.3);
+  --radius: 12px;
+  --radius-sm: 8px;
+  --font-mono: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+}
+
+/* ========== Base ========== */
+html { font-size: 16px; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--green); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ========== Header ========== */
+.header {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(13, 17, 23, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 12px 16px 0;
+}
+
+.header-top {
+  display: flex; align-items: center; justify-content: space-between;
+  padding-bottom: 12px;
+}
+
+.logo {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 1.15rem; font-weight: 700; color: var(--text-bright);
+  letter-spacing: -0.3px;
+}
+
+.logo-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 8px var(--green);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 6px var(--green); }
+  50% { box-shadow: 0 0 14px var(--green), 0 0 24px rgba(7,193,96,0.3); }
+}
+
+.header-meta {
+  display: flex; align-items: center; gap: 14px;
+  font-size: 0.78rem; color: var(--text-dim);
+}
+
+.meta-item {
+  display: flex; align-items: center; gap: 4px;
+}
+
+.meta-value { color: var(--green); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+/* ========== Tabs ========== */
+.tabs {
+  display: flex; gap: 0; overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.tabs::-webkit-scrollbar { display: none; }
+
+.tab {
+  flex-shrink: 0;
+  padding: 10px 20px;
+  font-size: 0.88rem; font-weight: 500;
+  color: var(--text-dim);
+  background: none; border: none; cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.tab:hover { color: var(--text); }
+.tab.active {
+  color: var(--green); border-bottom-color: var(--green); font-weight: 600;
+}
+
+.tab-count {
+  display: inline-block;
+  margin-left: 4px;
+  font-size: 0.7rem;
+  padding: 1px 6px;
+  border-radius: 10px;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  font-weight: 500;
+}
+.tab.active .tab-count { background: var(--green); color: #fff; }
+
+/* ========== Main Content ========== */
+.main { max-width: 720px; margin: 0 auto; padding: 16px; }
+
+/* ========== Date Section ========== */
+.date-section { margin-bottom: 20px; }
+
+.date-heading {
+  font-size: 0.8rem; font-weight: 600; color: var(--text-dim);
+  text-transform: uppercase; letter-spacing: 0.5px;
+  padding: 8px 4px; margin-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; gap: 8px;
+}
+.date-heading::before {
+  content: '';
+  width: 4px; height: 14px; border-radius: 2px;
+  background: var(--green);
+}
+
+/* ========== Card ========== */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  position: relative;
+}
+
+.card:hover {
+  background: var(--bg-card-hover);
+  border-color: #484f58;
+}
+
+.card:active { transform: scale(0.995); }
+
+.card-header {
+  display: flex; align-items: flex-start; justify-content: space-between;
+  gap: 10px; margin-bottom: 8px;
+}
+
+.card-title {
+  font-size: 0.95rem; font-weight: 600; color: var(--text-bright);
+  line-height: 1.4;
+  flex: 1;
+}
+
+.card-source {
+  flex-shrink: 0;
+  font-size: 0.7rem; font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  white-space: nowrap;
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-body {
+  font-size: 0.85rem; color: var(--text-dim);
+  line-height: 1.55;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.card-quote {
+  font-size: 0.82rem;
+  color: var(--green);
+  line-height: 1.5;
+  padding: 8px 12px;
+  background: var(--quote-bg);
+  border-left: 3px solid var(--quote-border);
+  border-radius: 0 6px 6px 0;
+  font-style: italic;
+  display: flex; align-items: flex-start; gap: 6px;
+}
+
+.quote-icon {
+  flex-shrink: 0;
+  font-style: normal;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.card-footer {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-top: 10px;
+  font-size: 0.72rem; color: var(--text-dim);
+}
+
+.card-link-hint {
+  display: flex; align-items: center; gap: 4px;
+  font-size: 0.7rem; color: var(--text-dim);
+  opacity: 0.6; transition: opacity 0.15s;
+}
+.card:hover .card-link-hint { opacity: 1; }
+
+/* ========== States ========== */
+.state-message {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: 60px 20px; text-align: center; color: var(--text-dim);
+}
+
+.loader {
+  width: 28px; height: 28px;
+  border: 3px solid var(--border);
+  border-top-color: var(--green);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.state-icon { font-size: 2.5rem; margin-bottom: 12px; }
+
+.state-message .retry-btn {
+  margin-top: 16px;
+  padding: 8px 20px;
+  background: var(--green);
+  color: #fff; border: none; border-radius: 20px;
+  font-size: 0.85rem; cursor: pointer;
+  font-weight: 500;
+}
+.retry-btn:hover { background: var(--green-dim); }
+
+.empty-state {
+  display: flex; flex-direction: column; align-items: center;
+  padding: 48px 20px; color: var(--text-dim);
+  text-align: center;
+}
+
+/* ========== Footer ========== */
+.footer {
+  text-align: center; padding: 32px 16px;
+  font-size: 0.75rem; color: var(--text-dim);
+  border-top: 1px solid var(--border);
+  margin-top: 20px;
+}
+.footer .logo-text { color: var(--green); font-weight: 600; }
+
+/* ========== Responsive ========== */
+@media (max-width: 480px) {
+  .header { padding: 10px 12px 0; }
+  .main { padding: 12px; }
+  .card { padding: 14px; margin-bottom: 8px; }
+  .card-title { font-size: 0.9rem; }
+  .card-body { font-size: 0.82rem; -webkit-line-clamp: 2; }
+  .card-quote { font-size: 0.78rem; }
+  .tab { padding: 8px 14px; font-size: 0.82rem; }
+}
+
+@media (min-width: 768px) {
+  .card-body { -webkit-line-clamp: 3; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="header">
+  <div class="header-top">
+    <div class="logo">
+      <span class="logo-dot"></span>
+      <span>有数Feed</span>
+    </div>
+    <div class="header-meta" id="headerMeta">
+      <span class="meta-item">📊 <span class="meta-value" id="totalCount">--</span> 条</span>
+      <span class="meta-item">🕐 <span class="meta-value" id="updateTime">加载中...</span></span>
+    </div>
+  </div>
+
+  <nav class="tabs" id="tabNav">
+    <button class="tab active" data-tab="industry">
+      行业<span class="tab-count" id="count-industry">0</span>
+    </button>
+    <button class="tab" data-tab="dev">
+      开发<span class="tab-count" id="count-dev">0</span>
+    </button>
+    <button class="tab" data-tab="ai">
+      AI<span class="tab-count" id="count-ai">0</span>
+    </button>
+    <button class="tab" data-tab="startup">
+      创业<span class="tab-count" id="count-startup">0</span>
+    </button>
+    <button class="tab" data-tab="design">
+      设计<span class="tab-count" id="count-design">0</span>
+    </button>
+  </nav>
+</header>
+
+<!-- ===== Main ===== -->
+<main class="main" id="mainContent">
+  <div class="state-message">
+    <div class="loader"></div>
+    <div>正在加载数据...</div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div><span class="logo-text">有数Feed</span> — 每日科技快讯 · Demo</div>
+  <div style="margin-top:4px">v1.0 · Powered by dushe-daily-data</div>
+</footer>
+
+<script>
+/* ========== Constants ========== */
+const CDN_BASE = 'https://lucian-tang.github.io/dushe-daily-data';
+const CATEGORIES = ['industry', 'dev', 'ai', 'startup', 'design'];
+const CAT_LABELS = { industry: '行业', dev: '开发', ai: 'AI', startup: '创业', design: '设计' };
+const CAT_ICONS = { industry: '🏭', dev: '💻', ai: '🤖', startup: '🚀', design: '🎨' };
+
+let allData = {};
+let currentTab = 'industry';
+
+/* ========== DOM ========== */
+const $ = (s) => document.querySelector(s);
+const $$ = (s) => document.querySelectorAll(s);
+
+/* ========== Data Fetching ========== */
+async function fetchJSON(url) {
+  const resp = await fetch(url);
+  if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+  return resp.json();
+}
+
+function formatDate(dateStr) {
+  if (!dateStr) return '';
+  const d = new Date(dateStr + 'T00:00:00+08:00');
+  if (isNaN(d.getTime())) return dateStr;
+  return `${d.getFullYear()}/${d.getMonth()+1}/${d.getDate()}`;
+}
+
+/**
+ * Try to fetch the combined JSON for a given date string (YYYYMMDD).
+ */
+async function tryFetchCombined(dateStr) {
+  const url = `${CDN_BASE}/combined_3days_${dateStr}.json`;
+  try {
+    const data = await fetchJSON(url);
+    return { data, date: dateStr };
+  } catch { return null; }
+}
+
+/**
+ * Generate YYYYMMDD for a Date object
+ */
+function toDateKey(d) {
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${y}${m}${day}`;
+}
+
+async function loadData() {
+  let indexData = null;
+  let combinedData = null;
+
+  // Step 1: Fetch index.json for metadata
+  try {
+    indexData = await fetchJSON(`${CDN_BASE}/index.json`);
+    if (indexData.updated) {
+      const d = new Date(indexData.updated);
+      if (!isNaN(d.getTime())) {
+        $('#updateTime').textContent =
+          `${String(d.getMonth()+1).padStart(2,'0')}/${String(d.getDate()).padStart(2,'0')} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
+      }
+    }
+  } catch { /* non-fatal */ }
+
+  // Step 2: Try fetching combined JSON — try today, then yesterday, then 2 days ago
+  const now = new Date();
+  const dates = [toDateKey(now)];
+  for (let i = 1; i <= 3; i++) {
+    const d = new Date(now);
+    d.setDate(d.getDate() - i);
+    dates.push(toDateKey(d));
+  }
+
+  for (const d of dates) {
+    const result = await tryFetchCombined(d);
+    if (result) {
+      combinedData = result.data;
+      if (!indexData) {
+        // use the combined fetch date as update time fallback
+        $('#updateTime').textContent =
+          `${d.slice(4,6)}/${d.slice(6,8)}`;
+      }
+      break;
+    }
+  }
+
+  if (!combinedData) {
+    throw new Error('暂无数据，请稍后再试');
+  }
+
+  return combinedData;
+}
+
+/* ========== Date Grouping ========== */
+function getDateLabel(published) {
+  if (!published) return '更早';
+  const now = new Date();
+  const pub = new Date(published + 'T00:00:00+08:00');
+  if (isNaN(pub.getTime())) return '更早';
+
+  const nowStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const pubStart = new Date(pub.getFullYear(), pub.getMonth(), pub.getDate());
+  const diffDays = Math.round((nowStart - pubStart) / (1000 * 60 * 60 * 24));
+
+  if (diffDays === 0) return '今天';
+  if (diffDays === 1) return '昨天';
+  return formatDate(published) || '更早';
+}
+
+function groupByDate(items) {
+  const groups = {};
+  for (const item of items) {
+    const label = getDateLabel(item.published);
+    if (!groups[label]) groups[label] = [];
+    groups[label].push(item);
+  }
+  // Sort: 今天, 昨天, then chronological descending
+  const order = ['今天', '昨天'];
+  const sortedKeys = Object.keys(groups).sort((a, b) => {
+    const ai = order.indexOf(a), bi = order.indexOf(b);
+    if (ai !== -1 && bi !== -1) return ai - bi;
+    if (ai !== -1) return -1;
+    if (bi !== -1) return 1;
+    // Both are date strings, sort descending
+    return b.localeCompare(a);
+  });
+  return sortedKeys.map(k => ({ label: k, items: groups[k] }));
+}
+
+/* ========== Rendering ========== */
+function renderCard(item) {
+  const url = item.url || '#';
+  const source = item.source || '未知';
+  const title = item.title || '无标题';
+  const content = item.content || '';
+  const quote = item.quote || '';
+  const uid = item.uid || '';
+
+  return `
+    <article class="card" data-uid="${uid}" onclick="window.open('${url.replace(/'/g, "\\'")}', '_blank')">
+      <div class="card-header">
+        <div class="card-title">${escHtml(title)}</div>
+        <span class="card-source">${escHtml(source)}</span>
+      </div>
+      ${content ? `<div class="card-body">${escHtml(content)}</div>` : ''}
+      ${quote ? `
+      <div class="card-quote">
+        <span class="quote-icon">💬</span>
+        <span>${escHtml(quote)}</span>
+      </div>` : ''}
+      <div class="card-footer">
+        <span>${item.published ? formatDate(item.published) : ''}</span>
+        <span class="card-link-hint">🔗 阅读原文</span>
+      </div>
+    </article>
+  `;
+}
+
+function escHtml(str) {
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+function renderTab(tabKey) {
+  const items = allData[tabKey] || [];
+  const groups = groupByDate(items);
+  const container = $('main#mainContent');
+
+  if (items.length === 0) {
+    container.innerHTML = `
+      <div class="empty-state">
+        <div class="state-icon">📭</div>
+        <div>${CAT_LABELS[tabKey]} 板块暂无数据</div>
+      </div>`;
+    return;
+  }
+
+  let html = '';
+  for (const group of groups) {
+    html += `<section class="date-section">`;
+    html += `<div class="date-heading">${CAT_ICONS[tabKey]} ${group.label} · ${group.items.length} 条</div>`;
+    for (const item of group.items) {
+      html += renderCard(item);
+    }
+    html += `</section>`;
+  }
+  container.innerHTML = html;
+}
+
+function updateTabCounts() {
+  let total = 0;
+  for (const cat of CATEGORIES) {
+    const count = (allData[cat] || []).length;
+    total += count;
+    const el = $(`#count-${cat}`);
+    if (el) el.textContent = count;
+  }
+  const totalEl = $('#totalCount');
+  if (totalEl) totalEl.textContent = total;
+}
+
+/* ========== Tab Switching ========== */
+function switchTab(tabKey) {
+  currentTab = tabKey;
+  // Update active tab
+  $$('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tabKey));
+  renderTab(tabKey);
+  // Scroll to top
+  $('main#mainContent').scrollIntoView({ behavior: 'smooth' });
+}
+
+/* ========== Init ========== */
+async function init() {
+  try {
+    allData = await loadData();
+    updateTabCounts();
+    renderTab(currentTab);
+
+    // Bind tab clicks
+    $$('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        const key = tab.dataset.tab;
+        if (key && key !== currentTab) switchTab(key);
+      });
+    });
+
+  } catch (err) {
+    $('main#mainContent').innerHTML = `
+      <div class="state-message">
+        <div class="state-icon">😵</div>
+        <div style="margin-bottom:4px;font-weight:600">数据加载失败</div>
+        <div style="font-size:0.82rem;color:var(--text-dim)">${escHtml(err.message)}</div>
+        <button class="retry-btn" onclick="init()">重试</button>
+      </div>`;
+  }
+}
+
+init();
+</script>
+</body>
+</html>
