@@ -359,8 +359,113 @@ a:hover { text-decoration: underline; }
 }
 .footer .logo-text { color: var(--green); font-weight: 600; }
 
+/* ========== Back to Top ========== */
+.back-to-top {
+  position: fixed; bottom: 24px; right: 24px; z-index: 200;
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: rgba(7, 193, 96, 0.75);
+  color: #fff;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  transition: opacity 0.3s, transform 0.3s, background 0.2s;
+  opacity: 0; transform: translateY(20px);
+  pointer-events: none;
+}
+.back-to-top.visible {
+  opacity: 1; transform: translateY(0);
+  pointer-events: auto;
+}
+.back-to-top:hover { background: var(--green); transform: translateY(-2px) scale(1.05); }
+.back-to-top:active { transform: scale(0.95); }
+
+/* ========== Summary Page ========== */
+.summary-header {
+  text-align: center;
+  padding: 20px 0 16px;
+  border-bottom: 2px dashed var(--border);
+  margin-bottom: 20px;
+}
+.summary-header h2 {
+  font-size: 1.1rem; font-weight: 700; color: var(--text-bright);
+  margin-bottom: 4px;
+}
+.section-divider {
+  border: none;
+  border-top: 1px dashed var(--border);
+  margin: 20px 0 16px;
+}
+.summary-hot-header {
+  display: flex; align-items: center; gap: 6px;
+  margin-bottom: 12px;
+  font-size: 0.88rem; font-weight: 600; color: var(--text-bright);
+}
+
+/* Category summary card */
+.summary-cat-section {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  transition: box-shadow 0.2s;
+}
+.summary-cat-section:hover { box-shadow: var(--shadow-hover); }
+
+.summary-cat-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 10px;
+}
+.summary-cat-label {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 0.85rem; font-weight: 600; color: var(--text-bright);
+}
+.summary-cat-count {
+  font-size: 0.72rem; color: var(--text-dim);
+  font-weight: 400;
+}
+.summary-cat-badge {
+  font-size: 0.68rem; padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+}
+.summary-cat-link {
+  font-size: 0.75rem; color: var(--green); cursor: pointer;
+  font-weight: 500; user-select: none;
+  transition: opacity 0.15s;
+}
+.summary-cat-link:hover { opacity: 0.7; text-decoration: underline; }
+
+/* Compact article in summary */
+.card-compact {
+  border-top: 1px solid var(--border);
+  padding: 9px 0;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.card-compact:first-of-type { border-top: none; }
+.card-compact:hover { padding-left: 4px; }
+
+.card-compact-title {
+  font-size: 0.82rem; font-weight: 600; color: var(--text-bright);
+  line-height: 1.35;
+  margin-bottom: 2px;
+}
+.card-compact-quote {
+  font-size: 0.75rem; color: var(--green);
+  font-style: italic;
+  line-height: 1.4;
+  display: flex; align-items: flex-start; gap: 4px;
+}
+
 /* ========== Responsive ========== */
 @media (max-width: 480px) {
+  .back-to-top { bottom: 16px; right: 16px; width: 38px; height: 38px; font-size: 1.1rem; }
   .header { padding: 10px 12px 0; }
   .main { padding: 12px; }
   .card { padding: 16px; margin-bottom: 12px; }
@@ -369,6 +474,9 @@ a:hover { text-decoration: underline; }
   .card-quote { font-size: 0.78rem; }
   .tab { padding: 8px 14px; font-size: 0.82rem; }
   .date-heading { padding: 8px 10px; font-size: 0.75rem; }
+  .summary-header { padding: 14px 0 12px; }
+  .summary-header h2 { font-size: 1rem; }
+  .summary-cat-section { padding: 12px; }
 }
 </style>
 </head>
@@ -391,7 +499,10 @@ a:hover { text-decoration: underline; }
   </div>
 
   <nav class="tabs" id="tabNav">
-    <button class="tab active" data-tab="industry">
+    <button class="tab active" data-tab="summary">
+      📋 今日汇总<span class="tab-count" id="count-summary">0</span>
+    </button>
+    <button class="tab" data-tab="industry">
       行业<span class="tab-count" id="count-industry">0</span>
     </button>
     <button class="tab" data-tab="dev">
@@ -417,6 +528,8 @@ a:hover { text-decoration: underline; }
   </div>
 </main>
 
+<!-- ===== Back to Top ===== -->
+<button class="back-to-top" id="backToTop" title="返回顶部" aria-label="返回顶部">⬆</button>
 
 <footer class="footer" id="appFooter">
   <div><span class="logo-text">有数Feed</span> — 每日科技快讯 · Demo</div>
@@ -431,7 +544,7 @@ const CAT_LABELS = { industry: '行业', dev: '开发', ai: 'AI', startup: '创�
 const CAT_ICONS = { industry: '🏭', dev: '💻', ai: '🤖', startup: '🚀', design: '🎨' };
 
 let allData = {};
-let currentTab = 'industry';
+let currentTab = 'summary';
 
 /* ========== DOM ========== */
 const $ = (s) => document.querySelector(s);
@@ -667,7 +780,11 @@ function toggleDateSection(sectionId) {
 function switchTab(tabKey) {
   currentTab = tabKey;
   $$('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tabKey));
-  renderTab(tabKey);
+  if (tabKey === 'summary') {
+    renderSummary();
+  } else {
+    renderTab(tabKey);
+  }
   $('main#mainContent').scrollIntoView({ behavior: 'smooth' });
 }
 
@@ -679,16 +796,134 @@ function updateTabCounts() {
     const el = $(`#count-${cat}`);
     if (el) el.textContent = count;
   }
+  const summaryEl = $('#count-summary');
+  if (summaryEl) summaryEl.textContent = total;
   const totalEl = $('#totalCount');
   if (totalEl) totalEl.textContent = total;
 }
+
+/* ========== Quote Quality Scoring ========== */
+function getQuoteScore(item) {
+  const q = (item.quote || '').trim();
+  if (!q) return -1;
+  return q.length;
+}
+
+/* ========== Summary Rendering ========== */
+function renderSummary() {
+  const container = $('main#mainContent');
+
+  // Collect all items across categories
+  let allItems = [];
+  for (const cat of CATEGORIES) {
+    const items = allData[cat] || [];
+    for (const item of items) {
+      allItems.push({ ...item, _cat: cat });
+    }
+  }
+
+  if (allItems.length === 0) {
+    container.innerHTML = `<div class="empty-state"><div class="state-icon">📭</div><div>暂无数据</div></div>`;
+    return;
+  }
+
+  // Sort for "今日最热": quote length > 10 first (by length desc), then 1-10, then no quote
+  const scored = allItems.map(item => ({ item, score: getQuoteScore(item) }));
+  scored.sort((a, b) => {
+    const aLong = a.score > 10, bLong = b.score > 10;
+    if (aLong && !bLong) return -1;
+    if (!aLong && bLong) return 1;
+    return b.score - a.score;
+  });
+  const hotItems = scored.slice(0, 6).map(s => s.item);
+
+  let html = '';
+
+  // Header
+  html += `<div class="summary-header">
+    <h2>📋 今日汇总 · 共 ${allItems.length} 条精选</h2>
+  </div>`;
+
+  // 🔥 今日最热
+  html += `<div class="summary-hot-header">🔥 今日最热 · 全局精选 Top ${hotItems.length}</div>`;
+  for (const item of hotItems) {
+    html += renderCard(item);
+  }
+
+  // Divider
+  html += `<hr class="section-divider">`;
+
+  // Per-category summary
+  for (const cat of CATEGORIES) {
+    const items = allData[cat] || [];
+    const count = items.length;
+    const top2 = items.slice(0, 2);
+
+    html += `<div class="summary-cat-section">
+      <div class="summary-cat-header">
+        <div class="summary-cat-label">
+          <span class="summary-cat-badge" style="background:var(--cat-${cat})">${CAT_LABELS[cat]}</span>
+          <span>${CAT_ICONS[cat]} ${CAT_LABELS[cat]}</span>
+          <span class="summary-cat-count">· ${count} 条</span>
+        </div>
+        <span class="summary-cat-link" onclick="switchTab('${cat}')">查看全部 →</span>
+      </div>`;
+
+    if (top2.length === 0) {
+      html += `<div style="font-size:0.78rem;color:var(--text-dim);padding:8px 0">暂无内容</div>`;
+    } else {
+      for (const item of top2) {
+        const quote = item.quote || '';
+        const url = item.url || '';
+        const hasUrl = url && url !== '#';
+        const escUrl = url.replace(/"/g, '&quot;');
+        html += `<article class="card-compact" data-url="${escUrl}" onclick="var u=this.dataset.url;if(u)window.open(u,'_blank','noopener')">
+          <div class="card-compact-title">${escHtml(item.title || '无标题')}</div>
+          ${quote ? `<div class="card-compact-quote"><span>💬</span><span>${escHtml(quote)}</span></div>` : `<div class="card-compact-quote" style="color:var(--text-dim);font-style:normal"><span>📄</span><span>${escHtml((item.content || '').slice(0, 80))}${(item.content || '').length > 80 ? '...' : ''}</span></div>`}
+        </article>`;
+      }
+    }
+    html += `</div>`;
+  }
+
+  container.innerHTML = html;
+}
+
+/* ========== Back to Top ========== */
+(function initBackToTop() {
+  const btn = document.getElementById('backToTop');
+  if (!btn) return;
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        if (window.scrollY > 300) {
+          btn.classList.add('visible');
+        } else {
+          btn.classList.remove('visible');
+        }
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
 
 /* ========== Init ========== */
 async function init() {
   try {
     allData = await loadData();
     updateTabCounts();
-    renderTab(currentTab);
+
+    // Render default tab (summary)
+    if (currentTab === 'summary') {
+      renderSummary();
+    } else {
+      renderTab(currentTab);
+    }
 
     $$('.tab').forEach(tab => {
       tab.addEventListener('click', () => {
