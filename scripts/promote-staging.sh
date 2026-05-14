@@ -141,8 +141,8 @@ print(mismatch)
     log "✅ CDN 深度 QA 全部通过"
 fi
 
-# Step 3: 检查 combined_3days 文件
-log "[3/5] 检查 combined_3days 文件..."
+# Step 3: 检查 combined_3days 文件（严格校验，缺失则终止）
+log "[3/5] 校验 combined_3days 文件..."
 DATE_COMPACT=$(date +%Y%m%d)
 COMBINED_FILE="$WORKSPACE/combined_3days_${DATE_COMPACT}.json"
 if [ -f "$COMBINED_FILE" ]; then
@@ -157,9 +157,16 @@ for k in ['industry','dev','ai','startup','design']:
 print(total)
 ")
     log "   combined_3days: ${ITEMS}条, 今日${TODAY_ITEMS}条"
+    
+    # 如果今日 items 为 0 但文件存在，也视为异常
+    if [ "$TODAY_ITEMS" = "0" ] && [ "$ITEMS" != "0" ]; then
+        log "⚠️ combined_3days 存在但今日 items 为 0，继续（跨天窗口期）"
+    fi
 else
-    log "⚠️  combined_3days 文件不存在，将重生成..."
-    python3 "$SCRIPT_DIR/generate_combined_3days.py" 2>&1 | tee -a "$LOG_FILE"
+    log "❌ combined_3days 文件缺失: ${COMBINED_FILE}"
+    log "   请先运行 sync_github_pages.sh 或 generate_combined_3days.py 生成"
+    log "   修复命令: python3 $SCRIPT_DIR/generate_combined_3days.py"
+    exit 1
 fi
 
 # Step 4: Merge staging → main

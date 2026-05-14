@@ -223,11 +223,13 @@ def main():
 
     parser = argparse.ArgumentParser(description="毒舌点评 enrichment")
     parser.add_argument("--date", default=datetime.now().strftime("%Y%m%d"), help="日期 YYYYMMDD")
-    parser.add_argument("--type", choices=["industry", "dev", "social"], help="只处理指定类型")
+    parser.add_argument("--type", choices=["industry", "dev", "social", "ai", "startup", "design"], help="只处理指定类型")
     parser.add_argument("--dry-run", action="store_true", help="预览不写入")
     args = parser.parse_args()
 
-    types = [args.type] if args.type else ["industry", "dev", "social"]
+    # 默认处理全部 6 个板块；ai/startup/design 的 daily JSON 由 cron agent 生成（已有 quote），
+    # enrich_quotes 作为防御性补充，补齐可能的遗漏
+    types = [args.type] if args.type else ["industry", "dev", "social", "ai", "startup", "design"]
     results = {}
     all_ok = True
 
