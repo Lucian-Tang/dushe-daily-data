@@ -1,102 +1,32 @@
 [
   {
     "title": "Designing Stable Interfaces For Streaming Content",
+    "category": "frontend",
     "source": "Smashing Magazine",
     "url": "https://www.smashingmagazine.com/2026/05/designing-stable-interfaces-streaming-content/",
-    "content": "随着AI聊天、日志流和实时转录技术的普及，越来越多界面在内容生成过程中就开始渲染。文章深入剖析了流式UI的三大痛点：滚动位置争夺（自动吸底 vs 用户手动滚动导致的拉扯感）、布局抖动（容器不停膨胀让交互元素乱飘）、以及渲染频率过高带来的性能问题。提供了完整的前端无障碍解决方案，包含ARIA属性和键盘导航的最佳实践。",
-    "quote": "滚动上去就读不了，界面一把拽回来——这设计跟用户有仇吧？",
     "published": "2026-05-14",
-    "collectedAt": "2026-05-14T04:15:00+08:00",
-    "uid": "design_4dac404a"
+    "content": "流式内容界面（如AI对话逐字输出）设计远比表面复杂。Joas Pambou解析了布局抖动、动态插入时的键盘导航、ARIA属性实时更新、动画偏好以及流中断时的优雅降级等细节。这不仅是前端问题——它直接影响可访问性和认知负担。对正在做AI聊天界面或实时协作工具的设计工程师，这是一篇实操必读。",
+    "quote": "AI打字酷炫，但背后的reflow地狱只有经历过的人才懂。",
+    "uid": "e4364fca944f"
   },
   {
-    "title": "The most important Design System in 2026 that designers missed was built by a developer",
-    "source": "UX Collective / Bootcamp",
-    "url": "https://medium.com/design-bootcamp/the-most-important-design-system-in-2026-that-designers-missed-was-built-by-a-developer-d5617753882e",
-    "content": "这篇文章像一记耳光拍在设计师脸上：2026年最重要的设计系统shadcn/ui（GitHub 114K stars），由一名叫shadcn的独立开发者于2023年创建，而绝大多数设计师对此一无所知。如今Claude、Cursor、v0和Lovable生成的UI几乎全是shadcn风格，AI工具已将其标准化为默认输出。设计师还在Figma里建design system的时候，开发者社区已经把标准定完了。",
-    "quote": "设计师还在搭框架，开发已经把标准写进AI训练数据了。别睡了。",
-    "published": "2026-05-14",
-    "collectedAt": "2026-05-14T04:15:00+08:00",
-    "uid": "design_7f4b34e2"
-  },
-  {
-    "title": "A Practical Guide To Design Principles (230+ Resources)",
+    "title": "Cognitive Bias Index",
+    "category": "design-psychology",
     "source": "Smashing Magazine",
-    "url": "https://www.smashingmagazine.com/2026/04/practical-guide-design-principles/",
-    "content": "Vitaly Friedman撰写了一份堪称设计原则百科全书的实战指南。收录了Dieter Rams十原则、Anthropic Constitution、IBM Carbon、Audi和Material Design等230+经典案例，还涵盖了组织级设计原则的落地方法论。在AI五分钟就能出图的时代，这篇文章敲响了警钟：知道什么东西值得做、为什么这么做，比怎么画更重要。",
-    "quote": "AI五分钟出图的时代，你还不知道什么值得做？先读这个吧。",
+    "url": "https://cognitivebiasindex.com/",
     "published": "2026-05-14",
-    "collectedAt": "2026-05-14T04:15:00+08:00",
-    "uid": "design_aa2e811c"
+    "content": "Jon Yablonski推出的认知偏误索引，汇总了108种影响人类决策的认知偏误，并提供每种的精确定义、触发场景和设计规避建议。不同于学术论文大部头，这个工具站把'设计决策中常被忽视的人性弱点'变成了可查询、可引用的实用参考。对于做用户研究和体验设计的设计师，这是每日必翻的工具页。",
+    "quote": "别让你的好设计死于认知偏误——这份清单能救命。",
+    "uid": "01a483b25068"
   },
   {
-    "title": "Discovery is the work AI gives back",
-    "source": "UX Collective",
-    "url": "https://uxdesign.cc/discovery-is-the-work-ai-gives-back-d2a429b64bcc",
-    "content": "基于McKinsey 2026年最新调研：94%的企业已经使用AI，但同样高达94%尚未看到显著回报。问题不在采用率，而在框架错了——大多数公司用AI加速现有工作流程，但真正的价值增量来自重新定义做什么。作者观察到：有团队把发现周期从六周压缩到十天，但产出的洞察并没变多——同样的问题，跑得更快了而已。",
-    "quote": "用AI把六周压到十天，产出还是一样——这叫浪费算力，不叫效率。",
+    "title": "Awwwards Site of the Day — fromanother.love",
+    "category": "web-design",
+    "source": "Awwwards",
+    "url": "https://www.awwwards.com/fromanother.love",
     "published": "2026-05-14",
-    "collectedAt": "2026-05-14T04:15:00+08:00",
-    "uid": "design_69c29276"
-  },
-  {
-    "title": "The UX Designer’s Nightmare: When Production-Ready Becomes A Design Deliverable",
-    "source": "Smashing Magazine",
-    "url": "https://www.smashingmagazine.com/2026/04/production-ready-becomes-design-deliverable-ux/",
-    "content": "2026年UX岗位要求正在发生剧变：设计师不仅要有审美，还要能写出可上线的代码。AI辅助开发让production-ready原型变成了标配交付物。Carrie Webster剖析了这种角色蔓延对设计品质的侵蚀——AI生成的代码未必是好代码，而设计师若失去对用户体验的把关角色，最终受伤的是终端用户。这不是进步，是行业焦虑。",
-    "quote": "LinkedIn已开始招会写生产的UX工程师了，你的Figma技能还够用吗？",
-    "published": "2026-05-14",
-    "collectedAt": "2026-05-14T04:15:00+08:00",
-    "uid": "design_c3bf85f6"
-  },
-  {
-    "title": "Session Timeouts: The Overlooked Accessibility Barrier In Authentication Design",
-    "source": "Smashing Magazine",
-    "url": "https://www.smashingmagazine.com/2026/04/session-timeouts-accessibility-barrier-authentication-design/",
-    "content": "全球约13亿人有显著残障，20%人口属于神经多样性群体，但会话超时机制几乎从未考虑过他们的体验。文章系统分析了超时对认知、运动和视觉障碍用户的不成比例影响，并提供了从后端到前端的完整解决方案：超时警告、无操作延长、进度保存和WCAG合规检查清单。一个小小的超时弹窗，可能是某些用户最大的使用障碍。",
-    "quote": "填表填一半踢你去登录——这种傲慢的设计还好意思叫用户体验？",
-    "published": "2026-05-14",
-    "collectedAt": "2026-05-14T04:15:00+08:00",
-    "uid": "design_9ac23fc9"
-  },
-  {
-    "title": "Googlebook — A new kind of laptop designed for Gemini Intelligence",
-    "source": "ProductHunt",
-    "url": "https://www.producthunt.com/products/googlebook-2",
-    "content": "Chris Messina（发明hashtag的设计师兼Google校友）打造的Gemini原生AI笔记本电脑概念产品。重新想象了AI深度嵌入操作系统后的交互模式，Gemini智能系统将实时预测用户需求。这不是一台普通笔记本，而是对AI-native硬件设计的前瞻探索——键盘、触控板和屏幕交互方式将被彻底重构。",
-    "quote": "Chris Messina出品，Gemini亲儿子——但别又是个今年宣发明年取消的项目。",
-    "published": "2026-05-14",
-    "collectedAt": "2026-05-14T04:15:00+08:00",
-    "uid": "design_b0e36fed"
-  },
-  {
-    "title": "Cybersecurity Website Design for Island by Ramotion",
-    "source": "Dribbble",
-    "url": "https://dribbble.com/shots/27302721-Cybersecurity-Website-Design-for-Island",
-    "content": "Ramotion为网络安全产品Island打造的官网设计。暗色科幻风配上粗粝质感字体，动态粒子背景和醒目的CTA区域将「安全」的高冷与可信赖感拉满。16.9k浏览量的Dribbble爆款，证明了赛博安全领域的视觉设计天花板仍在被不断推高——即使是最保守的安全产品，也开始拥抱大胆的视觉语言。",
-    "quote": "Ramotion出手就是降维打击，这暗黑风比黑客帝国还黑客。",
-    "published": "2026-05-14",
-    "collectedAt": "2026-05-14T04:15:00+08:00",
-    "uid": "design_f1ba2fb8"
-  },
-  {
-    "title": "Tweaklify — Fast DOM prototyping & live style editing",
-    "source": "ProductHunt",
-    "url": "https://www.producthunt.com/products/tweaklify",
-    "content": "轻量级DOM原型工具，支持在设计稿与最终实现之间快速桥接。设计师可以在浏览器中直接拖拽修改样式、调整布局和内容，无需动代码。对于C端产品团队而言，这意味着从Figma到上线之间的迭代循环从天缩短到分钟。工具化的设计交付流程正在重塑产品和设计团队的协作方式。",
-    "quote": "「我会写CSS就不用你来调间距了」——每个开发看到这工具都会这么说。",
-    "published": "2026-05-14",
-    "collectedAt": "2026-05-14T04:15:00+08:00",
-    "uid": "design_ae04fcf4"
-  },
-  {
-    "title": "CRM Dashboard for Team Workflow Management by Shakuro",
-    "source": "Dribbble",
-    "url": "https://dribbble.com/shots/27370096-CRM-Dashboard-for-Team-Workflow-Management",
-    "content": "Shakuro出品的CRM团队协作仪表盘，布局简洁：左侧导航+数据卡片+图表组件层次分明。配色克制而留白舒适，工作流追踪、销售漏斗和任务管理面板一应俱全。作为企业级SaaS设计的标杆，它证明了少即是多在数据密集场景下依然成立——信息密度和视觉呼吸感之间找到了精准的平衡点。",
-    "quote": "Shakuro老配方但真香，这排版让多少SaaS设计团队汗颜。",
-    "published": "2026-05-14",
-    "collectedAt": "2026-05-14T04:15:00+08:00",
-    "uid": "design_f9490c22"
+    "content": "Awwwards今日最佳网站fromanother.love，以极简主义和戏剧化排版著称。整站设计通过大量留白、非对称布局和微妙的动效过渡制造呼吸感，同时用克制的色彩强调内容层次。网站在5月14日以7.44分获得当日最佳。对关注前沿网页设计趋势的UI设计师和创意总监，这个案例是今年上半年的代表性风格样本。",
+    "quote": "留白留得好是艺术，留不好是偷懒——这个站是前者。",
+    "uid": "a1318a812eaf"
   }
 ]
