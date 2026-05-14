@@ -22,12 +22,38 @@ import glob
 import argparse
 from datetime import datetime, timezone, timedelta
 
-DATA_DIR = os.path.dirname(os.path.abspath(__file__))  # scripts/
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = SCRIPT_DIR
 if os.path.basename(DATA_DIR) == 'scripts':
     DATA_DIR = os.path.dirname(DATA_DIR)
 
+BLOCKLIST_PATH = os.path.join(SCRIPT_DIR, 'security-blocklist.json')
 DAILY_PATTERN = re.compile(r'^(\w+)_daily_(\d{8})\.json$')
 MAX_DAYS_BACK = 2  # 保留最近3天（今天+2天前）
+
+
+def load_blocklist():
+    """加载敏感词 blocklist，文件不存在或格式错误时返回空列表"""
+    if not os.path.exists(BLOCKLIST_PATH):
+        return []
+    try:
+        with open(BLOCKLIST_PATH, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        blocklist = data.get('blocklist', [])
+        if isinstance(blocklist, list):
+            print(f"[normalize] 加载敏感词 blacklist: {len(blocklist)} 个关键词")
+            return blocklist
+    except Exception as e:
+        print(f"[normalize] 加载 blocklist 失败: {e}")
+    return []
+
+
+def is_blocked(text, blocklist):
+    """检查文本是否包含 blocked 关键词"""
+    if not blocklist or not text:
+        return False
+    text_lower = text.lower()
+    return any(k.lower() in text_lower for k in blocklist)
 
 
 def gen_uid(section, title, url=""):
@@ -93,8 +119,10 @@ def normalize_item(item, filename_date):
     return fixed, issues
 
 
-def normalize_file(filepath, dry_run=False):
+def normalize_file(filepath, dry_run=False, blocklist=None):
     """Normalize a single daily JSON file"""
+    if blocklist is None:
+        blocklist = []
     filename = os.path.basename(filepath)
     match = DAILY_PATTERN.match(filename)
     if not match:
@@ -110,6 +138,7 @@ def normalize_file(filepath, dry_run=False):
 
     fixed_count = 0
     uid_count = 0
+    blocked_count = 0
     all_fixed_info = []
     clean_items = []
 
@@ -134,14 +163,24 @@ def normalize_file(filepath, dry_run=False):
         if fixed:
             fixed_count += 1
             all_fixed_info.extend(issues)
+        
+        # 敏感词过滤（标题 + 内容）
+        item_text = (item.get('title', '') or '') + ' ' + (item.get('content', '') or '')
+        if is_blocked(item_text, blocklist):
+            blocked_count += 1
+            all_fixed_info.append(f'🔒 过滤敏感内容: {item.get("title", "")[:40]}')
+            continue  # 跳过，不加入 clean_items
+        
         clean_items.append(item)
 
-    if not dry_run and (fixed_count > 0 or uid_count > 0):
+    if not dry_run and (fixed_count > 0 or uid_count > 0 or blocked_count > 0):
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(clean_items, f, ensure_ascii=False, indent=2)
 
     if uid_count > 0:
         all_fixed_info.insert(0, f'注入 {uid_count} 个 uid')
+    if blocked_count > 0:
+        all_fixed_info.insert(0, f'🔒 过滤 {blocked_count} 条敏感内容')
 
     return len(data), len(clean_items), all_fixed_info
 
@@ -161,13 +200,20 @@ def main():
     print(f"[normalize] 扫描 {len(files)} 个 daily JSON 文件")
     print(f"[normalize] 3天过滤: 仅保留最近{MAX_DAYS_BACK}天数据\n")
 
+    blocklist = load_blocklist()
+    if blocklist:
+        print(f"[normalize] 敏感词过滤: 已激活（{len(blocklist)} 个关键词）")
+    else:
+        print("[normalize] 敏感词过滤: 未激活（blocklist 为空或不存在）")
+    print()
+
     total_before = 0
     total_after = 0
     total_fixed = 0
     all_issues = []
 
     for fp in files:
-        before, after, issues = normalize_file(fp, args.dry_run)
+        before, after, issues = normalize_file(fp, args.dry_run, blocklist)
         total_before += before
         total_after += after
         total_fixed += len(issues) if issues else 0
