@@ -30,7 +30,7 @@
 }
 
 /* ========== Base ========== */
-html { font-size: 16px; }
+html { font-size: 16px; scroll-behavior: smooth; }
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
   background: var(--bg);
@@ -62,7 +62,10 @@ a:hover { text-decoration: underline; }
   display: flex; align-items: center; gap: 8px;
   font-size: 1.15rem; font-weight: 700; color: var(--text-bright);
   letter-spacing: -0.3px;
+  cursor: pointer;
 }
+.logo:hover { color: var(--green); }
+.logo:active { opacity: 0.7; }
 
 .logo-dot {
   width: 10px; height: 10px; border-radius: 50%;
@@ -226,6 +229,164 @@ a:hover { text-decoration: underline; }
 }
 .card:hover .card-link-hint { opacity: 1; }
 
+/* ================================================================ */
+/*  DETAIL VIEW                                                      */
+/* ================================================================ */
+
+.detail-backdrop {
+  position: fixed; inset: 0;
+  z-index: 200;
+  background: var(--bg);
+  overflow-y: auto;
+  animation: slideIn 0.25s ease-out;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.detail-container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Back bar */
+.back-bar {
+  display: flex; align-items: center; gap: 10px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 20px;
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(13, 17, 23, 0.94);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.back-btn {
+  display: flex; align-items: center; gap: 6px;
+  padding: 6px 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: var(--text);
+  font-size: 0.85rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.15s;
+}
+.back-btn:hover { background: var(--bg-card-hover); border-color: #484f58; }
+.back-btn:active { transform: scale(0.96); }
+
+.back-icon { font-size: 1rem; line-height: 1; }
+
+.back-category {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  padding: 4px 10px;
+  background: var(--tag-bg);
+  border-radius: 12px;
+}
+
+
+/* Detail header */
+.detail-header { margin-bottom: 20px; }
+
+.detail-header .detail-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-bright);
+  line-height: 1.45;
+  margin-bottom: 12px;
+}
+
+.detail-meta {
+  display: flex; align-items: center; gap: 12px;
+  flex-wrap: wrap;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+}
+
+.detail-meta .source-tag {
+  padding: 2px 10px;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+/* Detail content */
+.detail-content {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--text);
+  margin-bottom: 24px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Quote block in detail */
+.detail-quote-block {
+  margin-bottom: 28px;
+  padding: 16px 18px;
+  background: var(--quote-bg);
+  border-left: 4px solid var(--quote-border);
+  border-radius: 0 10px 10px 0;
+}
+
+.detail-quote-block .detail-quote-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 8px;
+  display: flex; align-items: center; gap: 6px;
+}
+
+.detail-quote-block .detail-quote-text {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--green);
+  font-style: italic;
+}
+
+/* Source link button */
+.detail-source-link {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 24px;
+  background: var(--green);
+  color: #fff;
+  border-radius: 24px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.15s;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+.detail-source-link:hover {
+  background: var(--green-dim);
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(7, 193, 96, 0.3);
+}
+.detail-source-link:active { transform: scale(0.97); }
+
+.detail-url-hint {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  word-break: break-all;
+}
+
+.detail-divider {
+  margin: 28px 0;
+  border: none;
+  border-top: 1px solid var(--border);
+}
+
 /* ========== States ========== */
 .state-message {
   display: flex; flex-direction: column; align-items: center; justify-content: center;
@@ -279,6 +440,11 @@ a:hover { text-decoration: underline; }
   .card-body { font-size: 0.82rem; -webkit-line-clamp: 2; }
   .card-quote { font-size: 0.78rem; }
   .tab { padding: 8px 14px; font-size: 0.82rem; }
+
+  .detail-container { padding: 12px; }
+  .detail-header .detail-title { font-size: 1.1rem; }
+  .detail-content { font-size: 0.9rem; }
+  .detail-quote-block { padding: 12px 14px; }
 }
 
 @media (min-width: 768px) {
@@ -289,9 +455,9 @@ a:hover { text-decoration: underline; }
 <body>
 
 <!-- ===== Header ===== -->
-<header class="header">
+<header class="header" id="appHeader">
   <div class="header-top">
-    <div class="logo">
+    <div class="logo" onclick="navigateHome()" title="返回首页">
       <span class="logo-dot"></span>
       <span>有数Feed</span>
     </div>
@@ -320,7 +486,7 @@ a:hover { text-decoration: underline; }
   </nav>
 </header>
 
-<!-- ===== Main ===== -->
+<!-- ===== Main (List View) ===== -->
 <main class="main" id="mainContent">
   <div class="state-message">
     <div class="loader"></div>
@@ -328,9 +494,43 @@ a:hover { text-decoration: underline; }
   </div>
 </main>
 
-<footer class="footer">
+<!-- ===== Detail View (hidden by default) ===== -->
+<div class="detail-backdrop" id="detailView" style="display:none;">
+  <div class="detail-container" id="detailContainer">
+    <div class="back-bar">
+      <button class="back-btn" onclick="closeDetail()" aria-label="返回列表">
+        <span class="back-icon">←</span> 返回
+      </button>
+      <span class="back-category" id="detailCategory">行业</span>
+    </div>
+
+    <div class="detail-header">
+      <h1 class="detail-title" id="detailTitle">--</h1>
+      <div class="detail-meta">
+        <span>📅 <span id="detailDate">--</span></span>
+        <span class="source-tag" id="detailSource">--</span>
+      </div>
+    </div>
+
+    <div class="detail-quote-block" id="detailQuoteBlock">
+      <div class="detail-quote-label">💬 毒舌点评</div>
+      <div class="detail-quote-text" id="detailQuote">--</div>
+    </div>
+
+    <div class="detail-content" id="detailContent">--</div>
+
+    <hr class="detail-divider">
+
+    <a class="detail-source-link" id="detailSourceLink" href="#" target="_blank" rel="noopener">
+      查看原文 ↗
+    </a>
+    <div class="detail-url-hint" id="detailUrlHint" style="margin-top:6px;"></div>
+  </div>
+</div>
+
+<footer class="footer" id="appFooter">
   <div><span class="logo-text">有数Feed</span> — 每日科技快讯 · Demo</div>
-  <div style="margin-top:4px">v1.0 · Powered by dushe-daily-data</div>
+  <div style="margin-top:4px">v1.1 · Powered by dushe-daily-data</div>
 </footer>
 
 <script>
@@ -342,6 +542,7 @@ const CAT_ICONS = { industry: '🏭', dev: '💻', ai: '🤖', startup: '🚀', 
 
 let allData = {};
 let currentTab = 'industry';
+let currentView = 'list'; // 'list' | 'detail'
 
 /* ========== DOM ========== */
 const $ = (s) => document.querySelector(s);
@@ -463,17 +664,27 @@ function groupByDate(items) {
   return sortedKeys.map(k => ({ label: k, items: groups[k] }));
 }
 
-/* ========== Rendering ========== */
+/* ========== Item Lookup ========== */
+function findItemByUid(uid) {
+  for (const cat of CATEGORIES) {
+    const items = allData[cat] || [];
+    for (const item of items) {
+      if (item.uid === uid) return { item, category: cat };
+    }
+  }
+  return null;
+}
+
+/* ========== Rendering (List) ========== */
 function renderCard(item) {
-  const url = item.url || '#';
+  const uid = item.uid || '';
   const source = item.source || '未知';
   const title = item.title || '无标题';
   const content = item.content || '';
   const quote = item.quote || '';
-  const uid = item.uid || '';
 
   return `
-    <article class="card" data-uid="${uid}" onclick="window.open('${url.replace(/'/g, "\\'")}', '_blank')">
+    <article class="card" data-uid="${escHtml(uid)}" onclick="openDetail('${escAttr(uid)}')">
       <div class="card-header">
         <div class="card-title">${escHtml(title)}</div>
         <span class="card-source">${escHtml(source)}</span>
@@ -486,7 +697,7 @@ function renderCard(item) {
       </div>` : ''}
       <div class="card-footer">
         <span>${item.published ? formatDate(item.published) : ''}</span>
-        <span class="card-link-hint">🔗 阅读原文</span>
+        <span class="card-link-hint">📖 查看详情</span>
       </div>
     </article>
   `;
@@ -496,6 +707,10 @@ function escHtml(str) {
   const div = document.createElement('div');
   div.textContent = str;
   return div.innerHTML;
+}
+
+function escAttr(str) {
+  return str.replace(/'/g, "\\'").replace(/"/g, '&quot;');
 }
 
 function renderTab(tabKey) {
@@ -524,6 +739,150 @@ function renderTab(tabKey) {
   container.innerHTML = html;
 }
 
+/* ========== Rendering (Detail) ========== */
+function renderDetail(item, category) {
+  const title = item.title || '无标题';
+  const content = item.content || '（暂无正文）';
+  const quote = item.quote || '';
+  const source = item.source || '未知来源';
+  const url = item.url || '#';
+  const published = item.published || '';
+
+  $('#detailTitle').textContent = title;
+  $('#detailDate').textContent = published ? formatDate(published) : '日期未知';
+  $('#detailSource').textContent = source;
+  $('#detailCategory').textContent = CAT_LABELS[category] || category;
+  $('#detailContent').textContent = content;
+
+  // Quote block
+  const quoteBlock = $('#detailQuoteBlock');
+  if (quote) {
+    quoteBlock.style.display = '';
+    $('#detailQuote').textContent = quote;
+  } else {
+    quoteBlock.style.display = 'none';
+  }
+
+  // Source link
+  const linkEl = $('#detailSourceLink');
+  if (url && url !== '#') {
+    linkEl.href = url;
+    linkEl.style.display = '';
+    // Truncate URL for display
+    let displayUrl = url.replace(/^https?:\/\//, '');
+    if (displayUrl.length > 60) displayUrl = displayUrl.slice(0, 60) + '…';
+    $('#detailUrlHint').textContent = displayUrl;
+  } else {
+    linkEl.style.display = 'none';
+    $('#detailUrlHint').textContent = '';
+  }
+}
+
+function openDetail(uid) {
+  const result = findItemByUid(uid);
+  if (!result) return;
+
+  // Update hash (this will trigger onHashChange if hash differs)
+  const newHash = `#detail/${uid}`;
+  if (location.hash !== newHash) {
+    history.pushState({ view: 'detail', uid }, '', newHash);
+  }
+  showDetailView(result.item, result.category);
+}
+
+function closeDetail() {
+  history.back();
+}
+
+function showDetailView(item, category) {
+  currentView = 'detail';
+  // Hide list, header tabs, footer
+  $('#mainContent').style.display = 'none';
+  $('#tabNav').style.display = 'none';
+  $('#appFooter').style.display = 'none';
+  $('#headerMeta').style.display = 'none';
+  // Show detail
+  $('#detailView').style.display = '';
+  // Render
+  renderDetail(item, category);
+  // Scroll to top
+  $('#detailView').scrollTop = 0;
+}
+
+function showListView() {
+  currentView = 'list';
+  // Show list view
+  $('#mainContent').style.display = '';
+  $('#tabNav').style.display = '';
+  $('#appFooter').style.display = '';
+  $('#headerMeta').style.display = '';
+  // Hide detail
+  $('#detailView').style.display = 'none';
+}
+
+function navigateHome() {
+  if (currentView === 'detail') {
+    history.back();
+  }
+  // If already on list view, clicking logo scrolls to top
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+/* ========== Hash Routing ========== */
+function handleHash() {
+  const hash = location.hash;
+  if (!hash) {
+    // No hash → list view
+    if (currentView === 'detail') showListView();
+    return;
+  }
+
+  // Match #detail/<uid>
+  const detailMatch = hash.match(/^#detail\/(.+)$/);
+  if (detailMatch) {
+    const uid = detailMatch[1];
+    const result = findItemByUid(uid);
+    if (result) {
+      showDetailView(result.item, result.category);
+    } else {
+      // UID not found, go back to list
+      console.warn('Detail UID not found:', uid);
+      history.replaceState({ view: 'list' }, '', '#');
+      showListView();
+    }
+    return;
+  }
+
+  // Unknown hash → show list
+  if (currentView === 'detail') showListView();
+}
+
+window.addEventListener('hashchange', handleHash);
+
+// Also handle popstate for history.back() support
+window.addEventListener('popstate', (e) => {
+  if (currentView === 'detail') {
+    showListView();
+  }
+});
+
+/* ========== Keyboard shortcut ========== */
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && currentView === 'detail') {
+    closeDetail();
+  }
+});
+
+/* ========== Tab Switching ========== */
+function switchTab(tabKey) {
+  currentTab = tabKey;
+  // Update active tab
+  $$('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tabKey));
+  renderTab(tabKey);
+  // Scroll to top
+  $('main#mainContent').scrollIntoView({ behavior: 'smooth' });
+}
+
 function updateTabCounts() {
   let total = 0;
   for (const cat of CATEGORIES) {
@@ -534,16 +893,6 @@ function updateTabCounts() {
   }
   const totalEl = $('#totalCount');
   if (totalEl) totalEl.textContent = total;
-}
-
-/* ========== Tab Switching ========== */
-function switchTab(tabKey) {
-  currentTab = tabKey;
-  // Update active tab
-  $$('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tabKey));
-  renderTab(tabKey);
-  // Scroll to top
-  $('main#mainContent').scrollIntoView({ behavior: 'smooth' });
 }
 
 /* ========== Init ========== */
@@ -561,13 +910,16 @@ async function init() {
       });
     });
 
+    // Handle initial hash (for direct detail links)
+    handleHash();
+
   } catch (err) {
     $('main#mainContent').innerHTML = `
       <div class="state-message">
         <div class="state-icon">😵</div>
         <div style="margin-bottom:4px;font-weight:600">数据加载失败</div>
         <div style="font-size:0.82rem;color:var(--text-dim)">${escHtml(err.message)}</div>
-        <button class="retry-btn" onclick="init()">重试</button>
+        <button class="retry-btn" onclick="window.location.reload()">重试</button>
       </div>`;
   }
 }
@@ -576,3 +928,4 @@ init();
 </script>
 </body>
 </html>
+// Deploy trigger
