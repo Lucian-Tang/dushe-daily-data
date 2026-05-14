@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>有数AI 精选助手</title>
+<style>
+:root {
+  --bg: #1a1a2e;
+  --bg-chat: #16213e;
+  --bg-bubble-ai: #0f3460;
+  --bg-bubble-user: #533483;
+  --text: #e4e4e4;
+  --text-dim: #999;
+  --accent: #e94560;
+  --accent-glow: #ff6b81;
+  --chip-bg: #1a1a3e;
+  --chip-hover: #0f3460;
+  --chip-border: #333;
+  --modal-bg: #12121f;
+  --divider: #2a2a4a;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Header */
+.header {
+  background: var(--bg-chat);
+  border-bottom: 1px solid var(--divider);
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  z-index: 10;
+}
+.header .logo {
+  width: 38px; height: 38px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #e94560, #533483);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px;
+}
+.header .title {
+  font-size: 17px; font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.header .subtitle {
+  font-size: 12px; color: var(--text-dim);
+  display: block; margin-top: -2px;
+}
+
+/* Chat Area */
+.chat {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px 16px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  scroll-behavior: smooth;
+}
+
+/* Message Bubbles */
+.msg {
+  display: flex;
+  gap: 8px;
+  max-width: 90%;
+  animation: fadeUp 0.35s ease-out;
+}
+@keyframes fadeUp {
+  from { opacity:0; transform:translateY(12px); }
+  to { opacity:1; transform:translateY(0); }
+}
+
+.msg.ai { align-self: flex-start; }
+.msg.user {
+  align-self: flex-end;
+  flex-direction: row-reverse;
+}
+
+.msg .avatar {
+  width: 32px; height: 32px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px;
+  margin-top: 2px;
+}
+.msg.ai .avatar {
+  background: linear-gradient(135deg, #e94560, #533483);
+}
+.msg.user .avatar {
+  background: linear-gradient(135deg, #0f3460, #1a1a2e);
+  border: 1px solid var(--chip-border);
+}
+
+.msg .bubble {
+  padding: 12px 16px;
+  border-radius: 18px;
+  line-height: 1.6;
+  font-size: 14.5px;
+}
+.msg.ai .bubble {
+  background: var(--bg-bubble-ai);
+  border-bottom-left-radius: 4px;
+}
+.msg.user .bubble {
+  background: var(--bg-bubble-user);
+  border-bottom-right-radius: 4px;
+}
+
+/* Chips (category buttons inside AI message) */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+.chip {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid var(--chip-border);
+  background: var(--chip-bg);
+  color: var(--text);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  user-select: none;
+  white-space: nowrap;
+}
+.chip:hover {
+  border-color: var(--accent);
+  background: var(--chip-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 12px rgba(233,69,96,0.2);
+}
+.chip:active {
+  transform: scale(0.95);
+}
+.chip.selected {
+  border-color: var(--accent);
+  background: rgba(233,69,96,0.15);
+  color: var(--accent-glow);
+}
+
+/* Highlight item inside AI message (NOT a card - just text + button) */
+.highlight {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--divider);
+}
+.highlight:first-child { margin-top: 6px; }
+
+.highlight .hl-title {
+  font-size: 14px; font-weight: 600;
+  color: #fff;
+  margin-bottom: 4px;
+}
+.highlight .hl-title .pin { margin-right: 4px; }
+
+.highlight .hl-desc {
+  font-size: 13px;
+  color: var(--text-dim);
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+.highlight .hl-insight {
+  font-size: 12.5px;
+  color: var(--accent-glow);
+  font-style: italic;
+  margin-bottom: 8px;
+  padding-left: 8px;
+  border-left: 2px solid var(--accent);
+}
+
+.btn-detail {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent-glow);
+  font-size: 12.5px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-detail:hover {
+  background: rgba(233,69,96,0.1);
+  transform: translateY(-1px);
+}
+.btn-detail:active { transform: scale(0.95); }
+
+/* Input Area */
+.input-area {
+  padding: 12px 16px;
+  background: var(--bg-chat);
+  border-top: 1px solid var(--divider);
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.input-area input {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: 24px;
+  border: 1px solid var(--chip-border);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.input-area input:focus {
+  border-color: var(--accent);
+}
+.input-area input::placeholder {
+  color: var(--text-dim);
+}
+.input-area button {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(135deg, #e94560, #533483);
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.2s;
+  display: flex; align-items: center; justify-content: center;
+}
+.input-area button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 12px rgba(233,69,96,0.3);
+}
+.input-area button:active { transform: scale(0.9); }
+
+/* Detail Modal */
+.modal-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.75);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  display: flex; align-items: flex-end;
+  animation: fadeIn 0.25s ease-out;
+}
+@keyframes fadeIn { from { opacity:0; } }
+
+.modal-content {
+  background: var(--modal-bg);
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  max-height: 80dvh;
+  overflow-y: auto;
+  padding: 24px 20px 32px;
+  animation: slideUp 0.3s ease-out;
+}
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+.modal-content .close-bar {
+  width: 36px; height: 4px;
+  background: #444;
+  border-radius: 2px;
+  margin: 0 auto 20px;
+}
+.modal-content h2 {
+  font-size: 18px; margin-bottom: 12px;
+  line-height: 1.5;
+}
+.modal-content .modal-body {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+.modal-content .modal-meta {
+  font-size: 12px; color: var(--text-dim);
+  margin-bottom: 16px;
+}
+.modal-content .modal-insight {
+  background: rgba(233,69,96,0.08);
+  border-left: 3px solid var(--accent);
+  padding: 10px 14px;
+  border-radius: 0 8px 8px 0;
+  font-size: 13px;
+  color: var(--accent-glow);
+  font-style: italic;
+  margin-bottom: 16px;
+}
+.modal-content .modal-link {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 20px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.modal-content .modal-link:hover {
+  background: #c0392b;
+  transform: translateY(-1px);
+}
+.modal-content .modal-close-btn {
+  float: right;
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid var(--divider);
+  background: transparent;
+  color: var(--text-dim);
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* Typing indicator */
+.typing {
+  display: flex;
+  gap: 4px;
+  padding: 4px 0;
+}
+.typing span {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--text-dim);
+  animation: bounce 1.2s infinite;
+}
+.typing span:nth-child(2) { animation-delay: 0.2s; }
+.typing span:nth-child(3) { animation-delay: 0.4s; }
+@keyframes bounce {
+  0%,60%,100% { transform:translateY(0); }
+  30% { transform:translateY(-6px); }
+}
+
+/* Scroll hint */
+.scroll-hint {
+  position: fixed;
+  bottom: 80px;
+  right: 50%;
+  transform: translateX(50%);
+  background: var(--bg-bubble-ai);
+  border: 1px solid var(--divider);
+  border-radius: 50%;
+  width: 36px; height: 36px;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  z-index: 20;
+  animation: pulse 2s infinite;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.scroll-hint.visible { opacity: 1; }
+@keyframes pulse {
+  0%,100% { box-shadow: 0 0 0 0 rgba(233,69,96,0.3); }
+  50% { box-shadow: 0 0 0 8px rgba(233,69,96,0); }
+}
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-dim);
+}
+.empty-state .icon { font-size: 48px; margin-bottom: 12px; }
+
+/* Responsive */
+@media (min-width: 768px) {
+  body {
+    max-width: 520px;
+    margin: 0 auto;
+    border-left: 1px solid var(--divider);
+    border-right: 1px solid var(--divider);
+  }
+  .modal-content {
+    max-width: 520px;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo">🧠</div>
+  <div>
+    <span class="title">有数AI 精选助手</span>
+    <span class="subtitle">每日为你甄选前沿科技资讯</span>
+  </div>
+</div>
+
+<div class="chat" id="chat">
+  <!-- Messages rendered by JS -->
+</div>
+
+<div class="input-area">
+  <input type="text" id="userInput" placeholder="输入你想了解的方向…" />
+  <button id="sendBtn" title="发送">▶</button>
+</div>
+
+<div class="scroll-hint" id="scrollHint" onclick="scrollToBottom()">⬇</div>
+
+<!-- Detail Modal -->
+<div class="modal-overlay" id="modal" style="display:none" onclick="closeModal(event)">
+  <div class="modal-content" id="modalContent" onclick="event.stopPropagation()">
+    <div class="close-bar"></div>
+    <h2 id="modalTitle"></h2>
+    <div class="modal-body" id="modalBody"></div>
+    <div class="modal-meta" id="modalMeta"></div>
+    <div class="modal-insight" id="modalInsight"></div>
+    <a class="modal-link" id="modalLink" href="#" target="_blank" rel="noopener">🔗 阅读原文</a>
+    <button class="modal-close-btn" onclick="closeModalDirect()">关闭</button>
+  </div>
+</div>
+
+<script>
+// ── DATA ──
+const DATA_URL = 'https://lucian-tang.github.io/dushe-daily-data/combined_3days_20260514.json';
+const SECTION_NAMES = {
+  industry: '行业',
+  dev: '开发',
+  ai: 'AI',
+  startup: '创业',
+  design: '设计'
+};
+const SECTION_EMOJI = {
+  industry: '🏭', dev: '💻', ai: '🤖', startup: '🚀', design: '🎨'
+};
+
+let allData = {};
+let loaded = false;
+
+// ── DOM ──
+const chatEl = document.getElementById('chat');
+const inputEl = document.getElementById('userInput');
+const sendBtn = document.getElementById('sendBtn');
+const scrollHint = document.getElementById('scrollHint');
+const modal = document.getElementById('modal');
+
+// ── UTILS ──
+function scrollToBottom() {
+  chatEl.scrollTop = chatEl.scrollHeight;
+  scrollHint.classList.remove('visible');
+}
+
+chatEl.addEventListener('scroll', () => {
+  const atBottom = chatEl.scrollHeight - chatEl.scrollTop - chatEl.clientHeight < 120;
+  scrollHint.classList.toggle('visible', !atBottom);
+});
+
+function delay(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+// ── MESSAGE RENDERING ──
+function addMsg(role, htmlContent, animate = true) {
+  const div = document.createElement('div');
+  div.className = `msg ${role}`;
+  div.innerHTML = `
+    <div class="avatar">${role === 'ai' ? '🧠' : '👤'}</div>
+    <div class="bubble">${htmlContent}</div>
+  `;
+  if (!animate) div.style.animation = 'none';
+  chatEl.appendChild(div);
+  setTimeout(scrollToBottom, 50);
+  return div;
+}
+
+function addTyping() {
+  const div = document.createElement('div');
+  div.className = 'msg ai';
+  div.id = 'typing-indicator';
+  div.innerHTML = `
+    <div class="avatar">🧠</div>
+    <div class="bubble">
+      <div class="typing"><span></span><span></span><span></span></div>
+    </div>
+  `;
+  chatEl.appendChild(div);
+  scrollToBottom();
+  return div;
+}
+
+function removeTyping() {
+  const el = document.getElementById('typing-indicator');
+  if (el) el.remove();
+}
+
+// ── BUILD MESSAGES ──
+function buildGreeting() {
+  const total = Object.values(allData).reduce((s, arr) => s + arr.length, 0);
+  const chips = Object.entries(SECTION_NAMES).map(([key, name]) =>
+    `<span class="chip" onclick="selectCategory('${key}')">${SECTION_EMOJI[key]} ${name}</span>`
+  ).join('') + `<span class="chip" onclick="selectCategory('all')">📋 全部</span>`;
+
+  return `
+    <p>嗨！我是有数AI精选助手 👋</p>
+    <p style="margin-top:6px;">今天我从开发者社区和科技前沿为你精选了 <strong>${total}条</strong> 资讯，涵盖行业动态、技术开发、AI前沿、创业风向、设计趋势五个方向。</p>
+    <p style="margin-top:6px;">想看看哪个方向？👇</p>
+    <div class="chips">${chips}</div>
+  `;
+}
+
+function getSummaryText(key) {
+  const items = allData[key] || [];
+  const count = items.length;
+  const name = SECTION_NAMES[key];
+  const emoji = SECTION_EMOJI[key];
+
+  const intros = {
+    industry: `${emoji} ${name}方向今天有 <strong>${count}条</strong> 精选。我扫了一遍，发现几个值得关注的变化👇`,
+    dev: `${emoji} ${name}方向今天有 <strong>${count}条</strong> 精选。开发者社区今天很热闹，给你挑了几个重点👇`,
+    ai: `${emoji} ${name}方向今天有 <strong>${count}条</strong> 精选。AI圈今天的卷度又升级了，来看看👇`,
+    startup: `${emoji} ${name}方向今天有 <strong>${count}条</strong> 精选。融资和创业动向都在这里👇`,
+    design: `${emoji} ${name}方向今天有 <strong>${count}条</strong> 精选。设计趋势和技术结合得越来越紧密了👇`
+  };
+
+  return intros[key] || `${name}方向今天有 ${count}条精选。给你挑了几个重点👇`;
+}
+
+function buildHighlights(key) {
+  const items = allData[key] || [];
+  // Pick top items (prioritize ones with good quotes)
+  const sorted = [...items].sort((a, b) => {
+    const aScore = (a.quote && a.quote.length > 5 ? 2 : 0) + (a.content.length > 30 ? 1 : 0);
+    const bScore = (b.quote && b.quote.length > 5 ? 2 : 0) + (b.content.length > 30 ? 1 : 0);
+    return bScore - aScore;
+  });
+  const highlights = sorted.slice(0, 8);
+
+  let html = `<p>${getSummaryText(key)}</p>`;
+
+  highlights.forEach((item, i) => {
+    const title = item.title.replace(/^\*+\s*/, '').trim();
+    const desc = item.content ? item.content.substring(0, 100) + (item.content.length > 100 ? '…' : '') : '';
+    html += `
+      <div class="highlight">
+        <div class="hl-title">📌 ${title}</div>
+        <div class="hl-desc">${desc}</div>
+        ${item.quote ? `<div class="hl-insight">💡 ${item.quote}</div>` : ''}
+        <button class="btn-detail" onclick="showDetail('${key}', ${i})">💡 查看详情</button>
+      </div>
+    `;
+  });
+
+  html += `<p style="margin-top:12px;font-size:13px;color:var(--text-dim);">${items.length > 8 ? `还有${items.length - 8}条没列出来，感兴趣的话跟我说～` : '以上就是这个方向今天的精华啦，有感兴趣的吗？'}</p>`;
+  return html;
+}
+
+function buildAllSummary() {
+  const sections = Object.entries(SECTION_NAMES);
+  let html = '<p>全部方向今天的概况如下👇</p>';
+
+  sections.forEach(([key, name]) => {
+    const items = allData[key] || [];
+    html += `<p style="margin:8px 0;">${SECTION_EMOJI[key]} <strong>${name}</strong>：${items.length}条精选</p>`;
+  });
+
+  html += `<p style="margin-top:10px;font-size:13px;color:var(--text-dim);">点击上方按钮选择具体方向，我给你展开讲讲～</p>`;
+  return html;
+}
+
+// ── DETAIL MODAL ──
+function showDetail(key, index) {
+  const items = [...(allData[key] || [])].sort((a, b) => {
+    const aScore = (a.quote && a.quote.length > 5 ? 2 : 0) + (a.content.length > 30 ? 1 : 0);
+    const bScore = (b.quote && b.quote.length > 5 ? 2 : 0) + (b.content.length > 30 ? 1 : 0);
+    return bScore - aScore;
+  });
+  const item = items[index];
+  if (!item) return;
+
+  const title = item.title.replace(/^\*+\s*/, '').trim();
+  document.getElementById('modalTitle').textContent = title;
+  document.getElementById('modalBody').textContent = item.content || '暂无详细内容';
+  document.getElementById('modalMeta').textContent = `来自开发者社区的精选分享`;
+  document.getElementById('modalInsight').innerHTML = item.quote ? `💡 ${item.quote}` : '';
+  document.getElementById('modalInsight').style.display = item.quote ? 'block' : 'none';
+  document.getElementById('modalLink').href = item.url || '#';
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+  // scroll modal content to top
+  document.getElementById('modalContent').scrollTop = 0;
+}
+
+function closeModal(e) {
+  if (e.target === modal) closeModalDirect();
+}
+function closeModalDirect() {
+  modal.style.display = 'none';
+  document.body.style.overflow = '';
+}
+
+// ── USER INTERACTION ──
+async function selectCategory(key) {
+  if (!loaded) return;
+
+  // Highlight selected chip
+  document.querySelectorAll('.chip').forEach(c => c.classList.remove('selected'));
+  const chips = document.querySelectorAll('.chip');
+  const sectionKeys = [...Object.keys(SECTION_NAMES), 'all'];
+  chips.forEach(c => {
+    const onclick = c.getAttribute('onclick') || '';
+    if (onclick.includes(`'${key}'`)) c.classList.add('selected');
+  });
+
+  // User message
+  const names = { ...SECTION_NAMES, all: '全部' };
+  const emojis = { ...SECTION_EMOJI, all: '📋' };
+  addMsg('user', `${emojis[key]} ${names[key]}`);
+
+  // Typing indicator
+  addTyping();
+  await delay(800 + Math.random() * 600);
+  removeTyping();
+
+  // AI response
+  const html = key === 'all' ? buildAllSummary() : buildHighlights(key);
+  addMsg('ai', html);
+}
+
+async function handleTextInput() {
+  const text = inputEl.value.trim();
+  if (!text || !loaded) return;
+  inputEl.value = '';
+
+  // User message
+  addMsg('user', text);
+
+  // Typing
+  addTyping();
+  await delay(1000 + Math.random() * 800);
+  removeTyping();
+
+  // Try to match to a category
+  const lower = text.toLowerCase();
+  let matchedKey = null;
+
+  if (lower.includes('行业') || lower.includes('产业') || lower.includes('industry')) matchedKey = 'industry';
+  else if (lower.includes('开发') || lower.includes('编程') || lower.includes('代码') || lower.includes('dev')) matchedKey = 'dev';
+  else if (lower.includes('ai') || lower.includes('人工智能') || lower.includes('模型') || lower.includes('大模型')) matchedKey = 'ai';
+  else if (lower.includes('创业') || lower.includes('融资') || lower.includes('startup') || lower.includes('公司')) matchedKey = 'startup';
+  else if (lower.includes('设计') || lower.includes('design') || lower.includes('ui') || lower.includes('ux')) matchedKey = 'design';
+  else if (lower.includes('全部') || lower.includes('所有') || lower.includes('all')) matchedKey = 'all';
+
+  if (matchedKey) {
+    await selectCategory(matchedKey);
+    return;
+  }
+
+  // Default: show all sections
+  const html = `<p>我没太理解你说的「${text}」是哪个方向 😅</p>
+    <p>要不你直接从下面选一个？我能展开详细讲讲～</p>
+    <div class="chips">${Object.entries(SECTION_NAMES).map(([k,n]) =>
+      `<span class="chip" onclick="selectCategory('${k}')">${SECTION_EMOJI[k]} ${n}</span>`
+    ).join('')}<span class="chip" onclick="selectCategory('all')">📋 全部</span></div>`;
+  addMsg('ai', html);
+}
+
+sendBtn.addEventListener('click', handleTextInput);
+inputEl.addEventListener('keydown', e => {
+  if (e.key === 'Enter') handleTextInput();
+});
+
+// ── KEYBOARD SHORTCUT ──
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeModalDirect();
+});
+
+// ── INIT ──
+async function init() {
+  addMsg('ai', `
+    <p>正在整理今天的科技资讯…</p>
+    <div class="typing" style="margin-top:6px"><span></span><span></span><span></span></div>
+  `, false);
+
+  try {
+    const resp = await fetch(DATA_URL);
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    allData = await resp.json();
+    loaded = true;
+
+    // Remove loading message
+    chatEl.innerHTML = '';
+
+    // Greeting
+    addMsg('ai', buildGreeting());
+  } catch (err) {
+    console.error('Failed to load data:', err);
+    chatEl.innerHTML = '';
+    addMsg('ai', `
+      <p>😅 抱歉，数据暂时加载失败了…</p>
+      <p style="margin-top:6px;font-size:13px;color:var(--text-dim);">可能是网络问题，刷新页面试试？或者等会儿再来，数据每天都会更新的。</p>
+    `, false);
+  }
+}
+
+init();
+</script>
+</body>
+</html>
