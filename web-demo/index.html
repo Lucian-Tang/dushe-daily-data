@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -8,10 +8,43 @@
 /* ========== Reset & Variables ========== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+/* Shared (theme-independent) */
 :root {
+  --radius: 12px;
+  --radius-sm: 8px;
+  --font-mono: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+}
+
+/* Light theme (default) */
+:root, [data-theme="light"] {
   --green: #07c160;
   --green-dim: #05a050;
   --green-glow: rgba(7, 193, 96, 0.15);
+  --bg: #FAFAFA;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F8F8F8;
+  --border: #E5E5E5;
+  --text: #4A4A4A;
+  --text-dim: #8A8A8A;
+  --text-bright: #1A1A1A;
+  --quote-bg: rgba(7, 193, 96, 0.06);
+  --quote-border: #07c160;
+  --tag-bg: rgba(7, 193, 96, 0.10);
+  --tag-text: #07c160;
+  --shadow: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-hover: 0 2px 8px rgba(0,0,0,0.10);
+  --tab-bg: #F5F5F5;
+  --backdrop-bg: rgba(250, 250, 250, 0.92);
+  --cat-industry: #5B7FBB;
+  --cat-dev: #4A90D9;
+  --cat-ai: #9B59B6;
+  --cat-startup: #E67E22;
+  --cat-design: #E74C8C;
+  --cat-social: #1ABC9C;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
   --bg: #0d1117;
   --bg-card: #161b22;
   --bg-card-hover: #1c2330;
@@ -24,9 +57,15 @@
   --tag-bg: rgba(7, 193, 96, 0.12);
   --tag-text: #07c160;
   --shadow: 0 1px 3px rgba(0,0,0,0.3);
-  --radius: 12px;
-  --radius-sm: 8px;
-  --font-mono: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+  --shadow-hover: 0 2px 8px rgba(0,0,0,0.45);
+  --tab-bg: rgba(255,255,255,0.05);
+  --backdrop-bg: rgba(13, 17, 23, 0.92);
+  --cat-industry: #5B7FBB;
+  --cat-dev: #4A90D9;
+  --cat-ai: #9B59B6;
+  --cat-startup: #E67E22;
+  --cat-design: #E74C8C;
+  --cat-social: #1ABC9C;
 }
 
 /* ========== Base ========== */
@@ -38,6 +77,7 @@ body {
   line-height: 1.6;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
+  transition: background 0.3s, color 0.3s;
 }
 
 a { color: var(--green); text-decoration: none; }
@@ -46,11 +86,12 @@ a:hover { text-decoration: underline; }
 /* ========== Header ========== */
 .header {
   position: sticky; top: 0; z-index: 100;
-  background: rgba(13, 17, 23, 0.92);
+  background: var(--backdrop-bg);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
   padding: 12px 16px 0;
+  transition: background 0.3s, border-color 0.3s;
 }
 
 .header-top {
@@ -90,6 +131,21 @@ a:hover { text-decoration: underline; }
 
 .meta-value { color: var(--green); font-weight: 600; font-variant-numeric: tabular-nums; }
 
+/* Theme toggle */
+.theme-toggle {
+  display: flex; align-items: center; justify-content: center;
+  width: 34px; height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: var(--tab-bg);
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: all 0.2s;
+  line-height: 1;
+}
+.theme-toggle:hover { transform: scale(1.1); }
+.theme-toggle:active { transform: scale(0.95); }
+
 /* ========== Tabs ========== */
 .tabs {
   display: flex; gap: 0; overflow-x: auto;
@@ -128,26 +184,56 @@ a:hover { text-decoration: underline; }
 /* ========== Main Content ========== */
 .main { max-width: 720px; margin: 0 auto; padding: 16px; }
 
-/* ========== Date Section ========== */
+/* ========== Date Section (Collapsible) ========== */
 .date-section { margin-bottom: 20px; }
 
 .date-heading {
   font-size: 0.8rem; font-weight: 600; color: var(--text-dim);
   text-transform: uppercase; letter-spacing: 0.5px;
-  padding: 8px 4px; margin-bottom: 8px;
-  border-bottom: 1px solid var(--border);
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-card);
+  box-shadow: var(--shadow);
   display: flex; align-items: center; gap: 8px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s, box-shadow 0.2s;
+  margin-bottom: 4px;
 }
+.date-heading:hover { box-shadow: var(--shadow-hover); }
+.date-heading:active { transform: scale(0.995); }
+
 .date-heading::before {
   content: '';
   width: 4px; height: 14px; border-radius: 2px;
   background: var(--green);
 }
 
+.date-arrow {
+  font-size: 0.7rem;
+  transition: transform 0.3s ease;
+  opacity: 0.6;
+}
+.date-heading.expanded .date-arrow {
+  transform: rotate(90deg);
+}
+
+.date-items {
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.25s ease;
+  max-height: 5000px;
+  opacity: 1;
+}
+.date-items.collapsed {
+  max-height: 0;
+  opacity: 0;
+}
+
 /* ========== Card ========== */
 .card {
   background: var(--bg-card);
-  border: 1px solid var(--border);
+  border: none;
+  box-shadow: var(--shadow);
   border-radius: var(--radius);
   padding: 16px;
   margin-bottom: 10px;
@@ -158,7 +244,7 @@ a:hover { text-decoration: underline; }
 
 .card:hover {
   background: var(--bg-card-hover);
-  border-color: #484f58;
+  box-shadow: var(--shadow-hover);
 }
 
 .card:active { transform: scale(0.995); }
@@ -239,6 +325,7 @@ a:hover { text-decoration: underline; }
   background: var(--bg);
   overflow-y: auto;
   animation: slideIn 0.25s ease-out;
+  transition: background 0.3s;
 }
 
 @keyframes slideIn {
@@ -259,7 +346,7 @@ a:hover { text-decoration: underline; }
   border-bottom: 1px solid var(--border);
   margin-bottom: 20px;
   position: sticky; top: 0; z-index: 10;
-  background: rgba(13, 17, 23, 0.94);
+  background: var(--backdrop-bg);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -268,7 +355,8 @@ a:hover { text-decoration: underline; }
   display: flex; align-items: center; gap: 6px;
   padding: 6px 14px;
   background: var(--bg-card);
-  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  border: none;
   border-radius: 20px;
   color: var(--text);
   font-size: 0.85rem;
@@ -276,7 +364,7 @@ a:hover { text-decoration: underline; }
   font-weight: 500;
   transition: all 0.15s;
 }
-.back-btn:hover { background: var(--bg-card-hover); border-color: #484f58; }
+.back-btn:hover { box-shadow: var(--shadow-hover); }
 .back-btn:active { transform: scale(0.96); }
 
 .back-icon { font-size: 1rem; line-height: 1; }
@@ -440,6 +528,7 @@ a:hover { text-decoration: underline; }
   .card-body { font-size: 0.82rem; -webkit-line-clamp: 2; }
   .card-quote { font-size: 0.78rem; }
   .tab { padding: 8px 14px; font-size: 0.82rem; }
+  .date-heading { padding: 8px 10px; font-size: 0.75rem; }
 
   .detail-container { padding: 12px; }
   .detail-header .detail-title { font-size: 1.1rem; }
@@ -462,6 +551,9 @@ a:hover { text-decoration: underline; }
       <span>有数Feed</span>
     </div>
     <div class="header-meta" id="headerMeta">
+      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="切换深色/浅色模式" aria-label="切换颜色模式">
+        <span id="themeIcon">🌙</span>
+      </button>
       <span class="meta-item">📊 <span class="meta-value" id="totalCount">--</span> 条</span>
       <span class="meta-item">🕐 <span class="meta-value" id="updateTime">加载中...</span></span>
     </div>
@@ -530,7 +622,7 @@ a:hover { text-decoration: underline; }
 
 <footer class="footer" id="appFooter">
   <div><span class="logo-text">有数Feed</span> — 每日科技快讯 · Demo</div>
-  <div style="margin-top:4px">v1.1 · Powered by dushe-daily-data</div>
+  <div style="margin-top:4px">v1.2 · Powered by dushe-daily-data</div>
 </footer>
 
 <script>
@@ -547,6 +639,27 @@ let currentView = 'list'; // 'list' | 'detail'
 /* ========== DOM ========== */
 const $ = (s) => document.querySelector(s);
 const $$ = (s) => document.querySelectorAll(s);
+
+/* ========== Theme ========== */
+function getTheme() {
+  return localStorage.getItem('dushe-theme') || 'light';
+}
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  const icon = $('#themeIcon');
+  if (icon) icon.textContent = theme === 'dark' ? '☀️' : '🌙';
+  localStorage.setItem('dushe-theme', theme);
+}
+
+function toggleTheme() {
+  const current = getTheme();
+  const next = current === 'dark' ? 'light' : 'dark';
+  applyTheme(next);
+}
+
+// Apply on load
+applyTheme(getTheme());
 
 /* ========== Data Fetching ========== */
 async function fetchJSON(url) {
@@ -613,7 +726,6 @@ async function loadData() {
     if (result) {
       combinedData = result.data;
       if (!indexData) {
-        // use the combined fetch date as update time fallback
         $('#updateTime').textContent =
           `${d.slice(4,6)}/${d.slice(6,8)}`;
       }
@@ -658,7 +770,6 @@ function groupByDate(items) {
     if (ai !== -1 && bi !== -1) return ai - bi;
     if (ai !== -1) return -1;
     if (bi !== -1) return 1;
-    // Both are date strings, sort descending
     return b.localeCompare(a);
   });
   return sortedKeys.map(k => ({ label: k, items: groups[k] }));
@@ -728,15 +839,44 @@ function renderTab(tabKey) {
   }
 
   let html = '';
+  let groupIndex = 0;
   for (const group of groups) {
-    html += `<section class="date-section">`;
-    html += `<div class="date-heading">${CAT_ICONS[tabKey]} ${group.label} · ${group.items.length} 条</div>`;
+    // First group (今天) is expanded by default
+    const isExpanded = groupIndex === 0;
+    const sectionId = `section-${tabKey}-${groupIndex}`;
+    html += `<section class="date-section" id="${sectionId}">`;
+    html += `<div class="date-heading${isExpanded ? ' expanded' : ''}" onclick="toggleDateSection('${sectionId}')">
+      ${CAT_ICONS[tabKey]} ${group.label} · ${group.items.length} 条
+      <span class="date-arrow">▶</span>
+    </div>`;
+    html += `<div class="date-items${isExpanded ? '' : ' collapsed'}" id="${sectionId}-items">`;
     for (const item of group.items) {
       html += renderCard(item);
     }
+    html += `</div>`;
     html += `</section>`;
+    groupIndex++;
   }
   container.innerHTML = html;
+}
+
+/* ========== Date Section Collapse ========== */
+function toggleDateSection(sectionId) {
+  const heading = document.querySelector(`#${sectionId} .date-heading`);
+  const items = document.getElementById(`${sectionId}-items`);
+  if (!heading || !items) return;
+
+  const isCollapsed = items.classList.contains('collapsed');
+
+  if (isCollapsed) {
+    // Expand
+    heading.classList.add('expanded');
+    items.classList.remove('collapsed');
+  } else {
+    // Collapse
+    heading.classList.remove('expanded');
+    items.classList.add('collapsed');
+  }
 }
 
 /* ========== Rendering (Detail) ========== */
@@ -768,7 +908,6 @@ function renderDetail(item, category) {
   if (url && url !== '#') {
     linkEl.href = url;
     linkEl.style.display = '';
-    // Truncate URL for display
     let displayUrl = url.replace(/^https?:\/\//, '');
     if (displayUrl.length > 60) displayUrl = displayUrl.slice(0, 60) + '…';
     $('#detailUrlHint').textContent = displayUrl;
@@ -782,7 +921,6 @@ function openDetail(uid) {
   const result = findItemByUid(uid);
   if (!result) return;
 
-  // Update hash (this will trigger onHashChange if hash differs)
   const newHash = `#detail/${uid}`;
   if (location.hash !== newHash) {
     history.pushState({ view: 'detail', uid }, '', newHash);
@@ -796,27 +934,23 @@ function closeDetail() {
 
 function showDetailView(item, category) {
   currentView = 'detail';
-  // Hide list, header tabs, footer
   $('#mainContent').style.display = 'none';
   $('#tabNav').style.display = 'none';
   $('#appFooter').style.display = 'none';
   $('#headerMeta').style.display = 'none';
-  // Show detail
+  $('#themeToggle').style.display = 'none';
   $('#detailView').style.display = '';
-  // Render
   renderDetail(item, category);
-  // Scroll to top
   $('#detailView').scrollTop = 0;
 }
 
 function showListView() {
   currentView = 'list';
-  // Show list view
   $('#mainContent').style.display = '';
   $('#tabNav').style.display = '';
   $('#appFooter').style.display = '';
   $('#headerMeta').style.display = '';
-  // Hide detail
+  $('#themeToggle').style.display = '';
   $('#detailView').style.display = 'none';
 }
 
@@ -824,7 +958,6 @@ function navigateHome() {
   if (currentView === 'detail') {
     history.back();
   }
-  // If already on list view, clicking logo scrolls to top
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
@@ -832,12 +965,10 @@ function navigateHome() {
 function handleHash() {
   const hash = location.hash;
   if (!hash) {
-    // No hash → list view
     if (currentView === 'detail') showListView();
     return;
   }
 
-  // Match #detail/<uid>
   const detailMatch = hash.match(/^#detail\/(.+)$/);
   if (detailMatch) {
     const uid = detailMatch[1];
@@ -845,7 +976,6 @@ function handleHash() {
     if (result) {
       showDetailView(result.item, result.category);
     } else {
-      // UID not found, go back to list
       console.warn('Detail UID not found:', uid);
       history.replaceState({ view: 'list' }, '', '#');
       showListView();
@@ -853,13 +983,10 @@ function handleHash() {
     return;
   }
 
-  // Unknown hash → show list
   if (currentView === 'detail') showListView();
 }
 
 window.addEventListener('hashchange', handleHash);
-
-// Also handle popstate for history.back() support
 window.addEventListener('popstate', (e) => {
   if (currentView === 'detail') {
     showListView();
@@ -876,10 +1003,8 @@ document.addEventListener('keydown', (e) => {
 /* ========== Tab Switching ========== */
 function switchTab(tabKey) {
   currentTab = tabKey;
-  // Update active tab
   $$('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tabKey));
   renderTab(tabKey);
-  // Scroll to top
   $('main#mainContent').scrollIntoView({ behavior: 'smooth' });
 }
 
@@ -902,7 +1027,6 @@ async function init() {
     updateTabCounts();
     renderTab(currentTab);
 
-    // Bind tab clicks
     $$('.tab').forEach(tab => {
       tab.addEventListener('click', () => {
         const key = tab.dataset.tab;
@@ -910,9 +1034,7 @@ async function init() {
       });
     });
 
-    // Handle initial hash (for direct detail links)
     handleHash();
-
   } catch (err) {
     $('main#mainContent').innerHTML = `
       <div class="state-message">
@@ -928,4 +1050,3 @@ init();
 </script>
 </body>
 </html>
-// Deploy trigger
