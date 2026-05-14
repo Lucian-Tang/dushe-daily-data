@@ -503,6 +503,66 @@
   ],
   "ai": [
     {
+      "title": "Introducing Claude for Small Business",
+      "content": "Anthropic 推出面向小企业的 Claude 套件，无缝集成 QuickBooks、PayPal、HubSpot、Canva、Docusign、Google Workspace、Microsoft 365 等工具，提供 15 个现成 agentic workflow，覆盖财务、薪酬、发票追收、营销活动等场景。用户授权后 Claude 自动执行，老板审批后生效。中小企业占美国 GDP 44%，Anthropic 希望通过这款产品弥补其与大企业在 AI 采用率上的鸿沟。",
+      "quote": "大企业早就用上定制AI了，中小企业还在用 Excel——现在 Anthropic 说别怕，Claude 来帮你加班。🔥",
+      "source": "Anthropic Blog / Hacker News",
+      "url": "https://www.anthropic.com/news/claude-for-small-business",
+      "published": "2026-05-14",
+      "collectedAt": "2026-05-14T18:00:00",
+      "uid": "ai_190900db"
+    },
+    {
+      "title": "Needle: We Distilled Gemini Tool Calling into a 26M Model",
+      "content": "开源项目 Needle 将 Gemini 3.1 蒸馏成一个仅 2600 万参数的 Simple Attention Network，在单次 function call 任务上击败 FunctionGemma-270M、Qwen-0.6B 等更大模型。权重完全开放，可在 Mac/PC 本地微调，生产环境吞吐量达 6000 tokens/s prefill。该研究探索极小 AI 在手机、手表、眼镜等消费设备上的可行性，代表了端侧 AI 的新方向。",
+      "quote": "把大模型压缩到能跑在手表上，Google 看了会沉默，Apple 看了会流泪。😂",
+      "source": "GitHub / Hacker News",
+      "url": "https://github.com/cactus-compute/needle",
+      "published": "2026-05-14",
+      "collectedAt": "2026-05-14T18:00:00",
+      "uid": "ai_e4b03fda"
+    },
+    {
+      "title": "Quantifying Sensitivity for Tree Ensembles: A symbolic and compositional approach",
+      "content": "研究人员提出 XCount 算法，通过代数决策图（ADD）编码和可组合子问题分解，高效量化决策树集成（DTE）模型对输入特征微小变化的敏感程度。该方法在 certified error 和 confidence bound 内运行，实验显示相比现有模型计数器实现显著加速。决策树集成广泛用于安全关键领域，此研究对 AI 验证和可解释性具有重要价值。",
+      "quote": "安全关键的 AI 最怕的就是我不知道这个输入会让我分错，XCount 终于能量化这件事了。🔍",
+      "source": "arXiv (cs.AI)",
+      "url": "https://arxiv.org/abs/2605.13830",
+      "published": "2026-05-13",
+      "collectedAt": "2026-05-14T18:00:00",
+      "uid": "ai_1d8a3796"
+    },
+    {
+      "title": "Senses Wide Shut: A Representation-Action Gap in Omnimodal LLMs",
+      "content": "新研究 IMAVB 发现，当前 Omnimodal LLM（包括 Gemini 3.1 Pro）在视觉和音频输入与文本描述矛盾时，其隐藏状态能检测到这种不一致，但模型行为上几乎不会拒绝错误前提——即知道但不说。研究提出 PGLA 方法，将编码层的不匹配信号重新注入解码过程，改善拒绝行为。音频模态的 grounding 弱于视觉模态，表明瓶颈在翻译而非感知。",
+      "quote": "眼睛和耳朵都告诉你错了，嘴巴还是坚持说对的呢——这不就是 AI 版的睁眼说瞎话。🤦",
+      "source": "arXiv (cs.AI / cs.CL)",
+      "url": "https://arxiv.org/abs/2605.13737",
+      "published": "2026-05-13",
+      "collectedAt": "2026-05-14T18:00:00",
+      "uid": "ai_6558b3ea"
+    },
+    {
+      "title": "Arena AI Model ELO History",
+      "content": "开源项目 AI Arena History 每天自动抓取 LMSYS Arena 排行榜数据，追踪各厂商旗舰模型的 ELO 分数变化，揭示模型发布后的质量退化（如过度审核、量化降级、行为退化）。消费者界面往往添加了系统 prompt 和安全过滤器，与原始 API 表现存在差异，该工具用图表让这些看不见的变化无所遁形。",
+      "quote": "厂商悄悄把模型削弱的秘密，被一个开源项目扒得一干二净——这才是真正的 AI 打假博主。📊",
+      "source": "Hacker News",
+      "url": "https://mayerwin.github.io/AI-Arena-History/",
+      "published": "2026-05-14",
+      "collectedAt": "2026-05-14T18:00:00",
+      "uid": "ai_06fff5bc"
+    },
+    {
+      "title": "How to Interpret Agent Behavior",
+      "content": "研究团队提出 ACT*ONOMY，一个三层层级结构（10 actions / 46 subactions / 120 leaf categories）共 176 个行为类别的分类系统，用于自动分析 AI Agent 的运行时轨迹。基于 Grounded Theory 方法开发，配套开源分析 pipeline，可用于检测 Agent 失败模式、比较不同 Agent 的行为画像。研究团队称该框架为共享词汇表，帮助研究者和终端用户更一致地理解和监督 Agent 行为。",
+      "quote": "Claude Code 跑了一天一夜，到底在干啥——现在终于有字典可以查了。📖",
+      "source": "arXiv (cs.AI)",
+      "url": "https://arxiv.org/abs/2605.13625",
+      "published": "2026-05-13",
+      "collectedAt": "2026-05-14T18:00:00",
+      "uid": "ai_360ea9be"
+    },
+    {
       "title": "🐑 Shepherd：Meta-Agent 运行框架，用 Lean 证明器给 Agent 环境做版本控制",
       "content": "Meta-Agent 系统（Agent 操控 Agent）面临两大工程难题：Agent 状态难以追踪回滚、多 Agent 并行探索时计算成本爆炸。Shepherd 提出将 Meta-Agent 操作形式化为函数，用 Lean 证明语言机械化核心操作，并记录每次 Agent-环境交互为带类型的 Git-like 执行 trace。在这种形式化下，任何历史状态都可以 fork 并回放——比 Docker fork 快 5 倍，prompt 缓存复用率达 95% 以上。在 TerminalBench-2 上，Tree-RL fork 策略将任务完成率从 34.2% 提升到 39.4%；pair coding 场景 supervisor 干预使通过率从 28.8% 升至 54.7%。这对需要高可靠 Agent 协作的研究和工程团队是基础设施级别的贡献，已开源。",
       "quote": "数学公式推完发现业务逻辑没对过",
@@ -601,16 +661,6 @@
       "published": "2026-05-13",
       "uid": "ai_fdd4cdf9",
       "collectedAt": "2026-05-13T00:00:00"
-    },
-    {
-      "title": "🧠 Needle：26M 参数工具调用模型，蒸馏 Gemini 3.1 跑在手表上",
-      "content": "从 Gemini 3.1 蒸馏出仅 26M 参数的 Simple Attention Network，专门用于单次工具调用（single-shot function call）。最大亮点是权重复合开源，可在 Mac/PC 本地微调，生产环境预填达到 6000 tok/s、解码 1200 tok/s。在消费级设备（手机、手表、眼镜）上对比 FunctionGemma-270M、Qwen-0.6B 等更大模型表现出竞争力。对追求边缘 AI 和 on-device AI 的开发者，这是当前最小的可用工具调用方案。",
-      "quote": "大模型卷不动了开始卷纳米模型 🔥",
-      "source": "Hacker News (Show HN)",
-      "url": "https://github.com/cactus-compute/needle",
-      "published": "2026-05-13",
-      "uid": "ai_eedd4cfa",
-      "collectedAt": "2026-05-13T18:00:00"
     },
     {
       "title": "🖱️ DeepMind 重新发明鼠标指针：AI Pointer 点一下就知道你要什么",
