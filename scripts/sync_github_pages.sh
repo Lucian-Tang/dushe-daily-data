@@ -1,7 +1,7 @@
 #!/bin/bash
 # sync_github_pages.sh - 每日同步数据到 GitHub Pages（mini program 数据源）
 # 新流程: enrichment → copy → push
-# Cron: 30 3 * * * 和 40 11 * * *
+# Cron: 25 4 * * * (早间) 和 40 11 * * * (午间)
 
 set -e
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"

@@ -86,6 +86,59 @@ else
             exit 1
         fi
     fi
+    
+    # ── Phase 2: 深度 QA — CDN 文件 published 日期校验 ──
+    log "[2b/5] CDN 文件 published 日期深度校验..."
+    TODAY_DASH=$(date +%Y-%m-%d)
+    CDN_SECTIONS=("industry" "dev" "ai" "startup" "design")
+    CDN_ERRORS=()
+    for SEC in "${CDN_SECTIONS[@]}"; do
+        CDN_FILE="$WORKSPACE/${SEC}_daily_$(date +%Y%m%d).json"
+        if [ ! -f "$CDN_FILE" ]; then
+            CDN_ERRORS+=("❌ ${SEC}: CDN 文件缺失 → ${CDN_FILE}")
+            continue
+        fi
+        # 检查所有 item 的 published 是否匹配文件名日期
+        MISMATCH_COUNT=$(python3 -c "
+import json
+with open('$CDN_FILE') as f:
+    data = json.load(f)
+if not isinstance(data, list):
+    print(-1)
+    exit()
+today = '$TODAY_DASH'
+total = len(data)
+if total == 0:
+    print(0)
+    exit()
+mismatch = sum(1 for i in data if i.get('published','')[:10] != today)
+print(mismatch)
+")
+        if [ "$MISMATCH_COUNT" = "-1" ]; then
+            CDN_ERRORS+=("❌ ${SEC}: CDN 文件格式异常（非数组）")
+        else
+            ITEM_COUNT=$(python3 -c "import json;print(len(json.load(open('$CDN_FILE'))))")
+            if [ "$ITEM_COUNT" -gt "0" ] && [ "$MISMATCH_COUNT" = "$ITEM_COUNT" ]; then
+                CDN_ERRORS+=("❌ ${SEC}: ${MISMATCH_COUNT}/${ITEM_COUNT} 条 published 日期全不匹配 ${TODAY_DASH}")
+            elif [ "$ITEM_COUNT" = "0" ]; then
+                CDN_ERRORS+=("⚠️ ${SEC}: CDN 文件为空 (0条数据)")
+            elif [ "$MISMATCH_COUNT" -gt "0" ]; then
+                log "   ⚠️ ${SEC}: ${MISMATCH_COUNT}/${ITEM_COUNT} 条日期不匹配（部分错误，继续）"
+            else
+                log "   ✅ ${SEC}: ${ITEM_COUNT} 条，日期全部匹配"
+            fi
+        fi
+    done
+    
+    if [ ${#CDN_ERRORS[@]} -gt 0 ]; then
+        for err in "${CDN_ERRORS[@]}"; do
+            log "   $err"
+        done
+        log "❌ CDN 深度 QA 失败 (${#CDN_ERRORS[@]} 项错误)，终止 promote"
+        log "   修复步骤: 检查 normalize_daily_data.py 是否正确执行"
+        exit 1
+    fi
+    log "✅ CDN 深度 QA 全部通过"
 fi
 
 # Step 3: 检查 combined_3days 文件
@@ -122,6 +175,27 @@ git merge staging --no-edit || {
     log "❌ 合并冲突！请手动解决"
     git merge --abort
     git checkout staging
+    exit 1
+}
+
+# ── index.json 校验（防止旧版覆盖）──
+log "[4b/5] 校验 index.json..."
+TODAY_SHORT=$(date +%Y%m%d)
+python3 -c "
+import json
+with open('index.json') as f:
+    d = json.load(f)
+sections = ['industry','dev','ai','startup','design']
+bad = [s for s in sections if '$TODAY_SHORT' not in str(d.get(s,''))]
+assert not bad, f'index.json 仍指向旧文件: {bad}'
+print(f'index.json ✅ 所有 {len(sections)} 板块指向今日文件')
+" || {
+    log "❌ index.json 校验失败！可能被旧版覆盖"
+    log "   当前 index.json 内容:"
+    python3 -c "import json;print(json.dumps(json.load(open('index.json')),indent=2,ensure_ascii=False))" 2>/dev/null | head -20
+    git merge --abort 2>/dev/null || true
+    git checkout staging
+    log "   已回退合并，请检查 staging 上的 index.json 并手动修复"
     exit 1
 }
 

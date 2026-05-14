@@ -47,14 +47,21 @@ def normalize_item(item, filename_date):
     fixed = False
     issues = []
 
-    # 1. Fix published date format
-    pub = item.get('published', '')
-    if pub:
-        pub_clean = pub[:10]
-        if pub != pub_clean:
+    # 1. Force published date = filename date (bugfix: AI 生成的 published 是原文日期，小程序按 published 判断今日数据)
+    pub_raw = item.get('published', '')
+    pub_clean = pub_raw[:10] if pub_raw else ''
+    try:
+        filename_date_ymd = datetime.strptime(filename_date, '%Y%m%d').strftime('%Y-%m-%d')
+        if pub_clean != filename_date_ymd:
+            old_val = pub_clean or '(空)'
+            item['published'] = filename_date_ymd
+            fixed = True
+            issues.append(f'published日期强制修正: {old_val} -> {filename_date_ymd}')
+    except ValueError:
+        if pub_raw and pub_raw != pub_clean:
             item['published'] = pub_clean
             fixed = True
-            issues.append(f'published格式修正: {pub} -> {pub_clean}')
+            issues.append(f'published格式修正: {pub_raw} -> {pub_clean}')
 
     # 2. Ensure url field exists
     url = item.get('url', '')
