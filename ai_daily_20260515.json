@@ -88,5 +88,65 @@
     "url": "https://www.jiqizhixin.com/articles/45a270eb-9228-4ef1-941d-c325aac6272f>",
     "published": "2026-05-15",
     "uid": "ai_2aa1bf90"
+  },
+  {
+    "title": "OpenDeepThink: Parallel Reasoning via Bradley-Terry Aggregation",
+    "content": "上海团队提出 OpenDeepThink，通过 Bradley-Terry 配对比较替代传统单链推理，在 8 轮 LLM 调用内将 Gemini 3.1 Pro 的 Codeforces Elo 提升 405 分。框架将多个候选答案随机配对、LLM 判断胜负并聚合为全局排名，顶候选项保留并对前 3/4 进行突变优化。这一「群体智能」推理范式突破单链扩展瓶颈，对复杂推理类任务（代码/数学）有重大参考价值。",
+    "quote": "少采样，多比较，27分钟提分405",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15177",
+    "published": "2026-05-15",
+    "collectedAt": "2026-05-15T18:15:00",
+    "uid": "ai_eve_15177"
+  },
+  {
+    "title": "APWA: A Distributed Architecture for Parallelizable Agentic Workflows",
+    "content": "研究者提出 APWA（Agent-Parallel Workload Architecture），将复杂任务分解为无交叉干扰的子问题，实现真正并行执行而非传统多 Agent 的顺序协调。APWA 支持异构数据和并行处理模式，在 prior 系统完全失效的大规模任务上仍可扩展。该架构对需要高吞吐的 AI Agent 场景（客服、数据处理）具有直接落地价值。",
+    "quote": "终于不用让Agents排队开会了",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15132",
+    "published": "2026-05-15",
+    "collectedAt": "2026-05-15T18:15:00",
+    "uid": "ai_eve_15132"
+  },
+  {
+    "title": "Orchard: An Open-Source Agentic Modeling Framework",
+    "content": "Orchard 框架集结微软/北大/清华等机构力量，推出全开源可扩展 Agent 训练方案。Orchard-SWE 在 SWE-bench 以 67.5% 准确率刷新开源纪录，Orchard-GUI 仅用 0.4K 蒸馏轨迹实现 74.1% WebVoyager 成功率，Orchard-Claw 在个人助手任务上达 59.6% pass@3。核心创新在于轻量级 Orchard Env 环境服务，统一了跨任务域的沙箱生命周期管理。",
+    "quote": "开源的力量：比闭源还强，还免费",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15040",
+    "published": "2026-05-15",
+    "collectedAt": "2026-05-15T18:15:00",
+    "uid": "ai_eve_15040"
+  },
+  {
+    "title": "Unlocking asynchronicity in continuous batching",
+    "content": "HuggingFace 发布深度技术博文，详解如何通过异步连续批处理将 CPU 与 GPU 工作解耦并行，使 GPU 空闲时间从近 25% 压缩至接近零。H200 每小时 5 美元的成本下，GPU 满载意味着推理成本直降四分之一。该方案对部署大规模 LLM 推理服务的团队（API 平台、企业 AI）有直接降本意义。",
+    "quote": "让GPU永远不摸鱼，省的就是赚的",
+    "source": "HuggingFace",
+    "url": "https://huggingface.co/blog/continuous_async",
+    "published": "2026-05-15",
+    "collectedAt": "2026-05-15T18:15:00",
+    "uid": "ai_eve_async"
+  },
+  {
+    "title": "CAST: Case-Based Calibration of Adaptive Reasoning and Execution for LLM Tool Use",
+    "content": "CAST 框架将历史执行轨迹作为结构化案例库，通过提取案例信号识别任务复杂度并预测结构故障点。在 BFCLv2 和 ToolBench 上，CAST 提升整体执行准确率 5.85 个百分点，同时将平均推理长度缩短 26%，显著减少高影响结构性错误。该方法让 LLM 工具调用更可靠，对 AI Agent 工程落地有直接帮助。",
+    "quote": "案例库比Prompt工程更稳",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15041",
+    "published": "2026-05-15",
+    "collectedAt": "2026-05-15T18:15:00",
+    "uid": "ai_eve_15041"
+  },
+  {
+    "title": "Britain's latest civil servant is a chatbot trained on GOV.UK misery",
+    "content": "英国政府周五正式推出 GOV.UK Chat，训练于数万页官方指南，旨在帮助公民快速获取生育津贴、退休金、驾照、创业补助等政务信息。政府宣称每天处理约 10 万通咨询电话，但否认用 AI 替代人类支持。民众担忧主要集中于隐私和「出问题找不到人」，此前民调显示多数英国人对 AI 渗透公共服务感到不安。",
+    "quote": "政务AI先行，但英国人显然不太买账",
+    "source": "The Register",
+    "url": "https://www.theregister.com/public-sector/2026/05/15/britains-latest-civil-servant-is-a-chatbot-trained-on-govuk-misery/5240955",
+    "published": "2026-05-15",
+    "collectedAt": "2026-05-15T18:15:00",
+    "uid": "ai_eve_govchat"
   }
 ]
