@@ -79,12 +79,12 @@ def get_recent_files(section, index_data, max_days=3):
     history = index_data.get('history', {})
     section_history = history.get(section, [])
 
-    # 排除今日文件(已在顶层 latest 中),取最近2天
+    # 排除今日文件(已在顶层 latest 中),从最靠近今天的文件开始取
     today_file = index_data.get(section)
     recent = []
-    for fname in section_history:
+    for fname in reversed(section_history):
         if fname != today_file:
-            recent.append(fname)
+            recent.insert(0, fname)  # 保持日期从旧到新顺序
         if len(recent) >= max_days - 1:
             break
     return recent
