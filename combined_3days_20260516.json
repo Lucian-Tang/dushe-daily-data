@@ -552,96 +552,6 @@
   ],
   "ai": [
     {
-      "title": "🏆 Achieving Gold-Medal-Level Olympiad Reasoning via Simple and Unified Scaling",
-      "content": "**原文链接：** <https://arxiv.org/abs/2605.13301> 该研究提出一种简洁统一的缩放配方，将后训练推理骨干模型转化为奥林匹克级解题器。通过逆向困惑度课程SFT和逐步推理缩放，在IMO、IPhO等国际竞赛中达到金牌水平。对推理模型的规模化部署和学术研究具有里程碑意义。 > 💬 IMO金牌交给AI，人类该去学什么",
-      "quote": "",
-      "source": "arXiv**",
-      "url": "https://arxiv.org/abs/2605.13301>",
-      "published": "2026-05-16",
-      "uid": "ai_36aeb643"
-    },
-    {
-      "title": "🔮 ATLAS: Agentic or Latent Visual Reasoning? One Word is Enough for Both",
-      "content": "**原文链接：** <https://arxiv.org/abs/2605.15198> 提出ATLAS框架，用一个离散的「功能词元」同时承载agentic操作和隐式视觉推理，无需生成中间视觉内容。引入Latent-Anchored GRPO稳定训练，兼容标准SFT和RL流程。在视觉推理benchmark上超越agentic和latent两条路线。 > 💬 一个词搞定视觉推理，扩散模型脸往哪搁",
-      "quote": "",
-      "source": "arXiv**",
-      "url": "https://arxiv.org/abs/2605.15198>",
-      "published": "2026-05-16",
-      "uid": "ai_16df8aba"
-    },
-    {
-      "title": "🌍 FutureSim: Replaying World Events to Evaluate Adaptive Agents",
-      "content": "**原文链接：** <https://arxiv.org/abs/2605.15188> FutureSim构建了一个回放真实世界事件的模拟环境，让AI Agent在知识截止后按时间顺序阅读新闻并预测事件走向。最佳Agent准确率仅25%，多数模型Brier评分甚至不如随机猜测。为评估Agent长周期自适应能力提供了现实基准。 > 💬 AI预测三个月后的事？不如闭眼瞎猜",
-      "quote": "",
-      "source": "arXiv**",
-      "url": "https://arxiv.org/abs/2605.15188>",
-      "published": "2026-05-16",
-      "uid": "ai_a7efa211"
-    },
-    {
-      "title": "🧠 EvolveMem: Self-Evolving Memory Architecture via AutoResearch for LLM Agents",
-      "content": "**原文链接：** <https://huggingface.co/papers/2605.13941> 提出EvolveMem自进化记忆架构，不仅存储内容更新，连检索函数、融合策略、回答生成策略也在运行时自动演化。打破了传统Agent记忆系统「存的内容变但检索逻辑不变」的局限，对需要长期多轮交互的Agent应用具有重要意义。 > 💬 Agent终于学会自己升级脑子了",
-      "quote": "",
-      "source": "HuggingFace**",
-      "url": "https://huggingface.co/papers/2605.13941>",
-      "published": "2026-05-16",
-      "uid": "ai_778ba050"
-    },
-    {
-      "title": "🗑️ STALE: Can LLM Agents Know When Their Memories Are No Longer Valid?",
-      "content": "**原文链接：** <https://huggingface.co/papers/2605.06527> 研究发现LLM Agent在记忆管理中存在关键盲区——当新信息暗示旧记忆已过时（但未明确否定），Agent无法自主检测并修正。提出STALE基准系统评估这一能力缺陷，对构建可靠的长期记忆Agent系统有直接指导意义。 > 💬 AI记错了还不知道自己错了，这很人类",
-      "quote": "",
-      "source": "HuggingFace**",
-      "url": "https://huggingface.co/papers/2605.06527>",
-      "published": "2026-05-16",
-      "uid": "ai_5a8bbfb3"
-    },
-    {
-      "title": "🧬 Darwin Family: MRI-Trust-Weighted Evolutionary Merging for Training-Free Scaling",
-      "content": "**原文链接：** <https://huggingface.co/papers/2605.14386> 提出Darwin Family框架，通过14维自适应基因组和MRI信任融合实现无训练的模型进化合并。无需额外训练即可重组多个LLM的潜在能力，在推理benchmark上取得显著提升。为小团队低成本提升模型能力提供了新思路。 > 💬 不训练也能让模型变强，穷人的LLM福音",
-      "quote": "",
-      "source": "HuggingFace**",
-      "url": "https://huggingface.co/papers/2605.14386>",
-      "published": "2026-05-16",
-      "uid": "ai_fe4e551a"
-    },
-    {
-      "title": "💻 阿里发布Qoder 1.0，可全面接管代码生成、验证和交付流程",
-      "content": "**原文链接：** <https://www.qbitai.com/2026/05/418027.html> 阿里巴巴正式发布Qoder 1.0，覆盖从代码生成、代码审查、测试验证到持续交付的全流程AI代理。支持Windows/macOS/Linux全平台，目标让开发者从编码执行者转型为需求定义者，对软件开发行业工作模式产生深远影响。 > 💬 全栈工程师？不，你以后是需求分析师",
-      "quote": "",
-      "source": "量子位**",
-      "url": "https://www.qbitai.com/2026/05/418027.html>",
-      "published": "2026-05-16",
-      "uid": "ai_41d03ee7"
-    },
-    {
-      "title": "🐜 蚂蚁百灵 Ring-2.6-1T 开源，Agent 执行能力全面增强",
-      "content": "**原文链接：** <https://www.qbitai.com/2026/05/417961.html> 蚂蚁集团开源百灵大模型Ring-2.6-1T，在AIME 26上得分95.83，显著增强Agent执行能力。作为国产开源大模型的最新成员，其Agent工具调用和任务规划能力达到业界前沿水平，对开发者和企业用户提供了新的开源选择。 > 💬 蚂蚁开源1万亿参数，够小公司吃三年",
-      "quote": "",
-      "source": "量子位**",
-      "url": "https://www.qbitai.com/2026/05/417961.html>",
-      "published": "2026-05-16",
-      "uid": "ai_1454ce3d"
-    },
-    {
-      "title": "🔧 国产GPU组了个开源局，把SGLang等核心开发者都摇来了",
-      "content": "**原文链接：** <https://www.qbitai.com/2026/05/417791.html> 国产GPU厂商联合发起开源生态联盟，邀请了SGLang等主流推理框架的核心开发者参与共建。此举旨在打破国产GPU长期面临的软件生态短板，通过深度适配主流推理栈解决开发者\"无框架可用\"的困难，影响整个国产AI芯片产业链。 > 💬 硬件造出来了软件跑不动，终于知道组局了",
-      "quote": "",
-      "source": "量子位**",
-      "url": "https://www.qbitai.com/2026/05/417791.html>",
-      "published": "2026-05-16",
-      "uid": "ai_704bdf3f"
-    },
-    {
-      "title": "🤖 具身智能行业前4月融资超200笔，总规模超550亿元",
-      "content": "**原文链接：** <https://36kr.com/p/3809911566704388> 2026年前4个月具身智能赛道完成超200笔融资，总规模突破550亿元人民币，成为上半年最火赛道。同时国内最早布局「人类学习」路线的具身公司获数亿元融资，具身智能正在从学术验证走向产业化落地的关键转折期。 > 💬 半年550亿砸给机器人，泡沫还是风口自己品 > 毒舌点评 by Lucia 🔥 — 少废话，多看论文",
-      "quote": "",
-      "source": "36氪**",
-      "url": "https://36kr.com/p/3809911566704388>",
-      "published": "2026-05-16",
-      "uid": "ai_8c435a81"
-    },
-    {
       "title": "🔬 Negation Neglect: When models fail to learn negations in training",
       "content": "**原文链接：** <https://arxiv.org/abs/2605.13829> 研究发现大模型在微调时存在「否定忽视」现象——如果训练文档在否定某个虚假主张（如「研究表明不存在外星人」），模型反而会认为该主张为真。测试中 Qwen3.5 的 belief rate 从 2.5% 飙升至 88.6%，对 AI 安全训练有重大警示意义。 > 💬 你越说「这是假的」，AI 越当真",
       "quote": "你越说「这是假的」，AI 越当真",
@@ -1211,6 +1121,87 @@
   ],
   "design": [
     {
+      "title": "Ten Data-Backed Truths Of User Experience ROI",
+      "content": "Smashing Magazine 的 Carrie Webster 用10条硬数据为UX ROI「洗白」。核心干货：设计阶段修Bug成本仅上线后的1/100；1秒延迟降低20%转化率；用户只需50毫秒就对你的网站下结论。她呼吁设计师用数据说话，别只会说「用户感受不好」——毕竟老板只看数字。",
+      "quote": "设计师终于学会算账了，老板感动得又批了一个Figma插件预算。*",
+      "source": "Smashing Magazine",
+      "url": "https://www.smashingmagazine.com/2026/05/data-backed-truths-user-experience-roi/",
+      "published": "2026-05-16",
+      "uid": ""
+    },
+    {
+      "title": "Rethinking The Experience Of System Tools",
+      "content": "Kyrylo Levashov 在 Smashing Magazine 上质问：为什么系统工具（磁盘清理、杀毒软件）的体验还停留在90年代？他引用Dyson吸尘器和Method洗洁精的案例，说明即使用户用完后想逃离的工具，也可以做得有温度。核心洞察：没人喜欢用系统工具不是因为功能难用，而是交互全程没有正向情绪信号。",
+      "quote": "连磁盘清理都在教UX做人：你不把我当人设计，我就不买你高级版。*",
+      "source": "Smashing Magazine",
+      "url": "https://www.smashingmagazine.com/2026/05/rethinking-experience-system-tools/",
+      "published": "2026-05-16",
+      "uid": ""
+    },
+    {
+      "title": "Designing Stable Interfaces For Streaming Content",
+      "content": "当AI响应开始流式输出（streaming），传统UI设计的三座大山浮现：自动滚回底部让你不能往上读、容器不断膨胀导致布局偏移、浏览器每帧渲染都被流更新轰炸。Joas Pambou 用三个Demo演示了这些坑，并给出了「Tail Toggle」「Scroll Anchor」「Render Throttling」等实战策略。适合所有做AI对话/日志/实时仪表盘的团队。",
+      "quote": "流式UI三个坑：滚不了、点不上、晃瞎眼——AI聊天界面抄作业的赶紧来。*",
+      "source": "Smashing Magazine",
+      "url": "https://www.smashingmagazine.com/2026/05/designing-stable-interfaces-streaming-content/",
+      "published": "2026-05-16",
+      "uid": ""
+    },
+    {
+      "title": "The UX Designer's Nightmare: When \"Production-Ready\" Becomes A Design Deliverable",
+      "content": "2026年职场现实：73%的设计师视AI为主要协作者，但「协作」变成了「你要会写React组件」。Carrie Webster 指出行业的危险趋势——企业用AI的产出速度取代了体验质量。当设计师需要同时搞定「用户体验」和「生产级代码」，最终只会两个都做到「平庸」。这篇文章是所有被迫成为「设计工程师」的UX人的集结号。",
+      "quote": "老板说：你用AI写代码啊。你问：那招我干嘛？老板沉默。*",
+      "source": "Smashing Magazine",
+      "url": "https://www.smashingmagazine.com/2026/04/production-ready-becomes-design-deliverable-ux/",
+      "published": "2026-05-16",
+      "uid": ""
+    },
+    {
+      "title": "Practical Interface Patterns For AI Transparency (Part 2)",
+      "content": "Victor Yocco 继续探讨AI透明度的实操模式。核心方法是「决策节点审计」（Decision Node Audit）——让设计团队和工程团队坐在一起，把AI的后端逻辑节点映射到UI上，并用「风险-影响矩阵」决定哪些节点需要展示。案例演示了保险理赔AI如何分三步（图像分析→警方报告审查→保单比对）建立用户信任。",
+      "quote": "AI黑盒骗不了人了，现在连保险理赔都得走「三步验证」透明路线。*",
+      "source": "Smashing Magazine",
+      "url": "https://www.smashingmagazine.com/2026/05/practical-interface-patterns-ai-transparency/",
+      "published": "2026-05-16",
+      "uid": ""
+    },
+    {
+      "title": "Identifying Necessary Transparency Moments In Agentic AI (Part 1)",
+      "content": "Victor Yocco 在前篇奠定了AI透明度设计的理论基础。他提出的「黑箱 vs 数据倾泻」两难困境精准命中痛点——AI执行复杂任务时，要么完全隐藏用户看不懂，要么疯狂刷日志让用户恐慌。文章给出了可操作的「透明时刻」识别框架，帮助设计师在每30秒的AI工作流中找到那个「不多不少刚刚好」的信任建立点。",
+      "quote": "AI界的两极：要么黑箱让你心慌，要么刷日志让你发疯——中间地带谁做谁赢。*",
+      "source": "Smashing Magazine",
+      "url": "https://www.smashingmagazine.com/2026/04/identifying-necessary-transparency-moments-agentic-ai-part1/",
+      "published": "2026-05-16",
+      "uid": ""
+    },
+    {
+      "title": "fromanother.love - SOTD",
+      "content": "Awwwards 5月14日「Site of the Day」获奖作品。fromanother.love 是一家艺术家主导的创意代理商官网，以叙事节奏和电影感影像为设计核心。网站大量运用定制动画、编辑式排版和沉浸式视觉——从\"Who We Are\"到\"Creative Lab\"每个版块都像翻杂志一样流畅，评分7.44/10。",
+      "quote": "创意公司官网做得像电影，业务水平当然也像电影——你永远不知道续集好不好看。*",
+      "source": "Awwwards",
+      "url": "https://www.awwwards.com/sites/fromanother-love",
+      "published": "2026-05-16",
+      "uid": ""
+    },
+    {
+      "title": "Pomelo - Nominee",
+      "content": "Awwwards 5月15日提名作品。Pomelo 是一个可扩展的模块化品牌网站，巧妙平衡了品牌叙事和自我管理体系架构。亮点包括：品牌故事驱动的Hero区域、细腻的滚动交互、Dashboard式的数据展示页面以及完善的设计系统组件化方案。既是一个企业网站，也是一套可复用的设计系统样板。",
+      "quote": "一个品牌网站做得比你们公司的设计系统还完整，建议收藏抄作业。*",
+      "source": "Awwwards",
+      "url": "https://www.awwwards.com/sites/pomelo",
+      "published": "2026-05-16",
+      "uid": ""
+    },
+    {
+      "title": "Trendy Gradients in Web Design",
+      "content": "Awwwards Blog 发布了2026年网页渐变色趋势分析。从Spotify双色调复兴到Vaporwave/Memphis美学的复刻浪潮，渐变不再只是背景装饰，而是渗透到hover效果、3D元素、图标和标题的每一个角落。文章还整理了Webgradients、Khroma AI、Color Space等渐变色工具全家桶，帮设计师一键生成CSS代码。",
+      "quote": "渐变回来了，就像你妈的喇叭裤又翻出来穿了一一时尚是个圈，设计也是。*",
+      "source": "Awwwards",
+      "url": "https://www.awwwards.com/gradients-in-web-design-elements.html",
+      "published": "2026-05-16",
+      "uid": ""
+    },
+    {
       "title": "Raindrop Workshop",
       "content": "Raindrop Workshop 是一款面向AI Agent的开源免费本地调试器，帮助开发者直接在本地环境中追踪、测试和调试AI代理的行为链路。它提供了可视化的工作台界面，让Agent开发不再是黑箱操作。",
       "quote": "调试AI就像调教猫——你以为你掌控一切，其实它只是在配合你。",
@@ -1299,16 +1290,6 @@
       "published": "2026-05-15",
       "uid": "design_8375dc78",
       "collectedAt": "2026-05-14T23:48:09.757500+00:00"
-    },
-    {
-      "title": "Designing Stable Interfaces For Streaming Content",
-      "category": "frontend",
-      "source": "Smashing Magazine",
-      "url": "https://www.smashingmagazine.com/2026/05/designing-stable-interfaces-streaming-content/",
-      "published": "2026-05-14",
-      "content": "流式内容界面（如AI对话逐字输出）设计远比表面复杂。Joas Pambou解析了布局抖动、动态插入时的键盘导航、ARIA属性实时更新、动画偏好以及流中断时的优雅降级等细节。这不仅是前端问题——它直接影响可访问性和认知负担。对正在做AI聊天界面或实时协作工具的设计工程师，这是一篇实操必读。",
-      "quote": "AI打字酷炫，但背后的reflow地狱只有经历过的人才懂。",
-      "uid": "e4364fca944f"
     },
     {
       "title": "Cognitive Bias Index",
