@@ -82,9 +82,9 @@ def get_recent_files(section, index_data, max_days=3):
     # 排除今日文件(已在顶层 latest 中),从最靠近今天的文件开始取
     today_file = index_data.get(section)
     recent = []
-    for fname in reversed(section_history):
+    for fname in section_history:
         if fname != today_file:
-            recent.insert(0, fname)  # 保持日期从旧到新顺序
+            recent.append(fname)  # 保持日期从旧到新顺序
         if len(recent) >= max_days - 1:
             break
     return recent
@@ -133,7 +133,7 @@ def filter_recent(items, max_days_back=3, today_date=None):
                 item['published'] = pub_clean
                 result.append(item)
         except:
-            result.append(item)  # 无法解析的日期保持原样
+            pass  # 无法解析的日期跳过(raw数据无效日期)
     return result
 
 
