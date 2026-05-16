@@ -1,110 +1,110 @@
 [
   {
     "title": "Bun Rust rewrite merged — Miri finds UB in safe Rust code",
-    "content": "",
-    "quote": "",
-    "source": "",
-    "url": "#",
+    "content": "Bun 的 Rust 重写 PR 已合并到主分支，但社区发现其代码在 Miri 检查下无法通过安全约束，暴露了 unsafe Rust 中的未定义行为。这一事件引发了对 Zig→Rust 迁移决策的广泛争议——Bun 在转用 Rust 追求更安全生态的同时，底层仍然存在 UB 隐患，对 Node.js 替代品的可靠性愿景构成冲击，尤其波及高频依赖 Bun 的前端构建流程开发者。",
+    "quote": "用 Zig 有 UB，换成 Rust 还是 UB，要不试试 Cobol？",
+    "source": "Hacker News",
+    "url": "https://github.com/oven-sh/bun/issues/30719",
     "published": "2026-05-16",
-    "uid": "dev_56ecd264"
+    "uid": "dev_b7028ee4"
   },
   {
     "title": "Pixel 10 0-click exploit chain from Google Project Zero",
-    "content": "",
-    "quote": "",
-    "source": "",
-    "url": "#",
+    "content": "Google Project Zero 公开了针对 Pixel 10 的零点击漏洞利用链分析报告。该漏洞无需用户交互即可远程利用，涉及蓝牙栈和内核驱动的组合缺陷。Google 已在 5 月安全更新中修复。对于 Android 生态开发者而言，这是理解现代移动设备攻击面演变的经典案例——0-click 漏洞从理论走向了量产机型的实际武器化。",
+    "quote": "零点击攻破 Pixel 10，下次是不是该零代码开发了？",
+    "source": "Hacker News",
+    "url": "https://projectzero.google/2026/05/pixel-10-exploit.html",
     "published": "2026-05-16",
-    "uid": "dev_e96949cd"
+    "uid": "dev_0b4512b3"
   },
   {
     "title": "Codex is now in the ChatGPT mobile app",
-    "content": "",
-    "quote": "",
-    "source": "",
-    "url": "#",
+    "content": "OpenAI 正式将 Codex 集成到 ChatGPT 移动应用中，用户现在可以直接在手机上使用 AI 编程助手的全部能力。这一举措打破了 Codex 此前仅限桌面/IDE 使用的限制，让开发者可以在移动端进行代码审查、快速修复和原型验证。目标是抢夺 Claude Code 的移动用户群，同时降低 AI 编程工具的使用门槛，影响所有 iOS/Android 开发者。",
+    "quote": "终于可以在马桶上写代码了，产品经理的梦想成真。",
+    "source": "Hacker News",
+    "url": "https://openai.com/index/work-with-codex-from-anywhere/",
     "published": "2026-05-16",
-    "uid": "dev_d4d6b1c0"
+    "uid": "dev_0cc885a3"
   },
   {
     "title": "Microsoft reportedly cancelling Claude Code licenses for thousands of developers",
-    "content": "",
-    "quote": "",
-    "source": "",
-    "url": "#",
+    "content": "据 The Verge 报道，微软正在内部大规模取消 Claude Code 使用许可，要求数千名开发者在 6 月 30 日前改用替代方案。此举被视为微软在 AI 编程工具领域的战略收缩——在 Copilot 和 Codex 生态内排除竞争对手 Anthropic 的产品。对于依赖 Claude Code 的企业团队来说，这意味着需要重新评估 AI 编程工具栈的供应商锁定风险。",
+    "quote": "微软：Claude Code 很好。所以你只能用 Copilot。",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/441068",
     "published": "2026-05-16",
-    "uid": "dev_a1dcb7b9"
+    "uid": "dev_4aaddc3e"
   },
   {
     "title": "First public macOS kernel memory corruption exploit on Apple M5",
-    "content": "",
-    "quote": "",
-    "source": "",
-    "url": "#",
+    "content": "安全研究员公开了首个针对 Apple M5 芯片的 macOS 内核内存破坏漏洞利用。该漏洞绕过 M5 最新的硬件安全机制，实现了内核级代码执行，影响所有搭载 M5 的 Mac 设备。对于 macOS/iOS 安全研究者和系统开发者而言，这标志着 Apple 最新芯片的安全设计并非无懈可击，并且说明硬件迭代并未消除内核空间的内存安全本质问题。",
+    "quote": "M5 安全？不存在的。Apple 的「最强芯片」已破防。",
+    "source": "Hacker News",
+    "url": "https://blog.calif.io/p/first-public-kernel-memory-corruption",
     "published": "2026-05-16",
-    "uid": "dev_5de0ffe4"
+    "uid": "dev_6d75f8c3"
   },
   {
     "title": "Debian enforces Reproducible Builds for all packages entering Testing",
-    "content": "",
-    "quote": "",
-    "source": "",
-    "url": "#",
+    "content": "Debian 发布团队正式实施可复现构建要求：自 5 月 11 日起，无法复现的新软件包将被阻止进入 Testing 分支。这意味着所有 Debian 贡献者必须确保其构建过程是确定性的。这项政策将重构 Debian 的供应链安全模型，从源头上防止恶意篡改，影响整个 Debian 生态的维护者和下游用户，也为其他发行版树立了标杆。",
+    "quote": "Debian 说：你的包每次编译结果都不一样？那别进 testing。",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/441112",
     "published": "2026-05-16",
-    "uid": "dev_95848c6f"
+    "uid": "dev_dcd0cb7d"
   },
   {
     "title": "Rust project publishes official LLM usage policy for contributions",
-    "content": "",
-    "quote": "",
-    "source": "",
-    "url": "#",
+    "content": "Rust 官方仓库正式发布 LLM 使用政策，明确划定贡献者在使用大模型时的允许和禁止边界，以应对日益增多的低质量 AI 生成 PR。政策禁止未经审核直接提交 AI 生成的代码，要求贡献者声明 LLM 参与程度。这对所有维护 Rust 工具链的开发者有直接约束力，也预示着更多开源项目将跟进制定类似的 AI 协作规范。",
+    "quote": "Rust：AI 写的代码也得 review，我们不要垃圾 PR。",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/441080",
     "published": "2026-05-16",
-    "uid": "dev_043fa9de"
+    "uid": "dev_046a5ba5"
   },
   {
     "title": "antirez releases DwarfStar 4 — local inference engine for DeepSeek V4 Flash",
-    "content": "",
-    "quote": "",
-    "source": "",
-    "url": "#",
+    "content": "Redis 之父 antirez 最新开源项目 DwarfStar 4 正式发布，专为 DeepSeek V4 Flash 模型打造的本地推理引擎。该引擎目标是在消费级硬件上实现可用的本地 AI 推理性能，不依赖云 API。对于关注 AI 隐私和本地部署的开发者来说，这是一个重要的低成本选择——能够在笔记本上运行主流参数级别模型，同时受惠于 antirez 在系统编程领域的口碑保证。",
+    "quote": "Redis 之父不去搞数据库，跑来卷 AI 推理了。卷，都可以卷。",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/441009",
     "published": "2026-05-16",
-    "uid": "dev_6b53b86e"
+    "uid": "dev_b45e84b4"
   },
   {
     "title": "xAI launches Grok Build CLI early beta for agentic coding",
-    "content": "",
-    "quote": "",
-    "source": "",
-    "url": "#",
+    "content": "xAI 发布了 Grok Build 的早期测试版，这是一款面向编程、应用构建和工作流自动化的 Agentic CLI 工具。当前仅限 SuperGrok Heavy 订阅用户使用。该工具瞄准 AI 编程助手市场，试图与 Claude Code 和 Codex 直接竞争，为开发者提供基于 Grok 模型的终端内 AI 编程体验。对于多模型策略的开发者来说，这意味着 AI 编程助手选择从双雄争霸走向三足鼎立。",
+    "quote": "xAI 也来卷 AI 编程了，Elon 的钞能力能烧多久？",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/441112",
     "published": "2026-05-16",
-    "uid": "dev_bec1a18f"
+    "uid": "dev_a4e2eec5"
   },
   {
     "title": "Radicle: sovereign code forge built on Git",
-    "content": "",
-    "quote": "",
-    "source": "",
-    "url": "#",
+    "content": "Radicle 正式发布其去中心化代码托管平台，基于 Git 协议构建了一个不依赖中心化服务器的代码协作网络。与 GitHub/GitLab 不同，Radicle 采用 P2P 网络和本地优先架构，开发者完全掌控自己的代码和数据。在 GitHub 被微软收购多年后，越来越多开发者关注代码托管的去中心化替代方案。Radicle 的成熟度提升意味着对 GitHub 垄断地位的实际挑战者已经出现。",
+    "quote": "去中心化代码托管，GitHub 看了想收购，但发现没有总部。",
+    "source": "Hacker News",
+    "url": "https://radicle.dev/",
     "published": "2026-05-16",
-    "uid": "dev_d1f9cd39"
+    "uid": "dev_7475649f"
   },
   {
     "title": "KDE receives €1.28M investment from German Sovereign Tech Fund",
-    "content": "",
-    "quote": "",
-    "source": "",
-    "url": "#",
+    "content": "在即将迎来 30 周年生日之际，KDE 团队宣布获得德国主权技术基金 128.52 万欧元投资。这笔资金将用于提升 KDE 桌面环境的安全基础设施、改善 Wayland 支持、优化可访问性和性能。对 Linux 桌面开发者来说，这是对 KDE 生态长期可持续性的关键背书——意味着全球最重要的开源桌面环境之一获得了国家级资金支持来应对快速增长的企业和公共部门采用需求。",
+    "quote": "德国政府给 KDE 打钱，30 年老项目终于不用靠爱发电了。",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/441041/sovereign-tech-fund-invests-kde",
     "published": "2026-05-16",
-    "uid": "dev_2ef2ec93"
+    "uid": "dev_e8ceb5ec"
   },
   {
     "title": "DOJ demands Apple/Google unmask 100k+ users of car-tinkering app",
-    "content": "",
-    "quote": "",
-    "source": "",
-    "url": "#",
+    "content": "美国司法部要求 Apple 和 Google 披露超过 10 万名汽车诊断改装应用用户的身份信息，涉及排放检测欺诈调查。该案件引发了开发者社区关于平台隐私承诺的激烈争议：当司法命令下达时，Apple 和 Google 会交出多少用户数据？这对所有面向汽车领域的 App 开发者构成直接警示——你的用户可能因为你的 App 功能面临法律风险。",
+    "quote": "DOJ：交出那 10 万修车佬的数据。苹果谷歌：好的长官。",
+    "source": "Hacker News",
+    "url": "https://macdailynews.com/2026/05/15/u-s-doj-demands-apple-and-google-unmask-over-100000-users-of-popular-car-tinkering-app-in-emissions-crackdown/",
     "published": "2026-05-16",
-    "uid": "dev_aebbbd21"
+    "uid": "dev_075a4332"
   }
 ]
