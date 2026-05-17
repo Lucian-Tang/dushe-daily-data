@@ -1,101 +1,101 @@
 [
   {
     "title": "The Architecture Of Local-First Web Development",
-    "content": "来源: Smashing Magazine | UID: `design_i1h42nz9` 本文深入探讨了离线优先（Local-First）Web 架构的设计思路，涵盖冲突解决、数据同步、本地存储与远程协作的无缝融合。作者 Durgesh Pawar 从 CRDT 技术入手，解释了如何在保证离线可用性的同时实现多人实时协作。文章还讨论了缓存策略、用户心智模型对齐以及渐进式 Web 应用的最佳实践，为面向恶劣网络环境的产品设计提供了完整的技术路线图。 🔗 https://www.smashingmagazine.com/2026/05/architecture-local-first-web-development/",
-    "quote": "🎯 *互联网有了，但架构师决定假装没有——CRDT写法是挺好，先让PM看得懂再说。*",
+    "content": "本文深入探讨了离线优先（Local-First）Web 架构的设计思路，涵盖冲突解决、数据同步、本地存储与远程协作的无缝融合。作者 Durgesh Pawar 从 CRDT 技术入手，解释了如何在保证离线可用性的同时实现多人实时协作。文章还讨论了缓存策略、用户心智模型对齐以及渐进式 Web 应用的最佳实践，为面向恶劣网络环境的产品设计提供了完整的技术路线图。",
+    "quote": "互联网有了，但架构师决定假装没有——CRDT写法是挺好，先让PM看得懂再说。*",
     "source": "Smashing Magazine | UID: `design_i1h42nz9`",
     "url": "https://www.smashingmagazine.com/2026/05/architecture-local-first-web-development/",
     "published": "2026-05-17",
-    "uid": "design_00deb24c"
+    "uid": ""
   },
   {
     "title": "Session Timeouts: The Overlooked Accessibility Barrier In Authentication Design",
-    "content": "来源: Smashing Magazine | UID: `design_l3s98shb` 认证系统中的会话超时设计往往被忽视，但对残障用户却是不小的障碍。文章指出长时间填写表单的用户（如使用屏幕阅读器或有运动障碍者）常因会话超时丢失所有已填内容，而错误提示又含糊不清。作者提出了可配置超时时间、保存草稿、自动延长会话以及超时前的视觉+听觉预警等具体改进方案，呼吁将会话管理纳入无障碍审核清单。 🔗 https://www.smashingmagazine.com/2026/04/session-timeouts-overlooked-accessibility-barrier-authentication-design/",
-    "quote": "🎯 *每个忘记保存的表单都藏着一位快要崩溃的视障用户——PM 你睡得着吗？*",
+    "content": "认证系统中的会话超时设计往往被忽视，但对残障用户却是不小的障碍。文章指出长时间填写表单的用户（如使用屏幕阅读器或有运动障碍者）常因会话超时丢失所有已填内容，而错误提示又含糊不清。作者提出了可配置超时时间、保存草稿、自动延长会话以及超时前的视觉+听觉预警等具体改进方案，呼吁将会话管理纳入无障碍审核清单。",
+    "quote": "每个忘记保存的表单都藏着一位快要崩溃的视障用户——PM 你睡得着吗？*",
     "source": "Smashing Magazine | UID: `design_l3s98shb`",
     "url": "https://www.smashingmagazine.com/2026/04/session-timeouts-overlooked-accessibility-barrier-authentication-design/",
     "published": "2026-05-17",
-    "uid": "design_4b00cc62"
+    "uid": ""
   },
   {
     "title": "How To Improve UX In Legacy Systems",
-    "content": "来源: Smashing Magazine | UID: `design_5fadrr91` Vitaly Friedman 在本文中系统性地阐述了老旧系统的 UX 改进方法论。传统企业系统的界面往往功能堆积、信息密度过高、操作路径混乱。作者提出了分层介入策略：不做大规模重构，而是通过渐进式优化（表单拆分、导航重组、错误提示优化、搜索增强）来改善用户体验。文章还分享了实际金融与医疗行业的改造案例以及衡量改版效果的关键指标。 🔗 https://www.smashingmagazine.com/2026/04/improve-ux-legacy-systems/",
-    "quote": "🎯 *又到了每年一次给二十年前的臃肿系统整容的季节——换个皮肤就当 UX 了？*",
+    "content": "Vitaly Friedman 在本文中系统性地阐述了老旧系统的 UX 改进方法论。传统企业系统的界面往往功能堆积、信息密度过高、操作路径混乱。作者提出了分层介入策略：不做大规模重构，而是通过渐进式优化（表单拆分、导航重组、错误提示优化、搜索增强）来改善用户体验。文章还分享了实际金融与医疗行业的改造案例以及衡量改版效果的关键指标。",
+    "quote": "又到了每年一次给二十年前的臃肿系统整容的季节——换个皮肤就当 UX 了？*",
     "source": "Smashing Magazine | UID: `design_5fadrr91`",
     "url": "https://www.smashingmagazine.com/2026/04/improve-ux-legacy-systems/",
     "published": "2026-05-17",
-    "uid": "design_68ce5789"
+    "uid": ""
   },
   {
     "title": "The 'Bug-Free' Workforce: How AI Efficiency Is Subtly Disrupting The Interactions That Build Strong Teams",
-    "content": "来源: Smashing Magazine | UID: `design_dscy5oat` 文章讨论了追求 AI 驱动的「零 Bug」开发效率如何意外地削弱了团队协作中的人际互动。当代码审查、调试讨论和故障排查这些「低效」的人类协作环节被 AI 替代时，团队中建立信任、传递隐性知识的机会也随之消失。作者警告说，纯粹追求效率指标可能牺牲团队的长期韧性，建议在引入 AI 工具时保留必要的人际协作触点。 🔗 https://www.smashingmagazine.com/2026/04/bug-free-workforce-ai-efficiency-disrupting-interactions-build-strong-teams/",
-    "quote": "🎯 *AI 把你同事之间的垃圾话和咖啡吐槽都省了——然后你发现团队变成了沉默的代码工厂。*",
+    "content": "文章讨论了追求 AI 驱动的「零 Bug」开发效率如何意外地削弱了团队协作中的人际互动。当代码审查、调试讨论和故障排查这些「低效」的人类协作环节被 AI 替代时，团队中建立信任、传递隐性知识的机会也随之消失。作者警告说，纯粹追求效率指标可能牺牲团队的长期韧性，建议在引入 AI 工具时保留必要的人际协作触点。",
+    "quote": "AI 把你同事之间的垃圾话和咖啡吐槽都省了——然后你发现团队变成了沉默的代码工厂。*",
     "source": "Smashing Magazine | UID: `design_dscy5oat`",
     "url": "https://www.smashingmagazine.com/2026/04/bug-free-workforce-ai-efficiency-disrupting-interactions-build-strong-teams/",
     "published": "2026-05-17",
-    "uid": "design_ef4335a9"
+    "uid": ""
   },
   {
     "title": "Not a Portfolio. A Presence.",
-    "content": "来源: Awwwards | UID: `design_y0g5oo4e` Awwwards 对设计师 Jason Bergh 的作品集进行了案例研究，探讨「在线存在感」如何超越传统作品集的概念。Bergh 的设计不是简单的作品展示，而是通过叙事性的交互体验、独特的视觉语言和引人入胜的动效来建立个人品牌。文章分析了动画叙事、页面转场和微交互在其站点中的应用，为设计师如何在竞争激烈的市场中脱颖而出提供了参考。 🔗 https://www.awwwards.com/not-a-portfolio-a-presence-jason-bergh/",
-    "quote": "🎯 *别人在做作品集，你在做艺术装置——甲方想知道能不能两周做完。*",
+    "content": "Awwwards 对设计师 Jason Bergh 的作品集进行了案例研究，探讨「在线存在感」如何超越传统作品集的概念。Bergh 的设计不是简单的作品展示，而是通过叙事性的交互体验、独特的视觉语言和引人入胜的动效来建立个人品牌。文章分析了动画叙事、页面转场和微交互在其站点中的应用，为设计师如何在竞争激烈的市场中脱颖而出提供了参考。",
+    "quote": "别人在做作品集，你在做艺术装置——甲方想知道能不能两周做完。*",
     "source": "Awwwards | UID: `design_y0g5oo4e`",
     "url": "https://www.awwwards.com/not-a-portfolio-a-presence-jason-bergh/",
     "published": "2026-05-17",
-    "uid": "design_bc1f83af"
+    "uid": ""
   },
   {
     "title": "StringTune: For Core Web Animations",
-    "content": "来源: Awwwards | UID: `design_f9u7m1bz` Awwwards 博客介绍了一款名为 StringTune 的核心 Web 动画优化工具。该工具帮助开发者在不牺牲性能的前提下实现流畅的 UI 动画，专注于解决 Core Web Vitals 中与渲染性能相关的问题。文章评测了 StringTune 的动画编排能力、与主流的 Web 框架的兼容性，以及它对 LCP（最大内容绘制）和 INP（交互到下一次绘制）指标的实际改善效果。 🔗 https://www.awwwards.com/stringtune-core-web-animations/",
-    "quote": "🎯 *多了一个让你把动画调到 60fps 的工具——然后设计师说我要 120fps 的粒子效果。*",
+    "content": "Awwwards 博客介绍了一款名为 StringTune 的核心 Web 动画优化工具。该工具帮助开发者在不牺牲性能的前提下实现流畅的 UI 动画，专注于解决 Core Web Vitals 中与渲染性能相关的问题。文章评测了 StringTune 的动画编排能力、与主流的 Web 框架的兼容性，以及它对 LCP（最大内容绘制）和 INP（交互到下一次绘制）指标的实际改善效果。",
+    "quote": "多了一个让你把动画调到 60fps 的工具——然后设计师说我要 120fps 的粒子效果。*",
     "source": "Awwwards | UID: `design_f9u7m1bz`",
     "url": "https://www.awwwards.com/stringtune-core-web-animations/",
     "published": "2026-05-17",
-    "uid": "design_46176467"
+    "uid": ""
   },
   {
     "title": "Should we be kind to machines (for our own sake, really)?",
-    "content": "来源: UX Collective | UID: `design_cpriu2e1` 本文探讨了人们对 AI 说「请」和「谢谢」这一行为背后的心理学与设计意义。从 1966 年 ELIZA 效应到现代智能音箱引导的用户投射行为，文章分析了礼貌性交互如何影响设计策略。当 AI 更拟人化时，用户会投入更多情感，但这也带来了「残忍陪伴」的风险——AI 让人际交往技能萎缩。文章为对话式产品的设计者提供了伦理层面的深度思考。 🔗 https://uxdesign.cc/should-we-be-kind-to-machines-for-our-own-sake-really-26acf222af29",
-    "quote": "🎯 *你对 AI 说谢谢的样子很优雅，但别忘了你妈还在等你回她消息。*",
+    "content": "本文探讨了人们对 AI 说「请」和「谢谢」这一行为背后的心理学与设计意义。从 1966 年 ELIZA 效应到现代智能音箱引导的用户投射行为，文章分析了礼貌性交互如何影响设计策略。当 AI 更拟人化时，用户会投入更多情感，但这也带来了「残忍陪伴」的风险——AI 让人际交往技能萎缩。文章为对话式产品的设计者提供了伦理层面的深度思考。",
+    "quote": "你对 AI 说谢谢的样子很优雅，但别忘了你妈还在等你回她消息。*",
     "source": "UX Collective | UID: `design_cpriu2e1`",
     "url": "https://uxdesign.cc/should-we-be-kind-to-machines-for-our-own-sake-really-26acf222af29",
     "published": "2026-05-17",
-    "uid": "design_53d00124"
+    "uid": ""
   },
   {
     "title": "How to write a DESIGN.md file Claude can actually use",
-    "content": "来源: UX Collective | UID: `design_g5skgno4` 本文探讨了如何编写一份 Claude/Cursor 等 AI 编码工具真正能理解的设计系统文档（DESIGN.md）。作者分析了大量已有文件，发现大多数只罗列了设计 tokens 却缺少产品叙事和交互行为描述。文章提出了结构化 DESIGN.md 的最佳实践：包含设计原则、组件层级、交互状态变化和对齐策略，使 AI 生成的 UI 保持一致的品牌体验和交互逻辑。 🔗 https://uxdesign.cc/how-to-write-a-design-md-file-claude-can-actually-use-2d89d183f823",
-    "quote": "🎯 *写了一万多字的 DESIGN.md 给 AI 看，它看完就画了个蓝色圆角按钮——和默认样式一模一样。*",
+    "content": "本文探讨了如何编写一份 Claude/Cursor 等 AI 编码工具真正能理解的设计系统文档（DESIGN.md）。作者分析了大量已有文件，发现大多数只罗列了设计 tokens 却缺少产品叙事和交互行为描述。文章提出了结构化 DESIGN.md 的最佳实践：包含设计原则、组件层级、交互状态变化和对齐策略，使 AI 生成的 UI 保持一致的品牌体验和交互逻辑。",
+    "quote": "写了一万多字的 DESIGN.md 给 AI 看，它看完就画了个蓝色圆角按钮——和默认样式一模一样。*",
     "source": "UX Collective | UID: `design_g5skgno4`",
     "url": "https://uxdesign.cc/how-to-write-a-design-md-file-claude-can-actually-use-2d89d183f823",
     "published": "2026-05-17",
-    "uid": "design_88035c6f"
+    "uid": ""
   },
   {
     "title": "AI made everyone a creator, not a designer",
-    "content": "来源: UX Collective | UID: `design_1m5egcdm` 生成式 AI 压缩了从创意到执行的路径，让任何人都能快速产出界面原型和视觉稿。但作者认为，AI 民主化的是产出而非设计判断力。当屏幕、布局、视觉变体都能一键生成时，真正的设计价值上移到策略层：这个方案该不该在系统里存在？一致性如何在边缘情况下保持？信任如何在交互中建立？文章警告了「界面趋同」的趋势，呼吁设计师回归判断力本质。 🔗 https://uxdesign.cc/ai-made-everyone-a-creator-not-a-designer-e28deb6e603b",
-    "quote": "🎯 *AI 让所有人都会「做」设计了，但好的判断力这事儿吧，暂时还没法一键生成。*",
+    "content": "生成式 AI 压缩了从创意到执行的路径，让任何人都能快速产出界面原型和视觉稿。但作者认为，AI 民主化的是产出而非设计判断力。当屏幕、布局、视觉变体都能一键生成时，真正的设计价值上移到策略层：这个方案该不该在系统里存在？一致性如何在边缘情况下保持？信任如何在交互中建立？文章警告了「界面趋同」的趋势，呼吁设计师回归判断力本质。",
+    "quote": "AI 让所有人都会「做」设计了，但好的判断力这事儿吧，暂时还没法一键生成。*",
     "source": "UX Collective | UID: `design_1m5egcdm`",
     "url": "https://uxdesign.cc/ai-made-everyone-a-creator-not-a-designer-e28deb6e603b",
     "published": "2026-05-17",
-    "uid": "design_d9327e38"
+    "uid": ""
   },
   {
     "title": "Lean Design-System Teams: How Small Teams Can Run Large Design Systems",
-    "content": "来源: Nielsen Norman Group | UID: `design_evzsds1l` NN Group 研究了小团队如何高效运维大型设计系统的策略。文中指出，成功的精简团队往往采用三大策略：优先构建高影响力、高复用性的组件，建立清晰的贡献机制让全员参与，以及通过自动化工具减少维护开销。文章还强调了文档即基础设施的理念，以及如何通过设计 tokens 和组件标记实现跨项目的一致性追踪。 🔗 https://www.nngroup.com/articles/lean-design-system-teams/",
-    "quote": "🎯 *三人的设计系统团队管理着五十个产品——听起来像裁员合理化方案的结尾。*",
+    "content": "NN Group 研究了小团队如何高效运维大型设计系统的策略。文中指出，成功的精简团队往往采用三大策略：优先构建高影响力、高复用性的组件，建立清晰的贡献机制让全员参与，以及通过自动化工具减少维护开销。文章还强调了文档即基础设施的理念，以及如何通过设计 tokens 和组件标记实现跨项目的一致性追踪。",
+    "quote": "三人的设计系统团队管理着五十个产品——听起来像裁员合理化方案的结尾。*",
     "source": "Nielsen Norman Group | UID: `design_evzsds1l`",
     "url": "https://www.nngroup.com/articles/lean-design-system-teams/",
     "published": "2026-05-17",
-    "uid": "design_ab67a49c"
+    "uid": ""
   },
   {
     "title": "Designers' Struggles: What Designers Say Versus What They Do",
-    "content": "来源: Nielsen Norman Group | UID: `design_x468dyza` NN Group 发布了一项关于设计师自我认知与实际行为差距的研究。调查显示，虽然绝大多数设计师声称自己重视用户研究，但实际工作中花在测试和验证上的时间远低于预期。报告揭示了常见的认知偏差：过度自信于直觉、低估方案的负面影响、在时间压力下跳过验证环节。文章呼吁设计团队建立更严格的自我审查机制和验证闭环。 🔗 https://www.nngroup.com/articles/designers-struggles/",
-    "quote": "🎯 *嘴上都是用户中心，身体却很诚实地跳过了可用性测试——Deadline 面前人人平等。*",
+    "content": "NN Group 发布了一项关于设计师自我认知与实际行为差距的研究。调查显示，虽然绝大多数设计师声称自己重视用户研究，但实际工作中花在测试和验证上的时间远低于预期。报告揭示了常见的认知偏差：过度自信于直觉、低估方案的负面影响、在时间压力下跳过验证环节。文章呼吁设计团队建立更严格的自我审查机制和验证闭环。",
+    "quote": "嘴上都是用户中心，身体却很诚实地跳过了可用性测试——Deadline 面前人人平等。*",
     "source": "Nielsen Norman Group | UID: `design_x468dyza`",
     "url": "https://www.nngroup.com/articles/designers-struggles/",
     "published": "2026-05-17",
-    "uid": "design_9de4db56"
+    "uid": ""
   }
 ]
