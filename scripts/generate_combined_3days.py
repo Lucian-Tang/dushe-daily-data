@@ -65,7 +65,7 @@ def gen_uid(section: str, title: str, url: str = "") -> str:
     key = (title or '') + '|' + (url or '')
     key = key.lower()
     key = re.sub(r'[^\u0000-\uFFFF]', '', key)  # 去掉大部分 emoji(非BMP平面)
-    key = key.replace(':', ':').replace('-', '-').replace('-', '-').replace('-', '-')
+    key = key.replace('：', ':').replace('—', '-').replace('–', '-')
     # 统一标点前后的空格:去掉冒号前的空格,确保冒号后有一个空格
     key = re.sub(r'\s*:\s*', ': ', key)
     key = re.sub(r'\s+', ' ', key).strip()
@@ -84,7 +84,7 @@ def get_recent_files(section, index_data, max_days=3):
     recent = []
     for fname in section_history:
         if fname != today_file:
-            recent.append(fname)  # 保持日期从旧到新顺序
+            recent.append(fname)
         if len(recent) >= max_days - 1:
             break
     return recent
@@ -133,7 +133,7 @@ def filter_recent(items, max_days_back=3, today_date=None):
                 item['published'] = pub_clean
                 result.append(item)
         except:
-            pass  # 无法解析的日期跳过(raw数据无效日期)
+            result.append(item)  # 无法解析的日期保持原样
     return result
 
 
@@ -150,7 +150,7 @@ def merge_and_deduplicate(items_by_day, section=""):
         priority = len(items_by_day) - i
         for item in items:
             # 注入 uid(客户端持久化的主键,不覆盖已有 uid)
-            if 'uid' not in item:
+            if not item.get('uid'):
                 uid_str = gen_uid(section, item.get('title', ''), item.get('url', ''))
                 item['uid'] = uid_str
             url = item.get('url', '')
