@@ -144,7 +144,7 @@ def normalize_file(filepath, dry_run=False, blocklist=None):
 
     for item in data:
         # 注入 uid（稳定唯一标识符，用于收藏/已读/投票的主键）
-        if 'uid' not in item:
+        if not item.get('uid'):
             uid = gen_uid(section, item.get('title', ''), item.get('url', ''))
             item['uid'] = uid
             uid_count += 1

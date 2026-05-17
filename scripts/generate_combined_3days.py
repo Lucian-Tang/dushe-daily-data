@@ -82,9 +82,9 @@ def get_recent_files(section, index_data, max_days=3):
     # 排除今日文件(已在顶层 latest 中),从最靠近今天的文件开始取
     today_file = index_data.get(section)
     recent = []
-    for fname in reversed(section_history):
+    for fname in section_history:
         if fname != today_file:
-            recent.insert(0, fname)  # 保持日期从旧到新顺序
+            recent.append(fname)
         if len(recent) >= max_days - 1:
             break
     return recent
@@ -150,7 +150,7 @@ def merge_and_deduplicate(items_by_day, section=""):
         priority = len(items_by_day) - i
         for item in items:
             # 注入 uid(客户端持久化的主键,不覆盖已有 uid)
-            if 'uid' not in item:
+            if not item.get('uid'):
                 uid_str = gen_uid(section, item.get('title', ''), item.get('url', ''))
                 item['uid'] = uid_str
             url = item.get('url', '')
