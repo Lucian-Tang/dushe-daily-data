@@ -153,9 +153,9 @@ def merge_and_deduplicate(items_by_day, section=""):
             if not item.get('uid'):
                 uid_str = gen_uid(section, item.get('title', ''), item.get('url', ''))
                 item['uid'] = uid_str
-            url = item.get('url', '')
-            if not url:
-                continue
+            raw_url = item.get('url', '')
+            # Treat # as empty url (placeholder, not a real dedup key)
+            url = (raw_url if raw_url and raw_url != '#' else '') or item.get('uid', '') or item.get('title', '')
             if url not in url_to_item:
                 url_to_item[url] = item
                 date_priority[url] = priority
