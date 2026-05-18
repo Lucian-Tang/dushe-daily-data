@@ -779,6 +779,141 @@
       "uid": "ai_9409e9c7"
     },
     {
+      "title": "奥特曼投的芯片涨疯了，今年最大科技IPO",
+      "content": "- **发布时间**: 2026-05-16 山姆·奥特曼投资的AI芯片公司成功IPO，成为今年最大科技IPO，股价暴涨引发资本市场狂热。奥特曼的20亿美元持股版图也随之曝光。这一事件标志着AI基础设施赛道的投资回报进入加速期，对关注AI芯片和算力投资的人有重要参考意义。 💬 *奥特曼投芯片赚麻了，你还在犹豫买不买？*",
+      "quote": "",
+      "source": ": 量子位",
+      "url": "https://www.qbitai.com/2026/05/418594.html",
+      "published": "2026-05-17",
+      "uid": "ai_c9f45d64"
+    },
+    {
+      "title": "别让模型烧Token了！GitHub 20k星神作：把全网变成命令行",
+      "content": "- **发布时间**: 2026-05-16 一个GitHub 20k星的开源项目引发热议，它可以将整个互联网变成命令行操作界面，大幅降低AI模型调用外部数据时的Token消耗。开发者不再需要为每个网页调用浪费大量Token，直接通过命令行即可获取和处理网络信息，对LLM应用开发者来说是降本增效的利器。 💬 *把全网搓成命令行，Token省了但手速不能省*",
+      "quote": "",
+      "source": ": 量子位",
+      "url": "https://www.qbitai.com/2026/05/418518.html",
+      "published": "2026-05-17",
+      "uid": "ai_63620b9a"
+    },
+    {
+      "title": "腾讯开源 Agent 记忆技术方案，Token 消耗最高降低 61%",
+      "content": "- **发布时间**: 2026-05-15 腾讯开源了Agent记忆技术方案，通过优化记忆管理机制将Token消耗最高降低61%，任务成功率提升51%。该方案解决了AI Agent在长对话中的记忆遗忘和上下文窗口浪费问题，对推动Agent走向实用化具有重要意义，所有开发者均可直接使用。 💬 *记忆管理开源了，Agent终于不会秒忘*",
+      "quote": "",
+      "source": ": 量子位",
+      "url": "https://www.qbitai.com/2026/05/417753.html",
+      "published": "2026-05-17",
+      "uid": "ai_c4bf25ac"
+    },
+    {
+      "title": "SANA-WM: Efficient Minute-Scale World Modeling with Hybrid Linear Diffusion Transformer",
+      "content": "- **发布时间**: 2026-05-16 NVIDIA推出SANA-WM，仅2.6B参数的原生一分钟世界模型，支持720p高保真视频生成和精确6-DoF相机控制。采用混合线性注意力加双分支相机控制，用21.3万公开视频片段训练15天，量化蒸馏版可在单张RTX 5090上34秒生成60秒视频，吞吐量比业界基线高36倍。 💬 *2.6B参数跑一分钟世界模型，5090用户表示还能抢救*",
+      "quote": "",
+      "source": ": HuggingFace",
+      "url": "https://huggingface.co/papers/2605.15178",
+      "published": "2026-05-17",
+      "uid": "ai_d5054e3b"
+    },
+    {
+      "title": "RAVEN: Real-time Autoregressive Video Extrapolation with Consistency-model GRPO",
+      "content": "- **发布时间**: 2026-05-16 提出RAVEN训练时测试框架，将自回归视频生成中的self-rollout重构为历史端点和去噪状态的交错序列，让后续chunk的梯度回传到历史表征。同时提出CM-GRPO将一致性采样重构为条件高斯转移。在多个因果视频蒸馏基线上超过所有SOTA方法，兼顾质量、语义和动态效果。 💬 *因果视频训练不再是盲人摸象，梯度终于打到历史*",
+      "quote": "",
+      "source": ": HuggingFace",
+      "url": "https://huggingface.co/papers/2605.15190",
+      "published": "2026-05-17",
+      "uid": "ai_d7d2d245"
+    },
+    {
+      "title": "Shodh-MoE: Eradicating Negative Transfer in Multi-Physics Foundation Models",
+      "content": "- **发布时间**: 2026-05-14 针对多物理场科学计算中的负迁移问题提出Shodh-MoE，使用稀疏激活Transformer加Top-1软语义路由器，将局部物理块动态分配给不同专家。20000步预训练后路由器自动实现领域分岔，开通道流体和多种介质域分别路由到不同专家，同时严格保证质量守恒约束。 💬 *MoE不止聊天还能算物理，专家自动分岔*",
+      "quote": "",
+      "source": ": arXiv",
+      "url": "https://arxiv.org/abs/2605.15179",
+      "published": "2026-05-17",
+      "uid": "ai_dafcd5f8"
+    },
+    {
+      "title": "MANSU: Forgetting That Sticks — Quantization-Permanent Unlearning via Circuit Attribution",
+      "content": "- **发布时间**: 2026-05-14 发现现有模型遗忘方法在量化后全部失效：参数更新量仅为NF4量化bin宽度的1/47到1/828。提出MANSU，结合因果归因定位最小遗忘子图加零空间投影加参数下限，保证遗忘在量化后依旧有效。对AI安全合规领域具有重要价值，解决了数据删除的最后一公里问题。 💬 *删了等于没删？量化一过全现形，MANSU真删除*",
+      "quote": "",
+      "source": ": arXiv",
+      "url": "https://arxiv.org/abs/2605.15138",
+      "published": "2026-05-17",
+      "uid": "ai_b859ebb5"
+    },
+    {
+      "title": "InfoSFT: Learn More and Forget Less with Information-Aware Token Weighting",
+      "content": "- **发布时间**: 2026-05-14 指出标准SFT均匀拟合所有样本会导致过拟合和遗忘已有能力。提出InfoSFT仅需一行代码修改，基于信息论对token加权，重点关注中等置信度token即最大信息增益点。在数学、代码和CoT任务上超越标准SFT，同时更好保留模型已有能力，是低门槛的SFT改进方案。 💬 *一行代码改SFT，信息量大token多学忘更少*",
+      "quote": "",
+      "source": ": arXiv",
+      "url": "https://arxiv.org/abs/2605.14967",
+      "published": "2026-05-17",
+      "uid": "ai_2e602427"
+    },
+    {
+      "title": "Holistic Evaluation and Failure Diagnosis of AI Agents",
+      "content": "- **发布时间**: 2026-05-14 提出全新AI Agent评估框架，将Agent级诊断与Span级评估结合，把长轨迹分解为独立Span。在TRAIL基准上GAIA和SWE-Bench所有指标达SOTA，分类F1提升38%，定位精度提升3.5倍。关键发现：评估方法论而非模型能力才是Agent评估的真正瓶颈，对评估实践有深刻启示。 💬 *Agent做不好不是模型菜，是你不会测*",
+      "quote": "",
+      "source": ": arXiv",
+      "url": "https://arxiv.org/abs/2605.14865",
+      "published": "2026-05-17",
+      "uid": "ai_965bb8cd"
+    },
+    {
+      "title": "龙虾之父月烧940万元的token！要不是入职OpenAI还真用不起",
+      "content": "- **发布时间**: 2026-05-17 龙虾之父入职OpenAI后月均Token消耗相当于烧掉940万元，从业内疯传的烧钱大户秒变内鬼随便用模式，OpenAI内部资源壕得让人沉默。 💬 *烧了940万然后免费了，果然大树底下好乘凉*",
+      "quote": "",
+      "source": ": 量子位",
+      "url": "https://www.qbitai.com/2026/05/418822.html",
+      "published": "2026-05-17",
+      "uid": "ai_39619620"
+    },
+    {
+      "title": "6.4k Stars！用Claude Code写论文的全套流水线，有人打包开源了",
+      "content": "- **发布时间**: 2026-05-17 GitHub 6.4k星开源项目：一套完整的Claude Code论文写作自动化流水线，从文献综述到实验代码生成再到论文润色，全流程一键搞定，学术打工人福音。 💬 *论文也能流水线了，审稿人准备好了吗*",
+      "quote": "",
+      "source": ": 量子位",
+      "url": "https://www.qbitai.com/2026/05/418737.html",
+      "published": "2026-05-17",
+      "uid": "ai_55c03488"
+    },
+    {
+      "title": "OpenHuman用20分钟了解你的一切，存成卡帕西式知识库",
+      "content": "- **发布时间**: 2026-05-17 全新工具OpenHuman仅需20分钟对话即可构建你的完整个人知识库，采用Karpathy式知识表示方法，堪称最轻量级数字孪生方案。 💬 *AI比你本人还了解你自己，怕不怕*",
+      "quote": "",
+      "source": ": 量子位",
+      "url": "https://www.qbitai.com/2026/05/418571.html",
+      "published": "2026-05-17",
+      "uid": "ai_bc980e23"
+    },
+    {
+      "title": "SFT别急着接RL！你的多模态大模型可能一直在带伤训练",
+      "content": "- **发布时间**: 2026-05-17 最新研究发现多模态大模型在SFT阶段就已积累系统性偏差，直接接RL微调会导致错误信号逐级放大，建议先修复预训练阶段的模态对齐问题。 💬 *伤都没治好就跑马拉松，大模型先照照CT*",
+      "quote": "",
+      "source": ": 量子位",
+      "url": "https://www.qbitai.com/2026/05/418814.html",
+      "published": "2026-05-17",
+      "uid": "ai_e7982c31"
+    },
+    {
+      "title": "OpenAI partners with Malta to bring ChatGPT Plus to all citizens",
+      "content": "- **发布时间**: 2026-05-17 OpenAI与马耳他政府达成全球首个国家级AI普及合作，公民完成AI素养课程即可免费使用ChatGPT Plus一年，AI平权实验还是地缘棋盘的一步棋。 💬 *AI平权？不，是AI殖民*",
+      "quote": "",
+      "source": ": Hacker News",
+      "url": "https://openai.com/index/malta-chatgpt-plus-partnership/",
+      "published": "2026-05-17",
+      "uid": "ai_9f51354b"
+    },
+    {
+      "title": "Entire companies are under AI psychosis right now",
+      "content": "- **发布时间**: 2026-05-17 HashiCorp创始人Mitchell Hashimoto发推称整个科技行业陷入AI精神病状态，获1972赞和1152条评论激烈交锋，硅谷终于有人敢喊皇帝的新衣。 💬 *AI没疯，是投AI的人疯了*",
+      "quote": "",
+      "source": ": Hacker News",
+      "url": "https://news.ycombinator.com/item?id=43061000",
+      "published": "2026-05-17",
+      "uid": "ai_9409e9c7"
+    },
+    {
       "title": "🏆 Achieving Gold-Medal-Level Olympiad Reasoning via Simple and Unified Scaling",
       "content": "该研究提出一种简洁统一的缩放配方，将后训练推理骨干模型转化为奥林匹克级解题器。通过逆向困惑度课程SFT和逐步推理缩放，在IMO、IPhO等国际竞赛中达到金牌水平。对推理模型的规模化部署和学术研究具有里程碑意义。",
       "quote": "💬 IMO金牌交给AI，人类该去学什么",
