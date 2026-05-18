@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>有数Feed — 每日科技快讯</title>
+<style>
+/* ========== Reset & Variables ========== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Shared (theme-independent) */
+:root {
+  --radius: 12px;
+  --radius-sm: 8px;
+  --font-mono: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+}
+
+/* Light theme (default) */
+:root, [data-theme="light"] {
+  --green: #07c160;
+  --green-dim: #05a050;
+  --green-glow: rgba(7, 193, 96, 0.15);
+  --bg: #FAFAFA;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F8F8F8;
+  --border: #E5E5E5;
+  --text: #4A4A4A;
+  --text-dim: #8A8A8A;
+  --text-bright: #1A1A1A;
+  --quote-bg: rgba(7, 193, 96, 0.06);
+  --quote-border: #07c160;
+  --tag-bg: rgba(7, 193, 96, 0.10);
+  --tag-text: #07c160;
+  --shadow: 0 2px 8px rgba(0,0,0,0.10);
+  --shadow-hover: 0 4px 16px rgba(0,0,0,0.15);
+  --tab-bg: #F5F5F5;
+  --backdrop-bg: rgba(250, 250, 250, 0.92);
+  --cat-industry: #5B7FBB;
+  --cat-dev: #4A90D9;
+  --cat-ai: #9B59B6;
+  --cat-startup: #E67E22;
+  --cat-design: #E74C8C;
+  --cat-social: #1ABC9C;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --bg: #0d1117;
+  --bg-card: #161b22;
+  --bg-card-hover: #1c2330;
+  --border: #30363d;
+  --text: #c9d1d9;
+  --text-dim: #8b949e;
+  --text-bright: #f0f6fc;
+  --quote-bg: rgba(7, 193, 96, 0.06);
+  --quote-border: #07c160;
+  --tag-bg: rgba(7, 193, 96, 0.12);
+  --tag-text: #07c160;
+  --shadow: 0 1px 3px rgba(0,0,0,0.3);
+  --shadow-hover: 0 2px 8px rgba(0,0,0,0.45);
+  --tab-bg: rgba(255,255,255,0.05);
+  --backdrop-bg: rgba(13, 17, 23, 0.92);
+  --cat-industry: #5B7FBB;
+  --cat-dev: #4A90D9;
+  --cat-ai: #9B59B6;
+  --cat-startup: #E67E22;
+  --cat-design: #E74C8C;
+  --cat-social: #1ABC9C;
+}
+
+/* ========== Base ========== */
+html { font-size: 16px; scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.3s, color 0.3s;
+}
+
+a { color: var(--green); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ========== Header ========== */
+.header {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--backdrop-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 12px 16px 0;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.header-top {
+  display: flex; align-items: center; justify-content: space-between;
+  padding-bottom: 12px;
+}
+
+.logo {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 1.15rem; font-weight: 700; color: var(--text-bright);
+  letter-spacing: -0.3px;
+  cursor: pointer;
+}
+.logo:hover { color: var(--green); }
+.logo:active { opacity: 0.7; }
+
+.logo-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 8px var(--green);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 6px var(--green); }
+  50% { box-shadow: 0 0 14px var(--green), 0 0 24px rgba(7,193,96,0.3); }
+}
+
+.header-meta {
+  display: flex; align-items: center; gap: 14px;
+  font-size: 0.78rem; color: var(--text-dim);
+}
+
+.meta-item {
+  display: flex; align-items: center; gap: 4px;
+}
+
+.meta-value { color: var(--green); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+/* Theme toggle */
+.theme-toggle {
+  display: flex; align-items: center; justify-content: center;
+  width: 34px; height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: var(--tab-bg);
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: all 0.2s;
+  line-height: 1;
+}
+.theme-toggle:hover { transform: scale(1.1); }
+.theme-toggle:active { transform: scale(0.95); }
+
+/* ========== Tabs ========== */
+.tabs {
+  display: flex; gap: 0; overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.tabs::-webkit-scrollbar { display: none; }
+
+.tab {
+  flex-shrink: 0;
+  padding: 10px 20px;
+  font-size: 0.88rem; font-weight: 500;
+  color: var(--text-dim);
+  background: none; border: none; cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.tab:hover { color: var(--text); }
+.tab.active {
+  color: var(--green); border-bottom-color: var(--green); font-weight: 600;
+}
+
+.tab-count {
+  display: inline-block;
+  margin-left: 4px;
+  font-size: 0.7rem;
+  padding: 1px 6px;
+  border-radius: 10px;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  font-weight: 500;
+}
+.tab.active .tab-count { background: var(--green); color: #fff; }
+
+/* ========== Main Content ========== */
+.main { max-width: 720px; margin: 0 auto; padding: 16px; }
+
+/* ========== Date Section (Collapsible) ========== */
+.date-section { margin-bottom: 20px; }
+
+.date-heading {
+  font-size: 0.8rem; font-weight: 600; color: var(--text-dim);
+  text-transform: uppercase; letter-spacing: 0.5px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-card);
+  box-shadow: var(--shadow);
+  display: flex; align-items: center; gap: 8px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s, box-shadow 0.2s;
+  margin-bottom: 4px;
+}
+.date-heading:hover { box-shadow: var(--shadow-hover); }
+.date-heading:active { transform: scale(0.995); }
+
+.date-heading::before {
+  content: '';
+  width: 4px; height: 14px; border-radius: 2px;
+  background: var(--green);
+}
+
+.date-arrow {
+  font-size: 0.7rem;
+  transition: transform 0.3s ease;
+  opacity: 0.6;
+}
+.date-heading.expanded .date-arrow {
+  transform: rotate(90deg);
+}
+
+.date-items {
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.25s ease;
+  max-height: 5000px;
+  opacity: 1;
+}
+.date-items.collapsed {
+  max-height: 0;
+  opacity: 0;
+}
+
+/* ========== Card ========== */
+.card {
+  background: var(--bg-card);
+  border: none;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  margin-bottom: 14px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  position: relative;
+}
+
+.card:hover {
+  background: var(--bg-card-hover);
+  box-shadow: var(--shadow-hover);
+}
+
+.card:active { transform: scale(0.995); }
+
+.card-header {
+  display: flex; align-items: flex-start; justify-content: space-between;
+  gap: 10px; margin-bottom: 8px;
+}
+
+.card-title {
+  font-size: 0.95rem; font-weight: 600; color: var(--text-bright);
+  line-height: 1.4;
+  flex: 1;
+}
+
+.card-source {
+  flex-shrink: 0;
+  font-size: 0.7rem; font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  white-space: nowrap;
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-body {
+  font-size: 0.85rem; color: var(--text);
+  line-height: 1.55;
+  margin-bottom: 10px;
+}
+
+.card-quote {
+  font-size: 0.82rem;
+  color: var(--green);
+  line-height: 1.5;
+  padding: 8px 12px;
+  background: var(--quote-bg);
+  border-left: 3px solid var(--quote-border);
+  border-radius: 0 6px 6px 0;
+  font-style: italic;
+  display: flex; align-items: flex-start; gap: 6px;
+}
+
+.quote-icon {
+  flex-shrink: 0;
+  font-style: normal;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.card-footer {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-top: 10px;
+  font-size: 0.72rem; color: var(--text-dim);
+}
+
+.card-source-link {
+  display: flex; align-items: center; gap: 4px;
+  font-size: 0.7rem; color: var(--green);
+  font-weight: 500;
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+.card-source-link:hover { opacity: 0.8; text-decoration: underline; }
+
+
+
+/* ========== States ========== */
+.state-message {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: 60px 20px; text-align: center; color: var(--text-dim);
+}
+
+.loader {
+  width: 28px; height: 28px;
+  border: 3px solid var(--border);
+  border-top-color: var(--green);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.state-icon { font-size: 2.5rem; margin-bottom: 12px; }
+
+.state-message .retry-btn {
+  margin-top: 16px;
+  padding: 8px 20px;
+  background: var(--green);
+  color: #fff; border: none; border-radius: 20px;
+  font-size: 0.85rem; cursor: pointer;
+  font-weight: 500;
+}
+.retry-btn:hover { background: var(--green-dim); }
+
+.empty-state {
+  display: flex; flex-direction: column; align-items: center;
+  padding: 48px 20px; color: var(--text-dim);
+  text-align: center;
+}
+
+/* ========== Footer ========== */
+.footer {
+  text-align: center; padding: 32px 16px;
+  font-size: 0.75rem; color: var(--text-dim);
+  border-top: 1px solid var(--border);
+  margin-top: 20px;
+}
+.footer .logo-text { color: var(--green); font-weight: 600; }
+
+/* ========== Back to Top ========== */
+.back-to-top {
+  position: fixed; bottom: 24px; right: 24px; z-index: 200;
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: rgba(7, 193, 96, 0.75);
+  color: #fff;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  transition: opacity 0.3s, transform 0.3s, background 0.2s;
+  opacity: 0; transform: translateY(20px);
+  pointer-events: none;
+}
+.back-to-top.visible {
+  opacity: 1; transform: translateY(0);
+  pointer-events: auto;
+}
+.back-to-top:hover { background: var(--green); transform: translateY(-2px) scale(1.05); }
+.back-to-top:active { transform: scale(0.95); }
+
+/* ========== Summary Page ========== */
+.summary-header {
+  text-align: center;
+  padding: 20px 0 16px;
+  border-bottom: 2px dashed var(--border);
+  margin-bottom: 20px;
+}
+.summary-header h2 {
+  font-size: 1.1rem; font-weight: 700; color: var(--text-bright);
+  margin-bottom: 4px;
+}
+.section-divider {
+  border: none;
+  border-top: 1px dashed var(--border);
+  margin: 20px 0 16px;
+}
+.summary-hot-header {
+  display: flex; align-items: center; gap: 6px;
+  margin-bottom: 12px;
+  font-size: 0.88rem; font-weight: 600; color: var(--text-bright);
+}
+
+/* Category summary card */
+.summary-cat-section {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  transition: box-shadow 0.2s;
+}
+.summary-cat-section:hover { box-shadow: var(--shadow-hover); }
+
+.summary-cat-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 10px;
+}
+.summary-cat-label {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 0.85rem; font-weight: 600; color: var(--text-bright);
+}
+.summary-cat-count {
+  font-size: 0.72rem; color: var(--text-dim);
+  font-weight: 400;
+}
+.summary-cat-badge {
+  font-size: 0.68rem; padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+}
+.summary-cat-link {
+  font-size: 0.75rem; color: var(--green); cursor: pointer;
+  font-weight: 500; user-select: none;
+  transition: opacity 0.15s;
+}
+.summary-cat-link:hover { opacity: 0.7; text-decoration: underline; }
+
+/* Compact article in summary */
+.card-compact {
+  border-top: 1px solid var(--border);
+  padding: 9px 0;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.card-compact:first-of-type { border-top: none; }
+.card-compact:hover { padding-left: 4px; }
+
+.card-compact-title {
+  font-size: 0.82rem; font-weight: 600; color: var(--text-bright);
+  line-height: 1.35;
+  margin-bottom: 2px;
+}
+.card-compact-quote {
+  font-size: 0.75rem; color: var(--green);
+  font-style: italic;
+  line-height: 1.4;
+  display: flex; align-items: flex-start; gap: 4px;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 480px) {
+  .back-to-top { bottom: 16px; right: 16px; width: 38px; height: 38px; font-size: 1.1rem; }
+  .header { padding: 10px 12px 0; }
+  .main { padding: 12px; }
+  .card { padding: 16px; margin-bottom: 12px; }
+  .card-title { font-size: 0.9rem; }
+  .card-body { font-size: 0.82rem; }
+  .card-quote { font-size: 0.78rem; }
+  .tab { padding: 8px 14px; font-size: 0.82rem; }
+  .date-heading { padding: 8px 10px; font-size: 0.75rem; }
+  .summary-header { padding: 14px 0 12px; }
+  .summary-header h2 { font-size: 1rem; }
+  .summary-cat-section { padding: 12px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="header" id="appHeader">
+  <div class="header-top">
+    <div class="logo" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="返回顶部">
+      <span class="logo-dot"></span>
+      <span>有数Feed</span>
+    </div>
+    <div class="header-meta" id="headerMeta">
+      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="切换深色/浅色模式" aria-label="切换颜色模式">
+        <span id="themeIcon">🌙</span>
+      </button>
+      <span class="meta-item">📊 <span class="meta-value" id="totalCount">--</span> 条</span>
+      <span class="meta-item">🕐 <span class="meta-value" id="updateTime">加载中...</span></span>
+    </div>
+  </div>
+
+  <nav class="tabs" id="tabNav">
+    <button class="tab active" data-tab="summary">
+      📋 今日汇总<span class="tab-count" id="count-summary">0</span>
+    </button>
+    <button class="tab" data-tab="industry">
+      行业<span class="tab-count" id="count-industry">0</span>
+    </button>
+    <button class="tab" data-tab="dev">
+      开发<span class="tab-count" id="count-dev">0</span>
+    </button>
+    <button class="tab" data-tab="ai">
+      AI<span class="tab-count" id="count-ai">0</span>
+    </button>
+    <button class="tab" data-tab="startup">
+      创业<span class="tab-count" id="count-startup">0</span>
+    </button>
+    <button class="tab" data-tab="design">
+      设计<span class="tab-count" id="count-design">0</span>
+    </button>
+  </nav>
+</header>
+
+<!-- ===== Main (List View) ===== -->
+<main class="main" id="mainContent">
+  <div class="state-message">
+    <div class="loader"></div>
+    <div>正在加载数据...</div>
+  </div>
+</main>
+
+<!-- ===== Back to Top ===== -->
+<button class="back-to-top" id="backToTop" title="返回顶部" aria-label="返回顶部">⬆</button>
+
+<footer class="footer" id="appFooter">
+  <div><span class="logo-text">有数Feed</span> — 每日科技快讯 · Demo</div>
+  <div style="margin-top:4px">v1.2 · Powered by dushe-daily-data</div>
+</footer>
+
+<script>
+/* ========== Constants ========== */
+const CDN_BASE = './data/';
+const CATEGORIES = ['industry', 'dev', 'ai', 'startup', 'design'];
+const CAT_LABELS = { industry: '行业', dev: '开发', ai: 'AI', startup: '创业', design: '设计' };
+const CAT_ICONS = { industry: '🏭', dev: '💻', ai: '🤖', startup: '🚀', design: '🎨' };
+
+let allData = {};
+let currentTab = 'summary';
+
+/* ========== DOM ========== */
+const $ = (s) => document.querySelector(s);
+const $$ = (s) => document.querySelectorAll(s);
+
+/* ========== Theme ========== */
+function getTheme() {
+  return localStorage.getItem('dushe-theme') || 'light';
+}
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  const icon = $('#themeIcon');
+  if (icon) icon.textContent = theme === 'dark' ? '☀️' : '🌙';
+  localStorage.setItem('dushe-theme', theme);
+}
+
+function toggleTheme() {
+  const current = getTheme();
+  const next = current === 'dark' ? 'light' : 'dark';
+  applyTheme(next);
+}
+
+// Apply on load
+applyTheme(getTheme());
+
+/* ========== Data Fetching ========== */
+async function fetchJSON(url) {
+  const resp = await fetch(url);
+  if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+  return resp.json();
+}
+
+function formatDate(dateStr) {
+  if (!dateStr) return '';
+  const d = new Date(dateStr + 'T00:00:00+08:00');
+  if (isNaN(d.getTime())) return dateStr;
+  return `${d.getFullYear()}/${d.getMonth()+1}/${d.getDate()}`;
+}
+
+/**
+ * Try to fetch the combined JSON for a given date string (YYYYMMDD).
+ */
+async function tryFetchCombined(dateStr) {
+  const url = `${CDN_BASE}/combined_3days_${dateStr}.json`;
+  try {
+    const data = await fetchJSON(url);
+    return { data, date: dateStr };
+  } catch { return null; }
+}
+
+/**
+ * Generate YYYYMMDD for a Date object
+ */
+function toDateKey(d) {
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${y}${m}${day}`;
+}
+
+async function loadData() {
+  let indexData = null;
+  let combinedData = null;
+
+  // Step 1: Fetch index.json for metadata
+  try {
+    indexData = await fetchJSON(`${CDN_BASE}/index.json`);
+    if (indexData.updated) {
+      const d = new Date(indexData.updated);
+      if (!isNaN(d.getTime())) {
+        $('#updateTime').textContent =
+          `${String(d.getMonth()+1).padStart(2,'0')}/${String(d.getDate()).padStart(2,'0')} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
+      }
+    }
+  } catch { /* non-fatal */ }
+
+  // Step 2: Try fetching combined JSON — try today, then yesterday, then 2 days ago
+  const now = new Date();
+  const dates = [toDateKey(now)];
+  for (let i = 1; i <= 3; i++) {
+    const d = new Date(now);
+    d.setDate(d.getDate() - i);
+    dates.push(toDateKey(d));
+  }
+
+  for (const d of dates) {
+    const result = await tryFetchCombined(d);
+    if (result) {
+      combinedData = result.data;
+      if (!indexData) {
+        $('#updateTime').textContent =
+          `${d.slice(4,6)}/${d.slice(6,8)}`;
+      }
+      break;
+    }
+  }
+
+  if (!combinedData) {
+    throw new Error('暂无数据，请稍后再试');
+  }
+
+  return combinedData;
+}
+
+/* ========== Date Grouping ========== */
+function getDateLabel(published) {
+  if (!published) return '更早';
+  const now = new Date();
+  const pub = new Date(published + 'T00:00:00+08:00');
+  if (isNaN(pub.getTime())) return '更早';
+
+  const nowStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const pubStart = new Date(pub.getFullYear(), pub.getMonth(), pub.getDate());
+  const diffDays = Math.round((nowStart - pubStart) / (1000 * 60 * 60 * 24));
+
+  if (diffDays === 0) return '今天';
+  if (diffDays === 1) return '昨天';
+  return formatDate(published) || '更早';
+}
+
+function groupByDate(items) {
+  const groups = {};
+  for (const item of items) {
+    const label = getDateLabel(item.published);
+    if (!groups[label]) groups[label] = [];
+    groups[label].push(item);
+  }
+  // Sort: 今天, 昨天, then chronological descending
+  const order = ['今天', '昨天'];
+  const sortedKeys = Object.keys(groups).sort((a, b) => {
+    const ai = order.indexOf(a), bi = order.indexOf(b);
+    if (ai !== -1 && bi !== -1) return ai - bi;
+    if (ai !== -1) return -1;
+    if (bi !== -1) return 1;
+    return b.localeCompare(a);
+  });
+  return sortedKeys.map(k => ({ label: k, items: groups[k] }));
+}
+
+/* ========== Rendering (List) ========== */
+const FALLBACK_QUOTES = [
+  '这条新闻的信息量，比产品需求文档还大。',
+  '建议反复阅读三遍，每一遍都有新的槽点。',
+  '科技圈的剧本比娱乐圈精彩多了。',
+  '今天的热点，明天的段子素材。',
+  '看完这条，觉得自己的焦虑都合理了。',
+  '这操作，懂的都懂。',
+  '又到了科技媒体集体高潮的时间。',
+];
+
+function renderCard(item) {
+  const source = item.source || '未知';
+  const title = item.title || '无标题';
+  const content = item.content || item.comment || '';
+  const summary = content || title || '暂无摘要';
+  const quote = item.quote || item.comment || FALLBACK_QUOTES[Math.floor(Math.random() * FALLBACK_QUOTES.length)];
+  const url = item.url || '';
+  const hasUrl = url && url !== '#';
+  const escUrl = url.replace(/"/g, '&quot;');
+
+  return `
+    <article class="card" data-url="${escUrl}" onclick="var u=this.dataset.url;if(u)window.open(u,'_blank','noopener')">
+      <div class="card-header">
+        <div class="card-title">${escHtml(title)}</div>
+        <span class="card-source">${escHtml(source)}</span>
+      </div>
+      <div class="card-body">${escHtml(summary)}</div>
+      <div class="card-quote">
+        <span class="quote-icon">💬</span>
+        <span>${escHtml(quote)}</span>
+      </div>
+      <div class="card-footer">
+        <span>${item.published ? formatDate(item.published) : ''}</span>
+        ${hasUrl ? `<a class="card-source-link" href="${escUrl}" target="_blank" rel="noopener" onclick="event.stopPropagation()">查看原文 →</a>` : '<span class="card-source-link" style="color:var(--text-dim)">暂无链接</span>'}
+      </div>
+    </article>
+  `;
+}
+
+function escHtml(str) {
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+function renderTab(tabKey) {
+  const items = allData[tabKey] || [];
+  const groups = groupByDate(items);
+  const container = $('main#mainContent');
+
+  if (items.length === 0) {
+    container.innerHTML = `
+      <div class="empty-state">
+        <div class="state-icon">📭</div>
+        <div>${CAT_LABELS[tabKey]} 板块暂无数据</div>
+      </div>`;
+    return;
+  }
+
+  let html = '';
+  let groupIndex = 0;
+  for (const group of groups) {
+    // First group (今天) is expanded by default
+    const isExpanded = groupIndex === 0;
+    const sectionId = `section-${tabKey}-${groupIndex}`;
+    html += `<section class="date-section" id="${sectionId}">`;
+    html += `<div class="date-heading${isExpanded ? ' expanded' : ''}" onclick="toggleDateSection('${sectionId}')">
+      ${CAT_ICONS[tabKey]} ${group.label} · ${group.items.length} 条
+      <span class="date-arrow">▶</span>
+    </div>`;
+    html += `<div class="date-items${isExpanded ? '' : ' collapsed'}" id="${sectionId}-items">`;
+    for (const item of group.items) {
+      html += renderCard(item);
+    }
+    html += `</div>`;
+    html += `</section>`;
+    groupIndex++;
+  }
+  container.innerHTML = html;
+}
+
+/* ========== Date Section Collapse ========== */
+function toggleDateSection(sectionId) {
+  const heading = document.querySelector(`#${sectionId} .date-heading`);
+  const items = document.getElementById(`${sectionId}-items`);
+  if (!heading || !items) return;
+
+  const isCollapsed = items.classList.contains('collapsed');
+
+  if (isCollapsed) {
+    // Expand
+    heading.classList.add('expanded');
+    items.classList.remove('collapsed');
+  } else {
+    // Collapse
+    heading.classList.remove('expanded');
+    items.classList.add('collapsed');
+  }
+}
+
+/* ========== Tab Switching ========== */
+function switchTab(tabKey) {
+  currentTab = tabKey;
+  $$('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tabKey));
+  if (tabKey === 'summary') {
+    renderSummary();
+  } else {
+    renderTab(tabKey);
+  }
+  $('main#mainContent').scrollIntoView({ behavior: 'smooth' });
+}
+
+function updateTabCounts() {
+  let total = 0;
+  for (const cat of CATEGORIES) {
+    const count = (allData[cat] || []).length;
+    total += count;
+    const el = $(`#count-${cat}`);
+    if (el) el.textContent = count;
+  }
+  const summaryEl = $('#count-summary');
+  if (summaryEl) summaryEl.textContent = total;
+  const totalEl = $('#totalCount');
+  if (totalEl) totalEl.textContent = total;
+}
+
+/* ========== Quote Quality Scoring ========== */
+function getQuoteScore(item) {
+  const q = (item.quote || '').trim();
+  if (!q) return -1;
+  return q.length;
+}
+
+/* ========== Summary Rendering ========== */
+function renderSummary() {
+  const container = $('main#mainContent');
+
+  // Collect all items across categories
+  let allItems = [];
+  for (const cat of CATEGORIES) {
+    const items = allData[cat] || [];
+    for (const item of items) {
+      allItems.push({ ...item, _cat: cat });
+    }
+  }
+
+  if (allItems.length === 0) {
+    container.innerHTML = `<div class="empty-state"><div class="state-icon">📭</div><div>暂无数据</div></div>`;
+    return;
+  }
+
+  // Sort for "今日最热": quote length > 10 first (by length desc), then 1-10, then no quote
+  const scored = allItems.map(item => ({ item, score: getQuoteScore(item) }));
+  scored.sort((a, b) => {
+    const aLong = a.score > 10, bLong = b.score > 10;
+    if (aLong && !bLong) return -1;
+    if (!aLong && bLong) return 1;
+    return b.score - a.score;
+  });
+  const hotItems = scored.slice(0, 6).map(s => s.item);
+
+  let html = '';
+
+  // Header
+  html += `<div class="summary-header">
+    <h2>📋 今日汇总 · 共 ${allItems.length} 条精选</h2>
+  </div>`;
+
+  // 🔥 今日最热
+  html += `<div class="summary-hot-header">🔥 今日最热 · 全局精选 Top ${hotItems.length}</div>`;
+  for (const item of hotItems) {
+    html += renderCard(item);
+  }
+
+  // Divider
+  html += `<hr class="section-divider">`;
+
+  // Per-category summary
+  for (const cat of CATEGORIES) {
+    const items = allData[cat] || [];
+    const count = items.length;
+    const top2 = items.slice(0, 2);
+
+    html += `<div class="summary-cat-section">
+      <div class="summary-cat-header">
+        <div class="summary-cat-label">
+          <span class="summary-cat-badge" style="background:var(--cat-${cat})">${CAT_LABELS[cat]}</span>
+          <span>${CAT_ICONS[cat]} ${CAT_LABELS[cat]}</span>
+          <span class="summary-cat-count">· ${count} 条</span>
+        </div>
+        <span class="summary-cat-link" onclick="switchTab('${cat}')">查看全部 →</span>
+      </div>`;
+
+    if (top2.length === 0) {
+      html += `<div style="font-size:0.78rem;color:var(--text-dim);padding:8px 0">暂无内容</div>`;
+    } else {
+      for (const item of top2) {
+        const quote = item.quote || '';
+        const url = item.url || '';
+        const hasUrl = url && url !== '#';
+        const escUrl = url.replace(/"/g, '&quot;');
+        html += `<article class="card-compact" data-url="${escUrl}" onclick="var u=this.dataset.url;if(u)window.open(u,'_blank','noopener')">
+          <div class="card-compact-title">${escHtml(item.title || '无标题')}</div>
+          ${quote ? `<div class="card-compact-quote"><span>💬</span><span>${escHtml(quote)}</span></div>` : `<div class="card-compact-quote" style="color:var(--text-dim);font-style:normal"><span>📄</span><span>${escHtml((item.content || '').slice(0, 80))}${(item.content || '').length > 80 ? '...' : ''}</span></div>`}
+        </article>`;
+      }
+    }
+    html += `</div>`;
+  }
+
+  container.innerHTML = html;
+}
+
+/* ========== Back to Top ========== */
+(function initBackToTop() {
+  const btn = document.getElementById('backToTop');
+  if (!btn) return;
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        if (window.scrollY > 300) {
+          btn.classList.add('visible');
+        } else {
+          btn.classList.remove('visible');
+        }
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+
+/* ========== Init ========== */
+async function init() {
+  try {
+    allData = await loadData();
+    updateTabCounts();
+
+    // Render default tab (summary)
+    if (currentTab === 'summary') {
+      renderSummary();
+    } else {
+      renderTab(currentTab);
+    }
+
+    $$('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        const key = tab.dataset.tab;
+        if (key && key !== currentTab) switchTab(key);
+      });
+    });
+
+  } catch (err) {
+    $('main#mainContent').innerHTML = `
+      <div class="state-message">
+        <div class="state-icon">😵</div>
+        <div style="margin-bottom:4px;font-weight:600">数据加载失败</div>
+        <div style="font-size:0.82rem;color:var(--text-dim)">${escHtml(err.message)}</div>
+        <button class="retry-btn" onclick="window.location.reload()">重试</button>
+      </div>`;
+  }
+}
+
+init();
+</script>
+</body>
+</html>

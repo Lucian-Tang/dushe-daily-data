@@ -1,0 +1,11 @@
+[
+  {
+    "name": "github-signals",
+    "schedule": "10 03 * * *",
+    "timeout": 300,
+    "model": "minimax-m2.7",
+    "script": "cron/scripts/github_trending_signals.py",
+    "enabled": true,
+    "description": "GitHub Trending AI/ML开源项目信号采集"
+  }
+]
