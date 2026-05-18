@@ -1,122 +1,98 @@
 [
   {
-    "title": "CloakBrowser — 让爬虫永不被封的隐身材质 Chromium",
-    "content": "Stealth Chromium 浏览器，通过了全部 30 项 bot 检测测试。Drop-in Playwright 替代方案，源码级指纹补丁，目前 14,869 星，今日新增 1,391 星。",
-    "quote": "Selenium 的用户还在和 Cloudflare 斗智斗勇，这边已经 30/30 全通了。建议爬虫工程师直接投诚，别挣扎了。",
-    "source": "GitHub Trending",
-    "url": "https://github.com/CloakHQ/CloakBrowser",
+    "title": "Anthropic用16个AI Agent协作写出C编译器",
+    "content": "Anthropic研究员Nicholas Carlini用16个Claude实例并行工作，经近2000次Claude Code会话、2万美元API费用，产出10万行Rust代码的C编译器，能编译Linux 6.9内核（x86/ARM/RISC-V）。但实测编译速度比GCC关优化还慢15万倍，且无法持续迭代维护。证明了多Agent协作的上限和下限同时存在。",
+    "quote": "烧了2万刀写了个比GCC慢15万倍的编译器，这大概是最贵的Hello World了",
+    "source": "Anthropic Engineering",
+    "url": "https://www.anthropic.com/engineering/building-c-compiler",
     "published": "2026-05-18"
   },
   {
-    "title": "CLI-Anything — 让所有软件变成 agent-native 接口",
-    "content": "Hong Kong University 作品，把所有软件变成 Agent 可操作的 CLI 框架。36,447 星，今日 1,047 星。配套网站 clianything.cc。",
-    "quote": "总有一天你会意识到，GUI 只是 CLI 的 UI wrapper，而 CLI-Anything 就是那个撕掉 wrapper 的狠人。",
+    "title": "AI不会让你的流程变快",
+    "content": "Frederick van Brabant撰文指出：AI加速了代码编写，但软件开发真正的瓶颈从来不是打字速度。需求不清晰、跨团队协调、领域理解才是真正的减速带。文章引发HN激烈讨论，核心争议：AI到底在加速开发还是只是放大已有的混乱？337条评论吵成一锅粥。",
+    "quote": "以为AI能救流程，就像以为买更好的锅就能当大厨",
+    "source": "Hacker News",
+    "url": "https://news.ycombinator.com/item?id=48168221",
+    "published": "2026-05-18"
+  },
+  {
+    "title": "AI是技术不是产品",
+    "content": "John Gruber（Daring Fireball）发文批评科技行业把AI当产品贩卖的乱象。AI应该是嵌入产品中的底层技术，就像没有人单独买「电」，大家买的是电驱动的电器。文章获304点热议，开发者普遍认同：把AI功能硬塞进产品而不考虑用户实际需求，是当前行业通病。",
+    "quote": "把AI当产品卖，就像电力公司只卖电不给灯泡——谁会买？",
+    "source": "Daring Fireball",
+    "url": "https://daringfireball.net/2026/05/ai_is_technology_not_a_product",
+    "published": "2026-05-18"
+  },
+  {
+    "title": "实测：Apple Silicon本地跑大模型比云服务贵",
+    "content": "William Angel实测对比：用Mac本地运行LLM的每百万token成本，竟然高于OpenRouter云端API。计入硬件折旧后差距更大。数据中心的批量处理、低电价和专业芯片让云推理性价比碾压家用设备。除非极度重视隐私，否则在家跑大模型纯粹是行为艺术。",
+    "quote": "花几万买Mac跑模型，结果每token比云还贵——这智商税交得优雅",
+    "source": "Hacker News",
+    "url": "https://news.ycombinator.com/item?id=48168198",
+    "published": "2026-05-18"
+  },
+  {
+    "title": "Semble：给AI Agent的代码搜索，比grep省98% Token",
+    "content": "开源工具Semble亮相HN，专为AI编程Agent设计的代码搜索引擎。使用静态Model2Vec嵌入+BM25混合检索，纯CPU运行，250ms索引常规仓库，单次查询仅1.5ms。作为MCP Server可即插即用于Claude Code、Cursor等。98%更少token消耗，99%接近Transformer模型检索质量。",
+    "quote": "grep用了几十年没人嫌弃，AI一来才发现这玩意儿这么吃token",
+    "source": "Hacker News",
+    "url": "https://news.ycombinator.com/item?id=48169874",
+    "published": "2026-05-18"
+  },
+  {
+    "title": "CodeGraph：预索引代码知识图谱，AI编程新辅助",
+    "content": "CodeGraph为Claude Code构建预索引的代码知识图谱，大幅减少AI编程中的token消耗和工具调用次数，100%本地运行。单日暴涨857星，反映出Agent编程场景下「少token就是省钱」的刚需。目前已支持多种语言的代码关系图谱自动构建。",
+    "quote": "AI编程的终极奥义不是多聪明，而是少烧token——CodeGraph悟了",
+    "source": "GitHub Trending",
+    "url": "https://github.com/colbymchenry/codegraph",
+    "published": "2026-05-18"
+  },
+  {
+    "title": "Shannon：白盒AI渗透测试工具自动找漏洞",
+    "content": "KeygraphHQ发布的Shannon Lite是自主AI渗透测试框架，能分析Web应用源码、识别攻击向量并执行真实漏洞利用。在OWASP Juice Shop中发现20+漏洞包括认证绕过和数据库泄露。AGPL-3.0开源，支持2FA/SSO登录、并行扫描，填补了「一年一次人工渗透测试」之间的安全真空。",
+    "quote": "终于有人把「跑个扫描交差」这件事自动化了，渗透测试师的摸鱼时代来了",
+    "source": "GitHub Trending",
+    "url": "https://github.com/KeygraphHQ/shannon",
+    "published": "2026-05-18"
+  },
+  {
+    "title": "CLI-Anything：让所有软件变成AI Agent可调用的API",
+    "content": "香港大学数据科学实验室发布CLI-Anything，通过构建CLI-Hub让AI Agent能操作任意软件。核心理念：把世界上的所有软件工具都变成Agent可用的命令行接口。搭配Agent Skills生态，野心是重新定义人机交互的边界。",
+    "quote": "把全世界软件都变成CLI——这想法疯狂到可能真的有用",
     "source": "GitHub Trending",
     "url": "https://github.com/HKUDS/CLI-Anything",
     "published": "2026-05-18"
   },
   {
-    "title": "12-Factor Agents — 写给 LLM 应用的生产力守则",
-    "content": "humanlayer 出品的 LLM 软件构建原则，教你如何把 AI Agent 做成真正能上生产环境的产品。20,385 星，今日 359 星。",
-    "quote": "又一个十二法则，但这次是真写给 AI 时代的。比那些 AI 会取代你的废话有用一万倍。",
-    "source": "GitHub Trending",
-    "url": "https://github.com/humanlayer/12-factor-agents",
+    "title": "$80的Android平板变身Debian Linux工作站",
+    "content": "技术爱好者将一台RK3562芯片、4GB内存的廉价Android平板成功刷入Debian并实现大部分硬件驱动正常工作。社区热议如何在4GB内存下生存：Firefox优于Chrome（内存压力下自动丢弃标签）、用WezTerm+tmux替代桌面环境、DNS广告拦截让网页可用。极客精神的最佳注脚。",
+    "quote": "八十块的平板跑Debian，贫穷限制不了想象力，只会激发创造力",
+    "source": "Hacker News",
+    "url": "https://news.ycombinator.com/item?id=48168668",
     "published": "2026-05-18"
   },
   {
-    "title": "Sana — 英伟达的高效图像生成模型",
-    "content": "NVlabs 开源 SANA：基于 Linear Diffusion Transformer 的高分辨率图像合成方案。6,391 星，主打效率和质量兼得。",
-    "quote": "英伟达开源的东西从来不是用来给你白嫖的，是让你 dependency 上它的硬件的。但不管怎样，这图确实好看。",
-    "source": "GitHub Trending",
-    "url": "https://github.com/NVlabs/Sana",
+    "title": "Mozilla警告英国：VPN是基本隐私安全工具",
+    "content": "英国政府咨询文件提出可能限制VPN以推行年龄验证制度，Mozilla强硬回应称VPN是不可或缺的隐私与安全基础设施，削弱VPN就是削弱所有人的安全。该帖以622点高居HN榜首，折射出全球开发者对数字权利被侵蚀的深层焦虑。",
+    "quote": "英国想禁VPN推年龄验证？下回是不是该禁Tor了，一步到位多省事",
+    "source": "Hacker News",
+    "url": "https://news.ycombinator.com/item?id=48166459",
     "published": "2026-05-18"
   },
   {
-    "title": "Supertonic — 超快端侧多语言 TTS",
-    "content": "supertone-inc 出品，基于 ONNX 原生运行的多语言语音合成引擎。8,171 星，今日 755 星。主打闪电般速度、本地运行。",
-    "quote": "所有 TTS 项目的终极目标就是让 AI 说话别那么 AI。这个至少跑得够快，快到你来不及嫌弃它。",
+    "title": "Open-Generative-AI：开源AI视频图像生成集成平台",
+    "content": "集200+模型于一身的开源AI生成工作室，覆盖Flux、Midjourney替代、Kling、Sora、Veo等主流模型。MIT协议、无内容过滤、完全自托管。单日703星反映了开发者对「不审查、能自己部署」的AI工具的强烈渴求，也暗示了对封闭商业API的不信任。",
+    "quote": "200个模型打包开源无审查，Midjourney看了连夜改定价策略",
     "source": "GitHub Trending",
-    "url": "https://github.com/supertone-inc/supertonic",
+    "url": "https://github.com/Anil-matcha/Open-Generative-AI",
     "published": "2026-05-18"
   },
   {
-    "title": "AI Agents for Beginners — 微软的 Agent 入门教程",
-    "content": "微软出品，12 节课带你从零构建 AI Agent。Jupyter Notebook 编写，63,266 星，今日新增 1,013 星，已经成为必读圣经。",
-    "quote": "微软开源的东西，要么没人用，要么全世界都在用。显然 Agent 教程属于后者。建议和它的 Windows 更新学学什么叫克制。",
+    "title": "Microsoft发布AI Agents入门课程：12节课从零构建Agent",
+    "content": "微软在GitHub发布AI Agents for Beginners系列教程，12节课覆盖Agent基础概念、工具调用、多Agent协作、生产部署等主题，配套Jupyter Notebook。485星的热度说明：全世界的开发者都在被老板逼着「学一下AI Agent」，微软精准收割学习需求。",
+    "quote": "微软：知道你们都被逼着学Agent，课已备好，请开始你的表演",
     "source": "GitHub Trending",
     "url": "https://github.com/microsoft/ai-agents-for-beginners",
-    "published": "2026-05-18"
-  },
-  {
-    "title": "Shadowbroker — 开源版全球情报跟踪系统",
-    "content": "用 OSINT 手段追踪私人飞机、间谍卫星和地震事件，AI agent 可以接入分析数据找关联。7,591 星，今日 768 星。",
-    "quote": "这个名字起得好，就差直接说别拿去做坏事。不过说实话，这个项目比某些政府情报系统还全面。",
-    "source": "GitHub Trending",
-    "url": "https://github.com/BigBodyCobain/Shadowbroker",
-    "published": "2026-05-18"
-  },
-  {
-    "title": "smallcode — 给小模型用的 AI 编程 Agent",
-    "content": "专为小型 LLM 优化的 AI 编程 Agent。4B 参数活跃模型达到 87% 基准表现，今日新项目已有 338 星。",
-    "quote": "大模型狂欢了一年半，终于有人想起穷人了。4B 模型跑出 87% 的 benchmark，这让那些千亿参数的兄弟们有点尴尬。",
-    "source": "GitHub Trending",
-    "url": "https://github.com/Doorman11991/smallcode",
-    "published": "2026-05-18"
-  },
-  {
-    "title": "Files.md — Obsidian 的开源替代品",
-    "content": "把所有人生笔记都存在纯 .md 文件里。本地优先、离线可用、不离开设备，5 年打磨。Hacker News 289 分，163 条讨论。",
-    "quote": "Obsidian 用户看到这个会心一笑，Notion 用户看到会问 markdown 是什么，Evernote 用户已经死了。",
-    "source": "Hacker News",
-    "url": "https://github.com/zakirullin/files.md",
-    "published": "2026-05-18"
-  },
-  {
-    "title": "Semble — 比 grep 省 98% Token 的代码搜索工具",
-    "content": "专为 Agent 设计的代码搜索库。自然语言搜索代码片段，比 grep+read 省 98% token，索引速度比专用模型快 200 倍。HN 410 分，136 条讨论。",
-    "quote": "grep 用户说我用 grep 二十年了，然后发现自己每个月为 grep 的 token 付了 200 刀。Semble 就是来拯救你的钱包和耐心的。",
-    "source": "Hacker News",
-    "url": "https://github.com/MinishLab/semble",
-    "published": "2026-05-18"
-  },
-  {
-    "title": "GenCAD — AI 看图生成可编辑 CAD 模型",
-    "content": "Image-conditional CAD 生成模型，不仅生成 3D 实体，还能输出完整参数化 CAD 指令历史。HN 406 分，111 条讨论。",
-    "quote": "设计狮可以安心了，AI 暂时只能帮你画出来，但改参数还是得你自己来。暂时。",
-    "source": "Hacker News",
-    "url": "https://gencad.github.io/",
-    "published": "2026-05-18"
-  },
-  {
-    "title": "auto-identity-remove — 一键退出数据经纪商",
-    "content": "macOS 上的自动化工具，帮你自动从各个数据经纪商处退出个人信息。HN 301 分，122 条讨论。",
-    "quote": "GDPR 说了你有权删除，但是没说你得一个个点 200 个 unsubscribe 链接。这个工具拯救你的手指和隐私，一次一个命令。",
-    "source": "Hacker News",
-    "url": "https://github.com/stephenlthorn/auto-identity-remove",
-    "published": "2026-05-18"
-  },
-  {
-    "title": "Linux 安全邮件列表被 AI 驱动漏洞猎人搞到几乎无法管理",
-    "content": "Linus Torvalds 发火：AI-powered bug hunters 让 Linux 安全邮件列表变得几乎完全不可管理。HN 148 分，67 条讨论。",
-    "quote": "Linus 骂人不是新闻，Linus 骂 AI 才是。当连内核社区都被 AI 垃圾邮件淹没的时候，你就知道这波 AI 泡沫有多离谱了。",
-    "source": "Hacker News",
-    "url": "https://www.theregister.com/security/2026/05/18/linus-torvalds-says-ai-powered-bug-hunters-have-made-linux-security-mailing-list-almost-entirely-unmanageable/5241633",
-    "published": "2026-05-18"
-  },
-  {
-    "title": "The Quiet Renovation at Bitwarden — 开源密码管理器的商业化转型",
-    "content": "分析 Bitwarden 从开源密码管理器走向更商业化方向的平静转型。HN 171 分，78 条讨论。",
-    "quote": "每个开源项目最终都会面临吃饭还是理想的选择。Bitwarden 选了吃饭，至少目前吃得还算体面，没像某些项目吃完就摔碗。",
-    "source": "Hacker News",
-    "url": "https://blog.ppb1701.com/the-quiet-renovation-at-bitwarden",
-    "published": "2026-05-18"
-  },
-  {
-    "title": "InsForge — Coding Agent 的开源 Heroku",
-    "content": "为 AI Coding Agent 设计的全栈后端平台：数据库、认证、存储、计算、AI 网关一站式搞定，MCP 协议接入。HN Show 发布。",
-    "quote": "Heroku 死了，但它的灵魂在 Agent 时代复活了。以后你写代码只需要说要一个电商网站，InsForge 帮你把后端全搭好。",
-    "source": "Hacker News",
-    "url": "https://github.com/InsForge/InsForge",
     "published": "2026-05-18"
   }
 ]
