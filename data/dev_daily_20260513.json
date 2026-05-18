@@ -1,97 +1,110 @@
-{
-  "date": "2026-05-13",
-  "title": "开发者日报 | 2026-05-13",
-  "source": "Luxmind Dev Daily",
-  "items": [
-    {
-      "title": "CERT 披露 dnsmasq 6 个严重安全漏洞，影响数百万联网设备",
-      "source": "Hacker News",
-      "url": "https://lists.thekelleys.org.uk/pipermail/dnsmasq-discuss/2026q2/018471.html",
-      "published": "2026-05-12",
-      "quote": "DNS 服务商集体感冒，你的路由器可能正在裸奔。",
-      "content": "CERT 协调中心本周披露 dnsmasq 项目存在 6 个严重漏洞，涵盖缓存投毒、堆溢出和远程代码执行，影响所有使用 dnsmasq 的路由器、IoT 设备和 Linux 发行版。dnsmasq 广泛部署于家庭路由器、Kubernetes Pods 和嵌入式系统，漏洞允许攻击者通过恶意 DNS 响应执行任意代码。数百万设备需要在社区发布补丁前临时采取缓解措施。面向所有运维工程师和嵌入式开发者。",
-      "tags": ["安全", "DNS", "漏洞", "IoT"]
-    },
-    {
-      "title": "Exim 邮件服务器 CVE-2026-45185：未认证 RCE，XBOW 披露技术细节",
-      "source": "Hacker News",
-      "url": "https://xbow.com/blog/dead-letter-cve-2026-45185-xbow-found-rce-exim",
-      "published": "2026-05-12",
-      "quote": "邮件服务器又出事了，建议先检查你的 Exim 版本号。",
-      "content": "安全研究团队 XBOW 发布报告，披露 Exim 邮件服务器存在一个未认证远程代码执行漏洞（CVE-2026-45185）。攻击者无需任何凭证即可在默认配置下执行命令，影响 Exim 4.92 至 4.95 所有版本。该漏洞被命名为 Dead.Letter，源于攻击路径利用邮件队列处理环节。目前尚无官方补丁，XBOW 建议网络管理员立即限制 Exim 端口暴露，并关注官方安全公告。面向邮件系统管理员和渗透测试工程师。",
-      "tags": ["安全", "邮件服务器", "RCE", "CVE"]
-    },
-    {
-      "title": "Cactus 开源 Needle：26M 参数蒸馏 Gemini 工具调用能力，小模型也能函数调用",
-      "source": "Hacker News",
-      "url": "https://github.com/cactus-compute/needle",
-      "published": "2026-05-12",
-      "quote": "把大模型的工具调用能力压缩进 26MB，这波是小而美的胜利。",
-      "content": "创业公司 Cactus 开源了 Needle，一个仅 26M 参数的函数调用（Function Calling / Tool Use）模型，蒸馏自 Google Gemini 的工具调用能力。该模型可以在消费级设备上运行（如手机、树莓派），延迟低于 100ms，在 ToolBench 基准测试中超过 GPT-4o Mini。开源协议为 Apache 2.0，开发者可自由用于商业项目。对于想在边缘设备部署 AI 工具链的开发者具有重要参考价值。面向 AI 工程师、边缘计算开发者和嵌入式 AI 研究者。",
-      "tags": ["AI", "开源", "模型蒸馏", "边缘计算"]
-    },
-    {
-      "title": "Google DeepMind 发布 AI Pointer：用神经网络重构鼠标指针交互范式",
-      "source": "Hacker News",
-      "url": "https://deepmind.google/blog/ai-pointer/",
-      "published": "2026-05-12",
-      "quote": "指针都能 AI 化了，你的鼠标垫准备好失业了吗？",
-      "content": "Google DeepMind 发布了 AI Pointer 研究项目，探索在 AI 时代重新设计人机交互中的鼠标指针概念。项目结合神经网络预测用户意图，动态调整指针形状、大小和响应方式，在老人辅助、无障碍设计和 AR/VR 场景中展示了实验性 Demo。虽然尚未产品化，但该研究对理解 AI Native 的 UI 设计方向具有重要参考意义。面向 UI/UX 设计师、前端开发者和人机交互研究员。",
-      "tags": ["AI", "人机交互", "UI", "Google"]
-    },
-    {
-      "title": "NURL：专为 LLM 设计的编程语言，让 AI 生成的代码更可靠",
-      "source": "Hacker News",
-      "url": "https://nurl-lang.org/",
-      "published": "2026-05-12",
-      "quote": "专门写给 AI 看的代码语言？人类先别急着学。",
-      "content": "NURL 是一个新兴编程语言，设计初衷是专门用于 AI 编程场景。语言特性包括确定性执行（无未定义行为）、结构化输出保证、内置形式化规格描述能力，目标是让大模型生成的代码更可预测、更易验证。该语言目前仍处于早期实验阶段，生态尚不完善，但引入了「AI-First Language Design」这一新思路。对编程语言设计研究者和 AI 代码生成工具开发者有启发意义。",
-      "tags": ["编程语言", "AI", "LLM", "开发者工具"]
-    },
-    {
-      "title": "假 npm 包 typosquatting 攻击：利用 Cursor 编辑器漏洞后门 Next.js 管理路由",
-      "source": "Dev.to",
-      "url": "https://dev.to/oopssec-store/how-a-fake-npm-package-made-cursor-backdoor-a-nextj",
-      "published": "2026-05-12",
-      "quote": "npm 生态的供应链攻击又进化了，连 AI 辅助编辑器都不放过。",
-      "content": "安全研究员披露了一起真实攻击链：攻击者发布了一个 typosquatting 恶意 npm 包，诱导开发者安装后，利用 Cursor AI 辅助编辑器在开发者注释中残留的调试接口，结合包名拼写混淆（如 'axioss' vs 'axios'），成功在 Next.js 应用中植入后门路由。该攻击展示了 AI 辅助编程工具引入的新型攻击面，以及供应链安全的严峻性。建议开发者仔细核查 npm 包名并启用 lockfile 审查。面向全栈工程师、安全研究员和 DevSecOps 从业者。",
-      "tags": ["安全", "供应链攻击", "npm", "AI工具"]
-    },
-    {
-      "title": "Anthropic 估值 9000 亿美元引热议：仅靠程序员付费能撑起这个估值吗？",
-      "source": "V2EX",
-      "url": "https://www.v2ex.com/t/1212285",
-      "published": "2026-05-12",
-      "quote": "估值涨得比代码发布还快，就看谁先接最后一棒了。",
-      "content": "V2EX 社区热议 Anthropic 估值在近三个月内从 3800 亿飙升至 9000 亿美元，逼近 OpenAI 历史峰值。社区讨论焦点在于：Anthropic 的核心收入来源目前依赖开发者 API 调用（B2D 模式），但 B2D 市场天花板有限，Claude 桌面产品化仍在早期。评论聚焦 Claude 与 GPT 的产品体验差异、API 定价策略，以及 AI 公司是否正在走向类似 Salesforce 的企业销售路径。对于 AI 创业者和投资人具有参考价值。",
-      "tags": ["AI", "行业", "Anthropic", "创业"]
-    },
-    {
-      "title": "小米基于 JuiceFS 的 AI 战略存储演进：异构存储统一管理实践",
-      "source": "博客园",
-      "url": "https://www.cnblogs.com/JuiceData/p/20023713",
-      "published": "2026-05-12",
-      "quote": "大厂存储方案终于开源了，先收藏，等踩坑的时候回来看看。",
-      "content": "小米存储团队发布技术文章，详细复盘了 2021 年起基于 JuiceFS 构建文件存储平台的演进历程，尤其是 2024 年提出全面 AI 战略后，原有异构存储体系面临接入标准不统一、扩展性不足等挑战。团队通过统一命名空间、热温冷数据分层和 POSIX 兼容接口，实现了 AI 训练数据 Pipeline 的存储统一治理。文章还披露了面对 GPU 集群高吞吐需求的架构优化细节。对于中大型互联网公司存储架构师和云原生工程师具有较高参考价值。",
-      "tags": ["存储", "AI基础设施", "架构", "小米"]
-    },
-    {
-      "title": "Dev.to 技术博主复盘：将 Claude Opus 替换为开源模型节省 96% 成本",
-      "source": "Dev.to",
-      "url": "https://dev.to/cristiantalasanchez/cambie-el-cerebro-de-mi-coding-agent-de-opus-",
-      "published": "2026-05-12",
-      "quote": "一个月省下 $700，但代价是每天多花 2 小时调模型，值吗？",
-      "content": "一位独立开发者分享了他将 Claude Opus 替换为本地开源模型（DeepSeek V3 + Qwen 2.5）用于 AI Coding Agent 的完整实验。结果显示：月度成本从 $720 降至 $30（降幅 96%），但上下文质量下降约 15%，复杂重构任务需人工介入次数增加。该实验客观呈现了成本-质量 trade-off 的现实，对预算有限的个人开发者和小型团队有参考意义。作者同时提供了完整的本地部署配置和 prompt 调优方案。",
-      "tags": ["AI", "成本优化", "开源模型", "Coding Agent"]
-    },
-    {
-      "title": "Agentic Interface for COBOL：AI 让大型机开发者用自然语言维护遗产代码",
-      "source": "Hacker News",
-      "url": "https://www.hypercubic.ai/hopper",
-      "published": "2026-05-12",
-      "quote": "COBOL 程序员终于迎来了 AI 时代，虽然晚了 60 年。",
-      "content": "创业公司 Hypercubic 推出 Hopper 产品，定位为大型机（Mainframe）和 COBOL 代码的 AI 接口。其核心能力是让开发者用自然语言查询、解释、甚至生成 COBOL 代码，系统自动映射到传统 IBM 大型机环境。该方向针对全球数百万行 COBOL 遗产代码的维护痛点，目标是降低大型机维护门槛、延长遗产系统寿命。对于银行、保险、政府等依赖大型机的行业从业者有直接价值。",
-      "tags": ["AI", "大型机", "COBOL", "企业软件"]
-    }
-  ]
-}
+[
+  {
+    "title": "Bun 从 Zig 到 Rust 的迁移已实锤，下个版本可能成为最后一个 Zig 版本",
+    "url": "https://www.v2ex.com/t/1211992",
+    "source": "V2EX",
+    "content": "Bun JavaScript 运行时的核心模块正从 Zig 重写为 Rust，引发社区震动。这意味着下一个大版本可能彻底告别 Zig 代码。Rust 在系统编程领域持续蚕食 C/Zig 地盘的又一证据，对 JavaScript 工具链的未来性能路线影响深远，Node/Deno/Bun 三方格局可能因此再度洗牌。",
+    "quote": "说过用 Zig 打造'下一代基础设施'的人都沉默了。",
+    "published": "2026-05-13",
+    "uid": "dev_91eb3fc9"
+  },
+  {
+    "title": "Bambu Lab is abusing the open source social contract",
+    "url": "https://www.jeffgeerling.com/blog/2026/bambu-lab-abusing-open-source-social-contract",
+    "source": "Hacker News",
+    "content": "知名科技博主 Jeff Geerling 炮轰 Bambu Lab 利用 GPL 开源代码开发 OrcaSlicer 后，在新固件中限制第三方工具接入，社区尝试恢复支持即遭封杀。1142 点赞登顶 HN，引发关于'开源白嫖+闭源收割'模式的广泛讨论，对所有依赖开源生态的商业公司都有警示意义。",
+    "quote": "抄作业的时候说开源精神，锁大门的时候就失忆了。",
+    "published": "2026-05-13",
+    "uid": "dev_69bc4dc8"
+  },
+  {
+    "title": "GitHub 遭遇可靠性危机，正常运行时间跌至 86%",
+    "url": "https://www.oschina.net/news/439944",
+    "source": "开源中国",
+    "content": "据 The Pragmatic Engineer 报道，GitHub 正常运行时间降至 86%，远低于业界'五个九'标准。4 月 23 日的严重宕机事故使整个平台陷入前所未有的可靠性危机。所有将代码、CI/CD、项目管理全部押注 GitHub 的团队都应关注，开源社区对单一平台依赖的担忧加剧。",
+    "quote": "你说你重度依赖 GitHub？建议你先囤点离线备份。",
+    "published": "2026-05-13",
+    "uid": "dev_27eb2c83"
+  },
+  {
+    "title": "NPM 又被投毒！TanStack、Mistral AI、UiPath 等受波及",
+    "url": "https://www.v2ex.com/t/1212131",
+    "source": "V2EX",
+    "content": "恶意 npm 包窃取云密钥、SSH 密钥与 GitHub 令牌，TanStack、Mistral AI、UiPath 等知名项目受影响。这是继 2024 年大量 npm 投毒事件后的又一次重大供应链攻击，再次敲响依赖安全警钟。Node.js/前端开发者急需检查 lockfile 并启用更严格的安全策展机制。",
+    "quote": "每年 npm 都要出几个投毒事件，跟大姨妈一样准时。",
+    "published": "2026-05-13",
+    "uid": "dev_405db953"
+  },
+  {
+    "title": "Needle: Distilled Gemini Tool Calling into a 26M Model",
+    "url": "https://github.com/cactus-compute/needle",
+    "source": "Hacker News",
+    "content": "开源项目 Needle 将 Google Gemini 的工具调用能力蒸馏到仅 2600 万参数的小模型中，能在边缘设备上跑工具调用型 AI，无需联网调用大模型 API。对 AI Agent 的本地化部署和成本优化意义重大，边缘计算和 IoT 场景开发者迎来新的轻量级方案。",
+    "quote": "大模型们卷完参数卷蒸馏，终于想起了穷人的感受。",
+    "published": "2026-05-13",
+    "uid": "dev_467d3965"
+  },
+  {
+    "title": "DuckDB Quack: Client-Server Protocol",
+    "url": "https://duckdb.org/2026/05/12/quack-remote-protocol",
+    "source": "Hacker News",
+    "content": "嵌入式 OLAP 数据库 DuckDB 推出 Quack 协议，正式支持客户端-服务器模式。DuckDB 从当初的'单进程玩具'进化为支持远程连接的分布式分析引擎，数据分析工具链格局可能因此变化。对从事数据工程、BI 看板和嵌入式分析的开发者影响深远。",
+    "quote": "DuckDB 从玩具进化成战场武器，Snowflake 建议开始不安。",
+    "published": "2026-05-13",
+    "uid": "dev_91fe10b7"
+  },
+  {
+    "title": "Claude Code（Opus 4.7 模型）支持快速模式",
+    "url": "https://www.v2ex.com/t/1212317",
+    "source": "V2EX",
+    "content": "Claude Code 迎来重要更新：Opus 4.7 模型新增快速模式显著降低推理延迟。讨论焦点在于快速模式下的代码质量是否会下降，以及 AI 编程领域 Codex Pro 和 Claude Code 的选择策略。AI 编程工具军备竞赛持续白热化，工程师的生产力竞争已从'用不用 AI'变成'用谁家 AI'。",
+    "quote": "AI 写代码快了，debug 回归人——时间守恒定律从不骗人。",
+    "published": "2026-05-13",
+    "uid": "dev_4f00da1d"
+  },
+  {
+    "title": "scrcpy 4.0 发布：全面迁移至 SDL3，支持弹性虚拟显示",
+    "url": "https://www.oschina.net/news/439956/piclist-3-4-0-released",
+    "source": "开源中国",
+    "content": "Android 设备镜像与操控神器 scrcpy 正式发布 4.0 版本，核心变更是将底层图形库从 SDL2 全面迁移至 SDL3，并带来弹性虚拟显示、相机变焦、窗口宽高比锁定等实用功能。对于经常做 Android 开发调试、演示或投屏的工程师来说是重大升级。",
+    "quote": "一个镜像工具默默迭代到 4.0，比某些'颠覆性'产品还靠谱。",
+    "published": "2026-05-13",
+    "uid": "dev_64018ce8"
+  },
+  {
+    "title": "agentmemory — #1 Persistent memory for AI coding agents",
+    "url": "https://github.com/rohitg00/agentmemory",
+    "source": "GitHub Trending",
+    "content": "agentmemory 开源项目为所有主流 AI 编码 agent 提供持久化记忆能力，支持 Claude Code、Cursor、Gemini CLI、Codex 乃至 OpenClaw。通过 MCP/hooks/REST API 接入，让 agent 记住上下文不再需要反复解释，解决方案参考了真实基准测试。所有重度使用 AI 编程工具的开发者的刚需项目。",
+    "quote": "给 AI 装记忆体，下一个创业方向是给 AI 买养老保险。",
+    "published": "2026-05-13",
+    "uid": "dev_7eb4facb"
+  },
+  {
+    "title": "CloakHQ/CloakBrowser — Stealth Chromium that passes every bot detection test",
+    "url": "https://github.com/CloakHQ/CloakBrowser",
+    "source": "GitHub Trending",
+    "content": "CloakBrowser 是一个源码级修改、能通过所有反爬检测的'隐形'Chromium 浏览器。可直接替换 Playwright，30 项反爬测试全部通过，解决了爬虫开发者和自动化测试工程师被 Cloudflare 等防护系统阻拦的长期痛点。8000+ Stars 的今日热门项目。",
+    "quote": "反爬工程师和爬虫工程师的军备竞赛，又交了一次火。",
+    "published": "2026-05-13",
+    "uid": "dev_5731630e"
+  },
+  {
+    "title": "代码是 AI 写的，生产事故谁背锅？",
+    "url": "https://www.cnblogs.com/Zhang-Xiang/p/20028472",
+    "source": "博客园",
+    "content": "作者在 Code Review 中发现年轻工程师提交的 AI 生成代码外观规整但业务逻辑跑不通，深入探讨了 AI 辅助编程时代的代码所有权与责任归属问题。讨论触及工程素养、代码审查标准和团队管理等多个层面，是每个技术负责人都在面对的现实命题。",
+    "quote": "AI 写 bug，我背锅，这波 ChatGPT 在第五层我在负一层。",
+    "published": "2026-05-13",
+    "uid": "dev_548ab5ac"
+  },
+  {
+    "title": ".NET 11 Preview 4 正式发布",
+    "url": "https://www.cnblogs.com/shanyou/p/20027731",
+    "source": "博客园",
+    "content": "微软发布 .NET 11 第四个预览版，在运行时异步模型全面启用、进程管理 API 扩展、ASP.NET Core AI 集成以及 EF Core 向量搜索等方面带来实质性进展。高频迭代节奏表明微软正在全力押注 AI 与 .NET 生态深度融合。.NET 开发者值得关注的前沿更新。",
+    "quote": ".NET 11 了，而你的公司还在跑 .NET Framework 4.6。",
+    "published": "2026-05-13",
+    "uid": "dev_ea6ad027"
+  }
+]
