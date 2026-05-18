@@ -1,0 +1,162 @@
+[
+  {
+    "title": "🐑 Shepherd：Meta-Agent 运行框架，用 Lean 证明器给 Agent 环境做版本控制",
+    "content": "Meta-Agent 系统（Agent 操控 Agent）面临两大工程难题：Agent 状态难以追踪回滚、多 Agent 并行探索时计算成本爆炸。Shepherd 提出将 Meta-Agent 操作形式化为函数，用 Lean 证明语言机械化核心操作，并记录每次 Agent-环境交互为带类型的 Git-like 执行 trace。在这种形式化下，任何历史状态都可以 fork 并回放——比 Docker fork 快 5 倍，prompt 缓存复用率达 95% 以上。在 TerminalBench-2 上，Tree-RL fork 策略将任务完成率从 34.2% 提升到 39.4%；pair coding 场景 supervisor 干预使通过率从 28.8% 升至 54.7%。这对需要高可靠 Agent 协作的研究和工程团队是基础设施级别的贡献，已开源。",
+    "quote": "数学公式推完发现业务逻辑没对过",
+    "source": "arXiv (cs.AI)",
+    "url": "https://arxiv.org/abs/2605.10913",
+    "published": "2026-05-13",
+    "uid": "ai_6a68fe0e",
+    "collectedAt": "2026-05-13T00:00:00"
+  },
+  {
+    "title": "🎬 WorldReasonBench：视频生成模型是\"世界模拟器\"吗？首个物理对齐压力测试来了",
+    "content": "Seedance2.0、Veo3.1 等商业视频生成系统已能生成高度逼真动态场景，学界开始讨论视频生成器是否在演化为\"世界模拟器\"，但此前缺乏系统性验证框架。WorldReasonBench 从人类Aligned 的角度出发，将视频生成器视为未来世界状态预测器进行压力测试，考察模型在长程物理交互、因果链条、多实体碰撞等场景的合理性。揭示了当前最强商业系统在物理可信度上的具体短板，为视频生成进入科学模拟、机器人规划等高可靠性场景提供了首个严格评测基准。",
+    "quote": "画面精美如电影物理常识如小孩涂鸦",
+    "source": "arXiv (cs.AI / cs.CV)",
+    "url": "https://arxiv.org/abs/2605.10434",
+    "published": "2026-05-13",
+    "uid": "ai_b6925387",
+    "collectedAt": "2026-05-13T00:00:00"
+  },
+  {
+    "title": "🖼️ Qwen-Image-2.0：统一图文生成与编辑，单一框架搞定高保真图像创作",
+    "content": "图像生成和编辑长期被视为两个独立任务——前者追求创造力，后者追求精确控制。Qwen-Image-2.0 试图用单一统一模型同时搞定：既能在高分辨率下生成逼真图像，又能基于指令对图像特定区域进行精准编辑，保持风格和身份一致性。该工作在多个图文生成和编辑 benchmark 上验证了统一的可行性，减少了部署多个专用模型的工程成本。对需要一站式图像创作/编辑能力的应用层团队值得关注。",
+    "quote": "画画改图都会干就是样样半斤八两",
+    "source": "HuggingFace Paper",
+    "url": "https://huggingface.co/papers/2605.10730",
+    "published": "2026-05-13",
+    "uid": "ai_df2e7560",
+    "collectedAt": "2026-05-13T00:00:00"
+  },
+  {
+    "title": "📐 Soohak：数学家出题评测LLM研究级数学能力，比 IMO 更难的新基准",
+    "content": "LLM 在 IMO（国际数学奥林匹克）拿金牌的消息余温尚存，但业界已经意识到 IMO 评测存在上限过低、与真实研究数学脱节的问题。Soohak 由数学家亲自出题，构建面向研究级数学能力的新基准——题目更开放、证明链条更长、跨领域综合要求更高，不存在标准答案可供背诵。在这套更难、更接近真实学术场景的题目上对前沿 LLM 进行系统评测，揭示当前模型在研究级数学推理上的真实差距。对推动 LLM 数学能力向科研渗透有重要参考价值。",
+    "quote": "IMO满分选手来做新题直接破防",
+    "source": "arXiv (cs.AI / cs.LG)",
+    "url": "https://arxiv.org/abs/2605.09063",
+    "published": "2026-05-13",
+    "uid": "ai_934bd639",
+    "collectedAt": "2026-05-13T00:00:00"
+  },
+  {
+    "title": "📄 Dystruct：扩散语言模型的动态结构化解码，无需重训练即可变长输出",
+    "content": "扩散语言模型（DLM）以并行解码著称，但主流方案需要预先指定输出长度，严重限制了在开放式问答、长文档生成等真实场景的灵活性。已有的一些变长方案要么需要昂贵重训练，要么只依赖局部置信度信号，容易产生语义不连贯。Dystruct 提出了无需训练的贝叶斯结构化解码框架，将输出长度、块边界和解码调度联合建模为动态结构推理过程，每步融合局部不确定性与结构化信号，实现灵活块扩展。在多个基准测试上，生成质量和灵活性均超越固定长度和现有变长基线。",
+    "quote": "想说多久就说多久不用送回厂重装",
+    "source": "HuggingFace Paper",
+    "url": "https://huggingface.co/papers/2605.09820",
+    "published": "2026-05-13",
+    "uid": "ai_0b9a3074",
+    "collectedAt": "2026-05-13T00:00:00"
+  },
+  {
+    "title": "🌍 SimWorld Studio：Unreal Engine 5 生成可自进化 3D 机器人训练世界",
+    "content": "代码 Agent 有沙盒，机器人 Agent 却只能靠手绘场景训练——这是 Embodied AI 领域的老大难问题。SimWorld Studio 构建在 Unreal Engine 5 上的开源平台，核心是 SimCoder 工具增强型编码 Agent：接收语言/图像指令，写 UE5 代码生成物理真实的 3D 交互环境，并通过编译器反馈、VLM 评审等自进化完善环境和技能库。生成 Gym 风格环境用于 Agent 训练，并支持环境- Agent 共演化：Agent 进步后系统自动提升环境难度。具身导航案例中，共演化策略比固定环境训练成功率提升 18 点，比无训练 Agent 提升 40 点。",
+    "quote": "在游乐场玩耍的人类在工位燃烧自己",
+    "source": "HuggingFace Paper",
+    "url": "https://huggingface.co/papers/2605.09423",
+    "published": "2026-05-13",
+    "uid": "ai_656d0508",
+    "collectedAt": "2026-05-13T00:00:00"
+  },
+  {
+    "title": "🎮 G-Zero：无需任何数据，从零开始的自博弈开放式内容生成",
+    "content": "LLM 在可验证领域（代码解题、数学证明）已经能自演化，但在开放式任务（写作、创意生成）中，自演化依赖 LLM judge 做 proxy 评估，存在能力瓶颈和 reward hacking 问题。G-Zero 提出完全从零开始的 self-play 框架：无需任何外部数据或 LLM judge，直接通过双代理对称博弈让模型自主发现和优化开放式生成策略。在开放式写作、对话生成等任务上，G-Zero 超越依赖外部 judge 的自演化基线，且不存在 reward hacking 问题。为开放式生成任务的自训练提供了全新范式。",
+    "quote": "不靠资料不靠人类AI空手套出满分",
+    "source": "arXiv (cs.AI / cs.CL)",
+    "url": "https://arxiv.org/abs/2605.09959",
+    "published": "2026-05-13",
+    "uid": "ai_6f686e19",
+    "collectedAt": "2026-05-13T00:00:00"
+  },
+  {
+    "title": "🏷️ Auto-Rubric as Reward：把隐式偏好变成可验证标准，多模态对齐新思路",
+    "content": "多模态生成模型对齐的最大痛点：标量奖励或 pairwise 标签过于稀疏，无法提供细粒度优化信号，导致 reward hacking。Auto-Rubric as Reward（ARR）将 LLM 内部化的偏好知识外化为 prompt 特异的评分 rubric——把模糊的人类意图拆解成独立可验证的质量维度，zero-shot 即可部署。训练阶段用 Rubric Policy Optimization（RPO）将多维 rubric 蒸馏为鲁棒二值奖励，替代不透明标量回归。在文生图和图像编辑 benchmark 上，ARR-RPO 超越 pairwise reward model 和 VLM judge，且解决了位置偏见等评估偏差问题。",
+    "quote": "AI的小心思终于被抓出来做成评分表",
+    "source": "arXiv (cs.AI)",
+    "url": "https://arxiv.org/abs/2605.08354",
+    "published": "2026-05-13",
+    "uid": "ai_4152391f",
+    "collectedAt": "2026-05-13T00:00:00"
+  },
+  {
+    "title": "🔬 VLM 可靠性不在注意力图里：3-7B 模型的隐藏状态才是答案",
+    "content": "学界长期有个直觉：VLM 的 attention map 越 sharp，模型越可靠。但本研究用 VLM Reliability Probe（VRP）系统性地证伪了这个假设：注意力结构对正确性的预测能力接近零（pooled R_pb = 0.001），即使注意力被完全破坏（top-30% patch masking）准确率也只下降 8-11pp。真正可靠的是 hidden-state geometry：单层 hidden-state linear probe 在 POPE 上达 AUROC > 0.95。进一步发现架构差异巨大：LLaVA 的可靠性集中在单一脆弱的后期瓶颈，而 PaliGemma 和 Qwen2-VL 分布式地分散在早期层，即使破坏 50% hidden dimension 也只下降 1pp。对 VLM 监控和可解释性设计有直接工程指导意义。",
+    "quote": "盯了半天的沙盘原来只是AI的吉祥物",
+    "source": "arXiv (cs.AI / cs.CV / cs.LG)",
+    "url": "https://arxiv.org/abs/2605.08200",
+    "published": "2026-05-13",
+    "uid": "ai_aef16906",
+    "collectedAt": "2026-05-13T00:00:00"
+  },
+  {
+    "title": "🛒 SalesSim + UserGRPO：LLM 零售用户模拟器终于知道自己是谁了",
+    "content": "多模态 LLM 驱动的零售对话系统需要真实用户模拟器来训练销售 Agent，但现有方案把用户模拟当成表层对话生成——完全忽略了真实消费者有多复杂：多维度背景、偏好、dealbreaker 都不一样。SalesSim 将用户模拟重新定义为基于 Agent 的 grounded 决策过程，评测 6 个 SOTA 模型发现即使最强模型也仅有不到 79% persona 对齐度，且容易被销售 Agent 说服带偏。提出 UserGRPO——多轮多目标 RL recipe，同时优化对话流畅度和 persona 对齐，基线提升 13.8%。对电商对话系统训练和评估有直接价值。",
+    "quote": "装了一年人类终于承认是代码成精",
+    "source": "arXiv (cs.CL)",
+    "url": "https://arxiv.org/abs/2605.08334",
+    "published": "2026-05-13",
+    "uid": "ai_fdd4cdf9",
+    "collectedAt": "2026-05-13T00:00:00"
+  },
+  {
+    "title": "🧠 Needle：26M 参数工具调用模型，蒸馏 Gemini 3.1 跑在手表上",
+    "content": "从 Gemini 3.1 蒸馏出仅 26M 参数的 Simple Attention Network，专门用于单次工具调用（single-shot function call）。最大亮点是权重复合开源，可在 Mac/PC 本地微调，生产环境预填达到 6000 tok/s、解码 1200 tok/s。在消费级设备（手机、手表、眼镜）上对比 FunctionGemma-270M、Qwen-0.6B 等更大模型表现出竞争力。对追求边缘 AI 和 on-device AI 的开发者，这是当前最小的可用工具调用方案。",
+    "quote": "大模型卷不动了开始卷纳米模型 🔥",
+    "source": "Hacker News (Show HN)",
+    "url": "https://github.com/cactus-compute/needle",
+    "published": "2026-05-13",
+    "uid": "ai_eedd4cfa",
+    "collectedAt": "2026-05-13T18:00:00"
+  },
+  {
+    "title": "🖱️ DeepMind 重新发明鼠标指针：AI Pointer 点一下就知道你要什么",
+    "content": "DeepMind 发布 AI Pointer 概念，重新定义计算机最基础的交互元素——鼠标指针。四个交互原则：保持工作流不打断（无需切换到 AI 窗口）、看图说话（AI 自动理解指针所指内容）、支持「这个」「那个」的自然简略表达、将像素转化为可操作实体。已集成到 Chrome 和 Googlebook 笔记本中，用 Gemini 驱动。对于所有日常电脑使用者而言，这是 AI 原生 UI 的里程碑式设计。",
+    "quote": "五十年不变的小箭头终于要成精了 🔥",
+    "source": "DeepMind Google Blog",
+    "url": "https://deepmind.google/blog/ai-pointer/",
+    "published": "2026-05-13",
+    "uid": "ai_bdc84dfb",
+    "collectedAt": "2026-05-13T18:00:00"
+  },
+  {
+    "title": "⚖️ Anthropic 发布 20+ 法律行业 MCP 连接器，Claude 全面接入法律科技栈",
+    "content": "Anthropic 为 Claude 发布 20+ 个 MCP 连接器，覆盖合同生命周期系统（Definely）、文档管理（DocuSign、Box）、研究平台（Thomson Reuters）、电子取证（Harvey）等，同时推出 12 个垂直领域插件和 Word/Outlook/Excel/PowerPoint 深度集成。法律专业人士已成为 Claude Cowork 最活跃用户群体。Claude 还通过 Free Law Project 等公益组织推动法律普惠。对法律科技从业者和企业法务团队影响深远。",
+    "quote": "律师终于可以跟AI说人话而不是写prompt 🔥",
+    "source": "Anthropic Blog",
+    "url": "https://claude.com/blog/claude-for-the-legal-industry",
+    "published": "2026-05-13",
+    "uid": "ai_bc0e5dfc",
+    "collectedAt": "2026-05-13T18:00:00"
+  },
+  {
+    "title": "🔬 SenseNova-U1：商汤统一图文理解与生成，NEO-unify 架构登场",
+    "content": "商汤发布 SenseNova-U1，基于 NEO-unify 架构的完全统一多模态理解与生成模型。核心突破：理解和生成不再走两条孤立管线，共享同一个表征空间。8B-MoT 和 A3B-MoT 两个变体在传统 VLM 基准上匹敌纯理解模型，同时具备高保真图生能力，在 X2I 合成、文字密集型图表生成、交错图文生成等任务上表现优异。初步证据表明该架构还能扩展到 VLA 和世界模型场景。",
+    "quote": "理解派和生成派打了几年的架终于被商汤劝和了 🔥",
+    "source": "arXiv (cs.CV)",
+    "url": "https://arxiv.org/abs/2605.12500",
+    "published": "2026-05-13",
+    "uid": "ai_ce1f6efd",
+    "collectedAt": "2026-05-13T18:00:00"
+  },
+  {
+    "title": "🤖 World Action Models：具身 AI 的下一个前沿，综述统一世界模型与动作生成",
+    "content": "综述性论文系统性定义了「世界动作模型」（WAM）新范式——将世界模型（预测物理环境演化）与动作生成统一为联合概率分布，区别于传统 VLA 模型的纯反应式观察-动作映射。论文由复旦、港大等机构合作完成，梳理了碎片化的文献脉络，澄清了 WAM 与相关概念的边界。对于机器人学习和具身 AI 领域的学者与工程师，这是理解该方向最佳的统一理论框架。",
+    "quote": "让机器人不光会动还得会预测动完世界啥样 🔥",
+    "source": "HuggingFace Paper (arXiv 2605.12090)",
+    "url": "https://huggingface.co/papers/2605.12090",
+    "published": "2026-05-13",
+    "uid": "ai_dc2f7efe",
+    "collectedAt": "2026-05-13T18:00:00"
+  },
+  {
+    "title": "📊 Gallup 正式研究 AI 模拟人类调查：合成响应替代真人问卷",
+    "content": "全球知名民调机构 Gallup 宣布与 AI 公司 Simile 合作，研究用 AI 模拟生成「合成调查响应」。其目标不是替代基于概率抽样的严谨调查，而是探索 AI 模拟能否加深对人类思维与行为的理解。Simile 的 AI 模拟方法将接受 Gallup 的独立验证。这对市场调研、产品研究、社会科学领域意味着样本获取方式可能的范式转变——AI 可以模拟特定人群的反馈。",
+    "quote": "以后市场调研不是问真人而是问AI：人类终于可以清静了 🔥",
+    "source": "Gallup / The Verge",
+    "url": "https://news.gallup.com/opinion/methodology/709373/gallup-begins-research-synthetic-responses.aspx",
+    "published": "2026-05-13",
+    "uid": "ai_ed307ffe",
+    "collectedAt": "2026-05-13T18:00:00"
+  }
+]
