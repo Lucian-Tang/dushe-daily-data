@@ -159,7 +159,8 @@ log "[git] commit & push to staging..."
 cd "$WORKSPACE"
 # 切到 staging 分支（如已在 staging 则跳过）
 git checkout staging 2>/dev/null || git checkout -b staging
-git add -A
+git add -u --ignore-removal .
+git add .
 git commit -m "📊 $(date +%Y-%m-%d) 日报数据自动推送" || log "[git] 无变更，跳过 commit"
 git push origin staging 2>&1 | tail -1
 
