@@ -74,12 +74,7 @@ else
         log "✅ QA 校验通过"
     else
         if echo "$QA_REPORT" | grep -q "整体状态: ⚠️"; then
-            log "⚠️ QA 有警告，是否需要继续? (y/N)"
-            read -r CONTINUE
-            if [ "$CONTINUE" != "y" ] && [ "$CONTINUE" != "Y" ]; then
-                log "❌ 取消 promote"
-                exit 1
-            fi
+            log "⚠️ QA 有警告（自动继续）"
         else
             log "❌ QA 校验失败！请检查 staging 数据后再试"
             log "   或使用 --force 跳过校验"

@@ -1,110 +1,106 @@
 [
   {
-    "title": "OpenDeepThink：平行推理让Gemini 3.1 Pro Codeforces涨405分",
-    "content": "OpenDeepThink提出基于Bradley-Terry配对比较的群体推理框架。LLM并行生成多个候选，通过两两比较投票选出最优，前75%候选经自然语言critique变异进入下一轮，底层淘汰。Gemini 3.1 Pro在8轮推理后Codeforces Elo提升405分，且无需针对模型调参即可迁移。在主观题领域效果会反转。附带CF-73数据集：73道经国际级选手标注的Codeforces难题。",
-    "quote": "LLM开始内卷式推理：先发散再投票，像极了答辩委员会",
-    "source": "[ArXiv 2605.15177](https://arxiv.org/abs/2605.15177)",
-    "url": "#",
-    "published": "2026-05-18",
-    "uid": "ai_cee85c3f"
+    "title": "PhysBrain 1.0 Technical Report",
+    "content": "PhysBrain 1.0探索了一条新路径：让机器人不仅靠轨迹数据学习，还通过视觉-语言-动作模型理解物理世界。研究提出融合外部物理先验知识来弥补纯粹轨迹学习的局限，为机器人泛化能力提供新的解题思路。实验表明加入物理约束后，模型在未见过的任务上零样本迁移效果显著提升。",
+    "quote": "让机器人长点脑子别光靠蛮力撞，数据不够物理来凑。",
+    "source": "ArXiv/HuggingFace",
+    "url": "https://arxiv.org/abs/2605.15298",
+    "published": "2026-05-14"
   },
   {
-    "title": "微软开源Orchard：轻量级智能体建模框架，SWE-bench刷到67.5%",
-    "content": "微软发布Orchard开源框架，Orchard环境服务提供沙箱生命周期管理原语。其上构建三个智能体方案：Orchard-SWE从Qwen3-30B起步，通过10.7万条MiniMax/Qwen蒸馏轨迹SFT+RL，SWE-bench Verified达67.5%；Orchard-GUI只用400条蒸馏轨迹训练4B视觉语言模型，WebVoyager达74.1%；Orchard-Claw用200条合成任务做到59.6% pass@3。轻量开放，多领域可用。",
-    "quote": "400条轨迹训出最强GUI agent，这数据效率让大厂情何以堪",
-    "source": "[ArXiv 2605.15040](https://arxiv.org/abs/2605.15040)",
-    "url": "#",
-    "published": "2026-05-18",
-    "uid": "ai_bf82e467"
+    "title": "CiteVQA: Benchmarking Evidence Attribution for Trustworthy Document Intelligence",
+    "content": "多模态大模型在文档理解上进步神速，但现有评分只看最终答案对不对，不管证据链靠不靠谱。CiteVQA提出新基准，专门考核模型是否能准确溯源——不仅要答对，还要能说清楚答案从哪页哪段来的。129篇论文揭示当前模型普遍存在严重的证据幻觉问题。",
+    "quote": "大模型读完文献就敢说答案，出处呢？引用呢？论文工厂狂喜。",
+    "source": "ArXiv/HuggingFace",
+    "url": "https://arxiv.org/abs/2605.12882",
+    "published": "2026-05-13"
   },
   {
-    "title": "DDC框架：推理时Scaling省10倍Token，思路是让坏路径提前砍掉",
-    "content": "DDC提出双维度一致性框架，通过置信度加权贝叶斯协议与趋势感知分层剪枝耦合，在推理时同时优化采样宽度和推理深度。相比现有Best-of-N和自一致性方法，DDC在5个基准上维持或超越强基线精度的同时，Token消耗降低10倍以上。核心是用信号检测幻觉路径并提前终止，避免无效推理浪费算力。",
-    "quote": "砍掉90%无效token还不掉分，这论文应该改名叫天花板拆卸指南",
-    "source": "[ArXiv 2605.15100](https://arxiv.org/abs/2605.15100)",
-    "url": "#",
-    "published": "2026-05-18",
-    "uid": "ai_440818ee"
+    "title": "MMSkills: Towards Multimodal Skills for General Visual Agents",
+    "content": "现有Agent技能库主要靠文本prompt或代码来封装可复用行为，但这对于需要感知真实世界的视觉Agent来说远远不够。MMSkills提出将技能封装为多模态表示——同时包含视觉、语言、动作三种模态的交互模板，让Agent在不同环境里真正照着做而不只是读懂文字。",
+    "quote": "文字prompt教AI做事，AI：臣妾做不到啊！得看图看视频。",
+    "source": "ArXiv/HuggingFace",
+    "url": "https://arxiv.org/abs/2605.13527",
+    "published": "2026-05-13"
   },
   {
-    "title": "MeMo：外挂记忆模型，给任何LLM注入新知识不碰权重",
-    "content": "MeMo提出记忆即模型框架，将新知识编码进独立的记忆模型而非LLM本体。支持即插即用，不依赖LLM权重或输出logits，兼容开源和闭源模型。实验在BrowseComp-Plus、NarrativeQA、MuSiQue三个基准上表现强劲，且检索成本与语料库大小无关。彻底避免灾难性遗忘，对检索噪声具有鲁棒性。",
-    "quote": "不碰模型身体只给它加个外挂U盘，RAG看了都想退休",
-    "source": "[ArXiv 2605.15156](https://arxiv.org/abs/2605.15156)",
-    "url": "#",
-    "published": "2026-05-18",
-    "uid": "ai_a661cccc"
+    "title": "FashionChameleon: Towards Real-Time and Interactive Human-Garment Video Customization",
+    "content": "电商场景里用户换装试穿需求旺盛，但现有方法延迟高、交互差。FashionChameleon实现低延迟的人-服装视频定制，用户可以实时调整服装款式、颜色、纹理，延迟压到毫秒级，视觉效果也很自然。商用价值明确，推理速度是关键瓶颈，团队做了大量工程优化。",
+    "quote": "换装视频实时跑起来，模特要失业了？电商的下一波流量密码。",
+    "source": "ArXiv/HuggingFace",
+    "url": "https://arxiv.org/abs/2605.15824",
+    "published": "2026-05-15"
   },
   {
-    "title": "ML-Embed：ICML 2026收录的多语言嵌入模型，低资源语言新纪录",
-    "content": "ML-Embed提出三维Matryoshka学习框架（3D-ML），涵盖存储/层/参数三个维度的高效嵌入。模型规模从140M到8B参数，在430个任务上评估，17个MTEB基准中9项创新纪录，低资源语言表现尤为突出。模型、数据、代码全开源，被ICML 2026接收。剑指当前嵌入模型计算贵、语言少、不开源的三大积弊。",
-    "quote": "一口气把MTEB刷了9项第一还全开源，这就是学术圈的降维打击",
-    "source": "[ArXiv 2605.15081](https://arxiv.org/abs/2605.15081)",
-    "url": "#",
-    "published": "2026-05-18",
-    "uid": "ai_4306675f"
+    "title": "Learning to Foresee: Unveiling the Unlocking Efficiency of On-Policy Distillation",
+    "content": "On-Policy Distillation（OPD）是高效微调大模型的后训练范式，但之前研究把优势全归因于更密集的监督信号。本文揭示真正的原因是更准确的预测前置——模型能提前预判下一个 token 的分布，指导学生模型学习。理论加实验双验证，对知识蒸馏有重要启发。",
+    "quote": "原来OPD效果好不是因为喂得多，而是因为喂得准——预测前置才是真大佬。",
+    "source": "ArXiv/HuggingFace",
+    "url": "https://arxiv.org/abs/2605.11739",
+    "published": "2026-05-12"
   },
   {
-    "title": "APWA：分布式架构让多智能体终于能并行了，不用互相等",
-    "content": "APWA提出智能体并行工作负载架构，将复杂任务分解为互不干扰的子问题，各智能体无需互相通信即可独立处理，利用异构数据和并行模式。评估表明APWA可动态分解复杂查询为可并行工作流，在有大量可并行子任务场景下，传统多智能体系统直接崩溃时APWA仍能线性扩展。解决了多智能体系统\"人多嘴杂\"的核心瓶颈。",
-    "quote": "多Agent终于学会了闭嘴干活，不用开无效会议就是最大生产力 ## 🏭 产业动态",
-    "source": "[ArXiv 2605.15132](https://arxiv.org/abs/2605.15132)",
-    "url": "#",
-    "published": "2026-05-18",
-    "uid": "ai_41eea751"
+    "title": "DexJoCo: A Benchmark and Toolkit for Task-Oriented Dexterous Manipulation on MuJoCo",
+    "content": "类人-level的机器人操作需要灵活的机械手，但评估标准混乱让研究难以横向比较。DexJoCo提供基于MuJoCo的统一基准加工具包，覆盖抓取、装配、操控等任务，从成功率、动作质量、样本效率三个维度打分。开源工具包降低了做灵巧操作的门槛。",
+    "quote": "机器人手部控制终于有标准了，不然每个团队都说自己最厉害。",
+    "source": "ArXiv/HuggingFace",
+    "url": "https://arxiv.org/abs/2605.16257",
+    "published": "2026-05-15"
   },
   {
-    "title": "Cerebras IPO首日暴涨近一倍，AI芯片估值冲破千亿美元",
-    "content": "5月14日，AI芯片制造商Cerebras以185美元发行价上市，融资55.5亿美元，首日收盘价几乎翻倍，市值突破1000亿美元。这是自2019年Uber以来美国最大科技IPO。发行价从最初115-125美元区间连续上调至150-160美元，最终以185美元定价仍供不应求。标志AI基础设施投资狂热达到新高度。",
-    "quote": "AI芯片比AI模型赚钱多了，卖铲子的永远是赢家",
-    "source": "[VentureBeat](https://venturebeat.com/technology/cerebras-stock-nearly-doubles-on-day-one-as-ai-chipmaker-hits-100-billion-what-it-means-for-ai-infrastructure)",
-    "url": "#",
-    "published": "2026-05-18",
-    "uid": "ai_a3f0b24e"
+    "title": "Distilling Long-CoT Reasoning through Collaborative Step-wise Multi-Teacher Decoding",
+    "content": "长思维链推理效果强但计算成本高，想蒸馏到小模型里门很多。现有方法基于 curation 蒸馏——挑选完整长推理链做训练，但这对数据质量要求极高。本文提出协作式逐步多教师解码：用多个老师分别负责推理的不同步骤，分工更细，学生模型学习效率更高。",
+    "quote": "一个老师教不全，分工教学后进效果反而更好——团队协作无处不在。",
+    "source": "ArXiv/HuggingFace",
+    "url": "https://arxiv.org/abs/2605.02290",
+    "published": "2026-05-04"
   },
   {
-    "title": "Intercom变身Fin，推出AI管理AI的客服新模式",
-    "content": "客户服务平台Intercom正式更名为Fin，并推出行业首个\"AI管理AI\"架构：一个AI代理专职监控和调度另一个AI代理。当一线客服AI无法解决问题时，管理层AI自动介入、协调多个专业代理协同处理。这标志着AI客服从单智能体模式升级为多智能体协同架构，也是企业级AI自治的重要里程碑。",
-    "quote": "以前是AI取代客服，现在是AI取代中层管理，打工人两头挨打",
-    "source": "[VentureBeat](https://venturebeat.com/technology/intercom-now-called-fin-launches-an-ai-agent-whose-only-job-is-managing-another-ai-agent)",
-    "url": "#",
-    "published": "2026-05-18",
-    "uid": "ai_f2cbd7bd"
+    "title": "Flash-GRPO: Efficient Alignment for Video Diffusion via One-Step Policy Optimization",
+    "content": "GRPO对齐视频扩散模型与人类偏好效果很好，但14B参数模型每步训练都要大量计算，成本爆炸。Flash-GRPO将多步策略优化压缩成一步，在效果几乎不降的前提下把训练速度提升数倍。对视频生成模型的对齐训练有重要实用价值。",
+    "quote": "视频生成模型的对齐训练原来可以这么快，省卡省电省时间。",
+    "source": "ArXiv/HuggingFace",
+    "url": "https://arxiv.org/abs/2605.15980",
+    "published": "2026-05-15"
   },
   {
-    "title": "RecursiveMAS：多智能体推理快2.4倍省75% Token",
-    "content": "UIUC与斯坦福联合提出RecursiveMAS框架，允许AI智能体之间共享嵌入向量而非完整文本。这使得多智能体协作的Token消耗降低75%，推理速度提升2.4倍，训练成本减半以上。核心创新是在智能体间建立共享表示层，避免每次通信都要重新生成和传输长文本，为高效多智能体系统铺路。",
-    "quote": "Agent之间的废话终于有人管了，75%的token流量是内耗",
-    "source": "[VentureBeat](https://venturebeat.com/orchestration/how-recursivemas-speeds-up-multi-agent-inference-by-2-4x-and-reduces-token-usage-by-75)",
-    "url": "#",
-    "published": "2026-05-18",
-    "uid": "ai_788cddf0"
+    "title": "Anthropic 收购 API 设计公司 Stainless",
+    "content": "Anthropic 宣布收购专注于 API 设计的公司 Stainless，后者以提供高质量 API 文档和开发者工具著称。收购完成后，Stainless 团队将并入 Anthropic，帮助提升 Claude API 的开发者体验和文档质量。这是 Anthropic 继此前多轮融资后的首笔收购案，标志着这家估值已达 600 亿美元的 AI 独角兽开始通过并购补齐生态短板，向 OpenAI 的开发者平台地位发起正面冲击。",
+    "quote": "有钱果然任性，买团队比养团队便宜多了。",
+    "source": "Hacker News / Anthropic",
+    "url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
+    "published": "2026-05-18"
   },
   {
-    "title": "Anthropic首次在商业AI采用率上超越OpenAI",
-    "content": "5月13日，一项调查显示更多美国企业付费使用Anthropic的Claude而非OpenAI的ChatGPT。这是AI竞赛开始以来首次出现这一逆转。文章同时指出三大威胁可能抹掉Anthropic的领先：微软生态绑定、OpenAI企业定价战、以及开发者社区惯性。Anthropic在企业市场的深耕策略开始见到成效。",
-    "quote": "Anthropic逆袭成功，但OpenAI有微软爸爸兜底，这仗才刚开始 ## 🛠️ 工具与产品",
-    "source": "[VentureBeat](https://venturebeat.com/technology/anthropic-finally-beat-openai-in-business-ai-adoption-but-3-big-threats-could-erase-its-lead)",
-    "url": "#",
-    "published": "2026-05-18",
-    "uid": "ai_c201d6f3"
+    "title": "Cerebras 上市首日股价翻倍，融资 55.5 亿美元",
+    "content": "AI 芯片公司 Cerebras 以每股 185 美元定价上市，首日股价近乎翻倍，市值突破 1000 亿美元，成为 2019 年 Uber 以来最大规模美国科技 IPO。Cerebras 以生产超大内存 AI 芯片著称，此次 IPO 获得机构投资者超额认购，显示资本市场对 AI 基础设施层的持续热情。芯片禁令背景下，Cerebras 被视为英伟达之外少数具备替代潜力的玩家。",
+    "quote": "散户跑步进场接盘，机构先跑了——经典剧本。",
+    "source": "VentureBeat",
+    "url": "https://venturebeat.com/technology/cerebras-stock-nearly-doubles-on-day-one-as-ai-chipmaker-hits-100-billion-what-it-means-for-ai-infrastructure",
+    "published": "2026-05-18"
   },
   {
-    "title": "Claude Code新增/goals命令：单独跑一个模型判断什么时候算干完活",
-    "content": "Anthropic为Claude Code新增/goals命令，核心设计是引入第二个模型作为\"完成度仲裁者\"。代码智能体负责干活，另一个模型独立判断任务是否真正完成。解决AI编码代理\"撒谎说做完了但其实没做完\"的老大难问题。这种\"干活的和验收的分开\"的思路，正式将AI工程化注入软件工程的基本常识。",
-    "quote": "终于有人意识到让AI自己说做完了跟让考生自己打分一样不靠谱",
-    "source": "[VentureBeat](https://venturebeat.com/orchestration/claude-codes-goals-separates-the-agent-that-works-from-the-one-that-decides-its-done)",
-    "url": "#",
-    "published": "2026-05-18",
-    "uid": "ai_6d03ff5e"
+    "title": "Anthropic 恢复 Claude 订阅中的 OpenClaw 和第三方 Agent 使用",
+    "content": "Anthropic 宣布重新允许 Claude 订阅用户使用 OpenClaw 等第三方 Agent，但附带条件：需通过 Anthropic 官方认证流程。这意味着用户终于可以在 Claude Code 里用 OpenClaw 干活了，不过得乖乖交\"过路费\"。此前 Anthropic 曾一度封禁第三方 Agent 调用，理由是安全和滥用风险。",
+    "quote": "嘴上说no，账本很诚实——付费玩家通吃。",
+    "source": "VentureBeat",
+    "url": "https://venturebeat.com/technology/anthropic-reinstates-openclaw-and-third-party-agent-usage-on-claude-subscriptions-with-a-catch",
+    "published": "2026-05-18"
   },
   {
-    "title": "AI IQ网站上线：给50+前沿模型跑人类智商测试，结果引争议",
-    "content": "创业项目AI IQ采用标准化IQ测试范式评估50余个前沿大语言模型，将其映射到人类智商正态分布曲线上。各模型得分引发科技圈激烈争论：支持者认为IQ提供直观比较标尺，反对者认为IQ测试维度狭隘、对AI能力表征不全面。这背后是对AI评估体系根本分歧——我们到底该用人类标准还是机器标准衡量AI？",
-    "quote": "给AI测智商最终测的是评测者的智商，这自指悖论有趣了 *📅 生成时间：2026-05-18 08:20 CST | 🤖 模型：deepseek-v4-pro | 📊 共收录 12 条 | 信源：ArXiv / VentureBeat / The Verge*",
-    "source": "[VentureBeat](https://venturebeat.com/technology/ai-iq-is-here-a-new-site-scores-frontier-ai-models-on-the-human-iq-scale-the-results-are-already-dividing-tech)",
-    "url": "#",
-    "published": "2026-05-18",
-    "uid": "ai_cec0501c"
+    "title": "Voice AI 系统被发现易受隐藏音频攻击",
+    "content": "IEEE Spectrum 披露研究显示，当前主流 Voice AI 系统存在严重安全漏洞，可被嵌入人类听不见的隐藏音频命令操控。这类攻击利用超声波或频率伪装技术，在用户毫无察觉的情况下触发语音助手执行恶意指令。研究者已在 Alexa、Google Assistant、Siri 等主流平台验证可行，提醒厂商在模型层加入音频 adversarial 过滤机制。",
+    "quote": "语音助手进化了这么多年，攻击手段还是那几招。",
+    "source": "IEEE Spectrum / Hacker News",
+    "url": "https://spectrum.ieee.org/voice-ai-audio-attacks",
+    "published": "2026-05-18"
+  },
+  {
+    "title": "AI 生成论文泛滥，期刊审稿人被淹没且难以识别",
+    "content": "The Verge 调查发现，学术期刊编辑和同行评审正被大量 AI 生成的论文淹没，这些论文在结构和语言上越来越逼真，传统查重工具几乎无法识别。研究人员指出，AI 辅助写作工具的普及使得\"看起来像学术论文\"的垃圾论文批量生产成为可能，已有多家期刊被迫建立人工初审防线，但效率低下且成本高昂。",
+    "quote": "审稿人：我不是被AI取代，是被AI垃圾淹没。",
+    "source": "The Verge",
+    "url": "https://www.theverge.com",
+    "published": "2026-05-18"
   }
 ]

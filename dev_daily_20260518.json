@@ -1,110 +1,122 @@
 [
   {
-    "title": "Semble：给AI Agent的代码搜索，比grep省98% Token",
-    "content": "Semble 是一款专为 AI Agent 设计的代码搜索工具，号称比传统 grep 节省 98% 的 Token 消耗。在 Claude Code/Cursor 等工具疯狂烧 Token 的当下，这种精准定位代码片段的能力直击痛点。不是给开发者用的，是给 Agent 用的——方向对了。",
+    "title": "CloakBrowser — 让爬虫永不被封的隐身材质 Chromium",
+    "content": "Stealth Chromium 浏览器，通过了全部 30 项 bot 检测测试。Drop-in Playwright 替代方案，源码级指纹补丁，目前 14,869 星，今日新增 1,391 星。",
+    "quote": "Selenium 的用户还在和 Cloudflare 斗智斗勇，这边已经 30/30 全通了。建议爬虫工程师直接投诚，别挣扎了。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/CloakHQ/CloakBrowser",
+    "published": "2026-05-18"
+  },
+  {
+    "title": "CLI-Anything — 让所有软件变成 agent-native 接口",
+    "content": "Hong Kong University 作品，把所有软件变成 Agent 可操作的 CLI 框架。36,447 星，今日 1,047 星。配套网站 clianything.cc。",
+    "quote": "总有一天你会意识到，GUI 只是 CLI 的 UI wrapper，而 CLI-Anything 就是那个撕掉 wrapper 的狠人。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/HKUDS/CLI-Anything",
+    "published": "2026-05-18"
+  },
+  {
+    "title": "12-Factor Agents — 写给 LLM 应用的生产力守则",
+    "content": "humanlayer 出品的 LLM 软件构建原则，教你如何把 AI Agent 做成真正能上生产环境的产品。20,385 星，今日 359 星。",
+    "quote": "又一个十二法则，但这次是真写给 AI 时代的。比那些 AI 会取代你的废话有用一万倍。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/humanlayer/12-factor-agents",
+    "published": "2026-05-18"
+  },
+  {
+    "title": "Sana — 英伟达的高效图像生成模型",
+    "content": "NVlabs 开源 SANA：基于 Linear Diffusion Transformer 的高分辨率图像合成方案。6,391 星，主打效率和质量兼得。",
+    "quote": "英伟达开源的东西从来不是用来给你白嫖的，是让你 dependency 上它的硬件的。但不管怎样，这图确实好看。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/NVlabs/Sana",
+    "published": "2026-05-18"
+  },
+  {
+    "title": "Supertonic — 超快端侧多语言 TTS",
+    "content": "supertone-inc 出品，基于 ONNX 原生运行的多语言语音合成引擎。8,171 星，今日 755 星。主打闪电般速度、本地运行。",
+    "quote": "所有 TTS 项目的终极目标就是让 AI 说话别那么 AI。这个至少跑得够快，快到你来不及嫌弃它。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/supertone-inc/supertonic",
+    "published": "2026-05-18"
+  },
+  {
+    "title": "AI Agents for Beginners — 微软的 Agent 入门教程",
+    "content": "微软出品，12 节课带你从零构建 AI Agent。Jupyter Notebook 编写，63,266 星，今日新增 1,013 星，已经成为必读圣经。",
+    "quote": "微软开源的东西，要么没人用，要么全世界都在用。显然 Agent 教程属于后者。建议和它的 Windows 更新学学什么叫克制。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/microsoft/ai-agents-for-beginners",
+    "published": "2026-05-18"
+  },
+  {
+    "title": "Shadowbroker — 开源版全球情报跟踪系统",
+    "content": "用 OSINT 手段追踪私人飞机、间谍卫星和地震事件，AI agent 可以接入分析数据找关联。7,591 星，今日 768 星。",
+    "quote": "这个名字起得好，就差直接说别拿去做坏事。不过说实话，这个项目比某些政府情报系统还全面。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/BigBodyCobain/Shadowbroker",
+    "published": "2026-05-18"
+  },
+  {
+    "title": "smallcode — 给小模型用的 AI 编程 Agent",
+    "content": "专为小型 LLM 优化的 AI 编程 Agent。4B 参数活跃模型达到 87% 基准表现，今日新项目已有 338 星。",
+    "quote": "大模型狂欢了一年半，终于有人想起穷人了。4B 模型跑出 87% 的 benchmark，这让那些千亿参数的兄弟们有点尴尬。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/Doorman11991/smallcode",
+    "published": "2026-05-18"
+  },
+  {
+    "title": "Files.md — Obsidian 的开源替代品",
+    "content": "把所有人生笔记都存在纯 .md 文件里。本地优先、离线可用、不离开设备，5 年打磨。Hacker News 289 分，163 条讨论。",
+    "quote": "Obsidian 用户看到这个会心一笑，Notion 用户看到会问 markdown 是什么，Evernote 用户已经死了。",
     "source": "Hacker News",
-    "url": "https://github.com/zachbabin/semble",
-    "quote": "Token省了，Agent不穷了，你的人工智能钱包鼓了。",
-    "published": "2026-05-18",
-    "uid": "dev_a1b2"
+    "url": "https://github.com/zakirullin/files.md",
+    "published": "2026-05-18"
   },
   {
-    "title": "Agnt：开源CLI工具，一行命令跑任何MIT协议的AI Agent",
-    "content": "Agnt 是一个免费开源的 CLI 工具，让你在终端里直接运行各种公开的 AI Agent，无需配置环境。把 AI Agent 当 npm 包一样安装使用，这思路确实比每个项目独立部署清爽十倍。",
+    "title": "Semble — 比 grep 省 98% Token 的代码搜索工具",
+    "content": "专为 Agent 设计的代码搜索库。自然语言搜索代码片段，比 grep+read 省 98% token，索引速度比专用模型快 200 倍。HN 410 分，136 条讨论。",
+    "quote": "grep 用户说我用 grep 二十年了，然后发现自己每个月为 grep 的 token 付了 200 刀。Semble 就是来拯救你的钱包和耐心的。",
     "source": "Hacker News",
-    "url": "https://github.com/meajsinghk/agnt",
-    "quote": "以后装Agent比装Node模块还快，只是不知道生态能撑多久。",
-    "published": "2026-05-18",
-    "uid": "dev_c3d4"
+    "url": "https://github.com/MinishLab/semble",
+    "published": "2026-05-18"
   },
   {
-    "title": "Due Diligence Agents：13个AI Agent自动分析并购合同",
-    "content": "一个开源项目，用 13 个 AI Agent 分工协作完成 M&A 尽职调查合同分析。Agent 各自负责不同条款（知识产权、劳动法、赔偿条款等），输出结构化报告。这比让一个 LLM 硬读几百页合同靠谱得多——专业的事交给专业的 Agent。",
-    "source": "GitHub",
-    "url": "https://github.com/zoharbabin/due-diligence-agents",
-    "quote": "13个Agent帮你读合同，并购律师的时薪要打5折了。",
-    "published": "2026-05-18",
-    "uid": "dev_e5f6"
-  },
-  {
-    "title": "Kami Subs：浏览器任意视频的实时AI字幕叠加",
-    "content": "Kami Subs 是一个浏览器扩展，为任意网页视频提供实时 AI 字幕叠加。支持本地模型运行，不依赖云端 API，隐私友好。看生肉视频、海外直播、技术演讲的好帮手，比 YouTube 自带字幕覆盖面广太多。",
-    "source": "GitHub",
-    "url": "https://github.com/MohammdKopa/kami-subs",
-    "quote": "生肉视频党的福音，终于不用靠猜了——虽然猜的准确率可能比AI还高。",
-    "published": "2026-05-18",
-    "uid": "dev_g7h8"
-  },
-  {
-    "title": "MailMark：自己管邮箱的冷邮件工具，域名你说了算",
-    "content": "MailMark 是一个冷邮件工具，核心卖点是你拥有自己的域名和邮箱服务器，不依赖第三方平台。对企业出海做 outreach 来说，域名信誉是自己的，不会被 SendGrid/HubSpot 一夜封号。",
+    "title": "GenCAD — AI 看图生成可编辑 CAD 模型",
+    "content": "Image-conditional CAD 生成模型，不仅生成 3D 实体，还能输出完整参数化 CAD 指令历史。HN 406 分，111 条讨论。",
+    "quote": "设计狮可以安心了，AI 暂时只能帮你画出来，但改参数还是得你自己来。暂时。",
     "source": "Hacker News",
-    "url": "https://github.com/debasish/mailmark",
-    "quote": "域名、邮箱、数据全在自己手上，冷邮件界的一股清流。",
-    "published": "2026-05-18",
-    "uid": "dev_i9j0"
+    "url": "https://gencad.github.io/",
+    "published": "2026-05-18"
   },
   {
-    "title": "Use-outside-click：零依赖的点击外部检测工具",
-    "content": "一个极简的框架无关的 outside-click 检测库，解决下拉菜单、模态框的点击外部关闭需求。在 React/Vue/Svelte 等多个框架都能直接用，不依赖框架 runtime。小功能解决大痛点，前端组件库就该这么设计。",
+    "title": "auto-identity-remove — 一键退出数据经纪商",
+    "content": "macOS 上的自动化工具，帮你自动从各个数据经纪商处退出个人信息。HN 301 分，122 条讨论。",
+    "quote": "GDPR 说了你有权删除，但是没说你得一个个点 200 个 unsubscribe 链接。这个工具拯救你的手指和隐私，一次一个命令。",
     "source": "Hacker News",
-    "url": "https://github.com/use-outside-click",
-    "quote": "每个前端开发者都写过这个逻辑，但没人写对过。",
-    "published": "2026-05-18",
-    "uid": "dev_k1l2"
+    "url": "https://github.com/stephenlthorn/auto-identity-remove",
+    "published": "2026-05-18"
   },
   {
-    "title": "28种AI未来场景的交互式选择冒险",
-    "content": "一个交互式网页，带你探索 28 种可能的 AI 未来场景——从 AI 接管编程到通用人工智能到来。每个选择影响后续走向，像《黑镜》的互动版。与其看各种 AI 预测报告，不如亲自走一遍未来分支树。",
+    "title": "Linux 安全邮件列表被 AI 驱动漏洞猎人搞到几乎无法管理",
+    "content": "Linus Torvalds 发火：AI-powered bug hunters 让 Linux 安全邮件列表变得几乎完全不可管理。HN 148 分，67 条讨论。",
+    "quote": "Linus 骂人不是新闻，Linus 骂 AI 才是。当连内核社区都被 AI 垃圾邮件淹没的时候，你就知道这波 AI 泡沫有多离谱了。",
     "source": "Hacker News",
-    "url": "https://es92.github.io/Singularity-Map/",
-    "quote": "28种未来，要么天堂要么地狱，现在的AI发展看更像在走钢丝。",
-    "published": "2026-05-18",
-    "uid": "dev_m3n4"
+    "url": "https://www.theregister.com/security/2026/05/18/linus-torvalds-says-ai-powered-bug-hunters-have-made-linux-security-mailing-list-almost-entirely-unmanageable/5241633",
+    "published": "2026-05-18"
   },
   {
-    "title": "EPublish：从简单HTML生成Amazon就绪电子书",
-    "content": "一个将 HTML 转换为符合 Amazon Kindle 格式电子书的工具。写 Markdown/HTML 就能出一本能在 Kindle Store 上架的专业电子书，省去 Calibre 的繁琐配置。对独立作者和内容创作者来说，出版门槛再次降低。",
+    "title": "The Quiet Renovation at Bitwarden — 开源密码管理器的商业化转型",
+    "content": "分析 Bitwarden 从开源密码管理器走向更商业化方向的平静转型。HN 171 分，78 条讨论。",
+    "quote": "每个开源项目最终都会面临吃饭还是理想的选择。Bitwarden 选了吃饭，至少目前吃得还算体面，没像某些项目吃完就摔碗。",
     "source": "Hacker News",
-    "url": "https://github.com/epublish-tool",
-    "quote": "写个HTML就能出书，传统出版业看了想打人。",
-    "published": "2026-05-18",
-    "uid": "dev_o5p6"
+    "url": "https://blog.ppb1701.com/the-quiet-renovation-at-bitwarden",
+    "published": "2026-05-18"
   },
   {
-    "title": "CPython内部实现免费指南，Python进阶必看",
-    "content": "一份面向有经验的 Python 开发者的 CPython 内部实现免费指南，涵盖字节码、GC、GIL、对象模型等核心机制。读完能从「会用 Python」升级到「理解 Python」，对性能优化和调试极有帮助。",
+    "title": "InsForge — Coding Agent 的开源 Heroku",
+    "content": "为 AI Coding Agent 设计的全栈后端平台：数据库、认证、存储、计算、AI 网关一站式搞定，MCP 协议接入。HN Show 发布。",
+    "quote": "Heroku 死了，但它的灵魂在 Agent 时代复活了。以后你写代码只需要说要一个电商网站，InsForge 帮你把后端全搭好。",
     "source": "Hacker News",
-    "url": "https://pynsights.vercel.app",
-    "quote": "用Python十年的人也不一定看得懂，但看懂了的都成大神了。",
-    "published": "2026-05-18",
-    "uid": "dev_q7r8"
-  },
-  {
-    "title": "Graph-Based Firebase替代品，实时同步也能自托管",
-    "content": "一个基于图数据库的 Firebase 替代方案，支持实时同步和自托管。图结构比文档型更灵活，适合社交网络、推荐系统这类需要复杂关系查询的场景。不想被 Google 绑定的开发者又多了一个选择。",
-    "source": "Hacker News",
-    "url": "https://linkedrecords.com",
-    "quote": "Firebase很好，直到你的账单比办公室租金还高。",
-    "published": "2026-05-18",
-    "uid": "dev_s9t0"
-  },
-  {
-    "title": "WhispHub CLI：终端一键推送项目到开发者社区",
-    "content": "WhispHub 是一个面向开发者的项目展示平台，新发布的 CLI 工具让你能从终端一键推送项目。围绕项目可发现性设计，比 GitHub Trending 更社交化，比 Product Hunt 更开发者友好。",
-    "source": "Hacker News",
-    "url": "https://whisphub.com",
-    "quote": "接Product Hunt的班？社区/展示/发现，三样都做好了再说。",
-    "published": "2026-05-18",
-    "uid": "dev_u1v2"
-  },
-  {
-    "title": "手绘留言板：给个人网站的访客一个涂鸦的机会",
-    "content": "一个在个人作品集网站上添加的自由画笔留言板，访客可以用涂鸦代替文字留言。使用 perfect-freehand 库实现自然笔触，比冷冰冰的评论区多了一份人情味。独立开发者的小心思，口碑传播的好设计。",
-    "source": "Hacker News",
-    "url": "https://perfect-freehand-demo.vercel.app",
-    "quote": "评论区的尽头是涂鸦，终于不用纠结留言措辞了。",
-    "published": "2026-05-18",
-    "uid": "dev_w3x4"
+    "url": "https://github.com/InsForge/InsForge",
+    "published": "2026-05-18"
   }
 ]
