@@ -169,6 +169,10 @@ else
     exit 1
 fi
 
+# Step 3.5: 同步数据到 data/ 目录（安全网：确保 CDN 路径数据最新）
+log "[3.5/5] 同步 data/ 目录..."
+bash "$SCRIPT_DIR/sync_to_data.sh" 2>&1 | tee -a "$LOG_FILE" || log "⚠️ data/ 同步失败（不阻塞，继续 promote）"
+
 # Step 4: Merge staging → main
 log "[4/5] 合并 staging → main..."
 # 确保本地 staging 是最新的

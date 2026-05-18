@@ -146,6 +146,10 @@ fi
 log "[combined_3days] 生成 3 天合并数据文件..."
 python3 "$SCRIPT_DIR/generate_combined_3days.py" 2>&1 | tee -a "$LOG_DIR/sync-github.log"
 
+# ---- Step 3.6: 同步输出文件到 data/ 目录（CDN 实际读取路径）----
+log "[data-sync] 同步输出文件到 data/ 目录..."
+bash "$SCRIPT_DIR/sync_to_data.sh" 2>&1 | tee -a "$LOG_DIR/sync-github.log"
+
 # ---- Step 4: 数据新鲜度检查 ----
 log "[qa] 数据新鲜度检查..."
 if python3 "$SCRIPT_DIR/check-freshness.py" --warn 2>&1 | tee -a "$LOG_DIR/sync-github.log"; then
