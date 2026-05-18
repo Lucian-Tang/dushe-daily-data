@@ -680,6 +680,141 @@
       "uid": "84e43917277b73e684d4c21891c673c7"
     },
     {
+      "title": "奥特曼投的芯片涨疯了，今年最大科技IPO",
+      "content": "- **发布时间**: 2026-05-16 山姆·奥特曼投资的AI芯片公司成功IPO，成为今年最大科技IPO，股价暴涨引发资本市场狂热。奥特曼的20亿美元持股版图也随之曝光。这一事件标志着AI基础设施赛道的投资回报进入加速期，对关注AI芯片和算力投资的人有重要参考意义。 💬 *奥特曼投芯片赚麻了，你还在犹豫买不买？*",
+      "quote": "",
+      "source": ": 量子位",
+      "url": "https://www.qbitai.com/2026/05/418594.html",
+      "published": "2026-05-17",
+      "uid": "ai_c9f45d64"
+    },
+    {
+      "title": "别让模型烧Token了！GitHub 20k星神作：把全网变成命令行",
+      "content": "- **发布时间**: 2026-05-16 一个GitHub 20k星的开源项目引发热议，它可以将整个互联网变成命令行操作界面，大幅降低AI模型调用外部数据时的Token消耗。开发者不再需要为每个网页调用浪费大量Token，直接通过命令行即可获取和处理网络信息，对LLM应用开发者来说是降本增效的利器。 💬 *把全网搓成命令行，Token省了但手速不能省*",
+      "quote": "",
+      "source": ": 量子位",
+      "url": "https://www.qbitai.com/2026/05/418518.html",
+      "published": "2026-05-17",
+      "uid": "ai_63620b9a"
+    },
+    {
+      "title": "腾讯开源 Agent 记忆技术方案，Token 消耗最高降低 61%",
+      "content": "- **发布时间**: 2026-05-15 腾讯开源了Agent记忆技术方案，通过优化记忆管理机制将Token消耗最高降低61%，任务成功率提升51%。该方案解决了AI Agent在长对话中的记忆遗忘和上下文窗口浪费问题，对推动Agent走向实用化具有重要意义，所有开发者均可直接使用。 💬 *记忆管理开源了，Agent终于不会秒忘*",
+      "quote": "",
+      "source": ": 量子位",
+      "url": "https://www.qbitai.com/2026/05/417753.html",
+      "published": "2026-05-17",
+      "uid": "ai_c4bf25ac"
+    },
+    {
+      "title": "SANA-WM: Efficient Minute-Scale World Modeling with Hybrid Linear Diffusion Transformer",
+      "content": "- **发布时间**: 2026-05-16 NVIDIA推出SANA-WM，仅2.6B参数的原生一分钟世界模型，支持720p高保真视频生成和精确6-DoF相机控制。采用混合线性注意力加双分支相机控制，用21.3万公开视频片段训练15天，量化蒸馏版可在单张RTX 5090上34秒生成60秒视频，吞吐量比业界基线高36倍。 💬 *2.6B参数跑一分钟世界模型，5090用户表示还能抢救*",
+      "quote": "",
+      "source": ": HuggingFace",
+      "url": "https://huggingface.co/papers/2605.15178",
+      "published": "2026-05-17",
+      "uid": "ai_d5054e3b"
+    },
+    {
+      "title": "RAVEN: Real-time Autoregressive Video Extrapolation with Consistency-model GRPO",
+      "content": "- **发布时间**: 2026-05-16 提出RAVEN训练时测试框架，将自回归视频生成中的self-rollout重构为历史端点和去噪状态的交错序列，让后续chunk的梯度回传到历史表征。同时提出CM-GRPO将一致性采样重构为条件高斯转移。在多个因果视频蒸馏基线上超过所有SOTA方法，兼顾质量、语义和动态效果。 💬 *因果视频训练不再是盲人摸象，梯度终于打到历史*",
+      "quote": "",
+      "source": ": HuggingFace",
+      "url": "https://huggingface.co/papers/2605.15190",
+      "published": "2026-05-17",
+      "uid": "ai_d7d2d245"
+    },
+    {
+      "title": "Shodh-MoE: Eradicating Negative Transfer in Multi-Physics Foundation Models",
+      "content": "- **发布时间**: 2026-05-14 针对多物理场科学计算中的负迁移问题提出Shodh-MoE，使用稀疏激活Transformer加Top-1软语义路由器，将局部物理块动态分配给不同专家。20000步预训练后路由器自动实现领域分岔，开通道流体和多种介质域分别路由到不同专家，同时严格保证质量守恒约束。 💬 *MoE不止聊天还能算物理，专家自动分岔*",
+      "quote": "",
+      "source": ": arXiv",
+      "url": "https://arxiv.org/abs/2605.15179",
+      "published": "2026-05-17",
+      "uid": "ai_dafcd5f8"
+    },
+    {
+      "title": "MANSU: Forgetting That Sticks — Quantization-Permanent Unlearning via Circuit Attribution",
+      "content": "- **发布时间**: 2026-05-14 发现现有模型遗忘方法在量化后全部失效：参数更新量仅为NF4量化bin宽度的1/47到1/828。提出MANSU，结合因果归因定位最小遗忘子图加零空间投影加参数下限，保证遗忘在量化后依旧有效。对AI安全合规领域具有重要价值，解决了数据删除的最后一公里问题。 💬 *删了等于没删？量化一过全现形，MANSU真删除*",
+      "quote": "",
+      "source": ": arXiv",
+      "url": "https://arxiv.org/abs/2605.15138",
+      "published": "2026-05-17",
+      "uid": "ai_b859ebb5"
+    },
+    {
+      "title": "InfoSFT: Learn More and Forget Less with Information-Aware Token Weighting",
+      "content": "- **发布时间**: 2026-05-14 指出标准SFT均匀拟合所有样本会导致过拟合和遗忘已有能力。提出InfoSFT仅需一行代码修改，基于信息论对token加权，重点关注中等置信度token即最大信息增益点。在数学、代码和CoT任务上超越标准SFT，同时更好保留模型已有能力，是低门槛的SFT改进方案。 💬 *一行代码改SFT，信息量大token多学忘更少*",
+      "quote": "",
+      "source": ": arXiv",
+      "url": "https://arxiv.org/abs/2605.14967",
+      "published": "2026-05-17",
+      "uid": "ai_2e602427"
+    },
+    {
+      "title": "Holistic Evaluation and Failure Diagnosis of AI Agents",
+      "content": "- **发布时间**: 2026-05-14 提出全新AI Agent评估框架，将Agent级诊断与Span级评估结合，把长轨迹分解为独立Span。在TRAIL基准上GAIA和SWE-Bench所有指标达SOTA，分类F1提升38%，定位精度提升3.5倍。关键发现：评估方法论而非模型能力才是Agent评估的真正瓶颈，对评估实践有深刻启示。 💬 *Agent做不好不是模型菜，是你不会测*",
+      "quote": "",
+      "source": ": arXiv",
+      "url": "https://arxiv.org/abs/2605.14865",
+      "published": "2026-05-17",
+      "uid": "ai_965bb8cd"
+    },
+    {
+      "title": "龙虾之父月烧940万元的token！要不是入职OpenAI还真用不起",
+      "content": "- **发布时间**: 2026-05-17 龙虾之父入职OpenAI后月均Token消耗相当于烧掉940万元，从业内疯传的烧钱大户秒变内鬼随便用模式，OpenAI内部资源壕得让人沉默。 💬 *烧了940万然后免费了，果然大树底下好乘凉*",
+      "quote": "",
+      "source": ": 量子位",
+      "url": "https://www.qbitai.com/2026/05/418822.html",
+      "published": "2026-05-17",
+      "uid": "ai_39619620"
+    },
+    {
+      "title": "6.4k Stars！用Claude Code写论文的全套流水线，有人打包开源了",
+      "content": "- **发布时间**: 2026-05-17 GitHub 6.4k星开源项目：一套完整的Claude Code论文写作自动化流水线，从文献综述到实验代码生成再到论文润色，全流程一键搞定，学术打工人福音。 💬 *论文也能流水线了，审稿人准备好了吗*",
+      "quote": "",
+      "source": ": 量子位",
+      "url": "https://www.qbitai.com/2026/05/418737.html",
+      "published": "2026-05-17",
+      "uid": "ai_55c03488"
+    },
+    {
+      "title": "OpenHuman用20分钟了解你的一切，存成卡帕西式知识库",
+      "content": "- **发布时间**: 2026-05-17 全新工具OpenHuman仅需20分钟对话即可构建你的完整个人知识库，采用Karpathy式知识表示方法，堪称最轻量级数字孪生方案。 💬 *AI比你本人还了解你自己，怕不怕*",
+      "quote": "",
+      "source": ": 量子位",
+      "url": "https://www.qbitai.com/2026/05/418571.html",
+      "published": "2026-05-17",
+      "uid": "ai_bc980e23"
+    },
+    {
+      "title": "SFT别急着接RL！你的多模态大模型可能一直在带伤训练",
+      "content": "- **发布时间**: 2026-05-17 最新研究发现多模态大模型在SFT阶段就已积累系统性偏差，直接接RL微调会导致错误信号逐级放大，建议先修复预训练阶段的模态对齐问题。 💬 *伤都没治好就跑马拉松，大模型先照照CT*",
+      "quote": "",
+      "source": ": 量子位",
+      "url": "https://www.qbitai.com/2026/05/418814.html",
+      "published": "2026-05-17",
+      "uid": "ai_e7982c31"
+    },
+    {
+      "title": "OpenAI partners with Malta to bring ChatGPT Plus to all citizens",
+      "content": "- **发布时间**: 2026-05-17 OpenAI与马耳他政府达成全球首个国家级AI普及合作，公民完成AI素养课程即可免费使用ChatGPT Plus一年，AI平权实验还是地缘棋盘的一步棋。 💬 *AI平权？不，是AI殖民*",
+      "quote": "",
+      "source": ": Hacker News",
+      "url": "https://openai.com/index/malta-chatgpt-plus-partnership/",
+      "published": "2026-05-17",
+      "uid": "ai_9f51354b"
+    },
+    {
+      "title": "Entire companies are under AI psychosis right now",
+      "content": "- **发布时间**: 2026-05-17 HashiCorp创始人Mitchell Hashimoto发推称整个科技行业陷入AI精神病状态，获1972赞和1152条评论激烈交锋，硅谷终于有人敢喊皇帝的新衣。 💬 *AI没疯，是投AI的人疯了*",
+      "quote": "",
+      "source": ": Hacker News",
+      "url": "https://news.ycombinator.com/item?id=43061000",
+      "published": "2026-05-17",
+      "uid": "ai_9409e9c7"
+    },
+    {
       "title": "🏆 Achieving Gold-Medal-Level Olympiad Reasoning via Simple and Unified Scaling",
       "content": "该研究提出一种简洁统一的缩放配方，将后训练推理骨干模型转化为奥林匹克级解题器。通过逆向困惑度课程SFT和逐步推理缩放，在IMO、IPhO等国际竞赛中达到金牌水平。对推理模型的规模化部署和学术研究具有里程碑意义。",
       "quote": "💬 IMO金牌交给AI，人类该去学什么",
@@ -777,7 +912,7 @@
       "url": "https://techcrunch.com/2026/05/16/research-repository-arxiv-will-ban-authors-for-a-year-if-they-let-ai-do-all-the-work/",
       "content": "预印本平台ArXiv宣布严厉新规：若作者完全由AI代写论文且无法披露使用比例，将被禁止投稿一年。ArXiv已要求首次投稿作者需获得知名学者的背书，并正在从康奈尔独立出来以筹集更多资金应对AI垃圾论文问题。这一系列动作表明，AI生成内容正在倒逼学术诚信体系被迫重构。",
       "quote": "学术界终于对AI代写忍无可忍了，只是这禁令执行起来怕是一地鸡毛。",
-      "published": "2026-05-16",
+      "published": "2026-05-18",
       "uid": "2f346a49915231664642df7031d9539f"
     },
     {
@@ -786,7 +921,7 @@
       "url": "https://techcrunch.com/2026/05/17/for-eclipse-the-2-5b-cerebras-win-is-just-the-start-of-realizing-its-physical-world-thesis/",
       "content": "Eclipse Ventures早年以650万美元押注Cerebras，近日Cerebras以185美元/股上市，使Eclipse斩获25亿美元回报，回报率17倍。Eclipse创始人Lior Susan早在2015年便提出物理世界数字化投资理念，当时被硅谷嘲笑，如今85%全球GDP与物理世界挂钩的判断被证明极具前瞻性。",
       "quote": "当年被嘲太孤独，今天25亿进账，Physical AI这波你跟不跟？",
-      "published": "2026-05-17",
+      "published": "2026-05-18",
       "uid": "531a7f112ceb864915491d704300b47b"
     },
     {
@@ -795,7 +930,7 @@
       "url": "https://www.theverge.com/ai-artificial-intelligence/932203/university-of-arizona-students-boo-eric-schmidt-ai-commencement",
       "content": "前Google CEO埃里克·施密特在亚利桑那大学毕业典礼上发表演讲，谈及AI未来时多次被台下学生嘘声打断。施密特承认学生对\"机器抢工作、气候崩溃\"的焦虑是\"理性的\"，但其演讲最终仍以推广AI为主，部分学生还因针对他的性侵指控而发出嘘声。AI叙事与就业焦虑的矛盾正在公开场合激化。",
       "quote": "连毕业生都不信AI那套了，这泡沫吹得比毕业典礼的气球还脆。",
-      "published": "2026-05-17",
+      "published": "2026-05-18",
       "uid": "e2443c0adb90e4801969edf50937d4e9"
     },
     {
@@ -804,7 +939,7 @@
       "url": "https://www.techspot.com/news/112410-security-researcher-microsoft-secretly-built-backdoor-bitlocker-releases.html",
       "content": "安全研究员公开指控微软在BitLocker加密中内置后门程序，并发布完整漏洞利用代码。该漏洞评分达482分，为当日Hacker News最热话题。此事件再次引发围绕加密软件中植入\"政府合作接口\"的长期争议，对企业级数据安全信任构成严峻挑战。",
       "quote": "微软的系统级后门被自己人捅出来了，安全性这词从今往后怎么开口？",
-      "published": "2026-05-17",
+      "published": "2026-05-18",
       "uid": "a7358e00dc35c25271b65364ecd14bc3"
     },
     {
@@ -813,7 +948,7 @@
       "url": "https://github.com/Nightmare-Eclipse/YellowKey",
       "content": "一款名为YellowKey的项目在GitHub上迅速蹿红，星标突破3091，专注于BitLocker安全绕过漏洞的利用工具。该漏洞同样影响CVE-2026-42945系列，与安全研究员的曝光形成呼应。反映出安全社区对系统级漏洞的高度敏感，也折射出加密实现中的长期信任危机。",
       "quote": "3091颗星背后的安全焦虑，比BitLocker的加密强度还要真实。",
-      "published": "2026-05-17",
+      "published": "2026-05-18",
       "uid": "4be1600517f07ed776f500b208cfbbc0"
     },
     {
@@ -822,7 +957,7 @@
       "url": "https://github.com/vercel-labs/zero",
       "content": "Vercel Labs发布名为zero的编程语言，定位为\"AI Agent专用语言\"，获1556星标。该语言瞄准AI Agent执行复杂任务时的编程范式需求，试图解决传统编程语言对Agent执行效率低下的问题。这是头部工具厂商首次在语言层面对Agent生态做出系统性押注。",
       "quote": "连编程语言都要专为AI设计了，手写代码的人类还跟得上吗？",
-      "published": "2026-05-17",
+      "published": "2026-05-18",
       "uid": "af6bfda7a49667e67bd42c088dc381a9"
     },
     {
@@ -831,7 +966,7 @@
       "url": "https://github.com/yaassin12/DeepSeek-V4-Pro-App",
       "content": "一款名为DeepSeek V4 Pro的桌面应用现身GitHub，标称采用1.6T MoE架构、百万级token上下文窗口，570星。该项目基于DeepSeek最新大模型，提供本地化AI对话能力。近期DeepSeek热度持续攀升，社区正在加速将其能力向终端应用层面迁移。",
       "quote": "百万token上下文窗口，你的工作站跑得动吗？跑不动就别碰这饼了。",
-      "published": "2026-05-17",
+      "published": "2026-05-18",
       "uid": "ba1f3c1e21cfd63b7befbe08356185b6"
     },
     {
@@ -1031,7 +1166,7 @@
       "quote": "苹果做相机？先问问徕卡愿不愿意跪着喊爸爸。",
       "source": "V2EX",
       "url": "https://www.v2ex.com/t/1213252",
-      "published": "2026-05-17",
+      "published": "2026-05-18",
       "uid": "68a702eb02bfb2e856bc4f555ed5b8b6"
     },
     {
@@ -1040,7 +1175,7 @@
       "quote": "Figma一边收钱一边被抄家，开源社区永远在教厂商做人。",
       "source": "DEV Community",
       "url": "https://dev.to/tgospodinov/specpeek-vs-figma-dev-mode-share-design-specs-without-paid-developer-seats-4kmm",
-      "published": "2026-05-17",
+      "published": "2026-05-18",
       "uid": "0b74bd5f06adf6f52c77e105785a0273"
     },
     {
@@ -1049,7 +1184,7 @@
       "quote": "又一篇'喂饭式'教程，设计师的焦虑和钱包一起被拿捏。",
       "source": "站酷ZCOOL",
       "url": "https://www.zcool.com.cn/article/ZMTc1NzI4OA==.html",
-      "published": "2026-05-17",
+      "published": "2026-05-18",
       "uid": "50786dfadd6e3754e8846d169dae06b5"
     },
     {
@@ -1058,7 +1193,7 @@
       "quote": "AI能画出眼睛看到的，却看不懂眼睛该往哪看。",
       "source": "DEV Community",
       "url": "https://dev.to/qcrao/why-dialogue-placement-is-the-hardest-part-of-ai-comic-generation-3lga",
-      "published": "2026-05-17",
+      "published": "2026-05-18",
       "uid": "da826a5953b353b46a973774b7b342a0"
     },
     {
@@ -1067,7 +1202,7 @@
       "quote": "百度的设计？先别管温不温度能把体验做好就谢天谢地了。",
       "source": "站酷ZCOOL",
       "url": "https://www.zcool.com.cn/article/ZMTc1NzA4MA==.html",
-      "published": "2026-05-17",
+      "published": "2026-05-18",
       "uid": "72f46940077c728a104eb901e584a054"
     },
     {
@@ -1076,7 +1211,7 @@
       "quote": "做跨平台设计的都在赌，赌用户不会边打字边骂娘。",
       "source": "Hacker News",
       "url": "https://justsitandgrin.im/posts/native-all-the-way-until-you-need-text/",
-      "published": "2026-05-17",
+      "published": "2026-05-18",
       "uid": "0ab214ebfb8b17bf6f2c344f50a1fd62"
     },
     {
@@ -1085,7 +1220,7 @@
       "quote": "让用户写提示词是设计师的懒惰，不是AI的锅。",
       "source": "DEV Community",
       "url": "https://dev.to/pixizen/why-ai-products-should-be-built-around-jobs-not-prompts-358e",
-      "published": "2026-05-17",
+      "published": "2026-05-18",
       "uid": "2ae9f6867f276481b71ac1622ac8fb63"
     },
     {
@@ -1094,7 +1229,7 @@
       "quote": "甲方说'再活泼一点'，设计师的命也是命。",
       "source": "站酷ZCOOL",
       "url": "https://www.zcool.com.cn/work/ZNzM2MTM5MDA=.html",
-      "published": "2026-05-17",
+      "published": "2026-05-18",
       "uid": "3e52d7d2c15b545b5f7caca94c9a82ab"
     },
     {
@@ -1103,7 +1238,7 @@
       "quote": "技术有了，市场有了吗？别把自嗨当刚需。",
       "source": "V2EX",
       "url": "https://www.v2ex.com/t/1213256",
-      "published": "2026-05-17",
+      "published": "2026-05-18",
       "uid": "7d54c47d91fbe59120e0790d366d8f76"
     },
     {
@@ -1112,7 +1247,7 @@
       "quote": "设计师：移动端优先。开发：又是响应式地狱。",
       "source": "DEV Community",
       "url": "https://dev.to/miccho27/5-section-landing-page-structure-that-actually-converts-with-free-template-47c4",
-      "published": "2026-05-17",
+      "published": "2026-05-18",
       "uid": "72e0ac4ad5515991bf4a9555e7934778"
     },
     {
