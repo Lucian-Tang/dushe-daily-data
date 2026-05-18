@@ -149,13 +149,16 @@ def normalize_file(filepath, dry_run=False, blocklist=None):
             item['uid'] = uid
             uid_count += 1
 
-        # 按3天过滤旧数据
+        # 按3天过滤旧数据（仅对今天文件生效，历史文件不删数据）
         try:
             pub = item.get('published', '')
             item_date = datetime.strptime(pub[:10], '%Y-%m-%d').date()
             today = datetime.now(timezone(timedelta(hours=8))).date()
-            if item_date < today - timedelta(days=MAX_DAYS_BACK):
-                continue  # 过滤掉超3天的数据
+            file_date = datetime.strptime(date_str, '%Y%m%d').date()
+            # 只有今天的文件才按今天为基准过滤；历史文件按自身文件日期过滤
+            cutoff = today if file_date >= today else file_date
+            if item_date < cutoff - timedelta(days=MAX_DAYS_BACK):
+                continue
         except:
             pass  # 无法解析日期的保留
 
