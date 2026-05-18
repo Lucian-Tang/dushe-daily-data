@@ -1,110 +1,98 @@
 [
   {
+    "title": "Anthropic用16个AI Agent协作写出C编译器",
+    "content": "Anthropic研究员Nicholas Carlini用16个Claude实例并行工作，经近2000次Claude Code会话、2万美元API费用，产出10万行Rust代码的C编译器，能编译Linux 6.9内核（x86/ARM/RISC-V）。但实测编译速度比GCC关优化还慢15万倍，且无法持续迭代维护。证明了多Agent协作的上限和下限同时存在。",
+    "quote": "烧了2万刀写了个比GCC慢15万倍的编译器，这大概是最贵的Hello World了",
+    "source": "Anthropic Engineering",
+    "url": "https://www.anthropic.com/engineering/building-c-compiler",
+    "published": "2026-05-18"
+  },
+  {
+    "title": "AI不会让你的流程变快",
+    "content": "Frederick van Brabant撰文指出：AI加速了代码编写，但软件开发真正的瓶颈从来不是打字速度。需求不清晰、跨团队协调、领域理解才是真正的减速带。文章引发HN激烈讨论，核心争议：AI到底在加速开发还是只是放大已有的混乱？337条评论吵成一锅粥。",
+    "quote": "以为AI能救流程，就像以为买更好的锅就能当大厨",
+    "source": "Hacker News",
+    "url": "https://news.ycombinator.com/item?id=48168221",
+    "published": "2026-05-18"
+  },
+  {
+    "title": "AI是技术不是产品",
+    "content": "John Gruber（Daring Fireball）发文批评科技行业把AI当产品贩卖的乱象。AI应该是嵌入产品中的底层技术，就像没有人单独买「电」，大家买的是电驱动的电器。文章获304点热议，开发者普遍认同：把AI功能硬塞进产品而不考虑用户实际需求，是当前行业通病。",
+    "quote": "把AI当产品卖，就像电力公司只卖电不给灯泡——谁会买？",
+    "source": "Daring Fireball",
+    "url": "https://daringfireball.net/2026/05/ai_is_technology_not_a_product",
+    "published": "2026-05-18"
+  },
+  {
+    "title": "实测：Apple Silicon本地跑大模型比云服务贵",
+    "content": "William Angel实测对比：用Mac本地运行LLM的每百万token成本，竟然高于OpenRouter云端API。计入硬件折旧后差距更大。数据中心的批量处理、低电价和专业芯片让云推理性价比碾压家用设备。除非极度重视隐私，否则在家跑大模型纯粹是行为艺术。",
+    "quote": "花几万买Mac跑模型，结果每token比云还贵——这智商税交得优雅",
+    "source": "Hacker News",
+    "url": "https://news.ycombinator.com/item?id=48168198",
+    "published": "2026-05-18"
+  },
+  {
     "title": "Semble：给AI Agent的代码搜索，比grep省98% Token",
-    "content": "Semble 是一款专为 AI Agent 设计的代码搜索工具，号称比传统 grep 节省 98% 的 Token 消耗。在 Claude Code/Cursor 等工具疯狂烧 Token 的当下，这种精准定位代码片段的能力直击痛点。不是给开发者用的，是给 Agent 用的——方向对了。",
+    "content": "开源工具Semble亮相HN，专为AI编程Agent设计的代码搜索引擎。使用静态Model2Vec嵌入+BM25混合检索，纯CPU运行，250ms索引常规仓库，单次查询仅1.5ms。作为MCP Server可即插即用于Claude Code、Cursor等。98%更少token消耗，99%接近Transformer模型检索质量。",
+    "quote": "grep用了几十年没人嫌弃，AI一来才发现这玩意儿这么吃token",
     "source": "Hacker News",
-    "url": "https://github.com/zachbabin/semble",
-    "quote": "Token省了，Agent不穷了，你的人工智能钱包鼓了。",
-    "published": "2026-05-18",
-    "uid": "dev_a1b2"
+    "url": "https://news.ycombinator.com/item?id=48169874",
+    "published": "2026-05-18"
   },
   {
-    "title": "Agnt：开源CLI工具，一行命令跑任何MIT协议的AI Agent",
-    "content": "Agnt 是一个免费开源的 CLI 工具，让你在终端里直接运行各种公开的 AI Agent，无需配置环境。把 AI Agent 当 npm 包一样安装使用，这思路确实比每个项目独立部署清爽十倍。",
+    "title": "CodeGraph：预索引代码知识图谱，AI编程新辅助",
+    "content": "CodeGraph为Claude Code构建预索引的代码知识图谱，大幅减少AI编程中的token消耗和工具调用次数，100%本地运行。单日暴涨857星，反映出Agent编程场景下「少token就是省钱」的刚需。目前已支持多种语言的代码关系图谱自动构建。",
+    "quote": "AI编程的终极奥义不是多聪明，而是少烧token——CodeGraph悟了",
+    "source": "GitHub Trending",
+    "url": "https://github.com/colbymchenry/codegraph",
+    "published": "2026-05-18"
+  },
+  {
+    "title": "Shannon：白盒AI渗透测试工具自动找漏洞",
+    "content": "KeygraphHQ发布的Shannon Lite是自主AI渗透测试框架，能分析Web应用源码、识别攻击向量并执行真实漏洞利用。在OWASP Juice Shop中发现20+漏洞包括认证绕过和数据库泄露。AGPL-3.0开源，支持2FA/SSO登录、并行扫描，填补了「一年一次人工渗透测试」之间的安全真空。",
+    "quote": "终于有人把「跑个扫描交差」这件事自动化了，渗透测试师的摸鱼时代来了",
+    "source": "GitHub Trending",
+    "url": "https://github.com/KeygraphHQ/shannon",
+    "published": "2026-05-18"
+  },
+  {
+    "title": "CLI-Anything：让所有软件变成AI Agent可调用的API",
+    "content": "香港大学数据科学实验室发布CLI-Anything，通过构建CLI-Hub让AI Agent能操作任意软件。核心理念：把世界上的所有软件工具都变成Agent可用的命令行接口。搭配Agent Skills生态，野心是重新定义人机交互的边界。",
+    "quote": "把全世界软件都变成CLI——这想法疯狂到可能真的有用",
+    "source": "GitHub Trending",
+    "url": "https://github.com/HKUDS/CLI-Anything",
+    "published": "2026-05-18"
+  },
+  {
+    "title": "$80的Android平板变身Debian Linux工作站",
+    "content": "技术爱好者将一台RK3562芯片、4GB内存的廉价Android平板成功刷入Debian并实现大部分硬件驱动正常工作。社区热议如何在4GB内存下生存：Firefox优于Chrome（内存压力下自动丢弃标签）、用WezTerm+tmux替代桌面环境、DNS广告拦截让网页可用。极客精神的最佳注脚。",
+    "quote": "八十块的平板跑Debian，贫穷限制不了想象力，只会激发创造力",
     "source": "Hacker News",
-    "url": "https://github.com/meajsinghk/agnt",
-    "quote": "以后装Agent比装Node模块还快，只是不知道生态能撑多久。",
-    "published": "2026-05-18",
-    "uid": "dev_c3d4"
+    "url": "https://news.ycombinator.com/item?id=48168668",
+    "published": "2026-05-18"
   },
   {
-    "title": "Due Diligence Agents：13个AI Agent自动分析并购合同",
-    "content": "一个开源项目，用 13 个 AI Agent 分工协作完成 M&A 尽职调查合同分析。Agent 各自负责不同条款（知识产权、劳动法、赔偿条款等），输出结构化报告。这比让一个 LLM 硬读几百页合同靠谱得多——专业的事交给专业的 Agent。",
-    "source": "GitHub",
-    "url": "https://github.com/zoharbabin/due-diligence-agents",
-    "quote": "13个Agent帮你读合同，并购律师的时薪要打5折了。",
-    "published": "2026-05-18",
-    "uid": "dev_e5f6"
-  },
-  {
-    "title": "Kami Subs：浏览器任意视频的实时AI字幕叠加",
-    "content": "Kami Subs 是一个浏览器扩展，为任意网页视频提供实时 AI 字幕叠加。支持本地模型运行，不依赖云端 API，隐私友好。看生肉视频、海外直播、技术演讲的好帮手，比 YouTube 自带字幕覆盖面广太多。",
-    "source": "GitHub",
-    "url": "https://github.com/MohammdKopa/kami-subs",
-    "quote": "生肉视频党的福音，终于不用靠猜了——虽然猜的准确率可能比AI还高。",
-    "published": "2026-05-18",
-    "uid": "dev_g7h8"
-  },
-  {
-    "title": "MailMark：自己管邮箱的冷邮件工具，域名你说了算",
-    "content": "MailMark 是一个冷邮件工具，核心卖点是你拥有自己的域名和邮箱服务器，不依赖第三方平台。对企业出海做 outreach 来说，域名信誉是自己的，不会被 SendGrid/HubSpot 一夜封号。",
+    "title": "Mozilla警告英国：VPN是基本隐私安全工具",
+    "content": "英国政府咨询文件提出可能限制VPN以推行年龄验证制度，Mozilla强硬回应称VPN是不可或缺的隐私与安全基础设施，削弱VPN就是削弱所有人的安全。该帖以622点高居HN榜首，折射出全球开发者对数字权利被侵蚀的深层焦虑。",
+    "quote": "英国想禁VPN推年龄验证？下回是不是该禁Tor了，一步到位多省事",
     "source": "Hacker News",
-    "url": "https://github.com/debasish/mailmark",
-    "quote": "域名、邮箱、数据全在自己手上，冷邮件界的一股清流。",
-    "published": "2026-05-18",
-    "uid": "dev_i9j0"
+    "url": "https://news.ycombinator.com/item?id=48166459",
+    "published": "2026-05-18"
   },
   {
-    "title": "Use-outside-click：零依赖的点击外部检测工具",
-    "content": "一个极简的框架无关的 outside-click 检测库，解决下拉菜单、模态框的点击外部关闭需求。在 React/Vue/Svelte 等多个框架都能直接用，不依赖框架 runtime。小功能解决大痛点，前端组件库就该这么设计。",
-    "source": "Hacker News",
-    "url": "https://github.com/use-outside-click",
-    "quote": "每个前端开发者都写过这个逻辑，但没人写对过。",
-    "published": "2026-05-18",
-    "uid": "dev_k1l2"
+    "title": "Open-Generative-AI：开源AI视频图像生成集成平台",
+    "content": "集200+模型于一身的开源AI生成工作室，覆盖Flux、Midjourney替代、Kling、Sora、Veo等主流模型。MIT协议、无内容过滤、完全自托管。单日703星反映了开发者对「不审查、能自己部署」的AI工具的强烈渴求，也暗示了对封闭商业API的不信任。",
+    "quote": "200个模型打包开源无审查，Midjourney看了连夜改定价策略",
+    "source": "GitHub Trending",
+    "url": "https://github.com/Anil-matcha/Open-Generative-AI",
+    "published": "2026-05-18"
   },
   {
-    "title": "28种AI未来场景的交互式选择冒险",
-    "content": "一个交互式网页，带你探索 28 种可能的 AI 未来场景——从 AI 接管编程到通用人工智能到来。每个选择影响后续走向，像《黑镜》的互动版。与其看各种 AI 预测报告，不如亲自走一遍未来分支树。",
-    "source": "Hacker News",
-    "url": "https://es92.github.io/Singularity-Map/",
-    "quote": "28种未来，要么天堂要么地狱，现在的AI发展看更像在走钢丝。",
-    "published": "2026-05-18",
-    "uid": "dev_m3n4"
-  },
-  {
-    "title": "EPublish：从简单HTML生成Amazon就绪电子书",
-    "content": "一个将 HTML 转换为符合 Amazon Kindle 格式电子书的工具。写 Markdown/HTML 就能出一本能在 Kindle Store 上架的专业电子书，省去 Calibre 的繁琐配置。对独立作者和内容创作者来说，出版门槛再次降低。",
-    "source": "Hacker News",
-    "url": "https://github.com/epublish-tool",
-    "quote": "写个HTML就能出书，传统出版业看了想打人。",
-    "published": "2026-05-18",
-    "uid": "dev_o5p6"
-  },
-  {
-    "title": "CPython内部实现免费指南，Python进阶必看",
-    "content": "一份面向有经验的 Python 开发者的 CPython 内部实现免费指南，涵盖字节码、GC、GIL、对象模型等核心机制。读完能从「会用 Python」升级到「理解 Python」，对性能优化和调试极有帮助。",
-    "source": "Hacker News",
-    "url": "https://pynsights.vercel.app",
-    "quote": "用Python十年的人也不一定看得懂，但看懂了的都成大神了。",
-    "published": "2026-05-18",
-    "uid": "dev_q7r8"
-  },
-  {
-    "title": "Graph-Based Firebase替代品，实时同步也能自托管",
-    "content": "一个基于图数据库的 Firebase 替代方案，支持实时同步和自托管。图结构比文档型更灵活，适合社交网络、推荐系统这类需要复杂关系查询的场景。不想被 Google 绑定的开发者又多了一个选择。",
-    "source": "Hacker News",
-    "url": "https://linkedrecords.com",
-    "quote": "Firebase很好，直到你的账单比办公室租金还高。",
-    "published": "2026-05-18",
-    "uid": "dev_s9t0"
-  },
-  {
-    "title": "WhispHub CLI：终端一键推送项目到开发者社区",
-    "content": "WhispHub 是一个面向开发者的项目展示平台，新发布的 CLI 工具让你能从终端一键推送项目。围绕项目可发现性设计，比 GitHub Trending 更社交化，比 Product Hunt 更开发者友好。",
-    "source": "Hacker News",
-    "url": "https://whisphub.com",
-    "quote": "接Product Hunt的班？社区/展示/发现，三样都做好了再说。",
-    "published": "2026-05-18",
-    "uid": "dev_u1v2"
-  },
-  {
-    "title": "手绘留言板：给个人网站的访客一个涂鸦的机会",
-    "content": "一个在个人作品集网站上添加的自由画笔留言板，访客可以用涂鸦代替文字留言。使用 perfect-freehand 库实现自然笔触，比冷冰冰的评论区多了一份人情味。独立开发者的小心思，口碑传播的好设计。",
-    "source": "Hacker News",
-    "url": "https://perfect-freehand-demo.vercel.app",
-    "quote": "评论区的尽头是涂鸦，终于不用纠结留言措辞了。",
-    "published": "2026-05-18",
-    "uid": "dev_w3x4"
+    "title": "Microsoft发布AI Agents入门课程：12节课从零构建Agent",
+    "content": "微软在GitHub发布AI Agents for Beginners系列教程，12节课覆盖Agent基础概念、工具调用、多Agent协作、生产部署等主题，配套Jupyter Notebook。485星的热度说明：全世界的开发者都在被老板逼着「学一下AI Agent」，微软精准收割学习需求。",
+    "quote": "微软：知道你们都被逼着学Agent，课已备好，请开始你的表演",
+    "source": "GitHub Trending",
+    "url": "https://github.com/microsoft/ai-agents-for-beginners",
+    "published": "2026-05-18"
   }
 ]
