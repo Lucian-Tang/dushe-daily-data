@@ -201,114 +201,6 @@
   ],
   "dev": [
     {
-      "title": "Anthropic用16个AI Agent协作写出C编译器",
-      "content": "",
-      "quote": "",
-      "source": "",
-      "url": "#",
-      "published": "2026-05-18",
-      "uid": "dev_d0451e70"
-    },
-    {
-      "title": "AI不会让你的流程变快",
-      "content": "",
-      "quote": "",
-      "source": "",
-      "url": "#",
-      "published": "2026-05-18",
-      "uid": "dev_9ec997a2"
-    },
-    {
-      "title": "AI是技术不是产品",
-      "content": "",
-      "quote": "",
-      "source": "",
-      "url": "#",
-      "published": "2026-05-18",
-      "uid": "dev_f415b069"
-    },
-    {
-      "title": "实测：Apple Silicon本地跑大模型比云服务贵",
-      "content": "",
-      "quote": "",
-      "source": "",
-      "url": "#",
-      "published": "2026-05-18",
-      "uid": "dev_3d4dc0c3"
-    },
-    {
-      "title": "Semble：给AI Agent的代码搜索，比grep省98% Token",
-      "content": "",
-      "quote": "",
-      "source": "",
-      "url": "#",
-      "published": "2026-05-18",
-      "uid": "dev_3bcd8586"
-    },
-    {
-      "title": "CodeGraph：预索引代码知识图谱，AI编程新辅助",
-      "content": "",
-      "quote": "",
-      "source": "",
-      "url": "#",
-      "published": "2026-05-18",
-      "uid": "dev_32899346"
-    },
-    {
-      "title": "Shannon：白盒AI渗透测试工具自动找漏洞",
-      "content": "",
-      "quote": "",
-      "source": "",
-      "url": "#",
-      "published": "2026-05-18",
-      "uid": "dev_bfa5b3c7"
-    },
-    {
-      "title": "CLI-Anything：让所有软件变成AI Agent可调用的API",
-      "content": "",
-      "quote": "",
-      "source": "",
-      "url": "#",
-      "published": "2026-05-18",
-      "uid": "dev_da9041d2"
-    },
-    {
-      "title": "$80的Android平板变身Debian Linux工作站",
-      "content": "",
-      "quote": "",
-      "source": "",
-      "url": "#",
-      "published": "2026-05-18",
-      "uid": "dev_66b429e8"
-    },
-    {
-      "title": "Mozilla警告英国：VPN是基本隐私安全工具",
-      "content": "",
-      "quote": "",
-      "source": "",
-      "url": "#",
-      "published": "2026-05-18",
-      "uid": "dev_4ffcf811"
-    },
-    {
-      "title": "Open-Generative-AI：开源AI视频图像生成集成平台",
-      "content": "",
-      "quote": "",
-      "source": "",
-      "url": "#",
-      "published": "2026-05-18",
-      "uid": "dev_e44f6162"
-    },
-    {
-      "title": "Microsoft发布AI Agents入门课程：12节课从零构建Agent",
-      "content": "",
-      "quote": "",
-      "source": "",
-      "url": "#",
-      "published": "2026-05-18",
-      "uid": "dev_f1104d3b"
-    },
-    {
       "title": "安全研究员曝光微软Bitlocker后门，发布利用代码",
       "content": "安全研究员声称微软在Bitlocker中构建了后门，并发布了完整利用代码。该漏洞引发了对Windows全盘加密系统安全性的严重质疑，尤其是企业用户和政府机构的数据保护面临潜在威胁，引发Hacker News上453分、189条评论的激烈讨论。",
       "quote": "你以为是加密，其实是微软给你留了把钥匙。",
@@ -496,6 +388,114 @@
       "url": "https://macdailynews.com/2026/05/15/u-s-doj-demands-apple-and-google-unmask-over-100000-users-of-popular-car-tinkering-app-in-emissions-crackdown/",
       "published": "2026-05-16",
       "uid": "dev_075a4332"
+    },
+    {
+      "title": "Semble：给AI Agent的代码搜索，比grep省98% Token",
+      "content": "Semble 是一款专为 AI Agent 设计的代码搜索工具，号称比传统 grep 节省 98% 的 Token 消耗。在 Claude Code/Cursor 等工具疯狂烧 Token 的当下，这种精准定位代码片段的能力直击痛点。不是给开发者用的，是给 Agent 用的——方向对了。",
+      "source": "Hacker News",
+      "url": "https://github.com/zachbabin/semble",
+      "quote": "Token省了，Agent不穷了，你的人工智能钱包鼓了。",
+      "published": "2026-05-18",
+      "uid": "dev_a1b2"
+    },
+    {
+      "title": "Agnt：开源CLI工具，一行命令跑任何MIT协议的AI Agent",
+      "content": "Agnt 是一个免费开源的 CLI 工具，让你在终端里直接运行各种公开的 AI Agent，无需配置环境。把 AI Agent 当 npm 包一样安装使用，这思路确实比每个项目独立部署清爽十倍。",
+      "source": "Hacker News",
+      "url": "https://github.com/meajsinghk/agnt",
+      "quote": "以后装Agent比装Node模块还快，只是不知道生态能撑多久。",
+      "published": "2026-05-18",
+      "uid": "dev_c3d4"
+    },
+    {
+      "title": "Due Diligence Agents：13个AI Agent自动分析并购合同",
+      "content": "一个开源项目，用 13 个 AI Agent 分工协作完成 M&A 尽职调查合同分析。Agent 各自负责不同条款（知识产权、劳动法、赔偿条款等），输出结构化报告。这比让一个 LLM 硬读几百页合同靠谱得多——专业的事交给专业的 Agent。",
+      "source": "GitHub",
+      "url": "https://github.com/zoharbabin/due-diligence-agents",
+      "quote": "13个Agent帮你读合同，并购律师的时薪要打5折了。",
+      "published": "2026-05-18",
+      "uid": "dev_e5f6"
+    },
+    {
+      "title": "Kami Subs：浏览器任意视频的实时AI字幕叠加",
+      "content": "Kami Subs 是一个浏览器扩展，为任意网页视频提供实时 AI 字幕叠加。支持本地模型运行，不依赖云端 API，隐私友好。看生肉视频、海外直播、技术演讲的好帮手，比 YouTube 自带字幕覆盖面广太多。",
+      "source": "GitHub",
+      "url": "https://github.com/MohammdKopa/kami-subs",
+      "quote": "生肉视频党的福音，终于不用靠猜了——虽然猜的准确率可能比AI还高。",
+      "published": "2026-05-18",
+      "uid": "dev_g7h8"
+    },
+    {
+      "title": "MailMark：自己管邮箱的冷邮件工具，域名你说了算",
+      "content": "MailMark 是一个冷邮件工具，核心卖点是你拥有自己的域名和邮箱服务器，不依赖第三方平台。对企业出海做 outreach 来说，域名信誉是自己的，不会被 SendGrid/HubSpot 一夜封号。",
+      "source": "Hacker News",
+      "url": "https://github.com/debasish/mailmark",
+      "quote": "域名、邮箱、数据全在自己手上，冷邮件界的一股清流。",
+      "published": "2026-05-18",
+      "uid": "dev_i9j0"
+    },
+    {
+      "title": "Use-outside-click：零依赖的点击外部检测工具",
+      "content": "一个极简的框架无关的 outside-click 检测库，解决下拉菜单、模态框的点击外部关闭需求。在 React/Vue/Svelte 等多个框架都能直接用，不依赖框架 runtime。小功能解决大痛点，前端组件库就该这么设计。",
+      "source": "Hacker News",
+      "url": "https://github.com/use-outside-click",
+      "quote": "每个前端开发者都写过这个逻辑，但没人写对过。",
+      "published": "2026-05-18",
+      "uid": "dev_k1l2"
+    },
+    {
+      "title": "28种AI未来场景的交互式选择冒险",
+      "content": "一个交互式网页，带你探索 28 种可能的 AI 未来场景——从 AI 接管编程到通用人工智能到来。每个选择影响后续走向，像《黑镜》的互动版。与其看各种 AI 预测报告，不如亲自走一遍未来分支树。",
+      "source": "Hacker News",
+      "url": "https://es92.github.io/Singularity-Map/",
+      "quote": "28种未来，要么天堂要么地狱，现在的AI发展看更像在走钢丝。",
+      "published": "2026-05-18",
+      "uid": "dev_m3n4"
+    },
+    {
+      "title": "EPublish：从简单HTML生成Amazon就绪电子书",
+      "content": "一个将 HTML 转换为符合 Amazon Kindle 格式电子书的工具。写 Markdown/HTML 就能出一本能在 Kindle Store 上架的专业电子书，省去 Calibre 的繁琐配置。对独立作者和内容创作者来说，出版门槛再次降低。",
+      "source": "Hacker News",
+      "url": "https://github.com/epublish-tool",
+      "quote": "写个HTML就能出书，传统出版业看了想打人。",
+      "published": "2026-05-18",
+      "uid": "dev_o5p6"
+    },
+    {
+      "title": "CPython内部实现免费指南，Python进阶必看",
+      "content": "一份面向有经验的 Python 开发者的 CPython 内部实现免费指南，涵盖字节码、GC、GIL、对象模型等核心机制。读完能从「会用 Python」升级到「理解 Python」，对性能优化和调试极有帮助。",
+      "source": "Hacker News",
+      "url": "https://pynsights.vercel.app",
+      "quote": "用Python十年的人也不一定看得懂，但看懂了的都成大神了。",
+      "published": "2026-05-18",
+      "uid": "dev_q7r8"
+    },
+    {
+      "title": "Graph-Based Firebase替代品，实时同步也能自托管",
+      "content": "一个基于图数据库的 Firebase 替代方案，支持实时同步和自托管。图结构比文档型更灵活，适合社交网络、推荐系统这类需要复杂关系查询的场景。不想被 Google 绑定的开发者又多了一个选择。",
+      "source": "Hacker News",
+      "url": "https://linkedrecords.com",
+      "quote": "Firebase很好，直到你的账单比办公室租金还高。",
+      "published": "2026-05-18",
+      "uid": "dev_s9t0"
+    },
+    {
+      "title": "WhispHub CLI：终端一键推送项目到开发者社区",
+      "content": "WhispHub 是一个面向开发者的项目展示平台，新发布的 CLI 工具让你能从终端一键推送项目。围绕项目可发现性设计，比 GitHub Trending 更社交化，比 Product Hunt 更开发者友好。",
+      "source": "Hacker News",
+      "url": "https://whisphub.com",
+      "quote": "接Product Hunt的班？社区/展示/发现，三样都做好了再说。",
+      "published": "2026-05-18",
+      "uid": "dev_u1v2"
+    },
+    {
+      "title": "手绘留言板：给个人网站的访客一个涂鸦的机会",
+      "content": "一个在个人作品集网站上添加的自由画笔留言板，访客可以用涂鸦代替文字留言。使用 perfect-freehand 库实现自然笔触，比冷冰冰的评论区多了一份人情味。独立开发者的小心思，口碑传播的好设计。",
+      "source": "Hacker News",
+      "url": "https://perfect-freehand-demo.vercel.app",
+      "quote": "评论区的尽头是涂鸦，终于不用纠结留言措辞了。",
+      "published": "2026-05-18",
+      "uid": "dev_w3x4"
     }
   ],
   "ai": [
