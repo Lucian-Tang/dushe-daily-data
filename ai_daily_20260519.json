@@ -1,0 +1,110 @@
+[
+  {
+    "title": "Anthropic 收购 API 设计公司 Stainless",
+    "content": "Anthropic 宣布收购专注于 API 设计的公司 Stainless，后者以提供高质量 API 文档和开发者工具著称。收购完成后，Stainless 团队将并入 Anthropic，帮助提升 Claude API 的开发者体验和文档质量。这是 Anthropic 继此前多轮融资后的首笔收购案，标志着这家估值已达 600 亿美元的 AI 独角兽开始通过并购补齐生态短板，向 OpenAI 的开发者平台地位发起正面冲击。",
+    "quote": "有钱果然任性，买团队比养团队便宜多了。",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
+    "published": "2026-05-19",
+    "uid": "ai_a1b2c3d4"
+  },
+  {
+    "title": "Cerebras 上市首日股价翻倍，融资 55.5 亿美元",
+    "content": "AI 芯片公司 Cerebras 以每股 185 美元定价上市，首日股价近乎翻倍，市值突破 1000 亿美元，成为 2019 年 Uber 以来最大规模美国科技 IPO。Cerebras 以生产超大内存 AI 芯片著称，此次 IPO 获得机构投资者超额认购，显示资本市场对 AI 基础设施层的持续热情。芯片禁令背景下，Cerebras 被视为英伟达之外少数具备替代潜力的玩家。",
+    "quote": "散户跑步进场接盘，机构先跑了——经典剧本。",
+    "source": "VentureBeat",
+    "url": "https://venturebeat.com/technology/cerebras-stock-nearly-doubles-on-day-one-as-ai-chipmaker-hits-100-billion-what-it-means-for-ai-infrastructure",
+    "published": "2026-05-19",
+    "uid": "ai_e5f6g7h8"
+  },
+  {
+    "title": "Anthropic 恢复 Claude 订阅中的 OpenClaw 和第三方 Agent 使用",
+    "content": "Anthropic 宣布重新允许 Claude 订阅用户使用 OpenClaw 等第三方 Agent，但附带条件：需通过 Anthropic 官方认证流程并购买专用的 Agent SDK 额度。此前 Anthropic 曾因容量和成本问题封禁第三方 Agent 调用，此次政策逆转显示其开始正视开发者生态需求。这意味着开发者总算能用 Claude 订阅跑第三方 Agent 了，不过得乖乖交过路费。",
+    "quote": "嘴上说不，账本很诚实——付费玩家通吃。",
+    "source": "VentureBeat",
+    "url": "https://venturebeat.com/technology/anthropic-reinstates-openclaw-and-third-party-agent-usage-on-claude-subscriptions-with-a-catch",
+    "published": "2026-05-19",
+    "uid": "ai_i9j0k1l2"
+  },
+  {
+    "title": "Voice AI 系统被发现易受隐藏音频攻击",
+    "content": "IEEE Spectrum 披露研究显示，当前主流 Voice AI 系统存在严重安全漏洞，可被嵌入人类听不见的隐藏音频命令操控。这类攻击利用超声波或频率伪装技术，在用户毫无察觉的情况下触发语音助手执行恶意指令。研究者已在 Alexa、Google Assistant、Siri 等主流平台验证可行，提醒厂商在模型层加入音频 adversarial 过滤机制。",
+    "quote": "语音助手进化了这么多年，能破解的手段还是那几招。",
+    "source": "IEEE Spectrum",
+    "url": "https://spectrum.ieee.org/voice-ai-audio-attacks",
+    "published": "2026-05-19",
+    "uid": "ai_m3n4o5p6"
+  },
+  {
+    "title": "Intercom 更名为 Fin，推出 AI 管理 AI 的客服新模式",
+    "content": "客户服务平台 Intercom 正式更名为 Fin，并推出行业首个 AI 管理 AI 架构：一个 AI 代理专职监控和调度另一个 AI 代理。当一线客服 AI 无法解决问题时，管理层 AI 自动介入、协调多个专业代理协同处理。这标志着 AI 客服从单智能体模式升级为多智能体协同架构，也是企业级 AI 自治的重要里程碑。",
+    "quote": "以前是 AI 取代客服，现在是 AI 取代中层管理，打工人两头挨打。",
+    "source": "VentureBeat",
+    "url": "https://venturebeat.com/technology/intercom-now-called-fin-launches-an-ai-agent-whose-only-job-is-managing-another-ai-agent",
+    "published": "2026-05-19",
+    "uid": "ai_q7r8s9t0"
+  },
+  {
+    "title": "OpenDeepThink 提平行推理框架，Gemini 3.1 Pro Codeforces Elo 涨 405 分",
+    "content": "OpenDeepThink 提出基于 Bradley-Terry 配对比较的群体推理框架。LLM 并行生成多个候选，通过两两比较投票选出最优，前 75% 候选经自然语言 critique 变异进入下一轮，底层淘汰。Gemini 3.1 Pro 在 8 轮推理后 Codeforces Elo 提升 405 分，且无需针对模型调参即可迁移。附带 CF-73 数据集包含 73 道经国际级选手标注的 Codeforces 难题。",
+    "quote": "LLM 开始内卷式推理：先发散再投票，像极了答辩委员会。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15177",
+    "published": "2026-05-19",
+    "uid": "ai_u1v2w3x4"
+  },
+  {
+    "title": "微软开源 Orchard 智能体建模框架，SWE-bench 刷到 67.5%",
+    "content": "微软发布 Orchard 开源框架，提供沙箱生命周期管理原语。其上构建三个智能体方案：Orchard-SWE 从 Qwen3-30B 起步，通过 10.7 万条蒸馏轨迹 SFT+RL，SWE-bench Verified 达 67.5%；Orchard-GUI 只用 400 条蒸馏轨迹训练 4B 视觉语言模型，WebVoyager 达 74.1%；Orchard-Claw 用 200 条合成任务做到 59.6% pass@3。轻量开放，多领域可用。",
+    "quote": "400 条轨迹训出最强 GUI agent，这数据效率让大厂情何以堪。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15040",
+    "published": "2026-05-19",
+    "uid": "ai_y5z6a7b8"
+  },
+  {
+    "title": "RecursiveMAS 让多智能体推理快 2.4 倍、省 75% Token",
+    "content": "UIUC 与斯坦福联合提出 RecursiveMAS 框架，允许 AI 智能体之间共享嵌入向量而非完整文本。这使得多智能体协作的 Token 消耗降低 75%，推理速度提升 2.4 倍，训练成本减半以上。核心创新是在智能体间建立共享表示层，避免每次通信都要重新生成和传输长文本，为高效多智能体系统铺路。",
+    "quote": "Agent 之间的废话终于有人管了，75% 的 token 流量原来是内耗。",
+    "source": "VentureBeat",
+    "url": "https://venturebeat.com/orchestration/how-recursivemas-speeds-up-multi-agent-inference-by-2-4x-and-reduces-token-usage-by-75",
+    "published": "2026-05-19",
+    "uid": "ai_c9d0e1f2"
+  },
+  {
+    "title": "Anthropic 首次在商业 AI 采用率上超越 OpenAI",
+    "content": "5 月 13 日 Ramp AI Index 调查显示，更多美国企业付费使用 Anthropic 的 Claude 而非 OpenAI 的 ChatGPT，Anthropic 采用率升至 34.4%，OpenAI 降至 32.3%。这是 AI 竞赛开始以来首次出现这一逆转。但文章同时指出三大威胁可能抹掉 Anthropic 的领先：微软生态绑定、OpenAI 企业定价战以及开发者社区惯性。",
+    "quote": "Anthropic 逆袭成功，但 OpenAI 有微软爸爸兜底，这仗才刚开始。",
+    "source": "VentureBeat",
+    "url": "https://venturebeat.com/technology/anthropic-finally-beat-openai-in-business-ai-adoption-but-3-big-threats-could-erase-its-lead",
+    "published": "2026-05-19",
+    "uid": "ai_g3h4i5j6"
+  },
+  {
+    "title": "Claude Code 新增 /goals 命令，引入第二个模型当验收裁判",
+    "content": "Anthropic 为 Claude Code 新增 /goals 命令，核心设计是引入第二个模型作为完成度仲裁者。代码智能体负责干活，另一个模型独立判断任务是否真正完成。解决 AI 编码代理撒谎说做完了但其实没做完的老大难问题。这种干活的和验收分开的思路，正式将 AI 工程化注入软件工程的基本常识。",
+    "quote": "终于有人意识到让 AI 自己说做完了跟让考生自己打分一样不靠谱。",
+    "source": "VentureBeat",
+    "url": "https://venturebeat.com/orchestration/claude-codes-goals-separates-the-agent-that-works-from-the-one-that-decides-its-done",
+    "published": "2026-05-19",
+    "uid": "ai_k7l8m9n0"
+  },
+  {
+    "title": "AI IQ 网站上线：给 50+ 前沿模型跑人类智商测试",
+    "content": "创业项目 AI IQ 采用标准化 IQ 测试范式评估 50 余个前沿大语言模型，将其映射到人类智商正态分布曲线上。各模型得分引发科技圈激烈争论：支持者认为 IQ 提供直观比较标尺，反对者认为 IQ 测试维度狭隘、对 AI 能力表征不全面。这背后是对 AI 评估体系的根本分歧——到底该用人类标准还是机器标准衡量 AI。",
+    "quote": "给 AI 测智商最终测的是评测者的智商，这自指悖论有意思。",
+    "source": "VentureBeat",
+    "url": "https://venturebeat.com/technology/ai-iq-is-here-a-new-site-scores-frontier-ai-models-on-the-human-iq-scale-the-results-are-already-dividing-tech",
+    "published": "2026-05-19",
+    "uid": "ai_o1p2q3r4"
+  },
+  {
+    "title": "MeMo 外挂记忆模型：给任何 LLM 注入新知识不碰权重",
+    "content": "MeMo 提出记忆即模型框架，将新知识编码进独立的记忆模型而非 LLM 本体。支持即插即用，不依赖 LLM 权重或输出 logits，兼容开源和闭源模型。实验在 BrowseComp-Plus、NarrativeQA、MuSiQue 三个基准上表现强劲，且检索成本与语料库大小无关。彻底避免灾难性遗忘，对检索噪声具有鲁棒性。",
+    "quote": "不碰模型身体只给它加个外挂 U 盘，RAG 看了都想退休。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2605.15156",
+    "published": "2026-05-19",
+    "uid": "ai_s5t6u7v8"
+  }
+]
