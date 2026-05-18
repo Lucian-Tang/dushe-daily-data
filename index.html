@@ -686,11 +686,22 @@ function groupByDate(items) {
 }
 
 /* ========== Rendering (List) ========== */
+const FALLBACK_QUOTES = [
+  '这条新闻的信息量，比产品需求文档还大。',
+  '建议反复阅读三遍，每一遍都有新的槽点。',
+  '科技圈的剧本比娱乐圈精彩多了。',
+  '今天的热点，明天的段子素材。',
+  '看完这条，觉得自己的焦虑都合理了。',
+  '这操作，懂的都懂。',
+  '又到了科技媒体集体高潮的时间。',
+];
+
 function renderCard(item) {
   const source = item.source || '未知';
   const title = item.title || '无标题';
-  const content = item.content || '';
-  const quote = item.quote || '';
+  const content = item.content || item.comment || '';
+  const summary = content || title || '暂无摘要';
+  const quote = item.quote || item.comment || FALLBACK_QUOTES[Math.floor(Math.random() * FALLBACK_QUOTES.length)];
   const url = item.url || '';
   const hasUrl = url && url !== '#';
   const escUrl = url.replace(/"/g, '&quot;');
@@ -701,12 +712,11 @@ function renderCard(item) {
         <div class="card-title">${escHtml(title)}</div>
         <span class="card-source">${escHtml(source)}</span>
       </div>
-      ${content ? `<div class="card-body">${escHtml(content)}</div>` : ''}
-      ${quote ? `
+      <div class="card-body">${escHtml(summary)}</div>
       <div class="card-quote">
         <span class="quote-icon">💬</span>
         <span>${escHtml(quote)}</span>
-      </div>` : ''}
+      </div>
       <div class="card-footer">
         <span>${item.published ? formatDate(item.published) : ''}</span>
         ${hasUrl ? `<a class="card-source-link" href="${escUrl}" target="_blank" rel="noopener" onclick="event.stopPropagation()">查看原文 →</a>` : '<span class="card-source-link" style="color:var(--text-dim)">暂无链接</span>'}
