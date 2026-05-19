@@ -68,6 +68,57 @@ def gen_uid(section, title, url=""):
     return f"{section}_{h}"
 
 
+def fix_content_quote_mix(items: list) -> None:
+    """检测并修复 content/quote 混用：吐槽被误放在 content 字段。
+    
+    规则：如果 content 以 💬 开头且 quote 为空，
+    将 💬 部分的吐槽提取到 quote，保留正文在 content。
+    """
+    rant_signals = ['💬', '说', '就知道', '就', '无非是', '所谓', '不过']
+    for item in items:
+        c = (item.get('content', '') or '').strip()
+        q = (item.get('quote', '') or '').strip()
+        if not c or q:
+            continue
+        
+        # 检测 💬 开头的混用
+        if c.startswith('💬'):
+            # 拆分：吐槽部分 → quote，剩下的 → content
+            parts = c.split('。', 1)
+            possible_quote = parts[0].lstrip('💬').strip()
+            if possible_quote:
+                item['quote'] = possible_quote[:50]
+            if len(parts) > 1 and len(parts[1].strip()) >= 20:
+                item['content'] = parts[1].strip()
+            else:
+                # 没有有效正文：从 title 重建
+                title = item.get('title', '')
+                source = item.get('source', '')
+                fallback = title
+                if source:
+                    fallback += f"，来源：{source}"
+                fallback += "相关内容可查阅原文获取更多信息。"
+                item['content'] = fallback
+            continue
+        
+        # 检测以吐槽信号词开头且不包含事实信息的 content
+        for signal in rant_signals[1:]:  # skip 💬 (handled above)
+            if c.startswith(signal):
+                # 简单判据：开头有信号词 + 没有URL + 长度<80 → 可能是纯吐槽
+                has_url = 'http' in c or 'www' in c
+                if not has_url and len(c) < 80:
+                    item['quote'] = c[:50]
+                    # 从 title 重建 content
+                    title = item.get('title', '')
+                    source = item.get('source', '')
+                    fallback = title
+                    if source:
+                        fallback += f"，来源：{source}"
+                    fallback += "相关内容可查阅原文获取更多信息。"
+                    item['content'] = fallback
+                break
+
+
 def normalize_item(item, filename_date):
     """Fix a single item's fields"""
     fixed = False
@@ -155,6 +206,9 @@ def normalize_file(filepath, dry_run=False, blocklist=None):
 
     if not isinstance(data, list):
         return 0, 0, [f'{filename}: 不是数组格式(实际{type(data).__name__})，跳过']
+
+    # 0. Fix content/quote mixup before per-item normalization
+    fix_content_quote_mix(data)
 
     fixed_count = 0
     uid_count = 0
