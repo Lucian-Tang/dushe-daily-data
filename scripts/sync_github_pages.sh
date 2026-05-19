@@ -21,6 +21,14 @@ else
     log "[enrich] enrichment 失败（不阻塞后续流程）"
 fi
 
+# ---- Step 1.5: 采集 ClawHub 技能市场数据 ----
+log "[clawhub] 采集 ClawHub 技能市场..."
+if command -v clawhub &>/dev/null; then
+    python3 "$SCRIPT_DIR/fetch_clawhub.py" 2>&1 | tee -a "$LOG_DIR/sync-github.log"
+else
+    log "[clawhub] clawhub CLI 不可用，跳过"
+fi
+
 # ---- Step 2: 复制数据到 Git 仓库 ----
 log "[copy] 复制数据文件..."
 cd "$WORKSPACE"
@@ -29,6 +37,7 @@ cp "$WORKSPACE/data/raw_dev_"*.json . 2>/dev/null || log "[copy] raw_dev 无新�
 cp "$WORKSPACE/data/raw_social_"*.json . 2>/dev/null || log "[copy] raw_social 无新文件"
 cp "$WORKSPACE/data/raw_design_"*.json . 2>/dev/null || log "[copy] raw_design 无新文件"
 cp "$WORKSPACE/data/raw_startup_"*.json . 2>/dev/null || log "[copy] raw_startup 无新文件"
+cp "$WORKSPACE/data/raw_clawhub_"*.json . 2>/dev/null || log "[copy] raw_clawhub 无新文件"
 
 # ---- Step 2.5: 从 MD 报告生成标准化 JSON 文件 ----
 log "[daily-json] 运行 generate_daily_json.py 生成标准化 JSON..."

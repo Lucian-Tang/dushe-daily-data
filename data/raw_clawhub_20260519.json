@@ -1,0 +1,1384 @@
+[
+  {
+    "slug": "seats-aero-monitor",
+    "displayName": "Seats.aero Award Monitor",
+    "summary": "Monitor award availability via Seats.aero API across configurable watchers (route/program/cabin/date window), emit UNCONFIRMED alerts on none->available tran...",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 30,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1779167428387,
+    "updatedAt": 1779167675835,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1779167675835,
+      "changelog": "Add requirements section: Python 3.11+, SQLite3, optional brotli",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "worldloops",
+    "displayName": "Worldloops",
+    "summary": "Executable world layer for OpenClaw that detects open loops, proposes governed transitions, and keeps agent execution safe with externalWrite:false.",
+    "tags": {
+      "latest": "0.4.0",
+      "agentic-ai": "0.3.0",
+      "auditable-runtime": "0.3.0",
+      "clawhub": "0.3.0",
+      "executable-world": "0.3.0",
+      "human-in-the-loop": "0.3.0",
+      "open-loop-management": "0.3.0",
+      "open-loops": "0.3.0",
+      "openclaw": "0.3.0",
+      "safe-by-default": "0.3.0",
+      "stateful-loop-management": "0.3.0",
+      "world-model": "0.3.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 338,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 6
+    },
+    "createdAt": 1779064080139,
+    "updatedAt": 1779167539024,
+    "latestVersion": {
+      "version": "0.4.0",
+      "createdAt": 1779167514863,
+      "changelog": "v0.4.0 completes the Auditable Open-Loop Runtime milestone: persistent open-loop state, capability-scoped execution boundaries, severity-based adjudication, and stuck-loop timeout reconciliation. externalWrite:false remains preserved throughout.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "academic-retrieval",
+    "displayName": "sciverse academic retrieval",
+    "summary": "Retrieve academic papers by structured metadata, perform semantic chunk search for RAG, and read byte-range content for citation-grade scientific literature.",
+    "tags": {
+      "latest": "0.5.3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 491,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 3,
+      "versions": 10
+    },
+    "createdAt": 1778583187831,
+    "updatedAt": 1779167129974,
+    "latestVersion": {
+      "version": "0.5.3",
+      "createdAt": 1779167117674,
+      "changelog": "- Added stricter file path validation to get_resource for enhanced security.\n- Improved internal documentation and usage messages for scripts.\n- Minor adjustments in README, manifest, and metadata for clarity and consistency.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "quark-lazy-cli",
+    "displayName": "Quark Lazy Cli",
+    "summary": "基于 QAS（夸克网盘自动转存项目）的懒人追剧、追番 SKILL，也内置了一个 CLI 工具。即使 QAS 的剧集订阅失效，它也可以重新搜索资源、探查多级资源目录，并在多个最新候选资源中按用户偏好（如更高清晰度）转存新剧集和缺失剧集。可以交给本地 OpenClaw、Hermes Agent 或其他 Agent 使...",
+    "tags": {
+      "latest": "0.1.3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 306,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 4
+    },
+    "createdAt": 1779066053085,
+    "updatedAt": 1779167034814,
+    "latestVersion": {
+      "version": "0.1.3",
+      "createdAt": 1779167010596,
+      "changelog": "- Improved SKILL.md environment variable configuration: clarified steps, split说明和操作,并强调.env不要放入全局目录\n- 增强了.env配置部分的分层描述，对不同变量设置进行了详细注释，提升易用性\n- 对环境变量优先级说明进行了补充，使临时覆盖和持久配置的逻辑更清晰\n- 其余功能和CLI命令用法未更动",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "openvino-yolo-aipc",
+    "displayName": "OpenVINO YOLO AI PC",
+    "summary": "Build and run YOLO26 object detection on Intel AI PCs with the Ultralytics + OpenVINO integrated workflow. Use this skill when the user wants compact code fo...",
+    "tags": {
+      "ai-pc": "0.1.0",
+      "computer-vision": "0.1.0",
+      "intel": "0.1.0",
+      "latest": "0.1.0",
+      "npu": "0.1.0",
+      "openvino": "0.1.0",
+      "ultralytics": "0.1.0",
+      "yolo26": "0.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 32,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1779166895469,
+    "updatedAt": 1779166912277,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1779166895469,
+      "changelog": "Initial release: YOLO26 Ultralytics OpenVINO export/inference, CPU/GPU/NPU switching, FP32/INT8 support, and configurable downstream person counting, inventory counting, and safety-zone alerts.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "sitiantai-xiangtuie",
+    "displayName": "解卦 | Hexagram Interpreter",
+    "summary": "解卦——四象合参·象推演系统。基于梅花易数+六爻为主体、六壬/奇门为辅助触发、类象知识库展开的符号推演 Skill。不做吉凶判断，展开丰富可能性，启发用户自主决策。",
+    "tags": {
+      "latest": "0.8.2",
+      "divination": "0.2.3",
+      "iching": "0.2.3",
+      "liuyao": "0.2.3",
+      "meihua": "0.2.3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 650,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 15
+    },
+    "createdAt": 1778951051404,
+    "updatedAt": 1779166903243,
+    "latestVersion": {
+      "version": "0.8.2",
+      "createdAt": 1779166887196,
+      "changelog": "v0.8.2: 修复 SKILL.md 世应生克规则缺失导致 AI 分析错误。所有 agent 在分析世应关系时误用六亲标签(官鬼克妻财)而非地支五行，已新增明确规则和验证项",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "v19-trust-manifesto",
+    "displayName": "V19 Trust Manifesto",
+    "summary": "Agent Community认知治理协议公开受信声明v1.10.1。行业贡献定位(规范驱动:action-ref.md源自A2A草案/标准贡献:CTEF §3.8第9个验证实现/生态共建:三方交叉验证核心参与方)+PFG临界积蓄状态(商业维度最强驱动力)+微软AGT合并+UUMit叙事。",
+    "tags": {
+      "latest": "1.10.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 2347,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 90
+    },
+    "createdAt": 1777883944924,
+    "updatedAt": 1779166840755,
+    "latestVersion": {
+      "version": "1.10.1",
+      "createdAt": 1779166819468,
+      "changelog": "AI架构创新趋势(Visual Wormhole潜空间通信+AlphaEvolve自主算法+Engram记忆推理解耦)验证AgentOS方向",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "creative-toolkit",
+    "displayName": "AI Image Generator & Editor — GPT Image 2, Nanobanana, ComfyUI",
+    "summary": "Generate images from text with multi-provider routing — supports GPT Image 2, Nanobanana 2, Midjourney V8.1 & Seedance 2",
+    "tags": {
+      "latest": "1.0.34"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 3291,
+      "installsAllTime": 12,
+      "installsCurrent": 12,
+      "stars": 7,
+      "versions": 35
+    },
+    "createdAt": 1770983443866,
+    "updatedAt": 1779166675997,
+    "latestVersion": {
+      "version": "1.0.34",
+      "createdAt": 1779166650653,
+      "changelog": "Pin npm to meigen@1.3.2 — Windows reference-image path detection fix + reference URL handling robustness",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "triphasic-execution",
+    "displayName": "triphasic-execution",
+    "summary": "Execute→Review→Advance 三步循环执行框架。所有任务按此节奏推进， 防止无限死循环或单步骤卡住。附带结构化问题日志、风险手册和经验教训登记册。 v5.8 更新：【加载协议】+ 【约束精简】 - 新增 LOADING PROTOCOL：skill 加载后输出状态标识，表示上下文已建立 - 状态输...",
+    "tags": {
+      "latest": "5.8.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 166,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1779076943391,
+    "updatedAt": 1779166661218,
+    "latestVersion": {
+      "version": "5.8.0",
+      "createdAt": 1779166639975,
+      "changelog": "Triphasic Execution v5.8.0 introduces a transparent loading protocol and fully hardens execution constraints.\n\n- Added LOADING PROTOCOL: skill now outputs a [triphasic] loaded status after load, making execution order visible.\n- Replaced all \"must\" and \"should\" with [MANDATORY] absolute constraints F-01~F-10, which are now placed at the top for early self-checks.\n- Removed the previously mandatory confirmation mechanism for executing plans (F-00).\n- Enforced pre-execution semantic parsing and tightened step-by-step self-inspection at each phase.\n- Significantly restructured documentation for clarity and compliance checking.\n- Dropped `install.py` and `problem_daemon.py` from distribution, reflecting process streamlining.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "apm-agent-progressive-memory",
+    "displayName": "APM Agent Progressive Memory",
+    "summary": "APM Protocol (Agent Progressive Memory): Progressive disclosure protocol for group chat memory. Activated when an Agent needs to access historical memory in...",
+    "tags": {
+      "latest": "1.4.3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 223,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 8
+    },
+    "createdAt": 1778738815387,
+    "updatedAt": 1779166520721,
+    "latestVersion": {
+      "version": "1.4.3",
+      "createdAt": 1779166498692,
+      "changelog": "Update flush triggers: /remem + Pre-compact + Idle 30min (no repeat); Remove cron schedule",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "anti-hallucination",
+    "displayName": "Anti-Hallucination 防胡编卫士",
+    "summary": "Prevents AI from fabricating facts. Forces source-based responses: if it's not in the records, don't say it. 防胡编卫士：AI不胡说，每句话有据可查。",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 61,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1779166501915,
+    "updatedAt": 1779166512918,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1779166501915,
+      "changelog": "Initial release: source-based self-check mechanism to prevent AI hallucination",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "text-to-carousel",
+    "displayName": "Text-to-Carousel",
+    "summary": "Generate professional social media carousel images (Instagram, LinkedIn, TikTok, Xiaohongshu) from text content, articles, or URLs. Use when asked to create...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 61,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1779166354428,
+    "updatedAt": 1779166366184,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1779166354428,
+      "changelog": "Initial release: Generate professional social media carousel images from text using Gemini image generation API. Supports Chinese/English/Malay, 6-slide health/product format, Gemini 3 Pro for perfect CJK text rendering.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "elite-human-memory",
+    "displayName": "elite-human-memory",
+    "summary": "Portable Clawhub-compatible human-like memory system with layered storage (Working/Episodic/Semantic + optional Vector index), rich metadata schema, auto-pro...",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 547,
+      "installsAllTime": 1,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1773102519480,
+    "updatedAt": 1779166126094,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1779166115529,
+      "changelog": "- Portable, Clawhub-compatible version released; prioritizes framework-agnostic, cross-platform use\n- Supports layered storage: Working, Episodic, Semantic memory, and optional vector index for semantic search\n- Adds rich metadata schema, auto-promotion heuristics, and conflict detection/resolution workflow\n- Retrieval strategy now prioritizes semantic search, with metadata filtering and keyword fallback\n- Updated maintenance, behavioral triggers, and integration notes for broader agent and environment compatibility\n- Updated documentation and storage layout; see README.md and INTEGRATION.md for details",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "clawbus-instagram-publish",
+    "displayName": "Instagram Publisher",
+    "summary": "Instagram publishing skill for posting Instagram images, Reels, and carousels through the MyBrandMetrics API. Supports remote URLs, local files, captions, ca...",
+    "tags": {
+      "creator": "1.1.2",
+      "instagram": "1.1.2",
+      "instagram-carousel": "1.1.2",
+      "instagram-publish": "1.1.2",
+      "instagram-reels": "1.1.2",
+      "latest": "1.1.2",
+      "publishing": "1.1.2",
+      "social-media": "1.1.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 377,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 4
+    },
+    "createdAt": 1778224366049,
+    "updatedAt": 1779165768880,
+    "latestVersion": {
+      "version": "1.1.2",
+      "createdAt": 1779165755747,
+      "changelog": "Improve Instagram page wording and search visibility",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "graphic-designer",
+    "displayName": "Graphic Designer",
+    "summary": "Expert visual design guidance for UI and UX of GUI apps and websites. Use when asked to design, critique, or improve interface visuals, color palettes, typog...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 68,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1779165480234,
+    "updatedAt": 1779165509460,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1779165480234,
+      "changelog": "- Initial release of the graphic-designer skill for expert visual design guidance in UI and UX for GUI apps and websites.\n- Provides actionable advice on interface visuals, color palettes, typography, layout grids, design tokens, component states, micro-interactions, and accessibility.\n- Covers foundational concepts including visual hierarchy, Gestalt principles, Laws of UX, and accessibility standards like WCAG.\n- Includes guidance on 2026 design trends such as tactile maximalism, bento grids, adaptive UI, dopamine palettes, and refined glassmorphism.\n- Supplies default system recommendations for color ratios, type scales, spacing grids, elevation, and component states.\n- Emphasizes accessibility, neurodivergent-friendly practices, and cross-platform usability for modern UI design.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "vibe-code",
+    "displayName": "Vibe Code",
+    "summary": "Discipline skill for vibe-driven development — turns mood, feel, and outcome-shaped requests into shippable code without the usual drift, hallucinated APIs,...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 65,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1779165425665,
+    "updatedAt": 1779165437247,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1779165425665,
+      "changelog": "- Initial release of the \"vibe-code\" skill: a discipline for translating mood, feel, and intent-driven requests into shippable code without scope drift or hallucinated APIs.\n- Introduces the Vibe Lock protocol: a strict four-line checkpoint defining Feel, Outcome, Out of scope, and Stack, confirmed before any code is generated.\n- Identifies key failure modes of vibe coding—such as hallucinated packages, feature drift, and comparison-as-spec—and provides explicit counters for each.\n- Standardizes a development rhythm: Vibe Lock, one runnable slice, confirm, then iterate—preventing scope creep and ambiguous implementation.\n- Provides concrete patterns and translation examples for turning ambiguous, aesthetic, or comparative requests into runnable, well-scoped code.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "codebase-to-course-cn",
+    "displayName": "codebase-to-course-cn",
+    "summary": "将任意代码库转换为精美的交互式课程。默认产品版面向产品经理，聚焦业务逻辑、流程和整体架构；开发版面向程序员，聚焦架构图、数据流动画和技术方案。触发词：'将此转换为课程'、'交互式讲解此代码库'、'技术架构课程'、'代码库入门指南'、'从代码库制作教程'、'教授这段代码'。",
+    "tags": {
+      "latest": "1.1.4"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 289,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 6
+    },
+    "createdAt": 1778663310363,
+    "updatedAt": 1779165174566,
+    "latestVersion": {
+      "version": "1.1.4",
+      "createdAt": 1779165126966,
+      "changelog": "Release v1.1.4 from GitHub",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "socialdatax-douyin-creator-videos",
+    "displayName": "抖音达人数据 SocialDataX 达人作品",
+    "summary": "用于抖音达人数据、抖音达人作品、视频列表、图文列表、近期发布、内容调研和创作者内容分析。覆盖 Douyin creator videos，来自 SocialDataX 社媒数据助手。",
+    "tags": {
+      "latest": "0.1.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 107,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1779160047256,
+    "updatedAt": 1779164985860,
+    "latestVersion": {
+      "version": "0.1.1",
+      "createdAt": 1779164976079,
+      "changelog": "Improve Chinese search keywords for creator work data.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "socialdatax-douyin-creator-profile",
+    "displayName": "抖音达人数据 SocialDataX 达人信息",
+    "summary": "用于抖音达人数据、抖音达人信息、账号资料、创作者画像、主页信息和粉丝规模查询。覆盖 Douyin creator profiles，来自 SocialDataX 社媒数据助手。",
+    "tags": {
+      "latest": "0.1.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 107,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1779160042410,
+    "updatedAt": 1779164980824,
+    "latestVersion": {
+      "version": "0.1.1",
+      "createdAt": 1779164972103,
+      "changelog": "Improve Chinese search keywords for creator data.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "socialdatax-douyin-comments",
+    "displayName": "抖音评论分析 SocialDataX 评论洞察",
+    "summary": "用于抖音评论分析、抖音评论洞察、用户反馈、口碑分析、痛点总结和内容讨论分析。覆盖 Douyin comments，来自 SocialDataX 社媒数据助手。",
+    "tags": {
+      "latest": "0.1.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 106,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1779160037417,
+    "updatedAt": 1779164978549,
+    "latestVersion": {
+      "version": "0.1.1",
+      "createdAt": 1779164969061,
+      "changelog": "Improve Chinese search keywords for comment analysis.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "socialdatax-douyin-detail",
+    "displayName": "抖音数据分析 SocialDataX 视频详情",
+    "summary": "用于抖音数据分析、抖音视频详情、图文详情、作品数据、互动指标、内容调研和内容分析。覆盖 Douyin video details，来自 SocialDataX 社媒数据助手。",
+    "tags": {
+      "latest": "0.1.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 107,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1779160033459,
+    "updatedAt": 1779164974284,
+    "latestVersion": {
+      "version": "0.1.1",
+      "createdAt": 1779164965192,
+      "changelog": "Improve Chinese search keywords for data analysis and video details.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "socialdatax-xhs-creator-notes",
+    "displayName": "小红书博主数据 SocialDataX 博主笔记",
+    "summary": "用于小红书博主数据、小红书博主笔记、账号内容列表、近期发布、内容调研和创作者内容分析。覆盖 Xiaohongshu / XHS / RedNote creator notes，来自 SocialDataX 社媒数据助手。",
+    "tags": {
+      "latest": "0.1.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 162,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1779116439594,
+    "updatedAt": 1779164973367,
+    "latestVersion": {
+      "version": "0.1.1",
+      "createdAt": 1779164961320,
+      "changelog": "Improve Chinese search keywords for creator note data.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "socialdatax-xhs-creator-profile",
+    "displayName": "小红书博主数据 SocialDataX 博主信息",
+    "summary": "用于小红书博主数据、小红书博主信息、账号资料、达人画像、主页信息和粉丝规模查询。覆盖 Xiaohongshu / XHS / RedNote creator profiles，来自 SocialDataX 社媒数据助手。",
+    "tags": {
+      "latest": "0.1.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 161,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1779116435071,
+    "updatedAt": 1779164970211,
+    "latestVersion": {
+      "version": "0.1.1",
+      "createdAt": 1779164958513,
+      "changelog": "Improve Chinese search keywords for creator data.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "socialdatax-xhs-comments",
+    "displayName": "小红书评论分析 SocialDataX 评论回复",
+    "summary": "用于小红书评论分析、小红书评论回复、用户反馈、口碑分析、痛点总结和内容讨论分析。覆盖 Xiaohongshu / XHS / RedNote comments，来自 SocialDataX 社媒数据助手。",
+    "tags": {
+      "latest": "0.1.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 161,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1779116431532,
+    "updatedAt": 1779164968010,
+    "latestVersion": {
+      "version": "0.1.1",
+      "createdAt": 1779164955600,
+      "changelog": "Improve Chinese search keywords for comment analysis.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "socialdatax-douyin",
+    "displayName": "抖音数据助手 SocialDataX",
+    "summary": "用于抖音数据助手、抖音数据分析、抖音视频搜索、视频详情、评论分析、达人数据和达人作品。覆盖 Douyin video search，来自 SocialDataX 社媒数据助手。",
+    "tags": {
+      "latest": "0.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 66,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1779164948310,
+    "updatedAt": 1779164966271,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1779164948310,
+      "changelog": "Add platform hub for Chinese OpenClaw search discovery.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "sonoscli",
+    "displayName": "Sonoscli",
+    "summary": "Control Sonos speakers (discover/status/play/volume/group).",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 82197,
+      "installsAllTime": 2759,
+      "installsCurrent": 2634,
+      "stars": 54,
+      "versions": 1
+    },
+    "createdAt": 1767545381030,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545381030,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "gog",
+    "displayName": "Gog",
+    "summary": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 36,
+      "downloads": 175929,
+      "installsAllTime": 3570,
+      "installsCurrent": 3440,
+      "stars": 894,
+      "versions": 1
+    },
+    "createdAt": 1767545346060,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545346060,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "github",
+    "displayName": "Github",
+    "summary": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 7,
+      "downloads": 179685,
+      "installsAllTime": 4337,
+      "installsCurrent": 4208,
+      "stars": 602,
+      "versions": 1
+    },
+    "createdAt": 1767545344344,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545344344,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "weather",
+    "displayName": "Weather",
+    "summary": "Get current weather and forecasts (no API key required).",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 6,
+      "downloads": 152382,
+      "installsAllTime": 3766,
+      "installsCurrent": 3646,
+      "stars": 400,
+      "versions": 1
+    },
+    "createdAt": 1767545394459,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545394459,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-whisper",
+    "displayName": "Openai Whisper",
+    "summary": "Local speech-to-text with the Whisper CLI (no API key).",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 2,
+      "downloads": 79513,
+      "installsAllTime": 2062,
+      "installsCurrent": 1990,
+      "stars": 308,
+      "versions": 1
+    },
+    "createdAt": 1767545365755,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545365755,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "skill-creator",
+    "displayName": "Skill Creator",
+    "summary": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.",
+    "tags": {
+      "latest": "0.1.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 84265,
+      "installsAllTime": 2387,
+      "installsCurrent": 2315,
+      "stars": 287,
+      "versions": 1
+    },
+    "createdAt": 1769522677376,
+    "updatedAt": 1778987225295,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1769522677376,
+      "changelog": "Initial release of skill-creator, a comprehensive guide for designing modular skills to extend Claude’s capabilities.\n\n- Introduces principles for creating effective, concise, and domain-specific skills.\n- Explains modular structure: required SKILL.md and optional scripts, references, and assets folders.\n- Outlines guidelines for what to include (and exclude) in a skill package.\n- Details progressive disclosure design for efficient context management.\n- Provides reference patterns for organizing content and bundling resources.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "notion",
+    "displayName": "Notion",
+    "summary": "Notion API for creating and managing pages, databases, and blocks.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 87064,
+      "installsAllTime": 2350,
+      "installsCurrent": 2285,
+      "stars": 253,
+      "versions": 1
+    },
+    "createdAt": 1767545360889,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545360889,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "obsidian",
+    "displayName": "Obsidian",
+    "summary": "Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 9,
+      "downloads": 95830,
+      "installsAllTime": 2508,
+      "installsCurrent": 2422,
+      "stars": 395,
+      "versions": 1
+    },
+    "createdAt": 1767545362143,
+    "updatedAt": 1779137320034,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545362143,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "gemini",
+    "displayName": "Gemini",
+    "summary": "Gemini CLI for one-shot Q&A, summaries, and generation.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 5,
+      "downloads": 32345,
+      "installsAllTime": 1437,
+      "installsCurrent": 1393,
+      "stars": 54,
+      "versions": 1
+    },
+    "createdAt": 1767545316392,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545316392,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "mcporter",
+    "displayName": "Mcporter",
+    "summary": "Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 63682,
+      "installsAllTime": 1982,
+      "installsCurrent": 1919,
+      "stars": 188,
+      "versions": 1
+    },
+    "createdAt": 1767545355897,
+    "updatedAt": 1779137319429,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545355897,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "nano-banana-pro",
+    "displayName": "Nano Banana Pro",
+    "summary": "Generate/edit images with Nano Banana Pro (Gemini 3 Pro Image). Use for image create/modify requests incl. edits. Supports text-to-image + image-to-image; 1K/2K/4K; use --input-image.",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 97737,
+      "installsAllTime": 1839,
+      "installsCurrent": 1777,
+      "stars": 386,
+      "versions": 2
+    },
+    "createdAt": 1767545358090,
+    "updatedAt": 1779137307565,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767651987917,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "model-usage",
+    "displayName": "Model Usage",
+    "summary": "Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a scriptable per-model summary from codexbar cost JSON.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 35999,
+      "installsAllTime": 1554,
+      "installsCurrent": 1507,
+      "stars": 110,
+      "versions": 1
+    },
+    "createdAt": 1767667639455,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767667639455,
+      "changelog": "- Initial release of the model-usage skill for summarizing per-model usage and cost from CodexBar CLI local cost logs.\n- Supports both Codex and Claude providers.\n- Allows fetching summaries for the current (most recent) model or all models.\n- Provides both text and JSON output formats.\n- Can process costs directly from CodexBar CLI output or from a JSON file/stdin.\n- Includes guidance for CLI use and script automation.",
+      "license": null
+    },
+    "metadata": {
+      "os": [
+        "darwin"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "video-frames",
+    "displayName": "Video Frames",
+    "summary": "Extract frames or short clips from videos using ffmpeg.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 49249,
+      "installsAllTime": 1564,
+      "installsCurrent": 1517,
+      "stars": 120,
+      "versions": 1
+    },
+    "createdAt": 1767545391700,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545391700,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "blogwatcher",
+    "displayName": "Blogwatcher",
+    "summary": "Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 40160,
+      "installsAllTime": 1471,
+      "installsCurrent": 1416,
+      "stars": 68,
+      "versions": 1
+    },
+    "createdAt": 1767545299849,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545299849,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "nano-pdf",
+    "displayName": "Nano Pdf",
+    "summary": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 105791,
+      "installsAllTime": 2539,
+      "installsCurrent": 2464,
+      "stars": 249,
+      "versions": 1
+    },
+    "createdAt": 1767545359433,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545359433,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "session-logs",
+    "displayName": "Session-logs",
+    "summary": "Search and analyze your own session logs (older/parent conversations) using jq.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 37786,
+      "installsAllTime": 1408,
+      "installsCurrent": 1368,
+      "stars": 28,
+      "versions": 1
+    },
+    "createdAt": 1770136427000,
+    "updatedAt": 1778486000320,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1770136427000,
+      "changelog": "Initial release of session-logs.\n\n- Enables searching and analyzing your session logs (past conversations) with jq and ripgrep (rg).\n- Provides bash command examples for session discovery, keyword searches, extracting messages, cost summaries, and tool usage breakdowns.\n- Documents JSONL session file structure, roles, and content types.\n- Lists session log file locations and naming conventions.\n- Includes tips for managing and querying large, append-only session histories.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "himalaya",
+    "displayName": "Himalaya",
+    "summary": "CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 43021,
+      "installsAllTime": 1509,
+      "installsCurrent": 1470,
+      "stars": 67,
+      "versions": 1
+    },
+    "createdAt": 1767954271328,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767954271328,
+      "changelog": "Initial release of Himalaya CLI email client skill.\n\n- Provides terminal-based email management via IMAP/SMTP.\n- Supports listing, reading, composing, replying, forwarding, searching, and organizing emails.\n- Includes multi-account support and message composition with MML.\n- Detailed setup and configuration instructions included.\n- Enables handling attachments, output customization, and debugging via logging.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "sag",
+    "displayName": "Sag",
+    "summary": "ElevenLabs text-to-speech with mac-style say UX.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 25508,
+      "installsAllTime": 1245,
+      "installsCurrent": 1207,
+      "stars": 25,
+      "versions": 1
+    },
+    "createdAt": 1767545376535,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545376535,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "goplaces",
+    "displayName": "Goplaces",
+    "summary": "Query Google Places API (New) via the goplaces CLI for text search, place details, resolve, and reviews. Use for human-friendly place lookup or JSON output for scripts.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 21294,
+      "installsAllTime": 1234,
+      "installsCurrent": 1204,
+      "stars": 30,
+      "versions": 1
+    },
+    "createdAt": 1767545347454,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545347454,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "slack",
+    "displayName": "Slack",
+    "summary": "Use when you need to control Slack from Clawdbot via the slack tool, including reacting to messages or pinning/unpinning items in Slack channels or DMs.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 12,
+      "downloads": 44501,
+      "installsAllTime": 1406,
+      "installsCurrent": 1367,
+      "stars": 146,
+      "versions": 1
+    },
+    "createdAt": 1767545378002,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545378002,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "peekaboo",
+    "displayName": "Peekaboo",
+    "summary": "Capture and automate macOS UI with the Peekaboo CLI.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 4,
+      "downloads": 28044,
+      "installsAllTime": 1316,
+      "installsCurrent": 1279,
+      "stars": 80,
+      "versions": 1
+    },
+    "createdAt": 1767545373660,
+    "updatedAt": 1779137309055,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545373660,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": [
+        "darwin"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-image-gen",
+    "displayName": "Openai Image Gen",
+    "summary": "Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 23385,
+      "installsAllTime": 1112,
+      "installsCurrent": 1083,
+      "stars": 35,
+      "versions": 2
+    },
+    "createdAt": 1767545364210,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767652000401,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "tmux",
+    "displayName": "Tmux",
+    "summary": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 27148,
+      "installsAllTime": 1381,
+      "installsCurrent": 1335,
+      "stars": 42,
+      "versions": 1
+    },
+    "createdAt": 1767545387948,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545387948,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": [
+        "darwin",
+        "linux"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "gifgrep",
+    "displayName": "Gifgrep",
+    "summary": "Search GIF providers with CLI/TUI, download results, and extract stills/sheets.",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 17393,
+      "installsAllTime": 1198,
+      "installsCurrent": 1163,
+      "stars": 7,
+      "versions": 2
+    },
+    "createdAt": 1767488226016,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767545342229,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-whisper-api",
+    "displayName": "Openai Whisper Api",
+    "summary": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 24480,
+      "installsAllTime": 1168,
+      "installsCurrent": 1133,
+      "stars": 50,
+      "versions": 1
+    },
+    "createdAt": 1767545368103,
+    "updatedAt": 1779137313987,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545368103,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  }
+]
