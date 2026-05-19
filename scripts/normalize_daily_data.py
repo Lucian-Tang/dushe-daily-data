@@ -210,14 +210,21 @@ def normalize_file(filepath, dry_run=False, blocklist=None):
 
 def main():
     parser = argparse.ArgumentParser(description='Normalize daily data JSON files')
-    parser.add_argument('--date', help='仅处理指定日期 (YYYYMMDD)')
+    parser.add_argument('--date', default=datetime.now(timezone(timedelta(hours=8))).strftime('%Y%m%d'),
+                        help='仅处理指定日期文件 (YYYYMMDD)，默认今天')
+    parser.add_argument('--all', action='store_true',
+                        help='🔴 处理所有历史 daily 文件（危险！仅在紧急修复时使用）')
     parser.add_argument('--dry-run', action='store_true', help='预览不写入')
     parser.add_argument('--verbose', action='store_true', help='详细输出')
     args = parser.parse_args()
 
     os.chdir(DATA_DIR)
 
-    pattern = f'*_daily_{args.date}.json' if args.date else '*_daily_*.json'
+    if args.all:
+        pattern = '*_daily_*.json'
+        print("[normalize] ⚠️ --all 模式: 将处理所有历史 daily 文件")
+    else:
+        pattern = f'*_daily_{args.date}.json'
     files = sorted(glob.glob(pattern))
 
     print(f"[normalize] 扫描 {len(files)} 个 daily JSON 文件")

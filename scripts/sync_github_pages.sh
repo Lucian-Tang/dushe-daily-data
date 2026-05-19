@@ -38,9 +38,9 @@ else
     log "[daily-json] ⚠️ JSON 生成失败（检查是否有 MD 报告文件）"
 fi
 
-# ---- Step 2.6: 数据规范化（修复URL/日期格式/过滤旧数据）----
-log "[normalize] 开始数据规范化..."
-if python3 "$SCRIPT_DIR/normalize_daily_data.py" 2>&1 | tee -a "$LOG_DIR/sync-github.log"; then
+# ---- Step 2.6: 数据规范化（修复URL/日期格式/过滤旧数据，仅处理今日文件）----
+log "[normalize] 开始数据规范化（仅今日）..."
+if python3 "$SCRIPT_DIR/normalize_daily_data.py" --date "$DATE_STR" 2>&1 | tee -a "$LOG_DIR/sync-github.log"; then
     log "[normalize] ✅ 数据规范化完成"
 else
     log "[normalize] ⚠️ 规范化失败（不阻塞后续流程）"
@@ -124,6 +124,11 @@ if python3 "$SCRIPT_DIR/check-freshness.py" --warn 2>&1 | tee -a "$LOG_DIR/sync-
 else
     log "[qa] ⚠️ 数据新鲜度检查未通过（不阻塞）"
 fi
+
+# ---- Step 4.5: L2 不可变快照（sha256 校验和）----
+log "[checksum] 生成 L2 快照校验和..."
+bash "$SCRIPT_DIR/verify-l2-immutable.sh" 2>&1 | tee -a "$LOG_DIR/sync-github.log"
+log "[checksum] ✅ L2 快照已追加"
 
 # ---- Step 5: Git commit & push to staging ----
 log "[git] commit & push to staging..."
