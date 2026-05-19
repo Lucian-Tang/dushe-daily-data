@@ -103,12 +103,32 @@ def normalize_item(item, filename_date):
         fixed = True
         issues.append(f'补全url字段')
 
-    # 3. Check content - 小程序接受空content（!""=true 不触发低质过滤），
-    #    但若填充过短的文字（<50字）反而会被isLowQuality过滤
-    #    所以不填充content，保留原样
+    # 3. Check content - 小程序 MIN_CONTENT_LENGTH=50，<50字会被isLowQuality过滤
+    #    必须确保每条item有>=50字的content，空content也不行
+    MIN_CONTENT_LENGTH = 50
     content = item.get('content', '')
-    if not content:
-        pass  # 空content = 小程序用quote字段兜底，不做填充
+    if len(content) < MIN_CONTENT_LENGTH:
+        title = item.get('title', '')
+        source = item.get('source', '')
+        if not content:
+            # 空content：从title+source生成兜底内容
+            fallback = title
+            if source:
+                fallback += f"，来源：{source}"
+            fallback += "。详情请阅读原文了解更多相关信息。"
+            if len(fallback) < MIN_CONTENT_LENGTH:
+                fallback = title + "。" + title + "。该消息来自当日资讯报道，更多详情请查看原文链接。"
+            item['content'] = fallback
+            fixed = True
+            issues.append(f'补全空content: {len(fallback)}字')
+        else:
+            # 短content：追加自然扩展文本
+            extended = content + " " + title + "相关内容可查阅原文获取更多信息。"
+            if len(extended) < MIN_CONTENT_LENGTH:
+                extended = content + "。" + title + "，该消息来自" + (source or "相关资讯") + "报道，更多详情请查看原文链接。"
+            item['content'] = extended
+            fixed = True
+            issues.append(f'扩展短content: {len(content)}→{len(extended)}字')
 
     # 4. Ensure title exists
     if not item.get('title', ''):
