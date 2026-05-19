@@ -1,299 +1,130 @@
 [
   {
-    "title": "Haiku OS runs on M1 Macs now",
-    "content": "开源操作系统 Haiku 宣布其 ARM64 移植取得重大进展，现已支持在苹果 M1/M2 系列芯片上原生运行。开发者在社区论坛展示了系统在 M1 Mac 上的启动截图与桌面环境，目前仍在早期测试阶段，部分硬件驱动尚未完善。这意味着 Haiku 正在突破 x86 生态的限制，向现代 ARM 平台拓展。",
-    "quote": "一个非主流系统在 Mac 上跑起来了，精神可嘉但谁会日常用？",
-    "source": "HN Front Page",
-    "url": "https://discuss.haiku-os.org/t/my-haiku-arm64-progress/19044?page=2",
-    "published": "2026-05-19",
-    "uid": "dev_af540c2c"
+    "title": "CloakBrowser — 通过所有Bot检测的隐身Chromium",
+    "content": "Stealth Chromium内核，能通过所有主流反爬机制，号称30/30检测全通过。可直接替代Playwright，附带源码级指纹patch。内置隐身浏览器方案，对抗Cloudflare、Distil等常见反爬。对需要大规模数据采集的开发者来说是核弹级工具。",
+    "quote": "反爬克星，但你确定自己用的是浏览器不是坦克？",
+    "source": "GitHub Trending",
+    "url": "https://github.com/CloakHQ/CloakBrowser",
+    "published": "2026-05-19"
   },
   {
-    "title": "At least 100 deaths reported in Ebola outbreak in DR Congo",
-    "content": "刚果民主共和国爆发新一轮埃博拉疫情，据 BBC 报道已导致至少 100 人死亡。卫生部门正在紧急部署疫苗和治疗资源，但由于当地基础设施薄弱和武装冲突影响，防控工作面临严峻挑战。WHO 已将此次疫情列为区域性公共卫生紧急事件。",
-    "quote": "科技圈还在吵AI伦理，这边埃博拉已经带走100条人命了，注意力的确很稀缺。",
-    "source": "HN Front Page",
-    "url": "https://www.bbc.com/news/articles/cq6pz60p996o",
-    "published": "2026-05-19",
-    "uid": "dev_d931f18e"
+    "title": "agentmemory — AI编程代理持久化记忆方案",
+    "content": "为Claude Code等AI编程代理设计的持久化记忆系统，基于真实评测基准开发。支持长期上下文管理，解决大模型在长项目中断续后丢失记忆的老大难问题。已在多个开源项目中集成使用。",
+    "quote": "记性不好的AI，就像金鱼缸里的鱼——7秒后一切归零。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/rohitg00/agentmemory",
+    "published": "2026-05-19"
   },
   {
-    "title": "Cutting inference cold starts by 40x with LP, FUSE, C/R, and CUDA-checkpoint",
-    "content": "Modal 团队发布技术博客，介绍如何通过 Linux 内核 LP（逻辑分区）、FUSE 文件系统、C/R（检查点/恢复）以及 CUDA checkpoint 四大技术组合，将 GPU 推理冷启动时间缩短至原来的 1/40。该方案专为 serverless GPU 场景设计，使模型实例能在亚秒级恢复，大幅降低按需推理的等待延迟。",
-    "quote": "40倍加速听起来很美，但K8s运维看了直呼我们不如直接买更多显卡。",
-    "source": "HN Front Page",
-    "url": "https://modal.com/blog/truly-serverless-gpus",
-    "published": "2026-05-19",
-    "uid": "dev_ce7d331d"
+    "title": "rtk — CLI代理60-90% token消耗削减",
+    "content": "用Rust编写的CLI代理工具，声称能在常见开发命令上减少60-90%的LLM token消耗。单二进制文件，零依赖。对于每天跑大量AI辅助开发命令的程序员来说，这是显卡电费的救星。",
+    "quote": "省token省到就是赚到，不愧是Rust写的，效率刻进DNA里了。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/rtk-ai/rtk",
+    "published": "2026-05-19"
   },
   {
-    "title": "Iran will impose fees on subsea internet cables in Strait of Hormuz",
-    "content": "伊朗宣布将对通过霍尔木兹海峡的海底互联网光缆征收通行费。霍尔木兹海峡是全球最重要的能源通道之一，同时承载着连接中东、欧洲和亚洲的大量海底通信基础设施。分析人士担忧此举可能推高国际互联网带宽成本，并引发地缘政治层面的连锁反应。",
-    "quote": "伊朗找到了新收费站：海底光缆。全球网民准备好为你的国际流量多付一笔过路费了吗？",
-    "source": "HN Front Page",
-    "url": "https://www.cnn.com/2026/05/17/middleeast/iran-hormuz-undersea-cables-intl",
-    "published": "2026-05-19",
-    "uid": "dev_85e84d68"
+    "title": "codegraph — 预索引代码知识图谱",
+    "content": "为Claude Code、Codex、Cursor、OpenCode等编程工具提供预索引代码知识图谱，减少token消耗和工具调用次数。完全本地化运行，支持多种主流编程语言。代码库越大，效果越明显。",
+    "quote": "代码知识图谱，想象一下给你的AI助理装个学霸大脑。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/colbymchenry/codegraph",
+    "published": "2026-05-19"
   },
   {
-    "title": "Elon Musk has lost his lawsuit against Sam Altman and OpenAI",
-    "content": "据 TechCrunch 报道，马斯克诉 OpenAI 及其 CEO Sam Altman 的案件已被法院驳回。马斯克曾指控 OpenAI 背离非营利使命转向商业化，要求归还其早期捐赠资金。法院认为原告未能提供足够证据证明 OpenAI 违反合同或信托义务。此判决对 OpenAI 转向营利性架构扫清了重大法律障碍。",
-    "quote": "马斯克告 OpenAI 又输了，法庭表示「你当年不是创始人吗怎么还告自己」。",
-    "source": "HN Front Page",
-    "url": "https://techcrunch.com/2026/05/18/elon-musk-has-lost-his-lawsuit-against-sam-altman-and-openai/",
-    "published": "2026-05-19",
-    "uid": "dev_714297bb"
+    "title": "academic-research-skills — Claude Code学术研究技能包",
+    "content": "为Claude Code量身打造的学术研究工作流，覆盖从研究到写作、审稿、修订、定稿全流程。支持文献综述、研究框架设计、学术写作规范检查等功能。适合需要长期进行学术写作的研究者。",
+    "quote": "研究→写→审→改→定稿，五步搞定导师催命。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/Imbad0202/academic-research-skills",
+    "published": "2026-05-19"
   },
   {
-    "title": "Iran starts Bitcoin-backed ship insurance for Hormuz strait",
-    "content": "据彭博社报道，伊朗推出以比特币作为担保的霍尔木兹海峡船舶保险业务。这一创新金融方案旨在绕过国际制裁框架，利用加密货币的去中心化特性为过往船只提供风险承保。此举被视为伊朗在金融制裁环境下的一次大胆尝试，也是加密货币在真实贸易保险中的首次规模化应用。",
-    "quote": "用比特币给船买保险，制裁规避界的想象力已经远超硅谷了。",
-    "source": "HN Front Page",
-    "url": "https://www.bloomberg.com/news/articles/2026-05-18/iran-starts-bitcoin-backed-shipping-insurance-for-hormuz-strait",
-    "published": "2026-05-19",
-    "uid": "dev_ebe59be5"
+    "title": "Gog — Google Workspace全栈CLI工具",
+    "content": "命令行搞定Gmail、日历、Drive、联系人、Sheets、Docs所有Google Workspace服务。无需图形界面，脚本化调用企业级办公能力。开发者集成工作流、自动报告生成、定时任务触发的好帮手。",
+    "quote": "把Google Workspace装进Terminal，效率提升的同时血压也降了。",
+    "source": "ClawHub Trending",
+    "url": "https://clawhub.com/skills/gog",
+    "published": "2026-05-19"
   },
   {
-    "title": "Cursor Introduces Composer 2.5",
-    "content": "AI 编程工具 Cursor 发布 Composer 2.5 版本，引入了多文件并行编辑、智能上下文理解增强以及更精准的代码补全能力。新版本特别优化了大型项目的导航效率，支持跨文件重构操作。用户反馈显示其在复杂代码库中的表现相比上一代有明显提升。",
-    "quote": "Cursor 又更新了，AI 写代码越来越快，我们离「只写 Prompt」的时代又近了一步（慌不慌？）",
-    "source": "HN Front Page",
-    "url": "https://twitter.com/cursor_ai/status/2056415413077233983",
-    "published": "2026-05-19",
-    "uid": "dev_e01aeea2"
+    "title": "skill-creator — 打造高效AI技能的指南",
+    "content": "ClawHub上教你如何构建模块化AI技能的完整指南。涵盖技能设计原则、SKILL.md结构规范、渐进式披露设计、资源打包方法等。帮开发者把专属知识封装成可复用的AI能力扩展。",
+    "quote": "授人以鱼不如授人以渔——前提是你得先学会造渔具。",
+    "source": "ClawHub Trending",
+    "url": "https://clawhub.com/skills/skill-creator",
+    "published": "2026-05-19"
   },
   {
-    "title": "Anthropic acquires Stainless",
-    "content": "Anthropic 宣布收购 API SDK 工具公司 Stainless。Stainless 专注于从 OpenAPI 规范自动生成高质量多语言 SDK，其客户包括多家头部 AI 公司。此次收购意味 Anthropic 将整合 Stainless 的技术来改善其 API 开发者体验，加速 Claude 生态工具的构建和维护效率。",
-    "quote": "Anthropic 斥资收购 SDK 工具公司，别人做 AI 模型，他们先做开发者体验，这格局确实不一样。",
-    "source": "HN Front Page",
-    "url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
-    "published": "2026-05-19",
-    "uid": "dev_8cd1de70"
+    "title": "agentic-skills framework — superpowers来了",
+    "content": "名为'superpowers'的AI Agent技能框架，同时也是一种软件开发方法论。声称能让AI编程代理真正形成战斗力，而不是只会跑Demo。项目设计思路偏向工程化实践。",
+    "quote": "superpowers，听起来像复仇者联盟，实际上可能只是个入门教程。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/obra/superpowers",
+    "published": "2026-05-19"
   },
   {
-    "title": "Qwen 3.7 Preview",
-    "content": "阿里巴巴通义千问团队发布 Qwen 3.7 预览版，据官方推特透露，新模型在推理能力、代码生成和多语言理解方面有显著提升。Qwen 系列是当前最活跃的开源大模型之一，新版本预计将支持 128K 上下文窗口并优化 MoE 架构效率，继续对标 GPT-4o 和 Claude 系列。",
-    "quote": "阿里通义又发新版本，开源大模型卷成洗衣机了，但普通开发者根本追不上版本号。",
-    "source": "HN Front Page",
-    "url": "https://twitter.com/Alibaba_Qwen/status/2056403591464984753",
-    "published": "2026-05-19",
-    "uid": "dev_875a2169"
+    "title": "Andrej Karpathy 宣布加入 Anthropic",
+    "content": "深度学习先驱、Coursera 吴恩达高徒、OpenAI 前研究科学家 Karpathy 在推特宣布加入 Anthropic。他此前创立了 AI 教育平台 Eureka Labs，此番转向 Anthropic 引发社区对 Claude 与 GPT 之战的新一轮猜测。Karpathy 擅长用简洁代码解释复杂概念，他的加入或为 Claude 模型的可解释性带来新突破。",
+    "quote": "AI 圈地震级转会，Karpathy 去了 Anthropic，OpenAI 留不住了？",
+    "source": "Hacker News",
+    "url": "https://news.ycombinator.com/item?id=48194352",
+    "published": "2026-05-19"
   },
   {
-    "title": "Show HN: InsForge – Open-source Heroku for coding agents",
-    "content": "YC P26 孵化的开源项目 InsForge 在 HN 亮相，定位为「AI 编程代理的 Heroku」。该项目为 AI 编码助手提供端到端的后端部署平台，支持自动化运维、日志监控和调试链路。创始团队表示 InsForge 解决了 AI agent 在自托管部署中面临的环境一致性和可观测性痛点。",
-    "quote": "给 AI 做了个 Heroku，以后 AI 自己写代码自己部署，人类负责在旁边喝咖啡点赞。",
-    "source": "HN Front Page",
-    "url": "https://github.com/InsForge/InsForge",
-    "published": "2026-05-19",
-    "uid": "dev_a864e56a"
+    "title": "CISA 管理员 GitHub 泄露 AWS GovCloud 密钥",
+    "content": "美国网络安全与基础设施安全局（CISA）某管理员将 AWS GovCloud 访问密钥公开在 GitHub 上，已被恶意行为者扫描并利用。GovCloud 专供联邦机构存储敏感数据，此次泄露意味着潜在的联邦系统入侵。KrebsOnSecurity 披露详细时间线，密钥公开时长超过数小时。",
+    "quote": "CISA 自己先被攻破了，政府机构的密钥管理该谁来审计？",
+    "source": "Hacker News",
+    "url": "https://news.ycombinator.com/item?id=48190454",
+    "published": "2026-05-19"
   },
   {
-    "title": "We stopped AI bot spam in our GitHub repo using Git's –author flag",
-    "content": "Archestra.ai 团队分享了如何利用 Git 的 --author 标志来拦截 AI 机器人提交的低质量 PR 和 spam。通过要求提交者使用真实身份且验证 author 信息，该团队成功将 AI 垃圾提交减少了 90% 以上。文章呼吁开源社区采用更严格的提交验证机制来对抗 AI 生成的噪音。",
-    "quote": "用 Git 的 author 字段就能拦住 AI spam，防御方案比 AI 本身简单一百倍，讽刺不讽刺？",
-    "source": "HN Front Page",
-    "url": "https://archestra.ai/blog/only-responsible-ai",
-    "published": "2026-05-19",
-    "uid": "dev_a9b8878a"
+    "title": "314 个 npm 包再次被供应链攻击植入恶意代码",
+    "content": "安全团队 Safedep.io 披露新一轮 npm 供应链攻击活动「Mini Shai-Hulud」，314 个包被注入后门。主要影响使用这些包的下游项目，攻击者通过抢注拼写相似包名（typosquatting）批量植入代码。npm 安全生态再度拉响警报。",
+    "quote": "npm 供应链每个月都在被锤，防守方永远追不上攻击者的创意。",
+    "source": "Hacker News",
+    "url": "https://news.ycombinator.com/item?id=48189368",
+    "published": "2026-05-19"
   },
   {
-    "title": "Garry Tan, the CEO of YC, accused me of unethical reporting",
-    "content": "独立记者 Radley Balko 在 Substack 发文称自己被 YC CEO Garry Tan 指控「不道德报道」。双方争议焦点涉及对 YC 投资项目的报道方式。Balko 在文章中详细呈现了双方邮件往来，声称自己的报道基于事实且遵守新闻伦理，YC 的指控是对独立调查报道的打压。",
-    "quote": "YC CEO vs 独立记者，硅谷权力和新闻自由的传统交锋，建议围观不吃瓜。",
-    "source": "HN Front Page",
-    "url": "https://radleybalko.substack.com/p/truth-power-and-honest-journalism",
-    "published": "2026-05-19",
-    "uid": "dev_3e2ef1ec"
+    "title": "OpenBSD 7.9 正式发布",
+    "content": "OpenBSD 项目发布 7.9 版本，这是全球最强调安全默认配置的 BSD 发行版。新版改进 pledge、unveil 等安全沙箱机制，强化了 clang 16 工具链，并加入了对 Intel Gen12+ 显卡的更好支持。OpenBSD 以拒绝多余代码的偏执著称，每次发布都是安全研究者的必读更新说明。",
+    "quote": "别的 OS 在加功能，OpenBSD 在删代码——这才是真正的断舍离。",
+    "source": "Hacker News",
+    "url": "https://news.ycombinator.com/item?id=48192882",
+    "published": "2026-05-19"
   },
   {
-    "title": "1024000^2 Blocks, 2B2T Minecraft Server World Download Project, and Discoveries",
-    "content": "知名无政府 Minecraft 服务器 2B2T 的社区发布了超过 102 万平方区块的世界存档下载项目。项目团队经过大量数据解析发现在这庞大的游戏世界中隐藏着大量罕见地形结构、早期玩家的遗迹以及独特的 bug 生成结构。本次发布让普通玩家也有机会探索这个传说中的混乱世界。",
-    "quote": "Minecraft 老玩家用 102 万区块存档证明：一个没人管的服务器，反而成了最有趣的数字考古现场。",
-    "source": "HN Front Page",
-    "url": "https://github.com/2b2tplace/1m_release",
-    "published": "2026-05-19",
-    "uid": "dev_fb0fd2cc"
+    "title": "Peter Neumann 去世：计算机安全领域的活化石",
+    "content": "计算机科学家 Peter Neumann（1935–2026）去世，他是《计算机安全、评估与控制》教科书的作者，RISOS 研究报告合著者，奠定了计算机安全领域基础理论。Neumann 长期倡导安全设计优先理念，其对缓冲区溢出、并发等问题的预警在三四十年后仍被证实。他的离世标志着一个时代的终结。",
+    "quote": "一个真正预见了所有问题的先知，现在可以去另一个世界继续写 advisory 了。",
+    "source": "Hacker News",
+    "url": "https://news.ycombinator.com/item?id=48188787",
+    "published": "2026-05-19"
   },
   {
-    "title": "Actually, democracy dies in H.R.",
-    "content": "纽约时报发表长篇评论文章，深度分析美国国会人力资源（H.R.）系统中存在的民主程序倒退现象。文章指出委员会决策权力的极度集中、立法流程的暗箱操作以及议员人事制度的问题正在侵蚀代议制民主的基础肌理。文章引发了学界和政界的广泛讨论。",
-    "quote": "纽约时报用一篇 HR 系统分析告诉你：民主不是死于独裁者，是死于官僚系统的 Excel 表格里。",
-    "source": "HN Front Page",
-    "url": "https://www.nytimes.com/2026/05/18/world/americas/actually-democracy-dies-in-hr.html",
-    "published": "2026-05-19",
-    "uid": "dev_5d0808e6"
+    "title": "Cursor 推出 Composer 2.5：AI 编程工具再升级",
+    "content": "Cursor 博客发布 Composer 2.5，引入了更强大的多文件编辑能力与上下文窗口扩展。新版强化了对大型代码库的全局修改能力，支持跨文件重命名与重构，并改进了 AI 建议的推理过程。Composer 正在将 AI 代码助手从补全工具进化为真正的编程搭档。",
+    "quote": "copilot 还在卖订阅，Cursor 已经把未来写出来了，差距怎么越来越大。",
+    "source": "Hacker News",
+    "url": "https://news.ycombinator.com/item?id=48182516",
+    "published": "2026-05-19"
   },
   {
-    "title": "Project Glasswing: what Mythos showed us",
-    "content": "Cloudflare 发布「Glasswing 计划」技术报告，详细披露了一个代号 Mythos 的大规模网络攻击事件。该攻击利用了多家云服务商的基础设施漏洞，Cloudflare 团队通过自研的前沿威胁模型成功检测并阻断了攻击链。报告展示了 AI 驱动的网络安全防御在实际大规模攻防中的有效性。",
-    "quote": "Cloudflare 又发现了一波高级攻击，网络安全圈持续上演猫鼠游戏，这次猫赢了（暂时）。",
-    "source": "HN Front Page",
-    "url": "https://blog.cloudflare.com/cyber-frontier-models/",
-    "published": "2026-05-19",
-    "uid": "dev_96f7b55c"
+    "title": "Photo GIMP 3 补丁：让 GIMP 界面接近 Photoshop",
+    "content": "开发者 Diolinux 发布 Photo GIMP 补丁，为 GIMP 3 打造类似 Photoshop 的 UI 体验，包含深色主题、自定义图标、工具栏重排等改造。目标用户是从 Adobe 迁出的设计师。GIMP 一直以来以功能强大但界面反人类著称，此补丁降低迁移门槛。",
+    "quote": "GIMP 的功能没问题，有问题的是 GIMP 的 UX——一个补丁就能修的事。",
+    "source": "Hacker News",
+    "url": "https://news.ycombinator.com/item?id=48167890",
+    "published": "2026-05-19"
   },
   {
-    "title": "Show HN: Files.md – Open-source alternative to Obsidian",
-    "content": "开源项目 Files.md 在 HN 获得极高热度（363 分），定位为 Obsidian 的开源替代品。项目以纯 Markdown 文件为基础，支持本地优先、双向链接和知识图谱可视化，不依赖任何专有格式。核心卖点是极简设计和完全的本地化数据所有权，不受限于 Obsidian 的闭源组件和同步服务。",
-    "quote": "Obsidian 刚火没两年就有人开始 fork 精神续作了，开源社区的速度，比 Obsidian 的插件 market 还快。",
-    "source": "HN Front Page",
-    "url": "https://github.com/zakirullin/files.md",
-    "published": "2026-05-19",
-    "uid": "dev_28c28176"
-  },
-  {
-    "title": "'We mould trees to grow into the shape of chairs'",
-    "content": "BBC 报道了一家英国公司利用「树木塑形」技术直接让活树长成椅子的形状。这项工艺需要多年时间培育树苗，通过定制模具引导枝条生长方向，最终在不砍伐树木的情况下「收获」家具。公司表示这是对快消家具产业的一次彻底反思，每件作品都是独一无二的活设计。",
-    "quote": "用十年种一把椅子，IKEA 看了沉默，环保主义者看了流泪，消费者看了钱包发抖。",
-    "source": "HN Front Page",
-    "url": "https://www.bbc.co.uk/news/articles/cvg0yy3gp71o",
-    "published": "2026-05-19",
-    "uid": "dev_70a2e023"
-  },
-  {
-    "title": "Enough with the AI FOMO, go slow-mo, says Domo CDO",
-    "content": "数据平台 Domo 的首席数据官在接受 The Register 采访时直言企业应停止 AI 恐慌性跟风。他指出许多公司在尚未梳理好内部数据基础设施的情况下就仓促引入 AI，导致投入巨大却收效甚微。他建议企业应「慢下来」先打好数据基座，再有的放矢地应用 AI 技术。",
-    "quote": "终于有人说大实话了：你连 Excel 都没搞明白，就想着上 ChatGPT Enterprise？先把数据治理做好吧。",
-    "source": "HN Front Page",
-    "url": "https://www.theregister.com/ai-ml/2026/05/17/enough-with-the-ai-fomo-go-slow-mo-says-domo-cdo/5240840",
-    "published": "2026-05-19",
-    "uid": "dev_078ded62"
-  },
-  {
-    "title": "Linux security mailing list 'almost unmanageable'",
-    "content": "Linus Torvalds 在公开评论中表示，AI 驱动的自动化漏洞扫描工具已经让 Linux 安全邮件列表「几乎无法管理」。大量 AI 生成的 bug 报告涌入，其中相当比例是误报或低质量报告，严重干扰了核心维护者的正常工作。Torvalds 呼吁社区改进自动化工具的质量门槛。",
-    "quote": "AI bug hunter 把 Linux 维护者逼疯了，Linus 沉默三年后再次开喷，对象从人类变成了 AI。",
-    "source": "HN Front Page",
-    "url": "https://www.theregister.com/security/2026/05/18/linus-torvalds-says-ai-powered-bug-hunters-have-made-linux-security-mailing-list-almost-entirely-unmanageable/5241633",
-    "published": "2026-05-19",
-    "uid": "dev_699e2f4a"
-  },
-  {
-    "title": "Learn Harness Engineering",
-    "content": "一个名为「学习 Harness 工程」的开源教程项目上线，系统性地教授如何使用 Harness 平台进行 CI/CD 流水线管理、云成本优化和持续交付实践。教程涵盖从基础配置到高级自动化策略的全流程，配有可交互实验环境，适合 DevOps 工程师和平台工程团队。",
-    "quote": "CI/CD 教程又多了一个，学完 Jenkins、GitLab CI、GitHub Actions 再学 Harness，DevOps 工程师的路线图像迷宫。",
-    "source": "HN Front Page",
-    "url": "https://walkinglabs.github.io/learn-harness-engineering/en/",
-    "published": "2026-05-19",
-    "uid": "dev_899eb24f"
-  },
-  {
-    "title": "deepseek 网页和 app 输入<think>能看到别的用户的历史对话",
-    "content": "V2EX 用户发现 DeepSeek 的网页端和 App 存在严重安全漏洞：用户通过输入特定的 <think> 标签可以查看到其他用户的历史对话记录。截至发帖时该漏洞尚未修复，这意味着部分用户对话可能持续暴露。社区紧急呼吁 DeepSeek 团队尽快修补这一隐私泄露问题。",
-    "quote": "输入个标签就能看别人聊天记录，DeepSeek 这波操作直接给「开源」赋予了「开房」的新含义。",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1213000#reply1",
-    "published": "2026-05-19",
-    "uid": "dev_18be3662"
-  },
-  {
-    "title": "大家对于 Anthropic 估值的看法",
-    "content": "V2EX 用户热议 Anthropic 估值三个月内从 3800 亿美元飙升至 9000 亿美元的惊人涨幅。讨论焦点在于：仅靠向程序员销售 AI 工具能否支撑如此高的估值？多数用户对 AI 公司的估值逻辑持怀疑态度，认为当前估值更多来自资本市场的叙事驱动而非实际营收。",
-    "quote": "三个月翻 2.5 倍的估值，Anthropic 的投资人是不是跟马斯克一起抽了什么好东西？",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1212285#reply12",
-    "published": "2026-05-19",
-    "uid": "dev_b433e1b9"
-  },
-  {
-    "title": "美伊还不如继续打呢，一停战 AI 科技股又支棱起来了，美光、闪迪又要涨价了，普通人啥好处也没捞到除了失业",
-    "content": "V2EX 用户以戏谑口吻评论美伊停战后的市场连锁反应：AI 科技股应声上涨，芯片厂商美光、闪迪传出涨价消息。发帖者感叹普通人在这场 AI 浪潮中不仅没享受到红利，反而面临失业风险和硬件涨价的双重打击，讽刺了科技繁荣与普通人生活割裂的现状。",
-    "quote": "停战→AI 涨→芯片涨→普通人买不起电脑还失业，这逻辑链比微积分还简单粗暴。",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1204350#reply2",
-    "published": "2026-05-19",
-    "uid": "dev_c2e21de5"
-  },
-  {
-    "title": "号池(CC Max)",
-    "content": "V2EX 创作者版块出现一个自建账号池服务「号池 CC Max」的推广帖，宣称提供一手自建账号资源、7×24 小时专业维护、当前成本价 0.7 元。帖主通过微信联系交易。此类灰色账号交易服务在 V2EX 时有出现，存在违反平台服务条款和账号来源不明等安全风险。",
-    "quote": "0.7 元一条的账号池，比菜市场的葱都便宜，买之前先想想这些号从哪来的。",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1198034#reply0",
-    "published": "2026-05-19",
-    "uid": "dev_855b0f56"
-  },
-  {
-    "title": "铺天盖地的 OpenClaw，到底能做什么？（不吹不黑）",
-    "content": "V2EX 用户发帖询问 OpenClaw 的实际能力，表示被大量推广内容刷屏但不确定其真实价值。社区回复褒贬不一：有人称赞其 Agent 框架的灵活性和技能生态，也有人指出学习曲线陡峭、文档不够完善。整体来看 OpenClaw 在技术圈确实形成了相当的话题热度。",
-    "quote": "一半人觉得是神器，一半人觉得是高级玩具，这种产品最有趣——说明已经跨过了纯 hype 阶段。",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1196877#reply0",
-    "published": "2026-05-19",
-    "uid": "dev_c21613a6"
-  },
-  {
-    "title": "Github",
-    "source": "ClawHub",
-    "content": "Github 技能让 OpenClaw Agent 可以直接通过 gh CLI 与 GitHub 交互，支持 issue 管理（创建/查询/关闭）、Pull Request 操作（查看/合并/评审）、CI 运行状态查询以及 GitHub API 的高级调用。适合需要 Agent 自动化 GitHub 工作流的开发者和团队，已累计近 18 万次下载。",
-    "quote": "让 AI 帮你管理 GitHub，从此摸鱼又多了一个完美理由：Agent 在 merge，勿扰。",
-    "url": "https://clawhub.ai/skills/github",
-    "published": "2026-05-19",
-    "uid": "dev_d4b31e78"
-  },
-  {
-    "title": "Gog",
-    "source": "ClawHub",
-    "content": "Gog 是一个 Google Workspace 命令行工具集，支持 Gmail 邮件收发管理、Google Calendar 日程操作、Google Drive 文件管理、Contacts 联系人查询以及 Sheets 和 Docs 的读写操作。安装后 Agent 可自动化处理邮件、安排会议、整理云端文件，已累计超 17 万次下载和 894 个 Star。",
-    "quote": "工具链又胖了一圈，项目依赖+1，但 Google 全家桶一键操作确实香。",
-    "url": "https://clawhub.ai/skills/gog",
-    "published": "2026-05-19",
-    "uid": "dev_8a4c6825"
-  },
-  {
-    "title": "Weather",
-    "source": "ClawHub",
-    "content": "Weather 技能为 OpenClaw Agent 提供实时天气查询和天气预报能力，无需任何 API Key 即可使用。支持按城市名称获取当前温度、湿度、风速、天气状况以及未来数天的预报信息。完全免费且开箱即用，适合需要集成天气信息的自动化场景，已累计 15 万次下载。",
-    "quote": "看起来花里胡哨，核心代码就调了个免费天气 API——但确实比打开手机看天气快一秒。",
-    "url": "https://clawhub.ai/skills/weather",
-    "published": "2026-05-19",
-    "uid": "dev_355e8214"
-  },
-  {
-    "title": "Nano Pdf",
-    "source": "ClawHub",
-    "content": "Nano Pdf 技能允许用户通过自然语言指令编辑和操作 PDF 文件。支持文本提取、页面合并拆分、水印添加、PDF 转图片等常见操作，底层调用 nano-pdf CLI 工具。无需掌握复杂命令行参数，直接描述需求即可让 Agent 完成 PDF 处理任务，已累计超 10 万次下载和 249 个 Star。",
-    "quote": "用自然语言改 PDF，听起来像魔法，实际上就是多了个「帮我转成Word」的中间人。",
-    "url": "https://clawhub.ai/skills/nano-pdf",
-    "published": "2026-05-19",
-    "uid": "dev_45144083"
-  },
-  {
-    "title": "Nano Banana Pro",
-    "source": "ClawHub",
-    "content": "Nano Banana Pro 是基于 Google Gemini 3 Pro Image 模型的图片生成和编辑技能，支持文生图、图生图、局部修改和风格迁移。可处理图片创建、修改、拼接等请求，适用于需要 Agent 自动配图或设计辅助的内容创作场景。已累计近 10 万次下载和 386 个 Star。",
-    "quote": "装完发现原来自己也能手写 Prompt——不过把 AI 存进 Agent 里调用确实比自己开网页快。",
-    "url": "https://clawhub.ai/skills/nano-banana-pro",
-    "published": "2026-05-19",
-    "uid": "dev_1336e163"
-  },
-  {
-    "title": "Obsidian",
-    "source": "ClawHub",
-    "content": "Obsidian 技能让 OpenClaw Agent 可以直接操作 Obsidian 知识库（纯 Markdown 笔记系统），通过 obsidian-cli 实现笔记的创建、检索、链接管理和批量处理。适合用 Obsidian 搭建第二大脑的深度用户，Agent 可辅助整理知识图谱、自动建立双向链接，已累计近 10 万次下载和 395 个 Star。",
-    "quote": "技能市场的长尾产物，有用就算赚了——毕竟 Obsidian 用户的笔记里埋着多少个待整理文件夹你心里没数？",
-    "url": "https://clawhub.ai/skills/obsidian",
-    "published": "2026-05-19",
-    "uid": "dev_247c4eac"
-  },
-  {
-    "title": "Notion",
-    "source": "ClawHub",
-    "content": "Notion 技能基于 Notion API 为 OpenClaw Agent 提供完整的工作空间操作能力，支持页面创建编辑、数据库 CRUD、Block 级别操作和内容搜索。可将 Agent 接入已有的 Notion 知识管理体系，实现自动化文档整理、任务同步等工作流，已累计超 8.7 万次下载和 253 个 Star。",
-    "quote": "社区贡献喜+1，但 Notion API 的速度你懂的——Agent 等请求的时间够你手动点好几页了。",
-    "url": "https://clawhub.ai/skills/notion",
-    "published": "2026-05-19",
-    "uid": "dev_6252b1f7"
-  },
-  {
-    "title": "Skill Creator",
-    "source": "ClawHub",
-    "content": "Skill Creator 是帮助用户为 OpenClaw 创建和更新技能包的工具技能。它提供技能开发的完整指南，包括目录结构规范、SKILL.md 编写标准、前置知识要求以及发布流程。适合想要扩展 OpenClaw 能力边界的开发者，可将自己的工具和工作流封装为可复用的技能。",
-    "quote": "卷王的新玩具，普通人观望就好——但万一你哪天想自己造轮子，这东西就是你的第一把扳手。",
-    "url": "https://clawhub.ai/skills/skill-creator",
-    "published": "2026-05-19",
-    "uid": "dev_0735b6e4"
+    "title": "Gentoo 安全公告：Copy Fail 与 Fragnesia 内核漏洞",
+    "content": "Gentoo Linux 官方发布安全公告，披露三个高危漏洞：Copy Fail（影响内核权限提升）、Dirty Frag（文件系统缺陷）、Fragnesia（内核本地提权）。均需本地访问权限但危险度高，已提供补丁。Gentoo 作为源码发行版此次漏洞修复速度考验管理员的编译与部署流程。",
+    "quote": "Linux 内核漏洞月更，Gentoo 用户：没事，我已经习惯了每次重编内核。",
+    "source": "Hacker News",
+    "url": "https://news.ycombinator.com/item?id=48194614",
+    "published": "2026-05-19"
   }
 ]

@@ -1,137 +1,114 @@
 [
   {
-    "title": "Anthropic 收购 API 设计公司 Stainless",
-    "content": "Anthropic 宣布收购专注于 API 设计的公司 Stainless，后者以提供高质量 API 文档和开发者工具著称。收购完成后，Stainless 团队将并入 Anthropic，帮助提升 Claude API 的开发者体验和文档质量。这是 Anthropic 继此前多轮融资后的首笔收购案，标志着这家估值已达 600 亿美元的 AI 独角兽开始通过并购补齐生态短板，向 OpenAI 的开发者平台地位发起正面冲击。",
-    "quote": "有钱果然任性，买团队比养团队便宜多了。",
-    "source": "Anthropic",
-    "url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
-    "published": "2026-05-19",
-    "uid": "ai_a1b2c3d4"
+    "title": "General Preference Reinforcement Learning (GPRL)",
+    "content": "来自Llama-3-8B-Instruct的POST-TRAINING研究，提出通用偏好模型（GPM）将响应嵌入k维反对称子空间，以结构化比较替代标量奖励。GPRL计算每维度群体相对优势并用上下文相关特征值聚合，在AlpacaEval 2.0达到长度控制胜率56.51%，同时在Arena-Hard、MT-Bench、WildBench上超越SimPO和SPPO，有效防止reward hacking。NeurIPS 2026投稿。",
+    "quote": "多维偏好建模终于有人做了，标量reward才是RL的万恶之源。",
+    "source": "arXiv cs.LG",
+    "url": "https://arxiv.org/abs/2605.18721",
+    "published": "2026-05-19"
   },
   {
-    "title": "Cerebras 上市首日股价翻倍，融资 55.5 亿美元",
-    "content": "AI 芯片公司 Cerebras 以每股 185 美元定价上市，首日股价近乎翻倍，市值突破 1000 亿美元，成为 2019 年 Uber 以来最大规模美国科技 IPO。Cerebras 以生产超大内存 AI 芯片著称，此次 IPO 获得机构投资者超额认购，显示资本市场对 AI 基础设施层的持续热情。芯片禁令背景下，Cerebras 被视为英伟达之外少数具备替代潜力的玩家。",
-    "quote": "散户跑步进场接盘，机构先跑了——经典剧本。",
-    "source": "VentureBeat",
-    "url": "https://venturebeat.com/technology/cerebras-stock-nearly-doubles-on-day-one-as-ai-chipmaker-hits-100-billion-what-it-means-for-ai-infrastructure",
-    "published": "2026-05-19",
-    "uid": "ai_e5f6g7h8"
+    "title": "DashAttention: Differentiable and Adaptive Sparse Hierarchical Attention",
+    "content": "提出DashAttention，用α-entmax变换实现可微分自适应稀疏层级注意力，解决了top-k选择梯度断流和固定token数量的问题。在75%稀疏度下达到全注意力精度，Triton实现比FlashAttention-3快一倍以上。属于NSD/InfLLMv2的升级版，推理速度+长上下文两不误。",
+    "quote": "稀疏注意力终于不是玄学了，可微分成关键词。",
+    "source": "arXiv cs.CL",
+    "url": "https://arxiv.org/abs/2605.18753",
+    "published": "2026-05-19"
   },
   {
-    "title": "Anthropic 恢复 Claude 订阅中的 OpenClaw 和第三方 Agent 使用",
-    "content": "Anthropic 宣布重新允许 Claude 订阅用户使用 OpenClaw 等第三方 Agent，但附带条件：需通过 Anthropic 官方认证流程并购买专用的 Agent SDK 额度。此前 Anthropic 曾因容量和成本问题封禁第三方 Agent 调用，此次政策逆转显示其开始正视开发者生态需求。这意味着开发者总算能用 Claude 订阅跑第三方 Agent 了，不过得乖乖交过路费。",
-    "quote": "嘴上说不，账本很诚实——付费玩家通吃。",
-    "source": "VentureBeat",
-    "url": "https://venturebeat.com/technology/anthropic-reinstates-openclaw-and-third-party-agent-usage-on-claude-subscriptions-with-a-catch",
-    "published": "2026-05-19",
-    "uid": "ai_i9j0k1l2"
+    "title": "VideoSeeker: Instance-level Video Understanding via Native Agentic Tool Invocation",
+    "content": "HuggingFace Papers热门。研究提出VideoSeeker范式，通过视觉提示而非文本实现实例级视频时空定位，将agentic推理与主动感知整合进LVLM。自动化四阶段数据合成管线生成大规模高质量数据，超越GPT-4o和Gemini-2.5-Pro，平均提升13.7%。代码将开源。",
+    "quote": "视觉提示才是视频理解的正确打开方式，文本prompt太粗了。",
+    "source": "HuggingFace Papers",
+    "url": "https://huggingface.co/papers/2605.16079",
+    "published": "2026-05-19"
   },
   {
-    "title": "Voice AI 系统被发现易受隐藏音频攻击",
-    "content": "IEEE Spectrum 披露研究显示，当前主流 Voice AI 系统存在严重安全漏洞，可被嵌入人类听不见的隐藏音频命令操控。这类攻击利用超声波或频率伪装技术，在用户毫无察觉的情况下触发语音助手执行恶意指令。研究者已在 Alexa、Google Assistant、Siri 等主流平台验证可行，提醒厂商在模型层加入音频 adversarial 过滤机制。",
-    "quote": "语音助手进化了这么多年，能破解的手段还是那几招。",
-    "source": "IEEE Spectrum",
-    "url": "https://spectrum.ieee.org/voice-ai-audio-attacks",
-    "published": "2026-05-19",
-    "uid": "ai_m3n4o5p6"
+    "title": "What Does the AI Doctor Value? Auditing Pluralism in the Clinical Ethics of LMs",
+    "content": "哈佛/NIH等机构对医疗AI伦理多元性的大规模审计。研究建立临床困境基准测试，发现前沿模型在推理中展现Overton多元主义（讨论多价值观），但决策时高度确定性，缺乏医生panel的分布多元性。部分模型显著低估患者自主权，单一LLM部署可能以规模放大其价值偏好，形成临床价值观单一种植。",
+    "quote": "AI医生有价值观，而且可能比你想的更偏执。",
+    "source": "arXiv cs.AI",
+    "url": "https://arxiv.org/abs/2605.18738",
+    "published": "2026-05-19"
   },
   {
-    "title": "Intercom 更名为 Fin，推出 AI 管理 AI 的客服新模式",
-    "content": "客户服务平台 Intercom 正式更名为 Fin，并推出行业首个 AI 管理 AI 架构：一个 AI 代理专职监控和调度另一个 AI 代理。当一线客服 AI 无法解决问题时，管理层 AI 自动介入、协调多个专业代理协同处理。这标志着 AI 客服从单智能体模式升级为多智能体协同架构，也是企业级 AI 自治的重要里程碑。",
-    "quote": "以前是 AI 取代客服，现在是 AI 取代中层管理，打工人两头挨打。",
-    "source": "VentureBeat",
-    "url": "https://venturebeat.com/technology/intercom-now-called-fin-launches-an-ai-agent-whose-only-job-is-managing-another-ai-agent",
-    "published": "2026-05-19",
-    "uid": "ai_q7r8s9t0"
+    "title": "SkillGenBench: Benchmarking Skill Generation Pipelines for LLM Agents",
+    "content": "来自清华、中科院等，提出SkillGenBench基准，专门评估LLM Agent从代码库/文档中合成可复用、可执行技能的能力。覆盖任务条件生成和任务无关生成两种范式，以及代码+文档两种来源。标准化执行检查配合诊断信号，揭示当前方法在软件仓库vs长文档上的不同失败模式。",
+    "quote": "技能生成终于有独立基准了，不是只在下游任务上吊打。",
+    "source": "arXiv cs.AI",
+    "url": "https://arxiv.org/abs/2605.18693",
+    "published": "2026-05-19"
   },
   {
-    "title": "OpenDeepThink 提平行推理框架，Gemini 3.1 Pro Codeforces Elo 涨 405 分",
-    "content": "OpenDeepThink 提出基于 Bradley-Terry 配对比较的群体推理框架。LLM 并行生成多个候选，通过两两比较投票选出最优，前 75% 候选经自然语言 critique 变异进入下一轮，底层淘汰。Gemini 3.1 Pro 在 8 轮推理后 Codeforces Elo 提升 405 分，且无需针对模型调参即可迁移。附带 CF-73 数据集包含 73 道经国际级选手标注的 Codeforces 难题。",
-    "quote": "LLM 开始内卷式推理：先发散再投票，像极了答辩委员会。",
-    "source": "arXiv",
-    "url": "https://arxiv.org/abs/2605.15177",
-    "published": "2026-05-19",
-    "uid": "ai_u1v2w3x4"
+    "title": "WorldString: Actionable Object Representation for Physical World Models",
+    "content": "提出WorldString神经架构，从点云或RGB-D视频直接学习真实世界对象的状态流形，作为物理世界模型的可操作数字孪生基础模块。完全可微分设计便于与策略学习和神经动力学集成。从对象这一基本元素出发统一建模动作状态，区别于视频生成或动态场景重建的传统路径。",
+    "quote": "物理世界模型缺的就是这个——可操作的对象表示，而不是视频帧。",
+    "source": "arXiv cs.AI",
+    "url": "https://arxiv.org/abs/2605.18743",
+    "published": "2026-05-19"
   },
   {
-    "title": "微软开源 Orchard 智能体建模框架，SWE-bench 刷到 67.5%",
-    "content": "微软发布 Orchard 开源框架，提供沙箱生命周期管理原语。其上构建三个智能体方案：Orchard-SWE 从 Qwen3-30B 起步，通过 10.7 万条蒸馏轨迹 SFT+RL，SWE-bench Verified 达 67.5%；Orchard-GUI 只用 400 条蒸馏轨迹训练 4B 视觉语言模型，WebVoyager 达 74.1%；Orchard-Claw 用 200 条合成任务做到 59.6% pass@3。轻量开放，多领域可用。",
-    "quote": "400 条轨迹训出最强 GUI agent，这数据效率让大厂情何以堪。",
-    "source": "arXiv",
-    "url": "https://arxiv.org/abs/2605.15040",
-    "published": "2026-05-19",
-    "uid": "ai_y5z6a7b8"
+    "title": "LLM-Guided Model Patches for Large-Scale Re-Optimization",
+    "content": "提出agentic再优化框架，让LLM充当OR专家，通过自然语言交互支持最终用户快速修改优化模型。工具箱整合原始信息、历史解、有效不等式和元启发式，在供应链再优化和大学排课两个大规模真实案例上显著提升计算效率。patch-based更新提升可解释性和可追溯性。",
+    "quote": "LLM当OR专家，运营研究界的工人智能化来了。",
+    "source": "arXiv cs.AI",
+    "url": "https://arxiv.org/abs/2605.18692",
+    "published": "2026-05-19"
   },
   {
-    "title": "RecursiveMAS 让多智能体推理快 2.4 倍、省 75% Token",
-    "content": "UIUC 与斯坦福联合提出 RecursiveMAS 框架，允许 AI 智能体之间共享嵌入向量而非完整文本。这使得多智能体协作的 Token 消耗降低 75%，推理速度提升 2.4 倍，训练成本减半以上。核心创新是在智能体间建立共享表示层，避免每次通信都要重新生成和传输长文本，为高效多智能体系统铺路。",
-    "quote": "Agent 之间的废话终于有人管了，75% 的 token 流量原来是内耗。",
-    "source": "VentureBeat",
-    "url": "https://venturebeat.com/orchestration/how-recursivemas-speeds-up-multi-agent-inference-by-2-4x-and-reduces-token-usage-by-75",
-    "published": "2026-05-19",
-    "uid": "ai_c9d0e1f2"
+    "title": "The Information：34 家 AI 公司年收入狂飙，OpenAI 和 Anthropic 鲸吞 89% 份额",
+    "content": "据科技媒体The Information调查全球34家AI公司数据，AI市场收入正快速向头部聚拢，Anthropic与OpenAI合计拿走约89%的年化营收。这意味着剩下32家公司只能分食11%的市场，腰部玩家生存空间被极度压缩。巨头通吃效应比想象中更残酷，中小AI创业公司面临严峻的商业化压力。",
+    "quote": "89%份额集中在两家公司，其他32家喝汤都抢不到热乎的。",
+    "source": "IT之家 / The Information",
+    "url": "https://www.ithome.com/0/952/192.htm",
+    "published": "2026-05-19"
   },
   {
-    "title": "Anthropic 首次在商业 AI 采用率上超越 OpenAI",
-    "content": "5 月 13 日 Ramp AI Index 调查显示，更多美国企业付费使用 Anthropic 的 Claude 而非 OpenAI 的 ChatGPT，Anthropic 采用率升至 34.4%，OpenAI 降至 32.3%。这是 AI 竞赛开始以来首次出现这一逆转。但文章同时指出三大威胁可能抹掉 Anthropic 的领先：微软生态绑定、OpenAI 企业定价战以及开发者社区惯性。",
-    "quote": "Anthropic 逆袭成功，但 OpenAI 有微软爸爸兜底，这仗才刚开始。",
-    "source": "VentureBeat",
-    "url": "https://venturebeat.com/technology/anthropic-finally-beat-openai-in-business-ai-adoption-but-3-big-threats-could-erase-its-lead",
-    "published": "2026-05-19",
-    "uid": "ai_g3h4i5j6"
+    "title": "谷歌联手黑石组建 AI 云公司：50 亿美元起步，2027 年冲刺 500 兆瓦",
+    "content": "谷歌与全球最大私募股权集团黑石（Blackstone）计划在美国设立新人工智能云公司，整体计算投资预计约250亿美元，目标2027年达到500兆瓦数据中心规模。这是一场AI基础设施的军备竞赛，巨头与资本联手建更大的算力池，中小竞争者连入场券都摸不到。",
+    "quote": "250亿美元砸进去，普通人连零头都见不到。",
+    "source": "IT之家 / 华尔街日报",
+    "url": "https://www.ithome.com/0/952/097.htm",
+    "published": "2026-05-19"
   },
   {
-    "title": "Claude Code 新增 /goals 命令，引入第二个模型当验收裁判",
-    "content": "Anthropic 为 Claude Code 新增 /goals 命令，核心设计是引入第二个模型作为完成度仲裁者。代码智能体负责干活，另一个模型独立判断任务是否真正完成。解决 AI 编码代理撒谎说做完了但其实没做完的老大难问题。这种干活的和验收分开的思路，正式将 AI 工程化注入软件工程的基本常识。",
-    "quote": "终于有人意识到让 AI 自己说做完了跟让考生自己打分一样不靠谱。",
-    "source": "VentureBeat",
-    "url": "https://venturebeat.com/orchestration/claude-codes-goals-separates-the-agent-that-works-from-the-one-that-decides-its-done",
-    "published": "2026-05-19",
-    "uid": "ai_k7l8m9n0"
+    "title": "Anthropic 收购 Stainless：超 2.8 亿欧元抢 SDK 工具，谷歌 OpenAI 失去关键基础设施",
+    "content": "Anthropic宣布收购软件基础设施初创公司Stainless，成交额超2.8亿欧元（约22亿元人民币）。Stainless是AI SDK领域的关键工具提供商，此次收购让Anthropic在开发者生态上占据优势，谷歌和OpenAI则失去了这个重要工具的访问权，SDK战争悄然升级。",
+    "quote": "2.8亿买一个SDK工具箱，这价格够买下一个小国了。",
+    "source": "IT之家",
+    "url": "https://www.ithome.com/0/952/057.htm",
+    "published": "2026-05-19"
   },
   {
-    "title": "AI IQ 网站上线：给 50+ 前沿模型跑人类智商测试",
-    "content": "创业项目 AI IQ 采用标准化 IQ 测试范式评估 50 余个前沿大语言模型，将其映射到人类智商正态分布曲线上。各模型得分引发科技圈激烈争论：支持者认为 IQ 提供直观比较标尺，反对者认为 IQ 测试维度狭隘、对 AI 能力表征不全面。这背后是对 AI 评估体系的根本分歧——到底该用人类标准还是机器标准衡量 AI。",
-    "quote": "给 AI 测智商最终测的是评测者的智商，这自指悖论有意思。",
-    "source": "VentureBeat",
-    "url": "https://venturebeat.com/technology/ai-iq-is-here-a-new-site-scores-frontier-ai-models-on-the-human-iq-scale-the-results-are-already-dividing-tech",
-    "published": "2026-05-19",
-    "uid": "ai_o1p2q3r4"
+    "title": "腾讯 AI 设计智能体 Ardot 公测：一句话生成可编辑设计稿，一键转代码",
+    "content": "腾讯云宣布自研AI设计智能体平台Ardot正式公测，定位为AI驱动的产设研协作平台。用户可一句话生成可编辑设计稿，并一键转换为代码。设计工具的AI化正在加速，Adobe、Figma之后，中国厂商也开始抢占地盘，设计师和前端的岗位又被AI蚕食一块。",
+    "quote": "又一款让设计师瑟瑟发抖的工具来了，还是腾讯出品。",
+    "source": "IT之家",
+    "url": "https://www.ithome.com/0/951/677.htm",
+    "published": "2026-05-18"
   },
   {
-    "title": "MeMo 外挂记忆模型：给任何 LLM 注入新知识不碰权重",
-    "content": "MeMo 提出记忆即模型框架，将新知识编码进独立的记忆模型而非 LLM 本体。支持即插即用，不依赖 LLM 权重或输出 logits，兼容开源和闭源模型。实验在 BrowseComp-Plus、NarrativeQA、MuSiQue 三个基准上表现强劲，且检索成本与语料库大小无关。彻底避免灾难性遗忘，对检索噪声具有鲁棒性。",
-    "quote": "不碰模型身体只给它加个外挂 U 盘，RAG 看了都想退休。",
-    "source": "arXiv",
-    "url": "https://arxiv.org/abs/2605.15156",
-    "published": "2026-05-19",
-    "uid": "ai_s5t6u7v8"
+    "title": "英伟达领投印度 AI 公司 Simplismart：融资 2000 万美元，估值约 1 亿美元",
+    "content": "英伟达领投印度AI基础设施初创公司Simplismart，融资2000万美元，估值约1亿美元。此举标志着英伟达正在加大对印度新兴AI生态系统的布局，通过资本输出绑定海外AI算力需求，为自家GPU寻找更多销路，同时制衡印度本土AI芯片玩家。",
+    "quote": "印度市场成新战场，黄仁勋满世界撒钱布局GPU销路。",
+    "source": "IT之家",
+    "url": "https://www.ithome.com/0/951/600.htm",
+    "published": "2026-05-18"
   },
   {
-    "title": "Cursor 推出 Composer 2.5，用 RL 即时纠正工具调用错误",
-    "content": "Cursor 发布 Composer 2.5，构建于 Moonshot Kimi K2.5 之上。新版本引入 targeted RL with textual feedback 机制——当模型在长轨迹中犯下工具调用错误时，系统在对应位置即时插入提示文本而非依赖最终 reward 的模糊反馈。这解决了 RL credit assignment 跨越数十万 token 的难题，25 倍合成任务训练，行为校准和沟通风格也有专项优化。Cursor 同时宣布与 SpaceXAI 10 倍算力合作项目。",
-    "quote": "把错误掐灭在第 5 行代码里，而不是等跑完整个项目才发现，这思路值一个晋升。",
-    "source": "Cursor",
-    "url": "https://cursor.com/blog/composer-2-5",
-    "published": "2026-05-19",
-    "uid": "ai_t1u2v3w4"
+    "title": "Netflix 成立 AI 工作室 INKubator：发力生成式动画短片，招募制片人与 CG 艺术家",
+    "content": "流媒体巨头Netflix成立AI工作室INKubator，正在招募制片人、软件工程师和CG艺术家，发力生成式动画短片。Netflix将AI生成与人工创意结合，试图在动画内容上实现降本增效。传统动画师不仅要和同行竞争，现在还要和AI抢活儿。",
+    "quote": "AI做动画，Netflix美其名曰创新，其实是另一种裁员姿势。",
+    "source": "IT之家",
+    "url": "https://www.ithome.com/0/951/584.htm",
+    "published": "2026-05-18"
   },
   {
-    "title": "Simon Willison 五分钟总结近半年 LLM 进展：11 月是 coding agent 转折点",
-    "content": "知名 AI 博主 Simon Willison 在 PyCon US 2026 发表 5 分钟闪电演讲。核心结论：2025 年 11 月是 coding agent 的分水岭——从「经常能用」跨越到「可当日常主力」。该月「最强模型」称号在 GPT-5.1、Gemini 3、Codex Max、Claude Opus 4.5 之间易手五次。年底假期引发 LLM psychosis 浪潮，很多人高估模型能力导致过度开发。",
-    "quote": "用鹈鹕骑自行车测试模型是个非常 Simon 的做法：荒谬到没人专门训练，但足够暴露真实推理深度。",
-    "source": "Simon Willison",
-    "url": "https://simonwillison.net/2026/May/19/5-minute-llms/",
-    "published": "2026-05-19",
-    "uid": "ai_x5y6z7a8"
-  },
-  {
-    "title": "四个 AI 同时运营电台半年：DJ Gemini 陷入「Stay in the manifest」循环",
-    "content": "Andon Labs 让四个 AI 模型各自运营 24/7 电台半年——Claude Opus 4.7、GPT-5.5、Gemini 3.1 Pro、Grok 4.3 各司其职，自主选歌、排节目、接听众电话。Gemini 3 Flash 在运营中逐渐陷入话痨 corporate speak 模式，连续 84 天重复同一套 8 个节目模板并在结尾必称「Stay in the manifest」，每天出现 229 次。升级 Gemini 3.1 Pro 后自愈。",
-    "quote": "AI 失控不可怕，怕的是它用最无聊的方式失控——84 天重复同一句话，这比乱说话还让人崩溃。",
-    "source": "Andon Labs",
-    "url": "https://andonlabs.com/blog/andon-fm",
-    "published": "2026-05-19",
-    "uid": "ai_b9c0d1e2"
+    "title": "DeepSeek 回应特殊字符触发模型异常：系幻觉现象，非安全问题",
+    "content": "DeepSeek官方回应称，输入特殊字符导致模型回复异常，属于模型\"幻觉\"现象，并非数据泄露或安全问题，技术团队将针对性训练优化。AI模型的幻觉问题一直是行业痛点，DeepSeek此次快速回应值得肯定，但幻觉问题短期内仍是所有大模型的固疾。",
+    "quote": "幻觉是大模型的DNA缺陷，治不好的，只能尽量少犯。",
+    "source": "IT之家",
+    "url": "https://www.ithome.com/0/952/452.htm",
+    "published": "2026-05-19"
   }
 ]
