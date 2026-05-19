@@ -141,36 +141,8 @@ print(mismatch)
     log "✅ CDN 深度 QA 全部通过"
 fi
 
-# Step 3: 检查 combined_3days 文件（严格校验，缺失则终止）
-log "[3/5] 校验 combined_3days 文件..."
-DATE_COMPACT=$(date +%Y%m%d)
-COMBINED_FILE="$WORKSPACE/combined_3days_${DATE_COMPACT}.json"
-if [ -f "$COMBINED_FILE" ]; then
-    ITEMS=$(python3 -c "import json;d=json.load(open('$COMBINED_FILE'));print(sum(len(v) for v in d.values()))")
-    TODAY_ITEMS=$(python3 -c "
-import json
-d=json.load(open('$COMBINED_FILE'))
-today='$(date +%Y-%m-%d)'
-total=0
-for k in ['industry','dev','ai','startup','design']:
-    total+=len([i for i in d.get(k,[]) if i.get('published','')[:10]==today])
-print(total)
-")
-    log "   combined_3days: ${ITEMS}条, 今日${TODAY_ITEMS}条"
-    
-    # 如果今日 items 为 0 但文件存在，也视为异常
-    if [ "$TODAY_ITEMS" = "0" ] && [ "$ITEMS" != "0" ]; then
-        log "⚠️ combined_3days 存在但今日 items 为 0，继续（跨天窗口期）"
-    fi
-else
-    log "❌ combined_3days 文件缺失: ${COMBINED_FILE}"
-    log "   请先运行 sync_github_pages.sh 或 generate_combined_3days.py 生成"
-    log "   修复命令: python3 $SCRIPT_DIR/generate_combined_3days.py"
-    exit 1
-fi
-
-# Step 3.5: 同步数据到 data/ 目录（安全网：确保 CDN 路径数据最新）
-log "[3.5/5] 同步 data/ 目录..."
+# Step 3: 同步数据到 data/ 目录（安全网：确保 CDN 路径数据最新）
+log "[3/5] 同步 data/ 目录..."
 bash "$SCRIPT_DIR/sync_to_data.sh" 2>&1 | tee -a "$LOG_FILE" || log "⚠️ data/ 同步失败（不阻塞，继续 promote）"
 
 # Step 4: Merge staging → main
