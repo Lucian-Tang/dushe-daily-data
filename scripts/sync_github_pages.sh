@@ -106,47 +106,14 @@ index = {
     'checksums': checksums
 }
 
-# 生成合并文件
-try:
-    combined = {}
-    for section in ['industry', 'dev', 'ai', 'startup', 'design']:
-        fname = latest.get(section, '')
-        if fname and os.path.exists(fname):
-            with open(fname) as f:
-                data = json.load(f)
-                if isinstance(data, list) and len(data) > 0:
-                    combined[section] = data
-    
-    if combined:
-        import re
-        date_match = None
-        for fname in latest.values():
-            m = re.search(r'_(\d{8})\.json$', str(fname))
-            if m:
-                date_match = m.group(1)
-                break
-        
-        if date_match:
-            combined_fname = f'combined_all_{date_match}.json'
-            with open(combined_fname, 'w', encoding='utf-8') as f:
-                json.dump(combined, f, ensure_ascii=False, indent=2)
-            index['combined'] = {date_match: combined_fname}
-            print(f'[combined] created {combined_fname} with {sum(len(v) for v in combined.values())} items')
-except Exception as e:
-    print(f'[combined] generation failed: {e}')
-
 with open('index.json', 'w', encoding='utf-8') as f:
     json.dump(index, f, ensure_ascii=False, indent=2)
 
-print(f'[index] generated: {len(latest)} sections, {len(combined)} combined')
+print(f'[index] generated: {len(latest)} sections')
 "
 fi
 
-# ---- Step 3.5: 生成 3 天合并数据文件 ----
-log "[combined_3days] 生成 3 天合并数据文件..."
-python3 "$SCRIPT_DIR/generate_combined_3days.py" 2>&1 | tee -a "$LOG_DIR/sync-github.log"
-
-# ---- Step 3.6: 同步输出文件到 data/ 目录（CDN 实际读取路径）----
+# ---- Step 3.5: 同步输出文件到 data/ 目录（CDN 实际读取路径）----
 log "[data-sync] 同步输出文件到 data/ 目录..."
 bash "$SCRIPT_DIR/sync_to_data.sh" 2>&1 | tee -a "$LOG_DIR/sync-github.log"
 
