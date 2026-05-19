@@ -5,7 +5,8 @@
 #       但小程序和 web app 从 data/ 子目录读取。此脚本确保 data/ 始终与 root 同步。
 #
 # 用法:
-#   ./scripts/sync_to_data.sh              # 同步所有输出文件
+#   ./scripts/sync_to_data.sh              # 仅同步今日文件
+#   ./scripts/sync_to_data.sh --all        # 🔴 同步所有文件（危险！）
 #   ./scripts/sync_to_data.sh --date 0519  # 仅同步指定日期文件
 
 set -euo pipefail
@@ -39,19 +40,35 @@ smart_copy() {
 }
 
 # ── 1. 同步 _daily_*.json ──
-# 优先同步今日文件；如果传了 --date 参数则只同步指定日期
-DATE_FILTER="${1:-}"
+# 默认只同步今日文件，保护历史 L2 数据不可变
+SYNC_ALL=false
+DATE_FILTER=""
+
+if [ "${1:-}" = "--all" ]; then
+    SYNC_ALL=true
+elif [ "${1:-}" = "--date" ]; then
+    DATE_FILTER="${2:-$(date +%Y%m%d)}"
+fi
+
+TODAY_FILTER=$(date +%Y%m%d)
 
 for f in *_daily_*.json; do
     [ -f "$f" ] || continue
-    
-    # 如果有日期过滤，只匹配指定日期
-    if [ -n "$DATE_FILTER" ] && [ "$DATE_FILTER" != "--date" ]; then
+
+    if $SYNC_ALL; then
+        true  # 同步所有
+    elif [ -n "$DATE_FILTER" ]; then
+        # 指定日期过滤
         if ! echo "$f" | grep -q "$DATE_FILTER"; then
             continue
         fi
+    else
+        # 默认：仅同步今日文件
+        if ! echo "$f" | grep -q "$TODAY_FILTER"; then
+            continue
+        fi
     fi
-    
+
     smart_copy "$f" "data/$f" || true
 done
 
