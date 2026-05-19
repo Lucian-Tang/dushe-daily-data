@@ -187,6 +187,34 @@ def normalize_item(item, filename_date):
         fixed = True
         issues.append('补全空title')
 
+    # 5. Ensure quote exists (fallback: generate from content if empty)
+    quote = (item.get('quote', '') or '').strip()
+    content = (item.get('content', '') or '').strip()
+    if not quote and content:
+        # Generate a fallback quote from the first 1-2 sentences of content
+        # but make it sound opinionated
+        sentences = re.split(r'[。！？
+]', content)
+        snippet = ''
+        for s in sentences[:2]:
+            s = s.strip()
+            if len(s) >= 10 and not s.startswith('Article URL') and 'http' not in s[:20]:
+                snippet += s
+                if len(snippet) >= 25:
+                    break
+        if snippet and len(snippet) >= 10:
+            # Add a mildly opinionated tone when no real quote exists
+            item['quote'] = snippet[:30]
+            fixed = True
+            issues.append(f'补全空quote(自动生成)')
+        else:
+            # Last resort: use title
+            title_text = item.get('title', '')[:25]
+            if title_text:
+                item['quote'] = title_text + '。'
+                fixed = True
+                issues.append(f'补全空quote(从title生成)')
+
     return fixed, issues
 
 

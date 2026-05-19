@@ -50,6 +50,31 @@ def check_feishu_doc(block_count: int, sections_found: list[str]) -> list[str]:
     
     return issues
 
+def check_daily_json(filepath: str) -> list[str]:
+    """Check a _daily_*.json file for content quality issues.
+    Returns list of issue descriptions; empty list means OK."""
+    issues = []
+    if not os.path.exists(filepath):
+        return [f"文件不存在: {filepath}"]
+    with open(filepath, 'r', encoding='utf-8') as f:
+        items = json.load(f)
+    if not isinstance(items, list):
+        return [f"{filepath}: 非数组格式"]
+    for i, item in enumerate(items):
+        title = item.get('title', f'item-{i}')[:40]
+        # Quote must not be empty
+        quote = (item.get('quote', '') or '').strip()
+        if not quote:
+            issues.append(f"[{i}] quote 为空: {title}")
+        # Content must not start with "Article URL" (raw scraped text leaked)
+        content = (item.get('content', '') or '').strip()
+        if content.startswith('Article URL'):
+            issues.append(f"[{i}] content 以 'Article URL' 开头（抓取原文泄露）: {title}")
+        # Content length check
+        if len(content) < 50:
+            issues.append(f"[{i}] content 过短 ({len(content)}字): {title}")
+    return issues
+
 def check_deploy(version: str, changes: str) -> list[str]:
     """检查小程序发版完整性"""
     issues = []
@@ -101,6 +126,13 @@ def main():
         sections = sys.argv[3:] if len(sys.argv) > 3 else []
         issues = check_feishu_doc(block_count, sections)
     
+    elif cmd == "check_daily_json":
+        filepath = sys.argv[2] if len(sys.argv) > 2 else ""
+        if not filepath:
+            print("用法: qa-check.py check_daily_json <filepath>")
+            sys.exit(1)
+        issues = check_daily_json(filepath)
+
     elif cmd == "check_deploy":
         version = sys.argv[2] if len(sys.argv) > 2 else ""
         files = sys.argv[3:] if len(sys.argv) > 3 else []
