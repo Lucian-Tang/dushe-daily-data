@@ -1,1 +1,101 @@
-[]
+[
+  {
+    "title": "CSS corner-shape实现优雅折角效果",
+    "content": "过去实现纸张折角效果需要复杂伪元素和阴影叠加，现在corner-shape属性一行代码搞定。文章演示了从圆角到折角的完整过渡方案，以及兼容性降级策略——当然，Safari又掉队了。对于不需要兼容Safari的项目，这是个能让人眼前一亮的小特性。",
+    "quote": "又一个Chrome和Safari互相看不顺眼的CSS特性。",
+    "url": "https://css-tricks.com/using-css-corner-shape-for-folded-corners/",
+    "source": "CSS-Tricks",
+    "published": "2026-05-19",
+    "uid": "33c05ac9eb49858741d01bf820894dbc"
+  },
+  {
+    "title": "跨文档View Transitions：没人说的那些坑",
+    "content": "View Transitions API已可用于跨文档导航（MPA），但实际落地陷阱密布：页面加载时序错乱、缓存策略冲突、动画闪烁、SPA与MPA交互不一致性。作者用血泪教训总结了避坑指南，如果你正考虑用View Transitions做页面过渡，这篇是必修课。",
+    "quote": "View Transitions文档写得很美，踩坑指南才是真实世界。",
+    "url": "https://css-tricks.com/cross-document-view-transitions-part-1/",
+    "source": "CSS-Tricks",
+    "published": "2026-05-19",
+    "uid": "e208a4124592d6f4e558d22825705f89"
+  },
+  {
+    "title": "AI产品中的等待体验困局",
+    "content": "当AI在「思考」时，用户面对一个无法预估等待时间的黑箱。不同于传统进度条的可预测性，AI生成式等待充满不确定性。本文探讨了如何通过进度叙事、分阶段反馈和预期管理来缓解用户焦虑，而不是用一个转圈图标敷衍了事。",
+    "quote": "AI思考时用户比你还急，不给进度条就是等着被骂。",
+    "url": "https://uxdesign.cc/the-waiting-problem-in-ai-products",
+    "source": "UX Collective",
+    "published": "2026-05-18",
+    "uid": "e234e407cdbc89cc57f5153bf56c4702"
+  },
+  {
+    "title": "空状态已死，AI for UX上位",
+    "content": "传统设计中精心雕琢的空状态（empty state）在AI时代正在失去意义。与其展示「这里什么都没有」，AI可以直接基于用户历史生成个性化内容填充空白。文章提出「be like water」理念——设计应该流动适配，而非静态填充。空状态设计师该转岗了。",
+    "quote": "空状态设计的心机全白费了，AI直接把坑填了。",
+    "url": "https://uxdesign.cc/be-like-water-the-death-of-the-empty-state-ai-for-ux",
+    "source": "UX Collective",
+    "published": "2026-05-18",
+    "uid": "3c6e231882e516e6163c8709a8b1ad30"
+  },
+  {
+    "title": "移动App如何重塑认知衰退筛查体验",
+    "content": "传统认知筛查依赖医院环境和专业人员，移动App将这一过程带入日常生活。文章分析了游戏化测试设计、数据连续性追踪和无障碍体验——在保持医学准确性的同时，如何让「测认知」这件事不再令人恐惧。值得医疗设计领域参考。",
+    "quote": "以前怕去医院查脑子，现在刷个手机就被AI测了。",
+    "url": "https://uxdesign.cc/how-mobile-apps-are-reshaping-screening-for-cognitive-decline",
+    "source": "UX Collective",
+    "published": "2026-05-17",
+    "uid": "bb9c2422ad0ebcefb224bb7b4b4a82d8"
+  },
+  {
+    "title": "双速设计：交付速度与质量底线的平衡",
+    "content": "设计师常陷入两难：快则粗糙，精则慢。文章提出的「双齿轮+指南针」框架——快齿轮做探索验证，慢齿轮做打磨交付，指南针确保方向一致。理论成立，但大部分团队的问题是：只有一个齿轮，还在生锈，指南针还指反了。",
+    "quote": "快慢双齿轮听着很美，现实是只有一个还在生锈。",
+    "url": "https://uxdesign.cc/two-gears-one-compass-designing-at-velocity-while-sustaining-quality",
+    "source": "UX Collective",
+    "published": "2026-05-17",
+    "uid": "5adffadd906ea07d48e50036503b34b7"
+  },
+  {
+    "title": "如何写好一份Claude能真正理解的DESIGN.md",
+    "content": "AI协作设计正在成为现实，前提是你的设计文档AI得能看懂。本文给出了具体原则：明确的约束条件、结构化的设计决策记录、组件级别的预期行为描述。而不是扔一堆Figma截图加一句「照着做」——那Claude只能对着截图发呆。",
+    "quote": "给AI看的文档得比给人看的还清楚，不然它真的会摆烂。",
+    "url": "https://uxdesign.cc/how-to-write-a-design-md-file-claude-can-actually-use",
+    "source": "UX Collective",
+    "published": "2026-05-16",
+    "uid": "9fba9f3c22d61a83623fc20fc8437c7a"
+  },
+  {
+    "title": "AI产品的撤销难题——帮忙容易反悔难",
+    "content": "当AI自行执行操作（发邮件、改设置、下单），用户几乎没有撤销能力。传统Cmd+Z撤销的是操作，AI场景下需要撤销的是「决策过程」。文章提出预览-确认-执行三步机制来应对挑战。设计AI产品的人这篇必须读。",
+    "quote": "AI帮你点了下单然后说不能撤销，这体验比Windows更新还恶心。",
+    "url": "https://uxdesign.cc/the-undo-problem-in-ai-products",
+    "source": "UX Collective",
+    "published": "2026-05-16",
+    "uid": "4c98a31ceb6f857994af9c05da45b3c3"
+  },
+  {
+    "title": "失控AI代码的清理成本",
+    "content": "AI代码生成的速度诱惑背后，隐藏着持续累积的技术债务。未经审视的AI生成代码缺乏一致架构、注释和错误处理，导致维护成本指数级增长。Webflow用真实项目数据算了笔账：写得快不等于改得快，返工成本往往吃掉所有效率红利。",
+    "quote": "AI写代码一时爽，清理火葬场。",
+    "url": "https://webflowmarketingmain.com/blog/ungoverned-ai-generated-code-cleanup-cost",
+    "source": "Webflow Blog",
+    "published": "2026-05-12",
+    "uid": "1a1f0b7df697fb627e9fef851591325e"
+  },
+  {
+    "title": "AI透明度的实用界面模式（下篇）",
+    "content": "传统加载动画（spinner）在AI代理式体验中彻底失效。用户需要的不是敷衍的「等待中」，而是系统「正在做什么、思考到什么阶段、推理逻辑是什么」的可见性。本文给出了构建适度信任的界面模式，接上篇继续深入具体实现方案。",
+    "quote": "spinner糊弄不了AI时代了，用户想看的是脑子不是转圈。",
+    "url": "https://smashingmagazine.com/2026/05/practical-interface-patterns-ai-transparency/",
+    "source": "Smashing Magazine",
+    "published": "2026-05-13",
+    "uid": "73d6bbd7dc20cccdadeb90cbb6a0ed0c"
+  },
+  {
+    "title": "国文正楷 Kai Oldstyle 字库发布",
+    "content": "站酷设计师左佐发布国文正楷字库，以古汉字结构为基底融合现代字型设计。在保留楷书笔锋韵味的同时，对数字化呈现和可读性做了大量优化。在充斥着花哨标题字体的当下，这样兼顾文化深度与实用价值的字库实属难得。",
+    "quote": "终于有款字库能让楷书在屏幕上不糊成一团了。",
+    "url": "https://www.zcool.com.cn/work/ZNjkyNjYzNjA=.html",
+    "source": "站酷ZCOOL",
+    "published": "2026-05-19",
+    "uid": "1f3d24ca6a4d2d3d3b16e85c5c0f61eb"
+  }
+]
