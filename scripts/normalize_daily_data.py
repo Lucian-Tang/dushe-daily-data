@@ -193,8 +193,7 @@ def normalize_item(item, filename_date):
     if not quote and content:
         # Generate a fallback quote from the first 1-2 sentences of content
         # but make it sound opinionated
-        sentences = re.split(r'[。！？
-]', content)
+        sentences = re.split(r'[。！？\n]', content)
         snippet = ''
         for s in sentences[:2]:
             s = s.strip()
