@@ -1,0 +1,122 @@
+[
+  {
+    "title": "codegraph — 代码知识图谱",
+    "content": "为 Claude Code/Codex/Cursor 打造的预索引代码知识图谱，声称能减少 token 消耗、减少工具调用、100% 本地运行。思路有意思，把代码结构先 map 好再喂给 LLM，减少上下文开销。",
+    "quote": "token 党的新玩具，效果还得实战验证。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/colbymchenry/codegraph",
+    "published": "2026-05-21"
+  },
+  {
+    "title": "academic-research-skills — 学术研究套件",
+    "content": "给 Claude Code 用的学术研究技能链：研究→写作→审核→修改→定稿，覆盖完整的学术写作流程。15.6k stars 说明学术党们真的很想要一个靠谱的 AI 写作助手。",
+    "quote": "读博的用了它，会不会变成「AI 傀儡」？",
+    "source": "GitHub Trending",
+    "url": "https://github.com/Imbad0202/academic-research-skills",
+    "published": "2026-05-21"
+  },
+  {
+    "title": "CLI-Anything — 让所有软件具备 Agent 能力",
+    "content": "HKUDS 出品，让 CLI 原生化软件拥有 Agent 原生接口。配合 cli-hub.cc 使用，野心是让所有软件都变成 AI agent 可调用的工具。CLI 党的文艺复兴。",
+    "quote": "终于有人认真搞 CLI 了，不容易。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/HKUDS/CLI-Anything",
+    "published": "2026-05-21"
+  },
+  {
+    "title": "oh-my-pi — 终端 AI 编程 agent",
+    "content": "为树莓派优化的 AI coding agent，支持 hash 锚定编辑、LSP、Python、浏览器和子 agent。450 stars 不算多，但终端重度用户可能会喜欢这种本地感。",
+    "quote": "给极客的礼物，普通用户请绕道。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/can1357/oh-my-pi",
+    "published": "2026-05-21"
+  },
+  {
+    "title": "agentmemory — AI 编程持久记忆",
+    "content": "Persistent memory for AI coding agents，Real-world benchmarks 第一名。14.8k stars，今天新增 1121。解决了 AI coding agent 记不住上下文的老大难问题。",
+    "quote": "终于有人认真对待「鱼的记忆」这个问题了。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/rohitg00/agentmemory",
+    "published": "2026-05-21"
+  },
+  {
+    "title": "gog — Google Workspace CLI",
+    "content": "命令行操作 Gmail、日历、Drive、Contacts、Sheets、Docs。18万下载、895 stars，工作流自动化党必备。但凡用过都说香，前提是你能搞定 OAuth 配置。",
+    "quote": "Google 官方都做不好 CLI，民间来填坑了。",
+    "source": "ClawHub Trending",
+    "url": "https://clawhub.com/skills/gog",
+    "published": "2026-05-21"
+  },
+  {
+    "title": "weather — 无 API key 天气 CLI",
+    "content": "不需要任何 API key 就能查天气预报的 CLI 工具，15万下载、401 stars。说明免费、无门槛才是杀手级特性。开发者苦 API key 久矣。",
+    "quote": "良心工具，但天朝网络环境可能水土不服。",
+    "source": "ClawHub Trending",
+    "url": "https://clawhub.com/skills/weather",
+    "published": "2026-05-21"
+  },
+  {
+    "title": "skill-creator — 技能创建指南",
+    "content": "ClawHub 官方出品的技能创建教程，教你如何设计模块化技能来扩展 Claude 的能力。涵盖了 SKILL.md 结构、渐进式披露设计、参考模式等实战内容。",
+    "quote": "授人以鱼不如授人以渔，就看学的人有几分悟性了。",
+    "source": "ClawHub Trending",
+    "url": "https://clawhub.com/skills/skill-creator",
+    "published": "2026-05-21"
+  },
+  {
+    "title": "Forge – 开源 Guardrails 让 8B 模型在 Agent 任务上从 53% 跃升至 99%",
+    "content": "德州仪器 AI 总监开源了 Forge 项目，专门解决本地 LLM 工具调用的可靠性问题。通过重试机制、错误恢复、VRAM 感知上下文管理等五层护栏，无需更换模型即可将消费级 8B 模型的多步 Agent 任务成功率从 53% 提升到 99.3%。论文已被 ACM CAIS '26 接收，同等配置下免费 8B 模型加框架支持甚至超越了 Claude Sonnet 单独使用的表现。",
+    "quote": "不是模型能力问题，是架构缺失——每个模型错误恢复得分都是 0%。",
+    "source": "Hacker News",
+    "url": "https://github.com/antoinezambelli/forge",
+    "published": "2026-05-21"
+  },
+  {
+    "title": "Gemini 3.5 Flash 发布：Google AI 模型家族新成员",
+    "content": "Google 正式发布 Gemini 3.5 Flash，成为其 AI 模型系列中的重要更新。作为 Flash 级别模型主打快速响应与高效推理，面向需要低延迟、高性价比的应用场景。HN 社区对此反应热烈，评论数高达 620+，反映出开发者对 Google AI 产品线更新节奏的高度关注。",
+    "quote": "Google 每月一个新品，开发者代码还没跑熟模型又换了。",
+    "source": "Hacker News",
+    "url": "https://blog.google/innovation-and-and-ai/models-and-research/gemini-models/gemini-3-5/",
+    "published": "2026-05-21"
+  },
+  {
+    "title": "Google 搜索框大变样：全面集成 AI，Google I/O 2026 重磅更新",
+    "content": "Google 在 I/O 2026 大会上宣布对搜索框进行 AI 驱动的重大改革，将 Gemini 模型能力直接融入传统搜索体验。这被业界视为 Google 搜索史上最大变革之一，引发 870+ 条 HN 评论。隐私、搜索质量、广告商业模式等议题引发激烈讨论，TechCrunch 直接称「你所熟知的 Google 搜索已经终结」。",
+    "quote": "搜索框变 AI 问答箱，SEO 从业者怕是要集体失业。",
+    "source": "Hacker News",
+    "url": "https://blog.google/products-and-platforms/products/search/search-io-2026/",
+    "published": "2026-05-21"
+  },
+  {
+    "title": "Qwen3.7-Max 发布：Qwen 团队称其为「Agent 边界」",
+    "content": "阿里通义千问发布 Qwen3.7-Max，被定位为探索 Agent 能力边界的旗舰版本。作为中国大模型代表作品之一，Qwen 系列一直在开源社区保持高活跃度。此版本聚焦复杂推理与多步骤任务执行能力，HN 社区 125 条评论中不乏与 GPT-4o、Claude 的对比讨论。",
+    "quote": "中国大模型军备竞赛继续，Agent 能力成了必争之地。",
+    "source": "Hacker News",
+    "url": "https://qwen.ai/blog?id=qwen3.7",
+    "published": "2026-05-21"
+  },
+  {
+    "title": "Remove-AI-Watermarks 开源：命令行工具一键去除 AI 生成图片水印",
+    "content": "一款专注于去除 AI 生成图片水印的开源 CLI 工具引发关注。支持多种主流 AI 图像生成器的常见水印模式，提供库和命令行两种使用方式。随着 AI 生成内容泛滥，去除水印工具在版权、隐私和实际需求之间制造了有趣的矛盾点，HN 社区 220+ 条评论探讨了技术实现与伦理边界。",
+    "quote": "去水印工具永远走在加水印前面，但这事法律上可没说清楚。",
+    "source": "Hacker News",
+    "url": "https://github.com/wiltodelta/remove-ai-watermarks",
+    "published": "2026-05-21"
+  },
+  {
+    "title": "Mistral AI 收购 Emmi AI：欧洲 AI 独角兽整合加速",
+    "content": "欧洲 AI 代表企业 Mistral AI 宣布收购 Emmi AI，这是近期大模型领域又一起重要并购。Mistral 一直在开源模型领域表现活跃，此次收购被视为其扩展企业级 AI 能力的重要信号。HN 社区 90+ 条评论关注欧洲 AI 生态整合趋势以及 Mistral 未来与 OpenAI、Anthropic 的竞争态势。",
+    "quote": "欧洲 AI 独角兽开始抱团烤火了，美国那几家心里慌不慌？",
+    "source": "Hacker News",
+    "url": "https://www.emmi.ai/news/mistral-ai-acquires-emmi-ai",
+    "published": "2026-05-21"
+  },
+  {
+    "title": "C 语言的一切都是未定义行为？博主深入解析编译器陷阱",
+    "content": "一篇深度技术文章引发 HN 社区 530+ 条讨论，作者系统性地梳理了 C 语言中大量看似正常实则未定义行为的代码模式。文章指出即使用户认为「理所当然」的常见写法，在编译器优化面前也可能产生完全不同的运行时行为。对于 C/C++ 开发者而言，这是一篇兼具深度与实用价值的避坑指南。",
+    "quote": "写了十年 C，今天才知道原来我一直在未定义行为的刀尖上跳舞。",
+    "source": "Hacker News",
+    "url": "https://blog.habets.se/2026/05/Everything-in-C-is-undefined-behavior.html",
+    "published": "2026-05-21"
+  }
+]
