@@ -1,0 +1,98 @@
+[
+  {
+    "title": "OpenAI 模型自主推翻困扰数学界80年的离散几何猜想",
+    "content": "OpenAI 公布了一款通用推理模型自主解决了 Paul Erdős 于1946年提出的平面单位距离问题，打破了长期以来\"方格结构最优\"的猜想。该模型通过代数数论的复杂技术构造了无限族反例，实现多项式级改进。包括菲尔兹奖得主 Tim Gowers 在内的外部数学家已验证了证明的正确性。这是 AI 首次自主解决一个数学子领域的中心开放问题。",
+    "quote": "AI连数学家的饭碗都开始抢了，Gowers亲口盖章\"里程碑\"，这波不是灌水是降维打击。",
+    "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/",
+    "source": "OpenAI / Hacker News",
+    "published": "2026-05-21T04:00:00+08:00"
+  },
+  {
+    "title": "OpenAI 即将提交IPO申请",
+    "content": "据华尔街日报报道，OpenAI 正在准备近期提交IPO申请。此前OpenAI 刚发布模型自主解决离散几何猜想的突破性成果，叠加商业化加速信号，估值预期被大幅推高。该报道在 HN 上引发225条激烈讨论，多数关注点集中在非营利架构转型后的利益分配问题。",
+    "quote": "一边发论文震惊学界，一边递招股书圈钱——OpenAI这波\"左手学术右手资本\"玩得真溜。",
+    "url": "https://www.wsj.com/tech/ai/openai-is-preparing-to-file-for-an-ipo-very-soon-0ec95af5",
+    "source": "华尔街日报 / Hacker News",
+    "published": "2026-05-21T01:00:00+08:00"
+  },
+  {
+    "title": "Anthropic 即将首次实现季度盈利，Q2预计收入$109亿",
+    "content": "Anthropic 向投资人透露，预计Q2营收将翻倍至约109亿美元，实现公司历史上首个盈利季度。与此同时，Anthropic 宣布将扩展至 Colossus2 超算集群，采用 NVIDIA GB200 芯片。Claude 的商业化进程正在加速追赶 OpenAI。",
+    "quote": "烧钱烧到怀疑人生终于看到回头钱了——$109亿Q2，Claude这是要集体加鸡腿的节奏。",
+    "url": "https://techcrunch.com/2026/05/20/anthropic-says-its-about-to-have-its-first-profitable-quarter/",
+    "source": "TechCrunch",
+    "published": "2026-05-21T08:21:21+08:00"
+  },
+  {
+    "title": "Jensen Huang：Nvidia 发现AI Agent CPU市场，规模$2000亿",
+    "content": "Nvidia CEO Jensen Huang 在最新活动中表示，AI Agent 将成为下一波计算浪潮的核心驱动力，并预测用于 AI Agent 的 CPU 市场将成长为一个价值2000亿美元的全新市场。他暗示 Nvidia 将不只是做 GPU，还会深入 CPU 领域抓住 Agent 时代的算力需求。",
+    "quote": "老黄又画了个$2000亿的饼，GPU割完韭菜开始割CPU——横竖都是你赢是吧？",
+    "url": "https://techcrunch.com/2026/05/20/jensen-huang-says-hes-found-a-brand-new-200b-market-for-nvidia/",
+    "source": "TechCrunch",
+    "published": "2026-05-21T08:28:31+08:00"
+  },
+  {
+    "title": "xAI 去年烧掉$64亿，SpaceX IPO文件揭示烧钱远未结束",
+    "content": "TechCrunch 从 SpaceX 的 IPO 文件中发现，马斯克的 xAI 在2025年消耗了64亿美元资金。文件中透露 xAI 与 SpaceX 之间存在大量关联交易，包括使用星链和航天设施来支撑 Grok 的训练基础设施。分析认为 xAI 的烧钱节奏短期内不会放缓。",
+    "quote": "马斯克一边卖火箭股票一边喂Grok——$64亿一年，这哪是训练大模型，这是养了个吞金兽。",
+    "url": "https://techcrunch.com/2026/05/20/xai-burned-6-4b-last-year-spacexs-ipo-filing-shows-why-the-spending-is-far-from-over/",
+    "source": "TechCrunch",
+    "published": "2026-05-21T06:26:08+08:00"
+  },
+  {
+    "title": "DeepWeb-Bench：深度研究新基准发布，GPT-5.5仅得57.58%",
+    "content": "北大团队发布了 DeepWeb-Bench 基准测试，要求 AI 系统从海量网页证据中收集、交叉核对并多步推导答案。评估13个前沿系统后发现：检索不是瓶颈（仅12-14%错误），推导和校准失败才是主因（70%+）。即使是表现最好的 GPT-5.5，正确率也只有57.58%，强模型和弱模型的失败模式截然不同。",
+    "quote": "又一个把GPT-5.5打回原形的基准——57%正确率，所谓深度研究还远没到\"靠谱\"那条线。",
+    "url": "https://arxiv.org/abs/2605.21482",
+    "source": "arXiv cs.AI",
+    "published": "2026-05-21T01:59:00+08:00"
+  },
+  {
+    "title": "Agent JIT Compilation：让 Web Agent 规划快10倍（ICML 2026）",
+    "content": "ML 研究团队提出 Agent JIT Compilation 框架，将自然语言任务描述直接编译为可并行执行代码，替代传统\"截图-思考-执行\"串行循环。JIT-Planner 相比 Browser-Use 实现10.4倍加速和+28%准确率提升，JIT-Scheduler 相比 OpenAI CUA 实现2.4倍加速。已被 ICML 2026 接收。",
+    "quote": "把LLM Agent当JIT编译器用——优雅！串行截图终于可以进历史垃圾桶了。",
+    "url": "https://arxiv.org/abs/2605.21470",
+    "source": "arXiv cs.LG (ICML 2026)",
+    "published": "2026-05-21T01:54:00+08:00"
+  },
+  {
+    "title": "PALS：LLM推理功率感知调度，MoE模型能效提升26.3%",
+    "content": "研究者提出 PALS 功率感知LLM推理运行时，将GPU功率限制作为一等控制变量，联合优化批处理大小和电源策略。基于 vLLM 实现，无需模型重训练。在 MoE 和多GPU系统上能效提升最高26.3%，QoS违规降低4-7倍，支持动态功率预算跟踪——为电网交互式AI系统铺路。",
+    "quote": "GPU散热终于有人认真管了——大模型电老虎们再不节能，电网都要拉闸了。",
+    "url": "https://arxiv.org/abs/2605.21427",
+    "source": "arXiv cs.AI",
+    "published": "2026-05-21T01:19:00+08:00"
+  },
+  {
+    "title": "Mem-π：LLM Agent自适应记忆框架，Web导航任务提升30%+",
+    "content": "Mem-π 框架让 LLM Agent 按需生成上下文特定指导，而非从外部记忆库检索静态条目。使用专用的决策-内容解耦强化学习目标训练一个独立模型，决定\"何时生成\"以及\"生成什么\"。在网页导航、终端工具使用和文本化具身交互等多个Agent基准上，一致超越检索式和此前RL优化的记忆方法。",
+    "quote": "不靠外挂记忆库，自己学会什么时候闭嘴什么时候帮忙——这框架比某些人类同事都懂事。",
+    "url": "https://arxiv.org/abs/2605.21463",
+    "source": "arXiv cs.CL",
+    "published": "2026-05-21T01:51:00+08:00"
+  },
+  {
+    "title": "GitHub 确认3800个仓库遭恶意VSCode插件攻破",
+    "content": "GitHub 官方确认一起大规模供应链攻击事件：一款伪装成合法工具的恶意 VSCode 扩展入侵了约3,800个仓库。攻击者通过该插件窃取代码中的密钥和token。GitHub 已通知受影响用户并吊销相关凭证，事件再次暴露了开发者工具链的安全脆弱性。",
+    "quote": "一个插件干翻3800个仓库——VSCode生态安全比纸还薄，下次装插件前先烧香。",
+    "url": "https://www.bleepingcomputer.com/news/security/github-confirms-breach-of-3-800-repos-via-malicious-vscode-extension/",
+    "source": "BleepingComputer / Hacker News",
+    "published": "2026-05-21T03:00:00+08:00"
+  },
+  {
+    "title": "Moonshot AI 发布 Kimi-K2.6：1.1万亿参数 MoE 模型上线 HuggingFace",
+    "content": "月之暗面（Moonshot AI）在 HuggingFace 上线了 Kimi-K2.6 开源模型，参数规模达1.1万亿（MoE架构），支持图文多模态输入输出。上线2天即获265万下载量，迅速登顶 HF 热门榜。该模型被广泛视为中国开源大模型对标 GPT-5 级别能力的重要一步。",
+    "quote": "1.1万亿参数开源，Moonshot这是把家底都亮出来了——下载量两天265万，群众用脚投票。",
+    "url": "https://huggingface.co/moonshotai/Kimi-K2.6",
+    "source": "HuggingFace",
+    "published": "2026-05-19T08:00:00+08:00"
+  },
+  {
+    "title": "HITL-D：人机协作扩散策略让遥操作效率提升40%（ICRA 2026）",
+    "content": "研究者提出 HITL-D 人机协同框架，将扩散策略与人类遥操作结合，通过场景点云自动生成末端执行器姿态更新，减少所需操纵杆控制轴数。12人用户研究显示任务完成时间减少40%，主观工作负荷降低37%。被 ICRA 2026 接受，为机器人在精密装配中的人机协作提供了新范式。",
+    "quote": "机器负责微调姿势，人类负责不让它犯蠢——这才是人机协作该有的样子，别老想着完全替代。",
+    "url": "https://arxiv.org/abs/2605.21460",
+    "source": "arXiv cs.RO (ICRA 2026)",
+    "published": "2026-05-21T01:49:00+08:00"
+  }
+]
