@@ -2,7 +2,7 @@
   {
     "name": "hn-signals",
     "schedule": "00 02 * * *",
-    "timeout": 120,
+    "timeout": 300,
     "model": "minimax-m2.7",
     "script": "cron/scripts/hn_signals.py",
     "enabled": true,
