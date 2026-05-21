@@ -1,1 +1,65 @@
-[]
+[
+  {
+    "title": "Mercedes AMG GT 4-door coupe EV: 1,153 hp, 0-60 in 2 seconds, 600 kW charging",
+    "content": "Mercedes正式发布纯电AMG GT四门轿跑，三台轴向磁通电机输出1,153马力，零百加速仅2秒。800V架构支持600kW超充，10%-80%充电仅11分钟。F1赛车级油冷系统提供20kW散热能力，反复赛道驾驶也不会过热。能量密度超298 Wh/kg，支持NACS和CCS2等五大国际快充标准。",
+    "quote": "1153马力+11分钟充满，Mercedes终于让你忘了汽油味。",
+    "url": "https://www.theverge.com/news/934037/mercedes-amg-gt-four-door-coupe-ev-specs",
+    "source": "The Verge",
+    "published": "2026-05-21",
+    "uid": "industry_05cbc430"
+  },
+  {
+    "title": "Google Gemini will use Volvo EX60's external cameras to interpret parking signs",
+    "content": "Google I/O大会宣布Gemini将接入Volvo EX60外部摄像头，实时解读停车标识和车道标线。依托Android Automotive系统和高通Snapdragon SoC，Gemini能告诉车主能停多久、是否需要许可。Google还计划让AI回答关于附近地标和餐厅的问题。但读错标识吃罚单的风险，显然还没解决。",
+    "quote": "让AI帮你看停车牌——然后付罚单的时候也找AI报销？",
+    "url": "https://www.theverge.com/transportation/933556/google-io-gemini-volvo-ex60-camera-ai-parking",
+    "source": "The Verge",
+    "published": "2026-05-21",
+    "uid": "industry_492d6fc2"
+  },
+  {
+    "title": "Utah Stratos Project: World's largest data center sparks environmental backlash",
+    "content": "Kevin O'Leary主导的Stratos数据中心获犹他州批准，占地40,000英亩（曼哈顿两倍），规划功耗9GW——近乎犹他州峰值用电量的两倍。一期投资超40亿美元。O'Leary声称此举关乎美国AI霸主地位。但专家警告项目将严重破坏环境、耗尽水资源，且从1月见州长到5月获批，速度快到离谱。",
+    "quote": "9GW+40000英亩，O'Leary建的不是数据中心，是AI版金字塔。",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/933687/utah-stratos-project-data-center-kevin-oleary",
+    "source": "The Verge",
+    "published": "2026-05-21",
+    "uid": "industry_0ebe149b"
+  },
+  {
+    "title": "COBALT: Crowdsourcing Robot Learning via Smartphone Teleoperation",
+    "content": "arXiv最新论文提出COBALT框架，让机器人模仿学习的大规模数据采集不再依赖昂贵的专用设备。用户只需一部（或两部）智能手机即可远程操控机器人，VR头显、3D鼠标和键盘也支持。系统利用矢量化环境和内存缓存，单GPU即可支持8个并发用户，实现20Hz刷新率和低于100ms的端到端延迟。8块GPU集群可承载256个并发客户端。研究表明，手机端遥操作效果与专业设备相当，这将极大降低机器人数据采集门槛。",
+    "quote": "终于，你摸鱼刷短视频的手机也能给机器人打工了——AI界的众包狂喜。",
+    "url": "https://arxiv.org/abs/2605.19138",
+    "source": "arXiv",
+    "published": "2026-05-21",
+    "uid": "industry_4cb3d320"
+  },
+  {
+    "title": "HEX: Humanoid-Aligned Experts for Cross-Embodiment Whole-Body Manipulation",
+    "content": "arXiv新论文HEX针对人形机器人全身操作难题提出创新方案。现有VLA（视觉-语言-动作）模型将机器人各部位独立处理，导致高自由度人形控制不稳定。HEX通过跨本体专家对齐策略，将人手操作知识迁移到人形机器人全身协调控制中，支持接触丰富的长时程操作任务。论文在仿真和实物平台上验证了该方法在处理复杂操作（如搬箱、开门等需要全身协同的任务）时显著优于现有基线。",
+    "quote": "让机器人学会用「全身」做事而不是只靠「手」——这可比教它说话难多了。",
+    "url": "https://arxiv.org/abs/2604.07993",
+    "source": "arXiv",
+    "published": "2026-05-21",
+    "uid": "industry_91262639"
+  },
+  {
+    "title": "PhyWorld: Physics-Faithful World Model for Video Generation",
+    "content": "arXiv新论文PhyWorld致力于解决视频生成模型「不懂物理」的痛点。现有视频生成模型能生成逼真画面但物体运动常违反物理规律（如杯子悬空、水向上流）。PhyWorld在扩散模型中融入物理约束，使生成视频中物体的运动轨迹、碰撞反应和流体行为符合真实物理。该研究指出物理可信的世界模型是Physical AI系统在部署前进行安全训练的关键基础设施。",
+    "quote": "AI终于学会「苹果会往下掉」了——离造一个真世界模拟器还差10,000篇论文。",
+    "url": "https://arxiv.org/abs/2605.19242",
+    "source": "arXiv",
+    "published": "2026-05-21",
+    "uid": "industry_95ecfffe"
+  },
+  {
+    "title": "HalluWorld: A Controlled Benchmark for Hallucination via Reference World Models",
+    "content": "arXiv新基准HalluWorld提出利用参考世界模型来系统评估LLM幻觉。现有幻觉基准在摘要、问答、RAG和智能体交互等场景间标准不统一，难以横向比较。HalluWorld通过构建可控的「参考世界」，为每种测试场景提供事实性标答，首次实现跨场景的幻觉率统一度量。在多个主流LLM上的测试显示，即使是顶尖模型在复杂推理场景中幻觉率仍超过30%。",
+    "quote": "30%的幻觉率——你AI写的东西有一小半是编的，这居然叫「进步」？",
+    "url": "https://arxiv.org/abs/2605.19341",
+    "source": "arXiv",
+    "published": "2026-05-21",
+    "uid": "industry_57328380"
+  }
+]
