@@ -1,0 +1,66 @@
+[
+  {
+    "title": "80386 Microcode Disassembled — 逆向工程将80386微码反汇编",
+    "content": "爱好者团队从高分辨率晶圆照片中成功提取并反汇编了80386处理器的微码ROM（94720位），远超此前8086的10752位。利用图像处理、神经网络和人工辅助自动化，将二进制转码为可读的微操作序列，并解析了ALU操作、寄存器寻址等字段含义。这是一次极其硬核的芯片逆向工程。",
+    "quote": "折腾完才发现，原来86架构的祖传bug从微码时代就开始了。",
+    "source": "Hacker News",
+    "url": "https://www.reenigne.org/blog/80386-microcode-disassembled/",
+    "published": "2026-05-23"
+  },
+  {
+    "title": "z386: 基于原始Intel微码的开源80386 FPGA实现",
+    "content": "z386是一个围绕Intel原始微码构建的FPGA CPU，不是逐指令模拟器，而是让恢复出的386控制ROM直接驱动硬件。现已能启动DOS 6/7、运行Doom和Cannon Fodder等游戏。代码仅8K行（对比ao486的17.6K），FPGA主频85MHz，性能约等于快速70MHz 386或低端486。五篇系列文章的收官之作。",
+    "quote": "用FPGA跑Doom的尽头，是让Intel 1985年的微码继续发光发热。",
+    "source": "Hacker News",
+    "url": "https://nand2mario.github.io/posts/2026/z386/",
+    "published": "2026-05-23"
+  },
+  {
+    "title": "Making Deep Learning Go Brrrr from First Principles — 深度学习性能优化从第一性原理出发",
+    "content": "PyTorch团队成员撰写的深度学习性能优化指南，将系统瓶颈分为三类：计算（GPU浮点运算实际耗时）、内存（张量传输带宽）和开销（其他一切）。指出不同瓶颈需要不同优化策略——比如要确定自己是compute-bound还是memory-bandwidth bound再动手，否则白费功夫。",
+    "quote": "优化前先问自己是哪类瓶颈，别上来就瞎调batch size。",
+    "source": "Hacker News",
+    "url": "https://horace.io/brrr_intro.html",
+    "published": "2026-05-23"
+  },
+  {
+    "title": "Improving C# Memory Safety — C# 16将重设计unsafe关键字",
+    "content": "微软正大幅改进C#的内存安全性，计划在C# 16中重新设计unsafe关键字——从标记指针语法转变为标记编译器无法验证安全性的所有代码操作。受Rust和Swift启发，新模型强制unsafe上下文传播约束，使得安全契约从隐式约定变为可见可审查的代码注解。预计.NET 11预览、.NET 12正式发布。",
+    "quote": "Rust：你们尽管抄，抄完记得关掉GC才算真兄弟。",
+    "source": "Hacker News / Microsoft DevBlogs",
+    "url": "https://devblogs.microsoft.com/dotnet/improving-csharp-memory-safety/",
+    "published": "2026-05-21"
+  },
+  {
+    "title": "Rubish: 纯Ruby编写的UNIX Shell",
+    "content": "Ruby大神松田明（amatsuda）发布了Rubish——一个完全用Ruby编写的UNIX shell。不只是用Ruby实现的shell，而是深度集成Ruby：shell语法被解析编译成Ruby代码由VM执行。支持全部bash语法特性，可运行现有bash脚本。最有趣的是可以用Ruby方法调用语法来运行命令、用花括号{}嵌入Ruby表达式作为条件判断。",
+    "quote": "Rubyists终于可以理直气壮地说：我的shell脚本也是优雅的Ruby了。",
+    "source": "Hacker News / GitHub",
+    "url": "https://github.com/amatsuda/rubish",
+    "published": "2026-05-23"
+  },
+  {
+    "title": "BambuStudio被指长期违反PrusaSlicer AGPL许可证",
+    "content": "Prusa Research创始人Josef Prusa公开指责BambuLab的BambuStudio软件自fork以来一直违反PrusaSlicer的AGPL许可证。AGPL要求衍生作品必须开源，但BambuStudio的修改代码未完全公开。此事在3D打印社区引发轩然大波，得分高达320分登上HN首页。开源许可证的执行问题再次成为焦点。",
+    "quote": "抄作业不署名还被班主任当众点名，3D打印圈的社死现场。",
+    "source": "Hacker News",
+    "url": "https://xcancel.com/josefprusa/status/2054602354851254330",
+    "published": "2026-05-23"
+  },
+  {
+    "title": "On The <dl> — HTML描述列表元素被低估了",
+    "content": "前端开发者Ben Myers写的一篇关于HTML `<dl>`（描述列表）元素的深度文章。指出`<dl>`远比开发者以为的更有用——它适用于键值对、属性列表、术语表等多种UI模式。文章详细讲解了`<dt>`和`<dd>`的组合方式（一个术语对应多个值）、用`<div>`包裹分组以便样式控制等高级用法。",
+    "quote": "前端工程师的浪漫：为一个HTML标签写一篇万字长文。",
+    "source": "Hacker News",
+    "url": "https://benmyers.dev/blog/on-the-dl/",
+    "published": "2026-05-23"
+  },
+  {
+    "title": "Spacelab计算机逆向工程——1980年法国造航天计算机拆解",
+    "content": "Ken Shirriff对1980年欧洲航天局Spacelab任务中使用的法制Mitra 125 MS小型机进行逆向工程。这台计算机不使用微处理器芯片，而是由多块板卡构建16位处理器。文章重点拆解了算术逻辑单元板，结合历史背景介绍Spacelab实验室、航天飞机货舱布局和这台欧洲计算机的技术细节。怀旧与技术考古的完美结合。",
+    "quote": "没有微处理器的计算机，反而比现在大多数IoT设备看着更可靠。",
+    "source": "Hacker News",
+    "url": "https://www.righto.com/2026/05/reverse-engineering-spacelab-computer.html",
+    "published": "2026-05-23"
+  }
+]
