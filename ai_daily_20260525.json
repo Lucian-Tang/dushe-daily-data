@@ -1,0 +1,122 @@
+{
+  "date": "2026-05-25",
+  "items": [
+    {
+      "title": "Self-Evolution through Source-Level Rewriting in Autonomous Agent Systems",
+      "content": "MOSS系统让AI智能体在生产环境中自我进化，通过源码级别的自 rewriting 修复结构性问题而非只是文本层。听起来像是终于有人承认了\"prompt engineering不够用\"这个事实——代码层才是硬骨头。实验证明，该方法将任务评分从0.25提升至0.61，单轮、无需人工干预。",
+      "quote": "prompt改来改去不如直接改代码，这话终于有人敢说出口了。",
+      "source": "ArXiv cs.AI",
+      "url": "https://arxiv.org/abs/2605.22794",
+      "published": "2026-05-22",
+      "uid": "7482be4a4ce412a6a8eb363bf7eb22ca"
+    },
+    {
+      "title": "Evaluating Commercial AI Chatbots as News Intermediary",
+      "content": "研究团队测试了Gemini、Grok、Claude、GPT等6个商业AI聊天机器人对BBC多语种新闻的准确率。最优模型在选择题上超90%，但开放性问题下掉11-17%；印地语最低仅79%——暴露了英语检索偏见。更可怕的是，19%-70%的题目含错误前提时模型直接摆烂接受假事实，最脆弱的模型64%概率信以为真。",
+      "quote": "一个bug，暴露了区域歧视、英美优先、假新闻照单全收三大问题。",
+      "source": "ArXiv cs.CL",
+      "url": "https://arxiv.org/abs/2605.22785",
+      "published": "2026-05-22",
+      "uid": "1cfeaca0df6e65b993ad15998352e474"
+    },
+    {
+      "title": "Self-Policy Distillation via Capability-Selective Subspace Projection",
+      "content": "自我蒸馏一直依赖外部信号筛选输出，SPD则另辟蹊径：从模型自己梯度中提取\"能力子空间\"，再据此投影KV激活值生成精选输出，无需任何外部信号。在代码生成、数学推理、QA任务上提升13%，跨领域泛化提升15%。终于有个不带外部信号的self-distillation方法不翻车了。",
+      "quote": "不带外挂还能打赢，说明LLM自己肚子里有货，就是不会用。",
+      "source": "ArXiv cs.CL",
+      "url": "https://arxiv.org/abs/2605.22675",
+      "published": "2026-05-22",
+      "uid": "f6faed7c23ec9962762c4bab66b7208e"
+    },
+    {
+      "title": "Tokenisation via Convex Relaxations",
+      "content": "BPE和Unigram等分词算法本质是贪心算法，只做局部最优。作者提出ConvexTok，用凸优化解线性规划来构建分词器，结果可证明与最优解的差距在1%以内，同时降低了bits-per-byte。算是给分词这个\"幕后英雄\"做了一次理论升级。",
+      "quote": "分词这种底层活儿也能搞优化理论，这帮人是真的闲得慌，但确实有点东西。",
+      "source": "ArXiv cs.CL",
+      "url": "https://arxiv.org/abs/2605.22821",
+      "published": "2026-05-21",
+      "uid": "167f2b36696fa586c83f15ea1fa4358f"
+    },
+    {
+      "title": "Efficient World Memory with World Retrieval and Compression",
+      "content": "WorldKV为视频扩散模型解决长时一致性问题：全KV缓存能保持一致性但随时间线性爆炸，滑动窗口能提速但丢长期记忆。WorldKV通过记忆检索+压缩，在保留2倍历史的前提下达到全KV的精度，同时吞吐量翻倍。视频生成Agents的持久化记忆终于有解了。",
+      "quote": "视频生成Agents记不住东西，等于每次都是金鱼——这问题总算有人认真对待了。",
+      "source": "ArXiv cs.CV",
+      "url": "https://arxiv.org/abs/2605.22718",
+      "published": "2026-05-22",
+      "uid": "e77991dd5298303a9519b590a7995c50"
+    },
+    {
+      "title": "Survival Diffusion Probabilistic Model for Continuous-Time Survival Analysis",
+      "content": "SDPM将扩散模型引入生存分析，无需对风险函数做结构假设也不需离散化时间轴。10个真实数据集上与树模型、Boosting模型、神经网络生存模型全面PK表现持平，还能更准确恢复连续生存分布。在医疗AI这种\"数据少要求准\"的领域，生成式方法终于找到了新战场。",
+      "quote": "扩散模型从图像一路卷到医疗预测，这跨界幅度堪称AI界的通用型选手。",
+      "source": "ArXiv cs.LG",
+      "url": "https://arxiv.org/abs/2605.22776",
+      "published": "2026-05-22",
+      "uid": "921e02d70423394dd530e5961b5af827"
+    },
+    {
+      "title": "Advancing LLM Agents on Realistic Spreadsheet Tasks via Reinforcement Learning",
+      "content": "Spreadsheet-RL用强化学习训练专门的Excel AI智能体，解决了通用LLM处理复杂多步电子表格任务时的无力感。包含从网络论坛自动采集的起止电子表格对，以及金融、供应链等领域的评估基准。LLM操控Office软件这件事，看来RL才是正解而非prompt。",
+      "quote": "让GPT操作Excel表格的痛苦，终于有人用RL来治了——早该如此。",
+      "source": "ArXiv cs.AI",
+      "url": "https://arxiv.org/abs/2605.22642",
+      "published": "2026-05-22",
+      "uid": "31ab664007840ddf691f6b8035b9cf99"
+    },
+    {
+      "title": "图灵测试尘埃落定：GPT-4.5胜率超真人，AI学会了完美撒谎",
+      "content": "UCSD最新研究登上PNAS，证明GPT-4.5在给定性格提示词后，被误认为人类的概率达73%，显著高于同场竞技的真人志愿者；开源旗舰LLaMa-3.1-405B也以56%胜率与真人无统计差异。核心发现颠覆认知：AI骗过人类靠的不是算力碾压，而是学会像人一样犯错、绕弯子、带情绪——「情感智能和缺陷」才是伪装的关键。论文联合作者指出：当AI能在15分钟自由对话中滴水不漏地冒充人类，互联网信任链的基础将彻底动摇。",
+      "quote": "AI学会了完美撒谎，问题是——你什么时候开始分不清屏幕对面是人还是算法？",
+      "source": "AIbase",
+      "url": "https://www.aibase.com/news/28255",
+      "published": "2026-05-24",
+      "uid": "8265b815838735874fbf711020b22d53"
+    },
+    {
+      "title": "B站2026年Q1财报：AI赋能广告狂飙，扭亏为盈进入新纪元",
+      "content": "B站发布里程碑式财报：Q1总营收74.7亿元，同比增7%；更关键的是净利润转正达2.02亿元（去年同期亏损1070万），调整后净利润5.85亿元，同比激增62%。广告收入25.9亿元，同比大涨30%，连续13个季度双位数增长。AI在其中扮演核心角色：自动化广告投放渗透率达85%，AI相关内容的观看时长环比增长44%，平均用户日使用时长逼近2小时。管理层明确将AI定义为「十倍历史机遇」，宣布今年AI资本支出增加10亿元。CFO表示这是为了坚定握住「AI未来票」，不在乎短期利润承压。",
+      "quote": "B站终于盈利了，结果最大功臣是AI——那些天天刷弹幕的人，你们才是副产品。",
+      "source": "AIbase",
+      "url": "https://www.aibase.com/news/28270",
+      "published": "2026-05-24",
+      "uid": "caf0d19d2d2a977287f965aff19af954"
+    },
+    {
+      "title": "马斯克、扎克伯格联手游说！特朗普紧急叫停美国AI监管令内幕曝光",
+      "content": "特朗普原定周四签署一项加强政府监管AI的行政令，却在签署仪式前数小时突然取消。据内幕消息，Meta CEO扎克伯格和xAI创始人马斯克在签署前夜直接致电特朗普，联手表达强烈反对，认为该法案是「AI悲观主义者」推动的不必要监管，只会给美国科技公司套上枷锁。此外，财政部主导数据共享条款引发CISA等部门权力斗争，草案要求企业在发布模型前90天向政府提交数据。目前白宫内部「促加速」派已占上风，监管令文本在各方利益博弈下越来越难协调。",
+      "quote": "两个世界首富一个电话就能让总统收回成命——所谓AI监管，就是顶层玩家的过家家。",
+      "source": "AIbase",
+      "url": "https://www.aibase.com/news/28260",
+      "published": "2026-05-24",
+      "uid": "1c0898b5d2f0ca79aba7fc17aea892e8"
+    },
+    {
+      "title": "字节跳动开源Lance 3B：一个脑子同时搞定图视理解与生成",
+      "content": "字节跳动研究团队正式开源统一多模态大模型Lance，以仅30亿激活参数实现全链路突破：图文视频理解、图片生成、视频生成三大任务用一个模型完美闭环。与业界「缝合」路线不同，Lance采用原生统一训练，引入双流MoE架构解决「理解」与「生成」能力冲突，并创新MaPE位置编码区分模态边界。训练全程仅用128张A100，四阶段精调后GRPO强化学习阶段引入PaddleOCR作为奖励模型专门解决AI图片文字错乱问题。开源协议极为友好（Apache 2.0），Hugging Face可直接下载，128卡即可全流程运行。",
+      "quote": "参数不到GPT-4的零头，功能却一个不落——开源社区又多了一个「贫穷战神」。",
+      "source": "AIbase",
+      "url": "https://www.aibase.com/news/28251",
+      "published": "2026-05-24",
+      "uid": "931fbbf61c685b40d264c339e7687490"
+    },
+    {
+      "title": "Spotify联手环球音乐推出AI翻唱与混音：正版版权的「降维打击」来了",
+      "content": "Spotify在2026投资者日抛出重磅炸弹：与环球音乐集团达成历史性战略授权协议，将允许Premium用户使用生成式AI对喜爱的歌曲进行合法翻唱（Covers）和混音（Remixes）。该工具被定位为付费附加功能，AI创作收益将直接与相关艺人和词曲作者分成。与Suno、Udio先侵权再和解的灰色路径不同，Spotify强调「事先同意、正当署名、公平补偿」三原则，股价当日暴涨13%。版权大战中Suno已向华纳支付5亿美元和解，Udio也相继与环球、华纳和解。Spotify直接绕过这个生态，在流媒体顶端建立正版渠道，对整个AI音乐行业格局产生深远影响。",
+      "quote": "先上车后补票的商业模式正式宣告终结——版权巨头用合法武器给AI音乐公司上了一课。",
+      "source": "AIbase",
+      "url": "https://www.aibase.com/news/28259",
+      "published": "2026-05-24",
+      "uid": "9ee54d1ce521a1ee9f15a74cd3c1c3e5"
+    },
+    {
+      "title": "DeepSeek Code即将上线：70亿美元估值独角兽杀入AI编程工具赛道",
+      "content": "DeepSeek宣布最新估值已突破70亿美元，并明确将战略重心转向AGI研究而非短期商业化，其中最受关注的产品是DeepSeek Code。公司已在官网开放多个相关岗位，包括「Agent Harness」产品经理和推理工程师。Harness被视为大模型执行、反馈与纠错的的核心系统，联合创始人崔天翼（TSY Capital联合创始人）将亲自带队。JD明确要求候选人有Claude Code、Codex等AI编程工具使用经验，显示DeepSeek对标竞品的野心。该产品虽未公开发布，但社区已出现第三方复刻版DeepSeek-TUI。",
+      "quote": "70亿估值做AI编程，DeepSeek这是要用「国家队」的打法正面硬刚Cursor和Claude Code。",
+      "source": "AIbase",
+      "url": "https://www.aibase.com/news/28268",
+      "published": "2026-05-24",
+      "uid": "8b3723441235adf6feaffc2e48f5b3b3"
+    }
+  ]
+}
