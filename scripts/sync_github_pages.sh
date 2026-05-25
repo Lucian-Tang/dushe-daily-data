@@ -147,7 +147,12 @@ git checkout staging 2>/dev/null || git checkout -b staging
 git add -u --ignore-removal .
 git add .
 git commit -m "📊 $(date +%Y-%m-%d) 日报数据自动推送" || log "[git] 无变更，跳过 commit"
-git push origin staging 2>&1 | tail -1
+git push origin staging 2>&1
+PUSH_EXIT=$?
+if [ $PUSH_EXIT -ne 0 ]; then
+    log "[git] 🔴 push 失败 (exit=$PUSH_EXIT)，pre-push hook 可能已拦截"
+    exit $PUSH_EXIT
+fi
 
 log "[done] ✅ 数据已推送至 staging 分支，待 promote 至 main 后上线"
 log "[done] sync OK | $(date)"
