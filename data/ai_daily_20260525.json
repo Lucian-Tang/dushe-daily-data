@@ -115,5 +115,77 @@
     "url": "https://www.aibase.com/news/28268",
     "published": "2026-05-25",
     "uid": "8b3723441235adf6feaffc2e48f5b3b3"
+  },
+  {
+    "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
+    "content": "微软研究院与上海交大联合提出SkillOpt框架，让LLM Agent通过add/delete/replace三操作自学优化技能，无需微调即可在部署中持续进化。MOSS系统让AI智能体在生产环境中自我进化，通过源码级别的自rewriting修复结构性问题而非只是文本层。实验证明该方法将任务评分从0.25提升至0.61，单轮、无需人工干预。",
+    "quote": "Agent开始自己写作业了，离反过来给人类打分还远吗",
+    "source": "arXiv",
+    "url": "https://huggingface.co/papers/2605.23904",
+    "published": "2026-05-25",
+    "uid": "81a2705b74aeadcfebcf10a42e7928da"
+  },
+  {
+    "title": "Shannon Scaling Law: LLMs as Noisy Channels",
+    "content": "字节跳动Seed团队提出Shannon Scaling Law，将LLM训练重新建模为噪声信道传输，用香农定理统一解释了灾难性过训练和量化退化等反常现象。这一理论框架有望为未来训练策略提供全新指引。",
+    "quote": "原来LLM是个蹩脚电台，信号放大过头全是噪音",
+    "source": "arXiv",
+    "url": "https://huggingface.co/papers/2605.23901",
+    "published": "2026-05-25",
+    "uid": "3db9daf86a962b68a3218f3c43688b9c"
+  },
+  {
+    "title": "NVIDIA Nemotron-Labs Diffusion: 打破自回归枷锁的扩散语言模型",
+    "content": "NVIDIA推出扩散语言模型Nemotron-Labs，支持并行生成多个token并迭代优化，打破传统自回归模型逐token生成的硬限制，同时可回溯修正早期错误。模型在多项基准上展现出色性能，为文本生成开辟新范式。",
+    "quote": "终于有人受不了一步步挤牙膏式生成文本了",
+    "source": "Hugging Face Blog",
+    "url": "https://huggingface.co/blog/nvidia/nemotron-labs-diffusion",
+    "published": "2026-05-25",
+    "uid": "664bdf4c66f94d1a1832b486f8985596"
+  },
+  {
+    "title": "StepAudio 2.5: 统一音频语言模型三项任务超越专用系统",
+    "content": "StepAudio 2.5统一音频语言基础模型在ASR、TTS和实时语音交互三项任务上均达到或超越专用系统，关键创新在于用RLHF替代标准监督学习做后训练，大幅提升多任务泛化能力。",
+    "quote": "一个模型干三个活，卷到同行无路可走",
+    "source": "arXiv",
+    "url": "https://huggingface.co/papers/2605.23463",
+    "published": "2026-05-25",
+    "uid": "56d750ee295cde7dbd5afa21cd8d521b"
+  },
+  {
+    "title": "AI芯片内存成本飙升：HBM占组件成本63%",
+    "content": "Epoch AI数据显示HBM内存占AI芯片组件成本从52%飙升至63%，2025年AI芯片总支出达520亿美元，HBM单项贡献了其中约200亿美元增量。AI芯片厂商正面临显存成本快速攀升的新挑战。",
+    "quote": "AI芯片快变成AI内存条了，英伟达含泪数钱",
+    "source": "Epoch AI",
+    "url": "https://epoch.ai/data-insights/ai-chip-component-cost-shares",
+    "published": "2026-05-25",
+    "uid": "c155117a5cb99023306a62d9717ef865"
+  },
+  {
+    "title": "360发布智能体安全报告：Skill成智能体风险新入口",
+    "content": "360 AI安全研究院发布《AI安全系列报告：智能体安全新范式》。报告指出AI安全核心从生成风险转向执行风险，Skill机制成为智能体生态重大风险入口。当AI有了手和脚，企业安全边界必须重建，AI执行风险已取代内容风险成为首要威胁。",
+    "quote": "以前怕AI说错话，现在怕AI动手打人",
+    "source": "新华网",
+    "url": "https://www.xinhuanet.com/tech/20260525/7bf4998c12894a7183432528ad25c756/c.html",
+    "published": "2026-05-25",
+    "uid": "13c28bb15bc4f16094bfc4c7ee63e540"
+  },
+  {
+    "title": "OpenAI用大模型攻克80年离散几何核心猜想",
+    "content": "OpenAI宣布其AI大模型成功攻克离散几何学中困扰学界近80年的核心难题——Erdős单位距离问题。这一突破标志着AI在数学领域的自主探索能力迈上新台阶，引发对人机科研协作模式的深刻讨论。",
+    "quote": "数学题不会做？让AI做，人类负责写论文署名",
+    "source": "ITBear科技资讯",
+    "url": "https://www.msn.cn/zh-cn/news/other/ai%E5%86%8D%E6%98%BE%E7%A5%9E%E9%80%9A-openai%E7%94%A8%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%94%BB%E5%85%8B80%E5%B9%B4%E7%A6%BB%E6%95%A3%E5%87%A0%E4%BD%95%E6%A0%B8%E5%BF%83%E7%8C%9C%E6%83%B3/ar-AA23Wnt4",
+    "published": "2026-05-25",
+    "uid": "5e2aec6d8e7fcdc9f65275e963a3d576"
+  },
+  {
+    "title": "Google I/O 2026：AI正式迈入智能体开发时代",
+    "content": "Google发布Gemini 3.5系列模型并升级Antigravity 2.0平台，推出Android CLI与代码迁移智能体，可将React Native等应用代码迁移为原生Kotlin，迁移时间从数周缩短至数小时。WebMCP开放标准同步亮相。",
+    "quote": "Google终于想起来自己是个开发者工具公司了",
+    "source": "电脑之家PChome",
+    "url": "https://article.pchome.net/content-2195759.html",
+    "published": "2026-05-25",
+    "uid": "8f9c753bd900766bbb9c38bf6c64cca4"
   }
 ]
