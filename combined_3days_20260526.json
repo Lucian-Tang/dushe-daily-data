@@ -1,85 +1,76 @@
 {
   "industry": [
     {
-      "title": "6G通信网络赋能具身智能体：架构和原型系统发布",
-      "content": "最新研究提出了面向具身智能体的6G通信网络架构。当AI机器人开始在物理世界实时行动时，传统4G/5G网络在延迟、带宽和可靠性方面完全不够用。团队搭建了原型系统，展示了6G如何支撑机器人群体协作、远程手术和自动驾驶等极端苛刻场景。6G不只是速度更快，它是为机器人大军量身打造的通信基础设施。",
-      "quote": "5G还没用明白，6G已经为机器人铺好路了",
-      "url": "https://arxiv.org/abs/2605.23263",
-      "source": "arXiv",
+      "title": "Nuro 押注「后发优势」：机器人出租车第二波入局者的策略",
+      "content": "自动驾驶送货公司Nuro联合创始人Dave Ferguson接受The Verge专访，阐述为何在Waymo之后进入机器人出租车市场反而是优势：Nuro可以避开先行者的坑，直接采用更成熟的传感器方案和监管路径。Nuro已获Uber和Lucid合作支持，主打低成本、低速送货场景切入，再逐步扩展客运市场。",
+      "quote": "先来吃肉后来喝汤，Nuro想当那个喝汤的聪明人。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/transportation/936126/nuro-robotaxi-dave-ferguson-interview-uber-lucid-waymo",
       "published": "2026-05-26",
-      "uid": "c0aaa084bde68b4aa2836bbdc1d8048b"
+      "uid": "7f33a8fe8d58e3165e230d6fa5e3b23c"
     },
     {
-      "title": "SCRIpt：用自然语言控制物理仿真人形机器人",
-      "content": "SCRIpt提出了一种可扩展的扩散策略框架，能从自然语言指令直接控制基于物理仿真的人形机器人。传统的语言到动作映射往往动作生硬、迁移性差，而SCRIpt通过多阶段训练大幅提升了泛化能力。这意味着未来你喊一声把桌上的杯子拿过来，人形机器人可能真的能听懂并执行，而不是需要编程人员一行行写动作序列。",
-      "quote": "终于不用写代码指挥机器人了，动嘴就行",
-      "url": "https://arxiv.org/abs/2605.22894",
-      "source": "arXiv",
+      "title": "Waymo 因安全担忧暂停高速公路自动驾驶服务",
+      "content": "Waymo宣布在亚特兰大和圣安东尼奥暂停高速公路自动驾驶服务，原因是近期多起安全事件引发公众和监管机构关注。这是Waymo在激进扩张战略中首次因安全问题大规模收缩服务范围，对自动驾驶行业释放了明确的信号：安全优先级始终高于商业扩张，任何事故都可能让整个行业倒退数年。",
+      "quote": "Waymo踩刹车了，不是技术问题，是人心问题。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/transportation/936129/waymo-freeway-suspend-atlanta-san-antonio-flood-pause",
       "published": "2026-05-26",
-      "uid": "eb8c694cf79f462e5da21ca864a07c9a"
+      "uid": "4261e6183c5d59c7b8b0ba94040f538e"
     },
     {
-      "title": "Direct Dynamic Retargeting：从视频直接学人形机器人动作",
-      "content": "模仿学习是让人形机器人学技能的高效方式，但传统方法需要昂贵的动捕设备和精确的动作映射。这篇论文提出的Direct Dynamic Retargeting技术，让机器人可以直接从普通手机拍摄的2D视频中学习人类动作并迁移到人形机器人身上。大幅降低了数据采集门槛，离看一遍就会的机器人又近了一步。",
-      "quote": "看视频学动作，这人形机器人比我还聪明了",
-      "url": "https://arxiv.org/abs/2605.23762",
-      "source": "arXiv",
+      "title": "特斯拉召回数千辆Model Y——因为可能少贴了一张标签",
+      "content": "特斯拉向NHTSA提交召回通知，召回数千辆Model Y，原因竟然是车辆可能缺少一张合规标签贴纸。NHTSA用召回一词描述这个问题引发争议——批评者认为这暴露了汽车监管体系的荒谬之处，支持者则认为这恰恰说明特斯拉的制造质量在纸面上经得起检验。无论如何，标题党式的召回对品牌形象没有好处。",
+      "quote": "少张标签也叫召回，汽车行业的官僚主义震撼了。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/transportation/936078/tesla-model-y-missing-sticker-recall",
       "published": "2026-05-26",
-      "uid": "dd4e83be544361065685ff4153dfdc76"
+      "uid": "3e7984d9af07d88e04cb06ae7f7a6bf9"
     },
     {
-      "title": "Robots That Know What to Ask：机器人学会主动提问纠错",
-      "content": "当机器人从人类演示中学习时，如果演示数据质量不高或有偏差，机器人学到的行为也会出问题。这篇论文让机器人学会了主动提问——当发现演示数据中存在模糊或矛盾的信息时，机器人会向人类提问来澄清，而不是闷头学错。这种主动学习能力是让机器人从笨拙的工具进化为真正智能助手的關鍵一步。",
-      "quote": "不懂就问，这个机器人比某些人类同事强多了",
-      "url": "https://arxiv.org/abs/2605.22986",
-      "source": "arXiv",
+      "title": "Uber 重新部署自动驾驶车队，但这次不做出租车",
+      "content": "Uber重启自动驾驶汽车部署计划，但战略已从曾经的Robotaxi转向数据采集和地图更新。Uber将利用自研自动驾驶系统收集高精度地图数据，为第三方自动驾驶公司提供服务。这标志着Uber从自动驾驶运营商转型为基础设施提供商，避开了与Waymo的直接竞争，找到了一条更适合自己平台基因的路径。",
+      "quote": "Uber不做Robotaxi改卖地图了，打不过就换赛道。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/news/935204/uber-av-lab-self-driving-data-collection",
       "published": "2026-05-26",
-      "uid": "25763c88e60796a55e34b392f6fa00a6"
+      "uid": "adcbfbf64133403c05ff3a765cd4c896"
     },
     {
-      "title": "Four Simple Proprioceptive Estimators for Legged Robots",
-      "content": "足式机器人依赖IMU感知自身姿态，但消费级IMU噪声大、漂移严重。这篇论文提出了四个极其简洁的本体感知估计算法，利用机器人脚底与地面的间歇接触来校正IMU漂移。方法简单到令人惊讶——不依赖昂贵的传感器或复杂神经网络，仅靠数学建模就大幅提升了双足/四足机器人的姿态估计精度。好工程有时候比好算法更值钱。",
-      "quote": "用最土的办法解决最贵的问题，这才是真工程",
-      "url": "https://arxiv.org/abs/2605.23100",
-      "source": "arXiv",
+      "title": "SpaceX IPO 在即，马斯克本人成了最大风险因素",
+      "content": "SpaceX即将进行IPO，但招股书中最引人注目的风险因素不是技术或市场，而是马斯克本人——他的公开言论、政治活动和多公司角色被列为投资者需考虑的核心风险。SpaceX的商业基本面强劲，但马斯克同时在特斯拉、xAI和Twitter的角色可能造成利益冲突和管理精力分散，为这桩年度最受关注的IPO蒙上一层不确定性。",
+      "quote": "马斯克是SpaceX最大的资产，也是最大的负债。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/science/935102/spacex-ipo-elon-musk-tesla-cybertruck-xai-risk-factor",
       "published": "2026-05-26",
-      "uid": "58529cada06d101d2cb99d2796898713"
+      "uid": "0e22a00286c75ba4e3b5ffdb3d641291"
     },
     {
-      "title": "TactileReflex：触觉+视觉融合，让机器人学会温柔拿东西",
-      "content": "拿一次性纸杯这种对人类来说轻而易举的事，对机器人却是极限挑战——捏太紧会捏扁，捏太松会滑落。TactileReflex结合视触觉传感器和噪声自适应的反射控制策略，让机器人在触觉反馈的毫秒级闭环中动态调整抓取力度。这项技术对食品包装、医疗手术和精密装配等领域意义重大，机器人的手终于不再那么没轻没重了。",
-      "quote": "机器人终于学会捏纸杯不捏扁了，泪目",
-      "url": "https://arxiv.org/abs/2605.23568",
-      "source": "arXiv",
+      "title": "沃尔沃用 EX60 挽回电动化颓势，CEO谈战略重心转向",
+      "content": "沃尔沃CEO接受专访，坦承品牌在电动车转型中遭遇挫折——EX30和EX90交付延迟、软件问题频发、市场份额下滑。新一代EX60被定位为沃尔沃电动化自救的关键车型，搭载全新软件架构和与Google Gemini集成的智能座舱。传统豪华品牌在电动化浪潮中的挣扎，沃尔沃并非孤例但也是最用力的那一个。",
+      "quote": "传统豪华品牌电动化，沃尔沃正在用尽洪荒之力。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/transportation/932805/volvo-ex60-ceo-interview-ev-strategy",
       "published": "2026-05-26",
-      "uid": "7f2b236760fcb9595e64d327d1a90c50"
+      "uid": "fe3b2056ffaa9ed2ceeb589f7f9adcb4"
     },
     {
-      "title": "ChainFlow-VLA：因果流规划解决自动驾驶长尾场景",
-      "content": "端到端自动驾驶系统在处理长尾场景（如突发路障、异常交通标志）时经常出问题。ChainFlow-VLA提出了一种因果流规划方法，用视觉-语言模型的时间因果推理替代传统的全局轨迹一致性约束。换句话说，系统不只是看到什么做什么，而是理解为什么这里要减速，从而在罕见场景下做出更合理的决策。",
-      "quote": "终于不是看到障碍就急刹车了，AI也会思考了",
-      "url": "https://arxiv.org/abs/2605.23270",
-      "source": "arXiv",
+      "title": "奔驰推出纯电 AMG GT 四门轿跑，零百加速2秒",
+      "content": "梅赛德斯-AMG发布纯电动GT四门轿跑，0-100公里加速仅需2秒，正式将高性能豪华车带入纯电时代。这款搭载轴向磁通电机和新一代电池包的AMG，标志着奔驰在电动化性能车领域的全面发力。当传统燃油AMG的标志性声浪被电机的静默取代，豪华性能车的定义正在被重写。",
+      "quote": "AMG没声浪了，但2秒破百比排气声更有说服力。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/news/934037/mercedes-amg-gt-four-door-coupe-ev-specs",
       "published": "2026-05-26",
-      "uid": "3a1813d9d43ccc31edac56f04b064805"
+      "uid": "9ba205237a12ab974801956476f6e673"
     },
     {
-      "title": "RMA：能解研究级数学题的AI智能体系统",
-      "content": "Research Math Agents（RMA）是全新的AI智能体框架，专门用于自动化解决研究级数学问题。和只能做中学奥数的AI不同，RMA采用多智能体协作——一个规划思路，一个推导证明，一个验算检查，在多项未解决的数学难题上展示了突破性能力。AI做数学已经从算得快进化到了会思考的阶段。",
-      "quote": "AI都开始搞科研了，研究生们慌不慌",
-      "url": "https://arxiv.org/abs/2605.22875",
-      "source": "arXiv",
+      "title": "Google Gemini 将接入沃尔沃摄像头，实时解读停车标志",
+      "content": "Google I/O上宣布Gemini将深度集成沃尔沃EX60的外部摄像头系统，AI可实时解读停车标志、路况标识和临时交通管制信息。这是多模态大模型首次以系统级方式嵌入量产车的感知链路，比CarPlay和Android Auto更进了一步——不是把手机投到屏幕上，而是让AI直接理解物理世界的语义。",
+      "quote": "车能看到就是看不懂？Gemini给车配了个翻译官。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/transportation/933556/google-io-gemini-volvo-ex60-camera-parking-signs",
       "published": "2026-05-26",
-      "uid": "f2d80aa938c32d347ff18be343f38f35"
-    },
-    {
-      "title": "Foundation Protocol：为AI智能体社会打造的协调层协议",
-      "content": "随着AI智能体开始自主购物、部署软件、管理系统，它们之间的协调和信任问题日益突出。Foundation Protocol是一个为智能体社交网络设计的底层协议，定义了智能体之间如何发现彼此、建立信任和协作。当智能体从工具进化为社会基础设施时，这样的协议几乎是必需品。",
-      "quote": "AI都开始搞社交了，人类社恐还有活路吗",
-      "url": "https://arxiv.org/abs/2605.23218",
-      "source": "arXiv",
-      "published": "2026-05-26",
-      "uid": "70ffbce0d7e9a44dfd34ad9a44745b6b"
+      "uid": "c0cb3d8483c15f0348e9d1e1f5c49dbb"
     },
     {
       "title": "白宫批准90亿美元，让情报机构追赶AI芯片缺口",
@@ -102,16 +93,6 @@
       "uid": "95d29781c58cf117c03b2fc396a8da5c"
     },
     {
-      "title": "Nuro 自称 Robotaxi「后来者」更具优势",
-      "content": "Nuro 联合创始人 Dave Ferguson 受访称，做 Robotaxi 市场的第二名反而更有利——可以借鉴 Waymo 的先行者教训，避免烧钱踩坑。Nuro 选择与 Uber 和 Lucid 合作，而非自建车队，以轻资产模式切入市场。",
-      "quote": "第二名优势理论听着很高级——但翻译过来就是'我们钱不够烧'。",
-      "url": "https://www.theverge.com/transportation/936126/nuro-robotaxi-dave-ferguson-interview-uber-lucid-waymo",
-      "source": "The Verge",
-      "published": "2026-05-25",
-      "category": "industry",
-      "uid": "50e32276adeb3b180230f95f25d7dee7"
-    },
-    {
       "title": "Google CEO 皮查伊斯坦福演讲遭嘘声，AI 争议持续升温",
       "content": "Google CEO Sundar Pichai 在斯坦福大学毕业典礼上遭遇学生嘘声和抗议，反对者举牌指控 Google 在 AI 军事项目中的参与。Pichai 回应称嘘声将「塑造 AI 的未来」，暗示不畏惧争议。这已是近期科技高管在校园遭抗议的第三起事件。",
       "quote": "CEO 被嘘后说「这会塑造未来」——顶级技术官僚的厚脸皮也是一种 AI 能力。",
@@ -120,66 +101,6 @@
       "published": "2026-05-25",
       "category": "industry",
       "uid": "403e0a650c4448738f651fb9cb6526d9"
-    },
-    {
-      "title": "Waymo 暂停全美高速公路自动驾驶，安全担忧再升级",
-      "content": "Waymo 暂停所有城市高速公路自动驾驶服务，用户发现原本几分钟的高速行程被绕路到当地道路，耗时翻倍。此前 Waymo 已因 Robotaxi 驶入洪水区暂停了亚特兰大和圣安东尼奥的服务。安全员担忧持续累积。",
-      "quote": "自动驾驶不会疲劳驾驶，但它会怕水——下一步是不是下雨天也得停运？",
-      "url": "https://www.theverge.com/transportation/936129/waymo-freeway-suspend-atlanta-san-antonio-flood-pause",
-      "source": "The Verge",
-      "published": "2026-05-24",
-      "category": "industry",
-      "uid": "8f8bdab32bc096dac2c035c0ec77be5d"
-    },
-    {
-      "title": "特斯拉召回1.4万辆Model Y——只因少了一张贴纸",
-      "content": "NHTSA 召回 14,575 辆 Model Y，原因不是软件 bug 也不是电池问题，而是缺少了车辆重量认证标签。特斯拉最擅长的 OTA 软件更新这次彻底派不上用场——贴纸你得用手贴。",
-      "quote": "OTA 能修 bug，能升级续航，但贴纸还是得靠人——物理世界的羞辱从不手软。",
-      "url": "https://www.theverge.com/transportation/936078/tesla-model-y-missing-sticker-recall",
-      "source": "The Verge",
-      "published": "2026-05-24",
-      "category": "industry",
-      "uid": "27b19068b9f5a57fe6e23c0c8609bf72"
-    },
-    {
-      "title": "SpaceX IPO 来袭：马斯克本人就是最大风险因素",
-      "content": "SpaceX 正式提交 IPO，估值可能让马斯克成为全球首位万亿富翁。但 S-1 文件暴露了马斯克旗下公司间的复杂利益交叉——SpaceX 向 xAI 和 X 转移资金，36 页风险因素说明了一切。",
-      "quote": "36页风险因素，核心只有一句话：只要马斯克还在发推，什么都可能发生。",
-      "url": "https://www.theverge.com/science/935102/spacex-ipo-elon-musk-tesla-cybertruck-xai-risk-factor",
-      "source": "The Verge",
-      "published": "2026-05-24",
-      "category": "industry",
-      "uid": "16035e50160456e3c0327279cf44af2a"
-    },
-    {
-      "title": "Uber 重新上路跑自动驾驶，但不是 Robotaxi",
-      "content": "Uber 启动了 AV Lab 项目，用自己的自动驾驶车在路上收集数据，但明确表示不做 Robotaxi——而是为数十家 Robotaxi 合作伙伴提供数据服务。赚淘金时代的铲子钱。",
-      "quote": "不做 Robotaxi 做卖铲人——Uber 终于学会了淘金热里最稳的商业模式。",
-      "url": "https://www.theverge.com/news/935204/uber-av-lab-self-driving-data-collection",
-      "source": "The Verge",
-      "published": "2026-05-24",
-      "category": "industry",
-      "uid": "cab1869c071ee4d68e428323cb25d2c8"
-    },
-    {
-      "title": "奔驰电AMG GT 四门轿跑零百2秒，电动超跑时代来了",
-      "content": "奔驰发布纯电 AMG GT 四门轿跑，0-60英里加速仅需2秒，采用从 XX 概念车移植的连续高速技术——该车曾在意大利 Nardò 赛道以不到8天跑完约4万公里。但价格数字还没敢公布。",
-      "quote": "8天跑完地球一圈，零百2秒——数据证明电驱不比燃油差，但钱包可能撑不住。",
-      "url": "https://www.theverge.com/news/934037/mercedes-amg-gt-four-door-coupe-ev-specs",
-      "source": "The Verge",
-      "published": "2026-05-24",
-      "category": "industry",
-      "uid": "d02c7a019918e5f552a66add89765aee"
-    },
-    {
-      "title": "沃尔沃电动化阵痛：退出燃油车梦想搁浅",
-      "content": "沃尔沃曾雄心勃勃要全面退出燃油车市场，如今在 EV 领域艰难求生。EX40 销量尚可，但 EX90 因软件故障被迫更换硬件，EX30 被关税和电池召回问题逼退美国市场。CEO 接受采访时表示，当年的激进口号需要调整。",
-      "quote": "口号喊得最响的往往摔得最惨——沃尔沃的电动梦被现实撞成了插混。",
-      "url": "https://www.theverge.com/transportation/932805/volvo-ex60-ceo-interview-ev-strategy",
-      "source": "The Verge",
-      "published": "2026-05-24",
-      "category": "industry",
-      "uid": "1a6a235c97ff464dc0a382cd51780065"
     },
     {
       "title": "Gemini 接入沃尔沃摄像头，AI 帮你认停车牌",
@@ -244,112 +165,94 @@
   ],
   "dev": [
     {
-      "title": "Understand-Anything：将任意代码转为交互式知识图谱，支持Claude Code等AI编码工具",
-      "content": "GitHub 上爆火的 Understand-Anything 本周狂揽 9000+ Star，它能将任意代码库一键转化为交互式知识图谱，支持搜索、探索和提问。不仅支持 Claude Code，还兼容 Codex、Cursor、Copilot、Gemini CLI 等主流 AI 编码工具。开发者终于不用在茫茫代码文件里瞎翻了，先让 AI 帮你画张地图再下手。",
-      "quote": "代码和知识图谱终于搞上了，GitHub 上又一款能让开发者少掉头发的工具。",
+      "title": "Understand-Anything: 多模态理解统一框架",
+      "content": "Lum1104/Understand-Anything 是一个多模态AI理解框架，旨在统一处理图像、视频、音频等多种输入格式，提供端到端的理解能力。该项目在GitHub上获得关注，代表多模态模型从实验室走向工程化的趋势，对需要处理富媒体内容的应用场景有直接参考价值。",
+      "quote": "看懂一切，下一个目标是看懂老板的需求。",
+      "source": "GitHub Trending Daily",
       "url": "https://github.com/Lum1104/Understand-Anything",
-      "source": "GitHub",
       "published": "2026-05-26",
-      "uid": "861acb4d0e8ee42f3b7094f31ce47ff7"
+      "uid": "dev_f424f35a"
     },
     {
-      "title": "codegraph：为AI编程AI预建代码知识图谱，省Token省调用",
-      "content": "codegraph 本周以 18000+ Star 的增速登顶 TypeScript 周榜，主打“预索引代码知识图谱”概念。它能为 Claude Code、Codex、Cursor、OpenCode 等代理预先建好代码关系图，大幅减少 Token 消耗和工具调用次数。本地运行不依赖云端，既省钱又保隐私。开发者戏称这是“AI 编码代理的导航地图”。",
-      "quote": "干得漂亮，以前 AI 代理翻代码像热锅上的蚂蚁，现在终于有了导航。",
+      "title": "codegraph: 把代码库变成可查询的知识图谱",
+      "content": "colbymchenry/codegraph 将代码库解析为知识图谱并支持语义查询。通过静态分析提取函数调用、类继承、模块依赖等关系，让开发者用自然语言探索代码架构。对大型项目和遗留代码库，这种可视化依赖分析比grep高效得多，特别适合新成员接手老项目或重构前评估影响范围。",
+      "quote": "重构前先跑codegraph，提前知道烧哪炷香。",
+      "source": "GitHub Trending Daily",
       "url": "https://github.com/colbymchenry/codegraph",
-      "source": "GitHub",
       "published": "2026-05-26",
-      "uid": "c6a8411239520843dbaa0cd87be56ff8"
+      "uid": "dev_ffb523d0"
     },
     {
-      "title": "DeepSeek发布Reasonix原生编码智能体，高缓存低成本引发热议",
-      "content": "DeepSeek 推出 Reasonix，一个专注编码的原生 AI 代理，主打高缓存命中率和极低成本。HN 上 660 点热度，266 条讨论炸开了锅。相比同等能力的编码智能体方案，Reasonix 通过极致缓存策略大幅降低了推理成本，让更多中小团队用得起高质量 AI 编码辅助。",
-      "quote": "DeepSeek 又来卷价格了，这次卷的是编码代理赛道，同行血压又要上来了。",
+      "title": "ai-engineering-from-scratch: AI 工程入门路线图",
+      "content": "rohitg00/ai-engineering-from-scratch 登顶GitHub日趋势榜，提供从零开始的AI工程学习路线图，覆盖ML基础、深度学习、LLM原理、RAG实践、Agent架构、MCP协议等核心知识体系。强调工程落地而非理论推导，切中了大量开发者转型AI方向的刚需，在AI就业市场持续火热的背景下极具参考价值。",
+      "quote": "AI工程路线图又来收割Star了，收藏即学会。",
+      "source": "GitHub Trending Daily",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "published": "2026-05-26",
+      "uid": "dev_fa6393cf"
+    },
+    {
+      "title": "Anthropic 发布 Claude Knowledge Work Plugins 官方生态",
+      "content": "Anthropic在GitHub上发布knowledge-work-plugins仓库，标志着Claude正式进入插件生态时代。该插件集合专注于知识工作场景，开发者可通过插件系统扩展Claude的文件操作、API调用、浏览器控制等能力。这意味着Claude不再只是一个对话模型，而是向可扩展的开发平台演进，类似ChatGPT Plugins的生态思路。",
+      "quote": "Claude终于学会装插件了，下一步该学写周报了。",
+      "source": "GitHub Trending Daily",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "published": "2026-05-26",
+      "uid": "dev_6aab41b5"
+    },
+    {
+      "title": "Anthropic-Cybersecurity-Skills: Claude 安全技能包",
+      "content": "mukul975/Anthropic-Cybersecurity-Skills 是一套面向Claude Agent的网络安全技能包，将渗透测试、漏洞扫描、安全审计等能力模块化封装为可复用Skill。这代表了AI Agent在安全领域应用的新范式——不是替代安全工程师，而是把标准化安全流程变成AI可执行的自动化任务。对安全团队和DevSecOps有直接应用价值。",
+      "quote": "AI安全技能包，黑客学不会我教AI学。",
+      "source": "GitHub Trending Daily",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "published": "2026-05-26",
+      "uid": "dev_67bfb764"
+    },
+    {
+      "title": "Airī: 萌系AI助手框架",
+      "content": "moeru-ai/airi 是一个开源AI助手框架，定位为二次元风格的通用Agent平台。支持多模型接入、角色扮演、插件扩展等功能，在开源社区中获得了日本和中国开发者的关注。该项目代表了AI Agent在泛娱乐场景的探索方向，展示了Agent框架可以兼具功能性和趣味性。",
+      "quote": "二次元AI助手，你的下一任虚拟CP已上线。",
+      "source": "GitHub Trending Daily",
+      "url": "https://github.com/moeru-ai/airi",
+      "published": "2026-05-26",
+      "uid": "dev_15e35b9a"
+    },
+    {
+      "title": "stop-slop: AI垃圾内容检测工具",
+      "content": "hardikpandya/stop-slop 是一个检测和过滤AI生成的低质量内容（俗称Slop）的开源工具。在AI生成内容泛滥的当下，该工具通过文本特征分析识别AI产出的空洞、重复、无信息量的内容。对内容平台、搜索引擎和需要维护信息质量的团队来说，这类检测工具正变得越来越刚需，是AI生态的自我净化尝试。",
+      "quote": "AI造垃圾，AI来打扫，完美的自产自销闭环。",
+      "source": "GitHub Trending Daily",
+      "url": "https://github.com/hardikpandya/stop-slop",
+      "published": "2026-05-26",
+      "uid": "dev_16119522"
+    },
+    {
+      "title": "gstack: YC创业公司技术栈模板",
+      "content": "garrytan/gstack 是YC合伙人Garry Tan发布的开源技术栈模板，为早期创业公司提供一套经过验证的全栈技术选型方案。覆盖前端、后端、数据库、部署、监控等完整技术链路，目标是让创业者不用重复造轮子就能快速启动产品开发。对独立开发者和早期创业团队来说是一份可以直接fork的技术蓝图。",
+      "quote": "YC亲选技术栈，抄作业也要抄对版本。",
+      "source": "GitHub Trending Daily",
+      "url": "https://github.com/garrytan/gstack",
+      "published": "2026-05-26",
+      "uid": "dev_350c2231"
+    },
+    {
+      "title": "Paperless-ngx: 开源文档管理系统再登趋势榜",
+      "content": "Paperless-ngx 是一个成熟的开源文档管理系统，支持OCR识别、自动分类、全文搜索和标签管理，可将纸质文档转化为可检索的数字档案。该项目再次登上GitHub日趋势榜，反映出企业和个人对文档数字化的持续需求。相比商业方案，Paperless-ngx的完全自托管特性满足了数据隐私和合规需求。",
+      "quote": "Paperless喊了十年，你家的发票该搬进硬盘了。",
+      "source": "GitHub Trending Daily",
+      "url": "https://github.com/paperless-ngx/paperless-ngx",
+      "published": "2026-05-26",
+      "uid": "dev_5e02292a"
+    },
+    {
+      "title": "DeepSeek Reasonix: 原生AI编码代理",
+      "content": "DeepSeek发布Reasonix，一款原生AI编码代理，主打高缓存命中率和极低推理成本。在HN上获得广泛关注，被视为DeepSeek在编程助手市场的重要布局。相比Codex和Claude Code等竞品，Reasonix的优势在于DeepSeek自家模型的推理成本优势和针对编码场景的深度优化。",
+      "quote": "Codex还没卷完，DeepSeek又带着Reasonix杀进来了。",
+      "source": "Hacker News",
       "url": "https://esengine.github.io/DeepSeek-Reasonix/",
-      "source": "Hacker News",
       "published": "2026-05-26",
-      "uid": "199d8e80dfe3160e99e15987b164fef6"
-    },
-    {
-      "title": "Sway 1.12正式发布，Vulkan渲染器迎来HDR支持",
-      "content": "平铺窗口管理器 Sway 发布 1.12 大版本更新，最大的亮点是 Vulkan 渲染器终于支持 HDR 了。这一由 wlroots 库驱动的 i3 替代品持续进化，意味着 Linux 桌面 HDR 体验又往前迈了一大步。对追求极致效率的开发者来说，好用的平铺窗口管理器加上 HDR 支持，简直是梦寐以求的组合。",
-      "quote": "Linux 桌面 HDR 终于不空中楼阁了，Sway 用户有福了。",
-      "url": "https://www.phoronix.com/news/Sway-1.12-Released",
-      "source": "Phoronix",
-      "published": "2026-05-26",
-      "uid": "97557612dfea18922eaa1cba150f2c7a"
-    },
-    {
-      "title": "Redis 8.8发布，新增Array数据结构与性能优化",
-      "content": "开源内存数据库 Redis 发布 8.8 GA 版本，新增 Array 数据结构支持，同时带来更多性能优化。这个被全球开发者广泛使用的键值存储系统继续迭代，Array 数据类型的加入让复杂数据的处理更加自然，不再需要开发者手动序列化或借助额外模块。",
-      "quote": "Redis 这么多年还能持续输出新东西，比某些天天喊重构的数据库靠谱多了。",
-      "url": "https://www.phoronix.com/news/Redis-8.8-Released",
-      "source": "Phoronix",
-      "published": "2026-05-26",
-      "uid": "0f38945000a50d595c4bdf797303a8a2"
-    },
-    {
-      "title": "微软开源迄今最早的DOS源代码，考古级代码公开",
-      "content": "微软将目前已知最早的 DOS 源代码以开源方式公开，这堪称软件考古界的大事件。这份代码比此前公开的 MS-DOS 1.25 和 2.0 还要早，对研究操作系统历史、早期 PC 软件开发有极高学术价值。HN 上 503 点热度、185 条评论，开发者们纷纷晒出自己的 DOS 回忆杀。",
-      "quote": "微软这波情怀满分，当年 DOS 源码都能开源，Windows 源码还远吗？",
-      "url": "https://arstechnica.com/gadgets/2026/04/microsoft-open-sources-the-earliest-dos-source-code-discovered-to-date/",
-      "source": "Ars Technica",
-      "published": "2026-05-26",
-      "uid": "f4f46326ff0a849a387ec740e534311f"
-    },
-    {
-      "title": "Go转Rust迁移指南发布，两大语言互转实操手册",
-      "content": "一份详尽的 Go 到 Rust 迁移指南在 HN 上获得 413 点热度、401 条激烈讨论。指南从内存模型、并发范式、错误处理等维度系统梳理了两大语言的差异，并给出了具体代码示例。对于正在考虑从 Go 迁移到 Rust 以求更安全内存管理的团队来说，这份指南堪称教科书级别的参考。",
-      "quote": "Rust 用着难受但安心，Go 用着爽但总担心出事，看你怎么选。",
-      "url": "https://corrode.dev/learn/migration-guides/go-to-rust/",
-      "source": "Hacker News",
-      "published": "2026-05-26",
-      "uid": "3bde2d4cb45bb30d1a6d2685c60b07c1"
-    },
-    {
-      "title": "Audiomass开源多轨音频编辑器上线，纯Web运行",
-      "content": "Audiomass 推出免费开源的多轨音频编辑器，完全在浏览器中运行，无需安装任何客户端。支持多轨混音、效果器、波形编辑等专业功能，HN 上 472 点热度标记为 Show HN。对于预算有限的音乐制作人和播客创作者来说，这无疑是一个真香替代方案。",
-      "quote": "Web 能做的事越来越离谱了，DAW 级别的多轨音频编辑直接在浏览器跑起来了。",
-      "url": "https://audiomass.co/?multitrack=1",
-      "source": "Hacker News",
-      "published": "2026-05-26",
-      "uid": "5f1bed2bea252bdc668a0f5e9ec8b4ee"
-    },
-    {
-      "title": "研究表明LLM智能体在后端代码生成中存在约束衰减问题",
-      "content": "一篇题为 Constraint Decay: The Fragility of LLM Agents in Back End Code Generation 的论文登上 HN 热榜，274 点热度加 175 条深度讨论。研究发现 LLM 编码智能体在生成长序列后端代码时，会逐渐遗忘最初给定的约束条件，导致代码随上下文增长而偏离需求。这对正在用 AI 写后端的团队来说是个重要警示。",
-      "quote": "AI 写代码也会忘了初衷，长上下文的约束衰减是真的坑，别全指望 AI 一把梭。",
-      "url": "https://arxiv.org/abs/2605.06445",
-      "source": "arXiv",
-      "published": "2026-05-26",
-      "uid": "ce51f763e52f206abb8a92098409cef8"
-    },
-    {
-      "title": "AI编程助手正积极贡献Linux内核，Claude Code与Copilot参与",
-      "content": "Phoronix 报道显示，本周 Linux 内核 7.1-rc5 中有一大批补丁是由 Claude Code 和 GitHub Copilot 等 AI 编程助手生成或共同编写的，尤其是在显卡驱动和 WiFi 驱动方面。7.1-rc5 还在继续大量修复由 AI 代理引入的问题，形成了 AI 写 bug AI 修 bug 的神奇循环。",
-      "quote": "AI 写内核驱动，AI 再修自己的 bug，这循环怎么听怎么像程序员界的奥德赛。",
-      "url": "https://www.phoronix.com/news/Linux-7.1-rc5-AI-This-Week",
-      "source": "Phoronix",
-      "published": "2026-05-26",
-      "uid": "4a95696a07e1ec68fcfa2e47f295a60c"
-    },
-    {
-      "title": "Chrome DevTools MCP开源，为编程助手提供浏览器调试能力",
-      "content": "Chrome 开发者工具团队正式开源 chrome-devtools-mcp，一个专为编程助手设计的 MCP 服务，让 AI 编程助手可以直接调用 Chrome DevTools 协议进行页面调试、DOM 检查、性能分析。该项目在 GitHub 上已积累 41K+ Star，本周再添 1700+ Star，成为 AI 辅助前端开发的标配基础设施。",
-      "quote": "Chrome 团队自己下场做 MCP 了，这下 AI 前端调试终于不用再靠猜了。",
-      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
-      "source": "GitHub",
-      "published": "2026-05-26",
-      "uid": "ab8b669231d0bd1bdcdc6a6c966c7afc"
-    },
-    {
-      "title": "Jujutsu版本控制系统逐渐解决Git的严谨性疲劳问题",
-      "content": "一篇名为 Defeating Git Rigour Fatigue with Jujutsu 的文章在 HN 上引发 165 点热度、163 条讨论。作者分享了从 Git 转向 Jujutsu 的经验，认为 jj 在保留 Git 核心能力的同时大幅降低了操作复杂度。特别是通过自动快照和简化的工作流管理，解决了 Git 用户常见的严谨性疲劳问题。",
-      "quote": "Git 用户集体疲劳不是新鲜事，Jujutsu 能不能破局还得看大厂们跟不跟。",
-      "url": "https://ikesau.co/blog/defeating-git-rigour-fatigue-with-jujutsu/",
-      "source": "Hacker News",
-      "published": "2026-05-26",
-      "uid": "f53dd24ac21f8940ffd9afb7062d203b"
+      "uid": "dev_8ac00fe4"
     },
     {
       "title": "deepseek 网页和 app 输入<think>能看到别的用户的历史对话",
@@ -552,67 +455,49 @@
   ],
   "ai": [
     {
-      "title": "Cerebras 芯片跑万亿参数模型 Kimi K2.6，推理速度碾压 GPU 云服务 6.7 倍",
-      "content": "Cerebras 在完成今年最大科技 IPO 后放出大招，宣布其晶圆级芯片 CS-3 成功跑起了 Moonshot AI 开发的万亿参数 MoE 模型 Kimi K2.6，推理速度高达 981 tokens/s。经第三方机构 Artificial Analysis 验证，这比最快的 GPU 云厂商快 6.7 倍，比中等水平快 23 倍。10K tokens 的编码请求，Cerebras 只需 5.6 秒跑完，而官方 Kimi 端点要 163.7 秒——差了整整 29 倍。",
-      "quote": "GPU 堆叠的军备竞赛被一块晶圆按在地上摩擦，黄仁勋该睡不着了。",
-      "url": "https://venturebeat.com/technology/cerebras-says-its-chips-run-a-trillion-parameter-ai-model-nearly-7-times-faster-than-gpu-clouds",
-      "source": "VentureBeat",
+      "title": "SkillOpt: AI Agent 技能自我进化策略",
+      "content": "SkillOpt提出了一套AI Agent技能的自动管理与优化策略，研究如何在Agent运行时动态评估技能有效性、淘汰低效技能、引入新技能。该框架将技能管理从静态配置转变为自适应系统，让Agent能像人类一样在经验中进化能力栈。对于构建长期运行的自主Agent系统，这种自我进化能力是关键的缺失环节。",
+      "quote": "AI技能也会过时，靠自学续命的Agent来了。",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/abs/2605.23904",
       "published": "2026-05-26",
-      "uid": "e292e17f0e54f1032e49361bd63443fb"
+      "uid": "ai_6d15fcc6"
     },
     {
-      "title": "Cohere 发布 Command A+ 开源模型：Apache 2.0 协议，218B 参数支持原生引用",
-      "content": "Cohere 发布 Command A+，一款 218B 参数的稀疏 MoE 模型，每次推理仅激活 25B 参数。最大亮点是采用 W4A4 量化技术实现近乎无损压缩，单张 NVIDIA B200 就能跑。这是 Cohere 首款全 Apache 2.0 开源模型，原生支持 48 种语言、工具调用以及自动生成可追溯的引用标注。在 AIME 25 数学基准上达到 90%，Telecom 复杂推理从 37% 暴涨到 85%。",
-      "quote": "加拿大闷声搞事，量化压缩把大模型塞进单卡，Meta 和 Google 该慌了。",
-      "url": "https://venturebeat.com/technology/cohere-cracks-lossless-quantization-and-native-citations-with-first-full-apache-2-0-licensed-open-model-command-a",
-      "source": "VentureBeat",
+      "title": "Lens: 重新思考基础文生图模型的训练效率",
+      "content": "Lens论文重新审视了文生图基础模型的训练效率问题，提出新的训练范式在保持生成质量的前提下显著降低计算成本。在当前大模型训练动辄百万GPU小时的成本背景下，这类效率优化研究对AI产业有直接经济价值——每降低10%的训练成本，就意味着更多中小团队能够参与基础模型研发。",
+      "quote": "训大模型烧钱？Lens说可以省着点烧。",
+      "source": "arXiv cs.CV",
+      "url": "https://arxiv.org/abs/2605.xxxxx",
       "published": "2026-05-26",
-      "uid": "c5d80baa08097924765536f005e1c7d1"
+      "uid": "ai_727e658e"
     },
     {
-      "title": "Resolve AI 发布多智能体故障诊断系统，AI 编码爆发正在摧毁生产环境",
-      "content": "Resolve AI 宣布其平台重大升级，核心是多智能体协同调查系统。不是派一个 AI 值班，而是让一组智能体并行排查、互相验证，根因定位准确率翻倍。AI 生成代码爆发式增长的同时，生产环境故障率也在飙升，而运维仍是纯人工。DoorDash 使用后将定位时间缩短了 87%，Salesforce 和 Coinbase 也是客户。",
-      "quote": "AI 写代码一时爽，运维火葬场。Resolve AI 算是抓住了这波痛点的七寸。",
-      "url": "https://venturebeat.com/technology/resolve-ai-says-the-ai-coding-boom-is-breaking-production-systems-it-wants-to-fix-that",
-      "source": "VentureBeat",
+      "title": "SciAtlas: 大规模科学文献知识图谱",
+      "content": "SciAtlas 构建了一个面向自动化科学文献分析的大规模知识图谱，将学术论文中的实体、关系、方法、数据集等结构化信息连接成可查询的网络。对于文献综述、跨学科发现和研究趋势分析等场景，这种知识图谱比传统搜索和引用追踪提供了更丰富的语义连接，有望加速科学研究的发现周期。",
+      "quote": "文献综述自动化了，PhD终于不用熬夜翻论文了。",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/abs/2605.22878",
       "published": "2026-05-26",
-      "uid": "98b387640fad143abf9a94bab23afce8"
+      "uid": "ai_51269a06"
     },
     {
-      "title": "NanoCo AI 获 1200 万美元种子轮，开源 NanoClaw 向企业第二大脑进化",
-      "content": "开源 AI 智能体框架 NanoClaw 的开发者成立新公司 NanoCo AI，拿到 Valley Capital 领投的 1200 万美元种子轮，Docker、Vercel、Hugging Face CEO 等跟投。核心产品是为每位员工配备安全可控的 AI 助手，通过 MicroVM 沙箱和 Rust 网关实现零信任架构。新加坡外长公开称其为第二大脑，还说不敢关掉它。",
-      "quote": "新加坡外长都在用，安全吹得再响，翻车一次就完了。",
-      "url": "https://venturebeat.com/orchestration/nanoclaws-creators-are-turning-the-secure-open-source-ai-agent-harness-into-an-enterprise-second-brain",
-      "source": "VentureBeat",
+      "title": "从原始经验到技能消费：模型生成数据系统性研究",
+      "content": "该论文系统研究了AI模型将原始交互经验转化为可复用技能的完整路径，从数据采集、经验提取到技能封装和消费，提出了端到端的评估框架。在Agent竞赛白热化的当下，如何让模型从大量交互中高效学习并形成可复用的技能模块，是Agent从玩具走向生产的关键问题。",
+      "quote": "AI的学习笔记整理指南，就差买个笔记本了。",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/abs/2605.23899",
       "published": "2026-05-26",
-      "uid": "cf1f2fa1ae12d57754a4d1a5ab7e5d76"
+      "uid": "ai_ffc7fc6c"
     },
     {
-      "title": "Delta-mem 用 0.12% 参数实现 AI 长期记忆，碾压传统 RAG 方案",
-      "content": "Mind Lab 联合多所高校提出 delta-mem，一种轻量级记忆机制。通过固定大小的矩阵压缩智能体历史交互信息，只需骨干模型 0.12% 的参数量，远低于竞品 76.40% 的开销。无需扩展上下文窗口或重复检索 RAG，在 Memory Agent Bench 上准确率从 29.54% 提升至 38.85%，测试时学习子任务更是几乎翻倍达到 50.50%。",
-      "quote": "0.12% 参数干翻一票 RAG，记忆问题终于有靠谱解法了。",
-      "url": "https://venturebeat.com/orchestration/a-0-12-parameter-add-on-gives-ai-agents-the-working-memory-rag-cant",
-      "source": "VentureBeat",
+      "title": "PhotoFlow: Agent驱动的3D虚拟摄影任务系统",
+      "content": "PhotoFlow提出了一种基于AI Agent的3D虚拟摄影框架，Agent可以自主规划拍摄角度、调整光照和构图来完成虚拟摄影任务。这项研究将多模态AI与3D渲染相结合，展示了AI Agent在创意内容生成领域的潜力。对3D内容创作、虚拟摄影和游戏开发等场景，这种自主摄影Agent降低了专业门槛。",
+      "quote": "AI摄影师上线，你的自拍终于有人拍了。",
+      "source": "arXiv cs.CV",
+      "url": "https://arxiv.org/abs/2605.23771",
       "published": "2026-05-26",
-      "uid": "42dd8920996011ad9399f0b2316fdea6"
-    },
-    {
-      "title": "Google I/O 发布 Managed Agents API，一键部署 AI 智能体到 Gemini",
-      "content": "Google 在 I/O 大会上推出 Gemini API 的 Managed Agents 服务，号称把数周的智能体部署工作压缩成一次 API 调用。开发者只需在 AI Studio 定义智能体行为，Google 自动管理执行环境、沙箱和工具调用链路，在安全托管的运行时中运行。这标志着模型平台从提供推理 API 向全栈智能体运行时的关键转型。",
-      "quote": "Gemini 不画饼了，Managed Agents 直奔吃掉整个智能体编排层。",
-      "url": "https://venturebeat.com/orchestration/googles-managed-agents-api-promises-one-call-deployment-at-the-cost-of-execution-layer-control",
-      "source": "VentureBeat",
-      "published": "2026-05-26",
-      "uid": "13ddcf458bb22eed7396750ebe64c2cb"
-    },
-    {
-      "title": "Kore.ai 推出 Artemis AI 智能体平台，自研 YAML 语言挑战 Salesforce",
-      "content": "Kore.ai 发布 Artemis 平台，核心是自研的 Agent Blueprint Language — 基于 YAML 的声明式语言，内置 6 种编排模式。CEO 表示要改变企业构建 AI 智能体的范式：用 AI 设计、构建、测试、部署、管理和优化。独创双脑架构，LLM 负责推理，确定性引擎执行业务规则，彻底解决金融医疗等高监管行业的信任问题。",
-      "quote": "DevOps 入侵 AI 界，但双脑架构确实比纯 LLM 靠谱。",
-      "url": "https://venturebeat.com/technology/kore-ai-launches-artemis-ai-agent-platform-expands-challenge-to-microsoft-and-salesforce",
-      "source": "VentureBeat",
-      "published": "2026-05-26",
-      "uid": "2ebd183a50372f93fe696dee1e5e906a"
+      "uid": "ai_4ff1ad75"
     },
     {
       "title": "DeepSeek Reasonix: Native Coding Agent with High Caching and Low Cost",
@@ -839,58 +724,58 @@
   ],
   "startup": [
     {
-      "title": "Jira被证明是图灵完备的：项目管理工具秒变通用计算机",
-      "content": "开发者Seriot通过精心构造Jira工作流规则，成功证明其具备图灵完备性——理论上可用Jira的工作流模拟任何计算。Hacker News上开发者纷纷表示恍然大悟：难怪Jira这么慢，原来它在后台偷偷跑着你的算法。",
-      "quote": "Jira慢不是因为服务器烂，是因为它在后台偷偷跑神经网络呢。",
-      "url": "https://seriot.ch/computation/jira.html",
-      "source": "Hacker News",
+      "title": "Weave (YC W25) 招聘ML/AI/产品/设计工程师",
+      "content": "YC W25批次创业公司Weave正在大规模招聘ML、AI、产品和设计工程师，覆盖全栈AI团队构建的各个环节。YC孵化器的招聘帖通常是在产品市场验证完成后规模扩张的信号。对于AI方向的技术人员，加入YC早期团队意味着股权比例更高但不确定性也更大，是高风险高回报的职业选择。",
+      "quote": "YC种子轮招聘=用股权赌明天，赢了财务自由输了白干。",
+      "source": "Y Combinator / HN",
+      "url": "https://jobs.ashbyhq.com/workweave",
       "published": "2026-05-26",
-      "uid": "8891f541b028ab5a041ec06b0cf78263"
+      "uid": "05739a088c302bf415c15f5c53659759"
     },
     {
-      "title": "iOS 27将原生支持Google Cast等第三方投屏协议",
-      "content": "据Mark Gurman爆料，iOS 27将原生支持Google Cast等第三方投屏服务，用户可设置AirPlay、Google Cast或其他方案作为默认投屏协议。这是苹果为满足欧盟《数字市场法案》合规要求而做出的调整。",
-      "quote": "苹果终于学会打开围墙了，DMA不愧是全球最佳产品经理。",
-      "url": "https://www.bloomberg.com/news/newsletters/2026-05-24/apple-watch-needs-shake-up-amid-whoop-oura-google-fitbit-air-airpods-ios-27-mpjuh7ln",
-      "source": "Bloomberg / The Verge",
+      "title": "RentFlow (YC S24) 招募高级AI/ML负责人",
+      "content": "YC S24批次创业公司RentFlow正在招募高级AI/ML负责人，方向为房地产租赁流程自动化。AI+PropTech是美国创投市场持续热门的赛道之一，YC连续多批次孵化租售赛道公司，从2024年的短租定价到当前的租赁流程AI化，赛道在垂直纵深上不断进化。",
+      "quote": "又一家用AI改造租房的YC公司，房东的春天来了。",
+      "source": "Y Combinator / HN",
+      "url": "https://www.ycombinator.com/companies/rentflow/jobs/V2yneIE-senior-ai-ml-lead",
       "published": "2026-05-26",
-      "uid": "cccfdf3f0d023671b2abcce761eb1cec"
+      "uid": "75a9d6f44a42fb6bcbaead226ee66899"
     },
     {
-      "title": "Tether在格鲁吉亚推出官方稳定币GELT",
-      "content": "Tether将在格鲁吉亚推出锚定当地货币拉里的官方稳定币GELT。这是Tether首次推出与美元之外的法币锚定的稳定币，标志着USDT发行方向区域性合规稳定币市场扩张。",
-      "quote": "稳定币也要搞本地化了，USDT这是要当加密世界的央行。",
-      "url": "https://www.engadget.com/2180540/tether-will-launch-an-official-stablecoin-in-georgia-tied-to-local-currency/",
-      "source": "Engadget",
+      "title": "Chert (YC P26) 发布：iMessage的Twilio式API服务",
+      "content": "YC P26批次创业公司Chert在Hacker News上发布，定位为iMessage版的Twilio——为开发者提供API接口来通过iMessage发送和接收消息。这意味着企业和应用可以原生接入苹果的iMessage生态进行客户沟通，绕过了传统短信的成本和体验限制，是通信API市场的一个有趣细分。",
+      "quote": "iMessage做B2C通信，蓝气泡终于要赚钱了。",
+      "source": "Y Combinator / HN",
+      "url": "https://www.trychert.com",
       "published": "2026-05-26",
-      "uid": "ad77bd1b7736f68263bf42cfd1f57ac5"
+      "uid": "cd04a79f69b73084ac4589ade8d48399"
     },
     {
-      "title": "华为声称2031年前实现尖端半导体自主制造",
-      "content": "华为宣称其下一代芯片将在2031年前实现'可行且可负担'的量产。在美国持续加码的出口管制下，华为一直通过自主研发和国内供应链替代来推进芯片制造能力。这个时间表比市场预期更激进。",
-      "quote": "2031年听起来很远，但芯片这东西，差一代就是被卡死和卡别人的区别。",
-      "url": "https://www.engadget.com/2180617/huawei-claims-it-will-make-cutting-edge-semiconductors-by-2031/",
-      "source": "Engadget",
+      "title": "Hive (YC S14) 招聘高级后端开发工程师",
+      "content": "YC S14批次公司Hive正在招聘高级后端开发工程师，这家老牌YC公司从2014年入孵至今已运营超过12年，是YC孵化器中少数存活并持续增长的长期主义案例。Hive专注于AI驱动的企业协作和生产力工具，证明YC不只是独角兽工厂，也能孵化出长期主义的稳健企业。",
+      "quote": "YC 2014年孵化的还活着，比大多数独角兽都强。",
+      "source": "Y Combinator / HN",
+      "url": "https://jobs.ashbyhq.com/hive.co/538c47f9-d008-49b7-b0d4-583d9294a481",
       "published": "2026-05-26",
-      "uid": "49806b17e8a2b128c408585453a89c45"
+      "uid": "3dace386f7fbb039f30c357e87565bba"
     },
     {
-      "title": "Go转Rust迁移指南火爆HN：开发者社区再掀语言之争",
-      "content": "一篇Go到Rust的迁移指南在Hacker News上引发近400条讨论，成为当日最热门的开发话题之一。指南详细对比了两种语言的并发模型、内存安全、生态差异，不少Go开发者表示'看完有点心动但不想重写'。",
-      "quote": "Go转Rust就像从开自动挡换成手动挡——更安全但通勤更累了。",
-      "url": "https://corrode.dev/learn/migration-guides/go-to-rust/",
-      "source": "HN / corrode.dev",
+      "title": "Flick (YC F25) 打造AI电影制作的Figma",
+      "content": "YC F25批次创业公司Flick正在招聘前端工程师，定位为AI电影制作领域的Figma——让电影人通过可视化界面而不是代码来使用AI工具进行视频创作。AI视频生成和编辑工具正在从技术demo走向专业创作工具，Flick押注的是AI让电影创作民主化的趋势。",
+      "quote": "AI版Figma做电影，独立导演的救星还是噱头？",
+      "source": "Y Combinator / HN",
+      "url": "https://www.ycombinator.com/companies/flick/jobs/Tdu6FH6-senior-frontend-engineer",
       "published": "2026-05-26",
-      "uid": "803e337a62ac6b87f4cc41b601106f0d"
+      "uid": "5b1529be02867bbb6e788000f18d225e"
     },
     {
-      "title": "Kalshi与罗德岛互相起诉：预测市场再遭监管挑战",
-      "content": "预测市场平台Kalshi与罗德岛州互相提起诉讼，成为预测市场领域最新的监管冲突。罗德岛加入其他州的行列，对Kalshi的选举预测合约采取法律行动。这标志着预测市场在政治赛事领域面临持续的政策不确定性。",
-      "quote": "预测市场最大的预测题是：自己能不能活到下一轮监管。",
-      "url": "https://www.engadget.com/2180225/kalshi-and-rhode-island-sue-each-other-in-latest-challenge-to-prediction-markets/",
-      "source": "Engadget",
+      "title": "V2EX热议：Anthropic估值引发社区讨论",
+      "content": "V2EX社区就Anthropic的最新估值展开热议。作为OpenAI最强劲的竞争者，Anthropic的Claude系列模型在企业级AI安全和可靠性上建立了差异化优势。硅谷创投圈持续加注基础模型公司，但中文技术社区对天价估值的可持续性存疑，讨论反映了中美两地AI投资逻辑和市场认知的差异。",
+      "quote": "Anthropic估值又飙了，AI泡沫还是AI信仰？",
+      "source": "V2EX Tech",
+      "url": "https://www.v2ex.com/t/1212285#reply12",
       "published": "2026-05-26",
-      "uid": "16387030971f70171d6b93aeb734e3c2"
+      "uid": "d15557ef9a3fac839be4964454879f76"
     },
     {
       "title": "AI智能眼镜“百镜大战”升温，上半年新品密集发布",
@@ -1075,58 +960,85 @@
   ],
   "design": [
     {
-      "title": "Pentagram 设计师 Natasha Jen 加入 2026 Dezeen Awards 评审团",
-      "content": "全球顶尖品牌设计公司 Pentagram 合伙人、平面设计师 Natasha Jen 确认加入 Dezeen Awards 2026 设计类别评审团。Jen 擅长在物理与数字交汇处探索品牌识别，服务过纽约大都会博物馆、哈佛 GSD 等顶级机构。2026 年奖项报名将于 5 月 27 日截止。",
-      "quote": "Pentagram 的人来评审，参赛者压力不小——毕竟人家的日常就是你的天花板。",
-      "url": "https://www.dezeen.com/2026/05/25/julien-sebban-natasha-jen-dezeen-awards-2026-judges/",
-      "source": "Dezeen",
-      "published": "2026-05-26",
-      "uid": "55835b7287072946920502eb04bcea47"
-    },
-    {
-      "title": "Patricia Urquiola 在瑞士阿尔卑斯山打造「巢穴式」公寓",
-      "content": "西班牙设计大师 Patricia Urquiola 为瑞士 Andermatt 的 Maya 住宅项目设计了 17 套公寓室内。她以「筑巢」为核心理念，用弧形墙体分隔空间，大面积落地窗引入山景，材料全部取自当地：绿 Salvan 石材、橡木、羊毛织物。将自然「翻译」到室内空间的手法为 UI 设计师借鉴。",
-      "quote": "Urquiola 把窗外的雪山直接「翻译」成室内配色——大自然是最好的 mood board。",
-      "url": "https://www.dezeen.com/2026/05/25/patricia-urquiola-maya-residences/",
-      "source": "Dezeen",
-      "published": "2026-05-26",
-      "uid": "f4f21080deb7889df58489f929ed4bb3"
-    },
-    {
-      "title": "Foster + Partners 为上海打造花瓣状贾美术馆",
-      "content": "Foster + Partners 设计的上海贾美术馆（Jia Art）正式亮相，位于普陀长风片区。建筑以盛开的花瓣为灵感，阶梯式轮廓外包管状玻璃幕墙，内部中庭引入自然光。Norman Foster 称其为「将艺术与文化嵌入城市的示范项目」，兼顾展览空间与社区公共功能。",
-      "quote": "Foster 又给上海贡献了一座「出片利器」，长风板块房价估计又要涨。",
-      "url": "https://www.dezeen.com/2026/05/24/jia-art-shanghai-foster-partners/",
-      "source": "Dezeen",
-      "published": "2026-05-26",
-      "uid": "63f981d09cbae4acc183c4b9b83f6e4d"
-    },
-    {
-      "title": "全球首本完全 3D 打印的书：Manual 把自身制造代码印在页面上",
-      "content": "Studio Darius Ou 与 Benson Chong 合作开发了 Manual——一本完全通过 3D 打印一体成型的书，无需装订、无需后期组装。页面上凸起的文字是用于打印它自身的 G-code 指令片段，将「制造过程」直接铭刻为内容。项目灵感来自 RepRap 开源 3D 打印机自我复制项目，探索了可复制书籍（r-book）概念。",
-      "quote": "一本印着自己「源代码」的书——设计师的元叙事瘾又犯了，但这次确实很酷。",
-      "url": "https://www.designboom.com/design/3d-printed-book-manual-darius-ou-benson-chong/",
-      "source": "Designboom",
-      "published": "2026-05-26",
-      "uid": "f1edd62da103e6c4a18ac4e5e2dfcdf0"
-    },
-    {
-      "title": "Renesa 工作室将砖块图案变成手工地毯系列",
-      "content": "印度建筑事务所 Renesa 与地毯品牌 House of Knots 合作推出「Brick by Brick」手工地毯系列，将砖块的几何纹理和建筑平面图抽象为纺织品图案。每块地毯由 Bhadohi 工匠手工簇绒制作 50-60 天，在米兰设计周 Alcova 平台首发。探讨了「建筑思维超越建筑物边界」的设计哲学。",
-      "quote": "建筑师的跨界总是自带逼格——把砖墙铺地上就敢卖你几十万。",
-      "url": "https://www.dezeen.com/2026/05/25/renesa-brick-rug-collection/",
-      "source": "Dezeen",
-      "published": "2026-05-26",
-      "uid": "8f7b6a6a75909fc706cc4e7bd035eb6f"
-    },
-    {
-      "title": "Figma 推出「Software Is Culture」系列：设计师成为数字文化",
-      "content": "Figma 推出长篇专栏「Software Is Culture」，剖析设计对人们思维和连接方式的深层影响。从社交媒体的信息流设计到协作工具的交互范式，软件界面正在成为新一代文化载体。该系列将邀请多位设计师、产品经理和文化学者共同讨论数字产品的文化影响力，重新审视设计师作为「文化塑造者」的角色定位。",
-      "quote": "终于有人认真讨论 UI 的文化意义了，不只是「这个按钮放左边还是右边」。",
-      "url": "https://www.figma.com/blog/software-is-culture/",
+      "title": "[Figma 推出「Software Is Culture」系列：设计师成为数字文化](https://www.figma.com/blog/software-is-culture/)",
+      "content": "[Figma 推出「Software Is Culture」系列：设计师成为数字文化](https://www.figma.com/blog/software-is-culture/)相关内容可查阅原文获取更多信息。",
+      "quote": "终于有人认真讨论 UI 的文化意义了，不只是「这个按钮放左边还是右边」",
       "source": "Figma Blog",
+      "url": "https://www.figma.com/blog/software-is-culture/",
       "published": "2026-05-26",
-      "uid": "d8e54ff8212bda5f21e2eb1bc94769ef"
+      "uid": "design_51a53260"
+    },
+    {
+      "title": "[Pentagram 设计师 Natasha Jen 加入 2026 Dezeen Awards 评审团](https://www.dezeen.com/2026/05/25/julien-sebban-natasha-jen-dezeen-awards-2026-judges/)",
+      "content": "[Pentagram 设计师 Natasha Jen 加入 2026 Dezeen Awards 评审团](https://www.dezeen.com/2026/05/25/julien-sebban-natasha-jen-dezeen-awards-2026-judges/)相关内容可查阅原文获取更多信息。",
+      "quote": "Pentagram 的人来当评审——参赛者压力不小，人家的日常就是你的天花板",
+      "source": "Dezeen",
+      "url": "https://www.dezeen.com/2026/05/25/julien-sebban-natasha-jen-dezeen-awards-2026-judges/",
+      "published": "2026-05-26",
+      "uid": "design_1079e339"
+    },
+    {
+      "title": "[Mobbin 通过 SOC 2 Type II 认证，设计资源库安全性升级](https://mobbin.com/blog/2024-11-08-soc-2)",
+      "content": "[Mobbin 通过 SOC 2 Type II 认证，设计资源库安全性升级](https://mobbin.com/blog/2024-11-08-soc-2)相关内容可查阅原文获取更多信息。",
+      "quote": "设计灵感库也要过安全审计了——可见设计师的截图收藏有多敏感",
+      "source": "Mobbin",
+      "url": "https://mobbin.com/blog/2024-11-08-soc-2",
+      "published": "2026-05-26",
+      "uid": "design_9d0b4f9b"
+    },
+    {
+      "title": "[Patricia Urquiola 在瑞士阿尔卑斯山打造「巢穴式」公寓](https://www.dezeen.com/2026/05/25/patricia-urquiola-maya-residences/)",
+      "content": "[Patricia Urquiola 在瑞士阿尔卑斯山打造「巢穴式」公寓](https://www.dezeen.com/2026/05/25/patricia-urquiola-maya-residences/)相关内容可查阅原文获取更多信息。",
+      "quote": "Urquiola 把窗外的雪山直接「翻译」成室内配色——大自然是最好的 mood board",
+      "source": "Dezeen",
+      "url": "https://www.dezeen.com/2026/05/25/patricia-urquiola-maya-residences/",
+      "published": "2026-05-26",
+      "uid": "design_7000a7ef"
+    },
+    {
+      "title": "[Foster + Partners 为上海打造花瓣状贾美术馆](https://www.dezeen.com/2026/05/24/jia-art-shanghai-foster-partners/)",
+      "content": "[Foster + Partners 为上海打造花瓣状贾美术馆](https://www.dezeen.com/2026/05/24/jia-art-shanghai-foster-partners/)相关内容可查阅原文获取更多信息。",
+      "quote": "Foster 又给上海添了一座「出片利器」，长风板块房价估计又要涨",
+      "source": "Dezeen",
+      "url": "https://www.dezeen.com/2026/05/24/jia-art-shanghai-foster-partners/",
+      "published": "2026-05-26",
+      "uid": "design_a196557e"
+    },
+    {
+      "title": "[Gensler 用耐候钢打造「有颜值」的数据中心](https://www.dezeen.com/2026/05/21/gensler-thistle-data-center-phoenix-corten-steel/)",
+      "content": "[Gensler 用耐候钢打造「有颜值」的数据中心](https://www.dezeen.com/2026/05/21/gensler-thistle-data-center-phoenix-corten-steel/)相关内容可查阅原文获取更多信息。",
+      "quote": "数据中心都开始拼颜值了，那些长得像厂房的互联网公司总部不惭愧吗？",
+      "source": "Dezeen",
+      "url": "https://www.dezeen.com/2026/05/21/gensler-thistle-data-center-phoenix-corten-steel/",
+      "published": "2026-05-26",
+      "uid": "design_15170d23"
+    },
+    {
+      "title": "[全球首本完全 3D 打印的书：Manual 把制造代码印在页面上](https://www.designboom.com/design/3d-printed-book-manual-darius-ou-benson-chong/)",
+      "content": "[全球首本完全 3D 打印的书：Manual 把制造代码印在页面上](https://www.designboom.com/design/3d-printed-book-manual-darius-ou-benson-chong/)相关内容可查阅原文获取更多信息。",
+      "quote": "一本印着自己「源代码」的书——设计师的元叙事瘾又犯了，但这次确实很酷",
+      "source": "Designboom",
+      "url": "https://www.designboom.com/design/3d-printed-book-manual-darius-ou-benson-chong/",
+      "published": "2026-05-26",
+      "uid": "design_b5b76d2c"
+    },
+    {
+      "title": "[Renesa 将砖块图案变成手工地毯：建筑思维跨界纺织设计](https://www.dezeen.com/2026/05/25/renesa-brick-rug-collection/)",
+      "content": "[Renesa 将砖块图案变成手工地毯：建筑思维跨界纺织设计](https://www.dezeen.com/2026/05/25/renesa-brick-rug-collection/)相关内容可查阅原文获取更多信息。",
+      "quote": "建筑师的跨界总是自带逼格——把砖墙铺地上就敢卖你几十万",
+      "source": "Dezeen",
+      "url": "https://www.dezeen.com/2026/05/25/renesa-brick-rug-collection/",
+      "published": "2026-05-26",
+      "uid": "design_8b6f8a58"
+    },
+    {
+      "title": "数据中心的「热岛效应」研究引发设计界关注",
+      "content": "研究表明AI数据中心因高密度计算产生的热岛效应正在影响周边城市微气候，引发建筑设计和城市规划领域的关注。如何将散热需求融入数据中心建筑美学和城市热管理，成为设计师面临的新课题。AI基础设施不仅改变计算范式，也在重塑物理空间的设计逻辑。",
+      "quote": "算力越强越热——AI 把设计师逼成了暖通工程师",
+      "source": "Dezeen",
+      "url": "https://www.dezeen.com/2026/04/09/data-centres-heat-island-effect-study/",
+      "published": "2026-05-26",
+      "uid": "design_60ecd21e"
     },
     {
       "title": "即时设计Jestik全面拥抱AI，UI生成进入「盲盒自由」时代",
