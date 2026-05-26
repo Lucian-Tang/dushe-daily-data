@@ -455,6 +455,123 @@
   ],
   "ai": [
     {
+      "title": "Language Models Need Sleep",
+      "content": "arXiv新论文提出让大语言模型通过类似睡眠的机制来处理长上下文——模型周期性地将近期上下文转化为持久快速权重，然后清空KV缓存。在“睡眠”期间执行N次离线循环处理并更新状态空间模型中的快速权重。在数学推理等任务上，更长的“睡眠”时间带来更深的推理能力提升，堪称AI界的“睡个好觉”研究。",
+      "quote": "原来AI也要睡大觉才能变聪明，996终于轮到模型了。",
+      "source": "Arxiv",
+      "url": "https://arxiv.org/abs/2605.26099",
+      "published": "2026-05-27",
+      "uid": "ai_21f0c491"
+    },
+    {
+      "title": "天工 SkyClaw-v1.0 Agent 模型正式发布，半价享顶级性能",
+      "content": "昆仑万维旗下天工AI推出高性能Agent模型SkyClaw-v1.0，支持百万token上下文，重点优化复杂工具调用与多轮任务执行。在Agent benchmark上超越Minimax 2.7、DeepSeek V4 Flash及Qwen 3.6系列，定价低于竞品一半。同时开放2-4周免费试用，兼容OpenClaw、Hermes、Codex等主流Agent框架。",
+      "quote": "半价超越DeepSeek V4？这价格战打得比双11还狠。",
+      "source": "36氪",
+      "url": "https://36kr.com/p/3825882266407815",
+      "published": "2026-05-27",
+      "uid": "ai_2d2cde4b"
+    },
+    {
+      "title": "字节跳动向Seed AI部门员工开放豆包股认购权",
+      "content": "字节跳动首次针对特定业务单元发行股权，为旗下Seed人工智能部门员工提供与该部门挂钩的低价股票期权。这是字节跳动探索AI人才激励的重要举措，让员工能分享公司AI业务增长的成果。此前字节已在内部引导员工使用AI工具，此次股权激励将进一步加强AI人才绑定。",
+      "quote": "豆包股来了——字节AI员工终于不用眼馋隔壁OpenAI的财报了。",
+      "source": "36氪",
+      "url": "https://36kr.com/p/3825928694846085",
+      "published": "2026-05-27",
+      "uid": "ai_970c5ef3"
+    },
+    {
+      "title": "Foundation Protocol: A Coordination Layer for Agentic Society",
+      "content": "来自蒙特利尔大学、港科大等机构的联合团队提出了Foundation Protocol，一个面向人-AI混合社会的图优先协调协议。FP将智能体、工具、资源、人类和机构等异质实体统一建模，支持原生多方协作和事件驱动交互，内置经济结算原语，并将审计和治理作为一等公民。旨在让自主智能体可组合协作的同时保持问责制透明化。",
+      "quote": "智能体社会需要交通规则，不然AI们就要在马路上互撞了。",
+      "source": "HuggingFace Papers",
+      "url": "https://arxiv.org/abs/2605.23218",
+      "published": "2026-05-27",
+      "uid": "ai_3d116a3a"
+    },
+    {
+      "title": "Claw-Anything: Benchmarking Always-On Personal Assistants with Broader Access to User's Digital World",
+      "content": "华为与多所高校联合发布Claw-Anything基准测试，专门评估始终在线的个人AI助手能力。该基准从三个维度扩展智能体上下文：长周期活动历史、相互依赖的后端服务、跨设备的GUI与CLI交互。通过模拟数月的用户活动数据，发现GPT-5.5的pass@1仅34.5%，远低于此前基准，揭示当前智能体能力与始终在线个人助理需求之间的巨大差距。",
+      "quote": "连Claw-Anything都在测AI助手了，你家的智能体还敢说自己称职？",
+      "source": "HuggingFace Papers",
+      "url": "https://arxiv.org/abs/2605.26086",
+      "published": "2026-05-27",
+      "uid": "ai_abb282c7"
+    },
+    {
+      "title": "Helix4D: Complex 4D Mesh Generation from Video",
+      "content": "Snap与普渡大学、KAUST联合提出Helix4D框架，从输入视频生成动态3D网格（即4D形状生成）。该方法基于Trellis2架构，通过滑动窗口跨帧注意力保留罕见场景质量（如透明物体、内部表面），并重新利用低频率空间RoPE频带实现4D时间编码，无需额外参数。实验证明在复杂拓扑变化、熔化、破碎、透明及薄结构等动态场景下效果显著。",
+      "quote": "从视频到4D模型，以后做动画连建模师都不用请了。",
+      "source": "HuggingFace Papers",
+      "url": "https://arxiv.org/abs/2605.26109",
+      "published": "2026-05-27",
+      "uid": "ai_72dbd5c0"
+    },
+    {
+      "title": "Using AI to Write Better Code More Slowly",
+      "content": "Nolan Lawson的长文反思AI辅助编程现状：虽然AI能在几秒内生成代码，但开发者需要花大量时间审查、调试和重构AI输出。他主张慢写代码的理念——用AI辅助思考架构和设计模式，而非盲目接受AI生成的代码。文章在Hacker News引发激烈讨论（1001分，377条评论），体现了开发者社区对AI编程工具爱恨交织的态度。",
+      "quote": "AI帮你写代码，你帮AI修bug，双赢（赢两次的那种）。",
+      "source": "Hacker News",
+      "url": "https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/",
+      "published": "2026-05-27",
+      "uid": "ai_1b66f58c"
+    },
+    {
+      "title": "Eagle 3.1: EAGLE Team x vLLM Team x TorchSpec Team Collaborative Release",
+      "content": "vLLM官方博客宣布Eagle 3.1发布，这是EAGLE团队、vLLM团队和TorchSpec团队三方合作的成果。Eagle系列专注于投机解码技术，通过草稿模型提前预测多个token来加速LLM推理。Eagle 3.1整合了来自三个团队的优化，在推理加速和兼容性方面带来显著提升，获得57分和17条评论的热度。",
+      "quote": "三个和尚终于有水喝了，联合优化比各自卷强不少。",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=48278407",
+      "published": "2026-05-27",
+      "uid": "ai_7f599200"
+    },
+    {
+      "title": "CRONOS: Benchmarking Counterfactual Physical Consistency in Video Models",
+      "content": "弗莱堡大学和马克斯普朗克研究所推出CRONOS基准测试，专门评估视频生成模型的反事实物理一致性。基于虚幻引擎构建的光影级逼真环境，系统干预视点、场景、物体类别和外观四个关键因素，保持物理事件类型不变。评估发现当前开源视频生成器在反事实物理一致性上存在严重缺陷，同一物理事件的预测质量会因视点变化而大幅波动。",
+      "quote": "视频模型只会画皮不会画骨，物理常识？不存在的。",
+      "source": "HuggingFace Papers",
+      "url": "https://arxiv.org/abs/2605.23699",
+      "published": "2026-05-27",
+      "uid": "ai_52508cc9"
+    },
+    {
+      "title": "Uber President Says AI Spending Is Getting Harder to Justify",
+      "content": "Uber总裁Andrew Macdonald在采访中表示，尽管2025年研发支出达34亿美元（同比增长9%），但很难在AI投入（如Claude Code的token消耗）与实际交付的用户功能之间建立直接联系。他说token消耗增速与功能产出增速之间没有对应关系，并指出随着AI投资增长公司正在减少人类员工招聘，这个权衡越来越难合理化。",
+      "quote": "Uber花了34亿才明白：AI烧钱速度比特斯拉刹车还快。",
+      "source": "Hacker News",
+      "url": "https://www.theverge.com/transportation/937116/uber-ai-investment-hard-to-justify",
+      "published": "2026-05-27",
+      "uid": "ai_d896453c"
+    },
+    {
+      "title": "AI 时代技术债新形态：Prompt 债、召回债、评估债正在重塑企业 AI 风险",
+      "content": "麻省理工研究发现 95% 的 AI 项目无法交付价值，而背后的深层原因并非模型或算力不足——而是 AI 系统引入了全新的技术债务形态。Prompt、模型和数据依赖层的故障不仅更难定位，且因 AI 的概率特性呈现间歇性爆发。传统代码债有明确 Bug 可复现，AI 债则分散在提示词、数据管道和基础设施中，需要持续监控才能防止性能漂移。",
+      "quote": "AI 技术债比代码债更隐蔽——Bug 不一定会炸，但炸的时候没人知道为啥。",
+      "source": "VentureBeat",
+      "url": "https://venturebeat.com/technology/why-prompt-debt-retrieval-debt-and-evaluation-debt-are-quietly-reshaping-enterprise-ai-risk",
+      "published": "2026-05-27",
+      "uid": "ai_a8f7c732"
+    },
+    {
+      "title": "AI Agent 正在悄悄制造混沌工程故障，企业尚未监控这些风险",
+      "content": "PwC 调查显示 79% 的企业已将 AI Agent 投入生产，96% 计划扩大部署。但 Gartner 警告 40% 的 Agent 项目将在 2027 年前因风险管控不足被取消。作者在 Cisco 和 Splunk 多年观察发现，企业犯下的结构性错误是将自治 Agent 与混沌工程视为两个独立领域——实际上它们本质相同，之间空白地带正在引发下一波重大生产事故。",
+      "quote": "Agent 跑着跑着就崩了？不是 Bug，是你从来没想过它也会搞混沌工程。",
+      "source": "VentureBeat",
+      "url": "https://venturebeat.com/orchestration/ai-agents-are-quietly-generating-chaos-engineering-failures-enterprises-dont-track-yet",
+      "published": "2026-05-27",
+      "uid": "ai_dc56e44a"
+    },
+    {
+      "title": "你的 AI Agent 需要的不是向量数据库，而是操作系统终端",
+      "content": "多所大学联合提出直接语料交互（DCI）技术，让 AI Agent 绕过嵌入模型，直接用命令行工具搜索原始语料。研究发现传统 RAG 的向量检索对精确匹配的字符串、错误码、文件路径等长尾信息效果很差，Agent 在第一步就可能丢失关键证据。DCI 用 grep 等命令直接操作文本，将检索成本降低 30% 以上。",
+      "quote": "谁说 Agent 不能 grep？终端才是 Agent 真正的家，RAG 只是过度房。",
+      "source": "VentureBeat",
+      "url": "https://venturebeat.com/orchestration/your-ai-agents-need-a-terminal-not-just-a-vector-database",
+      "published": "2026-05-27",
+      "uid": "ai_319156e9"
+    },
+    {
       "title": "SkillOpt: AI Agent 技能自我进化策略",
       "content": "SkillOpt提出了一套AI Agent技能的自动管理与优化策略，研究如何在Agent运行时动态评估技能有效性、淘汰低效技能、引入新技能。该框架将技能管理从静态配置转变为自适应系统，让Agent能像人类一样在经验中进化能力栈。对于构建长期运行的自主Agent系统，这种自我进化能力是关键的缺失环节。",
       "quote": "AI技能也会过时，靠自学续命的Agent来了。",
@@ -558,168 +675,6 @@
       "published": "2026-05-25",
       "毒舌点评": "第N个coding agent，定位是介于Copilot和Cursor——翻译：没有自己的灵魂，只能挤中间那道缝。",
       "uid": "ai_7818b00f"
-    },
-    {
-      "title": "对话王小川：离开通用人工智能的主干道之后",
-      "content": "百川智能创始人王小川近日接受采访，披露一年前公司经历了一次剧烈战略收缩，砍掉大部分通用大模型业务，转而聚焦AI医疗方向。王小川坦言\"继续走主流道路也会有同等焦虑\"，选择回归创业初心——造AI医生。他判断纯套壳大模型应用注定短命，能完成真实交互闭环的产品才能存活。这是一次值得关注的战略转身，大厂都在卷基座，也许垂直场景才是出路。",
-      "quote": "通用路线的焦虑大家都懂，但转身也需要魄力，不是每个人都有资格做减法。",
-      "source": "36氪",
-      "url": "https://36kr.com/p/3821521291038856",
-      "published": "2026-05-24",
-      "uid": "ai_3d1b9793"
-    },
-    {
-      "title": "DeepSeek-V4-Pro API正式调价：永久降至原定价四分之一",
-      "content": "DeepSeek官方宣布，V4-Pro模型API价格将于5月31日结束当前2.5折优惠后，正式调整为原价的1/4，意味着降价幅度高达75%。此前DeepSeek已多次主动挑起价格战，此次调价将进一步压缩国内大模型API赛道利润空间，对百度文心、阿里通义等同类产品形成直接压力。中小厂商的日子越来越不好过了。",
-      "quote": "价格战打到现在，比的不是谁更能撑，是看谁先认输。",
-      "source": "36氪",
-      "url": "https://36kr.com/newsflashes/3821591669166214",
-      "published": "2026-05-24",
-      "uid": "ai_58908722"
-    },
-    {
-      "title": "国内首家原生机器人\"大脑芯片\"企业获数亿元融资，北大团队孵化",
-      "content": "北京维泛智能科技有限公司近日完成数亿元种子轮融资，由中关村资本、启航投资等联合领投。这是国内首家专注研发原生机器人\"大脑芯片\"的企业，团队来自北京大学。不同于英伟达GPU通用路线，维泛瞄准的是专为机器人设计的专用AI芯片，目标是在物理世界交互场景中实现更低延迟和更高能效比。机器人专用芯片赛道正在成为下一个资本热点。",
-      "quote": "英伟达吃肉，这个赛道能不能喝上汤，还得看芯片能不能真正跑通机器人场景。",
-      "source": "36氪",
-      "url": "https://36kr.com/p/3821371042877575",
-      "published": "2026-05-24",
-      "uid": "ai_dea1f78c"
-    },
-    {
-      "title": "AI Agent失败模式图鉴：不只是幻觉，还有更多你没踩过的坑",
-      "content": "技术博客详细梳理了AI Agent在生产环境中常见的失败模式，超越\"幻觉\"这一老生常谈问题，扩展到：工具调用循环、上下文窗口耗尽导致决策质量骤降、长期任务中的状态漂移、多Agent协作时的死锁和资源争抢等。作者指出，Agent系统的调试比传统软件复杂得多，因为故障点往往不在代码层，而在AI推理层，不确定性是最大的敌人。",
-      "quote": "幻觉只是最显眼的那个，真实生产环境的坑比你想的深得多。",
-      "source": "DEV.to",
-      "url": "https://dev.to/maximsaplin/ai-agent-failure-modes-beyond-hallucination-208g",
-      "published": "2026-05-24",
-      "uid": "ai_f7ed8735"
-    },
-    {
-      "title": "用MCP和LangChain构建 autonomous DevOps Agent实战指南",
-      "content": "开发者分享了如何利用MCP（Model Context Protocol）与LangChain构建自动化DevOps Agent的完整方案，涵盖从CI/CD流水线自动触发、异常日志自动定位与修复建议、到部署回滚决策的全流程集成。文章提供了具体代码示例和架构图，并指出MCP作为Agent与外部工具之间的标准接口，正在成为AI Agent开发的新范式。对DevOps团队和平台工程师有较高的参考价值。",
-      "quote": "MCP能不能成标准不好说，但至少现在方向是对的，工具得能被AI调用才行。",
-      "source": "DEV.to",
-      "url": "https://dev.to/rs9000/building-autonomous-devops-agents-with-mcp-and-langchain-82n",
-      "published": "2026-05-24",
-      "uid": "ai_709420f6"
-    },
-    {
-      "title": "纯Vibe Coding撸出一个llama.cpp版本管理器",
-      "content": "开发者分享了仅靠AI辅助编程，从零使用Vibe Coding方式构建了一个llama.cpp版本管理工具的全过程。从构思到可用的命令行工具，耗时不到一天，代码量几百行。作者认为这类工具才是AI辅助编程的真实场景——不需要高大上的AGI，而是帮开发者解决琐碎的版本兼容和切换问题。AI降低的是入门门槛，不是取代高级工程师。",
-      "quote": "工具类小产品才是AI最该发挥的地方，别老想着替工程师写系统级代码。",
-      "source": "DEV.to",
-      "url": "https://dev.to/osirissgfx/i-built-a-version-manager-for-llamacpp-using-nothing-but-vibe-coding-475e",
-      "published": "2026-05-24",
-      "uid": "ai_ec3acb12"
-    },
-    {
-      "title": "Spotify与环球音乐达成AI翻唱/混音授权协议",
-      "content": "Spotify宣布与环球音乐集团(UMG)达成AI翻唱和混音协议，作为Premium用户的付费附加功能推出。艺人和版权方可选择是否参与并获取收入分成。Spotify强调这是\"事前许可而非事后乞求原谅\"，暗指Suno等AI音乐公司的法律灰色地带。这是主流音乐平台首次正式合法化AI翻唱的商业模式。",
-      "quote": "AI翻唱终于不用偷偷摸摸吃官司了——Spotify先上车后补票的门票00亿。",
-      "url": "https://techcrunch.com/2026/05/21/spotify-and-universal-music-strike-deal-allowing-fan-made-ai-covers-and-remixes/",
-      "source": "TechCrunch",
-      "published": "2026-05-24",
-      "uid": "ai_333061a2"
-    },
-    {
-      "title": "特朗普推迟签署AI安全行政令：\"不想阻碍领先\"",
-      "content": "特朗普总统推迟签署原定的AI安全行政令。该令曾要求AI公司在发布前14-90天向政府共享高级模型供安全评估。特朗普表示对措辞不满，认为\"可能成为阻碍\"，暗示不想在AI竞赛中拖慢美国速度。非官方原因是科技CEO们临时无法出席拍照仪式。此举被认为是对AI安全监管的一次倒退。",
-      "quote": "让硅谷大佬来白宫拍个照比签安全令重要——作秀挂帅，安全靠边。",
-      "url": "https://techcrunch.com/2026/05/21/trump-delays-ai-security-executive-order-i-dont-want-to-get-in-the-way-of-that-leading/",
-      "source": "TechCrunch",
-      "published": "2026-05-24",
-      "uid": "ai_e90aa5f5"
-    },
-    {
-      "title": "Google AI眼镜上手：差点火候",
-      "content": "TechCrunch在Google I/O上体验了Google新的AI眼镜原型。搭载Android XR系统，镜片内置显示天气、导航、Uber等信息，支持Gemini语音交互。与Warby Parker、Gentle Monster等合作设计。原型机去掉了外观装饰专注测试内部功能，可检测佩戴状态。目前仍是原型，体验不错但离消费级还有距离。",
-      "quote": "再好的眼镜+再大的模型，戴上街不社死才算赢——Google Glass PTSD了解一下？",
-      "url": "https://techcrunch.com/2026/05/22/we-tried-googles-ai-glasses-and-theyre-almost-there/",
-      "source": "TechCrunch",
-      "published": "2026-05-24",
-      "uid": "ai_659c9806"
-    },
-    {
-      "title": "AI被用来复活坠机遇难飞行员的声音",
-      "content": "美国国家运输安全委员会(NTSB)被迫关闭其案卷系统，因有人利用AI工具从公开的声谱图和文字记录中重建了去年UPS航班2976坠机遇难飞行员的驾驶舱音频。NTSB称联邦法律禁止公开驾驶舱录音，但声谱图文件是合法收录的。YouTuber Scott Manley率先发现声谱图可逆为音频的可能性。目前42项调查仍处于关闭审查状态。",
-      "quote": "AI真是什么都能干——连死人的声音都不放过，伦理线一退再退。",
-      "url": "https://techcrunch.com/2026/05/22/ai-is-being-used-to-resurrect-the-voices-of-dead-pilots/",
-      "source": "TechCrunch",
-      "published": "2026-05-24",
-      "uid": "ai_d23a13b3"
-    },
-    {
-      "title": "法拉利联手IBM用AI培养F1超级粉丝",
-      "content": "法拉利与IBM达成合作，利用IBM AI技术重构法拉利粉丝应用。法拉利新设\"粉丝发展负责人\"岗位，称目标是\"让每位粉丝感觉我们了解他\"。数千传感器每场比赛产生百万级数据点，AI将这些转化为个性化互动内容。F1正在成为科技巨头眼中的新战场，AWS、Oracle、Anthropic均已入局。",
-      "quote": "F1终于不只是比谁圈速快了——现在比谁家AI最能哄粉丝开心。",
-      "url": "https://techcrunch.com/2026/05/23/ferrari-is-using-ai-to-create-f1-superfans/",
-      "source": "TechCrunch",
-      "published": "2026-05-24",
-      "uid": "ai_6fdcbc5c"
-    },
-    {
-      "title": "马斯克放弃地球太阳能：xAI数据中心狂烧天然气",
-      "content": "SpaceX IPO文件揭示马斯克悄然转向：xAI数据中心使用数十台未获许可的天然气涡轮机供电，并计划再花28亿美元采购天然气设备。此外xAI花6.97亿买了特斯拉Megapack储能但未买太阳能板。这位靠\"太阳能电气化经济\"起家的企业家，现在押注太空太阳能而非地球发电，被指为AI算力放弃清洁能源承诺。",
-      "quote": "嘴上要拯救地球，手上给AI塞天然气——马斯克这环保人设碎得连渣都不剩。",
-      "url": "https://techcrunch.com/2026/05/23/elon-musk-has-given-up-on-solar-power-on-earth/",
-      "source": "TechCrunch",
-      "published": "2026-05-24",
-      "uid": "ai_5efff9e1"
-    },
-    {
-      "title": "Gated DeltaNet-2：NVIDIA用解耦擦写机制革新线性注意力",
-      "content": "NVIDIA发布Gated DeltaNet-2，将线性注意力的擦除和写入操作解耦为独立的逐通道门控机制。相比Mamba-2、Gated DeltaNet和KDA，在130B参数量、100B FineWeb-Edu训练条件下，语言建模、常识推理和检索任务全面领先，长上下文RULER多键检索优势最明显。该架构为下一代高效Transformer提供了新方向。",
-      "quote": "NVIDIA告诉你：把擦黑板和写黑板分成两个人干，效率就上去了——大道至简。",
-      "url": "https://arxiv.org/abs/2605.22791",
-      "source": "arXiv cs.AI",
-      "published": "2026-05-24",
-      "uid": "ai_bb9bd65f"
-    },
-    {
-      "title": "DelTA：用判别式Token信用分配提升RLVR推理能力",
-      "content": "研究者提出DelTA方法，解决了RLVR(可验证奖励强化学习)中token级信用分配不精准的问题。发现标准策略梯度更新方向等价于一个线性判别器，但被高频共享token（如格式符）淹没。DelTA通过估计token系数放大了真正有区分力的方向。在7个数学基准上，Qwen3-8B提升3.26分，Qwen3-14B提升2.62分，代码生成和跨域评估也表现优异。",
-      "quote": "AI终于学会分清哪些Token真正贡献了得分——别把功劳记在格式符头上。",
-      "url": "https://arxiv.org/abs/2605.21467",
-      "source": "arXiv cs.LG",
-      "published": "2026-05-24",
-      "uid": "ai_05b6b9d1"
-    },
-    {
-      "title": "TerminalWorld：真实终端任务的Agent基准测试",
-      "content": "研究者发布了TerminalWorld，一个从8万条真实终端录制中自动逆向工程生成的Agent评测框架。包含1530个验证任务，覆盖18个真实类别、1280个独特命令，最长达50步工作流。测评8个前沿模型和6种Agent框架，最高通过率仅62.5%。与人工标注的Terminal-Bench仅弱相关(r=0.20)，证明真实终端能力与人工评测存在巨大鸿沟。",
-      "quote": "实验室刷分80%+，真上终端就怂——这62.5%的通过率才是Agent能力的照妖镜。",
-      "url": "https://arxiv.org/abs/2605.22535",
-      "source": "arXiv cs.AI",
-      "published": "2026-05-24",
-      "uid": "ai_67710542"
-    },
-    {
-      "title": "CUSP基准：AI预测科学进步的能力评估",
-      "content": "研究者构建了CUSP(Cutoff-conditioned Unseen Scientific Progress)基准，用4760个科学事件评估AI预测科学进展的能力。发现当前最先进模型可以识别合理研究方向，但无法可靠预测科学成果能否实现及何时实现。AI对AI本身进展的预测比其他领域更准，在生物学、化学和物理方面表现系统性不足。模型存在严重的过度自信和响应偏差问题。",
-      "quote": "AI：我能预测你明天发什么论文。人类：那你说说。AI：……我不知道但我很自信。",
-      "url": "https://arxiv.org/abs/2605.22681",
-      "source": "arXiv cs.AI",
-      "published": "2026-05-24",
-      "uid": "ai_07d4ad1f"
-    },
-    {
-      "title": "VC和创始人夸大ARR捧杀AI独角兽",
-      "content": "法律AI公司Spellbook CEO揭露AI初创圈普遍存在的ARR(年度经常性收入)数据造假现象。TechCrunch采访了十多位创始人、投资人及财务专业人士，确认夸大ARR是公开的秘密。某些AI公司使用\"CARR\"(合约ARR)等自定义口径来掩盖真实的订阅收入。YC的Garry Tan也发帖说明了该问题，AI泡沫水分正在引起业内警觉。",
-      "quote": "ARR注水、VC灌饼、媒体吹号——AI独角兽的三大造假流水线全曝光了。",
-      "url": "https://techcrunch.com/2026/05/22/how-vcs-and-founders-use-inflated-arr-to-kingmake-ai-startups/",
-      "source": "TechCrunch",
-      "published": "2026-05-24",
-      "uid": "ai_73f08d8c"
-    },
-    {
-      "title": "本地LLM学会先问再答：系统提示技术大幅提升准确率",
-      "content": "一项新的系统提示工程技术证明，引导本地LLM在回答用户问题之前主动提出澄清性问题(Clarifying Questions)，可以显著提升输出质量。该方法基于让模型先分解用户意图中的模糊点，逐一明确后再生成最终答案。实验覆盖多种开源模型，在复杂多步骤推理任务中准确率提升显著，为大模型本地部署的实用化提供了低成本优化手段。",
-      "quote": "比你身边那些不懂装懂的同事强——至少AI学会说\"你说的这个我不懂，能再说清楚点吗？\"",
-      "url": "https://www.xda-developers.com/local-llm-clarifying-questions-system-prompt/",
-      "source": "XDA Developers",
-      "published": "2026-05-24",
-      "uid": "ai_1793f04f"
     }
   ],
   "startup": [
