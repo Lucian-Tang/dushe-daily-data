@@ -1,0 +1,1002 @@
+{
+  "industry": [
+    {
+      "title": "法拉利首款电动车 Luce 亮相，Jony Ive 操刀设计",
+      "content": "法拉利终于交出了它的第一份电动答卷——Luce。但这台车最让人惊讶的不是电动化本身，而是它长得完全不'法拉利'。由 Jony Ive 和 Marc Newson 的 LoveFrom 从零到一定调外观内饰，Luce 不仅是法拉利首款 EV，还是首个五座四门车型。对一家靠 V12 声浪和红色信仰活了近百年的品牌来说，这步子迈得既大胆又危险。法拉利称 LoveFrom 被授权'从项目初期定义整体设计方向'，这意味着 Jony Ive 的手笔远不止内饰那么简单。",
+      "quote": "Jony Ive 把法拉利做成了苹果店——好看，但不太对味",
+      "url": "https://www.theverge.com/transportation/937066/ferrari-luce-ev-jony-ive-marc-newson-lovefrom",
+      "source": "The Verge",
+      "published": "2026-05-27",
+      "uid": "e5c5fed4090bac3ff39751124fdf1b03"
+    },
+    {
+      "title": "Uber 4 个月烧完全年 AI 预算，总裁坦言 ROI '难以证明'",
+      "content": "Uber 2025 年在研发上砸了 34 亿美元，今年更是仅用 4 个月就耗尽了全年 AI 预算。公司总裁 Andrew Macdonald 在采访中承认 token 消耗量暴涨并不等于消费者能感受到更多有用功能。'那条线还没画出来，'他说。'未来几季度甚至几年可能会更清晰，但今天很难，即使一些底层指标在朝惊人的方向增长。'2026 年大厂 AI 投入的回报焦虑，正在从财报会议蔓延到日常运营决策。",
+      "quote": "先烧了再说，反正竞品也在烧——这就是硅谷式军备竞赛",
+      "url": "https://www.theverge.com/transportation/937116/uber-ai-investment-hard-to-justify",
+      "source": "The Verge",
+      "published": "2026-05-27",
+      "uid": "3d08163df0127ac4ccdedfb9c30078f4"
+    },
+    {
+      "title": "MuGen：让人形机器人像人一样'有范儿'走路",
+      "content": "MuGen 提出了一个多技能生成式运动控制框架，让人形机器人不再只走机械步。通过示例动作序列引导，机器人可以执行多种风格化的动作——慢走、快步、转身、甚至跳舞。不是简单地'走过去'，而是'以一种特定的姿态走过去'。该框架基于数据驱动，能够从人类运动数据中学习丰富的运动模式，并在物理仿真中实现高保真的动作复现。人形机器人的拟人度又进了一步。",
+      "quote": "机器人开始学走秀了，下一步是不是要参加《这！就是街舞》",
+      "url": "https://arxiv.org/abs/2605.24592",
+      "source": "arXiv",
+      "published": "2026-05-27",
+      "uid": "e7fee5c42f585b76f50192cb29229267"
+    },
+    {
+      "title": "RepSAM：把 SAM 基础模型'下放'到机器人视觉",
+      "content": "SAM 等基础模型在零样本场景下表现惊艳，但放到机器人视觉中效果直线下降。RepSAM 发现原因是 Transformer 各层之间的表征发生了不均匀偏移——浅层网络还能保持通用性，深层网络则严重偏离了原始分布。他们提出了一种表征引导的适配方法，通过最小化层间表征差异来让基础模型在机器人的非结构化环境中保持稳定性能。简单说：把大模型的'眼睛'装到机器人身上，该戴眼镜就戴眼镜。",
+      "quote": "基础模型什么都能干，但真要干脏活累活还是得微调",
+      "url": "https://arxiv.org/abs/2605.25495",
+      "source": "arXiv",
+      "published": "2026-05-27",
+      "uid": "b8bb095617cb1f347ce25d620a9e597e"
+    },
+    {
+      "title": "MEMOR-E：用 LLM 给阿尔茨海默症患者'定制'陪伴机器人",
+      "content": "MEMOR-E 是一台四足机器人，搭载了 LLM 个性化系统，专门为阿尔茨海默症患者提供辅助。通过上下文学习和微调，机器人能记住用户的记忆碎片、偏好和日常习惯，在交流中主动调用个人信息来维持有温度的对话。不只是'你好，吃药了'——而是'你今天早上是不是又找不到钥匙了？'研究团队表示，这种个性化交互能显著提升患者的参与感和生活质量。AI 的温情一面终于被看到了。",
+      "quote": "机器人帮你回忆人生，而人却在忘记自己——又暖又心酸",
+      "url": "https://arxiv.org/abs/2605.23941",
+      "source": "arXiv",
+      "published": "2026-05-27",
+      "uid": "c50eba6b72f850980c565f16c9096635"
+    },
+    {
+      "title": "Agent Manufacturing：AI Agent 即将成为'工业实体'",
+      "content": "制造范式经历了机械化、电气化、自动化、智能制造四个阶段，每次都是把人从某种劳动中解放出来。这篇论文提出——第五阶段是'Agent 制造'：基础模型驱动的 AI Agent 作为第一类工业实体，自主管理产线、调度资源、优化流程。不是单纯的 MES 系统升级，而是工厂本身变成一个由多个 AI Agent 协作的有机体。每个 Agent 负责不同工段，通过协商和推理做出实时决策，彻底颠覆传统制造管理的层级结构。",
+      "quote": "工厂交给 AI 了——但 AI 也要打螺丝吗？",
+      "url": "https://arxiv.org/abs/2605.24823",
+      "source": "arXiv",
+      "published": "2026-05-27",
+      "uid": "00e40a2ea81b61391dd6acdd0caf6659"
+    },
+    {
+      "title": "多少思考才够？量化 LLM 推理中的冗余",
+      "content": "推理型 LLM 靠长思维链解决难题，但代价是延迟和算力飙升。这篇论文研究了模型到底需要'想多久'——大量思维链中的推理步其实是冗余的，很多步并没有真正推动问题解决。通过量化这种冗余，他们提出在保证准确率的前提下大幅缩短推理时间的方法。对 AI 部署来说意义重大：如果 AI 能少想一点，推理成本就能下降一大截。AI 的'内耗'终于有人管了。",
+      "quote": "你家 AI 每做一道题都在写一篇论文，其实它只想写个结论",
+      "url": "https://arxiv.org/abs/2605.23926",
+      "source": "arXiv",
+      "published": "2026-05-27",
+      "uid": "c36c31f44759c0f03e0e7ecb588e47a6"
+    },
+    {
+      "title": "AVTR-1：开源实时数字人模型，单 GPU 跑直播级口型同步",
+      "content": "AVTR-1 是一个开源的实时数字人模型：输入一张肖像照和双通道音频，它就能以 25fps 生成唇形同步的语音和'正在听'的微表情，单 GPU 即可跑。模型基于 flow-matching 自回归架构，权重、推理代码和交互后台全部开源。支持 TensorRT 加速推理，可在消费级 GPU 上部署。这意味着数字人直播、AI 客服、虚拟社交不再只是大厂的专利，一个开源项目就能搞定。",
+      "quote": "开源数字人来了——以后直播带货的主播可能就是一张照片+单GPU",
+      "url": "https://github.com/avaturn-live/avtr-1",
+      "source": "GitHub / HN",
+      "published": "2026-05-27",
+      "uid": "65187421552b81f6ec100011ebe9a07c"
+    },
+    {
+      "title": "Nuro 押注「后发优势」：机器人出租车第二波入局者的策略",
+      "content": "自动驾驶送货公司Nuro联合创始人Dave Ferguson接受The Verge专访，阐述为何在Waymo之后进入机器人出租车市场反而是优势：Nuro可以避开先行者的坑，直接采用更成熟的传感器方案和监管路径。Nuro已获Uber和Lucid合作支持，主打低成本、低速送货场景切入，再逐步扩展客运市场。",
+      "quote": "先来吃肉后来喝汤，Nuro想当那个喝汤的聪明人。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/transportation/936126/nuro-robotaxi-dave-ferguson-interview-uber-lucid-waymo",
+      "published": "2026-05-26",
+      "uid": "7f33a8fe8d58e3165e230d6fa5e3b23c"
+    },
+    {
+      "title": "Waymo 因安全担忧暂停高速公路自动驾驶服务",
+      "content": "Waymo宣布在亚特兰大和圣安东尼奥暂停高速公路自动驾驶服务，原因是近期多起安全事件引发公众和监管机构关注。这是Waymo在激进扩张战略中首次因安全问题大规模收缩服务范围，对自动驾驶行业释放了明确的信号：安全优先级始终高于商业扩张，任何事故都可能让整个行业倒退数年。",
+      "quote": "Waymo踩刹车了，不是技术问题，是人心问题。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/transportation/936129/waymo-freeway-suspend-atlanta-san-antonio-flood-pause",
+      "published": "2026-05-26",
+      "uid": "4261e6183c5d59c7b8b0ba94040f538e"
+    },
+    {
+      "title": "特斯拉召回数千辆Model Y——因为可能少贴了一张标签",
+      "content": "特斯拉向NHTSA提交召回通知，召回数千辆Model Y，原因竟然是车辆可能缺少一张合规标签贴纸。NHTSA用召回一词描述这个问题引发争议——批评者认为这暴露了汽车监管体系的荒谬之处，支持者则认为这恰恰说明特斯拉的制造质量在纸面上经得起检验。无论如何，标题党式的召回对品牌形象没有好处。",
+      "quote": "少张标签也叫召回，汽车行业的官僚主义震撼了。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/transportation/936078/tesla-model-y-missing-sticker-recall",
+      "published": "2026-05-26",
+      "uid": "3e7984d9af07d88e04cb06ae7f7a6bf9"
+    },
+    {
+      "title": "Uber 重新部署自动驾驶车队，但这次不做出租车",
+      "content": "Uber重启自动驾驶汽车部署计划，但战略已从曾经的Robotaxi转向数据采集和地图更新。Uber将利用自研自动驾驶系统收集高精度地图数据，为第三方自动驾驶公司提供服务。这标志着Uber从自动驾驶运营商转型为基础设施提供商，避开了与Waymo的直接竞争，找到了一条更适合自己平台基因的路径。",
+      "quote": "Uber不做Robotaxi改卖地图了，打不过就换赛道。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/news/935204/uber-av-lab-self-driving-data-collection",
+      "published": "2026-05-26",
+      "uid": "adcbfbf64133403c05ff3a765cd4c896"
+    },
+    {
+      "title": "SpaceX IPO 在即，马斯克本人成了最大风险因素",
+      "content": "SpaceX即将进行IPO，但招股书中最引人注目的风险因素不是技术或市场，而是马斯克本人——他的公开言论、政治活动和多公司角色被列为投资者需考虑的核心风险。SpaceX的商业基本面强劲，但马斯克同时在特斯拉、xAI和Twitter的角色可能造成利益冲突和管理精力分散，为这桩年度最受关注的IPO蒙上一层不确定性。",
+      "quote": "马斯克是SpaceX最大的资产，也是最大的负债。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/science/935102/spacex-ipo-elon-musk-tesla-cybertruck-xai-risk-factor",
+      "published": "2026-05-26",
+      "uid": "0e22a00286c75ba4e3b5ffdb3d641291"
+    },
+    {
+      "title": "沃尔沃用 EX60 挽回电动化颓势，CEO谈战略重心转向",
+      "content": "沃尔沃CEO接受专访，坦承品牌在电动车转型中遭遇挫折——EX30和EX90交付延迟、软件问题频发、市场份额下滑。新一代EX60被定位为沃尔沃电动化自救的关键车型，搭载全新软件架构和与Google Gemini集成的智能座舱。传统豪华品牌在电动化浪潮中的挣扎，沃尔沃并非孤例但也是最用力的那一个。",
+      "quote": "传统豪华品牌电动化，沃尔沃正在用尽洪荒之力。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/transportation/932805/volvo-ex60-ceo-interview-ev-strategy",
+      "published": "2026-05-26",
+      "uid": "fe3b2056ffaa9ed2ceeb589f7f9adcb4"
+    },
+    {
+      "title": "奔驰推出纯电 AMG GT 四门轿跑，零百加速2秒",
+      "content": "梅赛德斯-AMG发布纯电动GT四门轿跑，0-100公里加速仅需2秒，正式将高性能豪华车带入纯电时代。这款搭载轴向磁通电机和新一代电池包的AMG，标志着奔驰在电动化性能车领域的全面发力。当传统燃油AMG的标志性声浪被电机的静默取代，豪华性能车的定义正在被重写。",
+      "quote": "AMG没声浪了，但2秒破百比排气声更有说服力。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/news/934037/mercedes-amg-gt-four-door-coupe-ev-specs",
+      "published": "2026-05-26",
+      "uid": "9ba205237a12ab974801956476f6e673"
+    },
+    {
+      "title": "Google Gemini 将接入沃尔沃摄像头，实时解读停车标志",
+      "content": "Google I/O上宣布Gemini将深度集成沃尔沃EX60的外部摄像头系统，AI可实时解读停车标志、路况标识和临时交通管制信息。这是多模态大模型首次以系统级方式嵌入量产车的感知链路，比CarPlay和Android Auto更进了一步——不是把手机投到屏幕上，而是让AI直接理解物理世界的语义。",
+      "quote": "车能看到就是看不懂？Gemini给车配了个翻译官。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/transportation/933556/google-io-gemini-volvo-ex60-camera-parking-signs",
+      "published": "2026-05-26",
+      "uid": "c0cb3d8483c15f0348e9d1e1f5c49dbb"
+    },
+    {
+      "title": "白宫批准90亿美元，让情报机构追赶AI芯片缺口",
+      "content": "白宫批准向美国情报机构拨款90亿美元，用于采购AI芯片和建设算力基础设施。情报界坦言在AI军备竞赛中落后于私营部门，这笔资金将用于训练大规模语言模型进行情报分析、卫星图像解读和网络威胁检测。",
+      "quote": "90亿买AI，情报界的潜台词是：GPT比间谍靠谱——至少它不会叛变。",
+      "url": "https://www.nytimes.com/2026/05/22/us/politics/spy-agencies-ai-chips-shortage.html",
+      "source": "The New York Times",
+      "published": "2026-05-25",
+      "category": "industry",
+      "uid": "0eac996cd36e09aa32bc1589616a744c"
+    },
+    {
+      "title": "Anthropic 发布 LLM 攻击利用能力评估，AI 红队新基准",
+      "content": "Anthropic 发布了一组评估大语言模型开发漏洞攻击能力的测试基准，覆盖缓冲区溢出、SQL 注入、社会工程等多类攻击手段。结果显示前沿模型在特定攻击类型上已达到熟练黑客水平，引发了学界对 AI 安全评估标准化的新一轮讨论。",
+      "quote": "AI 已经能写 exploit 了——下一步是不是该给它发个 CVE 编号？",
+      "url": "https://red.anthropic.com/2026/exploit-evals/",
+      "source": "Anthropic Red Team",
+      "published": "2026-05-25",
+      "category": "industry",
+      "uid": "95d29781c58cf117c03b2fc396a8da5c"
+    },
+    {
+      "title": "Google CEO 皮查伊斯坦福演讲遭嘘声，AI 争议持续升温",
+      "content": "Google CEO Sundar Pichai 在斯坦福大学毕业典礼上遭遇学生嘘声和抗议，反对者举牌指控 Google 在 AI 军事项目中的参与。Pichai 回应称嘘声将「塑造 AI 的未来」，暗示不畏惧争议。这已是近期科技高管在校园遭抗议的第三起事件。",
+      "quote": "CEO 被嘘后说「这会塑造未来」——顶级技术官僚的厚脸皮也是一种 AI 能力。",
+      "url": "https://www.businessinsider.com/sundar-pichai-google-graduation-speech-stanford-ai-backlash-eric-schmidt",
+      "source": "Business Insider",
+      "published": "2026-05-25",
+      "category": "industry",
+      "uid": "403e0a650c4448738f651fb9cb6526d9"
+    }
+  ],
+  "dev": [
+    {
+      "title": "Using AI to write better code more slowly — 多模型交叉审核的慢速编码哲学",
+      "content": "Nolan Lawson 提出了一种不同于主流 vibe coding 的 AI 编程路径：不是用 LLM 疯狂生成烂代码，而是让 Claude、Codex、Cursor Bugbot 等多模型交叉审核 PR、发现 bug、验证正确性。在接近零误报率的情况下可以定位从安全漏洞到注释误导的各种问题。这种「慢速 vibe coding」理念主张让 AI 帮你写出更好的代码，而不是更多的代码。HN 上 480 点热度，评论区一片「这比我同事 code review 靠谱」的感慨。",
+      "quote": "别人用 AI 肝代码量，他用 AI 给代码做胃镜，格局打开了。",
+      "url": "https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/",
+      "source": "Hacker News",
+      "published": "2026-05-27",
+      "uid": "38831f240388e7fdfe080fdd53a48e93"
+    },
+    {
+      "title": "ECC — AI 编码 Agent 的性能优化框架",
+      "content": "affaan-m/ECC 是一个新兴的 AI 编码 Agent 性能优化系统，涵盖 Skills、Instincts、Memory、Security、Research-first 开发等模块。面向 Claude Code、Codex、OpenCode、Cursor 等主流 AI 编码工具，提供统一的性能优化和监控框架。今日 GitHub 趋势榜第二，反映了开发者社区对 AI 编码基础设施标准化的迫切需求。",
+      "quote": "Agent 基础设施开始标准化了，这才是行业成熟的信号。",
+      "url": "https://github.com/affaan-m/ECC",
+      "source": "GitHub Trending",
+      "published": "2026-05-27",
+      "uid": "50f9051d99332d7fe34f4e83f12c8236"
+    },
+    {
+      "title": "GitHub Actions 再次大面积宕机，全球 CI/CD 流水线瘫痪",
+      "content": "GitHub Actions 今日再次遭遇大规模宕机，影响全球数百万开发者的 CI/CD 流水线。本次故障同时波及 Actions 和 Pages 服务，构建、测试、部署功能全面不可用。这已经不是近期第一次大规模中断，社区对 GitHub 基础设施可靠性的质疑声浪越来越大，单一平台依赖风险也被广泛讨论。多家媒体将此次事件称作「CI/CD 行业的 9·11」。",
+      "quote": "GitHub Actions 的可靠性已经和程序员承诺的代码质量一样——越来越不可信了。",
+      "url": "https://www.githubstatus.com/incidents/gnftqj9htp0g",
+      "source": "Hacker News",
+      "published": "2026-05-27",
+      "uid": "27379aa180d7f2bea1968b84b32f882d"
+    },
+    {
+      "title": "Opaque Types in Python — 一种优雅的接口封装模式",
+      "content": "Glyph 在博文中介绍了一种 Python 类型设计模式：用 typing.NewType 包装私有 dataclass，只提供公开工厂函数来构造实例，从而实现真正的接口封装。这样既能享受 mypy 类型检查，又能灵活演进内部结构而不破坏 API 兼容性。对库作者来说，这是解决「不小心暴露太多实现细节」这个经典问题的优雅方案。HN 上 290+ 点赞，Python 圈子对类型系统的关注度持续升温。",
+      "quote": "别人在写 Python，他在写 Python 里的 C 风格抽象，太硬核了。",
+      "url": "https://blog.glyph.im/2026/05/opaque-types-in-python.html",
+      "source": "Hacker News",
+      "published": "2026-05-27",
+      "uid": "0c5dc93c522bbf664654eee8a203978f"
+    },
+    {
+      "title": "Redis 8.8 正式发布，新增原生数组数据结构与 Rust 移植优化",
+      "content": "Redis 8.8 GA 版本带来了原生 Array 数据结构支持，解决了多年来用 List 或 Sorted Set 模拟数组的痛点。性能方面：x86_64 构建默认启用 LTO，部分代码用 Rust 重写减少 FFI 开销，新增 ARM64 优化和批量预取改进。对使用 Redis 做复杂数据操作的团队来说，这是一个重要的版本更新。Phoronix 报道引发大量讨论。",
+      "quote": "Redis 终于原生支持数组了，以前用 List 凑合的日子可以翻篇了，CRUD Boy 们又少了一个手写序列化的理由。",
+      "url": "https://www.phoronix.com/news/Redis-8.8-Released",
+      "source": "Phoronix",
+      "published": "2026-05-27",
+      "uid": "5a791711563588b4e113fc55e4ae0ab2"
+    },
+    {
+      "title": "GNOME Commander 2.0 用 Rust + GTK4 重写，经典文件管理器焕发新生",
+      "content": "GNOME Commander——经典的双面板文件管理器——发布了 2.0 大版本，核心代码从 C++ 迁移到了 Rust，并使用 GTK4 工具包重写 UI。新版本增加了嵌入式终端、重新设计了快速搜索、改进了搜索对话框和内置查看器、Wayland 支持更完善。这是开源桌面工具 Rust 化浪潮中的又一重大案例，标志着 GUI 应用也开始拥抱 Rust。",
+      "quote": "C++ 的棺材板又钉上一颗 Rust 钉子，诺顿指挥官在天之灵可以欣慰了。",
+      "url": "https://www.phoronix.com/news/GNOME-Commander-2.0",
+      "source": "Phoronix",
+      "published": "2026-05-27",
+      "uid": "b6d6b3d0f16dab58c4d192280aa8afd8"
+    },
+    {
+      "title": "Wild Linker 0.9 发布：Rust 编写的链接器新增插件 API",
+      "content": "Wild Linker 0.9 新版本重点做了跨平台移植重构，正在准备支持 Mach-O 和 WebAssembly 目标。同时加入了 GNU LD 和 Mold 兼容的链接器插件 API，支持 LTO 链接时优化。虽然这次没有明显的性能提升，但插件生态的开放意味着更多扩展可能性。Rust 在系统工具链领域的渗透正在加速。",
+      "quote": "Rust 写的链接器已经开始卷插件生态了，Mold 你慌不慌。",
+      "url": "https://www.phoronix.com/news/Wild-Linker-0.9",
+      "source": "Phoronix",
+      "published": "2026-05-27",
+      "uid": "252a29f231b463fba1d43787ef0520de"
+    },
+    {
+      "title": "Meta 时隔两年发布 CacheLib 新版，应对 AI 时代内存成本飙升",
+      "content": "Meta 开源缓存引擎 CacheLib 在沉寂近两年后发布了 2026.05.25 新版本。CacheLib 最初于 2021 年开源，旨在利用非易失性内存补充 DRAM 缓存以降低成本。如今 AI 热潮推高了内存开销，这一策略重新变得至关重要。新版帮助大规模服务在 DRAM 昂贵的环境下，通过分级缓存策略优化支出，时机抓得恰到好处。",
+      "quote": "DRAM 贵得离谱的时候 Meta 翻出了两年前的压箱底功夫，时机之妙令人怀疑他们是不是偷偷开了天眼。",
+      "url": "https://www.phoronix.com/news/CacheLib-2026.05.25",
+      "source": "Phoronix",
+      "published": "2026-05-27",
+      "uid": "c1e168bb863bf4a7c27de19f6985a217"
+    },
+    {
+      "title": "Btrfs 准备引入 Huge Folios 支持，Linux 7.2 中大页 I/O 吞吐将大幅提升",
+      "content": "Btrfs 文件系统正在推进 Huge Folios 支持，目标是将 folio 大小提升至 2MB。由 SUSE 工程师 Qu Wenruo 主导开发，该补丁已进入 Btrfs 的 for-next 分支，预计在 Linux 7.2 合并窗口提交。Huge Folios 可显著提高大文件 I/O 吞吐量、减少系统开销。对使用 Btrfs 的服务器和桌面用户都是重大利好。",
+      "quote": "Btrfs 终于要上大页了，等这一天等得都快忘记它还是个现代文件系统了。",
+      "url": "https://www.phoronix.com/news/Btrfs-Huge-Folios-Linux-7.2",
+      "source": "Phoronix",
+      "published": "2026-05-27",
+      "uid": "2e211352aee44a115f1cafd3c6e48577"
+    },
+    {
+      "title": "DynIP — 支持 IPv6、DNSSEC 和自带域名的动态 DNS 工具",
+      "content": "DynIP 是一个新兴的开源动态 DNS 服务，完全基于 RFC 2136 标准实现，而非传统 API 更新方式。支持 IPv6、DNSSEC 安全扩展，允许使用自己的域名。对于自建服务器、家庭实验室和边缘计算场景的开发者来说，比传统 DDNS 服务更灵活、更安全。HN 上 250+ 点赞，社区反响热烈。",
+      "quote": "动态 DNS 居然还能玩出新花样，RFC 2136 原生支持才是正解，Not Invented Here 选手请就位。",
+      "url": "https://dynip.dev/",
+      "source": "Hacker News",
+      "published": "2026-05-27",
+      "uid": "fa420579c076f0d97ebc61ba5a7598f1"
+    },
+    {
+      "title": "Understand-Anything: 多模态理解统一框架",
+      "content": "Lum1104/Understand-Anything 是一个多模态AI理解框架，旨在统一处理图像、视频、音频等多种输入格式，提供端到端的理解能力。该项目在GitHub上获得关注，代表多模态模型从实验室走向工程化的趋势，对需要处理富媒体内容的应用场景有直接参考价值。",
+      "quote": "看懂一切，下一个目标是看懂老板的需求。",
+      "source": "GitHub Trending Daily",
+      "url": "https://github.com/Lum1104/Understand-Anything",
+      "published": "2026-05-26",
+      "uid": "dev_f424f35a"
+    },
+    {
+      "title": "codegraph: 把代码库变成可查询的知识图谱",
+      "content": "colbymchenry/codegraph 将代码库解析为知识图谱并支持语义查询。通过静态分析提取函数调用、类继承、模块依赖等关系，让开发者用自然语言探索代码架构。对大型项目和遗留代码库，这种可视化依赖分析比grep高效得多，特别适合新成员接手老项目或重构前评估影响范围。",
+      "quote": "重构前先跑codegraph，提前知道烧哪炷香。",
+      "source": "GitHub Trending Daily",
+      "url": "https://github.com/colbymchenry/codegraph",
+      "published": "2026-05-26",
+      "uid": "dev_ffb523d0"
+    },
+    {
+      "title": "ai-engineering-from-scratch: AI 工程入门路线图",
+      "content": "rohitg00/ai-engineering-from-scratch 登顶GitHub日趋势榜，提供从零开始的AI工程学习路线图，覆盖ML基础、深度学习、LLM原理、RAG实践、Agent架构、MCP协议等核心知识体系。强调工程落地而非理论推导，切中了大量开发者转型AI方向的刚需，在AI就业市场持续火热的背景下极具参考价值。",
+      "quote": "AI工程路线图又来收割Star了，收藏即学会。",
+      "source": "GitHub Trending Daily",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "published": "2026-05-26",
+      "uid": "dev_fa6393cf"
+    },
+    {
+      "title": "Anthropic 发布 Claude Knowledge Work Plugins 官方生态",
+      "content": "Anthropic在GitHub上发布knowledge-work-plugins仓库，标志着Claude正式进入插件生态时代。该插件集合专注于知识工作场景，开发者可通过插件系统扩展Claude的文件操作、API调用、浏览器控制等能力。这意味着Claude不再只是一个对话模型，而是向可扩展的开发平台演进，类似ChatGPT Plugins的生态思路。",
+      "quote": "Claude终于学会装插件了，下一步该学写周报了。",
+      "source": "GitHub Trending Daily",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "published": "2026-05-26",
+      "uid": "dev_6aab41b5"
+    },
+    {
+      "title": "Anthropic-Cybersecurity-Skills: Claude 安全技能包",
+      "content": "mukul975/Anthropic-Cybersecurity-Skills 是一套面向Claude Agent的网络安全技能包，将渗透测试、漏洞扫描、安全审计等能力模块化封装为可复用Skill。这代表了AI Agent在安全领域应用的新范式——不是替代安全工程师，而是把标准化安全流程变成AI可执行的自动化任务。对安全团队和DevSecOps有直接应用价值。",
+      "quote": "AI安全技能包，黑客学不会我教AI学。",
+      "source": "GitHub Trending Daily",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "published": "2026-05-26",
+      "uid": "dev_67bfb764"
+    },
+    {
+      "title": "Airī: 萌系AI助手框架",
+      "content": "moeru-ai/airi 是一个开源AI助手框架，定位为二次元风格的通用Agent平台。支持多模型接入、角色扮演、插件扩展等功能，在开源社区中获得了日本和中国开发者的关注。该项目代表了AI Agent在泛娱乐场景的探索方向，展示了Agent框架可以兼具功能性和趣味性。",
+      "quote": "二次元AI助手，你的下一任虚拟CP已上线。",
+      "source": "GitHub Trending Daily",
+      "url": "https://github.com/moeru-ai/airi",
+      "published": "2026-05-26",
+      "uid": "dev_15e35b9a"
+    },
+    {
+      "title": "stop-slop: AI垃圾内容检测工具",
+      "content": "hardikpandya/stop-slop 是一个检测和过滤AI生成的低质量内容（俗称Slop）的开源工具。在AI生成内容泛滥的当下，该工具通过文本特征分析识别AI产出的空洞、重复、无信息量的内容。对内容平台、搜索引擎和需要维护信息质量的团队来说，这类检测工具正变得越来越刚需，是AI生态的自我净化尝试。",
+      "quote": "AI造垃圾，AI来打扫，完美的自产自销闭环。",
+      "source": "GitHub Trending Daily",
+      "url": "https://github.com/hardikpandya/stop-slop",
+      "published": "2026-05-26",
+      "uid": "dev_16119522"
+    },
+    {
+      "title": "gstack: YC创业公司技术栈模板",
+      "content": "garrytan/gstack 是YC合伙人Garry Tan发布的开源技术栈模板，为早期创业公司提供一套经过验证的全栈技术选型方案。覆盖前端、后端、数据库、部署、监控等完整技术链路，目标是让创业者不用重复造轮子就能快速启动产品开发。对独立开发者和早期创业团队来说是一份可以直接fork的技术蓝图。",
+      "quote": "YC亲选技术栈，抄作业也要抄对版本。",
+      "source": "GitHub Trending Daily",
+      "url": "https://github.com/garrytan/gstack",
+      "published": "2026-05-26",
+      "uid": "dev_350c2231"
+    },
+    {
+      "title": "Paperless-ngx: 开源文档管理系统再登趋势榜",
+      "content": "Paperless-ngx 是一个成熟的开源文档管理系统，支持OCR识别、自动分类、全文搜索和标签管理，可将纸质文档转化为可检索的数字档案。该项目再次登上GitHub日趋势榜，反映出企业和个人对文档数字化的持续需求。相比商业方案，Paperless-ngx的完全自托管特性满足了数据隐私和合规需求。",
+      "quote": "Paperless喊了十年，你家的发票该搬进硬盘了。",
+      "source": "GitHub Trending Daily",
+      "url": "https://github.com/paperless-ngx/paperless-ngx",
+      "published": "2026-05-26",
+      "uid": "dev_5e02292a"
+    },
+    {
+      "title": "DeepSeek Reasonix: 原生AI编码代理",
+      "content": "DeepSeek发布Reasonix，一款原生AI编码代理，主打高缓存命中率和极低推理成本。在HN上获得广泛关注，被视为DeepSeek在编程助手市场的重要布局。相比Codex和Claude Code等竞品，Reasonix的优势在于DeepSeek自家模型的推理成本优势和针对编码场景的深度优化。",
+      "quote": "Codex还没卷完，DeepSeek又带着Reasonix杀进来了。",
+      "source": "Hacker News",
+      "url": "https://esengine.github.io/DeepSeek-Reasonix/",
+      "published": "2026-05-26",
+      "uid": "dev_8ac00fe4"
+    },
+    {
+      "title": "deepseek 网页和 app 输入<think>能看到别的用户的历史对话",
+      "content": "目前为止好像还没有修复 deepseek 网页和 app 输入<think>能看到别的用户的历史对话相关内容可查阅原文获取更多信息。",
+      "quote": "目前为止好像还没有修复 deepseek 网页和 app 输",
+      "source": "V2EX Tech",
+      "url": "https://www.v2ex.com/t/1213000#reply1",
+      "published": "2026-05-25",
+      "uid": "dev_18be3662"
+    },
+    {
+      "title": "美伊还不如继续打呢，一停战 AI 科技股又支棱起来了，美光、闪迪又要涨价了，普通人啥好处也没捞到除了失业",
+      "content": "美伊还不如继续打呢，一停战 AI 科技股又支棱起来了，美光、闪迪又要涨价了，普通人啥好处也没捞到除了失业，来源：V2EX Tech。详情请阅读原文了解更多相关信息。",
+      "quote": "美伊还不如继续打呢，一停战 AI 科技股又支棱起来了，美光、",
+      "source": "V2EX Tech",
+      "url": "https://www.v2ex.com/t/1204350#reply2",
+      "published": "2026-05-25",
+      "uid": "dev_c2e21de5"
+    },
+    {
+      "title": "铺天盖地的 OpenClaw，到底能做什么？（不吹不黑）",
+      "content": "铺天盖地的 OpenClaw，到底能做什么？（不吹不黑），来源：V2EX Tech。详情请阅读原文了解更多相关信息。",
+      "quote": "铺天盖地的 OpenClaw，到底能做什么（不吹不黑），来源",
+      "source": "V2EX Tech",
+      "url": "https://www.v2ex.com/t/1196877#reply0",
+      "published": "2026-05-25",
+      "uid": "dev_c21613a6"
+    },
+    {
+      "title": "区块链/LLM 这些技术随着科技发展总会到来",
+      "content": "技术的发展是一个渐进的过程，即使没有某个特定的里程碑，但随着相关科技等技术的进步，在不同条件和推动下慢慢的也会发展出某些牛逼的技术。\n中本聪在比特币白皮书中发明的区块链技术，当时科技并不发达，甚至没有多少设备会去跑一个去中心化的区块链，但这个去中心化概念就慢慢生长发芽。我觉得区块链技术是发展的比较早的，也就是说中本聪这项发明很超前，一直深渊的影响到现在 web3 。但如果当时没有中本聪，后面科技的",
+      "quote": "技术的发展是一个渐进的过程，即使没有某个特定的里程碑，但随着",
+      "source": "V2EX Tech",
+      "url": "https://www.v2ex.com/t/1187262#reply3",
+      "published": "2026-05-25",
+      "uid": "dev_47753d63"
+    },
+    {
+      "title": "京东都是用啥脚本抢的呀",
+      "content": "XD 那个京东 298 的联名会员卡，手抢根本没办法抢得到诶。。。 京东都是用啥脚本抢的呀相关内容可查阅原文获取更多信息。",
+      "quote": "XD 那个京东 298 的联名会员卡，手抢根本没办法抢得到诶",
+      "source": "V2EX Tech",
+      "url": "https://www.v2ex.com/t/1183880#reply4",
+      "published": "2026-05-25",
+      "uid": "dev_35cc11f1"
+    },
+    {
+      "title": "除了 Vibe Coding，各位所在的行业有因为 AI 应用带来革命性进展，或者底层变革的吗？",
+      "content": "相信大家公司都在大力的推动 AI 应用吧。作为一颗螺丝钉，看不到领导层高瞻远瞩的方向，能切实感受到的，也就只有 Vibe Coding 带来的工作上的便利。\n所以想问下大家，2026 年初的当下，AI 有为任何行业带来革命性的变革吗，或者工作生活中因为 AI 带来的彻底的改变？\n我最大的感受就是 25 年下半年基本没用过搜索引擎了，有问题先问豆包，解答不了再百度搜索。",
+      "quote": "相信大家公司都在大力的推动 AI 应用吧作为一颗螺丝钉，看不",
+      "source": "V2EX Tech",
+      "url": "https://www.v2ex.com/t/1183663#reply1",
+      "published": "2026-05-25",
+      "uid": "dev_8c095dec"
+    },
+    {
+      "title": "要迎来固态电池的时代了吗？",
+      "content": "https://mp.weixin.qq.com/s/VZs_aLT_RHHFafpJJxcuLg\n全球首款可量产全固态电池问世\n今年，芬兰初创公司 Donut Lab 在一年一度的 CES 展会上，带来了他们更为炸裂的“黑科技”产品——该公司声称的“全球首款可量产全固态电池”。\n据介绍，Donut Lab 的全固态电池提供 400Wh/kg 的能量密度，从而实现了更长的续航里程、更轻的结构，以及",
+      "quote": "全球首款可量产全固态电池问世",
+      "source": "V2EX Tech",
+      "url": "https://www.v2ex.com/t/1183473#reply5",
+      "published": "2026-05-25",
+      "uid": "dev_c5f335a8"
+    },
+    {
+      "title": "老罗今晚的分享大会，有你感兴趣的产品吗？",
+      "content": "如题，老罗今晚的发布会我全程观看了，还是那个味道。如果不论老罗的民族倾向，单论做产品，我觉得他还是挺有匠人精神的。虽然他今天推荐的都是其他厂商的产品，但那份做产品的初心一直都在，也延续到了这次的选品上边。总之，分享会没白看。说回正题，我最感兴趣的产品就是大疆 Neo2 ，因为家里有两个娃，平常出门喜欢拍点视频记录，这款产品相当适合我。",
+      "quote": "如题，老罗今晚的发布会我全程观看了，还是那个味道如果不论老罗",
+      "source": "V2EX Tech",
+      "url": "https://www.v2ex.com/t/1182269#reply1",
+      "published": "2026-05-25",
+      "uid": "dev_5e3ab86b"
+    },
+    {
+      "title": "🖖Manus 被 Meta 数十亿美元收购❗❗❗",
+      "content": "这几天最爆的新闻会围绕 Manus 吧，国内对这家公司的争议很大，今天迎来可以说是最好的结局：被 Meta 数十亿美元收购！！！",
+      "quote": "这几天最爆的新闻会围绕 Manus 吧，国内对这家公司的争议",
+      "source": "V2EX Tech",
+      "url": "https://www.v2ex.com/t/1182036#reply86",
+      "published": "2026-05-25",
+      "uid": "dev_c5e50451"
+    },
+    {
+      "title": "Excelize 开源社区荣获 2025 红山开源明星项目三等奖",
+      "content": "2025 年 11 月 16 日，由红山开源平台主办的“2025 红山开源大会”，在北京香山颐和宾馆红山厅成功落下帷幕。为表彰在开源领域做出卓越贡献的项目，大会特别设立 2025 年度红山开源平台明星项目颁奖环节。\nExcelize 开源社区荣获了 2025 红山开源明星项目三等奖，活动详情详见文章：2025 红山开源大会圆满收官，共筑开源生态新未来\n\nExcelize 是用于操作电子表格办公文档",
+      "quote": "2025 年 11 月 16 日，由红山开源平台主办的“20",
+      "source": "V2EX Tech",
+      "url": "https://www.v2ex.com/t/1180445#reply1",
+      "published": "2026-05-25",
+      "uid": "dev_48754fca"
+    },
+    {
+      "title": "Gemini 的新功能，搞笑狮子漂移（动态视图）",
+      "content": "可圈可点的功能。\n厉害之处在于融入了物理学规律（爬 wiki 数据）\n不足也很明显，该功能仍在初级阶段，期待后续。\n有想体验的佬，点下方链接。\n\n\n狮子\nhttps://gemini.google.com/app/3ee4af9bf4f58dd6\n\n\n飞鸟\nhttps://gemini.google.com/app/15a406316b57d25f",
+      "quote": "Gemini 的新功能，搞笑狮子漂移（动态视图）。",
+      "source": "V2EX Tech",
+      "url": "https://www.v2ex.com/t/1174123#reply0",
+      "published": "2026-05-25",
+      "uid": "dev_fdd77cb3"
+    },
+    {
+      "title": "一觉醒来， G 老师 3 Pro 已经可以用了,起飞",
+      "content": "官方链接镇楼，需要的佬自取：\nhttps://blog.google/products/gemini/gemini-3/#plan-anything\nhttps://gemini.google.com/app/",
+      "quote": "官方链接镇楼，需要的佬自取：",
+      "source": "V2EX Tech",
+      "url": "https://www.v2ex.com/t/1173636#reply3",
+      "published": "2026-05-25",
+      "uid": "dev_723aa683"
+    },
+    {
+      "title": "西安有哪些做 OCR 做的比较好的企业啊，有项目需要合作",
+      "content": "西安有哪些做 OCR 做的比较好的企业啊，有项目需要合作\n有意的可以聊聊 西安有哪些做 OCR 做的比较好的企业啊，有项目需要合作相关内容可查阅原文获取更多信息。",
+      "quote": "西安有哪些做 OCR 做的比较好的企业啊，有项目需要合作",
+      "source": "V2EX Tech",
+      "url": "https://www.v2ex.com/t/1154141#reply0",
+      "published": "2026-05-25",
+      "uid": "dev_ef16cbac"
+    },
+    {
+      "title": "影石今晚发布全景无人机，看了视频感觉不错、后期可选视角，有玩无人机比较专业的佬吗？你们玩机的注重点是什么？",
+      "content": "影石今晚发布全景无人机，看了视频感觉不错、后期可选视角，有玩无人机比较专业的佬吗？你们玩机的注重点是什么？，来源：V2EX Tech。详情请阅读原文了解更多相关信息。",
+      "quote": "影石今晚发布全景无人机，看了视频感觉不错、后期可选视角，有玩",
+      "source": "V2EX Tech",
+      "url": "https://www.v2ex.com/t/1152351#reply3",
+      "published": "2026-05-25",
+      "uid": "dev_40acb301"
+    },
+    {
+      "title": "trae 偷我两天 pro",
+      "content": "trae 偷我两天 pro。trae 偷我两天 pro。该消息来自当日资讯报道，更多详情请查看原文链接。",
+      "quote": "trae 偷我两天 protrae 偷我两天 pro",
+      "source": "V2EX Tech",
+      "url": "https://www.v2ex.com/t/1151801#reply2",
+      "published": "2026-05-25",
+      "uid": "dev_c0845f18"
+    }
+  ],
+  "ai": [
+    {
+      "title": "Language Models Need Sleep",
+      "content": "arXiv新论文提出让大语言模型通过类似睡眠的机制来处理长上下文——模型周期性地将近期上下文转化为持久快速权重，然后清空KV缓存。在“睡眠”期间执行N次离线循环处理并更新状态空间模型中的快速权重。在数学推理等任务上，更长的“睡眠”时间带来更深的推理能力提升，堪称AI界的“睡个好觉”研究。",
+      "quote": "原来AI也要睡大觉才能变聪明，996终于轮到模型了。",
+      "source": "Arxiv",
+      "url": "https://arxiv.org/abs/2605.26099",
+      "published": "2026-05-27",
+      "uid": "ai_21f0c491"
+    },
+    {
+      "title": "天工 SkyClaw-v1.0 Agent 模型正式发布，半价享顶级性能",
+      "content": "昆仑万维旗下天工AI推出高性能Agent模型SkyClaw-v1.0，支持百万token上下文，重点优化复杂工具调用与多轮任务执行。在Agent benchmark上超越Minimax 2.7、DeepSeek V4 Flash及Qwen 3.6系列，定价低于竞品一半。同时开放2-4周免费试用，兼容OpenClaw、Hermes、Codex等主流Agent框架。",
+      "quote": "半价超越DeepSeek V4？这价格战打得比双11还狠。",
+      "source": "36氪",
+      "url": "https://36kr.com/p/3825882266407815",
+      "published": "2026-05-27",
+      "uid": "ai_2d2cde4b"
+    },
+    {
+      "title": "字节跳动向Seed AI部门员工开放豆包股认购权",
+      "content": "字节跳动首次针对特定业务单元发行股权，为旗下Seed人工智能部门员工提供与该部门挂钩的低价股票期权。这是字节跳动探索AI人才激励的重要举措，让员工能分享公司AI业务增长的成果。此前字节已在内部引导员工使用AI工具，此次股权激励将进一步加强AI人才绑定。",
+      "quote": "豆包股来了——字节AI员工终于不用眼馋隔壁OpenAI的财报了。",
+      "source": "36氪",
+      "url": "https://36kr.com/p/3825928694846085",
+      "published": "2026-05-27",
+      "uid": "ai_970c5ef3"
+    },
+    {
+      "title": "Foundation Protocol: A Coordination Layer for Agentic Society",
+      "content": "来自蒙特利尔大学、港科大等机构的联合团队提出了Foundation Protocol，一个面向人-AI混合社会的图优先协调协议。FP将智能体、工具、资源、人类和机构等异质实体统一建模，支持原生多方协作和事件驱动交互，内置经济结算原语，并将审计和治理作为一等公民。旨在让自主智能体可组合协作的同时保持问责制透明化。",
+      "quote": "智能体社会需要交通规则，不然AI们就要在马路上互撞了。",
+      "source": "HuggingFace Papers",
+      "url": "https://arxiv.org/abs/2605.23218",
+      "published": "2026-05-27",
+      "uid": "ai_3d116a3a"
+    },
+    {
+      "title": "Claw-Anything: Benchmarking Always-On Personal Assistants with Broader Access to User's Digital World",
+      "content": "华为与多所高校联合发布Claw-Anything基准测试，专门评估始终在线的个人AI助手能力。该基准从三个维度扩展智能体上下文：长周期活动历史、相互依赖的后端服务、跨设备的GUI与CLI交互。通过模拟数月的用户活动数据，发现GPT-5.5的pass@1仅34.5%，远低于此前基准，揭示当前智能体能力与始终在线个人助理需求之间的巨大差距。",
+      "quote": "连Claw-Anything都在测AI助手了，你家的智能体还敢说自己称职？",
+      "source": "HuggingFace Papers",
+      "url": "https://arxiv.org/abs/2605.26086",
+      "published": "2026-05-27",
+      "uid": "ai_abb282c7"
+    },
+    {
+      "title": "Helix4D: Complex 4D Mesh Generation from Video",
+      "content": "Snap与普渡大学、KAUST联合提出Helix4D框架，从输入视频生成动态3D网格（即4D形状生成）。该方法基于Trellis2架构，通过滑动窗口跨帧注意力保留罕见场景质量（如透明物体、内部表面），并重新利用低频率空间RoPE频带实现4D时间编码，无需额外参数。实验证明在复杂拓扑变化、熔化、破碎、透明及薄结构等动态场景下效果显著。",
+      "quote": "从视频到4D模型，以后做动画连建模师都不用请了。",
+      "source": "HuggingFace Papers",
+      "url": "https://arxiv.org/abs/2605.26109",
+      "published": "2026-05-27",
+      "uid": "ai_72dbd5c0"
+    },
+    {
+      "title": "Using AI to Write Better Code More Slowly",
+      "content": "Nolan Lawson的长文反思AI辅助编程现状：虽然AI能在几秒内生成代码，但开发者需要花大量时间审查、调试和重构AI输出。他主张慢写代码的理念——用AI辅助思考架构和设计模式，而非盲目接受AI生成的代码。文章在Hacker News引发激烈讨论（1001分，377条评论），体现了开发者社区对AI编程工具爱恨交织的态度。",
+      "quote": "AI帮你写代码，你帮AI修bug，双赢（赢两次的那种）。",
+      "source": "Hacker News",
+      "url": "https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/",
+      "published": "2026-05-27",
+      "uid": "ai_1b66f58c"
+    },
+    {
+      "title": "Eagle 3.1: EAGLE Team x vLLM Team x TorchSpec Team Collaborative Release",
+      "content": "vLLM官方博客宣布Eagle 3.1发布，这是EAGLE团队、vLLM团队和TorchSpec团队三方合作的成果。Eagle系列专注于投机解码技术，通过草稿模型提前预测多个token来加速LLM推理。Eagle 3.1整合了来自三个团队的优化，在推理加速和兼容性方面带来显著提升，获得57分和17条评论的热度。",
+      "quote": "三个和尚终于有水喝了，联合优化比各自卷强不少。",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=48278407",
+      "published": "2026-05-27",
+      "uid": "ai_7f599200"
+    },
+    {
+      "title": "CRONOS: Benchmarking Counterfactual Physical Consistency in Video Models",
+      "content": "弗莱堡大学和马克斯普朗克研究所推出CRONOS基准测试，专门评估视频生成模型的反事实物理一致性。基于虚幻引擎构建的光影级逼真环境，系统干预视点、场景、物体类别和外观四个关键因素，保持物理事件类型不变。评估发现当前开源视频生成器在反事实物理一致性上存在严重缺陷，同一物理事件的预测质量会因视点变化而大幅波动。",
+      "quote": "视频模型只会画皮不会画骨，物理常识？不存在的。",
+      "source": "HuggingFace Papers",
+      "url": "https://arxiv.org/abs/2605.23699",
+      "published": "2026-05-27",
+      "uid": "ai_52508cc9"
+    },
+    {
+      "title": "Uber President Says AI Spending Is Getting Harder to Justify",
+      "content": "Uber总裁Andrew Macdonald在采访中表示，尽管2025年研发支出达34亿美元（同比增长9%），但很难在AI投入（如Claude Code的token消耗）与实际交付的用户功能之间建立直接联系。他说token消耗增速与功能产出增速之间没有对应关系，并指出随着AI投资增长公司正在减少人类员工招聘，这个权衡越来越难合理化。",
+      "quote": "Uber花了34亿才明白：AI烧钱速度比特斯拉刹车还快。",
+      "source": "Hacker News",
+      "url": "https://www.theverge.com/transportation/937116/uber-ai-investment-hard-to-justify",
+      "published": "2026-05-27",
+      "uid": "ai_d896453c"
+    },
+    {
+      "title": "AI 时代技术债新形态：Prompt 债、召回债、评估债正在重塑企业 AI 风险",
+      "content": "麻省理工研究发现 95% 的 AI 项目无法交付价值，而背后的深层原因并非模型或算力不足——而是 AI 系统引入了全新的技术债务形态。Prompt、模型和数据依赖层的故障不仅更难定位，且因 AI 的概率特性呈现间歇性爆发。传统代码债有明确 Bug 可复现，AI 债则分散在提示词、数据管道和基础设施中，需要持续监控才能防止性能漂移。",
+      "quote": "AI 技术债比代码债更隐蔽——Bug 不一定会炸，但炸的时候没人知道为啥。",
+      "source": "VentureBeat",
+      "url": "https://venturebeat.com/technology/why-prompt-debt-retrieval-debt-and-evaluation-debt-are-quietly-reshaping-enterprise-ai-risk",
+      "published": "2026-05-27",
+      "uid": "ai_a8f7c732"
+    },
+    {
+      "title": "AI Agent 正在悄悄制造混沌工程故障，企业尚未监控这些风险",
+      "content": "PwC 调查显示 79% 的企业已将 AI Agent 投入生产，96% 计划扩大部署。但 Gartner 警告 40% 的 Agent 项目将在 2027 年前因风险管控不足被取消。作者在 Cisco 和 Splunk 多年观察发现，企业犯下的结构性错误是将自治 Agent 与混沌工程视为两个独立领域——实际上它们本质相同，之间空白地带正在引发下一波重大生产事故。",
+      "quote": "Agent 跑着跑着就崩了？不是 Bug，是你从来没想过它也会搞混沌工程。",
+      "source": "VentureBeat",
+      "url": "https://venturebeat.com/orchestration/ai-agents-are-quietly-generating-chaos-engineering-failures-enterprises-dont-track-yet",
+      "published": "2026-05-27",
+      "uid": "ai_dc56e44a"
+    },
+    {
+      "title": "你的 AI Agent 需要的不是向量数据库，而是操作系统终端",
+      "content": "多所大学联合提出直接语料交互（DCI）技术，让 AI Agent 绕过嵌入模型，直接用命令行工具搜索原始语料。研究发现传统 RAG 的向量检索对精确匹配的字符串、错误码、文件路径等长尾信息效果很差，Agent 在第一步就可能丢失关键证据。DCI 用 grep 等命令直接操作文本，将检索成本降低 30% 以上。",
+      "quote": "谁说 Agent 不能 grep？终端才是 Agent 真正的家，RAG 只是过度房。",
+      "source": "VentureBeat",
+      "url": "https://venturebeat.com/orchestration/your-ai-agents-need-a-terminal-not-just-a-vector-database",
+      "published": "2026-05-27",
+      "uid": "ai_319156e9"
+    },
+    {
+      "title": "SkillOpt: AI Agent 技能自我进化策略",
+      "content": "SkillOpt提出了一套AI Agent技能的自动管理与优化策略，研究如何在Agent运行时动态评估技能有效性、淘汰低效技能、引入新技能。该框架将技能管理从静态配置转变为自适应系统，让Agent能像人类一样在经验中进化能力栈。对于构建长期运行的自主Agent系统，这种自我进化能力是关键的缺失环节。",
+      "quote": "AI技能也会过时，靠自学续命的Agent来了。",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/abs/2605.23904",
+      "published": "2026-05-26",
+      "uid": "ai_6d15fcc6"
+    },
+    {
+      "title": "Lens: 重新思考基础文生图模型的训练效率",
+      "content": "Lens论文重新审视了文生图基础模型的训练效率问题，提出新的训练范式在保持生成质量的前提下显著降低计算成本。在当前大模型训练动辄百万GPU小时的成本背景下，这类效率优化研究对AI产业有直接经济价值——每降低10%的训练成本，就意味着更多中小团队能够参与基础模型研发。",
+      "quote": "训大模型烧钱？Lens说可以省着点烧。",
+      "source": "arXiv cs.CV",
+      "url": "https://arxiv.org/abs/2605.xxxxx",
+      "published": "2026-05-26",
+      "uid": "ai_727e658e"
+    },
+    {
+      "title": "SciAtlas: 大规模科学文献知识图谱",
+      "content": "SciAtlas 构建了一个面向自动化科学文献分析的大规模知识图谱，将学术论文中的实体、关系、方法、数据集等结构化信息连接成可查询的网络。对于文献综述、跨学科发现和研究趋势分析等场景，这种知识图谱比传统搜索和引用追踪提供了更丰富的语义连接，有望加速科学研究的发现周期。",
+      "quote": "文献综述自动化了，PhD终于不用熬夜翻论文了。",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/abs/2605.22878",
+      "published": "2026-05-26",
+      "uid": "ai_51269a06"
+    },
+    {
+      "title": "从原始经验到技能消费：模型生成数据系统性研究",
+      "content": "该论文系统研究了AI模型将原始交互经验转化为可复用技能的完整路径，从数据采集、经验提取到技能封装和消费，提出了端到端的评估框架。在Agent竞赛白热化的当下，如何让模型从大量交互中高效学习并形成可复用的技能模块，是Agent从玩具走向生产的关键问题。",
+      "quote": "AI的学习笔记整理指南，就差买个笔记本了。",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/abs/2605.23899",
+      "published": "2026-05-26",
+      "uid": "ai_ffc7fc6c"
+    },
+    {
+      "title": "PhotoFlow: Agent驱动的3D虚拟摄影任务系统",
+      "content": "PhotoFlow提出了一种基于AI Agent的3D虚拟摄影框架，Agent可以自主规划拍摄角度、调整光照和构图来完成虚拟摄影任务。这项研究将多模态AI与3D渲染相结合，展示了AI Agent在创意内容生成领域的潜力。对3D内容创作、虚拟摄影和游戏开发等场景，这种自主摄影Agent降低了专业门槛。",
+      "quote": "AI摄影师上线，你的自拍终于有人拍了。",
+      "source": "arXiv cs.CV",
+      "url": "https://arxiv.org/abs/2605.23771",
+      "published": "2026-05-26",
+      "uid": "ai_4ff1ad75"
+    },
+    {
+      "title": "DeepSeek Reasonix: Native Coding Agent with High Caching and Low Cost",
+      "content": "DeepSeek 发布 Reasonix，一款主打高缓存、低成本的原生 coding agent。与传统 AI 编程工具不同，它在代码生成链路中内置了智能缓存层，大幅减少重复 token 消耗。HN 热度 646 分，266 条评论，被开发者称为「性价比刺客」。实测在中等复杂度任务上，单位代码成本显著低于 GPT-4 和 Claude。",
+      "quote": "缓存玩出花的 coding agent，低成本革命这次真的来了。",
+      "source": "Hacker News",
+      "url": "https://esengine.github.io/DeepSeek-Reasonix/",
+      "published": "2026-05-25",
+      "毒舌点评": "把缓存做成核心差异化竞争力——DeepSeek这波操作堪称AI界的拼多多：代码质量不好说，价格是真的刺。",
+      "uid": "ai_80699ad5"
+    },
+    {
+      "title": "白宫申请90亿美元为间谍机关采购AI芯片",
+      "content": "据《纽约时报》报道 CIA 和 NSA 因算力不足无法运行最新 AI 模型，白宫已批准 90 亿美元采购英伟达 Grace Blackwell 超算芯片的申请，但需国会批准。这笔钱旨在让情报机构不被中国等对手的 AI 能力甩开。消息一出，芯片股盘后小幅走高。",
+      "quote": "情报战也是算力战，90亿买的是焦虑而不是芯片。",
+      "source": "The Verge / NYT",
+      "url": "https://www.nytimes.com/2026/05/22/us/politics/spy-agencies-ai-chips-shortage.html",
+      "published": "2026-05-25",
+      "毒舌点评": "CIA连最新模型都跑不动了？90亿买Grace Blackwell——国家安全成了英伟达财报的最佳注脚。",
+      "uid": "ai_ab272929"
+    },
+    {
+      "title": "Anthropic开源安全工具：Project Glasswing 正式开放",
+      "content": "Anthropic 宣布将曾仅供内部使用的安全工具（包括 skills、Claude harness、威胁建模工具）开放给「符合条件」的客户，并同步上线开源漏洞披露 dashboard。这是 Claude 商业安全体系首次对外的系统性开放，官方强调此举是为应对企业级 AI 部署安全合规压力。",
+      "quote": "安全工具开放是好事，但「符合条件」这四个字本身就设了门槛。",
+      "source": "The Verge / Anthropic",
+      "url": "https://www.anthropic.com/research/glasswing-initial-update",
+      "published": "2026-05-25",
+      "毒舌点评": "「开源」但「符合条件」才有资格拿——Anthropic把安全工具包装成限量版球鞋，既要面子又要筛选客户。",
+      "uid": "ai_67c5484a"
+    },
+    {
+      "title": "Anthropic正与微软谈判，租用Azure AI算力",
+      "content": "The Information 披露，Anthropic 正在与微软早期谈判，计划在 Azure 上部署 AI 算力，原因是 SpaceX 每年 150 亿美元的容量协议仍无法满足 Claude 的需求。这已是双方合作史上第三次「冷热交替」，反映出算力瓶颈下 AI 公司不得不接受 Wintel 体系收编的现实。",
+      "quote": "再强的模型也得低头找微软租服务器，这就是算力霸权的现实。",
+      "source": "The Verge / The Information",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/923776",
+      "published": "2026-05-25",
+      "毒舌点评": "Spaces 150亿不够用，转头找微软——Anthropic和Azure的复婚戏码，比美剧还狗血。算力面前没有尊严。",
+      "uid": "ai_af0eb066"
+    },
+    {
+      "title": "Intuit宣布裁员3000人，押注AI替代",
+      "content": " TurboTax 和 QuickBooks 的母公司 Intuit 宣布裁减约 17% 全球员工（约3000人），CEO 在内部备忘录中明确表示裁员是为了「集中资源投入 AI」。此前该公司已在会计软件中大范围集成生成式 AI 功能，此次裁员被外界视为 AI 替代白领岗位的标志性事件之一。",
+      "quote": "会计软件公司用AI裁员，会计师看了沉默，税务专家看了流泪。",
+      "source": "The Verge / Reuters",
+      "url": "https://www.reuters.com/business/world-at-work/intuit-cut-17-global-jobs-streamline-operations-memo-shows-2026-05-20/",
+      "published": "2026-05-25",
+      "毒舌点评": "Intuit裁员3000人换AI——会计行业等了大半辈子的狼，这次真的来了，还穿着西装拿着裁员通知。",
+      "uid": "ai_82a6b3cc"
+    },
+    {
+      "title": "Pi Coding Agent: 可定制化的 Coding Agent框架",
+      "content": "Product Hunt 今日热榜产品 Pi Coding Agent 主打「可定制为自己所用」的 AI 编程助手概念，定位介于 GitHub Copilot 和 Cursor 之间的中间地带。开发者可自定义 agent 行为和工具链，适合有定制化需求的技术团队。",
+      "quote": "又是又一个 coding agent，这条赛道现在比地铁早高峰还挤。",
+      "source": "Product Hunt",
+      "url": "https://www.producthunt.com/products/pi-coding-agent-3",
+      "published": "2026-05-25",
+      "毒舌点评": "第N个coding agent，定位是介于Copilot和Cursor——翻译：没有自己的灵魂，只能挤中间那道缝。",
+      "uid": "ai_7818b00f"
+    }
+  ],
+  "startup": [
+    {
+      "title": "Weave (YC W25) 招聘ML/AI/产品/设计工程师",
+      "content": "YC W25批次创业公司Weave正在大规模招聘ML、AI、产品和设计工程师，覆盖全栈AI团队构建的各个环节。YC孵化器的招聘帖通常是在产品市场验证完成后规模扩张的信号。对于AI方向的技术人员，加入YC早期团队意味着股权比例更高但不确定性也更大，是高风险高回报的职业选择。",
+      "quote": "YC种子轮招聘=用股权赌明天，赢了财务自由输了白干。",
+      "source": "Y Combinator / HN",
+      "url": "https://jobs.ashbyhq.com/workweave",
+      "published": "2026-05-26",
+      "uid": "05739a088c302bf415c15f5c53659759"
+    },
+    {
+      "title": "RentFlow (YC S24) 招募高级AI/ML负责人",
+      "content": "YC S24批次创业公司RentFlow正在招募高级AI/ML负责人，方向为房地产租赁流程自动化。AI+PropTech是美国创投市场持续热门的赛道之一，YC连续多批次孵化租售赛道公司，从2024年的短租定价到当前的租赁流程AI化，赛道在垂直纵深上不断进化。",
+      "quote": "又一家用AI改造租房的YC公司，房东的春天来了。",
+      "source": "Y Combinator / HN",
+      "url": "https://www.ycombinator.com/companies/rentflow/jobs/V2yneIE-senior-ai-ml-lead",
+      "published": "2026-05-26",
+      "uid": "75a9d6f44a42fb6bcbaead226ee66899"
+    },
+    {
+      "title": "Chert (YC P26) 发布：iMessage的Twilio式API服务",
+      "content": "YC P26批次创业公司Chert在Hacker News上发布，定位为iMessage版的Twilio——为开发者提供API接口来通过iMessage发送和接收消息。这意味着企业和应用可以原生接入苹果的iMessage生态进行客户沟通，绕过了传统短信的成本和体验限制，是通信API市场的一个有趣细分。",
+      "quote": "iMessage做B2C通信，蓝气泡终于要赚钱了。",
+      "source": "Y Combinator / HN",
+      "url": "https://www.trychert.com",
+      "published": "2026-05-26",
+      "uid": "cd04a79f69b73084ac4589ade8d48399"
+    },
+    {
+      "title": "Hive (YC S14) 招聘高级后端开发工程师",
+      "content": "YC S14批次公司Hive正在招聘高级后端开发工程师，这家老牌YC公司从2014年入孵至今已运营超过12年，是YC孵化器中少数存活并持续增长的长期主义案例。Hive专注于AI驱动的企业协作和生产力工具，证明YC不只是独角兽工厂，也能孵化出长期主义的稳健企业。",
+      "quote": "YC 2014年孵化的还活着，比大多数独角兽都强。",
+      "source": "Y Combinator / HN",
+      "url": "https://jobs.ashbyhq.com/hive.co/538c47f9-d008-49b7-b0d4-583d9294a481",
+      "published": "2026-05-26",
+      "uid": "3dace386f7fbb039f30c357e87565bba"
+    },
+    {
+      "title": "Flick (YC F25) 打造AI电影制作的Figma",
+      "content": "YC F25批次创业公司Flick正在招聘前端工程师，定位为AI电影制作领域的Figma——让电影人通过可视化界面而不是代码来使用AI工具进行视频创作。AI视频生成和编辑工具正在从技术demo走向专业创作工具，Flick押注的是AI让电影创作民主化的趋势。",
+      "quote": "AI版Figma做电影，独立导演的救星还是噱头？",
+      "source": "Y Combinator / HN",
+      "url": "https://www.ycombinator.com/companies/flick/jobs/Tdu6FH6-senior-frontend-engineer",
+      "published": "2026-05-26",
+      "uid": "5b1529be02867bbb6e788000f18d225e"
+    },
+    {
+      "title": "V2EX热议：Anthropic估值引发社区讨论",
+      "content": "V2EX社区就Anthropic的最新估值展开热议。作为OpenAI最强劲的竞争者，Anthropic的Claude系列模型在企业级AI安全和可靠性上建立了差异化优势。硅谷创投圈持续加注基础模型公司，但中文技术社区对天价估值的可持续性存疑，讨论反映了中美两地AI投资逻辑和市场认知的差异。",
+      "quote": "Anthropic估值又飙了，AI泡沫还是AI信仰？",
+      "source": "V2EX Tech",
+      "url": "https://www.v2ex.com/t/1212285#reply12",
+      "published": "2026-05-26",
+      "uid": "d15557ef9a3fac839be4964454879f76"
+    },
+    {
+      "title": "AI智能眼镜“百镜大战”升温，上半年新品密集发布",
+      "content": "2026年上半年智能眼镜市场迎来新品发布潮，谷歌、阿里、华为、雷鸟创新等厂商相继发布新品。Q1国内消费级AI/AR设备销量达20.2万台，同比激增108%。业内认为这一轮密集发布是“大模型+轻量化硬件+生态入口”的集中释放，AI眼镜有望加速进入千万台级别市场。",
+      "quote": "百镜大战，先打起来的是价格，能不能赚钱另说",
+      "url": "https://www.huxiu.com/article/4861013.html",
+      "source": "虎嗅/财联社",
+      "published": "2026-05-25",
+      "uid": "0d6c76e9d696adf91ba750d8b52371b9"
+    },
+    {
+      "title": "DeepSeek推出Reasonix原生AI编码代理，低成本高缓存引关注",
+      "content": "DeepSeek发布Reasonix，原生AI编码代理，主打高缓存命中率和超低推理成本。在HN上获192点关注，被视为DeepSeek在编程助手市场的重要布局。",
+      "quote": "Codex还没卷完DeepSeek又来了，卷！",
+      "url": "https://esengine.github.io/DeepSeek-Reasonix/",
+      "source": "Hacker News",
+      "published": "2026-05-25",
+      "uid": "1d1c383a9abd4d8b11d86d7c0ffa61ab"
+    },
+    {
+      "title": "OpenAI Codex高频更新冲刺企业市场，为上市铺路",
+      "content": "过去两个月OpenAI密集更新Codex：插件体系、内置浏览器、SSH远程、锁屏远程使用等。高频更新背后是OpenAI上市需求——证明自己不只会做Chatbot，也能做企业级生产力工具。",
+      "quote": "更新比双十一还勤快，给IPO写PPT呢",
+      "url": "https://www.huxiu.com/article/4860972.html",
+      "source": "虎嗅/字母AI",
+      "published": "2026-05-25",
+      "uid": "6375900321cfb9980957fd0dec01b0e5"
+    },
+    {
+      "title": "中国半导体晶圆厂扩建加速，资本开支周期开启",
+      "content": "长鑫存储Q1营收508亿元同比增719%，长江存储294层NAND良率突破90%，中芯国际全年资本开支预计80亿美元，华虹Fab9B已开工。中国半导体正在从“追单点”转向“建体系”，晶圆厂扩产带来的资本开支周期将重新定义板块机会顺序。",
+      "quote": "半导体扩产就像盖房子，先赚钱的是包工头，不是设计师",
+      "url": "https://www.huxiu.com/article/4861004.html",
+      "source": "虎嗅/妙投",
+      "published": "2026-05-25",
+      "uid": "2efc70fe2c38e6bdc27ed3d1070cefe4"
+    },
+    {
+      "title": "AI芯片成本重构：HBM内存占比飙升至63%",
+      "content": "Epoch AI数据显示，AI芯片组件成本中，内存（HBM）占比从2024年初的52%升至2025年末的63%。AI芯片总组件支出从2024年的约220亿美元增长到2025年的520亿美元，仅HBM就贡献了约200亿美元的增量。先进封装和辅助组件占比则分别从19%和15%降至15%和9%。",
+      "quote": "AI芯片现在就是个内存插槽，算力核心反而成了配角",
+      "url": "https://epoch.ai/data-insights/ai-chip-component-cost-shares",
+      "source": "Epoch AI",
+      "published": "2026-05-25",
+      "uid": "9c8e2a8fc51f6f7026369d6dada5c105"
+    },
+    {
+      "title": "“AI Washing”泛滥：企业争先恐后贴AI标签",
+      "content": "英国公关公司透露，各行各业企业正在进行“瑜伽级”拉伸式操作，强行把自己包装成AI公司。鞋企AllBirds上月“转型”收购AI GPU，基因公司炒作AI血检，甚至有AI防狼激光器。公关人员抱怨老板们不管有没有生成式AI，都要求向媒体吹自己是AI公司。",
+      "quote": "AI就像502胶水，什么都能沾上，就是撕不下来",
+      "url": "https://www.theguardian.com/technology/2026/may/24/ai-washing-pr-firms-scrambling-rebrand",
+      "source": "The Guardian",
+      "published": "2026-05-25",
+      "uid": "8a78ea72de71bb96b1a39b31231ac443"
+    },
+    {
+      "title": "拓竹科技陷开源协议争议，发律师函遭全球开发者反噬",
+      "content": "3D打印明星公司拓竹被指违反AGPLv3开源协议：其Bambu Studio fork自PrusaSlicer，但核心网络组件以闭源分发。开发者恢复局域网功能后反收律师函，引发全球开发者反弹。",
+      "quote": "fork时开源伟大，被fork就律师函，双标",
+      "url": "https://www.huxiu.com/article/4861018.html",
+      "source": "虎嗅/芯流智库",
+      "published": "2026-05-25",
+      "uid": "9ff3d300503398a773b4651fd9742ee5"
+    },
+    {
+      "title": "中国汽车市场转折：国内承压下降18.5%，出口爆发增长61.5%",
+      "content": "乘联分会数据显示，1-4月国内乘用车累计零售560.4万辆同比降18.5%。另一边出口狂奔，1-4月汽车出口312.7万辆同比增61.5%，新能源车出口增1.2倍。比亚迪、奇瑞、吉利等车企加速出海，新兴市场正为中系车打开新窗口。业内判断国内已进入波动式缓慢增长阶段。",
+      "quote": "国内卷不动了就去卷国外，中国车企学会了用空间换时间",
+      "url": "https://www.huxiu.com/article/4860769.html",
+      "source": "虎嗅/汽车商业评论",
+      "published": "2026-05-25",
+      "uid": "58510437ed7125810d344af3b2ae2ee9"
+    },
+    {
+      "title": "自动驾驶芯片路线之争：世界模型颠覆旧范式，TOPS崇拜失效",
+      "content": "随着自动驾驶模型从CNN走向Transformer再到DiT世界模型，传统高TOPS芯片难以适配新架构。DiT对存储带宽和编排能力要求极高，现有GPU在Batch=1-4时大量算力空转。车企自研芯片蔚来、小鹏、理想纷纷入局，核心不是“去英伟达化”，而是押注5-8年后的技术走向。",
+      "quote": "还在比TOPS的，基本可以告别自动驾驶了",
+      "url": "https://www.huxiu.com/article/4860969.html",
+      "source": "虎嗅/汽车之心",
+      "published": "2026-05-25",
+      "uid": "6682d07a04baf32989c13462f4fff042"
+    },
+    {
+      "title": "微软内部账号被滥用于发送垃圾链接，数月漏洞未修复",
+      "content": "诈骗分子利用微软内部邮箱地址msonlineservicesteam@microsoftonline.com发送垃圾邮件，该地址原用于发送双重认证码。微软数月未修复该问题，受害者收到看似官方的欺诈交易提醒。",
+      "quote": "微软内部邮箱被骗子用了，自己都不知道",
+      "url": "https://techcrunch.com/2026/05/21/scammers-are-abusing-an-internal-microsoft-account-to-send-spam/",
+      "source": "TechCrunch",
+      "published": "2026-05-25",
+      "uid": "f04fcf35fd97fe91a3e101efb362abd2"
+    },
+    {
+      "title": "LLM Agent后端代码生成存在结构性脆弱性",
+      "content": "arXiv新论文“Constraint Decay”揭示，LLM Agent在后端代码生成中存在系统性脆弱问题：随着上下文长度和任务复杂度增加，模型对约束条件的遵循能力显著衰减。研究团队通过系统性实验证明了这一“约束衰减”现象，对依赖AI Agent进行自动化编程的创业公司提出警示。",
+      "quote": "AI写代码一时爽，跑起来全是坑，debug还是得靠人",
+      "url": "https://arxiv.org/abs/2605.06445",
+      "source": "Hacker News/arXiv",
+      "published": "2026-05-25",
+      "uid": "7f7af92fbb42db0f8c6e04a8ace9ab7a"
+    },
+    {
+      "title": "DeepSeek宣布永久降价，AI模型价格战进入深水区",
+      "content": "DeepSeek近日官宣永久降价，标志着AI大模型价格战进入白热化阶段。此前DeepSeek已凭借极低推理成本在中国市场快速扩张，此次永久降价进一步压缩竞品空间。业内认为，这既是抢占市场份额的进攻性策略，也反映出高缓存架构带来的成本优势已形成壁垒。",
+      "quote": "我说永久降价，你敢跟吗？——DeepSeek对着所有竞品微笑",
+      "url": "https://www.huxiu.com/",
+      "source": "虎嗅",
+      "published": "2026-05-25",
+      "uid": "44f5bb94d56bd7e8b5a949f6fc77d192"
+    }
+  ],
+  "design": [
+    {
+      "title": "[Figma 推出「Software Is Culture」系列：设计师成为数字文化](https://www.figma.com/blog/software-is-culture/)",
+      "content": "[Figma 推出「Software Is Culture」系列：设计师成为数字文化](https://www.figma.com/blog/software-is-culture/)相关内容可查阅原文获取更多信息。",
+      "quote": "终于有人认真讨论 UI 的文化意义了，不只是「这个按钮放左边还是右边」",
+      "source": "Figma Blog",
+      "url": "https://www.figma.com/blog/software-is-culture/",
+      "published": "2026-05-26",
+      "uid": "design_51a53260"
+    },
+    {
+      "title": "[Pentagram 设计师 Natasha Jen 加入 2026 Dezeen Awards 评审团](https://www.dezeen.com/2026/05/25/julien-sebban-natasha-jen-dezeen-awards-2026-judges/)",
+      "content": "[Pentagram 设计师 Natasha Jen 加入 2026 Dezeen Awards 评审团](https://www.dezeen.com/2026/05/25/julien-sebban-natasha-jen-dezeen-awards-2026-judges/)相关内容可查阅原文获取更多信息。",
+      "quote": "Pentagram 的人来当评审——参赛者压力不小，人家的日常就是你的天花板",
+      "source": "Dezeen",
+      "url": "https://www.dezeen.com/2026/05/25/julien-sebban-natasha-jen-dezeen-awards-2026-judges/",
+      "published": "2026-05-26",
+      "uid": "design_1079e339"
+    },
+    {
+      "title": "[Mobbin 通过 SOC 2 Type II 认证，设计资源库安全性升级](https://mobbin.com/blog/2024-11-08-soc-2)",
+      "content": "[Mobbin 通过 SOC 2 Type II 认证，设计资源库安全性升级](https://mobbin.com/blog/2024-11-08-soc-2)相关内容可查阅原文获取更多信息。",
+      "quote": "设计灵感库也要过安全审计了——可见设计师的截图收藏有多敏感",
+      "source": "Mobbin",
+      "url": "https://mobbin.com/blog/2024-11-08-soc-2",
+      "published": "2026-05-26",
+      "uid": "design_9d0b4f9b"
+    },
+    {
+      "title": "[Patricia Urquiola 在瑞士阿尔卑斯山打造「巢穴式」公寓](https://www.dezeen.com/2026/05/25/patricia-urquiola-maya-residences/)",
+      "content": "[Patricia Urquiola 在瑞士阿尔卑斯山打造「巢穴式」公寓](https://www.dezeen.com/2026/05/25/patricia-urquiola-maya-residences/)相关内容可查阅原文获取更多信息。",
+      "quote": "Urquiola 把窗外的雪山直接「翻译」成室内配色——大自然是最好的 mood board",
+      "source": "Dezeen",
+      "url": "https://www.dezeen.com/2026/05/25/patricia-urquiola-maya-residences/",
+      "published": "2026-05-26",
+      "uid": "design_7000a7ef"
+    },
+    {
+      "title": "[Foster + Partners 为上海打造花瓣状贾美术馆](https://www.dezeen.com/2026/05/24/jia-art-shanghai-foster-partners/)",
+      "content": "[Foster + Partners 为上海打造花瓣状贾美术馆](https://www.dezeen.com/2026/05/24/jia-art-shanghai-foster-partners/)相关内容可查阅原文获取更多信息。",
+      "quote": "Foster 又给上海添了一座「出片利器」，长风板块房价估计又要涨",
+      "source": "Dezeen",
+      "url": "https://www.dezeen.com/2026/05/24/jia-art-shanghai-foster-partners/",
+      "published": "2026-05-26",
+      "uid": "design_a196557e"
+    },
+    {
+      "title": "[Gensler 用耐候钢打造「有颜值」的数据中心](https://www.dezeen.com/2026/05/21/gensler-thistle-data-center-phoenix-corten-steel/)",
+      "content": "[Gensler 用耐候钢打造「有颜值」的数据中心](https://www.dezeen.com/2026/05/21/gensler-thistle-data-center-phoenix-corten-steel/)相关内容可查阅原文获取更多信息。",
+      "quote": "数据中心都开始拼颜值了，那些长得像厂房的互联网公司总部不惭愧吗？",
+      "source": "Dezeen",
+      "url": "https://www.dezeen.com/2026/05/21/gensler-thistle-data-center-phoenix-corten-steel/",
+      "published": "2026-05-26",
+      "uid": "design_15170d23"
+    },
+    {
+      "title": "[全球首本完全 3D 打印的书：Manual 把制造代码印在页面上](https://www.designboom.com/design/3d-printed-book-manual-darius-ou-benson-chong/)",
+      "content": "[全球首本完全 3D 打印的书：Manual 把制造代码印在页面上](https://www.designboom.com/design/3d-printed-book-manual-darius-ou-benson-chong/)相关内容可查阅原文获取更多信息。",
+      "quote": "一本印着自己「源代码」的书——设计师的元叙事瘾又犯了，但这次确实很酷",
+      "source": "Designboom",
+      "url": "https://www.designboom.com/design/3d-printed-book-manual-darius-ou-benson-chong/",
+      "published": "2026-05-26",
+      "uid": "design_b5b76d2c"
+    },
+    {
+      "title": "[Renesa 将砖块图案变成手工地毯：建筑思维跨界纺织设计](https://www.dezeen.com/2026/05/25/renesa-brick-rug-collection/)",
+      "content": "[Renesa 将砖块图案变成手工地毯：建筑思维跨界纺织设计](https://www.dezeen.com/2026/05/25/renesa-brick-rug-collection/)相关内容可查阅原文获取更多信息。",
+      "quote": "建筑师的跨界总是自带逼格——把砖墙铺地上就敢卖你几十万",
+      "source": "Dezeen",
+      "url": "https://www.dezeen.com/2026/05/25/renesa-brick-rug-collection/",
+      "published": "2026-05-26",
+      "uid": "design_8b6f8a58"
+    },
+    {
+      "title": "数据中心的「热岛效应」研究引发设计界关注",
+      "content": "研究表明AI数据中心因高密度计算产生的热岛效应正在影响周边城市微气候，引发建筑设计和城市规划领域的关注。如何将散热需求融入数据中心建筑美学和城市热管理，成为设计师面临的新课题。AI基础设施不仅改变计算范式，也在重塑物理空间的设计逻辑。",
+      "quote": "算力越强越热——AI 把设计师逼成了暖通工程师",
+      "source": "Dezeen",
+      "url": "https://www.dezeen.com/2026/04/09/data-centres-heat-island-effect-study/",
+      "published": "2026-05-26",
+      "uid": "design_60ecd21e"
+    },
+    {
+      "title": "即时设计Jestik全面拥抱AI，UI生成进入「盲盒自由」时代",
+      "content": "国内头部设计工具即时设计（Jestik）宣布全面集成AI UI生成能力，新版支持自然语言描述直接输出可编辑UI界面，并可一键导入设计工具进行二次修改。与国际厂商Figma、Google Stitch形成正面竞争。",
+      "quote": "国内厂商终于开始追了——再不学AI的设计师，处境会比国外更尴尬。",
+      "url": "https://www.jestik.com",
+      "source": "即时设计",
+      "published": "2026-05-25",
+      "uid": "b5c218bf280824dcf0d5071a11e079d2"
+    },
+    {
+      "title": "AI生图进入视频时代：Midjourney Video、Runway Gen-3、Sora三足鼎立",
+      "content": "AI图像生成领域迈入视频生成阶段。Midjourney Video开始灰度测试，Runway Gen-3支持角色一致性控制，Sora向部分创作者开放。三家产品策略差异明显：Midjourney继续强调美学风格，Runway主打影视工作流，Sora侧重时长与物理模拟。",
+      "quote": "图生视频卷成这样——下一步是不是AI直接替你拍电影了？",
+      "url": "https://www.midjourney.com/video",
+      "source": "行业综合",
+      "published": "2026-05-25",
+      "uid": "4647cb075e41fda5b2b161c2ae0dd161"
+    },
+    {
+      "title": "Apple Design Awards 2026入围名单公布：AI工具成最大赢家类别",
+      "content": "Apple Design Awards 2026入围名单揭晓，AI辅助设计工具首次单独设立「AI-Enhanced」奖项类别。Figma、Sketch、Affinity纷纷推出AI功能争夺该奖项，引发设计师社区关于「AI是赋能还是取代」的热烈讨论。",
+      "quote": "Apple都下场给AI设计工具发奖了——再问「AI会不会取代设计师」就显得很傻。",
+      "url": "https://developer.apple.com/design/awards/",
+      "source": "Apple Developer",
+      "published": "2026-05-25",
+      "uid": "d789f15300cfdca70049aea2f146f5b1"
+    },
+    {
+      "title": "Material Design 3.2发布：支持AI生成组件的自适应设计系统",
+      "content": "Google正式发布Material Design 3.2，最大亮点是新增「AI-Generated Component」支持，允许设计师将AI生成的内容无缝嵌入设计系统，同时保持设计令牌的全局一致性。新系统强化了暗色模式与无障碍标准，对多语言界面支持也有显著提升。",
+      "quote": "Google的设计系统终于肯承认AI组件了——迟到总比不到强。",
+      "url": "https://m3.material.io",
+      "source": "Google Design",
+      "published": "2026-05-25",
+      "uid": "4d4f85d0e39164ae5fc5f19a1d8960e9"
+    }
+  ]
+}
