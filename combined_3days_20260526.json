@@ -679,6 +679,105 @@
   ],
   "startup": [
     {
+      "title": "Using AI to write better code more slowly",
+      "content": "Nolan Lawson 发表文章探讨 AI 编程的另一种用法：不是用 AI 快速写烂代码，而是慢下来用多模型交叉审查 PR，自动发现关键 bug 并修复。他使用 Claude、Codex、Cursor Bugbot 三模型审核，假阳性率接近零。该方法虽不会提升开发速度，但能显著改善代码库健康度。",
+      "quote": "别人用 AI 一天写 1000 行屎，你用它一天改 10 个高危 bug，谁更赚？",
+      "url": "https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/",
+      "source": "HN / Nolan Lawson",
+      "published": "2026-05-27",
+      "uid": "efe3d9aa61d0e1cb3414348aad62fb81"
+    },
+    {
+      "title": "Language Models Need Sleep",
+      "content": "arXiv 新论文提出 LLM 需要类似于人类的\"睡眠\"机制。研究发现，持续推理会导致语言模型性能下降、产生\"疲劳\"效应，间歇性\"休息\"可恢复模型表现。该发现可能对 AI 训练和推理架构设计产生深远影响，尤其对需要长期运行的 Agent 系统。",
+      "quote": "模型都要睡觉了，看来 996 不只卷人类，连 AI 也不放过。",
+      "url": "https://arxiv.org/abs/2605.26099",
+      "source": "HN / arXiv",
+      "published": "2026-05-27",
+      "uid": "7a6f195692e10be0f7cce74213962a0c"
+    },
+    {
+      "title": "Human Archive: 用印度零工经济训练全球机器人",
+      "content": "硅谷创业公司 Human Archive 完成 820 万美元融资，投资方包括 Wing VC、Y Combinator 等。他们让印度零工佩戴带摄像头的帽子，采集第一人称视角视频数据来训练机器人。目前已部署 1000+ 设备，但被 Pronto、Urban Company 等印度主流家政平台拒绝合作。",
+      "quote": "让打工人戴相机给 AI 当老师，印度版\"血汗数据工厂\"上线。",
+      "url": "https://techcrunch.com/2026/05/26/human-archive-taps-into-indias-services-startups-to-collect-data-for-physical-ai/",
+      "source": "TechCrunch",
+      "published": "2026-05-27",
+      "uid": "28e15685509259b823b7725126213075"
+    },
+    {
+      "title": "Netherlands blocks US takeover of vital digital supplier",
+      "content": "荷兰政府阻止美国资本收购一家关键数字供应商。该交易涉及国家安全审查，荷兰以\"数字主权\"为由叫停收购。这是欧洲加强科技领域监管的最新案例，信号明确：关键数字基础设施不放给美国资本。",
+      "quote": "欧洲也开始学中国搞\"卡脖子\"反制了，只不过这次卡的是美国。",
+      "url": "https://www.politico.eu/article/netherlands-blocks-us-takeover-vital-digital-supplier/",
+      "source": "Politico",
+      "published": "2026-05-27",
+      "uid": "2a644c1d0fdafa577655fef33205f54e"
+    },
+    {
+      "title": "Spain blocks prediction markets Polymarket, Kalshi over lack of gambling licence",
+      "content": "西班牙以缺乏赌博牌照为由，封禁预测市场平台 Polymarket 和 Kalshi。这是欧洲监管机构首次明确将预测市场归类为赌博活动。两家公司面临在西班牙市场被断流的风险，可能引发更多欧盟国家跟进。",
+      "quote": "赌狗们哭晕：在西班牙用 Polymarket 下注大选，算赌博不算金融。",
+      "url": "https://www.reuters.com/business/spain-blocks-prediction-markets-polymarket-kalshi-over-lack-gambling-licences-2026-05-26/",
+      "source": "Reuters",
+      "published": "2026-05-27",
+      "uid": "640128255874c54235383568da2b637c"
+    },
+    {
+      "title": "Eagle 3.1: vLLM、TorchSpec 和 EAGLE 团队联合发布投机解码优化",
+      "content": "vLLM 发布 Eagle 3.1，这是 EAGLE 团队、vLLM 团队和 TorchSpec 团队三方合作的成果。Eagle 3.1 进一步优化了 LLM 推理中的投机解码（Speculative Decoding）性能，有望在保持生成质量的同时大幅降低推理延迟和成本。",
+      "quote": "推理速度又快了，AI 公司省下来的电费会降价给用户吗？想多了。",
+      "url": "https://vllm.ai/blog/2026-05-26-eagle-3-1",
+      "source": "vLLM / HN",
+      "published": "2026-05-27",
+      "uid": "fd2361746b7ffc1a4d323770679ede30"
+    },
+    {
+      "title": "Outsourcing plus LocalAI will soon become more economical vs. Frontier labs",
+      "content": "SignalBloom 分析指出，\"外包 + 本地 AI 模型\"的组合方案将很快在成本上超越使用前沿大模型 API。随着开源模型质量提升、本地部署成本下降，企业级的 AI 推理经济账正在发生转变。对于创业公司，这可能意味着不再需要绑定 OpenAI/Anthropic。",
+      "quote": "本地模型+廉价外包，创业公司终于不用给 OpenAI 交保护费了。",
+      "url": "https://www.signalbloom.ai/posts/outsourcing-plus-localai-will-soon-become-more-economical-vs-frontier-labs/",
+      "source": "SignalBloom / HN",
+      "published": "2026-05-27",
+      "uid": "61bfb4f80193426f395c0c3116408383"
+    },
+    {
+      "title": "Uber, Lyft drivers in Massachusetts form first US ride-share union",
+      "content": "马萨诸塞州的 Uber 和 Lyft 司机成立了美国首个网约车工会。这标志着零工经济劳动者组织化迈出历史性一步。尽管平台公司长期反对司机组建工会，但麻省的新立法为司机提供了集体谈判权。这可能引发全国效仿。",
+      "quote": "Uber 和 Lyft 的\"独立承包商\"美梦，被麻省司机工会一锤砸醒。",
+      "url": "https://www.reuters.com/business/world-at-work/uber-lyft-drivers-massachusetts-form-first-us-ride-share-union-2026-05-26/",
+      "source": "Reuters",
+      "published": "2026-05-27",
+      "uid": "02a8b682f1ec1992a7a3d806a3eb3b72"
+    },
+    {
+      "title": "Everyone is navigating AI security in real time — even Google",
+      "content": "TechCrunch 深度报道：Google Cloud COO 谈 AI 安全困境，承认企业界\"大家都在摸着石头过河\"。文章揭露 Google 自身的安全漏洞——API 密钥被滥用的开发者收到上万美金账单，删除密钥后仍能被使用长达 23 分钟。LinkedIn CISO 警告\"Bug-pocalypse\"即将到来。",
+      "quote": "Google COO 教育别人要重视安全，自己家 API 密钥 23 分钟删不掉。",
+      "url": "https://techcrunch.com/2026/05/24/everyone-is-navigating-ai-security-in-real-time-even-google/",
+      "source": "TechCrunch",
+      "published": "2026-05-27",
+      "uid": "3eee17fcfa2bc8835d99ae09f43ca800"
+    },
+    {
+      "title": "Launch HN: Minicor (YC P26) – Windows desktop automations at scale",
+      "content": "YC P26 批次创业公司 Minicor 正式发布，主打 Windows 桌面自动化平台。面向需要大规模自动化 Windows 操作的企业用户，产品愿景类似 RPA 但更轻量化。在 AI Agent 热潮下，桌面自动化赛道正在被重新定义。",
+      "quote": "又一家 YC 自动化创业公司，要不要把 Minicor 和 AutoGPT 放一起看？",
+      "url": "https://www.minicor.com/",
+      "source": "HN / Y Combinator",
+      "published": "2026-05-27",
+      "uid": "d9f8ad6ac6eb81508f00bed9c8f02d37"
+    },
+    {
+      "title": "DynIP – Dynamic DNS with RFC 2136, IPv6, DNSSEC, and BYOD",
+      "content": "开源动态 DNS 项目 DynIP 上线 HN，支持 RFC 2136 标准、IPv6、DNSSEC 和 BYOD（自带域名）。相比传统 DDNS 服务需要绑定特定域名，DynIP 允许用户自带域名并享受完整安全功能，登顶 HN 首页 254 分。",
+      "quote": "动态 DNS 这古董赛道居然还能有新玩法，开源才是真·创新。",
+      "url": "https://dynip.dev/",
+      "source": "HN",
+      "published": "2026-05-27",
+      "uid": "3cd2a6a0a126d6e4a607d9210b4685bd"
+    },
+    {
       "title": "Weave (YC W25) 招聘ML/AI/产品/设计工程师",
       "content": "YC W25批次创业公司Weave正在大规模招聘ML、AI、产品和设计工程师，覆盖全栈AI团队构建的各个环节。YC孵化器的招聘帖通常是在产品市场验证完成后规模扩张的信号。对于AI方向的技术人员，加入YC早期团队意味着股权比例更高但不确定性也更大，是高风险高回报的职业选择。",
       "quote": "YC种子轮招聘=用股权赌明天，赢了财务自由输了白干。",
@@ -839,81 +938,117 @@
       "source": "虎嗅",
       "published": "2026-05-25",
       "uid": "44f5bb94d56bd7e8b5a949f6fc77d192"
-    },
-    {
-      "title": "北大项目孵化，国内首家原生机器人“大脑芯片”企业获数亿元融资",
-      "content": "维泛智能近日完成数亿元种子轮融资，资方包括中关村资本、启航投资、上海未来产业基金等。该公司成立于2025年5月，孵化自北京大学类脑芯片实验室，专注于具身智能\"大小脑\"融合芯片研发。这是国内首个面向原生机器人\"大脑芯片\"赛道的天使轮大额融资，标志具身智能底层硬件国产化迈出关键一步。",
-      "quote": "机器人缺颗真正的脑子，这回北大来填坑了。",
-      "url": "https://36kr.com/p/3821371042877575?f=rss",
-      "source": "36氪",
-      "published": "2026-05-24",
-      "uid": "5998947ff329fa7be542d17155d72805"
-    },
-    {
-      "title": "DeepSeek-V4-Pro API永久降价至原价1/4",
-      "content": "DeepSeek官方宣布，V4-Pro模型API价格将于5月31日结束2.5折优惠后，正式调整为原定价的1/4。这意味着每百万token成本将大幅下滑，API调用的商业门槛进一步降低。DeepSeek此举被视作在OpenAI、Anthropic降价潮下的主动市场卡位，中小型AI应用开发者将直接受益。",
-      "quote": "API价格战打到这个份上，大厂也得跟着卷。",
-      "url": "https://36kr.com/p/3821591669166214",
-      "source": "36氪",
-      "published": "2026-05-24",
-      "uid": "877f180dd1b276380b41449183bc7949"
-    },
-    {
-      "title": "对话王小川：离开通用人工智能的主干道之后",
-      "content": "百川智能创始人王小川首次披露战略转向：大幅缩减通用模型团队，关闭金融等行业线，All in医疗大模型。他坦言继续走主流道路同样焦虑，转型让他回归创业初心——造AI医生。过去一年大模型行业\"轰炸式更新\"不断，百川选择了一条更垂直的路，赌的是医疗行业付费能力和数据壁垒。",
-      "quote": "别人在卷参数，他在卷医疗，这算清醒还是无奈？",
-      "url": "https://36kr.com/p/3821521291038856?f=rss",
-      "source": "36氪",
-      "published": "2026-05-24",
-      "uid": "ad321a3c70d00c8107ce9c35662303ae"
-    },
-    {
-      "title": "屈臣氏计划下半年赴港伦两地上市，估值300亿美元",
-      "content": "屈臣氏集团计划于今年下半年推进中国香港与伦敦两地上市，整体估值300亿美元。保健美容零售巨头此时选择上市，正值消费复苏预期升温之际，也被看作是长和系优化资产组合、引入多元股东的结构性动作。具体哪一地作为主要上市地尚未敲定。",
-      "quote": "300亿估值上市，消费零售老炮想讲新故事了。",
-      "url": "https://36kr.com/newsflashes/3821499521060998",
-      "source": "36氪",
-      "published": "2026-05-24",
-      "uid": "fdb39e4708c3968f0116780ee5110033"
-    },
-    {
-      "title": "下一个杀手级AI产品：眼镜、Agent还是物理世界入口？",
-      "content": "2026 AI Partner·北京亦庄产业大会上的一场圆桌讨论达成共识：单纯套壳大模型的应用注定短命，只有长期在线、连接物理世界、能完成真实交互闭环的产品，才可能成为下一个百亿级赛道。从AI眼镜到具身智能，入口之争已悄然打响，C端规模还是B端付费各有拥趸。",
-      "quote": "入口之争年年有，今年终于有点真东西了。",
-      "url": "https://36kr.com/p/3821714896408713?f=rss",
-      "source": "36氪",
-      "published": "2026-05-24",
-      "uid": "588e01b0fbf44cc757a8cb49df8ac009"
-    },
-    {
-      "title": "国家数据局：\"数据要素×\"行动覆盖15个行业、43个城市",
-      "content": "国家数据局推进的两批数据基础设施建设先行先试已累计覆盖15个行业、43个城市，协同1.9万个生态主体，上架3.8万个数据产品，落地超270个应用场景。技术路线涵盖隐私保护计算、区块链、可信数据空间、数场等，推动数据要素市场化配置改革进入深水区。",
-      "quote": "数据要素这盘棋，下得越来越认真了。",
-      "url": "https://36kr.com/newsflashes/3821501107441798",
-      "source": "36氪",
-      "published": "2026-05-24",
-      "uid": "c7308d65a41921a90ed7ae8ab453d978"
-    },
-    {
-      "title": "用AI来管公司，Moka推出三款AI HR工具",
-      "content": "人力资源SaaS服务商Moka上线招聘Eva、人事Eva和BPEva三款AI HR产品，分别覆盖招聘全流程辅助、报表处理等重复事务、以及人才画像动态更新。HR软件赛道的AI化正在从招聘环节向全链条渗透，核心逻辑是用AI替代重复性事务工作，让HR聚焦人的判断这一不可替代环节。",
-      "quote": "HR这行，AI进来先抢重复活的饭碗。",
-      "url": "https://36kr.com/p/3819979202253189?f=rss",
-      "source": "36氪",
-      "published": "2026-05-24",
-      "uid": "0d5a5973719ab7067a4dd9dbec17fe6f"
-    },
-    {
-      "title": "Show HN: 我搭了一个本地RAG+知识图谱AI编程Agent",
-      "content": "开发者gabriel_oauth在Hacker News上发布Claw-Coder——一款本地运行的AI编程Agent，通过知识图谱解决代码库关系理解问题，结合RAG弥补本地LLM上下文窗口不足，并引入Docker执行环境让AI验证自己生成的代码。该项目针对隐私敏感场景设计，代码完全本地化，不依赖云端模型。",
-      "quote": "本地LLM编程终于有个能跑真实代码的Agent了。",
-      "url": "https://news.ycombinator.com/item?id=48248801",
-      "source": "Hacker News",
-      "published": "2026-05-24",
-      "uid": "108b34648939e754d3bac1bee6f3a045"
     }
   ],
   "design": [
+    {
+      "title": "Ten Data-Backed Truths Of User Experience ROI",
+      "content": "Smashing Magazine发表重磅文章，用数据证明UX投入与收入的直接关联。每一秒的摩擦都有可衡量的商业成本——加载延迟1秒=转化率下降7%。这不是信仰，是数字。",
+      "quote": "UX ROI不是玄学，是数学。再跟老板说「设计价值无法量化」，这篇甩他脸上。",
+      "url": "https://www.smashingmagazine.com/2026/05/data-backed-truths-user-experience-roi/",
+      "source": "Smashing Magazine",
+      "published": "2026-05-27",
+      "uid": "3763d783ebd794aecae3908b77364a64"
+    },
+    {
+      "title": "Practical Interface Patterns For AI Transparency (Part 2)",
+      "content": "传统转圈加载在AI时代彻底不够用了。当Agent花20秒「思考」时，用户看到转圈只会焦虑系统是不是挂了。本文提出了「Agentic Update」模式——实时展示AI在做什么、在想什么，把等待时间变成信任建设期。",
+      "quote": "转圈加载是20世纪的东西了。AI还在用菊花转？用户心里在想：这玩意儿是不是死机了。",
+      "url": "https://www.smashingmagazine.com/2026/05/practical-interface-patterns-ai-transparency/",
+      "source": "Smashing Magazine",
+      "published": "2026-05-27",
+      "uid": "4f7f452b5db591dccc166a4974e053e1"
+    },
+    {
+      "title": "The Prompt Is Not An Interface",
+      "content": "Joshua Leigh尖锐指出：AI把我们带回了命令行时代。四十年来交互设计从命令行→GUI→触控，而AI一夜之间把设计师打回原形——一个闪烁的光标和一个空输入框。对视觉/空间类任务来说，文本提示每步都在丢失信号。",
+      "quote": "花40年逃离命令行，AI用2年把我们拽回去了。打字就能设计？那还要设计师干嘛。",
+      "url": "https://uxdesign.cc/the-prompt-is-not-an-interface-41b77277681d",
+      "source": "UX Collective",
+      "published": "2026-05-27",
+      "uid": "4b5324cf037988cea581f22673865729"
+    },
+    {
+      "title": "When Production-Ready Becomes A Design Deliverable",
+      "content": "UX设计师正面临角色边界崩塌——73%的设计师将AI视为主要协作者，但企业更看重「出活速度」而非「体验质量」。设计师被要求既能共情用户又能手写React组件，设计工程师化趋势明显。",
+      "quote": "企业要的不只是设计，是设计+前端+AI提示工程三合一。工资是不是也该三合一？",
+      "url": "https://www.smashingmagazine.com/2026/04/production-ready-becomes-design-deliverable-ux/",
+      "source": "Smashing Magazine",
+      "published": "2026-05-27",
+      "uid": "bbf2d286558655e86c9193b2e7472bee"
+    },
+    {
+      "title": "The Case for Design Disposables",
+      "content": "NN Group提出「设计耗材」概念——那些用来帮你思考而不是交付的粗糙产出。很多设计师一开始就在做精美的东西，反而陷入了交付物陷阱。AI让做「精致垃圾」更容易了，但能区分思考工具和交付物才是真本事。",
+      "quote": "别一上来就像素级完美了，先把你脑子里的浆糊倒出来看看再说。",
+      "url": "https://www.nngroup.com/articles/design-disposables/",
+      "source": "NN Group",
+      "published": "2026-05-27",
+      "uid": "c618979f7e6db32514fae0d2f9022edc"
+    },
+    {
+      "title": "Closing the Loop: What to Do After a Design Critique Ends",
+      "content": "大多数设计师花功夫做设计评审，却忽略了最关键的一步——反馈闭环。没有跟进、没有行动项、没有验证，评审文化必然崩塌。NN Group给出了一套完整的评审后闭环实操指南。",
+      "quote": "批完就完事了？反馈不闭环等于白批，不如去喝咖啡。",
+      "url": "https://www.nngroup.com/articles/after-design-critique/",
+      "source": "NN Group",
+      "published": "2026-05-27",
+      "uid": "d4efd6f97f4f57505a8d28e9ee9eb270"
+    },
+    {
+      "title": "Green Components: How Design Systems Can Aid Sustainability Goals",
+      "content": "互联网是全球最大碳排放源之一。Hidde De Vries在zeroheight提出将Web可持续性指南融入设计系统的组件级实践——从图片优化到减少DOM节点，每个组件都可以是「绿色」的。",
+      "quote": "设计系统不只管好看，还得管环保。下次Review可以问：这个组件碳排放多少？",
+      "url": "https://zeroheight.com/blog/green-components-how-your-design-system-can-aid-sustainability-goals/",
+      "source": "Zeroheight",
+      "published": "2026-05-27",
+      "uid": "9b81a4e60077fa470daadc40c3de3eea"
+    },
+    {
+      "title": "Container Query Typography Systems",
+      "content": "CSS Container Queries全面普及后，终于可以摆脱基于视口的断点排版体系了。Matt Waler展示如何用容器查询+Tailwind创建基于父容器尺寸的排版系统，完美解决两栏布局下的字号尴尬。",
+      "quote": "视口断点排版的末日到了。两栏布局的字体大小终于不尴尬了。",
+      "url": "https://mattwaler.com/blog/container-query-typography-systems/",
+      "source": "Matt Waler Blog",
+      "published": "2026-05-27",
+      "uid": "4b2997d579ee959de5afd0cf87de6f04"
+    },
+    {
+      "title": "Good Designers, Bad Websites: Accessibility Personas",
+      "content": "Alan Dalton在A List Apart指出「设计师都是好人，但有些设计仍然在排除用户」。问题不在于意愿而在于知识过载。他提供了9个无障碍Persona，让设计师在设计过程中就能识别可访问性问题。",
+      "quote": "不是不想做无障碍，是记不住那么多规则。9个Persona比20条WCAG好记多了。",
+      "url": "https://alistapart.com/article/good-designers-bad-websites-a-proposal/",
+      "source": "A List Apart",
+      "published": "2026-05-27",
+      "uid": "1435a056d7ebb012a3b97a78bc725d3f"
+    },
+    {
+      "title": "Designing AI Agents: 4 Lessons from China Qwen Agent",
+      "content": "NN Group研究了阿里通义千问Agent，总结出4条AI Agent设计原则：支持可发现性、复用熟悉交互模式、谨慎处理个人数据、保护用户自主权。中国AI产品的设计策略值得全球借鉴。",
+      "quote": "千问Agent的设计原则，放到ChatGPT上也成立。中国AI设计终于被正眼看了。",
+      "url": "https://www.nngroup.com/articles/designing-ai-agents/",
+      "source": "NN Group",
+      "published": "2026-05-27",
+      "uid": "7942c392ad396712d2d8f2e30f7b1689"
+    },
+    {
+      "title": "The State of AI in Design Systems: What the Data Says",
+      "content": "zeroheight发布AI在设计系统中的应用调研数据。AI正在重塑组件创建、文档生成、代码转换等环节，但数据也显示：AI在读设计系统时严重依赖MCP协议的质量，文档写不好AI输出就拉胯。",
+      "quote": "AI读不懂你的设计系统？先问问自己的文档写得够不够清楚。",
+      "url": "https://zeroheight.com/blog/the-state-of-ai-in-design-systems-what-the-data-actually-says/",
+      "source": "Zeroheight",
+      "published": "2026-05-27",
+      "uid": "29b6b40b10f3ebb14b82ce8396f3973b"
+    },
+    {
+      "title": "Rethinking The Experience Of System Tools",
+      "content": "Smashing Magazine上Kyrylo Levashov反思了系统工具的设计。设计从功能出发，但如果功能无法隐身且用户必须与之交互，那它就成为了用户体验的一部分。文章分享了4个常见的软件设计假设。",
+      "quote": "觉得系统工具不需要设计？用户每次被迫操作你的「设计盲区」时都在骂娘。",
+      "url": "https://www.smashingmagazine.com/2026/05/rethinking-experience-system-tools/",
+      "source": "Smashing Magazine",
+      "published": "2026-05-27",
+      "uid": "335c6482437b6d77fc51174de1523720"
+    },
     {
       "title": "[Figma 推出「Software Is Culture」系列：设计师成为数字文化](https://www.figma.com/blog/software-is-culture/)",
       "content": "[Figma 推出「Software Is Culture」系列：设计师成为数字文化](https://www.figma.com/blog/software-is-culture/)相关内容可查阅原文获取更多信息。",
@@ -1030,126 +1165,6 @@
       "source": "Google Design",
       "published": "2026-05-25",
       "uid": "4d4f85d0e39164ae5fc5f19a1d8960e9"
-    },
-    {
-      "title": "JR 用巨型充气洞穴包裹巴黎最古老的新桥",
-      "content": "法国街头艺术家 JR 将巴黎最古老的新桥（Pont Neuf）改造成一个洞穴般的充气装置，致敬艺术家 Christo 和 Jeanne-Claude 的包裹艺术传统。这座巨型充气雕塑覆盖桥体，创造出沉浸式的洞穴体验，成为巴黎今夏最受关注的公共艺术项目。",
-      "quote": "把桥包起来当山洞，JR这脑洞比充气体还大——巴黎人一边骂一边排队打卡。",
-      "url": "https://www.dezeen.com/2026/05/22/jr-la-caverne-du-pont-neuf/",
-      "source": "Dezeen",
-      "published": "2026-05-24",
-      "category": "design",
-      "uid": "design_13011d24"
-    },
-    {
-      "title": "\"特朗普凯旋门\"设计获批，华盛顿将建新古典主义纪念碑",
-      "content": "亚特兰大工作室 Harrison Design 设计的纪念性凯旋门——被称为\"Arc de Trump\"——获美国美术委员会批准在华盛顿特区建造。这座新古典主义拱门引发巨大争议，支持者认为它传承古典建筑传统，批评者则质疑其政治象征意义和审美价值。",
-      "quote": "凯旋门建在华盛顿——设计没问题，名字要不再想想？",
-      "url": "https://www.dezeen.com/2026/05/22/arc-de-trump-design-approved-for-washington-dc-cfa/",
-      "source": "Dezeen",
-      "published": "2026-05-24",
-      "category": "design",
-      "uid": "design_596c730a"
-    },
-    {
-      "title": "英国设计传奇 Barber Osgerby 宣布解散，30年合作画上句号",
-      "content": "英国最具影响力的工业设计双人组 Barber & Osgerby 宣布关闭共事30年的工作室，各自独立发展。二人从 RCA 建筑系同窗起步，设计了2012伦敦奥运火炬、Loop Table 等标志性作品，与 Vitra、B&B Italia、Hermes 等品牌合作无数。米兰三年展回顾展成为完美收官。",
-      "quote": "设计圈的披头士也解散了——30年不过分，传奇值得一个体面的告别。",
-      "url": "https://www.dezeen.com/2026/05/22/barber-osgerby-studio-closing-30-years/",
-      "source": "Dezeen",
-      "published": "2026-05-24",
-      "category": "design",
-      "uid": "design_2ebd4d0e"
-    },
-    {
-      "title": "IKEA 新 PS 系列引发行业讨论：好设计真的可以这么便宜？",
-      "content": "IKEA 发布全新 PS 设计师合作系列，以极具竞争力的价格推出多款获奖设计师作品。Dezeen Weekly 播客专题讨论：这是设计民主化的里程碑，还是对独立设计师生态的进一步挤压？设计界对\"买得起的好设计\"的边界再次展开激烈辩论。",
-      "quote": "人人都用得起好设计当然是好事，但设计师的晚饭谁管？",
-      "url": "https://www.dezeen.com/2026/05/22/utah-data-centre-ikea-ps-collection-tour-triangle-paris-dezeen-weekly-podcast/",
-      "source": "Dezeen",
-      "published": "2026-05-24",
-      "category": "design",
-      "uid": "design_c924a2c1"
-    },
-    {
-      "title": "QuadroDesign 米兰展位变身赞比亚公共厕所，设计善意的闭环",
-      "content": "意大利卫浴品牌 QuadroDesign 的米兰家具展展位由设计师 Giacomo Moor 设计，展会结束后整体拆卸运往赞比亚 Masala，作为公共厕所继续使用。这一\"从展台到公厕\"的设计循环模式引发热议，为展会设计的一次性浪费问题提供了新思路。",
-      "quote": "米兰展品变成赞比亚公厕——设计的意义不在于在哪，在于被谁用。",
-      "url": "https://www.dezeen.com/2026/05/22/giacomo-moor-quadrodesign-salone-del-mobile-2026/",
-      "source": "Dezeen",
-      "published": "2026-05-24",
-      "category": "design",
-      "uid": "design_e522c3e8"
-    },
-    {
-      "title": "王澍&陆文宇公布2027威尼斯建筑双年展主题：Do Architecture",
-      "content": "中国建筑师王澍与陆文宇公布2027威尼斯建筑双年展主题\"Do Architecture\"（做建筑）。在全球动荡与生态危机背景下，主题呼吁回归物质现实、本土工艺、文化记忆与共生关系。这是中国建筑师首次担任威尼斯建筑双年展总策展人。",
-      "quote": "王澍喊出'做建筑'，不是口号是态度——少点花哨概念，多盖实在房子。",
-      "url": "https://www.designboom.com/architecture/do-architecture-possibility-coexistence-face-real-reality-wang-shu-lu-wenyu-venice-architecture-biennale-2027-theme/",
-      "source": "Designboom",
-      "published": "2026-05-24",
-      "category": "design",
-      "uid": "design_64634c67"
-    },
-    {
-      "title": "Lanza Atelier 2026蛇形画廊展亭：灵感来自\"扭扭墙\"",
-      "content": "Lanza Atelier 在独家视频中阐释2026年蛇形画廊展亭设计理念，灵感来自历史上著名的\"crinkle-crankle\"（波浪形砖墙），以蜿蜒曲折的砖砌墙体围合出一系列互动空间，既传承英式园林传统又赋予现代公共空间新的可能性。",
-      "quote": "蛇形画廊每年都在刷新'临时建筑能做到多好'的上限，今年是弯的。",
-      "url": "https://www.dezeen.com/2026/05/22/lanza-atelier-2026-serpentine-pavilion-video/",
-      "source": "Dezeen",
-      "published": "2026-05-24",
-      "category": "design",
-      "uid": "design_6b3f65de"
-    },
-    {
-      "title": "Selldorf Architects 赢得卢浮宫改造竞赛",
-      "content": "Selldorf Architects 与 STUDIOS Architecture 联合体击败 SANAA、Sou Fujimoto、DS+R 等五支团队，赢得卢浮宫重大改造竞赛。方案引入新公共入口、景观护城河和地下画廊，重新连接卢浮宫历史悠久的东立面与巴黎城市肌理。",
-      "quote": "卢浮宫又要变脸了——希望排队时间也能跟着减半。",
-      "url": "https://www.designboom.com/architecture/sanaa-sou-fujimoto-diller-scofidio-renfro-dsrny-five-teams-shortlisted-louvre-transformation-10-17-2025/",
-      "source": "Designboom",
-      "published": "2026-05-24",
-      "category": "design",
-      "uid": "design_9b31108a"
-    },
-    {
-      "title": "模块化 Playrise 套件为难民营儿童带来可搭建游乐场",
-      "content": "Playrise 模块化木制游乐场套件专为危机地区的儿童设计，首个试点结构将在埃塞俄比亚 Aysaita 难民营落地。套件采用扁平包装、工具简易、可本地组装，将\"玩的权利\"带到最需要的地方。设计团队希望通过游戏空间改善难民儿童的心理健康。",
-      "quote": "最好的设计不是让富人更舒服，是让最需要的人也能玩。",
-      "url": "https://www.designboom.com/design/modular-playrise-kit-easy-build-playgrounds-children-refugee-settlements/",
-      "source": "Designboom",
-      "published": "2026-05-24",
-      "category": "design",
-      "uid": "design_0caf775e"
-    },
-    {
-      "title": "Trahan Architects 圆形大学教堂：用砖与 CLT 营造神秘感",
-      "content": "美国事务所 Trahan Architects 在新奥尔良洛约拉大学完成圆形圣依纳爵教堂，砖砌外立面与交叉层压木（CLT）结构相结合，内部营造出\"神秘的光影体验\"。设计将当代建筑技术与宗教空间的精神需求巧妙融合。",
-      "quote": "教堂不需要高，圆就够了——光从顶上下来的时候，信与不信都沉默了。",
-      "url": "https://www.dezeen.com/2026/05/22/chapel-of-st-ignatius-new-orleans-trahan-architects/",
-      "source": "Dezeen",
-      "published": "2026-05-24",
-      "category": "design",
-      "uid": "design_b7085c2b"
-    },
-    {
-      "title": "Gensler 公布全球最大数据中心之一：犹他州60栋建筑群",
-      "content": "Gensler 公布犹他州 Stratos 超大规模数据中心设计，包含60栋建筑，将成为全球最大数据中心之一。项目引发激烈争论——支持者强调数字基础设施的必要性，批评者则质疑其对当地景观、水资源和能源的巨大消耗。",
-      "quote": "60栋楼的数据中心——欢迎来到科幻片场，只是这里存的都是你的自拍。",
-      "url": "https://www.dezeen.com/2026/05/23/utah-data-centre-gensler-this-week/",
-      "source": "Dezeen",
-      "published": "2026-05-24",
-      "category": "design",
-      "uid": "design_1701f114"
-    },
-    {
-      "title": "伊斯坦布尔全球设计论坛：六件城市装置作品亮相",
-      "content": "首届伊斯坦布尔全球设计论坛在土耳其首都各处设置六件城市装置作品，包括一间被完全浸红的古城房间、一座基于失落罗马竞技场的胶合板拱门等。作品探索文化遗产、城市记忆与当代设计的交汇，为历史名城注入设计活力。",
-      "quote": "古城里塞当代装置，土耳其人玩得比我们想象的野。",
-      "url": "https://www.dezeen.com/2026/05/22/global-design-forum-istanbul-installations/",
-      "source": "Dezeen",
-      "published": "2026-05-24",
-      "category": "design",
-      "uid": "design_fcf5244d"
     }
   ]
 }
