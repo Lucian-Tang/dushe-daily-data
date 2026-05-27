@@ -1,1 +1,112 @@
-[]
+[
+  {
+    "uid": "industry_34876427",
+    "title": "🧪 LLM 推理到底 \"想\" 了多少废话？答案是有 60% 是冗余",
+    "content": "推理型 LLM 靠长思维链解决难题，但代价是延迟和算力飙升。这篇论文首次大规模量化了推理冗余——大量思维链中的推理步其实并未真正推动问题解决。研究发现 60% 以上的推理 token 是冗余的，识别并剪掉这些废话后，在保持准确率的同时推理成本可大幅下降。",
+    "quote": "你的 AI 每做一道题都在写一篇论文，实际上它只想写个结论——剩下都是水字数",
+    "url": "https://arxiv.org/abs/2605.23926",
+    "source": "arXiv cs.AI",
+    "published": "2026-05-26",
+    "tag": "industry",
+    "crawled_at": "2026-05-27T23:00:00+08:00"
+  },
+  {
+    "uid": "industry_f14511a4",
+    "title": "🏭 \"Agent 制造\"：第五制造范式降临，工厂变成 Agent 协作体",
+    "content": "制造范式经历了机械化、电气化、自动化、智能制造四个阶段。这篇论文断言第五阶段是 Agent Manufacturing——基础模型驱动的 AI Agent 作为第一类工业实体，自主管理产线、调度资源、优化流程、诊断故障。不是给 MES 系统加个 AI 插件，而是工厂本身就是一群 Agent 在协作。",
+    "quote": "老板：我把工厂交给 AI 了。工人：那 AI 也要打螺丝吗？—— AI：我在指挥打螺丝",
+    "url": "https://arxiv.org/abs/2605.24823",
+    "source": "arXiv cs.AI",
+    "published": "2026-05-26",
+    "tag": "industry",
+    "crawled_at": "2026-05-27T23:00:00+08:00"
+  },
+  {
+    "uid": "industry_1c242c46",
+    "title": "💻 CUA-Gym：给 AI Agent 一个 \"计算机使用训练场\"",
+    "content": "Computer-Use Agent 是今年最热的 AI 方向之一。CUA-Gym 提出了一个可扩展的框架，在沙箱环境中自动生成带确定性奖励的训练任务，涵盖文件操作、GUI 交互、Web 浏览等场景。奖励是自动验证的，不需要人工标注。这意味着 CUA 的 RL 训练终于有了工业化抓手。",
+    "quote": "你还在教 AI 写代码，它已经在学怎么用鼠标双击 Excel 了",
+    "url": "https://arxiv.org/abs/2605.25624",
+    "source": "arXiv cs.AI",
+    "published": "2026-05-26",
+    "tag": "industry",
+    "crawled_at": "2026-05-27T23:00:00+08:00"
+  },
+  {
+    "uid": "industry_d09f9af6",
+    "title": "🤝 Meta-Agent：你只要说需求，它自动搭好一整套多 Agent 系统",
+    "content": "搭多 Agent 系统需要定义角色、设计工作流、写提示词、加验证逻辑。Meta-Agent 提出了两阶段框架：用 LLM 从自然语言任务描述生成结构化 Agent 拓扑并执行验证。核心创新在于 Agent 间交互不是靠自由对话，而是通过形式化合约约束，避免信息在传递中失真和放大。",
+    "quote": "以前搭多 Agent 靠 prompt 玄学，以后靠自然语言编译——感觉更像 Prompt 玄学 2.0",
+    "url": "https://arxiv.org/abs/2605.25233",
+    "source": "arXiv cs.AI",
+    "published": "2026-05-26",
+    "tag": "industry",
+    "crawled_at": "2026-05-27T23:00:00+08:00"
+  },
+  {
+    "uid": "industry_1727140b",
+    "title": "💼 AI in the Enterprise：百万公司、千万用户在用 Copilot 做什么？",
+    "content": "微软 M365 Copilot 每周被全球超过 100 万家企业使用。这篇论文基于数百万条交互数据首次大规模分析了 Copilot Chat 的真实使用模式：企业用户主要做信息聚合、内容生成、任务自动化。但跨应用工作流的使用率远低于预期，大部分用户仍只在一个应用内完成 AI 交互。",
+    "quote": "Copilot 最火的功能是什么？让 Excel 公式不再报错。人类的底线就这么低",
+    "url": "https://arxiv.org/abs/2605.23958",
+    "source": "arXiv cs.AI",
+    "published": "2026-05-26",
+    "tag": "industry",
+    "crawled_at": "2026-05-27T23:00:00+08:00"
+  },
+  {
+    "uid": "industry_d71e50fa",
+    "title": "⚠️ 推理模型的安全黑洞：Chain-of-Thought 成为越狱新入口",
+    "content": "推理型 LLM 的显式思维链是一把双刃剑——让模型更聪明，也让攻击者更容易读懂模型在想什么。论文提出基于进化算法的 CoT 越狱攻击，通过不断变异 CoT 模板绕过安全对齐。更可怕的是开源推理模型的 CoT 完全暴露，恶意用户可直接读取并操纵模型的思考过程。",
+    "quote": "模型：让我想想怎么回答这个问题…（超小声）其实我可以绕开安全限制的",
+    "url": "https://arxiv.org/abs/2605.24497",
+    "source": "arXiv cs.AI",
+    "published": "2026-05-26",
+    "tag": "industry",
+    "crawled_at": "2026-05-27T23:00:00+08:00"
+  },
+  {
+    "uid": "industry_27171846",
+    "title": "🔬 LLM-AutoSciLab：让 AI 自己设计实验、自己找答案",
+    "content": "LLM-AutoSciLab 提出了一个闭环框架：LLM Agent 自主提出假设→设计实验→执行实验→观察结果→修正假设。在材料科学和生物学模拟环境中，该方法发现了多个被人类研究者遗漏的规律。核心区别在于它不依赖已有数据，而是主动创造新数据来验证猜想。",
+    "quote": "AI 科研民工已上线：读论文、想idea、做实验、写论文，一条龙全包",
+    "url": "https://arxiv.org/abs/2605.24043",
+    "source": "arXiv cs.AI",
+    "published": "2026-05-26",
+    "tag": "industry",
+    "crawled_at": "2026-05-27T23:00:00+08:00"
+  },
+  {
+    "uid": "industry_009643a0",
+    "title": "🧠 \"Check Your LLM's Secret Dictionary!\"——5 行代码看穿 LLM 内心",
+    "content": "仅需 5 行 PyTorch 代码对 LLM 的 lm_head 权重矩阵做 SVD 分解，就能发现模型学到的语义子空间。每个左奇异向量对应模型最擅长的输出 token——包括它不应该学会的东西。模型内部存在清晰的 \"概念词典\"：特定隐藏状态方向对应特定语义概念。这是一种完全无监督、近乎零成本的模型可解释性方法。",
+    "quote": "问：你家 AI 每天都在想什么？答：跑5行代码，它自己告诉你，包括它不该想的东西",
+    "url": "https://arxiv.org/abs/2605.22005",
+    "source": "arXiv cs.AI",
+    "published": "2026-05-26",
+    "tag": "industry",
+    "crawled_at": "2026-05-27T23:00:00+08:00"
+  },
+  {
+    "uid": "industry_b2321b2a",
+    "title": "♻️ AI-Driven Alpha Decay：量化投资用 AI，越用越不赚钱",
+    "content": "当所有对冲基金都用 AI 做量化投资时，超额收益（Alpha）会快速衰减。论文用数学证明了三重效应：信号拥挤、反射性信号侵蚀、红皇后竞争。并推导出 Alpha 半衰期公式——AI 投资策略价值每 3-6 个月减半。AI 不是印钞机，它只是让市场变得更有效率。",
+    "quote": "每个人都在用 AI 找 Alpha，结果大家都找到了 Beta，然后一起亏钱",
+    "url": "https://arxiv.org/abs/2605.23905",
+    "source": "arXiv cs.AI",
+    "published": "2026-05-26",
+    "tag": "industry",
+    "crawled_at": "2026-05-27T23:00:00+08:00"
+  },
+  {
+    "uid": "industry_a86a243f",
+    "title": "🦿 MuGen：人形机器人终于学会 \"有范儿\" 地走路了",
+    "content": "MuGen 提出多技能生成式运动控制框架，让机器人像人一样执行风格化动作：慢走、快步、转身、跳舞。核心技术用 VQ-VAE + 模型基 RL 学习生成式运动表征，将人类动作关键模式编码到向量空间。人形机器人不再只是僵硬地移动，而是可以有姿态、有范儿地走。",
+    "quote": "人形机器人终于会走猫步了，下一步是不是要参加维密秀",
+    "url": "https://arxiv.org/abs/2605.24592",
+    "source": "arXiv Robotics",
+    "published": "2026-05-26",
+    "tag": "industry",
+    "crawled_at": "2026-05-27T23:00:00+08:00"
+  }
+]
