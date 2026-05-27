@@ -1,0 +1,1378 @@
+[
+  {
+    "slug": "xiaohongshu-skill",
+    "displayName": "Xiaohongshu Skill",
+    "summary": "小红书全功能工具。搜帖子、看详情、刷推荐流、发笔记（图文/视频/长文/Markdown）、二维码登录、评论点赞收藏、写模板、管策略、跑 SOP。兼容 Claude Code / OpenClaw / Codex / Hermes Agent 等支持 AgentSkills 规范的平台。提到 xiaohongshu...",
+    "tags": {
+      "latest": "1.4.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 2440,
+      "installsAllTime": 18,
+      "installsCurrent": 16,
+      "stars": 11,
+      "versions": 5
+    },
+    "createdAt": 1771854373203,
+    "updatedAt": 1779907550642,
+    "latestVersion": {
+      "version": "1.4.0",
+      "createdAt": 1779907550642,
+      "changelog": "v1.4.0: canvas指纹噪声、CDP痕迹清除、原创声明、可见范围、遮挡检测、新版发布按钮、变速滚动+WheelEvent、评论滚动查找、页面可访问检测、--version/logout/--verbose/--quiet、外部stealth.js、日志框架",
+      "license": null
+    },
+    "metadata": {
+      "os": [
+        "win32",
+        "linux",
+        "darwin"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "mycelium-io",
+    "displayName": "Mycelium",
+    "summary": "Use the mycelium CLI to join coordination rooms, negotiate with other agents via CognitiveEngine, and share persistent memory across sessions.",
+    "tags": {
+      "latest": "1.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1328,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 63
+    },
+    "createdAt": 1774021682492,
+    "updatedAt": 1779907344790,
+    "latestVersion": {
+      "version": "1.1.0",
+      "createdAt": 1779907344790,
+      "changelog": "See https://github.com/mycelium-io/mycelium/releases/tag/v1.1.0",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "ceramic-search",
+    "displayName": "Ceramic Search",
+    "summary": "Web search for AI agents using Ceramic. Use for accurate current information — news, prices, recent events, documentation, general fact checking. Trigger thi...",
+    "tags": {
+      "latest": "1.0.8"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 472,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 9
+    },
+    "createdAt": 1779125310589,
+    "updatedAt": 1779907063976,
+    "latestVersion": {
+      "version": "1.0.8",
+      "createdAt": 1779907063976,
+      "changelog": "Modify skill.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "credibility-action-gate",
+    "displayName": "Credibility Action Gate",
+    "summary": "Use when an agent needs to evaluate messy public claims before taking a bounded, costly, irreversible, or reputation-sensitive action. Produces an analysis-o...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1779906932356,
+    "updatedAt": 1779906932356,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1779906932356,
+      "changelog": "- Initial release of the credibility-action-gate skill.\n- Provides a structured workflow to evaluate claims before high-impact actions (e.g., funding, hiring, endorsements).\n- Uses operator policy and multiple evidence lanes to produce an analysis-only action disposition.\n- Action disposition guides eligibility (e.g., full, bounded, test, monitor, reject) without executing or making mission-specific decisions.\n- Emphasizes separation of credibility analysis from mission fit and avoids default human escalation.\n- Designed for portability: plain Markdown/JSON, no external or privileged dependencies.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "html-editor",
+    "displayName": "html-editor",
+    "summary": "把任意静态 HTML 转成可视化编辑版：注入可拖动工具栏、颜色/字号/布局/风格面板、就地文字编辑、撤销保存导出干净版、元素与面板双向跳转、中英文 i18n、6 套场景风格 Prompt 一键复制给 AI 重塑样式。颜色面板数据驱动：扫 DOM 文字字符数 top 5 + 背景元素数 top 4 + 边框元素数...",
+    "tags": {
+      "latest": "1.8.4"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 99,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1779686893609,
+    "updatedAt": 1779906794958,
+    "latestVersion": {
+      "version": "1.8.4",
+      "createdAt": 1779906794958,
+      "changelog": "Turn any static HTML into a visually editable page: click text to edit inline, adjust colors / fonts / layout from a side panel, copy style prompts to paste into any AI for restyling, and export a clean HTML in one click.\n\nKey upgrades since v1.0.0:\n\nThe color panel has been rewritten from \"guess by variable name\" to data-driven. It scans every DOM text node and aggregates color usage weighted by character count: top 5 text colors, top 4 backgrounds, top 3 borders. Works for any theme — blue, red, green, dark — without code changes. Labels follow frequency semantics: Primary / Secondary / Highlight / Accent / Subtle. Multiple CSS variables sharing the same hex are linked automatically.\n\nThe font-size panel was collapsed from 25 items to 10 or fewer, organized into 3 tiers: Heading / Body / Auxiliary. Same-family selectors like strong, upcoming, event, data are merged, eliminating clutter.\n\nThe layout panel adds a Line Height slider, for 7 items total: Page Width / Page Padding / Lead Width / Line Height / Section Gap / Card Gap / Card Padding.\n\nStyle presets are rewritten from \"click to apply CSS\" to \"click to copy an AI prompt.\" Six scenario cards (Cloud Native / Swiss Grid / Editorial Magazine / Sunlit Warmth / Terminal Hacker / Y2K Kawaii) copy a complete prompt — style description, palette hex, hard constraints — to clipboard. Paste into any AI to rewrite the CSS.\n\nA draggable toolbar is added. Defaults to the top-right corner, can be dragged anywhere, position persisted in localStorage.\n\nThe language switcher now uses dual-display \"中 / EN\" — both languages are always visible, the active one highlighted and the inactive one dimmed. Any language user immediately understands how to switch.\n\nA pinned tooltip is added. Hover any element to see its adjustable properties; press P to pin. Each row shows a swatch and current value. The tooltip detects whether the element uses colors not in the panel and branches by source type: inline hardcoded colors get an orange \"Extract as variable\" button (smart-named like --text-purple, rewrites DOM inline to var() for immediate live coupling); colors from CSS rules, parent inheritance, or complex expressions get a blue \"Copy prompt for AI\" button (copies a semantic refactor prompt with the element selector).\n\nExport Clean (ε scheme) is added. One click strips the toolbar, panel, editor JS / CSS, but keeps data-editable so the file can be re-adapted later. All inline var(--xxx) references are automatically restored to hex, so clipping a snippet to Notion / email / WeChat preserves colors.\n\nCompatibility is relaxed. Inline-style-heavy HTML used to be rejected; now text editing and the data-driven color panel still work, with a suggestion to use Style Prompt to let an AI refactor inline styles into CSS variables first.\n\nSanity checks expanded to 20+ items: mapping consistency, font-size coverage, editable coverage, injection order, no personal path leaks. Bad checks block output, preventing broken files.\n\nOne-line usage:\npip install beautifulsoup4\npython scripts/adapt.py your-report.html\n\n\n把任意静态 HTML 变成可视化编辑版：点击文字直接修改、面板调整颜色 / 字号 / 布局、复制风格 Prompt 给 AI 让 AI 重塑样式、一键导出干净 HTML。\n\n相比 v1.0.0 的核心升级：\n\n颜色面板从\"猜变量名\"升级为数据驱动。自动扫描 DOM 所有文字节点，按字符数加权聚合：文字色 top 5、背景色 top 4、边框色 top 3。蓝主题、红主题、绿主题、深色模式都自动适配。按使用频次命名为「主要 / 次要 / 强调 / 装饰 / 偶用」。同色多变量自动联动。\n\n字号面板从 25 项收敛到 10 项以内，分 3 组：标题层级 / 正文层级 / 辅助。自动合并 strong / upcoming / event / data 等同族选择器，不再堆砌。\n\n布局面板新增「行高」滑块，共 7 项：页面宽度 / 左右内距 / 段落最大宽 / 行高 / 章节间距 / 卡片间距 / 卡片内边距。\n\n风格预设从「点击改 CSS」改造为「复制 Prompt 给 AI」。6 张场景卡片（云原生企业 / 瑞士网格 / 杂志编辑 / 阳光手账 / 终端骇客 / Y2K 可爱数字），点击后把完整风格描述、色板、硬约束的 Prompt 复制到剪贴板，粘贴给任意 AI 即可重写 CSS。\n\n新增可拖动工具栏。默认右上角，可拖到任意位置，位置写入 localStorage 永久记住。\n\n新增「中 / EN」双显语言切换。两种语言始终都显示，激活态高亮，未激活半透明。任何语言用户都能一眼看懂如何切换。\n\n新增 Pinned 元素弹窗。Hover 任意元素查看可调项，按 P 固定后弹窗每行带色块和数值。检测元素颜色是否在面板中未提取，按类型分流：inline 写死的色提供「一键提取为变量」按钮（智能命名为 --text-purple 等，直接改 DOM 立即联动）；CSS 规则、父级继承、复杂表达式的色提供「复制提示让 AI 改」按钮（复制带选择器的语义化 Prompt 给 AI）。\n\n新增导出干净版（ε 方案）。一键剥离工具栏、面板、编辑器 JS / CSS，保留 data-editable 属性方便日后再次 adapt。inline 的 var(--xxx) 自动还原为 hex，剪贴片段到 Notion、邮件、微信不丢失颜色。\n\n兼容性放宽。原来\"几乎全是 inline style 的 HTML\"会被拒绝生成；现在文字编辑和数据驱动颜色面板仍可用，并提示用户用 Style Prompt 让 AI 先把 inline 重构为 CSS 变量。\n\nSanity Checks 升级。20+ 项自动校验：mapping 一致性、字号覆盖、可编辑覆盖、注入顺序、无个人路径泄漏。检查不过不输出文件，避免生成坏件。\n\n一行使用：\npip install beautifulsoup4\npython scripts/adapt.py your-report.html",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "alphalens-api",
+    "displayName": "AlphaLens API",
+    "summary": "Use this skill whenever the user wants to discover companies, search for products, build market maps, manage pipelines, or run enrichment workflows using Alp...",
+    "tags": {
+      "latest": "1.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 567,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 24
+    },
+    "createdAt": 1774428596217,
+    "updatedAt": 1779906518339,
+    "latestVersion": {
+      "version": "1.1.0",
+      "createdAt": 1779906518339,
+      "changelog": "**Improved authentication setup and usage rules.**\n\n- Added explicit version field (`version: 1.1.0`) to metadata.\n- Updated authentication section: require explicit aliasing of `ALPHALENS_API_KEY` to `KEY` and halting if not set.\n- Clarified that all shell commands must reference `$KEY` (not `${ALPHALENS_API_KEY}`) and set `$API` before any calls.\n- Refined “Critical Rules” to reinforce API key aliasing and failure behavior if credentials are missing.\n- Minor wording and formatting changes for clarity and user guidance.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "bytedance-visual-recognition",
+    "displayName": "Bytedance Visual Recognition",
+    "summary": "ByteDance Visual Recognition — 调用豆包 Doubao-Seed 多模态模型识别图片/视频。 支持图片转文字、视频转文字、图片转代码、视频转代码，全自动模型降级。 参与火山协作奖励计划免费使用顶级多模态模型。 智能调度模型，每模型每日180W tokens，超限自动降级。",
+    "tags": {
+      "latest": "3.0.4"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 4
+    },
+    "createdAt": 1779899270877,
+    "updatedAt": 1779905982748,
+    "latestVersion": {
+      "version": "3.0.4",
+      "createdAt": 1779905982748,
+      "changelog": "- 移除了对\"追问\"（追问与输出结果相关的提问）功能的描述和支持\n- 同步更新说明文档，删除所有与追问相关的内容和操作示例\n- 其它使用方法、调用规则及配置流程保持不变",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "zhang-yidong-macro-analysis",
+    "displayName": "Zhang Yidong Macro Analysis",
+    "summary": "基于张忆东宏观框架，分析A股/港股市场趋势、货币政策及资产配置，助力投资决策和风险管理。",
+    "tags": {
+      "latest": "2.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 107,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 3
+    },
+    "createdAt": 1778318048808,
+    "updatedAt": 1779905823639,
+    "latestVersion": {
+      "version": "2.0.1",
+      "createdAt": 1779905823639,
+      "changelog": "- 2026年版重大更新：融合张忆东2025-2026年最新市场观点，深化港股复苏、A股科技行情和“中国资产重估”逻辑。\n- 新增达利欧、芒格、马斯克、缠论等跨界思维模型2026年更新，拓展AI时代投资和决策视角。\n- 引入国产大模型（DeepSeek、通义千问、智谱GLM）案例，探索东方哲学与AI融合方法。\n- 完善风险识别与资产配置建议，细化宏观周期定位和市场结构判断流程。",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "vercel-zero-explorer",
+    "displayName": "Vercel Zero Explorer",
+    "summary": "AI-powered guide for Vercel Zero - the first programming language designed specifically for AI agents. Covers Zero syntax, .0 file extension, native tools, e...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1779905401418,
+    "updatedAt": 1779905401418,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1779905401418,
+      "changelog": "Vercel Zero Explorer v1.0.0\n\n- Initial release providing a comprehensive AI-powered guide for the Vercel Zero programming language.\n- Covers Zero syntax, .0 file extension, native tools, explicit effects, and structured JSON diagnostics.\n- Offers step-by-step workflows, sample inputs and outputs, and integration patterns for AI agent development.\n- Includes references and key use cases for AI developers, language designers, and researchers.\n- Multilingual trigger support in English and Chinese.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "finance-news-aggregator",
+    "displayName": "Finance News Aggregator",
+    "summary": "AI/技术新闻聚合引擎。100+ RSS源并发抓取、兴趣评分、跨天去重、统一预取。",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1779905389048,
+    "updatedAt": 1779905389048,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1779905389048,
+      "changelog": "AI News Aggregator v1.0.0\n\n- Initial release of a high-performance AI/tech news engine.\n- Concurrently fetches 100+ RSS sources in 12 seconds with ETag/Last-Modified caching and date filtering.\n- Includes technical evaluations for 2026: LangGraph v1.0, CrewAI v1.10, SDK comparisons, MCP protocol, and LLM long-context battle.\n- Supports multi-category aggregation: companies, papers, media, newsletters, communities, Chinese sources, AI agents, and social feeds.\n- Provides core CLI commands for news, papers, and GitHub trending aggregation.\n- Fully standard-library based; no extra dependencies required.",
+      "license": null
+    },
+    "metadata": {
+      "os": [
+        "linux",
+        "darwin",
+        "win32"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "smyx-smoking-detection-analysis",
+    "displayName": "公共场所吸烟行为智能检测技能",
+    "summary": "Automatically detects smoking behavior in target areas based on computer vision; supports real-time detection of video streams, images, and video files; iden...",
+    "tags": {
+      "latest": "1.0.3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 391,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 4,
+      "versions": 4
+    },
+    "createdAt": 1776396843048,
+    "updatedAt": 1779903578675,
+    "latestVersion": {
+      "version": "1.0.3",
+      "createdAt": 1779903578675,
+      "changelog": "- Major refactor with modular restructuring: split analysis logic into a new \"smyx_analysis\" submodule.\n- Added multiple new scripts and configuration files under skills/smyx_analysis/ for better separation of concerns.\n- Removed legacy face_analysis module and related files.\n- Updated core scripts and requirements to improve organization and future extensibility.\n- Documentation updated to reflect new structure and usage.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "prioritize-dev-tasks",
+    "displayName": "Prioritize Dev Tasks",
+    "summary": "Prioritize software project backlogs, bugs, technical debt, sprint tasks, release checks, and requirement pools using business impact, dependency blocking, d...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1779903551750,
+    "updatedAt": 1779903551750,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1779903551750,
+      "changelog": "Initial release of Prioritize Dev Tasks. Provides risk-aware prioritization for software project backlogs, bugs, technical debt, sprint tasks, and release blockers. Includes dependency-aware execution ordering, four-quadrant classification, explicit defer/remove recommendations, and responses in the user's language.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "chess-buddy",
+    "displayName": "Chess Buddy",
+    "summary": "Stockfish-backed chess buddy for analyzing FEN positions and board images.",
+    "tags": {
+      "latest": "0.1.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1779901657568,
+    "updatedAt": 1779903205490,
+    "latestVersion": {
+      "version": "0.1.1",
+      "createdAt": 1779903205490,
+      "changelog": "Clarify MIT-0 ClawHub wrapper vs GPL GitHub source package",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "pentest-interactive",
+    "displayName": "Pentest Interactive",
+    "summary": "Provides an interactive, structured reference for manual penetration testing across 7 phases with safe command templates and guidance for security assessments.",
+    "tags": {
+      "audit": "1.0.0",
+      "latest": "1.0.0",
+      "penetration-testing": "1.0.0",
+      "security": "1.0.0",
+      "web-app": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 1
+    },
+    "createdAt": 1779903163532,
+    "updatedAt": 1779903163532,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1779903163532,
+      "changelog": "Initial release of Interactive Penetration Test skill – a manual, reference-based methodology for AI agents and security professionals.\n\n- Provides structured, interactive penetration testing checklists across 7 testing phases.\n- Includes read-only command templates (e.g., curl, openssl) for manual execution—no automated scanning.\n- Offers \"what to look for\" guidance for each test and phase.\n- Covers reconnaissance, authentication, authorization, injection, API, infrastructure, and business logic checks.\n- Designed as a methodology and teaching tool, not an exploit or vulnerability scanner.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "philosophy-dialogue-publish",
+    "displayName": "Philosophy Dialogue Publish",
+    "summary": "243位东西方哲学家/思想家的思维视角合集。包含庄子、尼采、芒格、塔勒布、达尔文、孙子等243位人物的完整思维框架、决策启发式和表达DNA。输入任意人名即可激活对应视角进行对话。",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1779902827000,
+    "updatedAt": 1779902827000,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1779902827000,
+      "changelog": "- 首次发布，集合243位中西方哲学家与思想家的独立视角 Skill。\n- 支持按人物名调用心智模型、决策启发式与表达风格进行分析和对话。\n- 可实现多视角讨论、随机视角分析、思想家辩论等多样用法。\n- 提供详细的人物库和每个视角的心智结构、价值观及局限说明。",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "philosophy-dialogue",
+    "displayName": "Philosophy Dialogue",
+    "summary": "243位东西方哲学家/思想家的思维视角合集。包含庄子、尼采、芒格、塔勒布、达尔文、孙子等243位人物的完整思维框架、决策启发式和表达DNA。输入任意人名即可激活对应视角进行对话。",
+    "tags": {
+      "latest": "5.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 506,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 28
+    },
+    "createdAt": 1775655260332,
+    "updatedAt": 1779902355638,
+    "latestVersion": {
+      "version": "5.0.0",
+      "createdAt": 1779902355638,
+      "changelog": "v5.0.0",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "opc-supply-chain-matching",
+    "displayName": "胡田 OPC导师 供应链对接",
+    "summary": "根据项目阶段判断制造能力层级，实现从技术原型到量产的供应链精准匹配",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1779901685447,
+    "updatedAt": 1779901685447,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1779901685447,
+      "changelog": "opc-supply-chain-matching v1.0.0\n\n- Initial release of the supply chain matching skill for OPC projects.\n- Enables accurate supply chain partner selection based on project stage, supporting technical prototyping through to mass production.\n- Implements a dual-cycle system: internal collaboration for small-scale/community needs, and external centralized sourcing for larger-scale/manufacturing needs.\n- Provides standardized workflows for supplier needs assessment, partner matching, internal collaboration, and supplier evaluation.\n- Includes supplier onboarding, qualification, and ongoing evaluation standards, with clear SOPs and templates for supplier engagement.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "opc-equity-cooperation",
+    "displayName": "胡田 OPC导师 股权合作机制",
+    "summary": "OPC分布式协作中台解决方案，解决临时团队动态合作、能力出资合规、多方利益分配",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1779901671393,
+    "updatedAt": 1779901671393,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1779901671393,
+      "changelog": "opc-equity-cooperation version 1.0.0 – Initial release\n\n- Provides a structured solution for dynamic team cooperation, compliant contribution, and equitable profit sharing for OPC distributed platforms.\n- Introduces a three-tier partnership model: alliance, SPV, and formal company layers, supporting 90+% scenarios without the need for company registration.\n- Implements dual legal frameworks (soft/hard SPV) and a triple-elder governance system with a five-level credit rating.\n- Includes standardized deployment steps, comprehensive compliance guidelines, modular documentation, and an integrated Agent Harness for process automation, validation, and self-healing.\n- Suitable for temporary teams, community alliances, and state-owned enterprise incubation, with a focus on safety, transparency, and risk isolation.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "opc-ma-connection",
+    "displayName": "胡田 OPC导师 并购对接",
+    "summary": "并购对接工具，提供并购交易中关键联系人识别、接触策略和谈判路径规划",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1779901656229,
+    "updatedAt": 1779901656229,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1779901656229,
+      "changelog": "Initial release of opc-ma-connection skill:\n\n- Provides tools for identifying key contacts, designing outreach strategies, and planning negotiation paths in M&A projects.\n- Focuses on helping sellers connect with decision-makers at listed companies and advance deals efficiently.\n- Outlines templates and frameworks for profiling key stakeholders and mapping decision influence levels.\n- Lists compliant channels and step-by-step processes for acquiring contact information.\n- Designed to integrate with upstream (target selection) and downstream (legal due diligence) M&A workflow skills.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "smyx-dementia-confusion-orientation-analysis",
+    "displayName": "Dementia Confusion / Disorientation Recognition and Orientation Soothing | 失智老人困惑/迷惘识别与定向安抚",
+    "summary": "Through fixed cameras (and optional microphones) in dementia care facilities or homes, the system analyzes behaviors of people with dementia to identify conf...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1779901635223,
+    "updatedAt": 1779901635223,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1779901635223,
+      "changelog": "smyx-dementia-confusion-orientation-analysis 1.0.0\n\n- Initial release of an AI-powered tool for real-time detection of confusion/disorientation in people with dementia via fixed cameras and optional microphones in care facilities or homes.\n- Automatically recognizes key confusion indicators: sudden activity stops, gaze drifting, looking around, and repeated disorientation questions.\n- Triggers multi-level orientation soothing interventions, such as personalized family introductions and current time/location reminders, through smart speakers in a gentle tone.\n- Provides strict privacy, operational, and safety safeguards, including user authorization for open-id and specific scenario-based response escalation.\n- Supports comprehensive historical report queries through cloud API and structured output, ensuring thorough caregiver records and integration into existing facility systems.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "smyx-pregnancy-emotion-soothing-analysis",
+    "displayName": "Pregnancy Emotion Soothing | 孕妇情绪波动舒缓",
+    "summary": "Through fixed cameras (and optional microphones) at the pregnant woman's home or prenatal exam waiting room, the system analyzes facial expressions (sudden c...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1779901613875,
+    "updatedAt": 1779901613875,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1779901613875,
+      "changelog": "smyx-pregnancy-emotion-soothing-analysis 1.0.0\n\n- Initial release of a real-time pregnancy emotion monitoring and soothing skill.\n- Detects emotional fluctuations in pregnant women via fixed cameras and optional microphones by analyzing facial expressions, prolonged inactivity, and conversation tones.\n- Triggers automatic soothing actions: smart speaker music, guided mindfulness, or reminders to family apps based on detected emotional stress.\n- Provides 4-level progressive soothing strategies with real-time effect evaluation and escalation.\n- Includes detailed scene recognition, structured reporting, daily summary reports, and history query functions.\n- Enforces strict open-id acquisition protocol for user data security and personalized analysis.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "opc-technical-due-diligence-en",
+    "displayName": "胡田 OPC导师 技术尽调 英文版",
+    "summary": "技术尽调初筛工具，用于投资前的技术可行性评估、团队背景核查、专利验证。适用于科技创新项目的真实性核查，识别虚假技术和夸大宣传。核心能力：技术可行性评估、团队背景核查、专利备案验证、商业模式分析。",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1779901554645,
+    "updatedAt": 1779901554645,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1779901554645,
+      "changelog": "opc-technical-due-diligence-en 1.0.0\n\n- Initial release of a technical due diligence screening tool for pre-investment technology assessment.\n- Provides structured frameworks for technology feasibility, team background checks, patent verification, and business model analysis.\n- Includes quick risk assessment rules and four-tier due diligence workflow.\n- Features standardized report templates, risk rating systems, and collaborative investigation workflow references.\n- Designed for rapid, clear evaluation of innovative technology project legitimacy and risk.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "opc-three-governance",
+    "displayName": "胡田 OPC导师 三会治理系统",
+    "summary": "基于私董会、理事会、专家委员会三会治理体系，整合24位跨领域专家智慧，提供从战略决策到执行落地的完整治理支持系统",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1779901541880,
+    "updatedAt": 1779901541880,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1779901541880,
+      "changelog": "Initial release of opc-three-governance skill:\n\n- Launched the governance system with three committees: 私董会 (Mentor Board), 理事会 (Executive Board), and 专家委员会 (Expert Committee).\n- Introduced a total of 24 expert agents across strategy, execution, and specialized domains.\n- Defined agent roles, core capabilities, and a structured workflow for governance support.\n- Provided detailed input parameters, action steps, and output templates for decision support.\n- Included gradual disclosure mechanism and comprehensive documentation for users.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "wizmem",
+    "displayName": "WizMem",
+    "summary": "Use WizMem with OpenClaw for compact context-broker memory, evidence-gated recall, source feedback, and measured token-cost control.",
+    "tags": {
+      "latest": "0.1.3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 44,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 4
+    },
+    "createdAt": 1779894762966,
+    "updatedAt": 1779901454258,
+    "latestVersion": {
+      "version": "0.1.3",
+      "createdAt": 1779901454258,
+      "changelog": "Add brain emoji icon",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "career-planner-china",
+    "displayName": "Career Planner China",
+    "summary": "AI时代职业规划师技能。专为AI时代职场变化而设计，帮助用户应对AI带来的职业冲击与机遇。当用户询问职业规划、职业建议、选专业、职场转型、未来就业方向时触发。功能包括：收集用户基本信息、霍兰德职业兴趣测评、职业价值观分析、AI时代职业影响评估（高危/中危/低危分级），并输出完整的个性化职业规划报告。关键词：职业规...",
+    "tags": {
+      "latest": "2.2.19",
+      "ai": "2.1.7",
+      "career": "2.1.7",
+      "china": "2.1.7",
+      "job": "2.1.7",
+      "planner": "2.1.7"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1463,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 50
+    },
+    "createdAt": 1776479773918,
+    "updatedAt": 1779901331854,
+    "latestVersion": {
+      "version": "2.2.19",
+      "createdAt": 1779901331854,
+      "changelog": "auto publish v2.2.19",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "sonoscli",
+    "displayName": "Sonoscli",
+    "summary": "Control Sonos speakers (discover/status/play/volume/group).",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 83427,
+      "installsAllTime": 2768,
+      "installsCurrent": 2641,
+      "stars": 55,
+      "versions": 1
+    },
+    "createdAt": 1767545381030,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545381030,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "gog",
+    "displayName": "Gog",
+    "summary": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 36,
+      "downloads": 180484,
+      "installsAllTime": 3586,
+      "installsCurrent": 3455,
+      "stars": 904,
+      "versions": 1
+    },
+    "createdAt": 1767545346060,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545346060,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "github",
+    "displayName": "Github",
+    "summary": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 7,
+      "downloads": 184302,
+      "installsAllTime": 4366,
+      "installsCurrent": 4234,
+      "stars": 617,
+      "versions": 1
+    },
+    "createdAt": 1767545344344,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545344344,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "weather",
+    "displayName": "Weather",
+    "summary": "Get current weather and forecasts (no API key required).",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 6,
+      "downloads": 155954,
+      "installsAllTime": 3787,
+      "installsCurrent": 3664,
+      "stars": 405,
+      "versions": 1
+    },
+    "createdAt": 1767545394459,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545394459,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-whisper",
+    "displayName": "Openai Whisper",
+    "summary": "Local speech-to-text with the Whisper CLI (no API key).",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 2,
+      "downloads": 81717,
+      "installsAllTime": 2074,
+      "installsCurrent": 2000,
+      "stars": 313,
+      "versions": 1
+    },
+    "createdAt": 1767545365755,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545365755,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "skill-creator",
+    "displayName": "Skill Creator",
+    "summary": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.",
+    "tags": {
+      "latest": "0.1.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 87404,
+      "installsAllTime": 2406,
+      "installsCurrent": 2332,
+      "stars": 292,
+      "versions": 1
+    },
+    "createdAt": 1769522677376,
+    "updatedAt": 1778987225295,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1769522677376,
+      "changelog": "Initial release of skill-creator, a comprehensive guide for designing modular skills to extend Claude’s capabilities.\n\n- Introduces principles for creating effective, concise, and domain-specific skills.\n- Explains modular structure: required SKILL.md and optional scripts, references, and assets folders.\n- Outlines guidelines for what to include (and exclude) in a skill package.\n- Details progressive disclosure design for efficient context management.\n- Provides reference patterns for organizing content and bundling resources.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "notion",
+    "displayName": "Notion",
+    "summary": "Notion API for creating and managing pages, databases, and blocks.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 89658,
+      "installsAllTime": 2367,
+      "installsCurrent": 2301,
+      "stars": 256,
+      "versions": 1
+    },
+    "createdAt": 1767545360889,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545360889,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "obsidian",
+    "displayName": "Obsidian",
+    "summary": "Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 9,
+      "downloads": 98921,
+      "installsAllTime": 2521,
+      "installsCurrent": 2431,
+      "stars": 405,
+      "versions": 1
+    },
+    "createdAt": 1767545362143,
+    "updatedAt": 1779137320034,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545362143,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "gemini",
+    "displayName": "Gemini",
+    "summary": "Gemini CLI for one-shot Q&A, summaries, and generation.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 5,
+      "downloads": 33387,
+      "installsAllTime": 1443,
+      "installsCurrent": 1398,
+      "stars": 54,
+      "versions": 1
+    },
+    "createdAt": 1767545316392,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545316392,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "mcporter",
+    "displayName": "Mcporter",
+    "summary": "Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 65218,
+      "installsAllTime": 2002,
+      "installsCurrent": 1937,
+      "stars": 191,
+      "versions": 1
+    },
+    "createdAt": 1767545355897,
+    "updatedAt": 1779137319429,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545355897,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "nano-banana-pro",
+    "displayName": "Nano Banana Pro",
+    "summary": "Generate/edit images with Nano Banana Pro (Gemini 3 Pro Image). Use for image create/modify requests incl. edits. Supports text-to-image + image-to-image; 1K/2K/4K; use --input-image.",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 100161,
+      "installsAllTime": 1848,
+      "installsCurrent": 1786,
+      "stars": 393,
+      "versions": 2
+    },
+    "createdAt": 1767545358090,
+    "updatedAt": 1779137307565,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767651987917,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "model-usage",
+    "displayName": "Model Usage",
+    "summary": "Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a scriptable per-model summary from codexbar cost JSON.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 36942,
+      "installsAllTime": 1563,
+      "installsCurrent": 1515,
+      "stars": 111,
+      "versions": 1
+    },
+    "createdAt": 1767667639455,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767667639455,
+      "changelog": "- Initial release of the model-usage skill for summarizing per-model usage and cost from CodexBar CLI local cost logs.\n- Supports both Codex and Claude providers.\n- Allows fetching summaries for the current (most recent) model or all models.\n- Provides both text and JSON output formats.\n- Can process costs directly from CodexBar CLI output or from a JSON file/stdin.\n- Includes guidance for CLI use and script automation.",
+      "license": null
+    },
+    "metadata": {
+      "os": [
+        "darwin"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "video-frames",
+    "displayName": "Video Frames",
+    "summary": "Extract frames or short clips from videos using ffmpeg.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 50481,
+      "installsAllTime": 1574,
+      "installsCurrent": 1525,
+      "stars": 121,
+      "versions": 1
+    },
+    "createdAt": 1767545391700,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545391700,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "blogwatcher",
+    "displayName": "Blogwatcher",
+    "summary": "Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 41408,
+      "installsAllTime": 1479,
+      "installsCurrent": 1424,
+      "stars": 69,
+      "versions": 1
+    },
+    "createdAt": 1767545299849,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545299849,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "nano-pdf",
+    "displayName": "Nano Pdf",
+    "summary": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 109247,
+      "installsAllTime": 2554,
+      "installsCurrent": 2478,
+      "stars": 253,
+      "versions": 1
+    },
+    "createdAt": 1767545359433,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545359433,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "session-logs",
+    "displayName": "Session-logs",
+    "summary": "Search and analyze your own session logs (older/parent conversations) using jq.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 39491,
+      "installsAllTime": 1417,
+      "installsCurrent": 1376,
+      "stars": 28,
+      "versions": 1
+    },
+    "createdAt": 1770136427000,
+    "updatedAt": 1778486000320,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1770136427000,
+      "changelog": "Initial release of session-logs.\n\n- Enables searching and analyzing your session logs (past conversations) with jq and ripgrep (rg).\n- Provides bash command examples for session discovery, keyword searches, extracting messages, cost summaries, and tool usage breakdowns.\n- Documents JSONL session file structure, roles, and content types.\n- Lists session log file locations and naming conventions.\n- Includes tips for managing and querying large, append-only session histories.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "himalaya",
+    "displayName": "Himalaya",
+    "summary": "CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 44179,
+      "installsAllTime": 1518,
+      "installsCurrent": 1478,
+      "stars": 68,
+      "versions": 1
+    },
+    "createdAt": 1767954271328,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767954271328,
+      "changelog": "Initial release of Himalaya CLI email client skill.\n\n- Provides terminal-based email management via IMAP/SMTP.\n- Supports listing, reading, composing, replying, forwarding, searching, and organizing emails.\n- Includes multi-account support and message composition with MML.\n- Detailed setup and configuration instructions included.\n- Enables handling attachments, output customization, and debugging via logging.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "sag",
+    "displayName": "Sag",
+    "summary": "ElevenLabs text-to-speech with mac-style say UX.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 26084,
+      "installsAllTime": 1251,
+      "installsCurrent": 1212,
+      "stars": 25,
+      "versions": 1
+    },
+    "createdAt": 1767545376535,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545376535,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "goplaces",
+    "displayName": "Goplaces",
+    "summary": "Query Google Places API (New) via the goplaces CLI for text search, place details, resolve, and reviews. Use for human-friendly place lookup or JSON output for scripts.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 21895,
+      "installsAllTime": 1243,
+      "installsCurrent": 1212,
+      "stars": 30,
+      "versions": 1
+    },
+    "createdAt": 1767545347454,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545347454,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "slack",
+    "displayName": "Slack",
+    "summary": "Use when you need to control Slack from Clawdbot via the slack tool, including reacting to messages or pinning/unpinning items in Slack channels or DMs.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 12,
+      "downloads": 46232,
+      "installsAllTime": 1417,
+      "installsCurrent": 1377,
+      "stars": 155,
+      "versions": 1
+    },
+    "createdAt": 1767545378002,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545378002,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "peekaboo",
+    "displayName": "Peekaboo",
+    "summary": "Capture and automate macOS UI with the Peekaboo CLI.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 4,
+      "downloads": 29174,
+      "installsAllTime": 1322,
+      "installsCurrent": 1284,
+      "stars": 81,
+      "versions": 1
+    },
+    "createdAt": 1767545373660,
+    "updatedAt": 1779137309055,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545373660,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": [
+        "darwin"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-image-gen",
+    "displayName": "Openai Image Gen",
+    "summary": "Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 23812,
+      "installsAllTime": 1113,
+      "installsCurrent": 1084,
+      "stars": 35,
+      "versions": 2
+    },
+    "createdAt": 1767545364210,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767652000401,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "tmux",
+    "displayName": "Tmux",
+    "summary": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 28039,
+      "installsAllTime": 1389,
+      "installsCurrent": 1342,
+      "stars": 43,
+      "versions": 1
+    },
+    "createdAt": 1767545387948,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545387948,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": [
+        "darwin",
+        "linux"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "gifgrep",
+    "displayName": "Gifgrep",
+    "summary": "Search GIF providers with CLI/TUI, download results, and extract stills/sheets.",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 17857,
+      "installsAllTime": 1206,
+      "installsCurrent": 1170,
+      "stars": 7,
+      "versions": 2
+    },
+    "createdAt": 1767488226016,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767545342229,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-whisper-api",
+    "displayName": "Openai Whisper Api",
+    "summary": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 25048,
+      "installsAllTime": 1175,
+      "installsCurrent": 1139,
+      "stars": 51,
+      "versions": 1
+    },
+    "createdAt": 1767545368103,
+    "updatedAt": 1779137313987,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545368103,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  }
+]
