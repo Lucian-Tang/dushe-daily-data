@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Theseus: Translating Win32 to WASM",
+    "content": "开发者 Evan Martin 的 Theseus 项目新增 WebAssembly 输出，可将 Windows.exe 翻译为在浏览器运行的原生代码。采用二进制翻译而非模拟，在 Web Worker 实现线程支持，让旧程序直接在网页端运行。",
+    "quote": "把 exe 直接扔浏览器跑，扫雷崩了但思路满分",
+    "source": "Hacker News",
+    "url": "https://neugierig.org/software/blog/2026/05/theseus-wasm.html",
+    "published": "2026-05-28"
+  },
+  {
+    "title": "Cache Aware Scheduling Shows Nice Wins For AMD Zen 5 On PostgreSQL, Valkey, Network Performance",
+    "content": "即将合入 Linux 7.2 的 Cache Aware Scheduling 在 AMD Zen 5 上表现出色。Phoronix 测试显示，该调度优化在 PostgreSQL、Valkey 和网络场景显著提升，通过感知 CPU 缓存拓扑实现更智能的任务调度。",
+    "quote": "内核调度器终于学会看缓存了，AMD 用户狂喜",
+    "source": "Phoronix",
+    "url": "https://www.phoronix.com/review/cache-aware-scheduling-hedt",
+    "published": "2026-05-28"
+  },
+  {
+    "title": "BadHost – CVE-2026-48710: Starlette Host-Header Auth Bypass",
+    "content": "Starlette 框架曝出高危漏洞 CVE-2026-48710，影响所有使用 request.url 做安全决策的中间件。威胁 vLLM、LiteLLM 等 AI 推理框架和 MCP 网关。Python 开发者需立即升级 Starlette 至 1.0.1+ 并排查底层鉴权逻辑。",
+    "quote": "Host Header 老洞出新变种，FastAPI 速修",
+    "source": "Hacker News",
+    "url": "https://badhost.org/",
+    "published": "2026-05-28"
+  },
+  {
+    "title": "NVIDIA Vera CPU Benchmarks: Olympus Cores Delivering The Best Performance Ever Seen On ARM",
+    "content": "NVIDIA Vera 数据中心 CPU 早期基准测试出炉，自研 Olympus ARM 核心性能强劲，与 Intel/AMD x86_64 CPU 竞争力相当。专为 agentic AI 工作负载设计，预计年底量产，对 x86 垄断地位构成实质性挑战。",
+    "quote": "老黄连 CPU 都要卷，Intel AMD 坐不住了",
+    "source": "Phoronix",
+    "url": "https://www.phoronix.com/review/nvidia-vera-benchmarks",
+    "published": "2026-05-28"
+  },
+  {
+    "title": "Cloudflare Flagship is now generally available",
+    "content": "Cloudflare 发布 Flagship 平台，将 Workers、AI、安全、网络等全栈能力整合为统一开发体验。开发者可在单一平台构建部署全栈应用，内建 D1 数据库、R2 存储、AI 推理等能力，对标 Vercel/Netlify 但拥有全球边缘网络优势。",
+    "quote": "Cloudflare 想当互联网 iOS，开发者生态野心大",
+    "source": "Hacker News",
+    "url": "https://developers.cloudflare.com/flagship/",
+    "published": "2026-05-28"
+  },
+  {
+    "title": "PostHog will train AI models with your data (opt-in by default)",
+    "content": "开源分析平台 PostHog 宣布将默认启用用户数据训练 AI 模型，引发社区争议。PostHog 称数据仅用于改进产品功能，但开发者担忧隐私泄露。提醒自托管项目用户检查默认配置，避免数据被用于非预期目的。",
+    "quote": "说好的开源信任呢，默认收集这条红线不能碰",
+    "source": "Hacker News",
+    "url": "https://posthog.com/blog/training-ai-models",
+    "published": "2026-05-28"
+  },
+  {
+    "title": "The VibeSec Reckoning",
+    "content": "Martin Fowler 官网发文揭露 AI 生成代码的安全隐患。ThoughtWorks 发现 44% 的应用漏洞攻击增长、25% 的 AI 代码含安全漏洞，每五起企业安全事件即一起由 AI 代码导致。呼吁在 vibe coding 热潮中建立安全护栏。",
+    "quote": "Vibe coding 一时爽，安全审计火葬场",
+    "source": "Martin Fowler",
+    "url": "https://martinfowler.com/articles/vibesec-reckoning.html",
+    "published": "2026-05-28"
+  },
+  {
+    "title": "Claude Code as a Daily Driver: Claude.md, Skills, Subagents, Plugins, and MCPs",
+    "content": "开发者分享将 Claude Code 作为日常开发工具的完整指南，涵盖 Claude.md 配置、Skills 管理、Subagents 使用、插件扩展和 MCP 协议。HN 236 分 186 条评论，反映 AI 编程助手从尝鲜进入深度实用，社区对最佳实践需求迫切。",
+    "quote": "236 分证明大家真的在靠 Claude 写生产代码了",
+    "source": "Hacker News",
+    "url": "https://arps18.github.io/posts/claude-code-mastery/",
+    "published": "2026-05-28"
+  },
+  {
+    "title": "Last.fm is now independent",
+    "content": "经典音乐发现平台 Last.fm 宣布独立运营，结束被收购后的集团管理时代。拥有二十年历史的音乐数据平台独立，对依赖 Last.fm API 的音乐应用开发者和数据分析生态意义深远，社区关心 API 政策是否变更。",
+    "quote": "二十年前的 Web 2.0 遗老终于重获自由身",
+    "source": "Hacker News",
+    "url": "https://support.last.fm/t/last-fm-is-now-independent/118591",
+    "published": "2026-05-28"
+  },
+  {
+    "title": "Redis 8.8 Released With New Array Data Structure, More Performance Optimizations",
+    "content": "开源内存数据库 Redis 8.8 正式发布，引入新的数组数据结构 Array，在性能优化方面持续改进。新版本提升了大数据集下的查询效率和内存利用率，对缓存、消息队列和实时分析场景的开发者是必升级版本。",
+    "quote": "Redis 更新比 Git 提交还勤，Array 有点意思",
+    "source": "Phoronix",
+    "url": "https://www.phoronix.com/news/Redis-8.8-Released",
+    "published": "2026-05-28"
+  },
+  {
+    "title": "GitHub Incident with Pull Requests, Issues, Git Operations and API Requests",
+    "content": "GitHub 发生大规模服务故障，影响 Pull Requests、Issues、Git 操作及 API 请求，持续数小时大量开发者工作流受阻。这是今年 GitHub 较严重的服务事故，再次引发对单点故障和开发工作流冗余备份的讨论。",
+    "quote": "GitHub 一挂全球程序员集体摸鱼，单点故障经典教材",
+    "source": "Hacker News",
+    "url": "https://www.githubstatus.com/incidents/xy1tt3hs572m",
+    "published": "2026-05-28"
+  },
+  {
+    "title": "Understand-Anything: Turn any code into interactive knowledge graphs",
+    "content": "登顶 GitHub Trending 榜首，当日 4,466+ stars。可解析代码库生成交互式知识图谱，支持搜索和问答。兼容 Claude Code、Codex、Cursor 等主流 AI 编程工具，对复杂项目理解和重构极具帮助。",
+    "quote": "4k+ stars 一天，开发者对代码可视化是真的饥渴",
+    "source": "GitHub Trending",
+    "url": "https://github.com/Lum1104/Understand-Anything",
+    "published": "2026-05-28"
+  },
+  {
+    "title": "Canonical Releases Workshop As New Way Of Launching Development Environments",
+    "content": "Ubuntu 开发商 Canonical 发布 Workshop —— 基于 Snap 的开发环境启动工具。可一键创建隔离的开发沙箱，简化搭建和切换项目环境流程。对使用 Ubuntu 作为主力开发系统的团队，可能替代传统 Docker 开发工作流。",
+    "quote": "Canonical 又造轮子，这次能比 Docker 好用吗",
+    "source": "Phoronix",
+    "url": "https://www.phoronix.com/news/Canonical-Ubuntu-Workshop",
+    "published": "2026-05-28"
+  },
+  {
+    "title": "ReactOS Now Running On ARM64 In Experimental Form",
+    "content": "开源 Windows 兼容操作系统 ReactOS 实现 ARM64 架构实验性支持。旧版 Windows 驱动和应用有望在 ARM 硬件上原生运行。虽处早期阶段，但对 ARM 生态的 Windows 兼容性研究和嵌入式开发有里程碑意义。",
+    "quote": "ReactOS 上 ARM 了，Win 兼容开源路又进一步",
+    "source": "Phoronix",
+    "url": "https://www.phoronix.com/news/ReactOS-On-ARM64-Experiment",
+    "published": "2026-05-28"
+  },
+  {
+    "title": "Linux Developers Looking At Retiring The x32 ABI",
+    "content": "Linux 内核社区正考虑移除 x32 ABI。x32 允许在 x86_64 上使用 32 位指针以节省内存，但多年无人使用，维护成本大于收益。移除后将影响少数依赖此 ABI 的专用场景，但内核主线会更干净。",
+    "quote": "又一个理论上很美但没人用的技术被淘汰了",
+    "source": "Phoronix",
+    "url": "https://www.phoronix.com/news/Linux-x32-ABI-2026",
+    "published": "2026-05-28"
+  }
+]
