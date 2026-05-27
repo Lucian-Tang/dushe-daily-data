@@ -149,9 +149,9 @@ def parse_design(text):
     return items
 
 def parse_startup(text):
-    """Parse startup MD with format: ### Title | **来源：** | **链接：** | > *毒舌点评：*"""
+    """Parse startup MD with format: ## N. Title or ### Title | **来源：** | **链接：** | > *毒舌点评：*"""
     items = []
-    for part in re.split(r'\n###\s+', text)[1:]:
+    for part in re.split(r'\n#{2,3}\s+\d*\.?\s*', text)[1:]:
         lines = part.strip().split('\n')
         title = lines[0].strip() if lines else ''
         if not title: continue
