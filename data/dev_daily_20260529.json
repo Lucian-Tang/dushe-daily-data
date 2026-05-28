@@ -1,0 +1,128 @@
+[
+  {
+    "title": "agentserver: 把多台设备组成个人算力网",
+    "content": "开源项目 agentserver 解决了一个实际痛点：当你拥有笔记本、台式机、云主机、HPC等多台设备都想跑 AI 任务时，缺乏统一的注册、调度和凭证管理机制。该项目提供了一个轻量级的设备注册与任务调度框架，支持跨设备编排，托管实例已部署在中国内地和海外。对于个人开发者而言，这比用 Slurm 或 Ray 轻得多，适合把闲置算力利用起来跑 Codex 或 Claude Code 等任务，是个人算力网概念的有益实践。",
+    "quote": "agentserver：组一个丐版算力网。",
+    "url": "https://www.v2ex.com/t/1215157#reply0",
+    "source": "V2EX Share",
+    "published": "2026-05-29",
+    "uid": "b843af913e27e3678d6f89401e5ded40"
+  },
+  {
+    "title": "Codeg V0.14.0：多智能体协作来了",
+    "content": "Codeg 发布了 v0.14.0 版本，核心亮点是多智能体协作架构：可以在一个会话里让 Claude Code 干活，同时让 Codex 或 Gemini 来 Review。这种主编码加副审阅的双模型协作模式，利用了 Claude Code 编码能力强、Codex 大局观好的互补特性。开发者还可自定义多智能体角色，扩展至任意 N 个子智能体协作，支持 Claude Code、Codex、Gemini、OpenCode 等主流编码 Agent。这种协作架构正成为 AI 编码工具的新范式。",
+    "quote": "多 Agent 协作，Bug 享受三条 AI 关怀。",
+    "url": "https://www.v2ex.com/t/1215153#reply3",
+    "source": "V2EX Share",
+    "published": "2026-05-29",
+    "uid": "2cc004fa648e828431da973adab84352"
+  },
+  {
+    "title": "Pilates 2.0：纯TS flex布局引擎，9个基准都比WASM Yoga快",
+    "content": "Pilates 是一个纯 TypeScript 的 flex 布局引擎，零运行时依赖。2.0 版本在 9 个基准测试中均跑赢了 Facebook 的 WASM Yoga（C++ 编译为 WASM 的 flex 引擎），包括随机嵌套、递归嵌套、动态增减等场景。这是纯 JS/TS 方案首次在 flex 布局性能上全面超越原生 WASM 实现，对终端 UI 框架（如 Ink）和浏览器外布局场景有重要参考价值。Pilates 还通过了 33 个 oracle fixture 一致性验证，在正确性和性能上双丰收。",
+    "quote": "纯 TS 干翻 WASM，C++ 哭晕在厕所。",
+    "url": "https://www.v2ex.com/t/1214928#reply0",
+    "source": "V2EX Share",
+    "published": "2026-05-29",
+    "uid": "d99c36c51f321351d459c554cd06d99c"
+  },
+  {
+    "title": "Anthropic 发布 Claude Plugins 官方生态",
+    "content": "Anthropic 在 GitHub 上发布了 claude-plugins-official 仓库，标志着 Claude 正式进入插件生态时代。同时发布的还有 knowledge-work-plugins，专注于知识工作场景的插件集合。这意味着 Claude 不再只是一个对话模型，而是向可扩展的开发平台演进。开发者可以通过插件系统扩展 Claude 的文件操作、API 调用、浏览器控制等能力，类似 ChatGPT Plugins 的生态思路，但更聚焦于编码和技术工作场景。这是 AI 编程助手从聊天工具走向开发平台的重要一步。",
+    "quote": "Claude 终于学会装插件了，下一个是不是该学会写周报？",
+    "url": "https://github.com/anthropics/claude-plugins-official",
+    "source": "GitHub Trending Daily",
+    "published": "2026-05-29",
+    "uid": "3f7c9933240a4c006fc033427d22556c"
+  },
+  {
+    "title": "ai-engineering-from-scratch：AI 工程入门路线图走红 GitHub",
+    "content": "rohitg00/ai-engineering-from-scratch 登顶 GitHub 日趋势榜，该项目提供从零开始的 AI 工程学习路线图，覆盖机器学习基础、深度学习、LLM 原理、RAG 实践、Agent 架构、MCP 协议等现代 AI 工程的全部核心知识体系。与传统 AI 教程不同，这份路线图强调工程落地而非理论推导，面向希望转型 AI 工程方向的开发者。在 AI 就业市场持续火热的背景下，这类从工程角度学 AI 的资源切中了大量开发者的转型刚需。",
+    "quote": "AI 工程路线图来收割 Star 了。",
+    "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+    "source": "GitHub Trending Daily",
+    "published": "2026-05-29",
+    "uid": "ce99db4db9b562a695a580c053a41820"
+  },
+  {
+    "title": "Andrej Karpathy AI 教学技能包化：karpathy-skills",
+    "content": "multica-ai 项目将 Andrej Karpathy 的 AI 教学体系打包成可复用的 Skills 集合，把这位 AI 大佬的课程和知识体系转化为 AI Agent 可以直接调用的能力模块。该项目展示了 Skill Pack 工程化的一个方向：将顶级专家的知识体系结构化、模块化，让 AI Agent 能够按需加载特定领域的专业技能。这种专家知识技能化的思路，正在推动 Agent 从通用助手向领域专家进化，对教育 AI 和企业知识管理有重要参考价值。",
+    "quote": "Karpathy 技能包，AI 终于能学点正经的了。",
+    "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "source": "GitHub Trending Daily",
+    "published": "2026-05-29",
+    "uid": "678ed1d4e13a31ab4ef6478a267fc2b3"
+  },
+  {
+    "title": "codegraph：把代码库变成可查询的知识图谱",
+    "content": "colbymchenry/codegraph 是一个将代码库解析为知识图谱并支持语义查询的开源工具。它通过静态分析提取代码中的函数调用、类继承、模块依赖等关系，构建可交互的图结构，让开发者可以用自然语言或结构化查询来探索代码架构。对大型项目和遗留代码库而言，这种可视化的依赖分析能力比 grep 或 IDE 自带搜索效率高得多，特别适合新成员接手老项目时快速了解架构，或者重构前评估影响范围。",
+    "quote": "重构前跑 codegraph，提前知道烧哪炷香。",
+    "url": "https://github.com/colbymchenry/codegraph",
+    "source": "GitHub Trending Daily",
+    "published": "2026-05-29",
+    "uid": "d96cd1a976b0dfc585970f1c2014d41c"
+  },
+  {
+    "title": "Google Antigravity 2.0 发布：独立开发者游戏规则变了",
+    "content": "Google I/O 2026 开发者大会上，Antigravity 2.0 的发布被认为是一个转折点：AI 辅助编程不再是简单的代码补全或对话式编程，而是向全自动化的软件构建管道演进。独立开发者可以一个人完成过去需要整个团队才能做的全栈开发——从产品设计、代码实现到部署运维，AI Agent 贯穿全程。这对于资源有限的个人开发者和小型团队而言，是一次显著的生产力杠杆升级，但也引发了关于代码质量和长期技术债务的讨论。",
+    "quote": "Antigravity 2.0：一个人干十个人的活。",
+    "url": "https://dev.to/sandman_sh/beyond-autocomplete-why-google-antigravity-20-changes-the-rules-for-indie-builders-1i4",
+    "source": "Dev.to",
+    "published": "2026-05-29",
+    "uid": "fa72374382425a3f0f39417a6e092ca5"
+  },
+  {
+    "title": "重新思考 AI 编码 Agent 记忆：检查点优于对话记录",
+    "content": "一篇关于 AI 编码 Agent 架构的深度文章提出新观点：AI Agent 的记忆应存储在代码仓库中，而非聊天窗口里。更大的上下文窗口和向量数据库在解决错误的问题。文章论证了代码仓库即记忆库的方案——通过 Git 检查点而非对话转录来管理 Agent 的长期记忆。这意味着 Agent 的每一次操作都会形成可追溯的 Git 记录，比大模型脆弱的上下文窗口更持久、更可审计。这一观点对 Claude Code 等编码 Agent 的架构设计有重要启示。",
+    "quote": "Agent 记忆放聊天窗口？不如放 Git。",
+    "url": "https://dev.to/lweiss01/checkpoints-not-transcripts-rethinking-ai-coding-agent-memory-21pj",
+    "source": "Dev.to",
+    "published": "2026-05-29",
+    "uid": "4fd56e6ba5ba2a3d45c5b6f1a709b021"
+  },
+  {
+    "title": "自托管文档 AI：在自己的基础设施上跑文档智能",
+    "content": "一篇面向技术决策者的深度指南详细介绍了自托管文档 AI 的方案选型。云文档 AI 服务虽然方便，但对很多组织来说，数据安全合规和隐私要求决定了不能把文档发给外部 API。文章对比了多种本地化方案：从 Tesseract 加 LLM 的轻量组合，到 DocTR 加 LayoutLM 的深度文档理解管线，再到完全自托管的端到端 OCR 加 NLP 系统。对于需要处理合同、发票、医疗记录等敏感文档的企业，这份指南提供了从成本到性能的完整评估框架。",
+    "quote": "把公司财务数据发给云端 OCR？法务部已经在提刀的路上了。",
+    "url": "https://dev.to/dokubrain/self-hosted-document-ai-how-to-run-document-intelligence-on-your-own-infrastructure-2026-1kfo",
+    "source": "Dev.to",
+    "published": "2026-05-29",
+    "uid": "0499b152ba6e83b493a9e2e231e0c78e"
+  },
+  {
+    "title": "一个外行半年搞定机械臂：从0到1的踩坑实录",
+    "content": "一位厦门程序员分享了自己半年内从零到一搞定行李搬运机械臂软件系统的全过程。他不是科班出身，但通过出差 6 次 48 天的实地调试，把整套软件系统跑通了。文章详细记录了机械臂控制系统的架构设计、运动学库选型（从简单几何法到 Pinocchio 库的演进）、传感器融合的坑（IMU 漂移、关节回差补偿），以及从 MoveIt 到自定义规划器的替代方案。这是一篇难得的普通人搞硬件的真实记录，展示了 AI 时代软件工程师跨界硬件的可能。",
+    "quote": "科班生还在算雅可比矩阵，外行已经把机械臂搬回家了。",
+    "url": "https://www.cnblogs.com/zhenjing/p/20140544/robot",
+    "source": "博客园",
+    "published": "2026-05-29",
+    "uid": "78cf219cec3efbf57ac20f491d620083"
+  },
+  {
+    "title": "被流量逼出来的架构：从一台服务器到云原生的17次蜕变",
+    "content": "一篇关于架构演进的强文，讲述了一个系统从单台服务器到云原生的 17 次升级。核心观点：每一层架构都不是设计出来的，是被流量逼出来的。从加第二台服务器开始，读写分离、缓存引入、分库分表、消息队列、微服务、容器化、K8s——每一次痛苦的架构升级背后都对应着具体的流量压力。文章详细拆解了每次蜕变的触发条件、技术选型逻辑和踩的坑，对正在经历系统从小到大的开发者来说，是一份可对照的架构演进生存指南。",
+    "quote": "别以为自己架构设计得多牛，用户流量才是真正的架构师。",
+    "url": "https://www.cnblogs.com/w5942066/p/20134970",
+    "source": "博客园",
+    "published": "2026-05-29",
+    "uid": "5d49b4bf360f243d15583e4491f27cb2"
+  },
+  {
+    "title": "Hermes Edu Skills 从170到188：中文教育Agent技能包工程化",
+    "content": "Hermes Edu Skills 完成了一次重要的工程化升级，Skill 数量从 170 增长到 188 个，但重点不是数量增加，而是能力层的重构：从内容清单推进到完整的 Skill Pack——支持安装、路由、诊断、迁移，更适合真实产品集成。这标志着中文教育 Agent 的技能体系从碎片化走向体系化。文章展示了如何将中文语法、阅读理解、作文批改等教育场景拆解为可复用的 Agent Skill，每个 Skill 都包含触发条件、执行逻辑和输出格式。对构建 Agent 技能生态的开发者有直接参考价值。",
+    "quote": "Skills 从 170 到 188，量变才到质变的边。",
+    "url": "https://www.cnblogs.com/zhongweiv/p/20140962/Hermes-Edu-Skills-0-18",
+    "source": "博客园",
+    "published": "2026-05-29",
+    "uid": "9015e4e09cae3d99bcb5723074247165"
+  },
+  {
+    "title": "程序员视角的AI核心概念：LLM、Agent、MCP、RAG全讲透",
+    "content": "一篇面向程序员的 AI 概念科普文章，用工程化的视角而不是学术语言讲清了 LLM 工作原理、Agent 架构设计、MCP 协议设计动机、Skill 的模块化思路、RAG 的检索增强机制。作者以你敲了一行字然后魔法发生了开篇，逐步拆解 Claude Code 这类编程 Agent 背后每一层的工作原理。文章用代码片段和流程图代替晦涩术语，让后端开发者能够快速理解并动手搭建自己的 AI Agent，适合作为团队 AI 转型的技术科普材料。",
+    "quote": "老板天天挂嘴上的词，这回讲清楚了。",
+    "url": "https://www.cnblogs.com/w5942066/p/20126166",
+    "source": "博客园",
+    "published": "2026-05-29",
+    "uid": "c812703e4bec84e48cb879df6aede1bf"
+  }
+]

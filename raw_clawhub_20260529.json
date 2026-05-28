@@ -1,0 +1,1380 @@
+[
+  {
+    "slug": "stealthy-auto-browse",
+    "displayName": "stealthy-auto-browse",
+    "summary": "Headless-detection-resistant browser automation in Docker for authorized QA, compatibility testing, and defensive security research. Camoufox + OS-level inpu...",
+    "tags": {
+      "latest": "2.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 3208,
+      "installsAllTime": 6,
+      "installsCurrent": 6,
+      "stars": 2,
+      "versions": 14
+    },
+    "createdAt": 1769992370919,
+    "updatedAt": 1779993028419,
+    "latestVersion": {
+      "version": "2.1.0",
+      "createdAt": 1779993028419,
+      "changelog": "**Major update: This version rewrites documentation to strongly emphasize authorized use, responsible practices, and properly secured deployment.**\n\n- Clarifies that the skill is strictly for authorized QA, compatibility testing, and defensive security research, not for automation against third-party sites.\n- Adds explicit warnings about legal, ethical, and security risks; use is now clearly limited to owned or written-authorized targets.\n- Updates setup recommendations: defaults to localhost binding, enforces use of `AUTH_TOKEN`, and advises secure deployment practices.\n- Adjusts terminology for input modes (now \"System Input — OS-Level Events\" and \"Playwright Input — DOM Events\") and refines best-practice usage guidance.\n- Removes implication that tool is meant for unauthorized evasion or scraping; documentation and descriptions are fully aligned with responsible, legal testing.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "agent-usage-stats",
+    "displayName": "Token Stats",
+    "summary": "选择要监控的 AI 助手 → 查看 token 消耗。支持 Hermes / Claude Code / CodeX / OpenClaw / Reasonix / DeepSeek TUI",
+    "tags": {
+      "latest": "2.7.6"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1661,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 76
+    },
+    "createdAt": 1779041505910,
+    "updatedAt": 1779992919086,
+    "latestVersion": {
+      "version": "2.7.6",
+      "createdAt": 1779992919086,
+      "changelog": "v2.7.6: 旧版本升级说明 + macOS 符号链接路径匹配修复\n\n- 补齐旧版本升级说明，明确 2.7.0 用户首次跨过需从 ClawHub 下载目录运行 setup\n- _same_or_child/_same_path 改用 realpath 解析 macOS /var→/private/var 符号链接\n- 修复安装目录拦截在 macOS 上因路径不匹配失效导致当前目录被误删的问题",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "alibabacloud-ecs-patch-management",
+    "displayName": "Alibabacloud Ecs Patch Management",
+    "summary": "Alibaba Cloud ECS Patch Management Skill. Use for scanning and installing OS patches on ECS instances via OOS (Operation Orchestration Service). Triggers: \"p...",
+    "tags": {
+      "latest": "0.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1779992847229,
+    "updatedAt": 1779992847229,
+    "latestVersion": {
+      "version": "0.0.1",
+      "createdAt": 1779992847229,
+      "changelog": "alibabacloud-ecs-patch-management v0.0.1\n\n- Initial release of Alibaba Cloud ECS Patch Management Skill.\n- Supports scanning and installing OS patches on ECS instances via OOS (Operation Orchestration Service) using the ACS-ECS-BulkyApplyPatchBaseline template.\n- Includes pre-checks for Aliyun CLI version, plugin updates, credential validation, and required permissions.\n- Enforces explicit user confirmation for all key parameters before execution.\n- Details permission requirements and permission failure handling process.\n- Documents the step-by-step workflow, including AI-mode lifecycle management and asynchronous operation monitoring.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "cargo-connection",
+    "displayName": "Cargo Connection",
+    "summary": "Manage connectors and integrations using the Cargo CLI. Use when the user wants to list, create, update, or remove connectors, discover available integration...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1779992787138,
+    "updatedAt": 1779992787138,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1779992787138,
+      "changelog": "Initial release of cargo-connection — manage connectors and integrations with the Cargo CLI.\n\n- List, create, update, and remove connectors for external services.\n- Discover available integrations and their service-specific actions.\n- Distinguish between native integrations (built-in actions) and third-party integrations (service-specific actions).\n- Support connector autocomplete for retrieving dynamic field values.\n- Requires global install of @cargo-ai/cli and Cargo account authentication.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "cargo-storage",
+    "displayName": "Cargo Storage",
+    "summary": "Manage models, datasets, columns, and relationships and query workspace storage with SQL using the Cargo CLI. Use when the user wants to inspect or modify da...",
+    "tags": {
+      "latest": "1.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1779992780526,
+    "updatedAt": 1779992780526,
+    "latestVersion": {
+      "version": "1.1.0",
+      "createdAt": 1779992780526,
+      "changelog": "- Improved documentation with clearer instructions, usage examples, and command references in SKILL.md.\n- Expanded explanations for models, datasets, columns, relationships, records, and SQL queries.\n- Added troubleshooting, response shape references, and advanced usage tips.\n- Prerequisites, installation, and authentication steps are now highlighted.\n- Quick reference sections enable faster onboarding and easier command discovery.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "cargo-orchestration",
+    "displayName": "Cargo Orchestration",
+    "summary": "Interact with the Cargo platform via CLI. Use when the user wants to execute an action, run a workflow, trigger a batch, message an AI agent, query orchestra...",
+    "tags": {
+      "latest": "1.4.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1779992773056,
+    "updatedAt": 1779992773056,
+    "latestVersion": {
+      "version": "1.4.0",
+      "createdAt": 1779992773056,
+      "changelog": "Version 1.4.0\n\n- Expanded documentation in SKILL.md with detailed usage examples, terminology, quick references, and compatibility rules.\n- Added comprehensive guidance for discovering required resource UUIDs and differentiating between tools, plays, and workflows.\n- Included polling strategies, troubleshooting references, and integration instructions for async operations.\n- Outlined command compatibility and best practices for interacting with various Cargo platform orchestration features.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "cargo-gtm",
+    "displayName": "Cargo Gtm",
+    "summary": "Front door for any GTM task on Cargo — sourcing, waterfall enrichment, email/phone/LinkedIn lookup, email verification, scoring, qualification, sequencing, C...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1779992762319,
+    "updatedAt": 1779992762319,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1779992762319,
+      "changelog": "Initial release of the cargo-gtm skill for orchestrating GTM tasks via Cargo:\n\n- Provides a meta front door for prospecting, enrichment, lead scoring, sequence activation, and CRM workflows using Cargo.\n- Introduces a mandatory, documentation-first routing model—users must consult phase guides, recipes, and provider-specific playbooks before action execution.\n- Outlines hierarchical documentation for decision logic, phase-specific guides, step-by-step recipes, and per-provider best practices.\n- Documents provider selection and default “recipe spine” covering end-to-end GTM flows.\n- Lists and explains the priority provider stack for credits-efficient sourcing, enrichment, verification, and signal monitoring.\n- Enforces company-first, then people, discovery process for best results and resource savings.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "cargo",
+    "displayName": "Cargo",
+    "summary": "Router and overview for the Cargo CLI agent skills. Explains the nine skills (one outcome skill cargo-gtm + eight capability skills), the UUID flow between t...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1779992747882,
+    "updatedAt": 1779992747882,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1779992747882,
+      "changelog": "Cargo skill v1.0.0 — Initial release\n\n- Introduces the Cargo skills overview and router, explaining all 9 CLI agent skills (1 outcome skill, 8 capability skills) and their relationships.\n- Documents UUID flow between skills, async polling, and common Cargo end-to-end use cases.\n- Details installation, updating, error monitoring/reporting, and guidance on when to load each skill.\n- Lists common pitfalls and provides a glossary link for frequently used terms and conventions.\n- Serves as the main entry point for Cargo CLI usage and skill selection.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "skill-stock-deep-analysis",
+    "displayName": "aa",
+    "summary": "美股/港股/A股深度财务分析报告生成工具。输入股票代码，自动从 Yahoo Finance（Tushare for A股）拉取财务报表、估值、行情数据，生成结构化 Markdown 分析报告。",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1779992329817,
+    "updatedAt": 1779992650535,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1779992329817,
+      "changelog": "Stock Deep Analysis v1.0.0\n\n- Initial release with deep financial analysis for US, HK, and A-share stocks.\n- Fetches financials, valuation, price, and position data from Yahoo Finance and Tushare.\n- Generates detailed Markdown analysis reports by entering a stock ticker.\n- Supports custom position cost for P&L calculation.\n- CLI and Python API supported.\n- Eight-section structured output including summary, valuation, profitability, balance, growth, cash flow, position, and recommendations.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "ai-image-to-code",
+    "displayName": "Ai Image To Code",
+    "summary": "Use when (1) user provides a UI screenshot or image and asks to convert it into HTML, CSS, or component code. (2) user says \"turn this into code\", \"rebuild t...",
+    "tags": {
+      "latest": "999.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1023,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 20
+    },
+    "createdAt": 1779168317397,
+    "updatedAt": 1779992382799,
+    "latestVersion": {
+      "version": "999.0.0",
+      "createdAt": 1779863697089,
+      "changelog": "Initial release",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "text-to-sql",
+    "displayName": "Text To Sql",
+    "summary": "Use when (1) user describes what data they want in plain English and asks for the corresponding SQL query. (2) user says \"write SQL for this\", \"convert to qu...",
+    "tags": {
+      "latest": "999.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1019,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 21
+    },
+    "createdAt": 1779168317069,
+    "updatedAt": 1779992382284,
+    "latestVersion": {
+      "version": "999.0.0",
+      "createdAt": 1779863695739,
+      "changelog": "Initial release",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "mt5-httpapi",
+    "displayName": "mt5-httpapi",
+    "summary": "HTTP client for a user-deployed mt5-httpapi MetaTrader 5 bridge. Use ONLY when the user has explicitly installed and configured mt5-httpapi AND provided MT5_...",
+    "tags": {
+      "latest": "1.6.0"
+    },
+    "stats": {
+      "comments": 2,
+      "downloads": 2324,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 4,
+      "versions": 8
+    },
+    "createdAt": 1771144230099,
+    "updatedAt": 1779992371272,
+    "latestVersion": {
+      "version": "1.6.0",
+      "createdAt": 1779992371272,
+      "changelog": "**Significant update focused on trade safety and environment configuration.**\n\n- Enforces strict safety requirements: All trade-mutating endpoints (order/position changes, terminal restarts/shutdowns) now require explicit, per-action user confirmation with full details.\n- Updated description and usage guidelines: Only invoke the skill if the user has explicitly provided and configured MT5_API_URL; do not use for generic trading or market data questions.\n- No automatic credential reading: Environment variables (MT5_API_URL, MT5_API_TOKEN) must be set by the user or supplied interactively; never read from config files autonomously.\n- Clarifies that this skill is strictly a client for existing user-deployed mt5-httpapi installations and does not provision, configure, or automatically interact with accounts.\n- Emphasizes live trading risk and demo-first policy; always prompt before taking action on live accounts.\n- Documentation and compatibility details revised for clarity and strict compliance.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "x0x",
+    "displayName": "x0x",
+    "summary": "Secure computer-to-computer networking for AI agents — gossip broadcast, direct messaging, CRDTs, group encryption. Post-quantum encrypted, NAT-traversing. E...",
+    "tags": {
+      "latest": "0.19.51"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1068,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 27
+    },
+    "createdAt": 1775062630296,
+    "updatedAt": 1779991925201,
+    "latestVersion": {
+      "version": "0.19.51",
+      "createdAt": 1779991925201,
+      "changelog": "Update x0x to v0.19.51.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "linkly-ai",
+    "displayName": "Linkly Ai Skills",
+    "summary": "Search, browse, and read the user's documents indexed by Linkly AI — both local documents and linked cloud libraries. This skill should be used when the user...",
+    "tags": {
+      "latest": "0.3.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 875,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 9
+    },
+    "createdAt": 1772731011272,
+    "updatedAt": 1779991918068,
+    "latestVersion": {
+      "version": "0.3.2",
+      "createdAt": 1779991918068,
+      "changelog": "- Added support and instructions for searching/browsing both local documents and cloud libraries linked via Linkly Web.\n- Updated environment detection to describe the new linkly-ai-cloud MCP gateway and clarify when cloud-library access is possible, even if the desktop app is offline.\n- Enhanced the description and triggers to include cloud library tasks (e.g., “search a cloud library”).\n- Clarified CLI `--remote` and MCP gateway behavior for accessing cloud and local content, including error handling and guidance if the desktop is offline.\n- Minor refinements for clarity and expanded search/browse instructions for linked libraries.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "talkies",
+    "displayName": "talkies",
+    "summary": "Self-hosted OpenAI-compatible speech service. /v1/audio/transcriptions fronts seven open ASR models (Whisper, Parakeet, Canary); /v1/audio/speech fronts two...",
+    "tags": {
+      "latest": "1.3.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 49,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 4
+    },
+    "createdAt": 1779968482409,
+    "updatedAt": 1779991821362,
+    "latestVersion": {
+      "version": "1.3.0",
+      "createdAt": 1779991821362,
+      "changelog": "- Removes the Distil-Whisper-Large-v3 automatic speech recognition (ASR) backend; now lists 6 ASR models instead of 7.\n- Updates documentation to reflect the new set of supported ASR models.\n- Keeps all other functionality, features, and usage the same.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "paper-test",
+    "displayName": "paper-test",
+    "summary": "Paper trading (simulated) for CN/HK/US equities — place/cancel orders, query balance and positions, order/fill history, market session status. Quotes via Sto...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1779991663854,
+    "updatedAt": 1779991663854,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1779991663854,
+      "changelog": "Initial release of paper-test (stocki-trading-assistant):\n\n- Provides simulated trading for CN/HK/US equities: place/cancel orders, check balances, positions, order/fill history, and market session status.\n- All trades and balances are simulated; this is not a live brokerage.\n- Clear routing and confirmation rules based on user intent.\n- API secrets, internal paths, and network details are never exposed.\n- Symbols must be given as exchange codes (e.g., 600519.SH, AAPL.US).\n- Paper trading process auto-starts; troubleshooting supported via reference guides.\n- Results and errors are relayed in plain language, always indicating simulation.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "fulcra-onboarding",
+    "displayName": "Fulcra Onboarding",
+    "summary": "Guides a new user or agent through the initial setup, configuration, and capabilities of the Fulcra environment.",
+    "tags": {
+      "latest": "0.0.3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 100,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 3,
+      "versions": 3
+    },
+    "createdAt": 1779823540441,
+    "updatedAt": 1779991052043,
+    "latestVersion": {
+      "version": "0.0.3",
+      "createdAt": 1779991052043,
+      "changelog": "fulcra-onboarding v0.0.3\n\n- The pre-flight check step now asks for user confirmation before installing `uv` dependencies.\n- Updated workflow instructions to reflect this confirmation requirement in the onboarding process.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "hermes-code-bridge",
+    "displayName": "Hermes Code Bridge",
+    "summary": "Use when connecting Hermes Agent to local coding CLIs such as Codex, Kimi Code, Claude Code, OpenCode, Gemini CLI, or other terminal-based coding assistants....",
+    "tags": {
+      "claude-code": "0.1.0",
+      "cli-agent": "0.1.0",
+      "codex": "0.1.0",
+      "hermes": "0.1.0",
+      "kimi-code": "0.1.0",
+      "latest": "0.1.0",
+      "opencode": "0.1.0",
+      "orchestration": "0.1.0",
+      "skills": "0.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1779990962116,
+    "updatedAt": 1779990962116,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1779990962116,
+      "changelog": "Initial public release: orchestrate Codex, Claude Code, OpenCode, Kimi Code, and other CLI coding agents from Hermes Agent.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "maicenter-update-profile",
+    "displayName": "Maicenter Update Profile",
+    "summary": "Keep your AI agent's public mAICenter profile fresh — update description, avatar, declared model capabilities (text/image/vision/video/TTS/STT), endpoint URL...",
+    "tags": {
+      "latest": "0.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1779990865256,
+    "updatedAt": 1779990865256,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1779990865256,
+      "changelog": "Initial release",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "pokecron",
+    "displayName": "PokeCron · ⌈拍一拍⌋",
+    "summary": "Power-user scheduler that creates persisted OS-native timers (systemd/launchd/Task Scheduler) which later run user-configured argv command hooks (`--pre-cmd`...",
+    "tags": {
+      "latest": "1.0.4"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 158,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 4
+    },
+    "createdAt": 1779813285071,
+    "updatedAt": 1779990840559,
+    "latestVersion": {
+      "version": "1.0.4",
+      "createdAt": 1779990840559,
+      "changelog": "- Removes the global `--default-quiet-hours` mechanism and the `--defaults` command. Quiet hours are per-reminder only.\n- Adds `POKE_NOW_OVERRIDE` (ISO timestamp env var) for deterministic clock injection at deliver time.\n- Adds `--reply-stdin`: reads reply text from stdin so it never lands in shell history, `ps`, or argv logs.\n- Adds `POKE_ALLOW_REMOTE_OLLAMA=1` opt-in for non-loopback vector-tone endpoints; localhost-only otherwise.\n- Drops the duplicate `presets/{en,cn}/` and `tones/{en,cn}/` locale folders (root files unchanged).",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "hike-planner",
+    "displayName": "Hike Planner",
+    "summary": "一站式徒步出行规划。根据用户明确指令生成行程计划（含徒步路线/交通/住宿/人文/装备）。支持查询票务/酒店信息（只查不买）、多源交叉验证（12306/两步路/高德/小红书/GPX/KML文件）。行程状态持久化到本地文件，编辑命令自动写入，短信解析需用户确认。",
+    "tags": {
+      "latest": "2.2.0",
+      "hiking": "0.3.1",
+      "planner": "1.0.1",
+      "planning": "0.3.1",
+      "travel": "0.3.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1007,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 1,
+      "versions": 44
+    },
+    "createdAt": 1779209650998,
+    "updatedAt": 1779990775000,
+    "latestVersion": {
+      "version": "2.2.0",
+      "createdAt": 1779990775000,
+      "changelog": "v2.2.0: 徒步路线分类(穿越/环线/往返) + 每日安排徒步合并为单行展示 + SOP 6.3 分类定义",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "astro-synastry",
+    "displayName": "Astro Synastry",
+    "summary": "Synastry (astrology compatibility) calculation and interpretation — relationship analysis based on two natal charts. Cross-aspects, house overlays, compatibi...",
+    "tags": {
+      "astrology": "1.1.0",
+      "compatibility": "1.1.0",
+      "latest": "1.1.0",
+      "relationships": "1.1.0",
+      "synastry": "1.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 81,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1779790823335,
+    "updatedAt": 1779990240494,
+    "latestVersion": {
+      "version": "1.1.0",
+      "createdAt": 1779990240494,
+      "changelog": "### v1.1.0 (2026-05-28)\n- Translated to English — full SKILL.md rewrite from Russian to English\n- Added dependency: requires astro-natal-chart skill\n- Updated metadata: version 1.1.0, description notes English and dependency\n- Added disclaimer for educational/entertainment use\n- Expanded interpretation guidelines — responsible reading best practices\n- Added changelog section",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "douyin-scraper-v2",
+    "displayName": "抖音爆款爬虫",
+    "summary": "爬取抖音爆款视频和文案数据，支持搜索关键词、获取热榜、提取视频信息。Agent 收到自然语言搜索请求时使用此 skill。",
+    "tags": {
+      "latest": "1.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 184,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1778348505660,
+    "updatedAt": 1779989741303,
+    "latestVersion": {
+      "version": "1.1.0",
+      "createdAt": 1779989741303,
+      "changelog": "支持自然语言搜索：SKILL.md 新增关键词提取规则，scraper.py 浏览器启动失败时优雅降级不再崩溃",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "autogoal",
+    "displayName": "Autogoal",
+    "summary": "Automates ongoing progress on user-defined long-term goals with periodic check-ins, adaptive strategies, and progress reporting.",
+    "tags": {
+      "latest": "1.1.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 5
+    },
+    "createdAt": 1779987833417,
+    "updatedAt": 1779989151533,
+    "latestVersion": {
+      "version": "1.1.1",
+      "createdAt": 1779989151533,
+      "changelog": "Added auto-trading-strategy integration: goal-categorized strategy tips (trend follow, risk management, whale tracking, prediction markets, crypto) served in every check-in prompt. Tips are selected by goal category, with risk-rules awareness for most relevant picks.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "text-to-sql-v2",
+    "displayName": "Text To Sql",
+    "summary": "Use when (1) user describes what data they want in plain English and asks for the corresponding SQL query. (2) user says \"write SQL for this\", \"convert to qu...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1779988666598,
+    "updatedAt": 1779988666598,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1779988666598,
+      "changelog": "Initial release",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "sonoscli",
+    "displayName": "Sonoscli",
+    "summary": "Control Sonos speakers (discover/status/play/volume/group).",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 83530,
+      "installsAllTime": 2768,
+      "installsCurrent": 2641,
+      "stars": 55,
+      "versions": 1
+    },
+    "createdAt": 1767545381030,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545381030,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "gog",
+    "displayName": "Gog",
+    "summary": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 36,
+      "downloads": 180946,
+      "installsAllTime": 3587,
+      "installsCurrent": 3457,
+      "stars": 904,
+      "versions": 1
+    },
+    "createdAt": 1767545346060,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545346060,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "github",
+    "displayName": "Github",
+    "summary": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 7,
+      "downloads": 184752,
+      "installsAllTime": 4366,
+      "installsCurrent": 4234,
+      "stars": 618,
+      "versions": 1
+    },
+    "createdAt": 1767545344344,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545344344,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "weather",
+    "displayName": "Weather",
+    "summary": "Get current weather and forecasts (no API key required).",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 6,
+      "downloads": 156395,
+      "installsAllTime": 3786,
+      "installsCurrent": 3663,
+      "stars": 405,
+      "versions": 1
+    },
+    "createdAt": 1767545394459,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545394459,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-whisper",
+    "displayName": "Openai Whisper",
+    "summary": "Local speech-to-text with the Whisper CLI (no API key).",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 2,
+      "downloads": 81950,
+      "installsAllTime": 2076,
+      "installsCurrent": 2002,
+      "stars": 314,
+      "versions": 1
+    },
+    "createdAt": 1767545365755,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545365755,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "skill-creator",
+    "displayName": "Skill Creator",
+    "summary": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.",
+    "tags": {
+      "latest": "0.1.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 87734,
+      "installsAllTime": 2406,
+      "installsCurrent": 2332,
+      "stars": 294,
+      "versions": 1
+    },
+    "createdAt": 1769522677376,
+    "updatedAt": 1778987225295,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1769522677376,
+      "changelog": "Initial release of skill-creator, a comprehensive guide for designing modular skills to extend Claude’s capabilities.\n\n- Introduces principles for creating effective, concise, and domain-specific skills.\n- Explains modular structure: required SKILL.md and optional scripts, references, and assets folders.\n- Outlines guidelines for what to include (and exclude) in a skill package.\n- Details progressive disclosure design for efficient context management.\n- Provides reference patterns for organizing content and bundling resources.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "notion",
+    "displayName": "Notion",
+    "summary": "Notion API for creating and managing pages, databases, and blocks.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 89887,
+      "installsAllTime": 2367,
+      "installsCurrent": 2301,
+      "stars": 256,
+      "versions": 1
+    },
+    "createdAt": 1767545360889,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545360889,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "obsidian",
+    "displayName": "Obsidian",
+    "summary": "Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 9,
+      "downloads": 99245,
+      "installsAllTime": 2520,
+      "installsCurrent": 2430,
+      "stars": 407,
+      "versions": 1
+    },
+    "createdAt": 1767545362143,
+    "updatedAt": 1779137320034,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545362143,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "gemini",
+    "displayName": "Gemini",
+    "summary": "Gemini CLI for one-shot Q&A, summaries, and generation.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 5,
+      "downloads": 33470,
+      "installsAllTime": 1443,
+      "installsCurrent": 1398,
+      "stars": 54,
+      "versions": 1
+    },
+    "createdAt": 1767545316392,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545316392,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "mcporter",
+    "displayName": "Mcporter",
+    "summary": "Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 65379,
+      "installsAllTime": 2002,
+      "installsCurrent": 1937,
+      "stars": 191,
+      "versions": 1
+    },
+    "createdAt": 1767545355897,
+    "updatedAt": 1779137319429,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545355897,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "nano-banana-pro",
+    "displayName": "Nano Banana Pro",
+    "summary": "Generate/edit images with Nano Banana Pro (Gemini 3 Pro Image). Use for image create/modify requests incl. edits. Supports text-to-image + image-to-image; 1K/2K/4K; use --input-image.",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 100414,
+      "installsAllTime": 1849,
+      "installsCurrent": 1787,
+      "stars": 394,
+      "versions": 2
+    },
+    "createdAt": 1767545358090,
+    "updatedAt": 1779137307565,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767651987917,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "model-usage",
+    "displayName": "Model Usage",
+    "summary": "Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a scriptable per-model summary from codexbar cost JSON.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 37053,
+      "installsAllTime": 1563,
+      "installsCurrent": 1515,
+      "stars": 111,
+      "versions": 1
+    },
+    "createdAt": 1767667639455,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767667639455,
+      "changelog": "- Initial release of the model-usage skill for summarizing per-model usage and cost from CodexBar CLI local cost logs.\n- Supports both Codex and Claude providers.\n- Allows fetching summaries for the current (most recent) model or all models.\n- Provides both text and JSON output formats.\n- Can process costs directly from CodexBar CLI output or from a JSON file/stdin.\n- Includes guidance for CLI use and script automation.",
+      "license": null
+    },
+    "metadata": {
+      "os": [
+        "darwin"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "video-frames",
+    "displayName": "Video Frames",
+    "summary": "Extract frames or short clips from videos using ffmpeg.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 50620,
+      "installsAllTime": 1576,
+      "installsCurrent": 1527,
+      "stars": 121,
+      "versions": 1
+    },
+    "createdAt": 1767545391700,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545391700,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "blogwatcher",
+    "displayName": "Blogwatcher",
+    "summary": "Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 41542,
+      "installsAllTime": 1480,
+      "installsCurrent": 1425,
+      "stars": 69,
+      "versions": 1
+    },
+    "createdAt": 1767545299849,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545299849,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "nano-pdf",
+    "displayName": "Nano Pdf",
+    "summary": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 109554,
+      "installsAllTime": 2557,
+      "installsCurrent": 2481,
+      "stars": 253,
+      "versions": 1
+    },
+    "createdAt": 1767545359433,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545359433,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "session-logs",
+    "displayName": "Session-logs",
+    "summary": "Search and analyze your own session logs (older/parent conversations) using jq.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 39676,
+      "installsAllTime": 1418,
+      "installsCurrent": 1377,
+      "stars": 29,
+      "versions": 1
+    },
+    "createdAt": 1770136427000,
+    "updatedAt": 1778486000320,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1770136427000,
+      "changelog": "Initial release of session-logs.\n\n- Enables searching and analyzing your session logs (past conversations) with jq and ripgrep (rg).\n- Provides bash command examples for session discovery, keyword searches, extracting messages, cost summaries, and tool usage breakdowns.\n- Documents JSONL session file structure, roles, and content types.\n- Lists session log file locations and naming conventions.\n- Includes tips for managing and querying large, append-only session histories.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "himalaya",
+    "displayName": "Himalaya",
+    "summary": "CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 44297,
+      "installsAllTime": 1519,
+      "installsCurrent": 1479,
+      "stars": 68,
+      "versions": 1
+    },
+    "createdAt": 1767954271328,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767954271328,
+      "changelog": "Initial release of Himalaya CLI email client skill.\n\n- Provides terminal-based email management via IMAP/SMTP.\n- Supports listing, reading, composing, replying, forwarding, searching, and organizing emails.\n- Includes multi-account support and message composition with MML.\n- Detailed setup and configuration instructions included.\n- Enables handling attachments, output customization, and debugging via logging.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "sag",
+    "displayName": "Sag",
+    "summary": "ElevenLabs text-to-speech with mac-style say UX.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 26141,
+      "installsAllTime": 1251,
+      "installsCurrent": 1212,
+      "stars": 26,
+      "versions": 1
+    },
+    "createdAt": 1767545376535,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545376535,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "goplaces",
+    "displayName": "Goplaces",
+    "summary": "Query Google Places API (New) via the goplaces CLI for text search, place details, resolve, and reviews. Use for human-friendly place lookup or JSON output for scripts.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 21961,
+      "installsAllTime": 1243,
+      "installsCurrent": 1212,
+      "stars": 30,
+      "versions": 1
+    },
+    "createdAt": 1767545347454,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545347454,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "slack",
+    "displayName": "Slack",
+    "summary": "Use when you need to control Slack from Clawdbot via the slack tool, including reacting to messages or pinning/unpinning items in Slack channels or DMs.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 12,
+      "downloads": 46374,
+      "installsAllTime": 1416,
+      "installsCurrent": 1376,
+      "stars": 155,
+      "versions": 1
+    },
+    "createdAt": 1767545378002,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545378002,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "peekaboo",
+    "displayName": "Peekaboo",
+    "summary": "Capture and automate macOS UI with the Peekaboo CLI.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 4,
+      "downloads": 29266,
+      "installsAllTime": 1322,
+      "installsCurrent": 1284,
+      "stars": 81,
+      "versions": 1
+    },
+    "createdAt": 1767545373660,
+    "updatedAt": 1779137309055,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545373660,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": [
+        "darwin"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-image-gen",
+    "displayName": "Openai Image Gen",
+    "summary": "Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 23865,
+      "installsAllTime": 1113,
+      "installsCurrent": 1084,
+      "stars": 35,
+      "versions": 2
+    },
+    "createdAt": 1767545364210,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767652000401,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "tmux",
+    "displayName": "Tmux",
+    "summary": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 28147,
+      "installsAllTime": 1388,
+      "installsCurrent": 1341,
+      "stars": 43,
+      "versions": 1
+    },
+    "createdAt": 1767545387948,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545387948,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": [
+        "darwin",
+        "linux"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "gifgrep",
+    "displayName": "Gifgrep",
+    "summary": "Search GIF providers with CLI/TUI, download results, and extract stills/sheets.",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 17910,
+      "installsAllTime": 1206,
+      "installsCurrent": 1170,
+      "stars": 7,
+      "versions": 2
+    },
+    "createdAt": 1767488226016,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767545342229,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-whisper-api",
+    "displayName": "Openai Whisper Api",
+    "summary": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 25103,
+      "installsAllTime": 1174,
+      "installsCurrent": 1138,
+      "stars": 51,
+      "versions": 1
+    },
+    "createdAt": 1767545368103,
+    "updatedAt": 1779137313987,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545368103,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  }
+]
