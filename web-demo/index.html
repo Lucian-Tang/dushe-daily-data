@@ -586,68 +586,52 @@ function formatDate(dateStr) {
 }
 
 /**
- * Try to fetch the combined JSON for a given date string (YYYYMMDD).
+ * Load data per-section from individual daily files via index.json.
+ * Each section gets today's file + up to 2 previous days from history.
  */
-async function tryFetchCombined(dateStr) {
-  const url = `${CDN_BASE}/combined_3days_${dateStr}.json`;
-  try {
-    const data = await fetchJSON(url);
-    return { data, date: dateStr };
-  } catch { return null; }
-}
-
-/**
- * Generate YYYYMMDD for a Date object
- */
-function toDateKey(d) {
-  const y = d.getFullYear();
-  const m = String(d.getMonth() + 1).padStart(2, '0');
-  const day = String(d.getDate()).padStart(2, '0');
-  return `${y}${m}${day}`;
+async function loadSectionData(section, todayFile, historyFiles) {
+  const filesToFetch = [todayFile];
+  // Add latest 2 history files (yesterday, day before)
+  if (historyFiles && historyFiles.length) {
+    for (const f of historyFiles.slice(0, 2)) {
+      if (f !== todayFile) filesToFetch.push(f);
+    }
+  }
+  let allItems = [];
+  for (const file of filesToFetch) {
+    try {
+      const items = await fetchJSON(`${CDN_BASE}/${file}`);
+      if (Array.isArray(items)) allItems = allItems.concat(items);
+    } catch { /* skip unavailable */ }
+  }
+  return allItems;
 }
 
 async function loadData() {
-  let indexData = null;
-  let combinedData = null;
+  // Step 1: Fetch index.json
+  const indexData = await fetchJSON(`${CDN_BASE}/index.json`);
 
-  // Step 1: Fetch index.json for metadata
-  try {
-    indexData = await fetchJSON(`${CDN_BASE}/index.json`);
-    if (indexData.updated) {
-      const d = new Date(indexData.updated);
-      if (!isNaN(d.getTime())) {
-        $('#updateTime').textContent =
-          `${String(d.getMonth()+1).padStart(2,'0')}/${String(d.getDate()).padStart(2,'0')} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
-      }
-    }
-  } catch { /* non-fatal */ }
-
-  // Step 2: Try fetching combined JSON — try today, then yesterday, then 2 days ago
-  const now = new Date();
-  const dates = [toDateKey(now)];
-  for (let i = 1; i <= 3; i++) {
-    const d = new Date(now);
-    d.setDate(d.getDate() - i);
-    dates.push(toDateKey(d));
-  }
-
-  for (const d of dates) {
-    const result = await tryFetchCombined(d);
-    if (result) {
-      combinedData = result.data;
-      if (!indexData) {
-        $('#updateTime').textContent =
-          `${d.slice(4,6)}/${d.slice(6,8)}`;
-      }
-      break;
+  // Update timestamp
+  if (indexData.updated) {
+    const d = new Date(indexData.updated);
+    if (!isNaN(d.getTime())) {
+      $('#updateTime').textContent =
+        `${String(d.getMonth()+1).padStart(2,'0')}/${String(d.getDate()).padStart(2,'0')} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
     }
   }
 
-  if (!combinedData) {
-    throw new Error('暂无数据，请稍后再试');
-  }
+  // Step 2: Load each section from individual daily files (today + history)
+  const history = indexData.history || {};
+  const result = {};
 
-  return combinedData;
+  const tasks = CATEGORIES.map(async (section) => {
+    const todayFile = indexData[section];
+    const historyFiles = history[section] || [];
+    result[section] = await loadSectionData(section, todayFile, historyFiles);
+  });
+
+  await Promise.all(tasks);
+  return result;
 }
 
 /* ========== Date Grouping ========== */
