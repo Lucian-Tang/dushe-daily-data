@@ -994,7 +994,7 @@ function renderTab(tabKey) {
 }
 
 /* ========== New Tab: GitHub (排行榜卡片) ========== */
-let githubView = 'daily'; // 'daily' | 'weekly'
+let githubView = 'daily'; // 'daily' | 'rising' | 'weekly'
 
 function renderGithubTab() {
   const container = $('main#mainContent');
@@ -1005,6 +1005,7 @@ function renderGithubTab() {
   html += '<div style="font-size:0.88rem;font-weight:600;color:var(--text-bright)">💻 开源 · GitHub Trending</div>';
   html += '<div class="view-toggle">';
   html += `<button class="view-toggle-btn ${githubView==='daily'?'active':''}" onclick="githubView='daily';renderGithubTab();">📅 日榜</button>`;
+  html += `<button class="view-toggle-btn ${githubView==='rising'?'active':''}" onclick="githubView='rising';renderGithubTab();">🔥 上升</button>`;
   if (weekly) {
     html += `<button class="view-toggle-btn ${githubView==='weekly'?'active':''}" onclick="githubView='weekly';renderGithubTab();">📊 周报</button>`;
   }
@@ -1012,6 +1013,14 @@ function renderGithubTab() {
 
   if (githubView === 'weekly' && weekly) {
     html += renderGithubWeekly(weekly);
+  } else if (githubView === 'rising') {
+    // 按今日新增 star 数降序排列（成长最快的项目）
+    const rising = [...items].sort((a, b) => (b.stars_today || 0) - (a.stars_today || 0));
+    const top10 = rising.slice(0, 10);
+    html += '<div style="font-size:0.82rem;color:var(--text-dim);margin-bottom:8px">🔥 按今日新增 star 排序 — 发现增长最快的开源项目</div>';
+    for (let i = 0; i < top10.length; i++) {
+      html += renderRankingCard(top10[i], i + 1);
+    }
   } else if (items.length === 0) {
     html += '<div class="empty-state"><div class="state-icon">📭</div><div>暂无 GitHub Trending 数据</div></div>';
   } else {
@@ -1093,6 +1102,7 @@ function renderClawhubTab() {
   html += '<div style="font-size:0.88rem;font-weight:600;color:var(--text-bright)">🔌 技能 · ClawHub</div>';
   html += '<div class="view-toggle">';
   html += `<button class="view-toggle-btn ${clawhubView==='daily'?'active':''}" onclick="clawhubView='daily';renderClawhubTab();">📅 日榜</button>`;
+  html += `<button class="view-toggle-btn ${clawhubView==='rising'?'active':''}" onclick="clawhubView='rising';renderClawhubTab();">🔥 上升</button>`;
   if (weekly) {
     html += `<button class="view-toggle-btn ${clawhubView==='weekly'?'active':''}" onclick="clawhubView='weekly';renderClawhubTab();">📊 周报</button>`;
   }
@@ -1100,6 +1110,18 @@ function renderClawhubTab() {
 
   if (clawhubView === 'weekly' && weekly) {
     html += renderClawhubWeekly(weekly);
+  } else if (clawhubView === 'rising') {
+    // 按下载量降序排列（含 momentum：下载量 × star 综合分）
+    const rising = [...items].sort((a, b) => {
+      const scoreA = (a.downloads || 0) * (a.stars_val || 1);
+      const scoreB = (b.downloads || 0) * (b.stars_val || 1);
+      return scoreB - scoreA;
+    });
+    const top10 = rising.slice(0, 10);
+    html += '<div style="font-size:0.82rem;color:var(--text-dim);margin-bottom:8px">🔥 按综合热度（下载 × 收藏）排序 — 发现最受欢迎的技能</div>';
+    for (let i = 0; i < top10.length; i++) {
+      html += renderClawhubCard(top10[i], i + 1);
+    }
   } else if (items.length === 0) {
     html += '<div class="empty-state"><div class="state-icon">📭</div><div>暂无 ClawHub 数据</div></div>';
   } else {
