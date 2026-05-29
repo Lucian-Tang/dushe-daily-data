@@ -1,6 +1,6 @@
 [
   {
-    "title": "Anthropic发布Claude Opus 4.8：更快更强，新增Effort Control和动态工作流",
+    "title": "Anthropic发布Claude Opus 4.8：性能提升、新增Effort控制参数",
     "content": "Anthropic正式发布Claude Opus 4.8，在编码、agent能力、推理和知识工作等多维度benchmark上均超越Opus 4.7。同时上线Effort Control功能，用户可控制Claude在任务中的投入程度；Claude Code新增动态工作流（Dynamic Workflows）用于处理超大规模问题；Opus 4.8快速模式提速2.5倍且价格降至前代三分之一。早期测试者评价其判断力显著提升，在CursorBench、Legal Agent Benchmark等评测中创下新高。",
     "quote": "Anthropic终于学会了给AI加「档位」——从节能模式到性能狂飙，总有一档适合你钱包。",
     "source": "Anthropic",
@@ -45,22 +45,13 @@
     "uid": "ai_94290856"
   },
   {
-    "title": "默克和万事达卡：Agentic AI产生真实收益，但管道先行",
+    "title": "默克和万事达卡：Agentic AI产生真实收益，但基础设施需先行",
     "content": "在AI Impact Series活动上，默克和万事达卡分享了agentic AI的实际成果。默克利用AI代理将药物发现周期缩短三分之一，合规营销材料交付提速80%。万事达卡也在生产环境中部署了AI agent。但双方强调成功的前提是先打好底层「管道」——包括注册、安全、工具连接和数据交付的基础设施，否则会积累大量AI技术债务。",
     "quote": "大公司终于悟了：AI不是魔法棒，先修好水管再说——不然再强的agent也架不住管道堵塞。",
     "source": "VentureBeat",
     "url": "https://venturebeat.com/infrastructure/merck-and-mastercard-are-seeing-real-agentic-ai-results-both-say-the-plumbing-came-first",
     "published": "2026-05-29",
     "uid": "ai_589cb2c2"
-  },
-  {
-    "title": "Amazon Prime Video押注AI动画：首批三部剧集获批",
-    "content": "Amazon MGM Studios通过GenAI创作者基金批准了三部AI动画系列：《Cupcake & Friends》（BuzzFeed Studios）、《Love, Diana Music Hunters》和《Punky Duck》。这些剧集使用Amazon的AI电影制作平台制作，标志着主流流媒体平台首次大规模采用AI生成动画内容。",
-    "quote": "AI动画来了——以后儿童节目里的角色可能会问小朋友「你想听个什么故事，我现给你编」",
-    "source": "The Verge",
-    "url": "https://www.theverge.com/ai-artificial-intelligence",
-    "published": "2026-05-29",
-    "uid": "ai_f286712b"
   },
   {
     "title": "Claude Code推出动态工作流：大型问题的自动化分解和执行",
@@ -70,15 +61,6 @@
     "url": "https://claude.com/blog/introducing-dynamic-workflows-in-claude-code",
     "published": "2026-05-29",
     "uid": "ai_6840df17"
-  },
-  {
-    "title": "DeepSWE基准测试发布：GPT-5.5称霸AI编码排行榜，揭露主流基准32%误判率",
-    "content": "初创公司Datacurve发布DeepSWE编码基准，覆盖91个开源仓库、113项任务。GPT-5.5以70%胜率夺冠。更关键的是审计发现SWE-Bench Pro评分器存在32%判分错误——8.5%误接受、24%误拒绝。行业可能一直用坏指南针导航。",
-    "quote": "32%错判率的排行榜，真是薛定谔的评分",
-    "source": "VentureBeat",
-    "url": "https://venturebeat.com/technology/deepswe-blows-up-the-ai-coding-leaderboard-crowns-gpt-5-5-and-finds-claude-opus-exploiting-a-benchmark-loophole",
-    "published": "2026-05-29",
-    "uid": "ai_ec1161d1"
   },
   {
     "title": "Kore.ai发布Artemis Agent平台：用AI设计AI，挑战微软和Salesforce",
@@ -97,50 +79,5 @@
     "url": "https://venturebeat.com/orchestration/a-0-12-parameter-add-on-gives-ai-agents-the-working-memory-rag-cant",
     "published": "2026-05-29",
     "uid": "ai_16e7b1ef"
-  },
-  {
-    "title": "直接语料交互DCI：让AI Agent用bash/grep替代Embedding搜索，成本降30%",
-    "content": "研究团队提出DCI技术，让Agent绕过向量数据库，直接用find、grep等命令行工具搜索原始语料。Claude Sonnet 4.6配DCI在BrowseComp-Plus上准确率从69%升至80%，API成本直降30%。轻量版GPT-5.4 nano配DCI匹敌o3，成本省600+美元。",
-    "quote": "折腾半天RAG，最后发现sed+awk才是答案",
-    "source": "VentureBeat",
-    "url": "https://venturebeat.com/orchestration/your-ai-agents-need-a-terminal-not-just-a-vector-database",
-    "published": "2026-05-29",
-    "uid": "ai_bbd876de"
-  },
-  {
-    "title": "AI Agent正在悄悄制造混沌工程事故：79%企业已部署却无人追踪",
-    "content": "PwC调查显示79%组织已有Agent在生产环境运行。但自治Agent的运维操作（重启服务、切换流量）本质就是混沌注入，却未经过SLO检查和爆炸半径评估。Agent引发的级联故障被记录为普通运维事件，Agent在事后复盘中完全隐身。",
-    "quote": "Agent修bug反而制造故障，事后复盘还隐身",
-    "source": "VentureBeat",
-    "url": "https://venturebeat.com/orchestration/ai-agents-are-quietly-generating-chaos-engineering-failures-enterprises-dont-track-yet",
-    "published": "2026-05-29",
-    "uid": "ai_4b586224"
-  },
-  {
-    "title": "新型AI技术债：Prompt债、检索债、评估债正悄悄吞噬企业AI项目",
-    "content": "MIT研究显示95% AI项目未能投产。作者提出四种新型技术债：Prompt债（无版本管理的提示词意大利面）、模型依赖债（外部更新致逻辑失控）、检索债（RAG中过期数据致错误答案）、评估债（缺乏标准化测试监控）。比传统代码债更隐蔽致命。",
-    "quote": "以前欠代码债，现在欠AI债，利息更狠",
-    "source": "VentureBeat",
-    "url": "https://venturebeat.com/technology/why-prompt-debt-retrieval-debt-and-evaluation-debt-are-quietly-reshaping-enterprise-ai-risk",
-    "published": "2026-05-29",
-    "uid": "ai_76c142e5"
-  },
-  {
-    "title": "Amazon推出Alexa for Shopping：全面接管购物搜索，支持自动下单和跨站比价",
-    "content": "Amazon将Alexa Plus全面整合到购物体验中，取代Rufus。新AI助手可直接在搜索栏回答问题、设置价格提醒、自动重新下单，甚至通过Buy for Me在其他网站代购。支持跨设备续接对话，无需Alexa账户即可使用。",
-    "quote": "Amazon让AI替你花钱，钱包已举白旗",
-    "source": "The Verge",
-    "url": "https://www.theverge.com/ai-artificial-intelligence/929457/amazon-announces-alexa-for-shopping-ai-assistant-rufus",
-    "published": "2026-05-29",
-    "uid": "ai_84316819"
-  },
-  {
-    "title": "TechCrunch锐评：科技CEO们正集体患上「AI精神病」",
-    "content": "TechCrunch发表评论，批评科技CEO们言必称AI、将一切增长归功于AI却拿不出证据。从扎克伯格到劈柴哥，对AI的狂热描述越来越像加密货币泡沫时期的表演。该文在HN获687点赞和346条评论，引发广泛共鸣。",
-    "quote": "CEO对AI的热情，和赌徒的下一把没区别",
-    "source": "TechCrunch",
-    "url": "https://techcrunch.com/2026/05/27/tech-ceos-are-apparently-suffering-from-ai-psychosis/",
-    "published": "2026-05-29",
-    "uid": "ai_ef4dd175"
   }
 ]
