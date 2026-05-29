@@ -1445,7 +1445,19 @@ function renderSummary() {
 
   // Per-category summary
   for (const cat of CATEGORIES) {
-    const items = allData[cat] || [];
+    let items = allData[cat] || [];
+    // Flatten ai_models dict for per-category display
+    if (cat === 'ai_models' && !Array.isArray(items) && items.models) {
+      const flat = [];
+      for (const vk of Object.keys(items.models || {})) {
+        for (const it of (items.models[vk].items || [])) {
+          flat.push(it);
+        }
+      }
+      items = flat;
+    } else if (!Array.isArray(items)) {
+      items = [];
+    }
     const count = items.length;
     const top2 = items.slice(0, 2);
 
