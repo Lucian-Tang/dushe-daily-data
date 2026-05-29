@@ -47,6 +47,17 @@ def clean_source(s):
 def clean_url(s):
     return s.lstrip('*').lstrip(' ').strip()
 
+def clean_title(t):
+    """清洗标题中的 Unicode 修饰符和残留学符"""
+    if not t:
+        return t
+    t = t.replace('\u20E3', '')   # Combining Enclosing Keycap
+    t = t.replace('\uFE0F', '')   # Variation Selector-16
+    t = t.replace('\U0001F51F', '')  # KEYCAP TEN emoji
+    # 移除 keycap 删除后残留的开头数字
+    t = re.sub(r'^\d+\s*', '', t)
+    return t.strip()
+
 # ===== PARSERS =====
 
 def parse_dev(text):
@@ -74,53 +85,101 @@ def parse_dev(text):
 
 def parse_ai(text):
     """
-    解析AI日报MD,同时支持晨报(## N. Title)和晚间(### N. Title)两种格式。
-    晨报字段: **来源：**、**链接：**、**毒舌点评：**、**详情**
-    晚间字段: **信源：**、**链接：**、**毒舌：**、无**详情**,content在标题和毒舌之间
+    解析AI日报MD，支持两种格式:
+    1. 新格式（emoji blockquote）:
+       ## N. Title
+       > 📅 YYYY-MM-DD | 📰 Source Name
+       > 💬 毒舌评论
+       Content paragraph(s)...
+       [🔗 原文](url)
+    2. 旧格式（**来源：**/**链接：**/**毒舌：** 标签）
     """
     items = []
     for part in re.split(r'\n#{2,3}\s+\d+\.\s+', text)[1:]:
         lines = part.strip().split('\n')
         title = lines[0].strip() if lines else ''
         if not title: continue
-        src = url = quote = content = ''
+        src = url = quote = ''
         content_lines = []
 
-        # Regex for metadata fields (support both **Field：** and - **Field**：)
-        re_source = re.compile(r'[- ]*\*\*来源[：:]*\*{0,2}\s*(.+)')
-        re_xinyuan = re.compile(r'[- ]*\*\*信源[：:]*\*{0,2}\s*(.+)')
-        re_link = re.compile(r'[- ]*\*\*链接[：:]*\*{0,2}\s*(.+)')
-        re_douche_pd = re.compile(r'[- ]*\*\*毒舌点评[：:]*\*{0,2}\s*(.+)')
-        re_douche = re.compile(r'[- ]*\*\*毒舌[：:]*\*{0,2}\s*(.+)')
+        # Detect format: scan for emoji blockquote markers
+        is_new_format = any(
+            l.strip().startswith('> 📅') or l.strip().startswith('> 💬')
+            for l in lines[1:] if l.strip()
+        )
 
-        for l in lines[1:]:
-            s = l.strip()
-            if not s or s == '---':
-                continue
+        if is_new_format:
+            # --- New format: emoji blockquotes ---
+            for l in lines[1:]:
+                s = l.strip()
+                if not s or s == '---':
+                    continue
 
-            # Source matching (morning: **来源：**, evening: **信源：**)
-            m = re_source.match(s) or re_xinyuan.match(s)
-            if m:
-                val = m.group(1).strip()
-                if not src: src = val
-                continue
+                # Source line: > 📅 YYYY-MM-DD | 📰 SourceName
+                if s.startswith('> 📅'):
+                    parts_src = s.split('|')
+                    if len(parts_src) >= 2:
+                        src_part = parts_src[1].strip()
+                        src_part = re.sub(r'📰\s*', '', src_part).strip()
+                        if src_part:
+                            src = clean_source(src_part)
+                    continue
 
-            # Link matching
-            m = re_link.match(s)
-            if m:
-                val = m.group(1).strip()
-                url_m = re.search(r'(https?://[^\s\)\]]+)', val)
-                if url_m and not url: url = clean_url(url_m.group(1))
-                continue
+                # Quote line: > 💬 Quote text
+                m = re.match(r'> 💬\s*(.+)', s)
+                if m:
+                    quote = m.group(1).strip()
+                    continue
 
-            # Douche matching (morning: **毒舌点评：**, evening: **毒舌：**)
-            m = re_douche_pd.match(s) or re_douche.match(s)
-            if m:
-                quote = m.group(1).strip()
-                continue
+                # URL: [🔗 原文](url) or any [text](url)
+                m = re.search(r'\[🔗\s*原文\]\((.+)\)', s)
+                if m:
+                    url = clean_url(m.group(1))
+                    continue
+                m = re.search(r'\[.*?\]\((.+)\)', s)
+                if m and not url:
+                    url = clean_url(m.group(1))
+                    continue
 
-            # Not metadata → this is content
-            content_lines.append(s)
+                # Skip other blockquote lines
+                if s.startswith('>'):
+                    continue
+
+                # Remaining lines are content
+                content_lines.append(s)
+
+        else:
+            # --- Old format: **来源：** / **毒舌：** markdown tags ---
+            re_source = re.compile(r'[- ]*\*\*来源[：:]*\*{0,2}\s*(.+)')
+            re_xinyuan = re.compile(r'[- ]*\*\*信源[：:]*\*{0,2}\s*(.+)')
+            re_link = re.compile(r'[- ]*\*\*链接[：:]*\*{0,2}\s*(.+)')
+            re_douche_pd = re.compile(r'[- ]*\*\*毒舌点评[：:]*\*{0,2}\s*(.+)')
+            re_douche = re.compile(r'[- ]*\*\*毒舌[：:]*\*{0,2}\s*(.+)')
+
+            for l in lines[1:]:
+                s = l.strip()
+                if not s or s == '---':
+                    continue
+
+                m = re_source.match(s) or re_xinyuan.match(s)
+                if m:
+                    val = m.group(1).strip()
+                    if not src: src = val
+                    continue
+
+                m = re_link.match(s)
+                if m:
+                    val = m.group(1).strip()
+                    url_m = re.search(r'(https?://[^\s\)\]]+)', val)
+                    if url_m and not url: url = clean_url(url_m.group(1))
+                    continue
+
+                m = re_douche_pd.match(s) or re_douche.match(s)
+                if m:
+                    quote = m.group(1).strip()
+                    continue
+
+                content_lines.append(s)
 
         content = ' '.join(content_lines).strip()
         items.append(dict(title=title, content=content, quote=quote, source=src, url=url))
@@ -350,7 +409,13 @@ def main():
                 if not item.get('content'): item['content'] = (r.get('content') or '')[:300]
             for f in ('title','content','quote','source','url'):
                 item.setdefault(f, '')
-            item['published'] = d_long
+            # 🔴 问题2: published 日期归一化（截断至10字符 YYYY-MM-DD）
+            published = item.get('published', d_long)
+            if len(published) > 10:
+                published = published[:10]
+            item['published'] = published
+            # 🔴 问题3: 标题 Unicode 清洗
+            item['title'] = clean_title(item.get('title', ''))
 
         # 🔌 ClawHub 技能市场 — 补充进 dev 板块
         if sec == "dev":

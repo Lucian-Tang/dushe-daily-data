@@ -154,5 +154,13 @@ if [ $PUSH_EXIT -ne 0 ]; then
     exit $PUSH_EXIT
 fi
 
-log "[done] ✅ 数据已推送至 staging 分支，待 promote 至 main 后上线"
+# ---- Step 6: 自动 promote staging → main ----
+log "[promote] 自动 promote staging → main..."
+if bash "$SCRIPT_DIR/promote-staging.sh" 2>&1 | tee -a "$LOG_DIR/sync-github.log"; then
+    log "[promote] ✅ promote 成功"
+else
+    log "[promote] ⚠️ promote 失败（不阻塞，staging 已更新）"
+fi
+
+log "[done] ✅ 数据已推送至 staging + promote 至 main"
 log "[done] sync OK | $(date)"
