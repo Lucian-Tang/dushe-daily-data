@@ -15,7 +15,7 @@ REPORTS_DIR = WORKSPACE.parent / "reports"
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger(__name__)
-SECTIONS = ["dev", "ai", "design", "startup", "industry"]
+SECTIONS = ["dev", "ai", "design", "startup", "industry", "github", "clawhub"]
 TODAY = datetime.now().strftime("%Y%m%d")
 
 # ===== ClawHub 毒舌点评模板 (15-30字) =====
@@ -359,6 +359,9 @@ def parse_clawhub(raw_path, date_str):
 
 PARSERS = dict(dev=parse_dev, ai=parse_ai, design=parse_design, startup=parse_startup, industry=parse_industry)
 
+# github 和 clawhub 是直通板块：从 source JSON 读取，不做格式转换
+PASSTHROUGH_SECTIONS = ["github", "clawhub"]
+
 # ===== MAIN =====
 
 def main():
@@ -373,6 +376,28 @@ def main():
         d_short = args.date
         d_long = f"{d_short[:4]}-{d_short[4:6]}-{d_short[6:8]}"
 
+        # ── 直通板块：直接从 source JSON 读取（不解析 MD）──
+        if sec in PASSTHROUGH_SECTIONS:
+            source_map = {
+                "github": DATA_DIR / f"github_trending_{d_short}.json",
+                "clawhub": DATA_DIR / f"clawhub_trending_{d_short}.json",
+            }
+            src_path = source_map.get(sec)
+            if src_path and src_path.exists():
+                with open(src_path) as f:
+                    parsed = json.load(f)
+                logger.info(f"[{sec}] 直通: {len(parsed)}条")
+            else:
+                logger.warning(f"[{sec}] 无源数据({src_path.name if src_path else 'N/A'}), skip")
+                continue
+            # 直通板块直接写入最终文件，跳过 parse/enrich 逻辑
+            op = OUT_DIR / f'{sec}_daily_{d_short}.json'
+            with open(op, 'w') as f:
+                json.dump(parsed, f, ensure_ascii=False, indent=2)
+            logger.info(f'[{sec}] {len(parsed)}条 → {op.name}')
+            continue
+
+        # ── 传统板块：raw + MD 解析 ──
         raw_path = DATA_DIR / f"raw_{sec}_{d_short}.json"
         raw = []
         if raw_path.exists():

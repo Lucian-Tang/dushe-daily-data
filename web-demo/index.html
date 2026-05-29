@@ -478,6 +478,209 @@ a:hover { text-decoration: underline; }
   .summary-header h2 { font-size: 1rem; }
   .summary-cat-section { padding: 12px; }
 }
+
+/* ========== Ranking Card (GitHub/ClawHub) ========== */
+.ranking-card {
+  display: flex;
+  gap: 12px;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.ranking-card:hover { box-shadow: var(--shadow-hover); background: var(--bg-card-hover); }
+.ranking-card:active { transform: scale(0.995); }
+
+.ranking-number {
+  flex-shrink: 0;
+  width: 36px; height: 36px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%;
+  font-size: 1rem; font-weight: 700;
+  color: #fff;
+}
+.ranking-number.r1 { background: linear-gradient(135deg, #FFD700, #FFA500); }
+.ranking-number.r2 { background: linear-gradient(135deg, #C0C0C0, #A0A0A0); }
+.ranking-number.r3 { background: linear-gradient(135deg, #CD7F32, #B86620); }
+.ranking-number.rn { background: var(--tab-bg); color: var(--text-dim); }
+
+.ranking-body { flex: 1; min-width: 0; }
+.ranking-title { font-size: 0.9rem; font-weight: 600; color: var(--text-bright); line-height: 1.3; }
+.ranking-desc { font-size: 0.78rem; color: var(--text); line-height: 1.4; margin-top: 4px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.ranking-meta { display: flex; align-items: center; gap: 8px; margin-top: 6px; font-size: 0.72rem; flex-wrap: wrap; }
+.ranking-meta .lang-tag {
+  background: var(--tag-bg); color: var(--tag-text);
+  padding: 1px 7px; border-radius: 4px; font-weight: 500;
+}
+.ranking-meta .star-count { color: #F0A500; font-weight: 600; }
+.ranking-meta .star-today { color: #E74C3C; font-weight: 600; }
+.ranking-meta .fork-count { color: var(--text-dim); }
+
+/* Ranking card compact (ClawHub) */
+.ranking-card-compact .ranking-body { display: flex; align-items: center; gap: 12px; }
+.ranking-quote {
+  font-size: 0.75rem; color: var(--green);
+  font-style: italic; line-height: 1.3;
+  margin-top: 2px;
+}
+
+/* View toggle */
+.view-toggle {
+  display: flex; gap: 4px;
+  background: var(--tab-bg);
+  border-radius: 8px;
+  padding: 2px;
+}
+.view-toggle-btn {
+  padding: 4px 12px;
+  font-size: 0.75rem; font-weight: 500;
+  border: none; border-radius: 6px;
+  background: transparent; color: var(--text-dim);
+  cursor: pointer; transition: all 0.15s;
+}
+.view-toggle-btn.active { background: var(--bg-card); color: var(--green); box-shadow: var(--shadow); }
+.view-toggle-btn:hover { color: var(--text); }
+
+/* ========== Vendor Card (AI Models) ========== */
+.vendor-card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+.vendor-card:hover { box-shadow: var(--shadow-hover); }
+
+.vendor-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 16px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.15s;
+}
+.vendor-header:hover { background: var(--bg-card-hover); }
+
+.vendor-label {
+  display: flex; align-items: center; gap: 8px;
+  font-weight: 600; color: var(--text-bright);
+}
+.vendor-label .vendor-icon { font-size: 1.2rem; }
+.vendor-label .vendor-name { font-size: 0.9rem; }
+.vendor-count {
+  font-size: 0.72rem; color: var(--text-dim);
+  margin-left: 6px; font-weight: 400;
+}
+
+.vendor-arrow {
+  font-size: 0.7rem;
+  transition: transform 0.3s ease;
+  opacity: 0.5;
+}
+.vendor-header.expanded .vendor-arrow { transform: rotate(90deg); }
+
+.vendor-items {
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.25s ease;
+  max-height: 2000px;
+  opacity: 1;
+  border-top: 1px solid var(--border);
+}
+.vendor-items.collapsed { max-height: 0; opacity: 0; border-top: none; }
+
+.vendor-item {
+  display: flex; align-items: flex-start; gap: 10px;
+  padding: 10px 16px;
+  border-top: 1px solid var(--border);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.vendor-item:first-child { border-top: none; }
+.vendor-item:hover { background: var(--bg-card-hover); }
+.vendor-item:active { transform: scale(0.995); }
+
+.vendor-item-num {
+  flex-shrink: 0;
+  width: 22px; text-align: center;
+  font-size: 0.72rem; color: var(--text-dim);
+  font-weight: 600; margin-top: 1px;
+}
+.vendor-item-body { flex: 1; min-width: 0; }
+.vendor-item-title { font-size: 0.85rem; font-weight: 600; color: var(--text-bright); line-height: 1.35; }
+.vendor-item-tags { display: flex; gap: 4px; margin-top: 4px; flex-wrap: wrap; }
+.vendor-item-tag {
+  font-size: 0.68rem; padding: 1px 6px;
+  border-radius: 4px;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+}
+.vendor-item-quote {
+  font-size: 0.75rem; color: var(--green);
+  font-style: italic; line-height: 1.3;
+  margin-top: 3px;
+}
+
+/* ========== Matrix View ========== */
+.matrix-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.72rem;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.matrix-table th, .matrix-table td {
+  padding: 6px 8px;
+  text-align: center;
+  border: 1px solid var(--border);
+}
+.matrix-table th {
+  background: var(--bg-card-hover);
+  font-weight: 600;
+  color: var(--text-bright);
+  font-size: 0.7rem;
+}
+.matrix-table .cell-active {
+  background: rgba(7, 193, 96, 0.08);
+  color: var(--green);
+  font-weight: 600;
+}
+.matrix-table .cell-empty { color: var(--text-dim); opacity: 0.4; }
+
+/* ========== Weekly Summary Card ========== */
+.weekly-summary {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px 18px;
+  margin-bottom: 14px;
+}
+.weekly-summary h3 {
+  font-size: 0.9rem; font-weight: 700; color: var(--text-bright);
+  margin-bottom: 8px;
+}
+.weekly-summary p {
+  font-size: 0.8rem; color: var(--text);
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+.weekly-stats {
+  display: flex; gap: 16px; flex-wrap: wrap;
+  font-size: 0.75rem; color: var(--text-dim);
+}
+.weekly-highlight {
+  padding: 8px 0;
+  border-top: 1px solid var(--border);
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+.weekly-highlight:first-of-type { border-top: none; }
+.weekly-highlight:hover { padding-left: 4px; }
 </style>
 </head>
 <body>
@@ -517,6 +720,15 @@ a:hover { text-decoration: underline; }
     <button class="tab" data-tab="design">
       设计<span class="tab-count" id="count-design">0</span>
     </button>
+    <button class="tab" data-tab="github">
+      开源<span class="tab-count" id="count-github">0</span>
+    </button>
+    <button class="tab" data-tab="clawhub">
+      技能<span class="tab-count" id="count-clawhub">0</span>
+    </button>
+    <button class="tab" data-tab="ai_models">
+      模型<span class="tab-count" id="count-ai_models">0</span>
+    </button>
   </nav>
 </header>
 
@@ -539,9 +751,9 @@ a:hover { text-decoration: underline; }
 <script>
 /* ========== Constants ========== */
 const CDN_BASE = 'https://lucian-tang.github.io/dushe-daily-data';
-const CATEGORIES = ['industry', 'dev', 'ai', 'startup', 'design'];
-const CAT_LABELS = { industry: '行业', dev: '开发', ai: 'AI', startup: '创业', design: '设计' };
-const CAT_ICONS = { industry: '🏭', dev: '💻', ai: '🤖', startup: '🚀', design: '🎨' };
+const CATEGORIES = ['industry', 'dev', 'ai', 'startup', 'design', 'github', 'clawhub', 'ai_models'];
+const CAT_LABELS = { industry: '行业', dev: '开发', ai: 'AI', startup: '创业', design: '设计', github: '开源', clawhub: '技能', ai_models: '模型' };
+const CAT_ICONS = { industry: '🏭', dev: '💻', ai: '🤖', startup: '🚀', design: '🎨', github: '💻', clawhub: '🔌', ai_models: '🤖' };
 
 let allData = {};
 let currentTab = 'summary';
@@ -624,11 +836,47 @@ async function loadData() {
   const history = indexData.history || {};
   const result = {};
 
-  const tasks = CATEGORIES.map(async (section) => {
+  // Legacy sections
+  const legacyCats = ['industry', 'dev', 'ai', 'startup', 'design'];
+  const tasks = legacyCats.map(async (section) => {
     const todayFile = indexData[section];
     const historyFiles = history[section] || [];
     result[section] = await loadSectionData(section, todayFile, historyFiles);
   });
+
+  // New sections (github, clawhub, ai_models) — only today's file
+  const newSections = ['github', 'clawhub', 'ai_models'];
+  for (const section of newSections) {
+    const todayFile = indexData[section];
+    if (todayFile) {
+      tasks.push((async () => {
+        try {
+          result[section] = await fetchJSON(`${CDN_BASE}/${todayFile}`);
+        } catch { result[section] = []; }
+      })());
+    } else {
+      result[section] = [];
+    }
+  }
+  // Also fetch weekly files for the view toggles
+  tasks.push((async () => {
+    try {
+      result._weekly_github = indexData.weekly_github
+        ? await fetchJSON(`${CDN_BASE}/${indexData.weekly_github}`) : null;
+    } catch { result._weekly_github = null; }
+  })());
+  tasks.push((async () => {
+    try {
+      result._weekly_clawhub = indexData.weekly_clawhub
+        ? await fetchJSON(`${CDN_BASE}/${indexData.weekly_clawhub}`) : null;
+    } catch { result._weekly_clawhub = null; }
+  })());
+  tasks.push((async () => {
+    try {
+      result._ai_models_weekly = indexData.ai_models_weekly
+        ? await fetchJSON(`${CDN_BASE}/${indexData.ai_models_weekly}`) : null;
+    } catch { result._ai_models_weekly = null; }
+  })());
 
   await Promise.all(tasks);
   return result;
@@ -706,6 +954,10 @@ function escHtml(str) {
 }
 
 function renderTab(tabKey) {
+  if (tabKey === 'github') { renderGithubTab(); return; }
+  if (tabKey === 'clawhub') { renderClawhubTab(); return; }
+  if (tabKey === 'ai_models') { renderAiModelsTab(); return; }
+
   const items = allData[tabKey] || [];
   const groups = groupByDate(items);
   const container = $('main#mainContent');
@@ -739,6 +991,338 @@ function renderTab(tabKey) {
     groupIndex++;
   }
   container.innerHTML = html;
+}
+
+/* ========== New Tab: GitHub (排行榜卡片) ========== */
+let githubView = 'daily'; // 'daily' | 'weekly'
+
+function renderGithubTab() {
+  const container = $('main#mainContent');
+  const items = (allData['github'] || []);
+  const weekly = allData._weekly_github;
+
+  let html = '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">';
+  html += '<div style="font-size:0.88rem;font-weight:600;color:var(--text-bright)">💻 开源 · GitHub Trending</div>';
+  html += '<div class="view-toggle">';
+  html += `<button class="view-toggle-btn ${githubView==='daily'?'active':''}" onclick="githubView='daily';renderGithubTab();">📅 日榜</button>`;
+  if (weekly) {
+    html += `<button class="view-toggle-btn ${githubView==='weekly'?'active':''}" onclick="githubView='weekly';renderGithubTab();">📊 周报</button>`;
+  }
+  html += '</div></div>';
+
+  if (githubView === 'weekly' && weekly) {
+    html += renderGithubWeekly(weekly);
+  } else if (items.length === 0) {
+    html += '<div class="empty-state"><div class="state-icon">📭</div><div>暂无 GitHub Trending 数据</div></div>';
+  } else {
+    const top10 = items.slice(0, 10);
+    for (let i = 0; i < top10.length; i++) {
+      html += renderRankingCard(top10[i], i + 1);
+    }
+  }
+  container.innerHTML = html;
+}
+
+function renderRankingCard(item, rank) {
+  const rankClass = rank === 1 ? 'r1' : rank === 2 ? 'r2' : rank === 3 ? 'r3' : 'rn';
+  const lang = item.language || '';
+  const stars = item.stars || 0;
+  const starsToday = item.stars_today || 0;
+  const forks = item.forks || 0;
+  const url = item.url || '#';
+  const escUrl = url.replace(/"/g, '&quot;');
+
+  let starsStr = '';
+  if (stars >= 1000) starsStr = `⭐${(stars / 1000).toFixed(1)}k`;
+  else if (stars > 0) starsStr = `⭐${stars}`;
+
+  let todayStr = starsToday > 0 ? `🔥+${starsToday.toLocaleString()}` : '';
+  let forkStr = forks > 0 ? `⑂ ${forks}` : '';
+
+  return `
+    <article class="ranking-card" data-url="${escUrl}" onclick="var u=this.dataset.url;if(u)window.open(u,'_blank','noopener')">
+      <div class="ranking-number ${rankClass}">${rank}</div>
+      <div class="ranking-body">
+        <div class="ranking-title">${escHtml(item.title || 'No Name')}</div>
+        ${item.content ? `<div class="ranking-desc">${escHtml(item.content)}</div>` : ''}
+        <div class="ranking-meta">
+          ${lang ? `<span class="lang-tag">${escHtml(lang)}</span>` : ''}
+          ${starsStr ? `<span class="star-count">${starsStr}</span>` : ''}
+          ${todayStr ? `<span class="star-today">${todayStr}</span>` : ''}
+          ${forkStr ? `<span class="fork-count">${forkStr}</span>` : ''}
+        </div>
+        ${item.quote ? `<div class="ranking-quote">💬 ${escHtml(item.quote)}</div>` : ''}
+      </div>
+    </article>
+  `;
+}
+
+function renderGithubWeekly(weekly) {
+  let html = '';
+  const stats = weekly.stats || {};
+  html += `<div class="weekly-summary"><h3>📊 本周 GitHub 周报</h3>`;
+  html += `<p>${escHtml(weekly.summary || '')}</p>`;
+  html += `<div class="weekly-stats">`;
+  html += `<span>📦 总项目: ${stats.total_repos || 0}</span>`;
+  html += `<span>🆕 新上榜: ${stats.new_entries || 0}</span>`;
+  html += `<span>🔥 持续热门: ${stats.persistent || 0}</span>`;
+  html += `</div></div>`;
+
+  if (weekly.top_10 && weekly.top_10.length) {
+    html += '<div style="font-size:0.82rem;font-weight:600;color:var(--text-bright);margin-bottom:8px">🏆 本周 Top 10</div>';
+    for (let i = 0; i < weekly.top_10.length; i++) {
+      const item = weekly.top_10[i];
+      html += renderRankingCard({
+        title: item.title, content: item.content, language: item.language,
+        stars: item.stars, forks: item.forks, url: item.url, quote: '',
+      }, i + 1);
+    }
+  }
+  return html;
+}
+
+/* ========== New Tab: ClawHub (排行榜卡片) ========== */
+let clawhubView = 'daily';
+
+function renderClawhubTab() {
+  const container = $('main#mainContent');
+  const items = (allData['clawhub'] || []);
+  const weekly = allData._weekly_clawhub;
+
+  let html = '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">';
+  html += '<div style="font-size:0.88rem;font-weight:600;color:var(--text-bright)">🔌 技能 · ClawHub</div>';
+  html += '<div class="view-toggle">';
+  html += `<button class="view-toggle-btn ${clawhubView==='daily'?'active':''}" onclick="clawhubView='daily';renderClawhubTab();">📅 日榜</button>`;
+  if (weekly) {
+    html += `<button class="view-toggle-btn ${clawhubView==='weekly'?'active':''}" onclick="clawhubView='weekly';renderClawhubTab();">📊 周报</button>`;
+  }
+  html += '</div></div>';
+
+  if (clawhubView === 'weekly' && weekly) {
+    html += renderClawhubWeekly(weekly);
+  } else if (items.length === 0) {
+    html += '<div class="empty-state"><div class="state-icon">📭</div><div>暂无 ClawHub 数据</div></div>';
+  } else {
+    // ClawHub items are arrays (from daily JSON), render top 10
+    const list = Array.isArray(items) ? items.slice(0, 10) : [];
+    for (let i = 0; i < list.length; i++) {
+      html += renderClawhubCard(list[i], i + 1);
+    }
+  }
+  container.innerHTML = html;
+}
+
+function renderClawhubCard(item, rank) {
+  const rankClass = rank === 1 ? 'r1' : rank === 2 ? 'r2' : rank === 3 ? 'r3' : 'rn';
+  const url = item.url || '#';
+  const escUrl = url.replace(/"/g, '&quot;');
+  const downloads = item.downloads || 0;
+  const starsVal = item.stars_val || 0;
+  const version = item.version || '';
+
+  let statParts = [];
+  if (downloads > 0) statParts.push(`📥 ${downloads.toLocaleString()} 下载`);
+  if (starsVal > 0) statParts.push(`⭐ ${starsVal}`);
+  if (version) statParts.push(`v${version}`);
+
+  return `
+    <article class="ranking-card" data-url="${escUrl}" onclick="var u=this.dataset.url;if(u)window.open(u,'_blank','noopener')">
+      <div class="ranking-number ${rankClass}">${rank}</div>
+      <div class="ranking-body">
+        <div class="ranking-title">${escHtml(item.title || 'No Name')}</div>
+        ${item.content ? `<div class="ranking-desc">${escHtml(item.content)}</div>` : ''}
+        <div class="ranking-meta">
+          ${statParts.map(s => `<span>${s}</span>`).join('')}
+        </div>
+        ${item.quote ? `<div class="ranking-quote">💬 ${escHtml(item.quote)}</div>` : ''}
+      </div>
+    </article>
+  `;
+}
+
+function renderClawhubWeekly(weekly) {
+  let html = '';
+  const stats = weekly.stats || {};
+  html += `<div class="weekly-summary"><h3>📊 本周 ClawHub 周报</h3>`;
+  html += `<p>${escHtml(weekly.summary || '')}</p>`;
+  html += `<div class="weekly-stats">`;
+  html += `<span>📦 总技能: ${stats.total_skills || 0}</span>`;
+  html += `<span>🆕 新上榜: ${stats.new_entries || 0}</span>`;
+  html += `<span>📥 总下载: ${(stats.total_downloads || 0).toLocaleString()}</span>`;
+  html += `</div></div>`;
+
+  if (weekly.top_10 && weekly.top_10.length) {
+    html += '<div style="font-size:0.82rem;font-weight:600;color:var(--text-bright);margin-bottom:8px">🏆 本周 Top 10</div>';
+    for (let i = 0; i < weekly.top_10.length; i++) {
+      html += renderClawhubCard(Object.assign({}, weekly.top_10[i], { url: weekly.top_10[i].url, content: weekly.top_10[i].content, downloads: weekly.top_10[i].downloads, stars_val: weekly.top_10[i].stars, quote: '' }), i + 1);
+    }
+  }
+  return html;
+}
+
+/* ========== New Tab: AI Models (Vendor Cards) ========== */
+let aiModelsView = 'daily'; // 'daily' | 'weekly' | 'matrix'
+
+function renderAiModelsTab() {
+  const container = $('main#mainContent');
+
+  // allData['ai_models'] could be a wrapped object {date, models:{...}, total}
+  // or a plain array (from the daily JSON)
+  let modelsData = allData['ai_models'] || {};
+  const weekly = allData._ai_models_weekly;
+  let modelGroups;
+
+  // Normalize: if it's an array, skip; if it has .models, unwrap
+  if (Array.isArray(modelsData)) {
+    modelGroups = {};
+  } else if (modelsData && modelsData.models) {
+    modelGroups = modelsData.models || {};
+  } else {
+    modelGroups = modelsData || {};
+  }
+
+  let html = '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">';
+  html += '<div style="font-size:0.88rem;font-weight:600;color:var(--text-bright)">🤖 AI模型动态</div>';
+  html += '<div class="view-toggle">';
+  html += `<button class="view-toggle-btn ${aiModelsView==='daily'?'active':''}" onclick="aiModelsView='daily';renderAiModelsTab();">📅 日报</button>`;
+  html += `<button class="view-toggle-btn ${aiModelsView==='matrix'?'active':''}" onclick="aiModelsView='matrix';renderAiModelsTab();">📋 矩阵</button>`;
+  if (weekly) {
+    html += `<button class="view-toggle-btn ${aiModelsView==='weekly'?'active':''}" onclick="aiModelsView='weekly';renderAiModelsTab();">📊 周报</button>`;
+  }
+  html += '</div></div>';
+
+  if (aiModelsView === 'weekly' && weekly) {
+    html += renderAiModelsWeekly(weekly);
+  } else if (aiModelsView === 'matrix') {
+    html += renderAiModelsMatrix(modelGroups);
+  } else {
+    // Daily card view — by vendor
+    const vendorKeys = Object.keys(modelGroups);
+    if (vendorKeys.length === 0) {
+      html += '<div class="empty-state"><div class="state-icon">📭</div><div>暂无AI模型动态数据</div></div>';
+    } else {
+      for (let i = 0; i < vendorKeys.length; i++) {
+        const vk = vendorKeys[i];
+        const vdata = modelGroups[vk];
+        html += renderVendorCard(vk, vdata, i === 0);
+      }
+    }
+  }
+  container.innerHTML = html;
+}
+
+function renderVendorCard(vendorKey, vdata, expanded) {
+  const displayName = vdata.displayName || vendorKey;
+  const icon = vdata.icon || '📰';
+  const items = vdata.items || [];
+  const cardId = `vendor-${vendorKey}`;
+
+  let html = `<div class="vendor-card" id="${cardId}">`;
+  html += `<div class="vendor-header ${expanded ? 'expanded' : ''}" onclick="toggleVendorCard('${cardId}')">`;
+  html += `<div class="vendor-label"><span class="vendor-icon">${icon}</span><span class="vendor-name">${escHtml(displayName)}</span>`;
+  html += `<span class="vendor-count">今日 +${items.length} 条</span></div>`;
+  html += `<span class="vendor-arrow">▶</span>`;
+  html += `</div>`;
+
+  html += `<div class="vendor-items ${expanded ? '' : 'collapsed'}" id="${cardId}-items">`;
+  for (let i = 0; i < items.length; i++) {
+    const item = items[i];
+    const url = item.url || '#';
+    const escUrl = url.replace(/"/g, '&quot;');
+    html += `<div class="vendor-item" data-url="${escUrl}" onclick="var u=this.dataset.url;if(u)window.open(u,'_blank','noopener')">`;
+    html += `<div class="vendor-item-num">${i + 1}.</div>`;
+    html += `<div class="vendor-item-body">`;
+    html += `<div class="vendor-item-title">${escHtml(item.title || '')}</div>`;
+    html += `<div class="vendor-item-tags">`;
+    if (item.direction) html += `<span class="vendor-item-tag">🏷️ ${escHtml(item.direction)}</span>`;
+    if (item.source) html += `<span class="vendor-item-tag">📰 ${escHtml(item.source)}</span>`;
+    html += `</div>`;
+    if (item.quote) html += `<div class="vendor-item-quote">💬 ${escHtml(item.quote)}</div>`;
+    html += `</div></div>`;
+  }
+  html += `</div></div>`;
+  return html;
+}
+
+function toggleVendorCard(cardId) {
+  const heading = document.querySelector(`#${cardId} .vendor-header`);
+  const items = document.getElementById(`${cardId}-items`);
+  if (!heading || !items) return;
+
+  const isCollapsed = items.classList.contains('collapsed');
+
+  if (isCollapsed) {
+    heading.classList.add('expanded');
+    items.classList.remove('collapsed');
+  } else {
+    heading.classList.remove('expanded');
+    items.classList.add('collapsed');
+  }
+}
+
+function renderAiModelsMatrix(modelGroups) {
+  // Build matrix: rows=vendors, cols=directions
+  const vendorKeys = Object.keys(modelGroups);
+  if (vendorKeys.length === 0) {
+    return '<div class="empty-state"><div class="state-icon">📭</div><div>暂无数据</div></div>';
+  }
+
+  const directions = ['模型发布', '工具/平台', '研究/论文', '应用/落地', '政策/合规', '行业动态'];
+
+  let html = '<div style="overflow-x:auto"><table class="matrix-table"><thead><tr><th>厂商</th>';
+  for (const dir of directions) {
+    html += `<th>${dir}</th>`;
+  }
+  html += '<th>合计</th></tr></thead><tbody>';
+
+  for (const vk of vendorKeys) {
+    const vdata = modelGroups[vk];
+    const items = vdata.items || [];
+    const displayName = vdata.displayName || vk;
+    const icon = vdata.icon || '📰';
+
+    html += `<tr><td style="text-align:left;font-weight:600;white-space:nowrap">${icon} ${escHtml(displayName)}</td>`;
+
+    for (const dir of directions) {
+      const count = items.filter(it => it.direction === dir).length;
+      if (count > 0) {
+        html += `<td class="cell-active">${count}</td>`;
+      } else {
+        html += `<td class="cell-empty">-</td>`;
+      }
+    }
+    html += `<td style="font-weight:600;color:var(--green)">${items.length}</td></tr>`;
+  }
+
+  html += '</tbody></table></div>';
+  return html;
+}
+
+function renderAiModelsWeekly(weekly) {
+  let html = '';
+  const stats = weekly.stats || {};
+  html += `<div class="weekly-summary"><h3>📊 本周 AI 模型周报</h3>`;
+  html += `<p>${escHtml(weekly.summary || '')}</p>`;
+  html += `<div class="weekly-stats">`;
+  html += `<span>📦 总动态: ${stats.total_items || 0}</span>`;
+  const byVendor = stats.by_vendor || {};
+  const topVendor = Object.entries(byVendor).sort((a,b) => b[1] - a[1]).slice(0,3)
+    .map(([k,v]) => `${k}(${v})`).join(', ');
+  html += `<span>最活跃: ${topVendor || 'N/A'}</span>`;
+  html += `</div></div>`;
+
+  // Weekly highlights
+  if (weekly.highlights && weekly.highlights.length) {
+    html += '<div style="font-size:0.82rem;font-weight:600;color:var(--text-bright);margin-bottom:8px">🌟 本周亮点</div>';
+    for (const item of weekly.highlights) {
+      const url = item.url || '#';
+      html += `<div class="weekly-highlight" onclick="window.open('${url.replace(/'/g, "\\'")}','_blank','noopener')">`;
+      html += `<div style="font-weight:600">${escHtml(item.title || '')}</div>`;
+      if (item.quote) html += `<div style="font-size:0.75rem;color:var(--green);font-style:italic;margin-top:2px">💬 ${escHtml(item.quote)}</div>`;
+      html += `</div>`;
+    }
+  }
+  return html;
 }
 
 /* ========== Date Section Collapse ========== */
@@ -775,7 +1359,15 @@ function switchTab(tabKey) {
 function updateTabCounts() {
   let total = 0;
   for (const cat of CATEGORIES) {
-    const count = (allData[cat] || []).length;
+    let items = allData[cat] || [];
+    let count = 0;
+    if (cat === 'ai_models' && !Array.isArray(items) && items.models) {
+      for (const vk of Object.keys(items.models || {})) {
+        count += (items.models[vk].items || []).length;
+      }
+    } else if (Array.isArray(items)) {
+      count = items.length;
+    }
     total += count;
     const el = $(`#count-${cat}`);
     if (el) el.textContent = count;
@@ -797,10 +1389,24 @@ function getQuoteScore(item) {
 function renderSummary() {
   const container = $('main#mainContent');
 
-  // Collect all items across categories
+  // Collect all items across categories (including new ones)
   let allItems = [];
   for (const cat of CATEGORIES) {
-    const items = allData[cat] || [];
+    let items = allData[cat] || [];
+    // For ai_models, flatten vendor items
+    if (cat === 'ai_models' && !Array.isArray(items) && items.models) {
+      const flat = [];
+      for (const vk of Object.keys(items.models || {})) {
+        const vdata = items.models[vk];
+        for (const it of (vdata.items || [])) {
+          flat.push({ ...it, _cat: cat });
+        }
+      }
+      items = flat;
+    }
+    // Ensure items is an array
+    if (!Array.isArray(items)) items = [];
+
     for (const item of items) {
       allItems.push({ ...item, _cat: cat });
     }

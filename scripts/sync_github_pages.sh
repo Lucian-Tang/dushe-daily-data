@@ -29,6 +29,14 @@ else
     log "[clawhub] clawhub CLI 不可用，跳过"
 fi
 
+# ---- Step 1.6: 采集 GitHub Trending ----
+log "[github] 采集 GitHub Trending..."
+if python3 "$SCRIPT_DIR/fetch_github.py" 2>&1 | tee -a "$LOG_DIR/sync-github.log"; then
+    log "[github] ✅ GitHub Trending 采集完成"
+else
+    log "[github] ⚠️ 采集失败（不阻塞后续流程）"
+fi
+
 # ---- Step 2: 复制数据到 Git 仓库 ----
 log "[copy] 复制数据文件..."
 cd "$WORKSPACE"
@@ -38,6 +46,8 @@ cp "$WORKSPACE/data/raw_social_"*.json . 2>/dev/null || log "[copy] raw_social �
 cp "$WORKSPACE/data/raw_design_"*.json . 2>/dev/null || log "[copy] raw_design 无新文件"
 cp "$WORKSPACE/data/raw_startup_"*.json . 2>/dev/null || log "[copy] raw_startup 无新文件"
 cp "$WORKSPACE/data/raw_clawhub_"*.json . 2>/dev/null || log "[copy] raw_clawhub 无新文件"
+cp "$WORKSPACE/data/github_trending_"*.json . 2>/dev/null || log "[copy] github_trending 无新文件"
+cp "$WORKSPACE/data/clawhub_trending_"*.json . 2>/dev/null || log "[copy] clawhub_trending 无新文件"
 
 # ---- Step 2.5: 从 MD 报告生成标准化 JSON 文件 ----
 log "[daily-json] 运行 generate_daily_json.py 生成标准化 JSON..."
@@ -54,6 +64,26 @@ if python3 "$SCRIPT_DIR/normalize_daily_data.py" --date "$DATE_STR" 2>&1 | tee -
 else
     log "[normalize] ⚠️ 规范化失败（不阻塞后续流程）"
 fi
+
+# ---- Step 2.7: AI模型分类与聚合 ----
+log "[ai-models] AI模型分类..."
+if python3 "$SCRIPT_DIR/classify_ai_models.py" --date "$DATE_STR" 2>&1 | tee -a "$LOG_DIR/sync-github.log"; then
+    log "[ai-models] AI模型日聚合..."
+    python3 "$SCRIPT_DIR/generate_ai_models_daily.py" --date "$DATE_STR" 2>&1 | tee -a "$LOG_DIR/sync-github.log"
+    log "[ai-models] AI模型周报..."
+    python3 "$SCRIPT_DIR/generate_ai_models_weekly.py" --date "$DATE_STR" 2>&1 | tee -a "$LOG_DIR/sync-github.log"
+    log "[ai-models] ✅ AI模型分类与聚合完成"
+else
+    log "[ai-models] ⚠️ AI模型分类失败（不阻塞后续流程）"
+fi
+
+# ---- Step 2.8: GitHub 周报 ----
+log "[weekly-github] 生成 GitHub 周报..."
+python3 "$SCRIPT_DIR/generate_weekly_github.py" --date "$DATE_STR" 2>&1 | tee -a "$LOG_DIR/sync-github.log" || log "[weekly-github] ⚠️ GitHub 周报生成失败"
+
+# ---- Step 2.9: ClawHub 周报 ----
+log "[weekly-clawhub] 生成 ClawHub 周报..."
+python3 "$SCRIPT_DIR/generate_weekly_clawhub.py" --date "$DATE_STR" 2>&1 | tee -a "$LOG_DIR/sync-github.log" || log "[weekly-clawhub] ⚠️ ClawHub 周报生成失败"
 
 # ---- Step 3: 使用 gen-index.py 生成 index.json（统一入口）----
 log "[index] 使用 gen-index.py 生成 index.json..."
@@ -74,6 +104,9 @@ section_map = {
     'startup': ('raw_startup', 'startup_daily'),
     'design': ('raw_design', 'design_daily'),
     'hf_daily': (None, 'hf_daily'),
+    'github': (None, 'github_daily'),
+    'clawhub': (None, 'clawhub_daily'),
+    'ai_models': (None, 'ai_models_daily'),
 }
 
 latest = {}
