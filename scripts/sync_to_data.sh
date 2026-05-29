@@ -75,10 +75,12 @@ done
 # ── 2. 同步 index.json ──
 smart_copy "index.json" "data/index.json" || true
 
-# ── 3. 同步 hf_daily_*.json (如有) ──
-for f in hf_daily_*.json; do
-    [ -f "$f" ] || continue
-    smart_copy "$f" "data/$f" || true
+# ── 3. 同步 weekly_*.json / ai_models_*.json / github_*/clawhub_* (如有) ──
+for prefix in hf_daily ai_models_daily ai_models_weekly weekly_github weekly_clawhub; do
+    for f in ${prefix}_*.json; do
+        [ -f "$f" ] || continue
+        smart_copy "$f" "data/$f" || true
+    done
 done
 
 if [ "$sync_count" -gt 0 ]; then

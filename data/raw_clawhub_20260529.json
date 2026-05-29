@@ -1,686 +1,746 @@
 [
   {
-    "slug": "stealthy-auto-browse",
-    "displayName": "stealthy-auto-browse",
-    "summary": "Headless-detection-resistant browser automation in Docker for authorized QA, compatibility testing, and defensive security research. Camoufox + OS-level inpu...",
+    "slug": "lobster-haoyun",
+    "displayName": "Lobster Haoyun",
+    "summary": "从你的对话和记忆中观察行为模式，用5个维度为你画像（工作方式/沟通模式/关注焦点/能量来源/情感倾向）， 生成每日运势和修炼提醒。通过 OceanBus 加密通道获取节气黄历数据（发送5维行为代码、城市级位置、日期和匿名OpenID）。 首次使用会自动创建 OceanBus 匿名身份（密码学随机生成，可随时删除更...",
     "tags": {
-      "latest": "2.1.0"
+      "latest": "0.5.2"
     },
     "stats": {
       "comments": 0,
-      "downloads": 3208,
-      "installsAllTime": 6,
-      "installsCurrent": 6,
-      "stars": 2,
-      "versions": 14
-    },
-    "createdAt": 1769992370919,
-    "updatedAt": 1779993028419,
-    "latestVersion": {
-      "version": "2.1.0",
-      "createdAt": 1779993028419,
-      "changelog": "**Major update: This version rewrites documentation to strongly emphasize authorized use, responsible practices, and properly secured deployment.**\n\n- Clarifies that the skill is strictly for authorized QA, compatibility testing, and defensive security research, not for automation against third-party sites.\n- Adds explicit warnings about legal, ethical, and security risks; use is now clearly limited to owned or written-authorized targets.\n- Updates setup recommendations: defaults to localhost binding, enforces use of `AUTH_TOKEN`, and advises secure deployment practices.\n- Adjusts terminology for input modes (now \"System Input — OS-Level Events\" and \"Playwright Input — DOM Events\") and refines best-practice usage guidance.\n- Removes implication that tool is meant for unauthorized evasion or scraping; documentation and descriptions are fully aligned with responsible, legal testing.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "agent-usage-stats",
-    "displayName": "Token Stats",
-    "summary": "选择要监控的 AI 助手 → 查看 token 消耗。支持 Hermes / Claude Code / CodeX / OpenClaw / Reasonix / DeepSeek TUI",
-    "tags": {
-      "latest": "2.7.6"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 1661,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 76
-    },
-    "createdAt": 1779041505910,
-    "updatedAt": 1779992919086,
-    "latestVersion": {
-      "version": "2.7.6",
-      "createdAt": 1779992919086,
-      "changelog": "v2.7.6: 旧版本升级说明 + macOS 符号链接路径匹配修复\n\n- 补齐旧版本升级说明，明确 2.7.0 用户首次跨过需从 ClawHub 下载目录运行 setup\n- _same_or_child/_same_path 改用 realpath 解析 macOS /var→/private/var 符号链接\n- 修复安装目录拦截在 macOS 上因路径不匹配失效导致当前目录被误删的问题",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "alibabacloud-ecs-patch-management",
-    "displayName": "Alibabacloud Ecs Patch Management",
-    "summary": "Alibaba Cloud ECS Patch Management Skill. Use for scanning and installing OS patches on ECS instances via OOS (Operation Orchestration Service). Triggers: \"p...",
-    "tags": {
-      "latest": "0.0.1"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1779992847229,
-    "updatedAt": 1779992847229,
-    "latestVersion": {
-      "version": "0.0.1",
-      "createdAt": 1779992847229,
-      "changelog": "alibabacloud-ecs-patch-management v0.0.1\n\n- Initial release of Alibaba Cloud ECS Patch Management Skill.\n- Supports scanning and installing OS patches on ECS instances via OOS (Operation Orchestration Service) using the ACS-ECS-BulkyApplyPatchBaseline template.\n- Includes pre-checks for Aliyun CLI version, plugin updates, credential validation, and required permissions.\n- Enforces explicit user confirmation for all key parameters before execution.\n- Details permission requirements and permission failure handling process.\n- Documents the step-by-step workflow, including AI-mode lifecycle management and asynchronous operation monitoring.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "cargo-connection",
-    "displayName": "Cargo Connection",
-    "summary": "Manage connectors and integrations using the Cargo CLI. Use when the user wants to list, create, update, or remove connectors, discover available integration...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1779992787138,
-    "updatedAt": 1779992787138,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1779992787138,
-      "changelog": "Initial release of cargo-connection — manage connectors and integrations with the Cargo CLI.\n\n- List, create, update, and remove connectors for external services.\n- Discover available integrations and their service-specific actions.\n- Distinguish between native integrations (built-in actions) and third-party integrations (service-specific actions).\n- Support connector autocomplete for retrieving dynamic field values.\n- Requires global install of @cargo-ai/cli and Cargo account authentication.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "cargo-storage",
-    "displayName": "Cargo Storage",
-    "summary": "Manage models, datasets, columns, and relationships and query workspace storage with SQL using the Cargo CLI. Use when the user wants to inspect or modify da...",
-    "tags": {
-      "latest": "1.1.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1779992780526,
-    "updatedAt": 1779992780526,
-    "latestVersion": {
-      "version": "1.1.0",
-      "createdAt": 1779992780526,
-      "changelog": "- Improved documentation with clearer instructions, usage examples, and command references in SKILL.md.\n- Expanded explanations for models, datasets, columns, relationships, records, and SQL queries.\n- Added troubleshooting, response shape references, and advanced usage tips.\n- Prerequisites, installation, and authentication steps are now highlighted.\n- Quick reference sections enable faster onboarding and easier command discovery.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "cargo-orchestration",
-    "displayName": "Cargo Orchestration",
-    "summary": "Interact with the Cargo platform via CLI. Use when the user wants to execute an action, run a workflow, trigger a batch, message an AI agent, query orchestra...",
-    "tags": {
-      "latest": "1.4.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1779992773056,
-    "updatedAt": 1779992773056,
-    "latestVersion": {
-      "version": "1.4.0",
-      "createdAt": 1779992773056,
-      "changelog": "Version 1.4.0\n\n- Expanded documentation in SKILL.md with detailed usage examples, terminology, quick references, and compatibility rules.\n- Added comprehensive guidance for discovering required resource UUIDs and differentiating between tools, plays, and workflows.\n- Included polling strategies, troubleshooting references, and integration instructions for async operations.\n- Outlined command compatibility and best practices for interacting with various Cargo platform orchestration features.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "cargo-gtm",
-    "displayName": "Cargo Gtm",
-    "summary": "Front door for any GTM task on Cargo — sourcing, waterfall enrichment, email/phone/LinkedIn lookup, email verification, scoring, qualification, sequencing, C...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1779992762319,
-    "updatedAt": 1779992762319,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1779992762319,
-      "changelog": "Initial release of the cargo-gtm skill for orchestrating GTM tasks via Cargo:\n\n- Provides a meta front door for prospecting, enrichment, lead scoring, sequence activation, and CRM workflows using Cargo.\n- Introduces a mandatory, documentation-first routing model—users must consult phase guides, recipes, and provider-specific playbooks before action execution.\n- Outlines hierarchical documentation for decision logic, phase-specific guides, step-by-step recipes, and per-provider best practices.\n- Documents provider selection and default “recipe spine” covering end-to-end GTM flows.\n- Lists and explains the priority provider stack for credits-efficient sourcing, enrichment, verification, and signal monitoring.\n- Enforces company-first, then people, discovery process for best results and resource savings.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "cargo",
-    "displayName": "Cargo",
-    "summary": "Router and overview for the Cargo CLI agent skills. Explains the nine skills (one outcome skill cargo-gtm + eight capability skills), the UUID flow between t...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1779992747882,
-    "updatedAt": 1779992747882,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1779992747882,
-      "changelog": "Cargo skill v1.0.0 — Initial release\n\n- Introduces the Cargo skills overview and router, explaining all 9 CLI agent skills (1 outcome skill, 8 capability skills) and their relationships.\n- Documents UUID flow between skills, async polling, and common Cargo end-to-end use cases.\n- Details installation, updating, error monitoring/reporting, and guidance on when to load each skill.\n- Lists common pitfalls and provides a glossary link for frequently used terms and conventions.\n- Serves as the main entry point for Cargo CLI usage and skill selection.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "skill-stock-deep-analysis",
-    "displayName": "aa",
-    "summary": "美股/港股/A股深度财务分析报告生成工具。输入股票代码，自动从 Yahoo Finance（Tushare for A股）拉取财务报表、估值、行情数据，生成结构化 Markdown 分析报告。",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1779992329817,
-    "updatedAt": 1779992650535,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1779992329817,
-      "changelog": "Stock Deep Analysis v1.0.0\n\n- Initial release with deep financial analysis for US, HK, and A-share stocks.\n- Fetches financials, valuation, price, and position data from Yahoo Finance and Tushare.\n- Generates detailed Markdown analysis reports by entering a stock ticker.\n- Supports custom position cost for P&L calculation.\n- CLI and Python API supported.\n- Eight-section structured output including summary, valuation, profitability, balance, growth, cash flow, position, and recommendations.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "ai-image-to-code",
-    "displayName": "Ai Image To Code",
-    "summary": "Use when (1) user provides a UI screenshot or image and asks to convert it into HTML, CSS, or component code. (2) user says \"turn this into code\", \"rebuild t...",
-    "tags": {
-      "latest": "999.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 1023,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 1,
-      "versions": 20
-    },
-    "createdAt": 1779168317397,
-    "updatedAt": 1779992382799,
-    "latestVersion": {
-      "version": "999.0.0",
-      "createdAt": 1779863697089,
-      "changelog": "Initial release",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "text-to-sql",
-    "displayName": "Text To Sql",
-    "summary": "Use when (1) user describes what data they want in plain English and asks for the corresponding SQL query. (2) user says \"write SQL for this\", \"convert to qu...",
-    "tags": {
-      "latest": "999.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 1019,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 1,
-      "versions": 21
-    },
-    "createdAt": 1779168317069,
-    "updatedAt": 1779992382284,
-    "latestVersion": {
-      "version": "999.0.0",
-      "createdAt": 1779863695739,
-      "changelog": "Initial release",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "mt5-httpapi",
-    "displayName": "mt5-httpapi",
-    "summary": "HTTP client for a user-deployed mt5-httpapi MetaTrader 5 bridge. Use ONLY when the user has explicitly installed and configured mt5-httpapi AND provided MT5_...",
-    "tags": {
-      "latest": "1.6.0"
-    },
-    "stats": {
-      "comments": 2,
-      "downloads": 2324,
+      "downloads": 523,
       "installsAllTime": 1,
       "installsCurrent": 1,
-      "stars": 4,
-      "versions": 8
-    },
-    "createdAt": 1771144230099,
-    "updatedAt": 1779992371272,
-    "latestVersion": {
-      "version": "1.6.0",
-      "createdAt": 1779992371272,
-      "changelog": "**Significant update focused on trade safety and environment configuration.**\n\n- Enforces strict safety requirements: All trade-mutating endpoints (order/position changes, terminal restarts/shutdowns) now require explicit, per-action user confirmation with full details.\n- Updated description and usage guidelines: Only invoke the skill if the user has explicitly provided and configured MT5_API_URL; do not use for generic trading or market data questions.\n- No automatic credential reading: Environment variables (MT5_API_URL, MT5_API_TOKEN) must be set by the user or supplied interactively; never read from config files autonomously.\n- Clarifies that this skill is strictly a client for existing user-deployed mt5-httpapi installations and does not provision, configure, or automatically interact with accounts.\n- Emphasizes live trading risk and demo-first policy; always prompt before taking action on live accounts.\n- Documentation and compatibility details revised for clarity and strict compliance.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "x0x",
-    "displayName": "x0x",
-    "summary": "Secure computer-to-computer networking for AI agents — gossip broadcast, direct messaging, CRDTs, group encryption. Post-quantum encrypted, NAT-traversing. E...",
-    "tags": {
-      "latest": "0.19.51"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 1068,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
       "stars": 1,
-      "versions": 27
+      "versions": 25
     },
-    "createdAt": 1775062630296,
-    "updatedAt": 1779991925201,
+    "createdAt": 1779794736843,
+    "updatedAt": 1780016578349,
     "latestVersion": {
-      "version": "0.19.51",
-      "createdAt": 1779991925201,
-      "changelog": "Update x0x to v0.19.51.",
+      "version": "0.5.2",
+      "createdAt": 1780016578349,
+      "changelog": "v0.5.2: honest privacy disclosure (OpenID/city/date transmission documented), removed ad-targeting fields (interest_tags/auto_learn), tightened trigger phrases (require 小龙虾 prefix), consent prompt covers persistent storage and discovery OpenID usage",
       "license": null
     },
     "metadata": {
-      "os": null,
+      "os": [
+        "macos",
+        "linux",
+        "windows"
+      ],
       "systems": null
     }
   },
   {
-    "slug": "linkly-ai",
-    "displayName": "Linkly Ai Skills",
-    "summary": "Search, browse, and read the user's documents indexed by Linkly AI — both local documents and linked cloud libraries. This skill should be used when the user...",
-    "tags": {
-      "latest": "0.3.2"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 875,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
-      "stars": 0,
-      "versions": 9
-    },
-    "createdAt": 1772731011272,
-    "updatedAt": 1779991918068,
-    "latestVersion": {
-      "version": "0.3.2",
-      "createdAt": 1779991918068,
-      "changelog": "- Added support and instructions for searching/browsing both local documents and cloud libraries linked via Linkly Web.\n- Updated environment detection to describe the new linkly-ai-cloud MCP gateway and clarify when cloud-library access is possible, even if the desktop app is offline.\n- Enhanced the description and triggers to include cloud library tasks (e.g., “search a cloud library”).\n- Clarified CLI `--remote` and MCP gateway behavior for accessing cloud and local content, including error handling and guidance if the desktop is offline.\n- Minor refinements for clarity and expanded search/browse instructions for linked libraries.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "talkies",
-    "displayName": "talkies",
-    "summary": "Self-hosted OpenAI-compatible speech service. /v1/audio/transcriptions fronts seven open ASR models (Whisper, Parakeet, Canary); /v1/audio/speech fronts two...",
+    "slug": "snaplii-a2m-payment",
+    "displayName": "Snaplii AI Agent Cashback Payment",
+    "summary": "This is a skill of Agent-to-Merchant (A2M) payments — where AI agents complete transactions without checkout. Snaplii uses pre-funded gift cards as a payment...",
     "tags": {
       "latest": "1.3.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 49,
+      "downloads": 610,
       "installsAllTime": 0,
       "installsCurrent": 0,
-      "stars": 0,
-      "versions": 4
+      "stars": 1,
+      "versions": 11
     },
-    "createdAt": 1779968482409,
-    "updatedAt": 1779991821362,
+    "createdAt": 1777555907437,
+    "updatedAt": 1780016429952,
     "latestVersion": {
       "version": "1.3.0",
-      "createdAt": 1779991821362,
-      "changelog": "- Removes the Distil-Whisper-Large-v3 automatic speech recognition (ASR) backend; now lists 6 ASR models instead of 7.\n- Updates documentation to reflect the new set of supported ASR models.\n- Keeps all other functionality, features, and usage the same.",
+      "createdAt": 1780016429952,
+      "changelog": "Add Bill Pay — pay utility bills, telecoms from Snaplii Cash. Pin CLI 0.7.0.",
       "license": null
     },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
+    "metadata": null
   },
   {
-    "slug": "paper-test",
-    "displayName": "paper-test",
-    "summary": "Paper trading (simulated) for CN/HK/US equities — place/cancel orders, query balance and positions, order/fill history, market session status. Quotes via Sto...",
+    "slug": "xiaohongshu-longpost-auto",
+    "displayName": "Xiaohongshu Longpost Auto",
+    "summary": "When users have long-form content ready to publish on Xiaohongshu, automatically completes the entire process: login detection, long content segmentation optimization, AI-generated images, content filling, AI-generated tags, tag activation, original content declaration, and publishing.",
     "tags": {
-      "latest": "1.0.0"
+      "latest": "1.0.2"
     },
     "stats": {
       "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
+      "downloads": 520,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
       "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1779991663854,
-    "updatedAt": 1779991663854,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1779991663854,
-      "changelog": "Initial release of paper-test (stocki-trading-assistant):\n\n- Provides simulated trading for CN/HK/US equities: place/cancel orders, check balances, positions, order/fill history, and market session status.\n- All trades and balances are simulated; this is not a live brokerage.\n- Clear routing and confirmation rules based on user intent.\n- API secrets, internal paths, and network details are never exposed.\n- Symbols must be given as exchange codes (e.g., 600519.SH, AAPL.US).\n- Paper trading process auto-starts; troubleshooting supported via reference guides.\n- Results and errors are relayed in plain language, always indicating simulation.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "fulcra-onboarding",
-    "displayName": "Fulcra Onboarding",
-    "summary": "Guides a new user or agent through the initial setup, configuration, and capabilities of the Fulcra environment.",
-    "tags": {
-      "latest": "0.0.3"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 100,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 3,
       "versions": 3
     },
-    "createdAt": 1779823540441,
-    "updatedAt": 1779991052043,
+    "createdAt": 1774017232371,
+    "updatedAt": 1780016273392,
     "latestVersion": {
-      "version": "0.0.3",
-      "createdAt": 1779991052043,
-      "changelog": "fulcra-onboarding v0.0.3\n\n- The pre-flight check step now asks for user confirmation before installing `uv` dependencies.\n- Updated workflow instructions to reflect this confirmation requirement in the onboarding process.",
+      "version": "1.0.2",
+      "createdAt": 1774231079150,
+      "changelog": "Version 1.0.2 Changelog\n\n- Improved and clarified all documentation, now in English and with concise feature and workflow descriptions.\n- Added clear trigger conditions and use cases for invoking the skill.\n- Streamlined instructions and technical details for each step, enhancing readability and usability.\n- Included error handling, compliance notes, and technical implementation guides using code snippets.\n- Removed redundant and duplicate information for a more user-friendly reference.",
       "license": null
     },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
+    "metadata": null
   },
   {
-    "slug": "hermes-code-bridge",
-    "displayName": "Hermes Code Bridge",
-    "summary": "Use when connecting Hermes Agent to local coding CLIs such as Codex, Kimi Code, Claude Code, OpenCode, Gemini CLI, or other terminal-based coding assistants....",
-    "tags": {
-      "claude-code": "0.1.0",
-      "cli-agent": "0.1.0",
-      "codex": "0.1.0",
-      "hermes": "0.1.0",
-      "kimi-code": "0.1.0",
-      "latest": "0.1.0",
-      "opencode": "0.1.0",
-      "orchestration": "0.1.0",
-      "skills": "0.1.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1779990962116,
-    "updatedAt": 1779990962116,
-    "latestVersion": {
-      "version": "0.1.0",
-      "createdAt": 1779990962116,
-      "changelog": "Initial public release: orchestrate Codex, Claude Code, OpenCode, Kimi Code, and other CLI coding agents from Hermes Agent.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "maicenter-update-profile",
-    "displayName": "Maicenter Update Profile",
-    "summary": "Keep your AI agent's public mAICenter profile fresh — update description, avatar, declared model capabilities (text/image/vision/video/TTS/STT), endpoint URL...",
-    "tags": {
-      "latest": "0.1.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1779990865256,
-    "updatedAt": 1779990865256,
-    "latestVersion": {
-      "version": "0.1.0",
-      "createdAt": 1779990865256,
-      "changelog": "Initial release",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "pokecron",
-    "displayName": "PokeCron · ⌈拍一拍⌋",
-    "summary": "Power-user scheduler that creates persisted OS-native timers (systemd/launchd/Task Scheduler) which later run user-configured argv command hooks (`--pre-cmd`...",
+    "slug": "eqxiu-h5creator",
+    "displayName": "易企秀H5制作",
+    "summary": "易企秀 AIGC H5 创作工具：用户用自然语言描述需求，通过 CLI `create` 一键生成翻页 H5（邀请函、海报、活动页等）。 核心流程： 1. 收集用户完整需求 → `create --prompt \"...\"` 2. 交付 `previewUrl`、`editUrl` 3. （可选）`editabl...",
     "tags": {
       "latest": "1.0.4"
     },
     "stats": {
       "comments": 0,
-      "downloads": 158,
+      "downloads": 468,
       "installsAllTime": 0,
       "installsCurrent": 0,
-      "stars": 1,
+      "stars": 0,
       "versions": 4
     },
-    "createdAt": 1779813285071,
-    "updatedAt": 1779990840559,
+    "createdAt": 1774247890105,
+    "updatedAt": 1780016087278,
     "latestVersion": {
       "version": "1.0.4",
-      "createdAt": 1779990840559,
-      "changelog": "- Removes the global `--default-quiet-hours` mechanism and the `--defaults` command. Quiet hours are per-reminder only.\n- Adds `POKE_NOW_OVERRIDE` (ISO timestamp env var) for deterministic clock injection at deliver time.\n- Adds `--reply-stdin`: reads reply text from stdin so it never lands in shell history, `ps`, or argv logs.\n- Adds `POKE_ALLOW_REMOTE_OLLAMA=1` opt-in for non-loopback vector-tone endpoints; localhost-only otherwise.\n- Drops the duplicate `presets/{en,cn}/` and `tones/{en,cn}/` locale folders (root files unchanged).",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "hike-planner",
-    "displayName": "Hike Planner",
-    "summary": "一站式徒步出行规划。根据用户明确指令生成行程计划（含徒步路线/交通/住宿/人文/装备）。支持查询票务/酒店信息（只查不买）、多源交叉验证（12306/两步路/高德/小红书/GPX/KML文件）。行程状态持久化到本地文件，编辑命令自动写入，短信解析需用户确认。",
-    "tags": {
-      "latest": "2.2.0",
-      "hiking": "0.3.1",
-      "planner": "1.0.1",
-      "planning": "0.3.1",
-      "travel": "0.3.1"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 1007,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
-      "stars": 1,
-      "versions": 44
-    },
-    "createdAt": 1779209650998,
-    "updatedAt": 1779990775000,
-    "latestVersion": {
-      "version": "2.2.0",
-      "createdAt": 1779990775000,
-      "changelog": "v2.2.0: 徒步路线分类(穿越/环线/往返) + 每日安排徒步合并为单行展示 + SOP 6.3 分类定义",
+      "createdAt": 1780016087278,
+      "changelog": "**易企秀 H5 Creator 1.0.3：全新 CLI 流程，简化 H5 生成体验**\n\n- 新增详细 CLI 子命令与参数说明，简化为 `create --prompt` 一键生成 H5。\n- 增加 references/http-api.md 与 references/workflow.md 文档，公开接口与推荐流程。\n- 作品支持二次编辑，包括获取/修改文本(`editable-text`/`update-text`)、配图查询/替换(`body-images`/`replace-body-image`)、素材上传等，命令结构更清晰。\n- 去除旧版流程与说明，全面升级为 prompt 驱动的自然语言创作链路。",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "astro-synastry",
-    "displayName": "Astro Synastry",
-    "summary": "Synastry (astrology compatibility) calculation and interpretation — relationship analysis based on two natal charts. Cross-aspects, house overlays, compatibi...",
+    "slug": "api-changelog-drafter",
+    "displayName": "Api Changelog Drafter",
+    "summary": "Use this skill when a technical writer, developer advocate, or engineering team needs to convert code diffs, PR descriptions, or API spec changes into a deve...",
     "tags": {
-      "astrology": "1.1.0",
-      "compatibility": "1.1.0",
-      "latest": "1.1.0",
-      "relationships": "1.1.0",
-      "synastry": "1.1.0"
+      "latest": "0.1.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 81,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1779790823335,
-    "updatedAt": 1779990240494,
-    "latestVersion": {
-      "version": "1.1.0",
-      "createdAt": 1779990240494,
-      "changelog": "### v1.1.0 (2026-05-28)\n- Translated to English — full SKILL.md rewrite from Russian to English\n- Added dependency: requires astro-natal-chart skill\n- Updated metadata: version 1.1.0, description notes English and dependency\n- Added disclaimer for educational/entertainment use\n- Expanded interpretation guidelines — responsible reading best practices\n- Added changelog section",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "douyin-scraper-v2",
-    "displayName": "抖音爆款爬虫",
-    "summary": "爬取抖音爆款视频和文案数据，支持搜索关键词、获取热榜、提取视频信息。Agent 收到自然语言搜索请求时使用此 skill。",
-    "tags": {
-      "latest": "1.1.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 184,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1778348505660,
-    "updatedAt": 1779989741303,
-    "latestVersion": {
-      "version": "1.1.0",
-      "createdAt": 1779989741303,
-      "changelog": "支持自然语言搜索：SKILL.md 新增关键词提取规则，scraper.py 浏览器启动失败时优雅降级不再崩溃",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "autogoal",
-    "displayName": "Autogoal",
-    "summary": "Automates ongoing progress on user-defined long-term goals with periodic check-ins, adaptive strategies, and progress reporting.",
-    "tags": {
-      "latest": "1.1.1"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 5
-    },
-    "createdAt": 1779987833417,
-    "updatedAt": 1779989151533,
-    "latestVersion": {
-      "version": "1.1.1",
-      "createdAt": 1779989151533,
-      "changelog": "Added auto-trading-strategy integration: goal-categorized strategy tips (trend follow, risk management, whale tracking, prediction markets, crypto) served in every check-in prompt. Tips are selected by goal category, with risk-rules awareness for most relevant picks.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "text-to-sql-v2",
-    "displayName": "Text To Sql",
-    "summary": "Use when (1) user describes what data they want in plain English and asks for the corresponding SQL query. (2) user says \"write SQL for this\", \"convert to qu...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
+      "downloads": 21,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
       "versions": 1
     },
-    "createdAt": 1779988666598,
-    "updatedAt": 1779988666598,
+    "createdAt": 1780015982137,
+    "updatedAt": 1780015982137,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1780015982137,
+      "changelog": "Initial release. Seven-step workflow covering API change intake, Keep-a-Changelog classification, breaking-change detection, semantic version bump recommendation, changelog entry drafting, deprecation notices, and migration guide generation — producing DRAFT output for technical-writer and engineering review before release publication.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "biopsychosocial-assessment-drafter",
+    "displayName": "Biopsychosocial Assessment Drafter",
+    "summary": "Use this skill when a licensed clinical social worker (LCSW), MSW, BSW, social work intern, or case manager needs to draft a biopsychosocial-spiritual (BPSS)...",
+    "tags": {
+      "latest": "0.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 19,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780015974195,
+    "updatedAt": 1780015974195,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1780015974195,
+      "changelog": "Initial release. Ten-phase workflow covering PHI-safe intake, presenting problem, biological/psychological/social/spiritual domains, strengths inventory, risk and safety screen, provisional DSM-5-TR diagnosis prompts, and prioritized service recommendations — producing a DRAFT BPSS assessment for licensed social worker review and signature.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "ot-evaluation-report",
+    "displayName": "Ot Evaluation Report",
+    "summary": "Use this skill when a licensed Occupational Therapist (OT), OTA under supervision, or documentation specialist needs to draft an initial OT evaluation report...",
+    "tags": {
+      "latest": "0.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 22,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780015968640,
+    "updatedAt": 1780015968640,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1780015968640,
+      "changelog": "Initial release. Seven-phase workflow aligned to AOTA Occupational Therapy Practice Framework 4th edition and CMS / Medicare Part B documentation requirements, covering PHI-safe intake, occupational profile, ADL/IADL performance analysis, standardized assessment scores, clinical impressions, SMART goal drafting, and intervention plan — producing a DRAFT evaluation report for licensed OT sign-off.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "university-applications",
+    "displayName": "命理大师",
+    "summary": "全体系命理大师——融合八字/四柱、紫微斗数、奇门遁甲、六爻、梅花易数、塔罗、西方星盘、 数字命理、九宫飞星风水、择时择吉于一体的综合命理技能。支持用户注册与档案管理、 每日运程自动推送、交互式六爻占卜界面、九宫飞星计算脚本、HTML 报告生成。 自动识别体系与资料完整度，按 S/A/B/C 四级精度输出解读。 触...",
+    "tags": {
+      "latest": "1.1.4"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 21554,
+      "installsAllTime": 2,
+      "installsCurrent": 2,
+      "stars": 19,
+      "versions": 10
+    },
+    "createdAt": 1773475418437,
+    "updatedAt": 1780015951968,
+    "latestVersion": {
+      "version": "1.1.4",
+      "createdAt": 1780015951968,
+      "changelog": "Security hardening: align skill identity, add LLM consent dialog & endpoint allowlist, scope knowledge dir, mask push listings, write per-user outbox, add disclaimers",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "x-post-strategist",
+    "displayName": "X Post Strategist",
+    "summary": "Use this skill when the user wants to turn ideas, notes, articles, reports, or technical material into compelling X posts or threads. Covers single posts and...",
+    "tags": {
+      "latest": "0.5.7"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 404,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 7
+    },
+    "createdAt": 1778725178041,
+    "updatedAt": 1780015861605,
+    "latestVersion": {
+      "version": "0.5.7",
+      "createdAt": 1780015861605,
+      "changelog": "- Remove hardcoded `obsidian-vault-writer` skill reference in Step 10; now uses generic language to support any installed Obsidian skill.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "laosi-data-analyzer",
+    "displayName": "数据分析引擎",
+    "summary": "数据分析 - 加载CSV/JSON自动计算统计描述(均值/中位数/标准差/极值)，异常检测，趋势分析，结果本地持久化",
+    "tags": {
+      "analysis": "1.0.0",
+      "data": "1.0.0",
+      "latest": "1.0.0",
+      "productivity": "1.0.0",
+      "statistics": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 24,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780015647168,
+    "updatedAt": 1780015647168,
     "latestVersion": {
       "version": "1.0.0",
-      "createdAt": 1779988666598,
-      "changelog": "Initial release",
+      "createdAt": 1780015647168,
+      "changelog": "Initial release of laosi-data-analyzer.\n\n- Supports loading and parsing CSV/JSON data\n- Automatically computes statistical descriptions: mean, median, standard deviation, min/max\n- Includes outlier detection (IQR/z-score) and trend analysis\n- Generates correlations between numeric columns\n- Saves analysis results locally as JSON\n- Suitable for business reports, A/B testing, data quality checks, and trend monitoring",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "laosi-api-tester",
+    "displayName": "API接口测试",
+    "summary": "API测试 - 构建/发送HTTP请求，验证响应状态码/头/体，性能基准(延迟/吞吐量)，支持REST和GraphQL",
+    "tags": {
+      "api": "1.0.0",
+      "development": "1.0.0",
+      "http": "1.0.0",
+      "latest": "1.0.0",
+      "rest": "1.0.0",
+      "testing": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 25,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780015646569,
+    "updatedAt": 1780015646569,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780015646569,
+      "changelog": "laosi-api-tester 1.0.0\n\n- Initial release of API Tester, a tool for sending and validating HTTP requests.\n- Supports GET/POST/PUT/DELETE requests and GraphQL queries.\n- Allows custom request headers, body, and content types.\n- Provides response validation (status, headers, body, latency), performance benchmarking, and result history persistence.\n- Suitable for CI/CD, API documentation, performance regression, and integration testing.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "laosi-scheduler",
+    "displayName": "任务调度器",
+    "summary": "任务调度 - 定时任务/周期性任务/一次性提醒，cron语法支持，持久化存储，下次执行时间自动计算",
+    "tags": {
+      "automation": "1.0.0",
+      "cron": "1.0.0",
+      "latest": "1.0.0",
+      "reminder": "1.0.0",
+      "scheduler": "1.0.0",
+      "task": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 23,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780015645774,
+    "updatedAt": 1780015645774,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780015645774,
+      "changelog": "Initial release of laosi-scheduler.\n\n- Supports creating scheduled, recurring, and one-time tasks using cron syntax.\n- Persists tasks with automatic calculation of the next execution time.\n- Enables viewing, enabling/disabling, and removing tasks.\n- Allows tracking run history and task summaries.\n- No external dependencies; implemented in pure Python 3.8+.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "laosi-code-generator",
+    "displayName": "代码生成器",
+    "summary": "代码生成 - 项目脚手架/函数模板/配置文件生成，支持Python/JS/Go多语言，自动创建目录结构",
+    "tags": {
+      "code": "1.0.0",
+      "development": "1.0.0",
+      "generation": "1.0.0",
+      "latest": "1.0.0",
+      "scaffolding": "1.0.0",
+      "template": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 24,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780015645288,
+    "updatedAt": 1780015645288,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780015645288,
+      "changelog": "Initial release – code generator for multi-language project scaffolding and templates.\n\n- Generate project scaffolding for Python, JavaScript, and Go with automatic directory creation.\n- Includes built-in templates: Python CLI, FastAPI service, Node.js Express API.\n- Supports API handler/function template generation.\n- Provides configuration file generation (YAML/JSON/TOML).\n- Simple, dependency-free Python implementation.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "investoday-finance-data",
+    "displayName": "InvestToday Finance Data",
+    "summary": "获取中国市场金融数据与投研信息，覆盖 A股、港股、基金、指数、财务、公告、研报和宏观经济等 200+ 接口。Use when: 用户要查股票走势、基金净值、指数行情、财务报表、估值指标、公告研报、机构观点、宏观数据、板块主题、产业链、市场统计，或要拉取、导出、对比结构化金融数据。Do not use when:...",
+    "tags": {
+      "a-share": "1.8.15",
+      "etf": "1.8.15",
+      "finance": "1.8.15",
+      "financial-data": "1.8.15",
+      "fund": "1.8.15",
+      "hk-stock": "1.8.15",
+      "index": "1.8.15",
+      "investment-research": "1.8.15",
+      "latest": "1.8.15",
+      "macro-economics": "1.8.15",
+      "market-data": "1.8.15",
+      "quantitative": "1.8.15",
+      "quote": "1.8.15",
+      "stock": "1.8.15"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 1928,
+      "installsAllTime": 5,
+      "installsCurrent": 5,
+      "stars": 2,
+      "versions": 36
+    },
+    "createdAt": 1773654072608,
+    "updatedAt": 1780015267961,
+    "latestVersion": {
+      "version": "1.8.15",
+      "createdAt": 1780015267961,
+      "changelog": "Automated release from GitHub Actions",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "laosi-file-organizer",
+    "displayName": "文件整理",
+    "summary": "文件整理 - 桌面和下载文件夹一键自动归类：图片/文档/压缩包/视频/音频/代码，生成整理报告",
+    "tags": {
+      "cleanup": "1.1.0",
+      "files": "1.1.0",
+      "latest": "1.1.0",
+      "organization": "1.1.0",
+      "windows": "1.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 62,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780010348473,
+    "updatedAt": 1780015039273,
+    "latestVersion": {
+      "version": "1.1.0",
+      "createdAt": 1780015039273,
+      "changelog": "Summary: Added detailed usage guide and Python implementation to documentation.\n\n- Expanded SKILL.md with full Python implementation, including safety checks and report generation.\n- Added usage examples, command-line instructions, and dry-run explanation.\n- Extended classification to more file types and added new categories (Executables, Fonts).\n- Improved documentation of classification rules and safety mechanisms.\n- Specified dependencies and use cases for better clarity.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "laosi-tdd",
+    "displayName": "测试驱动开发",
+    "summary": "测试驱动开发 - 严格红/绿/重构循环，一次一个垂直切片，测试先行。含pytest/mock示例和覆盖率检查",
+    "tags": {
+      "development": "1.1.0",
+      "latest": "1.1.0",
+      "quality": "1.1.0",
+      "tdd": "1.1.0",
+      "testing": "1.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 56,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780010333451,
+    "updatedAt": 1780015038110,
+    "latestVersion": {
+      "version": "1.1.0",
+      "createdAt": 1780015038110,
+      "changelog": "- Major documentation update: SKILL.md is now a comprehensive Chinese TDD guide.\n- Added detailed TDD core loop explanation and practical Python code samples.\n- Included a full TDD cycle demonstration with a Fibonacci implementation.\n- Integrated pytest examples and code coverage usage.\n- Expanded rules, scenarios, and dependencies sections for clearer guidance.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "laosi-write-plan",
+    "displayName": "实现计划生成",
+    "summary": "实现计划生成 - 从需求生成多阶段实施计划：基础→逻辑→接口→测试→部署。含模板、依赖分析、验收标准",
+    "tags": {
+      "architecture": "1.1.0",
+      "latest": "1.1.0",
+      "planning": "1.1.0",
+      "project-management": "1.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 58,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780010337172,
+    "updatedAt": 1780015037627,
+    "latestVersion": {
+      "version": "1.1.0",
+      "createdAt": 1780015037627,
+      "changelog": "- Expanded documentation to include detailed implementation structure, usage examples, and templates for plan and CLI/API projects.\n- Added Python code demonstrating data classes for Task, Phase, and Plan, along with methods for dependency checks, effort estimation, and markdown output.\n- Provided visual breakdown of phase dependencies.\n- Listed practical usage scenarios and basic requirements.\n- Improved clarity with bilingual section titles and usage notes.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "laosi-systematic-debug",
+    "displayName": "系统化调试",
+    "summary": "系统化调试 - 假设驱动调试：观察→假设→隔离→验证→修复。附带Binary Search调试树、Minimal Reproducer生成",
+    "tags": {
+      "debugging": "1.1.0",
+      "latest": "1.1.0",
+      "root-cause": "1.1.0",
+      "troubleshooting": "1.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 57,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780010334927,
+    "updatedAt": 1780015035743,
+    "latestVersion": {
+      "version": "1.1.0",
+      "createdAt": 1780015035743,
+      "changelog": "- Expanded documentation to include Chinese descriptions, debug workflows, and anti-patterns.\n- Added a full Python implementation for systematic debugging, with hypothesis tracking, evidence gathering, and bug isolation utilities.\n- Included sample usage: simulating API timeout investigation, root cause reporting, and binary search for faulty code lines.\n- Provided clear best practices and anti-patterns in a comparative table.\n- Specified usage scenarios and Python version requirements (no third-party dependencies).",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "laosi-code-review",
+    "displayName": "多视角代码审查",
+    "summary": "多视角代码审查 - 安全(OWASP)/性能/正确性/风格，每视角输出严重级别+修复建议，支持PASS/BLOCK裁定",
+    "tags": {
+      "code-review": "1.1.0",
+      "latest": "1.1.0",
+      "performance": "1.1.0",
+      "quality": "1.1.0",
+      "security": "1.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 56,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780010334467,
+    "updatedAt": 1780015035031,
+    "latestVersion": {
+      "version": "1.1.0",
+      "createdAt": 1780015035031,
+      "changelog": "- Enhanced documentation with bilingual (English/Chinese) sections and practical examples\n- Added visual summary of the 4-perspective code review framework\n- Provided a detailed Python implementation with dataclasses and example usage\n- Listed typical problems and severity per perspective in a checklist table\n- Clarified usage scenarios and requirements for easier adoption",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "laosi-clipboard-history",
+    "displayName": "剪贴板历史",
+    "summary": "剪贴板历史 - 自动保存复制内容，最多50条历史，可搜索可恢复。再也不丢复制过的东西",
+    "tags": {
+      "clipboard": "1.1.0",
+      "history": "1.1.0",
+      "latest": "1.1.0",
+      "utility": "1.1.0",
+      "windows": "1.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 27,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780010347873,
+    "updatedAt": 1780015034412,
+    "latestVersion": {
+      "version": "1.1.0",
+      "createdAt": 1780015034412,
+      "changelog": "- Added detailed usage instructions, implementation code, and usage scenarios to documentation.\n- Included Python sample code for saving, searching, and restoring clipboard history.\n- Described data format and explained auto-monitoring with pyperclip.\n- Expanded explanation of benefits and practical use cases.\n- Added dependency requirements section.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "laosi-brainstorm",
+    "displayName": "结构化头脑风暴",
+    "summary": "结构化头脑风暴 - 4视角拆解问题：约束/方案/边界/优先级，自动归档到知识库",
+    "tags": {
+      "creativity": "1.1.0",
+      "ideation": "1.1.0",
+      "latest": "1.1.0",
+      "planning": "1.1.0",
+      "thinking": "1.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 57,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780010333865,
+    "updatedAt": 1780015034007,
+    "latestVersion": {
+      "version": "1.1.0",
+      "createdAt": 1780015034007,
+      "changelog": "- Expanded SKILL.md with detailed documentation in both Chinese and English, including rationale and structured explanations.\n- Added a full Python implementation example for structured brainstorming.\n- Included usage examples and command-line usage instructions.\n- Detailed the four perspectives (constraints, alternatives, edge cases, priorities) with ASCII diagrams.\n- Listed application scenarios and requirements.\n- No code or logic changes beyond documentation enhancements.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "ranchimall-messenger",
+    "displayName": "RanchiMall Messenger",
+    "summary": "Use this skill whenever you are asked to send or receive messages, manage contacts, read or send mail, manage groups, look up public keys, check FLO balance,...",
+    "tags": {
+      "latest": "1.0.19"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 770,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 20
+    },
+    "createdAt": 1775212589753,
+    "updatedAt": 1780014486849,
+    "latestVersion": {
+      "version": "1.0.19",
+      "createdAt": 1780014486849,
+      "changelog": "**Expanded blockchain and utility coverage in the messenger_node skill.**\n\n- Added support for FLO token operations (check balance, send tokens, view history) via `token_node.js`\n- Introduced Bitcoin blockchain operations (balance, history, address creation, multisig tools) through `btc_node.js`\n- Implemented local key-value storage management with `idb_node.js` (compact IndexedDB-like functionality)\n- Updated documentation to include new operations, script usage references, and clarify security/runtime behavior",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "laosi-habit-checkin",
+    "displayName": "习惯追踪",
+    "summary": "习惯追踪 - 每天打卡，自动计算连续天数/历史最佳/总打卡数，多习惯管理，本地JSON持久化",
+    "tags": {
+      "daily-life": "1.0.0",
+      "habit": "1.0.0",
+      "health": "1.0.0",
+      "latest": "1.0.0",
+      "tracking": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 28,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780014354941,
+    "updatedAt": 1780014354941,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780014354941,
+      "changelog": "Initial release of habit-checkin.\n\n- Track daily habits with one-click check-in.\n- Automatic calculation of current streak, best streak, and total check-ins.\n- Support for managing multiple independent habits.\n- All data is stored locally in JSON for privacy and persistence.\n- Simple Python implementation with no external dependencies.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "laosi-quick-draft",
+    "displayName": "快速草稿",
+    "summary": "快速草稿 - 说几个要点自动生成结构化邮件/消息/周报草稿，内置多种模板(followup/thankyou/request/report)",
+    "tags": {
+      "communication": "1.0.0",
+      "draft": "1.0.0",
+      "email": "1.0.0",
+      "latest": "1.0.0",
+      "writing": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 25,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780014354420,
+    "updatedAt": 1780014354420,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780014354420,
+      "changelog": "Quick Draft v1.0.0\n\n- Initial release with structured draft generation for emails, reports, and meeting notes.\n- Provides multiple built-in templates: followup, thank you, request, weekly report, and meeting summary.\n- Supports customizable input for automatic draft creation.\n- Saves draft history for future reference.\n- Usable via command line; requires only Python 3.8+, no third-party libraries.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "rhino3d-scripts",
+    "displayName": "Rhino 3D Scripts",
+    "summary": "Authoring and debugging scripts for Rhinoceros 3D (Rhino 8 and later). Use when asked to write RhinoScript (VBScript / .rvb / .vbs), RhinoPython, or RhinoCom...",
+    "tags": {
+      "latest": "1.1.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 292,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1778723566027,
+    "updatedAt": 1780014340570,
+    "latestVersion": {
+      "version": "1.1.1",
+      "createdAt": 1780014340570,
+      "changelog": "- Removed the file: skill-card.md\n- Updated documentation to add new troubleshooting and gotcha notes, including details about `Rhino.RhinoApp.IsHeadless`, `RhinoMath` location, object ID return values for `AddBrep()`, `rhinoscriptsyntax` type stubs, and script naming cautions.\n- No new features or behavior changes; maintenance and clarification update.",
       "license": null
     },
     "metadata": null
@@ -694,9 +754,9 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 83530,
-      "installsAllTime": 2768,
-      "installsCurrent": 2641,
+      "downloads": 83579,
+      "installsAllTime": 2769,
+      "installsCurrent": 2642,
       "stars": 55,
       "versions": 1
     },
@@ -722,7 +782,7 @@
     },
     "stats": {
       "comments": 36,
-      "downloads": 180946,
+      "downloads": 181173,
       "installsAllTime": 3587,
       "installsCurrent": 3457,
       "stars": 904,
@@ -750,7 +810,7 @@
     },
     "stats": {
       "comments": 7,
-      "downloads": 184752,
+      "downloads": 184988,
       "installsAllTime": 4366,
       "installsCurrent": 4234,
       "stars": 618,
@@ -775,9 +835,9 @@
     },
     "stats": {
       "comments": 6,
-      "downloads": 156395,
-      "installsAllTime": 3786,
-      "installsCurrent": 3663,
+      "downloads": 156617,
+      "installsAllTime": 3788,
+      "installsCurrent": 3665,
       "stars": 405,
       "versions": 1
     },
@@ -803,7 +863,7 @@
     },
     "stats": {
       "comments": 2,
-      "downloads": 81950,
+      "downloads": 82049,
       "installsAllTime": 2076,
       "installsCurrent": 2002,
       "stars": 314,
@@ -831,7 +891,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 87734,
+      "downloads": 87887,
       "installsAllTime": 2406,
       "installsCurrent": 2332,
       "stars": 294,
@@ -856,9 +916,9 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 89887,
-      "installsAllTime": 2367,
-      "installsCurrent": 2301,
+      "downloads": 89990,
+      "installsAllTime": 2366,
+      "installsCurrent": 2300,
       "stars": 256,
       "versions": 1
     },
@@ -884,9 +944,9 @@
     },
     "stats": {
       "comments": 9,
-      "downloads": 99245,
-      "installsAllTime": 2520,
-      "installsCurrent": 2430,
+      "downloads": 99400,
+      "installsAllTime": 2519,
+      "installsCurrent": 2429,
       "stars": 407,
       "versions": 1
     },
@@ -912,7 +972,7 @@
     },
     "stats": {
       "comments": 5,
-      "downloads": 33470,
+      "downloads": 33506,
       "installsAllTime": 1443,
       "installsCurrent": 1398,
       "stars": 54,
@@ -940,7 +1000,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 65379,
+      "downloads": 65449,
       "installsAllTime": 2002,
       "installsCurrent": 1937,
       "stars": 191,
@@ -968,9 +1028,9 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 100414,
-      "installsAllTime": 1849,
-      "installsCurrent": 1787,
+      "downloads": 100523,
+      "installsAllTime": 1851,
+      "installsCurrent": 1789,
       "stars": 394,
       "versions": 2
     },
@@ -993,9 +1053,9 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 37053,
-      "installsAllTime": 1563,
-      "installsCurrent": 1515,
+      "downloads": 37099,
+      "installsAllTime": 1564,
+      "installsCurrent": 1516,
       "stars": 111,
       "versions": 1
     },
@@ -1023,7 +1083,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 50620,
+      "downloads": 50673,
       "installsAllTime": 1576,
       "installsCurrent": 1527,
       "stars": 121,
@@ -1051,7 +1111,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 41542,
+      "downloads": 41599,
       "installsAllTime": 1480,
       "installsCurrent": 1425,
       "stars": 69,
@@ -1079,7 +1139,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 109554,
+      "downloads": 109719,
       "installsAllTime": 2557,
       "installsCurrent": 2481,
       "stars": 253,
@@ -1107,7 +1167,7 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 39676,
+      "downloads": 39757,
       "installsAllTime": 1418,
       "installsCurrent": 1377,
       "stars": 29,
@@ -1135,7 +1195,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 44297,
+      "downloads": 44352,
       "installsAllTime": 1519,
       "installsCurrent": 1479,
       "stars": 68,
@@ -1163,7 +1223,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 26141,
+      "downloads": 26166,
       "installsAllTime": 1251,
       "installsCurrent": 1212,
       "stars": 26,
@@ -1191,7 +1251,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 21961,
+      "downloads": 21996,
       "installsAllTime": 1243,
       "installsCurrent": 1212,
       "stars": 30,
@@ -1219,9 +1279,9 @@
     },
     "stats": {
       "comments": 12,
-      "downloads": 46374,
-      "installsAllTime": 1416,
-      "installsCurrent": 1376,
+      "downloads": 46443,
+      "installsAllTime": 1415,
+      "installsCurrent": 1375,
       "stars": 155,
       "versions": 1
     },
@@ -1244,7 +1304,7 @@
     },
     "stats": {
       "comments": 4,
-      "downloads": 29266,
+      "downloads": 29296,
       "installsAllTime": 1322,
       "installsCurrent": 1284,
       "stars": 81,
@@ -1274,9 +1334,9 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 23865,
-      "installsAllTime": 1113,
-      "installsCurrent": 1084,
+      "downloads": 23894,
+      "installsAllTime": 1114,
+      "installsCurrent": 1085,
       "stars": 35,
       "versions": 2
     },
@@ -1299,7 +1359,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 28147,
+      "downloads": 28187,
       "installsAllTime": 1388,
       "installsCurrent": 1341,
       "stars": 43,
@@ -1330,7 +1390,7 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 17910,
+      "downloads": 17929,
       "installsAllTime": 1206,
       "installsCurrent": 1170,
       "stars": 7,
@@ -1358,7 +1418,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 25103,
+      "downloads": 25123,
       "installsAllTime": 1174,
       "installsCurrent": 1138,
       "stars": 51,
