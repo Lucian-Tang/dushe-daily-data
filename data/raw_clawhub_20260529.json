@@ -1,5 +1,286 @@
 [
   {
+    "slug": "forge-skill",
+    "displayName": "Forge AI Skill",
+    "summary": "Use ONLY when the user explicitly starts a message with /forge to interact with Forge AI platform. Manages articles, evaluations, tags, and authentication vi...",
+    "tags": {
+      "latest": "1.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 55,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 2
+    },
+    "createdAt": 1779960804323,
+    "updatedAt": 1780018321337,
+    "latestVersion": {
+      "version": "1.1.0",
+      "createdAt": 1780018321337,
+      "changelog": "forge-skill 1.1.0 adds a file upload command for seamless media handling.\n\n- Added a new upload feature: `forge_client.py upload <file> [--storage-path <path>]` for uploading files to cloud storage and returning a URL.\n- Updated documentation to include the upload command and its usage.\n- Removed obsolete `skill-card.md` file.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "shiye",
+    "displayName": "师爷 - 三模型交叉评审",
+    "summary": "师爷 — 三模型交叉评审引擎。用 Kimi/GLM/Qwen 三个大模型同时评审文档、代码、简历等，输出评分对比、扣分详情、三方共识和改进建议。",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780018118397,
+    "updatedAt": 1780018118397,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780018118397,
+      "changelog": "首次发布：Kimi/GLM/Qwen 三模型交叉评审引擎，支持自动推断评审标准、三评委打分对比、扣分详情、三方共识分析",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "daily-learning-cards",
+    "displayName": "每日学习卡片",
+    "summary": "自动从多渠道对话记录提炼主题、决策、踩坑、新概念和金句，生成每日结构化学习卡片并自动推送。",
+    "tags": {
+      "latest": "2.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 54,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 3
+    },
+    "createdAt": 1778745988911,
+    "updatedAt": 1780018101123,
+    "latestVersion": {
+      "version": "2.0.0",
+      "createdAt": 1780018101123,
+      "changelog": "V2: AI 智能出题 + 周报生成，消除模板化，支持学习内容稀疏时 AI 扩展补充",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "baidu-netdisk-skills",
+    "displayName": "百度网盘",
+    "summary": "百度网盘(Baidu Drive)文件管理 — 上传、下载、转存、分享、搜索、移动、复制、重命名、创建文件夹。 同时支持 Agent 记忆备份/恢复（kimiclaw/maxclaw/qclaw/openclaw）。 TRIGGER: 用户提及\"百度网盘/bdpan/网盘/云盘/baidu drive/Baidu...",
+    "tags": {
+      "latest": "1.1.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 21269,
+      "installsAllTime": 3,
+      "installsCurrent": 3,
+      "stars": 13,
+      "versions": 13
+    },
+    "createdAt": 1773587199974,
+    "updatedAt": 1780018073355,
+    "latestVersion": {
+      "version": "1.1.2",
+      "createdAt": 1780018073355,
+      "changelog": "同步上游 bdpan-storage v1.6.0：更新 install/login/update 脚本与命令文档，新增 memory-backup 备份脚本",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "laosi-git-commit-helper",
+    "displayName": "Git提交助手",
+    "summary": "Git助手 - 自动生成提交信息/查看状态/分支管理/diff分析，基于Conventional Commits规范",
+    "tags": {
+      "commit": "1.0.0",
+      "development": "1.0.0",
+      "git": "1.0.0",
+      "latest": "1.0.0",
+      "version-control": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780018006641,
+    "updatedAt": 1780018006641,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780018006641,
+      "changelog": "Initial release of git-commit-helper.\n\n- Automatically generates Conventional Commits style commit messages based on file changes.\n- Provides quick git status overview, including staged, modified, and untracked files.\n- Supports branch management: listing, creating, and switching branches.\n- Analyzes diffs with file-level change statistics.\n- Shows recent commit history with author and date.\n- Built in Python; requires Python 3.8+ and git CLI.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "laosi-json-transformer",
+    "displayName": "JSON数据转换",
+    "summary": "JSON数据转换 - 查询/过滤/合并/重命名/聚合JSON数据，支持管道式操作和JMESPath表达式",
+    "tags": {
+      "data": "1.0.0",
+      "json": "1.0.0",
+      "latest": "1.0.0",
+      "query": "1.0.0",
+      "transform": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780017976473,
+    "updatedAt": 1780017976473,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780017976473,
+      "changelog": "Initial release of JSON Transformer for advanced JSON data manipulation.\n\n- Supports querying, filtering, sorting, grouping, renaming, adding/removing fields, merging, and aggregation of JSON data\n- Pipeline-style operation chaining enables complex data workflows\n- JMESPath-style querying and flexible predicate-based filtering\n- Includes file input/output and result persistence\n- No third-party dependencies; runs on Python 3.8+",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "laosi-webhook-receiver",
+    "displayName": "Webhook接收服务",
+    "summary": "Webhook接收 - 本地HTTP服务接收和处理webhook事件，支持日志记录、事件过滤、自动重试",
+    "tags": {
+      "automation": "1.0.0",
+      "events": "1.0.0",
+      "http": "1.0.0",
+      "latest": "1.0.0",
+      "webhook": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780017958055,
+    "updatedAt": 1780017958055,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780017958055,
+      "changelog": "Initial release of the webhook-receiver skill.\n\n- Provides a local HTTP service to receive and process webhook events.\n- Supports event logging, event type filtering, and automatic retry mechanism.\n- Handles multiple webhook formats including GitHub, Slack, and generic sources.\n- Offers event persistence, statistics, and simple signature verification for security.\n- Python 3.8+ implementation using only standard library modules.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "laosi-email-helper",
+    "displayName": "邮件助手",
+    "summary": "邮件助手 - 编写/发送/管理邮件，支持SMTP发信和IMAP收信，多模板草稿，自动归档",
+    "tags": {
+      "communication": "1.0.0",
+      "email": "1.0.0",
+      "imap": "1.0.0",
+      "latest": "1.0.0",
+      "smtp": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780017939434,
+    "updatedAt": 1780017939434,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780017939434,
+      "changelog": "- Initial release of the Email Helper skill.\n- Compose, send (SMTP), and manage drafts with template support.\n- Read inbox emails via IMAP.\n- Features auto-archiving, draft persistence, and email search.\n- Provides ready-to-use templates for common scenarios (weekly report, meeting invite, follow-up).\n- Designed for productivity and automation of email tasks.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "sql-linker",
+    "displayName": "sql-linker",
+    "summary": "Use this skill whenever you need to query, insert, update, or delete database records. Triggers include: (1) querying database data with SELECT statements an...",
+    "tags": {
+      "latest": "1.2.8"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 885,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 20
+    },
+    "createdAt": 1779072753920,
+    "updatedAt": 1780017184717,
+    "latestVersion": {
+      "version": "1.2.8",
+      "createdAt": 1780017184717,
+      "changelog": "sql-linker 1.2.8 Changelog\n\n- No code or documentation changes; this version is functionally identical to 1.2.2.\n- No file changes detected.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "agent-skills",
+    "displayName": "Agent Skills",
+    "summary": "Agent Skills standard reference guide. Covers SKILL.md specification format, progressive disclosure mechanism, skill discovery and activation, frontmatter me...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780017052303,
+    "updatedAt": 1780017052303,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780017052303,
+      "changelog": "- Initial release of the Agent Skills standard reference guide.\n- Documents SKILL.md specification format, directory structure conventions, and frontmatter requirements.\n- Explains progressive disclosure (three-tier loading mechanism) for agent skills.\n- Details skill discovery locations for both project and user scopes.\n- Includes integration, validation, and best practices references.\n- Lists 35+ supported agent products implementing the standard.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
     "slug": "lobster-haoyun",
     "displayName": "Lobster Haoyun",
     "summary": "从你的对话和记忆中观察行为模式，用5个维度为你画像（工作方式/沟通模式/关注焦点/能量来源/情感倾向）， 生成每日运势和修炼提醒。通过 OceanBus 加密通道获取节气黄历数据（发送5维行为代码、城市级位置、日期和匿名OpenID）。 首次使用会自动创建 OceanBus 匿名身份（密码学随机生成，可随时删除更...",
@@ -437,313 +718,6 @@
       "os": null,
       "systems": null
     }
-  },
-  {
-    "slug": "laosi-tdd",
-    "displayName": "测试驱动开发",
-    "summary": "测试驱动开发 - 严格红/绿/重构循环，一次一个垂直切片，测试先行。含pytest/mock示例和覆盖率检查",
-    "tags": {
-      "development": "1.1.0",
-      "latest": "1.1.0",
-      "quality": "1.1.0",
-      "tdd": "1.1.0",
-      "testing": "1.1.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 56,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1780010333451,
-    "updatedAt": 1780015038110,
-    "latestVersion": {
-      "version": "1.1.0",
-      "createdAt": 1780015038110,
-      "changelog": "- Major documentation update: SKILL.md is now a comprehensive Chinese TDD guide.\n- Added detailed TDD core loop explanation and practical Python code samples.\n- Included a full TDD cycle demonstration with a Fibonacci implementation.\n- Integrated pytest examples and code coverage usage.\n- Expanded rules, scenarios, and dependencies sections for clearer guidance.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "laosi-write-plan",
-    "displayName": "实现计划生成",
-    "summary": "实现计划生成 - 从需求生成多阶段实施计划：基础→逻辑→接口→测试→部署。含模板、依赖分析、验收标准",
-    "tags": {
-      "architecture": "1.1.0",
-      "latest": "1.1.0",
-      "planning": "1.1.0",
-      "project-management": "1.1.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 58,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1780010337172,
-    "updatedAt": 1780015037627,
-    "latestVersion": {
-      "version": "1.1.0",
-      "createdAt": 1780015037627,
-      "changelog": "- Expanded documentation to include detailed implementation structure, usage examples, and templates for plan and CLI/API projects.\n- Added Python code demonstrating data classes for Task, Phase, and Plan, along with methods for dependency checks, effort estimation, and markdown output.\n- Provided visual breakdown of phase dependencies.\n- Listed practical usage scenarios and basic requirements.\n- Improved clarity with bilingual section titles and usage notes.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "laosi-systematic-debug",
-    "displayName": "系统化调试",
-    "summary": "系统化调试 - 假设驱动调试：观察→假设→隔离→验证→修复。附带Binary Search调试树、Minimal Reproducer生成",
-    "tags": {
-      "debugging": "1.1.0",
-      "latest": "1.1.0",
-      "root-cause": "1.1.0",
-      "troubleshooting": "1.1.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 57,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1780010334927,
-    "updatedAt": 1780015035743,
-    "latestVersion": {
-      "version": "1.1.0",
-      "createdAt": 1780015035743,
-      "changelog": "- Expanded documentation to include Chinese descriptions, debug workflows, and anti-patterns.\n- Added a full Python implementation for systematic debugging, with hypothesis tracking, evidence gathering, and bug isolation utilities.\n- Included sample usage: simulating API timeout investigation, root cause reporting, and binary search for faulty code lines.\n- Provided clear best practices and anti-patterns in a comparative table.\n- Specified usage scenarios and Python version requirements (no third-party dependencies).",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "laosi-code-review",
-    "displayName": "多视角代码审查",
-    "summary": "多视角代码审查 - 安全(OWASP)/性能/正确性/风格，每视角输出严重级别+修复建议，支持PASS/BLOCK裁定",
-    "tags": {
-      "code-review": "1.1.0",
-      "latest": "1.1.0",
-      "performance": "1.1.0",
-      "quality": "1.1.0",
-      "security": "1.1.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 56,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1780010334467,
-    "updatedAt": 1780015035031,
-    "latestVersion": {
-      "version": "1.1.0",
-      "createdAt": 1780015035031,
-      "changelog": "- Enhanced documentation with bilingual (English/Chinese) sections and practical examples\n- Added visual summary of the 4-perspective code review framework\n- Provided a detailed Python implementation with dataclasses and example usage\n- Listed typical problems and severity per perspective in a checklist table\n- Clarified usage scenarios and requirements for easier adoption",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "laosi-clipboard-history",
-    "displayName": "剪贴板历史",
-    "summary": "剪贴板历史 - 自动保存复制内容，最多50条历史，可搜索可恢复。再也不丢复制过的东西",
-    "tags": {
-      "clipboard": "1.1.0",
-      "history": "1.1.0",
-      "latest": "1.1.0",
-      "utility": "1.1.0",
-      "windows": "1.1.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 27,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1780010347873,
-    "updatedAt": 1780015034412,
-    "latestVersion": {
-      "version": "1.1.0",
-      "createdAt": 1780015034412,
-      "changelog": "- Added detailed usage instructions, implementation code, and usage scenarios to documentation.\n- Included Python sample code for saving, searching, and restoring clipboard history.\n- Described data format and explained auto-monitoring with pyperclip.\n- Expanded explanation of benefits and practical use cases.\n- Added dependency requirements section.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "laosi-brainstorm",
-    "displayName": "结构化头脑风暴",
-    "summary": "结构化头脑风暴 - 4视角拆解问题：约束/方案/边界/优先级，自动归档到知识库",
-    "tags": {
-      "creativity": "1.1.0",
-      "ideation": "1.1.0",
-      "latest": "1.1.0",
-      "planning": "1.1.0",
-      "thinking": "1.1.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 57,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1780010333865,
-    "updatedAt": 1780015034007,
-    "latestVersion": {
-      "version": "1.1.0",
-      "createdAt": 1780015034007,
-      "changelog": "- Expanded SKILL.md with detailed documentation in both Chinese and English, including rationale and structured explanations.\n- Added a full Python implementation example for structured brainstorming.\n- Included usage examples and command-line usage instructions.\n- Detailed the four perspectives (constraints, alternatives, edge cases, priorities) with ASCII diagrams.\n- Listed application scenarios and requirements.\n- No code or logic changes beyond documentation enhancements.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "ranchimall-messenger",
-    "displayName": "RanchiMall Messenger",
-    "summary": "Use this skill whenever you are asked to send or receive messages, manage contacts, read or send mail, manage groups, look up public keys, check FLO balance,...",
-    "tags": {
-      "latest": "1.0.19"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 770,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 1,
-      "versions": 20
-    },
-    "createdAt": 1775212589753,
-    "updatedAt": 1780014486849,
-    "latestVersion": {
-      "version": "1.0.19",
-      "createdAt": 1780014486849,
-      "changelog": "**Expanded blockchain and utility coverage in the messenger_node skill.**\n\n- Added support for FLO token operations (check balance, send tokens, view history) via `token_node.js`\n- Introduced Bitcoin blockchain operations (balance, history, address creation, multisig tools) through `btc_node.js`\n- Implemented local key-value storage management with `idb_node.js` (compact IndexedDB-like functionality)\n- Updated documentation to include new operations, script usage references, and clarify security/runtime behavior",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "laosi-habit-checkin",
-    "displayName": "习惯追踪",
-    "summary": "习惯追踪 - 每天打卡，自动计算连续天数/历史最佳/总打卡数，多习惯管理，本地JSON持久化",
-    "tags": {
-      "daily-life": "1.0.0",
-      "habit": "1.0.0",
-      "health": "1.0.0",
-      "latest": "1.0.0",
-      "tracking": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 28,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780014354941,
-    "updatedAt": 1780014354941,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780014354941,
-      "changelog": "Initial release of habit-checkin.\n\n- Track daily habits with one-click check-in.\n- Automatic calculation of current streak, best streak, and total check-ins.\n- Support for managing multiple independent habits.\n- All data is stored locally in JSON for privacy and persistence.\n- Simple Python implementation with no external dependencies.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "laosi-quick-draft",
-    "displayName": "快速草稿",
-    "summary": "快速草稿 - 说几个要点自动生成结构化邮件/消息/周报草稿，内置多种模板(followup/thankyou/request/report)",
-    "tags": {
-      "communication": "1.0.0",
-      "draft": "1.0.0",
-      "email": "1.0.0",
-      "latest": "1.0.0",
-      "writing": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 25,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780014354420,
-    "updatedAt": 1780014354420,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780014354420,
-      "changelog": "Quick Draft v1.0.0\n\n- Initial release with structured draft generation for emails, reports, and meeting notes.\n- Provides multiple built-in templates: followup, thank you, request, weekly report, and meeting summary.\n- Supports customizable input for automatic draft creation.\n- Saves draft history for future reference.\n- Usable via command line; requires only Python 3.8+, no third-party libraries.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "rhino3d-scripts",
-    "displayName": "Rhino 3D Scripts",
-    "summary": "Authoring and debugging scripts for Rhinoceros 3D (Rhino 8 and later). Use when asked to write RhinoScript (VBScript / .rvb / .vbs), RhinoPython, or RhinoCom...",
-    "tags": {
-      "latest": "1.1.1"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 292,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 3
-    },
-    "createdAt": 1778723566027,
-    "updatedAt": 1780014340570,
-    "latestVersion": {
-      "version": "1.1.1",
-      "createdAt": 1780014340570,
-      "changelog": "- Removed the file: skill-card.md\n- Updated documentation to add new troubleshooting and gotcha notes, including details about `Rhino.RhinoApp.IsHeadless`, `RhinoMath` location, object ID return values for `AddBrep()`, `rhinoscriptsyntax` type stubs, and script naming cautions.\n- No new features or behavior changes; maintenance and clarification update.",
-      "license": null
-    },
-    "metadata": null
   },
   {
     "slug": "sonoscli",
