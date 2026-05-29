@@ -107,6 +107,9 @@ section_map = {
     'github': (None, 'github_daily'),
     'clawhub': (None, 'clawhub_daily'),
     'ai_models': (None, 'ai_models_daily'),
+    'weekly_github': (None, 'weekly_github'),
+    'weekly_clawhub': (None, 'weekly_clawhub'),
+    'ai_models_weekly': (None, 'ai_models_weekly'),
 }
 
 latest = {}
