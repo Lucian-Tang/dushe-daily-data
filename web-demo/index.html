@@ -251,13 +251,10 @@ a:hover { text-decoration: underline; }
 /* ========== Tabs ========== */
 .tabs {
   display: flex;
-  gap: 0;
-  overflow-x: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  flex-wrap: wrap;
+  gap: 4px;
   flex: 1;
 }
-.tabs::-webkit-scrollbar { display: none; }
 
 .tab {
   padding: 8px 16px;
@@ -640,6 +637,8 @@ a:hover { text-decoration: underline; }
   .back-to-top { bottom: 16px; right: 16px; width: 38px; height: 38px; font-size: 1.1rem; }
   .subnav { padding: 6px 12px; }
   .subnav-meta { display: none; }
+  .tab { padding: 5px 8px; font-size: 0.72rem; }
+  .tab { padding: 6px 10px; font-size: 0.75rem; }
     content: '';
   }
   .main { padding: 12px; padding-top: calc(var(--nav-height) + 50px); }
@@ -662,6 +661,8 @@ a:hover { text-decoration: underline; }
   .tab { padding: 6px 10px; font-size: 0.78rem; }
   .subnav { padding: 4px 10px; }
   .subnav-meta { display: none; }
+  .tab { padding: 5px 8px; font-size: 0.72rem; }
+  .tab { padding: 6px 10px; font-size: 0.75rem; }
   .footer { padding: 28px 16px 24px; }
   .footer-links { gap: 14px; }
 }
