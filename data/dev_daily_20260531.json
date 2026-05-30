@@ -1,0 +1,129 @@
+[
+  {
+    "title": "SQLite is All You Need：无数据库服务实现持久化工作流",
+    "content": "Obelisk 团队发文论证 SQLite 配合 Litestream 即可支撑持久化工作流，无需独立数据库服务。针对 AI Agent 和实验性工作流场景，本地 SQLite 文件提供事务性持久化状态，Litestream 异步复制到 S3 实现备份与迁移。这一方案大幅降低了基础设施复杂度，HN 上获得 620 票成为当日最热技术讨论。",
+    "quote": "Postgres 党又要拍桌子了，但 SQLite 确实是真香定律",
+    "source": "Obelisk Blog",
+    "url": "https://obeli.sk/blog/sqlite-is-all-you-need-for-durable-workflows/",
+    "published": "2026-05-31",
+    "uid": "a6859cbbd82f28f095d6bb4449564b3c"
+  },
+  {
+    "title": "MCP 已死？开发者实测揭露上下文窗口吞噬问题",
+    "quantity": "",
+    "content": "Quandri 团队发表实测文章《MCP is dead》，指出 Anthropic 的 MCP 协议在实际使用中面临严重的上下文窗口膨胀问题——仅连接 4 个 MCP 服务器（Linear、Notion、Slack、Postgres）就消耗了 10.5%-16.5% 的上下文预算。同时 MCP 还存在可靠性低、与 CLI/API 功能重叠等问题。文章在 HN 引发 300+ 条激烈讨论。",
+    "quote": "USB-C 的 AI 生态名片还没捂热就被人戳了窟窿",
+    "source": "Quandri Engineering",
+    "url": "https://www.quandri.io/engineering-blog/mcp-is-dead",
+    "published": "2026-05-31",
+    "uid": "197b754a5ed6f348d4992f054b2e4943"
+  },
+  {
+    "title": "Anthropic 超越 OpenAI 成为估值最高的 AI 创业公司",
+    "content": "Anthropic 在最新一轮融资后估值超越 OpenAI，正式成为全球最有价值的 AI 初创企业。这家以 Claude 系列模型闻名的公司凭借 Claude Code、Claude Managed Agents 等产品线持续扩张，在企业市场的布署速度和客户口碑上已形成对 OpenAI 的强劲竞争压力。",
+    "quote": "OpenAI 的皇冠还没戴稳就被前员工公司摘走了",
+    "source": "QazInform",
+    "url": "https://qazinform.com/news/anthropic-surpasses-openai-to-become-worlds-most-valuable-ai-startup",
+    "published": "2026-05-31",
+    "uid": "89de12bb29ca61a3c19123b4728ad2eb"
+  },
+  {
+    "title": "Zig 宣布构建系统大重构，性能与可维护性双提升",
+    "content": "Zig 语言团队发布 devlog 宣布对构建系统进行全面重构。新架构聚焦于更快的增量编译、更清晰的依赖管理和更好的跨平台支持。这一改动是 Zig 0.15 大版本的重要里程碑，社区反响热烈，HN 上获得 237 票、144 条讨论，普遍认为重构方向正确但迁移成本需关注。",
+    "quote": "Zig 的构建系统终于要摆脱「能跑就行」的阶段了",
+    "source": "Zig Language Blog",
+    "url": "https://ziglang.org/devlog/2026/#2026-05-26",
+    "published": "2026-05-31",
+    "uid": "af684ce60b7c10b75bb7dbe6a4a0995e"
+  },
+  {
+    "title": "Mistral AI Now Summit 要点：AI Agent 民主化与开源生态",
+    "content": "Mistral AI 举行 Now Summit，重点发布 AI Agent 民主化路线图和新一代开源模型能力。会议涵盖多 Agent 协作、边缘部署、数据隐私保护等热点话题。Mistral 强调以更低的推理成本和更透明的许可协议吸引开发者，HN 上获得 422 票成为当日焦点。",
+    "quote": "欧洲开源 AI 选手正在用低价策略打游击战",
+    "source": "Mistral AI / koenvangilst",
+    "url": "https://koenvangilst.nl/lab/mistral-ai-now-summit",
+    "published": "2026-05-31",
+    "uid": "b0364c24fd3797077ca0c28b04eec2be"
+  },
+  {
+    "title": "OpenBSD 团队推出开源 rsync 实现 openrsync",
+    "content": "OpenBSD 团队发布了 openrsync——基于 BSD 许可协议的 rsync 全新实现。该项目由 kristapsdz 维护，旨在提供更安全、更简洁的同步工具替代方案。针对 rsync 历史悠久的安全漏洞和臃肿代码，openrsync 采用更严格的代码审查和更小的攻击面设计，HN 上获得 145 票。",
+    "quote": "OpenBSD 又来替大家擦屁股了，这次轮到 rsync",
+    "source": "GitHub / Hacker News",
+    "url": "https://github.com/kristapsdz/openrsync",
+    "published": "2026-05-31",
+    "uid": "ef126464bb6577674d0dca0b578b3cca"
+  },
+  {
+    "title": "Compound Engineering Plugin 爆火：AI 代理的复合工程范式",
+    "content": "EveryInc 推出的 Compound Engineering Plugin 在 GitHub 上获得超过 18,000 星标，成为当日现象级项目。该插件为 Claude Code、Codex、Cursor 等 AI 编码工具提供复合工程能力——让多个 AI Agent 协作完成从需求分析到代码审查的全流程，代表了 AI 编程从单 Agent 到多 Agent 协同的范式转变。",
+    "quote": "单个 AI 不够用，那就上一群 AI 帮你写代码",
+    "source": "GitHub",
+    "url": "https://github.com/EveryInc/compound-engineering-plugin",
+    "published": "2026-05-31",
+    "uid": "3e8fbc38139b737b1377edb3f1b35d27"
+  },
+  {
+    "title": "Meta 重构 PB 级数据摄入平台：零宕机迁移实战",
+    "content": "Meta 工程团队分享了其 MySQL 社交图谱数据摄入平台的迁移经验。该平台每日处理数 PB 数据，团队采用反向影子测试和持续校验和监控技术，实现了零宕机切换。这次迁移显著提升了数据管线的可靠性和运维效率，为处理超大规模实时数据系统提供了可复用的工程范式。",
+    "quote": "PB 级数据迁移不停服，Meta 的 SRE 团队又秀了一把",
+    "source": "InfoQ",
+    "url": "https://www.infoq.com/news/2026/05/meta-cdc-migration/",
+    "published": "2026-05-31",
+    "uid": "85632c4425786c990884ee089d4e94be"
+  },
+  {
+    "title": "Cloudflare 上线 Claude Managed Agents 支持",
+    "content": "Cloudflare 宣布在其平台上正式支持 Claude Managed Agents，允许开发者在 Cloudflare 基础设施上运行和管理 Claude Agent。支持私网连接、自定义运行时环境和全链路监控，将 Cloudflare 的 Edge 网络能力与 Anthropic 的 Agent 框架深度整合，为开发者提供低延迟、高可用的 Agent 部署方案。",
+    "quote": "Cloudflare 正在把自己变成 AI Agent 的托管平台",
+    "source": "InfoQ",
+    "url": "https://www.infoq.com/news/2026/05/cloudflare-claude-agents/",
+    "published": "2026-05-31",
+    "uid": "86c515099c50ef423889eb9359d3c2f2"
+  },
+  {
+    "title": "Azure Logic Apps 集成沙盒代码解释器，Agent 工作流支持多语言",
+    "content": "微软为 Azure Logic Apps 添加了沙盒化代码解释器，Agent 可在集成工作流中执行 Python、JavaScript、C# 和 PowerShell 代码，运行在 Hyper-V 隔离会话中。架构师可按工作流粒度选择不同 AI 模型，此举将 Logic Apps 定位为与 Foundry 和 Copilot Studio 并行的 Agent 平台。",
+    "quote": "微软把能跑的运行时都塞进一个工作流引擎里了",
+    "source": "InfoQ",
+    "url": "https://www.infoq.com/news/2026/05/azure-logic-apps-agents/",
+    "published": "2026-05-31",
+    "uid": "21dd1cf4d01e7310fb30217baa1b8f99"
+  },
+  {
+    "title": "Pullfrog AI：开源替代 CodeRabbit 的 PR 审查机器人",
+    "content": "Colin McDonnell 开源了 Pullfrog，一个基于 GitHub Actions 的 AI 代码审查机器人。作为 CodeRabbit 的开源替代方案，Pullfrog 支持模型无关架构（可接入任意 LLM），具备 PR 审查、Issue 分类和 CI 修复等能力，采用自备 API Key 模式运行，所有操作均在 GitHub 环境内完成。",
+    "quote": "CodeRabbit 的付费墙逼出了更猛的开源替代品",
+    "source": "InfoQ",
+    "url": "https://www.infoq.com/news/2026/05/pullfrog-ai-github/",
+    "published": "2026-05-31",
+    "uid": "378f42f81fa656beb7ae587a75077a4e"
+  },
+  {
+    "title": "Run-Llama 开源 LiteParse：高性能 Rust 文档解析器",
+    "content": "LlamaIndex 团队开源了 LiteParse，一款用 Rust 编写的高性能文档解析器。支持 PDF、Office、Markdown 等多种格式转换，主打速度快、体积小、开源友好。上线当天即获得 929 星标，成为 GitHub Trending 当日增长最快的项目之一，解决了 LLM 场景中文档解析的痛点。",
+    "quote": "LlamaIndex 终于受不了 Python 解析 PDF 的速度了",
+    "source": "GitHub",
+    "url": "https://github.com/run-llama/liteparse",
+    "published": "2026-05-31",
+    "uid": "2a604f64dc1620ec8a5804b5978a92de"
+  },
+  {
+    "title": "TamboUI：为 Java 带来现代终端 UI 开发能力",
+    "content": "TamboUI 项目发布 0.3.0 版本，目标是将现代 TUI 开发体验带入 Java 世界。受 Rust 生态中的 Ratatui（Claude CLI 所用库）启发，提供从底层终端绘图到高层组件和事件处理的完整能力。已被 Maven、Spring 等主流项目采纳，响应了「让 2026 成为 Java 终端之年」的号召。",
+    "quote": "Java 在终端里终于也能看得过去了",
+    "source": "InfoQ",
+    "url": "https://www.infoq.com/news/2026/05/tamboui-java-tui/",
+    "published": "2026-05-31",
+    "uid": "9c35529fb8368c01ad89d01c7f9de268"
+  },
+  {
+    "title": "Pandoc 推出模板社区网站 pandoc-templates.org",
+    "content": "文档转换工具 Pandoc 的官方模板社区上线，开发者可以发布和共享 Pandoc 模板。网站汇集了从论文、幻灯片到网站生成的各种高质量模板，支持 HTML、PDF、EPUB、LaTeX 等多种输出格式。HN 上获得 250 票，社区表示这是 Pandoc 生态补上的关键一环。",
+    "quote": "Pandoc 终于有了自己的模板市场，不用再到处捡破烂了",
+    "source": "Hacker News",
+    "url": "https://pandoc-templates.org/",
+    "published": "2026-05-31",
+    "uid": "7112cfb5506d91271b27baa4453461f9"
+  }
+]
