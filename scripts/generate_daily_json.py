@@ -240,25 +240,73 @@ def parse_startup(text):
 
 def parse_industry(text):
     items = []
-    for part in re.split(r'\n##\s+\d+\.\s+', text)[1:]:
-        lines = part.strip().split('\n')
-        title = lines[0].strip() if lines else ''
-        if not title: continue
-        src = url = quote = ''
-        for l in lines[1:]:
-            s = l.strip()
-            if s == '---': continue
-            m = re.match(r'\*\*信源\*\*[：:]\s*(.+)', s)
-            if m: src = clean_source(m.group(1)); continue
-            m = re.search(r'\*\*原文\*\*[：:]\s*\[?([^\]]*)\]?\s*[\(]?\s*(https?://\S+)', s)
-            if m: url = m.group(2).strip().rstrip(')'); continue
-            # Also handle just URL in the line
-            if not url:
-                m = re.search(r'(https?://[^\s\)]+)', s)
-                if m: url = m.group(1).strip().rstrip(')'); continue
-            m = re.search(r'\*\*Lucia毒舌\*\*[：:]\s*(.+)', s)
-            if m: quote = m.group(1).strip(); continue
-        items.append(dict(title=title, content='', quote=quote, source=src, url=url))
+    # Detect new format (emoji blockquotes in `###` sections)
+    is_new_format = any(
+        l.strip().startswith('> 💬') or l.strip().startswith('> 📅')
+        for l in text.split('\n')[:50]
+    )
+
+    if is_new_format:
+        # New format: ### N. emoji Title with emoji blockquotes (same as AI new format)
+        for part in re.split(r'\n###\s+\d+\.\s+', text)[1:]:
+            lines = part.strip().split('\n')
+            title = lines[0].strip() if lines else ''
+            if not title: continue
+            src = url = quote = ''
+            content_lines = []
+            for l in lines[1:]:
+                s = l.strip()
+                if not s or s == '---': continue
+                # Source line: **来源**: Source | **日期**:
+                m = re.match(r'\*\*来源\*{0,2}[：:]\s*(.+?)(?:\s*\|\s*\*\*日期)', s)
+                if m:
+                    src = clean_source(m.group(1))
+                    continue
+                # Source line: **来源**: Source alone
+                m = re.match(r'\*\*来源\*{0,2}[：:]\s*(.+)', s)
+                if m and not src:
+                    src = clean_source(m.group(1))
+                    continue
+                # Quote line: > 💬 Quote text
+                if s.startswith('> 💬'):
+                    quote = s[4:].strip()
+                    continue
+                # URL: [🔗 原文链接](url)
+                m = re.search(r'\[🔗\s*原文链接\]\((.+)\)', s)
+                if m:
+                    url = clean_url(m.group(1))
+                    continue
+                m = re.search(r'\[.*?\]\((.+)\)', s)
+                if m and not url:
+                    url = clean_url(m.group(1))
+                    continue
+                # Skip other blockquotes
+                if s.startswith('>'):
+                    continue
+                # Content lines
+                content_lines.append(s)
+            content = ' '.join(content_lines).strip()
+            items.append(dict(title=title, content=content, quote=quote, source=src, url=url))
+    else:
+        # Old format: ## N. Title with **信源** / **原文** / **Lucia毒舌**
+        for part in re.split(r'\n##\s+\d+\.\s+', text)[1:]:
+            lines = part.strip().split('\n')
+            title = lines[0].strip() if lines else ''
+            if not title: continue
+            src = url = quote = ''
+            for l in lines[1:]:
+                s = l.strip()
+                if s == '---': continue
+                m = re.match(r'\*\*信源\*\*[：:]\s*(.+)', s)
+                if m: src = clean_source(m.group(1)); continue
+                m = re.search(r'\*\*原文\*\*[：:]\s*\[?([^\]]*)\]?\s*[\(]?\s*(https?://\S+)', s)
+                if m: url = m.group(2).strip().rstrip(')'); continue
+                if not url:
+                    m = re.search(r'(https?://[^\s\)]+)', s)
+                    if m: url = m.group(1).strip().rstrip(')'); continue
+                m = re.search(r'\*\*Lucia毒舌\*\*[：:]\s*(.+)', s)
+                if m: quote = m.group(1).strip(); continue
+            items.append(dict(title=title, content='', quote=quote, source=src, url=url))
     return items
 
 def parse_clawhub(raw_path, date_str):
