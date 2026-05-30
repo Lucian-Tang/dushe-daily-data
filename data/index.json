@@ -1,12 +1,12 @@
 {
   "schemaVersion": "2.0",
-  "updated": "2026-05-30T09:36:12.810579+08:00",
+  "updated": "2026-05-30T11:43:16.248877+08:00",
   "industry": "industry_daily_20260530.json",
   "dev": "dev_daily_20260530.json",
   "ai": "ai_daily_20260530.json",
   "startup": "startup_daily_20260530.json",
   "design": "design_daily_20260530.json",
-  "social": "social_daily_20260529.json",
+  "social": "raw_social_20260530.json",
   "hf_daily": "hf_daily_20260509.json",
   "history": {
     "industry": [
@@ -127,6 +127,7 @@
       "design_daily_20260510.json"
     ],
     "social": [
+      "social_daily_20260529.json",
       "social_daily_20260528.json",
       "raw_social_20260527.json",
       "social_daily_20260526.json",
@@ -152,7 +153,7 @@
     ]
   },
   "checksums": {
-    "industry_daily_20260530.json": "954d6e3f60a1497335f393cff5da08aa6b8e78e1d9e244bfe74de7dc6768a67c",
+    "industry_daily_20260530.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "industry_daily_20260529.json": "b194317a8cf311ff0e3fea5e1cc4ee0a59df42799dc53a3d390a7635947b42c1",
     "industry_daily_20260528.json": "f1813c46a6f039ac5606dadc393ce218173c2c5df39dd6077b51bee43da3671b",
     "industry_daily_20260527.json": "28d0151a783478810fc3aaff8d1f0aaaf6f49ade7425a9754ba1daf44406f49e",
@@ -176,7 +177,7 @@
     "raw_articles_20260509.json": "9e0bb66ce44b487ca4cb5f29ed5973394a51316ae995e362c0a4179675bd38b4",
     "raw_articles_20260508.json": "93164136a73d19bc91279e7648c43273b70c1eee0e555bb5dd049eb0cddd5ca8",
     "raw_articles_20260507.json": "93a762f47ddecac9a0f23bb3ecea484ed3bcaa40eb905771be634453e310f479",
-    "dev_daily_20260530.json": "5f95c00c56f105c480335b90e5a4cc6a5c5848b967e8ea25becc2eb5a79ebccf",
+    "dev_daily_20260530.json": "baa586fbdb14316697e7a02f1ad8c61f372e77edd5848d92dbe1054927e8c9c4",
     "dev_daily_20260529.json": "1086e73445acc2cf340c42396afb98df6296a14bc0b4f5e3e2e4dde2cb8c0601",
     "dev_daily_20260528.json": "16dd66f0b5fbd9770d048e6e356863a58d177fce19cb57698d19985d9f6390ba",
     "dev_daily_20260527.json": "7214d574688b0f510a1ab82e8109a711a46f4f95dffad2b7aa0a39a1fcd8b1cb",
@@ -222,7 +223,7 @@
     "ai_daily_20260511.json": "26a4cf39f5592e25a84486be22a7f11226dd1fc5e73f596a5c4617e84dcdd1ca",
     "ai_daily_20260510.json": "5cd0564b8e62fe8b93dca3e134a7c6d81e2204e83a71083b8c1e8a0934e24a39",
     "ai_daily_20260508.json": "7f032156aa20de2ab06c84dd90ad726ba89884b59f4bbe5cef69a314acd551f7",
-    "startup_daily_20260530.json": "b5a8e33aea3182759e5cf6f597973a1ff2e4320eaf271bc82e97dacafd03b06d",
+    "startup_daily_20260530.json": "35d3e1edf3a039349f5ca05ced93382a8d08d8446bdaf75e6c8a5779619742bc",
     "startup_daily_20260529.json": "bd8acc153e13e15f02af4b433ad96659cd8c062a9e93cbaae261597d204454cd",
     "startup_daily_20260528.json": "776b2a500b71b930e6b09cfd453cc3fe9ea237ef0470ca300a19d6c7c269427c",
     "startup_daily_20260527.json": "ca78dd81f6b32367a7d63095dc7a33a0e7f98f6497de670f7ae5f11d29674b10",
@@ -243,7 +244,7 @@
     "startup_daily_20260512.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "startup_daily_20260511.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "startup_daily_20260510.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-    "design_daily_20260530.json": "c82ba57660f01bd66f4e3ecf58eddb998816c4ed85f9444258509c14c1c4fc83",
+    "design_daily_20260530.json": "0e54e6d5914569f08b94360db8bba7fdc5cc64ef8845c45da4392655f20be392",
     "design_daily_20260529.json": "ce1c81a1f86179a01d8b03d988efb4f4e0970d6ecb3d9f532fff2301d4844071",
     "design_daily_20260528.json": "97faf685bad8e306fa2ff5b742c72e93c89ddbae847178d10f4281134b27c992",
     "design_daily_20260527.json": "a8009fb43071bee153f3e060bac86803fec1d21d5f377e47375ad79f4c921600",
@@ -264,6 +265,7 @@
     "design_daily_20260512.json": "0853caf9e97c4c7a747e23c2638425bb6da916d9e32ee760400a0bd379493e63",
     "design_daily_20260511.json": "50bbb081a17dc25ef6ba4b5c5dfe9a86173a5e4f0b47e5111a3f7a72e2f1a9c8",
     "design_daily_20260510.json": "2343e3da7854aab5f3752c17e8add875de9a3d02fb83aeaef90016db564419b3",
+    "raw_social_20260530.json": "e7f76a401874f6f84a43a8e562f0c86b991b319077539a9fb02c92a5bb2971dc",
     "social_daily_20260529.json": "f7f112449eed27a6cfad494b4f43b9e32d92e933ab5ae1a73988c6881cf8f148",
     "social_daily_20260528.json": "2411e7c49c9af51185d2f6e2e7662ee9e315eb19c939e916c2857f4e45f7efef",
     "raw_social_20260527.json": "796b59fb176d974c3140326fb8e56d99b0de0d174b7526085f84e275d3a04113",
