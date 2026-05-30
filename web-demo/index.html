@@ -92,7 +92,6 @@ a:hover { text-decoration: underline; }
 /* ========== Navigation (Luxmind-style) ========== */
 .nav {
   position: fixed;
-  top: 0; left: 0; right: 0;
   z-index: 100;
   height: var(--nav-height);
   background: rgba(13, 17, 23, 0.85);
@@ -106,7 +105,6 @@ a:hover { text-decoration: underline; }
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 32px;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -225,7 +223,6 @@ a:hover { text-decoration: underline; }
   position: fixed;
   top: var(--nav-height);
   left: 0;
-  right: 0;
   z-index: 99;
   background: var(--backdrop-bg);
   backdrop-filter: blur(20px);
@@ -263,7 +260,6 @@ a:hover { text-decoration: underline; }
 .tabs::-webkit-scrollbar { display: none; }
 
 .tab {
-  flex-shrink: 0;
   padding: 8px 16px;
   font-size: 0.85rem;
   font-weight: 500;
@@ -379,7 +375,6 @@ a:hover { text-decoration: underline; }
 }
 
 .card-source {
-  flex-shrink: 0;
   font-size: 0.7rem; font-weight: 500;
   padding: 2px 8px;
   border-radius: 4px;
@@ -410,7 +405,6 @@ a:hover { text-decoration: underline; }
 }
 
 .quote-icon {
-  flex-shrink: 0;
   font-style: normal;
   font-size: 0.9rem;
   opacity: 0.8;
@@ -527,7 +521,6 @@ a:hover { text-decoration: underline; }
 }
 
 .footer-divider {
-  width: 40px;
   height: 2px;
   background: var(--border);
   margin: 12px auto;
@@ -548,7 +541,6 @@ a:hover { text-decoration: underline; }
   box-shadow: 0 2px 12px rgba(0,0,0,0.15);
   transition: opacity 0.3s, transform 0.3s, background 0.2s;
   opacity: 0; transform: translateY(20px);
-  pointer-events: none;
 }
 .back-to-top.visible {
   opacity: 1; transform: translateY(0);
@@ -642,12 +634,14 @@ a:hover { text-decoration: underline; }
 @media (max-width: 768px) {
   .nav-inner { padding: 0 20px; }
   .nav-toggle { display: flex; }
-  .nav-links { display: none; position: absolute; top: var(--nav-height); left: 0; right: 0; background: rgba(13,17,23,0.95); backdrop-filter: blur(20px); flex-direction: column; padding: 8px; border-bottom: 1px solid var(--border); }
   .nav-links.open { display: flex; }
   .nav-links a { padding: 12px 16px; width: 100%; border-radius: 8px; }
   .nav-meta .meta-item-counts { display: none; }
   .back-to-top { bottom: 16px; right: 16px; width: 38px; height: 38px; font-size: 1.1rem; }
   .subnav { padding: 6px 12px; }
+  .subnav-meta { display: none; }
+    content: '';
+  }
   .main { padding: 12px; padding-top: calc(var(--nav-height) + 50px); }
   .card { padding: 16px; margin-bottom: 12px; }
   .card-title { font-size: 0.9rem; }
@@ -667,6 +661,7 @@ a:hover { text-decoration: underline; }
   .main { padding: 10px; padding-top: calc(var(--nav-height) + 46px); }
   .tab { padding: 6px 10px; font-size: 0.78rem; }
   .subnav { padding: 4px 10px; }
+  .subnav-meta { display: none; }
   .footer { padding: 28px 16px 24px; }
   .footer-links { gap: 14px; }
 }
@@ -687,16 +682,12 @@ a:hover { text-decoration: underline; }
 .ranking-card:active { transform: scale(0.995); }
 
 .ranking-number {
-  flex-shrink: 0;
   width: 36px; height: 36px;
   display: flex; align-items: center; justify-content: center;
   border-radius: 50%;
   font-size: 1rem; font-weight: 700;
   color: #fff;
 }
-.ranking-number.r1 { background: linear-gradient(135deg, #FFD700, #FFA500); }
-.ranking-number.r2 { background: linear-gradient(135deg, #C0C0C0, #A0A0A0); }
-.ranking-number.r3 { background: linear-gradient(135deg, #CD7F32, #B86620); }
 .ranking-number.rn { background: var(--tab-bg); color: var(--text-dim); }
 
 .ranking-body { flex: 1; min-width: 0; }
@@ -795,7 +786,6 @@ a:hover { text-decoration: underline; }
 .vendor-item:active { transform: scale(0.995); }
 
 .vendor-item-num {
-  flex-shrink: 0;
   width: 22px; text-align: center;
   font-size: 0.72rem; color: var(--text-dim);
   font-weight: 600; margin-top: 1px;
