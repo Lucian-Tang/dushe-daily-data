@@ -1,25 +1,26 @@
 {
   "week_start": "2026-05-25",
   "week_end": "2026-05-31",
-  "summary": "本周共收录AI领域动态 45 条。本周最活跃：其他（16条）、Anthropic/Claude（7条）、OpenAI/GPT（6条）。主要方向为工具/平台（16条）。",
+  "summary": "本周共收录AI领域动态 53 条。本周最活跃：其他（15条）、Anthropic/Claude（13条）、Google/Gemini（5条）。主要方向为模型发布（20条）。",
   "stats": {
-    "total_items": 45,
+    "total_items": 53,
     "by_vendor": {
-      "other": 16,
-      "anthropic": 7,
-      "openai": 6,
+      "other": 15,
+      "anthropic": 13,
       "google": 5,
+      "microsoft": 5,
+      "amazon": 5,
       "alibaba": 4,
-      "amazon": 4,
-      "microsoft": 2,
-      "mistral": 1
+      "openai": 3,
+      "mistral": 2,
+      "deepseek": 1
     },
     "by_direction": {
-      "工具/平台": 16,
-      "模型发布": 12,
-      "研究/论文": 6,
-      "应用/落地": 4,
-      "行业动态": 4,
+      "模型发布": 20,
+      "工具/平台": 19,
+      "行业动态": 5,
+      "研究/论文": 3,
+      "应用/落地": 3,
       "政策/合规": 3
     }
   },
@@ -396,49 +397,89 @@
           "icon": "🧬",
           "items": [
             {
-              "uid": "ai_6ae73c83",
-              "title": "Anthropic 完成 650 亿美元 H 轮融资，估值逼近 9000 亿美元超越 OpenAI",
+              "uid": "ai_62544bba",
+              "title": "OpenAI Codex大更新：开始控制Windows电脑，支持并行多Agent",
               "direction": "工具/平台",
-              "quote": "Anthropic 宣布完成 Series H 轮融资，募资",
-              "url": "https://www.theverge.com/news/anthropic-900-billion-valuation-series-h",
+              "quote": "Codex终于学会用鼠标了，程序员离被AI操作电脑又近一步。",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/913034/openai-codex-updates-use-macos",
+              "published": "2026-05-31"
+            },
+            {
+              "uid": "ai_db6bf0c7",
+              "title": "DeepSeek V4 Pro永久降价75%：价格仅西方模型1/17，Xiaomi已跟进",
+              "direction": "模型发布",
+              "quote": "降价75%叫永久？硅谷的利润率在颤抖。",
+              "url": "https://venturebeat.com/infrastructure/how-deepseeks-radical-architecture-is-shattering-silicon-valleys-token-moat",
+              "published": "2026-05-31"
+            },
+            {
+              "uid": "ai_9978abcb",
+              "title": "DeepSWE新基准洗牌编程排行榜：GPT-5.5以70%登顶，Claude被曝32%评分误判",
+              "direction": "模型发布",
+              "quote": "发现AI在测试作弊比发现AI会写代码还让程序员兴奋。",
+              "url": "https://venturebeat.com/technology/deepswe-blows-up-the-ai-coding-leaderboard-crowns-gpt-5-5-and-finds-claude-opus-exploiting-a-benchmark-loophole",
+              "published": "2026-05-31"
+            },
+            {
+              "uid": "ai_bbea6090",
+              "title": "Anthropic完成650亿美元H轮融资，估值9650亿超越OpenAI",
+              "direction": "行业动态",
+              "quote": "融资比赛比模型比赛好看多了，OpenAI还没盈利对手先奔万亿了。",
+              "url": "https://www.nytimes.com/2026/05/28/technology/anthropic-tops-openai-valuation.html",
+              "published": "2026-05-31"
+            },
+            {
+              "uid": "ai_fc695353",
+              "title": "DeepSWE新基准颠覆编程排行榜：GPT-5.5登顶70%",
+              "direction": "模型发布",
+              "quote": "32%瞎打分率，这基准谁敢信？",
+              "url": "https://venturebeat.com/ai/deepswe-blows-up-the-ai-coding-leaderboard-crowns-gpt-5-5-and-finds-claude-opus-exploiting-a-benchmark-loophole",
+              "published": "2026-05-31"
+            },
+            {
+              "uid": "ai_2fc0a324",
+              "title": "DeepSeek V4 Pro永久降价75%，引爆硅谷token成本危机",
+              "direction": "模型发布",
+              "quote": "价格战打到这份上，OpenAI故事难讲了",
+              "url": "https://venturebeat.com/ai/how-deepseeks-radical-architecture-is-shattering-silicon-valleys-token-moat",
+              "published": "2026-05-31"
+            },
+            {
+              "uid": "ai_b6405831",
+              "title": "IBM推ITBench-AA：AI在K8s排障评测全部不及格",
+              "direction": "模型发布",
+              "quote": "K8s排障连GPT都翻车，运维暂时安全",
+              "url": "https://huggingface.co/blog/ibm-research/itbench-aa",
               "published": "2026-05-31"
             }
           ]
         },
-        "openai": {
-          "displayName": "OpenAI/GPT",
-          "icon": "🔬",
+        "microsoft": {
+          "displayName": "Microsoft",
+          "icon": "🪟",
           "items": [
             {
-              "uid": "ai_ae22e74a",
-              "title": "Mistral AI 发布 Vibe 品牌并全面进军工业 AI",
-              "direction": "模型发布",
-              "quote": "在首届 AI NOW 峰会上，Mistral AI 将 Le",
-              "url": "https://venturebeat.com/ai/mistral-ai-launches-vibe-expands-into-industrial-ai-and-announces-data-center-push-to-challenge-openai",
-              "published": "2026-05-31"
-            },
-            {
-              "uid": "ai_24d1c87b",
-              "title": "OpenAI Codex 扩展至 Windows，支持远程操控电脑",
+              "uid": "ai_53450c86",
+              "title": "微软秘密打造Copilot超级App：整合代码/聊天/Autopilot一站式AI平台",
               "direction": "工具/平台",
-              "quote": "OpenAI 将 Codex 的 Computer Use ",
-              "url": "https://the-decoder.com/openai-codex-now-controls-windows-computers/",
+              "quote": "微软终于发现—用户不想装五个AI工具，他们连一个都不太会用。",
+              "url": "https://fortune.com/2026/05/29/microsoft-working-on-super-app/",
               "published": "2026-05-31"
             },
             {
-              "uid": "ai_76680215",
-              "title": "微软悄然打造 AI 超级应用，整合 Copilot 全家桶",
+              "uid": "ai_5fd8c4b5",
+              "title": "微软预览Copilot Health AI：可分析个人医疗记录和病历",
               "direction": "应用/落地",
-              "quote": "据 Fortune 报道，微软开发 AI 超级应用，将 Gi",
-              "url": "https://www.theverge.com/news/microsoft-ai-super-app-copilot",
+              "quote": "AI检查你的病历比你的家庭医生还快，但出错了找谁赔？",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/2",
               "published": "2026-05-31"
             },
             {
-              "uid": "ai_e7487fdb",
-              "title": "OpenAI 正式停用 ChatGPT Canvas 界面",
-              "direction": "研究/论文",
-              "quote": "OpenAI 宣布 Canvas 侧边界面在 GPT-5.5",
-              "url": "https://www.theverge.com/news/openai-sunsetting-chatgpt-canvas-interface",
+              "uid": "ai_f4d0598d",
+              "title": "微软推出Copilot Health AI，可分析个人医疗记录",
+              "direction": "模型发布",
+              "quote": "医院天书终于有人读了，别搞错过敏史就行",
+              "url": "https://www.theverge.com/ai-artificial-intelligence",
               "published": "2026-05-31"
             }
           ]
@@ -448,49 +489,41 @@
           "icon": "📰",
           "items": [
             {
-              "uid": "ai_e47b697c",
-              "title": "Liquid AI 发布 8B-A1B MoE 模型，训练数据达 38T tokens",
-              "direction": "研究/论文",
-              "quote": "Liquid AI 发布 8B-A1B 混合专家模型，仅激活",
-              "url": "https://news.ycombinator.com/item?id=43000000",
-              "published": "2026-05-31"
-            },
-            {
-              "uid": "ai_408da457",
-              "title": "AI Agent 遭遇可靠性危机，企业被迫进入版本 2.0 重构期",
+              "uid": "ai_1f6e211c",
+              "title": "AI Agent进入'重建时代'：企业遭遇可靠性危机，70%的V1项目需重写",
               "direction": "应用/落地",
-              "quote": "企业 AI Agent 进入生产后可靠性问题集中爆发：崩溃丢",
-              "url": "https://venturebeat.com/ai/ai-agents-are-entering-their-rebuild-era-as-enterprises-confront-the-reliability-problem",
+              "quote": "AI Agent的V1是用来踩坑的，V2才是干活用的。",
+              "url": "https://venturebeat.com/orchestration/ai-agents-are-entering-their-rebuild-era-as-enterprises-confront-the-reliability-problem",
               "published": "2026-05-31"
             },
             {
-              "uid": "ai_06572235",
-              "title": "伊利诺伊州通过全美最严 AI 安全法",
+              "uid": "ai_4e425135",
+              "title": "Figma Make全面开放：AI一句话生成应用，所有人可用但白嫖只能看",
+              "direction": "工具/平台",
+              "quote": "Figma把设计门槛从'会Sketch'降到了'会打字'，但赚钱的依然是卖门票的。",
+              "url": "https://www.theverge.com/news/712995/figma-make-ai-general-availability-announcement",
+              "published": "2026-05-31"
+            },
+            {
+              "uid": "ai_378c5f0d",
+              "title": "伊利诺伊州通过全美最严AI安全法：独立审计+吹哨人保护",
               "direction": "政策/合规",
-              "quote": "伊利诺伊州通过 AI 安全法案，要求 AI 公司接受独立审计",
-              "url": "https://www.theverge.com/news/illinois-ai-safety-law",
-              "published": "2026-05-31"
-            },
-            {
-              "uid": "ai_b8027233",
-              "title": "ElevenLabs 发布 Music v2：AI 音乐支持曲风实时切换",
-              "direction": "模型发布",
-              "quote": "ElevenLabs 推出 Music v2 模型，支持在同",
-              "url": "https://www.theverge.com/news/elevenlabs-music-v2",
+              "quote": "AI公司最怕的不是技术竞争，是州长开始读法律条文了。",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/849293/ai-alliance-universities-colleges-funding-ad-campaign-against-raise-act",
               "published": "2026-05-31"
             }
           ]
         },
-        "amazon": {
-          "displayName": "Amazon/AWS",
-          "icon": "📦",
+        "openai": {
+          "displayName": "OpenAI/GPT",
+          "icon": "🔬",
           "items": [
             {
-              "uid": "ai_4256bac1",
-              "title": "亚马逊 Prime Video 上线 AI 制作动画",
-              "direction": "应用/落地",
-              "quote": "Amazon 为三部 AI 动画系列开绿灯，包括《Cupca",
-              "url": "https://www.theverge.com/news/amazon-prime-video-ai-animated-series",
+              "uid": "ai_f10cdbe9",
+              "title": "OpenAI悄然停用ChatGPT Canvas界面：GPT-5.5时代放弃侧边编辑体验",
+              "direction": "工具/平台",
+              "quote": "Canvas死得比Google Reader还安静，OpenAI的UI团队大概是解散了。",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1",
               "published": "2026-05-31"
             }
           ]
@@ -500,11 +533,33 @@
           "icon": "🌐",
           "items": [
             {
-              "uid": "ai_b7917e8f",
-              "title": "Google Gemini 聊天记录将可分享到 Drive",
+              "uid": "ai_50a3f21c",
+              "title": "Google推出25年首次搜索框改版：从窄条输入框变多模态AI对话",
+              "direction": "模型发布",
+              "quote": "Google终于改了那个快被我遗忘的搜索框，但改之前没人觉得它需要改。",
+              "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
+              "published": "2026-05-31"
+            }
+          ]
+        },
+        "amazon": {
+          "displayName": "Amazon/AWS",
+          "icon": "📦",
+          "items": [
+            {
+              "uid": "ai_367ac91e",
+              "title": "Amazon高管内部喊停AI竞赛：'不要为了用AI而用AI'",
               "direction": "工具/平台",
-              "quote": "Google Workspace 宣布自 6 月 3 日起，",
-              "url": "https://www.theverge.com/news/google-gemini-drive-sharing",
+              "quote": "连Amazon都要手动关掉AI排名，说明KPI驱动一切的公司也怕AIKPI。",
+              "url": "https://www.ft.com/content/b1a62a7f-6df5-4c90-94ce-64ce9c9961b6",
+              "published": "2026-05-31"
+            },
+            {
+              "uid": "ai_a24e9ca5",
+              "title": "Merck用AI Agent将药物发现周期缩短三分之一",
+              "direction": "工具/平台",
+              "quote": "药厂终于不'再等五年'了，但AI说谎不好笑",
+              "url": "https://venturebeat.com/infrastructure/merck-and-mastercard-are-seeing-real-agentic-ai-results-both-say-the-plumbing-came-first",
               "published": "2026-05-31"
             }
           ]
@@ -514,11 +569,39 @@
           "icon": "☁️",
           "items": [
             {
-              "uid": "ai_3a7c423b",
-              "title": "新研究 MemFT 揭示 LoRA 记忆容量幂律定律",
-              "direction": "研究/论文",
-              "quote": "阿里团队发表研究，利用 LoRA 量化了大模型精确记忆容量上",
-              "url": "https://huggingface.co/papers/2605.30260",
+              "uid": "ai_2bcf6949",
+              "title": "NVIDIA发布Nemotron-Labs Diffusion扩散语言模型，推理速度达自回归6倍",
+              "direction": "模型发布",
+              "quote": "终于有人对自回归动手了，并行生成真香",
+              "url": "https://huggingface.co/blog/nvidia/nemotron-labs-diffusion",
+              "published": "2026-05-31"
+            }
+          ]
+        },
+        "deepseek": {
+          "displayName": "DeepSeek",
+          "icon": "🔍",
+          "items": [
+            {
+              "uid": "ai_fb7f897a",
+              "title": "MiniMax预告M3系列：全新稀疏注意力机制实现15.6倍加速",
+              "direction": "模型发布",
+              "quote": "MSA不压缩KV的路线比MLA更硬核",
+              "url": "https://venturebeat.com/ai/minimax-teases-upcoming-m3-model-with-new-sparse-attention-mechanism-and-15-6x-response-speed-boost",
+              "published": "2026-05-31"
+            }
+          ]
+        },
+        "mistral": {
+          "displayName": "Mistral",
+          "icon": "💨",
+          "items": [
+            {
+              "uid": "ai_50074f03",
+              "title": "Mistral AI全面扩张：工业AI平台+数据中心+Vibe品牌",
+              "direction": "模型发布",
+              "quote": "欧洲AI独苗终于不斗嘴了，改玩工业4.0",
+              "url": "https://venturebeat.com/ai/mistral-ai-launches-vibe-expands-into-industrial-ai-and-announces-data-center-push-to-challenge-openai",
               "published": "2026-05-31"
             }
           ]
@@ -550,6 +633,17 @@
       "direction": "模型发布"
     },
     {
+      "uid": "ai_2bcf6949",
+      "title": "NVIDIA发布Nemotron-Labs Diffusion扩散语言模型，推理速度达自回归6倍",
+      "content": "NVIDIA发布Nemotron-Labs Diffusion系列（3B/8B/14B文本+8B VLM），采用扩散式并行生成架构，非自回归逐token。支持自回归/扩散/自推测三种模式，推理速度6.4x。8B版本精度超越Qwen3 8B 1.2%。开源模型+训练代码。",
+      "quote": "终于有人对自回归动手了，并行生成真香",
+      "source": "Hugging Face / NVIDIA",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-labs-diffusion",
+      "published": "2026-05-31",
+      "vendor": "alibaba",
+      "direction": "模型发布"
+    },
+    {
       "uid": "ai_84316819",
       "title": "Amazon推出Alexa for Shopping：全面接管购物搜索，支持自动下单和跨站比价",
       "content": "Amazon将Alexa Plus全面整合到购物体验中，取代Rufus。新AI助手可直接在搜索栏回答问题、设置价格提醒、自动重新下单，甚至通过Buy for Me在其他网站代购。支持跨设备续接对话，无需Alexa账户即可使用。",
@@ -569,17 +663,6 @@
       "url": "https://venturebeat.com/technology/deepswe-blows-up-the-ai-coding-leaderboard-crowns-gpt-5-5-and-finds-claude-opus-exploiting-a-benchmark-loophole",
       "published": "2026-05-29",
       "vendor": "openai",
-      "direction": "模型发布"
-    },
-    {
-      "uid": "ai_073c19c9",
-      "title": "Microsoft发布Copilot Health AI预览版：可分析用户医疗记录",
-      "content": "微软宣布推出Copilot Health AI预览版，这款AI助手能分析患者医疗记录、诊断报告和用药史，帮助医生更快做出临床决策。集成在Microsoft Cloud for Healthcare中，支持HL7 FHIR标准，可对接现有医院信息系统。微软强调所有医疗数据均在合规框架下处理，符合HIPAA标准。",
-      "quote": "看病先问AI，医生负责签字，这流程我熟。",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/929457/microsoft-copilot-health-ai-preview",
-      "published": "2026-05-30",
-      "vendor": "microsoft",
       "direction": "模型发布"
     }
   ]
