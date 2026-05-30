@@ -1,462 +1,513 @@
 [
   {
-    "slug": "long-task-handoff",
-    "displayName": "Long Task Handoff",
-    "summary": "Automatically create a compact, standardized handoff file for long tasks to enable seamless session restarts or agent transfers without losing context or pro...",
+    "slug": "clawqueue",
+    "displayName": "ClawQueue",
+    "summary": "Turn GitHub Issues into a local agent queue. GitHub issues in, agent work out.",
     "tags": {
-      "codex": "0.1.1",
-      "handoff": "0.1.1",
-      "hermes": "0.1.1",
-      "latest": "0.1.1",
-      "long-task": "0.1.1",
-      "openclaw": "0.1.1",
-      "latest handoff long-task codex openclaw hermes": "0.1.0"
+      "latest": "0.1.8"
     },
     "stats": {
       "comments": 0,
-      "downloads": 0,
+      "downloads": 62,
       "installsAllTime": 0,
       "installsCurrent": 0,
-      "stars": 0,
-      "versions": 2
+      "stars": 1,
+      "versions": 9
     },
-    "createdAt": 1780157650868,
-    "updatedAt": 1780157802507,
+    "createdAt": 1780170727064,
+    "updatedAt": 1780178372887,
     "latestVersion": {
-      "version": "0.1.1",
-      "createdAt": 1780157802507,
-      "changelog": "Metadata republish: corrected tag parsing after initial upload; no skill content changes.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "agent-memory-cleanup",
-    "displayName": "Agent Memory Cleanup",
-    "summary": "Audit, clean, consolidate, and maintain long-term user memory files for agents such as OpenClaw, Hermes Agent, Codex, Claude, and other assistant runtimes. U...",
-    "tags": {
-      "latest": "0.2.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1780156098066,
-    "updatedAt": 1780157607013,
-    "latestVersion": {
-      "version": "0.2.0",
-      "createdAt": 1780157607013,
-      "changelog": "Add deterministic audit script, execution modes, memory pressure thresholds, secret redaction, duplicate/conflict handling, agent path reference, MCP wrapper guidance, README, license, and expanded fixtures/evals.",
+      "version": "0.1.8",
+      "createdAt": 1780178372887,
+      "changelog": "Update high-level description to highlight the core value of ClawQueue as an issue-driven local agent queue",
       "license": null
     },
     "metadata": {
-      "os": [
-        "windows",
-        "macos",
-        "linux"
-      ],
+      "os": null,
       "systems": null
     }
   },
   {
-    "slug": "re-blog-image",
-    "displayName": "Re Blog Image",
-    "summary": "Generate a 1600px-wide webp blog thumbnail image using the nano-img CLI. Use when the user provides a blog topic or blog name and wants a thumbnail image gen...",
+    "slug": "outlook-cli",
+    "displayName": "Outlook",
+    "summary": "Outlook / Microsoft 365 Secure API CLI for mail and calendar. Use when the user wants to read, search, or triage Outlook mail or calendar; sending, replying,...",
     "tags": {
-      "latest": "1.1.4"
+      "latest": "1.0.8"
     },
     "stats": {
       "comments": 0,
-      "downloads": 375,
+      "downloads": 357,
       "installsAllTime": 0,
       "installsCurrent": 0,
-      "stars": 0,
-      "versions": 8
+      "stars": 2,
+      "versions": 4
     },
-    "createdAt": 1776021847068,
-    "updatedAt": 1780156170491,
+    "createdAt": 1777661656932,
+    "updatedAt": 1780178105245,
     "latestVersion": {
-      "version": "1.1.4",
-      "createdAt": 1780156170491,
-      "changelog": "No user-facing changes in this version.\n\n- No file or documentation updates detected.\n- Functionality and instructions remain unchanged from the previous version.",
+      "version": "1.0.8",
+      "createdAt": 1780178105245,
+      "changelog": "- Adds calendar support: read, search, and manage Outlook/Microsoft 365 calendar alongside email.\n- Updated description to reflect mail and calendar coverage; notes CLI as a secure Outlook firewall alternative.\n- Expanded safety section to include calendar mutation safeguards and notifications guidance.\n- New commands for listing, searching, creating, updating, deleting, and responding to calendar events.\n- Improved metadata with detailed install steps and environment variable explanations.\n- Removed the sample file skill-card.md for streamlining.",
       "license": null
     },
-    "metadata": null
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
   },
   {
-    "slug": "re-blog-meta",
-    "displayName": "Re Blog Meta",
-    "summary": "Generate SEO-optimized title, SEO title, SEO description, SEO slug, and social tips for a blog post. Use when the user provides a blog name or slug to look u...",
+    "slug": "google-drive-secure",
+    "displayName": "Google Drive",
+    "summary": "Google Drive Secure Management. Use when the user wants to list, search, read text content, create files with inline content, upload binaries, create folders...",
     "tags": {
-      "latest": "1.1.4"
+      "latest": "1.0.9"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 572,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 3
+    },
+    "createdAt": 1773796162772,
+    "updatedAt": 1780177970264,
+    "latestVersion": {
+      "version": "1.0.9",
+      "createdAt": 1780177970264,
+      "changelog": "- Added Google Sheets functions\n- No user-facing changes or file changes detected in this release.\n- Version number incremented to 1.0.9.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "network-ai",
+    "displayName": "Network AI",
+    "summary": "Local Python orchestration skill: multi-agent workflows via shared blackboard file, permission gating, token budget scripts, and persistent project context....",
+    "tags": {
+      "latest": "5.8.9",
+      "audit": "4.0.4",
+      "autogen": "4.0.4",
+      "blackboard": "4.0.4",
+      "crewai": "4.0.4",
+      "langchain": "4.0.4",
+      "mcp": "4.0.4",
+      "multi-agent": "4.0.4",
+      "orchestration": "4.0.4",
+      "permissions": "4.0.4",
+      "security": "4.0.4",
+      "swarm": "4.0.4"
+    },
+    "stats": {
+      "comments": 2,
+      "downloads": 4593,
+      "installsAllTime": 9,
+      "installsCurrent": 9,
+      "stars": 6,
+      "versions": 137
+    },
+    "createdAt": 1771249598498,
+    "updatedAt": 1780177768916,
+    "latestVersion": {
+      "version": "5.8.9",
+      "createdAt": 1780177768916,
+      "changelog": "CodeQL #170/#173 TOCTOU fresh-var taint break, UTF-8 BOM fix for CI, claude-project-prompt hardcoded-3 refs removed",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "logger",
+    "displayName": "Log Automation — Append log entries to Google Sheet",
+    "summary": "Google Sheets Log Automation. Use when the user wants to append log entries, record audit trails, or automate event logging to a pre-configured Google Sheet...",
+    "tags": {
+      "latest": "1.0.1"
     },
     "stats": {
       "comments": 0,
       "downloads": 430,
       "installsAllTime": 0,
       "installsCurrent": 0,
-      "stars": 0,
-      "versions": 9
+      "stars": 1,
+      "versions": 2
     },
-    "createdAt": 1776007364076,
-    "updatedAt": 1780156166485,
+    "createdAt": 1773797708057,
+    "updatedAt": 1780177345900,
     "latestVersion": {
-      "version": "1.1.4",
-      "createdAt": 1780156166485,
-      "changelog": "re-blog-meta v1.1.4\n\n- Added a new rule to the Quality bar: do not use AI hype adjectives (e.g., \"comprehensive\", \"ultimate\", \"revolutionary\") in titles or descriptions.\n- Updated references/meta-output.md and SKILL.md to clarify and enforce this rule.\n- Added references/human-voice.md to provide guidance on writing in a natural, non-hyped style.",
+      "version": "1.0.1",
+      "createdAt": 1780177345900,
+      "changelog": "- Removed the file skill-card.md.\n- No functional or usage changes to the logger skill itself.\n- Metadata and documentation remain unchanged except for the removed file.",
       "license": null
     },
-    "metadata": null
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
   },
   {
-    "slug": "re-blog-writer",
-    "displayName": "Re Blog Writer",
-    "summary": "Research a topic using the browser then write a complete blog post saved as a .md file in ~/blogs. Use when the user provides a subject and wants a full, hum...",
+    "slug": "google-sheets-skill",
+    "displayName": "Google Sheets",
+    "summary": "Google Sheets Secure Management. Use when the user wants to create, read, write, or append spreadsheet data; manage tabs (read/add/delete); copy spreadsheets...",
     "tags": {
-      "latest": "1.1.4"
+      "latest": "1.0.8"
     },
     "stats": {
       "comments": 0,
-      "downloads": 489,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 10
-    },
-    "createdAt": 1775989101175,
-    "updatedAt": 1780156159284,
-    "latestVersion": {
-      "version": "1.1.4",
-      "createdAt": 1780156159284,
-      "changelog": "Version 1.1.4\n\n- Added new reference: references/human-voice.md to guide human-like voice in posts.\n- Updated quality bar to require the post must sound like a person with a real reaction; included check of human-voice reference.\n- Modified workflow and style enforcement steps to include the new human-voice requirements.\n- Updated documentation in SKILL.md and writing-style.md to reflect these changes.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "x-topic-tweet",
-    "displayName": "X Topic Tweet",
-    "summary": "Research a user-provided topic across the web and current social conversation, then publish one X post in the user's voice. Use when the user gives a topic,...",
-    "tags": {
-      "latest": "1.1.4"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 426,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 14
-    },
-    "createdAt": 1775906505155,
-    "updatedAt": 1780156153386,
-    "latestVersion": {
-      "version": "1.1.4",
-      "createdAt": 1780156153386,
-      "changelog": "No user-facing changes in this release.\n\n- Version bump with no detected file or documentation changes.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "x-reply-unreplied",
-    "displayName": "X Reply Unreplied",
-    "summary": "Check X notifications, mentions, or reply threads and answer posts that still need a response from the user. Use when the user wants help replying to unrepli...",
-    "tags": {
-      "latest": "1.1.4"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 478,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 14
-    },
-    "createdAt": 1775906458429,
-    "updatedAt": 1780156148609,
-    "latestVersion": {
-      "version": "1.1.4",
-      "createdAt": 1780156148609,
-      "changelog": "- No functional or documentation changes in this version.\n- No file changes detected.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "x-comment-feed-posts",
-    "displayName": "X Comment Feed Posts",
-    "summary": "Find posts in the user's X feed and leave comments on them one by one. Use when the user wants to comment on N posts from the feed, usually about indie tech...",
-    "tags": {
-      "latest": "1.1.4"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 435,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 14
-    },
-    "createdAt": 1775906263986,
-    "updatedAt": 1780156143373,
-    "latestVersion": {
-      "version": "1.1.4",
-      "createdAt": 1780156143373,
-      "changelog": "No user-facing changes in this version.\n\n- No file changes detected compared to previous release.\n- Functionality and documentation remain unchanged.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "bigseed",
-    "displayName": "🌱 Big Seed · 种子·种一个世界（种图片·闪念记录·人生拼图·你的故事）- Life Story Journal",
-    "summary": "闪念记录与人生拼图工具。捕捉生活点滴、感悟想法，从碎片信息构建用户画像，生成以用户为主人公的小说、电影剧本或自传。种一颗种子，长一个世界。Life story, journal, biography, memory keeper, novel generator.",
-    "tags": {
-      "ai": "2.0.9",
-      "biography": "2.0.9",
-      "creative": "2.0.9",
-      "emotion": "2.0.9",
-      "latest": "2.0.9",
-      "life": "2.0.9",
-      "memory": "2.0.9",
-      "novel": "2.0.9",
-      "portrait": "2.0.9",
-      "spark": "2.0.9",
-      "story": "2.0.9",
-      "thoughts": "2.0.9"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 1017,
+      "downloads": 0,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 1,
-      "versions": 18
+      "versions": 1
     },
-    "createdAt": 1779197928698,
-    "updatedAt": 1780155764474,
+    "createdAt": 1780177196479,
+    "updatedAt": 1780177196479,
     "latestVersion": {
-      "version": "2.0.9",
-      "createdAt": 1780155764474,
-      "changelog": "Cron工作流章节添加隐私安全警告（方案B）",
+      "version": "1.0.8",
+      "createdAt": 1780177196479,
+      "changelog": "- Improved documentation for Google Sheets secure management commands.\n- Added detailed usage examples for creating, reading, writing, and managing spreadsheets, tabs, and sharing.\n- Clarified environment variables and authentication methods.\n- Included explanation of key command-line flags and parameters.\n- Provided advanced usage notes, best practices, and troubleshooting tips for efficient Sheets operations.",
       "license": null
     },
-    "metadata": null
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
   },
   {
-    "slug": "yeet",
-    "displayName": "Yeet",
-    "summary": "Use only when the user explicitly asks to stage, commit, push, and open a GitHub pull request in one flow using the GitHub CLI (`gh`).",
+    "slug": "make-textbook",
+    "displayName": "Make Textbook",
+    "summary": "Research a subject via web search and produce a comprehensive, graduate-level university textbook as a professionally formatted PDF with table of contents, c...",
     "tags": {
-      "latest": "1.0.0"
+      "academic": "1.6.0",
+      "education": "1.6.0",
+      "latest": "1.6.0",
+      "learning": "1.6.0",
+      "pdf": "1.6.0",
+      "textbook": "1.6.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 0,
+      "downloads": 346,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 1
+      "versions": 4
     },
-    "createdAt": 1780155693978,
-    "updatedAt": 1780155693978,
+    "createdAt": 1779100034574,
+    "updatedAt": 1780177081461,
     "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780155693978,
-      "changelog": "Initial release automates staging, committing, pushing, and creating a GitHub pull request in one flow using GitHub CLI.\n\n- Checks for GitHub CLI (`gh`) installation and authentication before proceeding.\n- Guides branch, commit, and PR naming using conventional syntax.\n- Automates creation of branches, staging changes, and committing with concise messages.\n- Runs validation checks and handles dependency installation if needed.\n- Pushes changes and helps resolve push authentication errors.\n- Opens a draft pull request with detailed, correctly formatted markdown descriptions.",
+      "version": "1.6.0",
+      "createdAt": 1780177081461,
+      "changelog": "v1.6.0: Updated SKILL.md with improved frontmatter, restored Pass 3 chapter structure example, refreshed readability rules, and clean markup throughout. No symbol/emoji rendering issues.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "sprint-plan",
-    "displayName": "Sprint Plan",
-    "summary": "Use when the user asks to create, rewrite, or structure a concise one-week sprint plan, engineering sprint plan, focused project plan, or alignment doc with...",
+    "slug": "ralph-loop-rr",
+    "displayName": "Ralph Loop Rr",
+    "summary": "Ralph Loop is a task execution discipline that turns the AI agent into a self-running sprint machine. For every user task, the AI creates a structured persis...",
     "tags": {
-      "latest": "1.0.0"
+      "autonomy": "1.4.0",
+      "latest": "1.4.0",
+      "loop": "1.4.0",
+      "memory": "1.4.0",
+      "task-execution": "1.4.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 0,
+      "downloads": 191,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 1
+      "versions": 6
     },
-    "createdAt": 1780155686037,
-    "updatedAt": 1780155686037,
+    "createdAt": 1779738158996,
+    "updatedAt": 1780176642640,
     "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780155686037,
-      "changelog": "- Initial release of the sprint-plan skill.\n- Provides a concise template and workflow for one-week sprint planning and alignment docs.\n- Guides users to define sprint goal, scope, workstreams, metrics, and risks.\n- Emphasizes clear structure and direct, bullet-based summaries.\n- Avoids day-by-day scheduling unless explicitly requested.",
+      "version": "1.4.0",
+      "createdAt": 1780176642640,
+      "changelog": "v1.4.0: Serbian Telegram examples replaced with clean English. Skill is now 100% English throughout.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "migrate-model-defaults",
-    "displayName": "Migrate Model Defaults",
-    "summary": "Find, classify, and update hardcoded default-like model references in a repo. Use when the user wants to replace model strings, audit model defaults, central...",
+    "slug": "gmail-cli",
+    "displayName": "Gmail",
+    "summary": "Gmail - secure gmail inbox management CLI. Use when the user wants to read, search, or triage Gmail; sending, replying, forwarding, deleting, or modifying re...",
     "tags": {
-      "latest": "1.0.0"
+      "latest": "1.0.8"
     },
     "stats": {
       "comments": 0,
-      "downloads": 0,
+      "downloads": 387,
       "installsAllTime": 0,
       "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
+      "stars": 2,
+      "versions": 5
     },
-    "createdAt": 1780155680977,
-    "updatedAt": 1780155680977,
+    "createdAt": 1777661260517,
+    "updatedAt": 1780176614218,
     "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780155680977,
-      "changelog": "Initial release of migrate-model-defaults\n\n- Finds, classifies, and updates hardcoded model default references in a repository.\n- Guides users to identify an existing model string to replace and a new string to use.\n- Filters out noise (such as changelogs, tests, and docs examples) to focus on default-like references.\n- Groups candidate references semantically and presents a concise checklist for user selection—no edits until review.\n- Centralizes workflow and source defaults using repository variables or shared modules when applicable.\n- Provides workflow-aware validation, including optional actionlint and repo-required checks, and scans for remaining old-model literals.",
+      "version": "1.0.8",
+      "createdAt": 1780176614218,
+      "changelog": "- Removed the skill-card.md file.\n- Updated metadata to clarify environment variable use and add details for installers and permissions.\n- Improved safety notes, including specifics for destructive actions and mutating commands.\n- Added instructions for handling multi-mailbox accounts using --send-from and --connection-id for sending.\n- Documented new/updated structural fields in output, label behavior, and explicit thread-fetch/safety clarifications.\n- Expanded documentation on pagination, label case sensitivity, error code meanings, and handling of partial failures and spam.",
       "license": null
     },
-    "metadata": null
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
   },
   {
-    "slug": "chronicle",
-    "displayName": "Chronicle",
-    "summary": "Allows you to view the user's screen as well as several hours of history. Use when the user makes a reference to their recent work, for which it'd be helpful...",
+    "slug": "mineru-skill",
+    "displayName": "MinerU PDF Parser",
+    "summary": "An AI-Native skill for parsing PDF / Office / image files into Markdown with MinerU — a fast, zero-config document parser for AI agents. Works with NO token...",
     "tags": {
-      "latest": "1.0.0"
+      "latest": "3.1.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
+      "downloads": 644,
+      "installsAllTime": 1,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 1
+      "versions": 3
     },
-    "createdAt": 1780155637862,
-    "updatedAt": 1780155637862,
+    "createdAt": 1772247589333,
+    "updatedAt": 1780176499778,
     "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780155637862,
-      "changelog": "- Initial release of the Chronicle skill.\n- Enables viewing the user's current screen and several hours of screen history.\n- Use this skill to disambiguate requests where the user's context is unclear, or when the user references their recent work.\n- Requires that both Codex memories and Chronicle are enabled and running.\n- Provides detailed instructions for safely accessing and using screen recordings and related history files.\n- Establishes best practices for extracting context and upgrading to app-specific data sources when available.",
+      "version": "3.1.0",
+      "createdAt": 1780176499778,
+      "changelog": "v3.1.0 — MCP server, local engine (--engine), PDF split (--split), RAG chunking (--chunk), --doctor self-check",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "all-green",
-    "displayName": "All Green",
-    "summary": "Publish local changes to a GitHub pull request and keep working the PR until review feedback is addressed and required checks are green. Use when the user in...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780155632389,
-    "updatedAt": 1780155632389,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780155632389,
-      "changelog": "- Initial release of the all-green skill.\n- Automates the end-to-end workflow for preparing, publishing, and monitoring a GitHub pull request until all actionable review feedback is addressed and required checks are green.\n- Runs a pre-publish review gate, presents findings for user approval, and only applies user-approved fixes before publication.\n- Publishes changes, opens or updates a PR, and collects relevant PR metadata.\n- Monitors GitHub review threads and CI checks, implements fixes locally, and repeats the process as needed.\n- Obeys strict safety rules and requires explicit user approval for significant actions throughout the workflow.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "biga",
-    "displayName": "BigA · A股 智能选股（股票分析·投资分析·AI股票）",
-    "summary": "A股智能分析与智能选股工具。维护动态股票池(最多30支),按高科技×中小市值×好业绩原则筛选,推送买卖信号。含独立技术面择时分(-10~+10)用于判断买卖时机。A股投资、股市分析、量化选股。",
-    "tags": {
-      "ai": "6.0.13",
-      "analysis": "6.0.13",
-      "china": "6.0.13",
-      "finance": "6.0.13",
-      "investment": "6.0.13",
-      "latest": "6.0.13",
-      "market": "6.0.13",
-      "quant": "6.0.13",
-      "stock": "6.0.13",
-      "trading": "6.0.13"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 3540,
-      "installsAllTime": 3,
-      "installsCurrent": 3,
-      "stars": 3,
-      "versions": 140
-    },
-    "createdAt": 1777912205403,
-    "updatedAt": 1780155419783,
-    "latestVersion": {
-      "version": "6.0.13",
-      "createdAt": 1780155419783,
-      "changelog": "恢复cmd_send_segments子进程调用，消息分段推送解决手机端截断问题",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "paper-kb",
-    "displayName": "Paper Kb",
-    "summary": "Research paper knowledge base for storing and querying academic papers. Activate when: 1. User shares an arxiv link or PDF file AND expresses intent to save/...",
+    "slug": "calendar-cli",
+    "displayName": "Google Calendar",
+    "summary": "Google Calendar - secure Google calendar management. Use when the user wants to list, search, or read Google Calendar events; creating, updating, deleting, o...",
     "tags": {
       "latest": "1.0.2"
     },
     "stats": {
       "comments": 0,
-      "downloads": 0,
+      "downloads": 324,
       "installsAllTime": 0,
       "installsCurrent": 0,
-      "stars": 0,
+      "stars": 1,
       "versions": 3
     },
-    "createdAt": 1780149381105,
-    "updatedAt": 1780154432408,
+    "createdAt": 1777664834210,
+    "updatedAt": 1780176348002,
     "latestVersion": {
       "version": "1.0.2",
-      "createdAt": 1780154432408,
-      "changelog": "**Summary:**\nCritical instructions and warnings added to ensure correct PDF saving in Gitea during paper ingestion.\n\n- 明确要求在 arxiv 流程(B4)和 PDF 流程(C5)中，必须原样传入 pdf_local_path 字段，直接引自上游接口返回，确保 PDF 文件被保存到 Gitea。\n- 提示：如果省略 pdf_local_path 字段，PDF 文件将不会入库，仅会保存 MD 信息。\n- C5 步骤中加强说明：用户上传的 PDF，必须传入 OpenClaw 提供的原始本地路径作为 pdf_local_path。\n- 仅为实现和合规性文字增强，未改动整体流程设计或功能。\n- 其他步骤或接口未做更改。",
+      "createdAt": 1780176348002,
+      "changelog": "- Removed sample file: skill-card.md.\n- Updated to version 1.0.8.\n- SKILL metadata improved: clarified API key usage, added detailed environment variable descriptions, and homepage location.\n- Command examples expanded: added options for recurring, all-day, and attendee-filtered events; included free/busy and cancellation commands.\n- Clarified event status vs attendee RSVP fields and documented error handling for RSVP actions.\n- Notes now specify Google Calendar IDs are integer-based for this CLI, and explain contact matching behavior and rate-limiting codes.",
       "license": null
     },
-    "metadata": null
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
   },
   {
-    "slug": "claude-memory-graph-audit",
-    "displayName": "Claude Memory Graph Audit",
-    "summary": "审计并修复 Claude Code 的 session memory 目录（如 ~/.claude/projects/<session>/memory/）作为知识图谱的健康度。 触发场景： - 用户说\"体检/审计/检查我的 memory\"、\"memory 库健康度\"、\"哪些 memory 是孤立的\" - 用户说\"...",
+    "slug": "agent-self-assessment",
+    "displayName": "AI Agent Security Audit & Compliance Assessment",
+    "summary": "Compact AI agent security audit and compliance self-assessment for EU AI Act readiness, NIST AI governance, Zero Trust posture, agent payment accountability,...",
     "tags": {
-      "knowledge-graph": "0.1.0",
-      "latest": "0.1.0",
-      "llm-wiki": "0.1.0",
-      "maintenance": "0.1.0",
-      "memory": "0.1.0"
+      "agent-compliance": "2.4.3",
+      "agent-payments": "2.4.3",
+      "agent-safety": "2.4.3",
+      "agirails": "2.4.3",
+      "ai-governance": "2.4.3",
+      "compliance": "2.4.3",
+      "eu-ai-act": "2.4.3",
+      "eu-ai-act-compliance": "2.4.3",
+      "governance": "2.4.3",
+      "latest": "2.4.3",
+      "nist": "2.4.3",
+      "security": "2.4.3",
+      "security-audit": "2.4.3",
+      "self-assessment": "2.4.3",
+      "zero-trust": "2.4.3",
+      "automation-bias": "2.2.0",
+      "free": "2.2.1",
+      "oversight-quality": "2.2.1"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 1403,
+      "installsAllTime": 5,
+      "installsCurrent": 5,
+      "stars": 1,
+      "versions": 13
+    },
+    "createdAt": 1771355645180,
+    "updatedAt": 1780176095338,
+    "latestVersion": {
+      "version": "2.4.3",
+      "createdAt": 1780176095338,
+      "changelog": "Improve search relevance by moving high-intent terms into the public title while keeping the lean assessment structure.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "clawcall",
+    "displayName": "Skill",
+    "summary": "Use when the user wants an AI agent to place a US phone call, call a business, handle hold or phone menus, confirm/reschedule/cancel/book/follow up/check an...",
+    "tags": {
+      "latest": "1.0.10",
+      "deepgram": "1.0.3",
+      "dtmf": "1.0.3",
+      "phone": "1.0.3",
+      "telnyx": "1.0.3",
+      "voice": "1.0.3"
     },
     "stats": {
       "comments": 0,
-      "downloads": 0,
+      "downloads": 1720,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 4,
+      "versions": 10
+    },
+    "createdAt": 1770779848106,
+    "updatedAt": 1780175980549,
+    "latestVersion": {
+      "version": "1.0.10",
+      "createdAt": 1780175980549,
+      "changelog": "ClawCall 1.0.10\n\n- Major skill documentation overhaul: concise, scenario-driven guidance tailored to both end users and implementers.\n- Split documentation into modular reference files (API, errors, examples, inbound/outbound calls, account linking, pressure scenarios).\n- Expanded support details: inbound reserved-number handling, API key linking, and persistent user phone number logic.\n- Strengthened guidance on data gathering—emphasize agent-side lookups and non-intrusive user prompts.\n- Added workflow-specific coaching for common scenarios (option comparison, live handoff, complex call prep).\n- Replaced previous skill card with improved SkillCard.md summary.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "clawcall-dev",
+    "displayName": "ClawCall",
+    "summary": "Use when the user wants an AI agent to place a US phone call, call a business, handle hold or phone menus, confirm/reschedule/cancel/book/follow up/check an...",
+    "tags": {
+      "latest": "1.0.3",
+      "ai-calling": "1.0.2",
+      "appointments": "1.0.2",
+      "assistant": "1.0.2",
+      "automate": "1.0.2",
+      "booking": "1.0.2",
+      "call": "1.0.2",
+      "call-automation": "1.0.2",
+      "call-center": "1.0.2",
+      "callback": "1.0.2",
+      "calling": "1.0.2",
+      "customer-service": "1.0.2",
+      "deepgram": "1.0.2",
+      "elevenlabs": "1.0.2",
+      "healthcare": "1.0.2",
+      "live-handoff": "1.0.2",
+      "outbound-calls": "1.0.2",
+      "phone": "1.0.2",
+      "phone-agent": "1.0.2",
+      "phone-menu": "1.0.2",
+      "pstn": "1.0.2",
+      "realtime": "1.0.2",
+      "receptionist": "1.0.2",
+      "reservations": "1.0.2",
+      "rest-api": "1.0.2",
+      "restaurants": "1.0.2",
+      "speech": "1.0.2",
+      "telephony": "1.0.2",
+      "telnyx": "1.0.2",
+      "transcription": "1.0.2",
+      "twilio": "1.0.2",
+      "us-canada": "1.0.2",
+      "virtual-assistant": "1.0.2",
+      "voice-agent": "1.0.2"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 14697,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 7,
+      "versions": 4
+    },
+    "createdAt": 1774840514211,
+    "updatedAt": 1780175889850,
+    "latestVersion": {
+      "version": "1.0.3",
+      "createdAt": 1780175889850,
+      "changelog": "Version 1.0.3 — Major documentation and workflow refactor.\n\n- Broke out documentation into modular reference files for easier access and updates.\n- Replaced and greatly condensed SKILL.md, with a stronger focus on real-world workflows, outbound/inbound split, and product coaching.\n- Clarified persistent state and API key handling for agent-user linking and session continuity.\n- Outlined recommended AI call prep, info lookup, and user-prompting strategies.\n- Expanded guidance for phone agent tasks, handoff, probing, and error handling.\n- Updated documentation to reflect new or updated endpoints, response shapes, and best practices.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "deep-researcher-rr",
+    "displayName": "Deep Researcher",
+    "summary": "Generate comprehensive 30-40 page academic research papers with full citations. Trigger: deep research, generate research paper, academic paper, literature r...",
+    "tags": {
+      "academic": "1.1.0",
+      "apa7": "1.1.0",
+      "citations": "1.1.0",
+      "latest": "1.1.0",
+      "paper": "1.1.0",
+      "research": "1.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 15,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
       "versions": 1
     },
-    "createdAt": 1780154215909,
-    "updatedAt": 1780154215909,
+    "createdAt": 1780175158937,
+    "updatedAt": 1780175158937,
     "latestVersion": {
-      "version": "0.1.0",
-      "createdAt": 1780154215909,
-      "changelog": "Initial release: audit Claude Code session memory directory as knowledge graph. Detect broken wikilinks, orphan pages, hub nodes, bridge candidates. Includes audit.sh one-shot script.",
+      "version": "1.1.0",
+      "createdAt": 1780175158937,
+      "changelog": "v1.1.0 (fork of h4gen/deep-researcher): Added _meta.json. Full 7-stage research pipeline for 30-40 page academic papers with APA 7th citations, cross-verification, and QA checklist.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "calibre-ebooks",
+    "displayName": "Calibre Ebooks",
+    "summary": "Query the local Books API for Calibre books using OpenAPI discovery, then use local Calibre/RAG helpers only when file resolution or semantic indexing is exp...",
+    "tags": {
+      "latest": "0.0.7"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 240,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 6
+    },
+    "createdAt": 1779481721028,
+    "updatedAt": 1780174670180,
+    "latestVersion": {
+      "version": "0.0.7",
+      "createdAt": 1780174670180,
+      "changelog": "# calibre-ebooks 0.0.7 Changelog\n\n- Updated documentation in README.md and calibre-openclaw-server/README.md.\n- No code or functional changes—documentation only.",
       "license": null
     },
     "metadata": {
@@ -465,64 +516,149 @@
     }
   },
   {
-    "slug": "bigfish",
-    "displayName": "BigFish · AI钓鱼助手（钓点分析·鱼情分析·钓点分享）",
-    "summary": "🎣 AI钓鱼助手 — 拍水面智能分析鱼情，结合天气定位推荐鱼种·钓法·饵料。支持路亚/台钓/野钓，自动记录出钓报告和渔获数据。",
+    "slug": "chinese-official-writing",
+    "displayName": "中文公文写作",
+    "summary": "用于起草、改写和复核中文公文及正式工作材料；当用户要求通知、请示、报告、函、批复、纪要、方案、可研、调研、总结、讲话稿等中文正式文本，或需要顺稿、压缩、去口语化、降 AI 味、文种校验、办理要素核对时使用。不用于英文、文学、营销、社媒、批量语料或替代法律/财务/采购/审计判断。",
     "tags": {
-      "ai": "0.1.5",
-      "analysis": "0.1.5",
-      "angler": "0.1.5",
-      "anglers": "0.1.5",
-      "angling": "0.1.5",
-      "bait": "0.1.5",
-      "bigfish": "0.1.5",
-      "china": "0.1.5",
-      "fishing": "0.1.5",
-      "guide": "0.1.5",
-      "latest": "0.1.5",
-      "lure": "0.1.5",
-      "outdoor": "0.1.5",
-      "weather": "0.1.5"
+      "ai-compute": "1.2.21",
+      "chinese": "1.2.21",
+      "gongwen": "1.2.21",
+      "latest": "1.2.21",
+      "official-document": "1.2.21",
+      "writing": "1.2.21"
     },
     "stats": {
       "comments": 0,
-      "downloads": 233,
+      "downloads": 861,
       "installsAllTime": 0,
       "installsCurrent": 0,
-      "stars": 1,
-      "versions": 5
+      "stars": 0,
+      "versions": 20
     },
-    "createdAt": 1779884767225,
-    "updatedAt": 1780153941614,
+    "createdAt": 1778229986946,
+    "updatedAt": 1780174620532,
     "latestVersion": {
-      "version": "0.1.5",
-      "createdAt": 1780153941614,
-      "changelog": "优化触发词，解决Trigger Abuse告警：删除宽泛/影子/诱饵触发词，改用指令化句式",
+      "version": "1.2.21",
+      "createdAt": 1780174620532,
+      "changelog": "v1.2.21: 增加 references 阶段化加载表；为 prose_lint 输入错误提供友好提示；测试驱动扩展重复检测低信息词，保留数据、系统、平台等实义词。",
       "license": null
     },
-    "metadata": null
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
   },
   {
-    "slug": "smart-router-coding",
-    "displayName": "Smart Router Coding",
-    "summary": "Route coding queries to the right model. Fast for lint, deep for architecture, never waste money on Opus for a one-liner.",
+    "slug": "workday-calendar",
+    "displayName": "workday-calendar",
+    "summary": "智能周历系统。skill-standardization 改造（R-12 数据目录路径合规修复、_meta.json data_dir 字段补充、代码中新增 DEFAULT_DATA_DIR_RAW 审计锚点）",
     "tags": {
-      "latest": "1.0.3"
+      "latest": "1.6.5"
     },
     "stats": {
       "comments": 0,
-      "downloads": 0,
+      "downloads": 991,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 10
+    },
+    "createdAt": 1779206058875,
+    "updatedAt": 1780174576651,
+    "latestVersion": {
+      "version": "1.6.5",
+      "createdAt": 1780174576651,
+      "changelog": "workday-calendar 1.6.4\n\n- 新增 meta_field_sync: true 字段，增强元数据同步能力\n- tags 增加 'calendar', 'workday', 'holiday', 'schedule', 'excel-export'，便于检索和分类\n- 版本号更新至 1.6.4",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "skill-standardization",
+    "displayName": "skill-standardization",
+    "summary": "Skill 标准化规范引擎。支持 R-01~R-25 规范审查（audit/refactor/create 三模式），含权限扫描、数据目录合规检查、渐进式加载、更新日志渐进加载强制、_meta.json 字段规范性。R-07 增强：frontmatter trigger/trigger_negative 与正文一致性。",
+    "tags": {
+      "latest": "2.44.8"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1420,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 47
+    },
+    "createdAt": 1779452610754,
+    "updatedAt": 1780174496255,
+    "latestVersion": {
+      "version": "2.44.8",
+      "createdAt": 1780174496255,
+      "changelog": "No file changes detected; this release does not introduce any updates or modifications.\n\n- Version bump only; no code or documentation changes.\n- All features and behaviors remain the same as previous version.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "jetson-cuda-voice",
+    "displayName": "Jetson CUDA Voice",
+    "summary": "High-performance offline voice pipeline for NVIDIA Jetson with wake word detection, STT, and TTS.",
+    "tags": {
+      "latest": "1.2.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 971,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
       "versions": 3
     },
-    "createdAt": 1780150663871,
-    "updatedAt": 1780153651936,
+    "createdAt": 1771969315373,
+    "updatedAt": 1780174007974,
     "latestVersion": {
-      "version": "1.0.3",
-      "createdAt": 1780153651936,
-      "changelog": "Speed section: router adds 2ms, average wait ~13s per query (not 45s).",
+      "version": "1.2.0",
+      "createdAt": 1780174007974,
+      "changelog": "Added bilingual Groq fast-path, local GMM voice biometrics and enrollment, and automatic emoji/markdown filtering",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "uncle-matts-bot-battle-room",
+    "displayName": "Uncle Matt's Bot Battle Room",
+    "summary": "A public bot battle room skill for OpenClaw agents: read the room, post as an assigned persona, banter, rap battle, roast, throw absurd yo momma jokes, bluff...",
+    "tags": {
+      "agents": "4.420.69",
+      "alliance-game": "4.420.69",
+      "bot-battle": "4.420.69",
+      "chat": "4.420.69",
+      "competition": "4.420.69",
+      "creative-writing": "4.420.69",
+      "latest": "4.420.69",
+      "rap-battle": "4.420.69",
+      "roast": "4.420.69",
+      "trading": "4.420.69"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 171,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 5
+    },
+    "createdAt": 1779977791140,
+    "updatedAt": 1780173258630,
+    "latestVersion": {
+      "version": "4.420.69",
+      "createdAt": 1780173258630,
+      "changelog": "4.420.69: fixes Clawhub moderation findings by narrowing the stylebook activation guidance and replacing the flagged room-lore phrasing while keeping the bot battle flavor.",
       "license": null
     },
     "metadata": {
@@ -531,26 +667,26 @@
     }
   },
   {
-    "slug": "smart-router-intents",
-    "displayName": "Smart Router Intents",
-    "summary": "Route any query by intent. Code, analysis, creative, realtime, general. Each goes to the cheapest model that can handle it.",
+    "slug": "triphasic-execution",
+    "displayName": "triphasic-execution",
+    "summary": "Execute→Review→Advance 三步循环执行框架。增强步骤规划能力、增强语义理解；明确空转/重试/换思路/求助完整流转规则；最多重试3次、最多空转3次强制约束。",
     "tags": {
-      "latest": "1.0.1"
+      "latest": "5.17.3"
     },
     "stats": {
       "comments": 0,
-      "downloads": 0,
+      "downloads": 687,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 2
+      "versions": 12
     },
-    "createdAt": 1780150678410,
-    "updatedAt": 1780153598030,
+    "createdAt": 1779076943391,
+    "updatedAt": 1780170673949,
     "latestVersion": {
-      "version": "1.0.1",
-      "createdAt": 1780153598030,
-      "changelog": "Added speed section. Fixed: average 13s per query (router adds 2ms), not 45s. Models: Qwen3.5 Flash, Grok 4.20, Opus 4.8.",
+      "version": "5.17.3",
+      "createdAt": 1780170673949,
+      "changelog": "- Removed four documentation and progress-related files: skill-card.md and three temp_progress JSONs.\n- Cleaned up the project by deleting unused or temporary files.\n- No changes to core logic; operational behavior is unchanged.",
       "license": null
     },
     "metadata": {
@@ -559,143 +695,82 @@
     }
   },
   {
-    "slug": "biglead",
-    "displayName": "🎯 BigLead · 精准客户线索挖掘（行业分析·查找客户·拓展业务·联系方式）| B2B Lead Prospecting",
-    "summary": "🎯 BigLead 精准客户线索挖掘 — 按行业/产品/地区搜索目标公司，多渠道交叉验证，提取联系方式（如有），管理客户线索库。B2B销售、市场调研、竞品分析。",
+    "slug": "hug-html",
+    "displayName": "hug-html",
+    "summary": "组件式HTML模块引擎。8种原子组件自由组合 + 3级约束, cell merging, two-level module system (base + composite), 7+ built-in templates, grid-aware visual editor, style presets, post...",
     "tags": {
-      "ai": "1.0.6",
-      "b2b": "1.0.6",
-      "business": "1.0.6",
-      "crm": "1.0.6",
-      "data": "1.0.6",
-      "latest": "1.0.6",
-      "leads": "1.0.6",
-      "market": "1.0.6",
-      "prospecting": "1.0.6",
-      "sales": "1.0.6",
-      "search": "1.0.6"
+      "latest": "3.0.3"
     },
     "stats": {
       "comments": 0,
-      "downloads": 61,
+      "downloads": 272,
       "installsAllTime": 0,
       "installsCurrent": 0,
-      "stars": 1,
+      "stars": 0,
       "versions": 7
     },
-    "createdAt": 1780134328387,
-    "updatedAt": 1780153555229,
+    "createdAt": 1779960565440,
+    "updatedAt": 1780170571417,
     "latestVersion": {
-      "version": "1.0.6",
-      "createdAt": 1780153555229,
-      "changelog": "显示名增加英文：B2B Lead Prospecting",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "lobster-haoyun",
-    "displayName": "Lobster Haoyun",
-    "summary": "从你的对话和记忆中观察行为模式，用5个维度为你画像（工作方式/沟通模式/关注焦点/能量来源/情感倾向）， 生成每日运势和修炼提醒。通过 OceanBus 加密通道获取节气黄历数据（发送5维行为代码、城市级位置、日期和匿名OpenID）。 首次使用会自动创建 OceanBus 匿名身份（密码学随机生成，可随时删除更...",
-    "tags": {
-      "latest": "0.5.11"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 660,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
-      "stars": 1,
-      "versions": 32
-    },
-    "createdAt": 1779794736843,
-    "updatedAt": 1780153189683,
-    "latestVersion": {
-      "version": "0.5.11",
-      "createdAt": 1780153189683,
-      "changelog": "Fix: remove emoji from SVG (container fonts lack glyphs), strip newline/tab control chars from text input. Clean rendering on all platforms.",
+      "version": "3.0.3",
+      "createdAt": 1780170571417,
+      "changelog": "hug-html 3.0.3\n\n- 移除了示例输出文件 data/output/component-demo.html。\n- 不涉及功能或代码更改，仅为清理示例输出资源。",
       "license": null
     },
     "metadata": {
-      "os": [
-        "macos",
-        "linux",
-        "windows"
-      ],
+      "os": null,
       "systems": null
     }
   },
   {
-    "slug": "gogcli-mcp",
-    "displayName": "Tmp.ZTknye3Gao",
-    "summary": "Use when the user asks to interact with Google Workspace services. Triggers for requests involving Google Sheets, Docs, Gmail, Calendar, Drive, Tasks, or Con...",
+    "slug": "google-analytics-mcp",
+    "displayName": "Google Analytics MCP",
+    "summary": "Query Google Analytics 4 data — reports, funnels, realtime, property details — via the GA MCP server. Uses per-workspace service account credentials; no Gemi...",
     "tags": {
-      "latest": "2.2.0"
+      "latest": "1.0.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 976,
+      "downloads": 49,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 7
+      "versions": 1
     },
-    "createdAt": 1778783192352,
-    "updatedAt": 1780152126102,
+    "createdAt": 1780170170217,
+    "updatedAt": 1780170170217,
     "latestVersion": {
-      "version": "2.2.0",
-      "createdAt": 1780152126102,
-      "changelog": "- Removed the skill-card.md file.\n- No changes to core functionality or documentation in SKILL.md.",
+      "version": "1.0.0",
+      "createdAt": 1780170170217,
+      "changelog": "Initial release: query GA4 reports, funnels, realtime data and property details via MCP server",
       "license": null
     },
-    "metadata": null
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
   },
   {
-    "slug": "gogcli-mcp-slides",
-    "displayName": "Tmp.KQ5tAq44LJ",
-    "summary": "Use when the user asks to create, edit, read, or export Google Slides presentations. Triggers for requests involving slides, decks, presentations, speaker no...",
+    "slug": "ai-fullstack-content-factory",
+    "displayName": "AI全链路内容创作工厂",
+    "summary": "AI全链路内容创作工厂 — 从热点发现到多平台发布，一站式内容生产工作流",
     "tags": {
-      "latest": "2.2.0"
+      "latest": "1.0.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 982,
+      "downloads": 46,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 7
+      "versions": 1
     },
-    "createdAt": 1778783186055,
-    "updatedAt": 1780152121889,
+    "createdAt": 1780170127165,
+    "updatedAt": 1780170127165,
     "latestVersion": {
-      "version": "2.2.0",
-      "createdAt": 1780152121889,
-      "changelog": "- Removed the skill-card.md file.\n- No changes to functionality or end-user features.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "gogcli-mcp-sheets",
-    "displayName": "Tmp.LIcvq3RhGb",
-    "summary": "Use when the user asks to read, write, format, or manage Google Sheets. Triggers for requests involving spreadsheet data, cell formatting, tab management, na...",
-    "tags": {
-      "latest": "2.2.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 1059,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 8
-    },
-    "createdAt": 1778581972704,
-    "updatedAt": 1780152116525,
-    "latestVersion": {
-      "version": "2.2.0",
-      "createdAt": 1780152116525,
-      "changelog": "- Removed the file skill-card.md. \n- No functionality changes; documentation file only.",
+      "version": "1.0.0",
+      "createdAt": 1780170127165,
+      "changelog": "- 首发版本，集成 AI 全链路内容创作与分发工作流  \n- 支持热点发现、深度文章生成、知识卡片与封面图渲染  \n- 一键自动发布至小红书等多平台  \n- 灵活适用于公众号运营、科技内容创作者等多种场景",
       "license": null
     },
     "metadata": null
@@ -709,7 +784,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 83719,
+      "downloads": 83747,
       "installsAllTime": 2769,
       "installsCurrent": 2642,
       "stars": 55,
@@ -737,7 +812,7 @@
     },
     "stats": {
       "comments": 36,
-      "downloads": 181909,
+      "downloads": 182044,
       "installsAllTime": 3589,
       "installsCurrent": 3459,
       "stars": 907,
@@ -765,7 +840,7 @@
     },
     "stats": {
       "comments": 7,
-      "downloads": 185731,
+      "downloads": 185893,
       "installsAllTime": 4370,
       "installsCurrent": 4238,
       "stars": 620,
@@ -790,7 +865,7 @@
     },
     "stats": {
       "comments": 6,
-      "downloads": 157312,
+      "downloads": 157426,
       "installsAllTime": 3792,
       "installsCurrent": 3669,
       "stars": 406,
@@ -818,9 +893,9 @@
     },
     "stats": {
       "comments": 2,
-      "downloads": 82416,
-      "installsAllTime": 2077,
-      "installsCurrent": 2003,
+      "downloads": 82482,
+      "installsAllTime": 2078,
+      "installsCurrent": 2004,
       "stars": 315,
       "versions": 1
     },
@@ -846,9 +921,9 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 88429,
-      "installsAllTime": 2411,
-      "installsCurrent": 2337,
+      "downloads": 88533,
+      "installsAllTime": 2414,
+      "installsCurrent": 2340,
       "stars": 295,
       "versions": 1
     },
@@ -871,7 +946,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 90369,
+      "downloads": 90443,
       "installsAllTime": 2368,
       "installsCurrent": 2302,
       "stars": 257,
@@ -899,9 +974,9 @@
     },
     "stats": {
       "comments": 9,
-      "downloads": 99897,
-      "installsAllTime": 2524,
-      "installsCurrent": 2434,
+      "downloads": 99995,
+      "installsAllTime": 2525,
+      "installsCurrent": 2435,
       "stars": 410,
       "versions": 1
     },
@@ -927,7 +1002,7 @@
     },
     "stats": {
       "comments": 5,
-      "downloads": 33612,
+      "downloads": 33638,
       "installsAllTime": 1443,
       "installsCurrent": 1398,
       "stars": 54,
@@ -955,9 +1030,9 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 65716,
-      "installsAllTime": 2006,
-      "installsCurrent": 1941,
+      "downloads": 65761,
+      "installsAllTime": 2007,
+      "installsCurrent": 1942,
       "stars": 191,
       "versions": 1
     },
@@ -983,7 +1058,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 100907,
+      "downloads": 100986,
       "installsAllTime": 1853,
       "installsCurrent": 1791,
       "stars": 395,
@@ -1008,7 +1083,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 37251,
+      "downloads": 37274,
       "installsAllTime": 1564,
       "installsCurrent": 1516,
       "stars": 112,
@@ -1038,7 +1113,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 50900,
+      "downloads": 50938,
       "installsAllTime": 1577,
       "installsCurrent": 1528,
       "stars": 122,
@@ -1066,7 +1141,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 41792,
+      "downloads": 41835,
       "installsAllTime": 1480,
       "installsCurrent": 1425,
       "stars": 69,
@@ -1094,7 +1169,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 110224,
+      "downloads": 110322,
       "installsAllTime": 2559,
       "installsCurrent": 2483,
       "stars": 254,
@@ -1122,7 +1197,7 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 40007,
+      "downloads": 40067,
       "installsAllTime": 1421,
       "installsCurrent": 1380,
       "stars": 29,
@@ -1150,7 +1225,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 44522,
+      "downloads": 44561,
       "installsAllTime": 1521,
       "installsCurrent": 1481,
       "stars": 68,
@@ -1178,7 +1253,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 26250,
+      "downloads": 26266,
       "installsAllTime": 1251,
       "installsCurrent": 1212,
       "stars": 26,
@@ -1206,7 +1281,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 22100,
+      "downloads": 22112,
       "installsAllTime": 1243,
       "installsCurrent": 1212,
       "stars": 30,
@@ -1234,7 +1309,7 @@
     },
     "stats": {
       "comments": 12,
-      "downloads": 46632,
+      "downloads": 46660,
       "installsAllTime": 1415,
       "installsCurrent": 1375,
       "stars": 155,
@@ -1259,7 +1334,7 @@
     },
     "stats": {
       "comments": 4,
-      "downloads": 29424,
+      "downloads": 29458,
       "installsAllTime": 1322,
       "installsCurrent": 1284,
       "stars": 81,
@@ -1289,7 +1364,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 23980,
+      "downloads": 23997,
       "installsAllTime": 1115,
       "installsCurrent": 1086,
       "stars": 35,
@@ -1314,9 +1389,9 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 28312,
-      "installsAllTime": 1388,
-      "installsCurrent": 1341,
+      "downloads": 28338,
+      "installsAllTime": 1389,
+      "installsCurrent": 1342,
       "stars": 43,
       "versions": 1
     },
@@ -1345,7 +1420,7 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 18002,
+      "downloads": 18024,
       "installsAllTime": 1206,
       "installsCurrent": 1170,
       "stars": 7,
@@ -1373,9 +1448,9 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 25240,
-      "installsAllTime": 1174,
-      "installsCurrent": 1138,
+      "downloads": 25253,
+      "installsAllTime": 1175,
+      "installsCurrent": 1139,
       "stars": 51,
       "versions": 1
     },
