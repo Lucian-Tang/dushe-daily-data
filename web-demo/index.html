@@ -1075,10 +1075,26 @@ function renderGithubWeekly(weekly) {
   html += `<span>📦 总项目: ${stats.total_repos || 0}</span>`;
   html += `<span>🆕 新上榜: ${stats.new_entries || 0}</span>`;
   html += `<span>🔥 持续热门: ${stats.persistent || 0}</span>`;
+  // Language distribution
+  const langs = stats.languages || {};
+  const langTags = Object.entries(langs).slice(0, 5).map(([l, c]) => `${l}(${c})`).join(' · ');
+  if (langTags) html += `<span>🛠 ${langTags}</span>`;
   html += `</div></div>`;
 
+  // Weekly highlights
+  if (weekly.highlights && weekly.highlights.length) {
+    html += '<div style="font-size:0.82rem;font-weight:600;color:var(--text-bright);margin-bottom:8px">🌟 本周亮点</div>';
+    for (const h of weekly.highlights) {
+      const url = h.url || '#';
+      html += `<div class="weekly-highlight" onclick="window.open('${url.replace(/'/g, "\\'")}','_blank','noopener')">`;
+      html += `<div style="font-weight:600">${escHtml(h.title || '')}</div>`;
+      if (h.reason) html += `<div style="font-size:0.72rem;color:var(--green);margin-top:2px">💡 ${escHtml(h.reason)}</div>`;
+      html += `</div>`;
+    }
+  }
+
   if (weekly.top_10 && weekly.top_10.length) {
-    html += '<div style="font-size:0.82rem;font-weight:600;color:var(--text-bright);margin-bottom:8px">🏆 本周 Top 10</div>';
+    html += '<div style="font-size:0.82rem;font-weight:600;color:var(--text-bright);margin-bottom:8px;margin-top:12px">🏆 本周 Top 10</div>';
     for (let i = 0; i < weekly.top_10.length; i++) {
       const item = weekly.top_10[i];
       html += renderRankingCard({
@@ -1171,12 +1187,40 @@ function renderClawhubWeekly(weekly) {
   html += `<span>📦 总技能: ${stats.total_skills || 0}</span>`;
   html += `<span>🆕 新上榜: ${stats.new_entries || 0}</span>`;
   html += `<span>📥 总下载: ${(stats.total_downloads || 0).toLocaleString()}</span>`;
+  // Category distribution
+  const cats = stats.categories || {};
+  const catTags = Object.entries(cats).slice(0, 4).map(([c, n]) => `${c}(${n})`).join(' · ');
+  if (catTags) html += `<span>📂 ${catTags}</span>`;
   html += `</div></div>`;
 
+  // Weekly highlights
+  if (weekly.highlights && weekly.highlights.length) {
+    html += '<div style="font-size:0.82rem;font-weight:600;color:var(--text-bright);margin-bottom:8px">🌟 本周亮点</div>';
+    for (const h of weekly.highlights) {
+      const url = h.url || '#';
+      html += `<div class="weekly-highlight" onclick="window.open('${url.replace(/'/g, "\\'")}','_blank','noopener')">`;
+      html += `<div style="font-weight:600">${escHtml(h.title || '')}</div>`;
+      if (h.reason) html += `<div style="font-size:0.72rem;color:var(--green);margin-top:2px">💡 ${escHtml(h.reason)}</div>`;
+      html += `</div>`;
+    }
+  }
+
   if (weekly.top_10 && weekly.top_10.length) {
-    html += '<div style="font-size:0.82rem;font-weight:600;color:var(--text-bright);margin-bottom:8px">🏆 本周 Top 10</div>';
+    html += '<div style="font-size:0.82rem;font-weight:600;color:var(--text-bright);margin-bottom:8px;margin-top:12px">🏆 本周 Top 10</div>';
     for (let i = 0; i < weekly.top_10.length; i++) {
       html += renderClawhubCard(Object.assign({}, weekly.top_10[i], { url: weekly.top_10[i].url, content: weekly.top_10[i].content, downloads: weekly.top_10[i].downloads, stars_val: weekly.top_10[i].stars, quote: '' }), i + 1);
+    }
+  }
+
+  // Fastest growing section
+  if (weekly.fastest_growing && weekly.fastest_growing.length) {
+    html += '<div style="font-size:0.82rem;font-weight:600;color:var(--text-bright);margin-bottom:8px;margin-top:12px">📈 增速最快</div>';
+    for (const g of weekly.fastest_growing) {
+      const url = g.url || '#';
+      html += `<div class="weekly-highlight" onclick="window.open('${url.replace(/'/g, "\\'")}','_blank','noopener')">`;
+      html += `<div style="font-weight:600">${escHtml(g.title || '')} <span style="color:var(--green);font-size:0.72rem">+${g.growth || 0}</span></div>`;
+      if (g.reason) html += `<div style="font-size:0.72rem;color:var(--text-dim);margin-top:2px">💡 ${escHtml(g.reason)}</div>`;
+      html += `</div>`;
     }
   }
   return html;
