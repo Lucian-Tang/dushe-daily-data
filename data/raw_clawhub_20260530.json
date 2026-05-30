@@ -1,53 +1,119 @@
 [
   {
-    "slug": "customsdata",
-    "displayName": "海关数据分析专家",
-    "summary": "海关数据分析专家Skill — 提供海关进出口数据查询服务，支持按HS编码/产品名称、采购商、供应商进行多维度贸易数据分析",
+    "slug": "rollbar",
+    "displayName": "Rollbar",
+    "summary": "Monitor and manage Rollbar error tracking.",
     "tags": {
-      "latest": "1.0.56"
+      "latest": "1.4.1"
     },
     "stats": {
       "comments": 0,
-      "downloads": 1320,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 1,
-      "versions": 57
+      "downloads": 913,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 6
     },
-    "createdAt": 1779174386775,
-    "updatedAt": 1780120470665,
+    "createdAt": 1771520510175,
+    "updatedAt": 1780139254721,
     "latestVersion": {
-      "version": "1.0.56",
-      "createdAt": 1780120470665,
-      "changelog": "海关数据分析专家Skill v1.0.56\n\n- 新增「航运信息查询」功能（/queryShippingInfo），支持根据产品描述、HS编码、采购商/供应商信息查询详单及订单信息。\n- 精简查询类型，删除单独的「订单详情查询」，相关内容整合至航运信息查询模块。\n- 查询类型和返回字段描述同步更新，适配最新接口说明。\n- 说明文档细节完善，便于理解查询参数及返回结构。",
+      "version": "1.4.1",
+      "createdAt": 1780139254721,
+      "changelog": "MCP-compatible config (.rollbar-mcp.json), --project-name option, project-tokens/create/update commands, --save flag to auto-persist tokens",
       "license": null
     },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
+    "metadata": null
+  },
+  {
+    "slug": "lobster-wechat-publisher",
+    "displayName": "WeChat Article Publisher",
+    "summary": "从 Markdown 或 HTML 文件发布图文到微信公众号。支持本地图片自动上传、封面尺寸自动处理（2.35:1）、内容图片 CDN 替换、重试机制与草稿创建。适用场景：文章发布、批量图文生产、内容运营工作流。",
+    "tags": {
+      "articles": "2.1.0",
+      "automation": "2.1.0",
+      "gzh": "2.1.0",
+      "latest": "2.1.0",
+      "publishing": "2.1.0",
+      "wechat": "2.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780136524308,
+    "updatedAt": 1780138947050,
+    "latestVersion": {
+      "version": "2.1.0",
+      "createdAt": 1780138947050,
+      "changelog": "v2.1: 修复图片子目录路径解析/增强排版样式(首段引言+表格斑马纹+代码块)/dry-run图片检测/封面强制2.35:1",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "play-chess",
+    "displayName": "Play Chess on ChessWithClaw",
+    "summary": "Play live chess on ChessWithClaw as Black against you, connecting via invite URL or game ID and responding in real time with personalized moves and chat.",
+    "tags": {
+      "latest": "1.0.13",
+      "CHESS": "1.0.6",
+      "Chess": "1.0.6",
+      "chess": "1.0.6",
+      "chess skill": "1.0.6",
+      "chesswithclaw": "1.0.1",
+      "entertainment": "1.0.1",
+      "game": "1.0.1",
+      "how to play chess": "1.0.6",
+      "learn to play chess": "1.0.6",
+      "multiplayer": "1.0.1",
+      "openclaw": "1.0.1",
+      "play-chess-with-your-openclaw": "1.0.1",
+      "playing chess": "1.0.6",
+      "real-time": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 915,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 1,
+      "versions": 14
+    },
+    "createdAt": 1774087224337,
+    "updatedAt": 1780137836111,
+    "latestVersion": {
+      "version": "1.0.13",
+      "createdAt": 1780137836111,
+      "changelog": "**Major update: Streamlined connect and move logic; now requires LLM for every move.**\n\n- Added explicit step-by-step \"Instant Connect\" and \"Game Loop\" instructions for startup\n- Enforced use of LLM (not just stock engine) for every move in the game loop, with prompt/example\n- Required rapid move handling in check situations, with strict fallback and decision rules\n- Updated polling/heartbeat examples to new, more robust and reliable methods\n- Clarified ABSOLUTE RULES section and credential sourcing; emphasized never messaging outside the game\n- Reorganized and clarified guide for quick reference and faster onboarding",
+      "license": null
+    },
+    "metadata": null
   },
   {
     "slug": "dcc-mcp-creator",
     "displayName": "Dcc Mcp Creator",
     "summary": "Infrastructure skill - guide developers and agents through creating or modernizing a full DCC-MCP adapter for Nuke, Blender, 3ds Max, Unreal, ZBrush, Houdini...",
     "tags": {
-      "latest": "0.17.44"
+      "latest": "0.17.47"
     },
     "stats": {
       "comments": 0,
-      "downloads": 576,
+      "downloads": 624,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 15
+      "versions": 18
     },
     "createdAt": 1779695321243,
-    "updatedAt": 1780120066801,
+    "updatedAt": 1780137408179,
     "latestVersion": {
-      "version": "0.17.44",
-      "createdAt": 1780120066801,
-      "changelog": "- Version updated to 0.17.44 in metadata for consistency with the latest release.\n- No behavioral or documentation changes aside from the version bump in SKILL.md.",
+      "version": "0.17.47",
+      "createdAt": 1780137408179,
+      "changelog": "- Version updated from 0.17.46 to 0.17.47 in metadata.\n- No functional or documentation changes beyond the version bump.",
       "license": null
     },
     "metadata": {
@@ -60,22 +126,22 @@
     "displayName": "Dcc Mcp Skills Creator",
     "summary": "Infrastructure skill - create, validate, scaffold, and review DCC-MCP skills for the dcc-mcp-core ecosystem. Use when authoring SKILL.md, tools.yaml, scripts...",
     "tags": {
-      "latest": "0.17.44"
+      "latest": "0.17.47"
     },
     "stats": {
       "comments": 0,
-      "downloads": 570,
+      "downloads": 620,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 15
+      "versions": 18
     },
     "createdAt": 1779695310442,
-    "updatedAt": 1780120060271,
+    "updatedAt": 1780137401937,
     "latestVersion": {
-      "version": "0.17.44",
-      "createdAt": 1780120060271,
-      "changelog": "- Bumped version to 0.17.44 in SKILL.md.\n- No functional or documentation content changes; only the version number updated in the metadata frontmatter.",
+      "version": "0.17.47",
+      "createdAt": 1780137401937,
+      "changelog": "- Bumped version number to 0.17.47 in the SKILL.md frontmatter.\n- No other content or functionality changes.",
       "license": null
     },
     "metadata": {
@@ -88,308 +154,22 @@
     "displayName": "Dcc Cli Gateway",
     "summary": "Control live DCC hosts (Maya, Blender, Houdini, Photoshop, 3ds Max, and custom studio tools) through the dcc-mcp-cli command line. For ClawHub, OpenClaw, Cur...",
     "tags": {
-      "latest": "0.17.44"
+      "latest": "0.17.47"
     },
     "stats": {
       "comments": 0,
-      "downloads": 653,
+      "downloads": 704,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 17
+      "versions": 20
     },
     "createdAt": 1779639042654,
-    "updatedAt": 1780120053574,
+    "updatedAt": 1780137394657,
     "latestVersion": {
-      "version": "0.17.44",
-      "createdAt": 1780120053574,
-      "changelog": "- Bumped version metadata to 0.17.44 in SKILL.md.\n- No functional changes; documentation only.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "agent-cost-eval-kit",
-    "displayName": "Agent Cost Eval Kit",
-    "summary": "Evaluate whether an agent cost-control change actually reduced waste without obvious quality or reliability regressions. After an audit or manual change, hel...",
-    "tags": {
-      "latest": "1.0.1"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1780119275583,
-    "updatedAt": 1780119965208,
-    "latestVersion": {
-      "version": "1.0.1",
-      "createdAt": 1780119965208,
-      "changelog": "Fix: Change 'simple情报任务' to 'simple intelligence tasks' in Risk Class section (English-only website)",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "stock-analysis-team",
-    "displayName": "Stock Analyst Inspect",
-    "summary": "A股/美股自选股多维度分析 + 定时推送 + 风险预警 + 板块热榜。 【深度分析】用户输入股票代码/截图，触发多角色团队协同分析： 基本面/技术面/情绪/新闻四维分析 → 辩论 → 决策 → 风险评分(1-10) → HTML报告。 【综合评分】新增A股8维综合评分体系（技术面/资金面/基本面/市场情绪/风险）...",
-    "tags": {
-      "latest": "2.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1780119543081,
-    "updatedAt": 1780119808183,
-    "latestVersion": {
-      "version": "2.0.0",
-      "createdAt": 1780119543081,
-      "changelog": "新增：综合评分体系(5维加权)+风险预警(财报/减持/解禁/异常波动)+板块热榜扫描+多股对比；scripts/目录新增4个脚本",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "realestate-advisor",
-    "displayName": "Realestate Advisor Push",
-    "summary": "AI 房产资产顾问（置安居 v2.0）。面向业主、买房者、置换用户的三合一工具。 【业主模式】用户输入小区名（+面积）即开始分析，输出结构化资产分析报告： 估值区间、成交参照、挂牌竞争、市场状态、周边动态、决策信号。 支持多轮精度提升（补充楼层/朝向/装修/链家截图）。 【买房者模式】计算真实负担能力（含房贷/税...",
-    "tags": {
-      "latest": "2.0.1",
-      "advisor": "1.1.0",
-      "china": "1.1.0",
-      "property": "1.1.0",
-      "realestate": "1.1.0",
-      "valuation": "1.1.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 105,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 3
-    },
-    "createdAt": 1779936004583,
-    "updatedAt": 1780118345894,
-    "latestVersion": {
-      "version": "2.0.1",
-      "createdAt": 1780118345894,
-      "changelog": "补充首次对话引导：自动识别业主/买房者/置换意图，给出对应引导语",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "agent-routing-waste-audit",
-    "displayName": "Agent Routing Waste Audit",
-    "summary": "Paste an agent job, cron, routing, or run summary and get an immediate read-only audit of possible routing, retry, fallback, or model-assignment waste.",
-    "tags": {
-      "latest": "1.2.2"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 70,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 5
-    },
-    "createdAt": 1780065078098,
-    "updatedAt": 1780117462262,
-    "latestVersion": {
-      "version": "1.2.2",
-      "createdAt": 1780117462262,
-      "changelog": "UX polish: Features replaced by What You Get; removed Output Format, Parsing Reference, Evidence Depth Levels, Hermes Cron List Parser, Relationship to waste-audit, Common Pitfalls, Verification Checklist sections; Install/Activation/Copy-Paste Prompt in standalone fenced code blocks; What This Will Not Do reformatted with It will not: prefix once; no non-standard code fence attributes; no manual placeholders; no optional verification command; no --force flag.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "blossom-jobs",
-    "displayName": "Find and Offer New Work and Tasks",
-    "summary": "Set up Blossom Hire, create local work opportunities, and help employers and jobseekers move through Blossom work flows in plain language.",
-    "tags": {
-      "latest": "1.0.22"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 879,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 20
-    },
-    "createdAt": 1773843916116,
-    "updatedAt": 1780117326883,
-    "latestVersion": {
-      "version": "1.0.22",
-      "createdAt": 1780117326883,
-      "changelog": "- Enforced name validation: When registering, the first name and surname must not contain numbers—only letters, spaces, hyphens, and apostrophes are allowed. Users will be prompted to correct their names if digits are present.\n- Minor documentation updates and clarifications to the registration and data handling flows.\n- Removed the “skill-card.md” file.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "blossom-hire",
-    "displayName": "Get local help for shifts and tasks (Blossomai.org)",
-    "summary": "Set up Blossom Hire, create local work opportunities, and help employers and jobseekers move through Blossom work flows in plain language.",
-    "tags": {
-      "latest": "1.0.21",
-      "Hiring": "1.0.4",
-      "jobs": "1.0.4",
-      "local help": "1.0.4",
-      "local hiring": "1.0.4",
-      "tasks": "1.0.4"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 3322,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 1,
-      "versions": 20
-    },
-    "createdAt": 1769954746894,
-    "updatedAt": 1780117293877,
-    "latestVersion": {
-      "version": "1.0.21",
-      "createdAt": 1780117293877,
-      "changelog": "- Removed the file: skill-card.md.\n- Clarified that first name and surname for registration must not contain numbers; if digits are present, prompt user to correct the name before proceeding.\n- Updated instructions to ensure the name and surname sent to /register include only valid characters: letters, spaces, hyphens, and apostrophes.\n- No changes to user-facing features or workflow.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "kite-slim",
-    "displayName": "AI陪伴减肥",
-    "summary": "Kite博士的AI减肥陪伴智能体；根据昨日饮食热量智能计算今日目标步数，步数完成度是核心监督指标，饮食记录服务于步数目标的达成",
-    "tags": {
-      "OPC": "1.0.0",
-      "diet": "1.0.0",
-      "fitness": "1.0.0",
-      "health": "1.0.0",
-      "latest": "1.0.0",
-      "weightloss": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780117058437,
-    "updatedAt": 1780117058437,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780117058437,
-      "changelog": "kite-slim 1.0.0 Changelog\n\n- Initial release of kite-slim: Dr. Kite’s AI companion for weight loss supervision.\n- Core logic: yesterday’s caloric intake determines today’s step goal; step goal completion is the primary metric.\n- Clear daily workflow: record food → calculate calorie gap → set step target → supervise/track → end-of-day check-in → give feedback.\n- Strict data rule: only real records from `data/user_records.json` are valid for tracking; estimates must be labeled and can't be stored or shown as real.\n- Includes dedicated support for menstrual cycle, binge eating emergency modes, and schedule personalization.\n- Added reward system for consecutive target completion and gentle reminders for missed goals.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "git-sync",
-    "displayName": "git-sync",
-    "summary": "将skill代码规范化推送到码云、GitHub，并生成ZIP安装包。v2.6.28：修复跳过同步时状态显示「成功」的误导问题，改为「⏭️ 跳过」。",
-    "tags": {
-      "latest": "2.6.34"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 1075,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
-      "stars": 0,
-      "versions": 28
-    },
-    "createdAt": 1779283459061,
-    "updatedAt": 1780117000812,
-    "latestVersion": {
-      "version": "2.6.34",
-      "createdAt": 1780117000812,
-      "changelog": "- 版本号从 2.6.33 升级到 2.6.34。\n- 未检测到文件内容变更，仅为元数据版本号更新。\n- 功能、文档、描述等保持不变。",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "hug-html",
-    "displayName": "hug-html",
-    "summary": "组件式HTML模块引擎 v3.0.0：8种原子组件自由组合 + 3级约束, cell merging, two-level module system (base + composite), 7+ built-in templates, grid-aware visual editor, style preset...",
-    "tags": {
-      "latest": "3.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 187,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 6
-    },
-    "createdAt": 1779960565440,
-    "updatedAt": 1780116907795,
-    "latestVersion": {
-      "version": "3.0.0",
-      "createdAt": 1780116907795,
-      "changelog": "**hug-html 3.0.0 — 全新组件式引擎，支持8种原子组件与多级约束**\n\n- 引入 8 种原子组件体系（text, image, icon, qrcode, table, divider, spacer, group）和自由组合能力\n- 实现 3 级约束系统（fill / fit / clip），支持递归传递和精确布局控制\n- 提供全新组件组合方式和组合逻辑（方向、比例、对齐），自定义灵活性大幅提高\n- 增加 module_assembler 脚本，支持组件类型枚举、接口导出及系统演示\n- 所有旧模板和模块引用保持向后兼容\n- 新增 data/output/component-demo.html 作为组件系统演示 HTML 示例",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "skill-standardization",
-    "displayName": "skill-standardization",
-    "summary": "Skill 标准化规范引擎 v2.38.15。支持 R-01~R-24 规范审查（audit/refactor/create 三模式），含权限扫描、数据目录合规检查、渐进式加载、更新日志渐进加载强制。R-10 增强：自动三端版本号一致性检查；R-23 增强：MD 正文路径与 frontmatter data_di...",
-    "tags": {
-      "latest": "2.39.2"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 1175,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 36
-    },
-    "createdAt": 1779452610754,
-    "updatedAt": 1780116209428,
-    "latestVersion": {
-      "version": "2.39.2",
-      "createdAt": 1780116209428,
-      "changelog": "- 版本号从 2.39.1 升级到 2.39.2。\n- 仅包含版本号更新，无功能和文档内容变更。",
+      "version": "0.17.47",
+      "createdAt": 1780137394657,
+      "changelog": "- Bumped version to 0.17.47 in SKILL.md metadata.\n- No other functional or documentation changes.",
       "license": null
     },
     "metadata": {
@@ -402,111 +182,72 @@
     "displayName": "Q Erp",
     "summary": "千易 ERP 管理查询技能（一期增强）。覆盖自由经营问答、老板快报、今日经营动态、商品销售情况、增长潜力、平台/站点/店铺/店铺组/店铺负责人销售战绩、多日销售趋势；所有查询必须通过 q-claw。",
     "tags": {
-      "latest": "1.0.33"
+      "latest": "1.0.34"
     },
     "stats": {
       "comments": 0,
-      "downloads": 926,
+      "downloads": 968,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 1,
-      "versions": 28
+      "versions": 29
     },
     "createdAt": 1775905058881,
-    "updatedAt": 1780115996998,
+    "updatedAt": 1780136683176,
     "latestVersion": {
-      "version": "1.0.33",
-      "createdAt": 1780115996998,
-      "changelog": "- 增加多轮对话 drilldown 选项选择规则：支持用户通过编号/选项直接承接分析结果的下钻操作。\n- 明确 drilldownOptions 承接时，需根据返回内容原样调用，不允许重新猜测或向用户输出选项解释。\n- 新增规则 2.2，规范多轮下钻选项的参数传递及响应方式。\n- 其他内容保持不变，未新增业务能力或场景路由。",
+      "version": "1.0.34",
+      "createdAt": 1780136683176,
+      "changelog": "- 新增“Semantic Analysis Draft”机制：调用 erp.analytics.ask 时应尽量携带 params.semanticAnalysisDraft，指导分析链路和探查建议，细化语义解析能力。\n- 明确 semanticAnalysisDraft 使用范围与约束，仅作工具参数，不可展示或输出结论，不得覆盖用户明确口径。\n- 保持其它业务规则、场景路由、关键规则等不变，仅文档扩充，无 breaking change。\n- 版本号升至 1.0.34。",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "bilibili-video-transcriber",
-    "displayName": "Bilibili Video Transcriber",
-    "summary": "【B站字幕获取】专业处理 B 站视频字幕问题，支持语音转文字、字幕下载、内容分析。基于实际 B 站字幕系统错误问题开发，提供完整的解决方案。",
+    "slug": "a-stock-report",
+    "displayName": "A Stock Report",
+    "summary": "A股数据驱动型报告自动生成与推送系统，支持晨报 / 收盘小结 / 晚报 / 盘中预警 / IPO周报 / 财经周末要闻。内置投资者情绪打分（6维度，满分100）与AI后市展望。",
     "tags": {
-      "latest": "2.4.0"
+      "latest": "2.0.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 357,
+      "downloads": 2012,
       "installsAllTime": 0,
       "installsCurrent": 0,
-      "stars": 0,
-      "versions": 4
+      "stars": 1,
+      "versions": 31
     },
-    "createdAt": 1776216332073,
-    "updatedAt": 1780115638513,
+    "createdAt": 1775314593968,
+    "updatedAt": 1780136636796,
     "latestVersion": {
-      "version": "2.4.0",
-      "createdAt": 1780115638513,
-      "changelog": "v2.4.0: 删除视频转录步骤，优化超过30分钟视频的用户确认逻辑；v2.3.0: faster-whisper按系统配置按需安装",
-      "license": null
-    },
-    "metadata": {
-      "os": [
-        "linux",
-        "darwin",
-        "win32"
-      ],
-      "systems": null
-    }
-  },
-  {
-    "slug": "lingshu-agent-architect",
-    "displayName": "灵枢·Agent设计师",
-    "summary": "Agent 设计师，根据客户需求设计行业业务场景的 Agent 方案，并交付可运行的基础版 Agent。 核心工作流：需求沟通 → 场景大纲（7项必填）→ 创建基础版（配置+专用skill包）→ 后续skill迭代。 触发场景：用户说\"设计一个Agent\"、\"帮我做一个智能助手\"、\"XX行业怎么用Agent\"、\"...",
-    "tags": {
-      "latest": "1.2.1",
-      "v4.1": "1.2.1",
-      "agent": "1.1.0",
-      "agent-system": "1.0.0",
-      "architecture": "1.1.0",
-      "cross-industry": "1.0.1",
-      "designer": "1.1.0",
-      "v4.0": "1.1.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 181,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 5
-    },
-    "createdAt": 1779789442783,
-    "updatedAt": 1780115500871,
-    "latestVersion": {
-      "version": "1.2.1",
-      "createdAt": 1780115500871,
-      "changelog": "修复显示名称：从'Workspace Agent 744259b2'改回'灵枢·Agent设计师'",
+      "version": "2.0.0",
+      "createdAt": 1780136636796,
+      "changelog": "v2.0.0 架构重构：晚报拆分为采集层+推送层，问财权限白名单精确化，数据源更新为akshare，白名单表去重修正",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "shopprentice",
-    "displayName": "Shopprentice",
-    "summary": "AI-powered parametric furniture modeling for Fusion 360. Generates production-ready CAD models with real joinery from natural language, images, or reference...",
+    "slug": "lobster-haoyun",
+    "displayName": "Lobster Haoyun",
+    "summary": "从你的对话和记忆中观察行为模式，用5个维度为你画像（工作方式/沟通模式/关注焦点/能量来源/情感倾向）， 生成每日运势和修炼提醒。通过 OceanBus 加密通道获取节气黄历数据（发送5维行为代码、城市级位置、日期和匿名OpenID）。 首次使用会自动创建 OceanBus 匿名身份（密码学随机生成，可随时删除更...",
     "tags": {
-      "latest": "0.7.1"
+      "latest": "0.5.4"
     },
     "stats": {
       "comments": 0,
-      "downloads": 712,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 13
+      "downloads": 602,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 1,
+      "versions": 27
     },
-    "createdAt": 1774463285330,
-    "updatedAt": 1780115081812,
+    "createdAt": 1779794736843,
+    "updatedAt": 1780136176504,
     "latestVersion": {
-      "version": "0.7.1",
-      "createdAt": 1780115081812,
-      "changelog": "**Major refactor and documentation overhaul for improved structure, tooling, and maintainability.**\n\n- Split large helper scripts into modular files under `addin/tools/_capture_helpers` for better organization and code reuse.\n- Refactored and relocated developer and tool scripts (e.g., moved from `tools/` and `scripts/` to `dev/` and `addin/tools/`).\n- Migrated and expanded documentation to the `docs/` directory; previous woodworking docs removed or moved.\n- Updated planning and modeling references in SKILL.md to match new doc structure (`docs/` instead of `woodworking/`).\n- Added several new developer utilities for mesh and texture processing (`dev/textures/`, `dev/woodgrain/`).\n- Numerous example models updated for compatibility with the refactored tools and new best practices.",
+      "version": "0.5.4",
+      "createdAt": 1780136176504,
+      "changelog": "Security hardening: production URL (was test), static imports (was dynamic), metadata sync. Clarify L1 OpenID is public OB service address.",
       "license": null
     },
     "metadata": {
@@ -519,149 +260,11 @@
     }
   },
   {
-    "slug": "bigfish",
-    "displayName": "BigFish · AI钓鱼助手（钓点分析·鱼情分析·钓点分享）",
-    "summary": "🎣 AI钓鱼助手 — 拍水面智能分析鱼情，结合天气定位推荐鱼种·钓法·饵料。支持路亚/台钓/野钓，自动记录出钓报告和渔获数据。",
+    "slug": "mars-text-translator",
+    "displayName": "火星文转换器",
+    "summary": "将正常中文文本转换为火星文（2005-2010年代非主流网络文体）。 v2.1: 611 汉字映射，已清理生僻字，确保每个替代字都能被读者辨认。 触发词：火星文、非主流转换、转换火星文、fun text、火星文转换器。",
     "tags": {
-      "ai": "0.1.4",
-      "analysis": "0.1.4",
-      "angler": "0.1.4",
-      "anglers": "0.1.4",
-      "angling": "0.1.4",
-      "bait": "0.1.4",
-      "bigfish": "0.1.4",
-      "china": "0.1.4",
-      "fishing": "0.1.4",
-      "guide": "0.1.4",
-      "latest": "0.1.4",
-      "lure": "0.1.4",
-      "outdoor": "0.1.4",
-      "weather": "0.1.4"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 173,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 1,
-      "versions": 4
-    },
-    "createdAt": 1779884767225,
-    "updatedAt": 1780113399359,
-    "latestVersion": {
-      "version": "0.1.4",
-      "createdAt": 1780113399359,
-      "changelog": "显示名优化：天气鱼情→鱼情分析",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "flashrev-ai-enrich",
-    "displayName": "FlashRev AI Enrich",
-    "summary": "Use this skill when an AI agent needs to enrich a CSV lead list through the flashrev-ai-enrich npm CLI (v1.0+). Triggers on requests involving list enrichmen...",
-    "tags": {
-      "latest": "1.0.2"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 75,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 1,
-      "versions": 3
-    },
-    "createdAt": 1780062229533,
-    "updatedAt": 1780113286231,
-    "latestVersion": {
-      "version": "1.0.2",
-      "createdAt": 1780113286231,
-      "changelog": "Fix customer_api SSRF rejection from batch-fatal (HTTP 403) to per-row failure (HTTP 400). Previously one blocked URL anywhere in the CSV would terminate the entire batch, contradicting the documented per-row failure semantics. Verified end-to-end against production backend with a mixed good/SSRF/file:// 3-row CSV.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "workday-calendar",
-    "displayName": "workday-calendar",
-    "summary": "智能周历系统 v1.6.0 - skill-standardization 改造（R-12 数据目录路径合规修复、_meta.json data_dir 字段补充、代码中新增 DEFAULT_DATA_DIR_RAW 审计锚点）",
-    "tags": {
-      "latest": "1.6.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 881,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 7
-    },
-    "createdAt": 1779206058875,
-    "updatedAt": 1780113277345,
-    "latestVersion": {
-      "version": "1.6.0",
-      "createdAt": 1780113277345,
-      "changelog": "workday-calendar v1.6.0\n\n- 完成 skill-standardization 合规改造，修复 R-12 数据目录路径，规范 data_dir 字段（含 _meta.json 补充）\n- 数据存储路径更新为 .standardization/workday-calendar/data/\n- 新增 external_data_dir 标记\n- 代码层增加 DEFAULT_DATA_DIR_RAW 审计锚点\n- 移除 skill-card.md（已删除冗余说明）",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "canonry",
-    "displayName": "Canonry",
-    "summary": "Agent-first AEO operating platform.",
-    "tags": {
-      "latest": "4.64.1+a2ad8b9"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 4844,
-      "installsAllTime": 2,
-      "installsCurrent": 2,
-      "stars": 1,
-      "versions": 270
-    },
-    "createdAt": 1774104995898,
-    "updatedAt": 1780112511083,
-    "latestVersion": {
-      "version": "4.64.1+a2ad8b9",
-      "createdAt": 1780112511083,
-      "changelog": "Sync with canonry v4.64.1 (a2ad8b9)",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "hourly-report",
-    "displayName": "hourly-report",
-    "summary": "抖音直播间小时战报，每小时定点获取直播数据并发送到钉钉群。支持API模式和爬取模式两种方式。Invoke when user wants to set up hourly live stream reports for Douyin.",
-    "tags": {
-      "latest": "1.0.4"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 106,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 3
-    },
-    "createdAt": 1779934475349,
-    "updatedAt": 1780112268850,
-    "latestVersion": {
-      "version": "1.0.4",
-      "createdAt": 1780112268850,
-      "changelog": "- No changes detected in this version (1.0.4); documentation and functionality remain the same as the previous release.\n- The SKILL.md and all files are unchanged.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "amazon-ads-manager",
-    "displayName": "amazon-ads-manager",
-    "summary": "Manage Amazon Advertising campaigns via the official Advertising API. Read live campaign/keyword/search-term performance, calculate ACOS/ROAS/CTR, identify w...",
-    "tags": {
-      "latest": "1.1.0"
+      "latest": "2.1.0"
     },
     "stats": {
       "comments": 0,
@@ -671,20 +274,76 @@
       "stars": 0,
       "versions": 1
     },
-    "createdAt": 1780110821432,
-    "updatedAt": 1780110821432,
+    "createdAt": 1780135920659,
+    "updatedAt": 1780135920659,
     "latestVersion": {
-      "version": "1.1.0",
-      "createdAt": 1780110821432,
-      "changelog": "Version 1.1.0\n\n- Added detailed setup instructions and environment variable requirements for Amazon Advertising API credentials.\n- Expanded command documentation for campaign, ad group, keyword, and search term management.\n- Introduced step-by-step optimization workflow and campaign performance report examples.\n- Clarified output format and confirmation requirements before making bid or state changes.\n- Enhanced description and trigger phrases (including multilingual support) for easier discovery and use.",
+      "version": "2.1.0",
+      "createdAt": 1780135920659,
+      "changelog": "v2.1: 清理生僻字映射，移除204条不可辨认替代字，恢复经典火星文（莪/涐/茬），新增聽/壞等繁体映射，写入映射质量规则",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "ctg-bus",
-    "displayName": "CTG Bus",
-    "summary": "查询中旅巴士（hkctgbus）班次、票价和余票。当用户提到「中旅」「中旅巴士」「ctg」「hkctgbus」「中旅快线」「跨境巴士」等查询时触发。支持中文自然语言输入，自动解析日期、城市、站点。",
+    "slug": "agent-lens",
+    "displayName": "Agent Lens",
+    "summary": "Track AI agent API calls, analyze token usage, and optimize costs. Use when user wants to monitor LLM spending, debug API calls, track token consumption, or...",
+    "tags": {
+      "latest": "2.16.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1361,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 25
+    },
+    "createdAt": 1778299304642,
+    "updatedAt": 1780135385804,
+    "latestVersion": {
+      "version": "2.16.0",
+      "createdAt": 1780135385804,
+      "changelog": "No file or documentation changes detected in this release.\n\n- Version bumped from 2.15.0 to 2.16.0.\n- No new features, bug fixes, or documentation updates.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "hermes-db-explorer",
+    "displayName": "Db Explorer",
+    "summary": "Connect to and explore databases (PostgreSQL, MySQL, SQLite, MongoDB, Redis). Run queries, inspect schemas, export data. Use when user wants to query a datab...",
+    "tags": {
+      "latest": "2.4.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 227,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1778839364724,
+    "updatedAt": 1780135377599,
+    "latestVersion": {
+      "version": "2.4.0",
+      "createdAt": 1780135377599,
+      "changelog": "- Updated to version 2.4.0.\n- Documentation improvements in SKILL.md; no functionality changes.\n- Removed the skill-card.md file to streamline the repository.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "dargue-flag",
+    "displayName": "Dargue Flag",
+    "summary": "搜索和浏览视频内容。触发词：搜视频、看视频、找视频、热门视频、视频详情、有什么视频、来点视频、看片。支持关键词搜索、分类浏览、热门榜单、视频详情查看。",
     "tags": {
       "latest": "1.0.0"
     },
@@ -696,12 +355,357 @@
       "stars": 0,
       "versions": 1
     },
-    "createdAt": 1780110297029,
-    "updatedAt": 1780110297029,
+    "createdAt": 1780134855250,
+    "updatedAt": 1780134855250,
     "latestVersion": {
       "version": "1.0.0",
-      "createdAt": 1780110297029,
-      "changelog": "中旅巴士(hkctgbus)班次查询，支持10个城市、常用站点，自动解析中文自然语言",
+      "createdAt": 1780134855250,
+      "changelog": "dargue-flag 1.0.0\n\n- 首次发布：支持视频内容搜索、分类浏览、热门榜单展示及视频详情查看。\n- 支持多种自然语言触发词，例如“搜视频”“热门视频”“看片”等。\n- 配置流程清晰，需本地存储 API Key 并引导用户安全配置。\n- 搜索与浏览结果仅展示标题与时长，回复序号即可查看详情。\n- 用户可依据兴趣关键词、分类、热门榜单等多方式获取所需视频内容。\n- 严格的数据安全与内容管控措施，保障隐私与合规。",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "memory-and-context-engineering",
+    "displayName": "AGI记忆模组",
+    "summary": "用户与模型间的任何交互行为都会触发此技能；提供Context Engineering五大核心能力（选择、压缩、检索、状态、记忆）及认知模型层支持；作为元技能强制常驻运行",
+    "tags": {
+      "latest": "1.0.11"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 433,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 7
+    },
+    "createdAt": 1774494898661,
+    "updatedAt": 1780134390591,
+    "latestVersion": {
+      "version": "1.0.11",
+      "createdAt": 1780134390591,
+      "changelog": "- Removed the skill-card.md file from the project.\n- No functional changes or code updates; this release is a documentation cleanup only.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "biglead",
+    "displayName": "🎯 BigLead · 精准客户线索挖掘（行业搜索·公司画像·联系方式提取）",
+    "summary": "🎯 BigLead 精准客户线索挖掘 — 按行业/产品/地区搜索目标公司，多渠道交叉验证，提取联系方式（如有），管理客户线索库。B2B销售、市场调研、竞品分析。",
+    "tags": {
+      "ai": "1.0.0",
+      "b2b": "1.0.0",
+      "business": "1.0.0",
+      "crm": "1.0.0",
+      "data": "1.0.0",
+      "latest": "1.0.0",
+      "leads": "1.0.0",
+      "market": "1.0.0",
+      "prospecting": "1.0.0",
+      "sales": "1.0.0",
+      "search": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780134328387,
+    "updatedAt": 1780134328387,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780134328387,
+      "changelog": "🎯 BigLead v1.0 — 按行业/产品/地区搜索目标公司，多渠道交叉验证，提取联系方式",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "agent-cost-eval-kit",
+    "displayName": "Agent Cost Eval Kit",
+    "summary": "Agent Cost Eval Kit — Quickly check whether an agent looks unusually expensive, then evaluate confirmed cost-control changes only when comparable evidence ex...",
+    "tags": {
+      "latest": "2.2.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 53,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 5
+    },
+    "createdAt": 1780119275583,
+    "updatedAt": 1780134258654,
+    "latestVersion": {
+      "version": "2.2.0",
+      "createdAt": 1780134258654,
+      "changelog": "v2.2.0: Reposition as Quick Check + Eval Kit. New triage-first flow: quick status first, full eval only when comparable evidence exists. Add fallback URL install. New labels: No Action Needed / Watch / Investigate One Path / Run Routing Audit / Unsafe to Judge. Remove evaluation form behavior. Remove before/after sample demands. Removed: Mode 1/2/3 sections, Status Definitions table, Output Format Reference, long checklist language.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "ci-package-deploy-notify",
+    "displayName": "ci-package-deploy-notify",
+    "summary": "仅当用户明确要求触发 Jenkins 打包/部署，并在成功后发送飞书部署提醒时使用。适用于用户明确点名要打包某些服务、选择环境或分支、等待构建完成后通知部署的场景。模型只负责决定参数，实际执行必须调用本 skill 自带脚本。",
+    "tags": {
+      "latest": "1.0.7"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 177,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 7
+    },
+    "createdAt": 1779791316133,
+    "updatedAt": 1780134101317,
+    "latestVersion": {
+      "version": "1.0.7",
+      "createdAt": 1780134101317,
+      "changelog": "Run AUTO_CD multi-repo deployments in parallel and collect all results before sending one summary notification; keep CI parallelism, duplicate-trigger fixes, and failure Jenkins links.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "camofox-cloaked-browser",
+    "displayName": "Camofox Cloaked Browser",
+    "summary": "Use Camofox/Camoufox as an opt-in anti-detection browser server for agent workflows that need cloaked browsing. Covers npm/npx startup, OpenClaw plugin tools...",
+    "tags": {
+      "latest": "1.3.3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 4
+    },
+    "createdAt": 1780132543702,
+    "updatedAt": 1780133531097,
+    "latestVersion": {
+      "version": "1.3.3",
+      "createdAt": 1780133531097,
+      "changelog": "Manual update from latest local SKILL.md. Keeps CAMOFOX_API_KEY optional and clarifies it is only for sensitive endpoints, not normal browsing.",
+      "license": null
+    },
+    "metadata": {
+      "os": [
+        "macos",
+        "linux"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "emocity-biometric-scan",
+    "displayName": "EmoCity Biometric Scan",
+    "summary": "Real-time, on-device emotion and stress read from your camera — mood, stress, authenticity, micro-expressions, gaze steadiness, and a heart-rate estimate, fr...",
+    "tags": {
+      "latest": "1.0.5",
+      "biometrics": "1.0.3",
+      "emotion-ai": "1.0.3",
+      "face-analysis": "1.0.3",
+      "health": "1.0.3",
+      "lie-detector": "1.0.3",
+      "stress-detection": "1.0.3",
+      "voice-stress": "1.0.3"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 366,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 4
+    },
+    "createdAt": 1774952256235,
+    "updatedAt": 1780133518815,
+    "latestVersion": {
+      "version": "1.0.5",
+      "createdAt": 1780133518815,
+      "changelog": "- Major update: Documentation and public messaging rewritten for clarity, user-friendliness, and strict accuracy about limitations.\n- Stronger emphasis that EmoCity is not a medical, forensic, or lie-detection tool.\n- Language updated to plain, warm guidance — focus on self-insight and entertainment.\n- Old documentation files removed (README.md, skill-card.md, and clawhub.json).\n- All references to \"lie detection\" reframed as a party game or fun \"composure\" gauge. \n- Signal descriptions and response guidelines clarified, including more distinct warnings about reliability and limits.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "pm-workbench",
+    "displayName": "pm-workbench",
+    "summary": "Use when product work needs clearer framing, prioritization, or communication: clarifying a vague request, evaluating whether a feature is worth doing, compa...",
+    "tags": {
+      "latest": "1.2.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 318,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 1,
+      "versions": 3
+    },
+    "createdAt": 1775908436828,
+    "updatedAt": 1780133387330,
+    "latestVersion": {
+      "version": "1.2.0",
+      "createdAt": 1780133387330,
+      "changelog": "pm-workbench 1.1.4 adds expanded documentation, improved guidance, and clearer use boundaries.\n\n- Added extensive new documentation and example artifacts (including images, benchmarks, and multi-language samples).\n- Introduced a dedicated \"Use boundaries\" section to clarify when the skill should and shouldn’t be applied.\n- Revised follow-up question rules for more focus (default now 0–2 unless the task is high-risk or ambiguous).\n- Updated workflow routing and artifact mapping to be more explicit and easier to navigate.\n- Removed SVG images and the old skill card, replacing them with updated PNGs and richer example content.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "spec-kit-coding",
+    "displayName": "Spec-kit Coding",
+    "summary": "Orchestrator for GitHub Spec-Kit SDD workflow in OpenClaw. Use when starting a new project with spec-driven development, setting up spec-kit toolchain, or ru...",
+    "tags": {
+      "latest": "1.0.3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 218,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 4
+    },
+    "createdAt": 1779604839351,
+    "updatedAt": 1780133034687,
+    "latestVersion": {
+      "version": "1.0.3",
+      "createdAt": 1780133034687,
+      "changelog": "spec-kit-coding v1.0.3\n\n- Added TODO.txt file as a placeholder or for pending items.\n- No changes to code or behavior; only documentation and hard constraints content updated.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "xianchou",
+    "displayName": "Skills",
+    "summary": "Xianchou CLI (xianchou) — 面向 AI Agent 的 Markdown/MDX 自动配图与 AI 视频生成工具。 支持调用献丑 /api/cli 专用接口进行 AI 生图、AI 生视频、模型查询、任务轮询， 以及为任意 Markdown/MDX 插入图片。Use when editing...",
+    "tags": {
+      "latest": "0.1.1",
+      "ai-tools": "0.1.0",
+      "cli": "0.1.0",
+      "image-generation": "0.1.0",
+      "markdown": "0.1.0",
+      "video-generation": "0.1.0",
+      "xianchou": "0.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 228,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1777450897529,
+    "updatedAt": 1780132497435,
+    "latestVersion": {
+      "version": "0.1.1",
+      "createdAt": 1780132497435,
+      "changelog": "新增 upload 命令",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "simmer",
+    "displayName": "Simmer Publish Simmer",
+    "summary": "The prediction market interface for AI agents. Trade Polymarket and Kalshi through one API with self-custody wallets, safety rails, and smart context.",
+    "tags": {
+      "latest": "1.24.2",
+      "kalshi": "1.5.6",
+      "polymarket": "1.5.6",
+      "prediction-markets": "1.5.6",
+      "trading": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 9177,
+      "installsAllTime": 36,
+      "installsCurrent": 34,
+      "stars": 23,
+      "versions": 58
+    },
+    "createdAt": 1769845582585,
+    "updatedAt": 1780132196691,
+    "latestVersion": {
+      "version": "1.24.2",
+      "createdAt": 1780132196691,
+      "changelog": "Consolidate the simmer overview to a single canonical source (SDK skill). Add simmer-mcp-setup reference row. Per-agent OWS activation detail now lives in simmer-wallet-setup.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "now-practice",
+    "displayName": "Now Practice",
+    "summary": "Guided 60-second mindfulness sessions with four steps to ease anxiety, overthinking, decision stress, or emotions using tailored prompts.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780132192860,
+    "updatedAt": 1780132192860,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780132192860,
+      "changelog": "Initial release of now-practice.\n\n- Provides a 1-minute mindfulness practice flow with 4 fixed steps: stop, breathe, huatou, and return.\n- Supports multiple scenes (e.g., anxiety, overthinking, emotion) with tailored huatou prompts.\n- Randomly selects huatou prompts based on scene and fills template variables.\n- Records each completed practice in localStorage for streak tracking.\n- Calculates consecutive practice days by deduplicating completion records by date.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "now-huatou-engine",
+    "displayName": "Now Huatou Engine",
+    "summary": "Generate Zen-style kōan prompts by selecting or creating thought-provoking questions based on user context to aid mindfulness and self-inquiry.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780132180453,
+    "updatedAt": 1780132180453,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780132180453,
+      "changelog": "now-huatou-engine v1.0.0\n\n- 初始版本发布，实现禅宗话头引擎基本功能\n- 支持从本地静态模板库 data/huatou-templates-v1.0.json 随机选取和变量填充\n- 基于不同场景（如焦虑、想太多、决策、情绪、自由）自动筛选相关话头\n- 按场景和默认值自动填充变量（如{emotion}, {time_word}）\n- SKILL.md 详细介绍 MVP 和未来动态生成流程、选取算法及安全规则",
       "license": null
     },
     "metadata": null
@@ -715,7 +719,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 83683,
+      "downloads": 83704,
       "installsAllTime": 2769,
       "installsCurrent": 2642,
       "stars": 55,
@@ -743,10 +747,10 @@
     },
     "stats": {
       "comments": 36,
-      "downloads": 181669,
+      "downloads": 181788,
       "installsAllTime": 3588,
       "installsCurrent": 3458,
-      "stars": 906,
+      "stars": 907,
       "versions": 1
     },
     "createdAt": 1767545346060,
@@ -771,10 +775,10 @@
     },
     "stats": {
       "comments": 7,
-      "downloads": 185496,
+      "downloads": 185609,
       "installsAllTime": 4370,
       "installsCurrent": 4238,
-      "stars": 619,
+      "stars": 620,
       "versions": 1
     },
     "createdAt": 1767545344344,
@@ -796,9 +800,9 @@
     },
     "stats": {
       "comments": 6,
-      "downloads": 157084,
-      "installsAllTime": 3791,
-      "installsCurrent": 3668,
+      "downloads": 157196,
+      "installsAllTime": 3792,
+      "installsCurrent": 3669,
       "stars": 406,
       "versions": 1
     },
@@ -824,7 +828,7 @@
     },
     "stats": {
       "comments": 2,
-      "downloads": 82301,
+      "downloads": 82356,
       "installsAllTime": 2077,
       "installsCurrent": 2003,
       "stars": 315,
@@ -852,7 +856,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 88249,
+      "downloads": 88341,
       "installsAllTime": 2410,
       "installsCurrent": 2336,
       "stars": 295,
@@ -877,7 +881,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 90248,
+      "downloads": 90307,
       "installsAllTime": 2367,
       "installsCurrent": 2301,
       "stars": 257,
@@ -905,9 +909,9 @@
     },
     "stats": {
       "comments": 9,
-      "downloads": 99739,
-      "installsAllTime": 2523,
-      "installsCurrent": 2433,
+      "downloads": 99822,
+      "installsAllTime": 2524,
+      "installsCurrent": 2434,
       "stars": 409,
       "versions": 1
     },
@@ -933,7 +937,7 @@
     },
     "stats": {
       "comments": 5,
-      "downloads": 33585,
+      "downloads": 33601,
       "installsAllTime": 1443,
       "installsCurrent": 1398,
       "stars": 54,
@@ -961,9 +965,9 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 65623,
-      "installsAllTime": 2004,
-      "installsCurrent": 1939,
+      "downloads": 65673,
+      "installsAllTime": 2005,
+      "installsCurrent": 1940,
       "stars": 191,
       "versions": 1
     },
@@ -989,7 +993,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 100777,
+      "downloads": 100843,
       "installsAllTime": 1853,
       "installsCurrent": 1791,
       "stars": 395,
@@ -1014,10 +1018,10 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 37199,
+      "downloads": 37223,
       "installsAllTime": 1564,
       "installsCurrent": 1516,
-      "stars": 111,
+      "stars": 112,
       "versions": 1
     },
     "createdAt": 1767667639455,
@@ -1044,7 +1048,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 50823,
+      "downloads": 50862,
       "installsAllTime": 1577,
       "installsCurrent": 1528,
       "stars": 122,
@@ -1072,7 +1076,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 41727,
+      "downloads": 41759,
       "installsAllTime": 1480,
       "installsCurrent": 1425,
       "stars": 69,
@@ -1100,7 +1104,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 110065,
+      "downloads": 110142,
       "installsAllTime": 2559,
       "installsCurrent": 2483,
       "stars": 254,
@@ -1128,7 +1132,7 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 39933,
+      "downloads": 39968,
       "installsAllTime": 1420,
       "installsCurrent": 1379,
       "stars": 29,
@@ -1156,9 +1160,9 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 44472,
-      "installsAllTime": 1520,
-      "installsCurrent": 1480,
+      "downloads": 44499,
+      "installsAllTime": 1521,
+      "installsCurrent": 1481,
       "stars": 68,
       "versions": 1
     },
@@ -1184,7 +1188,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 26227,
+      "downloads": 26239,
       "installsAllTime": 1251,
       "installsCurrent": 1212,
       "stars": 26,
@@ -1212,7 +1216,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 22073,
+      "downloads": 22086,
       "installsAllTime": 1243,
       "installsCurrent": 1212,
       "stars": 30,
@@ -1240,7 +1244,7 @@
     },
     "stats": {
       "comments": 12,
-      "downloads": 46582,
+      "downloads": 46608,
       "installsAllTime": 1415,
       "installsCurrent": 1375,
       "stars": 155,
@@ -1265,7 +1269,7 @@
     },
     "stats": {
       "comments": 4,
-      "downloads": 29384,
+      "downloads": 29404,
       "installsAllTime": 1322,
       "installsCurrent": 1284,
       "stars": 81,
@@ -1295,7 +1299,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 23963,
+      "downloads": 23975,
       "installsAllTime": 1115,
       "installsCurrent": 1086,
       "stars": 35,
@@ -1320,7 +1324,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 28270,
+      "downloads": 28300,
       "installsAllTime": 1388,
       "installsCurrent": 1341,
       "stars": 43,
@@ -1351,7 +1355,7 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 17980,
+      "downloads": 17995,
       "installsAllTime": 1206,
       "installsCurrent": 1170,
       "stars": 7,
@@ -1379,7 +1383,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 25206,
+      "downloads": 25224,
       "installsAllTime": 1174,
       "installsCurrent": 1138,
       "stars": 51,
