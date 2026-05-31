@@ -13,6 +13,36 @@ mkdir -p "$LOG_DIR"
 
 log() { echo "[$(date '+%H:%M:%S')] $1"; }
 
+# ===== 安全复制函数：防止用空数据覆盖有效数据 =====
+safe_cp() {
+    local src="$1"
+    local dst="$2"
+    
+    # 如果源文件不存在，跳过
+    if [ ! -f "$src" ]; then
+        log "[safe-cp] 源文件不存在: $src (跳过)"
+        return 1
+    fi
+    
+    # 检查源文件是否为空数组（只有 [] 的 JSON 文件大小为 2 字节）
+    local src_size=$(stat -c%s "$src" 2>/dev/null || stat -f%z "$src" 2>/dev/null)
+    
+    # 如果目标文件已存在且有数据（>2字节）
+    if [ -f "$dst" ]; then
+        local dst_size=$(stat -c%s "$dst" 2>/dev/null || stat -f%z "$dst" 2>/dev/null)
+        
+        # 源为空（size=2 即 []），目标有正常数据 → 跳过覆盖
+        if [ "$src_size" -le 3 ] && [ "$dst_size" -gt 3 ]; then
+            local fname=$(basename "$src")
+            log "[safe-cp] 🔴 阻止空数据覆盖: $fname (src=${src_size}B, dst=${dst_size}B, 保留现有数据)"
+            return 1
+        fi
+    fi
+    
+    cp "$src" "$dst"
+    return 0
+}
+
 # ---- Step 1: 毒舌点评 enrichment ----
 log "[enrich] 开始毒舌点评 enrichment..."
 if python3 "$SCRIPT_DIR/enrich_quotes.py" --date "$DATE_STR" >> "$LOG_DIR/enrich_quotes.log" 2>&1; then
@@ -37,17 +67,18 @@ else
     log "[github] ⚠️ 采集失败（不阻塞后续流程）"
 fi
 
-# ---- Step 2: 复制数据到 Git 仓库 ----
+# ---- Step 2: 复制数据到 Git 仓库（使用 safe_cp 防止空数据覆盖）----
 log "[copy] 复制数据文件..."
 cd "$WORKSPACE"
-cp "$WORKSPACE/data/raw_articles_"*.json . 2>/dev/null || log "[copy] raw_articles 无新文件"
-cp "$WORKSPACE/data/raw_dev_"*.json . 2>/dev/null || log "[copy] raw_dev 无新文件"
-cp "$WORKSPACE/data/raw_social_"*.json . 2>/dev/null || log "[copy] raw_social 无新文件"
-cp "$WORKSPACE/data/raw_design_"*.json . 2>/dev/null || log "[copy] raw_design 无新文件"
-cp "$WORKSPACE/data/raw_startup_"*.json . 2>/dev/null || log "[copy] raw_startup 无新文件"
-cp "$WORKSPACE/data/raw_clawhub_"*.json . 2>/dev/null || log "[copy] raw_clawhub 无新文件"
-cp "$WORKSPACE/data/github_trending_"*.json . 2>/dev/null || log "[copy] github_trending 无新文件"
-cp "$WORKSPACE/data/clawhub_trending_"*.json . 2>/dev/null || log "[copy] clawhub_trending 无新文件"
+for f in "$WORKSPACE/data/raw_articles_"*.json; do [ -f "$f" ] && safe_cp "$f" .; done
+for f in "$WORKSPACE/data/raw_dev_"*.json; do [ -f "$f" ] && safe_cp "$f" .; done
+for f in "$WORKSPACE/data/raw_design_"*.json; do [ -f "$f" ] && safe_cp "$f" .; done
+for f in "$WORKSPACE/data/raw_startup_"*.json; do [ -f "$f" ] && safe_cp "$f" .; done
+for f in "$WORKSPACE/data/raw_clawhub_"*.json; do [ -f "$f" ] && safe_cp "$f" .; done
+for f in "$WORKSPACE/data/github_trending_"*.json; do [ -f "$f" ] && safe_cp "$f" .; done
+for f in "$WORKSPACE/data/clawhub_trending_"*.json; do [ -f "$f" ] && safe_cp "$f" .; done
+# raw_social 已停用
+# for f in "$WORKSPACE/data/raw_social_"*.json; do [ -f "$f" ] && safe_cp "$f" .; done
 
 # ---- Step 2.5: 从 MD 报告生成标准化 JSON 文件 ----
 log "[daily-json] 运行 generate_daily_json.py 生成标准化 JSON..."
