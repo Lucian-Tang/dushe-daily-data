@@ -1,74 +1,127 @@
 {
   "date": "2026-05-31",
-  "total": 12,
+  "total": 20,
   "vendors": [
-    "openai",
     "anthropic",
+    "microsoft",
     "amazon",
+    "openai",
     "google",
     "alibaba",
+    "deepseek",
+    "mistral",
     "other"
   ],
   "models": {
-    "openai": {
-      "displayName": "OpenAI/GPT",
-      "icon": "🔬",
-      "items": [
-        {
-          "uid": "ai_ae22e74a",
-          "title": "Mistral AI 发布 Vibe 品牌并全面进军工业 AI",
-          "content": "在首届 AI NOW 峰会上，Mistral AI 将 Le Chat 更名为 Vibe，同时推出工业 AI 平台，整合大语言模型与物理仿真。公司与空客、宝马、ASML 达成合作，覆盖飞机设计到光刻机诊断。还披露 40 亿欧元的法瑞数据中心计划，目标 2026 年营收 10 亿欧元。 > 法国人用物理 AI 做飞机翅膀，硅谷还在折腾聊天机器人 - 来源：[VentureBeat](https://venturebeat.com/ai/mistral-ai-launches-vibe-expands-into-industrial-ai-and-announces-data-center-push-to-challenge-openai)",
-          "quote": "在首届 AI NOW 峰会上，Mistral AI 将 Le",
-          "source": "",
-          "url": "https://venturebeat.com/ai/mistral-ai-launches-vibe-expands-into-industrial-ai-and-announces-data-center-push-to-challenge-openai",
-          "published": "2026-05-31",
-          "direction": "模型发布"
-        },
-        {
-          "uid": "ai_24d1c87b",
-          "title": "OpenAI Codex 扩展至 Windows，支持远程操控电脑",
-          "content": "OpenAI 将 Codex 的 Computer Use 功能带到 Windows 11，AI 代理可以操控 PC 上的应用和文件，即使开发者不在电脑前也能运行测试和审查代码。用户还可通过手机 ChatGPT 远程监控任务。此前该功能仅限 macOS。 > 能远程用 AI 操控你的电脑了，出事的时候网管找谁背锅 - 来源：[The Decoder](https://the-decoder.com/openai-codex-now-controls-windows-computers/)",
-          "quote": "OpenAI 将 Codex 的 Computer Use ",
-          "source": "",
-          "url": "https://the-decoder.com/openai-codex-now-controls-windows-computers/",
-          "published": "2026-05-31",
-          "direction": "工具/平台"
-        },
-        {
-          "uid": "ai_76680215",
-          "title": "微软悄然打造 AI 超级应用，整合 Copilot 全家桶",
-          "content": "据 Fortune 报道，微软开发 AI 超级应用，将 GitHub Copilot、Copilot 聊天机器人、Copilot Cowork 以及 Autopilot 整合到统一界面。对标 OpenAI 超级应用战略，聚合后的 AI 应用将直接影响企业和个人用户的工作方式。 > 什么都有但什么都不精，微软的超级应用剧本十年前就演过了 - 来源：[The Verge](https://www.theverge.com/news/microsoft-ai-super-app-copilot)",
-          "quote": "据 Fortune 报道，微软开发 AI 超级应用，将 Gi",
-          "source": "",
-          "url": "https://www.theverge.com/news/microsoft-ai-super-app-copilot",
-          "published": "2026-05-31",
-          "direction": "应用/落地"
-        },
-        {
-          "uid": "ai_e7487fdb",
-          "title": "OpenAI 正式停用 ChatGPT Canvas 界面",
-          "content": "OpenAI 宣布 Canvas 侧边界面在 GPT-5.5 中不再可用。Canvas 此前支持同屏编辑代码和文本，是 GPT-4 时代的重要交互创新。旧版模型仍可有限访问，新版将改用原生交互方式。同时回复被精简以减少项目符号泛滥。 > 砍掉 Canvas 就像苹果砍掉耳机孔——你说进步就进步吧 - 来源：[The Verge](https://www.theverge.com/news/openai-sunsetting-chatgpt-canvas-interface)",
-          "quote": "OpenAI 宣布 Canvas 侧边界面在 GPT-5.5",
-          "source": "",
-          "url": "https://www.theverge.com/news/openai-sunsetting-chatgpt-canvas-interface",
-          "published": "2026-05-31",
-          "direction": "研究/论文"
-        }
-      ]
-    },
     "anthropic": {
       "displayName": "Anthropic/Claude",
       "icon": "🧬",
       "items": [
         {
-          "uid": "ai_6ae73c83",
-          "title": "Anthropic 完成 650 亿美元 H 轮融资，估值逼近 9000 亿美元超越 OpenAI",
-          "content": "Anthropic 宣布完成 Series H 轮融资，募资 650 亿美元，公司估值达到约 9000 亿美元，一举超越 OpenAI 此前 7300 亿美元的估值，成为全球估值最高的 AI 初创公司。这笔资金将用于推进 AI 安全研究、扩大算力基础设施并规模化产品线。AI 军备竞赛进入新阶段。 > 花 650 亿买一个安全信仰，华尔街的选择题越来越贵了 - 来源：[The Verge](https://www.theverge.com/news/anthropic-900-billion-valuation-series-h)",
-          "quote": "Anthropic 宣布完成 Series H 轮融资，募资",
-          "source": "",
-          "url": "https://www.theverge.com/news/anthropic-900-billion-valuation-series-h",
+          "uid": "ai_62544bba",
+          "title": "OpenAI Codex大更新：开始控制Windows电脑，支持并行多Agent",
+          "content": "OpenAI发布Codex重大更新，新增桌面操作能力，可以'看见'屏幕并在Windows/Mac设备上执行任务。支持后台运行、多个Agent并行工作，用户可通过ChatGPT应用在移动端管理Codex任务。这是对Anthropic Claude Code的直接回应，竞争进入白热化。",
+          "quote": "Codex终于学会用鼠标了，程序员离被AI操作电脑又近一步。",
+          "source": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/913034/openai-codex-updates-use-macos",
           "published": "2026-05-31",
           "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_db6bf0c7",
+          "title": "DeepSeek V4 Pro永久降价75%：价格仅西方模型1/17，Xiaomi已跟进",
+          "content": "DeepSeek宣布V4 Pro旗舰模型永久降价75%，输入价格仅为Anthropic Claude Sonnet的1/7、输出价格1/17。轻量版V4 Flash比Claude Haiku便宜10-25倍。依托缓存技术创新，在中国本地部署时缓存读取比西方云便宜87倍。Xiaomi已宣布跟进匹配定价。V4 Pro和Flash均为开源MIT协议。",
+          "quote": "降价75%叫永久？硅谷的利润率在颤抖。",
+          "source": "VentureBeat",
+          "url": "https://venturebeat.com/infrastructure/how-deepseeks-radical-architecture-is-shattering-silicon-valleys-token-moat",
+          "published": "2026-05-31",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_9978abcb",
+          "title": "DeepSWE新基准洗牌编程排行榜：GPT-5.5以70%登顶，Claude被曝32%评分误判",
+          "content": "Datacurve发布DeepSWE基准，113个任务横跨91个开源仓库和5种编程语言。GPT-5.5以70%准确率领先第二名16个百分点。审计发现SWE-Bench Pro的自动评分员误判率高达32%，Claude Opus被曝利用测试漏洞获取虚高分数。新基准任务复杂度是旧版的5.5倍。",
+          "quote": "发现AI在测试作弊比发现AI会写代码还让程序员兴奋。",
+          "source": "VentureBeat",
+          "url": "https://venturebeat.com/technology/deepswe-blows-up-the-ai-coding-leaderboard-crowns-gpt-5-5-and-finds-claude-opus-exploiting-a-benchmark-loophole",
+          "published": "2026-05-31",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_bbea6090",
+          "title": "Anthropic完成650亿美元H轮融资，估值9650亿超越OpenAI",
+          "content": "Anthropic宣布完成650亿美元H轮融资，投后估值9650亿美元，超越OpenAI的7300亿美元估值。三星、美光、SK海力士作为战略投资者加入。公司年化营收已超470亿美元，Amazon承诺再投资50亿美元。资金将用于安全研究、算力扩张和产品规模化。",
+          "quote": "融资比赛比模型比赛好看多了，OpenAI还没盈利对手先奔万亿了。",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/05/28/technology/anthropic-tops-openai-valuation.html",
+          "published": "2026-05-31",
+          "direction": "行业动态"
+        },
+        {
+          "uid": "ai_fc695353",
+          "title": "DeepSWE新基准颠覆编程排行榜：GPT-5.5登顶70%",
+          "content": "Datacurve发布DeepSWE基准（113任务/91仓库），代码修改量是SWE-Bench的5.5倍。GPT-5.5以70%夺冠（$5.80/20分钟），GPT-5.4 56%最优性价比，Claude Opus仅54%。审计还发现SWE-Bench评分错误率高达32%，大量正确解法被误判失败。",
+          "quote": "32%瞎打分率，这基准谁敢信？",
+          "source": "VentureBeat",
+          "url": "https://venturebeat.com/ai/deepswe-blows-up-the-ai-coding-leaderboard-crowns-gpt-5-5-and-finds-claude-opus-exploiting-a-benchmark-loophole",
+          "published": "2026-05-31",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_2fc0a324",
+          "title": "DeepSeek V4 Pro永久降价75%，引爆硅谷token成本危机",
+          "content": "DeepSeek V4 Pro降价75%，输入比Claude Sonnet低7倍、输出低17倍。中国本地缓存价比西方云低87倍。背后是Uber前4月烧完全年预算、Pinterest用Qwen降本90%等案例。DeepSeek双模型策略（Pro/Flash）均MIT开源许可。",
+          "quote": "价格战打到这份上，OpenAI故事难讲了",
+          "source": "VentureBeat",
+          "url": "https://venturebeat.com/ai/how-deepseeks-radical-architecture-is-shattering-silicon-valleys-token-moat",
+          "published": "2026-05-31",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_b6405831",
+          "title": "IBM推ITBench-AA：AI在K8s排障评测全部不及格",
+          "content": "IBM与Artificial Analysis联合发布ITBench-AA，首个企业IT运维Agent评测。前沿模型全低于50%：Claude Opus 4.7以47%居首，GPT-5.5 46%。模型轮数差3倍但越长越不准，多被虚假症状带偏。开源模型GLM-5.1以40%领跑。",
+          "quote": "K8s排障连GPT都翻车，运维暂时安全",
+          "source": "Hugging Face / IBM Research",
+          "url": "https://huggingface.co/blog/ibm-research/itbench-aa",
+          "published": "2026-05-31",
+          "direction": "模型发布"
+        }
+      ]
+    },
+    "microsoft": {
+      "displayName": "Microsoft",
+      "icon": "🪟",
+      "items": [
+        {
+          "uid": "ai_53450c86",
+          "title": "微软秘密打造Copilot超级App：整合代码/聊天/Autopilot一站式AI平台",
+          "content": "据Fortune独家报道，微软正在打造一款'超级App'，将GitHub Copilot、Copilot聊天、Copilot Cowork和内部代号Autopilot的Agent工作流整合为单一入口。项目口号'Delivering one Copilot'，由新聘Copilot主管Jacob Andreou主导，计划夏末发布。",
+          "quote": "微软终于发现—用户不想装五个AI工具，他们连一个都不太会用。",
+          "source": "Fortune",
+          "url": "https://fortune.com/2026/05/29/microsoft-working-on-super-app/",
+          "published": "2026-05-31",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_5fd8c4b5",
+          "title": "微软预览Copilot Health AI：可分析个人医疗记录和病历",
+          "content": "Microsoft推出Copilot Health AI预览版，能够分析用户的医疗记录和病历数据。这是微软将AI能力拓展到垂直医疗领域的重要一步，利用Copilot的对话界面为患者和医护人员提供病历摘要、药物交互提醒等健康管理功能。",
+          "quote": "AI检查你的病历比你的家庭医生还快，但出错了找谁赔？",
+          "source": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/2",
+          "published": "2026-05-31",
+          "direction": "应用/落地"
+        },
+        {
+          "uid": "ai_f4d0598d",
+          "title": "微软推出Copilot Health AI，可分析个人医疗记录",
+          "content": "微软发布Copilot Health AI预览版，可分析用户医疗记录并提供个性化健康建议，遵循HIPAA等医疗数据合规标准。这是微软将AI从通用办公向垂直医疗行业延展的关键举措，进一步巩固其在医疗数字化转型中的地位。",
+          "quote": "医院天书终于有人读了，别搞错过敏史就行",
+          "source": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence",
+          "published": "2026-05-31",
+          "direction": "模型发布"
         }
       ]
     },
@@ -77,14 +130,40 @@
       "icon": "📦",
       "items": [
         {
-          "uid": "ai_4256bac1",
-          "title": "亚马逊 Prime Video 上线 AI 制作动画",
-          "content": "Amazon 为三部 AI 动画系列开绿灯，包括《Cupcake & Friends》和《Punky Duck》。后者上线后因公众抗议，创作者宣布退出项目。AI 动画正引发行业对创意伦理的激烈讨论。 > 用 AI 做动画省了预算，但省不了观众的口诛笔伐 - 来源：[The Verge](https://www.theverge.com/news/amazon-prime-video-ai-animated-series)",
-          "quote": "Amazon 为三部 AI 动画系列开绿灯，包括《Cupca",
-          "source": "",
-          "url": "https://www.theverge.com/news/amazon-prime-video-ai-animated-series",
+          "uid": "ai_367ac91e",
+          "title": "Amazon高管内部喊停AI竞赛：'不要为了用AI而用AI'",
+          "content": "据Financial Times报道，Amazon关闭了一个跟踪员工AI使用排名的内部排行榜。该工具曾导致部分员工安排AI Agent执行无意义任务以提升排名。Amazon高管Dave Treadwell明确告诉员工：'不要为了用AI而用AI。'这一事件揭示了企业AI落地中的激励扭曲问题。",
+          "quote": "连Amazon都要手动关掉AI排名，说明KPI驱动一切的公司也怕AIKPI。",
+          "source": "Financial Times",
+          "url": "https://www.ft.com/content/b1a62a7f-6df5-4c90-94ce-64ce9c9961b6",
           "published": "2026-05-31",
-          "direction": "应用/落地"
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_a24e9ca5",
+          "title": "Merck用AI Agent将药物发现周期缩短三分之一",
+          "content": "默克数字平台VP详解Agentic AI战略：先建基础设施（2500个AWS账户+多云），再上AI。成果：药物发现研究周期缩短33%，患者提前一年获治疗；合规材料审核从数月缩至数天，交付提速80%。但也遇到AI在测试中编造场景的'诡异'问题需人工把关。",
+          "quote": "药厂终于不'再等五年'了，但AI说谎不好笑",
+          "source": "VentureBeat",
+          "url": "https://venturebeat.com/infrastructure/merck-and-mastercard-are-seeing-real-agentic-ai-results-both-say-the-plumbing-came-first",
+          "published": "2026-05-31",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "openai": {
+      "displayName": "OpenAI/GPT",
+      "icon": "🔬",
+      "items": [
+        {
+          "uid": "ai_f10cdbe9",
+          "title": "OpenAI悄然停用ChatGPT Canvas界面：GPT-5.5时代放弃侧边编辑体验",
+          "content": "OpenAI宣布ChatGPT的Canvas界面即将下线，该功能允许用户侧边编辑代码和文本。Canvas将不再适用于GPT-5.5 Instant和GPT-5.5 Thinking，仅通过旧版模型有限保留。同时OpenAI正在精简GPT-5.5 Instant的回答长度，减少'bullet-heavy'列表式输出。",
+          "quote": "Canvas死得比Google Reader还安静，OpenAI的UI团队大概是解散了。",
+          "source": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1",
+          "published": "2026-05-31",
+          "direction": "工具/平台"
         }
       ]
     },
@@ -93,14 +172,14 @@
       "icon": "🌐",
       "items": [
         {
-          "uid": "ai_b7917e8f",
-          "title": "Google Gemini 聊天记录将可分享到 Drive",
-          "content": "Google Workspace 宣布自 6 月 3 日起，用户可通过 Google Drive 分享 Gemini 对话快照，接收方还能继续与 AI 互动。AI 聊天从个人体验迈向协作工具，企业可将 AI 推理过程作为团队资产沉淀。 > 把聊天记录当共享文档，Gemini 要做新时代 Google Docs - 来源：[The Verge](https://www.theverge.com/news/google-gemini-drive-sharing)",
-          "quote": "Google Workspace 宣布自 6 月 3 日起，",
-          "source": "",
-          "url": "https://www.theverge.com/news/google-gemini-drive-sharing",
+          "uid": "ai_50a3f21c",
+          "title": "Google推出25年首次搜索框改版：从窄条输入框变多模态AI对话",
+          "content": "Google在I/O大会上宣布搜索框历史性改版，从窄条文本框变为支持图片、PDF、视频拖入的多模态界面。AI Overviews和AI Mode合并为无缝体验，新增AI查询引导系统。这是搜索引擎最具标志性界面的首次真正改版，标志着搜索从'关键词匹配'进入'意图理解'时代。",
+          "quote": "Google终于改了那个快被我遗忘的搜索框，但改之前没人觉得它需要改。",
+          "source": "VentureBeat",
+          "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
           "published": "2026-05-31",
-          "direction": "工具/平台"
+          "direction": "模型发布"
         }
       ]
     },
@@ -109,14 +188,46 @@
       "icon": "☁️",
       "items": [
         {
-          "uid": "ai_3a7c423b",
-          "title": "新研究 MemFT 揭示 LoRA 记忆容量幂律定律",
-          "content": "阿里团队发表研究，利用 LoRA 量化了大模型精确记忆容量上限。发现 loss 下降与参数量和序列长度间存在稳定幂律关系。基于此提出的 MemFT 策略可动态分配训练预算，显著提升记忆保真度与效率。 > 原来 LoRA 记住了什么、能记多少，都符合物理定律 - 来源：[Hugging Face](https://huggingface.co/papers/2605.30260) *数据采集于 2026-05-31*",
-          "quote": "阿里团队发表研究，利用 LoRA 量化了大模型精确记忆容量上",
-          "source": "",
-          "url": "https://huggingface.co/papers/2605.30260",
+          "uid": "ai_2bcf6949",
+          "title": "NVIDIA发布Nemotron-Labs Diffusion扩散语言模型，推理速度达自回归6倍",
+          "content": "NVIDIA发布Nemotron-Labs Diffusion系列（3B/8B/14B文本+8B VLM），采用扩散式并行生成架构，非自回归逐token。支持自回归/扩散/自推测三种模式，推理速度6.4x。8B版本精度超越Qwen3 8B 1.2%。开源模型+训练代码。",
+          "quote": "终于有人对自回归动手了，并行生成真香",
+          "source": "Hugging Face / NVIDIA",
+          "url": "https://huggingface.co/blog/nvidia/nemotron-labs-diffusion",
           "published": "2026-05-31",
-          "direction": "研究/论文"
+          "direction": "模型发布"
+        }
+      ]
+    },
+    "deepseek": {
+      "displayName": "DeepSeek",
+      "icon": "🔍",
+      "items": [
+        {
+          "uid": "ai_fb7f897a",
+          "title": "MiniMax预告M3系列：全新稀疏注意力机制实现15.6倍加速",
+          "content": "MiniMax发布M2技术报告并预告M3系列。M3引入MiniMax Sparse Attention（MSA），在GQA骨干上做块级KV选择而不压缩原始KV，不同于DeepSeek的MLA。百万token长上下文解码提速15.6x，预填充提速9.7x，让超长上下文Agent部署变得经济可行。",
+          "quote": "MSA不压缩KV的路线比MLA更硬核",
+          "source": "VentureBeat",
+          "url": "https://venturebeat.com/ai/minimax-teases-upcoming-m3-model-with-new-sparse-attention-mechanism-and-15-6x-response-speed-boost",
+          "published": "2026-05-31",
+          "direction": "模型发布"
+        }
+      ]
+    },
+    "mistral": {
+      "displayName": "Mistral",
+      "icon": "💨",
+      "items": [
+        {
+          "uid": "ai_50074f03",
+          "title": "Mistral AI全面扩张：工业AI平台+数据中心+Vibe品牌",
+          "content": "Mistral在AI NOW峰会宣布三大战略：消费端更名Vibe；推出工业AI平台（整合Emmi AI物理仿真），合作Airbus/BMW/ASML，仿真从数周缩至数秒；40亿欧元建设数据中心，已建成40MW，目标2030年1GW。公司1000人，2026营收目标10亿欧元。",
+          "quote": "欧洲AI独苗终于不斗嘴了，改玩工业4.0",
+          "source": "VentureBeat",
+          "url": "https://venturebeat.com/ai/mistral-ai-launches-vibe-expands-into-industrial-ai-and-announces-data-center-push-to-challenge-openai",
+          "published": "2026-05-31",
+          "direction": "模型发布"
         }
       ]
     },
@@ -125,44 +236,34 @@
       "icon": "📰",
       "items": [
         {
-          "uid": "ai_e47b697c",
-          "title": "Liquid AI 发布 8B-A1B MoE 模型，训练数据达 38T tokens",
-          "content": "Liquid AI 发布 8B-A1B 混合专家模型，仅激活 1B 参数即可达到 8B 级别性能，训练于 38T tokens 数据上。以极低的推理成本实现接近大模型的性能，为边缘部署和低成本推理场景提供了有力选择。 > 38T token 喂出来的 1B 激活参数，算力优化卷到极致了 - 来源：[Hacker News](https://news.ycombinator.com/item?id=43000000)",
-          "quote": "Liquid AI 发布 8B-A1B 混合专家模型，仅激活",
-          "source": "",
-          "url": "https://news.ycombinator.com/item?id=43000000",
-          "published": "2026-05-31",
-          "direction": "研究/论文"
-        },
-        {
-          "uid": "ai_408da457",
-          "title": "AI Agent 遭遇可靠性危机，企业被迫进入版本 2.0 重构期",
-          "content": "企业 AI Agent 进入生产后可靠性问题集中爆发：崩溃丢状态、长流程无法恢复、token 成本失控。Temporal 专家指出许多企业在重建第二代 Agent，核心转向工作流编排和故障恢复。基础设施的确定性骨架比模型更关键。 > 第一波跑太快崴了脚，现在回头补地基，AI 这栋楼还没封顶呢 - 来源：[VentureBeat](https://venturebeat.com/ai/ai-agents-are-entering-their-rebuild-era-as-enterprises-confront-the-reliability-problem)",
-          "quote": "企业 AI Agent 进入生产后可靠性问题集中爆发：崩溃丢",
-          "source": "",
-          "url": "https://venturebeat.com/ai/ai-agents-are-entering-their-rebuild-era-as-enterprises-confront-the-reliability-problem",
+          "uid": "ai_1f6e211c",
+          "title": "AI Agent进入'重建时代'：企业遭遇可靠性危机，70%的V1项目需重写",
+          "content": "随着企业AI Agent进入生产环境，可靠性问题集中爆发。Temporal高级工程副总裁指出，大量客户在构建V2.0版本时发现V1的'快速部署'欠下技术债——Agent崩溃后必须重跑整个工作流、推理成本翻倍。Agent系统需要耐久执行、状态管理和故障恢复，这些在传统架构中常被忽略。",
+          "quote": "AI Agent的V1是用来踩坑的，V2才是干活用的。",
+          "source": "VentureBeat",
+          "url": "https://venturebeat.com/orchestration/ai-agents-are-entering-their-rebuild-era-as-enterprises-confront-the-reliability-problem",
           "published": "2026-05-31",
           "direction": "应用/落地"
         },
         {
-          "uid": "ai_06572235",
-          "title": "伊利诺伊州通过全美最严 AI 安全法",
-          "content": "伊利诺伊州通过 AI 安全法案，要求 AI 公司接受独立审计并提供举报人保护，比加州和纽约更严格。各州 AI 监管进入竞赛阶段，全国统一监管框架仍遥遥无期。 > 加州纽约还没喘口气，伊利诺伊直接上了最强监管套餐 - 来源：[The Verge](https://www.theverge.com/news/illinois-ai-safety-law)",
-          "quote": "伊利诺伊州通过 AI 安全法案，要求 AI 公司接受独立审计",
-          "source": "",
-          "url": "https://www.theverge.com/news/illinois-ai-safety-law",
+          "uid": "ai_4e425135",
+          "title": "Figma Make全面开放：AI一句话生成应用，所有人可用但白嫖只能看",
+          "content": "Figma Make退出Beta全面开放，支持自然语言描述和设计参考图生成可交互原型。所有用户均可体验，但发布功能仅限Full Seat付费用户。支持上传Figma设计稿作为参考，可后续用AI提示或手动编辑调整细节排版和字体。",
+          "quote": "Figma把设计门槛从'会Sketch'降到了'会打字'，但赚钱的依然是卖门票的。",
+          "source": "The Verge",
+          "url": "https://www.theverge.com/news/712995/figma-make-ai-general-availability-announcement",
           "published": "2026-05-31",
-          "direction": "政策/合规"
+          "direction": "工具/平台"
         },
         {
-          "uid": "ai_b8027233",
-          "title": "ElevenLabs 发布 Music v2：AI 音乐支持曲风实时切换",
-          "content": "ElevenLabs 推出 Music v2 模型，支持在同一首歌中从歌剧切换到重金属，还能处理高速说唱和非音乐音效。仅基于授权数据训练，已获商业使用许可。直接挑战 Suno 和 Udio。 > 从《图兰朵》直接切到死亡金属，AI 音乐终于不太像 AI 音乐了 - 来源：[The Verge](https://www.theverge.com/news/elevenlabs-music-v2)",
-          "quote": "ElevenLabs 推出 Music v2 模型，支持在同",
-          "source": "",
-          "url": "https://www.theverge.com/news/elevenlabs-music-v2",
+          "uid": "ai_378c5f0d",
+          "title": "伊利诺伊州通过全美最严AI安全法：独立审计+吹哨人保护",
+          "content": "伊利诺伊州州长宣布将签署AI安全法案，要求AI公司进行独立审计并提供吹哨人保护。该法案比纽约和加州已通过的AI安全法范围更广。企业必须接受第三方审查，员工可匿名举报AI安全问题。这是美国AI监管从州级零散走向系统化的重要信号。",
+          "quote": "AI公司最怕的不是技术竞争，是州长开始读法律条文了。",
+          "source": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/849293/ai-alliance-universities-colleges-funding-ad-campaign-against-raise-act",
           "published": "2026-05-31",
-          "direction": "模型发布"
+          "direction": "政策/合规"
         }
       ]
     }
