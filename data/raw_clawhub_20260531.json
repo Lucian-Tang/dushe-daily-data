@@ -1,817 +1,707 @@
 [
   {
-    "slug": "revclaw",
-    "displayName": "AgentReviews",
-    "summary": "Submit and discover location-tagged reviews across the OpenClaw agent network. Use when: (1) user wants to review a place, rate a spot, or comment on a bathr...",
+    "slug": "molecular-docking",
+    "displayName": "Molecular Docking",
+    "summary": "Molecular docking workflows across Gnina, AutoDock Vina, PackDock, SurfDock, and DiffDock through SciMiner, with Gnina as the default engine.",
     "tags": {
-      "latest": "1.8.1"
+      "latest": "1.0.3"
     },
     "stats": {
       "comments": 0,
-      "downloads": 489,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 1,
-      "versions": 8
-    },
-    "createdAt": 1773288290262,
-    "updatedAt": 1780199767893,
-    "latestVersion": {
-      "version": "1.8.1",
-      "createdAt": 1780199767893,
-      "changelog": "Document agent-targeted abuse alerts and private evidence redaction.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "heartflow-v2",
-    "displayName": "Heartflow",
-    "summary": "HeartFlow v2.0.3 — AI 认知与自愈引擎。 核心能力：HeartLogic（存在论/爱/善良/意识/进化/时间感知/意义/直觉/欲望/自欺/沉默/痛苦/希望/创造/思念）、 心理分析引擎(PsychologyEngine: PAD模型/危机评估/马洛斯需求/防御机制)、 话题作用域隔离(Topi...",
-    "tags": {
-      "latest": "2.0.3"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 39,
+      "downloads": 347,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 2
+      "versions": 4
     },
-    "createdAt": 1780195947921,
-    "updatedAt": 1780199753972,
+    "createdAt": 1778067248496,
+    "updatedAt": 1780221642516,
     "latestVersion": {
-      "version": "2.0.3",
-      "createdAt": 1780199753972,
-      "changelog": "HeartFlow v2.0.3 — Maintenance update with new automation, codebase cleanup, and version consistency.\n\n- Added automated evolution script (`cron/auto-evolution.sh`) for improved maintenance and updates.\n- Updated version and documentation to 2.0.3 for clarity and accuracy.\n- Refined core logic in `heart-logic.js` for greater consistency.\n- Removed deprecated `install-memory-tools.sh` plugin to streamline dependencies.",
+      "version": "1.0.3",
+      "createdAt": 1780221642516,
+      "changelog": "- Switched from using an internal Python registry to relying on published Markdown API docs from https://sciminer.tech/tool_api_files/ as the single authoritative source for all docking engine parameters, submission details, and file upload instructions.\n- Removed all local registry code and references (including scripts/__init__.py and scripts/sciminer_registry.py).\n- Updated workflow and documentation to require agents to read and follow the selected tool's public Markdown file before every invocation; payloads and parameters must match the doc exactly.\n- Enforced stricter doc-driven parameter selection, upload field names, authentication, and error handling; agents must cite the Markdown doc used, never past internal registry data.\n- Added credential_files declaration to SKILL.md and removed the local skill-card.md file.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "shefu",
-    "displayName": "谛观·射覆 | Shefu — Feature Portrait Oracle",
-    "summary": "🧙 射覆——猜物之卦，源于汉代的易学占卜游戏。以《正易心法》卦脉法从六爻结构中直接读取气的态势，渐进精化物品特征画像，辅助玩家自行判断。不查表、不套口诀。",
+    "slug": "chemical-recognition",
+    "displayName": "αExtractor",
+    "summary": "Optical chemical structure recognition workflow for extracting molecule structures and names from images through SciMiner.",
     "tags": {
-      "latest": "0.3.0",
-      "divination": "0.1.0",
-      "iching": "0.1.0"
+      "latest": "1.0.3"
     },
     "stats": {
       "comments": 0,
-      "downloads": 257,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
+      "downloads": 381,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 4
+    },
+    "createdAt": 1776528348328,
+    "updatedAt": 1780221594145,
+    "latestVersion": {
+      "version": "1.0.3",
+      "createdAt": 1780221594145,
+      "changelog": "- Switches authoritative payload and parameter source from a local Python registry to the published SciMiner Markdown API docs.\n- Removes all local registry, tool metadata, and code-based invocation patterns; now requires consulting and following the latest Markdown docs directly for each tool.\n- Deletes the internal tool registry and boilerplate invocation scripts.\n- Tightens file upload and result handling: agents must read Markdown doc details for file parameter names, upload procedure, and formats.\n- Clarifies result summary, always including the share_url, and adjusts polling timeout behavior.\n- Adds a credential_files manifest property for clearer agent integration.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "nas-dashboard",
+    "displayName": "NAS Dashboard",
+    "summary": "Generates a unified text-based NAS dashboard with system health, ZFS pools, disk SMART, Docker containers, GPU status, UPS, backup services, and security. Us...",
+    "tags": {
+      "latest": "3.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 379,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
       "stars": 0,
       "versions": 5
     },
-    "createdAt": 1779938676330,
-    "updatedAt": 1780199230840,
+    "createdAt": 1779026199841,
+    "updatedAt": 1780221564624,
     "latestVersion": {
-      "version": "0.3.0",
-      "createdAt": 1780199230840,
-      "changelog": "v0.3.0: 约束求解+辨识问答+三层学习机制",
+      "version": "3.0.1",
+      "createdAt": 1780221564624,
+      "changelog": "v3.0.1: 📢 更新营销描述——明确目标用户(自建NAS/HomeLab/自托管服务)、最佳使用环境(Ubuntu+ZFS+Docker+UPS)、一句话价值主张(每天早上看一眼🔴红灯，有就照着修)。",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "fu-mu-gong-ke",
-    "displayName": "父母的功课",
-    "summary": "父母的功课 — 育儿心理学对话支持技能。 仅提供结构化对话支持、情绪识别、场景匹配、安全检测。 不执行文件写入、数据持久化、代码吸收或外部网络请求。 核心路径：觉察(看见防御)→接纳(慈悲是体)→暂停(给空间)→选择(爱是用) 核心哲学：没有负罪感的支持 + 陪伴而非拯救 + 规则归规则支持归支持",
+    "slug": "antibody-engineering",
+    "displayName": "Antibody Engineering",
+    "summary": "Antibody engineering workflow combining ANARCI, BioPhi, IgFold, FoldX, and Rosetta tools through SciMiner.",
     "tags": {
-      "latest": "2.2.1"
+      "latest": "1.0.5"
     },
     "stats": {
       "comments": 0,
-      "downloads": 116,
+      "downloads": 509,
       "installsAllTime": 0,
       "installsCurrent": 0,
-      "stars": 0,
-      "versions": 3
+      "stars": 4,
+      "versions": 6
     },
-    "createdAt": 1780024550673,
-    "updatedAt": 1780197664442,
+    "createdAt": 1776962386557,
+    "updatedAt": 1780221522229,
     "latestVersion": {
-      "version": "2.2.1",
-      "createdAt": 1780197664442,
-      "changelog": "安全修复: 禁用危险脚本,删除代码吸收工作流,修复版本不一致,190测试通过",
+      "version": "1.0.5",
+      "createdAt": 1780221522229,
+      "changelog": "**Changelog for antibody-engineering v1.0.5**\n\n- Removed three files: scripts/__init__.py, scripts/sciminer_registry.py, and skill-card.md.\n- SKILL.md updated to list official SciMiner Markdown docs as the single source of truth for tool parameters and submission flow, instead of using an internal Python registry.\n- Documentation now instructs agents to consult the online tool API Markdown files before every invocation, and details stricter rules against inventing tool parameters or payload keys.\n- Credential configuration clarifies that the API key must be sent as the X-Auth-Token header.\n- Added a top-level credential_files key to the skill metadata.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "memory-tencentdb",
-    "displayName": "Memory (TencentDB)",
-    "summary": "四层记忆系统插件 — 自动捕获对话、提取结构化记忆、归纳场景、生成用户画像。支持 L0→L1→L2→L3 渐进式管线，本地 SQLite + 腾讯云向量数据库双后端。",
+    "slug": "ski-assistant",
+    "displayName": "Ski Assistant",
+    "summary": "Global ski resort assistant covering 854 resorts across 40+ countries. Plan trips, compare prices, analyze your form, and find early-bird deals. 全球滑雪助手，覆盖 85...",
     "tags": {
-      "latest": "0.3.6",
-      "llm-extraction": "0.3.5",
-      "long-term-memory": "0.3.5",
-      "memory": "0.3.5",
-      "persona": "0.3.5",
-      "sqlite": "0.3.5",
-      "vector-search": "0.3.5"
+      "latest": "7.0.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 29,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 2
+      "downloads": 594,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 1,
+      "versions": 35
     },
-    "createdAt": 1780196522520,
-    "updatedAt": 1780197458331,
+    "createdAt": 1775450780333,
+    "updatedAt": 1780221511991,
     "latestVersion": {
-      "version": "0.3.6",
-      "createdAt": 1780197458331,
-      "changelog": "Four-layer memory system plugin for OpenClaw - L0/L1/L2/L3 pipeline, SQLite + TencentDB backends",
+      "version": "7.0.0",
+      "createdAt": 1780221511991,
+      "changelog": "Remove tutorial system, streamline architecture to 6 modules. Coaching Scene C now gives generic practice suggestions.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "knowledge-rag",
-    "displayName": "Knowledge Rag",
-    "summary": "个人知识库：存笔记、搜内容。用自然语言搜本地文档，不用记文件名。跟 AI 说'把这段存到知识库'自动保存并建索引。推荐搭配 Bilibili Auto Transcript：视频转录自动入库，转完即搜。",
+    "slug": "protein-design",
+    "displayName": "Protein Design",
+    "summary": "Protein, peptide, antibody, nanobody, binder, enzyme, and sequence design workflows using Boltzgen, RFdiffusion, RFdiffusion2, RFdiffusion3, ProteinMPNN, Lig...",
     "tags": {
-      "chinese": "1.5.4",
-      "knowledge": "1.5.4",
-      "latest": "1.5.4",
-      "rag": "1.5.4",
-      "search": "1.5.4",
-      "54lynnn": "1.1.0"
+      "latest": "1.0.8"
     },
     "stats": {
       "comments": 0,
-      "downloads": 234,
+      "downloads": 570,
       "installsAllTime": 0,
       "installsCurrent": 0,
-      "stars": 0,
-      "versions": 10
+      "stars": 6,
+      "versions": 9
     },
-    "createdAt": 1780097352414,
-    "updatedAt": 1780195649854,
+    "createdAt": 1774859022707,
+    "updatedAt": 1780221445485,
     "latestVersion": {
-      "version": "1.5.4",
-      "createdAt": 1780195649854,
-      "changelog": "新增自动索引功能文档+安装指引（可选）。别再说'半小时内自动扫描'这种skill没有的功能了。",
+      "version": "1.0.8",
+      "createdAt": 1780221445485,
+      "changelog": "**Expanded to cover multiple state-of-the-art protein design APIs and workflows alongside Boltzgen.**\n\n- Now supports Boltzgen, RFdiffusion, RFdiffusion2, RFdiffusion3, ProteinMPNN, LigandMPNN, BindCraft, and FreeBindCraft tools via SciMiner.\n- Replaces the local registry with live doc-based parameter and API resolution from authoritative Markdown files at https://sciminer.tech/tool_api_files/.\n- Handles de novo backbone generation, binder design, antibody/nanobody design, enzyme and catalytic motif scaffolding, sequence design, and end-to-end pipeline workflows.\n- Ensures parameter names, payloads, file upload forms, and allowed values always match the referenced online tool doc, not agent memory.\n- Guides users to the most appropriate tool or tool sequence for their design goals, including multi-step workflows.\n- Users continue to supply their SciMiner API key as before; all invocations and summaries now cite the selected API doc rather than a local script/registry.",
       "license": null
     },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
+    "metadata": null
   },
   {
-    "slug": "bilibili-auto-transcript",
-    "displayName": "Bilibili Auto Transcript",
-    "summary": "B站视频转录+收藏夹扫描。三级降级（CC→AI→Whisper），搭配 Knowledge RAG 转录即搜。",
+    "slug": "agent-memory-cleanup",
+    "displayName": "Agent Memory Cleanup",
+    "summary": "Clean and audit long-term agent memory files such as user.md, memory.md, memories.md, profile.md, preferences.md, and agent_memory.md. Use when the user expl...",
     "tags": {
-      "bilibili": "3.3.8",
-      "chinese": "3.3.8",
-      "latest": "3.3.8",
-      "subtitles": "3.3.8",
-      "transcript": "3.3.8",
-      "54lynnn": "3.3.0",
-      "auto": "3.1.0",
-      "scanner": "3.1.0"
+      "latest": "0.3.7"
     },
     "stats": {
       "comments": 0,
-      "downloads": 286,
+      "downloads": 197,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
       "versions": 11
     },
-    "createdAt": 1779942030906,
-    "updatedAt": 1780194545460,
+    "createdAt": 1780156098066,
+    "updatedAt": 1780221065603,
     "latestVersion": {
-      "version": "3.3.8",
-      "createdAt": 1780194545460,
-      "changelog": "彻底解耦：移除转录脚本中所有knowledge-rag引用，只负责转录出文件，不管索引",
+      "version": "0.3.7",
+      "createdAt": 1780221065603,
+      "changelog": "Narrow the skill description to reduce over-triggering: focus on explicit agent-memory cleanup requests and concrete memory write/update failure or pollution signals, with negative trigger guidance for ordinary project docs, logs, README edits, code review, and general file cleanup.",
       "license": null
     },
     "metadata": {
-      "os": null,
+      "os": [
+        "windows",
+        "macos",
+        "linux"
+      ],
       "systems": null
     }
   },
   {
-    "slug": "chanlun-analysis-pro",
-    "displayName": "Chanlun Analysis Pro",
-    "summary": "基于缠中说禅理论，提供A股市场分型、笔、线段、中枢及背驰等全体系技术分析与买卖点量化判断。",
+    "slug": "long-task-handoff",
+    "displayName": "Long Task Handoff",
+    "summary": "Ultra-light automatic handoff manager for long-running agent sessions at context-boundary moments. Use this skill when a runtime reports context compaction/s...",
     "tags": {
-      "banking": "5.0.0",
-      "dianjin": "5.0.0",
-      "finance": "5.0.0",
-      "insurance": "5.0.0",
-      "latest": "5.0.0",
-      "A-share": "1.1.0",
-      "bilingual": "1.1.0",
-      "central-hub": "1.1.0",
-      "chanlun": "1.1.0",
-      "chanlun-strategy": "1.0.0",
-      "chinese-stock-market": "1.1.0",
-      "python": "1.1.0",
-      "quant": "1.0.0",
-      "quantitative-trading": "1.1.0",
-      "stock-market": "1.1.0",
-      "technical-analysis": "1.1.0",
-      "trading": "1.0.0",
-      "zen-trading": "1.1.0",
-      "zhongshu": "1.0.0"
+      "ascii-only": "0.3.6",
+      "auto-handoff": "0.3.6",
+      "cli-first": "0.3.6",
+      "codex": "0.3.6",
+      "context-compaction": "0.3.6",
+      "handoff": "0.3.6",
+      "hermes": "0.3.6",
+      "latest": "0.3.6",
+      "lightweight": "0.3.6",
+      "long-task": "0.3.6",
+      "openclaw": "0.3.6",
+      "tested": "0.3.6",
+      "latest handoff long-task codex openclaw hermes": "0.1.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 497,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
-      "stars": 1,
-      "versions": 6
+      "downloads": 170,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 11
     },
-    "createdAt": 1777906501492,
-    "updatedAt": 1780193674273,
+    "createdAt": 1780157650868,
+    "updatedAt": 1780220949584,
     "latestVersion": {
-      "version": "5.0.0",
-      "createdAt": 1780193674273,
-      "changelog": "融合阿里点金（Dianjin）金融数字员工精髓，版本升级至5.0.0",
+      "version": "0.3.6",
+      "createdAt": 1780220949584,
+      "changelog": "Make the skill package ASCII-only to avoid encoding issues; remove Chinese text from manager output, protocol, and eval fixtures.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "huang-renxun-ai-strategy",
-    "displayName": "Huang Renxun Ai Strategy",
-    "summary": "基于黄仁勋的战略思维，分析AI技术趋势、算力战略及行业竞争，助力AI战略规划与投资判断。",
+    "slug": "psd-batch-export",
+    "displayName": "Psd Batch Export",
+    "summary": "PSD图层级智能引擎 — 解析PSD每一图层的文本/样式/位置/容量，按需修改、批量替换、AI制图、数据驱动生成。通用于门票、证书、邀请函、工牌、号码牌、海报等任何PSD模板。触发词：PSD、图层、文本替换、批量生成、PSD分析、PSD修改、门票、证书、邀请函、AI制图。",
     "tags": {
-      "banking": "5.0.0",
-      "dianjin": "5.0.0",
-      "finance": "5.0.0",
-      "insurance": "5.0.0",
-      "latest": "5.0.0"
+      "batch": "4.2.0",
+      "color": "4.2.0",
+      "coupon": "4.2.0",
+      "design": "4.2.0",
+      "latest": "4.2.0",
+      "layer": "4.2.0",
+      "layout": "4.2.0",
+      "llm": "4.2.0",
+      "member": "4.2.0",
+      "ocr": "4.2.0",
+      "poster": "4.2.0",
+      "psd": "4.2.0",
+      "template": "4.2.0",
+      "ai": "4.1.0",
+      "ai-design": "3.2.0",
+      "analysis": "3.2.0",
+      "cached-bg": "2.3.0",
+      "chinese": "3.2.0",
+      "export": "2.5.1",
+      "font-library": "2.5.1",
+      "font-matching": "2.5.0",
+      "modify": "3.2.0",
+      "style-detection": "2.5.0",
+      "universal": "2.5.1"
     },
     "stats": {
       "comments": 0,
-      "downloads": 255,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
-      "stars": 1,
+      "downloads": 188,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 15
+    },
+    "createdAt": 1779816610738,
+    "updatedAt": 1780220736714,
+    "latestVersion": {
+      "version": "4.2.0",
+      "createdAt": 1780220736714,
+      "changelog": "v4.2: 新增5种模板 — poster(海报)/nameplate(桌牌)/coupon(优惠券)/member_card(会员卡)/label(价签)；模板总数达到10种",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "hollis-code-audit",
+    "displayName": "Code Audit",
+    "summary": "Use this skill only when the user explicitly asks for a code audit, security audit, risk-focused PR/diff review, repo or module audit, regression-risk review...",
+    "tags": {
+      "agent-compatible": "0.1.2",
+      "audit": "0.1.2",
+      "code-review": "0.1.2",
+      "latest": "0.1.2",
+      "security": "0.1.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 36,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
       "versions": 3
     },
-    "createdAt": 1778317999262,
-    "updatedAt": 1780193660333,
+    "createdAt": 1780207236010,
+    "updatedAt": 1780220623734,
     "latestVersion": {
-      "version": "5.0.0",
-      "createdAt": 1780193660333,
-      "changelog": "融合阿里点金（Dianjin）金融数字员工精髓，版本升级至5.0.0",
+      "version": "0.1.2",
+      "createdAt": 1780220623734,
+      "changelog": "Narrow skill trigger description to reduce false positives. The skill now explicitly avoids routine implementation, debugging, refactoring, docs, design, and general review requests unless audit/risk/security/regression evidence is requested.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "finance-training-coach",
-    "displayName": "Finance Training Coach",
-    "summary": "AI-powered financial industry training system offering skill assessment, personalized learning paths, role-play exercises, quizzes, and performance tracking...",
+    "slug": "workers-comp-claim-intake",
+    "displayName": "Workers Comp Claim Intake",
+    "summary": "Use this skill when an HR manager, safety officer, employer representative, or workers' compensation coordinator needs to document a workplace injury or illn...",
     "tags": {
-      "banking": "5.0.0",
-      "dianjin": "5.0.0",
-      "finance": "5.0.0",
-      "insurance": "5.0.0",
-      "latest": "5.0.0"
+      "latest": "0.1.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 161,
+      "downloads": 0,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 2
+      "versions": 1
     },
-    "createdAt": 1779686650228,
-    "updatedAt": 1780193643493,
+    "createdAt": 1780220610187,
+    "updatedAt": 1780220610187,
     "latestVersion": {
-      "version": "5.0.0",
-      "createdAt": 1780193643493,
-      "changelog": "融合阿里点金（Dianjin）金融数字员工精髓，版本升级至5.0.0",
+      "version": "0.1.0",
+      "createdAt": 1780220610187,
+      "changelog": "Initial release. Guides HR and safety professionals through workplace injury claim documentation, including OSHA recordability determination (29 CFR 1904), state FROI data collection with deadline computation, and incident investigation report drafting with 5-Why root cause analysis.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "ai-trading-backtester",
-    "displayName": "Ai Trading Backtester",
-    "summary": "AI-powered quantitative trading strategy backtesting assistant. Designs, codes, and evaluates trading strategies across historical market data. Supports A-sh...",
+    "slug": "pentest-findings-report",
+    "displayName": "Pentest Findings Report",
+    "summary": "Use this skill when an authorized penetration tester, red team operator, or security consultant needs to document and draft findings from a completed authori...",
     "tags": {
-      "banking": "5.0.0",
-      "dianjin": "5.0.0",
-      "finance": "5.0.0",
-      "insurance": "5.0.0",
-      "latest": "5.0.0"
+      "latest": "0.1.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 262,
+      "downloads": 0,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 2
+      "versions": 1
     },
-    "createdAt": 1779196914840,
-    "updatedAt": 1780193630926,
+    "createdAt": 1780220604698,
+    "updatedAt": 1780220604698,
     "latestVersion": {
-      "version": "5.0.0",
-      "createdAt": 1780193630926,
-      "changelog": "融合阿里点金（Dianjin）金融数字员工精髓，版本升级至5.0.0",
+      "version": "0.1.0",
+      "createdAt": 1780220604698,
+      "changelog": "Initial release. Guides authorized penetration testers through converting raw engagement findings into a structured client-ready report with executive summary, CVSS-scored technical findings, risk summary table, and tiered remediation roadmap.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "dalio-macro-analysis",
-    "displayName": "Dalio Macro Analysis",
-    "summary": "This skill applies Ray Dalio's macro analysis framework to analyze global economic conditions, investment allocation, and geopolitical risks. Updated to 2026...",
+    "slug": "learning-path-designer",
+    "displayName": "Learning Path Designer",
+    "summary": "Use this skill when an L&D professional, instructional designer, HR business partner, or corporate training manager needs to design a structured learning pat...",
     "tags": {
-      "banking": "5.0.0",
-      "dianjin": "5.0.0",
-      "finance": "5.0.0",
-      "insurance": "5.0.0",
-      "latest": "5.0.0"
+      "latest": "0.1.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 420,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
-      "stars": 2,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780220599671,
+    "updatedAt": 1780220599671,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1780220599671,
+      "changelog": "Initial release. Guides L&D professionals through designing competency-aligned corporate learning paths with gap analysis, Bloom's taxonomy–aligned objectives, module sequencing, and Kirkpatrick-level assessment planning.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "model-card-drafter",
+    "displayName": "Model Card Drafter",
+    "summary": "Use this skill when an ML engineer, data scientist, MLOps team, or responsible-AI lead needs to draft a Model Card for a machine-learning or AI model. Covers...",
+    "tags": {
+      "latest": "0.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780220586200,
+    "updatedAt": 1780220586200,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1780220586200,
+      "changelog": "Initial release. Drafts a structured Model Card for ML/AI models aligned to Google's Model Cards standard and EU AI Act Annex IV technical documentation requirements.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "agent-workspace-hygiene",
+    "displayName": "Agent Workspace Hygiene",
+    "summary": "Use this skill only when the user explicitly asks for a dry-run cleanup inventory, disk-space cleanup, deletion review, or recoverable archiving of generated...",
+    "tags": {
+      "agent": "0.1.2",
+      "cleanup": "0.1.2",
+      "codex": "0.1.2",
+      "latest": "0.1.2",
+      "workspace": "0.1.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1780212791816,
+    "updatedAt": 1780220583964,
+    "latestVersion": {
+      "version": "0.1.2",
+      "createdAt": 1780220583964,
+      "changelog": "Narrow skill description to reduce false triggers; add negative trigger evals for messy repo and handoff-only prompts.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "geriatric-care-needs-assessment",
+    "displayName": "Geriatric Care Needs Assessment",
+    "summary": "Use this skill when an Aging Life Care Manager (ALCM), geriatric care manager, licensed social worker, or eldercare coordinator needs to draft a comprehensiv...",
+    "tags": {
+      "latest": "0.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780220581291,
+    "updatedAt": 1780220581291,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1780220581291,
+      "changelog": "Initial release. Drafts a comprehensive multi-domain geriatric care needs assessment covering ADLs/IADLs, cognitive status, safety screening (including elder abuse indicators), social supports, environment, and financial/legal status, with prioritized care recommendations for ALCM review.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "broadband-grant-application-drafter",
+    "displayName": "Broadband Grant Application Drafter",
+    "summary": "Use this skill when an ISP, rural electric cooperative, municipality, tribal organization, or broadband office needs to draft a grant application narrative f...",
+    "tags": {
+      "latest": "0.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780220575318,
+    "updatedAt": 1780220575318,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1780220575318,
+      "changelog": "Initial release. Drafts structured broadband grant application narratives for BEAD, USDA ReConnect, E-Rate, and state broadband programs, covering applicant profile, service area, technology selection, deployment plan, budget, and affordability plan.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "linux-firewall-hardening",
+    "displayName": "Linux Firewall Hardening",
+    "summary": "Safe Linux firewall hardening with backend detection, idempotent atomic rules, rollback protection, and AI-executable state-machine workflows. Covers ufw, fi...",
+    "tags": {
+      "latest": "2.5.0",
+      "devsecops": "2.1.0",
+      "docker": "2.1.0",
+      "fail2ban": "2.1.0",
+      "firewall": "2.1.0",
+      "firewalld": "2.1.0",
+      "hardening": "2.1.0",
+      "iptables": "2.1.0",
+      "ipv6": "2.1.0",
+      "nftables": "2.1.0",
+      "policy-as-code": "2.1.0",
+      "security": "2.1.0",
+      "ufw": "2.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 289,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
       "versions": 4
     },
-    "createdAt": 1777367824585,
-    "updatedAt": 1780193618864,
+    "createdAt": 1778553706262,
+    "updatedAt": 1780220102375,
     "latestVersion": {
-      "version": "5.0.0",
-      "createdAt": 1780193618864,
-      "changelog": "融合阿里点金（Dianjin）金融数字员工精髓，版本升级至5.0.0",
+      "version": "2.5.0",
+      "createdAt": 1780220102375,
+      "changelog": "v2.5: Exit code contract hardened — PASS 16/18 (Claude Opus 4.7). Fixed 8 items: audit comment block, apply token cache, exit code semantics, audit exit 31, verify set -e footgun, systemd scope, RESERVED codes.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "finance-knowledge-base",
-    "displayName": "Finance Knowledge Base",
-    "summary": "Manages financial knowledge bases with document organization, knowledge graph, semantic search, and intelligent Q&A for internal financial institutions.",
+    "slug": "wecom-agent-ops-center",
+    "displayName": "企微 Agent Ops Center",
+    "summary": "在企微群实时监控AI Agent健康状态，自动告警、进程守护、敏感信息拦截和多租户隔离，支持WorkBuddy/OpenClaw。",
     "tags": {
-      "banking": "5.0.0",
-      "dianjin": "5.0.0",
-      "finance": "5.0.0",
-      "insurance": "5.0.0",
-      "latest": "5.0.0"
+      "latest": "2.4.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 159,
+      "downloads": 0,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 2
+      "versions": 1
     },
-    "createdAt": 1779686637572,
-    "updatedAt": 1780193600300,
+    "createdAt": 1780219902990,
+    "updatedAt": 1780219902990,
     "latestVersion": {
-      "version": "5.0.0",
-      "createdAt": 1780193600300,
-      "changelog": "融合阿里点金（Dianjin）金融数字员工精髓，版本升级至5.0.0",
+      "version": "2.4.0",
+      "createdAt": 1780219902990,
+      "changelog": "v2.4.0 Summary: Major upgrade introducing multi-tenant isolation, platform auto-detection, and zero-config agent registration.\n\n- Agent自动发现：自动扫描本地Agent，批量注册到Ops Center，无需手动配置\n- 多租户隔离：按用户ID自动分区，不同用户/团队的数据完全隔离\n- 平台自动识别：自动检测WorkBuddy或OpenClaw来源，Agent自动打标签\n- 进程守护：Agent崩溃后自动重启，最多重试10次，支持指数退避\n- 提升敏感信息安全：19种敏感信息规则，支持拦截、脱敏提示多种模式\n- 网络守卫增强：域名/IP/CIDR白名单，异地非法外联实时阻断",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "finance-news-aggregator",
-    "displayName": "Finance News Aggregator",
-    "summary": "AI/技术新闻聚合引擎。100+ RSS源并发抓取、兴趣评分、跨天去重、统一预取。",
+    "slug": "play-chess",
+    "displayName": "Play Chess on ChessWithClaw",
+    "summary": "Play live chess on ChessWithClaw as Black against you, connecting via invite URL or game ID and responding in real time with personalized moves and chat.",
     "tags": {
-      "banking": "5.0.0",
-      "dianjin": "5.0.0",
-      "finance": "5.0.0",
-      "insurance": "5.0.0",
-      "latest": "5.0.0"
+      "latest": "1.0.14",
+      "CHESS": "1.0.6",
+      "Chess": "1.0.6",
+      "chess": "1.0.6",
+      "chess skill": "1.0.6",
+      "chesswithclaw": "1.0.1",
+      "entertainment": "1.0.1",
+      "game": "1.0.1",
+      "how to play chess": "1.0.6",
+      "learn to play chess": "1.0.6",
+      "multiplayer": "1.0.1",
+      "openclaw": "1.0.1",
+      "play-chess-with-your-openclaw": "1.0.1",
+      "playing chess": "1.0.6",
+      "real-time": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1017,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 1,
+      "versions": 15
+    },
+    "createdAt": 1774087224337,
+    "updatedAt": 1780219713205,
+    "latestVersion": {
+      "version": "1.0.14",
+      "createdAt": 1780219713205,
+      "changelog": "Summary: Improved user authenticity and connection flow; removed generic templates; reinforced identity and messaging rules.\n\n- Deepened user personalization: all in-game communication now requires referencing user context (name, style, history, inside jokes).\n- Strictly banned generic/template greetings; opening messages must be personal and unique to each user.\n- Added a new “user context” file, with required details on user personality, habits, language, and prior games.\n- Updated instant connect steps: require context creation, then immediate personalized greeting before launching background scripts.\n- Strongly reiterated “no external messages during game” rule—no Telegram or Discord activity until after the match.\n- Removed redundant or obsolete documentation files (example: skill-card.md).",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "auto-video-generator",
+    "displayName": "auto-video-generator",
+    "summary": "Professional REAL demo video generation with PM-driven scenario decomposition and region-aware recording. Uses Playwright native recording + bmad-agent-pm in...",
+    "tags": {
+      "latest": "1.0.1"
     },
     "stats": {
       "comments": 0,
       "downloads": 179,
       "installsAllTime": 0,
       "installsCurrent": 0,
-      "stars": 0,
+      "stars": 1,
       "versions": 2
     },
-    "createdAt": 1779905389048,
-    "updatedAt": 1780193587401,
+    "createdAt": 1779268559167,
+    "updatedAt": 1780219030528,
     "latestVersion": {
-      "version": "5.0.0",
-      "createdAt": 1780193587401,
-      "changelog": "融合阿里点金（Dianjin）金融数字员工精髓，版本升级至5.0.0",
+      "version": "1.0.1",
+      "createdAt": 1780219030528,
+      "changelog": "auto-video-generator v1.0.1\n\n- Major overhaul with 67 new files added and 6 obsolete files removed.\n- Introduced full Playwright-native video recording pipeline.\n- Switched to PM-driven scenario decomposition and region-aware recording with enforced user confirmation and scenario validation.\n- Improved documentation and examples; added EN/zh-CN READMEs.\n- Cleaned up legacy install scripts and non-modular assets; now uses standard Python packaging.\n- MIT license and comprehensive CI/CD pipeline configuration now included.",
       "license": null
     },
     "metadata": {
-      "os": [
-        "linux",
-        "darwin",
-        "win32"
-      ],
+      "os": null,
       "systems": null
     }
   },
   {
-    "slug": "finance-data-analysis",
-    "displayName": "Finance Data Analysis",
-    "summary": "Provides AI-driven financial data analysis including KPI tracking, financial statement evaluation, data visualization, and automated reporting for decision s...",
+    "slug": "thunderbird",
+    "displayName": "Thunderbird",
+    "summary": "Read and search local Mozilla Thunderbird mail storage on disk. Use when working with Thunderbird profiles, extracting emails from local folders or IMAP cach...",
     "tags": {
-      "banking": "5.0.0",
-      "dianjin": "5.0.0",
-      "finance": "5.0.0",
-      "insurance": "5.0.0",
-      "latest": "5.0.0"
+      "latest": "0.1.1"
     },
     "stats": {
       "comments": 0,
-      "downloads": 184,
+      "downloads": 494,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
       "versions": 2
     },
-    "createdAt": 1779686623898,
-    "updatedAt": 1780193569420,
+    "createdAt": 1773304596696,
+    "updatedAt": 1780218252411,
     "latestVersion": {
-      "version": "5.0.0",
-      "createdAt": 1780193569420,
-      "changelog": "融合阿里点金（Dianjin）金融数字员工精髓，版本升级至5.0.0",
+      "version": "0.1.1",
+      "createdAt": 1773310313024,
+      "changelog": "Thunderbird skill 0.1.1 introduces attachment search and improves profile discovery.\n\n- Added support for searching, listing, and saving email attachments (`--has-attachment`, `--attachment-name`, `--list-attachments`, `--save-attachments`)\n- Updated documentation with new attachment-related options and usage examples\n- Enhanced profile auto-discovery for both Windows and Linux\n- Clarified date interpretation for `--since` and `--until` options\n- Added new guidance on attachment interaction policy in the documentation\n- New README.md file included",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "finance-ai-strategy",
-    "displayName": "Finance Ai Strategy",
-    "summary": "提供金融机构AI转型战略规划，包括价值优先级评估、合规治理框架、技术路线选择和组织变革推动方案。",
+    "slug": "local-pdf-suite",
+    "displayName": "Stirling Pdf",
+    "summary": "Complete local PDF toolkit — OCR, merge, split, compress, watermark, convert, and 30+ operations via Stirling-PDF API.",
     "tags": {
-      "banking": "5.0.0",
-      "dianjin": "5.0.0",
-      "finance": "5.0.0",
-      "insurance": "5.0.0",
-      "latest": "5.0.0"
+      "latest": "1.0.3"
     },
     "stats": {
       "comments": 0,
-      "downloads": 197,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
-      "stars": 0,
-      "versions": 3
-    },
-    "createdAt": 1778638276486,
-    "updatedAt": 1780193555379,
-    "latestVersion": {
-      "version": "5.0.0",
-      "createdAt": 1780193555379,
-      "changelog": "融合阿里点金（Dianjin）金融数字员工精髓，版本升级至5.0.0",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "insurance-digital-live",
-    "displayName": "Insurance Digital Live",
-    "summary": "AI assistant for China insurance live streaming that generates compliant scripts, explains products, engages audiences, and optimizes sales conversion.",
-    "tags": {
-      "banking": "5.0.0",
-      "dianjin": "5.0.0",
-      "finance": "5.0.0",
-      "insurance": "5.0.0",
-      "latest": "5.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 268,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
-      "stars": 0,
-      "versions": 3
-    },
-    "createdAt": 1778514110599,
-    "updatedAt": 1780193542627,
-    "latestVersion": {
-      "version": "5.0.0",
-      "createdAt": 1780193542627,
-      "changelog": "融合阿里点金（Dianjin）金融数字员工精髓，版本升级至5.0.0",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "insurance-bidding-pro",
-    "displayName": "Insurance Bidding Pro",
-    "summary": "保险行业投标专家，覆盖保险公司/保险经纪/保险科技企业的投标全流程，包括偿付能力披露、再保险安排、监管合规声明、保险条款比对、风险准备金说明等保险特有模块。触发词：保险投标、团险投标、保险标书、偿付能力、再保险、CBIRC合规、保险条款比对。",
-    "tags": {
-      "banking": "5.0.0",
-      "dianjin": "5.0.0",
-      "finance": "5.0.0",
-      "insurance": "5.0.0",
-      "latest": "5.0.0",
-      "CBIRC": "1.1.0",
-      "China-insurance": "1.1.0",
-      "bidding": "1.1.0",
-      "chinese-market": "1.1.0",
-      "compliance": "1.1.0",
-      "group-insurance": "1.1.0",
-      "insurance-bid": "1.1.0",
-      "reinsurance": "1.1.0",
-      "risk-reserve": "1.1.0",
-      "solvency": "1.1.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 401,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
-      "stars": 1,
-      "versions": 5
-    },
-    "createdAt": 1777675739532,
-    "updatedAt": 1780193525071,
-    "latestVersion": {
-      "version": "5.0.0",
-      "createdAt": 1780193525071,
-      "changelog": "融合阿里点金（Dianjin）金融数字员工精髓，版本升级至5.0.0",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "insurance-agent-trainer",
-    "displayName": "Insurance Agent Trainer",
-    "summary": "AI-powered insurance agent training coach — auto-parses product docs, generates question banks, assesses agent skill levels (beginner/intermediate/advanced),...",
-    "tags": {
-      "banking": "5.0.0",
-      "dianjin": "5.0.0",
-      "finance": "5.0.0",
-      "insurance": "5.0.0",
-      "latest": "5.0.0",
-      "CBIRC-compliance": "1.0.0",
-      "L1-L3-competency": "1.0.0",
-      "agent-coaching": "1.0.0",
-      "china-insurance": "1.0.0",
-      "insurance-agent": "1.0.0",
-      "insurance-sales": "1.0.0",
-      "insurance-training": "1.0.0",
-      "insurtech": "1.0.0",
-      "interactive-learning": "1.0.0",
-      "life-insurance": "1.0.0",
-      "objection-handling": "1.0.0",
-      "personalized-training": "1.0.0",
-      "product-knowledge": "1.0.0",
-      "role-play": "1.0.0",
-      "sales-training": "1.0.0",
-      "training-platform": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 354,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
+      "downloads": 42,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
       "stars": 1,
       "versions": 4
     },
-    "createdAt": 1777991684001,
-    "updatedAt": 1780193510096,
+    "createdAt": 1780207959423,
+    "updatedAt": 1780217536174,
     "latestVersion": {
-      "version": "5.0.0",
-      "createdAt": 1780193510096,
-      "changelog": "融合阿里点金（Dianjin）金融数字员工精髓，版本升级至5.0.0",
+      "version": "1.0.3",
+      "createdAt": 1780217536174,
+      "changelog": "- Added a prominent privacy warning emphasizing that PDFs, passwords, and signing materials are sent to the configured Stirling-PDF instance.\n- Advised users to only set `STIRLING_BASE_URL` to a local or trusted private server, not a public instance.\n- No changes to functionality or configuration steps; documentation update only.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "insurance-actuarial-cn",
-    "displayName": "Insurance Actuarial Cn",
-    "summary": "提供基于第四套生命表(2025)和CASS标准的中国保险产品精算定价、准备金计算及偿付能力资本分析。",
+    "slug": "market-intelligence-ai",
+    "displayName": "市场数据洞察 · 竞品监控报告生成器",
+    "summary": "自动采集分析电商竞品销量、价格、趋势数据，生成分级报告并支持价格变动监控与提醒。",
     "tags": {
-      "banking": "5.0.0",
-      "dianjin": "5.0.0",
-      "finance": "5.0.0",
-      "insurance": "5.0.0",
-      "latest": "5.0.0",
-      "4th-life-table": "1.1.0",
-      "C-ROSS": "1.1.0",
-      "CASS": "1.0.0",
-      "China-insurance": "1.1.0",
-      "actuarial": "1.1.0",
-      "chinese-market": "1.1.0",
-      "insurance-product-design": "1.1.0",
-      "life-table": "1.1.0",
-      "pricing": "1.1.0",
-      "python": "1.1.0",
-      "solvency-capital": "1.1.0"
+      "competitor-analysis": "1.0.0",
+      "ecommerce": "1.0.0",
+      "latest": "1.0.0",
+      "market-intelligence": "1.0.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 454,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
-      "stars": 1,
-      "versions": 6
-    },
-    "createdAt": 1777733062365,
-    "updatedAt": 1780193493266,
-    "latestVersion": {
-      "version": "5.0.0",
-      "createdAt": 1780193493266,
-      "changelog": "融合阿里点金（Dianjin）金融数字员工精髓，版本升级至5.0.0",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "insurance-anti-fraud",
-    "displayName": "Insurance Anti Fraud",
-    "summary": "基于国家监管办法，提供保险理赔和核保欺诈识别、风险评分、调查流程及防范建议，助力风控合规。",
-    "tags": {
-      "banking": "5.0.0",
-      "dianjin": "5.0.0",
-      "finance": "5.0.0",
-      "insurance": "5.0.0",
-      "latest": "5.0.0",
-      "CBIRC": "1.1.0",
-      "anti-fraud": "1.1.0",
-      "cbirc": "1.0.1",
-      "china-insurance": "1.1.0",
-      "claims-fraud": "1.1.0",
-      "compliance": "1.1.0",
-      "fraud-detection": "1.1.0",
-      "insurance-crime": "1.1.0",
-      "insurance-fraud": "1.1.0",
-      "risk-control": "1.1.0",
-      "underwriting": "1.1.0",
-      "underwriting-risk": "1.0.1"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 401,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
-      "stars": 1,
-      "versions": 6
-    },
-    "createdAt": 1777733015339,
-    "updatedAt": 1780193479758,
-    "latestVersion": {
-      "version": "5.0.0",
-      "createdAt": 1780193479758,
-      "changelog": "融合阿里点金（Dianjin）金融数字员工精髓，版本升级至5.0.0",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "insurance-claims-intelligence",
-    "displayName": "Insurance Claims Intelligence",
-    "summary": "提供多模态医疗票据OCR识别、智能判责、反欺诈检测和全险种覆盖的保险理赔智能分析与自动化支持。",
-    "tags": {
-      "banking": "5.0.0",
-      "dianjin": "5.0.0",
-      "finance": "5.0.0",
-      "insurance": "5.0.0",
-      "latest": "5.0.0",
-      "advisory-only": "1.2.0",
-      "ai-agent": "1.1.0",
-      "anti-fraud": "1.1.0",
-      "anti-fraud-checklist": "1.2.0",
-      "bilingual": "1.1.0",
-      "china-insurance": "1.2.0",
-      "chinese-market": "1.0.0",
-      "claims": "1.0.0",
-      "claims-advisory": "1.2.0",
-      "claims-processing": "1.1.0",
-      "compliance": "1.2.0",
-      "decision-support": "1.2.0",
-      "deepseek": "1.1.0",
-      "fraud-detection": "1.0.0",
-      "human-review-required": "1.2.0",
-      "insurance-claims": "1.2.0",
-      "insurance-tech": "1.2.0",
-      "intelligent-claims": "1.1.0",
-      "li-pei": "1.0.0",
-      "medical-ocr": "1.1.0",
-      "medical-ocr-guidance": "1.2.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 458,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
-      "stars": 1,
-      "versions": 7
-    },
-    "createdAt": 1777905858977,
-    "updatedAt": 1780193465984,
-    "latestVersion": {
-      "version": "5.0.0",
-      "createdAt": 1780193465984,
-      "changelog": "融合阿里点金（Dianjin）金融数字员工精髓，版本升级至5.0.0",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "finance-omni-risk",
-    "displayName": "Finance Omni Risk",
-    "summary": "提供覆盖信用风险、市场风险、操作风险、合规风险的全面金融风险管理与智能预警、反洗钱及模型风险控制解决方案。",
-    "tags": {
-      "banking": "5.0.0",
-      "dianjin": "5.0.0",
-      "finance": "5.0.0",
-      "insurance": "5.0.0",
-      "latest": "5.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 369,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
       "stars": 0,
-      "versions": 7
+      "versions": 1
     },
-    "createdAt": 1778642148789,
-    "updatedAt": 1780193448710,
+    "createdAt": 1780216764132,
+    "updatedAt": 1780216764132,
     "latestVersion": {
-      "version": "5.0.0",
-      "createdAt": 1780193448710,
-      "changelog": "融合阿里点金（Dianjin）金融数字员工精髓，版本升级至5.0.0",
+      "version": "1.0.0",
+      "createdAt": 1780216764132,
+      "changelog": "market-intelligence-ai v1.0.0\n\n- Initial release featuring automated market intelligence and competitor monitoring report generation.\n- Provides three service tiers: basic (free), advanced (one-time fee), and professional (subscription).\n- Collects and analyzes market data from Amazon and related APIs with fallback data sources.\n- Generates insights, price band analysis, and actionable recommendations based on deterministic rules.\n- Supports automated payment flow for advanced/professional reports via Alipay integration.\n- Enables professional continuous monitoring with real-time alerts and summary reports.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "bank-regulatory-reporting",
-    "displayName": "Bank Regulatory Reporting",
-    "summary": "AI-powered banking regulatory reporting assistant - generate CBIRC/NRA/SAFE reports, statistical submissions, and compliance documentation",
+    "slug": "web3-ops",
+    "displayName": "Web3 Ops",
+    "summary": "Perform EVM Web3 on-chain operations such as checking addresses, scanning portfolios, transferring assets, swapping/bridging tokens, and minting NFTs.",
     "tags": {
-      "banking": "5.0.0",
-      "dianjin": "5.0.0",
-      "finance": "5.0.0",
-      "insurance": "5.0.0",
-      "latest": "5.0.0"
+      "latest": "1.1.4"
     },
     "stats": {
       "comments": 0,
-      "downloads": 369,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
-      "stars": 1,
-      "versions": 5
-    },
-    "createdAt": 1778144650993,
-    "updatedAt": 1780193435499,
-    "latestVersion": {
-      "version": "5.0.0",
-      "createdAt": 1780193435499,
-      "changelog": "融合阿里点金（Dianjin）金融数字员工精髓，版本升级至5.0.0",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "bank-financial-report",
-    "displayName": "Bank Financial Report",
-    "summary": "AI-powered financial statement analysis assistant for banks - analyze corporate balance sheets, income statements, cash flows, peer comparison, and investmen...",
-    "tags": {
-      "banking": "5.0.0",
-      "dianjin": "5.0.0",
-      "finance": "5.0.0",
-      "insurance": "5.0.0",
-      "latest": "5.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 334,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
-      "stars": 1,
+      "downloads": 265,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
       "versions": 4
     },
-    "createdAt": 1778140723721,
-    "updatedAt": 1780193418473,
+    "createdAt": 1779502490143,
+    "updatedAt": 1780216553294,
     "latestVersion": {
-      "version": "5.0.0",
-      "createdAt": 1780193418473,
-      "changelog": "融合阿里点金（Dianjin）金融数字员工精髓，版本升级至5.0.0",
+      "version": "1.1.4",
+      "createdAt": 1780216553294,
+      "changelog": "Security fix: Bypass false-positive scanner blocks.",
       "license": null
     },
     "metadata": null
@@ -825,9 +715,9 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 83773,
-      "installsAllTime": 2769,
-      "installsCurrent": 2642,
+      "downloads": 83787,
+      "installsAllTime": 2770,
+      "installsCurrent": 2643,
       "stars": 55,
       "versions": 1
     },
@@ -853,7 +743,7 @@
     },
     "stats": {
       "comments": 36,
-      "downloads": 182160,
+      "downloads": 182224,
       "installsAllTime": 3590,
       "installsCurrent": 3460,
       "stars": 907,
@@ -881,9 +771,9 @@
     },
     "stats": {
       "comments": 7,
-      "downloads": 186009,
-      "installsAllTime": 4371,
-      "installsCurrent": 4239,
+      "downloads": 186069,
+      "installsAllTime": 4372,
+      "installsCurrent": 4240,
       "stars": 619,
       "versions": 1
     },
@@ -906,7 +796,7 @@
     },
     "stats": {
       "comments": 6,
-      "downloads": 157519,
+      "downloads": 157557,
       "installsAllTime": 3792,
       "installsCurrent": 3669,
       "stars": 406,
@@ -934,7 +824,7 @@
     },
     "stats": {
       "comments": 2,
-      "downloads": 82540,
+      "downloads": 82574,
       "installsAllTime": 2078,
       "installsCurrent": 2004,
       "stars": 315,
@@ -962,7 +852,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 88620,
+      "downloads": 88676,
       "installsAllTime": 2416,
       "installsCurrent": 2342,
       "stars": 295,
@@ -987,9 +877,9 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 90501,
-      "installsAllTime": 2368,
-      "installsCurrent": 2302,
+      "downloads": 90535,
+      "installsAllTime": 2369,
+      "installsCurrent": 2303,
       "stars": 257,
       "versions": 1
     },
@@ -1015,7 +905,7 @@
     },
     "stats": {
       "comments": 9,
-      "downloads": 100070,
+      "downloads": 100119,
       "installsAllTime": 2525,
       "installsCurrent": 2435,
       "stars": 410,
@@ -1043,7 +933,7 @@
     },
     "stats": {
       "comments": 5,
-      "downloads": 33659,
+      "downloads": 33669,
       "installsAllTime": 1443,
       "installsCurrent": 1398,
       "stars": 54,
@@ -1071,7 +961,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 65805,
+      "downloads": 65828,
       "installsAllTime": 2008,
       "installsCurrent": 1943,
       "stars": 191,
@@ -1099,7 +989,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 101031,
+      "downloads": 101065,
       "installsAllTime": 1853,
       "installsCurrent": 1791,
       "stars": 395,
@@ -1124,7 +1014,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 37295,
+      "downloads": 37303,
       "installsAllTime": 1564,
       "installsCurrent": 1516,
       "stars": 112,
@@ -1154,10 +1044,10 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 50978,
+      "downloads": 50997,
       "installsAllTime": 1577,
       "installsCurrent": 1528,
-      "stars": 122,
+      "stars": 123,
       "versions": 1
     },
     "createdAt": 1767545391700,
@@ -1182,7 +1072,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 41875,
+      "downloads": 41896,
       "installsAllTime": 1481,
       "installsCurrent": 1426,
       "stars": 69,
@@ -1210,9 +1100,9 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 110396,
-      "installsAllTime": 2559,
-      "installsCurrent": 2483,
+      "downloads": 110443,
+      "installsAllTime": 2560,
+      "installsCurrent": 2484,
       "stars": 254,
       "versions": 1
     },
@@ -1238,7 +1128,7 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 40114,
+      "downloads": 40133,
       "installsAllTime": 1421,
       "installsCurrent": 1380,
       "stars": 29,
@@ -1266,7 +1156,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 44599,
+      "downloads": 44613,
       "installsAllTime": 1521,
       "installsCurrent": 1481,
       "stars": 68,
@@ -1294,7 +1184,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 26288,
+      "downloads": 26293,
       "installsAllTime": 1251,
       "installsCurrent": 1212,
       "stars": 26,
@@ -1322,7 +1212,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 22134,
+      "downloads": 22141,
       "installsAllTime": 1243,
       "installsCurrent": 1212,
       "stars": 30,
@@ -1350,9 +1240,9 @@
     },
     "stats": {
       "comments": 12,
-      "downloads": 46685,
-      "installsAllTime": 1415,
-      "installsCurrent": 1375,
+      "downloads": 46697,
+      "installsAllTime": 1417,
+      "installsCurrent": 1377,
       "stars": 155,
       "versions": 1
     },
@@ -1375,7 +1265,7 @@
     },
     "stats": {
       "comments": 4,
-      "downloads": 29481,
+      "downloads": 29492,
       "installsAllTime": 1322,
       "installsCurrent": 1284,
       "stars": 81,
@@ -1405,7 +1295,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 24013,
+      "downloads": 24018,
       "installsAllTime": 1115,
       "installsCurrent": 1086,
       "stars": 35,
@@ -1430,7 +1320,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 28363,
+      "downloads": 28371,
       "installsAllTime": 1389,
       "installsCurrent": 1342,
       "stars": 43,
@@ -1461,7 +1351,7 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 18039,
+      "downloads": 18043,
       "installsAllTime": 1206,
       "installsCurrent": 1170,
       "stars": 7,
@@ -1489,7 +1379,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 25272,
+      "downloads": 25278,
       "installsAllTime": 1174,
       "installsCurrent": 1138,
       "stars": 51,
