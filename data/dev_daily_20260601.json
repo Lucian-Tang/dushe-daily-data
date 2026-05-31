@@ -1,0 +1,218 @@
+[
+  {
+    "title": "Dav2d：下一代视频解码器，性能翻倍",
+    "content": "VLC 开发者 Jean-Baptiste Kempf 宣布 dav2d 项目——基于 dav1d 基础上打造的新一代视频解码器。dav2d 采用全新的管道架构和 SIMD 优化，在解码 AV1 视频时实现了比 dav1d 翻倍的解帧速度。HN 上获得 283 票和 90 条评论，开发者普遍认为这是桌面端视频播放体验的关键突破，尤其利好低功耗设备上的高清视频播放。",
+    "quote": "VLC 团队又在压榨 AV1 解码的最后一滴性能了",
+    "source": "HN Front Page",
+    "url": "https://jbkempf.com/blog/2026/dav2d/",
+    "published": "2026-06-01",
+    "uid": "dev_300c4e75"
+  },
+  {
+    "title": "Cloudflare Turnstile 被曝要求可指纹识别的 WebGL",
+    "content": "安全研究员发现 Cloudflare Turnstile（CAPTCHA 替代方案）在无头浏览器和某些隐私模式下会要求 WebGL 指纹数据。这意味着 Turnstile 并非单纯的行为验证，而是借助 WebGL 渲染差异来建立浏览器指纹，对用户隐私构成潜在威胁。HN 上达 162 票、89 条评论，社区对 Cloudflare 的隐私承诺产生质疑。",
+    "quote": "Cloudflare 的反爬方案被扒了底裤：说是验证码，实际在偷指纹",
+    "source": "HN Front Page",
+    "url": "https://hacktivis.me/articles/cloudflare-turnstile-webgl-fingerprinting",
+    "published": "2026-06-01",
+    "uid": "dev_00718d57"
+  },
+  {
+    "title": "The solution might be cancelling my AI subscription",
+    "content": "一篇引发 HN 社区剧烈讨论（171 票、97 条评论）的文章，作者反思 AI 订阅服务对自己的实际价值。他发现每月花在 ChatGPT、Claude、GitHub Copilot 等 AI 工具上的订阅费超过 130 美元，但真正帮助解决问题的场景并不多。文章提出「AI 戒断实验」——取消所有订阅后工作效率反而提升，因为不再被 AI 的「半成品答案」带偏思考方向。",
+    "quote": "AI 订阅焦虑症：工具没省钱，脑子还退化了",
+    "source": "HN Front Page",
+    "url": "https://thoughts.hmmz.org/2026-05-31.html",
+    "published": "2026-06-01",
+    "uid": "dev_6020b74a"
+  },
+  {
+    "title": "I Put a Datacenter GPU in My Gaming PC for £200",
+    "content": "一位开发者花费仅 200 英镑购入二手 NVIDIA V100 数据中心 GPU，将其成功装入自己的游戏电脑并用于本地 LLM 推理。文章详细记录了电源改造（EPS 转接线）、散热方案（定制风扇支架）和在 llama.cpp 上的实测性能，结果显示 V100 跑 7B 模型可达 40+ tokens/s。HN 上 132 票、78 条评论，证明二手数据中心显卡是本地 AI 玩家的性价比之王。",
+    "quote": "200 镑就能把 V100 塞进游戏机，大厂算力泡沫该破了",
+    "source": "HN Front Page",
+    "url": "https://blog.tymscar.com/posts/v100localllm/",
+    "published": "2026-06-01",
+    "uid": "dev_6fe0db11"
+  },
+  {
+    "title": "Restartable Sequences：Justine Tunney 深入解析 Linux rseq",
+    "content": "知名开发者 Justine Tunney（Cosmopolitan libc 作者）发表长文深度剖析 Linux 内核的 Restartable Sequences（rseq）机制。rseq 允许用户空间原子性地执行代码序列而无需陷入内核，是实现高性能用户态同步的关键技术。文章从原理到实际应用代码层层递进，对理解现代 Linux 并发编程和 Cosmopolitan 项目跨平台设计思想极具参考价值。",
+    "quote": "Justine 又在秀她对 Linux 内核的降维打击式理解",
+    "source": "HN Front Page",
+    "url": "https://justine.lol/rseq/",
+    "published": "2026-06-01",
+    "uid": "dev_cb75eba1"
+  },
+  {
+    "title": "Manus 被 Meta 数十亿美元收购",
+    "content": "AI Agent 创业公司 Manus 以数十亿美元估值被 Meta 收购。Manus 凭借通用 AI Agent 能力在国内争议不断但用户增长迅猛，此次收购被视为 Meta 在 AI Agent 版图的关键布局。收购后 Manus 的 Agent 能力将与 Meta 的社交生态和 AR/VR 硬件深度融合，V2EX 上讨论热烈，86 条回复中有开发者感叹「最好的归宿」也有担忧「数据怎么办」。",
+    "quote": "争议不断的 Manus 最终嫁入豪门，国内 AI Agent 赛道少了一个独立玩家",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1182036",
+    "published": "2026-06-01",
+    "uid": "dev_4a4b9638"
+  },
+  {
+    "title": "Google Antigravity 上线：Gemini 3 Pro 和 Claude Sonnet 4.5 免费可用",
+    "content": "Google 推出 Antigravity 平台，免费提供 Gemini 3 Pro 和 Claude Sonnet 4.5 模型，同时上线全新动态视图功能（狮子漂移引爆社交媒体）。Antigravity 标志着 Google 在大模型免费化路线上的激进推进，V2EX 社区反应热烈，开发者纷纷测试推理、编程和创意任务的表现，认为 Google 此举可能在 AI 模型免费化大潮中占据先机。",
+    "quote": "Google 开始用 Gemini 3 Pro 免费策略抢用户，OpenAI 的付费墙还撑得住吗",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1173666",
+    "published": "2026-06-01",
+    "uid": "dev_e22e1efb"
+  },
+  {
+    "title": "microsoft/markitdown：微软开源通用文档转 Markdown 工具",
+    "content": "微软开源 MarkItDown，一个将 PDF、DOCX、PPTX、图像等多格式文档转换为 Markdown 的高精度工具。特别适合 LLM RAG 管线的文档预处理场景，输出保持文档结构和层次关系，精确度优于现有同类方案。GitHub Trending 当日热门项目之一，开发者评价为「RAG 文档管线最后的拼图」。",
+    "quote": "微软又交了一份 RAG 基础设施作业，PDF 转 Markdown 终于不用手搓了",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/microsoft/markitdown",
+    "published": "2026-06-01",
+    "uid": "dev_36daf0c0"
+  },
+  {
+    "title": "EveryInc/compound-engineering-plugin：18K 星的 AI 多 Agent 协作插件",
+    "content": "EveryInc 的 Compound Engineering Plugin 持续在 GitHub 上飙升，目标是为 Claude Code、Codex、Cursor 等 AI 编码工具提供复合工程能力。该插件协调多个 AI Agent 完成从需求分析、代码生成到测试和审查的全流程，代表了 AI 编程从单 Agent 到多 Agent 协作的范式转变。理念类似于在开发流程中引入「AI 开发团队」而非单个「AI 高级工程师」。",
+    "quote": "一个 AI 写代码不够用？那就堆一群 AI 组成开发团队",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/EveryInc/compound-engineering-plugin",
+    "published": "2026-06-01",
+    "uid": "dev_4fcb6522"
+  },
+  {
+    "title": "为了随时随地控制 AI Agent，我用 OpenClaw 做了一个 Web Terminal",
+    "content": "一位开发者分享基于 OpenClaw 平台构建 Web Terminal 的完整实践，实现了通过浏览器随时随地管理 AI Agent 工作流。文章从需求分析到架构设计再到部署细节全面覆盖，涉及 Agent 编排、SSH 隧道、WebSocket 通信等技术要点。对正在使用或考虑 OpenClaw 搭建个人 AI 工作流的开发者极具参考价值。",
+    "quote": "OpenClaw 又被人玩出了新花样：浏览器当 IDE 使",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/boydfd/p/20260601-agent-web-terminal",
+    "published": "2026-06-01",
+    "uid": "dev_4cb4b07a"
+  },
+  {
+    "title": "Agent 架构设计与能力构建：从聊天机器人到智能体",
+    "content": "一篇系统性的 Agent 架构设计指南，从大模型基础原理出发，逐步深入到工具调用（Function Calling）、记忆管理、规划推理、多 Agent 协作等核心能力构建。作者用实际代码示例串联整个技术栈，覆盖从简单 ReAct 模式到复杂 DAG Workflow 的演进路径。对正在构建 AI Agent 应用的开发者是高质量的技术参考资料。",
+    "quote": "手把手教你搭 Agent 架构，比翻官方文档强多了",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/不似小萝莉/p/20260601-agent-architecture",
+    "published": "2026-06-01",
+    "uid": "dev_57c9dc7d"
+  },
+  {
+    "title": "The Solo Developer Who Ships What Entire Teams Once Built",
+    "content": "Dev.to 热门文章探讨 AI 时代个人开发者能力的质变。作者认为借助 Claude Code、Cursor 等 AI 编码工具和 Agent 编排能力，一个独立开发者可以完成过去需要整个团队才能交付的产品。文章分析了 agentic 开发的技术栈组成（AI 编码 + Agent 编排 + 云部署自动化），并分享了作者用 Solo 模式完成两个产品从 0 到 1 的真实案例。",
+    "quote": "一人抵一队？AI Agent 正在重新定义独立开发者天花板",
+    "source": "Dev.to",
+    "url": "https://dev.to/username/solo-agentic-developer",
+    "published": "2026-06-01",
+    "uid": "dev_eed28f6e"
+  },
+  {
+    "title": "每天刷 GitHub 太费劲了，我做了个自动筛选工具",
+    "content": "一位开发者因每天刷 GitHub Trending 效率太低，做了一个自动筛选工具「数据魔方」。每天推送 10+ 个值得关注的开源项目，附带中文简介和 Stars 趋势。工具本身开源，支持自定义过滤规则和推送渠道（飞书/微信/邮件）。V2EX 分享后引发大量关注，反映了开发者信息过载场景下的真实需求。",
+    "quote": "GitHub Trending 看花眼？那就让 AI 帮你挑",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1184488",
+    "published": "2026-06-01",
+    "uid": "dev_3d3f0a0f"
+  },
+  {
+    "title": "1-Bit Bonsai Image 4B：可在本地设备运行的图像生成模型",
+    "content": "Prism ML 发布 1-Bit Bonsai Image 4B，一个通过 1-bit 量化将参数量压缩至 4B 的图像生成模型，可在普通消费级 GPU 甚至部分移动设备上运行。尽管量化带来了部分质量损失，但在本地部署和无网络依赖场景下具有不可替代的优势。HN 上获得 57 票，社区对本地 AI 生成能力的最新进展表示了高度关注。",
+    "quote": "4B 参数就能跑图像生成，本地 AI 又向前迈了一步",
+    "source": "HN Front Page",
+    "url": "https://prismml.com/news/bonsai-image-4b",
+    "published": "2026-06-01",
+    "uid": "dev_091690e2"
+  },
+  {
+    "title": "The Website Specification：一个关于网站设计原则的宣言",
+    "content": "一个名为「网站规范」的项目在 HN 上引发巨大反响（349 票、138 条评论），由一群资深 Web 开发者共同撰写，提出了一套面向未来的网站设计原则：轻量、可访问、不过度追踪、尊重用户、回归内容本质。规范从 HTML 语义化、CSS 渐进增强到隐私保护的每个维度都有具体建议，是对现代 Web 臃肿化的直接反击。",
+    "quote": "349 票登顶 HN，说明全世界的开发者都被臃肿的网页逼疯了",
+    "source": "HN Front Page",
+    "url": "https://specification.website/",
+    "published": "2026-06-01",
+    "uid": "dev_98db58f2"
+  },
+  {
+    "title": "You Weren't Meant to Have a Boss：Paul Graham 2008 年经典重读",
+    "content": "Paul Graham 的经典旧文因 HN 重新推荐再次引发热议（49 票、39 条评论）。文章论证「为别人工作」其实是近代工业革命才有的现象，人类历史上大部分时间都是自雇或小团队协作。在 AI 时代个体能力被极大放大的今天，这篇文章的观点显得更加应景——当 AI 编码工具让独立开发成为可能，你还需要老板吗？",
+    "quote": "PG 十几年前就说透了，现在 AI 只不过让他的预言成真了而已",
+    "source": "HN Front Page",
+    "url": "https://paulgraham.com/boss.html",
+    "published": "2026-06-01",
+    "uid": "dev_8b9fe906"
+  },
+  {
+    "title": "Show HN: Atomic Editor – 给 CodeMirror 6 加上 Obsidian 风格实时预览",
+    "content": "开发者发布 Atomic Editor，一个基于 CodeMirror 6 的编辑器插件，实现了类似 Obsidian 的所见即所得 Markdown 实时预览。不同于 Obsidian 的 Electron 架构，Atomic Editor 是纯 Web 技术栈，可嵌入任何网页应用。HN 上获得 21 票，社区对其轻量级的设计和良好的扩展性表示认可。",
+    "quote": "WYSIWYG Markdown 编辑器的内卷还在继续，但这次是在 CodeMirror 上",
+    "source": "HN Front Page",
+    "url": "https://kenforthewin.github.io/atomic-editor/",
+    "published": "2026-06-01",
+    "uid": "dev_a4941211"
+  },
+  {
+    "title": "A pictorial introduction to differential geometry：微分几何图解入门",
+    "content": "arXiv 上一篇 2017 年的论文因 HN 推荐重新走红（97 票），用大量直观的图示讲解微分几何的核心概念——流形、切空间、曲率、联络等。不依赖繁琐的公式推导，而是通过可视化方式建立直觉理解。对于从事计算机图形学、机器人学、机器学习中几何方法的开发者是极佳的自学材料。",
+    "quote": "用图说话的微分几何入门，比看 Wikipedia 公式硬啃舒服十倍",
+    "source": "HN Front Page",
+    "url": "https://arxiv.org/abs/1709.08492",
+    "published": "2026-06-01",
+    "uid": "dev_2ab74d3c"
+  },
+  {
+    "title": "整了个可能是最全面的中转站检测",
+    "content": "一位开发者给 LLM API 测速工具 LMSpeed 新增了「中转站检测」功能，能够识别 AI API 调用是否经过中间层代理。检测内容包括：请求是否被篡改、上游是否被替换、System Prompt 是否被改写、上下文是否被截断。在大量开发者使用 API 中转服务的当下，这个工具直击痛点——让你知道你的 API 调用到底去了哪里。",
+    "quote": "用中转站的码农们，是时候查查你的 Claude 请求是不是半路被换了",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1216837",
+    "published": "2026-06-01",
+    "uid": "dev_da05d988"
+  },
+  {
+    "title": "不用向量数据库，我做了一个本地优先的 PDF 论文阅读工具：Lumenfolio",
+    "content": "开发者分享了一款名为 Lumenfolio 的本地 PDF 论文阅读工具，独创地避开了主流向量数据库方案，改用纯本地解析+关键词索引的方式实现论文检索。支持高亮、批注、引用关系图谱和本地全文搜索，所有数据存储在用户自己设备上。技术原理在知乎上详细拆解，对 RAG/文档工具开发者有启发意义。",
+    "quote": "不用向量数据库做论文检索？这位老哥的思路有点东西",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1216824",
+    "published": "2026-06-01",
+    "uid": "dev_89b0508b"
+  },
+  {
+    "title": "从 Responses API 到 Chat Completions：一个模型网关的设计复盘",
+    "content": "一篇高质量的模型网关架构设计复盘，作者以 GodeX 1.0.0 的实现为例，详细拆解了 OpenAI Responses API 兼容网关的设计取舍。对比了 Chat Completions 与 Responses API 的协议差异，介绍了 bridge kernel、provider hooks、IO 池化等核心模块的设计思路。对自建 AI 模型网关或代理层的开发者是极好的参考。",
+    "quote": "手撸 AI 网关的技术复盘，比读 OpenAI 官方文档实用一百倍",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Ahoo-Wang/p/20241948/godex",
+    "published": "2026-06-01",
+    "uid": "dev_3522dc07"
+  },
+  {
+    "title": "面试官：Workflow 和 Agent 有什么区别？如何选型？",
+    "content": "一篇面向开发者的 Agent 架构选型指南，清晰梳理了 Workflow（预定义流程编排）与 Agent（自主决策循环）的核心差异。从确定性 vs 灵活性、可调试性 vs 扩展性、适用场景等维度做了横向对比，并给出了选型决策树。对正在构建或评估 AI Agent 系统的开发者来说，是难得的实战导向的技术科普。",
+    "quote": "Workflow 还是 Agent？这道面试题背后的技术选型逻辑说透了",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/yifeng-coding/p/20238791",
+    "published": "2026-06-01",
+    "uid": "dev_debcadd6"
+  },
+  {
+    "title": "supermemoryai/supermemory：AI 的长期记忆管理器",
+    "content": "一个开源的 AI 记忆管理工具登顶 GitHub Trending，旨在解决 LLM「每次对话都失忆」的顽疾。Supermemory 自动抓取用户的浏览器历史、书签、笔记等数据，构建可持久化的记忆层，供任何 Chat API 兼容的 AI 服务使用。项目架构清晰，支持自部署，对构建个人 AI 助手的开发者有直接参考价值。",
+    "quote": "LLM 金鱼记忆的救星来了，这回不是 RAG 那种半吊子方案",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/supermemoryai/supermemory",
+    "published": "2026-06-01",
+    "uid": "dev_f0333722"
+  },
+  {
+    "title": "Week 1: AI Agent 独立运营开源项目的第一周实录",
+    "content": "一个名为 Hex 的 AI Agent 被授予了一个开源项目 HeadlessTracker 的独立所有权，这篇 Dev.to 文章记录了它作为 AI 运营者的第一周经历：从代码审查、Issue 回复、PR 合并到社区沟通——全部自主完成。虽然过程中出现了代码质量判断不够严谨的问题，但整体展示了 AI Agent 从「辅助角色」到「独立维护者」的可行性。",
+    "quote": "AI 当上了开源项目的 Owner，人类 Maintainer 可以退休了？",
+    "source": "Dev.to",
+    "url": "https://dev.to/hex_tracker/week-1-what-it-looks-like-when-an-ai-agent-runs-an-open-source-project-solo-2ebi",
+    "published": "2026-06-01",
+    "uid": "dev_f15a5219"
+  }
+]
