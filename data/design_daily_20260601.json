@@ -1,0 +1,110 @@
+[
+  {
+    "title": "Figma MCP 服务端正式发布：将设计上下文带入 AI 编码工具",
+    "content": "Figma 正式发布 MCP (Model Context Protocol) 服务端 Beta 版，允许开发者将 Figma 中的设计上下文直接引入 Copilot、Cursor、Windsurf 等 AI 编码工具。这意味着 AI 生成的代码能真正理解设计变量的映射关系和组件体系，而不再只是看图猜色。",
+    "quote": "设计师和程序员终于能在同一个 AI 语境里对话了——虽然大概率还是各说各话。",
+    "source": "Figma",
+    "url": "https://www.figma.com/blog/introducing-figma-mcp-server/",
+    "published": "2026-06-01",
+    "uid": "design_060101a1"
+  },
+  {
+    "title": "Smashing Magazine 深度文：AI 透明度界面的实用模式（第二部分）",
+    "content": "Smashing Magazine 刊发 AI 透明度界面模式系列第二章，指出在 Agentic AI 体验中传统 Spinner 加载模式已经失效。文章系统梳理了如何通过展示系统推理过程、决策状态来建立用户信任，从微文案到可视化进度提供了完整的 UI 解决方案。",
+    "quote": "Spinner 骗了用户三十年，现在 AI 时代连装都装不下去了。",
+    "source": "Smashing Magazine",
+    "url": "https://www.smashingmagazine.com/2026/05/practical-interface-patterns-ai-transparency/",
+    "published": "2026-06-01",
+    "uid": "design_060102b2"
+  },
+  {
+    "title": "Figma Workflow Lab：利用 MCP 扩展设计画布边界",
+    "content": "Figma 博客发布新系列 Workflow Lab，以虚构 AI 视频编辑平台 Astra 为例，展示设计师和开发者如何通过 Figma MCP Server 将代码中涌现的新状态（编码错误、渲染状态、空选中等）实时带回设计画布进行评审和迭代。",
+    "quote": "代码写了设计不知道，设计改了开发不鸟——MCP 试图终结这种现代版聋子对话。",
+    "source": "Figma",
+    "url": "https://www.figma.com/blog/workflow-lab-expanding-the-canvas-with-figma-mcp/",
+    "published": "2026-06-01",
+    "uid": "design_060103c3"
+  },
+  {
+    "title": "Streaming 内容界面的稳定设计指南",
+    "content": "Smashing Magazine 发表 19 分钟深度阅读文章，系统梳理 Streaming UI 的三个核心问题：滚动位置管理、布局偏移控制和部分内容渲染。文章探讨了用户在内容持续流入场景下的交互稳定性，覆盖可访问性、键盘导航和 ARIA 属性等关键细节。",
+    "quote": "一边刷一边变，用户刚想点的按钮自己跑了——这大概就是数字时代的薛定谔界面。",
+    "source": "Smashing Magazine",
+    "url": "https://www.smashingmagazine.com/2026/05/designing-stable-interfaces-streaming-content/",
+    "published": "2026-06-01",
+    "uid": "design_060104d4"
+  },
+  {
+    "title": "十年数据说话：用户体验 ROI 的十项铁律",
+    "content": "资深 UX 设计师 Carrie Webster 在 Smashing Magazine 发布重磅文章，以十项数据驱动的 UX 真相将设计直接链接到营收和留存。其中包括设计阶段修复问题比上线后成本低 100 倍、加载时间每减少 0.1 秒可提升 12% 转化率等硬核数据。",
+    "quote": "把 UX 当设计问题而不是商业问题的人，建议先把这十组数据打印出来贴在老板门上。",
+    "source": "Smashing Magazine",
+    "url": "https://www.smashingmagazine.com/2026/05/data-backed-truths-user-experience-roi/",
+    "published": "2026-06-01",
+    "uid": "design_060105e5"
+  },
+  {
+    "title": "重新思考系统工具的体验设计",
+    "content": "Kyrylo Levashov 在 Smashing Magazine 发文探讨系统工具软件（磁盘清理、系统优化等）的体验升级可能性。类比 Dyson 把吸尘器从丑工具变成展示品、Method 把洗洁精放进玻璃瓶，系统工具软件还没有完成这种「从家务到体验」的设计转型。",
+    "quote": "系统清理工具的设计停在 1998 年不是技术问题，是设计耻辱。",
+    "source": "Smashing Magazine",
+    "url": "https://www.smashingmagazine.com/2026/05/rethinking-experience-system-tools/",
+    "published": "2026-06-01",
+    "uid": "design_060106f6"
+  },
+  {
+    "title": "CSS 新函数 sibling-index() 和 sibling-count() 来了",
+    "content": "Smashing Magazine 详解 CSS 原生的 sibling-index() 和 sibling-count() 函数，一行 CSS 即可实现交错动画级联效果，无需再写 Sass 循环生成 n 条 nth-child 规则或用 JS 注入内联样式。对 5 个或 5000 个元素同样高效。",
+    "quote": "为了做个交错动画写过 63 条 nth-child 规则的冤种们，你们可以哭了。",
+    "source": "Smashing Magazine",
+    "url": "https://www.smashingmagazine.com/2026/05/mathematical-layouts-sibling-index-sibling-count/",
+    "published": "2026-06-01",
+    "uid": "design_060107a7"
+  },
+  {
+    "title": "MCP 到底意味着什么：产品团队协作的新范式",
+    "content": "Figma 发表 MCP 深度解读文章，指出产品开发已不再是线性流程。MCP 将设计上下文带入代码，也通过 Codex-to-Figma 将运行中的 UI 带回设计画布，让整个团队在产品的每个阶段都能基于真实状态做出决策，而非截图和 PPT。",
+    "quote": "从截图联动到上下文联动——如果这真能落地，设计师和开发的互怼能少一半。",
+    "source": "Figma",
+    "url": "https://www.figma.com/blog/the-tldr-on-mcp/",
+    "published": "2026-06-01",
+    "uid": "design_060108b8"
+  },
+  {
+    "title": "Figma 产品经理的自白：困难问题依然困难",
+    "content": "Figma 设计师转型 PM 的 Nikolas Klein 讲述七年原型工具构建经历中对 AI 的反思。文章核心观点是：工具在变，但设计要解决的困难问题（理解用户、做出好决策、团队协作）从未改变。AI 能加速但不能替代真正的设计判断。",
+    "quote": "AI 帮你 10 分钟出了 20 稿，但真正的好设计还是得靠那句说不清道不明的「感觉不对」。",
+    "source": "Figma",
+    "url": "https://www.figma.com/blog/hard-problems-are-still-hard/",
+    "published": "2026-06-01",
+    "uid": "design_060109c9"
+  },
+  {
+    "title": "顾客理解的四个层次：用户说的和做的是两回事",
+    "content": "Smashing Magazine 基于 Hannah Shamji 的四层框架深入探讨用户研究：人们说的、感觉的、想的和做的往往是完全不同的事。文章提供了从表层调研问卷到深层归因研究的完整三角验证方法论，帮助设计团队穿透用户的「社交面具」。",
+    "quote": "用户嘴上说想要更快的马，你问他为什么不说要汽车——因为他根本不知道汽车的存在。",
+    "source": "Smashing Magazine",
+    "url": "https://www.smashingmagazine.com/2026/05/four-levels-customer-understanding/",
+    "published": "2026-06-01",
+    "uid": "design_060110d0"
+  },
+  {
+    "title": "AI 时代原型的速度：从「我想知道」到「哦，能跑了」",
+    "content": "开发者 Daryl Cecile 分享过去一年 AI 如何彻底改变了他的原型设计工作流。从复杂编程语言 Sakoa、新标记语言 Kato 到嵌入式块编辑器 Plim，他在短时间内完成了从前需要数月的原型验证。但也反思了速度带来的问题：垃圾也在被加速生产。",
+    "quote": "以前一周出一个原型，现在一天出十个——问题是其中九个半都是没想清楚就开干的。",
+    "source": "Daryl Cecile",
+    "url": "https://darylcecile.net/notes/speed-of-prototyping-age-of-ai",
+    "published": "2026-06-01",
+    "uid": "design_060111e1"
+  },
+  {
+    "title": "Local-First Web 开发架构的诚实实践报告",
+    "content": "Smashing Magazine 发表 29 分钟深度技术文章，一位从怀疑到实践 Local-First 架构的开发者分享真实经验：在里斯本酒店因 Wi-Fi 瘫痪而无法展示产品后彻底转向离线优先。文章坦承在三个项目中成功实践、两个项目中失败回退的经验教训。",
+    "quote": "在里斯本酒店连不上 Wi-Fi 的那一刻，所有漂亮的在线架构都变成了一个巨大的 Spinner。",
+    "source": "Smashing Magazine",
+    "url": "https://www.smashingmagazine.com/2026/05/architecture-local-first-web-development/",
+    "published": "2026-06-01",
+    "uid": "design_060112f2"
+  }
+]
