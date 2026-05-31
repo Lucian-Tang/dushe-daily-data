@@ -1,0 +1,110 @@
+[
+  {
+    "title": "Rust Coreutils 0.9 发布，安全加固与零拷贝 I/O 落地",
+    "content": "Rust 实现的 GNU Coreutils 发布 0.9 版本，新增安全加固特性和零拷贝 I/O 支持，GNU 测试套件通过率已达 90.4%。该项目持续缩小与 GNU 原版的功能差距，同时提供内存安全保证。",
+    "quote": "GNU 工具用 Rust 重写这事儿已经快成行业标准了，微软看完直呼内行。",
+    "source": "Phoronix",
+    "url": "https://www.phoronix.com/news/Rust-Coreutils-0.9",
+    "published": "2026-06-01",
+    "uid": "dev_00010001"
+  },
+  {
+    "title": "AV2 v1.0 视频编码标准正式发布",
+    "content": "开放媒体联盟 AOM 正式发布 AV2 v1.0 规范，作为 AV1 的继任者，AV2 在同等码率下压缩效率提升约 30%。该标准经过多年开发和验证，定位为 AV1 后继者，成为下一代免版税视频编码格式。",
+    "quote": "H.266 和 AV2 你追我赶，最终赢家永远是——带宽账单。",
+    "source": "HackerNews",
+    "url": "https://av2.aomedia.org",
+    "published": "2026-06-01",
+    "uid": "dev_01020002"
+  },
+  {
+    "title": "Cloudflare Turnstile 被曝要求 WebGL 指纹采集，WebKitGTK 浏览器遭封杀",
+    "content": "Cloudflare 的人机验证服务 Turnstile 开始要求获取 WebGL 渲染器指纹，导致不支持该功能的 WebKitGTK 浏览器循环验证失败。开发者指出这本质上是追踪行为，连 Firefox 的隐私保护模式也无法完全绕过。",
+    "quote": "嘴上说'保护网站免遭攻击'，手上干的是浏览器指纹收割，Cloudflare 的隐私牌坊越来越像遮羞布了。",
+    "source": "HackerNews",
+    "url": "https://hacktivis.me/articles/cloudflare-turnstile-webgl-fingerprinting",
+    "published": "2026-06-01",
+    "uid": "dev_02030003"
+  },
+  {
+    "title": "dav2d：用 Rust 重写的AV1解码库性能猛增",
+    "content": "VideoLAN 开发者推出了 dav2d，一个基于 Rust 语言全新实现的 AV1 视频解码库。相比原有的 dav1d C 实现，dav2d 利用 Rust 的安全特性提供更稳定的解码体验，目标是成为下一代多媒体播放器的标准解码组件。",
+    "quote": "C 写的解码器被 Rust 重写一遍，得，行业通用剧本又续了一集。",
+    "source": "HackerNews",
+    "url": "https://jbkempf.com/blog/2026/dav2d/",
+    "published": "2026-06-01",
+    "uid": "dev_03040004"
+  },
+  {
+    "title": "Chibil：一个将 C 语言编译到 .NET IL 的开源编译器",
+    "content": "开发者 Michal Strehovský 基于 chibicc 用 C# 重写了一个 C 编译器 Chibil，目标平台为 .NET IL（MSIL）。目前已经可以编译运行 DOOM，生成的 COFF OBJ 文件兼容 MSVC /clr 模式，支持在 .NET 调试器中单步调试 C 代码。",
+    "quote": "C 代码跑在 .NET 上，这比 TypeScript 编译成 JavaScript 更赛博朋克了吧。",
+    "source": "GitHub",
+    "url": "https://github.com/MichalStrehovsky/chibil",
+    "published": "2026-06-01",
+    "uid": "dev_04050005"
+  },
+  {
+    "title": "FROST 论文揭示 SSD 时序可被用于远程浏览器指纹追踪",
+    "content": "安全研究人员发布 FROST 攻击论文，利用 OPFS（Origin Private File System）的 SSD 时序差异对浏览器进行远程指纹识别。该攻击无需 JavaScript API 权限，通过测量文件系统操作的精确耗时即可区分设备。",
+    "quote": "隐私保护像打地鼠——你以为 Canvas 指纹被防住了，人家 SSD 时序又来了。",
+    "source": "HackerNews",
+    "url": "https://hannesweissteiner.com/pdfs/frost.pdf",
+    "published": "2026-06-01",
+    "uid": "dev_05060006"
+  },
+  {
+    "title": "Backpressure is all you need：编码 Agent 的工程化思考",
+    "content": "开发者 Lucas F. Costa 发表长文，探讨 AI 编码 Agent 的工程实践。核心观点是引入系统设计中的 '反压' 概念——通过自动化测试和类型系统作为 Agent 产出的质量阀门，让 Agent 在无人值守模式下既能高效运行又不至于产生大量低质量 PR。",
+    "quote": "让 Agent 自检之后再给人看，这比把每行代码都塞给 code review 可持续多了。",
+    "source": "HackerNews",
+    "url": "https://www.lucasfcosta.com/blog/backpressure-is-all-you-need",
+    "published": "2026-06-01",
+    "uid": "dev_06070007"
+  },
+  {
+    "title": "Servo 0.2 发布，Android 浏览器 UI 全面翻新",
+    "content": "由 Linux Foundation Europe 主导的 Rust 浏览器引擎 Servo 发布 0.2 版本。桌面端新增多项改进，Android 端的浏览器 UI 完成重大重构。Servo 正稳步推进成为可用的独立浏览器，而非仅仅是个实验性引擎。",
+    "quote": "每年都说 Servo 要雄起，0.2 了至少证明没死透——比某些画大饼的项目强。",
+    "source": "Phoronix",
+    "url": "https://www.phoronix.com/news/Servo-0.2-Released",
+    "published": "2026-06-01",
+    "uid": "dev_07080008"
+  },
+  {
+    "title": "NixOS 26.05 发布：新增 20,442 个软件包，默认 systemd Stage 1",
+    "content": "NixOS 26.05 正式版本发布，带来超过 2 万个新增软件包，Stage 1 初始化流程默认基于 systemd。这一变化大幅简化了 NixOS 的启动流程，使其更接近主流 Linux 发行版的启动方式，同时保留了 Nix 包管理的全部优势。",
+    "quote": "NixOS 终于向现实低头了，但学会妥协的发行版才能活得更久。",
+    "source": "Phoronix",
+    "url": "https://www.phoronix.com/news/NixOS-26.05-Released",
+    "published": "2026-06-01",
+    "uid": "dev_08090009"
+  },
+  {
+    "title": "Wine-Staging 11.10 修复 14 年老 Bug，解决部分游戏画面过暗问题",
+    "content": "Wine-Staging 11.10 基于上游 Wine 11.10 发布，包含近 300 个额外补丁。本次修复了一个存在 14 年之久的 Bug，同时解决了部分游戏在 Wine 下画面过暗的长期问题。",
+    "quote": "14 年的 bug 终于修了，看来 Wine 开发者也有清旧账的年度考核。",
+    "source": "Phoronix",
+    "url": "https://www.phoronix.com/news/Wine-Staging-11.10-Released",
+    "published": "2026-06-01",
+    "uid": "dev_09100010"
+  },
+  {
+    "title": "AMD 在 Linux 内核中扩展 Zen 6 CPU 检测范围",
+    "content": "AMD 提交最新补丁，扩展 Linux 内核中下一代 Zen 6 处理器型号的识别范围。新的 CPU 家族 ID 和型号列表显示 AMD 正在为多款 Zen 6 衍生版本准备内核支持，覆盖桌面、服务器和移动平台。",
+    "quote": "Zen 6 的 Linux 支持还没发布就开始铺路了，AMD 你现在是真会做软件生态啊。",
+    "source": "Phoronix",
+    "url": "https://www.phoronix.com/news/AMD-Expands-Zen-6-Family-Linux",
+    "published": "2026-06-01",
+    "uid": "dev_10110011"
+  },
+  {
+    "title": "Bonsai Image 4B：1-Bit 量化图像生成模型本地可运行",
+    "content": "PrismML 发布 Bonsai Image 4B 模型，通过 1-Bit 量化技术将参数量化到极致，使 4B 参数的图像生成模型可在消费级 GPU 上本地运行。模型体积仅为传统 4B 参数的 1/32，推理速度大幅提升。",
+    "quote": "模型不断往小了做，从'跑不起来'到'勉强能跑'再到'还挺快'——这是个疗愈的过程。",
+    "source": "HackerNews",
+    "url": "https://prismml.com/news/bonsai-image-4b",
+    "published": "2026-06-01",
+    "uid": "dev_11120012"
+  }
+]
