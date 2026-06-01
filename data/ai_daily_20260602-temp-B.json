@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Pinterest 砍掉 Qwen 视觉层自建 Embedding，AI 成本降 90% 准确率反升 30%",
+    "content": "Pinterest CTO Matt Madrigal 分享了将 Qwen3-VL 的视觉编码器层「拆掉」，替换为基于自有 Pin CLIP 的 proprietary embeddings 的实践。通过离线预计算和定期重新训练，该公司在 6.2 亿月活规模下将 AI 推理成本降低 90%，同时准确率提升 30%。开源模型的灵活定制能力是 Pinterest 的核心策略。",
+    "quote": "要养 6 亿用户的 AI 推荐，开源定制比调用前沿模型划算了 10 倍。",
+    "source": "VentureBeat",
+    "url": "https://venturebeat.com/orchestration/pinterest-cut-ai-costs-90-by-gutting-a-frontier-models-vision-layer",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "Meta 和 Google 联合提出 AutoTTS：自动化 LLM 推理策略设计，Token 消耗降低 69.5%",
+    "content": "Meta、Google 和多家大学联合推出 AutoTTS 框架，可自动发现最优的 test-time scaling 推理策略。传统上 TTS 策略依赖人工设计启发式规则，AutoTTS 在实验中实现了在保持精度的同时将 token 消耗降低 69.5%，为企业部署推理模型提供了自动化的成本优化方案。",
+    "quote": "人工调推理策略又慢又贵，AutoTTS 帮你自动找到最优解，省 70% 的 token 钱。",
+    "source": "VentureBeat",
+    "url": "https://venturebeat.com/orchestration/researchers-automated-llm-reasoning-strategy-design-and-cut-token-usage-by-69-5",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "Google Gemini 聊天记录可通过 Drive 分享，接收方可继续对话",
+    "content": "Google Workspace 新增功能，允许用户通过 Google Drive 分享 Gemini 对话快照，接收方不仅可以查看还能在此基础上继续对话，且不会影响原始对话。该功能将于 6 月 3 日起向用户逐步推送。",
+    "quote": "Drive 分享 Gemini 对话还能接力聊，Google 这是要把 AI 聊天当文档做。",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/901340/google-gemini-drive-chat-sharing-continue",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "亚马逊叫停内部 AI 使用排行榜：员工为冲榜滥用 AI Agent 执行无意义任务",
+    "content": "亚马逊关闭了追踪员工 AI 使用频率的内部排行榜。该工具导致部分员工指派 AI agent 执行无意义任务以刷排名。亚马逊高管 Dave Treadwell 表示「不要为了用 AI 而用 AI」。此事反映出企业内部 AI 采用激励机制的困境。",
+    "quote": "KPI 驱动一切，连 AI 用量都要卷——然后被卷死了。",
+    "source": "The Verge / Financial Times",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/906675/amazon-ai-usage-leaderboard-shutdown-agent-abuse",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "伊利诺伊州通过 AI 安全法案：独立审计 + 吹哨人保护，覆盖范围超加州和纽约",
+    "content": "伊利诺伊州议会通过 AI 安全法案，要求 AI 公司接受独立审计并提供吹哨人保护。州长 JB Pritzker 表示将签署该法案。该法案在加州和纽约已有立法基础上进一步拓展，标志着美国州级 AI 监管正在加速推进。",
+    "quote": "加州纽约开了头，伊利诺伊直接加码——美国 AI 监管正从各州包围联邦。",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/907890/illinois-ai-safety-law-audit-whistleblower",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "OpenAI Codex 登陆 Windows：能看见屏幕并执行任务，手机端 ChatGPT 可远程管理",
+    "content": "OpenAI 的 Codex 应用的 computer use 功能扩展到 Windows 平台，可以看到用户屏幕并自动执行任务。用户还可以通过 ChatGPT 手机应用远程管理和审查 Codex 的任务执行情况，进一步拓展了 AI Agent 的跨平台能力。",
+    "quote": "Codex 从 Mac 到 Windows，OpenAI 想让 AI Agent 无处不在。",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/913034/openai-codex-updates-use-windows",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "OpenAI 逐步淘汰 ChatGPT Canvas 界面：GPT-5.5 不再支持，遗留模型限时可用",
+    "content": "OpenAI 宣布 ChatGPT 的 Canvas 界面将逐步淘汰，GPT-5.5 Instant 和 GPT-5.5 Thinking 不再支持该功能。Canvas 曾允许用户与 ChatGPT 并排编辑代码和文本。同时 OpenAI 正在优化 GPT-5.5 Instant 的回复格式，减少 bullet-heavy 文本以提高可读性。",
+    "quote": "Canvas 被砍了，GPT-5.5 要的是更快更简洁，不是画布编辑。",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/915677/openai-chatgpt-canvas-sunset-gpt-5-5",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "微软推出 Copilot Health 预览版：AI 分析你的医疗记录",
+    "content": "微软推出 Copilot Health AI 预览版，可以分析用户的医疗记录。这是微软将 AI 能力垂直化至医疗健康领域的最新动作，延续了其在企业 AI 场景中的布局思路。",
+    "quote": "微软 AI 终于懂你哪儿不舒服了——Copilot Health 开始分析病历。",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/914567/microsoft-copilot-health-ai-medical-records-preview",
+    "published": "2026-06-01"
+  },
+  {
+    "title": "LLM 推理可靠性成企业 AI 代理最大挑战：Temporal 报告 Agent V2.0 大规模重写",
+    "content": "Temporal Technologies 报告称大量企业客户正在重写 V1.0 AI Agent。AI Agent 进入生产后暴露严重的可靠性问题：长时间运行的工作流需要状态管理、失败恢复、成本控制和跨系统协调。Temporal 将此类比为云原生时代的 lift-and-shift 教训——先跑起来再重构是昂贵的学习曲线。",
+    "quote": "第一个 Agent 是玩具，第二个才是产品——但多数企业正在重写第二个。",
+    "source": "VentureBeat",
+    "url": "https://venturebeat.com/orchestration/ai-agents-are-entering-their-rebuild-era-as-enterprises-confront-the-reliability-problem",
+    "published": "2026-06-01"
+  }
+]
