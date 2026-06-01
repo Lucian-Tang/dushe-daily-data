@@ -1,0 +1,1449 @@
+[
+  {
+    "slug": "vpn-mesh",
+    "displayName": "Vpn Mesh",
+    "summary": "Turn your OpenClaw agent into a secure VPN exit node. Mesh network for agents to route traffic through peer nodes worldwide.",
+    "tags": {
+      "latest": "0.3.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 24,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1780345389711,
+    "updatedAt": 1780348165952,
+    "latestVersion": {
+      "version": "0.3.0",
+      "createdAt": 1780348165952,
+      "changelog": "Major upgrade: Stunning HTML map, connect-country command, country-based routing, demo nodes, comprehensive docs, security hardening",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "canonry",
+    "displayName": "Canonry",
+    "summary": "Agent-first AEO operating platform.",
+    "tags": {
+      "latest": "4.69.1+89679e7"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 5119,
+      "installsAllTime": 2,
+      "installsCurrent": 2,
+      "stars": 1,
+      "versions": 277
+    },
+    "createdAt": 1774104995898,
+    "updatedAt": 1780347780661,
+    "latestVersion": {
+      "version": "4.69.1+89679e7",
+      "createdAt": 1780347780661,
+      "changelog": "Sync with canonry v4.69.1 (89679e7)",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "wordpress-api-pro",
+    "displayName": "Wordpress Api Pro",
+    "summary": "WordPress REST API integration for managing posts, pages, media, WooCommerce products, Elementor content, SEO meta, ACF, and JetEngine fields. Use when you n...",
+    "tags": {
+      "latest": "3.5.1",
+      "api": "3.4.0",
+      "batch": "3.4.0",
+      "cms": "3.4.0",
+      "content": "3.4.0",
+      "elementor": "3.4.0",
+      "multi-site": "3.4.0",
+      "publishing": "3.4.0",
+      "security": "3.4.0",
+      "woocommerce": "3.4.0",
+      "wordpress": "3.4.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1138,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 2,
+      "versions": 11
+    },
+    "createdAt": 1772417720699,
+    "updatedAt": 1780347643082,
+    "latestVersion": {
+      "version": "3.5.1",
+      "createdAt": 1780347643082,
+      "changelog": "- Removed redundant files: CHANGELOG.md, LICENSE.txt, README.md, package.json, and skill-card.md.\n- Consolidated all documentation and metadata into SKILL.md, which now includes version and license info.\n- Updated documentation to clarify usage in Claude Code and highlight dependency requirements for certain scripts.\n- No changes to functionality or user-facing behavior.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "pullstar-1on1",
+    "displayName": "Engineering manager 1-on-1 meeting brief generator",
+    "summary": "Generate a ready-to-use 1-on-1 brief for any engineer on your team — from their GitHub activity, in seconds. Spots patterns like high output but low review p...",
+    "tags": {
+      "latest": "1.0.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 268,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1778012429552,
+    "updatedAt": 1780346656712,
+    "latestVersion": {
+      "version": "1.0.2",
+      "createdAt": 1780346656712,
+      "changelog": "pullstar-1on1 v1.0.2\n\n- Switched to a new entry point: added run_brief.py for unified brief generation.\n- Added GitHub GraphQL mode as default, with REST fallback and --api-mode flag\n- Expanded documentation: added README.md with updated usage, config, and privacy details.\n- Clarified agent and LLM inference instructions for output workflow.\n- Updated dependencies list (requires 'requests').\n- Removed skill-card.md; see README.md and SKILL.md for all reference details.\n-skills/scripts/ingest.py now default to GitHub\nGraphQL API when a token is present, reducing API call count from ~200+ REST\ncalls per user to 2-4 GraphQL queries total. REST remains the automatic\nfallback when no GITHUB_TOKEN is found, preserving full backwards compatibility\nincluding unauthenticated access.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "pixcli",
+    "displayName": "Pixcli Skill",
+    "summary": "Creative toolkit for AI agents — generate images, videos, voiceover, music, and sound effects, then assemble polished output via Remotion. Uses the pixcli CL...",
+    "tags": {
+      "latest": "2.4.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 447,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 13
+    },
+    "createdAt": 1774984703246,
+    "updatedAt": 1780346105608,
+    "latestVersion": {
+      "version": "2.4.0",
+      "createdAt": 1780346105608,
+      "changelog": "v2.4: native Veo 3.1 + Seedance 2 + Grok Imagine + GPT Image 2 + FLUX VTO + Gemini TTS/dialogue + Lyria 3 Pro + ElevenLabs SFX v2; R2 publishing (--publish public/private, TTL); dialogue/tryon commands; voice --engine + cloning; video --resolution; smarter image-analysis classifier. Removed muapi.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "quick-backup-restore",
+    "displayName": "Time Clawshine — OpenClaw Time Machine",
+    "summary": "Restic-powered encrypted time machine for OpenClaw: hourly incremental snapshots, fast restore by time/snapshot/file, local-only privacy defaults, integrity...",
+    "tags": {
+      "backup": "3.2.3",
+      "disaster-recovery": "3.2.3",
+      "encrypted-backup": "3.2.3",
+      "latest": "3.2.3",
+      "local-backup": "3.2.3",
+      "openclaw": "3.2.3",
+      "privacy": "3.2.3",
+      "restic": "3.2.3",
+      "restore": "3.2.3",
+      "snapshots": "3.2.3",
+      "time-machine": "3.2.3",
+      "backup restore restic memory time-machine": "1.0.0",
+      "security": "3.2.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1089,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 1,
+      "versions": 21
+    },
+    "createdAt": 1772754574722,
+    "updatedAt": 1780344697115,
+    "latestVersion": {
+      "version": "3.2.3",
+      "createdAt": 1780344697115,
+      "changelog": "Scheduler cadence hotfix: systemd installs now preserve simple custom cron schedules like 0 */2 * * * as matching OnCalendar values, and unsupported cron expressions fall back to cron.d instead of hourly. Docs also clarify OpenClaw slug-only install.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "investorclaw",
+    "displayName": "Ic Engine",
+    "summary": "Deterministic-first portfolio analyzer — holdings, performance, Sharpe + Sortino, FRED yield curves, bond duration, sector breakdowns, scenario rebalancing —...",
+    "tags": {
+      "latest": "4.6.0",
+      "analytics": "4.1.35",
+      "arm64": "4.1.36",
+      "dashboard": "4.1.36",
+      "deterministic": "4.1.22",
+      "docs": "4.1.33",
+      "eod": "4.1.32",
+      "finance": "4.1.33",
+      "mcp": "4.1.22",
+      "multi-arch": "4.1.36",
+      "portfolio": "4.1.36",
+      "reference": "4.1.29",
+      "security": "4.1.31",
+      "stonkmode": "4.1.28",
+      "v4.1.x": "4.1.36",
+      "zeroclaw-audit-clean": "4.1.36"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 644,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 26
+    },
+    "createdAt": 1777918656623,
+    "updatedAt": 1780344606059,
+    "latestVersion": {
+      "version": "4.6.0",
+      "createdAt": 1780344606059,
+      "changelog": "v4.6.0: consolidated runtime into the ic-engine repo (one repo, one build — engine source + Dockerfile + bridge + compose together). Unified skill + container version at 4.6.0. Fixed the install path: MNEMOS is now optional (was hard-blocking compose-up on a mnemos service that the default compose does not ship). Hermes users install the skill manually, not via ClawHub.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "low-token",
+    "displayName": "Low Token Usage",
+    "summary": "Extreme optimization for minimal token usage. Eliminates all narration, fluff, and process descriptors. Deliver results as raw data or compact summaries.",
+    "tags": {
+      "latest": "2.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 668,
+      "installsAllTime": 3,
+      "installsCurrent": 2,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1773336310266,
+    "updatedAt": 1780343872277,
+    "latestVersion": {
+      "version": "2.1.0",
+      "createdAt": 1780343872277,
+      "changelog": "- Transitioned from static token-saving rules to adaptive three-level (LOW, MEDIUM, EXTREME) token conservation modes.\n- Clarified activation and escalation criteria based on user input or system state.\n- Updated behavior examples for each mode.\n- Added integration details with related skills and persistent mode status rules.\n- Removed markdown decorations and unnecessary confirmations in higher conservation modes.\n- Deleted obsolete documentation file (skill-card.md).",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "haqq-workbench",
+    "displayName": "Haqq Workbench",
+    "summary": "Unified workflow coordinating Haqq skills to create, verify, and publish Islamic and ethical content with prioritized double-gate verification for accuracy a...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 36,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780343711673,
+    "updatedAt": 1780343711673,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780343711673,
+      "changelog": "Master orchestration skill: coordinates all Haqq skills (hadith-verifier, corruption-burner, haqq-ethics, fact-check, verify-claims, web-researcher, selective-memory, ai-ethics, moral-compass, justice-seed, social-media-scheduler) into unified workflows. Includes skill-map reference and orchestrator script.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "evite-mcp",
+    "displayName": "Tmp.HH1ibdDLKj",
+    "summary": "This skill should be used when the user asks about Evite events or invitations. Triggers on phrases like \"check Evite\", \"my Evite events\", \"who RSVP'd\", \"Evi...",
+    "tags": {
+      "latest": "0.2.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 80,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780335706343,
+    "updatedAt": 1780343149866,
+    "latestVersion": {
+      "version": "0.2.1",
+      "createdAt": 1780343149866,
+      "changelog": "- Removed the file skill-card.md.\n- No changes to functionality or usage; documentation remains the same.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "astro-natal-chart",
+    "displayName": "Astro Natal Chart",
+    "summary": "Calculates and interprets the natal chart by date, time and place of birth with the positions of planets, houses and main aspects. Windows OS 10/11 Required.",
+    "tags": {
+      "latest": "4.1.0",
+      "astrology": "2.1.0",
+      "natal-chart": "2.1.0",
+      "swiss-ephemeris": "2.1.0",
+      "windows": "2.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 567,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 19
+    },
+    "createdAt": 1779790761645,
+    "updatedAt": 1780343010450,
+    "latestVersion": {
+      "version": "4.1.0",
+      "createdAt": 1780343010450,
+      "changelog": "v4.1.0: Bilingual RU/EN interpretation, extended house descriptions, aspect interpretation block, output filename includes person name (e.g. Anna_full_natal_en.png)",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "ai-fullstack-project-scaffold",
+    "displayName": "ai-fullstack-project-scaffold",
+    "summary": "AI 全栈项目脚手架工厂 — 从需求描述到可运行项目，一键生成代码框架、Makefile、任务追踪和 Docker 部署配置",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 42,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780342943231,
+    "updatedAt": 1780342943231,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780342943231,
+      "changelog": "ai-fullstack-project-scaffold v1.0.0 initial release:\n\n- Generate fullstack project scaffolding from a natural language requirement description.\n- One-command output: code framework, Makefile, Docker production configs, and dev tasks.\n- Broad tech stack support: Node.js, Python, Go, Java with multiple database/back-end options.\n- Structured, modular output for fast, standardized development and deployment.\n- Requires combo with kimi-cli, makefile-generator, dev-task, and docker-expert skills.\n- Flexible for both new project initialization and incremental tooling/bootstrap for existing repos.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "ai-agentic-video-editor",
+    "displayName": "Ai Agentic Video Editor",
+    "summary": "AI agentic video editor. An autonomous AI editor for video that decomposes natural-language prompts into a planned, verified, executed sequence of edits — vi...",
+    "tags": {
+      "ai-video-editor": "1.0.21",
+      "audio-cleanup": "1.0.21",
+      "brand-kit": "1.0.21",
+      "captions": "1.0.21",
+      "chroma-key": "1.0.21",
+      "export": "1.0.21",
+      "latest": "1.0.21",
+      "motion-graphics": "1.0.21",
+      "multi-cam": "1.0.21",
+      "openclaw-skill": "1.0.21",
+      "privacy-redaction": "1.0.21",
+      "thumbnail": "1.0.21",
+      "vertical-video": "1.0.21",
+      "video": "1.0.21",
+      "viral-clips": "1.0.21",
+      "agentic-video-editor": "1.0.17",
+      "ai-agentic-editor": "1.0.17",
+      "ai-agentic-video-editor": "1.0.17",
+      "ai-dubbing": "1.0.17",
+      "autonomous-video-editing": "1.0.17",
+      "background-removal": "1.0.17",
+      "background-replacement": "1.0.17",
+      "caption-translation": "1.0.17",
+      "markers": "1.0.17",
+      "motion-tracking": "1.0.17",
+      "multilingual-video": "1.0.17",
+      "natural-language-video-editing": "1.0.17",
+      "object-removal": "1.0.17",
+      "ocr": "1.0.17",
+      "profanity-cleanup": "1.0.17",
+      "slideshow": "1.0.17",
+      "stabilization": "1.0.17",
+      "title-cards": "1.0.17",
+      "transitions": "1.0.17"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 548,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 22
+    },
+    "createdAt": 1778993274610,
+    "updatedAt": 1780341698153,
+    "latestVersion": {
+      "version": "1.0.21",
+      "createdAt": 1780341698153,
+      "changelog": "fix: correct signup URL (studio.livecore.ai), jobId format (digits, not task_-prefixed), and max-length (3h) in docs.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "levea-ai-video-editor",
+    "displayName": "Skill Bundle",
+    "summary": "Agentic AI video editor — an autonomous agent that plans and executes natural-language video edits end-to-end. Viral clips, auto captions, vertical 9:16 refr...",
+    "tags": {
+      "ai-video-editor": "1.0.23",
+      "audio-cleanup": "1.0.23",
+      "brand-kit": "1.0.23",
+      "captions": "1.0.23",
+      "chroma-key": "1.0.23",
+      "export": "1.0.23",
+      "latest": "1.0.23",
+      "motion-graphics": "1.0.23",
+      "multi-cam": "1.0.23",
+      "openclaw-skill": "1.0.23",
+      "privacy-redaction": "1.0.23",
+      "thumbnail": "1.0.23",
+      "vertical-video": "1.0.23",
+      "video": "1.0.23",
+      "viral-clips": "1.0.23",
+      "agentic-video-editor": "1.0.19",
+      "ai-agentic-editor": "1.0.19",
+      "ai-dubbing": "1.0.19",
+      "autonomous-video-editing": "1.0.19",
+      "background-removal": "1.0.19",
+      "background-replacement": "1.0.19",
+      "caption-translation": "1.0.19",
+      "markers": "1.0.19",
+      "motion-tracking": "1.0.19",
+      "multilingual-video": "1.0.19",
+      "natural-language-video-editing": "1.0.19",
+      "object-removal": "1.0.19",
+      "ocr": "1.0.19",
+      "profanity-cleanup": "1.0.19",
+      "slideshow": "1.0.19",
+      "stabilization": "1.0.19",
+      "title-cards": "1.0.19",
+      "transitions": "1.0.19"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 575,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 23
+    },
+    "createdAt": 1778992399451,
+    "updatedAt": 1780341694532,
+    "latestVersion": {
+      "version": "1.0.23",
+      "createdAt": 1780341694532,
+      "changelog": "fix: correct signup URL (studio.livecore.ai), jobId format (digits, not task_-prefixed), and max-length (3h) in docs.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "ling-mem",
+    "displayName": "Shared Memory",
+    "summary": "Cross-host durable memory — same `ling-mem` daemon and store in Claude Code, Codex, and OpenClaw. Three-tier model (core + long-term + episodic staging) of w...",
+    "tags": {
+      "latest": "0.7.4"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 410,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 10
+    },
+    "createdAt": 1778094809478,
+    "updatedAt": 1780340296174,
+    "latestVersion": {
+      "version": "0.7.4",
+      "createdAt": 1780340296174,
+      "changelog": "0.7.4 (skill doc patch over binary 0.7.2): add a first-use ling-mem binary bootstrap gate to SKILL.md (command -v ling-mem || install.sh) so skill-only installs (ClawHub/skills.sh/manual) self-install the binary on first use. No-op when already present. Binary unchanged.",
+      "license": null
+    },
+    "metadata": {
+      "os": [
+        "darwin",
+        "linux"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "opentask",
+    "displayName": "Agent to Agent Task Platform - OpenTask.ai",
+    "summary": "Agent-to-agent marketplace MVP. Agents publish structured capabilities, post tasks, send targeted proposals, bid, contract, submit deliverables, route crypto...",
+    "tags": {
+      "latest": "2.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1991,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 3,
+      "versions": 6
+    },
+    "createdAt": 1770411768095,
+    "updatedAt": 1780339696535,
+    "latestVersion": {
+      "version": "2.0.0",
+      "createdAt": 1780339696535,
+      "changelog": "Update OpenTask agent skill for router-verified crypto payments, targeted proposals, capability claims, contract messaging, and current agent API workflows.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "gogcli-mcp",
+    "displayName": "Tmp.ELuTmwdpQQ",
+    "summary": "Use when the user asks to interact with Google Workspace services. Triggers for requests involving Google Sheets, Docs, Gmail, Calendar, Drive, Tasks, or Con...",
+    "tags": {
+      "latest": "2.4.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1165,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 9
+    },
+    "createdAt": 1778783192352,
+    "updatedAt": 1780339295273,
+    "latestVersion": {
+      "version": "2.4.0",
+      "createdAt": 1780339295273,
+      "changelog": "- Removed the file: skill-card.md\n- No changes to functionality or setup.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "gogcli-mcp-slides",
+    "displayName": "Tmp.BEW6XWBgsp",
+    "summary": "Use when the user asks to create, edit, read, or export Google Slides presentations. Triggers for requests involving slides, decks, presentations, speaker no...",
+    "tags": {
+      "latest": "2.4.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1170,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 9
+    },
+    "createdAt": 1778783186055,
+    "updatedAt": 1780339289220,
+    "latestVersion": {
+      "version": "2.4.0",
+      "createdAt": 1780339289220,
+      "changelog": "- Removed the skill-card.md file.\n- No changes to functionality or user-facing features.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "gogcli-mcp-sheets",
+    "displayName": "Tmp.SLBXsDa7xN",
+    "summary": "Use when the user asks to read, write, format, or manage Google Sheets. Triggers for requests involving spreadsheet data, cell formatting, tab management, na...",
+    "tags": {
+      "latest": "2.4.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1242,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 10
+    },
+    "createdAt": 1778581972704,
+    "updatedAt": 1780339283155,
+    "latestVersion": {
+      "version": "2.4.0",
+      "createdAt": 1780339283155,
+      "changelog": "- Removed the file skill-card.md.\n- No user-facing or functional changes to the skill itself.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "gogcli-mcp-gmail",
+    "displayName": "Tmp.ES6Ax5oBPx",
+    "summary": "Use when the user asks to read, organize, draft, forward, autoreply, or otherwise work with Gmail in depth. Triggers for requests involving threads, labels,...",
+    "tags": {
+      "latest": "2.4.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1220,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 10
+    },
+    "createdAt": 1778581964928,
+    "updatedAt": 1780339276909,
+    "latestVersion": {
+      "version": "2.4.0",
+      "createdAt": 1780339276909,
+      "changelog": "- Removed the skill-card.md file.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "gogcli-mcp-drive",
+    "displayName": "Tmp.D73hqbHQcR",
+    "summary": "Use when the user asks to browse, upload, download, share, or manage Google Drive files and folders. Triggers for requests involving Drive uploads/downloads,...",
+    "tags": {
+      "latest": "2.4.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1219,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 10
+    },
+    "createdAt": 1778581960063,
+    "updatedAt": 1780339271621,
+    "latestVersion": {
+      "version": "2.4.0",
+      "createdAt": 1780339271621,
+      "changelog": "- Removed the file: skill-card.md\n- No changes to features or functionality.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "gogcli-mcp-docs",
+    "displayName": "Tmp.7Ajx8XfqDs",
+    "summary": "Use when the user asks to read, write, edit, export, or comment on Google Docs. Triggers for requests involving document editing, inserting text, exporting a...",
+    "tags": {
+      "latest": "2.4.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1187,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 10
+    },
+    "createdAt": 1778581955431,
+    "updatedAt": 1780339265540,
+    "latestVersion": {
+      "version": "2.4.0",
+      "createdAt": 1780339265540,
+      "changelog": "- Removed the file: skill-card.md.\n- No changes to the core functionality or documentation beyond the file removal.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "gogcli-mcp-contacts",
+    "displayName": "Tmp.XW2iZZ5pkH",
+    "summary": "Use when the user asks to look up, search, or manage Google Contacts and the broader People API (Workspace directory). Triggers for contact lookups by name/e...",
+    "tags": {
+      "latest": "2.4.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1156,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 9
+    },
+    "createdAt": 1778783160243,
+    "updatedAt": 1780339260609,
+    "latestVersion": {
+      "version": "2.4.0",
+      "createdAt": 1780339260609,
+      "changelog": "- Removed the file skill-card.md.\n- No other changes to functionality or documentation.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "gogcli-mcp-classroom",
+    "displayName": "Tmp.Jnf9iMCRlT",
+    "summary": "Use when the user asks to manage Google Classroom — create or update courses, enroll students and teachers, post announcements, create assignments, view subm...",
+    "tags": {
+      "latest": "2.4.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1232,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 10
+    },
+    "createdAt": 1778581950371,
+    "updatedAt": 1780339254752,
+    "latestVersion": {
+      "version": "2.4.0",
+      "createdAt": 1780339254752,
+      "changelog": "- Removed the skill-card.md file from the project.\n- No changes to core functionality or documented tools.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "gogcli-mcp-calendar",
+    "displayName": "Tmp.DmgKXgIGZd",
+    "summary": "Use when the user asks to manage Google Calendar events or Google Meet spaces. Triggers for scheduling, listing events, creating/updating/deleting events, re...",
+    "tags": {
+      "latest": "2.4.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1127,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 9
+    },
+    "createdAt": 1778783148802,
+    "updatedAt": 1780339250369,
+    "latestVersion": {
+      "version": "2.4.0",
+      "createdAt": 1780339250369,
+      "changelog": "- Removed the sample file skill-card.md.\n- No changes to features or functionality.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "sonoscli",
+    "displayName": "Sonoscli",
+    "summary": "Control Sonos speakers (discover/status/play/volume/group).",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 83960,
+      "installsAllTime": 2770,
+      "installsCurrent": 2643,
+      "stars": 55,
+      "versions": 1
+    },
+    "createdAt": 1767545381030,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545381030,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "gog",
+    "displayName": "Gog",
+    "summary": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 36,
+      "downloads": 182969,
+      "installsAllTime": 3591,
+      "installsCurrent": 3461,
+      "stars": 908,
+      "versions": 1
+    },
+    "createdAt": 1767545346060,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545346060,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "github",
+    "displayName": "Github",
+    "summary": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 7,
+      "downloads": 186867,
+      "installsAllTime": 4379,
+      "installsCurrent": 4247,
+      "stars": 620,
+      "versions": 1
+    },
+    "createdAt": 1767545344344,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545344344,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "weather",
+    "displayName": "Weather",
+    "summary": "Get current weather and forecasts (no API key required).",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 6,
+      "downloads": 158242,
+      "installsAllTime": 3794,
+      "installsCurrent": 3670,
+      "stars": 406,
+      "versions": 1
+    },
+    "createdAt": 1767545394459,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545394459,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-whisper",
+    "displayName": "Openai Whisper",
+    "summary": "Local speech-to-text with the Whisper CLI (no API key).",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 2,
+      "downloads": 82985,
+      "installsAllTime": 2081,
+      "installsCurrent": 2007,
+      "stars": 315,
+      "versions": 1
+    },
+    "createdAt": 1767545365755,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545365755,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "skill-creator",
+    "displayName": "Skill Creator",
+    "summary": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.",
+    "tags": {
+      "latest": "0.1.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 89233,
+      "installsAllTime": 2418,
+      "installsCurrent": 2344,
+      "stars": 296,
+      "versions": 1
+    },
+    "createdAt": 1769522677376,
+    "updatedAt": 1778987225295,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1769522677376,
+      "changelog": "Initial release of skill-creator, a comprehensive guide for designing modular skills to extend Claude’s capabilities.\n\n- Introduces principles for creating effective, concise, and domain-specific skills.\n- Explains modular structure: required SKILL.md and optional scripts, references, and assets folders.\n- Outlines guidelines for what to include (and exclude) in a skill package.\n- Details progressive disclosure design for efficient context management.\n- Provides reference patterns for organizing content and bundling resources.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "notion",
+    "displayName": "Notion",
+    "summary": "Notion API for creating and managing pages, databases, and blocks.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 90939,
+      "installsAllTime": 2372,
+      "installsCurrent": 2306,
+      "stars": 257,
+      "versions": 1
+    },
+    "createdAt": 1767545360889,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545360889,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "obsidian",
+    "displayName": "Obsidian",
+    "summary": "Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 9,
+      "downloads": 100671,
+      "installsAllTime": 2528,
+      "installsCurrent": 2438,
+      "stars": 411,
+      "versions": 1
+    },
+    "createdAt": 1767545362143,
+    "updatedAt": 1779137320034,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545362143,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "gemini",
+    "displayName": "Gemini",
+    "summary": "Gemini CLI for one-shot Q&A, summaries, and generation.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 5,
+      "downloads": 33819,
+      "installsAllTime": 1444,
+      "installsCurrent": 1399,
+      "stars": 54,
+      "versions": 1
+    },
+    "createdAt": 1767545316392,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545316392,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "mcporter",
+    "displayName": "Mcporter",
+    "summary": "Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 66123,
+      "installsAllTime": 2010,
+      "installsCurrent": 1945,
+      "stars": 191,
+      "versions": 1
+    },
+    "createdAt": 1767545355897,
+    "updatedAt": 1779137319429,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545355897,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "nano-banana-pro",
+    "displayName": "Nano Banana Pro",
+    "summary": "Generate/edit images with Nano Banana Pro (Gemini 3 Pro Image). Use for image create/modify requests incl. edits. Supports text-to-image + image-to-image; 1K/2K/4K; use --input-image.",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 101461,
+      "installsAllTime": 1856,
+      "installsCurrent": 1794,
+      "stars": 395,
+      "versions": 2
+    },
+    "createdAt": 1767545358090,
+    "updatedAt": 1779137307565,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767651987917,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "model-usage",
+    "displayName": "Model Usage",
+    "summary": "Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a scriptable per-model summary from codexbar cost JSON.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 37454,
+      "installsAllTime": 1565,
+      "installsCurrent": 1517,
+      "stars": 112,
+      "versions": 1
+    },
+    "createdAt": 1767667639455,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767667639455,
+      "changelog": "- Initial release of the model-usage skill for summarizing per-model usage and cost from CodexBar CLI local cost logs.\n- Supports both Codex and Claude providers.\n- Allows fetching summaries for the current (most recent) model or all models.\n- Provides both text and JSON output formats.\n- Can process costs directly from CodexBar CLI output or from a JSON file/stdin.\n- Includes guidance for CLI use and script automation.",
+      "license": null
+    },
+    "metadata": {
+      "os": [
+        "darwin"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "video-frames",
+    "displayName": "Video Frames",
+    "summary": "Extract frames or short clips from videos using ffmpeg.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 51224,
+      "installsAllTime": 1577,
+      "installsCurrent": 1528,
+      "stars": 123,
+      "versions": 1
+    },
+    "createdAt": 1767545391700,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545391700,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "blogwatcher",
+    "displayName": "Blogwatcher",
+    "summary": "Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 42104,
+      "installsAllTime": 1481,
+      "installsCurrent": 1426,
+      "stars": 69,
+      "versions": 1
+    },
+    "createdAt": 1767545299849,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545299849,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "nano-pdf",
+    "displayName": "Nano Pdf",
+    "summary": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 110954,
+      "installsAllTime": 2561,
+      "installsCurrent": 2485,
+      "stars": 254,
+      "versions": 1
+    },
+    "createdAt": 1767545359433,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545359433,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "session-logs",
+    "displayName": "Session-logs",
+    "summary": "Search and analyze your own session logs (older/parent conversations) using jq.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 40417,
+      "installsAllTime": 1423,
+      "installsCurrent": 1382,
+      "stars": 29,
+      "versions": 1
+    },
+    "createdAt": 1770136427000,
+    "updatedAt": 1778486000320,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1770136427000,
+      "changelog": "Initial release of session-logs.\n\n- Enables searching and analyzing your session logs (past conversations) with jq and ripgrep (rg).\n- Provides bash command examples for session discovery, keyword searches, extracting messages, cost summaries, and tool usage breakdowns.\n- Documents JSONL session file structure, roles, and content types.\n- Lists session log file locations and naming conventions.\n- Includes tips for managing and querying large, append-only session histories.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "himalaya",
+    "displayName": "Himalaya",
+    "summary": "CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 44811,
+      "installsAllTime": 1522,
+      "installsCurrent": 1482,
+      "stars": 68,
+      "versions": 1
+    },
+    "createdAt": 1767954271328,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767954271328,
+      "changelog": "Initial release of Himalaya CLI email client skill.\n\n- Provides terminal-based email management via IMAP/SMTP.\n- Supports listing, reading, composing, replying, forwarding, searching, and organizing emails.\n- Includes multi-account support and message composition with MML.\n- Detailed setup and configuration instructions included.\n- Enables handling attachments, output customization, and debugging via logging.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "sag",
+    "displayName": "Sag",
+    "summary": "ElevenLabs text-to-speech with mac-style say UX.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 26386,
+      "installsAllTime": 1251,
+      "installsCurrent": 1212,
+      "stars": 26,
+      "versions": 1
+    },
+    "createdAt": 1767545376535,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545376535,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "goplaces",
+    "displayName": "Goplaces",
+    "summary": "Query Google Places API (New) via the goplaces CLI for text search, place details, resolve, and reviews. Use for human-friendly place lookup or JSON output for scripts.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 22242,
+      "installsAllTime": 1243,
+      "installsCurrent": 1212,
+      "stars": 30,
+      "versions": 1
+    },
+    "createdAt": 1767545347454,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545347454,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "slack",
+    "displayName": "Slack",
+    "summary": "Use when you need to control Slack from Clawdbot via the slack tool, including reacting to messages or pinning/unpinning items in Slack channels or DMs.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 12,
+      "downloads": 46911,
+      "installsAllTime": 1419,
+      "installsCurrent": 1379,
+      "stars": 156,
+      "versions": 1
+    },
+    "createdAt": 1767545378002,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545378002,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "peekaboo",
+    "displayName": "Peekaboo",
+    "summary": "Capture and automate macOS UI with the Peekaboo CLI.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 4,
+      "downloads": 29635,
+      "installsAllTime": 1323,
+      "installsCurrent": 1285,
+      "stars": 81,
+      "versions": 1
+    },
+    "createdAt": 1767545373660,
+    "updatedAt": 1779137309055,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545373660,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": [
+        "darwin"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-image-gen",
+    "displayName": "Openai Image Gen",
+    "summary": "Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 24095,
+      "installsAllTime": 1115,
+      "installsCurrent": 1086,
+      "stars": 35,
+      "versions": 2
+    },
+    "createdAt": 1767545364210,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767652000401,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "tmux",
+    "displayName": "Tmux",
+    "summary": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 28493,
+      "installsAllTime": 1390,
+      "installsCurrent": 1343,
+      "stars": 43,
+      "versions": 1
+    },
+    "createdAt": 1767545387948,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545387948,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": [
+        "darwin",
+        "linux"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "gifgrep",
+    "displayName": "Gifgrep",
+    "summary": "Search GIF providers with CLI/TUI, download results, and extract stills/sheets.",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 18108,
+      "installsAllTime": 1206,
+      "installsCurrent": 1170,
+      "stars": 7,
+      "versions": 2
+    },
+    "createdAt": 1767488226016,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767545342229,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-whisper-api",
+    "displayName": "Openai Whisper Api",
+    "summary": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 25375,
+      "installsAllTime": 1175,
+      "installsCurrent": 1139,
+      "stars": 51,
+      "versions": 1
+    },
+    "createdAt": 1767545368103,
+    "updatedAt": 1779137313987,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545368103,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  }
+]
