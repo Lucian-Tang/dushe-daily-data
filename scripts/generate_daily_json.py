@@ -240,21 +240,37 @@ def parse_startup(text):
 
 def parse_industry(text):
     items = []
-    # Detect new format (emoji blockquotes in `###` sections)
+    lines = text.split('\n')[:30]
+
+    # Format detection (priority order):
+    # 1. New format: ### N. emoji Title with emoji blockquotes
+    # 2. Old format: ## N. Title with **信源** / **原文** / **Lucia毒舌**
+    # 3. Plain format: N. emoji **Title** with **来源** / **日期** / --- separators
+
     is_new_format = any(
         l.strip().startswith('> 💬') or l.strip().startswith('> 📅')
-        for l in text.split('\n')[:50]
+        for l in lines
     )
+    is_old_format = bool(re.search(r'\n##\s+\d+\.\s+', text[:500]))
+    is_plain_format = bool(re.search(r'\n\d+\.\s+[\U0001F300-\U0001FAFF]', text[:500]) \
+                          or re.search(r'\n\d+\.\s+[\U0001F900-\U0001F9FF]', text[:500]) \
+                          or re.search(r'\n\d+\.\s+[\U00010000-\U000EFFFF]', text[:500])) \
+                     if not is_new_format and not is_old_format else False
+    # Also detect plain format by checking for `---` separated numbered items
+    if not is_new_format and not is_old_format:
+        plain_matches = re.findall(r'\n(\d+)\.\s+', text[:1000])
+        if len(plain_matches) >= 3 and re.search(r'\*\*来源\*\*', text[:1000]):
+            is_plain_format = True
 
     if is_new_format:
         # New format: ### N. emoji Title with emoji blockquotes (same as AI new format)
         for part in re.split(r'\n###\s+\d+\.\s+', text)[1:]:
-            lines = part.strip().split('\n')
-            title = lines[0].strip() if lines else ''
+            plines = part.strip().split('\n')
+            title = plines[0].strip() if plines else ''
             if not title: continue
             src = url = quote = ''
             content_lines = []
-            for l in lines[1:]:
+            for l in plines[1:]:
                 s = l.strip()
                 if not s or s == '---': continue
                 # Source line: **来源**: Source | **日期**:
@@ -287,14 +303,14 @@ def parse_industry(text):
                 content_lines.append(s)
             content = ' '.join(content_lines).strip()
             items.append(dict(title=title, content=content, quote=quote, source=src, url=url))
-    else:
+    elif is_old_format:
         # Old format: ## N. Title with **信源** / **原文** / **Lucia毒舌**
         for part in re.split(r'\n##\s+\d+\.\s+', text)[1:]:
-            lines = part.strip().split('\n')
-            title = lines[0].strip() if lines else ''
+            plines = part.strip().split('\n')
+            title = plines[0].strip() if plines else ''
             if not title: continue
             src = url = quote = ''
-            for l in lines[1:]:
+            for l in plines[1:]:
                 s = l.strip()
                 if s == '---': continue
                 m = re.match(r'\*\*信源\*\*[：:]\s*(.+)', s)
@@ -307,6 +323,67 @@ def parse_industry(text):
                 m = re.search(r'\*\*Lucia毒舌\*\*[：:]\s*(.+)', s)
                 if m: quote = m.group(1).strip(); continue
             items.append(dict(title=title, content='', quote=quote, source=src, url=url))
+    elif is_plain_format:
+        # Plain format: N. emoji **Title** separated by ---
+        # Each item block is separated by ---
+        blocks = re.split(r'\n---\s*\n', text)
+        for block in blocks:
+            block = block.strip()
+            if not block or block.startswith('# '):
+                continue
+            # Skip header line / summary line
+            if block.startswith('*日报生成'):
+                continue
+            # First line should be "N. emoji **Title**"
+            blines = block.split('\n')
+            first = blines[0].strip()
+            m = re.match(r'(\d+)\.\s+(.*)', first)
+            if not m:
+                continue
+            title = m.group(2).strip()
+            # Strip ** markers and emoji
+            title = re.sub(r'\*\*', '', title).strip()
+            # Strip leading emoji (any single Unicode emoji character)
+            title = re.sub(r'^[\U0001F300-\U0001F9FF\U0001FA00-\U0001FA6F\U0001FA70-\U0001FAFF\u2600-\u27BF\uFE00-\uFE0F]\s*', '', title).strip()
+            if not title:
+                continue
+            src = url = quote = ''
+            content_lines = []
+            for l in blines[1:]:
+                s = l.strip()
+                if not s:
+                    continue
+                # Source line: **来源**: Source | **日期**:
+                m_src = re.match(r'\*\*来源\*{0,2}[：:]\s*(.+?)(?:\s*\|\s*\*\*日期)', s)
+                if m_src:
+                    src = clean_source(m_src.group(1))
+                    continue
+                # **来源**: Source alone
+                m_src = re.match(r'\*\*来源\*{0,2}[：:]\s*(.+)', s)
+                if m_src and not src:
+                    src = clean_source(m_src.group(1))
+                    continue
+                # Quote line: > quote text
+                if s.startswith('>'):
+                    quote = s.lstrip('>').strip()
+                    continue
+                # URL: [🔗 原文链接](url)
+                m_url = re.search(r'\[🔗\s*原文链接\]\((.+)\)', s)
+                if m_url:
+                    url = clean_url(m_url.group(1))
+                    continue
+                m_url = re.search(r'\[🔗\s*原文\]\((.+)\)', s)
+                if m_url:
+                    url = clean_url(m_url.group(1))
+                    continue
+                m_url = re.search(r'\[.*?\]\((.+)\)', s)
+                if m_url and not url:
+                    url = clean_url(m_url.group(1))
+                    continue
+                # Content lines
+                content_lines.append(s)
+            content = ' '.join(content_lines).strip()
+            items.append(dict(title=title, content=content, quote=quote, source=src, url=url))
     return items
 
 def parse_clawhub(raw_path, date_str):
