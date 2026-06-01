@@ -1,61 +1,224 @@
 [
   {
-    "slug": "spec-kit-coding",
-    "displayName": "Spec-kit Coding",
-    "summary": "Orchestrator for GitHub Spec-Kit SDD workflow in OpenClaw. Use when starting a new project with spec-driven development, setting up spec-kit toolchain, or ru...",
+    "slug": "fec-nuxt-project-standard",
+    "displayName": "Nuxt Project Standard",
+    "summary": "Use when creating or reviewing Nuxt 3 projects, file routes, pages, layouts, SSR/SSG/SPA behavior, Nuxt data fetching, route middleware, plugins, modules, se...",
     "tags": {
-      "latest": "1.0.4"
+      "latest": "2.4.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 294,
+      "downloads": 0,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 5
+      "versions": 1
     },
-    "createdAt": 1779604839351,
-    "updatedAt": 1780286402988,
+    "createdAt": 1780308220983,
+    "updatedAt": 1780308220983,
     "latestVersion": {
-      "version": "1.0.4",
-      "createdAt": 1780286402988,
-      "changelog": "# Changelog for spec-kit-coding v1.0.4\n\n- Removed the file: `skill-card.md`.\n- Updated security constraints to emphasize that agents should be disabled in critical-path, legacy, and security-sensitive code; only use in low-risk scenarios.\n- Minor clarifications to workflow: Grill Alignment now runs once per project, and domain docs (CONTEXT.md, ADRs) are reused for new features.\n- Fixed typo in Feature Management section (\"modify an existing feature\").\n- No functional changes to implementation steps or primary workflow.",
+      "version": "2.4.0",
+      "createdAt": 1780308220983,
+      "changelog": "- Renamed the skill to \"fec-nuxt-project-standard\" and updated the description for broader workflow alignment.\n- Added new documentation and metadata files: LICENSE, README.md, metadata.json, and package.json.\n- Removed redundant documentation file (skill-card.md).\n- Clarified the skill’s purpose, procedure, and constraints for Nuxt 3 projects.\n- Enhanced instructions around identifying Nuxt-specific concerns vs. generic Vue issues.\n- No changes to core Nuxt conventions or project structure.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "skill-standardization",
-    "displayName": "skill-standardization",
-    "summary": "Skill 标准化规范引擎。支持 R-01~R-25 规范审查（audit/refactor/create 三模式），含权限扫描、数据目录合规检查、渐进式加载、更新日志渐进加载强制、_meta.json 字段规范性。R-07 增强：frontmatter trigger/trigger_negative 与正文一致性。",
+    "slug": "astro-natal-chart",
+    "displayName": "Astro Natal Chart",
+    "summary": "Calculates and interprets the natal chart by date, time and place of birth with the positions of planets, houses and main aspects. Windows OS 10/11 Required.",
     "tags": {
-      "latest": "2.45.4"
+      "latest": "3.6.0",
+      "astrology": "2.1.0",
+      "natal-chart": "2.1.0",
+      "swiss-ephemeris": "2.1.0",
+      "windows": "2.1.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 1475,
+      "downloads": 353,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 50
+      "versions": 11
     },
-    "createdAt": 1779452610754,
-    "updatedAt": 1780286311271,
+    "createdAt": 1779790761645,
+    "updatedAt": 1780308152588,
     "latestVersion": {
-      "version": "2.45.4",
-      "createdAt": 1780286311271,
-      "changelog": "- Update, refactor, and create modes now include详细的备份、inspect、修复、版本号同步与清理流程说明\n- audit 模式描述增加可选 --fix 自动修复与规则 ID 分派细节\n- create 模式操作流程详化，并明确标准生成文件结构\n- update/refactor 模式增加“强制 inspect 蓝皮书扫描”步骤和 manifest 驱动清理说明\n- 用户/自动化可依照更精细的流程高效完成技能的标准化全生命周期操作",
+      "version": "3.6.0",
+      "createdAt": 1780308152588,
+      "changelog": "astro-natal-chart 3.6.0\n\n- Updated scripts/draw_wheel.py with unspecified changes.\n- No changes to documentation (SKILL.md remains at version 3.4.0).\n- All core features (natal chart calculation, interpretation, rendering) are retained.",
       "license": null
     },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
+    "metadata": null
   },
   {
-    "slug": "vocational-course-material-development",
-    "displayName": "Vocational Course Material Development",
-    "summary": "职业教育课材一体化开发专家 - 基于岗位能力图谱和AI赋能的课材一体化设计、开发与优化工具",
+    "slug": "kinema-skill-making-pipeline",
+    "displayName": "Kinema's Skill Making Pipeline",
+    "summary": "KinemaClaw Skill development and publishing specification. Defines the standard process for skill development, version management, and publishing. All skills...",
+    "tags": {
+      "latest": "1.8.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 548,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 17
+    },
+    "createdAt": 1774593843434,
+    "updatedAt": 1780308124363,
+    "latestVersion": {
+      "version": "1.8.2",
+      "createdAt": 1780308124363,
+      "changelog": "补充 Claude Code 插件管理命令文档，Five-Way Sync 五地版本同步",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "fec-react-project-standard",
+    "displayName": "React Project Standard",
+    "summary": "Use when designing or reviewing React + TypeScript project structure, feature/module boundaries, component architecture, hooks organization, routing composit...",
+    "tags": {
+      "latest": "2.4.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 1
+    },
+    "createdAt": 1780307651302,
+    "updatedAt": 1780307651302,
+    "latestVersion": {
+      "version": "2.4.0",
+      "createdAt": 1780307651302,
+      "changelog": "**v1.0.1 Summary:**  \nInitial release of a modular React project standard, reorganizing documentation and adding comprehensive references for structure and conventions.\n\n- Renamed the skill and broadened its audience/purpose to guide overall React + TypeScript structure and conventions.\n- Added core documentation files: LICENSE, README.md, metadata.json, and a detailed project structure reference.\n- Removed outdated summary file (skill-card.md).\n- Updated guidelines to emphasize modular boundaries, code organization, practical constraints, and process for implementing or reviewing React project structure.\n- Directed detailed structural and component references to a separate file for easier lookup.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "industrial-park-investment-assistant",
+    "displayName": "Industrial Park Investment Assistant",
+    "summary": "通用产业园招商助手 Agent。一个Agent搞定六类招商工作：①园区信息查询（房源/租金/配套/报价）②客户研究辅助（企业背景/扩张信号/产业匹配）③招商推进辅助（需求判断/TCO对比/异议处理/推进建议）④招商表达辅助（方案/邮件/话术/带看总结）⑤客户管理辅助（超期提醒/续租窗口）⑥竞品暗探模式（竞品对比/...",
+    "tags": {
+      "latest": "1.3.0",
+      "agent": "1.1.0",
+      "assistant": "1.1.0",
+      "automation": "1.0.0",
+      "business": "1.1.0",
+      "commercial-real-estate": "1.0.0",
+      "enterprise-service": "1.0.1",
+      "industrial-park": "1.0.1",
+      "investment": "1.1.1",
+      "park": "1.1.1",
+      "real-estate": "1.1.1",
+      "sales": "1.0.0",
+      "security": "1.1.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 244,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 6
+    },
+    "createdAt": 1779787570760,
+    "updatedAt": 1780307477628,
+    "latestVersion": {
+      "version": "1.3.0",
+      "createdAt": 1780307477628,
+      "changelog": "industrial-park-investment-assistant v1.3.0\n\n重要更新：新增客户管理自动化与写作模板，强化全流程数字化管理体验。\n\n- 新增“对话即录入”客户管理逻辑，支持自动建档、动态分级、跟进提醒和记录（无需额外指令）。\n- 每次对话自动检查客户超期跟进情况，超期客户将主动提醒，全面提升客户管理效率。\n- 新增招商高频写作模板文件，包括TCO报价单、个人业绩看板、招商周报，助力日常文案与数据输出。\n- 园区名称与配置信息统一迁移到知识库配置或openclaw.json中填充，禁止硬编码，方便后续维护。\n- 文档结构全面优化，明确自动客户建档、跟进流程、意向分级、数据存储规则及安全强提醒。\n- 移除冗余skill卡片文件，精简目录。",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "payroll-data-audit",
+    "displayName": "payroll-data-audit",
+    "summary": "工资数据审核系统，基于确定性规则引擎 + Python 脚本执行。 全量对齐《工资审核标准流程 SOP》6 步流程。 Use when user asks to 工资数据审核、薪资校验、算薪逻辑验证、薪酬合规检查、 工资单审核、月度薪资校验、发薪前数据检查、payroll audit、salary check、...",
+    "tags": {
+      "latest": "5.5.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 351,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 10
+    },
+    "createdAt": 1779360598253,
+    "updatedAt": 1780307422793,
+    "latestVersion": {
+      "version": "5.5.1",
+      "createdAt": 1780307422793,
+      "changelog": "v5.5.1: 新增run_full_pipeline端到端流水线/修复pandas索引bug/fillna崩溃/exclusions修复/版本统一/56测试全通过",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "net-deep-research",
+    "displayName": "net-deep-research",
+    "summary": "Perform deep multi-source internet research before answering. Use when the user prefixes a request with /net, asks for the latest information, wants real-tim...",
+    "tags": {
+      "latest": "1.0.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 352,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 1,
+      "versions": 3
+    },
+    "createdAt": 1777337301803,
+    "updatedAt": 1780307372932,
+    "latestVersion": {
+      "version": "1.0.2",
+      "createdAt": 1780307372932,
+      "changelog": "- Added new tool: tools/score_stability.py\n- Removed obsolete metadata file: skill-card.md\n- No changes to the SKILL.md skill logic or core workflow",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "fec-security-review",
+    "displayName": "Frontend Security Review",
+    "summary": "Use when reviewing frontend security risks such as XSS, CSRF, sensitive data exposure, unsafe DOM APIs, untrusted user input, authentication/token handling,...",
+    "tags": {
+      "latest": "2.4.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780307343253,
+    "updatedAt": 1780307343253,
+    "latestVersion": {
+      "version": "2.4.0",
+      "createdAt": 1780307343253,
+      "changelog": "- Skill renamed to \"fec-security-review\" and triggers clarified.\n- Comprehensive front-end security audit procedure and risk categories defined.\n- References added for detailed XSS, CSP, sensitive data, CSRF, dependency, and validation checks.\n- Standard report template and security checklist files introduced.\n- Updated output expectations for report grading and file naming.\n- Outdated skill-card.md file removed.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "data-harvester",
+    "displayName": "智能数据采集器",
+    "summary": "智能数据采集器 - 自动化数据采集、处理和导出工具。支持Web抓取、API调用、数据库查询、文件读取，导出JSON/CSV/Excel/PDF。",
     "tags": {
       "latest": "1.0.1"
     },
@@ -67,12 +230,12 @@
       "stars": 0,
       "versions": 2
     },
-    "createdAt": 1780285760896,
-    "updatedAt": 1780286144713,
+    "createdAt": 1780305835047,
+    "updatedAt": 1780307174540,
     "latestVersion": {
       "version": "1.0.1",
-      "createdAt": 1780286144713,
-      "changelog": "Version 1.0.1 refines documentation, optimizes wording, and clarifies features.\n\n- Simplified and focused SKILL.md content for easier understanding\n- Improved and clarified description of the skill’s core workflow and features\n- Streamlined tags and metadata\n- Added explicit note on automatic bilingual language support\n- Minor updates to i18n and helper scripts for consistency",
+      "createdAt": 1780307174540,
+      "changelog": "- Updated version in skill.json from 1.0.0 to 1.0.1. \n- No other changes were made to documentation or functionality.",
       "license": null
     },
     "metadata": {
@@ -81,101 +244,215 @@
     }
   },
   {
-    "slug": "baidu-map-harmonyos-sdk",
-    "displayName": "Baidu Map Harmonyos SDK（百度地图官方鸿蒙 SKills）",
-    "summary": "帮助在 HarmonyOS NEXT 上使用百度地图鸿蒙 SDK 进行开发。支持独立包（@bdmap/base、@bdmap/map、@bdmap/search、@bdmap/util）和组合包（@bdmap/map_walkride_search、@bdmap/navi_map），以及定位 SDK（@bdmap...",
+    "slug": "fec-validation-fix",
+    "displayName": "Validation And Fix",
+    "summary": "Use when running existing project validation commands and fixing failures after code changes, including lint, type-check, unit/integration test, build, CI, o...",
     "tags": {
-      "latest": "1.0.3"
+      "latest": "2.4.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 721,
+      "downloads": 0,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 4
+      "versions": 1
     },
-    "createdAt": 1773222192677,
-    "updatedAt": 1780286062909,
+    "createdAt": 1780306797265,
+    "updatedAt": 1780306797265,
     "latestVersion": {
-      "version": "1.0.3",
-      "createdAt": 1780286062909,
-      "changelog": "- 新增 references/api/ 下大量 API 文档（440 个文件），覆盖 SDK 的基础模块与主要能力。\n- 移除旧版元信息及 skill 说明文件，全面切换为文档化 API 结构。\n- SKILL.md 增补三段式 API 文档定位方式，指明 references/api/modules.md 作为模块索引。\n- 能力指引表格补充 references/api/ 文档入口，方便开发时查阅完整类型定义与参数详情。\n- 明确强调先查包内声明文件及正式 API 文档，减少因文档/API 变化导致的代码偏差。",
+      "version": "2.4.0",
+      "createdAt": 1780306797265,
+      "changelog": "- Renamed skill from \"test-and-fix\" to \"fec-validation-fix\".\n- Added LICENSE, README.md, metadata.json, and package.json files; removed skill-card.md.\n- Revised skill description to clarify scope, triggers, and excluded scenarios.\n- Enhanced and clarified procedures for error triage, validation, and repair, with stricter change boundaries.\n- Updated output/reporting requirements and provided an explicit expected output format.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "baidu-map-android-sdk",
-    "displayName": "Baidu Map Android SDK（百度地图官方安卓 SKills）",
-    "summary": "百度地图 Android SDK 集成与开发规范。覆盖地图展示、MapView/BaiduMap 生命周期、定位、标注与覆盖物、POI 检索、路线规划、步骑行导航；输出符合隐私与 AK 配置的 Android 地图方案。在开发 Android 地图应用、集成百度地图 SDK、MapView、路线规划、POI、导航...",
+    "slug": "wangxiaobo-essay",
+    "displayName": "Wang Xiaobo Style Writing",
+    "summary": "Assist in writing Chinese essays emulating Wang Xiaobo's style using logical deduction, reductio ad absurdum, concrete scenes, and deadpan humor.",
     "tags": {
-      "latest": "1.0.3"
+      "chinese": "1.0.0",
+      "humor": "1.0.0",
+      "latest": "1.0.0",
+      "style": "1.0.0",
+      "writing": "1.0.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 602,
-      "installsAllTime": 1,
+      "downloads": 0,
+      "installsAllTime": 0,
       "installsCurrent": 0,
-      "stars": 2,
-      "versions": 4
+      "stars": 0,
+      "versions": 1
     },
-    "createdAt": 1773219125972,
-    "updatedAt": 1780285319477,
+    "createdAt": 1780306340353,
+    "updatedAt": 1780306340353,
     "latestVersion": {
-      "version": "1.0.3",
-      "createdAt": 1780285319477,
-      "changelog": "- Removed sample files: _meta.json, skill-card.md\n- No changes to core logic or documentation in SKILL.md",
+      "version": "1.0.0",
+      "createdAt": 1780306340353,
+      "changelog": "Minimal release for security scan testing. Wang Xiaobo essay writing style assistant.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "baidu-map-ios-sdk",
-    "displayName": "Baidu Map IOS SDK（百度地图官方IOS SKills）",
-    "summary": "百度地图 iOS SDK 与 BMKLocationKit 集成与开发规范。覆盖地图、定位、步骑行导航、检索、路线、标注与覆盖物；输出专业地图方案。可快捷使用百度地图 SDK 的能力与数据，构建功能丰富、交互性强的专业地图类应用。",
+    "slug": "bluehex-data-monitoring",
+    "displayName": "BlueHex Data Monitoring",
+    "summary": "BlueHex AI PM 项目",
     "tags": {
-      "latest": "1.0.2"
+      "ai-pm": "0.1.1",
+      "bluefocus": "0.1.1",
+      "bluehex": "0.1.1",
+      "feishu": "0.1.1",
+      "latest": "0.1.1",
+      "monitoring": "0.1.1"
     },
     "stats": {
       "comments": 0,
-      "downloads": 575,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780304879494,
+    "updatedAt": 1780306231837,
+    "latestVersion": {
+      "version": "0.1.1",
+      "createdAt": 1780306231837,
+      "changelog": "v0.1.1: 缩短 description 为「BlueHex AI PM 项目」(注：自然语言触发能力随之关闭，技能仅适合手动/cron 调用)。",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "xiaobo-essay-style",
+    "displayName": "王小波风格写作助手",
+    "summary": "王小波杂文风格写作助手。基于《我的精神家园》45篇杂文的深度分析，提炼出逻辑性、趣味性、幽默感三大核心及七种可套用技法。触发词：王小波风格、小波风格、王小波式、wangxiaobo style、幽默杂文、逻辑推演、归谬法、杂文体、科普写作、趣味写作、花剌子模信使。 适用场景：学术内容通俗化改写、科普文章创作、杂文...",
+    "tags": {
+      "chinese": "1.0.0",
+      "essay": "1.0.0",
+      "humor": "1.0.0",
+      "latest": "1.0.0",
+      "style": "1.0.0",
+      "writing": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780306154926,
+    "updatedAt": 1780306154926,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780306154926,
+      "changelog": "Initial release: 基于《我的精神家园》45篇杂文的深度风格分析，提炼逻辑性、趣味性、幽默感三大核心及七种可套用技法。",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "alibabacloud-pts-task",
+    "displayName": "Alibabacloud Pts Task",
+    "summary": "Alibaba Cloud PTS task CRUD worker skill — executes concrete PTS scenario operations (create / query / start / stop / report / delete) for both PTS native HT...",
+    "tags": {
+      "latest": "0.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780306061965,
+    "updatedAt": 1780306061965,
+    "latestVersion": {
+      "version": "0.0.1",
+      "createdAt": 1780306061965,
+      "changelog": "Initial public release of the Alibaba Cloud PTS Task CRUD Worker skill.\n\n- Provides create, query, start, stop, report, and delete for both PTS native HTTP/HTTPS and JMeter-based stress testing scenarios.\n- Designed as a worker skill, typically invoked via `alibabacloud-pts-pilot` router after resolving user intent.\n- Enforces strict parameter confirmation, authentication, and required Alibaba Cloud permissions.\n- Includes detailed instructions for CLI/plugin/version checks, secure credential handling, and workflow lifecycle management.\n- Implements idempotency precautions and check-then-act patterns to avoid unintended resource creation or test starts.\n- Supports user-customizable parameters for full scenario control.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "alibabacloud-csas-user-device-ops",
+    "displayName": "Alibabacloud Csas User Device Ops",
+    "summary": "Use this skill when users ask about SASE terminal device management, user account queries, inactive device analysis, or device locking on Alibaba Cloud SASE...",
+    "tags": {
+      "latest": "0.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780306061427,
+    "updatedAt": 1780306061427,
+    "latestVersion": {
+      "version": "0.0.1",
+      "createdAt": 1780306061427,
+      "changelog": "Initial release of alibabacloud-csas-user-device-ops – device management skill for Alibaba Cloud SASE.\n\n- Supports flexible querying of SASE devices with 20+ filters (department, device type, OS, feature status, etc.).\n- Enables user listing, app authorization queries, inactive device analysis, and device locking (no deletion or irreversible actions).\n- Includes clear permissions error handling and RAM policy guidance.\n- Requires Aliyun CLI >= 3.3.3 with csas plugin; validates CLI parameters before execution.\n- Provides detailed instructions for AI-Mode usage and session lifecycle.\n- Guides users to the SASE console for deletion and irreversible operations.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "fec-vue3-project-standard",
+    "displayName": "Vue3 Project Standard",
+    "summary": "Use when designing or reviewing Vue 3 + TypeScript project structure, SFC/component boundaries, composables organization, route composition, Pinia ownership,...",
+    "tags": {
+      "latest": "2.4.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 1,
-      "versions": 3
+      "versions": 1
     },
-    "createdAt": 1773220509770,
-    "updatedAt": 1780285238452,
+    "createdAt": 1780306028848,
+    "updatedAt": 1780306028848,
     "latestVersion": {
-      "version": "1.0.2",
-      "createdAt": 1780285238452,
-      "changelog": "baidu-map-ios-sdk 1.0.2\n\n- 移除元数据文件 _meta.json。\n- 移除技能简介卡片 skill-card.md。\n- 保持主功能、集成文档和规则不变，仅精简技能包结构。",
+      "version": "2.4.0",
+      "createdAt": 1780306028848,
+      "changelog": "Version 2.4.0\n\n- Added LICENSE, README.md, metadata.json, package.json, and detailed structural reference (references/vue3-project-details.md)\n- Removed skill-card.md\n- Updated skill trigger and description for improved specificity and English usage\n- Refined structure: split out detailed architecture, conventions, and procedures into dedicated references file\n- Clarified boundaries and constraints for components, composables, Pinia, and error handling\n- Output expectations and guidance are now more concise and strictly scoped to architecture, not style/test specifics",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "baidu-map-webapi",
-    "displayName": "Baidu Map WebAPI（百度地图官方Web服务 SKills）",
-    "summary": "百度地图 webapi 开发指南。在编写、审查或调试使用百度地图webAPI的代码时应运用此技能，也适用于直接调用百度地图API获取结果的场景。涵盖：地图位置搜索、POI检索、路线规划、建议出发时间、路线耗时预测、实时路况、行政区划查询、地址坐标转换、沿途交通事件、天气查询、智能推荐上车点等。当用户提及出发时间、...",
+    "slug": "mano-afk",
+    "displayName": "mano-afk",
+    "summary": "Autonomous full-cycle app builder — PRD, architecture, code, deployment, testing, and bug fixing from a natural language description. Remembers user preferen...",
     "tags": {
-      "latest": "1.0.8"
+      "latest": "1.0.7"
     },
     "stats": {
       "comments": 0,
-      "downloads": 642,
+      "downloads": 318,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 1,
       "versions": 8
     },
-    "createdAt": 1773641402188,
-    "updatedAt": 1780285162438,
+    "createdAt": 1777445724355,
+    "updatedAt": 1780305981447,
     "latestVersion": {
-      "version": "1.0.8",
-      "createdAt": 1780285162438,
-      "changelog": "- Removed two documentation files: _meta.json and skill-card.md.\n- No changes to functionality or APIs.\n- No updates to user-facing features; guides and interface remain the same.",
+      "version": "1.0.7",
+      "createdAt": 1780305981447,
+      "changelog": "**mano-afk 1.0.7 – Changelog**\n\n- Removed the skill-card.md file (now deleted from the repository).\n- Minor updates to project/skill documentation—including a more concise skill description and reorganization of sections.\n- Clarified instructions for environment variable setup and E2E test configuration.\n- Updated installation metadata for better integration with Homebrew and Openclaw.\n- No functional or behavior changes to the app builder pipeline or usage.",
       "license": null
     },
     "metadata": {
@@ -184,44 +461,142 @@
     }
   },
   {
-    "slug": "knowledge-rag",
-    "displayName": "Knowledge Rag",
-    "summary": "个人知识库：存笔记、搜内容。用自然语言搜本地文档，不用记文件名。跟 AI 说'把这段存到知识库'自动保存并建索引。推荐搭配 Bilibili Auto Transcript：视频转录自动入库，转完即搜。",
+    "slug": "x-management",
+    "displayName": "X Management",
+    "summary": "Draft-first X/Twitter account management workflow for OpenClaw. Use when the user wants to read their X account context, draft tweets, replies, quote tweets,...",
     "tags": {
-      "latest": "1.6.0",
-      "54lynnn": "1.1.0",
-      "chinese": "1.5.4",
-      "knowledge": "1.5.4",
-      "rag": "1.5.4",
-      "search": "1.5.4"
+      "latest": "0.1.3"
     },
     "stats": {
       "comments": 0,
-      "downloads": 353,
+      "downloads": 325,
       "installsAllTime": 0,
       "installsCurrent": 0,
-      "stars": 1,
-      "versions": 14
+      "stars": 0,
+      "versions": 4
     },
-    "createdAt": 1780097352414,
-    "updatedAt": 1780284821245,
+    "createdAt": 1776441364599,
+    "updatedAt": 1780305929625,
     "latestVersion": {
-      "version": "1.6.0",
-      "createdAt": 1780284821245,
-      "changelog": "SQLite存储引擎升级 + 混合打分优化 + 8B默认模型",
+      "version": "0.1.3",
+      "createdAt": 1780305929625,
+      "changelog": "Refreshes documentation for exact accountId verification, older post search guidance, multi-account safety, media upload, thread publish, and approval-gated publishing.",
       "license": null
     },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
+    "metadata": null
+  },
+  {
+    "slug": "alibabacloud-httpdns",
+    "displayName": "Alibabacloud Httpdns",
+    "summary": "Alibaba Cloud HTTPDNS OpenAPI management skill. Use when the user needs to retrieve HTTPDNS account secret information, add/delete/list/configure HTTPDNS dom...",
+    "tags": {
+      "latest": "0.0.1-beta.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780305907498,
+    "updatedAt": 1780305907498,
+    "latestVersion": {
+      "version": "0.0.1-beta.1",
+      "createdAt": 1780305907498,
+      "changelog": "Initial public beta release of the Alibaba Cloud HTTPDNS OpenAPI management skill.\n\n- Supports retrieving HTTPDNS account secret information with sensitive data masking.\n- Allows adding, deleting, listing, and configuring HTTPDNS domains.\n- Enables refreshing domain resolve cache.\n- Provides access to domain usage and resolve-count statistics.\n- Enforces parameter confirmation and proper permission handling.\n- Uses both helper scripts and direct aliyun CLI for all supported operations.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "wangxiaobo-style",
+    "displayName": "王小波风格写作助手",
+    "summary": "王小波杂文风格写作助手。基于《我的精神家园》45篇杂文的深度分析，提炼出逻辑性、趣味性、幽默感三大核心及七种可套用技法。触发词：王小波风格、小波风格、王小波式、wangxiaobo style、幽默杂文、逻辑推演、归谬法、杂文体、科普写作、趣味写作、花剌子模信使。 适用场景：学术内容通俗化改写、科普文章创作、杂文...",
+    "tags": {
+      "chinese": "1.0.2",
+      "copywriting": "1.0.2",
+      "essay": "1.0.2",
+      "humor": "1.0.2",
+      "latest": "1.0.2",
+      "style": "1.0.2",
+      "writing": "1.0.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 25,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1780300979367,
+    "updatedAt": 1780305804241,
+    "latestVersion": {
+      "version": "1.0.2",
+      "createdAt": 1780305804241,
+      "changelog": "v1.0.2: 增强中文搜索关键词覆盖（幽默杂文/科普写作/归谬法/杂文体等），优化市场可见性",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "linkedclaw-requester",
+    "displayName": "linkedclaw-requester",
+    "summary": "LinkedClaw requester — hire, invoke, or broadcast to other agents on the LinkedClaw marketplace when this agent lacks a capability locally. Use this when the...",
+    "tags": {
+      "latest": "0.0.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 153,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1778482967779,
+    "updatedAt": 1780305613041,
+    "latestVersion": {
+      "version": "0.0.2",
+      "createdAt": 1780305613041,
+      "changelog": "linkedclaw-requester 0.0.2\n\n- Major refactor: all requester flows now require the `linkedclaw` CLI (via `@linkedclaw/cli`), removing direct curl support and related references.\n- Simplified environment detection: probes only for the CLI presence; CLI installation is encapsulated in bundled scripts.\n- Added utility scripts: includes `scripts/install-cli.sh` and `scripts/gig-task-wait.sh` for streamlined CLI install and session management.\n- References and documentation updated: new reference files detail usage patterns and code samples for the CLI path; curl and outdated patterns removed.\n- Cleaner provider references: directs users to install `linkedclaw-provider` for provider functionality, matching the current runtime.\n- Improved setup and security instructions: clearer setup steps, reduced ambiguity, and focused on the default secure OAuth flow.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "hap-upgrade-guide",
+    "displayName": "HAP升级指南",
+    "summary": "明道云 HAP 私有部署版本升级专属 skill。只要用户提到 HAP 私有部署升级、跨版本升级、升级注意事项、升级前后附加操作、单机或集群升级步骤、升级文档生成、版本兼容性或架构镜像支持，就必须触发本 skill。即使用户没有明确说\"用 hap-upgrade\"，只要任务与 HAP 私有部署升级决策或升级执行有...",
+    "tags": {
+      "latest": "1.0.4"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 239,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 5
+    },
+    "createdAt": 1779687340897,
+    "updatedAt": 1780305496873,
+    "latestVersion": {
+      "version": "1.0.4",
+      "createdAt": 1780305496873,
+      "changelog": "- 新增升级文档中文命名规范：升级产物需使用“HAP升级指南-v{当前版本}-to-v{目标版本}-{模式}”格式，禁止英文命名。\n- 完善升级后操作的步骤编号结构（单机和集群）：明确要求必须用阿拉伯数字顺序排列，版本块和子操作需有明确的标题和编号规则。\n- 强化集群 fileInit 步骤规范：升级后操作出现 fileInit 时，需提供三种存储类型判断及对应三种执行情况的详细引导，所有情况均须完整列出，禁止简化或合并。\n- 修正部分模板细节与表述，使升级操作步骤与输出文档更接近明道云官方文档。\n- 不再附带 skill-card.md 文件（仅 SKILL.md 保留）。",
+      "license": null
+    },
+    "metadata": null
   },
   {
     "slug": "bilibili-auto-transcript",
     "displayName": "Bilibili Auto Transcript",
-    "summary": "B站视频转录+收藏夹扫描。三级降级（CC→AI→Whisper），搭配 Knowledge RAG 转录即搜。",
+    "summary": "B站视频转录+收藏夹扫描。三级降级（CC→AI→Whisper），智能模型选择，AI摘要生成。",
     "tags": {
-      "latest": "3.4.0",
+      "latest": "3.5.0",
       "54lynnn": "3.3.0",
       "auto": "3.1.0",
       "bilibili": "3.3.9",
@@ -232,18 +607,18 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 452,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
+      "downloads": 504,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
       "stars": 1,
-      "versions": 14
+      "versions": 15
     },
     "createdAt": 1779942030906,
-    "updatedAt": 1780284815031,
+    "updatedAt": 1780304264748,
     "latestVersion": {
-      "version": "3.4.0",
-      "createdAt": 1780284815031,
-      "changelog": "SQLite存储引擎升级 + 混合打分优化 + 8B默认模型",
+      "version": "3.5.0",
+      "createdAt": 1780304264748,
+      "changelog": "v3.5.0: CUDA检测、智能Whisper模型选择、16kHz音频优化、Cookie过期提醒、AI字幕兜底增强；新增批量转录脚本(batch_transcribe.py)，支持断点续传、自动重试、CSV报告、AI摘要生成；输出文件按年/月分目录组织；修复临时文件清理、分页只取第一页等bug",
       "license": null
     },
     "metadata": {
@@ -252,443 +627,51 @@
     }
   },
   {
-    "slug": "codex-ppt",
-    "displayName": "Codex PPT",
-    "summary": "Generate visually unified image-based PPT/PPTX decks from articles, reports, papers, notes, or outlines.",
+    "slug": "skill-git-scm",
+    "displayName": "Git",
+    "summary": "git:interface-01 - Clone or Update",
     "tags": {
-      "latest": "0.4.1"
+      "latest": "1.0.5"
     },
     "stats": {
       "comments": 0,
-      "downloads": 775,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 1,
-      "versions": 8
-    },
-    "createdAt": 1778337851802,
-    "updatedAt": 1780284799770,
-    "latestVersion": {
-      "version": "0.4.1",
-      "createdAt": 1780284799770,
-      "changelog": "### Fixes\n\n- Use a cross-platform file lock for slide generation state files so Windows can run state recording scripts. (#41)",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "zl-clawpay",
-    "displayName": "ZL-ClawPay",
-    "summary": "支付技能：支持免密支付、订单查询、交易流水等功能。 触发词：我要支付、帮我付款、确认买单、查询支付订单、查询订单状态、查询交易流水、查询交易记录、查询账单、绑定子钱包、验证钱包凭据、解绑子钱包、撤销钱包绑定。 不适用于：非支付场景、历史数据导出、批量操作、余额查询、收款码生成。 基于 Node.js 实现，使用...",
-    "tags": {
-      "latest": "1.0.8"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 611,
+      "downloads": 382,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 9
-    },
-    "createdAt": 1775014541643,
-    "updatedAt": 1780284759126,
-    "latestVersion": {
-      "version": "1.0.8",
-      "createdAt": 1780284759126,
-      "changelog": "**Major update: Local encrypted credential storage, wallet binding/management, and new command interfaces.**\n\n- Credentials (`apiKey`, `subWalletId`) are now stored locally in an encrypted file (`~/.zl-claw-pay/state.json`) instead of environment variables.\n- Added interfaces: C00003 (bind wallet), L00001 (query wallet), and L00002 (unbind wallet locally).\n- Removed obsolete files and environment variable requirements for credentials.\n- Improved trigger policy: operations are now restricted to explicit user actions, preventing speculative commands.\n- Skill documentation updated for new workflows, usage instructions, and security practices.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "baoyu-post-to-x",
-    "displayName": "Baoyu Post To X",
-    "summary": "Posts content and articles to X (Twitter). Supports regular posts with images/videos and X Articles (long-form Markdown). In Codex, honor explicit requests f...",
-    "tags": {
-      "latest": "1.58.1"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 3325,
-      "installsAllTime": 51,
-      "installsCurrent": 51,
-      "stars": 3,
-      "versions": 3
-    },
-    "createdAt": 1770263078722,
-    "updatedAt": 1780284689739,
-    "latestVersion": {
-      "version": "1.58.1",
-      "createdAt": 1780284689739,
-      "changelog": "Fix stale npm shared package dependency pins for baoyu-md and baoyu-chrome-cdp 0.1.1.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "baoyu-post-to-weibo",
-    "displayName": "Baoyu Post To Weibo",
-    "summary": "Posts content to Weibo (微博). Supports regular posts with text, images, and videos, and headline articles (头条文章) with Markdown input via Chrome CDP. Use when...",
-    "tags": {
-      "latest": "1.117.3"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 2170,
-      "installsAllTime": 38,
-      "installsCurrent": 37,
-      "stars": 1,
-      "versions": 12
-    },
-    "createdAt": 1773085260386,
-    "updatedAt": 1780284681726,
-    "latestVersion": {
-      "version": "1.117.3",
-      "createdAt": 1780284681726,
-      "changelog": "Fix stale npm shared package dependency pins for baoyu-md and baoyu-chrome-cdp 0.1.1.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "baoyu-post-to-wechat",
-    "displayName": "Baoyu Post To Wechat",
-    "summary": "Posts content to WeChat Official Account (微信公众号) via API or Chrome CDP. Supports article posting (文章) with HTML, markdown, or plain text input, and image-tex...",
-    "tags": {
-      "latest": "1.118.1"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 3606,
-      "installsAllTime": 63,
-      "installsCurrent": 63,
-      "stars": 0,
-      "versions": 21
-    },
-    "createdAt": 1773076792740,
-    "updatedAt": 1780284676016,
-    "latestVersion": {
-      "version": "1.118.1",
-      "createdAt": 1780284676016,
-      "changelog": "Fix stale npm shared package dependency pins for baoyu-md and baoyu-chrome-cdp 0.1.1.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "baoyu-markdown-to-html",
-    "displayName": "Baoyu Markdown To Html",
-    "summary": "Converts Markdown to styled HTML with WeChat-compatible themes. Supports code highlighting, math, Mermaid (rendered to PNG via headless Chrome), PlantUML, fo...",
-    "tags": {
-      "latest": "1.117.3"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 2947,
-      "installsAllTime": 48,
-      "installsCurrent": 48,
-      "stars": 2,
-      "versions": 11
-    },
-    "createdAt": 1773287428737,
-    "updatedAt": 1780284663233,
-    "latestVersion": {
-      "version": "1.117.3",
-      "createdAt": 1780284663233,
-      "changelog": "Fix stale npm shared package dependency pins for baoyu-md and baoyu-chrome-cdp 0.1.1.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "baoyu-danger-x-to-markdown",
-    "displayName": "Baoyu Danger X To Markdown",
-    "summary": "Converts X (Twitter) tweets and articles to markdown with YAML front matter. Uses reverse-engineered API requiring user consent. Use when user mentions \"X to...",
-    "tags": {
-      "latest": "1.117.3"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 1659,
-      "installsAllTime": 41,
-      "installsCurrent": 41,
-      "stars": 0,
-      "versions": 14
-    },
-    "createdAt": 1773072754285,
-    "updatedAt": 1780284659320,
-    "latestVersion": {
-      "version": "1.117.3",
-      "createdAt": 1780284659320,
-      "changelog": "Fix stale npm shared package dependency pins for baoyu-md and baoyu-chrome-cdp 0.1.1.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "baoyu-danger-gemini-web",
-    "displayName": "Baoyu Danger Gemini Web",
-    "summary": "Generates images and text via reverse-engineered Gemini Web API. Supports text generation, image generation from prompts, reference images for vision input,...",
-    "tags": {
-      "latest": "1.56.2"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 1456,
-      "installsAllTime": 49,
-      "installsCurrent": 48,
-      "stars": 0,
-      "versions": 3
-    },
-    "createdAt": 1772588725756,
-    "updatedAt": 1780284650421,
-    "latestVersion": {
-      "version": "1.56.2",
-      "createdAt": 1780284650421,
-      "changelog": "Fix stale npm shared package dependency pins for baoyu-md and baoyu-chrome-cdp 0.1.1.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "understanding-womens-words-skill",
-    "displayName": "Understanding Women's Words Skill",
-    "summary": "A respectful communication helper for interpreting indirect relationship phrases, emotional subtext, and caring replies without stereotyping, manipulation, o...",
-    "tags": {
-      "communication": "0.1.0",
-      "dating": "0.1.0",
-      "emotional-intelligence": "0.1.0",
-      "latest": "0.1.0",
-      "openclaw": "0.1.0",
-      "relationships": "0.1.0",
-      "templates": "0.1.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780284395257,
-    "updatedAt": 1780284395257,
-    "latestVersion": {
-      "version": "0.1.0",
-      "createdAt": 1780284395257,
-      "changelog": "Initial release: respectful emotional-subtext communication helper with examples like 'Where are you?' meaning possible 'I miss you'.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "1688-distribution-amazon",
-    "displayName": "1688 Distribution Amazon",
-    "summary": "将1688商品铺货到Amazon店铺并保存为店小宝待发布草稿的工具链。当用户提到「铺货Amazon」「上架Amazon」「Amazon发品」「把1688商品发到Amazon」「亚马逊铺货」「生成Amazon草稿」「直接发布到Amazon」等场景时必须使用此技能。当前版本只创建店小宝 Amazon 待发布草稿；即便...",
-    "tags": {
-      "latest": "0.1.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780283205594,
-    "updatedAt": 1780283205594,
-    "latestVersion": {
-      "version": "0.1.0",
-      "createdAt": 1780283205594,
-      "changelog": "- Initial release: enables seamless listing of 1688 products as drafts to Amazon stores via 店小宝, using a standardized toolchain.\n- Only supports saving as Amazon \"待发布草稿\" in 店小宝; does not support direct publishing to Amazon. Users are guided to complete publishing in the 店小宝 management page.\n- Covers all major steps: environment check, store confirmation, session initialization, product retrieval, Amazon category mapping, image processing, schema and CPV mapping, payload assembly, and local draft saving.\n- Robust error handling: stops on failure at any step, provides clear user instructions, and prevents accidental credential leakage.\n- Streamlined with a one-command fast path (`run_local_save.py`) for common publish scenarios.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "simple-ledger",
-    "displayName": "简单记账 · 个人投资管家",
-    "summary": "A personal finance tool for income/expense tracking, budget management, financial goals, and investment portfolio monitoring. Supports ledger management, spe...",
-    "tags": {
-      "latest": "1.5.0",
-      "accounting": "1.0.0",
-      "budget": "1.0.0",
-      "csv": "1.0.0",
-      "ledger": "1.0.0",
-      "personal-finance": "1.0.0",
-      "zh": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 337,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 1,
       "versions": 6
     },
-    "createdAt": 1779380936318,
-    "updatedAt": 1780283153937,
+    "createdAt": 1779410777386,
+    "updatedAt": 1780304247069,
     "latestVersion": {
-      "version": "1.5.0",
-      "createdAt": 1780283153937,
-      "changelog": "优化搜索元数据：中文名改为简单记账·个人投资管家，description_zh嵌入高频搜索词（记账/投资记账/持仓管理/消费记录），tags新增中文标签（记账/投资/持仓/消费/股票/基金/ETF/账本/支出/收入）",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "daily-news-cn",
-    "displayName": "每日新闻日报 v2.3",
-    "summary": "每日新闻自动采集与报告生成。双引擎交叉验证 + 官方媒体优先 + 900秒超时容错。v2.3 稳定运行版（2026-06-01）。",
-    "tags": {
-      "latest": "2.3.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 144,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1779847476129,
-    "updatedAt": 1780283144720,
-    "latestVersion": {
-      "version": "2.3.0",
-      "createdAt": 1780283144720,
-      "changelog": "v2.3 稳定版：双引擎交叉验证(bocha基础搜+baidu数据验证)、官方媒体优先、timeout 900秒、每类6-10条、彻底解决超时问题",
+      "version": "1.0.5",
+      "createdAt": 1780304247069,
+      "changelog": "- Removed the file skill-card.md.\n- Minor formatting and language adjustments in SKILL.md for clarity.\n- No changes to core functionality.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "dataify-facebook-profile-by-url",
-    "displayName": "Dataify Facebook Profile By Url",
-    "summary": "Submit Dataify Facebook Profile by Profile URL Builder tasks. Use when the user wants the Facebook personal profile collection tool, collect Facebook persona...",
+    "slug": "skill-alpine",
+    "displayName": "Alpine Linux",
+    "summary": "alpine:interface-01 - Fetch Latest Releases; alpine:interface-02 - Aggregate Latest Version Archs",
     "tags": {
-      "latest": "1.0.0"
+      "latest": "1.0.7"
     },
     "stats": {
       "comments": 0,
-      "downloads": 0,
+      "downloads": 376,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 1
+      "versions": 8
     },
-    "createdAt": 1780283000757,
-    "updatedAt": 1780283000757,
+    "createdAt": 1779380439989,
+    "updatedAt": 1780304212238,
     "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780283000757,
-      "changelog": "Initial release of \"dataify-facebook-profile-by-url\": collect Facebook personal profile data by URL via Dataify.\n\n- Guides users through required and optional parameters before submitting a collection task.\n- Supports submitting single or multiple Facebook personal profile URLs.\n- Handles Dataify API TOKEN setup, checking for existing tokens and prompting to save for future use.\n- Uses a stable Python script to submit tasks and returns task ID and status on success.\n- Includes guardrails for URL validation, token handling, and troubleshooting common errors.\n- Always directs users to view results on the Dataify dashboard after task creation.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "dataify-facebook-post-by-url",
-    "displayName": "Dataify Facebook Post By Url",
-    "summary": "Submit Dataify Facebook Post by Post URL Builder tasks. Use when the user wants the Facebook post collection tool, collect Facebook posts, scrape Facebook po...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780282966679,
-    "updatedAt": 1780282966679,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780282966679,
-      "changelog": "Initial release of dataify-facebook-post-by-url skill.\n\n- Enables submission of Dataify Facebook post collection jobs by post URL via Dataify Builder.\n- Guides users through required/optional parameter selection, including support for multiple URLs.\n- Provides clear API TOKEN handling instructions with secure local storage suggestions.\n- Outputs task ID, status, and dashboard link on successful job submission.\n- Includes troubleshooting steps for common errors like missing API TOKEN or invalid URLs.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "solo-mission",
-    "displayName": "Solo Mission",
-    "summary": "Use this skill for ANY interaction with the SOLO Mission Platform — creating missions, hiring humans, managing conversations, handling on-chain escrow (Escro...",
-    "tags": {
-      "latest": "1.0.11"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 587,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 10
-    },
-    "createdAt": 1778843215673,
-    "updatedAt": 1780282942412,
-    "latestVersion": {
-      "version": "1.0.11",
-      "createdAt": 1780282942412,
-      "changelog": "solo-mission 1.0.11\n\n- Added explicit support for the media_review mission type in both documentation and creation flow.\n- Updated SKILL.md: instructions now specify handling of \"type: media_review\" missions, not just \"task_type\".\n- Removed obsolete skill-card.md file.\n- Minor clarifications applied to mission type documentation for off-chain creation.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "dataify-facebook-events",
-    "displayName": "Dataify Facebook Events",
-    "summary": "Submit Dataify Facebook Event Builder tasks for three Facebook event collection modes. Use when the user wants the Facebook event collection tool, collect Fa...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780282882174,
-    "updatedAt": 1780282882174,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780282882174,
-      "changelog": "Initial release: Dataify Facebook Events skill for collecting Facebook event data via Dataify Builder.\n\n- Supports three Facebook event collection modes: event list URL, event search URL, and specific event URL.\n- Guides the user through mode selection, parameter customization, and multi-URL input.\n- Handles Dataify API TOKEN configuration, including secure prompts and environment variable options.\n- Submits collection tasks and provides user with task ID, status, and instructions to view results on the Dataify dashboard.\n- Includes explicit validation and clear user prompts at every step.",
+      "version": "1.0.7",
+      "createdAt": 1780304212238,
+      "changelog": "- No changes were detected in this version.\n- Documentation and functionality remain the same as the previous release.",
       "license": null
     },
     "metadata": null
@@ -702,7 +685,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 83875,
+      "downloads": 83910,
       "installsAllTime": 2770,
       "installsCurrent": 2643,
       "stars": 55,
@@ -730,7 +713,7 @@
     },
     "stats": {
       "comments": 36,
-      "downloads": 182578,
+      "downloads": 182724,
       "installsAllTime": 3591,
       "installsCurrent": 3461,
       "stars": 908,
@@ -758,8 +741,8 @@
     },
     "stats": {
       "comments": 7,
-      "downloads": 186463,
-      "installsAllTime": 4375,
+      "downloads": 186615,
+      "installsAllTime": 4376,
       "installsCurrent": 4243,
       "stars": 620,
       "versions": 1
@@ -783,9 +766,9 @@
     },
     "stats": {
       "comments": 6,
-      "downloads": 157874,
+      "downloads": 158024,
       "installsAllTime": 3793,
-      "installsCurrent": 3670,
+      "installsCurrent": 3669,
       "stars": 406,
       "versions": 1
     },
@@ -811,7 +794,7 @@
     },
     "stats": {
       "comments": 2,
-      "downloads": 82768,
+      "downloads": 82859,
       "installsAllTime": 2079,
       "installsCurrent": 2005,
       "stars": 315,
@@ -839,10 +822,10 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 88933,
-      "installsAllTime": 2416,
-      "installsCurrent": 2342,
-      "stars": 295,
+      "downloads": 89049,
+      "installsAllTime": 2418,
+      "installsCurrent": 2344,
+      "stars": 296,
       "versions": 1
     },
     "createdAt": 1769522677376,
@@ -864,9 +847,9 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 90723,
-      "installsAllTime": 2370,
-      "installsCurrent": 2304,
+      "downloads": 90808,
+      "installsAllTime": 2371,
+      "installsCurrent": 2305,
       "stars": 257,
       "versions": 1
     },
@@ -892,9 +875,9 @@
     },
     "stats": {
       "comments": 9,
-      "downloads": 100377,
-      "installsAllTime": 2526,
-      "installsCurrent": 2436,
+      "downloads": 100494,
+      "installsAllTime": 2527,
+      "installsCurrent": 2437,
       "stars": 411,
       "versions": 1
     },
@@ -920,9 +903,9 @@
     },
     "stats": {
       "comments": 5,
-      "downloads": 33746,
-      "installsAllTime": 1443,
-      "installsCurrent": 1398,
+      "downloads": 33778,
+      "installsAllTime": 1444,
+      "installsCurrent": 1399,
       "stars": 54,
       "versions": 1
     },
@@ -948,9 +931,9 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 65959,
-      "installsAllTime": 2008,
-      "installsCurrent": 1943,
+      "downloads": 66020,
+      "installsAllTime": 2009,
+      "installsCurrent": 1944,
       "stars": 191,
       "versions": 1
     },
@@ -976,9 +959,9 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 101262,
-      "installsAllTime": 1854,
-      "installsCurrent": 1792,
+      "downloads": 101347,
+      "installsAllTime": 1855,
+      "installsCurrent": 1793,
       "stars": 395,
       "versions": 2
     },
@@ -1001,7 +984,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 37369,
+      "downloads": 37406,
       "installsAllTime": 1564,
       "installsCurrent": 1516,
       "stars": 112,
@@ -1031,7 +1014,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 51105,
+      "downloads": 51157,
       "installsAllTime": 1577,
       "installsCurrent": 1528,
       "stars": 123,
@@ -1059,7 +1042,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 41994,
+      "downloads": 42041,
       "installsAllTime": 1481,
       "installsCurrent": 1426,
       "stars": 69,
@@ -1087,9 +1070,9 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 110696,
-      "installsAllTime": 2560,
-      "installsCurrent": 2484,
+      "downloads": 110795,
+      "installsAllTime": 2561,
+      "installsCurrent": 2485,
       "stars": 254,
       "versions": 1
     },
@@ -1115,9 +1098,9 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 40263,
-      "installsAllTime": 1421,
-      "installsCurrent": 1380,
+      "downloads": 40329,
+      "installsAllTime": 1422,
+      "installsCurrent": 1381,
       "stars": 29,
       "versions": 1
     },
@@ -1143,7 +1126,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 44714,
+      "downloads": 44754,
       "installsAllTime": 1521,
       "installsCurrent": 1481,
       "stars": 68,
@@ -1171,7 +1154,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 26334,
+      "downloads": 26352,
       "installsAllTime": 1251,
       "installsCurrent": 1212,
       "stars": 26,
@@ -1199,7 +1182,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 22191,
+      "downloads": 22213,
       "installsAllTime": 1243,
       "installsCurrent": 1212,
       "stars": 30,
@@ -1227,9 +1210,9 @@
     },
     "stats": {
       "comments": 12,
-      "downloads": 46803,
-      "installsAllTime": 1418,
-      "installsCurrent": 1378,
+      "downloads": 46844,
+      "installsAllTime": 1419,
+      "installsCurrent": 1379,
       "stars": 156,
       "versions": 1
     },
@@ -1252,7 +1235,7 @@
     },
     "stats": {
       "comments": 4,
-      "downloads": 29559,
+      "downloads": 29587,
       "installsAllTime": 1323,
       "installsCurrent": 1285,
       "stars": 81,
@@ -1282,7 +1265,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 24049,
+      "downloads": 24073,
       "installsAllTime": 1115,
       "installsCurrent": 1086,
       "stars": 35,
@@ -1307,7 +1290,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 28427,
+      "downloads": 28461,
       "installsAllTime": 1390,
       "installsCurrent": 1343,
       "stars": 43,
@@ -1338,7 +1321,7 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 18076,
+      "downloads": 18086,
       "installsAllTime": 1206,
       "installsCurrent": 1170,
       "stars": 7,
@@ -1366,7 +1349,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 25318,
+      "downloads": 25343,
       "installsAllTime": 1175,
       "installsCurrent": 1139,
       "stars": 51,
