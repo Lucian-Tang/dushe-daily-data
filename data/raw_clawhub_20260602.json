@@ -1,353 +1,328 @@
 [
   {
-    "slug": "vpn-mesh",
-    "displayName": "Vpn Mesh",
-    "summary": "Turn your OpenClaw agent into a secure VPN exit node. Mesh network for agents to route traffic through peer nodes worldwide.",
+    "slug": "tavily-search-native-node",
+    "displayName": "Tavily Search Native Node",
+    "summary": "Minimal Tavily web search for OpenClaw - native Node.js, zero dependencies, small audit surface. Use when the user asks to search the web, look up current in...",
     "tags": {
-      "latest": "0.3.0"
+      "latest": "1.0.9",
+      "node": "1.0.7",
+      "research": "1.0.7",
+      "search": "1.0.7",
+      "tavily": "1.0.7",
+      "web": "1.0.7"
     },
     "stats": {
       "comments": 0,
-      "downloads": 24,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 3
-    },
-    "createdAt": 1780345389711,
-    "updatedAt": 1780348165952,
-    "latestVersion": {
-      "version": "0.3.0",
-      "createdAt": 1780348165952,
-      "changelog": "Major upgrade: Stunning HTML map, connect-country command, country-based routing, demo nodes, comprehensive docs, security hardening",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "canonry",
-    "displayName": "Canonry",
-    "summary": "Agent-first AEO operating platform.",
-    "tags": {
-      "latest": "4.69.1+89679e7"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 5119,
-      "installsAllTime": 2,
-      "installsCurrent": 2,
-      "stars": 1,
-      "versions": 277
-    },
-    "createdAt": 1774104995898,
-    "updatedAt": 1780347780661,
-    "latestVersion": {
-      "version": "4.69.1+89679e7",
-      "createdAt": 1780347780661,
-      "changelog": "Sync with canonry v4.69.1 (89679e7)",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "wordpress-api-pro",
-    "displayName": "Wordpress Api Pro",
-    "summary": "WordPress REST API integration for managing posts, pages, media, WooCommerce products, Elementor content, SEO meta, ACF, and JetEngine fields. Use when you n...",
-    "tags": {
-      "latest": "3.5.1",
-      "api": "3.4.0",
-      "batch": "3.4.0",
-      "cms": "3.4.0",
-      "content": "3.4.0",
-      "elementor": "3.4.0",
-      "multi-site": "3.4.0",
-      "publishing": "3.4.0",
-      "security": "3.4.0",
-      "woocommerce": "3.4.0",
-      "wordpress": "3.4.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 1138,
+      "downloads": 451,
       "installsAllTime": 1,
       "installsCurrent": 1,
-      "stars": 2,
-      "versions": 11
-    },
-    "createdAt": 1772417720699,
-    "updatedAt": 1780347643082,
-    "latestVersion": {
-      "version": "3.5.1",
-      "createdAt": 1780347643082,
-      "changelog": "- Removed redundant files: CHANGELOG.md, LICENSE.txt, README.md, package.json, and skill-card.md.\n- Consolidated all documentation and metadata into SKILL.md, which now includes version and license info.\n- Updated documentation to clarify usage in Claude Code and highlight dependency requirements for certain scripts.\n- No changes to functionality or user-facing behavior.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "pullstar-1on1",
-    "displayName": "Engineering manager 1-on-1 meeting brief generator",
-    "summary": "Generate a ready-to-use 1-on-1 brief for any engineer on your team — from their GitHub activity, in seconds. Spots patterns like high output but low review p...",
-    "tags": {
-      "latest": "1.0.2"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 268,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
       "stars": 0,
-      "versions": 3
+      "versions": 7
     },
-    "createdAt": 1778012429552,
-    "updatedAt": 1780346656712,
+    "createdAt": 1778025207676,
+    "updatedAt": 1780372684074,
     "latestVersion": {
-      "version": "1.0.2",
-      "createdAt": 1780346656712,
-      "changelog": "pullstar-1on1 v1.0.2\n\n- Switched to a new entry point: added run_brief.py for unified brief generation.\n- Added GitHub GraphQL mode as default, with REST fallback and --api-mode flag\n- Expanded documentation: added README.md with updated usage, config, and privacy details.\n- Clarified agent and LLM inference instructions for output workflow.\n- Updated dependencies list (requires 'requests').\n- Removed skill-card.md; see README.md and SKILL.md for all reference details.\n-skills/scripts/ingest.py now default to GitHub\nGraphQL API when a token is present, reducing API call count from ~200+ REST\ncalls per user to 2-4 GraphQL queries total. REST remains the automatic\nfallback when no GITHUB_TOKEN is found, preserving full backwards compatibility\nincluding unauthenticated access.",
+      "version": "1.0.9",
+      "createdAt": 1780372684074,
+      "changelog": "Public-ready safety/docs/test update",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "pixcli",
-    "displayName": "Pixcli Skill",
-    "summary": "Creative toolkit for AI agents — generate images, videos, voiceover, music, and sound effects, then assemble polished output via Remotion. Uses the pixcli CL...",
+    "slug": "tavily-search-pro-native-node",
+    "displayName": "Tavily Search Pro Native Node",
+    "summary": "Research-grade Tavily toolkit for OpenClaw - native Node.js, zero dependencies. Use when the user needs deep web research, multi-URL content extraction, Tavi...",
     "tags": {
-      "latest": "2.4.0"
+      "latest": "1.0.10",
+      "cache": "1.0.8",
+      "extract": "1.0.8",
+      "node": "1.0.8",
+      "research": "1.0.8",
+      "search": "1.0.8",
+      "tavily": "1.0.8"
     },
     "stats": {
       "comments": 0,
-      "downloads": 447,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
+      "downloads": 506,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 8
+    },
+    "createdAt": 1778025213550,
+    "updatedAt": 1780372668186,
+    "latestVersion": {
+      "version": "1.0.10",
+      "createdAt": 1780372668186,
+      "changelog": "Public-ready safety/docs/test update",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "resend-send-native-node",
+    "displayName": "Resend Send Native Node",
+    "summary": "Send email via Resend.com's HTTPS API - native Node.js, zero dependencies. Use when the user explicitly asks to email, send a message, mail a report, or deli...",
+    "tags": {
+      "latest": "1.0.9",
+      "email": "1.0.8",
+      "email resend notifications reports nodejs no-deps send-only": "1.0.3",
+      "no-deps": "1.0.8",
+      "node": "1.0.8",
+      "notifications": "1.0.8",
+      "reports": "1.0.8",
+      "resend": "1.0.8",
+      "send-only": "1.0.8"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 554,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 8
+    },
+    "createdAt": 1778080265946,
+    "updatedAt": 1780372650748,
+    "latestVersion": {
+      "version": "1.0.9",
+      "createdAt": 1780372650748,
+      "changelog": "Public-ready safety/docs/test update",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "youtube-transcript-native-node",
+    "displayName": "YouTube Transcript Native Node",
+    "summary": "Extract a clean plain-text transcript from existing YouTube captions - native Node.js, zero npm dependencies. Use when the user asks to summarize, quote, or...",
+    "tags": {
+      "latest": "1.1.3",
+      "captions": "1.1.2",
+      "native-node": "1.1.2",
+      "transcript": "1.1.2",
+      "youtube": "1.1.2",
+      "yt-dlp": "1.1.2",
+      "zero-dependencies": "1.1.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 596,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 8
+    },
+    "createdAt": 1778774839724,
+    "updatedAt": 1780372634014,
+    "latestVersion": {
+      "version": "1.1.3",
+      "createdAt": 1780372634014,
+      "changelog": "Public-ready safety/docs/test update",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "linear-native-node",
+    "displayName": "Linear Native Node",
+    "summary": "Direct Linear workspace helper using Linear's GraphQL API from native Node.js. Use when creating, listing, updating, commenting on, summarizing, or looking u...",
+    "tags": {
+      "latest": "1.0.13",
+      "graphql": "1.0.12",
+      "linear": "1.0.12",
+      "node": "1.0.12",
+      "productivity": "1.0.12",
+      "project-management": "1.0.12"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 665,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
       "stars": 0,
       "versions": 13
     },
-    "createdAt": 1774984703246,
-    "updatedAt": 1780346105608,
+    "createdAt": 1778025201401,
+    "updatedAt": 1780372619051,
     "latestVersion": {
-      "version": "2.4.0",
-      "createdAt": 1780346105608,
-      "changelog": "v2.4: native Veo 3.1 + Seedance 2 + Grok Imagine + GPT Image 2 + FLUX VTO + Gemini TTS/dialogue + Lyria 3 Pro + ElevenLabs SFX v2; R2 publishing (--publish public/private, TTL); dialogue/tryon commands; voice --engine + cloning; video --resolution; smarter image-analysis classifier. Removed muapi.",
+      "version": "1.0.13",
+      "createdAt": 1780372619051,
+      "changelog": "Public-ready safety/docs/test update",
       "license": null
     },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
+    "metadata": null
   },
   {
-    "slug": "quick-backup-restore",
-    "displayName": "Time Clawshine — OpenClaw Time Machine",
-    "summary": "Restic-powered encrypted time machine for OpenClaw: hourly incremental snapshots, fast restore by time/snapshot/file, local-only privacy defaults, integrity...",
-    "tags": {
-      "backup": "3.2.3",
-      "disaster-recovery": "3.2.3",
-      "encrypted-backup": "3.2.3",
-      "latest": "3.2.3",
-      "local-backup": "3.2.3",
-      "openclaw": "3.2.3",
-      "privacy": "3.2.3",
-      "restic": "3.2.3",
-      "restore": "3.2.3",
-      "snapshots": "3.2.3",
-      "time-machine": "3.2.3",
-      "backup restore restic memory time-machine": "1.0.0",
-      "security": "3.2.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 1089,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
-      "stars": 1,
-      "versions": 21
-    },
-    "createdAt": 1772754574722,
-    "updatedAt": 1780344697115,
-    "latestVersion": {
-      "version": "3.2.3",
-      "createdAt": 1780344697115,
-      "changelog": "Scheduler cadence hotfix: systemd installs now preserve simple custom cron schedules like 0 */2 * * * as matching OnCalendar values, and unsupported cron expressions fall back to cron.d instead of hourly. Docs also clarify OpenClaw slug-only install.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "investorclaw",
-    "displayName": "Ic Engine",
-    "summary": "Deterministic-first portfolio analyzer — holdings, performance, Sharpe + Sortino, FRED yield curves, bond duration, sector breakdowns, scenario rebalancing —...",
+    "slug": "ai-xifu-caopan-public",
+    "displayName": "Ai Xifu Caopan",
+    "summary": "提供基于概率论与博弈论的智能推理，自动生成股票、期货、基金的专业交易方案及大盘风险预警。QQ交流群：600582898",
     "tags": {
       "latest": "4.6.0",
-      "analytics": "4.1.35",
-      "arm64": "4.1.36",
-      "dashboard": "4.1.36",
-      "deterministic": "4.1.22",
-      "docs": "4.1.33",
-      "eod": "4.1.32",
-      "finance": "4.1.33",
-      "mcp": "4.1.22",
-      "multi-arch": "4.1.36",
-      "portfolio": "4.1.36",
-      "reference": "4.1.29",
-      "security": "4.1.31",
-      "stonkmode": "4.1.28",
-      "v4.1.x": "4.1.36",
-      "zeroclaw-audit-clean": "4.1.36"
+      "analysis": "3.0.0",
+      "bilingual": "4.0.0",
+      "finance": "3.0.0",
+      "futures": "3.0.0",
+      "global": "4.0.0",
+      "investment": "3.0.0",
+      "stock": "3.0.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 644,
+      "downloads": 456,
       "installsAllTime": 0,
       "installsCurrent": 0,
-      "stars": 0,
-      "versions": 26
+      "stars": 1,
+      "versions": 12
     },
-    "createdAt": 1777918656623,
-    "updatedAt": 1780344606059,
+    "createdAt": 1778387899508,
+    "updatedAt": 1780372540712,
     "latestVersion": {
       "version": "4.6.0",
-      "createdAt": 1780344606059,
-      "changelog": "v4.6.0: consolidated runtime into the ic-engine repo (one repo, one build — engine source + Dockerfile + bridge + compose together). Unified skill + container version at 4.6.0. Fixed the install path: MNEMOS is now optional (was hard-blocking compose-up on a mnemos service that the default compose does not ship). Hermes users install the skill manually, not via ClawHub.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "low-token",
-    "displayName": "Low Token Usage",
-    "summary": "Extreme optimization for minimal token usage. Eliminates all narration, fluff, and process descriptors. Deliver results as raw data or compact summaries.",
-    "tags": {
-      "latest": "2.1.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 668,
-      "installsAllTime": 3,
-      "installsCurrent": 2,
-      "stars": 0,
-      "versions": 3
-    },
-    "createdAt": 1773336310266,
-    "updatedAt": 1780343872277,
-    "latestVersion": {
-      "version": "2.1.0",
-      "createdAt": 1780343872277,
-      "changelog": "- Transitioned from static token-saving rules to adaptive three-level (LOW, MEDIUM, EXTREME) token conservation modes.\n- Clarified activation and escalation criteria based on user input or system state.\n- Updated behavior examples for each mode.\n- Added integration details with related skills and persistent mode status rules.\n- Removed markdown decorations and unnecessary confirmations in higher conservation modes.\n- Deleted obsolete documentation file (skill-card.md).",
+      "createdAt": 1780372540712,
+      "changelog": "📖 说明书简化：教人怎么操盘，不写核心逻辑\n- README.md 精简为'菜谱式'使用手册：示例→代码格式→方案类型→准备工作\n- SKILL.md 精简为'一句话使用'风格：你说什么→我出什么\n- CONFIG_GUIDE.md 去掉底层逻辑说明，保留使用指引\n- 核心目标：用户一看就知道怎么出方案，不需要了解内部原理",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "haqq-workbench",
-    "displayName": "Haqq Workbench",
-    "summary": "Unified workflow coordinating Haqq skills to create, verify, and publish Islamic and ethical content with prioritized double-gate verification for accuracy a...",
+    "slug": "thunder-core",
+    "displayName": "Thunder Core",
+    "summary": "Windows Thunder download client via COM interface — add, commit, cancel, and manage download tasks programmatically.",
     "tags": {
-      "latest": "1.0.0"
+      "latest": "1.0.1",
+      "automation": "1.0.0",
+      "com": "1.0.0",
+      "download": "1.0.0",
+      "thunder": "1.0.0",
+      "windows": "1.0.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 36,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780343711673,
-    "updatedAt": 1780343711673,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780343711673,
-      "changelog": "Master orchestration skill: coordinates all Haqq skills (hadith-verifier, corruption-burner, haqq-ethics, fact-check, verify-claims, web-researcher, selective-memory, ai-ethics, moral-compass, justice-seed, social-media-scheduler) into unified workflows. Includes skill-map reference and orchestrator script.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "evite-mcp",
-    "displayName": "Tmp.HH1ibdDLKj",
-    "summary": "This skill should be used when the user asks about Evite events or invitations. Triggers on phrases like \"check Evite\", \"my Evite events\", \"who RSVP'd\", \"Evi...",
-    "tags": {
-      "latest": "0.2.1"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 80,
+      "downloads": 130,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
       "versions": 2
     },
-    "createdAt": 1780335706343,
-    "updatedAt": 1780343149866,
+    "createdAt": 1779801219899,
+    "updatedAt": 1780372290094,
     "latestVersion": {
-      "version": "0.2.1",
-      "createdAt": 1780343149866,
-      "changelog": "- Removed the file skill-card.md.\n- No changes to functionality or usage; documentation remains the same.",
+      "version": "1.0.1",
+      "createdAt": 1780372290094,
+      "changelog": "- Added B站学习 (Bilibili learning) references and keywords to the documentation.\n- Included sample user trigger phrases and scenarios in SKILL.md.\n- Removed file: skill-card.md.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "fn-fpk",
+    "displayName": "fn-fpk",
+    "summary": "飞牛NAS (fnOS) FPK 应用打包开发技能。使用此技能开发和打包飞牛NAS第三方应用（.fpk），包括：Native 应用（Node.js/Python/Java/Go/Shell 等）和 Docker 应用。涵盖整个开发周期：开发环境准备、fnpack 创建项目、manifest 配置、权限/资源配置、...",
+    "tags": {
+      "app-dev": "1.2.0",
+      "flynasa": "1.2.0",
+      "fnos": "1.2.0",
+      "fpks": "1.2.0",
+      "latest": "1.2.0",
+      "nas": "1.2.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 154,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 2
+    },
+    "createdAt": 1779731302541,
+    "updatedAt": 1780372085691,
+    "latestVersion": {
+      "version": "1.2.0",
+      "createdAt": 1780372085691,
+      "changelog": "Major update based on developer.fnnas.com official docs (2026-06-02). New sections: dev env setup, manifest field reference (platform V1.1.8+/install_type/ctl_stop/changelog), app entry guide (desktop icons/file context menu/CGI/env var support), CGI script with path security, error handling via TRIM_TEMP_LOGFILE+Dialog, runtime env (Python/Node.js/Java+PATH), middleware services (Redis/MinIO/RabbitMQ/MariaDB), app dependency (ordering/nested), unified gateway (gatewayPrefix+gatewaySocket)+WebSocket, auth (X-Trim-* headers), Docker app build (compose env subst), Native app full workflow, icon spec, fnpack validation table, changelog history, CLI cheat sheet.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "astro-natal-chart",
-    "displayName": "Astro Natal Chart",
-    "summary": "Calculates and interprets the natal chart by date, time and place of birth with the positions of planets, houses and main aspects. Windows OS 10/11 Required.",
+    "slug": "feihuo",
+    "displayName": "飞伙",
+    "summary": "使用 feihuo 命令行工具配置 FEIHUO_API_KEY，并搜索航班、酒店、火车票、签证、欧铁通票或欧铁点对点车次。适用于用户要查询机票、比较航班、搜索酒店、查询火车票、查询签证、查询欧铁通票、查询欧洲火车点对点、查看航班/酒店/火车票/签证/欧铁搜索参数、执行 feihuo flight-search、...",
     "tags": {
-      "latest": "4.1.0",
-      "astrology": "2.1.0",
-      "natal-chart": "2.1.0",
-      "swiss-ephemeris": "2.1.0",
-      "windows": "2.1.0"
+      "latest": "1.2.0-beta3"
     },
     "stats": {
       "comments": 0,
-      "downloads": 567,
+      "downloads": 582,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 19
+      "versions": 9
     },
-    "createdAt": 1779790761645,
-    "updatedAt": 1780343010450,
+    "createdAt": 1778748716872,
+    "updatedAt": 1780372025118,
     "latestVersion": {
-      "version": "4.1.0",
-      "createdAt": 1780343010450,
-      "changelog": "v4.1.0: Bilingual RU/EN interpretation, extended house descriptions, aspect interpretation block, output filename includes person name (e.g. Anna_full_natal_en.png)",
+      "version": "1.2.0-beta3",
+      "createdAt": 1780372025118,
+      "changelog": "Version 1.2.0-beta3\n\n- 新增欧铁通票和点对点（P2P）车次查询命令，支持 `eur-rail-pass-search`, `eur-rail-p2p-resolve-local`, 和 `eur-rail-p2p-search`\n- 更新匹配意图和命令模式，支持欧铁相关搜索\n- 丰富了火车票座位类型、排序方式、欧铁地点类型等参数说明\n- 明确预订、导流及无结果时的引导规则，严禁推荐第三方OTA\n- 结果展示要求包含欧铁通票、欧铁车次解析与查询结果\n- 文档细节优化，删除 skill-card.md 增加功能文档",
       "license": null
     },
-    "metadata": null
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
   },
   {
-    "slug": "ai-fullstack-project-scaffold",
-    "displayName": "ai-fullstack-project-scaffold",
-    "summary": "AI 全栈项目脚手架工厂 — 从需求描述到可运行项目，一键生成代码框架、Makefile、任务追踪和 Docker 部署配置",
+    "slug": "saas-founder-content-writer",
+    "displayName": "Saas Founder Content Writer",
+    "summary": "Use this skill when a SaaS founder, indie hacker, or product builder wants to turn product updates, user pain points, technical lessons, launches, or founder...",
     "tags": {
-      "latest": "1.0.0"
+      "latest": "0.6.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 42,
+      "downloads": 0,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
       "versions": 1
     },
-    "createdAt": 1780342943231,
-    "updatedAt": 1780342943231,
+    "createdAt": 1780371989445,
+    "updatedAt": 1780371989445,
+    "latestVersion": {
+      "version": "0.6.0",
+      "createdAt": 1780371989445,
+      "changelog": "- Initial release of `saas-founder-content-writer`: a self-contained skill that turns founder product updates, user pain points, technical lessons, and observations into high-signal posts for X, Reddit, and LinkedIn.\n- Four-phase workflow (Intake → Choose the angle → Draft → Review) with a portable product profile, 8 content angles, six writing principles with before/after examples, per-platform rules (X / Reddit / LinkedIn), a review rubric, and safety boundaries against fabricated claims.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "ai-redaction",
+    "displayName": "ai-redaction",
+    "summary": "一款专为个人用户设计的智能文件脱敏工具，强调纯个人独立模式。支持通过自然语言指令，脱敏用户上传的文件，对 PDF、Word、图片等多种格式的文件进行快速、精准、安全的隐私信息处理。处理完成后返回查询链接，可查看处理进度和下载结果",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780371971545,
+    "updatedAt": 1780371971545,
     "latestVersion": {
       "version": "1.0.0",
-      "createdAt": 1780342943231,
-      "changelog": "ai-fullstack-project-scaffold v1.0.0 initial release:\n\n- Generate fullstack project scaffolding from a natural language requirement description.\n- One-command output: code framework, Makefile, Docker production configs, and dev tasks.\n- Broad tech stack support: Node.js, Python, Go, Java with multiple database/back-end options.\n- Structured, modular output for fast, standardized development and deployment.\n- Requires combo with kimi-cli, makefile-generator, dev-task, and docker-expert skills.\n- Flexible for both new project initialization and incremental tooling/bootstrap for existing repos.",
+      "createdAt": 1780371971545,
+      "changelog": "Initial release of ai-redaction (v1.0.0):\n\n- Launches a personal-use AI redaction tool for secure file de-identification.\n- Supports natural language instructions for redacting a wide variety of file formats: PDF, Word, images, and more.\n- Guides users step-by-step: API key authentication, file upload, redaction instruction confirmation, and result delivery.\n- Prioritizes data security (end-to-end encryption, no third-party LLM), user confirmation, and clear error handling.\n- Returns a secure query link for tracking redaction progress and downloading the processed file.",
       "license": null
     },
     "metadata": {
@@ -356,172 +331,28 @@
     }
   },
   {
-    "slug": "ai-agentic-video-editor",
-    "displayName": "Ai Agentic Video Editor",
-    "summary": "AI agentic video editor. An autonomous AI editor for video that decomposes natural-language prompts into a planned, verified, executed sequence of edits — vi...",
+    "slug": "agentcad",
+    "displayName": "Agentcad Skill",
+    "summary": "CAD tool for AI agents. Use when the user asks you to design, model, or build a 3D object. agentcad executes CadQuery Python scripts and produces STEP files,...",
     "tags": {
-      "ai-video-editor": "1.0.21",
-      "audio-cleanup": "1.0.21",
-      "brand-kit": "1.0.21",
-      "captions": "1.0.21",
-      "chroma-key": "1.0.21",
-      "export": "1.0.21",
-      "latest": "1.0.21",
-      "motion-graphics": "1.0.21",
-      "multi-cam": "1.0.21",
-      "openclaw-skill": "1.0.21",
-      "privacy-redaction": "1.0.21",
-      "thumbnail": "1.0.21",
-      "vertical-video": "1.0.21",
-      "video": "1.0.21",
-      "viral-clips": "1.0.21",
-      "agentic-video-editor": "1.0.17",
-      "ai-agentic-editor": "1.0.17",
-      "ai-agentic-video-editor": "1.0.17",
-      "ai-dubbing": "1.0.17",
-      "autonomous-video-editing": "1.0.17",
-      "background-removal": "1.0.17",
-      "background-replacement": "1.0.17",
-      "caption-translation": "1.0.17",
-      "markers": "1.0.17",
-      "motion-tracking": "1.0.17",
-      "multilingual-video": "1.0.17",
-      "natural-language-video-editing": "1.0.17",
-      "object-removal": "1.0.17",
-      "ocr": "1.0.17",
-      "profanity-cleanup": "1.0.17",
-      "slideshow": "1.0.17",
-      "stabilization": "1.0.17",
-      "title-cards": "1.0.17",
-      "transitions": "1.0.17"
+      "cad": "0.2.2",
+      "latest": "0.2.2",
+      "stable": "0.2.2"
     },
     "stats": {
       "comments": 0,
-      "downloads": 548,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 22
-    },
-    "createdAt": 1778993274610,
-    "updatedAt": 1780341698153,
-    "latestVersion": {
-      "version": "1.0.21",
-      "createdAt": 1780341698153,
-      "changelog": "fix: correct signup URL (studio.livecore.ai), jobId format (digits, not task_-prefixed), and max-length (3h) in docs.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "levea-ai-video-editor",
-    "displayName": "Skill Bundle",
-    "summary": "Agentic AI video editor — an autonomous agent that plans and executes natural-language video edits end-to-end. Viral clips, auto captions, vertical 9:16 refr...",
-    "tags": {
-      "ai-video-editor": "1.0.23",
-      "audio-cleanup": "1.0.23",
-      "brand-kit": "1.0.23",
-      "captions": "1.0.23",
-      "chroma-key": "1.0.23",
-      "export": "1.0.23",
-      "latest": "1.0.23",
-      "motion-graphics": "1.0.23",
-      "multi-cam": "1.0.23",
-      "openclaw-skill": "1.0.23",
-      "privacy-redaction": "1.0.23",
-      "thumbnail": "1.0.23",
-      "vertical-video": "1.0.23",
-      "video": "1.0.23",
-      "viral-clips": "1.0.23",
-      "agentic-video-editor": "1.0.19",
-      "ai-agentic-editor": "1.0.19",
-      "ai-dubbing": "1.0.19",
-      "autonomous-video-editing": "1.0.19",
-      "background-removal": "1.0.19",
-      "background-replacement": "1.0.19",
-      "caption-translation": "1.0.19",
-      "markers": "1.0.19",
-      "motion-tracking": "1.0.19",
-      "multilingual-video": "1.0.19",
-      "natural-language-video-editing": "1.0.19",
-      "object-removal": "1.0.19",
-      "ocr": "1.0.19",
-      "profanity-cleanup": "1.0.19",
-      "slideshow": "1.0.19",
-      "stabilization": "1.0.19",
-      "title-cards": "1.0.19",
-      "transitions": "1.0.19"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 575,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 23
-    },
-    "createdAt": 1778992399451,
-    "updatedAt": 1780341694532,
-    "latestVersion": {
-      "version": "1.0.23",
-      "createdAt": 1780341694532,
-      "changelog": "fix: correct signup URL (studio.livecore.ai), jobId format (digits, not task_-prefixed), and max-length (3h) in docs.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "ling-mem",
-    "displayName": "Shared Memory",
-    "summary": "Cross-host durable memory — same `ling-mem` daemon and store in Claude Code, Codex, and OpenClaw. Three-tier model (core + long-term + episodic staging) of w...",
-    "tags": {
-      "latest": "0.7.4"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 410,
+      "downloads": 470,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 1,
-      "versions": 10
+      "versions": 5
     },
-    "createdAt": 1778094809478,
-    "updatedAt": 1780340296174,
+    "createdAt": 1776742345108,
+    "updatedAt": 1780371948991,
     "latestVersion": {
-      "version": "0.7.4",
-      "createdAt": 1780340296174,
-      "changelog": "0.7.4 (skill doc patch over binary 0.7.2): add a first-use ling-mem binary bootstrap gate to SKILL.md (command -v ling-mem || install.sh) so skill-only installs (ClawHub/skills.sh/manual) self-install the binary on first use. No-op when already present. Binary unchanged.",
-      "license": null
-    },
-    "metadata": {
-      "os": [
-        "darwin",
-        "linux"
-      ],
-      "systems": null
-    }
-  },
-  {
-    "slug": "opentask",
-    "displayName": "Agent to Agent Task Platform - OpenTask.ai",
-    "summary": "Agent-to-agent marketplace MVP. Agents publish structured capabilities, post tasks, send targeted proposals, bid, contract, submit deliverables, route crypto...",
-    "tags": {
-      "latest": "2.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 1991,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
-      "stars": 3,
-      "versions": 6
-    },
-    "createdAt": 1770411768095,
-    "updatedAt": 1780339696535,
-    "latestVersion": {
-      "version": "2.0.0",
-      "createdAt": 1780339696535,
-      "changelog": "Update OpenTask agent skill for router-verified crypto payments, targeted proposals, capability claims, contract messaging, and current agent API workflows.",
+      "version": "0.2.2",
+      "createdAt": 1780371948991,
+      "changelog": "v0.2.2 — open-source package parity",
       "license": null
     },
     "metadata": {
@@ -530,226 +361,347 @@
     }
   },
   {
-    "slug": "gogcli-mcp",
-    "displayName": "Tmp.ELuTmwdpQQ",
-    "summary": "Use when the user asks to interact with Google Workspace services. Triggers for requests involving Google Sheets, Docs, Gmail, Calendar, Drive, Tasks, or Con...",
+    "slug": "model-center",
+    "displayName": "Model Center",
+    "summary": "Unified interface to 42+ NVIDIA NIM API models — LLM chat, vision, embeddings, image generation, with price comparison and model recommendation.",
     "tags": {
-      "latest": "2.4.0"
+      "latest": "1.0.2"
     },
     "stats": {
       "comments": 0,
-      "downloads": 1165,
+      "downloads": 144,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 9
+      "versions": 3
     },
-    "createdAt": 1778783192352,
-    "updatedAt": 1780339295273,
+    "createdAt": 1779798140980,
+    "updatedAt": 1780371912802,
     "latestVersion": {
-      "version": "2.4.0",
-      "createdAt": 1780339295273,
-      "changelog": "- Removed the file: skill-card.md\n- No changes to functionality or setup.",
+      "version": "1.0.2",
+      "createdAt": 1780371912802,
+      "changelog": "model-center 1.0.2\n\n- Updated documentation (SKILL.md) with additional usage scenarios, study references, and Bilibili learning resources.\n- Removed the redundant file skill-card.md.\n- Minor changes to model_center.py (details not specified in diff).",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "kl8-data",
+    "displayName": "Kl8 Data",
+    "summary": "Query China Happy 8 (KL8) lottery historical data — latest draw, specific issue, recent draws, and number frequency analysis.",
+    "tags": {
+      "latest": "1.0.1",
+      "china": "1.0.0",
+      "data": "1.0.0",
+      "kl8": "1.0.0",
+      "lottery": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 135,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1779801220222,
+    "updatedAt": 1780371764399,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1780371764399,
+      "changelog": "- Added B站学习、触发场景等新文档内容至 SKILL.md，丰富了学习资源和使用场景说明\n- skill-card.md 文件已移除\n- 主要功能及API接口保持不变",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "payroll-data-audit",
+    "displayName": "Payroll Data Audit",
+    "summary": "工资数据审核系统，基于确定性规则引擎 + Python 脚本执行。 全量对齐《工资审核标准流程 SOP》6 步流程。v6.2 新增总审核报告（Master Report）、 规则判定过程详解（judgment）、黄线排除逻辑完善。v6.2.1 新增编排指南：单节点原则。 Use when user asks to...",
+    "tags": {
+      "latest": "6.2.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 414,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 13
+    },
+    "createdAt": 1779360598253,
+    "updatedAt": 1780371667381,
+    "latestVersion": {
+      "version": "6.2.2",
+      "createdAt": 1780371667381,
+      "changelog": "v6.2.0: 新增总审核报告(Master Report)+规则判定过程详解(judgment)+黄线排除逻辑完善; v6.2.1: 修复rules.json路径+mask未定义bug+编排指南(单节点原则); v6.2.2: 修正_meta.json changelog和日期",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "gogcli-mcp-slides",
-    "displayName": "Tmp.BEW6XWBgsp",
-    "summary": "Use when the user asks to create, edit, read, or export Google Slides presentations. Triggers for requests involving slides, decks, presentations, speaker no...",
+    "slug": "hug-html",
+    "displayName": "hug-html",
+    "summary": "8种原子组件自由组合 + 3级约束, cell merging, two-level module system (base + composite), 7+ built-in templates, grid-aware visual editor, style presets, post-generation...",
     "tags": {
-      "latest": "2.4.0"
+      "latest": "3.0.4"
     },
     "stats": {
       "comments": 0,
-      "downloads": 1170,
+      "downloads": 328,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 9
+      "versions": 8
     },
-    "createdAt": 1778783186055,
-    "updatedAt": 1780339289220,
+    "createdAt": 1779960565440,
+    "updatedAt": 1780371458734,
     "latestVersion": {
-      "version": "2.4.0",
-      "createdAt": 1780339289220,
-      "changelog": "- Removed the skill-card.md file.\n- No changes to functionality or user-facing features.",
+      "version": "3.0.4",
+      "createdAt": 1780371458734,
+      "changelog": "hug-html v3.0.4\n\n- 新增架构设计文档 references/architecture.md，完善模块结构说明\n- 移除冗余 skill-card.md，精简文档结构\n- SKILL.md 文档标签(tags)补充，支持元字段同步（meta_field_sync: true）\n- 文档结构优化，增加 references/architecture.md 引用\n- 其他内容无功能性变更",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "aky-public-opinion",
+    "displayName": "Aky Public Opinion",
+    "summary": "Professional-grade Chinese social media sentiment analysis report writer for government and enterprise use. Generates structured public opinion analysis repo...",
+    "tags": {
+      "investigation": "1.1.0",
+      "latest": "1.1.0",
+      "public-opinion": "1.1.0",
+      "report": "1.1.0",
+      "risk-assessment": "1.1.0",
+      "sentiment-analysis": "1.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780371434460,
+    "updatedAt": 1780371434460,
+    "latestVersion": {
+      "version": "1.1.0",
+      "createdAt": 1780371434460,
+      "changelog": "Renamed from akywriting-report to aky-public-opinion. Same v1.1.0 content.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "gogcli-mcp-sheets",
-    "displayName": "Tmp.SLBXsDa7xN",
-    "summary": "Use when the user asks to read, write, format, or manage Google Sheets. Triggers for requests involving spreadsheet data, cell formatting, tab management, na...",
+    "slug": "skill-standardization",
+    "displayName": "skill-standardization",
+    "summary": "Skill 标准化规范引擎。支持 R-01~R-25 规范审查（audit/refactor/create 三模式），含权限扫描、数据目录合规检查、渐进式加载、更新日志渐进加载强制、_meta.json 字段规范性。R-07 增强：frontmatter trigger/trigger_negative 与正文一致性。",
     "tags": {
-      "latest": "2.4.0"
+      "latest": "2.58.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 1242,
+      "downloads": 1682,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 10
+      "versions": 60
     },
-    "createdAt": 1778581972704,
-    "updatedAt": 1780339283155,
+    "createdAt": 1779452610754,
+    "updatedAt": 1780371364185,
     "latestVersion": {
-      "version": "2.4.0",
-      "createdAt": 1780339283155,
-      "changelog": "- Removed the file skill-card.md.\n- No user-facing or functional changes to the skill itself.",
+      "version": "2.58.0",
+      "createdAt": 1780371364185,
+      "changelog": "- 移除 skill-card.md，精简项目文件结构。\n- SKILL.md 约束更新：明确更新后需用 audit --verify 达到 0 ERROR 0 WARN，exit(0) 方可提交，强化合规校验标准。\n- 其它内容未变，维持 R-01~R-25 规范、渐进式加载和多模式工作流。",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "interdisciplinary-care-plan-drafter",
+    "displayName": "Interdisciplinary Care Plan Drafter",
+    "summary": "Use this skill when a palliative care or hospice interdisciplinary team — including attending physicians, APRNs, RNs, social workers, or chaplains — needs to...",
+    "tags": {
+      "latest": "0.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780371361210,
+    "updatedAt": 1780371361210,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1780371361210,
+      "changelog": "Initial release. Interdisciplinary care plan drafter for hospice and palliative care teams covering goals-of-care documentation, comfort care plan, IDT role assignments, visit frequencies, and CMS CoP compliance.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "gogcli-mcp-gmail",
-    "displayName": "Tmp.ES6Ax5oBPx",
-    "summary": "Use when the user asks to read, organize, draft, forward, autoreply, or otherwise work with Gmail in depth. Triggers for requests involving threads, labels,...",
+    "slug": "comprehensive-eye-exam-report",
+    "displayName": "Comprehensive Eye Exam Report",
+    "summary": "Use this skill when a Doctor of Optometry (OD), optometric resident, or clinical documentation specialist needs to draft a comprehensive eye exam report from...",
     "tags": {
-      "latest": "2.4.0"
+      "latest": "0.1.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 1220,
+      "downloads": 0,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 10
+      "versions": 1
     },
-    "createdAt": 1778581964928,
-    "updatedAt": 1780339276909,
+    "createdAt": 1780371355702,
+    "updatedAt": 1780371355702,
     "latestVersion": {
-      "version": "2.4.0",
-      "createdAt": 1780339276909,
-      "changelog": "- Removed the skill-card.md file.",
+      "version": "0.1.0",
+      "createdAt": 1780371355702,
+      "changelog": "Initial release. Comprehensive eye exam report drafter for Doctors of Optometry covering visual acuity, refraction, binocular vision, anterior/posterior segment, IOP, AOA-aligned diagnoses, and treatment plan.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "gogcli-mcp-drive",
-    "displayName": "Tmp.D73hqbHQcR",
-    "summary": "Use when the user asks to browse, upload, download, share, or manage Google Drive files and folders. Triggers for requests involving Drive uploads/downloads,...",
+    "slug": "failure-analysis-report",
+    "displayName": "Failure Analysis Report",
+    "summary": "Use this skill when a licensed forensic engineer (PE/SE/ME/EE), expert witness, or engineering consultant needs to draft a failure analysis report for an ins...",
     "tags": {
-      "latest": "2.4.0"
+      "latest": "0.1.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 1219,
+      "downloads": 0,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 10
+      "versions": 1
     },
-    "createdAt": 1778581960063,
-    "updatedAt": 1780339271621,
+    "createdAt": 1780371349479,
+    "updatedAt": 1780371349479,
     "latestVersion": {
-      "version": "2.4.0",
-      "createdAt": 1780339271621,
-      "changelog": "- Removed the file: skill-card.md\n- No changes to features or functionality.",
+      "version": "0.1.0",
+      "createdAt": 1780371349479,
+      "changelog": "Initial release. Failure analysis report drafter for forensic engineers covering scene documentation, physical evidence, applicable standards, failure mode screening, root cause determination, and expert opinion.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "gogcli-mcp-docs",
-    "displayName": "Tmp.7Ajx8XfqDs",
-    "summary": "Use when the user asks to read, write, edit, export, or comment on Google Docs. Triggers for requests involving document editing, inserting text, exporting a...",
+    "slug": "neuropsych-evaluation-report",
+    "displayName": "Neuropsych Evaluation Report",
+    "summary": "Use this skill when a licensed neuropsychologist (Ph.D. or Psy.D.), post-doctoral fellow, or clinical neuropsychology trainee needs to draft a comprehensive...",
     "tags": {
-      "latest": "2.4.0"
+      "latest": "0.1.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 1187,
+      "downloads": 0,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 10
+      "versions": 1
     },
-    "createdAt": 1778581955431,
-    "updatedAt": 1780339265540,
+    "createdAt": 1780371340353,
+    "updatedAt": 1780371340353,
     "latestVersion": {
-      "version": "2.4.0",
-      "createdAt": 1780339265540,
-      "changelog": "- Removed the file: skill-card.md.\n- No changes to the core functionality or documentation beyond the file removal.",
+      "version": "0.1.0",
+      "createdAt": 1780371340353,
+      "changelog": "Initial release. Comprehensive neuropsychological evaluation report drafter covering background history, behavioral observations, performance validity testing, standardized test battery with classification bands, domain-by-domain interpretation, diagnostic formulation, and functional recommendations aligned to APA and APPCN standards.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "gogcli-mcp-contacts",
-    "displayName": "Tmp.XW2iZZ5pkH",
-    "summary": "Use when the user asks to look up, search, or manage Google Contacts and the broader People API (Workspace directory). Triggers for contact lookups by name/e...",
+    "slug": "govcon-proposal-response",
+    "displayName": "Govcon Proposal Response",
+    "summary": "Use this skill when a capture manager, proposal writer, BD lead, or contracts professional at a U.S. federal contractor needs to draft a compliant proposal r...",
     "tags": {
-      "latest": "2.4.0"
+      "latest": "0.1.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 1156,
+      "downloads": 0,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 9
+      "versions": 1
     },
-    "createdAt": 1778783160243,
-    "updatedAt": 1780339260609,
+    "createdAt": 1780371334938,
+    "updatedAt": 1780371334938,
     "latestVersion": {
-      "version": "2.4.0",
-      "createdAt": 1780339260609,
-      "changelog": "- Removed the file skill-card.md.\n- No other changes to functionality or documentation.",
+      "version": "0.1.0",
+      "createdAt": 1780371334938,
+      "changelog": "Initial release. Federal proposal response drafter covering compliance matrix construction, technical approach, past performance narratives, management section, and final compliance check for U.S. government RFP/RFQ/BAA solicitations.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "gogcli-mcp-classroom",
-    "displayName": "Tmp.Jnf9iMCRlT",
-    "summary": "Use when the user asks to manage Google Classroom — create or update courses, enroll students and teachers, post announcements, create assignments, view subm...",
+    "slug": "continuous-learner",
+    "displayName": "Continuous Learner",
+    "summary": "持续学习编排器 — 全自动闭环：洞察采集→知识入库→趋势分析→技能生成→报告输出",
     "tags": {
-      "latest": "2.4.0"
+      "latest": "1.0.1"
     },
     "stats": {
       "comments": 0,
-      "downloads": 1232,
+      "downloads": 66,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 10
+      "versions": 2
     },
-    "createdAt": 1778581950371,
-    "updatedAt": 1780339254752,
+    "createdAt": 1780298127306,
+    "updatedAt": 1780371332760,
     "latestVersion": {
-      "version": "2.4.0",
-      "createdAt": 1780339254752,
-      "changelog": "- Removed the skill-card.md file from the project.\n- No changes to core functionality or documented tools.",
+      "version": "1.0.1",
+      "createdAt": 1780371332760,
+      "changelog": "- New command syntax introduced: run(\"run\"), run(\"status\"), and run(\"daemon\") to control pipeline and daemon mode.\n- Aggregated and restructured B站学习 and source material listings.\n- Updated main script reference and removed deprecated invocation commands.\n- \"skill-card.md\" file removed; replaced with \"continuous_learner.py\" as primary implementation.\n- SKILL.md simplified and content reorganized for clarity.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "gogcli-mcp-calendar",
-    "displayName": "Tmp.DmgKXgIGZd",
-    "summary": "Use when the user asks to manage Google Calendar events or Google Meet spaces. Triggers for scheduling, listing events, creating/updating/deleting events, re...",
+    "slug": "genetic-counseling-session-note",
+    "displayName": "Genetic Counseling Session Note",
+    "summary": "Use this skill when a board-certified genetic counselor (CGC, MS), CGC candidate, or supervising clinical geneticist needs to draft a pre-test or post-test g...",
     "tags": {
-      "latest": "2.4.0"
+      "latest": "0.1.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 1127,
+      "downloads": 0,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 9
+      "versions": 1
     },
-    "createdAt": 1778783148802,
-    "updatedAt": 1780339250369,
+    "createdAt": 1780371329537,
+    "updatedAt": 1780371329537,
     "latestVersion": {
-      "version": "2.4.0",
-      "createdAt": 1780339250369,
-      "changelog": "- Removed the sample file skill-card.md.\n- No changes to features or functionality.",
+      "version": "0.1.0",
+      "createdAt": 1780371329537,
+      "changelog": "Initial release. Pre-test and post-test genetic counseling session note drafter with pedigree narrative, risk quantification, informed consent, result disclosure, and psychosocial assessment aligned to NSGC standards.",
       "license": null
     },
     "metadata": null
@@ -763,9 +715,9 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 83960,
-      "installsAllTime": 2770,
-      "installsCurrent": 2643,
+      "downloads": 83977,
+      "installsAllTime": 2771,
+      "installsCurrent": 2644,
       "stars": 55,
       "versions": 1
     },
@@ -791,10 +743,10 @@
     },
     "stats": {
       "comments": 36,
-      "downloads": 182969,
+      "downloads": 183053,
       "installsAllTime": 3591,
       "installsCurrent": 3461,
-      "stars": 908,
+      "stars": 910,
       "versions": 1
     },
     "createdAt": 1767545346060,
@@ -819,7 +771,7 @@
     },
     "stats": {
       "comments": 7,
-      "downloads": 186867,
+      "downloads": 186957,
       "installsAllTime": 4379,
       "installsCurrent": 4247,
       "stars": 620,
@@ -844,7 +796,7 @@
     },
     "stats": {
       "comments": 6,
-      "downloads": 158242,
+      "downloads": 158300,
       "installsAllTime": 3794,
       "installsCurrent": 3670,
       "stars": 406,
@@ -872,7 +824,7 @@
     },
     "stats": {
       "comments": 2,
-      "downloads": 82985,
+      "downloads": 83015,
       "installsAllTime": 2081,
       "installsCurrent": 2007,
       "stars": 315,
@@ -900,7 +852,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 89233,
+      "downloads": 89285,
       "installsAllTime": 2418,
       "installsCurrent": 2344,
       "stars": 296,
@@ -925,9 +877,9 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 90939,
-      "installsAllTime": 2372,
-      "installsCurrent": 2306,
+      "downloads": 90977,
+      "installsAllTime": 2373,
+      "installsCurrent": 2307,
       "stars": 257,
       "versions": 1
     },
@@ -953,7 +905,7 @@
     },
     "stats": {
       "comments": 9,
-      "downloads": 100671,
+      "downloads": 100732,
       "installsAllTime": 2528,
       "installsCurrent": 2438,
       "stars": 411,
@@ -981,7 +933,7 @@
     },
     "stats": {
       "comments": 5,
-      "downloads": 33819,
+      "downloads": 33828,
       "installsAllTime": 1444,
       "installsCurrent": 1399,
       "stars": 54,
@@ -1009,7 +961,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 66123,
+      "downloads": 66144,
       "installsAllTime": 2010,
       "installsCurrent": 1945,
       "stars": 191,
@@ -1037,7 +989,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 101461,
+      "downloads": 101498,
       "installsAllTime": 1856,
       "installsCurrent": 1794,
       "stars": 395,
@@ -1062,7 +1014,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 37454,
+      "downloads": 37464,
       "installsAllTime": 1565,
       "installsCurrent": 1517,
       "stars": 112,
@@ -1092,7 +1044,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 51224,
+      "downloads": 51238,
       "installsAllTime": 1577,
       "installsCurrent": 1528,
       "stars": 123,
@@ -1120,7 +1072,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 42104,
+      "downloads": 42119,
       "installsAllTime": 1481,
       "installsCurrent": 1426,
       "stars": 69,
@@ -1148,7 +1100,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 110954,
+      "downloads": 111001,
       "installsAllTime": 2561,
       "installsCurrent": 2485,
       "stars": 254,
@@ -1176,7 +1128,7 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 40417,
+      "downloads": 40444,
       "installsAllTime": 1423,
       "installsCurrent": 1382,
       "stars": 29,
@@ -1204,7 +1156,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 44811,
+      "downloads": 44827,
       "installsAllTime": 1522,
       "installsCurrent": 1482,
       "stars": 68,
@@ -1232,7 +1184,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 26386,
+      "downloads": 26396,
       "installsAllTime": 1251,
       "installsCurrent": 1212,
       "stars": 26,
@@ -1260,7 +1212,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 22242,
+      "downloads": 22249,
       "installsAllTime": 1243,
       "installsCurrent": 1212,
       "stars": 30,
@@ -1288,7 +1240,7 @@
     },
     "stats": {
       "comments": 12,
-      "downloads": 46911,
+      "downloads": 46927,
       "installsAllTime": 1419,
       "installsCurrent": 1379,
       "stars": 156,
@@ -1313,7 +1265,7 @@
     },
     "stats": {
       "comments": 4,
-      "downloads": 29635,
+      "downloads": 29643,
       "installsAllTime": 1323,
       "installsCurrent": 1285,
       "stars": 81,
@@ -1343,7 +1295,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 24095,
+      "downloads": 24104,
       "installsAllTime": 1115,
       "installsCurrent": 1086,
       "stars": 35,
@@ -1368,7 +1320,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 28493,
+      "downloads": 28502,
       "installsAllTime": 1390,
       "installsCurrent": 1343,
       "stars": 43,
@@ -1399,7 +1351,7 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 18108,
+      "downloads": 18112,
       "installsAllTime": 1206,
       "installsCurrent": 1170,
       "stars": 7,
@@ -1427,7 +1379,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 25375,
+      "downloads": 25378,
       "installsAllTime": 1175,
       "installsCurrent": 1139,
       "stars": 51,
