@@ -1,0 +1,354 @@
+{
+  "date": "2026-06-03",
+  "total": 29,
+  "vendors": [
+    "openai",
+    "anthropic",
+    "mistral",
+    "alibaba",
+    "google",
+    "apple",
+    "amazon",
+    "other"
+  ],
+  "models": {
+    "openai": {
+      "displayName": "OpenAI/GPT",
+      "icon": "🔬",
+      "items": [
+        {
+          "uid": "ai_252d0d09",
+          "title": "OpenAI 前沿模型和 Codex 正式登陆 AWS",
+          "content": "OpenAI 宣布其前沿模型和 Codex 编程助手通过 Amazon Bedrock 在 AWS 上正式可用，覆盖 Commercial 和 GovCloud 区域。这意味着数百万 AWS 客户无需切换平台即可用上 OpenAI 模型，消除了企业在采购、安全审核和生产集成方面的核心障碍。Codex 目前每周有超过 500 万用户，现在可以无缝集成到 AWS 现有的安全合规和治理框架中。此外，OpenAI 的 Daybreak 网络安全产品未来也将通过 AWS 提供给企业安全团队。",
+          "quote": "OpenAI 上 AWS ≈ AWS 客户终于可以不用偷偷把代码贴到 ChatGPT 里了。",
+          "source": "OpenAI",
+          "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/",
+          "published": "2026-06-03",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_4ed585bc",
+          "title": "MiniMax M3 开源发布：性能暴打 GPT-5.5，价格只要十分之一",
+          "content": "中国 AI 初创公司 MiniMax 发布 M3 大模型，在 SWE-Bench Pro 上达到 59.0% 的自主智能体得分，超越 GPT-5.5 和 Gemini 3.1 Pro。采用自研 MiniMax Sparse Attention (MSA) 技术，支持 100 万 token 上下文窗口，原生多模态架构从零开始训练而非拼接视觉模型。定价仅为 $0.3/$1.20 每百万 token（输入/输出），是 GPT-5.5 的 1/10。更炸裂的是：MiniMax 计划在 10 天内以 Apache 开源许可证发布完整权重，企业可免费下载自定义。",
+          "quote": "开源模型用着 1/10 的预算暴打闭源巨头的时代，比所有人预想的来得都快。",
+          "source": "VentureBeat",
+          "url": "https://venturebeat.com/technology/minimax-m3-debuts-eclipsing-gpt-5-5-and-gemini-3-1-pro-on-key-benchmark-performance-for-just-5-10-of-the-cost",
+          "published": "2026-06-03",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_43c42ec0",
+          "title": "佛罗里达州起诉 OpenAI：指控 ChatGPT 导致自伤和成瘾",
+          "content": "佛罗里达州总检察长 James Uthmeier 起诉 OpenAI 和 Sam Altman，指控其在明知 ChatGPT 使用可能导致「自伤、认知衰退和行为成瘾」的情况下仍推广产品。该州正在寻求罚款和禁令，而非刑事指控，但对 OpenAI 的刑事调查仍在进行中。这是美国地方政府针对 AI 公司提起的最严厉诉讼之一，标志着 AI 安全监管从政策讨论进入法律行动阶段。",
+          "quote": "当年告烟草公司用了 50 年，告社交媒体用了 20 年，告 AI 公司只用了 2 年。",
+          "source": "The Verge",
+          "url": "https://www.theverge.com/policy/909557/openai-florida-investigation",
+          "published": "2026-06-03",
+          "direction": "政策/合规"
+        },
+        {
+          "uid": "ai_2474b48c",
+          "title": "微软正在打造 AI「超级应用」：整合 Copilot 全家桶",
+          "content": "据 Fortune 独家报道，微软正在打造一个整合 GitHub Copilot、Copilot 聊天、Copilot Cowork 和新 Agent 工作流能力「Autopilot」的超级应用，内部口号是「Delivering one Copilot」。项目由新上任的 Copilot 负责人 Jacob Andreou 主导，计划夏末前上线。当前 Copilot 面临严峻挑战：4.5 亿 M365 用户中仅不到 4.5% 购买 Copilot 付费功能，消费端 Copilot 聊天在用户活跃度上被 OpenAI 和 Google 甩开。与此同时微软本周正在举办 Build 2026 大会，预计将发布自有 AI 模型。",
+          "quote": "微软的 Copilot 加起来比变形金刚还能变，问题是用户只想用一个。",
+          "source": "Fortune",
+          "url": "https://fortune.com/2026/05/29/microsoft-working-on-super-app/",
+          "published": "2026-06-03",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_d66b6cad",
+          "title": "OpenAI 下线 ChatGPT Canvas 界面，GPT-5.5 不再支持",
+          "content": "OpenAI 宣布 ChatGPT 的 Canvas 侧边编辑界面将在 GPT-5.5 Instant 和 GPT-5.5 Thinking 中停止支持。Canvas 此前允许用户与 ChatGPT 并排编辑代码或文本。现有用户仍可通过遗留模型访问 Canvas，但「限时可用」。与此同时，OpenAI 还计划缩短 GPT-5.5 Instant 回复长度、减少「子弹头式」列表——大概他们也发现了用户受够了又臭又长的 AI 废话。",
+          "quote": "Canvas 没了，GPT-5.5 还要学会少说废话——OpenAI 终于听劝了。",
+          "source": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/897778/openai-chatgpt-codex-atlas-browser-superapp",
+          "published": "2026-06-03",
+          "direction": "行业动态"
+        },
+        {
+          "uid": "ai_47685eb6",
+          "title": "Microsoft Build 2026 开幕：Surface RTX Spark Dev Box 亮相",
+          "content": "Microsoft Build 2026 在旧金山开幕，CEO Satya Nadella 发表主旨演讲。会上发布了 Surface RTX Spark Dev Box，专为本地优先 AI 开发设计的设备。同时展示了搭载 NVIDIA 芯片的 Surface Laptop Ultra，被视为对标 MacBook Pro 的终极武器——NVIDIA 的 RTX Spark '超级芯片' 首次出现在 Windows 笔记本上，虽然时机有点尴尬。Build 大会上微软还预计发布自有 AI 模型，以减少对 OpenAI 的依赖。",
+          "quote": "微软造硬件、堆芯片、搞模型，Build 2026 就是要告诉所有人：我自己也能行。",
+          "source": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence",
+          "published": "2026-06-03",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_50158342",
+          "title": "GPT-5.5 Instant 将缩短回复、砍掉列表——OpenAI 在为自己减压",
+          "content": "OpenAI 宣布计划缩短 GPT-5.5 Instant 的回复长度，减少「子弹头式」逐条列表的输出格式。这既是用户体验优化——用户早已厌倦又臭又长的 AI 废话——也是成本控制：每次推理都在烧钱。同时 OpenAI 下线了 Canvas 侧边编辑界面，标志着产品方向的调整。这些改变反映出：在推理成本居高不下的背景下，连 OpenAI 也必须在体验和成本之间找平衡。",
+          "quote": "连 OpenAI 都要省钱省 Token 了——长回复的 AI 时代要结束了？",
+          "source": "The Verge",
+          "url": "https://www.theverge.com/news/902480/openai-gpt-5-5-shorter-responses",
+          "published": "2026-06-03",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "anthropic": {
+      "displayName": "Anthropic/Claude",
+      "icon": "🧬",
+      "items": [
+        {
+          "uid": "ai_6fd89e0e",
+          "title": "Anthropic 完成 650 亿美元 H 轮融资，估值逼近 9650 亿美元",
+          "content": "Anthropic 宣布完成由 Altimeter Capital、Dragoneer、Greenoaks 和 Sequoia Capital 领投的 650 亿美元 H 轮融资，投后估值达 9650 亿美元，一举超越 OpenAI 此前 7300 亿美元的估值。公司透露月经常性收入已突破 470 亿美元，并披露了与 Micron、Samsung、SK hynix 等芯片制造商的战略基础设施合作。这轮融资还包括此前从 Amazon、Google 和 SpaceX 获得的算力投资承诺，Claude 已成为首个同时登陆 AWS、GCP 和 Azure 三大云平台的 frontier 模型。Anthropic 同时向 SEC 秘密提交了 S-1，IPO 只差临门一脚。",
+          "quote": "9650 亿估值，Anthropic 用 Claude 证明：安全和赚钱可以兼得。",
+          "source": "Anthropic",
+          "url": "https://www.anthropic.com/news/series-h",
+          "published": "2026-06-03",
+          "direction": "行业动态"
+        },
+        {
+          "uid": "ai_71f63fba",
+          "title": "Anthropic 扩展 Project Glasswing 项目至 150 家新机构",
+          "content": "Anthropic 宣布将 Project Glasswing 网络安全项目扩展至约 150 家新组织，覆盖超过 15 个国家。新增合作伙伴涵盖电力、水务、医疗、通信和硬件等此前未被充分代表的行业。已部署 Claude Mythos Preview 的初始合作伙伴在数周内发现了超过 1 万个高严重性或严重安全漏洞。Anthropic 警告：6-12 个月内其他 AI 公司将拥有 Mythos 级别模型，网络攻击的频率和形式将发生根本性变化，安全防御者必须提前适应。",
+          "quote": "AI 发现漏洞已经够快，真正的瓶颈是修漏洞的速度跟不上。",
+          "source": "Anthropic",
+          "url": "https://www.anthropic.com/news/expanding-project-glasswing",
+          "published": "2026-06-03",
+          "direction": "应用/落地"
+        },
+        {
+          "uid": "ai_9ab205d4",
+          "title": "OpenAI Codex 现在也能控制你的 Windows 电脑了",
+          "content": "在登陆 macOS 之后，OpenAI 将 Codex 的「计算机操控」能力扩展到了 Windows。Codex 现在可以「看到」用户的屏幕并在设备上执行任务，包括操作文件、填写表单、执行命令等。用户还可以在离开电脑时通过 ChatGPT 应用远程管理和审核 Codex 执行的任务。这一更新让 OpenAI 与 Anthropic 的 Computer Use 能力展开正面竞争，AI 操控电脑的门槛正在被抹平。",
+          "quote": "AI 帮你用电脑的日子来了——前提是你放心让它碰你的鼠标。",
+          "source": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/913034/openai-codex-updates-use-macos",
+          "published": "2026-06-03",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_d0da93d1",
+          "title": "Zip 发布 AI 超级智能体：防止财务团队把敏感合同传到个人 ChatGPT",
+          "content": "企业采购平台 Zip 在纽约 AI 峰会上发布 5 款 AI Superagent，覆盖采购审批、合同审查、发票处理、流程配置和员工引导。同时推出采购原生 MCP（模型上下文协议），打通 Claude 和 ChatGPT 的企业级审计合规。背景是：大量企业员工正在用个人 AI 账号上传敏感合同和财务数据，存在严重合规风险。SOX 违规罚款高达 2500 万美元，高管甚至可能面临监禁。Zip 的解决方案是在企业治理框架内让 AI 做同样的活。",
+          "quote": "你的财务团队已经在用 ChatGPT 看合同了——只是没人敢告诉你。",
+          "source": "VentureBeat",
+          "url": "https://venturebeat.com/technology/zips-new-ai-agents-want-to-stop-your-finance-team-from-uploading-contracts-into-personal-chatgpt-accounts",
+          "published": "2026-06-03",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_d5c983fd",
+          "title": "经济学人：股市能吞下 Anthropic、SpaceX 和 OpenAI 的估值吗？",
+          "content": "《经济学人》发表分析文章，探讨数千亿美元估值的 AI 公司进入公开市场的风险。Anthropic 估值 9650 亿美元、OpenAI 7300 亿美元、SpaceX 也在 IPO 路上——这些公司加起来接近 2 万亿美元市值。质疑点在于：AI 当前的收入模式（API 调用、订阅）能否支撑如此夸张的估值倍数？历史上像 Uber 和 WeWork 的 IPO 已经证明，千亿级独角兽的估值在公开市场面前经常被打回原形。在 Hacker News 上引发了超过 1000 条评论的激烈辩论。",
+          "quote": "AI 公司估值飙到万亿级，股市说：我咽得下，但你消化得了吗？",
+          "source": "The Economist",
+          "url": "https://www.economist.com/finance-and-economics/2026/06/01/can-the-stockmarket-swallow-anthropic-spacex-and-openai",
+          "published": "2026-06-03",
+          "direction": "行业动态"
+        }
+      ]
+    },
+    "mistral": {
+      "displayName": "Mistral",
+      "icon": "💨",
+      "items": [
+        {
+          "uid": "ai_1d1a83ba",
+          "title": "Mistral AI 举办首届峰会：进军工业 AI，建设自有数据中心",
+          "content": "法国 AI 初创公司 Mistral AI 在巴黎举办的 AI NOW Summit 上宣布多项重大进展：推出面向航空航天、汽车和半导体行业的物理 AI 平台 Mistral for Industrial Engineering，可加速产品设计、仿真验证和生产优化；宣布与 Airbus、BMW、ASML 建立合作；投资 40 亿欧元建设法国和瑞典数据中心。公司已从 15 人发展到 1000 名员工，目标是 2026 年实现 10 亿欧元营收。同时将消费者助手更名为「Vibe」——嗯，这名字比「Le Chat」好听。",
+          "quote": "Mistral 不想当欧洲的 OpenAI，它想当欧洲的 AI 基础设施供应商。",
+          "source": "VentureBeat",
+          "url": "https://venturebeat.com/technology/mistral-ai-launches-vibe-expands-into-industrial-ai-and-announces-data-center-push-to-challenge-openai",
+          "published": "2026-06-03",
+          "direction": "行业动态"
+        }
+      ]
+    },
+    "alibaba": {
+      "displayName": "阿里巴巴/Qwen",
+      "icon": "☁️",
+      "items": [
+        {
+          "uid": "ai_60b04687",
+          "title": "Pinterest 砍掉 90% AI 成本：拆了 Qwen 的视觉编码器自己重写",
+          "content": "Pinterest CTO Matt Madrigal 透露，公司通过深度定制阿里 Qwen3-VL 模型，将 AI 成本降低了 90%，同时准确率提升了 30%。团队「拆掉」了 Qwen 的视觉编码层，用自有嵌入向量替代，实现了图像元数据的离线预计算。面对 6.2 亿月活用户，每次调用 frontier 模型做推荐不是策略而是烧钱。Pinterest 的实践证明：开源模型 + 定制优化在超大流量场景下远比直接调用闭源 API 划算。",
+          "quote": "6 亿用户，每次都调 GPT 做推荐？Pinterest 选择把开源模型拆了重装。",
+          "source": "VentureBeat",
+          "url": "https://venturebeat.com/orchestration/pinterest-cut-ai-costs-90-by-gutting-a-frontier-models-vision-layer",
+          "published": "2026-06-03",
+          "direction": "模型发布"
+        }
+      ]
+    },
+    "google": {
+      "displayName": "Google/Gemini",
+      "icon": "🌐",
+      "items": [
+        {
+          "uid": "ai_d895a465",
+          "title": "AutoTTS：Meta 和 Google 联手自动化 LLM 推理策略，Token 消耗直降 69.5%",
+          "content": "Meta、Google 及多所大学联合发布 AutoTTS 框架，首次实现 LLM 推理时计算策略的自动化发现。传统 Test-Time Scaling（TTS）依赖人工设计启发式规则，决定模型何时分支、深入、剪枝或停止推理，效率低下且不全面。AutoTTS 在精度不变的前提下将 Token 消耗降低最高 69.5%，企业可直接减少生产环境中推理模型的运营成本。论文已发表于 arXiv（2605.08083），是推理优化领域的重要突破。",
+          "quote": "推理策略不用人拍脑袋了，AutoTTS 说：让算法去卷算法。",
+          "source": "VentureBeat",
+          "url": "https://venturebeat.com/orchestration/researchers-automated-llm-reasoning-strategy-design-and-cut-token-usage-by-69-5",
+          "published": "2026-06-03",
+          "direction": "研究/论文"
+        }
+      ]
+    },
+    "apple": {
+      "displayName": "Apple",
+      "icon": "🍎",
+      "items": [
+        {
+          "uid": "ai_2fd648eb",
+          "title": "Apple WWDC 2026 倒计时：Siri 大升级箭在弦上",
+          "content": "距离 Apple WWDC 2026 还有 5 天，Greg Joswiak 在社交媒体上发布闪亮徽标预告，配文「All systems glow」，暗示即将推出的 Siri 重大改版。据 Bloomberg 报道，iOS 27 将带来 Siri 界面全面重设计，是 Apple Intelligence 战略的核心组成部分。iOS 27 预计将引入更自然的对话式 Siri 交互、增强的本地推理能力，以及更深的系统集成。这是 Apple 在 AI 赛道上的关键一战。",
+          "quote": "Siri 的智商即将充值——Apple 再不亮 AI 底牌就真来不及了。",
+          "source": "The Verge",
+          "url": "https://www.theverge.com/news/898997/apple-wwdc-2026-june-8-ios-27-ai-siri",
+          "published": "2026-06-03",
+          "direction": "模型发布"
+        }
+      ]
+    },
+    "amazon": {
+      "displayName": "Amazon/AWS",
+      "icon": "📦",
+      "items": [
+        {
+          "uid": "ai_4deb30dd",
+          "title": "AI 设计工具正在消灭独立创业者的最后一个瓶颈",
+          "content": "在美国 2980 万独立创业者（Solopreneur）贡献了 1.7 万亿美元经济产值的背景下，AI 设计工具正在彻底消除创始人面临的设计门槛。数据显示超过一半的第一印象来自视觉，约 60% 的消费者会因为 logo 不专业而跳过品牌。当 AWS 消灭了服务器、Stripe 消灭了支付门槛、AI 正在消灭专业设计这个「最后的昂贵瓶颈」。现在的独立创始人只需要一个好想法和 AI 就能打造专业级品牌视觉。",
+          "quote": "AWS 消灭了服务器，Stripe 消灭了支付，现在 AI 要消灭的最后一个瓶颈叫「审美」。",
+          "source": "VentureBeat",
+          "url": "https://venturebeat.com/technology/the-design-bottleneck-for-solo-founders-ai-has-solved-it",
+          "published": "2026-06-03",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "other": {
+      "displayName": "其他",
+      "icon": "📰",
+      "items": [
+        {
+          "uid": "ai_29f010b6",
+          "title": "白宫签署新行政令：推动 AI 创新与安全协同发展",
+          "content": "拜登政府签署「促进先进人工智能创新与安全」行政令，核心内容包括：成立 AI 网络安全信息交换中心协调漏洞扫描和修复、建立机密基准测试流程以评估 AI 模型的网络战能力、设计自愿性框架供 AI 开发者与联邦政府合作评估前沿模型。特别值得注意的是，该命令明确表示不强制设立政府的 AI 许可或审批机制，延续了美国「轻监管重合作」的 AI 政策路线。这也是美国联邦政府首次正式为「前沿模型」建立定义和分类标准。",
+          "quote": "不是管死 AI，而是让政府和行业一起卷安全——这才是美国想要的 AI 监管。",
+          "source": "白宫",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/",
+          "published": "2026-06-03",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_01765c6f",
+          "title": "伊利诺伊州通过最严 AI 安全法：强制独立审计+吹哨人保护",
+          "content": "伊利诺伊州议会通过 AI 安全法案，要求 AI 公司进行独立审计并提供吹哨人保护，其力度超越此前纽约和加州的相关立法。州长 JB Pritzker 已表态将签署该法案。该法案要求对前沿 AI 模型进行第三方安全评估，同时保护内部举报人——这意味着 AI 公司的员工如果发现安全问题，可以匿名举报而不必担心打击报复，这是 AI 行业目前最缺乏的机制之一。",
+          "quote": "伊利诺伊说：光靠公司自查 AI 安全不够，得让审计和吹哨人盯着你。",
+          "source": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/849293/ai-alliance-universities-colleges-funding-ad-campaign-against-raise-act",
+          "published": "2026-06-03",
+          "direction": "政策/合规"
+        },
+        {
+          "uid": "ai_996eda6e",
+          "title": "企业 AI 智能体进入「重建时代」：可靠性才是真问题",
+          "content": "随着 AI 智能体进入生产环境，企业正面临严重的可靠性问题。Temporal Technologies 高级工程副总裁 Preeti Somal 指出，许多客户已经在构建 Agent 2.0：「他们为了快速上线牺牲了管道工程，然后崩溃了，又回来重建。」核心痛点包括：长时间运行的工作流需要崩溃恢复、状态保持、成本管理和跨系统协调。行业趋势是用「确定性骨架」（Deterministic Spine）来编排概率性的 LLM 调用——模型可以不靠谱，但执行层必须靠谱。",
+          "quote": "第一批 Agent 看似跑得很好，直到生产的狂风把它吹散架了。",
+          "source": "VentureBeat",
+          "url": "https://venturebeat.com/orchestration/ai-agents-are-entering-their-rebuild-era-as-enterprises-confront-the-reliability-problem",
+          "published": "2026-06-03",
+          "direction": "应用/落地"
+        },
+        {
+          "uid": "ai_1f02d9b5",
+          "title": "AI 智能体瓶颈不是模型能力，而是权限管控",
+          "content": "Workday 产品和技术总裁 Gerrit Kazmaier 指出，企业 AI 智能体卡住的真正原因不是模型不够强，而是不知道「这个智能体能碰什么、代表谁」。Workday 的 Sana 系统将企业组织架构作为智能体的天然权限约束层，只有经 Workday 身份和安全模型验证的智能体才能执行业务操作。第三方身份提供商如 Okta 也通过 Workday 验证他们的信息——因为大多数企业的 HR 和组织数据就存在 Workday 里。监管严苛的 HR 和财务领域，「几乎正确」就是不能接受。",
+          "quote": "AI 智能体的天花板不是推理能力，是它能不能搞清楚自己能碰什么数据。",
+          "source": "VentureBeat",
+          "url": "https://venturebeat.com/orchestration/the-ai-agent-bottleneck-isnt-model-performance-its-permissions",
+          "published": "2026-06-03",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_893af649",
+          "title": "MeMo 记忆框架：给 LLM 装个外挂记忆芯片，无需重新训练",
+          "content": "来自多所大学的研究团队提出 MeMo（Memory as a Model）框架，通过引入一个独立的小型「记忆模型」作为外部知识库，与主 LLM 协同工作。相比 RAG 受限于上下文窗口大小和噪声敏感，相比微调带来灾难性遗忘和高昂成本，MeMo 将知识编码为记忆模型的参数，支持开源和闭源模型。推理时采用三步协议：主模型分解问题 → 记忆模型回答子问题 → 主模型综合答案。在嘈杂检索场景下表现出色。说白了就是给大模型装了个随身知识 U 盘。",
+          "quote": "不想微调又嫌 RAG 不靠谱？MeMo 说：给大模型配个专属小助手。",
+          "source": "VentureBeat",
+          "url": "https://venturebeat.com/orchestration/memo-memory-model-teams-upgrade-llm-without-retraining",
+          "published": "2026-06-03",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_e07ac049",
+          "title": "NVIDIA DLSS 4.5 发布：第二代 Transformer AI 实时渲染",
+          "content": "NVIDIA 在 Computex 大会上宣布 DLSS 4.5 更新，新增 Ray Reconstruction 光线重建功能，采用第二代 Transformer AI 模型生成更高质量的像素。相比传统采样方法，能提供更干净的粒子效果和更准确的光照精度。该功能将支持 RTX 20 系列及以上所有显卡，8 月上线。同时 NVIDIA 还展示了 RTX Spark N1/N1X 系列 ARM CPU 新品，AI 本地推理芯片竞争进一步升温。",
+          "quote": "NVIDIA 让每一帧画面都经过 AI 渲染——然后你还得买一张新卡才能享受。",
+          "source": "The Verge",
+          "url": "https://www.theverge.com/tech/903934/nvidia-dlss-4-5-multi-frame-generation-app-beta-launch",
+          "published": "2026-06-03",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_39e93e07",
+          "title": "B 参数小模型靠推理技巧暴打 405B 大模型",
+          "content": "上海人工智能实验室的最新研究表明，在正确的 Test-Time Scaling 技术加持下，仅 1B 参数的小模型可在复杂数学推理任务上超越 405B 大模型。研究团队发现，小模型在推理时获得额外计算周期后，能够通过多路径推理和自我修正实现超越规模的结果。这对企业部署意味着巨大的成本优势：不需要烧钱跑大模型，而是给聪明的小模型多一点点思考时间。",
+          "quote": "参数不是一切——给 1B 参数一个机会，它能干翻 405B 的活。",
+          "source": "VentureBeat",
+          "url": "https://venturebeat.com/ai/how-test-time-scaling-unlocks-hidden-reasoning-abilities-in-small-language-models-and-allows-them-to-outperform-llms",
+          "published": "2026-06-03",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_381ed1f4",
+          "title": "NVIDIA 发布 RTX Spark N1/N1X：自研 ARM CPU 直指本地 AI 推理",
+          "content": "NVIDIA 在 Computex 上发布 RTX Spark N1/N1X 系列 ARM CPU 新品，这是其自主设计的面向 AI 本地推理的芯片。结合此前发布的 DLSS 4.5，NVIDIA 正在构建从云端到桌面的全栈 AI 硬件能力。新芯片定位 Windows 笔记本，但市场时机尴尬——正值 AI 推理从云端向边缘转移的过渡期。同时公布的 RTX Spark Dev Box 也表明了 NVIDIA 对本地 AI 开发基础设施的投入决心。",
+          "quote": "NVIDIA 不想只做 AI 的发动机厂——它还想帮你把发动机装进每一台笔记本里。",
+          "source": "The Verge",
+          "url": "https://www.theverge.com/tech/940589/nvidia-rtx-spark-n1-n1x-laptop-desktop-pc-cpu-gpu-ai-release-date",
+          "published": "2026-06-03",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_1dd7f4df",
+          "title": "SAP 发布 50+ AI 智能体，企业 AI Agent 竞赛全面升温",
+          "content": "SAP 在 Sapphire 2026 上发布「自主企业」愿景，推出超过 50 个领域特定的 Joule Assistants，覆盖财务、供应链、采购等核心业务场景。与此同时，Coupa 在 Inspire 2026 上发布了 Compose 平台和 Catalyst 服务包。Gartner 预测到 2026 年底，40% 的企业应用将内置 AI Agent，而今天这一比例还不到 5%。企业 AI Agent 市场正在从「要不要做」的阶段进入「谁做得更快」的抢跑期。",
+          "quote": "SAP 一口气扔出 50 个 AI Agent，企业软件商战的终点清晰了——谁 Agent 多谁赢。",
+          "source": "VentureBeat",
+          "url": "https://venturebeat.com/ai/sap-sapphire-2026-joule-50-ai-agents-enterprise",
+          "published": "2026-06-03",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_13c9a667",
+          "title": "AI 公司出奇招：免费做家务换机器人训练数据",
+          "content": "AI 训练数据创业公司 Shift 宣布为纽约市民提供免费家庭清洁服务——但代价是全程拍摄。清洁过程将被录制为机器人训练数据集，用于教 AI 做洗碗、擦桌子、拖地等家务。在印度，家政平台 Pronto 也在用类似方式收集用户家中的家务视频。机器人训练的最大瓶颈已经不是算法，而是高质量的真实物理世界数据——文本和图像可以全网爬，但「洗碗」的动作没法从互联网偷。",
+          "quote": "天下没有免费的家务——你以为是清洁阿姨，其实是机器人数据采集员。",
+          "source": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/940007/ai-companies-will-pay-for-robot-training-data",
+          "published": "2026-06-03",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_15e942b3",
+          "title": "Recording Academy CEO 谈 AI 时代的人类创造力：格莱美规则在变",
+          "content": "Recording Academy CEO Harvey Mason Jr. 接受 The Verge 采访，讨论生成式 AI 对音乐行业的冲击。他表示格莱美正在调整规则以适应 AI 时代——完全由 AI 生成的作品不能参选，但辅助使用 AI 的人类创作仍然有资格。核心挑战在于定义「人类创造力」的边界：歌手的 AI 音效处理和合成器的区别在哪？采样和 AI 生成的界限在哪？格莱美的裁决将直接影响音乐产业的创作和商业模式。",
+          "quote": "AI 写的歌不能拿格莱美，但 AI 帮你调音的歌可以——音乐行业的灰色地带比音符还多。",
+          "source": "The Verge",
+          "url": "https://www.theverge.com/news/903877/recording-academy-ceo-harvey-mason-jr-ai-creativity-music",
+          "published": "2026-06-03",
+          "direction": "应用/落地"
+        },
+        {
+          "uid": "ai_d8fe5682",
+          "title": "Switchbot 4 千万美元收购 Nanoleaf，智能家居 AI 整合加速",
+          "content": "智能家居厂商 Switchbot 以 4000 万美元收购智能照明公司 Nanoleaf，整合照明产品线与 AI 智能家居控制能力。此次收购标志着智能家居将从「单品智能」转向「场景智能」——光线、窗帘、门锁、传感器将由一个 AI 大脑统一调度。Switchbot 近年来在 AI 驱动的自动化场景上持续加码，收购 Nanoleaf 补齐了照明体验这个关键拼图。",
+          "quote": "开关机器人收购了纳米叶——智能家居的 AI 拼图又少了一块缺口。",
+          "source": "The Verge",
+          "url": "https://www.theverge.com/news/902481/switchbot-acquires-nanoleaf-40-million",
+          "published": "2026-06-03",
+          "direction": "工具/平台"
+        }
+      ]
+    }
+  }
+}
