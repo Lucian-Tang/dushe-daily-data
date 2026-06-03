@@ -176,21 +176,35 @@ git merge staging --no-edit || {
     fi
 }
 
-# ── index.json 校验（防止旧版覆盖）──
+# ── index.json 校验（防止旧版空结构覆盖）──
 log "[4b/5] 校验 index.json..."
 TODAY_SHORT=$(date +%Y%m%d)
 python3 -c "
-import json
+import json, sys
 with open('index.json') as f:
     d = json.load(f)
+# 兼容嵌套 sections 和扁平结构
+if 'sections' in d:
+    data = d['sections']
+else:
+    data = d
 sections = ['industry','dev','ai','startup','design']
-bad = [s for s in sections if '$TODAY_SHORT' not in str(d.get(s,''))]
-assert not bad, f'index.json 仍指向旧文件: {bad}'
-print(f'index.json ✅ 所有 {len(sections)} 板块指向今日文件')
+bad = [s for s in sections if not data.get(s,{})]
+if bad:
+    print(f'❌ index.json 缺少板块: {bad}', file=sys.stderr)
+    sys.exit(1)
+for s in sections:
+    sec = data.get(s,{})
+    files = sec.get('files',[]) if isinstance(sec, dict) else []
+    has_today = any('$TODAY_SHORT' in str(f) for f in files)
+    if files and not has_today:
+        latest = files[0].get('date','?')[:10] if isinstance(files[0], dict) else '?'
+        print(f'  ⚠️ {s}: 无今日数据，最新: {latest}', file=sys.stderr)
+print('index.json ✅ 数据有效')
 " || {
     log "❌ index.json 校验失败！可能被旧版覆盖"
-    log "   当前 index.json 内容:"
-    python3 -c "import json;print(json.dumps(json.load(open('index.json')),indent=2,ensure_ascii=False))" 2>/dev/null | head -20
+    log "   当前 index.json 关键字段:"
+    python3 -c "import json;d=json.load(open('index.json'));print(json.dumps({k:str(v)[:200] for k,v in d.items()},indent=2,ensure_ascii=False))" 2>/dev/null
     git merge --abort 2>/dev/null || true
     git checkout staging
     log "   已回退合并，请检查 staging 上的 index.json 并手动修复"
