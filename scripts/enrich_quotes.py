@@ -55,16 +55,25 @@ QUOTE_PROMPT_TEMPLATE = """你是"毒舌点评师"，专门用黑色幽默给新
 直接输出点评，一行一条："""
 
 
+# 类型 → (raw 文件名模板, daily 文件名模板)
+TYPE_MAP = {
+    "industry": ("raw_articles_{date}.json", "industry_daily_{date}.json"),
+    "dev": ("raw_dev_{date}.json", "dev_daily_{date}.json"),
+    "social": ("raw_social_{date}.json", "social_daily_{date}.json"),
+    "ai": ("raw_ai_{date}.json", "ai_daily_{date}.json"),
+    "startup": ("raw_startup_{date}.json", "startup_daily_{date}.json"),
+    "design": ("raw_design_{date}.json", "design_daily_{date}.json"),
+}
+
+
 def load_articles(date_str: str, article_type: str) -> tuple[list[dict], Path]:
     """加载指定类型和日期的文章"""
-    type_map = {
-        "industry": f"raw_articles_{date_str}.json",
-        "dev": f"raw_dev_{date_str}.json",
-        "social": f"raw_social_{date_str}.json",
-    }
-    filename = type_map.get(article_type)
-    if not filename:
-        raise ValueError(f"未知类型: {article_type}, 可选: {list(type_map.keys())}")
+    pair = TYPE_MAP.get(article_type)
+    if not pair:
+        raise ValueError(f"未知类型: {article_type}, 可选: {list(TYPE_MAP.keys())}")
+
+    raw_tmpl, _ = pair
+    filename = raw_tmpl.format(date=date_str)
 
     path = DATA_DIR / filename
     if not path.exists():
@@ -74,6 +83,36 @@ def load_articles(date_str: str, article_type: str) -> tuple[list[dict], Path]:
         articles = json.load(f)
 
     return articles, path
+
+
+def daily_file_has_quotes(date_str: str, article_type: str, min_quotes: int = 1) -> bool:
+    """检查 daily 产物文件是否已有毒舌点评（已 enrich 完成）
+
+    enrichment 的最终产物是 *_daily_YYYYMMDD.json（非 raw_*.json），
+    本函数通过检查 daily 文件中的 quote 字段来判定是否已 enrichment。
+    """
+    pair = TYPE_MAP.get(article_type)
+    if not pair:
+        return False
+
+    _, daily_tmpl = pair
+    daily_filename = daily_tmpl.format(date=date_str)
+    path = DATA_DIR / daily_filename
+
+    if not path.exists():
+        return False
+
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            articles = json.load(f)
+    except (json.JSONDecodeError, IOError):
+        return False
+
+    if not articles:
+        return False
+
+    quoted_count = sum(1 for a in articles if a.get("quote", "").strip())
+    return quoted_count >= min_quotes
 
 
 def needs_quote(article: dict) -> bool:
@@ -160,9 +199,15 @@ def parse_quotes(raw_output: str, expected_count: int) -> list[str]:
 
 
 def enrich_file(
-    date_str: str, article_type: str, dry_run: bool = False
+    date_str: str, article_type: str, dry_run: bool = False,
+    skip_if_enriched: bool = False,
 ) -> dict:
     """对单个数据文件执行 enrichment"""
+    # --skip-if-enriched: 如果 daily 产物已有毒舌点评则直接跳过
+    if skip_if_enriched and daily_file_has_quotes(date_str, article_type):
+        logger.info(f"{article_type}: daily 文件已有毒舌点评，跳过 enrichment (--skip-if-enriched)")
+        return {"total": 0, "enriched": 0, "skipped": 0, "skip_reason": "daily_already_enriched"}
+
     articles, path = load_articles(date_str, article_type)
     logger.info(f"加载 {article_type}: {len(articles)} 条")
 
@@ -225,17 +270,17 @@ def main():
     parser.add_argument("--date", default=datetime.now().strftime("%Y%m%d"), help="日期 YYYYMMDD")
     parser.add_argument("--type", choices=["industry", "dev", "social", "ai", "startup", "design"], help="只处理指定类型")
     parser.add_argument("--dry-run", action="store_true", help="预览不写入")
+    parser.add_argument("--skip-if-enriched", action="store_true",
+                         help="若 daily 产物已有毒舌点评则跳过（用于 06:00 冗余 cron，防止重复 LLM 调用）")
     args = parser.parse_args()
 
-    # 默认处理全部 6 个板块；ai/startup/design 的 daily JSON 由 cron agent 生成（已有 quote），
-    # enrich_quotes 作为防御性补充，补齐可能的遗漏
     types = [args.type] if args.type else ["industry", "dev", "social", "ai", "startup", "design"]
     results = {}
     all_ok = True
 
     for t in types:
         try:
-            results[t] = enrich_file(args.date, t, dry_run=args.dry_run)
+            results[t] = enrich_file(args.date, t, dry_run=args.dry_run, skip_if_enriched=args.skip_if_enriched)
         except FileNotFoundError as e:
             logger.warning(f"跳过 {t}: {e}")
             results[t] = {"error": str(e)}

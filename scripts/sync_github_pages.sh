@@ -44,8 +44,9 @@ safe_cp() {
 }
 
 # ---- Step 1: 毒舌点评 enrichment ----
+# 加 --skip-if-enriched：若 daily 产物已有毒舌点评则跳过（06:00 冗余 cron 防止重复 LLM 调用）
 log "[enrich] 开始毒舌点评 enrichment..."
-if python3 "$SCRIPT_DIR/enrich_quotes.py" --date "$DATE_STR" >> "$LOG_DIR/enrich_quotes.log" 2>&1; then
+if python3 "$SCRIPT_DIR/enrich_quotes.py" --date "$DATE_STR" --skip-if-enriched >> "$LOG_DIR/enrich_quotes.log" 2>&1; then
     log "[enrich] enrichment 完成"
 else
     log "[enrich] enrichment 失败（不阻塞后续流程）"
