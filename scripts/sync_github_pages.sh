@@ -88,8 +88,24 @@ else
     log "[daily-json] ⚠️ JSON 生成失败（检查是否有 MD 报告文件）"
 fi
 
+# ---- Step 2.5b: 将刚生成的 daily JSON 复制到 data/ 目录（供 normalize 处理）----
+# 🔴 P0 修复（2026-06-03）：normalize_daily_data.py 以 data/ 为权威数据源，
+#    需在此先同步根目录→data/，确保 data/ 有最新生成的数据。
+#    使用 safe_cp 阻止空文件（生成失败时的 []）覆盖 data/ 有效数据。
+log "[pre-sync] 将生成文件同步到 data/（供 normalize 处理）..."
+for f in "$WORKSPACE"/*_daily_*.json; do
+    [ -f "$f" ] || continue
+    basename_f="$(basename "$f")"
+    # 仅同步今日文件（按文件名中的日期判断）
+    if echo "$basename_f" | grep -q "$DATE_STR"; then
+        safe_cp "$f" "$WORKSPACE/data/$basename_f" || log "[pre-sync] 🛡️ $(basename "$f") → data/ 受保护（跳过空数据覆盖）"
+    fi
+done
+log "[pre-sync] ✅ 生成文件已同步到 data/"
+
 # ---- Step 2.6: 数据规范化（修复URL/日期格式/过滤旧数据，仅处理今日文件）----
-log "[normalize] 开始数据规范化（仅今日）..."
+# 🔴 normalize 以 data/ 目录文件为权威源（data/ 优先，根目录 fallback）
+log "[normalize] 开始数据规范化（仅今日，data/ 先行）..."
 if python3 "$SCRIPT_DIR/normalize_daily_data.py" --date "$DATE_STR" 2>&1 | tee -a "$LOG_DIR/sync-github.log"; then
     log "[normalize] ✅ 数据规范化完成"
 else
@@ -117,7 +133,10 @@ log "[weekly-clawhub] 生成 ClawHub 周报..."
 python3 "$SCRIPT_DIR/generate_weekly_clawhub.py" --date "$DATE_STR" 2>&1 | tee -a "$LOG_DIR/sync-github.log" || log "[weekly-clawhub] ⚠️ ClawHub 周报生成失败"
 
 # ---- Step 3: 使用 gen-index.py 生成 index.json（统一入口）----
-log "[index] 使用 gen-index.py 生成 index.json..."
+# 🔴 P0 修复（2026-06-03）：gen-index.py 扫描 data/ 子目录生成索引，
+#    index.json 中的文件路径使用 "data/" 前缀，如 "data/industry_daily_20260603.json"
+#    确保 CDN 直接从 data/ 读数据，砍掉根目录→data/ 的双路径依赖
+log "[index] 使用 gen-index.py 生成 index.json（data/ 权威源）..."
 cd "$WORKSPACE"
 GEN_INDEX="$(dirname "$WORKSPACE")/scripts/gen-index.py"
 if python3 "$GEN_INDEX" --path . --quiet 2>&1; then
@@ -147,21 +166,30 @@ latest = {}
 history = {}
 checksums = {}
 
+# 🔴 P0 fix: scan data/ subdirectory first (authoritative source), fallback to root
+DATA_PREFIX = 'data/'
+scan_dirs = [('./data/', DATA_PREFIX), ('./', '')] if os.path.isdir('./data') else [('./', '')]
+
 for section, (raw_prefix, daily_prefix) in section_map.items():
     if daily_prefix:
-        daily_files = sorted(glob.glob(daily_prefix + '_*.json'))
-        if daily_files:
-            latest[section] = daily_files[-1]
-            for f in daily_files:
-                date_str = f.replace(daily_prefix + '_', '').replace('.json', '').replace('_', '')
-                if date_str not in history:
-                    history[date_str] = {}
-                if section not in history[date_str]:
-                    history[date_str][section] = []
-                history[date_str][section].append(f)
-            continue
-    
-    if raw_prefix:
+        for scan_dir, prefix in scan_dirs:
+            if not os.path.isdir(scan_dir):
+                continue
+            daily_files = sorted(glob.glob(scan_dir + daily_prefix + '_*.json'))
+            if daily_files:
+                latest[section] = prefix + os.path.basename(daily_files[-1]) if prefix else daily_files[-1]
+                for f in daily_files:
+                    fname = prefix + os.path.basename(f) if prefix else f
+                    date_str = fname.replace(daily_prefix + '_', '').replace('.json', '').replace('_', '')
+                    date_str = date_str.replace(DATA_PREFIX, '')
+                    if date_str not in history:
+                        history[date_str] = {}
+                    if section not in history[date_str]:
+                        history[date_str][section] = []
+                    history[date_str][section].append(fname)
+                break  # data/ found, skip root
+
+    if section not in latest and raw_prefix:
         raw_files = sorted(glob.glob(raw_prefix + '_*.json'))
         if raw_files:
             latest[section] = raw_files[-1]
@@ -170,9 +198,10 @@ compressed_history = {}
 for date_str, sections in history.items():
     compressed_history[date_str] = sections
 
-for fname in glob.glob('*_daily_*.json') + glob.glob('raw_*.json'):
-    with open(fname, 'rb') as f:
-        checksums[fname] = hashlib.sha256(f.read()).hexdigest()
+for fname in glob.glob('data/*_daily_*.json') + glob.glob('*_daily_*.json') + glob.glob('raw_*.json'):
+    if os.path.isfile(fname):
+        with open(fname, 'rb') as f:
+            checksums[fname] = hashlib.sha256(f.read()).hexdigest()
 
 index = {
     'schemaVersion': '2.0',
@@ -185,15 +214,28 @@ index = {
 with open('index.json', 'w', encoding='utf-8') as f:
     json.dump(index, f, ensure_ascii=False, indent=2)
 
+# Also write data/index.json without data/ prefix (for mini program)
+if os.path.isdir('./data'):
+    data_index = dict(index)
+    for k in list(data_index.keys()):
+        if k in section_map and isinstance(data_index[k], str) and data_index[k].startswith(DATA_PREFIX):
+            data_index[k] = data_index[k][len(DATA_PREFIX):]
+    with open('./data/index.json', 'w', encoding='utf-8') as f:
+        json.dump(data_index, f, ensure_ascii=False, indent=2)
+
 print(f'[index] generated: {len(latest)} sections')
 "
 fi
 
-# ---- Step 3.5: 同步输出文件到 data/ 目录（CDN 实际读取路径）----
-log "[data-sync] 同步输出文件到 data/ 目录..."
+# ---- Step 3.5: 反向同步 data/ → root（确保根目录镜像 data/ 权威数据）----
+# 🔴 P0 修复（2026-06-03）：方向反转！旧逻辑 root→data/ 会覆盖 data/ 有效数据。
+#    新逻辑 data/→root：data/ 是权威源，root 是镜像。safe_cp 阻止空数据覆盖。
+log "[data-sync] 反向同步 data/ → root（权威源→镜像）..."
 bash "$SCRIPT_DIR/sync_to_data.sh" 2>&1 | tee -a "$LOG_DIR/sync-github.log"
 
 # ---- Step 4: 数据新鲜度检查 ----
+# 🔴 检查 data/ 目录数据（权威源），而非根目录
+log "[qa] 数据新鲜度检查（data/ 权威源）..."
 log "[qa] 数据新鲜度检查..."
 if python3 "$SCRIPT_DIR/check-freshness.py" --warn 2>&1 | tee -a "$LOG_DIR/sync-github.log"; then
     log "[qa] ✅ 数据新鲜度检查通过"

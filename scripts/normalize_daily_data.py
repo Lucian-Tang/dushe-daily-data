@@ -5,12 +5,17 @@ normalize_daily_data.py - 日报CDN数据规范化
 在 gen-index.py 之前运行，fix 所有 _daily_*.json 文件的常见问题：
 1. 补全缺失的 url 字段（从 content/quote 中提取，或留空但可不跳过）
 2. 统一 published 字段为 YYYY-MM-DD 格式
-3. 检查 content 是否为空（需>=30字符）
+3. 检查 content 是否为空（需>=50字符）
 4. 删除超3天的旧数据（仅保留最近3天）
 
+🔴 数据源策略（防双路径腐烂）：
+  - 优先处理 data/ 子目录文件（CDN 权威数据源）
+  - 根目录同名文件作为 fallback（兼容历史数据）
+  - data/ 文件存在时不处理根目录的同名文件（避免覆盖权威数据）
+
 用法:
-    python3 normalize_daily_data.py                              # 处理所有 daily 文件
-    python3 normalize_daily_data.py --date 20260513              # 仅处理指定日期
+    python3 normalize_daily_data.py                              # 处理今日 daily 文件
+    python3 normalize_daily_data.py --date 20260613              # 仅处理指定日期
     python3 normalize_daily_data.py --dry-run                    # 预览不写入
 """
 import os
@@ -306,7 +311,22 @@ def main():
         print("[normalize] ⚠️ --all 模式: 将处理所有历史 daily 文件")
     else:
         pattern = f'*_daily_{args.date}.json'
-    files = sorted(glob.glob(pattern))
+
+    # 🔴 双目录扫描：data/ 权威数据源优先
+    # 1. 先扫描 data/ 子目录（CDN 权威数据源）
+    data_subdir = os.path.join(DATA_DIR, 'data')
+    data_files = sorted(glob.glob(os.path.join('data', pattern))) if os.path.isdir(data_subdir) else []
+    # 2. 再扫描根目录（fallback）
+    root_files = sorted(glob.glob(pattern))
+    # 3. 去重合并：data/ 文件优先，根目录文件只在 data/ 中不存在时才加入
+    data_basenames = {os.path.basename(f) for f in data_files}
+    files = data_files + [f for f in root_files if os.path.basename(f) not in data_basenames]
+
+    if data_files:
+        print(f"[normalize] 📂 data/ 目录: {len(data_files)} 个文件（权威数据源）")
+    if len(root_files) > len(data_files):
+        fallback_count = len(files) - len(data_files)
+        print(f"[normalize] 📂 根目录 fallback: {fallback_count} 个文件")
 
     print(f"[normalize] 扫描 {len(files)} 个 daily JSON 文件")
     print(f"[normalize] 3天过滤: 仅保留最近{MAX_DAYS_BACK}天数据\n")

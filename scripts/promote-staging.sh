@@ -83,15 +83,20 @@ else
     fi
     
     # ── Phase 2: 深度 QA — CDN 文件 published 日期校验 ──
-    log "[2b/5] CDN 文件 published 日期深度校验..."
+    # 🔴 P0 fix（2026-06-03）：检查 data/ 目录文件（CDN 权威数据源）
+    log "[2b/5] CDN 文件 published 日期深度校验（data/ 权威源）..."
     TODAY_DASH=$(date +%Y-%m-%d)
     CDN_SECTIONS=("industry" "dev" "ai" "startup" "design")
     CDN_ERRORS=()
     for SEC in "${CDN_SECTIONS[@]}"; do
-        CDN_FILE="$WORKSPACE/${SEC}_daily_$(date +%Y%m%d).json"
+        CDN_FILE="$WORKSPACE/data/${SEC}_daily_$(date +%Y%m%d).json"
         if [ ! -f "$CDN_FILE" ]; then
-            CDN_ERRORS+=("❌ ${SEC}: CDN 文件缺失 → ${CDN_FILE}")
-            continue
+            # Fallback: check root
+            CDN_FILE="$WORKSPACE/${SEC}_daily_$(date +%Y%m%d).json"
+            if [ ! -f "$CDN_FILE" ]; then
+                CDN_ERRORS+=("❌ ${SEC}: CDN 文件缺失（data/ 和 root 均无）")
+                continue
+            fi
         fi
         # 检查所有 item 的 published 是否匹配文件名日期
         MISMATCH_COUNT=$(python3 -c "
