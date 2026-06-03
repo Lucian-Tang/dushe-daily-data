@@ -1,92 +1,92 @@
 [
   {
     "title": "通过扬声器黑掉你的电脑——不需要物理接触的 BadUSB 攻击",
-    "content": "安全研究员展示了一种新型攻击方式：通过物理隔离的电脑扬声器实现 BadUSB 注入。利用音频信号中的超声波频率触发系统级漏洞，在不触碰电脑的情况下完成代码执行。HN 上 437 分、75 条评论，社区讨论焦点在于这种攻击对气隙隔离系统的威胁程度，以及现代音频驱动漏洞的普遍性。",
-    "quote": "当你关掉 Wi-Fi、禁用蓝牙、封了 USB 口之后，黑客说：那我把 BadUSB 编成歌放给你听吧。",
-    "source": "HN Front Page",
-    "url": "https://blog.nns.ee/2026/06/03/katana-badusb/",
+    "content": "通过扬声器黑掉你的电脑——不需要物理接触的 BadUSB 攻击。通过扬声器黑掉你的电脑——不需要物理接触的 BadUSB 攻击。该消息来自当日资讯报道，更多详情请查看原文链接。",
+    "quote": "** 当你关掉 Wi-Fi、禁用蓝牙、封了 USB 口之后，黑客说：那我把 BadUSB 编成歌放给你听吧。",
+    "source": "",
+    "url": "#",
     "published": "2026-06-04",
-    "uid": "ac98dc84c62a0e12c6987b69e580a418"
+    "uid": "dev_25870bf3"
   },
   {
     "title": "Every Byte Matters — 极致代码优化的艺术",
-    "content": "一篇关于底层代码优化的深度文章，作者通过多个真实案例展示了从 CPU 缓存行对齐、指令级并行到内存布局优化的进阶技巧。HN 获 167 分、77 条评论，社区讨论延伸到现代编译器优化是否能取代手动调优的话题，以及 LLM 生成代码在性能层面的常见问题。对写性能敏感代码的工程师而言，这是今年不可错过的优化入门。",
-    "quote": "编译器再聪明，也不如你懂你的数据。你不懂的时候，才轮到编译器上场。",
-    "source": "HN Front Page",
-    "url": "https://fzakaria.com/2026/06/01/every-byte-matters",
+    "content": "Every Byte Matters — 极致代码优化的艺术。Every Byte Matters — 极致代码优化的艺术。该消息来自当日资讯报道，更多详情请查看原文链接。",
+    "quote": "** 编译器再聪明，也不如你懂你的数据。你不懂的时候，才轮到编译器上场。",
+    "source": "",
+    "url": "#",
     "published": "2026-06-04",
-    "uid": "57af49e2d9431572187c06262afaac11"
+    "uid": "dev_80a1df42"
   },
   {
     "title": "Let's Encrypt 的后量子密码未来",
-    "content": "Let's Encrypt 官方宣布推进后量子密码学证书支持路线图。文章详细介绍了当前 PQC 算法标准化进展、证书链长度对 TLS 握手性能的影响，以及 CA 行业从 RSA/ECC 向 CRYSTALS-Kyber/Dilithium 迁移的时间表。对于每一位维护 HTTPS 服务的开发者，这是迟早要面对的升级工程，建议尽早关注兼容性测试。",
-    "quote": "RSA 还没死透，量子计算机已经在门口排队了——Let's Encrypt 说该换钥匙了。",
-    "source": "HN Front Page",
-    "url": "https://letsencrypt.org/2026/06/03/pq-certs",
+    "content": "Let's Encrypt 的后量子密码未来。Let's Encrypt 的后量子密码未来。该消息来自当日资讯报道，更多详情请查看原文链接。",
+    "quote": "** RSA 还没死透，量子计算机已经在门口排队了——Let's Encrypt 说该换钥匙了。",
+    "source": "",
+    "url": "#",
     "published": "2026-06-04",
-    "uid": "0796e105a416044cd6c20cf06aba1875"
+    "uid": "dev_d109c955"
   },
   {
     "title": "EasyCode — 由于主流 AI 编程助手太贵，自己写了个适配 DeepSeek 的本地命令行 Agent",
-    "content": "一位被 Cursor Pro 额度焦虑逼疯的开发者，用 Codex 加 Bun 加 TypeScript 搓了一个本地命令行 AI 编程 Agent EasyCode。核心思路是拿 DeepSeek v4 替代 Claude 和 Cursor——v4 推理能力够用且 API 成本优势明显。评论区炸出一堆同样被额度问题困扰的开发者，验证了 2026 年 AI 编程的账单焦虑已成为行业级痛点。",
-    "quote": "Cursor Pro 一小时见底？DeepSeek 廉价的微笑正在向你招手。",
-    "source": "V2EX Share",
-    "url": "https://www.v2ex.com/t/1217385",
+    "content": "EasyCode — 由于主流 AI 编程助手太贵，自己写了个适配 DeepSeek 的本地命令行 Agent。详情请阅读原文了解更多相关信息。",
+    "quote": "** Cursor Pro 一小时见底？DeepSeek 廉价的微笑正在向你招手。",
+    "source": "",
+    "url": "#",
     "published": "2026-06-04",
-    "uid": "65c25d59e8fa9d612ee5cb9b09367cc2"
+    "uid": "dev_8bbe3b30"
   },
   {
     "title": "gojaja（过家家）—— 开源本地多 Agent 协作 CLI 工具",
-    "content": "一个本地运行的多 Agent 协作 CLI，支持跨 Cursor、Claude Code、Codex 等不同 AI 编程工具调度协作。核心创新在于实时看板加 RFC 机制加收件箱设计，全部以文件落盘，无远程服务端，数据完全本地。适合多任务分工、跨模型头脑风暴、圆桌讨论拍板等场景，是 Agent 编排思路在 CLI 场景的落地实践。",
-    "quote": "多 Agent 协作就像组队写代码：Cursor 写前端，Claude Code 修 bug，你在旁边当项目经理。",
-    "source": "V2EX Share",
-    "url": "https://www.v2ex.com/t/1217316",
+    "content": "gojaja（过家家）—— 开源本地多 Agent 协作 CLI 工具。详情请阅读原文了解更多相关信息。",
+    "quote": "** 多 Agent 协作就像组队写代码：Cursor 写前端，Claude Code 修 bug，你在旁边当项目经理。",
+    "source": "",
+    "url": "#",
     "published": "2026-06-04",
-    "uid": "51418071323ee9cb149c59bd317b977f"
+    "uid": "dev_43e45de0"
   },
   {
     "title": "CodexMeter — 手机端 AI 额度看板，看一眼就知道你的 AI 还剩多少血条",
-    "content": "AI Agent 跑一个任务动辄数小时，开发者最焦虑的是看不到额度消耗进度。CodexMeter 是一个完全本地化的 AI 用量追踪工具加 iOS 小组件，无需与 Mac 保持连接即可随时查看各模型 API 配额消耗情况。随着 Agent 任务越来越长、消耗越来越大，这种 AI 油耗表正成为开发者工具箱里的必备品。",
-    "quote": "谁说程序员不需要油表？AI 额度比油费贵多了。",
-    "source": "V2EX Share",
-    "url": "https://www.v2ex.com/t/1217470",
+    "content": "CodexMeter — 手机端 AI 额度看板，看一眼就知道你的 AI 还剩多少血条。详情请阅读原文了解更多相关信息。",
+    "quote": "** 谁说程序员不需要油表？AI 额度比油费贵多了。",
+    "source": "",
+    "url": "#",
     "published": "2026-06-04",
-    "uid": "d804cfb06a9d2d29adb09aad659bd473"
+    "uid": "dev_6eb9c565"
   },
   {
     "title": "业务 Agent 搭建指南：别急着重造 Agent，用知识、工具与评测跑通闭环",
-    "content": "博客园技术长文，核心观点直击行业通病：很多团队一上来就要搭自己的 Agent Framework，包括规划器、执行循环、工具调度、记忆组件，忽视了最该先做的事。作者建议复用通用 Agent 基座，把重心放在三个可验证增强层——业务知识库、工具集、评测体系。避免在从零造框架的坑里浪费开发资源，先用起来再优化。",
-    "quote": "90% 的团队不需要自己的 Agent Framework，需要的是让自己的业务数据会说话。",
-    "source": "博客园 Cnblogs",
-    "url": "https://www.cnblogs.com/ai-old-six/p/20279607",
+    "content": "业务 Agent 搭建指南：别急着重造 Agent，用知识、工具与评测跑通闭环。详情请阅读原文了解更多相关信息。",
+    "quote": "** 90% 的团队不需要自己的 Agent Framework，需要的是让自己的业务数据会说话。",
+    "source": "",
+    "url": "#",
     "published": "2026-06-04",
-    "uid": "e279244c8475962bd01e0c201493ff90"
+    "uid": "dev_cecc1404"
   },
   {
     "title": "We rewrote Apache Airflow's control plane in Go (and kept the UI)",
-    "content": "Leoflow v0.0.1 发布——一个用 Go 重写 Apache Airflow 控制平面的开源项目，完整兼容 Airflow API 和 3.2.x 版 UI。核心思路是保留 Airflow 成熟的 Web UI 生态和 DAG 编排语义，但把 Python 控制平面替换为 Go，实现更高效的 Pod-per-task 执行模式。对受够 Airflow 性能和资源开销的团队来说，这是基础设施领域不容忽视的项目。",
-    "quote": "Airflow 用户：又慢又吃内存？那就把它的脑子换成 Go 的——身体还是那个身体。",
-    "source": "Dev.to",
-    "url": "https://dev.to/neochaotic/we-rewrote-apache-airflows-control-plane-in-go-and-kept-the-ui-1fh5",
+    "content": "We rewrote Apache Airflow's control plane in Go (and kept the UI)。详情请阅读原文了解更多相关信息。",
+    "quote": "** Airflow 用户：又慢又吃内存？那就把它的脑子换成 Go 的——身体还是那个身体。",
+    "source": "",
+    "url": "#",
     "published": "2026-06-04",
-    "uid": "245950fad17f2a86ea531d49ed25002a"
+    "uid": "dev_6b46934a"
   },
   {
     "title": "Ideogram 4.0 — 开源 9.3B 文本到图像模型发布",
-    "content": "Ideogram 发布新一代开源文生图模型 Ideogram 4.0，采用 9.3B 单流扩散 Transformer 架构，从头训练。最大亮点是通过结构化 JSON Prompt 实现精细控制，文字渲染能力大幅提升。开源权重发布在 GitHub，标志着 2026 年开源图像生成模型竞赛进入控制力比拼阶段——不再只看画得好看，更要看你能否精确描述每个像素。",
-    "quote": "文生图的终点不是画得美，是你说左边第三朵云带点夕阳红，它就绝不偏到右边。",
-    "source": "HN Show HN",
-    "url": "https://github.com/ideogram-oss/ideogram4",
+    "content": "Ideogram 4.0 — 开源 9.3B 文本到图像模型发布。Ideogram 4.0 — 开源 9.3B 文本到图像模型发布。该消息来自当日资讯报道，更多详情请查看原文链接。",
+    "quote": "** 文生图的终点不是画得美，是你说左边第三朵云带点夕阳红，它就绝不偏到右边。",
+    "source": "",
+    "url": "#",
     "published": "2026-06-04",
-    "uid": "2907f22e4a23b2e7e08aa2a7b50195b6"
+    "uid": "dev_7bdd0169"
   },
   {
     "title": "microsoft/markitdown — Python 文件转 Markdown 统一工具开源",
-    "content": "Microsoft 开源了 MarkItDown，一个用 Python 将各种文件格式统一转换为 Markdown 的工具。支持 PDF、DOCX、Excel、PowerPoint、图片加 OCR、HTML、CSV、JSON、XML 等十余种格式。在 LLM 和 AI 工作流预处理环节需求激增的 2026 年，这个工具解决了把异构数据喂给大模型前统一格式化的刚需，GitHub 日趋势榜首位。",
-    "quote": "所有文件最终都会变成 Markdown——不是因为它最好，是因为 AI 只认识它。",
-    "source": "GitHub Trending Daily",
-    "url": "https://github.com/microsoft/markitdown",
+    "content": "microsoft/markitdown — Python 文件转 Markdown 统一工具开源。详情请阅读原文了解更多相关信息。",
+    "quote": "** 所有文件最终都会变成 Markdown——不是因为它最好，是因为 AI 只认识它。",
+    "source": "",
+    "url": "#",
     "published": "2026-06-04",
-    "uid": "95016b4aae54e0577b4e0c323b910d91"
+    "uid": "dev_8874b7c5"
   }
 ]

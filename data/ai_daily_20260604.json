@@ -2,136 +2,181 @@
   {
     "title": "Google 发布 Gemma 4 12B：统一的无编码器多模态模型",
     "content": "Google 发布了 Gemma 4 12B 模型，这是一款创新的统一多模态模型，去除了传统编码器架构。该模型能直接处理文本、图像多模态输入，在多项基准测试中展现出与更大模型竞争的性能。Gemma 4 12B 的设计思路围绕无编码器架构展开，通过简化模型结构来提升推理效率，同时保持强大的多模态能力。该模型在 Hugging Face 上开源，开发者可直接下载使用。",
+    "quote": "12B 参数就能对标大模型，Google 这是把少即是多玩明白了。",
     "source": "Google AI Blog",
     "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/",
     "published": "2026-06-04",
-    "quote": "12B 参数就能对标大模型，Google 这是把少即是多玩明白了。",
-    "uid": "ai_30873f21"
+    "uid": "ai_6260d33c"
   },
   {
     "title": "微软发布新一代 AI 模型系列",
     "content": "Microsoft 在 microsoft.ai/models 平台上发布了新一代 AI 模型，涵盖语言、视觉和多模态能力。新的模型系列在推理效率和多语言能力上进行了优化，支持更广泛的开发者应用场景。Microsoft 正加速其在 AI 模型领域的布局，与 OpenAI 的深度合作基础上开始构建自有模型生态。",
+    "quote": "微软终于从用别人的模型转向建自己的模型生态了，步子不小。",
     "source": "Microsoft AI",
     "url": "https://microsoft.ai/models/",
     "published": "2026-06-04",
-    "quote": "微软终于从用别人的模型转向建自己的模型生态了，步子不小。",
-    "uid": "ai_93505e4c"
+    "uid": "ai_01203654"
   },
   {
     "title": "AgentSight：基于 eBPF 的系统级 AI Agent 追踪与监控框架",
     "content": "开源项目 AgentSight 利用 eBPF 技术实现了对 AI Agent 系统级行为的追踪与监控。该工具无需修改应用代码即可捕获 Agent 与系统内核的交互，包括系统调用、文件访问、网络通信等，为 AI Agent 的可观测性和安全性提供了基础设施。项目已在 GitHub 开源。",
+    "quote": "Agent 安全不是靠信仰，是靠 eBPF 下的每一行系统调用。",
     "source": "GitHub / Hacker News",
     "url": "https://github.com/eunomia-bpf/agentsight",
     "published": "2026-06-04",
-    "quote": "Agent 安全不是靠信仰，是靠 eBPF 下的每一行系统调用。",
-    "uid": "ai_ab852a02"
+    "uid": "ai_6b21f227"
   },
   {
     "title": "REST3D：单张图像重建物理稳定的 3D 场景",
     "content": "Google DeepMind 发布 REST3D 技术，能够从单张图像重建出物理稳定的 3D 场景。该方法在重建过程中引入了物理约束，确保重建的三维场景在现实世界中是力学稳定的，而非仅视觉效果逼真。这在机器人仿真、AR/VR 和游戏开发等领域有广泛应用前景。",
+    "quote": "单图变 3D 已经够强了，还要保证物理稳定——DeepMind 这是在给数字世界加物理定律。",
     "source": "Google DeepMind / Hacker News",
     "url": "https://shirleymaxx.github.io/REST3D/",
     "published": "2026-06-04",
-    "quote": "单图变 3D 已经够强了，还要保证物理稳定——DeepMind 这是在给数字世界加物理定律。",
-    "uid": "ai_af78a7d5"
+    "uid": "ai_155ba4e5"
   },
   {
     "title": "AURA-Mem：面向机器人策略的恒定 VRAM 动作门控记忆系统",
     "content": "最新研究提出 AURA-Mem，一种针对嵌入式机器人场景设计的动作门控记忆系统。通过学习式的门控机制，该系统只在会影响下一步动作的观测到来时才写入记忆，推理状态恒定仅为 4,224 字节。相比之下，标准 KV-cache 在 10 万步时会膨胀 6,061 倍。该方法在 LIBERO-Long 基准上保持了与无门控基线相同的成功率，同时减少 7 倍的写入次数。",
+    "quote": "KV-cache 是数据中心的好东西，但机器人不吃这套——AURA 证明了记忆也要懂闭嘴。",
     "source": "arXiv cs.AI",
     "url": "https://arxiv.org/abs/2606.02775",
     "published": "2026-06-04",
-    "quote": "KV-cache 是数据中心的好东西，但机器人不吃这套——AURA 证明了记忆也要懂闭嘴。",
-    "uid": "ai_6bbeca1f"
+    "uid": "ai_a580d906"
   },
   {
     "title": "Bank of Values (BoV)：注意力层中免上下文值向量的新范式",
     "content": "研究发现 Transformer 模型的深层注意力层实际上不需要从残差流中获取上下文来生成 value 向量。论文提出了 Bank of Values (BoV) 方法，通过学习一个 token 特定的值向量查找表，消除了对上下文相关计算的依赖。在 135M 和 780M 参数规模的模型上，BoV 不仅降低了验证损失，还在 21 个基准测试中匹配了现有最佳方法，同时减少了计算和内存开销。",
+    "quote": "注意力机制里最深层的秘密：后面那些层根本不需要看上下文——直接查表就行。",
     "source": "arXiv cs.CL",
     "url": "https://arxiv.org/abs/2606.02780",
     "published": "2026-06-04",
-    "quote": "注意力机制里最深层的秘密：后面那些层根本不需要看上下文——直接查表就行。",
-    "uid": "ai_c0c153d2"
+    "uid": "ai_607c3cf3"
   },
   {
     "title": "参议员 Sanders 呼吁公众应拥有大型 AI 公司一半所有权",
     "content": "美国参议员 Bernie Sanders 发表评论文章，主张公众应该持有大型 AI 公司一半的股份。他认为 AI 技术的巨大价值创造是建立在公共资源（互联网数据、公共研究基金、教育系统）之上的，公众应分享其收益。这一提议引发了关于 AI 治理、财富分配和企业社会责任的新一轮讨论。",
+    "quote": "AI 公司用公共数据喂模型，赚了万亿市值，公众要一半——听起来疯狂，但逻辑上没毛病。",
     "source": "Sanders Senate / Hacker News",
     "url": "https://www.sanders.senate.gov/op-eds/the-public-should-own-half-of-the-big-a-i-companies/",
     "published": "2026-06-04",
-    "quote": "AI 公司用公共数据喂模型，赚了万亿市值，公众要一半——听起来疯狂，但逻辑上没毛病。",
-    "uid": "ai_bc6cc283"
+    "uid": "ai_4fe1e944"
+  },
+  {
+    "title": "DDR5 内存飙升至 375 美元：AI 短缺持续挤压 PC 组装市场",
+    "content": "由于 AI 训练和推理需求持续消耗大量 HBM 和 DRAM 产能，32GB DDR5 内存价格已上涨至 375 美元。AI 芯片短缺的连锁效应正在向 PC 硬件市场传导，内存、GPU 和 SSD 价格全面上涨。分析人士警告这一趋势短期内难以缓解，因为 AI 计算集群对高性能内存的需求仍在快速增长。",
+    "quote": "AI 吃肉，DIY 玩家连汤都喝不上了——32GB DDR5 卖 375 美元，这谁顶得住。",
+    "source": "Tom's Hardware / Hacker News",
+    "url": "https://www.tomshardware.com/pc-components/ddr5/32gb-of-ddr5-now-costs-usd375-minimum-ai-shortage-continues-to-squeeze-pc-building",
+    "published": "2026-06-04",
+    "uid": "ai_f9e49891"
   },
   {
     "title": "Visual Graph Scaffolds：图结构作为 LLM 推理的视觉支架",
     "content": "新研究表明，图结构不仅仅是 LLM 的外部知识来源，更可以作为组织推理过程的内部支架。研究发现，当图结构被展平为文本时，推理效率和答案质量都会显著下降；而视觉化的图引导在移除直接答案提示后仍然保持有效。这一发现支持了图应同时作为外部知识结构和视觉推理支架的观点。",
+    "quote": "把思维导图做成文本，LLM 就不认了——原来图结构对 AI 来说也是一图胜千言。",
     "source": "arXiv cs.AI",
     "url": "https://arxiv.org/abs/2606.02673",
     "published": "2026-06-04",
-    "quote": "把思维导图做成文本，LLM 就不认了——原来图结构对 AI 来说也是一图胜千言。",
-    "uid": "ai_f7dd4e44"
+    "uid": "ai_3d8ff5fb"
   },
   {
     "title": "IdiomX：190K+ 样本的多语言习语理解评测基准",
     "content": "研究团队发布 IdiomX，一个大规模多语言习语理解基准数据集，涵盖 12K+ 习语的 190K+ 语境化样本，支持英语、阿拉伯语和法语。基准定义了一个统一四任务评测体系：习语检测、语境到习语检索、跨语言习语检索、习语释义。实验表明，上下文 Transformer 模型显著提升了习语检测性能，混合检索排序架构则增强了跨语言习语检索能力。",
+    "quote": "12K 习语、3 种语言、190K 样本——听懂言外之意这件事，AI 终于有了像样的考场。",
     "source": "arXiv cs.CL",
     "url": "https://arxiv.org/abs/2606.02584",
     "published": "2026-06-04",
-    "quote": "12K 习语、3 种语言、190K 样本——听懂言外之意这件事，AI 终于有了像样的考场。",
-    "uid": "ai_da694eed"
+    "uid": "ai_7cd8ce4a"
   },
   {
     "title": "微软 MXC 发布：操作系统级 AI Agent 沙箱，OpenAI 和 NVIDIA 已首批接入",
     "content": "微软在 Build 2026 开发者大会上正式推出 Microsoft Execution Containers (MXC)，一个内置于 Windows 操作系统的策略驱动型 AI Agent 执行沙箱。MXC 允许开发者和 IT 管理员在运行时声明 Agent 可以访问的文件、目录和网络资源，由操作系统内核在运行时强制执行这些边界。MXC 并非一个买断型产品，而是一个 SDK 和政策模型——从轻量级进程隔离（已被 GitHub Copilot 的 CLI 采用）到微虚拟机、Linux 容器乃至 Windows 365 上的完整云实例，覆盖完整的\"可组合沙箱光谱\"。该系统将 Agent 的执行与用户桌面、剪贴板、UI 和输入设备完全分离，并将每个 Agent 绑定到强身份（本地 ID 或 Microsoft Entra 支持的云身份），使 Agent 的每个行为都可追溯、可审计、可治理。OpenAI 和 NVIDIA 已宣布首批接入，这一举措被认为可能重新定义企业部署自主 AI 软件的方式。",
+    "quote": "Agent 失控不是安全漏洞，是缺了操作系统级的笼子——MXC 就是那个笼子。",
     "source": "VentureBeat / Microsoft Build 2026",
     "url": "https://venturebeat.com/security/microsoft-launches-mxc-an-os-level-sandbox-for-ai-agents-with-openai-and-nvidia-already-on-board",
     "published": "2026-06-04",
-    "quote": "Agent 失控不是安全漏洞，是缺了操作系统级的笼子——MXC 就是那个笼子。",
-    "uid": "ai_801abf7e"
+    "uid": "ai_d8476dc9"
   },
   {
     "title": "微软 Project Solara：专为 AI Agent 硬件打造的 Android 新系统",
     "content": "微软在 Build 2026 上宣布 Project Solara——一个为运行 AI Agent 的设备从头构建的新操作系统。出人意料的是，Solara 基于 Android（而非 Windows）打造，旨在\"在小型低功耗设备上运行，同时保留 IT 部门需要的管理和安全功能\"。微软展示了两款概念设备：一款类似 Amazon Echo Show 的桌面设备（支持面部识别解锁），以及一款可穿戴工牌（内置摄像头和指纹扫描仪，一键唤醒 AI Agent，能录制对话并实时转录，摄像头还能让 Agent \"看见\"用户所见的内容）。AccuWeather、Best Buy、CVS Healthcare 和 Target 已计划启动硬件试点。微软不打算自己量产这些设备，而是将它们作为参考设计，希望其他硬件制造商将其变成真正的产品。",
+    "quote": "微软用 Android 做 AI 硬件系统，而不是 Windows——这比产品本身更值得细品。",
     "source": "The Verge / GeekWire",
     "url": "https://www.theverge.com/news/941830/microsoft-project-solara-os-ai-agent-gadgets",
     "published": "2026-06-04",
-    "quote": "微软用 Android 做 AI 硬件系统，而不是 Windows——这比产品本身更值得细品。",
-    "uid": "ai_c181b227"
+    "uid": "ai_07655189"
   },
   {
     "title": "OpenAI Codex 重大更新：推出企业工作空间 Sites 和角色插件",
     "content": "OpenAI 为 Codex 平台推出重大更新，引入三项关键功能：Sites（快速半私有网页托管功能）、Annotations（本地化上下文编辑工具）和六种角色特定插件。其中 Annotations 解决了 AI 编辑文档时\"全量重写\"的痛点——用户高亮特定区域后，Codex 只在该边界内执行代码，不会破坏周围单元格依赖、样式和未选中的公式。六种角色插件（数据分析、创意制作、销售、产品设计、投资银行等）捆绑了 62 款主流商业应用（包括 Snowflake、Figma、Salesforce）和 110 项自动化技能。值得注意的是，非开发人员现在占 Codex 500 万周活用户的约 20%，且采用速度是传统工程师的 3 倍。",
+    "quote": "Codex 从程序员终端走向白领办公室，OpenAI 在微软 Build 前一天发这个，摆明了是打擂台。",
     "source": "VentureBeat / OpenAI",
     "url": "https://venturebeat.com/orchestration/openais-codex-update-lets-agents-build-interactive-enterprise-workspaces-via-sites-and-role-specific-plugins",
     "published": "2026-06-04",
-    "quote": "Codex 从程序员终端走向白领办公室，OpenAI 在微软 Build 前一天发这个，摆明了是打擂台。",
-    "uid": "ai_c6c84cc9"
+    "uid": "ai_5d2ff4da"
+  },
+  {
+    "title": "Pinterest 用 Qwen 定制化砍掉 90% AI 成本：拆掉视觉层换上自家嵌入",
+    "content": "Pinterest CTO Matt Madrigal 分享了一个令人咋舌的优化案例：通过\"拆掉\" Qwen3-VL 的视觉编码器层并用自有多模态嵌入重塑，Pinterest 将 AI 推荐成本降低了 90%，同时准确率提升了 30%。Pinterest 拥有约 6.2 亿月活用户，如果每个图片推荐都调用前沿模型，\"那不是策略，那是账单\"。团队还在自家\"品味图谱\"基础上构建了 Navigator 1 对话式购物助手——一个动态的偏好图谱，捕捉数十亿用户不断变化的品味，而非简单的社交图谱。Madrigal 强调数据质量可以\"压倒模型大小\"，开放权重模型配合独家数据微调才是真正的护城河。",
+    "quote": "6.2 亿用户用前沿模型做推荐？Pinterest 说承担不起——于是自己造了个省 90% 钱的。",
+    "source": "VentureBeat / VB Beyond the Pilot",
+    "url": "https://venturebeat.com/orchestration/pinterest-cut-ai-costs-90-by-gutting-a-frontier-models-vision-layer",
+    "published": "2026-06-04",
+    "uid": "ai_a932b197"
+  },
+  {
+    "title": "AI Agent 进入\"重建时代\"：企业面临可靠性危机",
+    "content": "随着企业 AI Agent 进入生产环境，组织正在面对一个日益严重的可靠性问题。许多团队发现，LLM 性能本身并不能决定 Agent 在生产中的成败。长时间运行的 AI 工作流必须应对崩溃、状态保持、故障恢复、推理成本管理以及跨 API 和系统的协调。Temporal Technologies 的 SVP Preeti Somal 在纽约的最新 AI Impact Series 活动中指出，大量客户正在构建\"同一个 Agent 的 2.0 版本\"——\"他们必须快速行动，但没有处理好管道。东西崩溃烧掉了，然后他们又回来重建可靠的基础。\"Somal 提出了\"确定性脊柱\" 概念：LLM 是产生可变输出的概率系统，而编排软件在其周围维护执行可靠性。",
+    "quote": "Agent 的 1.0 都是快糙猛，2.0 才是真功夫——先跑起来再修路的时代结束了。",
+    "source": "VentureBeat / AI Impact Series",
+    "url": "https://venturebeat.com/orchestration/ai-agents-are-entering-their-rebuild-era-as-enterprises-confront-the-reliability-problem",
+    "published": "2026-06-04",
+    "uid": "ai_3047340f"
   },
   {
     "title": "Meta 用员工电脑活动训练 AI Agent：鼠标移动和键盘敲击全记录",
     "content": "Meta 推出名为\"Model Capability Initiative\"（MCI）的内部工具，在员工的工作电脑上安装，记录鼠标移动、点击、键盘敲击和屏幕截图，用于训练 AI Agent 如何在计算机上像人类一样操作。Meta CTO Andrew Bosworth 在内部备忘录中明确表示：\"我们正在构建的愿景是，Agent 主要做工作，而我们的角色是指挥、审查并帮助它们改进。\"MCI 不参与\"绩效评估\"，员工无法选择退出。这一举措在 Meta 内部引发强烈反弹，有员工回复备忘录称\"这让我超级不舒服\"。目前 MCI 仅部署在美国员工的电脑上，覆盖工作相关的应用和网站。",
+    "quote": "Meta 员工现在连鼠标怎么动都是训练数据了——还强制参加，不服不行。",
     "source": "The Verge / Reuters",
     "url": "https://www.theverge.com/tech/916681/meta-ai-agents-employee-tracking",
     "published": "2026-06-04",
-    "quote": "Meta 员工现在连鼠标怎么动都是训练数据了——还强制参加，不服不行。",
-    "uid": "ai_7be03769"
+    "uid": "ai_fdc5326c"
+  },
+  {
+    "title": "佛罗里达州对 OpenAI 展开正式调查：涉国家安全与 FSU 枪击案关联",
+    "content": "佛罗里达州总检察长 James Uthmeier 宣布对 OpenAI 展开正式调查，指控其数据和技术\"落入美国敌人（如中国共产党）手中\"，并称 ChatGPT 与儿童性虐待材料、鼓励自伤以及佛罗里达州立大学（FSU）枪击案有关联。Uthmeier 表示相关传票\"即将发出\"。FSU 枪击案嫌疑人被指控与 ChatGPT 保持\"持续沟通\"，受害者家属已对 OpenAI 提起诉讼。OpenAI 预计今年启动 IPO，正面临美国联邦贸易委员会（FTC）对 AI 聊天机器人对儿童影响的新一轮审查。",
+    "quote": "OpenAI 的 IPO 路上，佛罗里达扔了一颗政治炸弹——国家安全和枪击案的帽子一扣，麻烦大了。",
+    "source": "The Verge / Reuters / The Guardian",
+    "url": "https://www.theverge.com/policy/909557/openai-florida-investigation",
+    "published": "2026-06-04",
+    "uid": "ai_ff1d5084"
   },
   {
     "title": "Google Phone 新增 AI 诈骗电话检测：冒充亲友的骗子再也藏不住",
     "content": "Google 为其 Phone 应用推出 AI 驱动的新功能，可检测并标记冒充联系人号码的诈骗电话。该功能利用端到端加密的 RCS 技术——当真正联系人拨打时，其设备会发送\"静默确认信号\"验证身份；如果骗子伪造号码，信号缺失，Google Phone 就会显示警告\"有人可能冒充您的联系人\"并提供挂断选项。据 FBI 报告，2025 年美国人在 AI 相关诈骗中损失超过 8.93 亿美元。该功能默认启用，支持 Android 12 及以上用户，从 Pixel 手机开始推送。这是 Google 六月 Android 更新的一部分，还包括 Apple AirDrop 跨设备支持扩展、AI 穿衣搭配等功能。",
+    "quote": "8.93 亿美元被骗走之后，Google 终于出手了——用 AI 防 AI 诈骗，才是正确的军备竞赛方向。",
     "source": "The Verge / Google Blog",
     "url": "https://www.theverge.com/tech/941517/google-phone-scammer-ai-impersonation",
     "published": "2026-06-04",
-    "quote": "8.93 亿美元被骗走之后，Google 终于出手了——用 AI 防 AI 诈骗，才是正确的军备竞赛方向。",
-    "uid": "ai_0ea1c5e0"
+    "uid": "ai_816dbbb8"
+  },
+  {
+    "title": "AI 数据饥渴新招：初创公司 Shift 免费给纽约人打扫卫生，换的是训练机器人数据",
+    "content": "AI 训练数据初创公司 Shift 宣布为纽约居民提供免费家庭清洁服务，但条件是在清洁过程中全程录制视频——清洁工戴着装有摄像头的\"魔法帽子\"，以第一人称视角记录扫地、擦窗、洗碗等家务活动。这些视频经人脸和敏感信息模糊处理后，将用于训练家用机器人。Shift 联合 CEO 表示，训练数据产生的价值远超清洁成本。服务仅限纽约市，但计划很快扩展到旧金山、伦敦、苏黎世和慕尼黑。Shift 表示已在 15 个国家付费让数万人通过 App 记录日常活动。印度家政平台 Pronto 也被曝用客户家庭录制 AI 训练视频，引发大规模争议。",
+    "quote": "免费的清洁服务？Shift 说代价是你家变成机器人训练场——数据经济时代的家政新玩法。",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/939765/ai-training-data-startup-shift-free-cleaning",
+    "published": "2026-06-04",
+    "uid": "ai_6dd932f5"
   },
   {
     "title": "Google Photos AI \"数字衣橱\"上线：从照片中提取衣物，虚拟混搭任意穿搭",
     "content": "Google 在其六月 Android 更新中推出 Google Photos AI 生成\"数字衣橱\"功能。系统从用户照片中提取衣物数据，自动创建虚拟衣柜，支持将不同单品混搭生成虚拟试穿效果，并可保存和分享。该功能在美国、印度和巴西率先推出，面向 AI Pro/Ultra 订阅用户和部分 Android 用户。不过需要至少 1000 张包含本人的照片才能免订阅使用。这标志着 AI 在个人消费场景中从\"生成内容\"向\"理解个人物品\"的深化——不仅是生成一件衣服，而是理解你衣柜里的每一件衣服。",
+    "quote": "Google 让你不用出门就能试遍衣柜里的每件衣服——前提是你得有 1000 张自拍。",
     "source": "The Verge / Google Blog",
     "url": "https://www.theverge.com/tech/920420/google-photos-ai-try-on-wardrobe",
     "published": "2026-06-04",
-    "quote": "Google 让你不用出门就能试遍衣柜里的每件衣服——前提是你得有 1000 张自拍。",
-    "uid": "ai_d9c98541"
+    "uid": "ai_75a25fcf"
   }
 ]
