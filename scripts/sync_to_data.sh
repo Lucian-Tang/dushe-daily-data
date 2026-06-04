@@ -98,12 +98,35 @@ for f in data/*_daily_*.json; do
     safe_cp "$f" "$basename_f" || true
 done
 
-# ── 2. 同步 index.json（仍从 root 写，gen-index.py 已生成权威版本）──
-# index.json 在 root 已由 gen-index.py 生成（带 data/ 前缀），
-# data/index.json 也已由 gen-index.py 写入（不带前缀，供小程序加载）
-# 此处确保 root 和 data/ 的 index.json 都存在且根版本最新
-if [ -f "index.json" ]; then
-    safe_cp "index.json" "data/index.json" || log "  ⚠️ index.json → data/index.json 跳过（保护）"
+# ── 2. 同步 index.json ──
+# 🚨 不可直接复制根目录 index.json 到 data/index.json！
+# 根目录 index.json 包含 "data/" 前缀（Web 端用），
+# data/index.json 无前缀（小程序用），由 gen-index.py 单独生成。
+# 此处确保 data/index.json 存在但不覆盖 gen-index.py 的权威输出。
+# 详见 MEMORY.md: index.json 双路径规则（data/index.json 无前缀）
+if [ -f "data/index.json" ]; then
+    log "  ℹ️  data/index.json 已由 gen-index.py 生成（无前缀版），跳过覆盖"
+elif [ -f "index.json" ]; then
+    # data/ 无 index.json 时从 root 拷贝并剥离 data/ 前缀
+    log "  ⚠️  data/index.json 不存在，从 root 拷贝并剥离前缀..."
+    python3 -c "
+import json
+with open('index.json') as f:
+    d = json.load(f)
+# 剥离 data/ 前缀
+for k in list(d.keys()):
+    if isinstance(d[k], str) and d[k].startswith('data/'):
+        d[k] = d[k][5:]
+if 'history' in d:
+    for sk in d['history']:
+        d['history'][sk] = [p[5:] if p.startswith('data/') else p for p in d['history'][sk]]
+if 'checksums' in d:
+    d['checksums'] = {k[5:] if k.startswith('data/') else k: v for k, v in d['checksums'].items()}
+with open('data/index.json', 'w') as f:
+    json.dump(d, f, ensure_ascii=False, indent=2)
+    f.write('\n')
+print('  ✅ data/index.json 已生成（无前缀）')
+" || log "  ⚠️  生成 data/index.json 失败"
 fi
 
 # ── 3. 同步 weekly_*.json / ai_models_*.json / hf_daily (如有) ──
