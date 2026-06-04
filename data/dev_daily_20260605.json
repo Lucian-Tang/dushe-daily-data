@@ -1,92 +1,92 @@
 [
   {
     "title": "They're made out of weights — 神经网络权重到底意味着什么",
-    "content": "一篇深刻探讨神经网络权重本质的文章在 HN 上引爆讨论（1125 分、475 条评论）。作者用经典软件工程的概念（变量、函数、抽象层）来对照神经网络中的权重究竟是什么——不是代码、不是规则，而是不可解释的数值矩阵。社区争论集中在：如果权重不是程序员能理解的抽象，我们凭什么信任它们驱动的系统？这是 AI 时代最根本的认知冲突，推荐每个写 AI 代码的人读。",
-    "quote": "你的代码里没有 if-else，只有一堆你也不懂的数——恭喜，你正式入行 AI 了。",
-    "source": "HN Front Page",
-    "url": "https://maxleiter.com/blog/weights",
+    "content": "They're made out of weights — 神经网络权重到底意味着什么。详情请阅读原文了解更多相关信息。",
+    "quote": "** 你的代码里没有 if-else，只有一堆你也不懂的数——恭喜，你正式入行 AI 了。",
+    "source": "",
+    "url": "#",
     "published": "2026-06-05",
-    "uid": "da6db3b2c33a38d1e2c94fcc46f0b9d9"
+    "uid": "dev_7dc9bcef"
   },
   {
     "title": "Gemma 4 12B — Google 发布无编码器多模态开源模型",
-    "content": "Google 正式发布 Gemma 4 12B，一款去编码器（encoder-free）的统一多模态模型，无需独立视觉编码器即可处理图像和文本。HN 获得 961 分、360 条评论，社区讨论集中在它和 Llama 4、Qwen 2.5 的对比，以及无编码器架构在实际部署中的计算开销优势。对有端侧部署需求的团队来说，12B 参数令人惊喜的性价比值得关注。",
-    "quote": "都 2026 年了，Google 终于想起自己也能发布真正能打的开源模型了。",
-    "source": "HN Front Page",
-    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/",
+    "content": "Gemma 4 12B — Google 发布无编码器多模态开源模型。详情请阅读原文了解更多相关信息。",
+    "quote": "** 都 2026 年了，Google 终于想起自己也能发布真正能打的开源模型了。",
+    "source": "",
+    "url": "#",
     "published": "2026-06-05",
-    "uid": "438351e941d1e5eafbd31fb996105474"
+    "uid": "dev_f45dcf8b"
   },
   {
     "title": "Elixir v1.20 正式发布——Elixir 从此是渐进类型语言",
-    "content": "Elixir 1.20 正式发布，最大的亮点是将渐进类型系统（Gradual Typing）引入语言核心。HN 获 903 分、356 条评论，社区反应热烈——有人称这是“Elixir 成为企业级语言最后一块拼图”，也有人担心类型注解会破坏 Elixir 原本的灵活性和 DSL 生态。对于 Erlang/BEAM 生态的忠实用户而言，这是多年来最令人兴奋的更新。",
-    "quote": "动态类型一时爽，直到你的项目有 50 万行代码——Elixir 说：好了别吵了，我全都要。",
-    "source": "HN Front Page",
-    "url": "https://elixir-lang.org/blog/2026/06/03/elixir-v1-20-0-released/",
+    "content": "Elixir v1.20 正式发布——Elixir 从此是渐进类型语言。详情请阅读原文了解更多相关信息。",
+    "quote": "** 动态类型一时爽，直到你的项目有 50 万行代码——Elixir 说：好了别吵了，我全都要。",
+    "source": "",
+    "url": "#",
     "published": "2026-06-05",
-    "uid": "b7f8defc271f490c9af6a1b31cef2c82"
+    "uid": "dev_81c13b35"
   },
   {
     "title": "VoidZero 加入 Cloudflare——JS 工具链格局大地震",
-    "content": "VoidZero（即 Oxc 背后的公司，Oxidation Compiler 系列的 JS/TS 工具链）宣布加入 Cloudflare。HN 获 320 分、160 条评论，社区讨论集中在：这意味着 Oxc/Rust 工具链将获得 Cloudflare 基础设施级的支撑，而 Cloudflare Workers 的 JS 构建和部署能力可能因此脱胎换骨。对前端工程化而言，这是 2026 年最具战略意义的收购之一。",
-    "quote": "JS 工具链的 Rust 化进程：从个人项目到明星项目，再到被云厂商抱走——标准剧本。",
-    "source": "HN Front Page",
-    "url": "https://blog.cloudflare.com/voidzero-joins-cloudflare/",
+    "content": "VoidZero 加入 Cloudflare——JS 工具链格局大地震。详情请阅读原文了解更多相关信息。",
+    "quote": "** JS 工具链的 Rust 化进程：从个人项目到明星项目，再到被云厂商抱走——标准剧本。",
+    "source": "",
+    "url": "#",
     "published": "2026-06-05",
-    "uid": "d155ec042a1be9baa760a0d06fdd995b"
+    "uid": "dev_4104c55d"
   },
   {
     "title": "花了 $1500 搭了个有漏洞的 App，就为了看看 LLM 能不能黑进来",
-    "content": "一位安全研究员做了一个自带漏洞的 Web 应用，然后用 7 个不同 LLM 充当黑客尝试渗透。花了 1500 美元 API 费用后，结果令人不安：GPT-5 和 Claude 4 能独立完成 SQL 注入、XSS 和 SSRF 攻击，甚至比大多数脚本小子干得更好。HN 获 324 分、169 条评论，社区认为这不仅是安全测试，更是 AI Agent 能力的基准测试——值得每个安全工程师看一看。",
-    "quote": "AI 的安全测试报告：不是发现了漏洞，而是发现 AI 自己就是最好的黑客。",
-    "source": "HN Front Page",
-    "url": "https://kasra.blog/blog/i-spent-1500-seeing-if-llms-could-hack-my-app/",
+    "content": "花了 $1500 搭了个有漏洞的 App，就为了看看 LLM 能不能黑进来。详情请阅读原文了解更多相关信息。",
+    "quote": "** AI 的安全测试报告：不是发现了漏洞，而是发现 AI 自己就是最好的黑客。",
+    "source": "",
+    "url": "#",
     "published": "2026-06-05",
-    "uid": "b7aa63ef957586af57aabafa41badf61"
+    "uid": "dev_c322c299"
   },
   {
     "title": "Anthropic 揭秘：如何在产品里安全地 Contain Claude",
-    "content": "Anthropic 官方工程博客详细拆解了他们在 Claude 产品中使用的多层级安全隔离体系——从提示注入检测、沙箱执行到输出过滤的完整链路。HN 获 188 分、82 条评论，开发者们对 Anthropic 选择公开这些细节表示赞赏，也有讨论指出这些 containment 措施在开源模型中很难复制。对任何正在构建 AI Agent 产品的团队，这是必读的安全设计文档。",
-    "quote": "你以为是 Claude 在免费回答问题？其实是 Anthropic 在给它系安全带。",
-    "source": "HN Front Page",
-    "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
+    "content": "Anthropic 揭秘：如何在产品里安全地 Contain Claude。详情请阅读原文了解更多相关信息。",
+    "quote": "** 你以为是 Claude 在免费回答问题？其实是 Anthropic 在给它系安全带。",
+    "source": "",
+    "url": "#",
     "published": "2026-06-05",
-    "uid": "93fe29b169918a58b1dc44e4c2c201ac"
+    "uid": "dev_2f546321"
   },
   {
     "title": "GitHub Copilot 新版计费翻车：2天烧掉49美元，开发者炸锅了",
-    "content": "博客园热文揭露 GitHub Copilot Pro+ 新版计费规则灾难性上线：6月1日至2日短短两天，7000 内置 Credits 全额耗尽、10 美元附加预算全部透支，实际产生费用超 49 美元。海外开发者同期发文抱怨 3 天掏空月度全部代币。评论区开发者纷纷表示在 Cursor/Windsurf 持续涨价的大背景下，国产开源 AI 编程工具迎来了最佳替代窗口期。",
-    "quote": "Copilot 用两天告诉你：你的 $19/月 只是进门费，真正烧钱的是背后的每一条补全。",
-    "source": "博客园 Cnblogs",
-    "url": "https://www.cnblogs.com/lsjwq/p/20304480",
+    "content": "GitHub Copilot 新版计费翻车：2天烧掉49美元，开发者炸锅了。详情请阅读原文了解更多相关信息。",
+    "quote": "** Copilot 用两天告诉你：你的 $19/月 只是进门费，真正烧钱的是背后的每一条补全。",
+    "source": "",
+    "url": "#",
     "published": "2026-06-05",
-    "uid": "2d1fe14107e0b6468a65caef5d503ffa"
+    "uid": "dev_8d018ea8"
   },
   {
     "title": "CodeGraph 代码图谱实战：AI Agent 为什么不该再从 grep 开始",
-    "content": "博客园技术长文，直击 AI 代码 Agent 的核心痛点：面对陌生仓库，Agent 总会先列目录、搜关键词、猜入口点——错了好几次才知道看哪里。作者提出用代码图谱（CodeGraph）替代 grep 式搜索，通过构建函数调用链、数据流和依赖关系图，让 Agent 的代码定位从盲猜变成有路标可循。在 Agent 写代码越来越像模像样的 2026 年，谁说代码理解不是更关键的瓶颈？",
-    "quote": "给 Agent 装个 grep 就觉得自己尽调了？它需要的是一张代码地图，而不是一个关键词搜索框。",
-    "source": "博客园 Cnblogs",
-    "url": "https://www.cnblogs.com/ai-old-six/p/20300790",
+    "content": "CodeGraph 代码图谱实战：AI Agent 为什么不该再从 grep 开始。详情请阅读原文了解更多相关信息。",
+    "quote": "** 给 Agent 装个 grep 就觉得自己尽调了？它需要的是一张代码地图，而不是一个关键词搜索框。",
+    "source": "",
+    "url": "#",
     "published": "2026-06-05",
-    "uid": "a0447e8ff9908396bdda9b3bd49d7b80"
+    "uid": "dev_dde73820"
   },
   {
     "title": "Polywise——开源替代 Notebooklm/Obsidian+Claude 的知识库，支持本地模型与 Agent 群聊",
-    "content": "V2EX 上一位独立开发者耗时半年开源了 Polywise，定位为 Notebooklm、ima 和 Obsidian+Claude 知识的开源替代品。核心亮点：支持本地模型（无需联网）、Graph RAG 知识图谱、Agent 群聊协作，灵感来自用神经网络模拟人脑记忆机制的思路。GitHub 已开源，对受够闭源 AI 知识库定价和隐私顾虑的团队来说值得关注。",
-    "quote": "NotebookLM 好用但你能往里面喂公司财报吗？不能——好了，这就是你需要的开源替代品。",
-    "source": "V2EX Share",
-    "url": "https://github.com/MatrixAges/polywise",
+    "content": "Polywise——开源替代 Notebooklm/Obsidian+Claude 的知识库，支持本地模型与 Agent 群聊。详情请阅读原文了解更多相关信息。",
+    "quote": "** NotebookLM 好用但你能往里面喂公司财报吗？不能——好了，这就是你需要的开源替代品。",
+    "source": "",
+    "url": "#",
     "published": "2026-06-05",
-    "uid": "0309627554e1dea6a03a78d8c0391ab1"
+    "uid": "dev_80a52588"
   },
   {
     "title": "headroom — 把工具输出压缩 60-95% 再喂给 LLM，token 省疯了",
-    "content": "开源项目 headroom 本周冲上 GitHub Trending，定位简单粗暴：在把工具输出、日志、文件和 RAG 块交给 LLM 之前进行智能压缩，声称可省 60-95% token。支持库模式、Agent模式和 MCP Server 三种接入方式。在 API 成本持续走高的 2026 年，这个思路直接命中了每个重度使用 LLM 的团队的痛点——与其焦虑额度，不如先压缩。",
-    "quote": "每个月 API 账单比服务器还贵？不是 LLM 太贵，是你喂给它的垃圾太多了。",
-    "source": "GitHub Trending Daily",
-    "url": "https://github.com/chopratejas/headroom",
+    "content": "headroom — 把工具输出压缩 60-95% 再喂给 LLM，token 省疯了。详情请阅读原文了解更多相关信息。",
+    "quote": "** 每个月 API 账单比服务器还贵？不是 LLM 太贵，是你喂给它的垃圾太多了。",
+    "source": "",
+    "url": "#",
     "published": "2026-06-05",
-    "uid": "f5755089efdb64a78e54c49cc6286691"
+    "uid": "dev_b5c06e78"
   }
 ]
