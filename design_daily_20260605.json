@@ -1,0 +1,119 @@
+[
+  {
+    "title": "CSS sibling-index() 和 sibling-count() 来了：一行代码搞定交错动画",
+    "content": "Smashing Magazine 发表深度文章介绍 CSS sibling-index() 和 sibling-count() 函数。这两个函数让开发者无需 JS 或 Sass 循环，直接通过 calc(sibling-index() * 100ms) 实现任意数量的元素交错动画。Chrome 138 已支持，彻底终结了靠 :nth-child() 硬编码的时代。",
+    "quote": "终于不用为了交错动画写几十行 nth-child 了，泪目。",
+    "url": "https://www.smashingmagazine.com/2026/05/mathematical-layouts-sibling-index-sibling-count/",
+    "source": "Smashing Magazine",
+    "published": "2026-06-05",
+    "uid": "6b9757c816b30760d282f242a88aad9a"
+  },
+  {
+    "title": "Figma 全面开放 MCP 服务：AI Agent 可直接读写设计画布",
+    "content": "Figma 推出 MCP（Model Context Protocol）服务，AI Agent 通过 use_figma 工具可直接在 Figma 画布上创建和修改设计资产。结合 Skills（Markdown 格式的设计指南），Agent 能理解团队设计系统规范，让代码与设计之间的反馈循环从「提单等待」变成「实时对话」。",
+    "quote": "设计师的最大威胁不是老板，是能读设计稿的 AI Agent。",
+    "url": "https://www.figma.com/blog/workflow-lab-expanding-the-canvas-with-figma-mcp/",
+    "source": "Figma Blog",
+    "published": "2026-06-05",
+    "uid": "b484684d441a142e9d352e0ec2a24360"
+  },
+  {
+    "title": "CSS ::checkmark 伪元素首曝：终于能自定义勾号样式了",
+    "content": "CSS-Tricks 报道了 ::checkmark 伪元素的首次亮相。这个新伪元素解决了 UI 开发中老生常谈的勾号样式问题——不再依赖 Unicode 字符或 SVG，支持对 checkbox、radio、select 的选中态指示器进行样式化。这是渐进增强理念在表单控件领域的重大落地。",
+    "quote": "终于不用再 hack 复选框的勾号了，设计师泪流满面。",
+    "url": "https://css-tricks.com/whats-important-12/",
+    "source": "CSS-Tricks",
+    "published": "2026-06-05",
+    "uid": "899ddf1c5286e9ff98c1dfc80e2f660b"
+  },
+  {
+    "title": "2026 年度 CSS 现状调查启动：规模缩减，聚焦核心特性",
+    "content": "State of CSS 2026 年度调查正式开放。今年的调查刻意减少了覆盖的特性数量，聚焦最重要的新功能。主办方坦言 CSS 进步太快没人能全掌握。调查涵盖 sibling-index()、View Transitions、CSS Anchor Positioning 等近年热门特性。",
+    "quote": "CSS 特性多到官方都开始劝你别学了，懂的都懂。",
+    "url": "https://survey.devographics.com/en-US/survey/state-of-css/2026",
+    "source": "State of CSS",
+    "published": "2026-06-05",
+    "uid": "c35a42a42210d2c96f75834747a955c2"
+  },
+  {
+    "title": "跨文档视图过渡实战：如何规模化处理数百个元素过渡",
+    "content": "CSS-Tricks 发表跨文档视图过渡系列第二篇，深入探讨如何将单元素过渡扩展到数百个元素的产品列表页。文章介绍了 ident() + sibling-index() 组合实现自动生成唯一 view-transition-name 的方案，以及目前在没有 ident() 支持的情况下的迂回策略。",
+    "quote": "一个 transition 撑不住 48 张产品卡，除非你会这一招。",
+    "url": "https://css-tricks.com/cross-document-view-transitions-part-2/",
+    "source": "CSS-Tricks",
+    "published": "2026-06-05",
+    "uid": "25105ad08c1213f8e08fec29190e9bf4"
+  },
+  {
+    "title": "Chrome 145 引入 column-wrap 和 column-height：CSS 多列布局终于不滚了",
+    "content": "CSS-Tricks 和 Smashing Magazine 同时报道 Chrome 145 中新发布的 column-wrap 和 column-height 属性。这两个属性让多列布局在内容溢出时自动换行（纵向滚动）而不是水平滚动，彻底改变了多列布局在 Web 上的可用性体验。目前仅 Chrome 145+ 支持。",
+    "quote": "多列布局终于不用水平滚动了，十年的痛今天治好了。",
+    "url": "https://css-tricks.com/css-multi-column-layout-wrapping-features/",
+    "source": "CSS-Tricks",
+    "published": "2026-06-05",
+    "uid": "5c31e8d3ca3547dae16acf301d7ea8b7"
+  },
+  {
+    "title": "AI 透明度的 UI 模式（第二篇）：告别转圈，让 AI 思考过程可见",
+    "content": "Smashing Magazine 发表 AI 透明界面设计模式系列第二篇。文章中批判了传统 spinner/转圈动画在 Agentic AI 体验中的失效——用户无法判断 AI 是卡住还是在思考。提出了一系列替代模式：实时状态更新、明确的操作描述、进度可视化，以及 Agentic Update 微文案框架。",
+    "quote": "转圈圈是对 AI 用户最大的不尊重，让它告诉你在想什么。",
+    "url": "https://www.smashingmagazine.com/2026/05/practical-interface-patterns-ai-transparency/",
+    "source": "Smashing Magazine",
+    "published": "2026-06-05",
+    "uid": "a4fad266278b146fbe7bf159d4cb1b47"
+  },
+  {
+    "title": "十条数据证明：用户体验 ROI 不是玄学",
+    "content": "Carrie Webster 在 Smashing Magazine 发表文章，引用 IBM Systems Institute 和 Segue Technologies 的数据揭示 UX 的量化价值：设计阶段修复问题的成本是上线后的 1/100；加载时间每减少 0.1 秒都有可衡量的收入提升。为产品团队争取设计资源提供了弹药。",
+    "quote": "拿这篇文章给老板看，UX 不是花钱是省钱。",
+    "url": "https://www.smashingmagazine.com/2026/05/data-backed-truths-user-experience-roi/",
+    "source": "Smashing Magazine",
+    "published": "2026-06-05",
+    "uid": "b291b9ba9e92a04b787d200cf56f76d9"
+  },
+  {
+    "title": "流式内容稳定界面设计：AI 聊天气泡的三大痛点与解法",
+    "content": "Smashing Magazine 发布深度文章，解析流式渲染 UI 的三大问题：滚动冲突（自动滚回底部 vs 用户主动上划）、布局偏移（容器不断变长导致交互目标移位）、渲染频率（每秒更新 60 次以上造成无谓 DOM 开销）。提供了从滚动锁定到频率节制的完整解决方案。",
+    "quote": "AI 聊天界面做到不卡不跳不变形，比你想的难多了。",
+    "url": "https://www.smashingmagazine.com/2026/05/designing-stable-interfaces-streaming-content/",
+    "source": "Smashing Magazine",
+    "published": "2026-06-05",
+    "uid": "6adad7edef851a37c9cdc0cc8978406a"
+  },
+  {
+    "title": "你的原型在欺骗用户：金融 App 原型的高保真改造指南",
+    "content": "Smashing Magazine 发表关于原型测试置信度的文章。指出在银行类 App 测试中，静态原型会让用户察觉这不是真应用，导致数据失真。解决方案：用 ProtoPie 构建包含真实登录验证、密码掩码、Face ID 动画等交互的行为原型，让用户信服的同时保证测试数据真实。",
+    "quote": "你的用户一测就知道是假 App，别骗自己了。",
+    "url": "https://www.smashingmagazine.com/2026/05/prototype-users-fix-protopie/",
+    "source": "Smashing Magazine",
+    "published": "2026-06-05",
+    "uid": "6424e39131a5719c71f7f9715ad7d6cc"
+  },
+  {
+    "title": "CSS Subgrid 全面指南：每个前端都应该用起来的理由",
+    "content": "David Bushell 发表 CSS Subgrid 教程，详细介绍这个已获浏览器广泛支持的 CSS 特性的实际用法。从基础的网格嵌套到 CMS 内容的自适应布局，Subgrid 让子元素继承父网格轨道，结束了靠手动对齐元素的痛苦。文章用实际案例展示 Subgrid 如何简化复杂布局代码。",
+    "quote": "用过 Subgrid 就回不去了，网格嵌套的终极救星。",
+    "url": "https://dbushell.com/2026/04/02/css-subgrid-is-super-good/",
+    "source": "David Bushell",
+    "published": "2026-06-05",
+    "uid": "1c01825a8bf8646253114c4f164bcb02"
+  },
+  {
+    "title": "系统工具的用户体验需要重新思考：不应该那么难用",
+    "content": "Kyrylo Levashov 在 Smashing Magazine 撰文探讨系统工具类应用的体验设计陷阱。指出维护型工具存在四大设计偏见：假设用户已厌恶任务、假设功能足够即可、假设只有消费类应用需要好体验、假设高效率就是好体验。类比 Dyson 改变了吸尘器设计的理念，系统软件也该升级了。",
+    "quote": "系统工具的设计一直活在 90 年代，该学学 Dyson 了。",
+    "url": "https://www.smashingmagazine.com/2026/05/rethinking-experience-system-tools/",
+    "source": "Smashing Magazine",
+    "published": "2026-06-05",
+    "uid": "0d115030faf7cfee4270f6e0d6364fa8"
+  },
+  {
+    "title": "客户理解四层级框架：别相信用户说的，要看用户做的",
+    "content": "Vitaly Friedman 在 Smashing Magazine 介绍 Hannah Shamji 的「客户理解四层级」框架：人们说的、想的/感受的、做的、以及为什么做。这四个层面往往截然不同。提供了实用的三角验证方法，帮助设计团队从表面的用户反馈穿透到真正的行为动因。",
+    "quote": "用户嘴上说想要 A，实际用 B，你用 C 才对了。",
+    "url": "https://www.smashingmagazine.com/2026/05/four-levels-customer-understanding/",
+    "source": "Smashing Magazine",
+    "published": "2026-06-05",
+    "uid": "97e1a411f91e8af30bbac55088bbc283"
+  }
+]
