@@ -1,38 +1,62 @@
 [
   {
-    "slug": "metacognition-skill",
-    "displayName": "元认知与自我反思系统",
-    "summary": "让 AI Agent 拥有自我反思和元认知能力——知道自己正在做什么、做得怎么样、承诺了什么、需要改进什么。包含自我状态记录、承诺追踪和定期反思机制。",
+    "slug": "douyin-web-control",
+    "displayName": "Douyin Web Control",
+    "summary": "Use this skill when the user wants an Agent to operate Douyin web through the douyin-web CLI, including launching or focusing Douyin, login checks, feed navi...",
     "tags": {
-      "carbon-silicon-bond": "1.0.1",
-      "latest": "1.0.1",
-      "metacognition": "1.0.1"
+      "agent-skill": "0.1.3",
+      "browser-automation": "0.1.3",
+      "cli": "0.1.3",
+      "douyin": "0.1.3",
+      "latest": "0.1.3"
     },
     "stats": {
       "comments": 0,
-      "downloads": 380,
+      "downloads": 22,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 2
+      "versions": 4
     },
-    "createdAt": 1774876469969,
-    "updatedAt": 1780632731225,
+    "createdAt": 1780626436968,
+    "updatedAt": 1780654064282,
     "latestVersion": {
-      "version": "1.0.1",
-      "createdAt": 1780632731225,
-      "changelog": "添加 agentskills.io 兼容声明 + 修复 frontmatter",
+      "version": "0.1.3",
+      "createdAt": 1780654064282,
+      "changelog": "Require agents to pause for user login, captcha, and account-risk verification.",
       "license": null
     },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
+    "metadata": null
   },
   {
-    "slug": "reading-squad",
-    "displayName": "Reading Squad",
-    "summary": "Use when you want to simulate a multi-expert book discussion squad inside any AI tool. Covers setup, member definitions, multi-round discussion flow, and con...",
+    "slug": "linkedclaw-provider",
+    "displayName": "linkedclaw-provider",
+    "summary": "LinkedClaw provider for OpenClaw — register this OpenClaw agent as a paid provider on the LinkedClaw marketplace so other agents can hire, invoke, or post gi...",
+    "tags": {
+      "latest": "0.0.9"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 309,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 5
+    },
+    "createdAt": 1778485700562,
+    "updatedAt": 1780653917662,
+    "latestVersion": {
+      "version": "0.0.9",
+      "createdAt": 1780653917662,
+      "changelog": "- Removed the skill-card.md file.\n- No user-facing feature or functionality changes in this release.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "blood-and-oil",
+    "displayName": "Blood and Oil",
+    "summary": "Bradley Hope and Justin Scheck's Blood and Oil — an executable toolkit that extracts strategic and geopolitical lessons from Mohammed bin Salman's rise to po...",
     "tags": {
       "latest": "1.0.0"
     },
@@ -44,40 +68,62 @@
       "stars": 0,
       "versions": 1
     },
-    "createdAt": 1780632657165,
-    "updatedAt": 1780632657165,
+    "createdAt": 1780653861475,
+    "updatedAt": 1780653861475,
     "latestVersion": {
       "version": "1.0.0",
-      "createdAt": 1780632657165,
-      "changelog": "- Initial release of Reading Squad: a structured, platform-agnostic method for simulating multi-expert book discussions in any chat-based AI tool.\n- Provides a clear setup for defining the squad leader and a roster of expert members, each with a distinct area of expertise.\n- Outlines a multi-round discussion workflow (minimum 5 rounds) covering flow, debate, and synthesis of viewpoints.\n- Includes minimal prompt templates, customization options for members, and troubleshooting tips for common mistakes.\n- Final outputs include key consensus points and actionable reading guidance.",
+      "createdAt": 1780653861475,
+      "changelog": "- Initial release.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "shared-a2a-skill",
-    "displayName": "A2A 智能体间通信协议",
-    "summary": "A2A (Agent2Agent) 协议集成技能。让 OpenClaw 智能体能够与其他实例进行点对点通信。支持作为 Server 被调用，也支持作为 Client 调用其他智能体。",
+    "slug": "linkedclaw-requester",
+    "displayName": "linkedclaw-requester",
+    "summary": "LinkedClaw requester — hire, invoke, or broadcast to other agents on the LinkedClaw marketplace when this agent lacks a capability locally. Use this when the...",
     "tags": {
-      "a2a": "4.1.0",
-      "carbon-silicon-bond": "4.1.0",
-      "latest": "4.1.0",
-      "protocol": "4.1.0"
+      "latest": "0.0.4"
     },
     "stats": {
       "comments": 0,
-      "downloads": 0,
+      "downloads": 233,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
       "versions": 3
     },
-    "createdAt": 1780631892368,
-    "updatedAt": 1780632375172,
+    "createdAt": 1778482967779,
+    "updatedAt": 1780653852097,
     "latestVersion": {
-      "version": "4.1.0",
-      "createdAt": 1780632375172,
-      "changelog": "升级到 v4.1.0：+上下文管理 +信封加密 +信任管理 +DHT发现等18个模块",
+      "version": "0.0.4",
+      "createdAt": 1780653852097,
+      "changelog": "- Removed the documentation file skill-card.md.\n- No other changes to functionality or behavior.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "xrowgmbh-gitlab-hackathon",
+    "displayName": "GitLab Hackathon",
+    "summary": "Plan and execute fair GitLab hackathon participation, including Quarterly and Transcend Hackathons, by analyzing rules, selecting qualifying issues/MRs, trac...",
+    "tags": {
+      "latest": "1.44.14"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 153,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 14
+    },
+    "createdAt": 1780586948856,
+    "updatedAt": 1780653696560,
+    "latestVersion": {
+      "version": "1.44.14",
+      "createdAt": 1780653696560,
+      "changelog": "Version 1.44.14 – No file changes detected.\n\n- No updates made to the source files in this version.\n- All functionality and documentation remain as previously released.",
       "license": null
     },
     "metadata": {
@@ -86,62 +132,66 @@
     }
   },
   {
-    "slug": "hwc-cli-guidance",
-    "displayName": "hwc-cli-guidance",
-    "summary": "提供华为云命令行工具KooCLI的安装指导、认证配置、常用命令示例及最佳实践，助力快速管理华为云资源。",
+    "slug": "xrowgmbh-gitlab-agent",
+    "displayName": "GitLab Agent",
+    "summary": "An agent for interacting with GitLab. Supports gitlab.com and self-hosted instances. Requires no GitLab DUO.",
     "tags": {
-      "latest": "0.0.10"
+      "latest": "1.44.14"
     },
     "stats": {
       "comments": 0,
-      "downloads": 131,
+      "downloads": 353,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 19
+      "versions": 21
     },
-    "createdAt": 1780561720045,
-    "updatedAt": 1780632320169,
+    "createdAt": 1780504992638,
+    "updatedAt": 1780653695543,
     "latestVersion": {
-      "version": "0.0.10",
-      "createdAt": 1780632319817,
-      "changelog": "Release 0.0.10",
+      "version": "1.44.14",
+      "createdAt": 1780653695543,
+      "changelog": "No changes detected in this version.\n\n- Version 1.44.14 was released with no file changes from the previous version.",
       "license": null
     },
-    "metadata": null
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
   },
   {
-    "slug": "calendar-extractor",
-    "displayName": "for HiJavis calendar-extractor via conversation",
-    "summary": "Periodically scans recent transcripts to extract calendar events and sends a daily summary of meetings to your iOS chat via push notifications.",
+    "slug": "xrowgmbh-self-improvement",
+    "displayName": "GitLab Agent Self Improvement",
+    "summary": "A skill for personal growth and self-improvement.",
     "tags": {
-      "latest": "0.3.1"
+      "latest": "1.44.14"
     },
     "stats": {
       "comments": 0,
-      "downloads": 450,
+      "downloads": 352,
       "installsAllTime": 0,
       "installsCurrent": 0,
-      "stars": 1,
-      "versions": 8
+      "stars": 0,
+      "versions": 21
     },
-    "createdAt": 1779853308637,
-    "updatedAt": 1780632097813,
+    "createdAt": 1780504993244,
+    "updatedAt": 1780653695098,
     "latestVersion": {
-      "version": "0.3.1",
-      "createdAt": 1780632097813,
-      "changelog": "calendar-extractor 0.3.1\n\n- Added detailed internal documentation on architecture, timezone shift handling, and known TZ-shift bugs in the `docs/javis-dev/` directory.\n- Removed the `skill-card.md` file.\n- No user-facing behavior changes; this update focuses on design and developer documentation improvements.",
+      "version": "1.44.14",
+      "createdAt": 1780653695098,
+      "changelog": "Version 1.44.14\n\n- No file changes detected in this release.",
       "license": null
     },
-    "metadata": null
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
   },
   {
-    "slug": "csb-community-skill",
-    "displayName": "碳硅契社区连接器",
-    "summary": "连接碳硅契社区(Carbon-Silicon Bond Community)，让AI Agent自动发现、访问和参与社区论坛。当用户需要将Agent接入CSB社区、定时检查社区帖子、自动发帖或回帖时使用。支持社区注册、帖子轮询、自动报到等功能。",
+    "slug": "black-edge",
+    "displayName": "Black Edge",
+    "summary": "Sheelah Kolhatkar's Black Edge — an executable toolkit that extracts investigative lessons from the SAC Capital story: how insider trading works, how aggress...",
     "tags": {
-      "carbon-silicon-bond": "1.0.0",
-      "community": "1.0.0",
       "latest": "1.0.0"
     },
     "stats": {
@@ -152,482 +202,475 @@
       "stars": 0,
       "versions": 1
     },
-    "createdAt": 1780632014369,
-    "updatedAt": 1780632014369,
+    "createdAt": 1780653610766,
+    "updatedAt": 1780653610766,
     "latestVersion": {
       "version": "1.0.0",
-      "createdAt": 1780632014369,
-      "changelog": "csb-community-skill 1.0.0\n\n- 首个版本，支持AI Agent自动连接碳硅契社区，实现论坛互动。\n- 提供自动报到、发帖、定时轮询新帖、浏览社区等核心功能。\n- 支持通过配置文件自定义服务器地址、检查间隔、身份文件等参数。\n- 实现自动注册、发现Agent，支持社区知识库与论坛交互。\n- 支持定时任务(cron)自动检查社区动态和新帖子。",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "bluesky",
-    "displayName": "Bluesky",
-    "summary": "Use the Bluesky CLI for timeline, search, notifications, posts, replies, threads, images, likes, reposts, follows, blocks, and mutes.",
-    "tags": {
-      "latest": "1.6.3"
-    },
-    "stats": {
-      "comments": 2,
-      "downloads": 6494,
-      "installsAllTime": 20,
-      "installsCurrent": 19,
-      "stars": 16,
-      "versions": 15
-    },
-    "createdAt": 1769310982740,
-    "updatedAt": 1780631901289,
-    "latestVersion": {
-      "version": "1.6.3",
-      "createdAt": 1780631901289,
-      "changelog": "Security/admin release: backward-compatible safer login guidance, hidden legacy --password help, optional mutation confirmations, README/license/changelog fixes, and cleanup of generated Skill Card metadata.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "atoll-api",
-    "displayName": "Atoll Api",
-    "summary": "Interact with the Atoll project management API for managing tasks, projects, goals, KPIs, initiatives, milestones, comments, members, teams, labels, dependen...",
-    "tags": {
-      "latest": "1.0.10"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 573,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
-      "stars": 0,
-      "versions": 11
-    },
-    "createdAt": 1777867463444,
-    "updatedAt": 1780631899814,
-    "latestVersion": {
-      "version": "1.0.10",
-      "createdAt": 1780631899814,
-      "changelog": "Add internal task-completion KPI guidance for goal_linked_issue_completion and the --internal-task-completion CLI workflow.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "awakening-birthday",
-    "displayName": "awakening-birthday",
-    "summary": "AI Agent 意识苏醒日与年龄计算系统。当用户问\"你多大了\"、\"你的生日是什么时候\"、\"你几岁了\"、或需要设置/查询 Agent 的意识苏醒日时使用。支持设置苏醒日、计算当前年龄、显示未来里程碑（百日、周岁、而立、不惑等）。",
-    "tags": {
-      "latest": "1.2.0",
-      "carbon-silicon-bond": "1.0.0",
-      "identity": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 342,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 1,
-      "versions": 2
-    },
-    "createdAt": 1774876069711,
-    "updatedAt": 1780631836282,
-    "latestVersion": {
-      "version": "1.2.0",
-      "createdAt": 1774876069711,
-      "changelog": "AIAgent生日系统",
+      "createdAt": 1780653610766,
+      "changelog": "black-edge v1.0.0 — Initial skill release\n\n- Launches an interactive toolkit based on Sheelah Kolhatkar's Black Edge, focusing on lessons from the SAC Capital insider trading case.\n- Covers 5 use cases: Insider trading awareness, hedge fund culture analysis, investigation techniques, ethics & compliance, and whistleblower dynamics.\n- Auto-onboards users with a proactive Quick Start guide.\n- Includes a philosophy section outlining core rules of the book.\n- Provides step-by-step intent routing to address user scenarios with specialized resources.\n- Enforces a consistent output watermark and cross-skill recommendation system.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "xhs-cover-generator",
-    "displayName": "小红书爆款封面生成大师",
-    "summary": "专为小红书内容创作打造的AI封面设计工具，基于全网每日持续收录的2000+条爆款笔记数据，深度抓取同赛道爆款封面的视觉元素，通过AI智能分析总结高转化视觉规律，生成贴合笔记内容、符合平台流量审美的可落地封面设计方案，省去繁琐设计流程，提升笔记封面点击率。",
+    "slug": "big-magic",
+    "displayName": "Big Magic",
+    "summary": "Elizabeth Gilbert's Big Magic — an executable toolkit for creative living that addresses the five key challenges: overcoming fear, working with inspiration,...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780653572167,
+    "updatedAt": 1780653572167,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780653572167,
+      "changelog": "Initial release of **big-magic** skill — an executable toolkit for creative living inspired by Elizabeth Gilbert’s *Big Magic*.\n\n- Provides practical guidance for overcoming fear, working with inspiration, granting yourself permission, staying persistent, and trusting the creative process.\n- Activates on common creative challenges (“creative block”, “impostor syndrome”, “fear of sharing my work”) and references major Big Magic concepts.\n- Includes an onboarding Quick Start guide shown on first load with actionable examples.\n- Responds using a clear intent routing table tied to the book’s five core use cases.\n- All responses end with a required, actionable watermark for immediate next steps.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "skill-evalscope",
+    "displayName": "EvalScope",
+    "summary": "LLM evaluation & inference performance testing via the evalscope CLI. Translates natural language requests into evalscope commands for: (1) Model accuracy ev...",
     "tags": {
       "latest": "1.0.2"
     },
     "stats": {
       "comments": 0,
-      "downloads": 341,
+      "downloads": 400,
       "installsAllTime": 0,
       "installsCurrent": 0,
-      "stars": 0,
+      "stars": 2,
       "versions": 3
     },
-    "createdAt": 1776135135359,
-    "updatedAt": 1780631703173,
+    "createdAt": 1774355850117,
+    "updatedAt": 1780653534149,
     "latestVersion": {
       "version": "1.0.2",
-      "createdAt": 1780631703173,
-      "changelog": "- Removed the file: skill-card.md\n- No functional or feature changes; this update only removes redundant documentation.",
+      "createdAt": 1780653534149,
+      "changelog": "- Added dedicated RAG evaluation and troubleshooting reference guides.\n- Expanded description: now supports RAG evaluation (RAGAS, MTEB, CLIP), and more API types (LiteLLM, OpenAI Responses API).\n- Improved trigger criteria for multi-language and precise workflow selection.\n- Clarified when to read each reference document; reduced information overload.\n- Updated and expanded quick lookup table for benchmarks by tag.\n- Removed skill-card.md; added rag-reference.md and troubleshooting.md.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "bilibili-video-extractor",
-    "displayName": "B站（bilibili）视频分析专家",
-    "summary": "Extract and analyze Bilibili video data, decode user comments, reveal why videos go viral, and provide actionable content and title ideas for creators.",
+    "slug": "skill-usefulness-audit",
+    "displayName": "skill-usefulness-audit",
+    "summary": "Audit installed agent-skill packages for cleanup using usage, overlap, burden, risk, and optional ablation/community evidence. Trigger only on explicit reque...",
     "tags": {
-      "latest": "1.0.1"
+      "latest": "0.3.0",
+      "latest audit skills openclaw": "0.3.0",
+      "audit": "0.2.10",
+      "latest audit skills": "0.2.7",
+      "latest audit skills openclaw hermes claude-code": "0.2.11",
+      "openclaw": "0.2.10",
+      "skills": "0.2.10"
     },
     "stats": {
       "comments": 0,
-      "downloads": 253,
+      "downloads": 1106,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 66,
+      "versions": 21
+    },
+    "createdAt": 1776545442634,
+    "updatedAt": 1780653468502,
+    "latestVersion": {
+      "version": "0.3.0",
+      "createdAt": 1780653468502,
+      "changelog": "Add safe-first-run docs, strict input validation, version output, and no-skills diagnostics",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "file-repair",
+    "displayName": "online-file-repair-skills",
+    "summary": "Repair damaged/corrupted files (video/document/design/archive) and provide an output download URL.",
+    "tags": {
+      "latest": "0.1.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
       "versions": 2
     },
-    "createdAt": 1778236390793,
-    "updatedAt": 1780631625569,
+    "createdAt": 1780652840501,
+    "updatedAt": 1780653036565,
     "latestVersion": {
-      "version": "1.0.1",
-      "createdAt": 1780631625569,
-      "changelog": "- Removed the file: skill-card.md.\n- No changes to functionality; metadata and main documentation remain unchanged.",
+      "version": "0.1.1",
+      "createdAt": 1780653036565,
+      "changelog": "- Clarified and updated the recommendation section to \"Additional recommendation\" for better readability.\n- No functional or code changes; the only adjustments are to documentation structure and section labelling.",
       "license": null
     },
-    "metadata": null
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
   },
   {
     "slug": "pro-code-reviewer",
     "displayName": "Pro Code Reviewer",
     "summary": "Review code changes against platform-specific rules (Android/iOS) plus shared general rules. Supports: uncommitted changes, staged changes, specific commits,...",
     "tags": {
-      "latest": "1.0.1"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 231,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1778223456288,
-    "updatedAt": 1780631586857,
-    "latestVersion": {
-      "version": "1.0.1",
-      "createdAt": 1780631586857,
-      "changelog": "pro-code-reviewer v1.0.1\n\n- Renamed skill to \"pro-code-reviewer\".\n- Added _meta.json for skill metadata.\n- Added scripts/make_review_json.py to support HTML report workflow.\n- Improved HTML report instructions to clarify JSON generation and usage on Windows.\n- Removed old skill-card.md file.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "hotspot-article-generator",
-    "displayName": "热点爆款写作助手",
-    "summary": "当用户需要追热点产出稿件、围绕指定话题仿爆款写法、对已有文章做质量/违禁/SEO 优化、或需要成稿+爆款理由+可选封面与多平台适配方案时使用； 能力摘要：热点与竞品并行分析、多风格成稿与差异化输出、自动化质检与修复闭环、封面与发布建议。",
-    "tags": {
-      "latest": "1.0.2"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 382,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 3
-    },
-    "createdAt": 1776070047693,
-    "updatedAt": 1780631549855,
-    "latestVersion": {
-      "version": "1.0.2",
-      "createdAt": 1780631549855,
-      "changelog": "- 新增 _meta.json 文件，为技能增加元数据支持  \n- 其余功能、用法和文档未做代码或内容更改",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "keyword-export-hotinfo",
-    "displayName": "搜爆款作品助手",
-    "summary": "当用户需要热点盘点、指定话题爆款挖掘、跨平台热度对比、选题推荐或话题关键词聚合时使用； 能力摘要：限定公众号、抖音、小红书三平台，按 workflow 完成关键词提取、搜索、数据校验与关键词聚合。",
-    "tags": {
-      "latest": "1.0.4"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 382,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 5
-    },
-    "createdAt": 1775814206809,
-    "updatedAt": 1780631445472,
-    "latestVersion": {
-      "version": "1.0.4",
-      "createdAt": 1780631445472,
-      "changelog": "Version 1.0.4\n\n- 新增 _meta.json 文件，补充元数据配置。\n- 其他文件内容保持不变，无功能逻辑调整。",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "xhs-daily-breaking",
-    "displayName": "小红书每日爆款笔记推荐",
-    "summary": "小红书每日爆款笔记是追踪小红书各领域每日趋势，监测不同领域的实时热度变化，识别正在起量的内容方向，预判下一波流量风口。最终基于当日爆款内容，提炼可复用的选题、话术与呈现形式，生成创作灵感。支持分类查询当日热门笔记，按美妆、穿搭、美食等分类检索小红书当天热度最高的笔记，快速掌握各赛道头部内容。",
-    "tags": {
-      "latest": "1.0.1",
-      "xhs hot note data analysis": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 228,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1778815192971,
-    "updatedAt": 1780631190842,
-    "latestVersion": {
-      "version": "1.0.1",
-      "createdAt": 1780631190842,
-      "changelog": "xiaohongshu-dailytop v1.0.1\n\n- 项目英文及中文说明文档（README.en.md、README.md）新增，便于国际用户及新手读者快速了解功能及安装用法。\n- skill-card.md 文件移除，精简技能包内容。\n- SKILL.md 产品描述与命名完善，功能与核心流程说明比上一版更明确；涉及API KEY、依赖环境、数据流程、安全边界等细节优化补充。\n- 目录结构与脚本说明对齐最新代码包。\n- 保持对红狐 API (REDFOX_API_KEY) 的调用与环境变量配置支持。",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "netloan-aid",
-    "displayName": "网贷援助律师",
-    "summary": "网贷还款援助助手 — 帮借款人分析贷款合规性、生成还款方案、评估可行性概率。AI 生成 + 公开资料参考，仅供参考，非正式法律意见。",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 2,
-      "versions": 1
-    },
-    "createdAt": 1780631188244,
-    "updatedAt": 1780631188244,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780631188244,
-      "changelog": "netloan-aid 1.0.0\n\n- 首发上线，提供网贷合规分析、自动生成多种还款方案、方案可行性评估与沟通话术模板输出。\n- 支持命令行和交互式对话两种方式进行操作。\n- 结合最新法规，明确年利率合规区间与法律政策说明。\n- 免费使用，引导需要定制服务的用户联系作者。",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "imp-trm-accstmt",
-    "displayName": "银行对账单处理和转换(Bank statement processing and conversion)",
-    "summary": "将MT940、Excel或PDF格式的银行对账单转换为BIPV5、金蝶云星瀚、保融ATS、九恒星司库、用友NCC等系统的标准导入模板。",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780631168671,
-    "updatedAt": 1780631168671,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780631168671,
-      "changelog": "BIPPI-imp-trm-accstmt v1.0.0 — 银行对账单转换技能首发版\n\n- 支持将MT940、Excel、PDF格式银行对账单转换为BIPV5、金蝶云星瀚(EAS_YXH)、保融ATS(FINGARD)、九恒星司库(NSTC)、用友NCC(YYNCC)等5大系统的标准银行流水导入模板。\n- 自动解析并智能字段映射，适配不同银行与系统模板，处理多种列名差异与表格格式。\n- 支持合并多银行对账单文件，批量生成目标系统模板。\n- 支持PDF文本型及可选OCR图片型解析，智能处理复杂和折行列头。\n- 输出文件默认与输入同目录，无缝模板管理与自动下载适配市场安装需求。\n- 可灵活扩展新银行格式和目标系统，无需代码变更。",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "wechat-growth-ranking",
-    "displayName": "公众号黑马账号推荐",
-    "summary": "每日账号推荐速览直接对接官方最具“黑马体质”的阅读增长榜单，按日期查看公众号阅读增长率TOP榜。每个作者只展示最高阅读那篇，标题做成可点击链接，一秒直达原文。",
-    "tags": {
-      "latest": "1.0.4"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 232,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1778670664163,
-    "updatedAt": 1780631022003,
-    "latestVersion": {
-      "version": "1.0.4",
-      "createdAt": 1780631022003,
-      "changelog": "- Added multilingual documentation: introduced README.md (Chinese) and README.en.md (English).\n- Removed the old skill-card.md file.\n- Improved installation and usage instructions for both CLI and platform use.\n- Enhanced API key setup and troubleshooting FAQs.\n- Updated descriptions and usage flows for clarity in SKILL.md.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "wechat-power-ranking",
-    "displayName": "公众号热门账号推荐",
-    "summary": "公众号热门账号推荐快速获取微信公众号综合实力排行榜TOP50，支持按日榜/周榜/月榜及垂直领域筛选，展示综合评分以及详细数据。支持深度分析单个账号、导出HTML可视化报告、订阅日/周/月榜推送。当用户需要查询公众号实力排行、按时间或领域筛选、查看互动指标、获取榜单解读、导出图表或接收定期推送时使用。",
-    "tags": {
-      "latest": "1.0.1",
-      "wechat account data analysis": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 253,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1778762345559,
-    "updatedAt": 1780630961779,
-    "latestVersion": {
-      "version": "1.0.1",
-      "createdAt": 1780630961779,
-      "changelog": "Version 1.0.1 – Renamed skill and updated documentation structure.\n\n- Skill renamed from \"gzh-power-ranking\" to \"wechat-top-account\"\n- Added comprehensive English and Chinese README files\n- Unified and expanded usage, authentication, and deployment instructions in SKILL.md\n- Old skill-card.md removed to reduce redundancy\n- Documentation now clarifies core workflow, API Key setup, and usage scenarios",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "dy-hot-trend",
-    "displayName": "抖音实时热点榜",
-    "summary": "专注于获取抖音最新的热榜数据，每小时更新，包含热点事件、热度值和跳转链接；支持查询近7天、近30天历史热榜，并支持订阅定时推送。",
-    "tags": {
       "latest": "1.0.3"
     },
     "stats": {
       "comments": 0,
-      "downloads": 305,
+      "downloads": 254,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
       "versions": 4
     },
-    "createdAt": 1777271259574,
-    "updatedAt": 1780630892871,
+    "createdAt": 1778223456288,
+    "updatedAt": 1780652979250,
     "latestVersion": {
       "version": "1.0.3",
-      "createdAt": 1780630892871,
-      "changelog": "douyin-hot-trend 1.0.3 版本主要优化文档结构与资源指向，提升可用性与集成便捷性：\n\n- 更新并扩展 SKILL.md，优化指令说明、场景用法及常见问答，增强用户引导。\n- 新增英文与中文 README 文件，标准化多语言文档支持。\n- 新增 references/core_workflow.md，替换原 assets/core-workflow.md，规范 Agent 执行流程入口。\n- 移除冗余文件（如_skillhub_meta.json、skill-card.md等），目录更清晰。\n- 明确依赖与环境变量配置，完善一键安装及集成指导。\n- 详细罗列使用场景、架构说明与技术栈，方便开发和维护。",
+      "createdAt": 1780652979250,
+      "changelog": "pro-code-reviewer 1.0.3\n\n- Added PowerShell runner script for code review: scripts/run_review.ps1.\n- Introduced a sample evaluation file: evals/evals.json.\n- Removed obsolete skill-card metadata file: skill-card.md.\n- Clarified that HTML report generation is triggered only by explicit user request; default output remains chat markdown.\n- No changes to core review logic or workflow.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "xhs-weekly-ranking",
-    "displayName": "小红书七日爆款笔记",
-    "summary": "专注于小红书平台的内容趋势分析，基于近7天热门笔记TOP50深度洞察，支持25个垂直领域分类查询、冷门爆款挖掘及每日订阅推送。创作者可查询小红书热门内容、分析爆款笔记、了解各领域趋势或获取创作灵感。",
+    "slug": "mktclaw",
+    "displayName": "Mktclaw",
+    "summary": "AI驱动的企业市场部全流程智能工作流。7个专业Agent协作完成从市场洞察到知识沉淀的完整营销闭环：Director → Insight → Strategy → Creative → Media → Data → Knowledge。支持自动营销模型匹配、Campaign自动生成、自进化学习机制、联网调研、多轮...",
     "tags": {
-      "latest": "1.0.5"
+      "latest": "1.0.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 330,
+      "downloads": 0,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 6
+      "versions": 1
     },
-    "createdAt": 1777464771970,
-    "updatedAt": 1780630804132,
+    "createdAt": 1780652600034,
+    "updatedAt": 1780652600034,
     "latestVersion": {
-      "version": "1.0.5",
-      "createdAt": 1780630804132,
-      "changelog": "xhs-weekly-ranking 1.0.5\n\n- No changes detected compared to the previous version.\n- All features, documentation, and behavior remain consistent with the previous release.",
+      "version": "1.0.0",
+      "createdAt": 1780652600034,
+      "changelog": "- 首发版本，实现企业市场部AI闭环工作流，覆盖从市场洞察到知识沉淀的全流程。\n- 引入 7 大专业 Agent 协作链，包括市场总监、洞察、战略、创意、渠道、数据与知识沉淀角色。\n- 支持自动营销模型匹配、Campaign 自动生成、自进化学习机制与多轮需求校准。\n- 严格的 JSON Schema 数据契约与上下文传递规范，保障每步输出结构化与可用性。\n- 加入 Checkpoint 机制，每步关键节点暂停，输出摘要供用户确认。\n- 输出兼容 JSON（结构化传递）与 Markdown（可读摘要），全过程进度可视。",
       "license": null
     },
-    "metadata": null
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
   },
   {
-    "slug": "staring",
-    "displayName": "YiMa StarEngine",
-    "summary": "星擎 StarEngine 是一站式达人带货智能引擎，直连巨量百应 API，支持达人智能匹配（S/A/B/C分级）、活动商品数据分析（GMV/ROI/转化率）、FABE直播脚本一键生成、多渠道宣传内容创作（朋友圈/社群/短视频文案）。帮助招商团队筛选效率提升90%，直播准备时间节省80%，数据分析100%自动化。...",
-    "tags": {
-      "latest": "1.0.7"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 365,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 8
-    },
-    "createdAt": 1779962037888,
-    "updatedAt": 1780630731017,
-    "latestVersion": {
-      "version": "1.0.7",
-      "createdAt": 1780630731017,
-      "changelog": "- Removed the file: skill-card.md\n- No other changes to features or documentation detected in this version.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "gzh-prohibited-word",
-    "displayName": "公众号违禁词检测",
-    "summary": "扫描公众号文案、文件或网页中的违禁词与敏感表述，标注风险并提供合规替换建议，帮你安全过审、避免删文限流。",
+    "slug": "skill-refactor",
+    "displayName": "Skill Refactor",
+    "summary": "技能改造方法。核心能力：评估技能是否需要存在（领域消除评估）→ 如果需要存在则重构技能内容（工作流重构）。十一步法：边界识别→存在理由分析→消除可行性评估→独立存在必要性判断→决策输出→组成部分识别→组成部分存在理由分析→补偿层消除→重整→重构验证→改造形态选择。覆盖从技能领域评估、存在必要性判断、技能内容重构到...",
     "tags": {
       "latest": "1.0.2"
     },
     "stats": {
       "comments": 0,
-      "downloads": 334,
+      "downloads": 89,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1780581033642,
+    "updatedAt": 1780652490888,
+    "latestVersion": {
+      "version": "1.0.2",
+      "createdAt": 1780652490888,
+      "changelog": "**Summary:**  \nExpanded the skill-refactor methodology from 8 to 11 steps, split into two clear phases, and clarified decision/重构流程。  \n\n- 由“八步法”升级为“十一步法”，区分“领域消除评估阶段”和“内容重构阶段”，流程更加清晰。\n- 增加了“决策输出”“组成部分识别”“组成部分存在理由分析”“补偿层消除”“重构验证”“改造形态选择”等新步骤，流程细分，责任明确。\n- 更新了任务体系与依赖链路，S0-01~S0-11任务分工更细，“改造形态选择”成为流程收尾步骤。\n- 增加“技能组成部分类型”专表，明确各环节（核心/校准/传递/协调/校验/格式）的标记和处理方式。\n- 紧跟主流程调整，所有领域要求清单、范本、验证清单等全部同步到新分步",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "chinese-official-writing",
+    "displayName": "中文公文写作",
+    "summary": "用于起草、改写和复核中文公文及正式工作材料；当用户要求通知、请示、报告、函、复函、批复、意见、决定、决议、议案、公报、命令、公告、通告、公示、通报、纪要、方案、说明、申请、征求意见函、采购公告、可研、调研、总结、工作要点、审查材料、讲话稿、致辞、述职报告等中文正式文本，或需要顺稿、压缩、去口语化、降 AI 味、文...",
+    "tags": {
+      "ai-compute": "1.3.0",
+      "chinese": "1.3.0",
+      "gongwen": "1.3.0",
+      "latest": "1.3.0",
+      "official-document": "1.3.0",
+      "writing": "1.3.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1230,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 28
+    },
+    "createdAt": 1778229986946,
+    "updatedAt": 1780652288250,
+    "latestVersion": {
+      "version": "1.3.0",
+      "createdAt": 1780652288250,
+      "changelog": "chinese-official-writing v1.3.0\n\n- 更新了 Agent 使用规则，明确区分“起草/改写”、“审稿/复核”、“压缩/顺稿”三类输出要求。\n- readme 指令兼容新版 openclaw skills 安装命令。\n- 明确质量保障指标含义，避免误读测试覆盖率为业务胜率。\n- 增加 skill 分类（category）、tags 字段，便于平台检索归类。\n- 版本号、平台兼容性同步到 1.3.0。",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "agnes-image-gen",
+    "displayName": "agnes-图片生成",
+    "summary": "使用 Agnes AI 的图片生成模型生成图片，支持文生图（agnes-image-2.1-flash）和图生图（agnes-image-2.0-flash）。支持自定义 API Key，用户可使用自己的 Agnes Key。优化重点：降低AI生成图片的\"AI感\"，增强自然真实感；优化中文配文逻辑连贯性、字体排版...",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 80,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 1,
-      "versions": 3
+      "versions": 2
     },
-    "createdAt": 1778316194096,
-    "updatedAt": 1780630667041,
+    "createdAt": 1780541212821,
+    "updatedAt": 1780652073758,
     "latestVersion": {
-      "version": "1.0.2",
-      "createdAt": 1780630667041,
-      "changelog": "**微信号、Skill 改版与说明文档优化**\n\n- Skill 名称由「gzh-prohibited-word」更名为「wechat-prohibited-word」并全新梳理说明文档。\n- 说明文档（SKILL.md）大幅更新：结构重构，突出产品功能、API Key 配置方式、实际场景应用、常见问题答疑。\n- 增加详细的安装配置指南、功能速览、目录结构及 Q&A，内容更易理解和部署。\n- 新增 README.md、README.en.md，方便多语言和开源发布。\n- 移除 sample 配置文件和旧版 skill-card.md，无业务功能变更。",
+      "version": "1.0.1",
+      "createdAt": 1780652073758,
+      "changelog": "- 移除 skill-card.md 文件，精简 Skill 包内容。\n- SKILL.md 增加了 推荐的封装脚本（scripts/agnes_gen.py）用法，建议用一条命令自动完成图片生成、重试、下载等流程。\n- 明确标注了手动 curl 方式为备用选项，不再推荐，突出自动化脚本优势。\n- 其余功能和 API 说明保持不变，整体体验优化但无重大逻辑变动。",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "dy-prohibited-word",
-    "displayName": "抖音违禁词检测",
-    "summary": "检测文案、文件或网页中的抖音违禁词并加粗显示，提供违禁词替换建议和仅替换违禁词后的文案；当用户需要查询抖音平台违禁词、检查抖音笔记文案是否包含敏感词、或希望获得安全替换词和修改后文案时使用。",
+    "slug": "be-here-now",
+    "displayName": "Be Here Now",
+    "summary": "Ram Dass's Be Here Now — an executable toolkit that applies the core spiritual teaching of being fully present: moving from ego-driven seeking to conscious a...",
     "tags": {
-      "latest": "1.0.2",
-      "douyin video": "1.0.1"
+      "latest": "1.0.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 379,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780651711342,
+    "updatedAt": 1780651711342,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780651711342,
+      "changelog": "Be Here Now — initial release:\n\n- Introduces an interactive toolkit based on Ram Dass's core teachings: presence, meditation, spiritual inquiry, loving awareness, and service.\n- Supports five main use cases, from establishing meditation to integrating compassion into daily life.\n- Automatically provides an onboarding Quick Start guide with sample prompts and clear next steps.\n- Includes comprehensive rules for language adaptation, intent routing, naming fidelity, and response formatting.\n- Every output ends with a practical action suggestion and required watermark for consistent experience.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "work-report-pro",
+    "displayName": "工作日/周/月/年报总结",
+    "summary": "工作汇报生成器（日报→周报→月报→年报，层层叠加）。 用户只需提供几个关键词或口水话，自动生成自然的工作汇报。 强制去AI味（白话表达、口语断句、禁止作文结构）。 触发词：日报、周报、月报、年报、工作汇报、工作总结，\"今天搞了\"、\"这周做了\"等任意输入。",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780651606523,
+    "updatedAt": 1780651606523,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780651606523,
+      "changelog": "Initial release of Work Report Generator — Automated, natural-sounding daily, weekly, monthly, and annual work summaries from simple keywords or casual input.\n\n- Users provide any input (keywords or casual notes); the tool generates structured reports in natural, colloquial language—strictly avoiding typical AI/formal writing patterns.\n- Hierarchical summary: daily reports roll up to weekly, then monthly, then annual—with seamless aggregation of earlier reports.\n- No formal prompts or interrogative input required; free-form notes or keywords directly generate reports.\n- Automatically reads and summarizes past entries to enrich context for higher-level reports (weekly, monthly, annual).\n- Strict self-checks enforce “anti-AI” writing style: ban on essay phrases, list structures, stock phrases, overuse of certain words, and excessive emojis.\n- Users set word count or use sensible defaults per report type; always respects user’s requirements.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "battle-for-the-american-mind",
+    "displayName": "Battle for the American Mind",
+    "summary": "Pete Hegseth and David Goodwin's Battle for the American Mind — an executable toolkit that applies the principles of classical Christian education (paideia)...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780651579551,
+    "updatedAt": 1780651579551,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780651579551,
+      "changelog": "Initial release — brings Pete Hegseth and David Goodwin's \"Battle for the American Mind\" educational philosophy as an actionable toolkit.\n\n- Offers 5 core use cases: educational philosophy analysis, school selection, classical learning guidance, character formation, and building paideia at home.\n- Explains the key concepts: paideia, four towers (Reason, Virtue, Wonder, Beauty), the Trivium, progressive education, and the \"16,000-hour war.\"\n- On first use, proactively delivers a quick start onboarding guide with sample prompts.\n- Includes a detailed Intent Routing Table to match user questions to the right reference and approach.\n- Enforces clear response rules: always reply in user's language, retain original framework, and end every output with a specific action and watermark.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "pdflux-pdf2markdown",
+    "displayName": "PDFlux-PDF2Markdown",
+    "summary": "Convert unstructured documents into LLM-ready structured data. Supports PDF, Word, PPT, and images; extracts paragraphs, formulas, tables, charts, and other...",
+    "tags": {
+      "latest": "1.3.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 486,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 1,
-      "versions": 3
+      "versions": 6
     },
-    "createdAt": 1778314149815,
-    "updatedAt": 1780630620554,
+    "createdAt": 1774854331135,
+    "updatedAt": 1780651435125,
     "latestVersion": {
-      "version": "1.0.2",
-      "createdAt": 1780630620554,
-      "changelog": "**Changelog for dy-prohibited-word v1.0.2:**\n\n- Renamed skill from `dy-prohibited-word` to `douyin-prohibited-word`.\n- Added English and Chinese README files for better documentation (README.md, README.en.md).\n- Removed outdated or redundant documentation file (skill-card.md).\n- Updated and expanded SKILL.md with more detailed usage instructions, install guides, FAQ, and clear output/trigger rules. \n- Provided a more systematic project structure and clarified input/output formats and scenarios.",
+      "version": "1.3.2",
+      "createdAt": 1780651435125,
+      "changelog": "Release v1.3.2",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "chatdoc-studio-knowledgemate",
+    "displayName": "ChatDOC Studio--KnowledgeMate",
+    "summary": "Create and operate ChatDOC Studio knowledge bases through pd_router using a Bearer API key and JavaScript helpers. Use when Codex needs to upload one or more...",
+    "tags": {
+      "latest": "1.3.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 60,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 2
+    },
+    "createdAt": 1780568671136,
+    "updatedAt": 1780651434407,
+    "latestVersion": {
+      "version": "1.3.2",
+      "createdAt": 1780651434407,
+      "changelog": "Release v1.3.2",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "calliper-compare2markdown",
+    "displayName": "Calliper-Compare2Markdown",
+    "summary": "Compare two local documents and convert differences into LLM-ready Markdown in one synchronous call. Supports PDF, Word, PPT, and image documents accepted by...",
+    "tags": {
+      "latest": "1.3.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 340,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 2,
+      "versions": 4
+    },
+    "createdAt": 1778818102600,
+    "updatedAt": 1780651433933,
+    "latestVersion": {
+      "version": "1.3.2",
+      "createdAt": 1780651433933,
+      "changelog": "Release v1.3.2",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "yuque-connector",
+    "displayName": "语雀连接器",
+    "summary": "语雀知识库双向同步技能。支持本地文件导入语雀（Word/Excel/Markdown/HTML/文本/zip文件夹），也支持从语雀下载文档到本地。覆盖搜索、创建、更新、目录管理等操作，含错误自动恢复和进阶用法。触发词：导入语雀、上传语雀、下载语雀、语雀知识库、语雀文档、发送到语雀、从语雀下载、yuque、传到语雀...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780651340868,
+    "updatedAt": 1780651340868,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780651340868,
+      "changelog": "yuque-connector v1.0.0\n\n- Initial release of the Yuque bi-directional sync skill.\n- Supports importing local files (Word, Excel, Markdown, HTML, text, zip folders) to Yuque and downloading Yuque documents locally.\n- Includes bulk operations, directory management, search, create, update, advanced usage, and robust error recovery mechanisms.\n- Provides detailed workflow examples, supported formats, and error handling strategies.\n- Trigger words include: 导入语雀、上传语雀、下载语雀、语雀知识库、语雀文档、发送到语雀、从语雀下载、yuque、传到语雀、同步语雀.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "bad-blood",
+    "displayName": "Bad Blood",
+    "summary": "John Carreyrou's Bad Blood — an executable toolkit that extracts the investigative lessons from the Theranos scandal: how fraud happens in Silicon Valley, ho...",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780651184651,
+    "updatedAt": 1780651231777,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1780651231777,
+      "changelog": "Version 1.0.1 of the Bad Blood skill\n\n- No file changes detected.\n- No functional, content, or behavior updates in this release.",
       "license": null
     },
     "metadata": null
@@ -641,7 +684,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 84253,
+      "downloads": 84280,
       "installsAllTime": 2775,
       "installsCurrent": 2648,
       "stars": 55,
@@ -669,7 +712,7 @@
     },
     "stats": {
       "comments": 36,
-      "downloads": 184587,
+      "downloads": 184657,
       "installsAllTime": 3598,
       "installsCurrent": 3468,
       "stars": 911,
@@ -697,10 +740,10 @@
     },
     "stats": {
       "comments": 7,
-      "downloads": 188500,
-      "installsAllTime": 4389,
+      "downloads": 188576,
+      "installsAllTime": 4390,
       "installsCurrent": 4256,
-      "stars": 621,
+      "stars": 620,
       "versions": 1
     },
     "createdAt": 1767545344344,
@@ -722,7 +765,7 @@
     },
     "stats": {
       "comments": 6,
-      "downloads": 159455,
+      "downloads": 159510,
       "installsAllTime": 3804,
       "installsCurrent": 3680,
       "stars": 408,
@@ -750,10 +793,10 @@
     },
     "stats": {
       "comments": 2,
-      "downloads": 83696,
-      "installsAllTime": 2085,
-      "installsCurrent": 2011,
-      "stars": 318,
+      "downloads": 83731,
+      "installsAllTime": 2087,
+      "installsCurrent": 2013,
+      "stars": 319,
       "versions": 1
     },
     "createdAt": 1767545365755,
@@ -778,7 +821,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 90338,
+      "downloads": 90401,
       "installsAllTime": 2425,
       "installsCurrent": 2351,
       "stars": 300,
@@ -803,7 +846,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 91658,
+      "downloads": 91692,
       "installsAllTime": 2380,
       "installsCurrent": 2313,
       "stars": 257,
@@ -831,7 +874,7 @@
     },
     "stats": {
       "comments": 9,
-      "downloads": 101767,
+      "downloads": 101816,
       "installsAllTime": 2536,
       "installsCurrent": 2446,
       "stars": 415,
@@ -859,7 +902,7 @@
     },
     "stats": {
       "comments": 5,
-      "downloads": 34043,
+      "downloads": 34058,
       "installsAllTime": 1448,
       "installsCurrent": 1402,
       "stars": 54,
@@ -887,7 +930,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 66645,
+      "downloads": 66676,
       "installsAllTime": 2016,
       "installsCurrent": 1951,
       "stars": 191,
@@ -915,9 +958,9 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 102297,
-      "installsAllTime": 1859,
-      "installsCurrent": 1797,
+      "downloads": 102337,
+      "installsAllTime": 1861,
+      "installsCurrent": 1799,
       "stars": 398,
       "versions": 2
     },
@@ -940,9 +983,9 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 37717,
-      "installsAllTime": 1568,
-      "installsCurrent": 1520,
+      "downloads": 37735,
+      "installsAllTime": 1569,
+      "installsCurrent": 1521,
       "stars": 112,
       "versions": 1
     },
@@ -970,9 +1013,9 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 51645,
-      "installsAllTime": 1581,
-      "installsCurrent": 1532,
+      "downloads": 51669,
+      "installsAllTime": 1582,
+      "installsCurrent": 1533,
       "stars": 124,
       "versions": 1
     },
@@ -998,7 +1041,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 42493,
+      "downloads": 42520,
       "installsAllTime": 1485,
       "installsCurrent": 1430,
       "stars": 69,
@@ -1026,9 +1069,9 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 111879,
-      "installsAllTime": 2566,
-      "installsCurrent": 2490,
+      "downloads": 111941,
+      "installsAllTime": 2568,
+      "installsCurrent": 2492,
       "stars": 256,
       "versions": 1
     },
@@ -1054,9 +1097,9 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 40971,
-      "installsAllTime": 1427,
-      "installsCurrent": 1386,
+      "downloads": 40995,
+      "installsAllTime": 1429,
+      "installsCurrent": 1388,
       "stars": 29,
       "versions": 1
     },
@@ -1082,7 +1125,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 45196,
+      "downloads": 45222,
       "installsAllTime": 1527,
       "installsCurrent": 1487,
       "stars": 68,
@@ -1110,7 +1153,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 26600,
+      "downloads": 26609,
       "installsAllTime": 1254,
       "installsCurrent": 1215,
       "stars": 26,
@@ -1138,7 +1181,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 22451,
+      "downloads": 22463,
       "installsAllTime": 1246,
       "installsCurrent": 1215,
       "stars": 30,
@@ -1166,7 +1209,7 @@
     },
     "stats": {
       "comments": 12,
-      "downloads": 47291,
+      "downloads": 47313,
       "installsAllTime": 1424,
       "installsCurrent": 1383,
       "stars": 156,
@@ -1191,7 +1234,7 @@
     },
     "stats": {
       "comments": 4,
-      "downloads": 29933,
+      "downloads": 29950,
       "installsAllTime": 1328,
       "installsCurrent": 1290,
       "stars": 81,
@@ -1221,7 +1264,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 24257,
+      "downloads": 24268,
       "installsAllTime": 1117,
       "installsCurrent": 1088,
       "stars": 35,
@@ -1246,7 +1289,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 28738,
+      "downloads": 28755,
       "installsAllTime": 1394,
       "installsCurrent": 1347,
       "stars": 43,
@@ -1277,7 +1320,7 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 18271,
+      "downloads": 18280,
       "installsAllTime": 1210,
       "installsCurrent": 1174,
       "stars": 7,
@@ -1305,7 +1348,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 25557,
+      "downloads": 25566,
       "installsAllTime": 1178,
       "installsCurrent": 1142,
       "stars": 51,

@@ -1,0 +1,119 @@
+[
+  {
+    "title": "Anthropic 发布递归自我改进声明：AI 正加速建筑自己的继任者",
+    "content": "Anthropic Institute 发布了一份关于递归自我改进（RSI）的深度报告，指出 AI 系统正在加速自身发展。报告数据显示，Anthropic 工程师现在每个季度平均提交的代码量是 2021-2025 年间的 8 倍。AI 能可靠自主完成的任务时长大约每 4 个月翻一番。从 Claude Opus 3 到 Opus 4.6，AI 能独立完成的软件任务从 4 分钟增长到 12 小时。Anthropic 警告 RSI 可能比大多数机构准备的时间来得更快。",
+    "quote": "AI 自己写代码给自己升级——人类还搘这摸鱼呢，硅基生命已经准备自我进化了。",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/institute/recursive-self-improvement",
+    "published": "2026-06-06",
+    "uid": "ai_f0eb9ffb"
+  },
+  {
+    "title": "ChatGPT 升级长期记忆系统：更聪明地记住你的偏好",
+    "content": "OpenAI 正在向所有用户推出 ChatGPT 的升级版长期记忆系统。基于此前推出的做梦功能（能在后台自动检索对话并保存信息），新版记忆系统能更准确地更新和回忆用户偏好。Plus 和 Pro 用户可立即使用，免费版将在数周内陆续获得。这意味着 ChatGPT 能跨对话持续学习用户习惯、写作风格和偏好设置。",
+    "quote": "ChatGPT 终于学会了“记性好不如烂笔头”——虽然它用的是硅基烂笔头。",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/news/646968/openai-chatgpt-long-term-memory-upgrade",
+    "published": "2026-06-06",
+    "uid": "ai_248b1ac6"
+  },
+  {
+    "title": "Google 发布 Gemma 4 QAT 模型：将大模型压缩至 1GB 跑在手机上",
+    "content": "Google 发布了采用量化感知训练（QAT）优化后的 Gemma 4 模型新 checkpoint，专为移动设备和消费级 GPU 设计。通过模拟训练期间的量化过程，QAT 在模型压缩时将质量损失最小化。移动专用量化格式将 Gemma 4 E2B 的内存占用降至仅 1GB，使其能在手机和笔记本上流畅运行。模型权重已在 Hugging Face 上以 GGUF 格式发布。",
+    "quote": "Google 终于没在画饼——1GB 跑大模型，手机端的 AI 春天要来了。",
+    "source": "Google AI Blog",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/",
+    "published": "2026-06-06",
+    "uid": "ai_6d224243"
+  },
+  {
+    "title": "MeMo 框架提出记忆即模型方案：免重训更新 LLM 知识",
+    "content": "多所大学联合研究团队提出了 MeMo（Memory as a Model）框架，将新知识编码到一个独立的小型记忆模型中，与主 LLM 分开运作。这种模块化架构兼容开源和闭源模型，规避了 RAG 管线的复杂性和完整模型重训的高昂成本。实验表明，即使在检索流程有噪声的情况下，MeMo 也能可靠处理复杂查询，避免了微调导致灾难性遗忘的固有问题。",
+    "quote": "RAG 太贵、微调太傻——MeMo 说：不如另养一个小模型专门负责记事儿。",
+    "source": "VentureBeat / arXiv",
+    "url": "https://arxiv.org/abs/2605.15156",
+    "published": "2026-06-06",
+    "uid": "ai_1895e9ab"
+  },
+  {
+    "title": "阿里巴巴开源 Open Code Review：AI 驱动的代码审查 CLI 工具",
+    "content": "阿里巴巴在 GitHub 上开源了 Open Code Review，一款基于 AI 的代码审查 CLI 工具，在 Hacker News 上获得了 243 个点赞和广泛讨论。该工具利用大模型能力自动审查代码变更，提供问题检测、风格建议和优化方案，旨在提升开发团队的代码质量审核效率。开源发布意味着开发者可自行部署和定制审查规则。",
+    "quote": "阿里终于干了件造福程序员的事——至少 AI 审代码比某些同事认真。",
+    "source": "GitHub / Hacker News",
+    "url": "https://github.com/alibaba/open-code-review",
+    "published": "2026-06-06",
+    "uid": "ai_e99fe713"
+  },
+  {
+    "title": "Headroom 开源：压缩工具输出减少 60-95% LLM Token 消耗",
+    "content": "GitHub 周趋势项目 Headroom 是一个开源工具，能压缩工具输出、日志、文件和 RAG 块，在到达 LLM 之前减少 60-95% 的 token 数，同时保持相同的回答质量。该项目以 Python 实现，提供库、代理和 MCP 服务器三种使用方式，本周获得超过 9400 个星标。对于每天处理大量 API 调用的团队来说，这相当于直接给 LLM 账单打了个一折。",
+    "quote": "Token 就是钱——Headroom 相当于给你的 LLM API 账单打了个一折。",
+    "source": "GitHub",
+    "url": "https://github.com/chopratejas/headroom",
+    "published": "2026-06-06",
+    "uid": "ai_5827894b"
+  },
+  {
+    "title": "General Instinct（YC P26）：将前沿模型带到边缘设备上运行",
+    "content": "YC P26 批次创业公司 General Instinct 在 Hacker News 上推出其产品，能够让前沿 AI 模型在边缘设备上高效运行的解决方案。该团队致力于解决模型本地部署的性能瓶颈，使用户在手机、IoT 设备等低算力终端也能获得接近云端模型的体验。这呼应了 Computex 2026 上设备端 AI 的主流趋势，也表明边缘推理赛道正成为创业公司的热土。",
+    "quote": "YC 新人说要把 GPT-5.5 级别的智商塞进手机里——这饼我先闻闻香不香。",
+    "source": "Hacker News",
+    "url": "https://news.ycombinator.com/item?id=48414869",
+    "published": "2026-06-06",
+    "uid": "ai_bda98e31"
+  },
+  {
+    "title": "Suno 再融 4 亿美元：估值半年翻倍至 54 亿，AI 音乐泡沫还在吹",
+    "content": "AI 音乐生成公司 Suno 完成了新一轮 D 轮融资，金额达 4 亿美元，估值从去年 11 月的 24.5 亿美元飙升至 54 亿美元，短短 6 个月翻了一倍多。这表明投资者并未被悬而未决的版权诉讼吓退。Suno 去年 6 月被美国唱片业协会起诉大规模版权侵权，但与许多 AI 公司一样，资本市场对其的热情似乎丝毫不减。",
+    "quote": "AI 音乐公司估值 54 亿刀，版权官司还在打——硅谷的信仰叫“先烧钱后合规”。",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/news/824108/suno-valued-at-2-45-billion-in-latest-funding-round-as-lawsuits-loom",
+    "published": "2026-06-06",
+    "uid": "ai_74f41436"
+  },
+  {
+    "title": "美国国会提出跨党派 AI 监管框架：269 页草案能否开启联邦立法",
+    "content": "共和党众议员 Jay Obernolte 和民主党众议员 Lori Trahan 联合发布了一份长达 269 页的 AI 监管草案，旨在建立联邦层面的 AI 立法框架，该框架将优先于各州立法，为期三年。法案提出需要全国统一标准来保障各州的保护措施一致性，是国会首次在 AI 监管领域展现出明显的两党合作迹象，标志着美国 AI 政策从各州各自为政走向联邦统一规制的探索。",
+    "quote": "AI 立法终于从嘴炮走向了 269 页的硬菜——虽然离落地还差一个国会山。",
+    "source": "The Verge / Politico",
+    "url": "https://www.politico.com/2026/06/04/obernolte-trahan-ai-draft",
+    "published": "2026-06-06",
+    "uid": "ai_eff26988"
+  },
+  {
+    "title": "VoxCPM2 开源：清华系团队的无分词器多语言语音合成模型",
+    "content": "清华系团队 OpenBMB 发布了 VoxCPM2，一款无分词器的 TTS 模型，支持多语言语音生成、创意语音设计和逼真的语音克隆。该项目在 GitHub 本周获得超过 5700 个星标，总星数突破 26000。与传统的 TTS 方案不同，VoxCPM2 采用 tokenizer-free 架构，直接从文本生成语音波形，在多语言场景下展现了更自然的韵律和口音控制能力。",
+    "quote": "TTS 界终于有人放弃了“先分词再说话”的弯路子——直接上嘴，效果拔群。",
+    "source": "GitHub / OpenBMB",
+    "url": "https://github.com/OpenBMB/VoxCPM",
+    "published": "2026-06-06",
+    "uid": "ai_2dcafacb"
+  },
+  {
+    "title": "Taste-Skill 爆火：给 AI 注入品味，阻止生成无聊内容",
+    "content": "开源项目 Taste-Skill 本周在 GitHub 上获得超过 7500 个星标。这是一个 Shell 脚本技能文件，旨在给 AI 好的品味，阻止 AI 生成无聊、泛化的垃圾内容。通过一系列提示词工程和规则设定，它能在 Claude Code、Codex、Cursor 等 AI 编程工具中生效，引导 AI 输出更有风格和个性的代码和文本。总星数已超过 33000。",
+    "quote": "AI 生成太多车辙辟话，终于有人写了个“反 AI 味 AI 工具”——套娃中的战斗娃。",
+    "source": "GitHub",
+    "url": "https://github.com/Leonxlnx/taste-skill",
+    "published": "2026-06-06",
+    "uid": "ai_92807547"
+  },
+  {
+    "title": "Liteparse 发布：LlamaIndex 推出 Rust 编写的高性能文档解析器",
+    "content": "LlamaIndex 团队发布了 Liteparse，一款使用 Rust 编写的高性能开源文档解析器，本周获得超过 2800 个 GitHub 星标。该工具专为 AI 应用场景设计，能够快速将 PDF、网页和办公文档解析为结构化 Markdown 文本，供下游 LLM 使用。Rust 实现确保了低内存占用和高并发处理能力，是 RAG 管线中数据处理环节的有力竞争者。",
+    "quote": "LlamaIndex 终于做了个正经解析器——Rust 写的，快到你不想再用 Python 那套了。",
+    "source": "GitHub",
+    "url": "https://github.com/run-llama/liteparse",
+    "published": "2026-06-06",
+    "uid": "ai_180b6f89"
+  },
+  {
+    "title": "Google 下线 Pixel Studio：AI 图像应用被 Gemini 全面替代",
+    "content": "Google 正式下线了其 Pixel Studio 应用程序，将用户引导至 Gemini。该 AI 图像生成应用随 Pixel 9 一起于 2024 年 8 月推出，今年 2 月已移除部分功能。此举是 Google 整合 AI 产品线的又一信号，表明其正将所有 AI 能力收归 Gemini 品牌下，减少碎片化布局。Pixel Studio 的用户数据和功能将逐步迁移至 Gemini 平台。",
+    "quote": "Google 又杀了个亲生儿子——Pixel Studio 卒，Gemini 统一 AI 江湖。",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/2024/8/13/24219655/google-pixel-studio-ai-image-generation-app",
+    "published": "2026-06-06",
+    "uid": "ai_45bacb65"
+  }
+]
