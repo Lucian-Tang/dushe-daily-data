@@ -126,7 +126,45 @@ done
 log "[copy] ✅ 榜单数据已同步到根目录"
 
 # ====================================================================
-# Step 9: 更新 index.json（只更新榜单 key，保留主板块不变）
+# Step 9a: 从 trending 文件生成 github_daily / clawhub_daily（passthrough 复制）
+# 注：generate_daily_json.py 的 passthrough 逻辑直接读 trending 文件写 daily 文件
+# 此处用同样的方式确保 index.json 的 key 能指向正确的文件
+# ====================================================================
+log "[passthrough] 生成 github_daily / clawhub_daily..."
+cd "$WORKSPACE"
+python3 -c "
+import json
+import glob
+import sys
+
+DATE_STR = '$DATE_STR'
+
+# 从 trending 文件生成 daily 文件（passthrough 复制）
+passthrough_map = {
+    'github': ('github_trending_', 'github_daily_'),
+    'clawhub': ('clawhub_trending_', 'clawhub_daily_'),
+}
+
+for section, (src_prefix, dst_prefix) in passthrough_map.items():
+    src_path = f'data/{src_prefix}{DATE_STR}.json'
+    if not __import__('os').path.exists(src_path):
+        # fallback to root
+        src_path = f'{src_prefix}{DATE_STR}.json'
+    
+    if __import__('os').path.exists(src_path):
+        with open(src_path) as f:
+            data = json.load(f)
+        dst_path = f'{dst_prefix}{DATE_STR}.json'
+        with open(dst_path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+        print(f'[passthrough] {section}: {src_path} \u2192 {dst_path} ({len(data)} items)')
+    else:
+        print(f'[passthrough] {section}: \u274c source not found ({src_prefix}{DATE_STR}.json), skip')
+"
+log "[passthrough] \u2705 daily 文件生成完成"
+
+# ====================================================================
+# Step 9b: 更新 index.json（只更新榜单 key，保留主板块不变）
 # ====================================================================
 log "[index] 更新 index.json（仅榜单 key）..."
 cd "$WORKSPACE"
