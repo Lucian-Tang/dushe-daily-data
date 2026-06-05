@@ -567,13 +567,7 @@ def main():
             # 🔴 问题3: 标题 Unicode 清洗
             item['title'] = clean_title(item.get('title', ''))
 
-        # 🔌 ClawHub 技能市场 — 补充进 dev 板块
-        if sec == "dev":
-            clawhub_raw = DATA_DIR / f"raw_clawhub_{d_short}.json"
-            clawhub_items = parse_clawhub(clawhub_raw, d_short)
-            if clawhub_items:
-                parsed.extend(clawhub_items)
-                logger.info(f"[dev] +ClawHub {len(clawhub_items)}条，共 {len(parsed)} 条")
+
 
         if args.dry_run:
             print(f'\n[{sec}] {len(parsed)}条 (md={"✅" if md_content else "❌"} raw={len(raw)})')
