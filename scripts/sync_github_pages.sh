@@ -179,25 +179,16 @@ for section, (raw_prefix, daily_prefix) in section_map.items():
             daily_files = sorted(glob.glob(scan_dir + daily_prefix + '_*.json'))
             if daily_files:
                 latest[section] = prefix + os.path.basename(daily_files[-1]) if prefix else daily_files[-1]
+                history[section] = []
                 for f in daily_files:
                     fname = prefix + os.path.basename(f) if prefix else f
-                    date_str = fname.replace(daily_prefix + '_', '').replace('.json', '').replace('_', '')
-                    date_str = date_str.replace(DATA_PREFIX, '')
-                    if date_str not in history:
-                        history[date_str] = {}
-                    if section not in history[date_str]:
-                        history[date_str][section] = []
-                    history[date_str][section].append(fname)
+                    history[section].append(fname)
                 break  # data/ found, skip root
 
     if section not in latest and raw_prefix:
         raw_files = sorted(glob.glob(raw_prefix + '_*.json'))
         if raw_files:
             latest[section] = raw_files[-1]
-
-compressed_history = {}
-for date_str, sections in history.items():
-    compressed_history[date_str] = sections
 
 for fname in glob.glob('data/*_daily_*.json') + glob.glob('*_daily_*.json') + glob.glob('raw_*.json'):
     if os.path.isfile(fname):
@@ -208,7 +199,7 @@ index = {
     'schemaVersion': '2.0',
     'updated': __import__('datetime').datetime.now().isoformat(),
     **latest,
-    'history': compressed_history,
+    'history': history,
     'checksums': checksums
 }
 
