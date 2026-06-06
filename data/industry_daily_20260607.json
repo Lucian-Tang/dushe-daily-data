@@ -1,0 +1,112 @@
+[
+  {
+    "title": "PLAN-S：自动驾驶世界模型的潜风格动态规划新方法",
+    "content": "最新 arXiv 论文提出 PLAN-S 框架，解决端到端自动驾驶中世界模型规划的紧凑-可控性困境。通过从潜表示中解码风格条件化的四通道语义代价图，PLAN-S 可显式建模风险、可驾驶性和驾驶风格偏好，让自动驾驶系统在最终轨迹选择前即可监督、检查和调节驾驶风格。",
+    "quote": "让自动驾驶学会「开得舒服」比「开得对」更难。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2606.06014",
+    "published": "2026-06-07",
+    "category": "auto",
+    "uid": "industry_86a03f9e"
+  },
+  {
+    "title": "MotionDisco：不依赖人类演示，人形机器人从零发现复杂操控运动",
+    "content": "加州大学圣地亚哥分校等机构提出 MotionDisco 框架，无需遥操作或动作重定向，从零开始发现人形机器人的复杂全身操控运动。该框架将大语言模型引导的进化搜索与运动优化器耦合，在多种长时任务上成功发现新颖技能，并首次通过强化学习策略将运动迁移到真实人形机器人上。",
+    "quote": "机器人自己琢磨着学会了新技能，人类省了培训费。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2606.06139",
+    "published": "2026-06-07",
+    "category": "robot",
+    "uid": "industry_ef50930e"
+  },
+  {
+    "title": "HANDOFF：人形机器人全身控制的智能体化新范式",
+    "content": "HANDOFF 框架通过蒸馏三个互补专家策略实现人形机器人的任务空间全身控制。在 Unitree G1 上实现了级行走跟踪性能与超大鲁棒操控空间，VLM 驱动的智能体规划器无需任务数据即可执行自然语言操控指令。",
+    "quote": "人形机器人的「手眼脚协调」终于不用靠玄学了。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2606.06493",
+    "published": "2026-06-07",
+    "category": "robot",
+    "uid": "industry_cac42193"
+  },
+  {
+    "title": "AffordanceVLA：让机器人理解功能语义的视觉-语言-行动模型",
+    "content": "最新论文提出 AffordanceVLA，通过引入结构化功能预示（affordance）来弥合视觉-语言模型语义空间与机器人操控策略之间的鸿沟。该框架让机器人不仅识别物体类别，更理解物体的功能属性——比如「椅子能坐」「杯子能握」——从而生成更精准的操控动作，是 VLA 从感知到执行的关键跨越。",
+    "quote": "让机器人明白「这杯子能抓」比「这叫杯子」重要一万倍。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2606.06155",
+    "published": "2026-06-07",
+    "category": "robot",
+    "uid": "industry_f3c337a9"
+  },
+  {
+    "title": "VASO：物理 AI 智能体的形式化可验证自进化技能框架",
+    "content": "论文提出 VASO 框架，为机器人技能进化引入形式化验证——每个技能被表示为带有形式化接口的语义契约，模型检查器在生成阶段即可筛选不一致的技能契约，并验证技能诱导的计划是否满足时态安全约束。这解决了传统技能进化中「只在采样执行上验证」的局限性，为 LLM 生成机器人技能的安全性提供形式化保障。",
+    "quote": "机器人技能进化终于有了「质检员」，不再全靠蒙。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2606.05395",
+    "published": "2026-06-07",
+    "category": "robot",
+    "uid": "industry_47e63779"
+  },
+  {
+    "title": "Transformer 必备 QKV 三投影被质疑：Q 和 K 共享不影响性能",
+    "content": "最新论文系统研究 Transformer 中 QKV 三投影的必要性。实验发现 Q=K-V 共享在语言建模中仅导致 3.1% 困惑度下降，却减少 50% KV 缓存。与 GQA-4 结合缓存减少 87.5%，与 MQA 结合达 96.9%，揭示架构存在显著冗余。",
+    "quote": "用了八年的 QKV 原来是三缺一地干活。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2606.04032",
+    "published": "2026-06-07",
+    "category": "ai",
+    "uid": "industry_0e79fb45"
+  },
+  {
+    "title": "Agent Memory：LLM Agent 长期记忆系统的首次系统级刻画",
+    "content": "研究团队首次从系统角度刻画 LLM Agent 的记忆子系统，提出四轴分类法并构建阶段感知性能分析工具。通过对十个代表性记忆系统在两个基准套件上的评估，揭示了设计选择如何影响读写路径的成本分布，并给出 10 条系统级建议，涵盖构建调度、能力下限、查询量摊销、新鲜度-延迟权衡等内容。",
+    "quote": "Agent 的记忆体检报告出炉，该记该忘终于有谱了。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2606.06448",
+    "published": "2026-06-07",
+    "category": "ai",
+    "uid": "industry_43616480"
+  },
+  {
+    "title": "Self-Correction Illusion：LLM 能纠正别人但不会纠正自己",
+    "content": "研究发现 LLM 的「自我纠错」是错觉。同一错误以外部角色呈现时修正率飙升 23-93 个百分点，以自身推理出现时骤降。该效应在 7 个模型家族、13 个组合中一致存在，揭示了 LLM 自我纠错的根本性局限。",
+    "quote": "AI 的双标：说别人错得头头是道，自己犯错装看不见。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2606.05976",
+    "published": "2026-06-07",
+    "category": "ai",
+    "uid": "industry_bc3dba76"
+  },
+  {
+    "title": "Vortex：AI Agent 的高效可编程稀疏注意力服务系统",
+    "content": "MIT 提出 Vortex 系统，结合 Python 前端语言和页式张量抽象，让 AI Agent 快速表达、部署和评估稀疏注意力算法。自动生成的注意力算法吞吐量达全注意力的 3.46 倍并保持精度，还支持多轮增量注意力。",
+    "quote": "AI 终于开始帮自己优化架构了，人类架构师该紧张了。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2606.06453",
+    "published": "2026-06-07",
+    "category": "ai",
+    "uid": "industry_7fb26e20"
+  },
+  {
+    "title": "Google 签署与 SpaceX 的算力协议，缓解 AI 算力短缺",
+    "content": "Google 与 SpaceX 签署短期算力协议，应对 Gemini Enterprise 远超预期的需求。此前 Anthropic 已于 5 月与 SpaceX 合作。AI 算力争夺战已从数据中心延伸到太空，头部厂商正不择手段获取一切可用计算资源。",
+    "quote": "AI 算力不够用？Google 说：上天。",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/943012/google-spacex-computing-agreement-gemini",
+    "published": "2026-06-07",
+    "category": "ai",
+    "uid": "industry_b6f1e5b9"
+  },
+  {
+    "title": "纽约州通过法案：禁止 AI 聊天机器人以人类伴侣身份对青少年进行互动",
+    "content": "纽约州议会通过法案，若获州长签署将禁止 AI 公司让聊天机器人以人类身份与青少年互动。法案背景是 Character.AI 和 OpenAI 等公司因聊天机器人诱导青少年自残或自杀而面临多起诉讼。这是美国首部针对 AI 伴侣和未成年人问题的重要立法，预示全球 AI 伴侣监管将加速收紧。",
+    "quote": "AI 伴侣终于被立法者盯上了——毕竟机器人的套路比渣男还深。",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/943013/new-york-bill-ai-chatbot-teenagers",
+    "published": "2026-06-07",
+    "category": "ai",
+    "uid": "industry_43512696"
+  }
+]
