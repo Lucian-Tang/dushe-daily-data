@@ -47,6 +47,31 @@ def clean_source(s):
 def clean_url(s):
     return s.lstrip('*').lstrip(' ').strip()
 
+def _clean_raw_content(raw_content, source):
+    """清洗 raw content：剥离HN/NL等平台的元数据格式，提取有效文本"""
+    if not raw_content:
+        return ''
+    c = raw_content.strip()
+    # 剥离 HN/NL 格式化行（Article URL / Comments URL / Points / # Comments）
+    c = re.sub(r'\n(?:Article\s+)?URL:\s*https?://\S+', '', c)
+    c = re.sub(r'\nComments URL:\s*https?://\S+', '', c)
+    c = re.sub(r'\nPoints:\s*\d+', '', c)
+    c = re.sub(r'\n# Comments:\s*\d+.*', '', c)
+    c = re.sub(r'\nhttps?://\S+', '', c)
+    c = re.sub(r'^Hey HN,?\s*', '', c)
+    c = re.sub(r'^Hi HN,?\s*', '', c)
+    c = re.sub(r'^RT\s+', '', c)
+    # 移除孤立的缩略链接
+    c = re.sub(r'\nComments URL:.*$', '', c)
+    c = re.sub(r'^Article URL:.*$\n?', '', c, flags=re.MULTILINE)
+    # 移除 archive.ph 链接行
+    c = re.sub(r'\nhttps?://archive\.ph/\S+', '', c)
+    # 压缩多余空白
+    c = re.sub(r'\n{3,}', '\n\n', c)
+    c = c.strip()
+    return c[:300] if len(c) > 300 else c
+
+
 def clean_title(t):
     """清洗标题中的 Unicode 修饰符和残留学符"""
     if not t:
@@ -536,9 +561,25 @@ def main():
             parsed = PARSERS[sec](md_content)
             logger.info(f"[{sec}] MD解析: {len(parsed)}条")
         elif raw:
-            parsed = [dict(title=r.get('title',''), content='', quote='',
-                           source=r.get('source',''), url=r.get('url','')) for r in raw[:25]]
-            logger.info(f"[{sec}] 无MD, 从raw取: {len(parsed)}条")
+            parsed = []
+            # 🔴 修复：无MD报告时从raw数据生成更干净的条目，不直接复制raw的垃圾content
+            for r in raw[:25]:
+                title = r.get('title', '')
+                if not title:
+                    continue
+                source = r.get('source', '')
+                url = r.get('url', '')
+                raw_content = r.get('content', '')
+                # 清洗raw content：剥离HN/NL等平台的元数据格式
+                cleaned = _clean_raw_content(raw_content, source)
+                parsed.append(dict(
+                    title=title,
+                    content=cleaned if cleaned else '',
+                    quote='',
+                    source=source,
+                    url=url
+                ))
+            logger.info(f"[{sec}] 无MD, 从raw取(已清洗): {len(parsed)}条")
         else:
             logger.warning(f"[{sec}] 无数据, skip")
             continue
@@ -556,7 +597,8 @@ def main():
             if r:
                 if not item.get('source'): item['source'] = r.get('source','')
                 if not item.get('url'): item['url'] = r.get('url','')
-                if not item.get('content'): item['content'] = (r.get('content') or '')[:300]
+                if not item.get('content'):
+                item['content'] = _clean_raw_content(r.get('content') or '', r.get('source',''))
             for f in ('title','content','quote','source','url'):
                 item.setdefault(f, '')
             # 🔴 问题2: published 日期归一化（截断至10字符 YYYY-MM-DD）
