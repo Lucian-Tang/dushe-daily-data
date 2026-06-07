@@ -1,12 +1,12 @@
 {
   "schemaVersion": "2.0",
-  "updated": "2026-06-07T06:02:50.844189",
+  "updated": "2026-06-07T12:45:54.105422",
   "industry": "industry_daily_20260607.json",
   "dev": "dev_daily_20260607.json",
   "ai": "ai_daily_20260606.json",
   "startup": "startup_daily_20260607.json",
   "design": "design_daily_20260607.json",
-  "social": "social_daily_20260606.json",
+  "social": "raw_social_20260607.json",
   "hf_daily": "hf_daily_20260509.json",
   "history": {
     "industry": [
@@ -166,6 +166,7 @@
       "data/design_daily_20260510.json"
     ],
     "social": [
+      "data/social_daily_20260606.json",
       "data/social_daily_20260605.json",
       "data/social_daily_20260604.json",
       "data/social_daily_20260603.json",
@@ -350,6 +351,7 @@
     "design_daily_20260512.json": "0853caf9e97c4c7a747e23c2638425bb6da916d9e32ee760400a0bd379493e63",
     "design_daily_20260511.json": "50bbb081a17dc25ef6ba4b5c5dfe9a86173a5e4f0b47e5111a3f7a72e2f1a9c8",
     "design_daily_20260510.json": "2343e3da7854aab5f3752c17e8add875de9a3d02fb83aeaef90016db564419b3",
+    "raw_social_20260607.json": "35b31e8002b5e74505240dd0a8fe495124ad9247b5576dd404cc23fecb6aeede",
     "social_daily_20260606.json": "2b42aa646f47df518d2300639d0a21a2abca2d79b634045b4a8d1f5155178ea5",
     "social_daily_20260605.json": "51ed91d2ba62391c30e43eab50f50b4737a3891ba84a1deb1a02ec07dcdcdd80",
     "social_daily_20260604.json": "2d59fc52317190596ac8e56d86c805787cc486e4ee34952752cf3bc9602dd783",
@@ -387,7 +389,7 @@
     "github_daily_20260603.json": "87d631dcd507ad612bc198c0252c9a2908211696f085c56ba068abee90a86039",
     "github_daily_20260531.json": "36504f11e814ca4f367b87262fd2a1a5a45f1588cc94c4db2ee7b3532405755a",
     "github_daily_20260601.json": "3d87e52a166ff7072e23f22206077aeeae8f68001d9e36f413fe0824025f19dd",
-    "github_daily_20260607.json": "6f09fa141d6b483cbda1699d20198deaa917a85b850d52cecd0322ff5e7fafc2",
+    "github_daily_20260607.json": "618b7be0b8e2a1bef0826ed268b6c3c0d51cb01692c2a555ded2250b507d317a",
     "github_daily_20260606.json": "c49dfdd1640a01c5dc778016aae094b7a705391ad3f76047b0b50845247bb198",
     "github_daily_20260604.json": "9ecd6f1358494f20f78e86a25149e3eecba6d8897f07b12f58d615a2b8b9df32",
     "github_daily_20260602.json": "1df7d8c4b2972045b695e9facf50b22a2fd5f5d73668513228f8ee377b37e937",
@@ -395,7 +397,7 @@
     "clawhub_daily_20260601.json": "5080e262ef8cbe51986a3dfe9cd4616c6c013bddc2659107f4c5df20abec5117",
     "clawhub_daily_20260530.json": "212baafaa95bde039fdb1c090089125822fe8ecb18ae2e839c9ffb253724f021",
     "clawhub_daily_20260606.json": "aa8e661ddc017b9396b6338a6ad516c18a155feee5242fa81b624e9648a2c886",
-    "clawhub_daily_20260607.json": "08015e7f02a9763f938b6a6d4ee1552b99174767a915e0d137e28f1e834e8c00",
+    "clawhub_daily_20260607.json": "c56e19bf491e374baa329a9e707a2c16484168dc01a531c9e130905c1e160a32",
     "clawhub_daily_20260604.json": "f188657d5d5cbe5eed7fd585bbd6a9d58758ebfc0f9a7c115764248a54af8bf9",
     "clawhub_daily_20260529.json": "cf3a5c7968b77b75494a4e58b85ea940780b505b5e9751a03525d15ecb288e23",
     "clawhub_daily_20260602.json": "34bb61d24e0b918a1257d81c14a1b20e07d5dd75ca2e5a883fda44c49e13d3b6",
@@ -418,11 +420,11 @@
     "weekly_github_20260530.json": "08c3352a1232d90c4a2bbd0275622c85dabacede21091f3fcacb8f5b923086ad",
     "weekly_github_20260602.json": "949b33814347411940b7d73d0706596130d2033ab20046e19666d43f50de4698",
     "weekly_github_20260604.json": "c0b67daa5fde186c012611de4b2a793e8395604a0608c1697a4807ae8f6484fc",
-    "weekly_github_20260607.json": "e6f3793549a5104714f617255a53c97376219f2a5c23f5c351bae4bbcfd73ae9",
+    "weekly_github_20260607.json": "6e7dcdc0bbd7a2956d2fb9f63a4cc21d8be1768171c4e20d0ff81bd6d24da773",
     "weekly_github_20260601.json": "f74786e962e378e93953dff4a3f973be28d970d689f9900989588aa28b65432e",
     "weekly_github_20260531.json": "ad3cbb289ab119865076847554de3c76cb3bcf886d64a7eccef3b416cbe7f44e",
     "weekly_clawhub_20260601.json": "cdbbc3453d113f70470230a1e3127c7d04debc190c3f3169ae84e2c6c5639ee4",
-    "weekly_clawhub_20260607.json": "852c41039c4396f67b2701850a688e0863997a647e5a7865c5b705f51eac20bb",
+    "weekly_clawhub_20260607.json": "8d13a2c8ca6de392be9f31415b0d3165ce275698b7c6d679e08a1e734e715c62",
     "weekly_clawhub_20260606.json": "66d7f9b107a5ec9fc397800982e51cfb36778144aacdb44bf47f72ede7528785",
     "weekly_clawhub_20260604.json": "f81251600d075519c560e4b4b2a4aee8f7249a0203e91cc7c7101fe23d130887",
     "weekly_clawhub_20260529.json": "7dca9597edad99fc85a7b728c8efffeb45b945d0f5b82fdd96af379082216955",
@@ -442,6 +444,12 @@
     "ai_models_weekly_20260529.json": "22fccf9e950ce183e0ca4ff96848ef35122c803fdc183162a7612c5b90fc6cf1",
     "ai_models_weekly_20260603.json": "3458d312ae8f544b941e0a9827d59ea47bccd756e07e69ec799327587e55f2d5"
   },
+  "github": "github_daily_20260607.json",
+  "clawhub": "clawhub_daily_20260607.json",
+  "ai_models": "ai_models_daily_20260606.json",
+  "weekly_github": "weekly_github_20260607.json",
+  "weekly_clawhub": "weekly_clawhub_20260607.json",
+  "ai_models_weekly": "ai_models_weekly_20260607.json",
   "sections": {
     "ai": {
       "files": [
@@ -1119,11 +1127,5 @@
         }
       ]
     }
-  },
-  "github": "github_daily_20260607.json",
-  "clawhub": "clawhub_daily_20260607.json",
-  "ai_models": "ai_models_daily_20260606.json",
-  "weekly_github": "weekly_github_20260607.json",
-  "weekly_clawhub": "weekly_clawhub_20260607.json",
-  "ai_models_weekly": "ai_models_weekly_20260607.json"
+  }
 }

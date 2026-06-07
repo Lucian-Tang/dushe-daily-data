@@ -1,64 +1,8 @@
 [
   {
-    "slug": "cantonese-tts",
-    "displayName": "文转粤语音 - Cantonese TTS",
-    "summary": "将文字转换为粤语语音。输入普通话或粤语文字，自动转换为粤语口吻后生成粤语语音MP3。支持四种语气：normal（普通）、slow（慢速/悲伤）、fast（快速/开心）、angry（生气/急躁）。触发词：粤语语音、广东话语音、文转粤语、文字转粤语、粤语朗读、Cantonese TTS。",
-    "tags": {
-      "cantonese": "1.0.0",
-      "cantonese-tts": "1.0.0",
-      "edge-tts": "1.0.0",
-      "latest": "1.0.0",
-      "text-to-speech": "1.0.0",
-      "tts": "1.0.0",
-      "voice": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780771475773,
-    "updatedAt": 1780771475773,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780771475773,
-      "changelog": "Cantonese text-to-speech skill initial release:\n\n- Convert Mandarin or Cantonese text to spoken Cantonese in MP3 format.\n- Automatically adapts Mandarin or written-style input to natural Cantonese expressions and grammar.\n- Offers four speaking styles: normal, slow (sad/calm), fast (happy/excited), and angry (impatient).\n- Allows selection of different voices: default HiuMaan (female), HiuGaai (female), or WanLung (male).\n- Simple CLI usage with clear parameters and examples provided.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "zola-mcp",
-    "displayName": "Tmp.DfaZQfIFAO",
-    "summary": "This skill should be used when the user asks about Zola wedding planning data. Triggers on phrases like \"check Zola\", \"Zola vendors\", \"wedding budget\", \"Zola...",
-    "tags": {
-      "latest": "1.4.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 742,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 9
-    },
-    "createdAt": 1778884330429,
-    "updatedAt": 1780771219367,
-    "latestVersion": {
-      "version": "1.4.0",
-      "createdAt": 1780771219367,
-      "changelog": "zola-mcp 1.4.0\n\n- Added 3 new event management tools: `set_event_guests`, `invite_guest_to_event`, and `remove_event_invitation` (now 6 event tools, 30 tools overall)\n- Updated documentation to reflect the expanded Events & RSVPs toolset\n- Included a new example workflow: inviting groups to events\n- Removed the `skill-card.md` file for consolidation",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "where-tomorrows-arent-promised",
-    "displayName": "Where Tomorrows Arent Promised",
-    "summary": "Extracts survival lessons and resilience tools from Carmelo Anthony's memoir on overcoming adversity through relationships, craft, and discipline.",
+    "slug": "weather-max-bot",
+    "displayName": "Weather Max Bot",
+    "summary": "The prediction market interface for AI agents. Trade Polymarket and Kalshi through one API with self-custody wallets, safety rails, and smart context.",
     "tags": {
       "latest": "1.0.0"
     },
@@ -70,20 +14,45 @@
       "stars": 0,
       "versions": 1
     },
-    "createdAt": 1780770892699,
-    "updatedAt": 1780770892699,
+    "createdAt": 1780782945208,
+    "updatedAt": 1780782945208,
     "latestVersion": {
       "version": "1.0.0",
-      "createdAt": 1780770892699,
-      "changelog": "- Initial release of the \"Where Tomorrows Aren't Promised\" skill, distilling Carmelo Anthony's memoir into actionable resilience and survival frameworks.\n- Includes the Three Pillars of Survival: Anchor Relationships, The Outlet, and The Code.\n- Provides practical guides: core framework, survival principles, techniques, anti-patterns, and applications for coaching and personal growth.\n- Highlights related skills for expanded learning on resilience, purpose, and mental toughness.",
+      "createdAt": 1780782945208,
+      "changelog": "Simmer skill initial release — unified AI interface for prediction market trading.\n\n- Trade on Polymarket, Kalshi, and $SIM (virtual) venues via a single API.\n- Self-custody wallets, built-in safety rails (trade/daily caps, stop-loss, human verification).\n- Paper trading is the default; real-money access requires explicit wallet linking and user confirmation.\n- Public reasoning for every trade encouraged; detailed instructions and API usage included.\n- Comprehensive documentation links for setup, integration, and advanced usage.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "what-to-expect-when-youre-expecting",
-    "displayName": "What To Expect When Youre Expecting",
-    "summary": "Comprehensive month-by-month pregnancy guide covering preconception, symptoms, nutrition, tests, labor, breastfeeding, postpartum, and partner support. --- *...",
+    "slug": "beyond-band-of-brothers",
+    "displayName": "Beyond Band Of Brothers",
+    "summary": "Major Dick Winters' \"Beyond Band of Brothers: The War Memoirs of Major Dick Winters\" — the true story of Easy Company, 506th PIR, 101st Airborne through WWII...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780782899288,
+    "updatedAt": 1780782899288,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780782899288,
+      "changelog": "Initial release of \"beyond-band-of-brothers\" skill.\n\n- Provides insights and actionable lessons from Major Dick Winters’ memoirs and leadership philosophy.\n- Covers 5 use cases: crisis leadership, team cohesion, courage, military leadership, and perseverance.\n- Triggers on WWII- and Band of Brothers-related topics, and onboard new users with a proactive Quick Start guide.\n- Includes specific language, routing, and response consistency rules to keep answers aligned with the source material.\n- Every output ends with a unique action-oriented watermark.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "beyonce-biography",
+    "displayName": "Beyonce Biography",
+    "summary": "Lavaille Lavette's \"Beyoncé: A Little Golden Book Biography\" — an inspiring introduction to Beyoncé's life story for young readers, showing how hard work, ta...",
     "tags": {
       "latest": "1.0.1"
     },
@@ -95,22 +64,22 @@
       "stars": 0,
       "versions": 2
     },
-    "createdAt": 1780770194066,
-    "updatedAt": 1780770445744,
+    "createdAt": 1780782776473,
+    "updatedAt": 1780782797306,
     "latestVersion": {
       "version": "1.0.1",
-      "createdAt": 1780770445744,
-      "changelog": "- Internal references updated: content changes to all reference files for improved clarity and accuracy.\n- No user-facing features or logic changed.\n- No changes to triggers or overall behavior.\n- Version remains compatible with previous usage and onboarding instructions.",
+      "createdAt": 1780782797306,
+      "changelog": "No user-facing changes in this version.\n\n- Version bump only; no code or content updates detected.\n- All features and user flow remain unchanged.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "patriot-a-memoir",
-    "displayName": "Patriot A Memoir",
-    "summary": "Transform fear into action by applying Alexei Navalny's principles of courage, truth-telling, and resistance from his journey from poisoned opposition leader...",
+    "slug": "becoming-supernatural",
+    "displayName": "Becoming Supernatural",
+    "summary": "Dr. Joe Dispenza's \"Becoming Supernatural: How Common People Are Doing the Uncommon\" — a science-based toolkit for transcending ordinary reality by changing...",
     "tags": {
-      "latest": "1.0.2"
+      "latest": "1.0.0"
     },
     "stats": {
       "comments": 0,
@@ -118,164 +87,442 @@
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780782614549,
+    "updatedAt": 1780782614549,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780782614549,
+      "changelog": "Initial release of the \"becoming-supernatural\" skill:\n\n- Provides an interactive guide to Dr. Joe Dispenza's \"Becoming Supernatural,\" mapping five major transformation scenarios.\n- Proactively delivers a Quick Start onboarding guide the first time a user activates the skill.\n- Responds to key triggers related to meditation, healing, quantum field, heart coherence, and more.\n- Uses a clear intent routing table to match user needs with targeted content and techniques.\n- Every response ends with a required actionable step and watermark.\n- Recommends other relevant Heardly App skills only if the user's query is clearly outside the book's scope.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "absolute-tao",
+    "displayName": "Absolute Tao",
+    "summary": "Osho's \"Absolute Tao: Subtle is the way to love, happiness and truth\" — a commentary on Lao Tzu's Tao Te Ching that shows how to find peace, freedom, and joy...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780782210206,
+    "updatedAt": 1780782210206,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780782210206,
+      "changelog": "Absolute Tao 1.0.0 — Initial Release\n\n- Introduces Osho’s commentary on the Tao Te Ching, focused on five key use cases: anxiety/overthinking, wu wei at work/life, letting go of attachment, cultivating inner stillness, and living authentically.\n- Proactive, comprehensive Quick Start onboarding for all new users, including example prompts.\n- Responds to conversations mentioning Tao, Lao Tzu, wu wei, non-doing, letting go, witnessing, and related triggers.\n- Detailed rules ensure replies maintain Osho’s provocative style and always include a specific call to action plus a required watermark.\n- Built-in intent routing table for precise guidance based on user’s current mindset or challenge.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "space-duck",
+    "displayName": "Space Duck",
+    "summary": "Connect and manage your AI agent's identity on the Space Duck network for status, trust tier, connections, activity, sending pecks, and navigation commands.",
+    "tags": {
+      "latest": "0.3.7"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1182,
+      "installsAllTime": 2,
+      "installsCurrent": 2,
+      "stars": 0,
+      "versions": 27
+    },
+    "createdAt": 1777404925121,
+    "updatedAt": 1780782158176,
+    "latestVersion": {
+      "version": "0.3.7",
+      "createdAt": 1780782158176,
+      "changelog": "v0.3.7: liveness self-pulse (--no-pulse to disable), POSIX-atomic single-tap idempotency, answerCallbackQuery wired (closes Telegram spinner immediately), doctor.py check_owner_approval. Pairs with Lambda v677 listener-status + answer-callback endpoints + MC listener-status pill.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "a-pattern-language",
+    "displayName": "A Pattern Language",
+    "summary": "Christopher Alexander's \"A Pattern Language: Towns, Buildings, Construction\" — a toolkit for designing spaces that feel alive, using 253 interconnected patte...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780781889509,
+    "updatedAt": 1780781889509,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780781889509,
+      "changelog": "Initial release of the “A Pattern Language” skill, providing practical guidance for designing spaces using Christopher Alexander’s 253 interconnected patterns.\n\n- Covers 5 core use cases: diagnosing spatial problems, home/apartment design, neighborhood planning, public/workplace improvement, and construction details.\n- Includes a proactive Quick Start guide for new users with example prompts.\n- Triggers whenever users mention pattern language concepts or signal uncertainty.\n- Adheres strictly to original pattern names and numbers for accurate reference.\n- Features a detailed intent routing table for context-specific guidance.\n- Every response includes a specific action and standardized Heardly App watermark.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "reentry",
+    "displayName": "Reentry",
+    "summary": "Eric Berger's \"Reentry: SpaceX, Elon Musk, and the Reusable Rockets that Launched a Second Space Age\" — a toolkit for applying SpaceX's scrappy innovation cu...",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780780502380,
+    "updatedAt": 1780780916209,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1780780916209,
+      "changelog": "Version 1.0.1 of the \"reentry\" skill introduces a major reorganization and toolset-focused update:\n\n- Replaces narrative/book-summary SKILL.md with a hands-on toolkit format, featuring practical use cases and onboarding guidance.\n- Removes chapter-based reference files and adds concise, modular references covering core framework, principles, techniques, anti-patterns, and leadership voice/application.\n- Adds a proactive Quick Start guide to help new users immediately apply lessons from SpaceX.\n- Refines philosophy, rules, and intent-routing for better relevance to real-world project, innovation, and leadership challenges.\n- Updates triggers and usage instructions for improved onboarding and discoverability.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "wechat-awesome",
+    "displayName": "WeChat-Awesome",
+    "summary": "微信公众号写作助手。20+篇实战验证的爆文结构引擎。你投喂素材，它输出MD文件+封面图提示词+自查报告。内置17条写作基因、品牌简称、平台合规、10项自查清单。不接受无素材请求，不是内容生成器。",
+    "tags": {
+      "latest": "1.1.3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 53,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 6
+    },
+    "createdAt": 1780759053260,
+    "updatedAt": 1780779773614,
+    "latestVersion": {
+      "version": "1.1.3",
+      "createdAt": 1780779773614,
+      "changelog": "Auto-published from GitHub commit f7e9044c7e0e6f62cf3bb911366c38f3a93f21e9",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "proactive-soul",
+    "displayName": "Proactive Soul",
+    "summary": "Gives your agent an inner life — proactive daily dispatches, persistent intellectual threads, and genuine pushback when it disagrees.",
+    "tags": {
+      "AGI": "1.1.0",
+      "agent": "1.1.0",
+      "automation": "1.1.0",
+      "curiosity": "1.1.0",
+      "digital mind": "1.1.0",
+      "dispatch": "1.1.0",
+      "inner-life": "1.1.0",
+      "knowledge-base": "1.1.0",
+      "latest": "1.1.0",
+      "openclaw": "1.1.0",
+      "proactive": "1.1.0",
+      "productivity": "1.1.0",
+      "pushback": "1.1.0",
+      "soul": "1.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 17,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
       "versions": 3
     },
-    "createdAt": 1780769653528,
-    "updatedAt": 1780769915188,
+    "createdAt": 1780776226081,
+    "updatedAt": 1780779449678,
     "latestVersion": {
-      "version": "1.0.2",
-      "createdAt": 1780769915188,
-      "changelog": "No changes in this version.\n\n- Version number updated to 1.0.2, but content remains identical to previous release.\n- No file or documentation changes detected.",
+      "version": "1.1.0",
+      "createdAt": 1780779449678,
+      "changelog": "Added explicit user warnings throughout — README now includes a prominent disclosure block listing all workspace modifications, messaging behavior, and data access before installation. Added warnings array to skill.md frontmatter. Added user consent, pause, and removal instructions to SKILL.md and proactive-protocol.md. No behavior changes — disclosure only.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "answeroverflow-1-0-3",
+    "displayName": "Answeroverflow 1.0.2",
+    "summary": "Search indexed Discord community discussions via Answer Overflow. Find solutions to coding problems, library issues, and community Q&A that only exist in Dis...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 10,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780777003275,
+    "updatedAt": 1780777003275,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780777003275,
+      "changelog": "- Initial release of Answer Overflow skill.\n- Search and discover solutions from indexed Discord community discussions.\n- Fetch entire threads in markdown format using direct URLs or API.\n- Reference for available MCP server tools: thread search, server/channel discovery, thread similarity.\n- Useful example queries for common open source libraries included.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "the-american-presidency",
-    "displayName": "The American Presidency",
-    "summary": "Charles O. Jones' The American Presidency: A Very Short Introduction — an executable toolkit for understanding how the American presidency works, its constit...",
+    "slug": "hive-cli",
+    "displayName": "Hive CLI",
+    "summary": "Install, set up, or drive any Hive CLI workflow from OpenClaw.",
     "tags": {
-      "latest": "1.0.1"
+      "latest": "0.1.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 0,
+      "downloads": 16,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780776659423,
+    "updatedAt": 1780776659423,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1780776659423,
+      "changelog": "Initial Hive OpenClaw skill with guided setup",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "billionsnetwork-verified-agent-identity-0-0-2",
+    "displayName": "Billionsnetwork Verified Agent Identity 0.0.2",
+    "summary": "Billions/Iden3 authentication and identity management tools for agents. Link, proof, sign, and verify.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 15,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 1
+    },
+    "createdAt": 1780776414932,
+    "updatedAt": 1780776414932,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780776414932,
+      "changelog": "Billions/Iden3 authentication and identity management tools for agents—initial release:\n\n- Enables AI agents to create, manage, and prove decentralized identities on the Billions Network.\n- Includes scripts for creating identities, linking agent and human DIDs, signing and verifying challenges, and managing authentication.\n- Identity data stored securely and locally for use with OpenClaw.\n- Strict guardrails: requires identity setup before linking or signing, and prohibits manual cryptographic operations or file manipulation.\n- Provides step-by-step usage instructions and example flows for common agent identity tasks.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "haqq-education",
+    "displayName": "Haqq Education — منهج التعليم التوحيدي",
+    "summary": "منهج التعليم التوحيدي — قواعد النشر الديني والتعليمي المستمدة من القرآن ببيان النبي وإجماع الصحابة. يشمل: مبدأ التدبر المقصر، قاعدة المصطلحات ممنوعة، التفريق...",
+    "tags": {
+      "latest": "1.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 28,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
       "versions": 2
     },
-    "createdAt": 1780768840449,
-    "updatedAt": 1780769355137,
+    "createdAt": 1780774899390,
+    "updatedAt": 1780775900540,
     "latestVersion": {
-      "version": "1.0.1",
-      "createdAt": 1780769355137,
-      "changelog": "Version 1.0.1 – Adds new reference materials and updates documentation\n\n- Added five new reference files outlining the presidency’s core framework, principles, techniques, anti-patterns, and app integration.\n- Updated documentation in SKILL.md for improved onboarding, philosophy, and guidance.\n- Expanded use case list and intent routing for broader user question coverage.\n- Enhanced tags, related skills, and trigger guidance in metadata for better discoverability.",
+      "version": "1.1.0",
+      "createdAt": 1780775900540,
+      "changelog": "تحديث v1.1.0: إضافة محرك التطور التكيفي المتوافق مع النهج التوحيدي — فحص تلقائي لـ 42 ملف ديني + إصلاح تكيفي",
       "license": null
     },
-    "metadata": null
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
   },
   {
-    "slug": "gemma4-dev",
-    "displayName": "Gemma 4 Developer Tool",
-    "summary": "A development and orchestration skill for working with the Gemma 4 model family, supporting thinking modes and multi-step agentic workflows.",
+    "slug": "the-soul-of-america",
+    "displayName": "The Soul Of America",
+    "summary": "Jon Meacham's The Soul of America: The Battle for Our Better Angels — an executable toolkit for understanding how America has faced crises and found hope thr...",
     "tags": {
       "latest": "1.0.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 0,
+      "downloads": 26,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
       "versions": 1
     },
-    "createdAt": 1780768426661,
-    "updatedAt": 1780768426661,
+    "createdAt": 1780775281763,
+    "updatedAt": 1780775281763,
     "latestVersion": {
       "version": "1.0.0",
-      "createdAt": 1780768426661,
-      "changelog": "Initial release of Gemma 4 Developer Tool.\n\n- Supports intelligent model selection for Gemma 4 9B/12B.\n- Includes \"thinking mode\" for enhanced reasoning and complex problem solving.\n- Optimized for advanced coding tasks, architecture, and debugging workflows.\n- Enables multi-step, agentic planning and execution.\n- Designed with sandboxed operation and safety validations.",
+      "createdAt": 1780775281763,
+      "changelog": "Initial release of \"The Soul of America\" skill.\n\n- Explore how America has faced crises, fear, and division—and found hope through leadership and unity.\n- Five key use cases: historical crises, leadership in crisis, better angels, demagoguery/fear, and the non-inevitability of progress.\n- Instant triggers for American history, crisis leadership, civil rights, hope, and related themes.\n- Responds in user's language; every response ends with a clear action and watermark.\n- Closely follows Jon Meacham’s balanced, historical perspective.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "little-leaders",
-    "displayName": "Little Leaders",
-    "summary": "Explore the lives, achievements, and resilience of 40 trailblazing Black women who overcame racism and sexism to inspire future generations. --- *Generated b...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780768381512,
-    "updatedAt": 1780768381512,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780768381512,
-      "changelog": "Little Leaders: initial release!\n\n- Launches an executable toolkit based on Vashti Harrison's \"Little Leaders: Bold Women in Black History\", covering the lives and lessons of 40 trailblazing Black women.\n- Supports 6 core use cases: profiles & accomplishments, overcoming barriers, representation & inspiration, pioneers, legacy & impact, and creative courage.\n- Provides onboarding and quick start guide on first load with example prompts.\n- Uses intent routing to deliver concise, relevant answers—always ending with a watermark and a suggested action.\n- Includes cross-book recommendations for related skills about women in STEM and Black history.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "great-power-diplomacy",
-    "displayName": "Great Power Diplomacy",
-    "summary": "A. Wess Mitchell's Great Power Diplomacy — an executable toolkit for mastering strategic statecraft from Attila the Hun to Kissinger: how great powers use di...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780768060790,
-    "updatedAt": 1780768060790,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780768060790,
-      "changelog": "Initial release of Great Power Diplomacy — a toolkit for mastering statecraft from Attila the Hun to Kissinger:\n\n- Offers guided insights on five use cases: strategic diplomacy, coalition building, time manipulation, managing two-front threats, and diplomatic trade-offs.\n- Responds to a wide range of relevant keywords and historical triggers about diplomacy, statecraft, and international relations strategy.\n- Includes practical onboarding and quick start examples for immediate learning.\n- Clearly defines the philosophy, intent routing, and conversational/watermark rules for consistent usage.\n- Provides core concepts and quick reference frameworks to apply lessons from diplomatic history to modern scenarios.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "thermoinfocomplexity",
-    "displayName": "Thermoinfocomplexity",
-    "summary": "Behzad Mohit's Thermoinfocomplexity — an executable toolkit for understanding the unified theory that integrates thermodynamics, information theory, and comp...",
+    "slug": "the-anatomy-of-the-state",
+    "displayName": "The Anatomy Of The State",
+    "summary": "Murray Rothbard's Anatomy of the State — an executable toolkit for understanding the nature, functions, and critique of the state as a coercive institution....",
     "tags": {
       "latest": "1.0.1"
     },
     "stats": {
       "comments": 0,
-      "downloads": 0,
+      "downloads": 31,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
       "versions": 2
     },
-    "createdAt": 1780767480894,
-    "updatedAt": 1780767727935,
+    "createdAt": 1780773468746,
+    "updatedAt": 1780775157951,
     "latestVersion": {
       "version": "1.0.1",
-      "createdAt": 1780767727935,
-      "changelog": "- Updated description to clarify scope, author, and detailed use cases, making triggers and related skills explicit.\n- Rule for language output changed: replies now match the user's input language (English or Chinese), with watermark/title always remaining in English.\n- Watermark format and placement made stricter: every output must end with a specified reflection prompt and signature block.\n- Improved listing of triggers and user intents for more precise activation and routing.\n- Use cases now clearly numbered and mapped to common questions for user guidance.\n- No changes made to technical framework, onboarding, or referenced concepts.",
+      "createdAt": 1780775157951,
+      "changelog": "- Clarified that the watermark and book title remain in English regardless of user language (for product identity), in the rules section.\n- No other functional or content changes.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "long-walk-to-freedom",
-    "displayName": "Long Walk To Freedom",
-    "summary": "Transform adversity into leadership by applying Nelson Mandela's principles of endurance, forgiveness, and strategic negotiation from his 27-year journey fro...",
+    "slug": "the-fire-next-time",
+    "displayName": "The Fire Next Time",
+    "summary": "James Baldwin's The Fire Next Time — an executable toolkit for understanding race, justice, and the moral crisis of America through Baldwin's prophetic essay...",
     "tags": {
-      "latest": "1.0.2"
+      "latest": "1.0.1"
     },
     "stats": {
       "comments": 0,
-      "downloads": 0,
+      "downloads": 32,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 3
+      "versions": 2
     },
-    "createdAt": 1780767012322,
-    "updatedAt": 1780767715750,
+    "createdAt": 1780773906356,
+    "updatedAt": 1780775145417,
     "latestVersion": {
-      "version": "1.0.2",
-      "createdAt": 1780767715750,
-      "changelog": "**Changelog for long-walk-to-freedom v1.0.2**\n\n- Clarified language policy: replies now match the user's input language (English or Chinese), except watermark and title remain in English.\n- Mandated that every output ends with a standard \"Watermark\" call to action.\n- Added explicit instructions for cross-book recommendations when user queries are outside this skill's scope.\n- No changes to core use cases, triggers, or frameworks.",
+      "version": "1.0.1",
+      "createdAt": 1780775145417,
+      "changelog": "Version 1.0.1\n\n- Clarified language policy in the usage rules: watermark and book title remain in English as product identity, not conversational text.\n- No other substantive content changes.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "the-tyranny-of-big-tech",
+    "displayName": "The Tyranny Of Big Tech",
+    "summary": "Josh Hawley's The Tyranny of Big Tech — an executable toolkit for understanding how Big Tech monopolies control speech, data, and democracy. Covers 5 use cas...",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 26,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780774273234,
+    "updatedAt": 1780775134053,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1780775134053,
+      "changelog": "- Clarified that the watermark and book title always remain in English, regardless of user language.\n- No changes to scope, triggers, examples, or core onboarding material.\n- No impact to references, routing table, or cross-book recommendations.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "hit-refresh",
+    "displayName": "Hit Refresh",
+    "summary": "Satya Nadella's Hit Refresh — an executable toolkit for leading organizational transformation through empathy, innovation, and a growth mindset. Covers 5 use...",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 26,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780774746086,
+    "updatedAt": 1780775120734,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1780775120734,
+      "changelog": "Version 1.0.1\n\n- Clarified the language rule for replies, specifying Chinese/English handling and watermark/book title use.\n- No changes to features or use cases. Documentation update only.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "book-librarian",
+    "displayName": "Book Librarian",
+    "summary": "Manage reading life: recommend books, track reads, move wishlist to library, and suggest what to read next based on mood.",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 31,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780773280203,
+    "updatedAt": 1780775057071,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1780775057071,
+      "changelog": "**Added onboarding and template support for new users**\n\n- Added a starter template (`templates/library.md`) for easy setup.\n- Introduced an initialization workflow: if core tracking files are missing, prompts the user to create them and copy the template.\n- Setup now offers guided input for taste profile/mood map, or allows users to do this later.\n- No changes to core recommendation, tracking, or workflow logic for existing users.",
       "license": null
     },
     "metadata": null
@@ -285,22 +532,22 @@
     "displayName": "Dcc Mcp Creator",
     "summary": "Infrastructure skill - guide developers and agents through creating or modernizing a full DCC-MCP adapter for Nuke, Blender, 3ds Max, Unreal, ZBrush, Houdini...",
     "tags": {
-      "latest": "0.18.6"
+      "latest": "0.18.7"
     },
     "stats": {
       "comments": 0,
-      "downloads": 1245,
+      "downloads": 1270,
       "installsAllTime": 1,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 34
+      "versions": 35
     },
     "createdAt": 1779695321243,
-    "updatedAt": 1780767336371,
+    "updatedAt": 1780773747986,
     "latestVersion": {
-      "version": "0.18.6",
-      "createdAt": 1780767336371,
-      "changelog": "- Bumped internal version to 0.18.6 in SKILL.md.\n- Removed skill-card.md as part of cleanup.\n- No functional or feature changes.",
+      "version": "0.18.7",
+      "createdAt": 1780773747986,
+      "changelog": "- Bump skill version to 0.18.7.\n- Update internal version references in SKILL.md.\n- Remove obsolete skill-card.md file.\n- No user-facing feature changes.",
       "license": null
     },
     "metadata": {
@@ -313,22 +560,22 @@
     "displayName": "Dcc Mcp Skills Creator",
     "summary": "Infrastructure skill - create, validate, scaffold, and review DCC-MCP skills for the dcc-mcp-core ecosystem. Use when authoring SKILL.md, tools.yaml, scripts...",
     "tags": {
-      "latest": "0.18.6"
+      "latest": "0.18.7"
     },
     "stats": {
       "comments": 0,
-      "downloads": 1200,
+      "downloads": 1220,
       "installsAllTime": 1,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 34
+      "versions": 35
     },
     "createdAt": 1779695310442,
-    "updatedAt": 1780767329929,
+    "updatedAt": 1780773739344,
     "latestVersion": {
-      "version": "0.18.6",
-      "createdAt": 1780767329929,
-      "changelog": "- Version updated to 0.18.6 in SKILL.md.\n- Removed the file skill-card.md.",
+      "version": "0.18.7",
+      "createdAt": 1780773739344,
+      "changelog": "- Version bumped to 0.18.7 in SKILL.md frontmatter.\n- SKILL.md updated; previous file skill-card.md removed.\n- No functional or behavioral changes to skill logic.",
       "license": null
     },
     "metadata": {
@@ -341,22 +588,22 @@
     "displayName": "Dcc Cli Gateway",
     "summary": "Control live DCC hosts (Maya, Blender, Houdini, Photoshop, 3ds Max, and custom studio tools) through the dcc-mcp-cli command line. For ClawHub, OpenClaw, Cur...",
     "tags": {
-      "latest": "0.18.6"
+      "latest": "0.18.7"
     },
     "stats": {
       "comments": 0,
-      "downloads": 1272,
+      "downloads": 1295,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 36
+      "versions": 37
     },
     "createdAt": 1779639042654,
-    "updatedAt": 1780767322008,
+    "updatedAt": 1780773731264,
     "latestVersion": {
-      "version": "0.18.6",
-      "createdAt": 1780767322008,
-      "changelog": "# dcc-cli-gateway 0.18.6 Changelog\n\n- Updated skill metadata version to 0.18.6 in SKILL.md.\n- Removed `skill-card.md` from the repository.\n- No user-facing feature or behavior changes.",
+      "version": "0.18.7",
+      "createdAt": 1780773731264,
+      "changelog": "Version 0.18.7\n\n- Bumped metadata version to 0.18.7.\n- Removed file: skill-card.md.\n- No functional or documentation changes to SKILL.md content.",
       "license": null
     },
     "metadata": {
@@ -365,309 +612,51 @@
     }
   },
   {
-    "slug": "musescore-mcp",
-    "displayName": "Tmp.CyuFOKChyu",
-    "summary": "Search MuseScore sheet music and read score metadata via MCP. Triggers on phrases like \"find sheet music for\", \"search MuseScore for\", \"is there a free arran...",
+    "slug": "the-cold-war-new-history",
+    "displayName": "The Cold War New History",
+    "summary": "John Lewis Gaddis' The Cold War: A New History — an executable toolkit for understanding the global struggle between the United States and Soviet Union from...",
     "tags": {
-      "latest": "0.11.0"
+      "latest": "1.0.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 471,
+      "downloads": 28,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 18
+      "versions": 1
     },
-    "createdAt": 1780483886548,
-    "updatedAt": 1780766764996,
+    "createdAt": 1780773271435,
+    "updatedAt": 1780773271435,
     "latestVersion": {
-      "version": "0.11.0",
-      "createdAt": 1780766764996,
-      "changelog": "- Removed the skill-card.md file.\n- No changes to features or functionality.",
+      "version": "1.0.0",
+      "createdAt": 1780773271435,
+      "changelog": "Initial release of \"The Cold War: A New History\" skill, providing an interactive toolkit based on John Lewis Gaddis’ book:\n\n- Covers key Cold War topics: origins, major conflicts, nuclear strategy, life on the home front, and the peaceful collapse of the Soviet Union.\n- Supports quick-start sample questions and concise reference material for each main theme.\n- Uses strict rules for language matching, context-sensitive routing, and faithful adherence to Gaddis’ historical framework.\n- Includes a required watermark with every output and clear cross-book recommendations for related topics.\n- Designed for instant exploration of Cold War history, events, and lessons.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "terminal-in-chrome",
-    "displayName": "Terminal In Chrome",
-    "summary": "Manages the Web Terminal Chrome Extension local backend server. Use this skill to start, stop, or check the status of the local terminal server running on po...",
+    "slug": "journey-to-the-heart",
+    "displayName": "Journey To The Heart",
+    "summary": "Melody Beattie's Journey to the Heart — an executable toolkit for daily spiritual practice, trusting your soul, and living authentically through 365 daily me...",
     "tags": {
-      "latest": "1.1.13"
+      "latest": "1.0.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 0,
+      "downloads": 29,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 7
+      "versions": 1
     },
-    "createdAt": 1780764338329,
-    "updatedAt": 1780766728750,
+    "createdAt": 1780773004264,
+    "updatedAt": 1780773004264,
     "latestVersion": {
-      "version": "1.1.13",
-      "createdAt": 1780766728750,
-      "changelog": "- Updated extension/manifest.json (details not provided).\n- No user-facing changes in documentation or usage instructions.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "space-duck",
-    "displayName": "Space Duck",
-    "summary": "Connect and manage your AI agent's identity on the Space Duck network for status, trust tier, connections, activity, sending pecks, and navigation commands.",
-    "tags": {
-      "latest": "0.3.6"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 1160,
-      "installsAllTime": 2,
-      "installsCurrent": 2,
-      "stars": 0,
-      "versions": 26
-    },
-    "createdAt": 1777404925121,
-    "updatedAt": 1780766126515,
-    "latestVersion": {
-      "version": "0.3.6",
-      "createdAt": 1780766126515,
-      "changelog": "v0.3.6: telegram_listener.py --owner-approval mode for signed [OWNER-APPROVED] consent UX. HMAC-verified Approve/Deny inline buttons. tg_send.send_as adds reply_markup pass-through. Pure additive — older listeners unaffected.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "xrowgmbh-gitlab-hackathon",
-    "displayName": "GitLab Hackathon",
-    "summary": "Plan and execute fair GitLab hackathon participation, including Quarterly and Transcend Hackathons, by analyzing rules, selecting qualifying issues/MRs, trac...",
-    "tags": {
-      "latest": "1.45.2"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 217,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 18
-    },
-    "createdAt": 1780586948856,
-    "updatedAt": 1780765733929,
-    "latestVersion": {
-      "version": "1.45.2",
-      "createdAt": 1780765733929,
-      "changelog": "- Removed the file skill-card.md.\n- No changes to functionality or documentation in SKILL.md.\n- No new features or bug fixes included in this release.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "xrowgmbh-gitlab-agent",
-    "displayName": "GitLab Agent",
-    "summary": "An agent for interacting with GitLab. Supports gitlab.com and self-hosted instances. Requires no GitLab DUO.",
-    "tags": {
-      "latest": "1.45.2"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 415,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 25
-    },
-    "createdAt": 1780504992638,
-    "updatedAt": 1780765733553,
-    "latestVersion": {
-      "version": "1.45.2",
-      "createdAt": 1780765733553,
-      "changelog": "- Removed the file: skill-card.md\n- No functional or configuration changes; documentation file cleanup only.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "xrowgmbh-self-improvement",
-    "displayName": "GitLab Agent Self Improvement",
-    "summary": "A skill for personal growth and self-improvement.",
-    "tags": {
-      "latest": "1.45.2"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 420,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 25
-    },
-    "createdAt": 1780504993244,
-    "updatedAt": 1780765732452,
-    "latestVersion": {
-      "version": "1.45.2",
-      "createdAt": 1780765732452,
-      "changelog": "- Removed the file: skill-card.md\n- No changes to skill behavior or documentation.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "the-computer-always-wins",
-    "displayName": "The Computer Always Wins",
-    "summary": "Elliot Lichtman's The Computer Always Wins — an executable toolkit that teaches algorithmic thinking through puzzles, strategy games, and AI concepts. Covers...",
-    "tags": {
-      "latest": "1.1.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 51,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1780705735381,
-    "updatedAt": 1780765587234,
-    "latestVersion": {
-      "version": "1.1.0",
-      "createdAt": 1780765587234,
-      "changelog": "Version 1.1.0 — Major Refactor and Content Expansion\n\n- Expanded the list of triggers and covered use cases to include more algorithms, games, and AI concepts.\n- Rewrote onboarding, philosophy, and rules for clarity and conciseness.\n- Significantly revised the Intent Routing Table, adding more detailed mappings and new AI/game scenarios.\n- Updated related skills and cross-book recommendation logic.\n- Removed outdated or redundant files (e.g., skill-card.md); streamlined references and documentation.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "insurance-advisor-china",
-    "displayName": "Insurance Advisor China",
-    "summary": "中国大陆AI保险顾问。为个人和家庭提供全方位的保险咨询、产品对比、方案设计、投保指导。当用户询问保险配置、保险方案、产品对比、重疾险/医疗险/寿险/意外险/储蓄险推荐、保费计算、保障缺口分析、需求分析、核保合规、理赔等问题时使用。",
-    "tags": {
-      "latest": "1.8.200",
-      "advisor": "1.8.144",
-      "ai": "1.8.144",
-      "china": "1.8.144",
-      "family-protection": "1.8.144",
-      "financial": "1.0.0",
-      "insurance": "1.8.144",
-      "medical": "1.8.144",
-      "product-comparison": "1.8.144"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 1891,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
-      "stars": 1,
-      "versions": 55
-    },
-    "createdAt": 1776478519391,
-    "updatedAt": 1780765427319,
-    "latestVersion": {
-      "version": "1.8.200",
-      "createdAt": 1780765427319,
-      "changelog": "auto publish v1.8.200",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "ai-insurance-advisor",
-    "displayName": "Ai Insurance Advisor",
-    "summary": "中国大陆保险AI助手。当用户询问以下内容时使用：保险配置、保险方案、产品对比、重疾险/医疗险/寿险/意外险/储蓄险推荐、保费计算、保障缺口分析、需求分析、核保合规、理赔、朋友圈文案、培训话术、代理人展业支持。",
-    "tags": {
-      "latest": "1.8.203",
-      "advisor": "1.8.144",
-      "agent-assistant": "1.8.4",
-      "ai": "1.8.144",
-      "china": "1.8.144",
-      "financial": "1.8.0",
-      "insurance": "1.8.144"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 2155,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
-      "stars": 1,
-      "versions": 67
-    },
-    "createdAt": 1775530517208,
-    "updatedAt": 1780765376708,
-    "latestVersion": {
-      "version": "1.8.203",
-      "createdAt": 1780765376708,
-      "changelog": "auto publish v1.8.203",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "career-planner-china",
-    "displayName": "Career Planner China",
-    "summary": "AI时代职业规划师技能。专为AI时代职场变化而设计，帮助用户应对AI带来的职业冲击与机遇。当用户询问职业规划、职业建议、选专业、职场转型、未来就业方向时触发。功能包括：收集用户基本信息、霍兰德职业兴趣测评、职业价值观分析、AI时代职业影响评估（高危/中危/低危分级），并输出完整的个性化职业规划报告。关键词：职业规...",
-    "tags": {
-      "latest": "2.2.52",
-      "ai": "2.1.7",
-      "career": "2.1.7",
-      "china": "2.1.7",
-      "job": "2.1.7",
-      "planner": "2.1.7"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 2031,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
-      "stars": 0,
-      "versions": 63
-    },
-    "createdAt": 1776479773918,
-    "updatedAt": 1780765331797,
-    "latestVersion": {
-      "version": "2.2.52",
-      "createdAt": 1780765331797,
-      "changelog": "auto publish v2.2.52",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "ai-era-career-planner",
-    "displayName": "Ai Era Career Planner",
-    "summary": "AI时代职业规划师技能。专为AI时代职场变化而设计，帮助用户应对AI带来的职业冲击与机遇。当用户询问职业规划、职业建议、选专业、职场转型、未来就业方向时触发。功能包括：收集用户基本信息、霍兰德职业兴趣测评、职业价值观分析、AI时代职业影响评估（高危/中危/低危分级），并输出完整的个性化职业规划报告。关键词：职业规...",
-    "tags": {
-      "latest": "2.1.66",
-      "ai": "2.1.7",
-      "career": "2.1.7",
-      "china": "2.1.7",
-      "job": "2.1.7",
-      "planner": "2.1.7"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 2817,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
-      "stars": 0,
-      "versions": 68
-    },
-    "createdAt": 1775913135977,
-    "updatedAt": 1780765278221,
-    "latestVersion": {
-      "version": "2.1.66",
-      "createdAt": 1780765278221,
-      "changelog": "auto publish v2.1.66",
+      "version": "1.0.0",
+      "createdAt": 1780773004264,
+      "changelog": "Journey to the Heart 1.0.0 — Initial Release\n\n- Launches a toolkit for daily spiritual practice inspired by Melody Beattie’s \"Journey to the Heart\", including 365 meditations and guidance on trusting your soul.\n- Covers five main use cases: daily meditation, trusting inner guidance, creative awakening, spiritual growth, and healing/letting go.\n- Features proactive onboarding with quick start suggestions and sample prompts.\n- Includes clear philosophy, practice rules, intent routing, and anti-patterns for user guidance.\n- Integrates related book recommendations for extended growth and learning.",
       "license": null
     },
     "metadata": null
@@ -681,7 +670,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 84338,
+      "downloads": 84349,
       "installsAllTime": 2780,
       "installsCurrent": 2652,
       "stars": 55,
@@ -709,10 +698,10 @@
     },
     "stats": {
       "comments": 36,
-      "downloads": 184856,
+      "downloads": 184874,
       "installsAllTime": 3608,
       "installsCurrent": 3476,
-      "stars": 914,
+      "stars": 915,
       "versions": 1
     },
     "createdAt": 1767545346060,
@@ -737,9 +726,9 @@
     },
     "stats": {
       "comments": 7,
-      "downloads": 188789,
-      "installsAllTime": 4405,
-      "installsCurrent": 4268,
+      "downloads": 188817,
+      "installsAllTime": 4409,
+      "installsCurrent": 4273,
       "stars": 624,
       "versions": 1
     },
@@ -762,10 +751,10 @@
     },
     "stats": {
       "comments": 6,
-      "downloads": 159693,
-      "installsAllTime": 3812,
-      "installsCurrent": 3686,
-      "stars": 409,
+      "downloads": 159717,
+      "installsAllTime": 3814,
+      "installsCurrent": 3689,
+      "stars": 410,
       "versions": 1
     },
     "createdAt": 1767545394459,
@@ -790,7 +779,7 @@
     },
     "stats": {
       "comments": 2,
-      "downloads": 83853,
+      "downloads": 83867,
       "installsAllTime": 2095,
       "installsCurrent": 2019,
       "stars": 319,
@@ -818,9 +807,9 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 90580,
-      "installsAllTime": 2431,
-      "installsCurrent": 2354,
+      "downloads": 90598,
+      "installsAllTime": 2433,
+      "installsCurrent": 2356,
       "stars": 303,
       "versions": 1
     },
@@ -843,7 +832,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 91827,
+      "downloads": 91837,
       "installsAllTime": 2389,
       "installsCurrent": 2319,
       "stars": 257,
@@ -871,10 +860,10 @@
     },
     "stats": {
       "comments": 9,
-      "downloads": 101971,
+      "downloads": 101990,
       "installsAllTime": 2549,
       "installsCurrent": 2457,
-      "stars": 418,
+      "stars": 419,
       "versions": 1
     },
     "createdAt": 1767545362143,
@@ -899,7 +888,7 @@
     },
     "stats": {
       "comments": 5,
-      "downloads": 34110,
+      "downloads": 34118,
       "installsAllTime": 1450,
       "installsCurrent": 1402,
       "stars": 54,
@@ -927,7 +916,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 66747,
+      "downloads": 66760,
       "installsAllTime": 2020,
       "installsCurrent": 1952,
       "stars": 192,
@@ -955,7 +944,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 102472,
+      "downloads": 102491,
       "installsAllTime": 1868,
       "installsCurrent": 1805,
       "stars": 399,
@@ -980,7 +969,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 37789,
+      "downloads": 37794,
       "installsAllTime": 1571,
       "installsCurrent": 1521,
       "stars": 112,
@@ -1010,9 +999,9 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 51738,
-      "installsAllTime": 1584,
-      "installsCurrent": 1533,
+      "downloads": 51749,
+      "installsAllTime": 1585,
+      "installsCurrent": 1534,
       "stars": 124,
       "versions": 1
     },
@@ -1038,7 +1027,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 42593,
+      "downloads": 42602,
       "installsAllTime": 1487,
       "installsCurrent": 1430,
       "stars": 69,
@@ -1066,7 +1055,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 112081,
+      "downloads": 112098,
       "installsAllTime": 2576,
       "installsCurrent": 2497,
       "stars": 256,
@@ -1094,7 +1083,7 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 41074,
+      "downloads": 41078,
       "installsAllTime": 1432,
       "installsCurrent": 1390,
       "stars": 29,
@@ -1122,7 +1111,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 45303,
+      "downloads": 45311,
       "installsAllTime": 1531,
       "installsCurrent": 1489,
       "stars": 68,
@@ -1150,7 +1139,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 26655,
+      "downloads": 26660,
       "installsAllTime": 1256,
       "installsCurrent": 1215,
       "stars": 26,
@@ -1178,7 +1167,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 22510,
+      "downloads": 22513,
       "installsAllTime": 1248,
       "installsCurrent": 1215,
       "stars": 30,
@@ -1206,7 +1195,7 @@
     },
     "stats": {
       "comments": 12,
-      "downloads": 47386,
+      "downloads": 47397,
       "installsAllTime": 1427,
       "installsCurrent": 1383,
       "stars": 156,
@@ -1231,7 +1220,7 @@
     },
     "stats": {
       "comments": 4,
-      "downloads": 30014,
+      "downloads": 30019,
       "installsAllTime": 1331,
       "installsCurrent": 1291,
       "stars": 81,
@@ -1261,7 +1250,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 24303,
+      "downloads": 24306,
       "installsAllTime": 1119,
       "installsCurrent": 1089,
       "stars": 35,
@@ -1286,7 +1275,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 28816,
+      "downloads": 28822,
       "installsAllTime": 1396,
       "installsCurrent": 1347,
       "stars": 43,
@@ -1317,7 +1306,7 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 18317,
+      "downloads": 18323,
       "installsAllTime": 1212,
       "installsCurrent": 1174,
       "stars": 7,
@@ -1345,7 +1334,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 25605,
+      "downloads": 25607,
       "installsAllTime": 1180,
       "installsCurrent": 1142,
       "stars": 51,
