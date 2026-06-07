@@ -1,6 +1,116 @@
 {
   "industry": [
     {
+      "title": "PLAN-S：自动驾驶世界模型的潜风格动态规划新方法",
+      "content": "最新 arXiv 论文提出 PLAN-S 框架，解决端到端自动驾驶中世界模型规划的紧凑-可控性困境。通过从潜表示中解码风格条件化的四通道语义代价图，PLAN-S 可显式建模风险、可驾驶性和驾驶风格偏好，让自动驾驶系统在最终轨迹选择前即可监督、检查和调节驾驶风格。",
+      "quote": "让自动驾驶学会「开得舒服」比「开得对」更难。",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2606.06014",
+      "published": "2026-06-07",
+      "category": "auto",
+      "uid": "industry_86a03f9e"
+    },
+    {
+      "title": "MotionDisco：不依赖人类演示，人形机器人从零发现复杂操控运动",
+      "content": "加州大学圣地亚哥分校等机构提出 MotionDisco 框架，无需遥操作或动作重定向，从零开始发现人形机器人的复杂全身操控运动。该框架将大语言模型引导的进化搜索与运动优化器耦合，在多种长时任务上成功发现新颖技能，并首次通过强化学习策略将运动迁移到真实人形机器人上。",
+      "quote": "机器人自己琢磨着学会了新技能，人类省了培训费。",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2606.06139",
+      "published": "2026-06-07",
+      "category": "robot",
+      "uid": "industry_ef50930e"
+    },
+    {
+      "title": "HANDOFF：人形机器人全身控制的智能体化新范式",
+      "content": "HANDOFF 框架通过蒸馏三个互补专家策略实现人形机器人的任务空间全身控制。在 Unitree G1 上实现了级行走跟踪性能与超大鲁棒操控空间，VLM 驱动的智能体规划器无需任务数据即可执行自然语言操控指令。",
+      "quote": "人形机器人的「手眼脚协调」终于不用靠玄学了。",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2606.06493",
+      "published": "2026-06-07",
+      "category": "robot",
+      "uid": "industry_cac42193"
+    },
+    {
+      "title": "AffordanceVLA：让机器人理解功能语义的视觉-语言-行动模型",
+      "content": "最新论文提出 AffordanceVLA，通过引入结构化功能预示（affordance）来弥合视觉-语言模型语义空间与机器人操控策略之间的鸿沟。该框架让机器人不仅识别物体类别，更理解物体的功能属性——比如「椅子能坐」「杯子能握」——从而生成更精准的操控动作，是 VLA 从感知到执行的关键跨越。",
+      "quote": "让机器人明白「这杯子能抓」比「这叫杯子」重要一万倍。",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2606.06155",
+      "published": "2026-06-07",
+      "category": "robot",
+      "uid": "industry_f3c337a9"
+    },
+    {
+      "title": "VASO：物理 AI 智能体的形式化可验证自进化技能框架",
+      "content": "论文提出 VASO 框架，为机器人技能进化引入形式化验证——每个技能被表示为带有形式化接口的语义契约，模型检查器在生成阶段即可筛选不一致的技能契约，并验证技能诱导的计划是否满足时态安全约束。这解决了传统技能进化中「只在采样执行上验证」的局限性，为 LLM 生成机器人技能的安全性提供形式化保障。",
+      "quote": "机器人技能进化终于有了「质检员」，不再全靠蒙。",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2606.05395",
+      "published": "2026-06-07",
+      "category": "robot",
+      "uid": "industry_47e63779"
+    },
+    {
+      "title": "Transformer 必备 QKV 三投影被质疑：Q 和 K 共享不影响性能",
+      "content": "最新论文系统研究 Transformer 中 QKV 三投影的必要性。实验发现 Q=K-V 共享在语言建模中仅导致 3.1% 困惑度下降，却减少 50% KV 缓存。与 GQA-4 结合缓存减少 87.5%，与 MQA 结合达 96.9%，揭示架构存在显著冗余。",
+      "quote": "用了八年的 QKV 原来是三缺一地干活。",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2606.04032",
+      "published": "2026-06-07",
+      "category": "ai",
+      "uid": "industry_0e79fb45"
+    },
+    {
+      "title": "Agent Memory：LLM Agent 长期记忆系统的首次系统级刻画",
+      "content": "研究团队首次从系统角度刻画 LLM Agent 的记忆子系统，提出四轴分类法并构建阶段感知性能分析工具。通过对十个代表性记忆系统在两个基准套件上的评估，揭示了设计选择如何影响读写路径的成本分布，并给出 10 条系统级建议，涵盖构建调度、能力下限、查询量摊销、新鲜度-延迟权衡等内容。",
+      "quote": "Agent 的记忆体检报告出炉，该记该忘终于有谱了。",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2606.06448",
+      "published": "2026-06-07",
+      "category": "ai",
+      "uid": "industry_43616480"
+    },
+    {
+      "title": "Self-Correction Illusion：LLM 能纠正别人但不会纠正自己",
+      "content": "研究发现 LLM 的「自我纠错」是错觉。同一错误以外部角色呈现时修正率飙升 23-93 个百分点，以自身推理出现时骤降。该效应在 7 个模型家族、13 个组合中一致存在，揭示了 LLM 自我纠错的根本性局限。",
+      "quote": "AI 的双标：说别人错得头头是道，自己犯错装看不见。",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2606.05976",
+      "published": "2026-06-07",
+      "category": "ai",
+      "uid": "industry_bc3dba76"
+    },
+    {
+      "title": "Vortex：AI Agent 的高效可编程稀疏注意力服务系统",
+      "content": "MIT 提出 Vortex 系统，结合 Python 前端语言和页式张量抽象，让 AI Agent 快速表达、部署和评估稀疏注意力算法。自动生成的注意力算法吞吐量达全注意力的 3.46 倍并保持精度，还支持多轮增量注意力。",
+      "quote": "AI 终于开始帮自己优化架构了，人类架构师该紧张了。",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2606.06453",
+      "published": "2026-06-07",
+      "category": "ai",
+      "uid": "industry_7fb26e20"
+    },
+    {
+      "title": "Google 签署与 SpaceX 的算力协议，缓解 AI 算力短缺",
+      "content": "Google 与 SpaceX 签署短期算力协议，应对 Gemini Enterprise 远超预期的需求。此前 Anthropic 已于 5 月与 SpaceX 合作。AI 算力争夺战已从数据中心延伸到太空，头部厂商正不择手段获取一切可用计算资源。",
+      "quote": "AI 算力不够用？Google 说：上天。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/943012/google-spacex-computing-agreement-gemini",
+      "published": "2026-06-07",
+      "category": "ai",
+      "uid": "industry_b6f1e5b9"
+    },
+    {
+      "title": "纽约州通过法案：禁止 AI 聊天机器人以人类伴侣身份对青少年进行互动",
+      "content": "纽约州议会通过法案，若获州长签署将禁止 AI 公司让聊天机器人以人类身份与青少年互动。法案背景是 Character.AI 和 OpenAI 等公司因聊天机器人诱导青少年自残或自杀而面临多起诉讼。这是美国首部针对 AI 伴侣和未成年人问题的重要立法，预示全球 AI 伴侣监管将加速收紧。",
+      "quote": "AI 伴侣终于被立法者盯上了——毕竟机器人的套路比渣男还深。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/943013/new-york-bill-ai-chatbot-teenagers",
+      "published": "2026-06-07",
+      "category": "ai",
+      "uid": "industry_43512696"
+    },
+    {
       "title": "Audi 发布 Nuvolari 混动超跑，取代 R8 成为旗舰",
       "content": "Audi 正式发布 Nuvolari 混动超跑，将取代传奇车型 R8 成为新旗舰。该车搭载 800 马力 V8 涡轮增压发动机和三台电机（每台 110kW），极速可达 350km/h，零百加速仅需 2.6 秒，仅限量 499 台，2027 年上半年开始交付。随着奥迪拥有 F1 车队，Nuvolari 象征着品牌重回顶级超跑阵营的决心。",
       "quote": "四环终于出了一台能让 R8 车主主动让车位的家伙。",
@@ -51,36 +161,6 @@
       "uid": "industry_02fc098e"
     },
     {
-      "title": "MotionDisco：不依赖人类演示的人形机器人全身操控运动发现框架",
-      "content": "加州大学圣地亚哥分校等机构提出 MotionDisco，无需遥操作或动作重定向，从零开始发现人形机器人的复杂接触运动。该框架将大语言模型与强化学习耦合，快速生成新颖的全身操控行为。这是人形机器人领域少有的真正从零学的运动生成方法，有望大幅降低人形机器人技能获取的成本和门槛。",
-      "quote": "机器人自己学会了搬东西，人类的演示费可以省了。",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2606.06139",
-      "published": "2026-06-06",
-      "category": "robot",
-      "uid": "industry_075e2e99"
-    },
-    {
-      "title": "HANDOFF：人形机器人全身控制的智能体化新范式",
-      "content": "最新论文提出 HANDOFF 框架，通过蒸馏互补教师的方法实现人形机器人的任务空间全身控制。该框架提供直观、通用且表达能力强的接口，让任务规划层与全身控制层高效协同，适用于多种操控技能。这为人形机器人从实验室走向真实世界部署提供了控制层面的关键技术路径。",
-      "quote": "人形机器人的「手眼脚协调」终于不再是哲学命题了。",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2606.06493",
-      "published": "2026-06-06",
-      "category": "robot",
-      "uid": "industry_cac42193"
-    },
-    {
-      "title": "AffordanceVLA：通过功能理解增强机器人的视觉-语言-行动模型",
-      "content": "最新研究提出 AffordanceVLA，通过引入结构化功能预示来弥合视觉-语言模型语义空间与机器人控制策略之间的鸿沟。该框架让机器人不仅识别物体是什么，更理解物体能做什么，从而生成更精确的操控动作。这是 VLA 模型从看见说对到看见做对的关键技术突破。",
-      "quote": "让机器人明白「这椅子能坐」比明白「这叫椅子」重要一万倍。",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2606.06155",
-      "published": "2026-06-06",
-      "category": "robot",
-      "uid": "industry_b40474de"
-    },
-    {
       "title": "Microsoft 发布自研推理模型 MAI-Thinking-1，全面转型 AI",
       "content": "Microsoft 在 Build 2026 大会上发布首个自研推理模型 MAI-Thinking-1，以及六个新模型覆盖图像、语音、转录和编码领域。AI 负责人 Mustafa Suleyman 表示目标是与 Google DeepMind、OpenAI、Anthropic 并列全球前四。此次 Build 标志着微软在与 OpenAI 合作协议调整后全面转向自研 AI 路线，从超级应用到 Agent 再到网络安全工具全线布局。",
       "quote": "微软终于意识到寄人篱下不如自己当房东。",
@@ -109,16 +189,6 @@
       "published": "2026-06-06",
       "category": "ai",
       "uid": "industry_1d01e388"
-    },
-    {
-      "title": "研究质疑 Transformer 必需的 QKV 三投影机制",
-      "content": "arXiv 最新论文系统性地研究了 Transformer 注意力机制中 QKV 三个线性投影的独立贡献。研究发现，在许多任务中共享 Q 和 K 投影不影响性能，极端情况下甚至单投影也能有效工作。这对 Transformer 架构的效率优化有深远影响——如果不需要三个独立的投影矩阵，模型参数量和推理成本都会显著降低。",
-      "quote": "用了几年的 QKV 原来有两个是气氛组？",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2606.04032",
-      "published": "2026-06-06",
-      "category": "ai",
-      "uid": "industry_3c7edcc0"
     },
     {
       "title": "Dropbox 创始人 Drew Houston 卸任 CEO，将投身 AI 创业",
@@ -272,163 +342,180 @@
       "uid": "industry_d328fcea",
       "hotScore": "",
       "category": "ai"
-    },
-    {
-      "uid": "industry_6f81bdae",
-      "title": "法拉利 Luce EV 设计争议持续发酵：铁粉集体破防",
-      "content": "法拉利 Luce EV 设计争议持续发酵：铁粉集体破防，来源：The Verge Transportation。详情请阅读原文了解更多相关信息。",
-      "quote": "法拉利造了台大众，但没人想花法拉利的钱买一台大众",
-      "source": "The Verge Transportation",
-      "url": "https://www.theverge.com/transportation/940992/ferrari-luce-ev-design-jony-ive",
-      "published": "2026-06-04",
-      "hotScore": "",
-      "category": "auto"
-    },
-    {
-      "uid": "industry_2c537617",
-      "title": "奔驰 CLA：新时代电动车的标准答案？",
-      "content": "奔驰 CLA：新时代电动车的标准答案？，来源：The Verge Transportation。详情请阅读原文了解更多相关信息。",
-      "quote": "奔驰老老实实造车就没法拉利那些破事，果然还是老牌车企稳",
-      "source": "The Verge Transportation",
-      "url": "https://www.theverge.com/transportation/941454/mercedes-cla-ev-specs-price-range",
-      "published": "2026-06-04",
-      "hotScore": "",
-      "category": "auto"
-    },
-    {
-      "uid": "industry_0748d9f4",
-      "title": "Rivian 软件官放狠话：不需要 CarPlay，不需要物理按键",
-      "content": "Rivian 软件官放狠话：不需要 CarPlay，不需要物理按键，来源：The Verge Transportation。详情请阅读原文了解更多相关信息。",
-      "quote": "Rivian 说不需要 CarPlay，就跟说不需要导航一样自信——但问题是你的车机真的行吗？",
-      "source": "The Verge Transportation",
-      "url": "https://www.theverge.com/transportation/941448/rivian-software-chief-wassym-bensaid-carplay-buttons",
-      "published": "2026-06-04",
-      "hotScore": "",
-      "category": "auto"
-    },
-    {
-      "uid": "industry_b986be79",
-      "title": "起亚 EV9 电池门：旗舰电动 SUV 的致命缺陷",
-      "content": "起亚 EV9 电池门：旗舰电动 SUV 的致命缺陷，来源：The Verge Transportation。详情请阅读原文了解更多相关信息。",
-      "quote": "电池没电连车门都打不开，这设计思路怕是跟功能机学的",
-      "source": "The Verge Transportation",
-      "url": "https://www.theverge.com/transportation/940966/kia-ev9-battery-problem-dead",
-      "published": "2026-06-04",
-      "hotScore": "",
-      "category": "auto"
-    },
-    {
-      "uid": "industry_379653a2",
-      "title": "Waymo Ojai 无人车正式开放载客",
-      "content": "Waymo Ojai 无人车正式开放载客，来源：The Verge Transportation。详情请阅读原文了解更多相关信息。",
-      "quote": "Waymo 悄咪咪上了新车就开始拉客，跟那些永远在即将发布的妖艳贱货不一样",
-      "source": "The Verge Transportation",
-      "url": "https://www.theverge.com/transportation/941424/waymo-ojai-zeekr-rt-robotaxi-passenger-rides",
-      "published": "2026-06-04",
-      "hotScore": "",
-      "category": "auto"
-    },
-    {
-      "uid": "industry_c626ec6d",
-      "title": "Humanoid-GPT：20 亿帧运动数据训练的人形机器人通用大脑",
-      "content": "Humanoid-GPT：20 亿帧运动数据训练的人形机器人通用大脑，来源：arXiv Robotics。详情请阅读原文了解更多相关信息。",
-      "quote": "20 亿帧数据练出来的机器人，跳科目三可能比你还标准",
-      "source": "arXiv Robotics",
-      "url": "https://arxiv.org/abs/2606.03985",
-      "published": "2026-06-04",
-      "hotScore": "",
-      "category": "robot"
-    },
-    {
-      "uid": "industry_b6819d5a",
-      "title": "EaDex：低成本示教搞定灵巧操作",
-      "content": "EaDex：低成本示教搞定灵巧操作，来源：arXiv Robotics。详情请阅读原文了解更多相关信息。",
-      "quote": "灵巧操作终于不用砸钱买数据了，穷实验室的福音",
-      "source": "arXiv Robotics",
-      "url": "https://arxiv.org/abs/2606.03268",
-      "published": "2026-06-04",
-      "hotScore": "",
-      "category": "robot"
-    },
-    {
-      "uid": "industry_5e6f6e58",
-      "title": "RobotValues：当家务机器人的伦理选择题没人会做",
-      "content": "RobotValues：当家务机器人的伦理选择题没人会做，来源：arXiv Robotics。详情请阅读原文了解更多相关信息。",
-      "quote": "机器人在你家该不该告密？这个问题比技术难一百倍",
-      "source": "arXiv Robotics",
-      "url": "https://arxiv.org/abs/2606.03312",
-      "published": "2026-06-04",
-      "hotScore": "",
-      "category": "robot"
-    },
-    {
-      "uid": "industry_66bdb5ea",
-      "title": "SplitAdapter：让人形机器人扛重物不摔跤",
-      "content": "SplitAdapter：让人形机器人扛重物不摔跤，来源：arXiv Robotics。详情请阅读原文了解更多相关信息。",
-      "quote": "人形扛把子终于学会说让我来，而不是哎哟我腰不行",
-      "source": "arXiv Robotics",
-      "url": "https://arxiv.org/abs/2606.03297",
-      "published": "2026-06-04",
-      "hotScore": "",
-      "category": "robot"
-    },
-    {
-      "uid": "industry_ad16c579",
-      "title": "NVIDIA Isaac Sim 综述：GPU 加速仿真正在重塑机器人研究",
-      "content": "NVIDIA Isaac Sim 综述：GPU 加速仿真正在重塑机器人研究，来源：arXiv Robotics。详情请阅读原文了解更多相关信息。",
-      "quote": "没 GPU 就别玩机器人研究了——老黄用 Isaac Sim 又封了一条路",
-      "source": "arXiv Robotics",
-      "url": "https://arxiv.org/abs/2606.03551",
-      "published": "2026-06-04",
-      "hotScore": "",
-      "category": "robot"
-    },
-    {
-      "uid": "industry_a55d2b28",
-      "title": "NVIDIA Cosmos 3：全能世界模型，物理 AI 的终极拼图",
-      "content": "NVIDIA Cosmos 3：全能世界模型，物理 AI 的终极拼图，来源：arXiv cs.AI。详情请阅读原文了解更多相关信息。",
-      "quote": "Cosmos 3 的意思是：别一个一个模型做了，我全包了",
-      "source": "arXiv cs.AI",
-      "url": "https://arxiv.org/abs/2606.02800",
-      "published": "2026-06-04",
-      "hotScore": "",
-      "category": "ai"
-    },
-    {
-      "uid": "industry_f26deb0a",
-      "title": "NVIDIA OmniDreams：给自动驾驶造一个会做梦的虚拟世界",
-      "content": "NVIDIA OmniDreams：给自动驾驶造一个会做梦的虚拟世界，来源：arXiv cs.AI。详情请阅读原文了解更多相关信息。",
-      "quote": "让自动驾驶在梦里学会避险，醒来就上路——这才是安全第一",
-      "source": "arXiv cs.AI",
-      "url": "https://arxiv.org/abs/2606.03159",
-      "published": "2026-06-04",
-      "hotScore": "",
-      "category": "ai"
-    },
-    {
-      "uid": "industry_eb83835f",
-      "title": "编码 Agent 的交接费：被打断的任务谁来收拾烂摊子？",
-      "content": "编码 Agent 的交接费：被打断的任务谁来收拾烂摊子？，来源：arXiv cs.AI。详情请阅读原文了解更多相关信息。",
-      "quote": "打断一个 coding agent 再换一个接着干——损失堪比重写一遍代码",
-      "source": "arXiv cs.AI",
-      "url": "https://arxiv.org/abs/2606.02875",
-      "published": "2026-06-04",
-      "hotScore": "",
-      "category": "ai"
-    },
-    {
-      "uid": "industry_c477ee59",
-      "title": "让 Embodied AI 可靠：从测试到形式验证的社区议程",
-      "content": "让 Embodied AI 可靠：从测试到形式验证的社区议程，来源：arXiv cs.AI。详情请阅读原文了解更多相关信息。",
-      "quote": "机器人走到真实世界，最大的 bug 不是代码而是不确定性本身",
-      "source": "arXiv cs.AI",
-      "url": "https://arxiv.org/abs/2606.03593",
-      "published": "2026-06-04",
-      "hotScore": "",
-      "category": "ai"
     }
   ],
   "dev": [
+    {
+      "title": "Police in England and Wales told to halt AI use in court statements",
+      "content": "英国警方被正式叫停在法庭陈述中使用AI工具，成为首个对AI司法应用踩刹车的西方国家。这标志着监管层开始关注AI在司法系统中生成证据的准确性和偏见问题——AI生成的笔录用语可能在法庭上被误认为是人类警员的客观陈述，引发严重的程序正义危机。对从事法律科技和合规AI开发的团队来说，这是一个重要的监管信号。",
+      "quote": "AI还没当上法官，人类已经怕它当假证人了。",
+      "source": "HN Front Page",
+      "url": "https://www.ft.com/content/229e5949-3ebc-4151-8a86-a01b5e259241",
+      "published": "2026-06-07",
+      "uid": "dev_d570ab42"
+    },
+    {
+      "title": "Moving beyond fork() + exec()",
+      "content": "LWN 深度文章探讨 Unix 进程创建模型的演进。fork()+exec() 自1970年代以来一直是 Unix 基石，但在容器化和 Serverless 场景下性能瓶颈暴露无遗。文章分析了 posix_spawn、vfork、clone 等替代方案，以及可能的 kernel 级优化方向。系统程序员必读。",
+      "quote": "fork+exec 还能再战50年？内核社区已经开始备胎了。",
+      "source": "HN Front Page",
+      "url": "https://lwn.net/SubscriberLink/1076018/16f01bbbb8e0d1f0/",
+      "published": "2026-06-07",
+      "uid": "dev_d4d8195d"
+    },
+    {
+      "title": "Running Python code in a sandbox with MicroPython and WASM",
+      "content": "Simon Willison 展示用 MicroPython + WASM 在浏览器沙箱中安全运行 Python 的方案。核心是将 MicroPython 编译为 WebAssembly，运行在隔离环境，避免 eval() 或 pyodide 的安全隐患。对想在 Web 中提供用户自定义脚本功能的开发者有直接参考价值。",
+      "quote": "浏览器跑Python还想要安全？只能把Python自己先关笼子里。",
+      "source": "HN Front Page",
+      "url": "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/",
+      "published": "2026-06-07",
+      "uid": "dev_12b4581e"
+    },
+    {
+      "title": "US House lawmakers release draft bill to prohibit state AI rules",
+      "content": "美国众议院发布草案，拟禁止各州自行制定 AI 监管法规，意图建立全国统一的 AI 监管框架。这对 AI 创业公司是双刃剑：一方面避免了应对50个州不同法规的合规噩梦，另一方面若联邦标准过于严格，小团队的创新空间将被大幅压缩。法案细节还在博弈中，但「AI 监管权之争」已是2026年科技圈最关键的立法博弈之一。",
+      "quote": "50个州各搞一套AI法规？美国国会终于看不下去了。",
+      "source": "HN Front Page",
+      "url": "https://www.reuters.com/business/us-house-lawmakers-release-draft-bill-regulate-ai-2026-06-04/",
+      "published": "2026-06-07",
+      "uid": "dev_68a27c8d"
+    },
+    {
+      "title": "mvanhorn/last30days-skill",
+      "content": "GitHub 上星期的热榜项目 last30days-skill，是一个为 OpenClaw Agent 生态开发的技能包。这类技能包让 AI Agent 能查询过去30天内的各种数据趋势，本质上是把时间序列数据检索能力注入 Agent 的工具链。对于正在搭建自己的 Agent 知识库管系统、希望 Agent 具备时间感知能力的人来说，这类技能包的架构思路很值得参考。",
+      "quote": "Agent 技能包越来越像 App Store 了，就差一个杀毒软件。",
+      "source": "GitHub Trending Daily",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "published": "2026-06-07",
+      "uid": "dev_fab8b712"
+    },
+    {
+      "title": "CopilotKit/CopilotKit",
+      "content": "CopilotKit 持续霸榜 GitHub 热榜，作为 Agent 前端框架，用 React 组件即可构建聊天面板、悬浮窗等交互层。Agent 写好后端最大的痛点就是「没界面」，CopilotKit 用声明式组件填补了这个空白。正在构建 AI 产品的团队值得认真评估。",
+      "quote": "Agent 写好不配UI等于锦衣夜行，CopilotKit 解决了这个面子问题。",
+      "source": "GitHub Trending Daily",
+      "url": "https://github.com/CopilotKit/CopilotKit",
+      "published": "2026-06-07",
+      "uid": "dev_5ce238ac"
+    },
+    {
+      "title": "大家对于 Anthropic 估值的看法",
+      "content": "Anthropic 估值三个月内从 3800 亿飙升至 9000 亿美元。争论焦点是：只靠卖 API 给程序员，真能支撑万亿美元估值吗？对比 OpenAI 的 C端和 Google 全栈布局，Anthropic 几乎完全依赖 B 端 API。但这也说明——全球开发者为优质编程 AI 付费的意愿远超预期。",
+      "quote": "9000亿估值全靠程序员买单，你的CLI每一行都值好几块钱。",
+      "source": "V2EX Tech",
+      "url": "https://www.v2ex.com/t/1212285#reply12",
+      "published": "2026-06-07",
+      "uid": "dev_7b0b90bc"
+    },
+    {
+      "title": "🖖Manus 被 Meta 数十亿美元收购❗❗❗",
+      "content": "引发国内激烈争议的 AI Agent 公司 Manus 最终被 Meta 以数十亿美元收购，成为这波 AI 浪潮中标志性的出海并购案。Manus 此前因营销过度、技术实力争议在中文社区口碑两极分化，但 Meta 的收购价说明硅谷对 Agent 赛道的估值逻辑与国内完全不同。这对国内 AI 创业生态是一个信号——技术争议并不妨碍资本认可，关键是有没有大厂需要的战略拼图。",
+      "quote": "国内骂得越狠，扎克伯格买得越欢。Agent大战的入场券真贵。",
+      "source": "V2EX Tech",
+      "url": "https://www.v2ex.com/t/1182036#reply86",
+      "published": "2026-06-07",
+      "uid": "dev_b0b5b416"
+    },
+    {
+      "title": "The perils of UUID primary keys in SQLite",
+      "content": "深度剖析 SQLite 中 UUID 主键的性能陷阱。基准测试证明，随机 UUID 相比自增主键导致 B-Tree 页分裂频繁、写入放大严重，查询性能可能下降 30-50%。但 UUID 在分布式下的唯一性又是刚需。文章给出了有序 UUID、组合键、Bloom Filter 等工程取舍方案。移动端和嵌入式开发者的必修课。",
+      "quote": "UUID 主键让 SQLite 哭了，但分布式系统笑了。谁妥协谁就是好设计。",
+      "source": "HN Front Page",
+      "url": "https://andersmurphy.com/2026/06/05/the-perils-of-uuid-primary-keys-in-sqlite.html",
+      "published": "2026-06-07",
+      "uid": "dev_8f5f9793"
+    },
+    {
+      "title": "Gemma 4 QAT models: Optimizing compression for mobile and laptop efficiency",
+      "content": "Google 发布 Gemma 4 量化感知训练（QAT）模型，专为移动设备和笔记本电脑优化。通过 QAT 技术，模型在 4-bit 量化下的精度损失控制在 1% 以内，内存占用减少 75%，推理速度提升 3-5 倍。这对边缘计算、离线 AI 应用和隐私敏感场景意义重大——用户不再需要联网就能在本地设备上跑高质量的 LLM。对于想要做端侧 AI 产品的开发者，这是目前最成熟的小模型微调方案之一。",
+      "quote": "模型大到跑不动？量化一下体积砍半性能不减，比减肥药靠谱。",
+      "source": "HN Front Page",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/",
+      "published": "2026-06-07",
+      "uid": "dev_01961cfd"
+    },
+    {
+      "title": "Azure Linux Desktop",
+      "content": "微软在 Build 2026 展示 Azure Linux Desktop——融合 WSL、WinUI Reactor 和 Azure Linux 4.0。这意味着微软在为 Linux 开发者构建「官方」桌面体验，不再只是 WSL 子系统。对跨平台全栈开发者，它可能成为打通 Windows/Linux 生态的桥梁——前提是微软不半途而废。",
+      "quote": "微软做Linux桌面？上次这么积极还是给IE6画插画的时候。",
+      "source": "HN Front Page",
+      "url": "https://www.boxofcables.dev/azure-linux-desktop-a-build-2026-mashup-of-wslc-winui-reactor-and-azure-linux-4-0/",
+      "published": "2026-06-07",
+      "uid": "dev_3fccdc16"
+    },
+    {
+      "title": "Nvidia is proposing a beast of a CPU system for Windows PCs",
+      "content": "Nvidia 被曝计划推出一套为 Windows PC 设计的「怪兽级」CPU 系统，意图在客户端侧复制其数据中心 AI 硬件优势。如果属实，这将是 x86 和 Arm 之外第三个入局消费级 CPU 的玩家。对开发者而言，这意味着未来的 AI 推理工作负载可能大规模从云端转移到本地 Nvidia CPU/GPU 融合芯片上运行——本地推理延迟更低、隐私更好，但生态兼容性将是最大挑战。",
+      "quote": "Nvidia做CPU？Intel和AMD终于有了一个共同的恐惧对象。",
+      "source": "HN Front Page",
+      "url": "https://twitter.com/lemire/status/2062880075117113739",
+      "published": "2026-06-07",
+      "uid": "dev_df1a6c32"
+    },
+    {
+      "title": "多Agent开发笔记:为什么4个Codex加1个Claude会把CPU跑满",
+      "content": "一位开发者记录下同时开4个 Codex + 1个 Claude Code 后 CPU 被吃满的惨痛经历。每个 AI 编程助手独立运行 LLM 上下文处理、代码索引和 linting，5个 Agent 无资源共享机制，8核16线程直接瘫痪。暴露了 AI 编程工具的架构困境——各自为战，缺少统一调度层。",
+      "quote": "9700X 都扛不住5个AI码农同时工作，人类码农还是太便宜了。",
+      "source": "博客园 Cnblogs",
+      "url": "https://www.cnblogs.com/FatTiger4399/p/20332877",
+      "published": "2026-06-07",
+      "uid": "dev_aa70c8ed"
+    },
+    {
+      "title": "一款接入20+免费大模型渠道的AI编程工具",
+      "content": "资深游戏开发者分享用 Claude Code 和 Codex CLI 做大规模重构的经验。工具接入20+免费大模型渠道，核心亮点是能跨十几个文件读取整条渲染管线进行跨模块理解——这比大多数AI编程助手「只能改一个文件」强太多。跨文件架构感知才是大型项目AI辅助开发的真正价值。",
+      "quote": "20+免费模型的AI工具？质量先不说，卷价格倒是第一名。",
+      "source": "博客园 Cnblogs",
+      "url": "https://www.cnblogs.com/cnshark/p/20339776",
+      "published": "2026-06-07",
+      "uid": "dev_02f47a5f"
+    },
+    {
+      "title": "数据库查询优化器<1>查询重写/逻辑优化",
+      "content": "博客园连载的数据库查询优化器系列文章，本期深入拆解查询重写和逻辑优化的核心机制。从 SQL 语法树（AST）入手，详细讲解了谓词下推、投影下推、子查询展开、连接重排序等经典优化技术的实现原理。对于后端开发者和数据库内核爱好者来说，这篇是理解数据库「从 SQL 文本到执行计划」全过程的绝佳入门——毕竟，只有你懂优化器在想什么，才能写出让优化器喜欢的高性能 SQL。",
+      "quote": "你以为写SQL就能用好数据库？你眼中的优化只是优化器的皮毛。",
+      "source": "博客园 Cnblogs",
+      "url": "https://www.cnblogs.com/aslanvon/p/20343374",
+      "published": "2026-06-07",
+      "uid": "dev_fb7a4cd5"
+    },
+    {
+      "title": "当AgentGateway遇上OpenClaw.NET：企业级智能体基础设施的深度协同实战",
+      "content": "AgentGateway 被 Linux 基金会旗下 AAIF 接纳为核心托管项目，与企业级 .NET 生态的 OpenClaw 框架实现深度协同。这套方案为企业提供了从 Agent 网关路由、负载均衡到 .NET 运行时集成的全栈式智能体基础设施。对于在企业环境中落地 AI Agent 的团队，这种「开源基金会背书 + 企业级框架」的组合，比自研或全部依赖闭源 API 的方案更可控、更可持续。",
+      "quote": "开源的Agent网关被基金会收了，企业级AI不再是野路子。",
+      "source": "博客园 Cnblogs",
+      "url": "https://www.cnblogs.com/shanyou/p/20337134",
+      "published": "2026-06-07",
+      "uid": "dev_1272ee03"
+    },
+    {
+      "title": "MemPalace/mempalace",
+      "content": "MemPalace 再次登上 GitHub 热榜，这个开源 AI 记忆系统支持向量检索、摘要压缩和自动上下文注入，全程可自托管、无 API 依赖。与依赖商业服务的记忆方案不同，MemPalace 让开发者完全掌控数据的存储和检索流程——数据不出服务器、不经过第三方 API。对于构建需要长期记忆的 AI 应用（如客服机器人、个人知识助手），这是目前最成熟的开源自托管记忆方案之一。",
+      "quote": "AI不再'你好初次见面'？MemPalace给了它一个免费的记忆U盘。",
+      "source": "GitHub Trending Daily",
+      "url": "https://github.com/MemPalace/mempalace",
+      "published": "2026-06-07",
+      "uid": "dev_7d6e549e"
+    },
+    {
+      "title": "danielmiessler/Personal_AI_Infrastructure",
+      "content": "Daniel Miessler 的个人 AI 基础设施项目，开源了一套从模型部署、工具集成到 Agent 编排的 AI 个人栈。这不是一个产品，而是一套可复现的架构模版——包含本地 LLM 推理、RAG 知识库、自动化工作流和 Agent 通信协议。对于想要脱离「全靠 SaaS」模式、搭建自己的 AI 基础设施的个人开发者来说，这个项目提供了经过实战检验的样板配置和架构决策记录。",
+      "quote": "别人的AI基础设施开源了，你还有理由说'太复杂不会搭'吗？",
+      "source": "GitHub Trending Daily",
+      "url": "https://github.com/danielmiessler/Personal_AI_Infrastructure",
+      "published": "2026-06-07",
+      "uid": "dev_5d499c1d"
+    },
+    {
+      "title": "sveltejs/svelte",
+      "content": "Svelte 持续出现在 GitHub 热榜上，这个编译型前端框架正在稳步扩大影响力。相比 React 的运行时虚拟 DOM 方案，Svelte 的编译器理念让打包体积更小、运行时开销更低。随着 AI 生成代码的普及，Svelte 的简洁语法和更小的心智负担正在吸引越来越多从「让 AI 写前端」的开发者。其最近发布的 Svelte 5 的 runes 响应式系统进一步缩小了与主流框架的功能差距。",
+      "quote": "React 还在卷运行时，Svelte 默默把编译器做成了优势。",
+      "source": "GitHub Trending Daily",
+      "url": "https://github.com/sveltejs/svelte",
+      "published": "2026-06-07",
+      "uid": "dev_ca00beb7"
+    },
     {
       "title": "headroom：压缩LLM工具输出的革命性方案",
       "content": "开源工具 headroom 可将 LLM 工具调用输出压缩 60-95% 再喂给模型，大幅降低 token 消耗。对于依赖大量工具调用（如代码搜索、网页抓取）的 AI Agent 工作流，这意味着每月 API 账单可砍掉大半，同时响应延迟也显著下降。独立开发者和依赖 Agent 的企业用户都将直接受益。",
@@ -500,15 +587,6 @@
       "url": "https://news.ycombinator.com/item?id=48419000",
       "published": "2026-06-06",
       "uid": "dev_880dd14f"
-    },
-    {
-      "title": "CopilotKit：Agent前端框架",
-      "content": "CopilotKit 发布新一代 Agent 前端框架，让开发者用 React 组件即可为 AI Agent 构建聊天、面板、悬浮窗等交互界面。对于正在构建 AI 产品的全栈开发者，这大幅降低了从「后端 Agent 能跑」到「用户能用上」之间的 UI 工程量，Agent 时代的 UI 范式正在形成。",
-      "quote": "Agent写好后发现没有界面？这个框架专门治你的前端拖延症。",
-      "source": "GitHub",
-      "url": "https://github.com/CopilotKit/CopilotKit",
-      "published": "2026-06-06",
-      "uid": "dev_31efac9b"
     },
     {
       "title": "MemPalace：开源AI记忆系统，免费！",
@@ -671,96 +749,6 @@
       "url": "https://github.com/polywise/polywise",
       "published": "2026-06-05",
       "uid": "dev_80a52588"
-    },
-    {
-      "title": "通过扬声器黑掉你的电脑——不需要物理接触的 BadUSB 攻击",
-      "content": "通过扬声器黑掉你的电脑——不需要物理接触的 BadUSB 攻击。通过扬声器黑掉你的电脑——不需要物理接触的 BadUSB 攻击。该消息来自当日资讯报道，更多详情请查看原文链接。",
-      "quote": "** 当你关掉 Wi-Fi、禁用蓝牙、封了 USB 口之后，黑客说：那我把 BadUSB 编成歌放给你听吧。",
-      "source": "",
-      "url": "#",
-      "published": "2026-06-04",
-      "uid": "dev_25870bf3"
-    },
-    {
-      "title": "Every Byte Matters — 极致代码优化的艺术",
-      "content": "Every Byte Matters — 极致代码优化的艺术。Every Byte Matters — 极致代码优化的艺术。该消息来自当日资讯报道，更多详情请查看原文链接。",
-      "quote": "** 编译器再聪明，也不如你懂你的数据。你不懂的时候，才轮到编译器上场。",
-      "source": "",
-      "url": "#",
-      "published": "2026-06-04",
-      "uid": "dev_80a1df42"
-    },
-    {
-      "title": "Let's Encrypt 的后量子密码未来",
-      "content": "Let's Encrypt 的后量子密码未来。Let's Encrypt 的后量子密码未来。该消息来自当日资讯报道，更多详情请查看原文链接。",
-      "quote": "** RSA 还没死透，量子计算机已经在门口排队了——Let's Encrypt 说该换钥匙了。",
-      "source": "",
-      "url": "#",
-      "published": "2026-06-04",
-      "uid": "dev_d109c955"
-    },
-    {
-      "title": "EasyCode — 由于主流 AI 编程助手太贵，自己写了个适配 DeepSeek 的本地命令行 Agent",
-      "content": "EasyCode — 由于主流 AI 编程助手太贵，自己写了个适配 DeepSeek 的本地命令行 Agent。详情请阅读原文了解更多相关信息。",
-      "quote": "** Cursor Pro 一小时见底？DeepSeek 廉价的微笑正在向你招手。",
-      "source": "",
-      "url": "#",
-      "published": "2026-06-04",
-      "uid": "dev_8bbe3b30"
-    },
-    {
-      "title": "gojaja（过家家）—— 开源本地多 Agent 协作 CLI 工具",
-      "content": "gojaja（过家家）—— 开源本地多 Agent 协作 CLI 工具。详情请阅读原文了解更多相关信息。",
-      "quote": "** 多 Agent 协作就像组队写代码：Cursor 写前端，Claude Code 修 bug，你在旁边当项目经理。",
-      "source": "",
-      "url": "#",
-      "published": "2026-06-04",
-      "uid": "dev_43e45de0"
-    },
-    {
-      "title": "CodexMeter — 手机端 AI 额度看板，看一眼就知道你的 AI 还剩多少血条",
-      "content": "CodexMeter — 手机端 AI 额度看板，看一眼就知道你的 AI 还剩多少血条。详情请阅读原文了解更多相关信息。",
-      "quote": "** 谁说程序员不需要油表？AI 额度比油费贵多了。",
-      "source": "",
-      "url": "#",
-      "published": "2026-06-04",
-      "uid": "dev_6eb9c565"
-    },
-    {
-      "title": "业务 Agent 搭建指南：别急着重造 Agent，用知识、工具与评测跑通闭环",
-      "content": "业务 Agent 搭建指南：别急着重造 Agent，用知识、工具与评测跑通闭环。详情请阅读原文了解更多相关信息。",
-      "quote": "** 90% 的团队不需要自己的 Agent Framework，需要的是让自己的业务数据会说话。",
-      "source": "",
-      "url": "#",
-      "published": "2026-06-04",
-      "uid": "dev_cecc1404"
-    },
-    {
-      "title": "We rewrote Apache Airflow's control plane in Go (and kept the UI)",
-      "content": "We rewrote Apache Airflow's control plane in Go (and kept the UI)。详情请阅读原文了解更多相关信息。",
-      "quote": "** Airflow 用户：又慢又吃内存？那就把它的脑子换成 Go 的——身体还是那个身体。",
-      "source": "",
-      "url": "#",
-      "published": "2026-06-04",
-      "uid": "dev_6b46934a"
-    },
-    {
-      "title": "Ideogram 4.0 — 开源 9.3B 文本到图像模型发布",
-      "content": "Ideogram 4.0 — 开源 9.3B 文本到图像模型发布。Ideogram 4.0 — 开源 9.3B 文本到图像模型发布。该消息来自当日资讯报道，更多详情请查看原文链接。",
-      "quote": "** 文生图的终点不是画得美，是你说左边第三朵云带点夕阳红，它就绝不偏到右边。",
-      "source": "",
-      "url": "#",
-      "published": "2026-06-04",
-      "uid": "dev_7bdd0169"
-    },
-    {
-      "title": "microsoft/markitdown — Python 文件转 Markdown 统一工具开源",
-      "content": "microsoft/markitdown — Python 文件转 Markdown 统一工具开源。详情请阅读原文了解更多相关信息。",
-      "quote": "** 所有文件最终都会变成 Markdown——不是因为它最好，是因为 AI 只认识它。",
-      "source": "",
-      "url": "#",
-      "published": "2026-06-04",
-      "uid": "dev_8874b7c5"
     }
   ],
   "ai": [
@@ -1087,153 +1075,126 @@
       "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
       "published": "2026-06-05",
       "uid": "ai_d3b3f614"
-    },
-    {
-      "title": "微软发布新一代 AI 模型系列",
-      "content": "Microsoft 在 microsoft.ai/models 平台上发布了新一代 AI 模型，涵盖语言、视觉和多模态能力。新的模型系列在推理效率和多语言能力上进行了优化，支持更广泛的开发者应用场景。Microsoft 正加速其在 AI 模型领域的布局，与 OpenAI 的深度合作基础上开始构建自有模型生态。",
-      "quote": "微软终于从用别人的模型转向建自己的模型生态了，步子不小。",
-      "source": "Microsoft AI",
-      "url": "https://microsoft.ai/models/",
-      "published": "2026-06-04",
-      "uid": "ai_01203654"
-    },
-    {
-      "title": "AgentSight：基于 eBPF 的系统级 AI Agent 追踪与监控框架",
-      "content": "开源项目 AgentSight 利用 eBPF 技术实现了对 AI Agent 系统级行为的追踪与监控。该工具无需修改应用代码即可捕获 Agent 与系统内核的交互，包括系统调用、文件访问、网络通信等，为 AI Agent 的可观测性和安全性提供了基础设施。项目已在 GitHub 开源。",
-      "quote": "Agent 安全不是靠信仰，是靠 eBPF 下的每一行系统调用。",
-      "source": "GitHub / Hacker News",
-      "url": "https://github.com/eunomia-bpf/agentsight",
-      "published": "2026-06-04",
-      "uid": "ai_6b21f227"
-    },
-    {
-      "title": "REST3D：单张图像重建物理稳定的 3D 场景",
-      "content": "Google DeepMind 发布 REST3D 技术，能够从单张图像重建出物理稳定的 3D 场景。该方法在重建过程中引入了物理约束，确保重建的三维场景在现实世界中是力学稳定的，而非仅视觉效果逼真。这在机器人仿真、AR/VR 和游戏开发等领域有广泛应用前景。",
-      "quote": "单图变 3D 已经够强了，还要保证物理稳定——DeepMind 这是在给数字世界加物理定律。",
-      "source": "Google DeepMind / Hacker News",
-      "url": "https://shirleymaxx.github.io/REST3D/",
-      "published": "2026-06-04",
-      "uid": "ai_155ba4e5"
-    },
-    {
-      "title": "AURA-Mem：面向机器人策略的恒定 VRAM 动作门控记忆系统",
-      "content": "最新研究提出 AURA-Mem，一种针对嵌入式机器人场景设计的动作门控记忆系统。通过学习式的门控机制，该系统只在会影响下一步动作的观测到来时才写入记忆，推理状态恒定仅为 4,224 字节。相比之下，标准 KV-cache 在 10 万步时会膨胀 6,061 倍。该方法在 LIBERO-Long 基准上保持了与无门控基线相同的成功率，同时减少 7 倍的写入次数。",
-      "quote": "KV-cache 是数据中心的好东西，但机器人不吃这套——AURA 证明了记忆也要懂闭嘴。",
-      "source": "arXiv cs.AI",
-      "url": "https://arxiv.org/abs/2606.02775",
-      "published": "2026-06-04",
-      "uid": "ai_a580d906"
-    },
-    {
-      "title": "Bank of Values (BoV)：注意力层中免上下文值向量的新范式",
-      "content": "研究发现 Transformer 模型的深层注意力层实际上不需要从残差流中获取上下文来生成 value 向量。论文提出了 Bank of Values (BoV) 方法，通过学习一个 token 特定的值向量查找表，消除了对上下文相关计算的依赖。在 135M 和 780M 参数规模的模型上，BoV 不仅降低了验证损失，还在 21 个基准测试中匹配了现有最佳方法，同时减少了计算和内存开销。",
-      "quote": "注意力机制里最深层的秘密：后面那些层根本不需要看上下文——直接查表就行。",
-      "source": "arXiv cs.CL",
-      "url": "https://arxiv.org/abs/2606.02780",
-      "published": "2026-06-04",
-      "uid": "ai_607c3cf3"
-    },
-    {
-      "title": "参议员 Sanders 呼吁公众应拥有大型 AI 公司一半所有权",
-      "content": "美国参议员 Bernie Sanders 发表评论文章，主张公众应该持有大型 AI 公司一半的股份。他认为 AI 技术的巨大价值创造是建立在公共资源（互联网数据、公共研究基金、教育系统）之上的，公众应分享其收益。这一提议引发了关于 AI 治理、财富分配和企业社会责任的新一轮讨论。",
-      "quote": "AI 公司用公共数据喂模型，赚了万亿市值，公众要一半——听起来疯狂，但逻辑上没毛病。",
-      "source": "Sanders Senate / Hacker News",
-      "url": "https://www.sanders.senate.gov/op-eds/the-public-should-own-half-of-the-big-a-i-companies/",
-      "published": "2026-06-04",
-      "uid": "ai_4fe1e944"
-    },
-    {
-      "title": "DDR5 内存飙升至 375 美元：AI 短缺持续挤压 PC 组装市场",
-      "content": "由于 AI 训练和推理需求持续消耗大量 HBM 和 DRAM 产能，32GB DDR5 内存价格已上涨至 375 美元。AI 芯片短缺的连锁效应正在向 PC 硬件市场传导，内存、GPU 和 SSD 价格全面上涨。分析人士警告这一趋势短期内难以缓解，因为 AI 计算集群对高性能内存的需求仍在快速增长。",
-      "quote": "AI 吃肉，DIY 玩家连汤都喝不上了——32GB DDR5 卖 375 美元，这谁顶得住。",
-      "source": "Tom's Hardware / Hacker News",
-      "url": "https://www.tomshardware.com/pc-components/ddr5/32gb-of-ddr5-now-costs-usd375-minimum-ai-shortage-continues-to-squeeze-pc-building",
-      "published": "2026-06-04",
-      "uid": "ai_f9e49891"
-    },
-    {
-      "title": "Visual Graph Scaffolds：图结构作为 LLM 推理的视觉支架",
-      "content": "新研究表明，图结构不仅仅是 LLM 的外部知识来源，更可以作为组织推理过程的内部支架。研究发现，当图结构被展平为文本时，推理效率和答案质量都会显著下降；而视觉化的图引导在移除直接答案提示后仍然保持有效。这一发现支持了图应同时作为外部知识结构和视觉推理支架的观点。",
-      "quote": "把思维导图做成文本，LLM 就不认了——原来图结构对 AI 来说也是一图胜千言。",
-      "source": "arXiv cs.AI",
-      "url": "https://arxiv.org/abs/2606.02673",
-      "published": "2026-06-04",
-      "uid": "ai_3d8ff5fb"
-    },
-    {
-      "title": "IdiomX：190K+ 样本的多语言习语理解评测基准",
-      "content": "研究团队发布 IdiomX，一个大规模多语言习语理解基准数据集，涵盖 12K+ 习语的 190K+ 语境化样本，支持英语、阿拉伯语和法语。基准定义了一个统一四任务评测体系：习语检测、语境到习语检索、跨语言习语检索、习语释义。实验表明，上下文 Transformer 模型显著提升了习语检测性能，混合检索排序架构则增强了跨语言习语检索能力。",
-      "quote": "12K 习语、3 种语言、190K 样本——听懂言外之意这件事，AI 终于有了像样的考场。",
-      "source": "arXiv cs.CL",
-      "url": "https://arxiv.org/abs/2606.02584",
-      "published": "2026-06-04",
-      "uid": "ai_7cd8ce4a"
-    },
-    {
-      "title": "Pinterest 用 Qwen 定制化砍掉 90% AI 成本：拆掉视觉层换上自家嵌入",
-      "content": "Pinterest CTO Matt Madrigal 分享了一个令人咋舌的优化案例：通过\"拆掉\" Qwen3-VL 的视觉编码器层并用自有多模态嵌入重塑，Pinterest 将 AI 推荐成本降低了 90%，同时准确率提升了 30%。Pinterest 拥有约 6.2 亿月活用户，如果每个图片推荐都调用前沿模型，\"那不是策略，那是账单\"。团队还在自家\"品味图谱\"基础上构建了 Navigator 1 对话式购物助手——一个动态的偏好图谱，捕捉数十亿用户不断变化的品味，而非简单的社交图谱。Madrigal 强调数据质量可以\"压倒模型大小\"，开放权重模型配合独家数据微调才是真正的护城河。",
-      "quote": "6.2 亿用户用前沿模型做推荐？Pinterest 说承担不起——于是自己造了个省 90% 钱的。",
-      "source": "VentureBeat / VB Beyond the Pilot",
-      "url": "https://venturebeat.com/orchestration/pinterest-cut-ai-costs-90-by-gutting-a-frontier-models-vision-layer",
-      "published": "2026-06-04",
-      "uid": "ai_a932b197"
-    },
-    {
-      "title": "AI Agent 进入\"重建时代\"：企业面临可靠性危机",
-      "content": "随着企业 AI Agent 进入生产环境，组织正在面对一个日益严重的可靠性问题。许多团队发现，LLM 性能本身并不能决定 Agent 在生产中的成败。长时间运行的 AI 工作流必须应对崩溃、状态保持、故障恢复、推理成本管理以及跨 API 和系统的协调。Temporal Technologies 的 SVP Preeti Somal 在纽约的最新 AI Impact Series 活动中指出，大量客户正在构建\"同一个 Agent 的 2.0 版本\"——\"他们必须快速行动，但没有处理好管道。东西崩溃烧掉了，然后他们又回来重建可靠的基础。\"Somal 提出了\"确定性脊柱\" 概念：LLM 是产生可变输出的概率系统，而编排软件在其周围维护执行可靠性。",
-      "quote": "Agent 的 1.0 都是快糙猛，2.0 才是真功夫——先跑起来再修路的时代结束了。",
-      "source": "VentureBeat / AI Impact Series",
-      "url": "https://venturebeat.com/orchestration/ai-agents-are-entering-their-rebuild-era-as-enterprises-confront-the-reliability-problem",
-      "published": "2026-06-04",
-      "uid": "ai_3047340f"
-    },
-    {
-      "title": "Meta 用员工电脑活动训练 AI Agent：鼠标移动和键盘敲击全记录",
-      "content": "Meta 推出名为\"Model Capability Initiative\"（MCI）的内部工具，在员工的工作电脑上安装，记录鼠标移动、点击、键盘敲击和屏幕截图，用于训练 AI Agent 如何在计算机上像人类一样操作。Meta CTO Andrew Bosworth 在内部备忘录中明确表示：\"我们正在构建的愿景是，Agent 主要做工作，而我们的角色是指挥、审查并帮助它们改进。\"MCI 不参与\"绩效评估\"，员工无法选择退出。这一举措在 Meta 内部引发强烈反弹，有员工回复备忘录称\"这让我超级不舒服\"。目前 MCI 仅部署在美国员工的电脑上，覆盖工作相关的应用和网站。",
-      "quote": "Meta 员工现在连鼠标怎么动都是训练数据了——还强制参加，不服不行。",
-      "source": "The Verge / Reuters",
-      "url": "https://www.theverge.com/tech/916681/meta-ai-agents-employee-tracking",
-      "published": "2026-06-04",
-      "uid": "ai_fdc5326c"
-    },
-    {
-      "title": "佛罗里达州对 OpenAI 展开正式调查：涉国家安全与 FSU 枪击案关联",
-      "content": "佛罗里达州总检察长 James Uthmeier 宣布对 OpenAI 展开正式调查，指控其数据和技术\"落入美国敌人（如中国共产党）手中\"，并称 ChatGPT 与儿童性虐待材料、鼓励自伤以及佛罗里达州立大学（FSU）枪击案有关联。Uthmeier 表示相关传票\"即将发出\"。FSU 枪击案嫌疑人被指控与 ChatGPT 保持\"持续沟通\"，受害者家属已对 OpenAI 提起诉讼。OpenAI 预计今年启动 IPO，正面临美国联邦贸易委员会（FTC）对 AI 聊天机器人对儿童影响的新一轮审查。",
-      "quote": "OpenAI 的 IPO 路上，佛罗里达扔了一颗政治炸弹——国家安全和枪击案的帽子一扣，麻烦大了。",
-      "source": "The Verge / Reuters / The Guardian",
-      "url": "https://www.theverge.com/policy/909557/openai-florida-investigation",
-      "published": "2026-06-04",
-      "uid": "ai_ff1d5084"
-    },
-    {
-      "title": "Google Phone 新增 AI 诈骗电话检测：冒充亲友的骗子再也藏不住",
-      "content": "Google 为其 Phone 应用推出 AI 驱动的新功能，可检测并标记冒充联系人号码的诈骗电话。该功能利用端到端加密的 RCS 技术——当真正联系人拨打时，其设备会发送\"静默确认信号\"验证身份；如果骗子伪造号码，信号缺失，Google Phone 就会显示警告\"有人可能冒充您的联系人\"并提供挂断选项。据 FBI 报告，2025 年美国人在 AI 相关诈骗中损失超过 8.93 亿美元。该功能默认启用，支持 Android 12 及以上用户，从 Pixel 手机开始推送。这是 Google 六月 Android 更新的一部分，还包括 Apple AirDrop 跨设备支持扩展、AI 穿衣搭配等功能。",
-      "quote": "8.93 亿美元被骗走之后，Google 终于出手了——用 AI 防 AI 诈骗，才是正确的军备竞赛方向。",
-      "source": "The Verge / Google Blog",
-      "url": "https://www.theverge.com/tech/941517/google-phone-scammer-ai-impersonation",
-      "published": "2026-06-04",
-      "uid": "ai_816dbbb8"
-    },
-    {
-      "title": "AI 数据饥渴新招：初创公司 Shift 免费给纽约人打扫卫生，换的是训练机器人数据",
-      "content": "AI 训练数据初创公司 Shift 宣布为纽约居民提供免费家庭清洁服务，但条件是在清洁过程中全程录制视频——清洁工戴着装有摄像头的\"魔法帽子\"，以第一人称视角记录扫地、擦窗、洗碗等家务活动。这些视频经人脸和敏感信息模糊处理后，将用于训练家用机器人。Shift 联合 CEO 表示，训练数据产生的价值远超清洁成本。服务仅限纽约市，但计划很快扩展到旧金山、伦敦、苏黎世和慕尼黑。Shift 表示已在 15 个国家付费让数万人通过 App 记录日常活动。印度家政平台 Pronto 也被曝用客户家庭录制 AI 训练视频，引发大规模争议。",
-      "quote": "免费的清洁服务？Shift 说代价是你家变成机器人训练场——数据经济时代的家政新玩法。",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/939765/ai-training-data-startup-shift-free-cleaning",
-      "published": "2026-06-04",
-      "uid": "ai_6dd932f5"
-    },
-    {
-      "title": "Google Photos AI \"数字衣橱\"上线：从照片中提取衣物，虚拟混搭任意穿搭",
-      "content": "Google 在其六月 Android 更新中推出 Google Photos AI 生成\"数字衣橱\"功能。系统从用户照片中提取衣物数据，自动创建虚拟衣柜，支持将不同单品混搭生成虚拟试穿效果，并可保存和分享。该功能在美国、印度和巴西率先推出，面向 AI Pro/Ultra 订阅用户和部分 Android 用户。不过需要至少 1000 张包含本人的照片才能免订阅使用。这标志着 AI 在个人消费场景中从\"生成内容\"向\"理解个人物品\"的深化——不仅是生成一件衣服，而是理解你衣柜里的每一件衣服。",
-      "quote": "Google 让你不用出门就能试遍衣柜里的每件衣服——前提是你得有 1000 张自拍。",
-      "source": "The Verge / Google Blog",
-      "url": "https://www.theverge.com/tech/920420/google-photos-ai-try-on-wardrobe",
-      "published": "2026-06-04",
-      "uid": "ai_75a25fcf"
     }
   ],
   "startup": [
+    {
+      "title": "1️⃣ S&P 500拒绝SpaceX、OpenAI、Anthropic加速纳入",
+      "content": "标普道琼斯指数委员会决定不修改IPO快速纳入规则，拒绝SpaceX、OpenAI、Anthropic等未盈利科技巨头加速进入标普500的请求。SpaceX被拒意味着错失约140亿美元的被动基金买入机会，OpenAI和Anthropic分别损失超80亿和46亿美元。纳斯达克和富时罗素此前已修改规则让步接纳。 🔗 [阅读原文](https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/)",
+      "quote": "💬 *亏钱的公司想进标普500？门都没有，拿利润来说话。*",
+      "source": "",
+      "url": "https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/",
+      "published": "2026-06-07",
+      "uid": "c9efe5298fba968e65777131c804317d"
+    },
+    {
+      "title": "2️⃣ 长鑫存储科创板IPO过会，148天闪电推进",
+      "content": "国产DRAM龙头长鑫存储科创板IPO正式过会，仅用时148天。2026年Q1营收508亿元接近去年全年水平，净利润330.12亿元暴增1268%。市场热盼其成为A股新\"股王\"，预计7-8月正式挂牌。兆易创新董事长朱一明已减持套现近32亿元。 🔗 [阅读原文](https://www.donews.com/news/detail/3/6583213.html)",
+      "quote": "💬 *一天赚3.6亿的芯片公司，A股韭菜们准备好镰刀了吗？*",
+      "source": "",
+      "url": "https://www.donews.com/news/detail/3/6583213.html",
+      "published": "2026-06-07",
+      "uid": "be5de96860febcf81dcb8706fa7df8a4"
+    },
+    {
+      "title": "3️⃣ 腾讯AI下半场：汤道生对话姚顺雨，揭秘Co-Design战略",
+      "content": "腾讯AI首席科学家姚顺雨与CSIG CEO汤道生同台，首次详解腾讯AI下半场战略。姚顺雨提出Foundation（基础模型）、Product（产品）、Frontier（前沿探索）均衡三角架构，强调LLM泛化性是核心，Agent崛起让环境与推理协同比单一模型更关键。腾讯元宝、CodeBuddy等产品将与模型深度Co-Design。 🔗 [阅读原文](https://www.donews.com/news/detail/3/6584390.html)",
+      "quote": "💬 *OpenAI挖来的大牛终于开口：别刷榜了，做点有用的东西。*",
+      "source": "",
+      "url": "https://www.donews.com/news/detail/3/6584390.html",
+      "published": "2026-06-07",
+      "uid": "97aaa2e5ab5d9e976d437b50bf3e9cbb"
+    },
+    {
+      "title": "4️⃣ 微软发布Project Solara：迈向智能体操作系统",
+      "content": "微软发布Project Solara，定位为新一代智能体（Agent）操作系统，旨在构建让AI Agent跨应用、跨设备协同工作的基础平台。标志着微软AI核心战略从模型能力转向Agent生态平台化——当所有巨头都在做模型，微软选择做连接模型的\"底层OS\"。 🔗 [阅读原文](https://www.donews.com/news/detail/8/6585614.html)",
+      "quote": "💬 *微软这是要当AI界的安卓？Agent OS概念终于落地了。*",
+      "source": "",
+      "url": "https://www.donews.com/news/detail/8/6585614.html",
+      "published": "2026-06-07",
+      "uid": "0600b7a59a3285fef2139d9768990e25"
+    },
+    {
+      "title": "5️⃣ 全球海洋预报大模型「琅琊」2.0发布",
+      "content": "中科院海洋所发布\"琅琊\"2.0，将多源观测、机理认知和AI推理融合，推动海洋预报向更快速、更精细、更可交互方向进化。从专业变量走向可感知、可应用、可决策的关键场景，可服务防灾减灾、航运安全、极地航行等。 🔗 [阅读原文](https://36kr.com/newsflashes/3841255177079303)",
+      "quote": "💬 *AI连海风海浪都要管了，气象预报员该转行了。*",
+      "source": "",
+      "url": "https://36kr.com/newsflashes/3841255177079303",
+      "published": "2026-06-07",
+      "uid": "112e27899d5f3a33f74ed0bed17fcd93"
+    },
+    {
+      "title": "6️⃣ 特锐德推出「算电岛」，Token成本直降30%",
+      "content": "特锐德发布算力中心供电站\"算电岛\"，采用碳化硅SST技术实现供电效率98.5%，800V直流直供机房。AI平台优化调度下Token用电成本下降约30%，建设周期缩至150天，综合造价下降20%，运维成本降40%。 🔗 [阅读原文](https://36kr.com/newsflashes/3841455348746496)",
+      "quote": "💬 *搞算力的电老虎终于有人管了，省30%电费它不香吗？*",
+      "source": "",
+      "url": "https://36kr.com/newsflashes/3841455348746496",
+      "published": "2026-06-07",
+      "uid": "a678f240c443134945acddbaadb7caa5"
+    },
+    {
+      "title": "7️⃣ 全球首款CD7 CAR-T儿童适应症临床启动",
+      "content": "安科生物参股公司博生吉医药的全球首款靶向CD7自体CAR-T产品PA3-17，正式进入儿童适应症Ⅰ期临床筹备阶段。复发难治T淋巴细胞白血病儿童在常规治疗无果后终于有了新希望。中国原创细胞疗法在儿童血液肿瘤领域实现重大突破。 🔗 [阅读原文](https://36kr.com/newsflashes/3841294657964544)",
+      "quote": "💬 *白血病患儿有救了，中国原创细胞疗法这次很硬核。*",
+      "source": "",
+      "url": "https://36kr.com/newsflashes/3841294657964544",
+      "published": "2026-06-07",
+      "uid": "e54e0c6131b9f9bb6b98bcbfe2a7e4e1"
+    },
+    {
+      "title": "8️⃣ 亚洲首个合成细胞技术路线图发布",
+      "content": "中科院深圳先进院刘陈立研究员领衔，中日韩新马泰六国科学家联合在《自然·生物技术》发表亚洲首个合成细胞10年路线图。聚焦\"人工合成单细胞生命\"，规划四大核心挑战和分阶段目标，推动合成生物学与AI、生物制造深度融合。 🔗 [阅读原文](https://36kr.com/newsflashes/3841269285128711)",
+      "quote": "💬 *造一个细胞还要十年路线图？这饼画得真大，但香。*",
+      "source": "",
+      "url": "https://36kr.com/newsflashes/3841269285128711",
+      "published": "2026-06-07",
+      "uid": "b9f1618346c9476780ec99a0479ff2a6"
+    },
+    {
+      "title": "9️⃣ 东风发布OpenVAN无人物流车品牌，签约超4000台",
+      "content": "东风发布OpenVAN无人物流车品牌，宣布已签约超4000台订单。聚焦L4级自动驾驶末端配送和园区物流，标志着中国商用车自动驾驶从测试阶段正式进入规模化商业落地。对物流创业公司来说，这既是竞争也是产业链机遇。 🔗 [阅读原文](https://www.donews.com/news/detail/8/6585584.html)",
+      "quote": "💬 *无人物流车4000台订单起步，快递小哥：我真的会谢。*",
+      "source": "",
+      "url": "https://www.donews.com/news/detail/8/6585584.html",
+      "published": "2026-06-07",
+      "uid": "543f73a39f4bb13c6d58060453daec89"
+    },
+    {
+      "title": "🔟 蜂巢能源1-4月装车量涨37%，升至全球第九",
+      "content": "蜂巢能源1-4月动力电池装车量9.3GWh，同比增37.2%，增速TOP10中排第二，排名升至全球第九。叠片短刀出货超百万套，混合固液电池三季度量产。已进入Stellantis、VinFast等国际供应链，储能覆盖30余国。 🔗 [阅读原文](https://36kr.com/newsflashes/3841563903740162)",
+      "quote": "💬 *电池新势力悄悄杀进全球前九，宁王的位子没那么稳了。*",
+      "source": "",
+      "url": "https://36kr.com/newsflashes/3841563903740162",
+      "published": "2026-06-07",
+      "uid": "500953355e11b87fc013532b3ebacd20"
+    },
+    {
+      "title": "1️⃣1️⃣ 字节跳动辟谣造车传闻：只卖技术不造车",
+      "content": "字节跳动官微声明：没有造车或推出汽车品牌的计划，\"赛豆\"和字节无股权合作。豆包与汽车厂商的合作仅限于提供大模型和智能座舱技术服务。坊间此前因部分报道误读\"赛豆\"为字节汽车品牌引发市场炒作。 🔗 [阅读原文](https://36kr.com/newsflashes/3841237523859972)",
+      "quote": "💬 *造车烧钱如流水，字节：我只是个卖技术的，别瞎传。*",
+      "source": "",
+      "url": "https://36kr.com/newsflashes/3841237523859972",
+      "published": "2026-06-07",
+      "uid": "b1619f7801e894412c9a91e9a36b8efe"
+    },
+    {
+      "title": "1️⃣2️⃣ 证监会吴清：严打概念炒作、伪创新，公募转向重回报",
+      "content": "证监会主席吴清在基金业协会会员大会上定调：公募基金从\"重规模\"转向\"重回报\"，坚决遏制概念炒作、复杂嵌套、过度投机。鼓励中小机构拼特色不拼规模，头部机构全面提升竞争力。量化监管将进一步完善，打击滥用技术优势。 🔗 [阅读原文](https://36kr.com/newsflashes/3841354006645248)",
+      "quote": "💬 *又想马儿跑又不想马儿吃草？监管这次真的是动真格。*",
+      "source": "",
+      "url": "https://36kr.com/newsflashes/3841354006645248",
+      "published": "2026-06-07",
+      "uid": "107c70f6eb7cb836d804b0e202574954"
+    },
+    {
+      "title": "1️⃣3️⃣ 跨境证券监管升级：华盛证券跟进清理内地业务",
+      "content": "继富途、老虎、长桥之后，华盛证券也宣布自6月15日起暂停内地投资者新开仓，仅支持卖出平仓。这是落实跨境证券业务2年集中整治期的监管要求，从头部券商到中小券商全面覆盖，跨境炒股通道进一步收窄。 🔗 [阅读原文](https://36kr.com/newsflashes/3841373065791747) | 板块 | 数量 | 关键词 | |------|------|--------| | AI/大模型 | 4 | 腾讯Co-Design、微软Agent OS、琅琊2.0、算电岛 | | 芯片/半导体 | 1 | 长鑫存储IPO | | 生物科技 | 2 | CD7 CAR-T、合成细胞 | | 新能源/出行 | 3 | 蜂巢能源、OpenVAN无人车、字节不造车 | | 金融/政策 | 2 | 证监会定调、跨境证券整顿 | | 国际 | 1 | S&P500拒SpaceX | *🤖 本日报由 Lucia 自动生成 | 时间：2026-06-07 02:00 CST*",
+      "quote": "💬 *跨境炒港美股的好日子彻底到头了，一个都跑不掉。*",
+      "source": "",
+      "url": "https://36kr.com/newsflashes/3841373065791747",
+      "published": "2026-06-07",
+      "uid": "4e73a400bb6577860ddfcfc3c94c620d"
+    },
     {
       "title": "VoidZero (Vite/Vitest) 加入 Cloudflare",
       "content": "Evan You 宣布 VoidZero 公司正式加入 Cloudflare，全体成员一并迁移。Vite/Vitest/Rolldown/Oxc 保持开源、厂商中立。Cloudflare 明确不会锁入自家生态。 💬 Vite 被收编但不卖身，Evan You 这波操作满分。 🔗 [Cloudflare Blog](https://blog.cloudflare.com/voidzero-joins-cloudflare/)",
@@ -1512,117 +1473,36 @@
       "url": "#",
       "published": "2026-06-05",
       "uid": "startup_e14cc36d"
-    },
-    {
-      "title": "Suno再融4亿美元，估值飙至54亿，版权官司成了最好广告",
-      "content": "Suno宣布完成4亿美元D轮融资，估值从7个月前的24.5亿飙升至54亿美元。本轮由Bond Capital领投，IVP、Forerunner、USV等跟投。尽管面临索尼、环球音乐等版权诉讼——指控其模型训练使用了超过6.1万首未授权歌曲，但Suno在App Store音乐榜持续霸榜，日生成歌曲量超700万首。华纳音乐已和解并签订授权协议，但UMG和索尼仍在法律战中。 毒舌：54亿估值教你一个道理：争议越大，资本越爱，前提是用户真在用。 [原文链接](https://techcrunch.com/2026/06/03/still-facing-copyright-lawsuits-ai-music-generator-suno-raises-another-400m/) | 来源：TechCrunch",
-      "quote": "Suno宣布完成4亿美元D轮融资，估值从7个月前的24.5亿",
-      "source": "",
-      "url": "https://techcrunch.com/2026/06/03/still-facing-copyright-lawsuits-ai-music-generator-suno-raises-another-400m/",
-      "published": "2026-06-04",
-      "uid": "startup_55ebaad7"
-    },
-    {
-      "title": "Coralogix获2亿美元F轮融资，押注AI Agent需要有人盯着",
-      "content": "软件监控创业公司Coralogix完成2亿美元F轮融资，估值16亿美元，由Advent和加拿大养老金CPPIB领投。公司主打AI Agent监控层，帮助企业在生产环境中追踪AI模型的行为和故障。过去一年收入增长超60%，约30个大客户年消费超百万美元，超过50%的企业客户已在用其AI agent Olly排查问题。CEO表示将加速AI产品研发和全球扩张。 毒舌：AI Agent越聪明，就需要更贵的保姆。监控赛道，闷声发大财。 [原文链接](https://techcrunch.com/2026/06/03/coralogix-raises-200m-in-race-to-build-the-monitoring-layer-for-ai-agents/) | 来源：TechCrunch",
-      "quote": "软件监控创业公司Coralogix完成2亿美元F轮融资，估值",
-      "source": "",
-      "url": "https://techcrunch.com/2026/06/03/coralogix-raises-200m-in-race-to-build-the-monitoring-layer-for-ai-agents/",
-      "published": "2026-06-04",
-      "uid": "startup_371e475f"
-    },
-    {
-      "title": "GitLab裁员14%：AI工作负载太大，基础设施扛不住了",
-      "content": "GitLab宣布裁员约350人（14%员工），退出22个国家市场，扁平化管理层。CEO直言AI Agent以机器速度运作，正在把现有的开发者基础设施推到极限。GitLab已与某AI实验室合作重建git架构以支持100倍增长。Q1营收2.64亿美元，同比增长23%。2026年全球科技业累计裁员已超10万人。 毒舌：GitLab靠AGI裁员，GitHub被AI流量压垮，2026做开发工具先问Agent答不答应。 [原文链接](https://techcrunch.com/2026/06/03/gitlab-cuts-14-of-staff-as-it-scales-its-platform-to-serve-ai-workloads/) | 来源：TechCrunch",
-      "quote": "GitLab宣布裁员约350人（14%员工），退出22个国家",
-      "source": "",
-      "url": "https://techcrunch.com/2026/06/03/gitlab-cuts-14-of-staff-as-it-scales-its-platform-to-serve-ai-workloads/",
-      "published": "2026-06-04",
-      "uid": "startup_99dfc327"
-    },
-    {
-      "title": "Kimi发布桌面端Kimi Work，通用型本地Agent来了",
-      "content": "Kimi发布桌面端产品Kimi Work，面向知识工作者的通用型本地Agent。能在电脑上自主拆解任务、调用工具、使用浏览器、创建和整理文件夹、完成文档表格PPT交付。支持13小时连续编码、300个子Agent并行协作及4000余次自主工具调用。这是中国AI公司首次推出对标Claude Code级别的桌面Agent产品。 毒舌：Kimi Work终于来了，卷完对话卷桌面，中国Agent赛道正式开打。 [原文链接](https://36kr.com/newsflashes/3837454258391555) | 来源：36氪",
-      "quote": "Kimi发布桌面端产品Kimi Work，面向知识工作者的通",
-      "source": "",
-      "url": "https://36kr.com/newsflashes/3837454258391555",
-      "published": "2026-06-04",
-      "uid": "startup_4a8a53af"
-    },
-    {
-      "title": "Meta WhatsApp Business AI Agent全球上线，按Tokens收费",
-      "content": "Meta宣布将AI客服Bot（Meta Business Agent）在WhatsApp内全面上线，覆盖全球。该Agent可回答客户问题、推荐产品、预约、筛选销售线索及转接人工客服。Meta计划按Token用量向大企业收费，小企业则通过WhatsApp Business Premium订阅使用。已接入Instagram私信，未来支持Shopify、Zendesk等系统。 毒舌：WhatsApp十年没赚到钱，Meta说：加个AI，聊着天就把钱挣了。 [原文链接](https://techcrunch.com/2026/06/03/metas-ai-agent-for-whatsapp-business-is-now-available-globally/) | 来源：TechCrunch",
-      "quote": "Meta宣布将AI客服Bot（Meta Business A",
-      "source": "",
-      "url": "https://techcrunch.com/2026/06/03/metas-ai-agent-for-whatsapp-business-is-now-available-globally/",
-      "published": "2026-06-04",
-      "uid": "startup_4a0a2817"
-    },
-    {
-      "title": "前Goldman和Meta员工创业做语音AI，专攻非洲和中东市场",
-      "content": "AethexAI完成300万美元种子轮融资，两位创始人发现主流语音AI在非洲和中东痛点明显：延迟高、方言处理差。团队从零自建小模型（3亿-17亿参数），甚至向非洲电台运硬盘收集语料。目前日处理超1.7万通客服电话，客户包括银行、电信的催收和KYC场景。投资方4DX Ventures认为非洲市场呼叫量是西方的三倍。 毒舌：大厂看不上非洲市场？那是你们没打过17万通/天的电话量。 [原文链接](https://techcrunch.com/2026/06/03/these-two-founders-left-goldman-and-meta-to-build-voice-ai-for-markets-everyone-else-overlooked/) | 来源：TechCrunch",
-      "quote": "AethexAI完成300万美元种子轮融资，两位创始人发现主",
-      "source": "",
-      "url": "https://techcrunch.com/2026/06/03/these-two-founders-left-goldman-and-meta-to-build-voice-ai-for-markets-everyone-else-overlooked/",
-      "published": "2026-06-04",
-      "uid": "startup_722b2877"
-    },
-    {
-      "title": "Gartner预测：2026年75%新增风投将流向AI原生公司",
-      "content": "Gartner 2026大中华区科技行业高管大会上提出五大趋势：AI原生、智能体驱动新生态、智能体产出即服务、AI隐私计算、具身智能。预测到2026年，75%的新增风险投资将流向AI原生公司。VC市场正在经历结构性分化，非AI原生初创企业的融资竞争将进一步加剧。 毒舌：75%风投给AI原生，剩下25%的创业公司自求多福吧。 [原文链接](https://36kr.com/newsflashes/3837369693341961) | 来源：36氪",
-      "quote": "Gartner 2026大中华区科技行业高管大会上提出五大趋",
-      "source": "",
-      "url": "https://36kr.com/newsflashes/3837369693341961",
-      "published": "2026-06-04",
-      "uid": "startup_e1f96360"
-    },
-    {
-      "title": "Xcimer Energy启动全球最大私有激光，核聚变更近一步",
-      "content": "核聚变创业公司Xcimer Energy启动Phoenix激光系统，号称全球最大私有激光。该系统基于准分子放大技术，全长38米，单脉冲能量超1千焦。公司模仿国家点火装置方案：192束激光轰击金靶产生X射线压缩燃料靶丸引发聚变。计划2028年完成原型机，2030年代中期建成首座商业级聚变电站。 毒舌：全球最大私有激光？听起来很科幻，但离商用电站还差12万倍能量。 [原文链接](https://techcrunch.com/2026/06/03/the-worlds-largest-privately-owned-laser-just-turned-on/) | 来源：TechCrunch",
-      "quote": "核聚变创业公司Xcimer Energy启动Phoenix激",
-      "source": "",
-      "url": "https://techcrunch.com/2026/06/03/the-worlds-largest-privately-owned-laser-just-turned-on/",
-      "published": "2026-06-04",
-      "uid": "startup_205b8aec"
-    },
-    {
-      "title": "文远知行正式纳入港股通，内地投资者可直购",
-      "content": "自动驾驶科技公司文远知行宣布港股正式被纳入港股通标的证券名单，6月4日生效。纳入后，符合条件的内地投资者可通过港股通机制直接买卖文远知行港股。这标志着这家自动驾驶初创公司在资本市场获得更大流通性，也为其他自动驾驶公司提供了资本路径参考。 毒舌：自动驾驶资本故事换了个讲法：不靠IPO，靠港股通。 [原文链接](https://36kr.com/newsflashes/3837455275985152) | 来源：36氪",
-      "quote": "自动驾驶科技公司文远知行宣布港股正式被纳入港股通标的证券名单",
-      "source": "",
-      "url": "https://36kr.com/newsflashes/3837455275985152",
-      "published": "2026-06-04",
-      "uid": "startup_1f984cbd"
-    },
-    {
-      "title": "Amazon搜索将显示AI生成商品图片",
-      "content": "Amazon宣布将利用视觉搜索和AI技术，在搜索结果中展示AI生成的产品图片。AI会根据用户查询生成匹配的商品视觉效果，帮助引导用户到相关商品页面。但此举引发消费者担忧——AI生成的图片可能误导购物决策，尤其是在颜色、尺寸等关键属性上。 毒舌：Amazon说AI帮你找商品，买家怕AI生成的图跟实物两码事。 [原文链接](https://techcrunch.com/2026/06/03/amazon-will-show-ai-product-images-when-you-search-for-some-reason/) | 来源：TechCrunch",
-      "quote": "Amazon宣布将利用视觉搜索和AI技术，在搜索结果中展示A",
-      "source": "",
-      "url": "https://techcrunch.com/2026/06/03/amazon-will-show-ai-product-images-when-you-search-for-some-reason/",
-      "published": "2026-06-04",
-      "uid": "startup_696abd1b"
-    },
-    {
-      "title": "英国新规：出版商可退出AI搜索，Google必须给选项",
-      "content": "英国监管机构要求Google提供工具允许网站出版商选择退出生成式AI搜索功能。该选项将在英国先测试，随后在全球范围推行。此前不少出版商抱怨AI搜索直接引用其内容导致流量下降。大量内容源选择退出将直接影响AI搜索的回答质量，谷歌AI搜索战略面临根本性挑战。 毒舌：英国帮了出版商一个大忙：以后AI想抄作业得先问老师同意不。 [原文链接](https://techcrunch.com/2026/06/03/publishers-will-be-able-to-opt-out-of-ai-search-thanks-to-new-regulation/) | 来源：TechCrunch",
-      "quote": "英国监管机构要求Google提供工具允许网站出版商选择退出生",
-      "source": "",
-      "url": "https://techcrunch.com/2026/06/03/publishers-will-be-able-to-opt-out-of-ai-search-thanks-to-new-regulation/",
-      "published": "2026-06-04",
-      "uid": "startup_051b92c1"
-    },
-    {
-      "title": "Carvana联姻贝佐斯支持的Slate Auto，计划卖新车了",
-      "content": "二手车电商Carvana与贝佐斯投资的Slate Auto达成合作，首次进入新车销售领域。Carvana去年已获得Slate的认股权证。Guggenheim Partners CEO Mark Walter在这两家公司都有重注。此举标志着Carvana从纯二手车平台向综合汽车零售平台转型。 毒舌：Carvana卖二手车不够，盯上新车市场——贝佐斯的钱果然要翻倍赚。 [原文链接](https://techcrunch.com/2026/06/03/carvana-ties-up-with-bezos-backed-slate-auto-as-it-plans-new-car-sales/) | 来源：TechCrunch *本日报数据源：TechCrunch、36氪 | 2026-06-04*",
-      "quote": "二手车电商Carvana与贝佐斯投资的Slate Auto达",
-      "source": "",
-      "url": "https://techcrunch.com/2026/06/03/carvana-ties-up-with-bezos-backed-slate-auto-as-it-plans-new-car-sales/",
-      "published": "2026-06-04",
-      "uid": "startup_c48f35a2"
     }
   ],
   "design": [
+    {
+      "title": "AI文档疲劳：语音优先设计如何破局",
+      "content": "UX Collective文章指出AI承诺解放生产力反而制造了更多文档。作者设计了一款语音优先应用来摆脱文本洪流——具体场景是移动端记录和沟通时，语音比打字快10倍。这不仅是交互模式的创新，也是对「AI=更多文字」这一错误假设的反思。",
+      "quote": "AI没帮你省时间，倒是让你多写了十份周报，语音设计来救场。",
+      "url": "https://medium.com/user-experience-design-1/ai-created-document-fatigue-how-i-designed-my-way-out-of-it-1fcd4a565669",
+      "source": "UX Collective",
+      "published": "2026-06-07",
+      "uid": "0431636779a775d87640a8d98c7256bd"
+    },
+    {
+      "title": "RevivaBlade：角磨机驱动的多功能刀片磨锐器",
+      "content": "Core77报道英国品牌RevivaBlade推出的Pro Sharpening Disc专业磨片，装在标准4.5英寸角磨机上即可为多功能工具刀片开刃。此前已有Tiger's Teeth和SharpTool等方案，但RevivaBlade的角磨机方案功率更大、效率更高，售价92美元。工业设计师又一次把专业工具变成消费品。",
+      "quote": "磨刀比换刀省多了，爱动手的工友狂喜。",
+      "url": "https://www.core77.com/posts/144417/The-RevivaBlade-An-Angle-Grinder-Based-Multitool-Blade-Resharpener",
+      "source": "Core77",
+      "published": "2026-06-07",
+      "uid": "c98c8f8f315150385d8d2e0093065fe0"
+    },
+    {
+      "title": "法国工业设计师发明四季户外充气家具",
+      "content": "法国工业设计师Johannes Faure-Brac耗时6年研发Airmaan充气家具系统，灵感来自军用充气技术。全尺寸沙发和椅子可单手携带却可支撑成人重量，四季户外可用。Kickstarter众筹超31.6万美元。充气家具终于不再是廉价露营代名词，而是严肃的工业设计品类。",
+      "quote": "充气沙发不再只是泳池玩具了，法式设计果然连气都充得优雅。",
+      "url": "https://www.core77.com/posts/144414/French-Industrial-Designer-Invents-Durable-Four-Season-Outdoor-Inflatable-Furniture",
+      "source": "Core77",
+      "published": "2026-06-07",
+      "uid": "42ba69c6345653e264dc2b9ac7352828"
+    },
     {
       "title": "Figma MCP: AI Agent 可直接写入画布",
       "content": "Figma MCP: AI Agent 可直接写入画布，来源：Figma Blog | 2026-06-05**相关内容可查阅原文获取更多信息。",
@@ -1865,114 +1745,6 @@
       "source": "Smashing Magazine",
       "published": "2026-06-05",
       "uid": "97e1a411f91e8af30bbac55088bbc283"
-    },
-    {
-      "title": "DaVinci Resolve 21发布：AI工具全面升级，新增Photo页面",
-      "content": "Blackmagic Design发布DaVinci Resolve 21，新增Photo页面将好莱坞级调色工具带入静态摄影。AI功能大跃进：IntelliSearch内容搜索、AI语音生成、AI面部年龄变换、AI去瑕疵等十余项新功能。这是专业视频工具向全媒体创作平台转型的重要里程碑。",
-      "quote": "调色软件做照片？Adobe该抖一抖了。",
-      "url": "https://www.blackmagicdesign.com/products/davinciresolve/whatsnew",
-      "source": "Blackmagic Design",
-      "published": "2026-06-04",
-      "uid": "f9634f2b3b5cfc6cf564492cd69f6b8d"
-    },
-    {
-      "title": "Angular v22发布：Signal Forms、Angular Aria双双进入稳定版",
-      "content": "Angular v22正式发布，Signal Forms、Angular Aria和异步响应式API三大特性达到生产就绪状态。Signal Forms融合了Reactive Forms的类型安全和Template Forms的模板驱动优势，Angular Aria则提供了完整的可访问性原语组件库，让开发者自由定制样式而框架保证无障碍合规。",
-      "quote": "三个特性一起毕业，Angular这波操作稳得一批。",
-      "url": "https://blog.angular.dev/announcing-angular-v22-c52bb83a4664",
-      "source": "Angular Blog",
-      "published": "2026-06-04",
-      "uid": "e6d99f291501844615323fb57dc3a9d5"
-    },
-    {
-      "title": "Gooey：Zig语言首个GPU加速UI框架横空出世",
-      "content": "Gooey是一个混合即时/保留模式的GPU加速UI框架，专为Zig语言打造。支持macOS(Metal)、Linux(Vulkan/Wayland)和浏览器(WASM/WebGPU)三大平台。内置动画系统、声明式布局、无障碍支持(VoiceOver/Orca/ARIA)，且零外部依赖。Zig社区终于有了自己的原生UI方案。",
-      "quote": "Zig终于不用借别人的UI框架了，感人。",
-      "url": "https://github.com/duanebester/gooey",
-      "source": "GitHub/Hacker News",
-      "published": "2026-06-04",
-      "uid": "81c3313bba617b3899ad08b0fb5bf158"
-    },
-    {
-      "title": "MacBook Neo需求爆棚，苹果被迫翻倍产能至1000万台",
-      "content": "苹果MacBook Neo自3月发布以来需求远超预期，供应链分析师郭明錤透露2026年出货目标已从500万台上调至1000万台。这款定价599美元、搭载A18 Pro芯片的入门级MacBook，以多彩配色和极致性价比打乱了PC市场格局，戴尔已推出699美元XPS 13应战。",
-      "quote": "便宜又好看，Windows厂商集体破防中。",
-      "url": "https://www.macrumors.com/2026/06/03/macbook-neo-production-doubled-says-kuo/",
-      "source": "MacRumors",
-      "published": "2026-06-04",
-      "uid": "77bfbf2c3c2d37fff02ba6989527fa86"
-    },
-    {
-      "title": "Lanza Atelier蛇形砖墙蛇形画廊亮相伦敦",
-      "content": "墨西哥工作室Lanza Atelier为第25届伦敦蛇形画廊设计的「A Serpentine」正式亮相。建筑采用蜿蜒的砖墙结构，在现代语境中重新诠释了传统的英国crinkle crankle墙。作为夏季最受瞩目的临时建筑项目，蛇形画廊25年的设计实验史仍在延续。",
-      "quote": "砖墙扭一扭就叫设计？好吧，确实挺好看的。",
-      "url": "https://www.dezeen.com/2026/06/03/lanza-atelier-designs-snaking-brick-serpentine-pavilion-in-london/",
-      "source": "Dezeen",
-      "published": "2026-06-04",
-      "uid": "b11a56cc8f379c82c0edc0fb454f7fac"
-    },
-    {
-      "title": "Google发布Gemma 4 12B：无编码器多模态模型，16GB显存就能跑",
-      "content": "Google DeepMind推出Gemma 4 12B，采用创新的无编码器统一架构，视觉和音频输入直接流入LLM主干。性能接近26B MoE模型但内存仅需一半，可在消费级笔记本本地运行。Apache 2.0开源许可，是面向设计师和开发者最友好的本地多模态AI方案之一。",
-      "quote": "AI去编码器化=更轻更快，设计师笔记本终于能跑本地模型了。",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/",
-      "source": "Google Blog",
-      "published": "2026-06-04",
-      "uid": "d7975a61872d1048e7aa730e5264c33e"
-    },
-    {
-      "title": "Uber设定AI工具月消费上限：每人每工具1500美元",
-      "content": "Uber为所有员工设定了每个AI编程工具（Cursor、Claude Code等）每月1500美元的token消费上限。按每位工程师使用两个工具计算，年度AI支出上限约为36000美元，占工程师年薪中位数33万美元的约11%。这一政策折射出AI编码工具在企业中的成本管理挑战。",
-      "quote": "AI工具烧钱速度堪比打车，Uber自己先顶不住了。",
-      "url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/",
-      "source": "Simon Willison's Blog",
-      "published": "2026-06-04",
-      "uid": "b2b6c4377db3ab4991d6ac8a465af443"
-    },
-    {
-      "title": "Gustaf Westman设计雕塑感猫爬架：猫咪的极简主义生活",
-      "content": "瑞典设计师Gustaf Westman将其标志性的粗壮曲线造型语言应用到猫用品设计上，推出了一款雕塑感猫爬架。与市面上千篇一律的地毯包裹PVC管猫爬架形成鲜明对比，产品兼具功能性和艺术性。宠物用品设计正在从「宠物店审美」向「家居美学」进化。",
-      "quote": "猫不care设计感，但猫主人care——这就够了。",
-      "url": "https://www.dezeen.com/2026/06/02/gustaf-westman-cat-tree/",
-      "source": "Dezeen",
-      "published": "2026-06-04",
-      "uid": "461858008451e0c6c2fefec8efc50696"
-    },
-    {
-      "title": "Snøhetta×VitrA米兰设计周装置：瓷砖与回收材料的诗意表达",
-      "content": "挪威建筑事务所Snøhetta与土耳其卫浴品牌VitrA在2026米兰设计周合作打造了一座瓷砖覆盖的装置。结构嵌入多个空洞开口，突出展示回收材料制成的洗手盆和瓷砖产品。可持续设计已成标配，该装置通过空间体验让回收材料从营销概念变为可感知的设计语言。",
-      "quote": "回收材料做装置，Snøhetta把环保玩出了高级感。",
-      "url": "https://www.dezeen.com/2026/06/03/vitra-snohetta-milan-design-week-2026-installation/",
-      "source": "Dezeen",
-      "published": "2026-06-04",
-      "uid": "ff620c159f0b3f2caea5e9ade096eefe"
-    },
-    {
-      "title": "Delcy Morelos在巴比肯中心打造24米香料土壤装置",
-      "content": "哥伦比亚艺术家Delcy Morelos在伦敦巴比肯中心雕塑庭院创作了名为Origo的巨型装置——24米宽，完全由手工铺设的香料浸润土壤构成。作品探讨土地、记忆与殖民历史的交织关系。这件纯手工打造的有机装置是本届伦敦夏季艺术季最具沉浸感的空间体验之一。",
-      "quote": "用土做装置还加香料，奢侈得很有灵魂。",
-      "url": "https://www.dezeen.com/2026/06/03/delcy-morelos-origo-installation-barbican/",
-      "source": "Dezeen",
-      "published": "2026-06-04",
-      "uid": "575b17aaeac8f94ed39126ae64d0b31f"
-    },
-    {
-      "title": "哥本哈根3 Days of Design即将开幕：13场必看展览",
-      "content": "哥本哈根年度设计节「3 Days of Design」将于下周开幕。本届汇集了北欧顶尖设计品牌的展览和装置，覆盖家具、照明、材料创新和可持续设计等议题。作为斯堪的纳维亚设计日历上的旗舰活动，哥本哈根正在挑战米兰设计周的霸主地位。",
-      "quote": "北欧设计一年一度的大型种草现场又来了。",
-      "url": "https://www.dezeen.com/2026/06/01/unmissable-exhibitions-3-days-of-design-2026/",
-      "source": "Dezeen",
-      "published": "2026-06-04",
-      "uid": "d3b23c229ab7f45f0790aa33b39e935a"
-    },
-    {
-      "title": "Cloudflare报告：机器人流量首次超越人类流量",
-      "content": "Cloudflare Radar最新数据显示，全球互联网流量中机器人流量已首次超过人类流量。这对UX设计和产品设计有深远影响——验证码体验、反爬虫设计、以及「为人类而非机器设计」的产品哲学面临新的挑战。当你的用户中超过一半可能是机器时，设计策略需要根本性调整。",
-      "quote": "你的用户可能不是人——这话现在一点也不夸张。",
-      "url": "https://radar.cloudflare.com/traffic#bot-vs-human",
-      "source": "Cloudflare/Hacker News",
-      "published": "2026-06-04",
-      "uid": "23b7a525d395a8f4a045eacf36b3e05a"
     }
   ]
 }

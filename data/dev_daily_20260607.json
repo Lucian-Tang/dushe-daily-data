@@ -1,0 +1,173 @@
+[
+  {
+    "title": "Police in England and Wales told to halt AI use in court statements",
+    "content": "英国警方被正式叫停在法庭陈述中使用AI工具，成为首个对AI司法应用踩刹车的西方国家。这标志着监管层开始关注AI在司法系统中生成证据的准确性和偏见问题——AI生成的笔录用语可能在法庭上被误认为是人类警员的客观陈述，引发严重的程序正义危机。对从事法律科技和合规AI开发的团队来说，这是一个重要的监管信号。",
+    "quote": "AI还没当上法官，人类已经怕它当假证人了。",
+    "source": "HN Front Page",
+    "url": "https://www.ft.com/content/229e5949-3ebc-4151-8a86-a01b5e259241",
+    "published": "2026-06-07",
+    "uid": "dev_d570ab42"
+  },
+  {
+    "title": "Moving beyond fork() + exec()",
+    "content": "LWN 深度文章探讨 Unix 进程创建模型的演进。fork()+exec() 自1970年代以来一直是 Unix 基石，但在容器化和 Serverless 场景下性能瓶颈暴露无遗。文章分析了 posix_spawn、vfork、clone 等替代方案，以及可能的 kernel 级优化方向。系统程序员必读。",
+    "quote": "fork+exec 还能再战50年？内核社区已经开始备胎了。",
+    "source": "HN Front Page",
+    "url": "https://lwn.net/SubscriberLink/1076018/16f01bbbb8e0d1f0/",
+    "published": "2026-06-07",
+    "uid": "dev_d4d8195d"
+  },
+  {
+    "title": "Running Python code in a sandbox with MicroPython and WASM",
+    "content": "Simon Willison 展示用 MicroPython + WASM 在浏览器沙箱中安全运行 Python 的方案。核心是将 MicroPython 编译为 WebAssembly，运行在隔离环境，避免 eval() 或 pyodide 的安全隐患。对想在 Web 中提供用户自定义脚本功能的开发者有直接参考价值。",
+    "quote": "浏览器跑Python还想要安全？只能把Python自己先关笼子里。",
+    "source": "HN Front Page",
+    "url": "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/",
+    "published": "2026-06-07",
+    "uid": "dev_12b4581e"
+  },
+  {
+    "title": "US House lawmakers release draft bill to prohibit state AI rules",
+    "content": "美国众议院发布草案，拟禁止各州自行制定 AI 监管法规，意图建立全国统一的 AI 监管框架。这对 AI 创业公司是双刃剑：一方面避免了应对50个州不同法规的合规噩梦，另一方面若联邦标准过于严格，小团队的创新空间将被大幅压缩。法案细节还在博弈中，但「AI 监管权之争」已是2026年科技圈最关键的立法博弈之一。",
+    "quote": "50个州各搞一套AI法规？美国国会终于看不下去了。",
+    "source": "HN Front Page",
+    "url": "https://www.reuters.com/business/us-house-lawmakers-release-draft-bill-regulate-ai-2026-06-04/",
+    "published": "2026-06-07",
+    "uid": "dev_68a27c8d"
+  },
+  {
+    "title": "mvanhorn/last30days-skill",
+    "content": "GitHub 上星期的热榜项目 last30days-skill，是一个为 OpenClaw Agent 生态开发的技能包。这类技能包让 AI Agent 能查询过去30天内的各种数据趋势，本质上是把时间序列数据检索能力注入 Agent 的工具链。对于正在搭建自己的 Agent 知识库管系统、希望 Agent 具备时间感知能力的人来说，这类技能包的架构思路很值得参考。",
+    "quote": "Agent 技能包越来越像 App Store 了，就差一个杀毒软件。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/mvanhorn/last30days-skill",
+    "published": "2026-06-07",
+    "uid": "dev_fab8b712"
+  },
+  {
+    "title": "CopilotKit/CopilotKit",
+    "content": "CopilotKit 持续霸榜 GitHub 热榜，作为 Agent 前端框架，用 React 组件即可构建聊天面板、悬浮窗等交互层。Agent 写好后端最大的痛点就是「没界面」，CopilotKit 用声明式组件填补了这个空白。正在构建 AI 产品的团队值得认真评估。",
+    "quote": "Agent 写好不配UI等于锦衣夜行，CopilotKit 解决了这个面子问题。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/CopilotKit/CopilotKit",
+    "published": "2026-06-07",
+    "uid": "dev_5ce238ac"
+  },
+  {
+    "title": "大家对于 Anthropic 估值的看法",
+    "content": "Anthropic 估值三个月内从 3800 亿飙升至 9000 亿美元。争论焦点是：只靠卖 API 给程序员，真能支撑万亿美元估值吗？对比 OpenAI 的 C端和 Google 全栈布局，Anthropic 几乎完全依赖 B 端 API。但这也说明——全球开发者为优质编程 AI 付费的意愿远超预期。",
+    "quote": "9000亿估值全靠程序员买单，你的CLI每一行都值好几块钱。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1212285#reply12",
+    "published": "2026-06-07",
+    "uid": "dev_7b0b90bc"
+  },
+  {
+    "title": "🖖Manus 被 Meta 数十亿美元收购❗❗❗",
+    "content": "引发国内激烈争议的 AI Agent 公司 Manus 最终被 Meta 以数十亿美元收购，成为这波 AI 浪潮中标志性的出海并购案。Manus 此前因营销过度、技术实力争议在中文社区口碑两极分化，但 Meta 的收购价说明硅谷对 Agent 赛道的估值逻辑与国内完全不同。这对国内 AI 创业生态是一个信号——技术争议并不妨碍资本认可，关键是有没有大厂需要的战略拼图。",
+    "quote": "国内骂得越狠，扎克伯格买得越欢。Agent大战的入场券真贵。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1182036#reply86",
+    "published": "2026-06-07",
+    "uid": "dev_b0b5b416"
+  },
+  {
+    "title": "The perils of UUID primary keys in SQLite",
+    "content": "深度剖析 SQLite 中 UUID 主键的性能陷阱。基准测试证明，随机 UUID 相比自增主键导致 B-Tree 页分裂频繁、写入放大严重，查询性能可能下降 30-50%。但 UUID 在分布式下的唯一性又是刚需。文章给出了有序 UUID、组合键、Bloom Filter 等工程取舍方案。移动端和嵌入式开发者的必修课。",
+    "quote": "UUID 主键让 SQLite 哭了，但分布式系统笑了。谁妥协谁就是好设计。",
+    "source": "HN Front Page",
+    "url": "https://andersmurphy.com/2026/06/05/the-perils-of-uuid-primary-keys-in-sqlite.html",
+    "published": "2026-06-07",
+    "uid": "dev_8f5f9793"
+  },
+  {
+    "title": "Gemma 4 QAT models: Optimizing compression for mobile and laptop efficiency",
+    "content": "Google 发布 Gemma 4 量化感知训练（QAT）模型，专为移动设备和笔记本电脑优化。通过 QAT 技术，模型在 4-bit 量化下的精度损失控制在 1% 以内，内存占用减少 75%，推理速度提升 3-5 倍。这对边缘计算、离线 AI 应用和隐私敏感场景意义重大——用户不再需要联网就能在本地设备上跑高质量的 LLM。对于想要做端侧 AI 产品的开发者，这是目前最成熟的小模型微调方案之一。",
+    "quote": "模型大到跑不动？量化一下体积砍半性能不减，比减肥药靠谱。",
+    "source": "HN Front Page",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/",
+    "published": "2026-06-07",
+    "uid": "dev_01961cfd"
+  },
+  {
+    "title": "Azure Linux Desktop",
+    "content": "微软在 Build 2026 展示 Azure Linux Desktop——融合 WSL、WinUI Reactor 和 Azure Linux 4.0。这意味着微软在为 Linux 开发者构建「官方」桌面体验，不再只是 WSL 子系统。对跨平台全栈开发者，它可能成为打通 Windows/Linux 生态的桥梁——前提是微软不半途而废。",
+    "quote": "微软做Linux桌面？上次这么积极还是给IE6画插画的时候。",
+    "source": "HN Front Page",
+    "url": "https://www.boxofcables.dev/azure-linux-desktop-a-build-2026-mashup-of-wslc-winui-reactor-and-azure-linux-4-0/",
+    "published": "2026-06-07",
+    "uid": "dev_3fccdc16"
+  },
+  {
+    "title": "Nvidia is proposing a beast of a CPU system for Windows PCs",
+    "content": "Nvidia 被曝计划推出一套为 Windows PC 设计的「怪兽级」CPU 系统，意图在客户端侧复制其数据中心 AI 硬件优势。如果属实，这将是 x86 和 Arm 之外第三个入局消费级 CPU 的玩家。对开发者而言，这意味着未来的 AI 推理工作负载可能大规模从云端转移到本地 Nvidia CPU/GPU 融合芯片上运行——本地推理延迟更低、隐私更好，但生态兼容性将是最大挑战。",
+    "quote": "Nvidia做CPU？Intel和AMD终于有了一个共同的恐惧对象。",
+    "source": "HN Front Page",
+    "url": "https://twitter.com/lemire/status/2062880075117113739",
+    "published": "2026-06-07",
+    "uid": "dev_df1a6c32"
+  },
+  {
+    "title": "多Agent开发笔记:为什么4个Codex加1个Claude会把CPU跑满",
+    "content": "一位开发者记录下同时开4个 Codex + 1个 Claude Code 后 CPU 被吃满的惨痛经历。每个 AI 编程助手独立运行 LLM 上下文处理、代码索引和 linting，5个 Agent 无资源共享机制，8核16线程直接瘫痪。暴露了 AI 编程工具的架构困境——各自为战，缺少统一调度层。",
+    "quote": "9700X 都扛不住5个AI码农同时工作，人类码农还是太便宜了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/FatTiger4399/p/20332877",
+    "published": "2026-06-07",
+    "uid": "dev_aa70c8ed"
+  },
+  {
+    "title": "一款接入20+免费大模型渠道的AI编程工具",
+    "content": "资深游戏开发者分享用 Claude Code 和 Codex CLI 做大规模重构的经验。工具接入20+免费大模型渠道，核心亮点是能跨十几个文件读取整条渲染管线进行跨模块理解——这比大多数AI编程助手「只能改一个文件」强太多。跨文件架构感知才是大型项目AI辅助开发的真正价值。",
+    "quote": "20+免费模型的AI工具？质量先不说，卷价格倒是第一名。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/cnshark/p/20339776",
+    "published": "2026-06-07",
+    "uid": "dev_02f47a5f"
+  },
+  {
+    "title": "数据库查询优化器<1>查询重写/逻辑优化",
+    "content": "博客园连载的数据库查询优化器系列文章，本期深入拆解查询重写和逻辑优化的核心机制。从 SQL 语法树（AST）入手，详细讲解了谓词下推、投影下推、子查询展开、连接重排序等经典优化技术的实现原理。对于后端开发者和数据库内核爱好者来说，这篇是理解数据库「从 SQL 文本到执行计划」全过程的绝佳入门——毕竟，只有你懂优化器在想什么，才能写出让优化器喜欢的高性能 SQL。",
+    "quote": "你以为写SQL就能用好数据库？你眼中的优化只是优化器的皮毛。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/aslanvon/p/20343374",
+    "published": "2026-06-07",
+    "uid": "dev_fb7a4cd5"
+  },
+  {
+    "title": "当AgentGateway遇上OpenClaw.NET：企业级智能体基础设施的深度协同实战",
+    "content": "AgentGateway 被 Linux 基金会旗下 AAIF 接纳为核心托管项目，与企业级 .NET 生态的 OpenClaw 框架实现深度协同。这套方案为企业提供了从 Agent 网关路由、负载均衡到 .NET 运行时集成的全栈式智能体基础设施。对于在企业环境中落地 AI Agent 的团队，这种「开源基金会背书 + 企业级框架」的组合，比自研或全部依赖闭源 API 的方案更可控、更可持续。",
+    "quote": "开源的Agent网关被基金会收了，企业级AI不再是野路子。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/20337134",
+    "published": "2026-06-07",
+    "uid": "dev_1272ee03"
+  },
+  {
+    "title": "MemPalace/mempalace",
+    "content": "MemPalace 再次登上 GitHub 热榜，这个开源 AI 记忆系统支持向量检索、摘要压缩和自动上下文注入，全程可自托管、无 API 依赖。与依赖商业服务的记忆方案不同，MemPalace 让开发者完全掌控数据的存储和检索流程——数据不出服务器、不经过第三方 API。对于构建需要长期记忆的 AI 应用（如客服机器人、个人知识助手），这是目前最成熟的开源自托管记忆方案之一。",
+    "quote": "AI不再'你好初次见面'？MemPalace给了它一个免费的记忆U盘。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/MemPalace/mempalace",
+    "published": "2026-06-07",
+    "uid": "dev_7d6e549e"
+  },
+  {
+    "title": "danielmiessler/Personal_AI_Infrastructure",
+    "content": "Daniel Miessler 的个人 AI 基础设施项目，开源了一套从模型部署、工具集成到 Agent 编排的 AI 个人栈。这不是一个产品，而是一套可复现的架构模版——包含本地 LLM 推理、RAG 知识库、自动化工作流和 Agent 通信协议。对于想要脱离「全靠 SaaS」模式、搭建自己的 AI 基础设施的个人开发者来说，这个项目提供了经过实战检验的样板配置和架构决策记录。",
+    "quote": "别人的AI基础设施开源了，你还有理由说'太复杂不会搭'吗？",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/danielmiessler/Personal_AI_Infrastructure",
+    "published": "2026-06-07",
+    "uid": "dev_5d499c1d"
+  },
+  {
+    "title": "sveltejs/svelte",
+    "content": "Svelte 持续出现在 GitHub 热榜上，这个编译型前端框架正在稳步扩大影响力。相比 React 的运行时虚拟 DOM 方案，Svelte 的编译器理念让打包体积更小、运行时开销更低。随着 AI 生成代码的普及，Svelte 的简洁语法和更小的心智负担正在吸引越来越多从「让 AI 写前端」的开发者。其最近发布的 Svelte 5 的 runes 响应式系统进一步缩小了与主流框架的功能差距。",
+    "quote": "React 还在卷运行时，Svelte 默默把编译器做成了优势。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/sveltejs/svelte",
+    "published": "2026-06-07",
+    "uid": "dev_ca00beb7"
+  }
+]
