@@ -262,7 +262,12 @@ def normalize_file(filepath, dry_run=False, blocklist=None):
             item['uid'] = uid
             uid_count += 1
 
-        # 按3天过滤旧数据（仅对今天文件生效，历史文件不删数据）
+        fixed, issues = normalize_item(item, date_str)
+        if fixed:
+            fixed_count += 1
+            all_fixed_info.extend(issues)
+
+        # 按3天过滤旧数据（在 normalize_item 修正 published 之后执行）
         try:
             pub = item.get('published', '')
             item_date = datetime.strptime(pub[:10], '%Y-%m-%d').date()
@@ -275,11 +280,6 @@ def normalize_file(filepath, dry_run=False, blocklist=None):
         except:
             pass  # 无法解析日期的保留
 
-        fixed, issues = normalize_item(item, date_str)
-        if fixed:
-            fixed_count += 1
-            all_fixed_info.extend(issues)
-        
         # 敏感词过滤（标题 + 内容）
         item_text = (item.get('title', '') or '') + ' ' + (item.get('content', '') or '')
         if is_blocked(item_text, blocklist):
