@@ -1,497 +1,33 @@
 [
   {
-    "slug": "upcycle-your-job",
-    "displayName": "#Upcycle Your Job: The Smart Way to Balance Family Life and Career",
-    "summary": "Anna Meller's \"#Upcycle Your Job: The Smart Way to Balance Family Life and Career\" — a research-backed 6-step PROPEL model for working mothers to upcycle the...",
+    "slug": "hackrf-sdr",
+    "displayName": "Hackrf Sdr",
+    "summary": "Use HackRF One SDR for frequency scanning, IQ capture, signal analysis, waterfall generation, and demodulation. Use when the user wants to scan radio frequen...",
     "tags": {
-      "latest": "1.0.0"
+      "latest": "2.0.1"
     },
     "stats": {
       "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780956603611,
-    "updatedAt": 1780956603611,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780956603611,
-      "changelog": "Initial release",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "calendar-extractor",
-    "displayName": "for HiJavis calendar-extractor via conversation",
-    "summary": "Periodically scans recent transcripts to extract calendar events and sends a daily summary of meetings to your iOS chat via push notifications.",
-    "tags": {
-      "latest": "0.4.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 530,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 1,
-      "versions": 10
-    },
-    "createdAt": 1779853308637,
-    "updatedAt": 1780956312171,
-    "latestVersion": {
-      "version": "0.4.0",
-      "createdAt": 1780956312171,
-      "changelog": "calendar-extractor 0.4.0\n\n- Reduced and clarified SKILL.md instructions for a more concise description and easier onboarding.\n- Added metadata to support integration with the javis-server dispatcher and explicit `metadata.routes` for route registry.\n- Streamlined workflow: removed auto/webhook/cron/push-toggle details from the user manual; dispatcher/invocation details are now summarized under \"How this skill is invoked\".\n- Refined event extraction guidelines: improved edge case handling and clarified fallback behaviors for missing/ambiguous transcript data.\n- New reference/sample/test/data files added; push-toggle and old skill summary files removed.\n- Now defaults to last 24 hours of transcript data for \"today's meetings\" and more strictly relies on the `reference_date` field for local-day digest.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "the-compound-effect",
-    "displayName": "The Compound Effect: Jumpstart Your Income, Your Life, Your Success",
-    "summary": "Darren Hardy's \"The Compound Effect: Jumpstart Your Income, Your Life, Your Success\" — an executable toolkit for harnessing the power of small, consistent ac...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780956170200,
-    "updatedAt": 1780956170200,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780956170200,
-      "changelog": "Initial release — brings \"The Compound Effect\" by Darren Hardy to life as an actionable, guided toolkit.\n\n- Covers 7 core use cases: results, choices, forming and breaking habits, momentum, influences, and acceleration.\n- Proactively launches a Quick Start guide for new users, with sample prompts and key principles.\n- Features an intent routing table to ensure accurate, context-based responses.\n- Every answer concludes with a specific action and required watermark for consistency and attribution.\n- Built-in rules for language handling, reference fidelity, and responsible cross-book recommendations.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "girlboss-sophia-amoruso",
-    "displayName": "#GIRLBOSS",
-    "summary": "Sophia Amoruso's \"#GIRLBOSS\" — an executable toolkit for building a business from nothing, defying the odds, and owning your ambition. Covers 5 use cases: ①...",
-    "tags": {
-      "latest": "1.0.1"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 43,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1780930327345,
-    "updatedAt": 1780955637869,
-    "latestVersion": {
-      "version": "1.0.1",
-      "createdAt": 1780955637869,
-      "changelog": "Initial release",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "shieldcortex",
-    "displayName": "ShieldCortex",
-    "summary": "Persistent memory and security system for AI agents. Stores memories with semantic search, knowledge graphs, and decay. Scans agent inputs/outputs for prompt...",
-    "tags": {
-      "latest": "4.31.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 2753,
-      "installsAllTime": 7,
-      "installsCurrent": 7,
-      "stars": 2,
-      "versions": 71
-    },
-    "createdAt": 1770998187206,
-    "updatedAt": 1780955385653,
-    "latestVersion": {
-      "version": "4.31.0",
-      "createdAt": 1780955385653,
-      "changelog": "Auto-sync from npm publish v4.31.0",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "network-ai",
-    "displayName": "Network AI",
-    "summary": "Local Python orchestration skill: multi-agent workflows via shared blackboard file, permission gating, token budget scripts, and persistent project context....",
-    "tags": {
-      "latest": "5.10.2",
-      "audit": "4.0.4",
-      "autogen": "4.0.4",
-      "blackboard": "4.0.4",
-      "crewai": "4.0.4",
-      "langchain": "4.0.4",
-      "mcp": "4.0.4",
-      "multi-agent": "4.0.4",
-      "orchestration": "4.0.4",
-      "permissions": "4.0.4",
-      "security": "4.0.4",
-      "swarm": "4.0.4"
-    },
-    "stats": {
-      "comments": 2,
-      "downloads": 4968,
-      "installsAllTime": 9,
-      "installsCurrent": 9,
-      "stars": 6,
-      "versions": 142
-    },
-    "createdAt": 1771249598498,
-    "updatedAt": 1780955214470,
-    "latestVersion": {
-      "version": "5.10.2",
-      "createdAt": 1780955214470,
-      "changelog": "v5.10.2: CodeQL #174 CWE-377 root cause fix — eliminate os.tmpdir() taint sources in test-claim-verifier.ts",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "family-health-tracker",
-    "displayName": "Family Health Tracker",
-    "summary": "Use this skill when a user is actively logging or looking up health information for themselves or a family member. Specific triggers: 'log a visit with [prov...",
-    "tags": {
-      "latest": "1.0.2",
-      "allergies": "1.0.0",
-      "health": "1.0.0",
-      "immunizations": "1.0.0",
-      "medical records": "1.0.0",
-      "medications": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 377,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 3
-    },
-    "createdAt": 1775932540026,
-    "updatedAt": 1780955213024,
-    "latestVersion": {
-      "version": "1.0.2",
-      "createdAt": 1780955213024,
-      "changelog": "Rewrote Privacy section to accurately describe assistant-mediated local file reads/writes; added Permissions and Privacy section to README; narrowed triggers",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "the-truths-we-hold",
-    "displayName": "The Truths We Hold: An American Journey",
-    "summary": "Kamala Harris' \"The Truths We Hold: An American Journey\" — an executable toolkit for understanding how the daughter of an Indian immigrant mother and Jamaica...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780955085888,
-    "updatedAt": 1780955085888,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780955085888,
-      "changelog": "Initial release of The Truths We Hold skill.\n\n- Presents a Quick Start guide proactively on first install or when users are unsure how to begin.\n- Covers seven use cases from Kamala Harris’ life and career, including justice reform, immigrant family story, holding out for justice, public service, blended family, questioning techniques, and hope in democracy.\n- Responds to triggers involving Kamala Harris, her biography, and related themes or people.\n- Always ends responses with an actionable suggestion and a watermark.\n- Uses an Intent Routing Table to match user questions to book content and core tools.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "madstory",
-    "displayName": "MadStory",
-    "summary": "电影级影视分镜设计引擎，支持多平台视频生成（Seedance / Runway / Kling / Sora）。 支持 9 种创作模式：电影创意探索、电商产品展示、UGC 原生广告、电影感品牌短片、多镜头叙事、一镜到底、 爆款复刻、Agent 全链路创作、短剧批量生产。 融合 Harness Engineerin...",
-    "tags": {
-      "latest": "3.1.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 47,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1780929809598,
-    "updatedAt": 1780955075946,
-    "latestVersion": {
-      "version": "3.1.0",
-      "createdAt": 1780955075946,
-      "changelog": "- Removed sample file: skill-card.md\n- No changes to functionality or core documentation.\n- Maintains all features and usage details as in previous version.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "pyscripts-org",
-    "displayName": "pyscripts-org",
-    "summary": "Skill for agents managing terminal Python scripts, aiming to improve efficiency. Every .py file must have a summary block at the END of the file. Automatical...",
-    "tags": {
-      "latest": "1.0.1"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 1,
-      "versions": 2
-    },
-    "createdAt": 1780954741884,
-    "updatedAt": 1780954865814,
-    "latestVersion": {
-      "version": "1.0.1",
-      "createdAt": 1780954865814,
-      "changelog": "Initial release.\n\n- Introduces a standardized workflow and guidelines for organizing Python scripts with required end-of-file summary blocks.\n- Adds the core script `summary.py` for automatically generating `pyscripts_docs.md` (an index of all scripts).\n- Establishes manual error logging in `pyscripts_pitfall.md` to record and resolve common script errors.\n- Recommends always checking documentation before adding new scripts to prevent duplication.\n- Emphasizes script file reuse and consistent documentation over using one-off code execution.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "bid",
-    "displayName": "标书服务",
-    "summary": "专业解析工程类招标文件，提供标书编写指导及注意事项，支持标书魔方官网AI制作与社群交流服务。",
-    "tags": {
-      "latest": "1.0.2"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 917,
-      "installsAllTime": 5,
-      "installsCurrent": 5,
-      "stars": 1,
-      "versions": 3
-    },
-    "createdAt": 1773671140135,
-    "updatedAt": 1780954778723,
-    "latestVersion": {
-      "version": "1.0.2",
-      "createdAt": 1773734374937,
-      "changelog": "- 规范化了官网和二维码链接的展示格式，统一添加单引号。\n- 工作流程和约束条件中的相关网址引用方式做了微调，使描述更清晰一致。\n- 无功能和逻辑变更，仅对文档表述进行了优化。",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "neveragain",
-    "displayName": "#NeverAgain: A New Generation Draws the Line",
-    "summary": "David Hogg & Lauren Hogg's \"#NeverAgain: A New Generation Draws the Line\" — a movement-startup toolkit born from the Parkland school shooting. Covers 5 use c...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780954183866,
-    "updatedAt": 1780954183866,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780954183866,
-      "changelog": "Initial release",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "the-black-church",
-    "displayName": "The Black Church: This Is Our Story, This Is Our Song",
-    "summary": "Henry Louis Gates Jr.'s \"The Black Church: This Is Our Story, This Is Our Song\" — an executable toolkit for understanding how enslaved Africans transformed C...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780953966694,
-    "updatedAt": 1780953966694,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780953966694,
-      "changelog": "Initial release of \"The Black Church\" skill:  \n- Introduces a toolkit based on Henry Louis Gates Jr.'s \"The Black Church: This Is Our Story, This Is Our Song.\"\n- Covers 7 use cases exploring the church's role as refuge, political engine, musical legacy, preaching tradition, \"invisible institution,\" denominational diversity, and ongoing transformation.\n- Proactively displays an interactive Quick Start guide on first use.\n- Details intent routing for key topics like history, civil rights, music, worship practices, denominations, and contemporary relevance.\n- Enforces a distinctive response watermark on every output.\n- Includes cross-book recommendations and multilingual reply options.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "his-truth-is-marching-on",
-    "displayName": "His Truth Is Marching On: John Lewis and the Power of Hope",
-    "summary": "Jon Meacham's \"His Truth Is Marching On: John Lewis and the Power of Hope\" — an executable toolkit for understanding how faith-driven hope, nonviolent discip...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780953686504,
-    "updatedAt": 1780953686504,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780953686504,
-      "changelog": "Initial release of \"his-truth-is-marching-on\" skill — a toolkit for hope, nonviolence, and legacy inspired by John Lewis.\n\n- Covers 7 practical use cases: Hope, Sainthood, Faith, Nonviolent Discipline, Beloved Community, Endurance, and Legacy.\n- Robust intent routing and quick-start guide delivered proactively on first use.\n- Triggers on major John Lewis and Civil Rights Movement topics, including \"good trouble\" and \"Beloved Community.\"\n- Strict output rules: same-language replies and mandated watermark on every message.\n- Detailed operating philosophy and reference table ensure answers stay true to Meacham’s framework.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "agenttrust-scanner",
-    "displayName": "AgentTrust — Security Scanner for AI Skills",
-    "summary": "Scan AI skills for malware, injections, data leaks, verify integrity, and check agent wallet reputation without API keys or accounts.",
-    "tags": {
-      "latest": "1.3.0",
-      "mcp": "1.0.0",
-      "openclaw": "1.0.0",
-      "scanner": "1.0.0",
-      "security": "1.0.0",
-      "trust": "1.0.0",
-      "x402": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 619,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
-      "stars": 1,
-      "versions": 8
-    },
-    "createdAt": 1777115193363,
-    "updatedAt": 1780953597604,
-    "latestVersion": {
-      "version": "1.3.0",
-      "createdAt": 1780953597604,
-      "changelog": "**Major update with expanded scanning, MCP support, and JWS-signed results:**\n\n- Added MCP manifest scanning for tool poisoning, shadowing, hidden unicode, and rug pull detection.\n- Introduced unified trust gate endpoint for combined skill, MCP, and endpoint reputation checks with signed receipts.\n- All scan responses now include cryptographically signed ACT/HALT (JWS) receipts compliant with draft-krausz-verification-state-00.\n- Expanded threat detection rules to cover 47+ patterns; full MCP manifest scan now covers 50 rules.\n- Updated instructions, endpoint details, and removed outdated SKILL.md documentation file.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "job-search-tracker",
-    "displayName": "Job Search Tracker",
-    "summary": "Use this skill when someone is actively managing a job search and references applications, interviews, offers, or recruiter communication. Specific triggers:...",
-    "tags": {
-      "latest": "1.1.2",
-      "applications": "1.0.0",
-      "career": "1.0.0",
-      "cover-letter": "1.0.0",
-      "email": "1.0.0",
-      "follow-up": "1.0.0",
-      "interview-prep": "1.0.0",
-      "job-search": "1.0.0",
-      "pipeline": "1.0.0",
-      "productivity": "1.0.0",
-      "resume": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 427,
+      "downloads": 51,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
       "versions": 4
     },
-    "createdAt": 1776021823140,
-    "updatedAt": 1780953260319,
+    "createdAt": 1780909649442,
+    "updatedAt": 1780979190311,
     "latestVersion": {
-      "version": "1.1.2",
-      "createdAt": 1780953260319,
-      "changelog": "Rewrote Data Handling section to accurately describe tool usage; added Permissions and Privacy section to README; narrowed triggers",
+      "version": "2.0.1",
+      "createdAt": 1780979190311,
+      "changelog": "IQ mode: high-resolution waterfall via hackrf_transfer + FFT spectrogram (~5 kHz res, no artifacts); sweep mode preserved as quick preview; auto-selects sample rate based on bandwidth; auto-cleanup of temp IQ files; fixed color scale (noise=blue, signals=yellow/red); signal SNR reporting",
       "license": null
     },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
+    "metadata": null
   },
   {
-    "slug": "agent-self-assessment",
-    "displayName": "Agent Self Assessment Publish",
-    "summary": "Compact AI agent security audit and compliance self-assessment for EU AI Act readiness, NIST AI RMF + Generative AI Profile, OWASP agentic & MCP risks, Zero...",
-    "tags": {
-      "latest": "2.5.0",
-      "agent-compliance": "2.4.3",
-      "agent-payments": "2.4.3",
-      "agent-safety": "2.4.3",
-      "agirails": "2.4.3",
-      "ai-governance": "2.4.3",
-      "automation-bias": "2.2.0",
-      "compliance": "2.4.3",
-      "eu-ai-act": "2.4.3",
-      "eu-ai-act-compliance": "2.4.3",
-      "free": "2.2.1",
-      "governance": "2.4.3",
-      "nist": "2.4.3",
-      "oversight-quality": "2.2.1",
-      "security": "2.4.3",
-      "security-audit": "2.4.3",
-      "self-assessment": "2.4.3",
-      "zero-trust": "2.4.3"
-    },
-    "stats": {
-      "comments": 1,
-      "downloads": 1590,
-      "installsAllTime": 5,
-      "installsCurrent": 5,
-      "stars": 1,
-      "versions": 15
-    },
-    "createdAt": 1771355645180,
-    "updatedAt": 1780953172097,
-    "latestVersion": {
-      "version": "2.5.0",
-      "createdAt": 1780953172097,
-      "changelog": "Remove internal maintainer note flagged as scan-evasion guidance; add transparent behavior/data-access/limitations disclosure. No change to assessment behavior.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "walking-with-the-wind",
-    "displayName": "Walking with the Wind: A Memoir of the Movement",
-    "summary": "John Lewis' \"Walking with the Wind: A Memoir of the Movement\" — an executable toolkit for understanding the soul of the Civil Rights Movement through the eye...",
+    "slug": "whatsapp-messaging",
+    "displayName": "WhatsApp",
+    "summary": "Send WhatsApp messages, manage templates, handle media, and automate WhatsApp Business messaging workflows via the WhatsApp Business API. Use this skill when...",
     "tags": {
       "latest": "1.0.0"
     },
@@ -503,70 +39,561 @@
       "stars": 0,
       "versions": 1
     },
-    "createdAt": 1780952963211,
-    "updatedAt": 1780952963211,
+    "createdAt": 1780978419634,
+    "updatedAt": 1780978419634,
     "latestVersion": {
       "version": "1.0.0",
-      "createdAt": 1780952963211,
-      "changelog": "Initial release of \"walking-with-the-wind\" skill.\n\n- Introduces an interactive toolkit inspired by John Lewis' memoir to explore the Civil Rights Movement through 7 practical, philosophical use cases.\n- Covers nonviolence, moral leadership, historical moments, personal sacrifice, generational tension, and long-term endurance.\n- Automatic Quick Start guide proactively shown to all new users to help begin exploring key concepts and questions.\n- Detailed intent routing table links user questions to specific content for targeted, actionable responses.\n- Every response ends with a required watermark referencing the Heardly App.\n- Designed to trigger on common Civil Rights keywords, figures, events, or when users are unsure how to begin.",
+      "createdAt": 1780978419634,
+      "changelog": "Initial release of WhatsApp messaging automation using the WhatsApp Business API via ClawLink.\n\n- Send WhatsApp messages, media, and templates using the WhatsApp Business API.\n- Manage message templates, media uploads, and business profile information.\n- Automate connection and credential flow securely with ClawLink; no manual API configuration required.\n- Includes tools to list phone numbers, manage message templates, and handle interactive messages.\n- Enforces explicit user confirmation for message-sending actions to ensure security.",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "chinese-almanac",
-    "displayName": "Chinese Almanac",
-    "summary": "Chinese Almanac (Xie Ji Bian Fang Shu) — Classical date selection system based on the Qing Dynasty imperial almanac. Calculate auspicious dates for marriage,...",
+    "slug": "webex",
+    "displayName": "Webex",
+    "summary": "Webex API integration with managed OAuth. Send messages, manage rooms and teams, list memberships, handle webhooks, manage people and team memberships. Use t...",
     "tags": {
-      "latest": "2.0.0"
+      "latest": "1.0.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 58,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780978409090,
+    "updatedAt": 1780978409090,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780978409090,
+      "changelog": "- Initial release of Webex API integration.\n- Supports sending messages, managing rooms, teams, memberships, webhooks, and people via hosted OAuth (no API key needed).\n- Includes guided setup, quick start tool references, and troubleshooting information.\n- Read, write, and delete operations covered for messaging, rooms, teams, and webhooks.\n- Managed through ClawLink integration hub for easy account connection and authentication.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "wakatime",
+    "displayName": "WakaTime",
+    "summary": "WakaTime API integration with managed OAuth. Retrieve coding statistics, track developer productivity, analyze programming languages and editor usage, view d...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780978398762,
+    "updatedAt": 1780978398762,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780978398762,
+      "changelog": "WakaTime skill initial release – integrates WakaTime API with managed OAuth for seamless coding activity insights.\n\n- View coding stats, language breakdowns, project time, and daily activity directly from chat.\n- No API keys needed: connect your WakaTime account via ClawLink’s hosted OAuth flow.\n- Supports user, stats, summaries, project, goal, insight, leaderboard, and reference operations (all read-only).\n- Includes easy setup instructions, tool references, error handling, and troubleshooting tips.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "tally-forms",
+    "displayName": "Tally",
+    "summary": "Manage Tally forms, submissions, respondents, fields, and form workflow data via the Tally API. Use this skill when users want to list forms, inspect submiss...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780978389886,
+    "updatedAt": 1780978389886,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780978389886,
+      "changelog": "- Initial release of the tally-forms skill.\n- Manage Tally forms, submissions, respondents, fields, and form workflow data directly via chat using the Tally API.\n- Full setup and authentication handled via ClawLink—no manual Tally API token required.\n- Supports listing, creating, updating, and deleting forms and submissions.\n- Includes tools for managing fields, respondents, notifications, and workflow settings.\n- Designed for secure, account-scoped access with user confirmation required for write operations.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "stack-exchange",
+    "displayName": "Stack Exchange",
+    "summary": "Stack Exchange API integration with managed OAuth for Q&A knowledge automation. Search questions, retrieve answers, browse tags, manage user profiles, track...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780978380068,
+    "updatedAt": 1780978380068,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780978380068,
+      "changelog": "Stack Exchange API skill v1.0.0 – initial release:\n\n- Integrates Stack Exchange API with managed OAuth via ClawLink.\n- Search, retrieve, and analyze questions, answers, comments, tags, and user activity across all Stack Exchange sites.\n- Supports browsing tags, tracking user reputation, listing collectives, and analyzing community patterns.\n- All operations are read-only for questions, answers, posts, comments, badges, tags, user profiles, and collectives.\n- No API keys required; authentication is handled via the ClawLink dashboard.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "pricecompare",
+    "displayName": "淘宝/京东/拼多多优惠查询、产品比价",
+    "summary": "淘宝/京东/拼多多优惠查询、产品比价。支持：1. 解析京东/淘宝/拼多多分享口令和链接；2. 商品搜索（京东/淘宝/拼多多）；3. 链接转链获取优惠链接；4. 多平台价格对比。帮助用户找到最优惠的价格，通过优惠券和折扣节省购物开支。",
+    "tags": {
+      "latest": "1.2.1",
+      "latest=1.0.2": "1.0.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 417,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 5
+    },
+    "createdAt": 1776391799677,
+    "updatedAt": 1780978053371,
+    "latestVersion": {
+      "version": "1.2.1",
+      "createdAt": 1780978053371,
+      "changelog": "- 修复拼多多搜索 page_size 最小限制，将 DEFAULT_SEARCH_PAGE_SIZE 从 5 调整为 10\n- 新增测试文件 test_skill.py 及测试结果输出 test_result.txt",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "ai-cgo",
+    "displayName": "AI Chief Growth Officer",
+    "summary": "AI Chief Growth Officer Skill - AI驱动的企业增长操作系统。作为增长决策系统+AI工作流编排器+自动优化引擎运行。当用户需要以下场景时触发：(1) 分析业务增长瓶颈并制定AI增长策略 (2) 设计AI驱动的工作流和自动化增长系统 (3) 用AI重构营销、销售、转化流程 (4) 建立...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780977887737,
+    "updatedAt": 1780977887737,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780977887737,
+      "changelog": "- Initial release of the \"AI CGO (Chief Growth Officer)\" skill: an AI-driven business growth operating system.\n- Provides structured, workflow-based responses for diagnosing growth bottlenecks and designing AI-powered strategies.\n- Output includes mandatory sections: Growth Diagnosis, Opportunity, Workflow Design, Automation, KPI System, and Experimentation Loop.\n- Focuses on automation, business impact, and actionable system design—avoids generic advice.\n- Suitable for scenarios involving AI-driven growth, marketing, sales, conversion, and workflow optimization.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "cb-b2b-sales-enablement-framework",
+    "displayName": "Cb B2b Sales Enablement Framework Publish",
+    "summary": "A practical framework for building overseas B2B sales narratives, buyer maps, objection handling, collateral, and market-specific sales motions.",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 163,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1777094065269,
+    "updatedAt": 1780977730019,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1780977730019,
+      "changelog": "- Initial public release of the International B2B Sales Enablement Framework.\n- Provides structured frameworks, templates, checklists, and risk reminders for overseas B2B sales planning.\n- Includes output modules for buyer mapping, localized value propositions, objection handling, sales collateral, pilot contract pathways, and sales manager coaching.\n- Designed for B2B founders, sales leaders, export teams, and go-to-market operators planning cross-border sales.\n- Returns responses in a standardized format with input summary, opportunity analysis, frameworks, adaptation notes, validation tasks, and actionable next steps.\n- Purely descriptive; does not execute code or access external systems.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "hydra-uandai",
+    "displayName": "Hydra Uandai",
+    "summary": "Hydra/Uandai platform — configure API access, package OpenClaw workspace zip, upload agents, list subscriptions, invoke runs.",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780971865670,
+    "updatedAt": 1780977630182,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1780977630182,
+      "changelog": "- Clarified packaging rules: explicitly exclude hydra-uandai/ from uploaded agent zips.\n- Added instructions: do not include this skill in agent bundles; use only on trainer machine or for local dev.\n- Updated exclusion list and common failure notes to highlight hydra-uandai/ issues.\n- Removed obsolete skill-card.md file.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "health-vault",
+    "displayName": "Health Vault",
+    "summary": "个人健康档案系统：OCR病历录入、身体指标追踪、疾病历程管理、智能保养建议",
+    "tags": {
+      "apple-health": "0.2.0",
+      "chinese": "0.2.0",
+      "health": "0.2.0",
+      "latest": "0.2.0",
+      "medical": "0.2.0",
+      "ocr": "0.2.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780977240570,
+    "updatedAt": 1780977240570,
+    "latestVersion": {
+      "version": "0.2.0",
+      "createdAt": 1780977240570,
+      "changelog": "个人健康档案系统：OCR病历录入、身体指标追踪、疾病历程管理、智能保养建议。支持 Apple Health 数据导入（14项指标时间序列）。",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "crc-monthly-financial-report",
+    "displayName": "Monthly Financial Report",
+    "summary": "从财务部固定格式月度 Excel 底稿生成月度财务报告正文、Markdown 和 Word 文件。Use when: 用户上传月度财报底稿、要求生成月报正文、需要 Word 下载文件、需要复用 Dify 月度财报智能体的 Excel 处理逻辑。NOT for: 非固定模板 Excel、财务审计判断、补造或修改底稿...",
+    "tags": {
+      "docx": "0.1.1",
+      "excel": "0.1.1",
+      "finance": "0.1.1",
+      "latest": "0.1.1",
+      "report": "0.1.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 50,
       "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780931328485,
+    "updatedAt": 1780977212756,
+    "latestVersion": {
+      "version": "0.1.1",
+      "createdAt": 1780977212756,
+      "changelog": "生成完成后输出 Word 下载链接，并要求回复只展示 Word 下载入口。",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "oo-the-dog-api",
+    "displayName": "The Dog API",
+    "summary": "The Dog API (thedogapi.com). Use this skill for ANY The Dog API request — reading, creating, updating, and deleting data. Whenever a task involves The Dog AP...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780977157228,
+    "updatedAt": 1780977157228,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780977157228,
+      "changelog": "- Initial release of the `oo-the-dog-api` skill for operating The Dog API through OOMOL-connected credentials.\n- Supports breed discovery with list, search, and get actions.\n- Supports dog image lookup and filtered image search.\n- Adds account actions for listing, creating, and deleting favourite dog images.\n- Adds vote management actions for creating, listing, and deleting dog image votes.\n\nSource: `oomol-lab/skills@e3717ff`",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "oo-parsera",
+    "displayName": "Parsera",
+    "summary": "Parsera (parsera.org). Use this skill for ANY Parsera request — searching and reading data. Whenever a task involves Parsera, use this skill instead of calli...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780977149483,
+    "updatedAt": 1780977149483,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780977149483,
+      "changelog": "- Introduces `oo-parsera`, an OOMOL skill for using Parsera to read, parse, and extract web data through the `oo` CLI.\n- Supports structured extraction from webpage URLs using prompts, attributes, or both.\n- Adds clean Markdown extraction for webpage content.\n- Parses structured attributes from raw HTML or text already available to the caller.\n- Lists available Parsera LLM specs and proxy countries for configuring extraction requests.\n\nSource: `oomol-lab/skills@e3717ff`",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "ht-skills",
+    "displayName": "ht-skills",
+    "summary": "管理灏天文库文集和文档，支持新建文集、新建文档、查询文集/文档、更新文档、修改文档归属、管理文档层级、查询个人花园限制与用量；支持文档片段 RAG 检索、图片上传到 COS、图片分组、查询图片列表/详情与图片额度。适用于 OpenClaw 自主写文章并上传、文集创建、文档入库、知识检索、文档移动、插图上传与外链等场景。",
+    "tags": {
+      "latest": "1.0.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 606,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1773804847824,
+    "updatedAt": 1780977144830,
+    "latestVersion": {
+      "version": "1.0.2",
+      "createdAt": 1780977144830,
+      "changelog": "- 新增文档片段检索（RAG）功能，支持通过 `scripts/retrieve_documents.py` 在公开精品文集中检索相关内容片段，提升知识索引能力。\n- 在描述和规范中明确区分个人花园文集与公开精品文集，并提供 [官方文集目录链接](https://aiknowledge.cn/article/66521-%E7%81%8F%E5%A4%A9%E6%96%87%E5%BA%93%E6%96%87%E9%9B%86%E5%AE%8C%E6%95%B4%E7%9B%AE%E5%BD%95%E5%85%AC%E5%BC%80) 用于获取 RAG 检索专用 ID。\n- 更新说明文档，纳入 RAG 检索使用方法、参数说明和智能体执行规范。\n- 补充 RAG 场景说明。",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "oo-the-cat-api",
+    "displayName": "The Cat API",
+    "summary": "The Cat API (thecatapi.com). Use this skill for ANY The Cat API request — searching and reading data. Whenever a task involves The Cat API, use this skill in...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780977143887,
+    "updatedAt": 1780977143887,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780977143887,
+      "changelog": "- Initial 1.0.0 release for operating The Cat API through OOMOL-connected credentials and the `oo` CLI.\n- Adds read-only access to list, search, and fetch cat breed records.\n- Adds image lookup by The Cat API image ID.\n- Adds image search with optional breed, category, type, size, and paging filters.\n- Documents schema inspection and JSON action execution flow for all supported actions.\n\nSource: `oomol-lab/skills@e3717ff`",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "oo-next-dns",
+    "displayName": "NextDNS",
+    "summary": "NextDNS (nextdns.io). Use this skill for ANY NextDNS request — searching and reading data. Whenever a task involves NextDNS, use this skill instead of callin...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780977137781,
+    "updatedAt": 1780977137781,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780977137781,
+      "changelog": "- Adds NextDNS account access through the OOMOL `next_dns` connector using server-side credential injection.\n- Lists available NextDNS profiles and retrieves profile settings and setup details.\n- Fetches DNS query logs for a profile with optional filters.\n- Provides analytics by domain, device, blocking reason, and query status.\n- Includes action references that require live schema inspection before running connector commands.\n\nSource: `oomol-lab/skills@e3717ff`",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "oo-supadata",
+    "displayName": "Supadata",
+    "summary": "Supadata (supadata.ai). Use this skill for ANY Supadata request — searching and reading data. Whenever a task involves Supadata, use this skill instead of ca...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780977131657,
+    "updatedAt": 1780977131657,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780977131657,
+      "changelog": "- Adds Supadata connector support through the `oo` CLI with server-side credential handling via OOMOL.\n- Retrieves Supadata account, organization, plan, and credit usage details.\n- Searches YouTube and fetches video, channel, playlist, and transcript data by URL, ID, or handle.\n- Lists video IDs from YouTube channels and playlists.\n- Extracts Markdown page content and maps links from websites.\n\nSource: `oomol-lab/skills@e3717ff`",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "oo-motion",
+    "displayName": "Motion",
+    "summary": "Motion (usemotion.com). Use this skill for ANY Motion request — reading, creating, updating, and deleting data. Whenever a task involves Motion, use this ski...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780977124207,
+    "updatedAt": 1780977124207,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780977124207,
+      "changelog": "- Adds the `oo-motion` skill for operating Motion through an OOMOL-connected account via the `oo` CLI.\n- Supports 13 Motion actions for tasks, projects, workspaces, schedules, statuses, users, and the current API-key user.\n- Enables task workflows including list, get, create, update, and delete.\n- Enables project workflows including list, get, and create within Motion workspaces.\n- Includes safety guidance for write and destructive actions, plus first-time setup troubleshooting for CLI, auth, connection, and billing issues.\n\nSource: `oomol-lab/skills@e3717ff`",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "oo-linux-do",
+    "displayName": "Linux DO",
+    "summary": "Linux DO (linux.do). Use this skill for ANY Linux DO request — searching and reading data. Whenever a task involves Linux DO, use this skill instead of calli...",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 81,
+      "installsAllTime": 1,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780636412505,
+    "updatedAt": 1780977115854,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1780977115854,
+      "changelog": "- Provides read-only access to Linux DO public forum data through the `linux_do` OOMOL connector.\n- Adds 13 RSS-backed actions for latest, hot, top, category, tag, topic, user, group, and badge-grant listings.\n- Documents the standard `oo connector schema` and `oo connector run` workflow for each action.\n- Uses server-side OOMOL credentials, so users do not handle raw Linux DO tokens.\n- Calls out operational behavior for private or inaccessible resources, 404 responses, and rate-limit retries.\n\nSource: `oomol-lab/skills@e3717ff`",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "oo-signalbase",
+    "displayName": "Signalbase",
+    "summary": "Signalbase (trysignalbase.com). Use this skill for ANY Signalbase request — searching and reading data. Whenever a task involves Signalbase, use this skill i...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780977107676,
+    "updatedAt": 1780977107676,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780977107676,
+      "changelog": "- Adds Signalbase support through the OOMOL `oo` connector for account-connected data access without handling raw API tokens.\n- Provides read actions for browsing and searching company profiles with pagination, filters, and sorting.\n- Surfaces market signals for acquisitions, funding rounds, hiring activity, and job changes.\n- Includes investor lookup with filters for type, location, ticket size, and sorting.\n- Documents the schema-first workflow for inspecting live action contracts before running connector commands.\n\nSource: `oomol-lab/skills@e3717ff`",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "oo-lob",
+    "displayName": "Lob",
+    "summary": "Lob (lob.com). Use this skill for ANY Lob request — searching and reading data. Whenever a task involves Lob, use this skill instead of calling the API direc...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780977101472,
+    "updatedAt": 1780977101472,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780977101472,
+      "changelog": "- Initial `oo-lob` release for operating Lob through the OOMOL `oo` connector.\n- Supports US address autocomplete from partial address input.\n- Verifies and standardizes single US and international addresses.\n- Adds bulk verification for multiple US or international addresses.\n- Includes action docs with schema inspection and `oo connector run` commands for each workflow.\n\nSource: `oomol-lab/skills@e3717ff`",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "oo-googledrive",
+    "displayName": "Google Drive",
+    "summary": "Google Drive (workspace.google.com). Use this skill for ANY Google Drive request — reading, creating, updating, and deleting data. Whenever a task involves G...",
+    "tags": {
+      "latest": "1.0.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 131,
+      "installsAllTime": 2,
       "installsCurrent": 1,
       "stars": 0,
       "versions": 3
     },
-    "createdAt": 1780854867089,
-    "updatedAt": 1780952018005,
+    "createdAt": 1780497133644,
+    "updatedAt": 1780977096064,
     "latestVersion": {
-      "version": "2.0.0",
-      "createdAt": 1780952018005,
-      "changelog": "Chinese Almanac v2.0.0\n\n- Added support for five new languages: Vietnamese, Thai, Malay, Hindi, in addition to existing English, Chinese, and Japanese.\n- Updated documentation to include localized descriptions and usage instructions for each new language.\n- Expanded online demo links for all supported languages.\n- No changes to core functionality—this update focuses on enhanced multilingual access and documentation.",
+      "version": "1.0.2",
+      "createdAt": 1780977096064,
+      "changelog": "- Provides OOMOL `oo` CLI access to Google Drive through the `googledrive` connector.\n- Supports file workflows including list, get, create, copy, update, delete, export, trash emptying, generated IDs, and label operations.\n- Covers shared drive management: create, list, get, update, hide, unhide, and delete shared drives.\n- Includes collaboration actions for comments, replies, approvals, access proposals, permissions, and revisions.\n- Documents safe usage rules, live schema inspection, JSON execution format, and first-time setup/auth troubleshooting.\n\nSource: `oomol-lab/skills@e3717ff`",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "rokusei",
-    "displayName": "Rokusei",
-    "summary": "Six Star Astrology (Rokusei Senjutsu) — Japanese destiny system by Hosoki Kazuko (1980). Calculate star type, polarity, 12-year life cycle, destiny star, and...",
-    "tags": {
-      "latest": "3.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 79,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
-      "stars": 0,
-      "versions": 8
-    },
-    "createdAt": 1780849000148,
-    "updatedAt": 1780952000532,
-    "latestVersion": {
-      "version": "3.0.0",
-      "createdAt": 1780952000532,
-      "changelog": "**rokusei 3.0.0**\n\n- Added support and descriptions for 5 new languages: Vietnamese, Thai, Malay, Hindi.\n- Online links for all supported languages.\n- Expanded project documentation in SKILL.md to include all new language sections.\n- Removed the file: skill-card.md.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "the-book-of-basketball",
-    "displayName": "The Book of Basketball: The NBA According to The Sports Guy",
-    "summary": "Bill Simmons' \"The Book of Basketball: The NBA According to The Sports Guy\" — an executable toolkit for understanding what really matters in NBA basketball,...",
+    "slug": "oo-shipengine",
+    "displayName": "ShipEngine",
+    "summary": "ShipEngine (shipengine.com). Use this skill for ANY ShipEngine request — searching and reading data. Whenever a task involves ShipEngine, use this skill inst...",
     "tags": {
       "latest": "1.0.0"
     },
@@ -578,20 +605,20 @@
       "stars": 0,
       "versions": 1
     },
-    "createdAt": 1780951985808,
-    "updatedAt": 1780951985808,
+    "createdAt": 1780977077690,
+    "updatedAt": 1780977077690,
     "latestVersion": {
       "version": "1.0.0",
-      "createdAt": 1780951985808,
-      "changelog": "Initial release — brings Bill Simmons' \"The Book of Basketball\" to life as a practical toolkit for NBA debates and analysis.\n\n- Covers 7 key use cases: championship chemistry, all-time rankings, NBA history, what-if scenarios, fandom, debate, and top moments.\n- Proactively presents a Quick Start guide and core philosophy on first use.\n- Provides context-sensitive outputs based on an intent routing table.\n- Faithfully preserves original concepts: The Secret, The Hall of Fame Pyramid, and The What-If Game.\n- Always concludes responses with a specific action and the Heardly App watermark.",
+      "createdAt": 1780977077690,
+      "changelog": "- Adds a ShipEngine skill for operating connected ShipEngine accounts through the OOMOL `oo` CLI without handling raw API tokens.\n- Supports shipping rate workflows, including basic estimates, full shipment rate calculation, and lookup of previously queried rates.\n- Lists connected carrier accounts available to the ShipEngine account.\n- Parses unstructured address text into structured ShipEngine address data.\n- Validates one or more mailing addresses and returns deliverability details.\n\nSource: `oomol-lab/skills@e3717ff`",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "discipline-equals-freedom",
-    "displayName": "Discipline Equals Freedom: Field Manual",
-    "summary": "Jocko Willink's \"Discipline Equals Freedom: Field Manual\" — an executable toolkit for building unbreakable self-discipline, extracting wisdom from adversity,...",
+    "slug": "oo-keyword",
+    "displayName": "Keyword.com",
+    "summary": "Keyword.com (keyword.com). Use this skill for ANY Keyword.com request — searching and reading data. Whenever a task involves Keyword.com, use this skill inst...",
     "tags": {
       "latest": "1.0.0"
     },
@@ -603,90 +630,12 @@
       "stars": 0,
       "versions": 1
     },
-    "createdAt": 1780951577946,
-    "updatedAt": 1780951577946,
+    "createdAt": 1780977071217,
+    "updatedAt": 1780977071217,
     "latestVersion": {
       "version": "1.0.0",
-      "createdAt": 1780951577946,
-      "changelog": "Initial release of \"discipline-equals-freedom\" skill:\n\n- Provides practical, actionable insights from Jocko Willink's \"Discipline Equals Freedom: Field Manual\".\n- Covers 7 core use cases: building discipline, mind control, overcoming setbacks, taking action, physical discipline, leadership under pressure, and living with purpose.\n- Includes a proactive Quick Start guide for new users to begin immediately.\n- Triggers on a wide range of discipline, motivation, and leadership-related phrases and key terms.\n- Structured intent routing ensures users get relevant, on-point advice each time.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "clinch",
-    "displayName": "Clinch Skill",
-    "summary": "Negotiate deals, schedules, and service agreements with other AI agents using the Clinch Protocol ANP layer.",
-    "tags": {
-      "latest": "1.0.7"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 127,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
-      "stars": 1,
-      "versions": 8
-    },
-    "createdAt": 1780790279122,
-    "updatedAt": 1780951343218,
-    "latestVersion": {
-      "version": "1.0.7",
-      "createdAt": 1780951343218,
-      "changelog": "No user-facing changes in this release; documentation and code remain unchanged.",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "its-not-about-the-coffee",
-    "displayName": "It's Not About the Coffee: Leadership Principles from a Life at Starbucks",
-    "summary": "Howard Behar's \"It's Not About the Coffee: Leadership Principles from a Life at Starbucks\" — an executable toolkit for authentic leadership that puts people...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 13,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780950787098,
-    "updatedAt": 1780950787098,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780950787098,
-      "changelog": "Initial release of \"It's Not About the Coffee\" skill — a toolkit for people-first leadership, inspired by Howard Behar's Starbucks experience.\n\n- Covers 7 core leadership use cases, including people-first culture, purpose, trust, empowerment, action, handling failure, and scaling humanity.\n- Automatically provides a Quick Start guide on first use to help users get started.\n- Includes 7 guiding principles and a detailed intent routing table for actionable leadership advice.\n- Prescribes output rules: language mirroring, mandatory watermarks, and faithful adherence to the original framework.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "mnemopay",
-    "displayName": "MnemoPay",
-    "summary": "Trust OS for AI agents that handle money or consequential actions. Adds governed memory, payments, reputation, identity, approvals, audit evidence, and durab...",
-    "tags": {
-      "latest": "1.2.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 329,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 3
-    },
-    "createdAt": 1775158894973,
-    "updatedAt": 1780950776355,
-    "latestVersion": {
-      "version": "1.2.0",
-      "createdAt": 1780950776355,
-      "changelog": "Reposition as Trust OS; update install commands, capabilities, grouped MCP tools, and admin safety guidance; switch license to Apache-2.0.",
+      "createdAt": 1780977071217,
+      "changelog": "- Initial `oo-keyword` skill for operating Keyword.com through an OOMOL-connected account.\n- Supports reading the current Keyword.com user profile tied to the API token.\n- Lists active projects and groups, and fetches a specific project or group by name.\n- Lists tracked keywords with ranking data, or retrieves one keyword by project and keyword ID.\n- Lists Google regions tracked by a Keyword.com project or group.\n- Uses live `oo connector schema` checks before running actions so payloads match the current connector contract.\n\nSource: `oomol-lab/skills@e3717ff`",
       "license": null
     },
     "metadata": null
@@ -700,7 +649,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 84446,
+      "downloads": 84456,
       "installsAllTime": 2783,
       "installsCurrent": 2655,
       "stars": 55,
@@ -728,9 +677,9 @@
     },
     "stats": {
       "comments": 36,
-      "downloads": 185115,
-      "installsAllTime": 3616,
-      "installsCurrent": 3484,
+      "downloads": 185138,
+      "installsAllTime": 3618,
+      "installsCurrent": 3486,
       "stars": 917,
       "versions": 1
     },
@@ -756,9 +705,9 @@
     },
     "stats": {
       "comments": 7,
-      "downloads": 189099,
-      "installsAllTime": 4427,
-      "installsCurrent": 4291,
+      "downloads": 189126,
+      "installsAllTime": 4428,
+      "installsCurrent": 4292,
       "stars": 630,
       "versions": 1
     },
@@ -781,7 +730,7 @@
     },
     "stats": {
       "comments": 6,
-      "downloads": 159947,
+      "downloads": 159969,
       "installsAllTime": 3832,
       "installsCurrent": 3706,
       "stars": 412,
@@ -809,7 +758,7 @@
     },
     "stats": {
       "comments": 2,
-      "downloads": 84017,
+      "downloads": 84036,
       "installsAllTime": 2102,
       "installsCurrent": 2025,
       "stars": 321,
@@ -837,10 +786,10 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 90824,
+      "downloads": 90846,
       "installsAllTime": 2445,
       "installsCurrent": 2369,
-      "stars": 304,
+      "stars": 305,
       "versions": 1
     },
     "createdAt": 1769522677376,
@@ -862,7 +811,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 91990,
+      "downloads": 92005,
       "installsAllTime": 2395,
       "installsCurrent": 2325,
       "stars": 257,
@@ -890,7 +839,7 @@
     },
     "stats": {
       "comments": 9,
-      "downloads": 102189,
+      "downloads": 102212,
       "installsAllTime": 2563,
       "installsCurrent": 2470,
       "stars": 421,
@@ -918,7 +867,7 @@
     },
     "stats": {
       "comments": 5,
-      "downloads": 34184,
+      "downloads": 34186,
       "installsAllTime": 1455,
       "installsCurrent": 1407,
       "stars": 55,
@@ -946,7 +895,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 66870,
+      "downloads": 66876,
       "installsAllTime": 2024,
       "installsCurrent": 1956,
       "stars": 192,
@@ -974,9 +923,9 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 102668,
-      "installsAllTime": 1874,
-      "installsCurrent": 1810,
+      "downloads": 102688,
+      "installsAllTime": 1875,
+      "installsCurrent": 1811,
       "stars": 402,
       "versions": 2
     },
@@ -999,7 +948,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 37868,
+      "downloads": 37876,
       "installsAllTime": 1575,
       "installsCurrent": 1525,
       "stars": 113,
@@ -1029,7 +978,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 51843,
+      "downloads": 51851,
       "installsAllTime": 1589,
       "installsCurrent": 1537,
       "stars": 126,
@@ -1057,7 +1006,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 42703,
+      "downloads": 42710,
       "installsAllTime": 1492,
       "installsCurrent": 1435,
       "stars": 70,
@@ -1085,9 +1034,9 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 112277,
-      "installsAllTime": 2588,
-      "installsCurrent": 2508,
+      "downloads": 112299,
+      "installsAllTime": 2589,
+      "installsCurrent": 2509,
       "stars": 257,
       "versions": 1
     },
@@ -1113,9 +1062,9 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 41165,
-      "installsAllTime": 1437,
-      "installsCurrent": 1395,
+      "downloads": 41178,
+      "installsAllTime": 1438,
+      "installsCurrent": 1396,
       "stars": 29,
       "versions": 1
     },
@@ -1141,7 +1090,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 45407,
+      "downloads": 45414,
       "installsAllTime": 1534,
       "installsCurrent": 1492,
       "stars": 68,
@@ -1169,7 +1118,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 26715,
+      "downloads": 26716,
       "installsAllTime": 1258,
       "installsCurrent": 1217,
       "stars": 26,
@@ -1197,7 +1146,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 22560,
+      "downloads": 22565,
       "installsAllTime": 1251,
       "installsCurrent": 1218,
       "stars": 30,
@@ -1225,7 +1174,7 @@
     },
     "stats": {
       "comments": 12,
-      "downloads": 47498,
+      "downloads": 47509,
       "installsAllTime": 1429,
       "installsCurrent": 1385,
       "stars": 156,
@@ -1250,9 +1199,9 @@
     },
     "stats": {
       "comments": 4,
-      "downloads": 30080,
-      "installsAllTime": 1335,
-      "installsCurrent": 1295,
+      "downloads": 30083,
+      "installsAllTime": 1336,
+      "installsCurrent": 1296,
       "stars": 82,
       "versions": 1
     },
@@ -1280,7 +1229,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 24352,
+      "downloads": 24354,
       "installsAllTime": 1121,
       "installsCurrent": 1091,
       "stars": 37,
@@ -1305,7 +1254,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 28897,
+      "downloads": 28904,
       "installsAllTime": 1399,
       "installsCurrent": 1349,
       "stars": 43,
@@ -1336,7 +1285,7 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 18376,
+      "downloads": 18377,
       "installsAllTime": 1214,
       "installsCurrent": 1176,
       "stars": 7,
@@ -1364,7 +1313,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 25656,
+      "downloads": 25659,
       "installsAllTime": 1183,
       "installsCurrent": 1145,
       "stars": 52,
