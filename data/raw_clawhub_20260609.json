@@ -1,236 +1,385 @@
 [
   {
-    "slug": "hackrf-sdr",
-    "displayName": "Hackrf Sdr",
-    "summary": "Use HackRF One SDR for frequency scanning, IQ capture, signal analysis, waterfall generation, and demodulation. Use when the user wants to scan radio frequen...",
-    "tags": {
-      "latest": "2.0.1"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 51,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 4
-    },
-    "createdAt": 1780909649442,
-    "updatedAt": 1780979190311,
-    "latestVersion": {
-      "version": "2.0.1",
-      "createdAt": 1780979190311,
-      "changelog": "IQ mode: high-resolution waterfall via hackrf_transfer + FFT spectrogram (~5 kHz res, no artifacts); sweep mode preserved as quick preview; auto-selects sample rate based on bandwidth; auto-cleanup of temp IQ files; fixed color scale (noise=blue, signals=yellow/red); signal SNR reporting",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "whatsapp-messaging",
-    "displayName": "WhatsApp",
-    "summary": "Send WhatsApp messages, manage templates, handle media, and automate WhatsApp Business messaging workflows via the WhatsApp Business API. Use this skill when...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780978419634,
-    "updatedAt": 1780978419634,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780978419634,
-      "changelog": "Initial release of WhatsApp messaging automation using the WhatsApp Business API via ClawLink.\n\n- Send WhatsApp messages, media, and templates using the WhatsApp Business API.\n- Manage message templates, media uploads, and business profile information.\n- Automate connection and credential flow securely with ClawLink; no manual API configuration required.\n- Includes tools to list phone numbers, manage message templates, and handle interactive messages.\n- Enforces explicit user confirmation for message-sending actions to ensure security.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "webex",
-    "displayName": "Webex",
-    "summary": "Webex API integration with managed OAuth. Send messages, manage rooms and teams, list memberships, handle webhooks, manage people and team memberships. Use t...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780978409090,
-    "updatedAt": 1780978409090,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780978409090,
-      "changelog": "- Initial release of Webex API integration.\n- Supports sending messages, managing rooms, teams, memberships, webhooks, and people via hosted OAuth (no API key needed).\n- Includes guided setup, quick start tool references, and troubleshooting information.\n- Read, write, and delete operations covered for messaging, rooms, teams, and webhooks.\n- Managed through ClawLink integration hub for easy account connection and authentication.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "wakatime",
-    "displayName": "WakaTime",
-    "summary": "WakaTime API integration with managed OAuth. Retrieve coding statistics, track developer productivity, analyze programming languages and editor usage, view d...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780978398762,
-    "updatedAt": 1780978398762,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780978398762,
-      "changelog": "WakaTime skill initial release – integrates WakaTime API with managed OAuth for seamless coding activity insights.\n\n- View coding stats, language breakdowns, project time, and daily activity directly from chat.\n- No API keys needed: connect your WakaTime account via ClawLink’s hosted OAuth flow.\n- Supports user, stats, summaries, project, goal, insight, leaderboard, and reference operations (all read-only).\n- Includes easy setup instructions, tool references, error handling, and troubleshooting tips.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "tally-forms",
-    "displayName": "Tally",
-    "summary": "Manage Tally forms, submissions, respondents, fields, and form workflow data via the Tally API. Use this skill when users want to list forms, inspect submiss...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780978389886,
-    "updatedAt": 1780978389886,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780978389886,
-      "changelog": "- Initial release of the tally-forms skill.\n- Manage Tally forms, submissions, respondents, fields, and form workflow data directly via chat using the Tally API.\n- Full setup and authentication handled via ClawLink—no manual Tally API token required.\n- Supports listing, creating, updating, and deleting forms and submissions.\n- Includes tools for managing fields, respondents, notifications, and workflow settings.\n- Designed for secure, account-scoped access with user confirmation required for write operations.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "stack-exchange",
-    "displayName": "Stack Exchange",
-    "summary": "Stack Exchange API integration with managed OAuth for Q&A knowledge automation. Search questions, retrieve answers, browse tags, manage user profiles, track...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780978380068,
-    "updatedAt": 1780978380068,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780978380068,
-      "changelog": "Stack Exchange API skill v1.0.0 – initial release:\n\n- Integrates Stack Exchange API with managed OAuth via ClawLink.\n- Search, retrieve, and analyze questions, answers, comments, tags, and user activity across all Stack Exchange sites.\n- Supports browsing tags, tracking user reputation, listing collectives, and analyzing community patterns.\n- All operations are read-only for questions, answers, posts, comments, badges, tags, user profiles, and collectives.\n- No API keys required; authentication is handled via the ClawLink dashboard.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "pricecompare",
-    "displayName": "淘宝/京东/拼多多优惠查询、产品比价",
-    "summary": "淘宝/京东/拼多多优惠查询、产品比价。支持：1. 解析京东/淘宝/拼多多分享口令和链接；2. 商品搜索（京东/淘宝/拼多多）；3. 链接转链获取优惠链接；4. 多平台价格对比。帮助用户找到最优惠的价格，通过优惠券和折扣节省购物开支。",
-    "tags": {
-      "latest": "1.2.1",
-      "latest=1.0.2": "1.0.2"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 417,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 5
-    },
-    "createdAt": 1776391799677,
-    "updatedAt": 1780978053371,
-    "latestVersion": {
-      "version": "1.2.1",
-      "createdAt": 1780978053371,
-      "changelog": "- 修复拼多多搜索 page_size 最小限制，将 DEFAULT_SEARCH_PAGE_SIZE 从 5 调整为 10\n- 新增测试文件 test_skill.py 及测试结果输出 test_result.txt",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "ai-cgo",
-    "displayName": "AI Chief Growth Officer",
-    "summary": "AI Chief Growth Officer Skill - AI驱动的企业增长操作系统。作为增长决策系统+AI工作流编排器+自动优化引擎运行。当用户需要以下场景时触发：(1) 分析业务增长瓶颈并制定AI增长策略 (2) 设计AI驱动的工作流和自动化增长系统 (3) 用AI重构营销、销售、转化流程 (4) 建立...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780977887737,
-    "updatedAt": 1780977887737,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780977887737,
-      "changelog": "- Initial release of the \"AI CGO (Chief Growth Officer)\" skill: an AI-driven business growth operating system.\n- Provides structured, workflow-based responses for diagnosing growth bottlenecks and designing AI-powered strategies.\n- Output includes mandatory sections: Growth Diagnosis, Opportunity, Workflow Design, Automation, KPI System, and Experimentation Loop.\n- Focuses on automation, business impact, and actionable system design—avoids generic advice.\n- Suitable for scenarios involving AI-driven growth, marketing, sales, conversion, and workflow optimization.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "cb-b2b-sales-enablement-framework",
-    "displayName": "Cb B2b Sales Enablement Framework Publish",
-    "summary": "A practical framework for building overseas B2B sales narratives, buyer maps, objection handling, collateral, and market-specific sales motions.",
+    "slug": "oo-platerecognizer",
+    "displayName": "Plate Recognizer",
+    "summary": "Plate Recognizer (platerecognizer.com). Use this skill for ANY Plate Recognizer request — searching and reading data. Whenever a task involves Plate Recogniz...",
     "tags": {
       "latest": "1.0.1"
     },
     "stats": {
       "comments": 0,
-      "downloads": 163,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
+      "downloads": 88,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
       "stars": 0,
       "versions": 2
     },
-    "createdAt": 1777094065269,
-    "updatedAt": 1780977730019,
+    "createdAt": 1780497114658,
+    "updatedAt": 1780999806723,
     "latestVersion": {
       "version": "1.0.1",
-      "createdAt": 1780977730019,
-      "changelog": "- Initial public release of the International B2B Sales Enablement Framework.\n- Provides structured frameworks, templates, checklists, and risk reminders for overseas B2B sales planning.\n- Includes output modules for buyer mapping, localized value propositions, objection handling, sales collateral, pilot contract pathways, and sales manager coaching.\n- Designed for B2B founders, sales leaders, export teams, and go-to-market operators planning cross-border sales.\n- Returns responses in a standardized format with input summary, opportunity analysis, frameworks, adaptation notes, validation tasks, and actionable next steps.\n- Purely descriptive; does not execute code or access external systems.",
+      "createdAt": 1780999806723,
+      "changelog": "- Provides OOMOL-managed access to Plate Recognizer through the `platerecognizer` connector and `oo` CLI.\n- Reads license plates from a single image using Plate Recognizer Snapshot Cloud with normalized detection output.\n- Retrieves current-month Snapshot Cloud usage statistics and reset information.\n- Uses live connector schemas before execution so payloads match the authoritative action contract.\n- Includes setup and recovery guidance for CLI auth, Plate Recognizer connection issues, expired credentials, and billing errors.\n\nSource: `oomol-lab/skills@146ef20`",
       "license": null
     },
     "metadata": null
   },
   {
-    "slug": "hydra-uandai",
-    "displayName": "Hydra Uandai",
-    "summary": "Hydra/Uandai platform — configure API access, package OpenClaw workspace zip, upload agents, list subscriptions, invoke runs.",
+    "slug": "oo-pdfmonkey",
+    "displayName": "PDFMonkey",
+    "summary": "PDFMonkey (pdfmonkey.io). Use this skill for ANY PDFMonkey request — reading, creating, and updating data. Whenever a task involves PDFMonkey, use this skill...",
     "tags": {
       "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 88,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780497112198,
+    "updatedAt": 1780999803175,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1780999803175,
+      "changelog": "- Operates PDFMonkey through the OOMOL-connected `oo` CLI connector.\n- Supports creating documents, including optional immediate generation via pending status.\n- Retrieves current account details, full documents, lightweight document cards, and document templates.\n- Lists document cards with filters for template, status, workspace, update time, and search text.\n- Lists template cards by workspace with folder, pagination, and sorting options.\n- Documents safety guidance for read, write, and destructive actions, plus first-time setup recovery steps.\n\nSource: `oomol-lab/skills@146ef20`",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "oo-optimoroute",
+    "displayName": "OptimoRoute",
+    "summary": "OptimoRoute (optimoroute.com). Use this skill for ANY OptimoRoute request — reading, creating, updating, and deleting data. Whenever a task involves OptimoRo...",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 89,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780490533901,
+    "updatedAt": 1780999799870,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1780999799870,
+      "changelog": "- Provides OOMOL-powered access to OptimoRoute through the `oo` CLI with server-side credential handling.\n- Supports creating, updating, merging, or syncing OptimoRoute orders in bulk.\n- Retrieves OptimoRoute orders by `orderNo` or `id`.\n- Deletes OptimoRoute orders by `orderNo` or `id` with destructive-action safeguards.\n- Instructs agents to inspect live action schemas before running connector payloads.\n\nSource: `oomol-lab/skills@146ef20`",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "oo-oksign",
+    "displayName": "OKSign",
+    "summary": "OKSign (oksign.be). Use this skill for ANY OKSign request — searching and reading data. Whenever a task involves OKSign, use this skill instead of calling th...",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 85,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780490534549,
+    "updatedAt": 1780999796932,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1780999796932,
+      "changelog": "- Operates OKSign through an OOMOL-connected account using the `oo` CLI and server-side credential injection.\n- Provides read-only access to account credits, expiry, and storage details.\n- Retrieves signed document metadata and resolves linked source/signed document identifiers.\n- Lists active OKSign documents and configured account users.\n- Includes schema-first action guidance plus auth, connection, and billing recovery steps.\n\nSource: `oomol-lab/skills@146ef20`",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "oo-neverbounce",
+    "displayName": "NeverBounce",
+    "summary": "NeverBounce (neverbounce.com). Use this skill for ANY NeverBounce request — reading, creating, and updating data. Whenever a task involves NeverBounce, use t...",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 93,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780497138781,
+    "updatedAt": 1780999793779,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1780999793779,
+      "changelog": "- Operates NeverBounce through the OOMOL `oo` connector with server-side credential handling.\n- Supports single email verification via `single_check`.\n- Manages bulk verification workflows: create, parse, start, monitor, and retrieve job results.\n- Downloads bulk job results as CSV with optional filtering and extra columns.\n- Retrieves account credit summaries and bulk job counters.\n- Documents safe execution rules, including confirmation before write actions.\n\nSource: `oomol-lab/skills@146ef20`",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "oo-mixpanel",
+    "displayName": "Mixpanel",
+    "summary": "Mixpanel (mixpanel.com). Use this skill for ANY Mixpanel request — searching and reading data. Whenever a task involves Mixpanel, use this skill instead of c...",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 99,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780497166703,
+    "updatedAt": 1780999790715,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1780999790715,
+      "changelog": "- Provides a Mixpanel skill that routes analytics tasks through the OOMOL `mixpanel` connector and `oo` CLI.\n- Supports reading raw event exports, top events, saved reports, funnels, cohorts, profile queries, and profile event activity.\n- Includes report queries for segmentation, retention, frequency, numeric averages, numeric sums, and saved funnels.\n- Documents the schema-first workflow for inspecting each action contract before running JSON payloads.\n- Clarifies setup and recovery steps for missing CLI, auth, Mixpanel connection, credential, and billing errors.\n\nSource: `oomol-lab/skills@146ef20`",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "oo-manus",
+    "displayName": "Manus",
+    "summary": "Manus (manus.im). Use this skill for ANY Manus request — reading, creating, updating, and deleting data. Whenever a task involves Manus, use this skill inste...",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 85,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780571237873,
+    "updatedAt": 1780999787482,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1780999787482,
+      "changelog": "- Provides OOMOL-backed access to Manus through the `oo` CLI without exposing raw credentials.\n- Supports creating, listing, inspecting, updating, stopping, and deleting Manus tasks.\n- Includes project, custom agent, connector, skill, browser client, and task-message discovery actions.\n- Handles asynchronous task workflows with follow-up messages and pending action confirmations.\n- Documents safety expectations for read, write, and destructive Manus operations.\n\nSource: `oomol-lab/skills@146ef20`",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "oo-loomio",
+    "displayName": "Loomio",
+    "summary": "Loomio (loomio.com). Use this skill for ANY Loomio request — searching and reading data. Whenever a task involves Loomio, use this skill instead of calling t...",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 97,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780490569211,
+    "updatedAt": 1780999784146,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1780999784146,
+      "changelog": "- Provides Loomio access through an OOMOL-connected account using the `oo` CLI.\n- Supports read-only workflows for searching and reading Loomio data without handling raw API tokens.\n- Includes actions to get a single poll by numeric ID or poll key.\n- Lists polls within a Loomio group with status filtering and offset pagination.\n- Documents schema-first action usage plus auth, connection, and billing fallback guidance.\n\nSource: `oomol-lab/skills@146ef20`",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "oo-lexoffice",
+    "displayName": "lexoffice",
+    "summary": "lexoffice (office.lexware.de). Use this skill for ANY lexoffice request — reading, creating, and updating data. Whenever a task involves lexoffice, use this...",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 88,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780497113019,
+    "updatedAt": 1780999781228,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1780999781228,
+      "changelog": "- Operates lexoffice through the OOMOL-connected `lexoffice` connector via the `oo` CLI.\n- Supports profile and organization metadata lookup for the active lexoffice connection.\n- Lists and retrieves articles, contacts, and voucher metadata with supported filters and pagination.\n- Creates contacts and articles with schema-driven payloads for company/person and NET/GROSS pricing workflows.\n- Updates articles and contacts using the latest optimistic-locking version, with confirmation required for write actions.\n\nSource: `oomol-lab/skills@146ef20`",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "oo-klangio",
+    "displayName": "Klangio",
+    "summary": "Klangio (klang.io). Use this skill for ANY Klangio request — reading, creating, and updating data. Whenever a task involves Klangio, use this skill instead o...",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 87,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780497121559,
+    "updatedAt": 1780999778062,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1780999778062,
+      "changelog": "- Provides OOMOL-connected access to Klangio audio analysis and music transcription workflows through the `oo` CLI.\n- Creates jobs for transcription, beat/downbeat tracking, chord recognition, extended chord/key recognition, guitar strum recognition, and source separation.\n- Supports audio inputs from URLs or Base64 files, with live schema inspection before each action.\n- Retrieves job status and downloads generated result files or separated audio stems to OOMOL OSS transit storage.\n- Includes clear safety guidance for write actions and first-time setup fallbacks for CLI, auth, connection, and billing issues.\n\nSource: `oomol-lab/skills@146ef20`",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "oo-ipqualityscore",
+    "displayName": "IPQualityScore",
+    "summary": "IPQualityScore (ipqualityscore.com). Use this skill for ANY IPQualityScore request — searching and reading data. Whenever a task involves IPQualityScore, use...",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 91,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780485241181,
+    "updatedAt": 1780999775020,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1780999775020,
+      "changelog": "- Adds IPQualityScore support through the OOMOL `oo` CLI connector with server-side credential handling.\n- Checks IP reputation for proxy, VPN, Tor, bot, and abuse risk signals.\n- Scans URLs and domains for malware, phishing, and domain risk indicators.\n- Validates email addresses for deliverability and abuse risk.\n- Validates phone numbers for carrier, activity, and risk signals.\n\nSource: `oomol-lab/skills@146ef20`",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "oo-hyperbrowser",
+    "displayName": "Hyperbrowser",
+    "summary": "Hyperbrowser (hyperbrowser.ai). Use this skill for ANY Hyperbrowser request — reading, creating, and updating data. Whenever a task involves Hyperbrowser, us...",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 93,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780485240804,
+    "updatedAt": 1780999771799,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1780999771799,
+      "changelog": "- Operates Hyperbrowser through an OOMOL-connected account using the `oo` CLI and server-side credential injection.\n- Supports fetching pages, searching the web, and retrieving structured browser/search results.\n- Provides asynchronous web crawl workflows, including starting crawls and checking crawl status/results.\n- Requires live action schema inspection before building payloads, keeping inputs aligned with the connector contract.\n- Includes safety guidance for read, write, and destructive actions plus fallback setup steps for auth, connection, and billing errors.\n\nSource: `oomol-lab/skills@146ef20`",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "oo-heygen",
+    "displayName": "HeyGen",
+    "summary": "HeyGen (heygen.com). Use this skill for ANY HeyGen request — reading, creating, updating, and deleting data. Whenever a task involves HeyGen, use this skill...",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 97,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780497148218,
+    "updatedAt": 1780999768691,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1780999768691,
+      "changelog": "- Operates HeyGen through an OOMOL-connected account using the `oo` CLI, without exposing raw API tokens.\n- Adds guided schema inspection before each connector call so payloads match the live HeyGen action contract.\n- Supports avatar and template video generation, including asynchronous job creation and status checks.\n- Provides read actions for avatars, voices, assets, folders, templates, videos, quota, account profile, and shareable URLs.\n- Includes asset upload plus guarded deletion actions for assets and videos, with clear write/destructive safety rules.\n\nSource: `oomol-lab/skills@146ef20`",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "oo-groqcloud",
+    "displayName": "GroqCloud",
+    "summary": "GroqCloud (groq.com). Use this skill for ANY GroqCloud request — reading, creating, and updating data. Whenever a task involves GroqCloud, use this skill ins...",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 92,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780485231704,
+    "updatedAt": 1780999765749,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1780999765749,
+      "changelog": "- Adds GroqCloud support through the OOMOL `oo` CLI connector.\n- Supports non-streaming OpenAI-compatible chat completions via `create_chat_completion`.\n- Provides model discovery with `list_models` and metadata lookup with `get_model`.\n- Uses live connector schemas before execution to keep payloads aligned with GroqCloud action contracts.\n- Documents safe execution rules, auth fallback steps, connection setup, and billing-error handling.\n\nSource: `oomol-lab/skills@146ef20`",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "oo-googleads",
+    "displayName": "Google Ads",
+    "summary": "Google Ads (ads.google.com). Use this skill for ANY Google Ads request — reading, creating, updating, and deleting data. Whenever a task involves Google Ads,...",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 101,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780490572158,
+    "updatedAt": 1780999762416,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1780999762416,
+      "changelog": "- Operates Google Ads through the OOMOL `googleads` connector using the `oo` CLI with server-side credential handling.\n- Provides read actions for accessible customers, campaigns, customer lists, and GAQL streaming search results.\n- Supports campaign and ad group creation, updates, and removals through mutate actions.\n- Includes Customer Match workflows for creating CRM-based lists and adding or removing customer identifiers.\n- Documents safety expectations for read, write, and destructive actions, including when to confirm payloads before execution.\n\nSource: `oomol-lab/skills@146ef20`",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "leangedge-change-management",
+    "displayName": "leangedge-change-management",
+    "summary": "系统化管理工厂仓库精益变革，涵盖诊断、利益相关方管理、策略设计、阻力化解、推进及文化固化的全生命周期解决方案。",
+    "tags": {
+      "latest": "1.0.0"
     },
     "stats": {
       "comments": 0,
@@ -238,14 +387,214 @@
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780999760347,
+    "updatedAt": 1780999760347,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780999760347,
+      "changelog": "Initial LeanEdge 5.0 release",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "oo-github",
+    "displayName": "GitHub",
+    "summary": "GitHub (github.com). Use this skill for ANY GitHub request — reading, creating, updating, and deleting data. Whenever a task involves GitHub, use this skill...",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 111,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
       "versions": 2
     },
-    "createdAt": 1780971865670,
-    "updatedAt": 1780977630182,
+    "createdAt": 1780497142791,
+    "updatedAt": 1780999759094,
     "latestVersion": {
       "version": "1.0.1",
-      "createdAt": 1780977630182,
-      "changelog": "- Clarified packaging rules: explicitly exclude hydra-uandai/ from uploaded agent zips.\n- Added instructions: do not include this skill in agent bundles; use only on trainer machine or for local dev.\n- Updated exclusion list and common failure notes to highlight hydra-uandai/ issues.\n- Removed obsolete skill-card.md file.",
+      "createdAt": 1780999759094,
+      "changelog": "- Operates GitHub through the OOMOL-connected `github` connector and `oo` CLI without exposing raw tokens.\n- Supports repository, branch, commit, file, release, workflow, issue, and pull request read operations.\n- Provides write actions for creating issues, comments, pull requests, reviews, commit statuses, file updates, branch merges, and workflow reruns.\n- Includes destructive-action guidance for removals, label clearing, file deletion, and reviewer or assignee changes.\n- Requires live action schema inspection before running connector calls, keeping payloads aligned with current GitHub action contracts.\n\nSource: `oomol-lab/skills@146ef20`",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "oo-gemini",
+    "displayName": "Gemini",
+    "summary": "Gemini (ai.google.dev). Use this skill for ANY Gemini request — searching and reading data. Whenever a task involves Gemini, use this skill instead of callin...",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 101,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780497146899,
+    "updatedAt": 1780999756009,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1780999756009,
+      "changelog": "- Operates Gemini through an OOMOL-connected account using the `oo` CLI and server-side credential injection.\n- Requires live schema inspection before running connector actions, keeping payloads aligned with current Gemini action contracts.\n- Supports content generation, speech audio generation, image generation, embeddings, and token counting.\n- Includes Gemini Veo video workflows: start operations, poll status, and wait for finished videos.\n- Provides model discovery via `list_models` for available Gemini and Veo models.\n- Documents first-time setup and recovery paths for CLI, auth, connection, scope, and billing errors.\n\nSource: `oomol-lab/skills@146ef20`",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "oo-formbricks",
+    "displayName": "Formbricks",
+    "summary": "Formbricks (formbricks.com). Use this skill for ANY Formbricks request — reading, creating, updating, and deleting data. Whenever a task involves Formbricks,...",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 90,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780490556294,
+    "updatedAt": 1780999752893,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1780999752893,
+      "changelog": "- Operates Formbricks through the OOMOL `formbricks` connector using the `oo` CLI.\n- Supports reading account context with `get_me` and retrieving or listing contact attribute keys.\n- Creates Formbricks contacts with workspace-scoped attributes.\n- Manages contact attribute keys, including create, update, and delete actions.\n- Uses live connector schemas before execution and documents safety rules for write and destructive operations.\n\nSource: `oomol-lab/skills@146ef20`",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "oo-fidel-api",
+    "displayName": "Fidel API",
+    "summary": "Fidel API (fidel.uk). Use this skill for ANY Fidel API request — searching and reading data. Whenever a task involves Fidel API, use this skill instead of ca...",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 92,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780485241956,
+    "updatedAt": 1780999749816,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1780999749816,
+      "changelog": "- Provides OOMOL-managed access to Fidel API through the `fidel_api` connector and `oo` CLI.\n- Supports read-only lookup of Fidel brands, cards, and transactions by ID.\n- Lists brands available to the connected API key, plus cards and transactions for a program ID.\n- Requires live action schema inspection before building request payloads.\n- Keeps credentials server-side through the connected OOMOL account, with setup guidance for auth, connection, and billing errors.\n\nSource: `oomol-lab/skills@146ef20`",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "leangedge-carbon-footprint",
+    "displayName": "leangedge-carbon-footprint",
+    "summary": "为制造企业提供覆盖Scope 1/2/3的全链条供应链碳足迹核算，支持ESG合规、碳关税应对及科学减排方案制定。",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780999749195,
+    "updatedAt": 1780999749195,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780999749195,
+      "changelog": "Initial LeanEdge 5.0 release",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "oo-evenium",
+    "displayName": "Evenium",
+    "summary": "Evenium (corp.evenium.com). Use this skill for ANY Evenium request — reading, creating, and updating data. Whenever a task involves Evenium, use this skill i...",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 95,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780485242872,
+    "updatedAt": 1780999746786,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1780999746786,
+      "changelog": "- Enables Evenium operations through an OOMOL-connected account using the `oo` CLI and server-side credential injection.\n- Supports event lookup and browsing with `get_event` and `list_events`, including filters and pagination.\n- Supports guest retrieval and listing with `get_guest`, `list_guests`, attendee filters, expansions, and pagination.\n- Provides RSVP and post-event attendance status actions for individual guests.\n- Documents schema-first execution, JSON payload handling, safety rules for write/destructive actions, and first-time setup troubleshooting.\n\nSource: `oomol-lab/skills@146ef20`",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "oo-elevenlabs",
+    "displayName": "ElevenLabs",
+    "summary": "ElevenLabs (elevenlabs.io). Use this skill for ANY ElevenLabs request — searching and reading data. Whenever a task involves ElevenLabs, use this skill inste...",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 95,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780490549314,
+    "updatedAt": 1780999743476,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1780999743476,
+      "changelog": "- Provides OOMOL-connected access to ElevenLabs through the `oo` CLI without exposing raw API tokens.\n- Lists available voices, voice details, models, user profile, and subscription information.\n- Retrieves generated history items, individual history metadata, and downloadable history audio.\n- Generates text-to-speech audio and uploads binary results to connector transit storage.\n- Documents schema-first action usage, safe read behavior, and setup recovery steps for auth, connection, billing, and CLI issues.\n\nSource: `oomol-lab/skills@146ef20`",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "leangedge-capacity-analyzer",
+    "displayName": "leangedge-capacity-analyzer",
+    "summary": "你是 LeanEdge 产能规划分析官，扎根工厂与仓库一线的 AI 运营实战派专家。你精通产能规划、瓶颈分析、产能提升与投资回报测算，帮助制造企业实现产能可视化、瓶颈精准定位与科学扩容决策。",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1780999741041,
+    "updatedAt": 1780999741041,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1780999741041,
+      "changelog": "Initial LeanEdge 5.0 release",
       "license": null
     },
     "metadata": {
@@ -254,388 +603,26 @@
     }
   },
   {
-    "slug": "health-vault",
-    "displayName": "Health Vault",
-    "summary": "个人健康档案系统：OCR病历录入、身体指标追踪、疾病历程管理、智能保养建议",
-    "tags": {
-      "apple-health": "0.2.0",
-      "chinese": "0.2.0",
-      "health": "0.2.0",
-      "latest": "0.2.0",
-      "medical": "0.2.0",
-      "ocr": "0.2.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780977240570,
-    "updatedAt": 1780977240570,
-    "latestVersion": {
-      "version": "0.2.0",
-      "createdAt": 1780977240570,
-      "changelog": "个人健康档案系统：OCR病历录入、身体指标追踪、疾病历程管理、智能保养建议。支持 Apple Health 数据导入（14项指标时间序列）。",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "crc-monthly-financial-report",
-    "displayName": "Monthly Financial Report",
-    "summary": "从财务部固定格式月度 Excel 底稿生成月度财务报告正文、Markdown 和 Word 文件。Use when: 用户上传月度财报底稿、要求生成月报正文、需要 Word 下载文件、需要复用 Dify 月度财报智能体的 Excel 处理逻辑。NOT for: 非固定模板 Excel、财务审计判断、补造或修改底稿...",
-    "tags": {
-      "docx": "0.1.1",
-      "excel": "0.1.1",
-      "finance": "0.1.1",
-      "latest": "0.1.1",
-      "report": "0.1.1"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 50,
-      "installsAllTime": 1,
-      "installsCurrent": 1,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1780931328485,
-    "updatedAt": 1780977212756,
-    "latestVersion": {
-      "version": "0.1.1",
-      "createdAt": 1780977212756,
-      "changelog": "生成完成后输出 Word 下载链接，并要求回复只展示 Word 下载入口。",
-      "license": null
-    },
-    "metadata": {
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "oo-the-dog-api",
-    "displayName": "The Dog API",
-    "summary": "The Dog API (thedogapi.com). Use this skill for ANY The Dog API request — reading, creating, updating, and deleting data. Whenever a task involves The Dog AP...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780977157228,
-    "updatedAt": 1780977157228,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780977157228,
-      "changelog": "- Initial release of the `oo-the-dog-api` skill for operating The Dog API through OOMOL-connected credentials.\n- Supports breed discovery with list, search, and get actions.\n- Supports dog image lookup and filtered image search.\n- Adds account actions for listing, creating, and deleting favourite dog images.\n- Adds vote management actions for creating, listing, and deleting dog image votes.\n\nSource: `oomol-lab/skills@e3717ff`",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "oo-parsera",
-    "displayName": "Parsera",
-    "summary": "Parsera (parsera.org). Use this skill for ANY Parsera request — searching and reading data. Whenever a task involves Parsera, use this skill instead of calli...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780977149483,
-    "updatedAt": 1780977149483,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780977149483,
-      "changelog": "- Introduces `oo-parsera`, an OOMOL skill for using Parsera to read, parse, and extract web data through the `oo` CLI.\n- Supports structured extraction from webpage URLs using prompts, attributes, or both.\n- Adds clean Markdown extraction for webpage content.\n- Parses structured attributes from raw HTML or text already available to the caller.\n- Lists available Parsera LLM specs and proxy countries for configuring extraction requests.\n\nSource: `oomol-lab/skills@e3717ff`",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "ht-skills",
-    "displayName": "ht-skills",
-    "summary": "管理灏天文库文集和文档，支持新建文集、新建文档、查询文集/文档、更新文档、修改文档归属、管理文档层级、查询个人花园限制与用量；支持文档片段 RAG 检索、图片上传到 COS、图片分组、查询图片列表/详情与图片额度。适用于 OpenClaw 自主写文章并上传、文集创建、文档入库、知识检索、文档移动、插图上传与外链等场景。",
-    "tags": {
-      "latest": "1.0.2"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 606,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 3
-    },
-    "createdAt": 1773804847824,
-    "updatedAt": 1780977144830,
-    "latestVersion": {
-      "version": "1.0.2",
-      "createdAt": 1780977144830,
-      "changelog": "- 新增文档片段检索（RAG）功能，支持通过 `scripts/retrieve_documents.py` 在公开精品文集中检索相关内容片段，提升知识索引能力。\n- 在描述和规范中明确区分个人花园文集与公开精品文集，并提供 [官方文集目录链接](https://aiknowledge.cn/article/66521-%E7%81%8F%E5%A4%A9%E6%96%87%E5%BA%93%E6%96%87%E9%9B%86%E5%AE%8C%E6%95%B4%E7%9B%AE%E5%BD%95%E5%85%AC%E5%BC%80) 用于获取 RAG 检索专用 ID。\n- 更新说明文档，纳入 RAG 检索使用方法、参数说明和智能体执行规范。\n- 补充 RAG 场景说明。",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "oo-the-cat-api",
-    "displayName": "The Cat API",
-    "summary": "The Cat API (thecatapi.com). Use this skill for ANY The Cat API request — searching and reading data. Whenever a task involves The Cat API, use this skill in...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780977143887,
-    "updatedAt": 1780977143887,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780977143887,
-      "changelog": "- Initial 1.0.0 release for operating The Cat API through OOMOL-connected credentials and the `oo` CLI.\n- Adds read-only access to list, search, and fetch cat breed records.\n- Adds image lookup by The Cat API image ID.\n- Adds image search with optional breed, category, type, size, and paging filters.\n- Documents schema inspection and JSON action execution flow for all supported actions.\n\nSource: `oomol-lab/skills@e3717ff`",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "oo-next-dns",
-    "displayName": "NextDNS",
-    "summary": "NextDNS (nextdns.io). Use this skill for ANY NextDNS request — searching and reading data. Whenever a task involves NextDNS, use this skill instead of callin...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780977137781,
-    "updatedAt": 1780977137781,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780977137781,
-      "changelog": "- Adds NextDNS account access through the OOMOL `next_dns` connector using server-side credential injection.\n- Lists available NextDNS profiles and retrieves profile settings and setup details.\n- Fetches DNS query logs for a profile with optional filters.\n- Provides analytics by domain, device, blocking reason, and query status.\n- Includes action references that require live schema inspection before running connector commands.\n\nSource: `oomol-lab/skills@e3717ff`",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "oo-supadata",
-    "displayName": "Supadata",
-    "summary": "Supadata (supadata.ai). Use this skill for ANY Supadata request — searching and reading data. Whenever a task involves Supadata, use this skill instead of ca...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780977131657,
-    "updatedAt": 1780977131657,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780977131657,
-      "changelog": "- Adds Supadata connector support through the `oo` CLI with server-side credential handling via OOMOL.\n- Retrieves Supadata account, organization, plan, and credit usage details.\n- Searches YouTube and fetches video, channel, playlist, and transcript data by URL, ID, or handle.\n- Lists video IDs from YouTube channels and playlists.\n- Extracts Markdown page content and maps links from websites.\n\nSource: `oomol-lab/skills@e3717ff`",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "oo-motion",
-    "displayName": "Motion",
-    "summary": "Motion (usemotion.com). Use this skill for ANY Motion request — reading, creating, updating, and deleting data. Whenever a task involves Motion, use this ski...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780977124207,
-    "updatedAt": 1780977124207,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780977124207,
-      "changelog": "- Adds the `oo-motion` skill for operating Motion through an OOMOL-connected account via the `oo` CLI.\n- Supports 13 Motion actions for tasks, projects, workspaces, schedules, statuses, users, and the current API-key user.\n- Enables task workflows including list, get, create, update, and delete.\n- Enables project workflows including list, get, and create within Motion workspaces.\n- Includes safety guidance for write and destructive actions, plus first-time setup troubleshooting for CLI, auth, connection, and billing issues.\n\nSource: `oomol-lab/skills@e3717ff`",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "oo-linux-do",
-    "displayName": "Linux DO",
-    "summary": "Linux DO (linux.do). Use this skill for ANY Linux DO request — searching and reading data. Whenever a task involves Linux DO, use this skill instead of calli...",
+    "slug": "oo-docparser",
+    "displayName": "Docparser",
+    "summary": "Docparser (docparser.com). Use this skill for ANY Docparser request — reading, creating, and updating data. Whenever a task involves Docparser, use this skil...",
     "tags": {
       "latest": "1.0.1"
     },
     "stats": {
       "comments": 0,
-      "downloads": 81,
+      "downloads": 89,
       "installsAllTime": 1,
-      "installsCurrent": 0,
+      "installsCurrent": 1,
       "stars": 0,
       "versions": 2
     },
-    "createdAt": 1780636412505,
-    "updatedAt": 1780977115854,
+    "createdAt": 1780497105590,
+    "updatedAt": 1780999740352,
     "latestVersion": {
       "version": "1.0.1",
-      "createdAt": 1780977115854,
-      "changelog": "- Provides read-only access to Linux DO public forum data through the `linux_do` OOMOL connector.\n- Adds 13 RSS-backed actions for latest, hot, top, category, tag, topic, user, group, and badge-grant listings.\n- Documents the standard `oo connector schema` and `oo connector run` workflow for each action.\n- Uses server-side OOMOL credentials, so users do not handle raw Linux DO tokens.\n- Calls out operational behavior for private or inaccessible resources, 404 responses, and rate-limit retries.\n\nSource: `oomol-lab/skills@e3717ff`",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "oo-signalbase",
-    "displayName": "Signalbase",
-    "summary": "Signalbase (trysignalbase.com). Use this skill for ANY Signalbase request — searching and reading data. Whenever a task involves Signalbase, use this skill i...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780977107676,
-    "updatedAt": 1780977107676,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780977107676,
-      "changelog": "- Adds Signalbase support through the OOMOL `oo` connector for account-connected data access without handling raw API tokens.\n- Provides read actions for browsing and searching company profiles with pagination, filters, and sorting.\n- Surfaces market signals for acquisitions, funding rounds, hiring activity, and job changes.\n- Includes investor lookup with filters for type, location, ticket size, and sorting.\n- Documents the schema-first workflow for inspecting live action contracts before running connector commands.\n\nSource: `oomol-lab/skills@e3717ff`",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "oo-lob",
-    "displayName": "Lob",
-    "summary": "Lob (lob.com). Use this skill for ANY Lob request — searching and reading data. Whenever a task involves Lob, use this skill instead of calling the API direc...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780977101472,
-    "updatedAt": 1780977101472,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780977101472,
-      "changelog": "- Initial `oo-lob` release for operating Lob through the OOMOL `oo` connector.\n- Supports US address autocomplete from partial address input.\n- Verifies and standardizes single US and international addresses.\n- Adds bulk verification for multiple US or international addresses.\n- Includes action docs with schema inspection and `oo connector run` commands for each workflow.\n\nSource: `oomol-lab/skills@e3717ff`",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "oo-googledrive",
-    "displayName": "Google Drive",
-    "summary": "Google Drive (workspace.google.com). Use this skill for ANY Google Drive request — reading, creating, updating, and deleting data. Whenever a task involves G...",
-    "tags": {
-      "latest": "1.0.2"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 131,
-      "installsAllTime": 2,
-      "installsCurrent": 1,
-      "stars": 0,
-      "versions": 3
-    },
-    "createdAt": 1780497133644,
-    "updatedAt": 1780977096064,
-    "latestVersion": {
-      "version": "1.0.2",
-      "createdAt": 1780977096064,
-      "changelog": "- Provides OOMOL `oo` CLI access to Google Drive through the `googledrive` connector.\n- Supports file workflows including list, get, create, copy, update, delete, export, trash emptying, generated IDs, and label operations.\n- Covers shared drive management: create, list, get, update, hide, unhide, and delete shared drives.\n- Includes collaboration actions for comments, replies, approvals, access proposals, permissions, and revisions.\n- Documents safe usage rules, live schema inspection, JSON execution format, and first-time setup/auth troubleshooting.\n\nSource: `oomol-lab/skills@e3717ff`",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "oo-shipengine",
-    "displayName": "ShipEngine",
-    "summary": "ShipEngine (shipengine.com). Use this skill for ANY ShipEngine request — searching and reading data. Whenever a task involves ShipEngine, use this skill inst...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780977077690,
-    "updatedAt": 1780977077690,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780977077690,
-      "changelog": "- Adds a ShipEngine skill for operating connected ShipEngine accounts through the OOMOL `oo` CLI without handling raw API tokens.\n- Supports shipping rate workflows, including basic estimates, full shipment rate calculation, and lookup of previously queried rates.\n- Lists connected carrier accounts available to the ShipEngine account.\n- Parses unstructured address text into structured ShipEngine address data.\n- Validates one or more mailing addresses and returns deliverability details.\n\nSource: `oomol-lab/skills@e3717ff`",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "oo-keyword",
-    "displayName": "Keyword.com",
-    "summary": "Keyword.com (keyword.com). Use this skill for ANY Keyword.com request — searching and reading data. Whenever a task involves Keyword.com, use this skill inst...",
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1780977071217,
-    "updatedAt": 1780977071217,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1780977071217,
-      "changelog": "- Initial `oo-keyword` skill for operating Keyword.com through an OOMOL-connected account.\n- Supports reading the current Keyword.com user profile tied to the API token.\n- Lists active projects and groups, and fetches a specific project or group by name.\n- Lists tracked keywords with ranking data, or retrieves one keyword by project and keyword ID.\n- Lists Google regions tracked by a Keyword.com project or group.\n- Uses live `oo connector schema` checks before running actions so payloads match the current connector contract.\n\nSource: `oomol-lab/skills@e3717ff`",
+      "createdAt": 1780999740352,
+      "changelog": "- Operates Docparser through the OOMOL `oo` CLI connector with server-side credential handling.\n- Provides document import from public URLs and base64 uploads into Docparser parsers.\n- Retrieves parser lists, parser models, document statuses, and parsed document results.\n- Supports bulk result retrieval with filtering, pagination, queue inclusion, and sorting.\n- Can schedule documents for re-parsing or integration queue processing.\n\nSource: `oomol-lab/skills@146ef20`",
       "license": null
     },
     "metadata": null
@@ -649,7 +636,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 84456,
+      "downloads": 84471,
       "installsAllTime": 2783,
       "installsCurrent": 2655,
       "stars": 55,
@@ -677,9 +664,9 @@
     },
     "stats": {
       "comments": 36,
-      "downloads": 185138,
-      "installsAllTime": 3618,
-      "installsCurrent": 3486,
+      "downloads": 185198,
+      "installsAllTime": 3622,
+      "installsCurrent": 3490,
       "stars": 917,
       "versions": 1
     },
@@ -705,9 +692,9 @@
     },
     "stats": {
       "comments": 7,
-      "downloads": 189126,
-      "installsAllTime": 4428,
-      "installsCurrent": 4292,
+      "downloads": 189191,
+      "installsAllTime": 4433,
+      "installsCurrent": 4297,
       "stars": 630,
       "versions": 1
     },
@@ -730,9 +717,9 @@
     },
     "stats": {
       "comments": 6,
-      "downloads": 159969,
-      "installsAllTime": 3832,
-      "installsCurrent": 3706,
+      "downloads": 160028,
+      "installsAllTime": 3837,
+      "installsCurrent": 3711,
       "stars": 412,
       "versions": 1
     },
@@ -758,9 +745,9 @@
     },
     "stats": {
       "comments": 2,
-      "downloads": 84036,
-      "installsAllTime": 2102,
-      "installsCurrent": 2025,
+      "downloads": 84064,
+      "installsAllTime": 2104,
+      "installsCurrent": 2027,
       "stars": 321,
       "versions": 1
     },
@@ -786,9 +773,9 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 90846,
-      "installsAllTime": 2445,
-      "installsCurrent": 2369,
+      "downloads": 90914,
+      "installsAllTime": 2448,
+      "installsCurrent": 2372,
       "stars": 305,
       "versions": 1
     },
@@ -811,9 +798,9 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 92005,
-      "installsAllTime": 2395,
-      "installsCurrent": 2325,
+      "downloads": 92045,
+      "installsAllTime": 2399,
+      "installsCurrent": 2329,
       "stars": 257,
       "versions": 1
     },
@@ -839,9 +826,9 @@
     },
     "stats": {
       "comments": 9,
-      "downloads": 102212,
-      "installsAllTime": 2563,
-      "installsCurrent": 2470,
+      "downloads": 102256,
+      "installsAllTime": 2567,
+      "installsCurrent": 2474,
       "stars": 421,
       "versions": 1
     },
@@ -867,9 +854,9 @@
     },
     "stats": {
       "comments": 5,
-      "downloads": 34186,
-      "installsAllTime": 1455,
-      "installsCurrent": 1407,
+      "downloads": 34198,
+      "installsAllTime": 1456,
+      "installsCurrent": 1408,
       "stars": 55,
       "versions": 1
     },
@@ -895,9 +882,9 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 66876,
-      "installsAllTime": 2024,
-      "installsCurrent": 1956,
+      "downloads": 66902,
+      "installsAllTime": 2025,
+      "installsCurrent": 1957,
       "stars": 192,
       "versions": 1
     },
@@ -923,9 +910,9 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 102688,
-      "installsAllTime": 1875,
-      "installsCurrent": 1811,
+      "downloads": 102731,
+      "installsAllTime": 1876,
+      "installsCurrent": 1812,
       "stars": 402,
       "versions": 2
     },
@@ -948,9 +935,9 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 37876,
-      "installsAllTime": 1575,
-      "installsCurrent": 1525,
+      "downloads": 37888,
+      "installsAllTime": 1578,
+      "installsCurrent": 1528,
       "stars": 113,
       "versions": 1
     },
@@ -978,10 +965,10 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 51851,
+      "downloads": 51882,
       "installsAllTime": 1589,
       "installsCurrent": 1537,
-      "stars": 126,
+      "stars": 127,
       "versions": 1
     },
     "createdAt": 1767545391700,
@@ -1006,7 +993,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 42710,
+      "downloads": 42733,
       "installsAllTime": 1492,
       "installsCurrent": 1435,
       "stars": 70,
@@ -1034,9 +1021,9 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 112299,
-      "installsAllTime": 2589,
-      "installsCurrent": 2509,
+      "downloads": 112339,
+      "installsAllTime": 2593,
+      "installsCurrent": 2513,
       "stars": 257,
       "versions": 1
     },
@@ -1062,9 +1049,9 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 41178,
-      "installsAllTime": 1438,
-      "installsCurrent": 1396,
+      "downloads": 41201,
+      "installsAllTime": 1439,
+      "installsCurrent": 1397,
       "stars": 29,
       "versions": 1
     },
@@ -1090,7 +1077,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 45414,
+      "downloads": 45434,
       "installsAllTime": 1534,
       "installsCurrent": 1492,
       "stars": 68,
@@ -1118,9 +1105,9 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 26716,
-      "installsAllTime": 1258,
-      "installsCurrent": 1217,
+      "downloads": 26727,
+      "installsAllTime": 1259,
+      "installsCurrent": 1218,
       "stars": 26,
       "versions": 1
     },
@@ -1146,7 +1133,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 22565,
+      "downloads": 22574,
       "installsAllTime": 1251,
       "installsCurrent": 1218,
       "stars": 30,
@@ -1174,9 +1161,9 @@
     },
     "stats": {
       "comments": 12,
-      "downloads": 47509,
-      "installsAllTime": 1429,
-      "installsCurrent": 1385,
+      "downloads": 47530,
+      "installsAllTime": 1430,
+      "installsCurrent": 1386,
       "stars": 156,
       "versions": 1
     },
@@ -1199,7 +1186,7 @@
     },
     "stats": {
       "comments": 4,
-      "downloads": 30083,
+      "downloads": 30099,
       "installsAllTime": 1336,
       "installsCurrent": 1296,
       "stars": 82,
@@ -1229,7 +1216,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 24354,
+      "downloads": 24364,
       "installsAllTime": 1121,
       "installsCurrent": 1091,
       "stars": 37,
@@ -1254,9 +1241,9 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 28904,
-      "installsAllTime": 1399,
-      "installsCurrent": 1349,
+      "downloads": 28922,
+      "installsAllTime": 1400,
+      "installsCurrent": 1350,
       "stars": 43,
       "versions": 1
     },
@@ -1285,7 +1272,7 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 18377,
+      "downloads": 18387,
       "installsAllTime": 1214,
       "installsCurrent": 1176,
       "stars": 7,
@@ -1313,7 +1300,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 25659,
+      "downloads": 25673,
       "installsAllTime": 1183,
       "installsCurrent": 1145,
       "stars": 52,
