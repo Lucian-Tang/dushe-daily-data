@@ -1,0 +1,101 @@
+[
+  {
+    "title": "How To Make Your Design System AI-Ready",
+    "content": "AI生成的原型经常因为设计系统中的小不一致而翻车——未文档化的决策、硬编码值、让AI自己猜mock-up的含义。本文从Atlassian的实践出发，提出三层方案：结构化Markdown spec文件 → token层 → 自动化审计脚本。FigmaLint插件可以检测token绑定、缺失交互状态和硬编码值。核心观点：设计决策就是基础设施，每次决策都必须写入AI可消费的spec。",
+    "quote": "设计系统不干净就别怪AI瞎画，你的债务它全给你翻出来",
+    "url": "https://www.smashingmagazine.com/2026/06/how-make-design-system-ai-ready/",
+    "source": "Smashing Magazine",
+    "published": "2026-06-03",
+    "uid": "0b1ca13870d0d47f7b342395bf47192c"
+  },
+  {
+    "title": "A Sharp Tool Can Still Ruin the Cut",
+    "content": "一位Shopify设计师自述AI工具悄然改变设计思维的过程：用Perplexity替代Google搜索后，不再有漫游式的发现，只剩下高效提取。效率提高的同时，创意路径变窄了。更危险的错觉是——能改代码不等于理解代码。他在生产环境改一个简单的spacing问题，才发现背后是共享组件的深层不一致。AI让速度感觉像理解，但设计几乎从不受益于直线。",
+    "quote": "AI让你10倍速冲进死胡同，还觉得自己起飞了",
+    "url": "https://www.doc.cc/articles/a-sharp-tool-can-still-ruin-the-cut",
+    "source": "DOC",
+    "published": "2026-06-08",
+    "uid": "362af6c130636e7cf9868b391c99ee73"
+  },
+  {
+    "title": "Building Self-Correcting Color Systems With contrast-color()",
+    "content": "2025年仍有70%的网站通不过WCAG对比度检查，五年都没改善。contrast-color()这个CSS新函数终于把对比度计算交给浏览器——一行声明，浏览器在样式计算阶段自动输出黑或白。但APCA的前途仍然悬而未决——从WCAG 3草案中被移除，标准可能要等到2030年。本文深度解析Level 5与Level 6的spec分裂，以及为什么要预留UA-defined的算法切换能力。",
+    "quote": "70%的网站对比度不及格，五年了，你们对得起用户的眼睛吗",
+    "url": "https://www.smashingmagazine.com/2026/05/building-self-correcting-color-systems-contrast-color/",
+    "source": "Smashing Magazine",
+    "published": "2026-05-28",
+    "uid": "2bcb0ca513de818a3f0868a16bf9aa34"
+  },
+  {
+    "title": "Designing how designers master AI",
+    "content": "Salesforce Service UX团队46名设计师跨越美印以三地，用了六个月做了一次实验：不是培训AI工具的正确用法，而是让每位设计师把AI掰成自己的思维形状。从NotebookLM的'智能笔记本'到个人化工作流，结论出人意料——掌握AI工具不是学会标准答案，而是一条个人化、分叉、永无止境的道路。文章是一份设计案例研究，而非回顾总结。",
+    "quote": "别教设计师'正确使用AI'了，每个人玩出花来才是真掌握",
+    "url": "https://uxdesign.cc/designing-how-designers-master-ai-642d8751d945",
+    "source": "UX Collective",
+    "published": "2026-05-23",
+    "uid": "f84d1c6708bb0ae1035304634da74977"
+  },
+  {
+    "title": "What the design-to-code loop unlocks",
+    "content": "Figma设计总监Gui Seiz和AI工程师Alex Kern深度对话：AI逆转了'设计探索便宜、代码昂贵'的旧逻辑。现在可以直接构建功能性wireframe并在行为层面迭代。代码↔画布双向流动让设计师不需要内部设计系统权限就能把活产品拉入Figma编辑。而真正拉开差距的，不是工具本身，是好奇心——好奇的设计师才会胜出。",
+    "quote": "设计师不会代码的借口被AI烧了，好奇心的差距才是真鸿沟",
+    "url": "https://www.figma.com/blog/what-the-design-to-code-loop-unlocks/",
+    "source": "Figma Blog",
+    "published": "2026-05-13",
+    "uid": "04d197ed52801251283e6ea04a6f916e"
+  },
+  {
+    "title": "The Parts of Your System You Never Wrote Down",
+    "content": "设计系统中那些从未文档化的决策——比如确认对话框的焦点应该放在取消键而非确认键——正成为AI Agent的最大陷阱。Agent不会因为缺失信息而停下来问，它会用互联网上最常见的模式填补空白，然后产出看起来完全一样的代码。你三年前因为看用户误删数据后呆坐屏幕前而做的交互决策，Agent一秒就给你改回去了。",
+    "quote": "Agent替你填的设计空白，将来都会变成用户的眼泪",
+    "url": "https://blog.murphytrueman.com/the-parts-of-your-system-you-never-wrote-down",
+    "source": "Murphy Trueman",
+    "published": "2026-06-05",
+    "uid": "872d536fea7841beaa8f7d777f1d06b2"
+  },
+  {
+    "title": "Our CSS Isn't Opinionated Enough",
+    "content": "全用class写CSS的'最佳实践'正在制造大量语义灾难：div加上.btn类看起来像个按钮，但没有键盘焦点、没有屏幕阅读器语义、语音控制也认不出它。文章呼吁回归基于语义和role的样式策略——与其用class刷漆，不如直接针对标签和ARIA属性写样式。意见不够强硬的CSS让无数可访问性问题被悄悄藏进了看似正确的代码里。",
+    "quote": "用class给div刷成按钮的样子，骗得过眼睛骗不过残疾人",
+    "url": "https://www.craigabbott.co.uk/blog/2026/our-css-isnt-opinionated-enough",
+    "source": "Craig Abbott",
+    "published": "2026-06-05",
+    "uid": "a9bfd452cf7667232404b16feaeec50f"
+  },
+  {
+    "title": "Google Lighthouse Has A New Agentic Browsing Category",
+    "content": "Lighthouse 13.3新增Agentic Browsing类别，专门检查AI Agent能否顺畅浏览你的网站。四项审计：accessibility tree结构是否完整、内容是否布局偏移、WebMCP实现是否正确、llms.txt是否符合规范。有趣的是，如果你没做任何AI特性集成反而能得满分。Google同步发布了agent-friendly网站构建指南，AI Agent同时通过截图、HTML和accessibility tree三种方式消费页面。",
+    "quote": "你的网站对人类友好不够了，得让AI Agent也满意才行",
+    "url": "https://www.debugbear.com/blog/lighthouse-agentic-browsing",
+    "source": "DebugBear",
+    "published": "2026-05-13",
+    "uid": "c0b29307488671246ee2e931be5ccf03"
+  },
+  {
+    "title": "The Human Layer in Agentic Design Systems",
+    "content": "唯一设计师在Enara公司独自搭建agentic design system的真实记录。一位开发发现警告信息的颜色对比度不对劲，她没有绕过系统直接硬编码，而是追溯到了primitive层的token错误——一个设计师本人之前种下的坑。修复只需一小时，但过程中的信任链令人深思：开发信任系统，系统追溯错误，错误指向人。Agentic design system的核心不是技术，是问责。",
+    "quote": "Agent把锅精准甩回设计师脸上，这大概是最好的设计治理",
+    "url": "https://www.designsystemscollective.com/the-human-layer-in-agentic-design-systems-d8f54d1bb2e5",
+    "source": "Design Systems Collective",
+    "published": "2026-04-20",
+    "uid": "f85f6ce27f956be9e96a8ab61a7482e5"
+  },
+  {
+    "title": "DESIGN.md Explained – The Format Reshaping How AI Builds UI",
+    "content": "Google正式开源DESIGN.md格式规范。这个原本为Stitch设计工具打造的标准，让设计系统变成agent-native且可互操作。文件分两层：顶部的机器可读YAML design tokens（色值、字号、间距），底部的Markdown人类可读设计理由。有VC甚至预测设计师将成为'AI第一牺牲品'——大公司不再回填设计岗，而是用集中式设计系统喂养AI。",
+    "quote": "设计师失业的速度可能比他们学完Figma MCP还快",
+    "url": "https://departmentofproduct.substack.com/p/designmd-explained-the-format-reshaping",
+    "source": "Department of Product",
+    "published": "2026-05-13",
+    "uid": "0318c1e6adfd4f79b19c63a0532398ae"
+  },
+  {
+    "title": "Why User Panels Fail",
+    "content": "NNGroup总结了用户研究panel失败的三种模式：静态数据库——面板创建后无人维护，数据逐渐过时；抽样偏差——加入panel的用户天然对公司有好感，反馈变成回音壁；偏离商业现实——公司已进入新市场，panel还是旧用户群。三种失败都不是突发的，而是缓慢累积直到整个研究体系信用崩塌。健康的panel需要专人治理和定期审计。",
+    "quote": "用户panel不维护就是回音壁，你还以为是洞察",
+    "url": "https://www.nngroup.com/articles/user-panels-fail/",
+    "source": "NNGroup",
+    "published": "2026-05-13",
+    "uid": "fdc8027798f904c96959a78425e53f40"
+  }
+]
