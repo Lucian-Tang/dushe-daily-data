@@ -118,10 +118,10 @@ python3 "$SCRIPT_DIR/generate_weekly_clawhub.py" --date "$DATE_STR" 2>&1 | tee -
 log "[copy] 复制榜单数据 data/ → root（safe_cp 保护）..."
 cd "$WORKSPACE"
 for prefix in github_trending_ clawhub_trending_ ai_models_classified_ ai_models_daily_ ai_models_weekly_ weekly_github_ weekly_clawhub_; do
-    for f in "$WORKSPACE/data/${prefix}"*.json; do
-        [ -f "$f" ] || continue
+    f="$WORKSPACE/data/${prefix}${DATE_STR}.json"
+    if [ -f "$f" ]; then
         safe_cp "$f" "$(basename "$f")" || true
-    done
+    fi
 done
 log "[copy] ✅ 榜单数据已同步到根目录"
 
@@ -211,9 +211,9 @@ index['updated'] = datetime.now().isoformat()
 # 更新榜单文件的 checksums（不影响其他 checksum）
 if 'checksums' not in index:
     index['checksums'] = {}
-for fname in glob.glob('github_daily_*.json') + glob.glob('clawhub_daily_*.json') + \
-                 glob.glob('ai_models_daily_*.json') + glob.glob('weekly_github_*.json') + \
-                 glob.glob('weekly_clawhub_*.json') + glob.glob('ai_models_weekly_*.json'):
+DATE_STR = '$DATE_STR'
+for prefix in ['github_daily_', 'clawhub_daily_', 'ai_models_daily_', 'weekly_github_', 'weekly_clawhub_', 'ai_models_weekly_']:
+    fname = f'{prefix}{DATE_STR}.json'
     if os.path.isfile(fname):
         with open(fname, 'rb') as f:
             index['checksums'][fname] = hashlib.sha256(f.read()).hexdigest()
@@ -246,7 +246,7 @@ print(f'[index] ✅ index.json 已更新 ({len(RANKING_KEYS)} 个榜单 key)')
 log "[sync-data] 同步榜单文件到 data/..."
 cd "$WORKSPACE"
 for prefix in github_daily_ clawhub_daily_ ai_models_daily_ ai_models_weekly_ weekly_github_ weekly_clawhub_; do
-    for f in ${prefix}*.json; do
+    for f in ${prefix}${DATE_STR}.json; do
         [ -f "$f" ] || continue
         safe_cp "$f" "data/$f" || true
     done
