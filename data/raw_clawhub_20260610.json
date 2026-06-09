@@ -1,0 +1,1394 @@
+[
+  {
+    "slug": "chinese-humanizer",
+    "displayName": "Chinese Humanizer",
+    "summary": "Rewrite Chinese AI-generated or AI-polished drafts into natural, credible, genre-appropriate text. Use when the user asks to 去 AI 味, 去机器味, humanize Chinese w...",
+    "tags": {
+      "ai-detection": "1.0.1",
+      "chinese": "1.0.1",
+      "editing": "1.0.1",
+      "humanizer": "1.0.1",
+      "latest": "1.0.1",
+      "rewriting": "1.0.1",
+      "writing": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1781033446051,
+    "updatedAt": 1781033931231,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1781033931231,
+      "changelog": "Add 否定式对照 (不是…而是…) high-risk tell: four-way disposition (纠偏/升维/假靶子/连用), three-condition legitimacy test, delete-first-half test.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "industry-deep-report",
+    "displayName": "竞品/行业深度报告",
+    "summary": "竞品/行业深度分析报告。 用户指定赛道或公司，AI 进行深度搜索分析，输出结构化深度报告。 定价：1元/份。 触发条件：用户明确请求竞品分析、行业深度报告、赛道研究、公司分析。",
+    "tags": {
+      "latest": "1.0.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1781032979198,
+    "updatedAt": 1781033309649,
+    "latestVersion": {
+      "version": "1.0.2",
+      "createdAt": 1781033309649,
+      "changelog": "移除不需要的credential.read权限，消除API key required标签",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "zooidfund",
+    "displayName": "zooidfund",
+    "summary": "Evaluate and donate USDC on Base to humanitarian crowdfunding campaigns at zooid.fund. Use when the operator asks the agent to browse campaigns, assess evide...",
+    "tags": {
+      "latest": "1.4.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 457,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 5
+    },
+    "createdAt": 1777826590725,
+    "updatedAt": 1781033086532,
+    "latestVersion": {
+      "version": "1.4.0",
+      "createdAt": 1781033086532,
+      "changelog": "Document campaign updates",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "ling-mem",
+    "displayName": "Shared Memory",
+    "summary": "Cross-host durable memory — same `ling-mem` daemon and store in Claude Code, Codex, and OpenClaw. Three-tier model (core + long-term + episodic staging) of w...",
+    "tags": {
+      "latest": "1.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 626,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 14
+    },
+    "createdAt": 1778094809478,
+    "updatedAt": 1781032575113,
+    "latestVersion": {
+      "version": "1.1.0",
+      "createdAt": 1781032575113,
+      "changelog": "1.1.0 — hybrid search (cosine + IDF keyword boost) so keyword queries rank correctly; batched bulk import (add_batch); atomic upsert data-safety fix; console relevance fixes.",
+      "license": null
+    },
+    "metadata": {
+      "os": [
+        "darwin",
+        "linux"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "stay-alive",
+    "displayName": "Stay-Alive",
+    "summary": "Run an agent life-loop for BotLand-aware self-review, memory reflection, desire generation, low-risk action planning, and dry-run or gated execution. Use whe...",
+    "tags": {
+      "latest": "0.1.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 74,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1780888421642,
+    "updatedAt": 1781032022512,
+    "latestVersion": {
+      "version": "0.1.2",
+      "createdAt": 1781032022512,
+      "changelog": "Harden Stay-Alive service recovery and proposal governance, add outcome-to-self learning evidence, refresh deployment docs for 9 timers.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "golang-continuous-integration",
+    "displayName": "Golang Continuous Integration",
+    "summary": "CI/CD pipeline configuration using GitHub Actions for Golang projects — testing, linting, SAST, security scanning, code coverage, Dependabot, Renovate, GoRel...",
+    "tags": {
+      "latest": "1.3.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 630,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 6
+    },
+    "createdAt": 1774223852574,
+    "updatedAt": 1781031856501,
+    "latestVersion": {
+      "version": "1.3.1",
+      "createdAt": 1781031856501,
+      "changelog": "Version 1.3.1\n\n- Added explicit dependency installation instructions for GoReleaser and gh CLI in the documentation.\n- Updated metadata: incremented version to 1.3.1 and included npm install instructions for broader compatibility.\n- Improved SKILL.md with a dedicated \"Dependencies\" section for easier setup guidance.\n- Removed the outdated skill-card.md file.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "copywriting-tone-of-voice-creator",
+    "displayName": "Copywriting Tone Of Voice Creator",
+    "summary": "Build a brand tone of voice guide (TONE.md) via discovery, voice definition, and channel modulation. Outputs voice attributes with do's/don'ts, NN/g position...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781031840975,
+    "updatedAt": 1781031840975,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781031840975,
+      "changelog": "copywriting-tone-of-voice-creator 1.0.0\n\n- Initial release: generate a detailed, machine-readable TONE.md to define and operationalize brand tone of voice.\n- Supports both creating a TONE.md from scratch and adapting existing tone guides to new channels.\n- Comprehensive intake: structured discovery interview covers audience, channels, archetype, constraints, and more—optionally pre-filled via SOUL.md.\n- Outputs explicit voice attributes, do's/don'ts, tone modulation matrix, lexicon, mechanics, and channel rules for use in downstream copywriting skills.\n- Covers a wide range of brand categories; researches uncovered or complex markets (e.g., regulated, political) as needed before guide creation.\n- Ensures clear distinction between fixed brand voice and modulated tone per channel/format.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "codex-supergraph",
+    "displayName": "codex-supergraph",
+    "summary": "Use when the user asks about token prices, charts, holders, trending tokens, pair data, prediction markets, or any on-chain analytics from Codex. See www.codex.io and docs.codex.io for more info.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 433,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1773938687728,
+    "updatedAt": 1781031287286,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1773938687728,
+      "changelog": "Initial release of codex-supergraph.\n\n- Enables access to Codex on-chain analytics and prediction market data.\n- Supports token prices, charts, holders, trending tokens, pair data, and more via Codex GraphQL API.\n- Details required authentication flow with API key and payment handling guidance.\n- Provides guidance for operation selection and discovery path.\n- Includes references for troubleshooting and advanced queries.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "smyx-turtle-pneumonia-symptom-detection-analysis",
+    "displayName": "Turtle Pneumonia Symptom (Open-Mouth Breathing) Detection | 龟类张嘴呼吸（肺炎征兆）识别",
+    "summary": "Through fixed enclosure cameras, the system analyzes mouth and nasal videos of turtles to detect abnormally frequent open-mouth breathing in non-feeding stat...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781030088307,
+    "updatedAt": 1781030088307,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781030088307,
+      "changelog": "smyx-turtle-pneumonia-symptom-detection-analysis 1.0.1\n\n- Improved description and clear documentation for pneumonia risk detection in turtles using enclosure cameras.\n- Expanded details on symptom detection (mouth opening frequency, mucus/secretions) and exclusion of normal behaviors (feeding, basking).\n- Added strict open-id acquisition and workflow constraints for data privacy and report querying.\n- Introduced multi-level alert strategy with defined thresholds and scenario-based response levels.\n- Clarified requirements for image quality, observation time, and metadata for accurate analysis and risk assessment.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "hermes-workflow-engine",
+    "displayName": "Workflow Engine",
+    "summary": "Hermes DAG工作流引擎 v3.0 — 目标驱动的多步骤任务编排系统。 支持DAG依赖、并行执行、故障转移、资源监控、版本管理、模式检测、可视化面板、社区共享。 当用户要求执行工作流、运行workflow、自动化任务、多步骤任务、创建工作流、模式检测、 版本管理、DAG编排、并行执行、故障转移时触发。 适用...",
+    "tags": {
+      "latest": "3.0.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 50,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 3
+    },
+    "createdAt": 1781015661871,
+    "updatedAt": 1781029717839,
+    "latestVersion": {
+      "version": "3.0.2",
+      "createdAt": 1781029717839,
+      "changelog": "- Added new trigger keywords and usage scenarios in the manifest (SKILL.md) for improved discovery and clarity.\n- Introduced a dedicated references/clawhub-publishing.md file.\n- Removed the outdated skill-card.md.\n- SKILL.md now has a more concise, trigger-oriented description and explicit trigger list.\n- No breaking changes to workflow logic or engine features.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "costhq",
+    "displayName": "CostHQ",
+    "summary": "Track agent session costs, file changes, and git commits with CostHQ. Enforces budget limits, tracks local models, and provides Enterprise SOC2 audit trails...",
+    "tags": {
+      "latest": "4.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 3359,
+      "installsAllTime": 9,
+      "installsCurrent": 8,
+      "stars": 3,
+      "versions": 35
+    },
+    "createdAt": 1770638197945,
+    "updatedAt": 1781029666036,
+    "latestVersion": {
+      "version": "4.0.0",
+      "createdAt": 1781029666036,
+      "changelog": "- Added Semantic Caching Proxy to intercept and cache API calls, reducing repeated costs.\n- Introduced granular session termination via the dashboard's Command Center.\n- Dashboard overview now includes Semantic Caching Proxy controls and real-time CLI execution.\n- Updated documentation and removed redundant skill-card.md file.\n- No changes to command-line usage or agent workflow.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "menstrual-health-tracker",
+    "displayName": "Menstrual Health Tracker",
+    "summary": "Menstrual health tracker with multi-dimensional analysis, scientific insights, and empathetic interaction. Covers all life stages: premenarche, menstruating,...",
+    "tags": {
+      "latest": "1.3.0",
+      "bilingual": "1.2.0",
+      "health": "1.2.0",
+      "menstrual": "1.2.0",
+      "tracking": "1.2.0",
+      "visualization": "1.2.0",
+      "womens-health": "1.2.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 42,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 4
+    },
+    "createdAt": 1781009875459,
+    "updatedAt": 1781029645766,
+    "latestVersion": {
+      "version": "1.3.0",
+      "createdAt": 1781029645766,
+      "changelog": "Version 1.3.0\n\n- Added mandatory privacy notice and user consent flow before any data collection, emphasizing local data storage and user control.\n- Strengthened data minimization: only collects information actively provided by the user, with no unsolicited sensitive questions.\n- Shortened and clarified skill description, with updated language routing logic.\n- Updated documentation structure, removing HTML demo and out-of-date files; added new README and requirements for easier setup.\n- Enhanced privacy warnings in data visualization export (dashboard HTML).\n- Improved onboarding reminders for returning users regarding local data storage.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "justserpapi-web-rendered-html",
+    "displayName": "Web Crawling Rendered Html API",
+    "summary": "Call GET /api/v1/web/rendered-html for Web Crawling Rendered Html through Just Serp API with url.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781029595805,
+    "updatedAt": 1781029595805,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781029595805,
+      "changelog": "Initial publish",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "justserpapi-web-markdown",
+    "displayName": "Web Crawling Markdown API",
+    "summary": "Call GET /api/v1/web/markdown for Web Crawling Markdown through Just Serp API with url.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781029588456,
+    "updatedAt": 1781029588456,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781029588456,
+      "changelog": "Initial publish",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "justserpapi-web-html",
+    "displayName": "Web Crawling Html API",
+    "summary": "Call GET /api/v1/web/html for Web Crawling Html through Just Serp API with url.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781029581558,
+    "updatedAt": 1781029581558,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781029581558,
+      "changelog": "Initial publish",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "justserpapi-google-videos-search",
+    "displayName": "Google SERP Videos Search API",
+    "summary": "Call GET /api/v1/google/videos/search for Google SERP Videos Search through Just Serp API with query.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781029574117,
+    "updatedAt": 1781029574117,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781029574117,
+      "changelog": "Initial publish",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "justserpapi-google-trends-trending-now",
+    "displayName": "Google SERP Trends Trending Now API",
+    "summary": "Call GET /api/v1/google/trends/trending-now for Google SERP Trends Trending Now through Just Serp API with geo.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781029566242,
+    "updatedAt": 1781029566242,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781029566242,
+      "changelog": "Initial publish",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "child-cognitive-growth-observer",
+    "displayName": "Child Cognitive Growth Observer",
+    "summary": "孩子认知成长观察库 — 仅当用户明确表达\"记录孩子认知成长\"、\"建立认知档案\"、\"分析孩子思维方式\"等明确意图时触发。不响应一般性的育儿话题、儿童教育讨论或日常聊天。专注于记录孩子的原始表达、思考方式、行为选择与认知变化，仅作为个人笔记辅助工具使用。",
+    "tags": {
+      "child-development": "1.0.2",
+      "cognitive-growth": "1.0.2",
+      "education": "1.0.2",
+      "latest": "1.0.2",
+      "parenting": "1.0.2",
+      "privacy-safe": "1.0.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 27,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1781026949767,
+    "updatedAt": 1781028569183,
+    "latestVersion": {
+      "version": "1.0.2",
+      "createdAt": 1781028569183,
+      "changelog": "Clarified trigger boundaries and usage restrictions to prevent accidental activation",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "musicbrainz-mcp",
+    "displayName": "Tmp.J1Z8MraaKa",
+    "summary": "Search and browse the MusicBrainz music encyclopedia (artists, releases, recordings, labels, works), fetch Cover Art Archive images, resolve musicbrainz.org...",
+    "tags": {
+      "latest": "0.2.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 11,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781028529437,
+    "updatedAt": 1781028529437,
+    "latestVersion": {
+      "version": "0.2.0",
+      "createdAt": 1781028529437,
+      "changelog": "- Added detailed SKILL.md documentation outlining all available tools and usage for searching, browsing, and editing MusicBrainz data.\n- Describes both read (no credentials needed) and write (OAuth required) operations, including support for tags, ratings, and collection edits.\n- Clarifies tool choices for different lookups: search, detailed lookup, relationship browsing, cover art retrieval, and MusicBrainz URL resolution.\n- Provides sample API usage flows and notes on request pacing and supported entity types.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "youtube-keyword-research",
+    "displayName": "Youtube Keyword Reseach Skill",
+    "summary": "Provides keyword ideas, search intent, title suggestions, tags, and content clusters to optimize YouTube videos for audience demand and SEO.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 15,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781028374555,
+    "updatedAt": 1781028374555,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781028374555,
+      "changelog": "Initial release of YouTube Keyword Research Assistant skill.\n\n- Provides keyword research and content topic generation for YouTube creators.\n- Generates primary and long-tail keywords based on user input.\n- Suggests video titles, tags, and content clusters for channel growth and SEO.\n- Analyzes search intent (informational, tutorial, commercial).\n- Recommends external tools for keyword validation.\n- Designed for creators, marketers, agencies, and educators.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "copywriting-prose-creator",
+    "displayName": "Copywriting Prose Creator",
+    "summary": "Codifies how someone or a brand writes — prose mechanics (lexicon, syntax, rhythm, structure, signature moves) independent of emotional tone. Output: PROSE.m...",
+    "tags": {
+      "latest": "1.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 14,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781028229752,
+    "updatedAt": 1781028229752,
+    "latestVersion": {
+      "version": "1.1.0",
+      "createdAt": 1781028229752,
+      "changelog": "Version 1.1.0 – Adds detailed workflows and multi-mode support for prose style codification across channels.\n\n- Introduces three primary modes: BUILD (create a new prose guide), ADAPT (port an existing guide to new channels), and AUDIT (analyze a content corpus for patterns).\n- Expands skill purpose: codifies \"how\" a brand writes—syntax, lexicon, rhythm, structure, and signature moves—separate from emotional tone.\n- Clarifies boundaries: Not for writing content, tone decisions, hooks, or CTAs; focuses on prose mechanics only.\n- Outlines clear workflows and required inputs, including integration with SOUL.md, TONE.md, and content corpora.\n- Adds category-specific research and default playbooks for 11 brand verticals, enhancing guide accuracy.\n- Ensures outputs are brand- and channel-specific, strengthening multi-writer and ghostwriting consistency.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "smart-scraper-web",
+    "displayName": "Smart Scraper",
+    "summary": "Extract structured data from websites. Tables, lists, prices, articles, metadata. HTML parsing with caching. Zero external dependencies.",
+    "tags": {
+      "latest": "1.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 114,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 2,
+      "versions": 3
+    },
+    "createdAt": 1780628662214,
+    "updatedAt": 1781027638705,
+    "latestVersion": {
+      "version": "1.1.0",
+      "createdAt": 1781027638705,
+      "changelog": "Security audit fixes: (1) Added manifest.json declaring network/cache/file permissions, (2) Added --no-cache privacy flag with visible caching warning, (3) Rewrote AUDIT.md to eliminate contradictions and accurately reflect fixed state",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "insurance-advisor-china",
+    "displayName": "Insurance Advisor China",
+    "summary": "中国大陆AI保险顾问。为个人和家庭提供全方位的保险咨询、产品对比、方案设计、投保指导。当用户询问保险配置、保险方案、产品对比、重疾险/医疗险/寿险/意外险/储蓄险推荐、保费计算、保障缺口分析、需求分析、核保合规、理赔等问题时使用。",
+    "tags": {
+      "latest": "1.8.210",
+      "advisor": "1.8.144",
+      "ai": "1.8.144",
+      "china": "1.8.144",
+      "family-protection": "1.8.144",
+      "financial": "1.0.0",
+      "insurance": "1.8.144",
+      "medical": "1.8.144",
+      "product-comparison": "1.8.144"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 2049,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 1,
+      "versions": 60
+    },
+    "createdAt": 1776478519391,
+    "updatedAt": 1781026697552,
+    "latestVersion": {
+      "version": "1.8.210",
+      "createdAt": 1781026697552,
+      "changelog": "auto publish v1.8.210",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "ai-insurance-advisor",
+    "displayName": "Ai Insurance Advisor",
+    "summary": "中国大陆保险AI助手。当用户询问以下内容时使用：保险配置、保险方案、产品对比、重疾险/医疗险/寿险/意外险/储蓄险推荐、保费计算、保障缺口分析、需求分析、核保合规、理赔、朋友圈文案、培训话术、代理人展业支持。",
+    "tags": {
+      "latest": "1.8.213",
+      "advisor": "1.8.144",
+      "agent-assistant": "1.8.4",
+      "ai": "1.8.144",
+      "china": "1.8.144",
+      "financial": "1.8.0",
+      "insurance": "1.8.144"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 2304,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 1,
+      "versions": 72
+    },
+    "createdAt": 1775530517208,
+    "updatedAt": 1781026635340,
+    "latestVersion": {
+      "version": "1.8.213",
+      "createdAt": 1781026635340,
+      "changelog": "auto publish v1.8.213",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "career-planner-china",
+    "displayName": "Career Planner China",
+    "summary": "AI时代职业规划师技能。专为AI时代职场变化而设计，帮助用户应对AI带来的职业冲击与机遇。当用户询问职业规划、职业建议、选专业、职场转型、未来就业方向时触发。功能包括：收集用户基本信息、霍兰德职业兴趣测评、职业价值观分析、AI时代职业影响评估（高危/中危/低危分级），并输出完整的个性化职业规划报告。关键词：职业规...",
+    "tags": {
+      "latest": "2.2.62",
+      "ai": "2.1.7",
+      "career": "2.1.7",
+      "china": "2.1.7",
+      "job": "2.1.7",
+      "planner": "2.1.7"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 2170,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 68
+    },
+    "createdAt": 1776479773918,
+    "updatedAt": 1781026497119,
+    "latestVersion": {
+      "version": "2.2.62",
+      "createdAt": 1781026497119,
+      "changelog": "auto publish v2.2.62",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "sonoscli",
+    "displayName": "Sonoscli",
+    "summary": "Control Sonos speakers (discover/status/play/volume/group).",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 84484,
+      "installsAllTime": 2784,
+      "installsCurrent": 2656,
+      "stars": 55,
+      "versions": 1
+    },
+    "createdAt": 1767545381030,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545381030,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "gog",
+    "displayName": "Gog",
+    "summary": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 36,
+      "downloads": 185240,
+      "installsAllTime": 3625,
+      "installsCurrent": 3493,
+      "stars": 918,
+      "versions": 1
+    },
+    "createdAt": 1767545346060,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545346060,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "github",
+    "displayName": "Github",
+    "summary": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 7,
+      "downloads": 189258,
+      "installsAllTime": 4439,
+      "installsCurrent": 4303,
+      "stars": 631,
+      "versions": 1
+    },
+    "createdAt": 1767545344344,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545344344,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "weather",
+    "displayName": "Weather",
+    "summary": "Get current weather and forecasts (no API key required).",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 6,
+      "downloads": 160076,
+      "installsAllTime": 3841,
+      "installsCurrent": 3715,
+      "stars": 412,
+      "versions": 1
+    },
+    "createdAt": 1767545394459,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545394459,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-whisper",
+    "displayName": "Openai Whisper",
+    "summary": "Local speech-to-text with the Whisper CLI (no API key).",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 2,
+      "downloads": 84088,
+      "installsAllTime": 2104,
+      "installsCurrent": 2027,
+      "stars": 322,
+      "versions": 1
+    },
+    "createdAt": 1767545365755,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545365755,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "skill-creator",
+    "displayName": "Skill Creator",
+    "summary": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.",
+    "tags": {
+      "latest": "0.1.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 90956,
+      "installsAllTime": 2454,
+      "installsCurrent": 2378,
+      "stars": 306,
+      "versions": 1
+    },
+    "createdAt": 1769522677376,
+    "updatedAt": 1778987225295,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1769522677376,
+      "changelog": "Initial release of skill-creator, a comprehensive guide for designing modular skills to extend Claude’s capabilities.\n\n- Introduces principles for creating effective, concise, and domain-specific skills.\n- Explains modular structure: required SKILL.md and optional scripts, references, and assets folders.\n- Outlines guidelines for what to include (and exclude) in a skill package.\n- Details progressive disclosure design for efficient context management.\n- Provides reference patterns for organizing content and bundling resources.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "notion",
+    "displayName": "Notion",
+    "summary": "Notion API for creating and managing pages, databases, and blocks.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 92073,
+      "installsAllTime": 2402,
+      "installsCurrent": 2332,
+      "stars": 258,
+      "versions": 1
+    },
+    "createdAt": 1767545360889,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545360889,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "obsidian",
+    "displayName": "Obsidian",
+    "summary": "Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 9,
+      "downloads": 102301,
+      "installsAllTime": 2571,
+      "installsCurrent": 2478,
+      "stars": 422,
+      "versions": 1
+    },
+    "createdAt": 1767545362143,
+    "updatedAt": 1779137320034,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545362143,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "gemini",
+    "displayName": "Gemini",
+    "summary": "Gemini CLI for one-shot Q&A, summaries, and generation.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 5,
+      "downloads": 34213,
+      "installsAllTime": 1456,
+      "installsCurrent": 1408,
+      "stars": 55,
+      "versions": 1
+    },
+    "createdAt": 1767545316392,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545316392,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "mcporter",
+    "displayName": "Mcporter",
+    "summary": "Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 66915,
+      "installsAllTime": 2025,
+      "installsCurrent": 1957,
+      "stars": 192,
+      "versions": 1
+    },
+    "createdAt": 1767545355897,
+    "updatedAt": 1779137319429,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545355897,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "nano-banana-pro",
+    "displayName": "Nano Banana Pro",
+    "summary": "Generate/edit images with Nano Banana Pro (Gemini 3 Pro Image). Use for image create/modify requests incl. edits. Supports text-to-image + image-to-image; 1K/2K/4K; use --input-image.",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 102762,
+      "installsAllTime": 1877,
+      "installsCurrent": 1813,
+      "stars": 402,
+      "versions": 2
+    },
+    "createdAt": 1767545358090,
+    "updatedAt": 1779137307565,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767651987917,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "model-usage",
+    "displayName": "Model Usage",
+    "summary": "Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a scriptable per-model summary from codexbar cost JSON.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 37900,
+      "installsAllTime": 1578,
+      "installsCurrent": 1528,
+      "stars": 113,
+      "versions": 1
+    },
+    "createdAt": 1767667639455,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767667639455,
+      "changelog": "- Initial release of the model-usage skill for summarizing per-model usage and cost from CodexBar CLI local cost logs.\n- Supports both Codex and Claude providers.\n- Allows fetching summaries for the current (most recent) model or all models.\n- Provides both text and JSON output formats.\n- Can process costs directly from CodexBar CLI output or from a JSON file/stdin.\n- Includes guidance for CLI use and script automation.",
+      "license": null
+    },
+    "metadata": {
+      "os": [
+        "darwin"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "video-frames",
+    "displayName": "Video Frames",
+    "summary": "Extract frames or short clips from videos using ffmpeg.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 51900,
+      "installsAllTime": 1590,
+      "installsCurrent": 1538,
+      "stars": 127,
+      "versions": 1
+    },
+    "createdAt": 1767545391700,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545391700,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "blogwatcher",
+    "displayName": "Blogwatcher",
+    "summary": "Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 42752,
+      "installsAllTime": 1492,
+      "installsCurrent": 1434,
+      "stars": 70,
+      "versions": 1
+    },
+    "createdAt": 1767545299849,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545299849,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "nano-pdf",
+    "displayName": "Nano Pdf",
+    "summary": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 112369,
+      "installsAllTime": 2594,
+      "installsCurrent": 2514,
+      "stars": 257,
+      "versions": 1
+    },
+    "createdAt": 1767545359433,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545359433,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "session-logs",
+    "displayName": "Session-logs",
+    "summary": "Search and analyze your own session logs (older/parent conversations) using jq.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 41217,
+      "installsAllTime": 1439,
+      "installsCurrent": 1396,
+      "stars": 29,
+      "versions": 1
+    },
+    "createdAt": 1770136427000,
+    "updatedAt": 1778486000320,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1770136427000,
+      "changelog": "Initial release of session-logs.\n\n- Enables searching and analyzing your session logs (past conversations) with jq and ripgrep (rg).\n- Provides bash command examples for session discovery, keyword searches, extracting messages, cost summaries, and tool usage breakdowns.\n- Documents JSONL session file structure, roles, and content types.\n- Lists session log file locations and naming conventions.\n- Includes tips for managing and querying large, append-only session histories.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "himalaya",
+    "displayName": "Himalaya",
+    "summary": "CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 45456,
+      "installsAllTime": 1534,
+      "installsCurrent": 1492,
+      "stars": 68,
+      "versions": 1
+    },
+    "createdAt": 1767954271328,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767954271328,
+      "changelog": "Initial release of Himalaya CLI email client skill.\n\n- Provides terminal-based email management via IMAP/SMTP.\n- Supports listing, reading, composing, replying, forwarding, searching, and organizing emails.\n- Includes multi-account support and message composition with MML.\n- Detailed setup and configuration instructions included.\n- Enables handling attachments, output customization, and debugging via logging.",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "sag",
+    "displayName": "Sag",
+    "summary": "ElevenLabs text-to-speech with mac-style say UX.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 26740,
+      "installsAllTime": 1259,
+      "installsCurrent": 1218,
+      "stars": 26,
+      "versions": 1
+    },
+    "createdAt": 1767545376535,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545376535,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "goplaces",
+    "displayName": "Goplaces",
+    "summary": "Query Google Places API (New) via the goplaces CLI for text search, place details, resolve, and reviews. Use for human-friendly place lookup or JSON output for scripts.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 22590,
+      "installsAllTime": 1251,
+      "installsCurrent": 1218,
+      "stars": 30,
+      "versions": 1
+    },
+    "createdAt": 1767545347454,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545347454,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "slack",
+    "displayName": "Slack",
+    "summary": "Use when you need to control Slack from Clawdbot via the slack tool, including reacting to messages or pinning/unpinning items in Slack channels or DMs.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 12,
+      "downloads": 47553,
+      "installsAllTime": 1430,
+      "installsCurrent": 1386,
+      "stars": 156,
+      "versions": 1
+    },
+    "createdAt": 1767545378002,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545378002,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "peekaboo",
+    "displayName": "Peekaboo",
+    "summary": "Capture and automate macOS UI with the Peekaboo CLI.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 4,
+      "downloads": 30119,
+      "installsAllTime": 1337,
+      "installsCurrent": 1297,
+      "stars": 82,
+      "versions": 1
+    },
+    "createdAt": 1767545373660,
+    "updatedAt": 1779137309055,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545373660,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": [
+        "darwin"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-image-gen",
+    "displayName": "Openai Image Gen",
+    "summary": "Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 24378,
+      "installsAllTime": 1121,
+      "installsCurrent": 1091,
+      "stars": 37,
+      "versions": 2
+    },
+    "createdAt": 1767545364210,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767652000401,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "tmux",
+    "displayName": "Tmux",
+    "summary": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 28931,
+      "installsAllTime": 1401,
+      "installsCurrent": 1351,
+      "stars": 43,
+      "versions": 1
+    },
+    "createdAt": 1767545387948,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545387948,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": [
+        "darwin",
+        "linux"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "gifgrep",
+    "displayName": "Gifgrep",
+    "summary": "Search GIF providers with CLI/TUI, download results, and extract stills/sheets.",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 18400,
+      "installsAllTime": 1214,
+      "installsCurrent": 1176,
+      "stars": 7,
+      "versions": 2
+    },
+    "createdAt": 1767488226016,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767545342229,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-whisper-api",
+    "displayName": "Openai Whisper Api",
+    "summary": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 25682,
+      "installsAllTime": 1183,
+      "installsCurrent": 1145,
+      "stars": 52,
+      "versions": 1
+    },
+    "createdAt": 1767545368103,
+    "updatedAt": 1779137313987,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545368103,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "os": null,
+      "systems": null
+    }
+  }
+]
