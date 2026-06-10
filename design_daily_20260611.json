@@ -1,0 +1,114 @@
+[
+  {
+    "title": "Workflow lab: Expanding the canvas with Figma MCP",
+    "content": "Figma推出MCP服务，将AI Agent连接到Figma画布，让设计师能通过Agent读取代码状态并自动生成设计帧。编码过程中的新状态（加载、错误、空状态）实时映射到设计稿上，缩短设计到开发的反馈循环。",
+    "quote": "画布终于会说话了，设计师不用追着开发问状态了",
+    "url": "https://www.figma.com/blog/workflow-lab-expanding-the-canvas-with-figma-mcp/",
+    "source": "Figma Blog",
+    "published": "2026-06-10"
+  },
+  {
+    "title": "Hard problems are still hard",
+    "content": "Figma产品经理兼设计师Nikolas Klein回顾7年原型工具构建经验，指出AI虽改变了工具生态，但真正困难的问题（用户体验的深度、创意判断力）依然如故。工具在变，设计本质不变。",
+    "quote": "AI再强也解决不了你设计烂的问题，醒醒",
+    "url": "https://www.figma.com/blog/hard-problems-are-still-hard/",
+    "source": "Figma Blog",
+    "published": "2026-06-10"
+  },
+  {
+    "title": "Loop Engineering: The future of working with coding agents",
+    "content": "Addy Osmani提出'循环工程'概念——不再手动提示AI Agent，而是设计自动化循环系统：定时发现任务、分配工作、验证结果。包含5个核心组件（自动化、工作树、技能、插件、子代理）加持久记忆，所有主流Agent工具正在内置这些能力。",
+    "quote": "提示词艺术家下岗，循环设计师上岗",
+    "url": "https://addyosmani.com/blog/loop-engineering/",
+    "source": "Addy Osmani Blog",
+    "published": "2026-06-09"
+  },
+  {
+    "title": "Building an HTML-first site doubled our users overnight",
+    "content": "一位开发者为公用事业公司重构了表单系统，采用HTML-first（Astro + Web Components）取代之前的React SPA。页面无需JS即可完整运行，针对低端设备和弱网环境优化，上线后用户量翻倍。HN当日榜首，752 points。",
+    "quote": "React SPA三天被喷下线的反面教材来了",
+    "url": "https://mohkohn.co.uk/writing/html-first/",
+    "source": "Hacker News",
+    "published": "2026-06-10"
+  },
+  {
+    "title": "The four design jobs AI created (so far)",
+    "content": "NNGroup指出'AI设计'已分化为四种截然不同的工作方向：产品层的AI体验设计、用户层的交互设计、模型层的行为定义、基础设施层的数据结构设计。团队如果不知道自己属于哪个方向，半年后会全员怀疑人生。",
+    "quote": "你说的是哪种AI设计？老板和你想的根本不是一回事",
+    "url": "https://www.nngroup.com/articles/design-jobs-ai-created/",
+    "source": "NNGroup",
+    "published": "2026-06-10"
+  },
+  {
+    "title": "How I validated design decisions before writing production code",
+    "content": "Slack设计师分享利用AI辅助在写生产代码前验证设计决策的方法：构建参数化原型做蒙特卡洛模拟，测试图库布局算法对比、最大宽度策略对2.72亿桌面会话的影响。用几天探索替代几周迭代，把'哪个好看'变成'哪个在所有场景下都站得住'。",
+    "quote": "Figma里摆几个组件不算验证，跑几千次模拟才算",
+    "url": "https://slack.design/articles/how-i-validated-design-decisions-before-writing-production-code/",
+    "source": "Slack Design",
+    "published": "2026-06-10"
+  },
+  {
+    "title": "Building a general-purpose accessibility agent",
+    "content": "GitHub正在试行通用无障碍Agent，自动审查PR中的无障碍问题。已审查3535个PR，修复率68%，覆盖语义结构、控件命名、状态公告、文本替代、焦点顺序五大类问题。AI自动修复后再上线，解放人工审核。",
+    "quote": "3千多个PR的a11y问题，AI帮你擦了屁股",
+    "url": "https://github.blog/ai-and-ml/github-copilot/building-a-general-purpose-accessibility-agent-and-what-we-learned-in-the-process/",
+    "source": "GitHub Blog",
+    "published": "2026-05-15"
+  },
+  {
+    "title": "Our CSS isn't opinionated enough",
+    "content": "开发者反思CSS最佳实践：过度依赖class选择器导致样式与语义脱节。class只是'油漆'可以涂在任何元素上，而语义化标签选择器才能让辅助技术正确理解页面结构。呼吁回归更语义化的CSS写法。",
+    "quote": "用了十年class，原来我们一直写错了CSS",
+    "url": "https://www.craigabbott.co.uk/blog/2026/our-css-isnt-opinionated-enough/",
+    "source": "Craig Abbott Blog",
+    "published": "2026-06-05"
+  },
+  {
+    "title": "Designing how designers master AI",
+    "content": "Salesforce Service UX团队46位设计师6个月AI共学实践的深度总结。核心发现：掌握AI工具不是学会'正确用法'，而是学会让工具顺应你已有的思维方式——这种掌握是个性化的、发散的、永远不会完成。",
+    "quote": "培训了半天发现，每人用AI的方式都不一样，白教了",
+    "url": "https://uxdesign.cc/designing-how-designers-master-ai-642d8751d945",
+    "source": "UX Design Collective",
+    "published": "2026-05-23"
+  },
+  {
+    "title": "The speed of prototyping in the age of AI",
+    "content": "开发者反思AI如何改变了原型速度：不再受限于手动编码的瓶颈，从'想试试'到'跑起来了'的时间大幅缩短。但他也发现AI改变了工程工作的形态——需要更多抽象思维、合约设计和系统描述能力。",
+    "quote": "AI让原型快了10倍，但思考深度跟不上了怎么办",
+    "url": "https://darylcecile.net/notes/speed-of-prototyping-age-of-ai",
+    "source": "Daryl Cecile Notes",
+    "published": "2026-05-31"
+  },
+  {
+    "title": "DiffusionGemma: 4x faster text generation",
+    "content": "Google发布DiffusionGemma，26B MoE开源实验模型（激活仅3.8B参数）。采用文本扩散技术，并行生成整块文本而非逐token处理，单H100上超1000 tokens/s。18GB VRAM即可运行，对AI工具的前端交互延迟有重要意义。",
+    "quote": "本地AI快4倍，交互式设计工具终于不用转圈了",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/",
+    "source": "Google AI Blog",
+    "published": "2026-06-10"
+  },
+  {
+    "title": "heerich.js: 3D voxel scenes rendered to SVG",
+    "content": "一个极简JavaScript引擎，将3D体素场景渲染为纯SVG。支持布尔运算、斜轴/透视相机、零依赖。输出是可缩放、可CSS操控的语义化SVG而非像素缓存，设计工具和创意编程的趣味交叉点。",
+    "quote": "3D体素转SVG？设计师和工程师都沉默了",
+    "url": "https://meodai.github.io/heerich/",
+    "source": "Sidebar",
+    "published": "2026-06-03"
+  },
+  {
+    "title": "AI Job Grief: The unnamed crisis hitting tech workers",
+    "content": "深度分析AI驱动的岗位替代正在产生的心理创伤——不是普通的焦虑或恐惧，而是一种接近'哀伤'的情绪类别。知识工作者的身份认同与专业知识深度绑定，AI威胁的不仅是收入，更是自我认知。行业内没有为此建立任何应对框架。",
+    "quote": "你不是在害怕失业，你是在哀悼那个'专业'的自我",
+    "url": "https://jackmaguire.org/blog/ai-job-grief/",
+    "source": "Jack Maguire Blog",
+    "published": "2026-05-29"
+  },
+  {
+    "title": "Extend UI: Open-source UI kit for document apps",
+    "content": "Extend.ai开源了14个文档应用UI组件：PDF/DOCX/XLSX查看器、边界框标注、文件上传、电子签名等。MIT协议，完全可定制。他们自己每天处理数百万页文档，修复了大量边缘case后才决定开源。",
+    "quote": "PDF预览这么难？看来不是只有我一个人搞不定",
+    "url": "https://www.extend.ai/ui",
+    "source": "Hacker News",
+    "published": "2026-06-10"
+  }
+]

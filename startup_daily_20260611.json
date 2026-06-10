@@ -1,0 +1,90 @@
+[
+  {
+    "title": "Claude Fable 5 / Mythos 5 发布，Anthropic 最强模型引爆 HN",
+    "content": "Anthropic 发布 Claude Fable 5（通用版）和 Mythos 5（无安全限制版），在多项基准测试全面领先。HN 获 2527 点赞和 2030 条评论，创下今年最高讨论热度。Fable 5 比 Opus 4.8 定价低一半（$10/$50 per million tokens），约 5% 敏感问题自动降级处理。Stripe 用其在 5000 万行 Ruby 代码库中一天完成原本两个月的迁移工作。",
+    "quote": "2527 点赞量碾压级发布，其他厂商这个月还能睡个安稳觉？",
+    "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+    "source": "Anthropic / HN",
+    "published": "2026-06-10"
+  },
+  {
+    "title": "德国里程碑裁决：Google 须为 AI Overviews 虚假内容承担直接责任",
+    "content": "慕尼黑地方法院发布临时禁令，认定 Google AI Overviews 生成的错误信息属于 Google「自身言论」，而非第三方搜索结果引用。Google 因将两家正规出版公司与诈骗、订阅陷阱错误关联而被判直接侵权。法院强调 AI 用自己的话「重写和评判」搜索结果，与传统搜索引擎责任框架完全不同，现有搜索引擎免责条款不适用。",
+    "quote": "AI 犯法不能甩锅给搜索算法了，硅谷法务部要加班了",
+    "url": "https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/",
+    "source": "The Decoder / HN",
+    "published": "2026-06-10"
+  },
+  {
+    "title": "Apple 重构 Apple Intelligence，底层模型完全转向 Google Gemini",
+    "content": "Apple 宣布与 Google 深度合作，基于 Gemini 技术联合打造新一代 Apple Foundation Models。新模型支持多模态（图像理解与生成、高级照片编辑），系统协调器可根据当前应用和任务定制 AI 响应。Apple 强调依然使用端侧处理和 Private Cloud Compute，隐私承诺不变。此举标志苹果在 AI 策略上的重大转向——从自研转向借力。",
+    "quote": "嘴上说不搞军备竞赛，身体却很诚实地抱了 Google 大腿",
+    "url": "https://www.macrumors.com/2026/06/08/apple-reveals-new-ai-architecture/",
+    "source": "MacRumors / HN",
+    "published": "2026-06-08"
+  },
+  {
+    "title": "PgDog 获 550 万美元种子轮融资，让 Postgres 无限水平扩展",
+    "content": "YC 孵化的 PgDog 宣布完成 $5.5M 种子轮（Basis Set、YC、Pioneer Fund 参投）。核心产品是一个 Postgres 代理层，让传统 Postgres 实现水平扩展，已服务超过 200 万 QPS 的生产流量，处理超过 20TB 的分片数据。创始人 Lev Kokotov 来自 Instacart 基础设施团队，他说「如果 Postgres 能搞定大规模场景，没人会去用 Mongo 或 Dynamo」。",
+    "quote": "三千人三人的小团队拿着 550 万美刀挑战全球数据库格局，创业就该这样",
+    "url": "https://pgdog.dev/blog/our-funding-announcement",
+    "source": "PgDog / HN",
+    "published": "2026-06-10"
+  },
+  {
+    "title": "构建 HTML 优先的网站让用户量一夜翻倍",
+    "content": "开发者 Moh Koh 分享了一个实用案例：某公共服务公司两次花大价钱用 React 构建表单应用都以惨败告终（线上 3 天即被投诉撤下）。他改用 Astro 构建 HTML 优先方案，零 JavaScript 依赖、渐进增强，上线后用户量直接翻倍。文章引起强烈共鸣，HN 获 752 点赞。对 SaaS 创业团队的启示：别为了炫技牺牲可用性，功能服务不需要 SPA 秀操作。",
+    "quote": "React 项目三天翻车，纯 HTML 一夜翻倍，这个故事前端圈该裱起来",
+    "url": "https://mohkohn.co.uk/writing/html-first/",
+    "source": "Moh Koh / HN",
+    "published": "2026-06-10"
+  },
+  {
+    "title": "Apple 开源 macOS Container Machines：为 Mac 带来原生级 Linux 容器体验",
+    "content": "Apple 开源 container 项目中的 Container Machines 功能，在 Mac 上提供高度集成的 Linux 运行环境。基于标准 OCI 镜像，支持 systemd 初始化，自动映射用户名和 home 目录，可在 Mac 端编辑、Linux 端编译运行，无需复制步骤。堪称 macOS 开发者梦寐以求的原生 Linux 开发环境，HN 获 1119 点赞。",
+    "quote": "Apple 终于对开发者好了一次——不过能别等这么多年才想起来吗",
+    "url": "https://github.com/apple/container/blob/main/docs/container-machine.md",
+    "source": "Apple GitHub / HN",
+    "published": "2026-06-10"
+  },
+  {
+    "title": "Google 发布 DiffusionGemma：开源文本扩散模型，推理速度提升 4 倍",
+    "content": "Google 推出开源实验性模型 DiffusionGemma（26B MoE，推理时仅激活 3.8B 参数），采用文本扩散方法而非自回归生成，同时生成整块文本。在单张 H100 上达 1000+ tokens/s，RTX 5090 上达 700+ tokens/s，量化后仅需 18GB 显存。Apache 2.0 协议开源，适用于实时编辑、快速迭代等延迟敏感场景。",
+    "quote": "26B 参数跑出 1000 tokens/s，这个速度让自回归模型脸上有点挂不住",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/",
+    "source": "Google AI",
+    "published": "2026-06-10"
+  },
+  {
+    "title": "npm v12 宣布重大破坏性变更：默认禁止脚本执行和 Git/远程依赖",
+    "content": "npm 发布 v12 版本计划（2026 年 7 月发布），引入多项安全默认变更：allowScripts 默认关闭（不再自动执行依赖安装脚本）；--allow-git 和 --allow-remote 默认关闭。开发者需主动审核并批准白名单。安全加固方向正确，但大量老旧项目和企业 CI 可能面临「安装即报错」的噩梦。HN 获 460 点赞。",
+    "quote": "npm 终于开始认真搞安全了，但全世界的 CI 脚本估计要炸一片",
+    "url": "https://github.blog/changelog/2026-06-09-upcoming-breaking-changes-for-npm-v12/",
+    "source": "GitHub Blog / HN",
+    "published": "2026-06-09"
+  },
+  {
+    "title": "研究显示 €0.01 转账就能攻破银行 AI 助手，间接注入成为金融 AI 致命弱点",
+    "content": "安全公司 Blue41 揭示了一个令人不安的金融 AI 安全隐患：欧洲数字银行 Bunq（2000 万用户）的 AI 助手存在间接提示注入漏洞，攻击者只需发起一笔 €0.01 的转账，在交易描述中嵌入恶意指令，就能让 AI 助手在回答用户问题时传播钓鱼攻击。Bunq 已修复，但这暴露了金融 AI 在处理非信任数据时的架构性缺陷。",
+    "quote": "一分钱攻破银行 AI——攻击成本低到搞笑，防御难度高到揪心",
+    "url": "https://blue41.com/blog/how-we-helped-bunq-secure-their-financial-ai-assistant/",
+    "source": "Blue41 / HN",
+    "published": "2026-06-10"
+  },
+  {
+    "title": "Techdirt 犀利开炮：认为 AI 能替代员工的 CEO 都是糟 CEO",
+    "content": "Techdirt 发表观点文章，批评近期多位 CEO 在公司全员邮件中强制要求使用 AI 工具、设置 token 使用排行榜等荒唐行为。文章引用 Box CEO Aaron Levie 的「AI 精神病」概念：CEO 因为离一线工作太远，最容易患上 AI 认知偏差。强调自愿使用和工具定位才是正确的 AI 策略，强制使用适得其反。HN 获 796 点赞。",
+    "quote": "CEO 离一线越远，「AI 能替代所有人」的幻觉就越严重——说得好，下次别说了",
+    "url": "https://www.techdirt.com/2026/06/09/ceos-who-think-ai-replaces-their-employees-are-just-bad-ceos/",
+    "source": "Techdirt / HN",
+    "published": "2026-06-09"
+  },
+  {
+    "title": "「清理 AI 摇滚明星开发者留下的烂摊子」引开发者强烈共鸣",
+    "content": "Jesse 发表长文描述接手「摇滚明星开发者」遗留代码的真实经历：一个人用别人看不懂的新语言新库重写了整个核心架构、拒绝了所有的 PR、离开后留下一地鸡毛。接手者花了一周才让代码在本地跑起来，最终不得不面对重写的噩梦。HN 获 481 点赞，351 条评论画风全是「你以为说的是我前同事？」。对创业公司招聘的警示：单兵能力强不等于团队资产。",
+    "quote": "每一个摇滚明星开发者离开后，都有三个倒霉蛋在「清理现场」",
+    "url": "https://www.codingwithjesse.com/blog/rockstar-developers/",
+    "source": "Coding with Jesse / HN",
+    "published": "2026-06-09"
+  }
+]
