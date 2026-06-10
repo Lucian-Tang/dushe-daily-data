@@ -4,8 +4,8 @@ wechat_daily_report.py - 微信公众号每日热点报告
 每天抓取指定关键词的公众号文章 → 生成飞书报告 → 归档NAS
 
 数据源（双通道）：
-  1. Exa MCP (mcporter) - 主通道
-  2. Sogou 微信搜索 - 备选
+  1. Sogou 微信搜索 - 主通道（专搜公众号，内容新鲜）
+  2. Exa MCP (mcporter) - 备选（仅 Sogou 结果不足时）
 
 用法:
   python3 scripts/wechat_daily_report.py --keywords "具身机器人,自动驾驶" --date 20260609
@@ -44,9 +44,64 @@ def today_compact() -> str:
 def uid(text: str) -> str:
     return hashlib.md5(text.encode()).hexdigest()[:8]
 
-# ===== Exa 搜索通道 =====
+# ===== 时间过滤 =====
+MAX_AGE_DAYS = 7  # 文章最大时效（天）
+MAX_AGE_HOT = 3   # 热点优选时效（天）
+
+def parse_datetime(dt_str: str):
+    """尝试解析日期字符串为 datetime，失败返回 None"""
+    for fmt in ["%Y-%m-%d %H:%M:%S", "%Y-%m-%d", "%Y/%m/%d", "%Y年%m月%d日"]:
+        try:
+            return datetime.strptime(dt_str[:19].strip(), fmt).replace(tzinfo=CST)
+        except (ValueError, IndexError):
+            continue
+    return None
+
+def filter_by_recency(items: list, days: int = MAX_AGE_DAYS) -> list:
+    """过滤掉超过 days 天的文章，并返回按时间降序排列的结果"""
+    now = datetime.now(CST)
+    cutoff = now - timedelta(days=days)
+    filtered = []
+    for item in items:
+        published = item.get("published", "")
+        dt = parse_datetime(published)
+        if dt and dt >= cutoff:
+            item["_parsed_dt"] = dt
+            filtered.append(item)
+        elif not dt:
+            # 无时间信息的保留（但排到后面）
+            item["_parsed_dt"] = datetime.min.replace(tzinfo=CST)
+            filtered.append(item)
+    # 按时间降序（最新在前）
+    filtered.sort(key=lambda x: x["_parsed_dt"], reverse=True)
+    # 清理辅助字段
+    for item in filtered:
+        item.pop("_parsed_dt", None)
+    return filtered
+
+def friendly_age(dt_str: str) -> str:
+    """将日期转为人类可读的相对时间"""
+    dt = parse_datetime(dt_str)
+    if not dt:
+        return dt_str[:10] if dt_str else ""
+    now = datetime.now(CST)
+    diff = now - dt
+    if diff.total_seconds() < 0:
+        return dt_str[:10]
+    minutes = int(diff.total_seconds() / 60)
+    if minutes < 60:
+        return f"{minutes}分钟前"
+    hours = int(minutes / 60)
+    if hours < 24:
+        return f"{hours}小时前"
+    days = int(hours / 24)
+    if days < 30:
+        return f"{days}天前"
+    return dt_str[:10]
+
+# ===== Exa 搜索通道（备用）=====
 def search_exa_wechat(query: str, count: int = 10) -> list:
-    """通过 Exa MCP 搜索微信公众号文章"""
+    """通过 Exa MCP 搜索微信公众号文章（备用通道）"""
     import re
     search_query = f'site:mp.weixin.qq.com {query}' if "具身" in query or "自动" in query else f'site:mp.weixin.qq.com {query}'
     
@@ -103,7 +158,7 @@ def search_exa_wechat(query: str, count: int = 10) -> list:
         logger.warning(f"⚠ Exa 搜索异常: {e}")
         return []
 
-# ===== 搜狗微信搜索通道（备用）=====
+# ===== 搜狗微信搜索通道（主通道）=====
 def search_sogou_wechat(keyword: str, count: int = 10) -> list:
     """通过搜狗微信搜索（Node.js）"""
     cmd = ["node", str(SEARCH_SCRIPT), keyword, "-n", str(count)]
@@ -157,13 +212,15 @@ def generate_markdown(date_str: str, sections: dict) -> str:
             title = item.get("title", "")
             url = item.get("url", "")
             author = item.get("author", "未知来源")
-            published = item.get("published", "")[:10]
+            published_raw = item.get("published", "")
+            age = friendly_age(published_raw)
             content = item.get("content", "")[:150]
             
             lines.append(f"### {i}. {title}")
             if url:
                 lines.append(f"🔗 {url}")
-            lines.append(f"📰 {author}" + (f"  |  🕐 {published}" if published else ""))
+            time_tag = age if age != published_raw[:10] else published_raw
+            lines.append(f"📰 {author}  |  🕐 {time_tag}" if author else f"🕐 {time_tag}")
             if content:
                 content_clean = content.replace("...", "").strip()
                 if content_clean:
@@ -198,26 +255,45 @@ def main():
     
     sections = {}
     for kw in kw_list:
-        kw_config = next((d for d in DEFAULT_KEYWORDS if d["keyword"] == kw), None)
         items = []
+        seen_urls = set()
         
-        # 主通道：Exa
-        exa_items = search_exa_wechat(kw, count=args.count)
-        items.extend(exa_items)
+        # 主通道：搜狗微信搜索（专搜公众号，内容新鲜）
+        sogou_items = search_sogou_wechat(kw, count=args.count)
+        for si in sogou_items:
+            url = si.get("url", "")
+            if url not in seen_urls:
+                items.append(si)
+                seen_urls.add(url)
         
-        # 如果 Exa 返回不足，用搜狗补充
+        # 如果搜狗结果不足，用 Exa 补充
         if len(items) < 3:
-            logger.info(f"Exa 结果不足，尝试搜狗搜索补充...")
+            logger.info(f"搜狗结果不足({len(items)}条)，尝试 Exa 补充...")
+            exa_items = search_exa_wechat(kw, count=args.count)
+            for ei in exa_items:
+                url = ei.get("url", "")
+                if url not in seen_urls:
+                    items.append(ei)
+                    seen_urls.add(url)
+
+        # 时间过滤：先按热点时效过滤，不足则放宽到最大时效
+        filtered = filter_by_recency(items, days=MAX_AGE_HOT)
+        if len(filtered) < 3 and len(items) > len(filtered):
+            logger.info(f"  {kw}: 热点时效({MAX_AGE_HOT}天)仅{len(filtered)}条，放宽到{MAX_AGE_DAYS}天")
+            filtered = filter_by_recency(items, days=MAX_AGE_DAYS)
+        # 如果过滤后还有剩余就使用，否则用全部（不丢数据）
+        sections[kw] = filtered if filtered else filter_by_recency(items, days=MAX_AGE_DAYS)
+        logger.info(f"  {kw}: 原始{len(items)}条 → 过滤后{len(sections[kw])}条")
+
+    # 最终检查：如果所有板块都为空，发个警告
+    total_filtered = sum(len(v) for v in sections.values())
+    if total_filtered == 0:
+        logger.warning("⚠️ 所有板块过滤后均为空！尝试不限制时间重新生成...")
+        sections = {}
+        for kw in kw_list:
             sogou_items = search_sogou_wechat(kw, count=args.count)
-            # 去重
-            seen_urls = {i.get("url") for i in items}
-            for si in sogou_items:
-                if si.get("url") not in seen_urls:
-                    items.append(si)
-                    seen_urls.add(si.get("url"))
-        
-        sections[kw] = items
-        logger.info(f"  {kw}: 共 {len(items)} 篇文章")
+            sections[kw] = sogou_items
+            logger.info(f"  {kw}: 不限时间共 {len(sogou_items)} 条")
     
     # 生成报告
     report = generate_markdown(date_str, sections)
