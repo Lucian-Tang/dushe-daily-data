@@ -1,90 +1,128 @@
 [
   {
-    "title": "Claude Fable 5 / Mythos 5 发布，Anthropic 最强模型引爆 HN",
-    "content": "Anthropic 发布 Claude Fable 5（通用版）和 Mythos 5（无安全限制版），在多项基准测试全面领先。HN 获 2527 点赞和 2030 条评论，创下今年最高讨论热度。Fable 5 比 Opus 4.8 定价低一半（$10/$50 per million tokens），约 5% 敏感问题自动降级处理。Stripe 用其在 5000 万行 Ruby 代码库中一天完成原本两个月的迁移工作。",
-    "quote": "2527 点赞量碾压级发布，其他厂商这个月还能睡个安稳觉？",
-    "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
-    "source": "Anthropic / HN",
-    "published": "2026-06-10"
+    "title": "Niteshift 获 Greylock 领投 700 万美元种子轮",
+    "content": "前Datadog早期工程师Sajid Mehmood和Conor Branagan创立的Niteshift获Greylock合伙人Jerry Chen领投的700万美元种子轮。Niteshift是一个AI编程辅助平台，核心卖点是模型无关路由——可在OpenAI、Anthropic及各开源模型间切换，帮助企业避免被单一AI巨头锁定。天使投资人包括Reid Hoffman、Datadog的Olivier Pomel等。Niteshift按分钟计费而非按token。",
+    "quote": "Datadog老兵的新赌局：大厂终将背叛你，趁早准备后路。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/06/10/datadog-veterans-launch-ai-coding-startup-niteshift-on-a-bet-against-big-ai-lock-in/",
+    "published": "2026-06-11",
+    "uid": "startup_dda6f744"
   },
   {
-    "title": "德国里程碑裁决：Google 须为 AI Overviews 虚假内容承担直接责任",
-    "content": "慕尼黑地方法院发布临时禁令，认定 Google AI Overviews 生成的错误信息属于 Google「自身言论」，而非第三方搜索结果引用。Google 因将两家正规出版公司与诈骗、订阅陷阱错误关联而被判直接侵权。法院强调 AI 用自己的话「重写和评判」搜索结果，与传统搜索引擎责任框架完全不同，现有搜索引擎免责条款不适用。",
-    "quote": "AI 犯法不能甩锅给搜索算法了，硅谷法务部要加班了",
-    "url": "https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/",
-    "source": "The Decoder / HN",
-    "published": "2026-06-10"
+    "title": "Jedify获2400万美元为AI Agent搭上下文图谱",
+    "content": "纽约创业公司Jedify完成2400万美元A轮融资，由Norwest领投，Snowflake Ventures作为战略投资方参与。Jedify通过API连接企业数据库、SaaS工具、Slack等多源数据，构建「上下文图谱」让AI Agent真正理解业务。目前已有10-20家早期客户，包括The Weather Company。累计融资约3300万美元。",
+    "quote": "AI Agent连公司怎么定义收入都不知道就敢自称智能，Jedify来补课了。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/06/10/jedify-raises-24m-to-help-companies-arm-ai-agents-with-context-on-their-business/",
+    "published": "2026-06-11",
+    "uid": "startup_d061d70f"
   },
   {
-    "title": "Apple 重构 Apple Intelligence，底层模型完全转向 Google Gemini",
-    "content": "Apple 宣布与 Google 深度合作，基于 Gemini 技术联合打造新一代 Apple Foundation Models。新模型支持多模态（图像理解与生成、高级照片编辑），系统协调器可根据当前应用和任务定制 AI 响应。Apple 强调依然使用端侧处理和 Private Cloud Compute，隐私承诺不变。此举标志苹果在 AI 策略上的重大转向——从自研转向借力。",
-    "quote": "嘴上说不搞军备竞赛，身体却很诚实地抱了 Google 大腿",
-    "url": "https://www.macrumors.com/2026/06/08/apple-reveals-new-ai-architecture/",
-    "source": "MacRumors / HN",
-    "published": "2026-06-08"
+    "title": "SpaceX IPO获中东主权基金数十亿美元认购",
+    "content": "SpaceX 750亿美元IPO即将于本周五上市，认购需求接近4倍超额。沙特公共投资基金和科威特投资局各自下单10亿至50亿美元，卡塔尔投资局也可能大额参与。然而Morningstar仅给出8250亿美元估值，远低于投行的1.8万亿美元，认为其中很大一部分是对轨道数据中心计划的看涨期权。",
+    "quote": "投资SpaceX=买发射垄断+赌马斯能把数据中心塞进太空。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/06/10/the-three-hard-tech-moonshots-fueling-spacexs-unbelievable-ipo/",
+    "published": "2026-06-11",
+    "uid": "startup_ea5ca2db"
   },
   {
-    "title": "PgDog 获 550 万美元种子轮融资，让 Postgres 无限水平扩展",
-    "content": "YC 孵化的 PgDog 宣布完成 $5.5M 种子轮（Basis Set、YC、Pioneer Fund 参投）。核心产品是一个 Postgres 代理层，让传统 Postgres 实现水平扩展，已服务超过 200 万 QPS 的生产流量，处理超过 20TB 的分片数据。创始人 Lev Kokotov 来自 Instacart 基础设施团队，他说「如果 Postgres 能搞定大规模场景，没人会去用 Mongo 或 Dynamo」。",
-    "quote": "三千人三人的小团队拿着 550 万美刀挑战全球数据库格局，创业就该这样",
-    "url": "https://pgdog.dev/blog/our-funding-announcement",
-    "source": "PgDog / HN",
-    "published": "2026-06-10"
+    "title": "企业支出平台Ramp获7.5亿美元估值440亿",
+    "content": "企业支出管理平台Ramp完成7.5亿美元新一轮融资，由Iconiq、GIC和安大略教师退休基金领投，投后估值440亿美元。这家成立7年的纽约公司正在激烈挑战Brex。Ramp还同期发布AI Index报告，显示最激进的AI采用企业每月每名员工在AI上花费7500美元，环比增长14.1%。",
+    "quote": "帮公司省钱的SaaS先把自己喂成了440亿巨兽，这商业模式真香。",
+    "source": "Crunchbase News",
+    "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-june-5-2026/",
+    "published": "2026-06-11",
+    "uid": "startup_f1b99402"
   },
   {
-    "title": "构建 HTML 优先的网站让用户量一夜翻倍",
-    "content": "开发者 Moh Koh 分享了一个实用案例：某公共服务公司两次花大价钱用 React 构建表单应用都以惨败告终（线上 3 天即被投诉撤下）。他改用 Astro 构建 HTML 优先方案，零 JavaScript 依赖、渐进增强，上线后用户量直接翻倍。文章引起强烈共鸣，HN 获 752 点赞。对 SaaS 创业团队的启示：别为了炫技牺牲可用性，功能服务不需要 SPA 秀操作。",
-    "quote": "React 项目三天翻车，纯 HTML 一夜翻倍，这个故事前端圈该裱起来",
-    "url": "https://mohkohn.co.uk/writing/html-first/",
-    "source": "Moh Koh / HN",
-    "published": "2026-06-10"
+    "title": "Supabase获5亿美元融资估值105亿",
+    "content": "开源数据库和AI开发者平台Supabase完成5亿美元新一轮融资，由GIC领投，投后估值105亿美元。这家6年历史的旧金山公司已成为Firebase最受欢迎的开源替代方案。Supabase正积极布局AI应用构建工具，其开源策略在开发者社区中持续扩大影响力，帮助开发者快速搭建AI驱动应用。",
+    "quote": "Firebase的开源替代品估值超百亿，Google墙角被挖穿了。",
+    "source": "Crunchbase News",
+    "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-june-5-2026/",
+    "published": "2026-06-11",
+    "uid": "startup_2cb4067a"
   },
   {
-    "title": "Apple 开源 macOS Container Machines：为 Mac 带来原生级 Linux 容器体验",
-    "content": "Apple 开源 container 项目中的 Container Machines 功能，在 Mac 上提供高度集成的 Linux 运行环境。基于标准 OCI 镜像，支持 systemd 初始化，自动映射用户名和 home 目录，可在 Mac 端编辑、Linux 端编译运行，无需复制步骤。堪称 macOS 开发者梦寐以求的原生 Linux 开发环境，HN 获 1119 点赞。",
-    "quote": "Apple 终于对开发者好了一次——不过能别等这么多年才想起来吗",
-    "url": "https://github.com/apple/container/blob/main/docs/container-machine.md",
-    "source": "Apple GitHub / HN",
-    "published": "2026-06-10"
+    "title": "AI音乐公司Suno获4亿美元D轮估值54亿",
+    "content": "AI音乐生成工具Suno完成4亿美元D轮融资，由Bond领投，投后估值54亿美元。Suno面临多家唱片公司版权诉讼，指控其未经授权使用受版权保护的音乐训练AI。华纳音乐已与Suno达成授权协议并撤诉，但索尼和环球音乐仍在追诉中。AI音乐的商业化伴随版权战争同步推进。",
+    "quote": "估值54亿但版权官司比融资新闻还多，音乐圈的钱真烫手。",
+    "source": "Crunchbase News",
+    "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-june-5-2026/",
+    "published": "2026-06-11",
+    "uid": "startup_53b48784"
   },
   {
-    "title": "Google 发布 DiffusionGemma：开源文本扩散模型，推理速度提升 4 倍",
-    "content": "Google 推出开源实验性模型 DiffusionGemma（26B MoE，推理时仅激活 3.8B 参数），采用文本扩散方法而非自回归生成，同时生成整块文本。在单张 H100 上达 1000+ tokens/s，RTX 5090 上达 700+ tokens/s，量化后仅需 18GB 显存。Apache 2.0 协议开源，适用于实时编辑、快速迭代等延迟敏感场景。",
-    "quote": "26B 参数跑出 1000 tokens/s，这个速度让自回归模型脸上有点挂不住",
-    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/",
-    "source": "Google AI",
-    "published": "2026-06-10"
+    "title": "华纳音乐收购AI版权追踪初创Sureel AI",
+    "content": "华纳音乐集团宣布收购AI版权归属追踪初创Sureel AI。Sureel的专利技术可为歌曲创建「AI DNA」，将歌曲分解为组件元素，追踪AI模型如何使用这些元素进行训练和生成。华纳CEO表示此举强化了对艺人IP的保护和变现能力。Sureel将继续作为独立平台服务更广泛的音乐AI生态系统，交易金额未披露。",
+    "quote": "前脚跟Suno和解后脚买版权追踪公司，律师费预算拉满了。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/06/10/warner-music-acquires-ai-attribution-startup-sureel-ai/",
+    "published": "2026-06-11",
+    "uid": "startup_7218bd7c"
   },
   {
-    "title": "npm v12 宣布重大破坏性变更：默认禁止脚本执行和 Git/远程依赖",
-    "content": "npm 发布 v12 版本计划（2026 年 7 月发布），引入多项安全默认变更：allowScripts 默认关闭（不再自动执行依赖安装脚本）；--allow-git 和 --allow-remote 默认关闭。开发者需主动审核并批准白名单。安全加固方向正确，但大量老旧项目和企业 CI 可能面临「安装即报错」的噩梦。HN 获 460 点赞。",
-    "quote": "npm 终于开始认真搞安全了，但全世界的 CI 脚本估计要炸一片",
-    "url": "https://github.blog/changelog/2026-06-09-upcoming-breaking-changes-for-npm-v12/",
-    "source": "GitHub Blog / HN",
-    "published": "2026-06-09"
+    "title": "餐厅发现App Zest靠信用卡数据做推荐",
+    "content": "由前Saturn设计负责人Mario Gomez-Hall创立的餐厅发现App Zest正式公测，已获776和Kindred Ventures的180万美元Pre-Seed投资。用户绑定信用卡后通过Plaid读取餐饮消费记录，结合超8000万条评论数据用AI生成推荐。上线数周访问量超10万，专注推荐街角小店而非米其林打卡地。",
+    "quote": "翻你信用卡账单决定今晚吃啥，隐私换美食年轻人觉得划算。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/06/10/zest-launches-a-restaurant-discovery-app-powered-by-where-people-actually-eat/",
+    "published": "2026-06-11",
+    "uid": "startup_71240485"
   },
   {
-    "title": "研究显示 €0.01 转账就能攻破银行 AI 助手，间接注入成为金融 AI 致命弱点",
-    "content": "安全公司 Blue41 揭示了一个令人不安的金融 AI 安全隐患：欧洲数字银行 Bunq（2000 万用户）的 AI 助手存在间接提示注入漏洞，攻击者只需发起一笔 €0.01 的转账，在交易描述中嵌入恶意指令，就能让 AI 助手在回答用户问题时传播钓鱼攻击。Bunq 已修复，但这暴露了金融 AI 在处理非信任数据时的架构性缺陷。",
-    "quote": "一分钱攻破银行 AI——攻击成本低到搞笑，防御难度高到揪心",
-    "url": "https://blue41.com/blog/how-we-helped-bunq-secure-their-financial-ai-assistant/",
-    "source": "Blue41 / HN",
-    "published": "2026-06-10"
+    "title": "Decart发布Oasis 3自动驾驶仿真世界模型",
+    "content": "AI创业公司Decart发布Oasis 3实时世界模型，可生成照片级逼真的驾驶仿真环境，面向自动驾驶企业。模型通过API开放，定价每秒0.02美元。Decart此前获3亿美元融资估值近40亿美元，投资方包括丰田、Adobe、eBay和英伟达。CEO称运行成本比竞品低一个数量级，但实际测试中环境一致性会随时间衰减。",
+    "quote": "无限生成驾驶场景但开着开着纽约变欧洲，穿越技能点满了。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/06/10/decarts-new-world-model-can-simulate-hours-of-photorealistic-driving-with-some-caveats/",
+    "published": "2026-06-11",
+    "uid": "startup_d33ac16f"
   },
   {
-    "title": "Techdirt 犀利开炮：认为 AI 能替代员工的 CEO 都是糟 CEO",
-    "content": "Techdirt 发表观点文章，批评近期多位 CEO 在公司全员邮件中强制要求使用 AI 工具、设置 token 使用排行榜等荒唐行为。文章引用 Box CEO Aaron Levie 的「AI 精神病」概念：CEO 因为离一线工作太远，最容易患上 AI 认知偏差。强调自愿使用和工具定位才是正确的 AI 策略，强制使用适得其反。HN 获 796 点赞。",
-    "quote": "CEO 离一线越远，「AI 能替代所有人」的幻觉就越严重——说得好，下次别说了",
-    "url": "https://www.techdirt.com/2026/06/09/ceos-who-think-ai-replaces-their-employees-are-just-bad-ceos/",
-    "source": "Techdirt / HN",
-    "published": "2026-06-09"
+    "title": "Pinterest整合Amazon电商发力创作者变现",
+    "content": "Pinterest宣布与Amazon深化合作，创作者可将Amazon Storefront直接关联到Pinterest账户。推荐商品时自动生成Amazon联盟链接赚取佣金。该合作延续双方自2023年的广告伙伴关系。Pinterest此举意在对抗AI生成内容泛滥、重振购物平台定位，平台月搜索量超800亿次。后续还将支持更多电商伙伴接入。",
+    "quote": "一边打AI假图一边抱Amazon大腿搞钱，两手抓两手都硬。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/06/10/pinterest-bets-on-creators-with-amazon-storefront-integration/",
+    "published": "2026-06-11",
+    "uid": "startup_a468cfe7"
   },
   {
-    "title": "「清理 AI 摇滚明星开发者留下的烂摊子」引开发者强烈共鸣",
-    "content": "Jesse 发表长文描述接手「摇滚明星开发者」遗留代码的真实经历：一个人用别人看不懂的新语言新库重写了整个核心架构、拒绝了所有的 PR、离开后留下一地鸡毛。接手者花了一周才让代码在本地跑起来，最终不得不面对重写的噩梦。HN 获 481 点赞，351 条评论画风全是「你以为说的是我前同事？」。对创业公司招聘的警示：单兵能力强不等于团队资产。",
-    "quote": "每一个摇滚明星开发者离开后，都有三个倒霉蛋在「清理现场」",
-    "url": "https://www.codingwithjesse.com/blog/rockstar-developers/",
-    "source": "Coding with Jesse / HN",
-    "published": "2026-06-09"
+    "title": "顶级AI企业每月每员工花7500美元在AI上",
+    "content": "根据Ramp AI Index最新报告，美国排名前1%的「AI-pilled」企业每月每名员工在AI上花费约7500美元，环比增长14.1%。前10%企业月均花费611美元，中位数企业仅11.38美元。尽管此前有Nvidia高管称AI成本已超员工薪资，目前AI人均花费仍远低于软件工程师月薪1.6万美元的平均水平。",
+    "quote": "烧7500刀每月的AI账单还不够雇半个初级工程师，替代论先缓缓。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/06/10/ai-pilled-firms-spend-7500-per-employee-each-month-on-ai/",
+    "published": "2026-06-11",
+    "uid": "startup_4dc9eea2"
+  },
+  {
+    "title": "Anthropic秘密提交IPO申请冲刺公开市场",
+    "content": "AI独角兽Anthropic已秘密提交IPO申请，其最新估值已超越OpenAI，成为仅次于SpaceX的第二高估值私有科技公司。紧随其后，OpenAI也在6月8日秘密提交了IPO文件。两家公司接连启动上市标志着AI行业进入资本市场的全面检验期。Anthropic此前刚完成与Blackstone等合作的15亿美元AI服务合资融资。",
+    "quote": "Anthropic和OpenAI排队敲钟，AI烧了这么多钱该散户接盘了。",
+    "source": "Crunchbase News",
+    "url": "https://news.crunchbase.com/public/ai-unicorn-anthropic-files-confidentially-for-ipo/",
+    "published": "2026-06-11",
+    "uid": "startup_3ed33181"
+  },
+  {
+    "title": "SpaceX IPO 前夕印度对 Starlink 准入发生变数",
+    "content": "SpaceX IPO前再遇波折——印度政府已暂停Starlink全国落地计划，担忧无法有效管控该服务。此前SpaceX在伊朗未获法律许可即允许Starlink接入，引发印度安全部门警惕。尽管SpaceX已花费数年游说新德里并于2025年获得运营牌照，但数据本地化和网络安全合规要求仍在谈判中。Starlink用户增长放缓也给IPO前景添阻力。",
+    "quote": "先接入后谈判的马斯克式操作在印度碰了钉子，主权不是闹着玩的。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/06/10/the-indian-government-got-cold-feet-on-starlink-just-before-spacexs-ipo/",
+    "published": "2026-06-11",
+    "uid": "startup_791baa00"
+  },
+  {
+    "title": "核聚变公司Helion获4.65亿G轮估值155亿",
+    "content": "聚变能源初创公司Helion完成4.65亿美元G轮融资，由Thrive Capital领投，投后估值155亿美元，累计融资至少15亿美元。Helion目标是建造全球首座核聚变发电厂，位于华盛顿州埃弗雷特。核聚变被视为终极清洁能源方案，但商业化仍面临巨大工程挑战。本轮融资规模表明顶级风投对聚变能源赛道信心持续加码。",
+    "quote": "聚变发电永远十年后但VC的钱已到位，这就是信仰的力量。",
+    "source": "Crunchbase News",
+    "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-june-5-2026/",
+    "published": "2026-06-11",
+    "uid": "startup_3a453750"
   }
 ]

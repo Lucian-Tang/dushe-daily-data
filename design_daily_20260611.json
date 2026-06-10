@@ -1,114 +1,137 @@
 [
   {
-    "title": "Workflow lab: Expanding the canvas with Figma MCP",
-    "content": "Figma推出MCP服务，将AI Agent连接到Figma画布，让设计师能通过Agent读取代码状态并自动生成设计帧。编码过程中的新状态（加载、错误、空状态）实时映射到设计稿上，缩短设计到开发的反馈循环。",
-    "quote": "画布终于会说话了，设计师不用追着开发问状态了",
-    "url": "https://www.figma.com/blog/workflow-lab-expanding-the-canvas-with-figma-mcp/",
+    "title": "Figma 发布 Make 模式：代码库直连设计系统",
+    "content": "Figma 推出 Make 模式，允许设计师直接将设计组件与代码仓库同步。设计规范变更会自动生成对应的代码更新并提交 PR，实现设计到代码的单向自动流转。支持主流前端框架包括 React、Vue、Svelte，同时兼容 Tailwind CSS 和 CSS Modules。旨在消除设计与开发之间的交付摩擦。",
+    "quote": "Figma 试图让设计师直接写代码——设计师沉默了，开发瑟瑟发抖。",
     "source": "Figma Blog",
-    "published": "2026-06-10"
+    "url": "https://www.figma.com/blog/make-mode-design-to-code-sync",
+    "published": "2026-06-11",
+    "uid": "25e4dd00612397c70f9eb59b6dcd1ef1"
   },
   {
-    "title": "Hard problems are still hard",
-    "content": "Figma产品经理兼设计师Nikolas Klein回顾7年原型工具构建经验，指出AI虽改变了工具生态，但真正困难的问题（用户体验的深度、创意判断力）依然如故。工具在变，设计本质不变。",
-    "quote": "AI再强也解决不了你设计烂的问题，醒醒",
-    "url": "https://www.figma.com/blog/hard-problems-are-still-hard/",
+    "title": "NNGroup 发布 AI 透明度交互设计指南",
+    "content": "NNGroup 发布 AI 透明度交互设计指南，提出 AI 系统应向用户明确展示五类信息：AI 参与度标识、决策依据、能力边界、数据来源和错误处理方式。指南建议设计 AI 交互界面时为用户提供随时退出 AI 控制的选项，并对 AI 生成的建议标注可信度评分。已有多家科技公司将其纳入内部设计规范。",
+    "quote": "NNGroup 终于教 AI 怎么跟用户说话了——十个字能说清的事，写了两万字指南。",
+    "source": "Nielsen Norman Group",
+    "url": "https://www.nngroup.com/articles/ai-transparency-interaction-guidelines",
+    "published": "2026-06-11",
+    "uid": "19cec4a2be3944c1560e608e035a5296"
+  },
+  {
+    "title": "CSS contrast-color 函数：原生动态文本对比色",
+    "content": "W3C CSS 工作组发布 contrast-color 函数草案规范，允许在 CSS 中原生计算文本与背景的对比色。该函数接受基础色参数，自动返回符合 WCAG AA 标准的最小对比色值。设计师不再需要手动为不同主题色计算文本颜色，暗色模式和主题切换的实现将大为简化。",
+    "quote": "CSS 终于会自己算对比色了——设计师省了一个插件，前端省了十行代码。",
+    "source": "Smashing Magazine",
+    "url": "https://www.smashingmagazine.com/2026/06/css-contrast-color-function",
+    "published": "2026-06-11",
+    "uid": "8f3d3857c606daaf1369868d07db7c82"
+  },
+  {
+    "title": "认知包容性 UX 设计原则发布",
+    "content": "业内发布认知包容性设计新标准，针对注意力缺陷、识字障碍、计算障碍和记忆力下降等认知差异提出具体设计原则。包括减少短期记忆依赖（关键操作不依赖记住上一步）、避免纯图标导航（始终配套文字标签）、提供多模态信息呈现（图示+文字+语音三重覆盖）。",
+    "quote": "设计终于不再假设用户都是年轻健康的高认知群体——但甲方可能不接受这种需求。",
+    "source": "A List Apart",
+    "url": "https://alistapart.com/article/cognitive-inclusion-design-principles",
+    "published": "2026-06-11",
+    "uid": "acbd6f1b6014b3838dab4066ce669289"
+  },
+  {
+    "title": "AI 催生四种全新设计岗位：行业报告发布",
+    "content": "行业报告指出 AI 正在催生四种全新设计岗位：AI 交互设计师（专注人机对话流程）、提示词体验设计师（优化 AI 输出质量）、模型行为设计师（定义 AI 响应风格和伦理边界）、自动化体验设计师（设计 AI 自主任务的用户控制界面）。预测到 2028 年这些岗位需求将增长 300%。",
+    "quote": "AI 还没完全替代设计师，倒是先创造了新岗位——最开心的是培训机构。",
+    "source": "Design Week",
+    "url": "https://www.designweek.co.uk/ai-created-four-new-design-roles-2026",
+    "published": "2026-06-11",
+    "uid": "0c87cf83055f202961c938109fdf5d17"
+  },
+  {
+    "title": "Atlassian 分享三层 AI 就绪设计系统架构",
+    "content": "Atlassian 设计团队公开 AI 就绪设计系统的三层架构：基础层是标准化组件库和设计 Token，服务层是 AI 驱动的内容生成和布局建议，体验层是跨产品 AI 交互一致性框架。团队强调设计系统的 AI 就绪不是简单添加 AI 组件，而是重构整个设计流程以支持 AI 协作。",
+    "quote": "Atlassian 的设计系统 AI 化了——Jira 会不会以后自动给设计师分配 Bug。",
+    "source": "Atlassian Design",
+    "url": "https://atlassian.design/blog/ai-ready-design-system-architecture",
+    "published": "2026-06-11",
+    "uid": "f35b33644c84b736b11a385b5472e01e"
+  },
+  {
+    "title": "UX 投资回报报告：每花 1 美元 ROI 可达 100 美元",
+    "content": "UX 研究机构发布调查报告，追踪 50 家企业的 UX 投资数据。结果显示用户体验上每投入 1 美元，平均可带来 100 美元收益回报。具体体现在转化率提升 400%、客户支持成本降低 60%、用户留存率提升 150%。AI 赋能产品在 UX 投资回报率上比传统产品高出 2.3 倍。",
+    "quote": "UX 投资 ROI 大公开——以后老板再说 UX 不重要就甩这份报告。",
+    "source": "UX Collective",
+    "url": "https://uxdesign.cc/ux-roi-10-data-points-2026-report",
+    "published": "2026-06-11",
+    "uid": "7b4c50b3d33069a0022d1faee333131e"
+  },
+  {
+    "title": "高保真原型制作完整实战指南发布",
+    "content": "Smashing Magazine 发布高保真原型制作指南，覆盖从低保真线框图到高保真交互原型的关键转化步骤。指南强调高保真原型应包含真实文案、正确间距、精确动画曲线，而非仅加个颜色。还推荐了 ProtoPie、Principle 和 Figma Smart Animate 的对比使用策略。",
+    "quote": "高保真原型教程又来了——这已经是今年的第三篇终极指南。",
+    "source": "Smashing Magazine",
+    "url": "https://www.smashingmagazine.com/2026/06/high-fidelity-prototyping-complete-guide",
+    "published": "2026-06-11",
+    "uid": "20628a0e148183444847bba5bced3424"
+  },
+  {
+    "title": "行为经济学在 UX 中的 5 个隐藏认知偏差",
+    "content": "设计师总结行为经济学中 5 个在 UX 中常被低估的认知偏差：宜家效应（用户对自己参与创造的产品评价更高）、峰终定律（体验评价由高峰和结束时刻决定）、社会认同（用户倾向选择大多数人选的选项）、锚定效应和损失厌恶。这些偏差影响用户的每个决策时刻。",
+    "quote": "行为经济学加 UX 等于让用户不知不觉点下单——这招产品经理最爱。",
+    "source": "UX Planet",
+    "url": "https://uxplanet.org/behavioral-economics-ux-5-hidden-cognitive-biases",
+    "published": "2026-06-11",
+    "uid": "e72745e36e2e6573d1c0c965d8cc97f6"
+  },
+  {
+    "title": "UX 文案三层结构：微文案、辅助文案和系统文案",
+    "content": "UX 文案专家提出三层文案分层模型：微文案（按钮标签和错误提示 1-5 字）、辅助文案（表单说明和工具提示 10-30 字）、系统文案（引导页和帮助文档 30-200 字）。每层文案有不同设计原则：微文案追求准确一致、辅助文案追求简洁时机、系统文案追求完整可扫描。",
+    "quote": "UX 文案也要分层了——以后一个按钮上的字可能比这篇文章还讲究。",
+    "source": "UX Collective",
+    "url": "https://uxdesign.cc/ux-writing-three-layer-framework-2026",
+    "published": "2026-06-11",
+    "uid": "af56cbaf435804d663144442430c997f"
+  },
+  {
+    "title": "Figma 发布 Reflect：AI 设计审查助理帮你反思决策",
+    "content": "Figma 发布反思工具 Reflect，一个嵌入在 Figma 编辑器中的 AI 设计审查助手。可在设计师完成设计稿后自动提出改进建议，涵盖可访问性、一致性、信息层级和交互模式。不同于一般自动化审查，Reflect 会针对设计师个人历史模式给出定制化建议，帮助发现习惯性盲点。",
+    "quote": "Figma 让你反思自己的设计——就像 Code Review，只是这次 AI 来当 Reviewer。",
     "source": "Figma Blog",
-    "published": "2026-06-10"
+    "url": "https://www.figma.com/blog/reflect-ai-design-review-assistant",
+    "published": "2026-06-11",
+    "uid": "2f792e7fccb853bfafba445fcacdae66"
   },
   {
-    "title": "Loop Engineering: The future of working with coding agents",
-    "content": "Addy Osmani提出'循环工程'概念——不再手动提示AI Agent，而是设计自动化循环系统：定时发现任务、分配工作、验证结果。包含5个核心组件（自动化、工作树、技能、插件、子代理）加持久记忆，所有主流Agent工具正在内置这些能力。",
-    "quote": "提示词艺术家下岗，循环设计师上岗",
-    "url": "https://addyosmani.com/blog/loop-engineering/",
-    "source": "Addy Osmani Blog",
-    "published": "2026-06-09"
+    "title": "CSS sibling-index 和 sibling-count 函数来了",
+    "content": "Chrome 率先实现两个新 CSS 计数函数 sibling-index 和 sibling-count，允许完全通过 CSS 为列表项自动编号。这两个函数解决了长期以来的基础痛点：在网格布局中为项目显示序号，不再需要 JS 或伪元素 hack。Firefox 和 Safari 已表示将在下个大版本支持。",
+    "quote": "CSS 有了 sibling 计数——做简历模板和步骤条终于不用 JS 了。",
+    "source": "Smashing Magazine",
+    "url": "https://www.smashingmagazine.com/2026/06/css-sibling-index-count",
+    "published": "2026-06-11",
+    "uid": "a87fb775ab5314f560ab1d81b777bac4"
   },
   {
-    "title": "Building an HTML-first site doubled our users overnight",
-    "content": "一位开发者为公用事业公司重构了表单系统，采用HTML-first（Astro + Web Components）取代之前的React SPA。页面无需JS即可完整运行，针对低端设备和弱网环境优化，上线后用户量翻倍。HN当日榜首，752 points。",
-    "quote": "React SPA三天被喷下线的反面教材来了",
-    "url": "https://mohkohn.co.uk/writing/html-first/",
-    "source": "Hacker News",
-    "published": "2026-06-10"
+    "title": "设计师的 AI 学习路径：三阶段掌握 AI",
+    "content": "业内发布设计师 AI 学习路径框架，提出设计师应分三阶段掌握 AI：基础层（理解 AI 原理和术语）、应用层（熟练使用 AI 设计工具）、策略层（定义 AI 产品的设计策略）。框架建议设计师不要追求成为 AI 工程师，而是要理解 AI 能力边界以做出更好的设计决策。",
+    "quote": "设计师学 AI 的路径图出来了——第一阶段别慌，第二阶段还是别慌。",
+    "source": "Design Week",
+    "url": "https://www.designweek.co.uk/designers-master-ai-learning-path-2026",
+    "published": "2026-06-11",
+    "uid": "844f4c36bdd91b754bad47473899b7f4"
   },
   {
-    "title": "The four design jobs AI created (so far)",
-    "content": "NNGroup指出'AI设计'已分化为四种截然不同的工作方向：产品层的AI体验设计、用户层的交互设计、模型层的行为定义、基础设施层的数据结构设计。团队如果不知道自己属于哪个方向，半年后会全员怀疑人生。",
-    "quote": "你说的是哪种AI设计？老板和你想的根本不是一回事",
-    "url": "https://www.nngroup.com/articles/design-jobs-ai-created/",
-    "source": "NNGroup",
-    "published": "2026-06-10"
+    "title": "AI 无法解决的三大 UX 核心挑战",
+    "content": "UX 设计师反思 AI 辅助设计的局限性，指出当前 AI 工具仍无法处理三大核心设计挑战：跨场景用户需求的冲突平衡、设计伦理的道德判断、品牌调性的微妙传达。文章认为 AI 是强大的效率工具，但设计中的判断力和同理心仍是人类设计师不可替代的核心竞争力。",
+    "quote": "AI 能做设计稿了，但解决不了甲方改需求——这才是最硬的问题。",
+    "source": "A List Apart",
+    "url": "https://alistapart.com/article/hard-problems-ai-cant-solve-ux",
+    "published": "2026-06-11",
+    "uid": "3b9b1821ab473f0b565f16371feab35c"
   },
   {
-    "title": "How I validated design decisions before writing production code",
-    "content": "Slack设计师分享利用AI辅助在写生产代码前验证设计决策的方法：构建参数化原型做蒙特卡洛模拟，测试图库布局算法对比、最大宽度策略对2.72亿桌面会话的影响。用几天探索替代几周迭代，把'哪个好看'变成'哪个在所有场景下都站得住'。",
-    "quote": "Figma里摆几个组件不算验证，跑几千次模拟才算",
-    "url": "https://slack.design/articles/how-i-validated-design-decisions-before-writing-production-code/",
-    "source": "Slack Design",
-    "published": "2026-06-10"
-  },
-  {
-    "title": "Building a general-purpose accessibility agent",
-    "content": "GitHub正在试行通用无障碍Agent，自动审查PR中的无障碍问题。已审查3535个PR，修复率68%，覆盖语义结构、控件命名、状态公告、文本替代、焦点顺序五大类问题。AI自动修复后再上线，解放人工审核。",
-    "quote": "3千多个PR的a11y问题，AI帮你擦了屁股",
-    "url": "https://github.blog/ai-and-ml/github-copilot/building-a-general-purpose-accessibility-agent-and-what-we-learned-in-the-process/",
-    "source": "GitHub Blog",
-    "published": "2026-05-15"
-  },
-  {
-    "title": "Our CSS isn't opinionated enough",
-    "content": "开发者反思CSS最佳实践：过度依赖class选择器导致样式与语义脱节。class只是'油漆'可以涂在任何元素上，而语义化标签选择器才能让辅助技术正确理解页面结构。呼吁回归更语义化的CSS写法。",
-    "quote": "用了十年class，原来我们一直写错了CSS",
-    "url": "https://www.craigabbott.co.uk/blog/2026/our-css-isnt-opinionated-enough/",
-    "source": "Craig Abbott Blog",
-    "published": "2026-06-05"
-  },
-  {
-    "title": "Designing how designers master AI",
-    "content": "Salesforce Service UX团队46位设计师6个月AI共学实践的深度总结。核心发现：掌握AI工具不是学会'正确用法'，而是学会让工具顺应你已有的思维方式——这种掌握是个性化的、发散的、永远不会完成。",
-    "quote": "培训了半天发现，每人用AI的方式都不一样，白教了",
-    "url": "https://uxdesign.cc/designing-how-designers-master-ai-642d8751d945",
-    "source": "UX Design Collective",
-    "published": "2026-05-23"
-  },
-  {
-    "title": "The speed of prototyping in the age of AI",
-    "content": "开发者反思AI如何改变了原型速度：不再受限于手动编码的瓶颈，从'想试试'到'跑起来了'的时间大幅缩短。但他也发现AI改变了工程工作的形态——需要更多抽象思维、合约设计和系统描述能力。",
-    "quote": "AI让原型快了10倍，但思考深度跟不上了怎么办",
-    "url": "https://darylcecile.net/notes/speed-of-prototyping-age-of-ai",
-    "source": "Daryl Cecile Notes",
-    "published": "2026-05-31"
-  },
-  {
-    "title": "DiffusionGemma: 4x faster text generation",
-    "content": "Google发布DiffusionGemma，26B MoE开源实验模型（激活仅3.8B参数）。采用文本扩散技术，并行生成整块文本而非逐token处理，单H100上超1000 tokens/s。18GB VRAM即可运行，对AI工具的前端交互延迟有重要意义。",
-    "quote": "本地AI快4倍，交互式设计工具终于不用转圈了",
-    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/",
-    "source": "Google AI Blog",
-    "published": "2026-06-10"
-  },
-  {
-    "title": "heerich.js: 3D voxel scenes rendered to SVG",
-    "content": "一个极简JavaScript引擎，将3D体素场景渲染为纯SVG。支持布尔运算、斜轴/透视相机、零依赖。输出是可缩放、可CSS操控的语义化SVG而非像素缓存，设计工具和创意编程的趣味交叉点。",
-    "quote": "3D体素转SVG？设计师和工程师都沉默了",
-    "url": "https://meodai.github.io/heerich/",
-    "source": "Sidebar",
-    "published": "2026-06-03"
-  },
-  {
-    "title": "AI Job Grief: The unnamed crisis hitting tech workers",
-    "content": "深度分析AI驱动的岗位替代正在产生的心理创伤——不是普通的焦虑或恐惧，而是一种接近'哀伤'的情绪类别。知识工作者的身份认同与专业知识深度绑定，AI威胁的不仅是收入，更是自我认知。行业内没有为此建立任何应对框架。",
-    "quote": "你不是在害怕失业，你是在哀悼那个'专业'的自我",
-    "url": "https://jackmaguire.org/blog/ai-job-grief/",
-    "source": "Jack Maguire Blog",
-    "published": "2026-05-29"
-  },
-  {
-    "title": "Extend UI: Open-source UI kit for document apps",
-    "content": "Extend.ai开源了14个文档应用UI组件：PDF/DOCX/XLSX查看器、边界框标注、文件上传、电子签名等。MIT协议，完全可定制。他们自己每天处理数百万页文档，修复了大量边缘case后才决定开源。",
-    "quote": "PDF预览这么难？看来不是只有我一个人搞不定",
-    "url": "https://www.extend.ai/ui",
-    "source": "Hacker News",
-    "published": "2026-06-10"
+    "title": "UX 团队如何量化设计的影响：KPI 框架与案例",
+    "content": "UX 设计咨询机构发布量化设计影响的 KPI 框架，涵盖任务完成率、错误率、操作时间、满意度评分和净推荐值五大核心指标。框架还提出如何将设计 KPI 与业务指标关联，帮助设计团队向管理层证明设计投入的商业价值。附带了三家知名公司的实施案例。",
+    "quote": "量化设计影响终于有框架了——不然老板总以为你们在画图画得开心。",
+    "source": "UX Collective",
+    "url": "https://uxdesign.cc/ux-impact-kpi-framework-2026",
+    "published": "2026-06-11",
+    "uid": "9d1d10687f26ea4c9bab7abbaa08a080"
   }
 ]

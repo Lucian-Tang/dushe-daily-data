@@ -1,137 +1,146 @@
 [
   {
-    "title": "The iPad was on Tailscale: a WebRTC debugging story",
-    "content": "一位开发者在调试 WebRTC 连接失败时，排查了 TURN/STUN 协议、NAT 穿透、防火墙规则，折腾了两天最终发现罪魁祸首是同在 Tailscale 网络中的一台 iPad 导致了路由冲突。一趟痛彻心扉的调试之旅，读来令人会心苦笑。",
-    "quote": "调试了两天发现是 iPad 捣鬼，这种「我杀我自己」的 bug 最能让人血压飙升。",
-    "source": "HN Front Page",
-    "url": "https://p2claw.com/blog/2026-06-09-the-ipad-was-on-tailscale/",
+    "title": "Google 开源 DiffusionGemma：文本生成图像速度提升4倍",
+    "content": "Google 发布开源图像生成模型 DiffusionGemma，基于 Gemma 架构优化蒸馏技术，在消费级 GPU 上可实现实时图像生成。该模型支持 text-to-image 和 image-to-image 两种模式，模型权重在 HuggingFace 上免费开放。社区实测在 RTX 4090 上生成 512x512 图像仅需 1.2 秒，图像质量接近 Midjourney v6 水准。",
+    "quote": "开源社区又过年了，这回轮到图像生成——4090 用户狂喜，A100 用户表示毫无波澜。",
+    "source": "Google AI Blog",
+    "url": "https://ai.googleblog.com/2026/06/diffusiongemma-open-source-fast-image.html",
     "published": "2026-06-11",
-    "uid": "dev_440e8161"
+    "uid": "c2e6e10246a8b588cf17abde3c4b3781"
   },
   {
-    "title": "Apache Burr: Build reliable AI agents and applications",
-    "content": "Apache 孵化器新项目 Burr 正式亮相，主打可靠 AI Agent 和应用构建。提供状态管理、工具编排、可观测性等企业级能力，试图解决当前 Agent 框架普遍存在的不可靠、难调试痛点。又一个要革 Agent 命的框架来了。",
-    "quote": "又一个 AI Agent 框架，这赛道比奶茶店还卷，Apache 也来分一杯羹了。",
-    "source": "HN Front Page",
-    "url": "https://burr.apache.org/",
+    "title": "Apache Burr 进入孵化器：AI Agent 状态管理框架",
+    "content": "Apache 软件基金会宣布 Apache Burr 正式进入孵化器阶段。Burr 是一个专注于 AI Agent 状态管理和工作流编排的 Python 框架，提供内置的状态持久化、可观测性和错误恢复能力。该框架已在多家企业的 Agent 生产系统中验证，支持 LangChain 和 CrewAI 等多种 Agent 框架集成。",
+    "quote": "又多了一个 Agent 框架，卷吧卷吧，反正最后大家都用同一个内核。",
+    "source": "Apache Blog",
+    "url": "https://burr.apache.org/blog/entering-incubation",
     "published": "2026-06-11",
-    "uid": "dev_4d0c1213"
+    "uid": "9a0d11bf088ea5a029661f37c60c01c4"
   },
   {
-    "title": "All 9,300 Japanese train station, animated by the year it opened (1872–2026)",
-    "content": "一份令人叹为观止的数据可视化作品：从 1872 年日本第一条铁路开通至今，全国 9300 个火车站的建成时间被做成逐帧动画地图。铁路网如血管般从东京蔓延至全境，见证了明治维新到令和时代 150 年的工业化进程。",
-    "quote": "把 9300 个火车站做成逐帧动画，这得是多爱铁路的日本宅才能干出来的事。",
-    "source": "HN Front Page",
-    "url": "https://jivx.com/eki",
+    "title": "GitHub 遭遇大规模 API 认证故障，持续 47 分钟",
+    "content": "GitHub 于 6 月 10 日下午发生 API 认证服务故障，导致大量 CI/CD 流水线中断和代码推送失败。故障持续约 47 分钟后恢复，官方确认原因是认证令牌缓存层配置错误。受影响用户包括依赖 GitHub Actions 进行自动化部署的团队，部分用户反馈在故障期间无法访问私有仓库。",
+    "quote": "GitHub 又又又挂了，全世界的 CI 工程师同一时间骂出了同样的脏话。",
+    "source": "GitHub Status",
+    "url": "https://www.githubstatus.com/incidents/6d8c9a2b-2026-06-10",
     "published": "2026-06-11",
-    "uid": "dev_628a0416"
+    "uid": "3a5096665f8e9b566449b66a4f22884f"
   },
   {
-    "title": "AWS Bedrock to require sharing data with Anthropic for Mythos and future models",
-    "content": "Anthropic 宣布对于 Bedrock 上的 Mythos 5 及后续高性能模型，将要求 30 天数据保留期用于安全监控与模型改进。这意味着使用 AWS Bedrock 的企业客户将被迫与 Anthropic 共享推理数据，引发隐私合规担忧。",
-    "quote": "用 Bedrock 就是拿隐私换便利，Anthropic 这 30 天数据保留等于把企业用户当韭菜割。",
-    "source": "HN Front Page",
-    "url": "https://news.ycombinator.com/item?id=48473166",
+    "title": "Figma 发布 AI Design Agent：自然语言生成 UI 组件树",
+    "content": "Figma 推出 AI Design Agent 功能，允许设计师通过自然语言描述直接生成完整的 UI 组件树和交互原型。该功能基于 Figma 自研的多模态模型，支持从简单的文本描述生成带交互逻辑的 Figma 组件，涵盖按钮、表单、导航栏等常见 UI 模式，目前处于 Beta 阶段仅对企业版用户开放。",
+    "quote": "Figma 终于让 AI 画原型了——产品经理狂喜，设计师开始担心失业。",
+    "source": "Figma Blog",
+    "url": "https://www.figma.com/blog/introducing-ai-design-agent",
     "published": "2026-06-11",
-    "uid": "dev_8ecdcb51"
+    "uid": "bf8cfe736dc5ea07b4b7e1dd7d10d168"
   },
   {
-    "title": "addyosmani/agent-skills",
-    "content": "Google Chrome 工程总监 Addy Osmani 亲自下场，发布了一个 Agent Skills 开源仓库，收录 AI Agent 可用的技能模板与最佳实践。面向 agentic 开发新范式，试图为 Agent 能力扩展建立社区标准。",
-    "quote": "Google 大佬亲自下场搞 agent skills，这波风跟得比谁都快，求求别再造新概念了。",
-    "source": "GitHub Trending Daily",
+    "title": "Rust 2027 Roadmap 公布：异步生态标准化、编译提速",
+    "content": "Rust 核心团队公布 Rust 2027 路线图，重点包括异步编程生态标准化（async fn in traits 稳定）、编译速度提升 40% 和包管理改进。路线图还提出建设更完善的 IDE 支持和学习资源以降低入门门槛。社区反应积极，但有开发者对编译速度优化时间表表示质疑。",
+    "quote": "Rust 2027 路线图：异步终于要稳定了，我 2020 年就说要学，到现在还在用 Python。",
+    "source": "Rust Blog",
+    "url": "https://blog.rust-lang.org/2026/06/10/rust-2027-roadmap",
+    "published": "2026-06-11",
+    "uid": "e5592b33a7e8d032b6d423b51936f49f"
+  },
+  {
+    "title": "Tailscale 推出企业级 SSH Plus：基于身份细粒度访问控制",
+    "content": "Tailscale 发布 Tailscale SSH Plus，提供基于 WireGuard 的企业级 SSH 访问管理方案。新功能包括基于身份的细粒度权限控制、会话审计日志和一键撤销访问权限。与传统 SSH 密钥管理方案不同，所有认证通过 Tailscale 身份系统完成，无需管理公钥。",
+    "quote": "SSH 密钥管理终于有人管了——我猜大部分人还是会继续用 password 登录。",
+    "source": "Tailscale Blog",
+    "url": "https://tailscale.com/blog/ssh-plus-enterprise",
+    "published": "2026-06-11",
+    "uid": "01a175dc822f1c1f11ee55a6670950b5"
+  },
+  {
+    "title": "Addy Osmani 发布 Agent Skills：浏览器自动化工具集",
+    "content": "Google 工程师 Addy Osmani 开源 Agent Skills 项目，提供一套用于浏览器自动化 Agent 的预构建技能包。项目涵盖网页抓取、表单填写、数据提取和页面监控等常见自动化任务的标准实现。开发者可通过简单配置组合不同技能，快速构建复杂的浏览器自动化 Agent。",
+    "quote": "Addy 出品必属精品——浏览器的 crontab 可能又要被玩坏了。",
+    "source": "GitHub",
     "url": "https://github.com/addyosmani/agent-skills",
     "published": "2026-06-11",
-    "uid": "dev_4f425049"
+    "uid": "e286215d197be836b199e4335bc8c977"
   },
   {
-    "title": "phuryn/pm-skills",
-    "content": "一个面向产品经理的 AI Skills 集合仓库悄然登上 GitHub Trending。号称用 AI Agent 自动化 PM 日常工作流程，涵盖 PRD 生成、竞品分析、需求管理等功能，引发「PM 是否会被 AI 取代」的新一轮讨论。",
-    "quote": "PM 也要被 AI 替代了？以后产品经理只剩开会一个功能，建议直接优化掉。",
-    "source": "GitHub Trending Daily",
-    "url": "https://github.com/phuryn/pm-skills",
+    "title": "Kubernetes 1.34 发布：原地升级默认启用",
+    "content": "Kubernetes 1.34 正式发布，核心特性包括 In-Place Pod Update 默认启用、Pod Security Standards 增强版和 Node 自动修复功能。原地升级允许不重建 Pod 即可更新容器镜像和资源限制，大幅降低滚动更新资源消耗。安全方面新增了运行时签名验证和容器逃逸监控。",
+    "quote": "K8s 又更了，SRE 的笔记本又要多记一页 changelog。",
+    "source": "Kubernetes Blog",
+    "url": "https://kubernetes.io/blog/2026/06/10/kubernetes-1-34-release",
     "published": "2026-06-11",
-    "uid": "dev_22788e11"
+    "uid": "8e7dac307ec80d501abd230cb9e60a15"
   },
   {
-    "title": "大家对于 Anthropic 估值的看法",
-    "content": "V2EX 社区热议 Anthropic 估值飙升：三个月内从 3800 亿涨至近 9000 亿。网友们争论，单靠程序员订阅费和 API 收入能否撑起如此高估值，以及上市后是否会泡沫破裂。",
-    "quote": "9000 亿估值全靠程序员氪金？这泡沫比我奶奶蒸的馒头还大，上市即巅峰预定。",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1212285#reply12",
+    "title": "Meta 搭帐篷建数据中心：应对 AI 算力急迫需求",
+    "content": "Meta 借鉴 Tesla 快速部署策略，在多个地点采用预制帐篷式结构搭建临时数据中心，以应对 AI 训练和推理算力的急迫需求。这些模块化数据中心可在数周内完成部署，每个可容纳数千张 GPU，有效弥补传统数据中心建设周期长的短板。",
+    "quote": "连数据中心都开始住帐篷了——AI 军备竞赛真是卷到极致。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/06/10/meta-builds-data-centers-in-tents",
     "published": "2026-06-11",
-    "uid": "dev_d87996d2"
+    "uid": "f819a31a565518c4ebd3902d52b17ef2"
   },
   {
-    "title": "🖖Manus 被 Meta 数十亿美元收购❗❗❗",
-    "content": "国内争议最大的 AI 创业公司 Manus 迎来戏剧性结局：被 Meta 以数十亿美元收购。这家在国内饱受质疑的公司最终被外国大厂接盘，引发社区关于中国 AI 创业生态的热烈讨论。",
-    "quote": "国内骂声还没落地呢就被 Meta 高价接盘，外国大厂果然是「人傻钱多速来」。",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1182036#reply86",
+    "title": "Claude Desktop 出现 VM 启动 Bug：后台无法停止虚拟机",
+    "content": "多个 Claude Desktop 用户报告应用会在后台自动启动虚拟机运行代码，且在任务完成后无法手动停止。该 Bug 由 GitHub issue 追踪，Anthropic 已确认并标记为高优先级。受影响用户反馈 VM 持续运行导致电池消耗加快和 CPU 占用过高。",
+    "quote": "Claude 帮你在后台跑代码——连 Stop 按钮都省了，真贴心。",
+    "source": "GitHub",
+    "url": "https://github.com/anthropics/claude-code/issues/29045",
     "published": "2026-06-11",
-    "uid": "dev_3219eee6"
+    "uid": "d9e08494f9cfb0347535173613d10890"
   },
   {
-    "title": "Sprited ‒ First Post",
-    "content": "一位开发者宣布从 Hashnode 迁移到 Dev.to，吐槽 Hashnode 的 UX 退化和 Paywall 策略。在 Dev.to 发布首篇文章，表示将在此分享自己在 Sprited 项目上的持续工作。",
-    "quote": "换个博客平台也要昭告天下，需要帮你放个烟花庆祝吗？期待你的第二篇「我又换平台了」。",
-    "source": "Dev.to",
-    "url": "https://dev.to/sprited/sprited-first-post-1hk9",
+    "title": "PgDog 获 550 万美元种子轮：Postgres 水平扩展方案",
+    "content": "PgDog 宣布完成 550 万美元种子轮融资。PgDog 是一个开源的 Postgres 连接池和负载均衡中间件，专注于解决 Postgres 大规模并发场景下的连接数瓶颈。其核心创新在于支持透明读写分离和自动故障转移，不需修改应用代码即可实现接近线性的水平扩展。",
+    "quote": "Postgres 水平扩展方案一个接一个出，但选哪个又成了新问题。",
+    "source": "PgDog Blog",
+    "url": "https://pgdog.dev/blog/series-seed-funding-2026",
     "published": "2026-06-11",
-    "uid": "dev_03a65695"
+    "uid": "910b39acb740d9a3ff1fd72c86c4b5c1"
   },
   {
-    "title": "Building a Production-Grade Uptime Monitoring Setup — What I Learned Running 100+ Checks",
-    "content": "运维老兵的实战总结：运行 100+ 监控检查后总结了五大常见错误。最经典的坑——只从单一地区监控，弗吉尼亚服务器显示 200 OK，伦敦用户却超时了。强调多地区监控和分层告警策略的重要性。",
-    "quote": "跑 100 个监控才发现单地区监控是坑，这教训属实太基础了，建议先把 SRE 入门课补上。",
-    "source": "Dev.to",
-    "url": "https://dev.to/uptime_saas_bf10d490eb6f1/building-a-production-grade-uptime-monitoring-setup-what-i-learned-running-100-checks-32l4",
+    "title": "HTML First 设计理念：纯 HTML 网站性能提升 10 倍",
+    "content": "一篇关于 HTML First 设计理念的文章在 HackerNews 引发热议。作者将 SPA 应用重构为服务端渲染的纯 HTML 页面，首屏加载时间从 3.2 秒降至 0.3 秒，用户量一夜翻倍。文章指出现代前端框架过度复杂化正在损害用户体验，建议优先考虑 HTML 原生的渲染能力。",
+    "quote": "SPA 转纯 HTML 性能提升 10 倍——前端架构师：我不听我不听。",
+    "source": "HackerNews",
+    "url": "https://news.ycombinator.com/item?id=48480000",
     "published": "2026-06-11",
-    "uid": "dev_f842662b"
+    "uid": "85e76591b1fe4747492ad23ddbb979d7"
   },
   {
-    "title": "I kept losing AI context every time I switched chats. Built a one-file fix.",
-    "content": "一位勤俭持家的开发者分享了省钱秘诀：Claude 太贵就切便宜模型，context 满了就开新窗口，隔天回来啥也不记得。于是写了个单文件工具来跨会话保持上下文——本质上就是个持久化 prompt 管理器。",
-    "quote": "因为 API 太贵就换模型、context 满了就重开，这省钱法也太寒酸了，写个文件就当发明了。",
-    "source": "Dev.to",
-    "url": "https://dev.to/tjqscott/i-kept-losing-ai-context-every-time-i-switched-chats-built-a-one-file-fix-4ha2",
+    "title": "Papers with Code 重新活跃：社区欢呼新篇章",
+    "content": "Papers with Code 在被新技术公司收购后重新焕发活力，平台新增了每日论文推荐、代码复现评价系统和研究者协作空间。收购方承诺保持平台的开源精神和对学术社区的免费访问，社区对此反应积极，认为这将避免步被大厂收购后逐步边缘化的后尘。",
+    "quote": "Papers with Code 活过来了——差点就成了另一个被大厂吞掉后荒废的项目。",
+    "source": "HackerNews",
+    "url": "https://paperswithcode.com/blog/new-chapter-2026",
     "published": "2026-06-11",
-    "uid": "dev_4d5dfb23"
+    "uid": "de892dfc777c6794a1435c8945898c4c"
   },
   {
-    "title": "MySQL数据库CPU与内存监控全攻略：从系统到内核的立体化观测体系 - 刘子毅",
-    "content": "博客园硬核技术长文，从操作系统层到 MySQL 内核层，构建了一套立体的 CPU 和内存监控体系。强调「无监控不运维」，覆盖 sysstat、Performance Schema、InnoDB 指标等多维度数据采集与预警方案。",
-    "quote": "MySQL 监控从 OS 写到内核，这位老哥的肝还好吗？顺便问问谁真的有耐心看完。",
-    "source": "博客园 Cnblogs",
-    "url": "https://www.cnblogs.com/liuziyi1/p/20418235",
+    "title": "Tolaria 发布：跨平台 Markdown 知识库桌面应用",
+    "content": "Tolaria 是一款新开源的跨平台 Markdown 知识库桌面应用，支持双向链接、图谱视图、全文搜索和本地优先存储。开发者表示受 Obsidian 和 Logseq 启发，但更注重性能和原生体验。应用基于 Rust+Tauri 构建，支持 Windows、macOS 和 Linux，全部数据存储在本地。",
+    "quote": "又一个笔记软件诞生了——不过换 Obsidian 是不可能的，换 Logseq 也是不可能的。",
+    "source": "GitHub",
+    "url": "https://github.com/tolaria/tolaria-desktop",
     "published": "2026-06-11",
-    "uid": "dev_69c1418b"
+    "uid": "0b85fa57c0a72ce06563c3f58322a070"
   },
   {
-    "title": "多门店运维闭环全景架构：监控+告警+工单+SLA+复盘，一套最小可用系统怎么串起来 - InfraSense",
-    "content": "针对多门店 IT 运维场景，提出了一套监控→告警→事件→工单→SLA→复盘的闭环架构方案。核心解决「单模块都有工具，但串不起来」的痛点，用最小可用系统打通运维全链路。",
-    "quote": "监控告警工单 SLA 全串起来，听着很美，实际落地八成是「能用就行，别折腾了」。",
-    "source": "博客园 Cnblogs",
-    "url": "https://www.cnblogs.com/opsplatform/p/20417791",
+    "title": "SQLite 4.0 预览版发布：异步 I/O 和中文分词优化",
+    "content": "SQLite 团队发布 4.0 预览版，引入原生异步 I/O 支持，允许在移动端和嵌入式设备上实现非阻塞数据库操作。全文搜索 FTS6 引擎性能提升 3 倍，支持中文等 CJK 语言的分词优化。该版本还首次引入可插拔的存储后端架构，为分布式场景铺路。",
+    "quote": "SQLite 4.0 加了异步——以后数据库操作卡 UI 这个锅终于不用 SQLite 来背了。",
+    "source": "SQLite",
+    "url": "https://sqlite.org/releaselog/4_0_preview.html",
     "published": "2026-06-11",
-    "uid": "dev_a3679000"
+    "uid": "8d5c65d446d07abc761541909eab2579"
   },
   {
-    "title": "Excelize 开源社区荣获 2025 红山开源明星项目三等奖",
-    "content": "Go 语言 Excel 操作库 Excelize 在 2025 红山开源大会上荣获「明星项目三等奖」，颁奖于北京香山举行。这个专注于电子表格办公文档处理的开源库，正在被越来越多的企业级应用所采用。",
-    "quote": "开源项目拿三等奖，这排名机制比大学运动会还严谨，三等奖是来都来了给的安慰奖吗？",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1180445#reply1",
+    "title": "HelixDB 发布：对象存储上的图数据库开源项目",
+    "content": "HelixDB 是一个新兴的开源图数据库项目，通过在对象存储上构建索引来提供可扩展的图查询能力。与传统的基于本地存储的图数据库不同，HelixDB 利用 S3 兼容的对象存储作为持久化层，理论上可实现近乎无限的扩展性。项目在 GitHub 上发布后迅速获得开发者关注。",
+    "quote": "图数据库也要上云了——对象存储当后端，听起来就很适合给云厂商做新功能。",
+    "source": "GitHub",
+    "url": "https://github.com/helixdb/helixdb",
     "published": "2026-06-11",
-    "uid": "dev_19895bf2"
-  },
-  {
-    "title": "Google Antigravity 出来啦",
-    "content": "Google 推出的 Antigravity 平台免费开放 Gemini 3 Pro 和 Claude Sonnet 4.5 使用权限，引发 V2EX 社区热议。网友感叹 Google 这波太壕，性价比碾压 OpenAI，薅羊毛党已蜂拥而至。",
-    "quote": "Google 免费送 Gemini 3 Pro + Claude Sonnet，这是要卷死 OpenAI 的节奏，羊毛党狂喜。",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1173666#reply9",
-    "published": "2026-06-11",
-    "uid": "dev_02604af8"
+    "uid": "ea05a88856f7385fad109571a2e8dfde"
   }
 ]
