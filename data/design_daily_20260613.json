@@ -1,0 +1,110 @@
+[
+  {
+    "title": "Figma Canvas 正式向 AI Agent 开放：Agent 可直接在画布上设计",
+    "content": "Figma 宣布通过 MCP Server 让 AI Agent 能直接读取和写入 Figma 文件。Agent 可以通过 use_figma 工具基于设计系统创建和修改设计资产，Skills（Markdown 格式指令）定义了 Agent 的工作规范。目前在 beta 期免费，未来将转为按用量收费。Codex 和 Claude Code 已首批接入。",
+    "quote": "AI 终于能看懂设计稿了，设计师别慌，还没到下岗的时候",
+    "url": "https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/",
+    "source": "Figma Blog",
+    "published": "2026-06-12",
+    "uid": "c1cb56729c12007ede3bc9d4a634f189"
+  },
+  {
+    "title": "Workflow Lab: Expanding the canvas with Figma MCP",
+    "content": "Figma 通过一个虚构团队 Astra 的案例展示了 MCP 实战流程：开发者在代码中处理的各种状态（编码错误、渲染进度、空选择、不支持格式）被 Agent 自动识别并生成可编辑的 Figma 帧。设计师的 4 帧设计变成了 14 帧覆盖完整状态。大大缩短了设计与实现之间的反馈回路。",
+    "quote": "4 帧变 14 帧，设计对开发的盲区终于被光照亮了",
+    "url": "https://www.figma.com/blog/workflow-lab-expanding-the-canvas-with-figma-mcp/",
+    "source": "Figma Blog",
+    "published": "2026-06-12",
+    "uid": "682c0dbef6dcdab5f552c93e98a7f0bd"
+  },
+  {
+    "title": "Figma MCP Server 公测发布：将设计上下文带入开发者工作流",
+    "content": "Figma 正式发布 MCP Server 公测版，让开发者在 Copilot、Cursor、Windsurf、Claude Code 等编码工具中直接获取 Figma 设计上下文。LLMs 不再只靠截图猜测设计意图，可以读取组件变量、样式、自动布局等结构化信息，生成的代码更加精准地对齐设计稿。",
+    "quote": "Figma MCP 终于来了，设计转代码不再是玄学",
+    "url": "https://www.figma.com/blog/introducing-figma-mcp-server/",
+    "source": "Figma Blog",
+    "published": "2026-06-10",
+    "uid": "8ae771d21827fe3e6e49afb6b56af4b6"
+  },
+  {
+    "title": "Hard problems are still hard: AI 时代工具会变，核心工作不会",
+    "content": "Figma 产品设计师转型 PM 的 Nikolas Klein 分享了他七年设计工具开发的感悟。AI 改变了游戏规则，但设计中的核心难题——理解用户、做正确的权衡、构建可交互的体验——这些从未改变。工具变得更快，但'搞定它'从来都不容易。",
+    "quote": "AI 工具越强，设计师的核心能力越值钱",
+    "url": "https://www.figma.com/blog/hard-problems-are-still-hard/",
+    "source": "Figma Blog",
+    "published": "2026-06-10",
+    "uid": "d0551854c8bdf74b0769b12b4593671a"
+  },
+  {
+    "title": "Algorithmic Theming Engines: contrast-color() 自修正色彩系统",
+    "content": "70% 的网站仍未通过 WCAG 对比度检查。作者指出之前的设计系统工具链、可访问性 Lint 工具和 JS 库都没能真正解决问题，真正需要的是更好的 CSS。contrast-color() 让色彩系统能够根据背景自动选择合适的前景色，无需 JS 做运行时计算。",
+    "quote": "70% 的网站还在对比度翻车？那是你还没用上 contrast-color()",
+    "url": "https://www.smashingmagazine.com/2026/05/building-self-correcting-color-systems-contrast-color/",
+    "source": "Smashing Magazine",
+    "published": "2026-05-20",
+    "uid": "e48d8302e5cd961da7edc7509c1ae96a"
+  },
+  {
+    "title": "CSS Centering In 2026 — 全面重新审视居中方案",
+    "content": "CSS-Tricks 上对 2026 年 CSS 居中方案的全面重新探索。随着 CSS Grid、Flexbox、Container Queries 和最新 CSS 特性（如 anchor positioning）的普及，居中不再需要 Hack。但选对方案取决于你的具体使用场景——这是很多开发者仍在踩的坑。",
+    "quote": "2026 年了还在用 margin: 0 auto 居中？是该更新技能包了",
+    "url": "https://css-tricks.com/the-state-of-css-centering-in-2026/",
+    "source": "CSS-Tricks",
+    "published": "2026-06-08",
+    "uid": "2baeea31a104335846586c81f628cb26"
+  },
+  {
+    "title": "CSS Subgrid is Super Good — David Bushell",
+    "content": "David Bushell 大力推崇 CSS Subgrid。通过嵌套使用 subgrid 模板，CMS 输出的复杂布局（如全宽背景块、边距控制）变得异常简单。不再需要传统 hack 或额外 wrapper，Subgrid 让多层嵌套布局优雅且可维护。",
+    "quote": "Subgrid 就是布局界的瑞士军刀，用了就回不去了",
+    "url": "https://dbushell.com/2026/04/02/css-subgrid-is-super-good/",
+    "source": "David Bushell",
+    "published": "2026-04-02",
+    "uid": "491c3bb0a6dea4d37f83ea4722fc9a7d"
+  },
+  {
+    "title": "Obs.js — 在用户环境下自适应前端",
+    "content": "Harry Roberts 发布轻量级库 Obs.js，通过 Network Information API 获知用户真实网络状态和设备性能，动态调整前端代码。连接类型、带宽估计、硬件并发数等指标让开发者能按用户实际条件做最优渲染策略。",
+    "quote": "你以为用户网络很好？Obs.js 告诉你现实有多残酷",
+    "url": "https://csswizardry.com/2026/05/meet-your-users-where-they-are-with-obs-js/",
+    "source": "CSS Wizardry",
+    "published": "2026-06-12",
+    "uid": "6a7ead006ec38866814a856fc3c5e442"
+  },
+  {
+    "title": "NNGroup: UX 访谈需要多少参与者？",
+    "content": "Maria Rosala 详解 UX 访谈样本量问题。通常 5 个参与者对探索性研究太少，但也不需要为了覆盖人物角色而招很多人。关键在'饱和度'——当新访谈不再提供新洞察时就够了。建议从小开始，边分析边招人。",
+    "quote": "5 个人访谈不够，招 50 个人又浪费——饱和点才是真理",
+    "url": "https://www.nngroup.com/articles/interview-sample-size/",
+    "source": "NNGroup",
+    "published": "2026-06-11",
+    "uid": "10a86cd5f0b7c83ff89abdb91b472ee4"
+  },
+  {
+    "title": "如何让图表和折线图具备无障碍访问性",
+    "content": "Martin Underhill 探讨了图表无障碍的多种方案：从简单的 alt 文本到 ARIA 语义化的 SVG（用 role=table/row/cell 赋予图表表格语义），再到 HTML table 加 aria-hidden SVG 的双轨方案。每种方案都有取舍，核心原则是让屏幕阅读器用户也能获取数据信息。",
+    "quote": "图表好看不算完，盲人看不到等于白做",
+    "url": "https://www.tempertemper.net/blog/do-graphs-and-charts-need-to-be-accessible",
+    "source": "tempertemper",
+    "published": "2026-06-10",
+    "uid": "628614d47d2831123d6435ff752edc76"
+  },
+  {
+    "title": "AI Made Junior Designers Look Like Most Seniors — UX Tools",
+    "content": "UX Tools 最新播客探讨了 AI 对设计职业梯级的冲击。Hannah Ahn 指出 AI 工具让初级设计师的输出质量逼近高级设计师，但'看起来像'和'真的是'之间有本质区别。真正的设计品味来自于主动参与和深度思考，而非 AI 生成的表面光鲜。",
+    "quote": "AI 让菜鸟看起来像大神？但品味这东西 AI 学不会",
+    "url": "https://www.uxtools.co/episodes/ai-made-junior-designers-look-like-most-seniors-hannah-ahn",
+    "source": "UX Tools",
+    "published": "2026-05-05",
+    "uid": "7ea9ba2d85363bfaa95a067b49558195"
+  },
+  {
+    "title": "Layers of AI Experience — Emily Campbell 论生成式 AI 时代的设计",
+    "content": "在生成式 AI 时代，设计比以往任何时候都更重要。Emily Campbell 探索了 AI 体验的不同层次以及这些新挑战和机遇如何影响设计以及设计师的角色。从认知框架到交互范式，设计师需要重新思考人与系统的协作关系。",
+    "quote": "AI 时代设计师不是不重要，而是重要到不能再偷懒了",
+    "url": "https://emilycampbell.co/writing/layers-of-ai-experience",
+    "source": "Emily Campbell",
+    "published": "2026-06-09",
+    "uid": "f74aa55bc10f372840cf7752b8b4b1f6"
+  }
+]
