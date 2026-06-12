@@ -1,13 +1,13 @@
 {
   "week_start": "2026-06-07",
   "week_end": "2026-06-13",
-  "summary": "本周共收录AI领域动态 87 条。本周最活跃：其他（37条）、Anthropic/Claude（23条）、Google/Gemini（17条）。主要方向为模型发布（24条）。",
+  "summary": "本周共收录AI领域动态 77 条。本周最活跃：其他（32条）、Anthropic/Claude（21条）、Google/Gemini（14条）。主要方向为模型发布（20条）。",
   "stats": {
-    "total_items": 87,
+    "total_items": 77,
     "by_vendor": {
-      "other": 37,
-      "anthropic": 23,
-      "google": 17,
+      "other": 32,
+      "anthropic": 21,
+      "google": 14,
       "openai": 5,
       "alibaba": 2,
       "apple": 1,
@@ -15,12 +15,12 @@
       "deepseek": 1
     },
     "by_direction": {
-      "模型发布": 24,
-      "工具/平台": 15,
-      "研究/论文": 14,
-      "政策/合规": 12,
-      "应用/落地": 12,
-      "行业动态": 10
+      "模型发布": 20,
+      "研究/论文": 13,
+      "工具/平台": 13,
+      "政策/合规": 11,
+      "应用/落地": 11,
+      "行业动态": 9
     }
   },
   "timeline": [
@@ -163,14 +163,6 @@
               "quote": "NotebookLM 太好用了以至于大家想要一个没人能关掉的开源版——783 星一天，需求说明一切。",
               "url": "https://github.com/lfnovo/open-notebook",
               "published": "2026-06-09"
-            },
-            {
-              "uid": "ai_5ee0b508",
-              "title": "苹果 WWDC 2026 发布 Siri AI：十年磨一剑，却在 Nvidia 芯片上跑",
-              "direction": "模型发布",
-              "quote": "苹果造了十年 Siri，结果 AI 时代姗姗来迟，还被迫用上老对手 Nvidia 的芯片——艾维要是还在，怕是要被气活过来。",
-              "url": "https://www.theverge.com/tech/942416/apple-siri-ai-update-wwdc",
-              "published": "2026-06-09"
             }
           ]
         },
@@ -240,14 +232,6 @@
               "direction": "应用/落地",
               "quote": "Hoffman 从微软董事会辞职去搞 AI 制药——在他看来，做药比做系统更能改变世界。",
               "url": "https://www.theverge.com/ai-artificial-intelligence/927098/reid-hoffman-leaving-microsoft-board-manas-ai-drug-development",
-              "published": "2026-06-09"
-            },
-            {
-              "uid": "ai_808382e9",
-              "title": "Pokémon Go 玩家扫描数据被用于训练军用无人机导航",
-              "direction": "研究/论文",
-              "quote": "你抓宝可梦拍的照片，在帮你训练军用无人机找路——Niantic 这波操作把「玩个游戏就是打工」写进了现实。",
-              "url": "https://news.ycombinator.com/item?id=48487029",
               "published": "2026-06-09"
             }
           ]
@@ -394,22 +378,6 @@
               "quote": "AI 做科研最尴尬的现实：调参这种基本功，LLM 还不如几十年前的进化算法——但把两者缝在一起居然能打，科研界的缝合怪又赢了。",
               "url": "https://arxiv.org/abs/2603.24647",
               "published": "2026-06-10"
-            },
-            {
-              "uid": "ai_3dfd295c",
-              "title": "西雅图通过数据中心建设紧急暂停令：AI 算力扩张遭遇市民反弹",
-              "direction": "政策/合规",
-              "quote": "AI 算力饥渴到要吃光一座城的电——结果连科技公司的自家员工都看不下去了。人民的反AI不是反技术，是反粗放。",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/945809/amazon-employees-seattle-data-center-moratorium",
-              "published": "2026-06-10"
-            },
-            {
-              "uid": "ai_a4fb3c68",
-              "title": "华纳音乐收购 AI 公司 Sureel：用「AI DNA」追踪训练数据来源",
-              "direction": "应用/落地",
-              "quote": "唱片公司终于学聪明了——与其跟 AI 公司对簿公堂，不如自己买下追踪技术。AI DNA 这名字起得好，有那味了。",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/946731/warner-music-acquires-sureel-ai",
-              "published": "2026-06-10"
             }
           ]
         },
@@ -423,28 +391,6 @@
               "direction": "工具/平台",
               "quote": "微软 Build 2026 的核心信号：AI agent 从玩具变成了正经企业基础设施——配上下文、配身份、配治理，就是没配好怎么省钱。",
               "url": "https://venturebeat.com/orchestration/microsofts-ai-futurist-explains-how-he-uses-copilot-and-the-real-world-problems-enterprises-are-solving-with-agents",
-              "published": "2026-06-10"
-            }
-          ]
-        },
-        "google": {
-          "displayName": "Google/Gemini",
-          "icon": "🌐",
-          "items": [
-            {
-              "uid": "ai_f51274d6",
-              "title": "德国法院裁定 Google 需为 AI 搜索摘要错误负责：AI 不只是搜索工具，而是内容创作者",
-              "direction": "工具/平台",
-              "quote": "德国法院这一点说得好：AI 摘要不是搜索结果，是你 Google 自己写的内容。写错了，负责吧。",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/2026/6/10/german-court-google-responsible-false-ai-search-results",
-              "published": "2026-06-10"
-            },
-            {
-              "uid": "ai_da9e0437",
-              "title": "麦当劳测试 Google 驱动的 AI 点餐系统 ArchIQ：90% 订单无需人工介入",
-              "direction": "行业动态",
-              "quote": "麦当劳 AI 点餐 90% 成功率——比上次被全网群嘲的翻车版本进步不少。下次再翻车，可能就是跟人一样把可乐洒你车上了。",
-              "url": "https://abcnews.com/GMA/Food/mcdonalds-testing-new-ai-ordering-technology-drive-thrus/story?id=133676487",
               "published": "2026-06-10"
             }
           ]
@@ -504,22 +450,6 @@
               "direction": "应用/落地",
               "quote": "福布斯 AI 50 榜单出炉了——每年最开心的是上榜公司的 PR 部门。",
               "url": "https://www.forbes.com/lists/ai50-2026",
-              "published": "2026-06-11"
-            },
-            {
-              "uid": "ai_d277406e",
-              "title": "Anthropic 为 Claude Fable 5 隐形护栏道歉：暗中降级竞争对手的模型蒸馏请求",
-              "direction": "模型发布",
-              "quote": "暗中给竞争对手的请求「掺水」——Anthropic 做安全可以理解，但偷偷下手被逮到了才道歉，这波操作不太体面。",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail",
-              "published": "2026-06-11"
-            },
-            {
-              "uid": "ai_88928d96",
-              "title": "HuggingFace 完成 Open R1 项目第一阶段：完全开源复现 DeepSeek-R1",
-              "direction": "模型发布",
-              "quote": "开源社区复现 DeepSeek-R1 成功了——7B 模型吊打 175B 闭源模型，谁更「开放」一目了然。",
-              "url": "https://github.com/huggingface/open-r1",
               "published": "2026-06-11"
             }
           ]
@@ -618,22 +548,6 @@
               "direction": "工具/平台",
               "quote": "白宫 AI 顾问走了——估计是受不了政府效率了，还是硅谷香。",
               "url": "https://www.reuters.com/technology/trump-ai-advisor-leaving-white-house-2026",
-              "published": "2026-06-11"
-            },
-            {
-              "uid": "ai_c331aa8c",
-              "title": "Waymo 推出 Premier 订阅服务：每月 30 美元解锁优先乘车体验",
-              "direction": "模型发布",
-              "quote": "Robotaxi 也要开始卖会员了——自动驾驶还没全面盈利，先把 VIP 优先的品牌溢价玩起来了。",
-              "url": "https://waymo.com/blog/2026/06/waymo-premier/",
-              "published": "2026-06-11"
-            },
-            {
-              "uid": "ai_c7700ca5",
-              "title": "Deno 发布 Claw Patrol：面向 AI Agent 的网络安全防火墙",
-              "direction": "工具/平台",
-              "quote": "当 AI Agent 开始直接操作数据库和生产环境——你再也不能怪程序员手滑了，现在锅是 Agent 背。Claw Patrol 就是给它加个缰绳。",
-              "url": "https://github.com/denoland/clawpatrol",
               "published": "2026-06-11"
             }
           ]
