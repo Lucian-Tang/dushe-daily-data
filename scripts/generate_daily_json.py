@@ -598,7 +598,7 @@ def main():
                 if not item.get('source'): item['source'] = r.get('source','')
                 if not item.get('url'): item['url'] = r.get('url','')
                 if not item.get('content'):
-                item['content'] = _clean_raw_content(r.get('content') or '', r.get('source',''))
+                    item['content'] = _clean_raw_content(r.get('content') or '', r.get('source',''))
             for f in ('title','content','quote','source','url'):
                 item.setdefault(f, '')
             # 🔴 问题2: published 日期归一化（截断至10字符 YYYY-MM-DD）
