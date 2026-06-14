@@ -1,0 +1,101 @@
+[
+  {
+    "title": "ReactOS 里程碑：开源 Windows 兼容系统首次在真实硬件上运行 3D 加速版《半条命》",
+    "content": "ReactOS 项目宣布在真实硬件上成功运行 3D 加速版 Half-Life，标志着这个开源 Windows 兼容操作系统在图形驱动和 DirectX 兼容性方面取得重大突破。项目已持续开发 20 余年，这一成就让开源 Windows 替代方案看到了曙光。",
+    "quote": "20 年的坚持，终于让开源 Windows 拥有了自己的首杀。",
+    "url": "https://www.phoronix.com/news/ReactOS-Running-Half-Life",
+    "source": "Phoronix",
+    "published": "2026-06-15",
+    "uid": "6c90bcb948a7b3be4bc936e20465666e"
+  },
+  {
+    "title": "开源 SQL 转 ER 图工具爆火：浏览器端运行，数据不上传",
+    "content": "sqltoerdiagram.com 在 Hacker News 上引发热议，一个纯前端运行的 SQL 转 ER 图工具，无需注册、不上传数据，直接在浏览器中解析 SQL 生成实体关系图。上线一天即获 300+ 星标，开发者对隐私友好的工具需求旺盛。",
+    "quote": "最好的开发工具往往最朴素：解决问题，不要你的数据。",
+    "url": "https://sqltoerdiagram.com/",
+    "source": "Hacker News",
+    "published": "2026-06-15",
+    "uid": "30c7fd939853e6a00f91848f7b9da294"
+  },
+  {
+    "title": "Every Frame Perfect：深度解析 GUI 渲染的逐帧优化之道",
+    "content": "知名开发者 Nikita Prokopov 发布长文，深入剖析现代 GUI 框架中完美帧渲染的技术挑战。从浏览器到原生应用，他展示了帧同步、垂直同步和 GPU 调度之间的微妙关系，以及为什么大多数应用永远达不到 120fps 的丝滑体验。",
+    "quote": "不是性能不够，是你的渲染管线没有对齐物理定律。",
+    "url": "https://tonsky.me/blog/every-frame-perfect/",
+    "source": "tonsky.me",
+    "published": "2026-06-15",
+    "uid": "ed45756ae9063628a076e6a364ed4304"
+  },
+  {
+    "title": "双卡本地跑大模型：RTX 5080 搭配 RTX 3090 实现 80 Tok/s",
+    "content": "开发者分享双卡混搭配置实测：RTX 5080 搭配 RTX 3090，在 Qwen 3.6 27B Q8 量化模型上稳定输出 80 Tok/s。文章详细对比了不同模型、不同量化方式在多 GPU 配置下的性能表现，为本地 AI 开发提供了宝贵基准数据。",
+    "quote": "两张消费级显卡等于一台推理服务器，本地 AI 门槛正在崩塌。",
+    "url": "https://imil.net/blog/posts/2026/rtx-5080-+-rtx-3090-setup-80+-tok-s-on-qwen-3.6-27b-q8/",
+    "source": "imil.net",
+    "published": "2026-06-15",
+    "uid": "cbbf28989dd74156355a25539c3e05d6"
+  },
+  {
+    "title": "长上下文大模型检索精度研究引热议：窗口越大反而越不准",
+    "content": "一篇引发 Hacker News 激烈讨论的文章指出，大语言模型的超长上下文窗口在实际检索任务中表现远不如预期。实验表明当窗口超过 64K tokens 时，模型对中间段落的召回率急剧下降，对依赖长上下文做 RAG 的开发者敲响警钟。",
+    "quote": "长窗口是营销数字，检索精度才是工程真相。",
+    "url": "https://garrit.xyz/posts/2026-05-06-dont-trust-large-context-windows",
+    "source": "garrit.xyz",
+    "published": "2026-06-15",
+    "uid": "2dbc850b305e337db8a3942a665308cc"
+  },
+  {
+    "title": "Google 开源退休手机集群方案：用旧 Android 设备搭建低碳计算平台",
+    "content": "Google Research 发布了一项创新开源项目，将退役 Android 手机组成分布式计算集群，用于低功耗科研计算。项目展示了利用废旧设备构建碳足迹极低的计算平台的可行性，已在多个大学实验室部署测试。",
+    "quote": "最好的回收不是拆解，是让旧设备继续创造价值。",
+    "url": "https://research.google/blog/a-low-carbon-computing-platform-from-your-retired-phones/",
+    "source": "Google Research",
+    "published": "2026-06-15",
+    "uid": "0dd5f4fdc2eae2020823613007e2fac5"
+  },
+  {
+    "title": "阿拉伯文字排版的技术债：为什么渲染阿拉伯语这么难",
+    "content": "一篇深度技术文章揭示了阿拉伯文字在数字渲染中面临的独特挑战：从连字、变体字形到双向文本混合排版，阿拉伯语渲染积累了数十年的技术债。文章呼吁 Unicode 和字体标准层面对复杂文字系统给予更多关注。",
+    "quote": "语言多样性是技术的试金石，不是 bug。",
+    "url": "https://lr0.org/blog/p/arabic/",
+    "source": "lr0.org",
+    "published": "2026-06-15",
+    "uid": "20d0f8fc24d9c1d41771fb0f3094013e"
+  },
+  {
+    "title": "Mozilla 核心开发者离职引发开源可持续性讨论",
+    "content": "一位 Mozilla 资深开发者在个人博客宣布离职，回顾了在 Mozilla 的工作经历，对非盈利组织运营大型开源项目的可持续性表达了忧虑。文章引发社区对 Firefox 未来和开源基金会治理模式的广泛讨论。",
+    "quote": "当维护浏览器比造火箭还贵，理想主义需要新的商业模式。",
+    "url": "https://blog.unitedheroes.net/5751",
+    "source": "unitedheroes.net",
+    "published": "2026-06-15",
+    "uid": "d9182b05041cdd3cb682275e8c3bdd8b"
+  },
+  {
+    "title": "本田思域 CAN 总线安全漏洞：代客泊车模式可被硬件绕过",
+    "content": "安全研究员披露本田思域车型存在一个可通过代客泊车模式利用的 CAN 总线漏洞，攻击者插入 OBD-II 设备即可绕过防盗系统。文章以故事化手法展示了汽车电子安全的薄弱环节，引发对智能汽车安全架构的重新思考。",
+    "quote": "你的车比你想象的聪明，也比你以为的脆弱。",
+    "url": "https://juniperspring.org/posts/honda-evil-valet/",
+    "source": "juniperspring.org",
+    "published": "2026-06-15",
+    "uid": "23bbb2a8ecaaacc15b48a42f3221f596"
+  },
+  {
+    "title": "Open Source AI Must Win：开源 AI 宣言在 HN 引爆辩论",
+    "content": "一篇题为 Open Source AI Must Win 的宣言在 Hacker News 上获得 1500+ 赞，引发开源 AI 与闭源 AI 的激烈辩论。文章从安全、创新、民主化三个角度论证了开源 AI 的必要性，正值 Anthropic 被政府限制访问的敏感时期。",
+    "quote": "当政府开始关停 AI 模型，开源就从可选变成了必需。",
+    "url": "https://opensourceaimustwin.com/?share=v2",
+    "source": "Hacker News",
+    "published": "2026-06-15",
+    "uid": "d114b0baf26df3b8fd1f866f6fda9e63"
+  },
+  {
+    "title": "AI 编程省钱指南：不用花大钱也能在家愉快写代码",
+    "content": "开发者 Stephen Bochinski 发布了一篇实用指南，详细对比了各种本地 AI 编程助手的成本和性能：从 Ollama 搭配开源模型到云端 API 的最优组合。文章实测了不同配置下的代码补全质量和延迟数据。",
+    "quote": "不用买 H100，一张游戏显卡也能拥有 AI 编程搭子。",
+    "url": "https://stephen.bochinski.dev/blog/2026/06/13/ai-coding-at-home-without-going-broke/",
+    "source": "bochinski.dev",
+    "published": "2026-06-15",
+    "uid": "ea00c555718fa355c8a185b1c51ee1a8"
+  }
+]
