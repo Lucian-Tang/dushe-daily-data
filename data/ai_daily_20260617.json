@@ -1,0 +1,128 @@
+[
+  {
+    "title": "SpaceX 以 600 亿美元收购 Cursor 开发商 Anysphere，AI 编程赛道迎来最大并购",
+    "content": "据路透社报道，SpaceX 已同意以约 600 亿美元收购 AI 编程工具 Cursor 的开发商 Anysphere，这可能是 AI 领域迄今为止规模最大的收购案之一。Anysphere 旗下的 Cursor 是目前最受欢迎的 AI 代码编辑器之一，整合了 Claude、GPT 等多种大模型进行智能化编码辅助。此次收购标志着 SpaceX 正式大举进入 AI 开发者工具领域，埃隆·马斯克正在将 AI 能力与其航天、星链等业务进行深度整合。交易预计在未来数月内完成，Anysphere 团队将作为 SpaceX 内部独立部门运作。",
+    "quote": "600亿买一个写代码的工具，马斯克这是要让AI帮火箭写飞控代码了",
+    "url": "https://news.ycombinator.com/item?id=48553224",
+    "source": "Hacker News",
+    "published": "2026-06-17",
+    "uid": "0b8e0cf29ed050c0ab4868671051bb3f"
+  },
+  {
+    "title": "斯坦福发布 DeLM：去中心化多智能体框架，协调成本直降 50%",
+    "content": "斯坦福大学研究人员发布了一种名为 DeLM（Decentralized Language Model）的新型多智能体框架，彻底摒弃了传统的主控协调器架构。在传统方案中，一个中心智能体负责拆分任务、分发、汇总和再分发的循环，随着子任务增多会成为通信和集成瓶颈。DeLM 则让各智能体通过共享知识库直接协作，中间结果以 gist 摘要形式存入共享上下文中，后续智能体可直接读取，无需经过中央控制器的过滤和中转。实验表明，该架构在复杂多步骤推理任务中可将推理成本降低 50%，同时减少因信息过滤导致的准确性损失。",
+    "quote": "去中心化智能体？听起来像AI界的区块链叙事，但这次是真的省钱了",
+    "url": "https://venturebeat.com/orchestration/stanfords-delm-cuts-multi-agent-task-costs-50-without-a-central-orchestrator",
+    "source": "VentureBeat",
+    "published": "2026-06-17",
+    "uid": "dd4b333b15ae26066fc3df67e674e125"
+  },
+  {
+    "title": "Subquadratic 发布 SubQ 1.1 Small：线性注意力模型支持 1200 万 token 上下文",
+    "content": "AI 初创公司 Subquadratic 正式发布 SubQ 1.1 Small，这是其亚二次稀疏注意力模型的第二个迭代版本。该模型采用 Sparse Subquadratic Attention 架构，将传统 Transformer 的 O(n^2) 注意力计算复杂度降至线性级别。在 100 万 token 上下文中，SubQ 1.1 Small 的注意力计算量仅为密集注意力的 1/64.5，运行速度比 FlashAttention-2 快 56 倍。在大海捞针测试中，该模型在 1200 万 token 长度下仍能实现 98% 的准确率。通用推理能力上，GPQA Diamond 达到 85.4%，LiveCodeBench 达到 89.7%。Subquadratic 计划年内推出更大尺寸的 200 万至 1200 万 token 版本。",
+    "quote": "1200万token上下文，终于能一次性读完战争与和平再顺便写个读后感了",
+    "url": "https://subq.ai/subq-1-1-small-technical-report",
+    "source": "Subquadratic",
+    "published": "2026-06-17",
+    "uid": "6601547d554fd69bb69583c0edaa8841"
+  },
+  {
+    "title": "荷兰发布主权大模型 GPT-NL：政府出资 1350 万欧元，完全从零训练",
+    "content": "荷兰国家级AI项目 GPT-NL 正式公开，这是由荷兰企业局出资 1350 万欧元、由 TNO 研究机构主导开发的主权语言模型。GPT-NL 最大的特点是完全从零开始训练——不使用任何现有模型的基础，所有训练数据经过严格的版权过滤、个人数据匿名化和有害内容清除。项目强调四个核心价值：开放性（开源代码和训练数据透明度）、可信赖性（无版权风险和隐私泄露）、互惠性（数据提供者分享收益）和主权性（不依赖非欧洲供应商）。模型权重将以受控许可方式发布。这是欧洲主权 AI 浪潮的最新案例，此前法国、德国、北欧各国均已启动类似项目。",
+    "quote": "1350万欧元就想搞主权AI？荷兰人的算盘打得啪啪响，但勇气可嘉",
+    "url": "https://www.tno.nl/en/digital/artificial-intelligence/gpt-nl/",
+    "source": "TNO",
+    "published": "2026-06-17",
+    "uid": "0943a10ac09b21576760c9d2ce4aed8d"
+  },
+  {
+    "title": "通义千问发布 Qwen Robot Suite：面向物理世界的智能体基础模型套件",
+    "content": "阿里巴巴旗下 Qwen 团队发布 Qwen Robot Suite，这是一套面向物理世界智能的 AI 基础模型套件。该套件旨在将大语言模型的空间推理能力和多模态理解能力赋予机器人，使机器人能够理解复杂的物理场景、执行精细操作任务，并在真实环境中进行自主决策。Qwen Robot Suite 覆盖了从感知、规划到控制的全链路能力，标志着大模型正在从数字世界向物理世界延伸。该项目已在 Qwen 官方博客和 GitHub 上开源，相关技术细节和模型权重将逐步释放。",
+    "quote": "阿里终于想起大模型不光能聊天，还能帮搬砖了",
+    "url": "https://qwen.ai/blog?id=qwen-robotsuite",
+    "source": "Qwen Blog",
+    "published": "2026-06-17",
+    "uid": "ea2c7eb055d0b395d3bf74028b84039a"
+  },
+  {
+    "title": "美国司法部出手：xAI 天然气发电数据中心因国家安全免于环保诉讼",
+    "content": "美国司法部正式介入 NAACP 诉 xAI 环境污染案，声称阻止 xAI 在密西西比州的天然气发电数据中心运营将危害国家安全。司法部在法庭文件中表示，xAI 的 Grok 模型为战争部的军事行动提供关键支持，因此不允许环保诉讼中断其算力供应。NAACP 此前指控 xAI 在密西西比州使用燃气轮机发电造成非法空气污染。在 AI 算力爆发式增长的背景下，这一案件凸显了 AI 基础设施与环境保护之间的尖锐矛盾——司法部明确将 AI 能力提升到国家安全战略高度。",
+    "quote": "为了AI训练连空气质量都可以牺牲了，军备竞赛面前环保算个啥",
+    "url": "https://www.courtlistener.com/docket/73188848/59/national-association-for-the-advancement-of-colored-people-v-xai-corp/",
+    "source": "CourtListener",
+    "published": "2026-06-17",
+    "uid": "608ff7db999744ea09cd6c818db06814"
+  },
+  {
+    "title": "Satya Nadella 发出警告：AI 可能像全球化一样掏空整个产业",
+    "content": "微软 CEO 萨提亚·纳德拉发表长文，警告 AI 可能导致少数前沿模型吸收整个行业的专业知识并将其商品化，使企业丧失竞争护城河。纳德拉提出人力资本和 Token 资本的新概念框架，认为企业真正的机会不在于选择最好的模型，而在于建立一个学习循环，让人力资本和 Token 资本可以叠加增值。他以全球化初期外包导致工业经济被掏空的历史教训作为类比，称如果所有价值都被少数模型捕获，政治经济根本无法承受。这一论述被认为是企业 AI 战略领域最具哲学深度的观点之一。",
+    "quote": "微软CEO亲自下场当哲学家，警告别让AI变成少数人的提款机",
+    "url": "https://venturebeat.com/technology/satya-nadella-warns-that-ai-could-hollow-out-entire-industries-echoing-the-damage-done-by-globalization",
+    "source": "VentureBeat",
+    "published": "2026-06-17",
+    "uid": "38270ecd5021a0021b2db1a1a92812bb"
+  },
+  {
+    "title": "Sakana AI 发布 Marlin 深度研究智能体：8 小时自动生成 100 页战略报告",
+    "content": "日本 AI 初创公司 Sakana AI 正式推出其首个商业产品 Sakana Marlin。与追求毫秒级响应的传统聊天机器人不同，Marlin 刻意放弃了即时生成，转而进行长达 8 小时的深度推理循环，最终交付经过严格引用的 100 页战略报告和演示文稿。Marlin 被宣传为虚拟首席战略官，用户只需提供核心研究主题，系统会自主提出假设、浏览网页验证数据、交叉引用来源、绘制因果动态图，最后输出包含执行摘要、附录和参考文献的结构化报告。定价采用按需付费模式，面向企业、金融机构和智库。Marlin 是 Sakana 此前实验室项目 AI Scientist 的商用衍生品。",
+    "quote": "8小时写100页报告，这不就是我司咨询顾问的平替吗？还不用出差",
+    "url": "https://venturebeat.com/technology/when-deep-research-isnt-enough-for-your-business-sakana-ai-launches-ultra-deep-research-agent-for-100-page-reports-in-8-hours",
+    "source": "VentureBeat",
+    "published": "2026-06-17",
+    "uid": "81f7e3701414f8aaee4cde38fd96a83e"
+  },
+  {
+    "title": "Vibe Coding 后遗症：六个月后 AI 生成的代码无人能解释",
+    "content": "随着 AI 编程助手的普及，氛围编程（Vibe Coding）正在企业数据工程中制造新的技术债务。VentureBeat 的分析指出，AI 加速了数据管线、工作流编排和基础设施配置的生成，但当六个月的迭代过去后，大部分业务逻辑、架构决策和设计假设仍然分散在大量的提示词、对话记录和生成的代码中，系统本身不再包含完整的构建理由。为解决此问题，规范驱动开发（SDD）正在兴起——将提示词、业务规则和验证逻辑转换为可执行、可版本化的规范文件，作为人和 AI 的持久化操作记忆。",
+    "quote": "AI写代码一时爽，半年后维护火葬场，恭喜你获得了会说话的遗留系统",
+    "url": "https://venturebeat.com/orchestration/vibe-coding-can-build-your-pipeline-it-cant-explain-it-six-months-later",
+    "source": "VentureBeat",
+    "published": "2026-06-17",
+    "uid": "98b8b5d216cb73a430fad40d1ff4a128"
+  },
+  {
+    "title": "本地运行大模型终于好用了：Gemma 4 让本地 Agent 效率达商业模型的 75%",
+    "content": "知名 AI 工程师 Vicki Boykis 发表深度评测，称本地运行大模型终于变得好用。她在一台 2022 年 M2 Mac（64GB 内存）上测试了 Mistral 7B、Gemma 3、OpenAI OSS-20B 和 Qwen 3 MOE 等多款模型，发现最近发布的 Google Gemma 4 系列表现尤为突出——本地运行 Agent 编码工作流的准确率和速度已达到主流云端模型的 75%。Gemma 4 的 12B QAT 版本在量化感知训练的加持下实现了令人惊讶的性价比。Boykis 指出，6 个月前的本地模型还无法完成这些任务，而现在本地模型的实用性和准确性已跨越了是否值得检查的关键门槛。",
+    "quote": "本地模型终于从能跑但傻进化到能跑也能干活了，隐私党的春天",
+    "url": "https://vickiboykis.com/2026/06/15/running-local-models-is-good-now/",
+    "source": "Vicki Boykis Blog",
+    "published": "2026-06-17",
+    "uid": "631d44c991dc5592572fa39684094da8"
+  },
+  {
+    "title": "Google 发布 DiffusionGemma：一次生成 256 个 token，速度提升 4 倍",
+    "content": "Google 发布 DiffusionGemma，这是首个在开源 vLLM 推理平台中原生支持的扩散语言模型。与标准自回归模型逐 token 从左到右生成不同，DiffusionGemma 一次性生成 256 个 token 的完整区块，通过多轮迭代精化逐步锁定可信位置。在单张 H100 GPU 上（FP8 精度）达到每秒 1008 token，在 H200 上达到 1288 token，比标准基线快约 6 倍。该模型采用 26B MoE 架构（仅激活 3.8B 参数），量化后可在 18GB VRAM 的消费级显卡上运行，包括 RTX 4090 和 5090。Google 坦承 DiffusionGemma 的输出质量低于标准 Gemma 4，建议追求最高质量的应用继续使用标准版。",
+    "quote": "Google：我们做了个速度飞快的模型。问：质量呢？答：你别问",
+    "url": "https://venturebeat.com/technology/googles-diffusiongemma-generates-256-tokens-in-parallel-and-self-corrects-as-it-goes",
+    "source": "VentureBeat",
+    "published": "2026-06-17",
+    "uid": "daf5136138ee85d5871ca4e904ef8e27"
+  },
+  {
+    "title": "MCP、A2A 等智能体协议爆发，但 88% 设备躲在 NAT 后无法连接",
+    "content": "随着 AI 智能体协议进入爆发期，MCP（模型上下文协议）、A2A（Agent 间通信协议）、ACP（Agent 通信协议）和 ANP（Agent 网络协议）在过去 18 个月内相继发布。VentureBeat 的深度分析指出，这些协议实际上解决的是不同层次的问题——MCP 赢下了工具调用层（Linux 基金会确认截至 2026 年 4 月已有超过 10,000 个活跃公开 MCP 服务器和 1.64 亿月 Python SDK 下载量），A2A 定义了任务协调层，而传输层问题仍未解决：所有现有协议都基于 HTTP，但 88% 的网络设备位于 NAT 之后，没有可达的服务器地址。W3C AI Agent 协议社区组已启动标准制定流程。",
+    "quote": "智能体协议满天飞，但88%的设备藏在NAT后面——先解决连不上的问题吧",
+    "url": "https://venturebeat.com/orchestration/mcp-solved-tool-calling-a2a-solved-coordination-what-solves-transport",
+    "source": "VentureBeat",
+    "published": "2026-06-17",
+    "uid": "c88e3ab64b2c6b93395f0573de125d0a"
+  },
+  {
+    "title": "Moonshot AI 发布 Kimi K2.7-Code：推理 token 减少 30%，但独立基准受质疑",
+    "content": "Moonshot AI 发布 Kimi K2.7-Code，基于万亿参数 MoE 架构的开源编程模型更新。官方声称 K2.7-Code 将思考 token 使用量较 K2.6 减少 30%，直接降低推理成本。但独立研究者指出，该模型仅在 Moonshot 自有的基准上宣称 11% 至 31.5% 的提升，尚未提交至更具区分度的 DeepSWE 等独立基准。研究人员 Elliot Arledge 在 KernelBench-Hard 上测试发现 K2.7 虽然比 K2.6 更诚实（生成真实代码而非封装库函数），但两个 GPU kernel 因自身 bug 失败，MoE kernel 评分反而从 0.222 退步至 0.157。",
+    "quote": "自家考试进步30%，第三方一考就露馅——这考试成绩单不太好看啊",
+    "url": "https://venturebeat.com/technology/kimi-k2-7-code-cuts-thinking-tokens-30-practitioners-say-benchmarks-dont-check-out",
+    "source": "VentureBeat",
+    "published": "2026-06-17",
+    "uid": "581457248a1e35bdf3aa2a95c80b3f50"
+  },
+  {
+    "title": "微软开源 SkillOpt：让 AI Agent 技能优化从玄学变成科学",
+    "content": "微软研究院开源了 SkillOpt 框架，它将 Agent 的提示词技能文件（.md 文档）转化为可训练的优化对象。传统上，优化 Agent 技能需要人工手动修改提示词文件，通过试错来提升性能，过程缓慢且不可控。SkillOpt 引入类似深度学习优化的数学方法，系统性地探索提示词的变体组合，找到最佳指令配置，全程不修改底层模型权重。在多个行业基准上，SkillOpt 显著提升了 GPT-5.5 和 Qwen 等模型的准确性。微软称未经数学验证的提示词编辑可能让 GPT-5.5 在 SpreadsheetBench 上从 41.8 跌至 41.1——一个看似合理的手动改动就可以悄悄退步。",
+    "quote": "微软：别再手动调提示词了，让AI帮你调——然后AI再帮你用AI调好的AI",
+    "url": "https://venturebeat.com/orchestration/microsofts-open-source-skillopt-automatically-upgrades-ai-agent-skills-without-touching-model-weights",
+    "source": "VentureBeat",
+    "published": "2026-06-17",
+    "uid": "5baaf540d60a644ec0348d3c25f3fff6"
+  }
+]
