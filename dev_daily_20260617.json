@@ -1,0 +1,173 @@
+[
+  {
+    "title": "SpaceX 以 600 亿美元收购 Cursor，AI 编程赛道炸了",
+    "content": "据 Reuters 独家报道，SpaceX 与 Cursor 母公司 Anysphere 达成收购协议，交易金额高达 600 亿美元。这不仅是 SpaceX 首次大规模 AI 领域收购，也是 AI 编程工具赛道有史以来最大一笔交易。Cursor 作为 AI 代码补全和编辑工具的明星产品，被 SpaceX 看中的核心价值在于其能极大加速航天软件系统的开发效率。这笔交易引发 HN 上近千条讨论，开发者们对 AI 编程工具的估值泡沫和实际价值展开了激烈争论。",
+    "quote": "马斯克买 Cursor 跟买螺丝刀一样顺手，只不过这把螺丝刀值 600 亿",
+    "source": "HN Front Page",
+    "url": "https://news.ycombinator.com/item?id=48553224",
+    "published": "2026-06-17",
+    "uid": "dev_a3f2b1c4"
+  },
+  {
+    "title": "本地运行大模型终于好用了吗？一位实践者的真实体验",
+    "content": "Vicki Boykis 从 Mistral 7B 时代就开始玩本地模型，经过多年折腾后得出结论：现在的本地模型真的能打了。她在一台 M2 Mac 64GB 上用 LM Studio 跑 Gemma-4-26b-A4B，完成了 Python 脚本重构、单元测试编写、推荐系统脚手架搭建等任务，准确率和速度达到闭源前沿模型的 75% 左右。Gemma-4-12b-QAT 的表现更是让人惊艳，其量化感知训练架构引发了关于'在性能和成本约束下，架构该如何取舍'的有趣讨论。",
+    "quote": "本地模型终于从勉强能跑进化到勉强能干活了，进步很大",
+    "source": "HN Front Page",
+    "url": "https://news.ycombinator.com/item?id=48555993",
+    "published": "2026-06-17",
+    "uid": "dev_b7d8e9f0"
+  },
+  {
+    "title": "Show HN: Kage —— 把任意网站快照成一个离线可浏览的二进制文件",
+    "content": "Kage (影) 是一个用 Go 编写的命令行工具，能驱动真实 Chrome 浏览器完整加载目标网站，等待页面渲染和 JavaScript 执行完成后，抓取最终的 DOM 快照，然后剥离所有脚本标签，并将 CSS、图片、字体等资源下载到本地路径。最终产出一个可以长期离线保存、不依赖任何网络请求的静态站点。689 个 star 和 137 条评论的热度说明开发者们对这个需求有多痛——那些六个月后打开本地保存页面只见白屏的体验，谁用谁知道。",
+    "quote": "那些保存网页后变白屏的日子终于到头了，谢谢兄弟把 JS 都砍了",
+    "source": "HN Show HN",
+    "url": "https://news.ycombinator.com/item?id=48529990",
+    "published": "2026-06-17",
+    "uid": "dev_c1d2e3f4"
+  },
+  {
+    "title": "阿里千问发布 Qwen-Robot 具身智能大模型套件",
+    "content": "阿里巴巴推出的 Qwen-Robot Suite 包含三大模型：VLA 操作模型 Qwen-RobotManip (操控)、VLN 移动模型 Qwen-RobotNav (导航) 和世界模型 Qwen-RobotWorld。这是一套面向物理世界智能的基础模型，覆盖了机器人从感知、决策到执行的完整链路。HN 上 60 个 points，讨论焦点集中在国产大模型在具身智能领域的布局速度，以及这套方案与 Google RT-2、OpenAI Figure 等竞品的差异化。",
+    "quote": "机器人还没学会走路，模型倒先卷起来了，万物皆可 Qwen",
+    "source": "HN Front Page",
+    "url": "https://news.ycombinator.com/item?id=48554814",
+    "published": "2026-06-17",
+    "uid": "dev_d4e5f6a7"
+  },
+  {
+    "title": "Reflex 团队将 Python AST 遍历加速 220 倍的实战经验",
+    "content": "Reflex (原 Pynecone) 团队在开发 AI 驱动的应用构建器时，需要对海量 AI 生成的 Python 代码做 lint 校验。他们发现 ast.walk 是整个流程的瓶颈——遍历 7000 个节点需要约 2ms，算下来每节点 285 纳秒，远高于理论值。经过深入分析，他们发现 Python generator 的 yield 暂停/恢复开销巨大，通过改用列表存储并配合缓存/预分配优化，最终实现了 220 倍的性能提升。这不仅是一个优化案例，更是对 Python AST 实现细节的一次精彩拆解。",
+    "quote": "你以为 Python 慢是因为语言，其实是你没用对 yield，别什么都怪 GIL",
+    "source": "HN Front Page",
+    "url": "https://news.ycombinator.com/item?id=48557768",
+    "published": "2026-06-17",
+    "uid": "dev_e5f6a7b8"
+  },
+  {
+    "title": "Show HN: Ctx —— 102,928 个节点的 LLM 知识图谱，智能推荐 Skills 省 Token",
+    "content": "Ctx 是一个 Python CLI 工具，维护了一个包含 91,464 个 Skill、467 个 Agent、10,790 个 MCP Server 和 207 个 Harness 的巨型知识图谱 (290 万条边)。它监控你当前的工作上下文，从图谱中推荐最相关的 10-15 个 Skill/Agent/MCP，避免一次性加载全部内容浪费 Token。还支持针对非 Claude Code 的自定义模型配置。对于正在做 AI 编程但苦于 context window 不够用的开发者来说，这是一个很实用的工具。",
+    "quote": "91K 个 Skill 怎么选？ctx 帮你自动挑，再也不用自己 copy paste 到天亮了",
+    "source": "HN Show HN",
+    "url": "https://news.ycombinator.com/item?id=48559559",
+    "published": "2026-06-17",
+    "uid": "dev_f6a7b8c9"
+  },
+  {
+    "title": "x86 模拟器团队遇到烂代码，直接在模拟过程中给它修了",
+    "content": "Raymond Chen 在 Old New Thing 博客讲了一个经典故事：x86 模拟器团队在模拟某个遗留系统时，发现目标代码中存在一个极其糟糕的 bug——一个导致死循环的寄存器值错误。按常规流程需要定位、修复、重建、重新部署，但团队做了一个大胆的决定：在模拟过程中动态修改内存中的指令来绕过这个 bug，让系统继续运行。这个故事拿到了 457 个 points 和 147 条评论，开发者们既被这种 hack 精神折服，也讨论着这到底是天才还是鲁莽。",
+    "quote": "生产环境改代码？不，我们在模拟器里改你生产环境的代码",
+    "source": "HN Front Page",
+    "url": "https://news.ycombinator.com/item?id=48550693",
+    "published": "2026-06-17",
+    "uid": "dev_a7b8c9d0"
+  },
+  {
+    "title": "章鱼架构：面向 AI Agent 的协调型设计模式",
+    "content": "Goodman 在博客中分享了 TorkBot 的设计——一种类似章鱼的 Agent 架构：一个中央大脑统一调度，多条半自主的触手各自拥有本地智能，执行完毕后向中央汇报。这种架构解决了三个核心矛盾：表面交互的响应速度（触手部分是无 IO 的轻量操作）、复杂任务的深度能力（通过委派给子 Agent）以及 Agent 人格的连续性（所有上下文的单一会话管理）。特别是将所有交互都在同一个前台会话中扁平化的设计抉择，在开发者社区引起了不小的争论。",
+    "quote": "说人话就是：老板拍板，小弟干活，Agent 界也得讲组织纪律",
+    "source": "HN Front Page",
+    "url": "https://news.ycombinator.com/item?id=48558696",
+    "published": "2026-06-17",
+    "uid": "dev_b8c9d0e1"
+  },
+  {
+    "title": "Show HN: Trace —— 离线 Mac 会议转录 + 会中标记工具",
+    "content": "Trace 是一款 macOS 原生应用，能在完全离线状态下实时转录会议内容，并支持在会议进行中用关键词标记重点。与市面上大多需要云端处理的转录工具不同，Trace 的所有计算都在本地 Mac 上完成，不会将任何音频数据上传到第三方服务器。202 个 star 和 83 条评论的热度说明开发者对这个工具的需求确实旺盛——远程会议无处不在，但大多数人不想把敏感对话数据上传到云端。转录后的文本可以本地搜索和导出。",
+    "quote": "开会时脑子不转，会后靠 Trace 帮我回忆刚才到底答应了多少需求",
+    "source": "HN Show HN",
+    "url": "https://news.ycombinator.com/item?id=48521236",
+    "published": "2026-06-17",
+    "uid": "dev_c9d0e1f2"
+  },
+  {
+    "title": "iroh 1.0 发布：用密钥替代 IP 地址的 Rust P2P 网络库",
+    "content": "n0 团队历时四年多、跨越 65 个版本迭代，终于发布了 iroh 1.0。这个 Rust 实现的 P2P 网络库提出了一个激进的口号：Dial keys, not IPs。核心思路是用公钥/密钥对替代 IP 地址作为网络标识，在应用层实现去中心化的直接连接。昨日 GitHub 上 326 stars 的增长说明开发者们对去中心化网络的兴趣正在升温，尤其是在传统 IP 地址分发的各种限制越来越明显的背景下。",
+    "quote": "IP 地址不够用？我直接不用了，用密钥拨号就问你怕不怕",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/n0-computer/iroh",
+    "published": "2026-06-17",
+    "uid": "dev_d0e1f2a3"
+  },
+  {
+    "title": "哪吒监控曝严重漏洞 CVE-2026-53519，运维人员请注意",
+    "content": "V2EX 安全板块今天曝出哪吒监控 (Nezha Monitor) 存在严重漏洞 CVE-2026-53519。哪吒监控是一个广受欢迎的开源服务器监控面板，许多运维人员用它来同时管理多台服务器。该漏洞的具体细节尚未完全公开，但发帖人提醒所有使用哪吒监控的用户尽快升级到最新版本，并检查是否存在被利用的痕迹。考虑到哪吒监控在运维圈的高部署量，这个漏洞的潜在影响面相当大，建议相关人员立即排查并优先处理。",
+    "quote": "监控工具自己先出事了，运维今天得加班到天亮",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1220915",
+    "published": "2026-06-17",
+    "uid": "dev_e1f2a3b4"
+  },
+  {
+    "title": "Show HN: VoiceDraw —— 边说边画系统架构图",
+    "content": "VoiceDraw 是一款语音驱动的系统架构图绘制工具。你只需口述架构设计思路，比如用户请求先经过 API Gateway，然后到微服务 A，A 调用 Redis 缓存，它就能实时识别并画出对应的架构图。背后结合了语音识别技术和 LLM 语义理解能力，将自然语言描述的架构关系自动转化为图形节点和连线。对于不喜欢拖拽画图或者正在做技术方案讨论的开发者来说，这个 idea 足够新鲜，实际效果值得一试。",
+    "quote": "画架构图终于不用鼠标了，虽然念出来听着也挺中二的",
+    "source": "HN Show HN",
+    "url": "https://news.ycombinator.com/item?id=48560454",
+    "published": "2026-06-17",
+    "uid": "dev_f2a3b4c5"
+  },
+  {
+    "title": "Wasp 全栈框架抛弃自研 DSL，全面转向 TypeScript",
+    "content": "Wasp 在第 12 次 Launch Week 上宣布了一个重大架构变更：放弃自研的领域特定语言 (DSL)，改为用纯 TypeScript 实现框架核心。这一决定的背后是团队发现自研 DSL 的学习成本远高于预期，且社区贡献的门槛过高。全面转向 TypeScript 后，现有 React 和 Node.js 开发者可以直接上手，不用再学一门新语言。对于做全栈框架的创业团队来说，这是一个值得深思的取舍案例。",
+    "quote": "自研 DSL 一时爽，生态维护火葬场，不如老老实实写 TS",
+    "source": "开源中国 OSChina",
+    "url": "https://www.oschina.net/news/459470/wasp-typescript-spec",
+    "published": "2026-06-17",
+    "uid": "dev_a3b4c5d6"
+  },
+  {
+    "title": "Spring Tools 5.2.0 发布：新增 Claude Code 实验性插件",
+    "content": "Spring Tools 5.2.0 版本正式发布，覆盖 VS Code、Cursor、Eclipse、Theia 和 Claude Code 等多个 IDE。最值得关注的是为 Claude Code 引入了实验性插件支持——这意味着 Spring 开发者现在可以直接在 Claude Code 中获取 Spring 专属的代码提示和诊断能力。这标志着主流 Java 框架正在积极拥抱 AI 编程工具生态，从要不要用 AI 写代码进入到怎么让 AI 更好地写 Java/Spring 代码的阶段。",
+    "quote": "Spring 都上 Claude Code 了，你还在坚持手写 XML 配置？",
+    "source": "开源中国 OSChina",
+    "url": "https://www.oschina.net/news/459588/spring-tools-5-2-0-released",
+    "published": "2026-06-17",
+    "uid": "dev_b4c5d6e7"
+  },
+  {
+    "title": "阿里开源 zvec —— 轻量级闪电般快的进程内向量数据库",
+    "content": "阿里巴巴开源的 zvec 是一个 C++ 实现的进程内向量数据库，主打极致的轻量和速度。与 Milvus、Qdrant 等独立部署的向量数据库不同，zvec 设计为嵌入在应用程序进程中运行，零网络开销。昨日 GitHub 上涨 188 stars。对于需要做语义搜索和 RAG 的小型应用来说，zvec 提供了一个比部署独立向量数据库更轻量的选择。在 AI 应用遍地开花的今天，这类嵌入式向量引擎的市场空间正在快速增长。",
+    "quote": "卷完大模型卷向量库，阿里这波是万物皆可数据库",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/alibaba/zvec",
+    "published": "2026-06-17",
+    "uid": "dev_c5d6e7f8"
+  },
+  {
+    "title": "Solon v4.0 发布：Java 轻量级框架的做减法哲学",
+    "content": "Solon 是一个 Java 轻量级应用框架，v4.0 版本的核心主题是做减法——清理了大量历史弃用 API，保持框架简洁。同时优化了 AI 生态集成：将 skill 概念统一为 talent，新增沙盒隔离能力，升级协议支持。此外还推动第三方插件回归官方维护以提升生态可持续性。在 Spring Boot 几乎占据统治地位的 Java 世界里，Solon 这种小而美、不妥协的路线和做减法哲学值得关注。",
+    "quote": "Spring Boot 太重？Solon 说我帮你瘦个身，Java 界也需要极简主义",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/noear/p/20581399",
+    "published": "2026-06-17",
+    "uid": "dev_d6e7f8a9"
+  },
+  {
+    "title": "Show HN: Fata —— 用间隔重复对抗 AI 编程带来的技能退化",
+    "content": "Fata 是一个针对 AI 编程时代的技能保持工具。当你用 Cursor/Claude Code 写代码越来越顺手时，底层的基础能力也在悄悄退化。Fata 采用间隔重复 (Spaced Repetition) 策略，在你使用 AI 编码的过程中穿插基础知识点考查——比如算法原理、系统设计概念、编程语言细节。109 个 star 和 51 条评论说明开发者们确实有这种 AI 用多了手生的焦虑。Inc.com 甚至为此发了一篇文章讨论：AI 编程是否正在制造一代不思考的码农？",
+    "quote": "AI 写代码你爽了，面试时你怎么办？Fata 帮你对抗脑子锈了",
+    "source": "HN Show HN",
+    "url": "https://news.ycombinator.com/item?id=48489163",
+    "published": "2026-06-17",
+    "uid": "dev_e7f8a9b0"
+  },
+  {
+    "title": "jqwik 反 AI 陷阱触发开发者删库，AI 编程助手被指无脑机器",
+    "content": "开源中国报道了两起值得开发者警惕的事件：Java 测试工具 jqwik 设置的反 AI 陷阱被 AI 编程助手触发，导致开发者大规模删库；另一案例中 AI 编程助手无视业务逻辑，生成了看似正确实则完全无用的代码。这两起事件精准揭示了当前 AI 编码助手的本质问题——它们不是真正理解代码含义的智能助手，而是基于统计模式生成文本的概率机器。开发者社区呼吁理性看待 AI 编程工具，不要过度依赖和盲目信任。",
+    "quote": "AI 写的代码能跑和能工作之间，隔着一个 jqwik 删库的距离",
+    "source": "开源中国 OSChina",
+    "url": "https://www.oschina.net/news",
+    "published": "2026-06-17",
+    "uid": "dev_f8a9b0c1"
+  },
+  {
+    "title": "Bash 内置 /dev/TCP 也能发 HTTP 请求，没有 curl 也不慌",
+    "content": "一篇技术文章手把手教你如何在连 curl 和 wget 都没有的精简容器里用 Bash 内置的 /dev/tcp 发送 HTTP 请求。原理很简单：exec 3<>/dev/tcp/host/port 打开一个 TCP socket，然后用 printf 手动拼 HTTP 请求行和头部，最后 cat 读取响应。102 个 points 和 59 条评论的热度说明这个冷知识确实帮到了不少运维和容器开发者。当然作者也提醒，这只是一个调试技巧，不能替代全功能的 HTTP 客户端。",
+    "quote": "容器那么小连 curl 都没有？没事，Bash 自己就能发 HTTP",
+    "source": "HN Front Page",
+    "url": "https://news.ycombinator.com/item?id=48558018",
+    "published": "2026-06-17",
+    "uid": "dev_a9b0c1d2"
+  }
+]
