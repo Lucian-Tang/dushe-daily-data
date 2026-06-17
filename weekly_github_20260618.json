@@ -1,20 +1,20 @@
 {
-  "week_start": "2026-06-11",
-  "week_end": "2026-06-17",
-  "summary": "本周GitHub Trending共收录 37 个热门项目，新上榜 37 个，以Python项目为主（10个），主要集中在AI工具/LLM应用（13个）、其他（7个）方向，榜首agent-skills作为本周AI工具/LLM应用方向的明星项目登顶（1514 stars），反映出开发者对AI工具和智能体的持续旺盛需求。",
+  "week_start": "2026-06-12",
+  "week_end": "2026-06-18",
+  "summary": "本周GitHub Trending共收录 49 个热门项目，新上榜 49 个，以Python项目为主（13个），主要集中在AI工具/LLM应用（19个）、其他（8个）方向，榜首mattpocock作为本周AI工具/LLM应用方向的明星项目登顶（1849 stars），反映出开发者对AI工具和智能体的持续旺盛需求。",
   "stats": {
-    "total_repos": 37,
-    "new_entries": 37,
+    "total_repos": 49,
+    "new_entries": 49,
     "persistent": 0,
     "languages": {
-      "Python": 10,
-      "TypeScript": 6,
-      "Rust": 3,
-      "Shell": 2,
+      "Python": 13,
+      "TypeScript": 10,
+      "Rust": 4,
+      "Shell": 3,
+      "C": 2,
+      "Kotlin": 2,
       "Swift": 1,
-      "C": 1,
       "Go": 1,
-      "Kotlin": 1,
       "Ruby": 1,
       "TeX": 1,
       "C#": 1,
@@ -23,20 +23,32 @@
       "Java": 1,
       "HTML": 1,
       "Elixir": 1,
-      "C++": 1
+      "C++": 1,
+      "Clojure": 1
     },
     "categories": {
-      "AI工具/LLM应用": 13,
-      "其他": 7,
+      "AI工具/LLM应用": 19,
+      "其他": 8,
+      "开发工具/CLI": 6,
+      "框架与库": 6,
       "学习资源/教程": 5,
-      "框架与库": 4,
-      "开发工具/CLI": 3,
       "Agent/自动化": 2,
       "安全/DevOps": 2,
       "数据科学/可视化": 1
     }
   },
   "top_10": [
+    {
+      "title": "sponsors/mattpocock",
+      "url": "https://github.com/sponsors/mattpocock",
+      "language": "Shell",
+      "stars": 1849,
+      "forks": 0,
+      "first_seen": "2026-06-18",
+      "appearances": 1,
+      "content": "Skills for Real Engineers. Straight from my .claude directory.",
+      "category": "AI工具/LLM应用"
+    },
     {
       "title": "addyosmani/agent-skills",
       "url": "https://github.com/addyosmani/agent-skills",
@@ -74,12 +86,23 @@
       "title": "Panniantong/Agent-Reach",
       "url": "https://github.com/Panniantong/Agent-Reach",
       "language": "Python",
-      "stars": 1100,
+      "stars": 1154,
       "forks": 0,
       "first_seen": "2026-06-16",
-      "appearances": 1,
+      "appearances": 2,
       "content": "Give your AI agent eyes to see the entire internet. Read &amp; search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
       "category": "AI工具/LLM应用"
+    },
+    {
+      "title": "sponsors/obra",
+      "url": "https://github.com/sponsors/obra",
+      "language": "Shell",
+      "stars": 1109,
+      "forks": 0,
+      "first_seen": "2026-06-14",
+      "appearances": 2,
+      "content": "An agentic skills framework &amp; software development methodology that works.",
+      "category": "Agent/自动化"
     },
     {
       "title": "NVIDIA/SkillSpector",
@@ -93,62 +116,48 @@
       "category": "AI工具/LLM应用"
     },
     {
-      "title": "sponsors/obra",
-      "url": "https://github.com/sponsors/obra",
-      "language": "Shell",
-      "stars": 924,
-      "forks": 0,
-      "first_seen": "2026-06-14",
-      "appearances": 1,
-      "content": "An agentic skills framework &amp; software development methodology that works.",
-      "category": "Agent/自动化"
-    },
-    {
       "title": "sponsors/freeCodeCamp",
       "url": "https://github.com/sponsors/freeCodeCamp",
       "language": "TypeScript",
-      "stars": 633,
+      "stars": 764,
       "forks": 0,
       "first_seen": "2026-06-15",
-      "appearances": 3,
+      "appearances": 4,
       "content": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
       "category": "学习资源/教程"
     },
     {
-      "title": "sponsors/rohitg00",
-      "url": "https://github.com/sponsors/rohitg00",
-      "language": "Python",
-      "stars": 562,
+      "title": "DeusData/codebase-memory-mcp",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "language": "C",
+      "stars": 718,
       "forks": 0,
-      "first_seen": "2026-06-16",
+      "first_seen": "2026-06-18",
       "appearances": 1,
-      "content": "Learn it. Build it. Ship it for others. 推荐阅读原文了解更多细节。",
-      "category": "学习资源/教程"
+      "content": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary",
+      "category": "AI工具/LLM应用"
     },
     {
-      "title": "Introduction-to-Autonomous-Robots/Introduction-to-Autonomous-Robots",
-      "url": "https://github.com/Introduction-to-Autonomous-Robots/Introduction-to-Autonomous-Robots",
-      "language": "TeX",
-      "stars": 489,
+      "title": "google-research/timesfm",
+      "url": "https://github.com/google-research/timesfm",
+      "language": "Python",
+      "stars": 712,
       "forks": 0,
-      "first_seen": "2026-06-15",
-      "appearances": 2,
-      "content": "Introduction to Autonomous Robots 推荐阅读原文了解更多细节。",
-      "category": "Agent/自动化"
-    },
-    {
-      "title": "sponsors/chatwoot",
-      "url": "https://github.com/sponsors/chatwoot",
-      "language": "Ruby",
-      "stars": 431,
-      "forks": 0,
-      "first_seen": "2026-06-14",
-      "appearances": 3,
-      "content": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬",
+      "first_seen": "2026-06-18",
+      "appearances": 1,
+      "content": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
       "category": "AI工具/LLM应用"
     }
   ],
   "new_entries": [
+    {
+      "title": "sponsors/mattpocock",
+      "url": "https://github.com/sponsors/mattpocock",
+      "language": "Shell",
+      "stars": 1849,
+      "first_seen": "2026-06-18",
+      "content": "Skills for Real Engineers. Straight from my .claude directory."
+    },
     {
       "title": "addyosmani/agent-skills",
       "url": "https://github.com/addyosmani/agent-skills",
@@ -177,9 +186,17 @@
       "title": "Panniantong/Agent-Reach",
       "url": "https://github.com/Panniantong/Agent-Reach",
       "language": "Python",
-      "stars": 1100,
+      "stars": 1154,
       "first_seen": "2026-06-16",
       "content": "Give your AI agent eyes to see the entire internet. Read &amp; search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees."
+    },
+    {
+      "title": "sponsors/obra",
+      "url": "https://github.com/sponsors/obra",
+      "language": "Shell",
+      "stars": 1109,
+      "first_seen": "2026-06-14",
+      "content": "An agentic skills framework &amp; software development methodology that works."
     },
     {
       "title": "NVIDIA/SkillSpector",
@@ -190,44 +207,28 @@
       "content": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks."
     },
     {
-      "title": "sponsors/obra",
-      "url": "https://github.com/sponsors/obra",
-      "language": "Shell",
-      "stars": 924,
-      "first_seen": "2026-06-14",
-      "content": "An agentic skills framework &amp; software development methodology that works."
-    },
-    {
       "title": "sponsors/freeCodeCamp",
       "url": "https://github.com/sponsors/freeCodeCamp",
       "language": "TypeScript",
-      "stars": 633,
+      "stars": 764,
       "first_seen": "2026-06-15",
       "content": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free."
     },
     {
-      "title": "sponsors/rohitg00",
-      "url": "https://github.com/sponsors/rohitg00",
+      "title": "DeusData/codebase-memory-mcp",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "language": "C",
+      "stars": 718,
+      "first_seen": "2026-06-18",
+      "content": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary"
+    },
+    {
+      "title": "google-research/timesfm",
+      "url": "https://github.com/google-research/timesfm",
       "language": "Python",
-      "stars": 562,
-      "first_seen": "2026-06-16",
-      "content": "Learn it. Build it. Ship it for others. 推荐阅读原文了解更多细节。"
-    },
-    {
-      "title": "Introduction-to-Autonomous-Robots/Introduction-to-Autonomous-Robots",
-      "url": "https://github.com/Introduction-to-Autonomous-Robots/Introduction-to-Autonomous-Robots",
-      "language": "TeX",
-      "stars": 489,
-      "first_seen": "2026-06-15",
-      "content": "Introduction to Autonomous Robots 推荐阅读原文了解更多细节。"
-    },
-    {
-      "title": "sponsors/chatwoot",
-      "url": "https://github.com/sponsors/chatwoot",
-      "language": "Ruby",
-      "stars": 431,
-      "first_seen": "2026-06-14",
-      "content": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬"
+      "stars": 712,
+      "first_seen": "2026-06-18",
+      "content": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting."
     }
   ],
   "persistent": [],
@@ -235,12 +236,12 @@
     {
       "title": "Panniantong/Agent-Reach",
       "url": "https://github.com/Panniantong/Agent-Reach",
-      "stars": 1100,
+      "stars": 1154,
       "language": "Python",
       "category": "AI工具/LLM应用",
-      "appearances": 1,
+      "appearances": 2,
       "content": "Give your AI agent eyes to see the entire internet. Read &amp; search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHo",
-      "reason": "🌟 高关注度（1100 stars）、🛠 Python 技术栈、🤖 AI/LLM 方向"
+      "reason": "🌟 高关注度（1154 stars）、🛠 Python 技术栈、🤖 AI/LLM 方向"
     },
     {
       "title": "apple/container",
@@ -275,12 +276,12 @@
     {
       "title": "sponsors/obra",
       "url": "https://github.com/sponsors/obra",
-      "stars": 924,
+      "stars": 1109,
       "language": "Shell",
       "category": "Agent/自动化",
-      "appearances": 1,
+      "appearances": 2,
       "content": "An agentic skills framework &amp; software development methodology that works.",
-      "reason": "📈 人气上升（924 stars）、🛠 Shell 技术栈、🧠 Agent 智能体"
+      "reason": "🌟 高关注度（1109 stars）、🛠 Shell 技术栈、🧠 Agent 智能体"
     }
   ]
 }

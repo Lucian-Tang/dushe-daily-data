@@ -42,10 +42,15 @@ CLAWHUB_QUOTES = [
 
 # ===== Clean helper =====
 def clean_source(s):
-    return s.lstrip('*').lstrip(' ').strip()
+    """Clean source string: strip ** markers, leading/trailing whitespace."""
+    s = s.strip()
+    s = re.sub(r'^\*+', '', s)  # leading asterisks
+    s = re.sub(r'\*+$', '', s)  # trailing asterisks
+    return s.strip()
 
 def clean_url(s):
-    return s.lstrip('*').lstrip(' ').strip()
+    """Clean URL string: strip ** markers, leading/trailing whitespace."""
+    return s.strip().strip('*').strip()
 
 def _clean_raw_content(raw_content, source):
     """清洗 raw content：剥离HN/NL等平台的元数据格式，提取有效文本"""
@@ -211,56 +216,194 @@ def parse_ai(text):
     return items
 
 def parse_design(text):
+    """Parse design MD with format: ### N. Title | **来源：** | 🔗 [阅读原文](url) | > 💬 quote
+    
+    Handles section headers (H2 with emoji like 🔥📱🏗️🧩📊) by skipping them.
+    Extracts source/url/quote from structured MD lines.
+    """
     items = []
     for part in re.split(r'\n###\s+\d+\.\s+', text)[1:]:
         lines = part.strip().split('\n')
         title = lines[0].strip() if lines else ''
-        if not title: continue
+        if not title:
+            continue
+
+        # 🔴 Skip section headers (H2 with emoji markers — not real articles)
+        # Strip leading non-word/non-CJK characters (emojis, symbols, spaces)
+        title_stripped = re.sub(r'^[^\w\u4e00-\u9fff]+', '', title).strip()
+        if title_stripped in ['设计大师与空间', '移动端 UX 与 AI', '设计工具与平台',
+                               '空间与建筑', '设计系统', '本期覆盖', '今日数据',
+                               '移动端UX与AI', '移动端UX', '移动端']:
+            continue
+        # Short Chinese-only titles (1-6 chars) are likely section headers
+        if re.match(r'^[\u4e00-\u9fff]{1,6}$', title_stripped) and len(title_stripped) <= 6:
+            continue
+
         src = url = quote = ''
-        content = []
+        content_lines = []
+
         for l in lines[1:]:
             s = l.strip()
-            if not s or s == '---': continue
-            m = re.match(r'\*\*来源[：:]\s*(.+)', s)
-            if m: src = clean_source(m.group(1)); continue
-            m = re.match(r'\*\*链接[：:]\s*(.+)', s)
-            if m: url = clean_url(m.group(1)); continue
-            m = re.match(r'\*\*Lucia 毒舌[：:]\s*(.+)', s)
-            if m: quote = m.group(1).strip(); continue
+            if not s or s == '---':
+                continue
+
+            # Skip nested section headers
+            if s.startswith('## ') or s.startswith('### '):
+                if re.search(r'[🔥📱🏗️🧩📊🎨📐🖌️💡🎯🏛️🪑]', s[:10]):
+                    continue
+                if re.match(r'#{2,3}\s+\d+\b', s):
+                    continue
+
+            # Source line: **来源：Source | Date** (may have trailing **)
+            m = re.match(r'\*\*来源[：:]\s*(.+?)\*{0,2}$', s)
+            if m:
+                src = clean_source(m.group(1))
+                continue
+
+            # Date-only line: **日期：...** (skip)
+            if re.match(r'\*\*日期[：:]', s):
+                continue
+
+            # URL: 🔗 [阅读原文](url) or [阅读原文](url) or bare 🔗 url
+            m = re.search(r'\[🔗?\s*(?:阅读原文|原文|原文链接)?\]\((.+?)\)', s)
+            if m:
+                url = clean_url(m.group(1))
+                continue
+            m = re.match(r'🔗\s*(https?://\S+)', s)
+            if m:
+                url = clean_url(m.group(1))
+                continue
+            # Generic markdown link [text](url)
+            m = re.search(r'\[.*?\]\((.+?)\)', s)
+            if m and not url:
+                url = clean_url(m.group(1))
+                continue
+
+            # Quote: > 💬 text — goes to quote, NOT content
             if s.startswith('> '):
-                content.append(s[2:].strip())
-        items.append(dict(title=title, content=' '.join(content).strip(), quote=quote, source=src, url=url))
+                inner = s[2:].strip()
+                inner = re.sub(r'^💬\s*', '', inner)
+                inner = re.sub(r'^\*\*Lucia\s*毒舌[：:]*\*{0,2}\s*', '', inner)
+                inner = re.sub(r'^毒舌[^：:]*[：:]\s*', '', inner)
+                if inner:
+                    quote = inner if not quote else quote + ' ' + inner
+                continue
+
+            # Quote: **Lucia毒舌：text** or **Lucia 毒舌：text**
+            m = re.match(r'.*毒舌[^：:]*[：:]\s*(.+)', s)
+            if m:
+                val = m.group(1).strip().rstrip('*')
+                if val:
+                    quote = val if not quote else quote + ' ' + val
+                continue
+
+            # General content (skip metadata and table rows)
+            if len(s) > 5 and not s.startswith('**') and not s.startswith('|') and not s.startswith('*'):
+                content_lines.append(s)
+
+        content = ' '.join(content_lines).strip()
+        items.append(dict(title=title, content=content, quote=quote, source=src, url=url))
     return items
 
 def parse_startup(text):
-    """Parse startup MD with format: ## N. Title or ### Title | **来源：** | **链接：** | > *毒舌点评：*"""
+    """Parse startup MD with format: ### N. Title | **来源：** | 🔗 url | > 💬 quote
+    
+    Handles section headers (H2 with emoji like 🔥📡🛠️📊) by skipping them.
+    Extracts source/url/quote from structured MD lines.
+    """
     items = []
+    # Split on ### N. or ## N. item headers
     for part in re.split(r'\n#{2,3}\s+\d*\.?\s*', text)[1:]:
         lines = part.strip().split('\n')
         title = lines[0].strip() if lines else ''
-        if not title: continue
-        src = url = quote = content = ''
+        if not title:
+            continue
+
+        # 🔴 Skip section headers (H2 with emoji markers — not real articles)
+        # Strip leading non-word/non-CJK characters (emojis, symbols, spaces)
+        title_stripped = re.sub(r'^[^\w\u4e00-\u9fff]+', '', title).strip()
+        if title_stripped in ['今日头条', '行业风向', '创业 & 开源', '今日数据', '热点关键词',
+                               '本期覆盖', '亮点一览', '数据回看', '深度分析', '快讯',
+                               '创业与开源', '创业和开源', '创业·开源', '创业&开源']:
+            continue
+        # Short Chinese-only titles (1-6 chars) without URL-like content are section headers
+        if re.match(r'^[\u4e00-\u9fff]{1,6}$', title_stripped) and len(title_stripped) <= 6:
+            continue
+
+        src = url = quote = ''
+        content_lines = []
+
         for l in lines[1:]:
             s = l.strip()
-            if not s or s.startswith('---') or s.startswith('##'): continue
-            m = re.match(r'\*\*来源[：:]\s*(.+)', s)
-            if m: src = clean_source(m.group(1)); continue
-            m = re.search(r'\*\*链接[\w]*[：:]\s*(.+)', s)
+            if not s or s == '---':
+                continue
+
+            # Skip nested section headers (## or ### within content)
+            if s.startswith('## ') or s.startswith('### '):
+                if re.search(r'[🔥📡🛠️📊📈🎯💡🔬🏗️📱🧩📦🎨💼🌟⚡📰💰🎬🔧🧪]', s[:10]):
+                    continue
+                # Also skip numbered headers like "## 10."
+                if re.match(r'#{2,3}\s+\d+\b', s):
+                    continue
+
+            # Source line: **来源：Source | Date** (may have trailing **)
+            m = re.match(r'\*\*来源[：:]\s*(.+?)\*{0,2}$', s)
+            if not m:
+                m = re.match(r'\*\*信源[：:]\s*(.+?)\*{0,2}$', s)
             if m:
-                val = m.group(1).strip()
-                url_m = re.search(r'(https?://[^\s\)\]]+)', val)
-                if url_m: url = clean_url(url_m.group(1))
-                if not url: url = clean_url(val)
+                src = clean_source(m.group(1))
                 continue
+
+            # Date-only line: **日期：...** or **日期**: ... (skip, date is in published)
+            if re.match(r'\*\*日期[：:]', s):
+                continue
+
+            # URL: 🔗 url or 🔗 [text](url) or bare URL
+            m = re.search(r'\[🔗?\s*(?:原文|阅读原文|原文链接)?\]\((.+?)\)', s)
+            if m:
+                url = clean_url(m.group(1))
+                continue
+            # 🔗 followed by URL
+            m = re.match(r'🔗\s*(https?://\S+)', s)
+            if m:
+                url = clean_url(m.group(1))
+                continue
+            # **链接**：url or **原文**：url
+            m = re.search(r'\*\*(?:链接|原文)\*{0,2}[：:]\s*(https?://\S+)', s)
+            if m:
+                url = clean_url(m.group(1))
+                continue
+            # Bare URL on its own line
+            m = re.match(r'^(https?://[^\s]+)$', s)
+            if m and not url:
+                url = clean_url(m.group(1))
+                continue
+
+            # Quote: > 💬 quote text | > 毒舌：text | > quote
             if s.startswith('> '):
-                content += s[2:].strip() + ' '
+                inner = s[2:].strip()
+                # Strip leading emoji/prefix like 💬 or **毒舌：**
+                inner = re.sub(r'^💬\s*', '', inner)
+                inner = re.sub(r'^\*\*毒舌[^：:]*[：:]\*{0,2}\s*', '', inner)
+                inner = re.sub(r'^毒舌[^：:]*[：:]\s*', '', inner)
+                if inner:
+                    quote = inner if not quote else quote + ' ' + inner
                 continue
+
+            # Quote: **毒舌：text** or **Lucia毒舌：text**
             m = re.match(r'.*毒舌[^：:]*[：:]\s*(.+)', s)
-            if m: quote = m.group(1).strip(); continue
-            # General content (not metadata)
-            if len(s) > 10 and not s.startswith('**'):
-                content += s + ' '
-        items.append(dict(title=title, content=content.strip(), quote=quote, source=src, url=url))
+            if m:
+                val = m.group(1).strip().rstrip('*')
+                if val:
+                    quote = val if not quote else quote + ' ' + val
+                continue
+
+            # General content (not metadata, not headers)
+            if len(s) > 5 and not s.startswith('**') and not s.startswith('|'):
+                content_lines.append(s)
+
+        content = ' '.join(content_lines).strip()
+        items.append(dict(title=title, content=content, quote=quote, source=src, url=url))
     return items
 
 def parse_industry(text):
