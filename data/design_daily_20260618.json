@@ -2,73 +2,73 @@
   {
     "title": "How To Make Your Design System AI-Ready",
     "content": "Smashing Magazine 发布实用指南，教你如何减少 AI 生成原型的设计偏差。文中介绍了三重架构：Spec Files（设计决策规范 Markdown 文件）、Token Layer（封闭变量集）+ Auditing（FigmaLint 审计插件），并强调设计决策即基础设施——每一次决策都应进入 AI 可消费的规范文件。",
-    "quote": "AI 设计不好不是 AI 的锅，是你的设计系统不够“干净”。",
+    "quote": "AI 设计不好不是 AI 的锅，是你的设计系统不够\"干净\"。",
+    "source": "Smashing Magazine | 2026-06-18",
     "url": "https://www.smashingmagazine.com/2026/06/how-make-design-system-ai-ready/",
-    "source": "Smashing Magazine",
     "published": "2026-06-18",
-    "uid": "46fd7b74252747b8f7fa8a64fdb1c69e"
+    "uid": "design_35ab2373"
   },
   {
     "title": "Figma MCP：Canvas 向 AI Agent 全面开放",
     "content": "Figma 宣布通过 MCP 服务器让 AI Agent 直接写入设计稿。Agent 可以使用 use_figma 工具在画布上基于设计系统组件生成可编辑的 Frame，将代码中产生的状态（编码错误、加载态、空态）同步回设计稿。同时推出 Skills 机制——用 Markdown 文件指导 Agent 如何遵循团队设计规范。",
-    "quote": "设计师终于可以说“那个状态不是我漏做了，是代码自己长出来的”。",
+    "quote": "设计师终于可以说\"那个状态不是我漏做了，是代码自己长出来的\"。",
+    "source": "Figma Blog | 2026-06-17",
     "url": "https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/",
-    "source": "Figma Blog",
     "published": "2026-06-18",
-    "uid": "d6155c0f2a410b2daaff280a9cdb4829"
+    "uid": "design_f208028a"
   },
   {
     "title": "Workflow Lab：用 Figma MCP 扩展 Canvas 边界",
-    "content": "Figma 通过虚构团队 Astra 的工作流案例展示 MCP 如何打通设计与开发。Agent 读取导出视频功能的实际代码，识别出 14 种用户状态（远超最初设计的 4 种），自动在设计稿中补齐缺失的 Frame。设计师在此基础上补充错误恢复路径和进度指示器，形成设计⇌代码的双向反馈。",
-    "quote": "4 个 Frame 变 14 个，这就是“代码跑起来才发现问题”的名场面。",
+    "content": "Figma 通过虚构团队 Astra 的工作流案例展示 MCP 如何打通设计与开发。Agent 读取导出视频功能的实际代码，识别出 14 种用户状态（远超最初设计的 4 种），自动在设计稿中补齐缺失的 Frame。设计师在此基础上补充错误恢复路径和进度指示器，形成设计⇄代码的双向反馈。",
+    "quote": "4 个 Frame 变 14 个，这就是\"代码跑起来才发现问题\"的名场面。",
+    "source": "Figma Blog | 2026-06-17",
     "url": "https://www.figma.com/blog/workflow-lab-expanding-the-canvas-with-figma-mcp/",
-    "source": "Figma Blog",
     "published": "2026-06-18",
-    "uid": "de14b8dcb839c157a75683321c87161e"
+    "uid": "design_c9dcdff8"
   },
   {
-    "title": "60% 消费者认为品牌营销中提‘AI’是勝退信号",
-    "content": "WordPress VIP 发布《2026 网络未来》研究报告：60% 美国消费者认为品牌消息中出现 AI 是勝退信号而非卖点；74% 认为互联网比 10 年前更缺乏人性；61% 无法说出任何一家“AI 用得好的品牌”；平均 40 分钟就会出现“机器人玲劳”。",
+    "title": "% 消费者认为品牌营销中提 AI 是劝退信号",
+    "content": "WordPress VIP 发布《2026 网络未来》研究报告：60% 美国消费者认为品牌消息中出现 AI 是劝退信号而非卖点；74% 认为互联网比 10 年前更缺乏人性；61% 无法说出任何一家\"AI 用得好的品牌\"；平均 40 分钟就会出现\"机器人疲劳\"。",
     "quote": "消费者：AI？不了谢谢。品牌方：但是我们有 AI！消费者：我走还不行吗。",
+    "source": "WordPress VIP | 2026-06-17",
     "url": "https://wpvip.com/future-of-the-web-2026/",
-    "source": "WordPress VIP",
     "published": "2026-06-18",
-    "uid": "4cc0a3176cc0738aba7f79eba48ce7ca"
+    "uid": "design_e5be30f1"
   },
   {
     "title": "Adam CAD：开源 AI CAD 工具——一句话生成 3D 模型",
     "content": "YC W25 项目 Adam 发布开源 AI CAD 工具 CADAM。用户通过自然语言或图片输入即可生成 3D 模型，支持 .STL、.SCAD、.DXF 格式导出。关键能力：参数化控制（滑块即时调整尺寸）、实时 Three.js 预览、V8 发动机等复杂模型演示，在 Hacker News 获 69+ 分热度。",
-    "quote": "从“画图”到“说画”——设计师的 CAD 技能树又开始重新洗牌了。",
+    "quote": "从\"画图\"到\"说画\"——设计师的 CAD 技能树又开始重新洗牌了。",
+    "source": "GitHub / Hacker News | 2026-06-17",
     "url": "https://github.com/Adam-CAD/CADAM",
-    "source": "GitHub / Hacker News",
     "published": "2026-06-18",
-    "uid": "9214d2efb268940daeefac8ea6f3195b"
+    "uid": "design_a5946763"
   },
   {
     "title": "Hard Problems Are Still Hard：Figma 原型工具的演进反思",
-    "content": "Figma 设计师转 PM 的 Nikolas Klein 回顾七年来构建原型工具的历程。AI 改变了游戏规则但“困难的问题依然困难”——工具的变迁不改变设计的本质。文章以 Figma Make 为切入点，探讨 AI 时代下原型工具的新可能性与不变的核心挑战。",
+    "content": "Figma 设计师转 PM 的 Nikolas Klein 回顾七年来构建原型工具的历程。AI 改变了游戏规则但\"困难的问题依然困难\"——工具的变迁不改变设计的本质。文章以 Figma Make 为切入点，探讨 AI 时代下原型工具的新可能性与不变的核心挑战。",
     "quote": "工具在变，但设计从来不是技术问题——它一直是人的问题。",
+    "source": "Figma Blog | 2026-06-16",
     "url": "https://www.figma.com/blog/hard-problems-are-still-hard/",
-    "source": "Figma Blog",
     "published": "2026-06-18",
-    "uid": "3ffb0ad59569724db7b9a241da3de653"
+    "uid": "design_a550e114"
   },
   {
-    "title": "自修正色彩系统：CSS contrast-color() 改变可访问性游戏规则",
-    "content": "70% 的网站仍然无法通过 WCAG 对比度检查。CSS 新函数 contrast-color() 提供了原生解决方案：一行声明即可根据背景色自动返回黑或白文字颜色，无需 JS 库、无需构建步骤。文章解析了 Level 5 vs Level 6 规范分裂、APCA 算法的未来等关键技术细节。",
+    "title": "自修正色彩系统：CSS contrast-color() 改变可访问性规则",
+    "content": "70% 的网站依然无法通过 WCAG 对比度检查。CSS 新函数 contrast-color() 提供了原生解决方案：一行声明即可根据背景色自动返回黑或白文字颜色，无需 JS 库、无需构建步骤。文章解析了 Level 5 vs Level 6 规范分裂、APCA 算法的未来等关键技术细节。",
     "quote": "70% 的网站在 2026 年还不满足无障碍标准——这数字十年没动过。",
+    "source": "Smashing Magazine | 2026-05-15",
     "url": "https://www.smashingmagazine.com/2026/05/building-self-correcting-color-systems-contrast-color/",
-    "source": "Smashing Magazine",
     "published": "2026-06-18",
-    "uid": "7e663ecf26152be9abbb145c79221322"
+    "uid": "design_c914e65e"
   },
   {
     "title": "客户理解的四个层次：用户说的≠用户做的",
-    "content": "Vitaly Friedman 介绍 Hannah Shamji 的“客户理解四层”框架：用户说的 / 用户想的和感受的 / 用户做的 / 用户为什么这么做。强调直接提问是最糟糕的调研方式——人们会夸大、关注边角案例、偏好短期目标。建议从行为推断动机而非依赖用户的自述。",
+    "content": "Vitaly Friedman 介绍 Hannah Shamji 的\"客户理解四层\"框架：用户说的 / 用户想的和感受的 / 用户做的 / 用户为什么这么做。强调直接提问是最糟糕的调研方式——人们会夸大、关注边角案例、偏好短期目标。建议从行为推断动机而非依赖用户的自述。",
     "quote": "不要问用户想要什么——用户自己都不知道。观察他们。",
+    "source": "Smashing Magazine | 2026-05-05",
     "url": "https://www.smashingmagazine.com/2026/05/four-levels-customer-understanding/",
-    "source": "Smashing Magazine",
     "published": "2026-06-18",
-    "uid": "5e51fee2514fd1b13cba1c156b1d2894"
+    "uid": "design_57891303"
   }
 ]

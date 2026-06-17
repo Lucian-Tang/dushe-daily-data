@@ -1,23 +1,24 @@
 {
   "week_start": "2026-06-12",
   "week_end": "2026-06-18",
-  "summary": "本周共收录AI领域动态 84 条。本周最活跃：其他（31条）、Anthropic/Claude（25条）、Google/Gemini（20条）。主要方向为模型发布（22条）。",
+  "summary": "本周共收录AI领域动态 94 条。本周最活跃：其他（36条）、Anthropic/Claude（25条）、Google/Gemini（21条）。主要方向为模型发布（27条）。",
   "stats": {
-    "total_items": 84,
+    "total_items": 94,
     "by_vendor": {
-      "other": 31,
+      "other": 36,
       "anthropic": 25,
-      "google": 20,
-      "openai": 4,
-      "alibaba": 4
+      "google": 21,
+      "openai": 7,
+      "alibaba": 4,
+      "deepseek": 1
     },
     "by_direction": {
-      "模型发布": 22,
-      "工具/平台": 19,
+      "模型发布": 27,
+      "工具/平台": 20,
       "应用/落地": 16,
-      "研究/论文": 11,
+      "研究/论文": 14,
       "政策/合规": 10,
-      "行业动态": 6
+      "行业动态": 7
     }
   },
   "timeline": [
@@ -855,6 +856,115 @@
           ]
         }
       }
+    },
+    {
+      "date": "2026-06-18",
+      "models": {
+        "google": {
+          "displayName": "Google/Gemini",
+          "icon": "🌐",
+          "items": [
+            {
+              "uid": "ai_vibethinker3b",
+              "title": "新浪微博发布VibeThinker-3B：30亿参数模型匹敌数千亿参数大模型",
+              "direction": "模型发布",
+              "quote": "3B打671B，不是模型开挂了，是基准测试坏了吧？",
+              "url": "https://venturebeat.com/technology/why-weibos-tiny-vibethinker-3b-has-the-ai-world-arguing-over-benchmarks-again",
+              "published": "2026-06-18"
+            }
+          ]
+        },
+        "openai": {
+          "displayName": "OpenAI/GPT",
+          "icon": "🔬",
+          "items": [
+            {
+              "uid": "ai_glm52_753b",
+              "title": "智谱GLM-5.2开源发布：753B参数以1/6成本击败GPT-5.5",
+              "direction": "模型发布",
+              "quote": "MIT开源+1/6成本，美国搞出口管制，中国就搞价格战。",
+              "url": "https://venturebeat.com/technology/z-ais-open-weights-glm-5-2-beats-gpt-5-5-on-multiple-long-horizon-coding-benchmarks-for-1-6th-the-cost",
+              "published": "2026-06-18"
+            },
+            {
+              "uid": "ai_marlin_sakana",
+              "title": "Sakana AI推出「超深度研究」智能体Marlin：8小时生成100页报告",
+              "direction": "研究/论文",
+              "quote": "别人秒回你8小时，这就是咨询顾问和战略官的区别。",
+              "url": "https://venturebeat.com/technology/when-deep-research-isnt-enough-for-your-business-sakana-ai-launches-ultra-deep-research-agent-for-100-page-reports-in-8-hours",
+              "published": "2026-06-18"
+            },
+            {
+              "uid": "ai_skillopt_ms",
+              "title": "微软开源SkillOpt：无需修改模型权重即可自动优化Agent技能",
+              "direction": "研究/论文",
+              "quote": "连写prompt都要自动优化了，prompt工程师果然是最短命的职业。",
+              "url": "https://venturebeat.com/orchestration/microsofts-open-source-skillopt-automatically-upgrades-ai-agent-skills-without-touching-model-weights",
+              "published": "2026-06-18"
+            }
+          ]
+        },
+        "other": {
+          "displayName": "其他",
+          "icon": "📰",
+          "items": [
+            {
+              "uid": "ai_nadella_hollow",
+              "title": "Satya Nadella警告：AI可能像全球化一样「掏空」整个行业",
+              "direction": "工具/平台",
+              "quote": "微软CEO亲自写万字长文，看来是真的慌了。",
+              "url": "https://venturebeat.com/technology/satya-nadella-warns-that-ai-could-hollow-out-entire-industries-echoing-the-damage-done-by-globalization",
+              "published": "2026-06-18"
+            },
+            {
+              "uid": "ai_delm_stanford",
+              "title": "斯坦福DeLM框架：去中心化多智能体协作，成本直降50%",
+              "direction": "模型发布",
+              "quote": "所有智能体都是平级的，老板你可以下岗了。",
+              "url": "https://venturebeat.com/orchestration/stanfords-delm-cuts-multi-agent-task-costs-50-without-a-central-orchestrator",
+              "published": "2026-06-18"
+            },
+            {
+              "uid": "ai_ai_branding",
+              "title": "60%美国消费者表示：品牌营销中出现「AI」字样让人反感",
+              "direction": "模型发布",
+              "quote": "你说的对，但AI这个词已经成功取代了「区块链」的烦人程度。",
+              "url": "https://wpvip.com/future-of-the-web-2026/",
+              "published": "2026-06-18"
+            },
+            {
+              "uid": "ai_skillspector",
+              "title": "NVIDIA开源SkillSpector：给AI Agent技能做安全体检",
+              "direction": "模型发布",
+              "quote": "NVIDIA也开始搞AI安全了，毕竟Agent要是给自己改代码就麻烦了。",
+              "url": "https://github.com/NVIDIA/SkillSpector",
+              "published": "2026-06-18"
+            },
+            {
+              "uid": "ai_kimi_k27code",
+              "title": "Moonshot AI发布Kimi K2.7-Code：减少30%思考token，但独立基准存疑",
+              "direction": "研究/论文",
+              "quote": "自家考试进步21.8%，独立测评没数据——这剧本我好像看过。",
+              "url": "https://venturebeat.com/technology/kimi-k2-7-code-cuts-thinking-tokens-30-practitioners-say-benchmarks-dont-check-out",
+              "published": "2026-06-18"
+            }
+          ]
+        },
+        "deepseek": {
+          "displayName": "DeepSeek",
+          "icon": "🔍",
+          "items": [
+            {
+              "uid": "ai_deepseek_blacklist",
+              "title": "美国暂缓将DeepSeek列入黑名单，超100家中国实体被认定安全风险",
+              "direction": "行业动态",
+              "quote": "黑名单上写一半划掉，美国对DeepSeek的暧昧态度堪比前任。",
+              "url": "https://www.reuters.com/world/china/us-holds-off-blacklisting-chinas-deepseek-more-than-100-firms-deemed-security-2026-06-17/",
+              "published": "2026-06-18"
+            }
+          ]
+        }
+      }
     }
   ],
   "highlights": [
@@ -903,15 +1013,15 @@
       "direction": "模型发布"
     },
     {
-      "uid": "ai_8a6bbcdc",
-      "title": "Sam Altman 向特朗普政府提议：让美国政府入股 OpenAI",
-      "content": "据报道，OpenAI CEO Sam Altman 与特朗普政府讨论了美国政府入股 OpenAI 的可能性。Altman 将此方案包装为让公众从 AI 的经济收益中分享红利的方式。他最早在去年初就向特朗普总统直接提出了这一想法。这一提议若实现，将开创美国政府持股领先 AI 公司的先例，引发关于 AI 治理、国家利益和商业独立性的广泛讨论。",
-      "quote": "Altman 请 Uncle Sam 来当股东——政府入股 OpenAI，这算不算国家资本主义的新版本？",
-      "source": "NOTUS / The Verge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/927105/sam-altman-trump-administration-openai-stake",
-      "published": "2026-06-13",
+      "uid": "ai_glm52_753b",
+      "title": "智谱GLM-5.2开源发布：753B参数以1/6成本击败GPT-5.5",
+      "content": "Z.ai（原智谱AI）发布GLM-5.2，753B参数开源模型，采用创新的IndexShare架构——每四层稀疏注意力共享同一个索引器，在100万token上下文窗口下减少2.9倍计算量。SWE-bench Pro得分62.1超越GPT-5.5的58.6，FrontierSWE达74.4%。企业版仅$12.60/月，MIT开源许可允许本地部署。",
+      "quote": "MIT开源+1/6成本，美国搞出口管制，中国就搞价格战。",
+      "source": "VentureBeat",
+      "url": "https://venturebeat.com/technology/z-ais-open-weights-glm-5-2-beats-gpt-5-5-on-multiple-long-horizon-coding-benchmarks-for-1-6th-the-cost",
+      "published": "2026-06-18",
       "vendor": "openai",
-      "direction": "行业动态"
+      "direction": "模型发布"
     }
   ]
 }
