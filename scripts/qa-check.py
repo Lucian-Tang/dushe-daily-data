@@ -60,19 +60,50 @@ def check_daily_json(filepath: str) -> list[str]:
         items = json.load(f)
     if not isinstance(items, list):
         return [f"{filepath}: 非数组格式"]
+    
     for i, item in enumerate(items):
         title = item.get('title', f'item-{i}')[:40]
-        # Quote must not be empty
+        
+        # ── URL: 必须非空且格式正确 ──
+        url = (item.get('url', '') or '').strip()
+        if not url:
+            issues.append(f"[{i}] url 为空: {title}")
+        elif not url.startswith('http'):
+            if url != '#':  # normalize 使用 # 占位
+                issues.append(f"[{i}] url 非 http 协议: '{url[:50]}': {title}")
+        
+        # ── Source: 必须非空 ──
+        source = (item.get('source', '') or '').strip()
+        if not source:
+            issues.append(f"[{i}] source 为空: {title}")
+        elif source.endswith('**') or source.startswith('**'):
+            issues.append(f"[{i}] source 含未清理的 ** 标记: '{source}': {title}")
+        
+        # ── Quote: 必须非空 ──
         quote = (item.get('quote', '') or '').strip()
         if not quote:
             issues.append(f"[{i}] quote 为空: {title}")
-        # Content must not start with "Article URL" (raw scraped text leaked)
+        elif len(quote) < 5:
+            issues.append(f"[{i}] quote 过短 ({len(quote)}字): '{quote}': {title}")
+        
+        # ── Content: 不能为空、不能被污染 ──
         content = (item.get('content', '') or '').strip()
-        if content.startswith('Article URL'):
+        if not content:
+            issues.append(f"[{i}] content 为空: {title}")
+        elif content.startswith('Article URL'):
             issues.append(f"[{i}] content 以 'Article URL' 开头（抓取原文泄露）: {title}")
-        # Content length check
-        if len(content) < 50:
+        elif len(content) < 50:
             issues.append(f"[{i}] content 过短 ({len(content)}字): {title}")
+        
+        # ── Title: 不能为空 ──
+        if not title or title.startswith('item-'):
+            issues.append(f"[{i}] title 为空")
+        
+        # ── Published: 日期格式检查 ──
+        published = (item.get('published', '') or '').strip()
+        if published and not re.match(r'^\d{4}-\d{2}-\d{2}$', published[:10]):
+            issues.append(f"[{i}] published 格式异常: '{published[:20]}': {title}")
+        
     return issues
 
 def check_deploy(version: str, changes: str) -> list[str]:
