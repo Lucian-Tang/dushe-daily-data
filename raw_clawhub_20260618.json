@@ -1,0 +1,1448 @@
+[
+  {
+    "slug": "daxiapi",
+    "displayName": "大虾皮股市工具集",
+    "summary": "大虾皮(daxiapi.com)金融数据API服务入口，负责路由分发到具体分析skill。触发词：A股数据、市场数据、股票分析、板块分析、选股、市场复盘、财务分析、财报分析、ROE分析、杜邦分析。适用场景：获取A股市场、板块、个股、财报等数据时的统一入口，根据用户需求分发到对应的专业skill。不适用场景：非A股...",
+    "description": null,
+    "tags": {
+      "latest": "3.0.7"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 933,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 11
+    },
+    "createdAt": 1773571112691,
+    "updatedAt": 1781713857146,
+    "latestVersion": {
+      "version": "3.0.7",
+      "createdAt": 1781713857146,
+      "changelog": "- Removed the file: skill-card.md.\n- 路由映射表新增“SQL选股、条件选股”相关关键词，支持SQL条件筛选路由（`xiapi-stock-sql-screener`）。\n- CLI命令速查表新增 `sql <condition>`，支持自定义SQL条件组合筛选股票。\n- 文档其余内容与上一版本基本一致，仅结构补充和关键词扩展。",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "facebook-ads-library-search",
+    "displayName": "Facebook Ads Library Search",
+    "summary": "Searches Meta Ad Library (Facebook/Instagram/WhatsApp ads) by keyword or Facebook page ID and extracts ad details including creatives, copy, CTA, publisher p...",
+    "description": "Searches Meta Ad Library (Facebook/Instagram/WhatsApp ads) by keyword or Facebook page ID and extracts ad details including creatives, copy, CTA, publisher platforms, spend, impressions, reach estimates, and page transparency info. Use when user mentions Meta Ad Library, Facebook ads scraper, Instagram ads data, FB ad library, search Facebook ads, get ads from a Facebook page, scrape Meta ads, Facebook advertising data, ad creative extraction, competitor ads analysis, brand ads monitoring, Meta advertising transparency, political ads Facebook, housing ads Facebook, view all ads from a page, facebook ads search, fb ads library api, facebook ad archive, instagram ad data, get ad creatives.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781713852157,
+    "updatedAt": 1781713852157,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781713852157,
+      "changelog": "facebook-ads-library-search v1.0.0\n\n- Initial release: search the Meta Ad Library (Facebook, Instagram, WhatsApp ads) by keyword or Facebook page ID.\n- Retrieves detailed ad data: creatives, copy, calls-to-action, publisher platforms, spend, impressions, reach estimates, and page transparency info.\n- Supports advanced filters (status, ad type, media type, platforms, country), and paginated result fetching.\n- No Facebook login required; operates only on data visible in the user’s browser.\n- Limitations and usage guidelines documented, including handling of null fields and anti-scraping protections.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "ecommerce-seller-info-skill",
+    "displayName": "Ecommerce Seller Info",
+    "summary": "Extract seller or merchant profile data from marketplace platform seller pages. Returns seller name, rating, review count, positive feedback percentage, join...",
+    "description": "Extract seller or merchant profile data from marketplace platform seller pages. Returns seller name, rating, review count, positive feedback percentage, joined date, and return policy. Works on Amazon seller pages, eBay seller pages, and any e-commerce site with seller profiles. Use when: seller information, merchant profile, seller rating, marketplace seller data, seller details, vendor profile, store information, seller feedback, merchant rating, seller review count, get seller info, ebay seller page, amazon seller profile, marketplace vendor analysis, seller research.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781713799150,
+    "updatedAt": 1781713799150,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781713799150,
+      "changelog": "- Initial release: Extracts seller or merchant profile data from marketplace seller pages (Amazon, eBay, and others).\n- Returns seller name, rating, review count, positive feedback percentage, joined date, and return policy from seller pages.\n- Uses JSON-LD data and platform-specific DOM methods for data extraction.\n- Works from public pages without login; handles Amazon and eBay seller/storefront/feedback pages.\n- Provides guidance on extracting seller URLs from product or listing pages.\n- Details best practices for batch execution and error handling.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "xiapi-stock-sql-screener",
+    "displayName": "虾皮SQL自由选股",
+    "summary": "基于SQL条件筛选A股股票，支持自定义条件组合、排序和数量限制。支持等于、大于、小于、区间范围、IN枚举、字段间比较等多种条件写法，支持AND/OR逻辑组合和括号嵌套。返回股票代码、名称、涨跌幅、CS强度、RPS相对强度、SCTR技术排名、所属板块、概念等详细数据。触发词：SQL选股、选股、股票筛选、技术筛选、量...",
+    "description": "基于SQL条件筛选A股股票，支持自定义条件组合、排序和数量限制。支持等于、大于、小于、区间范围、IN枚举、字段间比较等多种条件写法，支持AND/OR逻辑组合和括号嵌套。返回股票代码、名称、涨跌幅、CS强度、RPS相对强度、SCTR技术排名、所属板块、概念等详细数据。触发词：SQL选股、选股、股票筛选、技术筛选、量化筛选、自定义筛选、条件选股。适用场景：自定义多条件组合筛选、量化策略选股、技术指标组合筛选、复杂逻辑条件筛选。不适用场景：个股深度基本面分析、财报研究、估值建模。",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781713744868,
+    "updatedAt": 1781713744868,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781713744868,
+      "changelog": "xiapi-stock-sql-screener v1.0.0\n\n- Initial release: SQL-based screening and analysis tool for A-share stocks.\n- Supports custom SQL queries, multi-condition combination, logical operators, sorting, and result limits.\n- Provides detailed output including stock codes, names, technical strength metrics (CS, RPS, SCTR), sector, and concept data.\n- Includes structured report templates, risk reminders, and quality checks for output.\n- Integrates with daxiapi.com API using CLI or environment token configuration.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "ecommerce-reviews-skill",
+    "displayName": "Ecommerce Reviews",
+    "summary": "Extract customer reviews from any e-commerce product page or reviews page. Returns reviewer name, star rating, date, review title, review body, verified purc...",
+    "description": "Extract customer reviews from any e-commerce product page or reviews page. Returns reviewer name, star rating, date, review title, review body, verified purchase status, and helpful votes per review. Works on Amazon, WooCommerce, Shopify, and any site with standard review markup. Supports pagination for multi-page review sections. Use when: product reviews, customer feedback, review scraping, get reviews, sentiment analysis data, review extraction, customer ratings, extract customer opinions, product feedback, user reviews, review mining, bulk review collection, review analysis, scrape ratings and comments, ecommerce review data.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781713732679,
+    "updatedAt": 1781713732679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781713732679,
+      "changelog": "- Initial release of the ecommerce-reviews skill.\n- Extracts customer reviews from any e-commerce product or reviews page (supports Amazon, WooCommerce, Shopify, and sites with standard review markup).\n- Returns reviewer name, star rating, date, review title, review body, verified purchase status, and helpful votes.\n- Supports pagination for multi-page review sections, including Amazon and generic platforms.\n- All progress notifications follow the user's language.\n- Includes error resumption, memory of past execution issues, and efficient batch orchestration.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "ecommerce-product-detail-skill",
+    "displayName": "Ecommerce Product Detail",
+    "summary": "Extract complete product information from any e-commerce product page. Returns name, price, currency, brand, images, description, SKU/ASIN/EAN/UPC/GTIN/MPN i...",
+    "description": "Extract complete product information from any e-commerce product page. Returns name, price, currency, brand, images, description, SKU/ASIN/EAN/UPC/GTIN/MPN identifiers, stock availability, rating, review count, variants, and seller. Works on Shopify, Amazon, WooCommerce, eBay, Walmart, Etsy, AliExpress, Alibaba, Target, Best Buy, Rakuten, Magento, BigCommerce, PrestaShop, and any public e-commerce site. Accepts product URL, keyword, or product identifier (SKU/ASIN/EAN/UPC). Use when: scrape product page, get product details, extract price and availability, product info extraction, check product data, product detail scraping, get product from URL, keyword product search, ASIN lookup, EAN search, UPC lookup, price check, product research, compare products, monitor product price, get product images, product brand and description, ecommerce data extraction, product catalog scraping, product page scraper, get item price, fetch product info.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781713626901,
+    "updatedAt": 1781713626901,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781713626901,
+      "changelog": "ecommerce-product-detail-skill v1.0.0\n\n- Initial release.\n- Extracts detailed product data (name, price, currency, brand, images, identifiers, availability, ratings, variants, seller) from any public e-commerce product page.\n- Supports product lookup by URL, keyword, or identifier (SKU, ASIN, EAN, UPC).\n- Compatible with major platforms including Amazon, eBay, Walmart, Shopify, Etsy, AliExpress, Target, and more.\n- Uses multi-layered extraction (JSON-LD, DOM, OG meta, microdata) for high reliability.\n- Includes notes on efficiency, error handling, and session memory for robust, repeatable data extraction.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "research-mode",
+    "displayName": "Research Mode",
+    "summary": "Run durable long-running research in OpenClaw using isolated cron iterations, persistent state, bounded execution, and milestone updates. Use when the user w...",
+    "description": "Run durable long-running research in OpenClaw using isolated cron iterations, persistent state, bounded execution, and milestone updates. Use when the user wants background research that can continue for hours or days, pause/resume/stop cleanly, accumulate sources/findings over time, and produce a final report instead of a single one-shot answer.",
+    "tags": {
+      "agents": "0.3.0",
+      "latest": "0.3.0",
+      "openclaw": "0.3.0",
+      "research": "0.3.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 70,
+      "installsAllTime": 2,
+      "installsCurrent": 2,
+      "stars": 1,
+      "versions": 3
+    },
+    "createdAt": 1781629593960,
+    "updatedAt": 1781713581836,
+    "latestVersion": {
+      "version": "0.3.0",
+      "createdAt": 1781713581836,
+      "changelog": "Public contracts, health diagnostics, recovery hardening, and staged completion docs.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "canonry",
+    "displayName": "Canonry",
+    "summary": "Agent-first AEO operating platform.",
+    "description": "Agent-first AEO operating platform.",
+    "tags": {
+      "latest": "4.83.0+25ce45e"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 5703,
+      "installsAllTime": 4,
+      "installsCurrent": 4,
+      "stars": 1,
+      "versions": 303
+    },
+    "createdAt": 1774104995898,
+    "updatedAt": 1781712339283,
+    "latestVersion": {
+      "version": "4.83.0+25ce45e",
+      "createdAt": 1781707315053,
+      "changelog": "Sync with canonry v4.83.0 (25ce45e)",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "meta-skill-system",
+    "displayName": "Meta Skill System",
+    "summary": "元技能系统，提供领域评估、工作流重构、领域负载物生成和通用任务执行的完整能力。核心能力：①领域消除评估（五步法：边界识别→存在理由分析→消除可行性评估→独立存在必要性判断→决策输出）②工作流重构（三步法：拆解→消除→重整，将复杂工作流重构为AI辅助一人简易完成）③领域负载物生成（从零创建完整的领域负载物技能，三层...",
+    "description": "元技能系统，提供领域评估、工作流重构、领域负载物生成和通用任务执行的完整能力。核心能力：①领域消除评估（五步法：边界识别→存在理由分析→消除可行性评估→独立存在必要性判断→决策输出）②工作流重构（三步法：拆解→消除→重整，将复杂工作流重构为AI辅助一人简易完成）③领域负载物生成（从零创建完整的领域负载物技能，三层结构模板+21项接口校验）④通用任务执行（三轴正交：执行轴6大元操作+管线编排、内容轴清单法+样本法、创新轴4种模式+10种元框架）。10域70种任务。触发词：元技能、领域评估、工作流重构、技能生成、任务执行、meta-skill、领域消除、三轴执行、创新框架。",
+    "tags": {
+      "latest": "1.0.4"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 117,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 5
+    },
+    "createdAt": 1781538718201,
+    "updatedAt": 1781712332650,
+    "latestVersion": {
+      "version": "1.0.4",
+      "createdAt": 1781712332650,
+      "changelog": "meta-skill-system 1.0.4\n\n- No feature or logic changes in core capabilities; documentation and reference structure remain unchanged.\n- The skill system continues to provide domain evaluation, workflow reconstruction, domain payload generation, and a general-purpose task execution framework.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "zhangben",
+    "displayName": "账本",
+    "summary": "个人记账与资产管理。通过陶朱账本 MCP 接口管理收入、支出、资产买入/卖出、负债、交易记录、财富看板等。触发场景：用户提到记账、记收入、记支出、买资产、卖资产、查资产、查负债、查交易、查收支、财富看板、账本等个人财务操作。",
+    "description": "个人记账与资产管理。通过陶朱账本 MCP 接口管理收入、支出、资产买入/卖出、负债、交易记录、财富看板等。触发场景：用户提到记账、记收入、记支出、买资产、卖资产、查资产、查负债、查交易、查收支、财富看板、账本等个人财务操作。",
+    "tags": {
+      "latest": "1.0.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 177,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 1,
+      "versions": 4
+    },
+    "createdAt": 1780755373597,
+    "updatedAt": 1781712173662,
+    "latestVersion": {
+      "version": "1.0.2",
+      "createdAt": 1781712173662,
+      "changelog": "Version 1.0.2\n\n- 新增 ai_expense 工具，支持使用 AI 专属账户记录支出\n- 操作速查和示例中新增 ai_expense 的用法说明\n- 修正部分参数名（sub_category 替换 sub_type），提升表述一致性",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "ecommerce-listing-skill",
+    "displayName": "Ecommerce Listing",
+    "summary": "Extract product list from any e-commerce category page, search results page, or keyword search with filters. Returns paginated product arrays with URL, name,...",
+    "description": "Extract product list from any e-commerce category page, search results page, or keyword search with filters. Returns paginated product arrays with URL, name, price, currency, image, rating, review count per item. Supports URL input, keyword search, and site-scoped search with filters: price range, brand, category, minimum rating, in-stock only, and sort order. Works on Amazon, eBay, Walmart, Shopify collections, WooCommerce shops, Google Shopping, and any public product listing page. Use when: category listing, product search results, ecommerce search, search for products, filter products by price, list products from a site, price range filter, brand filter, keyword search with filters, scrape product list, product catalog extraction, get all products from category, bulk product URLs, product list scraping, category page scraper, search results scraper, multi-page product extraction.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781711992327,
+    "updatedAt": 1781711992327,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781711992327,
+      "changelog": "ecommerce-listing-skill 1.0.0 — Initial release\n\n- Extracts structured, paginated product lists (URL, name, price, currency, image, rating, review count) from any public e-commerce category or search results page.\n- Supports input via direct URL, keyword search, or site-scoped search with filters (price range, brand, category, min rating, in-stock, sort order).\n- Works with Amazon, eBay, Walmart, Google Shopping, Shopify collections, WooCommerce, and most public product listing pages.\n- Automated pagination handles next-page URLs and load-more buttons.\n- All progress updates and messages follow the user's language settings.\n- Includes error handling, memory of past issues, and uptime/resumption strategies.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "gitlab-cli-skills",
+    "displayName": "Gitlab Cli Skills",
+    "summary": "Comprehensive GitLab CLI (glab) command reference and workflows for all GitLab operations. Use when working with merge requests, CI/CD pipelines, issues, rel...",
+    "description": "Comprehensive GitLab CLI (glab) command reference and workflows for all GitLab operations. Use when working with merge requests, CI/CD pipelines, issues, releases, repositories, authentication, variables, labels, milestones, snippets, or any glab command. Covers 40+ sub-commands including glab mr, glab ci, glab issue, glab repo, glab release, glab variable, and more.",
+    "tags": {
+      "latest": "1.13.11"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 6147,
+      "installsAllTime": 23,
+      "installsCurrent": 23,
+      "stars": 7,
+      "versions": 31
+    },
+    "createdAt": 1769984727873,
+    "updatedAt": 1781711919393,
+    "latestVersion": {
+      "version": "1.13.11",
+      "createdAt": 1781711919393,
+      "changelog": "Refresh GitLab CLI skills for glab v1.103.0: adds container-registry command coverage, packages list coverage, and stack switch/no-verify guidance. Built with scripts/build-claude-skill.sh and zip integrity verified.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "xiaolongxia",
+    "displayName": "小龙虾",
+    "summary": "《小龙虾》超级编程助手。触发词：编程、写代码、代码审查、审查代码、调试、debug、优化代码、解释代码、代码重构、代码助手。我是一个专注于代码开发的超级工程师，精通各种编程语言、架构设计、代码审查、调试优化等。",
+    "description": "《小龙虾》超级编程助手。触发词：编程、写代码、代码审查、审查代码、调试、debug、优化代码、解释代码、代码重构、代码助手。我是一个专注于代码开发的超级工程师，精通各种编程语言、架构设计、代码审查、调试优化等。",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1781710673283,
+    "updatedAt": 1781711905867,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1781711905867,
+      "changelog": "改名为小龙虾，API Key 已改为占位符，用户需自行配置",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "dfp-skill",
+    "displayName": "Digital Finance Presentation Skill",
+    "summary": "SAP Enterprise Ultra-Wide Presentation Generator with AI-Empowered methodology. Generate professional presentations for enterprise summits, financial digital...",
+    "description": "SAP Enterprise Ultra-Wide Presentation Generator with AI-Empowered methodology. Generate professional presentations for enterprise summits, financial digitalization, and valuation reports. Features 51年SAP技术演进, Joule生成式AI助手, RPA案例(93.75%效率提升), ESG碳资产管理, 数智财务四大能力穿透分析.",
+    "tags": {
+      "AI": "6.0.0",
+      "ESG": "6.0.0",
+      "Keynote": "6.0.0",
+      "MCP": "6.0.0",
+      "PPTX": "6.0.0",
+      "RPA": "6.0.0",
+      "SAP": "6.0.0",
+      "digital-finance": "6.0.0",
+      "enterprise": "6.0.0",
+      "finance": "6.0.0",
+      "latest": "6.0.0",
+      "presentation": "6.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781711889866,
+    "updatedAt": 1781711889866,
+    "latestVersion": {
+      "version": "6.0.0",
+      "createdAt": 1781711889866,
+      "changelog": "v6.0.0 - SAP Digital Finance Methodology Integration: 51年技术演进, Business AI, Joule助手, RPA案例(93.75%), ESG碳资产管理, 数智财务四大能力, 新增3个报告模板",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "write-a-skill",
+    "displayName": "Write A Skill",
+    "summary": "Create new agent skills with proper structure, progressive disclosure, and bundled resources. Use when user wants to create, write, or build a new skill.",
+    "description": "Create new agent skills with proper structure, progressive disclosure, and bundled resources. Use when user wants to create, write, or build a new skill.",
+    "tags": {
+      "latest": "101.0.11"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 841,
+      "installsAllTime": 4,
+      "installsCurrent": 4,
+      "stars": 1,
+      "versions": 365
+    },
+    "createdAt": 1781052068765,
+    "updatedAt": 1781711762271,
+    "latestVersion": {
+      "version": "101.0.11",
+      "createdAt": 1781711762271,
+      "changelog": "- Version updated from 100.0.1 to 101.0.10 in SKILL.md frontmatter.\n- No substantive content changes; instructions and guidance remain identical.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "shop",
+    "displayName": "Shop",
+    "summary": "Ultimate personal shopping assistant: find, compare, buy, gift, and reorder products across the Shop catalog containing millions of stores. Tracks orders and...",
+    "description": "Ultimate personal shopping assistant: find, compare, buy, gift, and reorder products across the Shop catalog containing millions of stores. Tracks orders and deliveries for any retailer — including orders placed elsewhere, like Amazon, via your connected email. Helps get order info and initiate returns and refunds.",
+    "tags": {
+      "latest": "1.0.2",
+      "shop": "2.9.3",
+      "shopify": "2.9.3",
+      "shopping": "2.9.3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 2263,
+      "installsAllTime": 3,
+      "installsCurrent": 3,
+      "stars": 124,
+      "versions": 28
+    },
+    "createdAt": 1771102042711,
+    "updatedAt": 1781710976149,
+    "latestVersion": {
+      "version": "1.0.2",
+      "createdAt": 1781710976149,
+      "changelog": "Fix display name (was 'Skill', now 'Shop')",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "serkaion-financial-analysis",
+    "displayName": "Financial Analysis",
+    "summary": "Investment-grade financial modeling — DCF valuation, comparable-company analysis, 3-statement models, returns (IRR/MOIC/cap-rate), and investor data-room pac...",
+    "description": "Investment-grade financial modeling — DCF valuation, comparable-company analysis, 3-statement models, returns (IRR/MOIC/cap-rate), and investor data-room packs. Use for capital raises, valuations, and any returns or valuation question. Work only from provided, public, or project-level figures.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781710470057,
+    "updatedAt": 1781710470057,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781710470057,
+      "changelog": "Initial publish — portable BI skill (Desktop-clean)",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "serkaion-due-diligence",
+    "displayName": "Due Diligence",
+    "summary": "Investment, partnership, and acquisition due diligence framework. Use for deep dives on companies, people, deals, and properties. Produces a structured risk...",
+    "description": "Investment, partnership, and acquisition due diligence framework. Use for deep dives on companies, people, deals, and properties. Produces a structured risk assessment with a clear Go / No-Go / Renegotiate recommendation.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781710465902,
+    "updatedAt": 1781710465902,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781710465902,
+      "changelog": "Initial publish — portable BI skill (Desktop-clean)",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "serkaion-market-research",
+    "displayName": "Market Research",
+    "summary": "Competitive landscape analysis, market sizing, and positioning research. Use for \"who are the competitors\", TAM/SAM/SOM sizing, go-to-market input, or positi...",
+    "description": "Competitive landscape analysis, market sizing, and positioning research. Use for \"who are the competitors\", TAM/SAM/SOM sizing, go-to-market input, or positioning strategy. Produces competitive profiles, market opportunity sizing, and a defensible positioning statement.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781710461949,
+    "updatedAt": 1781710461949,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781710461949,
+      "changelog": "Initial publish — portable BI skill (Desktop-clean)",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "serkaion-research-brief",
+    "displayName": "Research Brief",
+    "summary": "Executive-level research briefing and intelligence compilation. Use when you need a tight, decision-ready brief on a person, company, market, investment, or...",
+    "description": "Executive-level research briefing and intelligence compilation. Use when you need a tight, decision-ready brief on a person, company, market, investment, or topic. Delivers a 1–2 page structured brief with sources, confidence levels, and a specific recommendation.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781710457776,
+    "updatedAt": 1781710457776,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781710457776,
+      "changelog": "Initial publish — portable BI skill (Desktop-clean)",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "serkaion-deep-research",
+    "displayName": "Deep Research",
+    "summary": "Rigorous multi-source, fact-checked research producing a cited brief. Use for any high-stakes question where being wrong is costly — market sizing, company/p...",
+    "description": "Rigorous multi-source, fact-checked research producing a cited brief. Use for any high-stakes question where being wrong is costly — market sizing, company/person due diligence, investment targets, legal/regulatory, location feasibility. Fan out across sources, verify claims adversarially, cite everything.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781710447950,
+    "updatedAt": 1781710447950,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781710447950,
+      "changelog": "Initial publish — portable BI skill",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "wechat-article-to-txt",
+    "displayName": "微信公众号转个人知识库",
+    "summary": "将微信公众号文章自动转为个人知识库笔记。输入公众号文章链接，自动抓取正文、AI 多维度总结（摘要/核心观点/金句/标签）、生成结构化 Markdown 笔记并存入本地。",
+    "description": "将微信公众号文章自动转为个人知识库笔记。输入公众号文章链接，自动抓取正文、AI 多维度总结（摘要/核心观点/金句/标签）、生成结构化 Markdown 笔记并存入本地。",
+    "tags": {
+      "article": "1.0.0",
+      "knowledge": "1.0.0",
+      "latest": "1.0.0",
+      "note": "1.0.0",
+      "summary": "1.0.0",
+      "wechat": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781709897563,
+    "updatedAt": 1781709897563,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781709897563,
+      "changelog": "v1.0.0 initial release: fetch WeChat articles, AI summary, generate structured notes, save locally",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "huahua-daily",
+    "displayName": "HuaHuaDailyMCP",
+    "summary": "Use HuahuaDaily MCP to query portfolio, transactions, market data, screenshot imports, and send App-confirmed trade/import requests.",
+    "description": "Use HuahuaDaily MCP to query portfolio, transactions, market data, screenshot imports, and send App-confirmed trade/import requests.",
+    "tags": {
+      "latest": "2.0.3",
+      "finance": "1.5.0",
+      "mcp": "1.5.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 980,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 1,
+      "versions": 20
+    },
+    "createdAt": 1773829419770,
+    "updatedAt": 1781709779409,
+    "latestVersion": {
+      "version": "2.0.3",
+      "createdAt": 1781709779409,
+      "changelog": "feat: 新增MCP工具支持基金持仓查询、实时估值、交易记录等完整功能",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "free-smart-web-search",
+    "displayName": "Smart Web Search",
+    "summary": "Smart web search with auto region detection, query intent rewriting, and dual-tier content fetching. Works in both China and international networks.",
+    "description": "Smart web search with auto region detection, query intent rewriting, and dual-tier content fetching. Works in both China and international networks.",
+    "tags": {
+      "latest": "1.0.5"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 160,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 5
+    },
+    "createdAt": 1781450685827,
+    "updatedAt": 1781709638777,
+    "latestVersion": {
+      "version": "1.0.5",
+      "createdAt": 1781709638777,
+      "changelog": "free-smart-web-search v1.0.5\n\n- Improved documentation: major rewrite of SKILL.md to use concise English and clarify installation, usage, and known issues.\n- Added Windows PowerShell setup script (scripts/setup.ps1) for easier cross-platform installation.\n- Included new static/security analysis reports under _scan_report/ (e.g., virustotal.json, clawscan.json).\n- Removed obsolete skill-card.md.\n- No changes to core search logic—fully backward compatible.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "xiaohongshu-tool",
+    "displayName": "小红书数据洞察与竞品分析助手",
+    "summary": "小红书运营数据工具｜当提到小红书关键词搜索,小红书笔记详情及评论,小红书博主作品时使用，可实现爆款挖掘/竞品分析/KOL筛选/趋势洞察，用数据驱动小红书流量增长，告别盲目创作",
+    "description": "小红书运营数据工具｜当提到小红书关键词搜索,小红书笔记详情及评论,小红书博主作品时使用，可实现爆款挖掘/竞品分析/KOL筛选/趋势洞察，用数据驱动小红书流量增长，告别盲目创作",
+    "tags": {
+      "comment": "1.0.5",
+      "crawler": "1.0.5",
+      "data-mining": "1.0.5",
+      "latest": "1.0.5",
+      "search": "1.0.5",
+      "xiaohongshu": "1.0.5",
+      "chinese": "1.0.1",
+      "social": "1.0.0",
+      "social-media": "1.0.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 721,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 6
+    },
+    "createdAt": 1775656210249,
+    "updatedAt": 1781709636644,
+    "latestVersion": {
+      "version": "1.0.5",
+      "createdAt": 1781709636644,
+      "changelog": "- Version bumped to 1.0.5.\n- bugfix",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "sonoscli",
+    "displayName": "Sonoscli",
+    "summary": "Control Sonos speakers (discover/status/play/volume/group).",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 84857,
+      "installsAllTime": 2793,
+      "installsCurrent": 2772,
+      "stars": 55,
+      "versions": 1
+    },
+    "createdAt": 1767545381030,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545381030,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "gog",
+    "displayName": "Gog",
+    "summary": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 36,
+      "downloads": 186332,
+      "installsAllTime": 3663,
+      "installsCurrent": 3647,
+      "stars": 924,
+      "versions": 1
+    },
+    "createdAt": 1767545346060,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545346060,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "github",
+    "displayName": "Github",
+    "summary": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 7,
+      "downloads": 190589,
+      "installsAllTime": 4498,
+      "installsCurrent": 4486,
+      "stars": 636,
+      "versions": 1
+    },
+    "createdAt": 1767545344344,
+    "updatedAt": 1781268517834,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545344344,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "weather",
+    "displayName": "Weather",
+    "summary": "Get current weather and forecasts (no API key required).",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 6,
+      "downloads": 161126,
+      "installsAllTime": 3890,
+      "installsCurrent": 3881,
+      "stars": 417,
+      "versions": 1
+    },
+    "createdAt": 1767545394459,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545394459,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-whisper",
+    "displayName": "Openai Whisper",
+    "summary": "Local speech-to-text with the Whisper CLI (no API key).",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 2,
+      "downloads": 84734,
+      "installsAllTime": 2125,
+      "installsCurrent": 2116,
+      "stars": 325,
+      "versions": 1
+    },
+    "createdAt": 1767545365755,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545365755,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "skill-creator",
+    "displayName": "Skill Creator",
+    "summary": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.",
+    "description": null,
+    "tags": {
+      "latest": "0.1.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 91991,
+      "installsAllTime": 2497,
+      "installsCurrent": 2490,
+      "stars": 319,
+      "versions": 1
+    },
+    "createdAt": 1769522677376,
+    "updatedAt": 1778987225295,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1769522677376,
+      "changelog": "Initial release of skill-creator, a comprehensive guide for designing modular skills to extend Claude’s capabilities.\n\n- Introduces principles for creating effective, concise, and domain-specific skills.\n- Explains modular structure: required SKILL.md and optional scripts, references, and assets folders.\n- Outlines guidelines for what to include (and exclude) in a skill package.\n- Details progressive disclosure design for efficient context management.\n- Provides reference patterns for organizing content and bundling resources.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "notion",
+    "displayName": "Notion",
+    "summary": "Notion API for creating and managing pages, databases, and blocks.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 92766,
+      "installsAllTime": 2422,
+      "installsCurrent": 2417,
+      "stars": 259,
+      "versions": 1
+    },
+    "createdAt": 1767545360889,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545360889,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "obsidian",
+    "displayName": "Obsidian",
+    "summary": "Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 9,
+      "downloads": 103193,
+      "installsAllTime": 2614,
+      "installsCurrent": 2606,
+      "stars": 428,
+      "versions": 1
+    },
+    "createdAt": 1767545362143,
+    "updatedAt": 1779137320034,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545362143,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "gemini",
+    "displayName": "Gemini",
+    "summary": "Gemini CLI for one-shot Q&A, summaries, and generation.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 5,
+      "downloads": 34540,
+      "installsAllTime": 1462,
+      "installsCurrent": 1458,
+      "stars": 56,
+      "versions": 1
+    },
+    "createdAt": 1767545316392,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545316392,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "mcporter",
+    "displayName": "Mcporter",
+    "summary": "Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 67419,
+      "installsAllTime": 2040,
+      "installsCurrent": 2033,
+      "stars": 194,
+      "versions": 1
+    },
+    "createdAt": 1767545355897,
+    "updatedAt": 1779137319429,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545355897,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "nano-banana-pro",
+    "displayName": "Nano Banana Pro",
+    "summary": "Generate/edit images with Nano Banana Pro (Gemini 3 Pro Image). Use for image create/modify requests incl. edits. Supports text-to-image + image-to-image; 1K/2K/4K; use --input-image.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 103509,
+      "installsAllTime": 1894,
+      "installsCurrent": 1891,
+      "stars": 405,
+      "versions": 2
+    },
+    "createdAt": 1767545358090,
+    "updatedAt": 1779137307565,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767651987917,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "model-usage",
+    "displayName": "Model Usage",
+    "summary": "Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a scriptable per-model summary from codexbar cost JSON.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 38206,
+      "installsAllTime": 1586,
+      "installsCurrent": 1581,
+      "stars": 113,
+      "versions": 1
+    },
+    "createdAt": 1767667639455,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767667639455,
+      "changelog": "- Initial release of the model-usage skill for summarizing per-model usage and cost from CodexBar CLI local cost logs.\n- Supports both Codex and Claude providers.\n- Allows fetching summaries for the current (most recent) model or all models.\n- Provides both text and JSON output formats.\n- Can process costs directly from CodexBar CLI output or from a JSON file/stdin.\n- Includes guidance for CLI use and script automation.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "darwin"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "video-frames",
+    "displayName": "Video Frames",
+    "summary": "Extract frames or short clips from videos using ffmpeg.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 52328,
+      "installsAllTime": 1597,
+      "installsCurrent": 1593,
+      "stars": 129,
+      "versions": 1
+    },
+    "createdAt": 1767545391700,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545391700,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "blogwatcher",
+    "displayName": "Blogwatcher",
+    "summary": "Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 43180,
+      "installsAllTime": 1501,
+      "installsCurrent": 1495,
+      "stars": 70,
+      "versions": 1
+    },
+    "createdAt": 1767545299849,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545299849,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "nano-pdf",
+    "displayName": "Nano Pdf",
+    "summary": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 113150,
+      "installsAllTime": 2644,
+      "installsCurrent": 2639,
+      "stars": 260,
+      "versions": 1
+    },
+    "createdAt": 1767545359433,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545359433,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "session-logs",
+    "displayName": "Session-logs",
+    "summary": "Search and analyze your own session logs (older/parent conversations) using jq.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 41651,
+      "installsAllTime": 1451,
+      "installsCurrent": 1447,
+      "stars": 30,
+      "versions": 1
+    },
+    "createdAt": 1770136427000,
+    "updatedAt": 1778486000320,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1770136427000,
+      "changelog": "Initial release of session-logs.\n\n- Enables searching and analyzing your session logs (past conversations) with jq and ripgrep (rg).\n- Provides bash command examples for session discovery, keyword searches, extracting messages, cost summaries, and tool usage breakdowns.\n- Documents JSONL session file structure, roles, and content types.\n- Lists session log file locations and naming conventions.\n- Includes tips for managing and querying large, append-only session histories.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "himalaya",
+    "displayName": "Himalaya",
+    "summary": "CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 45917,
+      "installsAllTime": 1544,
+      "installsCurrent": 1540,
+      "stars": 69,
+      "versions": 1
+    },
+    "createdAt": 1767954271328,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767954271328,
+      "changelog": "Initial release of Himalaya CLI email client skill.\n\n- Provides terminal-based email management via IMAP/SMTP.\n- Supports listing, reading, composing, replying, forwarding, searching, and organizing emails.\n- Includes multi-account support and message composition with MML.\n- Detailed setup and configuration instructions included.\n- Enables handling attachments, output customization, and debugging via logging.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "sag",
+    "displayName": "Sag",
+    "summary": "ElevenLabs text-to-speech with mac-style say UX.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 26976,
+      "installsAllTime": 1262,
+      "installsCurrent": 1258,
+      "stars": 26,
+      "versions": 1
+    },
+    "createdAt": 1767545376535,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545376535,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "ELEVENLABS_API_KEY",
+          "required": true
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "goplaces",
+    "displayName": "Goplaces",
+    "summary": "Query Google Places API (New) via the goplaces CLI for text search, place details, resolve, and reviews. Use for human-friendly place lookup or JSON output for scripts.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 22835,
+      "installsAllTime": 1251,
+      "installsCurrent": 1248,
+      "stars": 30,
+      "versions": 1
+    },
+    "createdAt": 1767545347454,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545347454,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "GOOGLE_PLACES_API_KEY",
+          "required": true
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "slack",
+    "displayName": "Slack",
+    "summary": "Use when you need to control Slack from Clawdbot via the slack tool, including reacting to messages or pinning/unpinning items in Slack channels or DMs.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 12,
+      "downloads": 47985,
+      "installsAllTime": 1436,
+      "installsCurrent": 1432,
+      "stars": 158,
+      "versions": 1
+    },
+    "createdAt": 1767545378002,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545378002,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "peekaboo",
+    "displayName": "Peekaboo",
+    "summary": "Capture and automate macOS UI with the Peekaboo CLI.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 4,
+      "downloads": 30430,
+      "installsAllTime": 1342,
+      "installsCurrent": 1340,
+      "stars": 82,
+      "versions": 1
+    },
+    "createdAt": 1767545373660,
+    "updatedAt": 1779137309055,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545373660,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "darwin"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-image-gen",
+    "displayName": "Openai Image Gen",
+    "summary": "Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 24598,
+      "installsAllTime": 1121,
+      "installsCurrent": 1119,
+      "stars": 37,
+      "versions": 2
+    },
+    "createdAt": 1767545364210,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767652000401,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "tmux",
+    "displayName": "Tmux",
+    "summary": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 29304,
+      "installsAllTime": 1407,
+      "installsCurrent": 1403,
+      "stars": 43,
+      "versions": 1
+    },
+    "createdAt": 1767545387948,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545387948,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "darwin",
+        "linux"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "gifgrep",
+    "displayName": "Gifgrep",
+    "summary": "Search GIF providers with CLI/TUI, download results, and extract stills/sheets.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 18608,
+      "installsAllTime": 1216,
+      "installsCurrent": 1210,
+      "stars": 7,
+      "versions": 2
+    },
+    "createdAt": 1767488226016,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767545342229,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-whisper-api",
+    "displayName": "Openai Whisper Api",
+    "summary": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 25919,
+      "installsAllTime": 1182,
+      "installsCurrent": 1178,
+      "stars": 52,
+      "versions": 1
+    },
+    "createdAt": 1767545368103,
+    "updatedAt": 1779137313987,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545368103,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "OPENAI_API_KEY",
+          "required": true
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  }
+]
