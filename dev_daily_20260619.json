@@ -1,164 +1,111 @@
 [
   {
-    "title": "Show HN: 10x better performance from the Coding Harnesses with LLM-wiki",
-    "content": "# Comments: 7",
-    "quote": "",
-    "source": "HN Front Page",
-    "url": "https://llm-wiki.net/",
+    "title": "GitHub惊现大规模木马分发活动：上万个仓库被植入恶意代码",
+    "content": "安全研究员发现 GitHub 上存在超过 10,000 个仓库正在传播 Trojan 木马。攻击者通过复制合法项目后，在 README 中添加恶意 ZIP 压缩包链接，压缩包内含 loader.exe、lua51.dll 等文件。VirusTotal 扫描压缩包可检测到 Trojan，直接扫描链接却显示 0 威胁，极具迷惑性。该攻击利用 gharchive 事件流自动搜索并复制活跃项目，每隔几小时更换 commit 以逃避检测。该事件警示开源生态的安全供应链风险已从依赖投毒扩展到仓库级别的大规模伪装攻击。",
+    "quote": "抄代码已经够恶心了，抄完再塞木马？开源生态的信任裂痕越来越大了",
+    "source": "Hacker News | 2026-06-18",
+    "url": "https://orchidfiles.com/github-repositories-distributing-malware/",
     "published": "2026-06-19",
-    "uid": "dev_00ff250d"
+    "uid": "dev_a3806833"
   },
   {
-    "title": "Show HN: Gerrymandle - Daily puzzle game where you redraw electoral districts",
-    "content": "# Comments: 8",
-    "quote": "",
-    "source": "HN Front Page",
-    "url": "https://gerrymandle.cc/",
-    "published": "2026-06-19",
-    "uid": "dev_99606cda"
-  },
-  {
-    "title": "Emacs 31 Is Around the Corner: The Changes I'm Daily Driving",
-    "content": "# Comments: 120",
-    "quote": "",
-    "source": "HN Front Page",
+    "title": "Emacs 31即将发布：内置Tree-sitter和Markdown模式引领编辑器革新",
+    "content": "Emacs 31 正处于预发布阶段，多项新特性已在 master 分支上可用。最受关注的是 Tree-sitter 集成：新版本将自动为缺失语法安装 grammar，treesit-auto-install-grammar 让过去手动配置的繁琐过程一键完成，TypeScript、Rust、TOML 等语言的 grammar 已内置。此外 Emacs 31 将原生支持 markdown-ts-mode，由社区开发者 Rahul Juliato 发起、Stéphane Marks 共同打磨，提供类似 Org-mode 的折叠、链接和内联格式体验，不依赖任何外部包。这些改进让 Emacs 在保持轻量的同时大幅降低了新手配置门槛。",
+    "quote": "都说 Emacs 要凉，Tree-sitter 都内置了，VSCode 慌不慌",
+    "source": "Hacker News | 2026-06-18",
     "url": "https://www.rahuljuliato.com/posts/emacs-31-around-the-corner",
     "published": "2026-06-19",
-    "uid": "dev_30100191"
+    "uid": "dev_c8afe32b"
   },
   {
-    "title": "google-research/timesfm",
-    "content": "",
-    "quote": "",
-    "source": "GitHub Trending Daily",
+    "title": "DeepSeek 正式推出 Vision 多模态能力，文本图像分析全面升级",
+    "content": "DeepSeek 在其对话平台中正式引入了 Vision 多模态功能，支持用户上传图像并进行深度分析、OCR 识别、图表理解等任务。该能力基于 DeepSeek 自研的多模态模型，无需额外配置即可在 chat.deepseek.com 上直接使用。此举使 DeepSeek 在中文 AI 市场的竞争力进一步提升，直接对标 OpenAI GPT-4V 和 Google Gemini 的多模态能力。Hacker News 上该话题获得 401 点的高热度，开发者社区对开源替代方案的关注度持续升温。",
+    "quote": "多模态都卷到几十刀一个月了，DeepSeek 免费送 Vision 还讲不讲武德",
+    "source": "Hacker News | 2026-06-18",
+    "url": "https://news.ycombinator.com/item?id=48581458",
+    "published": "2026-06-19",
+    "uid": "dev_3647446e"
+  },
+  {
+    "title": "Alex Ellis 深度对比本地模型与云端 AI：Qwen 不是更差的 Opus",
+    "content": "OpenFaaS 创始人 Alex Ellis 发表长文，分享其小团队在生产环境中使用本地大模型（Qwen 27B/35-A3B）与云端 Claude Opus 的真实对比。他指出本地模型在可重复任务（代码审查、翻译、批量处理）上 ROI 极高，一张 RTX 6000 Pro 两三个月就回本，但在复杂推理和代码生成中仍存在严重的幻觉和无限循环问题。Ellis 强调本地模型不是更差的云端模型，而是完全不同的工具——适合隐私敏感、高吞吐、低延迟的场景，但不适合无人值守的关键任务。这篇文章在 HN 获得 423 点热度，代表了开发者对本地 AI 理性认知的重要分水岭。",
+    "quote": "别再说本地模型吊打云端了，能跑和能打是两码事，清醒点",
+    "source": "Hacker News | 2026-06-18",
+    "url": "https://blog.alexellis.io/local-ai-is-not-opus/",
+    "published": "2026-06-19",
+    "uid": "dev_08864345"
+  },
+  {
+    "title": "康奈尔大学 CS 6120 高级编译器课程开放自学版",
+    "content": "康奈尔大学 Adrain Sampson 教授的博士级别编译器课程 CS 6120 现已开放完整自学版本，包含全部录播视频、讲义笔记以及开源作业。课程覆盖中间表示、数据流分析、经典优化、并行化、JIT 编译和垃圾回收等编译器核心主题，使用 LLVM 和自定义教育 IR（Bril）进行实践。作业全部开源在 GitHub 上，难度设定为博士水平但面向所有自学者开放。该消息在 HN 上获得 196 点关注，成为希望系统学习编译器知识开发者的黄金资源。",
+    "content": "康奈尔大学 Adrain Sampson 教授的博士级别编译器课程 CS 6120 现已开放完整自学版本，包含全部录播视频、讲义笔记和开源作业。课程覆盖中间表示、数据流分析、经典优化、并行化、JIT 编译和垃圾回收等编译器核心主题，使用 LLVM 和自定义教育 IR（Bril）进行实践。所有作业和代码开源在 GitHub 上，难度为博士水平但面向全球自学者开放。该课程在 HN 上获得 196 点热度，被称为编译器自学者的黄金资源。",
+    "quote": "花几百刀买 AI 课程之前，先想想编译原理你会了吗",
+    "source": "Hacker News | 2026-06-18",
+    "url": "https://www.cs.cornell.edu/courses/cs6120/2025fa/self-guided/",
+    "published": "2026-06-19",
+    "uid": "dev_b227b518"
+  },
+  {
+    "title": "Ubiquiti 发布企业级 NAS 产品线，基于 ZFS 且无许可证费用",
+    "content": "Ubiquiti 正式发布 Enterprise NAS（ENAS），采用 ARM Neoverse N2 8 核处理器、64GB ECC 内存和原生 ZFS 文件系统，提供 16 个硬盘位且无固件限制，可扩展至超过 1 PB 原始存储。ENAS 最为激进的是完全免许可证费用，集成 UniFi 平台实现集中化文件管理和备份编排，支持双 25GbE SFP28 端口和冗余电源。ENAS 还支持跨站点备份和 Microsoft 365 数据备份。ZFS 架构提供了快照、压缩和数据完整性保护等高级功能，定位于 TrueNAS 和 Synology 之间的市场空白。",
+    "quote": "Ubiquiti 做 NAS 完全不意外，但无限制硬盘 + 免许可费才是真的杀招",
+    "source": "Ubiquiti Blog | 2026-06-18",
+    "url": "https://blog.ui.com/article/introducing-enterprise-nas",
+    "published": "2026-06-19",
+    "uid": "dev_7b5a1929"
+  },
+  {
+    "title": "Modos Flow 彩色电子纸显示器众筹启动，刷新率达 60Hz",
+    "content": "两人员工创业公司 Modos 在 Crowd Supply 上启动了 Modos Flow 彩色电子纸显示器的众筹。这是上一代 Paper Monitor Dev Kit 的完整产品化版本，13.3 英寸 3200×2400 分辨率、60Hz 刷新率，支持触控输入，仅需 USB Type-C 一线连接。新款 Enchanter 控制器使用更大的 FPGA 和 DisplayPort 1.1 解码芯片，像素响应时间约 50ms（接近初代 iPad 的 30ms 水准）。Modos 坚持全部开源，所有元器件均有公开文档，无 NDA 限制。该显示器定位为护眼编程和文字工作的理想选择。",
+    "quote": "电子纸写代码？刷新率 60Hz 够用了——反正你写一天也跑不了一次编译",
+    "source": "IEEE Spectrum | 2026-06-18",
+    "url": "https://spectrum.ieee.org/modos-e-paper-monitor",
+    "published": "2026-06-19",
+    "uid": "dev_d8f7d35d"
+  },
+  {
+    "title": "Git 忽略文件不止 .gitignore：三种层级你用过几个",
+    "content": "一篇在 HN 上获得 169 点热度的技术文章揭示了许多开发者长期忽视的 Git 技能：除了常见的 .gitignore 外，Git 还提供 .git/info/exclude（仓库级别但不入库，适合个人工作流文件）和 ~/.config/git/ignore（机器级别全局忽略，适合 .DS_Store 等跨项目文件）两种忽略机制。文章还介绍了 git check-ignore -v 命令用于排查具体文件被哪个忽略规则匹配。这个知识点虽然基础，但大量资深开发者也坦言从未用过后两种方式。",
+    "quote": "十年 Git 老司机今天才知道 .gitignore 不是唯一方案，你惭愧不惭愧",
+    "source": "Hacker News | 2026-06-18",
+    "url": "https://nelson.cloud/.gitignore-isnt-the-only-way-to-ignore-files-in-git/",
+    "published": "2026-06-19",
+    "uid": "dev_e0db2ab4"
+  },
+  {
+    "title": "Kilo 开源编码 Agent 框架登顶 GitHub 趋势，单日增长超 1,300 星",
+    "content": "Kilo（Kilo-Org/kilocode）作为一款全栈式 Agentic Engineering 平台在 GitHub 上持续爆发，已收获 21,800+ 星标，单日增长超过 1,300 星。Kilo 定位为最流行的开源编码 Agent 平台，支持从需求到上线的全流程 Agent 化开发，集成了代码生成、测试、部署等能力。与 Cursor、Windsurf 等闭源方案不同，Kilo 完全开源，允许开发者自托管和自定义 Agent 行为。这反映了 2026 年代码 Agent 工具从闭源 SaaS 向开源自建模式加速迁移的趋势。",
+    "quote": "Cursor 还没捂热，Kilo 就21k星了，Agent 工具卷到你害怕",
+    "source": "GitHub Trending | 2026-06-18",
+    "url": "https://github.com/Kilo-Org/kilocode",
+    "published": "2026-06-19",
+    "uid": "dev_f4cbd870"
+  },
+  {
+    "title": "TesterArmy 正式上线：用 AI Agent 自动化测试 Web 和移动应用",
+    "content": "YC P26 孵化的 TesterArmy 在 Hacker News 上正式 Launch，提供基于 AI Agent 的自动化测试平台。与传统测试框架不同，开发者只需用自然语言描述测试场景，AI Agent 就会启动真实浏览器或移动设备执行操作并产出截图、录屏和 Pass/Fail 报告。TesterArmy 原生支持 GitHub PR 集成，可在合并前自动跑测试，支持登录流程、OAuth 和 OTP 验证等复杂场景。这代表着 QA 测试正从脚本驱动向 AI Agent 驱动范式转变，尤其适合测试脚本维护成本高的小团队。",
+    "quote": "写测试比写代码还痛苦？TesterArmy 说人话就行，你要敢用 AI 测",
+    "source": "Hacker News | 2026-06-18",
+    "url": "https://tester.army",
+    "published": "2026-06-19",
+    "uid": "dev_5f758e68"
+  },
+  {
+    "title": "智谱 GLM-5 开源框架登陆 GitHub，从 Vibe Coding 到 Agentic Engineering",
+    "content": "智谱 AI 将 GLM-5 开源框架发布在 GitHub 上，四天内即获得 4,000+ 星标。GLM-5 的定位标语是\"From Vibe Coding to Agentic Engineering\"，提供了一个完整的 Agent 开发框架，支持工具调用、多步推理和代码执行等能力。该框架与智谱的商业化模型深度配合，使开发者能够基于 GLM 系列模型构建复杂的 Agent 应用。V2EX 上同时出现了大量关于 GLM-5.2 和智谱 Coding Plan 的讨论，反映出国内开发者群体对国产大模型 Agent 框架的高度关注和争议。",
+    "quote": "GLM-5 开源了，Coding Plan 抢不到？智谱学苹果搞饥饿营销",
+    "source": "GitHub Trending | 2026-06-18",
+    "url": "https://github.com/zai-org/GLM-5",
+    "published": "2026-06-19",
+    "uid": "dev_ffe3807e"
+  },
+  {
+    "title": "Google Research 开源 TimesFM：时间序列预测基础模型",
+    "content": "Google Research 开源了 TimesFM（Time Series Foundation Model），这是一个预训练的时间序列基础模型，专门用于时间序列预测任务。TimesFM 在大规模时间序列数据上进行预训练后，可直接用于各种预测场景而无需针对每个数据集重新训练，显著降低了时间序列建模的门槛。模型支持多种预测长度和频率的数据输入，在多个公开基准测试中达到了 SOTA 水平。该开源行为与 Google 在 foundation model 领域的一贯策略一致，也是时间序列领域第一个真正意义上的基础模型开源项目。",
+    "quote": "以后预测 KPI 不用写代码了，调 TimesFM 就行，数据分析师又慌了",
+    "source": "GitHub Trending | 2026-06-18",
     "url": "https://github.com/google-research/timesfm",
     "published": "2026-06-19",
-    "uid": "dev_18976474"
-  },
-  {
-    "title": "n0-computer/iroh",
-    "content": "",
-    "quote": "",
-    "source": "GitHub Trending Daily",
-    "url": "https://github.com/n0-computer/iroh",
-    "published": "2026-06-19",
-    "uid": "dev_395f5d8f"
-  },
-  {
-    "title": "大家对于 Anthropic 估值的看法",
-    "content": "近三个月，anthropic 估值从 3800 亿涨到了最近的 9000 亿。大家觉得它上市后能到什么什么水平。单单挣程序员的钱能支撑这么高的估值吗。",
-    "quote": "",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1212285#reply12",
-    "published": "2026-06-19",
-    "uid": "dev_d87996d2"
-  },
-  {
-    "title": "🖖Manus 被 Meta 数十亿美元收购❗❗❗",
-    "content": "这几天最爆的新闻会围绕 Manus 吧，国内对这家公司的争议很大，今天迎来可以说是最好的结局：被 Meta 数十亿美元收购！！！",
-    "quote": "",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1182036#reply86",
-    "published": "2026-06-19",
-    "uid": "dev_3219eee6"
-  },
-  {
-    "title": "Show HN: I built a reverse-engineering agent for the web",
-    "content": "Hello HN,I built an open-source reverse-engineering AI agent, that can write requests-based(no browser) automation/scraper scripts on its own, all we have to do is, to normally browse the website once",
-    "quote": "",
-    "source": "HN Show HN",
-    "url": "https://github.com/StoneSteel27/AutomatiQ",
-    "published": "2026-06-19",
-    "uid": "dev_3ccbbd55"
-  },
-  {
-    "title": "Show HN: Vibesurfer – a token-efficient browser for AI agents, no Chromium/CDP",
-    "content": "I grew tired of numerous Chrome/Playwright/Puppeteer skills and MCP plugins, which for me felt quite heavy and unstable.So I built this to allow my agents to efficiently test and work with websites.",
-    "quote": "",
-    "source": "HN Show HN",
-    "url": "https://github.com/frane/vibesurfer",
-    "published": "2026-06-19",
-    "uid": "dev_77733e20"
-  },
-  {
-    "title": "Show HN: We ran 74 popular MCP servers in microVMs to see what breaks",
-    "content": "# Comments: 0",
-    "quote": "",
-    "source": "HN Show HN",
-    "url": "https://usethrone.dev/registry",
-    "published": "2026-06-19",
-    "uid": "dev_5cb2c471"
-  },
-  {
-    "title": "Stop guessing your AI bill: one endpoint for GPT-5.5, Claude & Gemini at a flat per-call price",
-    "content": "If you build on top of LLMs, you've probably hit this: you ship a feature, traffic spikes, and the API bill comes back way higher than you expected. Per-token pricing makes costs hard to predict — you",
-    "quote": "",
-    "source": "Dev.to",
-    "url": "https://dev.to/chenxiao5580cmd/stop-guessing-your-ai-bill-one-endpoint-for-gpt-55-claude-gemini-at-a-flat-per-call-price-3m8a",
-    "published": "2026-06-19",
-    "uid": "dev_be0ce350"
-  },
-  {
-    "title": "Junior Engineers Are Learning AI Faster Than They Are Learning Systems",
-    "content": "The most important engineering gap nobody seems interested in talking about A few months ago, I noticed something strange. Everywhere I looked, people were learning AI. People were building agents",
-    "quote": "",
-    "source": "Dev.to",
-    "url": "https://dev.to/edwindevops/junior-engineers-are-learning-ai-faster-than-they-are-learning-systems-jg7",
-    "published": "2026-06-19",
-    "uid": "dev_7d67d219"
-  },
-  {
-    "title": "AI Can Build the Prototype. Production Is Still the Hard Part.",
-    "content": "AI coding tools make it very easy to get an app running. But getting from “it works locally” to “real users can depend on this” is still where things get messy: auth providers environment variables",
-    "quote": "",
-    "source": "Dev.to",
-    "url": "https://dev.to/ohadkr/ai-can-build-the-prototype-production-is-still-the-hard-part-2adk",
-    "published": "2026-06-19",
-    "uid": "dev_d6d6e331"
-  },
-  {
-    "title": "一套 Spec-First 的 AI 编程工作流 - 袋鼠云数栈前端",
-    "content": "本文由袋鼠云数栈 UED 团队分享。文章详细拆解了如何通过 Spec-First 工作流与 AGENTS.md 基础设施，让 AI 从“猜需求”转向“按方案精准编码”，教你用清晰的意图表达彻底释放 AI 的编程潜力。",
-    "quote": "",
-    "source": "博客园 Cnblogs",
-    "url": "https://www.cnblogs.com/dtux/p/20636130",
-    "published": "2026-06-19",
-    "uid": "dev_9c023b84"
-  },
-  {
-    "title": "JuiceFS PB 级数据同步优化：断点续传、安全与带宽控制 - JuiceFS",
-    "content": "在数据迁移、跨云同步与对象存储备份等场景中，juicefs sync 常用于执行大规模数据同步任务。当数据规模达到 TB 到 PB 级、对象数量达到数百万甚至数十亿级时，单次任务执行周期通常会延长到数小时甚至数天。 在这个过程中，系统运行过程中通常会逐步暴露出以下几类问题： 任务在网络抖动、进程异常",
-    "quote": "",
-    "source": "博客园 Cnblogs",
-    "url": "https://www.cnblogs.com/JuiceData/p/20635191",
-    "published": "2026-06-19",
-    "uid": "dev_76984ce1"
-  },
-  {
-    "title": "并发性能优化复盘 - 胡云Troy",
-    "content": "上周服务治理系统的同事（注意不是客户）发现一个问题，他调用的 api 接口不稳定。有时候正常，有时候报错，关键是大部分时候都是报错。 更关键的是这个接口是我开发的。 好吧，理所当然的他来找我。第一时间“男人的第六感”告诉我是后端服务处理时间太长了，导致客户端在超时时间内未处理完成。要不把 timeo",
-    "quote": "",
-    "source": "博客园 Cnblogs",
-    "url": "https://www.cnblogs.com/xingzheanan/p/20626804",
-    "published": "2026-06-19",
-    "uid": "dev_d5971ba9"
-  },
-  {
-    "title": "Excelize 开源社区荣获 2025 红山开源明星项目三等奖",
-    "content": "2025 年 11 月 16 日，由红山开源平台主办的“2025 红山开源大会”，在北京香山颐和宾馆红山厅成功落下帷幕。为表彰在开源领域做出卓越贡献的项目，大会特别设立 2025 年度红山开源平台明星项目颁奖环节。 Excelize 开源社区荣获了 2025 红山开源明星项目三等奖，活动详情详见文章：2025 红山开源大会圆满收官，共筑开源生态新未来 Excelize 是用于操作电子表格办公文档",
-    "quote": "",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1180445#reply1",
-    "published": "2026-06-19",
-    "uid": "dev_19895bf2"
-  },
-  {
-    "title": "Google Antigravity 出来啦",
-    "content": "google antigravity, 免费可以用 Gemini 3 Pro 、Claude Sonnet 4.5,大家有试过怎么样嘛，这也太壕了",
-    "quote": "",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1173666#reply9",
-    "published": "2026-06-19",
-    "uid": "dev_02604af8"
+    "uid": "dev_f63a5b9d"
   }
 ]
