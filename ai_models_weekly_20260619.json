@@ -1,24 +1,26 @@
 {
   "week_start": "2026-06-13",
   "week_end": "2026-06-19",
-  "summary": "本周共收录AI领域动态 80 条。本周最活跃：其他（30条）、Anthropic/Claude（20条）、Google/Gemini（18条）。主要方向为模型发布（23条）。",
+  "summary": "本周共收录AI领域动态 90 条。本周最活跃：其他（32条）、Anthropic/Claude（24条）、Google/Gemini（18条）。主要方向为模型发布（27条）。",
   "stats": {
-    "total_items": 80,
+    "total_items": 90,
     "by_vendor": {
-      "other": 30,
-      "anthropic": 20,
+      "other": 32,
+      "anthropic": 24,
       "google": 18,
-      "openai": 7,
+      "openai": 9,
       "alibaba": 4,
-      "deepseek": 1
+      "deepseek": 1,
+      "amazon": 1,
+      "xai": 1
     },
     "by_direction": {
-      "模型发布": 23,
-      "工具/平台": 17,
+      "模型发布": 27,
+      "工具/平台": 19,
       "应用/落地": 13,
-      "研究/论文": 12,
-      "政策/合规": 9,
-      "行业动态": 6
+      "研究/论文": 13,
+      "政策/合规": 10,
+      "行业动态": 8
     }
   },
   "timeline": [
@@ -830,6 +832,121 @@
           ]
         }
       }
+    },
+    {
+      "date": "2026-06-19",
+      "models": {
+        "anthropic": {
+          "displayName": "Anthropic/Claude",
+          "icon": "🧬",
+          "items": [
+            {
+              "uid": "ai_0c9bc1ee",
+              "title": "Anthropic与特朗普政府激辩Claude Mythos 5出口管制：一场AI安全与国家安全的风暴",
+              "direction": "行业动态",
+              "quote": "「太危险不能发」的话从自己嘴里说出来，就别怪政府当真了。",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/950412/anthropic-trump-adminstration-claude-mythos-fable-5-export-controls",
+              "published": "2026-06-19"
+            },
+            {
+              "uid": "ai_d37d5ed5",
+              "title": "Claude Design大更新：支持设计系统导入、与Claude Code无缝协作",
+              "direction": "工具/平台",
+              "quote": "Figma和Canva的PM今天应该睡不好觉了。百万用户一周，这速度谁顶得住。",
+              "url": "https://claude.com/blog/claude-design-stays-on-brand-for-daily-work",
+              "published": "2026-06-19"
+            },
+            {
+              "uid": "ai_c2993982",
+              "title": "本地Qwen模型不是低配Opus而是不同的工具",
+              "direction": "工具/平台",
+              "quote": "营销号说Qwen快赶上Opus了，实际跑起来发现它连该闭嘴的时候都不知道。",
+              "url": "https://blog.alexellis.io/local-ai-is-not-opus/",
+              "published": "2026-06-19"
+            },
+            {
+              "uid": "ai_e6a01491",
+              "title": "Project Glasswing初步成果：AI已发现超一万个高危软件漏洞",
+              "direction": "模型发布",
+              "quote": "AI找漏洞比人类快十倍，修漏洞的速度却还是人类的速度——这就是新的瓶颈。",
+              "url": "https://www.anthropic.com/research/glasswing-initial-update",
+              "published": "2026-06-19"
+            }
+          ]
+        },
+        "openai": {
+          "displayName": "OpenAI/GPT",
+          "icon": "🔬",
+          "items": [
+            {
+              "uid": "ai_817ba607",
+              "title": "Gemini联席负责人Noam Shazeer离开谷歌加入OpenAI",
+              "direction": "模型发布",
+              "quote": "谷歌花27亿买回来的人，没捂热就跑了，这赞助当得可以。",
+              "url": "https://www.reuters.com/technology/googles-gemini-co-lead-noam-shazeer-join-openai-2026-06-18/",
+              "published": "2026-06-19"
+            },
+            {
+              "uid": "ai_79da26e3",
+              "title": "GLM-5.2登顶开源权重模型排行榜：744B参数性能直逼GPT-5.5",
+              "direction": "研究/论文",
+              "quote": "谁说开源只能跟在屁股后面吃灰？这回换智谱在前面带路了。",
+              "url": "https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index",
+              "published": "2026-06-19"
+            }
+          ]
+        },
+        "amazon": {
+          "displayName": "Amazon/AWS",
+          "icon": "📦",
+          "items": [
+            {
+              "uid": "ai_547c4c0b",
+              "title": "Allbirds彻底转型AI：更名为Smartbird 任命新CEO加码AI基础设施",
+              "direction": "行业动态",
+              "quote": "卖鞋的转行做AI，这跨界比送快递到造火箭还离谱。",
+              "url": "https://ir.smartbird.ai/news-releases/news-release-details/smartbird-appoints-new-ceo-advance-ai-infrastructure-strategy",
+              "published": "2026-06-19"
+            }
+          ]
+        },
+        "xai": {
+          "displayName": "xAI/Grok",
+          "icon": "🚀",
+          "items": [
+            {
+              "uid": "ai_84e00063",
+              "title": "美国司法部称xAI燃气发电数据中心关乎国家安全",
+              "direction": "政策/合规",
+              "quote": "跟Grok比起来，清洁空气算什么国家安全。这理由编得连自己信吗？",
+              "url": "https://www.theverge.com/policy/950722/xais-gas-powered-data-center-is-necessary-for-national-security-doj-argues",
+              "published": "2026-06-19"
+            }
+          ]
+        },
+        "other": {
+          "displayName": "其他",
+          "icon": "📰",
+          "items": [
+            {
+              "uid": "ai_094226cf",
+              "title": "Adam开源AI CAD工具：自然语言即可生成3D模型",
+              "direction": "模型发布",
+              "quote": "以后工程师的活儿就是对着电脑说「给我整个V8发动机」，然后喝咖啡等出图。",
+              "url": "https://github.com/Adam-CAD/CADAM",
+              "published": "2026-06-19"
+            },
+            {
+              "uid": "ai_f82186bd",
+              "title": "Wolfram Language和Mathematica 15发布：深度集成AI能力",
+              "direction": "模型发布",
+              "quote": "Wolfram的语言AI读懂了，问题是有多少人愿意学？",
+              "url": "https://writings.stephenwolfram.com/2026/06/launching-version-15-of-wolfram-language-mathematica-built-in-useful-ai-lots-of-new-core-functionality/",
+              "published": "2026-06-19"
+            }
+          ]
+        }
+      }
     }
   ],
   "highlights": [
@@ -867,13 +984,13 @@
       "direction": "模型发布"
     },
     {
-      "uid": "",
-      "title": "Waymo 推出 Premier 订阅服务：每月 30 美元解锁优先乘车体验",
-      "content": "Waymo 宣布推出邀请制的会员计划 Waymo Premier，每月 29.99 美元，在旧金山、洛杉矶和凤凰城三城率先推出。会员可享受优先匹配、每次行程 10% 现金返还、5 次免费取消和城市扩展抢先体验等权益。这是自动驾驶行业首次推出付费订阅模式的乘车服务，标志着 Robotaxi 从「尝鲜体验」进入「留存运营」阶段。",
-      "quote": "Robotaxi 也要开始卖会员了——自动驾驶还没全面盈利，先把 VIP 优先的品牌溢价玩起来了。",
-      "source": "Waymo Blog",
-      "url": "https://waymo.com/blog/2026/06/waymo-premier/",
-      "published": "2026-06-14",
+      "uid": "ai_f82186bd",
+      "title": "Wolfram Language和Mathematica 15发布：深度集成AI能力",
+      "content": "Stephen Wolfram宣布发布Wolfram Language和Mathematica第15版，深度整合了AI能力。新版本不仅面向人类用户，还专门优化了AI接口。Wolfram语言作为一种计算语言，其精确性和结构化特性使其天然适合AI交互：AI生成Wolfram代码后，人类可以精确检查AI的理解是否准确。Wolfram认为在AI时代，计算语言的价值更加凸显，它为人类提供了一种「用AI的精确形式化思维」的方式，这在传统编程语言中难以实现。",
+      "quote": "Wolfram的语言AI读懂了，问题是有多少人愿意学？",
+      "source": "Stephen Wolfram Writings | 2026-06-17",
+      "url": "https://writings.stephenwolfram.com/2026/06/launching-version-15-of-wolfram-language-mathematica-built-in-useful-ai-lots-of-new-core-functionality/",
+      "published": "2026-06-19",
       "vendor": "other",
       "direction": "模型发布"
     },
