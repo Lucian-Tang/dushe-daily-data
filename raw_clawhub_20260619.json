@@ -1,0 +1,1555 @@
+[
+  {
+    "slug": "generate-perler-bead-pindou",
+    "displayName": "Generate Perler Beads Pindou",
+    "summary": "Generate 2D Pixelization Perler Beads Pindou Patterns from user text prompt and references images. Will return a list of Perler Beads/Pindou Brands Codes as...",
+    "description": "Generate 2D Pixelization Perler Beads Pindou Patterns from user text prompt and references images. Will return a list of Perler Beads/Pindou Brands Codes as well as an workspace url to render the instruction images that are useful for Perler Beads and Pindou Hobbist...",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781801384866,
+    "updatedAt": 1781801384866,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781801384866,
+      "changelog": "- Initial release of generate-perler-bead-pindou skill.\n- Generate 2D Perler Bead (Pindou) patterns from text prompts and/or reference images.\n- Returns a list of Perler Beads/Pindou brand color codes, plus a workspace URL for pattern instructions.\n- Supports custom board sizes and popular bead brands: default, mard, artkal, perler, hama.\n- Includes example usage for easy integration into Node and Python environments.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "amazon-product-research",
+    "displayName": "亚马逊产品研究员",
+    "summary": "Amazon 产品全链路深度研究助手。输入一句话（产品名/ASIN/描述），自动完成产品搜索→多产品评论采集→AI情感打标→关键词扩展→VOC痛点聚类→竞品分析→新品机会分析→输出完整交互式HTML可视化报告。覆盖8大分析阶段，一站式Amazon产品调研。",
+    "description": "Amazon 产品全链路深度研究助手。输入一句话（产品名/ASIN/描述），自动完成产品搜索→多产品评论采集→AI情感打标→关键词扩展→VOC痛点聚类→竞品分析→新品机会分析→输出完整交互式HTML可视化报告。覆盖8大分析阶段，一站式Amazon产品调研。",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781801221123,
+    "updatedAt": 1781801221123,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781801221123,
+      "changelog": "v1.0.0: 一句话全链路Amazon产品深度分析。8阶段自动化: 输入解析→评论采集→AI打标→关键词扩展→差评分析→VOC聚类→竞品分析→新品机会→HTML报告",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "financial-categorizer",
+    "displayName": "Financial Categorizer",
+    "summary": "Process bank transaction CSV exports (Nordea, ICA), auto-categorize transactions using configurable rules, manage transaction links, and generate analytical...",
+    "description": "Process bank transaction CSV exports (Nordea, ICA), auto-categorize transactions using configurable rules, manage transaction links, and generate analytical database views.",
+    "tags": {
+      "latest": "1.2.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 229,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 10
+    },
+    "createdAt": 1781297934263,
+    "updatedAt": 1781800951651,
+    "latestVersion": {
+      "version": "1.2.0",
+      "createdAt": 1781800951651,
+      "changelog": "- Add multi-mode transaction linking, preview, dry-run support, and guide to SKILL.md\n- docs: clarify shared-expense reimbursement math and auto-linking in SKILL.md",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "yoooclaw-world-cup-post-match-review-scene",
+    "displayName": "yoooclaw-world-cup-post-match-review-scene",
+    "summary": "用于生成世界杯足球比赛赛后复盘，并支持标准化场景输入、赛后信息检索和球迷群通知提炼。当用户需要一句话总结这场球、这场球怎么踢的、谁踢得最好、赛后热议焦点，或明确要求全量复盘时使用。最终答案只呈现复盘内容，不添加额外段落。",
+    "description": "用于生成世界杯足球比赛赛后复盘，并支持标准化场景输入、赛后信息检索和球迷群通知提炼。当用户需要一句话总结这场球、这场球怎么踢的、谁踢得最好、赛后热议焦点，或明确要求全量复盘时使用。最终答案只呈现复盘内容，不添加额外段落。",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 40,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1781774270362,
+    "updatedAt": 1781800610317,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1781800610317,
+      "changelog": "- 移除 OpenAI 配置及中文足球源探测脚本，去掉依赖相关采集与自动化逻辑。\n- 大幅简化指令，仅支持世界杯赛后复盘，聚焦输出内容，不再描述采集与过滤的工具实现细节。\n- 输出模块改为「一句话总结这场球」「这场球怎么踢的」「谁踢得最好」「赛后热议焦点」四类，便于用户多选或全量覆盖，精简输出结构。\n- 只要求内核确定和核对公开赛况事实，严格禁止模拟、猜测、自动化采集未实现的数据。\n- 用户请求只输出所需复盘内容，不再添加额外段落。",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "speediance",
+    "displayName": "Speediance Gym Monster",
+    "summary": "Read completed workouts (summaries and full per-set detail), browse and export the exercise catalog, and push custom training programs to your Speediance (Gy...",
+    "description": "Read completed workouts (summaries and full per-set detail), browse and export the exercise catalog, and push custom training programs to your Speediance (Gym Monster) smart cable machine via its cloud API. Authenticates with your account credentials, caches a session token in your OS user-cache directory (override with SPEEDIANCE_TOKEN_CACHE), and makes outbound HTTPS requests to the Speediance cloud API. Reads and emits structured data — the caller decides where to store it. Ships as a single static binary — no Python or other runtime required.",
+    "tags": {
+      "latest": "1.0.5"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 120,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 1,
+      "versions": 6
+    },
+    "createdAt": 1781619277174,
+    "updatedAt": 1781800601952,
+    "latestVersion": {
+      "version": "1.0.5",
+      "createdAt": 1781800601952,
+      "changelog": "Speediance v1.0.5\n\n- Token and config file locations are now OS-aware: by default, session tokens are cached in your OS user-cache directory, and config.json can reside in the working directory or OS user-config dir.\n- Legacy token cache (.token.json) in the working directory is now auto-migrated to the new cache location.\n- New environment variables: SPEEDIANCE_CONFIG to override the config file path, and SPEEDIANCE_TOKEN_CACHE to override the token cache location.\n- Documentation updated for clarity on configuration, token location, and migration behavior.\n- Improved tests and internal logic for config and token file discovery, migration, and usage.\n- No breaking changes to core commands or output.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "SPEEDIANCE_EMAIL",
+          "required": true
+        },
+        {
+          "key": "SPEEDIANCE_PASSWORD",
+          "required": true
+        },
+        {
+          "key": "SPEEDIANCE_REGION",
+          "required": false
+        },
+        {
+          "key": "SPEEDIANCE_DEVICE_TYPE",
+          "required": false
+        },
+        {
+          "key": "SPEEDIANCE_CONFIG",
+          "required": false
+        },
+        {
+          "key": "SPEEDIANCE_TOKEN_CACHE",
+          "required": false
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "yoooclaw-world-cup-match-talk-scene",
+    "displayName": "yoooclaw-world-cup-match-talk-scene",
+    "summary": "用于生成世界杯足球比赛谈资包，并支持标准化场景输入与通知调取。当用户需要准备世界杯比赛谈资、球迷群聊素材、线下观赛话术、社媒文案，或指定输出「30秒看懂这场球」「这场球的主要看点」「这场球大家在聊什么」「这场球的装逼话术」「生成这场球的朋友圈文案」等模块时使用。支持中文公开体育渠道检索；当请求涉及通知、球迷群、观...",
+    "description": "用于生成世界杯足球比赛谈资包，并支持标准化场景输入与通知调取。当用户需要准备世界杯比赛谈资、球迷群聊素材、线下观赛话术、社媒文案，或指定输出「30秒看懂这场球」「这场球的主要看点」「这场球大家在聊什么」「这场球的装逼话术」「生成这场球的朋友圈文案」等模块时使用。支持中文公开体育渠道检索；当请求涉及通知、球迷群、观赛群、手机提醒时，通过 openclaw ntf search 主动查询手机通知并提炼相关信号。",
+    "tags": {
+      "latest": "1.0.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 45,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1781772631883,
+    "updatedAt": 1781800573095,
+    "latestVersion": {
+      "version": "1.0.2",
+      "createdAt": 1781800573095,
+      "changelog": "- 精简并重组输出模块，将谈资场景聚焦为5个主要块（30秒速读、主要看点、热议、装逼话术、社媒文案）。\n- 调整输出逻辑：全量输出为五大模块拼接，模块输出支持单选或多选，保留对应模板说明。\n- 优化场景输入说明，简化关注维度定义，去除复杂占位符映射。\n- 精简和合并部分说明，提升易用性；保留原有信息采集与手机通知处理流程。\n- 移除无关文件与详细源说明，减少冗余文档。",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "webhook-receiver",
+    "displayName": "Webhook Receiver",
+    "summary": "Receive external webhooks and callbacks in real time by exposing a local HTTP endpoint via aitun tunnel. Perfect for AI agents that need to handle GitHub web...",
+    "description": "Receive external webhooks and callbacks in real time by exposing a local HTTP endpoint via aitun tunnel. Perfect for AI agents that need to handle GitHub webhooks, payment notifications, OAuth callbacks, form submissions, or any third-party HTTP callback.",
+    "tags": {
+      "latest": "1.0.3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 112,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 1,
+      "versions": 4
+    },
+    "createdAt": 1781453751630,
+    "updatedAt": 1781800549498,
+    "latestVersion": {
+      "version": "1.0.3",
+      "createdAt": 1781800549498,
+      "changelog": "- Docs: Updated installation instructions to remove `pip show aitun` as a verification method; now recommends only `which aitun`\n- No functional or code changes in this release—documentation update only",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "AITUN_SERVER",
+          "required": false
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "remote-api",
+    "displayName": "Remote Api",
+    "summary": "Expose a local API service to the public internet via aitun tunnel for external testing and integration. Perfect for AI agents that build REST APIs, gRPC ser...",
+    "description": "Expose a local API service to the public internet via aitun tunnel for external testing and integration. Perfect for AI agents that build REST APIs, gRPC services, or any HTTP API locally and need to share it for testing.",
+    "tags": {
+      "latest": "1.0.3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 111,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 4
+    },
+    "createdAt": 1781453767951,
+    "updatedAt": 1781800539250,
+    "latestVersion": {
+      "version": "1.0.3",
+      "createdAt": 1781800539250,
+      "changelog": "- Updated to version 1.0.3.\n- SKILL.md: Improved installation instructions—now suggests verifying aitun install with just `which aitun` (removed `pip show aitun`).\n- No changes to functionality or API. Documentation clarification only.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "AITUN_SERVER",
+          "required": false
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "live-preview",
+    "displayName": "Live Preview",
+    "summary": "Share a live preview of a website under development via aitun tunnel, with hot-reload support so users see changes in real time as you edit. Perfect for AI a...",
+    "description": "Share a live preview of a website under development via aitun tunnel, with hot-reload support so users see changes in real time as you edit. Perfect for AI agents that iteratively build or modify websites and need user feedback.",
+    "tags": {
+      "latest": "1.0.3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 109,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 4
+    },
+    "createdAt": 1781453760574,
+    "updatedAt": 1781800528352,
+    "latestVersion": {
+      "version": "1.0.3",
+      "createdAt": 1781800528352,
+      "changelog": "- Updated to version 1.0.3.\n- Improved installation instructions: removed redundant method for verifying aitun installation.\n- No other content or behavioral changes.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "AITUN_SERVER",
+          "required": false
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "contract-ai-review",
+    "displayName": "AI合同智能审查助手",
+    "summary": "AI合同智能审查助手。上传或粘贴合同文本，自动进行9维雷达评分、风险热力图可视化、条款对比修改建议、法律依据引用、谈判策略生成，输出交互式HTML审查报告。覆盖买卖合同/劳动用工/租赁合同/服务合同/保密协议/投资协议/建设工程/技术开发8类合同类型。触发词：合同审查, 审合同, 合同风险, 合同分析, 审查合同...",
+    "description": "AI合同智能审查助手。上传或粘贴合同文本，自动进行9维雷达评分、风险热力图可视化、条款对比修改建议、法律依据引用、谈判策略生成，输出交互式HTML审查报告。覆盖买卖合同/劳动用工/租赁合同/服务合同/保密协议/投资协议/建设工程/技术开发8类合同类型。触发词：合同审查, 审合同, 合同风险, 合同分析, 审查合同, contract review, 帮我看看合同, 合同审核, 法律风险分析。",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781800524501,
+    "updatedAt": 1781800524501,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781800524501,
+      "changelog": "v1.0.0 初始版本：9维雷达评分+风险热力图+条款对比修改+谈判策略生成+8类合同清单+交互式HTML报告",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "iot-bridge",
+    "displayName": "Iot Bridge",
+    "summary": "Bridge IoT devices to the cloud via aitun tunnel. Expose local MQTT brokers, device dashboards, or HTTP APIs so remote devices and services can connect, repo...",
+    "description": "Bridge IoT devices to the cloud via aitun tunnel. Expose local MQTT brokers, device dashboards, or HTTP APIs so remote devices and services can connect, report data, and receive commands.",
+    "tags": {
+      "latest": "1.0.3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 97,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 4
+    },
+    "createdAt": 1781485378249,
+    "updatedAt": 1781800517706,
+    "latestVersion": {
+      "version": "1.0.3",
+      "createdAt": 1781800517706,
+      "changelog": "- Updated SKILL.md to remove the alternate aitun installation check using `pip show aitun`; now only `which aitun` is suggested.\n- No other content or logic changes.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "AITUN_SERVER",
+          "required": false
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "collab-edit",
+    "displayName": "Collab Edit",
+    "summary": "Enable real-time collaboration by exposing a local collaborative editing tool via aitun tunnel. Perfect for AI agents that need to co-edit code, documents, o...",
+    "description": "Enable real-time collaboration by exposing a local collaborative editing tool via aitun tunnel. Perfect for AI agents that need to co-edit code, documents, or whiteboards with users in real time.",
+    "tags": {
+      "latest": "1.0.3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 107,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 4
+    },
+    "createdAt": 1781453775774,
+    "updatedAt": 1781800508447,
+    "latestVersion": {
+      "version": "1.0.3",
+      "createdAt": 1781800508447,
+      "changelog": "- Updated installation verification instructions: now recommends using only which aitun instead of which aitun || pip show aitun.\n- No other functional or content changes.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "AITUN_SERVER",
+          "required": false
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "contract-review",
+    "displayName": "AI合同智能审查助手",
+    "summary": "AI合同智能审查助手。上传或粘贴合同文本，自动进行9维雷达评分、风险热力图可视化、条款对比修改建议、法律依据引用、谈判策略生成，输出交互式HTML审查报告。覆盖买卖合同/劳动用工/租赁合同/服务合同/保密协议/投资协议/建设工程/技术开发8类合同类型。触发词：合同审查, 审合同, 合同风险, 合同分析, 审查合同...",
+    "description": "AI合同智能审查助手。上传或粘贴合同文本，自动进行9维雷达评分、风险热力图可视化、条款对比修改建议、法律依据引用、谈判策略生成，输出交互式HTML审查报告。覆盖买卖合同/劳动用工/租赁合同/服务合同/保密协议/投资协议/建设工程/技术开发8类合同类型。触发词：合同审查, 审合同, 合同风险, 合同分析, 审查合同, contract review, 帮我看看合同, 合同审核, 法律风险分析。",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781800433262,
+    "updatedAt": 1781800433262,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781800433262,
+      "changelog": "v1.0.0 初始版本：9维雷达评分+风险热力图+条款对比修改+谈判策略生成+8类合同清单+交互式HTML报告",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "the-news",
+    "displayName": "The News: Breaking News, Global News, & A Headline Archive",
+    "summary": "gives agents real-time and archival access to front-page headlines across 20 countries for breaking news, current events, and comparative media analysis.",
+    "description": "gives agents real-time and archival access to front-page headlines across 20 countries for breaking news, current events, and comparative media analysis.",
+    "tags": {
+      "latest": "1.0.11"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 7088,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 1,
+      "versions": 12
+    },
+    "createdAt": 1777748691742,
+    "updatedAt": 1781800428232,
+    "latestVersion": {
+      "version": "1.0.11",
+      "createdAt": 1781800428232,
+      "changelog": "- Removed the skill-card.md file.\n- Expanded and clarified the skill description for better user understanding.\n- Added a summary statement in the SKILL.md highlighting global news access and searchable archives. \n- No functionality changes; this update is documentation-focused.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "google-health-cli",
+    "displayName": "Google Health",
+    "summary": "Read your Google Health data from any agent. Lists data points for every Google Health data type (heart rate, resting heart rate, sleep, steps, distance, wei...",
+    "description": "Read your Google Health data from any agent. Lists data points for every Google Health data type (heart rate, resting heart rate, sleep, steps, distance, weight, blood oxygen, VO2 max, exercise, and more), returns server-side daily roll-ups (one reconciled total per day), gives a parsed view of exercise sessions, and can GET any read-only v4 API path. A self-contained, read-only client for the Google Health v4 API: authenticates via OAuth2 (token cached locally and auto-refreshed) and emits JSON. It does NO filtering, merging, or writing — the caller decides what to do with the data. Single static binary, no Python or other runtime. NOTE: needs your own Google Cloud OAuth client and a one-time interactive browser login; runs headless afterward.",
+    "tags": {
+      "latest": "1.0.3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 78,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 4
+    },
+    "createdAt": 1781716383804,
+    "updatedAt": 1781800396041,
+    "latestVersion": {
+      "version": "1.0.3",
+      "createdAt": 1781800396041,
+      "changelog": "**Config and token cache discovery logic improved to be more robust and user-friendly.**\n\n- Token cache location defaults to a non-roaming cache directory; now migrates any previous cache from the old config dir automatically.\n- Config file (`config.json`) discovery supports multiple fallback locations for greater flexibility.\n- Documentation and metadata updated to clarify new config and token cache lookup order.\n- Minor test and code adjustments to support the new cache/config logic.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "GOOGLE_HEALTH_CLIENT_ID",
+          "required": true
+        },
+        {
+          "key": "GOOGLE_HEALTH_CLIENT_SECRET",
+          "required": true
+        },
+        {
+          "key": "GOOGLE_HEALTH_CONFIG",
+          "required": false
+        },
+        {
+          "key": "GOOGLE_HEALTH_TOKEN_CACHE",
+          "required": false
+        },
+        {
+          "key": "GOOGLE_HEALTH_BASE_URL",
+          "required": false
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "sshtunnel",
+    "displayName": "Sshtunnel",
+    "summary": "Expose local SSH servers to the public internet via aitun TCP tunnel with SSH-over-TLS routing. Each subdomain gets its own SSH endpoint on port 22 with perf...",
+    "description": "Expose local SSH servers to the public internet via aitun TCP tunnel with SSH-over-TLS routing. Each subdomain gets its own SSH endpoint on port 22 with perfect isolation via SNI. Perfect for AI agents that need to provide remote SSH access behind NAT/firewall.",
+    "tags": {
+      "latest": "4.7.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 118,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 7
+    },
+    "createdAt": 1781486867300,
+    "updatedAt": 1781800251858,
+    "latestVersion": {
+      "version": "4.7.1",
+      "createdAt": 1781800251858,
+      "changelog": "**sshtunnel v4.7.1 Changelog**\n\n- Installation instructions updated: recommends `curl https://aitun.cc/install.sh | bash` instead of `pip install aitun`.\n- Critical section on SSH connection reuse added, with detailed examples for SSH ControlMaster and Python (paramiko).\n- Explains the severe performance penalty of opening new SSH connections for every command over a tunnel.\n- Step-by-step guidance provided for optimal connection reuse in CLI and programmatic contexts.\n- Removed obsolete file: `skill-card.md`.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "AITUN_SERVER",
+          "required": false
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "web-monitor",
+    "displayName": "Web Monitor",
+    "summary": "Monitor web pages for content changes with CSS selector targeting, change detection via hashing, and notification integration. Use for price tracking, conten...",
+    "description": "Monitor web pages for content changes with CSS selector targeting, change detection via hashing, and notification integration. Use for price tracking, content alerts, and website change detection.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781800225496,
+    "updatedAt": 1781800225496,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781800225496,
+      "changelog": "Initial release",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "rdptunnel",
+    "displayName": "Rdptunnel",
+    "summary": "Expose local RDP (Remote Desktop) servers to the public internet via aitun TCP tunnel with TLS-based routing. Perfect for AI agents that need to provide remo...",
+    "description": "Expose local RDP (Remote Desktop) servers to the public internet via aitun TCP tunnel with TLS-based routing. Perfect for AI agents that need to provide remote desktop access to Windows machines, GUI servers, or VDI instances behind NAT/firewall.",
+    "tags": {
+      "latest": "4.7.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 113,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 6
+    },
+    "createdAt": 1781486882636,
+    "updatedAt": 1781800216288,
+    "latestVersion": {
+      "version": "4.7.1",
+      "createdAt": 1781800216288,
+      "changelog": "- Switched recommended installation method to script (`curl -fsSL https://aitun.cc/install.sh | bash`) instead of `pip install`.\n- Updated example `aitun` commands to use modern syntax (`-k YOUR_TOKEN --tcp-ports 3389`, decoupling `-p` from TCP-only mode).\n- Clarified and simplified usage instructions for HTTP + RDP tunnel and TCP-only mode.\n- Removed file: skill-card.md.\n- Updated CLI reference and examples to reflect changes in flags and TCP routing behavior.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "AITUN_SERVER",
+          "required": false
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "url-shortener",
+    "displayName": "Url Shortener",
+    "summary": "Create and manage short URLs with custom aliases and tracking. Use when user needs to shorten long URLs, create memorable custom links, track click statistic...",
+    "description": "Create and manage short URLs with custom aliases and tracking. Use when user needs to shorten long URLs, create memorable custom links, track click statistics, or generate QR codes for URLs.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781800214096,
+    "updatedAt": 1781800214096,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781800214096,
+      "changelog": "Initial release",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "video-downloader",
+    "displayName": "Video Downloader",
+    "summary": "Download videos from YouTube and other video platforms. Use when user needs to download videos for offline viewing, extract audio from videos, or save video...",
+    "description": "Download videos from YouTube and other video platforms. Use when user needs to download videos for offline viewing, extract audio from videos, or save video metadata.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781800205404,
+    "updatedAt": 1781800205404,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781800205404,
+      "changelog": "Initial release",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "aitun-tunnel",
+    "displayName": "Aitun Tunnel",
+    "summary": "Expose local web pages and HTTP services to the public internet via secure tunnels. Perfect for AI agents that build websites locally and need to share them...",
+    "description": "Expose local web pages and HTTP services to the public internet via secure tunnels. Perfect for AI agents that build websites locally and need to share them publicly.",
+    "tags": {
+      "latest": "4.0.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 204,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 1,
+      "versions": 8
+    },
+    "createdAt": 1781267207836,
+    "updatedAt": 1781800143666,
+    "latestVersion": {
+      "version": "4.0.2",
+      "createdAt": 1781800143666,
+      "changelog": "- Added explicit version number (4.0.2) to SKILL.md.\n- Updated installation instructions to use the official shell script (`curl -fsSL https://aitun.cc/install.sh | bash`) instead of `pip install aitun`.\n- Clarified that the `-p` (port) flag is optional and explained TCP-only usage with `--tcp-ports`.\n- Improved CLI documentation to cover both HTTP and TCP-only forwarding scenarios.\n- Removed legacy metadata and skill description files (_meta.json, skill-card.md) for simplification.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "AITUN_SERVER",
+          "required": false
+        },
+        {
+          "key": "AITUN_SUBDOMAIN",
+          "required": false
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "tender-analyzer",
+    "displayName": "投标文件全流程智能分析",
+    "summary": "投标文件全流程智能分析技能。解析招标/投标文件(PDF/DOCX/XLSX)，基于MECE原则进行多维度结构化需求拆解， 自动生成架构图/流程图/ER图/甘特图/雷达图五大专业图表，模拟评审专家打分并输出扣分明细， 根据评审意见逐条自动修订，提供类Git版本管理与迭代追踪。 Triggers: 投标, 招标, 标...",
+    "description": "投标文件全流程智能分析技能。解析招标/投标文件(PDF/DOCX/XLSX)，基于MECE原则进行多维度结构化需求拆解， 自动生成架构图/流程图/ER图/甘特图/雷达图五大专业图表，模拟评审专家打分并输出扣分明细， 根据评审意见逐条自动修订，提供类Git版本管理与迭代追踪。 Triggers: 投标, 招标, 标书分析, 需求拆解, 评审打分, 标书检查, 投标方案, 招标文件解析, 报价分析, 技术方案, 自动修改, bid, tender, RFP analysis, 标书版本管理, MECE分析.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781799398180,
+    "updatedAt": 1781799398180,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781799398180,
+      "changelog": "初始版本：支持8阶段投标分析工作流，含MECE多维展开、5角色评审模拟、5类专业图表生成、自动修订引擎、版本管理",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "sendfile",
+    "displayName": "Sendfile",
+    "summary": "Send files to users in chat by creating a temporary public download link via aitun tunnel. Perfect for AI agents that need to deliver generated files (docume...",
+    "description": "Send files to users in chat by creating a temporary public download link via aitun tunnel. Perfect for AI agents that need to deliver generated files (documents, images, reports, code) to users.",
+    "tags": {
+      "latest": "1.0.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 115,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 1,
+      "versions": 3
+    },
+    "createdAt": 1781453238975,
+    "updatedAt": 1781798870306,
+    "latestVersion": {
+      "version": "1.0.2",
+      "createdAt": 1781798870306,
+      "changelog": "- Updated recommended `aitun` installation command from `pip install aitun` to `curl -fsSL https://aitun.cc/install.sh | bash`.\n- No other changes to usage, functionality, or documentation.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "AITUN_SERVER",
+          "required": false
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "text2echart",
+    "displayName": "text2echart",
+    "summary": "Chart generator skill. When triggered: - Default: CONSTRUCT ECharts option JSON and output HTML string directly and render by mermaid and support preview. -...",
+    "description": "Chart generator skill. When triggered: - Default: CONSTRUCT ECharts option JSON and output HTML string directly and render by mermaid and support preview. - Image / vector (图片/矢量图): use CLI with --svg-output (or --svg --embed for offline). - Screenshot (截图): use CLI with --screenshot (needs Playwright). - Fine-tuning (微调/修改): open browser for interactive adjustment. Supports 6 chart types: bar, line, pie, scatter, radar, wordcloud (via JSON). Trigger words: chart, graph, visualize, plot, draw, wordcloud, vent draw图表, 画图, 可视化, 图片, 矢量图, 词云.",
+    "tags": {
+      "latest": "2.3.10"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 317,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 33
+    },
+    "createdAt": 1780997326900,
+    "updatedAt": 1781798670592,
+    "latestVersion": {
+      "version": "2.3.10",
+      "createdAt": 1781798670592,
+      "changelog": "Fix: add assets/README.md placeholder so directory is visible; images embedded as base64 in main README",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "ai-delivery-spec",
+    "displayName": "Ai Delivery Spec",
+    "summary": "Use to create or review product delivery artifacts with handoff intent: PRD, prototype, role path, DDD/API/data contract, test/UAT evidence, readiness, post-...",
+    "description": "Use to create or review product delivery artifacts with handoff intent: PRD, prototype, role path, DDD/API/data contract, test/UAT evidence, readiness, post-launch review, retirement, AI runtime/evaluation, or cross-border spec. First run 0D triage to prune AI/workflow gates. Do not use for code-only syntax/debugging, copy rewriting, or idea exploration with no delivery intent.",
+    "tags": {
+      "latest": "0.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 1
+    },
+    "createdAt": 1781797820442,
+    "updatedAt": 1781797820442,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1781797820442,
+      "changelog": "Initial release of ai-delivery-spec skill.\n\n- Introduces triage process classifying requests by tier, AI, and workflow scope.\n- Defines strict entrypoints for modular loading: core delivery, prototype/testability, and advanced extensions.\n- Details gating criteria for user story mapping, demo prototype validation, product specification, and acceptance package assembly.\n- Provides specific routing rules for different artifact and module types.\n- Emphasizes testability, lifecycle tracking, and artifact handoff accountability throughout the delivery process.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "sonoscli",
+    "displayName": "Sonoscli",
+    "summary": "Control Sonos speakers (discover/status/play/volume/group).",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 84911,
+      "installsAllTime": 2795,
+      "installsCurrent": 2774,
+      "stars": 55,
+      "versions": 1
+    },
+    "createdAt": 1767545381030,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545381030,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "gog",
+    "displayName": "Gog",
+    "summary": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 36,
+      "downloads": 186458,
+      "installsAllTime": 3666,
+      "installsCurrent": 3650,
+      "stars": 924,
+      "versions": 1
+    },
+    "createdAt": 1767545346060,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545346060,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "github",
+    "displayName": "Github",
+    "summary": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 7,
+      "downloads": 190739,
+      "installsAllTime": 4512,
+      "installsCurrent": 4500,
+      "stars": 636,
+      "versions": 1
+    },
+    "createdAt": 1767545344344,
+    "updatedAt": 1781268517834,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545344344,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "weather",
+    "displayName": "Weather",
+    "summary": "Get current weather and forecasts (no API key required).",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 6,
+      "downloads": 161256,
+      "installsAllTime": 3902,
+      "installsCurrent": 3893,
+      "stars": 417,
+      "versions": 1
+    },
+    "createdAt": 1767545394459,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545394459,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-whisper",
+    "displayName": "Openai Whisper",
+    "summary": "Local speech-to-text with the Whisper CLI (no API key).",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 2,
+      "downloads": 84812,
+      "installsAllTime": 2130,
+      "installsCurrent": 2121,
+      "stars": 325,
+      "versions": 1
+    },
+    "createdAt": 1767545365755,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545365755,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "skill-creator",
+    "displayName": "Skill Creator",
+    "summary": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.",
+    "description": null,
+    "tags": {
+      "latest": "0.1.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 92098,
+      "installsAllTime": 2506,
+      "installsCurrent": 2499,
+      "stars": 320,
+      "versions": 1
+    },
+    "createdAt": 1769522677376,
+    "updatedAt": 1778987225295,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1769522677376,
+      "changelog": "Initial release of skill-creator, a comprehensive guide for designing modular skills to extend Claude’s capabilities.\n\n- Introduces principles for creating effective, concise, and domain-specific skills.\n- Explains modular structure: required SKILL.md and optional scripts, references, and assets folders.\n- Outlines guidelines for what to include (and exclude) in a skill package.\n- Details progressive disclosure design for efficient context management.\n- Provides reference patterns for organizing content and bundling resources.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "notion",
+    "displayName": "Notion",
+    "summary": "Notion API for creating and managing pages, databases, and blocks.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 92847,
+      "installsAllTime": 2427,
+      "installsCurrent": 2422,
+      "stars": 260,
+      "versions": 1
+    },
+    "createdAt": 1767545360889,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545360889,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "obsidian",
+    "displayName": "Obsidian",
+    "summary": "Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 9,
+      "downloads": 103274,
+      "installsAllTime": 2620,
+      "installsCurrent": 2612,
+      "stars": 430,
+      "versions": 1
+    },
+    "createdAt": 1767545362143,
+    "updatedAt": 1779137320034,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545362143,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "gemini",
+    "displayName": "Gemini",
+    "summary": "Gemini CLI for one-shot Q&A, summaries, and generation.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 5,
+      "downloads": 34594,
+      "installsAllTime": 1466,
+      "installsCurrent": 1462,
+      "stars": 56,
+      "versions": 1
+    },
+    "createdAt": 1767545316392,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545316392,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "mcporter",
+    "displayName": "Mcporter",
+    "summary": "Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 67480,
+      "installsAllTime": 2044,
+      "installsCurrent": 2037,
+      "stars": 194,
+      "versions": 1
+    },
+    "createdAt": 1767545355897,
+    "updatedAt": 1779137319429,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545355897,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "nano-banana-pro",
+    "displayName": "Nano Banana Pro",
+    "summary": "Generate/edit images with Nano Banana Pro (Gemini 3 Pro Image). Use for image create/modify requests incl. edits. Supports text-to-image + image-to-image; 1K/2K/4K; use --input-image.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 103593,
+      "installsAllTime": 1897,
+      "installsCurrent": 1894,
+      "stars": 405,
+      "versions": 2
+    },
+    "createdAt": 1767545358090,
+    "updatedAt": 1779137307565,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767651987917,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "model-usage",
+    "displayName": "Model Usage",
+    "summary": "Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a scriptable per-model summary from codexbar cost JSON.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 38243,
+      "installsAllTime": 1587,
+      "installsCurrent": 1582,
+      "stars": 114,
+      "versions": 1
+    },
+    "createdAt": 1767667639455,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767667639455,
+      "changelog": "- Initial release of the model-usage skill for summarizing per-model usage and cost from CodexBar CLI local cost logs.\n- Supports both Codex and Claude providers.\n- Allows fetching summaries for the current (most recent) model or all models.\n- Provides both text and JSON output formats.\n- Can process costs directly from CodexBar CLI output or from a JSON file/stdin.\n- Includes guidance for CLI use and script automation.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "darwin"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "video-frames",
+    "displayName": "Video Frames",
+    "summary": "Extract frames or short clips from videos using ffmpeg.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 52385,
+      "installsAllTime": 1599,
+      "installsCurrent": 1595,
+      "stars": 129,
+      "versions": 1
+    },
+    "createdAt": 1767545391700,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545391700,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "blogwatcher",
+    "displayName": "Blogwatcher",
+    "summary": "Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 43219,
+      "installsAllTime": 1504,
+      "installsCurrent": 1498,
+      "stars": 70,
+      "versions": 1
+    },
+    "createdAt": 1767545299849,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545299849,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "nano-pdf",
+    "displayName": "Nano Pdf",
+    "summary": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 113239,
+      "installsAllTime": 2649,
+      "installsCurrent": 2644,
+      "stars": 260,
+      "versions": 1
+    },
+    "createdAt": 1767545359433,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545359433,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "session-logs",
+    "displayName": "Session-logs",
+    "summary": "Search and analyze your own session logs (older/parent conversations) using jq.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 41709,
+      "installsAllTime": 1457,
+      "installsCurrent": 1453,
+      "stars": 30,
+      "versions": 1
+    },
+    "createdAt": 1770136427000,
+    "updatedAt": 1778486000320,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1770136427000,
+      "changelog": "Initial release of session-logs.\n\n- Enables searching and analyzing your session logs (past conversations) with jq and ripgrep (rg).\n- Provides bash command examples for session discovery, keyword searches, extracting messages, cost summaries, and tool usage breakdowns.\n- Documents JSONL session file structure, roles, and content types.\n- Lists session log file locations and naming conventions.\n- Includes tips for managing and querying large, append-only session histories.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "himalaya",
+    "displayName": "Himalaya",
+    "summary": "CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 45968,
+      "installsAllTime": 1545,
+      "installsCurrent": 1541,
+      "stars": 69,
+      "versions": 1
+    },
+    "createdAt": 1767954271328,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767954271328,
+      "changelog": "Initial release of Himalaya CLI email client skill.\n\n- Provides terminal-based email management via IMAP/SMTP.\n- Supports listing, reading, composing, replying, forwarding, searching, and organizing emails.\n- Includes multi-account support and message composition with MML.\n- Detailed setup and configuration instructions included.\n- Enables handling attachments, output customization, and debugging via logging.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "sag",
+    "displayName": "Sag",
+    "summary": "ElevenLabs text-to-speech with mac-style say UX.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 27009,
+      "installsAllTime": 1263,
+      "installsCurrent": 1259,
+      "stars": 26,
+      "versions": 1
+    },
+    "createdAt": 1767545376535,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545376535,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "ELEVENLABS_API_KEY",
+          "required": true
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "goplaces",
+    "displayName": "Goplaces",
+    "summary": "Query Google Places API (New) via the goplaces CLI for text search, place details, resolve, and reviews. Use for human-friendly place lookup or JSON output for scripts.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 22872,
+      "installsAllTime": 1252,
+      "installsCurrent": 1249,
+      "stars": 30,
+      "versions": 1
+    },
+    "createdAt": 1767545347454,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545347454,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "GOOGLE_PLACES_API_KEY",
+          "required": true
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "slack",
+    "displayName": "Slack",
+    "summary": "Use when you need to control Slack from Clawdbot via the slack tool, including reacting to messages or pinning/unpinning items in Slack channels or DMs.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 12,
+      "downloads": 48044,
+      "installsAllTime": 1438,
+      "installsCurrent": 1434,
+      "stars": 158,
+      "versions": 1
+    },
+    "createdAt": 1767545378002,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545378002,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "peekaboo",
+    "displayName": "Peekaboo",
+    "summary": "Capture and automate macOS UI with the Peekaboo CLI.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 4,
+      "downloads": 30469,
+      "installsAllTime": 1343,
+      "installsCurrent": 1341,
+      "stars": 83,
+      "versions": 1
+    },
+    "createdAt": 1767545373660,
+    "updatedAt": 1779137309055,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545373660,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "darwin"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-image-gen",
+    "displayName": "Openai Image Gen",
+    "summary": "Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 24630,
+      "installsAllTime": 1123,
+      "installsCurrent": 1121,
+      "stars": 37,
+      "versions": 2
+    },
+    "createdAt": 1767545364210,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767652000401,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "tmux",
+    "displayName": "Tmux",
+    "summary": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 29350,
+      "installsAllTime": 1409,
+      "installsCurrent": 1405,
+      "stars": 43,
+      "versions": 1
+    },
+    "createdAt": 1767545387948,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545387948,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "darwin",
+        "linux"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "gifgrep",
+    "displayName": "Gifgrep",
+    "summary": "Search GIF providers with CLI/TUI, download results, and extract stills/sheets.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 18639,
+      "installsAllTime": 1217,
+      "installsCurrent": 1211,
+      "stars": 7,
+      "versions": 2
+    },
+    "createdAt": 1767488226016,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767545342229,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-whisper-api",
+    "displayName": "Openai Whisper Api",
+    "summary": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 25946,
+      "installsAllTime": 1183,
+      "installsCurrent": 1179,
+      "stars": 52,
+      "versions": 1
+    },
+    "createdAt": 1767545368103,
+    "updatedAt": 1779137313987,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545368103,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "OPENAI_API_KEY",
+          "required": true
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  }
+]
