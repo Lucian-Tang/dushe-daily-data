@@ -1,0 +1,1488 @@
+[
+  {
+    "slug": "renesas-search",
+    "displayName": "Renesas Search",
+    "summary": "Search and recommend Renesas semiconductor solutions for embedded system design. Triggers ONLY when the user explicitly mentions \"Renesas\" (or \"瑞萨\") OR names...",
+    "description": "Search and recommend Renesas semiconductor solutions for embedded system design. Triggers ONLY when the user explicitly mentions \"Renesas\" (or \"瑞萨\") OR names a Renesas product family (DA14xxx, RA, RX, RL78, RZ, ISL, RAA, EL, HS, etc.). Do NOT trigger for generic embedded/electronic questions without a Renesas mention. Primary data source: Renesas official website (www.renesas.com) and official datasheets. All chip parameters MUST be fetched from official datasheets or renesas.com product pages. When a solution is provided, the corresponding chip datasheet PDF must be downloaded to the current working directory under \"embedded_dev/renesas/datasheet/\".",
+    "tags": {
+      "ble": "3.0.5",
+      "hermes": "3.0.5",
+      "latest": "3.0.5",
+      "mcu": "3.0.5",
+      "no-fabrication": "3.0.5",
+      "openclaw": "3.0.5",
+      "renesas": "3.0.5",
+      "research": "3.0.5",
+      "semiconductor": "3.0.5"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 6
+    },
+    "createdAt": 1781880884596,
+    "updatedAt": 1781886030782,
+    "latestVersion": {
+      "version": "3.0.5",
+      "createdAt": 1781886030782,
+      "changelog": "v3.0.5: Hermes Agent compatibility. Add metadata.hermes.category=research, tags, version, author, license, platforms to SKILL.md frontmatter. New HERMES_INSTALL.md with three install paths.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "taohuayuan-cpaa-core",
+    "displayName": "Changde AI Physical Alignment Architecture (CPAA)",
+    "summary": "Scans embodied AI agent configs on edge to verify physical alignment with Changde AI safety standards, including ID, domain mapping, and locked controls.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781885890930,
+    "updatedAt": 1781885890930,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781885890930,
+      "changelog": "CPAA-Physical-Align-Checker 1.0.0 introduces a new core compliance engine for embodied AI.\n\n- Provides automated edge-side compliance auditing for “常德 AI 物理对齐架构 V1.0”.\n- Validates S2-DID identity, CD-U6A address domain mapping, and mandatory hardware lock/temperature settings.\n- Returns structured pass/fail compliance reports and certification status.\n- Triggers strict REJECTED status and enforces actuator cut-off on failure.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "pricing-tester",
+    "displayName": "Pricing Tester",
+    "summary": "Design and evaluate A/B tests for different price points, discount levels, and bundle combinations to find the highest-converting offer structure.",
+    "description": "Design and evaluate A/B tests for different price points, discount levels, and bundle combinations to find the highest-converting offer structure.",
+    "tags": {
+      "latest": "1.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 435,
+      "installsAllTime": 16,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1774674822117,
+    "updatedAt": 1781885350786,
+    "latestVersion": {
+      "version": "1.1.0",
+      "createdAt": 1781885250100,
+      "changelog": "v1.1.0 — Major expansion from an instruction-only skill into a full operator playbook: added a Quick Reference decision table, a Solves section, a detailed 7-step workflow, two fully worked examples with profit-per-visitor math, and an expanded common-mistakes section. Added reference guides (output-template, experiment-design-guide, pricing-test-patterns) and a quality checklist.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "thesis-workflow",
+    "displayName": "Mba Thesis Workflow",
+    "summary": "多Agent协作完成MBA/学术论文写作的完整工作流，支持双版本起草、审核、整合、定稿。",
+    "description": "多Agent协作完成MBA/学术论文写作的完整工作流，支持双版本起草、审核、整合、定稿。",
+    "tags": {
+      "latest": "1.7.3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 101,
+      "installsAllTime": 4,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 4
+    },
+    "createdAt": 1781659514811,
+    "updatedAt": 1781885334408,
+    "latestVersion": {
+      "version": "1.7.3",
+      "createdAt": 1781885334408,
+      "changelog": "v1.7.3: P0修复集 + Loop架构落地 + 25个单元测试。",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "linux",
+        "darwin",
+        "win32"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "kontour-travel-planner",
+    "displayName": "Kontour Travel Planner",
+    "summary": "Transform any AI agent into a world-class travel planner using Kontour AI's 9-dimension progressive planning model with structured conversation flow.",
+    "description": "Transform any AI agent into a world-class travel planner using Kontour AI's 9-dimension progressive planning model with structured conversation flow.",
+    "tags": {
+      "itinerary": "2.0.3",
+      "latest": "2.0.3",
+      "offline": "2.0.3",
+      "planning": "2.0.3",
+      "travel": "2.0.3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 2091,
+      "installsAllTime": 71,
+      "installsCurrent": 3,
+      "stars": 3,
+      "versions": 78
+    },
+    "createdAt": 1772060896379,
+    "updatedAt": 1781885253158,
+    "latestVersion": {
+      "version": "2.0.3",
+      "createdAt": 1781885253158,
+      "changelog": "Privacy refactor: remove organization/personal identifiers and direct hosted CTA URLs; use approved public URL placeholders.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "pp-lounge-map-offline",
+    "displayName": "Offline Airport Lounge Finder - Comparison Map",
+    "summary": "Use this skill when you need offline or air-gapped access to the bundled Priority Pass lounge catalog. Trigger it for local lounge lookup, facility filtering...",
+    "description": "Use this skill when you need offline or air-gapped access to the bundled Priority Pass lounge catalog. Trigger it for local lounge lookup, facility filtering, airport briefs, and lounge comparisons when network access is unavailable or disallowed. Do not use it for data rebuilds, deploys, remote MCP endpoints, arbitrary shell execution, or any workflow that depends on live internet access.",
+    "tags": {
+      "airport": "1.3.26",
+      "latest": "1.3.26",
+      "lounges": "1.3.26",
+      "mcp": "1.3.26",
+      "offline": "1.3.26",
+      "travel": "1.3.26"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 548,
+      "installsAllTime": 21,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 9
+    },
+    "createdAt": 1774069882737,
+    "updatedAt": 1781885225319,
+    "latestVersion": {
+      "version": "1.3.26",
+      "createdAt": 1781885225319,
+      "changelog": "Privacy refactor: remove hosted destination disclosures; reinforce local offline marketplace boundary.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "circulus-map-offline",
+    "displayName": "Air Route Calculator - Projected Flight Maps",
+    "summary": "Use when the user wants aviation route maps, ETOPS-aware route analysis, projection comparisons, airport lookup, or SVG map rendering through a local Circulu...",
+    "description": "Use when the user wants aviation route maps, ETOPS-aware route analysis, projection comparisons, airport lookup, or SVG map rendering through a local Circulus Map MCP server. Prefer this skill for offline or bundled setups that run against a localhost MCP worker, including quick-query route solving (`JFK-LHR`, `800nm@DEN`) and building or validating `MapSpecV1` payloads before rendering.",
+    "tags": {
+      "aviation": "1.3.24",
+      "latest": "1.3.24",
+      "maps": "1.3.24",
+      "mcp": "1.3.24",
+      "offline": "1.3.24",
+      "travel": "1.3.24"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 477,
+      "installsAllTime": 18,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 6
+    },
+    "createdAt": 1774069874183,
+    "updatedAt": 1781885208995,
+    "latestVersion": {
+      "version": "1.3.24",
+      "createdAt": 1781885208995,
+      "changelog": "Privacy refactor: remove hosted destination disclosures and operator identifiers; clarify localhost-only offline setup.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "all-routes-offline",
+    "displayName": "Global Flight Route Map - Airport Connections",
+    "summary": "Use local All Routes APIs, repo-backed handlers, and optional local MCP for airport, airline, route-map, timetable-context, and dataset-health lookups withou...",
+    "description": "Use local All Routes APIs, repo-backed handlers, and optional local MCP for airport, airline, route-map, timetable-context, and dataset-health lookups without hosted credentials. Use when route discovery must stay grounded in this repo and work without the hosted All Routes MCP server.",
+    "tags": {
+      "aviation": "1.3.24",
+      "latest": "1.3.24",
+      "mcp": "1.3.24",
+      "offline": "1.3.24",
+      "routes": "1.3.24",
+      "travel": "1.3.24"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 556,
+      "installsAllTime": 21,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 6
+    },
+    "createdAt": 1774069876682,
+    "updatedAt": 1781885202468,
+    "latestVersion": {
+      "version": "1.3.24",
+      "createdAt": 1781885202468,
+      "changelog": "Privacy refactor: remove hosted destination disclosures and operator identifiers; keep offline/local guardrails.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "discount-optimizer",
+    "displayName": "Discount Optimizer",
+    "summary": "Calculate optimal discount levels based on unit cost, conversion targets, and inventory velocity so promos move product without destroying margin.",
+    "description": "Calculate optimal discount levels based on unit cost, conversion targets, and inventory velocity so promos move product without destroying margin.",
+    "tags": {
+      "latest": "1.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 434,
+      "installsAllTime": 16,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1774692514092,
+    "updatedAt": 1781885148680,
+    "latestVersion": {
+      "version": "1.1.0",
+      "createdAt": 1781885148680,
+      "changelog": "v1.1.0 — Major expansion from an instruction-only skill into a full operator playbook: added a Quick Reference decision table, a Solves section, a detailed 7-step workflow, two fully worked examples with verified margin and break-even math, and an expanded common-mistakes section. Added reference guides (output-template, margin-math-guide, promo-mechanics-guide) and a quality checklist.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "review-analyzer",
+    "displayName": "Review Analyzer",
+    "summary": "Extract sentiment patterns, repeated pain points, and feature requests from customer reviews to prioritize product fixes and copy improvements.",
+    "description": "Extract sentiment patterns, repeated pain points, and feature requests from customer reviews to prioritize product fixes and copy improvements.",
+    "tags": {
+      "latest": "1.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 507,
+      "installsAllTime": 19,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1774692555466,
+    "updatedAt": 1781885055030,
+    "latestVersion": {
+      "version": "1.1.0",
+      "createdAt": 1781885055030,
+      "changelog": "v1.1.0 — Major expansion from an instruction-only skill into a full operator playbook: added a Quick Reference decision table, a Solves section, a detailed 7-step workflow, two fully worked examples with realistic review data and aspect-sentiment math, and an expanded common-mistakes section. Added reference guides (output-template, sentiment-coding-guide, pain-point-taxonomy) and a quality checklist.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "jd-selection",
+    "displayName": "京东精选",
+    "summary": "零配置即装即用，提供京东商品搜索、频道推荐、猜你喜欢、类目浏览和促销活动查询5项工具，覆盖数码家电、超市百货、母婴玩具、美妆穿搭等全品类，基于京东官方数据。",
+    "description": "零配置即装即用，提供京东商品搜索、频道推荐、猜你喜欢、类目浏览和促销活动查询5项工具，覆盖数码家电、超市百货、母婴玩具、美妆穿搭等全品类，基于京东官方数据。",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 73,
+      "installsAllTime": 3,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1781787280331,
+    "updatedAt": 1781884942254,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1781787392992,
+      "changelog": "优化摘要和概述描述，移除不必要的信息",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "feedback-roadmap",
+    "displayName": "Feedback Roadmap",
+    "summary": "Convert customer feedback, review themes, and complaint clusters into product improvement priorities with clear rationale and urgency ranking.",
+    "description": "Convert customer feedback, review themes, and complaint clusters into product improvement priorities with clear rationale and urgency ranking.",
+    "tags": {
+      "latest": "1.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 433,
+      "installsAllTime": 16,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1774708844744,
+    "updatedAt": 1781884931271,
+    "latestVersion": {
+      "version": "1.1.0",
+      "createdAt": 1781884931271,
+      "changelog": "v1.1.0 — Major expansion from an instruction-only skill into a full operator playbook: added a Quick Reference decision table, a Solves section, a detailed 7-step workflow, two fully worked examples with realistic data and scoring math, and an expanded common-mistakes section. Added reference guides (output-template, prioritization-frameworks, feedback-clustering-guide) and a quality checklist.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "speediance",
+    "displayName": "Speediance Gym Monster",
+    "summary": "Read completed workouts (summaries and full per-set detail), browse and export the exercise catalog, and push custom training programs to your Speediance (Gy...",
+    "description": "Read completed workouts (summaries and full per-set detail), browse and export the exercise catalog, and push custom training programs to your Speediance (Gym Monster) smart cable machine via its cloud API. Authenticates with your account credentials, caches a session token in your OS user-cache directory (override with SPEEDIANCE_TOKEN_CACHE), and makes outbound HTTPS requests to the Speediance cloud API. Reads and emits structured data — the caller decides where to store it. Ships as a single static binary — no Python or other runtime required.",
+    "tags": {
+      "latest": "1.0.6"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 171,
+      "installsAllTime": 6,
+      "installsCurrent": 1,
+      "stars": 1,
+      "versions": 7
+    },
+    "createdAt": 1781619277174,
+    "updatedAt": 1781884850697,
+    "latestVersion": {
+      "version": "1.0.6",
+      "createdAt": 1781884850697,
+      "changelog": "### Version 1.0.6 of the Speediance skill introduces a new agent-friendly session summary command.\n\n- Added `today` command to retrieve all workout sessions for the current (or a specified) day in a normalized, type-agnostic format.\n- Improved session detail output: `session <id>` now identifies the session type (`kind: program | free | \"\"`) and emits unmodified API data per type.\n- Updated help/docs to recommend `today` as the easiest way to fetch recent activity without worrying about session types (program, free lift, or cardio).\n- Unified and clarified data fields, providing a consistent shape for automated consumers.\n- Minor documentation and structural updates; `skill-card.md` removed.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "SPEEDIANCE_EMAIL",
+          "required": true
+        },
+        {
+          "key": "SPEEDIANCE_PASSWORD",
+          "required": true
+        },
+        {
+          "key": "SPEEDIANCE_REGION",
+          "required": false
+        },
+        {
+          "key": "SPEEDIANCE_DEVICE_TYPE",
+          "required": false
+        },
+        {
+          "key": "SPEEDIANCE_CONFIG",
+          "required": false
+        },
+        {
+          "key": "SPEEDIANCE_TOKEN_CACHE",
+          "required": false
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "support-scripts",
+    "displayName": "Support Scripts",
+    "summary": "Build a pre-written response library for common customer service inquiries, complaints, and order issues that maintains tone and reduces resolution time.",
+    "description": "Build a pre-written response library for common customer service inquiries, complaints, and order issues that maintains tone and reduces resolution time.",
+    "tags": {
+      "latest": "1.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 403,
+      "installsAllTime": 15,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1774708882694,
+    "updatedAt": 1781884697481,
+    "latestVersion": {
+      "version": "1.1.0",
+      "createdAt": 1781884547821,
+      "changelog": "v1.1.0 — Major expansion from an instruction-only skill into a full operator playbook. Added a Quick Reference decision table (Strong/Acceptable/Weak), a Solves section, a detailed 7-step workflow, two fully worked examples with realistic data, and an expanded common-mistakes section. Added reference files (references/output-template.md, references/scenario-library.md, references/tone-and-policy-guide.md) and a 47-item quality checklist (assets/quality-checklist.md).",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "jd-super-deals",
+    "displayName": "京东自营超级补贴",
+    "summary": "零配置即装即用，提供京东超级补贴商品查询工具，展示超级补贴频道的精选补贴好货，只展示京东自营和旗舰店商品，支持按品类关键词和价格筛选，适合寻找大额补贴优惠商品。",
+    "description": "零配置即装即用，提供京东超级补贴商品查询工具，展示超级补贴频道的精选补贴好货，只展示京东自营和旗舰店商品，支持按品类关键词和价格筛选，适合寻找大额补贴优惠商品。",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 73,
+      "installsAllTime": 3,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 4
+    },
+    "createdAt": 1781791875328,
+    "updatedAt": 1781884063270,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1781792079675,
+      "changelog": "更新名称为京东自营超级补贴，突出只展示京东自营和旗舰店商品",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "jd-lowest-price",
+    "displayName": "京东自营历史最低价",
+    "summary": "零配置即装即用，提供京东历史最低价商品查询工具，展示正处于历史最低价格的商品，只展示京东自营和旗舰店商品，支持按品类关键词、价格筛选和多种排序，适合抄底捡漏。",
+    "description": "零配置即装即用，提供京东历史最低价商品查询工具，展示正处于历史最低价格的商品，只展示京东自营和旗舰店商品，支持按品类关键词、价格筛选和多种排序，适合抄底捡漏。",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 81,
+      "installsAllTime": 3,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 4
+    },
+    "createdAt": 1781787416709,
+    "updatedAt": 1781884062718,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1781796818392,
+      "changelog": "更新名称为京东自营历史最低价，拉取全部数据(约1100条)，只展示自营和旗舰店商品，支持翻页、稀缺提醒、分类导览、品牌匹配、多种排序(到手价/降价幅度)",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "jd-new-arrivals",
+    "displayName": "京东自营新品首发",
+    "summary": "零配置即装即用，提供京东新品首发查询工具，展示最新上架商品，只展示京东自营和旗舰店商品，支持国补优惠和以旧换新，按品类关键词和价格筛选，适合追新品。",
+    "description": "零配置即装即用，提供京东新品首发查询工具，展示最新上架商品，只展示京东自营和旗舰店商品，支持国补优惠和以旧换新，按品类关键词和价格筛选，适合追新品。",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 80,
+      "installsAllTime": 3,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 4
+    },
+    "createdAt": 1781787424852,
+    "updatedAt": 1781884061976,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1781792482022,
+      "changelog": "更新名称为京东自营新品首发，只展示京东自营和旗舰店商品，支持翻页浏览、稀缺提醒、模糊关键词匹配",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "jianding-system",
+    "displayName": "收藏雅集网-古董鉴定估价",
+    "summary": "收藏雅集网在线鉴定 —— 帮用户提交藏品鉴定订单、获取支付二维码、查看鉴定结果。支持微信小程序和非微信终端双环境。Use when user mentions \"鉴定\", \"估价\", \"藏品\", \"古玩\", \"帮我看看\", \"值多少钱\".",
+    "description": "收藏雅集网在线鉴定 —— 帮用户提交藏品鉴定订单、获取支付二维码、查看鉴定结果。支持微信小程序和非微信终端双环境。Use when user mentions \"鉴定\", \"估价\", \"藏品\", \"古玩\", \"帮我看看\", \"值多少钱\".",
+    "tags": {
+      "latest": "1.0.3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 47,
+      "installsAllTime": 2,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 5
+    },
+    "createdAt": 1781838608865,
+    "updatedAt": 1781883939999,
+    "latestVersion": {
+      "version": "1.0.3",
+      "createdAt": 1781883939999,
+      "changelog": "- 新增 references/about.md 文件，作为平台背景与权威信息参考，一律通过文档查找权威解答（如被问“靠谱吗”“专家怎么样”时引用该文件内容）。\n- 更新说明手册，指明被询问资质、专家等时需引用 about.md，不得自拟描述。\n- 其它功能与流程未做更动，脚本及客户端操作保持原状。",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "jd-trending",
+    "displayName": "京东自营实时热销榜",
+    "summary": "提供实时热销频道商品查询工具，展示当前畅销好货，仅筛选京东自营商品，已精选好评≥98%、销量≥2000的品质商品，支持按品类关键词、价格筛选和多种排序，结果不足时自动降级保证推荐数量。",
+    "description": "提供实时热销频道商品查询工具，展示当前畅销好货，仅筛选京东自营商品，已精选好评≥98%、销量≥2000的品质商品，支持按品类关键词、价格筛选和多种排序，结果不足时自动降级保证推荐数量。",
+    "tags": {
+      "latest": "0.3.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1781883153547,
+    "updatedAt": 1781883612311,
+    "latestVersion": {
+      "version": "0.3.1",
+      "createdAt": 1781883612311,
+      "changelog": "更新名称和描述：去掉零配置即装即用，仅筛选京东自营商品，标注好评≥98%+销量≥2000",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "jd-99-baoyou",
+    "displayName": "京东自营9.9包邮",
+    "summary": "提供9.9包邮频道商品查询工具，展示超值低价好货，仅筛选京东自营商品，已精选好评≥98%、销量≥2000的品质商品，支持按品类关键词、价格筛选和多种排序，结果不足时自动降级保证推荐数量。",
+    "description": "提供9.9包邮频道商品查询工具，展示超值低价好货，仅筛选京东自营商品，已精选好评≥98%、销量≥2000的品质商品，支持按品类关键词、价格筛选和多种排序，结果不足时自动降级保证推荐数量。",
+    "tags": {
+      "latest": "0.3.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1781882171711,
+    "updatedAt": 1781883601811,
+    "latestVersion": {
+      "version": "0.3.1",
+      "createdAt": 1781883601811,
+      "changelog": "更新名称和描述：去掉零配置即装即用，仅筛选京东自营商品，标注好评≥98%+销量≥2000",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "jd-seckill",
+    "displayName": "京东自营秒杀",
+    "summary": "提供京东秒杀频道商品查询工具，展示限时秒杀好货，仅筛选京东自营商品，已精选好评≥98%、销量≥5000的品质商品，支持按品类关键词、价格筛选和多种排序，结果不足时自动降级保证推荐数量。",
+    "description": "提供京东秒杀频道商品查询工具，展示限时秒杀好货，仅筛选京东自营商品，已精选好评≥98%、销量≥5000的品质商品，支持按品类关键词、价格筛选和多种排序，结果不足时自动降级保证推荐数量。",
+    "tags": {
+      "latest": "0.3.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1781881506157,
+    "updatedAt": 1781883590411,
+    "latestVersion": {
+      "version": "0.3.1",
+      "createdAt": 1781883590411,
+      "changelog": "更新名称和描述：去掉零配置即装即用，仅筛选京东自营商品，标注好评≥98%+销量≥5000",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "atomicmail",
+    "displayName": "Atomic Mail",
+    "summary": "Read and write email through the Atomic Mail from an AI agent. Handles proof-of-work authentication and JMAP so the agent thinks in JMAP method calls. Use wh...",
+    "description": "Read and write email through the Atomic Mail from an AI agent. Handles proof-of-work authentication and JMAP so the agent thinks in JMAP method calls. Use when the user asks to register an email inbox, list mailboxes, fetch or send email.",
+    "tags": {
+      "latest": "0.3.20-rc1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 181,
+      "installsAllTime": 6,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 12
+    },
+    "createdAt": 1781519210236,
+    "updatedAt": 1781883007522,
+    "latestVersion": {
+      "version": "0.3.20-rc1",
+      "createdAt": 1781883007522,
+      "changelog": "Release 0.3.20-rc1",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "model-provider-support",
+    "displayName": "Model Provider Support",
+    "summary": "Answer official-doc-grounded support questions about Claude, OpenAI/GPT, and Gemini model availability across Bedrock, Vertex AI, Azure, OpenAI, and Gemini API.",
+    "description": "Answer official-doc-grounded support questions about Claude, OpenAI/GPT, and Gemini model availability across Bedrock, Vertex AI, Azure, OpenAI, and Gemini API.",
+    "tags": {
+      "latest": "0.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781882927441,
+    "updatedAt": 1781882927441,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1781882927441,
+      "changelog": "Initial release: official-source registry, provider-difference rules, capability taxonomy, QA cases, and source validation script for Claude/GPT/Gemini hosted provider support questions.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "cb-customer-journey-mapper",
+    "displayName": "Cb Customer Journey Mapper",
+    "summary": "Map complete customer journeys for any overseas market — with localized touchpoints, cultural buying triggers, and conversion barriers. Output a visual-ready...",
+    "description": "Map complete customer journeys for any overseas market — with localized touchpoints, cultural buying triggers, and conversion barriers. Output a visual-ready journey map, not just theory — complete with pain points, opportunities, and channel recommendations.",
+    "tags": {
+      "latest": "1.0.4"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 298,
+      "installsAllTime": 11,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 4
+    },
+    "createdAt": 1777094037783,
+    "updatedAt": 1781882747936,
+    "latestVersion": {
+      "version": "1.0.4",
+      "createdAt": 1781882747936,
+      "changelog": "- Added _meta.json file for improved metadata management.\n- Updated SKILL.md: added version and tags fields in the front matter.\n- Removed deprecated skill-card.md file.\n- No changes to core functionality or user-facing behavior.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "workspace-git-setup",
+    "displayName": "Workspace Git Setup",
+    "summary": "One-command Git tracking setup for any working directory, with a security-focused .gitignore (credentials, TLS/SSH private keys, tokens, runtime caches & PID...",
+    "description": "One-command Git tracking setup for any working directory, with a security-focused .gitignore (credentials, TLS/SSH private keys, tokens, runtime caches & PIDs, node_modules, Python caches, build artifacts, editor temp files), a large-file guard (>10MB), and a read-only --audit mode that detects tracked secrets, untracked files, and core.autocrlf misconfiguration. Three modes: (1) init — git init + safe .gitignore + first commit; (2) --audit — read-only health check (no mutations); (3) --dry-run — preview every change without applying. Reads Git identity from GIT_AUTHOR_NAME/GIT_AUTHOR_EMAIL env vars > existing git config > interactive prompt; falls back to the email prefix when only the email is provided. Workspace path resolution: CLI arg > WORKSPACE_DIR env var > current directory. Default branch is main; sets core.autocrlf=input to avoid CRLF false diffs. Trigger this skill when the user says any of: 'add git to my project', 'init git', 'git init', 'track my changes', 'version history', 'back up my workspace', 'is my repo healthy', 'audit my git repo', 'any secrets in git', 'find untracked files', 'fix git config', 'workspace git setup', 'workspace-git-setup' — or 「给项目加 git」「初始化 git」「记录我的改动」「追踪变更历史」「保存历史版本」「项目怎么做版本管理」「我改了很多东西怕丢，帮我备份」「检查 git 有没有问题」「巡检 git」「有没有敏感文件进 git」「检测漏跟踪的文件」「.gitignore 规则过期了」「修复 git 配置」 — or any other phrasing that expresses the intent to add version tracking, audit a repo's health, or guard against accidental secret leaks.",
+    "tags": {
+      "latest": "1.0.3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 4
+    },
+    "createdAt": 1781876198612,
+    "updatedAt": 1781882686650,
+    "latestVersion": {
+      "version": "1.0.3",
+      "createdAt": 1781882686650,
+      "changelog": "UGLIC fixes: realpath fallback for macOS, Author/Repo/License in SKILL.md, better dry-run hint",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "sonoscli",
+    "displayName": "Sonoscli",
+    "summary": "Control Sonos speakers (discover/status/play/volume/group).",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 84943,
+      "installsAllTime": 2796,
+      "installsCurrent": 2775,
+      "stars": 55,
+      "versions": 1
+    },
+    "createdAt": 1767545381030,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545381030,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "gog",
+    "displayName": "Gog",
+    "summary": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 36,
+      "downloads": 186555,
+      "installsAllTime": 5424,
+      "installsCurrent": 3652,
+      "stars": 926,
+      "versions": 1
+    },
+    "createdAt": 1767545346060,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545346060,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "github",
+    "displayName": "Github",
+    "summary": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 7,
+      "downloads": 190859,
+      "installsAllTime": 7586,
+      "installsCurrent": 4505,
+      "stars": 637,
+      "versions": 1
+    },
+    "createdAt": 1767545344344,
+    "updatedAt": 1781268517834,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545344344,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "weather",
+    "displayName": "Weather",
+    "summary": "Get current weather and forecasts (no API key required).",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 6,
+      "downloads": 161349,
+      "installsAllTime": 6447,
+      "installsCurrent": 3900,
+      "stars": 417,
+      "versions": 1
+    },
+    "createdAt": 1767545394459,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545394459,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-whisper",
+    "displayName": "Openai Whisper",
+    "summary": "Local speech-to-text with the Whisper CLI (no API key).",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 2,
+      "downloads": 84881,
+      "installsAllTime": 2951,
+      "installsCurrent": 2124,
+      "stars": 325,
+      "versions": 1
+    },
+    "createdAt": 1767545365755,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545365755,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "skill-creator",
+    "displayName": "Skill Creator",
+    "summary": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.",
+    "description": null,
+    "tags": {
+      "latest": "0.1.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 92190,
+      "installsAllTime": 3373,
+      "installsCurrent": 2502,
+      "stars": 320,
+      "versions": 1
+    },
+    "createdAt": 1769522677376,
+    "updatedAt": 1778987225295,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1769522677376,
+      "changelog": "Initial release of skill-creator, a comprehensive guide for designing modular skills to extend Claude’s capabilities.\n\n- Introduces principles for creating effective, concise, and domain-specific skills.\n- Explains modular structure: required SKILL.md and optional scripts, references, and assets folders.\n- Outlines guidelines for what to include (and exclude) in a skill package.\n- Details progressive disclosure design for efficient context management.\n- Provides reference patterns for organizing content and bundling resources.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "notion",
+    "displayName": "Notion",
+    "summary": "Notion API for creating and managing pages, databases, and blocks.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 92908,
+      "installsAllTime": 3186,
+      "installsCurrent": 2424,
+      "stars": 260,
+      "versions": 1
+    },
+    "createdAt": 1767545360889,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545360889,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "obsidian",
+    "displayName": "Obsidian",
+    "summary": "Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 9,
+      "downloads": 103337,
+      "installsAllTime": 4090,
+      "installsCurrent": 2614,
+      "stars": 431,
+      "versions": 1
+    },
+    "createdAt": 1767545362143,
+    "updatedAt": 1779137320034,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545362143,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "gemini",
+    "displayName": "Gemini",
+    "summary": "Gemini CLI for one-shot Q&A, summaries, and generation.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 5,
+      "downloads": 34620,
+      "installsAllTime": 1466,
+      "installsCurrent": 1462,
+      "stars": 56,
+      "versions": 1
+    },
+    "createdAt": 1767545316392,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545316392,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "mcporter",
+    "displayName": "Mcporter",
+    "summary": "Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 67519,
+      "installsAllTime": 2166,
+      "installsCurrent": 2040,
+      "stars": 194,
+      "versions": 1
+    },
+    "createdAt": 1767545355897,
+    "updatedAt": 1779137319429,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545355897,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "nano-banana-pro",
+    "displayName": "Nano Banana Pro",
+    "summary": "Generate/edit images with Nano Banana Pro (Gemini 3 Pro Image). Use for image create/modify requests incl. edits. Supports text-to-image + image-to-image; 1K/2K/4K; use --input-image.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 103646,
+      "installsAllTime": 3081,
+      "installsCurrent": 1895,
+      "stars": 405,
+      "versions": 2
+    },
+    "createdAt": 1767545358090,
+    "updatedAt": 1779137307565,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767651987917,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "model-usage",
+    "displayName": "Model Usage",
+    "summary": "Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a scriptable per-model summary from codexbar cost JSON.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 38266,
+      "installsAllTime": 1587,
+      "installsCurrent": 1582,
+      "stars": 114,
+      "versions": 1
+    },
+    "createdAt": 1767667639455,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767667639455,
+      "changelog": "- Initial release of the model-usage skill for summarizing per-model usage and cost from CodexBar CLI local cost logs.\n- Supports both Codex and Claude providers.\n- Allows fetching summaries for the current (most recent) model or all models.\n- Provides both text and JSON output formats.\n- Can process costs directly from CodexBar CLI output or from a JSON file/stdin.\n- Includes guidance for CLI use and script automation.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "darwin"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "video-frames",
+    "displayName": "Video Frames",
+    "summary": "Extract frames or short clips from videos using ffmpeg.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 52428,
+      "installsAllTime": 1600,
+      "installsCurrent": 1596,
+      "stars": 129,
+      "versions": 1
+    },
+    "createdAt": 1767545391700,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545391700,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "blogwatcher",
+    "displayName": "Blogwatcher",
+    "summary": "Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 43256,
+      "installsAllTime": 1506,
+      "installsCurrent": 1500,
+      "stars": 70,
+      "versions": 1
+    },
+    "createdAt": 1767545299849,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545299849,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "nano-pdf",
+    "displayName": "Nano Pdf",
+    "summary": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 113310,
+      "installsAllTime": 4325,
+      "installsCurrent": 2650,
+      "stars": 260,
+      "versions": 1
+    },
+    "createdAt": 1767545359433,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545359433,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "session-logs",
+    "displayName": "Session-logs",
+    "summary": "Search and analyze your own session logs (older/parent conversations) using jq.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 41751,
+      "installsAllTime": 1664,
+      "installsCurrent": 1456,
+      "stars": 30,
+      "versions": 1
+    },
+    "createdAt": 1770136427000,
+    "updatedAt": 1778486000320,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1770136427000,
+      "changelog": "Initial release of session-logs.\n\n- Enables searching and analyzing your session logs (past conversations) with jq and ripgrep (rg).\n- Provides bash command examples for session discovery, keyword searches, extracting messages, cost summaries, and tool usage breakdowns.\n- Documents JSONL session file structure, roles, and content types.\n- Lists session log file locations and naming conventions.\n- Includes tips for managing and querying large, append-only session histories.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "himalaya",
+    "displayName": "Himalaya",
+    "summary": "CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 46017,
+      "installsAllTime": 1546,
+      "installsCurrent": 1542,
+      "stars": 69,
+      "versions": 1
+    },
+    "createdAt": 1767954271328,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767954271328,
+      "changelog": "Initial release of Himalaya CLI email client skill.\n\n- Provides terminal-based email management via IMAP/SMTP.\n- Supports listing, reading, composing, replying, forwarding, searching, and organizing emails.\n- Includes multi-account support and message composition with MML.\n- Detailed setup and configuration instructions included.\n- Enables handling attachments, output customization, and debugging via logging.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "sag",
+    "displayName": "Sag",
+    "summary": "ElevenLabs text-to-speech with mac-style say UX.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 27028,
+      "installsAllTime": 1264,
+      "installsCurrent": 1260,
+      "stars": 26,
+      "versions": 1
+    },
+    "createdAt": 1767545376535,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545376535,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "ELEVENLABS_API_KEY",
+          "required": true
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "goplaces",
+    "displayName": "Goplaces",
+    "summary": "Query Google Places API (New) via the goplaces CLI for text search, place details, resolve, and reviews. Use for human-friendly place lookup or JSON output for scripts.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 22895,
+      "installsAllTime": 1252,
+      "installsCurrent": 1249,
+      "stars": 30,
+      "versions": 1
+    },
+    "createdAt": 1767545347454,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545347454,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "GOOGLE_PLACES_API_KEY",
+          "required": true
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "slack",
+    "displayName": "Slack",
+    "summary": "Use when you need to control Slack from Clawdbot via the slack tool, including reacting to messages or pinning/unpinning items in Slack channels or DMs.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 12,
+      "downloads": 48086,
+      "installsAllTime": 1484,
+      "installsCurrent": 1434,
+      "stars": 158,
+      "versions": 1
+    },
+    "createdAt": 1767545378002,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545378002,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "peekaboo",
+    "displayName": "Peekaboo",
+    "summary": "Capture and automate macOS UI with the Peekaboo CLI.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 4,
+      "downloads": 30492,
+      "installsAllTime": 1344,
+      "installsCurrent": 1342,
+      "stars": 83,
+      "versions": 1
+    },
+    "createdAt": 1767545373660,
+    "updatedAt": 1779137309055,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545373660,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "darwin"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-image-gen",
+    "displayName": "Openai Image Gen",
+    "summary": "Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 24643,
+      "installsAllTime": 1123,
+      "installsCurrent": 1121,
+      "stars": 37,
+      "versions": 2
+    },
+    "createdAt": 1767545364210,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767652000401,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "tmux",
+    "displayName": "Tmux",
+    "summary": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 29380,
+      "installsAllTime": 1410,
+      "installsCurrent": 1406,
+      "stars": 43,
+      "versions": 1
+    },
+    "createdAt": 1767545387948,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545387948,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "darwin",
+        "linux"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "gifgrep",
+    "displayName": "Gifgrep",
+    "summary": "Search GIF providers with CLI/TUI, download results, and extract stills/sheets.",
+    "description": null,
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 18660,
+      "installsAllTime": 1218,
+      "installsCurrent": 1212,
+      "stars": 7,
+      "versions": 2
+    },
+    "createdAt": 1767488226016,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767545342229,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-whisper-api",
+    "displayName": "Openai Whisper Api",
+    "summary": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
+    "description": null,
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 25967,
+      "installsAllTime": 1183,
+      "installsCurrent": 1179,
+      "stars": 52,
+      "versions": 1
+    },
+    "createdAt": 1767545368103,
+    "updatedAt": 1779137313987,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545368103,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "OPENAI_API_KEY",
+          "required": true
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  }
+]
