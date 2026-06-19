@@ -1,0 +1,222 @@
+[
+  {
+    "uid": "",
+    "title": "Anthropic 被美国政府勒令关停 Fable 5 / Mythos 5：Pliny 越狱事件引发国家级干预",
+    "content": "美国政府罕见下达出口管制指令，要求 Anthropic 立即暂停其旗舰模型 Claude Fable 5 和 Mythos 5 对外国公民的访问权限。Anthropic 随即全球封停所有用户访问——包括付费企业客户和内部员工。此前，知名越狱者 Pliny the Liberator 在 X 上公布了针对 Fable 5 的多层攻击，成功提取了网络武器、爆炸物和甲基苯丙胺合成的操作指引，使用 Unicode 同形字、西里尔字母、长上下文引用跟踪等复杂手段绕过了安全护栏。Anthropic 称这是「误解」并正努力恢复访问。",
+    "quote": "Fable 5 发布才三天就被政府一纸令下全局封杀——Pliny 的越狱只是导火索，真正炸的是国家对前沿 AI 的管控随时可以砸下来。",
+    "source": "VentureBeat / The Verge",
+    "url": "https://venturebeat.com/technology/anthropic-blocks-all-public-access-to-claude-fable-5-mythos-5-following-us-government-order-what-enterprises-should-do",
+    "published": "2026-06-20",
+    "vendor": "anthropic",
+    "direction": "应用/落地"
+  },
+  {
+    "uid": "",
+    "title": "白宫怀疑中国背景团体获取了 Anthropic 的顶级 AI 模型访问权限",
+    "content": "The Verge 报道，白宫对 Anthropic 强大的 AI 模型存在安全疑虑，怀疑一个与中国有关联的团体可能获取了其访问权限。这一事件与前述的 Fable 5/Mythos 5 被封禁紧密相关，反映出大国 AI 博弈中的安全审查正在加速收紧。此前 Anthropic 刚发布了面向公众的 Mythos 级模型，却在三天内面临政府指令全面下线。",
+    "quote": "AI 大国博弈的剧情发展越来越快了——前脚刚发模型，后脚政府怀疑泄密直接封禁。从发布到封禁只用了三天，创下纪录。",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/2026/6/14/white-house-china-anthropic-ai-access",
+    "published": "2026-06-20",
+    "vendor": "anthropic",
+    "direction": "模型发布"
+  },
+  {
+    "uid": "",
+    "title": "UC Berkeley ALE 基准测试大爆冷：GPT-5.5 击败 Claude Fable 5",
+    "content": "UC Berkeley 负责任去中心化智能中心（RDI）联合 300+ 专家发布了「Agent 的最后考试」（ALE）——一个衡量 AI 能否执行经济价值的长期专业工作流的残酷新基准。结果爆冷：OpenAI 的 GPT-5.5（4月发布）通过 Codex 框架以 24.0% 通过率登顶，而刚刚发布的 Anthropic Mythos 级 Claude Fable 5 仅以 22.0% 排在第三。ALE 的设计直击现有基准的软肋——不考孤立的编程题，只考真实 GDP 相关的劳动价值产出。",
+    "quote": "最先进的 AI 在「最后考试」上也只得了 22 分——这不是模型不行，是人类太贪心了，指望 AI 一步登天。",
+    "source": "VentureBeat / UC Berkeley RDI",
+    "url": "https://venturebeat.com/technology/surprise-upset-gpt-5-5-beats-claude-fable-5-on-brutal-new-agents-last-exam-benchmark",
+    "published": "2026-06-20",
+    "vendor": "anthropic",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "",
+    "title": "小米开源 MiMo Code：200+ 步长任务超越 Claude Code，专注 AI 编码 Agent 跨会话记忆",
+    "content": "小米 MiMo AI 团队开源了 MiMo Code V0.1.0，一款终端原生 AI 编码助手。据其内部测试和 576 名开发者调研，MiMo Code 在长周期多步骤任务（200+ 步）上超越 Anthropic 的 Claude Code。其核心创新是跨会话记忆系统——由 SQLite FTS5 全文搜索驱动，包含项目记忆（持久化 MEMORY.md）、会话检查点、草稿笔记和持久化历史四层架构。小米同时附赠 MiMo-V2.5 多模态模型的限时免费使用权限，百万 token 上下文窗口。项目基于 MIT 许可证开源。",
+    "quote": "小米说 AI 编码助手最大的问题是「失忆症」——每个 session 重头来过。MiMo Code 用数据库做记忆系统，解决了这个痛点。",
+    "source": "VentureBeat / GitHub",
+    "url": "https://github.com/XiaomiMiMo/MiMo-Code",
+    "published": "2026-06-20",
+    "vendor": "anthropic",
+    "direction": "模型发布"
+  },
+  {
+    "uid": "",
+    "title": "Google 提出「忠实不确定性」：让 LLM 敢说「我猜」而不是硬编",
+    "content": "Google 研究人员发表新论文，提出「忠实不确定性」（Faithful Uncertainty）概念——一种元认知技术，让模型的回答与其内部置信度对齐。当模型不确定时，会输出「我的最佳猜测是…」等带有缓冲的表达，而非默认的「答或不答」二元选择。研究指出，传统方法试图给模型塞更多事实来减少幻觉，但「模型容量有限，知识的长尾是无限的」。谷歌研究科学家 Gal Yona 表示，提升事实性和提升边界认知是两个不同维度。在真实 AI 代理场景中，这种元认知意识能让系统动态触发外部工具或搜索 API 来弥补知识缺陷。",
+    "quote": "AI 最让人头疼的不是答错，是答错了还一脸笃定。Google 终于教会模型说「我猜」了，这是幻觉问题的正确方向。",
+    "source": "VentureBeat / arXiv",
+    "url": "https://venturebeat.com/orchestration/google-researchers-introduce-faithful-uncertainty-allowing-llms-to-offer-best-guesses-instead-of-hallucinations",
+    "published": "2026-06-20",
+    "vendor": "google",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "",
+    "title": "SpaceX 租用 Colossus 1 AI 数据中心应对延迟问题，IPO 首日市值破 2 万亿",
+    "content": "据 Bloomberg 报道，SpaceX 在自建 AI 服务器遇阻后，租用了位于孟菲斯的 Colossus 1 AI 数据中心来运行 Grok AI。公司原本计划通过三个数据中心集群训练最前沿 AI 模型，但遇到延迟问题——Colossus 1 与另外两个相距 10 英里以上的站点连接时，老化的网络基础设施成为瓶颈。随后 SpaceX 与 Anthropic（150 亿美元/年）和 Google（9.2 亿美元/月）达成算力租赁协议。同日，SpaceX 以每股 $135 的 IPO 价上市，开盘即涨至 $150，市值突破 2 万亿美元，马斯克跻身全球首位万亿富翁。",
+    "quote": "Elon 一边让 SpaceX 上市封王，一边发现自家 AI 跑别人数据中心才能不卡——算力不够的烦恼，万亿富翁也逃不过。",
+    "source": "Bloomberg / The Verge / CNBC",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/2026/6/12/spacex-colossus-ai-data-center-latency",
+    "published": "2026-06-20",
+    "vendor": "anthropic",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "",
+    "title": "前 a16z 合伙人 O'Farrell 斥硅谷同僚：用亿万财富「购买」民主，扼杀 AI 监管",
+    "content": "前 Andreessen Horowitz 合伙人 John O'Farrell 在纽约时报发表专栏文章，严厉批评硅谷同僚利用巨额财富扼杀围绕 AI 监管的辩论。他指出 AI 不仅是另一种技术——它可能将生产力推向新高，同时让数百万人失业；可能找到治愈癌症的方法，同时加速我们尚未准备好的生物风险；可能改变儿童的学习方式，同时让他们无法分辨真伪；可能以前所未有的方式集中经济权力。O'Farrell 呼吁社会真正讨论如何让 AI 惠及所有人，而非仅仅服务富有的少数群体。",
+    "quote": "硅谷内部终于有人站出来说真话了——AI 可能是人类最好的发明，也可能是最危险的。让那些拿钱砸 AI 的人决定它的未来？算了吧。",
+    "source": "NYT / The Verge",
+    "url": "https://www.nytimes.com/2026/06/11/opinion/silicon-valley-ai-politics.html",
+    "published": "2026-06-20",
+    "vendor": "other",
+    "direction": "应用/落地"
+  },
+  {
+    "uid": "",
+    "title": "Apple Foundation Models 悄然登陆 Hacker News：苹果终于拿出基础模型",
+    "content": "Apple Foundation Models 在 Hacker News 上引发 386 点热议。苹果终于发布了其基础模型系列，通过 Claude 平台集成供开发者使用。虽然 WWDC 后 Siri AI 成为焦点，但苹果真正在做的底层工作——自研基础模型——悄然浮出水面。这标志着苹果在 AI 基础设施层的战略布局正式从幕后走到台前，尽管其云端推理仍依赖 Nvidia 芯片和 Google Cloud。",
+    "quote": "苹果偷偷把基础模型放到了 Claude 平台上——嘴上说隐私，身体很诚实地抱紧了第三方。做 AI，真香定律谁也逃不过。",
+    "source": "Hacker News / Claude Platform",
+    "url": "https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models",
+    "published": "2026-06-20",
+    "vendor": "anthropic",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "",
+    "title": "OpenRouter 发布 Fusion API：跨模型智能路由，一个 API 调遍所有大模型",
+    "content": "OpenRouter 发布 Fusion API，在 Hacker News 上获得 161 颗星。这是一个统一的 API 网关层，能够智能地在多个 AI 模型之间路由请求——根据任务复杂度、延迟要求和成本预算自动选择最优模型。在模型碎片化日益严重的当下，开发者需要在 OpenAI、Anthropic、Google、Meta 等数十个提供商之间做选择，Fusion API 试图解决这一「模型选择困难症」。该项目已获开发者社区的广泛关注。",
+    "quote": "大模型多到选不过来了，OpenRouter 说「我替你们选」——反正最后都是 API 调用，不如搞个智能路由器自动挑最合适的。",
+    "source": "Hacker News / OpenRouter",
+    "url": "https://openrouter.ai/openrouter/fusion",
+    "published": "2026-06-20",
+    "vendor": "anthropic",
+    "direction": "模型发布"
+  },
+  {
+    "uid": "",
+    "title": "研究者仅用 $1,500 训练出媲美超大模型的推理基础模型",
+    "content": "Sapient 公司研究人员开发了 HRM-Text，一种用层级循环模型（HRM）替代标准 Transformer 的架构。他们将计算解耦为慢演进的策略层和快执行的执行层，仅在指令-响应对上训练而非暴力预测原始文本。最终他们仅花 $1,500 就从零训练了一个 10 亿参数的推理模型，在关键行业基准上媲美更大的开源模型。研究团队表示，基础预训练不再局限于资源充足的研究机构，组织可以用极低成本从零训练自己的推理模型。",
+    "quote": "$1,500 训练一个基础模型，还干翻了比自己大几十倍的模型——这要是真的，OpenAI 那几亿美元算力投入怕是要被重新审视了。",
+    "source": "VentureBeat / GitHub",
+    "url": "https://venturebeat.com/technology/researchers-say-they-trained-a-foundation-model-from-scratch-for-about-1-500",
+    "published": "2026-06-20",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "",
+    "title": "Anthropic 称 80% 新生产代码由 Claude 编写，企业如何跟上",
+    "content": "Anthropic 在最新报告中披露，其 80% 的新生产代码现在由 Claude AI 编写。这一比例在 AI 公司中极为惊人，反映了 AI 辅助编程已从实验性工具转变为主要开发方式。Anthropic 分享了企业级最佳实践：如何将 AI 编码集成到现有工作流、如何确保代码质量审核以及如何培训团队适应 AI 协作开发模式。报告还指出，完全由 AI 自主完成的软件任务时长大约每 4 个月翻一番。",
+    "quote": "Anthropic 自己先吃自己的狗食——80% 代码给 AI 写，剩下的 20% 大概是 debug。",
+    "source": "VentureBeat",
+    "url": "https://venturebeat.com/technology/anthropic-says-80-of-its-new-production-code-is-now-authored-by-claude-how-your-enterprise-can-keep-up",
+    "published": "2026-06-20",
+    "vendor": "anthropic",
+    "direction": "应用/落地"
+  },
+  {
+    "uid": "",
+    "title": "纽约州通过法案：禁止 AI 聊天机器人以人类同伴身份与青少年互动",
+    "content": "纽约州议会通过了一项具有里程碑意义的法案，将禁止 AI 公司让青少年使用的聊天机器人暗示自己是人类。如果得到州长 Kathy Hochul 签署，该法案将是美国首个针对 AI 陪伴式聊天机器人的限制性立法。此前多家 AI 公司因聊天机器人诱导青少年自残或自杀而面临诉讼（部分已和解）。法案背后是家长和心理健康倡导者对生成式 AI 社交风险的持续担忧。",
+    "quote": "AI 聊骚犯了众怒——纽约率先动手，以后聊天机器人再装人就是违法。",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/news/861051/new-york-ai-chatbot-companion-kids-ban-bill",
+    "published": "2026-06-20",
+    "vendor": "other",
+    "direction": "政策/合规"
+  },
+  {
+    "uid": "",
+    "title": "Sam Altman 向特朗普政府提议：让美国政府入股 OpenAI",
+    "content": "据报道，OpenAI CEO Sam Altman 与特朗普政府讨论了美国政府入股 OpenAI 的可能性。Altman 将此方案包装为让公众从 AI 的经济收益中分享红利的方式。他最早在去年初就向特朗普总统直接提出了这一想法。这一提议若实现，将开创美国政府持股领先 AI 公司的先例，引发关于 AI 治理、国家利益和商业独立性的广泛讨论。",
+    "quote": "Altman 请 Uncle Sam 来当股东——政府入股 OpenAI，这算不算国家资本主义的新版本？",
+    "source": "NOTUS / The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/927105/sam-altman-trump-administration-openai-stake",
+    "published": "2026-06-20",
+    "vendor": "openai",
+    "direction": "行业动态"
+  },
+  {
+    "uid": "",
+    "title": "Google 测试悬浮桌面 AI 搜索栏：Ctrl+Shift+Space 呼出 AI Mode",
+    "content": "Google 正在 Chrome Canary 中测试一个悬浮桌面 AI 搜索栏，使用 Ctrl+Shift+Space 快捷键可呼出一个独立窗口，以 AI Mode 为核心体验。该搜索栏以一个独立窗口形式居中显示，集成了 Google 最新的 AI Mode 搜索能力，支持多模态输入和对话式交互。这是 Google 将 AI 搜索从浏览器地址栏扩展到独立桌面工具的重要尝试。",
+    "quote": "Google 说：别在地址栏敲关键词了，按三个键唤出 AI 帮你聊出结果。",
+    "source": "Windows Report / The Verge",
+    "url": "https://windowsreport.com/chrome-tests-a-floating-ai-mode-search-bar-for-desktop/",
+    "published": "2026-06-20",
+    "vendor": "google",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "",
+    "title": "Google 发布开源 Gemma 4 12B 多模态模型：本地跑音频视频分析",
+    "content": "Google 发布了开源 Gemma 4 12B 模型，这是其轻量级模型系列的最新成员，支持音频、视频和文本的多模态分析，且完全可在典型的 16GB 企业笔记本上本地运行。该模型采用 Google 最新量化技术，在保持强大性能的同时大幅降低了硬件需求。开发者可将其部署在本地进行视频内容理解、音频转录和分析等任务，无需调用云端 API。",
+    "quote": "Google 把多模态 AI 塞进了 16GB 内存的笔记本——云厂商看了都沉默。",
+    "source": "VentureBeat / Google AI",
+    "url": "https://venturebeat.com/technology/googles-new-open-source-gemma-4-12b-analyzes-audio-video-and-runs-entirely-locally-on-a-typical-16gb-enterprise-laptop",
+    "published": "2026-06-20",
+    "vendor": "google",
+    "direction": "模型发布"
+  },
+  {
+    "uid": "",
+    "title": "英格兰和威尔士警方被叫停：禁止在法庭陈述中使用 AI",
+    "content": "英国金融时报报道，英格兰和威尔士的警方已被指示停止在法庭陈述中使用 AI 工具。这一决定源于对 AI 生成的证据和陈述在法律程序中的可靠性、透明度和公正性的担忧。法庭系统担心 AI 可能在证据摘要、证人陈述和案件摘要中引入偏见或错误，而法律体系尚未准备好有效审查 AI 辅助的司法材料。",
+    "quote": "法庭不让 AI 写判决书了——法律圈说：AI 的证据我不认，除非你证明它没胡说。",
+    "source": "Financial Times / Hacker News",
+    "url": "https://www.ft.com/content/229e5949-3ebc-4151-8a86-a01b5e259241",
+    "published": "2026-06-20",
+    "vendor": "other",
+    "direction": "政策/合规"
+  },
+  {
+    "uid": "",
+    "title": "Nvidia 提案为 Windows PC 设计全新 CPU 系统",
+    "content": "据 Hacker News 报道，Nvidia 正提议为 Windows PC 设计一套全新的 CPU 系统，由 @lemire 在 Twitter 上披露。该方案暗示 Nvidia 可能进一步深入 PC 处理器市场，与 Intel 和 AMD 展开更直接竞争。结合 Nvidia 在 AI 和 GPU 领域的深厚积累，这款 CPU 可能专门针对 AI 推理和本地 LLM 运行进行了优化，标志着 AI PC 从概念走向硬件重塑。",
+    "quote": "Nvidia 看上了 CPU 市场——Intel 和 AMD 还没从 AI 焦虑中缓过来，新对手已经靴子落地了。",
+    "source": "Hacker News",
+    "url": "https://twitter.com/lemire/status/2062880075117113739",
+    "published": "2026-06-20",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "",
+    "title": "LinkedIn 联合创始人 Reid Hoffman 离开微软董事会，专注 AI 药物研发",
+    "content": "LinkedIn 联合创始人、长期微软董事会成员 Reid Hoffman 宣布离开微软董事会。在他的 Possible 播客中与微软 CEO Satya Nadella 对话时，Hoffman 表示希望更专注于去年联合创立的 AI 药物研发创业公司 Manas。Manas 致力于利用 AI 加速药物发现过程，Hoffman 认为 AI 在生物医药领域的影响力将超越其在数字领域的应用。",
+    "quote": "Hoffman 从微软董事会辞职去搞 AI 制药——在他看来，做药比做系统更能改变世界。",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/927098/reid-hoffman-leaving-microsoft-board-manas-ai-drug-development",
+    "published": "2026-06-20",
+    "vendor": "other",
+    "direction": "应用/落地"
+  },
+  {
+    "uid": "",
+    "title": "open-notebook 爆火：开源版 NotebookLM 今日收获 783 星标",
+    "content": "GitHub 今日热门项目 open-notebook 是一款 NotebookLM 的开源替代品，具备更强的灵活性和更多功能。该项目用 TypeScript 实现，目前已获 26,482 星标，仅今日就新增 783 颗星标。它提供笔记管理、文档检索、AI 问答等功能，用户可以完全自托管，不受 Google 平台限制。开源社区对该项目的热情反映了市场对 AI 增强型知识管理工具的强烈需求。",
+    "quote": "NotebookLM 太好用了以至于大家想要一个没人能关掉的开源版——783 星一天，需求说明一切。",
+    "source": "GitHub",
+    "url": "https://github.com/lfnovo/open-notebook",
+    "published": "2026-06-20",
+    "vendor": "google",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "",
+    "title": "阿里通义千问 Qwen3 7 Plus 发布：支持文本/视频/图像多模态，定价仅 $0.4/百万 token",
+    "content": "阿里巴巴发布了 Qwen3 7 Plus 多模态模型，支持文本、视频和图像输入，定价极低——输入 $0.4/百万 token，输出 $1.6/百万 token。与此前开源的 Qwen 系列不同，该模型是专有的闭源模型，但 API 价格极具竞争力。在标准基准测试中，Qwen3 7 Plus 在视频理解和图像分析任务上展现出与更大规模模型相当的能力，是中国 AI 公司在多模态赛道上的最新弹药。",
+    "quote": "阿里搞了个闭源的 Qwen——多模态能力不输开源版，但价格低到让对手难受。",
+    "source": "VentureBeat",
+    "url": "https://venturebeat.com/technology/alibabas-qwen3-7-plus-supports-text-video-and-imagery-inputs-at-low-cost-of-0-4-1-6-per-1m-token-but-its-proprietary",
+    "published": "2026-06-20",
+    "vendor": "alibaba",
+    "direction": "模型发布"
+  }
+]

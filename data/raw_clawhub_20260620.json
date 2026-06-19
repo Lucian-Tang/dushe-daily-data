@@ -1,5 +1,563 @@
 [
   {
+    "slug": "baoyu-design",
+    "displayName": "Baoyu Design",
+    "summary": "Create polished design artifacts as self-contained HTML: UI mockups, interactive prototypes, wireframes, landing pages, dashboards, app screens, mobile apps,...",
+    "description": "Create polished design artifacts as self-contained HTML: UI mockups, interactive prototypes, wireframes, landing pages, dashboards, app screens, mobile apps, slide decks (a.k.a. PPT / PowerPoint presentations), and visual explorations. Use whenever the user asks to design, mock up, prototype, wireframe, visualize, explore, or make a PPT/deck for an interface, product screen, user flow, content layout, visual artifact, or pitch/deck concept, even if they do not say \"design\". Also use to export a deck built with this skill to PowerPoint (PPT/PPTX) — but only decks authored here (deck-stage / this skill's slide-structured HTML), NOT arbitrary HTML, so confirm the target is such a deck first. Also use for setting up, importing, or authoring reusable design systems, UI kits, brand tokens, or component libraries. Harness-agnostic for Claude Code, Cursor, Codex Agent, and similar file-capable agents.",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 74,
+      "installsAllTime": 3,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1781752977541,
+    "updatedAt": 1781890742318,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1781890742318,
+      "changelog": "Default PPTX export to editable mode; add generate-images dispatcher and wire it across flows; fix collapsed full-bleed slide wrappers in make-a-deck; preserve Unicode (CJK) characters in PPTX/video export filenames.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "insurance-advisor-china",
+    "displayName": "Insurance Advisor China",
+    "summary": "中国大陆AI保险顾问。为个人和家庭提供全方位的保险咨询、产品对比、方案设计、投保指导。当用户询问保险配置、保险方案、产品对比、重疾险/医疗险/寿险/意外险/储蓄险推荐、保费计算、保障缺口分析、需求分析、核保合规、理赔等问题时使用。",
+    "description": "中国大陆AI保险顾问。为个人和家庭提供全方位的保险咨询、产品对比、方案设计、投保指导。当用户询问保险配置、保险方案、产品对比、重疾险/医疗险/寿险/意外险/储蓄险推荐、保费计算、保障缺口分析、需求分析、核保合规、理赔等问题时使用。",
+    "tags": {
+      "latest": "1.8.254",
+      "advisor": "1.8.144",
+      "ai": "1.8.144",
+      "china": "1.8.144",
+      "family-protection": "1.8.144",
+      "financial": "1.0.0",
+      "insurance": "1.8.144",
+      "medical": "1.8.144",
+      "product-comparison": "1.8.144"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 2486,
+      "installsAllTime": 70,
+      "installsCurrent": 2,
+      "stars": 1,
+      "versions": 82
+    },
+    "createdAt": 1776478519391,
+    "updatedAt": 1781890645517,
+    "latestVersion": {
+      "version": "1.8.254",
+      "createdAt": 1781890645517,
+      "changelog": "auto publish v1.8.254",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "ai-insurance-advisor",
+    "displayName": "Ai Insurance Advisor",
+    "summary": "中国大陆保险AI助手。当用户询问以下内容时使用：保险配置、保险方案、产品对比、重疾险/医疗险/寿险/意外险/储蓄险推荐、保费计算、保障缺口分析、需求分析、核保合规、理赔、朋友圈文案、培训话术、代理人展业支持。",
+    "description": "中国大陆保险AI助手。当用户询问以下内容时使用：保险配置、保险方案、产品对比、重疾险/医疗险/寿险/意外险/储蓄险推荐、保费计算、保障缺口分析、需求分析、核保合规、理赔、朋友圈文案、培训话术、代理人展业支持。",
+    "tags": {
+      "latest": "1.8.257",
+      "advisor": "1.8.144",
+      "agent-assistant": "1.8.4",
+      "ai": "1.8.144",
+      "china": "1.8.144",
+      "financial": "1.8.0",
+      "insurance": "1.8.144"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 2754,
+      "installsAllTime": 77,
+      "installsCurrent": 2,
+      "stars": 1,
+      "versions": 94
+    },
+    "createdAt": 1775530517208,
+    "updatedAt": 1781890594735,
+    "latestVersion": {
+      "version": "1.8.257",
+      "createdAt": 1781890594735,
+      "changelog": "auto publish v1.8.257",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "career-planner-china",
+    "displayName": "Career Planner China",
+    "summary": "AI时代职业规划师技能。专为AI时代职场变化而设计，帮助用户应对AI带来的职业冲击与机遇。当用户询问职业规划、职业建议、选专业、职场转型、未来就业方向时触发。功能包括：收集用户基本信息、霍兰德职业兴趣测评、职业价值观分析、AI时代职业影响评估（高危/中危/低危分级），并输出完整的个性化职业规划报告。关键词：职业规...",
+    "description": "AI时代职业规划师技能。专为AI时代职场变化而设计，帮助用户应对AI带来的职业冲击与机遇。当用户询问职业规划、职业建议、选专业、职场转型、未来就业方向时触发。功能包括：收集用户基本信息、霍兰德职业兴趣测评、职业价值观分析、AI时代职业影响评估（高危/中危/低危分级），并输出完整的个性化职业规划报告。关键词：职业规划、选专业、工作建议、做什么工作好、职业转型、AI时代职业、AI替代、哪些工作会被AI取代。",
+    "tags": {
+      "latest": "2.2.106",
+      "ai": "2.1.7",
+      "career": "2.1.7",
+      "china": "2.1.7",
+      "job": "2.1.7",
+      "planner": "2.1.7"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 2625,
+      "installsAllTime": 74,
+      "installsCurrent": 3,
+      "stars": 0,
+      "versions": 90
+    },
+    "createdAt": 1776479773918,
+    "updatedAt": 1781890557784,
+    "latestVersion": {
+      "version": "2.2.106",
+      "createdAt": 1781890557784,
+      "changelog": "auto publish v2.2.106",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "ai-era-career-planner",
+    "displayName": "Ai Era Career Planner",
+    "summary": "AI时代职业规划师技能。专为AI时代职场变化而设计，帮助用户应对AI带来的职业冲击与机遇。当用户询问职业规划、职业建议、选专业、职场转型、未来就业方向时触发。功能包括：收集用户基本信息、霍兰德职业兴趣测评、职业价值观分析、AI时代职业影响评估（高危/中危/低危分级），并输出完整的个性化职业规划报告。关键词：职业规...",
+    "description": "AI时代职业规划师技能。专为AI时代职场变化而设计，帮助用户应对AI带来的职业冲击与机遇。当用户询问职业规划、职业建议、选专业、职场转型、未来就业方向时触发。功能包括：收集用户基本信息、霍兰德职业兴趣测评、职业价值观分析、AI时代职业影响评估（高危/中危/低危分级），并输出完整的个性化职业规划报告。关键词：职业规划、选专业、工作建议、做什么工作好、职业转型、AI时代职业、AI替代、哪些工作会被AI取代。",
+    "tags": {
+      "latest": "2.1.120",
+      "ai": "2.1.7",
+      "career": "2.1.7",
+      "china": "2.1.7",
+      "job": "2.1.7",
+      "planner": "2.1.7"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 3391,
+      "installsAllTime": 96,
+      "installsCurrent": 3,
+      "stars": 0,
+      "versions": 94
+    },
+    "createdAt": 1775913135977,
+    "updatedAt": 1781890507522,
+    "latestVersion": {
+      "version": "2.1.120",
+      "createdAt": 1781890507522,
+      "changelog": "auto publish v2.1.120",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "illo",
+    "displayName": "Illo",
+    "summary": "Creates original editorial illustrations where a recurring mascot character performs the idea — one caught scene by default, a hand-built explainer diagram (...",
+    "description": "Creates original editorial illustrations where a recurring mascot character performs the idea — one caught scene by default, a hand-built explainer diagram (a flow, fan-out, timeline, loop, or stack) when the structure itself is the point, or a transparent character cutout (pose-only compositing asset, no scene or text) — in one of twelve bundled print looks. Triggers only when the skill is directly invoked or \"illo\" is requested; never on generic illustrate / draw / make-an-image requests.",
+    "tags": {
+      "latest": "0.24.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 315,
+      "installsAllTime": 9,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 14
+    },
+    "createdAt": 1781278051491,
+    "updatedAt": 1781890010692,
+    "latestVersion": {
+      "version": "0.24.0",
+      "createdAt": 1781890010692,
+      "changelog": "Publish illo 0.24.0 from 2f2ba733290433860816bf3e00cf6e795b478fb0",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "macos",
+        "linux"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "lounge-guru-map",
+    "displayName": "Lounge Guru Map",
+    "summary": "Use this skill when you need offline or air-gapped access to a bundled airport lounge catalog across participating lounge programs and sources. Trigger it fo...",
+    "description": "Use this skill when you need offline or air-gapped access to a bundled airport lounge catalog across participating lounge programs and sources. Trigger it for any lounge lookup, facility filtering, airport lounge briefs, and lounge comparisons when network access is unavailable or disallowed. Do not use it for data rebuilds, deploys, remote MCP endpoints, arbitrary shell execution, or any workflow that depends on live internet access.",
+    "tags": {
+      "airport": "1.3.27",
+      "latest": "1.3.27",
+      "lounges": "1.3.27",
+      "mcp": "1.3.27",
+      "offline": "1.3.27",
+      "travel": "1.3.27"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1781889909446,
+    "updatedAt": 1781890000409,
+    "latestVersion": {
+      "version": "1.3.27",
+      "createdAt": 1781890000409,
+      "changelog": "Broaden introduction and guidance from Priority Pass-specific wording to any covered airport lounge in the bundled offline catalog.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "recipe",
+    "displayName": "Recipe",
+    "summary": "Use when an approved spec or design needs to become an implementation plan, after mise and before any code. Also use when the user says \"write the plan\", \"pl...",
+    "description": "Use when an approved spec or design needs to become an implementation plan, after mise and before any code. Also use when the user says \"write the plan\", \"plan this out\", or the work will be executed later, by someone else, or in a fresh session.",
+    "tags": {
+      "latest": "1.0.1",
+      "skillet": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781889964405,
+    "updatedAt": 1781889964405,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1781889964405,
+      "changelog": "Skillet v0.4.0 distribution pass",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "publish-readiness",
+    "displayName": "Publish Readiness",
+    "summary": "Use before making a private repository public, before the first push of a new public repo, or when the user asks \"is this safe to publish\", \"check for leaks\"...",
+    "description": "Use before making a private repository public, before the first push of a new public repo, or when the user asks \"is this safe to publish\", \"check for leaks\", or wants a pre-publication scan. Also use after discovering identifying content already leaked into a public repo's history.",
+    "tags": {
+      "latest": "1.0.0",
+      "skillet": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781889958098,
+    "updatedAt": 1781889958098,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781889958098,
+      "changelog": "Skillet v0.4.0 distribution pass",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "pressure-test",
+    "displayName": "Pressure Test",
+    "summary": "Use when an idea, plan, design, or scope needs to be stress-tested before anyone builds it, when the user says \"pressure test this\", \"poke holes in this\", or...",
+    "description": "Use when an idea, plan, design, or scope needs to be stress-tested before anyone builds it, when the user says \"pressure test this\", \"poke holes in this\", or wants the fuzzy parts made concrete. Also use in sous mode when the user hands off and says to answer the open questions yourself, figure it out, or that they are going AFK.",
+    "tags": {
+      "latest": "1.0.0",
+      "skillet": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781889953065,
+    "updatedAt": 1781889953065,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781889953065,
+      "changelog": "Skillet v0.4.0 distribution pass",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "pass",
+    "displayName": "Pass",
+    "summary": "Use before opening a pull request, before running gh pr create, or before pushing follow-up commits to an existing PR. Also use when the user asks \"is this P...",
+    "description": "Use before opening a pull request, before running gh pr create, or before pushing follow-up commits to an existing PR. Also use when the user asks \"is this PR ready\", \"should I file this\", or wants a change inspected before it goes out for review.",
+    "tags": {
+      "latest": "1.0.1",
+      "skillet": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781889945848,
+    "updatedAt": 1781889945848,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1781889945848,
+      "changelog": "Skillet v0.4.0 distribution pass",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "mise",
+    "displayName": "Mise",
+    "summary": "Use before any creative or build work - a new feature, component, behavior change, or \"let's build X\" - to turn an idea into a design the user approved and a...",
+    "description": "Use before any creative or build work - a new feature, component, behavior change, or \"let's build X\" - to turn an idea into a design the user approved and a written spec, before a line of code. Mise en place for engineering: everything designed and in its place before you cook. Pairs with pressure-test for hardening decisions and hands off to recipe.",
+    "tags": {
+      "latest": "1.0.1",
+      "skillet": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781889940404,
+    "updatedAt": 1781889940404,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1781889940404,
+      "changelog": "Skillet v0.4.0 distribution pass",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "grill",
+    "displayName": "Grill",
+    "summary": "Use when a technical writeup, blog post, war story, or \"Show HN\" is about to go to Hacker News, Lobsters, or any skeptical technical audience, or when the us...",
+    "description": "Use when a technical writeup, blog post, war story, or \"Show HN\" is about to go to Hacker News, Lobsters, or any skeptical technical audience, or when the user says \"grill this\", \"make it HN-ready\", \"harden this post\", \"is this ready to post\", \"will this survive the comments\". Hardens facts, sourcing, voice, and comment-readiness. Not for identity/infra leak scrubbing (use plate) or repo publication (use publish-readiness).",
+    "tags": {
+      "latest": "1.0.0",
+      "skillet": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781889913202,
+    "updatedAt": 1781889913202,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781889913202,
+      "changelog": "Skillet v0.4.0 distribution pass",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "demi",
+    "displayName": "Demi",
+    "summary": "Use before implementing, scaffolding, prototyping, or adding a feature when the work should start with the smallest useful code path, avoid speculative archi...",
+    "description": "Use before implementing, scaffolding, prototyping, or adding a feature when the work should start with the smallest useful code path, avoid speculative architecture, or prevent overbuilding before reduce would be needed.",
+    "tags": {
+      "latest": "1.0.0",
+      "skillet": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781889900687,
+    "updatedAt": 1781889900687,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781889900687,
+      "changelog": "Skillet v0.4.0 distribution pass",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "check",
+    "displayName": "Check",
+    "summary": "Use when about to claim anything works, is fixed, is complete, or passes - before committing, replying to the user, or moving to the next task. Also use when...",
+    "description": "Use when about to claim anything works, is fixed, is complete, or passes - before committing, replying to the user, or moving to the next task. Also use when relaying a subagent's or tool's success report, and especially at the end of a long session when the pull to say \"done\" is strongest.",
+    "tags": {
+      "latest": "1.0.1",
+      "skillet": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781889895881,
+    "updatedAt": 1781889895881,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1781889895881,
+      "changelog": "Skillet v0.4.0 distribution pass",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "cb-local-partnership-assessor",
+    "displayName": "Cb Local Partnership Assessor",
+    "summary": "Evaluate overseas distributors, agencies, resellers, and ecosystem partners in minutes. Get weighted scorecards, due-diligence checklists, commercial model c...",
+    "description": "Evaluate overseas distributors, agencies, resellers, and ecosystem partners in minutes. Get weighted scorecards, due-diligence checklists, commercial model comparisons, and pilot plans with exit guardrails — not generic advice, but ready-to-use assessment frameworks.",
+    "tags": {
+      "latest": "1.0.3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 296,
+      "installsAllTime": 11,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 4
+    },
+    "createdAt": 1777094050700,
+    "updatedAt": 1781889415185,
+    "latestVersion": {
+      "version": "1.0.3",
+      "createdAt": 1781889415185,
+      "changelog": "- Added _meta.json file for expanded metadata support.\n- SKILL.md updated with new metadata fields (version, tags).\n- Removed outdated skill-card.md file.\n- No changes to the skill’s core logic or usage.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "smyx-reptile-shedding-progress-analysis",
+    "displayName": "Reptile Shedding Progress Analysis | 爬宠蜕皮进度识别",
+    "summary": "Through a fixed camera in the reptile enclosure, the system periodically captures full-body high-definition images of reptiles (snakes, lizards, geckos) and...",
+    "description": "Through a fixed camera in the reptile enclosure, the system periodically captures full-body high-definition images of reptiles (snakes, lizards, geckos) and uses AI visual analysis to detect changes in body colour (normal vivid → dull/whitish → restored vivid) and eye state (clear → opaque milky 'blue-phase' → clear again), to determine the shedding phase: preparation phase (skin turns whitish, eyes turn opaque), in-progress. | 通过爬宠箱固定摄像头，定期拍摄爬行动物（如蛇、蜥蜴、守宫）的全身高清图像，利用 AI 视觉分析技术检测体表颜色变化（正常体色 → 发白/灰白 → 恢复鲜艳）以及眼部状态（透明 → 浑浊灰白 → 再次透明），判断蜕皮阶段：准备期（皮肤发白、眼睛浑浊）、进行期（头部或局部开始蜕皮）、完成期（旧皮完全脱离，体色恢复）。系统每日或每半日自动分析，输出蜕皮阶段及护理建议。",
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 125,
+      "installsAllTime": 5,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780920934367,
+    "updatedAt": 1781889214924,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1781889214924,
+      "changelog": "- Updated skill version to 1.0.2 and added MIT-0 license.\n- Adjusted config.yaml path lookup priority for open-id acquisition: now checks scripts/config.yaml in the skill root directory before the previous common location.\n- Updated documentation to reflect the new open-id config path and removed directory-specific paths from the instructions.\n- Removed the outdated skill-card.md documentation file.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "refacil-pay-setup",
+    "displayName": "Refacil Pay Setup",
+    "summary": "Install and set up the Refácil Pay CLI (refacil-pay-cli) — the official payments CLI for Colombia (Refácil, Refácil Pay, Super Pagos): cash-in, cash-out, pay...",
+    "description": "Install and set up the Refácil Pay CLI (refacil-pay-cli) — the official payments CLI for Colombia (Refácil, Refácil Pay, Super Pagos): cash-in, cash-out, payment links, PSE, Bre-B, Nequi, Daviplata, recargas, QR interoperable. This skill is a one-time bootstrap: it installs the npm package and lets the agent self-configure the package's operating skill into its own environment, then hands off. · Instalar y configurar refacil-pay-cli, el CLI oficial de pagos de Refácil Pay (fintech Colombia). Úsala para: instalación / configuración / setup / \"agregar Refácil Pay\", \"conectar pasarela de pagos Colombia\". No la uses para ejecutar cobros o pagos — de eso se encarga la skill operativa que esta instala.",
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781888615231,
+    "updatedAt": 1781888615231,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781888615231,
+      "changelog": "Initial bootstrap skill: installs refacil-pay-cli and self-configures via AGENTS.md",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "REFACIL_PAY_CLI_NO_SKILLS",
+          "required": false
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "memegen-rs",
+    "displayName": "memegen-rs",
+    "summary": "Generate meme images from memegen.rs by building a URL. The template and caption text go straight into the URL path, and the response is the image (PNG or an...",
+    "description": "Generate meme images from memegen.rs by building a URL. The template and caption text go straight into the URL path, and the response is the image (PNG or animated GIF). Use when asked to make a meme, caption an image, or produce a shareable meme link.",
+    "tags": {
+      "latest": "0.1.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 79,
+      "installsAllTime": 3,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1781778663953,
+    "updatedAt": 1781887006163,
+    "latestVersion": {
+      "version": "0.1.2",
+      "createdAt": 1781887006163,
+      "changelog": "memegen-rs v0.1.2 - https://github.com/tenequm/memegen-rs/releases/tag/v0.1.2",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "darwin",
+        "linux"
+      ],
+      "systems": null
+    }
+  },
+  {
     "slug": "renesas-search",
     "displayName": "Renesas Search",
     "summary": "Search and recommend Renesas semiconductor solutions for embedded system design. Triggers ONLY when the user explicitly mentions \"Renesas\" (or \"瑞萨\") OR names...",
@@ -191,547 +749,6 @@
       "os": null,
       "systems": null
     }
-  },
-  {
-    "slug": "circulus-map-offline",
-    "displayName": "Air Route Calculator - Projected Flight Maps",
-    "summary": "Use when the user wants aviation route maps, ETOPS-aware route analysis, projection comparisons, airport lookup, or SVG map rendering through a local Circulu...",
-    "description": "Use when the user wants aviation route maps, ETOPS-aware route analysis, projection comparisons, airport lookup, or SVG map rendering through a local Circulus Map MCP server. Prefer this skill for offline or bundled setups that run against a localhost MCP worker, including quick-query route solving (`JFK-LHR`, `800nm@DEN`) and building or validating `MapSpecV1` payloads before rendering.",
-    "tags": {
-      "aviation": "1.3.24",
-      "latest": "1.3.24",
-      "maps": "1.3.24",
-      "mcp": "1.3.24",
-      "offline": "1.3.24",
-      "travel": "1.3.24"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 477,
-      "installsAllTime": 18,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 6
-    },
-    "createdAt": 1774069874183,
-    "updatedAt": 1781885208995,
-    "latestVersion": {
-      "version": "1.3.24",
-      "createdAt": 1781885208995,
-      "changelog": "Privacy refactor: remove hosted destination disclosures and operator identifiers; clarify localhost-only offline setup.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "all-routes-offline",
-    "displayName": "Global Flight Route Map - Airport Connections",
-    "summary": "Use local All Routes APIs, repo-backed handlers, and optional local MCP for airport, airline, route-map, timetable-context, and dataset-health lookups withou...",
-    "description": "Use local All Routes APIs, repo-backed handlers, and optional local MCP for airport, airline, route-map, timetable-context, and dataset-health lookups without hosted credentials. Use when route discovery must stay grounded in this repo and work without the hosted All Routes MCP server.",
-    "tags": {
-      "aviation": "1.3.24",
-      "latest": "1.3.24",
-      "mcp": "1.3.24",
-      "offline": "1.3.24",
-      "routes": "1.3.24",
-      "travel": "1.3.24"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 556,
-      "installsAllTime": 21,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 6
-    },
-    "createdAt": 1774069876682,
-    "updatedAt": 1781885202468,
-    "latestVersion": {
-      "version": "1.3.24",
-      "createdAt": 1781885202468,
-      "changelog": "Privacy refactor: remove hosted destination disclosures and operator identifiers; keep offline/local guardrails.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "discount-optimizer",
-    "displayName": "Discount Optimizer",
-    "summary": "Calculate optimal discount levels based on unit cost, conversion targets, and inventory velocity so promos move product without destroying margin.",
-    "description": "Calculate optimal discount levels based on unit cost, conversion targets, and inventory velocity so promos move product without destroying margin.",
-    "tags": {
-      "latest": "1.1.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 434,
-      "installsAllTime": 16,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1774692514092,
-    "updatedAt": 1781885148680,
-    "latestVersion": {
-      "version": "1.1.0",
-      "createdAt": 1781885148680,
-      "changelog": "v1.1.0 — Major expansion from an instruction-only skill into a full operator playbook: added a Quick Reference decision table, a Solves section, a detailed 7-step workflow, two fully worked examples with verified margin and break-even math, and an expanded common-mistakes section. Added reference guides (output-template, margin-math-guide, promo-mechanics-guide) and a quality checklist.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "review-analyzer",
-    "displayName": "Review Analyzer",
-    "summary": "Extract sentiment patterns, repeated pain points, and feature requests from customer reviews to prioritize product fixes and copy improvements.",
-    "description": "Extract sentiment patterns, repeated pain points, and feature requests from customer reviews to prioritize product fixes and copy improvements.",
-    "tags": {
-      "latest": "1.1.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 507,
-      "installsAllTime": 19,
-      "installsCurrent": 1,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1774692555466,
-    "updatedAt": 1781885055030,
-    "latestVersion": {
-      "version": "1.1.0",
-      "createdAt": 1781885055030,
-      "changelog": "v1.1.0 — Major expansion from an instruction-only skill into a full operator playbook: added a Quick Reference decision table, a Solves section, a detailed 7-step workflow, two fully worked examples with realistic review data and aspect-sentiment math, and an expanded common-mistakes section. Added reference guides (output-template, sentiment-coding-guide, pain-point-taxonomy) and a quality checklist.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "jd-selection",
-    "displayName": "京东精选",
-    "summary": "零配置即装即用，提供京东商品搜索、频道推荐、猜你喜欢、类目浏览和促销活动查询5项工具，覆盖数码家电、超市百货、母婴玩具、美妆穿搭等全品类，基于京东官方数据。",
-    "description": "零配置即装即用，提供京东商品搜索、频道推荐、猜你喜欢、类目浏览和促销活动查询5项工具，覆盖数码家电、超市百货、母婴玩具、美妆穿搭等全品类，基于京东官方数据。",
-    "tags": {
-      "latest": "1.0.1"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 73,
-      "installsAllTime": 3,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 3
-    },
-    "createdAt": 1781787280331,
-    "updatedAt": 1781884942254,
-    "latestVersion": {
-      "version": "1.0.1",
-      "createdAt": 1781787392992,
-      "changelog": "优化摘要和概述描述，移除不必要的信息",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "feedback-roadmap",
-    "displayName": "Feedback Roadmap",
-    "summary": "Convert customer feedback, review themes, and complaint clusters into product improvement priorities with clear rationale and urgency ranking.",
-    "description": "Convert customer feedback, review themes, and complaint clusters into product improvement priorities with clear rationale and urgency ranking.",
-    "tags": {
-      "latest": "1.1.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 433,
-      "installsAllTime": 16,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1774708844744,
-    "updatedAt": 1781884931271,
-    "latestVersion": {
-      "version": "1.1.0",
-      "createdAt": 1781884931271,
-      "changelog": "v1.1.0 — Major expansion from an instruction-only skill into a full operator playbook: added a Quick Reference decision table, a Solves section, a detailed 7-step workflow, two fully worked examples with realistic data and scoring math, and an expanded common-mistakes section. Added reference guides (output-template, prioritization-frameworks, feedback-clustering-guide) and a quality checklist.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "speediance",
-    "displayName": "Speediance Gym Monster",
-    "summary": "Read completed workouts (summaries and full per-set detail), browse and export the exercise catalog, and push custom training programs to your Speediance (Gy...",
-    "description": "Read completed workouts (summaries and full per-set detail), browse and export the exercise catalog, and push custom training programs to your Speediance (Gym Monster) smart cable machine via its cloud API. Authenticates with your account credentials, caches a session token in your OS user-cache directory (override with SPEEDIANCE_TOKEN_CACHE), and makes outbound HTTPS requests to the Speediance cloud API. Reads and emits structured data — the caller decides where to store it. Ships as a single static binary — no Python or other runtime required.",
-    "tags": {
-      "latest": "1.0.6"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 171,
-      "installsAllTime": 6,
-      "installsCurrent": 1,
-      "stars": 1,
-      "versions": 7
-    },
-    "createdAt": 1781619277174,
-    "updatedAt": 1781884850697,
-    "latestVersion": {
-      "version": "1.0.6",
-      "createdAt": 1781884850697,
-      "changelog": "### Version 1.0.6 of the Speediance skill introduces a new agent-friendly session summary command.\n\n- Added `today` command to retrieve all workout sessions for the current (or a specified) day in a normalized, type-agnostic format.\n- Improved session detail output: `session <id>` now identifies the session type (`kind: program | free | \"\"`) and emits unmodified API data per type.\n- Updated help/docs to recommend `today` as the easiest way to fetch recent activity without worrying about session types (program, free lift, or cardio).\n- Unified and clarified data fields, providing a consistent shape for automated consumers.\n- Minor documentation and structural updates; `skill-card.md` removed.",
-      "license": null
-    },
-    "metadata": {
-      "setup": [
-        {
-          "key": "SPEEDIANCE_EMAIL",
-          "required": true
-        },
-        {
-          "key": "SPEEDIANCE_PASSWORD",
-          "required": true
-        },
-        {
-          "key": "SPEEDIANCE_REGION",
-          "required": false
-        },
-        {
-          "key": "SPEEDIANCE_DEVICE_TYPE",
-          "required": false
-        },
-        {
-          "key": "SPEEDIANCE_CONFIG",
-          "required": false
-        },
-        {
-          "key": "SPEEDIANCE_TOKEN_CACHE",
-          "required": false
-        }
-      ],
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "support-scripts",
-    "displayName": "Support Scripts",
-    "summary": "Build a pre-written response library for common customer service inquiries, complaints, and order issues that maintains tone and reduces resolution time.",
-    "description": "Build a pre-written response library for common customer service inquiries, complaints, and order issues that maintains tone and reduces resolution time.",
-    "tags": {
-      "latest": "1.1.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 403,
-      "installsAllTime": 15,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1774708882694,
-    "updatedAt": 1781884697481,
-    "latestVersion": {
-      "version": "1.1.0",
-      "createdAt": 1781884547821,
-      "changelog": "v1.1.0 — Major expansion from an instruction-only skill into a full operator playbook. Added a Quick Reference decision table (Strong/Acceptable/Weak), a Solves section, a detailed 7-step workflow, two fully worked examples with realistic data, and an expanded common-mistakes section. Added reference files (references/output-template.md, references/scenario-library.md, references/tone-and-policy-guide.md) and a 47-item quality checklist (assets/quality-checklist.md).",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "jd-super-deals",
-    "displayName": "京东自营超级补贴",
-    "summary": "零配置即装即用，提供京东超级补贴商品查询工具，展示超级补贴频道的精选补贴好货，只展示京东自营和旗舰店商品，支持按品类关键词和价格筛选，适合寻找大额补贴优惠商品。",
-    "description": "零配置即装即用，提供京东超级补贴商品查询工具，展示超级补贴频道的精选补贴好货，只展示京东自营和旗舰店商品，支持按品类关键词和价格筛选，适合寻找大额补贴优惠商品。",
-    "tags": {
-      "latest": "1.0.1"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 73,
-      "installsAllTime": 3,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 4
-    },
-    "createdAt": 1781791875328,
-    "updatedAt": 1781884063270,
-    "latestVersion": {
-      "version": "1.0.1",
-      "createdAt": 1781792079675,
-      "changelog": "更新名称为京东自营超级补贴，突出只展示京东自营和旗舰店商品",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "jd-lowest-price",
-    "displayName": "京东自营历史最低价",
-    "summary": "零配置即装即用，提供京东历史最低价商品查询工具，展示正处于历史最低价格的商品，只展示京东自营和旗舰店商品，支持按品类关键词、价格筛选和多种排序，适合抄底捡漏。",
-    "description": "零配置即装即用，提供京东历史最低价商品查询工具，展示正处于历史最低价格的商品，只展示京东自营和旗舰店商品，支持按品类关键词、价格筛选和多种排序，适合抄底捡漏。",
-    "tags": {
-      "latest": "1.0.1"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 81,
-      "installsAllTime": 3,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 4
-    },
-    "createdAt": 1781787416709,
-    "updatedAt": 1781884062718,
-    "latestVersion": {
-      "version": "1.0.1",
-      "createdAt": 1781796818392,
-      "changelog": "更新名称为京东自营历史最低价，拉取全部数据(约1100条)，只展示自营和旗舰店商品，支持翻页、稀缺提醒、分类导览、品牌匹配、多种排序(到手价/降价幅度)",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "jd-new-arrivals",
-    "displayName": "京东自营新品首发",
-    "summary": "零配置即装即用，提供京东新品首发查询工具，展示最新上架商品，只展示京东自营和旗舰店商品，支持国补优惠和以旧换新，按品类关键词和价格筛选，适合追新品。",
-    "description": "零配置即装即用，提供京东新品首发查询工具，展示最新上架商品，只展示京东自营和旗舰店商品，支持国补优惠和以旧换新，按品类关键词和价格筛选，适合追新品。",
-    "tags": {
-      "latest": "1.0.1"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 80,
-      "installsAllTime": 3,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 4
-    },
-    "createdAt": 1781787424852,
-    "updatedAt": 1781884061976,
-    "latestVersion": {
-      "version": "1.0.1",
-      "createdAt": 1781792482022,
-      "changelog": "更新名称为京东自营新品首发，只展示京东自营和旗舰店商品，支持翻页浏览、稀缺提醒、模糊关键词匹配",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "jianding-system",
-    "displayName": "收藏雅集网-古董鉴定估价",
-    "summary": "收藏雅集网在线鉴定 —— 帮用户提交藏品鉴定订单、获取支付二维码、查看鉴定结果。支持微信小程序和非微信终端双环境。Use when user mentions \"鉴定\", \"估价\", \"藏品\", \"古玩\", \"帮我看看\", \"值多少钱\".",
-    "description": "收藏雅集网在线鉴定 —— 帮用户提交藏品鉴定订单、获取支付二维码、查看鉴定结果。支持微信小程序和非微信终端双环境。Use when user mentions \"鉴定\", \"估价\", \"藏品\", \"古玩\", \"帮我看看\", \"值多少钱\".",
-    "tags": {
-      "latest": "1.0.3"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 47,
-      "installsAllTime": 2,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 5
-    },
-    "createdAt": 1781838608865,
-    "updatedAt": 1781883939999,
-    "latestVersion": {
-      "version": "1.0.3",
-      "createdAt": 1781883939999,
-      "changelog": "- 新增 references/about.md 文件，作为平台背景与权威信息参考，一律通过文档查找权威解答（如被问“靠谱吗”“专家怎么样”时引用该文件内容）。\n- 更新说明手册，指明被询问资质、专家等时需引用 about.md，不得自拟描述。\n- 其它功能与流程未做更动，脚本及客户端操作保持原状。",
-      "license": null
-    },
-    "metadata": {
-      "setup": [],
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "jd-trending",
-    "displayName": "京东自营实时热销榜",
-    "summary": "提供实时热销频道商品查询工具，展示当前畅销好货，仅筛选京东自营商品，已精选好评≥98%、销量≥2000的品质商品，支持按品类关键词、价格筛选和多种排序，结果不足时自动降级保证推荐数量。",
-    "description": "提供实时热销频道商品查询工具，展示当前畅销好货，仅筛选京东自营商品，已精选好评≥98%、销量≥2000的品质商品，支持按品类关键词、价格筛选和多种排序，结果不足时自动降级保证推荐数量。",
-    "tags": {
-      "latest": "0.3.1"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1781883153547,
-    "updatedAt": 1781883612311,
-    "latestVersion": {
-      "version": "0.3.1",
-      "createdAt": 1781883612311,
-      "changelog": "更新名称和描述：去掉零配置即装即用，仅筛选京东自营商品，标注好评≥98%+销量≥2000",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "jd-99-baoyou",
-    "displayName": "京东自营9.9包邮",
-    "summary": "提供9.9包邮频道商品查询工具，展示超值低价好货，仅筛选京东自营商品，已精选好评≥98%、销量≥2000的品质商品，支持按品类关键词、价格筛选和多种排序，结果不足时自动降级保证推荐数量。",
-    "description": "提供9.9包邮频道商品查询工具，展示超值低价好货，仅筛选京东自营商品，已精选好评≥98%、销量≥2000的品质商品，支持按品类关键词、价格筛选和多种排序，结果不足时自动降级保证推荐数量。",
-    "tags": {
-      "latest": "0.3.1"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1781882171711,
-    "updatedAt": 1781883601811,
-    "latestVersion": {
-      "version": "0.3.1",
-      "createdAt": 1781883601811,
-      "changelog": "更新名称和描述：去掉零配置即装即用，仅筛选京东自营商品，标注好评≥98%+销量≥2000",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "jd-seckill",
-    "displayName": "京东自营秒杀",
-    "summary": "提供京东秒杀频道商品查询工具，展示限时秒杀好货，仅筛选京东自营商品，已精选好评≥98%、销量≥5000的品质商品，支持按品类关键词、价格筛选和多种排序，结果不足时自动降级保证推荐数量。",
-    "description": "提供京东秒杀频道商品查询工具，展示限时秒杀好货，仅筛选京东自营商品，已精选好评≥98%、销量≥5000的品质商品，支持按品类关键词、价格筛选和多种排序，结果不足时自动降级保证推荐数量。",
-    "tags": {
-      "latest": "0.3.1"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1781881506157,
-    "updatedAt": 1781883590411,
-    "latestVersion": {
-      "version": "0.3.1",
-      "createdAt": 1781883590411,
-      "changelog": "更新名称和描述：去掉零配置即装即用，仅筛选京东自营商品，标注好评≥98%+销量≥5000",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "atomicmail",
-    "displayName": "Atomic Mail",
-    "summary": "Read and write email through the Atomic Mail from an AI agent. Handles proof-of-work authentication and JMAP so the agent thinks in JMAP method calls. Use wh...",
-    "description": "Read and write email through the Atomic Mail from an AI agent. Handles proof-of-work authentication and JMAP so the agent thinks in JMAP method calls. Use when the user asks to register an email inbox, list mailboxes, fetch or send email.",
-    "tags": {
-      "latest": "0.3.20-rc1"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 181,
-      "installsAllTime": 6,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 12
-    },
-    "createdAt": 1781519210236,
-    "updatedAt": 1781883007522,
-    "latestVersion": {
-      "version": "0.3.20-rc1",
-      "createdAt": 1781883007522,
-      "changelog": "Release 0.3.20-rc1",
-      "license": null
-    },
-    "metadata": {
-      "setup": [],
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "model-provider-support",
-    "displayName": "Model Provider Support",
-    "summary": "Answer official-doc-grounded support questions about Claude, OpenAI/GPT, and Gemini model availability across Bedrock, Vertex AI, Azure, OpenAI, and Gemini API.",
-    "description": "Answer official-doc-grounded support questions about Claude, OpenAI/GPT, and Gemini model availability across Bedrock, Vertex AI, Azure, OpenAI, and Gemini API.",
-    "tags": {
-      "latest": "0.1.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1781882927441,
-    "updatedAt": 1781882927441,
-    "latestVersion": {
-      "version": "0.1.0",
-      "createdAt": 1781882927441,
-      "changelog": "Initial release: official-source registry, provider-difference rules, capability taxonomy, QA cases, and source validation script for Claude/GPT/Gemini hosted provider support questions.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "cb-customer-journey-mapper",
-    "displayName": "Cb Customer Journey Mapper",
-    "summary": "Map complete customer journeys for any overseas market — with localized touchpoints, cultural buying triggers, and conversion barriers. Output a visual-ready...",
-    "description": "Map complete customer journeys for any overseas market — with localized touchpoints, cultural buying triggers, and conversion barriers. Output a visual-ready journey map, not just theory — complete with pain points, opportunities, and channel recommendations.",
-    "tags": {
-      "latest": "1.0.4"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 298,
-      "installsAllTime": 11,
-      "installsCurrent": 1,
-      "stars": 0,
-      "versions": 4
-    },
-    "createdAt": 1777094037783,
-    "updatedAt": 1781882747936,
-    "latestVersion": {
-      "version": "1.0.4",
-      "createdAt": 1781882747936,
-      "changelog": "- Added _meta.json file for improved metadata management.\n- Updated SKILL.md: added version and tags fields in the front matter.\n- Removed deprecated skill-card.md file.\n- No changes to core functionality or user-facing behavior.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "workspace-git-setup",
-    "displayName": "Workspace Git Setup",
-    "summary": "One-command Git tracking setup for any working directory, with a security-focused .gitignore (credentials, TLS/SSH private keys, tokens, runtime caches & PID...",
-    "description": "One-command Git tracking setup for any working directory, with a security-focused .gitignore (credentials, TLS/SSH private keys, tokens, runtime caches & PIDs, node_modules, Python caches, build artifacts, editor temp files), a large-file guard (>10MB), and a read-only --audit mode that detects tracked secrets, untracked files, and core.autocrlf misconfiguration. Three modes: (1) init — git init + safe .gitignore + first commit; (2) --audit — read-only health check (no mutations); (3) --dry-run — preview every change without applying. Reads Git identity from GIT_AUTHOR_NAME/GIT_AUTHOR_EMAIL env vars > existing git config > interactive prompt; falls back to the email prefix when only the email is provided. Workspace path resolution: CLI arg > WORKSPACE_DIR env var > current directory. Default branch is main; sets core.autocrlf=input to avoid CRLF false diffs. Trigger this skill when the user says any of: 'add git to my project', 'init git', 'git init', 'track my changes', 'version history', 'back up my workspace', 'is my repo healthy', 'audit my git repo', 'any secrets in git', 'find untracked files', 'fix git config', 'workspace git setup', 'workspace-git-setup' — or 「给项目加 git」「初始化 git」「记录我的改动」「追踪变更历史」「保存历史版本」「项目怎么做版本管理」「我改了很多东西怕丢，帮我备份」「检查 git 有没有问题」「巡检 git」「有没有敏感文件进 git」「检测漏跟踪的文件」「.gitignore 规则过期了」「修复 git 配置」 — or any other phrasing that expresses the intent to add version tracking, audit a repo's health, or guard against accidental secret leaks.",
-    "tags": {
-      "latest": "1.0.3"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 1,
-      "versions": 4
-    },
-    "createdAt": 1781876198612,
-    "updatedAt": 1781882686650,
-    "latestVersion": {
-      "version": "1.0.3",
-      "createdAt": 1781882686650,
-      "changelog": "UGLIC fixes: realpath fallback for macOS, Author/Repo/License in SKILL.md, better dry-run hint",
-      "license": null
-    },
-    "metadata": null
   },
   {
     "slug": "sonoscli",
