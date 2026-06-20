@@ -1,0 +1,134 @@
+[
+  {
+    "uid": "",
+    "title": "Arbor 框架：不做无用功的 AI 优化器，性能翻 Claude Code 2.5 倍",
+    "content": "**来源：VentureBeat | 2026-06-18** 中国人民大学与微软研究院联合推出 Arbor，一个将 AI 自主优化从\"瞎试\"升级为\"累积学习\"的框架。Arbor 将假设、实验和洞察组织成树状结构，让系统从失败中学习，避免重复踩坑。在同等计算预算下，Arbor 在真实工程任务中的可验证性能提升是 Claude Code 和 Codex 的 2.5 倍以上。 🔗 https://venturebeat.com/orchestration/new-ai-optimization-framework-beats-claude-code-and-codex-by-2-5x-on-the-same-compute-budget",
+    "quote": "终于有人意识到：让AI原地打转1000次不等于变聪明。",
+    "source": "",
+    "url": "",
+    "published": "2026-06-21",
+    "vendor": "anthropic",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "",
+    "title": "Anthropic 大幅翻新 Claude Design：从\"吃 token 怪兽\"变身企业设计合规平台",
+    "content": "**来源：VentureBeat | 2026-06-17** Anthropic 发布 Claude Design 重大更新，新增设计系统导入功能——用户可从 GitHub 仓库、设计文件直接导入品牌设计规范，Claude 自动遵循组件库输出，超出规范的内容会自动修正。企业管理员可锁定统一设计标准。此前 Claude Design 因疯狂消耗 token 被吐槽——有用户 25 分钟烧掉 80% 的 Pro 配额，这次终于修复了这个问题。 🔗 https://venturebeat.com/technology/anthropic-ships-major-claude-design-overhaul-with-design-system-imports-code-round-trips-and-a-fix-for-its-token-burning-problem",
+    "quote": "先让用户破产再教用户省钱，Anthropic 这波产品节奏有点骚。",
+    "source": "",
+    "url": "",
+    "published": "2026-06-21",
+    "vendor": "anthropic",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "",
+    "title": "Adobe 将智能体 AI 嵌入全系 Creative Cloud：从内容生成到生产编排",
+    "content": "**来源：VentureBeat | 2026-06-18** Adobe 正在将智能体 AI 工作流深度集成到 Creative Cloud 中，从单一的内容生成工具转向完整的\"生产编排\"平台。对 AI 系统架构师来说，创意智能体的价值不仅在于原生应用 UI，更在于可扩展性。目前尚不清楚 Adobe 是否计划通过 API 开放这些新的智能体能力。 🔗 https://venturebeat.com/orchestration/adobe-embeds-agentic-ai-workflows-across-creative-cloud-shifting-from-media-generation-to-production-orchestration",
+    "quote": "Adobe 终于想明白了：AI 不是帮人画图的，是帮人管项目的。",
+    "source": "",
+    "url": "",
+    "published": "2026-06-21",
+    "vendor": "other",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "",
+    "title": "Hypernetwork 新范式：微调会遗忘，RAG 会漏上下文，不如按需生成专家模型",
+    "content": "**来源：VentureBeat | 2026-06-19** 为解决 AI Agent 在长任务中越跑越偏的顽疾，研究者提出 Hypernetwork 方案——不微调大模型也不塞满 Prompt，而是在推理时根据企业策略按需生成一个小型任务专用模型。Sakana AI 的 Text-to-LoRA 和最新的 SHINE 系统展示了这一路径的可行性。微调面临灾难性遗忘，RAG 面临上下文泄露，Hypernetwork 给出了第三条路。 🔗 https://venturebeat.com/orchestration/fine-tuning-forgets-rag-leaks-context-hypernetworks-build-the-model-your-agent-needs-on-demand",
+    "quote": "微调忘得快，RAG 漏得多，Hypernetwork 说：不如当场生个新模型。",
+    "source": "",
+    "url": "",
+    "published": "2026-06-21",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "",
+    "title": "Moebius：0.22B 参数的轻量图像修复框架，性能匹敌 10B 级模型",
+    "content": "**来源：Hugging Face | 2026-06-19** 华中科技大学团队提出 Moebius，仅用 0.22B 参数实现了与 11.9B 参数的工业级模型 FLUX.1-Fill-Dev 相当甚至更优的图像修复质量。通过创新的 Local-λ Mix Interaction 模块和自适应多粒度蒸馏策略，推理速度提升 15 倍以上。参数仅为竞品的 2%，但效果不落下风。 🔗 https://huggingface.co/papers/2606.19195",
+    "quote": "参数少不是病，少到还能打才是真本事——大模型厂商该脸红了。",
+    "source": "",
+    "url": "",
+    "published": "2026-06-21",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "",
+    "title": "DragMesh-2：让机械手学会\"拧\"和\"拉\"的物理合理交互",
+    "content": "**来源：Hugging Face | 2026-06-19** DragMesh-2 提出一种处理与铰接物体（如门把手、抽屉）灵巧交互的新方法。与静态物体操作不同，铰接物体的运动必须通过物理接触自然产生，而不能通过几何轨迹回放。该研究还提出了 PICA 物理信息感知训练机制，无需触觉或力反馈即可提升策略鲁棒性，为人形机器人的精细操作提供关键技术支撑。 🔗 https://huggingface.co/papers/2606.15133",
+    "quote": "你拧门把手觉得简单，AI 为此写了一篇论文——这就是\"常识\"的重量。",
+    "source": "",
+    "url": "",
+    "published": "2026-06-21",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "",
+    "title": "Kairos：面向 Physical AI 的原生世界模型栈",
+    "content": "**来源：Hugging Face | 2026-06-16** Kairos 团队提出了一套原生世界模型栈，包含三大核心设计：跨具身数据课程的原生预训练范式、配备混合线性时序注意力的统一架构、以及低延迟部署感知系统协同设计。理论证明其时间分解机制严格限制了误差累积，能在长时域上保证状态传递的数学可证明性，为 Physical AI 从被动视觉生成器走向主动推理基础设施铺平道路。 🔗 https://huggingface.co/papers/2606.16533",
+    "quote": "世界模型也要\"栈\"了——AI 的基础设施化速度比你想象得快。",
+    "source": "",
+    "url": "",
+    "published": "2026-06-21",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "",
+    "title": "MolmoMotion：用语言指令预测 3D 点轨迹的运动预测模型",
+    "content": "**来源：Hugging Face | 2026-06-18** MolmoMotion 提出将 3D 世界坐标点作为通用运动预测表征，实现与物体类别无关、视角稳定且紧凑的运动预测。团队构建了 MolmoMotion-1M 大规模数据集（来自 116 万段视频）和 PointMotionBench 人工验证基准（111 类物体、61 种运动类型）。模型支持自回归坐标预测和流匹配轨迹生成，显著优于现有基线，且学到的运动先验能迁移到机器人操作和视频生成等下游任务。 🔗 https://huggingface.co/papers/2606.18558",
+    "quote": "给 AI 装一个\"物理直觉\"——看视频就能预测物体怎么动。",
+    "source": "",
+    "url": "",
+    "published": "2026-06-21",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "",
+    "title": "RNG-Bench：多模态大模型的\"记性\"到底行不行？",
+    "content": "**来源：Hugging Face | 2026-06-19** 复旦、港中大等团队推出 RNG-Bench 基准测试，专门评估多模态大模型在非马尔可夫博弈中的记忆能力——即看到的东西消失后能否回忆并据此行动。包含配对翻牌和 3D 迷宫两个游戏，最难配置需要约 128K token 上下文和每轮 350 张图片输入。记忆差距分析表明，绝大多数错误来自\"忘记了\"，而非\"选错了\"。 🔗 https://huggingface.co/papers/2606.19338",
+    "quote": "128K 上下文窗口都喂不饱的\"金鱼脑\"，大模型任重道远。",
+    "source": "",
+    "url": "",
+    "published": "2026-06-21",
+    "vendor": "other",
+    "direction": "模型发布"
+  },
+  {
+    "uid": "",
+    "title": "Guava：让语言模型学会\"动手\"的通用具身操控框架",
+    "content": "**来源：Hugging Face | 2026-06-18** 马里兰大学、UIUC、滑铁卢大学等联合提出 Guava，一个面向具身操控的通用 harness 框架。通过系统探索智能体工作流、动作空间和观测空间的设计空间，识别出三个关键要素：迭代感知-推理-动作循环、语义动作抽象、多模态观测。基于此，团队只用不到 2000 条仿真轨迹就蒸馏出 4B 大小的具身操控模型，性能媲美前沿闭源模型。 🔗 https://huggingface.co/papers/2606.18363",
+    "quote": "2000 条数据训出能动手的模型——数据效率拉满了。",
+    "source": "",
+    "url": "",
+    "published": "2026-06-21",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "",
+    "title": "EfficientRollout：自推测解码加速 RL 强化学习 rollout 生成",
+    "content": "**来源：Hugging Face | 2026-06-18** FuriosaAI 与 UC Berkeley 提出 EfficientRollout，一种系统感知的自推测解码框架，专门用于加速强化学习的 rollout 生成。传统推测解码在 RL 场景中面临策略不断演变和批处理规模缩小的双重挑战。EfficientRollout 用量化自模型做 draftor（无需额外训练），并引入系统感知切换策略和接受率感知的 draft 长度自适应，在计算受限和内存受限模式间智能切换。 🔗 https://huggingface.co/papers/2606.18967",
+    "quote": "RL 训练慢？让模型自己给自己当\"草稿党\"，加速还不用加人。",
+    "source": "",
+    "url": "",
+    "published": "2026-06-21",
+    "vendor": "apple",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "",
+    "title": "LLM-as-Environment-Engineer：让模型自己给自己设计训练环境",
+    "content": "**来源：Hugging Face | 2026-06-18** 提出\"从学徒到导师\"框架——让 LLM 自己诊断失败原因，并据此重新设计强化学习训练环境。在多智能体推理任务上，一个 Qwen3-4B 模型在这种自改进训练框架下超越了包括更大规模闭源模型在内的基线。训练不再是静态的，而是模型在\"学中教，教中学\"的飞轮中持续进化。 🔗 https://huggingface.co/papers/2606.17682 *📊 本期共 12 条，覆盖 Agent 框架、模型压缩、具身智能、世界模型、推理加速等前沿方向。*",
+    "quote": "AI 自己当自己的老师——人类终于可以躺平了？还早。",
+    "source": "",
+    "url": "",
+    "published": "2026-06-21",
+    "vendor": "alibaba",
+    "direction": "研究/论文"
+  }
+]
