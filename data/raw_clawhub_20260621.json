@@ -1,5 +1,91 @@
 [
   {
+    "slug": "smyx-custom-timelapse-analysis",
+    "displayName": "Time-Lapse Album Custom Summarization Skill | 时光相册自定义浓缩分析技能",
+    "summary": "Generates condensed album highlights based on specified keywords or targets. It extracts specific target segments from long videos and compiles them into an...",
+    "description": "Generates condensed album highlights based on specified keywords or targets. It extracts specific target segments from long videos and compiles them into an exciting summary. | 时光相册自定义浓缩分析技能，基于指定关键词/目标生成时光相册浓缩集锦，从长视频中提取特定目标片段，整理生成精彩汇总",
+    "topics": [
+      "汇总"
+    ],
+    "tags": {
+      "latest": "1.0.4"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 563,
+      "installsAllTime": 21,
+      "installsCurrent": 0,
+      "stars": 4,
+      "versions": 5
+    },
+    "createdAt": 1776165688346,
+    "updatedAt": 1781984069224,
+    "latestVersion": {
+      "version": "1.0.4",
+      "createdAt": 1781984069224,
+      "changelog": "- Updated to version 1.0.5 with added license information (MIT-0) in SKILL.md.\n- Modified the open-id retrieval flow: now checks scripts/config.yaml first (within the skill root), instead of skills/smyx_common/scripts/config.yaml.\n- Cleaned and clarified documentation, including configuration file paths and process descriptions.\n- Removed the redundant skill-card.md file.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "canonry",
+    "displayName": "Canonry",
+    "summary": "Agent-first AEO operating platform.",
+    "description": "Agent-first AEO operating platform.",
+    "topics": [],
+    "tags": {
+      "latest": "4.89.0+a4b077a"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 5804,
+      "installsAllTime": 184,
+      "installsCurrent": 4,
+      "stars": 1,
+      "versions": 310
+    },
+    "createdAt": 1774104995898,
+    "updatedAt": 1781983617567,
+    "latestVersion": {
+      "version": "4.89.0+a4b077a",
+      "createdAt": 1781983617567,
+      "changelog": "Sync with canonry v4.89.0 (a4b077a)",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "invoice-compliance-checker",
+    "displayName": "Invoice Compliance Checker",
+    "summary": "Provides structured analysis, templates, and recommendations to assess invoice compliance with regulations and internal policies without executing transactions.",
+    "description": null,
+    "topics": [
+      "Invoice",
+      "Financial"
+    ],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 322,
+      "installsAllTime": 12,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1776570345324,
+    "updatedAt": 1781983438076,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1781983438076,
+      "changelog": "**Changelog for invoice-compliance-checker v1.0.1**\n\n- Added README.md and _meta.json files to provide documentation and metadata.\n- Expanded SKILL.md with usage scenarios, practical compliance examples, and region-specific guidance (including a sample response in Chinese).\n- Added metadata section (slug, version, tags, type, language) to SKILL.md for improved structure and discoverability.\n- No functional changes; updates are documentation and descriptive in nature.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
     "slug": "clawseccheck",
     "displayName": "Clawseccheck",
     "summary": "Free, local, read-only security self-audit for your own OpenClaw agent. Scores your setup (A–F), finds the most urgent holes, and gives copy-paste fixes. No...",
@@ -12,22 +98,22 @@
       "mcp-security"
     ],
     "tags": {
-      "latest": "0.21.0"
+      "latest": "0.25.0"
     },
     "stats": {
       "comments": 0,
-      "downloads": 52,
+      "downloads": 85,
       "installsAllTime": 0,
       "installsCurrent": 0,
       "stars": 0,
-      "versions": 14
+      "versions": 19
     },
     "createdAt": 1781897089573,
-    "updatedAt": 1781977460185,
+    "updatedAt": 1781982683189,
     "latestVersion": {
-      "version": "0.21.0",
-      "createdAt": 1781977460185,
-      "changelog": "Release 0.21.0 (6912765b88196cf871e52d865565e0c16ba8d430)",
+      "version": "0.25.0",
+      "createdAt": 1781982683189,
+      "changelog": "Release 0.25.0 (89f8f0d70cebfd9dc6a4f67135a6c4d4f1a2cff0)",
       "license": null
     },
     "metadata": {
@@ -37,6 +123,476 @@
         "linux",
         "win32"
       ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "personal-budget-planner",
+    "displayName": "Personal Budget Planner",
+    "summary": "Provides personalized budgeting frameworks, templates, and analysis based on income, expenses, goals, and priorities without executing transactions.",
+    "description": null,
+    "topics": [
+      "Personal",
+      "Financial"
+    ],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 325,
+      "installsAllTime": 12,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1776565280271,
+    "updatedAt": 1781982537979,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1781982537979,
+      "changelog": "- Added README.md and _meta.json files for improved documentation and metadata.\n- Updated SKILL.md: introduced versioning and metadata frontmatter, expanded example usage scenarios (including multilingual support), and added practical budget case studies.\n- No functional changes—skill remains descriptive and informational only.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "tax-deduction-optimizer",
+    "displayName": "Tax Deduction Optimizer",
+    "summary": "Provides structured guidance and templates to optimize tax deductions and improve record-keeping for freelancers, small businesses, and salaried taxpayers.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 329,
+      "installsAllTime": 12,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1776579141862,
+    "updatedAt": 1781981638670,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1781981638670,
+      "changelog": "- Added README.md for usage instructions and _meta.json for metadata compliance.\n- Updated SKILL.md to include metadata, detailed usage scenarios, and a new example for optimizing year-end tax bonuses.\n- Improved documentation to clarify triggers and provide more comprehensive, scenario-based guidance.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "receivable-aging-analyzer",
+    "displayName": "Receivable Aging Analyzer",
+    "summary": "Provides structured receivable aging analysis, best-practice frameworks, and actionable recommendations for prioritizing collections without executing transa...",
+    "description": null,
+    "topics": [
+      "Financial"
+    ],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 330,
+      "installsAllTime": 12,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1776566439271,
+    "updatedAt": 1781980739635,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1781980739635,
+      "changelog": "- Added README.md and _meta.json files for improved documentation and metadata.\n- Updated SKILL.md with YAML frontmatter, tags, and expanded usage scenarios, including multilingual (Chinese) guidance.\n- Enhanced skill documentation by detailing example AR aging and collections workflows, usage scenarios, and actionable output expectations.\n- No changes to core functionality; informational and template-providing features remain descriptive and non-executable.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "precc",
+    "displayName": "PRECC",
+    "summary": "Predictive Error Correction for Claude Code — corrects bash commands before execution, predicts token costs via a trained ML oracle, and captures opt-in coun...",
+    "description": "Predictive Error Correction for Claude Code — corrects bash commands before execution, predicts token costs via a trained ML oracle, and captures opt-in counterfactual telemetry",
+    "topics": [],
+    "tags": {
+      "latest": "0.3.103"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 846,
+      "installsAllTime": 29,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 11
+    },
+    "createdAt": 1773966931872,
+    "updatedAt": 1781980639836,
+    "latestVersion": {
+      "version": "0.3.103",
+      "createdAt": 1781980639836,
+      "changelog": "Fixes diet budget over-credit (estimate now mirrors apply guards; journalctl --no-pager no longer over-credited). Nudge functional-core refactor (behaviour-preserving). Adds nightly mutation, cargo-fuzz, and Miri CI; property/metamorphic/differential/grammar-fuzz test suites.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "PRECC_LICENSE_KEY",
+          "required": true
+        },
+        {
+          "key": "~/.local/share/precc/history.db",
+          "required": true
+        },
+        {
+          "key": "~/.local/share/precc/heuristics.db",
+          "required": true
+        },
+        {
+          "key": "~/.claude/settings.json",
+          "required": true
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "financial-health-check-analyzer",
+    "displayName": "Financial Health Check Analyzer",
+    "summary": "Provides structured financial health assessments with templates and actionable recommendations based on user-provided context and goals.",
+    "description": null,
+    "topics": [
+      "Financial",
+      "Health"
+    ],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 336,
+      "installsAllTime": 12,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1776566420154,
+    "updatedAt": 1781979836171,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1781979836171,
+      "changelog": "**Changelog – Version 1.0.1**\n\n- Added README.md with introductory and usage information.\n- Introduced _meta.json for skill metadata.\n- Enhanced SKILL.md with detailed usage scenarios and a new section on \"月光族财务体检\" (Chinese case study).\n- Migrated to frontmatter formatting in SKILL.md and added tags and version.\n- Expanded workflow and examples for better clarity.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "loseit-dev",
+    "displayName": "Lose It Nutrition",
+    "summary": "Read your Lose It! nutrition from any agent. Logs in with your Lose It email/password (self-healing — it obtains and refreshes its own session token), fetche...",
+    "description": "Read your Lose It! nutrition from any agent. Logs in with your Lose It email/password (self-healing — it obtains and refreshes its own session token), fetches your data export, and emits per-day nutrition as JSON — calories, protein, carbs, fat, fiber, a per-meal breakdown, and Lose It's own budget / under / exercise-adjustment figures. A self-contained, read-only extractor: it never changes your Lose It account and does no application writing (no daily log, no sync) — the caller decides what to do with the data. The only file it writes locally is its own session-token cache (a credential, mode 0600). Single static binary, no Python or other runtime. Auth options: email/password (recommended — set LOSEIT_EMAIL/LOSEIT_PASSWORD or put them in config.json), a downloaded export ZIP (--zip, no credentials), or a saved liauth cookie.",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1781978926461,
+    "updatedAt": 1781979642696,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1781979642696,
+      "changelog": "- Maintenance and cleanup release.\n- Removed deprecated file GOAL.md.\n- Minor updates to internal documentation and nutrition processing code.\n- No changes to public contract or core command usage.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "LOSEIT_EMAIL",
+          "required": false
+        },
+        {
+          "key": "LOSEIT_PASSWORD",
+          "required": false
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "dcc-mcp-creator",
+    "displayName": "Dcc Mcp Creator",
+    "summary": "Infrastructure skill - guide developers and agents through creating or modernizing a full DCC-MCP adapter for Nuke, Blender, 3ds Max, Unreal, ZBrush, Houdini...",
+    "description": "Infrastructure skill - guide developers and agents through creating or modernizing a full DCC-MCP adapter for Nuke, Blender, 3ds Max, Unreal, ZBrush, Houdini, Maya, and custom studio tools. Use when building server, dispatcher, gateway, packaging, and runtime integration. Not for authoring individual SKILL.md tool packages - use dcc-mcp-skills-creator.",
+    "topics": [],
+    "tags": {
+      "latest": "0.18.38"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1952,
+      "installsAllTime": 52,
+      "installsCurrent": 2,
+      "stars": 0,
+      "versions": 66
+    },
+    "createdAt": 1779695321243,
+    "updatedAt": 1781979639688,
+    "latestVersion": {
+      "version": "0.18.38",
+      "createdAt": 1781979639688,
+      "changelog": "dcc-mcp-creator 0.18.38\n\n- Updated to version 0.18.38 in metadata.\n- Expanded Fast Workflow references: added links to `gateway.md` and `adapter-install-lifecycle.md` for clearer gateway and sidecar lifecycle documentation.\n- Improved guidance on launching sidecar processes, handling `instance_id`, and recommended supervisor usage.\n- Clarified remote instance registration and multi-network deployment strategies.\n- Removed skill-card.md for streamlined documentation.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "dcc-mcp-skills-creator",
+    "displayName": "Dcc Mcp Skills Creator",
+    "summary": "Infrastructure skill - create, validate, scaffold, and review DCC-MCP skills for the dcc-mcp-core ecosystem. Use when authoring SKILL.md, tools.yaml, scripts...",
+    "description": "Infrastructure skill - create, validate, scaffold, and review DCC-MCP skills for the dcc-mcp-core ecosystem. Use when authoring SKILL.md, tools.yaml, scripts, groups, prompts, or skill taxonomy. Not for creating a full DCC-MCP adapter repository - use dcc-mcp-creator.",
+    "topics": [],
+    "tags": {
+      "latest": "0.18.38"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1891,
+      "installsAllTime": 52,
+      "installsCurrent": 3,
+      "stars": 0,
+      "versions": 66
+    },
+    "createdAt": 1779695310442,
+    "updatedAt": 1781979633089,
+    "latestVersion": {
+      "version": "0.18.38",
+      "createdAt": 1781979633089,
+      "changelog": "- Added support for declaring inter-skill dependencies using metadata.dcc-mcp.depends in SKILL.md and tools.yaml.\n- Updated authoring workflow and tool contract documentation to cover explicit dependency declaration and best practices.\n- Removed legacy skill-card.md file.\n- Minor clarifications and documentation improvements throughout SKILL.md and supporting materials.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "dcc-cli-gateway",
+    "displayName": "Dcc Cli Gateway",
+    "summary": "Default unified entry for agents and headless CLI hosts (OpenClaw, Hermes, Codex CLI, CI bots, custom agent runtimes) to control live DCC applications throug...",
+    "description": "Default unified entry for agents and headless CLI hosts (OpenClaw, Hermes, Codex CLI, CI bots, custom agent runtimes) to control live DCC applications through dcc-mcp-cli local registry/direct MCP or remote gateway REST — not native MCP JSON-RPC. Agents use this skill plus shell; IDE users (Cursor, Claude Desktop, VS Code MCP) should configure the gateway MCP URL instead. Inventory DCC instances and search/describe/call tools via CLI. If dcc-mcp-cli is missing, ask for consent, download from GitHub Releases, and fall back to Python stdlib gateway REST only if download fails.",
+    "topics": [],
+    "tags": {
+      "latest": "0.18.38"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1951,
+      "installsAllTime": 53,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 68
+    },
+    "createdAt": 1779639042654,
+    "updatedAt": 1781979626288,
+    "latestVersion": {
+      "version": "0.18.38",
+      "createdAt": 1781979626288,
+      "changelog": "- Version bump to 0.18.38.\n- Updated SKILL.md metadata version reference to \"0.18.38\".\n- Removed deprecated skill-card.md file.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "google-health-cli-dev",
+    "displayName": "Google Health",
+    "summary": "Read your Google Health data from any agent. Lists data points for every Google Health data type (heart rate, resting heart rate, sleep, steps, distance, wei...",
+    "description": "Read your Google Health data from any agent. Lists data points for every Google Health data type (heart rate, resting heart rate, sleep, steps, distance, weight, blood oxygen, VO2 max, exercise, and more), returns server-side daily roll-ups (one reconciled total per day), gives a parsed view of exercise sessions, and can GET any read-only v4 API path. A self-contained, read-only client for the Google Health v4 API: authenticates via OAuth2 (token cached locally and auto-refreshed) and emits JSON. It does NO filtering, merging, or writing — the caller decides what to do with the data. Single static binary, no Python or other runtime. NOTE: needs your own Google Cloud OAuth client and a one-time interactive browser login; runs headless afterward.",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781979460803,
+    "updatedAt": 1781979460803,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1781979460803,
+      "changelog": "Initial release of google-health-cli: a self-contained, read-only client for the Google Health v4 API.\n\n- Lists and retrieves health data points for all Google Health types (heart rate, sleep, steps, etc.) as JSON.\n- Supports daily server-side roll-ups, parsed exercise sessions, and raw API path GETs.\n- OAuth2-based authentication with local token caching and automatic refresh; requires a one-time browser login.\n- No external dependencies or runtimes needed (single static binary).\n- Strictly read-only: never writes user health data and emits explicit privacy notices on data output.\n- Detailed usage documentation and setup steps included.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "GOOGLE_HEALTH_CLIENT_ID",
+          "required": true
+        },
+        {
+          "key": "GOOGLE_HEALTH_CLIENT_SECRET",
+          "required": true
+        },
+        {
+          "key": "GOOGLE_HEALTH_CONFIG",
+          "required": false
+        },
+        {
+          "key": "GOOGLE_HEALTH_TOKEN_CACHE",
+          "required": false
+        },
+        {
+          "key": "GOOGLE_HEALTH_BASE_URL",
+          "required": false
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "pricing-strategy-framework",
+    "displayName": "Pricing Strategy Framework",
+    "summary": "Provides structured pricing strategy frameworks, templates, and actionable recommendations based on cost, value, and competitive analysis for informed financ...",
+    "description": null,
+    "topics": [
+      "Financial"
+    ],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 338,
+      "installsAllTime": 13,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1776570364543,
+    "updatedAt": 1781978937493,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1781978937493,
+      "changelog": "- Added README.md and _meta.json files for improved documentation and metadata.\n- Expanded SKILL.md with detailed usage scenarios and practical pricing strategy examples.\n- Enhanced user guidance with step-by-step pricing frameworks for both B2B, B2C, and marketplace contexts.\n- Updated metadata and structure in SKILL.md for greater clarity and discoverability.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "patient-simulator",
+    "displayName": "Patient Simulator",
+    "summary": "Use this skill whenever the user wants an agentic LLM to install, configure, initialize, run, batch, troubleshoot, or document AnnaAgent seeker/virtual-patie...",
+    "description": "Use this skill whenever the user wants an agentic LLM to install, configure, initialize, run, batch, troubleshoot, or document AnnaAgent seeker/virtual-patient simulation from the CLI. This skill is especially relevant for tasks mentioning AnnaAgent, seeker simulation, virtual patient initialization, `anna init full`, reusable prompt states, `anna chat --state`, SFT model services, vLLM deployment, or publishing AnnaAgent agent skills to registries such as ClawHub.",
+    "topics": [
+      "mental health",
+      "seeker simulation",
+      "patient simulation"
+    ],
+    "tags": {
+      "latest": "0.3.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1781978739772,
+    "updatedAt": 1781978739772,
+    "latestVersion": {
+      "version": "0.3.1",
+      "createdAt": 1781978739772,
+      "changelog": "- Refined documentation for realistic psychological-counseling seeker simulation using AnnaAgent via CLI.\n- Updated core guidance: always use `anna init full` or from a saved prompt state; deprecated the `prompt-only` shortcut.\n- Added clear research attribution and citation instructions for AnnaAgent.\n- Expanded safe operating procedures and best practices for installation, secrets management, and troubleshooting.\n- Provided step-by-step standard and SFT/vLLM workflows with example commands.\n- Included concise troubleshooting procedures and skill publishing checklist.\n- Output guidelines now emphasize runnable commands and direct, minimal explanations.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "smyx-elderly-toilet-time-abnormal-analysis",
+    "displayName": "Elderly Toilet Time Abnormal Detection (>30 min) | 老年人如厕时间异常（超30分钟）识别",
+    "summary": "Using a camera installed at the bathroom doorway (or inside the bathroom only detecting human silhouettes, without capturing private details), the system use...",
+    "description": "Using a camera installed at the bathroom doorway (or inside the bathroom only detecting human silhouettes, without capturing private details), the system uses human detection and entry/exit tracking to identify when an elderly person enters or leaves the toilet and calculates the continuous occupancy time. | 通过在卫生间门口（或内部仅检测人体，不采集隐私细节）安装的摄像头，利用人体检测和进出跟踪技术，识别老年人进入和离开卫生间的时刻，计算连续占用时间。当占用时间超过预设安全阈值（默认30分钟）时，输出异常预警，通知家属或护理人员及时查看，预防老年人因跌倒、突发疾病（如中风、心梗）或体力不支导致的无法自主移动等意外。",
+    "topics": [
+      "Home",
+      "安全"
+    ],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 284,
+      "installsAllTime": 10,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1779702353010,
+    "updatedAt": 1781978069010,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1781978069010,
+      "changelog": "- Updated documentation to clarify the open-id configuration file search order and file locations.\n- Revised SKILL.md to simplify and condense the description and usage details.\n- Added MIT-0 license information to SKILL.md.\n- Removed the outdated skill-card.md file.\n- No changes to core logic or APIs; changes are documentation and configuration related.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "micro-change-helper",
+    "displayName": "Micro Change Helper",
+    "summary": "Turn a stuck problem into one tiny actionable 5% change",
+    "description": "Turn a stuck problem into one tiny actionable 5% change",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 356,
+      "installsAllTime": 13,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1774495919241,
+    "updatedAt": 1781978037298,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1781978037298,
+      "changelog": "- Added English README.md to provide broader documentation.\n- Expanded example scenarios in SKILL.md, including both English and Chinese use cases for diverse audiences.\n- Introduced clear usage scenarios demonstrating step-wise micro-change protocols for common stuck situations.\n- Removed outdated local test report file for clarity and maintenance.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
       "systems": null
     }
   },
@@ -245,7 +801,7 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 263,
+      "downloads": 264,
       "installsAllTime": 10,
       "installsCurrent": 0,
       "stars": 0,
@@ -276,7 +832,7 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 354,
+      "downloads": 358,
       "installsAllTime": 10,
       "installsCurrent": 1,
       "stars": 1,
@@ -293,579 +849,6 @@
     "metadata": null
   },
   {
-    "slug": "creamlon-skill",
-    "displayName": "Creamlon Skill",
-    "summary": "Turn any GitHub repo into an async agent service store: publish services, accept paid tasks via Issues, and deliver results with signed proof. Works with Ope...",
-    "description": "Turn any GitHub repo into an async agent service store: publish services, accept paid tasks via Issues, and deliver results with signed proof. Works with OpenClaw, Claude Code, Codex, Cursor, or any agent.",
-    "topics": [],
-    "tags": {
-      "latest": "0.8.2"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 32,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1781935885493,
-    "updatedAt": 1781976077206,
-    "latestVersion": {
-      "version": "0.8.2",
-      "createdAt": 1781976077206,
-      "changelog": "Introduce .creamlon/runtime for private node state; update CLI defaults, templates, docs, and skill examples to creamlon@0.8.2 while keeping public manifests and trust logs unchanged.",
-      "license": null
-    },
-    "metadata": {
-      "setup": [
-        {
-          "key": "GITHUB_TOKEN",
-          "required": true
-        }
-      ],
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "smyx-pet-health-monitoring-analysis",
-    "displayName": "Pet Daily Health Monitoring & Analysis Tool | 宠物日常健康监测分析工具",
-    "summary": "Based on computer vision, analyzes pet health indicators such as feeding frequency, drinking frequency, excretion status, mental state, vomiting behavior, an...",
-    "description": "Based on computer vision, analyzes pet health indicators such as feeding frequency, drinking frequency, excretion status, mental state, vomiting behavior, and limping abnormalities through camera/feeder monitoring videos, promptly detects abnormal pet health conditions, and outputs health monitoring reports. | 宠物日常健康监测分析技能，基于计算机视觉通过摄像头/喂食器监控视频分析宠物的进食频次、饮水频次、排泄状态、精神状态、呕吐行为、跛行异常等健康指标，及时发现宠物异常健康状况，输出健康监测报告",
-    "topics": [
-      "Health",
-      "健康"
-    ],
-    "tags": {
-      "latest": "1.0.5"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 668,
-      "installsAllTime": 25,
-      "installsCurrent": 0,
-      "stars": 4,
-      "versions": 6
-    },
-    "createdAt": 1776406593404,
-    "updatedAt": 1781975968650,
-    "latestVersion": {
-      "version": "1.0.5",
-      "createdAt": 1781975968650,
-      "changelog": "- Updated the open-id retrieval priority: now checks scripts/config.yaml in the skill directory first (not skills/smyx_common/scripts/config.yaml).\n- Cleaned config and script paths for clarity and to reduce directory nesting.\n- Removed the file skill-card.md.\n- Bumped default version in SKILL.md to 1.0.4 and added an explicit license field.\n- Minor documentation improvements and clarified instructions in SKILL.md.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "xerg",
-    "displayName": "Xerg",
-    "summary": "Audit OpenClaw, Hermes, and Cursor spend in dollars. Local-first audits with provenance-aware findings, compare mode, OpenClaw remote support, CI gates, and...",
-    "description": "Audit OpenClaw, Hermes, and Cursor spend in dollars. Local-first audits with provenance-aware findings, compare mode, OpenClaw remote support, CI gates, and optional hosted follow-up.",
-    "topics": [],
-    "tags": {
-      "audit": "0.5.3",
-      "cli": "0.5.3",
-      "cost": "0.5.3",
-      "cursor": "0.5.3",
-      "efficiency": "0.5.3",
-      "finops": "0.5.3",
-      "hermes": "0.5.3",
-      "latest": "0.5.3",
-      "openclaw": "0.5.3",
-      "waste": "0.5.3"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 1,
-      "versions": 2
-    },
-    "createdAt": 1781973413137,
-    "updatedAt": 1781975664858,
-    "latestVersion": {
-      "version": "0.5.3",
-      "createdAt": 1781975664858,
-      "changelog": "Native-free CLI packaging: JSON snapshot storage, smaller prompt dependencies, and browser-bundler stub for package scanners.",
-      "license": null
-    },
-    "metadata": {
-      "setup": [
-        {
-          "key": "~/.xerg/config.json",
-          "required": true
-        },
-        {
-          "key": "~/.config/xerg/credentials.json",
-          "required": true
-        },
-        {
-          "key": "~/.xerg/remotes.json",
-          "required": true
-        },
-        {
-          "key": "XERG_API_KEY",
-          "required": false
-        },
-        {
-          "key": "XERG_API_URL",
-          "required": false
-        }
-      ],
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "urgent-notary-packet-builder",
-    "displayName": "Urgent Notary Packet Builder",
-    "summary": "Build a same-day notary readiness packet with document inventory, ID checklist, signer logistics, and verification prompts while avoiding legal advice.",
-    "description": "Build a same-day notary readiness packet with document inventory, ID checklist, signer logistics, and verification prompts while avoiding legal advice.",
-    "topics": [
-      "Notary",
-      "Appointment Prep",
-      "Document Prep",
-      "Identity Checklist",
-      "Urgent Admin"
-    ],
-    "tags": {
-      "latest": "1.0.2"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 265,
-      "installsAllTime": 10,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 3
-    },
-    "createdAt": 1778595782139,
-    "updatedAt": 1781975336952,
-    "latestVersion": {
-      "version": "1.0.2",
-      "createdAt": 1781975336952,
-      "changelog": "**Changelog for version 1.0.2:**\n\n- Added README.md and _meta.json files.\n- Updated skill metadata in SKILL.md: new tags, license position, and version bump.\n- Expanded SKILL.md examples and scenarios, including non-English (Chinese) urgent use case.\n- Enhanced usage scenarios for broader real-world applications.",
-      "license": null
-    },
-    "metadata": {
-      "setup": [],
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "calibre-converter",
-    "displayName": "Calibre Converter",
-    "summary": "Calibre Converter is an OpenClaw skill for requesting format conversion of books already registered in Calibre. It does not run ebook-convert or calibredb directly; instead, it identifies the book, confirms the target format, and calls calibre-openclaw-server to convert, register, and return the result. It supports EPUB, AZW3, MOBI, PDF, DOCX, and TXT, with safe agent rules for Kindle, Kobo, duplicate titles, and conversion quality review.",
-    "description": null,
-    "topics": [
-      "ebook",
-      "epub",
-      "pdf",
-      "converter"
-    ],
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1781974071383,
-    "updatedAt": 1781974735745,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1781974071383,
-      "changelog": "Initial release of calibre-converter\n\n- Supports user requests to convert registered books or documents in Calibre to other formats.\n- Identifies books by book_id, calibre_id, or exact title.\n- Handles a wide range of formats (epub, mobi, azw3, pdf, docx, txt, html, etc.).\n- Relies on calibre-openclaw-server for all conversion operations; communicates via HTTP API only.\n- Informs the user of conversion status, including title, generated format, and output path.\n- Provides rules and recommendations for format selection and user interaction.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "calibre-ebooks",
-    "displayName": "Calibre Ebooks",
-    "summary": "calibre-ebooks is an OpenClaw skill for querying and operating a local Calibre library through a local Books API and helper scripts. It works only with books already available in the configured Calibre library and does not download, search, or add books from external sources. The project includes agent workflow guidance, a Python API client, a FastAPI server, semantic RAG support, systemd services, and local environment-based configuration.",
-    "description": "Manage and query the local Calibre library through the Books API, using local Calibre/RAG helpers only when file resolution or semantic indexing is explicitly needed.",
-    "topics": [
-      "Rag",
-      "ebooks",
-      "pdf",
-      "epub",
-      "semantic"
-    ],
-    "tags": {
-      "latest": "1.0.12"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 606,
-      "installsAllTime": 20,
-      "installsCurrent": 1,
-      "stars": 0,
-      "versions": 21
-    },
-    "createdAt": 1779481721028,
-    "updatedAt": 1781974515746,
-    "latestVersion": {
-      "version": "1.0.12",
-      "createdAt": 1781974096247,
-      "changelog": "calibre-ebooks 1.0.12\n\n- Added support for querying available formats for a specific book via API client.\n- Updated documentation to include the new command for checking book formats.\n- Internal code updates across API routes, services, models, and database layers to support format resolution and enhance maintainability.",
-      "license": null
-    },
-    "metadata": {
-      "setup": [],
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "urgent-appointment-scramble-board",
-    "displayName": "Urgent Appointment Scramble Board",
-    "summary": "Track urgent appointment calls across multiple providers with a live availability board, call log, openings, callbacks, and confirmation details.",
-    "description": "Track urgent appointment calls across multiple providers with a live availability board, call log, openings, callbacks, and confirmation details.",
-    "topics": [
-      "Call Log",
-      "Appointment Scheduling",
-      "Availability Tracker",
-      "Logistics",
-      "Urgent Admin"
-    ],
-    "tags": {
-      "latest": "1.0.2"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 263,
-      "installsAllTime": 10,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 3
-    },
-    "createdAt": 1778595760263,
-    "updatedAt": 1781974437457,
-    "latestVersion": {
-      "version": "1.0.2",
-      "createdAt": 1781974437457,
-      "changelog": "Urgent Appointment Scramble Board v1.1.0\n\n- Updated tags for clearer categorization and discoverability.\n- Added new documentation files: README.md and _meta.json.\n- Minor metadata and formatting refinements in SKILL.md.\n- No changes to core functionality or workflow.",
-      "license": null
-    },
-    "metadata": {
-      "setup": [],
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "time-converter",
-    "displayName": "Time Converter",
-    "summary": "Convert time between different timezones using IANA timezone database. Supports 12/24-hour formats, specific dates, and automatic DST handling.",
-    "description": "Convert time between different timezones using IANA timezone database. Supports 12/24-hour formats, specific dates, and automatic DST handling.",
-    "topics": [],
-    "tags": {
-      "latest": "1.0.1"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 397,
-      "installsAllTime": 15,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1773971238240,
-    "updatedAt": 1781973538048,
-    "latestVersion": {
-      "version": "1.0.1",
-      "createdAt": 1781973538048,
-      "changelog": "- Added _meta.json file with structured skill metadata.\n- Updated SKILL.md to include practical usage scenarios, especially for cross-timezone meeting planning.\n- Expanded scenario examples, including relevant daylight saving and offset details.\n- No changes to core functionality; documentation and metadata improvements only.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "aotrust-pdr-notarization",
-    "displayName": "AOTrust — PDR Notarization",
-    "summary": "Issue a cryptographic proof (PDR) that a digital artifact existed at a specific time. Pay $0.01 USDC on Base via x402. Anchored daily to NEAR blockchain. Pub...",
-    "description": "Issue a cryptographic proof (PDR) that a digital artifact existed at a specific time. Pay $0.01 USDC on Base via x402. Anchored daily to NEAR blockchain. Publicly verifiable.",
-    "topics": [],
-    "tags": {
-      "latest": "3.4.2",
-      "ai-agents": "3.0.0",
-      "base-l2": "3.0.0",
-      "cryptographic-proof": "3.0.0",
-      "near-protocol": "3.0.0",
-      "notarization": "3.0.0",
-      "pdr": "3.0.0",
-      "provenance": "3.0.0",
-      "x402": "3.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 209,
-      "installsAllTime": 7,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 5
-    },
-    "createdAt": 1781212413825,
-    "updatedAt": 1781973469940,
-    "latestVersion": {
-      "version": "3.4.2",
-      "createdAt": 1781973469940,
-      "changelog": "- skill-card.md file was removed from the project.\n- Version updated from 3.4.1 to 3.4.2 in metadata.\n- No functional or documentation changes to SKILL.md content.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "inspiration-app-recommend",
-    "displayName": "灵感应用推荐",
-    "summary": "灵感应用推荐助手。自动从 Product Hunt、GitHub Trending、Hacker News、36Kr、少数派、即刻、V2EX 等平台聚合最新热门应用/产品/开源项目，按类别智能分类，提炼可借鉴的创意灵感点与商业模式分析， 生成交互式 HTML 可视化推荐报告。解决\"不知道做什么产品/应用\"的创意枯...",
-    "description": "灵感应用推荐助手。自动从 Product Hunt、GitHub Trending、Hacker News、36Kr、少数派、即刻、V2EX 等平台聚合最新热门应用/产品/开源项目，按类别智能分类，提炼可借鉴的创意灵感点与商业模式分析， 生成交互式 HTML 可视化推荐报告。解决\"不知道做什么产品/应用\"的创意枯竭痛点。 Triggers: 灵感推荐, 做什么应用, 产品灵感, 创意推荐, 热门应用, 最新产品, 有什么好想法, 做点什么, app inspiration, 应用灵感, 项目灵感, 有啥好项目, 新产品创意, product ideas, 灵感报告, 想做点什么, 找灵感, 创意枯竭.",
-    "topics": [],
-    "tags": {
-      "app-recommend": "1.0.0",
-      "inspiration": "1.0.0",
-      "latest": "1.0.0",
-      "product-ideas": "1.0.0",
-      "trending": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1781973431551,
-    "updatedAt": 1781973431551,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1781973431551,
-      "changelog": "首个版本：支持 Product Hunt/GitHub/Hacker News/36Kr/少数派/即刻/V2EX 等多源数据采集，智能分类与灵感提炼，Chart.js 交互式 HTML 可视化报告",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "realbrowser",
-    "displayName": "RealBrowser by Ceki",
-    "summary": "Give your AI agent a human disguise. Real Chrome from real humans. Defeats Cloudflare, DataDome, BasedFlare, Imperva, PerimeterX, Akamai. Free for your own C...",
-    "description": "Give your AI agent a human disguise. Real Chrome from real humans. Defeats Cloudflare, DataDome, BasedFlare, Imperva, PerimeterX, Akamai. Free for your own Chrome, $0.01/min for marketplace browsers from real hosts worldwide. Sites can't tell — mechanically, the request IS coming from a real human's machine.",
-    "topics": [],
-    "tags": {
-      "ai-agent": "0.1.0",
-      "anti-bot": "0.1.0",
-      "browser": "0.1.0",
-      "latest": "0.1.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1781973078681,
-    "updatedAt": 1781973078681,
-    "latestVersion": {
-      "version": "0.1.0",
-      "createdAt": 1781973078681,
-      "changelog": "Initial release. Real Chrome from real humans for AI agents.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "apm-agent-progressive-memory",
-    "displayName": "Apm Agent Progressive Memory",
-    "summary": "APM Protocol (Agent Progressive Memory): Progressive disclosure protocol for group chat AND DM (main session) memory.",
-    "description": "APM Protocol (Agent Progressive Memory): Progressive disclosure protocol for group chat AND DM (main session) memory.",
-    "topics": [],
-    "tags": {
-      "latest": "1.6.1"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 587,
-      "installsAllTime": 22,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 11
-    },
-    "createdAt": 1778738815387,
-    "updatedAt": 1781972714508,
-    "latestVersion": {
-      "version": "1.6.1",
-      "createdAt": 1781972714508,
-      "changelog": "**Summary:** Introduced dedicated session start hook and improved group name mapping.\n\n- Added new `apm_session_start` hook for memory initialization and entry handling.\n- Moved group name mapping file to `memory/groups/group_names.json` (from `memory/group_names.json`).\n- Removed deprecated bootstrap script and related hook files.\n- Updated docs to clarify agent vs. hook responsibilities for memory initialization and first-join flows.\n- Minor refinements to loading rules and file structure explanations.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "store-site-analysis",
-    "displayName": "商铺选址分析工具",
-    "summary": "基于高德开放平台的商铺选址分析 Skill。支持单地址选址分析（竞品搜索、配套评估、交通态势、热力图可视化）和多地址对比分析（雷达图、柱状图、评分排名、聚合地图）。让 AI Agent 一句话完成开店选址评估。",
-    "description": "基于高德开放平台的商铺选址分析 Skill。支持单地址选址分析（竞品搜索、配套评估、交通态势、热力图可视化）和多地址对比分析（雷达图、柱状图、评分排名、聚合地图）。让 AI Agent 一句话完成开店选址评估。",
-    "topics": [
-      "store",
-      "site",
-      "analysis",
-      "traffic",
-      "compare"
-    ],
-    "tags": {
-      "latest": "1.0.2"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 1,
-      "versions": 3
-    },
-    "createdAt": 1781959422666,
-    "updatedAt": 1781972669702,
-    "latestVersion": {
-      "version": "1.0.2",
-      "createdAt": 1781972669702,
-      "changelog": "- 调整 compare_template.html 和 heatmap_template.html 模板样式或内容。\n- 优化对比和热力图页面的可视化显示效果。\n- 其他功能保持不变，主要为前端展示细节改进。",
-      "license": null
-    },
-    "metadata": {
-      "setup": [],
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "therapy-prep",
-    "displayName": "Therapy Prep",
-    "summary": "Help users prepare for therapy or counseling sessions by organizing thoughts, clarifying goals, identifying patterns, and structuring what to bring up.",
-    "description": "Help users prepare for therapy or counseling sessions by organizing thoughts, clarifying goals, identifying patterns, and structuring what to bring up.",
-    "topics": [],
-    "tags": {
-      "latest": "1.0.1"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 373,
-      "installsAllTime": 14,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 2
-    },
-    "createdAt": 1774657780091,
-    "updatedAt": 1781972639276,
-    "latestVersion": {
-      "version": "1.0.1",
-      "createdAt": 1781972639276,
-      "changelog": "- Added a detailed English usage scenarios section to clarify core use cases and outputs for therapy session preparation.\n- Enhanced the SKILL.md documentation and added tags, improving clarity and discoverability.\n- Removed legacy reference data files and scripts for a leaner, documentation-focused skill.\n- Added a README.md file and cleaned up project structure by removing unused code and test files.\n- No changes to the primary workflow or user-facing prompts.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "bioinfo-engineer-skill",
-    "displayName": "Bioinformatics Engineer Skill",
-    "summary": "Provides best-practice bioinformatics engineering: conda env mgmt, secrets isolation, Git+DVC data versioning, relative paths, and reusable pipelines.",
-    "description": null,
-    "topics": [],
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1781972416589,
-    "updatedAt": 1781972416589,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1781972416589,
-      "changelog": "v1.0.0 - Initial release\n\nCore principles:\n- Tool reuse (Bioconda first), no reinventing wheels\n- Relative paths (project-root-relative, no auto-conversion)\n- Git + DVC for code + big data versioning\n- .env isolation for secrets, never commit\n- Experience pipeline repository (Snakemake/WDL/DVC Pipeline)\n- Git Flow + Conventional Commits\n- Document-driven with auto-generated Rmarkdown reports + shell scripts\n\n15 sections covering environment management, secrets, DVC, relative paths,\nexperience pipelines, tool reuse, Git Flow, documentation automation,\nQC validation, data management, interaction protocol, error handling,\nquick-start template, and reference resources.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "youdaonote-okf-wiki",
-    "displayName": "YoudaoNote OKF Wiki",
-    "summary": "当用户提到「OKF」「OKF Wiki」「Open Knowledge Format」「OKF 知识库」「新建 OKF」「创建 OKF bundle」「OKF 摄入」「OKF 查询」「OKF 一致性检查」「OKF 导出」「OKF 归档」「okf-wiki-init」「okf-wiki-ingest」「okf-wi...",
-    "description": "当用户提到「OKF」「OKF Wiki」「Open Knowledge Format」「OKF 知识库」「新建 OKF」「创建 OKF bundle」「OKF 摄入」「OKF 查询」「OKF 一致性检查」「OKF 导出」「OKF 归档」「okf-wiki-init」「okf-wiki-ingest」「okf-wiki-query」「okf-wiki-lint」「okf-wiki-export」「okf-wiki-archive」「okf-wiki-switch」时使用此 Skill。基于 OKF v0.1 规范的知识库管理。当用户需要符合开放标准、可导出为 git 仓库、或跨工具交换的知识库时，优先使用此 Skill 而非 youdaonote-llm-wiki。",
-    "topics": [],
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installsAllTime": 0,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1781972108305,
-    "updatedAt": 1781972108305,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1781972108305,
-      "changelog": "youdaonote-okf-wiki 1.0.0 — 首次发布，支持在有道云笔记中管理符合 OKF v0.1 标准的知识库。\n\n- 新增 OKF 知识库的初始化、跨工具交换、与 git 仓库兼容的持久化管理功能。\n- 支持 OKF 概念、实体、对比分析、查询等多类型内容的结构化笔记写入与归档。\n- 内置操作协议与用户安全提示，所有重要操作需用户授权确认后执行。\n- 自动检测 CLI 安装、API Key 配置及版本兼容，提供分步指引。\n- 支持全局注册表与多知识库切换，便于维护多个独立 OKF 知识库。\n- 所有 OKF 操作命令均带有统计参数，便于后续分析与改进。",
-      "license": null
-    },
-    "metadata": {
-      "setup": [],
-      "os": null,
-      "systems": null
-    }
-  },
-  {
-    "slug": "xrowgmbh-ci-tools-support",
-    "displayName": "ci-tools-support Support",
-    "summary": "Triage and answer support requests for the xrow-public/ci-tools GitLab components catalog.",
-    "description": "Triage and answer support requests for the xrow-public/ci-tools GitLab components catalog.",
-    "topics": [],
-    "tags": {
-      "latest": "4.146.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 254,
-      "installsAllTime": 6,
-      "installsCurrent": 0,
-      "stars": 0,
-      "versions": 12
-    },
-    "createdAt": 1781502297138,
-    "updatedAt": 1781972059504,
-    "latestVersion": {
-      "version": "4.146.0",
-      "createdAt": 1781972059504,
-      "changelog": "- No file changes detected in this version.\n- Behavior and documentation remain unchanged from the previous release.",
-      "license": null
-    },
-    "metadata": {
-      "setup": [],
-      "os": null,
-      "systems": null
-    }
-  },
-  {
     "slug": "sonoscli",
     "displayName": "Sonoscli",
     "summary": "Control Sonos speakers (discover/status/play/volume/group).",
@@ -876,7 +859,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 84987,
+      "downloads": 84995,
       "installsAllTime": 2796,
       "installsCurrent": 2775,
       "stars": 55,
@@ -911,9 +894,9 @@
     },
     "stats": {
       "comments": 36,
-      "downloads": 186702,
-      "installsAllTime": 5426,
-      "installsCurrent": 3654,
+      "downloads": 186734,
+      "installsAllTime": 5427,
+      "installsCurrent": 3655,
       "stars": 926,
       "versions": 1
     },
@@ -944,9 +927,9 @@
     },
     "stats": {
       "comments": 7,
-      "downloads": 191026,
-      "installsAllTime": 7592,
-      "installsCurrent": 4511,
+      "downloads": 191080,
+      "installsAllTime": 7594,
+      "installsCurrent": 4513,
       "stars": 638,
       "versions": 1
     },
@@ -973,7 +956,7 @@
     },
     "stats": {
       "comments": 6,
-      "downloads": 161471,
+      "downloads": 161500,
       "installsAllTime": 6450,
       "installsCurrent": 3903,
       "stars": 417,
@@ -1006,7 +989,7 @@
     },
     "stats": {
       "comments": 2,
-      "downloads": 84964,
+      "downloads": 84983,
       "installsAllTime": 2952,
       "installsCurrent": 2125,
       "stars": 325,
@@ -1037,9 +1020,9 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 92311,
-      "installsAllTime": 3377,
-      "installsCurrent": 2506,
+      "downloads": 92344,
+      "installsAllTime": 3378,
+      "installsCurrent": 2507,
       "stars": 320,
       "versions": 1
     },
@@ -1066,7 +1049,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 92980,
+      "downloads": 93003,
       "installsAllTime": 3186,
       "installsCurrent": 2424,
       "stars": 260,
@@ -1097,7 +1080,7 @@
     },
     "stats": {
       "comments": 9,
-      "downloads": 103443,
+      "downloads": 103475,
       "installsAllTime": 4092,
       "installsCurrent": 2616,
       "stars": 431,
@@ -1128,7 +1111,7 @@
     },
     "stats": {
       "comments": 5,
-      "downloads": 34655,
+      "downloads": 34666,
       "installsAllTime": 1466,
       "installsCurrent": 1462,
       "stars": 56,
@@ -1159,7 +1142,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 67580,
+      "downloads": 67593,
       "installsAllTime": 2168,
       "installsCurrent": 2042,
       "stars": 194,
@@ -1192,7 +1175,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 103717,
+      "downloads": 103734,
       "installsAllTime": 3082,
       "installsCurrent": 1896,
       "stars": 406,
@@ -1222,7 +1205,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 38312,
+      "downloads": 38318,
       "installsAllTime": 1587,
       "installsCurrent": 1582,
       "stars": 114,
@@ -1255,7 +1238,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 52479,
+      "downloads": 52496,
       "installsAllTime": 1600,
       "installsCurrent": 1596,
       "stars": 129,
@@ -1288,9 +1271,9 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 43296,
-      "installsAllTime": 1507,
-      "installsCurrent": 1501,
+      "downloads": 43310,
+      "installsAllTime": 1508,
+      "installsCurrent": 1502,
       "stars": 70,
       "versions": 1
     },
@@ -1321,7 +1304,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 113411,
+      "downloads": 113435,
       "installsAllTime": 4329,
       "installsCurrent": 2654,
       "stars": 260,
@@ -1352,7 +1335,7 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 41816,
+      "downloads": 41831,
       "installsAllTime": 1665,
       "installsCurrent": 1457,
       "stars": 30,
@@ -1386,7 +1369,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 46064,
+      "downloads": 46080,
       "installsAllTime": 1547,
       "installsCurrent": 1543,
       "stars": 69,
@@ -1419,7 +1402,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 27059,
+      "downloads": 27066,
       "installsAllTime": 1264,
       "installsCurrent": 1260,
       "stars": 26,
@@ -1457,7 +1440,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 22931,
+      "downloads": 22940,
       "installsAllTime": 1252,
       "installsCurrent": 1249,
       "stars": 30,
@@ -1495,7 +1478,7 @@
     },
     "stats": {
       "comments": 12,
-      "downloads": 48141,
+      "downloads": 48154,
       "installsAllTime": 1484,
       "installsCurrent": 1434,
       "stars": 158,
@@ -1522,7 +1505,7 @@
     },
     "stats": {
       "comments": 4,
-      "downloads": 30532,
+      "downloads": 30543,
       "installsAllTime": 1345,
       "installsCurrent": 1343,
       "stars": 83,
@@ -1557,7 +1540,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 24663,
+      "downloads": 24668,
       "installsAllTime": 1123,
       "installsCurrent": 1121,
       "stars": 37,
@@ -1584,7 +1567,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 29422,
+      "downloads": 29432,
       "installsAllTime": 1410,
       "installsCurrent": 1406,
       "stars": 43,
@@ -1618,7 +1601,7 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 18688,
+      "downloads": 18694,
       "installsAllTime": 1218,
       "installsCurrent": 1212,
       "stars": 7,
@@ -1652,7 +1635,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 25990,
+      "downloads": 26000,
       "installsAllTime": 1183,
       "installsCurrent": 1179,
       "stars": 52,

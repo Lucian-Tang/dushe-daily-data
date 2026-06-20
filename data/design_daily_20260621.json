@@ -1,110 +1,110 @@
 [
   {
-    "title": "Figma MCP：画布正式向 AI 代理开放",
-    "content": "Figma 正式推出 MCP（Model Context Protocol）服务器，开发者可通过 AI 代理直接读写 Figma 画布。设计团队不再需要手动追踪所有开发中的边缘状态——代理读取代码后，可自动在画布上生成可编辑的设计帧。在一个案例中，一个简单导出流程从 4 个帧膨胀到 14 个，因为代理识别出了编码错误、加载中、空选择等实际开发中涌现的状态。",
-    "quote": "AI 代理帮你补设计稿，设计师该开心还是该慌？",
-    "source": "Figma Blog | 2026-06-19",
-    "url": "https://www.figma.com/blog/workflow-lab-expanding-the-canvas-with-figma-mcp/",
-    "published": "2026-06-21",
-    "uid": "design_df4ff14d"
-  },
-  {
-    "title": "如何让你的设计系统做好 AI 准备",
-    "content": "Atlassian 设计师 Hardik Pandya 提出\"设计决策即基础设施\"理念，发布实用指南帮助团队让设计系统对 AI 友好。核心三层架构：Spec 文件（Markdown 格式的设计规则）+ Token 层（封闭的颜色/间距变量）+ 审计脚本（自动标记硬编码值）。推荐使用 FigmaLint 插件审计 token、状态、可访问性，及检测分离实例和硬编码值。Atlassian、Carbon 等设计系统已率先采用这一模式。",
-    "quote": "以后连设计规范都得写给 AI 看，人类设计师负责写文档？",
-    "source": "Smashing Magazine | 2026-06-19",
-    "url": "https://www.smashingmagazine.com/2026/06/how-make-design-system-ai-ready/",
-    "published": "2026-06-21",
-    "uid": "design_4fe42107"
-  },
-  {
-    "title": "CSSQuake：用纯 CSS 实现的 Quake 引擎",
-    "content": "开发者用纯 CSS 实现了经典游戏 Quake 的 3D 渲染引擎，项目基于 PolyCSS 框架（与 CSSDoom 同作者）。虽然跑在 M1 Mac 上帧率不如 90 年代的 Pentium-133 + 3dfx 卡，但作为 CSS 能力边界的极限探索，HN 上引发了热烈讨论。有评论精辟总结：\"花三十年优化一个烤面包机并不会让它变得更擅长做肉饼。\"",
-    "quote": "前端工程师的尽头是——用 CSS 跑 3D 游戏，然后被吐槽卡顿。",
-    "source": "Hacker News | 2026-06-20",
-    "url": "https://cssquake.com/",
-    "published": "2026-06-21",
-    "uid": "design_9ae3fbb5"
-  },
-  {
-    "title": "你屏幕看不到的那些颜色",
-    "content": "一篇精彩的颜色科学科普：我们日常屏幕的 sRGB 色域只能覆盖人眼可见色域的一小部分，尤其是青色系严重缺失。文章从 CIE 1931 色度图讲起，解释了为什么屏幕上的\"青色\"永远不够青，以及如何在现实生活中找到这些颜色。HN 上获得 349 分，设计从业者必读。",
-    "quote": "看完才知道原来我屏幕上的世界是褪色的，难怪每次调色都觉得不对。",
-    "source": "Ryan Moulton's Blog | 2026-06-19",
-    "url": "https://moultano.wordpress.com/2026/06/19/where-to-find-the-colors-your-screen-cant-show-you/",
-    "published": "2026-06-21",
-    "uid": "design_97750e20"
-  },
-  {
-    "title": "contrast-color()：CSS 自校正色彩系统来了",
-    "content": "2025 年仍有 70% 的网站无法通过 WCAG 对比度检查，WebAIM 2026 年数据显示 83.9% 首页存在低对比度文本。CSS 新函数 contrast-color() 将彻底改变这一局面——浏览器在样式计算阶段自动计算对比度并返回黑或白文字色，零 JS、零构建步骤。目前处于 Level 5 规范，只支持二元输出；Level 6 将支持候选色列表和目标对比度比率。",
-    "quote": "浏览器终于学会了自己选字色，前端工程师的工作量-1。",
-    "source": "Smashing Magazine | 2026-06-15",
-    "url": "https://www.smashingmagazine.com/2026/05/building-self-correcting-color-systems-contrast-color/",
-    "published": "2026-06-21",
-    "uid": "design_70651310"
-  },
-  {
-    "title": "用户理解的四个层次",
-    "content": "设计师常犯的错误：直接问用户\"想要什么\"。但人们说的、感觉的、想的、做的往往截然不同。文章介绍了 Hannah Shamji 的四层用户理解框架——用户说的 vs 用户做的 vs 用户为什么做，并指出直接提问是获取有效答案的最差方式。用户会夸大、关注边缘案例、偏好短期目标。研究显示人们对\"可能\"\"很可能\"\"几乎确定\"等概率词汇的理解差异极大。",
-    "quote": "用户嘴上说要A，心里想的是B，实际用的时候选C，设计师：那我走？",
-    "source": "Smashing Magazine | 2026-06-10",
-    "url": "https://www.smashingmagazine.com/2026/05/four-levels-customer-understanding/",
-    "published": "2026-06-21",
-    "uid": "design_4548f951"
-  },
-  {
-    "title": "你的原型在欺骗用户",
-    "content": "每一次可用性测试中几乎都会出现那个瞬间——参与者在登录页面停顿，抬头确认\"我做得对吗？\"他们早已意识到这不是真应用。对金融产品而言，问题更尖锐：用户受过训练能识别不对劲的交互。解决方案是识别\"信任建立时刻\"并让那个交互变真实。文章以 ProtoPie 构建可验证登录流程为例，实现真实的输入验证、错误状态和 Face ID 动画。",
-    "quote": "用户一眼就看出你在演，还不如直接上真代码测试。",
-    "source": "Smashing Magazine | 2026-06-05",
-    "url": "https://www.smashingmagazine.com/2026/05/prototype-users-fix-protopie/",
-    "published": "2026-06-21",
-    "uid": "design_ff71959c"
-  },
-  {
-    "title": "CSS 终于有了 sibling-index() 和 sibling-count()",
-    "content": "CSS 新数学布局函数 sibling-index() 和 sibling-count() 正式进入 CSS Values Level 5 规范。过去实现列表交错动画需要写一堆 :nth-child() 规则或 JS 注入行内样式，现在只需一行：`animation-delay: calc(sibling-index() * 100ms)`。5 个元素到 5000 个元素都适用。不依赖 JS、不产生 DOM 污染、无重渲染开销。这是编者等待了多年的 CSS 原生能力。",
-    "quote": "写 nth-child 写到怀疑人生的设计师们，终于可以扔掉 Sass 循环了。",
-    "source": "Smashing Magazine | 2026-06-08",
-    "url": "https://www.smashingmagazine.com/2026/05/mathematical-layouts-sibling-index-sibling-count/",
-    "published": "2026-06-21",
-    "uid": "design_fdbb23f8"
-  },
-  {
-    "title": "难题依然很难——Figma 原型工具的 AI 进化",
-    "content": "在 Figma 工作了七年的设计师转型 PM Nikolas Klein 分享了 AI 如何改变原型制作。Figma Make 团队一直在探索如何让\"更多人一起探索交互创意\"。文章核心论点：工具会变，但设计中的困难问题依然需要专业判断、好奇心和扎实的领域知识。AI 降低了原型创建的门槛，但没有降低创造性决策的门槛。",
-    "quote": "AI 让你画得更快，但想清楚画什么这件事，谁也替不了你。",
-    "source": "Figma Blog | 2026-06-20",
-    "url": "https://www.figma.com/blog/hard-problems-are-still-hard/",
-    "published": "2026-06-21",
-    "uid": "design_c2a251a5"
-  },
-  {
-    "title": "AI 透明度的实用界面模式（下篇）",
-    "content": "传统的 loading spinner 在代理型 AI 体验中彻底失效——用户不知道 AI 在思考、在查数据还是卡死了。文章提出了揭示系统过程、状态和决策过程的界面模式：渐进式响应流、推理步骤可视化、置信度指示器、可干预的决策节点。当 AI 自主性越来越强，设计师需要找到平衡——既不给用户信息过载，也不让他们面对黑箱。",
-    "quote": "AI 替你做事可以，但别让我觉得我在跟黑箱谈恋爱。",
-    "source": "Smashing Magazine | 2026-06-11",
+    "title": "AI 透明度的界面模式（下）：告别转圈圈",
+    "content": "传统加载旋转图标在 AI 智能体体验中彻底失效。当 AI 需要长时间「思考」时，用户只会焦虑。文章提出用清晰的状态更新文案、决策路径可视化和进度透明度来替代 spinner，将「等待时间」转化为「信任建设时刻」，标志着 Agentic UI 时代交互设计的范式转变。",
+    "quote": "转圈圈骗得了产品经理，骗不了用户。AI 时代请学会「说话式加载」。",
+    "source": "Smashing Magazine | 2026-05-28",
     "url": "https://www.smashingmagazine.com/2026/05/practical-interface-patterns-ai-transparency/",
     "published": "2026-06-21",
-    "uid": "design_bcad07de"
+    "uid": "design_474d3634"
   },
   {
-    "title": "用户体验 ROI 的十个数据真相",
-    "content": "Carrie Webster 分享十个数据支撑的 UX 投资回报率事实。每多一秒延迟都有可测量的商业成本：加载慢 1 秒导致转化率降 7%、糟糕的首次体验让 88% 用户不再回来、一致的跨设备体验可提升收入 33%。文章用真实数据说服管理层——UX 不是成本中心，而是增长引擎。",
-    "quote": "所有说\"先上线再优化\"的产品经理，建议把转化率数据打印贴墙上。",
-    "source": "Smashing Magazine | 2026-06-04",
+    "title": "UX ROI 的十个数据支撑事实",
+    "content": "Carrie Webster 分享十个以数据驱动的 UX ROI 事实：设计阶段修复问题成本是上线后的 1/100；每多一秒加载时间直接损失转化率；无障碍设计提升所有用户效率。一个真实案例：移除部分视觉素材后减少 1.2 秒移动端加载时间，直接带来 12% 的完成交易增长。",
+    "quote": "下次老板再说设计不重要，把这篇甩他脸上——数据比你的嘴好使。",
+    "source": "Smashing Magazine | 2026-05-14",
     "url": "https://www.smashingmagazine.com/2026/05/data-backed-truths-user-experience-roi/",
     "published": "2026-06-21",
-    "uid": "design_7f4166e2"
+    "uid": "design_21f12af0"
   },
   {
-    "title": "最佳可扫描性设计实践",
-    "content": "Nemanja Banjanin 总结了 UI 设计中常被忽略但影响最大的因素——可扫描性。用户不会读页面，他们扫视。文章涵盖：F 型阅读模式的应用、视觉层次构建、空白间距策略、列表 vs 段落的选择、CTA 按钮的视觉突出度等实用原则。",
-    "quote": "设计得再好看，用户3秒找不到重点等于白设计。",
-    "source": "Toptal（via Smashing Magazine） | 2026-06-19",
-    "url": "https://www.toptal.com/designers/web/ui-design-best-practices",
+    "title": "你的原型在欺骗用户——以及如何修复",
+    "content": "用户在可用性测试中停在登录页抬头看你的那一刻——他们知道这不是真应用，后续数据全是「演」出来的。文章以银行 App 原型为例：让原型在关键信任节点（登录验证）表现得像真实产品，包括功能性表单输入、密码校验和 Face ID 动画。",
+    "quote": "用户不是傻子，假登录页骗不了人。要做测试就别偷工减料。",
+    "source": "Smashing Magazine | 2026-05-15",
+    "url": "https://www.smashingmagazine.com/2026/05/prototype-users-fix-protopie/",
     "published": "2026-06-21",
-    "uid": "design_ab9be212"
+    "uid": "design_7fa8756a"
+  },
+  {
+    "title": "ariaNotify()：开发者猫薄荷，请慎用",
+    "content": "WAI-ARIA 1.3 规范新增 `ariaNotify()` 方法，允许程序化触发屏幕阅读器朗读。相比传统 ARIA live regions 的复杂方案，新 API 语法简洁到令人兴奋。但文章严肃警告：这是「开发者猫薄荷」，只能在必要时使用，滥用会彻底摧毁无障碍体验。",
+    "quote": "新 API 有多好用，滥用起来就有多灾难。管住手，为盲人用户想想。",
+    "source": "CSS-Tricks | 2026-06-18",
+    "url": "https://css-tricks.com/the-siren-song-of-arianotify/",
+    "published": "2026-06-21",
+    "uid": "design_326f3216"
+  },
+  {
+    "title": "Props For That：CSS 也能感知用户行为了",
+    "content": "Props For That 工具能创建浏览器中 CSS 通常无法感知的实时属性——光标位置、滚动速度、当前时间、表单状态、进度值，可像 CSS 自定义属性一样直接用于样式计算，让纯 CSS 实现过去只有 JS 才能完成的交互反馈。",
+    "quote": "CSS 终于不用装瞎了。以后做交互动效少甩锅给前端。",
+    "source": "CSS-Tricks | 2026-06-16",
+    "url": "https://css-tricks.com/prop-for-that/",
+    "published": "2026-06-21",
+    "uid": "design_4376c8fe"
+  },
+  {
+    "title": "AIGA 授予 IBM 2025 年度杰出企业领袖",
+    "content": "美国专业设计协会 AIGA 表彰 IBM 数十年来将设计作为企业战略力量的承诺，以及在人本设计、伦理设计和前瞻性技术实践上的持续领导力。IBM Enterprise Design Thinking 框架已被全球数千团队采纳。",
+    "quote": "IBM 搞设计这么多年终于被官方盖章了，比那些画大饼的咨询公司靠谱。",
+    "source": "AIGA | 2026-06-18",
+    "url": "https://www.aiga.org/media/press-releases/ibm-named-2025-outstanding-corporate-leader-by-aiga",
+    "published": "2026-06-21",
+    "uid": "design_7d1c3d4d"
+  },
+  {
+    "title": "AI 正在带回那些「怪异」却迷人的界面",
+    "content": "Medium 文章探讨 AI 如何让界面从千篇一律的标准化设计回归个性表达。从 Winamp 皮肤到「氛围驱动设计」，AI 正在打开定制化、趣味性软件体验的大门。让用户觉得「酷、有趣、专属」才是未来趋势。",
+    "quote": "Material Design 统治十年了，AI 终于让界面可以长点不一样的样子。",
+    "source": "Medium | 2026-06-18",
+    "url": "https://medium.com/@matthewlarn/ai-can-bring-back-the-old-weird-interfaces-we-loved-7358cacb8cc1",
+    "published": "2026-06-21",
+    "uid": "design_38d1f6ee"
+  },
+  {
+    "title": "CSS @function 提案与 Dialog 元素隐藏用法",
+    "content": "CSS Tricks「什么重要#13」整理近期动态：CSS @function 提案让 CSS 真正拥有函数能力、alpha() 色彩新函数、Grid Lanes 布局新思路、Dialog 元素的不为人知用法。Dialog 原生模态框支持正在改变 Web 交互组件的实现方式。",
+    "quote": "搞了二十年模态框终于不用自己造了，感谢浏览器厂商做个人。",
+    "source": "CSS-Tricks | 2026-06-15",
+    "url": "https://css-tricks.com/whats-important-13/",
+    "published": "2026-06-21",
+    "uid": "design_a3af30cc"
+  },
+  {
+    "title": "sibling-index()：一行 CSS 搞定交错动画",
+    "content": "Smashing Magazine 深入解析 CSS 新数学布局函数 sibling-index() 和 sibling-count()。以前做交错动画需要写数十条 nth-child 规则或 JS 注入内联样式，现在一个 calc() 搞定。不用生成器、不依赖 JS，浏览器原生自感知元素位置，从 5 个到 5000 个都能优雅处理。",
+    "quote": "十年痛经级 CSS 问题终于被根治了，前端工程师少掉一半头发。",
+    "source": "Smashing Magazine | 2026-05-19",
+    "url": "https://www.smashingmagazine.com/2026/05/mathematical-layouts-sibling-index-sibling-count/",
+    "published": "2026-06-21",
+    "uid": "design_1e877454"
+  },
+  {
+    "title": "为什么你的 3D 视图过渡动效总不生效？",
+    "content": "CSS-Tricks 揭示跨文档 3D 视图过渡的常见陷阱：浏览器默认会将过渡快照扁平化，导致 3D 翻转效果失效。关键在于在父容器上正确设置 perspective 属性。一篇给厌倦了「怎么旋转不好使」的前端工程师的实用排查指南。",
+    "quote": "3D 过渡翻车十有八九是 perspective 没放对地方，CSS 的锅别怪自己。",
+    "source": "CSS-Tricks | 2026-06-10",
+    "url": "https://css-tricks.com/why-isnt-my-3d-view-transition-working/",
+    "published": "2026-06-21",
+    "uid": "design_64fd2a7e"
+  },
+  {
+    "title": "CSSQuake：用纯 CSS 重制经典游戏《雷神之锤》",
+    "content": "开发者用纯 CSS（PolyCSS 引擎）实现了经典 FPS 游戏《雷神之锤》的渲染，登顶 Hacker News 获得 352 票。这个实验性项目证明了 CSS 在 3D 图形渲染方面的潜力远超预期，虽然还不能真正玩，但渲染出 3D 游戏场景本身就是一场 CSS 炫技。",
+    "quote": "别人用 CSS 写游戏，你连居中都不会。前端圈的参差令人窒息。",
+    "source": "CSSQuake / HN | 2026-06-20",
+    "url": "https://cssquake.com/",
+    "published": "2026-06-21",
+    "uid": "design_e5c29b7c"
+  },
+  {
+    "title": "导航标签里别再写「navigation」了",
+    "content": "CSS-Tricks 发布无障碍写作技巧：在 ARIA label 中重复「navigation」一词是常见误区。屏幕阅读器已经会朗读 role 信息，重复描述只会产生冗余噪音。简洁、有意义的标签才是无障碍的最佳实践。",
+    "quote": "屏幕阅读器用户又不是傻子，别在标签里写废话增加噪音。",
+    "source": "CSS-Tricks | 2026-06-12",
+    "url": "https://css-tricks.com/navigation-in-your-navigation-labels/",
+    "published": "2026-06-21",
+    "uid": "design_3f23aa0c"
   }
 ]
