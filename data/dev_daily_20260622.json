@@ -1,173 +1,137 @@
 [
   {
-    "title": "(How to Write a (Lisp) Interpreter (In Python))",
-    "content": "# Comments: 7",
-    "quote": "",
-    "source": "HN Front Page",
-    "url": "https://norvig.com/lispy.html",
+    "title": "Lodash作者自述开源倦怠：日下载1亿次的库，维护者却独自崩溃",
+    "content": "JavaScript生态中下载量超1亿次/天的Lodash库，其创建者John-David Dalton近日在接受OpenJS基金会采访时首次详细讲述了开源维护者的心理压力。Dalton透露，项目开发显著放缓的时期恰逢母亲去世，个人生活巨变让他无法维持每日维护节奏。尽管Lodash看似由社区驱动，但核心决策和大量代码仍长期依赖单一维护者。Dalton呼吁社区建立更可持续的开源维护模式，包括资金支持和维护者轮换机制。",
+    "quote": "1亿下载量养不活一个维护者，开源社区的「用爱发电」模型该进博物馆了。",
+    "url": "https://openjsf.org/blog/burnout-is-real-for-open-source-maintainers",
+    "source": "OpenJS Foundation",
     "published": "2026-06-22",
-    "uid": "dev_04632afe"
+    "uid": "dev_cbcb1275"
   },
   {
-    "title": "The case against geometric algebra (2024)",
-    "content": "# Comments: 72",
-    "quote": "",
-    "source": "HN Front Page",
-    "url": "https://alexkritchevsky.com/2024/02/28/geometric-algebra.html",
+    "title": "宁要重复代码也不要错误的抽象：Sandi Metz经典在AI编程时代重燃",
+    "content": "Sandi Metz 2016年的经典文章《The Wrong Abstraction》近日在Hacker News重新登上首页，获得250+点赞和170+条讨论。文章核心观点是：在软件工程中，重复优于错误抽象——当你不确定某个抽象的边界时，宁可容忍少量重复代码，也不要过早提取一个不适合未来需求的抽象层。错误抽象的维护成本远高于重复代码的消除成本。这一观点在AI辅助编程时代更加应验，LLM生成的代码尤其容易出现过度抽象的问题。",
+    "quote": "AI写代码后这条原则更扎心了：LLM最擅长的就是制造花里胡哨的错误抽象。",
+    "url": "https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction",
+    "source": "Hacker News",
     "published": "2026-06-22",
-    "uid": "dev_590a81d1"
+    "uid": "dev_7d71e681"
   },
   {
-    "title": "Epoll vs. io_uring in Linux",
-    "content": "# Comments: 52",
-    "quote": "",
-    "source": "HN Front Page",
-    "url": "https://sibexi.co/posts/epoll-vs-io_uring/",
+    "title": "Beyond All Reason：零预算开源RTS游戏在HN爆火，致敬经典横扫千军",
+    "content": "开源即时战略游戏Beyond All Reason在Hacker News上获得324个点赞和179条讨论，引发开发者社区关注。这款完全免费的RTS游戏致敬经典《Total Annihilation》，基于SpringRTS引擎开发，支持Windows和Linux双平台。项目完全由社区志愿者驱动，无商业资金支持，但已实现大规模战斗（支持数千单位同屏）、物理弹道系统、地形变形等高级特性。目前仍在活跃开发中，最新版本优化了多核渲染性能。",
+    "quote": "零预算做出来的游戏比某些3A大作还好玩，建议大厂反思一下钱花哪了。",
+    "url": "https://www.beyondallreason.info",
+    "source": "Hacker News",
     "published": "2026-06-22",
-    "uid": "dev_ac33c1e9"
+    "uid": "dev_bc0eb659"
   },
   {
-    "title": "Slow breathing modulates brain function and risk behavior",
-    "content": "# Comments: 87",
-    "quote": "",
-    "source": "HN Front Page",
-    "url": "https://www.cell.com/neuron/fulltext/S0896-6273(26)00339-9",
+    "title": "LLM时代出售软件还可行吗？Brandur提出「最小可售单元」理论",
+    "content": "前Stainless工程师Brandur在其博客中探讨了一个尖锐问题：在LLM可以轻松生成内部替换方案的时代，独立开发者出售软件是否还有前途？他提出了「最小可售单元」理论——虽然LLM大幅降低了软件构建成本，但并未降至零。优秀的LLM构建系统需要持续的反馈循环和人工调整，而产品化封装、持续维护、用户支持和领域知识积累仍有难以复制的核心价值。关键在于找到那些LLM无法轻易复制的软件护城河。",
+    "quote": "LLM能写代码不代表能运营产品，就像给你画笔不等于你就是毕加索。",
+    "url": "https://brandur.org/minimum-viable-unit",
+    "source": "Hacker News",
     "published": "2026-06-22",
-    "uid": "dev_3ea15b1b"
+    "uid": "dev_b9cee8b5"
   },
   {
-    "title": "palmier-io/palmier-pro",
-    "content": "",
-    "quote": "",
-    "source": "GitHub Trending Daily",
-    "url": "https://github.com/palmier-io/palmier-pro",
+    "title": "Claude上线身份验证机制：匿名AI使用时代或将走向终结",
+    "content": "Anthropic正式在Claude平台上推出身份验证（Identity Verification）功能，要求用户在使用高级功能时完成身份核验。根据官方支持文档，该机制旨在防止API滥用、提升账户安全并满足监管合规要求。验证流程支持多种方式，包括政府ID上传和生物特征识别。这一举措在HN上引发219点热议，开发者社区对此褒贬不一：支持者认为能遏制恶意使用，反对者担忧隐私保护和普通用户访问门槛提升的问题。",
+    "quote": "AI也要实名制了，以后再问Claude敏感问题它可能直接打110。",
+    "url": "https://support.claude.com/en/articles/14328960-identity-verification-on-claude",
+    "source": "Hacker News",
     "published": "2026-06-22",
-    "uid": "dev_7374e8aa"
+    "uid": "dev_ead6b93e"
   },
   {
-    "title": "calesthio/OpenMontage",
-    "content": "",
-    "quote": "",
-    "source": "GitHub Trending Daily",
-    "url": "https://github.com/calesthio/OpenMontage",
+    "title": "AMD MI355X GPU编程深度指南：从第一性原理推导最优线程配置",
+    "content": "一篇关于AMD MI355X GPU占用率的技术深度文章登上了Hacker News。作者从第一性原理出发，详细推导了MI355X上最优线程块配置以达到最高计算单元利用率的方法。文章全面覆盖了寄存器压力分析、共享内存限制、波前调度机制等关键概念，并提供了实用的计算公式和CUDA代码示例。同时系统性对比了NVIDIA H100在Occupancy计算上的架构差异，对从事GPU异构计算编程的开发者有极高参考价值。",
+    "quote": "终于有人把AMD GPU的Occupancy算清楚了，黄老板的护城河又浅了一寸。",
+    "url": "https://indianspeedster.github.io/blog/occupancy-math-mi355x/",
+    "source": "Hacker News",
     "published": "2026-06-22",
-    "uid": "dev_91770512"
+    "uid": "dev_ce05c615"
   },
   {
-    "title": "大家对于 Anthropic 估值的看法",
-    "content": "近三个月，anthropic 估值从 3800 亿涨到了最近的 9000 亿。大家觉得它上市后能到什么什么水平。单单挣程序员的钱能支撑这么高的估值吗。",
-    "quote": "",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1212285#reply12",
+    "title": "APL语言编写3D体素游戏引擎：用最晦涩的语言做最极客的事",
+    "content": "一位开发者在GitHub发布了用APL（一种以符号密集著称的数组编程语言）编写的3D体素游戏引擎avoxelgame，在HN获得123个点赞。该项目展示了APL在图形编程领域的惊人表现力：仅用极少量代码就实现了体素渲染、光照计算和基础的交互逻辑。APL的数组操作原语天然契合3D图形中的矩阵变换和批量像素操作需求。项目代码极其简洁但可读性对大多数程序员来说挑战巨大，评论区引发了一场关于代码简洁性与可维护性的激烈讨论。",
+    "quote": "APL写3D引擎就像用算盘搞航天计算，能跑起来本身就是行为艺术。",
+    "url": "https://github.com/namgyaaal/avoxelgame",
+    "source": "GitHub",
     "published": "2026-06-22",
-    "uid": "dev_d87996d2"
+    "uid": "dev_e433105c"
   },
   {
-    "title": "🖖Manus 被 Meta 数十亿美元收购❗❗❗",
-    "content": "这几天最爆的新闻会围绕 Manus 吧，国内对这家公司的争议很大，今天迎来可以说是最好的结局：被 Meta 数十亿美元收购！！！",
-    "quote": "",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1182036#reply86",
+    "title": "Linux x86-64系统调用插桩全解：内存间接调用法的深度技术剖析",
+    "content": "一篇关于Linux x86-64平台系统调用插桩的技术系列文章在HN引发深入讨论。作者探索了使用内存间接调用技术拦截系统调用的完整方案，详细分析了x86-64架构下的syscall指令语义、MSR寄存器读写机制以及内核sys_call_table的内存布局和寻址方式。文章还讨论了Intel CET控制流强制技术对间接调用插桩施加的限制，并解释了为何某些初看可行的拦截方案在实际环境中完全不可用。这是底层系统安全领域的优质参考资料。",
+    "quote": "看完才发现自己对syscall的理解还停留在「int 0x80一把梭」的水平。",
+    "url": "https://www.humprog.org/~stephen/blog/2026/06/15/",
+    "source": "Hacker News",
     "published": "2026-06-22",
-    "uid": "dev_3219eee6"
+    "uid": "dev_a3782540"
   },
   {
-    "title": "Show HN: A TypeScript Pokémon Crystal TUI for Agent Benchmarking",
-    "content": "# Comments: 0",
-    "quote": "",
-    "source": "HN Show HN",
-    "url": "https://github.com/TheCulliganMan/crystal-llm/",
+    "title": "「开发者根本不懂CORS」：一篇旧文在HN引爆242条血泪史",
+    "content": "一篇2019年的技术文章《Developers Don't Understand CORS》在Hacker News重新火爆，获得309个点赞和242条评论。文章尖锐指出大多数Web开发者对跨域资源共享的理解停留在「加个Access-Control-Allow-Origin头就行了」的层面，而实际上CORS涉及复杂的预检请求机制、凭证模式的安全限制、通配符使用规则、缓存策略等多个维度。评论区大量开发者分享了自己因CORS配置错误导致线上事故的真实经历。",
+    "quote": "CORS是前端面试八股文之王，但生产环境出问题没几个能真正修好。",
+    "url": "https://fosterelli.co/developers-dont-understand-cors",
+    "source": "Hacker News",
     "published": "2026-06-22",
-    "uid": "dev_91a05f01"
+    "uid": "dev_dab11b5b"
   },
   {
-    "title": "Show HN: Atizar-AI agents where the server runs approved actions, not the model",
-    "content": "# Comments: 0",
-    "quote": "",
-    "source": "HN Show HN",
-    "url": "https://atizar.io",
+    "title": "Proxmox VE上运行MicroVM完整指南：告别Docker资源浪费的新选择",
+    "content": "一篇在Hacker News获得179点赞的技术博客详细介绍了在Proxmox VE虚拟化平台上运行MicroVM的完整方案。作者使用Cloud-Hypervisor作为VMM，结合轻量级Linux内核和最小化rootfs，实现了秒级启动时间、内存占用低于50MB的微型虚拟机。相比Docker容器方案，MicroVM提供了真正的硬件虚拟化安全隔离，同时避免了传统VM动辄数百MB内存的资源浪费。文中提供了可直接使用的Proxmox配置脚本和详细性能基准测试数据。",
+    "quote": "Docker不是万能药，MicroVM在隔离性和轻量化之间找到了完美平衡点。",
+    "url": "https://taoofmac.com/space/blog/2026/06/18/1845",
+    "source": "Hacker News",
     "published": "2026-06-22",
-    "uid": "dev_63ef9fc0"
+    "uid": "dev_d3515c14"
   },
   {
-    "title": "Show HN: CommitGate – Automatically scan your commit for vulnerabilities",
-    "content": "Hello HN! I built a pre-commit code scanner that checks your staged changes for security vulnerabilities every time you run 'git commit'.I am an inexperienced programmer and this is my first personal",
-    "quote": "",
-    "source": "HN Show HN",
-    "url": "https://github.com/ductrl/CommitGate",
+    "title": "单台DGX Spark同时跑两个Qwen3模型：显存驻留数学完整拆解",
+    "content": "一篇技术博客详细计算了在单台NVIDIA DGX Spark（128GB统一内存）上同时部署两个Qwen3模型的内存驻留方案。作者以Qwen3-30B-A3B（MoE架构，30B总参数仅激活3B）和Qwen3-8B为例，精确计算了BF16和INT4量化格式下的KV缓存、模型权重、激活内存的占用情况。结论显示，采用INT4量化后单台DGX Spark理论上可同时运行两个模型且剩余约20GB用于KV缓存，为本地多模型推理提供了实用工程参考。",
+    "quote": "两个模型挤一台小机器，像极了在北京合租的打工人。但数学上确实可行。",
+    "url": "https://www.devashish.me/p/two-qwen3-models-on-one-dgx-spark",
+    "source": "Hacker News",
     "published": "2026-06-22",
-    "uid": "dev_0f886656"
+    "uid": "dev_6c113bd6"
   },
   {
-    "title": "Send SMS to Uganda, Kenya, Tanzania and 40+ Countries from One API — Here's the Code",
-    "content": "I Built Uganda's Most Affordable SMS API — Here's How to Integrate It in 5 Minutes (PHP, Python, JS) TL;DR: Yoola SMS is a bulk SMS platform built for Uganda and East Africa. API starts at UGX 20/S",
-    "quote": "",
-    "source": "Dev.to",
-    "url": "https://dev.to/yoolasms/send-sms-to-uganda-kenya-tanzania-and-40-countries-from-one-api-heres-the-code-pm8",
+    "title": "Claude Pulse：用手机远程审批Claude Code的终端操作调用",
+    "content": "开发者在GitHub发布了Claude Pulse，一个专为Claude Code设计的移动端远程审批仪表盘。当Claude Code在终端执行需要人工确认的操作时，Pulse会通过WebSocket实时推送通知到手机浏览器，用户可直接在手机上批准或拒绝shell命令执行和文件写入。项目基于Next.js和Tailwind CSS构建前端界面，后端使用Node.js WebSocket服务处理实时通信，安全方面通过临时token和TLS加密保障远程审批的安全性。",
+    "quote": "把Claude的审批权交给手机，以后蹲坑也能远程操控代码了，现代开发者的终极形态。",
+    "url": "https://github.com/nikitadoudikov/claude-pulse",
+    "source": "GitHub",
     "published": "2026-06-22",
-    "uid": "dev_bcd12dd5"
+    "uid": "dev_f19199ff"
   },
   {
-    "title": "Breaking Down Problems Like Neo Dodges Bullets",
-    "content": "The Quest Begins (The “Why”) Honestly, I was staring at a monster JSON blob that looked like something a dragon hoarded after a raid on a config‑store. The object had nested objects, arrays inside o",
-    "quote": "",
-    "source": "Dev.to",
-    "url": "https://dev.to/timevolt/breaking-down-problems-like-neo-dodges-bullets-3m7j",
+    "title": "IvorySQL 5.4正式发布：兼容Oracle的开源PostgreSQL数据库再升级",
+    "content": "IvorySQL社区于6月17日正式发布IvorySQL 5.4版本。该数据库基于PostgreSQL 18.4构建，核心特性包括Oracle兼容层的深度增强——新增对Oracle PL/SQL包语法、序列伪列CURRVAL和NEXTVAL以及更多内置函数的完整支持。同时改进了逻辑复制性能，支持并行apply worker提升同步吞吐量，并引入了增量备份和时间点恢复（PITR）的增强功能。作为国内主导的开源数据库项目，在企业Oracle迁移场景中持续获得关注。",
+    "quote": "又一个「去O」利器，就是不知道迁移完Oracle的存储过程能不能不掉坑。",
+    "url": "https://www.oschina.net/news/460848/ivorysql-5-4-released",
+    "source": "OSCHINA",
     "published": "2026-06-22",
-    "uid": "dev_771218ff"
+    "uid": "dev_8e44756a"
   },
   {
-    "title": "Bun shipped a million lines of AI-generated unsafe code. That's not bold, it's reckless.",
-    "content": "There were thirteen thousand unsafe blocks. This text was generated by AI. It was sent to a JavaScript runtime that millions of developers use. Take a moment to think about that. Bun's massive Rust r",
-    "quote": "",
-    "source": "Dev.to",
-    "url": "https://dev.to/adioof/bun-shipped-a-million-lines-of-ai-generated-unsafe-code-thats-not-bold-its-reckless-h3g",
+    "title": "Plane开源项目管理平台星标突破5.2万：TypeScript全栈架构深度解析",
+    "content": "开源项目管理平台Plane在GitHub上持续走热，总星标突破52000，本周新增1300多星标。作为Jira、Linear和Monday的开源竞品，Plane采用TypeScript全栈架构，前端使用Next.js框架，后端基于NestJS构建，数据库采用PostgreSQL。功能上完整支持任务管理、Sprint规划、文档协作和Issue分类筛选。最新版本增强了AI辅助能力，包括自动任务分配建议和智能Sprint排期优化。项目已获YC投资，采用Apache 2.0许可证。",
+    "quote": "Jira用着像上刑，Plane用着像度假。但迁移历史数据的痛苦谁都逃不掉。",
+    "url": "https://github.com/makeplane/plane",
+    "source": "GitHub",
     "published": "2026-06-22",
-    "uid": "dev_7b30d612"
+    "uid": "dev_bf3408e5"
   },
   {
-    "title": "一文读懂 OpenAI Codex 源码的原理、架构与未来 - 哥不是小萝莉",
-    "content": "1. 概述 如果你第一次打开 codex-main 这个源码目录，很容易被它的规模吓住：顶层有 npm 包、Rust workspace、SDK、app-server、MCP、插件、技能、沙箱、TUI、云任务、线程存储、模型提供商、登录认证等大量模块。它不像一个传统命令行工具，也不像一个简单的 Ch",
-    "quote": "",
-    "source": "博客园 Cnblogs",
-    "url": "https://www.cnblogs.com/smartloli/p/20684447",
+    "title": "Insomnia API客户端开源复兴：Kong接管后实现GraphQL/gRPC/SSE全协议覆盖",
+    "content": "Kong公司旗下的开源API客户端Insomnia最近在GitHub上活跃度激增，本周新增657星标。作为Postman的开源竞品，Insomnia现已全面支持五种主流协议：REST、GraphQL、WebSocket、SSE和gRPC。最新版本引入了环境变量层级继承机制、请求链自动串联功能和集合级前置脚本能力，大幅提升了API测试的自动化水平。项目采用TypeScript和Electron架构构建桌面客户端，支持Cloud同步、本地文件和Git仓库三种数据存储方式。",
+    "quote": "Postman越做越臃肿收费越狠，Insomnia证明了开源API工具也能优雅好用。",
+    "url": "https://github.com/Kong/insomnia",
+    "source": "GitHub",
     "published": "2026-06-22",
-    "uid": "dev_e0734772"
-  },
-  {
-    "title": "Loop Runtime 架构拆解：别再手动催 Agent，先把工程闭环跑起来 - AI小老六",
-    "content": "拆解 Coding Agent 从 Prompt 到 Loop 的系统化改造：触发、隔离、验证、状态和人工闸门。 原文链接：AI 小老六 导语 过去一段时间，很多人使用 Coding Agent 的方式其实还停留在&quot;远程结对&quot;：把需求写清楚，补一段上下文，等它返回结果，再继续追问。这个办法有用，但杠",
-    "quote": "",
-    "source": "博客园 Cnblogs",
-    "url": "https://www.cnblogs.com/ai-old-six/p/20683388",
-    "published": "2026-06-22",
-    "uid": "dev_2da34660"
-  },
-  {
-    "title": "用 Orleans 搞定 AI 编程工作台的后台分布式难题 - Newbe36524",
-    "content": "用 Orleans 搞定 AI 编程工作台的后台分布式难题 在一个进程里管十几种 AI CLI 工具、同时拖着几十个会话的实时流——听起来像在做梦？其实我们也觉得挺离谱的。但 Orleans 的 Virtual Actor 模型，还真就把这份复杂度收得服服帖帖。怎么说呢，有些工具生来就是解决某种问题",
-    "quote": "",
-    "source": "博客园 Cnblogs",
-    "url": "https://www.cnblogs.com/newbe36524/p/20681196",
-    "published": "2026-06-22",
-    "uid": "dev_088205b0"
-  },
-  {
-    "title": "Excelize 开源社区荣获 2025 红山开源明星项目三等奖",
-    "content": "2025 年 11 月 16 日，由红山开源平台主办的“2025 红山开源大会”，在北京香山颐和宾馆红山厅成功落下帷幕。为表彰在开源领域做出卓越贡献的项目，大会特别设立 2025 年度红山开源平台明星项目颁奖环节。 Excelize 开源社区荣获了 2025 红山开源明星项目三等奖，活动详情详见文章：2025 红山开源大会圆满收官，共筑开源生态新未来 Excelize 是用于操作电子表格办公文档",
-    "quote": "",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1180445#reply1",
-    "published": "2026-06-22",
-    "uid": "dev_19895bf2"
-  },
-  {
-    "title": "Google Antigravity 出来啦",
-    "content": "google antigravity, 免费可以用 Gemini 3 Pro 、Claude Sonnet 4.5,大家有试过怎么样嘛，这也太壕了",
-    "quote": "",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1173666#reply9",
-    "published": "2026-06-22",
-    "uid": "dev_02604af8"
+    "uid": "dev_21a7656e"
   }
 ]
