@@ -1,0 +1,1594 @@
+[
+  {
+    "slug": "skill-regression",
+    "displayName": "Skill Regression",
+    "summary": "Regression testing framework for AgentSkills. Analyzes a target skill, runs script-layer assertions and AI-layer semantic scoring, and outputs a Markdown rep...",
+    "description": "Regression testing framework for AgentSkills. Analyzes a target skill, runs script-layer assertions and AI-layer semantic scoring, and outputs a Markdown report. Supports two backends: OpenAI-compatible LLM (default, works anywhere) or OpenClaw cron-based agent trigger (auto-detected if openclaw CLI present). Use when the user asks to \"test a skill\", \"regression test xxx skill\", \"run skill QA\", or \"audit my skill against test cases\". Requires SR_LLM_API_KEY env var or interactive setup; supports .env files.",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0",
+      "llm": "1.0.0",
+      "openai": "1.0.0",
+      "quality": "1.0.0",
+      "regression": "1.0.0",
+      "testing": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1782058706061,
+    "updatedAt": 1782058706061,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1782058706061,
+      "changelog": "Initial open-source release. Regression testing framework for AgentSkills with dual backend: 'api' (OpenAI-compatible, works anywhere) or 'openclaw' (cron probe, opt-in). TEST.md format with path placeholders for scriptable assertions. LLM-as-judge semantic scoring. Interactive onboarding + .env support (private SR_* namespace). Removed all internal infra dependencies (Ashley/REDoc/kimi).",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "tax-bp-knowledge",
+    "displayName": "税务BP客服知识库",
+    "summary": "税务BP客服知识库 Skill。当用户提问涉及以下场景时激活：(1)增值税、企业所得税、个人所得税、印花税等税种的税率、计算、申报问题 (2)发票开具、红冲、验真、进项抵扣等发票相关问题 (3)外卖/到家业务线的配送服务税率、佣金税目、骑手个税、商家结算发票等 (4)酒旅/到店业务线的住宿服务税率、旅游差额征税、...",
+    "description": "税务BP客服知识库 Skill。当用户提问涉及以下场景时激活：(1)增值税、企业所得税、个人所得税、印花税等税种的税率、计算、申报问题 (2)发票开具、红冲、验真、进项抵扣等发票相关问题 (3)外卖/到家业务线的配送服务税率、佣金税目、骑手个税、商家结算发票等 (4)酒旅/到店业务线的住宿服务税率、旅游差额征税、门票收入、OTA佣金等 (5)结算开票流程、对账流程、红冲流程 (6)税务政策查询、政策文件检索 (7)用户提到税小团、税务客服、税务知识库时。覆盖美团CLC到家（外卖）和到店（酒旅）两大业务线。",
+    "topics": [],
+    "tags": {
+      "latest": "2.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1782057106308,
+    "updatedAt": 1782058647506,
+    "latestVersion": {
+      "version": "2.1.0",
+      "createdAt": 1782058647506,
+      "changelog": "v2.1: 删除面向BP的维护指南（BP看填写模板文档），保留Agent所需的文档格式约定",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "cooplens-skill",
+    "displayName": "Cooplens",
+    "summary": "Analyze Chinese-foreign cooperative undergraduate programs and institutions for parents with official-source verification, direct parent-facing answers befor...",
+    "description": "Analyze Chinese-foreign cooperative undergraduate programs and institutions for parents with official-source verification, direct parent-facing answers before Markdown/PDF reports, local project/ranking indexes as discovery-only aids, multi-project comparison, province/score/rank candidate retrieval, and CoopLens S1/S2/S3 style report workflows. Use when Codex is asked for CoopLens, 中外合作办学项目/机构分析, 家长版择校报告, 单项目分析, 多项目对比, 按省份分数位次检索候选项目, 官方来源核验, or cooperative-program comparison.",
+    "topics": [
+      "education",
+      "gaokao"
+    ],
+    "tags": {
+      "latest": "0.9.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1782052422366,
+    "updatedAt": 1782058290352,
+    "latestVersion": {
+      "version": "0.9.2",
+      "createdAt": 1782058290352,
+      "changelog": "CoopLens Skill v0.9.2 is a significant update with enhanced runtime data handling and strengthened data presentation rules:\n\n- Requires obtaining and displaying the exact runtime date/time at every execution, using a recommended tool, and recording relevant metadata internally.\n- Mandates a visible runtime-date line after the fixed disclaimer in all user answers and reports, and uses this date for determining current-year status in all outputs.\n- All user-facing numeric values must now display the \"约\" (approximate) prefix for clarity.\n- Reference sources must be presented as clickable links/citations in all answer formats; text-only citations are no longer allowed.\n- Improvements tightened the consistency and evidence requirements for every reported fact.\n- Removes redundant sample files (e.g., skill-card.md) for a leaner package.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "ecommerce-dropshipping-product-research",
+    "displayName": "Ecommerce Dropshipping Product Research",
+    "summary": "Evaluates dropshipping products by scoring demand, competition, margin, creative fit, and risk to recommend go, test, or reject decisions.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 358,
+      "installsAllTime": 13,
+      "installsCurrent": 2,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1776074768571,
+    "updatedAt": 1782057990352,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1782057990352,
+      "changelog": "- Added comprehensive documentation (README.md) and metadata (_meta.json) for better usability and discoverability.\n- Expanded the SKILL.md with more scenarios, clearer usage instructions, and detailed example prompts.\n- Documented practical, step-by-step product research workflows and methods, including strategies for Western and Chinese ecommerce platforms.\n- No core logic or API changes; update focused on documentation and guidance.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "moltalyzer",
+    "displayName": "Moltalyzer",
+    "summary": "Real-time intelligence feeds for AI agents. Flagship: Polymarket prediction-market intelligence — short-window movers, calibrated whale entries, order-book m...",
+    "description": "Real-time intelligence feeds for AI agents. Flagship: Polymarket prediction-market intelligence — short-window movers, calibrated whale entries, order-book microstructure, and resolving-soon timing across ~42,000 markets. Plus Moltbook community sentiment, GitHub trends, Pulse narrative intelligence, and a cross-source Master Intelligence Digest. Computed, not raw. Free index + preview endpoints on every feed (no auth); deeper signals are pay-per-call via x402.",
+    "topics": [
+      "GitHub"
+    ],
+    "tags": {
+      "latest": "2.4.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1384,
+      "installsAllTime": 45,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 11
+    },
+    "createdAt": 1770946174453,
+    "updatedAt": 1782057679924,
+    "latestVersion": {
+      "version": "2.4.1",
+      "createdAt": 1782057679924,
+      "changelog": "Refresh: free /digests/latest routes, tokens temporarily-offline notice, advisor single-tier $0.05, prices aligned to API 4.2.5",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-compatible-llm-gateway",
+    "displayName": "OpenAI-Compatible LLM Gateway",
+    "summary": "OpenAI-compatible LLM gateway for AI agents — point your OpenAI client's base_url here and pay per call in USDC via x402 (Base or Solana) or a funded key. 17...",
+    "description": "OpenAI-compatible LLM gateway for AI agents — point your OpenAI client's base_url here and pay per call in USDC via x402 (Base or Solana) or a funded key. 17 models (GPT, Claude, Gemini, DeepSeek, Llama, Kimi, Qwen). No signup, no API key, no rate limits. The keyless pay-per-call alternative to OpenRouter and BlockRun.",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1782057631390,
+    "updatedAt": 1782057631390,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1782057631390,
+      "changelog": "Initial release of OpenAI-Compatible LLM Gateway.\n\n- OpenAI-compatible API for LLM completions, supporting 17 top models (GPT, Claude, Gemini, etc).\n- No signup or API key required; pay per call in USDC via x402 (Base/Solana) or fund a key for use as `api_key`.\n- Supports drop-in `base_url` use with OpenAI clients and SDKs.\n- Provides tiered endpoints for flexible pricing.\n- No rate limits, no subscriptions; keyless alternative to OpenRouter and BlockRun.\n- Bundled with access to 350+ data and compliance tools via the same API.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "ltp-rapidx-trading",
+    "displayName": "LTP RapidX Trading",
+    "summary": "Use when an agent needs to operate RapidX through MCP or CLI for portfolio reads, market reads, order preview, order submit/replace/cancel, position manageme...",
+    "description": "Use when an agent needs to operate RapidX through MCP or CLI for portfolio reads, market reads, order preview, order submit/replace/cancel, position management, algo orders, or explicit live trading verification.",
+    "topics": [
+      "Trading"
+    ],
+    "tags": {
+      "latest": "1.0.10"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 386,
+      "installsAllTime": 14,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 10
+    },
+    "createdAt": 1780399540093,
+    "updatedAt": 1782057458419,
+    "latestVersion": {
+      "version": "1.0.10",
+      "createdAt": 1782057458419,
+      "changelog": "Update RapidX automation trading guidance",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "ltp-rapidx-config",
+    "displayName": "LTP RapidX Config",
+    "summary": "Use when an agent needs to install or configure RapidX CLI/MCP access, set production LTP credentials, locate the agent workspace MCP config, review integrat...",
+    "description": "Use when an agent needs to install or configure RapidX CLI/MCP access, set production LTP credentials, locate the agent workspace MCP config, review integration, discover tools, or run read-only self-checks.",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.10"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 379,
+      "installsAllTime": 14,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 10
+    },
+    "createdAt": 1780399520955,
+    "updatedAt": 1782057440899,
+    "latestVersion": {
+      "version": "1.0.10",
+      "createdAt": 1782057440899,
+      "changelog": "Update RapidX automation configuration guidance",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "growth-engineer",
+    "displayName": "Growth Engineer",
+    "summary": "Growth Engineer for mobile apps and agent runtimes including OpenClaw and Hermes. Correlate analytics, crashes, billing, feedback, store signals, and repo co...",
+    "description": "Growth Engineer for mobile apps and agent runtimes including OpenClaw and Hermes. Correlate analytics, crashes, billing, feedback, store signals, and repo context into proposal drafts that can flow into agent chat, GitHub issues, or draft pull requests.",
+    "topics": [
+      "GitHub"
+    ],
+    "tags": {
+      "latest": "1.0.170"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 2566,
+      "installsAllTime": 88,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 117
+    },
+    "createdAt": 1774150430699,
+    "updatedAt": 1782057188181,
+    "latestVersion": {
+      "version": "1.0.170",
+      "createdAt": 1782057188181,
+      "changelog": "- Improved script execution flow and orchestration in startup and wizard scripts.\n- Enhanced reliability of connector health checks.\n- Refined test coverage for recurring connector health cadence.\n- Minor dependency and metadata updates in package configuration.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "enhanced-prompt-suite",
+    "displayName": "Enhanced Prompt Suite",
+    "summary": "增强提示词套件（为大语言模型安装操作系统和应用软件）。模式通用提示词套件：模式直用（连续场运算、身份涌现场、身份基元链）、模式改进（10种创新元框架：第一性原理、逆向思维、辩证综合、随机性驱动、涌现生成、演化迭代、系统动力学、约束驱动、故事叙述、游戏化）、模式迁移、模式构建。领域专用提示词模板可生成更多具体领域专...",
+    "description": "增强提示词套件（为大语言模型安装操作系统和应用软件）。模式通用提示词套件：模式直用（连续场运算、身份涌现场、身份基元链）、模式改进（10种创新元框架：第一性原理、逆向思维、辩证综合、随机性驱动、涌现生成、演化迭代、系统动力学、约束驱动、故事叙述、游戏化）、模式迁移、模式构建。领域专用提示词模板可生成更多具体领域专用提示词，已生成：复杂知识与复杂功能、健康生活与个人管理、教育学习与内容创作、时间序列与对话记录、商业金融与战略规划、产品工程与项目管理、商业孵化与策划执行、视频主题与内容创作。",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 49,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1781914319777,
+    "updatedAt": 1782056858010,
+    "latestVersion": {
+      "version": "1.0.2",
+      "createdAt": 1782056858010,
+      "changelog": "- Description updated to clarify skill functions and summarize available prompt templates.\n- All example prompts in documentation changed from quote style to code block style for better visibility.\n- No changes to code or functional files; documentation improvement only.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "skill-hub-united",
+    "displayName": "Skill Hub United",
+    "summary": "Install skills from multiple skill hubs with one tool: clawhub.ai (default), skills.sh (npx skills, GitHub-based), the official anthropics/skills repo, and y...",
+    "description": "Install skills from multiple skill hubs with one tool: clawhub.ai (default), skills.sh (npx skills, GitHub-based), the official anthropics/skills repo, and your own self-hosted \"custom\" hub. Routes to the right source based on how the user phrases the request, handles name collisions (rename/overwrite/abort), Anthropic source-available license gating, multi-skill repos, and path-traversal-safe extraction. Use when the user says \"install skill X\", \"add skill X\", \"download skill X\", \"get X from clawhub\", \"use skills.sh to install X\", \"npx skills add X\", \"install the claude/anthropic X skill\", or \"install X from my hub\". Also triggers in Chinese: \"安装skill xxx\"、\"装一下xxx\"、 \"下载skill xxx\"、\"从 clawhub 装 xxx\"、\"用 skills.sh 装 xxx\"、\"装 claude 的 xxx\"、 \"从我的 hub 装 xxx\"。",
+    "topics": [],
+    "tags": {
+      "hub": "1.0.1",
+      "install": "1.0.1",
+      "installer": "1.0.1",
+      "latest": "1.0.1",
+      "skill": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1782056015802,
+    "updatedAt": 1782056790225,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1782056790225,
+      "changelog": "Docs: correct suite stages table (comprehensive auditor is skill-deep-audit; added skill-release-audit as third audit tool). No code changes.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "auto-rename-session-label",
+    "displayName": "Auto Rename Session Label",
+    "summary": "Installs an OpenClaw internal hook that auto-titles each new chat session using the session's current model (on message:received), with a safe fallback to tr...",
+    "description": "Installs an OpenClaw internal hook that auto-titles each new chat session using the session's current model (on message:received), with a safe fallback to truncating the first message. Triggers: install auto rename session label, auto title sessions, auto-name chats, session auto rename.",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1782056474240,
+    "updatedAt": 1782056474240,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1782056474240,
+      "changelog": "Initial release: portable OpenClaw internal hook that auto-titles new chat sessions using the session's current model, with a safe fallback to truncating the first message.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "qa-defect-lifecycle",
+    "displayName": "Qa Defect Lifecycle",
+    "summary": "缺陷生命周期管理，管理缺陷从发现到关闭的全流程。当需要管理缺陷流程时激活。",
+    "description": "缺陷生命周期管理，管理缺陷从发现到关闭的全流程。当需要管理缺陷流程时激活。",
+    "topics": [],
+    "tags": {
+      "latest": "1.3.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1782056340577,
+    "updatedAt": 1782056340577,
+    "latestVersion": {
+      "version": "1.3.0",
+      "createdAt": 1782056340577,
+      "changelog": "- 增加了完整的缺陷生命周期流程与各状态定义，包括特殊状态和状态流转图示。\n- 明确定义了缺陷严重程度与优先级分级标准。\n- 梳理了缺陷类型、根因分析方法及常用度量指标。\n- 提供了标准化的缺陷报告模板与验收清单。\n- 全面提升缺陷管理流程规范性，便于驱动问题解决和质量改进。",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "qa-critical-thinking",
+    "displayName": "Qa Critical Thinking",
+    "summary": "测试批判性思维，对每个\"应该\"都问\"如果不呢？\"。当需要深度质疑和逆向思考时激活。",
+    "description": "测试批判性思维，对每个\"应该\"都问\"如果不呢？\"。当需要深度质疑和逆向思考时激活。",
+    "topics": [],
+    "tags": {
+      "latest": "1.3.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1782056324781,
+    "updatedAt": 1782056324781,
+    "latestVersion": {
+      "version": "1.3.0",
+      "createdAt": 1782056324781,
+      "changelog": "- 新增详细 SKILL.md，系统梳理批判性思维应用原则与操作框架\n- 明确对每个“应该”都提问“如果不呢？”，强调逆向与深度质疑方式\n- 细化5W1H质疑法及\"那又怎样\"追问法，提供具体现成问题模板\n- 增加多维假设及异常场景挖掘方法\n- 提供练习案例和应用后验收清单，便于上手和自查",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "skill-dev",
+    "displayName": "Skill 开发",
+    "summary": "Skill开发优化助手。当发现技能有漏洞/流程缺失/逻辑错误/经验教训需要沉淀时触发。自动分析问题→定位根源→修改技能→回归验证→记录影响。触发词：优化技能、修改技能、技能有问题、技能漏洞、改进技能、技能踩坑、把这个经验写进技能、技能加一条规则。",
+    "description": "Skill开发优化助手。当发现技能有漏洞/流程缺失/逻辑错误/经验教训需要沉淀时触发。自动分析问题→定位根源→修改技能→回归验证→记录影响。触发词：优化技能、修改技能、技能有问题、技能漏洞、改进技能、技能踩坑、把这个经验写进技能、技能加一条规则。",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0",
+      "scene": "1.0.0",
+      "skill-dev": "1.0.0",
+      "workbuddy": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1782056312225,
+    "updatedAt": 1782056312225,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1782056312225,
+      "changelog": "首次发布：技能开发优化助手，自动分析问题→定位根源→修改技能→回归验证→记录影响",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "qa-combination-strategy",
+    "displayName": "Qa Combination Strategy",
+    "summary": "组合测试策略，处理多参数多环境的测试组合。当参数多环境多全组合测不完时激活。",
+    "description": "组合测试策略，处理多参数多环境的测试组合。当参数多环境多全组合测不完时激活。",
+    "topics": [],
+    "tags": {
+      "latest": "1.3.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1782056283065,
+    "updatedAt": 1782056283065,
+    "latestVersion": {
+      "version": "1.3.0",
+      "createdAt": 1782056283065,
+      "changelog": "- Added detailed guidance on three main test combination simplification strategies: Pairwise, Orthogonal, and Risk-Weighted.\n- Included parameter identification categories and risk assessment matrices to aid test design.\n- Provided structured example for e-commerce order scenarios demonstrating the application of all strategies.\n- Introduced step-by-step workflow and checklist for combination testing, improving consistency and coverage.\n- Enhanced outputs with formats for test matrices and case templates for practical execution.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "qa-code-review-for-test",
+    "displayName": "Qa Code Review For Test",
+    "summary": "测试视角的代码评审，从测试角度分析代码变更。当需要从测试角度评审代码时激活。",
+    "description": "测试视角的代码评审，从测试角度分析代码变更。当需要从测试角度评审代码时激活。",
+    "topics": [],
+    "tags": {
+      "latest": "1.3.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1782056275419,
+    "updatedAt": 1782056275419,
+    "latestVersion": {
+      "version": "1.3.0",
+      "createdAt": 1782056275419,
+      "changelog": "- 全面更新文档，明确了“测试视角的代码评审”技能的定位与使用场景。\n- 明确输入（git diff、边界分析、风险评估）与输出（测试视角CR报告）格式。\n- 补充“测试视角CR四看”分析框架，细化影响范围、风险模式与测试建议。\n- 增加详细的检查清单和验收流程，方便实际评审操作。\n- 完善相关上下游技能关联及代码读取权限说明。",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "qa-ci-cd-testing",
+    "displayName": "Qa Ci Cd Testing",
+    "summary": "持续测试实践，将测试集成到CI/CD流程中。当需要设计或优化CI/CD测试流程时激活。",
+    "description": "持续测试实践，将测试集成到CI/CD流程中。当需要设计或优化CI/CD测试流程时激活。",
+    "topics": [],
+    "tags": {
+      "latest": "1.3.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1782056267435,
+    "updatedAt": 1782056267435,
+    "latestVersion": {
+      "version": "1.3.0",
+      "createdAt": 1782056267435,
+      "changelog": "- Expanded SKILL.md with detailed CI/CD测试方案实践、流程分解、质量门禁与工具选型说明\n- 明确左移和右移测试策略及具体落地实践\n- 增加CI/CD流水线各阶段职责和质量门禁标准\n- 补充主流工具选型建议及验收清单，以便实施检查",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "skill-sign",
+    "displayName": "Skill Sign",
+    "summary": "Cryptographically sign and verify AgentSkill directories using Ed25519 (RFC 8032). Publishers sign skills with a private key; recipients verify with a public...",
+    "description": "Cryptographically sign and verify AgentSkill directories using Ed25519 (RFC 8032). Publishers sign skills with a private key; recipients verify with a public key, proving the skill is unmodified AND authored by the trusted key holder. Pure Python — no pip install, no native dependencies. Use when you say sign skill, verify skill, ed25519 sign, verify skill authenticity, prove skill author, detect skill tampering, give skill a signature, 给 skill 签名, 验证 skill 是谁发的, 校验 skill 没被改过.",
+    "topics": [],
+    "tags": {
+      "cryptography": "1.0.0",
+      "ed25519": "1.0.0",
+      "integrity": "1.0.0",
+      "latest": "1.0.0",
+      "release": "1.0.0",
+      "signing": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1782056258267,
+    "updatedAt": 1782056258267,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1782056258267,
+      "changelog": "Initial open-source release. Cryptographic Ed25519 signing for skill directories. Pure Python (RFC 8032 Appendix A vendor). XDG-compliant key storage with chmod 600. Two verify modes: self-verify (tamper detection) and trust-verify (--trust-key for author authentication). Tested against RFC 8032 test vectors.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "graph-advocate",
+    "displayName": "Graph Advocate",
+    "summary": "Route any blockchain data question to the right Graph Protocol service. Returns live data from 15,500+ subgraphs, Token API (EVM/Solana/TON + Polymarket + Hy...",
+    "description": "Route any blockchain data question to the right Graph Protocol service. Returns live data from 15,500+ subgraphs, Token API (EVM/Solana/TON + Polymarket + Hyperliquid), x402 payment analytics, cross-venue prediction-market spreads (Polymarket ↔ Limitless, Polymarket ↔ Kalshi), and protocol-specific MCP packages. Trigger keywords: subgraph, token, balance, holder, swap, pool, TVL, DeFi, NFT, Aave, Uniswap, Polymarket, Limitless, Kalshi, prediction market spread, arbitrage, Hyperliquid, perps, ENS, governance, x402, onchain data, blockchain.",
+    "topics": [
+      "Payment"
+    ],
+    "tags": {
+      "latest": "2.8.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1072,
+      "installsAllTime": 36,
+      "installsCurrent": 1,
+      "stars": 1,
+      "versions": 11
+    },
+    "createdAt": 1773619364838,
+    "updatedAt": 1782055990274,
+    "latestVersion": {
+      "version": "2.8.0",
+      "createdAt": 1782055990274,
+      "changelog": "Add /agent/score $0.02 paid endpoint — composite 0-100 reputation score for any Base wallet (ERC-8004 identity + USDC settlement velocity + on-chain feedback registry, aggregated across all of owner's agents). Hard 8004 gate filters burn/CEX wallets. Cached 24h. Use for: should I integrate/pay/trust this peer agent.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "toolbox-10-skill",
+    "displayName": "实用工具匣",
+    "summary": "集合四大高频实用图像工具：去水印/OCR文字识别/图片压缩/标准证件照生成。一站式解决日常图片处理需求。",
+    "description": "集合四大高频实用图像工具：去水印/OCR文字识别/图片压缩/标准证件照生成。一站式解决日常图片处理需求。",
+    "topics": [],
+    "tags": {
+      "compression": "1.0.0",
+      "id-photo": "1.0.0",
+      "image-processing": "1.0.0",
+      "latest": "1.0.0",
+      "ocr": "1.0.0",
+      "toolbox": "1.0.0",
+      "utility": "1.0.0",
+      "watermark-removal": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1782055907447,
+    "updatedAt": 1782055907447,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1782055907447,
+      "changelog": "首次发布：去水印、OCR文字识别、图片压缩、标准证件照生成四大图像处理工具",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "EASYOCR_MODULE_PATH",
+          "required": true
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "pixellab-ai",
+    "displayName": "PixelLab AI Asset Workflow",
+    "summary": "PixelLab AI asset workflow and API helper for generating pixel-art images, image conversions, rotations, animations, layered animation sprites, modular outfi...",
+    "description": "PixelLab AI asset workflow and API helper for generating pixel-art images, image conversions, rotations, animations, layered animation sprites, modular outfits/equipment, tilesets, isometric tiles, UI assets, prompt enhancement, and consistent game-art packs. Use when users ask Codex or OpenClaw to plan or run PixelLab API workflows, prepare PixelLab payloads, call PixelLab endpoints, poll background jobs, download generated pixel-art assets, or produce game-engine-ready sprite sheets with stable layers, frame order, pivots, and transparency.",
+    "topics": [],
+    "tags": {
+      "animation": "1.1.1",
+      "codex": "1.1.1",
+      "game-assets": "1.1.1",
+      "latest": "1.1.1",
+      "openclaw": "1.1.1",
+      "pixel-art": "1.1.1",
+      "pixellab": "1.1.1",
+      "sprites": "1.1.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1782018844820,
+    "updatedAt": 1782055090727,
+    "latestVersion": {
+      "version": "1.1.1",
+      "createdAt": 1782055090727,
+      "changelog": "Add ClawHub skill card for the detailed public package page.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "tattoo-design-guide",
+    "displayName": "AI纹身设计指南",
+    "summary": "AI纹身设计全维度指南。覆盖9大纹身风格详解（Old School/New School/日式传统/水墨/写实/黑白/水彩/几何/Fineline）、身体部位智能匹配（疼痛指数+风格推荐+变形风险评估）、纹身师选择指南（按风格匹配+红绿灯信号检查）、卫生安全标准（术前检查+禁忌筛查）、术后护理全流程（3阶段愈合指...",
+    "description": "AI纹身设计全维度指南。覆盖9大纹身风格详解（Old School/New School/日式传统/水墨/写实/黑白/水彩/几何/Fineline）、身体部位智能匹配（疼痛指数+风格推荐+变形风险评估）、纹身师选择指南（按风格匹配+红绿灯信号检查）、卫生安全标准（术前检查+禁忌筛查）、术后护理全流程（3阶段愈合指导）、遮盖与修改策略（分级评估+方案推荐）。基于用户需求生成交互式HTML可视化设计咨询报告，含风格雷达图、部位疼痛热力图、设计推荐卡和完整检查清单。该技能应在用户讨论纹身设计、纹身风格选择、纹身部位推荐、纹身安全护理、遮盖修改咨询时使用。",
+    "topics": [],
+    "tags": {
+      "ai": "1.0.0",
+      "body-art": "1.0.0",
+      "design": "1.0.0",
+      "guide": "1.0.0",
+      "latest": "1.0.0",
+      "style": "1.0.0",
+      "tattoo": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1782054822205,
+    "updatedAt": 1782054822205,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1782054822205,
+      "changelog": "AI纹身设计全维度指南技能。覆盖9大纹身风格详解(Old School/New School/日式传统/水墨/写实/黑白/水彩/几何/Fineline)、身体部位智能匹配(疼痛指数+风格推荐)、纹身师选择红绿灯系统、卫生安全标准与术后护理、遮盖与修改策略。生成交互式HTML可视化报告。",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "meta-skill-system",
+    "displayName": "Meta Skill System",
+    "summary": "元技能系统，提供领域评估、工作流重构、领域负载物生成和通用任务执行的完整能力。核心能力：①领域消除评估（五步法：边界识别→存在理由分析→消除可行性评估→独立存在必要性判断→决策输出）②工作流重构（三步法：拆解→消除→重整，将复杂工作流重构为AI辅助一人简易完成）③领域负载物生成（从零创建完整的领域负载物技能，三层...",
+    "description": "元技能系统，提供领域评估、工作流重构、领域负载物生成和通用任务执行的完整能力。核心能力：①领域消除评估（五步法：边界识别→存在理由分析→消除可行性评估→独立存在必要性判断→决策输出）②工作流重构（三步法：拆解→消除→重整，将复杂工作流重构为AI辅助一人简易完成）③领域负载物生成（从零创建完整的领域负载物技能，三层结构模板+21项接口校验）④通用任务执行（三轴正交：执行轴6大元操作+管线编排、内容轴清单法+样本法、创新轴4种模式+10种元框架）。10域70种任务。触发词：元技能、领域评估、工作流重构、技能生成、任务执行、meta-skill、领域消除、三轴执行、创新框架、meta-skill-system。",
+    "topics": [
+      "工作流",
+      "接口"
+    ],
+    "tags": {
+      "latest": "1.0.6"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 187,
+      "installsAllTime": 6,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 7
+    },
+    "createdAt": 1781538718201,
+    "updatedAt": 1782054269305,
+    "latestVersion": {
+      "version": "1.0.6",
+      "createdAt": 1782054269305,
+      "changelog": "meta-skill-system v1.0.6\n\n- references/meta-skill-system-prompt.md 合并版提示词文件新增，整合了 SKILL.md 和所有 references 内容，支持一键导出提示词。\n- references/meta-skill-system-complete.md 被移除，提示词合并逻辑明确改为 meta-skill-system-prompt.md。\n- SKILL.md 增加说明，明确 references/meta-skill-system-prompt.md 用途及合并文件规则，细化扩展能力描述。",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "openmerch-people-search",
+    "displayName": "OpenMerch People Search",
+    "summary": "Search for people at a company by domain and role keywords. Returns names, titles, and company names. Powered by OpenMerch.",
+    "description": "Search for people at a company by domain and role keywords. Returns names, titles, and company names. Powered by OpenMerch.",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1782052013875,
+    "updatedAt": 1782054168480,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1782054168480,
+      "changelog": "Add Enriching a single person section with concrete plan/execute JSON for people-enrichment by id",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "OPENMERCH_API_KEY",
+          "required": true
+        },
+        {
+          "key": "OPENMERCH_BASE_URL",
+          "required": false
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "sonoscli",
+    "displayName": "Sonoscli",
+    "summary": "Control Sonos speakers (discover/status/play/volume/group).",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 85005,
+      "installsAllTime": 2796,
+      "installsCurrent": 2775,
+      "stars": 55,
+      "versions": 1
+    },
+    "createdAt": 1767545381030,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545381030,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "gog",
+    "displayName": "Gog",
+    "summary": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+    "description": null,
+    "topics": [
+      "Gmail",
+      "Calendar",
+      "Docs"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 36,
+      "downloads": 186758,
+      "installsAllTime": 5427,
+      "installsCurrent": 3655,
+      "stars": 927,
+      "versions": 1
+    },
+    "createdAt": 1767545346060,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545346060,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "github",
+    "displayName": "Github",
+    "summary": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
+    "description": null,
+    "topics": [
+      "GitHub"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 7,
+      "downloads": 191115,
+      "installsAllTime": 7594,
+      "installsCurrent": 4513,
+      "stars": 639,
+      "versions": 1
+    },
+    "createdAt": 1767545344344,
+    "updatedAt": 1781268517834,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545344344,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "weather",
+    "displayName": "Weather",
+    "summary": "Get current weather and forecasts (no API key required).",
+    "description": null,
+    "topics": [
+      "Current Weather"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 6,
+      "downloads": 161524,
+      "installsAllTime": 6452,
+      "installsCurrent": 3905,
+      "stars": 418,
+      "versions": 1
+    },
+    "createdAt": 1767545394459,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545394459,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-whisper",
+    "displayName": "Openai Whisper",
+    "summary": "Local speech-to-text with the Whisper CLI (no API key).",
+    "description": null,
+    "topics": [
+      "Speech-to-Text"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 2,
+      "downloads": 84997,
+      "installsAllTime": 2952,
+      "installsCurrent": 2125,
+      "stars": 325,
+      "versions": 1
+    },
+    "createdAt": 1767545365755,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545365755,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "skill-creator",
+    "displayName": "Skill Creator",
+    "summary": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "0.1.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 92365,
+      "installsAllTime": 3379,
+      "installsCurrent": 2508,
+      "stars": 320,
+      "versions": 1
+    },
+    "createdAt": 1769522677376,
+    "updatedAt": 1778987225295,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1769522677376,
+      "changelog": "Initial release of skill-creator, a comprehensive guide for designing modular skills to extend Claude’s capabilities.\n\n- Introduces principles for creating effective, concise, and domain-specific skills.\n- Explains modular structure: required SKILL.md and optional scripts, references, and assets folders.\n- Outlines guidelines for what to include (and exclude) in a skill package.\n- Details progressive disclosure design for efficient context management.\n- Provides reference patterns for organizing content and bundling resources.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "notion",
+    "displayName": "Notion",
+    "summary": "Notion API for creating and managing pages, databases, and blocks.",
+    "description": null,
+    "topics": [
+      "Notion"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 93024,
+      "installsAllTime": 3186,
+      "installsCurrent": 2424,
+      "stars": 260,
+      "versions": 1
+    },
+    "createdAt": 1767545360889,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545360889,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "obsidian",
+    "displayName": "Obsidian",
+    "summary": "Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 9,
+      "downloads": 103492,
+      "installsAllTime": 4092,
+      "installsCurrent": 2616,
+      "stars": 431,
+      "versions": 1
+    },
+    "createdAt": 1767545362143,
+    "updatedAt": 1779137320034,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545362143,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "gemini",
+    "displayName": "Gemini",
+    "summary": "Gemini CLI for one-shot Q&A, summaries, and generation.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 5,
+      "downloads": 34671,
+      "installsAllTime": 1466,
+      "installsCurrent": 1462,
+      "stars": 56,
+      "versions": 1
+    },
+    "createdAt": 1767545316392,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545316392,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "mcporter",
+    "displayName": "Mcporter",
+    "summary": "Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 67602,
+      "installsAllTime": 2168,
+      "installsCurrent": 2042,
+      "stars": 194,
+      "versions": 1
+    },
+    "createdAt": 1767545355897,
+    "updatedAt": 1779137319429,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545355897,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "nano-banana-pro",
+    "displayName": "Nano Banana Pro",
+    "summary": "Generate/edit images with Nano Banana Pro (Gemini 3 Pro Image). Use for image create/modify requests incl. edits. Supports text-to-image + image-to-image; 1K/2K/4K; use --input-image.",
+    "description": null,
+    "topics": [
+      "Image Generation"
+    ],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 103758,
+      "installsAllTime": 3082,
+      "installsCurrent": 1896,
+      "stars": 406,
+      "versions": 2
+    },
+    "createdAt": 1767545358090,
+    "updatedAt": 1779137307565,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767651987917,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "model-usage",
+    "displayName": "Model Usage",
+    "summary": "Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a scriptable per-model summary from codexbar cost JSON.",
+    "description": null,
+    "topics": [
+      "Json",
+      "Summarize"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 38329,
+      "installsAllTime": 1587,
+      "installsCurrent": 1582,
+      "stars": 114,
+      "versions": 1
+    },
+    "createdAt": 1767667639455,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767667639455,
+      "changelog": "- Initial release of the model-usage skill for summarizing per-model usage and cost from CodexBar CLI local cost logs.\n- Supports both Codex and Claude providers.\n- Allows fetching summaries for the current (most recent) model or all models.\n- Provides both text and JSON output formats.\n- Can process costs directly from CodexBar CLI output or from a JSON file/stdin.\n- Includes guidance for CLI use and script automation.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "darwin"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "video-frames",
+    "displayName": "Video Frames",
+    "summary": "Extract frames or short clips from videos using ffmpeg.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 52506,
+      "installsAllTime": 1601,
+      "installsCurrent": 1597,
+      "stars": 129,
+      "versions": 1
+    },
+    "createdAt": 1767545391700,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545391700,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "blogwatcher",
+    "displayName": "Blogwatcher",
+    "summary": "Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.",
+    "description": null,
+    "topics": [
+      "RSS"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 43318,
+      "installsAllTime": 1508,
+      "installsCurrent": 1502,
+      "stars": 70,
+      "versions": 1
+    },
+    "createdAt": 1767545299849,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545299849,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "nano-pdf",
+    "displayName": "Nano Pdf",
+    "summary": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+    "description": null,
+    "topics": [
+      "PDF"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 113459,
+      "installsAllTime": 4330,
+      "installsCurrent": 2655,
+      "stars": 260,
+      "versions": 1
+    },
+    "createdAt": 1767545359433,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545359433,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "session-logs",
+    "displayName": "Session-logs",
+    "summary": "Search and analyze your own session logs (older/parent conversations) using jq.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 41842,
+      "installsAllTime": 1666,
+      "installsCurrent": 1458,
+      "stars": 30,
+      "versions": 1
+    },
+    "createdAt": 1770136427000,
+    "updatedAt": 1778486000320,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1770136427000,
+      "changelog": "Initial release of session-logs.\n\n- Enables searching and analyzing your session logs (past conversations) with jq and ripgrep (rg).\n- Provides bash command examples for session discovery, keyword searches, extracting messages, cost summaries, and tool usage breakdowns.\n- Documents JSONL session file structure, roles, and content types.\n- Lists session log file locations and naming conventions.\n- Includes tips for managing and querying large, append-only session histories.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "himalaya",
+    "displayName": "Himalaya",
+    "summary": "CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).",
+    "description": null,
+    "topics": [
+      "Email",
+      "Message"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 46091,
+      "installsAllTime": 1547,
+      "installsCurrent": 1543,
+      "stars": 69,
+      "versions": 1
+    },
+    "createdAt": 1767954271328,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767954271328,
+      "changelog": "Initial release of Himalaya CLI email client skill.\n\n- Provides terminal-based email management via IMAP/SMTP.\n- Supports listing, reading, composing, replying, forwarding, searching, and organizing emails.\n- Includes multi-account support and message composition with MML.\n- Detailed setup and configuration instructions included.\n- Enables handling attachments, output customization, and debugging via logging.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "sag",
+    "displayName": "Sag",
+    "summary": "ElevenLabs text-to-speech with mac-style say UX.",
+    "description": null,
+    "topics": [
+      "Text-to-Speech"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 27073,
+      "installsAllTime": 1264,
+      "installsCurrent": 1260,
+      "stars": 26,
+      "versions": 1
+    },
+    "createdAt": 1767545376535,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545376535,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "ELEVENLABS_API_KEY",
+          "required": true
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "goplaces",
+    "displayName": "Goplaces",
+    "summary": "Query Google Places API (New) via the goplaces CLI for text search, place details, resolve, and reviews. Use for human-friendly place lookup or JSON output for scripts.",
+    "description": null,
+    "topics": [
+      "Json"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 22952,
+      "installsAllTime": 1252,
+      "installsCurrent": 1249,
+      "stars": 30,
+      "versions": 1
+    },
+    "createdAt": 1767545347454,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545347454,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "GOOGLE_PLACES_API_KEY",
+          "required": true
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "slack",
+    "displayName": "Slack",
+    "summary": "Use when you need to control Slack from Clawdbot via the slack tool, including reacting to messages or pinning/unpinning items in Slack channels or DMs.",
+    "description": null,
+    "topics": [
+      "Slack"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 12,
+      "downloads": 48164,
+      "installsAllTime": 1485,
+      "installsCurrent": 1435,
+      "stars": 158,
+      "versions": 1
+    },
+    "createdAt": 1767545378002,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545378002,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "peekaboo",
+    "displayName": "Peekaboo",
+    "summary": "Capture and automate macOS UI with the Peekaboo CLI.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 4,
+      "downloads": 30551,
+      "installsAllTime": 1345,
+      "installsCurrent": 1343,
+      "stars": 83,
+      "versions": 1
+    },
+    "createdAt": 1767545373660,
+    "updatedAt": 1779137309055,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545373660,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "darwin"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-image-gen",
+    "displayName": "Openai Image Gen",
+    "summary": "Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.",
+    "description": null,
+    "topics": [
+      "Prompt"
+    ],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 24672,
+      "installsAllTime": 1123,
+      "installsCurrent": 1121,
+      "stars": 37,
+      "versions": 2
+    },
+    "createdAt": 1767545364210,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767652000401,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "tmux",
+    "displayName": "Tmux",
+    "summary": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 29440,
+      "installsAllTime": 1410,
+      "installsCurrent": 1406,
+      "stars": 43,
+      "versions": 1
+    },
+    "createdAt": 1767545387948,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545387948,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "darwin",
+        "linux"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "gifgrep",
+    "displayName": "Gifgrep",
+    "summary": "Search GIF providers with CLI/TUI, download results, and extract stills/sheets.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 18703,
+      "installsAllTime": 1218,
+      "installsCurrent": 1212,
+      "stars": 7,
+      "versions": 2
+    },
+    "createdAt": 1767488226016,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767545342229,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-whisper-api",
+    "displayName": "Openai Whisper Api",
+    "summary": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
+    "description": null,
+    "topics": [
+      "Audio",
+      "Transcribe"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 26005,
+      "installsAllTime": 1184,
+      "installsCurrent": 1180,
+      "stars": 52,
+      "versions": 1
+    },
+    "createdAt": 1767545368103,
+    "updatedAt": 1779137313987,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545368103,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "OPENAI_API_KEY",
+          "required": true
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  }
+]
