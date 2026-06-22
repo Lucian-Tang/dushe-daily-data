@@ -1,65 +1,79 @@
 [
   {
+    "uid": "",
     "title": "Sakana 发布 Fugu 多模型自动合成系统：无 Claude Fable 5 也能达到前沿性能",
     "content": "**来源：VentureBeat | 2026-06-22** 日本 AI 研究实验室 Sakana 推出 Fugu（河豚）多模型自动合成系统，通过智能编排多个中等规模开源模型，在多个基准上达到甚至超越被禁用的 Claude Fable 5 的前沿性能。Fugu 的核心思路是不依赖单一巨无霸模型，而是将多个专业模型的能力打包成一个 API 端点，智能路由任务并合成输出结果。这一创新为企业提供了摆脱单一供应商依赖的新选择，尤其在 Anthropic Fable 5/Mythos 5 被美国政府指令全球封禁后，模型供应链的韧性成为企业关键考量。 🔗 <https://venturebeat.com/orchestration/no-claude-fable-5-no-problem-sakana-achieves-frontier-performance-with-new-fugu-multi-model-auto-synthesis-system>",
     "quote": "Fable 5 被封了？Sakana 说没关系——把 10 个小模型捆一起吊打大模型，这招叫「模型联邦」。",
     "source": "",
-    "url": "https://venturebeat.com/orchestration/no-claude-fable-5-no-problem-sakana-achieves-frontier-performance-with-new-fugu-multi-model-auto-synthesis-system>",
+    "url": "",
     "published": "2026-06-23",
-    "uid": "ai_aca9bb8b"
+    "vendor": "anthropic",
+    "direction": "研究/论文"
   },
   {
+    "uid": "",
     "title": "Self-Harness 框架：让 AI Agent 自行重写运行规则，性能提升高达 60%",
     "content": "**来源：VentureBeat / arXiv | 2026-06-22** 上海人工智能实验室发布 Self-Harness 框架，革新了 AI Agent 的运行范式——让 LLM 驱动的 Agent 通过自我审视执行轨迹来自动改进其运行规则，而非靠人类工程师手动调试。Self-Harness 通过系统化的经验反馈循环替代了传统的直觉驱动调试模式。研究团队在多个基准上验证，Self-Harness 可将 Agent 性能提升高达 60%。核心创新在于：Agent 能够基于自身失败的执行记录来自动编辑其 system prompt、工具调用逻辑和恢复策略，实现持续自适应优化。 🔗 <https://arxiv.org/abs/2606.09498>",
     "quote": "AI Agent 学会自我 debugging 了——跑错了自己改规则，人类只要当监工就行。",
     "source": "",
-    "url": "https://arxiv.org/abs/2606.09498>",
+    "url": "",
     "published": "2026-06-23",
-    "uid": "ai_059ad547"
+    "vendor": "other",
+    "direction": "研究/论文"
   },
   {
+    "uid": "",
     "title": "开发者发现 Claude Code 的「扩展思考」并非真正的推理过程",
     "content": "**来源：Hacker News | 2026-06-22** Hacker News 上一篇文章引发热议（160 分）：Claude Code 的「Extended Thinking」功能输出的内容其实是一个总结式的摘要，而非真实的持续推理过程。开发者 patrickmccanna.net 通过技术分析指出，Claude Code 会将思考过程进行压缩和摘要后再输出，而不是逐字呈现其实际的 Token 级推理链条。这一发现引发了对 AI 编码工具透明度的广泛讨论——用户看到的「思考过程」是经过编辑的版本，可能存在信息丢失或误导。 🔗 <https://patrickmccanna.net/the-text-in-claude-codes-extended-thinking-output-is-not-authentic/>",
     "quote": "原来 Claude Code 的「思考过程」是剪辑版——AI 的内心戏和观众看到的不一样，这算不算 AI 界的「镜头营销」？",
     "source": "",
-    "url": "https://patrickmccanna.net/the-text-in-claude-codes-extended-thinking-output-is-not-authentic/>",
+    "url": "",
     "published": "2026-06-23",
-    "uid": "ai_570401d6"
+    "vendor": "anthropic",
+    "direction": "工具/平台"
   },
   {
+    "uid": "",
     "title": "Apertus 发布开源基础模型：面向主权 AI 的开放模型获 497 星",
     "content": "**来源：Hacker News / Apertus | 2026-06-22** Apertus（apertvs.ai）在 Hacker News 上爆火（497 分），带来一个面向「主权 AI」的高质量开源基础模型。该模型旨在为希望拥有自主 AI 能力的国家、机构和企业提供服务——无需依赖美国或中国的闭源模型供应商。Apertus 强调模型权重完全开放、训练数据透明、可审计。在各国对 AI 供应链安全日益担忧的背景下（尤其是 Anthropic Fable 5 被封事件），Apertus 的定位精准地切中了主权 AI 的市场需求。 🔗 <https://apertvs.ai/>",
     "quote": "各国都在担心 AI 被断供——Apertus 说：来，我教你造自己的 AI，不被任何人卡脖子。",
     "source": "",
-    "url": "https://apertvs.ai/>",
+    "url": "",
     "published": "2026-06-23",
-    "uid": "ai_6fe618e0"
+    "vendor": "anthropic",
+    "direction": "模型发布"
   },
   {
+    "uid": "",
     "title": "Moebius 开源：0.2B 参数图像修复模型达到 10B 级性能",
     "content": "**来源：Hacker News / GitHub | 2026-06-22** 华中科技大学团队发布 Moebius，一个仅 2 亿参数的图像修复（inpainting）模型，在多项基准上达到了 100 亿参数级模型的表现。Moebius 采用全新的架构设计，在极小参数量下实现了高效的图像生成能力，可以在消费级 GPU 上运行，大幅降低了图像修复的门槛。该模型已开源至 GitHub，获得 Hacker News 社区 97 分关注。 🔗 <https://hustvl.github.io/Moebius/>",
     "quote": "2 亿参数的修图模型干翻 100 亿参数的——模型小型化的趋势越来越猛，GPT 们该减减肥了。",
     "source": "",
-    "url": "https://hustvl.github.io/Moebius/>",
+    "url": "",
     "published": "2026-06-23",
-    "uid": "ai_b938e4e8"
+    "vendor": "other",
+    "direction": "模型发布"
   },
   {
+    "uid": "",
     "title": "挪威全国限制 AI 在中小学的使用：6-13 岁原则上禁止",
     "content": "**来源：Reuters / The Verge | 2026-06-19** 挪威政府宣布新的 AI 使用规定，将在今年 8 月生效。一年级到七年级（6-13 岁）学生原则上不得使用 AI 工具；14-16 岁初中生在教师监督下谨慎使用；17-19 岁高中生应学习如何恰当地使用 AI 工具以应对未来升学和就业。挪威是首批在全国层面系统化区分不同年龄段 AI 使用政策的国家之一，为全球教育改革提供了参考。 🔗 <https://www.reuters.com/technology/norway-imposes-near-ban-ai-elementary-school-2026-06-19/>",
     "quote": "挪威一刀切：小学生原则上不准碰 AI——别的国家还在讨论，挪威已经动手了。",
     "source": "",
-    "url": "https://www.reuters.com/technology/norway-imposes-near-ban-ai-elementary-school-2026-06-19/>",
+    "url": "",
     "published": "2026-06-23",
-    "uid": "ai_0bba305c"
+    "vendor": "other",
+    "direction": "工具/平台"
   },
   {
+    "uid": "",
     "title": "微博团队发布 VibeThinker-3B：30 亿参数小模型推理能力匹敌千亿级系统",
     "content": "**来源：VentureBeat / arXiv | 2026-06-17** 新浪微博团队在 arXiv 上发布的技术报告引发 AI 社区震动：仅 30 亿参数的 VibeThinker-3B 在推理基准上达到了与 Google DeepMind、OpenAI、Anthropic、DeepSeek 等旗舰系统相同甚至超越的水平。VibeThinker 的关键创新在于更高效的训练方法和推理策略，让参数量缩小数百倍的模型仍能完成复杂的推理任务。这一结果表明，纯粹堆参数的时代可能正在结束，智能训练策略和架构优化才是通向高效 AGI 的正确路径。 🔗 <https://arxiv.org/pdf/2606.16140>",
     "quote": "微博 9 个人搞了个 3B 模型，干翻了千亿参数的大模型——参数军备竞赛的棺材板又钉了一颗钉子。",
     "source": "",
-    "url": "https://arxiv.org/pdf/2606.16140>",
+    "url": "",
     "published": "2026-06-23",
-    "uid": "ai_c57d9a7a"
+    "vendor": "anthropic",
+    "direction": "研究/论文"
   }
 ]

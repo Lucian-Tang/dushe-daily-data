@@ -1,0 +1,110 @@
+[
+  {
+    "uid": "dev-20260623-001",
+    "title": "Deno Desktop 正式发布：用 Web 技术构建原生桌面应用",
+    "content": "Deno 团队正式发布 Deno Desktop，允许开发者使用 JavaScript/TypeScript 和 Web 标准 API 构建跨平台原生桌面应用。Deno Desktop 基于系统原生 WebView，支持 macOS、Windows 和 Linux，内置系统托盘、全局快捷键、文件系统访问等桌面特性。与 Electron 和 Tauri 不同，Deno Desktop 不需要 Node.js 或 Rust 工具链，运行时体积更小，且天然支持 Deno 的权限模型和 TypeScript 原生编译。HN 上一夜斩获 910 分，被开发者称为「Electron 杀手的有力竞争者」。",
+    "quote": "910 points on HN — 用 JS 写桌面应用，不需要 200MB 的 node_modules 了。",
+    "source": "Deno Blog / HackerNews",
+    "url": "https://docs.deno.com/runtime/desktop/",
+    "published": "2026-06-23"
+  },
+  {
+    "uid": "dev-20260623-002",
+    "title": "OpenAI Codex 日志 Bug：SSD 被写入 TB 级数据，开发者炸锅",
+    "content": "一个 GitHub Issue 引爆 HN 热榜：OpenAI Codex CLI 的日志系统存在严重缺陷，在特定条件下会持续向本地 SSD 写入海量 debug 日志，部分用户报告几天内写入了数 TB 数据，大幅缩短 NVMe 固态硬盘寿命。该 Issue 已获 377 分和 206 条评论，OpenAI 团队已确认问题并承诺紧急修复。事件引发开发者对 AI 编码工具「过度消耗本地资源」的广泛讨论，有人建议为 AI 工具添加资源配额机制。",
+    "quote": "AI 写代码还不够，还要帮你写爆 SSD——Codex 这个 Bug 简直是物理攻击。",
+    "source": "GitHub / HackerNews",
+    "url": "https://github.com/openai/codex/issues/28224",
+    "published": "2026-06-23"
+  },
+  {
+    "uid": "dev-20260623-003",
+    "title": "Mitchell Hashimoto 再向 Zig 基金会捐赠 40 万美元",
+    "content": "HashiCorp 创始人 Mitchell Hashimoto 宣布再向 Zig 软件基金会捐赠 40 万美元，这是他对 Zig 编程语言的第三笔大额捐赠，累计已超过 100 万美元。Hashimoto 在博客中详细阐述了为何持续押注 Zig：其无隐式内存分配、无 LLVM 依赖的超轻编译器、以及对系统编程生产力的提升足以与 Rust 互补而非竞争。此举在 HN 上收下 584 分，社区讨论聚焦于「个人开发者能否靠捐赠养活一门语言」。",
+    "quote": "一个人捐了一百万美元给一门语言——Mitchell 对 Zig 是真爱，不是投着玩的。",
+    "source": "mitchellh.com / HackerNews",
+    "url": "https://mitchellh.com/writing/zig-donation-2026",
+    "published": "2026-06-23"
+  },
+  {
+    "uid": "dev-20260623-004",
+    "title": "Claude Code「扩展思考」输出文本被证实并非模型原始推理",
+    "content": "一篇技术博文引发轩然大波：开发者 Patrick McCanna 通过实验证明，Claude Code 的 Extended Thinking 模式在 UI 中展示的「思考过程」并非模型内部推理的真实文本，而是经 Anthropic 后处理和摘要后的产物。原论文、对照实验和 prompt 对比表明，展示的思考链被刻意简化并过滤了不安全内容。该文在 HN 上获得 212 分，153 条评论中围绕「透明度 vs 安全性的权衡」展开激辩。",
+    "quote": "你以为看到了 Claude 的内心戏？那只是 Anthropic 给你放的精选集。",
+    "source": "patrickmccanna.net / HackerNews",
+    "url": "https://patrickmccanna.net/the-text-in-claude-codes-extended-thinking-output-is-not-authentic/",
+    "published": "2026-06-23"
+  },
+  {
+    "uid": "dev-20260623-005",
+    "title": "GLM 5.2 vs Claude Opus 横向对比评测出炉",
+    "content": "独立评测平台 TechStackUps 发布了智谱 GLM 5.2 与 Anthropic Claude Opus 的详细对比报告，覆盖编码、推理、数学、长文本理解等 15 个维度的 87 项测试。GLM 5.2 在中文任务和代码补全上表现突出，Claude Opus 则在复杂推理和指令遵循上保持领先。令人意外的是 GLM 5.2 在 128K 长上下文测试中表现接近 Opus，且 API 成本仅为后者的 1/5。该评测在 HN 上拿下 403 分，成为中国开源模型与国际闭源模型对比话题的又一标杆。",
+    "quote": "15 个维度 87 项测试——中文模型第一次在长上下文上接近 Opus，而且只要五分之一的价格。",
+    "source": "TechStackUps / HackerNews",
+    "url": "https://techstackups.com/comparisons/glm-5.2-vs-opus/",
+    "published": "2026-06-23"
+  },
+  {
+    "uid": "dev-20260623-006",
+    "title": "window.showDirectoryPicker：Web 应用的本地文件系统新时代",
+    "content": "开发者 Steve Harrison 撰文深度介绍 File System Access API 中的 showDirectoryPicker 方法，展示如何让 Web 应用直接读写用户本地目录而无需上传。文章包含完整的递归目录遍历、大文件流式读写、与 IndexedDB 协同等实战代码示例。这项 Chrome 和 Edge 已全面支持的 API 正在模糊 Web 应用与原生应用之间的边界，PWA 可以直接操作本地项目文件夹，为基于浏览器的 IDE 和开发工具铺平道路。",
+    "quote": "浏览器能直接读写你的本地文件夹了——PWA 正在蚕食 Electron 的最后一块地盘。",
+    "source": "steveharrison.dev / HackerNews",
+    "url": "https://steveharrison.dev/showdirectorypicker-opens-up-a-whole-new-world/",
+    "published": "2026-06-23"
+  },
+  {
+    "uid": "dev-20260623-007",
+    "title": "Prompt Injection as Role Confusion：提示注入攻击的新理论框架",
+    "content": "一篇来自学术团队的研究论文提出将提示注入攻击重新定义为「角色混淆」问题。研究者证明，大多数成功的 prompt injection 并非绕过安全过滤，而是让模型错误理解自己被赋予的角色和上下文边界。论文提出了 Role Boundary Enforcement 防御框架，通过显式维护对话中的角色边界来阻止注入。该框架在 GPT-5、Claude Opus、Gemini 3 等主流模型上测试，将注入成功率从 87% 降至 3.2%，被 HN 社区评为「今年最有实操价值的安全论文之一」。",
+    "quote": "别老想着怎么挡 injection——先帮 AI 搞清楚「我是谁、我在哪、谁在说话」。",
+    "source": "role-confusion.github.io / HackerNews",
+    "url": "https://role-confusion.github.io",
+    "published": "2026-06-23"
+  },
+  {
+    "uid": "dev-20260623-008",
+    "title": "Oak：专为 AI Agent 设计的 Git 替代品",
+    "content": "Show HN 上一个名为 Oak 的新项目引起关注——它是专为 AI 编码 Agent 设计的版本控制系统，不同于 Git 基于人类协作的设计理念。Oak 采用内容寻址存储和增量快照，支持 Agent 自动创建分支、自动合并冲突、以及按指令而非按文件粒度的变更追踪。项目作者表示，传统 Git 的 staging area 和 commit message 范式对 AI Agent 来说过于冗余，Oak 追求零配置、零交互的版本控制体验。",
+    "quote": "Git 是为人类设计的，Oak 是为 AI Agent 设计的——没有 staging area，没有 commit message，全自动。",
+    "source": "HackerNews Show HN",
+    "url": "https://oak.space/oak/oak",
+    "published": "2026-06-23"
+  },
+  {
+    "uid": "dev-20260623-009",
+    "title": "字节跳动开源 Deer Flow：可运行数小时的 SuperAgent 框架",
+    "content": "字节跳动在 GitHub 开源了 Deer Flow，一个面向长时间任务的 SuperAgent 框架，支持研究、编码、内容创作等复杂工作流。Deer Flow 内置沙箱环境、持久记忆、工具调用、子智能体编排和消息网关，单个任务可持续运行数分钟到数小时。框架采用声明式流水线配置，支持人在回路审批，已与 Claude Code、Codex CLI 等主流 AI 编码工具集成。项目上线即获大量关注，被视为 Manus 开源替代的有力竞争者。",
+    "quote": "字节把能跑数小时的 SuperAgent 框架开源了——沙箱、记忆、子代理、消息网关全给。",
+    "source": "GitHub",
+    "url": "https://github.com/bytedance/deer-flow",
+    "published": "2026-06-23"
+  },
+  {
+    "uid": "dev-20260623-010",
+    "title": "Codebase-Memory-MCP：毫秒级代码库索引的知识图谱 MCP Server",
+    "content": "DeusData 开源的 Codebase-Memory-MCP 服务器在 GitHub 上日涨千星，它能将任意代码库索引为持久化知识图谱，支持 158 种编程语言，平均索引速度以毫秒计，查询延迟低于毫秒级。单个静态二进制文件，零外部依赖，可显著减少 AI 编码工具在理解大型代码库时的 Token 消耗（声称减少 99%）。该项目为 Claude Code、Codex 等工具提供了原生的代码库智能感知层，解决了「把整个代码库喂给 AI」的上下文窗口瓶颈。",
+    "quote": "158种语言、毫秒级索引、静态二进制——给 AI 配了个过目不忘的代码库大脑。",
+    "source": "GitHub",
+    "url": "https://github.com/DeusData/codebase-memory-mcp",
+    "published": "2026-06-23"
+  },
+  {
+    "uid": "dev-20260623-011",
+    "title": "HyperFrames：用 HTML 语法写视频，专为 AI Agent 设计",
+    "content": "HeyGen 开源的 HyperFrames 框架获得近 3 万 GitHub Star，它的核心理念是用声明式 HTML 标签描述视频场景、动画和转场，让 AI Agent 可以通过代码直接生成和编辑视频。每个场景是一个 HTML 元素，动画用 CSS transition 描述，整个视频就是一个可渲染的 HTML 文档。这种方式避开了传统视频编辑的时间轴范式，特别适合 AI 编码工具批量生产视频内容，被认为是 Agentic Video 方向的关键基础设施。",
+    "quote": "用 HTML 写视频？每个场景是个 div，动画是 CSS transition——这脑洞我服。",
+    "source": "GitHub",
+    "url": "https://github.com/heygen-com/hyperframes",
+    "published": "2026-06-23"
+  },
+  {
+    "uid": "dev-20260623-012",
+    "title": "Penpot 持续爆发：开源设计协作工具日涨 730 Star",
+    "content": "开源设计工具 Penpot 在 GitHub 上持续爆发，单日增长 730 Star，总星数突破 5.2 万。作为 Figma 的开源替代品，Penpot 支持设计稿与代码的双向同步，原生支持 CSS Grid、Flexbox 等 Web 标准布局，设计师和开发者可以在同一画布上协作。项目最近发布了 3.0 版本，引入 AI 辅助设计、组件变体和设计 Token 系统，特别适合需要自托管设计工具的团队。",
+    "quote": "Figma 太贵？Penpot 3.0 开源免费用，设计稿直接出 CSS Grid 代码。",
+    "source": "GitHub",
+    "url": "https://github.com/penpot/penpot",
+    "published": "2026-06-23"
+  }
+]
