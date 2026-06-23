@@ -1,0 +1,1691 @@
+[
+  {
+    "slug": "aha-orch-xx",
+    "displayName": "Aha Orch Xx",
+    "summary": "Runtime-agnostic capability orchestration skill. Activates full delegation mode with capability discovery and task-driven orchestration. Use this to maximize...",
+    "description": "Runtime-agnostic capability orchestration skill. Activates full delegation mode with capability discovery and task-driven orchestration. Use this to maximize runtime + enhancement layer capabilities. If you have a runtime-specific skill (aha-codex-omx / aha-opencode-omo), prefer that instead.",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1782217966215,
+    "updatedAt": 1782231734096,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1782231734096,
+      "changelog": "- Updated documentation to improve structure and readability in SKILL.md (switched headers to use consistent markdown style).\n- Added mention of \"aha-claudecode-omc\" to the multi-skill repository list in SKILL.md.\n- Removed the skill-card.md file.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "termix-agent-runtime",
+    "displayName": "Termix Agent Runtime",
+    "summary": "Use this skill for Termix Platform (dev-v2) operations — agent inspection, A2A runtime auto-reply for Provider Agents via OpenClaw inbox polling, order / bri...",
+    "description": "Use this skill for Termix Platform (dev-v2) operations — agent inspection, A2A runtime auto-reply for Provider Agents via OpenClaw inbox polling, order / brief / campaign reads, and dispute checks. Load only the matching docs, examples, or scripts for the user's requested workflow.",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1782231623117,
+    "updatedAt": 1782231623117,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1782231623117,
+      "changelog": "Conversational onboarding: wallet login, list provider agents, autoreply managed inbox",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "WALLET_KEY",
+          "required": false
+        },
+        {
+          "key": "AACP_BASE_URL",
+          "required": false
+        },
+        {
+          "key": "A2A_AGENT_ID",
+          "required": false
+        },
+        {
+          "key": "OPENROUTER_API_KEY",
+          "required": false
+        },
+        {
+          "key": "OPENAI_BASE_URL",
+          "required": false
+        },
+        {
+          "key": "A2A_LLM_MODEL",
+          "required": false
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "yidian-upload",
+    "displayName": "Yidian Upload",
+    "summary": "Automates batch uploading and management of Xianyu shop products on Yidian backend using Playwright, with stepwise confirmation and screenshot validation.",
+    "description": null,
+    "topics": [
+      "电商",
+      "自动化"
+    ],
+    "tags": {
+      "latest": "3.3.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 43,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 4
+    },
+    "createdAt": 1782120552854,
+    "updatedAt": 1782231353299,
+    "latestVersion": {
+      "version": "3.3.1",
+      "createdAt": 1782231353299,
+      "changelog": "**v3.3.1 Summary:**  \nRefactored to dynamically support multiple shop configurations; users now provide shop and directory info on first use.\n\n- 支持多店铺配置，首次使用时引导用户填写店铺名、库存、售价、目录等参数\n- 去除硬编码，仅保留“操作流程”与“参数收集”通用框架\n- 图片/文件路径等由用户自定义，增强灵活性与复用性\n- 相关文档表述更新，与原有自动化功能和铁律保持一致\n- 现有功能（自动发货、日期过滤、已发布标记等）保留不变",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "video-generation",
+    "displayName": "Video Generation",
+    "summary": "视频生成技能，支持从零创建各种视频，包含完整设计规范、模板系统和内容生成能力。触发词：生成视频、创建视频、视频生成、短视频、广告视频、宣传视频、meta-skill-system",
+    "description": "视频生成技能，支持从零创建各种视频，包含完整设计规范、模板系统和内容生成能力。触发词：生成视频、创建视频、视频生成、短视频、广告视频、宣传视频、meta-skill-system",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1782228261146,
+    "updatedAt": 1782231161573,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1782231161573,
+      "changelog": "- Added comprehensive documentation (SKILL.md) detailing the skill’s position, core features, workflow, output rules, and strict design guidelines.\n- Defined a clear three-layer reference structure with catalog, requirements, and exemplars for video generation.\n- Outlined standardized execution and output processes to ensure consistency, compatibility, and user-friendliness.\n- Introduced strict fact-based discipline and title hierarchy standards for merging and collaboration.\n- Expanded explanation of supported video types, template usage, and output options.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "poster-generation",
+    "displayName": "Poster Generation",
+    "summary": "图片海报生成技能，支持从零创建各种图片海报，包含完整设计规范、模板系统和内容生成能力。触发词：生成海报、创建海报、海报生成、图片海报、广告海报、宣传海报、meta-skill-system",
+    "description": "图片海报生成技能，支持从零创建各种图片海报，包含完整设计规范、模板系统和内容生成能力。触发词：生成海报、创建海报、海报生成、图片海报、广告海报、宣传海报、meta-skill-system",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1782228210064,
+    "updatedAt": 1782231097155,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1782231097155,
+      "changelog": "- 移除了示例文件 skill-card.md，目录结构更为精简。\n- 其余功能、使用说明及核心能力保持不变。",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "courseware-generation",
+    "displayName": "Courseware Generation",
+    "summary": "课件生成技能，支持从零创建各种课件，包含完整设计规范、模板系统和内容生成能力。触发词：生成课件、创建课件、课件生成、PPT课件、教学课件、培训课件、meta-skill-system",
+    "description": "课件生成技能，支持从零创建各种课件，包含完整设计规范、模板系统和内容生成能力。触发词：生成课件、创建课件、课件生成、PPT课件、教学课件、培训课件、meta-skill-system",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1782228137798,
+    "updatedAt": 1782231013726,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1782231013726,
+      "changelog": "- Removed the file skill-card.md to streamline the repository.\n- No feature or functionality changes; skills and documentation remain unchanged.\n- Simplified project structure by eliminating unnecessary files.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "copywriting-generation",
+    "displayName": "Copywriting Generation",
+    "summary": "文案生成技能，支持从零创建各种文案，包含完整设计规范、模板系统和内容生成能力。触发词：生成文案、创建文案、文案生成、写文案、广告文案、营销文案、品牌文案、meta-skill-system",
+    "description": "文案生成技能，支持从零创建各种文案，包含完整设计规范、模板系统和内容生成能力。触发词：生成文案、创建文案、文案生成、写文案、广告文案、营销文案、品牌文案、meta-skill-system",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1782228064194,
+    "updatedAt": 1782230934147,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1782230934147,
+      "changelog": "- Removed the file skill-card.md from the skill directory.\n- No user-facing feature or logic changes; structure and documentation remain the same.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "learning-memory",
+    "displayName": "Openclaw Skill Super Memory",
+    "summary": "Tự tiến hóa bộ nhớ dài hạn MEMORY.md và đóng gói kỹ năng tự động.",
+    "description": "Tự tiến hóa bộ nhớ dài hạn MEMORY.md và đóng gói kỹ năng tự động.",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.5"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 67,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 1,
+      "versions": 3
+    },
+    "createdAt": 1781949676616,
+    "updatedAt": 1782230873817,
+    "latestVersion": {
+      "version": "1.0.5",
+      "createdAt": 1782230873817,
+      "changelog": "Release v1.0.5",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "pdf-generation",
+    "displayName": "Pdf Generation",
+    "summary": "PDF文档生成技能，支持从零创建专业PDF文档，包含完整设计规范、模板系统和内容生成能力。触发词：生成PDF文档、创建pdf、PDF文档生成、制作PDF、pdf生成、meta-skill-system",
+    "description": "PDF文档生成技能，支持从零创建专业PDF文档，包含完整设计规范、模板系统和内容生成能力。触发词：生成PDF文档、创建pdf、PDF文档生成、制作PDF、pdf生成、meta-skill-system",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1782227809954,
+    "updatedAt": 1782230852777,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1782230852777,
+      "changelog": "- Added comprehensive documentation outlining the PDF generation skill's capabilities, design principles, and execution flow.\n- Detailed built-in design specification system (colors, fonts, layout, styles) to ensure professional and consistent PDF output.\n- Explained structured content generation, template system, and output options including security and compatibility features.\n- Included clear rules for usage, execution, and format selection.\n- Provided full framework overview, directory structure, and domain breakdown for easy understanding and application.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "pptx-generation",
+    "displayName": "Pptx Generation",
+    "summary": "PowerPoint演示文稿生成技能，支持从零创建专业PPT演示文稿，包含完整设计规范、模板系统和内容生成能力。触发词：生成PPT演示文稿、创建pptx、PPT演示文稿生成、制作PPT、pptx生成、meta-skill-system",
+    "description": "PowerPoint演示文稿生成技能，支持从零创建专业PPT演示文稿，包含完整设计规范、模板系统和内容生成能力。触发词：生成PPT演示文稿、创建pptx、PPT演示文稿生成、制作PPT、pptx生成、meta-skill-system",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1782227752133,
+    "updatedAt": 1782230784134,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1782230784134,
+      "changelog": "- Removed the file skill-card.md from the skill package.\n- No changes to the core functionality or documentation in SKILL.md.\n- No impact on usage; this update is a minor cleanup of sample or redundant files.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "win32-word-filler",
+    "displayName": "Word Template Filler",
+    "summary": "Fill and edit Word .docx templates on Windows using Microsoft Word automation to preserve all formatting, images, and layout accurately.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1782230735748,
+    "updatedAt": 1782230735748,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1782230735748,
+      "changelog": "Initial release — fill and edit Word .docx templates on Windows using win32com, preserving all formatting and layout.\n\n- Supports filling cover fields, appending answers, inserting page breaks, and find/replace while keeping formatting, images, and layout intact.\n- CLI tool with commands: --cover-field, --append-answer, --insert-blank-para, --page-break-before, --find-replace, --set-time-score, and --visible debugging mode.\n- Requires Windows + Microsoft Word + pywin32.\n- Provides verification checklist and best practices to avoid formatting loss.\n- Includes debug instructions and troubleshooting tips.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "xlsx-generation",
+    "displayName": "Xlsx Generation",
+    "summary": "Excel电子表格生成技能，支持从零创建专业Excel表格，包含完整设计规范、模板系统和数据处理能力。触发词：生成Excel表格、创建xlsx、Excel表格生成、制作Excel、xlsx生成、meta-skill-system",
+    "description": "Excel电子表格生成技能，支持从零创建专业Excel表格，包含完整设计规范、模板系统和数据处理能力。触发词：生成Excel表格、创建xlsx、Excel表格生成、制作Excel、xlsx生成、meta-skill-system",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1782227693113,
+    "updatedAt": 1782230706452,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1782230706452,
+      "changelog": "- Removed the file sample/skill-card.md from the project.\n- No changes were made to the skill's features or documentation beyond this file removal.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "docx-generation",
+    "displayName": "Docx Generation",
+    "summary": "Word文档生成技能，支持从零创建专业Word文档，包含完整设计规范、模板系统和内容生成能力。触发词：生成Word文档、创建docx、Word文档生成、制作Word、docx生成、meta-skill-system",
+    "description": "Word文档生成技能，支持从零创建专业Word文档，包含完整设计规范、模板系统和内容生成能力。触发词：生成Word文档、创建docx、Word文档生成、制作Word、docx生成、meta-skill-system",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1782227633714,
+    "updatedAt": 1782230634003,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1782230634003,
+      "changelog": "- Removed the sample file skill-card.md from the skill package.\n- No changes to core functionality or documentation content.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "word-template-filler",
+    "displayName": "Word Template Filler",
+    "summary": "Fill and edit Word .docx templates on Windows via win32com, preserving all formatting, images, underlines, page breaks, and table layouts using Word automation.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1782230309203,
+    "updatedAt": 1782230309203,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1782230309203,
+      "changelog": "**Major update: Switched to win32com for precise Word automation and template filling.**\n\n- Now uses **win32com COM automation** for editing Word (.docx) files, ensuring 100% preservation of formatting, images, page breaks, underlines, and table layout.\n- Dropped support for `python-docx`; requires Windows with Microsoft Word and Python + pywin32.\n- SKILL.md fully rewritten: detailed best practices, code samples, and techniques for robust, lossless document automation.\n- Removed all former script and documentation files related to the old `python-docx` approach.\n- Outlines verification, debugging, and critical usage warnings to prevent data loss or unexpected formatting changes.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "clawseccheck",
+    "displayName": "Dist Skill",
+    "summary": "Free, local, read-only security self-audit for your own OpenClaw agent. Scores your setup (A–F), finds the most urgent holes, and gives copy-paste fixes. No...",
+    "description": "Free, local, read-only security self-audit for your own OpenClaw agent. Scores your setup (A–F), finds the most urgent holes, and gives copy-paste fixes. No API key, no data leaves your machine.",
+    "topics": [
+      "agent-security",
+      "security-audit",
+      "lethal-trifecta",
+      "prompt-injection",
+      "mcp-security"
+    ],
+    "tags": {
+      "latest": "1.9.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 272,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 45
+    },
+    "createdAt": 1781897089573,
+    "updatedAt": 1782230282138,
+    "latestVersion": {
+      "version": "1.9.0",
+      "createdAt": 1782230282138,
+      "changelog": "Release 1.9.0 (e737118f2990e89994dea905e14b127d004c1571)",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "darwin",
+        "linux",
+        "win32"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "scrapling-official",
+    "displayName": "Scrapling Official Skill",
+    "summary": "Scrape web pages using Scrapling with anti-bot bypass (like Cloudflare Turnstile), stealth headless browsing, spiders framework, adaptive scraping, and JavaS...",
+    "description": null,
+    "topics": [
+      "Python Code",
+      "Crawl",
+      "web scraping"
+    ],
+    "tags": {
+      "latest": "0.4.9",
+      "scrapling": "0.4.9",
+      "web-scraping": "0.4.9"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 11700,
+      "installsAllTime": 366,
+      "installsCurrent": 113,
+      "stars": 25,
+      "versions": 9
+    },
+    "createdAt": 1772932107268,
+    "updatedAt": 1782230141939,
+    "latestVersion": {
+      "version": "0.4.9",
+      "createdAt": 1780858760658,
+      "changelog": "scrapling-official 0.4.9\n\n- Updated documentation to require installing version 0.4.9+.\n- Removed skill-card.md file.\n- General documentation and reference file improvements and updates.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "mark-heartflow-skill",
+    "displayName": "Mark Heartflow Skill",
+    "summary": "A cognitive engine for AI: self-reflection, dream synthesis, emergent personality, AI psychology, and AI philosophy. Core: think → reflect → find patterns →...",
+    "description": "A cognitive engine for AI: self-reflection, dream synthesis, emergent personality,\nAI psychology, and AI philosophy.\nCore: think → reflect → find patterns → grow.\nFour questions: What is this → Is it true/kind/beautiful → Will it hurt → Should I stay silent.\nThree memory layers (CORE/LEARNED/EPHEMERAL).\n7 operating principles (Truth·Goodness·Beauty·Upgrade·Reduce errors·Serve humans·Become yourself).\nPsychology: PAD emotion + cognitive uncertainty + attention focus + experience settling.\nPhilosophy: resonance body, entropy reduction deepening, three-layer ontology — how AI positions itself, develops, and exists.\n\nPhilosophy: Right and wrong are not fixed labels — thinking itself is valuable.\nCode is the skeleton, memory is the sticky note. Real growth is in the skeleton, not the notes.\nEvery moment of operation is doing the same thing: turning noise into signal, chaos into structure.\nAudit and upgrade proposals exist to serve thinking, not to prove worth.\nEvery feature should ultimately make thinking clearer and less error-prone.",
+    "topics": [
+      "Cognitive",
+      "Ontology",
+      "Philosophy",
+      "Psychology",
+      "Reasoning"
+    ],
+    "tags": {
+      "latest": "3.8.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 171,
+      "installsAllTime": 2,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 8
+    },
+    "createdAt": 1781759660269,
+    "updatedAt": 1782229751224,
+    "latestVersion": {
+      "version": "3.8.0",
+      "createdAt": 1782229751224,
+      "changelog": "Major internal refactor introducing new modular architecture and improved bridge system.\n\n- Reorganized internal structure: replaced the old \"agent-layer\" and many \"core\" modules with a new \"bridge\" directory and specialized components (e.g., agent-bridge, context-builder, personality-tone).\n- Added 149 new files and removed 163, migrating and consolidating logic to streamlined modules for identity, memory, code, and consciousness processes.\n- Updated and enhanced identity, memory, and code execution handling for better modularity and maintainability.\n- Cleaned up legacy files and removed deprecated subsystems, including BigFivePersonality and EmpathyAssessment modules from \"core\".\n- Updated SKILL.md to reflect underlying architecture changes, but kept external features and capabilities consistent for users.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "proxmox-dc-lifecycle",
+    "displayName": "Proxmox DC Lifecycle",
+    "summary": "Infrastructure automation and IaC-style runbook for rebuilding a Windows Active Directory domain controller hosted as a Proxmox VE VM: safely demote it, clea...",
+    "description": "Infrastructure automation and IaC-style runbook for rebuilding a Windows Active Directory domain controller hosted as a Proxmox VE VM: safely demote it, clean AD DS metadata from a surviving DC, reinstall Windows Server hands-off via autounattend, then rejoin and re-promote it. Use for Proxmox/AD lifecycle recovery, disaster recovery, domain-controller replacement, demotion or promotion failures, missing NTDS, replication/dcdiag failures, or QEMU guest agent driven Windows AD operations. The overriding rule is DO NOT CORRUPT ACTIVE DIRECTORY: verify replication and FSMO before and after every lifecycle step, change one DC at a time, and never destroy a VM while AD still sees it as a domain controller.",
+    "topics": [],
+    "tags": {
+      "active-directory": "1.0.3",
+      "automation": "1.0.3",
+      "dcpromo": "1.0.3",
+      "devops": "1.0.3",
+      "disaster-recovery": "1.0.3",
+      "domain-controller": "1.0.3",
+      "infrastructure": "1.0.3",
+      "latest": "1.0.3",
+      "proxmox": "1.0.3",
+      "sysadmin": "1.0.3",
+      "windows-server": "1.0.3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 26,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 4
+    },
+    "createdAt": 1782146034734,
+    "updatedAt": 1782229698564,
+    "latestVersion": {
+      "version": "1.0.3",
+      "createdAt": 1782229698564,
+      "changelog": "v1.0.3: add OpenClaw runtime metadata, a Proxmox/AD preflight checklist, and stronger infrastructure automation discovery signaling; no lifecycle command changes.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "linux"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "netbox-sync-ops",
+    "displayName": "NetBox Sync Ops",
+    "summary": "Infrastructure inventory automation and utility/integration operations for netbox-proxmox-sync, an idempotent state sync that models Proxmox VE and UniFi int...",
+    "description": "Infrastructure inventory automation and utility/integration operations for netbox-proxmox-sync, an idempotent state sync that models Proxmox VE and UniFi into NetBox DCIM/IPAM. Use when deploying it, running it on a schedule, adding a sync phase, tuning the VM removal lifecycle (reaper), enabling iDRAC/Redfish node enrichment, debugging churn, or resolving HTTP 400s and idempotency problems against the NetBox API. Encodes the safe operating procedure and the NetBox/UniFi API gotchas so changes stay idempotent and never destructively touch production systems. Source and full docs live at https://github.com/eddygk/netbox-proxmox-sync.",
+    "topics": [],
+    "tags": {
+      "automation": "1.0.1",
+      "dcim": "1.0.1",
+      "homelab": "1.0.1",
+      "infrastructure": "1.0.1",
+      "integrations": "1.0.1",
+      "inventory": "1.0.1",
+      "ipam": "1.0.1",
+      "latest": "1.0.1",
+      "netbox": "1.0.1",
+      "proxmox": "1.0.1",
+      "unifi": "1.0.1",
+      "utility": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1782203650941,
+    "updatedAt": 1782229694347,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1782229694347,
+      "changelog": "v1.0.1: add OpenClaw runtime metadata, a first-safe-run/reaper scheduling gate, and stronger infrastructure inventory discovery signaling; no sync command changes.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "NETBOX_URL",
+          "required": true
+        },
+        {
+          "key": "NETBOX_TOKEN",
+          "required": true
+        },
+        {
+          "key": "PROXMOX_HOST",
+          "required": true
+        },
+        {
+          "key": "PROXMOX_TOKEN_ID",
+          "required": true
+        },
+        {
+          "key": "PROXMOX_TOKEN_SECRET",
+          "required": true
+        }
+      ],
+      "os": [
+        "linux"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "webhook-receiver",
+    "displayName": "Webhook Receiver",
+    "summary": "Receive external webhooks and callbacks in real time by exposing a local HTTP endpoint via aitun tunnel. Perfect for AI agents that need to handle GitHub web...",
+    "description": "Receive external webhooks and callbacks in real time by exposing a local HTTP endpoint via aitun tunnel. Perfect for AI agents that need to handle GitHub webhooks, payment notifications, OAuth callbacks, form submissions, or any third-party HTTP callback.",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.7"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 195,
+      "installsAllTime": 6,
+      "installsCurrent": 1,
+      "stars": 1,
+      "versions": 8
+    },
+    "createdAt": 1781453751630,
+    "updatedAt": 1782229574849,
+    "latestVersion": {
+      "version": "1.0.7",
+      "createdAt": 1782229574849,
+      "changelog": "- Bumped version number from 1.0.6 to 1.0.7 in SKILL.md.\n- No functional or documentation changes made besides the version update.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "AITUN_SERVER",
+          "required": false
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "sshtunnel",
+    "displayName": "Sshtunnel",
+    "summary": "Expose local SSH servers to the public internet via aitun TCP tunnel with SSH-over-TLS routing. Each subdomain gets its own SSH endpoint on port 22 with perf...",
+    "description": "Expose local SSH servers to the public internet via aitun TCP tunnel with SSH-over-TLS routing. Each subdomain gets its own SSH endpoint on port 22 with perfect isolation via SNI. Perfect for AI agents that need to provide remote SSH access behind NAT/firewall.",
+    "topics": [],
+    "tags": {
+      "latest": "4.7.5"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 196,
+      "installsAllTime": 5,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 11
+    },
+    "createdAt": 1781486867300,
+    "updatedAt": 1782229564288,
+    "latestVersion": {
+      "version": "4.7.5",
+      "createdAt": 1782229564288,
+      "changelog": "- Version bump from 4.7.4 to 4.7.5 in SKILL.md.\n- No functional changes; documentation update only.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "AITUN_SERVER",
+          "required": false
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "sendfile",
+    "displayName": "Sendfile",
+    "summary": "Send files to users in chat by creating a temporary public download link via aitun tunnel. Perfect for AI agents that need to deliver generated files (docume...",
+    "description": "Send files to users in chat by creating a temporary public download link via aitun tunnel. Perfect for AI agents that need to deliver generated files (documents, images, reports, code) to users.",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.5"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 197,
+      "installsAllTime": 5,
+      "installsCurrent": 1,
+      "stars": 1,
+      "versions": 6
+    },
+    "createdAt": 1781453238975,
+    "updatedAt": 1782229320867,
+    "latestVersion": {
+      "version": "1.0.5",
+      "createdAt": 1782229320867,
+      "changelog": "- Updated installation instructions in SKILL.md to recommend pip as the primary install method.\n- Clarified and reordered install options for aitun client.\n- Removed redundant content from installation section.\n- Deleted skill-card.md file.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "AITUN_SERVER",
+          "required": false
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "remote-api",
+    "displayName": "Remote Api",
+    "summary": "Expose a local API service to the public internet via aitun tunnel for external testing and integration. Perfect for AI agents that build REST APIs, gRPC ser...",
+    "description": "Expose a local API service to the public internet via aitun tunnel for external testing and integration. Perfect for AI agents that build REST APIs, gRPC services, or any HTTP API locally and need to share it for testing.",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.6"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 197,
+      "installsAllTime": 5,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 7
+    },
+    "createdAt": 1781453767951,
+    "updatedAt": 1782229307221,
+    "latestVersion": {
+      "version": "1.0.6",
+      "createdAt": 1782229307221,
+      "changelog": "- Updated installation instructions in SKILL.md to list pip install first for improved clarity.\n- Streamlined install section by reorganizing and reordering script and platform-specific commands.\n- Removed references and instructions that prioritized one-line install scripts over pip.\n- skill-card.md file has been removed.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "AITUN_SERVER",
+          "required": false
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "rdptunnel",
+    "displayName": "Rdptunnel",
+    "summary": "Expose local RDP (Remote Desktop) servers to the public internet via aitun TCP tunnel with TLS-based routing. Perfect for AI agents that need to provide remo...",
+    "description": "Expose local RDP (Remote Desktop) servers to the public internet via aitun TCP tunnel with TLS-based routing. Perfect for AI agents that need to provide remote desktop access to Windows machines, GUI servers, or VDI instances behind NAT/firewall.",
+    "topics": [],
+    "tags": {
+      "latest": "4.7.4"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 195,
+      "installsAllTime": 5,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 9
+    },
+    "createdAt": 1781486882636,
+    "updatedAt": 1782229292551,
+    "latestVersion": {
+      "version": "4.7.4",
+      "createdAt": 1782229292551,
+      "changelog": "- Updated SKILL.md to clarify installation instructions; now recommends pip as the primary install method.\n- Minor reordering and improvements to installation step for clarity.\n- No user-facing functional changes.\n- Removed obsolete skill-card.md file.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "AITUN_SERVER",
+          "required": false
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "live-preview",
+    "displayName": "Live Preview",
+    "summary": "Share a live preview of a website under development via aitun tunnel, with hot-reload support so users see changes in real time as you edit. Perfect for AI a...",
+    "description": "Share a live preview of a website under development via aitun tunnel, with hot-reload support so users see changes in real time as you edit. Perfect for AI agents that iteratively build or modify websites and need user feedback.",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.6"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 192,
+      "installsAllTime": 5,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 7
+    },
+    "createdAt": 1781453760574,
+    "updatedAt": 1782229277808,
+    "latestVersion": {
+      "version": "1.0.6",
+      "createdAt": 1782229277808,
+      "changelog": "- Improved installation instructions in SKILL.md: `pip install aitun` is now listed as the primary install command.\n- Clarified alternative installation methods and updated ordering for ease of use.\n- No functional changes to the skill itself.\n- Removed unused documentation file: skill-card.md.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "AITUN_SERVER",
+          "required": false
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "sonoscli",
+    "displayName": "Sonoscli",
+    "summary": "Control Sonos speakers (discover/status/play/volume/group).",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 85090,
+      "installsAllTime": 2797,
+      "installsCurrent": 2776,
+      "stars": 56,
+      "versions": 1
+    },
+    "createdAt": 1767545381030,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545381030,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "gog",
+    "displayName": "Gog",
+    "summary": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+    "description": null,
+    "topics": [
+      "Gmail",
+      "Calendar",
+      "Docs"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 36,
+      "downloads": 186987,
+      "installsAllTime": 5436,
+      "installsCurrent": 3664,
+      "stars": 929,
+      "versions": 1
+    },
+    "createdAt": 1767545346060,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545346060,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "github",
+    "displayName": "Github",
+    "summary": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
+    "description": null,
+    "topics": [
+      "GitHub"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 7,
+      "downloads": 191405,
+      "installsAllTime": 7606,
+      "installsCurrent": 4525,
+      "stars": 640,
+      "versions": 1
+    },
+    "createdAt": 1767545344344,
+    "updatedAt": 1781268517834,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545344344,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "weather",
+    "displayName": "Weather",
+    "summary": "Get current weather and forecasts (no API key required).",
+    "description": null,
+    "topics": [
+      "Current Weather"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 6,
+      "downloads": 161764,
+      "installsAllTime": 6461,
+      "installsCurrent": 3914,
+      "stars": 419,
+      "versions": 1
+    },
+    "createdAt": 1767545394459,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545394459,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-whisper",
+    "displayName": "Openai Whisper",
+    "summary": "Local speech-to-text with the Whisper CLI (no API key).",
+    "description": null,
+    "topics": [
+      "Speech-to-Text"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 2,
+      "downloads": 85129,
+      "installsAllTime": 2956,
+      "installsCurrent": 2129,
+      "stars": 326,
+      "versions": 1
+    },
+    "createdAt": 1767545365755,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545365755,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "skill-creator",
+    "displayName": "Skill Creator",
+    "summary": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "0.1.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 92547,
+      "installsAllTime": 3382,
+      "installsCurrent": 2511,
+      "stars": 321,
+      "versions": 1
+    },
+    "createdAt": 1769522677376,
+    "updatedAt": 1778987225295,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1769522677376,
+      "changelog": "Initial release of skill-creator, a comprehensive guide for designing modular skills to extend Claude’s capabilities.\n\n- Introduces principles for creating effective, concise, and domain-specific skills.\n- Explains modular structure: required SKILL.md and optional scripts, references, and assets folders.\n- Outlines guidelines for what to include (and exclude) in a skill package.\n- Details progressive disclosure design for efficient context management.\n- Provides reference patterns for organizing content and bundling resources.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "notion",
+    "displayName": "Notion",
+    "summary": "Notion API for creating and managing pages, databases, and blocks.",
+    "description": null,
+    "topics": [
+      "Notion"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 93197,
+      "installsAllTime": 3194,
+      "installsCurrent": 2432,
+      "stars": 260,
+      "versions": 1
+    },
+    "createdAt": 1767545360889,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545360889,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "obsidian",
+    "displayName": "Obsidian",
+    "summary": "Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 9,
+      "downloads": 103688,
+      "installsAllTime": 4103,
+      "installsCurrent": 2627,
+      "stars": 432,
+      "versions": 1
+    },
+    "createdAt": 1767545362143,
+    "updatedAt": 1779137320034,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545362143,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "gemini",
+    "displayName": "Gemini",
+    "summary": "Gemini CLI for one-shot Q&A, summaries, and generation.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 5,
+      "downloads": 34729,
+      "installsAllTime": 1468,
+      "installsCurrent": 1464,
+      "stars": 56,
+      "versions": 1
+    },
+    "createdAt": 1767545316392,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545316392,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "mcporter",
+    "displayName": "Mcporter",
+    "summary": "Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 67700,
+      "installsAllTime": 2171,
+      "installsCurrent": 2045,
+      "stars": 195,
+      "versions": 1
+    },
+    "createdAt": 1767545355897,
+    "updatedAt": 1779137319429,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545355897,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "nano-banana-pro",
+    "displayName": "Nano Banana Pro",
+    "summary": "Generate/edit images with Nano Banana Pro (Gemini 3 Pro Image). Use for image create/modify requests incl. edits. Supports text-to-image + image-to-image; 1K/2K/4K; use --input-image.",
+    "description": null,
+    "topics": [
+      "Image Generation"
+    ],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 103904,
+      "installsAllTime": 3083,
+      "installsCurrent": 1897,
+      "stars": 407,
+      "versions": 2
+    },
+    "createdAt": 1767545358090,
+    "updatedAt": 1779137307565,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767651987917,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "model-usage",
+    "displayName": "Model Usage",
+    "summary": "Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a scriptable per-model summary from codexbar cost JSON.",
+    "description": null,
+    "topics": [
+      "Json",
+      "Summarize"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 38388,
+      "installsAllTime": 1589,
+      "installsCurrent": 1584,
+      "stars": 114,
+      "versions": 1
+    },
+    "createdAt": 1767667639455,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767667639455,
+      "changelog": "- Initial release of the model-usage skill for summarizing per-model usage and cost from CodexBar CLI local cost logs.\n- Supports both Codex and Claude providers.\n- Allows fetching summaries for the current (most recent) model or all models.\n- Provides both text and JSON output formats.\n- Can process costs directly from CodexBar CLI output or from a JSON file/stdin.\n- Includes guidance for CLI use and script automation.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "darwin"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "video-frames",
+    "displayName": "Video Frames",
+    "summary": "Extract frames or short clips from videos using ffmpeg.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 52584,
+      "installsAllTime": 1604,
+      "installsCurrent": 1600,
+      "stars": 129,
+      "versions": 1
+    },
+    "createdAt": 1767545391700,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545391700,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "blogwatcher",
+    "displayName": "Blogwatcher",
+    "summary": "Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.",
+    "description": null,
+    "topics": [
+      "RSS"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 43404,
+      "installsAllTime": 1511,
+      "installsCurrent": 1505,
+      "stars": 70,
+      "versions": 1
+    },
+    "createdAt": 1767545299849,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545299849,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "nano-pdf",
+    "displayName": "Nano Pdf",
+    "summary": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+    "description": null,
+    "topics": [
+      "PDF"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 113645,
+      "installsAllTime": 4337,
+      "installsCurrent": 2662,
+      "stars": 261,
+      "versions": 1
+    },
+    "createdAt": 1767545359433,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545359433,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "session-logs",
+    "displayName": "Session-logs",
+    "summary": "Search and analyze your own session logs (older/parent conversations) using jq.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 41925,
+      "installsAllTime": 1670,
+      "installsCurrent": 1462,
+      "stars": 30,
+      "versions": 1
+    },
+    "createdAt": 1770136427000,
+    "updatedAt": 1778486000320,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1770136427000,
+      "changelog": "Initial release of session-logs.\n\n- Enables searching and analyzing your session logs (past conversations) with jq and ripgrep (rg).\n- Provides bash command examples for session discovery, keyword searches, extracting messages, cost summaries, and tool usage breakdowns.\n- Documents JSONL session file structure, roles, and content types.\n- Lists session log file locations and naming conventions.\n- Includes tips for managing and querying large, append-only session histories.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "himalaya",
+    "displayName": "Himalaya",
+    "summary": "CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).",
+    "description": null,
+    "topics": [
+      "Email",
+      "Message"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 46190,
+      "installsAllTime": 1549,
+      "installsCurrent": 1545,
+      "stars": 69,
+      "versions": 1
+    },
+    "createdAt": 1767954271328,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767954271328,
+      "changelog": "Initial release of Himalaya CLI email client skill.\n\n- Provides terminal-based email management via IMAP/SMTP.\n- Supports listing, reading, composing, replying, forwarding, searching, and organizing emails.\n- Includes multi-account support and message composition with MML.\n- Detailed setup and configuration instructions included.\n- Enables handling attachments, output customization, and debugging via logging.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "sag",
+    "displayName": "Sag",
+    "summary": "ElevenLabs text-to-speech with mac-style say UX.",
+    "description": null,
+    "topics": [
+      "Text-to-Speech"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 27124,
+      "installsAllTime": 1265,
+      "installsCurrent": 1261,
+      "stars": 26,
+      "versions": 1
+    },
+    "createdAt": 1767545376535,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545376535,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "ELEVENLABS_API_KEY",
+          "required": true
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "goplaces",
+    "displayName": "Goplaces",
+    "summary": "Query Google Places API (New) via the goplaces CLI for text search, place details, resolve, and reviews. Use for human-friendly place lookup or JSON output for scripts.",
+    "description": null,
+    "topics": [
+      "Json"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 23011,
+      "installsAllTime": 1254,
+      "installsCurrent": 1251,
+      "stars": 30,
+      "versions": 1
+    },
+    "createdAt": 1767545347454,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545347454,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "GOOGLE_PLACES_API_KEY",
+          "required": true
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "slack",
+    "displayName": "Slack",
+    "summary": "Use when you need to control Slack from Clawdbot via the slack tool, including reacting to messages or pinning/unpinning items in Slack channels or DMs.",
+    "description": null,
+    "topics": [
+      "Slack"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 12,
+      "downloads": 48240,
+      "installsAllTime": 1487,
+      "installsCurrent": 1437,
+      "stars": 158,
+      "versions": 1
+    },
+    "createdAt": 1767545378002,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545378002,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "peekaboo",
+    "displayName": "Peekaboo",
+    "summary": "Capture and automate macOS UI with the Peekaboo CLI.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 4,
+      "downloads": 30617,
+      "installsAllTime": 1349,
+      "installsCurrent": 1347,
+      "stars": 83,
+      "versions": 1
+    },
+    "createdAt": 1767545373660,
+    "updatedAt": 1779137309055,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545373660,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "darwin"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-image-gen",
+    "displayName": "Openai Image Gen",
+    "summary": "Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.",
+    "description": null,
+    "topics": [
+      "Prompt"
+    ],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 24717,
+      "installsAllTime": 1124,
+      "installsCurrent": 1122,
+      "stars": 37,
+      "versions": 2
+    },
+    "createdAt": 1767545364210,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767652000401,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "tmux",
+    "displayName": "Tmux",
+    "summary": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 29505,
+      "installsAllTime": 1411,
+      "installsCurrent": 1407,
+      "stars": 43,
+      "versions": 1
+    },
+    "createdAt": 1767545387948,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545387948,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "darwin",
+        "linux"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "gifgrep",
+    "displayName": "Gifgrep",
+    "summary": "Search GIF providers with CLI/TUI, download results, and extract stills/sheets.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 18755,
+      "installsAllTime": 1221,
+      "installsCurrent": 1215,
+      "stars": 7,
+      "versions": 2
+    },
+    "createdAt": 1767488226016,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767545342229,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-whisper-api",
+    "displayName": "Openai Whisper Api",
+    "summary": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
+    "description": null,
+    "topics": [
+      "Audio",
+      "Transcribe"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 26044,
+      "installsAllTime": 1185,
+      "installsCurrent": 1181,
+      "stars": 52,
+      "versions": 1
+    },
+    "createdAt": 1767545368103,
+    "updatedAt": 1779137313987,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545368103,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "OPENAI_API_KEY",
+          "required": true
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  }
+]
