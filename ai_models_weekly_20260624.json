@@ -1,27 +1,29 @@
 {
   "week_start": "2026-06-18",
   "week_end": "2026-06-24",
-  "summary": "本周共收录AI领域动态 79 条。本周最活跃：其他（30条）、Anthropic/Claude（26条）、Google/Gemini（9条）。主要方向为模型发布（22条）。",
+  "summary": "本周共收录AI领域动态 91 条。本周最活跃：其他（34条）、Anthropic/Claude（28条）、Google/Gemini（10条）。主要方向为模型发布（28条）。",
   "stats": {
-    "total_items": 79,
+    "total_items": 91,
     "by_vendor": {
-      "other": 30,
-      "anthropic": 26,
-      "google": 9,
-      "openai": 7,
+      "other": 34,
+      "anthropic": 28,
+      "google": 10,
+      "openai": 9,
       "alibaba": 3,
+      "meta": 2,
       "deepseek": 1,
       "amazon": 1,
       "xai": 1,
-      "apple": 1
+      "apple": 1,
+      "mistral": 1
     },
     "by_direction": {
-      "模型发布": 22,
-      "研究/论文": 22,
-      "工具/平台": 17,
+      "模型发布": 28,
+      "研究/论文": 23,
+      "工具/平台": 21,
       "应用/落地": 8,
-      "行业动态": 5,
-      "政策/合规": 5
+      "政策/合规": 6,
+      "行业动态": 5
     }
   },
   "timeline": [
@@ -832,6 +834,143 @@
               "quote": "挪威一刀切：小学生原则上不准碰 AI——别的国家还在讨论，挪威已经动手了。",
               "url": "",
               "published": "2026-06-23"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2026-06-24",
+      "models": {
+        "anthropic": {
+          "displayName": "Anthropic/Claude",
+          "icon": "🧬",
+          "items": [
+            {
+              "uid": "",
+              "title": "Anthropic 推出 Claude Tag：让 Claude 成为 Slack 团队中的 AI 队友",
+              "direction": "模型发布",
+              "quote": "以后 @Claude 比 @产品经理 还管用",
+              "url": "",
+              "published": "2026-06-24"
+            },
+            {
+              "uid": "",
+              "title": "Claude 发生大规模故障，影响多模型服务",
+              "direction": "工具/平台",
+              "quote": "AI 时代的新常态：每月大姨妈式宕机",
+              "url": "",
+              "published": "2026-06-24"
+            }
+          ]
+        },
+        "mistral": {
+          "displayName": "Mistral",
+          "icon": "💨",
+          "items": [
+            {
+              "uid": "",
+              "title": "Mistral OCR 4 发布：支持边界框与置信度分数，170 语言",
+              "direction": "模型发布",
+              "quote": "PDF 文字提取大战进入核武器时代",
+              "url": "",
+              "published": "2026-06-24"
+            }
+          ]
+        },
+        "openai": {
+          "displayName": "OpenAI/GPT",
+          "icon": "🔬",
+          "items": [
+            {
+              "uid": "",
+              "title": "Superhuman 收购 GPTZero：AI 内容真实性检测进入生产力平台",
+              "direction": "工具/平台",
+              "quote": "检测 AI 比写 AI 更难，所以直接买了",
+              "url": "",
+              "published": "2026-06-24"
+            },
+            {
+              "uid": "",
+              "title": "阿里云 HappyHorse 1.1 升至全球视频生成榜第二，Sora 已停运",
+              "direction": "工具/平台",
+              "quote": "Sora 倒了，Seedance 凉了，阿里快乐马冲上来了",
+              "url": "",
+              "published": "2026-06-24"
+            }
+          ]
+        },
+        "google": {
+          "displayName": "Google/Gemini",
+          "icon": "🌐",
+          "items": [
+            {
+              "uid": "",
+              "title": "Gemini 集成 Google Sheets：一键修复公式错误",
+              "direction": "模型发布",
+              "quote": "以后 Excel 出 bug 连百度都不用搜了",
+              "url": "",
+              "published": "2026-06-24"
+            }
+          ]
+        },
+        "meta": {
+          "displayName": "Meta/LLaMA",
+          "icon": "👁️",
+          "items": [
+            {
+              "uid": "",
+              "title": "Meta 暂停 AI 员工追踪计划，敏感数据内部泄露",
+              "direction": "研究/论文",
+              "quote": "监视员工训练 AI 的翻车现场堪称行为艺术",
+              "url": "",
+              "published": "2026-06-24"
+            },
+            {
+              "uid": "",
+              "title": "监督委员会要求 Meta 下架 AI 深度伪造视频，呼吁加强非公众人物保护",
+              "direction": "政策/合规",
+              "quote": "深伪的底线问题轮到平台当裁判了",
+              "url": "",
+              "published": "2026-06-24"
+            }
+          ]
+        },
+        "other": {
+          "displayName": "其他",
+          "icon": "📰",
+          "items": [
+            {
+              "uid": "",
+              "title": "Sakana 发布 Fugu：多 Agent 自动编排系统，实现前沿级性能",
+              "direction": "工具/平台",
+              "quote": "学会偷懒的 AI 才是好队友",
+              "url": "",
+              "published": "2026-06-24"
+            },
+            {
+              "uid": "",
+              "title": "字节跳动 PerceptionDLM：扩散语言模型实现并行区域感知",
+              "direction": "模型发布",
+              "quote": "一张图同时看多个角落，比人类还忙",
+              "url": "",
+              "published": "2026-06-24"
+            },
+            {
+              "uid": "",
+              "title": "凯特·布兰切特发起人类同意登记处，约定 AI 使用个人形象的规则",
+              "direction": "模型发布",
+              "quote": "AI 时代的身材焦虑从被换脸开始维权",
+              "url": "",
+              "published": "2026-06-24"
+            },
+            {
+              "uid": "",
+              "title": "Krea 2 Raw 和 Turbo 开源：2 秒级企业级 AI 图像生成",
+              "direction": "模型发布",
+              "quote": "2 秒一张图，设计师的咖啡还没凉活就干完了",
+              "url": "",
+              "published": "2026-06-24"
             }
           ]
         }
