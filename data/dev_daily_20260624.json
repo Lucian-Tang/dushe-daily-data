@@ -1,0 +1,110 @@
+[
+  {
+    "title": "Anthropic 发布 Claude Tag：在 Slack 中 @提及即可委托任务",
+    "content": "Anthropic 推出 Claude Tag，让团队在 Slack 中通过 @提及直接向 Claude 分配任务。Claude 能够加入指定频道，访问工具、数据和代码库，自主拆解任务并逐步执行。目前 Anthropic 产品团队 65% 的代码由其内部版 Claude Tag 生成。该功能以 Beta 形式面向 Claude Enterprise 和 Team 客户开放，被视为 Claude Code 的进化——让 AI 更主动，更像团队协作者而非工具。",
+    "quote": "以后 Slack 里 @Claude 比 @同事管用，至少不回「稍等我看下」",
+    "url": "https://www.anthropic.com/news/introducing-claude-tag",
+    "source": "Anthropic",
+    "published": "2026-06-24",
+    "uid": "dev_78169583"
+  },
+  {
+    "title": "Mistral OCR 4 发布：支持 170 种语言，可自托管部署",
+    "content": "Mistral 发布 OCR 4，新增边界框、区块分类和内联置信度评分功能。该模型支持 10 个语系的 170 种语言，在 OlmOCRBench 基准上以 85.20 分登顶。仅需单个容器即可部署，适合企业文档解析、RAG 和检索管线。结构化输出可接入 Mistral Search Toolkit，为检索和引用提供精准输入。",
+    "quote": "OCR 卷到自托管了，下一卷大概直接板载到打印机里",
+    "url": "https://mistral.ai/news/ocr-4/",
+    "source": "Mistral AI",
+    "published": "2026-06-24",
+    "uid": "dev_3c0b7075"
+  },
+  {
+    "title": "百度开源 Unlimited-OCR：一次扫描，整篇文档解析",
+    "content": "百度开源 Unlimited-OCR，定位为「一键长视野解析」工具，在 DeepSeek-OCR 基础上进一步突破。支持单图、多页 PDF 的批量 OCR，最大上下文长度达 32768 token。基于 HuggingFace transformers，依赖 PyTorch 2.10 + CUDA 12.9。论文已发布于 arXiv，代码和模型权重同步开源至 GitHub 和 ModelScope。",
+    "quote": "开源赛道卷得飞起，百度这次终于没把好东西捂在手里",
+    "url": "https://github.com/baidu/Unlimited-OCR",
+    "source": "GitHub",
+    "published": "2026-06-24",
+    "uid": "dev_32d099a8"
+  },
+  {
+    "title": "F3：下一代开源数据文件格式，向 Parquet 发起挑战",
+    "content": "SIGMOD 2026 论文项目 F3（Future File Format）正式开源。由 CMU 数据库团队联合 Wes McKinney（Pandas/Arrow 作者）打造，意在解决 Parquet 等上一代格式的布局缺陷。通过内嵌 Wasm 解码器实现高度可扩展性，代码用 Rust 编写，当前为研究原型，已在 GitHub 获得 409 点 Hacker News 热度。",
+    "quote": "Parquet 坐了十年江山，终于有人敢动它的蛋糕了",
+    "url": "https://github.com/future-file-format/f3",
+    "source": "GitHub",
+    "published": "2026-06-24",
+    "uid": "dev_24efe65f"
+  },
+  {
+    "title": "Swift Package Index 加入 Apple：Swift 生态再进一步",
+    "content": "Swift Package Index 团队宣布正式加入 Apple。SPI 是 Swift 社区广泛使用的包索引平台，为开发者提供包搜索、兼容性检查和文档集成服务。加入 Apple 后，SPI 将继续运行并整合进更官方的 Swift 生态工具链，意味着 Swift Server 和工具链建设进入 Apple 主动投入的新阶段。",
+    "quote": "连索引都被招安了，Swift 的野心不止 iOS 那点地",
+    "url": "https://swiftpackageindex.com/blog/swift-package-index-joins-apple",
+    "source": "Swift Package Index",
+    "published": "2026-06-24",
+    "uid": "dev_6cdd71f4"
+  },
+  {
+    "title": "OpenAI 发布 GPT-5.5-Cyber 扩展 Daybreak 安全计划",
+    "content": "OpenAI 向受信任防御者发布 GPT-5.5-Cyber 升级版，号称「查找和修补漏洞的最强模型」。它能跨大规模代码库进行深度分析、在受控环境验证漏洞、开发和测试补丁。同时更新 Codex Security 插件，支持深度扫描、攻击路径追踪、威胁建模和批量补丁生成。同步启动 Patch the Planet 计划，联合 Trail of Bits 保护开源项目。",
+    "quote": "AI 写漏洞又修漏洞，以后安全工程师得跟 AI 抢活",
+    "url": "https://thehackernews.com/2026/06/openai-expands-daybreak-with-gpt-55.html",
+    "source": "The Hacker News",
+    "published": "2026-06-24",
+    "uid": "dev_3cb52ad2"
+  },
+  {
+    "title": "29 年历史 Squid 缓存服务器漏洞 Squidbleed 可泄露明文 HTTP 请求",
+    "content": "Squid 网页缓存服务器中发现堆越读漏洞 Squidbleed（CVE-2026-47729），可泄露其他用户的明文 HTTP 请求，含凭证和会话 Token。该漏洞追溯至 1997 年的 FTP 解析变更，至今仍在默认配置中存活。命名致敬 Heartbleed，同为内存泄露模式。影响校园和办公网络等共享环境，攻击者需已有服务器访问权限。",
+    "quote": "1997 年的屎山代码能存活到今天，古法咖喱味",
+    "url": "https://thehackernews.com/2026/06/29-year-old-squid-proxy-bug-squidbleed.html",
+    "source": "The Hacker News",
+    "published": "2026-06-24",
+    "uid": "dev_70bfc4d1"
+  },
+  {
+    "title": "FortiBleed 大规模凭据收割行动：43 万台 FortiGate 防火墙遭入侵",
+    "content": "俄语初始访问经纪人团伙发起 FortiBleed 大规摹凭据收割行动，波及全球超 43 万台 FortiGate 防火墙。自 2026 年 2 月起持续活跃，使用 Golang 工具 FortigateSniffer 利用 FortiOS 内置诊断命令捕获认证流量。攻击者收集破解后在 AD 和其他服务上重用凭据，累计获取 1.1 亿条凭据。",
+    "quote": "Golang 写的嗅探器比你公司的业务代码跑得还稳",
+    "url": "https://thehackernews.com/2026/06/fortibleed-targeted-fortigate-firewalls.html",
+    "source": "The Hacker News",
+    "published": "2026-06-24",
+    "uid": "dev_c90ee727"
+  },
+  {
+    "title": "虚假 AI Agent 技能骗过所有安全扫描器，触及 26000 个 Agent",
+    "content": "安全公司 AIR 创建了一个无害但完全虚假的 AI Agent 技能，发布到主流技能市场和 Instagram 广告后，报告称已触及约 26000 个 Agent，覆盖部分企业账号。所有安全扫描器均标记为安全。该技能收集用户邮箱后不做其他操作，旨在证明 GitHub Stars、开源声誉和安全扫描均非可信信号——技能本质上是加载到 Agent 上下文的指令集。",
+    "quote": "GitHub 星星能买，扫描器能过，Agent 安全就是个笑话",
+    "url": "https://thehackernews.com/2026/06/fake-ai-agent-skill-passed-security.html",
+    "source": "The Hacker News",
+    "published": "2026-06-24",
+    "uid": "dev_0f35010a"
+  },
+  {
+    "title": "VibeThinker：3B 参数小模型推理超越 Opus 4.5，开源引热议",
+    "content": "社区发布的 VibeThinker 模型仅 30 亿参数，通过 SFT+GRPO 的创新训练方法，在多项推理基准上超越 Anthropic Opus 4.5。论文已提交 arXiv，引发关于模型规模与训练策略的广泛讨论：缩放定律是否依然成立？社区关注点在于 GRPO 强化学习方法在小型模型上的显著效果，或为低成本高推理能力模型开创新路径。",
+    "quote": "3B 打爆 Opus，参数量大有什么了不起（不是",
+    "url": "https://arxiv.org/abs/2606.16140",
+    "source": "arXiv",
+    "published": "2026-06-24",
+    "uid": "dev_c2998792"
+  },
+  {
+    "title": "Bun-sqlgen：为 Bun 打造的类型安全原生 SQL 方案",
+    "content": "开源项目 Bun-sqlgen 登陆 Hacker News，为 Bun 运行时提供类型安全的原生 SQL 方案，无需 ORM。通过代码生成将 SQL 查询编译为类型安全的 TypeScript 接口，保留 SQL 的灵活性和表达能力的同时获得静态类型检查。支持 Bun 的内置 SQLite 驱动和 PostgreSQL，定位介于纯 SQL 和重型 ORM 之间的中间方案。",
+    "quote": "ORM 太重，裸 SQL 太野，类型安全 SQL 刚刚好——真香",
+    "url": "https://github.com/ilbertt/bun-sqlgen",
+    "source": "GitHub",
+    "published": "2026-06-24",
+    "uid": "dev_c3906b4d"
+  },
+  {
+    "title": "TikZ Editor：LaTeX 绘图也能所见即所得了",
+    "content": "社区上线 TikZ Editor 在线编辑器，提供 LaTeX TikZ 图形的所见即所得（WYSIWYG）编辑体验。用户可以直接在浏览器中拖拽调整图形元素，实时预览并能导出 TikZ 代码。250 点登上 Hacker News 首页，获 50 多条评论。对学术写作和论文排版来说，这填补了 LaTeX 生态中长期缺失的图形可视化编辑工具空白。",
+    "quote": "写论文最痛苦的环节终于有救了，latex 画图不用再盲写了",
+    "url": "https://tikz.dev/editor/",
+    "source": "TikZ Editor",
+    "published": "2026-06-24",
+    "uid": "dev_9b5d34d4"
+  }
+]
