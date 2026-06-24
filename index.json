@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0",
-  "updated": "2026-06-24T11:40:04.766803+08:00",
-  "industry": "data/industry_daily_20260624.json",
+  "updated": "2026-06-25T00:18:53.917272+08:00",
+  "industry": "data/industry_daily_20260625.json",
   "dev": "data/dev_daily_20260624.json",
   "ai": "data/ai_daily_20260624.json",
   "startup": "data/startup_daily_20260624.json",
@@ -10,6 +10,7 @@
   "hf_daily": "data/hf_daily_20260509.json",
   "history": {
     "industry": [
+      "data/industry_daily_20260624.json",
       "data/industry_daily_20260623.json",
       "data/industry_daily_20260622.json",
       "data/industry_daily_20260621.json",
@@ -303,6 +304,7 @@
     ]
   },
   "checksums": {
+    "data/industry_daily_20260625.json": "d1ecc63982341e1ada6d7261ae75c98c673c40ebd7246059b390ef8f2335dd8b",
     "data/industry_daily_20260624.json": "7b5a029c3ec200ac52afad11904893921d603f62211c4af3183b58e0b53c9ea9",
     "data/industry_daily_20260623.json": "5002d98a05ae31f2507857230fefc36e1f304e461a2320a1d92eb1bdc595b024",
     "data/industry_daily_20260622.json": "227bb6ca36811fd4e774ec882f2332a639f2a5178b9a05031a4d5a5fd7747c08",
@@ -1274,5 +1276,14 @@
         }
       ]
     }
+  },
+  "combined_3days": {
+    "20260625": "combined_3days_20260625.json"
+  },
+  "security": {
+    "version": 1,
+    "updated": "2026-05-14",
+    "description": "强风险内容过滤词库。原则：宁少勿多，微信后台有独立审核体系，此列表仅作为锦上添花的保护层。仅列入无歧义的高危敏感词。",
+    "blocklist": []
   }
 }
