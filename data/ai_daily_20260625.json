@@ -1,0 +1,110 @@
+[
+  {
+    "title": "OpenAI 联合 Broadcom 发布自研推理芯片 Jalapeño：推理成本砍半",
+    "content": "OpenAI 与 Broadcom 今日联合发布首款自研 AI 推理芯片「Jalapeño」，专为大语言模型推理设计而非训练。芯片从设计到流片仅用 9 个月（行业通常数年），期间甚至用 OpenAI 自家旧模型加速了芯片设计流程。据 Bloomberg 报道，Jalapeño 可将推理成本降低约 50%。首批芯片已在数据中心测试，计划年底前规模化部署。OpenAI 总裁 Greg Brockman 表示「每瓦性能和每美元性能表现惊人」。该芯片是 ASIC 架构，窄聚焦但更高效，可能动摇英伟达在 AI 推理市场的统治地位。",
+    "quote": "大模型公司自己造芯片，英伟达心里咯噔一下",
+    "url": "https://venturebeat.com/infrastructure/openai-unveils-first-custom-ai-inference-chip-jalapeno-with-broadcom-and-its-development-was-sped-up-with-openais-own-models",
+    "source": "VentureBeat",
+    "published": "2026-06-25",
+    "uid": "ab1164101b302d15786aa9f308fac7d0"
+  },
+  {
+    "title": "Google 将「计算机使用」能力原生集成到 Gemini 3.5 Flash",
+    "content": "Google DeepMind 宣布计算机使用（Computer Use）能力已作为内置工具集成到 Gemini 3.5 Flash 中。开发者现在可以用单一模型构建能跨浏览器、桌面和移动端「看、想、操作」的 AI 程序。此前计算机使用是独立的 Gemini 2.5 模型功能，现在直接嵌入主力 Flash 模型，性能更强。Google 还发布了企业级安全防护，包括敏感操作需人工确认和抵御提示注入攻击的机制。已在 Gemini API 和 Enterprise Agent Platform 上线。",
+    "quote": "以后 AI 帮你操作电脑不再是 demo，是真能跑的生产力了",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/",
+    "source": "Google Blog",
+    "published": "2026-06-25",
+    "uid": "c23bc822dded47db989a90a05b365b8a"
+  },
+  {
+    "title": "Shopify 公开其「不怕模型死」的 AI 架构：自动切换+蒸馏策略",
+    "content": "Shopify 工程负责人 Farhan Thawar 披露了 AI 基础设施策略：构建统一的 LLM 中转层，所有模型调用通过内部网关路由。当 Anthropic Fable 5 被封杀时，Shopify 工程师无需恐慌——系统自动切换到 Claude Opus 或 GPT-5.5，毫无影响。Shopify 还大量使用蒸馏技术将大模型能力压缩到小模型，有些场景速度和成本优化达 30 倍。Thawar 的终极愿景是让蒸馏管线自主选择最优小模型，连目标模型都不用人类指定。",
+    "quote": "当 Fable 5 死了，Shopify 打了个哈欠——有代理墙的公司根本不在乎",
+    "url": "https://venturebeat.com/orchestration/how-shopify-built-an-ai-stack-that-doesnt-care-which-models-survive",
+    "source": "VentureBeat",
+    "published": "2026-06-25",
+    "uid": "9ba3ae49f6de84bf120af83ca326e3ae"
+  },
+  {
+    "title": "Intuit 全面重构 AI 基础设施：从多 Agent 转向技能-工具架构",
+    "content": "Intuit 的 AI 副总裁 Nhung Ho 披露，Intuit 彻底重构了其 AI 技术基础设施——从大型多 Agent 系统转向更精细的技能-工具架构，将庞大 Agent 拆解为专门化组件，分离「大脑」和「手」。同时将人类专家直接嵌入 AI 工作流。这种架构也让 Intuit 解耦了编排层与模型提供商，不再被任何单一 AI 供应商绑定。将在 VB Transform 2026 大会上分享更多细节。",
+    "quote": "把 AI Agent 拆成大脑和手，顺便把供应商也甩了——Intuit 这波操作很聪明",
+    "url": "https://venturebeat.com/orchestration/intuit-will-show-off-how-it-rebuilt-its-ai-infrastructure-to-support-fast-and-complex-tasks-at-vb-transform-2026",
+    "source": "VentureBeat",
+    "published": "2026-06-25",
+    "uid": "c8ba672c90f10f853909f0128b9903ea"
+  },
+  {
+    "title": "Meta 拒绝将 AI 模型交给美国政府审查",
+    "content": "The Verge 报道，Meta 仍未同意允许美国政府审查其 AI 模型。白宫一直在施压 Meta 提交模型进行评估，而 OpenAI、Anthropic、Google、微软和 xAI 均已签署协议。「我们正在处理细节，希望很快就签署协议，」Meta 发言人告诉 NYT。这一延迟反映了 Meta 在 AI 安全治理上与其他头部公司之间日益扩大的裂痕，也为美国国内的 AI 监管博弈增添了新变量。",
+    "quote": "别人都签了就 Meta 还在拖，扎克伯格的 AI 到底藏了什么秘密",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/924017/google-microsoft-xai-government-review",
+    "source": "The Verge",
+    "published": "2026-06-25",
+    "uid": "5848b4fcf3859a129f63f26777284eb7"
+  },
+  {
+    "title": "Amazon 发布可信赖 AI Agent 工程框架",
+    "content": "Amazon 将在 VB Transform 2026 大会上展示其构建可信赖 AI Agent 的工程框架。AI Agent 在自主执行业务任务上越来越高效，但 IT 负责人对授予企业系统访问权限仍保持谨慎。Amazon 的框架聚焦于在不牺牲企业安全边界的前提下，让 Agent 具备足够的自主权完成复杂任务——这是当前从「有趣 demo」走向「真正生产部署」的关键瓶颈。",
+    "quote": "Agent 能力越来越强，但企业的信任危机也到了临界点",
+    "url": "https://venturebeat.com/orchestration/amazon-will-present-its-framework-for-engineering-trustworthy-ai-agents-at-vb-transform-2026",
+    "source": "VentureBeat",
+    "published": "2026-06-25",
+    "uid": "7cfc38d9e0eab20c47254b07b9b46f3e"
+  },
+  {
+    "title": "RubyLLM 发布：一个 Ruby 框架搞定所有主流 AI 提供商",
+    "content": "RubyLLM 在 Hacker News 上获得 200+ 点热度，这是一个统一的 Ruby 框架，支持连接所有主流 AI 提供商（OpenAI、Anthropic、Google、Meta 等）。Ruby 社区长期缺乏一个开箱即用的 AI SDK，开发者不得不在多个 API 客户端之间手动切换。RubyLLM 提供了一个统一的接口层，让 Ruby 开发者可以像调用本地方法一样调用各种大模型 API。框架已开源。",
+    "quote": "Ruby 社区终于不再羡慕 Python 的 AI 工具链了",
+    "url": "https://rubyllm.com/",
+    "source": "Hacker News",
+    "published": "2026-06-25",
+    "uid": "207cbd091bf8c0b6767a74f989d9c512"
+  },
+  {
+    "title": "开源 AI 框架 Haystack 推出生产级 Agent 和 RAG 能力",
+    "content": "Haystack（deepset 出品）在 Hacker News 上引发关注，这个开源 AI 框架推出了面向生产的 Agent 和 RAG 功能。Haystack 提供了完整的组件化流水线，让开发者可以快速构建检索增强生成和 AI Agent 应用。67 点热度表明社区对「不绑定特定模型」的 AI 框架需求强劲——在模型快速迭代的当下，抽象层比以往任何时候都重要。",
+    "quote": "AI 框架卷到拼生产级了——Haystack 这是要当 LLM 界的 Spring Boot",
+    "url": "https://haystack.deepset.ai/",
+    "source": "Hacker News / deepset",
+    "published": "2026-06-25",
+    "uid": "e0d1289336cd363fd621106f977172fd"
+  },
+  {
+    "title": "peerd：完全在浏览器中运行的 AI Agent 框架",
+    "content": "开源项目 peerd 带来了一个能在浏览器中完全运行的 AI Agent 工具集。所有逻辑在客户端执行，无需服务器端推理。用户的数据不会离开本机浏览器，这在隐私敏感场景下极具价值。适合轻量级自动化任务、个人助理等场景。",
+    "quote": "浏览器里跑 AI Agent——不需要服务器，隐私拉满，真 · 端侧推理",
+    "url": "https://github.com/NotASithLord/peerd",
+    "source": "Hacker News / GitHub",
+    "published": "2026-06-25",
+    "uid": "da3097d6be232929c9589e13c376df7a"
+  },
+  {
+    "title": "NatureBench：AI 编码 Agent 在真实科研任务上仅达 SOTA 的 17.8%",
+    "content": "Frontis AI 发布 NatureBench，一个跨学科的 AI 编码 Agent 基准测试，包含 90 个源自 Nature 系列期刊的真实科学任务。令人震惊的事实：最强模型在严格评测下仅超越官方 SOTA 的 17.8%。分析发现 Agent 主要依赖「方法论翻译」——将科学任务转化为熟悉的监督预测问题，而非真正的科学创新。失败主因是方法选择错误和算力不足，而非任务理解偏差。",
+    "quote": "AI Agent 做科研只会「翻译」不会「创新」——Nature 级别的活儿还是得人类来",
+    "url": "https://huggingface.co/papers?date=2026-06-24",
+    "source": "HuggingFace Papers",
+    "published": "2026-06-25",
+    "uid": "6dcfe8c6110c2b65ceb1e231c0c4358a"
+  },
+  {
+    "title": "学者质疑微软「量子飞跃」：声称代码存在基础性 Python 错误",
+    "content": "英国学者公开质疑微软此前号称的「量子飞跃」研究成果，声称支撑该突破的关键代码存在基础性 Python 错误。如果指控成立，可能对微软在量子计算领域的信誉造成重大打击，也再次引发将 AI 用于科学研究时的可复现性问题。该事件在 Hacker News 上获得 84 点讨论。",
+    "quote": "微软的量子突破被质疑是 Python 写的 bug——科研界的 AI 可复现性又添新案例",
+    "url": "https://www.theregister.com/research/2026/06/24/boffin-claims-microsofts-supposed-quantum-leap-does-not-compute-due-to-basic-python-errors/5260489",
+    "source": "The Register",
+    "published": "2026-06-25",
+    "uid": "7b69dcf64a6eb304a620a1b608ecb034"
+  },
+  {
+    "title": "开源 AI 是大多数国家唯一的前进道路",
+    "content": "一篇在 Hacker News 上引起热烈讨论的文章指出：对于世界上大多数国家而言，开源 AI 是唯一的前进道路。随着大模型训练成本飙升和 AI 巨头的地缘政治分歧加剧，依赖单一封闭模型提供商带来的地缘风险越来越大。开源模型让各国能够基于自身数据和需求构建 AI 能力，而不是依赖他国公司的黑盒 API。话题引发 82 点热度和 47 条评论。",
+    "quote": "不是每个国家都用得起 GPT，开源 AI 才是发展中国家的真希望",
+    "url": "https://techstrong.ai/articles/for-most-of-the-world-open-source-ai-is-the-only-way-forward/",
+    "source": "TechStrong AI / Hacker News",
+    "published": "2026-06-25",
+    "uid": "3cd3a739e05707fa302cb0c0fac639be"
+  }
+]
