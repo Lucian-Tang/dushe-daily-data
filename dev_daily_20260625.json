@@ -1,146 +1,137 @@
 [
   {
-    "title": "Boffin claims Microsoft's \"quantum leap\" is invalid due to \"basic Python errors\"",
-    "content": "",
-    "quote": "",
-    "source": "HN Front Page",
+    "title": "OpenAI 发布首款自研推理芯片 Jalapeño，与 Broadcom 联合打造",
+    "content": "OpenAI 正式发布其首款自研推理处理器 Jalapeño，由 Broadcom 设计制造。这款芯片专门优化 AI 推理工作负载，早期测试显示每瓦性能显著优于当前最先进方案。OpenAI 表示整栈优化——从芯片架构、内核、内存系统到网络调度——旨在让模型更快、更可靠、更经济。推理成本的小幅下降就能大幅改善公司利润，而训练等更重负载仍可能继续依赖 Nvidia 硬件。",
+    "quote": "OpenAI 不仅开发前沿模型或在其上构建产品，它还正在设计底层基础设施：芯片架构、内核、内存系统、网络、调度、部署系统和产品体验。",
+    "url": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/",
+    "source": "TechCrunch",
+    "published": "2026-06-25T08:00:00+08:00",
+    "uid": "93120d871bcca9c52f34dcfca7d0f450"
+  },
+  {
+    "title": "Google Gemini 3.5 Flash 原生集成 Computer Use 能力",
+    "content": "Google DeepMind 宣布 Gemini 3.5 Flash 现在原生支持 Computer Use 工具，开发者可以构建能够跨浏览器、移动和桌面环境进行视觉识别、推理和操作的智能代理。该功能此前仅作为独立模型提供，现已融入主 Gemini Flash 模型。Google 同时发布了可选的防御机制，包括敏感操作需用户确认和自动检测间接注入攻击，帮助企业在生产环境中安全部署。",
+    "quote": "Computer use is now a built-in tool supported in Gemini 3.5 Flash, delivering our best performance yet for agentic computer use tasks.",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/",
+    "source": "Google Blog",
+    "published": "2026-06-25T08:00:00+08:00",
+    "uid": "e008d3c09f11bfc72feb9db5c78f13bc"
+  },
+  {
+    "title": "Krea 2 开源：12B 参数 SOTA 图像生成模型发布",
+    "content": "Krea AI 发布 Krea 2（K2）系列图像生成基础模型，包含 K2 Raw 和 K2 Turbo 两个版本，权重以宽松许可证开源。模型基于 DiT（Diffusion Transformer）架构，融合 iREPA、改进 VAE、Qwen3-VL 等多重先进技术。团队强调该系列专注于创意探索的审美多样性，而非仅生成单一默认美学样式。通过多阶段训练流程（预训练、SFT、偏好优化、RL），模型在保持高质量输出的同时大幅增强了用户的可操控性。",
+    "quote": "Image generation should be an exploratory medium: expressive enough to span many aesthetics, and controllable enough for creators to navigate them.",
+    "url": "https://www.krea.ai/blog/krea-2-technical-report",
+    "source": "Krea AI Blog",
+    "published": "2026-06-25T08:00:00+08:00",
+    "uid": "8c9479f579e122d031a6b13622c3b512"
+  },
+  {
+    "title": "Nub 发布：Bun-like 全功能 Node.js 工具包，启动比 tsx 快 2.9 倍",
+    "content": "Nub 是一个用 Rust 编写的 Node.js 工具包，提供类似 Bun 的开发者体验但构建在标准 Node 之上。它能够替代 tsx、pnpm、nvm、npx 等多个工具：运行 TypeScript 和 JSX 无需构建步骤，包安装比 pnpm 快 2.5 倍，npx 替代品 nubx 快 19 倍，内置 Node 版本管理。核心原理是利用 Node 近年新增的扩展接口，嵌入 oxc 编译器实现高速转译。",
+    "quote": "A fast all-in-one toolkit that augments Node.js instead of replacing it — one tool to run files, install dependencies, and manage Node itself.",
+    "url": "https://github.com/nubjs/nub",
+    "source": "Hacker News",
+    "published": "2026-06-25T08:00:00+08:00",
+    "uid": "c65b575858c42952a669f8d42e76d16d"
+  },
+  {
+    "title": "Apple 开源 Container：在 macOS 上运行轻量级 Linux 虚拟机容器",
+    "content": "Apple 正式开源 Container 工具，使用轻量级虚拟机在 Mac 上创建和运行 Linux 容器。项目用 Swift 编写，专为 Apple Silicon 优化，支持 macOS 26 及更高版本。它兼容 OCI 镜像规范，可从标准容器仓库拉取和推送镜像。底层依赖 Apple 的 Containerization Swift 包进行容器、镜像和进程管理。这一举措标志着 Apple 在容器化技术方面的重大投入，为 macOS 开发生态提供了原生级容器支持。",
+    "quote": "A tool for creating and running Linux containers using lightweight virtual machines on a Mac, written in Swift and optimized for Apple silicon.",
+    "url": "https://github.com/apple/container",
+    "source": "GitHub Trending",
+    "published": "2026-06-25T08:00:00+08:00",
+    "uid": "e38d582d93589edfca8a6135f3eb3aeb"
+  },
+  {
+    "title": "Bunny DNS 宣布全面免费，全球 CDN 厂商再掀价格战",
+    "content": "知名 CDN 服务商 Bunny.net 宣布其 DNS 服务全面免费开放。Bunny DNS 提供全球分布式解析，此前是付费增值服务之一。免费化后开发者无需任何付费即可使用其全球节点网络进行域名解析。此举措在 Hacker News 上获得 711 分和 230 条评论，社区反响热烈，被视为对 Cloudflare 等竞品 DNS 服务的直接挑战。",
+    "quote": "We are making Bunny DNS free — no hidden costs, no usage limits for basic DNS management.",
+    "url": "https://bunny.net/blog/were-making-bunny-dns-free/",
+    "source": "Hacker News",
+    "published": "2026-06-25T08:00:00+08:00",
+    "uid": "5b3f7e1912aec2a378f48347bb37f3f6"
+  },
+  {
+    "title": "Nature 论文指出微软量子计算声明存在基本 Python 编程错误",
+    "content": "Nature 杂志发表圣安德鲁斯大学 Henry Legg 博士的同行评审论文，指出微软的量子计算突破声明中存在基本 Python 编程错误。Legg 分析发现微软的调优软件存在缺陷：绘图代码硬编码了过滤器只显示最大的拓扑区域，隐藏了其他通过测试的区域；数据处理时直接用 Python 数组反转而不是基于物理偏压值操作。Legg 认为微软不是在几十年内而是在几个世纪内才能实现拓扑量子计算机。微软则表示坚信自己的结果和路线图。",
+    "quote": "Last year they claimed to be years, not decades from a topological quantum supercomputer. My feeling is that they are centuries, not decades away.",
     "url": "https://www.theregister.com/research/2026/06/24/boffin-claims-microsofts-supposed-quantum-leap-does-not-compute-due-to-basic-python-errors/5260489",
-    "published": "2026-06-25",
-    "uid": "dev_d8baf522"
+    "source": "The Register",
+    "published": "2026-06-25T08:00:00+08:00",
+    "uid": "1cd5b465d0c883bf913c99d4cd2b672f"
   },
   {
-    "title": "RubyLLM: A Ruby framework for all major AI providers",
-    "content": "# Comments: 17",
-    "quote": "",
-    "source": "HN Front Page",
+    "title": "RubyLLM：一个 Ruby 框架统一所有主流 AI 提供商接口",
+    "content": "RubyLLM 登上 Hacker News 热门，它提供了一套优雅的 Ruby 接口统一所有主流 AI 提供商，包括 OpenAI、Anthropic、Gemini、DeepSeek、Mistral、Ollama 等 15 个以上平台。开发者可以用同一套 API 进行聊天、图像生成、嵌入、语音转写、内容审核等操作。框架仅依赖 Faraday、Zeitwerk 和 Marcel 三个库，支持工具调用、Agent 构建、结构化输出、流式响应、Rails 集成等特性，内部注册了 800 多个模型。",
+    "quote": "Every AI provider ships their own bloated client. Different APIs, response formats, conventions. RubyLLM gives you one beautiful framework for all of them.",
     "url": "https://rubyllm.com/",
-    "published": "2026-06-25",
-    "uid": "dev_2904e164"
+    "source": "Hacker News",
+    "published": "2026-06-25T08:00:00+08:00",
+    "uid": "6901a93da51530eb414599f6809c49cf"
   },
   {
-    "title": "PR spam today looks like email spam in the early 2000s",
-    "content": "# Comments: 0",
-    "quote": "",
-    "source": "HN Front Page",
+    "title": "GitHub 推出 PR 限制功能应对开源项目噪音浪潮",
+    "content": "GitHub 正式推出 Pull Request 限制功能，允许仓库设置每个用户同时打开的 PR 上限。自 2023 年 1 月以来，GitHub 每月合并的 PR 从约 2500 万增长到超 9000 万，增长 3.6 倍。AI 编码代理的普及进一步加速了这一趋势。新功能支持白名单绕过、不统计草稿 PR。AutoGPT、Homebrew、OpenClaw 等知名项目已采用并给出积极反馈。",
+    "quote": "When great contributions and low-quality noise land in the same queue, the ones that deserve attention are harder to find.",
+    "url": "https://github.blog/open-source/maintainers/how-pull-request-limits-are-cutting-down-the-noise/",
+    "source": "GitHub Blog",
+    "published": "2026-06-25T08:00:00+08:00",
+    "uid": "7b4a83acb74d560873fc9bb0cb92ce03"
+  },
+  {
+    "title": "Yann LeCun 在联合国开源周呼吁：开源 AI 是全球唯一出路",
+    "content": "AI 教父之一 Yann LeCun 在联合国开源周上发表主旨演讲，以多数国家无法负担构建前沿模型的成本为由，强力呼吁开源 AI 是确保全球 AI 主权、文化多样性和长期安全的唯一可行路径。LeCun 警告如果 AI 平台被少数几家西海岸和中国科技巨头掌控，将对文化多样性、语言多样性、民主和人权构成严重威胁。他提出全球协作的开源努力才能真正超越封闭的专有系统。",
+    "quote": "In my mind, the only way to get to that point is open-source AI platforms. Most countries around the world cannot necessarily afford to build their own LLMs.",
+    "url": "https://techstrong.ai/articles/for-most-of-the-world-open-source-ai-is-the-only-way-forward/",
+    "source": "Techstrong AI",
+    "published": "2026-06-25T08:00:00+08:00",
+    "uid": "eaed0e236c74d129b71026c3188f74dd"
+  },
+  {
+    "title": "Google Labs 发布 DESIGN.md 规范让 AI 编码代理理解设计系统",
+    "content": "Google Labs 发布 DESIGN.md 规范，一个让 AI 编码代理持久理解设计系统的结构化格式。文件结合 YAML 前端数据（机器可读的设计令牌）和 Markdown 正文（人类可读的设计原则），使 AI 代理能精确获取颜色、字体、间距等参数，同时理解为什么这些参数存在以及如何使用。项目还配套发布 CLI 工具支持设计规范校验和版本差异对比。在 GitHub 上单日获得 500 以上星标。",
+    "quote": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.",
+    "url": "https://github.com/google-labs-code/design.md",
+    "source": "GitHub Trending",
+    "published": "2026-06-25T08:00:00+08:00",
+    "uid": "5e1c5ed0814e30c966ec4557e517e47f"
+  },
+  {
+    "title": "Greptile 统计显示 AI 生成 PR 垃圾信息如同早期垃圾邮件",
+    "content": "Greptile 对 OpenClaw 仓库的 PR 数据进行统计分析，揭示了 AI 编码代理带来的开源贡献质量危机。OpenClaw 从去年 12 月每周 2 个 PR 飙升至今年 2 月每周 3400 个 PR，合并率从 48% 暴跌至 9.3%。有贡献者一天内提交了 106 个 PR，中位数间隔仅 3 秒。数据显示重构类 PR 合并率 35% 远高于新功能类的 9%，说明真正理解代码库的贡献比追求新颖更重要。",
+    "quote": "PR spam today looks like email spam in the early 2000s. The first fixes are similar: blocklists, confidence-based filters, and reputation infrastructure.",
     "url": "https://www.greptile.com/blog/prs-on-openclaw",
-    "published": "2026-06-25",
-    "uid": "dev_60b13490"
+    "source": "Greptile Blog",
+    "published": "2026-06-25T08:00:00+08:00",
+    "uid": "c0a6b402f78a384b05142bcecb7bb066"
   },
   {
-    "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
-    "content": "# Comments: 25",
-    "quote": "",
-    "source": "HN Front Page",
-    "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/",
-    "published": "2026-06-25",
-    "uid": "dev_81b5cecd"
+    "title": "MonoLisa v3 发布：面向开发者的专业等宽字体重大更新",
+    "content": "MonoLisa 发布第三个大版本更新，这一广受开发者欢迎的等宽字体以极高可读性和细腻设计著称。新版引入更多连字变体、优化标点符号可辨识度、改进中日韩字符的 fallback 渲染，并新增对现代编辑器和终端主题的深度支持。许多知名开发者曾公开表示 MonoLisa 显著降低了长时间编码的眼部疲劳。新版在 Hacker News 上获得 115 分和 36 条评论。",
+    "quote": "MonoLisa improves code legibility and provides a clear sans serif for all design tasks. Font follows function.",
+    "url": "https://www.monolisa.dev/",
+    "source": "Hacker News",
+    "published": "2026-06-25T08:00:00+08:00",
+    "uid": "4144cdc6115bcab173890f79aa0d9aa3"
   },
   {
-    "title": "calesthio/OpenMontage",
-    "content": "",
-    "quote": "",
-    "source": "GitHub Trending Daily",
-    "url": "https://github.com/calesthio/OpenMontage",
-    "published": "2026-06-25",
-    "uid": "dev_91770512"
+    "title": "Haystack 开源 AI 框架升级：面向生产级 Agent 和 RAG 系统",
+    "content": "deepset 旗下开源 AI 框架 Haystack 在 Hacker News 获得 76 分关注。Haystack 支持构建生产级 RAG 管道和 AI Agent，提供高级检索策略（混合检索、自纠正循环）、标准化工具调用、多模态 AI 能力（图像处理、音频转录）以及灵活的 Jinja-2 提示模板。框架强调可组合性和分支循环管道设计，使开发者能精确控制多步决策流程。",
+    "quote": "Design production-ready AI agents with standardized tool calling and scalable context engineering. Branching and looping pipelines give you full control over complex decision flows.",
+    "url": "https://haystack.deepset.ai/",
+    "source": "Hacker News",
+    "published": "2026-06-25T08:00:00+08:00",
+    "uid": "e3986fc731cb4528c03fe99a2a2dbb45"
   },
   {
-    "title": "ZhuLinsen/daily_stock_analysis",
-    "content": "",
-    "quote": "",
-    "source": "GitHub Trending Daily",
-    "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
-    "published": "2026-06-25",
-    "uid": "dev_e632ca3c"
-  },
-  {
-    "title": "大家对于 Anthropic 估值的看法",
-    "content": "近三个月，anthropic 估值从 3800 亿涨到了最近的 9000 亿。大家觉得它上市后能到什么什么水平。单单挣程序员的钱能支撑这么高的估值吗。",
-    "quote": "",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1212285#reply12",
-    "published": "2026-06-25",
-    "uid": "dev_d87996d2"
-  },
-  {
-    "title": "🖖Manus 被 Meta 数十亿美元收购❗❗❗",
-    "content": "这几天最爆的新闻会围绕 Manus 吧，国内对这家公司的争议很大，今天迎来可以说是最好的结局：被 Meta 数十亿美元收购！！！",
-    "quote": "",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1182036#reply86",
-    "published": "2026-06-25",
-    "uid": "dev_3219eee6"
-  },
-  {
-    "title": "Building An AI Agent Playground Before Giving It Production Access",
-    "content": "A coding agent runs cleanup_old_records() against what it thinks is a staging database. It isn't. The connection string came from an environment variable that got overwritten three deploys ago, and th",
-    "quote": "",
-    "source": "Dev.to",
-    "url": "https://dev.to/nazar_boyko/building-an-ai-agent-playground-before-giving-it-production-access-4glh",
-    "published": "2026-06-25",
-    "uid": "dev_6c2b6e95"
-  },
-  {
-    "title": "Scraping Prices Without an API: Chrome Content Script Patterns for Japanese E-Commerce",
-    "content": "Japanese e-commerce is fragmented. The same product — a vintage camera, a game console, a brand bag — can vary by ¥5,000–¥30,000 between Amazon.co.jp, Rakuten, Mercari, and Yahoo! Auctions. Finding th",
-    "quote": "",
-    "source": "Dev.to",
-    "url": "https://dev.to/ktg0215/scraping-prices-without-an-api-chrome-content-script-patterns-for-japanese-e-commerce-13k8",
-    "published": "2026-06-25",
-    "uid": "dev_6fdff93e"
-  },
-  {
-    "title": "The Silent Crash: Handling Zombie WebSockets in Python IoT Applications",
-    "content": "One harsh truth we discover while building backend systems for IoT devices like industrial sensors or electric vehicle (EV) chargers is this: Hardware lies. Your Python WebSocket server works flawless",
-    "quote": "",
-    "source": "Dev.to",
-    "url": "https://dev.to/bisal/the-silent-crash-handling-zombie-websockets-in-python-iot-applications-3j2m",
-    "published": "2026-06-25",
-    "uid": "dev_9b1f9a36"
-  },
-  {
-    "title": "浏览器缓存之【身份与会话管理】：Cookies 和 Private state tokens - 橙子家",
-    "content": "〇、前言 前文已经介绍了，单击查看全部系列文章：缓存Storage，那么本文再介绍另一新的类别：身份与会话管理。 身份与会话管理，涵盖 Cookies 和 Private state tokens。 Cookies 是最早的客户端存储机制，每次请求都会自动携带，适合服务器端识别用户身份或维持会话；",
-    "quote": "",
-    "source": "博客园 Cnblogs",
-    "url": "https://www.cnblogs.com/hnzhengfy/p/20709838/Cookies",
-    "published": "2026-06-25",
-    "uid": "dev_37616ed4"
-  },
-  {
-    "title": "MTTR 降不下来，真的是工具问题吗？ - IT运维监控",
-    "content": "故障现场通常不是缺信息。 监控平台在闪红，日志平台能搜到错误，链路图上有一段变慢，群里有人贴截图，也有人问“谁在看”。问题是，十几分钟过去，大家仍然在确认同一件事：这到底是不是故障？影响哪些业务？谁来牵头？要不要升级？有没有人能联系到那个服务的负责人？ 很多团队复盘时会说：MTTR 还是太高，工具要",
-    "quote": "",
-    "source": "博客园 Cnblogs",
-    "url": "https://www.cnblogs.com/ulricqin/p/20775077",
-    "published": "2026-06-25",
-    "uid": "dev_c0831dc7"
-  },
-  {
-    "title": "深入理解 Redis 哨兵模式：高可用架构的自动容错实践 - 刘子毅",
-    "content": "在生产环境中，Redis 作为缓存或数据库，一旦宕机就可能造成服务雪崩。哨兵模式（Sentinel） 正是为此而生——它能自动完成故障发现与主从切换，无需人工干预。本文将系统梳理哨兵模式的原理、功能、选主逻辑，并通过一个完整的搭建示例，带你掌握这套高可用方案。 一、核心概览 Redis 哨兵模式是一",
-    "quote": "",
-    "source": "博客园 Cnblogs",
-    "url": "https://www.cnblogs.com/liuziyi1/p/20768003",
-    "published": "2026-06-25",
-    "uid": "dev_49311e96"
-  },
-  {
-    "title": "Excelize 开源社区荣获 2025 红山开源明星项目三等奖",
-    "content": "2025 年 11 月 16 日，由红山开源平台主办的“2025 红山开源大会”，在北京香山颐和宾馆红山厅成功落下帷幕。为表彰在开源领域做出卓越贡献的项目，大会特别设立 2025 年度红山开源平台明星项目颁奖环节。 Excelize 开源社区荣获了 2025 红山开源明星项目三等奖，活动详情详见文章：2025 红山开源大会圆满收官，共筑开源生态新未来 Excelize 是用于操作电子表格办公文档",
-    "quote": "",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1180445#reply1",
-    "published": "2026-06-25",
-    "uid": "dev_19895bf2"
-  },
-  {
-    "title": "Google Antigravity 出来啦",
-    "content": "google antigravity, 免费可以用 Gemini 3 Pro 、Claude Sonnet 4.5,大家有试过怎么样嘛，这也太壕了",
-    "quote": "",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1173666#reply9",
-    "published": "2026-06-25",
-    "uid": "dev_02604af8"
+    "title": "John Carmack 回顾早期创业失误引 AI 社区热议",
+    "content": "传奇程序员 John Carmack（id Software 创始人、Oculus 前 CTO）在 Twitter 上发布长贴回顾自己在早期创业中的失误。帖子在 Hacker News 上获得 372 分和 185 条评论，社区讨论热烈。Carmack 以在技术远见和务实工程之间的平衡著称，他的反思涉及如何避免在技术探索中犯下方向性错误，对当前 AI 创业热潮具有现实参考意义。",
+    "quote": "There are a few things that I look back on as my mistakes in the early days — learning from them is what matters.",
+    "url": "https://twitter.com/ID_AA_Carmack/status/2069799283369345247",
+    "source": "Hacker News",
+    "published": "2026-06-25T08:00:00+08:00",
+    "uid": "e3788c089711873dffcb0ad2362376ee"
   }
 ]
