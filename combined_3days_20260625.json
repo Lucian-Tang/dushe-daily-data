@@ -310,138 +310,138 @@
   "dev": [
     {
       "title": "OpenAI 发布首款自研推理芯片 Jalapeño，与 Broadcom 联合打造",
-      "content": "OpenAI 正式发布其首款自研推理处理器 Jalapeño，由 Broadcom 设计制造。这款芯片专门优化 AI 推理工作负载，早期测试显示每瓦性能显著优于当前最先进方案。OpenAI 表示整栈优化——从芯片架构、内核、内存系统到网络调度——旨在让模型更快、更可靠、更经济。推理成本的小幅下降就能大幅改善公司利润，而训练等更重负载仍可能继续依赖 Nvidia 硬件。",
-      "quote": "OpenAI 不仅开发前沿模型或在其上构建产品，它还正在设计底层基础设施：芯片架构、内核、内存系统、网络、调度、部署系统和产品体验。",
-      "url": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/",
-      "source": "TechCrunch",
+      "content": "OpenAI 发布首款自研推理芯片 Jalapeño，与 Broadcom 联合打造。TechCrunch | 2026-06-25相关讨论。",
+      "quote": "OpenAI 发布首款自研推理芯片 Jalapeño，与 B",
+      "source": "TechCrunch | 2026-06-25",
+      "url": "#",
       "published": "2026-06-25",
-      "uid": "93120d871bcca9c52f34dcfca7d0f450"
+      "uid": "dev_01e153e6"
     },
     {
       "title": "Google Gemini 3.5 Flash 原生集成 Computer Use 能力",
-      "content": "Google DeepMind 宣布 Gemini 3.5 Flash 现在原生支持 Computer Use 工具，开发者可以构建能够跨浏览器、移动和桌面环境进行视觉识别、推理和操作的智能代理。该功能此前仅作为独立模型提供，现已融入主 Gemini Flash 模型。Google 同时发布了可选的防御机制，包括敏感操作需用户确认和自动检测间接注入攻击，帮助企业在生产环境中安全部署。",
-      "quote": "Computer use is now a built-in tool supported in Gemini 3.5 Flash, delivering our best performance yet for agentic computer use tasks.",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/",
-      "source": "Google Blog",
+      "content": "Google Gemini 3.5 Flash 原生集成 Computer Use 能力。Google Blog | 2026-06-25相关讨论。",
+      "quote": "Google Gemini 3.5 Flash 原生集成 C",
+      "source": "Google Blog | 2026-06-25",
+      "url": "#",
       "published": "2026-06-25",
-      "uid": "e008d3c09f11bfc72feb9db5c78f13bc"
+      "uid": "dev_e9c9c2e7"
     },
     {
       "title": "Krea 2 开源：12B 参数 SOTA 图像生成模型发布",
-      "content": "Krea AI 发布 Krea 2（K2）系列图像生成基础模型，包含 K2 Raw 和 K2 Turbo 两个版本，权重以宽松许可证开源。模型基于 DiT（Diffusion Transformer）架构，融合 iREPA、改进 VAE、Qwen3-VL 等多重先进技术。团队强调该系列专注于创意探索的审美多样性，而非仅生成单一默认美学样式。通过多阶段训练流程（预训练、SFT、偏好优化、RL），模型在保持高质量输出的同时大幅增强了用户的可操控性。",
-      "quote": "Image generation should be an exploratory medium: expressive enough to span many aesthetics, and controllable enough for creators to navigate them.",
-      "url": "https://www.krea.ai/blog/krea-2-technical-report",
-      "source": "Krea AI Blog",
+      "content": "Krea 2 开源：12B 参数 SOTA 图像生成模型发布。Krea AI Blog | 2026-06-25相关讨论。",
+      "quote": "Krea 2 开源：12B 参数 SOTA 图像生成模型发布",
+      "source": "Krea AI Blog | 2026-06-25",
+      "url": "#",
       "published": "2026-06-25",
-      "uid": "8c9479f579e122d031a6b13622c3b512"
+      "uid": "dev_6d682ee7"
     },
     {
       "title": "Nub 发布：Bun-like 全功能 Node.js 工具包，启动比 tsx 快 2.9 倍",
-      "content": "Nub 是一个用 Rust 编写的 Node.js 工具包，提供类似 Bun 的开发者体验但构建在标准 Node 之上。它能够替代 tsx、pnpm、nvm、npx 等多个工具：运行 TypeScript 和 JSX 无需构建步骤，包安装比 pnpm 快 2.5 倍，npx 替代品 nubx 快 19 倍，内置 Node 版本管理。核心原理是利用 Node 近年新增的扩展接口，嵌入 oxc 编译器实现高速转译。",
-      "quote": "A fast all-in-one toolkit that augments Node.js instead of replacing it — one tool to run files, install dependencies, and manage Node itself.",
-      "url": "https://github.com/nubjs/nub",
-      "source": "Hacker News",
+      "content": "Nub 发布：Bun-like 全功能 Node.js 工具包，启动比 tsx 快 2.9 倍。Hacker News | 2026-06-25相关讨论。",
+      "quote": "Nub 发布：Bun-like 全功能 Node.js 工具",
+      "source": "Hacker News | 2026-06-25",
+      "url": "#",
       "published": "2026-06-25",
-      "uid": "c65b575858c42952a669f8d42e76d16d"
+      "uid": "dev_98abb0c5"
     },
     {
       "title": "Apple 开源 Container：在 macOS 上运行轻量级 Linux 虚拟机容器",
-      "content": "Apple 正式开源 Container 工具，使用轻量级虚拟机在 Mac 上创建和运行 Linux 容器。项目用 Swift 编写，专为 Apple Silicon 优化，支持 macOS 26 及更高版本。它兼容 OCI 镜像规范，可从标准容器仓库拉取和推送镜像。底层依赖 Apple 的 Containerization Swift 包进行容器、镜像和进程管理。这一举措标志着 Apple 在容器化技术方面的重大投入，为 macOS 开发生态提供了原生级容器支持。",
-      "quote": "A tool for creating and running Linux containers using lightweight virtual machines on a Mac, written in Swift and optimized for Apple silicon.",
-      "url": "https://github.com/apple/container",
-      "source": "GitHub Trending",
+      "content": "Apple 开源 Container：在 macOS 上运行轻量级 Linux 虚拟机容器。GitHub Trending | 2026-06-25相关讨论。",
+      "quote": "Apple 开源 Container：在 macOS 上运行",
+      "source": "GitHub Trending | 2026-06-25",
+      "url": "#",
       "published": "2026-06-25",
-      "uid": "e38d582d93589edfca8a6135f3eb3aeb"
+      "uid": "dev_8867b812"
     },
     {
       "title": "Bunny DNS 宣布全面免费，全球 CDN 厂商再掀价格战",
-      "content": "知名 CDN 服务商 Bunny.net 宣布其 DNS 服务全面免费开放。Bunny DNS 提供全球分布式解析，此前是付费增值服务之一。免费化后开发者无需任何付费即可使用其全球节点网络进行域名解析。此举措在 Hacker News 上获得 711 分和 230 条评论，社区反响热烈，被视为对 Cloudflare 等竞品 DNS 服务的直接挑战。",
-      "quote": "We are making Bunny DNS free — no hidden costs, no usage limits for basic DNS management.",
-      "url": "https://bunny.net/blog/were-making-bunny-dns-free/",
-      "source": "Hacker News",
+      "content": "Bunny DNS 宣布全面免费，全球 CDN 厂商再掀价格战。Hacker News | 2026-06-25相关讨论。",
+      "quote": "Bunny DNS 宣布全面免费，全球 CDN 厂商再掀价格",
+      "source": "Hacker News | 2026-06-25",
+      "url": "#",
       "published": "2026-06-25",
-      "uid": "5b3f7e1912aec2a378f48347bb37f3f6"
+      "uid": "dev_214c83c2"
     },
     {
       "title": "Nature 论文指出微软量子计算声明存在基本 Python 编程错误",
-      "content": "Nature 杂志发表圣安德鲁斯大学 Henry Legg 博士的同行评审论文，指出微软的量子计算突破声明中存在基本 Python 编程错误。Legg 分析发现微软的调优软件存在缺陷：绘图代码硬编码了过滤器只显示最大的拓扑区域，隐藏了其他通过测试的区域；数据处理时直接用 Python 数组反转而不是基于物理偏压值操作。Legg 认为微软不是在几十年内而是在几个世纪内才能实现拓扑量子计算机。微软则表示坚信自己的结果和路线图。",
-      "quote": "Last year they claimed to be years, not decades from a topological quantum supercomputer. My feeling is that they are centuries, not decades away.",
-      "url": "https://www.theregister.com/research/2026/06/24/boffin-claims-microsofts-supposed-quantum-leap-does-not-compute-due-to-basic-python-errors/5260489",
-      "source": "The Register",
+      "content": "Nature 论文指出微软量子计算声明存在基本 Python 编程错误。The Register | 2026-06-25相关讨论。",
+      "quote": "Nature 论文指出微软量子计算声明存在基本 Python",
+      "source": "The Register | 2026-06-25",
+      "url": "#",
       "published": "2026-06-25",
-      "uid": "1cd5b465d0c883bf913c99d4cd2b672f"
+      "uid": "dev_014b2e99"
     },
     {
       "title": "RubyLLM：一个 Ruby 框架统一所有主流 AI 提供商接口",
-      "content": "RubyLLM 登上 Hacker News 热门，它提供了一套优雅的 Ruby 接口统一所有主流 AI 提供商，包括 OpenAI、Anthropic、Gemini、DeepSeek、Mistral、Ollama 等 15 个以上平台。开发者可以用同一套 API 进行聊天、图像生成、嵌入、语音转写、内容审核等操作。框架仅依赖 Faraday、Zeitwerk 和 Marcel 三个库，支持工具调用、Agent 构建、结构化输出、流式响应、Rails 集成等特性，内部注册了 800 多个模型。",
-      "quote": "Every AI provider ships their own bloated client. Different APIs, response formats, conventions. RubyLLM gives you one beautiful framework for all of them.",
-      "url": "https://rubyllm.com/",
-      "source": "Hacker News",
+      "content": "RubyLLM：一个 Ruby 框架统一所有主流 AI 提供商接口。Hacker News | 2026-06-25相关讨论。",
+      "quote": "RubyLLM：一个 Ruby 框架统一所有主流 AI 提供",
+      "source": "Hacker News | 2026-06-25",
+      "url": "#",
       "published": "2026-06-25",
-      "uid": "6901a93da51530eb414599f6809c49cf"
+      "uid": "dev_389c5139"
     },
     {
       "title": "GitHub 推出 PR 限制功能应对开源项目噪音浪潮",
-      "content": "GitHub 正式推出 Pull Request 限制功能，允许仓库设置每个用户同时打开的 PR 上限。自 2023 年 1 月以来，GitHub 每月合并的 PR 从约 2500 万增长到超 9000 万，增长 3.6 倍。AI 编码代理的普及进一步加速了这一趋势。新功能支持白名单绕过、不统计草稿 PR。AutoGPT、Homebrew、OpenClaw 等知名项目已采用并给出积极反馈。",
-      "quote": "When great contributions and low-quality noise land in the same queue, the ones that deserve attention are harder to find.",
-      "url": "https://github.blog/open-source/maintainers/how-pull-request-limits-are-cutting-down-the-noise/",
-      "source": "GitHub Blog",
+      "content": "GitHub 推出 PR 限制功能应对开源项目噪音浪潮。GitHub Blog | 2026-06-25相关讨论。",
+      "quote": "GitHub 推出 PR 限制功能应对开源项目噪音浪潮",
+      "source": "GitHub Blog | 2026-06-25",
+      "url": "#",
       "published": "2026-06-25",
-      "uid": "7b4a83acb74d560873fc9bb0cb92ce03"
+      "uid": "dev_4ff9e548"
     },
     {
       "title": "Yann LeCun 在联合国开源周呼吁：开源 AI 是全球唯一出路",
-      "content": "AI 教父之一 Yann LeCun 在联合国开源周上发表主旨演讲，以多数国家无法负担构建前沿模型的成本为由，强力呼吁开源 AI 是确保全球 AI 主权、文化多样性和长期安全的唯一可行路径。LeCun 警告如果 AI 平台被少数几家西海岸和中国科技巨头掌控，将对文化多样性、语言多样性、民主和人权构成严重威胁。他提出全球协作的开源努力才能真正超越封闭的专有系统。",
-      "quote": "In my mind, the only way to get to that point is open-source AI platforms. Most countries around the world cannot necessarily afford to build their own LLMs.",
-      "url": "https://techstrong.ai/articles/for-most-of-the-world-open-source-ai-is-the-only-way-forward/",
-      "source": "Techstrong AI",
+      "content": "Yann LeCun 在联合国开源周呼吁：开源 AI 是全球唯一出路。Techstrong AI | 2026-06-25相关讨论。",
+      "quote": "Yann LeCun 在联合国开源周呼吁：开源 AI 是全球",
+      "source": "Techstrong AI | 2026-06-25",
+      "url": "#",
       "published": "2026-06-25",
-      "uid": "eaed0e236c74d129b71026c3188f74dd"
+      "uid": "dev_cfa95d33"
     },
     {
       "title": "Google Labs 发布 DESIGN.md 规范让 AI 编码代理理解设计系统",
-      "content": "Google Labs 发布 DESIGN.md 规范，一个让 AI 编码代理持久理解设计系统的结构化格式。文件结合 YAML 前端数据（机器可读的设计令牌）和 Markdown 正文（人类可读的设计原则），使 AI 代理能精确获取颜色、字体、间距等参数，同时理解为什么这些参数存在以及如何使用。项目还配套发布 CLI 工具支持设计规范校验和版本差异对比。在 GitHub 上单日获得 500 以上星标。",
-      "quote": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.",
-      "url": "https://github.com/google-labs-code/design.md",
-      "source": "GitHub Trending",
+      "content": "Google Labs 发布 DESIGN.md 规范让 AI 编码代理理解设计系统。GitHub Trending | 2026-06-25相关讨论。",
+      "quote": "Google Labs 发布 DESIGN.md 规范让 A",
+      "source": "GitHub Trending | 2026-06-25",
+      "url": "#",
       "published": "2026-06-25",
-      "uid": "5e1c5ed0814e30c966ec4557e517e47f"
+      "uid": "dev_17d2886e"
     },
     {
       "title": "Greptile 统计显示 AI 生成 PR 垃圾信息如同早期垃圾邮件",
-      "content": "Greptile 对 OpenClaw 仓库的 PR 数据进行统计分析，揭示了 AI 编码代理带来的开源贡献质量危机。OpenClaw 从去年 12 月每周 2 个 PR 飙升至今年 2 月每周 3400 个 PR，合并率从 48% 暴跌至 9.3%。有贡献者一天内提交了 106 个 PR，中位数间隔仅 3 秒。数据显示重构类 PR 合并率 35% 远高于新功能类的 9%，说明真正理解代码库的贡献比追求新颖更重要。",
-      "quote": "PR spam today looks like email spam in the early 2000s. The first fixes are similar: blocklists, confidence-based filters, and reputation infrastructure.",
-      "url": "https://www.greptile.com/blog/prs-on-openclaw",
-      "source": "Greptile Blog",
+      "content": "Greptile 统计显示 AI 生成 PR 垃圾信息如同早期垃圾邮件。Greptile Blog | 2026-06-25相关讨论。",
+      "quote": "Greptile 统计显示 AI 生成 PR 垃圾信息如同早",
+      "source": "Greptile Blog | 2026-06-25",
+      "url": "#",
       "published": "2026-06-25",
-      "uid": "c0a6b402f78a384b05142bcecb7bb066"
+      "uid": "dev_c3eb1192"
     },
     {
       "title": "MonoLisa v3 发布：面向开发者的专业等宽字体重大更新",
-      "content": "MonoLisa 发布第三个大版本更新，这一广受开发者欢迎的等宽字体以极高可读性和细腻设计著称。新版引入更多连字变体、优化标点符号可辨识度、改进中日韩字符的 fallback 渲染，并新增对现代编辑器和终端主题的深度支持。许多知名开发者曾公开表示 MonoLisa 显著降低了长时间编码的眼部疲劳。新版在 Hacker News 上获得 115 分和 36 条评论。",
-      "quote": "MonoLisa improves code legibility and provides a clear sans serif for all design tasks. Font follows function.",
-      "url": "https://www.monolisa.dev/",
-      "source": "Hacker News",
+      "content": "MonoLisa v3 发布：面向开发者的专业等宽字体重大更新。Hacker News | 2026-06-25相关讨论。",
+      "quote": "MonoLisa v3 发布：面向开发者的专业等宽字体重大更",
+      "source": "Hacker News | 2026-06-25",
+      "url": "#",
       "published": "2026-06-25",
-      "uid": "4144cdc6115bcab173890f79aa0d9aa3"
+      "uid": "dev_55fa1df9"
     },
     {
       "title": "Haystack 开源 AI 框架升级：面向生产级 Agent 和 RAG 系统",
-      "content": "deepset 旗下开源 AI 框架 Haystack 在 Hacker News 获得 76 分关注。Haystack 支持构建生产级 RAG 管道和 AI Agent，提供高级检索策略（混合检索、自纠正循环）、标准化工具调用、多模态 AI 能力（图像处理、音频转录）以及灵活的 Jinja-2 提示模板。框架强调可组合性和分支循环管道设计，使开发者能精确控制多步决策流程。",
-      "quote": "Design production-ready AI agents with standardized tool calling and scalable context engineering. Branching and looping pipelines give you full control over complex decision flows.",
-      "url": "https://haystack.deepset.ai/",
-      "source": "Hacker News",
+      "content": "Haystack 开源 AI 框架升级：面向生产级 Agent 和 RAG 系统。Hacker News | 2026-06-25相关讨论。",
+      "quote": "Haystack 开源 AI 框架升级：面向生产级 Agen",
+      "source": "Hacker News | 2026-06-25",
+      "url": "#",
       "published": "2026-06-25",
-      "uid": "e3986fc731cb4528c03fe99a2a2dbb45"
+      "uid": "dev_515e7161"
     },
     {
       "title": "John Carmack 回顾早期创业失误引 AI 社区热议",
-      "content": "传奇程序员 John Carmack（id Software 创始人、Oculus 前 CTO）在 Twitter 上发布长贴回顾自己在早期创业中的失误。帖子在 Hacker News 上获得 372 分和 185 条评论，社区讨论热烈。Carmack 以在技术远见和务实工程之间的平衡著称，他的反思涉及如何避免在技术探索中犯下方向性错误，对当前 AI 创业热潮具有现实参考意义。",
-      "quote": "There are a few things that I look back on as my mistakes in the early days — learning from them is what matters.",
-      "url": "https://twitter.com/ID_AA_Carmack/status/2069799283369345247",
-      "source": "Hacker News",
+      "content": "John Carmack 回顾早期创业失误引 AI 社区热议。Hacker News | 2026-06-25相关讨论。",
+      "quote": "John Carmack 回顾早期创业失误引 AI 社区热议",
+      "source": "Hacker News | 2026-06-25",
+      "url": "#",
       "published": "2026-06-25",
-      "uid": "e3788c089711873dffcb0ad2362376ee"
+      "uid": "dev_7a9b7c52"
     },
     {
       "title": "Anthropic 发布 Claude Tag：在 Slack 中 @提及即可委托任务",
@@ -663,111 +663,111 @@
   "ai": [
     {
       "title": "OpenAI 联合 Broadcom 发布自研推理芯片 Jalapeño：推理成本砍半",
-      "content": "OpenAI 与 Broadcom 今日联合发布首款自研 AI 推理芯片「Jalapeño」，专为大语言模型推理设计而非训练。芯片从设计到流片仅用 9 个月（行业通常数年），期间甚至用 OpenAI 自家旧模型加速了芯片设计流程。据 Bloomberg 报道，Jalapeño 可将推理成本降低约 50%。首批芯片已在数据中心测试，计划年底前规模化部署。OpenAI 总裁 Greg Brockman 表示「每瓦性能和每美元性能表现惊人」。该芯片是 ASIC 架构，窄聚焦但更高效，可能动摇英伟达在 AI 推理市场的统治地位。",
+      "content": "**来源：VentureBeat | 2026-06-25** OpenAI 与 Broadcom 今日联合发布首款自研 AI 推理芯片「Jalapeño」，专为大语言模型推理设计而非训练。芯片从设计到流片仅用 9 个月（行业通常数年），期间甚至用 OpenAI 自家旧模型加速了芯片设计流程。据 Bloomberg 报道，Jalapeño 可将推理成本降低约 50%。首批芯片已在数据中心测试，计划年底前规模化部署。OpenAI 总裁 Greg Brockman 表示「每瓦性能和每美元性能表现惊人」。该芯片是 ASIC 架构，窄聚焦但更高效，可能动摇英伟达在 AI 推理市场的统治地位。 🔗 https://venturebeat.com/infrastructure/openai-unveils-first-custom-ai-inference-chip-jalapeno-with-broadcom-and-its-development-was-sped-up-with-openais-own-models",
       "quote": "大模型公司自己造芯片，英伟达心里咯噔一下",
+      "source": "",
       "url": "https://venturebeat.com/infrastructure/openai-unveils-first-custom-ai-inference-chip-jalapeno-with-broadcom-and-its-development-was-sped-up-with-openais-own-models",
-      "source": "VentureBeat",
       "published": "2026-06-25",
-      "uid": "ab1164101b302d15786aa9f308fac7d0"
+      "uid": "ai_100c1226"
     },
     {
       "title": "Google 将「计算机使用」能力原生集成到 Gemini 3.5 Flash",
-      "content": "Google DeepMind 宣布计算机使用（Computer Use）能力已作为内置工具集成到 Gemini 3.5 Flash 中。开发者现在可以用单一模型构建能跨浏览器、桌面和移动端「看、想、操作」的 AI 程序。此前计算机使用是独立的 Gemini 2.5 模型功能，现在直接嵌入主力 Flash 模型，性能更强。Google 还发布了企业级安全防护，包括敏感操作需人工确认和抵御提示注入攻击的机制。已在 Gemini API 和 Enterprise Agent Platform 上线。",
+      "content": "**来源：Google Blog | 2026-06-25** Google DeepMind 宣布计算机使用（Computer Use）能力已作为内置工具集成到 Gemini 3.5 Flash 中。开发者现在可以用单一模型构建能跨浏览器、桌面和移动端「看、想、操作」的 AI 程序。此前计算机使用是独立的 Gemini 2.5 模型功能，现在直接嵌入主力 Flash 模型，性能更强。Google 还发布了企业级安全防护，包括敏感操作需人工确认和抵御提示注入攻击的机制。已在 Gemini API 和 Enterprise Agent Platform 上线。 🔗 https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/",
       "quote": "以后 AI 帮你操作电脑不再是 demo，是真能跑的生产力了",
+      "source": "",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/",
-      "source": "Google Blog",
       "published": "2026-06-25",
-      "uid": "c23bc822dded47db989a90a05b365b8a"
+      "uid": "ai_c139c3c0"
     },
     {
       "title": "Shopify 公开其「不怕模型死」的 AI 架构：自动切换+蒸馏策略",
-      "content": "Shopify 工程负责人 Farhan Thawar 披露了 AI 基础设施策略：构建统一的 LLM 中转层，所有模型调用通过内部网关路由。当 Anthropic Fable 5 被封杀时，Shopify 工程师无需恐慌——系统自动切换到 Claude Opus 或 GPT-5.5，毫无影响。Shopify 还大量使用蒸馏技术将大模型能力压缩到小模型，有些场景速度和成本优化达 30 倍。Thawar 的终极愿景是让蒸馏管线自主选择最优小模型，连目标模型都不用人类指定。",
+      "content": "**来源：VentureBeat | 2026-06-25** Shopify 工程负责人 Farhan Thawar 披露了 AI 基础设施策略：构建统一的 LLM 中转层，所有模型调用通过内部网关路由。当 Anthropic Fable 5 被封杀时，Shopify 工程师无需恐慌——系统自动切换到 Claude Opus 或 GPT-5.5，毫无影响。Shopify 还大量使用蒸馏技术将大模型能力压缩到小模型，有些场景速度和成本优化达 30 倍。Thawar 的终极愿景是让蒸馏管线自主选择最优小模型，连目标模型都不用人类指定。 🔗 https://venturebeat.com/orchestration/how-shopify-built-an-ai-stack-that-doesnt-care-which-models-survive",
       "quote": "当 Fable 5 死了，Shopify 打了个哈欠——有代理墙的公司根本不在乎",
+      "source": "",
       "url": "https://venturebeat.com/orchestration/how-shopify-built-an-ai-stack-that-doesnt-care-which-models-survive",
-      "source": "VentureBeat",
       "published": "2026-06-25",
-      "uid": "9ba3ae49f6de84bf120af83ca326e3ae"
+      "uid": "ai_8c5b5f06"
     },
     {
       "title": "Intuit 全面重构 AI 基础设施：从多 Agent 转向技能-工具架构",
-      "content": "Intuit 的 AI 副总裁 Nhung Ho 披露，Intuit 彻底重构了其 AI 技术基础设施——从大型多 Agent 系统转向更精细的技能-工具架构，将庞大 Agent 拆解为专门化组件，分离「大脑」和「手」。同时将人类专家直接嵌入 AI 工作流。这种架构也让 Intuit 解耦了编排层与模型提供商，不再被任何单一 AI 供应商绑定。将在 VB Transform 2026 大会上分享更多细节。",
+      "content": "**来源：VentureBeat | 2026-06-25** Intuit 的 AI 副总裁 Nhung Ho 披露，Intuit 彻底重构了其 AI 技术基础设施——从大型多 Agent 系统转向更精细的技能-工具架构，将庞大 Agent 拆解为专门化组件，分离「大脑」和「手」。同时将人类专家直接嵌入 AI 工作流。这种架构也让 Intuit 解耦了编排层与模型提供商，不再被任何单一 AI 供应商绑定。将在 VB Transform 2026 大会上分享更多细节。 🔗 https://venturebeat.com/orchestration/intuit-will-show-off-how-it-rebuilt-its-ai-infrastructure-to-support-fast-and-complex-tasks-at-vb-transform-2026",
       "quote": "把 AI Agent 拆成大脑和手，顺便把供应商也甩了——Intuit 这波操作很聪明",
+      "source": "",
       "url": "https://venturebeat.com/orchestration/intuit-will-show-off-how-it-rebuilt-its-ai-infrastructure-to-support-fast-and-complex-tasks-at-vb-transform-2026",
-      "source": "VentureBeat",
       "published": "2026-06-25",
-      "uid": "c8ba672c90f10f853909f0128b9903ea"
+      "uid": "ai_5bc91bea"
     },
     {
       "title": "Meta 拒绝将 AI 模型交给美国政府审查",
-      "content": "The Verge 报道，Meta 仍未同意允许美国政府审查其 AI 模型。白宫一直在施压 Meta 提交模型进行评估，而 OpenAI、Anthropic、Google、微软和 xAI 均已签署协议。「我们正在处理细节，希望很快就签署协议，」Meta 发言人告诉 NYT。这一延迟反映了 Meta 在 AI 安全治理上与其他头部公司之间日益扩大的裂痕，也为美国国内的 AI 监管博弈增添了新变量。",
+      "content": "**来源：The Verge | 2026-06-25** The Verge 报道，Meta 仍未同意允许美国政府审查其 AI 模型。白宫一直在施压 Meta 提交模型进行评估，而 OpenAI、Anthropic、Google、微软和 xAI 均已签署协议。「我们正在处理细节，希望很快就签署协议，」Meta 发言人告诉 NYT。这一延迟反映了 Meta 在 AI 安全治理上与其他头部公司之间日益扩大的裂痕，也为美国国内的 AI 监管博弈增添了新变量。 🔗 https://www.theverge.com/ai-artificial-intelligence/924017/google-microsoft-xai-government-review",
       "quote": "别人都签了就 Meta 还在拖，扎克伯格的 AI 到底藏了什么秘密",
+      "source": "",
       "url": "https://www.theverge.com/ai-artificial-intelligence/924017/google-microsoft-xai-government-review",
-      "source": "The Verge",
       "published": "2026-06-25",
-      "uid": "5848b4fcf3859a129f63f26777284eb7"
+      "uid": "ai_ea084405"
     },
     {
       "title": "Amazon 发布可信赖 AI Agent 工程框架",
-      "content": "Amazon 将在 VB Transform 2026 大会上展示其构建可信赖 AI Agent 的工程框架。AI Agent 在自主执行业务任务上越来越高效，但 IT 负责人对授予企业系统访问权限仍保持谨慎。Amazon 的框架聚焦于在不牺牲企业安全边界的前提下，让 Agent 具备足够的自主权完成复杂任务——这是当前从「有趣 demo」走向「真正生产部署」的关键瓶颈。",
+      "content": "**来源：VentureBeat | 2026-06-25** Amazon 将在 VB Transform 2026 大会上展示其构建可信赖 AI Agent 的工程框架。AI Agent 在自主执行业务任务上越来越高效，但 IT 负责人对授予企业系统访问权限仍保持谨慎。Amazon 的框架聚焦于在不牺牲企业安全边界的前提下，让 Agent 具备足够的自主权完成复杂任务——这是当前从「有趣 demo」走向「真正生产部署」的关键瓶颈。 🔗 https://venturebeat.com/orchestration/amazon-will-present-its-framework-for-engineering-trustworthy-ai-agents-at-vb-transform-2026",
       "quote": "Agent 能力越来越强，但企业的信任危机也到了临界点",
+      "source": "",
       "url": "https://venturebeat.com/orchestration/amazon-will-present-its-framework-for-engineering-trustworthy-ai-agents-at-vb-transform-2026",
-      "source": "VentureBeat",
       "published": "2026-06-25",
-      "uid": "7cfc38d9e0eab20c47254b07b9b46f3e"
+      "uid": "ai_63dd9a32"
     },
     {
       "title": "RubyLLM 发布：一个 Ruby 框架搞定所有主流 AI 提供商",
-      "content": "RubyLLM 在 Hacker News 上获得 200+ 点热度，这是一个统一的 Ruby 框架，支持连接所有主流 AI 提供商（OpenAI、Anthropic、Google、Meta 等）。Ruby 社区长期缺乏一个开箱即用的 AI SDK，开发者不得不在多个 API 客户端之间手动切换。RubyLLM 提供了一个统一的接口层，让 Ruby 开发者可以像调用本地方法一样调用各种大模型 API。框架已开源。",
+      "content": "**来源：Hacker News | 2026-06-25** RubyLLM 在 Hacker News 上获得 200+ 点热度，这是一个统一的 Ruby 框架，支持连接所有主流 AI 提供商（OpenAI、Anthropic、Google、Meta 等）。Ruby 社区长期缺乏一个开箱即用的 AI SDK，开发者不得不在多个 API 客户端之间手动切换。RubyLLM 提供了一个统一的接口层，让 Ruby 开发者可以像调用本地方法一样调用各种大模型 API。框架已开源。 🔗 https://rubyllm.com/",
       "quote": "Ruby 社区终于不再羡慕 Python 的 AI 工具链了",
+      "source": "",
       "url": "https://rubyllm.com/",
-      "source": "Hacker News",
       "published": "2026-06-25",
-      "uid": "207cbd091bf8c0b6767a74f989d9c512"
+      "uid": "ai_1afe12ef"
     },
     {
       "title": "开源 AI 框架 Haystack 推出生产级 Agent 和 RAG 能力",
-      "content": "Haystack（deepset 出品）在 Hacker News 上引发关注，这个开源 AI 框架推出了面向生产的 Agent 和 RAG 功能。Haystack 提供了完整的组件化流水线，让开发者可以快速构建检索增强生成和 AI Agent 应用。67 点热度表明社区对「不绑定特定模型」的 AI 框架需求强劲——在模型快速迭代的当下，抽象层比以往任何时候都重要。",
+      "content": "**来源：Hacker News | 2026-06-25** Haystack（deepset 出品）在 Hacker News 上引发关注，这个开源 AI 框架推出了面向生产的 Agent 和 RAG 功能。Haystack 提供了完整的组件化流水线，让开发者可以快速构建检索增强生成和 AI Agent 应用。67 点热度表明社区对「不绑定特定模型」的 AI 框架需求强劲——在模型快速迭代的当下，抽象层比以往任何时候都重要。 🔗 https://haystack.deepset.ai/",
       "quote": "AI 框架卷到拼生产级了——Haystack 这是要当 LLM 界的 Spring Boot",
+      "source": "",
       "url": "https://haystack.deepset.ai/",
-      "source": "Hacker News / deepset",
       "published": "2026-06-25",
-      "uid": "e0d1289336cd363fd621106f977172fd"
+      "uid": "ai_4a7f5a08"
     },
     {
       "title": "peerd：完全在浏览器中运行的 AI Agent 框架",
-      "content": "开源项目 peerd 带来了一个能在浏览器中完全运行的 AI Agent 工具集。所有逻辑在客户端执行，无需服务器端推理。用户的数据不会离开本机浏览器，这在隐私敏感场景下极具价值。适合轻量级自动化任务、个人助理等场景。",
+      "content": "**来源：Hacker News / GitHub | 2026-06-25** 开源项目 peerd 带来了一个能在浏览器中完全运行的 AI Agent 工具集。所有逻辑在客户端执行，无需服务器端推理。用户的数据不会离开本机浏览器，这在隐私敏感场景下极具价值。适合轻量级自动化任务、个人助理等场景。 🔗 https://github.com/NotASithLord/peerd",
       "quote": "浏览器里跑 AI Agent——不需要服务器，隐私拉满，真 · 端侧推理",
+      "source": "",
       "url": "https://github.com/NotASithLord/peerd",
-      "source": "Hacker News / GitHub",
       "published": "2026-06-25",
-      "uid": "da3097d6be232929c9589e13c376df7a"
+      "uid": "ai_7d4d670f"
     },
     {
       "title": "NatureBench：AI 编码 Agent 在真实科研任务上仅达 SOTA 的 17.8%",
-      "content": "Frontis AI 发布 NatureBench，一个跨学科的 AI 编码 Agent 基准测试，包含 90 个源自 Nature 系列期刊的真实科学任务。令人震惊的事实：最强模型在严格评测下仅超越官方 SOTA 的 17.8%。分析发现 Agent 主要依赖「方法论翻译」——将科学任务转化为熟悉的监督预测问题，而非真正的科学创新。失败主因是方法选择错误和算力不足，而非任务理解偏差。",
+      "content": "**来源：HuggingFace Papers | 2026-06-25** Frontis AI 发布 NatureBench，一个跨学科的 AI 编码 Agent 基准测试，包含 90 个源自 Nature 系列期刊的真实科学任务。令人震惊的事实：最强模型在严格评测下仅超越官方 SOTA 的 17.8%。分析发现 Agent 主要依赖「方法论翻译」——将科学任务转化为熟悉的监督预测问题，而非真正的科学创新。失败主因是方法选择错误和算力不足，而非任务理解偏差。 🔗 https://huggingface.co/papers?date=2026-06-24",
       "quote": "AI Agent 做科研只会「翻译」不会「创新」——Nature 级别的活儿还是得人类来",
+      "source": "",
       "url": "https://huggingface.co/papers?date=2026-06-24",
-      "source": "HuggingFace Papers",
       "published": "2026-06-25",
-      "uid": "6dcfe8c6110c2b65ceb1e231c0c4358a"
+      "uid": "ai_0fe911e2"
     },
     {
       "title": "学者质疑微软「量子飞跃」：声称代码存在基础性 Python 错误",
-      "content": "英国学者公开质疑微软此前号称的「量子飞跃」研究成果，声称支撑该突破的关键代码存在基础性 Python 错误。如果指控成立，可能对微软在量子计算领域的信誉造成重大打击，也再次引发将 AI 用于科学研究时的可复现性问题。该事件在 Hacker News 上获得 84 点讨论。",
+      "content": "**来源：The Register | 2026-06-25** 英国学者公开质疑微软此前号称的「量子飞跃」研究成果，声称支撑该突破的关键代码存在基础性 Python 错误。如果指控成立，可能对微软在量子计算领域的信誉造成重大打击，也再次引发将 AI 用于科学研究时的可复现性问题。该事件在 Hacker News 上获得 84 点讨论。 🔗 https://www.theregister.com/research/2026/06/24/boffin-claims-microsofts-supposed-quantum-leap-does-not-compute-due-to-basic-python-errors/5260489",
       "quote": "微软的量子突破被质疑是 Python 写的 bug——科研界的 AI 可复现性又添新案例",
+      "source": "",
       "url": "https://www.theregister.com/research/2026/06/24/boffin-claims-microsofts-supposed-quantum-leap-does-not-compute-due-to-basic-python-errors/5260489",
-      "source": "The Register",
       "published": "2026-06-25",
-      "uid": "7b69dcf64a6eb304a620a1b608ecb034"
+      "uid": "ai_16f816ca"
     },
     {
       "title": "开源 AI 是大多数国家唯一的前进道路",
-      "content": "一篇在 Hacker News 上引起热烈讨论的文章指出：对于世界上大多数国家而言，开源 AI 是唯一的前进道路。随着大模型训练成本飙升和 AI 巨头的地缘政治分歧加剧，依赖单一封闭模型提供商带来的地缘风险越来越大。开源模型让各国能够基于自身数据和需求构建 AI 能力，而不是依赖他国公司的黑盒 API。话题引发 82 点热度和 47 条评论。",
+      "content": "**来源：TechStrong AI / Hacker News | 2026-06-25** 一篇在 Hacker News 上引起热烈讨论的文章指出：对于世界上大多数国家而言，开源 AI 是唯一的前进道路。随着大模型训练成本飙升和 AI 巨头的地缘政治分歧加剧，依赖单一封闭模型提供商带来的地缘风险越来越大。开源模型让各国能够基于自身数据和需求构建 AI 能力，而不是依赖他国公司的黑盒 API。话题引发 82 点热度和 47 条评论。 🔗 https://techstrong.ai/articles/for-most-of-the-world-open-source-ai-is-the-only-way-forward/",
       "quote": "不是每个国家都用得起 GPT，开源 AI 才是发展中国家的真希望",
+      "source": "",
       "url": "https://techstrong.ai/articles/for-most-of-the-world-open-source-ai-is-the-only-way-forward/",
-      "source": "TechStrong AI / Hacker News",
       "published": "2026-06-25",
-      "uid": "3cd3a739e05707fa302cb0c0fac639be"
+      "uid": "ai_874fe688"
     },
     {
       "title": "Anthropic 推出 Claude Tag：让 Claude 成为 Slack 团队中的 AI 队友",
@@ -944,111 +944,111 @@
   "startup": [
     {
       "title": "临界点半足人形机器人公司获近10亿元融资",
-      "content": "灵巧手企业“临界点”宣布完成近10亿元融资，由未来资产、某互联网大厂、京铭资本等战略与产业资本联合领投，高瓴创投、蓝驰创投等老股东持续加注。本轮融资将用于量产能力扩大、灵巧操作数据飞轮搭建及接触智能模型研发。",
+      "content": "灵巧手企业\"临界点\"宣布完成近10亿元融资，由未来资产、某互联网大厂、京铭资本等战略与产业资本联合领投，高瓴创投、蓝驰创投等老股东持续加注。本轮融资将用于量产能力扩大、灵巧操作数据飞轮搭建及接触智能模型研发。",
       "quote": "10个小目标到手，灵巧手赛道又卷起来了。",
+      "source": "36氪 | 2026-06-24",
       "url": "https://36kr.com/newsflashes/3867180080010245",
-      "source": "36氪",
       "published": "2026-06-25",
-      "uid": "66593f60bf14d3ced51b0fdab693bd98"
+      "uid": "startup_b0770155"
     },
     {
       "title": "宇树R1人形机器人降价至2.99万元起",
       "content": "宇树科技宣布旗下双足人形机器人Unitree R1官方售价由3.99万元下调至2.99万元起，并即日起开放现货销售。该机器人重25千克，配备26个高精度关节，支持语音与图像多模态大模型交互，具备开发与定制能力。",
       "quote": "人形机器人价格打下来了，你家狗子要不换一个？",
+      "source": "财联社 | 2026-06-24",
       "url": "https://www.cls.cn/detail/2408211",
-      "source": "财联社",
       "published": "2026-06-25",
-      "uid": "954f209d985fe5aad23c088845fc03a6"
+      "uid": "startup_c3b8752c"
     },
     {
       "title": "Krea 2发布：开源120亿参数文生图模型",
-      "content": "Krea AI正式发布Krea 2系列基础模型（K2 Raw和K2 Turbo），采用120亿参数开放权重许可发布。该模型在美学多样性和用户创意控制上做了显著优化，涵盖数据策展原则、模型架构、多阶段训练及分布式基础设施。权重和推理代码已发布在Hugging Face和GitHub。",
+      "content": "Krea AI正式发布Krea 2系列基础模型，包括K2 Raw和K2 Turbo两个版本，采用120亿参数开放权重许可发布。该模型在美学多样性和用户创意控制上做了显著优化，涵盖多阶段训练及分布式基础设施。权重和推理代码已发布在Hugging Face和GitHub。",
       "quote": "开源文生图又卷出新高，Midjourney瑟瑟发抖。",
+      "source": "Krea AI | 2026-06-23",
       "url": "https://www.krea.ai/blog/krea-2-technical-report",
-      "source": "Krea AI",
       "published": "2026-06-25",
-      "uid": "23f6c9aaeb0dffda1adde2c47f423b13"
+      "uid": "startup_b0507b81"
     },
     {
       "title": "Bunny DNS宣布免费：CDN赛道定价策略生变",
-      "content": "CDN服务商Bunny宣布其DNS服务完全免费，引发Hacker News社区热议。此举被视为CDN和DNS市场的重大变局，Bunny试图通过免费策略抢占市场份额，与Cloudflare等巨头直接竞争。",
+      "content": "CDN服务商Bunny宣布其DNS服务完全免费，引发Hacker News社区广泛热议，获得671个点赞。此举被视为CDN和DNS市场的重大变局，Bunny试图通过免费策略迅速抢占市场份额，与Cloudflare等巨头正面竞争。",
       "quote": "免费就是最好的营销，Cloudflare该加鸡腿了。",
+      "source": "Bunny | 2026-06-24",
       "url": "https://bunny.net/blog/were-making-bunny-dns-free/",
-      "source": "Bunny",
       "published": "2026-06-25",
-      "uid": "ec96600a89c2337ff69cde3677d3d118"
+      "uid": "startup_ff6298ee"
     },
     {
       "title": "Gemini 3.5 Flash上线计算机操作能力",
-      "content": "Google发布Gemini 3.5 Flash的“Computer Use”功能，让AI模型可以直接操控计算机桌面——移动鼠标、点击按钮、填写表单、浏览网页。这是继Anthropic的Computer Use之后，又一大模型厂商推出的AI桌面自动化能力，标志着AI智能体能力边界再次扩展。",
+      "content": "Google发布Gemini 3.5 Flash的\"Computer Use\"功能，让AI模型可以直接操控计算机桌面——移动鼠标、点击按钮、填写表单、浏览网页。这是继Anthropic的Computer Use之后又一大模型厂商推出的AI桌面自动化能力，标志着AI智能体能力边界再次扩展。",
       "quote": "AI学会用电脑了，打工人离被替代又近一步。",
+      "source": "Google Blog | 2026-06-24",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/",
-      "source": "Google Blog",
       "published": "2026-06-25",
-      "uid": "27d77cd7300f2f121d932b1d226c99ef"
+      "uid": "startup_52e44f62"
     },
     {
       "title": "中科曙光ParaStor F9000刷新IO500全球纪录",
-      "content": "在德国ISC 2026高性能计算大会期间，全球存储榜单IO500公布最新排名。中科曙光ParaStor F9000分布式全闪存储系统在生产型全节点与10节点两大核心榜单中均位列全球第一，并刷新世界纪录。这标志着中国高性能存储技术已达到国际领先水平。",
-      "quote": "存储界的‘中国速度’，不服跑个分？",
+      "content": "在德国ISC 2026高性能计算大会期间，全球存储榜单IO500公布最新排名。中科曙光ParaStor F9000分布式全闪存储系统在生产型全节点与10节点两大核心榜单中均位列全球第一并刷新世界纪录，标志着中国高性能存储技术达到国际领先水平。",
+      "quote": "存储界的\"中国速度\"，不服跑个分？",
+      "source": "36氪 | 2026-06-24",
       "url": "https://36kr.com/newsflashes/3867124317541633",
-      "source": "36氪",
       "published": "2026-06-25",
-      "uid": "84c24944bd9d3389728cf8ec9ff32ff2"
+      "uid": "startup_04b5d62b"
     },
     {
       "title": "AI生成PR垃圾泛滥：开源贡献将需要信誉系统",
-      "content": "Greptile发布对OpenClaw开源项目的PR数据分析：去年12月每周仅2个PR，今年2月飙升至3400个/周，合并率从48%暴跌至9.3%。AI代码工具生成的‘垃圾PR’泛滥成灾，一位贡献者一天内提交了106个PR，中位数间隔仅3秒。文章预测开源贡献将需要‘发件人信誉’系统。",
+      "content": "Greptile发布对OpenClaw开源项目的PR数据分析：去年12月每周仅2个PR，今年2月飙升至3400个/周，合并率从48%暴跌至9.3%。AI代码工具生成的\"垃圾PR\"泛滥成灾，一位贡献者一天内提交了106个PR，中位数间隔仅3秒。",
       "quote": "AI生成垃圾PR就像电子邮件病毒，历史总是惊人的相似。",
+      "source": "Greptile | 2026-06-24",
       "url": "https://www.greptile.com/blog/prs-on-openclaw",
-      "source": "Greptile",
       "published": "2026-06-25",
-      "uid": "89f8268b0be2e55f469b648d9e2d0c2d"
+      "uid": "startup_f07a5490"
     },
     {
       "title": "Nub发布：对标Bun的Node.js一体化工具包",
-      "content": "开源项目Nub发布，定位为Bun-like的Node.js全栈一体化工具包。Nub旨在简化Node.js开发流程，提供打包、运行、测试等一站式能力，引发开发者社区关注。该项目在GitHub上迅速获得超过120个star，展现出开发者对新工具的高度渴望。",
+      "content": "开源项目Nub发布，定位为Bun-like的Node.js全栈一体化工具包，旨在简化Node.js开发流程，提供打包、运行、测试等一站式能力。该项目在GitHub上迅速获得超过120个star，展现出开发者对新一代工具的强烈需求。",
       "quote": "又有人要给Node.js续命了，但愿不是又一个轮子。",
+      "source": "GitHub | 2026-06-24",
       "url": "https://github.com/nubjs/nub",
-      "source": "GitHub",
       "published": "2026-06-25",
-      "uid": "afb249f2a03993503edfecea330ed9ee"
+      "uid": "startup_23efb109"
     },
     {
       "title": "长电科技投资78亿元建高端封测工厂",
-      "content": "长电科技公告，拟通过设立控股子公司在上海临港新片区建设高端先进封测工厂，投资总额78亿元，注册资本预计40亿元。项目分两期建设，一期计划2028年下半年完成。此举旨在加快高端先进封装产能布局，提升中国半导体封装测试领域竞争力。",
+      "content": "长电科技公告拟通过设立控股子公司在上海临港新片区建设高端先进封测工厂，投资总额78亿元。项目分两期建设，一期计划2028年下半年完成。此举旨在加快高端先进封装产能布局，提升中国半导体封装测试领域的国际竞争力。",
       "quote": "78亿砸向封测，国产芯片后道也要弯道超车。",
+      "source": "36氪 | 2026-06-24",
       "url": "https://36kr.com/newsflashes/3867102554641665",
-      "source": "36氪",
       "published": "2026-06-25",
-      "uid": "70aa210ff807b1cc5f3503a527188bd7"
+      "uid": "startup_14cb128a"
     },
     {
-      "title": "追觅创始人达沃斯谈人才观：把工程师培养成‘乔布斯’",
-      "content": "追觅创始人俞浩在2026夏季达沃斯论坛上提出创新人才方法论：将乔布斯创新方法论拆解为数百个模型赋能工程师，目标是‘把每个人培养成乔布斯’，再进阶到‘人人马斯克’。目前部分90后已借助这套模型管理千人团队，核心管理层约200人，年离职不超5人。",
+      "title": "追觅创始人达沃斯谈人才观：把工程师培养成\"乔布斯\"",
+      "content": "追觅创始人俞浩在2026夏季达沃斯论坛上提出创新人才方法论：将乔布斯创新方法论拆解为数百个模型赋能工程师，目标是\"把每个人培养成乔布斯\"，再进阶\"人人马斯克\"。目前部分90后已借助这套模型管理千人团队，核心管理层年离职率极低。",
       "quote": "批量生产乔布斯？这饼画得有点大但挺香。",
+      "source": "钛媒体 | 2026-06-24",
       "url": "https://www.tmtpost.com/nictation/8039868.html",
-      "source": "钛媒体",
       "published": "2026-06-25",
-      "uid": "9ea77372db69864de385e7beaf4a6e7f"
+      "uid": "startup_99b0d1f8"
     },
     {
-      "title": "AI药物发现将周期缩至两年，但临床试验仍是瓶颈",
-      "content": "中国生物制药CEO谢承润在达沃斯指出，AI已革命性地将药物早期发现周期从数十年平均缩短至两年，并将安全窗口提升20倍。但开发环节（临床试验）仍是瓶颈，需3至5年验证。他警示新药研发‘十年十亿美金’的高门槛正导致行业陷入资本固化困局。",
+      "title": "AI将药物发现周期缩至两年，临床试验仍是瓶颈",
+      "content": "中国生物制药CEO谢承润在达沃斯指出，AI已革命性地将药物早期发现周期从数十年缩短至两年，安全窗口提升20倍。但开发环节的临床试验仍是瓶颈，需3至5年验证。他警示\"十年十亿美金\"的高门槛正导致行业陷入资本固化困局。",
       "quote": "AI加速了前半程，但临床验证还是慢得像蜗牛。",
+      "source": "钛媒体 | 2026-06-24",
       "url": "https://www.tmtpost.com/nictation/8039844.html",
-      "source": "钛媒体",
       "published": "2026-06-25",
-      "uid": "739eda621ef7ef16c95ef542d882e549"
+      "uid": "startup_dd92b823"
     },
     {
-      "title": "Microsoft量子‘突破’被指因基础Python错误而无效",
-      "content": "一位研究人员声称，微软此前宣称的‘量子飞跃’重大突破存在严重缺陷，其背后竟然是因为‘基础Python代码错误’。这一发现引发了对微软量子计算研究可信度的质疑，也提醒科技界在大规模宣传之前应该做好同行验证。",
-      "quote": "Python写bug导致量子革命翻车，这很程序员。",
+      "title": "微软量子\"突破\"被指因基础Python错误而无效",
+      "content": "一位研究人员声称微软此前宣称的\"量子飞跃\"重大突破存在严重缺陷，其背后竟是因\"基础Python代码错误\"导致。这一发现引发了对微软量子计算研究可信度的广泛质疑，也警示科技界在大规模宣传前应做好同行验证。",
+      "quote": "Python写bug导致量子革命翻车，这很程序员。 📊 共12条，涵盖机器人、AI模型、开源生态、半导体、云计算、医药科技、量子计算等领域",
+      "source": "The Register | 2026-06-24",
       "url": "https://www.theregister.com/research/2026/06/24/boffin-claims-microsofts-supposed-quantum-leap-does-not-compute-due-to-basic-python-errors/5260489",
-      "source": "The Register",
       "published": "2026-06-25",
-      "uid": "d657d69c9c324c974810c7e710be2c4f"
+      "uid": "startup_5d9757c6"
     },
     {
       "title": "Meta发布299美元智能眼镜，不再搭载雷朋标识",
@@ -1269,112 +1269,58 @@
   ],
   "design": [
     {
-      "title": "How To Make Your Design System AI-Ready",
-      "content": "Vitaly Friedman 分享如何让设计系统适配 AI 生成原型。核心三要素：用 Markdown spec 文件明确设计原则和规则、通过 token 层限制 AI 从闭合变量池中选择、加上审计脚本自动标记硬编码值。Atlassian、Carbon 等团队已经开始实践。",
-      "quote": "AI 不背锅——你的设计系统规不规范，它心里可门儿清。",
-      "url": "https://www.smashingmagazine.com/2026/06/how-make-design-system-ai-ready/",
-      "source": "Smashing Magazine",
-      "published": "2026-06-25",
-      "uid": "d332220b4ba6da2eda6e6808c9fbdf97"
-    },
-    {
-      "title": "Context Architecture — 信息架构的 AI 时代进化",
-      "content": "NN Group 提出 Context Architecture 概念：将传统 IA 原则应用到 AI 系统中。从 Prompt Engineering 到 Context Engineering，再到 Agentic System，上下文不是系统提示列表而是一个由指令、检索知识、技能、工具、记忆组成的信息生态系统。IA 原则对 AI 输出质量至关重要。",
-      "quote": "Prompt engineer 还没捂热乎，context architect 就要上岗了。",
-      "url": "https://www.nngroup.com/articles/context-architecture/",
-      "source": "Nielsen Norman Group",
-      "published": "2026-06-25",
-      "uid": "8602a18905fa151ca93cc1d8b401f934"
-    },
-    {
       "title": "Radical Redesign or Incremental Change?",
-      "content": "Hoa Loranger 探讨激进改版 vs 渐进改良的取舍。结论：多数情况应选渐进改进，因为激进改版对用户冲击大、业务风险高、组织协调成本惊人。只有数据明确显示需要全面重构时，才考虑「大爆炸」策略。别因为团队看腻了就改。",
+      "content": "Hoa Loranger 探讨激进改版 vs 渐进改良的取舍。结论：多数情况应选渐进改进，激进改版对用户冲击大、业务风险高、组织协调成本惊人。只有数据明确显示需要全面重构时，才考虑「大爆炸」策略。别因为团队看腻了就改。",
       "quote": "你看腻了不代表用户也腻了——人家一年都未必来一次。",
+      "source": "Nielsen Norman Group | 2026-06-24",
       "url": "https://www.nngroup.com/articles/radical-incremental-redesign/",
-      "source": "Nielsen Norman Group",
       "published": "2026-06-25",
-      "uid": "d44a2b9dd4d9ad996ebefc23b3cdb672"
-    },
-    {
-      "title": "The Four Design Jobs AI Created (So Far)",
-      "content": "「AI 设计」已经分叉为四种完全不同的工作方向：用 AI 做设计（工具使用者）、设计 AI 产品（造车的人）、设计 AI 行为（训练模型交互方式）、设计 AI 基础设施（数据与上下文架构）。团队常常只配置了其中一种人，然后困惑为什么 AI 设计战略达不成预期。",
-      "quote": "所有岗位都在喊 AI 设计，但坐下来的四个人干的是四份完全不同的工。",
-      "url": "https://www.nngroup.com/articles/design-jobs-ai-created/",
-      "source": "Nielsen Norman Group",
-      "published": "2026-06-25",
-      "uid": "bd0c50f597f229d436a183bf59c88248"
+      "uid": "design_1d90acf6"
     },
     {
       "title": "Powered By AI Is Not a Value Proposition",
       "content": "Pavel Samsonov 指出：AI 是技术不是用户价值，把「AI 加持」当卖点会让用户搞不清你究竟能解决什么问题。好的价值主张回答的是「用户能得到什么」而非「底层用了什么技术」。早期 Dropbox 只做云存储、Instagram 只做滤镜——专注解决一个问题的产品才活得久。",
       "quote": "你产品值不值钱看解决了什么问题，不是用了第几代模型。",
+      "source": "Nielsen Norman Group | 2026-06-18",
       "url": "https://www.nngroup.com/articles/powered-by-ai-is-not-a-value-proposition/",
-      "source": "Nielsen Norman Group",
       "published": "2026-06-25",
-      "uid": "7a2180e81ef6cb97d25de23441267ca0"
-    },
-    {
-      "title": "The Core Skill of Design in the AI Era: Critique",
-      "content": "设计在 AI 时代的核心能力是评价（Critique）。传统设计靠精确规范控制输出，但 AI 的随机性让精确规范失效。设计师需要定义「好」的标准，建立 Judge-Evaluate-Iterate 循环：制定评价标准→评估输出→迭代优化。从确定性系统到概率性系统的转变，设计师的角色必须随之进化。",
-      "quote": "以前设计师写说明书，现在设计师当裁判——而且是终身制。",
-      "url": "https://www.nngroup.com/articles/ai-era-critique/",
-      "source": "Nielsen Norman Group",
-      "published": "2026-06-25",
-      "uid": "b86ef5434afe627aabde8575157201d3"
+      "uid": "design_52cf29cd"
     },
     {
       "title": "Intentionality in AI-Assisted Design",
-      "content": "Eric Chung 探讨 AI 加速设计执行后产生的副作用：产出大幅增加，但产品思维并未同步跟上。AI 生成的概念乍看漂亮，一经推敲就暴露边界情况和系统性问题。执行从来不是 UX 最难的部分——理解问题、权衡取舍、做对全局决策才是。速度提升反而让高质量评价能力成为新瓶颈。",
+      "content": "Eric Chung 探讨 AI 加速设计执行后产生的副作用：产出大幅增加，但产品思维并未同步跟上。AI 生成的概念乍看漂亮，一经推敲就暴露边界情况和系统性问题。执行从来不是 UX 最难的部分，速度提升反而让高质量评价能力成为新瓶颈。",
       "quote": "Figma 五分钟出一百张稿，但能用的可能一张都没有。",
+      "source": "LogRocket | 2026-06-23",
       "url": "https://blog.logrocket.com/ux-design/maintaining-intentionality-in-ai-assisted-design/",
-      "source": "LogRocket",
       "published": "2026-06-25",
-      "uid": "6eb57502e7bb9f04245a4819f7433310"
-    },
-    {
-      "title": "Creating Memorable Web Experiences: A Modern CSS Toolkit",
-      "content": "Mariana Beldi 分享用现代 CSS 打造令人难忘的网站体验的开源工具箱。涵盖分割文字动画、3D 效果、scroll-driven animations、view-transitions、clip-paths 等原生能力。强调「动效即沟通」——在做动画前先用关键词列表定义品牌调性，再选择对应的动效策略。",
-      "quote": "JS 还在路上，CSS 已经把舞跳完了——还要什么 GSAP。",
-      "url": "https://css-tricks.com/creating-memorable-web-experiences-a-modern-css-toolkit/",
-      "source": "CSS-Tricks",
-      "published": "2026-06-25",
-      "uid": "f83b27800f0d5879336f3558f6f10c7e"
+      "uid": "design_eb435b88"
     },
     {
       "title": "A First Look at Scroll-Triggered Animations",
-      "content": "Chrome 146 首发支持 scroll-triggered animations，与 scroll-driven animations 的不同在于：前者在元素滚入视口时播放固定时长的动画，后者则与滚动进度同步。通过 timeline-trigger 和 animation-trigger 两个新特性，纯 CSS 实现 Intersection Observer 级别的滚动控制，不再依赖 JS。",
+      "content": "Chrome 146 首发支持 scroll-triggered animations。与 scroll-driven animations 不同：前者在元素滚入视口时播放固定时长的动画，后者与滚动进度同步。通过 timeline-trigger 和 animation-trigger 两个新特性，纯 CSS 实现 Intersection Observer 级别的滚动控制。",
       "quote": "Intersection Observer 可以准备退休了，CSS 终于来接班了。",
+      "source": "CSS-Tricks | 2026-06-24",
       "url": "https://css-tricks.com/css-scroll-triggered-animations-first-look/",
-      "source": "CSS-Tricks",
       "published": "2026-06-25",
-      "uid": "61db4596af4d71c30f15bc18497173aa"
+      "uid": "design_c37464a7"
     },
     {
       "title": "Practical Interface Patterns For AI Transparency (Part 2)",
-      "content": "传统加载模式（spinner）在 Agentic AI 体验中完全失效。文章探索了揭示系统过程、状态和决策的界面模式：让用户看到 AI 正在做什么、为什么这么做、预计还要多久——这种透明感能显著提升信任度。",
+      "content": "传统加载模式（spinner）在 Agentic AI 体验中完全失效。文章探索了揭示系统过程、状态和决策的界面模式：让用户看到 AI 正在做什么、为什么这么做、预计还要多久——透明感能显著提升信任度。",
       "quote": "用户看转圈圈已经忍了十年，AI 时代再这样真的说不过去了。",
+      "source": "Smashing Magazine | 2026-05-20",
       "url": "https://www.smashingmagazine.com/2026/05/practical-interface-patterns-ai-transparency/",
-      "source": "Smashing Magazine",
       "published": "2026-06-25",
-      "uid": "0df8bd6022b7a9ea6a0218e85c0d01f0"
+      "uid": "design_a4239532"
     },
     {
       "title": "Four Levels Of Customer Understanding",
-      "content": "Vitaly Friedman 提出四层客户理解框架：人们说的、感觉的、想的和做的往往完全不同。仅靠问卷调查无法触及深层次动机，需要结合行为观察、情境访谈和数据分析才能挖掘真实需求。设计决策不能只停在「用户说」的表面层。",
-      "quote": "用户嘴上说要 A，心里想要 B，最后下单买了 C——你得看懂三层。",
+      "content": "Vitaly Friedman 提出四层客户理解框架：人们说的、感觉的、想的和做的往往完全不同。仅靠问卷调查无法触及深层动机，需要结合行为观察、情境访谈和数据分析才能挖掘真实需求。",
+      "quote": "用户嘴上说要 A，心里想要 B，最后下单买了 C——你得看懂三层。 🔥 本期 6 条（去重后），覆盖用户体验策略、CSS 前沿、AI 设计三大板块。 生成时间：2026-06-25 02:30 CST",
+      "source": "Smashing Magazine | 2026-05-15",
       "url": "https://www.smashingmagazine.com/2026/05/four-levels-customer-understanding/",
-      "source": "Smashing Magazine",
       "published": "2026-06-25",
-      "uid": "a55a4f16612e5708c7994dedb2ff34ae"
-    },
-    {
-      "title": "Vibe Architects: Nondevelopers Building Complex AI Systems",
-      "content": "越来越多非开发者正通过大量实验、YouTube 教程和 Reddit 帖子积累直觉，构建复杂的 Agentic AI 系统。NN Group 将这类人称为「Vibe Architects」——他们并非专业程序员，但通过反复试错建立了领域内的操作感。这对传统「设计→开发」流程提出了新挑战。",
-      "quote": "培训班还没毕业的人已经在造 AI 智能体了——科班设计师慌不慌？",
-      "url": "https://www.nngroup.com/articles/vibe-architects/",
-      "source": "Nielsen Norman Group",
-      "published": "2026-06-25",
-      "uid": "c708f9ba51251afe7c2e0dffb43770d7"
+      "uid": "design_91c4a3f7"
     },
     {
       "title": "Figma Make 正式面向所有用户开放，Prompt-to-App 工具全面上市",
@@ -1485,6 +1431,51 @@
       "uid": "design_f108d4d5"
     },
     {
+      "title": "How To Make Your Design System AI-Ready",
+      "content": "Smashing Magazine发布实用指南，教你如何让设计系统为AI准备就绪。核心三层面：Spec文件（结构化Markdown描述设计原则和规则）、Token层（维护封闭变量集）、审计工具（如FigmaLint）。AI需要清晰的上下文和约束才能产出优质原型，设计决策应作为基础设施被记录和管理。",
+      "quote": "AI产不出好设计，是因为你们设计系统自己都没整理好。",
+      "source": "Smashing Magazine | 2026-06-22",
+      "url": "https://www.smashingmagazine.com/2026/06/how-make-design-system-ai-ready/",
+      "published": "2026-06-23",
+      "uid": "design_35ab2373"
+    },
+    {
+      "title": "The Four Design Jobs AI Created (So Far)",
+      "content": "NN/g深入研究AI催生的四类设计岗位：产品设计（面向用户界面）、用户体验设计（用户行为）、模型设计（LLM行为定义）和基础设施设计（数据结构化）。大多数团队只配置了其中一类岗位，却误以为自己覆盖了全部。明确区分这四种角色，才能避免\"AI设计战略\"沦为空洞口号。",
+      "quote": "每个人都点头说懂了AI设计，然后各干各的，半年后全傻眼。",
+      "source": "Nielsen Norman Group | 2026-06-05",
+      "url": "https://www.nngroup.com/articles/design-jobs-ai-created/",
+      "published": "2026-06-23",
+      "uid": "design_7143a00d"
+    },
+    {
+      "title": "The Core Skill of Design in the AI Era: Critique",
+      "content": "NN/g提出AI时代设计师的核心能力从\"精确指定行为\"转向\"定义什么才算好\"。传统确定性系统可以写死规格，但大模型的非确定性输出要求设计师通过Judge-Evaluate-Iterate循环，把用户研究和设计判断编码为评估标准，告诉工程团队和AI系统\"好的\"长什么样。",
+      "quote": "以前画线稿，现在画底线。设计师该当裁判而不是画图匠了。",
+      "source": "Nielsen Norman Group | 2026-06-12",
+      "url": "https://www.nngroup.com/articles/ai-era-critique/",
+      "published": "2026-06-23",
+      "uid": "design_1fa7a91e"
+    },
+    {
+      "title": "Vibe Architects: Agentic Vibe Coders",
+      "content": "NN/g定义了一种新兴角色\"Vibe Architect\"——非开发者通过大量实验、YouTube教程和Reddit讨论积累直觉，构建复杂Agentic AI系统的群体。他们靠直觉而非正统工程方法论搭建AI产品，呈现出一种全新的创作模式，挑战传统设计与开发分工。",
+      "quote": "不会写代码的人靠看视频搭AI系统——这不叫民主化，这叫野路子正规化。",
+      "source": "Nielsen Norman Group | 2026-06-19",
+      "url": "https://www.nngroup.com/articles/vibe-architects/",
+      "published": "2026-06-23",
+      "uid": "design_44e554ab"
+    },
+    {
+      "title": "Context Architecture: Information Architecture for AI",
+      "content": "NN/g提出Context Architecture概念，将信息架构（IA）原则应用于AI系统。通过结构化上下文帮助AI模型正确解析信息，生成更符合用户意图的响应。这不是简单的提示工程，而是从信息组织层面确保模型输出质量。",
+      "quote": "把信息架构搬到AI时代，说白了还是那套老功夫，只是对手换了。",
+      "source": "Nielsen Norman Group | 2026-06-12",
+      "url": "https://www.nngroup.com/articles/context-architecture/",
+      "published": "2026-06-23",
+      "uid": "design_f0b5ba66"
+    },
+    {
       "title": "Self-Correcting Color Systems With contrast-color()",
       "content": "Smashing Magazine介绍CSS新函数contrast-color()如何自动解决对比度问题。70%的网站在2025年仍通不过WCAG对比度检查，传统方案用JS库和设计系统工具都没有根本解决问题。新的CSS原生方案contrast-color()能自动选择高对比度文本颜色，无需手动维护。",
       "quote": "70%网站连基本配色都做不好，这不怪工具，怪设计师自己偷懒。",
@@ -1492,6 +1483,15 @@
       "url": "https://www.smashingmagazine.com/2026/05/building-self-correcting-color-systems-contrast-color/",
       "published": "2026-06-23",
       "uid": "design_3f58dbf3"
+    },
+    {
+      "title": "Creating Memorable Web Experiences: A Modern CSS Toolkit",
+      "content": "CSS-Tricks发布现代CSS工具集指南，涵盖3D布局、clip-path、滚动驱动动画、view-transitions等原生能力。文章强调运动即沟通，通过\"关键词列表\"方法论定义设计意图和动画范围，并演示了Split Text动画、CSS Grid + SVG构建响应式网站等实战手法。",
+      "quote": "终于有人把装逼和实用分开了——动画为了沟通，不是为了炫耀CPU。",
+      "source": "CSS-Tricks | 2026-06-22",
+      "url": "https://css-tricks.com/creating-memorable-web-experiences-a-modern-css-toolkit/",
+      "published": "2026-06-23",
+      "uid": "design_50ba8e75"
     },
     {
       "title": "The Hidden Why: Behavioral Economics for UX",
