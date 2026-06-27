@@ -1,0 +1,164 @@
+[
+  {
+    "title": "OpenAI 预览 GPT-5.6 系列：Sol、Terra 与 Luna 三款模型登场",
+    "content": "OpenAI 宣布开始限量预览 GPT-5.6 系列模型，包括旗舰级 Sol、日常平衡型 Terra 以及低成本快速型 Luna。Sol 在 Terminal-Bench 2.1 编程基准和 GeneBench v1 基因组学分析上均达到新 SOTA，网络安全能力大幅提升，配备分层安全防护机制，包括实时分类器审查和账户级滥用检测。Terra 以 GPT-5.5 一半的成本提供相近表现。该系列将逐步向公众开放。",
+    "quote": "GPT-5.6 Sol 来了，但你先别急着用——政府审核完才轮到你。",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+    "published": "2026-06-28",
+    "uid": "ai_a3f8c91d"
+  },
+  {
+    "title": "DeepSeek 开源 DSpark：全栈推测解码加速框架",
+    "content": "DeepSeek 发布 DeepSpec 全栈代码库，支持训练和评估推测解码（Speculative Decoding）的草稿模型。其核心算法 DSpark 通过草稿模型预测目标模型的 token 序列以大幅加速推理。代码库包含数据处理、训练和评测脚本，支持 Qwen3 和 Gemma 等主流目标模型，默认配置需 8 卡 GPU，在 Hacker News 引发热议。",
+    "quote": "推理加速的开源方案又多了一个真香选择，DeepSeek 的代码库果然比财报好看。",
+    "source": "GitHub/DeepSeek",
+    "url": "https://github.com/deepseek-ai/DeepSpec",
+    "published": "2026-06-28",
+    "uid": "ai_b7e2f43a"
+  },
+  {
+    "title": "Anthropic 推出 Claude Tag：AI Agent 深度集成 Slack 工作流",
+    "content": "Anthropic 发布 Claude Tag，让 Claude 以团队成员身份加入 Slack 频道。用户可直接 @Claude 分配代码合并、数据分析、销售数据查询等任务。Claude 能记住频道上下文、异步执行任务并主动推送更新。据 Anthropic 介绍，其产品团队 65% 的代码由内部版 Claude Tag 创建。该功能以 Beta 形式面向 Enterprise 和 Team 客户开放。",
+    "quote": "65% 的代码是 AI 写的？Anthropic 的产品团队怕不是只剩一个审核 button 了。",
+    "source": "Anthropic",
+    "url": "https://anthropic.com/news/introducing-claude-tag",
+    "published": "2026-06-28",
+    "uid": "ai_c5129e87"
+  },
+  {
+    "title": "ElevenLabs 集成 Google DeepMind SynthID 水印，AI 音频可溯源",
+    "content": "AI 音频平台 ElevenLabs 宣布采用 Google DeepMind 的 SynthID 不可听水印技术，嵌入所有 AI 生成的文本转语音音频中。该水印在剪辑、变速、元数据剥离或格式转换后仍可检测，用户可通过 ElevenLabs Audio Detector 免费验证音频来源。这一举措旨在应对 AI 语音深度伪造风险，首批向免费用户开放，数周内覆盖所有音频类型。",
+    "quote": "AI 语音终于有了'隐形纹身'，但这玩意儿能挡住多少别有用心的人？",
+    "source": "ElevenLabs",
+    "url": "https://elevenlabs.io/blog/synthid",
+    "published": "2026-06-28",
+    "uid": "ai_d8ef76b2"
+  },
+  {
+    "title": "近 400 家地方报纸联合起诉 OpenAI 和微软侵犯版权",
+    "content": "由近 400 家美国地方报纸组成的联盟对 OpenAI 和微软提起集体诉讼，指控两家公司未经授权爬取、复制并消化其新闻报道用于 AI 模型训练。该诉讼进一步扩大了 AI 版权争议的版图，此前 OpenAI 已面临纽约时报、Ziff Davis、Merriam-Webster 等机构的诉讼。原告要求法院确认 AI 训练中未经许可使用新闻内容构成侵权。",
+    "quote": "400 家报纸一起告 OpenAI，这下 ChatGPT 写新闻的时候怕是要多点'不确定来源'了。",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence",
+    "published": "2026-06-28",
+    "uid": "ai_e1f03c5a"
+  },
+  {
+    "title": "AI 学会设计射频芯片：普林斯顿用强化学习突破芯片设计瓶颈",
+    "content": "IEEE Spectrum 报道普林斯顿大学研究团队利用强化学习和逆向设计方法，让 AI 从零开始设计射频集成电路（RFIC）。AI 设计的芯片布局看起来像抽象艺术，但物理原型在性能上超越了手工设计，而设计时间仅为人类工程师的数百分之一。该技术有望打破 RF 芯片设计的'黑暗艺术'瓶颈，推动 5G/6G、量子通信和自动驾驶发展。",
+    "quote": "AI 设计的芯片丑得像抽象画但性能吊打人类，工程师们是哭还是笑？",
+    "source": "IEEE Spectrum",
+    "url": "https://spectrum.ieee.org/ai-radio-chip-design",
+    "published": "2026-06-28",
+    "uid": "ai_f4720db1"
+  },
+  {
+    "title": "Superhuman 收购 GPTZero 打造 AI 内容真实性平台",
+    "content": "Superhuman（原 Grammarly 重组后的公司）宣布收购 AI 内容检测平台 GPTZero。GPTZero 的检测引擎将集成到 Superhuman Go AI 助手中，覆盖 100 万个应用和网站。该收购旨在打造内容真实性层，解决 AI 生成内容泛滥问题——目前互联网上 AI 生成的在线文章数量已与人类持平，预计五年内互联网将 100% 由 AI 生成。",
+    "quote": "Grammarly 把 GPTZero 收了，以后写东西自己都不知道是人写的还是 AI 写的。",
+    "source": "Superhuman",
+    "url": "https://blog.superhuman.com/superhuman-to-acquire-gptzero/",
+    "published": "2026-06-28",
+    "uid": "ai_058a39e4"
+  },
+  {
+    "title": "Meta 拒绝向美国政府提交 AI 模型审查，白宫施压",
+    "content": "据报道，Meta 仍未同意让美国政府审查其 AI 模型。白宫官员正向 Meta 施压，要求其提交模型进行安全评估，而 OpenAI、Anthropic、Google、微软和 xAI 均已签署类似协议。Meta 发言人表示'正在敲定细节，希望尽快签署'。此举引发了对开源 AI 模型安全审查政策分歧的广泛讨论。",
+    "quote": "扎克伯格：我家的模型我负责。白宫：你负责得起吗？",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence",
+    "published": "2026-06-28",
+    "uid": "ai_16c48d70"
+  },
+  {
+    "title": "Cate Blanchett 发起'人类同意登记处'：AI 使用你的肖像需获授权",
+    "content": "由 Cate Blanchett 创立的非营利组织 RSL Media 正式开放'人类同意登记处'（Human Consent Registry），允许个人设定 AI 系统如何使用其姓名、形象、声音和动作的条款。用户可选择禁止、有条件允许或完全允许 AI 使用。平台还将支持个人设定创意作品、角色和商标的 AI 使用规则，旨在将身份视为知识产权进行保护。",
+    "quote": "大魔王 Blanchett 搞了个'人类同意登记处'，但 AI 公司会乖乖遵守吗？",
+    "source": "RSL Media",
+    "url": "https://registry.rslmedia.org/",
+    "published": "2026-06-28",
+    "uid": "ai_279a51df"
+  },
+  {
+    "title": "Google 让 Gemini 一键修复 Sheets 公式错误",
+    "content": "Google 宣布在 Sheets 中集成 Gemini AI 新功能：当用户遇到公式错误时，点击'修复'按钮即可让 Gemini 分析数据结构并提供修正版本。该功能支持从基础算术到复杂计算的全范围公式调试，无需人工解析错误信息或搜索外部论坛。即日起向 Business Standard/Plus、Enterprise 等用户逐步开放。",
+    "quote": "Google Sheets 公式报错终于不用靠玄学和 Stack Overflow 了。",
+    "source": "Google Workspace",
+    "url": "https://workspaceupdates.googleblog.com/2026/06/troubleshoot-formula-errors-in-sheets.html",
+    "published": "2026-06-28",
+    "uid": "ai_380bf62c"
+  },
+  {
+    "title": "Meta 监督委员会要求下架 AI 生成的性化深度伪造视频",
+    "content": "Meta 监督委员会就一起 AI 生成性化深度伪造案件做出裁决，推翻了 Meta 不删除帖子的决定。视频使用 AI 伪造一名女性形象并发布在 Instagram 上，Meta 最初称无迹象表明被侵犯真实性。委员会判定 AI 生成的冒充内容默认为非自愿，并要求 Meta 强化对非公众人物的保护，无需受害者自行举报即可启动审查。",
+    "quote": "Meta 的审核机制：假视频放上去没事，真视频可能倒是被删了。",
+    "source": "Meta Oversight Board",
+    "url": "https://www.oversightboard.com/news/non-public-figures-need-more-protection-over-sexualized-deepfakes/",
+    "published": "2026-06-28",
+    "uid": "ai_49cb07e3"
+  },
+  {
+    "title": "Meta 因内部数据泄露暂停员工 AI 追踪工具",
+    "content": "Business Insider 曝出 Meta 内部 AI 培训项目的敏感数据可被全公司访问，包括员工私人对话、绩效数据和转录记录。Meta 在声明中表示已暂停该项目并展开调查。该工具此前用于收集员工数据训练 AI 代理，引发广泛隐私争议。白宫官员也对 Meta 的数据管理方式表示担忧。",
+    "quote": "Meta 想用监控员工的数据训练 AI，结果 AI 还没学会，数据先泄露了。",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence",
+    "published": "2026-06-28",
+    "uid": "ai_5ad819f4"
+  },
+  {
+    "title": "REI 因 Meta AI 工具生成劣质广告引发争议",
+    "content": "户外零售商 REI 在 Instagram 上的 AI 广告引发争议——Meta 的 AI 个性化工具将供应商提供的原始图像生成了不准确且不恰当的版本。REI 表示无奈，称 Meta 自动将其纳入 AI 工具导致广告失真。此事再次引发公众对 AI 广告生成工具的质疑，Meta 被指责在未充分告知的情况下改变品牌广告内容。",
+    "quote": "REI 说广告图是 Meta AI 自作主张改的，这锅甩得挺高级。",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence",
+    "published": "2026-06-28",
+    "uid": "ai_6be94a05"
+  },
+  {
+    "title": "ExploitGym 基准测试发布：AI 代理攻防能力面临全面评估",
+    "content": "由 UC Berkeley、Google、OpenAI 等机构联合发布的 ExploitGym 基准测试揭示，前沿 AI 模型已具备将漏洞转化为实际攻击的能力。测试涵盖 898 个真实世界漏洞实例，涵盖用户空间程序、Google V8 引擎和 Linux 内核。结果显示 Anthropic Claude Mythos Preview 成功利用 157 个、GPT-5.5 成功利用 120 个漏洞，AI 网络安全风险正在加速上升。",
+    "quote": "AI 学会自己找漏洞利用了，网络安全工程师的头发怕是又要掉不少。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2605.11086",
+    "published": "2026-06-28",
+    "uid": "ai_7cfa5b61"
+  },
+  {
+    "title": "Claude 服务中断数小时，用户经历大面积降级",
+    "content": "Anthropic 的 Claude 遭遇重大服务中断，Down Detector 记录到大量用户报告无法访问。Anthropic 官方在约 10:25 ET 确认问题已定位并在修复中。讽刺的是，其状态仪表板显示此类中断已非首次。此次中断影响了依赖 Claude 进行工作的企业和个人用户，也引发了对 AI 服务可靠性的讨论。",
+    "quote": "Claude 又崩了——这已经不是新闻了，哪天 Claude 不崩才是新闻。",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence",
+    "published": "2026-06-28",
+    "uid": "ai_8deba131"
+  },
+  {
+    "title": "Mark Zuckerberg 对举报人的'战争'持续升级",
+    "content": "Cory Doctorow 在文章中详细记录了 Zuckberg 对举报人日益升级的打压策略，包括索赔 1.11 亿美元并要求举报人永远保持沉默。同时 Meta 正计划将 Facebook 转型为体育博彩平台，进军预测市场领域。随着白宫 AI 政策审查和深度伪造争议不断，Zuckerberg 的领导力正面临多方质疑。",
+    "quote": "Zuckerberg 一边跟白宫对着干不交模型审查，一边让 Facebook 转型博彩网站，不愧是你。",
+    "source": "Pluralistic",
+    "url": "https://pluralistic.net/2026/06/27/zuckerstreisand-2/",
+    "published": "2026-06-28",
+    "uid": "ai_9efcb242"
+  },
+  {
+    "title": "People Inc. CEO 警告将与 Google 就 AI 爬虫正面交锋",
+    "content": "People Inc.（原 Dotdash Meredith）CEO Neil Vogel 在接受 Axios 采访时表示，虽然公司已与 Meta、OpenAI 和微软签署 AI 授权协议，但无法阻止 Google 的 AI 爬虫，因为其与搜索引擎使用的是同一爬虫。Vogel 直言'希望与 Google 进行建设性合作，但很可能走向对抗而非共赢'，反映出版商与科技巨头在 AI 数据获取上的深层矛盾。",
+    "quote": "开放平台给 Google 爬虫用，现在爬虫变了味，内容方终于知道什么叫搬起石头砸自己的脚。",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence",
+    "published": "2026-06-28",
+    "uid": "ai_a0f0d363"
+  },
+  {
+    "title": "白宫与 AI 行业僵局恐影响美国 AI 竞争力",
+    "content": "据报道，美国政府与 AI 行业之间的紧张关系持续升级。OpenAI 在发布 GPT-5.6 Sol 时罕见配合政府要求进行限量预览，但其声明明确表示'不希望这种政府审查成为长期常态'。Meta 则拒绝签署政府 AI 审查协议，形成鲜明对比。分析人士警告白宫若无法与业界达成共识，将严重削弱美国在全球 AI 竞赛中的领先地位。",
+    "quote": "美国 AI 政策：OpenAI 妥协、Meta 反抗、白宫卡在中间，好一出三国演义。",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence",
+    "published": "2026-06-28",
+    "uid": "ai_b1a2e484"
+  }
+]

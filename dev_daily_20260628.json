@@ -1,0 +1,137 @@
+[
+  {
+    "title": "DeepSeek 开源 DSpark：投机解码加速 LLM 推理，登顶 Hacker News",
+    "content": "DeepSeek 发布 DeepSpec 全栈代码库及 DSpark 投机解码算法，通过训练小型 draft 模型加速大模型推理。论文显示 DSpark 在 GSM8K、HumanEval 等多个基准上显著提升推理吞吐量，代码库自带训练和评估流程，支持 Qwen3 和 Gemma 等目标模型。项目在 Hacker News 获得 669 个点赞，引发社区广泛讨论。",
+    "quote": "大模型卷不动参数了就开始卷解码——DeepSeek 这波开源属于给同行留作业。",
+    "source": "Hacker News",
+    "url": "https://github.com/deepseek-ai/DeepSpec",
+    "published": "2026-06-28",
+    "uid": "dev_a1b2c3d4"
+  },
+  {
+    "title": "美国政府将决定谁能使用 GPT-5.6 Sol，OpenAI 接受出口管制",
+    "content": "OpenAI 预览其下一代模型 GPT-5.6 Sol，但美国政府宣布将对用户进行严格审查，只允许通过批准的合作伙伴使用。华盛顿邮报报道称，OpenAI 同意美国政府作为'守门人'来审核用户资质，以防止模型被滥用。这一先例引发了对 AI 行业监管走向的广泛担忧，Hacker News 上获得 1134 个点赞。",
+    "quote": "OpenAI 用实际行动证明：真正的'AI 对齐'是对齐美国政府。",
+    "source": "华盛顿邮报",
+    "url": "https://www.washingtonpost.com/technology/2026/06/26/openai-says-us-government-will-vet-users-its-latest-ai-model/",
+    "published": "2026-06-28",
+    "uid": "dev_e5f6a7b8"
+  },
+  {
+    "title": "Anthropic 最强模型 Mythos 获美国政府放行，向 100+ 美国机构开放",
+    "content": "美国商务部周五解除了对 Anthropic Claude Mythos 5 模型的封锁，允许向超过 100 家美国机构（包括大型企业和政府机构）开放。此前美国政府因担心模型被'越狱'用于恶意目的而实施出口管制。Commerce Secretary Howard Lutnick 在信中认定 Anthropic 已建立适当的安全保障措施。",
+    "quote": "Mythos 从'太危险不能放'到'够安全能用'，只隔了一张政府批文。",
+    "source": "Semafor",
+    "url": "https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies",
+    "published": "2026-06-28",
+    "uid": "dev_c9d0e1f2"
+  },
+  {
+    "title": "匿名 GitHub 账号批量释放未公开 0day 漏洞，安全社区震动",
+    "content": "一个名为 'bikini/exploitarium' 的匿名 GitHub 账号开始大规模释放未公开的 0day 漏洞利用代码，引发安全社区高度关注。该仓库发布了一系列此前未被披露的漏洞利用程序，涉及多个主流软件和框架。Hacker News 上该项目获得 374 个点赞和 156 条评论，安全从业者正在紧急评估受影响范围。",
+    "quote": "有人把 0day 当糖豆撒——GitHub 又成了潘多拉魔盒的盖子。",
+    "source": "Hacker News",
+    "url": "https://github.com/bikini/exploitarium",
+    "published": "2026-06-28",
+    "uid": "dev_g3h4i5j6"
+  },
+  {
+    "title": "Google Labs 发布 DESIGN.md 规范：让 AI 编码代理读懂设计系统",
+    "content": "Google Labs 发布 DESIGN.md 格式规范，允许开发者以结构化的 YAML 前端元数据加 Markdown 说明文本来描述视觉设计系统。AI 编码代理可读取该文件获取设计令牌（颜色、排版、间距等）及设计决策理由。该项目发布后迅速登顶 GitHub 趋势榜，单日获得 1500+ 星标，被视为 AI 辅助开发工作流的重要基础设施。",
+    "quote": "以前是人学设计系统，现在是告诉 AI 设计系统长什么样——Google 这波格局打开。",
+    "source": "GitHub",
+    "url": "https://github.com/google-labs-code/design.md",
+    "published": "2026-06-28",
+    "uid": "dev_k7l8m9n0"
+  },
+  {
+    "title": "Simplex-Chat 登顶 GitHub 趋势：首个无需用户标识的隐私通信网络",
+    "content": "Simplex-Chat 在 GitHub 上单日获得 1470 星标，成为当日最热项目。Simplex 是第一个不需要任何用户标识符的通信网络，实现了 100% 隐私保护。项目使用 Haskell 编写，提供 iOS、Android 和桌面应用，采用双重棘轮端到端加密，能保护通信元数据——即用户和谁在何时通信的信息也不暴露。",
+    "quote": "连元数据都不给你留——Simplex 这波是把隐私党的命根子焊死了。",
+    "source": "GitHub",
+    "url": "https://github.com/simplex-chat/simplex-chat",
+    "published": "2026-06-28",
+    "uid": "dev_o1p2q3r4"
+  },
+  {
+    "title": "开源 LLM 追赶闭源模型的时间线分析：六个月内可能持平？",
+    "content": "blog.doubleword.ai 发表深度分析，通过 Artificial Analysis 智能指数追踪开源 LLM 与闭源模型的能力差距。数据显示开源模型在编程基准上已从落后 15 个月缩小到仅 1-2 个月，但平均到其他基准则差距稳定在 5 个月左右。文章预测如果只看综合指数，开源可能于 2026 年 12 月 3 日追平闭源模型。",
+    "quote": "开源 LLM 追闭源就像减肥——编程能力先瘦了，其他部位还在跟屁股较劲。",
+    "source": "DoubleWord",
+    "url": "https://blog.doubleword.ai/frontier-os-llm",
+    "published": "2026-06-28",
+    "uid": "dev_s5t6u7v8"
+  },
+  {
+    "title": "AI 学会了射频芯片设计的'黑暗艺术'，设计速度远超人类",
+    "content": "IEEE Spectrum 报道普林斯顿大学研究团队使用强化学习和逆向设计方法，让 AI 自主设计射频集成电路。AI 设计的芯片在性能上达到甚至超越人类专家设计的水平，而设计时间缩短了几个数量级。研究使用扩散模型快速生成新颖且可解释的射频布局，部分成果已发表在 Nature 子刊上。",
+    "quote": "芯片设计这行最玄学的部分终于被 AI 啃下来了——硬件工程师的头发白掉了。",
+    "source": "IEEE Spectrum",
+    "url": "https://spectrum.ieee.org/ai-radio-chip-design",
+    "published": "2026-06-28",
+    "uid": "dev_w9x0y1z2"
+  },
+  {
+    "title": "CVE-2026-LGTM：AI 安全防线集体翻车的讽刺性供应链攻击事件",
+    "content": "安全研究员披露了一场讽刺性供应链攻击：一个恶意 npm 包成功通过了 7 个独立的 AI 驱动安全检测关卡，每个关卡都以不同方式失败——有的被隐藏注释欺骗，有的遇到尴尬内容拒绝描述，有的耗尽上下文窗口，有的被 AI 自动回复关闭 issue。最终靠人类肉眼看代码才发现问题。Hacker News 上获得 568 个点赞。",
+    "quote": "AI 安全防线防了个寂寞——最后还得靠人眼识破，这波 AI 泡沫实锤了。",
+    "source": "Nesbitt.io",
+    "url": "https://nesbitt.io/2026/06/26/incident-report-cve-2026-lgtm.html",
+    "published": "2026-06-28",
+    "uid": "dev_a3b4c5d6"
+  },
+  {
+    "title": "Fission AI 开源 OpenSpec：专为 AI 编码助手设计的规范驱动开发框架",
+    "content": "Fission AI 的 OpenSpec 项目在 GitHub 上持续火爆，累计获得超过 5.7 万星标。OpenSpec 实现了规范驱动开发模式，让开发者以结构化规范文件引导 AI 编码助手生成符合预期的代码。项目使用 TypeScript 编写，提供完整的规范和模板系统，被视为 AI 辅助开发从'提示词工程'走向'规范工程'的标志性项目。",
+    "quote": "规范驱动开发终于有了正经工具——以后写代码先写规格说明书成为标准操作。",
+    "source": "GitHub",
+    "url": "https://github.com/Fission-AI/OpenSpec",
+    "published": "2026-06-28",
+    "uid": "dev_e7f8g9h0"
+  },
+  {
+    "title": "OpenRA 开源即时战略引擎再次引发关注，经典 RTS 重生",
+    "content": "OpenRA 项目在 Hacker News 上获得 392 个点赞。这个开源项目重新实现了经典即时战略游戏（如《红色警戒》和《命令与征服》）的游戏引擎，支持现代操作系统和高分辨率显示。项目持续维护多年，社区活跃，近期更新包括更好的 Mod 支持和网络对战体验优化。",
+    "quote": "EA 把经典 RTS 埋了，OpenRA 又给刨出来擦了擦灰——开源社区才是真正的游戏守护者。",
+    "source": "Hacker News",
+    "url": "https://www.openra.net/",
+    "published": "2026-06-28",
+    "uid": "dev_i1j2k3l4"
+  },
+  {
+    "title": "Framework 10G 以太网模块实测：USB-C 接口复杂性暴露无遗",
+    "content": "知名硬件博主 Jeff Geerling 实测了 WisdPi 为 Framework 笔记本电脑设计的 10G 以太网扩展卡。结果显示性能受 USB-C 标准碎片化严重影响：同一模块在不同 Framework 机型上表现差异巨大，从 7 Gbps 到 9.4 Gbps 不等，且模块温度接近 70°C。本质问题是 USB-C 协议对 USB 3.2 Gen 2x2 的支持参差不齐。",
+    "quote": "USB-C 接口的统一梦想碎了一地——Framework 用 10G 网卡告诉了大家什么叫名不副实。",
+    "source": "Jeff Geerling 博客",
+    "url": "https://www.jeffgeerling.com/blog/2026/framework-10g-ethernet-module-usb-c-complexity/",
+    "published": "2026-06-28",
+    "uid": "dev_m5n6o7p8"
+  },
+  {
+    "title": "Fintech Engineering Handbook 发布：金融科技工程实践系统性梳理",
+    "content": "一份名为 Fintech Engineering Handbook 的系统性工程实践指南在 Hacker News 上获得 359 个点赞和广泛好评。该手册涵盖金融科技领域的架构设计、数据模型、合规处理、支付系统、风控策略等核心主题，为金融科技工程师提供了一站式的知识参考。作者以清晰的工程视角而非业务视角来组织内容。",
+    "quote": "金融科技终于有人写工程向手册了——不是教你怎么赚钱，是教你怎么不崩。",
+    "source": "Hacker News",
+    "url": "https://w.pitula.me/fintech-engineering-handbook/",
+    "published": "2026-06-28",
+    "uid": "dev_q9r0s1t2"
+  },
+  {
+    "title": "Beer CSS 登顶热点：用 Material Design 快速构建美观界面",
+    "content": "开源 CSS 框架 Beer CSS 在 Hacker News 上获得 111 个点赞。该框架旨在让开发者以最快的速度构建 Material Design 风格的界面，无需复杂配置。框架提供了丰富的组件库和布局系统，兼容主流前端框架，特别适合中小型项目快速原型开发。",
+    "quote": "又一个 CSS 框架诞生了——前端框架比 JS 框架还多，选型恐惧症患者已放弃治疗。",
+    "source": "Hacker News",
+    "url": "https://www.beercss.com",
+    "published": "2026-06-28",
+    "uid": "dev_u3v4w5x6"
+  },
+  {
+    "title": "Manticore Search 实现更快 KNN 搜索：双通道 HNSW + AVX-512",
+    "content": "Manticore Search 搜索引擎发布了大幅优化的 KNN（K 近邻）搜索功能，通过双通道 HNSW 算法、批量距离计算和 AVX-512 指令集加速，显著提升了向量搜索性能。这一改进使得 Manticore 在混合搜索（全文 + 向量）场景下更具竞争力，为开发者提供了高性能的本地搜索解决方案。",
+    "quote": "搜索引擎也卷向量了——Manticore 这波优化证明全文搜索和向量搜索终于能好好过日子了。",
+    "source": "Medium",
+    "url": "https://medium.com/@s_nikolaev/faster-knn-search-in-manticore-2-pass-hnsw-batched-distances-and-avx-512-b85604647aab",
+    "published": "2026-06-28",
+    "uid": "dev_y7z8a9b0"
+  }
+]
