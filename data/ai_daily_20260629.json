@@ -1,0 +1,128 @@
+[
+  {
+    "title": "OpenAI 发布 GPT-5.6 三模型家族 Sol/Terra/Luna，仅限美国政府授权合作伙伴使用",
+    "content": "OpenAI 正式发布 GPT-5.6 系列，包含三个变体：Sol（复杂编码和安全研究）、Terra（高吞吐商业任务）和 Luna（最快最低成本，接近 GPT-5.5 水平）。因特朗普 6 月 2 日行政令要求政府评估 AI 模型安全性，目前仅限约 20 家授权组织访问，全面开放需等到 7 月 2 日后。此前美国刚对 Anthropic 也发布了类似出口管制指令。",
+    "quote": "五角大楼看门，OpenAI 的新模型只给 20 家组织摸——不是饥饿营销，是美国政府说了算。",
+    "url": "https://venturebeat.com/technology/openai-unveils-gpt-5-6-sol-terra-and-luna-models-but-only-accessible-to-limited-preview-partners-for-now-per-us-gov",
+    "source": "VentureBeat",
+    "published": "2026-06-29",
+    "uid": "eb8b2f8bf37d4ebd9dbbf5f3aa011eae"
+  },
+  {
+    "title": "Claude Code 把每个工程师变成了三个人，现在公司缺的是产品思考者",
+    "content": "Anthropic 增长团队正在扩招产品经理而非裁撤——因为 Claude Code 已使其工程团队以三倍实际人头数的速度交付代码。软件开发的瓶颈已从 IDE 和编码能力转移到「决定做什么」的决策层。Stack Overflow 新问题量自 ChatGPT 发布以来暴跌 77%，工程师的角色正从码农加速转变为 AI 输出编辑者和产品决策者。",
+    "quote": "Anthropic 说代码 AI 写了——那卡在哪？卡在没人想清楚要写什么。",
+    "url": "https://venturebeat.com/infrastructure/claude-code-turned-every-engineer-into-three-now-companies-need-more-product-thinkers",
+    "source": "VentureBeat",
+    "published": "2026-06-29",
+    "uid": "58d1b012a2bfaac3d0492fee279b2d43"
+  },
+  {
+    "title": "MRAgent 新框架将 AI Agent 内存 token 消耗压缩 27 倍，获 ICML 2026 接收",
+    "content": "新加坡国立大学研究者提出 MRAgent 框架，采用 Cue-Tag-Content 关联图结构和「主动记忆重构」机制，让 LLM 在推理过程中动态访问和剪枝记忆路径，取代传统静态检索。在 LoCoMo 和 LongMemEval 基准上改进达 23%，token 消耗降至 LangMem 的 1/27，运行时减半。该工作被 ICML 2026 接收。",
+    "quote": "大模型的记忆问题终于有人从底层改了——不是塞更多 token，而是让模型学会想起来而不是搜出来。",
+    "url": "https://venturebeat.com/orchestration/new-agentic-memory-framework-uses-118k-tokens-per-query-langmem-burns-through-3-26m",
+    "source": "VentureBeat",
+    "published": "2026-06-29",
+    "uid": "1b33e0b30b70cb59ebfeb51fa53f3a9c"
+  },
+  {
+    "title": "Liquid AI 发布仅 2.3 亿参数的 LFM2.5-230M：击败四倍大的模型，手机和树莓派都能跑",
+    "content": "Liquid AI（MIT 孵化）发布 LFM2.5-230M，在数据提取任务上击败阿里 Qwen3.5-0.8B 和 Google Gemma 3 1B。采用 LFM2 混合架构，支持 32K 上下文，内存占地低于 400MB。在三星 S25 Ultra 上达 213 tokens/s，树莓派 5 上也维持 42 tokens/s。年收入低于 1000 万美元的企业和个人免费商用。",
+    "quote": "当巨头们卷千亿参数军备竞赛时，Liquid AI 用 2.3 亿参数在手机上跑出了能用的 AI——有时候小才是美。",
+    "url": "https://venturebeat.com/technology/liquid-ais-smallest-model-yet-lfm2-5-230m-beats-models-4x-its-size-at-data-extraction-can-run-anywhere",
+    "source": "VentureBeat",
+    "published": "2026-06-29",
+    "uid": "dd02477b656280ddc8bba0a82f4d65c7"
+  },
+  {
+    "title": "Google 限制 Meta 的 Gemini 使用量：AI 算力饥荒暴露基础设施瓶颈",
+    "content": "Financial Times 和 The Verge 报道，Google 因算力供给紧张已对 Meta 等大客户设置 Gemini 模型使用上限。尽管 Google 已投入数百亿美元建设数据中心和芯片基础设施，但 AI 算力需求增长远超供给能力。连 Meta 这种级别的玩家都在为云 AI 服务的容量发愁，暴露出 AI 行业深层次的基础设施压力。",
+    "quote": "连 Meta 这种千亿营收巨头都被 Google 限流了——AI 算力的饥饿游戏里，有钱也买不到米。",
+    "url": "https://www.ft.com/content/c5d52f72-71ef-40bc-bad3-61afdba8b378",
+    "source": "The Verge",
+    "published": "2026-06-29",
+    "uid": "bd9c4a4d73a1a9a2515d99f9360bb7b3"
+  },
+  {
+    "title": "用户用 Claude Code + Opus 4.8 分析 MRI 获得第二意见，发现诊所过度诊疗",
+    "content": "一位右肩疼痛患者用 Claude Code 中的 Opus 4.8 分析了自己的 MRI DICOM 影像（266MB），AI 不仅正确解读了「肩胛下肌腱 III 级部分撕裂」的诊断，还发现了诊所的两项过度治疗：在无钙化情况下进行冲击波治疗（违反临床指南）和注射顺势疗法药物（无治疗适应症）。该案例登上 Hacker News 热榜引热议。",
+    "quote": "用 AI 读 MRI 发现诊所乱收费——这剧本比医院投诉热线好使，但出了事谁负责？FDA 还在一脸懵。",
+    "url": "https://antoine.fi/mri-analysis-using-claude-code-opus",
+    "source": "Hacker News",
+    "published": "2026-06-29",
+    "uid": "63ac3f7309b41e92c6d541713ea7a832"
+  },
+  {
+    "title": "Google 25 年来首次重新设计搜索框：从关键词输入到多模态 AI 对话起点",
+    "content": "Google 在 I/O 2026 大会上宣布搜索框历史性改版——25 年来首次重塑这一标志性界面。新搜索框不再是简单文字输入条，而是一个支持文本、图片、PDF、视频甚至 Chrome 标签作为输入的 AI 对话启动器，同时将 AI Overviews 和 AI Mode 合并为无缝搜索体验。Google 搜索副总裁称这是「自搜索框诞生以来最大的升级」。",
+    "quote": "Google 终于把那根 25 年没变的白条改了——不是改 UI，是告诉世界搜索的终点是 AI 对话。",
+    "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
+    "source": "VentureBeat",
+    "published": "2026-06-29",
+    "uid": "f856e59f3355328f7f73cec629cb04bb"
+  },
+  {
+    "title": "OpenAI 更新 GPT-5.5 Instant：更会聊天更懂购物，但未提供任何基准数据",
+    "content": "OpenAI 发布 GPT-5.5 Instant 重大更新，称其「聊起来更有趣」「更懂用户意图」「购物和本地推荐结果大幅改善」。该模型不到两个月前才从 GPT-5.3 Instant 升级（减少了 52.5% 幻觉率）。然而本次升级 OpenAI 未提供任何量化基准数据。新版本先推送给付费用户后覆盖免费用户，chat-latest API 别名也已同步更新。",
+    "quote": "OpenAI 说新版模型更好用了——但一个基准数据都不给，跟餐厅说今天的菜更好吃但菜单一样有啥区别。",
+    "url": "https://venturebeat.com/technology/openais-updated-gpt-5-5-instant-is-better-at-shopping-complex-constraints-and-understanding-user-intent-and-its-already-in-the-api",
+    "source": "VentureBeat",
+    "published": "2026-06-29",
+    "uid": "7ca859adc1eb6bedf1455acec5cf3920"
+  },
+  {
+    "title": "AI 时代的软件工程：从码农到 AI 输出编辑者的角色重塑",
+    "content": "一位软件工程师在 HN 上分享对 AI 时代编程的反思。传统工作流已从「需求→设计→编码→测试→文档→评审」简化为「写 prompt→审核 AI 输出→合并」。当 AI 能持续产出代码时，真正的工程能力不再是写代码的速度，而是判断 AI 生成的代码是否正确、安全和适用。",
+    "quote": "当 AI 能写了，会写代码就不值钱了——值钱的是有没有能力判断这段代码该不该合并。",
+    "url": "https://adiamond.me/2026/06/software-engineering-in-the-age-of-ai/",
+    "source": "Hacker News",
+    "published": "2026-06-29",
+    "uid": "a850280369810e4772fb09ceec0b66f9"
+  },
+  {
+    "title": "白宫对峙可能对美国 AI 产业造成严重影响",
+    "content": "The Verge 报道，白宫与国会的长期对峙正在对全美 AI 产业产生连锁反应。预算僵局和 AI 安全立法受阻使初创公司面临监管不确定性加剧的风险。多家 AI 公司表示，政府缺乏明确的 AI 治理框架使得融资和产品规划变得困难。与此同时欧盟 AI Act 已开始执行，中国加速本土 AI 生态建设，美国 AI 产业在政策真空期中面临全球竞争压力。",
+    "quote": "国会和白宫吵架，AI 公司遭殃——监管不明比严格监管更可怕，至少坏规矩比没规矩好。",
+    "url": "https://www.theverge.com/ai-artificial-intelligence",
+    "source": "The Verge",
+    "published": "2026-06-29",
+    "uid": "9d8b9337ef0137cd72347f62788deaf0"
+  },
+  {
+    "title": "大多数公司的 AI 软件工厂只是在更快地制造 Bug",
+    "content": "Faros AI 数据显示随着 AI 辅助编程大规模应用，Bug 和安全事件正在同步激增。许多公司把一堆 Agent、prompt 和插件的松散集合称为「软件工厂」，但缺少平台级质量管控。真正的软件工厂需要明确定义代码从生成到部署的完整流程和审核机制，否则只是在空房间里放几台机器就自称工厂。",
+    "quote": "AI 让写代码快了三倍，也让出 Bug 快了三倍——没有平台和质量体系的软件工厂就是把打字机换成打印机。",
+    "url": "https://venturebeat.com/orchestration/most-companies-think-theyre-building-a-software-factory-theyre-actually-just-shipping-bugs-faster",
+    "source": "VentureBeat",
+    "published": "2026-06-29",
+    "uid": "d328442bf419966bd6594c003a994c56"
+  },
+  {
+    "title": "ElevenLabs 集成 Google SynthID 水印技术：为 AI 生成音频打上隐形标签",
+    "content": "AI 音频平台 ElevenLabs 宣布集成 Google DeepMind 的 SynthID 隐形水印技术，向所有免费用户文字转语音生成内容嵌入不可察觉的数字水印。SynthID Audio Detector 可检测这些标签以帮助识别 AI 生成内容，预计未来几周覆盖全部音频生成。这是在 AI 音频伪造风险日益增加的背景下行业向内容来源透明化迈出的重要一步。",
+    "quote": "AI 音频造假太容易了，给每段 AI 配音打个隐形标签——好人用来防伪，坏人直接换个工具就行。",
+    "url": "https://elevenlabs.io/app/audio-detector",
+    "source": "The Verge",
+    "published": "2026-06-29",
+    "uid": "1e82817ffb59391c2f35ebd10e910bc9"
+  },
+  {
+    "title": "OpenAI Codex 敏感文件排除问题引发 GitHub 热议：开放多时仍未修复",
+    "content": "OpenAI Codex 关于排除敏感文件的功能请求在 GitHub 上持续发酵，获得 146 星和 96 条评论。核心问题在于 Codex 缺乏对 .env、密钥文件、配置文件等的自动排除机制，开发者担心 AI 编码助手可能无意中泄露凭据。该 Issue 开放多时仍未解决，引发社区对 AI 开发工具安全性的广泛关注和讨论。",
+    "quote": "Codex 写代码很快，但可能连你的 .env 密钥一起发给 OpenAI——146 人点赞指出这是个问题，至今没人修。",
+    "url": "https://github.com/openai/codex/issues/2847",
+    "source": "GitHub",
+    "published": "2026-06-29",
+    "uid": "3e652c744557a7506a1cd9ccf7d36983"
+  },
+  {
+    "title": "近 400 家本地报纸联合起诉 OpenAI 和微软：未经授权抓取内容训练 AI",
+    "content": "近 400 家美国本地报纸组成联盟对 OpenAI 和微软发起集体诉讼，指控其未经许可或补偿即大规模抓取报纸内容用于 AI 模型训练。这是迄今最大规模的出版业 AI 版权诉讼，加入了此前纽约时报、Ziff Davis（IGN/CNET/PCMag）、Merriam-Webster 等出版商的法律行动。原告寻求法院认定 AI 公司对受版权保护新闻内容的训练使用构成侵权。",
+    "quote": "400 家报纸一起告 OpenAI——内容被白嫖训练 AI，到头来 AI 还抢了广告收入，这笔账迟早要算。",
+    "url": "https://www.theverge.com/ai-artificial-intelligence",
+    "source": "The Verge",
+    "published": "2026-06-29",
+    "uid": "55b31ec9ccbbb5eba2e4caad82b49870"
+  }
+]
