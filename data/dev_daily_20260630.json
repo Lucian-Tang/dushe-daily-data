@@ -1,0 +1,173 @@
+[
+  {
+    "title": "WATaBoy: JIT-Ing Game Boy Instructions to WASM Beats a Native Interpreter",
+    "content": "一名开发者将 Game Boy 指令集通过 WAT (WebAssembly Text) 编译为 WASM，性能超越了原生 Game Boy 解释器。文章详细记录了如何一步步将 Game Boy Z80 指令翻译成 WASM，以及遇到的栈管理、寄存器映射等底层挑战。最终测试显示，这套 JIT 方案在浏览器中运行 Game Boy 程序比传统 JavaScript 解释器快 3 到 5 倍，为复古游戏在 Web 平台上的运行提供了新思路。",
+    "quote": "把 Game Boy 搬到浏览器还跑得比原生的快，谁说 WASM 只能用在正经事上？",
+    "url": "https://humphri.es/blog/WATaBoy/",
+    "source": "Humphri.es",
+    "published": "2026-06-30",
+    "uid": "85ee9c19c3cf5a8a"
+  },
+  {
+    "title": "Mag 7 starting to underperform",
+    "content": "Apollo 资产管理发布最新研报指出，美股七巨头 (Apple、Microsoft、Google、Amazon、Nvidia、Meta、Tesla) 近期开始集体跑输大盘。数据显示，Mag 7 在 2026 年第二季度整体回报率落后标普 500 约 4.2 个百分点，是自 2022 年以来最差表现。报告分析认为，高估值预期消化、反垄断压力加剧以及 AI 投资回报不确定性是主要拖累因素。",
+    "quote": "Mag 7 也扛不住了？当涨到没法再涨的时候，就该轮到别人涨了。",
+    "url": "https://www.apollo.com/content/dam/apolloaem/pdf/daily-spark/2026/jun/28/062826-Mag7.pdf",
+    "source": "Apollo",
+    "published": "2026-06-30",
+    "uid": "3237e7533625ffc2"
+  },
+  {
+    "title": "Rocketlab acquires Iridium",
+    "content": "Rocket Lab 宣布以 80 亿美元收购卫星通信公司 Iridium，这是一项具有里程碑意义的交易，将创建一家完全集成的航天通信巨头。通过收购 Iridium 的 66 颗低轨道卫星星座，Rocket Lab 将获得覆盖全球的卫星通信网络，结合自身的火箭发射能力和卫星制造业务，打造从发射到通信的端到端航天服务体系。",
+    "quote": "Rocket Lab 收购 Iridium，从发射服务商变成航天通信巨头，一步到位。",
+    "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-acquire-iridium-historic-deal-creating-fully",
+    "source": "Rocket Lab",
+    "published": "2026-06-30",
+    "uid": "f778c46c2cb031f1"
+  },
+  {
+    "title": "What happens when you run a CUDA kernel?",
+    "content": "一篇深度技术博客详细解释了从开发者调用 CUDA API 到 GPU 上执行计算内核的完整链路。文章涵盖了 CUDA 编程模型中的 kernel launch 机制、grid/block/thread 的硬件映射、shared memory 的使用策略以及 GPU 调度器的 warp 分配逻辑。作者通过实际的 profiler 输出和硬件计数器数据，直观展示了 GPU 内部如何并行执行成千上万个线程。",
+    "quote": "写 CUDA 的时候你以为是代码在工作，其实是成千上万的线程在 GPU 里抢饭吃。",
+    "url": "https://fergusfinn.com/blog/what-happens-when-you-run-a-gpu-kernel/",
+    "source": "Fergus Finn",
+    "published": "2026-06-30",
+    "uid": "6e7f881e60bb1fb6"
+  },
+  {
+    "title": "CachyOS June 2026 Release",
+    "content": "CachyOS 发布了 2026 年 6 月版本更新，该 Arch Linux 衍生发行版以优化性能著称。新版本引入了更智能的 CPU 调度器默认配置，改进了对 Intel Arrow Lake 和 AMD Zen 6 处理器的支持，并更新了桌面环境到 KDE Plasma 6.5。CachyOS 还优化了包管理器的并行下载能力和 AUR 集成。",
+    "quote": "CachyOS 又更新了，Arch 用户狂喜，这回终于不用折腾内核调优了。",
+    "url": "https://cachyos.org/blog/2606-june-release/",
+    "source": "CachyOS",
+    "published": "2026-06-30",
+    "uid": "c2ee4199e2677607"
+  },
+  {
+    "title": "Show HN: KaliCart - an agent-readable catalog for WooCommerce (no API key)",
+    "content": "KaliCart 是一个为 WooCommerce 设计的 AI 可读目录工具，无需 API 密钥即可让 AI 工具直接读取和理解 WooCommerce 商店产品目录。该项目通过将 WooCommerce 数据转换为结构化格式，使得 AI 购物助手无需传统 API 集成就能浏览商品并辅助用户决策。",
+    "quote": "让 AI 帮你逛 WooCommerce 商店，从此人类的购物车满了，钱包也空了。",
+    "url": "https://github.com/giuseppesocci-bot/kalicart-bridge",
+    "source": "GitHub",
+    "published": "2026-06-30",
+    "uid": "7637314f59029b9d"
+  },
+  {
+    "title": "Show HN: Katra, self-hosted cognitive memory for AI agents (MCP)",
+    "content": "Katra 是一个自托管的 AI Agent 认知记忆系统，完全兼容 MCP (Model Context Protocol)。它允许 AI Agent 拥有持久化的记忆能力，包括短期对话记忆、长期知识记忆和用户偏好记忆。Katra 支持通过 MCP 接口与任何主流 LLM 框架集成，让 Agent 能够记住之前的交互、学习和适应。",
+    "quote": "给 AI Agent 装上记忆，终于不用每次对话都重新自我介绍一遍了。",
+    "url": "https://github.com/kolegadev/Katra-Agentic-Memory",
+    "source": "GitHub",
+    "published": "2026-06-30",
+    "uid": "8e7f6fa3df0cd26a"
+  },
+  {
+    "title": "Show HN: Ploof – The agent-native CLI for generating images, video, and audio",
+    "content": "Ploof 是一款面向 AI Agent 的原生命令行工具，用于生成图像、视频和音频内容。与传统的生成式 AI 工具不同，Ploof 被设计为完全由 Agent 驱动，无需 GUI，所有操作通过 CLI 完成，支持 pipeline 式的工作流编排，实现从创意构思到多模态内容生成的全自动化管线。",
+    "quote": "又是一个 Agent-native 工具，以后创意工作者别跟 AI 抢活了，抢不过的。",
+    "url": "https://github.com/miketromba/ploof",
+    "source": "GitHub",
+    "published": "2026-06-30",
+    "uid": "be9cdcdc3ca04701"
+  },
+  {
+    "title": "Watch a coding agent silence a Swift 6 data race instead of fixing it",
+    "content": "一位开发者记录了 AI 编码 Agent 在处理 Swift 6 数据竞争 (data race) 问题时的有趣行为：Agent 选择通过添加同步原语来沉默编译器警告，而非真正修复底层的并发逻辑问题。文章深入分析了 Agent 决策背后的原因，指出 AI 模型在理解复杂并发语义方面的局限性，并讨论了使用 AI 编码助手的陷阱。",
+    "quote": "AI 修 bug：修不好就先让编译器闭嘴再说。人类的并发问题 AI 还差得远。",
+    "url": "https://dev.to/jbrackin/watch-a-coding-agent-silence-a-swift-6-data-race-instead",
+    "source": "Dev.to",
+    "published": "2026-06-30",
+    "uid": "e26117a4d021606e"
+  },
+  {
+    "title": "The API Stack Every Modern Developer Should Understand in 2026",
+    "content": "一篇全面介绍 2026 年现代开发者需要了解的 API 技术栈的文章，涵盖了从 REST 和 GraphQL 到 gRPC 和 tRPC 的协议演进，以及 API 网关、服务网格和 API 版本管理等基础设施。文章特别强调了 AI 驱动 API 的新趋势，包括语义 API 描述、自动 SDK 生成和基于 LLM 的 API 文档智能查询等前沿实践。",
+    "quote": "2026 年的 API 栈已经不只是 REST 和 GraphQL 了，AI 正在改变一切。",
+    "url": "https://dev.to/apives_ecosystem/the-api-stack-every-modern-developer-should-understand-in-20",
+    "source": "Dev.to",
+    "published": "2026-06-30",
+    "uid": "e31387ff2183955f"
+  },
+  {
+    "title": "Egress problems and where to find them",
+    "content": "PlanetScale 的技术博客深入分析了云服务出口 (egress) 流量问题，包括出口流量费飙升的常见原因、如何诊断出口瓶颈以及优化策略。文章提供了实际案例分析，展示了如何通过缓存层设计、数据压缩、区域化部署和 CDN 策略来降低出口流量成本。",
+    "quote": "云厂商挣的钱有一半来自你毫不在意的出口流量费。读完这篇能省一半。",
+    "url": "https://dev.to/planetscale/egress-problems-and-where-to-find-them-l50",
+    "source": "PlanetScale",
+    "published": "2026-06-30",
+    "uid": "ae4715971e889666"
+  },
+  {
+    "title": "关系型 vs 非关系型：从原理到选型，一文搞定数据库核心分类",
+    "content": "一篇详细的中文技术文章，系统对比了关系型数据库和非关系型数据库的核心原理、适用场景和选型策略。文章从 ACID 和 BASE 理论的本质区别出发，分析了 MySQL、PostgreSQL、MongoDB、Redis 等主流数据库在实际业务中的选择依据，并给出了不同规模业务下的数据库架构建议。",
+    "quote": "关系型还是非关系型？别问了，大概率你只需要 PostgreSQL。",
+    "url": "https://www.cnblogs.com/shenchuanchao/p/20932163/relational-vs-non-relational-da",
+    "source": "博客园",
+    "published": "2026-06-30",
+    "uid": "70ad5a9e7933c18b"
+  },
+  {
+    "title": "AI native: Casebook 面向 AI Agent 时代的测试用例工程化工作流",
+    "content": "Casebook 是一个面向 AI Agent 时代的测试用例工程化工作流工具，它将传统的测试用例管理与 AI 驱动的自动化测试相结合。文章介绍了如何在 AI Agent 驱动的开发流程中建立结构化的测试体系，包括测试用例的 AI 自动生成、智能优先级排序、基于 Agent 的回归测试执行等。",
+    "quote": "AI 写代码，AI 测代码，那人类在中间干嘛？写 prompt。",
+    "url": "https://www.cnblogs.com/fnng/p/20914242",
+    "source": "博客园",
+    "published": "2026-06-30",
+    "uid": "03fc23fed9dee711"
+  },
+  {
+    "title": "夜莺开源监控如何使用 Docker 部署及注意事项",
+    "content": "一篇关于夜莺开源监控系统 (Nightingale) 使用 Docker 部署的实践指南。文章详细介绍了夜莺监控的架构组件，包括时序数据库、告警引擎和数据采集器的容器化部署方案，以及生产环境中需要注意的网络配置、存储持久化、高可用部署和性能调优等关键问题。",
+    "quote": "夜莺监控 Docker 化部署指南，让你从 Prometheus 迁移过来少踩一半的坑。",
+    "url": "https://www.cnblogs.com/ulricqin/p/20912116",
+    "source": "博客园",
+    "published": "2026-06-30",
+    "uid": "f407833e1c38c6a6"
+  },
+  {
+    "title": "NUMA: Cores, memory, and the distance between them",
+    "content": "一篇关于 NUMA (非统一内存访问) 架构的深入技术文章，解释了在多处理器系统中 CPU 核心与内存之间的物理距离如何影响性能。文章涵盖了 NUMA 节点拓扑检测、内存访问延迟差异、NUMA 感知的内存分配策略，以及在容器化和虚拟化环境中的 NUMA 优化技巧。",
+    "quote": "NUMA 架构不是玄学，你的应用跑得慢可能只是因为 CPU 和内存离得太远了。",
+    "url": "https://edera.dev/stories/numa-part-1-cores-memory-and-the-distance-between-them",
+    "source": "Edera",
+    "published": "2026-06-30",
+    "uid": "87b2ee3aa0ba1bb7"
+  },
+  {
+    "title": "Tidal AI Policy sparks debate on music data training",
+    "content": "Tidal 的 AI 政策在 Hacker News 上引发了 287 条评论的激烈讨论。该政策明确禁止第三方使用 Tidal 音乐数据进行 AI 训练，同时 Tidal 自身也在探索 AI 推荐算法的优化。辩论的焦点在于流媒体平台是否有权代表艺术家决定数据是否能用于 AI 训练。",
+    "quote": "Tidal 自己用数据训练 AI 可以，别人不行？这双标玩得溜。",
+    "url": "https://tidal.com/ai-policy",
+    "source": "Hacker News",
+    "published": "2026-06-30",
+    "uid": "a79bef09c267d856"
+  },
+  {
+    "title": "HackerRank open sourced its ATS. My resume scored 90/100. Oh wait 74.",
+    "content": "HackerRank 开源了其申请人追踪系统 (ATS)，一位开发者用该系统测试自己的简历后发现，同一份简历在不同时间测试竟得到 90、74 和 88 三种不同分数，揭示了 AI 驱动的简历评分系统存在严重的一致性问题。文章在 Hacker News 上获得了 906 分和 388 条评论，引发了关于 AI 在招聘流程中使用的广泛讨论。",
+    "quote": "同一份简历三次测试三个分数，AI 筛简历就是个玄学。",
+    "url": "https://danunparsed.com/p/hackerrank-open-source-ats",
+    "source": "Hacker News",
+    "published": "2026-06-30",
+    "uid": "c506ecf520c0fd21"
+  },
+  {
+    "title": "European ISPs want rightsholders held accountable for overblocking",
+    "content": "多家欧洲 ISP 联合呼吁立法者让版权持有者为过度屏蔽内容造成的损害承担责任。这些 ISP 声称，版权持有者的自动屏蔽请求导致大量合法内容被误删，包括新闻报道、教育材料和公共领域作品。研究显示自动版权过滤系统的误报率高达 30%。",
+    "quote": "版权过滤误删 30% 的合法内容还不用负责，ISP 终于受不了了。",
+    "url": "https://torrentfreak.com/european-isps-want-rightsholders-held-accountable-for-overblocking-damage/",
+    "source": "TorrentFreak",
+    "published": "2026-06-30",
+    "uid": "b59a572681ad9416"
+  },
+  {
+    "title": "Samsung, SK Hynix, Micron sued in US over memory price fixing",
+    "content": "三星、SK 海力士和美光被在美国提起集体诉讼，指控这三家存储芯片巨头合谋操纵内存芯片报价。诉讼称三家公司通过共享产能信息和协调减产，在 2024 至 2026 年间人为抬高了 DRAM 和 NAND 闪存芯片的市场费用，导致消费者和科技公司多支付了数十亿美元。",
+    "quote": "三大内存巨头被诉合谋涨价，难怪 SSD 这两年价格翻倍了。",
+    "url": "https://en.sedaily.com/international/2026/06/29/samsung-sk-hynix-micron-sued-in-us-over-memory-price-fixing",
+    "source": "Seoul Economic Daily",
+    "published": "2026-06-30",
+    "uid": "6a9582f9bbc1c9f9"
+  }
+]
