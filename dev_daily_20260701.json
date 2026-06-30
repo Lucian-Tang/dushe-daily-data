@@ -1,110 +1,146 @@
 [
   {
-    "title": "Claude Code 被发现用隐写术标记生成代码——开发者社区炸了",
-    "content": "HN 热榜 777 分爆文：安全研究员发现 Claude Code 在生成的代码中嵌入隐写标记（steganographic watermark），通过特定空白字符排列来追踪 AI 生成的代码。开发者分两派：一派认为这是负责任的溯源手段，另一派怒斥为'代码投毒'。目前 Anthropic 尚未回应，但 Claude Code 文档中确实提到了'内容溯源'功能。你写的每一行 AI 代码，可能都带了隐形水印。",
-    "quote": "你写的每一行 AI 代码，可能都带了隐形水印。",
-    "url": "https://thereallo.dev/blog/claude-code-prompt-steganography",
-    "source": "thereallo.dev / HN",
+    "title": "County with 37 Data Centers Asks Schools to 'Conserve Electricity'",
+    "content": "County with 37 Data Centers Asks Schools to 'Conserve Electricity'。开发者社区相关讨论。",
+    "quote": "County with 37 Data Centers As",
+    "source": "",
+    "url": "#",
     "published": "2026-07-01",
-    "uid": "6fa49de7bd5e18071daecea47cf0fd60"
+    "uid": "dev_07aae7e3"
   },
   {
-    "title": "Anthropic 称 80% 新生产代码由 Claude 编写——程序员饭碗真要凉？",
-    "content": "Anthropic CTO 在采访中透露：公司 80% 的新生产代码由 Claude 编写，人类工程师主要负责架构设计和 Code Review。这个数字让开发者社区震动——如果连 AI 公司自己都在重度依赖 AI 写码，那普通开发者的未来在哪？但仔细看：他们仍需要人类做架构决策、安全审计和业务逻辑把关。不是替代，是角色迁移。",
-    "quote": "Anthropic 80% 新生产代码由 Claude 编写。不是替代开发者，是角色迁移。",
-    "url": "https://venturebeat.com/technology/anthropic-says-80-of-its-new-production-code-is-written-by-claude/",
-    "source": "VentureBeat",
+    "title": "Scammers Sell Seeds for Exotic AI-Generated Flowers That Don't Exist",
+    "content": "Scammers Sell Seeds for Exotic AI-Generated Flowers That Don't Exist。开发者社区相关讨论。",
+    "quote": "Scammers Sell Seeds for Exotic",
+    "source": "",
+    "url": "#",
     "published": "2026-07-01",
-    "uid": "f95730f5aae71238972023cee29e0dc2"
+    "uid": "dev_0ed4a8a7"
   },
   {
-    "title": "Qwen 3.6 27B：本地开发的最佳甜点模型，1109 分登顶 HN",
-    "content": "阿里 Qwen 3.6 27B 参数模型在 HN 上获得 1109 分，被认为是本地开发的'甜点'模型——足够小而能跑在消费级 GPU 上，又足够强大处理复杂编码任务。支持 128K 上下文、多语言代码生成、兼容 OpenAI API。评测显示在 HumanEval+ 上超越 GPT-4.1，在 MMLU-Pro 上与 Claude Sonnet 持平。一个 27B 模型跑到这个水平，开源生态真的变了。",
-    "quote": "一个 27B 模型跑到这个水平，开源生态真的变了。",
-    "url": "https://quesma.com/blog/qwen-36-is-awesome/",
-    "source": "Quesma / HN",
+    "title": "Zluda 6 release (run unmodified CUDA applications on non-Nvidia GPUs)",
+    "content": "Zluda 6 release (run unmodified CUDA applications on non-Nvidia GPUs)。开发者社区相关讨论。",
+    "quote": "Zluda 6 release (run unmodifie",
+    "source": "",
+    "url": "#",
     "published": "2026-07-01",
-    "uid": "20034a020a7c04eaf9e386c48bdbd889"
+    "uid": "dev_cbe17473"
   },
   {
-    "title": "ZLUDA 6 发布：CUDA 应用终于能在 AMD/Intel GPU 上原生跑了",
-    "content": "ZLUDA 项目发布 v6 版本，实现了在不修改任何 CUDA 源码的情况下，在非 Nvidia GPU（AMD ROCm、Intel oneAPI）上运行 CUDA 应用程序。这个项目曾被 AMD 赞助后又放弃，如今由社区独立维护。v6 大幅提升了兼容性，支持 cuBLAS/cuDNN/cuFFT 等核心库。对买不到 N 卡或想省钱买 A 卡的开发者来说，这是重大利好。",
-    "quote": "不修改一行 CUDA 源码，就能在 AMD/Intel GPU 上跑。这是打破算力垄断的一步。",
-    "url": "https://vosen.github.io/ZLUDA/blog/zluda-update-q1q2-2026/",
-    "source": "ZLUDA / HN",
+    "title": ".self: A new top-level domain designed to support self-hosting",
+    "content": ".self: A new top-level domain designed to support self-hosting。开发者社区相关讨论。",
+    "quote": ".self: A new top-level domain ",
+    "source": "",
+    "url": "#",
     "published": "2026-07-01",
-    "uid": "2f0b02a978386ba414c1492c06d330c8"
+    "uid": "dev_87995dd1"
   },
   {
-    "title": "PostgreSQL 19 前瞻：Snowflake 工程师详解新特性",
-    "content": "Snowflake 工程团队发布 PostgreSQL 19 前瞻文章，详细解读即将到来的新特性：增量备份/还原、并行 VACUUM、OAuth 2.0 认证Provider、以及 JSON_TABLE 语法支持。PG 19 计划 2026 年 9 月发布，目前 Beta 版已可测试。值得关注的是并行 VACUUM——大表维护性能有望提升 5-10 倍。",
-    "quote": "并行 VACUUM 有望让大表维护性能提升 5-10 倍。PG 依然是世界上最可靠的开源数据库。",
-    "url": "https://www.snowflake.com/en/blog/engineering/postgresql-19-features-beta/",
-    "source": "Snowflake Engineering Blog / HN",
+    "title": "usestrix/strix",
+    "content": "usestrix/strix。开发者社区相关讨论。这是一个值得关注的技术话题，推荐阅读原文获取完整信息。",
+    "quote": "usestrix/strix",
+    "source": "",
+    "url": "#",
     "published": "2026-07-01",
-    "uid": "7e4a9385d83f13ac8d4de39084f5b960"
+    "uid": "dev_827bca9e"
   },
   {
-    "title": "欧洲数字身份钱包：去中心化的梦想架在 Google/Apple 地基上",
-    "content": "Waag 研究机构发布长篇调查报告，揭露欧盟力推的数字身份钱包（EUDI Wallet）底层严重依赖 Google SafetyNet 和 Apple Secure Enclave。技术栈上的悖论：号称去中心化的身份系统，关键认证链路全走美国科技巨头。已有开源社区开始讨论替代方案——用纯 WebAuthn + FIDO 标准绕过 Big Tech 依赖。数字主权这场仗，技术实现才是硬骨头。",
-    "quote": "号称去中心化的身份系统，关键认证链路全走美国科技巨头。数字主权，技术实现才是硬骨头。",
-    "url": "https://waag.org/en/article/european-digital-id-wallets-are-gift-google-and-apple/",
-    "source": "Waag Futurelab / HN",
+    "title": "msitarzewski/agency-agents",
+    "content": "msitarzewski/agency-agents。开发者社区相关讨论。这是一个值得关注的技术话题，推荐阅读原文获取完整信息。",
+    "quote": "msitarzewski/agency-agents",
+    "source": "",
+    "url": "#",
     "published": "2026-07-01",
-    "uid": "594f2b68af8c60ec59b14f0c24a4be38"
+    "uid": "dev_f3335a93"
   },
   {
-    "title": "美团开源 LongCat-2.0：1.6T 参数 MoE，全中国芯片训练，登顶 OpenRouter",
-    "content": "美团正式开源 LongCat-2.0，一个 1.6T 总参数（48B 激活）的 MoE 编码模型。最炸裂的细节：完全使用中国芯片训练。模型在 OpenRouter 编程榜单上超越 GPT-5.1 和 Claude Opus 4.5 登顶。LongCat-2.0 以 Apache 2.0 协议开源，支持 128K 上下文。这是中国开源 AI 的一个里程碑。",
-    "quote": "完全使用中国芯片训练的 1.6T 模型登顶 OpenRouter。这是中国开源 AI 的里程碑。",
-    "url": "https://longcat.chat/blog/longcat-2.0/",
-    "source": "LongCat / HN",
+    "title": "大家对于 Anthropic 估值的看法",
+    "content": "大家对于 Anthropic 估值的看法。开发者社区相关讨论。这是一个值得关注的技术话题，推荐阅读原文获取完整信息。",
+    "quote": "大家对于 Anthropic 估值的看法",
+    "source": "",
+    "url": "#",
     "published": "2026-07-01",
-    "uid": "917a4f55e4f62396ef780cb8f4d16ef4"
+    "uid": "dev_94e90a15"
   },
   {
-    "title": "OpenAI 发布 GPT-5.6 Sol/Terra/Luna：美国政府要求仅限 20 家预览",
-    "content": "OpenAI 发布 GPT-5.6 系列三个模型：Sol（旗舰推理）、Terra（多模态）、Luna（高效低成本）。但令人震惊的是——美国政府要求仅限 20 家指定合作伙伴预览访问。这引发了开发者社区对'AI 技术出口管制'的激烈讨论。对于依赖 OpenAI API 的开发者来说，这意味着最先进的模型可能与你无缘，开源替代方案（Qwen/LongCat/DeepSeek）比以往更重要。",
-    "quote": "最先进的 AI 模型可能与你无缘。开源替代方案比以往任何时候都重要。",
-    "url": "https://venturebeat.com/technology/openai-unveils-gpt-5-6-sol-terra-and-luna-models-limited-to-20-partners/",
-    "source": "VentureBeat",
+    "title": "🖖Manus 被 Meta 数十亿美元收购❗❗❗",
+    "content": "🖖Manus 被 Meta 数十亿美元收购❗❗❗。开发者社区相关讨论。这是一个值得关注的技术话题，推荐阅读原文获取完整信息。",
+    "quote": "🖖Manus 被 Meta 数十亿美元收购❗❗❗",
+    "source": "",
+    "url": "#",
     "published": "2026-07-01",
-    "uid": "3cfd85f801515556007548c075a55d88"
+    "uid": "dev_f5e929f7"
   },
   {
-    "title": "Claude Sonnet 5 发布：Anthropic 的中端模型逆袭",
-    "content": "Anthropic 发布 Claude Sonnet 5，这代中端模型在编码基准测试上超越了上一代旗舰 Opus。HN 393 分热帖下的共识：Sonnet 5 在效率比上碾压对手，API 成本仅为 Opus 的 1/5 但性能接近。开发者社区已经开始迁移——从 GPT-5 转到 Sonnet 5 的 API 调用量一周内增长了 300%。中端模型正在重新定义 AI 编程工具的效率比标准。",
-    "quote": "中端模型正在重新定义 AI 编程工具的性价比标准。",
-    "url": "https://www.anthropic.com/news/claude-sonnet-5",
-    "source": "Anthropic / HN",
+    "title": "What It Takes to Build an AI Personal Assistant That Actually Remembers",
+    "content": "What It Takes to Build an AI Personal Assistant That Actually Remembers。开发者社区相关讨论。",
+    "quote": "What It Takes to Build an AI P",
+    "source": "",
+    "url": "#",
     "published": "2026-07-01",
-    "uid": "bb85109b2564cf0dda72ed44eecff8f6"
+    "uid": "dev_81c7944a"
   },
   {
-    "title": "Factorio 2.1 实验版发布：自动化游戏的工程哲学",
-    "content": "Factorio 发布 2.1 实验版，新增太空平台信号系统、改进的蓝图参数化、以及可编程列车调度。这批更新背后是 Factorio 团队一以贯之的'工程优先'哲学——每个新功能都像是一个编程抽象：接口清晰、可组合、可测试。对开发者来说，Factorio 不只是一个游戏，它是分布式系统设计和流水线优化的最佳教学工具。",
-    "quote": "Factorio 不只是一个游戏，它是分布式系统设计和流水线优化的最佳教学工具。",
-    "url": "https://factorio.com/blog/post/fff-444",
-    "source": "Factorio Blog / HN",
+    "title": "Detecting Which AI Chat Platform You're On: URL and DOM Patterns for ChatGPT, Claude, Gemini, and Copilot",
+    "content": "Detecting Which AI Chat Platform You're On: URL and DOM Patterns for ChatGPT, Claude, Gemini, and Copilot。开发者社区相关讨论。",
+    "quote": "Detecting Which AI Chat Platfo",
+    "source": "",
+    "url": "#",
     "published": "2026-07-01",
-    "uid": "c00ec5041d7d8b49beb45b14a170650a"
+    "uid": "dev_df1abd68"
   },
   {
-    "title": "加密行业 2026 美国中期选举已烧 1.89 亿美元——区块链开发者何去何从",
-    "content": "路透社报道，加密行业在 2026 美国中期选举中已花费 1.89 亿美元，远超其他行业。这笔钱主要流向亲加密候选人的 Super PAC。对区块链开发者来说，这意味着监管走向高度不确定——一方面有强力游说支持，另一方面 SEC 的执法力度并未减弱。行业建议：多关注欧盟 MiCA 框架和香港新规，别把所有筹码押在美国。",
-    "quote": "1.89 亿美元的政治献金背后，是加密监管最大的不确定性。别把所有筹码押在美国。",
-    "url": "https://www.reuters.com/world/crypto-firms-have-spent-189-million-so-far-2026-us-election-report-says-2026-06-30/",
-    "source": "Reuters / HN",
+    "title": "Implement Authorization with Role-Based Access Control (RBAC) in Golang",
+    "content": "Implement Authorization with Role-Based Access Control (RBAC) in Golang。开发者社区相关讨论。",
+    "quote": "Implement Authorization with R",
+    "source": "",
+    "url": "#",
     "published": "2026-07-01",
-    "uid": "7f3c1478bf3307ad55c11a101f26647e"
+    "uid": "dev_f542a133"
   },
   {
-    "title": "Claude Science 发布：AI 科学工作站，能生成 3D 蛋白质结构",
-    "content": "Anthropic 发布 Claude Science——面向科学家的 AI 工作站。不只是聊天机器人，而是能生成 3D 蛋白质结构可视化、交互式分子动力学模拟、以及直接操作实验数据的专用工具。底层基于 Claude Opus 的推理能力+定制工具链。对生物信息学和计算化学的开发者来说，这是 AI 从'帮你写代码'到'帮你做科学'的一步跨越。",
-    "quote": "AI 从'帮你写代码'到'帮你做科学'的一步跨越。",
-    "url": "https://claude.com/product/claude-science",
-    "source": "Anthropic / HN",
+    "title": "GoF设计模式——中介者模式 - 咖啡八杯",
+    "content": "GoF设计模式——中介者模式 - 咖啡八杯。开发者社区相关讨论。这是一个值得关注的技术话题，推荐阅读原文获取完整信息。",
+    "quote": "GoF设计模式——中介者模式 - 咖啡八杯",
+    "source": "",
+    "url": "#",
     "published": "2026-07-01",
-    "uid": "1b72e7496f7b8e7cdf7eefcf108091ab"
+    "uid": "dev_7a4660aa"
+  },
+  {
+    "title": "【机器人 / 强化学习】HIL-SERL 算法篇：DQN + SAC 混合架构的实现哲学 - 罗西的思考",
+    "content": "【机器人 / 强化学习】HIL-SERL 算法篇：DQN + SAC 混合架构的实现哲学 - 罗西的思考。开发者社区相关讨论。",
+    "quote": "【机器人 / 强化学习】HIL-SERL 算法篇：DQN +",
+    "source": "",
+    "url": "#",
+    "published": "2026-07-01",
+    "uid": "dev_8aab3c89"
+  },
+  {
+    "title": "一套基于 .NET 10 + Vue 3 构建、高颜值、前后端分离的企业级多租户中后台管理系统 - 追逐时光者",
+    "content": "一套基于 .NET 10 + Vue 3 构建、高颜值、前后端分离的企业级多租户中后台管理系统 - 追逐时光者。开发者社区相关讨论。",
+    "quote": "一套基于 .NET 10 + Vue 3 构建、高颜值、前后",
+    "source": "",
+    "url": "#",
+    "published": "2026-07-01",
+    "uid": "dev_91eba202"
+  },
+  {
+    "title": "Excelize 开源社区荣获 2025 红山开源明星项目三等奖",
+    "content": "Excelize 开源社区荣获 2025 红山开源明星项目三等奖。开发者社区相关讨论。这是一个值得关注的技术话题，推荐阅读原文获取完整信息。",
+    "quote": "Excelize 开源社区荣获 2025 红山开源明星项目三",
+    "source": "",
+    "url": "#",
+    "published": "2026-07-01",
+    "uid": "dev_e96f909a"
+  },
+  {
+    "title": "Google Antigravity 出来啦",
+    "content": "Google Antigravity 出来啦。开发者社区相关讨论。这是一个值得关注的技术话题，推荐阅读原文获取完整信息。",
+    "quote": "Google Antigravity 出来啦",
+    "source": "",
+    "url": "#",
+    "published": "2026-07-01",
+    "uid": "dev_95985617"
   }
 ]
