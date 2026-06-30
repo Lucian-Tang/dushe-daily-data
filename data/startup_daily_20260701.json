@@ -1,0 +1,110 @@
+[
+  {
+    "title": "Google Launches Nano Banana 2 Lite: Fast AI Image Model",
+    "content": "Google DeepMind发布Nano Banana 2 Lite图像生成模型，主打高速推理和低计算资源消耗。支持个性化图像生成，用户可连接Google Photos让Gemini根据个人相册内容生成定制化AI图片。该功能此前仅限订阅用户，现已向所有美国用户开放。",
+    "quote": "Google的吃蕉模型越来越轻了，这回连免费用户都能玩上。",
+    "url": "https://deepmind.google/models/gemini-image/flash-lite/",
+    "source": "Google DeepMind / Hacker News",
+    "published": "2026-06-30",
+    "uid": "f021735c0f2f41f6785756c5931c7a5d"
+  },
+  {
+    "title": "SpaceX Officially Acquires Cursor for $60 Billion",
+    "content": "SpaceX在其史诗级IPO后正式以600亿美元收购AI编程平台Cursor。此前SpaceX在4月达成了一项排他性协议——要么以600亿收购、要么支付100亿分手费。Cursor的AI代码生成能力将帮助xAI弥补与Anthropic Claude Code和OpenAI Codex的差距，加速在企业级AI市场的布局。交易预计2026年Q3完成。",
+    "quote": "600亿美金买个写代码的AI工具，马斯克的钱包比他的火箭还猛。",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/950571/spacex-is-officially-buying-cursor-for-60-billion",
+    "source": "The Verge",
+    "published": "2026-06-29",
+    "uid": "0871722a336806ae3e4aafd86d3c32fe"
+  },
+  {
+    "title": "Anthropic Launches Claude Science Beta",
+    "content": "Anthropic发布Claude Science，一个面向科研的全新AI环境。支持原生查看蛋白质结构、基因序列、化学分子，可连接60+科学数据库，自动管理计算环境（本地/集群/GPU），生成完全可追溯的图表和论文，并内置背景审查功能自动标记错误引用和数据不一致。首批聚焦生命科学领域。",
+    "quote": "科研民工福音来了！以后论文里的P值造假，AI第一个不答应。",
+    "url": "https://claude.com/product/claude-science",
+    "source": "Anthropic / Hacker News",
+    "published": "2026-06-30",
+    "uid": "b0e35195f80a83f5878ef9626c0adbae"
+  },
+  {
+    "title": "Qwen 3.6 27B: The Sweet Spot for Local Development",
+    "content": "开发者社区对阿里通义千问Qwen 3.6 27B模型反响热烈，HN获1093点赞和696条评论。该模型在本地部署场景下表现出色，在编码、推理等任务上接近更大规模模型的表现，但资源需求仅为70B级别模型的1/3。开发者普遍认为这是目前本地AI开发的最佳性价比选择。",
+    "quote": "千问3.6让本地AI跑出了云端体验，阿里这波在大气层。",
+    "url": "https://quesma.com/blog/qwen-36-is-awesome/",
+    "source": "Hacker News",
+    "published": "2026-06-30",
+    "uid": "736256de1680fb8c05ec68200a14d685"
+  },
+  {
+    "title": "Claude Code 被曝使用隐写术标记API请求",
+    "content": "安全研究员逆向Anthropic的Claude Code二进制后发现隐藏的隐写功能：当检测到用户使用非官方API端点（包括中国时区+特定转售域名）时，会在系统提示中插入不可见的Unicode字符标记。域名黑名单经XOR+Base64编码隐藏，内含大量中国中转站和AI公司域名。疑似用于检测API转售和模型蒸馏行为。",
+    "quote": "偷偷在Prompt里藏暗号，这波操作比产品经理的KPI还隐蔽。",
+    "url": "https://thereallo.dev/blog/claude-code-prompt-steganography",
+    "source": "thereallo.dev / Hacker News",
+    "published": "2026-06-30",
+    "uid": "010b2d243dc89dfed93e82fcd5dac22b"
+  },
+  {
+    "title": ".self TLDSupport Self-Hosting Revolution",
+    "content": "Human Computer Collaborative Foundation（HCCF）推出.self顶级域名，旨在为自托管和去中心化网络提供专属域名空间。该项目获得HN社区624点赞和355条评论，被视为对抗大平台中心化控制的重要举措。域名设计强调用户对数据的完全掌控，支持去中心化身份（DID）和自托管基础设施集成。",
+    "quote": "又一个想干掉AWS的域名来了，这次能不能成看开发者买不买账。",
+    "url": "https://hccf.onmy.cloud/2026/06/21/reclaiming-our-digital-selves-hccfs-vision-for-a-human-centered-top-level-domain/",
+    "source": "HCCF / Hacker News",
+    "published": "2026-06-30",
+    "uid": "dbe6cb3257950301984b2b45cb585771"
+  },
+  {
+    "title": "European Digital ID Wallets Exposed Relying on Google Apple",
+    "content": "研究机构Waag指出，欧盟推行的数字身份（eIDAS 2.0）钱包方案在底层安全服务上高度依赖Google和Apple的基础设施，这与欧盟追求数字主权的初衷背道而驰。该发现引发HN社区609点赞和263条评论讨论。欧洲政府耗费巨资打造的数字身份系统，核心安全却掌握在美国科技巨头手中。",
+    "quote": "号称数字主权的大项目，结果命根子攥在苹果谷歌手里，欧式讽刺拉满。",
+    "url": "https://waag.org/en/article/european-digital-id-wallets-are-gift-google-and-apple/",
+    "source": "Waag / Hacker News",
+    "published": "2026-06-30",
+    "uid": "d811c84105357b199ef8cc7d466d25a1"
+  },
+  {
+    "title": "LongCat-2.0 Launches 1.6T Parameter MoE Model",
+    "content": "LongCat团队发布2.0版本大模型，采用MoE（混合专家）架构，总参数量1.6万亿，每次推理激活480亿参数。在多项基准测试中表现优异，尤其在长文本理解和代码生成任务上。该模型在HN上获241点赞，引发社区对超大模型效率和实用性的新一轮讨论。",
+    "quote": "1.6万亿参数激活只要480亿，这MoE架构比某些KPI还精简。",
+    "url": "https://longcat.chat/blog/longcat-2.0/",
+    "source": "LongCat / Hacker News",
+    "published": "2026-06-30",
+    "uid": "b9d0825a75bafc271fdcf3f288bf9fe5"
+  },
+  {
+    "title": "Apple Acquires Play Design Tool for Xcode Boost",
+    "content": "Apple收购了去年获得Apple设计奖的Mac/iPhone原型设计工具Play。Play此前已在App Store下架。消息人士分析Apple可能将Play的技术整合进Xcode，增强开发者工具的原型设计能力。该交易通过欧盟DMA备案信息曝光。",
+    "quote": "Apple又来买买买了，Xcode什么时候能变得好用才是活菩萨。",
+    "url": "https://www.theverge.com/tech/959229/apple-acquires-play-design-tool",
+    "source": "The Verge",
+    "published": "2026-06-29",
+    "uid": "dce8410280cd282e8da45c776ae06612"
+  },
+  {
+    "title": "中微公司牵头设立30亿半导体产业基金",
+    "content": "中微公司公告，全资子公司中微临港拟作为有限合伙人出资不超过14.7亿元，联合智微资本等设立上海智微凌峰创投基金，总规模暂定30亿元。基金将聚焦半导体、泛半导体和战略新兴领域的投资。这是中微公司从设备制造商向产业资本布局的重要信号。",
+    "quote": "做刻蚀机的开始玩投资了，国产半导体的钱袋子越来越深。",
+    "url": "https://36kr.com/newsflashes/3875656502538247",
+    "source": "36氪",
+    "published": "2026-07-01",
+    "uid": "1b4c116e5eda32de485c78cf44c37aef"
+  },
+  {
+    "title": "Google Warns EU Proposals May Increase Cybercrime Risk",
+    "content": "Google安全工程负责人Heather Adkins公开警告，欧盟拟议的搜索引擎数据共享和Android互操作性提案，将迫使Google向竞争对手开放搜索数据和系统权限。一旦实施，几周内就会出现欧洲网络欺诈激增。此前Apple也表达了类似担忧。这标志着科技巨头与欧盟DMA监管的新一轮对抗升级。",
+    "quote": "Google和Apple突然统一战线，看来欧盟这次是真戳到痛处了。",
+    "url": "https://www.theverge.com/tech/930292/google-warns-eu-proposals-cybercrime-android-search",
+    "source": "The Verge",
+    "published": "2026-06-29",
+    "uid": "9b222f8f095bfde3c266829adb0ea663"
+  },
+  {
+    "title": "京东高和基础设施REITs在上交所挂牌上市",
+    "content": "京东产发联合高和资本设立的京东高和现代化基础设施机构间REITs在上海证券交易所正式挂牌，总投资规模约42亿元人民币。这是京东在物流基础设施资产证券化领域的重要突破，为国内电商仓储物流REITs市场树立了新标杆。",
+    "quote": "京东把仓库变成股票卖，这资本运作比618促销还香。",
+    "url": "https://36kr.com/newsflashes/3875609732902920",
+    "source": "36氪",
+    "published": "2026-07-01",
+    "uid": "fa3b9399a7aef445f657d5381b38c961"
+  }
+]

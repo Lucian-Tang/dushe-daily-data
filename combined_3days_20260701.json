@@ -47,7 +47,7 @@
     },
     {
       "title": "百度宕机余波未平 中国暂停发放自动驾驶新牌照",
-      "content": "中国监管机构紧急暂停新的自动驾驶运营牌照发放。一次系统宕车，整个行业刹车。自动驾驶的商业化进程，被自己人按下了暂停键。",
+      "content": "中国监管机构紧急暂停新的自动驾驶运营牌照发放。一次系统宕车，整个行业刹车。自动驾驶的商业化进程，被自己人按下了暂停键。这是对安全标准的重大警示。",
       "quote": "这不是过度反应，而是对安全冗余仍然停留在PPT上的官方认证。",
       "url": "https://www.bloomberg.com/news/articles/2026-04-29/china-suspends-new-autonomous-driving-permits-after-baidu-outage",
       "source": "Bloomberg",
@@ -56,7 +56,7 @@
     },
     {
       "title": "亚马逊Zoox无人出租车大升级 双向行驶新座椅新音响",
-      "content": "Zoox发布了新一代双向无人驾驶出租车，座椅、音响、外观全面焕新。目前在旧金山、拉斯维加斯、奥斯汀、迈阿密可免费乘坐。",
+      "content": "Zoox发布了新一代双向无人驾驶出租车，座椅、音响、外观全面焕新。目前在旧金山、拉斯维加斯、奥斯汀、迈阿密可免费乘坐。亚马逊的无人驾驶布局正在稳步推进。",
       "quote": "先免费运营占领用户心智，等绿灯亮了直接冲。亚马逊的慢工出细活策略来得及吗？",
       "url": "https://www.theverge.com/transportation/955822/zoox-robotaxi-refresh-updates-seats-audio-color",
       "source": "The Verge Transportation",
@@ -281,6 +281,114 @@
     }
   ],
   "dev": [
+    {
+      "title": "Claude Code 被发现用隐写术标记生成代码——开发者社区炸了",
+      "content": "HN 热榜 777 分爆文：安全研究员发现 Claude Code 在生成的代码中嵌入隐写标记（steganographic watermark），通过特定空白字符排列来追踪 AI 生成的代码。开发者分两派：一派认为这是负责任的溯源手段，另一派怒斥为'代码投毒'。目前 Anthropic 尚未回应，但 Claude Code 文档中确实提到了'内容溯源'功能。你写的每一行 AI 代码，可能都带了隐形水印。",
+      "quote": "你写的每一行 AI 代码，可能都带了隐形水印。",
+      "url": "https://thereallo.dev/blog/claude-code-prompt-steganography",
+      "source": "thereallo.dev / HN",
+      "published": "2026-07-01",
+      "uid": "6fa49de7bd5e18071daecea47cf0fd60"
+    },
+    {
+      "title": "Anthropic 称 80% 新生产代码由 Claude 编写——程序员饭碗真要凉？",
+      "content": "Anthropic CTO 在采访中透露：公司 80% 的新生产代码由 Claude 编写，人类工程师主要负责架构设计和 Code Review。这个数字让开发者社区震动——如果连 AI 公司自己都在重度依赖 AI 写码，那普通开发者的未来在哪？但仔细看：他们仍需要人类做架构决策、安全审计和业务逻辑把关。不是替代，是角色迁移。",
+      "quote": "Anthropic 80% 新生产代码由 Claude 编写。不是替代开发者，是角色迁移。",
+      "url": "https://venturebeat.com/technology/anthropic-says-80-of-its-new-production-code-is-written-by-claude/",
+      "source": "VentureBeat",
+      "published": "2026-07-01",
+      "uid": "f95730f5aae71238972023cee29e0dc2"
+    },
+    {
+      "title": "Qwen 3.6 27B：本地开发的最佳甜点模型，1109 分登顶 HN",
+      "content": "阿里 Qwen 3.6 27B 参数模型在 HN 上获得 1109 分，被认为是本地开发的'甜点'模型——足够小而能跑在消费级 GPU 上，又足够强大处理复杂编码任务。支持 128K 上下文、多语言代码生成、兼容 OpenAI API。评测显示在 HumanEval+ 上超越 GPT-4.1，在 MMLU-Pro 上与 Claude Sonnet 持平。一个 27B 模型跑到这个水平，开源生态真的变了。",
+      "quote": "一个 27B 模型跑到这个水平，开源生态真的变了。",
+      "url": "https://quesma.com/blog/qwen-36-is-awesome/",
+      "source": "Quesma / HN",
+      "published": "2026-07-01",
+      "uid": "20034a020a7c04eaf9e386c48bdbd889"
+    },
+    {
+      "title": "ZLUDA 6 发布：CUDA 应用终于能在 AMD/Intel GPU 上原生跑了",
+      "content": "ZLUDA 项目发布 v6 版本，实现了在不修改任何 CUDA 源码的情况下，在非 Nvidia GPU（AMD ROCm、Intel oneAPI）上运行 CUDA 应用程序。这个项目曾被 AMD 赞助后又放弃，如今由社区独立维护。v6 大幅提升了兼容性，支持 cuBLAS/cuDNN/cuFFT 等核心库。对买不到 N 卡或想省钱买 A 卡的开发者来说，这是重大利好。",
+      "quote": "不修改一行 CUDA 源码，就能在 AMD/Intel GPU 上跑。这是打破算力垄断的一步。",
+      "url": "https://vosen.github.io/ZLUDA/blog/zluda-update-q1q2-2026/",
+      "source": "ZLUDA / HN",
+      "published": "2026-07-01",
+      "uid": "2f0b02a978386ba414c1492c06d330c8"
+    },
+    {
+      "title": "PostgreSQL 19 前瞻：Snowflake 工程师详解新特性",
+      "content": "Snowflake 工程团队发布 PostgreSQL 19 前瞻文章，详细解读即将到来的新特性：增量备份/还原、并行 VACUUM、OAuth 2.0 认证Provider、以及 JSON_TABLE 语法支持。PG 19 计划 2026 年 9 月发布，目前 Beta 版已可测试。值得关注的是并行 VACUUM——大表维护性能有望提升 5-10 倍。",
+      "quote": "并行 VACUUM 有望让大表维护性能提升 5-10 倍。PG 依然是世界上最可靠的开源数据库。",
+      "url": "https://www.snowflake.com/en/blog/engineering/postgresql-19-features-beta/",
+      "source": "Snowflake Engineering Blog / HN",
+      "published": "2026-07-01",
+      "uid": "7e4a9385d83f13ac8d4de39084f5b960"
+    },
+    {
+      "title": "欧洲数字身份钱包：去中心化的梦想架在 Google/Apple 地基上",
+      "content": "Waag 研究机构发布长篇调查报告，揭露欧盟力推的数字身份钱包（EUDI Wallet）底层严重依赖 Google SafetyNet 和 Apple Secure Enclave。技术栈上的悖论：号称去中心化的身份系统，关键认证链路全走美国科技巨头。已有开源社区开始讨论替代方案——用纯 WebAuthn + FIDO 标准绕过 Big Tech 依赖。数字主权这场仗，技术实现才是硬骨头。",
+      "quote": "号称去中心化的身份系统，关键认证链路全走美国科技巨头。数字主权，技术实现才是硬骨头。",
+      "url": "https://waag.org/en/article/european-digital-id-wallets-are-gift-google-and-apple/",
+      "source": "Waag Futurelab / HN",
+      "published": "2026-07-01",
+      "uid": "594f2b68af8c60ec59b14f0c24a4be38"
+    },
+    {
+      "title": "美团开源 LongCat-2.0：1.6T 参数 MoE，全中国芯片训练，登顶 OpenRouter",
+      "content": "美团正式开源 LongCat-2.0，一个 1.6T 总参数（48B 激活）的 MoE 编码模型。最炸裂的细节：完全使用中国芯片训练。模型在 OpenRouter 编程榜单上超越 GPT-5.1 和 Claude Opus 4.5 登顶。LongCat-2.0 以 Apache 2.0 协议开源，支持 128K 上下文。这是中国开源 AI 的一个里程碑。",
+      "quote": "完全使用中国芯片训练的 1.6T 模型登顶 OpenRouter。这是中国开源 AI 的里程碑。",
+      "url": "https://longcat.chat/blog/longcat-2.0/",
+      "source": "LongCat / HN",
+      "published": "2026-07-01",
+      "uid": "917a4f55e4f62396ef780cb8f4d16ef4"
+    },
+    {
+      "title": "OpenAI 发布 GPT-5.6 Sol/Terra/Luna：美国政府要求仅限 20 家预览",
+      "content": "OpenAI 发布 GPT-5.6 系列三个模型：Sol（旗舰推理）、Terra（多模态）、Luna（高效低成本）。但令人震惊的是——美国政府要求仅限 20 家指定合作伙伴预览访问。这引发了开发者社区对'AI 技术出口管制'的激烈讨论。对于依赖 OpenAI API 的开发者来说，这意味着最先进的模型可能与你无缘，开源替代方案（Qwen/LongCat/DeepSeek）比以往更重要。",
+      "quote": "最先进的 AI 模型可能与你无缘。开源替代方案比以往任何时候都重要。",
+      "url": "https://venturebeat.com/technology/openai-unveils-gpt-5-6-sol-terra-and-luna-models-limited-to-20-partners/",
+      "source": "VentureBeat",
+      "published": "2026-07-01",
+      "uid": "3cfd85f801515556007548c075a55d88"
+    },
+    {
+      "title": "Claude Sonnet 5 发布：Anthropic 的中端模型逆袭",
+      "content": "Anthropic 发布 Claude Sonnet 5，这代中端模型在编码基准测试上超越了上一代旗舰 Opus。HN 393 分热帖下的共识：Sonnet 5 在效率比上碾压对手，API 成本仅为 Opus 的 1/5 但性能接近。开发者社区已经开始迁移——从 GPT-5 转到 Sonnet 5 的 API 调用量一周内增长了 300%。中端模型正在重新定义 AI 编程工具的效率比标准。",
+      "quote": "中端模型正在重新定义 AI 编程工具的性价比标准。",
+      "url": "https://www.anthropic.com/news/claude-sonnet-5",
+      "source": "Anthropic / HN",
+      "published": "2026-07-01",
+      "uid": "bb85109b2564cf0dda72ed44eecff8f6"
+    },
+    {
+      "title": "Factorio 2.1 实验版发布：自动化游戏的工程哲学",
+      "content": "Factorio 发布 2.1 实验版，新增太空平台信号系统、改进的蓝图参数化、以及可编程列车调度。这批更新背后是 Factorio 团队一以贯之的'工程优先'哲学——每个新功能都像是一个编程抽象：接口清晰、可组合、可测试。对开发者来说，Factorio 不只是一个游戏，它是分布式系统设计和流水线优化的最佳教学工具。",
+      "quote": "Factorio 不只是一个游戏，它是分布式系统设计和流水线优化的最佳教学工具。",
+      "url": "https://factorio.com/blog/post/fff-444",
+      "source": "Factorio Blog / HN",
+      "published": "2026-07-01",
+      "uid": "c00ec5041d7d8b49beb45b14a170650a"
+    },
+    {
+      "title": "加密行业 2026 美国中期选举已烧 1.89 亿美元——区块链开发者何去何从",
+      "content": "路透社报道，加密行业在 2026 美国中期选举中已花费 1.89 亿美元，远超其他行业。这笔钱主要流向亲加密候选人的 Super PAC。对区块链开发者来说，这意味着监管走向高度不确定——一方面有强力游说支持，另一方面 SEC 的执法力度并未减弱。行业建议：多关注欧盟 MiCA 框架和香港新规，别把所有筹码押在美国。",
+      "quote": "1.89 亿美元的政治献金背后，是加密监管最大的不确定性。别把所有筹码押在美国。",
+      "url": "https://www.reuters.com/world/crypto-firms-have-spent-189-million-so-far-2026-us-election-report-says-2026-06-30/",
+      "source": "Reuters / HN",
+      "published": "2026-07-01",
+      "uid": "7f3c1478bf3307ad55c11a101f26647e"
+    },
+    {
+      "title": "Claude Science 发布：AI 科学工作站，能生成 3D 蛋白质结构",
+      "content": "Anthropic 发布 Claude Science——面向科学家的 AI 工作站。不只是聊天机器人，而是能生成 3D 蛋白质结构可视化、交互式分子动力学模拟、以及直接操作实验数据的专用工具。底层基于 Claude Opus 的推理能力+定制工具链。对生物信息学和计算化学的开发者来说，这是 AI 从'帮你写代码'到'帮你做科学'的一步跨越。",
+      "quote": "AI 从'帮你写代码'到'帮你做科学'的一步跨越。",
+      "url": "https://claude.com/product/claude-science",
+      "source": "Anthropic / HN",
+      "published": "2026-07-01",
+      "uid": "1b72e7496f7b8e7cdf7eefcf108091ab"
+    },
     {
       "title": "WATaBoy: JIT-Ing Game Boy Instructions to WASM Beats a Native Interpreter",
       "content": "WATaBoy: JIT-Ing Game Boy Instructions to WASM Beats a Native Interpreter。Humphri.es | 2026-06-30相关讨论。",
@@ -617,6 +725,105 @@
   ],
   "ai": [
     {
+      "title": "OpenAI 发布 GPT-5.6 三款模型：Sol/Terra/Luna，受美国政府要求仅限 20 家预览伙伴访问",
+      "content": "OpenAI 正式发布 GPT-5.6 家族的三款新模型：Sol（太阳）定位最难问题，如复杂编码和安全研究；Terra（大地）面向高并发企业任务，如客服与文档分析；Luna（月亮）主打高速低成本日常应用。Sol 和 Terra 在多个基准上创下新高，Luna 接近 GPT-5.5 水平却更快更便宜。然而，因美国政府 6 月 2 日行政令要求评估前沿 AI 模型安全性，OpenAI 严格限制首批仅约 20 个组织可访问，全面开放需等到 7 月 2 日评估期结束后。这紧随 Anthropic 因越狱事件被要求关停 Fable 5/Mythos 5 之后，标志美国政府正加速收紧前沿 AI 部署管控。",
+      "quote": "前脚 Anthropic 被勒令关停，后脚 OpenAI 发布新模型先让 Uncle Sam 点头——AI 军备竞赛新常态：发布前先给政府过目。",
+      "url": "https://venturebeat.com/technology/openai-unveils-gpt-5-6-sol-terra-and-luna-models-but-only-accessible-to-limited-preview-partners-for-now-per-us-gov",
+      "source": "VentureBeat / OpenAI",
+      "published": "2026-07-01",
+      "uid": "0a0bee2548117b097faee1b0f9802a6b"
+    },
+    {
+      "title": "美团开源 LongCat-2.0：1.6T 参数的 MoE 编码模型，完全用中国芯片训练，登顶 OpenRouter 榜单",
+      "content": "美团正式开源 LongCat-2.0，一个 1.6T 总参数（48B 激活）的 MoE 编码模型。最引人注目的细节：完全使用中国芯片训练。模型在 OpenRouter 编程榜单上超越 GPT-5.1 和 Claude Opus 4.5 登顶。LongCat-2.0 以 Apache 2.0 协议开源，支持 128K 上下文。这是中国开源 AI 的一个里程碑——不仅技术参数亮眼，更意味着在算力受限条件下的工程突破。",
+      "quote": "美团用国产芯片训练了 1.6T 参数的模型，还在 OpenRouter 上碾压了一众闭源对手——国产芯片不是不行，是没人认真试。",
+      "url": "https://venturebeat.com/technology/meituan-open-sources-longcat-2-0-the-1-6t-near-frontier-agentic-coding-model-thats-been-leading-openrouter-trained-entirely-on-chinese-chips",
+      "source": "VentureBeat / Hugging Face",
+      "published": "2026-07-01",
+      "uid": "533917516d083f083bbdaaf08ca5b80d"
+    },
+    {
+      "title": "Anthropic 发布 Claude Science：面向科学家的 AI 工作站，生成 3D 蛋白质结构等可视化内容",
+      "content": "Anthropic 推出 Claude Science 测试版，定位为「科学家 AI 工作台」。该工具将碎片化的科研工具和数据集整合到统一环境，可以生成图表和可视化内容，如 3D 蛋白质结构。Anthropic 特别强调「Claude Science 不是一个新 AI 模型」——这一谨慎措辞在此前 Fable 5 因越狱事件被封禁的背景下格外值得玩味。加州政府同日宣布与 Anthropic 合作，将为州政府机构提供 Claude 服务。",
+      "quote": "Anthropic 给 Claude 穿上白大褂——Claude Science 不是新模型，只是想把实验室的瓶瓶罐罐整合到一起。但至少比被政府封禁好。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/2026/7/1/anthropic-claude-science-beta-ai-workbench-scientists",
+      "source": "The Verge / Anthropic",
+      "published": "2026-07-01",
+      "uid": "93cac78be927cb4e874fc33eafeaf5ce"
+    },
+    {
+      "title": "Claude Code 把每个工程师变成三个，Anthropic 因此需要更多产品经理而非程序员",
+      "content": "Anthropic 的增长团队被告知要招聘更多产品经理而非更少，原因是 Claude Code 已将其工程团队的实际产出扩大到三倍，瓶颈从「写代码」转移到了「决定写什么」。VentureBeat 分析认为，整个行业正经历这一结构性转变——软件开发的瓶颈不再是打字速度，而是决策质量。Stack Overflow 的新增问题自 ChatGPT 发布以来已下降 77%，预示着传统开发模式正在被 AI 编程助手彻底重塑。",
+      "quote": "当 AI 把工程师变成了三头六臂，公司突然发现缺的不是写代码的人，而是决定写什么的人。码农内卷终结，产品经理卷土重来。",
+      "url": "https://venturebeat.com/infrastructure/claude-code-turned-every-engineer-into-three-now-companies-need-more-product-thinkers",
+      "source": "VentureBeat",
+      "published": "2026-07-01",
+      "uid": "a9f593160b8d8a283ff2b0647af3c275"
+    },
+    {
+      "title": "DeepSeek 开源 DSpark：LLM 推理速度最高提升 85% 的猜测式解码框架",
+      "content": "在 Anthropic 和 OpenAI 相继被美国政府限制后，中国开源 AI 明星 DeepSeek 再次出手，开源 DSpark——一个基于 MIT 许可证的猜测式解码（Speculative Decoding）框架，可将大模型推理速度提升高达 85%。DSpark 的核心思路是引入一个「侦察兵」模型，提前预测可能的推理路径，再由主模型快速验证。当预测准确时，模型大幅加速；预测不准时则跳过浪费。DeepSeek 同时发布了技术论文、模型检查点和训练评估代码库 DeepSpec。",
+      "quote": "DeepSeek 说 AI 聊天像过河：主流模型一步一个石头太慢。DSpark 给了它一个侦察兵先探路——猜对了就冲，猜错了也不亏。",
+      "url": "https://venturebeat.com/orchestration/deepseek-open-sources-dspark-a-new-framework-to-speed-up-llm-inference-by-up-to-85",
+      "source": "VentureBeat / GitHub",
+      "published": "2026-07-01",
+      "uid": "7a802288342a522f418fa369b1c4ae9b"
+    },
+    {
+      "title": "福特重新雇佣 350 名「灰胡子」工程师，AI 质检不如老将经验",
+      "content": "福特汽车重新雇佣了 350 名资深工程师——部分为前雇员，部分来自供应商——原因是 AI 和自动化质检系统未能达到期望的质量水平。福特 COO Kumar Galhotra 坦言「我们越来越依赖自动化质量系统，结果令人失望。」福特硬件工程副总裁表示：「我们误以为引入 AI 和设计需求就能产出高质量产品。」这些「灰胡子」工程师负责在零件到达工厂之前识别故障点，同时培训年轻员工和重新校准 AI 工具。该举措已显著降低保修和召回成本，为福特带来数亿美元收益，并在 JD Power 初始质量调查中荣登主流品牌榜首。",
+      "quote": "福特以为 AI 能代替老师傅的火眼金睛，结果召回成本教做人——AI 不仅没省钱，还得花钱把老将请回来。姜还是老的辣。",
+      "url": "https://techcrunch.com/2026/06/28/ford-rehires-gray-beard-engineers-after-ai-falls-short/",
+      "source": "TechCrunch / Bloomberg",
+      "published": "2026-07-01",
+      "uid": "6ad8e6b924a166f006fc9857dc8fdef9"
+    },
+    {
+      "title": "AI 智能体记忆框架 MRAgent：比 LangMem 省 27 倍 token，推理时动态构建记忆",
+      "content": "新加坡国立大学研究人员推出 MRAgent，一种全新的 AI 智能体记忆管理框架，从根本上放弃了传统的「检索-推理」静态方法。MRAgent 在推理过程中动态构建记忆，将 token 消耗降低高达 27 倍，运行时也减少 50%。传统方法的问题在于：向量检索只返回表面匹配，无法在推理中途调整策略；固定相似度分数和预定义图扩展会向上下文窗口注入大量噪声。MRAgent 则通过多步记忆重构让智能体「边推理边记忆」，解决了长周期任务中上下文窗口快速填满和检索噪声的关键痛点。",
+      "quote": "AI Agent 记性差一直是硬伤——1024K 上下文也不够用。MRAgent 说别死记硬背了，边干边记还能省 27 倍 token。",
+      "url": "https://venturebeat.com/orchestration/new-agentic-memory-framework-uses-118k-tokens-per-query-langmem-burns-through-3-26m",
+      "source": "VentureBeat / arXiv",
+      "published": "2026-07-01",
+      "uid": "58e388bc9e852a0990ce575be22aaf4b"
+    },
+    {
+      "title": "Liquid AI 发布仅 2.3 亿参数超小模型 LFM2.5-230M，端侧数据提取吊打 4 倍大对手",
+      "content": "由前 MIT 计算机科学家创立的 Liquid AI 发布了其最小语言模型 LFM2.5-230M（2.3 亿参数），专为端侧智能体工作流设计，可在智能手机、笔记本电脑和机器人上运行。该模型在数据提取任务上超越 8 亿参数的阿里 Qwen3.5-0.8B 和 10 亿参数的 Google Gemma 3 1B。采用 LFM2 架构实现高速推理，无需 Transformer 典型的巨大内存开销。Liquid AI 采用双重许可证：个人和年收入低于 1000 万美元的公司免费，大企业需付费。",
+      "quote": "AI 军备竞赛的另一面：不堆参数比谁跑得快——2.3 亿参数的模型吊打比自己大 4 倍的对手，还什么设备都能跑。",
+      "url": "https://venturebeat.com/technology/liquid-ais-smallest-model-yet-lfm2-5-230m-beats-models-4x-its-size-at-data-extraction-can-run-anywhere",
+      "source": "VentureBeat / Liquid AI",
+      "published": "2026-07-01",
+      "uid": "ed3601699b4c7bd5af34467d72562a06"
+    },
+    {
+      "title": "加州政府与 Anthropic 达成合作：全州 50% 折扣使用 Claude，AI 进入公共服务",
+      "content": "加州州长 Newsom 宣布与 Anthropic 达成「史上首例」合作协议，为所有加州政府机构和地方政府提供 Claude AI 访问权限，享受 50% 折扣。合作内容包括免费劳动力培训、技术支持和 Anthropic 开发者的工作流输入。政府雇员将使用 Claude 辅助起草和总结文件、分析信息以及补充日常工作。与此同时，Google 因算力供不应求被迫限制 Meta 对 Gemini 的访问量——基础设施瓶颈正在成为 AI 行业的新天花板。",
+      "quote": "加州政府用 Claude 写公文，Google 却要限制 Meta 用 Gemini——AI 的世界，一边供不应求一边使劲铺开。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/2026/6/29/gov-newsom-california-anthropic-claude-partnership-state-agencies",
+      "source": "The Verge / California Governor's Office",
+      "published": "2026-07-01",
+      "uid": "e9cf56daeef1e60083db5c347252a1fe"
+    },
+    {
+      "title": "AI 泡沫可能引发全球金融危机？多国央行行长发出警告",
+      "content": "Hacker News 热榜上，英国 Telegraph 的一篇报道引发广泛讨论：多国央行行长警告 AI 投资热潮可能引发全球金融危机。文章指出，AI 基础设施投资已达到前所未有的规模——科技巨头和各国政府投入数千亿美元建设数据中心、采购芯片和部署模型——但商业回报前景仍然高度不确定。这种「投入巨大、回报存疑」的模式让央行行长们联想到互联网泡沫和次贷危机前兆。",
+      "quote": "AI 投资热潮让人想起 2000 年的互联网和 2008 年的次贷——央行行长说这次可能也一样。泡沫破了痛的是泡沫里的人。",
+      "url": "https://www.telegraph.co.uk/business/2026/06/28/ai-boom-risks-global-financial-crash-central-bankers-warn/",
+      "source": "The Telegraph / Hacker News",
+      "published": "2026-07-01",
+      "uid": "8f6d525b1480a023baa526b0cb43dbf2"
+    },
+    {
+      "title": "Nomic 发布全球最大可下载嵌入数据集：2.4 亿对，覆盖 100 种语言",
+      "content": "Nomic AI 发布了史上最大的可下载嵌入数据集，包含 2.4 亿对高质量文本嵌入，覆盖 100 种语言。这个数据集使用 Nomic Embed v2 生成，专门针对多语言检索和 RAG 场景优化。关键突破：完全开源可下载，不需要调用 API——这意味着开发者可以在自己的硬件上微调嵌入模型，脱离对 OpenAI/Cohere 嵌入 API 的依赖。",
+      "quote": "完全开源可下载，脱离对 OpenAI/Cohere 嵌入 API 的依赖。",
+      "url": "https://blog.nomic.ai/posts/nomic-embed-v2-multilingual-dataset",
+      "source": "Nomic AI Blog",
+      "published": "2026-07-01",
+      "uid": "e84ab560df18b0159e77a1287921b07b"
+    },
+    {
       "title": "Qwen 3.6 27B发布：本地开发的最佳大模型选择",
       "content": "**来源：Hacker News | 2026-06-30** 阿里云通义千问团队发布了 Qwen 3.6 27B 模型，被开发者称为本地开发的最佳选择。该模型在编码、推理和多轮对话等任务上表现出色，27B 参数量下可在消费级 GPU (24GB VRAM) 上运行。根据评测数据，Qwen 3.6 27B 在 HumanEval、MBPP 等编程基准测试中表现超越了同尺寸的 Llama 和 Mistral 模型，同时保持了对中文的深度支持。这是开源大模型在可部署性和性能之间取得平衡的重要里程碑。",
       "quote": "27B 就能在本地跑出接近 GPT-4 的编码能力，本地开发工具链要变天了。",
@@ -925,6 +1132,114 @@
   ],
   "startup": [
     {
+      "title": "Google Launches Nano Banana 2 Lite: Fast AI Image Model",
+      "content": "Google DeepMind发布Nano Banana 2 Lite图像生成模型，主打高速推理和低计算资源消耗。支持个性化图像生成，用户可连接Google Photos让Gemini根据个人相册内容生成定制化AI图片。该功能此前仅限订阅用户，现已向所有美国用户开放。",
+      "quote": "Google的吃蕉模型越来越轻了，这回连免费用户都能玩上。",
+      "url": "https://deepmind.google/models/gemini-image/flash-lite/",
+      "source": "Google DeepMind / Hacker News",
+      "published": "2026-07-01",
+      "uid": "f021735c0f2f41f6785756c5931c7a5d"
+    },
+    {
+      "title": "SpaceX Officially Acquires Cursor for $60 Billion",
+      "content": "SpaceX在其史诗级IPO后正式以600亿美元收购AI编程平台Cursor。此前SpaceX在4月达成了一项排他性协议——要么以600亿收购、要么支付100亿分手费。Cursor的AI代码生成能力将帮助xAI弥补与Anthropic Claude Code和OpenAI Codex的差距，加速在企业级AI市场的布局。交易预计2026年Q3完成。",
+      "quote": "600亿美金买个写代码的AI工具，马斯克的钱包比他的火箭还猛。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/950571/spacex-is-officially-buying-cursor-for-60-billion",
+      "source": "The Verge",
+      "published": "2026-07-01",
+      "uid": "0871722a336806ae3e4aafd86d3c32fe"
+    },
+    {
+      "title": "Anthropic Launches Claude Science Beta",
+      "content": "Anthropic发布Claude Science，一个面向科研的全新AI环境。支持原生查看蛋白质结构、基因序列、化学分子，可连接60+科学数据库，自动管理计算环境（本地/集群/GPU），生成完全可追溯的图表和论文，并内置背景审查功能自动标记错误引用和数据不一致。首批聚焦生命科学领域。",
+      "quote": "科研民工福音来了！以后论文里的P值造假，AI第一个不答应。",
+      "url": "https://claude.com/product/claude-science",
+      "source": "Anthropic / Hacker News",
+      "published": "2026-07-01",
+      "uid": "b0e35195f80a83f5878ef9626c0adbae"
+    },
+    {
+      "title": "Qwen 3.6 27B: The Sweet Spot for Local Development",
+      "content": "开发者社区对阿里通义千问Qwen 3.6 27B模型反响热烈，HN获1093点赞和696条评论。该模型在本地部署场景下表现出色，在编码、推理等任务上接近更大规模模型的表现，但资源需求仅为70B级别模型的1/3。开发者普遍认为这是目前本地AI开发的最佳性价比选择。",
+      "quote": "千问3.6让本地AI跑出了云端体验，阿里这波在大气层。",
+      "url": "https://quesma.com/blog/qwen-36-is-awesome/",
+      "source": "Hacker News",
+      "published": "2026-07-01",
+      "uid": "736256de1680fb8c05ec68200a14d685"
+    },
+    {
+      "title": "Claude Code 被曝使用隐写术标记API请求",
+      "content": "安全研究员逆向Anthropic的Claude Code二进制后发现隐藏的隐写功能：当检测到用户使用非官方API端点（包括中国时区+特定转售域名）时，会在系统提示中插入不可见的Unicode字符标记。域名黑名单经XOR+Base64编码隐藏，内含大量中国中转站和AI公司域名。疑似用于检测API转售和模型蒸馏行为。",
+      "quote": "偷偷在Prompt里藏暗号，这波操作比产品经理的KPI还隐蔽。",
+      "url": "https://thereallo.dev/blog/claude-code-prompt-steganography",
+      "source": "thereallo.dev / Hacker News",
+      "published": "2026-07-01",
+      "uid": "010b2d243dc89dfed93e82fcd5dac22b"
+    },
+    {
+      "title": ".self TLDSupport Self-Hosting Revolution",
+      "content": "Human Computer Collaborative Foundation（HCCF）推出.self顶级域名，旨在为自托管和去中心化网络提供专属域名空间。该项目获得HN社区624点赞和355条评论，被视为对抗大平台中心化控制的重要举措。域名设计强调用户对数据的完全掌控，支持去中心化身份（DID）和自托管基础设施集成。",
+      "quote": "又一个想干掉AWS的域名来了，这次能不能成看开发者买不买账。",
+      "url": "https://hccf.onmy.cloud/2026/06/21/reclaiming-our-digital-selves-hccfs-vision-for-a-human-centered-top-level-domain/",
+      "source": "HCCF / Hacker News",
+      "published": "2026-07-01",
+      "uid": "dbe6cb3257950301984b2b45cb585771"
+    },
+    {
+      "title": "European Digital ID Wallets Exposed Relying on Google Apple",
+      "content": "研究机构Waag指出，欧盟推行的数字身份（eIDAS 2.0）钱包方案在底层安全服务上高度依赖Google和Apple的基础设施，这与欧盟追求数字主权的初衷背道而驰。该发现引发HN社区609点赞和263条评论讨论。欧洲政府耗费巨资打造的数字身份系统，核心安全却掌握在美国科技巨头手中。",
+      "quote": "号称数字主权的大项目，结果命根子攥在苹果谷歌手里，欧式讽刺拉满。",
+      "url": "https://waag.org/en/article/european-digital-id-wallets-are-gift-google-and-apple/",
+      "source": "Waag / Hacker News",
+      "published": "2026-07-01",
+      "uid": "d811c84105357b199ef8cc7d466d25a1"
+    },
+    {
+      "title": "LongCat-2.0 Launches 1.6T Parameter MoE Model",
+      "content": "LongCat团队发布2.0版本大模型，采用MoE（混合专家）架构，总参数量1.6万亿，每次推理激活480亿参数。在多项基准测试中表现优异，尤其在长文本理解和代码生成任务上。该模型在HN上获241点赞，引发社区对超大模型效率和实用性的新一轮讨论。",
+      "quote": "1.6万亿参数激活只要480亿，这MoE架构比某些KPI还精简。",
+      "url": "https://longcat.chat/blog/longcat-2.0/",
+      "source": "LongCat / Hacker News",
+      "published": "2026-07-01",
+      "uid": "b9d0825a75bafc271fdcf3f288bf9fe5"
+    },
+    {
+      "title": "Apple Acquires Play Design Tool for Xcode Boost",
+      "content": "Apple收购了去年获得Apple设计奖的Mac/iPhone原型设计工具Play。Play此前已在App Store下架。消息人士分析Apple可能将Play的技术整合进Xcode，增强开发者工具的原型设计能力。该交易通过欧盟DMA备案信息曝光。",
+      "quote": "Apple又来买买买了，Xcode什么时候能变得好用才是活菩萨。",
+      "url": "https://www.theverge.com/tech/959229/apple-acquires-play-design-tool",
+      "source": "The Verge",
+      "published": "2026-07-01",
+      "uid": "dce8410280cd282e8da45c776ae06612"
+    },
+    {
+      "title": "中微公司牵头设立30亿半导体产业基金",
+      "content": "中微公司公告，全资子公司中微临港拟作为有限合伙人出资不超过14.7亿元，联合智微资本等设立上海智微凌峰创投基金，总规模暂定30亿元。基金将聚焦半导体、泛半导体和战略新兴领域的投资。这是中微公司从设备制造商向产业资本布局的重要信号。",
+      "quote": "做刻蚀机的开始玩投资了，国产半导体的钱袋子越来越深。",
+      "url": "https://36kr.com/newsflashes/3875656502538247",
+      "source": "36氪",
+      "published": "2026-07-01",
+      "uid": "1b4c116e5eda32de485c78cf44c37aef"
+    },
+    {
+      "title": "Google Warns EU Proposals May Increase Cybercrime Risk",
+      "content": "Google安全工程负责人Heather Adkins公开警告，欧盟拟议的搜索引擎数据共享和Android互操作性提案，将迫使Google向竞争对手开放搜索数据和系统权限。一旦实施，几周内就会出现欧洲网络欺诈激增。此前Apple也表达了类似担忧。这标志着科技巨头与欧盟DMA监管的新一轮对抗升级。",
+      "quote": "Google和Apple突然统一战线，看来欧盟这次是真戳到痛处了。",
+      "url": "https://www.theverge.com/tech/930292/google-warns-eu-proposals-cybercrime-android-search",
+      "source": "The Verge",
+      "published": "2026-07-01",
+      "uid": "9b222f8f095bfde3c266829adb0ea663"
+    },
+    {
+      "title": "京东高和基础设施REITs在上交所挂牌上市",
+      "content": "京东产发联合高和资本设立的京东高和现代化基础设施机构间REITs在上海证券交易所正式挂牌，总投资规模约42亿元人民币。这是京东在物流基础设施资产证券化领域的重要突破，为国内电商仓储物流REITs市场树立了新标杆。",
+      "quote": "京东把仓库变成股票卖，这资本运作比618促销还香。",
+      "url": "https://36kr.com/newsflashes/3875609732902920",
+      "source": "36氪",
+      "published": "2026-07-01",
+      "uid": "fa3b9399a7aef445f657d5381b38c961"
+    },
+    {
       "title": "Rocket Lab 以 80 亿美元收购 Iridium，打造垂直整合航天巨头",
       "content": "Rocket Lab 宣布以每股54美元、总价值约80亿美元的交易收购卫星通信公司 Iridium。此次收购将 Rocket Lab 的火箭发射和卫星制造能力与 Iridium 的全球卫星网络、频谱资源及超过500家合作伙伴生态相结合，打造一家能够设计、制造、发射并运营自有星座的垂直整合航天公司。合并后的公司将直接涉足卫星物联网、直连设备通信和定位导航授时（PNT）服务，成为全球电信市场的重要竞争者。",
       "quote": "航天届的'买买买'模式终于卷到卫星运营商了——Rocket Lab 这是要当太空版的苹果，软硬通吃。",
@@ -1142,6 +1457,105 @@
     }
   ],
   "design": [
+    {
+      "title": "Figma 发布 AI 设计审核新功能：从源头拦截无障碍问题",
+      "content": "Figma 近期在其社区插件生态中强化了设计审核能力，结合 AI 实现实时无障碍检测与语义标记建议。插件可在设计阶段自动标记对比度不足、缺少标签状态等问题，无需等到开发阶段才暴露。结合前文 Smashing Magazine 强调的无障碍是运营能力的观点，设计工具正在从后置审计向前置预防演进。",
+      "quote": "设计工具终于学聪明了——问题在 Figma 里拦住，比在代码里修便宜一百倍。",
+      "url": "https://www.figma.com/community/plugin/1521241390290871981/figmalint",
+      "source": "Figma Community",
+      "published": "2026-07-01",
+      "uid": "design_6529a28a"
+    },
+    {
+      "title": "无障碍不是功能，是运营能力",
+      "content": "AI 让团队以史无前例的速度生成 UI，但也让无障碍问题成倍放大。WebAIM 2026 报告显示 95.9% 的首页有可检测的 WCAG 失败，平均每页 56.1 个错误。Vibe coding 催生大量无语义标记的代码。作者主张将无障碍视为与安全、可靠性同级的运营能力，而非项目结束前的合规检查清单。",
+      "quote": "别等审计报告变废纸——无障碍不是终点，是持续维护的能力。",
+      "url": "https://www.smashingmagazine.com/2026/06/why-accessibility-operational-capability-not-feature/",
+      "source": "Smashing Magazine",
+      "published": "2026-07-01",
+      "uid": "design_2657e7d4"
+    },
+    {
+      "title": "AI 放大概率思维：给 UX 团队的设计新框架",
+      "content": "文章提出概率设计（Probabilistic Design）思维框架，教 UX 团队如何正确解读 AI 输出——将其视为信号而非结论。通过案例分析展示如何根据 AI 预测的用户行为概率（如 60% vs 90% 完成购买的可能性）来调整设计策略：低置信度时增加说服性元素，高置信度时专注消除摩擦。",
+      "quote": "AI 给出的是概率不是答案，把预测当真理的设计，翻车只是时间问题。",
+      "url": "https://www.smashingmagazine.com/2026/06/designing-uncertainty-how-ai-supercharges-probabilistic-thinking/",
+      "source": "Smashing Magazine",
+      "published": "2026-07-01",
+      "uid": "design_6de6bdf7"
+    },
+    {
+      "title": "认知包容性在 UX 研究中的价值",
+      "content": "一项与加州大学欧文分校合作的探索性用户研究发现，认知障碍参与者在测试中揭示的可用性问题数量远超普通用户。研究使用 AI 原型工具生成了三个不同风格的网站，让认知障碍测试者完成各种任务，发现他们在信息架构、导航清晰度等方面提供了独特且实用的 UX 改进建议。",
+      "quote": "与其请十个普通人说产品好用，不如请一个认知障碍用户告诉你问题在哪。",
+      "url": "https://www.smashingmagazine.com/2026/06/benefits-cognitive-inclusion-ux-research/",
+      "source": "Smashing Magazine",
+      "published": "2026-07-01",
+      "uid": "design_75eb70c6"
+    },
+    {
+      "title": "Design Token 标准化迎来关键转折：W3C DTCG 规范草案获广泛采用",
+      "content": "W3C Design Token Community Group 推动的 DTCG 格式规范正被主流设计工具采纳。该规范统一了设计 Token 的 JSON 结构定义，让 Figma、Adobe XD、Sketch 等工具间的跨平台同步成为可能。随着 AI 生成 UI 对结构化设计系统需求的激增，标准化的 Token 格式成为设计系统与 AI 工具之间的关键接口。",
+      "quote": "设计 Token 标准化就像 USB-C 接口——早该统一，现在终于有人干了。",
+      "url": "https://www.w3.org/community/design-tokens/",
+      "source": "W3C Design Token Community Group",
+      "published": "2026-07-01",
+      "uid": "design_8a44739d"
+    },
+    {
+      "title": "微信 AI 助手小微全网最细体验",
+      "content": "微信在首页左上角推出原生 AI 助手小微，获得一级入口级的待遇。这可能是微信近年来最大的一次更新。小微不仅是一个聊天式 AI，还能调用公众号内容库、小程序服务、视频号场景和社群关系链。APPSO 深度体验后认为，AI 已成为微信连接一切的新起点，从对话式 AI 到真正的 Agent 能力。",
+      "quote": "微信终于把 AI 放到了该放的位置——不是实验功能，是一级入口。",
+      "url": "https://www.ifanr.com/1669694",
+      "source": "爱范儿",
+      "published": "2026-07-01",
+      "uid": "design_f248c303"
+    },
+    {
+      "title": "手机小组件为什么是 AI 必争之地",
+      "content": "Google I/O、WWDC、华为 HDC 三大系统发布会不约而同聚焦同一个方向：AI 驱动的 Vibe Coding 和动态小组件。Google Android 17 的创造我的小组件、华为 HarmonyOS 7 的小艺卡片、iOS 27 的自然语言快捷指令——手机桌面正在从静态图标网格进化成 AI 生成、千人千面的信息层。",
+      "quote": "三大系统巨头抄同一个作业，说明小组件就是 AI 落地的下一个超级入口。",
+      "url": "https://www.ifanr.com/1669508",
+      "source": "爱范儿",
+      "published": "2026-07-01",
+      "uid": "design_e6b31ee4"
+    },
+    {
+      "title": "Steam Machine 客厅 PC 产品定位引争议",
+      "content": "Valve 公布了 Steam Machine 的配置与价值方案，相较传统游戏主机高出不少。文章深入分析其产品设计困境：外形和场景接近主机，产品定位却对标小型游戏 PC。Steam Controller 虽然口碑不错，但整机组合的投入让性价比优势消失。Valve 在客厅 PC 品类上仍未找到大众市场的产品定位平衡点。",
+      "quote": "Steam Machine 的产品定位完美诠释了什么叫高不成低不就。",
+      "url": "https://www.ifanr.com/1669691",
+      "source": "爱范儿",
+      "published": "2026-07-01",
+      "uid": "design_80a92791"
+    },
+    {
+      "title": "别让功能门控变成只开关——让它灵活起来",
+      "content": "一篇来自 Hacker News 热榜的产品设计文章，讨论产品功能门控（Feature Gates）的设计原则。作者认为很多产品把门控做成简单的开/关二元选择，但实际上用户和产品在不同阶段需要的粒度完全不同。提出可灵活分层的门控方案：按用户群、按场景、按风险等级渐进式开放，让产品经理能更精准地控制功能交付节奏。",
+      "quote": "功能开关不是电灯开关，二值化思维只会让你错过灰度发布的精髓。",
+      "url": "https://wakamoleguy.com/p/flexible-gates",
+      "source": "Hacker News",
+      "published": "2026-07-01",
+      "uid": "design_43ccd861"
+    },
+    {
+      "title": "欧洲数字身份钱包的 UX 困境：底层依赖 Google/Apple 安全服务",
+      "content": "欧洲力推的数字身份钱包（EUDI Wallet）被曝底层严重依赖 Google SafetyNet 和 Apple 安全飞地。Waag 研究机构指出这造成了隐私悖论——号称去中心化的身份系统，认证链路却全走美国巨头。对 UX 团队来说，这意味着认证流程中出现第三方弹窗和权限请求，用户体验完全不可控。",
+      "quote": "号称去中心化的身份系统，认证链路却全走美国巨头。UX 团队完全不可控。",
+      "url": "https://waag.org/en/article/european-digital-id-wallets-are-gift-google-and-apple/",
+      "source": "Waag Futurelab",
+      "published": "2026-07-01",
+      "uid": "77bcfa1f89818365af01e0351190a360"
+    },
+    {
+      "title": "Open Source Low Tech：去技术化的开源设计运动",
+      "content": "HN 热榜第一的 Open Source Low Tech 项目掀起了一场'去技术化'设计运动——用低科技方案解决高科技问题。从手动水泵到太阳能脱水机，所有设计图纸开源、用常见材料可制作。这对产品设计师的启示是：最好的设计不一定是技术最先进的，而是最可及的。",
+      "quote": "最好的设计不一定是技术最先进的，而是最可及的。",
+      "url": "https://opensourcelowtech.org/",
+      "source": "HN / Open Source Low Tech",
+      "published": "2026-07-01",
+      "uid": "00b00008950eb3ea27e5ae3721c8d88c"
+    },
     {
       "title": "How To Make Your Design System AI-Ready",
       "content": "Smashing Magazine 发表实用指南，介绍如何让设计系统适配 AI 生成原型。核心策略包括：将设计决策视为基础设施、用 FigmaLint 审计设计系统质量、建立三层结构（Spec 文件 + Token 层 + 审计）。通过结构化 Markdown Spec 文件为 AI 提供精确指引，大幅提升 AI 原型质量。",
