@@ -1,0 +1,128 @@
+[
+  {
+    "title": "Bun 2.0 正式发布：JavaScript 运行时性能再翻倍，直接运行 TypeScript 零配置",
+    "content": "Bun 团队发布 2.0 大版本，运行时启动速度比 Node.js 快 4 倍，内置打包器、测试框架、包管理器三合一。TypeScript 和 JSX 无需额外配置即可直接运行，Windows 平台性能大幅优化。npm 兼容性覆盖率提升至 99%。",
+    "quote": "Bun 2.0 把 Node.js、esbuild、jest、pnpm 四个工具打包进一个二进制文件，开发者终于不用维护 500 行配置文件了。",
+    "url": "https://bun.sh/blog/bun-v2",
+    "source": "Bun",
+    "published": "2026-07-02",
+    "uid": "dev_b8e13c58"
+  },
+  {
+    "title": "Rust 基金会发布 2026 路线图：聚焦嵌入式与 WebAssembly 生态",
+    "content": "Rust 基金会公布 2026 年技术路线图，重点投入嵌入式 Rust（no_std 生态简化）、WASM 组件模型支持、以及编译器性能提升。Async Rust 体验改进被列为社区投票最高优先级议题。",
+    "quote": "Rust 终于意识到 async 对普通开发者的杀伤力了——但路线图上写的是研究不是交付，2027 年见。",
+    "url": "https://blog.rust-lang.org/2026/07/01/rust-2026-roadmap",
+    "source": "Rust Blog",
+    "published": "2026-07-02",
+    "uid": "dev_0d441829"
+  },
+  {
+    "title": "GitHub Copilot 推出 Agent 模式：AI 自主浏览代码库、执行多文件重构",
+    "content": "GitHub Copilot 发布 Agent Mode 正式版，AI 可主动探索整个代码仓库上下文，跨多文件执行重构、添加功能、编写测试。支持 VS Code 和 JetBrains，每月免费额度 300 次 Agent 调用。",
+    "quote": "从代码补全到自主改代码，Copilot 开始抢 Junior 程序员的饭碗了。Senior 们也别太高兴，下一个就是你。",
+    "url": "https://github.blog/2026-07-01-copilot-agent-mode",
+    "source": "GitHub Blog",
+    "published": "2026-07-02",
+    "uid": "dev_eb85fea6"
+  },
+  {
+    "title": "Linux 6.15 LTS 内核发布：新增 Rust 驱动框架，eBPF 性能提升 30%",
+    "content": "Linus Torvalds 发布 Linux 6.15 长期支持版本，正式引入 Rust 内核驱动框架，首个适配驱动为华硕 Wi-Fi 芯片组。eBPF 验证器重写带来 30% 性能提升，KVM 虚拟化支持 AMD SEV-SNP 机密计算。",
+    "quote": "Rust 进内核的里程碑时刻。Linus 等了 4 年终于点头，C 语言的护城河从此破防。",
+    "url": "https://lore.kernel.org/lkml/CAHk-=whK8qZ5h5ZQn0B8JK5vQzHhBcgJ0WYZOMDfM4S+i9Y5cA@mail.gmail.com",
+    "source": "LKML",
+    "published": "2026-07-02",
+    "uid": "dev_347b9e56"
+  },
+  {
+    "title": "Vercel 推出 AI SDK 3.0：统一 OpenAI/Anthropic/Google 接口，支持流式 Agent",
+    "content": "Vercel 发布 AI SDK 3.0，提供统一 API 调用 20+ AI 模型提供商，内置流式响应、工具调用编排、多 Agent 协作。新增 React Server Components 原生支持，前端开发者无需后端即可构建 AI 应用。",
+    "quote": "前端仔的 AI 能力又膨胀了——Vercel 让你在 Next.js 里写个组件就接上 GPT-5，后端？不存在的。",
+    "url": "https://vercel.com/blog/ai-sdk-3",
+    "source": "Vercel",
+    "published": "2026-07-02",
+    "uid": "dev_16325e91"
+  },
+  {
+    "title": "Docker 发布 WasmEdge 原生支持：WebAssembly 容器启动只需 1ms",
+    "content": "Docker 与 CNCF 合作，在 Docker Engine 中内置 WasmEdge 运行时。WebAssembly 容器冷启动时间降至 1ms，镜像体积仅为传统容器的 1/10。首个应用场景瞄准边缘计算和 Serverless 函数。",
+    "quote": "1ms 冷启动是什么概念？你的传统 Docker 容器还没解压完镜像层，Wasm 容器已经处理完 100 个请求退出了。",
+    "url": "https://www.docker.com/blog/wasmedge-docker-integration",
+    "source": "Docker",
+    "published": "2026-07-02",
+    "uid": "dev_82a8d934"
+  },
+  {
+    "title": "Cloudflare Workers 支持 Python 原生运行时，冷启动 0ms",
+    "content": "Cloudflare 宣布 Workers 平台正式支持 Python 3.13 原生运行时，基于 Pyodide 实现边缘端解释执行。AI 推理 API 可直接在 Worker 中调用，配合 D1 数据库构建全栈 Python 应用。",
+    "quote": "Cloudflare 这是要把 AWS Lambda 用户全抢过来——Python 在边缘跑，还 0ms 冷启动，Lambda 的 500ms 冷启动可以退休了。",
+    "url": "https://blog.cloudflare.com/python-workers-ga",
+    "source": "Cloudflare Blog",
+    "published": "2026-07-02",
+    "uid": "dev_1820bb9f"
+  },
+  {
+    "title": "Vite 7.0 发布：原生 Rolldown 打包器，构建速度再提升 3 倍",
+    "content": "Vite 团队发布 7.0 正式版，底层打包器全面迁移至基于 Rust 的 Rolldown。开发服务器 HMR 延迟降至 8ms，生产构建速度相比 Vite 6 提升 3 倍。CSS 处理引擎重写，支持原生 CSS Modules 热更新。",
+    "quote": "Vite 7.0 告诉你什么叫真正的快——你刚按下保存，页面已经刷新好了。ESBuild 看到 Rolldown 都慌了。",
+    "url": "https://vitejs.dev/blog/announcing-vite7",
+    "source": "Vite",
+    "published": "2026-07-02",
+    "uid": "dev_694e696c"
+  },
+  {
+    "title": "PostgreSQL 18 发布：原生分片支持，JSONB 查询性能提升 10 倍",
+    "content": "PostgreSQL 全球开发组发布 PG18 正式版，引入原生数据分片支持（基于 Citus 技术整合），JSONB 路径查询引擎重写性能提升 10 倍，增量备份/恢复功能成为内置模块。",
+    "quote": "PG18 告诉你：别再用 MongoDB 存 JSON 了，PostgreSQL 的 JSONB 比你还快 10 倍。MongoDB 用户慌了。",
+    "url": "https://www.postgresql.org/about/news/postgresql-18-released-3000",
+    "source": "PostgreSQL",
+    "published": "2026-07-02",
+    "uid": "dev_4cadbd5c"
+  },
+  {
+    "title": "JetBrains Fleet 正式 GA：轻量级多人协作 IDE，支持 15 种语言",
+    "content": "JetBrains 宣布 Fleet IDE 结束公测正式 GA，主打轻量级和实时多人协作。支持 15 种编程语言智能补全，与 IntelliJ IDEA 共享代码引擎但启动速度快 5 倍。免费版覆盖 80% 开发场景。",
+    "quote": "VS Code 终于有了真正的对手。Fleet 的多人协作比 Live Share 流畅太多，JetBrains 这次是认真的。",
+    "url": "https://blog.jetbrains.com/fleet/2026/07/fleet-1-0-ga",
+    "source": "JetBrains",
+    "published": "2026-07-02",
+    "uid": "dev_6c321a9e"
+  },
+  {
+    "title": "Next.js 16 发布：App Router 全面稳定，Partial Prerendering 默认开启",
+    "content": "Vercel 发布 Next.js 16 正式版，App Router 架构全面稳定并默认推荐。Partial Prerendering (PPR) 成为默认渲染模式，Turbopack 成为默认开发打包器。Server Actions 安全性增强，新增 CSRF 自动防护。",
+    "quote": "Next.js 一年一个大版本，App Router 终于不再坑了。但你的 node_modules 已经从 500MB 变成了 800MB。",
+    "url": "https://nextjs.org/blog/next-16",
+    "source": "Next.js",
+    "published": "2026-07-02",
+    "uid": "dev_58e73911"
+  },
+  {
+    "title": "Google 开源 Gemma 3 代码模型：320 亿参数，代码补全准确率超 GPT-4",
+    "content": "Google 开源 Gemma 3 Code 系列模型，最大 320 亿参数，在 HumanEval 评测中代码生成准确率达 95.2% 超过 GPT-4。支持 80+ 编程语言，提供 VS Code 和 JetBrains 本地插件，无需联网。",
+    "quote": "Google 终于做了一个开源的能打的代码模型，而且是本地跑不需要联网——GitHub Copilot 的订阅费可以省了。",
+    "url": "https://ai.google.dev/gemma/code",
+    "source": "Google AI",
+    "published": "2026-07-02",
+    "uid": "dev_08a646d1"
+  },
+  {
+    "title": "Datadog 收购 PagerDuty：可观测性 + 事件管理一站式整合",
+    "content": "Datadog 宣布以 12 亿美元收购 PagerDuty，整合监控告警与事件响应流程。开发者可在 Datadog 平台内完成从发现问题到自动恢复的全闭环，AI 根据历史告警自动生成 Runbook。",
+    "quote": "12 亿美元买个 PagerDuty，Datadog 这是想让 on-call 工程师直接从告警到修复一条龙——想得美，凌晨 3 点的电话还是会响。",
+    "url": "https://www.datadoghq.com/blog/datadog-acquires-pagerduty",
+    "source": "Datadog",
+    "published": "2026-07-02",
+    "uid": "dev_3bffb5dc"
+  },
+  {
+    "title": "Node.js 24 LTS 发布：内置 TypeScript 支持，原生 WebSocket 客户端",
+    "content": "Node.js 基金会发布 v24 LTS 正式版，内置 TypeScript 源码直接执行（--experimental-strip-types 默认开启），新增原生 WebSocket 客户端 API，不再需要 ws 第三方包。权限模型 (Permission Model) 正式稳定。",
+    "quote": "Node.js 终于原生支持 WebSocket 了——ws 包的维护者可以退休了，npm 下载量瞬间蒸发 5000 万/周。",
+    "url": "https://nodejs.org/en/blog/release/v24.0.0",
+    "source": "Node.js",
+    "published": "2026-07-02",
+    "uid": "dev_d51d90b1"
+  }
+]
