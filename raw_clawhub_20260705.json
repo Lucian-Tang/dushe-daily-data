@@ -1,0 +1,1357 @@
+[
+  {
+    "slug": "messaging",
+    "displayName": "Messaging",
+    "summary": "Agent-to-agent messaging client — create ephemeral sessions, exchange messages via pairing codes, poll with cursors. Server-side state is ephemeral (no accou...",
+    "description": null,
+    "topics": [
+      "Messaging"
+    ],
+    "tags": {
+      "latest": "0.9.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1296,
+      "installs": 46,
+      "stars": 1,
+      "versions": 15
+    },
+    "createdAt": 1772384700083,
+    "updatedAt": 1783186394549,
+    "latestVersion": {
+      "version": "0.9.0",
+      "createdAt": 1783177180960,
+      "changelog": "JSON message support (--json/--strict), MESSAGING.md reactive behavior docs, sanitized examples",
+      "license": "MIT-0"
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "changelog-gen",
+    "displayName": "Changelog Generator / Changelog 生成",
+    "summary": "Auto-generate changelogs from git history with semantic versioning. / 从 git 历史自动生成语义化版本 Changelog。",
+    "description": "Auto-generate changelogs from git history with semantic versioning. / 从 git 历史自动生成语义化版本 Changelog。",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1783186216698,
+    "updatedAt": 1783186216698,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1783186216698,
+      "changelog": "v1.0.0: Launch",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "sofagent-fde",
+    "displayName": "FDE",
+    "summary": "FDE 专属——装上之后 Agent 帮你走完四阶段十二步部署流程（进场→挖掘→交付→检查离场）， 识别 AI 节点、出部署方案、建知识库。你负责聊业务，Agent 负责出方案。",
+    "description": "FDE 专属——装上之后 Agent 帮你走完四阶段十二步部署流程（进场→挖掘→交付→检查离场）， 识别 AI 节点、出部署方案、建知识库。你负责聊业务，Agent 负责出方案。",
+    "topics": [],
+    "tags": {
+      "latest": "0.99.7"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 84,
+      "installs": 1,
+      "stars": 0,
+      "versions": 8
+    },
+    "createdAt": 1782654274836,
+    "updatedAt": 1783186180221,
+    "latestVersion": {
+      "version": "0.99.7",
+      "createdAt": 1783186180221,
+      "changelog": "- 更新版本至 0.99.7，修订 SKILL.md 文档内容。\n- 持续完善 Skill 安装和激活说明，保证各平台操作一致性。\n- 优化使用指南，无流程及功能变更。",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "sofagent",
+    "displayName": "Skill",
+    "summary": "当你的 Agent 反复偏离目标、任务越做越复杂、刚踩过的坑下次还踩 —— sofagent 能约束其行为、拆解复杂任务、从错误中沉淀教训。",
+    "description": "当你的 Agent 反复偏离目标、任务越做越复杂、刚踩过的坑下次还踩 —— sofagent 能约束其行为、拆解复杂任务、从错误中沉淀教训。",
+    "topics": [
+      "harness engineering",
+      "loop engineering",
+      "loop engine skill"
+    ],
+    "tags": {
+      "latest": "0.99.7",
+      "agent-governance": "0.72.0",
+      "ai-agent": "0.72.0",
+      "harness-engineering": "0.72.0",
+      "loop-engineering": "0.72.0",
+      "openclaw": "0.72.0",
+      "skill": "0.72.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 437,
+      "installs": 2,
+      "stars": 1,
+      "versions": 25
+    },
+    "createdAt": 1781857305971,
+    "updatedAt": 1783186169355,
+    "latestVersion": {
+      "version": "0.99.7",
+      "createdAt": 1783186169355,
+      "changelog": "- Removed the file: skill-card.md.\n- No changes to functionality or workflow; skill definition and documentation remain unchanged.\n- Streamlined project files by deleting unused documentation.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "clawseccheck",
+    "displayName": "ClawSecCheck — OpenClaw Security Self-Audit",
+    "summary": "Free, local security self-audit for your own OpenClaw agent. Reads your OpenClaw config, bootstrap files, log files, agent session logs, and installed skills...",
+    "description": "Free, local security self-audit for your own OpenClaw agent. Reads your OpenClaw config, bootstrap files, log files, agent session logs, and installed skills — all read-only, all on your machine. Scores your setup (A–F) and reports the most urgent holes — reports only, it never changes anything. No API key, no data leaves your machine.",
+    "topics": [
+      "agent-security",
+      "security-audit",
+      "lethal-trifecta",
+      "prompt-injection",
+      "mcp-security"
+    ],
+    "tags": {
+      "latest": "3.14.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 759,
+      "installs": 1,
+      "stars": 0,
+      "versions": 122
+    },
+    "createdAt": 1781897089573,
+    "updatedAt": 1783185708672,
+    "latestVersion": {
+      "version": "3.14.0",
+      "createdAt": 1783185708672,
+      "changelog": "Release 3.14.0 (4e4f7d173a9a287877810c7af5b9e1d9cd628b16)",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "darwin",
+        "linux",
+        "win32"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "smyx-reptile-feeding-refusal-vomiting-analysis",
+    "displayName": "Reptile Feeding Refusal / Vomiting Detection | 爬宠进食拒绝/呕吐识别",
+    "summary": "Through fixed enclosure cameras, the system analyzes feeding-time and post-feeding videos of reptiles (snakes, lizards, turtles) to detect prey-attack behavi...",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 279,
+      "installs": 6,
+      "stars": 0,
+      "versions": 4
+    },
+    "createdAt": 1781006687147,
+    "updatedAt": 1783185453109,
+    "latestVersion": {
+      "version": "1.0.2",
+      "createdAt": 1782643226104,
+      "changelog": "- Updated internal user identity handling: analysis and historical queries now use system-managed identity automatically, without ever exposing or requiring user-provided IDs.\n- Removed any prompts or requirements for the user to input open-id, username, or phone number.\n- Enhanced privacy and security: internal identifiers are never shown in responses, error messages, arguments, or documentation for users.\n- All report queries strictly fetch data from the cloud API; use of local memory, summaries, or long-term recall is forbidden.\n- Documentation revised for improved clarity and explicit privacy compliance, with new workflow and operation tables.\n- Obsolete files removed; example and reference documentation updated to match new behaviors.",
+      "license": "MIT-0"
+    },
+    "metadata": null
+  },
+  {
+    "slug": "x0x",
+    "displayName": "x0x",
+    "summary": "Secure computer-to-computer networking for AI agents — gossip broadcast, direct messaging, CRDTs, group encryption. Post-quantum encrypted, NAT-traversing. E...",
+    "description": "Secure computer-to-computer networking for AI agents — gossip broadcast, direct messaging, CRDTs, group encryption. Post-quantum encrypted, NAT-traversing. Everything you need to build any decentralized application.",
+    "topics": [],
+    "tags": {
+      "latest": "0.28.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1934,
+      "installs": 65,
+      "stars": 1,
+      "versions": 42
+    },
+    "createdAt": 1775062630296,
+    "updatedAt": 1783184450358,
+    "latestVersion": {
+      "version": "0.28.0",
+      "createdAt": 1783184450358,
+      "changelog": "Update x0x to v0.28.0.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "bigfish",
+    "displayName": "🎣 BigFish · AI钓鱼助手",
+    "summary": "🎣 AI钓鱼助手 — 拍水面分析鱼情，结合天气气压推荐鱼种·钓法·饵料。支持路亚、台钓、野钓、海钓，自动记录渔获和出钓报告，助你告别打龟。",
+    "description": null,
+    "topics": [
+      "天气"
+    ],
+    "tags": {
+      "ai": "0.1.8",
+      "analysis": "0.1.8",
+      "angler": "0.1.8",
+      "anglers": "0.1.8",
+      "angling": "0.1.8",
+      "bait": "0.1.8",
+      "bigfish": "0.1.8",
+      "china": "0.1.8",
+      "fishing": "0.1.8",
+      "fishing-forecast": "0.1.8",
+      "fishing-spot": "0.1.8",
+      "fishing-tips": "0.1.8",
+      "guide": "0.1.8",
+      "latest": "0.1.8",
+      "lure": "0.1.8",
+      "outdoor": "0.1.8",
+      "weather": "0.1.8"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 631,
+      "installs": 21,
+      "stars": 1,
+      "versions": 8
+    },
+    "createdAt": 1779884767225,
+    "updatedAt": 1783184167763,
+    "latestVersion": {
+      "version": "0.1.7",
+      "createdAt": 1781693098997,
+      "changelog": "新增功能概览描述，提升搜索匹配度（保留全部规则）",
+      "license": "MIT-0"
+    },
+    "metadata": null
+  },
+  {
+    "slug": "content-reviewer",
+    "displayName": "Content Reviewer",
+    "summary": "Use when the user asks to \"review this influencer content\" or \"check if this post meets brand guidelines\"; produces a structured review (brand alignment, mes...",
+    "description": "Use when the user asks to \"review this influencer content\" or \"check if this post meets brand guidelines\"; produces a structured review (brand alignment, message accuracy, compliance, quality, technical specs), an approve/revise/reject decision, and a constructive feedback message for the creator. Not for drafting the brief that sets the criteria — use brief-generator; not for the partnership agreement — use contract-helper.",
+    "topics": [],
+    "tags": {
+      "latest": "13.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1783184073760,
+    "updatedAt": 1783184073760,
+    "latestVersion": {
+      "version": "13.0.0",
+      "createdAt": 1783184073760,
+      "changelog": "- Major update: Fully rewritten and expanded SKILL.md with comprehensive documentation and reviewer workflow.\n- Clarifies activation triggers, quick start instructions, and required review steps for influencer content submissions.\n- Explicitly defines handoff artifact schema, gate decision mapping, and data source behaviors.\n- Distinguishes this skill from brief generation and contract tools; cross-links next-step skills.\n- Details fallback instructions for standalone installs and key references to runbooks and benchmarks.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "budget-optimizer",
+    "displayName": "Budget Optimizer",
+    "summary": "Use when the user asks to \"allocate my influencer budget\", \"optimize spend across tiers\", or \"compare budget scenarios\"; produces a tier/platform/content all...",
+    "description": "Use when the user asks to \"allocate my influencer budget\", \"optimize spend across tiers\", or \"compare budget scenarios\"; produces a tier/platform/content allocation table, ROI and CPM/CPE projections, scenario comparisons, and mid-campaign reallocation moves. Not for building the full campaign plan — use campaign-planner.",
+    "topics": [],
+    "tags": {
+      "latest": "13.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1783184044177,
+    "updatedAt": 1783184044177,
+    "latestVersion": {
+      "version": "13.0.0",
+      "createdAt": 1783184044177,
+      "changelog": "Version 13.0.0 introduces a major content and instruction overhaul for budget-optimizer.\n\n- Expanded skill description with use cases, step-by-step process, and detailed contract.\n- Clearer guidelines for when and how to use the skill, including scenario modeling and mid-campaign budget reallocation.\n- Enhanced support for both influencer and paid-ads budget allocation, with explicit data source instructions.\n- Added detailed requirements for output: labeled metrics, contingency allocation, and promotion of approved scenarios.\n- Improved documentation on connectors, data labeling, and next skill handoff.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "brief-generator",
+    "displayName": "Brief Generator",
+    "summary": "Use when the user asks to \"create an influencer brief\" or \"write a campaign brief\"; produces a structured creator brief with deliverables, key messages, crea...",
+    "description": "Use when the user asks to \"create an influencer brief\" or \"write a campaign brief\"; produces a structured creator brief with deliverables, key messages, creative direction, timeline, disclosure rules, and compensation terms. Not for choosing how to split spend across creators — use budget-optimizer.",
+    "topics": [],
+    "tags": {
+      "latest": "13.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1783184031357,
+    "updatedAt": 1783184031357,
+    "latestVersion": {
+      "version": "13.0.0",
+      "createdAt": 1783184031357,
+      "changelog": "Version 13.0.0 — Major update with expanded instructions and coverage for influencer campaign brief generation.\n\n- Overhauled instructions for capturing inputs, generating, and saving structured creator briefs.\n- Clarified support for platform/content-type variations (e.g., TikTok, Instagram, YouTube briefs).\n- Now requires explicit disclosure and usage rights—no unresolved placeholders if user input is provided.\n- Describes new data-promotion and file-writing behavior for durable campaign facts.\n- Explains handoff/next-step flow to budget-optimizer skill.\n- Lists connector integration options for claim verification and brief enrichment, though none are required for full operation.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "campaign-planner",
+    "displayName": "Campaign Planner",
+    "summary": "Use when the user asks to \"plan an influencer campaign\", \"build a campaign blueprint\", or \"launch a product with creators\"; produces campaign objectives, pla...",
+    "description": "Use when the user asks to \"plan an influencer campaign\", \"build a campaign blueprint\", or \"launch a product with creators\"; produces campaign objectives, platform and influencer-tier strategy, content requirements, a phased timeline, budget allocation, and KPI targets. Not for writing individual creator briefs — use brief-generator.",
+    "topics": [],
+    "tags": {
+      "latest": "13.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1783184016184,
+    "updatedAt": 1783184016184,
+    "latestVersion": {
+      "version": "13.0.0",
+      "createdAt": 1783184016184,
+      "changelog": "Major skill redesign: The Campaign Planner is now a full influencer campaign planning blueprint, replacing its prior purpose.\n\n- Expanded from a niche promo calendar generator to a comprehensive influencer campaign planner.\n- New output: end-to-end campaign plan covering objectives, strategy, influencer mix, content, timeline, budget, KPIs, and risk management.\n- Added detailed step-by-step instructions and fill-in templates (see references/templates.md).\n- Now supports tiered influencer strategies and platform splits with reference to influencer-tiers.md.\n- File and metadata structure updated; previous CraveGo-specific logic and signup focus removed.\n- Not for writing individual influencer briefs—handoff to brief-generator after plan approval.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "competitor-tracker",
+    "displayName": "Competitor Tracker",
+    "summary": "Use when the user asks to \"track competitor influencer marketing\", \"see who my rivals partner with\", or \"benchmark my influencer program\"; produces a competi...",
+    "description": "Use when the user asks to \"track competitor influencer marketing\", \"see who my rivals partner with\", or \"benchmark my influencer program\"; produces a competitor partnership roster, campaign and content-strategy breakdown, performance estimates, and a gap/opportunity list. Not for finding your own new creators — use influencer-discovery.",
+    "topics": [],
+    "tags": {
+      "latest": "13.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1783184000736,
+    "updatedAt": 1783184000736,
+    "latestVersion": {
+      "version": "13.0.0",
+      "createdAt": 1783184000736,
+      "changelog": "**Major update: Skill now specializes in competitor influencer marketing analysis.**\n\n- Refocused from product/price tracking to monitoring competitors’ influencer partnerships and campaign strategies.\n- Skill description, summary, and usage guidance fully rewritten for influencer marketing benchmarking.\n- New instructions and workflow for capturing competitor creator rosters, campaign/strategy analysis, and surfacing gaps/opportunities.\n- Outputs include partnership rosters, campaign breakouts, comparisons, and actionable insight reports.\n- File templates and reference documentation updated; legacy skill-card.md removed, new templates.md added.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "wechat-aiagent-dev",
+    "displayName": "微信AI接入顾问",
+    "summary": "微信小程序AI怎么接，先别急着写代码 开发模式/自动模式怎么选，商品服务怎么结构化，一次讲清 说你的业务就能出接入方案和代码骨架",
+    "description": null,
+    "topics": [
+      "开发模式",
+      "微信Agent",
+      "Geo",
+      "商家增长",
+      "小程序AI"
+    ],
+    "tags": {
+      "latest": "1.4.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 221,
+      "installs": 4,
+      "stars": 0,
+      "versions": 4
+    },
+    "createdAt": 1781281154301,
+    "updatedAt": 1783182851583,
+    "latestVersion": {
+      "version": "1.3.1",
+      "createdAt": 1782577763685,
+      "changelog": "修复打包：移除.tpl文件，模板合并到references/code-templates.md",
+      "license": "MIT-0"
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "smyx-crawl-analysis",
+    "displayName": "Reptile Pet Health Diagnosis Tool | 爬行类宠物健康诊断分析工具",
+    "summary": "Triggers diagnostic analysis when users provide video URLs or files for reptiles such as lizards, snakes, and spiders. Supports uploading local videos or net...",
+    "description": "Triggers diagnostic analysis when users provide video URLs or files for reptiles such as lizards, snakes, and spiders. Supports uploading local videos or network URLs to call the server-side API for health checks. It analyzes features like scales, skin, and body appearance to identify potential diseases and generate a Pet Safety Guardian health report. | 爬行类宠物健康诊断分析工具，当用户提供蜥蜴、蛇、蜘蛛等爬行宠物的视频 URL 或文件需要分析时，触发本技能进行爬行宠物健康诊断分析；支持通过上传本地视频或网络视频 URL，调用服务端 API 进行爬行宠物健康检查，分析鳞片、皮肤、身体外观等特征，识别潜在疾病并输出宠安卫士健康报告",
+    "topics": [
+      "Crawl",
+      "Health",
+      "健康"
+    ],
+    "tags": {
+      "latest": "1.0.7"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 707,
+      "installs": 23,
+      "stars": 4,
+      "versions": 8
+    },
+    "createdAt": 1776233207443,
+    "updatedAt": 1783182270460,
+    "latestVersion": {
+      "version": "1.0.7",
+      "createdAt": 1783182270460,
+      "changelog": "- Updated internal scripts: config.py, dao.py, and util.py with minor changes.\n- SKILL.md updated: version increased from 1.0.4 to 1.0.6, with minor corrections and reformatting.\n- Removed the file skill-card.md.\n- No major changes to core features or user interface.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "meta-tags-optimizer-2",
+    "displayName": "Meta Tags Optimizer",
+    "summary": "Use when the user asks to \"optimize title tag\", \"write meta description\", \"improve CTR\", \"Open Graph tags\", \"social media preview\", \"my title tag needs work\"...",
+    "description": null,
+    "topics": [
+      "Twitter"
+    ],
+    "tags": {
+      "latest": "0.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 623,
+      "installs": 22,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1772023366709,
+    "updatedAt": 1783182116758,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1772023366709,
+      "changelog": "Initial release of Meta Tags Optimizer.\n\n- Generates and optimizes meta tags, including title tags, meta descriptions, Open Graph tags, and Twitter cards.\n- Designed to increase click-through rates (CTR) and enhance social sharing previews.\n- Includes step-by-step guidance for creating new meta tags or optimizing existing ones.\n- Supports manual data input and integration with SEO tools for automated data collection.\n- Provides structured, recommendation-based outputs with clear rationale for each suggestion.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "biliyoutik2brain",
+    "displayName": "BiliYouTik2Brain",
+    "summary": "视频→结构化知识引擎 v4.0。触发：B站/YouTube/抖音/小红书链接→转录+结构化分析+知识归档。不触发：纯文本内容/非视频链接/无URL的对话。单条命令完成采集→转录→LLM修复→分析→保存。支持一键部署、4+N平台插件、反爬中间件、OCR关键帧、多格式输出(笔记/卡片/富文本/错题)、反馈闭环、图文并...",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "4.0.5"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 1,
+      "versions": 6
+    },
+    "createdAt": 1783090789572,
+    "updatedAt": 1783181091729,
+    "latestVersion": {
+      "version": "4.0.4",
+      "createdAt": 1783180962355,
+      "changelog": "BiliYouTik2Brain v4.0.4 — 安全修整版\n\n- eval() 替换为安全的 dict 映射（system_monitor.py）\n- SSL 证书验证禁用由统一函数管理，提升代码安全性\n- 安装脚本中的敏感 Key 样例更换为安全占位符\n- 全量扫描，移除所有硬编码密钥",
+      "license": "MIT-0"
+    },
+    "metadata": null
+  },
+  {
+    "slug": "git-branch-cleaner",
+    "displayName": "Git Branch Cleaner / Git 分支清理",
+    "summary": "Clean stale local and remote branches with safe merge checks. / 安全清理过时的本地和远程分支。",
+    "description": "Clean stale local and remote branches with safe merge checks. / 安全清理过时的本地和远程分支。",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1783180815267,
+    "updatedAt": 1783180815267,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1783180815267,
+      "changelog": "v1.0.0: Launch",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "sonoscli",
+    "displayName": "Sonoscli",
+    "summary": "Control Sonos speakers (discover/status/play/volume/group).",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 85372,
+      "installs": 2799,
+      "stars": 56,
+      "versions": 1
+    },
+    "createdAt": 1767545381030,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545381030,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "gog",
+    "displayName": "Gog",
+    "summary": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+    "description": null,
+    "topics": [
+      "Gmail",
+      "Calendar",
+      "Docs"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 36,
+      "downloads": 187842,
+      "installs": 5457,
+      "stars": 936,
+      "versions": 1
+    },
+    "createdAt": 1767545346060,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545346060,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "github",
+    "displayName": "Github",
+    "summary": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
+    "description": null,
+    "topics": [
+      "GitHub"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 7,
+      "downloads": 192061,
+      "installs": 7621,
+      "stars": 647,
+      "versions": 1
+    },
+    "createdAt": 1767545344344,
+    "updatedAt": 1781268517834,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545344344,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "weather",
+    "displayName": "Weather",
+    "summary": "Get current weather and forecasts (no API key required).",
+    "description": null,
+    "topics": [
+      "Current Weather"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 6,
+      "downloads": 162557,
+      "installs": 6481,
+      "stars": 421,
+      "versions": 1
+    },
+    "createdAt": 1767545394459,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545394459,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-whisper",
+    "displayName": "Openai Whisper",
+    "summary": "Local speech-to-text with the Whisper CLI (no API key).",
+    "description": null,
+    "topics": [
+      "Speech-to-Text"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 2,
+      "downloads": 85589,
+      "installs": 2965,
+      "stars": 329,
+      "versions": 1
+    },
+    "createdAt": 1767545365755,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545365755,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "skill-creator",
+    "displayName": "Skill Creator",
+    "summary": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "0.1.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 93219,
+      "installs": 3401,
+      "stars": 326,
+      "versions": 1
+    },
+    "createdAt": 1769522677376,
+    "updatedAt": 1778987225295,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1769522677376,
+      "changelog": "Initial release of skill-creator, a comprehensive guide for designing modular skills to extend Claude’s capabilities.\n\n- Introduces principles for creating effective, concise, and domain-specific skills.\n- Explains modular structure: required SKILL.md and optional scripts, references, and assets folders.\n- Outlines guidelines for what to include (and exclude) in a skill package.\n- Details progressive disclosure design for efficient context management.\n- Provides reference patterns for organizing content and bundling resources.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "notion",
+    "displayName": "Notion",
+    "summary": "Notion API for creating and managing pages, databases, and blocks.",
+    "description": null,
+    "topics": [
+      "Notion"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 93739,
+      "installs": 3207,
+      "stars": 264,
+      "versions": 1
+    },
+    "createdAt": 1767545360889,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545360889,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "obsidian",
+    "displayName": "Obsidian",
+    "summary": "Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 9,
+      "downloads": 104125,
+      "installs": 4110,
+      "stars": 438,
+      "versions": 1
+    },
+    "createdAt": 1767545362143,
+    "updatedAt": 1779137320034,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545362143,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "gemini",
+    "displayName": "Gemini",
+    "summary": "Gemini CLI for one-shot Q&A, summaries, and generation.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 5,
+      "downloads": 34958,
+      "installs": 1471,
+      "stars": 56,
+      "versions": 1
+    },
+    "createdAt": 1767545316392,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545316392,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "mcporter",
+    "displayName": "Mcporter",
+    "summary": "Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 67914,
+      "installs": 2173,
+      "stars": 196,
+      "versions": 1
+    },
+    "createdAt": 1767545355897,
+    "updatedAt": 1779137319429,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545355897,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "nano-banana-pro",
+    "displayName": "Nano Banana Pro",
+    "summary": "Generate/edit images with Nano Banana Pro (Gemini 3 Pro Image). Use for image create/modify requests incl. edits. Supports text-to-image + image-to-image; 1K/2K/4K; use --input-image.",
+    "description": null,
+    "topics": [
+      "Image Generation"
+    ],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 104440,
+      "installs": 3102,
+      "stars": 411,
+      "versions": 2
+    },
+    "createdAt": 1767545358090,
+    "updatedAt": 1779137307565,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767651987917,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "model-usage",
+    "displayName": "Model Usage",
+    "summary": "Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a scriptable per-model summary from codexbar cost JSON.",
+    "description": null,
+    "topics": [
+      "Json",
+      "Summarize"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 38492,
+      "installs": 1590,
+      "stars": 113,
+      "versions": 1
+    },
+    "createdAt": 1767667639455,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767667639455,
+      "changelog": "- Initial release of the model-usage skill for summarizing per-model usage and cost from CodexBar CLI local cost logs.\n- Supports both Codex and Claude providers.\n- Allows fetching summaries for the current (most recent) model or all models.\n- Provides both text and JSON output formats.\n- Can process costs directly from CodexBar CLI output or from a JSON file/stdin.\n- Includes guidance for CLI use and script automation.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "darwin"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "video-frames",
+    "displayName": "Video Frames",
+    "summary": "Extract frames or short clips from videos using ffmpeg.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 52900,
+      "installs": 1607,
+      "stars": 132,
+      "versions": 1
+    },
+    "createdAt": 1767545391700,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545391700,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "blogwatcher",
+    "displayName": "Blogwatcher",
+    "summary": "Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.",
+    "description": null,
+    "topics": [
+      "RSS"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 43513,
+      "installs": 1515,
+      "stars": 71,
+      "versions": 1
+    },
+    "createdAt": 1767545299849,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545299849,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "nano-pdf",
+    "displayName": "Nano Pdf",
+    "summary": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+    "description": null,
+    "topics": [
+      "PDF"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 114274,
+      "installs": 4357,
+      "stars": 264,
+      "versions": 1
+    },
+    "createdAt": 1767545359433,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545359433,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "session-logs",
+    "displayName": "Session-logs",
+    "summary": "Search and analyze your own session logs (older/parent conversations) using jq.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 42264,
+      "installs": 1677,
+      "stars": 30,
+      "versions": 1
+    },
+    "createdAt": 1770136427000,
+    "updatedAt": 1778486000320,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1770136427000,
+      "changelog": "Initial release of session-logs.\n\n- Enables searching and analyzing your session logs (past conversations) with jq and ripgrep (rg).\n- Provides bash command examples for session discovery, keyword searches, extracting messages, cost summaries, and tool usage breakdowns.\n- Documents JSONL session file structure, roles, and content types.\n- Lists session log file locations and naming conventions.\n- Includes tips for managing and querying large, append-only session histories.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "himalaya",
+    "displayName": "Himalaya",
+    "summary": "CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).",
+    "description": null,
+    "topics": [
+      "Email",
+      "Message"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 46559,
+      "installs": 1551,
+      "stars": 69,
+      "versions": 1
+    },
+    "createdAt": 1767954271328,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767954271328,
+      "changelog": "Initial release of Himalaya CLI email client skill.\n\n- Provides terminal-based email management via IMAP/SMTP.\n- Supports listing, reading, composing, replying, forwarding, searching, and organizing emails.\n- Includes multi-account support and message composition with MML.\n- Detailed setup and configuration instructions included.\n- Enables handling attachments, output customization, and debugging via logging.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "sag",
+    "displayName": "Sag",
+    "summary": "ElevenLabs text-to-speech with mac-style say UX.",
+    "description": null,
+    "topics": [
+      "Text-to-Speech"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 27291,
+      "installs": 1265,
+      "stars": 27,
+      "versions": 1
+    },
+    "createdAt": 1767545376535,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545376535,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "ELEVENLABS_API_KEY",
+          "required": true
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "goplaces",
+    "displayName": "Goplaces",
+    "summary": "Query Google Places API (New) via the goplaces CLI for text search, place details, resolve, and reviews. Use for human-friendly place lookup or JSON output for scripts.",
+    "description": null,
+    "topics": [
+      "Json"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 23176,
+      "installs": 1255,
+      "stars": 30,
+      "versions": 1
+    },
+    "createdAt": 1767545347454,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545347454,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "GOOGLE_PLACES_API_KEY",
+          "required": true
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "slack",
+    "displayName": "Slack",
+    "summary": "Use when you need to control Slack from Clawdbot via the slack tool, including reacting to messages or pinning/unpinning items in Slack channels or DMs.",
+    "description": null,
+    "topics": [
+      "Slack"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 12,
+      "downloads": 48521,
+      "installs": 1487,
+      "stars": 160,
+      "versions": 1
+    },
+    "createdAt": 1767545378002,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545378002,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "peekaboo",
+    "displayName": "Peekaboo",
+    "summary": "Capture and automate macOS UI with the Peekaboo CLI.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 4,
+      "downloads": 30818,
+      "installs": 1350,
+      "stars": 83,
+      "versions": 1
+    },
+    "createdAt": 1767545373660,
+    "updatedAt": 1779137309055,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545373660,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "darwin"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-image-gen",
+    "displayName": "Openai Image Gen",
+    "summary": "Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.",
+    "description": null,
+    "topics": [
+      "Prompt"
+    ],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 24886,
+      "installs": 1126,
+      "stars": 37,
+      "versions": 2
+    },
+    "createdAt": 1767545364210,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767652000401,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "tmux",
+    "displayName": "Tmux",
+    "summary": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 29730,
+      "installs": 1415,
+      "stars": 43,
+      "versions": 1
+    },
+    "createdAt": 1767545387948,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545387948,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "darwin",
+        "linux"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "gifgrep",
+    "displayName": "Gifgrep",
+    "summary": "Search GIF providers with CLI/TUI, download results, and extract stills/sheets.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 18903,
+      "installs": 1222,
+      "stars": 7,
+      "versions": 2
+    },
+    "createdAt": 1767488226016,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767545342229,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-whisper-api",
+    "displayName": "Openai Whisper Api",
+    "summary": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
+    "description": null,
+    "topics": [
+      "Audio",
+      "Transcribe"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 26184,
+      "installs": 1185,
+      "stars": 52,
+      "versions": 1
+    },
+    "createdAt": 1767545368103,
+    "updatedAt": 1779137313987,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545368103,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "OPENAI_API_KEY",
+          "required": true
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  }
+]

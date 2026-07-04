@@ -1,0 +1,110 @@
+[
+  {
+    "title": "Mistral 开源 Leanstral 1.5：用 Lean 4 自动证明数学定理，PutnamBench 解出 587/672 题",
+    "content": "**来源：Mistral AI | 2026-07-05** Mistral AI 发布 Leanstral 1.5，一个基于 Apache 2.0 许可证的开源形式化验证模型，总参数量 119B，仅 6B 激活参数。该模型在 miniF2F 基准上达到 100%，在 PutnamBench 上解出 587/672 题，在 FATE-H（87%）和 FATE-X（34%）上刷新 SOTA。Leanstral 1.5 还能对真实代码仓库做形式化验证，扫描 57 个开源项目发现 5 个未公开 bug，包括 Rust 库 varinteger 的溢出漏洞。通过 Apollo API 可免费使用。 🔗 https://mistral.ai/news/leanstral-1-5/",
+    "quote": "当其他模型在卷聊天和写诗时，Mistral 让 AI 去证明数学定理了——还真的发现了代码里的漏洞。",
+    "source": "",
+    "url": "https://mistral.ai/news/leanstral-1-5/",
+    "published": "2026-07-05",
+    "uid": "ai_feaca8bf"
+  },
+  {
+    "title": "企业 AI 模型对冲策略已成标配：Fable 5 遭出口管制后 VB Pulse 调研显示三分之二已备后手",
+    "content": "**来源：VentureBeat | 2026-07-05** VentureBeat Pulse Research 调研 145 家大型企业发现，Fable 5 因美国政府出口管制被全面下线后，三分之二企业已建立 AI 模型备用方案：51% 混合使用闭源前沿模型和自部署开源模型，16% 核心工作流完全脱离闭源 API。仅 1/10 企业具备自动化 AI 监控能力，79% 已遭遇自主 Agent 失控导致的实际损失。调研覆盖 CIO/CTO 级受访者，揭示 AI 部署速度远超治理能力的「控制鸿沟」。 🔗 https://venturebeat.com/orchestration/enterprises-lost-claude-fable-5-for-a-few-weeks-new-data-shows-two-thirds-had-already-built-their-hedge",
+    "quote": "Fable 5 被禁三周，企业发现：没有一个模型是安全的，养两个备胎才是企业 AI 的基操。",
+    "source": "",
+    "url": "https://venturebeat.com/orchestration/enterprises-lost-claude-fable-5-for-a-few-weeks-new-data-shows-two-thirds-had-already-built-their-hedge",
+    "published": "2026-07-05",
+    "uid": "ai_473556bb"
+  },
+  {
+    "title": "Trunk Tools 自建三层 AI 架构：放弃通用模型，专注建筑行业文档审查从 60 天缩至 10 天",
+    "content": "**来源：VentureBeat | 2026-07-05** 建筑项目管理公司 Trunk Tools 放弃了通用大模型路线，自建「感知—语义—Agent」三层 AI 架构。CEO Sarah Buchner（前木匠出身）表示，通用 LLM「什么都行就意味着什么都不专」。新架构基于行业知识图谱和微调模型，文档审查周期从 60 天缩减到 10 天，并提前发现高成本现场错误。CTO Amrish Kapoor 指出，transformers 的概率本质决定了其在精确符号解读上的先天不足，而建筑图纸上 2mm 的符号差异可能意味着天壤之别。 🔗 https://venturebeat.com/orchestration/trunk-tools-stack-cut-document-review-from-60-days-to-10-by-ditching-general-purpose-models",
+    "quote": "通用模型什么都懂一点但什么都不精——与其围着 GPT 转，不如给自家行业造个专属大脑。",
+    "source": "",
+    "url": "https://venturebeat.com/orchestration/trunk-tools-stack-cut-document-review-from-60-days-to-10-by-ditching-general-purpose-models",
+    "published": "2026-07-05",
+    "uid": "ai_ece4b526"
+  },
+  {
+    "title": "Z.ai 发布 ZCode：GLM-5.2 原生的 Agent 编码 IDE，支持微信/飞书远程操控",
+    "content": "**来源：VentureBeat | 2026-07-05** 智谱 AI（现名 Z.ai）正式发布 ZCode，一款为 GLM-5.2 量身打造的 Agent 优先开发环境。不同于传统 IDE 的 AI 侧栏插件，ZCode 以任务驱动的 Agent 为核心，自动规划、编辑、测试和迭代。其独特功能是支持通过微信、飞书、Telegram 远程操控编码 Agent，契合中国开发者习惯。ZCode 免费下载，付费订阅 $16.20/月起，远低于 Cursor 和 Claude Code。同时支持 BYOK 接入第三方模型，截至 7 月底有 1.5 倍用量加赠活动。 🔗 https://venturebeat.com/technology/z-ai-launches-zcode-to-challenge-cursor-claude-code-and-github-copilot-in-ai-coding",
+    "quote": "ZCode 最骚的操作是用微信遥控写代码——摸鱼时也能远程改 bug，中国特色的 AI IDE。",
+    "source": "",
+    "url": "https://venturebeat.com/technology/z-ai-launches-zcode-to-challenge-cursor-claude-code-and-github-copilot-in-ai-coding",
+    "published": "2026-07-05",
+    "uid": "ai_57a70085"
+  },
+  {
+    "title": "Anthropic 开发者揭秘 Fable 5 提示词心法：痛点不在模型，在于你自己的盲区",
+    "content": "**来源：The Decoder | 2026-07-05** Anthropic 开发者 Thariq Shihipar 撰文分享 Fable 5 的提示词技巧，核心观点是：Fable 5 时代，输出质量的上限不再是模型本身，而是用户自己「不知道自己不知道」的盲区。他提出「盲区扫描」（blindspot pass）技术——让 Claude 先帮你发现你没考虑过的维度。他建议在正式开始编码前，先用探索和头脑风暴阶段主动定义项目范围。他还指出「过于具体」和「过于模糊」同样有害，最优解是告诉 Claude 你当前的思考起点和经验水平。 🔗 https://the-decoder.com/anthropic-developer-shares-prompting-tips-for-fable-5-that-focus-on-finding-your-own-blind-spots-first/",
+    "quote": "Fable 5 很强，但天花板变成了你的脑子——Anthropic 开发者说：先问问自己不知道什么，再跟 AI 对话。",
+    "source": "",
+    "url": "https://the-decoder.com/anthropic-developer-shares-prompting-tips-for-fable-5-that-focus-on-finding-your-own-blind-spots-first/",
+    "published": "2026-07-05",
+    "uid": "ai_ee2b8bfe"
+  },
+  {
+    "title": "Microsoft 斥资 25 亿美元成立 Frontier Company：6000 名 AI 工程师进驻企业客户",
+    "content": "**来源：The Decoder | 2026-07-05** Microsoft 宣布成立新业务单元「Frontier Company」，配备 25 亿美元预算和 6000 名行业与工程专家，直接嵌入企业客户内部「共同设计、部署和持续改进 AI 系统」。这是对 OpenAI 和 Anthropic 的企业部署策略的正面回应——OpenAI 此前已成立 DeployCo（40 亿美元、150 名工程师），Anthropic 也设立类似部署公司。三家 AI 巨头殊途同归：仅靠聊天工具搞不定企业 AI 落地，需要工程师驻场「把 AI 织进业务流程」。 🔗 https://the-decoder.com/microsoft-launches-2-5-billion-frontier-company-to-embed-6000-ai-engineers-inside-enterprise-clients/",
+    "quote": "OpenAI、Anthropic、Microsoft 都发现了同一个真相：企业 AI 落地需要工程师驻场，光靠 API 赚不到那笔钱。",
+    "source": "",
+    "url": "https://the-decoder.com/microsoft-launches-2-5-billion-frontier-company-to-embed-6000-ai-engineers-inside-enterprise-clients/",
+    "published": "2026-07-05",
+    "uid": "ai_f1f63fb6"
+  },
+  {
+    "title": "Ford 重聘「灰发工程师」：AI 质检系统不如老师傅，已造成数百万美元损失",
+    "content": "**来源：TechCrunch | 2026-07-05** Ford 汽车高管承认，公司在质量检测上「越来越依赖自动化 AI 系统」结果令人失望，已召回 350 名资深工程师（部分为退休返聘）。Ford 硬件工程副总裁 Charles Poon 坦言：「我们错误地认为，引入 AI 加消化设计需求就能产出高质量产品。」这些「灰发工程师」负责在零件进入工厂前预判故障点，并训练年轻员工和 AI 工具。Ford CEO 称此举已节省数亿美元保修和召回成本，JD Power 新车质量调查中 Ford 也重回主流品牌榜首。 🔗 https://techcrunch.com/2026/06/28/ford-rehires-gray-beard-engineers-after-ai-falls-short/",
+    "quote": "Ford：AI 质检不行。老师傅：我们早就知道了。结论：经验这玩意儿，GPT 真的学不会。",
+    "source": "",
+    "url": "https://techcrunch.com/2026/06/28/ford-rehires-gray-beard-engineers-after-ai-falls-short/",
+    "published": "2026-07-05",
+    "uid": "ai_bb6bd2b1"
+  },
+  {
+    "title": "Wafer 在 AMD MI355X 上跑通 GLM-5.2：MXFP4 量化无损，推理性价比超 NVIDIA B200",
+    "content": "**来源：Wafer AI | 2026-07-05** AI 推理基础设施公司 Wafer 在 AMD Instinct MI355X 上成功部署智谱 GLM-5.2（1.6T MoE），采用 AMD Quark 工具链量化至 MXFP4 精度，在 GPQA、GSM8K 等评测中近乎无损。单流达 213 tok/s（AA 标准），20K 输入/1K 输出场景下聚合吞吐 2626 tok/s/node，达到 B200 的 80% 性能，但 GPU 成本仅 1/2.75。Wafer 还绕过了 ROCm 栈的 MTP 支持限制，开启推测解码后吞吐提升近 3 倍。 🔗 https://www.wafer.ai/blog/glm52-amd",
+    "quote": "AMD MI355X 跑 GLM-5.2 达到 B200 八成功力、价格只要三分之一——NVIDIA 的护城河看着也没那么深了。",
+    "source": "",
+    "url": "https://www.wafer.ai/blog/glm52-amd",
+    "published": "2026-07-05",
+    "uid": "ai_b71b301e"
+  },
+  {
+    "title": "Google 发布 Nano Banana 2 Lite：4 秒出图，每千张仅 3.4 美分",
+    "content": "**来源：VentureBeat | 2026-07-05** Google 推出 Nano Banana 2 Lite（官方代号 Gemini 3.1 Flash-Lite Image），定位最快且成本最低的企业级 AI 图像生成模型。4 秒生成一张 1K 分辨率图片，定价每千张仅 3.4 美分，直接对标竞品 Krea 2 Turbo。模型基于 Gemini 3.1 Flash Lite 架构，在角色一致性、本地化排版渲染上做了增强。通过 Google AI Studio、Gemini API 和 GEAP 企业平台可用。Lite 版本仅支持 1K 分辨率，但换来极致速度和成本优势。 🔗 https://venturebeat.com/technology/google-unveils-nano-banana-2-lite-aka-gemini-3-1-flash-lite-for-low-cost-4-second-fast-enterprise-image-generations",
+    "quote": "4 秒出图加千张三毛四——Google 的图像模型卷到了白菜价，Midjourney 的月费还能撑多久？",
+    "source": "",
+    "url": "https://venturebeat.com/technology/google-unveils-nano-banana-2-lite-aka-gemini-3-1-flash-lite-for-low-cost-4-second-fast-enterprise-image-generations",
+    "published": "2026-07-05",
+    "uid": "ai_db9d2af3"
+  },
+  {
+    "title": "Liquid AI 发布 2.3 亿参数 LFM2.5-230M：超轻量模型，树莓派上跑 42 tok/s",
+    "content": "**来源：VentureBeat | 2026-07-05** MIT 前研究员创立的 Liquid AI 发布 LFM2.5-230M，一个仅 2.3 亿参数的边缘 AI 模型，采用 LFM2 混合架构（门控短程卷积加 GQA），在数据提取任务上击败 4 倍于其规模的 Qwen3.5-0.8B 和 Gemma 3 1B。32K 上下文窗口，内存占用低于 400MB——三星 S25 Ultra 上达 213 tok/s，即使在树莓派 5 上也有 42 tok/s。免费用于年收入低于 1000 万美元的个人和公司，针对数据提取管道和边缘自主 Agent 场景设计。 🔗 https://venturebeat.com/technology/liquid-ais-smallest-model-yet-lfm2-5-230m-beats-models-4x-its-size-at-data-extraction-can-run-anywhere",
+    "quote": "2.3 亿参数的模型在树莓派上跑出 42 tok/s——当巨头卷万亿参数时，有人在让空调遥控器也能跑 AI。",
+    "source": "",
+    "url": "https://venturebeat.com/technology/liquid-ais-smallest-model-yet-lfm2-5-230m-beats-models-4x-its-size-at-data-extraction-can-run-anywhere",
+    "published": "2026-07-05",
+    "uid": "ai_d2939863"
+  },
+  {
+    "title": ".6 万人研究揭示 AI 隐藏学习成本：用 AI 写作业的学生成绩反而下降 24%",
+    "content": "**来源：The Decoder | 2026-07-05** 一项覆盖 26,000 名中国学生的研究发现：使用 AI 完成作业的学生虽然完成更快、得分更高，但在正式考试中表现比不使用者差 24%。更关键的是，这种负面影响需要约两年才在升学考试结果中显现，意味着任何短期研究都会系统性低估 AI 对学习的伤害。研究引发教育界重新审视 AI 工具在课堂中的角色——当 AI 替学生「思考」时，长期来看知识内化反而被削弱了。 🔗 https://the-decoder.com/a-26000-student-study-shows-ais-hidden-learning-cost-takes-two-full-years-to-surface/",
+    "quote": "AI 帮你写作业一时爽，两年后的考场火葬场——这篇论文建议所有 AI 教育公司先读十遍。",
+    "source": "",
+    "url": "https://the-decoder.com/a-26000-student-study-shows-ais-hidden-learning-cost-takes-two-full-years-to-surface/",
+    "published": "2026-07-05",
+    "uid": "ai_fe84159a"
+  },
+  {
+    "title": "Anthropic 启动自有药物研发计划：瞄准大药企看不上的「不赚钱」疾病",
+    "content": "**来源：The Decoder | 2026-07-05** Anthropic 宣布启动自营药物开发项目，针对被制药行业认为「无利可图」的罕见病和被忽视疾病。诺华 CEO Vas Narasimhan 认为，AI 可将药物研发周期从 12 年缩短至 7-8 年，成功率从 8% 翻倍至 16%。Anthropic 此前已推出 Claude Science 平台，可生成 3D 蛋白质结构等科学可视化。这是 AI 公司从「卖模型」到「用模型做产品」的又一标志性动作——直接下场做药而不是只卖 API。 🔗 https://the-decoder.com/anthropic-launches-its-own-drug-discovery-programs-to-tackle-diseases-big-pharma-considers-unprofitable/",
+    "quote": "Anthropic 不满足于卖 API 了——直接下海做药，专治大药厂嫌不赚钱的病。AI 公司卷到新高度。",
+    "source": "",
+    "url": "https://the-decoder.com/anthropic-launches-its-own-drug-discovery-programs-to-tackle-diseases-big-pharma-considers-unprofitable/",
+    "published": "2026-07-05",
+    "uid": "ai_fe06c034"
+  }
+]
