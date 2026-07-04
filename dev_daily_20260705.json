@@ -1,0 +1,110 @@
+[
+  {
+    "title": "Half-Baked Product：为什么半成品比完美产品更值钱",
+    "content": "一篇引爆开发者社区的雄文，阐述「半成品发布」哲学：先交付核心功能，让用户在真实场景中帮你打磨产品。24小时内获1052顶帖、314条评论。",
+    "quote": "Stop polishing what nobody asked for. Ship the half-baked thing, let users tell you which half matters, then bake that half to perfection.",
+    "url": "https://weli.dev/blog/half-baked-product/",
+    "source": "Hacker News",
+    "published": "2026-07-05",
+    "uid": "dev_6387ec6c"
+  },
+  {
+    "title": "Claude 别记垃圾了：Agent 无差别记忆正在毁掉你的 Token 预算",
+    "content": "一篇辛辣的文章指出 AI 编程 Agent 正在盲目记忆每次会话的所有内容，导致上下文膨胀、响应变慢。呼吁 Agent 工具应学会选择性记忆而非全盘记录。",
+    "quote": "Claude, please stop trying to memorize random crap. Not every session transcript is worth saving — selective memory beats total recall every time.",
+    "url": "https://12gramsofcarbon.com/p/agentics-memorizing-session-transcripts",
+    "source": "Hacker News",
+    "published": "2026-07-05",
+    "uid": "dev_5afe05f3"
+  },
+  {
+    "title": "AI 只省了你 3% 的工作时间，而且几乎没变成真金白银",
+    "content": "一项企业级研究揭示 AI 工具实际仅节省约 3% 工时，且大部分效率提升被流程摩擦和沟通成本吞没，未能转化为实际财务收益。",
+    "quote": "AI saves about 3% of your hours and almost none of it reaches the money. The tool is fast; the meeting about the tool's output is not.",
+    "url": "https://okaneland.com/study/ai-productivity-roi-at-work/",
+    "source": "Hacker News",
+    "published": "2026-07-05",
+    "uid": "dev_4e24e493"
+  },
+  {
+    "title": "pxpipe 黑魔法：将代码转图片再 OCR 为 Fable 调用省 60%",
+    "content": "pxpipe 项目展示了一个反直觉的省钱技巧：将代码渲染为图片再让模型 OCR 读取，利用图片输入计价模式差异使 Fable 调用支出削减 60%。",
+    "quote": "Convert your code to images and have the model OCR it back — a ridiculous hack that slashes 60% off API costs. Genius or dystopian? Both.",
+    "url": "https://github.com/teamchong/pxpipe",
+    "source": "GitHub",
+    "published": "2026-07-05",
+    "uid": "dev_1d7d1212"
+  },
+  {
+    "title": "PostgreSQL 与 OOM Killer：为什么 Ubicloud 坚持 Strict Memory Overcommit",
+    "content": "Ubicloud 深度解析 PostgreSQL 在 Linux OOM Killer 下的内存管理策略，阐释为何采用严格内存过量提交模式能在生产环境中避免数据库被意外杀死。",
+    "quote": "When the OOM Killer nukes your Postgres at 3 AM, you'll wish you read this. Strict overcommit isn't paranoia — it's production sanity.",
+    "url": "https://www.ubicloud.com/blog/postgresql-and-the-oom-killer-why-we-use-strict-memory-overcommit",
+    "source": "Hacker News",
+    "published": "2026-07-05",
+    "uid": "dev_9cd1b056"
+  },
+  {
+    "title": "Program-as-Weights：为模糊函数设计的全新编程范式",
+    "content": "一篇arXiv论文提出「程序即权重」范式，将模糊逻辑函数编译为神经网络权重而非传统指令序列，为不确定性问题提供了一种全新的编程思路。",
+    "quote": "What if your code was weights instead of instructions? A new paradigm where fuzzy functions get compiled into neural networks. The line between programming and ML just got thinner.",
+    "url": "https://arxiv.org/abs/2607.02512",
+    "source": "Hacker News",
+    "published": "2026-07-05",
+    "uid": "dev_58d1e20c"
+  },
+  {
+    "title": "Mycli 2.0：集成 LLM 的现代化 MySQL 命令行工具",
+    "content": "MySQL 增强型 REPL 工具 Mycli 发布 2.0 版本，新增 fzf 模糊历史搜索、内嵌 LLM 对话指令、类 Shell 管道重定向等实用特性，数据库操作体验大幅升级。",
+    "quote": "A MySQL REPL that ships with its own LLM command and shell-style pipes. Finally, your database CLI isn't stuck in 1995.",
+    "url": "https://github.com/dbcli/mycli",
+    "source": "GitHub",
+    "published": "2026-07-05",
+    "uid": "dev_6fd9933c"
+  },
+  {
+    "title": "Quicktok：比 tiktoken 快 7 倍的精确 BPE 分词器",
+    "content": "开发者 dmatth1 发布 Quicktok，一个完全兼容 tiktoken 但速度提升 7 倍的 BPE 分词器。使用高效数据结构重写核心算法，大幅降低 LLM 预处理延迟。",
+    "quote": "Seven times faster than tiktoken with identical output. Sometimes the best optimization isn't a new GPU — it's just better code.",
+    "url": "https://github.com/dmatth1/quicktok",
+    "source": "GitHub",
+    "published": "2026-07-05",
+    "uid": "dev_bda05ed5"
+  },
+  {
+    "title": "OpenAI Agents SDK 五周跳 4 个大版本：三个必知的破坏性变更",
+    "content": "OpenAI Agents SDK 在五周内从 0.13 跃升至 0.17，经历 19 次发布含 3 个破坏性变更。文章梳理了环境变量工具注册、追踪配置和会话管理 API 的重大改动。",
+    "quote": "0.13 to 0.17 in five weeks, 19 releases, 3 breaking changes. OpenAI's Agents SDK moves faster than your CI pipeline — read this before your next deploy.",
+    "url": "https://dev.to/peytongreen_dev/openai-agents-sdk-013-to-017-three-breaking-changes-you-will-hit-385e",
+    "source": "Dev.to",
+    "published": "2026-07-05",
+    "uid": "dev_6d187221"
+  },
+  {
+    "title": "工程师真正会信任的 AI 代码审查：我们在每个 PR 上跑出的 Pipeline 经验",
+    "content": "深入探讨如何构建让开发者愿意长期使用的 AI 代码审查流程。核心难题不是漏报 Bug，而是噪音过高导致工程师两星期内就关掉它。分享了一套经过验证的 PR 审查流水线。",
+    "quote": "Bolting an LLM onto pull requests is a weekend project. Building AI code review that engineers don't disable within two weeks — that's the real work.",
+    "url": "https://dev.to/kirandeepjassalcrypto/ai-code-review-that-engineers-actually-trust-the-pipeline-we-run-on-every-pull-request-21fp",
+    "source": "Dev.to",
+    "published": "2026-07-05",
+    "uid": "dev_a0673716"
+  },
+  {
+    "title": "哈佛开源 CS249r 边缘计算教材：从 TinyML 到设备端 AI 全覆盖",
+    "content": "哈佛大学边缘计算课程 CS249r 正式开源其完整教材，涵盖 TinyML、设备端推理、嵌入式 AI 和边缘云协同等前沿主题，为全球开发者提供系统学习资源。",
+    "quote": "Harvard drops a free edge computing textbook covering TinyML, on-device AI, and embedded inference. Your Raspberry Pi just found its PhD reading list.",
+    "url": "https://github.com/harvard-edge/cs249r_book",
+    "source": "GitHub",
+    "published": "2026-07-05",
+    "uid": "dev_2b8cd99d"
+  },
+  {
+    "title": "OpenAI 发布 Codex C/C++ 插件：原生编译语言 AI 编程体验升级",
+    "content": "OpenAI Codex 正式推出 C/C++ 专用插件，为系统编程、嵌入式开发和性能关键型项目提供专业的代码补全、重构和调试能力，填补了 AI 编码工具在原生语言领域的空白。",
+    "quote": "Codex finally gets serious about C and C++. Native-language devs, your AI copilot just learned to stop suggesting Python for everything.",
+    "url": "https://github.com/openai/codex-plugin-cc",
+    "source": "GitHub",
+    "published": "2026-07-05",
+    "uid": "dev_3418d00f"
+  }
+]
