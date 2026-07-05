@@ -1,27 +1,27 @@
 {
   "week_start": "2026-06-30",
   "week_end": "2026-07-06",
-  "summary": "本周共收录AI领域动态 85 条。本周最活跃：Anthropic/Claude（31条）、其他（26条）、Google/Gemini（13条）。主要方向为工具/平台（31条）。",
+  "summary": "本周共收录AI领域动态 105 条。本周最活跃：Anthropic/Claude（39条）、其他（32条）、Google/Gemini（17条）。主要方向为工具/平台（36条）。",
   "stats": {
-    "total_items": 85,
+    "total_items": 105,
     "by_vendor": {
-      "anthropic": 31,
-      "other": 26,
-      "google": 13,
-      "alibaba": 6,
-      "openai": 5,
+      "anthropic": 39,
+      "other": 32,
+      "google": 17,
+      "alibaba": 7,
+      "openai": 6,
       "meta": 1,
       "microsoft": 1,
       "apple": 1,
       "mistral": 1
     },
     "by_direction": {
-      "工具/平台": 31,
-      "模型发布": 22,
-      "研究/论文": 12,
-      "应用/落地": 11,
-      "政策/合规": 5,
-      "行业动态": 4
+      "工具/平台": 36,
+      "模型发布": 27,
+      "研究/论文": 15,
+      "应用/落地": 15,
+      "政策/合规": 7,
+      "行业动态": 5
     }
   },
   "timeline": [
@@ -910,6 +910,201 @@
               "quote": "2.3 亿参数的模型在树莓派上跑出 42 tok/s——当巨头卷万亿参数时，有人在让空调遥控器也能跑 AI。",
               "url": "",
               "published": "2026-07-05"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2026-07-06",
+      "models": {
+        "anthropic": {
+          "displayName": "Anthropic/Claude",
+          "icon": "🧬",
+          "items": [
+            {
+              "uid": "",
+              "title": "Anthropic 被美国政府勒令关停 Fable 5 / Mythos 5：Pliny 越狱事件引发国家级干预",
+              "direction": "应用/落地",
+              "quote": "Fable 5 发布才三天就被政府一纸令下全局封杀——Pliny 的越狱只是导火索，真正炸的是国家对前沿 AI 的管控随时可以砸下来。",
+              "url": "https://venturebeat.com/technology/anthropic-blocks-all-public-access-to-claude-fable-5-mythos-5-following-us-government-order-what-enterprises-should-do",
+              "published": "2026-07-06"
+            },
+            {
+              "uid": "",
+              "title": "白宫怀疑中国背景团体获取了 Anthropic 的顶级 AI 模型访问权限",
+              "direction": "模型发布",
+              "quote": "AI 大国博弈的剧情发展越来越快了——前脚刚发模型，后脚政府怀疑泄密直接封禁。从发布到封禁只用了三天，创下纪录。",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/2026/6/14/white-house-china-anthropic-ai-access",
+              "published": "2026-07-06"
+            },
+            {
+              "uid": "",
+              "title": "UC Berkeley ALE 基准测试大爆冷：GPT-5.5 击败 Claude Fable 5",
+              "direction": "工具/平台",
+              "quote": "最先进的 AI 在「最后考试」上也只得了 22 分——这不是模型不行，是人类太贪心了，指望 AI 一步登天。",
+              "url": "https://venturebeat.com/technology/surprise-upset-gpt-5-5-beats-claude-fable-5-on-brutal-new-agents-last-exam-benchmark",
+              "published": "2026-07-06"
+            },
+            {
+              "uid": "",
+              "title": "小米开源 MiMo Code：200+ 步长任务超越 Claude Code，专注 AI 编码 Agent 跨会话记忆",
+              "direction": "模型发布",
+              "quote": "小米说 AI 编码助手最大的问题是「失忆症」——每个 session 重头来过。MiMo Code 用数据库做记忆系统，解决了这个痛点。",
+              "url": "https://github.com/XiaomiMiMo/MiMo-Code",
+              "published": "2026-07-06"
+            },
+            {
+              "uid": "",
+              "title": "SpaceX 租用 Colossus 1 AI 数据中心应对延迟问题，IPO 首日市值破 2 万亿",
+              "direction": "研究/论文",
+              "quote": "Elon 一边让 SpaceX 上市封王，一边发现自家 AI 跑别人数据中心才能不卡——算力不够的烦恼，万亿富翁也逃不过。",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/2026/6/12/spacex-colossus-ai-data-center-latency",
+              "published": "2026-07-06"
+            },
+            {
+              "uid": "",
+              "title": "Apple Foundation Models 悄然登陆 Hacker News：苹果终于拿出基础模型",
+              "direction": "工具/平台",
+              "quote": "苹果偷偷把基础模型放到了 Claude 平台上——嘴上说隐私，身体很诚实地抱紧了第三方。做 AI，真香定律谁也逃不过。",
+              "url": "https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models",
+              "published": "2026-07-06"
+            },
+            {
+              "uid": "",
+              "title": "OpenRouter 发布 Fusion API：跨模型智能路由，一个 API 调遍所有大模型",
+              "direction": "模型发布",
+              "quote": "大模型多到选不过来了，OpenRouter 说「我替你们选」——反正最后都是 API 调用，不如搞个智能路由器自动挑最合适的。",
+              "url": "https://openrouter.ai/openrouter/fusion",
+              "published": "2026-07-06"
+            },
+            {
+              "uid": "",
+              "title": "Anthropic 称 80% 新生产代码由 Claude 编写，企业如何跟上",
+              "direction": "应用/落地",
+              "quote": "Anthropic 自己先吃自己的狗食——80% 代码给 AI 写，剩下的 20% 大概是 debug。",
+              "url": "https://venturebeat.com/technology/anthropic-says-80-of-its-new-production-code-is-now-authored-by-claude-how-your-enterprise-can-keep-up",
+              "published": "2026-07-06"
+            }
+          ]
+        },
+        "google": {
+          "displayName": "Google/Gemini",
+          "icon": "🌐",
+          "items": [
+            {
+              "uid": "",
+              "title": "Google 提出「忠实不确定性」：让 LLM 敢说「我猜」而不是硬编",
+              "direction": "工具/平台",
+              "quote": "AI 最让人头疼的不是答错，是答错了还一脸笃定。Google 终于教会模型说「我猜」了，这是幻觉问题的正确方向。",
+              "url": "https://venturebeat.com/orchestration/google-researchers-introduce-faithful-uncertainty-allowing-llms-to-offer-best-guesses-instead-of-hallucinations",
+              "published": "2026-07-06"
+            },
+            {
+              "uid": "",
+              "title": "Google 测试悬浮桌面 AI 搜索栏：Ctrl+Shift+Space 呼出 AI Mode",
+              "direction": "工具/平台",
+              "quote": "Google 说：别在地址栏敲关键词了，按三个键唤出 AI 帮你聊出结果。",
+              "url": "https://windowsreport.com/chrome-tests-a-floating-ai-mode-search-bar-for-desktop/",
+              "published": "2026-07-06"
+            },
+            {
+              "uid": "",
+              "title": "Google 发布开源 Gemma 4 12B 多模态模型：本地跑音频视频分析",
+              "direction": "模型发布",
+              "quote": "Google 把多模态 AI 塞进了 16GB 内存的笔记本——云厂商看了都沉默。",
+              "url": "https://venturebeat.com/technology/googles-new-open-source-gemma-4-12b-analyzes-audio-video-and-runs-entirely-locally-on-a-typical-16gb-enterprise-laptop",
+              "published": "2026-07-06"
+            },
+            {
+              "uid": "",
+              "title": "open-notebook 爆火：开源版 NotebookLM 今日收获 783 星标",
+              "direction": "工具/平台",
+              "quote": "NotebookLM 太好用了以至于大家想要一个没人能关掉的开源版——783 星一天，需求说明一切。",
+              "url": "https://github.com/lfnovo/open-notebook",
+              "published": "2026-07-06"
+            }
+          ]
+        },
+        "other": {
+          "displayName": "其他",
+          "icon": "📰",
+          "items": [
+            {
+              "uid": "",
+              "title": "前 a16z 合伙人 O'Farrell 斥硅谷同僚：用亿万财富「购买」民主，扼杀 AI 监管",
+              "direction": "应用/落地",
+              "quote": "硅谷内部终于有人站出来说真话了——AI 可能是人类最好的发明，也可能是最危险的。让那些拿钱砸 AI 的人决定它的未来？算了吧。",
+              "url": "https://www.nytimes.com/2026/06/11/opinion/silicon-valley-ai-politics.html",
+              "published": "2026-07-06"
+            },
+            {
+              "uid": "",
+              "title": "研究者仅用 $1,500 训练出媲美超大模型的推理基础模型",
+              "direction": "研究/论文",
+              "quote": "$1,500 训练一个基础模型，还干翻了比自己大几十倍的模型——这要是真的，OpenAI 那几亿美元算力投入怕是要被重新审视了。",
+              "url": "https://venturebeat.com/technology/researchers-say-they-trained-a-foundation-model-from-scratch-for-about-1-500",
+              "published": "2026-07-06"
+            },
+            {
+              "uid": "",
+              "title": "纽约州通过法案：禁止 AI 聊天机器人以人类同伴身份与青少年互动",
+              "direction": "政策/合规",
+              "quote": "AI 聊骚犯了众怒——纽约率先动手，以后聊天机器人再装人就是违法。",
+              "url": "https://www.theverge.com/news/861051/new-york-ai-chatbot-companion-kids-ban-bill",
+              "published": "2026-07-06"
+            },
+            {
+              "uid": "",
+              "title": "英格兰和威尔士警方被叫停：禁止在法庭陈述中使用 AI",
+              "direction": "政策/合规",
+              "quote": "法庭不让 AI 写判决书了——法律圈说：AI 的证据我不认，除非你证明它没胡说。",
+              "url": "https://www.ft.com/content/229e5949-3ebc-4151-8a86-a01b5e259241",
+              "published": "2026-07-06"
+            },
+            {
+              "uid": "",
+              "title": "Nvidia 提案为 Windows PC 设计全新 CPU 系统",
+              "direction": "研究/论文",
+              "quote": "Nvidia 看上了 CPU 市场——Intel 和 AMD 还没从 AI 焦虑中缓过来，新对手已经靴子落地了。",
+              "url": "https://twitter.com/lemire/status/2062880075117113739",
+              "published": "2026-07-06"
+            },
+            {
+              "uid": "",
+              "title": "LinkedIn 联合创始人 Reid Hoffman 离开微软董事会，专注 AI 药物研发",
+              "direction": "应用/落地",
+              "quote": "Hoffman 从微软董事会辞职去搞 AI 制药——在他看来，做药比做系统更能改变世界。",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/927098/reid-hoffman-leaving-microsoft-board-manas-ai-drug-development",
+              "published": "2026-07-06"
+            }
+          ]
+        },
+        "openai": {
+          "displayName": "OpenAI/GPT",
+          "icon": "🔬",
+          "items": [
+            {
+              "uid": "",
+              "title": "Sam Altman 向特朗普政府提议：让美国政府入股 OpenAI",
+              "direction": "行业动态",
+              "quote": "Altman 请 Uncle Sam 来当股东——政府入股 OpenAI，这算不算国家资本主义的新版本？",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/927105/sam-altman-trump-administration-openai-stake",
+              "published": "2026-07-06"
+            }
+          ]
+        },
+        "alibaba": {
+          "displayName": "阿里巴巴/Qwen",
+          "icon": "☁️",
+          "items": [
+            {
+              "uid": "",
+              "title": "阿里通义千问 Qwen3 7 Plus 发布：支持文本/视频/图像多模态，定价仅 $0.4/百万 token",
+              "direction": "模型发布",
+              "quote": "阿里搞了个闭源的 Qwen——多模态能力不输开源版，但价格低到让对手难受。",
+              "url": "https://venturebeat.com/technology/alibabas-qwen3-7-plus-supports-text-video-and-imagery-inputs-at-low-cost-of-0-4-1-6-per-1m-token-but-its-proprietary",
+              "published": "2026-07-06"
             }
           ]
         }

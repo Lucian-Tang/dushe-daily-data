@@ -1,0 +1,110 @@
+[
+  {
+    "title": "🎨 Shadcn/UI 正式切换默认底层库从 Radix 到 Base UI",
+    "content": "前端 UI 组件库 Shadcn/UI 发布了重大版本更新，默认底层组件库从 Radix 切换为 Base UI，引发社区广泛讨论。这一变更影响数百万 React 开发者，新架构在可定制性和性能上均有提升，但也带来了一定程度的 API 不兼容迁移成本。Hacker News 上该话题获得 260+ 讨论，138 条评论热议这是向前迈进还是倒退。",
+    "quote": "改依赖库比换女朋友还伤筋动骨，但至少 npm install 不会哭。",
+    "url": "https://ui.shadcn.com/docs/changelog",
+    "source": "Hacker News",
+    "published": "2026-07-06",
+    "uid": "dev_7b5cdcdd"
+  },
+  {
+    "title": "🛡️ Strix：开源 AI 渗透测试工具 GitHub 单日千星",
+    "content": "开源 AI 渗透测试工具 Strix 在 GitHub 创下 1121 stars/day 的增长势头。该工具使用自驱 AI 模拟真实黑客行为，动态运行代码发现漏洞并生成可验证的 PoC 利用，支持多模型协同工作。已集成 GitHub Actions CI/CD，可在每次 PR 中自动扫描漏洞，号称比传统静态分析少 90% 误报。项目总 star 数已达 36,900+。",
+    "quote": "以后黑客和红队都用 AI 互捅了，传统安全工程师怕不是要转行写 prompts。",
+    "url": "https://github.com/usestrix/strix",
+    "source": "GitHub",
+    "published": "2026-07-06",
+    "uid": "dev_fe981eb5"
+  },
+  {
+    "title": "🌐 阿里巴巴开源 Page-Agent：纯 JavaScript 操控网页 GUI",
+    "content": "阿里巴巴开源了 Page-Agent，一个运行在 Web 页面中的轻量级 GUI 操控框架。无需浏览器扩展、Python 环境或 headless 浏览器，仅靠一段内联 JavaScript 即可让 LLM 操控网页界面。支持多页任务的 Chrome 扩展和 MCP Server，适合企业级 AI 助手、智能表单填充等场景。项目在 GitHub 已获 23,700+ stars。",
+    "quote": "阿里巴巴果然是卷王，直接把网页代理做到 script 标签里了，别人还怎么玩。",
+    "url": "https://github.com/alibaba/page-agent",
+    "source": "GitHub",
+    "published": "2026-07-06",
+    "uid": "dev_0530361f"
+  },
+  {
+    "title": "🪨 Caveman：Claude Code 技巧，用原始人语省 65% Token",
+    "content": "JuliusBrussee 开发了名为 Caveman 的 Claude Code 技能，通过让 AI 使用「原始人语言风格」回复，砍掉了 65% 的 token 消耗。项目 slogan 是「why use many token when few token do trick」，幽默地反映了开发者对 token 成本的敏感。该仓库在 GitHub 上获得 84,700+ stars，单日新增超 1000 stars。",
+    "quote": "给 AI 说人话太贵了，不如让它说点人听不懂的话——省钱才是硬道理。",
+    "url": "https://github.com/JuliusBrussee/caveman",
+    "source": "GitHub",
+    "published": "2026-07-06",
+    "uid": "dev_0449d653"
+  },
+  {
+    "title": "🔌 KiCad 成功移植到浏览器：PCB EDA 在线化里程碑",
+    "content": "Emergence Engineering 团队成功将开源 PCB EDA 工具 KiCad 通过 WebAssembly 移植到浏览器中运行（项目名 PCBJam）。团队使用 Emscripten 处理多线程和 WebGL 适配，攻克了 C++ 异常与 Asyncify 不兼容等难题。最终将 180MB 二进制压缩到 24MB brotli。支持 Firefox/Chrome/Safari，计划推出免费版和 $30/月付费版。",
+    "quote": "把 180MB 的 PCB 设计套件塞进浏览器，比把大象装冰箱难多了，但人家做到了。",
+    "url": "https://demo.pcbjam.com/",
+    "source": "Hacker News",
+    "published": "2026-07-06",
+    "uid": "dev_bc36ec76"
+  },
+  {
+    "title": "🗺️ Organic Maps 登顶 Hacker News：开源离线地图再度走红",
+    "content": "开源离线地图应用 Organic Maps 以 537 票登顶 Hacker News 热榜。该应用基于 OpenStreetMap 数据，完全离线运行且注重隐私保护。社区讨论集中在与 Google Maps 的实际对比体验、缺乏实时路况的影响，以及近期因资金纠纷产生的 CoMaps 分支。作为 F-Droid 和隐私社区的代表性项目，其持续活跃反映了开发者对去中心化地图服务的需求增长。",
+    "quote": "每次 Organic Maps 上 HN 首页，就有一群谷歌地图用户开始反思自己要不要当数字难民。",
+    "url": "https://organicmaps.app/",
+    "source": "Hacker News",
+    "published": "2026-07-06",
+    "uid": "dev_a3cdc4fb"
+  },
+  {
+    "title": "🧠 GNU Emacs 架构深度解析：高校博士论文引发社区热议",
+    "content": "一篇名为《GNU Emacs Architecture: Unlocking the Core》的博士论文在 Hacker News 上获 159 票和广泛关注。该论文深入剖析了 Emacs 内部的架构设计，涵盖 Elisp 运行时、线程处理、缓冲区管理等核心机制。社区评价为「多年难得一见的 Emacs 系统级文档」，但也指出部分章节略显仓促，推测是毕业论文截稿压力所致。",
+    "quote": "读博写 Emacs 源码分析论文，答辩老师怕是连 eval 和 apply 都分不清。",
+    "url": "https://www.diva-portal.org/smash/get/diva2:2052282/FULLTEXT01.pdf",
+    "source": "Hacker News",
+    "published": "2026-07-06",
+    "uid": "dev_95386beb"
+  },
+  {
+    "title": "📝 OpenWiki：LangChain 推出 CLI 工具，自动维护代码库文档",
+    "content": "LangChain 发布 OpenWiki 命令行工具，可自动扫描代码库并生成、维护 AI 编程助手的文档文件。该工具通过理解代码结构和运行逻辑，输出结构化的 markdown 文档，帮助开发者和 AI 工具理解代码上下文。支持项目 Wiki 模式的增量更新，Hacker News 上获得 53 票和积极讨论，被认为是有望解决「代码写完了但没人写文档」痛点的实用工具。",
+    "quote": "代码写完了但文档是空的？没关系，让 AI 自己给自己写说明书，人类摸鱼就行。",
+    "url": "https://github.com/langchain-ai/openwiki",
+    "source": "Hacker News",
+    "published": "2026-07-06",
+    "uid": "dev_bfe78b17"
+  },
+  {
+    "title": "🔑 System Prompts Leaks：海量 AI 系统提示词被提取公开",
+    "content": "GitHub 仓库 system_prompts_leaks 持续火热，发布以来已获 49,764 stars。该项目系统性提取并开源了各大 AI 模型的系统提示词，包括 Anthropic Claude（Fable 5、Opus 4.8、Claude Code）、OpenAI ChatGPT 5.5、Google Gemini 3.5 Flash、xAI Grok 等。开发者可借此了解各模型的行为约束和安全机制设计思路，该项目定期更新。",
+    "quote": "AI 厂家的底裤被扒得一干二净，原来大家的安全提示词都是同一个模板改的。",
+    "url": "https://github.com/asgeirtj/system_prompts_leaks",
+    "source": "GitHub",
+    "published": "2026-07-06",
+    "uid": "dev_55f0c29e"
+  },
+  {
+    "title": "🐱 Meetily：Rust 构建的本地 AI 会议助手登上趋势榜",
+    "content": "开源 AI 会议助手 Meetily 成为 GitHub 当天的热门新项目。该工具完全在本地运行，基于 Rust 开发，支持 Parakeet/Whisper 实时语音转录（号称 4 倍加速）、说话人识别和 Ollama 本地摘要生成。无需云服务，符合企业对数据主权和隐私合规的要求。提供社区免费版和付费 Pro 版，后者包含高级导出和自定义工作流。",
+    "quote": "又有开会摸鱼的新工具了——转录摘要全本地运行，老板想抓都抓不到证据。",
+    "url": "https://github.com/Zackriya-Solutions/meetily",
+    "source": "GitHub",
+    "published": "2026-07-06",
+    "uid": "dev_89b464f0"
+  },
+  {
+    "title": "🛠️ .NET 官方推出 AI 编程助手 Skills 套件",
+    "content": "微软 .NET 团队正式发布了 dotnet/skills 仓库，包含一整套面向 AI 编码助手的技能（Skills）集合。覆盖 C# 语言服务、数据访问（Entity Framework）、性能诊断、MSBuild 构建、NuGet 包管理、.NET MAUI、AI/ML 集成、模板引擎等 11 个领域。同时提供准确率和效率评分看板，旨在加速 AI 辅助下的 .NET 开发体验。",
+    "quote": "微软终于承认写 .NET 需要 AI 救命了——不过至少人家给出了正经的救命方案。",
+    "url": "https://github.com/dotnet/skills",
+    "source": "GitHub",
+    "published": "2026-07-06",
+    "uid": "dev_9ccf678a"
+  },
+  {
+    "title": "🎮 Flipper Zero 宣布开发新方向：发布稳定版 1.0 固件",
+    "content": "Flipper Zero 团队发布官方博客，回应社区关于停止固件开发的担忧。宣布重新分配开发资源以维护开源固件，推出稳定版 1.0 固件。新规则包括：GitHub Discussions 投票机制做功能请求排序、明确的 PR 提交流程、强制集成测试。该项目自 2020 年 Kickstarter 众筹 500 万美元后，已走过供应链危机和政治动荡，现成为最成功的硬件黑客工具之一。",
+    "quote": "Flipper Zero 团队终于想通了——社区才是你们最硬的后台，别作死。",
+    "url": "https://blog.flipper.net/future-of-flipper-zero-development/",
+    "source": "Flipper 官方博客",
+    "published": "2026-07-06",
+    "uid": "dev_af03df9d"
+  }
+]
