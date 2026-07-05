@@ -1,0 +1,92 @@
+[
+  {
+    "title": "Mistral 发布 Leanstral 1.5：开源形式化验证模型性能飞跃",
+    "content": "Mistral AI 发布 Leanstral 1.5，一个 Apache-2.0 开源模型（119B 总参/6B 活跃参数），在形式化验证领域取得重大突破。该模型在 miniF2F 基准上达到 100% 饱和，解决 587/672 道 Putnam 竞赛题，并在 FATE-H（87%）和 FATE-X（34%）上达到 SOTA。在 57 个开源仓库中发现 5 个此前未知 bug，每个问题推理成本仅约 4 美元。",
+    "quote": "开源吊打闭源，形式化验证的平民化拐点到了。",
+    "url": "https://mistral.ai/news/leanstral-1-5/",
+    "source": "Mistral AI",
+    "published": "2026-07-04",
+    "uid": "e8f486d0eeebda95df2c17116c79b165"
+  },
+  {
+    "title": "GLM-5.2 在 AMD MI355X 上跑出 80% NVIDIA 性能，成本低一倍",
+    "content": "Wafer AI 发布报告，GLM-5.2 模型在 AMD MI355X 上通过 MXFP4 量化加 speculative decode 优化，实现单节点 2626 tok/s 聚合吞吐，达到 B200 的 80% 性能但成本仅一半。研究团队使用 AMD Quark 量化工具和 sglang 推理框架，克服了 ROCm 栈的多项兼容性问题。AMD 在推理性价比上正在缩小与 NVIDIA 的差距。",
+    "quote": "AMD 追上来不是狼来了，是狼真的来了。",
+    "url": "https://www.wafer.ai/blog/glm52-amd",
+    "source": "Wafer AI",
+    "published": "2026-07-04",
+    "uid": "3f8473c0dfbd8b28686129997789d151"
+  },
+  {
+    "title": "YouTube 创作者私密视频大规模泄露漏洞曝光",
+    "content": "安全研究员发现 YouTube 平台存在严重隐私漏洞，可导致创作者未公开的私密视频被外部访问。该漏洞允许攻击者绕过 YouTube 的访问控制机制，获取标记为 '不公开' 或 '私人' 的视频。漏洞在 Hacker News 上获得 658 点赞和 384 条评论，引发对 Google 隐私保护策略的广泛质疑。",
+    "quote": "不公开=可公开，YouTube 的隐私保护约等于没有。",
+    "url": "https://javoriuski.com/post/youtube",
+    "source": "Hacker News",
+    "published": "2026-07-04",
+    "uid": "d53060ad2039c359bc43d5e29de4f9f5"
+  },
+  {
+    "title": "OpenAI GPT-5.5 Codex 推理 token 聚类导致性能退化",
+    "content": "OpenAI 的 GPT-5.5 Codex 模型被发现因推理 token 聚类机制引发性能退化。社区报告显示新版本在复杂代码生成任务上表现不如预期，推理链出现重复聚类和无效分支。已获 346 点赞和 144 评论的 issue 正推动 OpenAI 回滚或修复。",
+    "quote": "模型越新反而越菜，OpenAI 你搁这儿负优化呢？",
+    "url": "https://github.com/openai/codex/issues/30364",
+    "source": "GitHub / OpenAI",
+    "published": "2026-07-04",
+    "uid": "0ca13e2254aa1cb54df2f675d5825db7"
+  },
+  {
+    "title": "Armin Ronacher 发现：新模型工具调用能力反而退化",
+    "content": "知名开发者 Armin Ronacher（Flask/Sentry 作者）撰文揭示，Anthropic 新版模型（Opus 4.8、Sonnet 5）在工具调用时频繁编造不存在的参数字段。Pi 编辑器工具调用中，模型会添加 requireUnique、oldText2 等 schema 未定义字段，导致工具调用被拒绝。旧模型反而表现更稳定。",
+    "quote": "版本越新越智障，这波负优化是很 Anthropic 了。",
+    "url": "https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/",
+    "source": "lucumr.pocoo.org",
+    "published": "2026-07-04",
+    "uid": "c4c9767b721dc7a53468efeb6b5db06d"
+  },
+  {
+    "title": "Claude Mythos Preview 发布伴随大量严重漏洞出现",
+    "content": "Epoch AI 数据显示，在 Anthropic 发布 Claude Mythos Preview 版本前后，CVE 严重性指数出现异常飙升。新发现的漏洞集中在 AI 模型沙箱逃逸和提示注入领域，暗示新版本的安全审查可能不充分，或新能力引入了未预期的攻击面。",
+    "quote": "每次更新都是新的攻击面，安全团队是摆设吗？",
+    "url": "https://epoch.ai/data-insights/cve-severity-spike",
+    "source": "Epoch AI",
+    "published": "2026-07-04",
+    "uid": "3f2dfa040b91d5381523d5457d1b0e98"
+  },
+  {
+    "title": "Dan Luu 深度分析：AI 编程助手的现状与陷阱",
+    "content": "知名工程师 Dan Luu 发表长文系统分析 AI 辅助编程的最佳实践与常见误区。文章指出当前 AI 编码循环存在上下文窗口管理、工具调用错误恢复、任务拆分粒度三大关键挑战，并给出实用的工程应对建议，包含丰富的真实案例分析。",
+    "quote": "AI 写代码很美，但管理 AI 怎么写才是真功夫。",
+    "url": "https://danluu.com/ai-coding/#appendix-agentic-loops-and-writing-this-post",
+    "source": "danluu.com",
+    "published": "2026-07-04",
+    "uid": "579e065c74107e64fe16aeaded28efaa"
+  },
+  {
+    "title": "Sotheby's 拍卖黄仁勋签名皮夹克，估值 4-6 万美元",
+    "content": "苏富比将拍卖 Nvidia CEO 黄仁勋曾在 2023 年台北活动中穿着的 Tom Ford 黑色皮夹克，附有黄仁勋亲笔签名，估值 4-6 万美元。拍卖定于 7 月 7 日开始。这件 Jensen Jacket 已成为 AI 时代的标志性文化符号，折射出 Nvidia 在科技界的偶像化地位。",
+    "quote": "穿件皮夹克就能拍出保时捷的价，Nvidia 信仰税名不虚传。",
+    "url": "https://www.sothebys.com/en/buy/auction/2026/the-ceos-uniform-jensen-huangs-tom-ford-leather-jacket/the-jensen-jacket-jensen-huangs-tom-ford-leather-jacket",
+    "source": "The Verge / Sotheby's",
+    "published": "2026-07-03",
+    "uid": "58a576fe1ba3f45d772f55fe15808fe7"
+  },
+  {
+    "title": "Zig 语言重大重构：包管理功能从编译器迁移到构建系统",
+    "content": "Zig 语言团队宣布将全部包管理功能从编译器迁移到构建系统。这一架构调整意味着 Zig 将更专注于作为编译器的本职工作，而包管理由更灵活的构建系统处理。迁移已在 devlog 中记录，获得 HN 社区 226 点赞，被认为将降低编译器复杂度，提升 Zig 生态可维护性。",
+    "quote": "编译器只做编译器的事，Zig 团队懂什么叫单一职责。",
+    "url": "https://ziglang.org/devlog/2026/#2026-06-30",
+    "source": "Zig Language",
+    "published": "2026-06-30",
+    "uid": "d537a7c15d9d0757fec19fc0d55efe68"
+  },
+  {
+    "title": "办公室空气质量影响决策能力：CO2 浓度是关键瓶颈",
+    "content": "HN 热榜高赞文章揭示：室内 CO2 浓度过高会显著降低人的决策能力和认知表现。研究指出许多现代办公室通风不足，CO2 浓度经常超过 1000ppm，此时认知功能可下降 50% 以上。该文获 799 点赞和 455 条评论，建议创业团队重视办公环境通风。",
+    "quote": "别怪程序员摸鱼了，可能是办公室里 CO2 太高。",
+    "url": "https://blog.mikebowler.ca/2026/07/03/co2-and-decision-making/",
+    "source": "Hacker News",
+    "published": "2026-07-03",
+    "uid": "1e53bb53b0d4ebdf2b37207fbb04bc9d"
+  }
+]

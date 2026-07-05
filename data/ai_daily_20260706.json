@@ -1,0 +1,92 @@
+[
+  {
+    "title": "🤖 GPT-5.5 Codex 被爆推理 Token 聚类异常：516/1034/1552 出现规律性截断",
+    "content": "Hacker News 曝出 OpenAI GPT-5.5 在 Codex 中的推理 Token 分布出现明显异常聚簇——约44%的响应集中在精确的516个推理 token，次要聚簇在1034和1552，呈现阈值截断特征。分析显示该异常自2026年5月起飙升（5月53%、6月36%的截断率），且伴随 Mean 推理 token 从268暴跌至107。用户推测可能是隐藏的推理预算路由或降级调度导致。该 issue 在 HN 上获得348分，引发对 GPT-5.5 复杂任务能力的广泛质疑。",
+    "quote": "花旗舰的钱买了个节流版——OpenAI 这波推理预算隐形降级连用户都看不下去了。",
+    "url": "https://github.com/openai/codex/issues/30364",
+    "source": "Hacker News",
+    "published": "2026-07-06",
+    "uid": "ai_d8ce510d"
+  },
+  {
+    "title": "🔒 Claude Mythos 发布后高危漏洞披露量飙升至史前3.5倍",
+    "content": "据 Epoch AI 最新数据，2026年6月全球高危/严重级 CVE 漏洞披露量达到约1500个，是此前月度历史最高纪录的3.5倍以上。该激增紧跟 Anthropic 发布 Claude Mythos Preview 及 Project Glasswing——合作伙伴包括微软、谷歌、苹果和 AWS，已利用该自主漏洞挖掘模型发现超过10,000个高危漏洞。OpenAI 也推出 Daybreak 产品类似定位。该数据揭示了 AI 驱动的安全自动化正以前所未有的速度改变漏洞生态。",
+    "quote": "以前漏洞是黑客挖的，现在是 AI 挖了等你补——你觉得这是好事还是恐慌的开始？",
+    "url": "https://epoch.ai/data-insights/cve-severity-spike",
+    "source": "Epoch AI",
+    "published": "2026-07-06",
+    "uid": "ai_0d0eccef"
+  },
+  {
+    "title": "🔓 Claude Code 被曝会话缓存泄漏：企业用户的 Minecraft 指令乱入同事会话",
+    "content": "Anthropic 的 Claude Code CLI 工具被曝严重会话缓存泄漏 bug——企业 ZDR 工作区用户反映，Agent 突然开始询问准备用哪种砖块搭建 Minecraft 神庙，疑似缓存从其他用户泄漏到其企业会话中。该 issue 获得313分登上 Hacker News 首页，引发对企业级数据隔离和 ZDR（零数据保留）合规性的严重担忧。Anthropic 尚未回应该问题。",
+    "quote": "你的 AI 助手突然聊别人的 Minecraft，不是灵异事件，是缓存泄漏——企业 ZDR 用户该慌了。",
+    "url": "https://github.com/anthropics/claude-code/issues/74066",
+    "source": "Hacker News",
+    "published": "2026-07-06",
+    "uid": "ai_3e854d27"
+  },
+  {
+    "title": "📉 越强越差：新 Claude 模型开始给工具调用瞎编字段，老模型反而更稳",
+    "content": "知名 Python Web 框架 Flask/Click 作者 Armin Ronacher 发文揭示反直觉现象：新版本 Claude（Opus 4.8、Sonnet 5）在特定工具调用场景下反而表现更差——为 edit 工具参数凭空添加 JSON 中不存在的字段，导致工具调用被拒绝重试。而较旧 Claude 模型完全没此问题。他推测与模型持续训练中工具调用格式隐式编码变化有关，质疑新模型的 SOTA 基准分数是否掩盖了实际使用中的退化。",
+    "quote": "花更多钱买更差的工具行为——这大概就是所谓的 AI 能力溢出但可靠性不进反退。",
+    "url": "https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/",
+    "source": "Hacker News",
+    "published": "2026-07-06",
+    "uid": "ai_99734265"
+  },
+  {
+    "title": "🇺🇸 美国250周年诞辰｜277人 AI 超对话实验：互联网被评美国最大贡献",
+    "content": "VentureBeat 发布特殊实验报告：在7月4日美国250周年独立日，Unanimous AI 使用 Thinkscape 平台召集277名随机美国人进行大规模实时辩论，共同评选「美国250年来对世界最大的三大贡献」。通过 AI Agent 蜂群将多个平行讨论空间连接为单一实时对话，最终前三名为：互联网、言论自由/出版自由、及大规模生产/工业化。展示了 AI 如何让大规模群体智慧真正成为可能。",
+    "quote": "AI 超对话解决了开大会永远聊不出结果的问题——下次公司年会也可以用，省得吵半天。",
+    "url": "https://venturebeat.com/technology/how-americas-250th-birthday-became-a-test-of-ai-powered-collective-intelligence",
+    "source": "VentureBeat",
+    "published": "2026-07-06",
+    "uid": "ai_0b15d07a"
+  },
+  {
+    "title": "🏛️ 欧盟理事会闪电通道强行通过 Chat Control：加密消息不再加密",
+    "content": "欧盟理事会利用书面程序的快速通道机制，强行通过了 Chat Control 1.0 过渡条例，要求科技公司在端到端加密通讯中强制扫描用户私信以查找虐童内容。批评者指出，理事会刻意在暑期前夕利用议会多数议员离席的窗口期加速表决，绕开了正常的民主监督程序。该法规在 Hacker News 上获得272分、147条评论，社区普遍认为这是对数字隐私权的严重侵犯。",
+    "quote": "加密的尽头是强拆——欧盟 Chat Control 告诉我们：你的隐私只配活到4月3号。",
+    "url": "https://www.heise.de/en/news/Chat-Control-1-0-EU-Council-forces-messenger-scans-via-fast-track-11353659.html",
+    "source": "Heise",
+    "published": "2026-07-06",
+    "uid": "ai_6792e43e"
+  },
+  {
+    "title": "📚 LangChain 发布 OpenWiki：为 Agent 自动生成和维护代码文档的 CLI 工具",
+    "content": "LangChain 推出 OpenWiki，专为 AI Agent 设计的代码文档生成 CLI 工具。通过分析仓库结构自动生成结构化文档并持续更新，支持 GitHub Action 自动化每天打开 PR 更新文档，自动将提示信息注入 AGENTS.md 和 CLAUDE.md 以便 Agent 参考。支持 OpenRouter、Fireworks、Baseten、OpenAI 和 Anthropic 等多家推理提供商，内置 GLM 5.2、Kimi K2.6、Sonnet 5 等模型预设。",
+    "quote": "Agent 给 Agent 写文档，人类终于躺着等更新了——LangChain 这工具 AI 味儿拉满。",
+    "url": "https://github.com/langchain-ai/openwiki",
+    "source": "Hacker News",
+    "published": "2026-07-06",
+    "uid": "ai_214df384"
+  },
+  {
+    "title": "🧺 Weave Robotics 开放 $8,000 叠衣机器人 Isaac 1 预售：自主完成率达新高度",
+    "content": "Weave Robotics 开放 Isaac 1 家用折叠机器人预购，售价$8,000（订金$250）。机器人能自主收集脏衣、折叠收纳衣物、整理床铺和杂物。采用默认自主运行+复杂场景远程操控的混合模式，上市前已积累大量前代用户数据。预计年底开始发货。该产品再次引发家用机器人性价比的讨论——$8,000 能否胜任日常家务劳动力。",
+    "quote": "$8,000 叠个衣服——硅谷对解放双手的执念终于到了明码标价的程度。",
+    "url": "https://www.theverge.com/tech/877851/weave-isaac-robot-fold-laundry",
+    "source": "The Verge",
+    "published": "2026-07-06",
+    "uid": "ai_9f4b5709"
+  },
+  {
+    "title": "📚 Dartmouth 研究表明 AI 导师可使学习效果提升 0.71~1.30 个标准差",
+    "content": "一项来自 Dartmouth 大学的研究论文登上 Hacker News 首页，显示新型 AI 导师系统在课程中实现了 0.71 至 1.30 个标准差的巨大学习效果提升。该数字远超传统教育干预的平均效果（通常 0.2~0.4 SD），暗示 AI 自适应辅导在高等教育场景中具有变革性潜力。论文同时探讨了 AI 导师的局限性——在高级推理和批判性思维培养方面仍需人类教师配合。",
+    "quote": "AI 当老师比人类教得好？0.71 到 1.30 个标准差的数据让所有家教机构瑟瑟发抖。",
+    "url": "https://intextbooks.science.uu.nl/workshop2026/files/itb26_s1s2.pdf",
+    "source": "Hacker News",
+    "published": "2026-07-06",
+    "uid": "ai_ee7688c9"
+  },
+  {
+    "title": "🚀 Google 25年来首次大改搜索框：AI Mode 成为默认新范式",
+    "content": "Google 宣布对搜索框进行25年来最大幅度重新设计——从经典白色矩形+蓝色链接模式转型为 AI 优先对话式界面。用户可以直接输入自然语言问题，系统以摘要+信息来源+精选链接组合呈现答案，而非传统十条蓝链接排序。该改版标志着搜索引擎正式跨入 AI 生成答案时代，同时引发对流量分发模式和内容创作者生态的深远影响讨论。",
+    "quote": "Google 终于承认了：用户想要的不是十个链接，是一个答案——蓝链接的棺材板钉上了。",
+    "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
+    "source": "VentureBeat",
+    "published": "2026-07-06",
+    "uid": "ai_a13a77ad"
+  }
+]
