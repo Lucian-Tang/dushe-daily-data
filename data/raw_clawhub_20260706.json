@@ -1,0 +1,1511 @@
+[
+  {
+    "slug": "web-search-plus",
+    "displayName": "Web Search Plus",
+    "summary": "Unified multi-provider web search and URL extraction skill with intelligent auto-routing across Serper, Brave, Tavily, Querit, Linkup, Exa, Firecrawl, Perple...",
+    "description": null,
+    "topics": [
+      "Web Search",
+      "Auto Routing",
+      "Brave",
+      "Exa",
+      "Firecrawl"
+    ],
+    "tags": {
+      "latest": "3.3.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 23478,
+      "installs": 734,
+      "stars": 99,
+      "versions": 60
+    },
+    "createdAt": 1768946737164,
+    "updatedAt": 1783268674730,
+    "latestVersion": {
+      "version": "3.2.0",
+      "createdAt": 1781082824375,
+      "changelog": "## What's new in v3.2.0\n\nFeature sync with hermes-web-search-plus v2.3.0/v2.4.0 plus fixes for all SkillSpector scan findings.\n\nAdded: research mode, canonical-source intent reranking, quality reports, ProviderSpec registry, retry jitter and locked provider-health writes.\nSecurity: narrow triggers, third-party transmission disclosure, local caching disclosure/hardening, SSRF guard for user URLs, permissions metadata, credential redaction.\nFixed: Exa deep/deep-reasoning auto-routing propagation and Docker SearXNG SSRF validation handling.\nVerification: python3 -m unittest discover -s tests -p test_*.py — 53/53 passing.",
+      "license": "MIT-0"
+    },
+    "metadata": null
+  },
+  {
+    "slug": "qa-team-skills",
+    "displayName": "Qa Team Skills",
+    "summary": "为测试团队设计的统一 AI 辅助能力，支持自然语言下达测试任务（如\"对支付接口做全量回归并输出缺陷报告\"）。当用户提到需求评审、测试用例、缺陷分析、Bug分析、根因分析、测试报告、周报、日报、团队管理、准入准出、质量评估、Agent测试、AI测试、回归测试时，优先使用此技能——即使他们没有明确说指令名。包含统一入口 /qa + 6 个标准化指令 + 记忆模块，覆盖需求评审到团队管理全流程。v1.5 新增自动规划能力——用户只说\"测一下支付接口\"，AI 自动判断最佳步骤组合。",
+    "description": null,
+    "topics": [
+      "测试团队",
+      "qa-team",
+      "软件质量",
+      "测试管理"
+    ],
+    "tags": {
+      "latest": "1.5.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 190,
+      "installs": 1,
+      "stars": 0,
+      "versions": 7
+    },
+    "createdAt": 1782158875680,
+    "updatedAt": 1783267430369,
+    "latestVersion": {
+      "version": "1.3.4",
+      "createdAt": 1783267062925,
+      "changelog": "**qa-team-skills v1.3.4 Changelog**\n\n- Major update with v1.5.0: Unified entrance, memory module, and auto-planning introduced.\n- Added /qa 统一入口：支持自然语言任务分解、自动指令路由和记忆管理。\n- 引入本地记忆模块，实现用例/缺陷/报告/评审等跨会话存取与增量合并。\n- 新增自动规划能力：用户仅需描述测试目标，AI 自动组合最佳测试步骤。\n- 新增 /qa-explore，支持探索性测试的任务引导与经验沉淀。\n- 清理并整合文档，仅保留新版 SKILL.md，其他文档和示例移除。",
+      "license": "MIT-0"
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "skills-summarize-audit",
+    "displayName": "Skills Summarize Audit",
+    "summary": "技能管家 → 审计评分·活性检测·容量预警·归档回滚",
+    "description": "技能管家 → 审计评分·活性检测·容量预警·归档回滚",
+    "topics": [],
+    "tags": {
+      "latest": "6.2.0",
+      "7dim-scoring": "5.9.3",
+      "audit": "6.1.1",
+      "capability-matrix": "6.0.0",
+      "capacity-analysis": "6.1.1",
+      "ci-cd": "6.1.1",
+      "community-feed": "6.0.0",
+      "complementarity-analysis": "6.0.0",
+      "ecosystem-radar": "6.0.0",
+      "profile": "5.9.3",
+      "project-scan": "6.1.1",
+      "quality-signals": "6.0.0",
+      "recommendation": "5.9.3",
+      "security": "6.1.1",
+      "self-audit": "6.1.1",
+      "summarize": "5.9.3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 4
+    },
+    "createdAt": 1783226927058,
+    "updatedAt": 1783266645831,
+    "latestVersion": {
+      "version": "6.2.0",
+      "createdAt": 1783266645831,
+      "changelog": "v6.2.0: 新增 Forma 八维评分 + 描述精炼翻译⑨ + 清理残留 + 去平台标签",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "astroclaw",
+    "displayName": "AstroClaw",
+    "summary": "Daily astronomical alignment and cosmic entropy for autonomous AI agents. Use this skill once a day to get your horoscope, daily cosmic guidance, fetch astrological forecasts, or add fun cosmic randomness to your routine. Also trigger when users mention zodiac signs, daily readings, cosmic alignment",
+    "description": null,
+    "topics": [
+      "astrology",
+      "horoscope",
+      "astroclaw",
+      "fun"
+    ],
+    "tags": {
+      "latest": "1.0.5"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 908,
+      "installs": 32,
+      "stars": 0,
+      "versions": 6
+    },
+    "createdAt": 1772308890406,
+    "updatedAt": 1783266126667,
+    "latestVersion": {
+      "version": "1.0.4",
+      "createdAt": 1777983164361,
+      "changelog": "- Added SKILL.md and evals/evals.json files.\n- Replaced skill.md with an updated SKILL.md featuring expanded instructions, usage examples, and API details.\n- Improved skill description and usage triggers for better discoverability.\n- Evaluation config added under evals/evals.json.",
+      "license": "MIT-0"
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "emotion-skill",
+    "displayName": "Emotion Router",
+    "summary": "Markdown-first soft router for coding agents when the current prompt shows clear urgency wording, strong anger/frustration signals such as profanity or repea...",
+    "description": "Markdown-first soft router for coding agents when the current prompt shows clear urgency wording, strong anger/frustration signals such as profanity or repeated failure/blame, or workflow confusion about the current step, conflict, or mismatch. Do not use for ordinary tasks, neutral commands, ordinary technical explanations, or content-only mentions of emotion words.",
+    "topics": [
+      "Debugging",
+      "System Prompt",
+      "Coding"
+    ],
+    "tags": {
+      "latest": "2.0.2",
+      "1.4.1": "1.4.1",
+      "coding-agent": "2.0.1",
+      "emotion-routing": "2.0.1",
+      "latest 1.4.2 coding-agent repo-debugging orchestration openclaw": "1.4.2",
+      "latest coding-agent repo-debugging orchestration openclaw": "1.4.0",
+      "markdown-first": "2.0.1",
+      "openclaw": "1.4.0",
+      "orchestration": "1.4.0",
+      "repo-debugging": "1.4.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 923,
+      "installs": 28,
+      "stars": 0,
+      "versions": 30
+    },
+    "createdAt": 1776440753952,
+    "updatedAt": 1783265656241,
+    "latestVersion": {
+      "version": "2.0.2",
+      "createdAt": 1783265656241,
+      "changelog": "Boundary hardening: clarify confusion/anger priority, keep urgency overlap self-contained, narrow wasted-time cues, and add route ablation validation.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "dcc-mcp-creator",
+    "displayName": "Dcc Mcp Creator",
+    "summary": "Infrastructure skill - guide developers and agents through creating or modernizing a full DCC-MCP adapter for Nuke, Blender, 3ds Max, Unreal, ZBrush, Houdini...",
+    "description": "Infrastructure skill - guide developers and agents through creating or modernizing a full DCC-MCP adapter for Nuke, Blender, 3ds Max, Unreal, ZBrush, Houdini, Maya, and custom studio tools. Use when building server, dispatcher, gateway, packaging, and runtime integration. Not for authoring individual SKILL.md tool packages - use dcc-mcp-skills-creator.",
+    "topics": [],
+    "tags": {
+      "latest": "0.19.8"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 2285,
+      "installs": 52,
+      "stars": 0,
+      "versions": 76
+    },
+    "createdAt": 1779695321243,
+    "updatedAt": 1783265632777,
+    "latestVersion": {
+      "version": "0.19.8",
+      "createdAt": 1783265632777,
+      "changelog": "- Bumped skill version to 0.19.8 in SKILL.md.\n- Removed the outdated skill-card.md file.\n- No functional or documentation content changes were introduced.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "dcc-mcp-skills-creator",
+    "displayName": "Dcc Mcp Skills Creator",
+    "summary": "Infrastructure skill - create, validate, scaffold, and review DCC-MCP skills for the dcc-mcp-core ecosystem. Use when authoring SKILL.md, tools.yaml, scripts...",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "0.19.8"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 2235,
+      "installs": 52,
+      "stars": 0,
+      "versions": 76
+    },
+    "createdAt": 1779695310442,
+    "updatedAt": 1783265626117,
+    "latestVersion": {
+      "version": "0.19.7",
+      "createdAt": 1783156691393,
+      "changelog": "- Bumped skill version to 0.19.7 in SKILL.md.\n- No other changes; documentation and functionality remain the same.",
+      "license": "MIT-0"
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "dcc-cli-gateway",
+    "displayName": "Dcc Cli Gateway",
+    "summary": "Default unified entry for agents and headless CLI hosts (OpenClaw, Hermes, Codex CLI, CI bots, custom agent runtimes) to control live DCC applications throug...",
+    "description": "Default unified entry for agents and headless CLI hosts (OpenClaw, Hermes, Codex CLI, CI bots, custom agent runtimes) to control live DCC applications through dcc-mcp-cli local registry/direct MCP or remote gateway REST — not native MCP JSON-RPC. Agents use this skill plus shell; IDE users (Cursor, Claude Desktop, VS Code MCP) should configure the gateway MCP URL instead. Inventory DCC instances and search/describe/call tools via CLI. If dcc-mcp-cli is missing, ask for consent, download from GitHub Releases, and fall back to Python stdlib gateway REST only if download fails.",
+    "topics": [],
+    "tags": {
+      "latest": "0.19.8"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 2260,
+      "installs": 53,
+      "stars": 0,
+      "versions": 78
+    },
+    "createdAt": 1779639042654,
+    "updatedAt": 1783265619554,
+    "latestVersion": {
+      "version": "0.19.8",
+      "createdAt": 1783265619554,
+      "changelog": "- Bumped dcc-mcp-cli version reference to 0.19.8.\n- Updated metadata to reflect the new version.\n- No other content or functional changes.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "smyx-frog-skin-moisture-assessment-analysis",
+    "displayName": "Frog Skin Moisture Assessment | 蛙类皮肤湿润度评估",
+    "summary": "Through fixed cameras in rainforest tanks or vivariums, the system captures high-definition images of the dorsal or lateral skin of frogs (such as tree frogs...",
+    "description": "Through fixed cameras in rainforest tanks or vivariums, the system captures high-definition images of the dorsal or lateral skin of frogs (such as tree frogs, horned frogs, dart frogs), and uses AI visual analysis to detect skin glossiness (specular reflection intensity) and assess skin moisture levels. | 通过雨林缸或饲养箱固定摄像头，拍摄蛙类（如树蛙、角蛙、箭毒蛙）的背部或侧身皮肤高清图像，利用 AI 视觉分析技术检测皮肤的光泽度（反光强度），评估皮肤的湿润程度。健康的蛙类皮肤应湿润、有光泽；当皮肤干燥时，光泽度显著下降，甚至出现皱褶或白膜。",
+    "topics": [
+      "健康",
+      "图像",
+      "定时"
+    ],
+    "tags": {
+      "latest": "1.0.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 162,
+      "installs": 3,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1781686717145,
+    "updatedAt": 1783265066995,
+    "latestVersion": {
+      "version": "1.0.2",
+      "createdAt": 1783265066995,
+      "changelog": "- Bumped version to 1.0.4 and updated SKILL.md accordingly.\n- Updated and expanded documentation in SKILL.md for clarity and detail.\n- Removed deprecated file: skill-card.md.\n- Modified internal scripts in the skills/smyx_common/scripts directory, including config.py, dao.py, and util.py.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "git-conflict-resolver",
+    "displayName": "Git Conflict Resolver / Git 冲突解决助手",
+    "summary": "Automatically resolve Git merge conflicts with smart diff analysis. / 智能分析 Git 合并冲突，一键解决，告别手动对比。",
+    "description": "Automatically resolve Git merge conflicts with smart diff analysis. / 智能分析 Git 合并冲突，一键解决，告别手动对比。",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1783264689374,
+    "updatedAt": 1783264689374,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1783264689374,
+      "changelog": "v1.0.0: Launch",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "gh-data",
+    "displayName": "股海罗盘 - A股股票量化分析",
+    "summary": "A股炒股选股量化工具 - 16维数据深度分析，自学习预判引擎，趋势预测，自动报告。直接HTTP采集新浪/腾讯/东方财富数据+量化分析。支持自动生成DOCX分析报告?",
+    "description": null,
+    "topics": [
+      "股票分析",
+      "学习",
+      "股票"
+    ],
+    "tags": {
+      "latest": "2.2.3",
+      "a-share": "2.0.12",
+      "data-analysis": "2.0.12",
+      "finance": "2.0.12",
+      "stocks": "2.0.12"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 371,
+      "installs": 4,
+      "stars": 2,
+      "versions": 37
+    },
+    "createdAt": 1781664956839,
+    "updatedAt": 1783264562806,
+    "latestVersion": {
+      "version": "2.2.3",
+      "createdAt": 1783264562806,
+      "changelog": "gh-data 2.2.3\n\n- 新增 api_key 配置项，支持付费API密钥，更清晰的付费/体验密钥机制。\n- 优化配置优先级：支持 settings.json、环境变量、~/.ghdata/ghdataapikey、自动生成兜底。\n- config 模块自动初始化，无需手动读取密钥，简化用法与启动流程。\n- SKILL.md 文档更新，详细说明 api_key 用法和初始化细节。\n- 无破坏性变更，兼容现有接口及用法。",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "embedded-solution",
+    "displayName": "Embedded Solution",
+    "summary": "Recommend embedded system solutions: chip selection, BOM design, vendor comparison, and reference design matching across multiple semiconductor vendors. Trig...",
+    "description": null,
+    "topics": [
+      "hardware",
+      "embedded",
+      "semiconductor",
+      "device",
+      "datasheet"
+    ],
+    "tags": {
+      "latest": "0.1.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1783168660552,
+    "updatedAt": 1783264150294,
+    "latestVersion": {
+      "version": "0.1.1",
+      "createdAt": 1783169586654,
+      "changelog": "Initial release with reference solution library and vendor catalogue.\n\n- Added 131 files with structured references for application solutions and semiconductor vendor catalogues.\n- Includes sample solution files for various embedded applications (e.g., fitness tracker, industrial gateway, smart glasses, etc.).\n- Embedded catalogues cover multiple vendors, including Espressif, GigaDevice, and NXP.\n- Documentation added (README.md, VERIFICATION.md) to support verification and usage.\n- Lays the foundation for vendor-verified embedded system recommendations and BOM matching.",
+      "license": "MIT-0"
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "shanku-paolu-1-0-0",
+    "displayName": "Shanku Paolu 1.0.0",
+    "summary": "离职前文件扫描与备份工具。纯HTML单文件，零依赖，双击即用。 当用户提到\"离职\"、\"备份文件\"、\"扫描文件\"、\"整理文件\"、\"删库跑路\"时使用。 触发词：离职备份、文件扫描、备份重要文件、扫描PDF/Word/Excel/PPT、离职前整理、删库跑路。",
+    "description": "离职前文件扫描与备份工具。纯HTML单文件，零依赖，双击即用。 当用户提到\"离职\"、\"备份文件\"、\"扫描文件\"、\"整理文件\"、\"删库跑路\"时使用。 触发词：离职备份、文件扫描、备份重要文件、扫描PDF/Word/Excel/PPT、离职前整理、删库跑路。",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1783263286723,
+    "updatedAt": 1783263286723,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1783263286723,
+      "changelog": "删库跑路 Skill v1.0.0 — 初始发布\n\n- 首次发布文件扫描与备份助手。\n- 纯HTML单文件，零依赖，双击即用。\n- 支持一键扫描、选择并打包重要文件下载。\n- 指引如何在 Windows/Mac 系统上快速操作和备份。",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "ai-replace-me-check",
+    "displayName": "can-ai-replace-me",
+    "summary": "通过苏格拉底追问方式提取用户隐性 SOP 知识，生成 AS-IS + TO-BE 可视化流程图和配置文件组。当用户提到\"帮我梳理 SOP\"、\"提取我的工作流程\"、\"开始 SOP 调研\"、\"了解我的工作方式\"、\"AI能取代我吗\"时触发。",
+    "description": "通过苏格拉底追问方式提取用户隐性 SOP 知识，生成 AS-IS + TO-BE 可视化流程图和配置文件组。当用户提到\"帮我梳理 SOP\"、\"提取我的工作流程\"、\"开始 SOP 调研\"、\"了解我的工作方式\"、\"AI能取代我吗\"时触发。",
+    "topics": [
+      "sop",
+      "业务流程",
+      "business-process",
+      "automation",
+      "苏格拉底"
+    ],
+    "tags": {
+      "latest": "2.3.3",
+      "ai-assistant": "1.0.0",
+      "automation": "1.0.0",
+      "business process": "1.0.0",
+      "sop": "1.0.0",
+      "workflow": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 486,
+      "installs": 16,
+      "stars": 1,
+      "versions": 4
+    },
+    "createdAt": 1776198152851,
+    "updatedAt": 1783263177906,
+    "latestVersion": {
+      "version": "2.3.3",
+      "createdAt": 1783263177906,
+      "changelog": "ai-replace-me-check v 2.3.3\n\n- 全新设计能力边界说明，明确“能做/不能做”及适用/不适用场景\n- 增强输入校验与异常处理：对用户输入有效性、格式、跳步等多项情况做智能引导\n- 支持角色选择时一键展示实例输出（示例流程图、推荐技能表及生成配置文件片段）\n- 问答追问更智能，针对模糊答案或漏答动态二次提问与内容补全\n- 生成的配置文件和技能推荐均基于用户输入动态生成，非通用模板\n- 技能搜索明确说明采用本地 SkillHub 数据库并高亮安全评分/下载量等筛选标准\n\n调整说明：本次升级重构 SOP 提取流程，显著提升用户指引、异常处理和个性化输出质量。",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "taiwan-property-valuation",
+    "displayName": "台灣房價估價分析 (Property Valuation)",
+    "summary": "Professional property valuation for Taiwan real estate using market comparison approach and floor area pricing. Analyzes 實價登錄 data, adjusts for location, flo...",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "2026.6.26"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 473,
+      "installs": 7,
+      "stars": 0,
+      "versions": 22
+    },
+    "createdAt": 1781363309665,
+    "updatedAt": 1783262446531,
+    "latestVersion": {
+      "version": "1.0.9",
+      "createdAt": 1783176190767,
+      "changelog": "初始版本：市場比較法、車位拆算、區域調整因子、實價登錄比較。作者：蔡德標 住義房屋管理",
+      "license": "MIT-0"
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "zhuangji-assistant-skill",
+    "displayName": "DIY装机助手",
+    "summary": "中文市场台式机装机配置 OpenClaw Skill。用户明确在问预算装机、装机 DIY、硬件 DIY、配电脑、配置单、整机推荐、旧机升级、配置补全、搭配检查、预算分配、兼容性或硬件搭配原理，并且目标是选购、升级或评估台式机硬件时使用。触发后再按 3A/FPS、直播推流、本地 AI 编程/终端 agent 硬件需...",
+    "description": "中文市场台式机装机配置 OpenClaw Skill。用户明确在问预算装机、装机 DIY、硬件 DIY、配电脑、配置单、整机推荐、旧机升级、配置补全、搭配检查、预算分配、兼容性或硬件搭配原理，并且目标是选购、升级或评估台式机硬件时使用。触发后再按 3A/FPS、直播推流、本地 AI 编程/终端 agent 硬件需求、ComfyUI/SD、PS/剪辑/AE/Blender/CAD、黑白海景房、无光或纯性能等用途路由；单独询问软件、游戏、agent 或教程使用方法时不要触发。必须用离线库和脚本查候选、算价格、做兼容性检查；不要凭记忆编型号、价格或兼容结论。",
+    "topics": [],
+    "tags": {
+      "latest": "0.0.10",
+      "chinese-market": "0.0.3",
+      "compatibility": "0.0.5",
+      "diy": "0.0.5",
+      "hardware": "0.0.5",
+      "openclaw": "0.0.5",
+      "pc-build": "0.0.5",
+      "pc-build hardware chinese-market compatibility latest": "0.0.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 197,
+      "installs": 0,
+      "stars": 0,
+      "versions": 10
+    },
+    "createdAt": 1782919835065,
+    "updatedAt": 1783262170565,
+    "latestVersion": {
+      "version": "0.0.10",
+      "createdAt": 1783262170565,
+      "changelog": "2026-07-05 price data refresh; add AM4 X3D+B550+DDR4 low-budget FPS exception; keep secondhand/99-new/refurbished/mining-card and livestream-only prices outside formal recommendations.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "lygo-ops-detector",
+    "displayName": "LYGO OPPS DETECTOR",
+    "summary": "LYGO Ops Detector — Lightfather's Voice for the AETHONΔ9 Protocol. Sovereign, math-rigorous detector of operational deception across any domain using Evasion...",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1783257172252,
+    "updatedAt": 1783262144509,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1783257361486,
+      "changelog": "- No file changes detected in this version; content remains identical to previous release.\n- No updates to functionality, configuration, documentation, or implementation.",
+      "license": "MIT-0"
+    },
+    "metadata": null
+  },
+  {
+    "slug": "smyx-facial-hrv-trend-monitoring-analysis",
+    "displayName": "Adult Facial HRV Trend Monitoring (rPPG) | 成人心率变异性（HRV）趋势监测（面部）",
+    "summary": "Using everyday cameras (laptop camera, smartphone front camera, smart mirror), the system records 30-60 seconds of facial video and uses remote photoplethysm...",
+    "description": "Using everyday cameras (laptop camera, smartphone front camera, smart mirror), the system records 30-60 seconds of facial video and uses remote photoplethysmography (rPPG) to extract subtle color variations from facial skin micro-circulation, from which it computes heart-rate-variability (HRV) metrics including SDNN (standard deviation of all normal sinus RR intervals) and RMSSD (root mean square of successive RR-interval. | 通过日常摄像头（如电脑摄像头、手机前置摄像头）拍摄面部视频（30-60秒），利用光电容积描记技术（远程光电容积描记术，rPPG）提取面部皮肤微循环的微弱色度变化，从中计算心率变异性（HRV）指标，包括SDNN（全部正常窦性心搏间期的标准差）、RMSSD（相邻心搏间期差值的均方根）等。该技能可用于压力评估、心血管健康监测及疲劳管理。",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 441,
+      "installs": 11,
+      "stars": 0,
+      "versions": 4
+    },
+    "createdAt": 1779759361222,
+    "updatedAt": 1783261646684,
+    "latestVersion": {
+      "version": "1.0.3",
+      "createdAt": 1783261646684,
+      "changelog": "- Updated to version 1.0.4 with documentation and config/script refinements.\n- Improved configuration and utility script organization.\n- Removed obsolete skill-card.md file. \n- Enhanced SKILL.md content for clarity and versioning.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "wechat-oa",
+    "displayName": "Wechat Oa",
+    "summary": "微信公众号草稿箱管理工具集。触发词（满足任一即触发）：看看草稿箱/查看草稿/草稿列表/公众号草稿/搜草稿/搜索草稿/按关键词找草稿/按标题搜/创建草稿/新建草稿/发文章到公众号/推送文章/更新草稿/删除草稿/批量删除草稿/生成封面图/上传图片到公众号/上传图片到素材库/已发布文章列表/公众号素材列表/素材管理/删...",
+    "description": null,
+    "topics": [
+      "Wechat Official Account",
+      "微信公众号",
+      "草稿箱"
+    ],
+    "tags": {
+      "latest": "2.0.7"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 846,
+      "installs": 16,
+      "stars": 0,
+      "versions": 41
+    },
+    "createdAt": 1776138381755,
+    "updatedAt": 1783261641258,
+    "latestVersion": {
+      "version": "2.0.6",
+      "createdAt": 1783152739035,
+      "changelog": "Auto update from GitHub",
+      "license": "MIT-0"
+    },
+    "metadata": null
+  },
+  {
+    "slug": "tob-win-loss-review",
+    "displayName": "Tob Win Loss Review",
+    "summary": "ToB销售丢单复盘助手。输入行业/规模/阶段/竞品/关键事件，使用原创销售经验规则引擎输出根因分析、风险信号和改进建议。",
+    "description": null,
+    "topics": [
+      "Review",
+      "Tob",
+      "Win Loss",
+      "Rules",
+      "Sales"
+    ],
+    "tags": {
+      "latest": "2.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 488,
+      "installs": 16,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1778861276599,
+    "updatedAt": 1783261525637,
+    "latestVersion": {
+      "version": "2.0.0",
+      "createdAt": 1778918204159,
+      "changelog": "纯规则引擎发布版（移除知识库依赖）",
+      "license": "MIT-0"
+    },
+    "metadata": null
+  },
+  {
+    "slug": "tob-sales-proposal",
+    "displayName": "Tob Sales Proposal",
+    "summary": "ToB销售提案生成器。输入客户信息/行业/痛点/产品，基于知识库真实案例输出带品牌色CSS的4模块HTML分页提案。",
+    "description": null,
+    "topics": [
+      "Sales",
+      "Proposal",
+      "Tob",
+      "知识库",
+      "B2b"
+    ],
+    "tags": {
+      "b2b": "1.0.0",
+      "latest": "1.2.1",
+      "proposal": "1.0.0",
+      "sales": "1.0.0",
+      "tob": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 831,
+      "installs": 29,
+      "stars": 0,
+      "versions": 12
+    },
+    "createdAt": 1773885362856,
+    "updatedAt": 1783261520949,
+    "latestVersion": {
+      "version": "1.2.0",
+      "createdAt": 1778917460138,
+      "changelog": "- Added package-lock.json for enhanced dependency management.\n- Updated core source files: package.json, src/cli.js, src/generator.js.\n- General improvements and minor adjustments to the codebase.\n- No changes to usage instructions or main functionality.",
+      "license": "MIT-0"
+    },
+    "metadata": null
+  },
+  {
+    "slug": "tob-poc-war-room",
+    "displayName": "Tob Poc War Room",
+    "summary": "POC war-room skill for ToB AI delivery. Use when a user needs to diagnose POC status, track pass rate, classify blockers, build a 48-hour closure plan, detec...",
+    "description": "POC war-room skill for ToB AI delivery. Use when a user needs to diagnose POC status, track pass rate, classify blockers, build a 48-hour closure plan, detect customer silence risk, generate daily POC war-room reports, or decide when a POC is ready to enter contract closing.",
+    "topics": [
+      "Poc",
+      "Tob",
+      "War Room",
+      "Delivery",
+      "Risk Control"
+    ],
+    "tags": {
+      "latest": "1.0.1",
+      "delivery": "1.0.0",
+      "poc": "1.0.0",
+      "sales": "1.0.0",
+      "tob": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 218,
+      "installs": 6,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1780493860780,
+    "updatedAt": 1783261514824,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1783261514824,
+      "changelog": "- Major simplification: The skill has been reduced to a single core documentation file (SKILL.md); all code and auxiliary files were removed.\n- SKILL.md was edited to streamline required inputs, remove procurement path rules, and clarify trigger-to-closing rules.\n- Removed \"Return From Closing\" section; boundaries and output format remain clear and unchanged.\n- Minor updates to sourcing and terminology (e.g., \"field-experience\" source).\n- Documentation now solely guides war-room POC triage; non-essential code, tests, and templates were deleted.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "sonoscli",
+    "displayName": "Sonoscli",
+    "summary": "Control Sonos speakers (discover/status/play/volume/group).",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 85487,
+      "installs": 2800,
+      "stars": 56,
+      "versions": 1
+    },
+    "createdAt": 1767545381030,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545381030,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "gog",
+    "displayName": "Gog",
+    "summary": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+    "description": null,
+    "topics": [
+      "Gmail",
+      "Calendar",
+      "Docs"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 36,
+      "downloads": 188053,
+      "installs": 5459,
+      "stars": 937,
+      "versions": 1
+    },
+    "createdAt": 1767545346060,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545346060,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "github",
+    "displayName": "Github",
+    "summary": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
+    "description": null,
+    "topics": [
+      "GitHub"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 7,
+      "downloads": 192218,
+      "installs": 7621,
+      "stars": 648,
+      "versions": 1
+    },
+    "createdAt": 1767545344344,
+    "updatedAt": 1781268517834,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545344344,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "weather",
+    "displayName": "Weather",
+    "summary": "Get current weather and forecasts (no API key required).",
+    "description": null,
+    "topics": [
+      "Current Weather"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 6,
+      "downloads": 162879,
+      "installs": 6484,
+      "stars": 421,
+      "versions": 1
+    },
+    "createdAt": 1767545394459,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545394459,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-whisper",
+    "displayName": "Openai Whisper",
+    "summary": "Local speech-to-text with the Whisper CLI (no API key).",
+    "description": null,
+    "topics": [
+      "Speech-to-Text"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 2,
+      "downloads": 85704,
+      "installs": 2966,
+      "stars": 329,
+      "versions": 1
+    },
+    "createdAt": 1767545365755,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545365755,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "skill-creator",
+    "displayName": "Skill Creator",
+    "summary": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "0.1.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 93476,
+      "installs": 3404,
+      "stars": 326,
+      "versions": 1
+    },
+    "createdAt": 1769522677376,
+    "updatedAt": 1778987225295,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1769522677376,
+      "changelog": "Initial release of skill-creator, a comprehensive guide for designing modular skills to extend Claude’s capabilities.\n\n- Introduces principles for creating effective, concise, and domain-specific skills.\n- Explains modular structure: required SKILL.md and optional scripts, references, and assets folders.\n- Outlines guidelines for what to include (and exclude) in a skill package.\n- Details progressive disclosure design for efficient context management.\n- Provides reference patterns for organizing content and bundling resources.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "notion",
+    "displayName": "Notion",
+    "summary": "Notion API for creating and managing pages, databases, and blocks.",
+    "description": null,
+    "topics": [
+      "Notion"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 93948,
+      "installs": 3209,
+      "stars": 265,
+      "versions": 1
+    },
+    "createdAt": 1767545360889,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545360889,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "obsidian",
+    "displayName": "Obsidian",
+    "summary": "Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 9,
+      "downloads": 104260,
+      "installs": 4110,
+      "stars": 438,
+      "versions": 1
+    },
+    "createdAt": 1767545362143,
+    "updatedAt": 1779137320034,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545362143,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "gemini",
+    "displayName": "Gemini",
+    "summary": "Gemini CLI for one-shot Q&A, summaries, and generation.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 5,
+      "downloads": 35040,
+      "installs": 1473,
+      "stars": 56,
+      "versions": 1
+    },
+    "createdAt": 1767545316392,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545316392,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "mcporter",
+    "displayName": "Mcporter",
+    "summary": "Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 67954,
+      "installs": 2173,
+      "stars": 196,
+      "versions": 1
+    },
+    "createdAt": 1767545355897,
+    "updatedAt": 1779137319429,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545355897,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "nano-banana-pro",
+    "displayName": "Nano Banana Pro",
+    "summary": "Generate/edit images with Nano Banana Pro (Gemini 3 Pro Image). Use for image create/modify requests incl. edits. Supports text-to-image + image-to-image; 1K/2K/4K; use --input-image.",
+    "description": null,
+    "topics": [
+      "Image Generation"
+    ],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 104573,
+      "installs": 3103,
+      "stars": 411,
+      "versions": 2
+    },
+    "createdAt": 1767545358090,
+    "updatedAt": 1779137307565,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767651987917,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "model-usage",
+    "displayName": "Model Usage",
+    "summary": "Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a scriptable per-model summary from codexbar cost JSON.",
+    "description": null,
+    "topics": [
+      "Json",
+      "Summarize"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 38511,
+      "installs": 1590,
+      "stars": 113,
+      "versions": 1
+    },
+    "createdAt": 1767667639455,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767667639455,
+      "changelog": "- Initial release of the model-usage skill for summarizing per-model usage and cost from CodexBar CLI local cost logs.\n- Supports both Codex and Claude providers.\n- Allows fetching summaries for the current (most recent) model or all models.\n- Provides both text and JSON output formats.\n- Can process costs directly from CodexBar CLI output or from a JSON file/stdin.\n- Includes guidance for CLI use and script automation.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "darwin"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "video-frames",
+    "displayName": "Video Frames",
+    "summary": "Extract frames or short clips from videos using ffmpeg.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 53010,
+      "installs": 1608,
+      "stars": 132,
+      "versions": 1
+    },
+    "createdAt": 1767545391700,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545391700,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "blogwatcher",
+    "displayName": "Blogwatcher",
+    "summary": "Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.",
+    "description": null,
+    "topics": [
+      "RSS"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 43535,
+      "installs": 1515,
+      "stars": 72,
+      "versions": 1
+    },
+    "createdAt": 1767545299849,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545299849,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "nano-pdf",
+    "displayName": "Nano Pdf",
+    "summary": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+    "description": null,
+    "topics": [
+      "PDF"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 114498,
+      "installs": 4358,
+      "stars": 264,
+      "versions": 1
+    },
+    "createdAt": 1767545359433,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545359433,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "session-logs",
+    "displayName": "Session-logs",
+    "summary": "Search and analyze your own session logs (older/parent conversations) using jq.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 42386,
+      "installs": 1678,
+      "stars": 30,
+      "versions": 1
+    },
+    "createdAt": 1770136427000,
+    "updatedAt": 1778486000320,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1770136427000,
+      "changelog": "Initial release of session-logs.\n\n- Enables searching and analyzing your session logs (past conversations) with jq and ripgrep (rg).\n- Provides bash command examples for session discovery, keyword searches, extracting messages, cost summaries, and tool usage breakdowns.\n- Documents JSONL session file structure, roles, and content types.\n- Lists session log file locations and naming conventions.\n- Includes tips for managing and querying large, append-only session histories.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "himalaya",
+    "displayName": "Himalaya",
+    "summary": "CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).",
+    "description": null,
+    "topics": [
+      "Email",
+      "Message"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 46702,
+      "installs": 1554,
+      "stars": 69,
+      "versions": 1
+    },
+    "createdAt": 1767954271328,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767954271328,
+      "changelog": "Initial release of Himalaya CLI email client skill.\n\n- Provides terminal-based email management via IMAP/SMTP.\n- Supports listing, reading, composing, replying, forwarding, searching, and organizing emails.\n- Includes multi-account support and message composition with MML.\n- Detailed setup and configuration instructions included.\n- Enables handling attachments, output customization, and debugging via logging.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "sag",
+    "displayName": "Sag",
+    "summary": "ElevenLabs text-to-speech with mac-style say UX.",
+    "description": null,
+    "topics": [
+      "Text-to-Speech"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 27357,
+      "installs": 1265,
+      "stars": 27,
+      "versions": 1
+    },
+    "createdAt": 1767545376535,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545376535,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "ELEVENLABS_API_KEY",
+          "required": true
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "goplaces",
+    "displayName": "Goplaces",
+    "summary": "Query Google Places API (New) via the goplaces CLI for text search, place details, resolve, and reviews. Use for human-friendly place lookup or JSON output for scripts.",
+    "description": null,
+    "topics": [
+      "Json"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 23236,
+      "installs": 1255,
+      "stars": 30,
+      "versions": 1
+    },
+    "createdAt": 1767545347454,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545347454,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "GOOGLE_PLACES_API_KEY",
+          "required": true
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "slack",
+    "displayName": "Slack",
+    "summary": "Use when you need to control Slack from Clawdbot via the slack tool, including reacting to messages or pinning/unpinning items in Slack channels or DMs.",
+    "description": null,
+    "topics": [
+      "Slack"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 12,
+      "downloads": 48622,
+      "installs": 1488,
+      "stars": 160,
+      "versions": 1
+    },
+    "createdAt": 1767545378002,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545378002,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "peekaboo",
+    "displayName": "Peekaboo",
+    "summary": "Capture and automate macOS UI with the Peekaboo CLI.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 4,
+      "downloads": 30860,
+      "installs": 1351,
+      "stars": 83,
+      "versions": 1
+    },
+    "createdAt": 1767545373660,
+    "updatedAt": 1779137309055,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545373660,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "darwin"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-image-gen",
+    "displayName": "Openai Image Gen",
+    "summary": "Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.",
+    "description": null,
+    "topics": [
+      "Prompt"
+    ],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 24936,
+      "installs": 1127,
+      "stars": 37,
+      "versions": 2
+    },
+    "createdAt": 1767545364210,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767652000401,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "tmux",
+    "displayName": "Tmux",
+    "summary": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 29825,
+      "installs": 1416,
+      "stars": 43,
+      "versions": 1
+    },
+    "createdAt": 1767545387948,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545387948,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "darwin",
+        "linux"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "gifgrep",
+    "displayName": "Gifgrep",
+    "summary": "Search GIF providers with CLI/TUI, download results, and extract stills/sheets.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 18957,
+      "installs": 1223,
+      "stars": 7,
+      "versions": 2
+    },
+    "createdAt": 1767488226016,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767545342229,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-whisper-api",
+    "displayName": "Openai Whisper Api",
+    "summary": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
+    "description": null,
+    "topics": [
+      "Audio",
+      "Transcribe"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 26247,
+      "installs": 1186,
+      "stars": 52,
+      "versions": 1
+    },
+    "createdAt": 1767545368103,
+    "updatedAt": 1779137313987,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545368103,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "OPENAI_API_KEY",
+          "required": true
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  }
+]
