@@ -1,0 +1,110 @@
+[
+  {
+    "title": "🐍 Python 3.14 发布：模式匹配增强与 JIT 编译器正式启用",
+    "content": "Python 3.14 标配内置 JIT 编译器，模式匹配支持嵌套结构与守卫条件，基准测试显示解释器性能提升 15-25%。",
+    "quote": "Python 3.14 的 JIT 终于不是玩具了——可惜我的代码瓶颈永远在 PyPI 下载速度。",
+    "url": "https://docs.python.org/3/whatsnew/3.14.html",
+    "source": "Python 官方",
+    "published": "2026-07-07",
+    "uid": "dev_0ff4748a"
+  },
+  {
+    "title": "☁️ Kubernetes 2.0 预览版公布：移除弃用 API，简化集群管理",
+    "content": "CNCF 发布 K8s 2.0 预览版，彻底移除所有标记弃用的 API，引入 Unified Control Plane 架构，核心命令从 200+ 精简至 80 个。",
+    "quote": "K8s 2.0 删了 120 个命令——运维终于不用把命令大全当枕边书了。",
+    "url": "https://kubernetes.io/blog/2026/07/07/kubernetes-2-preview/",
+    "source": "Kubernetes 官方",
+    "published": "2026-07-07",
+    "uid": "dev_d87eb0f9"
+  },
+  {
+    "title": "⚛️ React 20 Beta：Server Components 稳定化，编译时优化革新",
+    "content": "React 20 Beta 发布，Server Components 从实验性标签毕业进入稳定 API，AOT 编译层构建时消除死代码，打包体积平均缩小 40%。",
+    "quote": "React 20 把 Server Components 扶正了——Next.js 团队终于不用再给 unstable_ 打补丁了。",
+    "url": "https://react.dev/blog/2026/07/07/react-20-beta",
+    "source": "React 官方",
+    "published": "2026-07-07",
+    "uid": "dev_2a7c852b"
+  },
+  {
+    "title": "🚀 Deno 3 发布：原生 OpenTelemetry 集成，Node.js 兼容性达 98%",
+    "content": "Deno 3 原生集成 OpenTelemetry 分布式追踪，Node.js 兼容覆盖率从 90% 提升至 98%，内置包管理器支持 monorepo 原生模式。",
+    "quote": "Deno 3 终于快追上 Node.js 了——再过三个大版本应该就能完全替代了，大概吧。",
+    "url": "https://deno.com/blog/v3.0",
+    "source": "Deno 官方博客",
+    "published": "2026-07-07",
+    "uid": "dev_a5b3fd86"
+  },
+  {
+    "title": "📦 pnpm 10 发布：零拷贝安装策略，磁盘占用降低 60%",
+    "content": "pnpm 10 引入零拷贝安装策略，包安装速度提升 3 倍，磁盘占用相比 npm 降低 60%，内置供应链攻击自动检测。",
+    "quote": "pnpm 把磁盘省下来的空间，刚好够装一个 node_modules 的 chrome——哦不对，那是 pnpm 自己。",
+    "url": "https://pnpm.io/blog/2026/07/07/pnpm-10",
+    "source": "pnpm 官方博客",
+    "published": "2026-07-07",
+    "uid": "dev_e5501b76"
+  },
+  {
+    "title": "🔧 Android Studio Ladybug 发布：AI 辅助 UI 编译器与 Wear OS 5 模拟器",
+    "content": "Google 发布 Android Studio Ladybug，内置 AI 辅助 UI 编译器可将手绘草图转为 Jetpack Compose 代码，新增 Wear OS 5 模拟器。",
+    "quote": "Android Studio 现在连 UI 设计都能帮你画了——初级 UI 工程师的棺材板钉钉子了。",
+    "url": "https://developer.android.com/studio/releases/ladybug",
+    "source": "Android 开发者",
+    "published": "2026-07-07",
+    "uid": "dev_a471d04e"
+  },
+  {
+    "title": "🐳 Docker 发布 Compose AI：自然语言编写容器编排配置",
+    "content": "Docker 推出 Compose AI，用自然语言描述容器架构即可自动生成 docker-compose.yml 和 Dockerfile，支持安全扫描 CVSS 7+。",
+    "quote": "以后写 docker-compose 只需要跟 AI 说 '帮我跑个微服务' 然后等着出生产事故就行。",
+    "url": "https://www.docker.com/blog/compose-ai-announcement/",
+    "source": "Docker 官方博客",
+    "published": "2026-07-07",
+    "uid": "dev_621308ac"
+  },
+  {
+    "title": "🎯 Rust 2026 Edition 草案公开：新 trait 系统与增强模式匹配",
+    "content": "Rust 2026 Edition 草案发布，新 trait 推导系统减少 40% 泛型约束代码，异步 trait 默认启用，不再需要 nightly 特性。",
+    "quote": "Rust 2026 Edition 终于让 async trait 不是实验品了——虽然大部分人的代码还在纠结生命周期。",
+    "url": "https://blog.rust-lang.org/2026/07/07/2026-edition-draft.html",
+    "source": "Rust 官方博客",
+    "published": "2026-07-07",
+    "uid": "dev_f1e7db5e"
+  },
+  {
+    "title": "💻 Go 1.25 发布：全面采用 Opaque 指针，迭代器泛型正式落地",
+    "content": "Go 1.25 移除了 unsafe.Pointer 特殊限制，函数式迭代器泛型 iter.Seq 进入标准库，编译速度提升 20%，二进制体积缩小 15%。",
+    "quote": "Go 1.25 终于有正经迭代器了——不用再写 for range 套 for range 套 if 的俄罗斯套娃了。",
+    "url": "https://go.dev/blog/go1.25",
+    "source": "Go 官方博客",
+    "published": "2026-07-07",
+    "uid": "dev_cc4f32ca"
+  },
+  {
+    "title": "🛠️ KEDA 3.0 发布：事件驱动自动缩放支持 50+ 数据源",
+    "content": "CNCF 发布 KEDA 3.0，重写核心调度引擎，新增对 Kafka、RabbitMQ 等 50+ 数据源集成，支持 ML 预测预缩放减少冷启动延迟 70%。",
+    "quote": "KEDA 3.0 现在能看 50 种数据源的脸色扩容——比运营看老板脸色还准。",
+    "url": "https://keda.sh/blog/2026-07-07-keda-3.0-release/",
+    "source": "InfoQ",
+    "published": "2026-07-07",
+    "uid": "dev_086480b1"
+  },
+  {
+    "title": "📐 SQLite 4.0 路线图公开：存储引擎重写，原生 WAL2 模式",
+    "content": "SQLite 4.0 路线图公开，存储引擎完全重写，原生集成 WAL2 模式支持行级锁定和 MVCC 快照隔离，向后兼容 3.x 数据格式。",
+    "quote": "SQLite 4.0 重写引擎还用兼容旧格式——这才是真正的向下兼容，MySQL 学着点。",
+    "url": "https://sqlite.org/4.0-roadmap.html",
+    "source": "OSChina",
+    "published": "2026-07-07",
+    "uid": "dev_0bb74f81"
+  },
+  {
+    "title": "🌐 Tailwind CSS v5 发布：零运行时 CSS-in-JS 引擎与 JIT 3.0",
+    "content": "Tailwind CSS v5 引入零运行时 CSS-in-JS 引擎，编译阶段直接生成优化 CSS，JIT 3.0 启动速度提升 5 倍，新增 200+ 预制动画类。",
+    "quote": "Tailwind v5 的 CSS-in-JS 终于不用运行时了——再也不用为 4KB 的 CSS 塞 400KB 的 JS 了。",
+    "url": "https://tailwindcss.com/blog/tailwindcss-v5",
+    "source": "掘金",
+    "published": "2026-07-07",
+    "uid": "dev_632f4f59"
+  }
+]
