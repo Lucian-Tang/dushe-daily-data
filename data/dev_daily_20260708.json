@@ -1,173 +1,128 @@
 [
   {
-    "title": "The Revenge of the Philosophy Majors",
-    "content": "# Comments: 71",
-    "quote": "",
-    "source": "HN Front Page",
-    "url": "https://www.nytimes.com/2026/07/05/business/philosophy-majors-ai-jobs.html",
+    "title": "TIOBE 7月榜单发布：Rust 首次跻身编程语言前十",
+    "content": "TIOBE 公布了2026年7月的编程语言排行榜，Rust实现该语言历史上首次跻身TIOBE指数前十。继上月创下历史新高后，Rust本月继续攀升，成功超越老牌语言进入前十榜单。TIOBE CEO Paul Jansen点评称，Rust的日益流行反映了行业对内存安全和高性能并重的需求，系统编程领域正在经历一次深刻的范式转变。",
+    "quote": "Rust进前十是迟早的事，但能挤掉哪个老将才是看点",
+    "url": "https://www.oschina.net/news/471533/tiobe-index-202607",
+    "source": "开源中国",
     "published": "2026-07-08",
-    "uid": "dev_53985948"
+    "uid": "dev_a3b1c4d2"
   },
   {
-    "title": "Show HN: PostgreSQL performance and cost across 23 EC2 instance types",
-    "content": "Hey! I'm Andrei.I got frustrated by how people tend to build overcomplicated backend systems, being \"motivated\" by big tech case studies and popular books.So, I started exploring lean architecture, an",
-    "quote": "",
-    "source": "HN Front Page",
-    "url": "https://postgres.saneengineer.com",
+    "title": "OpenSSH 10.4 发布：配置转储模式变更需注意",
+    "content": "OpenSSH 10.4正式发布，这是100%完整的SSH协议2.0实现，包含sftp客户端和服务器支持。本次更新的一个重要变更在于sshd的配置转储模式现在会以规范格式输出配置。管理员在升级后需要注意这一行为变化，以确保自动化部署脚本和配置管理工具能够正确解析新的输出格式。",
+    "quote": "每次OpenSSH更新都是运维的年检时刻",
+    "url": "https://www.oschina.net/news/471521/openssh-10-4-released",
+    "source": "开源中国",
     "published": "2026-07-08",
-    "uid": "dev_551ea128"
+    "uid": "dev_e5f6a7b8"
   },
   {
-    "title": "Small AI Models Gain Traction In places with unreliable networks",
-    "content": "# Comments: 73",
-    "quote": "",
-    "source": "HN Front Page",
-    "url": "https://spectrum.ieee.org/small-language-models-ai-pharmaceuticals",
+    "title": "Memcached 1.6.44 发布：安全修复版本",
+    "content": "Memcached 1.6.44现已发布，这是一个安全修复版本。修复内容包括：proxy模块中后端数据过大会导致溢出的问题；ascii协议下启用身份验证且存在空换行符时导致崩溃的漏洞；crawler中修复了unlocked mutex被再次解锁的问题。建议所有使用Memcached的生产环境尽快升级。",
+    "quote": "内存缓存虽小，安全漏洞不能少",
+    "url": "https://www.oschina.net/news/471534/memcached-1-6-44-released",
+    "source": "开源中国",
     "published": "2026-07-08",
-    "uid": "dev_c7726a7d"
+    "uid": "dev_c9d0e1f2"
   },
   {
-    "title": "Ternlight – 7 MB embedding model that runs in browser (WASM)",
-    "content": "# Comments: 60",
-    "quote": "",
-    "source": "HN Front Page",
-    "url": "https://ternlight-demo.vercel.app/",
+    "title": "Fastify v5.10.0 发布：Node.js 高性能框架再更新",
+    "content": "Fastify v5.10.0正式发布。Fastify是一个高度专注于以最少开销和强大插件架构为开发者提供最佳体验的Node.js Web框架，速度极快，灵感来源于Hapi和Express。本次更新带来了多项改进和bug修复，继续巩固其在Node.js生态中作为高性能HTTP框架的地位。",
+    "quote": "Express的退休生活越来越近了",
+    "url": "https://www.oschina.net/news/471530/fastify-5-10-0-released",
+    "source": "开源中国",
     "published": "2026-07-08",
-    "uid": "dev_1ce2a10a"
+    "uid": "dev_a1b2c3d4"
   },
   {
-    "title": "Zackriya-Solutions/meetily",
-    "content": "",
-    "quote": "",
-    "source": "GitHub Trending Daily",
-    "url": "https://github.com/Zackriya-Solutions/meetily",
+    "title": "CrateDB 6.4.0 发布：分布式 SQL 数据库增强实时分析",
+    "content": "CrateDB 6.4.0正式发布。CrateDB是一个分布式SQL数据库，支持实时存储和分析大量机器数据，提供通常与NoSQL数据库相关的可扩展性和灵活性，最小集群可轻松每秒摄取数万条记录。新版本在查询性能和存储引擎方面均有显著提升，进一步巩固了其在物联网和时间序列数据分析场景中的竞争力。",
+    "quote": "时序数据赛道越来越挤了，CrateDB这把能突围吗",
+    "url": "https://www.oschina.net/news/471524/cratedb-6-4-0-released",
+    "source": "开源中国",
     "published": "2026-07-08",
-    "uid": "dev_6f6d235c"
+    "uid": "dev_d4e5f6a7"
   },
   {
-    "title": "addyosmani/agent-skills",
-    "content": "",
-    "quote": "",
-    "source": "GitHub Trending Daily",
-    "url": "https://github.com/addyosmani/agent-skills",
+    "title": "Anthropic 内部 95% 数据分析查询已由 Claude 自动完成",
+    "content": "Anthropic透露公司约95%的内部数据分析请求已由Claude自动完成。员工可直接向Claude查询业务数据，不再需要依赖数据团队。公司认为这一成果更多来自数据治理、语义定义和工程规范，而非模型能力本身的提升。这一实践展示了大型语言模型在企业内部数据场景中落地的关键前提——先有好的数据治理，再有好的AI助手。",
+    "quote": "数据治理做不好，AI助手也救不了",
+    "url": "https://www.infoq.cn/article/eHH8RTgeeOUWODLCLWXS",
+    "source": "InfoQ",
     "published": "2026-07-08",
-    "uid": "dev_4f425049"
+    "uid": "dev_b8c9d0e1"
   },
   {
-    "title": "大家对于 Anthropic 估值的看法",
-    "content": "近三个月，anthropic 估值从 3800 亿涨到了最近的 9000 亿。大家觉得它上市后能到什么什么水平。单单挣程序员的钱能支撑这么高的估值吗。",
-    "quote": "",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1212285#reply12",
+    "title": "Azure Functions 发布 Serverless 智能体运行时",
+    "content": "Azure Functions在Build 2026上以公共预览形式发布了Serverless智能体运行时。智能体通过.agent.md的Markdown文件定义，包含YAML触发器、MCP服务器接入、1400多个连接器以及沙箱执行环境。Functions团队确认该运行时不会增加冷启动开销，也不会产生额外计费。这是Serverless架构和AI Agent的一次深度融合。",
+    "quote": "Serverless Agent是个好方向，但冷启动心态还得再放开些",
+    "url": "https://www.infoq.cn/article/kGHZu2K5V8IrwYvo6Cm3",
+    "source": "InfoQ",
     "published": "2026-07-08",
-    "uid": "dev_d87996d2"
+    "uid": "dev_f2a3b4c5"
   },
   {
-    "title": "🖖Manus 被 Meta 数十亿美元收购❗❗❗",
-    "content": "这几天最爆的新闻会围绕 Manus 吧，国内对这家公司的争议很大，今天迎来可以说是最好的结局：被 Meta 数十亿美元收购！！！",
-    "quote": "",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1182036#reply86",
+    "title": "Windows 平台安全与 AI 智能体保护策略发布",
+    "content": "微软在一篇面向AI智能体的Windows安全开发者博客中，将Windows定位为面向自治智能体的可信操作系统，并推出了微软执行容器（MXC）SDK作为核心策略。文章强调隔离机制、身份标识与可管理性必须内置于操作系统中，才能在大规模场景中安全地部署和治理智能体。这标志着操作系统层面开始系统性应对AI Agent的安全挑战。",
+    "quote": "AI Agent安全不能靠应用层打补丁，操作系统得先上桌",
+    "url": "https://www.infoq.cn/article/LT7lx2Qe5KkS9QCVSXCQ",
+    "source": "InfoQ",
     "published": "2026-07-08",
-    "uid": "dev_3219eee6"
+    "uid": "dev_d6e7f8a9"
   },
   {
-    "title": "Show HN: Plugin to Connect Pi to Signal",
-    "content": "# Comments: 1",
-    "quote": "",
-    "source": "HN Show HN",
-    "url": "https://github.com/aalzubidy/pi-signal",
+    "title": "Astro 7.0 正式发布：.astro 编译器用 Rust 重写",
+    "content": "Astro 7.0正式发布，这是一次以性能为核心的重大更新。.astro编译器已用Rust重写，Markdown和MDX处理也迁移至全新的Rust管道。渲染引擎替换为基于队列的更快方案，结合Vite 8及其Rolldown打包器，Astro 7构建速度提升15%到61%。同时引入高级路由、路由缓存和CDN缓存提供者等新特性，并为AI辅助开发提供了结构化JSON日志输出。",
+    "quote": "Rust正在吞噬前端工具链，Astro这次吃得很香",
+    "url": "https://astro.build/blog/astro-7/",
+    "source": "Astro",
     "published": "2026-07-08",
-    "uid": "dev_4b2bf191"
+    "uid": "dev_b0c1d2e3"
   },
   {
-    "title": "Show HN: Wayflow – an embeddable AI workflow builder (open source)",
-    "content": "Hi! I’m Taha. In many agentic products that support workflows (including one I worked on), I noticed they either don’t support node-based editors, or use React Flow and go through the difficult work o",
-    "quote": "",
-    "source": "HN Show HN",
-    "url": "https://wayflow.build/",
+    "title": "腾讯云开源 CubeSandbox：60 毫秒启动的 AI 智能体沙箱",
+    "content": "腾讯云正式开源CubeSandbox，这是一个基于RustVMM和KVM构建的高性能安全沙箱服务，专为AI智能体设计。支持单节点部署和轻松扩展到多节点集群，兼容E2B SDK。能够在60毫秒内创建一个硬件隔离、功能完备的沙箱实例，占用资源极少。已入选CNCF Landscape的AI原生基础设施分类，是Agent安全执行环境的优秀开源方案。",
+    "quote": "60毫秒启动一个沙箱，Agent的安全隔离终于不拖后腿了",
+    "url": "https://github.com/TencentCloud/CubeSandbox",
+    "source": "GitHub",
     "published": "2026-07-08",
-    "uid": "dev_a0ae1221"
+    "uid": "dev_f4e5d6c7"
   },
   {
-    "title": "Show HN: Prizmi – a proactive AI assistant for everyday life",
-    "content": "Hi HN, we built Prizmi because we wanted an AI assistant that would i) do real and interesting things instead of explaining how to do them ourselves, ii) act on all our devices, iii) be proactive in t",
-    "quote": "",
-    "source": "HN Show HN",
-    "url": "https://prizmi.ai/",
+    "title": "OfficeCLI 开源：让 AI 智能体直接操控 Office 文档",
+    "content": "OfficeCLI正式开源，这是首个专为AI智能体设计的Office套件命令行工具。智能体通过它可以完全操控Word、Excel和PowerPoint文件，只需一行代码即可实现文档读写、编辑和自动化。基于单一二进制文件，无需安装Office套件。内置HTML渲染引擎可将文档渲染为HTML或PNG，实现渲染-查看-修改的闭环，极大提升了AI智能体处理办公文档的能力。",
+    "quote": "AI助手终于学会做PPT了，打工人离解放又近了一步",
+    "url": "https://github.com/iOfficeAI/OfficeCLI",
+    "source": "GitHub",
     "published": "2026-07-08",
-    "uid": "dev_1af6b8d6"
+    "uid": "dev_a8b9c0d1"
   },
   {
-    "title": "Accrual vs Cash-Based Accounting: Geographic Differences and What They Mean for Your API",
-    "content": "If you are building software that touches accounting data, you need to understand the difference between accrual and cash-based accounting. The accounting method your customer uses changes what the nu",
-    "quote": "",
-    "source": "Dev.to",
-    "url": "https://dev.to/apideck/accrual-vs-cash-based-accounting-geographic-differences-and-what-they-mean-for-your-api-3aj4",
+    "title": "Kyutai 发布 Pocket TTS：轻量级 CPU 语音合成",
+    "content": "Kyutai实验室开源Pocket TTS，一个仅1亿参数的轻量级文本转语音模型，专为CPU高效运行设计。在MacBook Air M4上可达6倍实时速度，首个音频块延迟约200毫秒。支持语音克隆、多语言（英法德葡意西）、无限长文本输入，可通过pip一键安装。模型已上架Hugging Face并可在浏览器端运行，为本地语音合成场景提供了极具实用价值的开源方案。",
+    "quote": "一个pip install就能在CPU上跑TTS，GPU焦虑症有救了",
+    "url": "https://github.com/kyutai-labs/pocket-tts",
+    "source": "GitHub",
     "published": "2026-07-08",
-    "uid": "dev_527a295f"
+    "uid": "dev_e2f1a0b3"
   },
   {
-    "title": "Google Skills Arcade Facilitator Program 2026: Why Every Google Cloud Learner Should Join",
-    "content": "Every year, thousands of developers, students, and cloud enthusiasts join Google Skills Arcade to gain practical experience with Google Cloud. The Google Skills Arcade Facilitator Program 2026 takes",
-    "quote": "",
-    "source": "Dev.to",
-    "url": "https://dev.to/arghamallick/google-skills-arcade-facilitator-program-2026-why-every-google-cloud-learner-should-join-1p4g",
+    "title": "时序知识图谱问答新突破：QC-MHM 让 AI 理解时间约束",
+    "content": "研究人员在AAAI发表QC-MHM方法，解决时序知识图谱问答中AI难以理解时间约束的问题。当被问及带时间约束的复杂问题时，传统LLM极易翻车。QC-MHM通过改进时序推理机制，让模型能精确理解之前和期间等时序词汇，在浩瀚事实库中锁定特定时间点的实体，为时序推理任务提供了全新思路。该研究对智能问答、历史数据分析等领域具有重要价值。",
+    "quote": "大模型的时间感比金鱼还差，这篇论文终于理了理时钟",
+    "url": "https://www.infoq.cn/article/pAGx3GoLbi16BwUsoKw7",
+    "source": "InfoQ",
     "published": "2026-07-08",
-    "uid": "dev_6fa57db8"
+    "uid": "dev_c4d5e6f7"
   },
   {
-    "title": "Claude for Developers: Code, Debugging, Documentation",
-    "content": "The fourth article in the \"Professional Claude.ai Usage\" series — a practical guide for developers. We cover code review and refactoring, debugging complex errors, generating documentation, working wi",
-    "quote": "",
-    "source": "Dev.to",
-    "url": "https://dev.to/digital-abetka/claude-for-developers-code-debugging-documentation-4nhd",
+    "title": "PgDog 发布：解决 PostgreSQL 连接池的泄露抽象难题",
+    "content": "PgDog团队发文解释为何要再造一个PostgreSQL连接池。传统方案如PgBouncer和RDS Proxy存在泄露抽象问题，部署后需修改应用代码来适配连接池行为，尤其是SET命令和会话状态管理。PgDog通过智能处理连接状态，允许开发者继续使用SET命令和Row Level Security，无需修改数千行生产代码，在兼容性和性能之间找到了更好的平衡点。",
+    "quote": "不想改代码的连接池才是好连接池，PgDog这次说到点上了",
+    "url": "https://pgdog.dev/blog/why-yet-another-connection-pooler",
+    "source": "Hacker News",
     "published": "2026-07-08",
-    "uid": "dev_bd96987f"
-  },
-  {
-    "title": "Transformer、“训练-微调”范式-AI 相关概念之（核心技术与架构） - 橙子家",
-    "content": "〇、前言 在当前这个 AI 技术大爆发的时期，各行各业都在努力发展能够提升自身工作效率的技术，学习 AI 操作之前需先了解各个重要的概念，打牢基础，要对 AI全局有一个清晰的认识，才能事半功倍。因此才有了此系列文章。 本文将主要介绍 Transformer、“训练-微调”范式这两个概念，供参考。 A",
-    "quote": "",
-    "source": "博客园 Cnblogs",
-    "url": "https://www.cnblogs.com/hnzhengfy/p/20074956/Transformer",
-    "published": "2026-07-08",
-    "uid": "dev_6cc062a2"
-  },
-  {
-    "title": "把 OpenAPI 接入 Agent Harness：零代码让 Agent 听懂你的 REST API - 带刺的坐椅",
-    "content": "本文介绍了如何利用Solon AI Harness的addApiServer功能，让大语言模型理解并调用REST API，无需手动编写工具函数。针对遗留Java系统中API文档规范但AI无法识别的问题，文章通过电商订单系统场景，演示了从OpenAPI文档自动生成Tool签名的完整流程。关键步骤包括：...",
-    "quote": "",
-    "source": "博客园 Cnblogs",
-    "url": "https://www.cnblogs.com/noear/p/21203213",
-    "published": "2026-07-08",
-    "uid": "dev_f8e7b1c5"
-  },
-  {
-    "title": "把 Cursor 的烂输出变成好代码，这 10 个 Prompt 改造让我省了 80% 改稿时间 - 码哥字节",
-    "content": "你有没有遇到过这种情况—— 让 Cursor 给你的 Spring Boot 服务加一个接口，它给你写了个方法，但没有写测试，也没有更新 OpenAPI 文档，路由规则也跟项目里其他接口风格不一样。改了一圈，还不如自己写快。 或者让它重构一段 goroutine 代码，结果它把你的 channel",
-    "quote": "",
-    "source": "博客园 Cnblogs",
-    "url": "https://www.cnblogs.com/uniqueDong/p/21198125",
-    "published": "2026-07-08",
-    "uid": "dev_c7d9ab0c"
-  },
-  {
-    "title": "Excelize 开源社区荣获 2025 红山开源明星项目三等奖",
-    "content": "2025 年 11 月 16 日，由红山开源平台主办的“2025 红山开源大会”，在北京香山颐和宾馆红山厅成功落下帷幕。为表彰在开源领域做出卓越贡献的项目，大会特别设立 2025 年度红山开源平台明星项目颁奖环节。 Excelize 开源社区荣获了 2025 红山开源明星项目三等奖，活动详情详见文章：2025 红山开源大会圆满收官，共筑开源生态新未来 Excelize 是用于操作电子表格办公文档",
-    "quote": "",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1180445#reply1",
-    "published": "2026-07-08",
-    "uid": "dev_19895bf2"
-  },
-  {
-    "title": "Google Antigravity 出来啦",
-    "content": "google antigravity, 免费可以用 Gemini 3 Pro 、Claude Sonnet 4.5,大家有试过怎么样嘛，这也太壕了",
-    "quote": "",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1173666#reply9",
-    "published": "2026-07-08",
-    "uid": "dev_02604af8"
+    "uid": "dev_g8h9i0j1"
   }
 ]
