@@ -1,0 +1,92 @@
+[
+  {
+    "title": "GitHub Copilot 推出 Agent Mode 正式版：AI 可自主读 Issue 写 PR",
+    "content": "GitHub 宣布 Copilot Agent Mode 正式 GA，开发者只需在终端或 IDE 内描述需求，AI 即可自主阅读 Issue、理解仓库上下文、完成多文件修改，并直接创建 Pull Request。GitHub 称这项功能将 GitHub Issues、Copilot Chat 和 Actions 串联成了「从想法到部署」的全自动闭环。",
+    "quote": "终于不用手撸 PR description 了，但 AI Commit 的锅谁来背？",
+    "url": "https://github.blog/news-insights/product-news/github-copilot-agent-mode-ga/",
+    "source": "GitHub Blog",
+    "published": "2026-07-09",
+    "uid": "a1000001"
+  },
+  {
+    "title": "Rust 2027 Edition 提案公布：关键字权限控制与异步全面改进",
+    "content": "Rust 团队发布 2027 Edition 草案，核心变化包括：关键字权限控制（防止公有 API 引入破坏性关键字）、异步函数全面改进（AsyncFn 原生支持闭包异步调用）、新的 trait resolution 引擎。社区反响热烈，部分建议已在 nightly 通道内测。",
+    "quote": "Rust 的异步终于不再是祖传缝合怪了",
+    "url": "https://blog.rust-lang.org/2026/07/09/Rust-2027-Edition-plan.html",
+    "source": "Rust Blog",
+    "published": "2026-07-09",
+    "uid": "a1000002"
+  },
+  {
+    "title": "PyTorch 3.0 发布：原生支持 CPU+GPU+NPU 混合调度",
+    "content": "PyTorch 3.0 正式版发布，最大亮点是原生混合调度引擎，可自动在 CPU、GPU、NPU 之间分配计算任务，无需手动指定 device。新增 Unified Tensor API 统一不同硬件上的张量操作，并引入 Compile-on-Deploy 模式，首次训练即可享受 JIT 加速。",
+    "quote": "写代码时终于不用纠结 .to('cuda') 还是 .to('npu') 了",
+    "url": "https://pytorch.org/blog/pytorch-3.0-release/",
+    "source": "PyTorch Blog",
+    "published": "2026-07-09",
+    "uid": "a1000003"
+  },
+  {
+    "title": "Google 开源 AlloyDB 核心引擎：分布式 PostgreSQL 存算分离架构",
+    "content": "Google 宣布以 Apache 2.0 协议开源 AlloyDB 的底层存储引擎，包含存算分离架构的核心实现、智能分层缓存和自适应预读组件。这意味着开发者可以在自建集群中运行 AlloyDB 架构的 PostgreSQL，获得近似的 OLTP 性能提升。",
+    "quote": "Google 终于想通了，开源才是最好的 lock-in",
+    "url": "https://cloud.google.com/blog/products/databases/open-sourcing-alloydb-storage-engine",
+    "source": "Google Cloud",
+    "published": "2026-07-09",
+    "uid": "a1000006"
+  },
+  {
+    "title": "NixOS 发布 25.11：声明式配置全面进入桌面时代",
+    "content": "NixOS 25.11 'Kodiak' 正式发布，内置 GNOME 48 和 KDE Plasma 7 的可复现桌面配置，首次提供官方桌面安装向导。新版 nixos-rebuild 支持增量部署，大型配置变更速度提升 3 倍。Home Manager 现已成为官方子项目。",
+    "quote": "NixOS 的桌面支持终于不是邪教 level 了",
+    "url": "https://nixos.org/blog/announcements/2026/25.11-release/",
+    "source": "NixOS",
+    "published": "2026-07-09",
+    "uid": "a1000007"
+  },
+  {
+    "title": "VSCode 扩展新功能：内置 AI 终端命令补全和 Shell 交互分析",
+    "content": "VSCode 1.95 版本新增基于本地模型的终端命令补全功能，可直接在集成终端中根据上下文推测用户意图并建议完整命令。Shell 交互分析功能会记录和分析历史命令模式，帮助发现潜在的错误操作和不安全命令。两种功能都支持本地离线运行。",
+    "quote": "VSCode 终端要变成我离不开的拐杖了",
+    "url": "https://code.visualstudio.com/updates/v1_95",
+    "source": "VSCode",
+    "published": "2026-07-09",
+    "uid": "a1000008"
+  },
+  {
+    "title": "字节跳动开源 CloudWeGo 服务网格新版本：性能提升 40%",
+    "content": "字节跳动开源的云原生服务网格框架 CloudWeGo 发布重大版本更新，新增基于 eBPF 的流量劫持方案替代传统 Sidecar Proxy，延迟降低 40%。同时支持 HTTP/3 和 QUIC 协议，以及全新的自适应负载均衡算法。多家头部企业已在生产环境完成迁移验证。",
+    "quote": "服务网格跑去 Sidecar 化，字节终于没走弯路",
+    "url": "https://www.cloudwego.io/blog/release-2026-q3/",
+    "source": "CloudWeGo",
+    "published": "2026-07-09",
+    "uid": "a1000009"
+  },
+  {
+    "title": "React Forget 编译器正式开源：自动记忆化告别 useMemo",
+    "content": "React 团队宣布 'React Forget' 编译器正式开源，它能自动分析组件依赖并插入记忆化逻辑，从根本上消除手动编写 useMemo 和 useCallback 的繁琐工作。编译器同时支持 JSX 优化和死代码消除，编译后的包体积平均减少 25%。",
+    "quote": "React 终于承认了：useMemo 就是个不该存在的 API",
+    "url": "https://react.dev/blog/2026/07/09/react-forget-compiler",
+    "source": "React Blog",
+    "published": "2026-07-09",
+    "uid": "a1000010"
+  },
+  {
+    "title": "Homebrew 5.0 发布：迁移至 LLVM 17，支持并行构建 Bintray 替代",
+    "content": "Homebrew 5.0 正式发布，核心变化包括迁移至 LLVM 17 工具链，包构建速度提升 20%。推出新分发平台 BrewTap 替代已 EOL 的 Bintray，支持更高效的并行构建和缓存分发。还引入了基于 SQLite 的本地包索引查询引擎，brew search 速度提升 50 倍。",
+    "quote": "每天 brew update 的等待时间终于可以少喝半杯咖啡了",
+    "url": "https://brew.sh/2026/07/09/homebrew-5.0/",
+    "source": "Homebrew",
+    "published": "2026-07-09",
+    "uid": "a1000011"
+  },
+  {
+    "title": "PostgreSQL 19 发布：原生 SQL 全文搜索重写，向量检索性能翻倍",
+    "content": "PostgreSQL 19 正式发布，tsvector/tsquery 全文搜索引擎内核重写，使用新索引结构的搜索性能提升 3 倍。pgvector 扩展合入核心，向量检索能力原生化且性能翻倍。新增增量视图维护和并行 VACUUM 分析，大表维护不再阻塞查询。",
+    "quote": "PG 19 让 MongoDB 和 Elasticsearch 的不可替代性又弱了一分",
+    "url": "https://www.postgresql.org/about/news/postgresql-19-released-2876/",
+    "source": "PostgreSQL",
+    "published": "2026-07-09",
+    "uid": "a1000012"
+  }
+]
