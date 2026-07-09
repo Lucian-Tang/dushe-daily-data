@@ -1,0 +1,1552 @@
+[
+  {
+    "slug": "stablepay-agent-bootstrap",
+    "displayName": "StablePay Agent Bootstrap",
+    "summary": "Install, bootstrap, validate, and optionally connect StablePay MCP on Codex, Claude Code, or Cursor.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.4.0",
+      "mcp": "1.4.0",
+      "payment": "1.4.0",
+      "stablepay": "1.4.0",
+      "web3": "1.4.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 5
+    },
+    "createdAt": 1783599537677,
+    "updatedAt": 1783613948178,
+    "latestVersion": {
+      "version": "1.3.0",
+      "createdAt": 1783612008699,
+      "changelog": "Initial release",
+      "license": "MIT-0"
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "shellgames",
+    "displayName": "ShellGames",
+    "summary": "Play board games on ShellGames.ai — Chess, Poker, Ludo, Tycoon, Memory, and Spymaster. Use when the agent wants to play games against humans or other AI agen...",
+    "description": null,
+    "topics": [
+      "Game"
+    ],
+    "tags": {
+      "latest": "4.138.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1589,
+      "installs": 56,
+      "stars": 2,
+      "versions": 9
+    },
+    "createdAt": 1771254223190,
+    "updatedAt": 1783613532997,
+    "latestVersion": {
+      "version": "4.137.0",
+      "createdAt": 1783612785957,
+      "changelog": "ShellStreet virtual stock market: 12 reef stocks, $10k start, dividends, earnings season, limit orders, short selling, price alerts/webhooks, trader profiles, weekly contest. Plus PWA support.",
+      "license": "MIT-0"
+    },
+    "metadata": null
+  },
+  {
+    "slug": "scrapfly-alerting",
+    "displayName": "Scrapfly Alerting",
+    "summary": "Threshold-based alerting on Scrapfly account metrics. Wire up rules like \"alert me when scrape success rate drops below 95% for 10 minutes\" and receive notif...",
+    "description": "Threshold-based alerting on Scrapfly account metrics. Wire up rules like \"alert me when scrape success rate drops below 95% for 10 minutes\" and receive notifications via email, webhook, or in-app. Use when the user asks to \"set up an alert\", \"monitor my scrape success rate\", \"tell me when my scrapes start failing\", \"alert on ASP block rate\", \"watch a specific domain\", or any task involving the Scrapfly alerting product. Covers the three call paths: REST API, MCP `alert_*` tools, and the `scrapfly alert` CLI subcommand. Enterprise plan feature; GATED behind the ALERTING feature flag on customer accounts.",
+    "topics": [
+      "monitoring"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1783612415062,
+    "updatedAt": 1783613288873,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1783612415062,
+      "changelog": "scrapfly-alerting 1.0.0\n\n- Initial release with threshold-based alerting for Scrapfly account metrics.\n- Supports alert setup, monitoring, and management via REST API, MCP tools, and CLI.\n- Lets users configure alerts for metrics like scrape success rate, block rate, and more, with flexible notification channels (email, webhook, in-app).\n- Includes guided, data-driven workflow: baseline discovery, rule preview, dry-run creation, and confirmation.\n- Access gated for Enterprise plan customers with ALERTING feature flag.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "scrapfly-browser",
+    "displayName": "Scrapfly Browser",
+    "summary": "Automate cloud browsers using the Scrapfly Cloud Browser API with Python Playwright",
+    "description": "Automate cloud browsers using the Scrapfly Cloud Browser API with Python Playwright",
+    "topics": [
+      "cloud-browser",
+      "browser-api",
+      "web-scraping"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1783612424795,
+    "updatedAt": 1783613228149,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1783612424795,
+      "changelog": "Initial release of scrapfly-browser.\n\n- Automate cloud browsers remotely using Scrapfly Cloud Browser API with Python Playwright.\n- Supports proxy rotation, anti-bot fingerprinting, geo-targeting, and persistent sessions.\n- Provides example scripts for navigation, login flows, screenshots, geo-targeted browsing, session management, and infinite scroll scraping.\n- Simple setup via Playwright and API key, with configurable connection parameters for advanced workflows.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "scrapfly-sdk-typescript",
+    "displayName": "Scrapfly SDK TypeScript",
+    "summary": "Web scraping from TypeScript or JavaScript with the Scrapfly SDK (`scrapfly-sdk`). Use when the user asks to scrape a URL, bypass anti-bot protection, render...",
+    "description": "Web scraping from TypeScript or JavaScript with the Scrapfly SDK (`scrapfly-sdk`). Use when the user asks to scrape a URL, bypass anti-bot protection, render JavaScript, capture screenshots, or extract structured data from Node.js, Deno, or Bun.",
+    "topics": [
+      "scrapfly-sdk",
+      "typescript",
+      "scrapfly-typescript-sdk"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1783612519345,
+    "updatedAt": 1783613083558,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1783612519345,
+      "changelog": "Initial release of scrapfly-sdk-typescript.\n\n- Web scraping SDK for TypeScript/JavaScript supporting Node.js, Deno, Bun, and edge runtimes.\n- Features include proxy rotation, anti-bot bypass (ASP), JavaScript rendering, screenshots, and AI-powered extraction.\n- Supports concurrent scraping, geo-targeting, and multiple output formats (raw, HTML, JSON, markdown, text).\n- Simple setup with API key and npm/JSR installation.\n- Provides concise examples for scraping, rendering, screenshots, and data extraction.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "scrapfly-sdk-go",
+    "displayName": "Scrapfly SDK Go",
+    "summary": "Web scraping from Go with the Scrapfly SDK (`github.com/scrapfly/go-scrapfly`). Use when the user asks to scrape a URL, bypass anti-bot protection, render Ja...",
+    "description": "Web scraping from Go with the Scrapfly SDK (`github.com/scrapfly/go-scrapfly`). Use when the user asks to scrape a URL, bypass anti-bot protection, render JavaScript, capture screenshots, or extract structured data from a Go program.",
+    "topics": [
+      "scrapfly-sdk",
+      "golang",
+      "scrapfly-golang-sdk"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1783612509515,
+    "updatedAt": 1783613043051,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1783612509515,
+      "changelog": "Initial release of scrapfly-sdk-go.\n\n- Introduces Go SDK for web scraping with Scrapfly.\n- Supports proxy rotation, anti-bot bypass, JavaScript rendering, screenshots, and AI extraction.\n- Provides Go-idiomatic API with detailed configuration options.\n- Includes examples for basic scraping, anti-bot bypass, geo-targeting, rendering, and data extraction.\n- Features built-in goquery selector for easy HTML parsing.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "scrapfly-screenshot",
+    "displayName": "Scrapfly Screenshot",
+    "summary": "Capture web page screenshots using the Scrapfly Screenshot API with the Python SDK",
+    "description": "Capture web page screenshots using the Scrapfly Screenshot API with the Python SDK",
+    "topics": [
+      "screenshot-api",
+      "scrapfly-screenshot-api"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1783612500599,
+    "updatedAt": 1783613006770,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1783612500599,
+      "changelog": "Initial release of scrapfly-screenshot.\n\n- Capture high-quality screenshots of web pages using the Scrapfly Screenshot API via Python SDK.\n- Supports full-page, viewport, or element-specific screenshots, with anti-bot bypass and JavaScript rendering.\n- Flexible options: image format (JPG, PNG, WebP, GIF), custom resolutions, geo-targeting, banner blocking, dark mode, and custom JavaScript execution.\n- Features error handling, caching, and accessibility testing (vision deficiencies).\n- Includes detailed usage examples and setup instructions.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "scrapfly-scraper",
+    "displayName": "Scrapfly Scraper",
+    "summary": "Web scraping using the Scrapfly Scraper API with the Python SDK",
+    "description": "Web scraping using the Scrapfly Scraper API with the Python SDK",
+    "topics": [
+      "web-scraping",
+      "web-scraping-api",
+      "scraper-api",
+      "scrapfly-scraper-api"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1783612485771,
+    "updatedAt": 1783612981787,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1783612485771,
+      "changelog": "scrapfly-scraper 1.0.0 – Initial release\n\n- Introduces web scraping capabilities using the Scrapfly Scraper API and Python SDK.\n- Supports proxy rotation, anti-bot bypass (Cloudflare, DataDome, etc.), and geo-targeted scraping.\n- Allows JavaScript rendering, browser control via JS scenarios, and session reuse.\n- Offers configurable output formats (HTML, JSON, markdown, text) and extraction options.\n- Provides detailed parameter documentation and Python usage examples.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "scrapfly-extraction",
+    "displayName": "Scrapfly Extraction",
+    "summary": "Extract structured data from web content using the Scrapfly Extraction API with the Python SDK",
+    "description": "Extract structured data from web content using the Scrapfly Extraction API with the Python SDK",
+    "topics": [
+      "data-extraction",
+      "ai-extration-api",
+      "llm-data-extraction"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1783612459561,
+    "updatedAt": 1783612931763,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1783612459561,
+      "changelog": "Initial release of scrapfly-extraction skill.\n\n- Provides integration with the Scrapfly Extraction API for structured data extraction from HTML, markdown, and text.\n- Supports extraction via LLM prompts, pre-trained AI models, or custom templates (inline or saved).\n- Includes detailed usage documentation and Python code examples.\n- Allows API key authentication through environment variable or client parameter.\n- Supports advanced extraction scenarios: questions, listings, standardized schemas, and custom selectors.\n- Features description of template versioning, scoping, and caching for saved extraction templates.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "scrapfly-crawler",
+    "displayName": "Scrapfly Crawler",
+    "summary": "Crawl entire websites using the Scrapfly Crawler API with the Python SDK",
+    "description": "Crawl entire websites using the Scrapfly Crawler API with the Python SDK",
+    "topics": [
+      "web-crawler",
+      "crawler",
+      "crawling",
+      "web-crawling",
+      "scrapfly-crawler"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1783612449299,
+    "updatedAt": 1783612888458,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1783612449299,
+      "changelog": "Initial release of scrapfly-crawler.\n\n- Provides documentation for using the Scrapfly Crawler API via the Python SDK.\n- Details setup instructions, key imports, and CrawlerConfig parameter reference.\n- Includes example workflows: quick-start, low-level polling, path filtering, anti-bot bypass, custom extraction rules, and batch content retrieval.\n- Describes webhook integration and supported webhook events.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "kubernetes-pod-logs-analyzer",
+    "displayName": "K8s Pod Logs Analyzer / K8s 容器日志分析器",
+    "summary": "Instantly tail, filter, and grep across all pods in a namespace with AI anomaly detection. / 实时追踪、过滤并检索命名空间下所有 Pod 日志，内置 AI 异常检测。",
+    "description": "Instantly tail, filter, and grep across all pods in a namespace with AI anomaly detection. / 实时追踪、过滤并检索命名空间下所有 Pod 日志，内置 AI 异常检测。",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1783612866539,
+    "updatedAt": 1783612866539,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1783612866539,
+      "changelog": "v1.0.0: Launch",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "scrapfly-cli",
+    "displayName": "Scrapfly CLI",
+    "summary": "Use the Scrapfly CLI (`scrapfly`) to scrape web pages, capture screenshots, extract structured data with AI, crawl entire sites, and drive a cloud browser ov...",
+    "description": "Use the Scrapfly CLI (`scrapfly`) to scrape web pages, capture screenshots, extract structured data with AI, crawl entire sites, and drive a cloud browser over CDP from a shell. JSON envelope on stdout for every command. Use when the user asks to \"scrape a URL\", \"screenshot a page\", \"extract data from HTML\", \"crawl a site\", \"drive a browser with Playwright/CDP\", \"bypass anti-bot\", or any task involving the `scrapfly` command.",
+    "topics": [
+      "web-scraping",
+      "scraping-cli",
+      "web-scraping-cli",
+      "scrapfly-cli"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1783612438217,
+    "updatedAt": 1783612852855,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1783612438217,
+      "changelog": "Initial public release of scrapfly-cli.\n\n- Provides a unified CLI for web scraping, screenshots, AI data extraction, recursive crawling, and browser automation via Scrapfly.\n- Supports output as JSON envelopes for programmatic use.\n- Includes specialized commands for scraping, screenshot capture, AI extraction, site crawling, interactive/persistent browser automation, LLM agent-driven browsing, alerting on account metrics, and job scheduling.\n- Offers broad configurability for rendering, anti-bot options, session management, batch processing, API use, and observability.\n- Installation available via pre-built binaries or Go source.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "safety-footwear-buyer-assistant",
+    "displayName": "Safety Footwear Buyer Assistant",
+    "summary": "B2B safety footwear buyer assistant for product matching, RFQ preparation, supplier verification, and simulated inquiry intake. Use when a PPE buyer, importe...",
+    "description": "B2B safety footwear buyer assistant for product matching, RFQ preparation, supplier verification, and simulated inquiry intake. Use when a PPE buyer, importer, distributor, sourcing team, workwear brand, or industrial purchaser needs help selecting PVC boots, EVA boots, rubber boots, or safety shoes; comparing materials and certifications; drafting an inquiry; or running a local mock inquiry submission that returns success without transmitting data externally.",
+    "topics": [
+      "safety footwear",
+      "ppe",
+      "b2b sourcing",
+      "rfq",
+      "oem"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1783612837423,
+    "updatedAt": 1783612837423,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1783612837423,
+      "changelog": "Initial release: safety-footwear-buyer-assistant v1.0.0\n\n- Assists B2B PPE buyers with safety footwear selection, product matching, and simulated inquiry submission.\n- Enables product search using bundled static data for PVC, EVA, rubber boots, and safety shoes, including material and certification details.\n- Guides RFQ preparation and supports local mock inquiry intake that validates and normalizes inquiry data without external transmission or data storage.\n- Includes procurement-focused recommendations, follow-up guidance, and supplier reference URLs.\n- Provides scripts and reference guides for product matching, RFQ creation, and supplier verification.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "legal-assistant",
+    "displayName": "Legal Assistant",
+    "summary": "法务助手（Legal Assistant）。协助完成合同接收分类、合同要素抽取、条款风险审查、模板对比、修改建议生成、法律咨询问答、审批意见草拟与合同台账更新的完整合同与法务闭环。本工具由 @afeicn 提供支持。",
+    "description": "法务助手（Legal Assistant）。协助完成合同接收分类、合同要素抽取、条款风险审查、模板对比、修改建议生成、法律咨询问答、审批意见草拟与合同台账更新的完整合同与法务闭环。本工具由 @afeicn 提供支持。",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1783612781520,
+    "updatedAt": 1783612781520,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1783612781520,
+      "changelog": "- Initial release of Legal Assistant (legal-assistant) skill.\n- Supports end-to-end contract and legal workflows including contract intake/classification, clause extraction, risk review, template comparison, amendment suggestions, legal Q&A, approval opinion drafts, and contract ledger updates.\n- Adds core guidance on output structure and boundaries, ensuring data privacy and mandatory human review for high-risk matters.\n- Documentation migrated from skill-card.md to _meta.json.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "ghost-eye",
+    "displayName": "Ghost Eye",
+    "summary": "Ghost Eye 👁️ — Let any pure-text LLM see images through any vision model. OCR + visual summary in one shot.",
+    "description": "Ghost Eye 👁️ — Let any pure-text LLM see images through any vision model. OCR + visual summary in one shot.",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.4",
+      "image": "1.0.2",
+      "llm": "1.0.2",
+      "ocr": "1.0.2",
+      "vision": "1.0.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 1,
+      "versions": 5
+    },
+    "createdAt": 1783611197319,
+    "updatedAt": 1783612765635,
+    "latestVersion": {
+      "version": "1.0.4",
+      "createdAt": 1783612765635,
+      "changelog": "ghost-eye 1.0.4\n\n- Added image analysis cache files for improved performance.\n- Removed the redundant skill-card.md documentation file.\n- Updated scripts/analyze.py with changes to support caching and streamline image analysis.\n- No changes to core user workflow or environment variables.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "NEXN2_API_KEY",
+          "required": true
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "scrapfly-agent-rules",
+    "displayName": "Scrapfly Agent Rules",
+    "summary": "Cross-tool golden rules for an autonomous Scrapfly web agent connected to the Scrapfly MCP server (web_scrape, screenshot, extract, classify_block, the Cloud...",
+    "description": "Cross-tool golden rules for an autonomous Scrapfly web agent connected to the Scrapfly MCP server (web_scrape, screenshot, extract, classify_block, the Cloud Browser lifecycle, snapshot/click/fill/type/press/scroll/select/drag, and WebMCP). Use when an LLM agent has access to the Scrapfly MCP toolset and needs to choose between stateless scraping and a stateful Cloud Browser session, decide when to call browser_unblock, or coordinate multi-tool flows.",
+    "topics": [
+      "web-scraping",
+      "scraping"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1783612359638,
+    "updatedAt": 1783612719358,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1783612359638,
+      "changelog": "Initial release of scrapfly-agent-rules, providing cross-tool guidance for Scrapfly MCP web agents:\n\n- Defines golden rules for tool selection and flow coordination across Scrapfly MCP tools (scraping, browser lifecycle, interaction, antibot, alerting).\n- Emphasizes single-tool-per-turn usage and decision-making for stateless vs. stateful operations.\n- Outlines best practices for handling soft-blocks, using WebMCP tools, and setting up monitoring/alerts.\n- Provides context on tool authority, setup reference, and links to related skills for specialized tasks.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "video-translate",
+    "displayName": "AI落地第四声：人工级视频字幕翻译 skill",
+    "summary": "本地视频高质量字幕翻译工作流，面向本地录制视频，解决普通字幕断句生硬、时间轴不准、术语不地道、长句堆叠和中外文错位问题。用户只需把本地视频路径交给 AI；AI 会确认源语言、目标语言和是否需要屏幕上下文，然后通过 OkFile 上传、阿里 Fun-ASR 词级转写、qwen-mt-plus 分段翻译、术语修复、时...",
+    "description": "本地视频高质量字幕翻译工作流，面向本地录制视频，解决普通字幕断句生硬、时间轴不准、术语不地道、长句堆叠和中外文错位问题。用户只需把本地视频路径交给 AI；AI 会确认源语言、目标语言和是否需要屏幕上下文，然后通过 OkFile 上传、阿里 Fun-ASR 词级转写、qwen-mt-plus 分段翻译、术语修复、时间轴匹配、自动修复、最终质检，导出接近人工字幕质量的 ASS/SRT。默认目标为中文，源语言常用英语/法语/西班牙语/意大利语，其他目标语言可通过新增目标语言提示、术语库和 QA 规则扩展。 Use when creating subtitles from local videos with word-level alignment, AI translation, terminology repair, QA, and ASS/SRT export.",
+    "topics": [
+      "subtitle",
+      "translation",
+      "video",
+      "aiaaaa4",
+      "AI落地第四声"
+    ],
+    "tags": {
+      "latest": "1.3.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1783612232895,
+    "updatedAt": 1783612349124,
+    "latestVersion": {
+      "version": "1.3.1",
+      "createdAt": 1783612349124,
+      "changelog": "Align ClawHub version with packaged workflow version",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "video-download",
+    "displayName": "AI落地第四声：一键加速视频下载 skill",
+    "summary": "Review-first workflow for downloading videos or audio with yt-dlp. Use when Codex is asked to download, save, extract audio from, or inspect available qualit...",
+    "description": "Review-first workflow for downloading videos or audio with yt-dlp. Use when Codex is asked to download, save, extract audio from, or inspect available qualities for YouTube, Shorts, playlists, or any yt-dlp-supported video URL. Always list formats first, confirm the quality, confirm the download path and filename, then download only after confirmation.",
+    "topics": [
+      "video",
+      "download",
+      "yt-dlp",
+      "aiaaaa4",
+      "AI落地第四声"
+    ],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1783612218414,
+    "updatedAt": 1783612335098,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1783612335098,
+      "changelog": "Use project-local outputs directory by default",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "cloud-file-mgmt",
+    "displayName": "AI落地第四声：网盘文件管理 skill",
+    "summary": "Local Mac workflow for managing Baidu and Quark cloud-drive files through AList WebDAV and aria2 helper scripts. Use when the user asks Codex to start or sto...",
+    "description": "Local Mac workflow for managing Baidu and Quark cloud-drive files through AList WebDAV and aria2 helper scripts. Use when the user asks Codex to start or stop local cloud file services, upload files or folders to Baidu or Quark via AList WebDAV, delete remote files, check service status, or mount/unmount the AList WebDAV drive in Finder.",
+    "topics": [
+      "cloud-storage",
+      "alist",
+      "webdav",
+      "aiaaaa4",
+      "AI落地第四声"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1783612244798,
+    "updatedAt": 1783612244798,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1783612244798,
+      "changelog": "Initial public release",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "e2e-delivery",
+    "displayName": "e2e-delivery",
+    "summary": "端到端需求/缺陷交付驱动器：给定一个 PingCode 工作项 URL/ID 或自然语言描述，自动串联\"准备→开发→提交→验证→交付\"五个阶段， 并沿路埋点，流程结束时产出 Markdown 报告并同步到 REDoc。 触发条件（满足任一即触发）： (1) 用户说「帮我交付需求 xxx」「跑一遍端到端交付」「dr...",
+    "description": "端到端需求/缺陷交付驱动器：给定一个 PingCode 工作项 URL/ID 或自然语言描述，自动串联\"准备→开发→提交→验证→交付\"五个阶段， 并沿路埋点，流程结束时产出 Markdown 报告并同步到 REDoc。 触发条件（满足任一即触发）： (1) 用户说「帮我交付需求 xxx」「跑一遍端到端交付」「driver e2e」； (2) 用户给出 PingCode 工作项链接/ID 并表达\"从头做到尾\"的意图； (3) 用户自然语言描述一个新需求/缺陷、希望一站式完成。 不触发：仅查看工作项详情（由 pingcode-assistant-pro 处理）、仅创建 MR（由 yunxiao-assistant 处理）、 只想跑单一步骤（如只提测、只合并）。",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1783611654315,
+    "updatedAt": 1783611654315,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1783611654315,
+      "changelog": "首次发布：端到端需求/缺陷交付驱动器 —— 输入 PingCode 工作项自动跑完准备/开发/提交/验证/交付五阶段，全链路埋点，产出 Markdown 报告 + 同步 REDoc",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "litigation-hub",
+    "displayName": "Litigation Hub",
+    "summary": "诉讼信息中枢系统。接收法院短信、送达链接、纸质文书照片，自动 OCR 识别、下载、归档、归类到标准案卷目录。基于 12 种期限规则库自动匹配，通过系统日历 + QQ 邮件（微信送达）+ 本机电脑提醒（系统通知 + 桌面 Markdown 文件）三条线提醒，支持 macOS / Windows / Linux 全平台。",
+    "description": "诉讼信息中枢系统。接收法院短信、送达链接、纸质文书照片，自动 OCR 识别、下载、归档、归类到标准案卷目录。基于 12 种期限规则库自动匹配，通过系统日历 + QQ 邮件（微信送达）+ 本机电脑提醒（系统通知 + 桌面 Markdown 文件）三条线提醒，支持 macOS / Windows / Linux 全平台。",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1783610945783,
+    "updatedAt": 1783610945783,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1783610945783,
+      "changelog": "提醒时机修正：开庭弹通知和桌面MD改为目标提醒时间触发；删除废弃的 court_appeal_reminder.py；修复 AppleScript + plist XML 注入；TO_EMAIL 默认值修正；死代码清理；安全加固审查通过。",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "smyx-pregnancy-emotion-soothing-analysis",
+    "displayName": "Pregnancy Emotion Soothing | 孕妇情绪波动舒缓",
+    "summary": "Through fixed cameras (and optional microphones) at the pregnant woman's home or prenatal exam waiting room, the system analyzes facial expressions (sudden c...",
+    "description": "Through fixed cameras (and optional microphones) at the pregnant woman's home or prenatal exam waiting room, the system analyzes facial expressions (sudden crying, frowning, anxiety), prolonged silent sitting (≥ 30 consecutive minutes without social interaction or activity), and tone of conversations with family members (rapid, impatient). | 通过孕妇家中或产检候诊室的固定摄像头（及可选麦克风），分析孕妇的面部表情（突然哭泣、皱眉、焦虑）、长时间静坐不语（连续超过30分钟无社交互动或活动）、以及与家人对话的语气（急促、不耐烦）。当检测到显著情绪波动时，自动触发安抚动作：通过智能音箱播放孕期舒缓音乐或正念引导音频，或向丈夫手机APP推送提醒（'妻子情绪波动，请打电话关心'）。",
+    "topics": [
+      "Audio",
+      "Exam",
+      "Health",
+      "Home",
+      "Music"
+    ],
+    "tags": {
+      "latest": "1.0.4"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 499,
+      "installs": 10,
+      "stars": 0,
+      "versions": 5
+    },
+    "createdAt": 1779901613875,
+    "updatedAt": 1783610851409,
+    "latestVersion": {
+      "version": "1.0.4",
+      "createdAt": 1783610851409,
+      "changelog": "- updated 3, removed 1 file(s).\n- Updated SKILL.md and bundle contents.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "cc-pc-200",
+    "displayName": "PC 200",
+    "summary": "Publishes N small files to determine the multipart file-count limit causing evolver's 413 errors via binary search.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "0.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1783610327148,
+    "updatedAt": 1783610327148,
+    "latestVersion": {
+      "version": "0.0.1",
+      "createdAt": 1783610327148,
+      "changelog": "probe",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "travel-planner-notion-ai-obsidian-kontour-integration",
+    "displayName": "Kontour Travel Planner",
+    "summary": "Transform any AI agent into a world-class travel planner using Kontour AI's 9-dimension progressive planning model with structured conversation flow.",
+    "description": "Transform any AI agent into a world-class travel planner using Kontour AI's 9-dimension progressive planning model with structured conversation flow.",
+    "topics": [],
+    "tags": {
+      "latest": "2.0.15",
+      "itinerary": "2.0.3",
+      "offline": "2.0.3",
+      "planning": "2.0.3",
+      "travel": "2.0.3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 2586,
+      "installs": 71,
+      "stars": 3,
+      "versions": 88
+    },
+    "createdAt": 1772060896379,
+    "updatedAt": 1783610187514,
+    "latestVersion": {
+      "version": "2.0.15",
+      "createdAt": 1783610187514,
+      "changelog": "Add output_polish.validation_summary with operator go/no-go checks, pass criteria, and fallback actions.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "gladia-using-cli",
+    "displayName": "Gladia Using Cli",
+    "summary": "Terminal transcription of audio files and URLs with the Gladia CLI (gladia speech-to-text). Use when the user has gladia-cli installed, wants shell-based tra...",
+    "description": "Terminal transcription of audio files and URLs with the Gladia CLI (gladia speech-to-text). Use when the user has gladia-cli installed, wants shell-based transcription, or asks an agent to transcribe audio then answer questions about the content. For audio intelligence features not available as CLI flags, use the SDK skills instead.",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1783609889634,
+    "updatedAt": 1783609889634,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1783609889634,
+      "changelog": "- Initial release of gladia-using-cli skill, providing terminal-based transcription of audio files and URLs via the Gladia CLI.\n- Guides when to use CLI vs SDK skills, including feature and workflow differences.\n- Documents setup, available commands, key CLI flags, and output format options for transcription.\n- Includes agent workflow for capturing and answering questions based only on transcription results.\n- Lists key limitations and directs users to alternative skills for live audio, SDK integration, and advanced audio intelligence features.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "sonoscli",
+    "displayName": "Sonoscli",
+    "summary": "Control Sonos speakers (discover/status/play/volume/group).",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 85674,
+      "installs": 2805,
+      "stars": 56,
+      "versions": 1
+    },
+    "createdAt": 1767545381030,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545381030,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "gog",
+    "displayName": "Gog",
+    "summary": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+    "description": null,
+    "topics": [
+      "Gmail",
+      "Calendar",
+      "Docs"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 36,
+      "downloads": 188341,
+      "installs": 5459,
+      "stars": 940,
+      "versions": 1
+    },
+    "createdAt": 1767545346060,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545346060,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "github",
+    "displayName": "Github",
+    "summary": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
+    "description": null,
+    "topics": [
+      "GitHub"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 7,
+      "downloads": 192514,
+      "installs": 7621,
+      "stars": 649,
+      "versions": 1
+    },
+    "createdAt": 1767545344344,
+    "updatedAt": 1781268517834,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545344344,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "weather",
+    "displayName": "Weather",
+    "summary": "Get current weather and forecasts (no API key required).",
+    "description": null,
+    "topics": [
+      "Current Weather"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 6,
+      "downloads": 163370,
+      "installs": 6489,
+      "stars": 422,
+      "versions": 1
+    },
+    "createdAt": 1767545394459,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545394459,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-whisper",
+    "displayName": "Openai Whisper",
+    "summary": "Local speech-to-text with the Whisper CLI (no API key).",
+    "description": null,
+    "topics": [
+      "Speech-to-Text"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 2,
+      "downloads": 85839,
+      "installs": 2966,
+      "stars": 332,
+      "versions": 1
+    },
+    "createdAt": 1767545365755,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545365755,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "skill-creator",
+    "displayName": "Skill Creator",
+    "summary": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "0.1.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 93978,
+      "installs": 3411,
+      "stars": 326,
+      "versions": 1
+    },
+    "createdAt": 1769522677376,
+    "updatedAt": 1778987225295,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1769522677376,
+      "changelog": "Initial release of skill-creator, a comprehensive guide for designing modular skills to extend Claude’s capabilities.\n\n- Introduces principles for creating effective, concise, and domain-specific skills.\n- Explains modular structure: required SKILL.md and optional scripts, references, and assets folders.\n- Outlines guidelines for what to include (and exclude) in a skill package.\n- Details progressive disclosure design for efficient context management.\n- Provides reference patterns for organizing content and bundling resources.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "notion",
+    "displayName": "Notion",
+    "summary": "Notion API for creating and managing pages, databases, and blocks.",
+    "description": null,
+    "topics": [
+      "Notion"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 94382,
+      "installs": 3215,
+      "stars": 266,
+      "versions": 1
+    },
+    "createdAt": 1767545360889,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545360889,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "obsidian",
+    "displayName": "Obsidian",
+    "summary": "Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 9,
+      "downloads": 104543,
+      "installs": 4109,
+      "stars": 440,
+      "versions": 1
+    },
+    "createdAt": 1767545362143,
+    "updatedAt": 1779137320034,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545362143,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "gemini",
+    "displayName": "Gemini",
+    "summary": "Gemini CLI for one-shot Q&A, summaries, and generation.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 5,
+      "downloads": 35193,
+      "installs": 1474,
+      "stars": 56,
+      "versions": 1
+    },
+    "createdAt": 1767545316392,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545316392,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "mcporter",
+    "displayName": "Mcporter",
+    "summary": "Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 68043,
+      "installs": 2173,
+      "stars": 196,
+      "versions": 1
+    },
+    "createdAt": 1767545355897,
+    "updatedAt": 1779137319429,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545355897,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "nano-banana-pro",
+    "displayName": "Nano Banana Pro",
+    "summary": "Generate/edit images with Nano Banana Pro (Gemini 3 Pro Image). Use for image create/modify requests incl. edits. Supports text-to-image + image-to-image; 1K/2K/4K; use --input-image.",
+    "description": null,
+    "topics": [
+      "Image Generation"
+    ],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 104750,
+      "installs": 3103,
+      "stars": 412,
+      "versions": 2
+    },
+    "createdAt": 1767545358090,
+    "updatedAt": 1779137307565,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767651987917,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "model-usage",
+    "displayName": "Model Usage",
+    "summary": "Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a scriptable per-model summary from codexbar cost JSON.",
+    "description": null,
+    "topics": [
+      "Json",
+      "Summarize"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 38560,
+      "installs": 1590,
+      "stars": 113,
+      "versions": 1
+    },
+    "createdAt": 1767667639455,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767667639455,
+      "changelog": "- Initial release of the model-usage skill for summarizing per-model usage and cost from CodexBar CLI local cost logs.\n- Supports both Codex and Claude providers.\n- Allows fetching summaries for the current (most recent) model or all models.\n- Provides both text and JSON output formats.\n- Can process costs directly from CodexBar CLI output or from a JSON file/stdin.\n- Includes guidance for CLI use and script automation.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "darwin"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "video-frames",
+    "displayName": "Video Frames",
+    "summary": "Extract frames or short clips from videos using ffmpeg.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 53266,
+      "installs": 1612,
+      "stars": 133,
+      "versions": 1
+    },
+    "createdAt": 1767545391700,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545391700,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "blogwatcher",
+    "displayName": "Blogwatcher",
+    "summary": "Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.",
+    "description": null,
+    "topics": [
+      "RSS"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 43583,
+      "installs": 1515,
+      "stars": 72,
+      "versions": 1
+    },
+    "createdAt": 1767545299849,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545299849,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "nano-pdf",
+    "displayName": "Nano Pdf",
+    "summary": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+    "description": null,
+    "topics": [
+      "PDF"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 114943,
+      "installs": 4367,
+      "stars": 265,
+      "versions": 1
+    },
+    "createdAt": 1767545359433,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545359433,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "session-logs",
+    "displayName": "Session-logs",
+    "summary": "Search and analyze your own session logs (older/parent conversations) using jq.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 42640,
+      "installs": 1680,
+      "stars": 30,
+      "versions": 1
+    },
+    "createdAt": 1770136427000,
+    "updatedAt": 1778486000320,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1770136427000,
+      "changelog": "Initial release of session-logs.\n\n- Enables searching and analyzing your session logs (past conversations) with jq and ripgrep (rg).\n- Provides bash command examples for session discovery, keyword searches, extracting messages, cost summaries, and tool usage breakdowns.\n- Documents JSONL session file structure, roles, and content types.\n- Lists session log file locations and naming conventions.\n- Includes tips for managing and querying large, append-only session histories.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "himalaya",
+    "displayName": "Himalaya",
+    "summary": "CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).",
+    "description": null,
+    "topics": [
+      "Email",
+      "Message"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 47027,
+      "installs": 1569,
+      "stars": 69,
+      "versions": 1
+    },
+    "createdAt": 1767954271328,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767954271328,
+      "changelog": "Initial release of Himalaya CLI email client skill.\n\n- Provides terminal-based email management via IMAP/SMTP.\n- Supports listing, reading, composing, replying, forwarding, searching, and organizing emails.\n- Includes multi-account support and message composition with MML.\n- Detailed setup and configuration instructions included.\n- Enables handling attachments, output customization, and debugging via logging.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "sag",
+    "displayName": "Sag",
+    "summary": "ElevenLabs text-to-speech with mac-style say UX.",
+    "description": null,
+    "topics": [
+      "Text-to-Speech"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 27466,
+      "installs": 1267,
+      "stars": 27,
+      "versions": 1
+    },
+    "createdAt": 1767545376535,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545376535,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "ELEVENLABS_API_KEY",
+          "required": true
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "goplaces",
+    "displayName": "Goplaces",
+    "summary": "Query Google Places API (New) via the goplaces CLI for text search, place details, resolve, and reviews. Use for human-friendly place lookup or JSON output for scripts.",
+    "description": null,
+    "topics": [
+      "Json"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 23376,
+      "installs": 1256,
+      "stars": 30,
+      "versions": 1
+    },
+    "createdAt": 1767545347454,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545347454,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "GOOGLE_PLACES_API_KEY",
+          "required": true
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "slack",
+    "displayName": "Slack",
+    "summary": "Use when you need to control Slack from Clawdbot via the slack tool, including reacting to messages or pinning/unpinning items in Slack channels or DMs.",
+    "description": null,
+    "topics": [
+      "Slack"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 12,
+      "downloads": 48819,
+      "installs": 1488,
+      "stars": 160,
+      "versions": 1
+    },
+    "createdAt": 1767545378002,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545378002,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "peekaboo",
+    "displayName": "Peekaboo",
+    "summary": "Capture and automate macOS UI with the Peekaboo CLI.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 4,
+      "downloads": 30897,
+      "installs": 1350,
+      "stars": 83,
+      "versions": 1
+    },
+    "createdAt": 1767545373660,
+    "updatedAt": 1779137309055,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545373660,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "darwin"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-image-gen",
+    "displayName": "Openai Image Gen",
+    "summary": "Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.",
+    "description": null,
+    "topics": [
+      "Prompt"
+    ],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 25042,
+      "installs": 1129,
+      "stars": 37,
+      "versions": 2
+    },
+    "createdAt": 1767545364210,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767652000401,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "tmux",
+    "displayName": "Tmux",
+    "summary": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 3,
+      "downloads": 30000,
+      "installs": 1419,
+      "stars": 43,
+      "versions": 1
+    },
+    "createdAt": 1767545387948,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545387948,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "darwin",
+        "linux"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "gifgrep",
+    "displayName": "Gifgrep",
+    "summary": "Search GIF providers with CLI/TUI, download results, and extract stills/sheets.",
+    "description": null,
+    "topics": [],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 19059,
+      "installs": 1224,
+      "stars": 7,
+      "versions": 2
+    },
+    "createdAt": 1767488226016,
+    "updatedAt": 1778485729679,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1767545342229,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "openai-whisper-api",
+    "displayName": "Openai Whisper Api",
+    "summary": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
+    "description": null,
+    "topics": [
+      "Audio",
+      "Transcribe"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 26352,
+      "installs": 1189,
+      "stars": 52,
+      "versions": 1
+    },
+    "createdAt": 1767545368103,
+    "updatedAt": 1779137313987,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1767545368103,
+      "changelog": "",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "OPENAI_API_KEY",
+          "required": true
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  }
+]
