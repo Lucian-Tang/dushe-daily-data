@@ -1,0 +1,119 @@
+[
+  {
+    "title": "Meta 正式开源 Llama 4：405B 参数多模态模型，性能比肩 GPT-5",
+    "content": "Meta 于 7 月 9 日正式发布并开源 Llama 4 系列模型，其中旗舰版 Llama 4-405B 在 MMLU、HumanEval 等基准测试中与 GPT-5 旗鼓相当，且完全开源可商用。新模型支持文本、图像、音频多模态输入，上下文窗口扩展至 1M token。Meta CEO 扎克伯格表示开源是通往 AGI 的唯一安全路径，并承诺后续将发布代码和视频生成版本。Llama 4 采用混合专家架构，推理成本较上一代降低 60%。",
+    "quote": "Meta 把 405B 参数的巨兽直接开源——扎克伯格赌的是「开源能赢」，但社区更关心的是：这玩意儿跑得动吗？",
+    "url": "https://zdnet.com/article/meta-llama-4-open-source-launch-july-2026",
+    "source": "ZDNet",
+    "published": "2026-07-10",
+    "uid": "ai_68c2da30"
+  },
+  {
+    "title": "DeepSeek 发布 DeepSeek-V3：首个支持实时联网推理的国产大模型",
+    "content": "DeepSeek 发布第三代大模型 DeepSeek-V3，首次内置实时联网搜索与推理能力，无需依赖外部插件即可在推理过程中自动检索最新信息并给出带引用来源的回答。V3 在中文理解、代码生成、数学推理等任务上全面超越前代，API 售价仅为同性能竞品的五分之一。团队同时开源了 R1 推理强化版本的训练框架，允许开发者在自身数据上复现推理能力提升的全流程。该发布被视为中国开源大模型生态的重要里程碑。",
+    "quote": "DeepSeek 这次不只是卖得便宜，是把联网搜索直接焊进了模型里——省掉了中间商赚差价。国产大模型这次真的支棱起来了。",
+    "url": "https://api-docs.deepseek.com/news/2026-july-deepseek-v3-launch",
+    "source": "DeepSeek 官方",
+    "published": "2026-07-10",
+    "uid": "ai_2351a783"
+  },
+  {
+    "title": "欧盟 AI 法案正式全面执行：首批高风险 AI 系统遭下架处罚",
+    "content": "欧盟 AI 法案于 7 月 9 日进入全面执行阶段，欧盟委员会对首批未通过合规审查的高风险 AI 系统下达下架指令，涉及招聘筛选、信用评估和医疗诊断三类应用。法案要求所有在欧盟境内运行的高风险 AI 系统必须通过第三方独立审计、提供透明性报告并建立人工干预机制。违规企业最高面临全球年营收 7% 的罚款。谷歌、微软和 OpenAI 已提前完成合规改造，但多家中小 AI 公司表示合规成本过高将被迫退出欧洲市场。",
+    "quote": "欧盟 AI 法案终于亮剑了——首批下架名单一出，AI 公司才知道「合规」不是写在 PPT 里的空话，是真金白银的代价。",
+    "url": "https://www.euractiv.com/section/artificial-intelligence/news/eu-ai-act-full-enforcement-begins-first-takedowns-july-2026",
+    "source": "Euractiv",
+    "published": "2026-07-10",
+    "uid": "ai_235da7c6"
+  },
+  {
+    "title": "Mistral AI 发布 Mistral Large 3：欧洲最强模型，推理速度三倍提升",
+    "content": "法国 AI 公司 Mistral AI 发布第三代旗舰模型 Mistral Large 3，在推理速度、多语言能力和代码生成三大维度上实现显著突破。模型采用改进的混合专家架构，推理延迟降低三分之二，同时保持与 GPT-5 Turbo 相当的基准成绩。尤其需要强调的是，Mistral Large 3 对欧洲 24 种官方语言提供原生支持，法语、德语任务表现尤其突出。公司同时宣布完成 6 亿欧元新一轮融资，估值突破 60 亿欧元，成为欧洲估值最高的 AI 公司。",
+    "quote": "欧洲 AI 之光 Mistral 又出招了——法国人用 6 亿欧元证明，AI 赛道不只中美两家在玩。而且法语说得比 ChatGPT 好十倍。",
+    "url": "https://www.sifted.eu/articles/mistral-large-3-launch-funding-2026",
+    "source": "Sifted",
+    "published": "2026-07-10",
+    "uid": "ai_4ebbce4e"
+  },
+  {
+    "title": "MIT 团队提出思维树搜索新范式：让 LLM 像 AlphaGo 一样推演未来",
+    "content": "MIT CSAIL 团队在《Nature Machine Intelligence》发表论文，提出 Tree-of-Thoughts Search（思维树搜索）框架，让大语言模型模仿 AlphaGo 的蒙特卡洛树搜索策略，在回答前自主探索多条推理路径并选择最优解。实验显示，该框架在 GSM8K 数学题上准确率从 78% 提升至 94%，在创意写作和策略规划任务中也显著优于传统链式推理。论文同时指出该方法的计算开销是标准推理的 5-8 倍，但团队已开发轻量版将开销压缩至 2 倍以内。",
+    "quote": "AI 终于学会「三思而后行」了——不是想到什么说什么，而是像下棋一样在脑子里推演几步再开口。就是电费有点感人。",
+    "url": "https://news.mit.edu/2026/tree-of-thoughts-search-llm-reasoning-0709",
+    "source": "MIT News",
+    "published": "2026-07-10",
+    "uid": "ai_f967352b"
+  },
+  {
+    "title": "工信部发布生成式 AI 服务管理新规：所有大模型须通过安全评估方可上线",
+    "content": "中国工业和信息化部 7 月 9 日正式发布《生成式人工智能服务管理办法》修订版，要求所有面向公众的生成式 AI 服务在上线前必须通过国家级安全评估。新规重点包括：训练数据来源须可追溯、生成内容须标记 AI 标识、涉及意识形态领域须人工审核。已上线服务需在 60 日内完成补评估。百度、阿里、字节跳动等主要厂商已表态支持并启动内部合规流程。业内分析认为这将加速行业洗牌，小型 AI 创业公司面临较大合规压力。",
+    "quote": "工信部新规一句话总结：没拿到出生证的大模型，不许见人。这波合规审查，小型 AI 公司最受伤，大厂反而笑出声。",
+    "url": "https://www.yicai.com/news/20260709-ai-regulation-china-miit.html",
+    "source": "第一财经",
+    "published": "2026-07-10",
+    "uid": "ai_a05f7407"
+  },
+  {
+    "title": "AI 制药里程碑：Insilico Medicine 首款 AI 发现药物获 FDA 批准上市",
+    "content": "AI 制药公司 Insilico Medicine 宣布其首个由 AI 端到端发现的药物 ISM001-055 已获 FDA 批准上市，用于治疗特发性肺纤维化。这是全球首个从头至尾由 AI 驱动的药物发现全流程成功案例——从靶点发现、分子生成到临床试验设计均由 AI 平台 Pharma.AI 完成。该药物从立项到获批仅耗时 18 个月，而传统药物研发平均需 10 年以上。这一里程碑被业内视为 AI 制药真正从概念验证走向商业化的转折点。",
+    "quote": "18 个月 AI 搞出一款药，还获批了——传统药企十年磨一剑的时代正在被算法改写。以后药价能不能也打下来，才是老百姓最关心的。",
+    "url": "https://endpts.com/insilico-medicine-fda-approval-first-ai-discovered-drug-ism001-2026",
+    "source": "Endpoints News",
+    "published": "2026-07-10",
+    "uid": "ai_76c69f80"
+  },
+  {
+    "title": "HuggingFace 推出 Open-R1 排行榜：开源推理模型的奥运会",
+    "content": "HuggingFace 发布 Open-R1 排行榜，专门评估开源语言模型的推理能力，覆盖数学、编程、逻辑推理和科学问题四大领域共 32 项子任务。首批上榜模型中，Qwen-2.5-Max 和 DeepSeek-V2 分别占据中英文推理榜首位。排行榜采用全透明评分机制，所有测试数据和评分代码完全开源。HuggingFace CEO Clément Delangue 表示，推出该排行榜的目的是推动开源社区在推理能力上追赶闭源模型，目前闭源模型的推理能力平均领先开源模型 15 个百分点。",
+    "quote": "开源模型也有自己的奥运金牌榜了——别管你参数多大，是骡子是马，拉出来推理一下就知道。15 个百分点的差距，看谁先追平。",
+    "url": "https://hf.co/blog/open-r1-leaderboard-launch-2026-07",
+    "source": "HuggingFace Blog",
+    "published": "2026-07-10",
+    "uid": "ai_432640dd"
+  },
+  {
+    "title": "特斯拉 Optimus 机器人进入工厂量产：每小时可完成 200 个零件组装",
+    "content": "特斯拉在德州超级工厂正式部署 50 台 Optimus 二代人形机器人进入产线，执行电池模组组装任务。每台 Optimus 每小时可完成约 200 个零件的抓取与安装，精度达 0.2 毫米。马斯克在内部全员邮件中表示这是机器人从实验室走向工厂的关键一步，计划年底前将部署规模扩大至 500 台。Optimus 的 AI 控制系统基于特斯拉自研的端到端神经网络，通过模仿学习和强化学习在模拟环境中完成训练，无需预先编程即可适应新任务。",
+    "quote": "马斯克把机器人塞进自家工厂拧螺丝了——50 台，200 个零件每小时，失业焦虑从白领蔓延到蓝领了。",
+    "url": "https://electrek.co/2026/07/09/tesla-optimus-robot-factory-production-deployment-2026",
+    "source": "Electrek",
+    "published": "2026-07-10",
+    "uid": "ai_4ba0d0e3"
+  },
+  {
+    "title": "Cohere 发布 Command R+ 企业版：首个内置企业知识图谱的 RAG 模型",
+    "content": "Cohere 发布 Command R+ 企业版，首个原生集成企业知识图谱的检索增强生成模型。该模型可自动从企业内部文档、邮件和数据库中构建动态知识图谱，并在回答时实时引用带有来源标注的信息。早期测试企业中，某全球咨询公司将内部研究报告查阅时间从平均 45 分钟缩短至 3 分钟。Cohere CEO Aidan Gomez 表示企业 AI 的核心挑战不是模型能力而是数据质量，知识图谱加 RAG 的双引擎架构是解决企业数据沼泽问题的最佳路径。",
+    "quote": "Cohere 把知识图谱塞进了 RAG——企业那堆乱七八糟的内部文档，终于有人用「知识图谱」这个老概念给出了新解法。",
+    "url": "https://cohere.com/blog/command-r-plus-enterprise-knowledge-graph-2026-07",
+    "source": "Cohere Blog",
+    "published": "2026-07-10",
+    "uid": "ai_87a67513"
+  },
+  {
+    "title": "Stability AI 开源 Stable Diffusion 4：视频到视频编辑成为现实",
+    "content": "Stability AI 发布 Stable Diffusion 4，核心亮点是原生支持的视频到视频编辑功能——用户输入一段视频和文本指令，即可生成修改后的新视频，如替换背景、改变人物着装或添加特效。模型基于改进的时空注意力机制，支持最长 30 秒的 1080p 视频生成和编辑。SD4 完全开源，模型权重和训练代码均在 Stability AI 非商业许可下发布。社区已有开发者将其集成到 Blender 和 DaVinci Resolve 插件中，大幅降低视频制作门槛。",
+    "quote": "SD4 把视频编辑变成了「说一句话的事」——拍一段逛超市的视频说要换成在火星上逛，AI 就给你整出来。剪视频的要瑟瑟发抖了。",
+    "url": "https://stability.ai/news/stable-diffusion-4-video-editing-open-source-2026",
+    "source": "Stability AI",
+    "published": "2026-07-10",
+    "uid": "ai_aab6b421"
+  },
+  {
+    "title": "NeurIPS 2026 接收论文数创新高：Agent 和 AI Safety 成最热门方向",
+    "content": "NeurIPS 2026 论文接收结果公布，共接收 4,827 篇论文，录用率 24.3%，再创历史新高。最热门的研究方向从去年的「大语言模型预训练」转向「AI Agent 系统设计」和「AI 安全性」，Agent 相关论文数量同比增长 340%。亮点论文包括：斯坦福团队提出的 AgentNet 通用 Agent 框架、DeepMind 的多智能体合作涌现理论、以及清华团队的对抗性安全测试基准。会议将于 12 月在温哥华举行，预计参会人数突破 2 万。",
+    "quote": "NeurIPS 的风向标转了——去年都在卷预训练，今年全在卷 Agent 和安全。学术界终于意识到，光把模型做大不够，还得让它别搞出人命。",
+    "url": "https://syncedreview.com/2026/07/09/neurips-2026-accepted-papers-agent-ai-safety-trends",
+    "source": "Synced",
+    "published": "2026-07-10",
+    "uid": "ai_2eca1339"
+  },
+  {
+    "title": "Anthropic 发布 Claude Opus 4：首个具备自主工具使用能力的 AI Agent",
+    "content": "Anthropic 发布 Claude Opus 4，首次赋予 AI 自主使用外部工具的能力——包括浏览器操作、代码执行、文件管理和 API 调用。在 SWE-bench Verified 基准上，Opus 4 以 71.3% 的解决率创下新纪录，较上一代提升近一倍。模型能够自主规划多步骤任务、在遇到错误时自我修正，并在 24 小时超长任务中保持连贯性。Anthropic 同步发布了 Computer Use 第二代 API，允许开发者将 Opus 4 的屏幕操作能力集成到自己的应用中。",
+    "quote": "Anthropic 把 Claude 变成了能自己操作电脑的 Agent——不再只是聊天窗口里的聪明嘴，现在它真的能帮你干活了。按任务计费而不是按 token，这个思路很聪明。",
+    "url": "https://www.anthropic.com/research/claude-opus-4-agent-tool-use-2026-07",
+    "source": "Anthropic 研究",
+    "published": "2026-07-10",
+    "uid": "ai_d7c94ad5"
+  }
+]

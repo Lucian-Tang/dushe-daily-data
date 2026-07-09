@@ -1,0 +1,137 @@
+[
+  {
+    "title": "OpenAI 发布 GPT-5.6，推理能力和代码生成大幅跃升",
+    "content": "OpenAI 于7月9日正式发布 GPT-5.6 模型，在 HumanEval、SWE-bench 等代码基准测试中均刷新记录。新模型在复杂多步推理任务上表现显著提升，支持超长上下文窗口和更精确的函数调用。API 定价相比前代降低约 30%，同时新增了结构化输出模式，可直接生成符合 JSON Schema 的响应，大幅简化了开发者的集成流程。开发者社区反响热烈，Hacker News 上相关讨论帖在数小时内即获得 571 个点赞和近 400 条评论。",
+    "quote": "OpenAI 又在刷新 benchmark，开发者的饭碗危在旦夕——哦不对，是更香了。",
+    "url": "https://openai.com/index/gpt-5-6/",
+    "source": "OpenAI",
+    "published": "2026-07-10",
+    "uid": "dev_14067b0a"
+  },
+  {
+    "title": "addyosmani 发布 agent-skills 仓库，75K Star 爆火",
+    "content": "Google Chrome 工程总监 Addy Osmani 发布的 agent-skills 开源项目在 GitHub 上获得超过 75000 颗星，成为近期最热门的技术仓库。该项目提供一套面向 AI 编程 Agent 的生产级工程技能规范，涵盖代码审查、测试策略、架构设计、性能优化等模块，帮助 Claude Code、Cursor 等 AI 编码工具生成更高质量、更符合工程实践的代码。项目采用模块化结构，开发者可按需引入不同技能模块。",
+    "quote": "连 AI 写代码都要配「技能包」了，程序员的护城河已经从编码能力变成了 prompt 能力。",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "source": "GitHub",
+    "published": "2026-07-10",
+    "uid": "dev_3c8e9877"
+  },
+  {
+    "title": "Meta 发布 Muse Spark 1.1，图片生成模型再进化",
+    "content": "Meta 于7月9日正式推出 Muse Spark 1.1 图像生成模型，并通过 API 开放给开发者使用。新版本在文本渲染精度、多主体构图和风格一致性方面有显著提升，支持从简单文本提示直接生成高分辨率商业级图像。该模型特别强化了中文字体渲染能力，解决了此前 AI 图片生成中常见的中文乱码问题。API 调用延迟降低至 1.2 秒以内，适合实时应用场景集成。",
+    "quote": "Meta 这个搞社交的，图像生成水平都快追上 Midjourney 了，扎克伯格你是要卷死谁？",
+    "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/",
+    "source": "Meta AI",
+    "published": "2026-07-10",
+    "uid": "dev_f4a1356a"
+  },
+  {
+    "title": "腾讯混元发布 Hy3 模型，对标国际一流水平",
+    "content": "腾讯混元团队正式发布 Hy3 大语言模型，在 MMLU、C-Eval 等多个权威基准测试中取得与国际顶尖模型比肩的成绩。Hy3 采用全新的混合专家架构，参数量达 1.2 万亿，推理成本却比前代降低 40%。模型在中文理解、代码生成和数学推理方面表现尤为突出，已通过腾讯云向企业客户和开发者开放 API 调用。HN 上相关讨论迅速登上首页，海外开发者对中国大模型的关注度持续升温。",
+    "quote": "腾讯：我也不是针对谁，我只想说在座各位的 benchmark 都要重新刷了。",
+    "url": "https://hy.tencent.com/research/hy3",
+    "source": "腾讯混元",
+    "published": "2026-07-10",
+    "uid": "dev_312da771"
+  },
+  {
+    "title": "EU 议会通过 Chat Control 1.0，端到端加密面临挑战",
+    "content": "欧盟议会正式通过 Chat Control 1.0 法案，要求所有即时通讯服务提供商在用户发送消息前进行内容扫描，包括端到端加密通信。该法案以「保护儿童安全」为由，但遭到隐私保护组织和科技界的强烈反对。Signal、Threema 等加密通讯应用表示将考虑退出欧盟市场而非遵守该规定。Hacker News 上的相关讨论帖获得 661 个点赞，开发者社区普遍担忧此举将严重削弱互联网隐私保护。",
+    "quote": "欧盟终于找到了统一监管加密通信的办法——直接取消加密，这脑回路真是清新脱俗。",
+    "url": "https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/",
+    "source": "Patrick Breyer",
+    "published": "2026-07-10",
+    "uid": "dev_7edfea7e"
+  },
+  {
+    "title": "Angular 22.0.6 发布，信号查询全面完善",
+    "content": "Angular 团队发布了 22.0.6 补丁版本，修复了编译器在使用可选链式表达式进行安全函数调用时的问题，并完善了对信号驱动的组件查询支持。此次更新进一步优化了 Signal 相关 API 的稳定性，开发者可以在模板中更自然地使用 signal-based inputs 和 queries。虽然只是小版本更新，但 Angular 22 系列的信号驱动架构正逐步走向成熟，官方推荐新项目默认使用 Signal 模式开发。",
+    "quote": "Angular 版号已经比 Chrome 还疯狂了，但至少方向对了——Signal 才是未来。",
+    "url": "https://www.oschina.net/news/471615/angular-22-0-6-released",
+    "source": "开源中国",
+    "published": "2026-07-10",
+    "uid": "dev_9f381fc5"
+  },
+  {
+    "title": "OfficeCLI 开源爆火：AI Agent原生操作 Office 文件",
+    "content": "OfficeCLI 项目在 GitHub 上获得超过 13000 颗星，成为 AI 工具链领域的新晋明星。这是一个专为 AI Agent设计的 Office 套件命令行工具，无需安装 Microsoft Office 即可读取、编辑和自动化 Word、Excel、PowerPoint 文件。单个二进制文件，免费开源，支持跨平台运行。开发者可以在 Claude Code 等 AI 编程环境中直接调用 OfficeCLI 处理办公文档，打通了 AI Agent与实际办公场景的最后一公里。",
+    "quote": "Office 终于被卷成了无头模式，微软看了沉默，WPS 看了流泪。",
+    "url": "https://github.com/iOfficeAI/OfficeCLI",
+    "source": "GitHub",
+    "published": "2026-07-10",
+    "uid": "dev_4c378356"
+  },
+  {
+    "title": "Wireshark 4.6.7 发布，改用 Visual Studio 2026 构建",
+    "content": "全球最流行的网络协议分析工具 Wireshark 发布了 4.6.7 版本。此次更新的最大变化是 Windows 安装程序改用 Visual Studio 2026 编译工具链构建，带来更好的性能优化和 C++23 标准支持。在 Unix 系统上，extcap 扩展捕获二进制文件现在默认在独立目录中运行，提升了插件隔离性和安全性。本次更新还修复了多个协议解析器的潜在崩溃问题，网络工程师和安全研究人员应尽快升级。",
+    "quote": "Wireshark 都开始用 VS2026 了，你的项目还在跑 VS2019？",
+    "url": "https://www.oschina.net/news/471613/wireshark-4-6-7-released",
+    "source": "开源中国",
+    "published": "2026-07-10",
+    "uid": "dev_c2a918e3"
+  },
+  {
+    "title": "Netty 4.2.16 紧急修复安全漏洞，所有 Java 后端请注意",
+    "content": "Java 生态核心网络框架 Netty 发布 4.2.16.Final 版本，紧急修复了一个高危安全漏洞。该漏洞涉及 HTTP 请求解析过程中的内存越界问题，可能导致远程拒绝服务攻击甚至信息泄露。Netty 是全球大量 Java 后端服务的基础组件，包括 Elasticsearch、Cassandra、gRPC 等知名项目均依赖其网络层。维护者强烈建议所有用户立即升级，切勿拖延。",
+    "quote": "Netty 漏洞 = 互联网半壁江山地震，后端同学今晚别想睡了。",
+    "url": "https://www.oschina.net/news/471606/netty-4-2-16-released",
+    "source": "开源中国",
+    "published": "2026-07-10",
+    "uid": "dev_1f40d8fc"
+  },
+  {
+    "title": "MCP 推出企业统一授权功能，一站式管控 AI 工具接入权限",
+    "content": "Model Context Protocol 团队正式发布稳定版企业托管授权扩展。企业管理员现在可以通过身份服务商统一控制所有 MCP 服务器的访问权限，员工只需登录一次即可免额外配置访问所有合规的 AI 工具和资源。该功能解决了企业部署多个 AI Agent工具时权限碎片化的痛点，支持 OAuth 2.0 和 OIDC 标准协议，可无缝对接 Okta、Azure AD 等企业身份系统。",
+    "quote": "MCP 终于学会做企业级权限了，不然一堆 AI 工具权限乱飞，安全团队心脏病都要犯了。",
+    "url": "https://www.infoq.cn/article/NIPG4kmz1lDv8DIrsZ9O",
+    "source": "InfoQ",
+    "published": "2026-07-10",
+    "uid": "dev_34773286"
+  },
+  {
+    "title": "腾讯云 Agent Bucket 上线：为亿级 AI Agent提供专属云空间",
+    "content": "腾讯云正式发布 Agent Bucket 服务，专为 AI Agent设计的云端存储方案。Agent Bucket 兼容标准 S3 接口，可为每个 AI Agent实例分配独立的存储空间，用于存放用户上传的资料以及AI Agent 生成的报告、图片、代码等文件和工作产物。该服务支持自动生命周期管理和智能分层存储，对于活跃文件使用高性能存储，冷数据自动降级以节省成本，初步设计可支持亿级 AI Agent 并发接入。",
+    "quote": "AI Agent连专属网盘都有了，下一步是不是要给它们交社保了？",
+    "url": "https://www.oschina.net/news/471614",
+    "source": "开源中国",
+    "published": "2026-07-10",
+    "uid": "dev_bd55d0f1"
+  },
+  {
+    "title": "字节跳动发布 Seedream 5.0 Pro，中文文字渲染能力大突破",
+    "content": "字节跳动 Seed 团队正式发布多模态图像创作模型 Seedream 5.0 Pro。新版本在图文匹配精度、画面结构合理性、文字渲染和画面美感等基础能力上全面提升，尤其强化了中文字体在 AI 生成图片中的渲染质量，解决了此前 AI 图片中文乱码、扭曲的顽固问题。该模型支持通过自然语言精确控制画面布局、色彩和风格，已通过即梦平台向创作者开放使用。",
+    "quote": "字节的美工终于不用半夜改图了——因为他们画图的 AI 学会了写中文。",
+    "url": "https://www.oschina.net/news/471590",
+    "source": "开源中国",
+    "published": "2026-07-10",
+    "uid": "dev_0c0124db"
+  },
+  {
+    "title": "MoonBit Skills 发布：用 WebAssembly 构建 AI 工具分发新范式",
+    "content": "MoonBit 团队正式推出 MoonBit Skills 平台，提出了一种全新的 AI Agent工具开发与分发方式。开发者可以使用 MoonBit 编程语言编写工具函数，通过编译为 WebAssembly 模块实现跨平台、跨模型的安全沙箱执行。这种方式使得 AI Agent可以安全地调用本地文件系统、网络请求等系统能力，同时通过 Wasm 沙箱保证宿主环境安全。该方案已支持接入 Claude Code 和 ChatGPT 等主流 AI 编程助手。",
+    "quote": "用 Wasm 给 AI 写插件，终于有人想清楚了——沙箱隔离才是 AI 安全的根本解。",
+    "url": "https://www.oschina.net/news/471616",
+    "source": "开源中国",
+    "published": "2026-07-10",
+    "uid": "dev_c2a7e98e"
+  },
+  {
+    "title": "Prisma ORM 持续火爆，下一代 Node.js 数据库工具获 46847 星",
+    "content": "Prisma ORM 在 GitHub 趋势榜上持续霸榜，累计获得超过 46800 颗星。这个面向 Node.js 和 TypeScript 的下一代 ORM 工具支持 PostgreSQL、MySQL、SQLite、MongoDB 等主流数据库。最新版本增强了 Prisma Client 的查询性能，新增了批量操作的原生支持和更智能的 N+1 查询检测。伴随 TypeScript 在后端开发中的持续普及，Prisma 已成为新项目数据库层方案的首选之一。",
+    "quote": "TypeORM 用户：Prisma 真香；Prisma 用户：隔壁又在卷什么新框架了？",
+    "url": "https://github.com/prisma/prisma",
+    "source": "GitHub",
+    "published": "2026-07-10",
+    "uid": "dev_7736f700"
+  },
+  {
+    "title": "2026 年无闰秒：地球自转异常稳定，程序员松了一口气",
+    "content": "国际地球自转服务组织正式宣布 2026 年 12 月末不引入闰秒，这已是连续第 8 年无闰秒。地球自转速度近年来异常稳定，科学家推测可能与地核液态运动变化有关。对开发者来说，这意味着时间处理代码又少了一个潜在的崩溃源头——当年 2012 年和 2015 年的闰秒曾导致 LinkedIn、Reddit 等多个大型网站服务中断。NTP 时间同步和分布式系统的一致性协议开发者可以继续高枕无忧。",
+    "quote": "无闰秒 = 运维的圣诞节。2012 年闰秒炸服的历史，终于不用再复习了。",
+    "url": "https://datacenter.iers.org/data/latestVersion/bulletinC.txt",
+    "source": "IERS",
+    "published": "2026-07-10",
+    "uid": "dev_a7f10ece"
+  }
+]
