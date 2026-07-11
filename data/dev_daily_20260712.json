@@ -1,137 +1,83 @@
 [
   {
-    "title": "Google 发布 WebGPU 1.0：浏览器原生 GPU 通用计算标准正式定稿",
-    "content": "WebGPU 1.0 标准正式发布，Chrome、Firefox、Safari 均已完整支持。新标准让开发者在浏览器中直接调用 GPU 进行通用计算和渲染，为 Web ML 推理、物理模拟和 3D 数据可视化带来革命性提升。官方 SDK 同步推出 TypeScript 类型定义与调试工具，相比 WebGL 性能提升 2-5 倍。",
-    "quote": "显卡风扇终于不只是为 3A 游戏转动了，网页也能把它跑冒烟",
-    "source": "InfoQ",
-    "url": "https://www.infoq.cn/article/webgpu-1-0-release-2026",
-    "published": "2026-07-11",
-    "uid": "dev_3a1f7b2e"
-  },
-  {
-    "title": "Visual Studio Code 发布 1.96 版本：内置 AI Shell 与 MCP 协议原生支持",
-    "content": "VSCode 1.96 更新引入了 AI Shell 交互式终端，用户可用自然语言描述命令需求，AI 自动生成并执行。同时原生集成 MCP（Model Context Protocol）协议，允许扩展与 AI 模型深度交互。远程开发功能全面升级，SSH 连接速度提升 3 倍，新增多会话管理面板。",
-    "quote": "以后写个 git rebase 都得先跟终端聊两句，社恐程序员表示抗议",
-    "source": "GitHub Trending",
-    "url": "https://github.com/microsoft/vscode/releases/tag/1.96",
-    "published": "2026-07-11",
-    "uid": "dev_4c8d9e01"
-  },
-  {
-    "title": "Rust 编译器性能大幅提升：增量编译速度提升 40%，内存占用降低 30%",
-    "content": "Rust 编译器团队通过引入新的查询缓存架构和并行类型检查器，成功将增量编译速度提升 40%。cargo check 命令在大型项目中的内存占用降低约 30%，全新的 cargo 工作区并行解析机制使得多 crate 项目首次完整编译加速达 25%。这些优化将在 Rust 1.85 中正式落地。",
-    "quote": "Rust 编译器终于不是按个空格等喝完一杯咖啡的节奏了",
-    "source": "Rust 官方博客",
-    "url": "https://blog.rust-lang.org/2026/07/11/compiler-performance-optimizations.html",
-    "published": "2026-07-11",
-    "uid": "dev_5d2e1f03"
-  },
-  {
-    "title": "FFmpeg 7.2 发布：原生支持 AV1 硬件编码与 AI 驱动画质增强",
-    "content": "开源多媒体处理王牌工具 FFmpeg 发布 7.2 大版本更新，新增原生 AV1 硬件编码支持，在主流 GPU 上编码速度提升 5 倍。引入 AI 驱动的视频超分辨率滤镜和智能场景检测算法，HDR 转 SDR 映射质量大幅提升。libavcodec 库新增对 VVC/H.266 编码器的实验性支持。",
-    "quote": "视频压缩界的瑞士军刀又更新了，这次连 AI 画质增强都装进了刀鞘里",
-    "source": "开源中国",
-    "url": "https://www.oschina.net/news/472101/ffmpeg-7-2-released",
-    "published": "2026-07-11",
-    "uid": "dev_6e3f2a14"
-  },
-  {
-    "title": "NixOS 25.11 发布：声明式配置桌面化里程碑，支持 Flatpak 与 AppImage",
-    "content": "NixOS 25.11 代号 Serene Salamander 正式上线，最大亮点是声明式配置全面进入桌面时代。新增桌面用户友好的配置界面工具，原生支持 Flatpak 和 AppImage 格式，简化软件安装流程。Nix 包管理器引入二进制缓存分层策略，构建速度提升 50%，home-manager 集成进一步简化。",
-    "quote": "Linux 发行版的终极形态——配置一次，永不妥协",
-    "source": "NixOS 官方博客",
-    "url": "https://nixos.wiki/wiki/NixOS_25.11_Release",
+    "title": "Anyone else get a vague GitHub shakedown notice?",
+    "content": "# Comments: 29",
+    "quote": "GitHub 的律师函式通知总让人心里一紧，不知道是认真的还是自动群发。",
+    "source": "HN Front Page",
+    "url": "https://lists.osgeo.org/pipermail/qgis-developer/2026-July/068430.html",
     "published": "2026-07-12",
-    "uid": "dev_7f4a3b25"
+    "uid": "dev_bce2a8fc"
   },
   {
-    "title": "Mozilla 发布 Servo 引擎新里程碑：CSS 布局性能超越 Chromium",
-    "content": "Mozilla 发布 Servo 引擎重大更新，其新一代并行 CSS 布局引擎在复杂页面渲染测试中性能超越 Chromium 约 35%。项目现已支持完整的 HTML5 规范、WebAssembly 2.0 和 WebGPU 标准。作为实验性浏览器引擎，Servo 展示了 Rust 在浏览器引擎领域的巨大潜力，有望在未来为 Firefox 提供核心技术。",
-    "quote": "一个用 Rust 写的浏览器引擎居然跑赢了 Chrome，Mozilla 这把是真的憋了个大招",
-    "source": "Hacker News",
-    "url": "https://servo.org/blog/2026/07/11/performance-milestone/",
-    "published": "2026-07-11",
-    "uid": "dev_8a5b4c36"
-  },
-  {
-    "title": "OpenAI 开源 Triton 3.0：GPU 编程语言全面支持 AMD 与 Intel 显卡",
-    "content": "OpenAI 宣布开源 Triton 3.0，这是一套专为 GPU 编程设计的领域特定语言和编译器，此前仅支持 NVIDIA CUDA。3.0 版本新增对 AMD ROCm 和 Intel XPU 后端的一流支持，开发者首次可以用同一套 Python DSL 编写跨平台 GPU 内核。性能上，Triton 3.0 在矩阵运算中达到原生 CUDA 95% 的性能。",
-    "quote": "AI 程序员终于不用为了换个显卡重写一遍 CUDA 内核了",
-    "source": "GitHub Trending",
-    "url": "https://github.com/openai/triton/releases/tag/v3.0.0",
+    "title": "Snails' Teeth Beats Spider Silk as Nature's Strongest Material (2015)",
+    "content": "",
+    "quote": "蜗牛牙齿比蛛丝还强？自然界的黑科技总是出其不意，材料学家有活干了。",
+    "source": "HN Front Page",
+    "url": "https://www.smithsonianmag.com/smart-news/spider-silk-loses-top-spot-natures-strongest-material-snails-teeth-180954346/",
     "published": "2026-07-12",
-    "uid": "dev_9b6c5d47"
+    "uid": "dev_cc54606d"
   },
   {
-    "title": "Svelte 6 发布：引入信号驱动响应式系统，体积再缩小 40%",
-    "content": "Svelte 6 正式版本发布，核心运行时从编译器生成的 DOM 更新逻辑迁移至 Signal 响应式系统。新架构使打包体积再缩小 40%，内存占用降低 35%。同时推出全新的片段编译优化策略，使得列表渲染在大数据量下的性能提升达 5 倍。SvelteKit 同步更新，新增边缘渲染模式和流式 SSR 支持。",
-    "quote": "前端框架的瘦身比赛 Svelte 又夺冠了——这次连骨架都换成了信号塔",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1214567",
+    "title": "Hands-On with the AMD Ryzen AI Halo",
+    "content": "# Comments: 18",
+    "quote": "AMD 的 Halo 系列听着挺好，但前提是软件生态跟得上。",
+    "source": "HN Front Page",
+    "url": "https://www.microcenter.com/site/mc-news/article/amd-ryzen-ai-halo-review.aspx",
     "published": "2026-07-12",
-    "uid": "dev_ac7d6e58"
+    "uid": "dev_eb8c8fe6"
   },
   {
-    "title": "Google Carbon 语言发布 0.5 预览版：Go 与 Rust 的中间地带语言走向实用",
-    "content": "Google 推出的 Carbon 语言（旨在成为 C++ 的继承者）发布 0.5 预览版，新增完整泛型系统、基于 trait 的多态和零成本抽象机制。Carbon 设计定位在 Go 的简洁与 Rust 的安全性之间的中间地带，提供自动内存管理但允许显式底层控制。工具链现已支持 Linux、macOS 和 Windows 三大平台。",
-    "quote": "Go 嫌不够安全，Rust 嫌太复杂？Google 贴心推出了中间版",
-    "source": "InfoQ",
-    "url": "https://www.infoq.cn/article/carbon-language-0-5-preview",
-    "published": "2026-07-11",
-    "uid": "dev_bd8e7f69"
-  },
-  {
-    "title": "Grafana 发布 AI 智能告警引擎：自动关联日志、指标与链路追踪定位根因",
-    "content": "Grafana 12 正式发布，核心升级是 AI 驱动的新一代告警引擎。系统能自动关联同一时间段内的日志异常、指标突增和链路追踪错误，通过因果推理模型自动定位根因，减少 80% 的告警疲劳。新增时序预测功能可提前预判资源瓶颈并自动调整告警阈值。Loki 日志查询速度提升 5 倍。",
-    "quote": "告警不再是半夜三点让你爬起来猜原因，Grafana 直接帮你把凶手锁定了",
-    "source": "InfoQ",
-    "url": "https://www.infoq.cn/article/grafana-12-ai-alerting",
+    "title": "Show HN: A 100% branchless, CUDA-native AI guardrail kernel written in C++20",
+    "content": "# Comments: 1",
+    "quote": "纯分支逻辑的 CUDA 安全护栏，GPU 编程的硬核防守。",
+    "source": "HN Show HN",
+    "url": "https://github.com/PJHkorea/value-system-kernel",
     "published": "2026-07-12",
-    "uid": "dev_ce9f8a70"
+    "uid": "dev_d023412b"
   },
   {
-    "title": "Apple 推出 Swift 并发运行时跨平台路线图：Windows 与 Linux 支持稳步推进",
-    "content": "Swift 语言团队公布 Swift 并发运行时跨平台路线图，宣布 Swift 6.2 将在 Windows 和 Linux 上提供完整的 actor 模型和 async/await 支持。Windows 版本已通过 MSVC 工具链完整编译 LLVM 后端测试，Linux 版本与 systemd、glibc 生态深度适配。Apple 同时发布 Swift Package Manager 跨平台 CI 模板。",
-    "quote": "Swift 出 Apple 不再是新闻，能在 Windows 上好好跑才是真本事",
-    "source": "开源中国",
-    "url": "https://www.oschina.net/news/472098/swift-concurrency-cross-platform-roadmap",
+    "title": "Show HN: Living Neural Network on the Webpage",
+    "content": "based on Michael Nielsen classic book. # Comments: 0",
+    "quote": "网页上的活体神经网络——浏览器已经快成生物实验室了。",
+    "source": "HN Show HN",
+    "url": "https://mikky-a.github.io/mnist-station/",
     "published": "2026-07-12",
-    "uid": "dev_df0a9b81"
+    "uid": "dev_b898b913"
   },
   {
-    "title": "Astro 5.0 发布：服务端组件优先架构，页面加载速度再破极限",
-    "content": "Astro 5.0 正式发布，采用全新的服务器端组件优先架构，默认将几乎所有交互组件在服务端渲染为静态 HTML，仅在交互时通过 tiny Island 脚本水合。这一改变使得典型内容网站在 Core Web Vitals 得分上平均提升 18 分。新增内容集合 API 支持从任意数据源（CMS、数据库、Markdown）混合加载。",
-    "quote": "静态站点生成器和动态框架的完美婚姻，Astro 5.0 让加载速度快得像在本地打开文件",
-    "source": "掘金",
-    "url": "https://juejin.cn/post/7428690123456789",
+    "title": "Show HN: A wc rewrite in Rust that makes it over 100 times faster",
+    "content": "# Comments: 2",
+    "quote": "用 Rust 重写 wc 还快 10 倍，经典 Unix 工具的文艺复兴。",
+    "source": "HN Show HN",
+    "url": "https://github.com/CallMeAlphabet/fastwc",
     "published": "2026-07-12",
-    "uid": "dev_e01b9c92"
+    "uid": "dev_755374a5"
   },
   {
-    "title": "Google 开源 Magika 2.0：AI 文件类型识别精度达 99.7%，速度超传统方法百倍",
-    "content": "Google 开源 Magika 2.0 文件类型识别系统，基于深度学习的文件分类器，支持识别 4000+ 种文件格式，精度达 99.7%。相比传统 libmagic 方法，Magika 不仅能识别文件头签名，还能通过内容语义分析准确区分加密文件、混淆负载和自定义格式。命令行工具可直接取代传统 file 命令，Python API 可嵌入 CI 流程。",
-    "quote": "以后再也不用对着一个 .unknown 文件发呆了，AI 看它一眼就知道它是什么变的",
-    "source": "GitHub Trending",
-    "url": "https://github.com/google/magika/releases/tag/v2.0.0",
-    "published": "2026-07-11",
-    "uid": "dev_f12c0da3"
-  },
-  {
-    "title": "Kubernetes 引入 Sidecar 容器生命周期管理：日志采集与监控辅助进程不再抢占主容器资源",
-    "content": "Kubernetes 最新版本引入原生 Sidecar 容器生命周期管理机制。Sidecar 容器现在在 Pod 启动时先于主容器运行并在主容器之后优雅关闭，解决了服务网格数据面、日志采集器等辅助容器的资源抢占和启停顺序问题。新的 API 允许 Sidecar 声明独立的资源预留和健康检查策略，显著提升集群稳定性。",
-    "quote": "Sidecar 终于不再是捡主容器剩饭吃的二等公民了",
-    "source": "InfoQ",
-    "url": "https://www.infoq.cn/article/kubernetes-sidecar-native-support",
+    "title": "I Was Building a Social App. Then I Accidentally Built an AI Startup.",
+    "content": "A year and a half ago, I wasn't trying to build an AI company. I was building a small social platform called spritex-social — nothing fancy, just a side project a handful of friends were testing with",
+    "quote": "做社交App结果不小心把数据库删了——每个后端开发的噩梦。",
+    "source": "Dev.to",
+    "url": "https://dev.to/mohammadsijan/i-was-building-a-social-app-then-i-accidentally-built-an-ai-startup-4clj",
     "published": "2026-07-12",
-    "uid": "dev_023d1eb4"
+    "uid": "dev_d1a141e8"
   },
   {
-    "title": "低代码平台 Retool 开源 AI 工作流引擎：可视化编排 LLM 调用链",
-    "content": "Retool 宣布开源其内部使用的 AI 工作流引擎 Workflow AI，允许开发者以拖拽方式编排多步骤 LLM 调用链，支持 RAG 检索增强、工具调用、条件分支和人工审核节点。引擎基于 TypeScript 开发，可自托管部署，支持 OpenAI、Anthropic、Google 和本地模型接入。GitHub 仓库上线 12 小时即突破 3000 星。",
-    "quote": "人人都能拖出一个 AI Agent 的日子来了，Prompt 工程师还能再战几年？",
-    "source": "GitHub Trending",
-    "url": "https://github.com/retool/workflow-ai",
-    "published": "2026-07-11",
-    "uid": "dev_134e2fc5"
+    "title": "Your AI coding agent will happily ship a breaking API change. I built an MCP server to catch it.",
+    "content": "Last month I watched Cursor confidently rename a field across an entire API, commit it, and open a PR. Clean diff, tests green, looked great. It had also just broken a mobile client and a partner inte",
+    "quote": "AI 编码助手会毫无怨言地给你推送破坏性变更。信任但验证。",
+    "source": "Dev.to",
+    "url": "https://dev.to/deepaksatyam/your-ai-coding-agent-will-happily-ship-a-breaking-api-change-i-built-an-mcp-server-to-catch-it-5dal",
+    "published": "2026-07-12",
+    "uid": "dev_9c91a22c"
+  },
+  {
+    "title": "A Free CBT Equation Editor for Math & Chemistry",
+    "content": "While building a Computer-Based Testing (CBT) platform, I ran into an unexpected problem. Creating mathematics and chemistry questions wasn't nearly as straightforward as I expected. Although there ar",
+    "quote": "一个免费的化学方程式编辑器，刚需用户的及时雨。",
+    "source": "Dev.to",
+    "url": "https://dev.to/niza/a-free-cbt-equation-editor-for-math-chemistry-49lp",
+    "published": "2026-07-12",
+    "uid": "dev_1595759d"
   }
 ]

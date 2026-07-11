@@ -1,137 +1,164 @@
 [
   {
-    "title": "苹果起诉OpenAI窃取商业机密，指控其挖角工程师获取AI技术",
-    "content": "苹果公司于7月10日向加州联邦法院提起诉讼，指控OpenAI系统性挖角其芯片团队和AI研发部门的核心工程师，借助这些员工掌握的商业机密加速自身AI模型研发。诉状称至少12名苹果前员工在离职后短期内加入OpenAI，其中包括多名参与A18芯片神经引擎设计的关键人物。苹果要求法院禁止OpenAI使用相关技术并索赔巨额赔偿。这是两大科技巨头在AI领域的首次直接法律对抗，可能对整个行业的用人规则和技术边界产生深远影响。",
-    "quote": "挖角挖到法院去了，硅谷的友谊小船说翻就翻。",
-    "url": "https://www.reuters.com/technology/artificial-intelligence/apple-sues-openai-alleging-trade-secret-theft-over-hiring-2026-07-10/",
-    "source": "Reuters",
+    "title": "OpenAI 正式发布 ChatGPT Work：云端 AI Agent，能跨 Slack、邮件和日历执行多步任务",
+    "content": "OpenAI 于周四正式推出 ChatGPT Work，一款嵌入 ChatGPT 的云端 AI Agent。背后由 GPT-5.6 模型套件（Sol/Terra/Luna）驱动，能够自动连接用户授权的 Slack、Gmail、Google Drive、日历和 CRM 等工具，自主完成文档、表格、PPT、网页应用的生成与维护。核心架构是基于 OpenAI 服务器的持久化云端虚拟机，用户无需保持本地设备在线。产品定价覆盖 Pro/Enterprise/Edu 和 Plus/Business 所有付费层级。OpenAI 产品经理 Ty Geri 表示，这是 Codex 能力的平民化——将以前只服务工程师的 AI 编码能力带给每个普通用户。此时正值 OpenAI 以 7300-8520 亿美元估值筹备 IPO 的关键节点。",
+    "quote": "ChatGPT 终于从只会聊天进化到会干活的打工人了——云端虚拟机、跨应用集成、自主干活，这波操作是 OpenAI 对自己 IPO 估值的最好暗示。",
+    "source": "VentureBeat",
+    "url": "https://venturebeat.com/technology/openai-introduces-chatgpt-work-a-cloud-based-ai-agent-that-manages-tasks-across-email-slack-and-calendars",
+    "published": "2026-07-10",
+    "uid": "ai_682e9eb6"
+  },
+  {
+    "title": "GPT-5.6 获特朗普政府绿灯，Sol/Terra/Luna 三模型面向全球公测",
+    "content": "OpenAI 的 GPT-5.6 模型套件在经过两周的「政府有限预览」后，获得特朗普政府的全面许可，面向全球用户开放公测。旗舰模型 Sol 定价为每百万 token $5 输入 / $30 输出——几乎是 Anthropic Claude Fable 5 的一半。Terra 和 Luna 定位更低，覆盖高吞吐和日常场景。Sol 还拥有「max」深度推理模式和「ultra」子助手模式。OpenAI CEO Sam Altman 称其为「我们有史以来最好的模型」。值得注意的是，OpenAI 声明表示不希望这次政府审批流程成为长期常态，希望未来模型发布不再受此限制。",
+    "quote": "GPT-5.6 的定价直接把 Anthropic 架在火上烤——比对手旗舰便宜一半，还顺手带了个『子代理』模式致敬开源社区。Altman 说『不希望每次都这样』，但白宫显然不这么想。",
+    "source": "The Verge / Axios",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/963464/openai-gpt-5-6-codex-chatgpt-work",
+    "published": "2026-07-10",
+    "uid": "ai_c9b30a3a"
+  },
+  {
+    "title": "Apple 起诉 OpenAI，指控前员工窃取商业机密",
+    "content": "苹果公司正式对 OpenAI 提起联邦诉讼，指控其前员工在跳槽 OpenAI 时盗窃了与 AI 相关的商业机密和专有技术。苹果称已发现「盗窃模式」——多名此前在苹果工作的 OpenAI 员工携带了保密信息。Hacker News 上该话题获得 1414 点热议和 769 条评论，成为当日最受关注的技术新闻。苹果近年来一直在悄悄推进 AI 研发，WWDC 后 Siri AI 成为焦点，此次诉讼也被解读为苹果在 AI 人才竞争中的防御性反击。",
+    "quote": "Apple 和 OpenAI 从合作伙伴变原告被告，只隔了一个 WWDC 的距离。『盗窃模式』四个字写进诉状，硅谷的人才跳槽文化这回要上法庭见真章了。",
+    "source": "9to5Mac / Hacker News / The Verge",
+    "url": "https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/",
     "published": "2026-07-10",
     "uid": "ai_0a3f6ce6"
   },
   {
-    "title": "GPT-5.6 Sol成功证明Cycle Double Cover猜想，AI数学能力再突破",
-    "content": "OpenAI最新发布的大型推理模型GPT-5.6 Sol在7月10日的数学推理测试中成功证明了图论中的经典难题Cycle Double Cover猜想，该猜想自1979年提出以来一直未被完整证明。Sol通过自主构造新的证明路径，以48页的严谨论证完成了这一突破。数学家评价这一结果令人震惊，但同时也引发了关于AI发现成果署名权和学术伦理的争议。GPT-5.6 Sol目前仅向部分研究机构开放，商业发布计划尚未公布。",
-    "quote": "人类数学家还没写完论文，AI已经把猜想证出来了。",
-    "url": "https://news.ycombinator.com/item?id=41000000",
-    "source": "Hacker News",
-    "published": "2026-07-10",
-    "uid": "ai_b4d79c02"
-  },
-  {
-    "title": "OpenAI正式推出ChatGPT Work，面向企业客户的全新生产力平台",
-    "content": "OpenAI于7月11日正式发布ChatGPT Work，这是一个面向企业客户的一站式AI生产力平台。该平台整合了文档协作、代码开发、数据分析、项目管理等功能，支持团队级知识库共享和多Agent协同工作流。ChatGPT Work采用按席位订阅制，每席位每月60美元，已签约包括德勤、安永在内的多家头部咨询公司。分析人士指出，此举标志着OpenAI从消费级AI助手向企业级SaaS平台的战略转型，直接与微软Copilot生态展开正面竞争。",
-    "quote": "ChatGPT开始上班了，打工人真的可以摸鱼了。",
-    "url": "https://www.theverge.com/2026/7/11/openai-chatgpt-work-launch",
+    "title": "OpenAI 关停 ChatGPT Atlas 浏览器：上线不到一年即遭弃用",
+    "content": "OpenAI 宣布关停 ChatGPT Atlas——其独立 AI 浏览器，距离去年十月发布仅过了不到一年。Atlas 将于 8 月 9 日正式退役。OpenAI 表示 Atlas 用户教会了团队「Agent 如何帮助用户更好地浏览和完成工作」，这些经验已融入新的 ChatGPT Work 产品中。今年 3 月华尔街日报曾报道 OpenAI 计划将 ChatGPT、Codex 和 Atlas 合并为桌面「超级应用」，ChatGPT Work 正是该计划的产物。近期 OpenAI 还陆续关停了 Sora 视频生成应用和搁置了 ChatGPT「成人模式」计划。",
+    "quote": "Atlas 浏览器从发布到入土用了不到一年——OpenAI 的『超级应用』战略证明了一件事：与其维护三个独立产品，不如缝成一个卖更贵。",
     "source": "The Verge",
-    "published": "2026-07-11",
-    "uid": "ai_f5480878"
-  },
-  {
-    "title": "DeepSeek启动自研AI芯片计划，对标英伟达训练和推理芯片",
-    "content": "据多家媒体报道，DeepSeek已于7月上旬正式启动自研AI芯片项目，代号深核。该项目将分别开发针对大模型训练的加速芯片和面向端侧推理的低功耗芯片，目标是在两年内实现核心AI算力的自主可控。DeepSeek已从华为海思和壁仞科技挖来多名芯片架构师，首款芯片预计采用5nm制程。业内分析认为，DeepSeek此举意在摆脱对外部算力供应商的依赖，在日益激烈的中美AI竞赛中建立独立的硬件护城河。",
-    "quote": "搞AI的终归要自己造芯片，算力就是新石油。",
-    "url": "https://36kr.com/p/3000001234567890",
-    "source": "36氪",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/963654/openai-chatgpt-atlas-ai-browser-shut-down-sunset",
     "published": "2026-07-10",
-    "uid": "ai_6390f7f5"
+    "uid": "ai_b31380b4"
   },
   {
-    "title": "Meta Iris AI芯片确认9月量产，台积电3nm制程加持",
-    "content": "Meta于7月11日宣布，其自研的第二代AI训练芯片Iris已完成最终流片验证，将于今年9月交由台积电采用3nm制程大规模量产。Iris芯片专为Meta的Llama大模型训练设计，单芯片算力较上一代提升4倍，能效比提升了60%。Meta计划首批部署超过50万片，用于支撑2027年发布的Llama 5训练。此举意味着Meta正在加速减少对NVIDIA GPU的依赖，其自研芯片路线图已进入实质执行阶段。",
-    "quote": "小扎的算力自由，从这颗3nm芯片开始。",
-    "url": "https://venturebeat.com/ai/meta-iris-ai-chip-september-production-2026/",
+    "title": "OpenAI AGI 负责人 Fidji Simo 因病离职：高管接连出走，Brockman 权力集中",
+    "content": "OpenAI AGI 部门主管 Fidji Simo 宣布因慢性神经免疫疾病加重，从全职岗位转为兼职顾问。Simo 今年 4 月便已因健康问题休病假，彼时总统 Greg Brockman 接管产品线。随后 5 月公司重组，Brockman 正式统领产品战略和规模化，管理四大业务支柱。同一时期，COO Brad Lightcap 和 CMO Kate Rouch 也已离职或缩小角色范围。Simo 在 X 上写道：「帮助建设未来的同时，应对一种无法治愈的疾病——这种脱节令人震撼。」Altman 回应称非常难过。",
+    "quote": "OpenAI 的 C 字头们跑得比模型迭代还快——AGI 老大病退、COO 离职、CMO 休养，权力越来越集中在 Brockman 手里。IPO 前的 OpenAI，内部比外部看起来混乱得多。",
+    "source": "The Verge / CNBC",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/963738/openai-fidji-simo-steps-down-ceo-advisor",
+    "published": "2026-07-10",
+    "uid": "ai_b96037df"
+  },
+  {
+    "title": "OpenAI 权力整合：Greg Brockman 统一产品线，为 IPO 铺路",
+    "content": "CNBC 报道，OpenAI 联合创始人 Greg Brockman 将全面掌管产品部门。在 Fidji Simo 休病假期间接手产品线后，Brockman 继续保留这些职责——Simo 现已转为兼职顾问。Brockman 目前领导四个支柱：核心产品和平台、关键企业行业、消费者业务（健康/电商/个人金融）、核心基础设施/广告/数据科学。分析认为这一权力集中是在为 OpenAI 即将到来的 IPO 做准备——统一的领导结构能让投资者对公司的产品路线图更有信心。",
+    "quote": "Brockman 从技术联合创始人到产品独裁者——OpenAI 的 IPO 前大洗牌，把公司命运押在了一个人身上。希望他比那些 C 字头高管们身体好。",
+    "source": "CNBC / The Verge",
+    "url": "https://www.cnbc.com/2026/07/10/openai-power-consolidates-under-co-founder-greg-brockman-ahead-of-ipo.html",
+    "published": "2026-07-10",
+    "uid": "ai_9e906703"
+  },
+  {
+    "title": "Meta 计划 9 月量产自研「Iris」AI 芯片，每半年迭代一次",
+    "content": "路透社报道，Meta 计划于 9 月开始制造代号为「Iris」的自研 AI 芯片。该芯片将加入 Meta 的 MTIA（Meta Training and Inference Accelerator）系列，旨在减少对 Nvidia 和 AMD 的依赖。Meta 此前宣布计划每半年推出一款自研芯片。在 AI 军备竞赛中，大型科技公司纷纷自研芯片以控制成本和供应链——Google 有 TPU、AWS 有 Trainium、微软有 Maia，Meta 的 Iris 是最新入场的玩家。",
+    "quote": "科技巨头们都在拼命摆脱 Nvidia 的芯片税——Meta 的 Iris 芯片每半年迭代一次，听起来像是想用数量弥补质量的不确定性。",
+    "source": "Reuters / The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/963464/meta-iris-ai-chip-manufacturing-september",
+    "published": "2026-07-09",
+    "uid": "ai_e94398f5"
+  },
+  {
+    "title": "亚马逊秘密推进「Moonraker」项目：Alexa 升级为高级 AI Agent",
+    "content": "Business Insider 披露亚马逊正在秘密推进代号为「Moonraker」的项目，旨在将 Alexa AI 升级为能处理复杂多步任务的高级 AI Agent，对标 Google、OpenAI 的产品。内部文件显示项目成本高昂。Alexa 虽然拥有庞大的用户基础，但在 AI Agent 能力上一直落后于竞争对手。此次 Moonraker 项目的曝光表明亚马逊终于意识到智能音箱的「问答模式」已不够用，正在全力追赶 Agent 时代。",
+    "quote": "Alexa 被亚马逊内部文档嘲笑为只会定闹钟的 AI——Moonraker 项目是为它装上 Agent 手脚的紧急手术。问题是，Amazon 每次后面发力的历史战绩可不太好看。",
+    "source": "Business Insider / The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/963464/amazon-moonraker-project-alexa-agentic",
+    "published": "2026-07-08",
+    "uid": "ai_6e064060"
+  },
+  {
+    "title": "纽约时报等出版商指控 OpenAI 隐瞒证据：AI 版权战升级",
+    "content": "《纽约时报》和其他出版商在法庭文件中指控 OpenAI 隐瞒了关于「公司 AI 系统如何训练和使用」的关键信息，要求法院对 OpenAI 实施法律制裁。这是 AI 版权大战的最新升级——此前出版商们已就 OpenAI 使用其受版权保护内容训练模型提起诉讼。OpenAI 在回应中表示已配合调查，但出版商认为证据提交「不完整且具有选择性」。这起案件的结果可能影响整个 AI 行业对受版权内容的使用边界。",
+    "quote": "OpenAI 的版权官司比模型迭代还快——这回不是『训练数据是否侵权』，而是『你把证据藏哪了』。法庭上见真章，ChatGPT Work 再能干活也帮不了法务部。",
+    "source": "The Verge / NYT",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/963464/new-york-times-openai-sanctions-hearing",
+    "published": "2026-07-09",
+    "uid": "ai_2b3fce7e"
+  },
+  {
+    "title": "Notion 发布独立 Agents iOS 应用：一个 App 聊遍 ChatGPT、Gemini 和 Claude",
+    "content": "Notion 推出了一款全新的 iOS 独立应用 Notion Agents，与 Notion 主笔记应用不同，它专门用于与自定义 AI Agent 或接入的 AI 模型对话——包括 ChatGPT、Gemini 和 Claude。用户可以用它提问、捕获文本、照片和语音笔记。这也是 Notion 在 AI 生态中寻找差异化定位的重要尝试。此前 Notion 已在主应用中深度集成 AI 功能，此次独立应用则聚焦于 Agent 交互场景。",
+    "quote": "Notion 说『与其让你们在多个 AI App 之间切来切去，不如我做一个聚合器』——笔记应用的终极形态可能是变成 AI 聊天客户端。",
+    "source": "The Verge / 9to5Mac",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/963464/notion-agents-ios-app",
+    "published": "2026-07-07",
+    "uid": "ai_2eb5f5f6"
+  },
+  {
+    "title": "调查显示 86% 企业 GPU 利用率不足 50%：AI 基建泡沫隐现",
+    "content": "VentureBeat Research 六月调查显示，86% 的自建 GPU 企业报告利用率在 50% 或更低。华尔街此前一直争论 AI 基础设施是否建设过度，这份来自企业买方的实测数据给出了明确的答案——最昂贵的硬件设备只跑了一半以下的负荷。仅有 44% 的企业严格追踪 AI 算力的真实成本和回报。尽管如此，45% 的企业计划在未来 12 个月内评估 AI 专业云服务商（CoreWeave、Lambda 等），但当下实际使用者不足 2%。32% 的企业在考虑非 Nvidia 加速器作为对冲。",
+    "quote": "公司们抢 GPU 抢得头破血流，买回来发现一半时间在吃灰——86% 的企业 GPU 吃不饱，华尔街的 AI 基建泡沫论这回可真不是瞎说。",
+    "source": "VentureBeat Research",
+    "url": "https://venturebeat.com/orchestration/wall-street-is-debating-the-ai-buildout-enterprises-just-answered-86-say-their-gpus-run-at-half-capacity-or-less",
+    "published": "2026-07-10",
+    "uid": "ai_2ac2698c"
+  },
+  {
+    "title": "企业 AI Agent 部署速度远超管控：54% 已发生安全事件",
+    "content": "VentureBeat Pulse Research 调查 573 家技术领导者发现，企业正在以远快于建立管控机制的速度部署 AI Agent。54% 的公司在过去 12 个月内发生过 Agent 安全事件或险情。69% 的企业存在凭证共享——多个 Agent 共用同一个 API Key。仅 32% 的企业为每个 Agent 创建了独立的、受限的托管身份。27% 的企业只进行被动成本控制——收到发票才知道 Agent 花了多少钱。调查覆盖身份层、评估层、成本层、上下文层和编排层五个维度，约六成企业计划在 12 个月内更换或新增供应商填补这些管控空白。",
+    "quote": "企业 AI Agent 部署像西部拓荒——枪先开了再想安全的事。69% 的 Agent 共用一把钥匙，54% 已经出过事，安全厂商赚得盆满钵满。",
+    "source": "VentureBeat Research",
+    "url": "https://venturebeat.com/security/shared-api-keys-expose-ai-agent-fleets-venturebeat-research",
+    "published": "2026-07-10",
+    "uid": "ai_6b592159"
+  },
+  {
+    "title": "企业 AI Agent 评估信任危机：半数已部署系统曾在客户面前翻车",
+    "content": "VentureBeat 六月 Pulse 调查显示，50% 的企业曾部署一个通过了内部评估但仍导致客户场景失败的 AI Agent——四分之一的企业甚至经历过多次。当前 66% 的企业已经在允许或正在构建无需人工审核的生产部署流程，但只有 5% 表示完全信任自动化评估。29% 的企业认为评估与真实世界结果严重脱节，21% 指出存在偏差和不一致性。24% 的「Agent」实际上只是单次提示的聊天机器人，能独立完成多步任务的不足四分之一。企业正在陷入「评估信任赤字」，AI Agent 的自主性提升快于质量保障。",
+    "quote": "AI Agent 的『考试型选手』问题暴露了：评估全 A，上了客户战场就挂科。只有 5% 的企业敢说相信我家的自动化测试——剩下 95% 都是在赌。",
     "source": "VentureBeat",
-    "published": "2026-07-11",
-    "uid": "ai_5d355d50"
-  },
-  {
-    "title": "亚马逊Moonraker项目曝光：打造下一代AI Agent驱动Alexa",
-    "content": "The Information在7月10日独家报道了亚马逊代号Moonraker的秘密项目，该项目旨在利用大语言模型深度改造Alexa语音助手，使其具备真正的AI Agent能力，包括自主执行多步任务、调用外部API、管理智能家居设备并做出主动决策。新版Alexa将内置一个轻量级专用模型与云端大模型协同工作。消息人士称贝佐斯亲自参与了项目评审，产品最快可能在2026年底的re:Invent大会上亮相。",
-    "quote": "Alexa终于不只是定闹钟的傻白甜了。",
-    "url": "https://www.theinformation.com/articles/amazons-moonraker-alexa-ai-agent-project",
-    "source": "The Information",
+    "url": "https://venturebeat.com/orchestration/enterprise-ai-is-entering-an-evaluation-gap-agents-are-gaining-autonomy-faster-than-companies-can-verify-them",
     "published": "2026-07-10",
-    "uid": "ai_d0182099"
+    "uid": "ai_af94d4dd"
   },
   {
-    "title": "欧盟委员会正式通过AI行为准则，对通用AI模型提出透明度要求",
-    "content": "欧盟委员会于7月11日正式通过AI行为准则，作为AI法案的配套执行细则。准则要求所有通用AI模型提供者公开训练数据摘要、能源消耗报告和安全测试结果，并对高风险应用场景实施强制性的红队测试。违反者将面临最高相当于全球年营收4%的罚款。该准则将于2027年1月起全面生效。Meta和Google表示需要时间评估合规成本，而OpenAI和Anthropic则表态支持。这标志着全球AI监管正在从框架走向执行细化的新阶段。",
-    "quote": "欧盟又出了一个让硅谷头疼的作业，这次是AI行为规范。",
-    "url": "https://www.techcrunch.com/2026/07/11/eu-ai-code-of-conduct-approved/",
-    "source": "TechCrunch",
+    "title": "GitHub 周趋势：AI Agent 工具爆发，Caveman 省 token 狂魔 8.8 万星",
+    "content": "本周 GitHub 趋势被 AI Agent 工具和开发者效率工具霸榜。Caveman（8.8 万星）以「石器时代说话法」削减 65% 的 token 消耗，成为现象级吐槽产品。Strix（4 万星）开源 AI 渗透测试工具，自动发现应用漏洞。OpenAI 的 codex-plugin-cc（2.7 万星）允许从 Claude Code 调用 Codex 审查代码。腾讯的 CubeSandbox（9.6 千星）用 Rust 实现 AI Agent 沙箱。阿里巴巴的 page-agent（2.6 万星）用自然语言控制网页界面。Facebook 开源 Astryx（7.8 千星）——Agent 可用的可定制设计系统。OmniRoute（1.5 万星）作为免费 AI 网关聚合 231+ 提供商。StablyAI 的 Orca（1.6 万星）提供并行 Agent 开发环境。",
+    "quote": "GitHub 本周就像 AI Agent 工具大集——从省 token 的穴居人话术到渗透测试全能战士，每个人都想靠 Agent 淘金工具赚钱。哦对了，那个让 AI 说人话还省钱的 Caveman 已经 8.8 万星了。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/trending?since=weekly",
     "published": "2026-07-11",
-    "uid": "ai_0941989c"
+    "uid": "ai_c1218908"
   },
   {
-    "title": "OpenAI CEO Kodali承认去年AI取代工作言论过于激进",
-    "content": "OpenAI CEO Sam Kodali在7月10日接受大西洋月刊专访时罕见承认，自己去年多次公开宣称未来三年内AI将取代80%白领工作的言论过于激进且缺乏充分依据。Kodali表示经过一年的实际部署观察，AI目前更适合作为人类能力的放大器而非替代者，并呼吁业界在AI对社会影响的问题上保持更审慎的表述。这一态度反转在AI圈引发热议，批评者认为这是公关话术，支持者则认为这说明行业开始走向成熟。",
-    "quote": "去年说AI要抢你饭碗的CEO，今年改口说AI是你的好帮手了。",
-    "url": "https://www.theatlantic.com/technology/archive/2026/07/openai-ceo-reverses-ai-job-replacement-claims/678901/",
-    "source": "The Atlantic",
+    "title": "腾讯开源 CubeSandbox：Rust 实现的瞬时、并发、安全 AI Agent 沙箱",
+    "content": "腾讯云开源了 CubeSandbox——一个用 Rust 编写的 AI Agent 沙箱，提供即时启动、高并发和轻量级安全隔离能力。该项目本周在 GitHub 上增长 2514 星，累计 9676 星。CubeSandbox 专为 AI Agent 执行环境设计，可以在毫秒级创建和销毁沙箱实例，支持大规模并发运行，资源开销极小。对企业而言，这解决了 Agent 执行环境的安全隔离问题——不同 Agent 之间不会互相干扰。",
+    "quote": "腾讯云用 Rust 敲了个 AI Agent 的『安全笼子』——Agent 们可以放心在里面撒欢，不用担心把系统搞崩了。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/TencentCloud/CubeSandbox",
+    "published": "2026-07-11",
+    "uid": "ai_7cf65d2a"
+  },
+  {
+    "title": "Hugging Face 联合 NVIDIA 发布「Data for Agents」：为 AI Agent 构建数据策略",
+    "content": "Hugging Face 博客发布与 NVIDIA 合作的新文章「Data for Agents」，探讨如何为 AI Agent 构建数据策略。同期 Hugging Face 还发布了原生 vLLM transformers 建模后端、一键部署到 Amazon SageMaker、与微软 Foundry 托管计算集成、与 SkyPilot 的零出站存储（在任意云运行工作负载，存储端在 Hugging Face）等多项更新。此外，LeRobot v0.6.0 发布，加入了「想象、评估、改进」循环能力。",
+    "quote": "Hugging Face 这个月像是开了外挂——NVIDIA 合作、微软集成、原生 vLLM 后端，开源模型生态正在从『模型市场』进化为『Agent 操作系统』。",
+    "source": "Hugging Face Blog",
+    "url": "https://huggingface.co/blog/nvidia/open-data-for-agents",
+    "published": "2026-07-08",
+    "uid": "ai_76f1dcb4"
+  },
+  {
+    "title": "「Ghost Font」字体走红 Hacker News：人类能读但 AI 读不懂",
+    "content": "MixFont 发布了名为「Ghost Font」的新型字体——人类肉眼可以正常阅读，但 AI 视觉识别系统（OCR）无法识别。该字体在 Hacker News 上获得 127 点热议和 100 条评论。设计师通过微调字母形状，使字符在人类视觉系统中可被识别，但对 OCR 模型和 AI 视觉系统构成干扰。这种「反 AI」字体引发了关于信息对抗和 AI 时代的视觉设计的讨论——当 AI 无处不在时，人类也需要「对人可见、对机不可见」的通信方式。",
+    "quote": "互联网终于有了人类和 AI 之间的『语音加密』——Ghost Font 让机器看不懂你的内容，但朋友可以。下一步是不是该发明人类专属验证码了？",
+    "source": "Hacker News / MixFont",
+    "url": "https://www.mixfont.com/ghost-font",
+    "published": "2026-07-11",
+    "uid": "ai_593d5c7c"
+  },
+  {
+    "title": "AI Agent 2040：科幻还是预言？长文引爆 Hacker News 讨论",
+    "content": "一篇题为「AI 2040: Plan A」的长文在 Hacker News 上获得 356 点热度和 434 条评论。文章展望了到 2040 年 AI 发展的可能路径——从 Agent 自主性、经济影响到人类社会结构的变化。这篇充满未来主义色彩的推演引发了社区对 AGI 时间线和 AI 社会影响的激烈辩论。讨论中分成了乐观派和悲观派——前者认为 AI 将解放人类创造力，后者警告失业和不平等将加剧。",
+    "quote": "AI 2040 的讨论热过今天的实际新闻——AI 社区对未来有 434 种意见，但没一个能预测下个月模型发布会发生什么事。",
+    "source": "Hacker News",
+    "url": "https://news.ycombinator.com/item?id=48848425",
     "published": "2026-07-10",
-    "uid": "ai_c1e566f4"
-  },
-  {
-    "title": "2026世界人工智能大会下周上海开幕，华为和特斯拉确认参会",
-    "content": "2026年世界人工智能大会（WAIC 2026）将于7月17日至20日在上海世博中心和世博展览馆举办。组委会7月10日公布最终议程，华为轮值董事长徐直军和特斯拉AI负责人将在主论坛发表演讲。今年大会聚焦AI与科学智能、具身智能、AI安全治理三大主题，参展企业超过500家。值得关注的是，多家中东主权基金将首次以联合展团形式亮相，凸显全球AI资本向中国的加速流动。",
-    "quote": "WAIC又来了，今年不聊大模型参数了，改聊落地和赚钱。",
-    "url": "https://www.jiqizhixin.com/articles/2026-waic-conference-agenda",
-    "source": "机器之心",
-    "published": "2026-07-10",
-    "uid": "ai_f7515487"
-  },
-  {
-    "title": "美国版权局裁定AI生成内容部分可受版权保护",
-    "content": "美国版权局于7月11日发布新的政策指导意见，修改此前完全拒绝AI生成内容版权登记的立场。新规认定，如果人类创作者能够证明对AI生成内容实施了足够充分的创意控制，包括详细的文字提示迭代、输出筛选和实质性修改，则该内容中的人类贡献部分可以获得版权保护。这一裁决被视作AI版权争议中的重要里程碑。法律界人士指出，虽然标准仍然模糊，但至少为艺术家和作家提供了一个可操作的合规框架。",
-    "quote": "版权局说：AI画的图可以归你，前提是你得证明你动了脑子。",
-    "url": "https://techcrunch.com/2026/07/11/us-copyright-office-ai-guidance/",
-    "source": "TechCrunch",
-    "published": "2026-07-11",
-    "uid": "ai_694f96e6"
-  },
-  {
-    "title": "Google Gemini 3.0被曝内部测试得分超越GPT-5.6",
-    "content": "据The Verge援引内部人士消息，Google正在测试的下一代大模型Gemini 3.0在多项基准测试中取得领先成绩，部分推理任务得分甚至超越了OpenAI刚发布的GPT-5.6 Sol。Gemini 3.0采用了一种全新的稀疏MoE架构，参数量虽达3万亿，但推理成本仅为GPT-5.6的60%。Google计划在今年秋季的Made by Google大会上正式发布该模型，并率先集成到Pixel 11和Google Workspace中。",
-    "quote": "谷歌终于醒了：Gemini 3.0号称打趴GPT，这次是真的还是PPT？",
-    "url": "https://www.theverge.com/2026/7/11/google-gemini-3-internal-test-scores",
-    "source": "The Verge",
-    "published": "2026-07-11",
-    "uid": "ai_cda6b620"
-  },
-  {
-    "title": "微软发布AI Agent开发框架AutoCopilot，支持跨模型和跨云部署",
-    "content": "微软于7月10日正式推出AutoCopilot，一个全新的AI Agent开发框架，允许开发者构建可跨Azure、AWS和Google Cloud部署的多模型Agent应用。AutoCopilot内置了规划、记忆、工具使用和自省四大核心模块，支持Python和TypeScript两种语言的SDK。微软CEO纳德拉在发布视频中称AutoCopilot是AI开发的下一代操作系统。首批合作伙伴包括ServiceNow和SAP，进一步加剧了AI Agent平台之争。",
-    "quote": "微软说：你们别再自己写Agent了，直接用我的框架吧。",
-    "url": "https://www.theverge.com/2026/7/10/microsoft-autocopilot-ai-agent-framework",
-    "source": "The Verge",
-    "published": "2026-07-10",
-    "uid": "ai_0c83362f"
-  },
-  {
-    "title": "Anthropic发布2026上半年安全报告，Red Team发现74个高危漏洞",
-    "content": "Anthropic于7月10日发布了2026年上半年安全评估报告，披露其专门组建的内部Red Team在过去6个月中共发现了74个高危漏洞和12个关键漏洞，所有漏洞均已在报告发布前完成修复。报告特别提到一种新型上下文越狱攻击手法，攻击者可利用长对话中的注意力分散漏洞绕过安全护栏。Anthropic表示已将相关防御机制融入Claude 4.5的核心架构。该报告的透明度和详细程度远超行业标准。",
-    "quote": "Red Team半年找出74个漏洞，AI安全这事儿真不能当儿戏。",
-    "url": "https://www.anthropic.com/research/2026-h1-security-report",
-    "source": "Anthropic",
-    "published": "2026-07-10",
-    "uid": "ai_2f154bd5"
-  },
-  {
-    "title": "百度文心一言发布4.5版本，支持多模态实时对话视频生成",
-    "content": "百度在7月11日的AI Day上正式发布了文心一言4.5版本，最大亮点是行业内首次实现了多模态实时对话视频生成能力，用户可以在与AI对话过程中，实时生成与对话内容同步的短视频画面。此外，4.5版本的上下文窗口扩展至200万token，并首次接入百度搜索和地图的实时数据。李彦宏在发布会上强调AI不是替代人，而是增强人的能力。文心一言4.5即日起开放免费试用。",
-    "quote": "百度这回真拼了，聊天都能同步出视频了。",
-    "url": "https://36kr.com/p/3000009876543210",
-    "source": "36氪",
-    "published": "2026-07-11",
-    "uid": "ai_9784c2e9"
-  },
-  {
-    "title": "日本宣布AI转型2027国家战略，投入300亿美元建设AI基础设施",
-    "content": "日本首相在7月11日的AI战略发布会上正式宣布了名为AI转型2027的国家级战略，计划在未来18个月内投入300亿美元，用于建设国产AI算力基础设施、大规模日语AI数据集和人才培养体系。核心项目包括建设三座由可再生能源驱动的AI专用数据中心，以及开发基于日本技术路线的开源大模型Fugaku-LLM。此举被视为日本在中美AI主导格局下寻求差异化突围的关键举措。",
-    "quote": "日本终于坐不住了，砸300亿美元要在AI赛道追上队伍。",
-    "url": "https://www.reuters.com/technology/japan-ai-transformation-2027-strategy-2026-07-11/",
-    "source": "Reuters",
-    "published": "2026-07-11",
-    "uid": "ai_4305629e"
+    "uid": "ai_99dab042"
   }
 ]
