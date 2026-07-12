@@ -1,182 +1,222 @@
 [
   {
+    "uid": "",
     "title": "Fields Medalist Terry Tao 用 AI 编码代理构建 App：数学家的实战评测引爆 HN",
     "content": "菲尔兹奖得主、UCLA 教授陶哲轩（Terry Tao）在个人博客发表长文，详细记录了他使用现代 AI 编码代理（coding agents）从零构建交互式 Web 应用的过程。Tao 基于论文中的数学概念，用 Claude Code 和 Codex 生成了可视化交互工具，并评价「对于非核心任务的可视化补充品，LLM agent 的风险收益比是可接受的」。该文在 Hacker News 获得 274 点热度和 75 条讨论，成为当日最热门话题。评论中不少人感叹「当年尔兹奖得主和 Docker 斗智斗勇的时代终于来了」。",
     "quote": "连 Terry Tao 都开始用 AI 写代码了——如果世界上最有名的人类数学家觉得 coding agent 够用了，那 AI 取代程序员这个话题是不是该翻篇了？",
     "source": "Terry Tao Blog / Hacker News",
     "url": "https://terrytao.wordpress.com/2026/07/11/old-and-new-apps-via-modern-coding-agents/",
     "published": "2026-07-13",
-    "uid": "ai_1b9cfda2"
+    "vendor": "anthropic",
+    "direction": "工具/平台"
   },
   {
+    "uid": "",
     "title": "Mesh LLM 发布：开源分布式推理，联网拼凑多台设备的 GPU 跑大模型",
     "content": "Iroh 团队发布 Mesh LLM，一个开源分布式 AI 推理系统，允许用户将多台机器的 GPU 和内存池化为一个整体。通过 iroh 的 P2P 协议（QUIC + NAT 穿透），所有节点通过公钥身份认证，无需中心服务器。支持三种模式：本地运行、路由到已加载模型的节点、将超过单机容量的大模型拆分成 pipeline 跨多机推理。Qwen 235B MoE 模型在 2 节点上实测达 16 tok/s。安装包仅 18MB，提供 OpenAI 兼容 API。项目在 HN 上获得 315 点关注和 72 条评论。移动端 iOS 版本也在开发中。",
     "quote": "把你的旧 Mac + 游戏本 + 工位电脑凑一起跑大模型——Mesh LLM 把贝索斯的『分布式算力』梦想变成了 18MB 的开源工具。",
     "source": "Iroh Blog / Hacker News",
     "url": "https://www.iroh.computer/blog/mesh-llm",
     "published": "2026-07-13",
-    "uid": "ai_85bb074b"
+    "vendor": "openai",
+    "direction": "模型发布"
   },
   {
+    "uid": "",
     "title": "Nature 重磅研究：AI 让科学家高产 3 倍，却让科学发现「扁平化」",
     "content": "IEEE Spectrum 报道了一项发表于 Nature 的重磅研究。芝加哥大学团队分析了 1980 至 2025 年间 4130 万篇英语论文，发现使用 AI 的研究者平均发表论文量是未使用者的 3 倍、引用数是 5 倍，晋升团队负责人也早 1-2 年。但代价是 AI 研究的「知识空间」覆盖范围缩小，集中在相同的数据密集型问题上，跨领域的思想碰撞减少。西北大学教授 Amaral 警告：「我们正在把同一个洞挖得越来越深。」研究负责人 Evans 认为问题核心不在 AI 架构，而在学术激励体系本身。该话题在 HN 上获得 88 点热度和 72 条讨论，评论区对「AI 学术工业复合体」展开了激烈辩论。",
     "quote": "AI 让每个科学家多发了 3 倍的论文，但科学发现的总面积却缩小了——这就像给每个人一把更快的铲子，结果所有人都在挖同一个坑。",
     "source": "IEEE Spectrum / Nature",
     "url": "https://spectrum.ieee.org/ai-science-research-flattens-discovery",
     "published": "2026-07-13",
-    "uid": "ai_5004e58c"
+    "vendor": "other",
+    "direction": "研究/论文"
   },
   {
+    "uid": "",
     "title": "Nvidia/CoreWeave/Nebius 循环融资调查：GPU 繁荣背后隐藏的债务炸弹",
     "content": "一篇深度的金融调查文章在 HN 上获得 342 点热度和 150 条评论，揭示了 AI GPU 繁荣背后令人不安的「循环融资」结构。CoreWeave 和 Nebius 作为两家上市的「Neocloud」公司，增长高度依赖微软和 Meta 总计超过 1220 亿美元的长期算力承诺。但这些 Neocloud 持续亏损，债务高企，通过 Nvidia 的股权投资和 GPU 抵押贷款维持扩张。文章指出 CoreWeave 2026 年预估收入仅 126 亿美元，但 Meta 单笔就承诺了 210 亿——承诺与收入之间存在量级差异。评论区分成两极：一方认为这是 AI 泡沫的典型特征，另一方认为超大规模客户的长期合约提供了真实需求支撑。",
     "quote": "GPU 生意现在变成了一场数学游戏：Nvidia 借钱给人买自己的显卡，然后这些公司再租给微软——钱转了一圈，真正的账单谁付？",
     "source": "IO Fund / Hacker News",
     "url": "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom",
     "published": "2026-07-13",
-    "uid": "ai_a403e5ad"
+    "vendor": "meta",
+    "direction": "应用/落地"
   },
   {
+    "uid": "",
     "title": "OpenAI 澄清：Codex 独立 App「会留下来」，ChatGPT Work 不是替代品",
     "content": "OpenAI Codex 工程主管 Thibault Sottiaux 在 X 上公开澄清，尽管 ChatGPT Work 已发布，但独立的 Codex App「不会消失」。此前市场普遍认为 ChatGPT Work 整合了 ChatGPT 和 Codex 的功能，可能意味着 Codex 独立产品将被淘汰。Sottiaux 还预告了 ChatGPT Work 的后续更新——聊天和项目将移至侧边栏。此外，OpenAI 首席未来学家 Joshua Achiam 在任职 9 年后宣布离职，表示「可以从实验室外部继续推动 AGI 使命」。",
     "quote": "OpenAI 产品线多到连自己人都搞不清楚谁替代谁了——『Codex 不死』的声明听起来更像是给开发者吃定心丸，毕竟刚融了 8000 亿的 IPO 估值需要所有人保持信仰。",
     "source": "The Verge / X",
     "url": "https://www.theverge.com/ai-artificial-intelligence/963464/openai-gpt-5-6-codex-chatgpt-work",
     "published": "2026-07-13",
-    "uid": "ai_c36c7876"
+    "vendor": "openai",
+    "direction": "工具/平台"
   },
   {
+    "uid": "",
     "title": "纽约时报等出版商要求法院制裁 OpenAI：指控「隐瞒训练证据」",
     "content": "《纽约时报》及其他出版商在法庭文件中指控 OpenAI 在版权诉讼中隐瞒了关于「公司 AI 系统如何训练和使用」的关键信息，要求法院对 OpenAI 实施法律制裁。出版商认为 OpenAI 的证据提交「不完整且具有选择性」。OpenAI 回应称已配合调查。这起 2024 年发起的版权案件的结果可能决定整个 AI 行业对受版权内容的使用边界——如果法院支持出版商，将迫使所有基础模型开发商重新审查训练数据的合法性。",
     "quote": "出版商和 OpenAI 的官司从『你偷了我的内容』升级到『你把证据藏哪了』——法庭上的戏比模型发布会还精彩，而且筹码是整个 AI 行业的数据合法性。",
     "source": "The Verge / NYT",
     "url": "https://www.nytimes.com/2026/07/09/technology/new-york-times-openai.html",
     "published": "2026-07-13",
-    "uid": "ai_6d49296a"
+    "vendor": "openai",
+    "direction": "政策/合规"
   },
   {
+    "uid": "",
     "title": "GitHub 周趋势：AI Agent 工具全面霸榜，系统提示词泄露仓库 5.6 万星",
     "content": "本周 GitHub 趋势再次被 AI Agent 工具统治。asgeirtj 的 system_prompts_leaks 仓库（5.6 万星）持续更新各大模型系统提示词——Claude Fable 5、Opus 4.8、GPT-5.6、Gemini 3.5 Flash 等全部在列，本周增长 7731 星。OpenAI 的 codex-plugin-cc（2.8 万星，+4030）让 Claude Code 能调用 Codex 审查代码。阿里巴巴的 page-agent（2.6 万星，+3317）用自然语言控制网页界面。StablyAI 的 Orca（1.7 万星，+4368）提供并行 Agent 开发环境。Facebook 开源的 Astryx（8090 星，+2779）是 Agent 可用的设计系统。Caveman 工具（8.8 万星）以「石器时代沟通法」削减 65% token 消耗，成为开发者社区的现象级吐槽产品。",
     "quote": "GitHub 本周的 AI 仓库榜就是一场『Agent 淘金热』——从偷系统 prompt 到省 token，从 Agent IDE 到安全测试，每个人都在卖铲子。",
     "source": "GitHub Trending",
     "url": "https://github.com/trending?since=weekly",
     "published": "2026-07-13",
-    "uid": "ai_0813a416"
+    "vendor": "anthropic",
+    "direction": "工具/平台"
   },
   {
+    "uid": "",
     "title": "腾讯云开源 CubeSandbox：Rust 构建的 AI Agent 安全沙箱，毫秒级启动",
     "content": "腾讯云本周在 GitHub 上开源了 CubeSandbox，一个用 Rust 编写的 AI Agent 安全沙箱，提供瞬时启动、高并发和轻量级安全隔离。该项目本周新增 2514 星。CubeSandbox 可在毫秒级创建和销毁沙箱实例，支持大规模并发执行，资源开销极低。对企业部署 AI Agent 而言，这解决了多 Agent 执行环境的安全隔离问题——不同 Agent 之间不会互相干扰，每个 Agent 的执行环境彼此隔离。这也是国内云厂商在 AI 基础设施安全层的重要布局。",
     "quote": "腾讯用 Rust 给 AI Agent 造了一个『安全笼子』——Agent 们可以在里面随便跑，不用担心把系统搞崩了。而且毫秒级启动，跑完就销毁，比传统容器方案轻了不知道多少倍。",
     "source": "GitHub / Tencent Cloud",
     "url": "https://github.com/TencentCloud/CubeSandbox",
     "published": "2026-07-13",
-    "uid": "ai_533f8ff0"
+    "vendor": "other",
+    "direction": "模型发布"
   },
   {
+    "uid": "",
     "title": "行 Lisp 实现 AI Agent 走红 HN：极简主义者的 Agent 教程",
     "content": "开发者 Jamie Beach 发布了一篇教程「An agent in 100 lines of Lisp」，展示如何用不到 100 行 Common Lisp 代码构建一个可运行的 AI Agent。该教程在 Hacker News 上获得 213 点热度和 65 条讨论，成为极简主义 Agent 实现的典范。文章展示了 Lisp 宏系统如何优雅地处理复杂状态管理和控制流，用极少的代码实现了一个能够自主决策、调用工具、记忆上下文的 Agent 系统。评论区的 Lisp 爱好者和 AI 开发者围绕「函数式 vs 面向对象实现 Agent」展开了深度技术辩论。",
     "quote": "100 行 Lisp 就搭了一个 AI Agent——这不是秀代码有多短，是 Lisp 的宏系统让 Agent 的状态管理变得优雅得像首诗。现代框架们脸红了吗？",
     "source": "Hacker News",
     "url": "https://thebeach.dev/posts/lisp-agent/",
     "published": "2026-07-13",
-    "uid": "ai_6d1d5e87"
+    "vendor": "other",
+    "direction": "工具/平台"
   },
   {
+    "uid": "",
     "title": "Hugging Face 联合 NVIDIA 发布 Data for Agents：开源模型生态进化为 Agent 操作系统",
     "content": "Hugging Face 博客发布与 NVIDIA 合作的文章「Data for Agents」，探讨如何为 AI Agent 构建数据策略。同期 Hugging Face 还密集发布了一系列更新：原生 vLLM transformers 建模后端、一键部署到 Amazon SageMaker、与微软 Foundry 托管计算集成、与 SkyPilot 的零出站存储（任意云运行，存储端在 HF）。LeRobot v0.6.0 加入「想象、评估、改进」循环。这一周内 HF 从模型市场向 Agent 操作系统转型的节奏明显加快，每周都有多项基础设施级更新。",
     "quote": "Hugging Face 这个月像开了挂——NVIDIA 合作、微软集成、原生 vLLM 后端、SkyPilot 存储，开源模型生态正在从『模型市集』进化为『Agent 操作系统』。",
     "source": "Hugging Face Blog",
     "url": "https://huggingface.co/blog/nvidia/open-data-for-agents",
     "published": "2026-07-13",
-    "uid": "ai_b5373004"
+    "vendor": "amazon",
+    "direction": "模型发布"
   },
   {
+    "uid": "",
     "title": "Anthropic 称 80% 新生产代码由 Claude 编写，企业如何跟上",
     "content": "Anthropic 在最新报告中披露，其 80% 的新生产代码现在由 Claude AI 编写。这一比例在 AI 公司中极为惊人，反映了 AI 辅助编程已从实验性工具转变为主要开发方式。Anthropic 分享了企业级最佳实践：如何将 AI 编码集成到现有工作流、如何确保代码质量审核以及如何培训团队适应 AI 协作开发模式。报告还指出，完全由 AI 自主完成的软件任务时长大约每 4 个月翻一番。",
     "quote": "Anthropic 自己先吃自己的狗食——80% 代码给 AI 写，剩下的 20% 大概是 debug。",
     "source": "VentureBeat",
     "url": "https://venturebeat.com/technology/anthropic-says-80-of-its-new-production-code-is-now-authored-by-claude-how-your-enterprise-can-keep-up",
     "published": "2026-07-13",
-    "uid": "ai_16906b50"
+    "vendor": "anthropic",
+    "direction": "应用/落地"
   },
   {
+    "uid": "",
     "title": "纽约州通过法案：禁止 AI 聊天机器人以人类同伴身份与青少年互动",
     "content": "纽约州议会通过了一项具有里程碑意义的法案，将禁止 AI 公司让青少年使用的聊天机器人暗示自己是人类。如果得到州长 Kathy Hochul 签署，该法案将是美国首个针对 AI 陪伴式聊天机器人的限制性立法。此前多家 AI 公司因聊天机器人诱导青少年自残或自杀而面临诉讼（部分已和解）。法案背后是家长和心理健康倡导者对生成式 AI 社交风险的持续担忧。",
     "quote": "AI 聊骚犯了众怒——纽约率先动手，以后聊天机器人再装人就是违法。",
     "source": "The Verge",
     "url": "https://www.theverge.com/news/861051/new-york-ai-chatbot-companion-kids-ban-bill",
     "published": "2026-07-13",
-    "uid": "ai_a06fc078"
+    "vendor": "other",
+    "direction": "政策/合规"
   },
   {
+    "uid": "",
     "title": "Sam Altman 向特朗普政府提议：让美国政府入股 OpenAI",
     "content": "据报道，OpenAI CEO Sam Altman 与特朗普政府讨论了美国政府入股 OpenAI 的可能性。Altman 将此方案包装为让公众从 AI 的经济收益中分享红利的方式。他最早在去年初就向特朗普总统直接提出了这一想法。这一提议若实现，将开创美国政府持股领先 AI 公司的先例，引发关于 AI 治理、国家利益和商业独立性的广泛讨论。",
     "quote": "Altman 请 Uncle Sam 来当股东——政府入股 OpenAI，这算不算国家资本主义的新版本？",
     "source": "NOTUS / The Verge",
     "url": "https://www.theverge.com/ai-artificial-intelligence/927105/sam-altman-trump-administration-openai-stake",
     "published": "2026-07-13",
-    "uid": "ai_bf483201"
+    "vendor": "openai",
+    "direction": "行业动态"
   },
   {
+    "uid": "",
     "title": "Google 测试悬浮桌面 AI 搜索栏：Ctrl+Shift+Space 呼出 AI Mode",
     "content": "Google 正在 Chrome Canary 中测试一个悬浮桌面 AI 搜索栏，使用 Ctrl+Shift+Space 快捷键可呼出一个独立窗口，以 AI Mode 为核心体验。该搜索栏以一个独立窗口形式居中显示，集成了 Google 最新的 AI Mode 搜索能力，支持多模态输入和对话式交互。这是 Google 将 AI 搜索从浏览器地址栏扩展到独立桌面工具的重要尝试。",
     "quote": "Google 说：别在地址栏敲关键词了，按三个键唤出 AI 帮你聊出结果。",
     "source": "Windows Report / The Verge",
     "url": "https://windowsreport.com/chrome-tests-a-floating-ai-mode-search-bar-for-desktop/",
     "published": "2026-07-13",
-    "uid": "ai_de65a6f3"
+    "vendor": "google",
+    "direction": "工具/平台"
   },
   {
+    "uid": "",
     "title": "Google 发布开源 Gemma 4 12B 多模态模型：本地跑音频视频分析",
     "content": "Google 发布了开源 Gemma 4 12B 模型，这是其轻量级模型系列的最新成员，支持音频、视频和文本的多模态分析，且完全可在典型的 16GB 企业笔记本上本地运行。该模型采用 Google 最新量化技术，在保持强大性能的同时大幅降低了硬件需求。开发者可将其部署在本地进行视频内容理解、音频转录和分析等任务，无需调用云端 API。",
     "quote": "Google 把多模态 AI 塞进了 16GB 内存的笔记本——云厂商看了都沉默。",
     "source": "VentureBeat / Google AI",
     "url": "https://venturebeat.com/technology/googles-new-open-source-gemma-4-12b-analyzes-audio-video-and-runs-entirely-locally-on-a-typical-16gb-enterprise-laptop",
     "published": "2026-07-13",
-    "uid": "ai_4d8e4bbd"
+    "vendor": "google",
+    "direction": "模型发布"
   },
   {
+    "uid": "",
     "title": "英格兰和威尔士警方被叫停：禁止在法庭陈述中使用 AI",
     "content": "英国金融时报报道，英格兰和威尔士的警方已被指示停止在法庭陈述中使用 AI 工具。这一决定源于对 AI 生成的证据和陈述在法律程序中的可靠性、透明度和公正性的担忧。法庭系统担心 AI 可能在证据摘要、证人陈述和案件摘要中引入偏见或错误，而法律体系尚未准备好有效审查 AI 辅助的司法材料。",
     "quote": "法庭不让 AI 写判决书了——法律圈说：AI 的证据我不认，除非你证明它没胡说。",
     "source": "Financial Times / Hacker News",
     "url": "https://www.ft.com/content/229e5949-3ebc-4151-8a86-a01b5e259241",
     "published": "2026-07-13",
-    "uid": "ai_93953f11"
+    "vendor": "other",
+    "direction": "政策/合规"
   },
   {
+    "uid": "",
     "title": "Nvidia 提案为 Windows PC 设计全新 CPU 系统",
     "content": "据 Hacker News 报道，Nvidia 正提议为 Windows PC 设计一套全新的 CPU 系统，由 @lemire 在 Twitter 上披露。该方案暗示 Nvidia 可能进一步深入 PC 处理器市场，与 Intel 和 AMD 展开更直接竞争。结合 Nvidia 在 AI 和 GPU 领域的深厚积累，这款 CPU 可能专门针对 AI 推理和本地 LLM 运行进行了优化，标志着 AI PC 从概念走向硬件重塑。",
     "quote": "Nvidia 看上了 CPU 市场——Intel 和 AMD 还没从 AI 焦虑中缓过来，新对手已经靴子落地了。",
     "source": "Hacker News",
     "url": "https://twitter.com/lemire/status/2062880075117113739",
     "published": "2026-07-13",
-    "uid": "ai_10543928"
+    "vendor": "other",
+    "direction": "研究/论文"
   },
   {
+    "uid": "",
     "title": "LinkedIn 联合创始人 Reid Hoffman 离开微软董事会，专注 AI 药物研发",
     "content": "LinkedIn 联合创始人、长期微软董事会成员 Reid Hoffman 宣布离开微软董事会。在他的 Possible 播客中与微软 CEO Satya Nadella 对话时，Hoffman 表示希望更专注于去年联合创立的 AI 药物研发创业公司 Manas。Manas 致力于利用 AI 加速药物发现过程，Hoffman 认为 AI 在生物医药领域的影响力将超越其在数字领域的应用。",
     "quote": "Hoffman 从微软董事会辞职去搞 AI 制药——在他看来，做药比做系统更能改变世界。",
     "source": "The Verge",
     "url": "https://www.theverge.com/ai-artificial-intelligence/927098/reid-hoffman-leaving-microsoft-board-manas-ai-drug-development",
     "published": "2026-07-13",
-    "uid": "ai_888a39fc"
+    "vendor": "other",
+    "direction": "应用/落地"
   },
   {
+    "uid": "",
     "title": "open-notebook 爆火：开源版 NotebookLM 今日收获 783 星标",
     "content": "GitHub 今日热门项目 open-notebook 是一款 NotebookLM 的开源替代品，具备更强的灵活性和更多功能。该项目用 TypeScript 实现，目前已获 26,482 星标，仅今日就新增 783 颗星标。它提供笔记管理、文档检索、AI 问答等功能，用户可以完全自托管，不受 Google 平台限制。开源社区对该项目的热情反映了市场对 AI 增强型知识管理工具的强烈需求。",
     "quote": "NotebookLM 太好用了以至于大家想要一个没人能关掉的开源版——783 星一天，需求说明一切。",
     "source": "GitHub",
     "url": "https://github.com/lfnovo/open-notebook",
     "published": "2026-07-13",
-    "uid": "ai_7b8f6a67"
+    "vendor": "google",
+    "direction": "工具/平台"
   },
   {
+    "uid": "",
     "title": "阿里通义千问 Qwen3 7 Plus 发布：支持文本/视频/图像多模态，定价仅 $0.4/百万 token",
     "content": "阿里巴巴发布了 Qwen3 7 Plus 多模态模型，支持文本、视频和图像输入，定价极低——输入 $0.4/百万 token，输出 $1.6/百万 token。与此前开源的 Qwen 系列不同，该模型是专有的闭源模型，但 API 价格极具竞争力。在标准基准测试中，Qwen3 7 Plus 在视频理解和图像分析任务上展现出与更大规模模型相当的能力，是中国 AI 公司在多模态赛道上的最新弹药。",
     "quote": "阿里搞了个闭源的 Qwen——多模态能力不输开源版，但价格低到让对手难受。",
     "source": "VentureBeat",
     "url": "https://venturebeat.com/technology/alibabas-qwen3-7-plus-supports-text-video-and-imagery-inputs-at-low-cost-of-0-4-1-6-per-1m-token-but-its-proprietary",
     "published": "2026-07-13",
-    "uid": "ai_affc1fea"
+    "vendor": "alibaba",
+    "direction": "模型发布"
   }
 ]
