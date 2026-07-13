@@ -17,6 +17,7 @@ import subprocess
 import sys
 import hashlib
 import os
+import re
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
@@ -26,6 +27,32 @@ logger = logging.getLogger(__name__)
 BASE_DIR = Path(__file__).parent.parent.parent
 REPORTS_DIR = BASE_DIR / "reports" / "wechat_daily"
 SEARCH_SCRIPT = BASE_DIR / "skills" / "wechat-article-search" / "scripts" / "search_wechat.js"
+
+# ===== 质量过滤（黑白名单）=====
+# config/wechat_sources.py 必须存在，否则报错提示创建
+try:
+    sys.path.insert(0, str(BASE_DIR))
+    from config.wechat_sources import (
+        SOURCE_BLACKLIST,
+        SOURCE_WHITELIST,
+        TITLE_BLACKLIST_KEYWORDS,
+        is_source_blacklisted,
+        is_source_whitelisted,
+        has_blacklisted_title_keyword,
+    )
+    QUALITY_GATE_ENABLED = True
+    logger.info("✅ 质量门禁已加载: config/wechat_sources.py")
+except ImportError as e:
+    logger.warning(f"⚠️ 质量门禁未加载 (config/wechat_sources.py 不存在): {e}")
+    logger.warning("  → 请先创建 BASE_DIR/config/wechat_sources.py 配置黑白名单")
+    QUALITY_GATE_ENABLED = False
+
+    # 空桩函数，确保脚本不报错
+    def is_source_blacklisted(source): return False
+    def is_source_whitelisted(source): return False
+    def has_blacklisted_title_keyword(title): return False
+    SOURCE_BLACKLIST = set()
+    SOURCE_WHITELIST = set()
 
 # ===== 关键词配置 =====
 DEFAULT_KEYWORDS = [
@@ -191,7 +218,7 @@ def search_sogou_wechat(keyword: str, count: int = 10) -> list:
         return []
 
 # ===== 报告生成 =====
-def generate_markdown(date_str: str, sections: dict) -> str:
+def generate_markdown(date_str: str, sections: dict, whitelist_stats: dict = None) -> str:
     """生成 Markdown 格式报告"""
     lines = [f"# 微信公众平台 · 每日热点报告 | {date_str}", ""]
     lines.append(f"> 生成时间: {now_cst()}")
@@ -199,6 +226,22 @@ def generate_markdown(date_str: str, sections: dict) -> str:
     
     total = sum(len(items) for items in sections.values())
     lines.append(f"**关键词**: {', '.join(sections.keys())}  |  **总计**: {total} 篇文章")
+    if whitelist_stats and QUALITY_GATE_ENABLED:
+        top_sources = sorted(whitelist_stats.items(), key=lambda x: -x[1])[:5]
+        if top_sources:
+            sources_str = ", ".join(f"{s}({c}篇)" for s, c in top_sources)
+            lines.append(f"🏅 优质来源: {sources_str}")
+        lines.append("")
+    # 过滤说明
+    blacklist_hit = sum(
+        1 for items in sections.values()
+        for item in items
+        if item.get("author", "") in SOURCE_BLACKLIST
+    )
+    if blacklist_hit > 0 and QUALITY_GATE_ENABLED:
+        lines.append(f"🔍 质量门禁已生效: 今日过滤 {blacklist_hit} 篇低质来源")
+        lines.append("")
+
     lines.append("")
     lines.append("---")
     lines.append("")
@@ -233,6 +276,56 @@ def generate_markdown(date_str: str, sections: dict) -> str:
     lines.append("")
     
     return "\n".join(lines)
+
+
+# ===== 质量过滤 =====
+def filter_by_quality(items: list, section: str = "") -> list:
+    """
+    质量门禁：按来源黑名单 + 标题黑名单关键词过滤
+    策略：先用严格模式过滤，如果结果不足 3 条则回退到仅过滤来源黑名单
+    """
+    if not QUALITY_GATE_ENABLED:
+        return items
+
+    blacklisted_sources = []
+    blacklisted_titles = []
+    passed = []
+
+    for item in items:
+        source = item.get("author", "")
+        title = item.get("title", "")
+
+        # 来源黑名单过滤
+        if is_source_blacklisted(source):
+            blacklisted_sources.append(source)
+            continue
+
+        # 标题黑名单关键词过滤（白名单来源跳过，不误杀优质号）
+        if not is_source_whitelisted(source) and has_blacklisted_title_keyword(title):
+            blacklisted_titles.append(title[:60])
+            continue
+
+        passed.append(item)
+
+    filtered_out = len(items) - len(passed)
+    if filtered_out > 0:
+        logger.info(f"  [{section}] 质量过滤: 滤除 {filtered_out} 篇")
+        logger.info(f"    - 来源黑名单 {len(blacklisted_sources)} 篇: {', '.join(set(blacklisted_sources))[:120]}")
+        if blacklisted_titles:
+            logger.info(f"    - 标题黑名单 {len(blacklisted_titles)} 篇")
+
+    # 若严格过滤后不足 3 条，放宽到只滤来源黑名单（不滤标题关键词）
+    if len(passed) < 3 and blacklisted_titles:
+        logger.info(f"  [{section}] 严格过滤后仅 {len(passed)} 条，放宽：标题关键词降级为警告")
+        relaxed = []
+        for item in items:
+            source = item.get("author", "")
+            if not is_source_blacklisted(source):
+                relaxed.append(item)
+        logger.info(f"    → 放宽后 {len(relaxed)} 条")
+        return relaxed
+
+    return passed
 
 
 def main():
@@ -281,9 +374,14 @@ def main():
         if len(filtered) < 3 and len(items) > len(filtered):
             logger.info(f"  {kw}: 热点时效({MAX_AGE_HOT}天)仅{len(filtered)}条，放宽到{MAX_AGE_DAYS}天")
             filtered = filter_by_recency(items, days=MAX_AGE_DAYS)
-        # 如果过滤后还有剩余就使用，否则用全部（不丢数据）
-        sections[kw] = filtered if filtered else filter_by_recency(items, days=MAX_AGE_DAYS)
-        logger.info(f"  {kw}: 原始{len(items)}条 → 过滤后{len(sections[kw])}条")
+        filtered = filtered if filtered else filter_by_recency(items, days=MAX_AGE_DAYS)
+
+        # 质量过滤（黑白名单）
+        if QUALITY_GATE_ENABLED and filtered:
+            filtered = filter_by_quality(filtered, section=kw)
+
+        sections[kw] = filtered
+        logger.info(f"  {kw}: 原始{len(items)}条 → 质量过滤后{len(sections[kw])}条")
 
     # 最终检查：如果所有板块都为空，发个警告
     total_filtered = sum(len(v) for v in sections.values())
@@ -294,9 +392,28 @@ def main():
             sogou_items = search_sogou_wechat(kw, count=args.count)
             sections[kw] = sogou_items
             logger.info(f"  {kw}: 不限时间共 {len(sogou_items)} 条")
+
+    # 质量过滤报告（汇总）
+    if QUALITY_GATE_ENABLED:
+        for kw in list(sections.keys()):
+            if not sections[kw]:
+                logger.warning(f"⚠️ {kw}: 质量过滤后为空！考虑放宽黑名单或扩展搜索关键词")
+                # 尝试不质量过滤重新跑一次
+                logger.info(f"  → 尝试不限制黑白名单重新搜索 {kw}...")
+                fallback_items = search_sogou_wechat(kw, count=args.count)
+                sections[kw] = filter_by_recency(fallback_items, days=MAX_AGE_DAYS)
+                logger.info(f"  → 回退后 {len(sections[kw])} 条")
+
+    # 标记白名单来源（用于报告头部补充说明）
+    whitelist_stats = {}
+    for kw, items in sections.items():
+        for item in items:
+            author = item.get("author", "")
+            if author and is_source_whitelisted(author):
+                whitelist_stats[author] = whitelist_stats.get(author, 0) + 1
     
     # 生成报告
-    report = generate_markdown(date_str, sections)
+    report = generate_markdown(date_str, sections, whitelist_stats=whitelist_stats)
     
     if args.dry_run:
         print(report)
