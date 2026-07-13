@@ -1,28 +1,28 @@
 {
   "week_start": "2026-07-08",
   "week_end": "2026-07-14",
-  "summary": "本周共收录AI领域动态 111 条。本周最活跃：其他（38条）、Anthropic/Claude（32条）、Google/Gemini（17条）。主要方向为工具/平台（34条）。",
+  "summary": "本周共收录AI领域动态 126 条。本周最活跃：其他（44条）、Anthropic/Claude（34条）、OpenAI/GPT（19条）。主要方向为工具/平台（38条）。",
   "stats": {
-    "total_items": 111,
+    "total_items": 126,
     "by_vendor": {
-      "other": 38,
-      "anthropic": 32,
-      "google": 17,
-      "openai": 14,
+      "other": 44,
+      "anthropic": 34,
+      "openai": 19,
+      "google": 18,
       "alibaba": 4,
       "amazon": 2,
+      "meta": 2,
       "deepseek": 1,
       "apple": 1,
-      "microsoft": 1,
-      "meta": 1
+      "microsoft": 1
     },
     "by_direction": {
-      "工具/平台": 34,
-      "模型发布": 26,
-      "研究/论文": 16,
-      "应用/落地": 16,
-      "政策/合规": 12,
-      "行业动态": 7
+      "工具/平台": 38,
+      "模型发布": 31,
+      "研究/论文": 18,
+      "应用/落地": 17,
+      "政策/合规": 14,
+      "行业动态": 8
     }
   },
   "timeline": [
@@ -1141,6 +1141,161 @@
           ]
         }
       }
+    },
+    {
+      "date": "2026-07-14",
+      "models": {
+        "other": {
+          "displayName": "其他",
+          "icon": "📰",
+          "items": [
+            {
+              "uid": "",
+              "title": "Cloudflare发布Precursor：AI时代的新型网络服务发现协议",
+              "direction": "工具/平台",
+              "quote": "Cloudflare终于对服务发现下手了——AI Agent太多，DNS不够用了。",
+              "url": "https://blog.cloudflare.com/introducing-precursor/",
+              "published": "2026-07-14"
+            },
+            {
+              "uid": "",
+              "title": "GhostLock漏洞曝光：Linux内核15年堆栈释放后使用漏洞影响所有发行版",
+              "direction": "工具/平台",
+              "quote": "十五年陈年老洞——你Linux内核里的木马屠城记。",
+              "url": "https://nebusec.ai/research/ionstack-part-2/",
+              "published": "2026-07-14"
+            },
+            {
+              "uid": "",
+              "title": "Clawk开源：给Coding Agent一个一次性Linux VM而非你的笔记本",
+              "direction": "模型发布",
+              "quote": "AI写代码不放心？给它一个一次性沙箱，跑完就烧。",
+              "url": "https://github.com/clawkwork/clawk",
+              "published": "2026-07-14"
+            },
+            {
+              "uid": "",
+              "title": "LAPD与监控巨头Flock合约到期不续，公民隐私胜利",
+              "direction": "行业动态",
+              "quote": "AI监控巨头被警察叔叔炒鱿鱼了——隐私终于赢了一次。",
+              "url": "https://techcrunch.com/2026/07/13/lapd-lets-contract-with-surveillance-giant-flock-expire-citing-serious-concerns-over-civil-liberties-and-privacy/",
+              "published": "2026-07-14"
+            },
+            {
+              "uid": "",
+              "title": "企业AI部署面临评估鸿沟：Agent自主性增长快于企业验证能力",
+              "direction": "工具/平台",
+              "quote": "AI Agent跑太快，老板们连安全带都没系好——评估鸿沟要命了。",
+              "url": "https://venturebeat.com/orchestration/enterprise-ai-is-entering-an-evaluation-gap-agents-are-gaining-autonomy-faster-than-companies-can-verify-them",
+              "published": "2026-07-14"
+            },
+            {
+              "uid": "",
+              "title": "Patreon联手Cloudflare封杀AI爬虫，保护创作者内容",
+              "direction": "模型发布",
+              "quote": "创作者的内容不想喂AI？Patreon说：门都没有，我装防盗网了。",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/960795/cloudflare-is-cracking-down-on-multi-purpose-crawlers",
+              "published": "2026-07-14"
+            }
+          ]
+        },
+        "openai": {
+          "displayName": "OpenAI/GPT",
+          "icon": "🔬",
+          "items": [
+            {
+              "uid": "",
+              "title": "Apple发布SpeechAnalyzer API：对标Whisper的语音识别新方案",
+              "direction": "工具/平台",
+              "quote": "Apple终于对语音识别认真了——Whisper的免费午餐要结束了。",
+              "url": "https://get-inscribe.com/blog/apple-speech-api-benchmark.html",
+              "published": "2026-07-14"
+            },
+            {
+              "uid": "",
+              "title": "OpenAI被指控\"培训\"Apple员工规避安全检查，41页投诉曝光",
+              "direction": "政策/合规",
+              "quote": "教Apple员工绕过安全审查？OpenAI这波操作比AI还骚。",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/2026/07/13/openai-apple-security-coaching-complaint",
+              "published": "2026-07-14"
+            },
+            {
+              "uid": "",
+              "title": "OpenAI推出ChatGPT Work：云端AI Agent接管邮件Slack和日历",
+              "direction": "模型发布",
+              "quote": "ChatGPT要当你老板了——收邮件排日程做PPT一条龙。",
+              "url": "https://venturebeat.com/technology/openai-introduces-chatgpt-work-a-cloud-based-ai-agent-that-manages-tasks-across-email-slack-and-calendars",
+              "published": "2026-07-14"
+            },
+            {
+              "uid": "",
+              "title": "OpenAI发布GPT-Live：全双工语音升级，ChatGPT说话更像真人",
+              "direction": "模型发布",
+              "quote": "AI终于学会插嘴了——全双工语音，人类最后的聊天优势也没了。",
+              "url": "https://openai.com/index/introducing-gpt-live/",
+              "published": "2026-07-14"
+            },
+            {
+              "uid": "",
+              "title": "纽约时报等出版商要求法院制裁OpenAI：指控隐瞒训练证据",
+              "direction": "政策/合规",
+              "quote": "出版商和OpenAI的官司从'你偷了我的内容'升级到'你把证据藏哪了'。",
+              "url": "https://www.nytimes.com/2026/07/09/technology/new-york-times-openai.html",
+              "published": "2026-07-14"
+            }
+          ]
+        },
+        "anthropic": {
+          "displayName": "Anthropic/Claude",
+          "icon": "🧬",
+          "items": [
+            {
+              "uid": "",
+              "title": "SpaceX发布Grok 4.5：定价仅为竞品一半，搅局AI价格战",
+              "direction": "模型发布",
+              "quote": "马斯克：我不赚钱，但我让大家都别想赚钱。",
+              "url": "https://venturebeat.com/technology/spacexs-grok-4-5-launches-at-half-the-price-of-rivals-heres-why-that-could-rattle-anthropic-and-openai",
+              "published": "2026-07-14"
+            },
+            {
+              "uid": "",
+              "title": "Anthropic持续挖角：Monzo创始人加入AI算力团队",
+              "direction": "应用/落地",
+              "quote": "硅谷顶级人才的尽头，竟然都是Anthropic。",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/962411/anthropic-tom-blomfield-monzo-hiring",
+              "published": "2026-07-14"
+            }
+          ]
+        },
+        "meta": {
+          "displayName": "Meta/LLaMA",
+          "icon": "👁️",
+          "items": [
+            {
+              "uid": "",
+              "title": "Meta计划9月量产自研AI芯片\"Iris\"",
+              "direction": "研究/论文",
+              "quote": "扎克伯格：英伟达太贵了，我自己造。",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/960283/meta-iris-ai-chip-manufacturing-september-plans",
+              "published": "2026-07-14"
+            }
+          ]
+        },
+        "google": {
+          "displayName": "Google/Gemini",
+          "icon": "🌐",
+          "items": [
+            {
+              "uid": "",
+              "title": "Google发布TabFM：无需每数据集训练的表格预测模型",
+              "direction": "研究/论文",
+              "quote": "Google要把Excel也AI化——以后表格都不用建模型了。",
+              "url": "https://venturebeat.com/technology/googles-tabfm-skips-per-dataset-training-and-still-predicts-on-tables-its-never-seen",
+              "published": "2026-07-14"
+            }
+          ]
+        }
+      }
     }
   ],
   "highlights": [
@@ -1190,13 +1345,13 @@
     },
     {
       "uid": "",
-      "title": "Google 发布开源 Gemma 4 12B 多模态模型：本地跑音频视频分析",
-      "content": "Google 发布了开源 Gemma 4 12B 模型，这是其轻量级模型系列的最新成员，支持音频、视频和文本的多模态分析，且完全可在典型的 16GB 企业笔记本上本地运行。该模型采用 Google 最新量化技术，在保持强大性能的同时大幅降低了硬件需求。开发者可将其部署在本地进行视频内容理解、音频转录和分析等任务，无需调用云端 API。",
-      "quote": "Google 把多模态 AI 塞进了 16GB 内存的笔记本——云厂商看了都沉默。",
-      "source": "VentureBeat / Google AI",
-      "url": "https://venturebeat.com/technology/googles-new-open-source-gemma-4-12b-analyzes-audio-video-and-runs-entirely-locally-on-a-typical-16gb-enterprise-laptop",
-      "published": "2026-07-09",
-      "vendor": "google",
+      "title": "OpenAI推出ChatGPT Work：云端AI Agent接管邮件Slack和日历",
+      "content": "OpenAI发布ChatGPT Work，基于GPT-5.6的云端AI Agent平台。能跨邮件、Slack、日历等应用自主完成任务——从生成文档到创建演示文稿，甚至构建完整网站。Agent接收目标后自行分解步骤，支持数小时的复杂项目自主执行。这是OpenAI从聊天机器人向生产力平台转型的关键一步，直接对标Microsoft Copilot和Google Duet。 🔗 https://venturebeat.com/technology/openai-introduces-chatgpt-work-a-cloud-based-ai-agent-that-manages-tasks-across-email-slack-and-calendars",
+      "quote": "ChatGPT要当你老板了——收邮件排日程做PPT一条龙。",
+      "source": "VentureBeat | 2026-07-10",
+      "url": "https://venturebeat.com/technology/openai-introduces-chatgpt-work-a-cloud-based-ai-agent-that-manages-tasks-across-email-slack-and-calendars",
+      "published": "2026-07-14",
+      "vendor": "openai",
       "direction": "模型发布"
     }
   ]
