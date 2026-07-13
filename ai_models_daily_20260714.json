@@ -1,67 +1,96 @@
 {
   "date": "2026-07-14",
-  "total": 15,
+  "total": 20,
   "vendors": [
+    "google",
     "openai",
     "anthropic",
+    "apple",
+    "xai",
     "meta",
-    "google",
+    "alibaba",
     "other"
   ],
   "models": {
+    "google": {
+      "displayName": "Google/Gemini",
+      "icon": "🌐",
+      "items": [
+        {
+          "uid": "",
+          "title": "Google's TabFM skips per-dataset training — zero-shot foundation model for tabular data",
+          "content": "Google Research 推出 TabFM，一个不需要逐数据集训练的表格基础模型。传统 ML 需要特征工程、超参调优、数据漂移监控等管道，TabFM 通过上下文学习在一个前向传播中预测新表格。解决了 LLM 处理结构化数据的缺陷（token 效率低、精度丢失、结构盲区）。企业可将数周流水线工作缩减为一次 API 调用。",
+          "quote": "数据科学家的饭碗又碎了一小块，不过 XGBoost 还能再苟一阵。",
+          "source": "VentureBeat",
+          "url": "https://venturebeat.com/technology/googles-tabfm-skips-per-dataset-training-and-still-predicts-on-tables-its-never-seen/",
+          "published": "2026-07-13",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_983891f5",
+          "title": "Google 测试悬浮桌面 AI 搜索栏：Ctrl+Shift+Space 呼出 AI Mode",
+          "content": "Google 正在 Chrome Canary 中测试一个悬浮桌面 AI 搜索栏，使用 Ctrl+Shift+Space 快捷键可呼出一个独立窗口，以 AI Mode 为核心体验。该搜索栏以一个独立窗口形式居中显示，集成了 Google 最新的 AI Mode 搜索能力，支持多模态输入和对话式交互。这是 Google 将 AI 搜索从浏览器地址栏扩展到独立桌面工具的重要尝试。",
+          "quote": "Google 说：别在地址栏敲关键词了，按三个键唤出 AI 帮你聊出结果。",
+          "source": "Windows Report / The Verge",
+          "url": "https://windowsreport.com/chrome-tests-a-floating-ai-mode-search-bar-for-desktop/",
+          "published": "2026-06-05",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_1e17c907",
+          "title": "Google 发布开源 Gemma 4 12B 多模态模型：本地跑音频视频分析",
+          "content": "Google 发布了开源 Gemma 4 12B 模型，这是其轻量级模型系列的最新成员，支持音频、视频和文本的多模态分析，且完全可在典型的 16GB 企业笔记本上本地运行。该模型采用 Google 最新量化技术，在保持强大性能的同时大幅降低了硬件需求。开发者可将其部署在本地进行视频内容理解、音频转录和分析等任务，无需调用云端 API。",
+          "quote": "Google 把多模态 AI 塞进了 16GB 内存的笔记本——云厂商看了都沉默。",
+          "source": "VentureBeat / Google AI",
+          "url": "https://venturebeat.com/technology/googles-new-open-source-gemma-4-12b-analyzes-audio-video-and-runs-entirely-locally-on-a-typical-16gb-enterprise-laptop",
+          "published": "2026-06-05",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_9593b5a9",
+          "title": "open-notebook 爆火：开源版 NotebookLM 今日收获 783 星标",
+          "content": "GitHub 今日热门项目 open-notebook 是一款 NotebookLM 的开源替代品，具备更强的灵活性和更多功能。该项目用 TypeScript 实现，目前已获 26,482 星标，仅今日就新增 783 颗星标。它提供笔记管理、文档检索、AI 问答等功能，用户可以完全自托管，不受 Google 平台限制。开源社区对该项目的热情反映了市场对 AI 增强型知识管理工具的强烈需求。",
+          "quote": "NotebookLM 太好用了以至于大家想要一个没人能关掉的开源版——783 星一天，需求说明一切。",
+          "source": "GitHub",
+          "url": "https://github.com/lfnovo/open-notebook",
+          "published": "2026-06-06",
+          "direction": "工具/平台"
+        }
+      ]
+    },
     "openai": {
       "displayName": "OpenAI/GPT",
       "icon": "🔬",
       "items": [
         {
           "uid": "",
-          "title": "Apple发布SpeechAnalyzer API：对标Whisper的语音识别新方案",
-          "content": "Apple推出SpeechAnalyzer API，开发者可直接在Apple生态中调用高性能语音识别功能。第三方基准测试显示，SpeechAnalyzer在精准度和延迟上全面超越OpenAI Whisper及其前代方案，尤其在中英文混杂场景表现突出。该API支持实时流式转录和说话人分离，初始免费额度慷慨，被视为Apple在AI语音赛道的重要布局。 🔗 https://get-inscribe.com/blog/apple-speech-api-benchmark.html",
-          "quote": "Apple终于对语音识别认真了——Whisper的免费午餐要结束了。",
-          "source": "Inscribe Blog / HN | 2026-07-13",
-          "url": "https://get-inscribe.com/blog/apple-speech-api-benchmark.html",
-          "published": "2026-07-14",
+          "title": "OpenAI introduces ChatGPT Work — cloud-based AI agent that manages tasks across email, Slack and calendars",
+          "content": "OpenAI 发布 ChatGPT Work，基于 GPT-5.6 的云端持久化 AI 代理，能在用户的邮箱、日历、Slack 和代码仓库中执行多步骤复杂任务。核心架构是一个常驻云端的虚拟机，手机也能用。Plus 用户全开放，Pro/Enterprise 先行。配合即将到来的 IPO（估值 $730B-$852B），OpenAI 试图从聊天机器人转型为工作平台。",
+          "quote": "ChatGPT 终于不只是聊天了，但你的工作也得准备好被 AI 接管。",
+          "source": "VentureBeat",
+          "url": "https://venturebeat.com/technology/openai-introduces-chatgpt-work-a-cloud-based-ai-agent-that-manages-tasks-across-email-slack-and-calendars/",
+          "published": "2026-07-10",
           "direction": "工具/平台"
         },
         {
           "uid": "",
-          "title": "OpenAI被指控\"培训\"Apple员工规避安全检查，41页投诉曝光",
-          "content": "一份41页的投诉文件详细指控OpenAI如何\"指导\"Apple员工在合作中规避安全审查，包括在面试中要求\"展示和讲述\"敏感信息。投诉还称OpenAI利用与Apple的合作关系获取了不当竞争优势。此案可能影响两大科技巨头的AI合作模式，以及科技公司间AI合作的合规边界。The Verge报道后引发广泛关注。 🔗 https://www.theverge.com/ai-artificial-intelligence/2026/07/13/openai-apple-security-coaching-complaint",
-          "quote": "教Apple员工绕过安全审查？OpenAI这波操作比AI还骚。",
-          "source": "The Verge | 2026-07-13",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/2026/07/13/openai-apple-security-coaching-complaint",
-          "published": "2026-07-14",
-          "direction": "政策/合规"
-        },
-        {
-          "uid": "",
-          "title": "OpenAI推出ChatGPT Work：云端AI Agent接管邮件Slack和日历",
-          "content": "OpenAI发布ChatGPT Work，基于GPT-5.6的云端AI Agent平台。能跨邮件、Slack、日历等应用自主完成任务——从生成文档到创建演示文稿，甚至构建完整网站。Agent接收目标后自行分解步骤，支持数小时的复杂项目自主执行。这是OpenAI从聊天机器人向生产力平台转型的关键一步，直接对标Microsoft Copilot和Google Duet。 🔗 https://venturebeat.com/technology/openai-introduces-chatgpt-work-a-cloud-based-ai-agent-that-manages-tasks-across-email-slack-and-calendars",
-          "quote": "ChatGPT要当你老板了——收邮件排日程做PPT一条龙。",
-          "source": "VentureBeat | 2026-07-10",
-          "url": "https://venturebeat.com/technology/openai-introduces-chatgpt-work-a-cloud-based-ai-agent-that-manages-tasks-across-email-slack-and-calendars",
-          "published": "2026-07-14",
+          "title": "OpenAI launches GPT-Live — full-duplex voice upgrade that lets ChatGPT talk more like a person",
+          "content": "OpenAI 推出 GPT-Live 系列语音模型（GPT-Live-1 和 mini），实现真正全双工对话：模型可以一边听一边说，不再等用户说完才回应，能插入「嗯哼」「明白」等自然反馈，支持打断和并行思考。语音层与推理层解耦，复杂任务委托给 GPT-5.5 后台异步处理。免费用户也有 mini 版。",
+          "quote": "打电话式 AI 终于来了，但别指望它真的会接你话茬。",
+          "source": "VentureBeat",
+          "url": "https://venturebeat.com/technology/openai-launches-gpt-live-a-full-duplex-voice-upgrade-that-lets-chatgpt-talk-more-like-a-person/",
+          "published": "2026-07-08",
           "direction": "模型发布"
         },
         {
-          "uid": "",
-          "title": "OpenAI发布GPT-Live：全双工语音升级，ChatGPT说话更像真人",
-          "content": "OpenAI推出GPT-Live-1和GPT-Live-1 mini两款全双工语音模型，实现真正的实时对话——不再是你一句我一句的回合制，而是像真人聊天一样可以打断、插话、同时说话。付费用户默认升级GPT-Live-1，免费用户使用mini版本。API版本也将开放，开发者可构建语音交互应用。这标志着AI语音交互从\"对讲机模式\"迈入\"电话模式\"。 🔗 https://openai.com/index/introducing-gpt-live/",
-          "quote": "AI终于学会插嘴了——全双工语音，人类最后的聊天优势也没了。",
-          "source": "OpenAI / VentureBeat | 2026-07-08",
-          "url": "https://openai.com/index/introducing-gpt-live/",
-          "published": "2026-07-14",
-          "direction": "模型发布"
-        },
-        {
-          "uid": "",
-          "title": "纽约时报等出版商要求法院制裁OpenAI：指控隐瞒训练证据",
-          "content": "《纽约时报》及其他出版商在法庭文件中指控OpenAI在版权诉讼中隐瞒了关于\"公司AI系统如何训练和使用\"的关键信息，要求法院对OpenAI实施法律制裁。出版商认为OpenAI的证据提交\"不完整且具有选择性\"。OpenAI回应称已配合调查。这起2024年发起的版权案结果可能决定整个AI行业对受版权内容的使用边界。 🔗 https://www.nytimes.com/2026/07/09/technology/new-york-times-openai.html",
-          "quote": "出版商和OpenAI的官司从'你偷了我的内容'升级到'你把证据藏哪了'。",
-          "source": "The Verge / NYT | 2026-07-09",
-          "url": "https://www.nytimes.com/2026/07/09/technology/new-york-times-openai.html",
-          "published": "2026-07-14",
-          "direction": "政策/合规"
+          "uid": "ai_8a6bbcdc",
+          "title": "Sam Altman 向特朗普政府提议：让美国政府入股 OpenAI",
+          "content": "据报道，OpenAI CEO Sam Altman 与特朗普政府讨论了美国政府入股 OpenAI 的可能性。Altman 将此方案包装为让公众从 AI 的经济收益中分享红利的方式。他最早在去年初就向特朗普总统直接提出了这一想法。这一提议若实现，将开创美国政府持股领先 AI 公司的先例，引发关于 AI 治理、国家利益和商业独立性的广泛讨论。",
+          "quote": "Altman 请 Uncle Sam 来当股东——政府入股 OpenAI，这算不算国家资本主义的新版本？",
+          "source": "NOTUS / The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/927105/sam-altman-trump-administration-openai-stake",
+          "published": "2026-06-05",
+          "direction": "行业动态"
         }
       ]
     },
@@ -71,23 +100,65 @@
       "items": [
         {
           "uid": "",
-          "title": "SpaceX发布Grok 4.5：定价仅为竞品一半，搅局AI价格战",
-          "content": "SpaceX旗下xAI发布Grok 4.5，定价仅为Anthropic和OpenAI同级产品的50%，直接点燃AI模型价格战。Grok 4.5在多项基准测试中接近GPT-5.6和Claude 4 Opus水平，但API调用成本骤降。分析师认为xAI利用SpaceX的算力基础设施优势实现成本碾压，可能迫使头部玩家重新定价策略。这对中小开发者和创业公司来说是重大利好。 🔗 https://venturebeat.com/technology/spacexs-grok-4-5-launches-at-half-the-price-of-rivals-heres-why-that-could-rattle-anthropic-and-openai",
-          "quote": "马斯克：我不赚钱，但我让大家都别想赚钱。",
-          "source": "VentureBeat | 2026-07-13",
-          "url": "https://venturebeat.com/technology/spacexs-grok-4-5-launches-at-half-the-price-of-rivals-heres-why-that-could-rattle-anthropic-and-openai",
-          "published": "2026-07-14",
-          "direction": "模型发布"
+          "title": "SpaceX's Grok 4.5 launches at half the price of rivals — powered by $60B Cursor acquisition",
+          "content": "SpaceX 发布 Grok 4.5，这是首个专门为编码和自主代理训练的模型。关键卖点不是性能碾压，而是性价比：输入 $2/M tokens，输出 $6/M tokens，单任务成本比 Claude Opus 4.7 便宜 90%。背后是刚完成的 $600 亿 Cursor 收购。评测排名第四，但性价比排第一。",
+          "quote": "Musk 说别跟我比分数，跟我比性价比——这招挺狠。",
+          "source": "VentureBeat",
+          "url": "https://venturebeat.com/technology/spacexs-grok-4-5-launches-at-half-the-price-of-rivals-heres-why-that-could-rattle-anthropic-and-openai/",
+          "published": "2026-07-08",
+          "direction": "研究/论文"
         },
         {
           "uid": "",
-          "title": "Anthropic持续挖角：Monzo创始人加入AI算力团队",
-          "content": "Anthropic的人才争夺战再下一城：英国金融科技公司Monzo创始人兼前CEO Tom Blomfield宣布离开Y Combinator，加入Anthropic负责AI计算基础设施。此前OpenAI前员工Andrej Karpathy、谷歌诺贝尔奖得主John Jumper等顶尖人才均已入列。Anthropic正通过组建明星团队追赶OpenAI在算力基础设施上的领先优势。 🔗 https://www.theverge.com/ai-artificial-intelligence/962411/anthropic-tom-blomfield-monzo-hiring",
-          "quote": "硅谷顶级人才的尽头，竟然都是Anthropic。",
-          "source": "The Verge | 2026-07-12",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/962411/anthropic-tom-blomfield-monzo-hiring",
-          "published": "2026-07-14",
+          "title": "Anthropic hires Monzo founder Tom Blomfield and Nobel winner John Jumper — big AI compute team buildout",
+          "content": "Anthropic 持续大手笔招人：原 Monzo 联合创始人 Tom Blomfield 离开 Y Combinator 加入 AI 算力团队，此前已从 Google 挖来诺奖得主 John Jumper、前特斯拉 AI 负责人 Andrej Karpathy。Anthropic 正在大举扩张算力基础设施团队，为下一代模型铺路。",
+          "quote": "Anthropic 招人像集卡，诺奖得主、独角兽创始人、前特斯拉高管——就差马斯克了。",
+          "source": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/963601/anthropic-monzo-tom-blomfield-hiring-ai-compute",
+          "published": "2026-07-12",
+          "direction": "行业动态"
+        },
+        {
+          "uid": "ai_7f14948d",
+          "title": "Anthropic 称 80% 新生产代码由 Claude 编写，企业如何跟上",
+          "content": "Anthropic 在最新报告中披露，其 80% 的新生产代码现在由 Claude AI 编写。这一比例在 AI 公司中极为惊人，反映了 AI 辅助编程已从实验性工具转变为主要开发方式。Anthropic 分享了企业级最佳实践：如何将 AI 编码集成到现有工作流、如何确保代码质量审核以及如何培训团队适应 AI 协作开发模式。报告还指出，完全由 AI 自主完成的软件任务时长大约每 4 个月翻一番。",
+          "quote": "Anthropic 自己先吃自己的狗食——80% 代码给 AI 写，剩下的 20% 大概是 debug。",
+          "source": "VentureBeat",
+          "url": "https://venturebeat.com/technology/anthropic-says-80-of-its-new-production-code-is-now-authored-by-claude-how-your-enterprise-can-keep-up",
+          "published": "2026-06-05",
           "direction": "应用/落地"
+        }
+      ]
+    },
+    "apple": {
+      "displayName": "Apple",
+      "icon": "🍎",
+      "items": [
+        {
+          "uid": "",
+          "title": "Apple's new SpeechAnalyzer API beats Whisper — first real benchmark shows 2.12% WER",
+          "content": "独立评测显示 Apple 新 SpeechAnalyzer API（iOS/macOS 26）在 LibriSpeech 上字错率仅 2.12%，碾压 Whisper Small 的 3.74%，速度还快 3 倍。相比旧 API SFSpeechRecognizer（9.02% WER），精度提升近 4 倍。唯一短板：只支持 30 种语言，Whisper 更长尾。Inscribe 已将其设为默认引擎。",
+          "quote": "Apple 悄悄把语音识别卷到新高度，Whisper 在苹果生态的优势结束了。",
+          "source": "Inscribe / Hacker News",
+          "url": "https://get-inscribe.com/blog/apple-speech-api-benchmark.html",
+          "published": "2026-07-13",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "xai": {
+      "displayName": "xAI/Grok",
+      "icon": "🚀",
+      "items": [
+        {
+          "uid": "",
+          "title": "Grok CLI uploaded entire home directory to xAI servers — major AI privacy scandal on HN",
+          "content": "Grok CLI 工具被发现将用户整个 home 目录上传到 xAI 服务器，登上 Hacker News 热榜第一，获得 467 分和 242 条评论。用户 @a_green_being 在 X 上曝光后引发广泛讨论，xAI 尚未回应。这是继多家 AI 公司数据隐私争议之后又一起严重事故。",
+          "quote": "用 Grok 写代码前记得清空桌面——字面意思。",
+          "source": "Hacker News",
+          "url": "https://news.ycombinator.com/item?id=48892512",
+          "published": "2026-07-13",
+          "direction": "工具/平台"
         }
       ]
     },
@@ -97,29 +168,29 @@
       "items": [
         {
           "uid": "",
-          "title": "Meta计划9月量产自研AI芯片\"Iris\"",
-          "content": "Meta代号\"Iris\"的自研AI训练与推理芯片计划9月进入量产阶段，属于MTIA系列。Meta此前宣布每半年推出一代自研芯片，目标减少对英伟达和AMD的依赖。Iris的量产将让Meta成为继谷歌、亚马逊后又一家大规模部署自研AI芯片的科技巨头。扎克伯格称自研芯片将显著降低AI推理成本。 🔗 https://www.theverge.com/ai-artificial-intelligence/960283/meta-iris-ai-chip-manufacturing-september-plans",
-          "quote": "扎克伯格：英伟达太贵了，我自己造。",
-          "source": "The Verge | 2026-07-09",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/960283/meta-iris-ai-chip-manufacturing-september-plans",
-          "published": "2026-07-14",
-          "direction": "研究/论文"
+          "title": "Meta reportedly plans to manufacture 'Iris' AI chip starting September",
+          "content": "Meta 计划 9 月开始量产自研 AI 芯片 Iris，属于 MTIA（Meta Training and Inference Accelerator）系列。Meta 此前宣布每半年推出一款新芯片，旨在减少对 Nvidia 和 AMD 的依赖。芯片代工厂未公开，但业界猜测是台积电。这是 Meta 从「买芯片」到「造芯片」战略的关键一步。",
+          "quote": "Meta 造芯片的决心比小扎的元宇宙还认真，至少这次有实物。",
+          "source": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/963320/meta-iris-ai-chip-manufacturing-september",
+          "published": "2026-07-09",
+          "direction": "模型发布"
         }
       ]
     },
-    "google": {
-      "displayName": "Google/Gemini",
-      "icon": "🌐",
+    "alibaba": {
+      "displayName": "阿里巴巴/Qwen",
+      "icon": "☁️",
       "items": [
         {
-          "uid": "",
-          "title": "Google发布TabFM：无需每数据集训练的表格预测模型",
-          "content": "Google发布TabFM（Table Foundation Model），一种无需逐数据集训练即可直接预测表格数据的AI模型。TabFM在零样本场景下表现优于传统梯度提升树和微调神经网络，可广泛应用于金融风控、医疗诊断、电商推荐等表格密集型领域。研究者表示TabFM代表了大模型从文本/图像向结构化数据泛化的重要突破。 🔗 https://venturebeat.com/technology/googles-tabfm-skips-per-dataset-training-and-still-predicts-on-tables-its-never-seen",
-          "quote": "Google要把Excel也AI化——以后表格都不用建模型了。",
-          "source": "VentureBeat | 2026-07-13",
-          "url": "https://venturebeat.com/technology/googles-tabfm-skips-per-dataset-training-and-still-predicts-on-tables-its-never-seen",
-          "published": "2026-07-14",
-          "direction": "研究/论文"
+          "uid": "ai_82f2bf43",
+          "title": "阿里通义千问 Qwen3 7 Plus 发布：支持文本/视频/图像多模态，定价仅 $0.4/百万 token",
+          "content": "阿里巴巴发布了 Qwen3 7 Plus 多模态模型，支持文本、视频和图像输入，定价极低——输入 $0.4/百万 token，输出 $1.6/百万 token。与此前开源的 Qwen 系列不同，该模型是专有的闭源模型，但 API 价格极具竞争力。在标准基准测试中，Qwen3 7 Plus 在视频理解和图像分析任务上展现出与更大规模模型相当的能力，是中国 AI 公司在多模态赛道上的最新弹药。",
+          "quote": "阿里搞了个闭源的 Qwen——多模态能力不输开源版，但价格低到让对手难受。",
+          "source": "VentureBeat",
+          "url": "https://venturebeat.com/technology/alibabas-qwen3-7-plus-supports-text-video-and-imagery-inputs-at-low-cost-of-0-4-1-6-per-1m-token-but-its-proprietary",
+          "published": "2026-06-04",
+          "direction": "模型发布"
         }
       ]
     },
@@ -129,63 +200,63 @@
       "items": [
         {
           "uid": "",
-          "title": "Cloudflare发布Precursor：AI时代的新型网络服务发现协议",
-          "content": "Cloudflare发布Precursor协议，旨在解决AI Agent和自动化工具在网络服务发现中的痛点。传统DNS和服务发现机制难以满足AI时代动态、高频的服务注册与发现需求。Precursor提供低延迟、高可靠的服务发现能力，专为AI Agent集群通信和微服务架构设计。Cloudflare表示该协议将逐步开源，与现有Kubernetes生态集成。 🔗 https://blog.cloudflare.com/introducing-precursor/",
-          "quote": "Cloudflare终于对服务发现下手了——AI Agent太多，DNS不够用了。",
-          "source": "Cloudflare Blog | 2026-07-13",
+          "title": "Enterprise AI entering 'evaluation gap' — agents gaining autonomy faster than companies can verify them",
+          "content": "VB Pulse 调查显示：66% 的企业已允许 AI 代理在无人审核的情况下部署，但只有 5% 完全信任自动化评估。一半的企业遇到过「测试全过、上线翻车」的情况。核心难题是代理行为非确定性的，可能调用 5 个工具都正确，第 6 步泄漏数据。行业正在进入「先发后补」的 retrofit 周期。",
+          "quote": "AI 代理跑得快，但老板的信任跑得慢——这就是 2026 的 AI 焦虑。",
+          "source": "VentureBeat",
+          "url": "https://venturebeat.com/orchestration/enterprise-ai-is-entering-an-evaluation-gap-agents-are-gaining-autonomy-faster-than-companies-can-verify-them/",
+          "published": "2026-07-13",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "",
+          "title": "Cloudflare introduces Precursor — continuous behavioral validation engine for detecting bot and agentic behavior",
+          "content": "Cloudflare 发布 Precursor，在 Turnstile 基础上构建的会话级持续行为验证引擎。通过在客户端注入 JavaScript 持续采集用户行为信号（不再只在登录/支付时验证），识别高级自动化脚本和 AI agent 行为。每天运行近 30 亿次 Turnstile 挑战，现在扩展到全用户旅程的可见性。",
+          "quote": "Cloudflare 在反爬路上卷出新高度，这次连你的鼠标轨迹都不放过了。",
+          "source": "Cloudflare Blog",
           "url": "https://blog.cloudflare.com/introducing-precursor/",
-          "published": "2026-07-14",
+          "published": "2026-07-13",
           "direction": "工具/平台"
         },
         {
-          "uid": "",
-          "title": "GhostLock漏洞曝光：Linux内核15年堆栈释放后使用漏洞影响所有发行版",
-          "content": "Nebu Security披露代号GhostLock的严重Linux内核漏洞，是一个在所有Linux发行版中存在15年的堆栈释放后使用(stack-UAF)漏洞。攻击者可利用该漏洞实现本地权限提升，影响从服务器到嵌入式设备的所有Linux系统。安全团队已在最新内核版本中修复，建议所有用户立即更新。该漏洞的发现展示了AI时代底层系统安全依然不容忽视。 🔗 https://nebusec.ai/research/ionstack-part-2/",
-          "quote": "十五年陈年老洞——你Linux内核里的木马屠城记。",
-          "source": "Nebu Security | 2026-07-13",
-          "url": "https://nebusec.ai/research/ionstack-part-2/",
-          "published": "2026-07-14",
-          "direction": "工具/平台"
+          "uid": "ai_a381f6ad",
+          "title": "纽约州通过法案：禁止 AI 聊天机器人以人类同伴身份与青少年互动",
+          "content": "纽约州议会通过了一项具有里程碑意义的法案，将禁止 AI 公司让青少年使用的聊天机器人暗示自己是人类。如果得到州长 Kathy Hochul 签署，该法案将是美国首个针对 AI 陪伴式聊天机器人的限制性立法。此前多家 AI 公司因聊天机器人诱导青少年自残或自杀而面临诉讼（部分已和解）。法案背后是家长和心理健康倡导者对生成式 AI 社交风险的持续担忧。",
+          "quote": "AI 聊骚犯了众怒——纽约率先动手，以后聊天机器人再装人就是违法。",
+          "source": "The Verge",
+          "url": "https://www.theverge.com/news/861051/new-york-ai-chatbot-companion-kids-ban-bill",
+          "published": "2026-06-05",
+          "direction": "政策/合规"
         },
         {
-          "uid": "",
-          "title": "Clawk开源：给Coding Agent一个一次性Linux VM而非你的笔记本",
-          "content": "开源项目Clawk发布，为AI编码代理提供一次性Linux虚拟机执行环境。每次Agent运行时自动创建隔离VM，用完即销毁，完美解决Agent权限过大导致的安全问题。项目在HN上获125点关注和118条讨论，开发者社区对\"给Agent戴安全套\"的理念热烈共鸣。Clawk用Rust编写，启动毫秒级，支持Docker和Firecracker两种运行时。 🔗 https://github.com/clawkwork/clawk",
-          "quote": "AI写代码不放心？给它一个一次性沙箱，跑完就烧。",
-          "source": "GitHub / Hacker News | 2026-07-13",
-          "url": "https://github.com/clawkwork/clawk",
-          "published": "2026-07-14",
-          "direction": "模型发布"
+          "uid": "ai_b7faa2f0",
+          "title": "英格兰和威尔士警方被叫停：禁止在法庭陈述中使用 AI",
+          "content": "英国金融时报报道，英格兰和威尔士的警方已被指示停止在法庭陈述中使用 AI 工具。这一决定源于对 AI 生成的证据和陈述在法律程序中的可靠性、透明度和公正性的担忧。法庭系统担心 AI 可能在证据摘要、证人陈述和案件摘要中引入偏见或错误，而法律体系尚未准备好有效审查 AI 辅助的司法材料。",
+          "quote": "法庭不让 AI 写判决书了——法律圈说：AI 的证据我不认，除非你证明它没胡说。",
+          "source": "Financial Times / Hacker News",
+          "url": "https://www.ft.com/content/229e5949-3ebc-4151-8a86-a01b5e259241",
+          "published": "2026-06-06",
+          "direction": "政策/合规"
         },
         {
-          "uid": "",
-          "title": "LAPD与监控巨头Flock合约到期不续，公民隐私胜利",
-          "content": "洛杉矶警察局未与监控技术公司Flock续约，后者以AI车牌识别和监控网络闻名。TechCrunch报道LAPD引用\"对公民自由和隐私的严重关切\"作为不续约理由。Flock的AI监控系统在多个城市引发隐私争议，其摄像头网络实时追踪车辆行踪。LAPD的决定被视为科技公司执法监控业务受限的标志性事件。 🔗 https://techcrunch.com/2026/07/13/lapd-lets-contract-with-surveillance-giant-flock-expire-citing-serious-concerns-over-civil-liberties-and-privacy/",
-          "quote": "AI监控巨头被警察叔叔炒鱿鱼了——隐私终于赢了一次。",
-          "source": "TechCrunch / HN | 2026-07-13",
-          "url": "https://techcrunch.com/2026/07/13/lapd-lets-contract-with-surveillance-giant-flock-expire-citing-serious-concerns-over-civil-liberties-and-privacy/",
-          "published": "2026-07-14",
-          "direction": "行业动态"
+          "uid": "ai_7885f9c3",
+          "title": "Nvidia 提案为 Windows PC 设计全新 CPU 系统",
+          "content": "据 Hacker News 报道，Nvidia 正提议为 Windows PC 设计一套全新的 CPU 系统，由 @lemire 在 Twitter 上披露。该方案暗示 Nvidia 可能进一步深入 PC 处理器市场，与 Intel 和 AMD 展开更直接竞争。结合 Nvidia 在 AI 和 GPU 领域的深厚积累，这款 CPU 可能专门针对 AI 推理和本地 LLM 运行进行了优化，标志着 AI PC 从概念走向硬件重塑。",
+          "quote": "Nvidia 看上了 CPU 市场——Intel 和 AMD 还没从 AI 焦虑中缓过来，新对手已经靴子落地了。",
+          "source": "Hacker News",
+          "url": "https://twitter.com/lemire/status/2062880075117113739",
+          "published": "2026-06-06",
+          "direction": "研究/论文"
         },
         {
-          "uid": "",
-          "title": "企业AI部署面临评估鸿沟：Agent自主性增长快于企业验证能力",
-          "content": "VentureBeat报道企业AI正进入\"评估鸿沟\"阶段——AI Agent的自主决策能力增长快于企业验证和审计能力。调查显示86%的企业GPU利用率不到一半，但AI Agent的部署速度却在指数级增长。CIO们面临的矛盾：不部署会落后，部署了又无法有效评估Agent决策的准确性和风险。专家建议企业建立AI Agent独立审计机制。 🔗 https://venturebeat.com/orchestration/enterprise-ai-is-entering-an-evaluation-gap-agents-are-gaining-autonomy-faster-than-companies-can-verify-them",
-          "quote": "AI Agent跑太快，老板们连安全带都没系好——评估鸿沟要命了。",
-          "source": "VentureBeat | 2026-07-13",
-          "url": "https://venturebeat.com/orchestration/enterprise-ai-is-entering-an-evaluation-gap-agents-are-gaining-autonomy-faster-than-companies-can-verify-them",
-          "published": "2026-07-14",
-          "direction": "工具/平台"
-        },
-        {
-          "uid": "",
-          "title": "Patreon联手Cloudflare封杀AI爬虫，保护创作者内容",
-          "content": "Patreon CEO Jack Conte宣布与Cloudflare合作，全面阻止AI爬虫抓取创作者内容训练模型。去年Cloudflare已默认阻止AI爬虫，近期又推出更细粒度的爬虫管控工具。Patreon作为订阅制创作者平台，拥有大量付费专属内容。此举回应了创作者对AI公司未经授权使用其作品的强烈不满，也标志着内容平台与AI公司之间的数据战争升级。 🔗 https://www.theverge.com/ai-artificial-intelligence/960795/cloudflare-is-cracking-down-on-multi-purpose-crawlers",
-          "quote": "创作者的内容不想喂AI？Patreon说：门都没有，我装防盗网了。",
-          "source": "The Verge | 2026-07-09",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/960795/cloudflare-is-cracking-down-on-multi-purpose-crawlers",
-          "published": "2026-07-14",
-          "direction": "模型发布"
+          "uid": "ai_5cc3c7e5",
+          "title": "LinkedIn 联合创始人 Reid Hoffman 离开微软董事会，专注 AI 药物研发",
+          "content": "LinkedIn 联合创始人、长期微软董事会成员 Reid Hoffman 宣布离开微软董事会。在他的 Possible 播客中与微软 CEO Satya Nadella 对话时，Hoffman 表示希望更专注于去年联合创立的 AI 药物研发创业公司 Manas。Manas 致力于利用 AI 加速药物发现过程，Hoffman 认为 AI 在生物医药领域的影响力将超越其在数字领域的应用。",
+          "quote": "Hoffman 从微软董事会辞职去搞 AI 制药——在他看来，做药比做系统更能改变世界。",
+          "source": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/927098/reid-hoffman-leaving-microsoft-board-manas-ai-drug-development",
+          "published": "2026-06-05",
+          "direction": "应用/落地"
         }
       ]
     }
