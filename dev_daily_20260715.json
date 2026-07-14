@@ -1,0 +1,155 @@
+[
+  {
+    "title": "The Tower Keeps Rising：AI编程正在瓦解团队共识",
+    "content": "Armin Ronacher（Flask/Sentry作者）发表重磅反思：AI编程工具让开发者可以独立修改代码库任意角落，却不再需要和其他人沟通。项目能持续交付，但共享理解却在无声崩溃——巴别塔不会倒塌，你甚至不会注意到失去了什么。",
+    "quote": "代码能跑，但没人懂它为什么能跑。",
+    "source": "dev.to",
+    "url": "https://lucrum.pocoo.org/2026/7/13/the-tower-keeps-rising/",
+    "published": "2026-07-15",
+    "uid": "dev_8534f926"
+  },
+  {
+    "title": "实测Linux输入延迟：X11 vs Wayland硬件数据公布",
+    "content": "开发者自制硬件延迟测量设备，对CachyOS进行端到端输入延迟实测。500Hz OLED测试显示Wayland输入延迟并不比X11差，VRR关闭反而更优，DXVK低延迟分支有效但也带来新问题。多年Linux游戏优化玄学终于有了科学数据支撑。",
+    "quote": "Linux游戏玄学终于被科学证伪。",
+    "source": "dev.to",
+    "url": "https://marco-nett.de/blog/measuring-input-latency-on-linux-x11-vs-wayland-vrr-dxvk/",
+    "published": "2026-07-15",
+    "uid": "dev_b07050ea"
+  },
+  {
+    "title": "你的App本应是网页——开发者反向工程解救旅行应用",
+    "content": "一位家长被强制安装只能展示文本和图片的旅行App，愤怒之下反向工程其API，用Ruby脚本将JSON转为静态网页。原App实质只是HTML内容加广告追踪，却强制用户装原生应用。文章507点高赞，347条评论激烈讨论App滥用现象。",
+    "quote": "装个App就为了看PDF，这世界疯了。",
+    "source": "Hacker News",
+    "url": "https://danq.me/2026/07/09/your-app-could-have-been-a-webpage/",
+    "published": "2026-07-15",
+    "uid": "dev_3fdb0266"
+  },
+  {
+    "title": "OpenCut开源版CapCut一夜爆火，单日4300+星逼近7万",
+    "content": "OpenCut作为完全开源的CapCut替代品在GitHub Trending登顶，一天收获4349星，总星数逼近7万。基于TypeScript构建，复刻了剪映核心视频编辑功能。开源社区终于有了一个能打的视频剪辑工具。",
+    "quote": "开源版剪映，一天干到7万星。",
+    "source": "GitHub",
+    "url": "https://github.com/OpenCut-app/OpenCut",
+    "published": "2026-07-15",
+    "uid": "dev_734cec79"
+  },
+  {
+    "title": "S&P下调Oracle至BBB，距垃圾级仅一步之遥",
+    "content": "标普将Oracle信用评级下调至BBB，仅比垃圾级高一个档次。市场对Oracle云业务增长前景和债务水平表示担忧，股价承压。分析师指出Oracle在AI基础设施建设竞赛中已落后AWS和Azure。",
+    "quote": "Oracle距垃圾债就一步之遥。",
+    "source": "Hacker News",
+    "url": "https://www.heise.de/en/news/S-P-downgrades-Oracle-to-BBB-only-one-notch-above-junk-level-11363472.html",
+    "published": "2026-07-15",
+    "uid": "dev_3b3dc098"
+  },
+  {
+    "title": "黑客注册FIFA公共平台后发现可控制世界杯直播流",
+    "content": "安全研究员通过FIFA公开的足球经纪平台注册，意外获得FIFA 2026世界杯直播管理面板完整访问权限。可查看所有比赛RTMP推流地址和密钥，甚至有能力替换直播画面。联系FIFA、CISA和FBI后问题才被修复。",
+    "quote": "注册个FIFA账号就能控制世界杯直播。",
+    "source": "dev.to",
+    "url": "https://bobdahacker.com/blog/fifa-hack",
+    "published": "2026-07-15",
+    "uid": "dev_304decea"
+  },
+  {
+    "title": "Bonsai 27B：首个1-bit量化模型能在手机上本地运行",
+    "content": "PrismML发布Bonsai 27B，采用1-bit量化技术让27B级别大模型在手机上本地运行，推理速度接近实时。这是边缘AI的重要里程碑，低功耗设备将迎来真正的本地智能，无需云端调用。",
+    "quote": "手机跑27B大模型，笔记本不香了。",
+    "source": "Hacker News",
+    "url": "https://prismml.com/news/bonsai-27b",
+    "published": "2026-07-15",
+    "uid": "dev_7a598555"
+  },
+  {
+    "title": "一个Python Hook让Claude不再重复说load-bearing",
+    "content": "开发者为Claude Code写了个MessageDisplay Hook脚本，用正则替换把Claude的口头禅全改成搞笑词。'you are absolutely right'变'I am a complete clown'。社区热烈反馈，该问题在Anthropic GitHub仓库有超5.3万条讨论。",
+    "quote": "治Claude废话文学，一个Hook搞定。",
+    "source": "dev.to",
+    "url": "https://jola.dev/posts/how-to-stop-claude-from-saying-load-bearing",
+    "published": "2026-07-15",
+    "uid": "dev_05d4885c"
+  },
+  {
+    "title": "我们是不是把太多思考外包给了AI？",
+    "content": "科技作者深入探讨AI对认知能力的侵蚀。从旧金山Startup活动上穿麦克风录下所有对话让Claude分析的技术布道者，到完全依赖AI做决策的普通人。提出关键拷问：当AI替你思考所有事情，你的自主性还剩多少。",
+    "quote": "你让AI替你思考，谁替你活着？",
+    "source": "Hacker News",
+    "url": "https://www.artfish.ai/p/offloading-thinking-to-ai",
+    "published": "2026-07-15",
+    "uid": "dev_723b71d4"
+  },
+  {
+    "title": "欧盟数字钱包Age Verification只支持iOS和Android遭群嘲",
+    "content": "欧盟数字身份钱包（EUDIW）的年龄验证技术规范引发争议：所谓跨平台App实际只支持Android和iOS，完全排除桌面端和Linux用户。开发者质疑这违反欧盟自身数字包容性原则，HN讨论347票226条评论。",
+    "quote": "欧盟数字主权？先装个安卓App吧。",
+    "source": "Hacker News",
+    "url": "https://github.com/eu-digital-identity-wallet/av-doc-technical-specification/discussions/19",
+    "published": "2026-07-15",
+    "uid": "dev_5133742a"
+  },
+  {
+    "title": "Graphify爆火：代码一键变知识图谱，8.6万星",
+    "content": "Graphify-Labs的graphify项目在GitHub Trending单日1858星，总星数超8.6万。能为Claude Code、Cursor等AI编程助手注入知识图谱能力，将代码、SQL Schema、文档、论文甚至视频全部转为可查询的图结构。",
+    "quote": "AI画图理解屎山，8万星认同。",
+    "source": "GitHub",
+    "url": "https://github.com/Graphify-Labs/graphify",
+    "published": "2026-07-15",
+    "uid": "dev_044d3075"
+  },
+  {
+    "title": "开源零成本谬误：大公司疯狂白嫖社区维护者",
+    "content": "ThoughtWorks发布深度分析，指出宽松开源许可证已成为科技公司无偿剥削志愿劳动力的法律工具。双许可模式也失效——企业宁愿抛弃依赖也不愿付费。维护者改许可证就被骂不改就被白嫖，陷入两难。",
+    "quote": "开源可被白嫖，但不能改协议。",
+    "source": "dev.to",
+    "url": "https://www.thoughtworks.com/insights/blog/open-source/zero-cost-fallacy-open-source-agentic-era",
+    "published": "2026-07-15",
+    "uid": "dev_15daea52"
+  },
+  {
+    "title": "FSF用reaction工具对抗Vo1d僵尸网络和AI爬虫",
+    "content": "自由软件基金会运维团队公开防御手段。使用reaction工具配合ipset实现百万级IP黑名单，比fail2ban有效得多。至少部分攻击流量来自被攻陷的智能电视组成的Vo1d僵尸网络，LLM训练爬虫也在疯狂扫掠。",
+    "quote": "你的智能电视正在DDoS自由软件。",
+    "source": "Hacker News",
+    "url": "https://www.fsf.org/blogs/community/blocking-botnets-with-reaction",
+    "published": "2026-07-15",
+    "uid": "dev_a580acda"
+  },
+  {
+    "title": "Facebook开源Astryx设计系统，面向AI编程工具定制",
+    "content": "Facebook开源Astryx设计系统，一周获2255星。宣称完全可定制且对AI编码工具友好，支持自动适配Claude Code、Cursor、Codex等AI编程助手的GUI生成需求。",
+    "quote": "脸书开源设计系统，意在你懂。",
+    "source": "GitHub",
+    "url": "https://github.com/facebook/astryx",
+    "published": "2026-07-15",
+    "uid": "dev_413b5426"
+  },
+  {
+    "title": "腾讯云开源TencentDB AI记忆方案，零外部依赖",
+    "content": "腾讯云发布TencentDB Agent Memory，全本地AI长期记忆方案，零外部API依赖。四层渐进式流水线架构，一周获2231星。为AI编程助理记忆持久化这个难题提供了企业级方案。",
+    "quote": "腾讯开源记忆层，层数加满不手软。",
+    "source": "GitHub",
+    "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+    "published": "2026-07-15",
+    "uid": "dev_1f6558ce"
+  },
+  {
+    "title": "Claude-video：让Claude能看视频，一周4128星",
+    "content": "开源项目claude-video让Claude获得视频理解能力——下载视频、提取帧、转录音频后全部交给Claude分析。一周内获得4128星，开发者社区对AI视频理解的需求可见一斑。",
+    "quote": "给AI装眼睛，一周4千星。",
+    "source": "GitHub",
+    "url": "https://github.com/bradautomates/claude-video",
+    "published": "2026-07-15",
+    "uid": "dev_6e9cfa12"
+  },
+  {
+    "title": "C++26反射特性实现零开销类型擦除",
+    "content": "开发者展示C++26标准反射功能实现duck typing风格类型擦除。相比传统虚函数方案，新方案在编译期完成大部分工作，运行时开销几乎为零。87点高赞，C++社区反响热烈。",
+    "quote": "C++26反射，你同事还在模板元。",
+    "source": "Hackaday",
+    "url": "https://ryanjk5.github.io/posts/rjk-duck/",
+    "published": "2026-07-15",
+    "uid": "dev_653f364b"
+  }
+]
