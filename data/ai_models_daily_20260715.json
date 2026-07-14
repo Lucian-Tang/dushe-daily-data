@@ -1,0 +1,76 @@
+{
+  "date": "2026-07-15",
+  "total": 4,
+  "vendors": [
+    "openai",
+    "anthropic",
+    "google",
+    "other"
+  ],
+  "models": {
+    "openai": {
+      "displayName": "OpenAI/GPT",
+      "icon": "🔬",
+      "items": [
+        {
+          "uid": "",
+          "title": "DeepSeek 降价 75%！但 Agent 的「100x Token 消耗问题」依然无解",
+          "content": "**来源：VentureBeat | 2026-07-14** DeepSeek 将其 V4-Pro 模型价格大幅下调 75%，但对很多企业来说这并非好消息。推理成本下降的同时，AI Agent 系统正在以前所未有的速度消耗 Token。一个 Agent 工作流将一次用户请求转化为规划、检索、工具调用、验证、摘要和后续决策的链条，产生数十倍的 Token 消耗。这就是「100x 问题」：看似更便宜的模型，实际使用成本可能更高。OpenAI 给每个 YC 初创公司 $200 万 API 积分，本身就说明了运行 AI 原生公司的真实成本。 🔗 <https://venturebeat.com/orchestration/deepseek-cut-prices-75-the-100x-problem-remains>",
+          "quote": "DeepSeek 降价 75% 听起来很香，但 AI Agent 吃 token 的速度比你降价快得多——省下的钱全让模型多吃回去了。",
+          "source": "",
+          "url": "",
+          "published": "2026-07-15",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "anthropic": {
+      "displayName": "Anthropic/Claude",
+      "icon": "🧬",
+      "items": [
+        {
+          "uid": "",
+          "title": "Hacker News 157分热帖：如何让 Claude 不再说 load-bearing——AI 口头禅大吐槽",
+          "content": "**来源：Hacker News / jola.dev | 2026-07-14** 一篇关于如何使用 Claude Code MessageDisplay hook 替换 Claude 常见口头禅的教程在 Hacker News 上获得 157 分和 250+ 评论。开发者创建了一个 Python 脚本，将 Claude 爱用的 load-bearing seam、honest take、you are absolutely right 等短语替换成搞笑词汇。这个帖子引发了 AI 社区对模型输出风格同质化的广泛讨论——用户厌倦了 AI 总是使用同样的措辞模式，折射出大模型训练数据中的风格偏差问题。截至目前 Anthropic 的 GitHub Issue 页面有超过 500 条关于词汇偏好的反馈。 🔗 <https://jola.dev/posts/how-to-stop-claude-from-saying-load-bearing>",
+          "quote": "连 Claude 的口头禅都要被开发者用 Python hook 替换——AI 的语言习惯已经逼疯程序员了。",
+          "source": "",
+          "url": "",
+          "published": "2026-07-15",
+          "direction": "研究/论文"
+        }
+      ]
+    },
+    "google": {
+      "displayName": "Google/Gemini",
+      "icon": "🌐",
+      "items": [
+        {
+          "uid": "",
+          "title": "Gemini in Chrome 登陆英国：Google 浏览器 AI 助手终于走向欧洲",
+          "content": "**来源：The Verge / Google Blog | 2026-07-13** 经过一年多的等待，Google 的 Gemini 浏览器集成功能终于在英国上线。英国 Chrome 用户现在可以直接在浏览器中访问 Gemini 界面，跨多个标签页对比信息、总结内容并询问打开的网页相关问题。不过，该功能仍未在欧盟上线，反映出 Google 在欧洲面临的监管挑战——欧盟的数字市场法案和 GDPR 依然是 Google 在欧洲推广 AI 产品的主要障碍。 🔗 <https://www.theverge.com/google/673659/gemini-google-chrome-integration-agentic-era>",
+          "quote": "Gemini 终于进英国 Chrome 了——但欧盟用户还得继续等，Google 跟欧洲监管的博弈还没完。",
+          "source": "",
+          "url": "",
+          "published": "2026-07-15",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "other": {
+      "displayName": "其他",
+      "icon": "📰",
+      "items": [
+        {
+          "uid": "",
+          "title": "多模型编排的「共失败天花板」：研究揭示企业低估 AI 失败率高达 2.25 倍",
+          "content": "**来源：VentureBeat / arXiv | 2026-07-13** 一项评估 21 家提供商 67 个前沿模型的新研究揭示了多模型编排的核心数学缺陷——「共失败天花板」（co-failure ceiling）。企业假设用不同模型互相弥补盲区是安全的，但实际上存在一个数学极限：当每个模型都在同一类问题上失败时，编排再多模型也没用。研究发现企业低估多模型编排的真实失败率高达 2.25 倍。这意味着企业正在花费巨资搭建复杂的路由基础设施，去追逐根本不存在性能收益。 🔗 <https://venturebeat.com/orchestration/enterprises-using-multiple-ai-models-are-underestimating-failure-rates-by-2-25x>",
+          "quote": "你以为多调几个模型就能互相兜底？研究发现它们可能在同一类问题上集体翻车——编排越多，错得越一致。",
+          "source": "",
+          "url": "",
+          "published": "2026-07-15",
+          "direction": "研究/论文"
+        }
+      ]
+    }
+  }
+}
