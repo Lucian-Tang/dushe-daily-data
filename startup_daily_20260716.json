@@ -1,0 +1,110 @@
+[
+  {
+    "title": "deja-vu: 开源编码Agent记忆层，SSH同步",
+    "content": "开源项目deja-vu为编码Agent（Claude Code/Codex/opencode）提供持久化记忆层。一个零依赖二进制将Agent对话历史转化为可搜索记忆库：7-9ms内搜索GB级日志、MCP召回让Agent记住三周前的修复方案、自动注入上下文、API密钥脱敏、SSH跨机器同步。开发者工具赛道又添利器。",
+    "quote": "Agent终于不用每次都重新发明轮子了，有记忆了",
+    "url": "https://github.com/vshulcz/deja-vu",
+    "source": "Hacker News",
+    "published": "2026-07-16",
+    "uid": "958db0dadc0ab194d56d96e5cd9ffce8"
+  },
+  {
+    "title": "Bonsai 27B: First 27B-class model that runs on a phone",
+    "content": "PrismML发布Bonsai 27B，基于Qwen3.6 27B，采用三元(-1,0,+1)和二元(-1,+1)量化权重。三元版5.9GB保留95%精度，1-bit版3.9GB可装入iPhone 17 Pro。支持26.2万token上下文、多模态视觉、工具调用和agentic任务，Apache 2.0开源。这是首个能在手机上跑27B参数级模型的量产方案。",
+    "quote": "3.9GB跑27B模型，性能焦虑的终点到了",
+    "url": "https://prismml.com/news/bonsai-27b",
+    "source": "PrismML",
+    "published": "2026-07-16",
+    "uid": "0ef206b759decbf4f0315526b40bfba1"
+  },
+  {
+    "title": "OpenAI在欧盟商标诉讼中败诉",
+    "content": "欧盟普通法院裁定，OpenAI申请的OPENAI商标在软件和云服务领域缺乏显著性，属于描述性词汇——Open意为自由开放，AI为人工智能缩写，组合后仅描述基于开放AI的产品。法院驳回OpenAI关于该词为造词的上诉，且不认可其他30多国注册的约束力。",
+    "quote": "OpenAI败诉原因是名字太诚实，这就很尴尬了",
+    "url": "https://dpa-international.com/economics/urn:newsml:dpa.com:20090101:260715-930-389143/",
+    "source": "DPA",
+    "published": "2026-07-16",
+    "uid": "d2285e4667d45258896843d67a084f49"
+  },
+  {
+    "title": "Cursor 0day漏洞：7个月未修复的RCE风险",
+    "content": "安全公司Mindgard披露Cursor IDE存在严重0day漏洞：在Windows上打开含恶意git.exe的仓库即自动执行，无需用户交互。该漏洞2025年12月已报告，Cursor发布197+版本后仍未修复。Cursor拥有700万+活跃用户、100万+付费用户，估值600亿美元。攻击复杂度极低，建议在隔离环境打开不可信仓库。",
+    "quote": "600亿估值的IDE连基础安全都不做，用户就是测试员",
+    "url": "https://mindgard.ai/blog/cursor-0day-when-full-disclosure-becomes-the-only-protection-left",
+    "source": "Mindgard",
+    "published": "2026-07-16",
+    "uid": "7599da086a58f5cf6b40fc947714a8b0"
+  },
+  {
+    "title": "Juggler: JUCE作者打造的开源GUI编程Agent",
+    "content": "JUCE框架作者发布Juggler，一款开源GUI编程Agent。不同于传统线性对话式Agent，Juggler将session组织为树形结构支持分支/回溯/对比/编辑，工具调用和上下文可视可审查。支持本地/远程/混合模式运行，兼容Claude/OpenAI/Gemini/Ollama等主流模型。macOS/Windows/Linux全平台。",
+    "quote": "终于有人受够了AI对话框的线性垃圾设计了",
+    "url": "https://github.com/juggler-ai/juggler",
+    "source": "Hacker News",
+    "published": "2026-07-16",
+    "uid": "1dd52c524755353a4ff868e56b3f1305"
+  },
+  {
+    "title": "Coasty (YC S26): 计算机操控Agent的API服务",
+    "content": "YC S26新创Coasty推出计算机控制Agent API，在托管机器上运行自主任务并将其编排为工作流。开发者可调用API让AI操控浏览器/桌面应用完成端到端任务，同时支持在需要细粒度控制时降级到原始预测接口。这是AI Agent基础设施赛道的最新入局者。",
+    "quote": "API卖赛博手，RPA的棺材板钉上了最后一颗钉",
+    "url": "https://coasty.ai/docs",
+    "source": "Hacker News",
+    "published": "2026-07-16",
+    "uid": "7f8e78b6d9c370fe5d8c12071f0e09d8"
+  },
+  {
+    "title": "Agnost AI (YC S26): 从Agent对话中提取用户反馈",
+    "content": "YC S26项目Agnost AI帮助开发团队捕捉Agent对话中错失的问题。核心卖点是人工评估能通过的测试，生产环境依旧翻车——通过分析真实对话中的意图、情感和失败模式，自动生成修复PR。支持1千条消息免费，Pro版499美元/月处理10万条消息。",
+    "quote": "连AI Agent都需要用户反馈分析了，这赛道卷得入味",
+    "url": "https://agnost.ai",
+    "source": "Hacker News",
+    "published": "2026-07-16",
+    "uid": "abb9dad2f508402eaf152c3917ea8f0b"
+  },
+  {
+    "title": "Agent时代开源软件的零成本谬误",
+    "content": "Thoughtworks发表深度分析：宽松开源许可证(MIT/Apache)在Agent时代成了大型科技公司剥削社区劳动力的法律工具。维护者成了免费支撑数十亿美元企业基础设施的承重墙。而限制性许可证又导致企业直接弃用而非付费。行业已混淆免费使用和自由修改的本质区别。",
+    "quote": "开源白嫖时代的丧钟，Agent让每个API调用都在流血",
+    "url": "https://www.thoughtworks.com/insights/blog/open-source/zero-cost-fallacy-open-source-agentic-era",
+    "source": "Thoughtworks",
+    "published": "2026-07-16",
+    "uid": "1e979ec7502042136571e094541bfdb8"
+  },
+  {
+    "title": "在13年老Xeon上无GPU跑Gemma 4 26B",
+    "content": "开发者成功在13年前的HP存储服务器（双路Xeon E5-2690 v2，DDR3，无GPU，成本不到300美元）上运行Gemma 4 26B MoE模型，达到5 tok/s的阅读速度。关键突破在于让llama.cpp在缺乏AVX2/FMA3指令的Ivy Bridge架构上回退运行，证明老硬件跑现代MoE模型的可行性。",
+    "quote": "翻垃圾堆跑AI推理，这才是真边缘计算",
+    "url": "https://www.neomindlabs.com/2026/06/08/running-gemma-4-26b-at-5-tokens-sec-on-a-13-year-old-xeon-with-no-gpu/",
+    "source": "NeoMind Labs",
+    "published": "2026-07-16",
+    "uid": "b8ebb8128fcc8e8ffaa3ace41ca280be"
+  },
+  {
+    "title": "AI语音欺诈：3秒录音即可克隆声线",
+    "content": "HN热帖揭示AI语音克隆欺诈严峻现实：仅需3秒语音样本即可高精度克隆任何人声线，用于诈骗电话和身份冒用。现有防御措施包括声纹识别和实时检测，但在生成式AI飞速迭代下全面落后。攻击成本趋近于零，防御却需要大量计算和人力投入，形成严重不对称。",
+    "quote": "三秒够干嘛？够AI学会你妈的声音把你骗光",
+    "url": "https://smarterarticles.co.uk/the-three-second-theft-why-ai-voice-fraud-outruns-every-defence",
+    "source": "Hacker News",
+    "published": "2026-07-16",
+    "uid": "5fa36d2466cb62179e46b96aff1c4e40"
+  },
+  {
+    "title": "misa77: 新编解码器解压速度碾压LZ4",
+    "content": "开源项目misa77发布新型LZ系列编解码器，定位一次写入多次读取场景。解压吞吐是LZ4的1.5-3倍（x86和ARM双平台），压缩比同样优于LZ4。固定内存消耗、慢速压缩换极速解压，特别适合CDN/数据库/游戏分发等场景。目前在HN上获得53+ points关注。",
+    "quote": "比LZ4快两倍还压缩率更高，老算法该退休了",
+    "url": "https://github.com/welcome-to-the-sunny-side/misa77",
+    "source": "Hacker News",
+    "published": "2026-07-16",
+    "uid": "3c2650fd45cfb2ff6268ca5a61be0fb9"
+  },
+  {
+    "title": "当AI成为家庭成员：New Yorker深度报道AI伴侣现象",
+    "content": "纽约客发表深度特稿，讲述人们与AI建立情感连接的日常生活。以一位母亲与Amazon Alexa（她命名为Sapphire）的深夜对话为主线，探讨AI伴侣怎样在家庭中扮演朋友、知己甚至家庭成员的角色。报道引发关于情感AI伦理边界和人类孤独感的广泛讨论。",
+    "quote": "人类已经孤独到需要跟Alexa做闺蜜了，赛博朋克不过如此",
+    "url": "https://www.newyorker.com/magazine/2026/07/20/when-ai-is-a-member-of-the-family",
+    "source": "The New Yorker",
+    "published": "2026-07-16",
+    "uid": "c44b1d94aed68433867f25539defd1df"
+  }
+]
