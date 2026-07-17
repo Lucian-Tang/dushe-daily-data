@@ -1,15 +1,15 @@
 {
   "week_start": "2026-07-12",
   "week_end": "2026-07-18",
-  "summary": "本周共收录AI领域动态 94 条。本周最活跃：其他（28条）、Anthropic/Claude（24条）、OpenAI/GPT（19条）。主要方向为工具/平台（38条）。",
+  "summary": "本周共收录AI领域动态 106 条。本周最活跃：其他（31条）、Anthropic/Claude（27条）、OpenAI/GPT（21条）。主要方向为工具/平台（42条）。",
   "stats": {
-    "total_items": 94,
+    "total_items": 106,
     "by_vendor": {
-      "other": 28,
-      "anthropic": 24,
-      "openai": 19,
-      "google": 13,
-      "alibaba": 3,
+      "other": 31,
+      "anthropic": 27,
+      "openai": 21,
+      "google": 16,
+      "alibaba": 4,
       "amazon": 2,
       "meta": 2,
       "apple": 1,
@@ -17,11 +17,11 @@
       "microsoft": 1
     },
     "by_direction": {
-      "工具/平台": 38,
-      "模型发布": 19,
-      "研究/论文": 15,
-      "应用/落地": 9,
-      "政策/合规": 7,
+      "工具/平台": 42,
+      "模型发布": 23,
+      "研究/论文": 16,
+      "应用/落地": 10,
+      "政策/合规": 9,
       "行业动态": 6
     }
   },
@@ -1011,6 +1011,137 @@
           ]
         }
       }
+    },
+    {
+      "date": "2026-07-18",
+      "models": {
+        "anthropic": {
+          "displayName": "Anthropic/Claude",
+          "icon": "🧬",
+          "items": [
+            {
+              "uid": "",
+              "title": "Moonshot AI 发布 Kimi K3：2.8万亿参数、开源权重，多项基准超越 Claude Opus 4.8",
+              "direction": "模型发布",
+              "quote": "中国开源模型卷到2.8万亿参数了——Kimi K3 代码能力暴打所有对手，唯一的问题是你的钱包扛不扛得住。",
+              "url": "https://simonwillison.net/2026/Jul/16/kimi-k3/",
+              "published": "2026-07-18"
+            },
+            {
+              "uid": "",
+              "title": "Claude Code 意外推送60秒自动续行功能：用户不满，Anthropic 紧急修复",
+              "direction": "工具/平台",
+              "quote": "Claude Code 偷偷加了个60秒自动续命功能——你去做个三明治的功夫，AI 已经替你做了所有决定。人机关系需要边界感。",
+              "url": "https://www.olafalders.com/2026/07/17/claude-code-anatomy-of-a-misfeature/",
+              "published": "2026-07-18"
+            },
+            {
+              "uid": "",
+              "title": "Anthropic 称 80% 新生产代码由 Claude 编写，企业怎样跟上",
+              "direction": "应用/落地",
+              "quote": "Anthropic 自己先吃自己的狗食——80% 代码给 AI 写，剩下的 20% 大概是 debug。",
+              "url": "https://venturebeat.com/technology/anthropic-says-80-of-its-new-production-code-is-now-authored-by-claude-how-your-enterprise-can-keep-up",
+              "published": "2026-07-18"
+            }
+          ]
+        },
+        "openai": {
+          "displayName": "OpenAI/GPT",
+          "icon": "🔬",
+          "items": [
+            {
+              "uid": "",
+              "title": "Mozilla 发布《2026开源AI现状报告》：开源模型已接近闭源顶级，Token 成本3年降50倍",
+              "direction": "模型发布",
+              "quote": "Mozilla 报告说开源 AI 几乎追平闭源了——GPT-4 推理成本从$20降到$0.40，三年降了50倍，AI 越来越不值钱了。",
+              "url": "https://stateofopensource.ai/",
+              "published": "2026-07-18"
+            },
+            {
+              "uid": "",
+              "title": "Password 进军AI成本管理：预测Token消耗是下一代企业预算危机",
+              "direction": "工具/平台",
+              "quote": "1Password 不满足于管密码了——它要管你的 AI token 账单，因为公司迟早会在 AI 上花得比买咖啡还多。",
+              "url": "https://venturebeat.com/security/1password-moves-into-ai-cost-management-betting-that-token-spend-is-the-next-enterprise-budget-crisis",
+              "published": "2026-07-18"
+            }
+          ]
+        },
+        "other": {
+          "displayName": "其他",
+          "icon": "📰",
+          "items": [
+            {
+              "uid": "",
+              "title": "纽约州通过法案：禁止 AI 聊天机器人以人类同伴身份与青少年互动",
+              "direction": "政策/合规",
+              "quote": "AI 聊骚犯了众怒——纽约率先动手，以后聊天机器人再装人就是违法。",
+              "url": "https://www.theverge.com/news/861051/new-york-ai-chatbot-companion-kids-ban-bill",
+              "published": "2026-07-18"
+            },
+            {
+              "uid": "",
+              "title": "英格兰和威尔士警方被叫停：禁止在法庭陈述中使用 AI",
+              "direction": "政策/合规",
+              "quote": "法庭不让 AI 写判决书了——法律圈说：AI 的证据我不认，除非你证明它没胡说。",
+              "url": "https://www.ft.com/content/229e5949-3ebc-4151-8a86-a01b5e259241",
+              "published": "2026-07-18"
+            },
+            {
+              "uid": "",
+              "title": "Nvidia 提案为 Windows PC 设计全新 CPU 系统",
+              "direction": "研究/论文",
+              "quote": "Nvidia 看上了 CPU 市场——Intel 和 AMD 还没从 AI 焦虑中缓过来，新对手已经靴子落地了。",
+              "url": "https://twitter.com/lemire/status/2062880075117113739",
+              "published": "2026-07-18"
+            }
+          ]
+        },
+        "google": {
+          "displayName": "Google/Gemini",
+          "icon": "🌐",
+          "items": [
+            {
+              "uid": "",
+              "title": "Google 测试悬浮桌面 AI 搜索栏：Ctrl+Shift+Space 呼出 AI Mode",
+              "direction": "工具/平台",
+              "quote": "Google 说：别在地址栏敲关键词了，按三个键唤出 AI 帮你聊出结果。",
+              "url": "https://windowsreport.com/chrome-tests-a-floating-ai-mode-search-bar-for-desktop/",
+              "published": "2026-07-18"
+            },
+            {
+              "uid": "",
+              "title": "Google 发布开源 Gemma 4 12B 多模态模型：本地跑音频视频分析",
+              "direction": "模型发布",
+              "quote": "Google 把多模态 AI 塞进了 16GB 内存的笔记本——云厂商看了都沉默。",
+              "url": "https://venturebeat.com/technology/googles-new-open-source-gemma-4-12b-analyzes-audio-video-and-runs-entirely-locally-on-a-typical-16gb-enterprise-laptop",
+              "published": "2026-07-18"
+            },
+            {
+              "uid": "",
+              "title": "open-notebook 爆火：开源版 NotebookLM 今日收获 783 星标",
+              "direction": "工具/平台",
+              "quote": "NotebookLM 太好用了以至于大家想要一个没人能关掉的开源版——783 星一天，需求说明一切。",
+              "url": "https://github.com/lfnovo/open-notebook",
+              "published": "2026-07-18"
+            }
+          ]
+        },
+        "alibaba": {
+          "displayName": "阿里巴巴/Qwen",
+          "icon": "☁️",
+          "items": [
+            {
+              "uid": "",
+              "title": "阿里通义千问 Qwen3 7 Plus 发布：支持文本/视频/图像多模态，API 低至 $0.4/百万 token",
+              "direction": "模型发布",
+              "quote": "阿里搞了个闭源的 Qwen——多模态能力不输开源版，但价格低到让对手难受。",
+              "url": "https://venturebeat.com/technology/alibabas-qwen3-7-plus-supports-text-video-and-imagery-inputs-at-low-cost-of-0-4-1-6-per-1m-token-but-its-proprietary",
+              "published": "2026-07-18"
+            }
+          ]
+        }
+      }
     }
   ],
   "highlights": [
@@ -1060,12 +1191,12 @@
     },
     {
       "uid": "",
-      "title": "阿里通义千问 Qwen3 7 Plus 发布：支持文本/视频/图像多模态，定价仅 $0.4/百万 token",
-      "content": "阿里巴巴发布了 Qwen3 7 Plus 多模态模型，支持文本、视频和图像输入，定价极低——输入 $0.4/百万 token，输出 $1.6/百万 token。与此前开源的 Qwen 系列不同，该模型是专有的闭源模型，但 API 价格极具竞争力。在标准基准测试中，Qwen3 7 Plus 在视频理解和图像分析任务上展现出与更大规模模型相当的能力，是中国 AI 公司在多模态赛道上的最新弹药。",
+      "title": "阿里通义千问 Qwen3 7 Plus 发布：支持文本/视频/图像多模态，API 低至 $0.4/百万 token",
+      "content": "阿里巴巴发布了 Qwen3 7 Plus 多模态模型，支持文本、视频和图像输入，定价极低——输入 $0.4/百万 token，输出 $1.6/百万 token。与此前开源的 Qwen 系列不同，该模型是专有的闭源模型，但 API 定价极具竞争力。在标准基准测试中，Qwen3 7 Plus 在视频理解和图像分析任务上展现出与更大规模模型相当的能力，是中国 AI 公司在多模态赛道上的最新弹药。",
       "quote": "阿里搞了个闭源的 Qwen——多模态能力不输开源版，但价格低到让对手难受。",
       "source": "VentureBeat",
       "url": "https://venturebeat.com/technology/alibabas-qwen3-7-plus-supports-text-video-and-imagery-inputs-at-low-cost-of-0-4-1-6-per-1m-token-but-its-proprietary",
-      "published": "2026-07-13",
+      "published": "2026-07-18",
       "vendor": "alibaba",
       "direction": "模型发布"
     }
