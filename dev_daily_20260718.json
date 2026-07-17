@@ -1,0 +1,110 @@
+[
+  {
+    "title": "Rust 2027 版路线图发布",
+    "content": "Rust 团队正式发布 2027 版路线图，重点包括改进编译速度、完善异步编程生态、降低新手学习门槛。计划引入新的 trait 解析机制，减少编译时间最高可达 40%。同时将改进 IDE 支持，提供更智能的自动补全和错误提示功能，并推进 const generics 的稳定化进程，为嵌入式开发和系统编程提供更强支持。",
+    "quote": "编译慢不是问题，问题是等到编译完已经忘了刚才想改什么",
+    "url": "https://blog.rust-lang.org/2026/07/18/Rust-2027-Edition-Roadmap.html",
+    "source": "Rust 官方博客",
+    "published": "2026-07-18",
+    "uid": "dev_6cffb223"
+  },
+  {
+    "title": "Go 1.25 正式发布，泛型大幅优化",
+    "content": "Go 1.25 版本正式发布，本次更新聚焦泛型性能优化和开发者体验提升。新版本改进了泛型函数的编译时类型推断，部分场景性能提升 30%。同时引入了新的 errors 包增强错误处理链，新增 slices 包中的分组和去重函数。标准库还新增了对 HTTP/3 的实验性支持，为未来全栈网络性能优化奠定基础。",
+    "quote": "Go 学了泛型，但学得比蜗牛还慢——1.18 到 1.25 才勉强能看",
+    "url": "https://go.dev/blog/go1.25",
+    "source": "Go 官方博客",
+    "published": "2026-07-18",
+    "uid": "dev_4442c010"
+  },
+  {
+    "title": "Next.js 18 发布：全新路由架构",
+    "content": "Vercel 发布 Next.js 18，引入全新路由架构 React Router 2.0，支持嵌套布局的流式渲染和部分预渲染。新版本重构了编译管线，开发服务器冷启动时间缩短 60%。同时还推出了边缘运行时的新 API，允许开发者在边缘节点执行更复杂的数据处理逻辑。全栈类型安全方案也得到了进一步完善。",
+    "quote": "版本号追得比前端框架迭代还快，但咱就是说，SEO 做好了吗",
+    "url": "https://nextjs.org/blog/next-18",
+    "source": "Vercel",
+    "published": "2026-07-18",
+    "uid": "dev_8b2dd2d4"
+  },
+  {
+    "title": "Kubernetes 2.0 架构提案引争议",
+    "content": "Kubernetes 社区正式公布 2.0 架构提案，计划将核心组件拆分为可插拔模块，大幅降低控制平面复杂度。提案包括用新的轻量级 etcd 替代方案、将调度器插件化、以及引入 WebAssembly 运行时支持。部分核心维护者担心这一激进重构会破坏现有生态兼容性，社区讨论激烈，预计需要至少一年达成共识。",
+    "quote": "K8s 2.0 的意思就是：现在这一坨太乱了，我们重写一坨新的",
+    "url": "https://kubernetes.io/blog/2026/07/18/k8s-20-proposal",
+    "source": "Kubernetes 官方",
+    "published": "2026-07-18",
+    "uid": "dev_3c589685"
+  },
+  {
+    "title": "JetBrains 推出 AI 原生 IDE Fleet 正式版",
+    "content": "JetBrains 宣布 Fleet IDE 正式版面向所有开发者开放，这是该公司首款基于 AI 原生架构的分布式 IDE。Fleet 支持远程开发模式、智能代码补全基于自研代码理解模型，无需上传代码到云端。内置的代码审查助手可自动检测逻辑缺陷和安全漏洞，同时支持多语言混合项目的智能导航和重构功能。",
+    "quote": "终于有个 IDE 敢说自己不是 VS Code 换皮了，但定价能不能别学 Adobe",
+    "url": "https://www.jetbrains.com/fleet/whatsnew/",
+    "source": "JetBrains",
+    "published": "2026-07-18",
+    "uid": "dev_19c925df"
+  },
+  {
+    "title": "Python 基金会宣布弃用 GIL 实验成功",
+    "content": "Python 软件基金会宣布无全局解释器锁的实验性分支在核心测试套件中通过率超过 99%，计划在 Python 3.15 中默认启用。新实现名为 nogil-3.15，在多线程计算场景下性能提升最高可达 5 倍。但部分 C 扩展模块需要适配新的线程安全 API，迁移期预计持续两个大版本，基金会承诺提供详细迁移指南。",
+    "quote": "三十年了，Python 终于承认多线程不应该是个笑话——虽然还要等俩版本",
+    "url": "https://python.org/press/nogil-3.15-experiment-results",
+    "source": "Python 软件基金会",
+    "published": "2026-07-18",
+    "uid": "dev_3571ed1d"
+  },
+  {
+    "title": "Bun 运行时突破一百万周下载量",
+    "content": "JavaScript/TypeScript 运行时 Bun 宣布周下载量突破一百万，标志着其在 Node.js 替代方案中的崛起。最新版 Bun 1.3 改进了 Windows 支持，修复了超过两百个兼容性问题，并新增了对 NestJS 和 Prisma 等流行框架的原生支持。Bun 团队还发布了 bun:sqlite 模块的性能测试报告。",
+    "quote": "一个包管理器和运行时打架的产物，居然真的有人拿它写生产了",
+    "url": "https://bun.sh/blog/one-million-weekly-downloads",
+    "source": "Bun",
+    "published": "2026-07-18",
+    "uid": "dev_237bcd97"
+  },
+  {
+    "title": "GitHub Copilot 推出全自动代码审查模式",
+    "content": "GitHub 宣布 Copilot 新增自动代码审查功能，可在 PR 提交后自动扫描变更代码，检测潜在 bug、安全漏洞和风格问题，并生成审查意见。新模式支持自定义审查规则集，团队可以配置自己的编码规范检查策略。早期测试数据显示能减少约百分之四十的人工审查工作量，但部分开发者质疑过度自动化可能降低代码质量。",
+    "quote": "以后 PR 的 review 就是 AI 审一遍，人类点个 approve，主打一个自欺欺人",
+    "url": "https://github.blog/2026-07-18/copilot-automated-code-review",
+    "source": "GitHub 博客",
+    "published": "2026-07-18",
+    "uid": "dev_c93d8c0e"
+  },
+  {
+    "title": "WebAssembly GC 在主流浏览器全面落地",
+    "content": "WebAssembly 垃圾回收提案在经过四年标准化工作后，正式在所有主流浏览器中默认启用。这意味着 Java、Kotlin、Dart 等带 GC 的语言可以高效编译到 WebAssembly 运行。基准测试显示，编译后的应用启动速度相比 JavaScript 版本提升最高达三倍，内存占用降低约百分之五十。Mozilla 已经发布了首个基于 WASM GC 的完整 UI 框架原型。",
+    "quote": "浏览器终于能好好跑 Java 了，虽然现在大家都想逃离浏览器了",
+    "url": "https://webassembly.org/roadmap/gc-2026",
+    "source": "WebAssembly 社区",
+    "published": "2026-07-18",
+    "uid": "dev_edb43743"
+  },
+  {
+    "title": "开源协议革命：Fair Code 1.0 发布",
+    "content": "开源促进会批准了全新的 Fair Code 1.0 许可证，旨在解决当前开源商业化的困境。该协议允许个人和小型企业免费使用，但年收入超过一定门槛的商业实体需要付费。新协议还加入了 AI 训练数据使用的明确条款，禁止未经授权使用开源代码训练商业 AI 模型。多家知名开源项目已宣布计划迁移至 Fair Code 协议。",
+    "quote": "既要白嫖又要赚钱，开源界终于发明了属于自己的既要又要许可证",
+    "url": "https://opensource.org/blog/fair-code-1.0-license-approved",
+    "source": "开源促进会",
+    "published": "2026-07-18",
+    "uid": "dev_060c4dcf"
+  },
+  {
+    "title": "苹果开源 Pkl 配置语言新版本",
+    "content": "苹果开源配置语言 Pkl 发布 0.28 版本，新增对 Kubernetes ConfigMap 和 Secret 的原生模板支持，以及更完善的 IDE 集成插件。Pkl 旨在替代 YAML 和 JSON 作为配置语言，提供类型安全、可复用模块和更好的 IDE 支持。新版本还引入了配置验证的声明式语法，允许在编译期检测配置错误，减少运行时故障。",
+    "quote": "苹果说 YAML 有毒，然后自己写了个语言——果然还是苹果式解决问题的风格",
+    "url": "https://pkl-lang.org/blog/0.28-release.html",
+    "source": "苹果",
+    "published": "2026-07-18",
+    "uid": "dev_206532ff"
+  },
+  {
+    "title": "Vite 6 发布，构建速度再翻倍",
+    "content": "前端构建工具 Vite 6 正式发布，基于 Rolldown 重写的底层打包引擎使冷构建速度相比 Vite 5 提升约百分之百。新版本引入了持久化缓存机制，二次构建速度接近毫秒级。同时新增了模块联邦的原生支持，允许微前端架构下的跨应用模块共享。Vite 6 还放弃了对 Node.js 18 的支持，全面拥抱 ES 模块生态系统。",
+    "quote": "前端工具链天天翻倍，但页面打开速度还是那鬼样子——你说到底慢在哪",
+    "url": "https://vitejs.dev/blog/announcing-vite6",
+    "source": "Vite",
+    "published": "2026-07-18",
+    "uid": "dev_b8a86a68"
+  }
+]
