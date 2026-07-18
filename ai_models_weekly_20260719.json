@@ -1,14 +1,14 @@
 {
   "week_start": "2026-07-13",
   "week_end": "2026-07-19",
-  "summary": "本周共收录AI领域动态 88 条。本周最活跃：其他（25条）、Anthropic/Claude（24条）、Google/Gemini（15条）。主要方向为工具/平台（33条）。",
+  "summary": "本周共收录AI领域动态 98 条。本周最活跃：其他（29条）、Anthropic/Claude（28条）、OpenAI/GPT（16条）。主要方向为工具/平台（35条）。",
   "stats": {
-    "total_items": 88,
+    "total_items": 98,
     "by_vendor": {
-      "other": 25,
-      "anthropic": 24,
+      "other": 29,
+      "anthropic": 28,
+      "openai": 16,
       "google": 15,
-      "openai": 14,
       "alibaba": 4,
       "meta": 2,
       "amazon": 1,
@@ -17,12 +17,12 @@
       "microsoft": 1
     },
     "by_direction": {
-      "工具/平台": 33,
-      "模型发布": 18,
-      "研究/论文": 15,
-      "应用/落地": 9,
-      "政策/合规": 8,
-      "行业动态": 5
+      "工具/平台": 35,
+      "模型发布": 20,
+      "研究/论文": 16,
+      "应用/落地": 11,
+      "政策/合规": 10,
+      "行业动态": 6
     }
   },
   "timeline": [
@@ -959,6 +959,109 @@
               "quote": "阿里搞了个闭源的 Qwen——多模态能力不输开源版，但价格低到让对手难受。",
               "url": "https://venturebeat.com/technology/alibabas-qwen3-7-plus-supports-text-video-and-imagery-inputs-at-low-cost-of-0-4-1-6-per-1m-token-but-its-proprietary",
               "published": "2026-07-18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2026-07-19",
+      "models": {
+        "anthropic": {
+          "displayName": "Anthropic/Claude",
+          "icon": "🧬",
+          "items": [
+            {
+              "uid": "",
+              "title": "Trump 政府主导前沿 AI 模型访问权：Anthropic 和 OpenAI 被迫执行白宫指令",
+              "direction": "政策/合规",
+              "quote": "AI 公司终于发现，比模型对齐更麻烦的是跟政府对齐——白宫说让谁用你才能给谁用。",
+              "url": "",
+              "published": "2026-07-19"
+            },
+            {
+              "uid": "",
+              "title": "Meta 与 Anthropic 洽谈 $100 亿算力租赁：社交媒体巨头变身 AI 数据中心房东",
+              "direction": "应用/落地",
+              "quote": "Meta 做社交起家，现在要当 AI 的包租公——$100 亿租算力给 Anthropic，这买卖比卖广告还稳。",
+              "url": "",
+              "published": "2026-07-19"
+            },
+            {
+              "uid": "",
+              "title": "中国 Moonshot AI 发布 Kimi K3 模型：开源逼近美国前沿",
+              "direction": "行业动态",
+              "quote": "中国的开源模型追上来了——Kimi K3 不是第二个 ChatGPT，它是中美 AI 差距加速缩小的信号弹。",
+              "url": "",
+              "published": "2026-07-19"
+            },
+            {
+              "uid": "",
+              "title": "$100 AI 音乐视频大战：Claude Fable 5 vs GPT-5.6 Sol 实测，527 楼 HN 激辩",
+              "direction": "工具/平台",
+              "quote": "$100 做了两个 AI 音乐视频，527 个人吵了三天哪个更好——结论是：都不太行，但方向对了。",
+              "url": "",
+              "published": "2026-07-19"
+            }
+          ]
+        },
+        "other": {
+          "displayName": "其他",
+          "icon": "📰",
+          "items": [
+            {
+              "uid": "",
+              "title": "美国拟建立 FINRA 式 AI 监管机构：对标金融行业，对前沿模型实施上市前审查",
+              "direction": "政策/合规",
+              "quote": "AI 监管终于从「呼吁自律」升级到「我给你建个局」——FINRA 对标意味着模型要过审才能上架。",
+              "url": "",
+              "published": "2026-07-19"
+            },
+            {
+              "uid": "",
+              "title": "不到 $100 就能投毒 AI 模型：研究揭示开源权重供应链致命弱点",
+              "direction": "研究/论文",
+              "quote": "$100 就能给 AI 模型下毒？开源的安全神话被一枪打穿了——以后下载模型得像下载 exe 一样谨慎。",
+              "url": "",
+              "published": "2026-07-19"
+            },
+            {
+              "uid": "",
+              "title": "德国发布顶级开源 AI 模型：欧洲在基础模型竞赛中首次跻身第一梯队",
+              "direction": "模型发布",
+              "quote": "欧洲终于在 AI 赛道上不是陪跑了——德国这个开源模型可能是欧盟 AI 主权的第一块基石。",
+              "url": "",
+              "published": "2026-07-19"
+            },
+            {
+              "uid": "",
+              "title": "Kaiser 护士集体控诉：AI 监控让护理工作更糟，病人安全反受其害",
+              "direction": "应用/落地",
+              "quote": "AI 监控护士？Kaiser 搞反了——护士不需要被 AI 盯，病人需要的是被护士盯。",
+              "url": "",
+              "published": "2026-07-19"
+            }
+          ]
+        },
+        "openai": {
+          "displayName": "OpenAI/GPT",
+          "icon": "🔬",
+          "items": [
+            {
+              "uid": "",
+              "title": "前 OpenAI CTO 做了 Altman 不肯做的事：发布真正开放的 frontier 模型",
+              "direction": "模型发布",
+              "quote": "OpenAI 的前技术掌门用实际行动打了 Altman 的脸——你说开源不安全，我偏开源给你看。",
+              "url": "",
+              "published": "2026-07-19"
+            },
+            {
+              "uid": "",
+              "title": "Apple 起诉 OpenAI 窃取硬件机密：从雇员挖角到商业间谍，硅谷最有权力的两家公司彻底翻脸",
+              "direction": "工具/平台",
+              "quote": "Apple 跟 OpenAI 终于从互相挖角升级到法庭见了——Liu 用 Line 聊天软件传机密文件，这操作比大学生抄作业还业余。",
+              "url": "",
+              "published": "2026-07-19"
             }
           ]
         }
