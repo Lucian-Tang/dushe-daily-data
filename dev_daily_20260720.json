@@ -1,0 +1,137 @@
+[
+  {
+    "title": "Claude Code 改用 Rust 编写的 Bun 运行时引擎",
+    "content": "Anthropic 的 Claude Code 已将底层运行时从 Node.js 迁移到 Bun，而 Bun 本身近期也被用 Rust 重写了底层实现。这意味着从控制台工具到底层 JS 运行时再到 Rust 的系统级代码，整条链路经历了两次重写。Bun 的 Rust 化带来了显著的内存和启动性能提升，对日常使用 LLM 驱动的编程助手的开发者来说，响应速度会明显变快。不过每次重写都引入新的 bug 可能性，生产环境还需观望。",
+    "quote": "JS 运行时用 Rust 重写已经成了政治正确，但性能提升是实打实的。Claude Code 用户今天更新后感受一下，别光看 benchmark。",
+    "source": "Simon Willison 博客",
+    "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/",
+    "published": "2026-07-20",
+    "uid": "dev_1a2b3c4d"
+  },
+  {
+    "title": "Blender 5.2 LTS 正式发布，三维创作工具的重大升级",
+    "content": "开源 3D 创作套件 Blender 发布了 5.2 LTS 版本，这是继 4.x 系列之后的又一个长期支持里程碑。新版本带来了几何节点系统的深度改进、渲染管线的性能优化以及对最新 GPU 架构的更好支持。LTS 版本意味着至少两年内的稳定维护，适合工作室和生产环境部署。对于独立创作者和小型工作室来说，Blender 持续证明免费工具也能达到工业级标准。",
+    "quote": "Blender 又发 LTS 了，隔壁 Maya 用户看了眼价格，默默打开了 blender.org。免费还这么能打，属实是开源界的良心。",
+    "source": "Blender 官网",
+    "url": "https://www.blender.org/download/releases/5-2/",
+    "published": "2026-07-20",
+    "uid": "dev_2b3c4d5e"
+  },
+  {
+    "title": "OpenAI 缩减 Codex 模型上下文窗口从 372K 降到 272K",
+    "content": "OpenAI 在 Codex 的一个 PR 中将模型的上下文窗口大小从 372K tokens 减少到 272K，缩减幅度约 27%。虽然看起来是降级，但实际是为了优化推理延迟和成本。更大的上下文窗口在长对话和大型代码库场景中有用，但也意味着更慢的响应和更高的费用，这次调整是在平衡体验和经济性。对于大多数日常编码任务，272K 已经绰绰有余。",
+    "quote": "裁了 10 万 token，OpenAI 说这是优化不是阉割。想想也是，你写个 hello world 用不上半本书的上下文。",
+    "source": "GitHub",
+    "url": "https://github.com/openai/codex/pull/33972",
+    "published": "2026-07-20",
+    "uid": "dev_3c4d5e6f"
+  },
+  {
+    "title": "IntelliJ IDEA 2026.2 发布，新增 Java 27 和 Kotlin 2.4 支持",
+    "content": "JetBrains 发布了 IntelliJ IDEA 2026.2 版本，主要亮点是支持了最新的 Java 27 语言特性和 Kotlin 2.4 编译器。新版本还改进了代码补全的上下文感知能力，优化了大型项目的索引速度，并增强了 AI 辅助编程功能。对于 Java 和 Kotlin 开发者来说，这是今年最重要的 IDE 更新之一，建议尽快升级以体验最新的语言特性支持。",
+    "quote": "Java 27 都来了，而你还在用 Java 8 是吧。JetBrains 说我都支持到 27 了，你们倒是升级啊。",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/472656/intellij-idea-2026-2",
+    "published": "2026-07-20",
+    "uid": "dev_4d5e6f7a"
+  },
+  {
+    "title": "Docker 29.6.2 发布，紧急修复多项安全漏洞",
+    "content": "Docker Engine 发布了 29.6.2 版本，主要修复了包括 CVE-2026-15793 在内的多个安全漏洞。其中从捆绑文件检出 Git 源代码可能导致命令注入的问题尤为严重，影响范围涵盖 CI/CD 流水线和开发环境。官方建议所有用户尽快升级。对于运维和开发团队来说，容器运行时安全始终是不能忽视的底线，建议将这个更新纳入本月的安全补丁计划中。",
+    "quote": "Docker 又双叒叕修安全漏洞了。建议各位运维同学别等周五再升级——安全漏洞不过周末。",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/472502/docker-29-6-2-released",
+    "published": "2026-07-20",
+    "uid": "dev_5e6f7a8b"
+  },
+  {
+    "title": "Moonshine：不到 500KB 的语音识别与 TTS 模型",
+    "content": "Moonshine 团队发布了一个极轻量级的语音识别和语音合成方案，整个模型体积不到 500KB，可以在微控制器级别的硬件上运行。相比 Whisper 等动辄 GB 级别的模型，Moonshine 在保持可用精度的同时将体积压缩了数千倍。这为嵌入式设备、边缘计算和离线场景的语音交互打开了新的可能性。开源且支持多种部署方式，IoT 开发者可以重点关注。",
+    "quote": "500KB 就能跑语音识别，Whisper 看完沉默了。以后你家微波炉都能跟你对话了——再热三十秒？好的主人。",
+    "source": "GitHub",
+    "url": "https://github.com/moonshine-ai/moonshine",
+    "published": "2026-07-20",
+    "uid": "dev_6f7a8b9c"
+  },
+  {
+    "title": "Transcribe.cpp：纯 C++ 实现的本地离线语音转录工具",
+    "content": "一个用纯 C++ 编写的本地语音转录工具 Transcribe.cpp 在 Hacker News 上获得了 682 分的高热度。该工具完全在本地运行，无需网络连接，不依赖任何云服务，在隐私保护和离线使用方面有天然优势。对于需要在本地处理敏感语音数据的场景（如医疗、法律等），这款工具提供了一个轻量且自包含的解决方案。同时也展示了 C++ 在 AI 推理领域依然有生命力。",
+    "quote": "682 分登顶 HN，说明开发者对云端语音识别已经受够了。本地跑、不联网、纯 C++——隐私党的终极浪漫。",
+    "source": "Hacker News",
+    "url": "https://workshop.cjpais.com/projects/transcribe-cpp",
+    "published": "2026-07-20",
+    "uid": "dev_7a8b9c0d"
+  },
+  {
+    "title": "code-review-graph：本地优先的代码审查智能图谱工具",
+    "content": "GitHub 热门项目 code-review-graph 提供了一种本地优先的代码智能方案，通过构建代码库的持久化映射图，让 AI 编程工具在代码审查和大型仓库工作流中只读取真正相关的上下文。项目声称在代码审查和大仓库场景下实现了可量化的上下文缩减。对于正在探索 AI 辅助开发流程的团队来说，这种只读需要的思路比一股脑把全部代码塞给模型要高效得多。",
+    "quote": "给 AI 编程工具加了个重点功能——别把整个代码库都喂给模型，它消化不了。思路清奇，实用至上。",
+    "source": "GitHub",
+    "url": "https://github.com/tirth8205/code-review-graph",
+    "published": "2026-07-20",
+    "uid": "dev_8b9c0d1e"
+  },
+  {
+    "title": "ktransformers：异构大模型推理与微调框架火爆 GitHub",
+    "content": "ktransformers 是一个灵活的大模型推理与微调框架，支持异构计算环境下的 LLM 推理优化。该项目在 GitHub 上热度飙升，主要亮点是能够在不同硬件（CPU、GPU、NPU）之间动态分配计算任务，实现对有限资源的充分利用。对于预算有限但又想跑大模型的个人开发者和中小企业来说，这种榨干每一块 GPU 的方案比购买昂贵的专用硬件更实际。",
+    "quote": "大模型军备竞赛的另一种解法：不是买更多 GPU，是把现有的每一块都榨干净。性价比党的胜利。",
+    "source": "GitHub",
+    "url": "https://github.com/kvcache-ai/ktransformers",
+    "published": "2026-07-20",
+    "uid": "dev_9c0d1e2f"
+  },
+  {
+    "title": "Voicebox：开源 AI 语音工作室，声音克隆合成一体创作工具",
+    "content": "Voicebox 是一个开源 AI 语音工作室，提供声音克隆、语音合成和语音创作等功能，在 GitHub 上已获得超过 4.3 万星标，单日收获 629 星。项目用 TypeScript 构建，降低了使用门槛，开发者可以轻松集成语音能力到自己的应用中。随着 AI 语音技术的成熟，开源社区正在快速追赶商业产品的体验，对于做内容创作工具和语音应用的团队来说，这是个不错的参考项目。",
+    "quote": "4.3 万星，一天涨 629。开源语音克隆赛道已经卷起来了——以后配音演员的对手不是同行，是 GitHub 仓库。",
+    "source": "GitHub",
+    "url": "https://github.com/jamiepine/voicebox",
+    "published": "2026-07-20",
+    "uid": "dev_0d1e2f3a"
+  },
+  {
+    "title": "Wigolo：AI 编程智能体的本地优先搜索与爬取工具",
+    "content": "Wigolo 是一个专为 AI 编程智能体设计的本地优先搜索、抓取和研究工具，通过 MCP 协议集成。最大的卖点是无需 API 密钥、无需云端、每次查询零成本。在 AI 智能体工具大量依赖第三方 API 的当下，这种本地优先的设计既省钱又保护隐私。上线即获 1700+ 星标，说明开发者对不花钱的 AI 工具有着真实且迫切的需求。",
+    "quote": "不用 API key、不用云、每次查询零成本——AI 工具终于学会省钱了。开发者们流下了感动的泪水。",
+    "source": "GitHub",
+    "url": "https://github.com/KnockOutEZ/wigolo",
+    "published": "2026-07-20",
+    "uid": "dev_1e2f3a4b"
+  },
+  {
+    "title": "jcode：高性能 Rust 编程智能体开发工具链",
+    "content": "jcode 是一个用 Rust 编写的编程智能体开发工具链，GitHub 星标数已接近 9000，单日涨星 199。项目定位于为 AI 编码助手提供高效的基础设施支持，利用 Rust 的性能优势来实现低延迟的代码分析和生成。随着 AI 辅助编程从功能验证走向生产部署，对这类专业化工具链的需求正在快速增长。Rust 在 AI 工具链领域的应用也越来越广泛。",
+    "quote": "Rust 写 AI 编程工具已经快成了标配。jcode 不到 9k 星就敢叫 harness，看来这个赛道还没卷到头。",
+    "source": "GitHub",
+    "url": "https://github.com/1jehuang/jcode",
+    "published": "2026-07-20",
+    "uid": "dev_2f3a4b5c"
+  },
+  {
+    "title": "微软将 30 年前的 IRC 客户端 Comic Chat 以 MIT 协议开源",
+    "content": "微软宣布将 1996 年随 IE3 发布的 Microsoft Comic Chat 以 MIT 协议开源。这个拥有近 30 年历史的 IRC 客户端曾捆绑在 Windows 98 中，以其独特的漫画风格对话界面而闻名。开源版本包含了完整的 C++ 源代码，对于研究早期 Windows 图形界面编程和 IRC 协议实现有一定的学习价值。Hacker News 上这篇新闻一度登顶，开发者们纷纷感叹互联网早期的创意和趣味。",
+    "quote": "一段 30 岁的 C++ 代码开源冲上 HN 第一，说明程序员对老东西的怀旧之情不亚于听周杰伦。",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/472502",
+    "published": "2026-07-20",
+    "uid": "dev_3a4b5c6d"
+  },
+  {
+    "title": "月之暗面 Kimi K3 发布：2.8 万亿参数超大模型",
+    "content": "月之暗面在 7 月 17 日凌晨发布了 Kimi K3 模型，拥有 2.8 万亿参数，采用 MoE 架构（896 个 expert 每次激活 16 个），支持 100 万 token 上下文窗口，原生多模态能力。完整权重将在 7 月 27 日前放出。由于需求远超预期，Moonshot AI 甚至暂停了新订阅。这个体量级模型的开放对开源 AI 社区意义重大，但也对部署硬件提出了极高的要求。",
+    "quote": "2.8 万亿参数，896 个 expert——月之暗面这次是真不把钱当钱。不过完整权重开源这点要点赞，卷起来。",
+    "source": "开源中国",
+    "url": "https://www.oschina.net/news/472502",
+    "published": "2026-07-20",
+    "uid": "dev_4b5c6d7e"
+  },
+  {
+    "title": "MPEG-4 视频编码最后一个专利正式到期影响编解码生态",
+    "content": "Phoronix 报道称 MPEG-4 Visual 的最后一篇专利已经到期，意味着这一曾经主导互联网视频领域的技术标准正式进入公有领域。虽然现代视频编码已被 H.264、H.265 和 AV1 取代，但 MPEG-4 的专利到期象征着旧时代许可模式的终结。对于开源视频项目来说，专利壁垒的降低有助于减少法律风险，但也提醒开发者关注新一代编解码器的专利态势。",
+    "quote": "MPEG-4 的专利终于过期了，虽然大家都用 H.265 和 AV1 了。就像你家座机电话欠费通知终于消停了——但你早就不用了。",
+    "source": "Phoronix",
+    "url": "https://www.phoronix.com/news/Last-MPEG-4-Patent-Expired",
+    "published": "2026-07-20",
+    "uid": "dev_5c6d7e8f"
+  }
+]
