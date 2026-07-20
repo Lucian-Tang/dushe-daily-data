@@ -1,167 +1,164 @@
 [
   {
-    "uid": "ai_53587d75",
     "title": "GPT5.6 Sol 花 $25 挖出 WordPress 零日漏洞，黑市价 $50 万",
+    "content": "**来源:** SLCyber / Hacker News | **📅** 2026-07-20 安全研究员利用 OpenAI GPT5.6 Sol Ultra 的 CDC（Cycle Double Cover）破解提示词，仅花 $25 API 费用就发现了 WordPress 一个预认证 SQL 注入链，可升级为完全 RCE。该漏洞在黑市上价值 $50 万，影响超过 5 亿 WordPress 实例。研究员将 GPT 用于解决数学猜想的提示词改编为安全研究场景，使用 4 个 agent 协作 6 小时，最终实现了从零认证到服务器远程控制的完整攻击链。这次实验表明，AI 辅助漏洞挖掘正从概念验证走向实用化。 🔗 https://slcyber.io/research-center/exploit-brokers-pay-500000-for-a-wordpress-rce-i-found-one-with-gpt5-6/",
+    "quote": "数学猜想的解法改改就能挖漏洞——AI 的安全攻防天平正在倾斜。",
+    "source": "",
     "url": "https://slcyber.io/research-center/exploit-brokers-pay-500000-for-a-wordpress-rce-i-found-one-with-gpt5-6/",
     "published": "2026-07-21",
-    "summary": "安全研究员利用 OpenAI GPT5.6 Sol Ultra 的 CDC（Cycle Double Cover）破解提示词，仅花 $25 API 费用就发现了 WordPress 一个预认证 SQL 注入链，可升级为完全 RCE。该漏洞在",
-    "content": "安全研究员利用 OpenAI GPT5.6 Sol Ultra 的 CDC（Cycle Double Cover）破解提示词，仅花 $25 API 费用就发现了 WordPress 一个预认证 SQL 注入链，可升级为完全 RCE。该漏洞在黑市上价值 $50 万，影响超过 5 亿 WordPress 实例。研究员将 GPT 用于解决数学猜想的提示词改编为安全研究场景，使用 4 个 agent 协作 6 小时，最终实现了从零认证到服务器远程控制的完整攻击链。这次实验表明，AI 辅助漏洞挖掘正从概念验证走向实用化。",
-    "source": "SLCyber / Hacker News",
-    "quote": "数学猜想的解法改改就能挖漏洞——AI 的安全攻防天平正在倾斜。",
-    "isLowQuality": false
+    "uid": "ai_77aa2211"
   },
   {
-    "uid": "ai_17494075",
     "title": "三成 arXiv 新论文被标记为 AI 代写：计算机科学重灾区达 65%",
+    "content": "**来源:** unsolp.run / Hacker News | **📅** 2026-07-20 unsolp.run 发布了一项系统研究，对 12,750 篇 arXiv 论文进行 AI 文本检测。结果显示约 32% 的新提交论文读起来像机器写的。计算机科学领域最为严重，高达 65% 的论文被标记为 AI 辅助写作；定量生物学 56%、电子工程 51%。研究采用 0.4% 的极低误报率校准（即 ChatGPT 前的论文仅有 0.4% 被误判），结果可信度较高。数学领域最低仅 0.7%，但这可能和数学论文特性使检测器盲区有关。 🔗 https://unslop.run/blog/measuring-ai-writing-on-arxiv",
+    "quote": "六成计算机论文疑似 AI 写——学术圈的 ChatGPT 依赖症已经没救了。",
+    "source": "",
     "url": "https://unslop.run/blog/measuring-ai-writing-on-arxiv",
     "published": "2026-07-21",
-    "summary": "unsolp.run 发布了一项系统研究，对 12,750 篇 arXiv 论文进行 AI 文本检测。结果显示约 32% 的新提交论文读起来像机器写的。计算机科学领域最为严重，高达 65% 的论文被标记为 AI 辅助写作；定量生物学 56%",
-    "content": "unsolp.run 发布了一项系统研究，对 12,750 篇 arXiv 论文进行 AI 文本检测。结果显示约 32% 的新提交论文读起来像机器写的。计算机科学领域最为严重，高达 65% 的论文被标记为 AI 辅助写作；定量生物学 56%、电子工程 51%。研究采用 0.4% 的极低误报率校准（即 ChatGPT 前的论文仅有 0.4% 被误判），结果可信度较高。数学领域最低仅 0.7%，但这可能和数学论文特性使检测器盲区有关。",
-    "source": "unsolp.run / Hacker News",
-    "quote": "六成计算机论文疑似 AI 写——学术圈的 ChatGPT 依赖症已经没救了。",
-    "isLowQuality": false
+    "uid": "ai_71ed5395"
   },
   {
-    "uid": "ai_42ba3154",
     "title": "Sebastian Raschka 详解 LLM 推理控制：从 o1 到 GPT-5.6 的多档位推理设计",
+    "content": "**来源:** Sebastian Raschka | **📅** 2026-07-20 知名 AI 研究员 Sebastian Raschka 发布深度技术文章，详解如何让推理模型支持多档推理努力（reasoning effort）控制。文章以 GPT-5.6 系列的 5-6 个推理档位为例，从训练缩放和推理缩放两个维度出发，介绍了 DeepSeek-R1 的 RLVR（可验证奖励的强化学习）方法，以及如何在同一个模型中实现从「快速响应」到「深度思考」的切换。Raschka 还透露正撰写一本关于从零构建推理模型的新书，覆盖 440 页的技术细节。 🔗 https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms",
+    "quote": "推理模型也能调档——Raschka 把「想想再答」这件事拆成技术活。",
+    "source": "",
     "url": "https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms",
     "published": "2026-07-21",
-    "summary": "知名 AI 研究员 Sebastian Raschka 发布深度技术文章，详解如何让推理模型支持多档推理努力（reasoning effort）控制。文章以 GPT-5.6 系列的 5-6 个推理档位为例，从训练缩放和推理缩放两个维度出发，",
-    "content": "知名 AI 研究员 Sebastian Raschka 发布深度技术文章，详解如何让推理模型支持多档推理努力（reasoning effort）控制。文章以 GPT-5.6 系列的 5-6 个推理档位为例，从训练缩放和推理缩放两个维度出发，介绍了 DeepSeek-R1 的 RLVR（可验证奖励的强化学习）方法，以及如何在同一个模型中实现从「快速响应」到「深度思考」的切换。Raschka 还透露正撰写一本关于从零构建推理模型的新书，覆盖 440 页的技术细节。",
-    "source": "Sebastian Raschka",
-    "quote": "推理模型也能调档——Raschka 把「想想再答」这件事拆成技术活。",
-    "isLowQuality": false
+    "uid": "ai_67f1511c"
   },
   {
-    "uid": "ai_31caeb53",
     "title": "Soofi S：德国 30B MoE 主权开源模型发布，欧洲 AI 独立再下一城",
+    "content": "**来源:** Soofi / Hacker News | **📅** 2026-07-20 德国 Soofi 联盟发布首款主权开源基础模型 Soofi S，一个 30B 参数、2.7 万亿 token 训练的 Mixture-of-Experts 模型。该模型专注于工业 AI 场景——技术文档、代码生成、Agent 系统和企业应用，特别优化对德语和英语的支持。Soofi 由德国顶尖研究机构、初创公司和工业伙伴联合创建，是欧洲 AI 主权战略的又一重要布局。不同于美国和中国主导的 AI 格局，Soofi 强调模型的可控性、透明度和欧洲数据合规性。 🔗 https://www.soofi.info/",
+    "quote": "德国又扔出一个主权开源模型——这次的 30B MoE 是给工业界用的。",
+    "source": "",
     "url": "https://www.soofi.info/",
     "published": "2026-07-21",
-    "summary": "德国 Soofi 联盟发布首款主权开源基础模型 Soofi S，一个 30B 参数、2.7 万亿 token 训练的 Mixture-of-Experts 模型。该模型专注于工业 AI 场景——技术文档、代码生成、Agent 系统和企业应用",
-    "content": "德国 Soofi 联盟发布首款主权开源基础模型 Soofi S，一个 30B 参数、2.7 万亿 token 训练的 Mixture-of-Experts 模型。该模型专注于工业 AI 场景——技术文档、代码生成、Agent 系统和企业应用，特别优化对德语和英语的支持。Soofi 由德国顶尖研究机构、初创公司和工业伙伴联合创建，是欧洲 AI 主权战略的又一重要布局。不同于美国和中国主导的 AI 格局，Soofi 强调模型的可控性、透明度和欧洲数据合规性。",
-    "source": "Soofi / Hacker News",
-    "quote": "德国又扔出一个主权开源模型——这次的 30B MoE 是给工业界用的。",
-    "isLowQuality": false
+    "uid": "ai_d4c1ecd4"
   },
   {
-    "uid": "ai_743ea14d",
-    "title": "安全研究员猛批 AI 编码助手 OpenCode——安全漏洞多如筛",
+    "title": "「别再用了！」安全研究员猛批 AI 编码代理 OpenCode——安全漏洞多如筛子",
+    "content": "**来源:** wren.wtf / Hacker News | **📅** 2026-07-20 安全研究员 Wren 发表长文炮轰最流行的开源 AI 编码代理 OpenCode（GitHub 16.1 万星），称其安全设计「从 1940 年代计算机诞生以来所有学到的安全教训全被抛弃」。问题包括提示缓存浪费（每次 SSE 轮次重新读取 AGENTS.md 导致推理服务器缓存未命中）、上下文管理混乱（每次 agent→用户转接暴力截断 40K 上下文）、以及「涡轮屎山」式的架构设计。文章在 HN 上获 316 票，引发对 AI 编码工具安全性的广泛讨论。 🔗 https://wren.wtf/shower-thoughts/stop-using-opencode/",
+    "quote": "16 万星的开源项目被喷成筛子——AI 编码工具的安全底线还远没建立。",
+    "source": "",
     "url": "https://wren.wtf/shower-thoughts/stop-using-opencode/",
     "published": "2026-07-21",
-    "summary": "安全研究员 Wren 发表长文炮轰最流行的开源 AI 编码代理 OpenCode（GitHub 16.1 万星），称其安全设计「从 1940 年代计算机诞生以来所有学到的安全教训全被抛弃」。问题包括提示缓存浪费（每次 SSE 轮次重新读取 ",
-    "content": "安全研究员 Wren 发表长文炮轰最流行的开源 AI 编码工具 OpenCode（GitHub 16.1 万星），称其安全设计「从 1940 年代计算机诞生以来所有学到的安全教训全被抛弃」。问题包括提示缓存浪费（每次 SSE 轮次重新读取 AGENTS.md 导致推理服务器缓存未命中）、上下文管理混乱（每次 agent→用户转接暴力截断 40K 上下文）、以及「涡轮屎山」式的架构设计。文章在 HN 上获 316 票，引发对 AI 编码工具安全性的广泛讨论。",
-    "source": "wren.wtf / Hacker News",
-    "quote": "16 万星的开源项目被喷成筛子——AI 编码工具的安全底线还远没建立。",
-    "isLowQuality": false
+    "uid": "ai_b45cdd10"
   },
   {
-    "uid": "ai_ce027823",
     "title": "Inertia-1：统一人体运动基础模型，一颗模型适配全身传感器",
+    "content": "**来源:** arXiv / Yang AI Lab | **📅** 2026-07-20 Yang AI Lab 发布 Inertia-1，首个统一人体运动理解基础模型。该模型在超过 1800 万小时的全球加速度计数据上自监督预训练，能跨身体部位（手腕、胸部、脚踝等）、跨传感器类型（加速度计、陀螺仪、磁力计）和跨采样率工作。无需针对每个新位置重新训练——手腕训练的模型可直接用于其他部位。研究还发现多传感器融合能提升准确率，30-60 秒窗口是最佳时间粒度。这是可穿戴 AI 和健康监测领域的重大进展。 🔗 https://yang-ai-lab.github.io/Inertia-1/",
+    "quote": "一个模型管全身运动——可穿戴设备 AI 终于不用为每个传感器位置各训一套了。",
+    "source": "",
     "url": "https://yang-ai-lab.github.io/Inertia-1/",
     "published": "2026-07-21",
-    "summary": "Yang AI Lab 发布 Inertia-1，首个统一人体运动理解基础模型。该模型在超过 1800 万小时的全球加速度计数据上自监督预训练，能跨身体部位（手腕、胸部、脚踝等）、跨传感器类型（加速度计、陀螺仪、磁力计）和跨采样率工作。无需",
-    "content": "Yang AI Lab 发布 Inertia-1，首个统一人体运动理解基础模型。该模型在超过 1800 万小时的全球加速度计数据上自监督预训练，能跨身体部位（手腕、胸部、脚踝等）、跨传感器类型（加速度计、陀螺仪、磁力计）和跨采样率工作。无需针对每个新位置重新训练——手腕训练的模型可直接用于其他部位。研究还发现多传感器融合能提升准确率，30-60 秒窗口是最佳时间粒度。这是可穿戴 AI 和健康监测领域的重大进展。",
-    "source": "arXiv / Yang AI Lab",
-    "quote": "一个模型管全身运动——可穿戴设备 AI 终于不用为每个传感器位置各训一套了。",
-    "isLowQuality": false
+    "uid": "ai_49914550"
   },
   {
-    "uid": "ai_ada0bcd3",
     "title": "Loopie 循环 Transformer 获 IMO 金牌：20B 参数击败千亿级模型",
+    "content": "**来源:** arXiv / Hugging Face | **📅** 2026-07-20 研究人员发布 Loopie，迄今最强循环 Transformer 模型系列。Loopie-20B（仅 2B 激活参数）和 Loopie-6B（仅 0.6B 激活参数）在 2025 年国际数学奥林匹克（IMO）和国际物理奥林匹克（IPhO）中获得金牌成绩，无需任何工具辅助。与同等算力预算的普通 Transformer 相比，Loopie 大幅领先。其关键技术是解决了一直困扰循环 Transformer 的扩展难题——给定 N 倍算力，增加参数还是循环 N 次？Loopie 通过新颖架构成功让循环胜出。 🔗 https://arxiv.org/abs/2607.16051",
+    "quote": "20 亿参数拿 IMO 金牌——大模型卷参数的时代可能要被循环架构终结了。",
+    "source": "",
     "url": "https://arxiv.org/abs/2607.16051",
     "published": "2026-07-21",
-    "summary": "研究人员发布 Loopie，迄今最强循环 Transformer 模型系列。Loopie-20B（仅 2B 激活参数）和 Loopie-6B（仅 0.6B 激活参数）在 2025 年国际数学奥林匹克（IMO）和国际物理奥林匹克（IPhO）中",
-    "content": "研究人员发布 Loopie，迄今最强循环 Transformer 模型系列。Loopie-20B（仅 2B 激活参数）和 Loopie-6B（仅 0.6B 激活参数）在 2025 年国际数学奥林匹克（IMO）和国际物理奥林匹克（IPhO）中获得金牌成绩，无需任何工具辅助。与同等算力预算的普通 Transformer 相比，Loopie 大幅领先。其关键技术是解决了一直困扰循环 Transformer 的扩展难题——给定 N 倍算力，增加参数还是循环 N 次？Loopie 通过新颖架构成功让循环胜出。",
-    "source": "arXiv / Hugging Face",
-    "quote": "20 亿参数拿 IMO 金牌——大模型卷参数的时代可能要被循环架构终结了。",
-    "isLowQuality": false
+    "uid": "ai_fa36fdd5"
   },
   {
-    "uid": "ai_d951b42f",
-    "title": "Muon 优化器在强化学习训练中表现惊人：验证成功率提升 88%",
+    "title": "Muon 优化器在 Agentic RL 中表现惊人：验证成功率提升 88%",
+    "content": "**来源:** arXiv / Hugging Face | **📅** 2026-07-20 arXiv 新论文系统研究了 Muon 优化器在 Agentic RL（有代理强化学习）中的表现。Muon 之前仅在大规模预训练中表现优异，在 RL 后训练中的效果存疑。研究发现，在 ALFWorld 任务上使用 Qwen2.5-0.5B，仅对隐藏权重矩阵应用 Muon，验证成功率从 0.290 提升至 0.546（+88%），而 AdamW 对照组在更新后几乎无提升。在更高学习率下，Muon 配合 GraphGPO 可达 0.901 成功率。这些发现提示优化器选择对 Agentic RL 训练可能比预训练更关键。 🔗 https://arxiv.org/abs/2607.16169",
+    "quote": "换个优化器就能让 Agent 表现涨 88%——RL 训练的瓶颈可能一直在优化器上。",
+    "source": "",
     "url": "https://arxiv.org/abs/2607.16169",
     "published": "2026-07-21",
-    "summary": "arXiv 新论文系统研究了 Muon 优化器在 Agentic RL（有代理强化学习）中的表现。Muon 之前仅在大规模预训练中表现优异，在 RL 后训练中的效果存疑。研究发现，在 ALFWorld 任务上使用 Qwen2.5-0.5B，",
-    "content": "arXiv 新论文系统研究了 Muon 优化器在 强化学习中的表现。Muon 之前仅在大规模预训练中表现优异，在 RL 后训练中的效果存疑。研究发现，在 ALFWorld 任务上使用 Qwen2.5-0.5B，仅对隐藏权重矩阵应用 Muon，验证成功率从 0.290 提升至 0.546（+88%），而 AdamW 对照组在更新后几乎无提升。在更高学习率下，Muon 配合 GraphGPO 可达 0.901 成功率。这些发现提示优化器选择对 强化学习 训练可能比预训练更关键。",
-    "source": "arXiv / Hugging Face",
-    "quote": "换个优化器就能让 Agent 表现涨 88%——RL 训练的瓶颈可能一直在优化器上。",
-    "isLowQuality": false
+    "uid": "ai_a59eacbe"
   },
   {
-    "uid": "ai_dcd35523",
-    "title": "Google Antigravity 免费开放：Gemini 3 Pro 和 Claude Sonnet 4.5 免费用",
-    "url": "https://www.v2ex.com/t/1173666",
+    "title": "Trump 政府主导前沿 AI 模型访问权：Anthropic 和 OpenAI 被迫执行白宫指令",
+    "content": "**来源:** CNBC | **📅** 2026-07-18 CNBC 独家报道，特朗普政府正在直接决定哪些实体可以访问 Anthropic 和 OpenAI 的最前沿 AI 模型。这一前所未有的干预意味着 Anthropic 和 OpenAI 在某些情况下被要求拒绝向部分客户提供服务。白宫国家安全委员会已建立一个审查机制，对特定机构访问先进 AI 模型进行「国家安全评估」。这是美国政府首次在模型部署层面直接介入，标志着 AI 行业从「自愿合规」走向「强制管控」的关键转折。 🔗 https://www.cnbc.com/2026/07/17/white-house-ai-access-anthropic-openai.html",
+    "quote": "AI 公司终于发现，比模型对齐更麻烦的是跟政府对齐——白宫说让谁用你才能给谁用。",
+    "source": "",
+    "url": "https://www.cnbc.com/2026/07/17/white-house-ai-access-anthropic-openai.html",
     "published": "2026-07-21",
-    "summary": "Google 推出 Antigravity 计划，面向公众免费提供 Gemini 3 Pro 和 Claude Sonnet 4.5 等前沿模型的访问权限。这一举措被视为 Google 在 AI 消费者市场抢占份额的重大战略。",
-    "content": "Google 推出 Antigravity 计划，面向公众免费提供 Gemini 3 Pro 和 Claude Sonnet 4.5 等前沿模型的访问权限。这一举措被视为 Google 在 AI 消费者市场抢占份额的重大战略。用户无需付费即可使用这些此前需要 API 费用的模型，引发了行业对 AI 商业模式可持续性的讨论。分析认为，Google 此举意在通过免费策略获取海量用户数据和反馈，以加速模型迭代。",
-    "source": "V2EX",
-    "quote": "Google 免费送 AI 大餐——等你吃习惯了再悄悄收费，这套路跟当年搜索引擎一模一样。",
-    "isLowQuality": false
+    "uid": "ai_5d4080c6"
   },
   {
-    "uid": "ai_48237006",
-    "title": "Claude Fable 5 推出 Agentic Coding 模式：AI 自主完成完整功能开发流程",
-    "url": "https://www.anthropic.com/",
+    "title": "美国拟建立 FINRA 式 AI 监管机构：对标金融行业，对前沿模型实施上市前审查",
+    "content": "**来源:** Bloomberg | **📅** 2026-07-18 Bloomberg 独家披露，美国政府正考虑创建一个类似 FINRA（金融业监管局）的专门监管机构，对最前沿的 AI 模型实施上市前审核。该机构将独立于现有监管框架运作，拥有对模型进行安全性测试、性能评估和合规审查的法定权力。这与前述白宫直接控制模型访问权的「行政手段」形成双轨并行。一位知情官员表示：「AI 的影响已经大到不能仅靠公司自愿承诺了。」 🔗 https://www.bloomberg.com/news/articles/2026-07-17/us-considers-creating-finra-like-watchdog-to-vet-top-ai-models",
+    "quote": "AI 监管终于从「呼吁自律」升级到「我给你建个局」——FINRA 对标意味着模型要过审才能上架。",
+    "source": "",
+    "url": "https://www.bloomberg.com/news/articles/2026-07-17/us-considers-creating-finra-like-watchdog-to-vet-top-ai-models",
     "published": "2026-07-21",
-    "summary": "Anthropic 为 Claude Fable 5 推出 Agentic Coding 模式，AI 可自主完成从需求分析到代码提交的完整开发流程。",
-    "content": "Anthropic 为 Claude Fable 5 推出 Agentic Coding 模式，AI Agent 可自主完成从需求分析、架构设计、代码编写、测试生成到 Git 提交的完整开发流程。该模式采用多 Agent 协作架构，包含需求分析师、架构师、开发者和测试者四个角色 Agent。在内部测试中，Agentic Coding 模式能够在 30 分钟内完成一个中等规模的 CRUD 功能开发，代码通过率超过 85%。Anthropic 表示该模式已向企业用户开放。",
-    "source": "TechCrunch / Anthropic",
-    "quote": "Claude 现在一条龙写代码从需求到提交流程——程序员终于可以专心开会了。",
-    "isLowQuality": false
+    "uid": "ai_296bfac3"
   },
   {
-    "uid": "ai_368916b1",
-    "title": "ChatGPT 推出自定义 Agent Store：第三方 AI Agent 市场正式上线",
-    "url": "https://openai.com/blog",
+    "title": "Meta 与 Anthropic 洽谈 $100 亿算力租赁：社交媒体巨头变身 AI 数据中心房东",
+    "content": "**来源:** NYT | **📅** 2026-07-17 据 NYT 报道，Meta 正与 Anthropic 洽谈一项潜在的 $100 亿算力租赁协议。该交易凸显了 AI 开发过程中算力是多么稀缺——连 Anthropic 这样的顶级 AI 公司也需要向社交媒体巨头租算力。若达成，将为 Meta 开辟一条全新业务线，将其庞大的 AI 基础设施货币化。此前 Anthropic 已与 Google 达成 $9.2 亿/月的算力协议，并与 SpaceX 达成 $150 亿/年的合作。算力军备竞赛已进入「不仅要买卡，还要抢机房」的阶段。 🔗 https://www.nytimes.com/2026/07/17/technology/meta-anthropic-ai-computing-power.html",
+    "quote": "Meta 做社交起家，现在要当 AI 的包租公——$100 亿租算力给 Anthropic，这买卖比卖广告还稳。",
+    "source": "",
+    "url": "https://www.nytimes.com/2026/07/17/technology/meta-anthropic-ai-computing-power.html",
     "published": "2026-07-21",
-    "summary": "OpenAI 正式上线 ChatGPT Agent Store，允许第三方开发者发布和分发自定义 AI Agent，类似苹果 App Store 模式。",
-    "content": "OpenAI 正式上线 ChatGPT Agent Store，允许第三方开发者发布和分发自定义 AI Agent。采用类似苹果 App Store 的分成模式，开发者可获得 70% 的收入分成。首批已上架超过 2000 个 Agent，涵盖编程、设计、写作、数据分析等场景。此举被视为 OpenAI 从模型提供商向平台生态转型的关键一步，也将直接与 Microsoft Copilot 生态和 Google Agent 市场展开竞争。",
-    "source": "The Verge",
-    "quote": "App Store 模式复制到 AI 圈——OpenAI 这是要收苹果税了。以后每个 AI 需求都先交 30% 再说。",
-    "isLowQuality": false
+    "uid": "ai_0d6352fd"
   },
   {
-    "uid": "ai_85a2846f",
-    "title": "斯坦福发布全新 Agent 评估基准 SWE-RL：AI 编程能力首次超越人类中级工程师",
-    "url": "https://arxiv.org/abs/2607.99999",
+    "title": "中国 Moonshot AI 发布 Kimi K3 模型：开源逼近美国前沿",
+    "content": "**来源:** NYT | **📅** 2026-07-17 Moonshot AI 发布其新一代开源模型 Kimi K3，在多项基准测试中与美国顶尖闭源模型差距显著缩小。NYT 报道指出，Kimi K3 不仅在数学和编码任务上表现优异，其开源策略更对整个 AI 行业格局产生冲击。这是中国 AI 公司首次在基础模型能力上与 GPT-5.6 和 Claude Fable 5 等前沿模型正面竞争。Kimi K3 的发布进一步加剧了中美 AI 竞赛的紧张态势，也引发了关于开源 AI 安全性的新一轮讨论。 🔗 https://www.nytimes.com/2026/07/17/business/china-ai-moonshot-kimi.html",
+    "quote": "中国的开源模型追上来了——Kimi K3 不是第二个 ChatGPT，它是中美 AI 差距加速缩小的信号弹。",
+    "source": "",
+    "url": "https://www.nytimes.com/2026/07/17/business/china-ai-moonshot-kimi.html",
     "published": "2026-07-21",
-    "summary": "斯坦福大学发布 SWE-RL 评估基准，最新 AI Agent 在真实软件工程任务上首次超越人类中级工程师，成功率提升至 67%。",
-    "content": "斯坦福大学发布 SWE-RL 评估基准，用于衡量 AI Agent 在真实软件工程任务中的表现。最新测试结果显示，结合强化学习的 AI Agent 在代码修复、功能实现和代码审查任务上首次超越人类中级工程师，整体成功率达 67%。研究指出，Agent 在需要全局代码理解的复杂重构任务上仍有局限，但在局部修改和单元测试生成方面已远超人类平均水平。",
-    "source": "arXiv",
-    "quote": "AI 写代码超过中级工程师了——初级工程师集体沉默，高级工程师开始写自保手册。",
-    "isLowQuality": false
+    "uid": "ai_636a8026"
   },
   {
-    "uid": "ai_5b992f26",
-    "title": "AI 芯片新战局：Cerebras 推出 Wafer-Scale 3 芯片，单芯片算力达 460 PFLOPS",
-    "url": "https://www.cerebras.net/",
+    "title": "开源 AI 全景报告发布：Mozilla 出品，从模型到生态的深度扫描",
+    "content": "**来源:** Mozilla / State of Open Source AI | **📅** 2026-07-17 Mozilla 发布了名为「The State of Open Source AI 2026」的全面报告，从模型能力、开发者生态、许可协议、安全风险等多个维度扫描了开源 AI 的现状。报告指出，开源模型在过去 12 个月内与闭源模型的差距从「代际差距」缩小到「代内差距」，但开源 AI 面临的最大挑战已经从模型能力转向了供应链安全和可持续治理。报告在 HN 上获得 469 票和 342 条评论，成为社区热议的焦点。 🔗 https://stateofopensource.ai/",
+    "quote": "Mozilla 说开源 AI 的瓶颈不是技术——是供应链安全和治理。代码开源了，信任呢？",
+    "source": "",
+    "url": "https://stateofopensource.ai/",
     "published": "2026-07-21",
-    "summary": "Cerebras 发布第三代晶圆级芯片 Wafer-Scale 3，单芯片算力达 460 PFLOPS，专为千亿参数模型训练设计。",
-    "content": "Cerebras 发布第三代晶圆级芯片 Wafer-Scale 3，单芯片算力达到 460 PFLOPS，较上一代提升 3 倍。采用 3nm 制程，集成了超过 120 万亿晶体管，专为训练千亿参数级别的大模型设计。Cerebras 声称在大规模模型训练场景下，其集群效率比 NVIDIA GB300 系统高 40%。这标志着 AI 芯片竞争正式进入晶圆级时代，传统 GPU 架构面临前所未有的挑战。",
-    "source": "The Verge / Cerebras",
-    "quote": "Cerebras 的芯片大得像披萨——NVIDIA 看着自己的 GPU 突然觉得有点小巧可爱。",
-    "isLowQuality": false
+    "uid": "ai_975b3025"
   },
   {
-    "uid": "ai_e5feda88",
-    "title": "字节跳动发布豆包 3.0 多模态大模型：中文表现碾压 GPT-5.6",
-    "url": "https://www.bytedance.com/",
+    "title": "前 OpenAI CTO 做了 Altman 不肯做的事：发布真正开放的 frontier 模型",
+    "content": "**来源:** The Register | **📅** 2026-07-16 The Register 报道，前 OpenAI CTO 发布了一款真正意义上的开放前沿 AI 模型——包含完整权重、训练代码、数据配方和完整技术报告。这与 OpenAI 越来越「闭源」的策略形成鲜明对比。Altman 近年来持续推动 OpenAI 从非营利开源转向商业化闭源路线，而前 CTO 的新项目被认为是「回归初心」的宣言。该模型在多项基准测试中表现接近 GPT-5 级别，同时保持了完全的开放可用性。 🔗 https://www.theregister.com/ai-and-ml/2026/07/16/former-openai-cto-does-what-altman-wont-releases-a-frontier-ai-model-thats-actually-open/5272177",
+    "quote": "OpenAI 的前技术掌门用实际行动打了 Altman 的脸——你说开源不安全，我偏开源给你看。",
+    "source": "",
+    "url": "https://www.theregister.com/ai-and-ml/2026/07/16/former-openai-cto-does-what-altman-wont-releases-a-frontier-ai-model-thats-actually-open/5272177",
     "published": "2026-07-21",
-    "summary": "字节跳动发布豆包 3.0，在中文理解、古诗词创作和文言文翻译等任务上大幅超越 GPT-5.6，多模态能力也显著提升。",
-    "content": "字节跳动发布豆包 3.0 多模态大模型，在中文理解、古诗词创作、文言文翻译等中文专属任务上大幅超越 GPT-5.6 和 Claude Fable 5。豆包 3.0 采用全新的 MoE 架构，总参数 1.2 万亿，激活参数 180B，训练使用了包含更多古籍和中国文化语料的 15 万亿 token 数据集。同时在图像理解、视频分析和语音交互方面实现端到端多模态融合。字节跳动将其深度整合进抖音、今日头条和飞书等产品矩阵。",
-    "source": "极客公园 / 字节跳动",
-    "quote": "字节的豆包 3.0 中文把 GPT 按在地上摩擦——硅谷的 AI 巨头终于发现，汉语不是加个语料包就能搞定的。",
-    "isLowQuality": false
+    "uid": "ai_619b4482"
   },
   {
-    "uid": "ai_912ebadb",
-    "title": "Microsoft 发布 Copilot Studio 2.0：企业可零代码构建自定义 AI Agent 工作流",
-    "url": "https://www.microsoft.com/en-us/copilot",
+    "title": "不到 $100 就能投毒 AI 模型：研究揭示开源权重供应链致命弱点",
+    "content": "**来源:** The Register | **📅** 2026-07-16 The Register 报道了一项令人震惊的安全研究：一名研究人员仅用不到 $100 就成功对多个开源权重 AI 模型实施了供应链投毒攻击。通过在公开的模型训练数据和权重中嵌入后门，攻击者可以在特定条件下触发模型的恶意行为。这一发现对开源 AI 生态的安全性提出严峻挑战——当数百万人从 Hugging Face 等平台下载模型时，几乎没有任何有效的安全验证机制。研究引发了关于「开放 vs 安全」平衡的激烈讨论。 🔗 https://www.theregister.com/ai-and-ml/2026/07/16/researcher-poisons-open-weight-ai-model-for-under-100/5273880",
+    "quote": "$100 就能给 AI 模型下毒？开源的安全神话被一枪打穿了——以后下载模型得像下载 exe 一样谨慎。",
+    "source": "",
+    "url": "https://www.theregister.com/ai-and-ml/2026/07/16/researcher-poisons-open-weight-ai-model-for-under-100/5273880",
     "published": "2026-07-21",
-    "summary": "Microsoft 发布 Copilot Studio 2.0，允许企业用户通过拖拽方式零代码构建自定义 AI Agent 工作流，集成 Office 365 全系产品。",
-    "content": "Microsoft 发布 Copilot Studio 2.0，企业用户可零代码构建自定义 AI Agent 工作流。新版本支持拖拽式 Agent 编排，可直接调用 Office 365 全系产品（Word、Excel、PowerPoint、Teams、Outlook）和 500+ 第三方连接器。内置企业级安全控制和审计日志，支持 SSO 和 RBAC。Microsoft 称已有超过 10 万家企业参与内测，月活跃 Agent 数突破 300 万。",
-    "source": "The Verge / Microsoft",
-    "quote": "Microsoft 说零代码构建 AI 工作流——这不就是 Power Automate 加了个 AI 大脑嘛，换了个名字继续卖。",
-    "isLowQuality": false
+    "uid": "ai_15e1c694"
+  },
+  {
+    "title": "$100 AI 音乐视频大战：Claude Fable 5 vs GPT-5.6 Sol 实测，527 楼 HN 激辩",
+    "content": "**来源:** Hacker News / tryai.dev | **📅** 2026-07-16 一场 AI 社区瞩目的创意对决：用 $100 的 API 预算，分别在 Claude Fable 5 和 GPT-5.6 Sol 上生成完整的音乐视频。结果在 Hacker News 上引发 527 条评论的激烈讨论。对比显示，Claude 在画面一致性和风格延续性上占优，GPT-5.6 则在创意多样性和歌词理解上更胜一筹。但更暴露的问题是——即使是最强的模型组合，目前 AI 音乐视频的视觉效果仍然有明显的「恐怖谷」，真人镜头尤其诡异。 🔗 https://www.tryai.dev/blog/ai-music-video-arena-claude-vs-gpt-5.6",
+    "quote": "$100 做了两个 AI 音乐视频，527 个人吵了三天哪个更好——结论是：都不太行，但方向对了。",
+    "source": "",
+    "url": "https://www.tryai.dev/blog/ai-music-video-arena-claude-vs-gpt-5.6",
+    "published": "2026-07-21",
+    "uid": "ai_2a6cfafb"
+  },
+  {
+    "title": "Kaiser 护士集体控诉：AI 监控让护理工作更糟，病人安全反受其害",
+    "content": "**来源:** Local News Matters / HN | **📅** 2026-07-15 Kaiser Permanente 的护士们公开发声，指责 AI 工作监控系统不仅没有提升护理质量，反而让工作条件和病人安全更糟糕。据报道，该系统会追踪护士的每个动作——从进入病房的时间到查房的频率——用算法评估「效率分数」。护士们表示，这种持续的量化监控导致了更高的职业倦怠率和更低的病人满意度。该报道在 HN 上获得 533 票和 359 条评论，反映出 AI 在医疗等敏感领域「落地走样」的普遍忧虑。 🔗 https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse/",
+    "quote": "AI 监控护士？Kaiser 搞反了——护士不需要被 AI 盯，病人需要的是被护士盯。",
+    "source": "",
+    "url": "https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse/",
+    "published": "2026-07-21",
+    "uid": "ai_ffb1e5bf"
+  },
+  {
+    "title": "德国发布顶级开源 AI 模型：欧洲在基础模型竞赛中首次跻身第一梯队",
+    "content": "**来源:** Hacker News / X (NXT4EU) | **📅** 2026-07-15 德国 AI 研究机构发布了被多家评测机构称为「当前最佳开源 AI 模型」的基础模型，标志着欧洲在 AI 基础模型竞赛中首次进入全球第一梯队。该模型在 Hacker News 和 X 上引发广泛关注，被视为欧洲 AI 主权战略的重要里程碑。与美国和中国主导的 AI 格局不同，该模型特别注重数据隐私、多语言支持（尤其是欧洲语言）和可解释性，代表了「欧洲价值观」在 AI 领域的一次实证输出。 🔗 https://xcancel.com/NXT4EU/status/2077343621011935648",
+    "quote": "欧洲终于在 AI 赛道上不是陪跑了——德国这个开源模型可能是欧盟 AI 主权的第一块基石。",
+    "source": "",
+    "url": "https://xcancel.com/NXT4EU/status/2077343621011935648",
+    "published": "2026-07-21",
+    "uid": "ai_51690eb6"
   }
 ]
