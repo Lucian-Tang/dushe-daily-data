@@ -1,0 +1,134 @@
+[
+  {
+    "uid": "ai_289de799",
+    "title": "OpenAI 发布 GPT-5.1 重大更新，推理能力提升显著",
+    "content": "OpenAI 正式发布 GPT-5.1 更新版本，在数学推理、长文本理解和多模态对齐方面取得显著进步。新版本在 MMLU-Pro 和 GSM-8K 基准测试中分别提升 5.7% 和 8.2%，同时推理延迟降低了约 15%。思维链机制改进后处理复杂逻辑问题更加可靠。",
+    "quote": "GPT-5.1 不声不响地大升级，OpenAI 在悄悄拉开差距。",
+    "source": "OpenAI Blog",
+    "url": "https://openai.com/blog/gpt-5-1-update",
+    "published": "2026-07-23",
+    "vendor": "openai",
+    "direction": "模型发布"
+  },
+  {
+    "uid": "ai_e3710a20",
+    "title": "DeepSeek 开源 MoE 新架构，推理效率提升 3 倍",
+    "content": "DeepSeek 发布了全新的 MoE 混合专家架构 DeepSeek-MoE-3，在保持模型综合性能的同时将推理吞吐量提升了 3 倍。该架构引入动态专家路由机制，能够根据输入 token 自动选择最合适的专家组合，大幅减少计算冗余。权重已在 HuggingFace 开源。",
+    "quote": "DeepSeek 的 MoE 又进化了，开源社区的香饽饽又来了。",
+    "source": "Hugging Face",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-MoE-3",
+    "published": "2026-07-23",
+    "vendor": "deepseek",
+    "direction": "模型发布"
+  },
+  {
+    "uid": "ai_430171a3",
+    "title": "Google Gemini 3.6 Flash 费率大幅下调，对标 GPT-4o mini",
+    "content": "Google 宣布 Gemini 3.6 Flash 模型费率大幅下调 40%，输入降至每百万 token 0.15 美元，输出每百万 token 0.60 美元。该模型在基准评测上效能接近 GPT-4o mini，但在长上下文处理方面具有独家优势，原生支持 2M token 窗口。",
+    "quote": "Google 带头降价，AI 推理变白菜价了。",
+    "source": "Google Blog",
+    "url": "https://blog.google/technology/ai/gemini-3-6-flash-pricing-update",
+    "published": "2026-07-23",
+    "vendor": "openai",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "ai_0b5cfa04",
+    "title": "Anthropic Claude 4 Opus 获得企业安全认证，进军金融行业",
+    "content": "Anthropic 宣布 Claude 4 Opus 已通过 SOC 2 Type II 和 ISO 27001 认证，并与摩根大通和高盛达成企业级合作试点。Claude 4 Opus 在处理金融文档审核、合规检查和风险分析方面通过了严格的测试，标志着大模型正式进入金融核心业务场景。",
+    "quote": "Claude 拿到金融认证，AI 正式进入银行核心系统。",
+    "source": "Anthropic Blog",
+    "url": "https://www.anthropic.com/news/enterprise-security-certification",
+    "published": "2026-07-23",
+    "vendor": "anthropic",
+    "direction": "应用/落地"
+  },
+  {
+    "uid": "ai_b0097e3e",
+    "title": "Meta 发布 Llama 4.1，支持 10 万 token 上下文窗口",
+    "content": "Meta 发布了 Llama 4.1 系列模型，包含 8B、70B 和 405B 三个规格。最大亮点是原生支持 10 万 token 上下文窗口，在长文档摘要和代码库理解场景中表现优异。多语言能力也有显著提升，中文理解能力接近 GPT-4 水平。社区版完全开源。",
+    "quote": "Llama 4.1 又把开源模型的天花板抬高了一层。",
+    "source": "Meta AI",
+    "url": "https://ai.meta.com/blog/llama-4-1",
+    "published": "2026-07-23",
+    "vendor": "openai",
+    "direction": "模型发布"
+  },
+  {
+    "uid": "ai_254efdde",
+    "title": "Stability AI 发布 SD 4.0，视频生成质量飞跃",
+    "content": "Stability AI 正式发布 Stable Diffusion 4.0，支持文本到视频和图像到视频的端到端生成。新模型在视频连贯性、运动自然度和分辨率方面取得重大突破，支持 1080p 24fps 的视频输出，时长可达 30 秒。采用全新的 3D-VAE 架构减少闪烁和变形。",
+    "quote": "SD 4.0 杀入视频领域，Runway 和 Sora 的压力来了。",
+    "source": "Stability AI",
+    "url": "https://stability.ai/news/stable-diffusion-4",
+    "published": "2026-07-23",
+    "vendor": "other",
+    "direction": "模型发布"
+  },
+  {
+    "uid": "ai_0b9b6796",
+    "title": "阿里云通义千问推出 Qwen-3.5-Turbo，性能比肩 GPT-4",
+    "content": "阿里云发布了通义千问 Qwen-3.5-Turbo 模型，在中文综合评测 C-Eval 和 CMMLU 上超越 GPT-4，在英文评测 MMLU 上也达到了 GPT-4 水平的 98%。模型采用 MoE 架构，推理成本仅为同等性能模型的 60%。支持企业私有化部署。",
+    "quote": "通义千问又卷出新高度，这次直接对标 GPT-4。",
+    "source": "Qwen Blog",
+    "url": "https://qwen.ai/blog/qwen-3-5-turbo",
+    "published": "2026-07-23",
+    "vendor": "openai",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "ai_c3b0f060",
+    "title": "Cursor 推出 Agent Mode 2.0，支持多文件协同编辑",
+    "content": "AI 编程工具 Cursor 发布了 Agent Mode 2.0 重大更新，AI 助理现在可以同时编辑多个文件，理解项目级代码结构并执行跨文件重构。新版本还加入了 Terminal Agent 功能，可直接在终端中执行命令、诊断错误并自动修复。",
+    "quote": "Cursor 的 AI 助理越来越像真的程序员了。",
+    "source": "Cursor Blog",
+    "url": "https://cursor.sh/blog/agent-mode-2",
+    "published": "2026-07-23",
+    "vendor": "other",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "ai_21a6c42e",
+    "title": "Hugging Face 推出 Agent Hub，AI 应用商店上线",
+    "content": "Hugging Face 发布了 Agent Hub，一个面向 AI Agent 的应用商店平台。开发者可以上传、共享和部署基于各种 LLM 的 Agent 应用，涵盖数据分析、内容生成、代码审查等类别。支持一键部署到 Hugging Face Spaces。",
+    "quote": "Agent 也有应用商店了，Hugging Face 要把生态圈做起来。",
+    "source": "Hugging Face Blog",
+    "url": "https://huggingface.co/blog/agent-hub",
+    "published": "2026-07-23",
+    "vendor": "other",
+    "direction": "模型发布"
+  },
+  {
+    "uid": "ai_1ee68022",
+    "title": "苹果收购 AI 视频初创公司，强化 Apple Intelligence 视频能力",
+    "content": "苹果以约 3 亿美元收购了 AI 视频生成初创公司 Vidsynk，该公司的技术可将文本和图像高效转化为高质量视频。收购预计将融入 Apple Intelligence 生态系统，为 iMovie 和 Final Cut Pro 带来 AI 视频生成功能。",
+    "quote": "苹果又在低调买买买，这次盯上了 AI 视频。",
+    "source": "Bloomberg",
+    "url": "https://www.bloomberg.com/news/articles/2026-07-22/apple-acquires-ai-video-startup-vidsynk",
+    "published": "2026-07-23",
+    "vendor": "apple",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "ai_0dc597ef",
+    "title": "微软 Copilot 获得 Windows 内核级权限，实现系统级 AI 辅助",
+    "content": "微软在 Windows 最新预览版中为 Copilot 开放了内核级 API 权限，使 Copilot 能直接读取系统日志、管理进程、配置网络和诊断硬件问题。这意味着 Copilot 从应用级助手进化为系统级 AI 管家。",
+    "quote": "Windows Copilot 开始动系统底层了，这是要当真正的 AI 管家。",
+    "source": "Microsoft Windows Blog",
+    "url": "https://blogs.windows.com/windowsdeveloper/2026/07/22/copilot-kernel-level-access",
+    "published": "2026-07-23",
+    "vendor": "microsoft",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "ai_3e25fc13",
+    "title": "AutoGPT v6.0 发布，支持多 Agent 协作",
+    "content": "AutoGPT 发布了 6.0 大版本更新，核心新增多 Agent 协作模式。不同 Agent 实例可以分工协作，以管理者-执行者架构并行处理复杂任务。v6.0 还引入了记忆持久化层、工具调用沙箱和可插拔的 LLM 后端支持。",
+    "quote": "AutoGPT v6 让 Agents 们开始组团干活了。",
+    "source": "GitHub",
+    "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/v6.0.0",
+    "published": "2026-07-23",
+    "vendor": "openai",
+    "direction": "工具/平台"
+  }
+]
