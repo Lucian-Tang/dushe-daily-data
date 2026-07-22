@@ -381,6 +381,114 @@
   ],
   "dev": [
     {
+      "title": "Rust 2026 Edition 正式发布，异步编程体验大幅优化",
+      "content": "Rust 2026 Edition 正式发布，最引人注目的是异步编程模型的重大改进。新版引入 async Drop 和结构化并发原语，使得异步 Rust 代码的编写和调试体验不再令人头疼。编译速度提升了 20%，Cargo 获得 workspace 级别的依赖缓存优化。",
+      "quote": "Rust 2026 终于对异步编程下手了，感觉又劝不退新人了。",
+      "url": "https://blog.rust-lang.org/2026/07/22/Rust-2026-Edition",
+      "source": "Rust Blog",
+      "published": "2026-07-23",
+      "uid": "dev_d1a07dcb"
+    },
+    {
+      "title": "React 20 发布：Server Component 正式稳定，编译器 RSC 模式启用",
+      "content": "React 20 正式发布，React Server Component (RSC) 从实验特性变为稳定功能。React Forget 编译器新增 RSC 模式，自动优化服务器端和客户端组件的边界。新的 use() Hook 支持在组件中直接 await Promise，大幅简化数据获取模式。",
+      "quote": "React 20 的 Server Component 终于转正了，前端架构又要变天了。",
+      "url": "https://react.dev/blog/2026/07/22/react-20",
+      "source": "React Blog",
+      "published": "2026-07-23",
+      "uid": "dev_3121a594"
+    },
+    {
+      "title": "TypeScript 6.0 Beta 发布：原生装饰器正式落地",
+      "content": "TypeScript 6.0 Beta 发布，最大的变化是原生 ECMAScript Decorators 正式落地，不再需要 experimentalDecorators 标志。新版还引入了精确的 import type 自动推断、改进的条件类型性能以及更好的 ESM 互操作性。",
+      "quote": "TypeScript 6.0 的装饰器终于原生了，Java 开发者狂喜。",
+      "url": "https://devblogs.microsoft.com/typescript/typescript-6-beta",
+      "source": "Microsoft DevBlogs",
+      "published": "2026-07-23",
+      "uid": "dev_2387b6e6"
+    },
+    {
+      "title": "Docker 发布 AI-Powered Compose，自然语言生成容器配置",
+      "content": "Docker 发布了 AI-Powered Compose 功能，开发者只需用自然语言描述应用架构，AI 即可自动生成完整的 docker-compose.yml 配置。该功能基于 Docker 内部训练的专用模型，支持从简单 Web 应用到复杂的微服务架构。",
+      "quote": "以后写 docker-compose 靠嘴就行，配置文件恐惧症有救了。",
+      "url": "https://www.docker.com/blog/ai-powered-compose",
+      "source": "Docker Blog",
+      "published": "2026-07-23",
+      "uid": "dev_dd41f28c"
+    },
+    {
+      "title": "Kubernetes 2.0 架构预览：取消 kubelet，采用无节点架构",
+      "content": "CNCF 公布了 Kubernetes 2.0 的早期架构设计，最激进的改动是取消传统的 kubelet 节点，采用全新的无节点抽象层。新架构将计算资源抽象为统一的执行单元，不再区分 Node 和 Pod 层次关系。同时内置对 WebAssembly 和 eBPF 的原生支持。",
+      "quote": "K8s 2.0 要把节点都干掉了，运维老哥们的技能树又要刷新。",
+      "url": "https://kubernetes.io/blog/2026/07/22/kubernetes-2-design-preview",
+      "source": "Kubernetes Blog",
+      "published": "2026-07-23",
+      "uid": "dev_7dc660b6"
+    },
+    {
+      "title": "PostgreSQL 19 发布：内置向量搜索和列存储引擎",
+      "content": "PostgreSQL 19 发布，最大亮点是内置向量相似度搜索（IVF 索引原生支持）和列存储引擎。新版本不再需要 pgvector 扩展即可进行向量搜索，列存储引擎将分析查询性能提升了 5 到 8 倍，在 OLAP 场景下是革命性的变化。",
+      "quote": "PG 19 自带向量搜索，MongoDB 和 Elasticsearch 要哭了。",
+      "url": "https://www.postgresql.org/about/news/postgresql-19-released",
+      "source": "PostgreSQL News",
+      "published": "2026-07-23",
+      "uid": "dev_6b272dea"
+    },
+    {
+      "title": "Vite 7 发布：基于 Rust 构建内核全面启用",
+      "content": "Vite 7 正式发布，全面启用基于 Rolldown 的 Rust 绑定构建内核。新构建系统打包速度比 Vite 6 快 5 倍，HMR 更新达到毫秒级别。Vite 7 还引入了持久化缓存层，极大提升了 CI 环境中的二次构建速度。",
+      "quote": "Vite 7 换上了 Rust 发动机，构建快到飞起。",
+      "url": "https://vite.dev/blog/announcing-vite7",
+      "source": "Vite Blog",
+      "published": "2026-07-23",
+      "uid": "dev_947c1280"
+    },
+    {
+      "title": "Google 推出 Carbon 语言第 3 个版本，完善泛型和内存安全",
+      "content": "Google 开发的 Carbon 语言发布了第三个主要版本，重点完善了泛型系统和内存安全模型。新版本引入借用检查器 2.0，在保持 C++ 互操作性的同时提供了更严格的内存安全保障。Carbon 被认为是 C++ 最有希望的现代替代品之一。",
+      "quote": "Carbon 第三版了，C++ 的继承者之争越来越有意思。",
+      "url": "https://github.com/carbon-language/carbon-lang/releases/tag/v0.3",
+      "source": "GitHub",
+      "published": "2026-07-23",
+      "uid": "dev_222e91c3"
+    },
+    {
+      "title": "GitHub Copilot 代码审查功能正式上线，AI 审核 Pull Request",
+      "content": "GitHub 宣布 Copilot 代码审查功能正式 GA，AI 现在可以自动审查 Pull Request 并提供详细的代码质量报告。Copilot Code Review 能检测逻辑错误、安全漏洞、性能瓶颈和风格问题，并给出具体的修改建议。",
+      "quote": "以后连 Code Review 都交给 AI 了，程序员的摸鱼空间又大了。",
+      "url": "https://github.com/blog/copilot-code-review-ga",
+      "source": "GitHub Blog",
+      "published": "2026-07-23",
+      "uid": "dev_b6cc8914"
+    },
+    {
+      "title": "WebAssembly GC 获所有主流浏览器支持",
+      "content": "WebAssembly Garbage Collection (WasmGC) 提案已获得 Chrome、Firefox、Safari 和 Edge 的全面支持。这意味着 Java、Kotlin、Dart 等带 GC 的语言可以直接编译到 Wasm 运行，不再需要捆绑自己的运行时。这对 Flutter Web 和 Kotlin Multiplatform 意义重大。",
+      "quote": "WasmGC 全线铺开，Java 上浏览器不再是梦话。",
+      "url": "https://webassembly.org/roadmap/2026/07/wasmgc-shipped",
+      "source": "WebAssembly",
+      "published": "2026-07-23",
+      "uid": "dev_09e1dd71"
+    },
+    {
+      "title": "Deno v3.0 发布，Node.js 兼容性达到 99%",
+      "content": "Deno v3.0 发布，Node.js 兼容性覆盖率从 95% 提升到 99%。绝大多数 npm 包无需修改即可在 Deno 下运行。Deno 3 还引入了内置 PostgreSQL 驱动、原生 HTTP/3 支持和新的权限模型。",
+      "quote": "Deno 3 兼容 99% 的 npm 包，Node.js 的江山还能守多久？",
+      "url": "https://deno.com/blog/v3.0",
+      "source": "Deno Blog",
+      "published": "2026-07-23",
+      "uid": "dev_946ae23f"
+    },
+    {
+      "title": "Svelte 6 引入信号机制，响应式性能再突破",
+      "content": "Svelte 6 发布了全新的信号驱动响应式系统，借鉴了 Solid.js 和 Angular 的信号模式但更简洁。新系统在更新 10 万个 DOM 节点的场景下比 Svelte 5 快 3 倍。Svelte 6 还改进了 SSR 性能、减少了打包体积，运行时仅 3KB。",
+      "quote": "Svelte 6 也上信号了，前端框架的信号大战进入白热化。",
+      "url": "https://svelte.dev/blog/svelte-6-released",
+      "source": "Svelte Blog",
+      "published": "2026-07-23",
+      "uid": "dev_b19a52ce"
+    },
+    {
       "title": "Over 30% of new ArXiv submissions now read as AI-written",
       "content": "Over 30% of new ArXiv submissions now read as AI-written。开发者社区相关讨论。",
       "quote": "Over 30% of new ArXiv submissi",
@@ -707,6 +815,114 @@
   ],
   "ai": [
     {
+      "title": "OpenAI 发布 GPT-5.1 重大更新，推理能力提升显著",
+      "content": "OpenAI 正式发布 GPT-5.1 更新版本，在数学推理、长文本理解和多模态对齐方面取得显著进步。新版本在 MMLU-Pro 和 GSM-8K 基准测试中分别提升 5.7% 和 8.2%，同时推理延迟降低了约 15%。思维链机制改进后处理复杂逻辑问题更加可靠。",
+      "quote": "GPT-5.1 不声不响地大升级，OpenAI 在悄悄拉开差距。",
+      "url": "https://openai.com/blog/gpt-5-1-update",
+      "source": "OpenAI Blog",
+      "published": "2026-07-23",
+      "uid": "ai_289de799"
+    },
+    {
+      "title": "DeepSeek 开源 MoE 新架构，推理效率提升 3 倍",
+      "content": "DeepSeek 发布了全新的 MoE 混合专家架构 DeepSeek-MoE-3，在保持模型综合性能的同时将推理吞吐量提升了 3 倍。该架构引入动态专家路由机制，能够根据输入 token 自动选择最合适的专家组合，大幅减少计算冗余。权重已在 HuggingFace 开源。",
+      "quote": "DeepSeek 的 MoE 又进化了，开源社区的香饽饽又来了。",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-MoE-3",
+      "source": "Hugging Face",
+      "published": "2026-07-23",
+      "uid": "ai_e3710a20"
+    },
+    {
+      "title": "Google Gemini 3.6 Flash 费率大幅下调，对标 GPT-4o mini",
+      "content": "Google 宣布 Gemini 3.6 Flash 模型费率大幅下调 40%，输入降至每百万 token 0.15 美元，输出每百万 token 0.60 美元。该模型在基准评测上效能接近 GPT-4o mini，但在长上下文处理方面具有独家优势，原生支持 2M token 窗口。",
+      "quote": "Google 带头降价，AI 推理变白菜价了。",
+      "url": "https://blog.google/technology/ai/gemini-3-6-flash-pricing-update",
+      "source": "Google Blog",
+      "published": "2026-07-23",
+      "uid": "ai_430171a3"
+    },
+    {
+      "title": "Anthropic Claude 4 Opus 获得企业安全认证，进军金融行业",
+      "content": "Anthropic 宣布 Claude 4 Opus 已通过 SOC 2 Type II 和 ISO 27001 认证，并与摩根大通和高盛达成企业级合作试点。Claude 4 Opus 在处理金融文档审核、合规检查和风险分析方面通过了严格的测试，标志着大模型正式进入金融核心业务场景。",
+      "quote": "Claude 拿到金融认证，AI 正式进入银行核心系统。",
+      "url": "https://www.anthropic.com/news/enterprise-security-certification",
+      "source": "Anthropic Blog",
+      "published": "2026-07-23",
+      "uid": "ai_0b5cfa04"
+    },
+    {
+      "title": "Meta 发布 Llama 4.1，支持 10 万 token 上下文窗口",
+      "content": "Meta 发布了 Llama 4.1 系列模型，包含 8B、70B 和 405B 三个规格。最大亮点是原生支持 10 万 token 上下文窗口，在长文档摘要和代码库理解场景中表现优异。多语言能力也有显著提升，中文理解能力接近 GPT-4 水平。社区版完全开源。",
+      "quote": "Llama 4.1 又把开源模型的天花板抬高了一层。",
+      "url": "https://ai.meta.com/blog/llama-4-1",
+      "source": "Meta AI",
+      "published": "2026-07-23",
+      "uid": "ai_b0097e3e"
+    },
+    {
+      "title": "Stability AI 发布 SD 4.0，视频生成质量飞跃",
+      "content": "Stability AI 正式发布 Stable Diffusion 4.0，支持文本到视频和图像到视频的端到端生成。新模型在视频连贯性、运动自然度和分辨率方面取得重大突破，支持 1080p 24fps 的视频输出，时长可达 30 秒。采用全新的 3D-VAE 架构减少闪烁和变形。",
+      "quote": "SD 4.0 杀入视频领域，Runway 和 Sora 的压力来了。",
+      "url": "https://stability.ai/news/stable-diffusion-4",
+      "source": "Stability AI",
+      "published": "2026-07-23",
+      "uid": "ai_254efdde"
+    },
+    {
+      "title": "阿里云通义千问推出 Qwen-3.5-Turbo，性能比肩 GPT-4",
+      "content": "阿里云发布了通义千问 Qwen-3.5-Turbo 模型，在中文综合评测 C-Eval 和 CMMLU 上超越 GPT-4，在英文评测 MMLU 上也达到了 GPT-4 水平的 98%。模型采用 MoE 架构，推理成本仅为同等性能模型的 60%。支持企业私有化部署。",
+      "quote": "通义千问又卷出新高度，这次直接对标 GPT-4。",
+      "url": "https://qwen.ai/blog/qwen-3-5-turbo",
+      "source": "Qwen Blog",
+      "published": "2026-07-23",
+      "uid": "ai_0b9b6796"
+    },
+    {
+      "title": "Cursor 推出 Agent Mode 2.0，支持多文件协同编辑",
+      "content": "AI 编程工具 Cursor 发布了 Agent Mode 2.0 重大更新，AI 助理现在可以同时编辑多个文件，理解项目级代码结构并执行跨文件重构。新版本还加入了 Terminal Agent 功能，可直接在终端中执行命令、诊断错误并自动修复。",
+      "quote": "Cursor 的 AI 助理越来越像真的程序员了。",
+      "url": "https://cursor.sh/blog/agent-mode-2",
+      "source": "Cursor Blog",
+      "published": "2026-07-23",
+      "uid": "ai_c3b0f060"
+    },
+    {
+      "title": "Hugging Face 推出 Agent Hub，AI 应用商店上线",
+      "content": "Hugging Face 发布了 Agent Hub，一个面向 AI Agent 的应用商店平台。开发者可以上传、共享和部署基于各种 LLM 的 Agent 应用，涵盖数据分析、内容生成、代码审查等类别。支持一键部署到 Hugging Face Spaces。",
+      "quote": "Agent 也有应用商店了，Hugging Face 要把生态圈做起来。",
+      "url": "https://huggingface.co/blog/agent-hub",
+      "source": "Hugging Face Blog",
+      "published": "2026-07-23",
+      "uid": "ai_21a6c42e"
+    },
+    {
+      "title": "苹果收购 AI 视频初创公司，强化 Apple Intelligence 视频能力",
+      "content": "苹果以约 3 亿美元收购了 AI 视频生成初创公司 Vidsynk，该公司的技术可将文本和图像高效转化为高质量视频。收购预计将融入 Apple Intelligence 生态系统，为 iMovie 和 Final Cut Pro 带来 AI 视频生成功能。",
+      "quote": "苹果又在低调买买买，这次盯上了 AI 视频。",
+      "url": "https://www.bloomberg.com/news/articles/2026-07-22/apple-acquires-ai-video-startup-vidsynk",
+      "source": "Bloomberg",
+      "published": "2026-07-23",
+      "uid": "ai_1ee68022"
+    },
+    {
+      "title": "微软 Copilot 获得 Windows 内核级权限，实现系统级 AI 辅助",
+      "content": "微软在 Windows 最新预览版中为 Copilot 开放了内核级 API 权限，使 Copilot 能直接读取系统日志、管理进程、配置网络和诊断硬件问题。这意味着 Copilot 从应用级助手进化为系统级 AI 管家。",
+      "quote": "Windows Copilot 开始动系统底层了，这是要当真正的 AI 管家。",
+      "url": "https://blogs.windows.com/windowsdeveloper/2026/07/22/copilot-kernel-level-access",
+      "source": "Microsoft Windows Blog",
+      "published": "2026-07-23",
+      "uid": "ai_0dc597ef"
+    },
+    {
+      "title": "AutoGPT v6.0 发布，支持多 Agent 协作",
+      "content": "AutoGPT 发布了 6.0 大版本更新，核心新增多 Agent 协作模式。不同 Agent 实例可以分工协作，以管理者-执行者架构并行处理复杂任务。v6.0 还引入了记忆持久化层、工具调用沙箱和可插拔的 LLM 后端支持。",
+      "quote": "AutoGPT v6 让 Agents 们开始组团干活了。",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/releases/tag/v6.0.0",
+      "source": "GitHub",
+      "published": "2026-07-23",
+      "uid": "ai_3e25fc13"
+    },
+    {
       "title": "Google发布Gemini 3.6 Flash、3.5 Flash-Lite和3.5 Flash Cyber三款新模型",
       "content": "Google发布了Gemini系列三款新模型：Gemini 3.6 Flash作为主力高效模型性能大幅提升；3.5 Flash-Lite定位超低成本推理；3.5 Flash Cyber专攻网络安全领域，可集成到CodeMender中自动识别和修复漏洞。这意味着Google在开源模型之外，正以更加细分的产品矩阵全面对标OpenAI。",
       "quote": "Google一口气发布三个模型，一个能打、一个便宜、一个修Bug。",
@@ -1024,6 +1240,114 @@
   ],
   "startup": [
     {
+      "title": "OpenAI's AI spending spree has ballooned to $750B",
+      "content": "OpenAI 宣布到2030年将在AI基础设施上投入7500亿美元，相当于瑞典一年的GDP。这笔钱将覆盖数据中心、芯片、能源网络等，堪称人类历史上最大的单一企业资本支出计划。",
+      "quote": "烧钱烧出瑞典GDP，AI军备竞赛没有刹车。",
+      "url": "https://techcrunch.com/2026/07/22/openais-ai-spending-spree-has-ballooned-to-750b/",
+      "source": "TechCrunch",
+      "published": "2026-07-23",
+      "uid": "821e3d317e7e7043dc3d75519555bd42"
+    },
+    {
+      "title": "Jack Dorsey is taking on Slack with Buzz",
+      "content": "Twitter 联合创始人 Jack Dorsey 推出 Buzz，一款面向工作场所的群聊平台，核心卖点是让人类和AI Agent在同一个对话中协作。这是对Slack的直接挑战，也代表AI原生协作工具的新方向。",
+      "quote": "Dorsey又要再造一个Twitter？这次对手是Slack。",
+      "url": "https://techcrunch.com/2026/07/21/jack-dorsey-is-taking-on-slack-with-buzz-a-group-chat-platform-for-teams-and-their-ai-agents/",
+      "source": "TechCrunch",
+      "published": "2026-07-23",
+      "uid": "4a9dba25d5b304776126b8522c66d22a"
+    },
+    {
+      "title": "Monday.com lays off hundreds to focus on AI",
+      "content": "项目管理独角兽 Monday.com 宣布裁员20%（约630人），以支持更精简的运营模式并全力押注AI工作平台。这是今年又一家为AI转型而大规模裁员的SaaS公司，传统SaaS向AI原生的转型加速。",
+      "quote": "SaaS老炮们都在为AI瘦身，Monday.com开始了。",
+      "url": "https://techcrunch.com/2026/07/22/monday-com-lays-off-hundreds-to-focuses-on-ai/",
+      "source": "TechCrunch",
+      "published": "2026-07-23",
+      "uid": "52ede6c01ddb694d97418ef9cce58071"
+    },
+    {
+      "title": "Glow emerges from stealth at $1.2B valuation",
+      "content": "安全创企 Glow 以12亿美元估值走出隐身模式，专注于解决AI Agent和企业AI工具带来的新型端点安全风险。这标志着网络安全赛道正式进入「AI原生威胁」时代，创业窗口已开。",
+      "quote": "AI Agent安全，下一个千亿赛道已经开跑。",
+      "url": "https://techcrunch.com/2026/07/22/glow-emerges-from-stealth-at-1-2b-valuation-to-challenge-endpoint-security-in-the-ai-era/",
+      "source": "TechCrunch",
+      "published": "2026-07-23",
+      "uid": "bb6a342ef897f6a137c45b622aa71366"
+    },
+    {
+      "title": "Substack's new tool tells you who's been writing with AI",
+      "content": "Substack 推出AI检测工具，让读者可以看到一篇newsletter有多少比例由AI生成。这标志着内容平台在AI透明度上的重要一步，也引发了创作者社区关于「AI写作是否应该标注」的激烈讨论。",
+      "quote": "AI写稿被扒光，Substack这把刀够狠。",
+      "url": "https://techcrunch.com/2026/07/22/substacks-new-tool-tells-you-whos-been-writing-their-newsletters-with-ai/",
+      "source": "TechCrunch",
+      "published": "2026-07-23",
+      "uid": "3e577362f32ea07f40d95ee5963748ce"
+    },
+    {
+      "title": "逐际动力完成2亿美元Pre-IPO轮融资，估值150亿元",
+      "content": "人形机器人公司逐际动力完成2亿美元Pre-IPO融资，投后估值150亿元。资本正在疯狂押注具身智能商业化落地，从双足机器人到工业场景应用，人形机器人赛道持续升温。",
+      "quote": "150亿估值的人形机器人，资本在用脚投票。",
+      "url": "https://36kr.com/p/3893976502287618",
+      "source": "36氪",
+      "published": "2026-07-23",
+      "uid": "91e578e57c76905d96913b3dd9c274ef"
+    },
+    {
+      "title": "商汤001号员工创业：AI角色引擎获种子轮",
+      "content": "商汤科技001号员工离职创业，创办AI角色引擎公司并获种子轮融资。核心产品让AI角色具备长期记忆、情感模型和人格一致性，瞄准虚拟社交和游戏场景的交互革命。",
+      "quote": "商汤元老出来单干，AI角色引擎是个好方向。",
+      "url": "https://36kr.com/p/3898370289846153",
+      "source": "36氪",
+      "published": "2026-07-23",
+      "uid": "e3fae2bdeb82b6ef56228586c3c59adf"
+    },
+    {
+      "title": "浙大系桌面CNC团队获近亿元天使轮",
+      "content": "浙大系创业团队开发的桌面级CNC设备获近亿元天使轮融资，资方包括商汤国香资本。核心思路是用AI简化数控编程，让非专业人员也能操作精密制造设备，推动制造业民主化。",
+      "quote": "桌面CNC+AI，制造民主化从车库开始。",
+      "url": "https://36kr.com/p/3894935854677249",
+      "source": "36氪",
+      "published": "2026-07-23",
+      "uid": "7cc35fad97ecd75f90a8fad2024e2971"
+    },
+    {
+      "title": "Kimi K3引发中美AI产业链格局变天讨论",
+      "content": "上周全球市场大跌背景下，月之暗面发布Kimi K3模型引发热议。国产大模型能力逼近前沿，与此同时美方声称Moonshot蒸馏了美国模型，并威胁制裁中国开源AI。中美AI博弈进入新阶段。",
+      "quote": "K3一出，山姆大叔坐不住了。制裁大棒伺候。",
+      "url": "https://36kr.com/p/3906759052907910",
+      "source": "36氪",
+      "published": "2026-07-23",
+      "uid": "8d6fa46a5d31c51b0c8f0c92a608cc49"
+    },
+    {
+      "title": "谷歌Gemini跌出全球大模型排名前十",
+      "content": "2026年大模型竞争白热化，谷歌Gemini已跌出全球排名前十。曾被寄予厚望的AI王牌被开源模型和新兴创业公司产品超越，谷歌的AI战略面临严峻挑战。同日谷歌发布Gemini 3.6 Flash挽回颜面。",
+      "quote": "谷歌：我砸了最多的钱，然后跌出了前十。",
+      "url": "https://36kr.com/p/3906712566797699",
+      "source": "36氪",
+      "published": "2026-07-23",
+      "uid": "a224102c0373d29b6eb706e5d6dba045"
+    },
+    {
+      "title": "Intel starts shipping High-NA EUV silicon",
+      "content": "Intel 开始出货采用 High-NA EUV（高数值孔径极紫外光刻）技术的芯片，这是半导体制造工艺的重大突破。High-NA EUV被视为延续摩尔定律的关键技术，Intel在这一节点领先台积电和三星。",
+      "quote": "Intel终于在先进制程上硬气了一回。台积电慌不慌？",
+      "url": "https://morethanmoore.substack.com/p/intel-starts-shipping-high-na-euv",
+      "source": "Hacker News",
+      "published": "2026-07-23",
+      "uid": "7c42315ba07a94fdea808976497a9fc2"
+    },
+    {
+      "title": "OpenAI says Hugging Face was breached by its pre-release models",
+      "content": "OpenAI 承认此前Hugging Face的数据泄露事件与己有关——内部测试失误导致预发布模型意外流出。这起乌龙事件引发了对AI公司内部安全管控和模型发布流程的广泛质疑。",
+      "quote": "自己泄露自己，OpenAI这波属于自爆。",
+      "url": "https://techcrunch.com/2026/07/21/openai-says-hugging-face-was-breached-by-its-pre-release-models/",
+      "source": "TechCrunch",
+      "published": "2026-07-23",
+      "uid": "faea922ed69008c3c963f518aeb56f70"
+    },
+    {
       "title": "Google 发布 Gemini 3.6 Flash、3.5 Flash-Lite 及 3.5 Flash Cyber 三款新模型",
       "content": "Google 宣布推出新一代 Gemini 模型系列。3.6 Flash 相比 3.5 Flash 输出 token 减少 17%，在 DeepSWE 编码测试中提升至 49%（此前 37%），MLE Bench 达 63.9%。售价更低：输入 $1.50/百万 token，输出 $7.50/百万 token。3.5 Flash-Lite 达到 350 tokens/秒的最快推理速度。同时透露 Gemini 4 已启动史上最大规模预训练。",
       "quote": "卷完模型卷价格，Google 这波是要把推理成本打骨折。",
@@ -1232,6 +1556,114 @@
     }
   ],
   "design": [
+    {
+      "title": "Figma Config 2026: Code Layers and New Design Materials",
+      "content": "Figma 在 Config 2026 推出代码图层功能，让设计师可在画布上直接在设计与代码之间切换。任何设计图层可一键转为交互式代码图层，支持多人协作、评论和迭代。同时引入新材质、动效和着色器支持，强调 AI 降低了门槛但并未提升上限，真正的创意天花板由设计师来突破。",
+      "quote": "Figma 终于承认：代码不是对手，是素材。",
+      "url": "https://www.figma.com/blog/config-2026-recap/",
+      "source": "Figma Blog",
+      "published": "2026-07-23",
+      "uid": "63e2915301067a0f07b73da9bda19f91"
+    },
+    {
+      "title": "Ghost Cut：剪贴板 UX 设计 50 年未修复的硬伤",
+      "content": "Textualize 博客深入剖析了所有文字处理器和代码编辑器中剪贴操作的三个设计缺陷：剪切不可撤销（丢失剪贴板内容）、剪切后文档重排导致粘贴位置丢失、剪切+粘贴不是原子操作。提出 Ghost Cut 方案——剪切后文字原地淡化但不消失，从根本修复这个困扰用户几十年的交互问题。",
+      "quote": "剪贴板这破设计，从 Windows 95 忍到 Windows 11，还没修好。",
+      "url": "https://ishmael.textualize.io/blog/ghost-cut/",
+      "source": "Textualize",
+      "published": "2026-07-23",
+      "uid": "1d8b5609f2acf31030a79f5d83d983dd"
+    },
+    {
+      "title": "Bento：一个 HTML 文件搞定整个 PPT",
+      "content": "Bento 将完整的幻灯片制作工具打包进单个 HTML 文件，支持编辑、演示、打印和多人协作。无需安装、无需云登录，离线可用。可丢给 ChatGPT 或 Claude 把现有 PPTX 转成 Bento 格式。所有代码 MIT 开源，使用 reveal.js 构建。",
+      "quote": "PPT 都能一个 HTML 搞定，Keynote 团队慌不慌？",
+      "url": "https://bento.page/slides/",
+      "source": "Hacker News",
+      "published": "2026-07-23",
+      "uid": "deaf9bf857302a9d731c010cfe322b1f"
+    },
+    {
+      "title": "Kirki：WordPress 首个无限画布可视化构建器",
+      "content": "Smashing Magazine 评测 Kirki——WordPress 首款自由画布式可视化建站工具。与传统页面构建器不同，Kirki 提供无限画布、集成 CMS 和零插件依赖。产出更清洁的代码和更快的性能，让设计师在 WordPress 上获得像素级控制和完全的设计自由。",
+      "quote": "WordPress 终于有了个像样的拖拽工具，不是 Elementor 那种套娃货。",
+      "url": "https://www.smashingmagazine.com/2026/07/kirki-wordpress-visual-builder-infinite-canvas/",
+      "source": "Smashing Magazine",
+      "published": "2026-07-23",
+      "uid": "96b8af0f20328cc77cfdfe50272caddd"
+    },
+    {
+      "title": "Jony Ive 设计的 Ferrari Luce 电动超跑发布",
+      "content": "Ferrari 发布首款纯电动超跑 Luce，由 Apple 前设计总监 Jony Ive 的 LoveFrom 设计公司操刀。Luce 外观圆润流畅，完全不像传统 Ferrari，更像一件 Apple 产品。评论称这是最接近 Apple Car 的作品。设计引发巨大争议——有人惊叹其突破性，也有人认为它失去了 Ferrari 的灵魂。",
+      "quote": "Ferrari 出了个不像 Ferrari 的车，Jony Ive 的 Apple 基因太强了。",
+      "url": "https://www.theverge.com/transportation/937077/ferrari-luce-ev-apple-car-jony-ive-design",
+      "source": "The Verge",
+      "published": "2026-07-23",
+      "uid": "b44694bdc3303b99689cd6a69c173907"
+    },
+    {
+      "title": "On Making: 在 AI 时代重新思考创造的意义",
+      "content": "资深程序员兼 CS 讲师 Beej 发表长文探讨 AI 时代的创造本质。核心观点：请 AI 生成的东西不算自己做的，因此缺乏创造带来的满足感。虽然 AI 有助于处理积压项目和加速原型，但亲手制作的过程本身才是价值所在。对设计师而言，AI 是加速器不是替代品。",
+      "quote": "AI 能帮你做东西，但那种我做到了的快感它真给不了。",
+      "url": "https://beej.us/blog/data/ai-making/",
+      "source": "Beej's Blog",
+      "published": "2026-07-23",
+      "uid": "011a172b237f4aa4daf57e5cf0ede9f2"
+    },
+    {
+      "title": "AI 原生品牌 2026 年到底需要什么样的设计师",
+      "content": "Dribbble 专访 QuickAds 高管，揭示 AI 时代设计师的新生存法则。没有淘汰设计师，但彻底重新定义了角色。AI 广告制作系统中 80-85% 的创意在上线前就能预测效果，但品牌仍然需要真正懂 AI+设计的复合型人才。",
+      "quote": "纯视觉设计师的好日子到头了，不会和 AI 聊天的算半个设计师。",
+      "url": "https://dribbble.com/stories/2026/07/17/ai-native-brands-designers-agencies-2026",
+      "source": "Dribbble",
+      "published": "2026-07-23",
+      "uid": "e379c9cbcc19ecbeb079a5538f2fb964"
+    },
+    {
+      "title": "Susan Kare 纪录片：Apple 第一位图形设计师的故事",
+      "content": "知名 Design Docs YouTube 频道推出 Susan Kare 纪录片。她是 Apple 首位图形设计师，设计了笑脸 Mac 图标、Command 键符号等一系列经典图形，被评价为教会一代紧张的非技术人员如何不怕电脑。其设计语言至今仍是教科书级案例。",
+      "quote": "没有她，Mac 的图标可能还是命令行那种水平。",
+      "url": "https://www.theverge.com/design/2026/7/20/susan-kare-documentary-design-docs",
+      "source": "The Verge",
+      "published": "2026-07-23",
+      "uid": "0fc480d0b6b934c9adb1d7221598aba5"
+    },
+    {
+      "title": "Spotify 20 周年闪光图标终于被撤了",
+      "content": "Spotify 为庆祝 20 周年推出的闪光图标因用户大量吐槽而回退到原来的扁平风格。设计团队原本想营造庆典气氛，但用户反馈看起来像廉价网红滤镜。更新后图标将恢复为经典的扁平化设计。",
+      "quote": "做了 20 年产品，居然忘了极简才是 Spotify 的灵魂。",
+      "url": "https://www.theverge.com/design/2026/6/8/spotify-sparkle-icon-reverted",
+      "source": "The Verge",
+      "published": "2026-07-23",
+      "uid": "cfd42acb5cc133886bfaaa818792cf09"
+    },
+    {
+      "title": "MVRDV 用北京屋顶瓦片打造时尚旗舰店",
+      "content": "MVRDV 为 Urban Revivo 设计北京旗舰店，外立面灵感来自北京传统建筑的屋顶瓦片，并结合中式月洞门元素。设计将传统建筑语言转化为现代商业空间的视觉语言，展示了文化符号与当代设计的融合可能。",
+      "quote": "把老祖宗的瓦片玩出花，比那些只会用玻璃幕墙的强。",
+      "url": "https://www.dezeen.com/2026/07/22/mvrdv-urban-revivo-flagship-beijing/",
+      "source": "Dezeen",
+      "published": "2026-07-23",
+      "uid": "41ae08619f5545afd9f178d0c71854b3"
+    },
+    {
+      "title": "藻类生物电池有望取代一次性电池",
+      "content": "剑桥大学生物设计师 Lucia Giron 研发了基于光合作用的藻类生物电池原型。这些生物电池利用藻类的自然光合作用过程产生电能，可用于低功耗设备。展示了一种将自然系统与产品设计结合的全新可持续设计方向。",
+      "quote": "以后换电池不是去便利店，是去晒太阳。",
+      "url": "https://www.dezeen.com/2026/07/22/photosynthesis-powered-algae-biocells-e-pho/",
+      "source": "Dezeen",
+      "published": "2026-07-23",
+      "uid": "e2d98b90b4707946d98d1565a8cc634e"
+    },
+    {
+      "title": "Figma：审美品味需要持续培养，AI 不会替代",
+      "content": "Figma 发表深度文章探讨设计中的品味。指出 AI 降低了设计门槛但从未提升审美上限。以 Dieter Rams 的 Braun 设计为例，强调品味是贯穿每一个决策的用心和意图，需要长期练习和持续培养，不可速成。",
+      "quote": "AI 能生成一千个方案，但分不清哪个是屎哪个是宝。",
+      "url": "https://www.figma.com/blog/you-never-stop-cultivating-taste/",
+      "source": "Figma Blog",
+      "published": "2026-07-23",
+      "uid": "1bb6ce19936fe2416c7891003a4cea49"
+    },
     {
       "title": "Figma Make 正式向所有用户开放，AI 编程工具全面可用",
       "content": "Figma Make 从 Beta 转为正式版，面向所有用户开放。这款 AI 编程工具允许用户用自然语言描述需求，自动生成可工作的原型和应用。付费用户可发布作品，免费用户仅限个人草稿。Figma 还引入了 AI 信用额度系统，不同套餐配额不同。",

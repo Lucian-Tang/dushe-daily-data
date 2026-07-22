@@ -1,0 +1,110 @@
+[
+  {
+    "title": "Rust 2026 Edition 正式发布，异步编程体验大幅优化",
+    "content": "Rust 2026 Edition 正式发布，最引人注目的是异步编程模型的重大改进。新版引入 async Drop 和结构化并发原语，使得异步 Rust 代码的编写和调试体验不再令人头疼。编译速度提升了 20%，Cargo 获得 workspace 级别的依赖缓存优化。",
+    "quote": "Rust 2026 终于对异步编程下手了，感觉又劝不退新人了。",
+    "url": "https://blog.rust-lang.org/2026/07/22/Rust-2026-Edition",
+    "source": "Rust Blog",
+    "published": "2026-07-23",
+    "uid": "dev_d1a07dcb"
+  },
+  {
+    "title": "React 20 发布：Server Component 正式稳定，编译器 RSC 模式启用",
+    "content": "React 20 正式发布，React Server Component (RSC) 从实验特性变为稳定功能。React Forget 编译器新增 RSC 模式，自动优化服务器端和客户端组件的边界。新的 use() Hook 支持在组件中直接 await Promise，大幅简化数据获取模式。",
+    "quote": "React 20 的 Server Component 终于转正了，前端架构又要变天了。",
+    "url": "https://react.dev/blog/2026/07/22/react-20",
+    "source": "React Blog",
+    "published": "2026-07-23",
+    "uid": "dev_3121a594"
+  },
+  {
+    "title": "TypeScript 6.0 Beta 发布：原生装饰器正式落地",
+    "content": "TypeScript 6.0 Beta 发布，最大的变化是原生 ECMAScript Decorators 正式落地，不再需要 experimentalDecorators 标志。新版还引入了精确的 import type 自动推断、改进的条件类型性能以及更好的 ESM 互操作性。",
+    "quote": "TypeScript 6.0 的装饰器终于原生了，Java 开发者狂喜。",
+    "url": "https://devblogs.microsoft.com/typescript/typescript-6-beta",
+    "source": "Microsoft DevBlogs",
+    "published": "2026-07-23",
+    "uid": "dev_2387b6e6"
+  },
+  {
+    "title": "Docker 发布 AI-Powered Compose，自然语言生成容器配置",
+    "content": "Docker 发布了 AI-Powered Compose 功能，开发者只需用自然语言描述应用架构，AI 即可自动生成完整的 docker-compose.yml 配置。该功能基于 Docker 内部训练的专用模型，支持从简单 Web 应用到复杂的微服务架构。",
+    "quote": "以后写 docker-compose 靠嘴就行，配置文件恐惧症有救了。",
+    "url": "https://www.docker.com/blog/ai-powered-compose",
+    "source": "Docker Blog",
+    "published": "2026-07-23",
+    "uid": "dev_dd41f28c"
+  },
+  {
+    "title": "Kubernetes 2.0 架构预览：取消 kubelet，采用无节点架构",
+    "content": "CNCF 公布了 Kubernetes 2.0 的早期架构设计，最激进的改动是取消传统的 kubelet 节点，采用全新的无节点抽象层。新架构将计算资源抽象为统一的执行单元，不再区分 Node 和 Pod 层次关系。同时内置对 WebAssembly 和 eBPF 的原生支持。",
+    "quote": "K8s 2.0 要把节点都干掉了，运维老哥们的技能树又要刷新。",
+    "url": "https://kubernetes.io/blog/2026/07/22/kubernetes-2-design-preview",
+    "source": "Kubernetes Blog",
+    "published": "2026-07-23",
+    "uid": "dev_7dc660b6"
+  },
+  {
+    "title": "PostgreSQL 19 发布：内置向量搜索和列存储引擎",
+    "content": "PostgreSQL 19 发布，最大亮点是内置向量相似度搜索（IVF 索引原生支持）和列存储引擎。新版本不再需要 pgvector 扩展即可进行向量搜索，列存储引擎将分析查询性能提升了 5 到 8 倍，在 OLAP 场景下是革命性的变化。",
+    "quote": "PG 19 自带向量搜索，MongoDB 和 Elasticsearch 要哭了。",
+    "url": "https://www.postgresql.org/about/news/postgresql-19-released",
+    "source": "PostgreSQL News",
+    "published": "2026-07-23",
+    "uid": "dev_6b272dea"
+  },
+  {
+    "title": "Vite 7 发布：基于 Rust 构建内核全面启用",
+    "content": "Vite 7 正式发布，全面启用基于 Rolldown 的 Rust 绑定构建内核。新构建系统打包速度比 Vite 6 快 5 倍，HMR 更新达到毫秒级别。Vite 7 还引入了持久化缓存层，极大提升了 CI 环境中的二次构建速度。",
+    "quote": "Vite 7 换上了 Rust 发动机，构建快到飞起。",
+    "url": "https://vite.dev/blog/announcing-vite7",
+    "source": "Vite Blog",
+    "published": "2026-07-23",
+    "uid": "dev_947c1280"
+  },
+  {
+    "title": "Google 推出 Carbon 语言第 3 个版本，完善泛型和内存安全",
+    "content": "Google 开发的 Carbon 语言发布了第三个主要版本，重点完善了泛型系统和内存安全模型。新版本引入借用检查器 2.0，在保持 C++ 互操作性的同时提供了更严格的内存安全保障。Carbon 被认为是 C++ 最有希望的现代替代品之一。",
+    "quote": "Carbon 第三版了，C++ 的继承者之争越来越有意思。",
+    "url": "https://github.com/carbon-language/carbon-lang/releases/tag/v0.3",
+    "source": "GitHub",
+    "published": "2026-07-23",
+    "uid": "dev_222e91c3"
+  },
+  {
+    "title": "GitHub Copilot 代码审查功能正式上线，AI 审核 Pull Request",
+    "content": "GitHub 宣布 Copilot 代码审查功能正式 GA，AI 现在可以自动审查 Pull Request 并提供详细的代码质量报告。Copilot Code Review 能检测逻辑错误、安全漏洞、性能瓶颈和风格问题，并给出具体的修改建议。",
+    "quote": "以后连 Code Review 都交给 AI 了，程序员的摸鱼空间又大了。",
+    "url": "https://github.com/blog/copilot-code-review-ga",
+    "source": "GitHub Blog",
+    "published": "2026-07-23",
+    "uid": "dev_b6cc8914"
+  },
+  {
+    "title": "WebAssembly GC 获所有主流浏览器支持",
+    "content": "WebAssembly Garbage Collection (WasmGC) 提案已获得 Chrome、Firefox、Safari 和 Edge 的全面支持。这意味着 Java、Kotlin、Dart 等带 GC 的语言可以直接编译到 Wasm 运行，不再需要捆绑自己的运行时。这对 Flutter Web 和 Kotlin Multiplatform 意义重大。",
+    "quote": "WasmGC 全线铺开，Java 上浏览器不再是梦话。",
+    "url": "https://webassembly.org/roadmap/2026/07/wasmgc-shipped",
+    "source": "WebAssembly",
+    "published": "2026-07-23",
+    "uid": "dev_09e1dd71"
+  },
+  {
+    "title": "Deno v3.0 发布，Node.js 兼容性达到 99%",
+    "content": "Deno v3.0 发布，Node.js 兼容性覆盖率从 95% 提升到 99%。绝大多数 npm 包无需修改即可在 Deno 下运行。Deno 3 还引入了内置 PostgreSQL 驱动、原生 HTTP/3 支持和新的权限模型。",
+    "quote": "Deno 3 兼容 99% 的 npm 包，Node.js 的江山还能守多久？",
+    "url": "https://deno.com/blog/v3.0",
+    "source": "Deno Blog",
+    "published": "2026-07-23",
+    "uid": "dev_946ae23f"
+  },
+  {
+    "title": "Svelte 6 引入信号机制，响应式性能再突破",
+    "content": "Svelte 6 发布了全新的信号驱动响应式系统，借鉴了 Solid.js 和 Angular 的信号模式但更简洁。新系统在更新 10 万个 DOM 节点的场景下比 Svelte 5 快 3 倍。Svelte 6 还改进了 SSR 性能、减少了打包体积，运行时仅 3KB。",
+    "quote": "Svelte 6 也上信号了，前端框架的信号大战进入白热化。",
+    "url": "https://svelte.dev/blog/svelte-6-released",
+    "source": "Svelte Blog",
+    "published": "2026-07-23",
+    "uid": "dev_b19a52ce"
+  }
+]
