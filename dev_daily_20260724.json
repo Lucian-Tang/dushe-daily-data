@@ -1,0 +1,162 @@
+[
+  {
+    "title": "OpenJDK 推出 JEP 540: 内置 JSON API 孵化器",
+    "content": "OpenJDK 发布 JEP 540 提案，为 Java 平台提供内置的 JSON 解析与生成 API。无需外部库即可处理 RFC 8259 兼容的 JSON 文档，保持 API 小巧简单，支持快速探索和错误恢复。目标是让 Java 像 Python 或 Go 那样轻松处理 JSON。",
+    "quote": "Java 终于发现没有 JSON 原生支持也太没面子了，追了十几年总算舍得动手了。",
+    "url": "https://openjdk.org/jeps/540",
+    "source": "Hacker News",
+    "published": "2026-07-24",
+    "uid": "dev_3edd59ed",
+    "hotScore": "60"
+  },
+  {
+    "title": "阿里巴巴开源 AI 代码审查工具 Open Code Review",
+    "content": "阿里巴巴将内部运行两年、服务数万开发者的 AI 代码审查工具 Open Code Review 开源。采用确定性流水线+LLM Agent 混合架构，支持精确的行级注释，内置 NPE、线程安全、XSS、SQL注入等检测规则，兼容 OpenAI 和 Anthropic 模型。以约 1/9 的 Token 消耗实现更高精度。",
+    "quote": "阿里内部用了两年打磨的东西终于放出来了，GitHub 上那些号称 AI 代码审查的玩具该慌了。",
+    "url": "https://github.com/alibaba/open-code-review",
+    "source": "GitHub热榜",
+    "published": "2026-07-24",
+    "uid": "dev_93d92cb8",
+    "hotScore": "11338"
+  },
+  {
+    "title": "500 行 C++ 实现软件渲染器教程爆火",
+    "content": "一篇名为《Software rendering in 500 lines of bare C++》的教程在 Hacker News 上引发热议。作者从零开始用纯 C++ 实现了一个完整的软件渲染器，涵盖光栅化、深度缓冲、纹理映射等核心概念，仅用约 500 行代码。对想理解图形学底层的开发者来说是一份极佳的学习资料。",
+    "quote": "500 行让你明白 GPU 到底在干啥，比读一万行 Vulkan 样板代码有效多了。",
+    "url": "https://haqr.eu/tinyrenderer/",
+    "source": "Hacker News",
+    "published": "2026-07-24",
+    "uid": "dev_de260cb0",
+    "hotScore": "169"
+  },
+  {
+    "title": "Palmier Pro 开源 macOS 视频编辑器发布",
+    "content": "Palmier Pro 是一个用 Swift 从头构建的开源 macOS 视频编辑器，目标对标 Premiere Pro 的工作流。深度集成 AI 能力，支持通过 MCP 协议连接 Claude、Codex、Cursor 等 AI 工具在时间线上协同编辑视频，集成 Seedance、Kling 等生成模型。编辑器核心功能完全开源免费。",
+    "quote": "每个开发者梦寐以求的场景：一边敲代码一边让 AI 帮你剪片。Adobe 慌不慌？",
+    "url": "https://github.com/palmier-io/palmier-pro",
+    "source": "Hacker News",
+    "published": "2026-07-24",
+    "uid": "dev_ebc5d1ce",
+    "hotScore": "44"
+  },
+  {
+    "title": "OneCLI: 开源凭证网关让 AI 程序不碰密钥",
+    "content": "OneCLI 是一个开源凭证网关，内置加密保险库。AI 程序通过网关调用外部服务时，真实 API 密钥在请求时由网关动态解密注入，程序只持有占位密钥。提供 Rust 网关和 Web 管理面板，支持 AES-256-GCM 加密存储，妥善解决 AI 程序与密钥管理的安全问题。",
+    "quote": "直接把 API 密钥交给 AI 程序就像把银行卡密码写在便利贴上贴脑门上，OneCLI 总算让这件事不那么恐怖了。",
+    "url": "https://github.com/onecli/onecli",
+    "source": "Hacker News",
+    "published": "2026-07-24",
+    "uid": "dev_adb7b1f1",
+    "hotScore": "42"
+  },
+  {
+    "title": "Geekbench 7 发布: 更大数据集和音视频测试",
+    "content": "Geekbench 7 正式发布！看起来和 Geekbench 6 差不多，但底层引擎全面升级：更大的测试数据集、新增音频/视频编解码测试、以及多项性能微调。新版本能更好地反映现代 CPU 和 GPU 在真实场景下的表现，对开发者评估硬件性能更具参考价值。",
+    "quote": "又到了每年跑分焦虑的季节，Geekbench 7 帮你找到一个重新买 MacBook 的理由。",
+    "url": "https://www.geekbench.com/blog/2026/07/geekbench-7/",
+    "source": "The Verge",
+    "published": "2026-07-24",
+    "uid": "dev_aafbd08f",
+    "hotScore": "14"
+  },
+  {
+    "title": "Automattic 开源 Rust 离线语法检查器 Harper",
+    "content": "WordPress 母公司 Automattic 开源的 Harper 是一个 Rust 编写的英语语法检查器，主打离线、隐私优先、超快速度。仅需 LanguageTool 五十分之一的内存占用，毫秒级扫描整篇文档。支持 WebAssembly 在浏览器中运行，是 Grammarly 的隐私友好型开源方案。",
+    "quote": "Grammarly 在偷看你的每一篇日记，而 Harper 在 Rust 里默默守护你的隐私，高下立判。",
+    "url": "https://github.com/Automattic/harper",
+    "source": "GitHub热榜",
+    "published": "2026-07-24",
+    "uid": "dev_187226af",
+    "hotScore": "12107"
+  },
+  {
+    "title": "Scrapemychats: 免费导出 ChatGPT Business 账户数据",
+    "content": "开源工具 Scrapemychats 解决了 ChatGPT Business/Team 账户无法导出对话历史的痛点。它利用浏览器自动化导出全部对话到本地可搜索离线存档，数据完全不离开你的机器。还附带漂亮的全文搜索浏览界面，无需服务器和网络连接即可使用。",
+    "quote": "ChatGPT Business 连导出按钮都不给，这不就是数字囚笼吗？开源社区又救了大家一次。",
+    "url": "https://github.com/Conradqh/scrapemychats",
+    "source": "Hacker News",
+    "published": "2026-07-24",
+    "uid": "dev_7765ab48",
+    "hotScore": "55"
+  },
+  {
+    "title": "软件工厂为何失败: 编程 Agent 不是银弹",
+    "content": "HumanLayer 创始人深度剖析为什么软件工厂模式正在失败。引用 Faros AI 研究报告——自 AI 编程工具流行以来，PR 审查质量大幅下降，事件和 Bug 数量激增。代码库比以往任何时候都崩溃得更快。呼吁在追求 AI 编码速度的同时重拾代码质量的基础。",
+    "quote": "喊了半年「代码是免费的」，然后发现免费的东西最贵——修复 AI 写的屎山花的钱比省下的多多了。",
+    "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/wsff.md",
+    "source": "Hacker News",
+    "published": "2026-07-24",
+    "uid": "dev_60e655d6",
+    "hotScore": "73"
+  },
+  {
+    "title": "OmniRoute: 免费 AI 网关聚合 290+ 家供应商",
+    "content": "OmniRoute 是一个 MIT 许可的开源 AI 网关，一个端点接入 290+ 供应商（其中 90+ 免费），支持 500+ 模型。具备配额感知自动降级、RTK+Caveman 压缩节省 15-95% Token、MCP/A2A 协议支持。内置免费额度仪表盘，由 500+ 贡献者共同构建，今日 GitHub 飙升 1925 星。",
+    "quote": "当你有 500+ 模型可以选择你却还在只用 ChatGPT，就像有整个自助餐厅却只吃白米饭。",
+    "url": "https://github.com/diegosouzapw/OmniRoute",
+    "source": "GitHub热榜",
+    "published": "2026-07-24",
+    "uid": "dev_229c516e",
+    "hotScore": "26900"
+  },
+  {
+    "title": "Ego Lite: 人和 AI 协同工作的浏览器发布",
+    "content": "Ego Lite 是一款专为人类和 AI 程序并行工作而设计的浏览器。AI 程序在专属的 Spaces 中运行浏览器任务，不干扰用户自己的标签页。保持真实登录态，支持 Cookie 迁移，内建 MCP 工具。目前支持 macOS，Windows 和 Linux 版本在路线图中。",
+    "quote": "终于有人受够了 AI 抢浏览器标签页，做了个让 AI 自己一边玩去不打扰你的浏览器。",
+    "url": "https://github.com/citrolabs/ego-lite",
+    "source": "GitHub热榜",
+    "published": "2026-07-24",
+    "uid": "dev_cd5267d1",
+    "hotScore": "1498"
+  },
+  {
+    "title": "AI 公司隐藏 1.65 万亿美元表外债务",
+    "content": "日经亚洲调查发现，Alphabet、Microsoft、Amazon、Meta、Oracle 五家科技巨头共隐藏约 1.65 万亿美元的表外债务，超过它们官方报告的 1.35 万亿。通过特殊目的实体和表外安排，AI 投资的实际规模被严重低估。专家警告这种会计手段与当年安然公司如出一辙。",
+    "quote": "AI 泡沫的遮羞布被日经一把扯下来——1.65 万亿的表外债务，不就是数字时代的安然 2.0 吗？",
+    "url": "https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet",
+    "source": "Futurism",
+    "published": "2026-07-24",
+    "uid": "dev_f1b719da",
+    "hotScore": "423"
+  },
+  {
+    "title": "初创创始人敦促美国政府不要禁止中国开源 AI",
+    "content": "多位美国初创公司创始人联合呼吁白宫不要切断中国开源权重 AI 模型的访问。他们认为中国开源模型已成为全球 AI 生态系统的重要组成部分，限制访问将损害美国创业公司的竞争力，并可能导致全球 AI 生态分裂。该话题在 Hacker News 引发 440+ 评论的激烈辩论。",
+    "quote": "昨天喊着要封杀中国 AI，今天发现自己的产品就架构在 DeepSeek 上——真香定律连美国政府都躲不过。",
+    "url": "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992",
+    "source": "Politico",
+    "published": "2026-07-24",
+    "uid": "dev_aeadd094",
+    "hotScore": "440"
+  },
+  {
+    "title": "Mozilla AI 在 ACM FAccT 2026 展示 LLM 安全防护方案",
+    "content": "Mozilla AI 团队在蒙特利尔举办的 ACM 公平性、问责制与透明度大会上展示了面向多语言和智能体系统的 LLM Guardrails 上下文评估方案。提出安全护栏和模型本身应该受到同样严格的审查，并演示通过工具使用（例如网页搜索能力）构建更可靠的智能体安全防护方案。",
+    "quote": "所有人都盯着模型能力往上堆，Mozilla 说你们倒是看看那些安全护栏烂成啥样了——不过也确实没人听。",
+    "url": "https://blog.mozilla.ai/from-evaluation-to-guardrails-what-we-brought-to-acm-facct-2026/",
+    "source": "Mozilla",
+    "published": "2026-07-24",
+    "uid": "dev_cd14e34d",
+    "hotScore": "5"
+  },
+  {
+    "title": "Menlo Ventures: Anthropic 赢在不只是模型好",
+    "content": "Menlo Ventures 合伙人 Matt Murphy 详解为什么 Anthropic 在 AI 竞赛中胜出。Anthropic 年化收入从 2025 年的 90 亿美元飙升至 2026 年 5 月的 470 亿美元。Murphy 称 25 年投资生涯从未见过这种增速——无论是互联网浪潮、移动时代还是第一次云计算泡沫都无法相比。",
+    "quote": "年收入 470 亿刀还在说「不只是模型好」，这凡尔赛水平我给满分。",
+    "url": "https://techcrunch.com/video/menlo-ventures-matt-murphy-explains-why-anthropic-is-winning-and-its-not-the-model/",
+    "source": "TechCrunch",
+    "published": "2026-07-24",
+    "uid": "dev_46f77b3e",
+    "hotScore": ""
+  },
+  {
+    "title": "Learn OpenGL 教程更新: 现代 OpenGL 学习资源",
+    "content": "经典 OpenGL 教程网站 LearnOpenGL.com 获得 111 个 Hacker News 点赞。这个广受好评的免费教程持续更新现代 OpenGL 教学内容，覆盖着色器、光照模型、PBR、阴影映射等图形学核心主题，是 C++ 开发者进入计算机图形学的首选入门资源。",
+    "quote": "每一个游戏开发者的启蒙读物，学了三遍还记不住矩阵乘法是正常的别灰心。",
+    "url": "https://learnopengl.com/",
+    "source": "Hacker News",
+    "published": "2026-07-24",
+    "uid": "dev_048fd55c",
+    "hotScore": "111"
+  }
+]
