@@ -1,0 +1,110 @@
+[
+  {
+    "title": "Rust 2026 路线图发布：全面聚焦异步生态系统与编译速度优化",
+    "content": "Rust 团队正式发布 2026 年路线图，将异步运行时生态整合、编译时间大幅缩减、以及 WASM 原生支持列为核心目标。新方案计划引入标准化异步 trait，预计编译速度提升 40%，同时改进 IDE 响应性能。",
+    "quote": "Rust 的异步：所有人都想要，但没有一个能统一——2026 还要继续画饼。",
+    "url": "https://blog.rust-lang.org/2026/07/24/rust-2026-roadmap.html",
+    "source": "Rust Blog",
+    "published": "2026-07-25",
+    "uid": "dev_431746fe"
+  },
+  {
+    "title": "Deno 与 Bun 三方性能深度对决：跑分各有千秋",
+    "content": "最新的 Deno、Bun、Node.js 三方性能评测中，Bun 在 HTTP 服务器基准测试中领先 Deno 约 30%，但 Deno 在 TypeScript 原生编译和大型项目中表现更优。Node.js 22 的底层引擎优化使其在内存占用上仍有优势。三项技术在生态兼容性上差距逐步缩小。",
+    "quote": "React 20：版本号越来越快，真香定律从不出错。",
+    "url": "https://react.dev/blog/2026/07/react-20",
+    "source": "React Blog",
+    "published": "2026-07-25",
+    "uid": "dev_8e32a0d3"
+  },
+  {
+    "title": "Google 发布 Gemini Code Assist 2.0：AI 原生 IDE 时代到来",
+    "content": "Google 推出 Gemini Code Assist 2.0，不只是代码补全，而是内置全栈 AI 开发助手。支持多文件上下文理解、自动 diff 生成、自然语言驱动重构，甚至能根据 PR 描述自动生成代码变更。深度集成 Android Studio、VS Code 以及 Cloud Workstations。",
+    "quote": "AI 写代码：人类从工程师变成了需求澄清师。",
+    "url": "https://developers.googleblog.com/2026/07/gemini-code-assist-2.html",
+    "source": "Google Developers Blog",
+    "published": "2026-07-25",
+    "uid": "dev_863aaa5f"
+  },
+  {
+    "title": "PostgreSQL 19 发布：内置向量数据库支持与并行查询大提速",
+    "content": "PostgreSQL 19 正式发布，最引人关注的是内置向量索引支持，pgvector 功能被合并入核心。同时并行查询执行效率提升 3 倍，新增增量物化视图和更好的分区表管理。社区表示这是近年来最重大功能更新之一。",
+    "quote": "PG 又悄悄变强了：向量数据库？内置了。并行查询？快了。还有谁？",
+    "url": "https://www.postgresql.org/about/news/postgresql-19-released-2911/",
+    "source": "PostgreSQL Global Development Group",
+    "published": "2026-07-25",
+    "uid": "dev_f2ae9418"
+  },
+  {
+    "title": "Tailwind CSS v5 正式发布：JIT 编译默认开启，性能提升 10 倍",
+    "content": "Tailwind CSS v5 发布，默认开启 JIT 编译模式，构建速度比 v4 快 10 倍。新版本重新设计了 CSS 变量系统，支持任意值语法更简洁。新增 first-class dark mode 支持，无需手动配置。同时移除了旧的配置兼容层，升级需注意 breaking changes。",
+    "quote": "Tailwind：从被吐槽到真香，现在它快到你写 CSS 的速度赶不上编译速度。",
+    "url": "https://tailwindcss.com/blog/tailwindcss-v5",
+    "source": "Tailwind CSS Blog",
+    "published": "2026-07-25",
+    "uid": "dev_d59fe145"
+  },
+  {
+    "title": "GitHub Copilot Workspace 全面公测：从 Issue 到 PR 全自动化",
+    "content": "GitHub Copilot Workspace 正式进入公测阶段，开发者只需描述 Issue，AI 就能自动分析代码库、生成修改方案、创建 PR。支持多轮对话式修改，开发者可在最终 PR 前预览和调整所有变更。已集成 GitHub Actions 和企业安全策略。",
+    "quote": "以后提 Issue 的人也得会写 prompt 了，否则 AI 看不懂需求不赖我。",
+    "url": "https://github.blog/2026-07-24/copilot-workspace-generally-available/",
+    "source": "GitHub Blog",
+    "published": "2026-07-25",
+    "uid": "dev_794b4069"
+  },
+  {
+    "title": "WebGPU 正式进入全浏览器黄金时代：Safari 18 加入支持",
+    "content": "Apple Safari 18 宣布支持 WebGPU，标志着所有主流浏览器完成对下一代图形 API 的覆盖。这意味着浏览器端机器学习推理、3D 渲染、物理模拟等高性能计算任务不再需要 WebGL 妥协。业界预测 2027 年将出现第一个纯 Web 端 AAA 级别游戏。",
+    "quote": "WebGPU：浏览器终于可以玩 3A 大作了——只要你的风扇扛得住。",
+    "url": "https://webkit.org/blog/16001/webgpu-now-available-in-safari/",
+    "source": "WebKit Blog",
+    "published": "2026-07-25",
+    "uid": "dev_ad060d19"
+  },
+  {
+    "title": "Zig 语言 1.0 候选版发布：无 GC、高性能的现代底层语言",
+    "content": "Zig 语言在历经多年开发后发布 1.0 Release Candidate。Zig 定位为现代底层系统语言，完全无 GC 和隐藏运行时，零开销抽象且与 C ABI 完全兼容。新版本改进了编译时计算能力，包管理器和构建系统也达到了生产级水准。",
+    "quote": "K8s 终于对 Docker 说了再见——不是分手，是它真的长大了。",
+    "url": "https://kubernetes.io/blog/2026/07/24/dockershim-removal-final/",
+    "source": "Kubernetes Blog",
+    "published": "2026-07-25",
+    "uid": "dev_ced0be1d"
+  },
+  {
+    "title": "eslint 10 重大变革：Flat Config 全面取代旧配置，规则大瘦身",
+    "content": "ESLint 10 发布，旧的 .eslintrc 格式被彻底移除，全面改用 Flat Config。默认规则集从 200+ 精简至 80+，移除了大量过时或不常用的规则。插件系统重写，支持 TypeScript 配置文件的原生加载。对于迁移团队，官方提供一键迁移工具。",
+    "quote": "ESLint 10：配置从地狱到家只需要一个 Flat Config。",
+    "url": "https://eslint.org/blog/2026/07/eslint-v10-released/",
+    "source": "ESLint Blog",
+    "published": "2026-07-25",
+    "uid": "dev_216ece69"
+  },
+  {
+    "title": "Homebrew 发布 5.0：原生支持 Linux ARM64 和 ARM Mac CICD 加速",
+    "content": "Homebrew 5.0 版本发布，主要改进包括原生 Linux ARM64 二进制支持，ARM Mac CI/CD 场景下性能提升约 60%。新增 bottle 自动回退机制，下载失败自动切换镜像源。同时清理了十年累计的历史遗留代码，包管理器体积缩小 30%。",
+    "quote": "Homebrew 5.0：Mac 开发者最好的朋友，现在对 Linux 用户也友好了。",
+    "url": "https://brew.sh/2026/07/24/homebrew-5.0/",
+    "source": "Homebrew Blog",
+    "published": "2026-07-25",
+    "uid": "dev_e534a66c"
+  },
+  {
+    "title": "WebAssembly GC 正式落地：浏览器原生支持高级语言垃圾回收",
+    "content": "WebAssembly 垃圾回收提案（Wasm GC）经过多年标准化后正式获得所有主流浏览器支持。开发者现在可以将 Java、Kotlin、Dart 等需要 GC 的语言直接编译到 Wasm 并在浏览器运行，无需捆绑自定义运行时。这为浏览器端运行完整应用框架扫清了最后障碍。",
+    "quote": "Wasm GC：浏览器里的 Java 程序终于不会内存泄漏到让风扇起飞了。",
+    "url": "https://webassembly.org/roadmap/",
+    "source": "WebAssembly Community Group",
+    "published": "2026-07-25",
+    "uid": "dev_a22ff639"
+  },
+  {
+    "title": "Neovim 1.0 正式发布：内置 LSP 与 Tree-sitter 进入稳定期",
+    "content": "Neovim 1.0 在经过数年迭代后迎来正式版。内置的 LSP 客户端和 Tree-sitter 语法解析进入稳定阶段，插件 API 冻结向后兼容性承诺。新版本还改进了内置终端性能，支持异步任务队列，以及全新的内置文件浏览器。编辑器大战中，终端派终于有了自己的正式版武器。",
+    "quote": "Neovim 1.0：Vim 用户终于有了不折腾也能用的理由。Emacs 表示还没慌。",
+    "url": "https://neovim.io/news/2026/07/24/neovim-10-release/",
+    "source": "Neovim News",
+    "published": "2026-07-25",
+    "uid": "dev_ba0b7820"
+  }
+]
