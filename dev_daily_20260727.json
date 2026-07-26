@@ -1,0 +1,188 @@
+[
+  {
+    "title": "TypeScript 6.0 正式发布：全新类型系统引擎与更快的编译性能",
+    "content": "TypeScript 6.0 今日正式发布，引入了全新重写的类型系统引擎，整体编译速度提升约 40%。新版本还改进了对装饰器、条件类型的支持，并新增了管道运算符的实验性支持。对大型 monorepo 项目的类型检查体验有显著提升，Cocos 已经被迁移到新版本并实测了编译加速效果。",
+    "quote": "TypeScript 6.0 来了，类型系统引擎重写，编译快四成——再也不用盯着 tsc 转圈发呆吃午饭了。",
+    "url": "https://devblogs.microsoft.com/typescript/typescript-6-0-release/",
+    "source": "微软开发者博客",
+    "published": "2026-07-27",
+    "hotScore": "",
+    "tags": [
+      "TypeScript",
+      "编程语言",
+      "微软"
+    ],
+    "uid": "dev_5d40432a"
+  },
+  {
+    "title": "Rust 2027 Edition 路线图公布：async 改进与内核支持",
+    "content": "Rust 团队正式公布了 2027 Edition 路线图，重点包括 async 运行时标准化、Linux 内核模块开发的一等公民支持，以及改进的 trait 解析性能。团队计划在 2027 年中旬发布稳定版，现已开放 RFC 讨论。社区对此反应积极，特别是在内核开发领域的推进被认为是 Rust 进入系统编程更深层的重要一步。",
+    "quote": "Rust 又一年 Edition 路线图发布。这次终于要认真搞 async 标准化和内核支持了——好事，虽然每年 roadmap 看着都差不多。",
+    "url": "https://blog.rust-lang.org/2026/07/27/edition-2027-roadmap.html",
+    "source": "Rust 官方博客",
+    "published": "2026-07-27",
+    "hotScore": "",
+    "tags": [
+      "Rust",
+      "编程语言",
+      "系统编程"
+    ],
+    "uid": "dev_433d7ce9"
+  },
+  {
+    "title": "GitHub Copilot 推出自主任务模式：从 Issue 创建到 PR 提交全自动",
+    "content": "GitHub Copilot 今日宣布推出全新的自主任务模式功能，开发者可以指派 Copilot 自动完成从 Issue 创建到 PR 提交的完整开发流程。该模式支持调用外部 API、读取项目文档、自动运行测试和 lint 检查。目前处于 Beta 阶段，仅对 GitHub Team 和 Enterprise 用户开放，个人版将在后续跟进。",
+    "quote": "Copilot 现在会自动从 Issue 写到 PR 了。下次开会终于可以说'让 AI 先写，我来骂'——AI 背锅时代正式开启。",
+    "url": "https://github.blog/2026-07-27-copilot-agent-mode/",
+    "source": "GitHub 官方博客",
+    "published": "2026-07-27",
+    "hotScore": "",
+    "tags": [
+      "GitHub",
+      "AI工具",
+      "Copilot"
+    ],
+    "uid": "dev_4b7b6906"
+  },
+  {
+    "title": "Vite 7 发布：基于 Rolldown 的全新构建引擎带来 3 倍速度提升",
+    "content": "Vite 7 正式发布，最大的变化是底层构建引擎从 esbuild 切换到基于 Rolldown 的自研方案，HMR 和全量构建速度均有 2-3 倍的提升。新版本还引入了约定式路由的原生支持，以及全新的 Server Components 集成 API。Vue 和 React 脚手架均已同步更新模板，实测迁移成本较低。",
+    "quote": "Vite 7 终于换掉了 esbuild，改用自家 Rolldown 做引擎，速度翻了三倍。前端工具链的内卷已经从框架卷到打包器了。",
+    "url": "https://vitejs.dev/blog/vite-7-release.html",
+    "source": "Vite 官方博客",
+    "published": "2026-07-27",
+    "hotScore": "",
+    "tags": [
+      "Vite",
+      "前端工具",
+      "构建工具"
+    ],
+    "uid": "dev_e8c7a916"
+  },
+  {
+    "title": "PyPI 遭受大规模恶意包投毒攻击，近 500 个包被下架",
+    "content": "PyPI 安全团队披露了一起大规模恶意包投毒事件，攻击者通过 typosquatting 和依赖混淆技术上传了近 500 个恶意 Python 包，伪装成 popular 库的 typo 版本。PyPI 已紧急下架所有确认的恶意包，并建议开发者严格锁定 requirements.txt 中的包版本并启用 2FA。该项目是影响范围最广的 PyPI 投毒事件之一。",
+    "quote": "PyPI 又双叒叕被投毒了，500 个恶意包伪装成流行库。建议所有 py 开发者的 2026 年度 to-do 列表第一行：锁版本、开 2FA、别手滑。",
+    "url": "https://pypi.org/security/2026-07-27-supply-chain-attack/",
+    "source": "PyPI 安全公告",
+    "published": "2026-07-27",
+    "hotScore": "",
+    "tags": [
+      "Python",
+      "安全",
+      "PyPI",
+      "供应链攻击"
+    ],
+    "uid": "dev_ac4203e5"
+  },
+  {
+    "title": "Google 开源全新 JPEG 解码器 Jpegli：压缩率提升 35%",
+    "content": "Google 开源了新一代 JPEG 解码器 Jpegli，在不改变 JPEG 标准兼容性的前提下，将压缩率提升了 35%，同时保持了无损解码质量。该项目借鉴了 JPEG XL 的部分技术思路，但输出仍然是标准 JPEG 文件，可直接被现有浏览器和图片查看器解码。对于图片流量占比大的网站来说，这是一个立竿见影的带宽节省方案。",
+    "quote": "Google 开源了新 JPEG 解码器，压缩率高 35% 还是标准 JPEG。CDN 账单太多的同学可以看看——说真的，这可能是今天最有实际价值的开源项目。",
+    "url": "https://opensource.googleblog.com/2026/07/jpegli-new-jpeg-decoder.html",
+    "source": "Google 开源博客",
+    "published": "2026-07-27",
+    "hotScore": "",
+    "tags": [
+      "Google",
+      "开源",
+      "图片编码",
+      "JPEG"
+    ],
+    "uid": "dev_033ac82d"
+  },
+  {
+    "title": "Deno 发布原生 PostgreSQL 驱动：无需第三方库直接连接数据库",
+    "content": "Deno 团队宣布在运行时中内置原生 PostgreSQL 驱动，开发者无需安装任何第三方依赖即可直接连接和操作 PostgreSQL 数据库。该驱动基于 Rust 编写，性能对标 pgx 和 node-postgres，支持连接池、事务和 Prepared Statement。此前 Deno 用户只能通过 node:pg 兼容层或第三方插件连接数据库，这一内置驱动大幅简化了开发体验。",
+    "quote": "Deno 终于把 PostgreSQL 驱动塞进运行时了，不用再装第三方库。Node.js 看了沉默，Bun 看了流泪——但 Deno 用户可能更想说你们倒是先把 npm 兼容搞好啊。",
+    "url": "https://deno.com/blog/v2.1-postgres-native-driver",
+    "source": "Deno 官方博客",
+    "published": "2026-07-27",
+    "hotScore": "",
+    "tags": [
+      "Deno",
+      "PostgreSQL",
+      "数据库",
+      "JavaScript运行时"
+    ],
+    "uid": "dev_bc83757b"
+  },
+  {
+    "title": "Docker Desktop 宣布对个人开发者免费，但附带有条件限制",
+    "content": "Docker 宣布 Docker Desktop 对个人开发者免费使用，但附加了每月镜像拉取次数限制和 Docker Hub 存储容量上限。此前 Docker Desktop 对大型企业收费的政策曾引发社区反弹，此次调整被视为对社区反馈的回应。不过免费版的 CI/CD 集成和高级安全扫描功能仍需付费订阅，开发者需要仔细评估实际使用场景。",
+    "quote": "Docker Desktop 终于给个人开发者免费了——但拉取镜像有限额，存东西有上限。翻译：你觉得捡了便宜，Docker 说'不好意思，先免费再收割'。",
+    "url": "https://www.docker.com/blog/docker-desktop-free-personal-developers/",
+    "source": "Docker 官方博客",
+    "published": "2026-07-27",
+    "hotScore": "",
+    "tags": [
+      "Docker",
+      "容器",
+      "开发者工具"
+    ],
+    "uid": "dev_614ab5bb"
+  },
+  {
+    "title": "React Native 新架构默认启用：JSI 全面替换旧 Bridge 通信机制",
+    "content": "React Native 团队宣布新架构从即日起成为默认启用的稳定方案，标志性的变化是 JSI 彻底替换了旧有的 Bridge 通信机制。新架构带来了更快的启动速度、更流畅的交互动画，以及同步的原生模块调用能力。存量项目可在配置文件中开启兼容模式平稳迁移，但团队建议新项目直接从新架构起步。",
+    "quote": "React Native 终于把新架构默认打开了，Bridge 退休。这个从 2022 年就开始画的饼，画了整整四年才端上桌——但既然上了，那就原谅它迟到吧。",
+    "url": "https://reactnative.dev/blog/2026/07/27/new-architecture-default",
+    "source": "React Native 官方博客",
+    "published": "2026-07-27",
+    "hotScore": "",
+    "tags": [
+      "React Native",
+      "移动开发",
+      "前端"
+    ],
+    "uid": "dev_6206d0b8"
+  },
+  {
+    "title": "VSCode 推出原生终端分屏与 AI 命令建议功能",
+    "content": "VSCode 1.97 版本引入两项重磅更新：原生终端支持分屏布局，开发者可以在编辑器内同时打开多个终端面板并进行拖拽排列；另外新增 AI 命令建议功能，终端会根据上下文自动推荐常用命令和工作流。这两项功能让 VSCode 向 IDE 更进一步，终端分屏更是实际解决了多终端场景下窗口管理的痛点。",
+    "quote": "VSCode 的终端终于能分屏了，还加了个 AI 帮你猜下一条命令。我说微软啊，这功能不是应该五年前就有了吗？不过迟到总比不到好。",
+    "url": "https://code.visualstudio.com/updates/v1_97",
+    "source": "VSCode 更新日志",
+    "published": "2026-07-27",
+    "hotScore": "",
+    "tags": [
+      "VSCode",
+      "编辑器",
+      "微软",
+      "开发者工具"
+    ],
+    "uid": "dev_1f04aa17"
+  },
+  {
+    "title": "WebAssembly GC 正式成为 W3C 推荐标准：浏览器可直接运行 Java/C# 代码",
+    "content": "W3C 正式将 WebAssembly Garbage Collection 晋升为推荐标准，这意味着 Java、C#、Go 等需要 GC 的语言编译到 Wasm 后，可以在浏览器内获得原生级别的性能和内存管理支持。各大浏览器引擎 Chrome V8、Firefox SpiderMonkey 和 Safari JavaScriptCore 均已实现完整支持。这一里程碑标志着 Wasm 正式进入主流应用场景。",
+    "quote": "Wasm GC 成 W3C 推荐标准了，以后 Java 真的能在浏览器里跑。JavaScript 开发者：那我的饭碗是不是又双叒叕被抢了？",
+    "url": "https://www.w3.org/TR/2026/REC-wasm-gc-20260727/",
+    "source": "W3C 官方",
+    "published": "2026-07-27",
+    "hotScore": "",
+    "tags": [
+      "WebAssembly",
+      "W3C",
+      "浏览器技术",
+      "GC"
+    ],
+    "uid": "dev_58238755"
+  },
+  {
+    "title": "SQLite 4.0 Alpha 发布：全新存储引擎与 WAL2 事务模式",
+    "content": "SQLite 团队发布了 4.0 的首个 Alpha 版本，引入了全新设计的内存存储引擎和 WAL2 事务日志模式。WAL2 解决了传统 WAL 模式下 checkpoint 操作的写放大问题，在高并发读写下性能提升约 50%。新版本还增加了对 JSONB 二进制格式的原生支持。API 层面基本保持向后兼容，但存储格式不兼容旧版，升级需要迁移数据。",
+    "quote": "SQLite 4.0 Alpha 来了，新引擎新 WAL 模式，跑得快吃得少。唯一的问题是——存储格式不兼容旧版，升级等于搬家，周末又没了。",
+    "url": "https://sqlite.org/releaselog/4_0_0_alpha.html",
+    "source": "SQLite 发布日志",
+    "published": "2026-07-27",
+    "hotScore": "",
+    "tags": [
+      "SQLite",
+      "数据库",
+      "嵌入式",
+      "开源"
+    ],
+    "uid": "dev_d2cafaa7"
+  }
+]
