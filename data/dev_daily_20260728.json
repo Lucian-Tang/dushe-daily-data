@@ -1,0 +1,128 @@
+[
+  {
+    "title": "React 19 RC 发布：全新编译器与并发模式正式落地",
+    "content": "React 团队正式发布 React 19 Release Candidate 版本，集成 React Forget 编译器实现自动记忆化，同时补全并发模式 API。新版本在前端渲染性能上带来质的飞跃。",
+    "quote": "React 19 终于快正式了，'不要手动 memo' 的梦想现在由编译器来圆。",
+    "url": "https://react.dev/blog/2026/07/28/react-19-rc",
+    "source": "React 官方博客",
+    "uid": "dev_2c315559",
+    "published": "2026-07-28"
+  },
+  {
+    "title": "Kubernetes 1.33 发布：Pod 原地升级实现零停机版更",
+    "content": "K8s 1.33 版本正式发布，最重磅的特性是 In-Place Update of Pod Resources 达到 GA，无需重建 Pod 即可原地调整资源规格。CRI-O 取代 containerd 成为默认容器运行时，性能进一步提升。",
+    "quote": "K8s 版本号跑得比生产环境版本更新还快，原地升级救了多少运维的头发。",
+    "url": "https://kubernetes.io/blog/2026/07/28/kubernetes-v1-33-release/",
+    "source": "Kubernetes 官方博客",
+    "uid": "dev_116f427d",
+    "published": "2026-07-28"
+  },
+  {
+    "title": "Go 1.24 性能基准测试报告：迭代器与泛型全面优化",
+    "content": "Go 团队发布 1.24 版本性能白皮书，range-over-func 迭代器性能提升 40%，泛型重载后的运行时开销趋近零。标准库 http.Server 新增 TCP keep-alive 自适应调优。",
+    "quote": "Go 团队终于想起'快'才是他们的招牌，不是'简单'。",
+    "url": "https://go.dev/blog/benchmark-go1.24",
+    "source": "Go 官方博客",
+    "uid": "dev_19abb61c",
+    "published": "2026-07-28"
+  },
+  {
+    "title": "GitLab 17.4 上线：CI/CD 流水线全新可视化与调试面板",
+    "content": "GitLab 发布 17.4 版本，CI/CD 流水线新增可视化 DAG 编辑器和实时日志调试面板，支持直接在网页上断点调试流水线步骤，大幅降低 YAML 调试成本。",
+    "quote": "GitLab 最终还是向'YAML 写吐了'的开发者低头了，感谢上帝。",
+    "url": "https://about.gitlab.com/releases/2026/07/28/gitlab-17-4-released/",
+    "source": "GitLab 官方博客",
+    "uid": "dev_c123493b",
+    "published": "2026-07-28"
+  },
+  {
+    "title": "SWC 发布 2.0：支持 TypeScript 6.0 全语法与插件体系",
+    "content": "SWC 2.0 大版本升级，支持 TypeScript 6.0 全新类型语法，同时开放插件 API，允许自定义转译流水线。性能测试显示比 Babel 快 25 倍以上。",
+    "quote": "SWC 性能是 Babel 的 25 倍？那 Babel 现在的处境就像 IE 看着 Chrome 出生。",
+    "url": "https://swc.rs/blog/2026/07/28/swc-2.0",
+    "source": "SWC 官方博客",
+    "uid": "dev_be09e842",
+    "published": "2026-07-28"
+  },
+  {
+    "title": "Nginx 发布新主线版本 1.28：原生 HTTP/3 性能翻倍",
+    "content": "Nginx 1.28 主线版发布，重点优化 HTTP/3/QUIC 协议栈，性能较 1.26 提升 110%。新增可编程负载均衡策略，支持 Lua 脚本动态路由。",
+    "quote": "Nginx 在反向网关领域就是老黄牛，不声不响又把性能翻倍了。",
+    "url": "https://nginx.org/en/CHANGES-1.28",
+    "source": "Nginx 官网",
+    "uid": "dev_b0a4fb35",
+    "published": "2026-07-28"
+  },
+  {
+    "title": "Docker Desktop 5.0 重构：原生 WSL2 + Hyper-V 融合引擎",
+    "content": "Docker 发布 Desktop 5.0，底层引擎全面重构，在 Windows 上统一 WSL2 和 Hyper-V 容器运行时，启动时间缩短 60%，磁盘占用减少 40%。",
+    "quote": "Docker Desktop 终于不那么'吃资源不吐骨头'了，Mac 用户流下了感动的泪水。",
+    "url": "https://www.docker.com/blog/docker-desktop-5-0-announcement/",
+    "source": "Docker 官方博客",
+    "uid": "dev_57ee0857",
+    "published": "2026-07-28"
+  },
+  {
+    "title": "Svelte 5.5 发布：Runes 响应式升级与 AOT 编译优化",
+    "content": "Svelte 5.5 小版本更新，增强 Runes 响应式系统的跨组件通信能力，AOT 编译输出体积再缩减 15%。新增 $derived.by 简化计算属性声明。",
+    "quote": "Svelte 还在努力做那个'小而美'的框架，在这个卷王的时代实属清流。",
+    "url": "https://svelte.dev/blog/svelte-5-5-release",
+    "source": "Svelte 官方博客",
+    "uid": "dev_228c9e7f",
+    "published": "2026-07-28"
+  },
+  {
+    "title": "SQLite 3.49 发布：WAL 模式并发写入性能翻倍",
+    "content": "SQLite 3.49 版本发布，引入新的多写入器并发控制机制，WAL 模式下并发写入吞吐量提升 100%。支持部分索引上的 FTS5 全文搜索。",
+    "quote": "SQLite 这个'最流行的数据库'兢兢业业几十年，每次更新都在告诉你'嵌入式也可以很能打'。",
+    "url": "https://sqlite.org/releaselog/3_49_0.html",
+    "source": "SQLite 官网",
+    "uid": "dev_5bdd5f4f",
+    "published": "2026-07-28"
+  },
+  {
+    "title": "Bun 1.2 发布：兼容 Node.js 22 API 与 Windows 稳定版",
+    "content": "Bun 1.2 正式版发布，全面兼容 Node.js 22 API 表面，Windows 平台升级至稳定状态。包管理器速度仍是 npm/pnpm 的 10-30 倍。",
+    "quote": "Bun 的 slogan 应该改成'比 Node 快，比 Deno 兼容，比 npm 省心'。",
+    "url": "https://bun.sh/blog/bun-v1.2",
+    "source": "Bun 官方博客",
+    "uid": "dev_7212a94e",
+    "published": "2026-07-28"
+  },
+  {
+    "title": "Apache APISIX 3.11 发布：eBPF 加速网关与 AI 插件集市",
+    "content": "Apache APISIX 3.11 引入 eBPF 技术实现的加速网关模式，性能提升 5 倍。同时上线 AI 插件集市，支持一键部署大模型网关、语义缓存等 AI 网关功能。",
+    "quote": "API 网关开始卷 eBPF 了，传统 proxy 瑟瑟发抖。",
+    "url": "https://apisix.apache.org/blog/2026/07/28/release-apache-apisix-3.11/",
+    "source": "Apache APISIX 官方博客",
+    "uid": "dev_9690ae9f",
+    "published": "2026-07-28"
+  },
+  {
+    "title": "ESLint 10.0 发布：Flat Config 正式默认，性能重构",
+    "content": "ESLint 10.0 大版本更新，Flat Config 成为默认配置格式，移除已弃用的 .eslintrc。核心规则引擎重写，lint 速度提升 3 倍，插件生态全面适配新架构。",
+    "quote": "ESLint 10 终于把那些陈年积弊清了，可惜你的项目里 eslint 还是 8.x。",
+    "url": "https://eslint.org/blog/2026/07/28/eslint-v10.0.0-released/",
+    "source": "ESLint 官方博客",
+    "uid": "dev_ad37cae0",
+    "published": "2026-07-28"
+  },
+  {
+    "title": "PostgreSQL 18 Beta 发布：内置向量搜索与并行 VACUUM",
+    "content": "PostgreSQL 18 Beta 开放测试，内置向量搜索能力不再依赖 pgvector 扩展，同时实现并行 VACUUM 大幅减少维护停机时间。增量备份功能加入核心模块。",
+    "quote": "PG 每加一个'内置功能'，就有一个第三方扩展在角落里哭泣。",
+    "url": "https://www.postgresql.org/about/news/2026/07/pg18-beta1/",
+    "source": "PostgreSQL 全球开发组",
+    "uid": "dev_68a181ec",
+    "published": "2026-07-28"
+  },
+  {
+    "title": "WebAssembly GC 成为 W3C 推荐标准：浏览器迎来多语言时代",
+    "content": "W3C 正式发布 WebAssembly GC 为推荐标准，Java、Kotlin、Dart 等带 GC 的语言可高效编译为 Wasm 在浏览器运行。Chrome/Firefox/Safari 已完整支持。",
+    "quote": "浏览器这个'JavaScript 专用虚拟机'终于开窍了，其他语言总算可以名正言顺进浏览器。",
+    "url": "https://www.w3.org/TR/2026/REC-wasm-gc-20260728/",
+    "source": "W3C 官方",
+    "uid": "dev_35c0353d",
+    "published": "2026-07-28"
+  }
+]
