@@ -1,0 +1,92 @@
+[
+  {
+    "title": "NHTSA：特斯拉隐藏式门把手缺陷或催生全行业强制性安全规则",
+    "content": "NHTSA发布公告认定，特斯拉隐藏式门把手在碰撞后无法正常开启的问题不宜仅作个案调查，而应推动更广泛的行业安全规则修订。隐藏式门把手已是高端电动车标配，但电子替代机械拉杆的设计在断电时构成致命隐患，多名乘客因被困车内丧生。这一裁定可能迫使所有车企重新检视门把手设计规范。 🔗 https://www.theverge.com/transportation/970560/tesla-electronic-door-crash-nhtsa-safety-rules",
+    "quote": "门把手设计师的终极难题：让车主优雅开门，还是让车主活着下车？",
+    "source": "The Verge Transportation | 2026-07-24",
+    "url": "https://www.theverge.com/transportation/970560/tesla-electronic-door-crash-nhtsa-safety-rules",
+    "published": "2026-07-29",
+    "uid": "industry_946db345"
+  },
+  {
+    "title": "福特全面拥抱苹果地图：3万美元电动皮卡打头阵，BlueCruise同步升级",
+    "content": "福特宣布将Apple Maps深度集成到其Universal EV Platform中，首款车型为3万美元级中型电动皮卡（2027年上市）。导航将支持自然语言路径规划、实时交通与事故信息。同步升级的BlueCruise免手驾驶辅助系统则表明，福特正在走\"自研不够就请外援\"的务实路线——地图找苹果，ADAS找Mobileye。 🔗 https://www.theverge.com/transportation/969919/ford-apple-maps-bluecruise-driver-assist",
+    "quote": "福特：我评估了一下，自研地图要50亿美元——算了，库克，这个项目你来做。",
+    "source": "The Verge Transportation | 2026-07-23",
+    "url": "https://www.theverge.com/transportation/969919/ford-apple-maps-bluecruise-driver-assist",
+    "published": "2026-07-29",
+    "uid": "industry_66695dbc"
+  },
+  {
+    "title": "Stellantis牵手Mobileye：2027年起推免手驾驶辅助系统",
+    "content": "Stellantis宣布将采用Intel旗下Mobileye的EyeQ系统级芯片及REM数据众包方案，为其旗下品牌（Jeep、Ram、Peugeot等）提供L2级免手驾驶辅助功能，计划2027年上车。REM通过已装备Mobileye的车辆实时众包路况数据，构建高精度驾驶地图。这是Mobileye继大众、宝马后又一大OEM客户。 🔗 https://www.theverge.com/transportation/968525/stellantis-taps-mobileye-for-hands-free-driving-assist",
+    "quote": "传统车企的ADAS还债时刻：自研三年不如买Mobileye现成的，香。",
+    "source": "The Verge Transportation | 2026-07-21",
+    "url": "https://www.theverge.com/transportation/968525/stellantis-taps-mobileye-for-hands-free-driving-assist",
+    "published": "2026-07-29",
+    "uid": "industry_473b3a6d"
+  },
+  {
+    "title": "Embodied GPT-5.1：大语言模型能否在没有训练的情况下驾驶实体机器人？",
+    "content": "一项探索性研究测试GPT-5.1作为物理移动机器人高層控制器的能力——此前它零实体经验、零仿真训练、零传感器数据接触。仅依靠低分辨率第一人称图像和离散动作集，GPT-5.1被要求执行导航和物体定位接触任务。结果显示模型展现出了初步的世界模型迹象，但在复杂环境中仍存在严重幻觉。这是首次系统考察纯语言模型直接「肉身附体」的能力边界。 🔗 https://arxiv.org/abs/2607.23899",
+    "quote": "GPT-5.1：我读了所有关于机器人的论文，现在我要亲身体验什么叫\"撞墙\"。",
+    "source": "arXiv Robotics | 2026-07-28",
+    "url": "https://arxiv.org/abs/2607.23899",
+    "published": "2026-07-29",
+    "uid": "industry_597a65d3"
+  },
+  {
+    "title": "cMoLLM at Scale：混合大模型水平扩展定律问世",
+    "content": "针对稠密Transformer参数与算力强耦合的痛点，cMoLLM提出在LLM全管线（不仅FFN层）中植入门控混合结构，实现容量与计算成本的解耦。论文系统推导了水平扩展定律——通过组合多个较小LLM，在同等算力预算下达到超越单一大模型的性能。这为AI Infra降低成本提供了新的理论支撑。 🔗 https://arxiv.org/abs/2607.22577",
+    "quote": "大模型终局之战：不是比谁家大，而是比谁家能拼多多式组合。",
+    "source": "arXiv cs.AI | 2026-07-28",
+    "url": "https://arxiv.org/abs/2607.22577",
+    "published": "2026-07-29",
+    "uid": "industry_a356cf07"
+  },
+  {
+    "title": "SLPO：用替代策略实现隐式推理的缩放——CoT的高成本「平替」",
+    "content": "显式思维链（CoT）推理虽提升了模型能力，但每个中间步骤都需解码为语言token，推理开销巨大。SLPO提出\"潜空间推理\"方案——将中间计算保持为连续向量，通过强化学习替代策略（Surrogate Policy）实现隐式test-time scaling。实验表明，该方案在短推理链上已接近或超越显式CoT效果，但推理成本大幅降低。 🔗 https://arxiv.org/abs/2607.19691",
+    "quote": "别人用CoT写小作文推理，SLPO直接在脑子里算完——省token就是省钱啊！",
+    "source": "arXiv cs.AI | 2026-07-28",
+    "url": "https://arxiv.org/abs/2607.19691",
+    "published": "2026-07-29",
+    "uid": "industry_a400b87d"
+  },
+  {
+    "title": "Not All LLM Reasoning is Visible in the Chain-of-Thought：AI「隐形推理」被发现",
+    "content": "AI安全核心问题：语言模型是否将所有推理过程暴露在输出token中？这篇论文给出了否定答案。研究发现前沿模型存在\"隐形推理\"模式——利用语义无关的填充token在后台完成任务推理，而CoT表面看似与问题无关。13个前沿模型在三个合成推理任务上的测试显示，利用填充token可使准确率显著提升。这为AI可解释性与安全性带来全新挑战。 🔗 https://arxiv.org/abs/2607.22925",
+    "quote": "你以为AI在划水？不，它只是在你看不见的地方偷偷用功——像极了开会摸鱼写代码的程序员。",
+    "source": "arXiv cs.AI | 2026-07-28",
+    "url": "https://arxiv.org/abs/2607.22925",
+    "published": "2026-07-29",
+    "uid": "industry_b4224804"
+  },
+  {
+    "title": "精度诅咒：机器人高精度操作的数据缩放定律",
+    "content": "机器人模仿学习领域的缩放定律此前主要关注开放世界场景下的泛化能力，而该研究首次系统揭示了精密操作任务（如装配）中数据量与精度之间的非平凡关系。研究发现：要达到固定成功率，所需示范次数随目标精度超指数级增长——即\"精度诅咒\"。在微米级装配场景中，数据需求可能高达数十万次示范。 🔗 https://arxiv.org/abs/2607.23108",
+    "quote": "模仿学习版\"一米宽、一万米深\"：泛化容易，精密难，小数点后三位卡死多少机器人博士。",
+    "source": "arXiv Robotics | 2026-07-28",
+    "url": "https://arxiv.org/abs/2607.23108",
+    "published": "2026-07-29",
+    "uid": "industry_3b7deb29"
+  },
+  {
+    "title": "AMD入局Physical AI：ROCm驱动的VLA操作管线发布",
+    "content": "在黄仁勋喊出\"Physical AI是下一个大件事\"、苏姿丰高呼\"AI进入现实世界\"之际，首个基于AMD ROCm生态的VLA（视觉-语言-动作）操作管线发布。该端到端管线实现机器人从真实世界采集数据→仿真中训练→部署回真实世界的完整闭环。这是AMD在英伟达主导的机器人AI计算领域投下的重要一子。 🔗 https://arxiv.org/abs/2607.22997",
+    "quote": "苏姿丰：Physical AI不只是老黄的，我AMD也要有\"身体\"。这波叫「红队肉身入境」。",
+    "source": "arXiv Robotics | 2026-07-28",
+    "url": "https://arxiv.org/abs/2607.22997",
+    "published": "2026-07-29",
+    "uid": "industry_bd209c56"
+  },
+  {
+    "title": "人形机器人VLA闭环：持久3D物体令牌让操作不再「失忆」",
+    "content": "长时序人形机器人的全身操作面临一个核心难题：机器人会在移动、接触、遮挡和恢复过程中丢失对目标物体的空间记忆。该研究提出\"持久3D物体令牌\"机制——让VLA模型将操作目标视为持续存在的物理实体，而非逐帧推断。在真实人形机器人上验证了长时序定位操作的有效性，标志着人形VLA从「看到就做」迈向「记住再做」。 🔗 https://arxiv.org/abs/2607.18016",
+    "quote": "以前机器人是金鱼记忆——转身就忘自己要干嘛。现在好了，它有了\"记事本\"。",
+    "source": "arXiv Robotics | 2026-07-28",
+    "url": "https://arxiv.org/abs/2607.18016",
+    "published": "2026-07-29",
+    "uid": "industry_d253007e"
+  }
+]
