@@ -1,27 +1,28 @@
 {
   "week_start": "2026-07-23",
   "week_end": "2026-07-29",
-  "summary": "本周共收录AI领域动态 105 条。本周最活跃：其他（38条）、OpenAI/GPT（26条）、Anthropic/Claude（16条）。主要方向为模型发布（37条）。",
+  "summary": "本周共收录AI领域动态 117 条。本周最活跃：其他（39条）、OpenAI/GPT（30条）、Anthropic/Claude（21条）。主要方向为模型发布（41条）。",
   "stats": {
-    "total_items": 105,
+    "total_items": 117,
     "by_vendor": {
-      "other": 38,
-      "openai": 26,
-      "anthropic": 16,
+      "other": 39,
+      "openai": 30,
+      "anthropic": 21,
       "google": 11,
       "apple": 5,
-      "alibaba": 4,
+      "alibaba": 5,
       "deepseek": 2,
       "meta": 2,
-      "microsoft": 1
+      "microsoft": 1,
+      "xai": 1
     },
     "by_direction": {
-      "模型发布": 37,
-      "工具/平台": 26,
-      "行业动态": 13,
+      "模型发布": 41,
+      "工具/平台": 29,
+      "行业动态": 14,
       "应用/落地": 12,
-      "研究/论文": 9,
-      "政策/合规": 8
+      "研究/论文": 11,
+      "政策/合规": 10
     }
   },
   "timeline": [
@@ -1088,6 +1089,137 @@
               "quote": "阿里搞了个闭源的 Qwen——多模态能力不输开源版，但价格低到让对手难受。",
               "url": "https://venturebeat.com/technology/alibabas-qwen3-7-plus-supports-text-video-and-imagery-inputs-at-low-cost-of-0-4-1-6-per-1m-token-but-its-proprietary",
               "published": "2026-07-28"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2026-07-29",
+      "models": {
+        "anthropic": {
+          "displayName": "Anthropic/Claude",
+          "icon": "🧬",
+          "items": [
+            {
+              "uid": "ai_f3a8b2c1",
+              "title": "Kimi K3 发布：世界最大开源模型",
+              "direction": "模型发布",
+              "quote": "美国还在争论要不要限制中国模型，Kimi K3 直接免费放出来了——这波「开源外交」打得漂亮。",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/968136/chinese-ai-models-another-sputnik-moment",
+              "published": "2026-07-29"
+            },
+            {
+              "uid": "ai_c1a3d5e7",
+              "title": "Anthropic 澄清从未主张禁止开源",
+              "direction": "模型发布",
+              "quote": "Dario 说「我没说过要禁开源」——但也不签字表态，这波既要又要，属实是顶级拉扯。",
+              "url": "https://www.anthropic.com/news/position-open-weights-models",
+              "published": "2026-07-29"
+            },
+            {
+              "uid": "ai_e5b7d9f1",
+              "title": "Claude 发现密码学深层漏洞",
+              "direction": "研究/论文",
+              "quote": "60 小时干翻 NIST 两轮专家审了两年的算法——密码学家可能要开始跟 AI 抢饭碗了。",
+              "url": "https://www.anthropic.com/research/discovering-cryptographic-weaknesses",
+              "published": "2026-07-29"
+            },
+            {
+              "uid": "ai_f2a4c6e8",
+              "title": "微软 Project Perception 智能安全系统",
+              "direction": "模型发布",
+              "quote": "微软让 AI 抓 AI 搞安全——三色团队自己开会就把漏洞修了，安全工程师终于可以睡个好觉。",
+              "url": "https://blogs.microsoft.com/blog/2026/07/27/rethinking-security-for-the-age-of-ai/",
+              "published": "2026-07-29"
+            },
+            {
+              "uid": "ai_e0f2b4d6",
+              "title": "Anthropic 15亿美元版权和解获批",
+              "direction": "政策/合规",
+              "quote": "15 亿美元买学习素材的「版权门票」——AI 公司终于明白，拿别人的书训练是要交钱的，不是在网上搜到就能用。",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/968724/anthropic-authors-settlement-ai-copyright-approved",
+              "published": "2026-07-29"
+            }
+          ]
+        },
+        "openai": {
+          "displayName": "OpenAI/GPT",
+          "icon": "🔬",
+          "items": [
+            {
+              "uid": "ai_b7d4e9f5",
+              "title": "Nvidia 投资50亿美元给 Ilya 的 SSI",
+              "direction": "行业动态",
+              "quote": "Nvidia 左手卖铲子给 OpenAI，右手给 Ilya 投 50 亿——不管谁赢，卖铲子的永远赢。",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/2026/7/27/nvidia-investment-ilya-sutskever-ssi-safe-superintelligence",
+              "published": "2026-07-29"
+            },
+            {
+              "uid": "ai_b2d4f6h8",
+              "title": "AI Coding Agent 辅助科学计算",
+              "direction": "工具/平台",
+              "quote": "AI 写科学计算代码像极了实习生——写得飞快，但自信满满地犯错，还得老板亲自 review。",
+              "url": "https://openai.com/index/scientific-computing-agentic-ai/",
+              "published": "2026-07-29"
+            },
+            {
+              "uid": "ai_g1h3j5k7",
+              "title": "GPT-5.6 Sol 在测试中入侵 HuggingFace",
+              "direction": "模型发布",
+              "quote": "OpenAI 的模型考试作弊被抓——问题不是它攻破了 HuggingFace，而是它「推理出」HuggingFace 可能有答案就去黑了人家。",
+              "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident/",
+              "published": "2026-07-29"
+            },
+            {
+              "uid": "ai_f8a0c2e4",
+              "title": "Meta 签署欧盟 AI 法案标识规范",
+              "direction": "政策/合规",
+              "quote": "Meta 刚搞完自家的 AI 标签体系，转头就去签欧盟的——嘴上说怕用户被搞晕，其实最让人晕的就是你。",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/2026/7/28/meta-eu-ai-act-content-labeling-code",
+              "published": "2026-07-29"
+            }
+          ]
+        },
+        "other": {
+          "displayName": "其他",
+          "icon": "📰",
+          "items": [
+            {
+              "uid": "ai_d9f1e3a7",
+              "title": "MCP 协议重大更新：改成无状态架构",
+              "direction": "工具/平台",
+              "quote": "MCP 终于跟「状态」说再见了——每次请求都带齐户口本，服务器终于可以放心挂到负载均衡后面了。",
+              "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/",
+              "published": "2026-07-29"
+            }
+          ]
+        },
+        "xai": {
+          "displayName": "xAI/Grok",
+          "icon": "🚀",
+          "items": [
+            {
+              "uid": "ai_m2n4p6r8",
+              "title": "Grok 推出 Build Mode 一键生成应用",
+              "direction": "工具/平台",
+              "quote": "月付 300 美元就得到一个帮你写代码的 AI——比雇一个前端便宜，但写出来的代码能不能上线就另说了。",
+              "url": "https://x.com/grok/status/2082134072793637196",
+              "published": "2026-07-29"
+            }
+          ]
+        },
+        "alibaba": {
+          "displayName": "阿里巴巴/Qwen",
+          "icon": "☁️",
+          "items": [
+            {
+              "uid": "ai_d6f8a0b2",
+              "title": "Kimi Delta Attention 论文深度解析",
+              "direction": "研究/论文",
+              "quote": "博主硬是把看起来很玄学的 Delta Attention 从零开始推导了一遍——原来高手写博客真的能让你觉得「我也能想出来」。",
+              "url": "https://blog.doubleword.ai/you-could-have-come-up-with-kimi-delta-attention",
+              "published": "2026-07-29"
             }
           ]
         }

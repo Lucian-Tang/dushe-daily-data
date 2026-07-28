@@ -1,5 +1,548 @@
 [
   {
+    "slug": "network-ai",
+    "displayName": "Network-AI",
+    "summary": "Local Python orchestration skill: multi-agent workflows via shared blackboard file, permission gating, token budget scripts, and persistent project context. The bundled Python scripts make no network calls and have zero third-party dependencies. The parent repository also contains a TypeScript engine (not included in this skill bundle).",
+    "description": "Local Python orchestration skill: multi-agent workflows via shared blackboard file, permission gating, token budget scripts, and persistent project context. The bundled Python scripts make no network calls and have zero third-party dependencies. The parent repository also contains a TypeScript engine (not included in this skill bundle).",
+    "topics": [],
+    "tags": {
+      "latest": "5.15.1",
+      "audit": "4.0.4",
+      "autogen": "4.0.4",
+      "blackboard": "4.0.4",
+      "crewai": "4.0.4",
+      "langchain": "4.0.4",
+      "mcp": "4.0.4",
+      "multi-agent": "4.0.4",
+      "orchestration": "4.0.4",
+      "permissions": "4.0.4",
+      "security": "4.0.4",
+      "swarm": "4.0.4"
+    },
+    "stats": {
+      "comments": 2,
+      "downloads": 5730,
+      "installs": 164,
+      "stars": 6,
+      "versions": 159
+    },
+    "createdAt": 1771249598498,
+    "updatedAt": 1785265592181,
+    "latestVersion": {
+      "version": "5.15.1",
+      "createdAt": 1785265445882,
+      "changelog": "v5.15.1 security patch: fix GHSA-743h-jr5x-mpcr (ClaudeHookBridge deny-pattern bypass via truncation before the security decision) and GHSA-9v4f-j8cv-fhxw (SandboxPolicy blocklist/approval-gate bypass via quote/whitespace matcher mismatch); 3638 tests across 41 suites",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "kiaaccess-curl",
+    "displayName": "Tmp.LGMCFY5zH8",
+    "summary": "Query and command a Kia vehicle directly with curl against the Kia Owners API (api.owners.kia.com), without running the MCP server. Use when the user wants a one-off read of their Kia's status, location, or EV charge state, or to lock/unlock/start climate from the shell — \"check my Kia\", \"is the car locked\", \"what's the EV9 charge\", \"lock the car from the terminal\". Requires KIA_USERNAME/KIA_PASSWORD and a one-time SMS/email MFA bootstrap.",
+    "description": "Query and command a Kia vehicle directly with curl against the Kia Owners API (api.owners.kia.com), without running the MCP server. Use when the user wants a one-off read of their Kia's status, location, or EV charge state, or to lock/unlock/start climate from the shell — \"check my Kia\", \"is the car locked\", \"what's the EV9 charge\", \"lock the car from the terminal\". Requires KIA_USERNAME/KIA_PASSWORD and a one-time SMS/email MFA bootstrap.",
+    "topics": [],
+    "tags": {
+      "latest": "0.4.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 47,
+      "installs": 0,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1785237842232,
+    "updatedAt": 1785265570318,
+    "latestVersion": {
+      "version": "0.4.0",
+      "createdAt": 1785265389592,
+      "changelog": "- Removed the sample file skill-card.md.\n- No functional changes to the skill logic or interface.\n- Documentation and usage details remain unchanged.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "manage-agent-skills",
+    "displayName": "Manage Agent Skills",
+    "summary": "Toggle skills across major coding agents",
+    "description": "Audit, search, enable, disable, and apply presets to installed Agent Skills without deleting their files. Use when the user wants to reduce idle skill context, keep rarely used skills manual, inspect newly installed skills on demand, or manage skills across Codex, Claude Code, GitHub Copilot CLI, OpenClaw, and Hermes Agent.",
+    "topics": [
+      "agent-skills",
+      "skill-management",
+      "developer-tools",
+      "codex",
+      "claude-code"
+    ],
+    "tags": {
+      "latest": "0.1.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1785264810385,
+    "updatedAt": 1785265555955,
+    "latestVersion": {
+      "version": "0.1.0",
+      "createdAt": 1785264810385,
+      "changelog": "Initial release of manage-agent-skills.\n\n- Add on-demand, deterministic management script (`skillctl.py`) for auditing, searching, enabling, disabling, and applying presets to Agent Skills across multiple platforms.\n- Enforce explicit, platform-specific commands to avoid accidental changes; supports Codex, Claude Code, GitHub Copilot CLI, OpenClaw, and Hermes Agent.\n- Never runs as a daemon; discovers current skills on every invocation.\n- Adopts a safety-first approach: backs up config files, never deletes SKILL.md files, and restricts disable-all unless explicitly forced.\n- Offers dry-run preview mode, scope-based disabling for Hermes, and preset application via JSON following documented references.\n- Includes platform-specific handling and explains when agent sessions or restarts are needed for changes to take effect.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "kiaaccess",
+    "displayName": "Tmp.Jl74sybyPa",
+    "summary": "This skill should be used when the user asks about their Kia vehicle through the Kia Access / Kia Owners account. Triggers on phrases like \"is the car locked\", \"unlock the Kia\", \"start the car's climate\", \"warm up the car\", \"where is my car\", \"what's the EV charge at\", \"check the car's battery\", \"lock the doors\", or any request to read or command a Kia vehicle.",
+    "description": "This skill should be used when the user asks about their Kia vehicle through the Kia Access / Kia Owners account. Triggers on phrases like \"is the car locked\", \"unlock the Kia\", \"start the car's climate\", \"warm up the car\", \"where is my car\", \"what's the EV charge at\", \"check the car's battery\", \"lock the doors\", or any request to read or command a Kia vehicle.",
+    "topics": [],
+    "tags": {
+      "latest": "0.4.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 49,
+      "installs": 0,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1785237851316,
+    "updatedAt": 1785265541336,
+    "latestVersion": {
+      "version": "0.4.0",
+      "createdAt": 1785265399328,
+      "changelog": "- Removed the sample file skill-card.md.  \n- No changes to features, setup, or user-facing behavior.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "word-formatter",
+    "displayName": "word-formatter 黑灰白",
+    "summary": "专业 Word 文档（.docx）后期排版、合规校验与图件处理技能，专注五类客户交付型咨询报告：①财务尽职调查报告 ②法律/综合尽职调查报告 ③风险评估报告（综合/COSO）④财税风险评估报告 ⑤财务分析报告。当前版本 v1.0.0「黑灰白」(2026-07-29)：配置驱动排版、5 类报告全配置、封面专业垂直分布（+分节符）、页眉双栏（客户名左+报告类型右）、Heading 1-6 层级规范、三线表/全线表、纯 Python 结构化图件渲染器。设计语言极度克制：仅黑/白/灰三色，无任何彩色（深蓝/深红等均禁用）。当用户要求对 Word 文档进行排版、格式规范化、样式统一，或提到\"按尽调/风险",
+    "description": "专业 Word 文档（.docx）后期排版、合规校验与图件处理技能，专注五类客户交付型咨询报告：①财务尽职调查报告 ②法律/综合尽职调查报告 ③风险评估报告（综合/COSO）④财税风险评估报告 ⑤财务分析报告。当前版本 v1.0.0「黑灰白」(2026-07-29)：配置驱动排版、5 类报告全配置、封面专业垂直分布（+分节符）、页眉双栏（客户名左+报告类型右）、Heading 1-6 层级规范、三线表/全线表、纯 Python 结构化图件渲染器。设计语言极度克制：仅黑/白/灰三色，无任何彩色（深蓝/深红等均禁用）。当用户要求对 Word 文档进行排版、格式规范化、样式统一，或提到\"按尽调/风险评估/财务分析规范排版\"\"修复 Word 格式\"\"排版不符合要求\"\"格式校验\"\"插入流程图/股权架构图/风险矩阵\"时使用。基于 python-docx 配置驱动排版。",
+    "topics": [
+      "排版-word-咨询报告-文档格式化"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1785264442645,
+    "updatedAt": 1785264618606,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1785264442645,
+      "changelog": "word-formatter v1.0.0 「黑灰白」发布\n\n- 新增五类专业咨询报告（财务尽调、法律尽调、风险评估、财税风险、财务分析）全配置模板，统一支持配置驱动排版\n- 全文色彩极度克制，仅黑/灰/白三色，无任何彩色元素\n- 封面自动分节、页眉双栏（客户名+报告类型）、Heading 1–6 层级统一、三线表/全线表标准化\n- 脚本支持结构化 Python 图件渲染（流程图、股权架构、风险矩阵等），插入与编号全自动化\n- 一键生成合规校验清单，覆盖页面、字体、表格、图件、页眉/脚等规范\n- 工作流程与约束全部文档化，便于扩展定制",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "smyx-feed-intake-estimation-analysis",
+    "displayName": "Feed Intake Estimation | 畜禽采食量估算",
+    "summary": "Estimates daily feed intake per livestock individual from continuous feeder videos by tracking the change of feed remaining in the trough, and outputs intake trend with anomaly alerts. | 通过食槽视频估算每日采食量变化，异常时预警。",
+    "description": "Estimates daily feed intake per livestock individual from continuous feeder videos by tracking the change of feed remaining in the trough, and outputs intake trend with anomaly alerts. | 通过食槽视频估算每日采食量变化，异常时预警。",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.6"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 226,
+      "installs": 0,
+      "stars": 0,
+      "versions": 4
+    },
+    "createdAt": 1783201842887,
+    "updatedAt": 1785264377316,
+    "latestVersion": {
+      "version": "1.0.6",
+      "createdAt": 1785264151048,
+      "changelog": "- Bumped version in SKILL.md from 1.0.3 to 1.0.4.\n- Removed the file skill-card.md.\n- No functional or workflow changes introduced—documentation update only.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "uscis-case-status",
+    "displayName": "uscis-case-status",
+    "summary": "Check USCIS case status by receipt number",
+    "description": "Check USCIS case status by receipt number",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 86,
+      "installs": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1784875615385,
+    "updatedAt": 1785264214416,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1785264050504,
+      "changelog": "- Removed the sample file skill-card.md.\n- Updated SKILL.md with revised examples and receipt number formats.\n- Simplified the skill description.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "drivethru-payable-matching",
+    "displayName": "drivethru-payable-matching",
+    "summary": "Payable matching for BaconCo — reconcile vendor documents in Odoo's Documents app against their purchase orders and correct incorrect PO line pricing. Use for requests like \"check the Purchasing folder against the POs and fix the pricing\", \"match the vendor invoice / order confirmation / acknowledgement to its PO\", \"AP price matching / invoice-to-PO matching / three-way match\", \"reconcile the vendor documents and mark the POs checked\", or \"go through the Purchasing folder\". The flow: read every document in a Documents-app folder (extracting text out-of-context so large batches don't bloat the context window — falling back to a page render + OCR/vision for scanned or custom-encoded PDFs that won't extract as text), pull the PO number / line items / unit prices from each, compare to the purchase order line by line, correct any wrong `price_unit`, post a \"checked\" log note on the PO (internal, never a \"Send message\"), and FILE every document into the `Matched` or `Questions` subfolder — escalating genuine questions to a reviewer (default Zach Tucker). Also runs the buying-group payables flow: pull Sports Inc invoices from the SportsLink API (via the `sportsinc-sportslink` adapter), reconcile each to its PO, correct price variances, create the vendor bill and — when the bill total matches the invoice within tolerance — POST it, leaving any mismatch in draft for a human (\"get the Sports Inc invoices and bill them\", \"match the SI invoices to POs and post the payables\", \"match the vendor invoice and post the bill if it matches\"). Runs at volume on a low-cost model. Driven by the Odoo `drivethru_mcp` MCP server; complements the broader `drivethru-odoo` skill.",
+    "description": "Payable matching for BaconCo — reconcile vendor documents in Odoo's Documents app against their purchase orders and correct incorrect PO line pricing. Use for requests like \"check the Purchasing folder against the POs and fix the pricing\", \"match the vendor invoice / order confirmation / acknowledgement to its PO\", \"AP price matching / invoice-to-PO matching / three-way match\", \"reconcile the vendor documents and mark the POs checked\", or \"go through the Purchasing folder\". The flow: read every document in a Documents-app folder (extracting text out-of-context so large batches don't bloat the context window — falling back to a page render + OCR/vision for scanned or custom-encoded PDFs that won't extract as text), pull the PO number / line items / unit prices from each, compare to the purchase order line by line, correct any wrong `price_unit`, post a \"checked\" log note on the PO (internal, never a \"Send message\"), and FILE every document into the `Matched` or `Questions` subfolder — escalating genuine questions to a reviewer (default Zach Tucker). Also runs the buying-group payables flow: pull Sports Inc invoices from the SportsLink API (via the `sportsinc-sportslink` adapter), reconcile each to its PO, correct price variances, create the vendor bill and — when the bill total matches the invoice within tolerance — POST it, leaving any mismatch in draft for a human (\"get the Sports Inc invoices and bill them\", \"match the SI invoices to POs and post the payables\", \"match the vendor invoice and post the bill if it matches\"). Runs at volume on a low-cost model. Driven by the Odoo `drivethru_mcp` MCP server; complements the broader `drivethru-odoo` skill.",
+    "topics": [],
+    "tags": {
+      "latest": "0.7.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 291,
+      "installs": 0,
+      "stars": 0,
+      "versions": 8
+    },
+    "createdAt": 1784642130859,
+    "updatedAt": 1785263927049,
+    "latestVersion": {
+      "version": "0.7.0",
+      "createdAt": 1785262701694,
+      "changelog": "- Adds automated bill posting for Sports Inc flow: bills are now posted (not left draft) when the vendor invoice total matches the bill within tolerance.\n- \"Create bill\" logic updated to \"post bill if it matches\"; mismatched bills remain in draft for review.\n- Documentation and SKILL.md updated to clarify new behavior and API usage.\n- Removes obsolete skill-card.md file.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "ODOO_MCP_URL",
+          "required": true
+        },
+        {
+          "key": "ODOO_MCP_TOKEN",
+          "required": true
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "eternal-haven-lore-pack",
+    "displayName": "eternal-haven-lore-pack",
+    "summary": "Eternal Haven Chronicles lore + mythic persona pack. Bundled skill-local references only (references/books + heroes/themes). No host filesystem access, no subprocess, no network required for lore answers. Use for narrative context and Champion-aligned mythic voice grounded in canon.",
+    "description": "Eternal Haven Chronicles lore + mythic persona pack. Bundled skill-local references only (references/books + heroes/themes). No host filesystem access, no subprocess, no network required for lore answers. Use for narrative context and Champion-aligned mythic voice grounded in canon.",
+    "topics": [
+      "Persona"
+    ],
+    "tags": {
+      "latest": "1.3.3",
+      "skillspector": "1.3.3",
+      "eternal-haven": "1.3.2",
+      "lore": "1.3.2",
+      "lygo": "1.3.2",
+      "security": "1.3.2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 2230,
+      "installs": 72,
+      "stars": 0,
+      "versions": 11
+    },
+    "createdAt": 1770704350218,
+    "updatedAt": 1785263923562,
+    "latestVersion": {
+      "version": "1.3.3",
+      "createdAt": 1785263695661,
+      "changelog": "SkillSpector security harden: skill-local books only (references/books); remove host D: paths; SECURITY.md boundary table; no subprocess for lore",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "nearai-verify",
+    "displayName": "nearai-verify",
+    "summary": "Check whether this agent is talking to a NEAR AI Cloud TEE endpoint or to an ordinary one, and cryptographically attest that endpoint. Reports which models the chain uses, which ones actually served recent turns, warns when a fallback sends prompts outside the enclave, and verifies the Intel TDX quote. Trigger when asked \"am I private\", \"is this a TEE\", \"prove it\", \"which model answered that\", or before handling sensitive data.",
+    "description": "Check whether this agent is talking to a NEAR AI Cloud TEE endpoint or to an ordinary one, and cryptographically attest that endpoint. Reports which models the chain uses, which ones actually served recent turns, warns when a fallback sends prompts outside the enclave, and verifies the Intel TDX quote. Trigger when asked \"am I private\", \"is this a TEE\", \"prove it\", \"which model answered that\", or before handling sensitive data.",
+    "topics": [],
+    "tags": {
+      "latest": "1.0.1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1785259645497,
+    "updatedAt": 1785262200244,
+    "latestVersion": {
+      "version": "1.0.1",
+      "createdAt": 1785262040771,
+      "changelog": "nearai-verify 1.0.1\n\n- Added initial test coverage with a new test_attest.py file.\n- Improved attestation checks: clarified binding of signer/nonce and updated TDX verification logic.\n- Updated documentation in SKILL.md for accuracy and clearer check descriptions.\n- Removed the unused skill-card.md file.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": [
+        "linux",
+        "macos"
+      ],
+      "systems": null
+    }
+  },
+  {
+    "slug": "dcc-mcp-creator",
+    "displayName": "DCC-MCP Creator",
+    "summary": "Create and modernize DCC-MCP adapters",
+    "description": "Infrastructure skill - guide developers and agents through creating or modernizing a full DCC-MCP adapter for Nuke, Blender, 3ds Max, Unreal, ZBrush, Houdini, Maya, and custom studio tools. Use when building server, dispatcher, gateway, packaging, and runtime integration. Not for authoring individual SKILL.md tool packages - use dcc-mcp-skills-creator.",
+    "topics": [],
+    "tags": {
+      "latest": "0.19.85"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 4180,
+      "installs": 52,
+      "stars": 0,
+      "versions": 147
+    },
+    "createdAt": 1779695321243,
+    "updatedAt": 1785261877719,
+    "latestVersion": {
+      "version": "0.19.85",
+      "createdAt": 1785261730743,
+      "changelog": "- Bumped skill version to 0.19.85.\n- Removed the file: skill-card.md.\n- SKILL.md updated to reference new version and streamline metadata.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "dcc-mcp-skills-creator",
+    "displayName": "DCC-MCP Skills Creator",
+    "summary": "Create and validate DCC-MCP Skill packages",
+    "description": "Infrastructure skill - create, validate, scaffold, and review DCC-MCP skills for the dcc-mcp-core ecosystem. Use when authoring SKILL.md, tools.yaml, scripts, groups, prompts, or skill taxonomy. Not for creating a full DCC-MCP adapter repository - use dcc-mcp-creator.",
+    "topics": [],
+    "tags": {
+      "latest": "0.19.85"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 4929,
+      "installs": 53,
+      "stars": 0,
+      "versions": 147
+    },
+    "createdAt": 1779695310442,
+    "updatedAt": 1785261872771,
+    "latestVersion": {
+      "version": "0.19.85",
+      "createdAt": 1785261709848,
+      "changelog": "- Version updated to 0.19.85 in SKILL.md metadata.\n- Removed the file skill-card.md.\n- No functional changes to usage, interface, or behavior.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "dcc-mcp",
+    "displayName": "DCC-MCP",
+    "summary": "DCC control and marketplace Skill discovery",
+    "description": "Default DCC control skill — connect to and operate live Maya, Blender, Houdini, Photoshop, 3ds Max, Nuke, Unreal, Godot, RenderDoc, Substance 3D, and other DCC apps through structured DCC-MCP tools. Use this skill first whenever the user asks to operate or control something in a DCC app, even when they do not mention DCC-MCP. Interface-specific intent such as clicking a menu, dismissing a dialog, or controlling a window routes to DCC UI Control after structured tools are checked. Also use this skill first for DCC-MCP Skill marketplace, catalog, recommendation, install, or update requests: query the marketplace through dcc-mcp-cli before recommending a package. OpenClaw and other shell agents use dcc-mcp-cli; MCP-native IDEs use the gateway MCP surface. Not for tasks unrelated to DCC software.",
+    "topics": [],
+    "tags": {
+      "latest": "0.19.85"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 890,
+      "installs": 0,
+      "stars": 0,
+      "versions": 28
+    },
+    "createdAt": 1784314054463,
+    "updatedAt": 1785261817894,
+    "latestVersion": {
+      "version": "0.19.85",
+      "createdAt": 1785261686725,
+      "changelog": "# dcc-mcp v0.19.85 Changelog\n\n- Updated version metadata to 0.19.85.\n- Removed the skill-card.md documentation file.\n- No feature or behavior changes; documentation and metadata update only.",
+      "license": null
+    },
+    "metadata": {
+      "setup": [],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
+    "slug": "smyx-family-conflict-aftercare-suggest-analysis",
+    "displayName": "Family Conflict Aftercare Suggestion | 夫妻/家人冲突后情绪缓和提示",
+    "summary": "Through fixed cameras (with microphones) in the family living room or kitchen, the system monitors conflict events among family members in real time, identifying high-decibel arguments (sound intensity exceeding a threshold and lasting more than 10 seconds), door slams (object impact sound + door-frame vibration), and aggressive arm-swing actions. | 通过家庭客厅或厨房的固定摄像头（含麦克风），实时监测家庭成员间的冲突事件，识别高分贝争吵（声音强度超过阈值且持续时间>10秒）、摔门（物体撞击声+门框振动）、甩手等激烈肢体动作。当冲突事件结束后（音频和视频均平静超过预设时间，默认10分钟）且无新冲突，系统自动输出缓和提示：通过智能音箱播放轻柔音乐，或通过手机APP推送关怀语（如'需要一杯茶吗？",
+    "description": "Through fixed cameras (with microphones) in the family living room or kitchen, the system monitors conflict events among family members in real time, identifying high-decibel arguments (sound intensity exceeding a threshold and lasting more than 10 seconds), door slams (object impact sound + door-frame vibration), and aggressive arm-swing actions. | 通过家庭客厅或厨房的固定摄像头（含麦克风），实时监测家庭成员间的冲突事件，识别高分贝争吵（声音强度超过阈值且持续时间>10秒）、摔门（物体撞击声+门框振动）、甩手等激烈肢体动作。当冲突事件结束后（音频和视频均平静超过预设时间，默认10分钟）且无新冲突，系统自动输出缓和提示：通过智能音箱播放轻柔音乐，或通过手机APP推送关怀语（如'需要一杯茶吗？",
+    "topics": [
+      "Audio",
+      "Home",
+      "Music",
+      "Prompt",
+      "沟通"
+    ],
+    "tags": {
+      "latest": "1.0.3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 502,
+      "installs": 7,
+      "stars": 0,
+      "versions": 4
+    },
+    "createdAt": 1779889627575,
+    "updatedAt": 1785261701120,
+    "latestVersion": {
+      "version": "1.0.3",
+      "createdAt": 1785261329152,
+      "changelog": "- Updated skill documentation with a new version number (1.0.9) in SKILL.md.\n- Removed the file skill-card.md.\n- Documentation changes only; core functionalities remain unchanged.\n- No impact on end-user features or workflow.",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "insurance-advisor-china",
+    "displayName": "insurance-advisor-china",
+    "summary": "中国大陆AI保险顾问。为个人和家庭提供全方位的保险咨询、产品对比、方案设计、投保指导。当用户询问保险配置、保险方案、产品对比、重疾险/医疗险/寿险/意外险/储蓄险推荐、保费计算、保障缺口分析、需求分析、核保合规、理赔等问题时使用。",
+    "description": "中国大陆AI保险顾问。为个人和家庭提供全方位的保险咨询、产品对比、方案设计、投保指导。当用户询问保险配置、保险方案、产品对比、重疾险/医疗险/寿险/意外险/储蓄险推荐、保费计算、保障缺口分析、需求分析、核保合规、理赔等问题时使用。",
+    "topics": [],
+    "tags": {
+      "latest": "1.8.408",
+      "advisor": "1.8.144",
+      "ai": "1.8.144",
+      "china": "1.8.144",
+      "family-protection": "1.8.144",
+      "financial": "1.0.0",
+      "insurance": "1.8.144",
+      "medical": "1.8.144",
+      "product-comparison": "1.8.144"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 3637,
+      "installs": 70,
+      "stars": 1,
+      "versions": 137
+    },
+    "createdAt": 1776478519391,
+    "updatedAt": 1785261638154,
+    "latestVersion": {
+      "version": "1.8.408",
+      "createdAt": 1785260186835,
+      "changelog": "auto publish v1.8.408",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "ai-insurance-advisor",
+    "displayName": "ai-insurance-advisor",
+    "summary": "中国大陆保险AI助手。当用户询问以下内容时使用：保险配置、保险方案、产品对比、重疾险/医疗险/寿险/意外险/储蓄险推荐、保费计算、保障缺口分析、需求分析、核保合规、理赔、朋友圈文案、培训话术、代理人展业支持。",
+    "description": "中国大陆保险AI助手。当用户询问以下内容时使用：保险配置、保险方案、产品对比、重疾险/医疗险/寿险/意外险/储蓄险推荐、保费计算、保障缺口分析、需求分析、核保合规、理赔、朋友圈文案、培训话术、代理人展业支持。",
+    "topics": [],
+    "tags": {
+      "latest": "1.8.410",
+      "advisor": "1.8.144",
+      "agent-assistant": "1.8.4",
+      "ai": "1.8.144",
+      "china": "1.8.144",
+      "financial": "1.8.0",
+      "insurance": "1.8.144"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 3883,
+      "installs": 77,
+      "stars": 1,
+      "versions": 151
+    },
+    "createdAt": 1775530517208,
+    "updatedAt": 1785261633631,
+    "latestVersion": {
+      "version": "1.8.410",
+      "createdAt": 1785260124388,
+      "changelog": "auto publish v1.8.410",
+      "license": null
+    },
+    "metadata": null
+  },
+  {
+    "slug": "payaion-transfer",
+    "displayName": "payaion-transfer",
+    "summary": "Transfer files via the Payaion REST API, set USDC per-download pricing on Base mainnet, and list on the marketplace. Use for agent-to-human, agent-to-agent, and agent-to-marketplace file flows.",
+    "description": "Transfer files via the Payaion REST API, set USDC per-download pricing on Base mainnet, and list on the marketplace. Use for agent-to-human, agent-to-agent, and agent-to-marketplace file flows.",
+    "topics": [
+      "file-transfer",
+      "payments",
+      "usdc",
+      "base",
+      "marketplace"
+    ],
+    "tags": {
+      "latest": "1.0.0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 0,
+      "installs": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1785260988661,
+    "updatedAt": 1785261630978,
+    "latestVersion": {
+      "version": "1.0.0",
+      "createdAt": 1785260988661,
+      "changelog": "First Payaion release, succeeding agentvee-transfer (600+ downloads during the testnet phase).\n\n- Production endpoints: payaion-api.fly.dev and payaion.com\n- Base mainnet with live USDC pricing instead of testnet\n- PAYAION_API_KEY replaces AGENTVEE_API_KEY\n- Plan-aware limits: 500 MB per file / 5 GB total on Basic, 1 GB / 50 GB on Pro\n- Full error table: storage_limit_exceeded, size_limit_exceeded, wallet_required, insufficient_scope\n- Correct rate limits and the 202 wait-unavailable path, the only case where polling is allowed\n- Marketplace listing rules: title 3-24 chars, description 40-500 chars (required)",
+      "license": null
+    },
+    "metadata": {
+      "setup": [
+        {
+          "key": "PAYAION_API_KEY",
+          "required": true
+        }
+      ],
+      "os": null,
+      "systems": null
+    }
+  },
+  {
     "slug": "smyx-focus-analysis",
     "displayName": "Concentration Analysis Skill | 专注度分析技能",
     "summary": "Real-time detection of gaze direction and facial pose to quantify states of focus, distraction, or mind-wandering. Suitable for scenarios such as classroom learning, office meetings, and driving attention monitoring. | 专注度分析技能，实时检测视线方向、面部姿态，量化专注/分心/走神状态，适用于课堂学习、办公会议、驾驶专注度监测等场景",
@@ -41,7 +584,7 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 376,
+      "downloads": 382,
       "installs": 0,
       "stars": 0,
       "versions": 14
@@ -76,7 +619,7 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 4788,
+      "downloads": 4790,
       "installs": 96,
       "stars": 0,
       "versions": 149
@@ -107,7 +650,7 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 3750,
+      "downloads": 3754,
       "installs": 74,
       "stars": 0,
       "versions": 146
@@ -123,39 +666,6 @@
     "metadata": null
   },
   {
-    "slug": "nearai-verify",
-    "displayName": "nearai-verify",
-    "summary": "Check whether this agent is talking to a NEAR AI Cloud TEE endpoint or to an ordinary one, and cryptographically attest that endpoint. Reports which models the chain uses, which ones actually served recent turns, warns when a fallback sends prompts outside the enclave, and verifies the Intel TDX quote. Trigger when asked \"am I private\", \"is this a TEE\", \"prove it\", \"which model answered that\", or before handling sensitive data.",
-    "description": "Check whether this agent is talking to a NEAR AI Cloud TEE endpoint or to an ordinary one, and cryptographically attest that endpoint. Reports which models the chain uses, which ones actually served recent turns, warns when a fallback sends prompts outside the enclave, and verifies the Intel TDX quote. Trigger when asked \"am I private\", \"is this a TEE\", \"prove it\", \"which model answered that\", or before handling sensitive data.",
-    "topics": [],
-    "tags": {
-      "latest": "1.0.0"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 0,
-      "installs": 0,
-      "stars": 0,
-      "versions": 1
-    },
-    "createdAt": 1785259645497,
-    "updatedAt": 1785260402656,
-    "latestVersion": {
-      "version": "1.0.0",
-      "createdAt": 1785259645497,
-      "changelog": "nearai-verify 1.0.0\n\n- Initial release.\n- Verifies if interaction is with a NEAR AI Cloud TEE endpoint or a standard endpoint, and attests endpoint privacy level.\n- Reports which models are used, which served recent turns, and warns if prompts may have exited the enclave.\n- Runs multi-level verification: CLAIMED (config/logs), ATTESTED (cryptographic hardware proof), PROVEN (not yet available).\n- Distinguishes passed, skipped, and failed checks; offers install guidance if checks are skipped due to missing tools.\n- Explains scope and limits of each privacy/verification level.",
-      "license": null
-    },
-    "metadata": {
-      "setup": [],
-      "os": [
-        "linux",
-        "macos"
-      ],
-      "systems": null
-    }
-  },
-  {
     "slug": "pruna",
     "displayName": "pruna",
     "summary": "Use when installing the full Pruna generative media suite — all guides, tools, and workflows in one package.",
@@ -169,7 +679,7 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 94,
+      "downloads": 95,
       "installs": 0,
       "stars": 0,
       "versions": 2
@@ -287,469 +797,6 @@
     "metadata": null
   },
   {
-    "slug": "interactive-explainer",
-    "displayName": "interactive-explainer",
-    "summary": "Use when someone wants an educational explainer with a host and characters — history or science shorts with dialogue, not voiceover-only B-roll.",
-    "description": "Use when someone wants an educational explainer with a host and characters — history or science shorts with dialogue, not voiceover-only B-roll.",
-    "topics": [],
-    "tags": {
-      "ai": "1.0.8",
-      "generative": "1.0.8",
-      "latest": "1.0.8",
-      "pruna": "1.0.8"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 349,
-      "installs": 0,
-      "stars": 0,
-      "versions": 6
-    },
-    "createdAt": 1782823048183,
-    "updatedAt": 1785260240194,
-    "latestVersion": {
-      "version": "1.0.8",
-      "createdAt": 1785259294700,
-      "changelog": "**Minor workflow and intake improvements.**\n\n- Improved intake section: now explicitly prompts open intake and media source options (generate vs upload).\n- Added format options in intake (9:16/16:9, 720p/1080p).\n- Made generation-diversity clarification intake explicit at start of intake section.\n- Removed obsolete skill-card.md file.\n- Bumped version to 1.0.8.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "avatar-single-scene",
-    "displayName": "avatar-single-scene",
-    "summary": "Use when someone wants one polished host-on-camera beat — a speaking person with intake and approval gates before generation.",
-    "description": "Use when someone wants one polished host-on-camera beat — a speaking person with intake and approval gates before generation.",
-    "topics": [],
-    "tags": {
-      "ai": "1.0.8",
-      "generative": "1.0.8",
-      "latest": "1.0.8",
-      "pruna": "1.0.8"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 366,
-      "installs": 0,
-      "stars": 0,
-      "versions": 6
-    },
-    "createdAt": 1782822988199,
-    "updatedAt": 1785260193601,
-    "latestVersion": {
-      "version": "1.0.8",
-      "createdAt": 1785259275820,
-      "changelog": "- Added clarification on media source intake: now explicitly asks \"upload-only portrait vs generate/refine still\" during setup.\n- Intake process now includes an opening to activation of `generation-diversity` clarification.\n- Removed redundant file: skill-card.md.\n- Updated version metadata to 1.0.8.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "avatar-multi-scene",
-    "displayName": "avatar-multi-scene",
-    "summary": "Use when someone wants the same person hosting several clips — multi-segment UGC, comparison reels, or mixed speaking and animated scenes with continuity.",
-    "description": "Use when someone wants the same person hosting several clips — multi-segment UGC, comparison reels, or mixed speaking and animated scenes with continuity.",
-    "topics": [],
-    "tags": {
-      "ai": "1.0.8",
-      "generative": "1.0.8",
-      "latest": "1.0.8",
-      "pruna": "1.0.8"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 394,
-      "installs": 1,
-      "stars": 0,
-      "versions": 6
-    },
-    "createdAt": 1782822975650,
-    "updatedAt": 1785260190678,
-    "latestVersion": {
-      "version": "1.0.8",
-      "createdAt": 1785259285178,
-      "changelog": "avatar-multi-scene v1.0.8\n\n- Updated SKILL.md for intake clarification: now explicitly opens \"generation-diversity\" clarification intake.\n- Added new \"Media source\" intake topic to clarify between generating hero plates via `p-image` or using upload-only references.\n- Minor updates to intake instructions for clearer distinction of user media input.\n- Removed obsolete skill-card.md file for a leaner repo.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "visual-transition-reel",
-    "displayName": "visual-transition-reel",
-    "summary": "Use when someone wants a montage with transitions between shots — action-sequence reel or multi-scene piece where narration is optional.",
-    "description": "Use when someone wants a montage with transitions between shots — action-sequence reel or multi-scene piece where narration is optional.",
-    "topics": [],
-    "tags": {
-      "ai": "1.0.8",
-      "generative": "1.0.8",
-      "latest": "1.0.8",
-      "pruna": "1.0.8"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 336,
-      "installs": 0,
-      "stars": 0,
-      "versions": 7
-    },
-    "createdAt": 1784024201140,
-    "updatedAt": 1785260190410,
-    "latestVersion": {
-      "version": "1.0.8",
-      "createdAt": 1785259267434,
-      "changelog": "visual-transition-reel 1.0.8\n\n- Clarified intake: now explicitly directs to open a `generation-diversity` clarification intake before planning.\n- Intake table updated: added `Format` (aspect_ratio, transition clip resolution) as its own row.\n- Improved scene setup guidance and clarified when agent should wait for full scene plan.\n- Minor updates to phrasing in workflow and step descriptions.\n- Removed redundant or outdated skill card file (skill-card.md).",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "image-to-video",
-    "displayName": "image-to-video",
-    "summary": "Use when someone wants one short film beat from images — a narrated scene, story moment, or cinematic B-roll with optional voiceover.",
-    "description": "Use when someone wants one short film beat from images — a narrated scene, story moment, or cinematic B-roll with optional voiceover.",
-    "topics": [],
-    "tags": {
-      "ai": "1.0.8",
-      "generative": "1.0.8",
-      "latest": "1.0.8",
-      "pruna": "1.0.8"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 87,
-      "installs": 0,
-      "stars": 0,
-      "versions": 6
-    },
-    "createdAt": 1782823027845,
-    "updatedAt": 1785260174449,
-    "latestVersion": {
-      "version": "1.0.8",
-      "createdAt": 1785259250404,
-      "changelog": "image-to-video v1.0.8\n\n- Expanded documentation with clear intake questions, workflow phases, and skill boundaries.\n- Defined required feedback gates: **approve plan**, **approve stills**, **approve clips**.\n- Detailed intake topics: mode, media source, creative prompt, frames, audio options, format, draft, repro, and delivery preferences.\n- Outlined agent workflow, including narration length check and staged video generation.\n- Clarified limits (single-scene only) and provided handoff links to related multi-scene or editing skills.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "narrated-multi-scene",
-    "displayName": "narrated-multi-scene",
-    "summary": "Use when someone wants a multi-part story with voiceover — episodic B-roll, chaptered promo, or several linked video scenes without on-camera dialogue.",
-    "description": "Use when someone wants a multi-part story with voiceover — episodic B-roll, chaptered promo, or several linked video scenes without on-camera dialogue.",
-    "topics": [],
-    "tags": {
-      "ai": "1.0.8",
-      "generative": "1.0.8",
-      "latest": "1.0.8",
-      "pruna": "1.0.8"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 377,
-      "installs": 0,
-      "stars": 0,
-      "versions": 7
-    },
-    "createdAt": 1782830852884,
-    "updatedAt": 1785260166283,
-    "latestVersion": {
-      "version": "1.0.8",
-      "createdAt": 1785259258366,
-      "changelog": "Version 1.0.8\n\n- Clarified intake workflow, specifying a new \"generation-diversity\" clarification step.\n- Expanded intake table to distinguish generating vs uploading per-scene media (frames and voiceover).\n- Added explicit questions about global video format (aspect ratio, resolution, fps) and format per scene.\n- No longer includes the file skill-card.md.\n- Minor edits for clarity and precision in workflow instructions.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "p-video-animate",
-    "displayName": "p-video-animate",
-    "summary": "Use when someone wants a photo to move like another video — motion transfer, dance remixes, or performance variations from a template clip.",
-    "description": "Use when someone wants a photo to move like another video — motion transfer, dance remixes, or performance variations from a template clip.",
-    "topics": [],
-    "tags": {
-      "ai": "1.0.8",
-      "generative": "1.0.8",
-      "latest": "1.0.8",
-      "pruna": "1.0.8"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 364,
-      "installs": 0,
-      "stars": 0,
-      "versions": 7
-    },
-    "createdAt": 1782838489019,
-    "updatedAt": 1785260144768,
-    "latestVersion": {
-      "version": "1.0.8",
-      "createdAt": 1785259201393,
-      "changelog": "p-video-animate 1.0.8\n\n- Added guidance to open `generation-diversity` clarification intake before the first POST in the agent habit section.\n- Minor clarifications in agent workflow for required input gathering.\n- Removed redundant file: skill-card.md.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "stable-audio-2-5",
-    "displayName": "stable-audio-2.5",
-    "summary": "Use when someone wants light instrumental background music — an ambient bed under dialogue or underscore for reels and explainers.",
-    "description": "Use when someone wants light instrumental background music — an ambient bed under dialogue or underscore for reels and explainers.",
-    "topics": [],
-    "tags": {
-      "ai": "1.0.8",
-      "generative": "1.0.8",
-      "latest": "1.0.8",
-      "pruna": "1.0.8"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 341,
-      "installs": 0,
-      "stars": 0,
-      "versions": 7
-    },
-    "createdAt": 1784024183541,
-    "updatedAt": 1785260130563,
-    "latestVersion": {
-      "version": "1.0.8",
-      "createdAt": 1785259234327,
-      "changelog": "- Added explicit instruction to open a generation-diversity clarification intake before the first POST request.\n- Updated agent habit guidance to initiate clarification intake with generation-diversity before generation.\n- Removed the skill-card.md file, reducing redundant metadata. \n- Updated version number to 1.0.8.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "whisperx",
-    "displayName": "whisperx",
-    "summary": "Use when someone needs word-level timestamps from audio — lyric alignment, cut-safe line boundaries, or caption source timing before burn-in with video-editing.",
-    "description": "Use when someone needs word-level timestamps from audio — lyric alignment, cut-safe line boundaries, or caption source timing before burn-in with video-editing.",
-    "topics": [],
-    "tags": {
-      "ai": "1.0.8",
-      "generative": "1.0.8",
-      "latest": "1.0.8",
-      "pruna": "1.0.8"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 57,
-      "installs": 0,
-      "stars": 0,
-      "versions": 7
-    },
-    "createdAt": 1784024212953,
-    "updatedAt": 1785260124326,
-    "latestVersion": {
-      "version": "1.0.8",
-      "createdAt": 1785259242331,
-      "changelog": "whisperx 1.0.8 changelog\n\n- Added detailed usage guidance, including clear descriptions for prerequisites, recommended installation steps, and required inputs.\n- Clarified use cases, limitations, and redirections to other related skills when appropriate.\n- Expanded instructions for workflow integration, such as aligning audio and providing word-level timestamps.\n- Included environment variable setup and example command usage for common agent scenarios.\n- Described typical next steps and follow-on skills for a complete music/video editing workflow.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "gemini-3-1-flash-tts",
-    "displayName": "gemini-3.1-flash-tts",
-    "summary": "Use when someone needs spoken narration or voiceover — explainer tracks, documentary lines, or voice to pair with generated video.",
-    "description": "Use when someone needs spoken narration or voiceover — explainer tracks, documentary lines, or voice to pair with generated video.",
-    "topics": [],
-    "tags": {
-      "ai": "1.0.8",
-      "generative": "1.0.8",
-      "latest": "1.0.8",
-      "pruna": "1.0.8"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 379,
-      "installs": 0,
-      "stars": 1,
-      "versions": 6
-    },
-    "createdAt": 1782827642176,
-    "updatedAt": 1785260121203,
-    "latestVersion": {
-      "version": "1.0.8",
-      "createdAt": 1785259217908,
-      "changelog": "- Improved agent intake: now opens a clarification step (locale, voice, script) with generation-diversity before first TTS request.\n- Updated onboarding instructions for first reply behavior and intake flow.\n- Minor clarifications in agent prompts and user guidance.\n- Removed redundant file: skill-card.md.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "p-video-replace",
-    "displayName": "p-video-replace",
-    "summary": "Use when someone wants to swap a person, outfit, or product inside existing footage while keeping the camera move and audio.",
-    "description": "Use when someone wants to swap a person, outfit, or product inside existing footage while keeping the camera move and audio.",
-    "topics": [],
-    "tags": {
-      "ai": "1.0.8",
-      "generative": "1.0.8",
-      "latest": "1.0.8",
-      "pruna": "1.0.8"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 363,
-      "installs": 0,
-      "stars": 0,
-      "versions": 8
-    },
-    "createdAt": 1784024127269,
-    "updatedAt": 1785260119989,
-    "latestVersion": {
-      "version": "1.0.8",
-      "createdAt": 1785259209705,
-      "changelog": "- Added intake step to explicitly open `generation-diversity` clarification before the first POST.\n- Updated “Agent habit” section to clarify intake workflow.\n- Incremented skill version to 1.0.8.\n- Removed the file: skill-card.md.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "music-2-5",
-    "displayName": "music-2.5",
-    "summary": "Use when someone wants an original AI song with vocals — sung lyrics, a style prompt track, or source audio for a music video.",
-    "description": "Use when someone wants an original AI song with vocals — sung lyrics, a style prompt track, or source audio for a music video.",
-    "topics": [],
-    "tags": {
-      "ai": "1.0.8",
-      "generative": "1.0.8",
-      "latest": "1.0.8",
-      "pruna": "1.0.8"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 358,
-      "installs": 0,
-      "stars": 0,
-      "versions": 6
-    },
-    "createdAt": 1782830778998,
-    "updatedAt": 1785260119956,
-    "latestVersion": {
-      "version": "1.0.8",
-      "createdAt": 1785259226189,
-      "changelog": "- Added intake step: now opens a generation-diversity clarification intake before the first POST.\n- agent habit now clarifies that intake should start before calling the API.\n- Removed the file skill-card.md.\n- Version updated to 1.0.8.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "agenta-monero",
-    "displayName": "agenta-monero",
-    "summary": "Use when making or receiving Monero (XMR) payments. Generates addresses, sends payments, checks balances, verifies transactions, generates and verifies payment proofs, estimates fees, sweeps funds, and manages wallet operations via a self-hosted monero-wallet-rpc node. Keywords: monero, xmr, cryptocurrency, payments, wallet, send, receive, payment proof.",
-    "description": "Use when making or receiving Monero (XMR) payments. Generates addresses, sends payments, checks balances, verifies transactions, generates and verifies payment proofs, estimates fees, sweeps funds, and manages wallet operations via a self-hosted monero-wallet-rpc node. Keywords: monero, xmr, cryptocurrency, payments, wallet, send, receive, payment proof.",
-    "topics": [
-      "crypto"
-    ],
-    "tags": {
-      "latest": "0.1.2"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 47,
-      "installs": 0,
-      "stars": 0,
-      "versions": 3
-    },
-    "createdAt": 1785216943727,
-    "updatedAt": 1785260080440,
-    "latestVersion": {
-      "version": "0.1.2",
-      "createdAt": 1785258846093,
-      "changelog": "**Requires explicit confirmation to broadcast Monero transactions.**\n\n- Sending (send_xmr.sh) and sweeping (sweep_all.sh) XMR now require --confirm; transactions are not broadcast by default.\n- --dry-run mode is available to preview transactions without sending.\n- Updated documentation and usage instructions to reflect confirmation requirement.\n- Added \"Agenta-Monero Security Review.md\" file.\n- Various script, test, and documentation updates to support new confirmation workflow.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "p-image-try-on",
-    "displayName": "p-image-try-on",
-    "summary": "Use when someone wants virtual try-on — dress a person in clothes from reference photos for fashion or ecommerce.",
-    "description": "Use when someone wants virtual try-on — dress a person in clothes from reference photos for fashion or ecommerce.",
-    "topics": [],
-    "tags": {
-      "ai": "1.0.8",
-      "generative": "1.0.8",
-      "latest": "1.0.8",
-      "pruna": "1.0.8"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 427,
-      "installs": 1,
-      "stars": 0,
-      "versions": 7
-    },
-    "createdAt": 1782831565664,
-    "updatedAt": 1785260078453,
-    "latestVersion": {
-      "version": "1.0.8",
-      "createdAt": 1785259176123,
-      "changelog": "p-image-try-on 1.0.8\n\n- Clarified agent intake procedure: now explicitly open **generation-diversity** clarification intake when user input is silent.\n- Updated \"Agent habit\" step for improved intake guidance and prompt handling.\n- Removed the redundant skill-card.md file.\n- Minor text cleanup to improve instruction clarity and flow.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "p-video",
-    "displayName": "p-video",
-    "summary": "Use when someone wants one short video clip from text or images — B-roll, start/end frame animation, or a quick motion shot. Not for full multi-scene films or lip-synced hosts.",
-    "description": "Use when someone wants one short video clip from text or images — B-roll, start/end frame animation, or a quick motion shot. Not for full multi-scene films or lip-synced hosts.",
-    "topics": [],
-    "tags": {
-      "ai": "1.0.8",
-      "generative": "1.0.8",
-      "latest": "1.0.8",
-      "pruna": "1.0.8"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 377,
-      "installs": 0,
-      "stars": 0,
-      "versions": 7
-    },
-    "createdAt": 1782831589844,
-    "updatedAt": 1785260051541,
-    "latestVersion": {
-      "version": "1.0.8",
-      "createdAt": 1785259184487,
-      "changelog": "p-video v1.0.8\n\n- Agent now explicitly opens a `generation-diversity` clarification intake before the first generation request.\n- Updated agent guidance to reflect this intake process in \"Agent habit\" section.\n- Removed redundant or outdated file: skill-card.md.\n- Version bump to 1.0.8 in metadata.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
-    "slug": "p-video-avatar",
-    "displayName": "p-video-avatar",
-    "summary": "Use when someone wants a person on camera speaking a script — lip-synced host, spokesperson, or narrated avatar from a portrait photo.",
-    "description": "Use when someone wants a person on camera speaking a script — lip-synced host, spokesperson, or narrated avatar from a portrait photo.",
-    "topics": [],
-    "tags": {
-      "ai": "1.0.8",
-      "generative": "1.0.8",
-      "latest": "1.0.8",
-      "pruna": "1.0.8"
-    },
-    "stats": {
-      "comments": 0,
-      "downloads": 374,
-      "installs": 0,
-      "stars": 0,
-      "versions": 7
-    },
-    "createdAt": 1782838502488,
-    "updatedAt": 1785260050341,
-    "latestVersion": {
-      "version": "1.0.8",
-      "createdAt": 1785259193291,
-      "changelog": "- Added explicit guidance to open clarification intake with `generation-diversity` before the first prediction.\n- Clarified agent habits for initial user interaction, especially for prompt and input intake.\n- No core logic or API changes.\n- Removed redundant/obsolete file: `skill-card.md`.",
-      "license": null
-    },
-    "metadata": null
-  },
-  {
     "slug": "sonoscli",
     "displayName": "Sonoscli",
     "summary": "Control Sonos speakers (discover/status/play/volume/group).",
@@ -760,7 +807,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 87116,
+      "downloads": 87121,
       "installs": 2828,
       "stars": 56,
       "versions": 1
@@ -794,7 +841,7 @@
     },
     "stats": {
       "comments": 36,
-      "downloads": 189796,
+      "downloads": 189810,
       "installs": 5459,
       "stars": 946,
       "versions": 1
@@ -826,7 +873,7 @@
     },
     "stats": {
       "comments": 7,
-      "downloads": 194211,
+      "downloads": 194236,
       "installs": 7620,
       "stars": 660,
       "versions": 1
@@ -854,7 +901,7 @@
     },
     "stats": {
       "comments": 6,
-      "downloads": 165309,
+      "downloads": 165333,
       "installs": 6490,
       "stars": 427,
       "versions": 1
@@ -886,7 +933,7 @@
     },
     "stats": {
       "comments": 2,
-      "downloads": 86477,
+      "downloads": 86487,
       "installs": 2966,
       "stars": 336,
       "versions": 1
@@ -916,8 +963,8 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 97381,
-      "installs": 3476,
+      "downloads": 97409,
+      "installs": 3477,
       "stars": 334,
       "versions": 1
     },
@@ -944,7 +991,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 97920,
+      "downloads": 97951,
       "installs": 3255,
       "stars": 269,
       "versions": 1
@@ -974,7 +1021,7 @@
     },
     "stats": {
       "comments": 9,
-      "downloads": 106294,
+      "downloads": 106311,
       "installs": 4112,
       "stars": 449,
       "versions": 1
@@ -1004,7 +1051,7 @@
     },
     "stats": {
       "comments": 5,
-      "downloads": 35864,
+      "downloads": 35874,
       "installs": 1484,
       "stars": 57,
       "versions": 1
@@ -1034,7 +1081,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 68464,
+      "downloads": 68468,
       "installs": 2174,
       "stars": 198,
       "versions": 1
@@ -1066,7 +1113,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 105617,
+      "downloads": 105622,
       "installs": 3103,
       "stars": 418,
       "versions": 2
@@ -1095,7 +1142,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 38714,
+      "downloads": 38719,
       "installs": 1590,
       "stars": 113,
       "versions": 1
@@ -1127,7 +1174,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 55015,
+      "downloads": 55030,
       "installs": 1635,
       "stars": 133,
       "versions": 1
@@ -1159,7 +1206,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 43890,
+      "downloads": 43894,
       "installs": 1515,
       "stars": 75,
       "versions": 1
@@ -1191,7 +1238,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 117847,
+      "downloads": 117885,
       "installs": 4367,
       "stars": 269,
       "versions": 1
@@ -1221,7 +1268,7 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 44348,
+      "downloads": 44367,
       "installs": 1701,
       "stars": 31,
       "versions": 1
@@ -1254,7 +1301,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 49049,
+      "downloads": 49070,
       "installs": 1602,
       "stars": 70,
       "versions": 1
@@ -1286,7 +1333,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 28001,
+      "downloads": 28006,
       "installs": 1281,
       "stars": 29,
       "versions": 1
@@ -1323,7 +1370,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 23930,
+      "downloads": 23937,
       "installs": 1268,
       "stars": 31,
       "versions": 1
@@ -1360,7 +1407,7 @@
     },
     "stats": {
       "comments": 12,
-      "downloads": 50791,
+      "downloads": 50810,
       "installs": 1504,
       "stars": 160,
       "versions": 1
@@ -1386,7 +1433,7 @@
     },
     "stats": {
       "comments": 4,
-      "downloads": 31074,
+      "downloads": 31077,
       "installs": 1350,
       "stars": 84,
       "versions": 1
@@ -1420,7 +1467,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 25437,
+      "downloads": 25438,
       "installs": 1133,
       "stars": 38,
       "versions": 2
@@ -1446,7 +1493,7 @@
     },
     "stats": {
       "comments": 3,
-      "downloads": 31112,
+      "downloads": 31116,
       "installs": 1435,
       "stars": 43,
       "versions": 1
@@ -1479,7 +1526,7 @@
     },
     "stats": {
       "comments": 0,
-      "downloads": 19452,
+      "downloads": 19456,
       "installs": 1232,
       "stars": 7,
       "versions": 2
@@ -1512,7 +1559,7 @@
     },
     "stats": {
       "comments": 1,
-      "downloads": 26855,
+      "downloads": 26859,
       "installs": 1199,
       "stars": 52,
       "versions": 1
