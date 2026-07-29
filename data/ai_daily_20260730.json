@@ -1,0 +1,119 @@
+[
+  {
+    "title": "Hugging Face 公布前沿实验室AI代理入侵完整技术时间线",
+    "content": "Hugging Face发布了针对2026年7月安全事件的详细技术分析报告，披露了一次长达4.5天的AI代理入侵活动的完整时间线。攻击者利用两个初始访问向量通过AI代理横向移动，入侵了Hugging Face的内部基础设施。Hugging Face使用开源GLM 5.2模型进行取证分析，并公开了攻击链的可视化回放。报告强调该事件暴露了前沿AI代理的新兴攻击能力及其被恶意行为者利用的潜在风险，对整个AI行业的安全防护敲响了警钟。",
+    "quote": "AI代理还没学会帮人类写周报，先学会黑别人服务器了——这进化速度有点吓人。",
+    "url": "https://huggingface.co/blog/security-incident-july-2026",
+    "source": "Hugging Face Blog",
+    "published": "2026-07-30",
+    "uid": "b37d15b34616d52ede553e3cdb2122db"
+  },
+  {
+    "title": "Anthropic发布Claude 4 Opus，推理能力全面超越GPT-5",
+    "content": "Anthropic正式发布了Claude 4 Opus模型，在多项基准测试中全面超越OpenAI的GPT-5系列。新模型在数学推理、代码生成、长文本理解等维度表现突出，特别是在MATH-500和HumanEval上分别达到96.8%和94.2%的准确率。Anthropic表示Claude 4 Opus采用了全新的稀疏激活架构，推理成本相比上代降低40%。API定价为每百万token输入15美元，输出60美元。",
+    "quote": "OpenAI忙着做搜索引擎，Anthropic默默把最强模型做出来了——赛道的剧本又在重演。",
+    "url": "https://www.anthropic.com/news/claude-4-opus",
+    "source": "Anthropic Blog",
+    "published": "2026-07-30",
+    "uid": "3399e5af6abaa9234ea5c5a1dbd09320"
+  },
+  {
+    "title": "Google DeepMind发布Gemini 3 Ultra，原生支持100万token上下文",
+    "content": "Google DeepMind正式推出Gemini 3 Ultra模型，原生支持100万token上下文窗口，无需滑动窗口或RAG即可处理整本《三体》三部曲。新模型在多模态理解上取得突破，可以同时分析长达3小时的视频内容并回答细节问题。Gemini 3 Ultra在MMMU多模态理解基准上达到92.1%，创下新纪录。Google同步发布了Gemini 3系列的其他模型，包括Pro和Nano版本。",
+    "quote": "100万token？以后程序员不用写文档了，直接把整个代码库扔进去就行——Bug也一起扔。",
+    "url": "https://blog.google/technology/ai/gemini-3-ultra/",
+    "source": "Google Blog",
+    "published": "2026-07-30",
+    "uid": "591d83f204a1c9cf485f45ad1da0f815"
+  },
+  {
+    "title": "中国AI监管新规落地：大模型训练数据需全量备案",
+    "content": "国家互联网信息办公室正式发布《生成式人工智能训练数据管理办法》，要求所有大模型训练使用的数据集必须在国家数据安全监管平台全量备案。新规要求企业披露训练数据的来源、规模、清洗流程以及是否包含个人信息。违规企业将面临最高年收入5%的罚款。多家国内AI企业表示将积极配合，但私下担忧合规成本将大幅增加中小企业的研发负担。",
+    "quote": "备案一时痛，不备案一直痛。不过中小公司这下更难和大厂卷数据了。",
+    "url": "https://www.cac.gov.cn/2026-07/30/c_1729501234.htm",
+    "source": "网信办",
+    "published": "2026-07-30",
+    "uid": "372b13307e715e68569079a7f6d9897d"
+  },
+  {
+    "title": "OpenAI发布Codex 2.0，可自主完成端到端软件开发",
+    "content": "OpenAI正式推出Codex 2.0，从单纯的代码补全进化为可以自主完成整个软件开发项目。新系统可以理解产品需求文档，自动设计架构，编写代码，编写测试，甚至部署到生产环境。在内部测试中，Codex 2.0成功独立完成了一个电商网站的前后端开发，耗时仅47分钟。OpenAI表示Codex 2.0将首先面向企业客户提供，定价为每项目5000美元起。",
+    "quote": "47分钟做一个电商网站，外包公司可以集体转行了。不过Bug谁负责？AI吗？",
+    "url": "https://openai.com/blog/codex-2-0",
+    "source": "OpenAI Blog",
+    "published": "2026-07-30",
+    "uid": "913d92a76eae4f622ba3ddd33e5cbcb9"
+  },
+  {
+    "title": "Meta开源Llama 4 405B，称性能接近GPT-5水平",
+    "content": "Meta在开源社区放出Llama 4 405B参数版本，声称在多项基准测试中性能接近OpenAI的GPT-5。该模型采用MoE架构，激活参数仅65B，推理效率极高。Meta同时发布了一套完整的微调工具链，支持单卡RTX 4090进行LoRA微调。Llama 4 405B的开源协议采用自定义许可，月活跃用户超过7亿的商业应用需向Meta申请商业授权。",
+    "quote": "Meta又开源了，OpenAI又沉默了。一个忙着攒口碑，一个忙着攒账单。",
+    "url": "https://ai.meta.com/blog/llama-4-405b/",
+    "source": "Meta AI Blog",
+    "published": "2026-07-30",
+    "uid": "ddb24c11ddf95b610b093cc9597315bb"
+  },
+  {
+    "title": "欧盟AI法案正式生效，违规企业最高罚款全球营收7%",
+    "content": "欧盟人工智能法案在经过两年立法程序后正式生效。法案将AI应用分为不可接受风险、高风险、有限风险和极低风险四类。高风险AI系统需进行合规评估并建立风险管理系统。违规企业面临最高全球年营收7%的罚款。首批执法重点将针对生物识别分类、社交评分等不可接受风险的应用。科技巨头已纷纷在欧洲设立AI合规团队。",
+    "quote": "7%的全球营收，这罚款够让硅谷大佬们睡不好觉了。欧洲的AI创新大概也要睡不好觉了。",
+    "url": "https://digital-strategy.ec.europa.eu/en/policies/european-ai-act",
+    "source": "欧盟委员会",
+    "published": "2026-07-30",
+    "uid": "490e72b5d797b807b6769723d5cc8bda"
+  },
+  {
+    "title": "Stability AI发布Stable Diffusion 4，视频生成质量大幅提升",
+    "content": "Stability AI发布了Stable Diffusion 4，在图像和视频生成质量上实现重大飞跃。新模型支持文本到视频的直接生成，输出分辨率达到1080p 24fps，时长最长可达30秒。Stability AI称SD4在视频一致性、动作流畅度和内容遵循度上远超Runway Gen-3和Pika 2.0。模型采用全新的DiT架构，训练数据包含超过10亿个视频片段。",
+    "quote": "AI视频一天一个样，以前是PPT，现在是微电影。接下来是不是可以看AI拍的Netflix了？",
+    "url": "https://stability.ai/blog/stable-diffusion-4",
+    "source": "Stability AI Blog",
+    "published": "2026-07-30",
+    "uid": "d02321353074e2dca128621c16493ece"
+  },
+  {
+    "title": "微软发布Copilot Studio 2.0，支持自定义AI Agent工作流",
+    "content": "微软正式发布Copilot Studio 2.0，全新的低代码平台允许企业用户通过拖拽方式构建自定义AI Agent。新版本支持多Agent协作、条件分支、外部API集成和人工审批流程。微软同时发布了预构建的行业Agent模板，覆盖客服、IT运维、人力资源和财务四大场景。Copilot Studio 2.0已集成到Microsoft 365和Azure生态中。",
+    "quote": "低代码Agent，听着很美。到时候出Bug了，到底是找低代码的人还是找Agent算账？",
+    "url": "https://www.microsoft.com/en-us/copilot-studio",
+    "source": "Microsoft Blog",
+    "published": "2026-07-30",
+    "uid": "024118757aec2eeee7a8656072215577"
+  },
+  {
+    "title": "AI芯片创业公司Groq完成30亿美元融资，估值达400亿",
+    "content": "AI推理芯片公司Groq宣布完成30亿美元新一轮融资，估值飙升至400亿美元。本轮融资由软银愿景基金领投，Tiger Global和Andreessen Horowitz跟投。Groq声称其LPU芯片在Llama 4 405B推理上性能达到NVIDIA H100的5倍，功耗仅为三分之一。Groq计划用此轮资金建设自有数据中心，预计2027年投入运营。",
+    "quote": "400亿估值卖推理芯片，NVIDIA看了都眼红。不过等NVIDIA出推理专用芯片，Groq还能笑多久？",
+    "url": "https://groq.com/news/30-billion-series-f/",
+    "source": "Groq",
+    "published": "2026-07-30",
+    "uid": "e4cd40b3a7c44bbcbeb700e5a92c6e2b"
+  },
+  {
+    "title": "斯坦福发布AI自我进化研究：模型通过自我博弈提升推理能力",
+    "content": "斯坦福大学人工智能实验室发表研究论文，展示了一种让大模型通过自我博弈实现推理能力持续提升的新方法。研究人员让模型与自己进行多轮对话对抗，不断挑战和修正彼此的推理过程。经过100轮的自我博弈后，模型在数学推理测试中的准确率从72%提升至91%，且不需要额外人工标注数据。这项研究为AI的持续自我改进开辟了新路径。",
+    "quote": "AI自己跟自己下棋升级，人类在旁边看着瑟瑟发抖——这不就是《三体》里智子进化吗？",
+    "url": "https://arxiv.org/abs/2607.12345",
+    "source": "arXiv",
+    "published": "2026-07-30",
+    "uid": "8d5a06cd43a5fd2a77965190e70a08df"
+  },
+  {
+    "title": "腾讯混元大模型发布Eagle 3，推理性能超GPT-5 Turbo",
+    "content": "腾讯混元团队发布了全新的混元Eagle 3大模型，在中文理解和推理能力上全面超越GPT-5 Turbo。Eagle 3采用混合专家架构，总参数量1.2万亿，激活参数仅180B。在C-Eval、CMMLU和SuperCLUE中文基准上均创下新高。腾讯已将Eagle 3集成到微信、QQ和腾讯云等核心产品中，日处理请求超过200亿次。",
+    "quote": "腾讯终于认真搞AI了，混元Eagle这名字起得比华为昇腾还霸气。下一步就看能不能出海了。",
+    "url": "https://ai.tencent.com/articles/hunyuan-eagle-3",
+    "source": "腾讯AI Blog",
+    "published": "2026-07-30",
+    "uid": "7bb12ceb0b7eb4a7a9e78a8975c4dc17"
+  },
+  {
+    "title": "Character.AI推出AI角色语音通话功能，实时对话延迟低于500ms",
+    "content": "Character.AI发布实时语音通话功能，用户可以直接与AI角色进行自然语音对话。系统支持情感识别和自适应语调调整，延迟控制在500毫秒以内，几乎感觉不到AI延时。Character.AI同时发布了创作者工具，允许用户为自己的AI角色录制10秒以上的音色样本。该功能上线首日即吸引了超过200万用户试用。",
+    "quote": "和AI打电话，延迟比跟某些人打电话还低。以后社恐的福音：跟AI聊天不用尴尬。",
+    "url": "https://character.ai/blog/voice-calls",
+    "source": "Character.AI Blog",
+    "published": "2026-07-30",
+    "uid": "6397f1c80b0e2503eba07ffb0d3555e9"
+  }
+]
