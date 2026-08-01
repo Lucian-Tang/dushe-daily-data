@@ -34,7 +34,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # ---- 配置 ----
-LLM_MODEL = os.environ.get("ENRICH_MODEL", "deepseek/deepseek-v4-pro")  # 通过 openclaw CLI 调用
+LLM_MODEL = os.environ.get("ENRICH_MODEL", "deepseek/deepseek-v4-flash")  # 通过 openclaw CLI 调用
 
 # 每批处理条数（控制 API 调用次数）
 BATCH_SIZE = 20  # 减少 CLI 启动次数
