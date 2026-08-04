@@ -1,146 +1,137 @@
 [
   {
-    "title": "Apple says more ex-employees may have taken confidential data to OpenAI",
-    "content": "# Comment",
-    "quote": "Apple says more ex-employ。",
-    "source": "HN Front Page",
+    "title": "Show HN: cMCP，拒绝 AI Agent 工具调用并生成签名收据",
+    "content": "开源项目 cMCP 允许开发者拒绝 AI Agent 的某个工具调用，同时生成一份带签名的收据，用于审计和追溯 Agent 行为。该项目登上 Hacker News，获得开发者关注，为 Agent 工具调用安全提供了新的可验证方案，也折射出 AI 工具调用安全治理正在成为新议题。",
+    "quote": "拒绝还要开收据，AI 这职场比人类还卷。",
+    "url": "https://github.com/agentrust-io/cmcp",
+    "source": "Hacker News",
+    "published": "2026-08-05",
+    "uid": "dev_e297a867"
+  },
+  {
+    "title": "vlt 1.0 正式发布，自带托管包注册表服务",
+    "content": "vlt 宣布发布 1.0 正式版，并推出托管的包注册表服务。作为 npm 生态的新玩家，vlt 主打更快的安装速度与更友好的安全体验，此次 1.0 标志着其生态走向稳定，在 Hacker News 上获得 18 分讨论热度，JavaScript 包管理工具链又多了一个选择。",
+    "quote": "包管理器界又来个新人，先活过三年再说。",
+    "url": "https://www.vlt.io/blog/1-0",
+    "source": "Hacker News",
+    "published": "2026-08-05",
+    "uid": "dev_d2e65422"
+  },
+  {
+    "title": "Warp 终端推出 Agent CLI：命令行里的 AI 编程助手",
+    "content": "Warp 终端发布 Agent CLI，将 AI 编程能力直接集成进命令行，支持在终端内完成代码任务的委派与执行。该功能面向追求效率的开发者，在 Hacker News 上获得 25 分与 5 条讨论，是 AI 编码工具从 IDE 向终端场景延伸的代表作，终端党迎来新玩具。",
+    "quote": "终端里卷 AI，卷完 IDE 卷命令行，程序员真累。",
+    "url": "https://www.warp.dev/blog/introducing-the-warp-agent-cli-coding-agent",
+    "source": "Hacker News",
+    "published": "2026-08-05",
+    "uid": "dev_ba761da6"
+  },
+  {
+    "title": "Mistral 发布 Shieldstral：30 亿参数开源多模态审核模型",
+    "content": "Mistral 发布 Shieldstral，一个 30 亿参数的开放权重模型，专门用于多模态内容审核，可检测图像与文本中的违规内容。模型权重开放，开发者可本地部署，为内容安全场景提供了轻量级自托管选项，也延续了 Mistral 在开源权重路线上的布局。",
+    "quote": "审核模型都开源了，以后骂人先过一遍审核。",
+    "url": "https://mistral.ai/news/shieldstral/",
+    "source": "Hacker News",
+    "published": "2026-08-05",
+    "uid": "dev_33e57a44"
+  },
+  {
+    "title": "苹果：更多前员工可能把机密数据带给了 OpenAI",
+    "content": "TechCrunch 报道，苹果称更多前员工可能将机密数据带给了 OpenAI，涉事范围较此前披露的更大。这一事件加剧了科技巨头之间的人才与数据流动争议，在 Hacker News 上获得 178 分的高热度讨论，也让大厂竞业与保密协议的执行力再次受到审视。",
+    "quote": "苹果前员工组团搬家，保密协议果然只是张纸。",
     "url": "https://techcrunch.com/2026/08/04/apple-says-more-ex-employees-may-have-taken-confidential-data-to-openai/",
+    "source": "Hacker News",
     "published": "2026-08-05",
-    "uid": "dev_1c2b8dde"
+    "uid": "dev_7fb11033"
   },
   {
-    "title": "Online ad giant Adform was hacked, proving once again why ad blockers are needed",
-    "content": "Po",
-    "quote": "Online ad giant Adform wa。",
-    "source": "HN Front Page",
+    "title": "在线广告巨头 Adform 被黑，广告拦截器再成话题",
+    "content": "在线广告巨头 Adform 遭到黑客攻击，安全博客以此为例再次强调广告拦截器的必要性。广告生态中第三方脚本与追踪代码密集，攻击面庞大，此次事件引发对浏览器端安全防护的讨论，也暴露了数字广告产业链在安全投入上的长期短板。",
+    "quote": "广告商被黑还要怪广告拦截器？这逻辑绝了。",
     "url": "https://this.weekinsecurity.com/online-advertising-giant-adform-was-hacked-proving-once-again-why-ad-blockers-are-necessary/",
+    "source": "Hacker News",
     "published": "2026-08-05",
-    "uid": "dev_b437572d"
+    "uid": "dev_b3779c2e"
   },
   {
-    "title": "AI-Generated Images Discourage Me from Reading Your Blog",
-    "content": "# Comments: 348",
-    "quote": "# Comments: 348",
-    "source": "HN Front Page",
-    "url": "https://nelson.cloud/ai-generated-images-discourage-me-from-reading-your-blog/",
+    "title": "一个 Agent 编排任务烧掉 100 万到 200 万 Opus tokens 的复盘",
+    "content": "一位开发者复盘其 Claude Code 编排技能：把一切任务都甩给子 Agent 后，每个任务竟烧掉 100 万到 200 万 Opus tokens，包括本可直接完成的小任务。这个代价高昂的事故提醒开发者，Agent 编排的抽象层并非没有成本，过度委派正在成为 AI 编程的新浪费源头。",
+    "quote": "一次任务烧两百万 token，这烧的不是钱是格局。",
+    "url": "https://dev.to/akashy/my-agent-orchestrator-burned-1-2m-opus-tokens-per-task-heres-the-postmortem-2k7g",
+    "source": "Dev.to",
     "published": "2026-08-05",
-    "uid": "dev_663a68e0"
+    "uid": "dev_64731b2b"
   },
   {
-    "title": "Show HN: Fine-tune an 8B model on a 4 GB laptop GPU",
-    "content": "# Comments: 8",
-    "quote": "# Comments: 8",
-    "source": "HN Front Page",
-    "url": "https://github.com/MakazhanAlpamys/Soup",
+    "title": "浏览器与 Node 的事件循环分歧点（系列第二篇）",
+    "content": "系列文章第二篇对比浏览器与 Node.js 事件循环的分歧点。文章先建立调用栈、微任务队列与宏任务队列的统一心智模型，再指出规范层面的 JavaScript 模型在实际运行时中的差异，适合想深入理解异步机制的开发者，属于少见的高质量运行时原理科普。",
+    "quote": "浏览器和 Node 的事件循环都能吵两集，前端水深。",
+    "url": "https://dev.to/aniket_misra_e47d1564ab7b/browser-vs-node-where-the-event-loop-actually-diverges-part-23-3j6c",
+    "source": "Dev.to",
     "published": "2026-08-05",
-    "uid": "dev_7cf72e2e"
+    "uid": "dev_dd5817e7"
   },
   {
-    "title": "TencentCloud/TencentDB-Agent-Memory",
-    "content": "TencentCloud/TencentDB-Agent-Memory。GitHub Trending Daily相关讨论（github.com）。",
-    "quote": "TencentCloud/TencentDB-Agent-M",
-    "source": "GitHub Trending Daily",
+    "title": "TencentCloud/TencentDB-Agent-Memory：腾讯云开源数据库 Agent 记忆项目",
+    "content": "腾讯云在 GitHub 开源 TencentDB-Agent-Memory 项目，今日登上 GitHub Trending 榜单。项目面向数据库 Agent 的记忆管理场景，体现云厂商押注 AI Agent 基础设施的趋势，仓库详情与用法见 GitHub 主页，适合关注数据库与 AI 结合方向的开发者围观。",
+    "quote": "云厂商都开始给 Agent 造记忆了，数据库要变脑白金。",
     "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+    "source": "GitHub",
     "published": "2026-08-05",
-    "uid": "dev_ad834be8"
+    "uid": "dev_b8429432"
   },
   {
-    "title": "zhaoxuya520/reverse-skill",
-    "content": "zhaoxuya520/reverse-skill。GitHub Trending Daily相关讨论（github.com）。",
-    "quote": "zhaoxuya520/reverse-skill",
-    "source": "GitHub Trending Daily",
-    "url": "https://github.com/zhaoxuya520/reverse-skill",
+    "title": "Uber 开源 ADR：给架构决策留个书面记录",
+    "content": "Uber 开源 ADR 项目并登上 GitHub Trending。ADR（架构决策记录）用于沉淀技术决策上下文，避免架构演进中「为什么这么做」的信息丢失，Uber 将其工具化开源，供团队在项目中落地架构决策文档，对需要长期演进的大型工程尤其有价值。",
+    "quote": "Uber 开源决策记录，程序员终于有地方写当初为什么了。",
+    "url": "https://github.com/uber/ADR",
+    "source": "GitHub",
     "published": "2026-08-05",
-    "uid": "dev_165915c3"
+    "uid": "dev_aa65e2de"
   },
   {
-    "title": "两天开发了一个网站专门收录各领域的最佳实践，方便学习（抄袭🐶）",
-    "content": "最初是想在做业务需求的时候尽量使用最新的一些技术，还能提升自己。但是现在技术更新迭代太快，github 上的搜索结果要么是几年前的内容要么就不符合我们的业务场景。于是网上搜集了一些热门项目通过 AI 筛选和处理，做了领域分类和技术划分，整理了一个网站出来，比较仓促很多地方做的不太行，大家随便看看项目地址 https://nb-github.pages.dev/",
-    "quote": "最初是想在做业务需求的时候尽量使用最新的一些技术，还能提升自",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1228416#reply1",
+    "title": "obra/superpowers：给 Claude Code 加技能包的 GitHub 热门项目",
+    "content": "知名开发者 obra 的 superpowers 项目登上 GitHub Trending，提供一套面向 Claude Code 的 skills 集合，帮助 Agent 在编码任务中发挥更强能力。项目延续了社区用技能文件增强 Agent 工作流的思路，是观察 Agent 技能生态的重要样本，Star 数还在快速上涨。",
+    "quote": "开源技能包越来越卷，Claude 快成超级赛亚人了。",
+    "url": "https://github.com/obra/superpowers",
+    "source": "GitHub",
     "published": "2026-08-05",
-    "uid": "dev_418d0a31"
+    "uid": "dev_294f2dcb"
   },
   {
-    "title": "大家对于 Anthropic 估值的看法",
-    "content": "近三个月，anthropic 估值从 3800 亿涨到了最近的 9000 亿。大家觉得它上市后能到什么什么水平。单单挣程序员的钱能支撑这么高的估值吗。",
-    "quote": "近三个月，anthropic 估值从 3800 亿涨到了最近",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1212285#reply12",
+    "title": "开源 Windows 输入法：AI 辅助编程两个月肝出来的",
+    "content": "一位开发者分享自己用 AI 辅助编程打造的开源 Windows 输入法，兼顾易用性与美观性。作者称在 Coding Agent 加速下项目快速完善，并放话未来在功能性上超越搜狗不成问题，帖子登上 V2EX 分享板块引发讨论，也再次印证 AI 编程对个人开发者的杠杆效应。",
+    "quote": "AI 代写输入法，搜狗听了连夜改需求。",
+    "url": "https://www.v2ex.com/t/1232135#reply1",
+    "source": "V2EX",
     "published": "2026-08-05",
-    "uid": "dev_d87996d2"
+    "uid": "dev_3b024d18"
   },
   {
-    "title": "Omdia's 2026 supply-chain survey puts the annual-incident rate at 77 percent",
-    "content": "Seventy-seven percent of surveyed organizations experienced a software supply chain incident in the twelve months before Omdia ran its 2026 survey, per a research report Docker sponsored and published",
-    "quote": "Seventy-seven percent of surve",
-    "source": "Dev.to",
-    "url": "https://dev.to/leobaniak/omdias-2026-supply-chain-survey-puts-the-annual-incident-rate-at-77-percent-11p4",
+    "title": "用 Rust 写开源桌面 Agent，复盘两个真实性能问题",
+    "content": "开发者用 Rust 编写开源桌面端 AI Agent BitFun（MIT 协议），运行时为 Rust、外壳为 Tauri v2，支持三大桌面平台。作者复盘两个真实性能瓶颈：Agent 执行任务时会反复搜索同一仓库，ripgrep 虽快但每次冷启动都要重新遍历目录树，导致大量重复开销，Agent 应用开发者当引以为戒。",
+    "quote": "Agent 反复搜仓库，跟人反复翻抽屉一个毛病。",
+    "url": "https://www.v2ex.com/t/1232115#reply2",
+    "source": "V2EX",
     "published": "2026-08-05",
-    "uid": "dev_8bc6acf9"
+    "uid": "dev_3bad3290"
   },
   {
-    "title": "Day 17–Day 22: From Compliance to Command SOC — Building the Real Foundation of a Security Operations Center",
-    "content": "Day 17 — Compliance &amp; Regulatory Foundations in SOC When we talk about cybersecurity in enterprise environments, we are not just talking about stopping hackers. We are talking about protecting leg",
-    "quote": "Day 17 — Compliance &amp; Regu",
-    "source": "Dev.to",
-    "url": "https://dev.to/faizan-nazir/day-17-day-22-from-compliance-to-command-soc-building-the-real-foundation-of-a-security-4b5p",
+    "title": "参悟 llama.cpp 中的 Qwen3.6-35B-A3B：MoE 部署底层逻辑",
+    "content": "博客园文章深入拆解 llama.cpp 中 Qwen3.6-35B-A3B 的部署实现，以探究性实践记录的方式梳理 MoE（混合专家）架构的底层逻辑与推理引擎的加载机制，对想理解大模型推理细节的开发者有参考价值，属于少见的硬核源码级解读内容。",
+    "quote": "MoE 参数都敢拆开讲，这位博主是真敢写。",
+    "url": "https://www.cnblogs.com/egodprime/p/22214433",
+    "source": "博客园",
     "published": "2026-08-05",
-    "uid": "dev_80e25878"
+    "uid": "dev_03235809"
   },
   {
-    "title": "Next.js & Clerk Authentication: A Developer's Guide to Blocking Disposable Emails",
-    "content": "In the modern web development ecosystem, building robust authentication is no longer just about hashing passwords and issuing JSON Web Tokens (JWTs). As software applications scale, they inevitably at",
-    "quote": "In the modern web development ",
-    "source": "Dev.to",
-    "url": "https://dev.to/abdul_wahab_fadsync/nextjs-clerk-authentication-a-developers-guide-to-blocking-disposable-emails-38am",
+    "title": "EKS 集群 ArgoCD 两跳升级手册：备份、恢复、巡检全流程",
+    "content": "博客园发布 EKS 集群 ArgoCD 升级实操手册，覆盖 v3.0.6 到 v3.2.x 的两跳升级路径，包含备份、恢复、升级与巡检全流程，并区分生产命名空间与演练命名空间，是 DevOps 团队可照抄的排障与升级模板，对维护 Kubernetes 生产集群的工程师非常实用。",
+    "quote": "两跳升级还带备份巡检，这手册比运维本人还稳。",
+    "url": "https://www.cnblogs.com/Jame-mei/p/22218321",
+    "source": "博客园",
     "published": "2026-08-05",
-    "uid": "dev_fbe1b61e"
-  },
-  {
-    "title": "面向 .NET 开发者的 RocketMQ 入门指南（一）：整体架构 - 黑洞视界",
-    "content": "目录前言从 Remoting 说起Remoting 链路如何工作Remoting 架构的使用成本客户端实现复杂多语言客户端难以保持一致应用需要直接访问 Broker客户端与服务端演进联系较紧RocketMQ 5：Proxy 与 gRPC标准化协议与多语言 API客户端可以更轻网络入口更集中gRPC",
-    "quote": "目录前言从 Remoting 说起Remoting 链路如何",
-    "source": "博客园 Cnblogs",
-    "url": "https://www.cnblogs.com/eventhorizon/p/22225559",
-    "published": "2026-08-05",
-    "uid": "dev_2769ea0a"
-  },
-  {
-    "title": "1. DeepAgents 开箱，鸿蒙自动化测试 Agent 框架跑通 - 老陈说编程",
-    "content": "DeepAgents 是什么？一句话说，它是一个开箱即用的 Agent Harness——智能体运行支架。 很多时候，大家做 Agent 卡在哪？不是模型不够聪明，而是规划、读写文件、长上下文、子任务协作这些「硬骨头」得自己一块块接。DeepAgents 把这些能力内置好了，而且不是演示用的附属功能",
-    "quote": "DeepAgents 是什么一句话说，它是一个开箱即用的 A",
-    "source": "博客园 Cnblogs",
-    "url": "https://www.cnblogs.com/halfcode/p/22223623",
-    "published": "2026-08-05",
-    "uid": "dev_0f88229d"
-  },
-  {
-    "title": "一套 C++ 代码，桌面与移动端通吃：SOUI for Android 实战移植中国象棋 - 启程软件",
-    "content": "一套 C++ 代码，桌面与移动端通吃：SOUI for Android 实战移植中国象棋 我最近把一个原本运行在 Windows、Linux、macOS 桌面端的中国象棋联网游戏，使用 SOUI for Android 移植到了 Android 平台。整个移植过程几乎没有改动业务代码，C++ 主窗口",
-    "quote": "一套 C++ 代码，桌面与移动端通吃：SOUI for An",
-    "source": "博客园 Cnblogs",
-    "url": "https://www.cnblogs.com/setoutsoft/p/22217554",
-    "published": "2026-08-05",
-    "uid": "dev_1e5540d9"
-  },
-  {
-    "title": "Excelize 开源社区荣获 2025 红山开源明星项目三等奖",
-    "content": "2025 年 11 月 16 日，由红山开源平台主办的“2025 红山开源大会”，在北京香山颐和宾馆红山厅成功落下帷幕。为表彰在开源领域做出卓越贡献的项目，大会特别设立 2025 年度红山开源平台明星项目颁奖环节。 Excelize 开源社区荣获了 2025 红山开源明星项目三等奖，活动详情详见文章：2025 红山开源大会圆满收官，共筑开源生态新未来 Excelize 是用于操作电子表格办公文档",
-    "quote": "2025 年 11 月 16 日，由红山开源平台主办的“20",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1180445#reply1",
-    "published": "2026-08-05",
-    "uid": "dev_19895bf2"
-  },
-  {
-    "title": "Google Antigravity 出来啦",
-    "content": "google antigravity, 免费可以用 Gemini 3 Pro 、Claude Sonnet 4.5,大家有试过怎么样嘛，这也太壕了",
-    "quote": "google antigravity, 免费可以用 Gemi",
-    "source": "V2EX Tech",
-    "url": "https://www.v2ex.com/t/1173666#reply9",
-    "published": "2026-08-05",
-    "uid": "dev_02604af8"
+    "uid": "dev_fa487e86"
   }
 ]

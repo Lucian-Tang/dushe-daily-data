@@ -363,139 +363,139 @@
   ],
   "dev": [
     {
-      "title": "Apple says more ex-employees may have taken confidential data to OpenAI",
-      "content": "苹果公司表示，可能有更多前员工将机密数据带到了 OpenAI，泄密范围超出此前披露的个案。这一表态扩大了苹果对前员工竞业与保密问题的调查面，也再次点燃外界对科技巨头之间人才流动与商业机密保护的讨论。目前双方均未公布具体人数与数据细节。",
-      "quote": "跳槽带数据，苹果这次是真急了。",
-      "url": "https://techcrunch.com/2026/08/04/apple-says-more-ex-employees-may-have-taken-confidential-data-to-openai/",
+      "title": "Show HN: cMCP，拒绝 AI Agent 工具调用并生成签名收据",
+      "content": "开源项目 cMCP 允许开发者拒绝 AI Agent 的某个工具调用，同时生成一份带签名的收据，用于审计和追溯 Agent 行为。该项目登上 Hacker News，获得开发者关注，为 Agent 工具调用安全提供了新的可验证方案，也折射出 AI 工具调用安全治理正在成为新议题。",
+      "quote": "拒绝还要开收据，AI 这职场比人类还卷。",
+      "url": "https://github.com/agentrust-io/cmcp",
       "source": "Hacker News",
       "published": "2026-08-05",
-      "uid": "f8843ce3d426d089c668aa13d7a19cad"
+      "uid": "dev_e297a867"
     },
     {
-      "title": "The Warp Agent CLI",
-      "content": "终端应用 Warp 推出 Agent CLI 编程助手，把 AI 编码能力直接嵌入命令行工作流。该工具可在终端内完成代码理解、修改与执行，主打与开发者现有命令习惯的无缝衔接。Warp 称这标志着其从终端应用向 AI 原生开发平台的转型，开发者可将其用于日常编码与自动化任务。",
-      "quote": "终端里塞 AI，卷完编辑器卷命令行。",
-      "url": "https://www.warp.dev/blog/introducing-the-warp-agent-cli-coding-agent",
-      "source": "Hacker News",
-      "published": "2026-08-05",
-      "uid": "5b5fb8e45f33a4bb936f20cb38d93d92"
-    },
-    {
-      "title": "Mistral's Shieldstral: 3B open-weights model for multimodal moderation",
-      "content": "Mistral 发布 Shieldstral，一个仅 3B 参数的开源权重多模态内容审核模型，可对文本与图像进行安全审核，帮助平台识别违规内容。开源权重意味着开发者能在自有基础设施上部署运行，无需调用外部审核 API，兼顾隐私与成本，定位为轻量级、可自托管的审核方案。",
-      "quote": "审核模型开源，平台甩锅又添新姿势。",
-      "url": "https://mistral.ai/news/shieldstral/",
-      "source": "Hacker News",
-      "published": "2026-08-05",
-      "uid": "e88295a8693b31359a0e2e3b970e204c"
-    },
-    {
-      "title": "MariaDB: Promote getting to 10k GitHub stars in server log and client prompt",
-      "content": "MariaDB 服务器仓库提交了一个 PR，提议在服务端日志和客户端提示符中展示 GitHub star 数，推动项目冲击一万星。这个带整活色彩的改动引发开发者热议：用产品界面给开源项目拉星，到底是营销还是社区文化的一部分。",
-      "quote": "为了 10k star，MariaDB 连日志都不放过。",
-      "url": "https://github.com/MariaDB/server/pull/4262",
-      "source": "Hacker News",
-      "published": "2026-08-05",
-      "uid": "17b4d6887db1a8f1c44a14d28aa9f9d2"
-    },
-    {
-      "title": "Vlt 1.0 and Hosted Package Registries",
-      "content": "JavaScript 包管理器 Vlt 发布 1.0 版本，并推出托管的私有包仓库服务。团队表示 1.0 标志着其 npm 兼容的包管理方案进入稳定阶段，托管仓库面向团队协作场景，提供私有包存储与分发能力，并与现有 npm 生态保持兼容。",
-      "quote": "包管理混战再添新军，npm 老大哥瑟瑟发抖。",
+      "title": "vlt 1.0 正式发布，自带托管包注册表服务",
+      "content": "vlt 宣布发布 1.0 正式版，并推出托管的包注册表服务。作为 npm 生态的新玩家，vlt 主打更快的安装速度与更友好的安全体验，此次 1.0 标志着其生态走向稳定，在 Hacker News 上获得 18 分讨论热度，JavaScript 包管理工具链又多了一个选择。",
+      "quote": "包管理器界又来个新人，先活过三年再说。",
       "url": "https://www.vlt.io/blog/1-0",
       "source": "Hacker News",
       "published": "2026-08-05",
-      "uid": "52ea16561c1281094f5df5b0d98c2493"
+      "uid": "dev_d2e65422"
     },
     {
-      "title": "cypress-io/cypress",
-      "content": "前端端到端测试框架 Cypress 登上 GitHub 趋势榜。Cypress 提供开箱即用的测试运行器、时间旅行调试与自动等待能力，是 JavaScript 生态中最流行的 E2E 测试方案之一，近期活跃的更新与社区讨论让项目热度再度攀升。",
-      "quote": "E2E 测试老将又上趋势榜，Playwright 表示不服。",
-      "url": "https://github.com/cypress-io/cypress",
-      "source": "GitHub",
+      "title": "Warp 终端推出 Agent CLI：命令行里的 AI 编程助手",
+      "content": "Warp 终端发布 Agent CLI，将 AI 编程能力直接集成进命令行，支持在终端内完成代码任务的委派与执行。该功能面向追求效率的开发者，在 Hacker News 上获得 25 分与 5 条讨论，是 AI 编码工具从 IDE 向终端场景延伸的代表作，终端党迎来新玩具。",
+      "quote": "终端里卷 AI，卷完 IDE 卷命令行，程序员真累。",
+      "url": "https://www.warp.dev/blog/introducing-the-warp-agent-cli-coding-agent",
+      "source": "Hacker News",
       "published": "2026-08-05",
-      "uid": "76248c6f48af94a70c9cd15638300509"
+      "uid": "dev_ba761da6"
     },
     {
-      "title": "webpack/webpack",
-      "content": "前端模块打包工具 webpack 登上 GitHub 趋势榜。作为 JavaScript 生态中应用最广泛的构建工具之一，webpack 通过 loader 与 plugin 机制支撑了海量前端项目的打包流程，其版本迭代与维护节奏持续受到社区关注。",
-      "quote": "前端打包元老上趋势榜，证明自己还没凉。",
-      "url": "https://github.com/webpack/webpack",
-      "source": "GitHub",
+      "title": "Mistral 发布 Shieldstral：30 亿参数开源多模态审核模型",
+      "content": "Mistral 发布 Shieldstral，一个 30 亿参数的开放权重模型，专门用于多模态内容审核，可检测图像与文本中的违规内容。模型权重开放，开发者可本地部署，为内容安全场景提供了轻量级自托管选项，也延续了 Mistral 在开源权重路线上的布局。",
+      "quote": "审核模型都开源了，以后骂人先过一遍审核。",
+      "url": "https://mistral.ai/news/shieldstral/",
+      "source": "Hacker News",
       "published": "2026-08-05",
-      "uid": "06a5d9a2c1f6bdccf45925089d60612f"
+      "uid": "dev_33e57a44"
     },
     {
-      "title": "gabime/spdlog",
-      "content": "高性能 C++ 日志库 spdlog 登上 GitHub 趋势榜。spdlog 以极快的写入速度与丰富的格式化能力著称，支持同步与异步日志、多目标输出，被大量 C++ 项目用作默认日志方案，社区热度长期稳定。",
-      "quote": "C++ 日志库也能上榜，性能党永不认输。",
-      "url": "https://github.com/gabime/spdlog",
-      "source": "GitHub",
+      "title": "苹果：更多前员工可能把机密数据带给了 OpenAI",
+      "content": "TechCrunch 报道，苹果称更多前员工可能将机密数据带给了 OpenAI，涉事范围较此前披露的更大。这一事件加剧了科技巨头之间的人才与数据流动争议，在 Hacker News 上获得 178 分的高热度讨论，也让大厂竞业与保密协议的执行力再次受到审视。",
+      "quote": "苹果前员工组团搬家，保密协议果然只是张纸。",
+      "url": "https://techcrunch.com/2026/08/04/apple-says-more-ex-employees-may-have-taken-confidential-data-to-openai/",
+      "source": "Hacker News",
       "published": "2026-08-05",
-      "uid": "d7ba504872e57e5c556aeda437c2e425"
+      "uid": "dev_7fb11033"
     },
     {
-      "title": "用 Rust 写了个开源桌面 Agent，聊两个实际卡住过我们的性能问题",
-      "content": "开发者用 Rust 与 Tauri v2 开发了开源桌面端 AI Agent BitFun，覆盖 Windows、macOS 与 Linux，Agent 运行时为 Rust。作者分享了两个实战性能问题：Agent 反复搜索同一仓库时 ripgrep 每次都冷启动、重新遍历目录树导致效率低下，以及对应的优化思路，对桌面 Agent 开发很有参考价值。",
-      "quote": "性能坑写出来才是真开源，比晒 star 强。",
-      "url": "https://www.v2ex.com/t/1232115#reply2",
-      "source": "V2EX",
+      "title": "在线广告巨头 Adform 被黑，广告拦截器再成话题",
+      "content": "在线广告巨头 Adform 遭到黑客攻击，安全博客以此为例再次强调广告拦截器的必要性。广告生态中第三方脚本与追踪代码密集，攻击面庞大，此次事件引发对浏览器端安全防护的讨论，也暴露了数字广告产业链在安全投入上的长期短板。",
+      "quote": "广告商被黑还要怪广告拦截器？这逻辑绝了。",
+      "url": "https://this.weekinsecurity.com/online-advertising-giant-adform-was-hacked-proving-once-again-why-ad-blockers-are-necessary/",
+      "source": "Hacker News",
       "published": "2026-08-05",
-      "uid": "ced3a8fd357556d5bae3ac618def7b01"
+      "uid": "dev_b3779c2e"
     },
     {
-      "title": "出门有灵感时，用手机远程让家里的 Cursor 改代码 —— 开源了一个远程控制台",
-      "content": "开发者开源了 Cursor 远程控制台：在 Windows 电脑上运行服务端，出门时用手机浏览器打开页面，登录后选择本机项目，用自然语言提交任务，由 Cursor SDK 的本地 Agent 在项目目录里执行改动。本质是把远程桌面换成轻量的移动端任务入口，灵感来了随时把任务丢给家里的开发机。",
-      "quote": "摸鱼式编程新高度：灵感来了手机遥控电脑干活。",
-      "url": "https://www.v2ex.com/t/1231949#reply0",
-      "source": "V2EX",
-      "published": "2026-08-05",
-      "uid": "694ab55236d44adc2c3f16740a7f8127"
-    },
-    {
-      "title": "melog v4.0 发布，一个轻量级博客系统",
-      "content": "轻量级博客系统 melog 发布 v4.0 版本，主要改动包括后台界面改版、新增 token 管理与 API 发文接口，作者还编写了配套技能，实现 AI 代写博客的功能，把从写作到发布的流程进一步自动化，让个人博客维护更省事。",
-      "quote": "博客系统卷到 AI 代写，写手们要失业了。",
-      "url": "https://www.v2ex.com/t/1232132#reply0",
-      "source": "V2EX",
-      "published": "2026-08-05",
-      "uid": "1a0fba1ec882cc37afe6702cd290f253"
-    },
-    {
-      "title": "[开源工具]做了一款开源的 Windows 输入法",
-      "content": "一位开发者赶在重返深圳工作前完成了执念：用 AI 辅助编程做出一款开源 Windows 输入法，兼顾易用性与美观性。作者表示项目在 Coding Agent 加速下快速完善，虽然目前仍有很多不完善之处，但对未来在功能性上超越搜狗输入法很有信心。",
-      "quote": "挑战搜狗？先问问输入法用户答不答应。",
-      "url": "https://www.v2ex.com/t/1232135#reply1",
-      "source": "V2EX",
-      "published": "2026-08-05",
-      "uid": "e40e6d5e8b083c2a4dcdaa6820d4a819"
-    },
-    {
-      "title": "PHP 线上十大隐形故障复盘：90% 的网站卡顿、502、雪崩，都是这些细节导致的",
-      "content": "一篇 PHP 线上故障复盘总结了十大隐形问题：本地测试正常，一上线就出现高峰期变慢、502 与 504、数据偶尔错乱重复超卖、接口超时雪崩、后台任务重复执行与消息重复推送等。作者指出根源往往在缓存、并发与幂等等细节，而不是服务器性能本身。",
-      "quote": "本地好好的上线就崩，PHP 人的日常玄学。",
-      "url": "https://www.cnblogs.com/lan2017t/p/22221643",
-      "source": "博客园",
-      "published": "2026-08-05",
-      "uid": "5b7ee47a6348f261a09c3e9e2007abd5"
-    },
-    {
-      "title": "参悟llama.cpp中的Qwen3.6-35B-A3B",
-      "content": "技术博客深入解析 llama.cpp 中 Qwen3.6-35B-A3B 的部署机制，从 MoE 混合专家架构的底层逻辑讲起，梳理了模型加载、推理调度等实现细节，并结合实践记录了探究过程，是理解大模型本地推理与 MoE 架构的优质学习材料。",
-      "quote": "MoE 部署读这篇，比啃源码快十倍。",
-      "url": "https://www.cnblogs.com/egodprime/p/22214433",
-      "source": "博客园",
-      "published": "2026-08-05",
-      "uid": "ed2921a267343f72aa02296af884b0e5"
-    },
-    {
-      "title": "My Agent Orchestrator Burned 1-2M Opus Tokens Per Task. Here's the Postmortem.",
-      "content": "一位开发者复盘自己构建的 Agent 编排技能的教训：把任务全部委派给子任务执行虽然可行，但每个任务要烧掉一百万到两百万 Opus tokens，连简单任务也不例外。他分析了成本失控的原因与优化思路，对重度使用 Agent 的团队很有警示意义。",
-      "quote": "编排一时爽，账单火葬场。",
+      "title": "一个 Agent 编排任务烧掉 100 万到 200 万 Opus tokens 的复盘",
+      "content": "一位开发者复盘其 Claude Code 编排技能：把一切任务都甩给子 Agent 后，每个任务竟烧掉 100 万到 200 万 Opus tokens，包括本可直接完成的小任务。这个代价高昂的事故提醒开发者，Agent 编排的抽象层并非没有成本，过度委派正在成为 AI 编程的新浪费源头。",
+      "quote": "一次任务烧两百万 token，这烧的不是钱是格局。",
       "url": "https://dev.to/akashy/my-agent-orchestrator-burned-1-2m-opus-tokens-per-task-heres-the-postmortem-2k7g",
       "source": "Dev.to",
       "published": "2026-08-05",
-      "uid": "604013bf527702cf81434841da14104b"
+      "uid": "dev_64731b2b"
+    },
+    {
+      "title": "浏览器与 Node 的事件循环分歧点（系列第二篇）",
+      "content": "系列文章第二篇对比浏览器与 Node.js 事件循环的分歧点。文章先建立调用栈、微任务队列与宏任务队列的统一心智模型，再指出规范层面的 JavaScript 模型在实际运行时中的差异，适合想深入理解异步机制的开发者，属于少见的高质量运行时原理科普。",
+      "quote": "浏览器和 Node 的事件循环都能吵两集，前端水深。",
+      "url": "https://dev.to/aniket_misra_e47d1564ab7b/browser-vs-node-where-the-event-loop-actually-diverges-part-23-3j6c",
+      "source": "Dev.to",
+      "published": "2026-08-05",
+      "uid": "dev_dd5817e7"
+    },
+    {
+      "title": "TencentCloud/TencentDB-Agent-Memory：腾讯云开源数据库 Agent 记忆项目",
+      "content": "腾讯云在 GitHub 开源 TencentDB-Agent-Memory 项目，今日登上 GitHub Trending 榜单。项目面向数据库 Agent 的记忆管理场景，体现云厂商押注 AI Agent 基础设施的趋势，仓库详情与用法见 GitHub 主页，适合关注数据库与 AI 结合方向的开发者围观。",
+      "quote": "云厂商都开始给 Agent 造记忆了，数据库要变脑白金。",
+      "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+      "source": "GitHub",
+      "published": "2026-08-05",
+      "uid": "dev_b8429432"
+    },
+    {
+      "title": "Uber 开源 ADR：给架构决策留个书面记录",
+      "content": "Uber 开源 ADR 项目并登上 GitHub Trending。ADR（架构决策记录）用于沉淀技术决策上下文，避免架构演进中「为什么这么做」的信息丢失，Uber 将其工具化开源，供团队在项目中落地架构决策文档，对需要长期演进的大型工程尤其有价值。",
+      "quote": "Uber 开源决策记录，程序员终于有地方写当初为什么了。",
+      "url": "https://github.com/uber/ADR",
+      "source": "GitHub",
+      "published": "2026-08-05",
+      "uid": "dev_aa65e2de"
+    },
+    {
+      "title": "obra/superpowers：给 Claude Code 加技能包的 GitHub 热门项目",
+      "content": "知名开发者 obra 的 superpowers 项目登上 GitHub Trending，提供一套面向 Claude Code 的 skills 集合，帮助 Agent 在编码任务中发挥更强能力。项目延续了社区用技能文件增强 Agent 工作流的思路，是观察 Agent 技能生态的重要样本，Star 数还在快速上涨。",
+      "quote": "开源技能包越来越卷，Claude 快成超级赛亚人了。",
+      "url": "https://github.com/obra/superpowers",
+      "source": "GitHub",
+      "published": "2026-08-05",
+      "uid": "dev_294f2dcb"
+    },
+    {
+      "title": "开源 Windows 输入法：AI 辅助编程两个月肝出来的",
+      "content": "一位开发者分享自己用 AI 辅助编程打造的开源 Windows 输入法，兼顾易用性与美观性。作者称在 Coding Agent 加速下项目快速完善，并放话未来在功能性上超越搜狗不成问题，帖子登上 V2EX 分享板块引发讨论，也再次印证 AI 编程对个人开发者的杠杆效应。",
+      "quote": "AI 代写输入法，搜狗听了连夜改需求。",
+      "url": "https://www.v2ex.com/t/1232135#reply1",
+      "source": "V2EX",
+      "published": "2026-08-05",
+      "uid": "dev_3b024d18"
+    },
+    {
+      "title": "用 Rust 写开源桌面 Agent，复盘两个真实性能问题",
+      "content": "开发者用 Rust 编写开源桌面端 AI Agent BitFun（MIT 协议），运行时为 Rust、外壳为 Tauri v2，支持三大桌面平台。作者复盘两个真实性能瓶颈：Agent 执行任务时会反复搜索同一仓库，ripgrep 虽快但每次冷启动都要重新遍历目录树，导致大量重复开销，Agent 应用开发者当引以为戒。",
+      "quote": "Agent 反复搜仓库，跟人反复翻抽屉一个毛病。",
+      "url": "https://www.v2ex.com/t/1232115#reply2",
+      "source": "V2EX",
+      "published": "2026-08-05",
+      "uid": "dev_3bad3290"
+    },
+    {
+      "title": "参悟 llama.cpp 中的 Qwen3.6-35B-A3B：MoE 部署底层逻辑",
+      "content": "博客园文章深入拆解 llama.cpp 中 Qwen3.6-35B-A3B 的部署实现，以探究性实践记录的方式梳理 MoE（混合专家）架构的底层逻辑与推理引擎的加载机制，对想理解大模型推理细节的开发者有参考价值，属于少见的硬核源码级解读内容。",
+      "quote": "MoE 参数都敢拆开讲，这位博主是真敢写。",
+      "url": "https://www.cnblogs.com/egodprime/p/22214433",
+      "source": "博客园",
+      "published": "2026-08-05",
+      "uid": "dev_03235809"
+    },
+    {
+      "title": "EKS 集群 ArgoCD 两跳升级手册：备份、恢复、巡检全流程",
+      "content": "博客园发布 EKS 集群 ArgoCD 升级实操手册，覆盖 v3.0.6 到 v3.2.x 的两跳升级路径，包含备份、恢复、升级与巡检全流程，并区分生产命名空间与演练命名空间，是 DevOps 团队可照抄的排障与升级模板，对维护 Kubernetes 生产集群的工程师非常实用。",
+      "quote": "两跳升级还带备份巡检，这手册比运维本人还稳。",
+      "url": "https://www.cnblogs.com/Jame-mei/p/22218321",
+      "source": "博客园",
+      "published": "2026-08-05",
+      "uid": "dev_fa487e86"
     },
     {
       "title": "AI 究竟能独立完成多大的软件项目？",
@@ -1372,7 +1372,7 @@
       "url": "https://techcrunch.com/2026/08/04/waymo-opens-up-robotaxi-service-in-dallas-to-everyone/",
       "source": "TechCrunch",
       "published": "2026-08-05",
-      "uid": "f1b7855e26714dcae845679bc3293bbf"
+      "uid": "d2205dc7e738335bf47af871f84bfed8"
     },
     {
       "title": "黑客利用离线硬件钱包漏洞盗走超 1.3 亿美元",
@@ -1381,7 +1381,7 @@
       "url": "https://techcrunch.com/2026/08/04/hackers-steal-over-130-million-by-exploiting-bug-in-offline-hardware-wallets/",
       "source": "TechCrunch",
       "published": "2026-08-05",
-      "uid": "a68412919068ff1fde9db806734bf249"
+      "uid": "2c4616bc5d2ef471a9b06d5914701d2c"
     },
     {
       "title": "得州叫停新建数据中心，州长要求全面审计",
@@ -1390,7 +1390,7 @@
       "url": "https://techcrunch.com/2026/08/04/texas-halts-new-data-centers-as-governor-calls-for-audits/",
       "source": "TechCrunch",
       "published": "2026-08-05",
-      "uid": "9912e14fde7a41f80bbbf24cade961bf"
+      "uid": "7ed3228d209ac8d47631590840f01c7a"
     },
     {
       "title": "沃尔玛完成收购电视广告公司 Vibe.co",
@@ -1399,7 +1399,7 @@
       "url": "https://techcrunch.com/2026/08/04/walmart-completes-its-acquisition-of-tv-advertising-company-vibe-co/",
       "source": "TechCrunch",
       "published": "2026-08-05",
-      "uid": "e025652e75091209296a6029008d5f0b"
+      "uid": "5bcce9d93805252a02f1158237958266"
     },
     {
       "title": "马斯克财报电话会一半时间聊机器人和 AI",
@@ -1408,7 +1408,7 @@
       "url": "https://techcrunch.com/2026/08/04/elon-musk-spends-half-his-time-talking-robots-and-ai-on-tesla-earnings-calls/",
       "source": "TechCrunch",
       "published": "2026-08-05",
-      "uid": "67b835e3b51eb69d3469541ec34fa7f6"
+      "uid": "8d3ee7395618353790cb4ba4e5312a7f"
     },
     {
       "title": "OpenAI 网红品牌之旅翻车：营销反噬引发争议",
@@ -1417,7 +1417,7 @@
       "url": "https://www.theverge.com/tech/975173/openai-influencers-brand-trip-ai-backlash-marketing",
       "source": "The Verge",
       "published": "2026-08-05",
-      "uid": "6744cc143399a798b1ec3d72b6412583"
+      "uid": "89632b750b0bd5b9ce4d778380118403"
     },
     {
       "title": "研究：不健康的 LLM 使用方式比想象中更普遍",
@@ -1426,7 +1426,7 @@
       "url": "https://www.theverge.com/ai-artificial-intelligence/975180/llm-ai-chatbot-use-not-healthy",
       "source": "The Verge",
       "published": "2026-08-05",
-      "uid": "86db12558a46810fb0acbb8fd73f7135"
+      "uid": "6cbb931e41703bc377783479a1d3c01d"
     },
     {
       "title": "三星 SDS 牵头韩国国家 AI 算力中心正式开工",
@@ -1435,7 +1435,7 @@
       "url": "https://36kr.com/newsflashes/3925199434611072",
       "source": "36氪",
       "published": "2026-08-05",
-      "uid": "ffc0ceceae93c40c80970c1445ee8f80"
+      "uid": "fcd2d9867f8cae4332f3305bdacd3ed4"
     },
     {
       "title": "CoWoS 封装产能告急，台积电扩大外包",
@@ -1444,7 +1444,7 @@
       "url": "https://36kr.com/newsflashes/3925154441787525",
       "source": "36氪",
       "published": "2026-08-05",
-      "uid": "4cf711767f158a2901223367eb8adb06"
+      "uid": "cbb8a7578d314e9ba55a7462879f6207"
     },
     {
       "title": "云动智能递表港交所，智能汽车赛道再添 IPO",
@@ -1453,7 +1453,7 @@
       "url": "https://36kr.com/newsflashes/3925190134348165",
       "source": "36氪",
       "published": "2026-08-05",
-      "uid": "ab822c2d49c099efd3b5bf5946077bce"
+      "uid": "5b5b7e1d0d88eacf275948fad12edeb1"
     },
     {
       "title": "埃斯顿子公司拟 4.87 亿元收购埃斯顿酷卓股权",
@@ -1462,7 +1462,7 @@
       "url": "https://36kr.com/newsflashes/3925214768199813",
       "source": "36氪",
       "published": "2026-08-05",
-      "uid": "9c5181fe12a4ee4685285c029c201ee0"
+      "uid": "cc000f185d9e372cb52c623aa330da65"
     },
     {
       "title": "灵光 App 闪应用创作者突破 400 万人",
@@ -1471,7 +1471,7 @@
       "url": "https://36kr.com/newsflashes/3925163486034309",
       "source": "36氪",
       "published": "2026-08-05",
-      "uid": "80f186b455778d165947a084c8de6ce4"
+      "uid": "881c5e5429b7d07029c07144471ceed5"
     },
     {
       "title": "红杉 Shaun Maguire 领投 10 亿美元，核能初创 Valar Atomics 估值 60 亿",
@@ -1698,7 +1698,7 @@
       "url": "https://uxdesign.cc/how-korea-and-japan-turned-ordering-food-into-a-ux-masterclass-f64c31bd4c98",
       "source": "UX Collective",
       "published": "2026-08-05",
-      "uid": "130e07fba1fa6d5237c1b16d09734621"
+      "uid": "b79cbfc37941234fe2528b19f5a12873"
     },
     {
       "title": "Why 10,000 experiments work better than 10,000 hours for designers",
@@ -1707,7 +1707,7 @@
       "url": "https://uxdesign.cc/why-10-000-experiments-work-better-than-10-000-hours-for-designers-1a07aa35df7f",
       "source": "UX Collective",
       "published": "2026-08-05",
-      "uid": "f387075f1e667dd8cc7f533238205d13"
+      "uid": "a225bca6a816bfc3dfd21b3a3f03cd99"
     },
     {
       "title": "The Bull And Bear Case For Digital Design In The Age Of AI",
@@ -1716,7 +1716,7 @@
       "url": "https://www.smashingmagazine.com/2026/07/bull-and-bear-case-digital-design-age-ai/",
       "source": "Smashing Magazine",
       "published": "2026-08-05",
-      "uid": "992d50195246e8ddc70a18ed507db8b9"
+      "uid": "c71a7b9478825bd94e74c37d1e82a8a5"
     },
     {
       "title": "Adidas Refines the Art of 3D-Printed Footwear With the New Climacool",
@@ -1725,7 +1725,7 @@
       "url": "https://design-milk.com/adidas-climacool-laced-3d-printed-shoe/",
       "source": "Design-Milk",
       "published": "2026-08-05",
-      "uid": "7452910ad5dddc0e1fe8016b06231f81"
+      "uid": "901af4d19c1ef1ed35ccb5a9f3ac6721"
     },
     {
       "title": "Little Giant Designs Its Own Forest Studio Around Light, Quiet, and Exploration",
@@ -1734,7 +1734,7 @@
       "url": "https://design-milk.com/little-giant-forest-studio-vancouver-island/",
       "source": "Design-Milk",
       "published": "2026-08-05",
-      "uid": "6e678ced32a6bc7e5b198c45249bae98"
+      "uid": "718672f1f2901969e3d4b84c6ad62970"
     },
     {
       "title": "Jen Lewin's Monumental 'Ursas' Find a Permanent Home Along the Gowanus Canal",
@@ -1743,7 +1743,7 @@
       "url": "https://design-milk.com/jen-lewin-ursas-gowanus-canal-public-art/",
       "source": "Design-Milk",
       "published": "2026-08-05",
-      "uid": "1185c1844bc092271702cfcb2a778686"
+      "uid": "97b188810f1254d52ebca5fabfb4c4b0"
     },
     {
       "title": "What If the Bathroom Became the Center of the Home?",
@@ -1752,7 +1752,7 @@
       "url": "https://design-milk.com/sigla-studio-barcelona-apartment-open-bathroom/",
       "source": "Design-Milk",
       "published": "2026-08-05",
-      "uid": "dd2f4883d6709cb6bca5233a55617569"
+      "uid": "6c62994436801a0efbca5b64f8567be2"
     },
     {
       "title": "Jackery's FridgeGuard Makes Backup Power Kitchen-Friendly",
@@ -1761,7 +1761,7 @@
       "url": "https://design-milk.com/jackery-fridgeguard-refrigerator-backup-battery/",
       "source": "Design-Milk",
       "published": "2026-08-05",
-      "uid": "2c4399d3c894d400cedf45046d36a367"
+      "uid": "e09568cc0e6e20644c78dd74a29b519d"
     },
     {
       "title": "Serotoninn",
@@ -1770,7 +1770,7 @@
       "url": "https://www.awwwards.com/sites/serotoninn",
       "source": "Awwwards",
       "published": "2026-08-05",
-      "uid": "ddb1d728573f44ce641ef886f0c25395"
+      "uid": "919f3bb7a4872d70c16d13025bee8a38"
     },
     {
       "title": "2xA Studio",
@@ -1779,7 +1779,7 @@
       "url": "https://www.awwwards.com/sites/2xa-studio",
       "source": "Awwwards",
       "published": "2026-08-05",
-      "uid": "60ee0d89e09358d2052d79c1000e4596"
+      "uid": "182a9c8eaf9cc505217b08b21f0f9eb1"
     },
     {
       "title": "Finyuus: A code-first language for durable, governed AI workflows",
@@ -1788,7 +1788,7 @@
       "url": "https://www.producthunt.com/products/finyuus",
       "source": "ProductHunt",
       "published": "2026-08-05",
-      "uid": "682bcfe68eeb8aa0571ad43198b718ee"
+      "uid": "72021102c059842a8835ec50bad632ec"
     },
     {
       "title": "ArtDeck: Reference boards with visual study tools built in",
@@ -1797,7 +1797,7 @@
       "url": "https://www.producthunt.com/products/artdeck",
       "source": "ProductHunt",
       "published": "2026-08-05",
-      "uid": "ff9bb7310544f945e7e6607662aa33c3"
+      "uid": "a14d6d502f1aa1233a10121425102fa8"
     },
     {
       "title": "Chat is the wrong interface for AI",
