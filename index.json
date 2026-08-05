@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0",
-  "updated": "2026-08-06T03:13:27.911834+08:00",
+  "updated": "2026-08-06T03:16:34.933525+08:00",
   "industry": "data/industry_daily_20260806.json",
   "dev": "data/dev_daily_20260806.json",
   "ai": "data/ai_daily_20260806.json",
@@ -560,7 +560,7 @@
     ]
   },
   "checksums": {
-    "data/industry_daily_20260806.json": "0031f727da6311583bc312a434a7db46a75bbacf3371f038223e8b4fbeccfa0d",
+    "data/industry_daily_20260806.json": "d0d1c32e45cff4fdd24ccf444dc6d026009bf67ed291261fb22826ab1167f7ec",
     "data/industry_daily_20260805.json": "5f8b58dbeee21eb21cd1d825b4359fcc1a0c3134883bd25fcbb0f1aad30d1bd9",
     "data/industry_daily_20260804.json": "1dbe5ba14036a565756b446efd4ede682f1d5f8df5f5b43c893bfe47033f4158",
     "data/industry_daily_20260803.json": "c5144c1769072a8508d66dee5ee6a77f17c991ad98876e185a56950244dca6de",
@@ -744,7 +744,7 @@
     "data/raw_dev_20260509.json": "4d28de8d11cd303f5e4b5eeb117f217ba96afb4c3c45249975519646cd6ca86e",
     "data/raw_dev_20260508.json": "a9bdb58cfce7a2420fab6a0e81fbd55babc012066d3bff92db528abf7246c55c",
     "data/raw_dev_20260507.json": "a9bc127c701a918bf67b7f5b615f38832b7220df0b3b6f8e5451ec05b3bbdaf1",
-    "data/ai_daily_20260806.json": "600cd5827c804c10770215a2c49b6c1b75eefdac3fc785f3a5e54070fa759cae",
+    "data/ai_daily_20260806.json": "ad0053935b18d9dd97e73db0522f58faead8e6b19b8384ef28159607e465bdb5",
     "data/ai_daily_20260805.json": "19f46513746440016317ce1119089716464c332bfbcc68dd90bec2c00b530779",
     "data/ai_daily_20260804.json": "053812071c13bbd9e8be5658d0c3c9efe85994274ed21d00d21c2849b0557851",
     "data/ai_daily_20260803.json": "744fef8259198363658795c9fa5e06c449b3d5ffa325cf444ef12fd69480efb8",
@@ -923,7 +923,7 @@
     "data/startup_daily_20260512.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "data/startup_daily_20260511.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "data/startup_daily_20260510.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-    "data/design_daily_20260806.json": "f250c7990a4a79d7e2c13f3e1a26f5b472eee7d75fc8715ffe562a47e39747cd",
+    "data/design_daily_20260806.json": "712e327c93320709528cb53e8aefe6b3b28ff43a257d93929a55741c80e43d51",
     "data/design_daily_20260805.json": "bd47be348b3c9c33120b3a25437b9045fb812bda98e523653689b9b778a7496b",
     "data/design_daily_20260804.json": "7f28663d0689bc364808e8ae55841c84c88462b8701a63a9e0634a4e7caae81c",
     "data/design_daily_20260803.json": "30280c4a9083302304303e9f37c5eadec261225f78eb489ed2041b798ea71f46",
@@ -1113,5 +1113,14 @@
   "ai_models_classified": "data/ai_models_classified_20260721.json",
   "ai_models_weekly": "data/ai_models_weekly_20260721.json",
   "weekly_github": "data/weekly_github_20260721.json",
-  "weekly_clawhub": "data/weekly_clawhub_20260721.json"
+  "weekly_clawhub": "data/weekly_clawhub_20260721.json",
+  "combined_3days": {
+    "20260806": "combined_3days_20260806.json"
+  },
+  "security": {
+    "version": 1,
+    "updated": "2026-05-14",
+    "description": "强风险内容过滤词库。原则：宁少勿多，微信后台有独立审核体系，此列表仅作为锦上添花的保护层。仅列入无歧义的高危敏感词。",
+    "blocklist": []
+  }
 }
