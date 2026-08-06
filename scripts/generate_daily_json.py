@@ -88,10 +88,97 @@ def clean_title(t):
     t = re.sub(r'^\d+\s*', '', t)
     return t.strip()
 
+
+def _is_good_daily(path):
+    """保护判断：现有 daily JSON 是否已是好数据。
+
+    🔴 P0 修复（2026-08-06）：04:25 sync 用 generate_daily_json.py 重新生成
+    daily JSON，会覆盖 dev-merge 等流程写入的好数据（uid/quote/source 齐全），
+    导致 CDN 连续多天 url=# 死链。
+
+    判定标准：文件存在且为列表，且 ≥50% 条目 uid + quote + source 均非空。
+    满足则视为好数据 → 跳过覆盖；文件缺失/空/全垃圾 → 允许兜底生成。
+    """
+    if not path.exists():
+        return False
+    try:
+        with open(path, encoding='utf-8') as f:
+            data = json.load(f)
+    except Exception:
+        return False
+    if not isinstance(data, list) or not data:
+        return False
+    good = 0
+    for it in data:
+        if isinstance(it, dict) and it.get('uid') \
+           and str(it.get('quote') or '').strip() \
+           and str(it.get('source') or '').strip():
+            good += 1
+    return good >= max(1, int(len(data) * 0.5))
+
 # ===== PARSERS =====
 
 def parse_dev(text):
+    """解析开发者日报 MD，支持两种格式:
+    1. 新格式（dev-merge 输出，emoji blockquote）:
+       ## N. Title
+       > 📅 YYYY-MM-DD | 📰 Source Name
+       > 💬 毒舌评论(可选)
+       # Comments: N
+       [🔗 原文](url)
+    2. 旧格式（**来源：**/**链接：**/**毒舌：** 标签）
+    """
     items = []
+    # 新格式检测：存在 emoji blockquote 标记
+    is_new_format = any(
+        l.strip().startswith('> 📅') or l.strip().startswith('> 💬')
+        for l in text.split('\n') if l.strip()
+    )
+    if is_new_format:
+        for part in re.split(r'\n#{2,3}\s+\d+\.\s+', text)[1:]:
+            lines = part.strip().split('\n')
+            title = lines[0].strip() if lines else ''
+            if not title:
+                continue
+            src = url = quote = ''
+            content_lines = []
+            for l in lines[1:]:
+                s = l.strip()
+                if not s or s == '---':
+                    continue
+                # 来源行: > 📅 YYYY-MM-DD | 📰 Source
+                if s.startswith('> 📅'):
+                    parts_src = s.split('|')
+                    if len(parts_src) >= 2:
+                        src_part = re.sub(r'📰\s*', '', parts_src[1].strip()).strip()
+                        if src_part:
+                            src = clean_source(src_part)
+                    continue
+                # 毒舌行: > 💬 ...
+                m = re.match(r'> 💬\s*(.+)', s)
+                if m:
+                    quote = m.group(1).strip()
+                    continue
+                # 链接: [🔗 原文](url)
+                m = re.search(r'\[🔗\s*原文\]\((.+)\)', s)
+                if m:
+                    url = clean_url(m.group(1))
+                    continue
+                m = re.search(r'\[.*?\]\((.+)\)', s)
+                if m and not url:
+                    url = clean_url(m.group(1))
+                    continue
+                # 其他 blockquote 行跳过
+                if s.startswith('>'):
+                    continue
+                # HN 元数据行跳过（# Comments: N）
+                if re.match(r'^#\s*Comments:', s, re.IGNORECASE):
+                    continue
+                content_lines.append(s)
+            content = ' '.join(content_lines).strip()
+            items.append(dict(title=title, content=content, quote=quote, source=src, url=url))
+        return items
+    # 旧格式: **来源：** 标签
     for part in re.split(r'\n#{2,3}\s+\d+\.\s+', text)[1:]:
         lines = part.strip().split('\n')
         title = lines[0].strip() if lines else ''
@@ -662,6 +749,8 @@ def main():
     ap.add_argument('--section', '-s', choices=SECTIONS)
     ap.add_argument('--date', '-d', default=TODAY)
     ap.add_argument('--dry-run', '-n', action='store_true')
+    ap.add_argument('--force', action='store_true',
+                    help='强制覆盖：即使目标 daily JSON 已有好数据(uid+quote+source非空)也重新生成')
     args = ap.parse_args()
     sections = [args.section] if args.section else SECTIONS
 
@@ -762,6 +851,11 @@ def main():
                 print(f'  ... +{len(parsed)-2}')
         else:
             op = OUT_DIR / f'{sec}_daily_{d_short}.json'
+            # 🔴 P0 修复（2026-08-06）：目标已有好数据(uid+quote+source非空)时跳过覆盖，
+            #    防止 04:25 sync 重生成覆盖 dev-merge 写入的好数据（CDN 死链事故根因）
+            if not args.force and _is_good_daily(op):
+                logger.info(f'[{sec}] 🛡️ 目标已有好数据(uid+quote+source非空), 跳过覆盖: {op.name}')
+                continue
             with open(op, 'w') as f:
                 json.dump(parsed, f, ensure_ascii=False, indent=2)
             logger.info(f'[{sec}] {len(parsed)}条 → {op.name}')
