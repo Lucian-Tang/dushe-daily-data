@@ -1,0 +1,146 @@
+[
+  {
+    "title": "用一个超长中断攻破系统管理模式（SMM）",
+    "content": "安全研究员 xoreaxeaxeax 发布新项目，演示如何用一个超长的系统管理中断（SMI）攻破 SMM——CPU 上比内核权限还高的隐藏执行环境。SMM 对操作系统完全不可见，一旦沦陷，杀软和内核都成了瞎子，属于硬件级的“隐身衣”攻击。",
+    "quote": "连 CPU 的隐身衣都被扒了，杀软还在盯着用户态那点动静——硬件安全这课，补起来真费劲。",
+    "source": "HN Front Page",
+    "url": "https://github.com/xoreaxeaxeax/smiiiiiiiiiiiiiiii",
+    "published": "2026-08-11",
+    "uid": "dev_bd9f1d8e"
+  },
+  {
+    "title": "Show HN：Ante——单二进制、可离线运行的编码智能体",
+    "content": "AntigmaLabs 开源 Ante：一个打包成单个二进制文件、完全离线运行的编码智能体。不需要云服务、不依赖网络，下载即用，对隐私敏感项目和本地开发党非常友好，也省掉了配置环境的痛苦。",
+    "quote": "单二进制还能离线跑，Coding Agent 终于不用一开机就惦记着云端了。",
+    "source": "HN Front Page",
+    "url": "https://github.com/AntigmaLabs/ante",
+    "published": "2026-08-11",
+    "uid": "dev_dbbe1a38"
+  },
+  {
+    "title": "Show HN：Juror——开源的 Greptile 替代方案",
+    "content": "Juror-AI 开源了 juror，一个主打代码库理解与 AI 代码审查的开源项目，定位是 Greptile 的开源替代。把“AI 读懂你的仓库并给出评审意见”这件事搬回自托管，团队代码数据不用再经过第三方 SaaS。",
+    "quote": "Greptile 的替代品都开源了，AI 代码审查终于不用把整个仓库交给别人看。",
+    "source": "HN Front Page",
+    "url": "https://github.com/Juror-AI/juror",
+    "published": "2026-08-11",
+    "uid": "dev_6692a620"
+  },
+  {
+    "title": "实测 Claude/GPT 的知识截止日期与预训练时间线",
+    "content": "博客文章通过实测手段，探索 Claude 与 GPT 系列模型的知识截止日期（knowledge cutoff）和预训练时间线，试图还原各家模型“到底知道什么时候的事”。对依赖模型时效性的应用开发者来说，这份实测比官方文档更接地气。",
+    "quote": "模型的知识截止日期比官方文档诚实多了——实测一测，谁在裸奔一目了然。",
+    "source": "HN Front Page",
+    "url": "https://blog.sshh.io/p/exploring-claudegpt-knowledge-cutoffs",
+    "published": "2026-08-11",
+    "uid": "dev_5cafede4"
+  },
+  {
+    "title": "semantica-agi/semantica：给 AI 装审计轨道的图原生基础设施",
+    "content": "Semantica 定位为 LLM 与向量库之下的确定性基础设施层：不需要 LLM 参与，就能把碎片化原始数据编译成结构化、可查询的上下文知识图谱，让每个决策都有迹可循、可审计。主打金融、医疗、法务等强监管场景，专门回答“AI 为什么这么干”的合规追问；支持直接从 Databricks/Snowflake 建图，也可自托管部署，不把数据交给第三方 SaaS。",
+    "quote": "普通 Agent 干活不留痕，Semantica 让每个决策都带审计轨迹——监管爸爸看了直点头。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/semantica-agi/semantica",
+    "published": "2026-08-11",
+    "uid": "dev_48848a86"
+  },
+  {
+    "title": "NanmiCoder/MediaCrawler：小红书抖音 B 站一网打尽的爬虫常青树",
+    "content": "MediaCrawler 是老牌社交媒体爬虫项目，支持小红书、抖音、快手、B 站、微博、贴吧等主流平台的内容采集，涵盖笔记、视频、评论、用户信息等数据类型，内置签名逆向、代理池、数据持久化等能力。虽然平台风控不断升级，它依然是自媒体运营和数据分析圈里最常被提起的开源采集方案，常年挂在 GitHub 趋势榜上。",
+    "quote": "小红书抖音 B 站一把梭的爬虫常青树，平台风控升级八百次，它还在榜上。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/NanmiCoder/MediaCrawler",
+    "published": "2026-08-11",
+    "uid": "dev_b71e8ace"
+  },
+  {
+    "title": "离线浏览 DeepSeek 会话",
+    "content": "这是一个可以离线浏览 DeepSeek 网页版历史会话的工具。 可以将会话数据导出后，在无网的电脑里导入，这样就可以通过浏览器或者终端浏览了。 可以把这个工具当成一个会话备份工具，因为导出的数据最终本地是以 markdown 形式存储的，可以无缝迁移到 obsidian/notion 这类笔记工具中。 进阶玩法是，对这些 markdown 内容使用 LLM 二次提炼，或者按周按月总结，形成自己的知",
+    "quote": "DeepSeek 会话也能导出离线看了，还顺手兼容 Obsidian——聊天记录终于不用锁在网页里。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1233341#reply3",
+    "published": "2026-08-11",
+    "uid": "dev_d4f29db8"
+  },
+  {
+    "title": "Text to Confluence｜解决 Markdown 复制到 Confluence 的格式折磨",
+    "content": "作为产品经理，做产品写 PRD ，经常要把 Markdown 文档迁移到 Confluence 。 直接复制粘贴会出现一系列格式问题： ·标题层级错乱 ·列表、表格、代码块样式丢失 ·粘贴完成后需要大量手动二次调整格式 ·团队不同成员粘贴导入，最终输出样式不统一 针对这个高频痛点，做了一个简易工具：Text to Confluence 🔗 访问地址： https://www.texttoconfl",
+    "quote": "Markdown 粘进 Confluence 格式全崩的痛，做产品的都懂——这工具早该有人写了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1233349#reply0",
+    "published": "2026-08-11",
+    "uid": "dev_274a9bcd"
+  },
+  {
+    "title": "How to make Claude Code a trustworthy data scientist",
+    "content": "AI agents like Claude Code now write real data science pipelines — feature engineering, model training, experiment sweeps. Here's the honest account of where they fail at it, an...",
+    "quote": "AI 写数据科学管线已经很溜，但「溜」和「靠谱」之间隔着一整套轻量工作流护栏——别让模型替你做决定，让它把决定过程摊开给你看。",
+    "source": "Dev.to",
+    "url": "https://dev.to/norman_niemer_7f327e153b9/how-to-make-claude-code-a-trustworthy-data-scientist-58of",
+    "published": "2026-08-11",
+    "uid": "dev_84724242"
+  },
+  {
+    "title": "RapidFort points its hardened open-source business at what actually runs in production",
+    "content": "RapidFort used Black Hat USA to announce RapidFort Runtime, a companion to the curated open-source packages it already sells that watches those packages once they are executing ...",
+    "quote": "开源软件最大的坑从来不是没人用，而是用了没人在意它跑起来之后安不安全。Runtime 监控这步棋，补的是整个供应链最容易被忽略的那一环。",
+    "source": "Dev.to",
+    "url": "https://dev.to/leobaniak/rapidfort-points-its-hardened-open-source-business-at-what-actually-runs-in-production-1bpm",
+    "published": "2026-08-11",
+    "uid": "dev_419002c5"
+  },
+  {
+    "title": "LLM Wiki 深度解析 - royalrover",
+    "content": "核心论点： LLM Wiki 不是 RAG 的新变种，而是把「知识综合」从查询阶段前移到摄取阶段——每来一篇资料就立刻编译成结构化、可导航的知识页面，让知识成为一份会越用越值钱的长期资产。 1. 范式定位：不是 RAG 变种，而是编译型知识工程 2026 年 4 月初，Karpathy 在推特",
+    "quote": "Karpathy 又带节奏：RAG 是查询时临时抱佛脚，LLM Wiki 是摄取时就把知识编译成资产——一句话，别再把知识库当检索缓存用了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/accordion/p/22369793",
+    "published": "2026-08-11",
+    "uid": "dev_ec32ab39"
+  },
+  {
+    "title": "小白攻略：从零开始微调属于你的 Qwen3.5-9B 机器人 - 测试木可",
+    "content": "在 AutoDL 云服务器上，使用LoRA（低成本微调）技术，让 Qwen3.5-9B 大语言模型学会“自我介绍”，知道自己叫“XX机器人”，并且听你的话。 第一步：算力租赁（AutoDL 省钱大法） 为什么选 AutoDL？新手友好！便宜、按小时计费、自带显卡。但显卡很贵，我们不要在配置环境时开着",
+    "quote": "AutoDL 按小时租卡 + LoRA 微调，新手村最省钱的入坑姿势。让 9B 模型学会自我介绍这种「微调版 Hello World」，比看一百篇原理文章都管用。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/test-shirley/p/22377233",
+    "published": "2026-08-11",
+    "uid": "dev_73551758"
+  },
+  {
+    "title": "分享一个我写的绘制流程图和架构图的 Skill - 黑洞视界",
+    "content": "为什么写这个 Skill 写技术文章或整理项目文档时，经常需要画流程图或架构图，把组件之间的关系和数据流转讲清楚。 流程图或架构图看起来只是摆放节点、画出连线，真正动手时却经常需要反复调整：关系要准确，连线不能接错，文字不能被遮挡，节点大小和整张图的比例还要适合博客阅读。图越复杂，这些检查和修改就越",
+    "quote": "画图两小时、改图一下午的痛，终于有人做成 Skill 了。把节点、连线、防遮挡这些脏活交给模型，你只管讲清楚关系。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/eventhorizon/p/22372120",
+    "published": "2026-08-11",
+    "uid": "dev_83b5ab27"
+  },
+  {
+    "title": "11. 鸿蒙自动化测试6步通关：需求一丢，报告自己出来！ - 老陈说编程",
+    "content": "配套动画视频在：《11. 鸿蒙自动化测试6步通关：需求一丢，报告自己出来！》，源代码在《评论区置顶》。 前面几节，读需求、生成用例、截图、启停应用、出报告，都分开讲过了；AGENTS.md 和 memory 也配好了。这一节把它们串起来：丢进一份需求文档，最后自动给出 HTML 报告。流程不复杂，就",
+    "quote": "从读需求到出 HTML 报告全自动，鸿蒙测试人终于不用在截图和用例之间反复横跳了。需求一丢、报告自来，这才是测试该有的样子。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/halfcode/p/22358507",
+    "published": "2026-08-11",
+    "uid": "dev_8e3d0028"
+  },
+  {
+    "title": "告别 TUI，将任意 CLI Agent 进行 Web 可视化访问",
+    "content": "最近写了个小工具，可以将任意支持 ACP 协议的 CLI Agent 接入 Zacp ，然后提供 Web 可视化访问，目前测试过的 CLI 包括：Codex cli 、Reasonix cli 、Grok Build 、Pi Agent 、Omp 、Qoder 、Jcode ，有兴趣的朋友可以试试。 开源地址：https://github.com/he...",
+    "quote": "CLI Agent 什么都好，就是只能活在终端里。Zacp 把 Codex、Grok Build 这些命令行选手拉到浏览器里可视化——终端党狂喜，鼠标党终于也能用了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1233249#reply2",
+    "published": "2026-08-11",
+    "uid": "dev_8e18d1a7"
+  },
+  {
+    "title": "由.NET 构建的画布Agents - 239573049",
+    "content": "Sol 完全开源：用节点画布串联图片、视频、文本与 AI Agent 最近，AIDotNet 开源了一个名为 Sol 的 AI 创作项目。 Sol 是一个运行在浏览器中的可视化 AI 工作台。它没有把交互限制在传统的聊天窗口里，而是以全屏节点画布为核心，让用户在同一张画布上创建、连接和管理文本、图片",
+    "quote": "AIDotNet 开源 Sol：把文本、图片、视频和 AI Agent 全塞进一张节点画布。聊天窗口那套交互，是时候退位让贤了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/token-ai/p/22372387",
+    "published": "2026-08-11",
+    "uid": "dev_ed8b85b8"
+  }
+]
