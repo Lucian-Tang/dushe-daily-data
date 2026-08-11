@@ -1,0 +1,146 @@
+[
+  {
+    "title": "Apple Silicon and macOS VMs: 11–16× Faster LLM Inference with Llama.cpp",
+    "content": "trycua 发布技术博客，详解如何在 macOS 虚拟机里用 GPU 直通跑 Llama.cpp，让 LLM 推理速度提升 11-16 倍。核心思路是把宿主机的 GPU 直接映射进 VM，绕开虚拟化层损耗，对本地重度跑大模型的开发者是个很实用的提速方案。",
+    "quote": "苹果芯跑 LLM 推理提速 11-16 倍？别急着下单新 Mac，先看看是不是 GPU 直通在替你负重前行。",
+    "source": "HN Front Page",
+    "url": "https://github.com/trycua/cua/blob/main/blog/gpu-passthrough-macos-vms.md",
+    "published": "2026-08-12",
+    "uid": "dev_7102d03e"
+  },
+  {
+    "title": "H3-metal – Native MiniMax-H3 inference for Apple Silicon",
+    "content": "Redis 之父 antirez 又出手了，发布 h3.c：一个在 Apple Silicon 上原生跑 MiniMax-H3 推理的 C 实现。不依赖 Python 生态、没有重型框架，代码干净利落，想在 Mac 上跑 H3 系模型的话是个轻量好选择。",
+    "quote": "antirez 出手就是不一样：MiniMax-H3 原生跑上 Apple Silicon，Redis 之父的 C 代码，比某些厂商的官方实现还香。",
+    "source": "HN Front Page",
+    "url": "https://github.com/antirez/h3.c",
+    "published": "2026-08-12",
+    "uid": "dev_5d9d89e5"
+  },
+  {
+    "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
+    "content": "研究者上线 stolen-thoughts.com，展示如何通过提示词注入与侧信道手段，从闭源大模型 API 里窃取推理轨迹（reasoning traces）。实验表明多家主流闭源 API 都能被套出内部思维过程，闭源模型的安全人设再受冲击。",
+    "quote": "偷思维链这事，黑产都开始写论文了。提示词注入 + 侧信道，闭源大模型的'安全'人设再次崩塌。",
+    "source": "HN Front Page",
+    "url": "https://stolen-thoughts.com/",
+    "published": "2026-08-12",
+    "uid": "dev_5c8d2ccc"
+  },
+  {
+    "title": "Nvidia's Risky Business",
+    "content": "Stratechery 发文拆解英伟达的“危险生意”：一边是 AI 基建的绝对垄断地位，一边是客户集中度过高、政策与地缘风险叠加。文章认为英伟达的市值不只是算力红利，更是整个 AI 生态押注其上的系统性风险。",
+    "quote": "Stratechery 出品必属精品：英伟达的'危险生意'，说的是市值，也是它把整个 AI 生态的命脉攥在自己手里。",
+    "source": "HN Front Page",
+    "url": "https://stratechery.com/2026/nvidias-risky-business/",
+    "published": "2026-08-12",
+    "uid": "dev_2ae9587d"
+  },
+  {
+    "title": "What I learned by putting GitHub Copilot behind a MitM proxy",
+    "content": "作者把 GitHub Copilot 塞进中间人代理，抓包分析它的请求结构、上下文窗口和补全逻辑，揭秘 Copilot 到底往云端发了什么、prompt 怎么组织。对关心 AI 编程工具隐私边界和实现细节的开发者很有参考价值。",
+    "quote": "把 Copilot 塞进中间人代理里扒了个底朝天：建议、上下文、补全逻辑全给你看。逆向精神可嘉，就是别拿公司账号试。",
+    "source": "HN Front Page",
+    "url": "https://www.lighthousenewsletter.com/p/i-put-github-copilot-behind-a-mitm",
+    "published": "2026-08-12",
+    "uid": "dev_33090a5b"
+  },
+  {
+    "title": "Nvidia Nemotron 3.5 Lightning",
+    "content": "英伟达发布 Nemotron 3.5 Lightning：30B 参数、A3B 架构（仅 3B 激活）、NVFP4 量化，主打低成本高效推理。定位是让企业用更小的显存跑出接近大模型的代码与推理能力，开源权重已上 HuggingFace。",
+    "quote": "Nemotron 3.5 Lightning 发布，30B A3B 架构 + NVFP4 量化，英伟达这是要把'推理速度'焊死在自家生态里。",
+    "source": "HN Front Page",
+    "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+    "published": "2026-08-12",
+    "uid": "dev_d345c238"
+  },
+  {
+    "title": "HKUDS/DeepTutor",
+    "content": "港大数据智能实验室开源 DeepTutor：一个基于 LLM 的编程导师，能补全代码、纠错、逐行讲解，把“AI 教写代码”做成完整学习闭环。对新手友好，对老手也是个不错的代码陪练。",
+    "quote": "HKUDS 的 DeepTutor：用 LLM 当导师，代码补全、纠错、讲解一条龙。程序员失业计划再添一员大将。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/HKUDS/DeepTutor",
+    "published": "2026-08-12",
+    "uid": "dev_afba5bca"
+  },
+  {
+    "title": "stablyai/orca",
+    "content": "Stability AI 的新仓库 orca 登上 GitHub 趋势榜，README 还没透露太多细节，但从命名和 Stability 近期的动作看，大概率是推理模型方向的新尝试，开源社区已经在蹲后续发布了。",
+    "quote": "stablyai/orca：Stability AI 的新玩具，看名字像是要跟推理模型干架。开源圈又卷起来了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/stablyai/orca",
+    "published": "2026-08-12",
+    "uid": "dev_2ea5d6ca"
+  },
+  {
+    "title": "anthropics/skills",
+    "content": "Anthropic 官方上线 skills 仓库，把 Claude 的技能包生态规范化：格式定义、示例、最佳实践一应俱全。意味着技能包从社区野路子走向官方标准，Agent 能力复用开始有章可循。",
+    "quote": "Anthropic 官方 skills 仓库上线：Claude 的技能包生态开始正规军化，第三方 skill 市场该紧张了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/anthropics/skills",
+    "published": "2026-08-12",
+    "uid": "dev_0a79bfda"
+  },
+  {
+    "title": "x402 Protocol Explained: How AI Agents Pay for APIs and Why It Changes Everything",
+    "content": "x402 协议：基于 HTTP 的开放支付标准，让 AI Agent 调用 API 时按次自动付费，HTTP 402 状态码从“保留”变成“待付款”。文章认为这会重塑 API 经济：机器与机器之间的交易终于有了原生通道。",
+    "quote": "x402 协议：HTTP 402 状态码翻身当主人，AI Agent 调用 API 直接按次付费。Coinbase 牵头，支付标准要变天。",
+    "source": "Dev.to",
+    "url": "https://dev.to/desh_group/x402-protocol-explained-how-ai-agents-pay-for-apis-and-why-it-changes-everything-2hn4",
+    "published": "2026-08-12",
+    "uid": "dev_6433e93b"
+  },
+  {
+    "title": "Why CockroachDB refused writes to a healthy 155 KiB row",
+    "content": "生产环境一个 155 KiB 的健康行突然拒绝写入：Pod 正常、无报错，排查半天发现是事务冲突在作祟。作者把 CockroachDB 的灵异事件排查实录写了出来，对分布式数据库的排障思路很有启发。",
+    "quote": "155 KiB 的健康行拒绝写入？CockroachDB 的灵异事件排查实录，最后发现是事务冲突在作妖。数据库调优人的日常。",
+    "source": "Dev.to",
+    "url": "https://dev.to/vatsalpatel/why-cockroachdb-refused-writes-to-a-healthy-155-kib-row-4jl5",
+    "published": "2026-08-12",
+    "uid": "dev_2a93f3ba"
+  },
+  {
+    "title": "做了一个把多 Agent、终端和 Diff 放进同一条任务时间线的类 Codex 开源工具： Threadlight",
+    "content": "作者开源 Threadlight 1.0：把多 Agent、终端输出和 Diff 放进同一条任务时间线的类 Codex 工具，长任务可暂停、可恢复、可回溯。目标是把 AI 编程从“一次性聊天”变成可管理的工程过程。",
+    "quote": "把多 Agent、终端、Diff 塞进一条时间线，类 Codex 的开源工具 Threadlight 1.0 发布。AI 编程的'时间旅行'来了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1233531#reply0",
+    "published": "2026-08-12",
+    "uid": "dev_424b7700"
+  },
+  {
+    "title": "[开源] OwlCoda + OwlRunKit：把 AI 编程从一次性聊天变成可继续、可检查、可恢复的本地工作",
+    "content": "OwlCoda + OwlRunKit 组合拳：把 AI 编程从一次性聊天变成可继续、可检查、可恢复的本地工作流。模型、API、工具和项目上下文集中管理，长任务不再一断全丢，适合重度 AI 编程用户。",
+    "quote": "OwlCoda + OwlRunKit：把 AI 编程从一次性聊天变成可继续、可检查、可恢复的本地工作流。拒绝云端，数据自己管。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1233565#reply0",
+    "published": "2026-08-12",
+    "uid": "dev_edf12fc4"
+  },
+  {
+    "title": "Nvidia's Router Is the Part of Agents Everyone Keeps Rebuilding",
+    "content": "作者指出 Agent 架构里最容易被低估也最常被重复造轮子的组件是 router：模型选型、工具分发、任务路由全靠它。文章结合 Nemotron 3.5 Lightning 发布，讨论为什么 router 值得标准化，而不是每家各写一套。",
+    "quote": "模型会迭代、工具会过期，只有 router 是 Agent 的交通枢纽——可惜人人都想自己修一条路。",
+    "source": "Dev.to",
+    "url": "https://dev.to/reidmarlow/nvidias-router-is-the-part-of-agents-everyone-keeps-rebuilding-20e1",
+    "published": "2026-08-12",
+    "uid": "dev_c2b7a249"
+  },
+  {
+    "title": "A permissive robots.txt is not a licence",
+    "content": "作者运营着监控十个网站的爬虫，借此聊了一个常见误区：robots.txt 宽松不代表你有权随意抓取。它只是抓取礼貌协议，不是法律许可，版权和数据合规该注意还是得注意。",
+    "quote": "robots.txt 宽松≠随便爬，它只是礼貌协议不是免责金牌——爬虫开发者别把客气当授权。",
+    "source": "Dev.to",
+    "url": "https://dev.to/mk023/a-permissive-robotstxt-is-not-a-licence-2m3i",
+    "published": "2026-08-12",
+    "uid": "dev_7dadae24"
+  },
+  {
+    "title": "AMD se alía con un ministerio de ciencia para abrir modelos de IA",
+    "content": "AMD 与一国科技部达成合作，推动开放 AI 模型落地，消息来自西语技术社区。合作重点大概率是本地化部署与主权 AI：用 AMD 硬件跑开源模型，减少对闭源云服务的依赖。",
+    "quote": "AMD 也开始走“主权 AI”路线了——开放模型加自家硬件打包进政府项目，这招眼熟得很。",
+    "source": "Dev.to",
+    "url": "https://dev.to/lu1tr0n/amd-se-alia-con-un-ministerio-de-ciencia-para-abrir-modelos-de-ia-52jo",
+    "published": "2026-08-12",
+    "uid": "dev_70986311"
+  }
+]
