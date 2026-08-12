@@ -1,146 +1,146 @@
 [
- {
-  "title": "Qwen/Qwen3.8-2.4T-A95B：通义千问 2.4T 参数 MoE 旗舰上线",
-  "content": "通义千问在 HuggingFace 上线 Qwen3.8-2.4T-A95B：总参数量 2.4 万亿、激活 950 亿的 MoE 旗舰底座。更大的规模通常意味着更强的推理与指令跟随能力，这也是国产开源模型在超大规模 MoE 路线上的又一次加码，后续跑分和部署门槛都值得持续关注。",
-  "quote": "2.4 万亿参数的大模型，先别管跑不跑得动，气势上已经赢了。",
-  "source": "HN Front Page",
-  "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
-  "published": "2026-08-13",
-  "uid": "dev_f8f5e91d"
- },
- {
-  "title": "Tailscale 定位数据库损坏：一个 16 年历史的 SQLite WAL-Reset Bug",
-  "content": "Tailscale 团队发文复盘一起诡异的数据损坏：数据库内容被莫名回溯，最终定位到一个存在 16 年之久的 SQLite WAL-reset 底层 Bug。文章完整还原了从用户报障、数据比对到源码级定位的全过程，对做本地存储和数据库中间件的开发者来说是一份难得的排障教材。",
-  "quote": "SQLite 老 Bug 潜伏 16 年咬人，处处是坑。",
-  "source": "HN Front Page",
-  "url": "https://tailscale.com/blog/sqlite-wal-reset-bug",
-  "published": "2026-08-13",
-  "uid": "dev_aa928305"
- },
- {
-  "title": "有人冒用 ClaudeBot 等 AI 爬虫身份，对全网发起漏洞扫描",
-  "content": "安全团队发现有人正冒用 ClaudeBot、GPTBot 等 AI 爬虫标识对全网发起大规模漏洞扫描，试图把扫描流量伪装成正常的 AI 内容采集。knownagents.com 的洞察报告拆解了伪造 UA 的手法与识别特征，提醒站长们别把挂着 AI 爬虫名头的流量都当成善意抓取。",
-  "quote": "黑产连爬虫的马甲都开始穿了，AI 这身皮是真的好用。",
-  "source": "HN Front Page",
-  "url": "https://knownagents.com/insights",
-  "published": "2026-08-13",
-  "uid": "dev_5337bfa7"
- },
- {
-  "title": "Hax：一个用 C 写的极简终端原生编程智能体",
-  "content": "Hax 是一个用 C 语言实现的极简终端编程智能体，主打最小化：没有重型运行时依赖，直接在终端里运行，专注代码生成与编辑。在 AI 编程工具越做越重的当下，反其道而行之的轻量路线反而很有辨识度，适合喜欢裸终端工作流的开发者尝鲜。",
-  "quote": "别人给 Agent 加全家桶，它用 C 写极简版，清流。",
-  "source": "HN Front Page",
-  "url": "https://usehax.dev/",
-  "published": "2026-08-13",
-  "uid": "dev_91809fa6"
- },
- {
-  "title": "AI 正在抹掉软件工程的中层阶级",
-  "content": "一篇在 HN 引发热议的博客：AI 正在压缩软件工程的中间层。作者认为 AI 让初级与资深两端受益，而大量写样板代码、做常规 CRUD、维护既有系统的中层工程师正被快速挤压。文章对职业路径的推演相当扎心，评论区也吵成了一锅粥。",
-  "quote": "中层程序员被 AI 夹击？先看看是不是在写样板代码。",
-  "source": "HN Front Page",
-  "url": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html",
-  "published": "2026-08-13",
-  "uid": "dev_e62f045a"
- },
- {
-  "title": "Woxi：用 Rust 重写 Wolfram Language 的开源解释器",
-  "content": "Show HN 项目 Woxi 用 Rust 重新实现了 Wolfram Language，并自带 Mathematica 风格的图形界面 Woxi Studio。对买不起 Mathematica 授权、又想在本地玩符号计算和 Notebook 的开发者来说，这是一个值得 Star 的开源平替方向。",
-  "quote": "Rust 重写 Mathematica，开源省钱又平替。",
-  "source": "HN Front Page",
-  "url": "https://woxi.ad-si.com",
-  "published": "2026-08-13",
-  "uid": "dev_0fb53893"
- },
- {
-  "title": "Kronos：面向金融市场语言的基座模型登顶 Trending",
-  "content": "shiyu-coder/Kronos 冲上 GitHub Trending，36.8k Star：一个把股票、K 线、财报等金融数据当作语言来训练的基座模型，支持行情预测、因子挖掘等任务。开源权重让量化研究者终于不用对着闭源模型干瞪眼，金融 AI 的门槛被拉低了一截。",
-  "quote": "让大模型学炒股？Kronos 说先学会读盘面语言再说。",
-  "source": "GitHub Trending Daily",
-  "url": "https://github.com/shiyu-coder/Kronos",
-  "published": "2026-08-13",
-  "uid": "dev_2b8db5d8"
- },
- {
-  "title": "diagram-design：给 Claude Code 的 29 种编辑级图表模板",
-  "content": "cathrynlavery/diagram-design 为 Claude Code 提供 29 种编辑级图表模板，全部自包含 HTML+SVG，主打干净审美，9.2k Star。看来被 AI 生成丑图折磨过的人远比想象中多，适合给 Agent 输出配上能直接用的设计稿。",
-  "quote": "受够 Mermaid 丑图？29 套模板专治直男审美。",
-  "source": "GitHub Trending Daily",
-  "url": "https://github.com/cathrynlavery/diagram-design",
-  "published": "2026-08-13",
-  "uid": "dev_a24b85cb"
- },
- {
-  "title": "给 Agent 做记忆审计：一半事实已死，三个彻底是错的",
-  "content": "作者给自己的编码 Agent 做了一次记忆审计：Agent 用扁平 Markdown 文件维护事实，每个事实一个文件，审计后发现一半事实已经过期，其中三个是彻底错误的。文章记录了审计方法与修复过程，对依赖 Agent 长期记忆的开发者是个实用提醒——记忆该清理时就得清理。",
-  "quote": "Agent 的记忆一半是死的？看来 AI 也需要定期断舍离。",
-  "source": "Dev.to",
-  "url": "https://dev.to/arvavit/my-memory-auditor-said-half-my-agents-facts-were-dead-three-were-127j",
-  "published": "2026-08-13",
-  "uid": "dev_020c3a65"
- },
- {
-  "title": "FastAPI 陷阱：流式路由的 response_model 会被静默忽略",
-  "content": "一个隐蔽的 FastAPI 坑：在流式路由上声明 response_model 会被静默忽略，模型照常构建、OpenAPI 正常注册，响应却不经过它校验。作者用最小复现讲清机制，提醒用 SSE 和 StreamingResponse 的开发者别把响应校验寄托在 response_model 上。",
-  "quote": "response_model 在流式路由上装死，坑够深。",
-  "source": "Dev.to",
-  "url": "https://dev.to/pachilo/fastapi-accepts-a-responsemodel-on-streaming-routes-and-silently-ignores-it-89",
-  "published": "2026-08-13",
-  "uid": "dev_9394d847"
- },
- {
-  "title": "56 个 AI 工作流 Skill 开源：不只给提示词，还给边界和验证器",
-  "content": "V2EX 用户把 56 个 AI 工作流 Skill 开源到同一个仓库，强调「不只给提示词」，还给边界、证据和验证器——每个 Skill 都定义了适用边界与可验证的产出标准。对想把 Agent 工作流工程化、而不是堆提示词的团队来说，这是一份高质量的参考。",
-  "quote": "56 个 Skill 白送还带验证器，比甩提示词的强。",
-  "source": "V2EX Share",
-  "url": "https://www.v2ex.com/t/1233957#reply0",
-  "published": "2026-08-13",
-  "uid": "dev_bc770738"
- },
- {
-  "title": "八年之隔：可能是地球上最漂亮丝滑的 Markdown 应用",
-  "content": "一位开发者时隔八年重新打磨的 Markdown 应用登上 V2EX 热帖，17 条回复都在夸「漂亮丝滑」。从帖中展示来看，编辑与预览的过渡动画、排版细节都下了功夫，评论区已经有人求 Windows 版——颜值即正义的时代，连 Markdown 编辑器都开始卷设计了。",
-  "quote": "八年磨一剑 Markdown 编辑器，颜值能打，用户哭了。",
-  "source": "V2EX Share",
-  "url": "https://www.v2ex.com/t/1233953#reply17",
-  "published": "2026-08-13",
-  "uid": "dev_7979392c"
- },
- {
-  "title": "runner-modal：把 GitHub Actions Runner 跑在 Modal Sandbox 上",
-  "content": "Modal 官方开源 runner-modal：把 GitHub Actions 自托管 Runner 运行在 Modal Sandbox 上，按需秒级启动、用完即走，不再需要常驻一台机器吃灰。对 CI 成本敏感、又想要自托管灵活性的团队来说，这是一个兼顾弹性与账单的解法。",
-  "quote": "CI Runner 云端按需启动，省下的电费够喝奶茶。",
-  "source": "HN Show HN",
-  "url": "https://github.com/modal-projects/runner-modal",
-  "published": "2026-08-13",
-  "uid": "dev_f9b2154b"
- },
- {
-  "title": "Show HN: Pane – An open-source browser that turns your work into living websites",
-  "content": "Pane 是一个开源的 AI 浏览器，把日常浏览操作直接变成可复用的「活网页」工作流。作者自称受够了现有 AI 浏览器的局限，于是按自主 Agent 的标准重造了一个：既能当普通浏览器用，也能把操作过程固化成自动化流程，适合折腾浏览器自动化的开发者。",
-  "quote": "浏览器被 AI 重造了一遍，这次连操作都变成网页了。",
-  "source": "HN Show HN",
-  "url": "https://github.com/abhishek-verma/Pane",
-  "published": "2026-08-13",
-  "uid": "dev_4b27ec39"
- },
- {
-  "title": "Show HN: Tanchi – Open-source AI prospecting agent that only automates email",
-  "content": "Tanchi 是一个开源的 AI 客户拓展 Agent，但刻意把自动化范围锁死在邮件这一个环节：自动调研线索、生成个性化邮件，同时把后续人工跟进留给人。项目主打「克制」，想解决的是 AI 销售工具越权乱发消息的信任问题，对做销售自动化的团队有参考价值。",
-  "quote": "AI 只替你写邮件，不替你社牛，克制得让人感动。",
-  "source": "HN Show HN",
-  "url": "https://github.com/tanchihq/tanchi",
-  "published": "2026-08-13",
-  "uid": "dev_fb2ae9b3"
- },
- {
-  "title": "ONNX Runtime as a Portability Layer: Export, Verify, Deploy",
-  "content": "文章把 ONNX Runtime 定位成模型的可移植层：一份模型产物通过统一 API 跑在 CPU、GPU 和各种加速器上。但作者提醒，导出图与原始模型计算不等价是常态，必须用 verify 机制逐层校验，别默认 ONNX 是零成本魔法。对做跨端模型部署的团队是实用的避坑指南。",
-  "quote": "ONNX 不是魔法，导出即不等价，不验证迟早翻车。",
-  "source": "Dev.to",
-  "url": "https://dev.to/multigrid/onnx-runtime-as-a-portability-layer-export-verify-deploy-e93",
-  "published": "2026-08-13",
-  "uid": "dev_2ee971aa"
- }
+  {
+    "title": "Qwen/Qwen3.8-2.4T-A95B：通义千问 2.4T 参数 MoE 旗舰上线",
+    "content": "通义千问在 HuggingFace 上线 Qwen3.8-2.4T-A95B：总参数量 2.4 万亿、激活 950 亿的 MoE 旗舰底座。更大的规模通常意味着更强的推理与指令跟随能力，这也是国产开源模型在超大规模 MoE 路线上的又一次加码，后续跑分和部署门槛都值得持续关注。",
+    "quote": "2.4 万亿参数的大模型，先别管跑不跑得动，气势上已经赢了。",
+    "source": "HN Front Page",
+    "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+    "published": "2026-08-13",
+    "uid": "dev_f8f5e91d"
+  },
+  {
+    "title": "Tailscale 定位数据库损坏：一个 16 年历史的 SQLite WAL-Reset Bug",
+    "content": "Tailscale 团队发文复盘一起诡异的数据损坏：数据库内容被莫名回溯，最终定位到一个存在 16 年之久的 SQLite WAL-reset 底层 Bug。文章完整还原了从用户报障、数据比对到源码级定位的全过程，对做本地存储和数据库中间件的开发者来说是一份难得的排障教材。",
+    "quote": "SQLite 老 Bug 潜伏 16 年咬人，处处是坑。",
+    "source": "HN Front Page",
+    "url": "https://tailscale.com/blog/sqlite-wal-reset-bug",
+    "published": "2026-08-13",
+    "uid": "dev_aa928305"
+  },
+  {
+    "title": "有人冒用 ClaudeBot 等 AI 爬虫身份，对全网发起漏洞扫描",
+    "content": "安全团队发现有人正冒用 ClaudeBot、GPTBot 等 AI 爬虫标识对全网发起大规模漏洞扫描，试图把扫描流量伪装成正常的 AI 内容采集。knownagents.com 的洞察报告拆解了伪造 UA 的手法与识别特征，提醒站长们别把挂着 AI 爬虫名头的流量都当成善意抓取。",
+    "quote": "黑产连爬虫的马甲都开始穿了，AI 这身皮是真的好用。",
+    "source": "HN Front Page",
+    "url": "https://knownagents.com/insights",
+    "published": "2026-08-13",
+    "uid": "dev_5337bfa7"
+  },
+  {
+    "title": "Hax：一个用 C 写的极简终端原生编程智能体",
+    "content": "Hax 是一个用 C 语言实现的极简终端编程智能体，主打最小化：没有重型运行时依赖，直接在终端里运行，专注代码生成与编辑。在 AI 编程工具越做越重的当下，反其道而行之的轻量路线反而很有辨识度，适合喜欢裸终端工作流的开发者尝鲜。",
+    "quote": "别人给 Agent 加全家桶，它用 C 写极简版，清流。",
+    "source": "HN Front Page",
+    "url": "https://usehax.dev/",
+    "published": "2026-08-13",
+    "uid": "dev_91809fa6"
+  },
+  {
+    "title": "AI 正在抹掉软件工程的中层阶级",
+    "content": "一篇在 HN 引发热议的博客：AI 正在压缩软件工程的中间层。作者认为 AI 让初级与资深两端受益，而大量写样板代码、做常规 CRUD、维护既有系统的中层工程师正被快速挤压。文章对职业路径的推演相当扎心，评论区也吵成了一锅粥。",
+    "quote": "中层程序员被 AI 夹击？先看看是不是在写样板代码。",
+    "source": "HN Front Page",
+    "url": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html",
+    "published": "2026-08-13",
+    "uid": "dev_e62f045a"
+  },
+  {
+    "title": "Woxi：用 Rust 重写 Wolfram Language 的开源解释器",
+    "content": "Show HN 项目 Woxi 用 Rust 重新实现了 Wolfram Language，并自带 Mathematica 风格的图形界面 Woxi Studio。对买不起 Mathematica 授权、又想在本地玩符号计算和 Notebook 的开发者来说，这是一个值得 Star 的开源平替方向。",
+    "quote": "Rust 重写 Mathematica，开源省钱又平替。",
+    "source": "HN Front Page",
+    "url": "https://woxi.ad-si.com",
+    "published": "2026-08-13",
+    "uid": "dev_0fb53893"
+  },
+  {
+    "title": "Kronos：面向金融市场语言的基座模型登顶 Trending",
+    "content": "shiyu-coder/Kronos 冲上 GitHub Trending，36.8k Star：一个把股票、K 线、财报等金融数据当作语言来训练的基座模型，支持行情预测、因子挖掘等任务。开源权重让量化研究者终于不用对着闭源模型干瞪眼，金融 AI 的门槛被拉低了一截。",
+    "quote": "让大模型学炒股？Kronos 说先学会读盘面语言再说。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/shiyu-coder/Kronos",
+    "published": "2026-08-13",
+    "uid": "dev_2b8db5d8"
+  },
+  {
+    "title": "diagram-design：给 Claude Code 的 29 种编辑级图表模板",
+    "content": "cathrynlavery/diagram-design 为 Claude Code 提供 29 种编辑级图表模板，全部自包含 HTML+SVG，主打干净审美，9.2k Star。看来被 AI 生成丑图折磨过的人远比想象中多，适合给 Agent 输出配上能直接用的设计稿。",
+    "quote": "受够 Mermaid 丑图？29 套模板专治直男审美。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/cathrynlavery/diagram-design",
+    "published": "2026-08-13",
+    "uid": "dev_a24b85cb"
+  },
+  {
+    "title": "给 Agent 做记忆审计：一半事实已死，三个彻底是错的",
+    "content": "作者给自己的编码 Agent 做了一次记忆审计：Agent 用扁平 Markdown 文件维护事实，每个事实一个文件，审计后发现一半事实已经过期，其中三个是彻底错误的。文章记录了审计方法与修复过程，对依赖 Agent 长期记忆的开发者是个实用提醒——记忆该清理时就得清理。",
+    "quote": "Agent 的记忆一半是死的？看来 AI 也需要定期断舍离。",
+    "source": "Dev.to",
+    "url": "https://dev.to/arvavit/my-memory-auditor-said-half-my-agents-facts-were-dead-three-were-127j",
+    "published": "2026-08-13",
+    "uid": "dev_020c3a65"
+  },
+  {
+    "title": "FastAPI 陷阱：流式路由的 response_model 会被静默忽略",
+    "content": "一个隐蔽的 FastAPI 坑：在流式路由上声明 response_model 会被静默忽略，模型照常构建、OpenAPI 正常注册，响应却不经过它校验。作者用最小复现讲清机制，提醒用 SSE 和 StreamingResponse 的开发者别把响应校验寄托在 response_model 上。",
+    "quote": "response_model 在流式路由上装死，坑够深。",
+    "source": "Dev.to",
+    "url": "https://dev.to/pachilo/fastapi-accepts-a-responsemodel-on-streaming-routes-and-silently-ignores-it-89",
+    "published": "2026-08-13",
+    "uid": "dev_9394d847"
+  },
+  {
+    "title": "56 个 AI 工作流 Skill 开源：不只给提示词，还给边界和验证器",
+    "content": "V2EX 用户把 56 个 AI 工作流 Skill 开源到同一个仓库，强调「不只给提示词」，还给边界、证据和验证器——每个 Skill 都定义了适用边界与可验证的产出标准。对想把 Agent 工作流工程化、而不是堆提示词的团队来说，这是一份高质量的参考。",
+    "quote": "56 个 Skill 白送还带验证器，比甩提示词的强。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1233957#reply0",
+    "published": "2026-08-13",
+    "uid": "dev_bc770738"
+  },
+  {
+    "title": "八年之隔：可能是地球上最漂亮丝滑的 Markdown 应用",
+    "content": "一位开发者时隔八年重新打磨的 Markdown 应用登上 V2EX 热帖，17 条回复都在夸「漂亮丝滑」。从帖中展示来看，编辑与预览的过渡动画、排版细节都下了功夫，评论区已经有人求 Windows 版——颜值即正义的时代，连 Markdown 编辑器都开始卷设计了。",
+    "quote": "八年磨一剑 Markdown 编辑器，颜值能打，用户哭了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1233953#reply17",
+    "published": "2026-08-13",
+    "uid": "dev_7979392c"
+  },
+  {
+    "title": "runner-modal：把 GitHub Actions Runner 跑在 Modal Sandbox 上",
+    "content": "Modal 官方开源 runner-modal：把 GitHub Actions 自托管 Runner 运行在 Modal Sandbox 上，按需秒级启动、用完即走，不再需要常驻一台机器吃灰。对 CI 成本敏感、又想要自托管灵活性的团队来说，这是一个兼顾弹性与账单的解法。",
+    "quote": "CI Runner 云端按需启动，省下的电费够喝奶茶。",
+    "source": "HN Show HN",
+    "url": "https://github.com/modal-projects/runner-modal",
+    "published": "2026-08-13",
+    "uid": "dev_f9b2154b"
+  },
+  {
+    "title": "Show HN: Pane – An open-source browser that turns your work into living websites",
+    "content": "Pane 是一个开源的 AI 浏览器，把日常浏览操作直接变成可复用的「活网页」工作流。作者自称受够了现有 AI 浏览器的局限，于是按自主 Agent 的标准重造了一个：既能当普通浏览器用，也能把操作过程固化成自动化流程，适合折腾浏览器自动化的开发者。",
+    "quote": "浏览器被 AI 重造了一遍，这次连操作都变成网页了。",
+    "source": "HN Show HN",
+    "url": "https://github.com/abhishek-verma/Pane",
+    "published": "2026-08-13",
+    "uid": "dev_4b27ec39"
+  },
+  {
+    "title": "Show HN: Tanchi – Open-source AI prospecting agent that only automates email",
+    "content": "Tanchi 是一个开源的 AI 客户拓展 Agent，但刻意把自动化范围锁死在邮件这一个环节：自动调研线索、生成个性化邮件，同时把后续人工跟进留给人。项目主打「克制」，想解决的是 AI 销售工具越权乱发消息的信任问题，对做销售自动化的团队有参考价值。",
+    "quote": "AI 只替你写邮件，不替你社牛，克制得让人感动。",
+    "source": "HN Show HN",
+    "url": "https://github.com/tanchihq/tanchi",
+    "published": "2026-08-13",
+    "uid": "dev_fb2ae9b3"
+  },
+  {
+    "title": "ONNX Runtime as a Portability Layer: Export, Verify, Deploy",
+    "content": "文章把 ONNX Runtime 定位成模型的可移植层：一份模型产物通过统一 API 跑在 CPU、GPU 和各种加速器上。但作者提醒，导出图与原始模型计算不等价是常态，必须用 verify 机制逐层校验，别默认 ONNX 是零成本魔法。对做跨端模型部署的团队是实用的避坑指南。",
+    "quote": "ONNX 不是魔法，导出即不等价，不验证迟早翻车。",
+    "source": "Dev.to",
+    "url": "https://dev.to/multigrid/onnx-runtime-as-a-portability-layer-export-verify-deploy-e93",
+    "published": "2026-08-13",
+    "uid": "dev_2ee971aa"
+  }
 ]
