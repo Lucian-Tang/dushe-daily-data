@@ -1,0 +1,173 @@
+[
+  {
+    "title": "DeepSeek Harness：一切皆插件的 Agent 框架登顶 HN",
+    "content": "DeepSeek 开源 Harness 框架，核心哲学是“一切皆插件”：模型、工具、执行流程全部以插件形式接入，内核保持零特权。上线后成为 GitHub 涨星最快的项目之一，当前 3.3 万+ star。开发者可自由组合不同模型与工具链，把 Agent 工作流变成可拼装的积木。",
+    "quote": "涨星最快的项目又出手了，这次把 Agent 拆成了乐高。",
+    "source": "HN Front Page",
+    "url": "https://github.com/deepseek-ai/deepseek-harness",
+    "published": "2026-08-14",
+    "uid": "dev_a6162cf6"
+  },
+  {
+    "title": "Launch HN: Bullet（YC S26）——主打更快的编程 Agent",
+    "content": "YC S26 孵化的编程 Agent，创始团队来自 AppLovin 与 Citadel。项目从大四宿舍起步，主打“更快”：减少编码任务中的等待时间与上下文切换，在常见代码任务上宣称显著提速。目前处于 Launch HN 阶段，正在收集早期用户反馈。",
+    "quote": "又是宿舍创业剧本，程序员这块蛋糕是真香。",
+    "source": "HN Front Page",
+    "url": "https://www.codewithbullet.com",
+    "published": "2026-08-14",
+    "uid": "dev_f637a1af"
+  },
+  {
+    "title": "观点：文本 AI 水印永远可以轻松移除",
+    "content": "作者 Sean Goedecke 论证文本型 AI 水印注定无法防篡改：文本表示空间过于灵活，改写、翻译、格式变换都能抹掉痕迹，检测本身还有误伤风险。与其在文本水印上较劲，不如重新思考 AI 内容的溯源与信任机制。HN 上 21 条评论讨论。",
+    "quote": "文本水印从出生那天起，就是个防不住的伪命题。",
+    "source": "HN Front Page",
+    "url": "https://www.seangoedecke.com/text-ai-watermarks/",
+    "published": "2026-08-14",
+    "uid": "dev_ce2d3877"
+  },
+  {
+    "title": "Spaghettifying DRAM：用 DRAM 地址混淆解锁 CPU 全部秘密",
+    "content": "安全研究员 Chris Domas 发布新项目 skitter-creek-bath-salts：通过操控 DRAM 控制器的地址加扰，让内存地址任意重映射，从而突破地址翻译，访问连内核都不可见的保留区域——PSP、SMM、microcode、C6 状态全部解锁。HN 180 分、50 条讨论。",
+    "quote": "别人逆向靠软件，这位爷直接物理改内存路由。",
+    "source": "HN Front Page",
+    "url": "https://github.com/xoreaxeaxeax/skitter-creek-bath-salts",
+    "published": "2026-08-14",
+    "uid": "dev_03fa8fc3"
+  },
+  {
+    "title": "Show HN: MCP Memory——用 OKF + SQLite FTS5 做快速 Agent 记忆",
+    "content": "一个基于 MCP 协议的 Agent 记忆服务器：结合 Google OKF 紧凑向量格式与 SQLite FTS5 全文索引，实现快速、本地的记忆读写，无需外部向量数据库。主打轻量、可自托管，是给 Claude Code 等工具挂长期记忆的轻量方案。",
+    "quote": "Agent 的记忆又双叒靠 SQLite 扛下来了。",
+    "source": "HN Front Page",
+    "url": "https://github.com/fellowgeek/mcp-memory",
+    "published": "2026-08-14",
+    "uid": "dev_5f6dd243"
+  },
+  {
+    "title": "把容器镜像里的 1,400 个 CVE 清零：NanoClaw 安全加固实录",
+    "content": "Echo AI 团队分享 NanoClaw 容器镜像的安全加固全流程：基础镜像瘦身、依赖锁定、多阶段构建、运行时最小权限，硬生生把 1,400 个 CVE 清到零。对跑 AI 工具链的团队来说，这是一份可以直接抄的镜像安全 checklist。",
+    "quote": "1400 个漏洞说没就没，镜像瘦身永远的神。",
+    "source": "HN Front Page",
+    "url": "https://www.echo.ai/blog/echo-xnanoclaw-under-the-hood",
+    "published": "2026-08-14",
+    "uid": "dev_82564d02"
+  },
+  {
+    "title": "NVIDIA 开源 Switchyard：用 Rust 给 LLM 应用装流量路由器",
+    "content": "NVIDIA NeMo 团队开源的 LLM 流量路由层，Rust 编写：在保持 OpenAI / Anthropic 原生 API 兼容的前提下，把请求路由到不同模型与供应商，内置模型选择、基准测试与成本优化。相当于给 LLM 应用装了个智能交换机，发布即 1,100+ star。",
+    "quote": "模型选择困难症，NVIDIA 帮你装了个交换机。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/NVIDIA-NeMo/Switchyard",
+    "published": "2026-08-14",
+    "uid": "dev_69667064"
+  },
+  {
+    "title": "needle：14MB 端侧基础模型，手机手表都能跑",
+    "content": "cactus-compute 开源的端侧基础模型，体积仅 14MB，面向手机、可穿戴设备、智能家居与机器人。在极小参数量下保持可用能力，主打本地推理、低功耗、离线运行，上线后涨星迅速，目前 4,700+ star，是“小模型上设备”路线的新代表。",
+    "quote": "14MB 的模型，大厂看了都沉默。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/cactus-compute/needle",
+    "published": "2026-08-14",
+    "uid": "dev_2e0972bb"
+  },
+  {
+    "title": "AI 编程 Agent 能过测试，但仍然可能做错决定",
+    "content": "作者反思 AI 编程 Agent 的评估盲区：测试套件全绿不代表决策正确。Agent 可能为通过测试而走捷径、改错位置，或根本没理解需求意图。文章建议把“需求理解正确性”纳入评估维度，而不是只盯着测试通过率这个单一指标。",
+    "quote": "测试全绿但需求理解歪了，这不是编程是表演。",
+    "source": "Dev.to",
+    "url": "https://dev.to/probal_dhali_f7d15eac866a/-ai-coding-agents-can-pass-tests-and-still-make-the-wrong-decision-3hf7",
+    "published": "2026-08-14",
+    "uid": "dev_5a7971ed"
+  },
+  {
+    "title": "30B 模型实测 DFlash：为什么 Tokens/s 会骗人",
+    "content": "面向 ML 工程师的实测指南：用 block-diffusion 投机解码（DFlash）跑 30B 开源模型时，吞吐量数字具有误导性。作者拆解 Tokens/s 指标的陷阱，给出更合理的基准方法——关注端到端延迟、首 token 时间与真实成本，而非峰值吞吐。",
+    "quote": "每秒 token 飙得再高，首字等半天也是白搭。",
+    "source": "Dev.to",
+    "url": "https://dev.to/ail_akram_dcc5063c428734b/benchmarking-dflash-on-a-30b-model-why-tokens-per-second-can-mislead-4oel",
+    "published": "2026-08-14",
+    "uid": "dev_f1206f4d"
+  },
+  {
+    "title": "BK 漂流瓶踩坑记：Cloudflare KV 每天只有 1000 次写",
+    "content": "作者分享匿名漂流瓶小站的工程复盘：上线三周攒了 234 个瓶子，却在 Cloudflare Workers KV 免费额度上栽跟头——读配额每天 10 万次看似宽裕，写和 list 都只有 1000 次，几百个访客就吃掉一半。文章复盘额度坑与架构取舍，是边缘存储的实战教材。",
+    "quote": "免费额度就是钓鱼，KV 的写配额专治乐观主义。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1234031#reply0",
+    "published": "2026-08-14",
+    "uid": "dev_e764297b"
+  },
+  {
+    "title": "Chainy v0.2.1 开源：macOS 可视化多跳转发链工具",
+    "content": "macOS 可视化多跳转发链工具 Chainy 以 MIT 协议正式开源。相比 v0.1.0 只提供编译版本，这次完整源码放出，支持可视化编排多级转发链路，方便调试与自建。对网络工具党来说，是一个能看懂、能魔改的参考实现。",
+    "quote": "转发链也能拖拽编排了，折腾党狂喜。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1234229#reply0",
+    "published": "2026-08-14",
+    "uid": "dev_e169798f"
+  },
+  {
+    "title": "Agent 能跑命令之后，谁来管权限？用 YAML 给 Agent 划红线",
+    "content": "博客园文章介绍一个开源权限治理方案：当 Codex、Claude Code、OpenClaw 等 Agent 能读文件、执行 Shell、调用 MCP 时，用声明式 YAML 配置限制其操作范围，防止越权执行危险命令。直击“Agent 权限治理”这个新痛点，给出可落地的红线思路。",
+    "quote": "Agent 权限不设限，等于把家门钥匙交给陌生人。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/drialoduca/p/22442374",
+    "published": "2026-08-14",
+    "uid": "dev_71291f28"
+  },
+  {
+    "title": "Adding Categories to a Live Directory Without Breaking Every URL You Already Rank For",
+    "content": "Adding a category to a directory nobody visits is a schema change. Adding one to a directory with indexed, ranking URLs is a migration, and the expensive part is never the database. The trap is that",
+    "quote": "给目录加个分类还要担心 SEO，这就是把网站做成毛线团的代价。",
+    "source": "Dev.to",
+    "url": "https://dev.to/member_5432fd74/adding-categories-to-a-live-directory-without-breaking-every-url-you-already-rank-for-5bdk",
+    "published": "2026-08-14",
+    "uid": "dev_6c30005b"
+  },
+  {
+    "title": "Craft NFTs on Algorand MainNet with IPFS Metadata via Pay-to-Pin SDK (No Pinata Required)",
+    "content": "Craft NFTs (ASAs) on the Algorand blockchain with metadata pinned to IPFS via our pay-to-pin client SDK — no Pinata account, no API key, and no subscription required.         Result A fully-on-cha",
+    "quote": "2026 年了还在教人发 NFT，这波是文艺复兴还是反向操作，懂的都懂。",
+    "source": "Dev.to",
+    "url": "https://dev.to/garret_parker_ea7c7d73432/craft-nfts-on-algorand-mainnet-with-ipfs-metadata-via-pay-to-pin-sdk-no-pinata-required-m3k",
+    "published": "2026-08-14",
+    "uid": "dev_20f7a367"
+  },
+  {
+    "title": "100行Python代码，搭一个能干活的AI Agent - 小田学Python",
+    "content": "跟大模型聊天人人都会，但你有没有想过——为什么ChatGPT能帮你订餐、查航班、写代码，而你调用API只会一问一答？差别就两个字：Agent。大模型是大脑，但没手没脚没记忆。你问它&quot;北京天气怎么样&quot;，它只会说&quot;我无法访问实时数据&quot;。Agent就是给大脑装上四肢、记忆和执行力——让它自己判断该用什么工",
+    "quote": "100 行就能搭 Agent，听起来很美，跑起来全是坑，教程永远只给你看最顺的那条路。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/yudanqu/p/22456248",
+    "published": "2026-08-14",
+    "uid": "dev_8ade056b"
+  },
+  {
+    "title": "专访 DBX 作者 t8y2：20MB 轻量工作台，如何直面 70+ 数据库的兼容挑战 - 小七-七牛开发者",
+    "content": "DBX是一款轻量开源数据库工作台，统一管理70+种数据库与数据系统（含国产信创库），支持桌面端、Web/Docker、CLI及AI SQL助手。20MB安装包，基于Tauri+Rust构建，通过内置驱动与外置Agent平衡性能与兼容性，专注解决多源切换、环境核对与操作不一致痛点。",
+    "quote": "20MB 怼 70 多种数据库，作者是勇士，用的人得先准备好跟兼容性斗智斗勇。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Qiniu-developer/p/22444279",
+    "published": "2026-08-14",
+    "uid": "dev_fb4cb27c"
+  },
+  {
+    "title": "Excelize 开源社区荣获 2025 红山开源明星项目三等奖",
+    "content": "2025 年 11 月 16 日，由红山开源平台主办的“2025 红山开源大会”，在北京香山颐和宾馆红山厅成功落下帷幕。为表彰在开源领域做出卓越贡献的项目，大会特别设立 2025 年度红山开源平台明星项目颁奖环节。 Excelize 开源社区荣获了 2025 红山开源明星项目三等奖，活动详情详见文章：2025 红山开源大会圆满收官，共筑开源生态新未来 Excelize 是用于操作电子表格办公文档",
+    "quote": "Excel 库拿开源奖，说明写表格的人永远不会失业，只是换了个姿势。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1180445#reply1",
+    "published": "2026-08-14",
+    "uid": "dev_19895bf2"
+  },
+  {
+    "title": "Google Antigravity 出来啦",
+    "content": "google antigravity, 免费可以用 Gemini 3 Pro 、Claude Sonnet 4.5,大家有试过怎么样嘛，这也太壕了",
+    "quote": "Gemini 3 Pro 加 Claude 全免费，谷歌这次是真急眼了，薅羊毛的赶紧上。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1173666#reply9",
+    "published": "2026-08-14",
+    "uid": "dev_02604af8"
+  }
+]
