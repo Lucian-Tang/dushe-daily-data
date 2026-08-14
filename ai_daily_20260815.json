@@ -1,0 +1,200 @@
+[
+  {
+    "title": "GLM-5.3 发布：前沿编码 + 突现的「网络攻防」能力",
+    "content": "智谱发布 GLM-5.3：除逼近 Sol/Fable 的前沿编码能力外，最大看点是突现的 cyber capabilities——官方在大规模扫描开源与流行软件并披露漏洞（cvd.z.ai，多数仍在 embargo）。HN 907 分 460 评登顶，有用户当天就把订阅从 $18 升到 $80；评论区戏称「这代模型会自己找漏洞」。",
+    "quote": "GLM-5.3：写代码只是副业，帮你看门才是正职。",
+    "source": "z.ai",
+    "url": "https://z.ai/blog/glm-5.3",
+    "published": "2026-08-14",
+    "uid": "ai_f48c21fa"
+  },
+  {
+    "title": "Cerebras × OpenAI 推 Ultrafast：GPT-5.6 Sol 飙到 750 token/s",
+    "content": "Cerebras 与 OpenAI 联手推出 Ultrafast Mode：GPT-5.6 Sol 在其芯片上跑出最高每秒 750 输出 token 且质量无损，先向 OpenAI API 部分客户开放，后续逐步铺开。官方称这是「全球最快前沿模型」，主打时间敏感的关键任务；HN 686 分，评论区热议「速度终于追上推理需求了」。",
+    "quote": "750 token/s：等模型回复的时间，够你喝完一整杯咖啡。",
+    "source": "Cerebras Blog",
+    "url": "https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai",
+    "published": "2026-08-13",
+    "uid": "ai_db1ca609"
+  },
+  {
+    "title": "Cursor 被 SpaceX 收购：从 4 月合作到正式并入",
+    "content": "Cursor 官宣正式被 SpaceX 收购，完成 4 月启动的并购流程（此前已与 SpaceXAI 合作加速模型训练）。官方称将携手把「AI 队友」推向更远；HN 44 分，评论区一半玩梗「以后写代码要过航天级 QA」，一半认真讨论独立 AI 工具被巨头收编的行业趋势。",
+    "quote": "Cursor：以后改 bug 不叫 debug，叫发射前检查。",
+    "source": "Cursor Blog",
+    "url": "https://cursor.com/blog/joining-spacex",
+    "published": "2026-08-14",
+    "uid": "ai_b460fe90"
+  },
+  {
+    "title": "DeepSeek 推出峰谷定价：API 也学会错峰用电了",
+    "content": "DeepSeek 官方发布 API 峰谷定价更新（HN 201 分）：在低峰时段调用享受更低的单价，鼓励开发者把非实时任务挪到闲时。这是继此前 V4 Pro 涨价后，DeepSeek 在价格体系上的又一次精细化运营——用价格杠杆平滑算力负载，既降低用户成本，又提升 GPU 利用率。对大模型 API 市场来说，「峰谷电价」式的动态定价可能成为新常态，成本敏感型应用得开始学着看表调用。",
+    "quote": "API 也搞峰谷电价——凌晨三点跑批任务的程序员，省下的都是真金白银。",
+    "source": "DeepSeek",
+    "url": "https://api-docs.deepseek.com/news/news260813/",
+    "published": "2026-08-13",
+    "uid": "ai_e541c54a"
+  },
+  {
+    "title": "Gemini API Managed Agents 升级：3.6 Flash + hooks 齐活",
+    "content": "Google 官宣扩展 Gemini API Managed Agents：接入 3.6 Flash 模型，并新增 hooks 机制——开发者可在 Agent 生命周期各节点注入自定义逻辑，托管式多步任务编排更灵活。配合此前 3.7 Flash 发布，Google 的「托管 Agent」产品线正快速补齐，瞄准企业工作流自动化。",
+    "quote": "Managed Agents：Google 把 Agent 运维也包圆了。",
+    "source": "Google Blog",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/",
+    "published": "2026-08-13",
+    "uid": "ai_28016b34"
+  },
+  {
+    "title": "为什么 Opus 5 用起来反而更难受？开发者长文吐槽",
+    "content": "开发者 mun-logadan 发文：Opus 5 基准更强，但用起来像降级——它不再在意图不明时停下提问，而是自作主张、擅自改写计划，逼着人全程 babysitting；对比 Opus 4.7/4.8 和 Fable 的「先问再动」差距明显。HN 396 分，大量评论共鸣「强≠好用，Agent 的边界感才是体验核心」。",
+    "quote": "Opus 5：能力越强，越该学会闭嘴先问。",
+    "source": "mun-logadan.github.io",
+    "url": "https://mun-logadan.github.io/why-does-opus-5-feel-worse/",
+    "published": "2026-08-14",
+    "uid": "ai_c98353ce"
+  },
+  {
+    "title": "别分类了，让 LLM 幻觉吧：搜索分类的新思路",
+    "content": "Doug Turnbull（软件 Doug）发文：让 LLM 做商品/查询分类又难又脆——合法词表几百个，硬约束必翻车。他提出反向思路：别强制归类，让模型「假设性分类」再映射回合法词表，用 WANDS 电商数据集演示效果显著更稳。HN 161 分，搜索圈直呼「这是把幻觉用成了特性」。",
+    "quote": "LLM 分类：与其管住嘴，不如让它胡说再对表。",
+    "source": "softwaredoug.com",
+    "url": "https://softwaredoug.com/blog/2026/08/10/hypothetical-classifications",
+    "published": "2026-08-10",
+    "uid": "ai_ec7fde1d"
+  },
+  {
+    "title": "Show HN：Ante——单二进制、可离线的编码 Agent",
+    "content": "Show HN 项目 Ante（Rust 实现，1.7k star）：自称「shell 里的幽灵」——一个自包含的 Agent harness，核心高度优化，像 Claude Code / Codex 一样工作，但没有它们的外部依赖和模型约束，单二进制即可离线运行。HN 166 分，评论区热议「本地优先的 coding agent 才是隐私敏感场景的正解」。",
+    "quote": "Ante：一个二进制走天下，断网也能当牛马。",
+    "source": "GitHub",
+    "url": "https://github.com/AntigmaLabs/ante",
+    "published": "2026-08-14",
+    "uid": "ai_dcbfd7b6"
+  },
+  {
+    "title": "Launch HN：Discovered Materials——让 AI Agent 去发现新材料",
+    "content": "YC P26 团队发布 Material Discovery Bench 并登上 HN（159 分）：衡量 LLM 在新材料发现上进度的开放式长程研究基准，聚焦半导体行业——让模型搜索高导热介电材料，解锁 3D 芯片封装。7 个模型中 GPT-5.6 Sol 发现最多，全部模型合计发现超 500 种此前未知材料。单次运行烧 30-100M token——AI 科研的算力账单比实验经费还吓人。",
+    "quote": "AI 搞材料科研：一次跑 1 亿 token，发现 500 种新材料——炼丹的尽头是炼材料。",
+    "source": "Hacker News",
+    "url": "https://discoveredmaterials.com/research/",
+    "published": "2026-08-14",
+    "uid": "ai_9e80971a"
+  },
+  {
+    "title": "官方教程：如何榨干每一次 Claude Code 会话的价值",
+    "content": "Anthropic 官方博客发布《Maximizing the value of your Claude Code sessions》：系统讲如何提升编码 Agent 会话产出——任务拆解、上下文管理、迭代反馈到 checkpoint 用法，全是实操向建议。官方下场写「使用手册」本身是信号：编码 Agent 的瓶颈已从「能不能用」转移到「会不会用」，会调教 Agent 的工程师正吃效率红利。",
+    "quote": "Anthropic 亲自教你怎么用 Claude Code——工具的上限，取决于使用者的姿势。",
+    "source": "Anthropic",
+    "url": "https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions",
+    "published": "2026-08-14",
+    "uid": "ai_3ce6b389"
+  },
+  {
+    "title": "V2EX 热问：公司 20-40 人用开源模型，要什么硬件？",
+    "content": "V2EX 热帖（54 回复）：公司想本地部署开源模型供 20-40 人使用，主要做文档处理和简单编程，求硬件配置。评论区从「一张 A100 顶 20 人」到「量化 + 共享显存 + 排队调度」方案吵成一锅，还有老哥现身说法「先算清并发再说，别上来就买 8 卡」。",
+    "quote": "本地部署第一课：先数人头，再数显卡。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1234254",
+    "published": "2026-08-14",
+    "uid": "ai_1f1dc7bc"
+  },
+  {
+    "title": "V2EX 开源：让 Codex 直接用 Kimi K3 的 Responses API 适配层",
+    "content": "V2EX 用户开源 kimi-responses-adapter：把 OpenAI Responses API 转成 Kimi Coding 的 Anthropic Messages API，让 Codex 直接驱动 Kimi K3。Rust 实现、完整支持 thinking 轮次回传；作者吐槽 new-api/sub2api 转换都不好使，干脆自己写一个。",
+    "quote": "适配层：Codex 的壳，Kimi 的芯，白嫖的快乐。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1234505",
+    "published": "2026-08-15",
+    "uid": "ai_4d287cf5"
+  },
+  {
+    "title": "V2EX 国企芯片人灵魂拷问：小模型真能写 Verilog 吗？",
+    "content": "V2EX 热帖：坐标国企芯片公司，领导想用 AI 提效——「AI 生成 Verilog + 自动化验证」被立了 KPI，但手头只有少量显卡、还不能买云算力，100G 显存级别小模型够不够用？评论区芯片老兵泼冷水：验证要的是确定性，LLM 的幻觉在流片成本面前是灾难，建议先做代码补全别碰验证。",
+    "quote": "让 LLM 写 Verilog 验证？流片失败的时候领导可不背锅。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1234502",
+    "published": "2026-08-15",
+    "uid": "ai_ba39ee19"
+  },
+  {
+    "title": "Show HN：Lumabri——用 P2P 集群跑 MoE 大模型",
+    "content": "Show HN 项目 Lumabri：基于 Colibri 协议，把多台设备的算力组建成 P2P 集群跑 MoE 模型——每个设备只加载一部分专家，推理时动态调度。HN 44 分，评论区一边赞「分布式推理终于有人做了」，一边质疑跨设备通信延迟是否吞掉收益，作者回应已针对家用网络优化。",
+    "quote": "P2P 跑 MoE：你的显卡不够，那就偷邻居的。",
+    "source": "Hacker News",
+    "url": "https://github.com/JustVugg/lumabri",
+    "published": "2026-08-14",
+    "uid": "ai_6085e1aa"
+  },
+  {
+    "title": "给 LLM 生成的 GPU Kernel 配「合同级」验证器",
+    "content": "arXiv 新论文：为 LLM 生成的 GPU Kernel 构建 Contract-Grade Verifier——不只看能不能跑，而是用形式化契约验证正确性、边界与资源安全，覆盖越界访问、race condition 等流片级问题。HN 讨论认为这是「AI 写硬件代码」走向可信的关键一步，但也有人质疑验证本身的开销。",
+    "quote": "LLM 写 Kernel 可以，但先过了合同级验证这关再说。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2608.12700",
+    "published": "2026-08-14",
+    "uid": "ai_b823e84d"
+  },
+  {
+    "title": "Show HN：Ollmo——10 分钟打造自己的豆包和 DeepSeek",
+    "content": "V2EX 用户开源 Ollmo（Open LLM Orchestrator）：基于 Go + Fiber + Next.js 的 Agent 编排器，主打「数据不出门」——上传文档、提问、拿到带出处的答案，一条命令部署、十分钟上手，自带混合检索、多租户隔离与流式对话，可接豆包/DeepSeek 等模型。评论区好评「终于有不是配置地狱的 RAG 平台了」。",
+    "quote": "Ollmo：AI 编排器的终极形态——三步走，别整几十个概念。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1234483",
+    "published": "2026-08-15",
+    "uid": "ai_8a9bdd4b"
+  },
+  {
+    "title": "dsh 插件生态爆发：社区已收录 270 个插件",
+    "content": "DeepSeek Harness 开源后插件生态迅速膨胀：V2EX 用户整理 awesome-dsh-plugin 精选列表，已收录 270 个可 `dsh plugin add` 安装的插件——模型、工具、沙箱、UI 乃至 Agent Loop 本身皆可替换。社区调侃「dsh 的插件树长得比模型参数还快」，官方 Coding Agent 只是这套框架的默认形态之一。",
+    "quote": "dsh：框架即插线板，270 个插件只是开始。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1234499",
+    "published": "2026-08-15",
+    "uid": "ai_21046173"
+  },
+  {
+    "title": "V2EX 热议：云端部署 AI Agent，国内还是国外服务器？",
+    "content": "V2EX 热帖：要做云端 AI Agent，服务器选国内还是国外？评论区吵成两派：选国内的理由是合规、备案、延迟低、微信生态方便；选国外的理由是模型 API 齐全、无备案折腾、OpenAI/Anthropic 直连。也有老哥指出「先看你的 Agent 调什么模型，模型在哪决定了服务器在哪」。",
+    "quote": "部署 Agent 选机房：先看模型在哪，再看备案在不在。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1234486",
+    "published": "2026-08-15",
+    "uid": "ai_f32baaef"
+  },
+  {
+    "title": "AMIE 新研究：医疗 AI 视频问诊首次实现实时临床对话",
+    "content": "Google Research 发布 AMIE 最新研究：医疗 AI 系统在模拟临床场景中首次实现实时视频问诊能力——不仅能听会说，还能结合视频画面观察患者状态、追问病史、给出管理建议。研究称 AMIE 在多项临床沟通指标上接近甚至超过人类医生基线。这是医疗 AI 从「文本问答」走向「真实诊疗场景」的关键一步，但离落地仍有监管与安全的长路。",
+    "quote": "AMIE：AI 医生开始会「望闻问切」了，就是还不会开处方。",
+    "source": "Google Blog",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations/",
+    "published": "2026-08-11",
+    "uid": "ai_17cdd08d"
+  },
+  {
+    "title": "AI Model Atlas：把整个 ML 模型生态画成一张 3D 星图",
+    "content": "开源可视化项目 AI Model Atlas（HN 22 分）：把海量 ML 模型的人口分布渲染成交互式 3D 图谱——模型按架构、任务、家族聚成星团，拖拽缩放即可探索整个开源模型生态。在 Hugging Face 上模型数量爆炸式增长的今天，这种「上帝视角」的可视化对研究者选型、对行业观察趋势都很有价值。模型太多也是一种信息过载，图谱是新的导航仪。",
+    "quote": "模型多到要画星图——开源生态的银河系，终于有了导航仪。",
+    "source": "Hacker News",
+    "url": "https://run.cosmograph.app/public/ca9fd1ad-fe83-4238-8b69-b707c633aef0",
+    "published": "2026-08-14",
+    "uid": "ai_270d55da"
+  },
+  {
+    "title": "Is AI Dumber Today? 一个用真实体验投票的 AI 变笨指数",
+    "content": "Show HN 小项目 isaidumber.today：收集用户对各家模型「变笨了没」的主观体验投票，汇总成 AI 体验退化指数——按模型、按时间线可视化。HN 7 分但讨论热烈：有人吐槽「感觉论也该有数据」，有人指出「版本回退、量化精度、负载抖动都会造成体感变笨」，样本偏差是硬伤。",
+    "quote": "AI 变笨指数：没有基准测试，只有用户的血压。",
+    "source": "Hacker News",
+    "url": "https://isaidumber.today/",
+    "published": "2026-08-14",
+    "uid": "ai_2143bf77"
+  },
+  {
+    "title": "Canva 估值砍掉 100 亿美元：AI 叙事开始挤泡沫",
+    "content": "据澳媒报道，Canva 在一轮内部股份回购中将估值下调约 100 亿美元——「AI reality bites」。这家设计平台巨头此前凭借 AI 功能（Magic Studio 等）讲出高增长故事，如今在增长放缓与 AI 变现不及预期的双重压力下被迫重新定价。当 AI 概念股的估值开始回调，市场正在用脚投票：讲 AI 故事可以，但得先拿出 AI 带来的真金白银。",
+    "quote": "Canva 估值砍 100 亿：AI 讲故事的时代结束，拿财报说话的时代开始了。",
+    "source": "SMH",
+    "url": "https://www.smh.com.au/technology/sobering-markdown-canva-slashes-valuation-by-10b-as-ai-reality-bites-20260814-p60of9.html",
+    "published": "2026-08-14",
+    "uid": "ai_c0a09c99"
+  }
+]
