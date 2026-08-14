@@ -1,0 +1,218 @@
+[
+  {
+    "title": "Qwen3.8-27B 开源发布：官方称最好的本地稠密模型",
+    "content": "通义千问发布 Qwen3.8-27B，开源权重，FP8 量化版直接挂上 HuggingFace，Unsloth 也第一时间出了 GGUF 文件。27B 级别能在消费级显卡上跑，和 2.4T MoE 旗舰形成高低搭配，本地部署党迎来新选择。",
+    "quote": "开源界又卷起来了，本地党狂喜，显存不够的继续观望。",
+    "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
+    "source": "HN Front Page",
+    "published": "2026-08-15",
+    "uid": "dev_96dc4da5"
+  },
+  {
+    "title": "Google 让同态加密 AI 走向实用",
+    "content": "Google 博客详解如何用同态加密让 AI 在密文上直接计算，数据不用解密就能被模型处理。文章介绍了他们在隐私保护机器学习上的工程进展，以及攻克同态加密性能开销的路线图，主打医疗、金融等敏感场景。",
+    "quote": "密文上跑模型听着科幻，落地还得看性能这关过不过。",
+    "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
+    "source": "HN Front Page",
+    "published": "2026-08-15",
+    "uid": "dev_572d8a6f"
+  },
+  {
+    "title": "When Genius Fails：AI 实验室的知识傲慢",
+    "content": "一篇 HN 热文批评 AI 实验室的傲慢：天才团队迷信规模与直觉，忽视可复现性和工程严谨性，导致高调发布接连翻车。帖子 123 分、106 条评论吵翻天，支持者说戳中痛点，反对者说拿个案开地图炮。",
+    "quote": "实验室的傲慢比模型幻觉更难修，这病开源也治不了。",
+    "url": "https://weightythoughts.com/p/when-genius-failsthe-intellectual",
+    "source": "HN Front Page",
+    "published": "2026-08-15",
+    "uid": "dev_ff8c7dda"
+  },
+  {
+    "title": "RayforceDB：纯 C 实现的 Lisp 风格分析数据库",
+    "content": "一个纯 C 实现的分析型数据库，语法走 Lisp 风格，主打极简和嵌入式场景。作者把它定位成 SQLite 之外的另一个极端：不搞 SQL，用 S 表达式写查询，编译后单文件运行，适合追求极致轻量的场景。",
+    "quote": "SQL 都嫌重的人终于有伴了，就是学 Lisp 的代价有点大。",
+    "url": "https://rayforcedb.com/",
+    "source": "HN Front Page",
+    "published": "2026-08-15",
+    "uid": "dev_49168540"
+  },
+  {
+    "title": "HashAgent：把 Agent 变成 URL，WebGPU 本地运行",
+    "content": "HashAgent 把 AI Agent 打包成一个链接，别人点开就在本地浏览器里用 WebGPU 直接跑，数据不上传任何服务器。作者称这是 Agent 分发的 Web 化尝试，隐私友好，但受限于浏览器算力，复杂任务跑不动。",
+    "quote": "Agent 即链接，想法挺酷，就是浏览器那点算力撑不起大场面。",
+    "url": "https://hashagent.pages.dev/",
+    "source": "HN Front Page",
+    "published": "2026-08-15",
+    "uid": "dev_93f29922"
+  },
+  {
+    "title": "Graft：Claude Code hooks 砍掉 42% grep token",
+    "content": "开源 Claude Code hooks 工具，通过缓存和上下文裁剪把 grep 类操作的 token 消耗砍掉 42%，让长会话更省钱。作者实测在大型代码库上效果明显，安装只需几行配置，HN 17 分 7 条评论。",
+    "quote": "省 token 就是省钱，Claude Code 重度用户值得一试。",
+    "url": "https://github.com/NanoNets/Graft",
+    "source": "HN Show HN",
+    "published": "2026-08-15",
+    "uid": "dev_d073a940"
+  },
+  {
+    "title": "Hexis：开源的 Claude Skills 管理工具",
+    "content": "Hexis 提供可视化界面管理 Claude Skills：安装、版本、启用停用、依赖关系一目了然，解决 Skills 目录越堆越乱的问题。对天天攒 skill 的 Agent 玩家来说，算是刚需工具。",
+    "quote": "Skills 一多就乱，这下总算有人管了。",
+    "url": "https://github.com/Bevel-Software/Hexis",
+    "source": "HN Show HN",
+    "published": "2026-08-15",
+    "uid": "dev_a5e12b74"
+  },
+  {
+    "title": "spiderfoot 再登 Trending：OSINT 自动化侦察",
+    "content": "老牌 OSINT 工具 spiderfoot 又上 GitHub Trending，集成 200+ 模块，能从域名、邮箱、IP 出发自动收集威胁情报，支持 API 化调用和报告导出。安全圈常备武器，红队白帽都离不开。",
+    "quote": "情报收集一条龙，红队最爱，白帽子也离不开。",
+    "url": "https://github.com/smicallef/spiderfoot",
+    "source": "GitHub Trending Daily",
+    "published": "2026-08-15",
+    "uid": "dev_9257e0de"
+  },
+  {
+    "title": "RAGFlow 霸榜：开箱即用的 RAG 平台",
+    "content": "InfiniFlow 的 RAGFlow 持续霸榜 Trending，主打企业级知识库问答：文档解析、分块、向量化、混合检索、Agent 编排全链路可视化配置，本地部署友好，中文场景支持到位。",
+    "quote": "RAG 全家桶卷到这份上，自建知识库门槛又降一截。",
+    "url": "https://github.com/infiniflow/ragflow",
+    "source": "GitHub Trending Daily",
+    "published": "2026-08-15",
+    "uid": "dev_f7c8c70c"
+  },
+  {
+    "title": "V2EX 热帖：AI 大模型最终归宿是机器人",
+    "content": "V2EX 讨论 AI 终局：楼主认为软件市场已饱和，LLM 的归宿是机器人——CV 给视觉、LLM 给语言、云计算给算力，通用机器人的软件底座就齐了。评论区吵成两派，一派认同，一派说这是画饼。",
+    "quote": "软件写腻了就去造机器人，这饼画得挺大但方向没毛病。",
+    "url": "https://www.v2ex.com/t/1233752#reply0",
+    "source": "V2EX Tech",
+    "published": "2026-08-15",
+    "uid": "dev_da29a42b"
+  },
+  {
+    "title": "CodexBoard：用 Kanban 同时管六个 Codex 项目",
+    "content": "独立开发者分享自己的方法论工具：把 Codex 项目搬上 Kanban 看板，任务状态、等待批准、待验收一眼可见，六个项目同时推进不再手忙脚乱。评论区 PM 直呼内行，开发者求开源。",
+    "quote": "六个项目当 PM，这比 Agent 本身更需要管理工具。",
+    "url": "https://www.v2ex.com/t/1234358#reply1",
+    "source": "V2EX Share",
+    "published": "2026-08-15",
+    "uid": "dev_718e5276"
+  },
+  {
+    "title": "Netra：eBPF/XDP 旁路流量可视化工具",
+    "content": "开源工具 Netra 用 eBPF/XDP 采集网络流量数据，DuckDB 存历史，不侵入业务即可实时观测流量，作者在 V2EX 发帖求拍砖。轻量、免改造，适合自建网络监控的场景。",
+    "quote": "eBPF 采集 + DuckDB 存储，轻量流量分析新姿势。",
+    "url": "https://github.com/xxddpac/netra",
+    "source": "V2EX Share",
+    "published": "2026-08-15",
+    "uid": "dev_dfad7882"
+  },
+  {
+    "title": "重新定义 Agent：大模型不能直接干活，需要一层「壳」",
+    "content": "小田学Python 的文章：问题不在模型不够聪明，而在于它被困在对话框里——没有工具、没有记忆、没有执行环境。作者提出 Agent 需要一层「壳」来承载工具调用与任务编排，并结合 OpenClaw 实践讲解。",
+    "quote": "模型是发动机，壳才是车，光有引擎跑不了路。",
+    "url": "https://www.cnblogs.com/yudanqu/p/22479601",
+    "source": "博客园 Cnblogs",
+    "published": "2026-08-15",
+    "uid": "dev_d01e92e3"
+  },
+  {
+    "title": "Show HN: Karma in Menu Bar",
+    "content": "Karma 是 macOS 菜单栏的 Reddit Karma 追踪小工具，实时显示你的 Reddit 声望值变化，摸鱼时瞄一眼就能确认今天又水了多少分。开源免费，轻量驻留菜单栏。",
+    "quote": "菜单栏放个 Karma 积分器，摸鱼仪式感拉满。",
+    "source": "HN Show HN",
+    "url": "https://github.com/rorz/karma-bar",
+    "published": "2026-08-15",
+    "uid": "dev_f75b2d15"
+  },
+  {
+    "title": "Show HN: DST this DST that, test your containers",
+    "content": "now supports dtrun so environment is reproduciblehttps://github.com/bxrne/dtrun # Comments: 0",
+    "quote": "DST 改夏令时改到头大？容器时间测试救你狗命。",
+    "source": "HN Show HN",
+    "url": "https://github.com/bxrne/dstest",
+    "published": "2026-08-15",
+    "uid": "dev_67abb367"
+  },
+  {
+    "title": "Google Gemini Expands AI Content Verification With SynthID Video Checks",
+    "content": "Google is turning Gemini into a more accessible checkpoint for AI content provenance. The Gemini app can examine supported media for SynthID, Google's invisible watermarking technology, and report whe",
+    "quote": "Gemini 终于学会给 AI 内容盖验讫章了，虽然水印还是能撕。",
+    "source": "Dev.to",
+    "url": "https://dev.to/alifar/google-gemini-expands-ai-content-verification-with-synthid-video-checks-lb2",
+    "published": "2026-08-15",
+    "uid": "dev_e5a7a660"
+  },
+  {
+    "title": "Building an AI WhatsApp Lead Assistant for Real Estate: What I Learned",
+    "content": "Building an AI WhatsApp Lead Assistant for Real Estate: What I Learned Most real-estate businesses don't have a lead-generation problem. They have a lead-management problem. A potential buyer send",
+    "quote": "房产中介用 AI 谈客户，话术比人还勤快，就是不知道成交率咋样。",
+    "source": "Dev.to",
+    "url": "https://dev.to/vaxyro/building-an-ai-whatsapp-lead-assistant-for-real-estate-what-i-learned-3oc1",
+    "published": "2026-08-15",
+    "uid": "dev_42e4885f"
+  },
+  {
+    "title": "Your coding agent can read git log. It can't read the four things you tried that didn't work.",
+    "content": "I've been building NexusMem mostly alone, in long stretches, for a few weeks. It's a local-first memory engine for AI coding agents: it indexes your git history, shell commands (with exit codes), proj",
+    "quote": "Agent 会读 git log 有啥用，读不懂老板那句『再改改』。",
+    "source": "Dev.to",
+    "url": "https://dev.to/yaminbakoh4/your-coding-agent-can-read-git-log-it-cant-read-the-four-things-you-tried-that-didnt-work-1bkm",
+    "published": "2026-08-15",
+    "uid": "dev_e07e6c44"
+  },
+  {
+    "title": "以极简代码实现导出数据集到Excel文件 - IT老彭",
+    "content": "最近要实现将数据集导出到Excel的功能，同时希望做成标准功能，只需传入数据集对象和目标文件名即可。也不打算使用第三方组件，代码尽量精简。 1.直接写文件方式导出数据集到Excel表 首先上网搜索一翻，除了常见的Ole方式，确实找到了通过FileStream直接写文件的方法，参考着一翻改写，得到以下",
+    "quote": "导出 Excel 还要啥第三方库，手搓 XML 才是极简党的浪漫。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/kacarton/p/22477031",
+    "published": "2026-08-15",
+    "uid": "dev_9a28b3b6"
+  },
+  {
+    "title": "内容加密，代码可运行：ailatch——AI 时代安全锁 - 九里九里",
+    "content": "项目：https://github.com/lo2589/AILatch.git 假设你正在用 Coding Agent 开发一个项目。 项目里有两样东西你不希望 AI 随便看到： OPENAI_API_KEY=sk-xxxxxx 以及一段真正有价值的核心代码： core_algorithm.py",
+    "quote": "密钥加密给 AI 上锁，防的不是黑客，是手滑的 Coding Agent。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/polipolu/p/22472078",
+    "published": "2026-08-15",
+    "uid": "dev_deb629e4"
+  },
+  {
+    "title": "Whistle 前端调试代理实战技巧 - janbar",
+    "content": "Whistle 前端调试代理实战技巧 Whistle 是基于 Node.js 的跨平台抓包代理工具，支持 HTTP/HTTPS/WebSocket 拦截、请求转发、本地文件替换、接口 Mock，是前端日常调试利器。本文整理实战高频用法、踩坑难点、缓存问题终极方案。 官方文档：https://wpro",
+    "quote": "Whistle 抓包三件套：转发、替换、Mock，前端调试的瑞士军刀。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/janbar/p/22472057",
+    "published": "2026-08-15",
+    "uid": "dev_150cc060"
+  },
+  {
+    "title": "Introducing Toast 1：混合面包的新一代多模态模型",
+    "content": "mixedbread.ai 发布 Toast 1，主打高质量多模态理解，官方称在多项基准上对标同尺寸一线模型。HN 讨论 52 分 15 评，开发者关注点集中在推理速度和本地部署可行性上。",
+    "quote": "又多一个多模态选手，卷完文本卷视觉，模型圈永不下班。",
+    "url": "https://www.mixedbread.com/blog/toast-1",
+    "source": "HN Front Page",
+    "published": "2026-08-15",
+    "uid": "dev_2d650fa2"
+  },
+  {
+    "title": "PIRT：在安卓本地跑 Linux 的手机 Agent",
+    "content": "PIRT 在安卓手机本地建立 Linux 环境让 Agent 直接操控，与系统文件管理器共享工作区，无需远程电脑或云电脑就能在手机上开发项目、运行服务。预构建 Debian Rootfs，主打端侧 Agent 全流程闭环。",
+    "quote": "手机 Agent 终于不用借别人的电脑干活了，端侧自治迈出一小步。",
+    "url": "https://www.v2ex.com/t/1234461",
+    "source": "V2EX Share",
+    "published": "2026-08-15",
+    "uid": "dev_8b7ae889"
+  },
+  {
+    "title": "为什么 Transformer 在推荐领域难以复现 NLP 的成功？",
+    "content": "作者反驳『Transformer 不擅长异质特征』的流行说法：用户 ID、商品 ID、城市、类目等特征都能转成同维 embedding 输入，问题出在推荐场景的稀疏性和规模特性上，而不是架构本身。",
+    "quote": "推荐系统这口锅别甩给 Transformer，稀疏数据才是真凶手。",
+    "url": "https://www.cnblogs.com/GlenTt/p/22481200",
+    "source": "博客园 Cnblogs",
+    "published": "2026-08-15",
+    "uid": "dev_223f99ae"
+  }
+]
