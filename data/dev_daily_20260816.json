@@ -1,0 +1,218 @@
+[
+  {
+    "title": "AI Can Now Design Functional Viruses. Should We Worry?",
+    "content": "IEEE Spectrum 报道 AI 已能设计出具备功能的病毒，合成生物学与生成模型结合后，双刃剑效应被放大。文章梳理了现有防护框架的滞后，以及研究者呼吁在论文发表与代码开源之间加一道伦理闸门的争论。",
+    "quote": "AI 造病毒这事，建议科学家先造点疫苗再炫技。",
+    "url": "https://spectrum.ieee.org/ai-designed-virus",
+    "source": "HN Front Page",
+    "published": "2026-08-16",
+    "uid": "dev_cb8832ee"
+  },
+  {
+    "title": "The AI Situation in Software Development",
+    "content": "一篇关于 AI 在软件开发中真实处境的长文：IDE 补全已经香，但端到端 agent 在真实代码库里仍然翻车率感人。作者给出「AI 写码浓度」的实用配比建议，以及哪些环节该保留人类评审的硬底线。",
+    "quote": "AI 写码浓度过高，出事时背锅的还是你。",
+    "url": "https://srikanth.ch/posts/the-ai-situation/",
+    "source": "HN Front Page",
+    "published": "2026-08-16",
+    "uid": "dev_be567185"
+  },
+  {
+    "title": "Yadda 3.0.0: BDD in the Age of AI Agents",
+    "content": "Yadda 发布 3.0.0，把行为驱动开发（BDD）重新定位到 AI Agent 时代：用自然语言场景描述直接驱动 agent 测试执行，让验收标准从文档变成可运行的契约，减少 prompt 漂移带来的隐性回归。",
+    "quote": "BDD 老树开新花，这次是给 agent 当紧箍咒。",
+    "url": "http://www.stephen-cresswell.com/2026/08/15/Yadda-3.0.0-BDD-in-the-Age-of-AI-Agents.html",
+    "source": "HN Front Page",
+    "published": "2026-08-16",
+    "uid": "dev_ce972f63"
+  },
+  {
+    "title": "Could a computer scientist build a brain?",
+    "content": "作者从计算理论视角拆解「造大脑」的可行性：神经元是异步并行机，但生物脑的能耗、容错与学习机制远超现有硬件抽象。文章用哥德尔不完备类比，论证为什么神经网络 Scaling 不等于理解智能。",
+    "quote": "先让电脑学会不烧电，再谈造大脑。",
+    "url": "https://stankerstjens.github.io/could-a-computer-scientist-build-a-brain/",
+    "source": "HN Front Page",
+    "published": "2026-08-16",
+    "uid": "dev_957195b4"
+  },
+  {
+    "title": "Show HN: Quasicrystals Animation Playground with WebXR",
+    "content": "一个用自定义 shader 实现的准晶体动画游乐场，支持 WebXR 沉浸式查看。作者用参数化生成不同阶数的准晶体结构，shader 方案保证高分辨率下依然流畅，浏览器打开即玩，代码量克制。",
+    "quote": "浏览器里玩准晶体，图形学玩家的新玩具。",
+    "url": "https://hypnagogic-quasicrystals.github.io/",
+    "source": "HN Front Page",
+    "published": "2026-08-16",
+    "uid": "dev_b6813411"
+  },
+  {
+    "title": "cordiverse/cordis",
+    "content": "GitHub 今日 trending 的 cordis：一套面向 LLM 应用的模块化编排框架，主打可插拔的 tool/plugin 体系与轻量运行时。仓库文档齐全，示例覆盖 agent 工作流与多模型路由，适合想自建 agent 中台的开发者。",
+    "quote": "又一款 agent 编排框架，先卷起来再说。",
+    "url": "https://github.com/cordiverse/cordis",
+    "source": "GitHub Trending Daily",
+    "published": "2026-08-16",
+    "uid": "dev_7a4137b4"
+  },
+  {
+    "title": "unslothai/unsloth",
+    "content": "Unsloth 持续霸榜：主打 2-5 倍速微调与 70% 显存节省，支持 Llama/Qwen 等主流模型，FlashAttention 与动态量化开箱即用。本地微调党标配工具，社区模板覆盖 LoRA 到全参微调全链路。",
+    "quote": "微调加速器里的卷王，显存不够的救星。",
+    "url": "https://github.com/unslothai/unsloth",
+    "source": "GitHub Trending Daily",
+    "published": "2026-08-16",
+    "uid": "dev_2fff1e60"
+  },
+  {
+    "title": "我又做了一個 OpenClash 的替代品 · LocalClash",
+    "content": "作者嫌 OpenClash UI 越来越臃肿，做了个轻量替代 LocalClash：下载 .ipk/.apk 装进 OpenWrt，服务菜单一键启停，面向不想研究 Mihomo 配置的用户。主打「开箱即用」，订阅导入与节点切换都做了简化。",
+    "quote": "OpenClash 太胖？那就再造一个更瘦的轮子。",
+    "url": "https://www.v2ex.com/t/1234643#reply1",
+    "source": "V2EX Share",
+    "published": "2026-08-16",
+    "uid": "dev_f1ee6dbc"
+  },
+  {
+    "title": "OctaFuse Gateway 2.5.0：接入 Responses 端点、更易理解的路由配置 - 程序猿DD",
+    "content": "OctaFuse 2.5.0 将 OpenAI Responses API 纳入统一路由体系，应用可继续用现有 Key/预算/公开模型直接 POST /v1/responses；管理后台的 Routes 与 Providers 配置也重做，路由规则更直观，多模型网关又多一个选择。",
+    "quote": "多模型网关又添一员，路由配置终于像人话。",
+    "url": "https://www.cnblogs.com/didispace/p/22494142",
+    "source": "博客园 Cnblogs",
+    "published": "2026-08-16",
+    "uid": "dev_7e69e330"
+  },
+  {
+    "title": "I Spent 3 Months Building a SaaS Nobody Used. Then a 10-Minute Chrome Extension Got 2,000 Users.",
+    "content": "Dev.to 热帖：作者花 3 个月做的 SaaS 无人问津，随手 10 分钟写的 Chrome 扩展却攒了 2000 用户。文章复盘「解决问题的大小」与「分发渠道」的错配，结论是产品成功与否往往在动手前就定了。",
+    "quote": "三个月 SaaS 无人问，十分钟插件两千人，人间真实。",
+    "url": "https://dev.to/arbabyousaf/i-spent-3-months-building-a-saas-nobody-used-then-a-10-minute-chrome-extension-got-2000-users-4m92",
+    "source": "Dev.to",
+    "published": "2026-08-16",
+    "uid": "dev_b6623a15"
+  },
+  {
+    "title": "A Diff Autopsy Sheet for Free-Model Changes: Flag Deletions, Churn, and Repo Shape Before Review",
+    "content": "一篇给开源维护者的 diff 尸检指南：在评审前先标记删除行、churn 热点与仓库结构变化，快速识别「看起来很小但动了大动脉」的 PR。配套可复用的检查清单，减少免费模型贡献者带来的隐性风险。",
+    "quote": "PR 评审前先做尸检，别让免费劳动力的雷炸在主干上。",
+    "url": "https://dev.to/github_7727/a-diff-autopsy-sheet-for-free-model-changes-flag-deletions-churn-and-repo-shape-before-review-2pcm",
+    "source": "Dev.to",
+    "published": "2026-08-16",
+    "uid": "dev_cdf49043"
+  },
+  {
+    "title": "Show HN: ThoughtDAG – An editable context graph for LLM conversations",
+    "content": "一个可编辑的上下文图工具，把 LLM 对话从线性聊天记录升级成可拖拽、可编辑的图结构，让长对话里的关键信息不再淹没在历史流中。HN 上 89 分、32 条评论，作者主打「上下文可视化 + 手动修正」，配合 agent 场景可显著减少上下文漂移与幻觉。",
+    "quote": "聊天记录变知识图谱，再也不怕 AI 失忆了。",
+    "source": "HN Front Page",
+    "url": "https://chenxiachan.github.io/thoughtdag/",
+    "published": "2026-08-16",
+    "uid": "dev_480a914f"
+  },
+  {
+    "title": "The Internet Feels Simple Until the Pipes Start Leaking",
+    "content": "一篇基础设施视角的随笔：多数人只在管道漏水时才意识到互联网的存在——结账按钮转圈、视频通话卡顿、支付 pending、仪表盘显示正常但用户体验已崩。作者拆解这些「看起来没问题」背后的网络路径、DNS、证书与最后一公里问题，并给出实用排查思路。",
+    "quote": "平时没人夸水管，堵了才想起修理工。",
+    "source": "Dev.to",
+    "url": "https://dev.to/art_light/the-internet-feels-simple-until-the-pipes-start-leaking-2o4i",
+    "published": "2026-08-16",
+    "uid": "dev_5d14e190"
+  },
+  {
+    "title": "I Miss Being a Coder in the Age of AI !!",
+    "content": "一位开发者在 AI 写码时代的自我剖白：工具、框架、项目每小时都在冒出来，自己却开始怀念纯粹写代码的手感。文章不否定 AI，而是讨论「写码的乐趣」与「被工具裹挟的焦虑」如何共存，引发了 Dev.to 大量读者的强烈共鸣。",
+    "quote": "AI 抢走了写码的手感，怀念也没用，跟上吧。",
+    "source": "Dev.to",
+    "url": "https://dev.to/riddhiagrawal001/i-miss-being-a-coder-in-the-age-of-ai--2k85",
+    "published": "2026-08-16",
+    "uid": "dev_5cad4b2b"
+  },
+  {
+    "title": "My evidence pipeline was saving Cloudflare block pages as evidence",
+    "content": "作者做了一款自动截图留存网络骚扰证据的 Web 服务，核心是抓取原帖真实截图。结果调试时发现：证据流水线存下来的全是 Cloudflare 拦截页——爬虫被反爬机制挡住，而「证据」却一本正经地归档了。一篇真实的工程翻车复盘，讲清 UA、验证码与重试策略的坑。",
+    "quote": "证据链存的全是拦截页，这瓜保熟但没瓤。",
+    "source": "Dev.to",
+    "url": "https://dev.to/renga154/my-evidence-pipeline-was-saving-cloudflare-block-pages-as-evidence-25ml",
+    "published": "2026-08-16",
+    "uid": "dev_1be305bc"
+  },
+  {
+    "title": "大模型推理加速：共享前缀（Shared Prefix）优化技术的全面解析 - -银光-",
+    "content": "详解共享前缀优化的核心原理：不止 vLLM/SGLang 跨批次复用的 prefix KV cache，同一批次内多个请求共享前缀同样有针对性优化空间。文章从研究动机、实现路径到收益边界逐步拆解，覆盖缓存命中率与显存权衡，是推理加速方向的硬核干货。",
+    "quote": "前缀共享省的是算力，涨的是知识。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/cswuyg/p/22498845",
+    "published": "2026-08-16",
+    "uid": "dev_31b9a178"
+  },
+  {
+    "title": "为什么越来越多人用 Pi ？ - 苏三说技术",
+    "content": "系统提示词只有 200 Token、GitHub 狂揽 8.6 万 Star 的 Pi，被社区称为 Claude Code 最强平替。文章复盘 Pi 的爆火路径：极简提示词、轻量部署、开箱即用，以及它凭什么在这个卷疯了的 AI 编程赛道里杀出重围，还对比了与 Codex、Cursor 的差异。",
+    "quote": "200 Token 的提示词，吊打一堆万字 prompt。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/12lisu/p/22488828",
+    "published": "2026-08-16",
+    "uid": "dev_a881cdd4"
+  },
+  {
+    "title": "机器学习项目：电信客户流失预测 - myLv",
+    "content": "基于经典 Telco Customer Churn 数据集，从零走完客户流失预测全流程：特征工程、模型选择、评估调优。文章强调「获取新客成本远高于留住老客」，用流失预警驱动定向优惠与专属客服干预，适合想完整跑通一个 ML 项目的入门到进阶读者。",
+    "quote": "流失预测做得好，客服小姐姐少挨骂。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/myInception/p/22496107",
+    "published": "2026-08-16",
+    "uid": "dev_6b93bd6d"
+  },
+  {
+    "title": "在 web 和 gpui 中实现印刷级别的字体排版精度",
+    "content": "作者把英文排版项目移植到 gpui（Rust），实现印刷级字体排版：读取字体度量表的 ascent、descent 与 units-per-em 推导 baseline ratio，计算基线偏移，让文本对齐精度远超 Web 默认排版。Rust 能直接读字体元数据，这是 Web 环境做不到的优势。",
+    "quote": "Web 排版糙？Rust 直接读字体表教你做人。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1234685#reply1",
+    "published": "2026-08-16",
+    "uid": "dev_24df12cf"
+  },
+  {
+    "title": "从 Tabby 切换到 Ghostty 后，我写了一个轻量 TUI 工具把 SSH、SFTP 和串口管理找了回来： ctty",
+    "content": "作者从 Tabby 换到 Ghostty 后，发现 SSH 主机管理、SFTP 传文件、串口调试这些顺手功能全没了，于是写了轻量 TUI 工具 ctty 把三者找回来：告别 Electron 动辄几百兆的内存占用，在终端里一键连主机、传文件、调开发板，主打轻快不折腾。",
+    "quote": "换个终端丢一堆功能，那就自己搓一个。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1234555#reply3",
+    "published": "2026-08-16",
+    "uid": "dev_bc319a38"
+  },
+  {
+    "title": "Auto-research with codex: How I achieved a 232x Faster Kernel",
+    "content": "作者用 codex 做自动化调研，把内核性能优化提速 232 倍。文章展示如何让 AI 自主完成 profiling、假设生成、实验验证的闭环，同时保留人工把关节点——HN 220 分高赞、59 条评论，是「AI 辅助底层优化」不可多得的真实案例。",
+    "quote": "232 倍提速，codex 这波是内核级外挂。",
+    "source": "HN Front Page",
+    "url": "https://sankalp.bearblog.dev/autoresearch/",
+    "published": "2026-08-16",
+    "uid": "dev_0964580f"
+  },
+  {
+    "title": "T3X/0: a Minimal Procedural Language",
+    "content": "T3X/0 是一门极简的过程式编程语言：整个语言设计刻意做减法，语法精简到可以一页讲完，却保留了结构化编程的核心表达力。页面从词法、语法到编译目标逐步拆解，适合想研究最小可用语言设计与自举编译器的开发者。",
+    "quote": "语言越小越难设计，T3X 把减法做到位了。",
+    "url": "https://t3x.org/t3x/0/index.html",
+    "source": "HN Front Page",
+    "published": "2026-08-16",
+    "uid": "dev_f6686fbf"
+  },
+  {
+    "title": "Agent 的运行范式：ReAct（Reasoning+Acting） - 小田学Python",
+    "content": "系统梳理 ReAct 范式的来龙去脉：为什么推理与行动交替进行能让 Agent 在复杂任务中少走弯路，对比 Plan-and-Execute 等替代方案的适用边界，并给出提示词模板与工程实现建议，是理解 Agent 工作流的入门到进阶好文。",
+    "quote": "会想又会动，Agent 才不是复读机。",
+    "url": "https://www.cnblogs.com/yudanqu/p/22498724",
+    "source": "博客园 Cnblogs",
+    "published": "2026-08-16",
+    "uid": "dev_d9fc6c78"
+  },
+  {
+    "title": "在 Canvas 上绘制完整富文本",
+    "content": "作者分享在 Canvas 里渲染完整富文本的实战方案：从文本测量、换行算法到加粗斜体、行高与图片混排的逐层实现，对比 DOM 方案的性能差异，并给出可直接复用的绘制函数，适合做编辑器预览、海报生成类场景。",
+    "quote": "Canvas 画富文本，排版细节全是坑。",
+    "url": "https://www.v2ex.com/t/1234687#reply0",
+    "source": "V2EX Share",
+    "published": "2026-08-16",
+    "uid": "dev_4135b4df"
+  }
+]
