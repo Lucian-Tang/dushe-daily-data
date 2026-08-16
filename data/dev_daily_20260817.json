@@ -1,0 +1,227 @@
+[
+  {
+    "title": "Manus 将回归独立运营：从 Meta 拆分，官方发文安抚用户",
+    "content": "Manus 官方博客 8 月 11 日宣布，公司将很快恢复独立运营，继续服务全球数百万用户。此前 Manus 被 Meta 以数十亿美元收购，但因北京方面要求拆解交易而反转。官方承认拆分过程中部分用户账户会受影响。这起中国 AI 明星公司出海又回归的案例，引发对跨境 AI 并购政策风险的讨。",
+    "quote": "收购一时爽，拆解火葬场——政策风险面前，几十亿美金也留不住。",
+    "source": "V2EX",
+    "url": "https://manus.im/blog/a-note-to-our-users",
+    "published": "2026-08-17",
+    "uid": "dev_5a344c77"
+  },
+  {
+    "title": "Claude 公开系统提示词：238 分登顶 HN，全网围观提示词工程天花板",
+    "content": "Anthropic 公开了 Claude 的系统提示词，包含角色设定、行为准则和输出规范，HN 238 分热议。社区一边惊叹其工程细节——明确的拒绝策略、日期处理规则——一边讨论提示词是否算核心竞争力。继 OpenAI 之后又一家大厂公开系统提示词，引发对「提示词护城河」的重新审视。",
+    "quote": "提示词公开了，护城河还在吗？抄得了文本，抄不了调教。",
+    "source": "HN Front Page",
+    "url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
+    "published": "2026-08-17",
+    "uid": "dev_105abc47"
+  },
+  {
+    "title": "Firefox iOS 版上线原生广告拦截：215 分 HN 热帖",
+    "content": "Mozilla 宣布 Firefox for iOS 内置原生广告拦截功能，无需扩展即可过滤广告，HN 215 分。iOS 上 Safari 之外的浏览器受 WebKit 限制无法使用拦截扩展，Firefox 通过 Content Blocker API 实现系统级过滤。社区讨论集中在隐私。",
+    "quote": "iOS 的 Firefox 硬气了一回，广告主反击才开始。",
+    "source": "HN Front Page",
+    "url": "https://support.mozilla.org/en-US/kb/block-ads-firefox-ios",
+    "published": "2026-08-17",
+    "uid": "dev_d839ef28"
+  },
+  {
+    "title": "Anthropic 发布多 Agent 系统研究报告：模式与问题并存",
+    "content": "Anthropic 发布多 Agent 系统研究报告，梳理常见架构模式——orchestrator-worker、pipeline、graph 等，并指出协调开销、上下文共享、错误传播等核心问题。基于大量真实生产案例，对构建 Agent 编排系统的团队有直接参考价值，也被视为对多 Agen。",
+    "quote": "多 Agent 报告：单 Agent 的坑你还没填完。",
+    "source": "HN Front Page",
+    "url": "https://www.anthropic.com/research/multiagent-systems",
+    "published": "2026-08-17",
+    "uid": "dev_aba79d16"
+  },
+  {
+    "title": "basecamp/omarchy：2.5 万星的开源现代 Linux 发行方案",
+    "content": "Basecamp 开源的 omarchy 冲上 GitHub Trending，25,204 星。项目定位「Beautiful, Modern & Opinionated Linux」，主打开箱即用的现代化桌面体验。Basecamp 以「小而美」哲学著称，这次把内部 Linux 环境开源。",
+    "quote": "Basecamp 的 Linux：审美在线，不服自己改。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/basecamp/omarchy",
+    "published": "2026-08-17",
+    "uid": "dev_0653e801"
+  },
+  {
+    "title": "OpenCut：8.3 万星的开源 CapCut 替代品",
+    "content": "OpenCut-app/OpenCut 以 83,670 星登顶 Trending，定位「The open-source CapCut alternative」，用 TypeScript 构建。支持视频剪辑、特效、模板等核心功能，主打无广告、无订阅、本地优先。在剪映商业化加速的背景下，开源。",
+    "quote": "剪映收费贵？开源社区直接造了平替，还带插件生态。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/OpenCut-app/OpenCut",
+    "published": "2026-08-17",
+    "uid": "dev_1f6961a4"
+  },
+  {
+    "title": "ai-memory：用 Rust 给 Agent 编程 CLI 加长期记忆",
+    "content": "akitaonrails/ai-memory 登上 GitHub Trending（1,666 星），用 Rust 实现 Agent 编程 CLI 的长期记忆，支持不同 Agent 厂商之间的交接。核心思路是持久化对话历史和项目上下文，让多个工具共享记忆，避免每次会话从零开始。对重度使用。",
+    "quote": "Agent 失忆症有救了：Rust 让 Agent 共享记忆",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/akitaonrails/ai-memory",
+    "published": "2026-08-17",
+    "uid": "dev_137e8069"
+  },
+  {
+    "title": "Show HN: Rungraph——把 AI 编程 Agent 的运行过程画成图",
+    "content": "开发者发布 Rungraph，把 AI coding-agent 的运行过程可视化为图谱，直观看到每一步操作、文件变更和决策链路。对调试复杂 Agent 任务很有帮助——当 Agent 跑偏时，你能一眼看出它在哪里开始犯傻。项目开源在 GitHub，虽是早期作品，但可视化 Agent 行为。",
+    "quote": "Rungraph 让你看清 Agent 在哪个岔路口犯傻。",
+    "source": "HN Show HN",
+    "url": "https://github.com/fayzan123/rungraph",
+    "published": "2026-08-17",
+    "uid": "dev_f811671a"
+  },
+  {
+    "title": "Show HN: Offshoot——SQLite 文件的写时复制分支",
+    "content": "Offshoot 实现 SQLite 文件的 Copy-on-Write 分支，无需复制整个数据库即可创建分支、实验、回滚。核心价值：用普通 SQLite 文件就能获得类似 Git 的分支能力，适合数据迁移演练、测试环境隔离和实验性查询。项目开源在 GitHub，对数据库工具链玩家是个有意。",
+    "quote": "SQLite 也能 Git 了？写时复制分支，实验随便造。",
+    "source": "HN Show HN",
+    "url": "https://github.com/sricola/offshoot",
+    "published": "2026-08-17",
+    "uid": "dev_69cd65d4"
+  },
+  {
+    "title": "AgentStackMap：按「你要干的活」找 Agent，开源免费一目了然",
+    "content": "V2EX 用户发布 AgentStackMap，按使用场景分类的 Agent 导航：写邮件、改文档、查资料、跑流程——直接回答「能不能用、官网在哪、怎么订阅」，并标注是否开源、是否有免费计划。作者吐槽现在找 Agent「一排 Logo 看着热闹，却对不上手头的活」。",
+    "quote": "Agent 货架终于按需陈列，治好了 Logo 海洋迷路。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1234805",
+    "published": "2026-08-17",
+    "uid": "dev_4913a6ea"
+  },
+  {
+    "title": "Vibe Coding 网站上线几十分钟就被打爆：游客权限的代价",
+    "content": "V2EX 用户分享「锐评」网站被攻击的经历：为降低门槛开放游客评分评论，结果帖子没爆、服务器先爆了——攻击脚本利用无登录限制灌水刷评。作者复盘：宽松的游客权限方便了用户，也方便了攻击者，最终只能关掉游客入口。对独立开发者很有借鉴意义：上线前就要想清楚滥用成本。",
+    "quote": "游客权限一时爽，攻击脚本火葬场——第一课是防滥用。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1234711",
+    "published": "2026-08-17",
+    "uid": "dev_f3522029"
+  },
+  {
+    "title": "DeepSeek 涨价实测：缓存命中率越高账单涨得越狠",
+    "content": "V2EX 用户用 650 次请求、16 个会话的日志实测 DeepSeek 新定价：缓存命中率 98.09% 的 Agent 负载，账单变成 2.7 倍；零命中反而只涨 1.5 倍。原因是三档价格没有同幅上调，缓存命中价涨幅更大，已与官方账单对账确认。对重度依赖缓存的 Agent 工作负载。",
+    "quote": "缓存命中率高反而涨价狠？这波定价专治薅缓存羊毛。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1234691",
+    "published": "2026-08-17",
+    "uid": "dev_dab7815b"
+  },
+  {
+    "title": "运维老哥用 AI 造完整产品：写代码一文不值，难的是审美",
+    "content": "博客园文章爆火：一位运维工程师用 Claude Code + Kimi K3 从 0 到 1 做出微信小程序 + APP，自述「一个人干了 10 个人的活」。核心观点：AI 时代写代码越来越不值钱，难的是审美和产品判断——交互设计、文案调性、功能取舍才是拉开差距的地方。不卖课不吹 AI，引。",
+    "quote": "AI 让写代码贬值，审美成了硬通货——老运维觉悟比程序员高。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/hellojackyleon/p/22508104",
+    "published": "2026-08-17",
+    "uid": "dev_03b0c948"
+  },
+  {
+    "title": "廖雪峰开始 Vibe Coding：入门第一课作者的 AI 编程实践",
+    "content": "博客园作者张善友剖析廖雪峰 2026 上半年的 AI 编程实践：这位以 Java/Python/JS 教程闻名的「入门第一课」作者，开始用 AI 辅助开发实战项目（如串口调试器）。文章探讨传统教程作者在 AI 编程浪潮下的转型路径，以及「手写教学」与「AI 辅助开发」两种范式的碰撞。",
+    "quote": "廖雪峰都开始 Vibe Coding，守门人挡不住 AI",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/22502419",
+    "published": "2026-08-17",
+    "uid": "dev_80004930"
+  },
+  {
+    "title": "Show HN: Sib - Unixy LLM Client using Git to store converastions, instead SQLite",
+    "content": "Hi all :)The reason I like git is that the source tree snapshot and the commit structure itself are always immutable, and destructive operations are just renaming a ref file.Once you understand that,",
+    "quote": "聊天记录当代码管，Git 终于管到 AI 头上了。",
+    "source": "HN Show HN",
+    "url": "https://github.com/sib-project/sib",
+    "published": "2026-08-17",
+    "uid": "dev_bde96030"
+  },
+  {
+    "title": "Complete Guide to Building a Scalable Java-Selenium Automation Framework",
+    "content": "QA Automation - Best Practices Guide Framework: Hybrid Test Automation Framework Stack: Java - Selenium 4 - TestNG - Maven - ExtentReports Project: QA Automation Table of Contents Project Structure",
+    "quote": "Selenium 框架指南千千万，能撑住规模的没几个。",
+    "source": "Dev.to",
+    "url": "https://dev.to/shefali_qa/complete-guide-to-building-a-scalable-java-selenium-automation-framework-44fg",
+    "published": "2026-08-17",
+    "uid": "dev_662530dd"
+  },
+  {
+    "title": "authority-auth: Stop Rolling Your Own Auth — A Framework-Agnostic Python Library",
+    "content": "The problem Every Python web app eventually needs authentication, and every team ends up either gluing together half a dozen libraries or hand-rolling JWT logic. Both paths are full of security traps",
+    "quote": "别再造轮子了，自己写 auth 的人最后都在给安全团队打工。",
+    "source": "Dev.to",
+    "url": "https://dev.to/rkriad585/authority-auth-stop-rolling-your-own-auth-a-framework-agnostic-python-library-232b",
+    "published": "2026-08-17",
+    "uid": "dev_0fd497bd"
+  },
+  {
+    "title": "Building an offline CAD tool that can also turn photos into 3D meshes",
+    "content": "I originally put PolyForge together as a ChatGPT skill, just for OpenSCAD, so I could describe a bracket or an enclosure and get back something I could actually print on my modified Ender 3 V2 or my Q",
+    "quote": "照片变网格，离线 CAD 这是要抢摄影师的饭碗。",
+    "source": "Dev.to",
+    "url": "https://dev.to/rx290/building-an-offline-cad-tool-that-can-also-turn-photos-into-3d-meshes-181p",
+    "published": "2026-08-17",
+    "uid": "dev_bad8f5e8"
+  },
+  {
+    "title": "Linux程序性能分析（一）---perf原理分析 - SkyOnSky",
+    "content": "PS：要转载请注明出处，本人版权所有。 PS: 这个只是基于《我自己》的理解， 如果和你的原则及想法相冲突，请谅解，勿喷。 环境说明 无 前言 前段时间做了很多的基于sdk/demo的大模型程序性能评估，例如一个大模型运行的瓶颈是什么？这里的评估要分为两个部分： 异构设备运行性能评估：异构设备的执行",
+    "quote": "perf 原理讲透了，性能问题就藏不住了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Iflyinsky/p/22507762",
+    "published": "2026-08-17",
+    "uid": "dev_d897bdf3"
+  },
+  {
+    "title": "1k+ 小数据集 SFT + KTO 微调与评测完整攻略 - 测试木可",
+    "content": "1k+ 小数据集 SFT + KTO 微调与评测完整攻略 基于 Qwen3.5-9B + RTX 4090D (24GB) 实战经验总结 一、项目概述 1.1 目标 使用 1,000+ 条 高质量训练数据，通过 SFT + KTO 两阶段微调，让模型学会从需求描述中生成结构化测试用例（JSON 格式",
+    "quote": "小数据微调也能出效果，关键是别瞎调。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/test-shirley/p/22503046",
+    "published": "2026-08-17",
+    "uid": "dev_62891bc4"
+  },
+  {
+    "title": "Show HN: Titan – Fast, lightweight real-time message dispatch made simple",
+    "content": "# Comments: 0",
+    "quote": "消息分发这事，轻量就是正义，重了全是事故。",
+    "source": "HN Show HN",
+    "url": "https://github.com/traffic-hunter/titan",
+    "published": "2026-08-17",
+    "uid": "dev_1337fbff"
+  },
+  {
+    "title": "一个 SQL 字段到底是怎么算出来的？我做了一个能给出“证据”的血缘工具 - bransyin",
+    "content": "一个 SQL 字段到底是怎么算出来的？我做了一个能给出“证据”的血缘工具 我最近开源了一个 Spark/Hive SQL 静态分析工具：Scope Lineage。 现在已经有了一些SQL的解析工具，为什么还要做一个 SQL Lineage？先看仓库里的一个真实例子。 下面这段 SQL 把 App",
+    "quote": "字段血缘讲证据，数据出问题再也不用互相甩锅。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/realyin/p/22507939",
+    "published": "2026-08-17",
+    "uid": "dev_6706ba75"
+  },
+  {
+    "title": "两天开发了一个网站专门收录各领域的最佳实践，方便学习（抄袭🐶）",
+    "content": "最初是想在做业务需求的时候尽量使用最新的一些技术，还能提升自己。但是现在技术更新迭代太快，github 上的搜索结果要么是几年前的内容要么就不符合我们的业务场景。于是网上搜集了一些热门项目通过 AI 筛选和处理，做了领域分类和技术划分，整理了一个网站出来，比较仓促很多地方做的不太行，大家随便看看项目地址 https://nb-github.pages.dev/",
+    "quote": "两天搓个最佳实践站，收藏夹吃灰预备役。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1228416#reply1",
+    "published": "2026-08-17",
+    "uid": "dev_418d0a31"
+  },
+  {
+    "title": "[开源] 做了一个纯原生 JS 的轻量网页翻译扩展，支持 YouTube 双语字幕",
+    "content": "各位 V2EX 的大佬好， 当初动手写这个插件，主要是想弄一个极致轻量、开源 , 可以在桌面⇄手机端同步生词本方便学习的翻译工具。 具体做了哪些事： 体积小： 纯原生 JS 编写，核心代码约 300KB+。无悬浮球，不占用右键菜单，点击图标即可开关当前网站翻译。也可以设置全局默认。 支持移动端： 手机端 Firefox 和 Edge Android 也能直接安装使用。 开箱即用 &amp; 数据",
+    "quote": "纯 JS 轻量翻译扩展，油猴用户狂喜。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1234560#reply10",
+    "published": "2026-08-17",
+    "uid": "dev_5ffbbe4b"
+  },
+  {
+    "title": "Show HN: Interactive TSP solver with step-by-step algorithm explanation",
+    "content": "# Comments: 0",
+    "quote": "旅行商问题可视化教学，算法题从此有了动画片。",
+    "source": "HN Show HN",
+    "url": "https://tsp.uncledroid.app",
+    "published": "2026-08-17",
+    "uid": "dev_9c27f563"
+  }
+]
