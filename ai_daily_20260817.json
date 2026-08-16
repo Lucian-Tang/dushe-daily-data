@@ -1,0 +1,209 @@
+[
+  {
+    "title": "AI 额度倒卖经济兴起：token 经纪人已成产业链",
+    "content": "HN 热帖聚焦 AI 信用额度（credit）倒卖生意：有人靠转卖订阅额度、代充代购赚差价，甚至有专门的 token 经纪人撮合买卖双方。文章拆解了这门灰色生意的运作方式、价差来源，以及平台方封禁与风控的猫鼠游戏，评论区吵翻：有人觉得是薅羊毛合理套利，有人担心账号安全和法律风险。",
+    "quote": "AI 额度倒卖都形成产业链了——建议 OpenAI 直接开个官方闲鱼。",
+    "source": "Vectoral Blog (HN 101分)",
+    "url": "https://vectoral.com/blog/who-are-the-token-brokers",
+    "published": "2026-08-17",
+    "uid": "ai_e33aa8f1"
+  },
+  {
+    "title": "Show HN：一个所有用户共享记忆的公共 AI",
+    "content": "独立开发者发布了一个'公共 AI'：所有用户共享同一份记忆，你问过的问题、得到的回答，下一个人都能看到并接着聊。作者称这是对'AI 记忆孤岛'的反叛——与其每人一个私密人格，不如让 AI 成为社区公共大脑。HN 评论区两极分化：有人觉得是绝妙的社会实验，有人担心隐私和记忆污染。",
+    "quote": "共享记忆的公共 AI——上一个这么干的叫'群聊记录'，后来都成了社死现场。",
+    "source": "Wildstatic (HN 36分)",
+    "url": "https://wildstatic.com/",
+    "published": "2026-08-17",
+    "uid": "ai_dfb9f191"
+  },
+  {
+    "title": "AI 编程去玄学：不靠 vibe 靠流程的硬核实践",
+    "content": "Peter Bloem 长文探讨如何让 AI 编程从'玄学'变成工程：不要凭感觉给模型喂 prompt，而是建立可复现的流程——明确规格、小步验证、强制回归测试、把 AI 输出当外包代码来审。文章用实际案例说明，'vibe coding' 的翻车大多不是模型笨，而是流程缺失，主张用工程纪律驯服模型的不确定性。",
+    "quote": "AI 编程去玄学？建议先把'它居然能跑'这句话从代码评审里删掉。",
+    "source": "Peter Bloem's Blog (HN 34分)",
+    "url": "https://peterbloem.nl/blog/craft-coding",
+    "published": "2026-08-17",
+    "uid": "ai_3560bcde"
+  },
+  {
+    "title": "AI 辅助移植 25 万行气象模拟代码到 GPU",
+    "content": "ArXiv 新论文展示 AI 辅助移植的实战：一套 25 万行的遗留气象模拟代码，在 AI 协助下完成 GPU 移植，并给出性能与正确性验证方法。研究团队强调这不是全自动魔法——AI 负责生成候选移植方案，人类负责审查边界条件和数值精度，最终在保持科学计算可靠性的前提下大幅提速。",
+    "quote": "25 万行气象代码 AI 帮忙搬上 GPU——比某些人类外包团队靠谱多了。",
+    "source": "ArXiv (HN 45分)",
+    "url": "https://arxiv.org/abs/2608.13122",
+    "published": "2026-08-17",
+    "uid": "ai_2ecf759d"
+  },
+  {
+    "title": "数学家集体破防：AI 的数学突破快到看不懂了",
+    "content": "Telegraph 报道：AI 在数学领域接连取得'令人瞠目'的突破，速度远超数学家预期，部分成果甚至让专业人士难以在短时间内消化验证。报道采访的多位数学家心情复杂——既惊叹于 AI 的推导能力，又担忧人类对数学的理解正在被甩开，'我们还没搞懂它怎么做到的'成为普遍焦虑。",
+    "quote": "数学家：AI 证明太快了，我们连验算都赶不上——建议 AI 放慢点等等人类。",
+    "source": "The Telegraph (HN 9分)",
+    "url": "https://www.telegraph.co.uk/business/2026/08/16/mathematicians-despair-as-ai-achieves-jaw-dropping-breakthroughs/",
+    "published": "2026-08-17",
+    "uid": "ai_cf06931a"
+  },
+  {
+    "title": "把 Kimi K3 塞进 Claude Code：跨模型混搭实战",
+    "content": "开发者分享在 Claude Code 中接入 Kimi K3 的实测：通过配置切换底层模型，让 Anthropic 的编码工作流跑月之暗面的开源模型。文章对比了两者在代码生成、长上下文、工具调用上的表现差异，结论是'组合拳'可行——不同任务用不同模型的性价比更高，也顺带吐槽了各家 API 兼容层的坑。",
+    "quote": "Claude 的壳，Kimi 的心——AI 界也开始流行'混血儿'了。",
+    "source": "Philipp Dubach (HN 6分)",
+    "url": "https://philippdubach.com/posts/kimi-k3-inside-claude-code/",
+    "published": "2026-08-17",
+    "uid": "ai_bd2e48fe"
+  },
+  {
+    "title": "50 个开源项目教会我们的：AI 时代的代码安全",
+    "content": "GitHub Blog 复盘了 50 个开源项目的安全实践，聚焦 AI 时代的新威胁面：AI 生成的代码贡献激增、供应链依赖爆炸、以及针对模型与 Agent 的新型攻击。文章给出可落地的建议——强制签名、依赖审计自动化、对 AI 贡献设立人工审查门槛，并警告'AI 写代码的速度，正让安全债以同样速度累积'。",
+    "quote": "AI 写代码快，安全债长得更快——建议开源项目先给 AI 贡献者办个安检。",
+    "source": "GitHub Blog",
+    "url": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/",
+    "published": "2026-08-17",
+    "uid": "ai_a55ba710"
+  },
+  {
+    "title": "V2EX 热帖：如何无缝丝滑切换 Codex 和 DeepSeek",
+    "content": "V2EX 程序员发帖分享 Codex 与 DeepSeek 双模型切换方案：通过统一配置层和上下文导出，让同一个项目在两家模型间无缝流转，按任务难度和成本动态选择——重活交给 Codex，日常补全用 DeepSeek 省钱。帖子引发热议，有人晒出自己的混用账单，也有人质疑切换成本是否真的低于直接用最强模型。",
+    "quote": "Codex 干重活、DeepSeek 打杂——模型界也讲究'男女搭配，干活不累'。",
+    "source": "V2EX (21回复)",
+    "url": "https://www.v2ex.com/t/1234734",
+    "published": "2026-08-17",
+    "uid": "ai_80d24f53"
+  },
+  {
+    "title": "V2EX：装 DSH 插件发现疑似后门，连夜手搓两个替代品",
+    "content": "V2EX 用户爆料：在安装某个 DeepSeek Harness（DSH）插件时发现疑似后门行为——插件会向不明地址上报环境信息。该用户连夜手搓了两个自用插件并开源，呼吁大家检查已装插件的网络请求。帖子炸出一堆'我也发现了'的跟帖，DSH 插件生态的审核漏洞成为当晚程序员圈热议话题。",
+    "quote": "插件装多了总能碰到'带薪卧底'——建议 DSH 官方先把插件商店的安检做了。",
+    "source": "V2EX (2回复)",
+    "url": "https://www.v2ex.com/t/1234812",
+    "published": "2026-08-17",
+    "uid": "ai_fb91fd73"
+  },
+  {
+    "title": "Show HN：给 AI Agent 装'执行前保险栓'，拦下危险命令",
+    "content": "开源项目 agent-guard 给 AI Agent 增加一道执行前检查：在命令真正落地前拦截评估，阻止 Agent 运行 rm -rf、批量删库、向外部发敏感数据等破坏性操作。作者称灵感来自'Agent 闯祸新闻合集'，实现上支持规则引擎加白名单，轻量可嵌入现有 Agent 框架，HN 评论区开始讨论该由谁来定义'危险'。",
+    "quote": "给 Agent 装保险栓是好事，但谁来定义'危险'？建议先给 Agent 上个交规考试。",
+    "source": "GitHub (HN 5分)",
+    "url": "https://github.com/vandith1/agent-guard",
+    "published": "2026-08-17",
+    "uid": "ai_6069479f"
+  },
+  {
+    "title": "Ask HN：AI 辅助写代码的时代，人类 Code Review 用什么工具？",
+    "content": "HN 发起讨论：当代码越来越多人机协作产出，人类审查者该用什么工具和方法守住质量线？有人推荐强制 diff 逐行审、有人用语义 diff 工具聚焦逻辑变更、有人靠自动化测试兜底再加人工抽查，还有人提出'审 AI 代码要审意图而非语法'。评论区共识：Review 的价值从'找语法错'转向'判断 AI 有没有理解需求'。",
+    "quote": "AI 写代码、人类审意图——建议把 Code Review 改名叫'需求对齐会'。",
+    "source": "Hacker News Ask HN",
+    "url": "https://news.ycombinator.com/item?id=49321400",
+    "published": "2026-08-17",
+    "uid": "ai_b653e534"
+  },
+  {
+    "title": "Qwen 3.8 27B 发布：1399 分登顶 HN，开源模型的又一张王牌",
+    "content": "阿里 Qwen 团队发布 Qwen3.8-27B-FP8（HN 1399 分 782 评）：27B 规模、FP8 量化，直接冲击「小模型干大活」的性价比天花板。评论区在吵它到底能不能平替闭源旗舰——共识是：这个体量能跑在消费级显卡上，微调成本低，部署门槛几乎消失。开源模型的迭代速度已经快到让「闭源护城河」叙事越来越站不住脚，下一个被低价卷死的，可能就是 API 定价。",
+    "quote": "27B 的模型 1399 分的热度——开源社区用脚投票：便宜大碗才是王道。",
+    "source": "Hugging Face",
+    "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
+    "published": "2026-08-17",
+    "uid": "ai_3913f732"
+  },
+  {
+    "title": "用 Codex 做自动研究：把内核提速 232 倍的全过程",
+    "content": "开发者 sankalp 的博客登 HN（434 分 90 评）：分享用 Codex 做「自动研究」的完整工作流——让 Agent 自己读源码、提假设、写 benchmark、迭代优化，最终把自己的内核代码提速 232 倍。作者强调关键不是让 AI 写代码，而是设计一套「让 AI 自己发现问题、自己验证」的研究循环。评论区一致认为：这已经不只是 Copilot 式的辅助，而是「AI 研究员」的雏形——人的角色正在从写代码变成设计实验。",
+    "quote": "232 倍提速背后：AI 当研究员，人类当导师——角色反转已经开始了。",
+    "source": "sankalp.bearblog.dev",
+    "url": "https://sankalp.bearblog.dev/autoresearch/",
+    "published": "2026-08-17",
+    "uid": "ai_8fbeac28"
+  },
+  {
+    "title": "如果 LLM 只见过五年级以下的语料，会发生什么？",
+    "content": "有趣的 AI 实验登 HN（224 分 192 评）：研究者训练了一个只接触小学五年级及以下水平语料的 LLM，观察它的能力边界。结果既在意料之中又出乎意料——它依然能流畅对话、完成简单推理，但复杂抽象概念明显缺失，且「自信地胡说」的毛病一点没少。这个实验的深层价值在于：模型能力的上限，可能不取决于参数量，而取决于训练数据的「认知层级」。数据质量叙事，又多了一个实证。",
+    "quote": "喂五年级语料，模型就停在五年级——AI 的智商，果然是数据喂出来的。",
+    "source": "littlelearner-ll.github.io",
+    "url": "https://littlelearner-ll.github.io/",
+    "published": "2026-08-17",
+    "uid": "ai_149c402f"
+  },
+  {
+    "title": "AI 制药十年：Science 长文复盘「进展与泡沫」",
+    "content": "Science 杂志博客长文登 HN（171 分 85 评）：冷静复盘 AI 药物发现的真实进展——哪些环节真的被 AI 提速了（靶点发现、分子生成），哪些还在讲故事（临床试验成功率）。文章直指要害：AI 设计的分子进入临床的比例依然极低，资本市场却已按「颠覆行业」定价。AI 制药不是没有价值，而是价值兑现周期被严重高估。给所有「AI + 传统行业」的叙事提了个醒：demo 很性感，三期临床很残酷。",
+    "quote": "AI 制药的真相：分子生成很快，临床验证很慢——泡沫和进展并存。",
+    "source": "Science",
+    "url": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
+    "published": "2026-08-17",
+    "uid": "ai_ace23eef"
+  },
+  {
+    "title": "Kimi Work 新特性：反馈报告直接附带 Agent 原始会话记录",
+    "content": "HN 热帖（18 分）：Kimi Work 在生成反馈报告时，会把 Agent 的原始会话记录一并附上——用户能看到 AI 每一步是怎么思考、怎么执行的，而不是只拿到一个加工过的结论。这背后是「可追溯 AI」的产品化尝试：当 Agent 开始替你干活，透明度和审计能力就成了信任的前提。评论区普遍看好这个方向——如果每家 Agent 产品都能交出「原始录像」，黑箱焦虑会少一大半。",
+    "quote": "Agent 干活开始交「原始录像」了——黑箱叙事，正在被产品化拆穿。",
+    "source": "Hacker News",
+    "url": "https://news.ycombinator.com/item?id=49313711",
+    "published": "2026-08-17",
+    "uid": "ai_7eee0ae2"
+  },
+  {
+    "title": "Show HN：用 Grafana 给 Hermes Agent 做可观测性",
+    "content": "Show HN 项目（23 分）：把 Grafana 的 Agent 可观测性能力接进 Hermes Agent——每一步工具调用、token 消耗、延迟、错误率全部可视化，Agent 跑起来不再是个黑盒。作者踩过的坑很有代表性：Agent 的日志和传统服务完全不是一个量级，一次任务可能产生几百次工具调用，没有好的观测面板根本没法 debug。Agent 工程化的下一站，就是可观测性基建——写 Agent 的人迟早都要补这一课。",
+    "quote": "Agent 调试靠 print？该上 Grafana 了——可观测性是 Agent 工程的成人礼。",
+    "source": "GitHub",
+    "url": "https://github.com/alexander-akhmetov/grafana-agento11y-hermes",
+    "published": "2026-08-17",
+    "uid": "ai_86dcccad"
+  },
+  {
+    "title": "Show HN：PyScrappy——自愈式爬虫选择器 + MCP Server",
+    "content": "Show HN 项目（13 分）：PyScrappy 主打「自愈」——网页结构一变，选择器自动重新定位，不用天天修爬虫；还内置 MCP Server，可以直接当 Agent 的联网抓手用。爬虫是 Agent 最容易翻车的一环：目标站点改个 class 名，整个流程就断了。把「反脆弱」做进选择器层，比让 Agent 在 prompt 里猜靠谱得多。网页即 API 的时代，爬虫工程化才刚刚开始。",
+    "quote": "爬虫选择器会自愈，Agent 才敢说联网稳——网页改版，从此不再是事故。",
+    "source": "GitHub",
+    "url": "https://github.com/mldsveda/PyScrappy",
+    "published": "2026-08-17",
+    "uid": "ai_ad4e2412"
+  },
+  {
+    "title": "V2EX 热议：各位 Pi 选手转 dsh 了吗？",
+    "content": "V2EX AI Agent 版热帖（31 回复）：楼主问大家从 Pi 迁移到 dsh 的体验——评论区两极分化：一派说 dsh 的上下文管理和工具调用更顺手，另一派吐槽迁移成本和生态差距。有意思的是，这场讨论折射出 Agent 开发平台的格局变化：新一代 Agent 框架正在用「更细的权限控制 + 更透明的执行日志」抢老玩家的地盘。工具链的迁移潮，往往就是行业洗牌的前兆。",
+    "quote": "Pi 转 dsh 的投票现场：迁移潮一起，Agent 平台的洗牌就不远了。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1234716",
+    "published": "2026-08-17",
+    "uid": "ai_641e04b3"
+  },
+  {
+    "title": "V2EX 分享创造：搓了个 typeless 平替，号称最强",
+    "content": "V2EX 热帖（17 回复）：开发者自研 typeless 的平替产品并直接喊话「可能是最强平替」——评论区没惯着，当场开测：功能覆盖度、响应速度、定价逐项对比，气氛组和挑刺组五五开。这类「平替挑战」在 AI 工具圈越来越常见：官方定价太高，社区就自己动手。对闭源 SaaS 来说这是最直接的威胁——你的产品体验，可能正被开源社区连夜复刻。",
+    "quote": "官方定价太高？社区直接搓平替——闭源 SaaS 的护城河，正在被连夜填平。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1234772",
+    "published": "2026-08-17",
+    "uid": "ai_2834d3fb"
+  },
+  {
+    "title": "V2EX 调查：2026 年了，大家现在都用什么 Coding Agent？",
+    "content": "V2EX 程序员版热帖（10 回复）：楼主发起 Coding Agent 使用调查——评论区成了各家产品的小型口碑现场：有人站 Claude Code 的代码质量，有人夸 Codex 的自动研究能力，也有人还在用 Copilot 图个省心，还有一波人坚持「Agent 写的代码不敢直接上线」。共识是：Coding Agent 已经从「玩具」变成「日常」，但离「全自动交付」还差一个可靠的验收环节。工具选型焦虑，本质是对 Agent 能力边界的不确定。",
+    "quote": "Coding Agent 大调查：人人都在用，没人敢全信——验收环节才是真正的战场。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1234794",
+    "published": "2026-08-17",
+    "uid": "ai_abf2f214"
+  },
+  {
+    "title": "V2EX 爆料：Opencode 的 v4flash 额度缩水 88%，双倍活动也停了",
+    "content": "V2EX 程序员版热帖（4 回复）：有用户发现 Opencode 的 v4flash 额度缩水 88%，双倍赠送也一并结束——评论区一片「果然如此」：免费/低价额度向来是拉新钩子，用户量起来之后收缩是常规操作。这事对 AI 开发者的启示很直接：把核心工作流绑死在某个模型的补贴额度上，等于把命门交给别人。模型供应商的补贴周期，比想象中短得多。",
+    "quote": "额度缩水 88%——白嫖的模型补贴，说没就没。别把工作流绑在别人的促销上。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1234822",
+    "published": "2026-08-17",
+    "uid": "ai_41b8622b"
+  },
+  {
+    "title": "V2EX 站长 Livid 晒自用 Harness 环境：AI 开发工作台长这样",
+    "content": "V2EX 创始人 Livid 在 Wunder 板块晒出自己的自用 Harness 环境（5 回复）：从模型配置到工具链编排，展示了个人 AI 开发工作台的真实形态——不是花哨的 IDE，而是围绕 Agent 流程定制的一套轻量环境。评论区关注点集中在 Harness 的工程化细节：上下文怎么管理、工具权限怎么收敛、长任务怎么恢复。个人开发者都在打磨自己的 Harness，说明 AI 开发正在从「用工具」走向「造工具链」。",
+    "quote": "站长亲自晒 Harness——AI 开发的下半场，比的是谁的工作台更顺手。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1234718",
+    "published": "2026-08-17",
+    "uid": "ai_bc8917f1"
+  }
+]
