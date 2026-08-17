@@ -1,0 +1,92 @@
+[
+  {
+    "title": "GPT-5.6 Sol 成 OpenAI 迄今最强视觉模型，检测分数暴涨",
+    "content": "OpenAI 上周发布 GPT-5.6 系列 Sol、Terra、Luna 三款模型，主打计算机使用与 UI 智能体。Roboflow 自研 VLM 基准测试显示，Sol 物体检测 mAP@50 从 GPT-5.5 的 13.8 飙升至 46.2，计数准确率达 73%，是 OpenAI 迄今最强视觉模型，Terra 和 Luna 也有明显进步。但 Sol 在 2000x2000 像素以上大图配合低推理强度时稳定性下降，需先裁剪缩放图片才能发挥实力。",
+    "quote": "检测分数翻三倍，OpenAI 的眼睛终于睁开了。",
+    "url": "https://blog.roboflow.com/openai-gpt-5-6/",
+    "source": "Roboflow",
+    "published": "2026-08-17",
+    "uid": "a74305051bcf0013a58d3c3c1ae6dfb9"
+  },
+  {
+    "title": "Qwen 3.8 27B：能力很强但默认疯狂「过度思考」",
+    "content": "阿里 Qwen 实验室发布 Apache 2.0 协议的 Qwen 3.8 27B 视觉大模型，27B 参数量级可在配置不错的笔记本上本地运行，官方自测基准超越前代 3.6 27B 和闭源的 3.7-Plus。但 Simon Willison 实测发现其默认推理强度为 xhigh：画一个圆都要先写长篇思考，生成一张 SVG 耗时 21 分钟、消耗 2.2 万推理 token；把 reasoning 关掉后仅需 137 秒。默认值对消费级硬件极不友好。",
+    "quote": "画个圆思考两万字，开源模型的「戏精」属性拉满。",
+    "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+    "source": "Simon Willison",
+    "published": "2026-08-16",
+    "uid": "41e8b7f522327798d17628217e04c5e6"
+  },
+  {
+    "title": "Launch HN：Speko（YC S26）要做语音界的 OpenRouter",
+    "content": "YC S26 批次项目 Speko 在 Hacker News 上正式发布，定位「语音模型路由器」：一个 API Key、一个 Base URL，统一路由各家 STT、TTS、LLM 供应商（OpenAI、Deepgram、ElevenLabs、阿里 Qwen3-ASR 等 20+ 家），并基于实测 WER 和价格数据按语言、任务自动推荐最优模型，而非厂商自夸的榜单。兼容 OpenAI API 协议和 LiveKit Agents，开发者无需改框架即可接入。",
+    "quote": "语音模型黄牛中转站，一个 key 通吃全场，真·中间商赚差价。",
+    "url": "https://speko.ai/",
+    "source": "Hacker News",
+    "published": "2026-08-17",
+    "uid": "4d4969e345525001ffcaa400683dc128"
+  },
+  {
+    "title": "AI 挖坑 AI 填：Wiz 红队攻破 Snowflake 内部 Jira",
+    "content": "Wiz Research 的 AI 安全红队程序「Red Agent」在 Snowflake 公开仓库中发现一个 GitHub Actions 脚本注入漏洞：未认证用户只需构造一个恶意 issue 标题即可在 runner 上执行任意命令。讽刺的是，该漏洞正是五天前一个由 Copilot Autofix「AI 修复」生成的提交引入的——它删掉了原有的安全过滤逻辑。Red Agent 还自主分析报错、调整 payload，成功窃取 Jira 凭据。Snowflake 当天完成修复。",
+    "quote": "AI 写的修复补丁亲手挖坑，红队 AI 反手把坑填成漏洞。",
+    "url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+    "source": "Wiz",
+    "published": "2026-08-17",
+    "uid": "f1fbe978df5209186383dbdd075fddeb"
+  },
+  {
+    "title": "Meta 发布开源模型 Glimmer，扎克伯格喊话「AI 人人可用」",
+    "content": "Meta 本周发布 Glimmer，一款可下载到自有硬件本地运行的开源权重模型，与留在自家 API 后面、更强的 Muse Spark 形成鲜明对比。扎克伯格同时发布公开信，主张 AI 应该「为每个人服务」，而不是被少数实验室垄断控制。TechCrunch 评论指出，愿景虽好但附带星号：开源的是较弱的模型，最强的能力依旧攥在 Meta 自己手里，开放程度仍需打问号。",
+    "quote": "嘴上说人人可用，手里攥着更强的模型，开源个寂寞。",
+    "url": "https://techcrunch.com/video/does-mark-zuckerberg-really-believe-ai-is-for-everyone/",
+    "source": "TechCrunch",
+    "published": "2026-08-14",
+    "uid": "ba69402350457fc72fe3bec431e8f514"
+  },
+  {
+    "title": "DuckDB 2.0 预览：嵌入式数据库要当服务器了",
+    "content": "DuckDB 官方发布 v2.0「Cyanoptera」预览，预计今年秋季正式发布。最大变化是从嵌入式数据库走向服务器模式：新增 quack 扩展实现原生远程协议，配合新的 CONNECT 语句，任何 DuckDB 进程都能通过网络对外提供数据库服务。此外还带来触发器、VARIANT 类型、异步 I/O、全新 SQL 解析器和存储格式。自 v1.5 以来已积累超过一万次提交，官方称之为「DuckDB 作为服务器的一年」。",
+    "quote": "嵌入式小 Duck 终于长翅膀，飞向服务器当白天鹅。",
+    "url": "https://duckdb.org/2026/08/17/duckdb-20-highlights",
+    "source": "DuckDB",
+    "published": "2026-08-17",
+    "uid": "3b2c9c56a42ffba57485156492ff14cf"
+  },
+  {
+    "title": "GitHub 突发大面积故障，开发者集体讨论平台迁移",
+    "content": "GitHub.com 于北京时间 8 月 17 日晚发生大规模事故，影响范围广泛，Hacker News 上相关讨论帖迅速聚集 700 多条评论，GitHub 状态页确认问题并持续更新修复进展。事故同时点燃了开发者对平台依赖的担忧，同时间「Ask HN：GitHub 的备选方案」帖子获得 294 分、181 条评论，从 GitLab、Gitea 到 Forgejo 等自托管方案被反复讨论，单点依赖风险再次成为社区焦点。",
+    "quote": "全球程序员集体摸鱼，顺手开了场「替代品」研讨会。",
+    "url": "https://www.githubstatus.com/incidents/zkxwbgr0cnmx",
+    "source": "Hacker News",
+    "published": "2026-08-17",
+    "uid": "d43d1a21f963f97f43e79c635311056a"
+  },
+  {
+    "title": "德国反垄断机构：苹果 ATT 对自家应用区别对待",
+    "content": "德国联邦卡特尔局（Bundeskartellamt）发布调查结论，指控苹果的 App 跟踪透明度（ATT）框架在实施中对自家应用明显更优待，对第三方开发者则更为严苛。ATT 自推出以来一直被指名为保护隐私、实为限制竞争对手广告追踪能力，此次德国监管机构的官方认定让该指控首次获得反垄断层面的背书，苹果在欧洲的隐私政策合规压力进一步加大。",
+    "quote": "查自家 app 就双标，反垄断铁拳虽迟但到。",
+    "url": "https://www.bundeskartellamt.de/SharedDocs/Meldung/EN/Pressemitteilungen/2026/08_17_2026_Apple_ATTF.html",
+    "source": "Bundeskartellamt",
+    "published": "2026-08-17",
+    "uid": "f0445127cc3b51351504243ab16a40d3"
+  },
+  {
+    "title": "Anthropic 水印与开源争议发酵：Daring Fireball 开炮",
+    "content": "Anthropic 本周详解 Claude 文本水印机制后，争议持续升温。知名科技博主 John Gruber 在 Daring Fireball 发文，痛斥文本水印是对写作的「亵渎」，该文在 Hacker News 获得 671 分、578 条评论的激烈讨论；另一边「Anthropic 对开源 AI 开战」的批评帖也获 64 分。水印合规与开源立场的双重争议，让这家以安全自居的 AI 公司陷入舆论夹击。",
+    "quote": "给文字纹身还嫌不够，开源社区直接开骂，安全人设碎一地。",
+    "url": "https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing",
+    "source": "Daring Fireball",
+    "published": "2026-08-17",
+    "uid": "57602282cb57aaace6807b65947e0ffe"
+  },
+  {
+    "title": "反 AI 指南走红：教普通用户关掉 Copilot 和 Siri",
+    "content": "图书馆员兼博主 Jessamyn West 发布一份《禁用或避开侵入式 AI》实用指南，教普通用户在 Windows、macOS、Chrome 等平台关闭 Copilot、Siri、搜索 AI 摘要等默认开启的 AI 功能，文章在 Hacker News 获得 131 分、55 条评论。指南走红侧面印证了 AI 功能「默认开启、难以关闭」已成普遍痛点，也引发关于产品设计是否该给用户更多选择权的讨论。",
+    "quote": "教人躲 AI 的攻略都火了，说明 AI 已经烦人到什么程度。",
+    "url": "https://www.librarian.net/notoai/",
+    "source": "Hacker News",
+    "published": "2026-08-17",
+    "uid": "8d10d5c57df02a3232af1c8aff7fa330"
+  }
+]
