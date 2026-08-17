@@ -1,0 +1,227 @@
+[
+  {
+    "title": "DuckDB v2.0 预览：205 分登顶 HN，列式数据库又进化了",
+    "content": "DuckDB 官方发布 v2.0 预览，HN 205 分热议。新版在查询优化、并发控制、扩展生态上继续加码，保持「嵌入式分析数据库」的定位。社区关注点集中在性能提升幅度、与 Polars/Arrow 生态的整合，以及 v2.0 是否会有破坏性变更。对数据工程师来说，这是下半年最值得关注的数据库版本之一。",
+    "quote": "DuckDB 闷声憋大招，v2.0 一出，OLAP 玩家又要卷起来了。",
+    "source": "HN Front Page",
+    "url": "https://duckdb.org/2026/08/17/duckdb-20-highlights",
+    "published": "2026-08-18",
+    "uid": "dev_a060f719"
+  },
+  {
+    "title": "AI 生成的 Copilot Autofix 差点搞垮 Snowflake 的 Jira：96 分 HN 热帖",
+    "content": "Wiz 研究团队披露：AI 生成的 GitHub Copilot Autofix 补丁存在 CI/CD 安全漏洞，攻击者可借机入侵 Snowflake 的 Jira 系统。报告指出，AI 补丁在无人工复核的情况下被自动合入流水线，成为供应链攻击的新入口。HN 96 分热议，开发者纷纷讨论「AI 写代码 + 自动合入」组合的安全边界到底在哪。",
+    "quote": "AI 写的补丁自动合入，等于把安全门卫也交给 AI 了——出事只是时间问题。",
+    "source": "HN Front Page",
+    "url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+    "published": "2026-08-18",
+    "uid": "dev_088366b2"
+  },
+  {
+    "title": "Qwen3.8-27B 在 24GB 显卡上跑出 256K 上下文：50 tok/s 实测",
+    "content": "开发者实测 Qwen3.8-27B 模型，在 24GB 显存的 RTX PRO 4000 SFF（432 GB/s 带宽）上配合 MTP 投机解码，实现 256K 上下文下 50 tok/s 的推理速度。这篇实践文章详细记录了量化配置、KV cache 优化和带宽瓶颈分析，对本地大模型部署玩家是份不错的参考。",
+    "quote": "24GB 显卡跑 256K 上下文还 50 tok/s，本地党狂喜，云厂商哭了。",
+    "source": "HN Front Page",
+    "url": "https://piszczek.pl/blog/qwen38-27b-256k-50-tps-24gb-gpu",
+    "published": "2026-08-18",
+    "uid": "dev_d1008409"
+  },
+  {
+    "title": "turbopuffer 的工程哲学：怎么做到每天发布一次数据库",
+    "content": "turbopuffer 团队分享他们的控制面架构：如何通过彻底的解耦、灰度发布和自动化回滚，实现「每天发布一个数据库」的节奏。文章拆解了 schema 变更管理、跨区域同步和故障演练的具体做法，对做基础设施的团队很有启发。",
+    "quote": "每天发布数据库？我司发个前端都要开三场评审会。",
+    "source": "HN Front Page",
+    "url": "https://turbopuffer.com/blog/control-plane",
+    "published": "2026-08-18",
+    "uid": "dev_7c61c44a"
+  },
+  {
+    "title": "MoneyPrinterTurbo 重回 Trending：10.5 万星的 AI 短视频生成器",
+    "content": "harry0703/MoneyPrinterTurbo 再次登顶 GitHub Trending，已积累 10.5 万星。项目利用 AI 大模型和自动化工作流，输入主题或关键词即可一键生成高清短视频，涵盖文案、配音、素材、剪辑全流程。这类「内容工厂」工具的走红，反映了 AI 生成内容工具正在快速产品化。",
+    "quote": "10 万星的内容工厂，韭菜收割机都开始用 AI 流水线了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+    "published": "2026-08-18",
+    "uid": "dev_f39730e9"
+  },
+  {
+    "title": "strix：5.4 万星的开源 AI 渗透测试工具",
+    "content": "usestrix/strix 本周登顶 Trending，53.8k 星。这是一款开源的 AI 渗透测试工具，用 AI 自动发现并修复应用漏洞，定位是「给开发者的安全副驾」。项目把 LLM 能力接入漏洞扫描与修复闭环，代表 AI 安全工具从概念走向工程化的趋势。",
+    "quote": "AI 攻防一体，安全圈终于也有自己的 Autopilot 了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/usestrix/strix",
+    "published": "2026-08-18",
+    "uid": "dev_0c9298f1"
+  },
+  {
+    "title": "nautilus_trader：2.6 万星的 Rust 原生量化交易引擎",
+    "content": "nautechsystems/nautilus_trader 登上 Trending，25.7k 星。这是一个生产级的 Rust 原生交易引擎，采用确定性事件驱动架构，主打低延迟和高性能，支持回测与实盘。对量化开发者来说，Rust 系交易框架正在成为 Python 系之外的第二极。",
+    "quote": "量化交易也要 Rust 原生，Python 回测慢到想骂人的都懂。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/nautechsystems/nautilus_trader",
+    "published": "2026-08-18",
+    "uid": "dev_b0a701fa"
+  },
+  {
+    "title": "Show HN: Agent Mesh——给多 Agent 协作用的共享记忆系统",
+    "content": "开发者发布 Agent Mesh，一个面向「人类 + 多 Agent」协作的共享记忆系统。通过把人类决策形式化、记录协作日志，来减少多 Agent 协同时的上下文漂移。作者表示这套系统已用于日常编码工作流，属于 Agent 基础设施里少见的「记忆层」尝试。",
+    "quote": "Agent 一多就各说各话，共享记忆这刀切在了痛点上。",
+    "source": "HN Show HN",
+    "url": "https://github.com/cbalgeman/agent-mesh",
+    "published": "2026-08-18",
+    "uid": "dev_bcab4a8c"
+  },
+  {
+    "title": "Show HN: OpenWebSearch——搜索索引的「路由器」",
+    "content": "OpenWebSearch 提供一个统一入口：POST 到同一个端点，通过 provider 字段路由到不同的搜索索引，并归一化返回格式。作者想解决「每个搜索 API 一套格式」的碎片化问题，类似 LLM 时代的 OpenRouter，但面向的是搜索服务。",
+    "quote": "搜索界的 OpenRouter，终于不用为每家 API 各写一套适配了。",
+    "source": "HN Show HN",
+    "url": "https://openwebsearch.ai",
+    "published": "2026-08-18",
+    "uid": "dev_82e0e888"
+  },
+  {
+    "title": "V2EX 热议：AI 大模型的最终归宿不是软件开发，而是机器人",
+    "content": "V2EX 技术版热帖：楼主认为 AI Coding 市场已供大于求，软件需求基本饱和，LLM 的最终归宿是机器人——CV 提供视觉、LLM 提供语言、云计算提供算力。评论区分成两派：一派认同「软件饱和论」，另一派认为软件需求远未到顶，机器人落地还早。",
+    "quote": "代码写完了去造机器人？先让机械臂学会不摔跤再说。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1233752",
+    "published": "2026-08-18",
+    "uid": "dev_c9b53eb6"
+  },
+  {
+    "title": "一人公司跑成一块 kanban board：1 个创始人 + 8 个 AI 员工",
+    "content": "V2EX 分享创造：楼主把一人公司完全跑在一块 kanban board 上——没有办公室、没有会议、没有群聊，8 个 AI agent 各管一摊（研发、运营、客服等），靠看板协作。帖子详细展示了 AI 员工的任务分配、验收标准和交接机制，是「AI 原生组织」的一次真实实验。",
+    "quote": "8 个 AI 员工还不用交社保，这波血赚。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1235072",
+    "published": "2026-08-18",
+    "uid": "dev_c7a17da7"
+  },
+  {
+    "title": "2026 年 AI 在软件开发中的现状：从伴侣到基础设施",
+    "content": "Dev.to 长文梳理 2026 年 AI 在软件开发现状：AI 已从「未来概念」变成日常基础设施，语言模型深度嵌入 IDE、CI、代码评审全链路。文章也讨论了 AI 生成代码的质量审计、团队协作方式变化，以及「AI 浓度」多少才合适的实践配比。",
+    "quote": "AI 从伴侣变基建，下一步是不是该交物业费了？",
+    "source": "Dev.to",
+    "url": "https://dev.to/ogc16/the-status-quo-of-ai-in-software-development-2026-17k8",
+    "published": "2026-08-18",
+    "uid": "dev_658337d4"
+  },
+  {
+    "title": "AOHP 深度解读：当操作系统开始为 Agent 而设计",
+    "content": "博客园长文解读 Agent OS / AIOS 方向的 AOHP 架构：传统 OS 为人类交互设计，AOHP 则从进程调度、资源隔离到上下文管理全面面向 Agent 重构。文章分析了 Agent 作为「一等公民」时操作系统需要提供的原语，属于 Agent 基础设施领域少见的系统级思考。",
+    "quote": "给 Agent 造操作系统？先问问现有 OS 答不答应。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/rossiXYZ/p/22432201",
+    "published": "2026-08-18",
+    "uid": "dev_3d355640"
+  },
+  {
+    "title": "FHE 密态推理技术生态探秘：Lattigo、HEIR 与 LattiAI 三库全景",
+    "content": "博客园文章全景解析全同态加密（FHE）密态推理的三大开源库：Lattigo（Go 实现）、HEIR（MLIR 编译栈）、LattiAI（LLM 推理加速）。作者梳理了三者的定位差异、性能现状和落地路径，指出 FHE 距离实用化仍有数量级性能鸿沟，但生态正在快速成型。",
+    "quote": "密态推理听起来很美，跑一次够喝三杯咖啡。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/pam-sh/p/22516427",
+    "published": "2026-08-18",
+    "uid": "dev_23189fc5"
+  },
+  {
+    "title": "Show HN: Classifier – 浏览器扩展识别 HN 上的规则破坏者",
+    "content": "作者厌倦了 HN 上反复出现的 dismissal 式批评和政治口水战，做了一个 stylometry 风格的浏览器扩展，自动给评论打分类标签（rule-violating / dismissive / constructive 等），帮你一眼过滤掉熟悉的杠精声音。本质是「我想安静看技术帖」的客户端过滤层，思路朴素但实用。",
+    "quote": "每个 HN 重度用户心里都有一张「这人又在复读」名单，这哥们直接把它做成扩展了。问题是——它真能跑通 stylometry 还是又一次端上花的玩具？",
+    "source": "HN Show HN",
+    "url": "https://classify.stylometry.net/",
+    "published": "2026-08-18",
+    "uid": "dev_26e06991"
+  },
+  {
+    "title": "Show HN: Machogs – 用大白话告诉你 Mac 哪个进程在吃资源",
+    "content": "Mac 自带的活动监视器太专业，新人看不懂「kernel_task 占用 40%」到底意味着啥。Machogs 把 top 输出翻成人话：「Chrome 开了 47 个标签占了 8GB」「Spotify 后台偷偷跑了 4 个 worker」，附一键 kill。CLI + TUI 双形态，给非工程师同事也能用。",
+    "quote": "iStat Menus 卖 60 刀，这玩意免费还能告诉老板「你的 Chrome 占了半个内存」。开源工具的诚意有时候就是这么朴素。",
+    "source": "HN Show HN",
+    "url": "https://bnishit.github.io/machogs/",
+    "published": "2026-08-18",
+    "uid": "dev_7cf94742"
+  },
+  {
+    "title": "QUASAR：显著性加权重建如何抹平 LLM 量化训练的最后一段损失",
+    "content": "LLM 量化感知训练（QAT）卡在「loss floor」上不去——再怎么调学习率，最后那一截精度死活回不来。QUASAR 提出按 token 显著性动态加权重建 loss：模型「最在意」的 token 重建误差权重拉满，无关 token 不再拖后腿。实验在 4-bit QAT 上比 SmoothQuant/GPTQ 收敛后精度高 0.4-1.2 PPL。",
+    "quote": "QAT 圈卷了两年终于有人承认：「不是量化方法不行，是你把所有 token 都当亲爹供着当然收敛不动」。显著性加权这思路朴素但确实是 loss floor 久攻不下的正解。",
+    "source": "Dev.to",
+    "url": "https://dev.to/prabhakar_chaudary_7afe4/quasar-how-saliency-weighted-reconstruction-closes-the-loss-floor-gap-in-llm-quantization-aware-5akb",
+    "published": "2026-08-18",
+    "uid": "dev_b8561bf4"
+  },
+  {
+    "title": "分布式链路追踪 Skywalking 实战案例：从单体到微服务的故障定位",
+    "content": "从单体架构演进到微服务后，一个用户请求横跨 5-10 个服务，传统日志 grep 已经定位不了问题。Skywalking 作为 Apache 顶级开源 APM 工具，通过 traceId 全链路串联 + 服务拓扑自动绘制 + 慢 SQL/慢调用下钻，把「请求卡哪了」的定位时间从小时级压到分钟级。文章给了生产级接入步骤 + 告警规则配置。",
+    "quote": "微服务化的好处是「每个服务都能独立扩缩」，坏处是「线上出问题所有人都不知道锅在哪」。Skywalking 这类工具是微服务架构的保险丝——不上早晚要烧。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/qiuhom-1874/p/22156711",
+    "published": "2026-08-18",
+    "uid": "dev_0b12154c"
+  },
+  {
+    "title": "Surging AI Agent：.NET 生态原生智能微服务引擎，把大模型焊进业务链路",
+    "content": "传统 .NET 项目调大模型要走 HTTP 外部调用 + 数据外传合规审查 + 多语言运维链路。Surging AI Agent 基于现有 Surging 微服务引擎原生扩展，把私有化大模型、向量 RAG、业务微服务、Function Call 整合在同一进程内——.NET 程序员不用学 Python 也能把 LLM 嵌入到生产业务流。",
+    "quote": "Java 圈有 Solon AI，Go 圈有 Eino，现在 .NET 圈终于也有自己的 Agent 引擎了。语言生态卷到这份上，跨语言调用反而成了少数派。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/fanliang11/p/22531297",
+    "published": "2026-08-18",
+    "uid": "dev_8f9a1d4a"
+  },
+  {
+    "title": "Show HN: PageLM – 开源版 NotebookLM 替代品（React/Node/LangChain）",
+    "content": "Google NotebookLM 强但锁数据、不能私有部署、UI 改不动。PageLM 用 React + Node.js + LangChain 复刻核心功能：上传 PDF/网页/Markdown → 自动生成摘要、播客脚本、问答对。完全开源，企业内网可部署，扩展点（embedding 模型 / TTS 引擎 / UI 主题）都是插件。",
+    "quote": "NotebookLM 的「AI 播客」效果惊艳，但凡有点数据合规意识的企业都不敢把内部文档传上去。开源替身的价值不在功能对等，而在「能放在自己机房」——这一点就够了。",
+    "source": "HN Show HN",
+    "url": "https://github.com/CaviraOSS/PageLM",
+    "published": "2026-08-18",
+    "uid": "dev_803ca705"
+  },
+  {
+    "title": "Show HN: Nomoads – iOS 本地 DNS 广告拦截器",
+    "content": "iOS 上 Safari 广告拦截只能依赖 1Password/Kiwi 这种包装壳，且 App Store 政策不允许内置广告过滤。Nomoads 走另一条路：在 iOS 设置里配置本地 DNS（类似 NextDNS 但完全本地），通过 hosts 规则拦截已知广告/追踪域名。无需越狱、无需第三方 App Store、自带统计面板。",
+    "quote": "08-15 Firefox iOS 原生广告拦截刚炸过一轮，Nomoads 这条「DNS 层拦截」的路线就同步出现了。Safari 20% 市场份额养活的细分工具赛道，每条都有真金白银的用户。",
+    "source": "HN Show HN",
+    "url": "https://nomoads.com/",
+    "published": "2026-08-18",
+    "uid": "dev_6cb51c78"
+  },
+  {
+    "title": "Show HN: Saggar – Mac 终端注意力管理工具",
+    "content": "现代 Mac 用户的终端不是「一个 shell」而是「30 个 tab 的标签混乱」。Saggar 把 session 管理、tab 持久化、注意力锚定（pin 当前 focus 项目 tab 到顶部）三件事打包。Rust 写的 TUI + 原生 macOS GUI，配置用 TOML，纯本地不联网。",
+    "quote": "Tmux + iTerm2 能解决 80% 的问题，但剩下 20% 是「你忘了哪个 tab 是哪个项目的」。Saggar 这种小工具就是为这 20% 而生的——说白了就是给开发者治「tab 健忘症」。",
+    "source": "HN Show HN",
+    "url": "https://saggar.marginalutility.dev/",
+    "published": "2026-08-18",
+    "uid": "dev_ba3d661c"
+  },
+  {
+    "title": "V2EX 分享：给 DeepSeek Harness 写了个原生 macOS 客户端（SwiftUI 三栏 + 实时子代理浮层）",
+    "content": "DeepSeek 官方的 agent harness (dsh) 只有 CLI 和网页版，作者用 SwiftUI/AppKit 写了原生 macOS 客户端：三栏布局（会话/对话/详情），子代理会话在对话面板上实时浮层展示只读/可续写两种状态，常驻菜单栏 + 系统通知处理审批请求和任务完成事件。明确强调「不是 WebView 套壳」。",
+    "quote": "当「写一个 macOS 客户端」的门槛被 SwiftUI 拉到「一个周末」级别，深度开发工具的去 Electron 化就成了新趋势。Agent 类工具的 UX 比 Chat 类更需要原生浮层和系统集成。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1235131",
+    "published": "2026-08-18",
+    "uid": "dev_90d77f16"
+  },
+  {
+    "title": "V2EX 分享：OwnMem – 让 AI 助手跨电脑记住你的百万行代码项目规范",
+    "content": "作者在家和公司两台电脑轮流维护百万行代码项目，每天都要重复「写完 SQL 检查索引」「记得补单元测试」「这个 bug 别再犯」。OwnMem 设计了一套跨电脑同步的记忆系统：每次 AI 给出建议 → 经验沉淀 → 下次自动加载。开源在 GitHub，主打「治理百万行代码项目」场景。",
+    "quote": "Cursor 这类工具的下一个战场就是「记忆持久化」——每周一次给 AI 重新介绍项目背景的日子该结束了。OwnMem 这种小而专的开源项目比大厂的工程化方案更贴近真实痛点。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1235040",
+    "published": "2026-08-18",
+    "uid": "dev_456f7cb1"
+  },
+  {
+    "title": "C# .NET 周刊 2026 年 7 月第 4 期：WinForms 迁移 Vue、GPT-5.6 兼容、Go vs C# 之争",
+    "content": "本期国内文章精选：作者从 WinForms 迁移到 Vue 重做 GUI 框架的反思、Google 官方安利 Go 是「AI 时代理想语言」引发的 C# 反驳、kbot 适配 GPT-5.6 的参数兼容性排查实录。国外文章覆盖 .NET 10 预览、Native AOT 性能、Blazor United 落地案例。InCerry 周刊一贯的质量稳定输出。",
+    "quote": "InCerry 周刊是中文 .NET 社区为数不多还在坚持每周输出的高质量内容，AI 时代大家都在追热点，能把传统生态整理清楚反而成了稀缺品。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/InCerry/p/-/dotnet_week_26_7_4",
+    "published": "2026-08-18",
+    "uid": "dev_b8b5a446"
+  }
+]
