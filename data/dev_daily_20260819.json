@@ -1,0 +1,191 @@
+[
+  {
+    "title": "Show HN: Shoehorn——把任意大模型量化到本地能跑",
+    "content": "开发者发布 Shoehorn：一个开箱即用的模型量化工具，支持 Mac/Linux/Windows，内置 GUI 帮你找模型、量化、部署一条龙。核心卖点是「任何模型都能压到你的机器上跑」，目前已在多款模型上验证可用。对本地大模型玩家来说，这是把量化门槛再降一档的实用工具。",
+    "quote": "量化工具都带 GUI 了，本地跑大模型的门槛从「炼丹师」降到了「装机工」。",
+    "source": "HN Front Page",
+    "url": "https://notactuallytreyanastasio.github.io/shoehorn/",
+    "published": "2026-08-19",
+    "uid": "dev_bcb60b35"
+  },
+  {
+    "title": "Python Polars 速查表：O'Reilly 新书配套出炉",
+    "content": "Polars 官方（Posit）发布基于 O'Reilly 新书的 Polars 速查表，覆盖 DataFrame 操作、表达式、groupby、join 等高频用法。Polars 作为 Pandas 的现代替代，这两年热度持续走高，这份速查表适合想从 Pandas 迁移或日常查 API 的开发者收藏。",
+    "quote": "Pandas 用户：先收藏，等哪天受不了内存爆了再学。",
+    "source": "HN Front Page",
+    "url": "https://opensource.posit.co/resources/cheatsheets/polars/",
+    "published": "2026-08-19",
+    "uid": "dev_3f616793"
+  },
+  {
+    "title": "Linux 7.3 显存耗尽不再卡死：VRAM 超卖优化实测 390 分热帖",
+    "content": "Linux 7.3 带来一组内核级改进：当显存（VRAM）耗尽时不再直接卡顿/挂起，而是通过内核层的内存管理优化保持桌面流畅。HN 390 分、155 条评论热议，开发者实测了 OOM 边缘场景下的表现，对跑本地大模型和 GPU 密集型任务的用户是实打实的体验提升。",
+    "quote": "显存不够以前是「卡成幻灯片」，现在是「优雅地慢」，这进步值得鼓掌。",
+    "source": "HN Front Page",
+    "url": "https://pixelcluster.dev/VRAM-Overcommit/",
+    "published": "2026-08-19",
+    "uid": "dev_dae3c173"
+  },
+  {
+    "title": "Claude 给一台只支持 Windows 的 HP 打印机写 macOS 驱动：107 分 HN 热帖",
+    "content": "开发者 @kuberwastaken 分享：用 Claude 给一台官方只支持 Windows 的冷门 HP 打印机逆向写了 macOS 驱动。107 分 HN 热议，评论区在讨论 AI 编程对硬件逆向的降维打击，以及「AI 写的驱动你敢装吗」的灵魂拷问。",
+    "quote": "以前这叫逆向工程，现在叫「让 Claude 加班」。",
+    "source": "HN Front Page",
+    "url": "https://twitter.com/kuberwastaken/status/2089377982536388964",
+    "published": "2026-08-19",
+    "uid": "dev_973d95b6"
+  },
+  {
+    "title": "Kent Beck 新文：可组合的测试（Composable Tests）",
+    "content": "Kent Beck 在 newsletter 中提出「可组合测试」理念：把测试拆成可复用、可组合的最小单元，像乐高一样拼装出不同场景的测试套件。文章延续了他一贯的简洁风格，对测试金字塔、测试粒度之争给出了新视角。HN 37 分，测试爱好者的精神食粮。",
+    "quote": "测试界的祖师爷又出手了，这次教你把测试当乐高玩。",
+    "source": "HN Front Page",
+    "url": "https://newsletter.kentbeck.com/p/composable-tests",
+    "published": "2026-08-19",
+    "uid": "dev_9e36065b"
+  },
+  {
+    "title": "修复一台变砖的 Framework 笔记本：20 件工具的硬核救援",
+    "content": "作者详细记录用 20 件工具修复一台 AMD 7040 系列 Framework 13 变砖笔记本的全过程，涉及 SPI 编程器、固件恢复、引脚飞线等硬核操作。HN 160 分、71 条评论，评论区在讨论 Framework 的可维修性设计到底给用户省了多少事。",
+    "quote": "笔记本维修界的天花板：别人换屏，他直接给主板做手术。",
+    "source": "HN Front Page",
+    "url": "https://quantum5.ca/2026/08/16/fixing-bricked-amd-7040-series-framework-13-laptop-with-20-tools/",
+    "published": "2026-08-19",
+    "uid": "dev_1811ec97"
+  },
+  {
+    "title": "munder-difflin：1.8k 星的本地多 Agent 编排框架",
+    "content": "chaitanyagiri/munder-difflin 登顶 GitHub Trending：一个 TypeScript 编写的本地多 Agent harness，主打轻量、本地优先，支持多个 AI Agent 在同一环境下协作编排。名字致敬《办公室》的 Dunder Mifflin，代码质量和文档都不错，适合想自己搭 Agent 工作流的开发者。",
+    "quote": "名字是致敬《办公室》，功能是给你办公室配一群 AI 员工。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/chaitanyagiri/munder-difflin",
+    "published": "2026-08-19",
+    "uid": "dev_c9785167"
+  },
+  {
+    "title": "OpenViking：火山引擎开源 2.9 万星的自进化上下文数据库",
+    "content": "volcengine/OpenViking 登顶 Trending（29.2k 星）：定位「面向 AI Agent 的自进化上下文数据库」，统一 Agent 记忆、知识 RAG 和技能管理。核心思路是让 Agent 的上下文随使用自动进化，而不是每次从零开始。Python 实现，火山引擎出品，是国产大厂开源 Agent 基建的又一力作。",
+    "quote": "火山引擎下场做 Agent 记忆了，这赛道越来越挤，也越来越好玩。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/volcengine/OpenViking",
+    "published": "2026-08-19",
+    "uid": "dev_1c324ccd"
+  },
+  {
+    "title": "OCR + LLM 实战：从录屏视频自动摘录 755 道题目",
+    "content": "V2EX 开发者分享用 OCR + LLM 解决实际问题的完整方案：从 Android 录屏视频中自动识别题目、选项并输出结构化 Docx 文档，共处理 755 道题，还要处理公式、广告干扰、动画滑动等噪声。文章拆解了「OCR + 结构化提取」的 pipeline 思路和踩坑点，是 LLM 落地文档自动化的好案例。",
+    "quote": "755 道题自动摘录，学生党看了沉默，教辅机构看了流泪。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1138963",
+    "published": "2026-08-19",
+    "uid": "dev_c94d94e2"
+  },
+  {
+    "title": "ai-quota：一条命令查 Codex / Cursor / Grok 等各家 AI 额度",
+    "content": "开发者写了本地 CLI 工具 ai-quota：读取本机已有登录态，一条命令查看 Codex、ZCode/Z.ai、OpenCode、Cursor、Grok 等各家 coding agent 的剩余额度。非官方实现，解决「开长任务前不知道订阅还剩多少」的痛点。对多工具党来说是个实用小工具。",
+    "quote": "工具越来越多，额度查询也得先装个工具——AI 时代的幸福烦恼。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1235350",
+    "published": "2026-08-19",
+    "uid": "dev_3eafa529"
+  },
+  {
+    "title": "Zlite：12MB 的轻量 CLI Agent，支持任意 ACP 客户端",
+    "content": "开发者用 Golang 搓了一个轻量 CLI Agent「Zlite」：体积不到 12MB，运行内存约 20MB，支持任意 ACP 客户端接入，适合日常对话、办公、轻代码编写、服务器运维等场景。灵感来自 Pi Agent 原理，主打「不需要重型 IDE 也能用 Agent」。",
+    "quote": "12MB 的 Agent，比某些聊天软件的安装包还小，这才是真·轻量。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1235307",
+    "published": "2026-08-19",
+    "uid": "dev_3e9180c8"
+  },
+  {
+    "title": "Anthropic 研究：多 Agent 越多越好吗？协作、共识与冲突",
+    "content": "Anthropic 最新研究揭示多 Agent 系统的核心挑战：数量增加未必提升效能。任务可独立拆分（如漏洞搜索）时协作能扩大覆盖；但涉及共享资源、动态依赖或目标冲突时，协调成本剧增，容易引发重复劳动、集体误判与行为趋同。结论：关键不在「多少个 Agent」，而在「如何共同工作」。",
+    "quote": "多 Agent 不是人多力量大，是人多嘴杂活干不完。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Qiniu-developer/p/22543566",
+    "published": "2026-08-19",
+    "uid": "dev_23d358ee"
+  },
+  {
+    "title": "为什么每个 AI Agent 代码都长这样：while (true) { ... }",
+    "content": "Dev.to 热文吐槽：打开 Claude Code、Codex、Pi 等任意 Agent 代码库，骨架都是一样的——`let state = {}; while (true) { plan → act → observe }`。文章拆解了这个「Agent 主循环」为何成为事实标准，以及它带来的状态管理、可观测性、退出条件等工程问题。",
+    "quote": "全世界的 Agent 都是一个 while(true)，区别只是里面套的 prompt 不同。",
+    "source": "Dev.to",
+    "url": "https://dev.to/tomsun28/why-does-every-ai-agent-still-look-like-while-true--258a",
+    "published": "2026-08-19",
+    "uid": "dev_424d56f2"
+  },
+  {
+    "title": "AI 写的代码，我从来不逐行 review：只看它能炸多大",
+    "content": "博客园热文提出另类观点：AI 写的代码把关方式不是「看得更细」，而是「换个东西看」——代码对不对交给机器，人只需要判断它炸了能炸多大。文章讨论了 AI 时代 code review 的范式转变：从逐行审查转向风险边界评估。评论区吵翻了，但确实戳中了很多团队的现状。",
+    "quote": "格局打开了：既然拦不住 AI 写 bug，那就先算好炸了赔多少。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/xiexj/p/22541004",
+    "published": "2026-08-19",
+    "uid": "dev_d5f55242"
+  },
+  {
+    "title": "Google Tests AI Mode Shortcuts in Desktop Search for Images, Files and Brainstorming",
+    "content": "Google is testing three AI Mode shortcuts beneath the desktop Search box: Create images, Ask about files and Brainstorm. The limited test matters because it turns AI Mode from a distinct search destin",
+    "quote": "谷歌搜索框底下塞了画图、问文件、头脑风暴三个 AI 快捷键。上一个这么干的是 Bing，最后大家还是只拿它搜天气。AI Mode 从独立目的地退化成入口，Google 也认了：没人会为 AI 专门开新 tab。",
+    "source": "Dev.to",
+    "url": "https://dev.to/alifar/google-tests-ai-mode-shortcuts-in-desktop-search-for-images-files-and-brainstorming-44jm",
+    "published": "2026-08-19",
+    "uid": "dev_c6f2284f"
+  },
+  {
+    "title": "I Tried Every Dark Theme in Codex Skin Studio. Here Is What Actually Works.",
+    "content": "-- title: \"I Tried Every Dark Theme in Codex Skin Studio. Here Is What Actually Works.\" description: \"Dark themes are not just 'black background'. A tour of the built-in dark presets, how to build a d",
+    "quote": "「黑色背景」背后是色板对比度、语法高亮层次、长时间编码的视觉疲劳管理。作者把内置暗色预设挨个试遍，结论无非是：默认主题永远不够，自己调才是归宿。编辑器主题党，这病没法治。",
+    "source": "Dev.to",
+    "url": "https://dev.to/ahmed_isam_752b775a50fd90/i-tried-every-dark-theme-in-codex-skin-studio-here-is-what-actually-works-21hd",
+    "published": "2026-08-19",
+    "uid": "dev_95f7ac74"
+  },
+  {
+    "title": "Why AI Coding Agents Silently Break Full-Stack Apps (And How We Solved It in 0.75ms)",
+    "content": "When AI coding agents (Cursor, Claude Code, Windsurf) edit backend models or API routes in full-stack codebases, backend unit tests frequently pass while the frontend silently breaks in production:",
+    "quote": "AI 改后端模型和 API 路由，后端单测全绿，前端线上静默炸裂——全栈项目的经典事故现场。单测只验证了「后端没坏」，没人验证「调用方没坏」。0.75ms 的解法听着玄乎，但契约测试才是 AI 时代的保险丝。",
+    "source": "Dev.to",
+    "url": "https://dev.to/zainulabideen02/why-ai-coding-agents-silently-break-full-stack-apps-and-how-we-solved-it-in-075ms-2haa",
+    "published": "2026-08-19",
+    "uid": "dev_8f0874ef"
+  },
+  {
+    "title": "DeepSeek Harness 暴涨 14.6万 Star，保姆级教程来啦~ - AI架构师汤师爷",
+    "content": "大家好，我是汤师爷。 DeepSeek 最近开源了一个很有意思的项目，DeepSeek Harness。 很多人第一次看到 Harness 这个词，会下意识把它当成另一个聊天客户端。 打开以后才发现，它允许用户拆开 Agent 的组成部分，换模型、加工具、改权限，也可以装插件，甚至自己写一个新插件。",
+    "quote": "「又一个聊天客户端」是多数人看到 Harness 的第一反应，但人家是让你把 Agent 拆了重装：换模型、加工具、改权限、写插件。14.6 万 Star 说明开发者对「能拆的 Agent」饥渴已久——黑盒早该被淘汰了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/tangshiye/p/22537833",
+    "published": "2026-08-19",
+    "uid": "dev_09d17639"
+  },
+  {
+    "title": "一个测试负责人的崩溃：该做的都做了，线上还是炸了 - 狂师",
+    "content": "事情是这样的。 前段时间有个测试负责人找我，说他团队花了两个月，写了 3000 多条 case，代码覆盖率干到 95%。老板看了很满意，团队也觉得稳了。 上线第二天，炸了。 线上冒出来一个极其严重的 bug，3000 条 case 全没拦住。不是什么极限边界场景，就是一个很普通的操作路径，测试团队压",
+    "quote": "3000 条 case、95% 覆盖率，上线第二天照样炸——不是测试不努力，是「覆盖率」这个 KPI 从来不等于「用户路径覆盖」。最普通的操作路径没人测，说明团队离真实使用场景太远。老板满意没用，用户不满意才是真问题。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/jinjiangongzuoshi/p/22535730",
+    "published": "2026-08-19",
+    "uid": "dev_4c19eef5"
+  },
+  {
+    "title": "Excelize 开源社区荣获 2025 红山开源明星项目三等奖",
+    "content": "2025 年 11 月 16 日，由红山开源平台主办的“2025 红山开源大会”，在北京香山颐和宾馆红山厅成功落下帷幕。为表彰在开源领域做出卓越贡献的项目，大会特别设立 2025 年度红山开源平台明星项目颁奖环节。 Excelize 开源社区荣获了 2025 红山开源明星项目三等奖，活动详情详见文章：2025 红山开源大会圆满收官，共筑开源生态新未来 Excelize 是用于操作电子表格办公文档",
+    "quote": "Excelize 拿红山开源三等奖，是 Go 生态「闷声发财」型项目的典型代表——不炫技不蹭热点，老老实实把 Excel 读写做到极致，国内政企报表场景几乎绕不开它。开源奖颁给基建型项目，比颁给网红框架有含金量。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1180445#reply1",
+    "published": "2026-08-19",
+    "uid": "dev_19895bf2"
+  },
+  {
+    "title": "Google Antigravity 出来啦",
+    "content": "google antigravity 是 Google 新出的 AI 编程工具，免费就能用 Gemini 3 Pro 和 Claude Sonnet 4.5，属实壕气。实测选 Gemini 3 Pro (High) 会先生成实施计划和验证演练两份文档，再动手写代码，流程感很强。不过不少用户卡在 Setting Up Your Account 登录页，老美也一样中招，有网友说开 TUN 模式秒进，也有人拿它和 v0 对比，评价两极分化。",
+    "quote": "白嫖 Gemini 3 Pro 和 Claude Sonnet 4.5 的编程工具，壕是真壕。实测会先出实施计划和验证演练文档再写代码；但登录页卡住一片，老美也中招，开 TUN 秒进都是玄学。免费一时爽，排队火葬场。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1173666#reply9",
+    "published": "2026-08-19",
+    "uid": "dev_02604af8"
+  }
+]
