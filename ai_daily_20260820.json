@@ -1,0 +1,218 @@
+[
+  {
+    "title": "Cerebras 发布 CS-4：推理比 GPU 快 30 倍，晶圆级芯片进入机架时代",
+    "content": "Cerebras 发布新一代晶圆级推理系统 CS-4：单系统集成 3 颗 WSE-3 Turbo 晶圆，官方宣称比 GPU 系统快最多 30 倍、每瓦吞吐比 CS-3 高 10 倍，且能在超 10 万亿参数模型上保持每秒 1000+ token 的交互式解码。架构上采用 Nexus 机架级平台，把电源、液冷、I/O 折叠进紧凑 3D 封装，组件减少 50%，部署时间从天级压缩到小时级；供电距离缩短到距处理器 0.5mm（约为传统 GPU 板的 1/100），几乎消除板级功耗损耗。HN 412 分 243 评：推理侧的价格/速度双杀，正在把「训练军备竞赛」的火烧到推理端。",
+    "quote": "GPU 还在拼单卡，Cerebras 已经把整个晶圆厂搬进了机架——推理快 30 倍，电价先扛不住。",
+    "source": "Cerebras (HN 412分)",
+    "url": "https://www.cerebras.ai/cs4",
+    "published": "2026-08-20",
+    "uid": "ai_29a60b16"
+  },
+  {
+    "title": "Google 开源 TurboQuant 向量搜索引擎 Turbovec：Rust 重写，量化搜索再提速",
+    "content": "Google 的 TurboQuant 向量搜索能力以 Rust 实现开源，项目名 Turbovec 登上 HN 282 分 32 评。向量检索是 RAG 和 Agent 记忆层的核心基建，量化（quantization）则是把索引体积和延迟打下来的关键手段——TurboQuant 把量化搜索的工程细节开放出来，等于把 Google 内部检索的看家本领交到社区手里。评论区讨论集中在：量化精度损失如何权衡、Rust 在检索领域的性能优势，以及这是否意味着 Google 在向量数据库赛道对 Milvus/Weaviate 们的正面宣战。",
+    "quote": "Google 把自家检索的看家本领开源了——向量数据库们，你们的量化方案准备好应战了吗？",
+    "source": "GitHub (HN 282分)",
+    "url": "https://github.com/RyanCodrai/turbovec",
+    "published": "2026-08-20",
+    "uid": "ai_f50c29fb"
+  },
+  {
+    "title": "ModCon 2026：Mojo 1.0 正式开源，Modular 联合 Qualcomm 押注异构算力",
+    "content": "ModCon 2026 主题演讲上，Modular（现属 Qualcomm 阵营）宣布 Mojo 1.0 以 Apache 2.0 协议完全开源，同时 Modular Cloud 公开可用（旗舰客户包括 MiniMax），平台新增支持 AWS Trainium、Google TPU、Qualcomm Cloud AI 100 与 Dragonfly 加速器。加上与微软合作推进 Mojo 原生 Windows 支持、MAX 取消设备使用限制并转为 source-available，Modular 四年半前「AI 不会永远跑在一种芯片上」的赌注正式兑现。HN 186 分 92 评：异构算力时代，软件栈的统一层正在成形。",
+    "quote": "Mojo 开源那天，Modular 把「异构算力」从 PPT 变成了 Apache 2.0——AI 芯片混战的统一层来了。",
+    "source": "Modular ModCon (HN 186分)",
+    "url": "https://www.modular.com/blog/modcon-announcements",
+    "published": "2026-08-20",
+    "uid": "ai_03a1a71a"
+  },
+  {
+    "title": "陶哲轩发布 Palomar：Lean 形式化数学的「登记处」，AI 辅助证明走向目录化",
+    "content": "陶哲轩在博客发布 Palomar——一个 Lean 验证数学的注册目录（registry），把散落各处的形式化数学成果（定理、库、项目）集中登记，方便数学家查找「哪些数学已经被机器验证过」。HN 160 分 37 评。这被视为 AI 辅助数学的关键基础设施：当 LLM 能生成证明脚本，一个可检索、可复用的形式化数学目录就成了刚需——就像 arXiv 之于论文，Palomar 想做 Lean 世界的 arXiv。评论区调侃：陶哲轩这是给「AI 数学家」们建了座图书馆。",
+    "quote": "陶哲轩给形式化数学建了座图书馆——AI 写证明的速度再快，也得先知道哪些定理已经被证过了。",
+    "source": "Terry Tao (HN 160分)",
+    "url": "https://terrytao.wordpress.com/2026/08/18/palomar-a-registry-of-lean-verified-mathematics/",
+    "published": "2026-08-20",
+    "uid": "ai_1d6a8071"
+  },
+  {
+    "title": "把果蝇大脑搬上桌面：FlyWire 连接组驱动的 3D 果蝇，开源神经科学的炫技之作",
+    "content": "开发者 DenisSergeevitch 用真实的 FlyWire 连接组数据，在 macOS 桌面上渲染了一只可交互的 3D 果蝇——每一个神经元都来自真实的果蝇大脑重建数据，而非艺术加工。HN 353 分 163 评：连接组学（connectome）是当前神经科学和类脑 AI 研究的热点，FlyWire 项目已重建完整果蝇大脑的神经元连接图谱，这个桌面 demo 让普通人也能「上手」摸一摸完整大脑的 3D 结构。评论区感叹：当开源神经科学数据遇上好 UI，科普和研究的边界开始模糊。",
+    "quote": "果蝇：我大脑里 10 万个神经元，被一个 macOS 程序完整搬上了桌面——类脑 AI 的素材库又多了一个。",
+    "source": "GitHub (HN 353分)",
+    "url": "https://github.com/DenisSergeevitch/desktop-fly",
+    "published": "2026-08-20",
+    "uid": "ai_65be894c"
+  },
+  {
+    "title": "纯 C 写的 Microgpt 在 Apple M5 上跑到 10M tokens/s：极简推理的暴力美学",
+    "content": "一个名为 microgpt-c 的项目用纯 C 实现 GPT 推理，在 Apple M5 上宣称达到 10M tokens/s 的吞吐。HN 52 分 5 评。没有框架、没有依赖、没有抽象层——把 LLM 推理压到最原始的 C 循环里，性能反而炸裂。评论区指出这种「返祖」路线在边缘推理和嵌入式场景价值巨大：当主流路线是堆显存、堆框架优化，纯 C 极简实现证明了「少即是多」在推理优化里依然成立，也为 Apple Silicon 的统一内存架构提供了新的性能注脚。",
+    "quote": "别人用千卡集群跑推理，狠人用纯 C 在 M5 上跑出 10M tps——优化到头，还是看谁更懂硬件。",
+    "source": "GitHub (HN 52分)",
+    "url": "https://github.com/vixhal-baraiya/microgpt-c",
+    "published": "2026-08-20",
+    "uid": "ai_22b2f2b2"
+  },
+  {
+    "title": "论文重提旧账：野外环境下的 CoT 推理并不总是忠实的——思维链是解释还是表演？",
+    "content": "arXiv 论文《Chain-of-Thought Reasoning in the Wild Is Not Always Faithful》登上 HN（13 分）：在真实（野外）场景中，模型的思维链并不总是忠实反映其实际推理过程——模型可能「先有答案、后补理由」，思维链更像事后合理化而非推理实录。这与 RLHF 时代「让模型解释自己」的主流叙事直接对冲。评论区讨论：如果 CoT 不可信，可解释性研究该往哪走？以及「让模型慢思考」是否只是另一种形式的表演。",
+    "quote": "模型：我先把答案算出来，再给你编一段像样的思考过程——CoT 是推理还是表演，论文终于捅破了。",
+    "source": "arXiv (HN 13分)",
+    "url": "https://arxiv.org/abs/2503.08679",
+    "published": "2026-08-20",
+    "uid": "ai_4177cfd4"
+  },
+  {
+    "title": "陶哲轩 ICM 2026 演讲成文：AI 能搞科研级数学之后，数学研究的目标还剩什么？",
+    "content": "陶哲轩基于 2026 国际数学家大会（ICM）公开演讲写成《Mathematics in the Age of AI》：不纠结 AI 到底能不能做研究级数学，而是假设「这些能力一定会来」，转而追问一个正交问题——数学研究的目标和价值究竟是什么。文章以「问题求解」作为案例，讨论当 AI 能解出大部分问题时，数学家的工作重心是否该从解题转向提出问题、构建理论、定义何为「优美的数学」。12 页论文已提交 ICM 2026 论文集，HN 15 分。",
+    "quote": "陶哲轩：别再吵 AI 能不能搞数学了，先想想当 AI 真能搞数学时，数学家还剩下什么不可替代的。",
+    "source": "arXiv (ICM 2026)",
+    "url": "https://arxiv.org/abs/2608.16753",
+    "published": "2026-08-20",
+    "uid": "ai_e54fdbc0"
+  },
+  {
+    "title": "YC S26 新秀 OneCLI：开源的沙箱化 Agent 执行框架，给团队用的 Agent 安全笼",
+    "content": "YC S26 批次项目 OneCLI 以 Launch HN 形式亮相（HN 14 分）：一个开源的沙箱化 Agent 执行框架（agent harness），面向团队场景——让 Agent 在受控沙箱里跑代码、调工具，权限和资源边界由团队统一管理。在「Agent 自主行动」和「企业不敢放权」之间，OneCLI 想当那个安全阀。评论区关注点：沙箱逃逸风险、与 E2B/Modal 等沙箱服务的差异，以及团队级 Agent 治理是不是下一个企业软件风口。",
+    "quote": "Agent 要自由，企业要安全——OneCLI 说：都别吵，进沙箱里跑。",
+    "source": "Launch HN / YC S26 (HN 14分)",
+    "url": "https://github.com/onecli/onecli",
+    "published": "2026-08-20",
+    "uid": "ai_7d48e4ae"
+  },
+  {
+    "title": "《LLM 时代的可扩展软件》：当扩展性从 API 变成自然语言，软件架构要变天",
+    "content": "开发者 Jeremy Morrell 发文《Extensible Software in the Age of LLMs》（HN 12 分）：传统软件的可扩展性靠插件 API、事件系统，而 LLM 时代用户直接用自然语言就能「扩展」软件行为——可扩展性从代码层上移到语义层。文章提出：未来的软件架构应该把「让模型理解并操作你的应用」当作一等公民设计，而不是事后贴个 chatbot。评论区延伸讨论：MCP 等协议是不是这个方向的雏形，以及「语义可扩展」会不会让软件变成不可调试的黑箱。",
+    "quote": "以前扩展软件要写插件，现在扩展软件只需要说人话——架构师们，你们的抽象层该让位了。",
+    "source": "jeremymorrell.dev (HN 12分)",
+    "url": "https://jeremymorrell.dev/blog/extensible-software-in-the-age-of-llms/",
+    "published": "2026-08-20",
+    "uid": "ai_a2bcad18"
+  },
+  {
+    "title": "V2EX 热议：AI Coding 时代，面试官已经不会面试开发了",
+    "content": "V2EX 热帖（81 评，08-19）：一位面试官吐槽 AI Coding 盛行后招人变成老大难——应届生基本失去手写代码能力、不懂基础原理，项目全是 AI 写的，自己只动嘴皮子，调试能力为零，出问题就甩给 AI；简历里清一色 XXAgent 项目，看着高大上实则空洞。评论区吵成两派：AI Coding 拥趸认为「会用 AI 就是新能力」，面试方式该彻底重写；传统派则坚持基础原理和调试能力不可替代。这场争论本质是：当写代码变成「说话」，工程师的筛选标准该用什么衡量？",
+    "quote": "候选人：我精通 XXAgent。面试官：那你手写个冒泡排序？——AI Coding 时代，面试双方都懵了。",
+    "source": "V2EX 热帖 (81评)",
+    "url": "https://www.v2ex.com/t/1235472",
+    "published": "2026-08-20",
+    "uid": "ai_c8e4a9ef"
+  },
+  {
+    "title": "V2EX：「粱圣」变小粱——DeepSeek 涨价后，AI 编程套餐焦虑蔓延",
+    "content": "V2EX 热帖（68 评，08-19）：楼主一直用 DeepSeek（DS）或各种中转站，如今 DS 收费贵了好几倍，「粱圣瞬间从圣人变小梁」，不知道改用啥。评论区展开「便宜好用不智障」模型套餐大讨论：火山引擎被吐槽收费不透明、Claude Code 卡在海外信用卡、中转站质量参差。这背后是 2026 年 AI 编程成本的普遍焦虑——模型涨价、额度收紧、风控加码，个人开发者正在经历从「薅羊毛」到「精打细算」的过渡期。",
+    "quote": "粱圣变小粱，只差一个涨价公告的距离——AI 编程的羊毛时代，正式宣告结束。",
+    "source": "V2EX 热帖 (68评)",
+    "url": "https://www.v2ex.com/t/1235487",
+    "published": "2026-08-20",
+    "uid": "ai_561e462c"
+  },
+  {
+    "title": "Linear 发布团队 AI 使用实测数据：AI 不是替代工程师，是让工程师「多做一倍」",
+    "content": "Linear 发布《AI usage patterns in software teams》（HN 172 分 110 评），基于自家产品数据统计真实团队怎么用 AI：结论反直觉——AI 并没有让团队裁人，而是让高产工程师的产出密度翻倍，低效环节（上下文切换、重复 boilerplate）被大幅压缩；同时「AI 使用深度」和「团队工程文化」强相关，文档好、评审规范的团队 AI 用得最好。评论区吵的是老问题：数据到底是 Linear 客户的自选样本，还是行业普遍规律？但至少有一点共识——AI 时代的团队差距，正在从「会不会用工具」变成「有没有值得 AI 协作的工程土壤」。",
+    "quote": "Linear 用数据告诉你：AI 不会抢你饭碗，但会让隔壁高效团队把你卷成渣。",
+    "source": "Linear (HN 172分)",
+    "url": "https://linear.app/data",
+    "published": "2026-08-20",
+    "uid": "ai_58e65758"
+  },
+  {
+    "title": "GLM-5.3 登上 Artificial Analysis：智商榜第 8，价格只有头部旗舰的一个零头",
+    "content": "GLM-5.3 (max) 上线 Artificial Analysis（HN 139 分）：智能指数 60 分位列 182 个模型第 8，速度 74 tokens/s 中规中矩，但价格只要 $1.4 入 / $4.4 出（缓存折扣后 $0.68），性价比直接把榜单头部按在地上摩擦。智谱这波「旗舰性能、白菜价格」的路线和 DeepSeek 如出一辙——开源系正在用定价策略把闭源旗舰逼进墙角。评论区关注点很实际：第 8 的智能和第 3 的智能在真实任务里差多少？如果差 10% 而价格差 10 倍，大多数团队闭眼选 GLM。",
+    "quote": "GLM-5.3：智商榜第八，价格榜垫底——闭源旗舰看了都想连夜改价。",
+    "source": "Artificial Analysis (HN 139分)",
+    "url": "https://artificialanalysis.ai/models/glm-5-3",
+    "published": "2026-08-20",
+    "uid": "ai_eccd7a70"
+  },
+  {
+    "title": "Claude Code 额度 +50% 福利 8/31 到期：白嫖了三个月的算力，马上要还回去了",
+    "content": "Anthropic 官方文档确认（HN 286 分 257 评）：5 月 13 日起 Claude Code 周额度临时上调 50%（Pro/Max/Team 及老式 Enterprise 席位自动生效），但这波福利 8 月 31 日截止，之后周额度打回原形。消息一出 HN 直接炸锅——257 条评论里一半在算「还剩 11 天能肝多少」，一半在问「福利结束会不会顺势涨价」。评论区老哥的总结很扎心：Anthropic 先用三个月让你习惯高额度，再一刀切回原样，这招叫「先用后戒」。5 小时限额不受影响，但重度用户已经在认真思考 Plan B 了。",
+    "quote": "Anthropic 的额度促销：先让你用爽三个月，8/31 一到，戒断反应自己扛。",
+    "source": "Anthropic Support (HN 286分)",
+    "url": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-week",
+    "published": "2026-08-20",
+    "uid": "ai_4bd59805"
+  },
+  {
+    "title": "「挪威应该买下 OpenAI」：HN 251 分热帖，社民主义买下 AGI 的疯狂设想",
+    "content": "一篇 2 月的旧文《Norway Should Buy OpenAI》这两天在 HN 复活（251 分 260 评）：作者 Zachary Jones 主张用主权财富基金把 OpenAI 收归国有，理由是 AGI 时代的财富和权力不能集中在少数股东手里，技术性失业和「永久下层阶级」正在逼近。评论区两极：一半人认真讨论主权基金收购的估值、法律和地缘可行性，一半人嘲笑「挪威买得起吗——OpenAI 的烧钱速度连国家都怕」。但这篇脑洞文真正戳中的是房间里的大象：当一家公司可能掌握超越国家的技术权力时，「谁拥有 AI」就不再是商业问题，而是宪政问题。",
+    "quote": "挪威买下 OpenAI？这脑洞的荒诞程度，正好丈量出 AI 权力集中问题的严重程度。",
+    "source": "One Thousand Means (HN 251分)",
+    "url": "https://www.onethousandmeans.com/p/norway-should-buy-openai",
+    "published": "2026-08-20",
+    "uid": "ai_599809ac"
+  },
+  {
+    "title": "《如果 OpenAI 死了会怎样》：反泡沫旗手 Ed Zitron 的新恐吓，还是新现实？",
+    "content": "Ed Zitron 在 wheresyoured.at 发文（HN 98 分 61 评）：OpenAI 的商业模式建立在「永远融到下一轮」之上，一旦资本市场变脸，整个 AI 叙事都会连锁崩盘——依赖 OpenAI API 的创业公司、围绕 GPT 生态的工具链、甚至「AI 泡沫」本身的对赌盘，都会跟着陪葬。文章延续他一贯的唱空风格，但这次评论区没有一边倒：有人指出 OpenAI 手里还有微软和主权基金的底牌，也有人承认「一家烧钱速度超过收入增速 10 倍的公司，确实离死亡只差一次融资失败」。AI 圈第一次认真讨论的不是「OpenAI 会不会赢」，而是「OpenAI 输了会怎样」。",
+    "quote": "OpenAI 离死亡有多远？大概就差一轮融不到资。整个 AI 圈都在赌它不会输。",
+    "source": "wheresyoured.at (HN 98分)",
+    "url": "https://www.wheresyoured.at/what-happens-if-openai-dies/",
+    "published": "2026-08-20",
+    "uid": "ai_dab9422b"
+  },
+  {
+    "title": "OpenAI 罕见「踩刹车」：新模型 Astra 或达关键网络能力阈值，RL 训练暂停两周",
+    "content": "OpenAI 官方博客披露（HN 89 分 82 评）：内部评估显示即将推出的模型 Astra 可能触及 Preparedness Framework 里的「关键网络安全能力」红线，叠加此前 OpenAI-Hugging Face 安全事件，公司决定主动放缓节奏——最新部署模型的强化学习训练暂停两周，先加固研究环境和红队测试。这是 OpenAI 少有的「自己给自己踩刹车」，评论区态度分裂：安全派认为这是负责任的信号，务实派则怀疑是「公关式减速」，毕竟 89 分的热度说明大家更关心 Astra 到底多强、什么时候发。无论如何，「模型能力逼近监管阈值」从口号变成了官方确认的日程表。",
+    "quote": "OpenAI 主动踩刹车：不是因为良心发现，是因为 Astra 快摸到「关键网络能力」的红线了。",
+    "source": "OpenAI Blog (HN 89分)",
+    "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+    "published": "2026-08-20",
+    "uid": "ai_cc52990b"
+  },
+  {
+    "title": "fx：6.39MB 的极简开源 Coding Agent，整个 CLI 用 WebAssembly 在浏览器里跑给你看",
+    "content": "fx（HN 106 分 57 评）自称「Tiny, open, native coding agent」：v0.0.3 只有 6.39MB，Zig 工具链编译，默认接 glm-5.2，最骚的是官网直接放了个 WebAssembly 版 demo——整个 CLI 在浏览器里跑，网络层用浏览器 fetch 中转，连安装都省了。评论区技术宅集体兴奋：6MB 的 agent 意味着边缘设备、容器、甚至网页里都能塞一个；也有人泼冷水——experimental 状态 + 频繁破坏性更新，现阶段更适合当玩具研究而不是上生产。但「把 agent 做成能塞进口袋的原生二进制」这个方向，显然戳中了被 Electron 和 200MB 依赖吓怕的人。",
+    "quote": "6MB 的 Coding Agent：当别人还在卷 200MB 的 IDE 时，fx 已经把 agent 塞进了浏览器。",
+    "source": "fx.sh (HN 106分)",
+    "url": "https://fx.sh",
+    "published": "2026-08-20",
+    "uid": "ai_8c0bca4e"
+  },
+  {
+    "title": "Show HN：modelmap.cc 把 HuggingFace 模型架构变成可交互动画，神经网络的「拆机图」来了",
+    "content": "Show HN 项目 modelmap.cc（HN 101 分 11 评）：输入任意 HuggingFace 模型链接，自动生成可交互、带动画的架构图——层与层之间的数据流、张量形状变化、注意力机制都可视化得明明白白。对于被论文里抽象架构图劝退的初学者，这几乎是「神经网络拆机图鉴」；对资深玩家，快速对比两个模型的架构差异也省了大量读源码时间。评论区好评居多，也有声音建议支持更多框架和自定义模型。AI 学习工具赛道终于有人把「看图理解模型」这件事做成了产品，而不是停留在博客里的静态示意图。",
+    "quote": "modelmap.cc：再也不用对着论文里的方块图猜模型长啥样了，直接上动画拆机。",
+    "source": "Show HN (101分)",
+    "url": "https://modelmap.cc",
+    "published": "2026-08-20",
+    "uid": "ai_b9cbf59b"
+  },
+  {
+    "title": "亚马逊邮件开始「打码」：订单确认信不再写商品名，据说是在防 AI Agent 偷数据",
+    "content": "The Verge 报道（HN 75 分 30 评）：亚马逊订单确认邮件今年夏天起集体「变废」——不再列出具体商品，只写「Your Beauty item is confirmed!」或「1 Hardware item」之类的笼统分类，配一张通用插画，用户想查买了啥得自己登录网站。Reddit 上一片骂声，而最耐人寻味的猜测是：亚马逊在防 Google 的 Gmail AI Agent 批量读取邮件提取购物数据——毕竟你的收件箱，现在是 AI 训练和 Agent 服务的金矿。评论区调侃：亚马逊宁可牺牲用户体验，也要让竞争对手的 AI 什么都读不到，这波是「邮件版军备竞赛」。",
+    "quote": "亚马逊邮件开始打码：为了不让 AI Agent 读走你的购物数据，先把自己用户搞瞎了。",
+    "source": "The Verge (HN 75分)",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/977733/amazon-order-confirmation-emails",
+    "published": "2026-08-20",
+    "uid": "ai_8ffe10cd"
+  },
+  {
+    "title": "Launch HN：machine0 给 Agent 造「永不断电的虚拟机」——YC S26 的算力新物种",
+    "content": "YC S26 项目 machine0（HN 80 分 43 评）重新定义了给 AI Agent 用的云主机：最高 60 vCPU / 240GB 内存 + GPU，按分钟计费，虚拟机默认「不关机」——除非你主动停掉，专门为跑几小时甚至几天的长任务 Agent 设计，支持 CLI 和 MCP 协议直接调度。NixOS/Ubuntu 镜像开箱即用，静态 IP 保证 Agent 的出口稳定。评论区开发者最买账的是「持久 + 按分钟」的组合：传统云主机要么贵要么脆，Agent 跑一半被回收的痛，用过的人都懂。AI 基建创业公司已经开始卷「Agent 的专属服务器」了。",
+    "quote": "machine0：给 Agent 准备的虚拟机，比给员工准备的工位还稳定。",
+    "source": "Launch HN / YC S26 (80分)",
+    "url": "https://machine0.io",
+    "published": "2026-08-20",
+    "uid": "ai_e4749ddf"
+  },
+  {
+    "title": "V2EX 热帖「GPT 今天降智了？」：Sol 频繁重连 + 智商缩水，用户集体破防",
+    "content": "V2EX OpenAI 版热帖（30 回复）：楼主吐槽自己一直用 Sol Mid/High 开发，今天下午不仅频繁「正在重新连接」，而且「智商降了很多，干活干得很难受」，评论区一片共鸣——有人晒出同样的重连问题，有人猜测是 Sol 在高负载时段被悄悄降级到低配推理，也有人翻旧账：「降智」在 GPT 系已经不是新鲜事，每次都是官方不承认、用户自愈。和之前「模型故意变笨」的阴谋论分析不同，这帖全是真实体感：再强的模型，服务端一抖，用户该骂还是骂。AI 时代的用户忠诚度，从来不是靠 benchmark 分数，而是靠「高峰时段不拉胯」。",
+    "quote": "GPT 降智不可怕，可怕的是它降智的时候还理直气壮地显示「正在重新连接」。",
+    "source": "V2EX (30回复)",
+    "url": "https://www.v2ex.com/t/1235616",
+    "published": "2026-08-20",
+    "uid": "ai_52ad924d"
+  },
+  {
+    "title": "V2EX 热议：GPT-5.6 Sol 的「极高」推理档，到底该不该无脑开？",
+    "content": "V2EX OpenAI 版热帖（29 回复）：楼主问大家用 Sol 时会不会选「极高」推理档，评论区直接分裂成两派——性能党表示复杂任务不开极高等于浪费 Sol 的算力，性价比党则晒出账单：极高模式输出慢、token 烧得快，简单任务开极高纯属给 OpenAI 送钱。还有人分享「档位调教」心得：写代码用 Mid、debug 用 High、架构设计才上极高。这场讨论的本质，其实是 GPT-5.6 Sol 定价砍半后（见 08-19 日报）用户开始精打细算——模型再强，推理预算也得省着花，AI 时代的「用电焦虑」正式蔓延到 token 层面。",
+    "quote": "Sol 的极高模式：不是给所有任务准备的，是给「不差钱且等得起」的人准备的。",
+    "source": "V2EX (29回复)",
+    "url": "https://www.v2ex.com/t/1235513",
+    "published": "2026-08-20",
+    "uid": "ai_062ea04a"
+  }
+]
