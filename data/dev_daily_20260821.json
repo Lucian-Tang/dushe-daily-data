@@ -1,0 +1,227 @@
+[
+  {
+    "title": "Bun 1.4 发布：JavaScript 全家桶运行时再进化",
+    "content": "Bun 1.4 正式发布，作为主打性能的 JavaScript/TypeScript 运行时，本次版本继续强化兼容性与开发体验，在 Hacker News 引发热议（129 分、59 条评论），是近期 JS 生态最受关注的版本迭代之一，风头直逼 Node.js 与 Deno。",
+    "quote": "前端轮子又开转，这次转得特别快。",
+    "source": "HN Front Page",
+    "url": "https://bun.com/blog/bun-v1.4",
+    "published": "2026-08-21",
+    "uid": "dev_fab286e2"
+  },
+  {
+    "title": "恶意 Rust crate Arrayref 在构建时执行攻击负载",
+    "content": "安全公司 Safedep 披露：Rust 生态知名 crate Arrayref 的 proc-macro 版本被植入恶意代码，会在构建时执行攻击负载，属于典型的供应链攻击手法，rustsec 咨询库已跟进（HN 229 分）。开发者需立即核查依赖锁定版本。",
+    "quote": "连 Rust 都背刺了，装包前先烧柱香。",
+    "source": "HN Front Page",
+    "url": "https://safedep.io/arrayref-proc-macro1-rust-build-time-malware/",
+    "published": "2026-08-21",
+    "uid": "dev_f31ca451"
+  },
+  {
+    "title": "速卖通被曝静默 WebAudio 指纹采集，还破坏蓝牙多设备连接",
+    "content": "安全研究者发现 AliExpress 网页会静默运行 WebAudio 指纹采集，利用超声波音频识别设备，用户毫无感知；该脚本还会干扰蓝牙多设备连接（HN 540 分、181 条评论）。网购页面变间谍现场，隐私风险极高。",
+    "quote": "买个东西还被听声辨位，电商比狗仔敬业。",
+    "source": "HN Front Page",
+    "url": "https://blog.laserphile.com/2026/08/aliexpress-webpage-keeping-multipoint.html",
+    "published": "2026-08-21",
+    "uid": "dev_912e310c"
+  },
+  {
+    "title": "用另一个 LLM 清理 Claude 5 的「Token 呕吐物」",
+    "content": "开发者开源 vomit 项目：Claude 5 输出常带大量冗长无意义的思维链废话（token vomit），作者干脆用另一个 LLM 专门清理这些内容。思路清奇——以毒攻毒，让 AI 给 AI 擦屁股，HN 上获得 34 分与 21 条评论。",
+    "quote": "用 AI 给 AI 擦屁股，生态闭环了。",
+    "source": "HN Front Page",
+    "url": "https://github.com/zachahn/vomit",
+    "published": "2026-08-21",
+    "uid": "dev_2468dbe7"
+  },
+  {
+    "title": "modular/modular：MAX 平台与 Mojo 语言的统一 AI 基础设施",
+    "content": "Modular 官方仓库登上 GitHub Trending（27.7k star），包含 MAX 平台与 Mojo 语言，主打统一 AI 基础设施：让 Python 生态获得接近 C++ 的性能，Mojo 是其核心卖点，瞄准 AI 推理与高性能计算场景。",
+    "quote": "号称 Python 提速翻倍的，最后都成了 PPT。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/modular/modular",
+    "published": "2026-08-21",
+    "uid": "dev_cdc89440"
+  },
+  {
+    "title": "cursor/plugins：Cursor 官方插件规范与生态仓库",
+    "content": "Cursor 官方推出 plugins 仓库（3.9k star），定义插件规范并收录官方插件，标志着 AI 编辑器正式进入插件化生态竞争。开发者可基于规范扩展 Cursor 能力，与 VS Code 的插件市场正面刚。",
+    "quote": "编辑器卷起插件市场，VS Code 直呼眼熟。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/cursor/plugins",
+    "published": "2026-08-21",
+    "uid": "dev_33680dea"
+  },
+  {
+    "title": "agent-substrate/substrate：Agent 系统级基础设施",
+    "content": "Agent Substrate 核心系统登上 GitHub Trending（1.3k star），为 AI Agent 提供底层运行时与基础设施支持，主打系统级的 Agent 承载能力，属于当前 Agent 基建赛道的新入场者。",
+    "quote": "又一套 Agent 底座，看能活几个版本。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/agent-substrate/substrate",
+    "published": "2026-08-21",
+    "uid": "dev_0287bbb2"
+  },
+  {
+    "title": "Claude Code 接任意模型：三种路由方案，最快 2 分钟",
+    "content": "Dev.to 文章介绍三种把 Claude Code 路由到任意模型的方法，最快 2 分钟搞定。Claude Code 是目前最强的 agentic coding 界面，但默认只认 Anthropic API 与计费，本文教你给它换「大脑」，兼容 Kimi 等模型。",
+    "quote": "Claude Code 换脑子，Anthropic 要拉黑。",
+    "source": "Dev.to",
+    "url": "https://dev.to/opper/claude-code-with-any-model-three-ways-to-route-it-incl-the-2-minute-one-2md2",
+    "published": "2026-08-21",
+    "uid": "dev_820993a7"
+  },
+  {
+    "title": "原生 <geolocation> 元素落地 Chrome 144",
+    "content": "Chrome 144 引入原生 <geolocation> HTML 元素：过去需要 navigator.geolocation.getCurrentPosition 加一堆样板代码，现在一个标签就能搞定定位。Web 平台又在悄悄收编 JS API，前端代码量-1。",
+    "quote": "JS API 又被收编，前端失业清单+1。",
+    "source": "Dev.to",
+    "url": "https://dev.to/leobaniak/the-element-lands-in-chrome-144-5g7m",
+    "published": "2026-08-21",
+    "uid": "dev_f34982bc"
+  },
+  {
+    "title": "TensorSharp 新进展：.NET 推理栈三周扛下 744B 模型",
+    "content": "张善友发布 TensorSharp 最新进展报告：从 7 月底的 DeepSeek V4（284B）到 8 月 19 日的 GLM-5.2（744B），纯 .NET 推理栈三周内把承载上限抬高 2.6 倍，且保持与 llama.cpp 逐 token 对齐的传统，.NET 系 AI 推理里程碑。",
+    "quote": ".NET 程序员终于挺直了腰杆。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/22602322",
+    "published": "2026-08-21",
+    "uid": "dev_d02dd3bf"
+  },
+  {
+    "title": "「A股速览」开源：VS Code 摸鱼看盘神器，还带老板模式",
+    "content": "开发者开源 VS Code 插件「A股速览」：把自选股实时行情塞进侧边栏，写代码时顺手瞄一眼，MIT 协议可商用。最大亮点是「老板模式」——老板路过一键切换，摸鱼看盘不被抓包。",
+    "quote": "代码写着写着就红了，是股票不是报错。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/szbnl/p/22599192",
+    "published": "2026-08-21",
+    "uid": "dev_90bc6e59"
+  },
+  {
+    "title": "Show HN: Pond – lossless archive for agent sessions in your own S3",
+    "content": "开发者发布 Pond，一个面向 AI Agent 会话的无损归档工具，可将全部会话数据直接存进自己的 S3，兼顾可追溯性与数据主权。对需要审计 Agent 行为、或不想把会话数据交给第三方平台的团队来说，是个实用的自托管方案，也让 Agent 会话管理终于有了「自己的仓库」。",
+    "quote": "让 Agent 的每句废话都有案可查，甩锅神器。",
+    "source": "HN Show HN",
+    "url": "https://github.com/tenequm/pond",
+    "published": "2026-08-21",
+    "uid": "dev_fe296f41"
+  },
+  {
+    "title": "Show HN: Epho – run Claude Code with a curl",
+    "content": "开发者开源 Epho，一条 curl 命令即可远程运行 Claude Code，把终端里的 AI 编程能力变成可脚本化、可远程调用的接口。适合在 CI、服务器或自动化流程里直接驱动 Claude Code，省去本地环境配置，属于「AI 编程即服务」思路的轻量实践。",
+    "quote": "万物皆可 curl，连 AI 打工人都能远程遥控了。",
+    "source": "HN Show HN",
+    "url": "https://epho.io",
+    "published": "2026-08-21",
+    "uid": "dev_65dab49b"
+  },
+  {
+    "title": "Show HN: Clean, an agent skill that clears dev junk (freed 5.3 GB on first run)",
+    "content": "开发者发布 Clean，一个给 AI Agent 用的技能包，可自动清理开发环境里的垃圾文件与缓存，作者称首次运行就释放了 5.3GB 磁盘空间。把「收拾屋子」这类琐事交给 Agent 处理，倒是给整天跟磁盘空间搏斗的开发者省了不少心。",
+    "quote": "连打扫卫生都外包给 AI，人类只剩写 Bug 了。",
+    "source": "HN Show HN",
+    "url": "https://github.com/andalabx/skills/tree/main/clean",
+    "published": "2026-08-21",
+    "uid": "dev_8ed56062"
+  },
+  {
+    "title": "Show HN: Spec4j makes your REST APIs YAMLless",
+    "content": "Spec4j 是一个 GitHub Action，宣称让 REST API 告别 YAML：不用手写 OpenAPI/Swagger 配置，直接从代码生成接口规范。对受够了维护接口文档的 Java 开发者来说算是一剂减负良药，接口定义与实现不再两处维护。",
+    "quote": "接口文档写不完的痛，Java 人最懂。",
+    "source": "HN Show HN",
+    "url": "https://github.com/marketplace/actions/spec4j",
+    "published": "2026-08-21",
+    "uid": "dev_6c16ad75"
+  },
+  {
+    "title": "Show HN: ISLP textbook rebuilt from PDF into ePub, using Claude Code",
+    "content": "开发者用 Claude Code 把《统计学习导论》（ISLP）教材从 PDF 重排成 ePub 格式并在 GitHub 开源，展示了 AI 编程在文档工程上的实际应用——复杂排版、公式与图表全由 AI 协助处理。对想用 AI 做文档重排的人来说是个不错的参考样本。",
+    "quote": "用 AI 重排教材，这届程序员连读书都要卷工具。",
+    "source": "HN Show HN",
+    "url": "https://github.com/govarthenan/islp-epub",
+    "published": "2026-08-21",
+    "uid": "dev_6477646a"
+  },
+  {
+    "title": "Generic Methods in Go 1.27",
+    "content": "博客文章详解 Go 1.27 新增的泛型方法（generic methods）特性，这是 Go 泛型体系的一次重要补全。作者通过具体示例说明其语法、适用场景与限制，对关注 Go 语言演进的开发者有直接参考价值，也意味着 Go 的泛型故事终于翻到了新章节。",
+    "quote": "Go 的泛型终于长全了，等得花儿都谢了。",
+    "source": "HN Front Page",
+    "url": "https://dominik.info/blog/go-generic-methods",
+    "published": "2026-08-21",
+    "uid": "dev_efd48183"
+  },
+  {
+    "title": "Hacking with Claude on a $27 Smart Watch",
+    "content": "开发者分享用 Claude 在 27 美元的智能手表上做硬件 hacking 的实战经历，包括在极低配置设备上跑 AI 辅助开发、调试与自动化。展示了 AI 编程在嵌入式与边缘设备场景的可能性，也再次证明极客的快乐往往建立在钱包的牺牲之上。",
+    "quote": "27 美元的手表都能跑 AI，钱包在哭泣，极客在狂欢。",
+    "source": "HN Front Page",
+    "url": "https://www.mikekasberg.com/blog/2026/08/19/hacking-with-claude-on-a-27-smart-watch.html",
+    "published": "2026-08-21",
+    "uid": "dev_17b7ada2"
+  },
+  {
+    "title": "Millions of log lines in PHP, at constant memory",
+    "content": "作者分享 PHP 处理数百万行日志时保持内存恒定的实践技巧，涉及生成器、流式处理与内存复用等方案，直击 PHP 处理大文件容易 OOM 的痛点。对做日志分析、数据管道的 PHP 开发者来说，是一份拿来就能用的性能优化手册。",
+    "quote": "PHP 也能吃下百万行日志，这次不是玄学是技巧。",
+    "source": "Dev.to",
+    "url": "https://dev.to/nessflow_8283f7335b896207/millions-of-log-lines-in-php-at-constant-memory-i7n",
+    "published": "2026-08-21",
+    "uid": "dev_41613fac"
+  },
+  {
+    "title": "Debugging Node.js Like a Pro",
+    "content": "一篇 Node.js 调试实战指南，覆盖断点调试、性能分析、内存泄漏排查、异步调用栈追踪等进阶技巧，帮助开发者摆脱 console.log 式调试，系统化定位线上问题。内容偏工程实战，适合想提升排查效率的 Node 开发者按图索骥。",
+    "quote": "告别 console.log 大法，从入门到专业只差这篇。",
+    "source": "Dev.to",
+    "url": "https://dev.to/stackhorizon/debugging-nodejs-like-a-pro-2pme",
+    "published": "2026-08-21",
+    "uid": "dev_81bae79d"
+  },
+  {
+    "title": "Go 1.27's SIMD ties with NumPy until the data fits in cache",
+    "content": "作者对比 Go 1.27 的 SIMD 能力与 NumPy 的性能表现，结论是数据量在 CPU 缓存内时两者打平，超出缓存后差距逐渐显现。对关注 Go 高性能数值计算的开发者来说，这份基准测试给出了选型时「什么时候该用 Go 写数值代码」的清晰边界。",
+    "quote": "缓存之内 Go 是神，缓存之外还是 NumPy 的天下。",
+    "source": "Dev.to",
+    "url": "https://dev.to/efraingaray/go-127s-simd-ties-with-numpy-until-the-data-fits-in-cache-2bm8",
+    "published": "2026-08-21",
+    "uid": "dev_08767b0a"
+  },
+  {
+    "title": "LangGraph+PostgreSQL 会话记忆持久化存储",
+    "content": "博客园文章详解用 LangGraph 结合 PostgreSQL 实现 Agent 会话记忆的持久化存储，涵盖表结构设计、记忆读写流程与工程落地细节。对正在构建有状态 AI 应用的开发者来说，是一篇从原理到代码的实操教程，解决了「Agent 一重启就失忆」的经典难题。",
+    "quote": "Agent 终于有了记性，还是存数据库的那种。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/LyShark/p/22585260",
+    "published": "2026-08-21",
+    "uid": "dev_b17cb108"
+  },
+  {
+    "title": "OpenCode × DeepSeek 配置优化实战：一次「费用和 Token 效率优先」的深度重构",
+    "content": "作者分享 OpenCode 接入 DeepSeek 的配置优化实战，以「费用和 Token 效率优先」为目标做了深度重构，包括模型选择、上下文管理、缓存策略等细节。对想用国产模型低成本跑 AI 编程的开发者很有借鉴意义，堪称省钱党的配置教科书。",
+    "quote": "省钱跑 AI 编程，DeepSeek 党的快乐你不懂。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/znlgis/p/22593954",
+    "published": "2026-08-21",
+    "uid": "dev_499d6edf"
+  },
+  {
+    "title": "开源语音输入法 Tyvox：Typeless 之外的又一选择",
+    "content": "V2EX 用户开源 Tyvox 语音输入法，定位为 Typeless 之外的又一选择，主打低延迟本地语音转文字，支持多种使用场景。作者在帖中分享了设计思路与实现细节，社区反响不错，对想摆脱付费语音输入法的人是个新选择。",
+    "quote": "平替的尽头是开源，白嫖党的胜利。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1235944#reply4",
+    "published": "2026-08-21",
+    "uid": "dev_8733a013"
+  },
+  {
+    "title": "[开源] ProxyPin MCP Workbench：让 AI 直接分析抓包、整理 API、管理 Mock 和数据归档，支持移动端",
+    "content": "开发者开源 ProxyPin MCP Workbench，让 AI 能直接分析抓包数据、整理 API 结构、管理 Mock 与数据归档，并支持移动端。相当于给 AI 装了一双「网络显微镜」，调试接口时不用再人肉翻报文，开发效率直接拉满。",
+    "quote": "抓包给 AI 看，调试接口从此不用人肉翻报文。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1235853#reply0",
+    "published": "2026-08-21",
+    "uid": "dev_79241072"
+  }
+]
