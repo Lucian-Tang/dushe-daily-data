@@ -1,0 +1,227 @@
+[
+  {
+    "title": "软件没有理由再慢了：danluu 的性能之怒",
+    "content": "danluu 发文《软件没有理由再慢了》：现代硬件性能早已过剩，软件却越用越卡。文章盘点常见性能杀手——不必要的抽象层、盲目依赖框架、默认配置陷阱，并用大量实例证明大部分「慢」靠 profiling 和常识就能解决。HN 上拿下 560 分、404 条评论，堪称性能优化界的教科书级吐槽。",
+    "quote": "硬件跑得飞快，软件拖后腿，这锅人得背。",
+    "source": "HN Front Page",
+    "url": "https://danluu.com/perf-opt/",
+    "uid": "dev_c33f0408",
+    "published": "2026-08-23"
+  },
+  {
+    "title": "The New MCP Roadmap：Agent 互联的下一个里程碑",
+    "content": "MCP 官方发布新路线图，明确下一阶段聚焦：更完善的鉴权与授权机制、跨平台标准传输层，以及面向企业级部署的可观测性。作为 AI Agent 工具调用的事实标准，这份路线图引发生态开发者热议，HN 上 83 分、63 条评论，被视为 Agent 互联互通走向成熟的关键一步。",
+    "quote": "标准多了生态就乱，MCP 想当终结者。",
+    "source": "HN Front Page",
+    "url": "https://blog.modelcontextprotocol.io/posts/mcp-roadmap/",
+    "uid": "dev_5622ff3d",
+    "published": "2026-08-23"
+  },
+  {
+    "title": "OTel 不太顺利：复杂到需要一张表格来追踪",
+    "content": "可观测性老兵 Matt Duggan 撰文《OTel isn't going well》，用一张大表盘点 OpenTelemetry 各组件现状：规范持续膨胀、SDK 版本碎片化、各厂商实现参差不齐，直言项目已经复杂到「不建表根本理不清」。文章在 HN 引发运维圈强烈共鸣，评论区一片「说出了心声」。",
+    "quote": "工具复杂到要 spreadsheet 管理，已经输了。",
+    "source": "HN Front Page",
+    "url": "https://matduggan.com/otel-isnt-going-well-and-i-made-a-spreadsheet-about-it/",
+    "uid": "dev_71ae9940",
+    "published": "2026-08-23"
+  },
+  {
+    "title": "Codemod grep：按语法结构搜索全网公开代码",
+    "content": "Show HN：Codemod grep 上线——不按文本、按语法结构搜索公开 GitHub 代码。它支持 ast-grep 模式，按 AST 形状找代码，比如「所有没检查返回值的 unwrap」。结构化搜索让跨仓库代码考古效率飙升，被网友称为「代码界的搜索引擎」。",
+    "quote": "文本搜索是考古，结构化搜索是透视。",
+    "source": "HN Show HN",
+    "url": "https://grep.codemod.com/",
+    "uid": "dev_7e71e5f7",
+    "published": "2026-08-23"
+  },
+  {
+    "title": "Knowl：CLAUDE.md 写到 1000 行后，我做了会自我剪枝的记忆",
+    "content": "一位开发者吐槽 CLAUDE.md 已膨胀到 1000 行，于是开源了 Knowl——一个会自我剪枝的 Agent 记忆系统：自动归档过期上下文、压缩冗余记忆，让长期运行的 AI Agent 不再「一开新会话就失忆」。登上 HN Show，引发关于 Agent 长期记忆工程化的讨论。",
+    "quote": "记忆会自己瘦身，比人脑自律多了。",
+    "source": "HN Show HN",
+    "url": "https://github.com/dat999zx/knowl",
+    "uid": "dev_fcf0b81a",
+    "published": "2026-08-23"
+  },
+  {
+    "title": "Forst：把 TypeScript 后端渐进式迁移到 Go 的新语言",
+    "content": "作者花 1.5 年打磨新语言 Forst，目标是在后端逐步取代 TypeScript：保留 TS 的开发体验，编译成原生代码，解决 JS 后端的性能与资源占用问题。支持增量迁移，已有真实项目落地。HN Show 上引发「换语言 vs 优化运行时」的路线之争。",
+    "quote": "TS 后端跑不动？换语言比换人快。",
+    "source": "HN Show HN",
+    "url": "https://forst-lang.org/docs",
+    "uid": "dev_3ed6c11b",
+    "published": "2026-08-23"
+  },
+  {
+    "title": "ECC：Agent 框架性能优化系统登顶 Trending",
+    "content": "affaan-m/ECC 登上 GitHub Trending 榜首：一套 Agent 框架性能优化系统，为 Claude Code、Codex、OpenCode 等编程 Agent 注入技能、本能、记忆与安全机制，主打 research-first 开发流程。超高热度的背后，是 AI 编程工具链正在疯狂内卷的缩影。",
+    "quote": "Agent 也拼性能了，卷完人类卷 AI。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/affaan-m/ECC",
+    "uid": "dev_e7045f38",
+    "published": "2026-08-23"
+  },
+  {
+    "title": "OpenLogi：Rust 重写的本地优先罗技驱动开源实现",
+    "content": "Rust 编写的本地优先 Logitech Options+ 开源方案 OpenLogi 火了：免账号、无遥测，通过 HID++ 直接重映射按键、DPI 和 SmartShift。受够罗技官方软件臃肿的外设党纷纷迁移，GitHub 上已攒下 13.5k stars 且还在涨。",
+    "quote": "罗技官方软件有多烂，OpenLogi 就有多香。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/AprilNEA/OpenLogi",
+    "uid": "dev_fafbf4b9",
+    "published": "2026-08-23"
+  },
+  {
+    "title": "GitBoost：Codex 全流程开发的 GitHub 加速工具",
+    "content": "V2EX 开发者自荐 GitBoost：专治 GitHub Clone 慢、Release 下载失败，是一款无需全局 VPN 的桌面加速工具。特别之处在于整个项目从代码、界面、测试到文档全部由 Codex 完成，堪称一次完整的 AI 编程实践样本，代码已开源。",
+    "quote": "Codex 写的加速器，GitHub 看了都沉默。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1236210#reply0",
+    "uid": "dev_e33d645d",
+    "published": "2026-08-23"
+  },
+  {
+    "title": "Zacp：把终端 AI 编程助手搬进浏览器",
+    "content": "V2EX 开发者持续迭代 Zacp：把 Codex CLI、Grok Build 等终端 AI 编程助手接入浏览器，任意设备可视化指挥 AI 写代码，并配套轻量级智能体 Zlite。目标是把 TUI 门槛降到零，让 AI 编程「所见即所得」，已开源。",
+    "quote": "TUI 劝退新手？那就把 Agent 塞进浏览器。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1236195#reply9",
+    "uid": "dev_ea059472",
+    "published": "2026-08-23"
+  },
+  {
+    "title": "自愈式爬虫 Agent：抓挂了会自己修自己",
+    "content": "Dev.to 作者分享基于 Google Agent 生态构建的 patchwright：一个自愈式爬虫 Agent。抓取失败时自动诊断原因、自动修选择器、自动重试，并且不会把未经验证的「修复」直接上线。给爬虫运维装上了 AI 自动驾驶，运维成本肉眼可见地下降。",
+    "quote": "爬虫会自己修自己了，运维又要失业。",
+    "source": "Dev.to",
+    "url": "https://dev.to/athoughtfulsoul/building-a-self-healing-scraper-agent-that-wont-ship-a-fix-it-cant-prove-2in1",
+    "uid": "dev_f17165af",
+    "published": "2026-08-23"
+  },
+  {
+    "title": "批量 LLM 任务省钱指南：队列优先架构",
+    "content": "Dev.to 技术文提出 Queue-First 架构跑批量 LLM 任务：免费模型额度最大的敌人是同步调用，用队列削峰填谷、批量聚合请求，能把推理成本打下来一个量级。给批量推理工程化提供了可落地的参考范式，评论区直呼「早该这么干」。",
+    "quote": "同步调用一时爽，月底账单火葬场。",
+    "source": "Dev.to",
+    "url": "https://dev.to/gitjs_8094/batch-llm-jobs-without-breaking-the-bank-a-queue-first-architecture-for-free-tiers-j3g",
+    "uid": "dev_9063daf8",
+    "published": "2026-08-23"
+  },
+  {
+    "title": "AI 都会写代码了，为什么还逼学员读 2010 年的旧书？",
+    "content": "编程一生发文：学员用 AI 写完了 Agent 项目功能，结果改一处崩一处、不敢动了。老师没看代码，先问了三个问题——评测集呢？bad case 错题本呢？这周删过代码吗？三连否后，他从书架上抽出一本 2010 年的旧书。AI 时代，工程基本功依然是保命题。",
+    "quote": "AI 写得快删得也快，基本功才救命。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/xiexj/p/22627413",
+    "uid": "dev_b5576e96",
+    "published": "2026-08-23"
+  },
+  {
+    "title": "ClearVoice TTS：iPhone 上离线跑的 SOTA 语音克隆",
+    "content": "Show HN 自荐：号称首个能在 iPhone/iPad 本地跑起来的 SOTA 级语音克隆 TTS 应用。模型完全离线运行，峰值占用约 6GB 内存，主流 Mac 和部分较新 iPhone/iPad 都能带得动，数据不出设备。对想做端侧语音合成的开发者来说，这是个很有拆解价值的工程样本——把大模型塞进移动端还要保音质，本身就是硬活。",
+    "quote": "语音克隆卷到端侧，苹果用户先享福。",
+    "source": "HN Show HN",
+    "url": "https://apps.apple.com/ie/app/clearvoice-text-to-speech/id6798899505",
+    "uid": "dev_30cdf840",
+    "published": "2026-08-23"
+  },
+  {
+    "title": "K8s-audit：30 秒给 Kubernetes 集群做安全体检",
+    "content": "一个零依赖的 Kubernetes 安全检查工具：只靠 kubectl 和 jq 两条命令，30 秒内跑完常见安全基线检查——权限过大的 RBAC、暴露的 Dashboard、不安全的 etcd 配置等。适合不想在集群里装一堆 agent 的团队，脚本即审计，随手塞进 CI 或巡检 cron 就能用。安全这事，能 30 秒解决的问题没必要拖太久。",
+    "quote": "安全巡检 30 秒，出事排查 30 天。",
+    "source": "HN Show HN",
+    "url": "https://github.com/k8s-security-pro/k8s-audit",
+    "uid": "dev_6f2b15e8",
+    "published": "2026-08-23"
+  },
+  {
+    "title": "AREA512：在 M5Stack 单片机上一口气写完并跑起 Ruby",
+    "content": "一个把 Ruby 开发环境整个搬进 M5Stack Cardputer 的项目：在小屏幕上写代码、编译、运行 Ruby，全程不依赖电脑。作者在设备端做了不少优化，比如内存管理和交互设计。性能当然没法跟桌面比，但「口袋里随时写 Ruby」的极客浪漫拉满，嵌入式加动态语言爱好者不容错过。",
+    "quote": "单片机跑 Ruby，属于是极客的浪漫了。",
+    "source": "HN Show HN",
+    "url": "https://github.com/engneer-hamachan/area512",
+    "uid": "dev_4bd94cf8",
+    "published": "2026-08-23"
+  },
+  {
+    "title": "Munder Difflin：让你的 AI 克隆体开个「办公室」一起干活",
+    "content": "HN 173 分热帖。开源 multi-agent harness，用《办公室》主题的模拟界面管理你的 AI 克隆体：支持 Claude Code、Codex、Grok、Gemini CLI 等 12 种 CLI agent，复用你现有订阅和额度，克隆体之间还能加密互发消息、交接任务，模拟过程是确定性的、不烧 token。把「一个人活成一个部门」玩成了字面意思。",
+    "quote": "一人成军还不够，现在要一人成公司。",
+    "source": "HN Front Page",
+    "url": "https://munderdiffl.in/",
+    "uid": "dev_b18c6d51",
+    "published": "2026-08-23"
+  },
+  {
+    "title": "Rust Glancer：内存占用砍 100 倍的 Rust LSP",
+    "content": "rust-analyzer 作者 matklad 花 4 个月打造的实验性 Rust LSP：主打低内存，全程 RAM 压在 100MB 以下，8GB 老 MacBook 也能流畅用。功能上已有完整索引管线、类型推断和 chalk trait solver，跳转、悬停、补全等常规操作都可用。虽然还缺不少功能，但「用 100 倍更少的内存做同样的事」这个方向，够 IDE 厂商焦虑一阵了。",
+    "quote": "IDE 吃内存的时代，该结束了。",
+    "source": "HN Front Page",
+    "url": "https://rust-glancer.github.io/blog/hello-world/",
+    "uid": "dev_1ff50606",
+    "published": "2026-08-23"
+  },
+  {
+    "title": "哔哩喵：浏览器里直接存 B 站视频，最高 4K 原画",
+    "content": "V2EX 开源自荐的浏览器扩展：不用装任何本地软件，就能保存 B 站视频封面、把音视频流分离保存（最高 4K 原始画质），再用 ffmpeg.wasm 在浏览器后台直接合成 MP4，完全不打断你继续刷视频。FLV 合并、多分P 处理也一并支持。对经常想「先存着慢慢看」的 B 站用户来说，比装一堆下载器省心太多。",
+    "quote": "刷 B 站最怕的「视频没了」，有解药了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1236456#reply2",
+    "uid": "dev_6959c557",
+    "published": "2026-08-23"
+  },
+  {
+    "title": "AIOps：把 Kubernetes 集群变成 AI 的「工作区」",
+    "content": "V2EX 分享的 AI 原生运维项目 ZKE：一个云端 Codex 式的运维 App，把目标集群当作 Agent 的工作区。你用自然语言提问，模型自己决定该读哪些对象、Event、日志和指标，再给出结论甚至直接操作。相当于给 K8s 运维配了个会自己翻日志、看监控的 AI 助手，SRE 的日常从敲命令变成「问问题」。",
+    "quote": "以后排障不是敲命令，是跟 AI 对话。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1236435#reply0",
+    "uid": "dev_15cc12ec",
+    "published": "2026-08-23"
+  },
+  {
+    "title": "Duo Translator v2.2.3：沉浸式翻译的开源新选择，Safari 也能用了",
+    "content": "开源的双语对照翻译扩展更新到 v2.2.3：新增 Safari 支持（beta，需手动安装），配置同步支持 Google Drive。作者在 V2EX 自荐时透露，Chrome 版用户已从首发时的 400 多涨到 2000。作为沉浸式翻译之外的开源新选择，主打「翻译不破坏原文排版」的双语对照体验，适合在意数据隐私、想自己掌控翻译管线的用户。",
+    "quote": "沉浸式翻译有了平替，还是开源的。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1236161#reply0",
+    "uid": "dev_5d6598fd",
+    "published": "2026-08-23"
+  },
+  {
+    "title": "任务队列溢出？重排序没用，拆分才有救",
+    "content": "一位维护 20 多个小站、每天自动更新的开发者分享的排障经验：批处理队列积压溢出时，他试过按优先级重排序，队列却始终不见缩小——因为重排序只是改变处理顺序，不改变总量。真正解决问题的是把大任务拆成小块，让队列消化速度跟上生产速度。反直觉但很实用的队列架构心得，适合被后台任务折磨的人。",
+    "quote": "重排序治标不治本，拆开才有效。",
+    "source": "Dev.to",
+    "url": "https://dev.to/takahiro_hashito_a1f3f0dc/reordering-an-overflowing-job-queue-does-not-shrink-it-splitting-it-does-5131",
+    "uid": "dev_1217f7c8",
+    "published": "2026-08-23"
+  },
+  {
+    "title": "免费模型 vs 自托管：Agent 负载的盈亏平衡框架",
+    "content": "一篇给 AI Agent 工作负载算账的文章：最便宜的模型不是单价最低的那个，而是「你付得起它的失败模式」的那个。作者给出盈亏平衡框架，帮你在免费 API、付费 API 和自托管开源模型之间做选择——把重试成本、失败率、延迟和运维开销都算进去，而不是只看每千 token 价格。对纠结「要不要自己部署模型」的团队是份实用参考。",
+    "quote": "最贵的模型，往往是免费的那个。",
+    "source": "Dev.to",
+    "url": "https://dev.to/codepro_3283/free-vs-self-hosted-models-a-break-even-framework-for-agent-workloads-14lp",
+    "uid": "dev_937b52b4",
+    "published": "2026-08-23"
+  },
+  {
+    "title": "Qwen3.5-9B 微调实测：RTX 5090 比 4090D 采纳率提升 9%",
+    "content": "博客园作者对比了在 RTX 5090（32G）和 RTX 4090D（24G）上微调 Qwen3.5-9B 的差异：5090 训练出的模型采纳率提升 9%。文章从 4bit 量化的「信息瓶颈」讲起，分析 QLoRA 压缩权重时的信息损失对模型表现的影响，顺带给出显存、batch 等实操建议。对想升级显卡搞微调的个人开发者，是份含金量不错的选型参考。",
+    "quote": "显存差 8G，效果差 9%，钱包在哭泣。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/test-shirley/p/22635012",
+    "uid": "dev_cc38f4a6",
+    "published": "2026-08-23"
+  },
+  {
+    "title": "知识库文件解析失败？真凶可能是数据库索引",
+    "content": "一次典型的「表面现象误导排查」记录：知识库上传文件后解析失败，日志只显示「保存分块失败」。作者先用小文件复现，层层缩小范围，最终定位到 Oracle 表上的 Domain Index 处于 failed 状态——根因根本不在文件解析流程本身。文章完整复盘定位思路：先复现、再缩小范围、最后查数据库对象状态，排查类文章里的教科书案例。",
+    "quote": "日志说的「分块失败」，真凶在数据库。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/jyzhao/p/21385620",
+    "uid": "dev_f411392b",
+    "published": "2026-08-23"
+  }
+]
