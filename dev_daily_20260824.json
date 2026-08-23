@@ -1,0 +1,227 @@
+[
+  {
+    "title": "MartyPC：用 Rust 复刻早期 PC 的硬核模拟器",
+    "content": "MartyPC 是一款用 Rust 编写的跨平台早期 PC 模拟器，专注还原 8086/286 时代的硬件细节，精度优先于速度，连显卡 quirks 都逐一复刻。项目在 HN 拿下 154 分、55 条评论，是复古硬件爱好者和底层开发者的口碑之作，也是 Rust 系统编程能力的一次硬核展示。",
+    "quote": "模拟老电脑比用新电脑还认真，情怀无敌。",
+    "source": "HN Front Page",
+    "url": "https://martypc.net/",
+    "uid": "dev_ac62ee59",
+    "published": "2026-08-24"
+  },
+  {
+    "title": "把 JIT 编译压进 5 微秒：极致延迟的运行时优化",
+    "content": "作者展示把 JIT 编译耗时压进 5 微秒的完整方案：放弃传统编译管线，直接生成机器码，绕过不必要的优化与内存分配，让热路径代码在运行时几乎零成本生成。文章拆解了寄存器分配、代码缓冲与缓存策略，对追求极致延迟的运行时开发者极具参考价值。",
+    "quote": "5 微秒编译？我的 IDE 还没反应过来。",
+    "source": "HN Front Page",
+    "url": "https://malisper.me/jit-compiling-code-in-5-us/",
+    "uid": "dev_d36b5f50",
+    "published": "2026-08-24"
+  },
+  {
+    "title": "Fast and Hard Code：Armin Ronacher 谈性能与可维护性之争",
+    "content": "Armin Ronacher 撰文探讨「又快又硬」的代码：当性能目标与可维护性冲突时，工程上该怎样取舍。他结合 Flask 与 Rust 生态的实战经验，讨论哪些优化该做、哪些属于过早优化，以及怎样用 profiling 数据说服团队，而不是靠直觉拍板。",
+    "quote": "快是硬道理，但别把代码写硬了。",
+    "source": "HN Front Page",
+    "url": "https://lucumr.pocoo.org/2026/8/22/fast-hard-code/",
+    "uid": "dev_33b4f183",
+    "published": "2026-08-24"
+  },
+  {
+    "title": "NanoGPT Speedrun：把 GPT 训练卷成极限运动",
+    "content": "Prime Intellect 发布 NanoGPT 训练速度竞赛的新基准：在单卡与多卡条件下把 GPT 规模模型训练耗时压到极限，并公开全套 kernel 优化、通信压缩与调度技巧。项目既是工程炫技，也为小团队低成本复现大模型训练提供了可抄的作业。",
+    "quote": "卷完推理卷训练，GPT 也要跑酷。",
+    "source": "HN Front Page",
+    "url": "https://www.primeintellect.ai/research/nanogpt-speedrun",
+    "uid": "dev_8ba90deb",
+    "published": "2026-08-24"
+  },
+  {
+    "title": "现代关系查询语言该长什么样？一个 SQL 老兵的吐槽",
+    "content": "作者从日常 SQL 痛点出发，列出理想中的现代关系查询语言应具备的特性：更好的组合性、类型安全、可测试性，以及摆脱字符串拼接的查询构建方式。文章在 HN 引发关于 SQL 是否该被取代的争论，数据库爱好者们吵成一团。",
+    "quote": "SQL 五十年了，还是没人敢动它。",
+    "source": "HN Front Page",
+    "url": "https://sporks.space/2026/08/19/things-i-want-in-a-modern-relational-query-language/",
+    "uid": "dev_ca3b6c4c",
+    "published": "2026-08-24"
+  },
+  {
+    "title": "Writing-eval：给 AI 写稿上「出厂质检」的本地规则引擎",
+    "content": "Writing-eval 是一个本地、确定性的写作风格检查工具，专门给 AI 生成的草稿做质检：不依赖 LLM 打分，用规则引擎检测冗长句式、被动语态、重复用词等风格问题，输出可复现的评分报告。适合内容团队在发布前给 AI 文案统一把关。",
+    "quote": "AI 写稿也要过质检，人类编辑松了口气。",
+    "source": "HN Show HN",
+    "url": "https://github.com/majesticlabs-dev/writing-eval",
+    "uid": "dev_358a1977",
+    "published": "2026-08-24"
+  },
+  {
+    "title": "Harness-subagent：让 Claude Code 直接调用 Codex 的编排器",
+    "content": "作者开源 Harness-subagent：一个编排器，让 Claude Code 可以直接调用 Codex 作为子 Agent，反之亦然。它打通了两个主流 AI 编程 Agent 的边界，支持任务拆分与结果回传，被网友调侃为「AI 程序员之间的劳务派遣」。",
+    "quote": "AI 也会外包了，卷出新高度。",
+    "source": "HN Show HN",
+    "url": "https://github.com/ptmrio/harness-subagent",
+    "uid": "dev_f873d765",
+    "published": "2026-08-24"
+  },
+  {
+    "title": "Histiq：浏览器历史与 PDF 的本地语义搜索",
+    "content": "Histiq 是本地运行的语义搜索引擎，能对浏览器历史记录和本地 PDF 做向量化索引，用自然语言就能找回「上周看过的那篇讲 Raft 的文章」。数据不出本机，隐私友好，解决了浏览器自带历史搜索只能关键词匹配的长期痛点。",
+    "quote": "浏览器历史终于能「想」起来了。",
+    "source": "HN Show HN",
+    "url": "https://histiq.com/",
+    "uid": "dev_9e069e1e",
+    "published": "2026-08-24"
+  },
+  {
+    "title": "AI 写了一百万行代码后，我学到了什么",
+    "content": "V2EX 热帖：作者分享让 AI 累计写了一百万行代码后的真实感悟——AI 擅长铺量，但架构决策、边界条件和隐性需求仍得人来扛；代码评审的工作量不降反升，团队协作方式被彻底改写。评论区围绕「AI 到底提高了多少效率」吵翻了。",
+    "quote": "百万行 AI 代码，Bug 也是百万量级。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1236531#reply13",
+    "uid": "dev_ec79d254",
+    "published": "2026-08-24"
+  },
+  {
+    "title": "「写入已确认」没你想的那么可靠：数据库 ack 的真相",
+    "content": "作者以支付平台数据库运维经历切入：写入被 ack 不等于数据安全，主从延迟、刷盘策略、复制确认都可能让 ack 变成虚假承诺。文章详解各种写入确认语义与故障场景，提醒开发者别把「写成功了」当成免死金牌。",
+    "quote": "ack 只是客气话，数据丢了才知道。",
+    "source": "Dev.to",
+    "url": "https://dev.to/saqibameen86/the-write-was-acknowledged-means-less-than-you-think-4nm8",
+    "uid": "dev_e4d94174",
+    "published": "2026-08-24"
+  },
+  {
+    "title": "Agent 的 p99 是另一种生物：LLM 应用尾延迟观察笔记",
+    "content": "面向 LLM Agent 生产环境的性能观察笔记：Agent 的 p99 延迟与普通 API 完全不同——模型推理波动、工具调用链、重试风暴都会把尾延迟拖到离谱。文章给出采样、预算与降级策略，让 Agent 在真实流量下不至于集体超时。",
+    "quote": "Agent 的 p99，是另一种生物。",
+    "source": "Dev.to",
+    "url": "https://dev.to/loopandretry/your-agents-p99-is-a-different-animal-28mi",
+    "uid": "dev_e0be4992",
+    "published": "2026-08-24"
+  },
+  {
+    "title": "我把 Redis 双活塞进 Spring，业务代码零改动",
+    "content": "码哥字节分享生产实践：通过自研双写组件把 Redis 数据同步塞进 Spring 生态，业务代码零侵入，解决主从切换丢数据、缓存与数据库一致性等痛点。文章从半夜告警场景出发，讲透双写方案的设计、容错与回放机制，缓存实战党福音。",
+    "quote": "双写一时爽，一致性火葬场？不存在的。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/uniqueDong/p/22642386",
+    "uid": "dev_485a1e4d",
+    "published": "2026-08-24"
+  },
+  {
+    "title": "AI 时代，程序员拼的到底是什么",
+    "content": "编程一生从技术招聘视角发问：当「手写算法」「默写 API」的面试权重明显下降，程序员的核心竞争力变成什么？答案是问题定义能力、系统判断力与 AI 协作效率。文章结合多位技术管理者的观点，讨论 AI 时代工程师的生存法则。",
+    "quote": "面试不考手写算法了，改考会不会用 AI。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/xiexj/p/22640199",
+    "uid": "dev_d2e00cdb",
+    "published": "2026-08-24"
+  },
+  {
+    "title": "openai/codex 持续霸榜：AI 编程从「补全」走向「自治」",
+    "content": "OpenAI 的 Codex 再次登上 GitHub Trending：作为云端 AI 编程 Agent，它支持自然语言到代码的完整闭环，与 GitHub 深度集成，可自动提 PR、修 Issue。榜单常客的背后，是 AI 编程工具从代码补全到任务自治的快速进化。",
+    "quote": "天天霸榜，程序员的地位 -1。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/openai/codex",
+    "uid": "dev_dd83ac17",
+    "published": "2026-08-24"
+  },
+  {
+    "title": "basecamp/omarchy：大厂堆料时代的一股清流",
+    "content": "Basecamp 开源的新项目 Omarchy 登上 Trending：主打「少即是多」的软件开发方法论与工具链，延续 Basecamp 一贯的反内卷风格，强调小团队、小依赖、快速交付。在 AI 军备竞赛愈演愈烈的当下，这股清流引发了不少讨论。",
+    "quote": "大厂都在堆料，Basecamp 在减负。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/basecamp/omarchy",
+    "uid": "dev_462a1fae",
+    "published": "2026-08-24"
+  },
+  {
+    "title": "LAN Sheriff：实时地图，看你的电脑在跟谁通信",
+    "content": "Show HN 自荐：一个实时监控本机网络连接的桌面工具，把设备与各服务器的通信情况投射到地图上，谁在跟谁说话一目了然。对排查可疑外联、揪出偷偷上传数据的应用非常实用，也适合安全爱好者观察自己机器的「社交圈」。轻量可视化，装上就能用，属于一眼看懂、越用越上头的网络观测小工具。",
+    "quote": "你的电脑在跟谁私聊，这下全曝光了。",
+    "source": "HN Show HN",
+    "url": "https://github.com/291-Group/LAN-Sheriff",
+    "published": "2026-08-24",
+    "uid": "dev_1a381bad"
+  },
+  {
+    "title": "Ringdl2：Rust + io_uring 的轻量 Linux 下载器",
+    "content": "Show HN 自荐：一个用 Rust 和 io_uring 实现的轻量级 Linux 下载器。io_uring 异步 IO 让它在高并发下载场景下吞吐和内存表现优于传统 epoll 方案，设计上追求极简——单二进制、无运行时依赖。适合喜欢研究现代 Linux IO 机制的开发者，也是 Rust 系统编程一份不错的参考样本。",
+    "quote": "下载器也要卷异步 IO，祖师爷 wget 沉默了。",
+    "source": "HN Show HN",
+    "url": "https://github.com/infomaniac777/ringdl2/blob/master/README.md",
+    "published": "2026-08-24",
+    "uid": "dev_01cbbc53"
+  },
+  {
+    "title": "WiFi CSI 与毫米波之争：存在感知场景 CSI 性价比最高",
+    "content": "V2EX 技术分享：关于 WiFi CSI（信道状态信息）人体感知能力的一线实测。作者明确划界——计人、定位、测心率这类高精度需求该上毫米波，但「空间里是否有人活动」这类存在感知场景，CSI 在隐私、成本、穿墙和大面积覆盖上性价比最高，并同步开源了代码与测试固件。",
+    "quote": "术业有专攻，毫米波别来抢 CSI 的饭碗。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1236541#reply10",
+    "published": "2026-08-24",
+    "uid": "dev_55215335"
+  },
+  {
+    "title": "从 Demo 到生产：那些真正让 AI Agent 敢上线的护栏",
+    "content": "Dev.to 中文文章：多数「AI Agent」只停留在 Demo 阶段，上不了生产往往卡在同一个问题——缺少护栏。作者基于在微软跑约 25 个 Agent 的生产经验，拆解是什么在阻止 Agent 做出伤害性行为，并给出一个开源小脚手架，覆盖权限收敛、操作审计、失败兜底等关键环节，是 Agent 工程化少有的实战向内容。",
+    "quote": "Demo 谁都能跑，护栏才是生产的入场券。",
+    "source": "Dev.to",
+    "url": "https://dev.to/sunny_1024k/cong-demo-dao-sheng-chan-na-xie-zhen-zheng-rang-ai-agent-gan-shang-xian-de-hu-lan-3p6e",
+    "published": "2026-08-24",
+    "uid": "dev_e2d5a6fa"
+  },
+  {
+    "title": "Ryker：浏览器里的 HTML/Markdown 编辑器，输出 Agent 可用的变更请求",
+    "content": "Dev.to 文章：浏览器内的 HTML/Markdown 可视化编辑器 Ryker，特色是输出「agent-ready」的变更请求——编辑结果直接生成结构化的 diff 与变更说明，方便喂给 LLM 或 CI 流程继续处理。在模型生成 HTML 越来越快的当下，补上了「人工微调后高效回流给 Agent」这一环。",
+    "quote": "给 AI 打工的编辑器，改完还能交接给 AI。",
+    "source": "Dev.to",
+    "url": "https://dev.to/gbti/ryker-turn-html-and-markdown-edits-into-agent-ready-change-requests-3o6c",
+    "published": "2026-08-24",
+    "uid": "dev_07c38461"
+  },
+  {
+    "title": "断网也不失联：一个应急网状网络的实战记录",
+    "content": "Dev.to 文章：作者自建了一个断网也能用的应急网状网络 OEMN（Offline Emergency Mesh Network）。电网崩溃、基站瘫痪、互联网消失时，手机之间仍能通过网状拓扑互相通信求救。文章完整记录硬件选型、组网协议与实测过程，是灾难应急通信方向少见的实战分享。",
+    "quote": "全网断联时，你的手机还能当对讲机。",
+    "source": "Dev.to",
+    "url": "https://dev.to/bharqav/i-built-a-mesh-network-that-works-when-the-internet-doesnt-co3",
+    "published": "2026-08-24",
+    "uid": "dev_c2f150e3"
+  },
+  {
+    "title": "Codex Windows 平台 elevated sandbox 机制学习",
+    "content": "博客园技术文：作者逐行梳理 Codex Desktop 在 Windows 平台（非 WSL2）的 elevated sandbox 机制，结合 OpenAI 官方文档讲清提权沙箱的启动链路、权限边界，以及与 unelevated 沙箱的区别。对在 Windows 上深度使用 Codex、又担心沙箱逃逸或权限配置不当的开发者，是份难得的踩坑笔记。",
+    "quote": "沙箱机制看不懂？代码级拆解安排上。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/grey-wolf/p/22643567",
+    "published": "2026-08-24",
+    "uid": "dev_6c205434"
+  },
+  {
+    "title": "十年 Office 开发的终极大招：让 AI 帮你做专业 Excel 插件",
+    "content": "博客园文章：十年 Office 开发的作者把压箱底经验做成一个 AI Skill，让 AI 帮你从零生成专业 Excel 插件——自定义函数、现代化功能区、WebView2 网页面板、媲美前端界面的 WPF 任务窗格，全程一行代码不用手写。基于 Excel-DNA 技术栈，把「让 AI 写 Office 插件」从口号变成了可复用的工作流。",
+    "quote": "十年 Office 功力，打包成 Skill 传给 AI。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/ExcelCuiHuaJi/p/22642226",
+    "published": "2026-08-24",
+    "uid": "dev_99963a3c"
+  },
+  {
+    "title": "一起关于龙芯 MIPS64el 的「数据泄露」排查纪实",
+    "content": "博客园排障纪实：借「龙芯处理器存在架构层漏洞」的新闻热度，作者复盘了早年龙芯 MIPS64el 平台上一次真实的数据泄露排查。文章强调此次问题与新闻所述架构漏洞的诱因、严重程度不同，完整还原从现象、定位到根因的分析链路，是国产芯片平台上难得的底层排障案例。",
+    "quote": "蹭热点不忘科普，排障案例才是硬货。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/KBin/p/22636347",
+    "published": "2026-08-24",
+    "uid": "dev_9e26c59a"
+  },
+  {
+    "title": "被主流遮住的世界：那些不该被忽视的编程语言",
+    "content": "博客园文章：HOPL 百科已收录 8945 种编程语言，主流之外的世界同样精彩。文章盘点 Fortran、COBOL 等仍跑在关键系统的「老将」，Haskell、Lisp 家族的函数式范式，以及 APL 这类数组语言的独特思维，讲清小众语言在特定领域的独特价值，适合想拓宽技术视野的开发者。",
+    "quote": "8945 种语言，你只认识 5 种，亏了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/myvin/p/22357596",
+    "published": "2026-08-24",
+    "uid": "dev_40c2e3f8"
+  }
+]
