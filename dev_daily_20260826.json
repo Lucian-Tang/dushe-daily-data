@@ -1,0 +1,227 @@
+[
+  {
+    "title": "New Mac Studio 发布：M5 Max 与 M5 Ultra 双芯齐上",
+    "content": "苹果发布新款 Mac Studio，搭载 M5 Max 与 M5 Ultra 芯片，性能大幅提升，目标直指专业创意工作流与本地 AI 推理场景。HN 上 431 分、275 条评论，开发者讨论焦点集中在统一内存带宽对本地跑大模型的实用性，以及它与 Mac mini、Mac Pro 之间越来越模糊的定位边界。",
+    "quote": "苹果又发新机，钱包：我谢谢你啊。",
+    "source": "HN Front Page",
+    "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+    "uid": "dev_d704c7b0",
+    "published": "2026-08-26"
+  },
+  {
+    "title": "Qwen 3.8-Flash-Next 预告发布：125B 参数 a6B 激活的 MoE",
+    "content": "通义千问预告 Qwen 3.8-Flash-Next 将于次日正式发布，采用 125B 总参数、6B 激活（a6B）的 MoE 架构，主打高性价比推理。HN 191 分、81 条评论，讨论集中在开源模型迭代速度、API 价格战，以及本地部署的显存门槛是否进一步降低。",
+    "quote": "开源大模型卷成这样，闭源厂商的 PPT 该改版了。",
+    "source": "HN Front Page",
+    "url": "https://modelscope.cn/models/Qwen/Qwen3.8-Flash-Next",
+    "uid": "dev_a93a4862",
+    "published": "2026-08-26"
+  },
+  {
+    "title": "Paul Graham 新文：大学应该如何培养创始人",
+    "content": "Paul Graham 发表新文章，探讨大学该如何为创始人铺路。延续他一贯观点：创业能力难以在课堂上传授，学校能提供的是真实项目机会、资源网络和试错空间，而不是教学生写商业计划书。HN 251 条评论，围绕教育体系、天赋论与创业环境展开激烈交锋。",
+    "quote": "大学教创业？不如先教学生怎么不挂科。",
+    "source": "HN Front Page",
+    "url": "https://paulgraham.com/prepare.html",
+    "uid": "dev_f6e3961e",
+    "published": "2026-08-26"
+  },
+  {
+    "title": "Moon (2024)：交互式可视化大师的月球拆解",
+    "content": "交互式可视化作者 ciechanow.ski 推出新作，用网页动画详解月球的公转、自转、潮汐锁定与月相成因，从地月系统到光照几何层层拆解，交互丝滑程度一如既往。HN 242 分高赞，评论区称其为「教科书级前端交互」，也是天文科普的绝佳教材。",
+    "quote": "别人做科普像 PPT，他做科普像 NASA。",
+    "source": "HN Front Page",
+    "url": "https://ciechanow.ski/moon/",
+    "uid": "dev_a07f86ba",
+    "published": "2026-08-26"
+  },
+  {
+    "title": "SiFive 首款服务器平台深度拆解：RISC-V 进军数据中心",
+    "content": "Chip and Cheese 深度拆解 SiFive 首款服务器平台，分析 RISC-V 进入数据中心的技术路线：核心微架构设计、内存子系统、能效比表现与生态短板。HN 108 分，评论普遍认为 RISC-V 服务器短期内难以撼动 x86 与 ARM，但长期演进仍具想象空间。",
+    "quote": "RISC-V 服务器：第 N 次宣布要颠覆数据中心了。",
+    "source": "HN Front Page",
+    "url": "https://chipsandcheese.com/p/sifives-first-server-platform",
+    "uid": "dev_1ceef33a",
+    "published": "2026-08-26"
+  },
+  {
+    "title": "HN 上有多少内容是 AI？一次数据向的自省",
+    "content": "一篇数据向分析文章：Hacker News 首页到底有多少内容与 AI 相关？作者对首页帖子做了分类统计，量化 AI 内容占比及其随时间的变化，结论引发社区关于信息茧房与技术讨论失衡的争论。HN 134 分、84 条评论，评论区本身就成了文章的注脚。",
+    "quote": "打开 HN 全是 AI，程序员想看别的都难。",
+    "source": "HN Front Page",
+    "url": "https://blog.coredump.cx/p/how-much-of-hn-is-ai",
+    "uid": "dev_fcc0d787",
+    "published": "2026-08-26"
+  },
+  {
+    "title": "MySQL CDC 到 BigQuery：定时同步漏了什么，binlog 怎么补",
+    "content": "数据管道同步的经典痛点。文章对比了周期性批同步与基于 binlog 的 CDC（变更数据捕获）方案：定时同步会漏掉窗口内的删除与更新、延迟不可控、对账成本高；而解析 MySQL binlog 能实时捕获每一笔变更，增量落到 BigQuery。适合正在搭数仓同步链路、被'两边数据对不上账'折磨的工程师，属于数据工程必读的实战向内容。",
+    "quote": "定时同步对不上账？那是 binlog 在嘲笑你。",
+    "source": "HN Front Page",
+    "url": "https://www.erathos.com/en/blog/mysql-cdc-to-bigquery",
+    "uid": "dev_5a388a8b",
+    "published": "2026-08-26"
+  },
+  {
+    "title": "Bookshelf：跑在对象存储上的自托管电子书库",
+    "content": "自托管电子书库项目：把你已有的 EPUB/PDF 丢进 books 目录，一条命令生成服务端渲染的书架页面，支持搜索过滤、在线下载，内置 EPUB 和 PDF 双阅读器。存储层抽象为对象存储，既可以用 Cloudflare Worker + R2 零服务器部署，也可以 Node 服务跑在本地磁盘。主打'书是你自己的，服务器也是你自己的'，自托管爱好者的新玩具。",
+    "quote": "Kindle 会员到期了？自己搭个书架，书永远是你的。",
+    "source": "HN Front Page",
+    "url": "https://github.com/murerkinn/bookshelf",
+    "uid": "dev_f7464dd0",
+    "published": "2026-08-26"
+  },
+  {
+    "title": "HelloAssembly：挑战最小的完整 Windows 应用",
+    "content": "Dave's Garage 系列视频的配套仓库，挑战用 x86 汇编写出'最小的完整 Windows 应用'：要有消息循环、标题栏、最小化/最大化/关闭按钮、系统菜单，还要居中绘制文字。仓库包含原始优化版、应用 shellcode 技巧的版本、手写 PE 头的版本，一个比一个小，最后小到杀毒软件直接误报。极客浓度拉满的硬核整活项目。",
+    "quote": "程序小到被当成病毒，这算不算另类认可？",
+    "source": "HN Front Page",
+    "url": "https://github.com/PlummersSoftwareLLC/HelloAssembly",
+    "uid": "dev_293febcf",
+    "published": "2026-08-26"
+  },
+  {
+    "title": "awesome-gpt-image-2：GPT Image 2 生态资源大全",
+    "content": "GitHub Trending 今日登顶的开源清单：freestylefly/awesome-gpt-image-2 收录 GPT Image 2 的提示词技巧、应用案例、工具与教程，覆盖电商素材、艺术创作、产品设计等场景。适合想快速上手 GPT Image 2 的开发者按图索骥。",
+    "quote": "又一份 awesome 清单，先收藏，吃灰预定。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+    "uid": "dev_93e22735",
+    "published": "2026-08-26"
+  },
+  {
+    "title": "claude-obsidian：把 Claude 装进你的第二大脑",
+    "content": "GitHub Trending 开源项目 AgriciDaniel/claude-obsidian 将 Claude 接入 Obsidian，支持在笔记库内直接对话、批量处理笔记、生成摘要与自动建立知识关联，主打「AI 原生笔记工作流」。知识管理爱好者与重度 Obsidian 用户可以上手一试。",
+    "quote": "笔记软件加 AI，第二大脑终于要进化了？",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/AgriciDaniel/claude-obsidian",
+    "uid": "dev_6f8109c1",
+    "published": "2026-08-26"
+  },
+  {
+    "title": "ai-engineering-from-scratch：从零开始的 AI 工程路线图",
+    "content": "GitHub Trending 项目 rohitg00/ai-engineering-from-scratch 提供一套系统化的 AI 工程学习路线：数学基础、深度学习、LLM 原理、RAG 与 Agent 实战、部署优化，全部附带代码与练习。面向想转 AI 工程却不知从何下手的开发者，今日热度很高。",
+    "quote": "收藏即学会，学会了记得回来还愿。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+    "uid": "dev_01174ea4",
+    "published": "2026-08-26"
+  },
+  {
+    "title": "28 MB 的 Kubernetes 桌面客户端 Aster 开源求反馈",
+    "content": "V2EX 热帖：开发者开源了一款仅 28 MB 的 Kubernetes 桌面客户端 Aster，主打轻量快速，覆盖常用集群操作，发帖征求建议。评论区围绕体积优化空间、功能完整度，以及它和 k9s 等既有工具相比到底赢在哪，讨论得热火朝天。",
+    "quote": "28MB 的 K8s 客户端，比某些 IDE 的启动页还小。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1237083#reply0",
+    "uid": "dev_f092f8c0",
+    "published": "2026-08-26"
+  },
+  {
+    "title": "独立开发者的真实困境：产品做出来了，但没人知道",
+    "content": "V2EX 热帖引发大量共鸣：产品辛苦做出来了，却没人知道。作者复盘独立开发完成后的冷启动困境——流量、渠道、运营全是短板，代码能力救不了曝光。评论区变成大型血泪史现场，各路独立开发者分享自己踩过的获客坑与冷启动心得。",
+    "quote": "产品做出来只是开始，没人用才是日常。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1237057#reply1",
+    "uid": "dev_35be491c",
+    "published": "2026-08-26"
+  },
+  {
+    "title": "horsie：一个自托管的开源 cloud agent 平台",
+    "content": "作者自研并开源的 cloud agent 平台，Apache-2.0/MIT 双协议。agent 跑在 horsie server 里，runtime 部署在你自己的机器或云主机上；支持 Anthropic、OpenAI 协议模型，也能接 ChatGPT 套餐；已实现定时任务、subagent、workflow 等能力。主打自托管、数据不出门，发帖求意见，属于独立开发者的诚意之作。",
+    "quote": "云端 agent 太多？自己养一只 horsie 最放心。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1237000#reply0",
+    "uid": "dev_68965c3a",
+    "published": "2026-08-26"
+  },
+  {
+    "title": "Skills 管理工具：Agent 多了，技能却散落各处",
+    "content": "Agent 用多了，Skills 散落各处成为真实痛点——开发者可能同时在 Claude Code、Codex、Cursor、Gemini CLI、Copilot、Trae、OpenCode 等多个工具间切换，每个工具的 Skills 各自为政、无法复用。作者做了个开源管理工具统一收纳、同步、版本化管理这些 Skills，帖子 31 条回复，说明痛点相当普遍，AI 工作流玩家可以重点关注。",
+    "quote": "Agent 越多 Skills 越乱，这届开发者急需收纳师。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1236972#reply31",
+    "uid": "dev_9f5c1fbf",
+    "published": "2026-08-26"
+  },
+  {
+    "title": "Git Agent：一个 git 可视客户端的'缝合怪'",
+    "content": "跨平台 Git 桌面客户端，主打多仓库统一管理：标签页切换项目、后台自动同步远端状态、清理已删除的远端引用，完整支持提交/拉取/推送/分支/标签等日常操作。亮点是'缝合'了 AI 合并建议功能，冲突处理时给出智能提示。作者自嘲缝合怪，但功能看起来是真能打，多仓库选手可以试试。",
+    "quote": "缝合怪怎么了？能解决冲突的就是好 Git 客户端。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1236848#reply0",
+    "uid": "dev_295bf02b",
+    "published": "2026-08-26"
+  },
+  {
+    "title": "手滑 drop 了 stash？git fsck 是你的后悔药",
+    "content": "Dev.to 实用教程：误删 git stash 之后的补救方案。文章演示用 git fsck 找回丢失的 stash 提交，逐步讲解 dangling commit 的底层原理、恢复命令与预防措施。篇幅不长但全是干货，属于每个 Git 用户都该收藏的救命教程。",
+    "quote": "git fsck 不只是体检工具，还是后悔药。",
+    "source": "Dev.to",
+    "url": "https://dev.to/thebguy/recovering-a-dropped-stash-what-git-fsck-can-still-find-50g9",
+    "uid": "dev_09835fff",
+    "published": "2026-08-26"
+  },
+  {
+    "title": "AI Agent 测试全绿，但产品真的做出来了吗？",
+    "content": "Dev.to 反思文：AI 编程 Agent 的评估方式可能跑偏了。测试全绿不代表交付了产品，文章讨论测试覆盖盲区、需求理解偏差与真实场景复杂度，主张用端到端产物而非单测通过率衡量 Agent 能力。评论区不少被 Agent 坑过的开发者表示扎心。",
+    "quote": "测试过了，产品黄了，Agent：这锅我不背。",
+    "source": "Dev.to",
+    "url": "https://dev.to/jlcases/your-ai-agent-passed-the-tests-did-it-build-the-product-3616",
+    "uid": "dev_bada3e68",
+    "published": "2026-08-26"
+  },
+  {
+    "title": "N+1 查询问题：你的 API 为什么发了 101 条 SQL",
+    "content": "后端性能经典坑。开发环境数据量小看不出问题，一上生产数据涨起来 API 就慢成蜗牛——大概率是 N+1：查一次列表再为每行各查一次关联。文章拆解了 N+1 的形成机制、ORM 里常见的触发姿势，以及预加载、批量查询、分页等解法，属于'早读早受益'的必修课，适合所有写后端和 ORM 的开发者。",
+    "quote": "101 条 SQL 只为 20 条数据，数据库都摇头。",
+    "source": "Dev.to",
+    "url": "https://dev.to/allenarduino/the-n1-query-problem-why-your-api-might-be-making-101-database-queries-instead-of-2-4j3g",
+    "uid": "dev_d3e4f874",
+    "published": "2026-08-26"
+  },
+  {
+    "title": "可移植性陷阱：'能加载'不等于'能工作'",
+    "content": "作者把 Claude Code 的 skills 迁移到 OpenCode，表面上一帆风顺，实际功能悄悄退化。文章提出'可移植性陷阱'：能加载不等于能工作，工具链、路径约定、环境变量的隐性依赖会在迁移后无声失效。给所有做 Agent 技能迁移、跨平台工具移植的人提了个醒：迁移后要按功能逐项验收，而不是看它'跑起来了'就收工。",
+    "quote": "能启动只是面子，功能没丢才是里子。",
+    "source": "Dev.to",
+    "url": "https://dev.to/buildloops/the-portability-trap-when-it-loads-doesnt-mean-it-works-3a21",
+    "uid": "dev_0f8eb759",
+    "published": "2026-08-26"
+  },
+  {
+    "title": "REST vs GraphQL 实战：不站队的取舍指南",
+    "content": "作者两种 API 风格都真刀真枪用过，结论是选择不取决于谁更'先进'，而取决于消费方到底需要什么：REST 简单直接、缓存友好；GraphQL 按需取数、减少往返，但带来缓存复杂度和查询滥用风险。文章给出按场景取舍的实用框架，适合正在做 API 设计决策的团队，比网上那些'GraphQL 吊打 REST'的口水文实在得多。",
+    "quote": "别问哪个好，先问你的客户端缺不缺字段。",
+    "source": "Dev.to",
+    "url": "https://dev.to/stackhorizon/rest-vs-graphql-in-practice-17k7",
+    "uid": "dev_ddd9cb3d",
+    "published": "2026-08-26"
+  },
+  {
+    "title": "频谱分析架构演进笔记：扫频、步进 FFT 与实时架构",
+    "content": "博客园长文：频谱分析架构的演进路线，从传统扫频到步进 FFT，再到实时频谱架构，逐层对比各方案在分辨率、实时性与成本上的取舍，并附上工程实践细节。信号处理与嵌入式方向的开发者可以当一份不错的架构参考。",
+    "quote": "从扫频到 FFT，频谱分析也在卷架构。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/aaronia/p/22685008",
+    "uid": "dev_bac129e1",
+    "published": "2026-08-26"
+  },
+  {
+    "title": "61 亿次请求背后：LLM Serving 的 Cache 与调度难题",
+    "content": "基于某公司一年 61.2 亿次真实 LLM 请求 Trace 的 Serving 负载分析：长输入短输出成为主流趋势，Prefix Cache 复用呈强时间局部性（99% 命中集中在 15 分钟内），并首次系统论证多节点下'缓存复用'与'负载均衡'的本质权衡——Cache-aware 路由能提效，但会牺牲均衡性。给做大模型推理优化的团队一份难得的真实数据参考。",
+    "quote": "61 亿次请求告诉你：缓存命不中，调度全白搭。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Qiniu-developer/p/22676127",
+    "uid": "dev_35551579",
+    "published": "2026-08-26"
+  },
+  {
+    "title": "四款 APP 加固强度测评：让 AI 拆了四个包",
+    "content": "作者嫌手撸 readelf、strings、数类表太琐碎，干脆让 AI 代劳拆包：四个真实上线的 APP（起点读书/360、123云盘/爱加密、汽车街/梆梆、凤凰视频/乐固），解包、解 manifest、遍历 dex、算熵值、扫 ELF，AI 出基础数据，作者做复核判断。结果有点出乎意料——加固强度与厂商名气并不完全成正比。安全从业者的偷懒式测评，干货与乐子并存。",
+    "quote": "让 AI 拆加固包，省下的时间够再水两篇文章。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/bytehidden/p/22677308",
+    "uid": "dev_0fe7dbaa",
+    "published": "2026-08-26"
+  }
+]
