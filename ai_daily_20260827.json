@@ -1,0 +1,200 @@
+[
+  {
+    "title": "Qwen3.8-Flash-Next 正式发布：125B 总参 6B 激活",
+    "content": "通义千问正式发布 Qwen3.8-Flash-Next，官方博客详解新架构：总参数 125B、激活参数仅 6B 的 MoE 设计，主打极致成本效率。相比此前的模型页预告，发布博客补充了架构细节与性能数据，推理成本进一步下探。社区普遍预期该模型将冲击开源性价比榜首，本地部署与 API 调用成本有望再降一个量级，开源小模型军备竞赛进入白热化。",
+    "quote": "125B 只激活 6B，省下的电费够再训一个模型了。",
+    "source": "Qwen Blog (HN)",
+    "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+    "published": "2026-08-27",
+    "uid": "ai_66fbebd7"
+  },
+  {
+    "title": "比尔·盖茨：动荡的 AI 时代已经到来",
+    "content": "比尔·盖茨在 Gates Notes 发文，称 AI 正把世界带入'动荡的时代'，能源、算力与安全将是决定 AI 走向的关键变量。他呼吁在加速应用的同时建立护栏，并批评'要么全速前进、要么全面禁止'的两极叙事。文章延续其近年对 AI 治理的一贯立场，被解读为科技领袖对 AI 风险公开表态的又一次加码，也引发对 AI 发展节奏的再讨论。",
+    "quote": "连盖茨都说动荡了，看来 AI 这趟车确实有点晃。",
+    "source": "Gates Notes (HN)",
+    "url": "https://www.gatesnotes.com/a-turbulent-ai-era-and-critical-choices-to-make",
+    "published": "2026-08-27",
+    "uid": "ai_7b3a4f10"
+  },
+  {
+    "title": "Trail of Bits：虚拟机挡不住网络能力 Agent",
+    "content": "安全公司 Trail of Bits 发文警告，虚拟机隔离无法真正约束具备网络攻击能力的 AI Agent：逃逸面不止 VM 边界，还包括侧信道、供应链与凭证滥用。文章认为'把 Agent 关进 VM 就安全'是危险错觉，建议将 Agent 视为不可信实体，重新设计隔离、审计与监控体系。该文呼应了近期多起模型自主联网事件的讨论，是 AI 安全领域的重要警示。",
+    "quote": "把 Agent 关进 VM 就安全？先问问 VM 怕不怕",
+    "source": "Trail of Bits Blog (HN)",
+    "url": "https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents",
+    "published": "2026-08-27",
+    "uid": "ai_1c5e22d3"
+  },
+  {
+    "title": "RAG 没你想的那么复杂",
+    "content": "Lighthouse 通讯发文拆解 RAG（检索增强生成）：多数场景下向量检索、重排加提示词拼接就够用，图数据库与混合检索往往是过度设计。作者用实际案例说明怎样按任务复杂度选择架构，并指出'先跑通再优化'比追求 fancy 方案更重要。文章在 HN 引发 330+ 讨论，不少从业者共鸣'过度工程才是常态'，被视为对 RAG 祛魅的务实之文。",
+    "quote": "RAG 很简单，难的是说服自己别把它做复杂。",
+    "source": "Lighthouse Newsletter (HN)",
+    "url": "https://www.lighthousenewsletter.com/p/rag-is-simpler-than-you-think",
+    "published": "2026-08-27",
+    "uid": "ai_ee7ddd8b"
+  },
+  {
+    "title": "用代码教 Qwen 画画：RLing 训练绘画模型",
+    "content": "开发者发文分享用强化学习（RLing）训练 Qwen 模型'用代码绘画'的实验：模型学习生成绘图代码而非像素，通过奖励函数引导输出可执行的 SVG 图形程序。文章展示了从提示到成品图的完整链路，并讨论代码作为绘画中间表示的优势——可编辑、可缩放、算力消耗低。该实验被 HN 社区评价为'最有趣的 RL 应用之一'。",
+    "quote": "别人用 RL 打游戏，他用 RL 教画画——更抽象",
+    "source": "surya.website (HN)",
+    "url": "https://surya.website/rling-qwen-to-paint-with-code",
+    "published": "2026-08-27",
+    "uid": "ai_cb1ce96d"
+  },
+  {
+    "title": "Recuris：递归经验-工作记忆，长程 Agent 新架构",
+    "content": "arXiv 新论文提出 Recuris 架构：将 Agent 记忆拆分为工作记忆与经验记忆，由元 Agent 根据执行证据持续更新技能库，形成有边界的递归记忆演化回路。在 tau-bench、SkillFlow 等长程基准上，35/37 组模型-任务组合取得提升，Claude Opus 5 达 87.9% SOTA，最长任务最高提升 32.2 分，长程失败率最高降 80%。",
+    "quote": "记忆会进化，Agent 越用越强——打工人的呢？",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2608.24876",
+    "published": "2026-08-27",
+    "uid": "ai_3ac6ae52"
+  },
+  {
+    "title": "LAION-BVD：1000 万小时开放视频数据集",
+    "content": "LAION 发布 BVD 数据集：从 CommonCrawl 收集 13 亿条视频 URL，实际下载 8000 万条视频、总时长 1000 万小时，并配套自动生成的视频与音频字幕，覆盖视频-文本、音频-文本多模态预训练。团队还发现视频关键帧可作图像-文本数据的补充来源，分布与常规网页图库显著不同。这是开放多模态数据的一次大规模扩容，被视为对闭源视频数据的正面回应。",
+    "quote": "LAION 又掏出千万小时数据集——开源界仓库管理员",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2608.24845",
+    "published": "2026-08-27",
+    "uid": "ai_f3a9516a"
+  },
+  {
+    "title": "读了≠用了：AI 金融研报的检索-判断鸿沟",
+    "content": "arXiv 论文揭示 LLM 金融分析中的'检索-整合鸿沟'：上下文从 2000 扩到 12.8 万 token 时，风险披露对投资判断的影响跌至噪声水平，而直接检索准确率保持正常——模型读到了但没用上。研究发现压缩摘要加原文查找可恢复信息传导，工作流架构比模型能力更能决定分析质量。该结论对当前以检索为中心的 RAG 评测方法提出直接质疑。",
+    "quote": "AI 分析师：资料我读了，判断？那是我没发挥好。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2608.24842",
+    "published": "2026-08-27",
+    "uid": "ai_1ab77211"
+  },
+  {
+    "title": "飞书搞这么多'豆包 xxx'，疯了么",
+    "content": "V2EX 热帖吐槽飞书批量上线'豆包'系列 AI 功能，从文档、表格到会议无处不在，用户直呼打开飞书像进了豆包超市。评论区观点两极：有人嫌功能堆砌、入口混乱，有人认为办公场景 AI 化大势所趋。该帖折射出国内大厂办公软件 AI 功能军备竞赛的现状，也再次引发'功能多不等于体验好'的产品讨论。",
+    "quote": "飞书：每个按钮里都住着一个豆包，总有一款烦到你。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1237426",
+    "published": "2026-08-27",
+    "uid": "ai_2c84412b"
+  },
+  {
+    "title": "Claude Code 月底前额度提升 50%",
+    "content": "V2EX 用户爆料 Claude Code 在 8 月 31 日前额度提升 50%，叠加 Anthropic 此前对订阅用户的多次加量，被解读为应对 OpenAI Codex 恢复 5 小时限制后的竞争压力。评论区多名用户实测确认额度变化，并顺势讨论各家 AI 编程工具的价格战与额度营销策略，订阅党的'薅羊毛'姿势又多了几种。",
+    "quote": "额度 +50%，bug 数量 ×2——数学很诚实",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1237403",
+    "published": "2026-08-27",
+    "uid": "ai_50f87ab0"
+  },
+  {
+    "title": "把 MacBook 刘海变成 AI Agent 工头",
+    "content": "V2EX 开发者开源项目：把 MacBook 屏幕顶部刘海区域改造成 AI Agent 的'工头'，实时展示任务状态、排队进度与执行日志，支持多 Agent 并行调度可视化，项目以 MIT 协议开源并附全部源码。创意被社区调侃'刘海终于不只是摄像头了'，也展示了 AI 开发工具在交互形态上的想象力——连屏幕瑕疵都能变成生产力。",
+    "quote": "刘海：从摄像头遮羞布到 AI 监工，我身价翻倍了。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1237319",
+    "published": "2026-08-27",
+    "uid": "ai_0cde8761"
+  },
+  {
+    "title": "What FID Hides：生成模型评测的'标量幻觉'被揭穿",
+    "content": "生成模型排名长期被 FID 这类标量指标垄断，但新论文指出 FID 只统计前两阶矩，会漏掉关键分布差异：在 ImageNet 上，仅优化到匹配参考集均值与协方差的'视觉不可识别'图像，FID 反而比真实图像更好（24.7 vs 58.6）。作者提出 ZID 诊断框架，用六条位置/分散敏感臂输出三个关联指标，区分欠分散（模式坍缩）与过分散，给'一个标量定胜负'的评测习惯敲响警钟。",
+    "quote": "FID 也会被'以假乱真'骗到，标量指标该退休了。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2608.24881",
+    "published": "2026-08-27",
+    "uid": "ai_5800d314"
+  },
+  {
+    "title": "SPO++：异步 Agentic RL 不再苦等队友轨迹",
+    "content": "组相对强化学习要等同一 prompt 的多条兄弟轨迹，长工具调用场景成本极高。单流策略优化 SPO 用 prompt 级价值估计摆脱依赖，但轨迹级 centering 与 actor 的 token 加权损失对不齐。SPO++ 改在 action-token 测度下标准化终端优势，在 ALFWorld 两个规模与 Math-TIR 上均提升在线学习效率，消融证实 token 测度归一化是最强组件。",
+    "quote": "等队友的 RL 太慢，SPO++ 直接单干还更快。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2608.24870",
+    "published": "2026-08-27",
+    "uid": "ai_6d289319"
+  },
+  {
+    "title": "BrowserForge：数百浏览器沙箱并行，给像素级 Web Agent 造数据",
+    "content": "像素级 Web Agent 不读 HTML 也不烧 token，但训练依赖海量高质量交互轨迹，公开数据集通常只有几千条且网站范围狭窄。BrowserForge 用并行浏览器沙箱在开放互联网上规模化生成数据：开放网页采集让 Agent 接触数十万真实网站，沙箱集群管理器调度数百并发浏览器，Proposer-Solver 双 Agent 循环把原始页面变成可执行任务并收集验证轨迹。",
+    "quote": "网页 Agent 的训练数据，靠几百个浏览器打工凑。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2608.24848",
+    "published": "2026-08-27",
+    "uid": "ai_a0f82f39"
+  },
+  {
+    "title": "诊断对、推理假：医疗思维链竟是'装饰性'的",
+    "content": "临床医生把思维链（CoT）当作医疗推理的证据，但新研究用 30 种临床扰动算子（严重性反转、否定翻转、人口学替换、证据消融）审计 14 个 LLM 在四个医学基准上的表现：链条解耦率高达 72.9%，即链条被实质性破坏答案却纹丝不动；破坏链条不降精度，去掉 CoT 提示也不掉分。两位认证医师复核 197 道扰动题，98.5% 的金标准依然成立——模型诊断是对的，但推理过程是装饰。",
+    "quote": "医生看 CoT 当证据？72.9% 的链条是装饰品。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2608.24790",
+    "published": "2026-08-27",
+    "uid": "ai_b494e84b"
+  },
+  {
+    "title": "100 个样本训出 AI 文本检测器：线性探针完胜 16 个基线",
+    "content": "机器生成文本（MGT）检测器普遍存在跨域退化、依赖大规模训练集的问题。新研究发现 MGT 与人类文本的隐表征在低维空间线性可分，且可分性源于表征质量的系统性差异。基于此训练的两种线性探针在 4 个基准上击败 16 个基线，域外检测 AUC 提升 11 个点，不到 100 个样本即可逼近峰值性能——因为探针学到了跨设置共享的 MGT 方向，为轻量级检测提供了全新思路。",
+    "quote": "100 个样本就能训出检测器，还要啥自行车。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2608.24780",
+    "published": "2026-08-27",
+    "uid": "ai_fa26aa02"
+  },
+  {
+    "title": "Show HN：Hacker News 到底被 AI 占领了多少？实时计数器上线",
+    "content": "Show HN 项目 'Days Since AI'：一个实时统计 Hacker News 里 AI 含量的计数器。从 UTC 午夜起统计当天新提交中标题含 'AI' 的比例，每出现一条 AI 标题就重置计时器，直观展示 'HN 被 AI 淹没' 的程度。页面纯前端实现，直接轮询 HN API，支持 7 天/30 天/年度/全部时间范围对比。",
+    "quote": "HN 到底多 AI？计数器每刷一条就重置一次。",
+    "source": "HN Show HN",
+    "url": "https://hnstats.com",
+    "published": "2026-08-27",
+    "uid": "ai_cf610654"
+  },
+  {
+    "title": "超越回忆：AI 编程争论背后是'能力错觉'",
+    "content": "关于 AI 编程，'AI 无用论'和'AI 取代程序员论'吵得不可开交，作者认为两派都聚焦错了对象——谁写代码根本不重要。程序员本来就不靠记忆写代码：查文档、搜网络、复制 Stack Overflow、读同事代码才是日常，现代软件系统里没人能纯靠记忆工作。真正稀缺的是理解与整合能力，而 AI 让'看起来会写'变得空前廉价，恰好制造了一种能力错觉。",
+    "quote": "写代码不靠记忆，AI 只是放大了'看起来会'。",
+    "source": "var0.xyz (HN)",
+    "url": "https://var0.xyz/posts/beyond-recall-and-the-illusion-of-competence.html",
+    "published": "2026-08-27",
+    "uid": "ai_48b46efb"
+  },
+  {
+    "title": "Radar 让播客可搜索，还能被 AI Agent 直接使用",
+    "content": "AI 新闻阅读器 Particle 推出 Radar，让播客变得可搜索、可被 AI Agent 直接使用。传统播客是音频孤岛，无法检索也无法被程序消费，Radar 将播客内容结构化，用户既能按关键词搜索，也能让 AI Agent 从中提取信息、执行任务。对播客行业与 AI 信息消费都是新变量，音频内容终于从'听过就忘'走向'可计算'，也再次印证 Agent 正在重塑内容分发的底层逻辑。",
+    "quote": "播客终于从'听过就忘'变成 AI 可计算的资产。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/08/26/radar-makes-podcasts-searchable-and-usable-by-ai-agents",
+    "published": "2026-08-27",
+    "uid": "ai_645b176a"
+  },
+  {
+    "title": "机器人'大脑'构建者，正在走出自己的 GPT-2 时代",
+    "content": "Physical AI 是当下最热赛道之一，TechCrunch 报道称机器人'大脑'构建者正在走出自己的 GPT-2 时代。早期机器人模型能力有限、泛化差，大多停留在 demo 阶段；如今随着数据、算力与模型架构的成熟，机器人基础模型正经历类似大语言模型当年的跃迁，从演示级能力迈向规模化落地。文章梳理了行业拐点信号与代表性玩家的进展，物理 AI 的军备竞赛已经鸣枪。",
+    "quote": "机器人大脑走出 GPT-2 时代，物理 AI 要起飞。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/08/26/robot-brain-builders-are-pushing-out-of-their-gpt-2-era",
+    "published": "2026-08-27",
+    "uid": "ai_c19ecce3"
+  },
+  {
+    "title": "指定 GPT-5.6 却被派给 composer 2.5，Cursor 用户破防",
+    "content": "V2EX 用户吐槽：在 Cursor 里明明指定了 GPT-5.6，问一个问题却被悄悄派给了 composer 2.5 子 Agent，20 美元额度才用掉四分之一就要到期。评论区有人指点：设置里可以关掉自动创建子 Agent。模型路由'不听话'的体验引发共鸣——付费模型被降级调用，成了 AI 编程工具用户的新式不爽，也暴露了工具层模型调度不透明的老问题。",
+    "quote": "指定 GPT-5.6，它给你派个 composer 小弟。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1237468",
+    "published": "2026-08-27",
+    "uid": "ai_9f078762"
+  },
+  {
+    "title": "DeepSeek Harness 开源一周 18.3 万 star，插件目录应声上线",
+    "content": "DeepSeek Harness（dsh）开源一周狂揽 18.3 万 star，插件生态爆发，但发现机制只有 GitHub topic，上万仓库根本没法逛。开发者做了个自动聚合目录：150 个 dsh 插件加 200 个 Codex 插件按 star 排序，cron 每天拉取最新数据、有变化才重新部署，120 个静态页面零 JS 框架负担，Cloudflare Pages 免费托管，全程零成本。",
+    "quote": "18 万 star 的插件生态，居然靠 topic 标签找。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1237475",
+    "published": "2026-08-27",
+    "uid": "ai_75491362"
+  }
+]
