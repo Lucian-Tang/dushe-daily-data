@@ -1,0 +1,227 @@
+[
+  {
+    "title": "AWS 收购 DuckDB：数据库圈的顶流被巨头拿下",
+    "content": "AWS 正式宣布收购 DuckDB 母公司 DuckDB Labs，数据库圈大地震。DuckDB 作为嵌入式分析数据库的明星项目，凭借单机百万行级查询的极致体验在开发者中口碑爆棚。收购后 DuckDB 将继续保持开源，但授权模式与云服务整合路径引发热议。HN 614 分、157 条评论，焦点集中在 AWS 是否会重蹈 Elasticsearch、Redis 式『开源收购后变味』的覆辙。",
+    "quote": "AWS 又进货了，这次是数据库圈的顶流。",
+    "source": "HN Front Page",
+    "url": "https://ducklabs.com/news/2026/08/26/ducklabs-to-join-aws",
+    "uid": "dev_6403cfb1",
+    "published": "2026-08-27"
+  },
+  {
+    "title": "GLM-5.3-Flash 发布：智谱再打性价比牌",
+    "content": "智谱发布 GLM-5.3-Flash，主打低延迟高性价比推理，官方博客给出详尽的性能与定价分析。HN 345 分、145 条评论，开发者关注点集中在与 GPT、Claude 同级模型的性价比对比、开源权重可用性，以及国产模型在海外开发者中的接受度。同日 artificialanalysis.ai 也上线独立评测，称其在价格性能比上表现亮眼，开源模型迭代速度再度引发讨论。",
+    "quote": "大模型价格战又添新选手，闭源厂商连夜改 PPT。",
+    "source": "HN Front Page",
+    "url": "https://z.ai/blog/glm-5.3-flash",
+    "uid": "dev_ddeeb42f",
+    "published": "2026-08-27"
+  },
+  {
+    "title": "WebMCP：教你的网站学会跟 AI Agent 对话",
+    "content": "作者提出 WebMCP（网站模型上下文协议）构想：让网站通过标准化接口主动向 AI Agent 暴露能力与数据，相当于 MCP 的网站端实现。文章探讨了 robots.txt 的局限性、AI 爬虫的治理困境，以及网站从『被动被抓取』转向『主动提供服务』的转变。HN 评论区热议这会不会成为 Web 与 AI 交互的新标准，还是又一个昙花一现的提案。",
+    "quote": "网站以后得学会跟 AI 说话，不然流量全归别人。",
+    "source": "HN Front Page",
+    "url": "https://sreenathmenon.com/blog/2026-08-04-webmcp-teaching-websites-to-talk-to-ai-agents/",
+    "uid": "dev_206c6ae9",
+    "published": "2026-08-27"
+  },
+  {
+    "title": "You could have invented PageRank：从第一性原理推导谷歌核心算法",
+    "content": "一篇手把手推导 PageRank 的技术文章，作者从『给网页排序』这个朴素问题出发，逐步引出随机游走、马尔可夫链、阻尼因子等核心概念，证明 PageRank 并非天才的灵光一现，而是从第一性原理可以自然推导出的方案。HN 高分推荐，适合想理解搜索引擎核心原理的开发者，评论区一致好评其讲解的清晰度。",
+    "quote": "谷歌核心算法，看完感觉我也能发明（并不）。",
+    "source": "HN Front Page",
+    "url": "https://praveshkoirala.com/2026/08/26/you-could-have-invented-pagerank/",
+    "uid": "dev_8a061178",
+    "published": "2026-08-27"
+  },
+  {
+    "title": "ponytail 登顶 GitHub Trending：教 AI Agent 像最懒的资深工程师一样思考",
+    "content": "DietrichGebert/ponytail 今日登顶 GitHub Trending，斩获 11.2 万 star。这个项目教 AI Agent『偷懒』：像资深工程师一样优先考虑不写代码的解法，避免过度工程化。核心理念是『最好的代码是你从未写过的代码』，通过约束 agent 的思维模式减少无效产出，引发关于 AI 编码习惯与代码审美的社区大讨论。",
+    "quote": "教 AI 摸鱼的正确姿势：能不改就不改。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/DietrichGebert/ponytail",
+    "uid": "dev_17158476",
+    "published": "2026-08-27"
+  },
+  {
+    "title": "openhuman：本地优先的个人 AI 记忆大脑，38k star 新星",
+    "content": "tinyhumansai/openhuman 今日以 3.8 万 star 登榜，定位『个人 AI 超级智能』：在本地构建你的生活记忆库，作为 agent 舰队与工作流的中枢调度器。主打隐私本地优先、记忆持久化，让 AI 真正『了解你』。项目用 Rust 编写，性能与资源占用表现优秀，是个人 AI 基础设施赛道备受关注的新项目。",
+    "quote": "给 AI 装个大脑，从此它记得你昨天说过啥。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/tinyhumansai/openhuman",
+    "uid": "dev_a336bf68",
+    "published": "2026-08-27"
+  },
+  {
+    "title": "Manus 被 Meta 数十亿美元收购：营销造神迎来大结局",
+    "content": "V2EX 热议：国产 AI 智能体明星 Manus 被 Meta 以数十亿美元收购，为这场充满争议的『逆天营销』画上句号。社区观点两极：一方认为这是国产 AI 出海的最佳结局，另一方调侃『营销造神』模式最终由巨头接盘。评论区还回顾了 OpenManus 等开源复刻版当年抢走风头的旧事，以及『那波营销到底留下多少用户』的灵魂拷问。",
+    "quote": "营销造神巅峰之作，最后让 Meta 接了盘。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1182036",
+    "uid": "dev_8bd7022b",
+    "published": "2026-08-27"
+  },
+  {
+    "title": "Google Antigravity 上线：免费白嫖 Gemini 3 Pro 和 Claude Sonnet 4.5",
+    "content": "Google 新工具 Antigravity 发布，V2EX 网友实测发现可免费使用 Gemini 3 Pro 和 Claude Sonnet 4.5，直呼『这也太壕了』。作为 Google 对 AI 编程与智能体工具的回应，Antigravity 的免费策略被视为对 OpenAI Codex 等收费产品的降维打击。评论区在讨论它能否撼动现有 AI 编程工具格局，以及免费午餐能持续多久。",
+    "quote": "谷歌免费送大模型，友商连夜改价格页。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1173666",
+    "uid": "dev_02714143",
+    "published": "2026-08-27"
+  },
+  {
+    "title": "Knowhere：读博时手搓的文献解析插件，开源后拿下 2500 star",
+    "content": "V2EX 用户分享开源项目 Knowhere：一个文档解析与记忆层工具，源于作者读博时手搓的文献解析插件，用来辅助读文献、写论文、处理大部头文山著海。毕业后发现做 RAG 和知识型 agent 同样适用，于是用 AI 完善后开源，现已收获 2500 star。在 RAG 流程中充当『记忆层』角色，解决文档解析与长期记忆的痛点。",
+    "quote": "读博的副产物，比论文本身还有用。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1237434",
+    "uid": "dev_5e348a01",
+    "published": "2026-08-27"
+  },
+  {
+    "title": "Milvus 3.0 零拷贝直读数据湖：向量库不再囤数据",
+    "content": "博客园文章解析 Milvus 3.0 新架构：向量库不再需要『囤数据』，可直接零拷贝读取数据湖中的 Parquet 文件。传统 RAG 流程中原始数据一份、向量一份、同步还要半夜跑任务的痛点被彻底解决，数据更新与向量过期问题从架构层面消除。对 RAG 工程化团队来说是重要的架构参考，评论区讨论热烈。",
+    "quote": "向量库终于学会不囤货了，数据湖直连真香。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Jackeyzhe/p/22706002",
+    "uid": "dev_aeac8683",
+    "published": "2026-08-27"
+  },
+  {
+    "title": "万字长文：JDK 老项目适配 TLS 1.2/1.3 避坑手册",
+    "content": "博客园万字长文拆解 JDK 老项目适配 TLS 1.2/1.3 的全流程：从 SSLv3 的 POODLE 漏洞、TLSv1.0 的 BEAST 攻击讲起，覆盖协议背景、兼容性排查、证书链问题、性能影响与回退方案。对维护遗留系统的工程师来说是一份可以直接照做的实操手册，发布后迅速登上博客园首页热榜。",
+    "quote": "老项目升级 TLS，坑比协议版本还多。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/xsge/p/22703862",
+    "uid": "dev_db2ecadd",
+    "published": "2026-08-27"
+  },
+  {
+    "title": "wkhtmltopdf 已归档却带着未修复 CVE：迁移指南来了",
+    "content": "老牌 HTML 转 PDF 工具 wkhtmltopdf 已进入归档状态，但仍存在未修复的公开 CVE。作者给出了一份务实的迁移指南：评估现有依赖、对比可行的迁移路线（涵盖托管 API 与开源方案，包括自家产品在内）、制定平滑迁移路径。对仍在使用这个工具的项目是一次及时的供应链安全提醒，Dev.to 热度持续攀升。",
+    "quote": "老伙计退休了还留个坑，该换趁早换。",
+    "source": "Dev.to",
+    "url": "https://dev.to/pdfik/wkhtmltopdf-is-archived-with-an-open-cve-a-field-guide-to-moving-off-it-284a",
+    "uid": "dev_0ed47ece",
+    "published": "2026-08-27"
+  },
+  {
+    "title": "Vibe Coding 没问题，Vibe Debugging 才致命",
+    "content": "Dev.to 热文：作者团队用 AI agent 写了个发订单确认邮件的任务，内存 Set 去重、代码整洁、测试全过、staging 稳了两周，上线后事故频发。文章核心观点：AI 写代码的『氛围感』能掩盖问题，但调试时没有氛围可言——你必须钻进细节里找出 agent 埋的雷。对迷信 vibe coding 的团队是一记及时的警钟。",
+    "quote": "AI 写码一时爽，调试火葬场。",
+    "source": "Dev.to",
+    "url": "https://dev.to/ji_ai/vibe-coding-is-fine-vibe-debugging-is-what-kills-you-23i0",
+    "uid": "dev_7a9f37a3",
+    "published": "2026-08-27"
+  },
+  {
+    "title": "Neoswarm：用 Neovim 指挥 AI agent 集群",
+    "content": "Show HN 项目 Neoswarm：把 Neovim 变成 AI agent 的控制台，在编辑器内直接编排、监控、交互多个 AI agent，让『在 IDE 里指挥 agent 干活』成为现实。面向已经离不开 Neovim 的硬核开发者，把 agent 工作流嵌进最熟悉的编辑环境，评论区已有 Vim 教徒表示『这就是我要的』。",
+    "quote": "Vim 教徒的新玩具：用编辑器指挥 AI 大军。",
+    "source": "HN Show HN",
+    "url": "https://neoswarm.dev/",
+    "uid": "dev_eee59c91",
+    "published": "2026-08-27"
+  },
+  {
+    "title": "TexLite：轻量自托管的 LaTeX 工作区",
+    "content": "Show HN 项目 TexLite 是一个轻量级、可自托管的 LaTeX 工作区，由高校数据库课题组出品。面向不想把论文和数据交给 Overleaf 云端的用户，主打部署轻、开箱即用、数据完全自持。对 LaTeX 重度用户来说，多了一个摆脱云端依赖的选择；对课题组、实验室这类需要内部协作排版的场景也相当实用。HN 上已有一定讨论，属于自托管生态里小而美的工具。",
+    "quote": "不想把论文交给云端？自己架一个 LaTeX 工作区。",
+    "source": "HN Show HN",
+    "url": "https://github.com/SWUFE-DB-Group/TexLite",
+    "uid": "dev_b6920790",
+    "published": "2026-08-27"
+  },
+  {
+    "title": "Show HN：发一个 HTTP 请求即可购买 VPN 通行证（x402，无需注册）",
+    "content": "Show HN 项目把 x402（HTTP 支付协议）玩出了新花样：用一条 HTTP 请求直接购买 VPN 通行证，全程不需要注册账号。请求即购买、响应即服务，把支付摩擦压缩到极致，是「机器可支付（machine payments）」方向的一次生动演示。对关注 Web 支付协议演进、想要理解 HTTP 401/402 语义的开发者来说，这是一个可玩性十足的协议落地案例。",
+    "quote": "支付界新玩法：请求一发，VPN 到手。",
+    "source": "HN Show HN",
+    "url": "https://x402.le-vpn.com",
+    "uid": "dev_57a9d249",
+    "published": "2026-08-27"
+  },
+  {
+    "title": "AurionMail：单密码搞定端到端加密邮件全家桶",
+    "content": "HN 前页项目 AurionMail 将 CryptPad 与 Stalwart 组合成一套端到端加密邮件方案，主打「单密码」用户体验：用户不需要理解密钥、证书、别名等概念，一个主密码就能完成加密邮件的收发与管理。对受够了 PGP 复杂度的普通用户来说，这是 E2EE 邮件易用性的一次重要尝试。HN 21 分，讨论焦点在于加密邮件能否真正走向大众市场。",
+    "quote": "加密邮件终于不用背一打密钥了，单密码走天下。",
+    "source": "HN Front Page",
+    "url": "https://github.com/AurionMail/docs",
+    "uid": "dev_d9f55fcf",
+    "published": "2026-08-27"
+  },
+  {
+    "title": "模型的 JSON 几乎合法：我让它自己批改作业 48 小时",
+    "content": "Dev.to 热文。作者点破 LLM 输出 JSON 的肮脏秘密：几乎所有抽取管道的输出都是「几乎合法」——差一点就能解析成功，而「差一点」正是 bug 的温床，因为人眼扫过很容易放行。于是作者让模型自己给自己批改 48 小时，用自监督循环把隐蔽的格式瑕疵逼出来。对天天跟 LLM 结构化输出打交道的工程团队来说，是一篇实操性极强的排雷经验贴。",
+    "quote": "JSON 几乎合法？几乎就是 bug 的温床。",
+    "source": "Dev.to",
+    "url": "https://dev.to/codepy_1473/the-models-json-was-almost-valid-i-made-it-grade-its-own-homework-for-48-hours-30bn",
+    "uid": "dev_b7c9dbf1",
+    "published": "2026-08-27"
+  },
+  {
+    "title": "10 个会带到生产环境的 EF Core 性能错误",
+    "content": "Dev.to 文章盘点 10 个常见的 EF Core 性能坑：种子数据下 API 飞快、一上生产就变慢。作者直言 EF Core 很少是根因，更多是放大器——大多数团队不是拥有一条灾难性查询，而是大量小查询叠加，把数据库拖垮。文章逐条给出定位思路与修复方向，对 .NET 后端团队来说是一份可以直接对照自查的性能清单，评论区也有不少实战补充。",
+    "quote": "测试环境飞快，生产环境跪了？EF Core 只是放大器。",
+    "source": "Dev.to",
+    "url": "https://dev.to/majdizlitni/10-ef-core-performance-mistakes-that-ship-to-production-1gpc",
+    "uid": "dev_6232b36a",
+    "published": "2026-08-27"
+  },
+  {
+    "title": "2026 年了，Kivy 依然是 Python 上 Android 的合理选择？",
+    "content": "Dev.to 反共识文章。Kivy 在社区口碑不佳——「玩具框架、只配做原型」，但作者 2026 年 8 月真的把一个 Kivy 应用发布到了 Google Play，并给出诚实的评估：哪些场景下 Kivy 依然够用、哪些地方确实痛苦、和 KMP/Flutter 相比差距在哪。对想用纯 Python 做移动端、又不想转语言栈的开发者来说，这是一份难得的实战参考，评论区争议不小。",
+    "quote": "都说 Kivy 是玩具，可他真把应用发上架了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/molfar_system/why-kivy-is-still-a-reasonable-choice-for-python-on-android-in-2026-3l3c",
+    "uid": "dev_fc62c270",
+    "published": "2026-08-27"
+  },
+  {
+    "title": "我带组这些年：60% 的项目卡点不在代码，在人对不齐",
+    "content": "博客园首页热文。作者复盘带过的十几个项目，发现 60% 以上的卡点根本不在代码：技术方案评审会上被怼到流产，跨团队依赖明明该同步，却因为平时没说过话被对方理直气壮拖三周。很多工程师信奉「技术好就行」，直到自己带人才发现对齐预期、经营协作关系才是项目推进的真正瓶颈。对正在做或准备做技术管理的读者，是一篇扎心的经验之谈。",
+    "quote": "代码写得再好，人对不齐照样白干。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/uniqueDong/p/22702867",
+    "uid": "dev_811e2cf6",
+    "published": "2026-08-27"
+  },
+  {
+    "title": "C# 脚本引擎横评：AScript vs Jurassic vs Jint",
+    "content": "博客园文章从性能、功能、应用场景三个维度对比 .NET 生态的几款 JavaScript 脚本引擎。主角 AScript 是开源的 C# 动态脚本解析执行引擎，支持自定义语法，目前已能扩展 C#/Python3/SQL/JavaScript/Lua 五种语言，与老牌 Jurassic、Jint 同台竞技。对需要在 .NET 程序里嵌入脚本能力、做规则引擎或热更新的开发者来说，是一份直接的选型参考。",
+    "quote": "在 C# 里跑五门语言，脚本引擎也卷起来了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/rockey627/p/22706798",
+    "uid": "dev_1ed8e2ca",
+    "published": "2026-08-27"
+  },
+  {
+    "title": "数据集成的真相：链路 Success 不等于数据真实可靠",
+    "content": "博客园 Apache SeaTunnel 团队文章，由 Reddit r/dataengineering 热帖引出 Managed ELT（如 Fivetran）与自建开源方案之争。核心观点：管道任务显示 Success 只代表执行成功，不代表数据真实可靠——字段映射错位、类型隐式转换、增量断点都可能让「绿灯」变成脏数据。对数据团队是及时的提醒：别只盯着任务状态灯，要建立数据质量校验机制。",
+    "quote": "任务亮绿灯，数据照样可能是脏的。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/seatunnel/p/22703070",
+    "uid": "dev_66b3187d",
+    "published": "2026-08-27"
+  },
+  {
+    "title": "开源 macOS 屏幕监控：总结你一天到底在干嘛",
+    "content": "V2EX 用户开源 Day Monitor：一个 macOS 菜单栏小工具，每约 20 秒截一次屏，丢给 Claude Haiku 识别当前在干嘛（写代码、开会、回微信、摸鱼看网页），识别结果写入本地 SQLite 并生成每日总结。解决「上班很累，下班却说不出时间花在哪」的时间黑洞焦虑，数据本地处理不上传。评论区讨论热烈，是 AI 能力加本地隐私处理的典型小工具案例。",
+    "quote": "摸鱼被 AI 记录在案，摸得心安理得。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1237477#reply7",
+    "uid": "dev_a8ef4aac",
+    "published": "2026-08-27"
+  },
+  {
+    "title": "hostflip：不会静默覆盖外部改动的 macOS hosts 切换器",
+    "content": "V2EX 开源分享。开发时经常要在本地、测试、预发几套 hosts 之间切换，但 Docker Desktop、VPN 客户端刚写进去的内容或手动添加的行，都可能被切换工具静默覆盖，事前毫无提醒。作者用 Swift 写了 macOS 原生工具 hostflip，MIT 开源：切换前检测外部改动并给出提示，避免「下次切换才发现配置被冲掉」的坑。对多环境开发的工程师是实用的效率小工具。",
+    "quote": "hosts 被静默覆盖的痛，用过的人都懂。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1237283#reply0",
+    "uid": "dev_5c952f33",
+    "published": "2026-08-27"
+  }
+]
