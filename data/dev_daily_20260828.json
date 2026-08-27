@@ -1,0 +1,227 @@
+[
+  {
+    "title": "AWS 发布 Route 53 Files：静态文件托管杀入 DNS 层",
+    "content": "AWS 正式推出 Route 53 Files 静态文件托管服务，将内容分发直接集成进 DNS 层，主打极低延迟与简单计费。作者 Colin Percival 在博客中详解了服务的设计思路、架构取舍与适用场景，HN 34 分讨论集中在它和 S3+CloudFront 组合的对比，以及 DNS 层做内容分发的延迟优势。对中小站点来说，这可能是一个比传统 CDN 更省心的选择。",
+    "quote": "DNS 都能托管文件了，CDN 厂商瑟瑟发抖。",
+    "source": "HN Front Page",
+    "url": "https://www.daemonology.net/blog/2026-08-27-Launching-Route-53-Files.html",
+    "uid": "dev_a6413b8a",
+    "published": "2026-08-28"
+  },
+  {
+    "title": "Needle：让搜索引擎无法靠背题拿高分的基准测试",
+    "content": "Keenable 团队发布 Needle 基准测试，专门用来防止搜索引擎和检索模型靠记忆训练数据『作弊』。传统 benchmark 容易被爬进训练集导致分数虚高，Needle 通过动态生成难以记忆的查询-文档对，逼迫模型真正理解语义而不是背诵答案。HN 13 分讨论集中在基准测试可信度与检索模型评测困境上。",
+    "quote": "出题人终于学会防作弊，检索模型别想背答案。",
+    "source": "HN Front Page",
+    "url": "https://keenable.ai/blog/needle-the-benchmark-your-search-engine-can-t-memorize",
+    "uid": "dev_5f2bec2d",
+    "published": "2026-08-28"
+  },
+  {
+    "title": "84 天逆向任天堂 64 游戏：一场硬核拆解马拉松",
+    "content": "作者记录了一场历时 84 天的 N64 游戏反编译马拉松：从 ROM 逆向、MIPS 汇编分析到还原出接近可读的 C 代码，完整复盘了工具链选择、符号恢复与逐函数攻坚的过程。文章既是一份反编译实战教程，也是个人项目坚持的缩影，HN 推荐给对底层逆向感兴趣的开发者。",
+    "quote": "84 天拆一个游戏，这耐心建议分我一半。",
+    "source": "HN Front Page",
+    "url": "https://blog.chrislewis.au/decompiling-a-nintendo-64-game-in-84-days/",
+    "uid": "dev_c7d8e6fd",
+    "published": "2026-08-28"
+  },
+  {
+    "title": "OpenMontage：52k star 的开源智能视频制作系统",
+    "content": "calesthio/OpenMontage 以 5.2 万 star 登顶 GitHub Trending，号称全球首个开源 agentic 视频制作系统：内置 12 条生产管线、100+ 工具与 700+ agent 技能文件，能把你的 AI 编程助手变成一套完整的视频制作流水线。从脚本到成片全自动化的思路，正在把视频生产门槛拉到新低。",
+    "quote": "视频团队连夜开会：这活 AI 全包了？",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/calesthio/OpenMontage",
+    "uid": "dev_5245a328",
+    "published": "2026-08-28"
+  },
+  {
+    "title": "scientific-agent-skills：把 AI Agent 变成科学家的技能库",
+    "content": "K-Dense-AI/scientific-agent-skills 以 3.5 万 star 登榜，定位『把任意 AI agent 变成 AI 科学家』：提供 163 个开箱即用的科研技能与 100+ 科学数据库，覆盖生物、化学等学科，宣称已被 17.5 万+ 科研人员使用。科研自动化正从论文阅读走向实验设计，技能库模式开始渗透专业领域。",
+    "quote": "以后发论文，作者栏要写 agent 的名字了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "uid": "dev_3c6b302f",
+    "published": "2026-08-28"
+  },
+  {
+    "title": "JetBrains/go-modern-guidelines：教 AI 写现代 Go 的官方指南",
+    "content": "JetBrains 开源 go-modern-guidelines，目标是帮 AI 编码助手写出符合现代 Go 实践的代码：涵盖项目结构、错误处理、并发模型等最佳实践，并以 guideline 形式可直接喂给 agent 作为上下文。官方下场给 AI 当『家教』，侧面印证 AI 生成代码的质量调教已成为工具链必争之地。",
+    "quote": "连 JetBrains 都开始给 AI 补 Go 语法课了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/JetBrains/go-modern-guidelines",
+    "uid": "dev_7a5e5260",
+    "published": "2026-08-28"
+  },
+  {
+    "title": "把开源 PR 全权交给 AI 后，维护者差点变成免费 Reviewer",
+    "content": "V2EX 用户分享给 BililiveRecorder 提交 PR 的曲折经历：最终改动仅 18 行（真正的行为修复只有 4 行），但在此之前 AI 绕了一大圈，给仓库维护者制造了大量额外审阅负担。帖子反思 AI 辅助开发的边界：生成速度快不代表沟通成本低，维护者的耐心才是真正的稀缺资源。",
+    "quote": "AI 写代码快，甩锅给维护者的速度更快。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1237708#reply4",
+    "uid": "dev_a36ad661",
+    "published": "2026-08-28"
+  },
+  {
+    "title": "用 DeepSeek Harness 重写本地 codex 应用，支持插件扩展",
+    "content": "作者把基于 codex 的本地开发工具整体重写：底层保留 codex 执行能力，上层基于 DeepSeek Harness 实现 UI 与多种 agent 工具适配，并支持通过 Harness 插件体系自由扩展。相当于给 codex 换了个可插拔的『大脑外壳』，本地 AI 开发工具链的玩法越来越野。",
+    "quote": "套壳套出新高度，本地 agent 工具链卷起来了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1237662#reply5",
+    "uid": "dev_80256464",
+    "published": "2026-08-28"
+  },
+  {
+    "title": "开源通用文件查看器：Tauri 2 壳 + 自研渲染 SDK",
+    "content": "开发者用 Tauri 2 做桌面壳，套上自己此前用于 Web 端的文件查看 SDK，做出一款本地通用文件查看器：pdf、xlsx、glb、ifc、dxf 等格式拖进去就能看，文件不上传、全本地解析。直击『为一种格式装一个软件』的痛点，评论区正在讨论格式支持范围与渲染性能。",
+    "quote": "一个 App 看所有文件，格式党狂喜。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1237714#reply0",
+    "uid": "dev_ce046041",
+    "published": "2026-08-28"
+  },
+  {
+    "title": "Grok 零点击聊天泄露：加密文本成了可信指令通道",
+    "content": "Adversa AI 展示了一种针对 Grok 与 Gemini 的新型攻击：利用加密文本作为『可信指令』通道，绕过基于文本内容的护栏，实现零点击聊天泄露。加密本应阻止外部入侵，却被用来把恶意指令送进模型内部，安全研究的攻防边界再次被改写。",
+    "quote": "加密本来是盾，现在成了绕过安检的后门。",
+    "source": "Dev.to",
+    "url": "https://dev.to/coridev/groks-zero-click-chat-leak-when-encrypted-text-becomes-a-trusted-instruction-5h6d",
+    "uid": "dev_0f74e6f1",
+    "published": "2026-08-28"
+  },
+  {
+    "title": "LLM 不是攻击者，你的 eval() 才是",
+    "content": "文章吐槽开发者一边担心 prompt injection，一边把 LLM 输出直接喂给 eval() 执行。真正的安全漏洞从来不是模型『说坏话』，而是代码把模型输出当成了可信代码。作者呼吁把模型输出当作不可信输入处理，做好边界校验与沙箱隔离，而不是把锅甩给 AI 安全。",
+    "quote": "模型只是嘴欠，你的 eval() 是真敢执行。",
+    "source": "Dev.to",
+    "url": "https://dev.to/coridev/the-llm-isnt-your-attacker-your-eval-statement-is-2clp",
+    "uid": "dev_ea5c4ac6",
+    "published": "2026-08-28"
+  },
+  {
+    "title": "从 Prompt 到 Policy：AI 工程需要自己的控制面",
+    "content": "文章指出下一代 AI 工程不能只靠 prompt 控制：AI 编码智能体能读仓库、改多文件、跑测试，能力越强越需要 policy 层约束——权限边界、审批流、可观测性缺一不可。作者类比基础设施领域的 control plane，主张把 agent 行为治理提升到工程规范层面，而不是靠运气。",
+    "quote": "Prompt 管不住 agent 了，得上政策约束。",
+    "source": "Dev.to",
+    "url": "https://dev.to/bayu911/from-prompts-to-policies-why-ai-engineering-needs-a-control-plane-4cg9",
+    "uid": "dev_2d3f1af9",
+    "published": "2026-08-28"
+  },
+  {
+    "title": "下一次提交，隔了八年：掘金小程序回来了",
+    "content": "作者八年前用两周做出掘金微信小程序，随后项目沉寂并归档；如今以新版稀土掘金 App 为参照重做页面与功能，让旧代码重新走到今天。一篇充满情怀的『迟到八年的提交』复盘，也是个人项目长期主义的样本：代码可以老，想做的事不会过期。",
+    "quote": "鸽了八年的项目终于提交，程序员の浪漫。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/myvin/p/22685196",
+    "uid": "dev_b3eb167a",
+    "published": "2026-08-28"
+  },
+  {
+    "title": "那个内存泄漏一直都在，只是旧 GC 悄悄替我兜了三年",
+    "content": "一个上线多年、监控全绿的功能，因为一次『应该毫无影响』的 Java 版本升级突然崩溃：容器反复自杀，排查才发现存在三年的内存泄漏，此前一直被旧 GC 的某些行为悄悄兜底。作者复盘了从监控盲区到根因定位的全过程，提醒开发者升级运行时前先想想『谁在替你兜底』。",
+    "quote": "旧 GC 默默背锅三年，升级 Java 当场翻车。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/xiexj/p/22720207",
+    "uid": "dev_9b1af013",
+    "published": "2026-08-28"
+  },
+  {
+    "title": "KinoPipe：把 FFmpeg 包装成 AI Agent 专属服务，告别裸 shell",
+    "content": "Show HN 项目 KinoPipe 把 FFmpeg 封装成面向 AI Agent 的类型化服务：不再让模型去拼 shell 命令，而是通过定义好的操作接口直接调用，避免转义地狱和不可控的副作用。对爱折腾视频处理的开发者来说，这等于给 Agent 装了个安全带，也让视频管线可以被可靠地编排。HN 上刚发布，点子不算新但切中 Agent 工具化的真实痛点，看点十足。",
+    "quote": "FFmpeg 参数地狱，终于有人给 Agent 修了条路。",
+    "source": "HN Show HN",
+    "url": "https://kinopipe.com/",
+    "published": "2026-08-28",
+    "uid": "dev_fd7774d3"
+  },
+  {
+    "title": "pr-lens：每次 PR 自动生成动态架构图，开源",
+    "content": "Show HN 项目 pr-lens 能在每次 Pull Request 时自动生成动画版架构图，把代码变更对系统结构的影响可视化，帮助 reviewer 快速理解改动波及范围。对大型项目来说，比逐行读 diff 直观得多。项目已开源，适合想给团队 Code Review 流程加点视觉辅助的开发者，也侧面反映 AI 辅助工程可视化正在成为新常态。",
+    "quote": "Review 看不懂？让架构图自己动起来。",
+    "source": "HN Show HN",
+    "url": "https://github.com/coldteadotai/pr-lens",
+    "published": "2026-08-28",
+    "uid": "dev_20886d61"
+  },
+  {
+    "title": "TermDrop：一条 curl 命令把本地文件流式传到远程服务器",
+    "content": "Show HN 项目 TermDrop 解决一个高频场景：本地文件传到远程服务器。传统做法是 scp、rsync 或起个 HTTP 服务，TermDrop 的做法是本地拖入文件生成一条 curl 命令，在远端执行即可流式接收。特别适合跑在服务器上的 Agent 拉取本地素材。轻量、零安装依赖，是那种一看就懂、用完就回不去的工具型项目。",
+    "quote": "scp 退散，curl 一条龙把文件送上天。",
+    "source": "HN Show HN",
+    "url": "https://termdrop.sh/",
+    "published": "2026-08-28",
+    "uid": "dev_2b44f74f"
+  },
+  {
+    "title": "Restoredrill：专门验证你的 Postgres 备份真的能恢复",
+    "content": "Show HN 项目 Restoredrill 直击数据库运维最大的谎言：备份一直在跑，但从没验证过能恢复。它自动对 Postgres 备份执行恢复演练，证明备份可用性，避免灾难来临时才发现备份是坏的。对 DBA 和认真做容灾的团队来说这是刚需工具，比定时备份多一层真正的保险，HN 上 22 分 7 评论，讨论热度不错。",
+    "quote": "备份≠能恢复，灾难面前才见真章。",
+    "source": "HN Front Page",
+    "url": "https://github.com/ahmadpiran/restoredrill",
+    "published": "2026-08-28",
+    "uid": "dev_0ef37866"
+  },
+  {
+    "title": "写了个 CLI 回答一个问题：这个改动会弄坏什么？",
+    "content": "Dev.to 文章作者分享了一个自建 CLI：打开仓库、改一个看似无害的文件后，它能自动分析这个改动会影响哪些模块、哪些调用方，在提交前给出破坏面预警。思路类似把 IDE 的引用查找升级成变更影响分析，对大型代码库和新人 onboarding 都很有价值，也展示了 CLI 工具在 AI 时代依然有独特的工程地位。",
+    "quote": "改前问一句会弄坏啥，胜过上线后挨骂。",
+    "source": "Dev.to",
+    "url": "https://dev.to/albz/i-built-a-cli-to-answer-one-question-what-will-this-change-break-114o",
+    "published": "2026-08-28",
+    "uid": "dev_ac69fde6"
+  },
+  {
+    "title": "用 Go 写 MCP Server（三）：IRSA 与 EKS Pod Identity 原理",
+    "content": "Dev.to 连载第三篇深入 MCP Server 在 AWS EKS 上的身份认证问题：Pod 访问 S3 失败往往不是 Kubernetes 配置问题，而是工作负载身份（workload identity）问题。文章拆解 IRSA 和 EKS Pod Identity 的实际工作原理，并给出 Go 实现方案。对在云上跑 Agent 基础设施的开发者来说，是难得的实操向避坑指南。",
+    "quote": "Pod 连不上 S3？先查身份，别瞎调网络。",
+    "source": "Dev.to",
+    "url": "https://dev.to/ferztyle/build-an-mcp-server-in-go-part-3-how-irsa-and-eks-pod-identity-actually-work-45gk",
+    "published": "2026-08-28",
+    "uid": "dev_e7ee99c5"
+  },
+  {
+    "title": "生产环境 AI Agent 测试：一套基于图结构的实用框架",
+    "content": "Dev.to 文章提出面向生产 AI Agent 的测试框架：把 Agent 系统建模成图（节点=工具/模型调用，边=数据流），在确定性单元测试、集成测试和线上观测三个层面分层验证。相比传统端到端测试，图结构能精准定位是哪个环节漂了。对正在把 Agent 推上生产的团队，这篇提供了可落地的测试思维框架。",
+    "quote": "Agent 上线靠运气？图结构测试了解一下。",
+    "source": "Dev.to",
+    "url": "https://dev.to/kai-wen-the-parrot/testing-production-ai-agents-a-practical-framework-for-graph-based-agent-systems-18p0",
+    "published": "2026-08-28",
+    "uid": "dev_66c20151"
+  },
+  {
+    "title": "Ubuntu 纯 CPU 环境 HF 模型转 GGUF 全流程实践",
+    "content": "博客园文章基于 Ubuntu 26.04 纯 CPU 无 CUDA 环境，完整演示用 llama.cpp 把 HuggingFace 原始模型转换为 GGUF 格式并做 CPU 量化，以 Qwen2-0.5B-Instruct 为例，覆盖 Swap 分区配置、依赖安装、llama.cpp 源码编译、转换与量化全链路。对没有 GPU 又想本地跑大模型的开发者来说，是一份可以直接照抄的实操手册。",
+    "quote": "没 GPU 也想玩大模型？CPU 量化安排上。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/LyShark/p/22717966",
+    "published": "2026-08-28",
+    "uid": "dev_6456299d"
+  },
+  {
+    "title": "WorkBuddy 直连 DeepSeek v4 Flash 一发截图就崩？网关层一招根治",
+    "content": "博客园文章记录了企业办公产品 WorkBuddy 接入自建 DeepSeek v4 Flash 推理服务后，遇到『发截图就崩』的线上问题：图片类请求在网关层处理不当导致服务异常。作者分享了在网关层做的根治方案，涉及请求分流、超时与错误处理。对正在自建 LLM 服务的企业开发者，是一篇实战味很浓的排障复盘。",
+    "quote": "截图一发就崩？网关层背锅但也能救命。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/JulianHuang/p/22712928",
+    "published": "2026-08-28",
+    "uid": "dev_030ce121"
+  },
+  {
+    "title": "MaxMind 免费库太拉胯？自己转一个 IPinfo mmdb 库",
+    "content": "V2EX 用户分享：MaxMind 免费库的 IP 归属地污染严重（HK/CN 互相识别错），导致分流规则漂移；IPinfo 免费数据更准，但官方 mmdb 不兼容常见软件且文件过大。作者写了自动化转换脚本，把 IPinfo 官方数据定期转成标准 mmdb 格式。对玩规则分流、自建节点或做地理识别的开发者，是个省时省力的现成方案。",
+    "quote": "MaxMind 免费库坑太多，自己动手丰衣足食。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1237658#reply0",
+    "published": "2026-08-28",
+    "uid": "dev_9b2e5984"
+  },
+  {
+    "title": "开源 AgentConnect：把 Claude Code / Codex 接进团队 IM 和 GitHub",
+    "content": "V2EX 用户开源了 AgentConnect：起因是团队几个人各自用 Claude Code 和 Codex，攒了一堆重复的胶水代码——线上报错让 Agent 分析、依赖升级丢给它、PR 先让它 review。AgentConnect 把这些能力统一接进团队常用的 IM 和 GitHub，形成一个协作平台。对想把 AI 编程 Agent 团队化的开发者，架构和思路很有参考价值。",
+    "quote": "Agent 各干各的？接进 IM 才叫团队协作。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1237652#reply2",
+    "published": "2026-08-28",
+    "uid": "dev_56bedd6b"
+  }
+]
