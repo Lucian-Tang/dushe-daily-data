@@ -1,0 +1,227 @@
+[
+  {
+    "title": "Htmx 4.0.0 正式发布：无构建工具的前端库又活了",
+    "content": "前端库 htmx 发布 4.0.0 大版本，带来一系列新特性与 API 调整。作为「用 HTML 属性搞定交互」的代表作，htmx 以轻量、零构建步骤著称，4.0 在扩展性、服务端集成和 TypeScript 类型支持上做了进一步打磨。官方公告详细列出了破坏性变更与迁移路径，存量项目升级需留意。社区讨论焦点是它在重型前端框架主导的当下能否继续扩大地盘。",
+    "quote": "不用构建工具的前端库，活成了稀有物种。",
+    "source": "HN Front Page",
+    "url": "https://four.htmx.org/announcements/2026-08-28-htmx-4.0.0-is-released",
+    "published": "2026-08-29",
+    "uid": "dev_a59c97dc"
+  },
+  {
+    "title": "别用 musl：性能实测打脸静态链接党",
+    "content": "brokk.ai 一篇性能实测文章，作者对比 musl 与 glibc 在实际负载下的表现，结论是追求性能就别用 musl——内存分配、线程和 I/O 路径上差距明显。文章用基准数据和火焰图说话，指出 musl 的优势主要在静态链接体积而非运行时性能。对 Alpine 容器和嵌入式场景的用户来说，这份选型参考可以直接收藏，HN 讨论热度不低。",
+    "quote": "静态链接省下的体积，性能上全还回去了。",
+    "source": "HN Front Page",
+    "url": "https://blog.brokk.ai/dont-use-musl-if-you-care-about-performance/",
+    "published": "2026-08-29",
+    "uid": "dev_d60919b8"
+  },
+  {
+    "title": "Mac Studio 本地跑 Qwen3.8 27B：真实性能数字实测",
+    "content": "作者在 Mac Studio 上本地运行 Qwen3.8 27B 模型，给出真实性能数字：推理速度、内存占用、上下文长度和量化方案选择一应俱全。文章用实测数据说话，对比不同量化档位下的速度与质量权衡，并给出可复现的配置建议。对想在 Apple Silicon 上跑大模型的开发者来说，这份实测比厂商宣传页靠谱得多，登上了 HN 首页。",
+    "quote": "跑大模型，最终还是看 Apple 芯片的脸色。",
+    "source": "HN Front Page",
+    "url": "https://terminalbytes.com/run-qwen-3-8-27b-locally/",
+    "published": "2026-08-29",
+    "uid": "dev_7f985d29"
+  },
+  {
+    "title": "AWS Cognito 创业踩坑实录：我不会再用第二次",
+    "content": "一位创业开发者复盘了自己用 AWS Cognito 做认证的完整经历，结论是「不会再用了」。文章列举配置复杂度、文档缺失、调试痛苦、成本不透明等痛点，并对比 Auth0、Supabase Auth 等同类方案。HN 讨论热烈，评论区不少人分享同类遭遇，也有人为 Cognito 辩护。对正在选型认证服务的团队，这是一份真实的避坑参考。",
+    "quote": "Cognito 的坑，比它的文档还深。",
+    "source": "HN Front Page",
+    "url": "https://joshkaramuth.com/blog/aws-cognito-authentication-startup-nightmare/",
+    "published": "2026-08-29",
+    "uid": "dev_f47e0fe8"
+  },
+  {
+    "title": "GitNexus：46k star 的纯前端代码知识图谱引擎",
+    "content": "GitNexus 登顶 GitHub Trending，斩获 46k star。它是一个零后端的代码智能引擎：把 Git 仓库拖进浏览器，就在本地构建代码知识图谱，支持跨仓库符号跳转、依赖分析和代码检索，数据不出浏览器。支持 GitHub、GitLab、Azure 和本地仓库，主打隐私友好与零部署，对代码审查和大型代码库导航场景很有吸引力。",
+    "quote": "代码知识图谱，浏览器里直接开整。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/abhigyanpatwari/GitNexus",
+    "published": "2026-08-29",
+    "uid": "dev_ca860a93"
+  },
+  {
+    "title": "archify：让 AI Agent 画出可验证的架构图",
+    "content": "tt-a1i/archify 以 26k star 登上 GitHub Trending，是一个专门为 AI Agent 设计的绘图技能：能生成架构图、流程图、时序图、数据流图，输出为自带动效的 HTML，导出清晰。主打「可验证」——图与代码事实对齐，避免 AI 画完就编。对用 Agent 做架构设计的团队来说，解决了 AI 画图不可信的痛点。",
+    "quote": "AI 画的架构图，终于能对得上代码了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/tt-a1i/archify",
+    "published": "2026-08-29",
+    "uid": "dev_2c19b58c"
+  },
+  {
+    "title": "gods-eye-view：浏览器里的间谍卫星模拟器",
+    "content": "bilawalsidhu/gods-eye-view 以 10k star 上榜 GitHub Trending，是一个「数据全是真的」的间谍卫星模拟器：在照片级 3D 地球仪上实时展示开源空间情报数据，可以像操控卫星一样观察地面目标。项目把真实卫星轨道数据和遥感影像可视化结合，兼具科普与工具属性，开源可自部署，视觉效果相当震撼。",
+    "quote": "现实版天眼系统，浏览器里就能玩。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/bilawalsidhu/gods-eye-view",
+    "published": "2026-08-29",
+    "uid": "dev_90968712"
+  },
+  {
+    "title": "V2EX 网友造了台「传图出模型」的 3D 打印机",
+    "content": "V2EX 网友分享了自己造的 3D 打印机——不是打印实物，而是「上传图片就能生成 3D 模型」，基于腾讯混元 3D 模型，支持导出下载。主打低门槛，普通用户传一张图就能得到可用的三维模型，适合建模小白和设计师快速出原型。评论区在讨论生成质量与商用边界，热度不错。",
+    "quote": "传图出模型，建模师的饭碗要告急。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1237987#reply0",
+    "published": "2026-08-29",
+    "uid": "dev_f41bf5fd"
+  },
+  {
+    "title": "V2EX 分享：在浏览器里直接用本地 AI Agent",
+    "content": "开发者分享了一个浏览器扩展，让用户能在任意页面中直接调用本地 AI Agent，和 Codex 思路相反——不是在终端里操作浏览器，而是在浏览器里开发。支持侧边栏与 DevTools 双入口、CDP 直接调试页面、多 Agent 接入。对本地优先的 AI 编程工作流来说，是个新奇的交互尝试，评论区讨论热烈。",
+    "quote": "Codex 反向操作：浏览器里开 AI 工坊。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1237956#reply1",
+    "published": "2026-08-29",
+    "uid": "dev_64ff0e92"
+  },
+  {
+    "title": "数据库竞态条件教会我的分布式锁课",
+    "content": "一篇从实战出发的分布式系统文章，作者复盘了数据库竞态条件给自己上的课：从乐观锁、悲观锁到 Redis 分布式锁，逐一分析适用场景和隐藏陷阱，包括锁过期、时钟漂移、脑裂等经典问题。文章用真实事故案例讲解，代码示例清晰，对刚接触分布式系统的后端开发者是很好的入门加避坑材料。",
+    "quote": "分布式锁的坑，比你想象的深一层。",
+    "source": "Dev.to",
+    "url": "https://dev.to/jsnomad/what-database-race-conditions-taught-me-about-distributed-locks-gng",
+    "published": "2026-08-29",
+    "uid": "dev_1e1b20f6"
+  },
+  {
+    "title": "React 性能优化实战指南：哪些优化是伪优化",
+    "content": "一篇面向实践的 React 性能优化指南，覆盖渲染机制、memo 使用时机、列表虚拟化到代码分割的完整链路。作者没有堆砌理论，而是用可测量的性能指标（LCP、FPS、包体积）验证每个优化手段的真实收益，并指出哪些是「伪优化」。对中大型 React 项目做性能排查很有参考价值。",
+    "quote": "React 性能优化的尽头，是删掉没用的 memo。",
+    "source": "Dev.to",
+    "url": "https://dev.to/lusivision/a-practical-guide-to-react-performance-2m1g",
+    "published": "2026-08-29",
+    "uid": "dev_61922c95"
+  },
+  {
+    "title": "Agent 运行时不是聊天流，而是给 LLM 补操作系统",
+    "content": "博客园文章提出一个观点：Agent 运行时不是聊天流，而是给 LLM 补一个操作系统。作者从进程、文件系统、权限、调度等 OS 概念类比 Agent 运行时的能力分层，论述为什么 Agent 需要真正的运行时抽象而非简单工具调用，并结合开源实现拆解设计取舍。角度新颖，适合关注 Agent 架构的读者。",
+    "quote": "Agent 缺的不是模型，是操作系统。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/ai-old-six/p/22736363",
+    "published": "2026-08-29",
+    "uid": "dev_b6a7540e"
+  },
+  {
+    "title": "同城双活的核心不是双活，是逼着数据别出机房",
+    "content": "一篇关于同城双活架构的实践文章，作者提出反直觉观点：双活的核心不是「活」，而是让数据尽量不出机房。文章从网络延迟、数据一致性、脑裂处理等角度分析同城双活的真实难点，并给出基于延迟敏感度分层的架构方案。对在做容灾架构的团队，提供了不同的思考角度。",
+    "quote": "双活双活，数据不出机房才算活。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/uniqueDong/p/22735361",
+    "published": "2026-08-29",
+    "uid": "dev_39044971"
+  },
+  {
+    "title": "URML：给实验室和工厂里的 AI Agent 做安全评估",
+    "content": "Show HN 项目 URML 为跑在实验室和工厂硬件上的 AI Agent 提供安全评估能力：在真实物理设备上对 Agent 行为做安全约束与测试，防止大模型在机械臂、实验设备上乱来。物理世界 AI 落地最大的拦路虎就是安全性，这类 harness 工具正是补齐短板的早期尝试，做具身智能和机器人开发的不妨一看。",
+    "quote": "先让 Agent 学会别把实验室烧了，再谈智能。",
+    "source": "HN Show HN",
+    "url": "https://github.com/URML-MARS/URML/tree/main/examples/physical-ai-safety-eval",
+    "published": "2026-08-29",
+    "uid": "dev_fcd7f9d6"
+  },
+  {
+    "title": "CleanMySheet：浏览器里跑的隐私优先 CSV/Excel 清洗器",
+    "content": "Show HN 项目 CleanMySheet 主打隐私优先：CSV/Excel 数据清洗全程在浏览器本地完成，文件不上传服务器。对经常处理客户数据、又怕数据出境的开发者来说，本地清洗是刚需。同类工具不少，但「隐私优先」这个卖点踩中了 SaaS 时代的信任焦虑，简单直接。",
+    "quote": "数据清洗可以慢，但绝不能让别人也洗一遍。",
+    "source": "HN Show HN",
+    "url": "https://cleanmysheet.in",
+    "published": "2026-08-29",
+    "uid": "dev_ddd6a89b"
+  },
+  {
+    "title": "Doormouse：用 Wake-on-LAN 远程叫醒沉睡中的服务器",
+    "content": "Show HN 项目 Doormouse 是个能远程唤醒休眠服务器的网络入口工具：老 NAS 平时关机省电，收到请求时被远程叫醒、处理完再睡回去。对家里跑着 NAS、又心疼电费的自托管玩家来说相当实用，也契合当下闲置算力再利用的风潮，思路清奇。",
+    "quote": "服务器也要学会睡觉，不然电费教你做人。",
+    "source": "HN Show HN",
+    "url": "https://github.com/darksworm/doormouse",
+    "published": "2026-08-29",
+    "uid": "dev_3dfa0263"
+  },
+  {
+    "title": "StreamCore：开源的 AI 实时语音基础设施",
+    "content": "Show HN 项目 StreamCore 提供开源的实时语音基础设施，为 AI 应用搭建低延迟语音流管道，让开发者不用从零折腾 WebRTC、音频传输和会话管理。语音交互是当下 AI 产品最卷的赛道之一，基础设施层开源能省掉大量重复造轮子，做语音应用的团队可以拿来即用。",
+    "quote": "语音赛道卷生卷死，不如先卷基础设施。",
+    "source": "HN Show HN",
+    "url": "https://github.com/streamcoreai/streamcore-server",
+    "published": "2026-08-29",
+    "uid": "dev_8c9a697e"
+  },
+  {
+    "title": "Fastpotify：Rust + egui 写的原生 Spotify 客户端",
+    "content": "Show HN 项目 Fastpotify 用 Rust 和 egui 实现了原生 Spotify 客户端，主打「快」：启动快、资源占用低，给嫌弃官方客户端越来越臃肿的用户一个轻量选择。Rust 桌面客户端加流媒体服务的组合不新鲜，但 egui 即时模式的流畅体验和极简占用是差异化卖点，Rust GUI 爱好者可以围观。",
+    "quote": "官方客户端越做越胖，开源社区负责减肥。",
+    "source": "HN Show HN",
+    "url": "https://github.com/crmne/fastpotify",
+    "published": "2026-08-29",
+    "uid": "dev_733bb31e"
+  },
+  {
+    "title": "大多数数据泄露并不高明，只是无聊",
+    "content": "文章戳破安全圈的影视滤镜：真实的数据泄露几乎都不是零日漏洞加黑客电影桥段，而是弱口令、漏打的补丁、暴露的密钥这类「无聊」原因。作者呼吁安全投入回归基本功——资产清单、补丁管理、凭据卫生，比追逐花哨攻击手法实在得多，是给安全团队的一剂清醒药。",
+    "quote": "黑客从不炫技，只捡你忘关的门。",
+    "source": "Dev.to",
+    "url": "https://dev.to/serguey_shinder_4ab9b87b1/most-breaches-arent-clever-theyre-boring-3md5",
+    "published": "2026-08-29",
+    "uid": "dev_5d7f6bb0"
+  },
+  {
+    "title": "云成本优化：一份创业公司 FinOps 实战手册",
+    "content": "云支出即将突破每年一万亿美元，而行业数据显示其中 25%–35% 是浪费：闲置资源、过度配置、错过的承诺折扣。文章给创业公司一套可落地的 FinOps 打法，从账单分析、资源治理到折扣策略，教你把云账单砍到合理水位。对烧钱换增长的创业团队来说，这是比融资更实在的省钱指南。",
+    "quote": "云账单上省下的每一分，都是白捡的利润。",
+    "source": "Dev.to",
+    "url": "https://dev.to/lusivision/cloud-cost-optimization-a-startup-finops-playbook-2nb1",
+    "published": "2026-08-29",
+    "uid": "dev_f2a58fff"
+  },
+  {
+    "title": "Flash Onyx 2.2：给本地模型教「规矩」和「手感」",
+    "content": "作者分享了本地优先 Agent 框架 FLASH 背后的模型 Flash Onyx 2.2 调教心得：基于 gemma4 加系统提示词，把模型调教成工程 Agent，重点教它读懂代码规范和游戏手感。在云端大模型之外的本地小模型赛道上，这种提示词工程加微调的玩法越来越有生命力，本地优先党可以抄作业。",
+    "quote": "大模型负责聪明，本地小模型负责听话。",
+    "source": "Dev.to",
+    "url": "https://dev.to/natuworkguy/flash-onyx-22-teaching-a-local-model-law-and-game-feel-5een",
+    "published": "2026-08-29",
+    "uid": "dev_5d9e13c6"
+  },
+  {
+    "title": "手搓 Agent 第 2.3 关：工具注册中心架构重构",
+    "content": "作者把之前写 Agent 时杂乱的硬编码工具调用，重构为统一的工具注册中心：工具集中注册、统一调度，新增工具只需注册不用改主流程，顺带优化了 RAG 知识库懒加载，让 Agent 启动更快。手搓 Agent 系列的进阶篇，对想从 demo 走向工程的开发者很有参考价值。",
+    "quote": "工具一多就硬编码，迟早被自己的代码绊倒。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Alkaid2077/p/22745474",
+    "published": "2026-08-29",
+    "uid": "dev_7f790ade"
+  },
+  {
+    "title": "模型训练稳定性：从训练链路到排障手册",
+    "content": "文章不讲虚的 loss 曲线哲学，而是回答一个实际问题：让模型在训练预算内持续、有效、可控地学习，出异常时能快速定位根因。从训练链路梳理到排障手册，覆盖 loss 波动判别、异常排查路径等实战内容，适合正在啃大模型训练又缺排障经验的工程师按图索骥。",
+    "quote": "loss 抖一抖就慌，那是还没建立排障肌肉记忆。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/GlenTt/p/22742530",
+    "published": "2026-08-29",
+    "uid": "dev_d190c696"
+  },
+  {
+    "title": "SOUI5：一套代码跑通五大平台的原生 C++ GUI 框架",
+    "content": "SOUI5 号称全网首款全平台原生兼容的 C++ GUI 框架，一套代码覆盖 Win/Linux/macOS/Android/iOS，想终结多端多团队维护噩梦。对 C++ 客户端团队来说，跨端统一是长期痛点，SOUI5 用原生渲染方案避开 WebView 性能损耗，是可以放进技术选型清单评估的新选项。",
+    "quote": "一套代码五端跑，团队终于不用五等分了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/setoutsoft/p/22737043",
+    "published": "2026-08-29",
+    "uid": "dev_6448d277"
+  },
+  {
+    "title": "在线 OCR 不踏实？把识别模型直接塞进浏览器",
+    "content": "V2EX 网友给产品加 OCR 时，为了不让合同、订单截图等敏感图片上传第三方，把识别模型放进浏览器本地跑：极速版 6MB、专业版 31MB、极致版 138MB 三档可选，识别在独立 Worker 中执行，首次下载后走浏览器缓存。数据不出本机的方案，正合隐私敏感场景的胃口。",
+    "quote": "敏感图不敢上传？让模型住进浏览器里。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1237822#reply3",
+    "published": "2026-08-29",
+    "uid": "dev_428a6cba"
+  }
+]
