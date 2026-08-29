@@ -1,0 +1,227 @@
+[
+  {
+    "title": "Debian 投票通过：允许生成式 AI 的「负责任使用」",
+    "content": "Debian 项目就生成式 AI 使用政策投票，通过允许「负责任使用」的决议。开发者可在 Debian 生态中用 AI 辅助编码、文档和打包，同时设置伦理边界与透明度要求。投票引发两极讨论：支持者认为拥抱 AI 能提升贡献效率，反对者担心代码质量和许可证合规风险。作为历史最悠久的 Linux 发行版之一，Debian 的表态可能影响整个开源社区对 AI 的接纳尺度。",
+    "quote": "连 Debian 都低头了，AI 这波是挡不住了。",
+    "source": "HN Front Page",
+    "url": "https://lwn.net/Articles/1091231/",
+    "published": "2026-08-30",
+    "uid": "dev_48e2002e"
+  },
+  {
+    "title": "OpenAI 官宣：Cursor 被 SpaceX 收购后的去留决定",
+    "content": "OpenAI 发布官方声明，回应 Cursor 被 SpaceX 收购一事，明确双方在 AI 编程工具上的合作走向。声明措辞谨慎，既肯定 Cursor 在开发者社区的影响力，又划清产品边界与数据使用原则，暗示编辑器与模型层将保持更松散的耦合。这起收购震动 AI 编程赛道，OpenAI 的表态让不少 Cursor 用户重新评估工具链依赖风险。HN 评论区吵成一片，有人担心编辑器被大厂吞并后的走向。",
+    "quote": "编辑器卖身，用户只能祈祷新东家手下留情。",
+    "source": "HN Front Page",
+    "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
+    "published": "2026-08-30",
+    "uid": "dev_27a37059"
+  },
+  {
+    "title": "Hot Chips 2026：三星 Processing-in-Memory 架构解析",
+    "content": "Chips and Cheese 解析三星在 Hot Chips 2026 展示的 Processing-in-Memory（PIM）方案，从 bank 级计算单元到功耗预算逐层拆解，看它绕过内存墙的思路、在 DRAM 内直接完成矩阵运算，并对比 HBM-PIM 与 LPDDR-PIM 路线。评测指出 PIM 在带宽敏感负载上收益明显，但编程模型复杂度和良率成本仍是商业化拦路虎，是硬核资料。",
+    "quote": "内存里塞 CPU，内存墙表示很慌。",
+    "source": "HN Front Page",
+    "url": "https://chipsandcheese.com/p/hot-chips-2026-samsungs-processing",
+    "published": "2026-08-30",
+    "uid": "dev_f1b7a572"
+  },
+  {
+    "title": "TurboKV：号称「快得离谱」的 Rust 键值存储",
+    "content": "GitHub 新项目 TurboKV 宣称自己是「insanely fast」的 Rust 键值存储，靠零拷贝读取、无锁哈希表和 SIMD 优化在基准测试中刷出亮眼数字。作者放出与 Redis、sled 的对比数据，声称读写延迟和吞吐双双碾压。虽然 benchmark 是否公平有待考证，但代码质量和文档完成度都不错，已登 HN 首页引发围观，适合嵌入式高性能 KV 场景尝鲜。",
+    "quote": "又双叒一个吊打 Redis 的项目，先跑个分再说。",
+    "source": "HN Front Page",
+    "url": "https://github.com/kingroryg/turbokv",
+    "published": "2026-08-30",
+    "uid": "dev_5d595b63"
+  },
+  {
+    "title": "Davflare：用 Cloudflare R2 白嫖一个带 WebDAV 的网盘",
+    "content": "V2EX 用户分享自建网盘方案 Davflare：基于 Cloudflare R2 存储，通过 Workers 封装 WebDAV 接口，让系统自带的文件管理器直接挂载网盘读写 R2。作者给出完整部署流程、鉴权配置和常见坑位，免费额度对个人基本够用。评论区围绕 R2 免费层限制、数据安全性和与 S3 兼容性展开讨论。对不想再为网盘会员付费的开发者来说，是个省钱又折腾的好方向。",
+    "quote": "又省一笔网盘会员钱，Cloudflare 表示欢迎。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1238083#reply0",
+    "published": "2026-08-30",
+    "uid": "dev_d25e3172"
+  },
+  {
+    "title": "不用登录就能改图的 AI 编辑站，和 Cloudflare Workers 踩坑实录",
+    "content": "作者折腾几个月做了一个无需登录即可用的 AI 图片编辑网站，并分享了在 Cloudflare Workers 上跑 AI 工作流踩过的坑：冷启动延迟、CPU 超时限制、模型加载策略、缓存与配额管理。文章详细记录了从架构选型到上线调优的全过程，包括绕过 Workers 的 30 秒 CPU 限制做长耗时推理任务的办法。对想在边缘计算平台上部署 AI 服务的开发者来说，这些一手经验比官方文档值钱得多。",
+    "quote": "边缘跑 AI，冷启动冷到怀疑人生。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1237991#reply4",
+    "published": "2026-08-30",
+    "uid": "dev_d97a3743"
+  },
+  {
+    "title": "IndexFlow：Rust 写的开源 SEO 工具，管 Sitemap 和 GSC 索引",
+    "content": "开发者分享用 Rust 写的开源 SEO 工具 IndexFlow，主打解决 Sitemap 生成、URL 提交和 Google Search Console 索引管理痛点。相比常见 Node/Python 方案，Rust 版批量处理 URL 时性能和内存优势明显，支持定时抓取、变更检测和索引监控。项目已开源并附文档，作者在 V2EX 求反馈。对做独立站、被收录问题折磨过的站长来说可以一试。",
+    "quote": "SEO 工具用 Rust 写，谷歌看了都说卷。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1237935#reply0",
+    "published": "2026-08-30",
+    "uid": "dev_f2d6d3d2"
+  },
+  {
+    "title": "VoiceTap：长按耳机线控说话，松开就出字",
+    "content": "V2EX 用户分享自制的 VoiceTap 方案：把语音输入法跟耳机线控打通，长按线控开始说话、松开自动出字，无需掏出手机或对着麦克风喊。作者拆解了系统级按键监听、录音链路和输入法注入的实现细节，并讨论了在通勤、骑行等场景下的实用性。评论区有人担心误触和耗电，也有人表示这比「嘿 Siri」优雅多了。对想折腾高效语音输入的开发者来说，是个小而美的硬件交互创意。",
+    "quote": "线控一按一松，语音输入就这么水灵灵地完成了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1237862#reply2",
+    "published": "2026-08-30",
+    "uid": "dev_8164706d"
+  },
+  {
+    "title": "实测 300 个网站：它们到底给 AI Agent 喂了什么",
+    "content": "一位开发者系统性测量了 300 个主流网站对 AI Agent 爬虫的实际响应：部分网站返回与普通浏览器完全不同的内容，有的做了裁剪、有的注入额外指令、有的干脆 403。作者按行业统计 robots.txt 策略、AI 专属内容占比和反爬手段，揭示网站们正为 AI 时代悄悄改造输出。对做 Agent 抓取和 RAG 数据管道的开发者，这是一份宝贵的实测参考。",
+    "quote": "网站们已经学会给 AI 单独开小灶了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/zulwatha/i-measured-what-300-websites-actually-serve-to-ai-agents-1bco",
+    "published": "2026-08-30",
+    "uid": "dev_2bf4e6e5"
+  },
+  {
+    "title": "给自己的 system prompt 做 A/B 测试：24 次生成，一个规则白写了",
+    "content": "作者对自己的 system prompt 做了严格的 A/B 测试：固定其他变量，只改一条规则，连续生成 24 次对比输出质量。结论是有一条规则带来了显著提升，另一条则完全无效纯属自我感动。文章分享了测试设计、评估标准和防止 prompt 泄漏的技巧，呼吁开发者用数据而不是直觉调 prompt。在「vibe 调 prompt」盛行的当下，这种带对照组意识的工程化做法算是一股清流。",
+    "quote": "调 prompt 全靠感觉？人家已经跑 24 次实验了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/natuworkguy/i-ab-tested-my-own-system-prompt-24-generations-one-clear-win-one-rule-that-did-nothing-flash-2ejg",
+    "published": "2026-08-30",
+    "uid": "dev_ec10069d"
+  },
+  {
+    "title": "你的已发送文件夹，现在就是一套钓鱼套件",
+    "content": "安全研究者指出，邮箱的「已发送」文件夹正在成为新型钓鱼攻击的温床：攻击者入侵账号后不删邮件，而是利用已发送邮件里的真实对话上下文生成高度定制化的钓鱼邮件，收件人几乎无法分辨真假。文章分析了这种「基于已发送历史的鱼叉式钓鱼」的攻击链、检测难点和防御建议，包括邮件签名、发件人策略框架和异常发信行为监控。对企业安全团队来说，这是一个容易被忽视却正在蔓延的威胁面。",
+    "quote": "连你自己的邮件都成了骗人的素材库。",
+    "source": "Dev.to",
+    "url": "https://dev.to/secbyjasonmiller/your-sent-items-folder-is-a-phishing-kit-now-2bik",
+    "published": "2026-08-30",
+    "uid": "dev_ab809281"
+  },
+  {
+    "title": "纯 .NET 手写 CUDA kernel：GLM-5.3-Flash decode 跑出 llama.cpp 两倍速",
+    "content": "博客园作者用纯 .NET 手写 CUDA kernel 推理 GLM-5.3-Flash，decode 阶段跑出 llama.cpp 两倍性能。文章拆解算子实现、内存布局、warp 级并行和显存带宽优化，并对比 llama.cpp 的实现差异。作者没依赖第三方推理框架，全靠 .NET 与 CUDA 互操作硬写。对想深入 LLM 推理底层又不想被 C++ 绑死的 .NET 开发者，是难得的硬核实战。",
+    "quote": "C# 手搓 CUDA，llama.cpp 看了直呼内行。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/22748953",
+    "published": "2026-08-30",
+    "uid": "dev_f8980caf"
+  },
+  {
+    "title": "拆解 dsh 系列：从源码看 DeepSeek Harness 的设计取舍",
+    "content": "七牛开发者从源码和版本演进角度拆解 DeepSeek Harness（dsh），分析其在任务编排、资源调度、模型加载和容错恢复上的设计取舍。文章梳理了 dsh 从早期版本到现在的架构变化，解释了为什么某些看似绕路的实现其实是出于多租户隔离和长任务稳定性的考虑，并对比了与主流 LLM 推理框架的定位差异。对想借鉴大厂 LLM 工程实践、或者准备在生产环境部署推理服务的团队很有参考价值。",
+    "quote": "读源码才能懂：每个绕路都是被坑出来的。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Qiniu-developer/p/22743908",
+    "published": "2026-08-30",
+    "uid": "dev_af381788"
+  },
+  {
+    "title": "DeepSeek 与 GPT API 价格调整：该关注什么？",
+    "content": "博客园作者分析了 DeepSeek 与 GPT 系列 API 近期价格调整背后的信号，从定价结构、上下文计费、缓存命中折扣到开发者迁移成本逐一拆解。文章指出降价背后是推理成本下降与竞争加剧的双重驱动，并提醒开发者关注的不只是单价，还有限流策略、稳定性 SLA 和生态锁定。对在选型 LLM API 的团队来说，这份对比能帮你算清楚「换供应商到底省不省钱」，避免被表面价格牵着走。",
+    "quote": "API 降价一时爽，迁移成本火葬场。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/jyzhao/p/22748418",
+    "published": "2026-08-30",
+    "uid": "dev_ab8fe734"
+  },
+  {
+    "title": "StemDeck：免费开源的本地 AI 音轨分离器",
+    "content": "开源项目 StemDeck 提供免费、本地运行的 AI 音频分轨能力：不依赖云端 API，就能把歌曲里的人声、伴奏、鼓点等音轨一键拆开，音频数据全程不出本机。在在线分轨服务普遍收费、上传又担心版权的当下，本地跑模型是 DJ、播客和视频创作者的实在选择，也延续了开源音频工具一贯的「自己动手」传统。",
+    "quote": "在线分轨怕侵权又怕花钱？本地白嫖最香。",
+    "source": "HN Front Page",
+    "url": "https://github.com/stemdeckapp/stemdeck",
+    "published": "2026-08-30",
+    "uid": "dev_fcc13b64"
+  },
+  {
+    "title": "vphone-cli：用苹果官方框架启动一台虚拟 iPhone",
+    "content": "vphone-cli 利用苹果 Virtualization.framework 在 Mac 上直接启动虚拟 iPhone，无需越狱就能跑 iOS 系统镜像。对做 iOS 自动化测试、安全研究和多开需求的开发者来说，这是绕开实体设备矩阵的省事路子——一台 Mac 虚拟出多台 iPhone，成本和时间都省下一大截，iOS 逆向与测试的门槛也跟着降了一档。",
+    "quote": "一台 Mac 虚拟一排 iPhone，实体机矩阵可以吃灰了。",
+    "source": "HN Front Page",
+    "url": "https://github.com/Lakr233/vphone-cli",
+    "published": "2026-08-30",
+    "uid": "dev_c395f81c"
+  },
+  {
+    "title": "现在只要「有漏洞」的传言，就够挖出利用链了",
+    "content": "安全研究员发文指出：如今「某个漏洞存在」的传言一旦流传，攻击者就能顺着线索快速定位并利用，哪怕官方还没确认任何细节——因为开源代码和补丁 diff 都是公开的，传言本身就是攻击面。对开源维护者来说，这提醒漏洞披露要快、要准；对普通开发者而言，下次看到漏洞传闻别急着转发，先把自己的依赖升了再说。",
+    "quote": "漏洞还没实锤，攻击者已经在路上了。",
+    "source": "HN Front Page",
+    "url": "https://anil.recoil.org/notes/rumour-is-the-exploit",
+    "published": "2026-08-30",
+    "uid": "dev_0e72d17e"
+  },
+  {
+    "title": "追查 32 位嵌入式系统里的 Go Runtime Bug 实录",
+    "content": "一位工程师完整记录了在 32 位嵌入式系统上追查 Go Runtime 诡异 bug 的过程：从偶发网络问题入手，一路排查到 netpoll 实现里的底层细节。这类运行时 bug 最难啃，文章把定位思路、调试手段和内核交互讲得很透。对在嵌入式设备上跑 Go 的团队来说，这是一份难得的一线排障教材，也再次证明 32 位平台上的 Go 水很深。",
+    "quote": "跑在 32 位上的 Go，坑比想象的深。",
+    "source": "HN Front Page",
+    "url": "https://sigma-star.at/blog/2026/08/go-runtime-netpoll-bug/",
+    "published": "2026-08-30",
+    "uid": "dev_9e2748d4"
+  },
+  {
+    "title": "Pico-Faces：在树莓派 Pico 2 上跑扩散模型生成人脸",
+    "content": "Show HN 项目 Pico-Faces 把扩散 Transformer 图像生成模型塞进了树莓派 Pico 2 单片机：在没有操作系统的 MCU 上跑 DiT，专门生成人脸图像。听起来像行为艺术，实则是嵌入式 AI 的极限测试——验证小模型在极低资源下的可行性。玩嵌入式、搞边缘 AI 的开发者可以围观，说不定下一代 TinyML 应用就从这里起步。",
+    "quote": "单片机都能画人脸了，显卡们压力很大。",
+    "source": "HN Show HN",
+    "url": "https://github.com/cpldcpu/pico-faces",
+    "published": "2026-08-30",
+    "uid": "dev_f59e0b82"
+  },
+  {
+    "title": "DataZen：本地优先的跨数据库客户端，合规团队的 Navicat 新选择",
+    "content": "作者的公司因合规政策禁用 Navicat，他又不喜欢 DBeaver，索性做了 DataZen：一个本地优先的跨数据库客户端，主打生产环境排查时跨库查询的顺滑体验。工具链被合规卡脖子的团队不在少数，这类数据不出机器的数据库客户端正成为刚需，也给被商业授权费困扰的开发者提供了一个开源新思路。",
+    "quote": "合规不让用 Navicat？那就自己写一个。",
+    "source": "HN Show HN",
+    "url": "https://flyxl.github.io/datazen/",
+    "published": "2026-08-30",
+    "uid": "dev_07341e4c"
+  },
+  {
+    "title": "连树莓派 Pico REPL 谁最省心？mpremote/Putty/MobaXterm 实战对比",
+    "content": "博客园文章实测对比 mpremote、Putty、MobaXterm 等工具连接树莓派 Pico REPL 的体验，从安装、交互、断线重连到调试效率逐一比较，给出谁更省心的结论。MicroPython 玩家和嵌入式新手常卡在「连不上」第一步，这种实战对比文比官方文档接地气得多，选对工具能省下大量折腾时间。",
+    "quote": "连个 REPL 都能挑花眼？看完这篇就不纠结了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/FreakEmbedded/p/22753811",
+    "published": "2026-08-30",
+    "uid": "dev_a4d219a0"
+  },
+  {
+    "title": "ZliangDisk：Rust + Tauri 打造的 Windows 磁盘清理工具",
+    "content": "开发者用 Rust + Tauri 做了 Windows 磁盘健康管家 ZliangDisk，主打现代化界面和零隐私泄露：扫描大文件、清理垃圾全程本地完成，不上传任何数据。Windows 自带磁盘清理难用、第三方工具又爱夹带全家桶，这种干净、开源、颜值在线的选择正中痛点，Rust 加持下性能也有保障，洁癖用户可以去试试。",
+    "quote": "清理磁盘还要上传数据？这届工具终于学乖了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/starksoft/p/22746210",
+    "published": "2026-08-30",
+    "uid": "dev_ed686a2a"
+  },
+  {
+    "title": "VC 狂砸人形机器人，Hugging Face 的小机器人默默卖了 100 万美元",
+    "content": "当 VC 们把数十亿美元砸向人形机器人时，Hugging Face 那款二十多厘米级别的开源小机器人悄悄突破了 100 万美元销售额。文章对比了宏大叙事与务实的开源硬件路线：小、便宜、可编程、社区驱动，反而更快跑通商业闭环。对想做机器人创业的团队来说，这提供了一个「不烧钱也能活」的差异化样本。",
+    "quote": "人形机器人还在融资，小机器人已经在赚钱了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/frankchu/while-vcs-pour-billions-into-humanoids-hugging-faces-tiny-open-source-robot-quietly-passed-1m-in-2p88",
+    "published": "2026-08-30",
+    "uid": "dev_73579d70"
+  },
+  {
+    "title": "我意外把 LLM 内存变成了程序分析工具",
+    "content": "安全研究员在 pwning.systems 发文，记录了一次意外发现：LLM 推理时的内存状态居然能用于程序分析，从模型「记住」的内容里还原出程序的结构与行为线索。这个发现把大模型安全研究带向了新方向——内存即证据。对做 AI 安全、逆向和漏洞研究的开发者来说，这是脑洞大开的思路启发，也再次印证 AI 与安全交叉地带遍地是金矿。",
+    "quote": "大模型的记忆，成了程序分析的意外宝藏。",
+    "source": "HN Front Page",
+    "url": "https://pwning.systems/posts/llm-memory-program-analysis/",
+    "published": "2026-08-30",
+    "uid": "dev_f15b6f12"
+  },
+  {
+    "title": "Docker Swarm 外部密钥管理实战：让密码轮换不再推倒重来",
+    "content": "Dev.to 文章分享 Docker Swarm secrets 的经典痛点：密钥一旦创建就不可变，密码轮换只能重建服务。作者给出管理外部密钥的实用方案，让密钥更新不再需要推倒重来。对还在用 Swarm 的生产团队来说，这是踩坑后的经验总结，比官方文档更贴近真实运维场景，DevOps 同学可以收藏备用。",
+    "quote": "Swarm 密钥不可变？办法总比抱怨多。",
+    "source": "Dev.to",
+    "url": "https://dev.to/artarts36/managing-external-secrets-in-docker-swarm-1jnl",
+    "published": "2026-08-30",
+    "uid": "dev_200932cb"
+  }
+]
