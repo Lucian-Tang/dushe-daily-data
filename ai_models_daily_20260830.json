@@ -1,0 +1,223 @@
+{
+  "date": "2026-08-30",
+  "total": 18,
+  "vendors": [
+    "openai",
+    "deepseek",
+    "alibaba",
+    "anthropic",
+    "other"
+  ],
+  "models": {
+    "openai": {
+      "displayName": "OpenAI/GPT",
+      "icon": "🔬",
+      "items": [
+        {
+          "uid": "ai_90d2bbb9",
+          "title": "开源权重 AI 公司成为硅谷最热收购标的",
+          "content": "大量资本正涌入'免费送模型'这门生意。Stripe 收购 OpenRouter 后，英伟达又传出 130 亿美元收购 Hugging Face 的意向。逻辑很清晰：OpenAI、Google 都在自研推理芯片，英伟达就想抓住最大的开源模型开发者社区，把用户导流到自家芯片和标准上。目前开源权重模型采用率仍低——仅 6% 公司、2% 软件工程师在用，但客服这类重复推理场景已开始用可微调的开源模型省钱。",
+          "quote": "免费送模型的生意，居然成了最贵的收购。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets/",
+          "published": "2026-08-30",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_23bcb54d",
+          "title": "V2EX 热议：GPT/Codex 写功能很省事，但 UI 一眼 AI",
+          "content": "V2EX 用户感叹：用 GPT/Codex 写小工具的功能部分已经相当省事，需求描述清楚很快就能搭出来；但一到前端 UI 就有种奇怪的感觉——功能都对、页面也不丑，但就是'一眼 AI'。7 条回复里不少人深有同感，讨论 AI 生成界面的同质化问题：布局、配色、文案都透着一股模板味。当 AI 能批量产出'合格但无灵魂'的界面，审美和 taste 反而成了稀缺品。",
+          "quote": "功能 AI 写，UI 一眼 AI——就差灵魂了。",
+          "source": "V2EX",
+          "url": "https://www.v2ex.com/t/1238072",
+          "published": "2026-08-30",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "deepseek": {
+      "displayName": "DeepSeek",
+      "icon": "🔍",
+      "items": [
+        {
+          "uid": "ai_ab3830d9",
+          "title": "V2EX 热议：qoder cli 和 codebuddy cli 怎么选",
+          "content": "V2EX 程序员对比国产 AI 编程工具：qoder cli 与 codebuddy cli 在都接入 DeepSeek 的情况下怎么选？评论区从补全质量、上下文管理、终端体验、价格策略到隐私政策逐一对比，有人站 qoder 的轻量，有人夸 codebuddy 的工程化集成，也有老哥直言'都是套壳，谁便宜用谁'。国产 AI 编程工具的内卷战火已从 IDE 插件烧到命令行，选择困难症患者表示更晕了。",
+          "quote": "都是套壳，选便宜的——当代程序员最后的倔强。",
+          "source": "V2EX",
+          "url": "https://www.v2ex.com/t/1238009",
+          "published": "2026-08-30",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "alibaba": {
+      "displayName": "阿里巴巴/Qwen",
+      "icon": "☁️",
+      "items": [
+        {
+          "uid": "ai_0ef46546",
+          "title": "Mac Studio 实测 Qwen3.8 27B 本地推理：14 tokens/s 真实数据",
+          "content": "开发者实测 Mac Studio M3 Ultra 本地跑 Qwen3.8 27B：Q4_K_M（17GB）经 Ollama 约 14 tokens/s，前代 qwen3.6:27b 约 28.6 tokens/s，但新模型回答同样提示词只花约三分之一 token，总耗时几乎打平。1-bit 量化跑 27 tokens/s 且事实正确，却'给不出确定答案'。32GB 内存跑 Q4 无压力。",
+          "quote": "本地 27B 跑得动，Mac 用户终于能省 API 钱了。",
+          "source": "TerminalBytes (HN 124分)",
+          "url": "https://terminalbytes.com/run-qwen-3-8-27b-locally/",
+          "published": "2026-08-30",
+          "direction": "研究/论文"
+        }
+      ]
+    },
+    "anthropic": {
+      "displayName": "Anthropic/Claude",
+      "icon": "🧬",
+      "items": [
+        {
+          "uid": "ai_e6ef7077",
+          "title": "Anthropic 研究员展示自我改进 AI：10 个基准全提升",
+          "content": "Anthropic 研究员透露自动化对齐研究（AAR）的最新进展：给定 10 个针对特定失当行为的基准，自动化系统在每一个上都提升了表现，且没有牺牲整体性能。论文称最好的 AAR 方法平均六小时内胜过有经验的人类提案，成本对比更扎眼——AAR 每小时约 4 美元 API 推理费，而人类研究员每小时 150 美元。不过局限也很明显：系统只在基准真实反映对齐目标时有效，且需要持续维护基准与文献库。",
+          "quote": "4 美元/小时的 AI 研究员，人类 150 美元该慌了吗。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/",
+          "published": "2026-08-30",
+          "direction": "研究/论文"
+        }
+      ]
+    },
+    "other": {
+      "displayName": "其他",
+      "icon": "📰",
+      "items": [
+        {
+          "uid": "ai_3f4cadd7",
+          "title": "Station：开放世界多智能体实现自主数学发现",
+          "content": "arXiv 新论文发布 Station：无中心协调器的开放世界多智能体数学研究环境，不同模型家族的 agent 自主选方向、做实验、协作构建共享文献。在 AlphaEvolve 目录的 12 个构造问题中，智能体在 5 个问题上取得超越文献的新结果：Kakeya 集新无限族、11 维 604 点 kissing 构型、Erdős 最小重叠问题下界改进等，且产出可解释的定理与证明而非纯数值。",
+          "quote": "AI 数学家开会，人类还在算第一题。",
+          "source": "arXiv (HN 114分)",
+          "url": "https://arxiv.org/abs/2608.23691",
+          "published": "2026-08-30",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_43415413",
+          "title": "WikiSkill：把 Agent 经验编译成可复用的持久知识",
+          "content": "arXiv 新论文提出 WikiSkill，让 agent 把任务中积累的经验编译为持久化、结构化的技能知识库，供后续任务直接调用，实现技能随经验进化。相比把对话历史塞进上下文，这种方法把'怎么做'提炼成独立于具体任务的技能条目，显著提升跨任务泛化与长周期表现。论文展示了在多个 agentic benchmark 上的收益，被视为'经验即代码'方向的代表性尝试。",
+          "quote": "Agent 终于学会写 wiki 了，人类程序员呢？",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2608.27454",
+          "published": "2026-08-30",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_f8e08f1c",
+          "title": "Persona-Execution 分离：让 LLM Agent 可审计地进化",
+          "content": "arXiv 新论文提出 Persona-Execution Separation 架构模式：把 agent 的'人格/策略层'与'执行层'解耦，策略更新须经过执行审计才能生效，从而在保持 agent 自主进化的同时提供可追溯的变更记录。这解决了自主 agent 迭代中'越改越黑箱'的痛点，为需要合规与审计的 agent 部署提供了架构级方案，也引发了对 agent 自我改进边界的讨论。",
+          "quote": "Agent 想进化？先过审计这关再说。",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2608.27427",
+          "published": "2026-08-30",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_83c8ad7d",
+          "title": "CLAP：跨具身视频世界模型，零样本当物理模拟器",
+          "content": "arXiv 新论文提出 CLAP（Cross-embodiment video world models），用跨具身视频训练的 world model 直接充当零样本物理模拟器：无需针对具体机器人重新训练，即可预测不同形态智能体的交互结果。实验显示其在多具身场景的物理一致性上超越专门训练的基线，为'视频即模拟器'的具身智能路线再添证据，降低机器人策略训练对昂贵物理仿真的依赖。",
+          "quote": "看视频就能当物理引擎——具身智能的'视频通关'选手。",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2608.27406",
+          "published": "2026-08-30",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_7f28b563",
+          "title": "V2EX 热帖：所有程序员都用 AI 后，怎么判断能力高低",
+          "content": "V2EX 热议：当所有程序员都依赖 AI 写代码，面试还问八股文吗？能力评判标准会转向什么？高赞观点认为会回归'判断力、系统设计、代码审查'等 AI 难以代劳的能力，学历与沟通表达权重上升；也有人悲观认为'人人都会用 AI'意味着初级岗位价值崩塌，内卷将上移到更高层级。帖子 29 条回复，折射出程序员群体对 AI 重塑职业评价体系的集体焦虑。",
+          "quote": "人人都会用 AI 之后，面试只能比谁更会'调教'了。",
+          "source": "V2EX",
+          "url": "https://www.v2ex.com/t/1238034",
+          "published": "2026-08-30",
+          "direction": "政策/合规"
+        },
+        {
+          "uid": "ai_e1cf502c",
+          "title": "TTPO：投票出错全盘皆输？测试时训练的新解法",
+          "content": "RL 等后训练方法大幅提升 LLM 数学推理，但依赖 ground-truth 标签，无法测试时训练。用多数投票伪标签替代真值是自然思路，却十分脆弱：一次错误投票就污染教师信号、误导每个 token。论文发现该失败模式不对称——与伪标签不一致的 rollout 通常都是错的。基于此提出 TTPO，用投票一致性动态筛选可信 rollout 参与测试时训练，既保留 TTT 增益又避免噪声放大。",
+          "quote": "投票出错全盘皆输？TTPO 说先筛一筛再学。",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2608.27448",
+          "published": "2026-08-30",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_0675eb21",
+          "title": "Beyond F1：AI 模型安全扫描器的覆盖率与失败恢复评测",
+          "content": "静态扫描器被越来越多地用来识别 ML 工件中的可执行或危险内容，但传统评测指标只刻画'扫描器给出可用判断'的情形。论文用受控基准评测 ModelScan、ModelAudit、Fickling：170 个 Pickle/PyTorch 工件、145 个样本家族，明确区分覆盖率、分析完成度与判定正确性。结果显示只看 F1 会严重高估扫描器的真实防护能力——很多'通过'其实是漏报或没扫完。",
+          "quote": "F1 好看没用，扫描器漏报才是真杀手。",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2608.27424",
+          "published": "2026-08-30",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_2e747dda",
+          "title": "大模型如何组织道德知识：六类道德基础探针实验",
+          "content": "大模型能检测道德内容，但检测只是低门槛。论文追问：模型能否进一步区分不同的道德基础（关怀、公平、自由、忠诚、权威、圣洁），并在表征空间中组织它们之间的几何关系？研究者在开源模型上为 MFT 的六个类别各训练一个线性探针，考察这些方向在表征空间中的相互关系，发现它们既没有坍缩成单一维度，也没有完全正交，而是呈现出有结构的几何组织，说明模型内部存在比'能检测道德'更精细的道德知识结构。",
+          "quote": "模型心里有本道德账，可惜人类自己都算不清。",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2608.27402",
+          "published": "2026-08-30",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_d7c1ea89",
+          "title": "NPO：提示词优化不需要花哨搜索，朴素迭代就行",
+          "content": "提示词优化被认为能带来媲美微调的增益且成本更低，但近期研究越来越偏爱复杂优化器。论文提出 NPO（Naive Prompt Optimization）：轻量单谱系方法，用教师模型配合 rollout 迭代修订提示词，不做花哨搜索，却在多个任务上追平甚至超过复杂方法。结论是'简单即有效'被严重低估，复杂搜索的增益可能只是算力幻觉。",
+          "quote": "提示词优化花活一堆，不如朴素迭代来得实在。",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2608.27266",
+          "published": "2026-08-30",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_0249b962",
+          "title": "LeVJEPA：无启发式的视频预训练，JEPA 家族新成员",
+          "content": "视频承载物理世界的时间结构，但学习表征一直昂贵：主流方法要么靠架构不对称（EMA 目标编码器、stop-gradient）防表征坍缩，要么靠像素空间重建绕开。LeVJEPA 是第一个在 LeJEPA 无坍缩目标下训练的视频编码器，两者都不需要：单一编码器用全局不变性损失训练，抛弃启发式设计，在效率与可扩展性上给出新答案，为视频世界模型提供更干净的预训练底座。",
+          "quote": "视频预训练去套路化，JEPA 家族又添一员猛将。",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2608.27395",
+          "published": "2026-08-30",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_c7161981",
+          "title": "英伟达的 AI 优势正在超越 GPU：Vera CPU 与数据编排",
+          "content": "英伟达的新一代数据中心系统不再只靠堆算力，而是靠更聪明的流量调度提效。Vera Rubin 架构中，Rubin GPU 搭配 Vera CPU、Groq 3 LPX 推理加速器及存储网络机架——这些外围单元不负责吐 token，而是让 GPU 之外的一切高效运转。Vera CPU 专攻数据编排：数据中心规模越大，让数据在正确时间抵达 GPU 越难。'GPU 是引擎，这些是车的其余部分'。",
+          "quote": "GPU 之外全是配角？英伟达说配角才是胜负手。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/",
+          "published": "2026-08-30",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_584a925a",
+          "title": "V2EX 热帖：AI 时代，软件已经不值钱了",
+          "content": "V2EX 热帖直言：纯软件很难建立优势了，无论个人还是企业。楼主认为 AI 让软件的生产成本趋近于零，代码本身不再稀缺，竞争转向数据、场景与渠道。13 条回复里有人赞同'软件沦为商品'，也有人反驳：AI 写代码的门槛越低，能把 AI 用出花来的'判断力'反而越值钱。帖子的焦虑很真实——当工具人人可得，软件工程师的护城河到底还剩什么。",
+          "quote": "软件不值钱了？那程序员是不是该转行卖课。",
+          "source": "V2EX",
+          "url": "https://www.v2ex.com/t/1238096",
+          "published": "2026-08-30",
+          "direction": "应用/落地"
+        },
+        {
+          "uid": "ai_ccb9f2f2",
+          "title": "V2EX 独立开发者：第一个付费用户来了，却高兴不起来",
+          "content": "独立开发者自述：做了一款 Mac AI 语音输入工具 Openbroca，今天终于迎来第一个真实付费用户。原以为自己会开心到截图纪念、找朋友喝一杯，真正看到订单时却只是盯着后台确认了几遍，然后长出一口气。6 条回复满是共鸣——独立开发者的第一个付费用户往往不是狂喜而是如释重负，因为这意味着产品终于被陌生人用真金白银认可，也意味着此后要持续为这份信任负责。",
+          "quote": "第一个付费用户不是惊喜，是悬着的心终于落地。",
+          "source": "V2EX",
+          "url": "https://www.v2ex.com/t/1238099",
+          "published": "2026-08-30",
+          "direction": "工具/平台"
+        }
+      ]
+    }
+  }
+}
