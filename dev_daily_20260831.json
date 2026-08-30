@@ -1,0 +1,227 @@
+[
+  {
+    "title": "crawl4ai 再登 Trending：LLM 友好的爬虫框架卷土重来",
+    "content": "crawl4ai 再次冲上 GitHub Trending。这是专为 LLM 应用设计的爬虫框架，主打把网页转成干净的 Markdown/JSON 供大模型消费，内置反爬绕过、JS 渲染、智能正文提取和结构化输出。近期更新聚焦动态页面抓取和更细粒度的内容过滤。对做 RAG、Agent 数据管道或语料采集的开发者来说，它是目前生态最活跃的开源选择之一。",
+    "quote": "给 AI 喂饭的爬虫，自己先吃饱了 star。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/unclecode/crawl4ai",
+    "published": "2026-08-31",
+    "uid": "dev_6749c4d3"
+  },
+  {
+    "title": "OpenMAIC：清华开源的多智能体互动课堂，一键开课",
+    "content": "清华大学 THU-MAIC 团队开源的 OpenMAIC，定位「多智能体互动课堂」：一键部署即可获得沉浸式的多智能体学习环境。项目把多个 AI 智能体组织成课堂角色，模拟互动式教学场景，降低上手门槛，适合教育场景与 Agent 应用研究。对想做 AI 教学产品、或研究多智能体协作机制的开发者来说，是个可以直接跑起来的参考实现。",
+    "quote": "清华开源多智能体课堂，AI 老师先上岗了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/THU-MAIC/OpenMAIC",
+    "published": "2026-08-31",
+    "uid": "dev_04b89ac3"
+  },
+  {
+    "title": "awesome-mcp-servers：MCP 服务器精选清单持续霸榜",
+    "content": "punkpeye/awesome-mcp-servers 继续占据 GitHub Trending。清单收录了数百个 MCP 服务器，覆盖浏览器自动化、数据库、搜索、设计工具、云服务等场景，每个条目标注协议传输方式、认证要求和适用模型。随着 Agent 生态爆发，MCP 服务器已成为连接模型与工具的「新 USB 接口」，这份清单是开发者挑选现成服务器的首选入口。",
+    "quote": "MCP 服务器多到要编字典，Agent 时代实锤了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/punkpeye/awesome-mcp-servers",
+    "published": "2026-08-31",
+    "uid": "dev_a03bb1c6"
+  },
+  {
+    "title": "ipatool 回归热榜：命令行下载 iOS App 的老牌工具",
+    "content": "ipatool 再次出现在 GitHub Trending。这是一个用 Go 写的命令行工具，可以从 App Store 直接下载 .ipa 安装包，支持登录 Apple ID、搜索应用、指定版本下载，常用于逆向分析、企业分发和测试环境安装。项目保持轻量单二进制分发，无 GUI 依赖。开发者圈子里它一直是 iOS 自动化工作流里的常客，这次回归或与新版 Xcode 兼容性修复有关。",
+    "quote": "逆向党的老朋友，App Store 看了想拉黑。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/majd/ipatool",
+    "published": "2026-08-31",
+    "uid": "dev_e1ac1f17"
+  },
+  {
+    "title": "last30days-skill：让 AI Agent 30 秒摸清全网近况",
+    "content": "mvanhorn/last30days-skill 是一个面向 AI Agent 的技能包：输入任意主题，自动跨 Reddit、X、YouTube、Hacker News、Polymarket 及全网检索近 30 天动态，再汇总成有依据的摘要。对做舆情监测、行业调研或竞品分析的 Agent 工作流来说，相当于给模型装了个「联网情报员」，避免它靠训练数据里的过期信息瞎编。",
+    "quote": "让 Agent 自己上网做调研，老板的周报有着落了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/mvanhorn/last30days-skill",
+    "published": "2026-08-31",
+    "uid": "dev_e8ffc943"
+  },
+  {
+    "title": "开源输入法被小红书带火：拒绝卖用户数据的独立开发者",
+    "content": "独立开发的开源 Windows 输入法「水杉输入法」被小红书博主推荐后流量暴涨。作者自述曾遇投资人暗示「输入法只能靠卖用户数据赚钱」，被他当场拒绝，坚持开源、本地优先、不上传词库的路线。流量爆发后仓库迎来一波 star 和 issue，作者表示会继续维护。在输入法市场被大厂垄断、隐私争议不断的背景下，这个「干净」的小众项目能得到社区认可，算是对商业化焦虑的一记回击。",
+    "quote": "不卖用户数据的输入法，成了最靓的仔。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1238218#reply0",
+    "published": "2026-08-31",
+    "uid": "dev_988e65e5"
+  },
+  {
+    "title": "Mktero v0.3.4：在 Zotero 里读可回溯原文的 Markdown",
+    "content": "开源 Zotero 插件 Mktero 更新到 v0.3.4。它通过 MinerU 将本地 PDF 转成结构化 Markdown，在 Zotero 标签页直接阅读，核心卖点是「可回溯」：每段转换文本都能定位回 PDF 原文位置，方便核对公式、表格和引用。新版重构了转换流程、支持批量处理并优化大文档加载性能。对天天跟论文 PDF 打交道的科研党来说，省事太多。",
+    "quote": "PDF 转 Markdown 还带原厂定位，论文党福音。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1238234#reply0",
+    "published": "2026-08-31",
+    "uid": "dev_fdd912c6"
+  },
+  {
+    "title": "Runner：让 Claude Code 和 Codex 在一个窗口里结对编程",
+    "content": "开发者分享自制的 Runner——一个本地 macOS 工具，让多个 AI 编码 Agent 在同一窗口内协作：Claude Code 负责写、Codex 负责 review，需要时再开一个查资料，无需人肉在终端间复制粘贴。作者称日常已从「古法编程」变成「在多个 agent 终端间当搬运工」，Runner 正是为了消灭这个环节。对习惯多 Agent 工作流的开发者，这种编排层可能是下一个效率杠杆。",
+    "quote": "AI 结对编程，人类终于可以只当监工了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1238185#reply0",
+    "published": "2026-08-31",
+    "uid": "dev_0a27f1b6"
+  },
+  {
+    "title": "novocab：偏移仅 5% 的 token 预估器，不查词表硬算",
+    "content": "开发者开源 novocab——一个不依赖词表的 token 预估器。作者被 char/4 这类粗估折磨已久：实际偏差常达 30%-50%，且并非文本越长越准。novocab 通过算法逼近真实 tokenizer 的分词规律，在多种语言单段语料上偏移仅 5% 左右，4K 上下文只偏 3%。对做 LLM 用量计费、上下文窗口管理和成本预估的工具开发者来说，这种高精度估算能省下不少「多算少算」的扯皮。",
+    "quote": "token 算得准，账单才不吓人。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1238147#reply0",
+    "published": "2026-08-31",
+    "uid": "dev_e0db5194"
+  },
+  {
+    "title": "Layerive：两小时搓出来的本地 AI 图片工作台",
+    "content": "开发者分享用 AI 两小时做成的 Layerive——一个本地 AI 图片工作台。它解决的核心痛点是图片生成/改图过程中提示词、原图、历史版本散落各处的问题：以项目制管理，支持文生图、图生图、提示词改图、局部框选修改、扩图和图片改字，每次生成自动存版本并形成版本树，方便对比回滚。作者还提到不想被单一平台绑定，本地运行 + 多模型切换正是它的设计出发点。",
+    "quote": "两小时搓出图片工作台，设计师直呼内行。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1238193#reply0",
+    "published": "2026-08-31",
+    "uid": "dev_df3fbb41"
+  },
+  {
+    "title": "时隔 7 年，Touch Bar 终于被用上了：Codex 用量上屏",
+    "content": "V2EX 网友做了个 Mac 小工具：在 Touch Bar 和菜单栏实时展示 Codex 用量。苹果砍掉 Touch Bar 多年，这位老哥反手把它变成 AI 额度的「仪表盘」，摸一下就能看到还剩多少额度。仓库已开源，对每天盯着 Codex 额度、又恰好有台带 Touch Bar 老 Mac 的开发者来说，属于「废物利用」的典范。",
+    "quote": "Touch Bar 被苹果抛弃，被程序员捡回来续命。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1238225#reply0",
+    "published": "2026-08-31",
+    "uid": "dev_b84419b2"
+  },
+  {
+    "title": "嫌六爻排盘网站太丑，他自己搓了一个",
+    "content": "作者刷到在美国给路人免费算卦的 Up 主后对六爻产生兴趣，自学几小时放弃，转而把课程蒸馏成 Skill；但排盘时发现市面上的六爻网站审美还停留在 2008 年 IE 时代，索性用现代审美自己搓了一个新排盘站。用 AI 辅助开发传统玄学工具，还带点「看不过去就自己动手」的独立开发者精神。",
+    "quote": "玄学可以信，但网站丑真的不能忍。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1238224#reply4",
+    "published": "2026-08-31",
+    "uid": "dev_5ba81ec3"
+  },
+  {
+    "title": "AI 能写代码了，软件工程师到底在为什么付费？",
+    "content": "Dev.to 热文直击灵魂拷问：既然 AI 能写代码，公司还花钱雇工程师干嘛？作者梳理了从「会写代码」到「能交付可靠系统」之间的鸿沟：需求澄清、架构取舍、故障定位、合规与安全责任、跨团队协作，这些恰恰是 AI 目前最不擅长的部分。文章认为工程师的定价正从「代码产能」转向「判断力与责任」，建议把 AI 当实习生用，但永远别把验收责任外包。共识是——代码变便宜了，判断变贵了。",
+    "quote": "代码越来越便宜，背锅能力越来越值钱。",
+    "source": "Dev.to",
+    "url": "https://dev.to/tejas_shinkar/so-if-ai-can-write-code-what-are-software-engineers-getting-paid-for-193m",
+    "published": "2026-08-31",
+    "uid": "dev_bd516c2a"
+  },
+  {
+    "title": "OpenAI Responses API user 迁移：安全与缓存解耦的正确姿势",
+    "content": "开发者撰文拆解 OpenAI Responses API 的 user 参数迁移。这次调整容易被误读为简单的字段改名，实则把「安全隔离」和「prompt 缓存」两个维度解耦：user 标识不再参与缓存键计算，避免不同用户共享缓存带来的数据泄漏风险。文章给出迁移路径、兼容性说明和新的缓存命中策略。对重度使用 OpenAI API、依赖缓存降本的应用团队来说，值得细读。",
+    "quote": "缓存和安全解耦，这波改动藏着大讲究。",
+    "source": "Dev.to",
+    "url": "https://dev.to/ssukhpinder/openai-responses-api-user-migration-split-safety-from-prompt-caching-32io",
+    "published": "2026-08-31",
+    "uid": "dev_3ae80f9a"
+  },
+  {
+    "title": "AutoFix-Agent：让 AI 自动修复 CI/CD 故障的实战",
+    "content": "作者分享用 TrueForge 与 Qodo 构建 AutoFix-Agent 的经验：当 CI/CD 流水线失败时，Agent 自动拉取失败日志、定位原因、生成修复补丁并重新触发流水线，整个过程 38 秒内完成。文章拆解了工具调用设计、失败分类策略、安全护栏（不自动合并、重大变更需人工确认）和误报处理机制。对 DevOps 团队来说，这是把「修流水线」从半夜加班变成自动化值班的参考。",
+    "quote": "流水线挂了，AI 比你先爬起来修。",
+    "source": "Dev.to",
+    "url": "https://dev.to/priyanshu123coder/building-autofix-agent-autonomous-cicd-failure-remediation-with-trueforge-qodo-3o2a",
+    "published": "2026-08-31",
+    "uid": "dev_c2b4431f"
+  },
+  {
+    "title": "K8s Topology Spread：把 Pod 均匀摊开的正确姿势",
+    "content": "本文延续「亲和性俱乐部」系列，讲 Kubernetes 的拓扑分布约束（Topology Spread）。作者复盘上篇结论：给关键服务加 Pod 反亲和、集群只有两个 worker 节点时看似安全，实则仍有隐患，进而引出 topologySpreadConstraints 如何按节点、可用区等维度把 Pod 均匀打散。配实例讲配置写法与适用场景，适合被调度策略坑过的运维和平台工程师。",
+    "quote": "反亲和只是开头，把 Pod 摊匀才是真功夫。",
+    "source": "Dev.to",
+    "url": "https://dev.to/thegm26/k8s-topology-spread-1hcn",
+    "published": "2026-08-31",
+    "uid": "dev_99b451a5"
+  },
+  {
+    "title": "用 Vue 3 从零搓一个工作流编辑器",
+    "content": "作者吐槽 Vue 的图表/流程图教程比 React 少得多，且大多停在「节点能显示在屏幕上」就结束。这篇直接一路做到能用的工作流编辑器：节点拖拽、连线、自定义节点、边路由等完整实现，覆盖真实工作流产品需要的交互细节。文章源自 Grafloria 工程博客，代码量足、步骤连贯，是 Vue 3 开发者做可视化编辑器的稀缺实战参考。",
+    "quote": "React 教程遍地走，Vue 图表教程终于补上了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/ramy_othman/build-a-workflow-editor-in-vue-3-the-whole-thing-4602",
+    "published": "2026-08-31",
+    "uid": "dev_6b8060e8"
+  },
+  {
+    "title": "手把手搭 RAG：从组件到查询管线（下）",
+    "content": "这是作者「我的第一个 RAG 系统」系列第二篇。上一篇从基础问题出发梳理了 RAG 的八个核心组件及其组装关系，本篇继续深入：把组件归类为知识管线与查询管线两大部分，讲解文档摄取、分块、向量化、检索与生成如何串联，以及实践中容易踩的坑。对刚入门 RAG、想搞懂「组件到底怎么拼起来」的开发者是很好的路线图。",
+    "quote": "组件都认识，拼起来就翻车？这篇治这个。",
+    "source": "Dev.to",
+    "url": "https://dev.to/timilehin-olusegun/building-my-first-rag-system-from-components-to-knowledge-and-query-pipelines-part-two-jdj",
+    "published": "2026-08-31",
+    "uid": "dev_9b31e42f"
+  },
+  {
+    "title": "MHS 三部曲（上）：别急着叫它「物理 MCP」，Anthropic 到底发了什么",
+    "content": "张善友撰文拆解 Anthropic 的 MHS（Model-Hardware System）发布，提醒别被「物理 MCP」的标签带偏。文章指出 MHS 的本质不是「AI 控制硬件」，而是三件事的组合：窄腰接口（read/write）降低接入门槛、设备语义（状态/操作/标签）让机器能自我介绍、分层执行让模型待在实时控制环之外。对想理解「AI 与物理世界交互」趋势的开发者，这是中文社区少见的深度解读。",
+    "quote": "别张口就物理 MCP，先搞清楚人家发的啥。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/22762250",
+    "published": "2026-08-31",
+    "uid": "dev_404fa80b"
+  },
+  {
+    "title": "Mem2Evolve：ACL 2026 上的智能体自我进化新范式",
+    "content": "北航团队在 ACL 2026 发表 Mem2Evolve，提出把「能力扩展」与「经验蒸馏」两个过程耦合的智能体自我进化范式。传统做法要么只扩能力导致不稳定，要么只蒸馏经验导致泛化差；Mem2Evolve 让两者协同进化，实现更稳定、更高效的持续学习。文章介绍了记忆架构设计、进化策略和实验对比结果。对关注 LLM Agent 前沿研究的开发者来说，这是理解「智能体如何越用越强」的一篇关键论文。",
+    "quote": "让 Agent 边干活边进化，越用越妖。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/mianmaner/p/22761984",
+    "published": "2026-08-31",
+    "uid": "dev_963660f3"
+  },
+  {
+    "title": "XXL-BOOT 新范式：一句话需求直接生成业务",
+    "content": "许雪里发文介绍 XXL-BOOT v2.1.0 的 AI 范式跃迁：从「一行 SQL 生成代码」升级到「一句需求直生业务」。内置 xxl-boot-monolith 等 SKILL 能力后，开发者用自然语言描述业务需求，框架直接产出可运行的业务模块，交付范式被大模型编程助手重塑。文章演示了从需求到业务的完整链路，对关注低代码与 AI 生成式开发的中后台开发者有参考价值。",
+    "quote": "一句需求出业务，程序员离「只背锅」又近一步。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/xuxueli/p/22764818",
+    "published": "2026-08-31",
+    "uid": "dev_cf52c46b"
+  },
+  {
+    "title": "AI 编码 Agent 从原理到可运行代码",
+    "content": "文章开篇点破过去五年开发者与 AI 的关系被「Tab 键」定义：模型猜下一行，人决定接不接受。Copilot 把补全做到极致，也把很多人锁死在「AI 写代码 = 更准的补全」的心智模型里。作者随后拆解 2024-2026 年真正的变化——从补全走向自主编码 Agent，并给出从原理到可运行代码的完整路径，帮开发者跳出旧框架理解新一代 AI 编程。",
+    "quote": "Tab 补全时代落幕，该学会给 Agent 派活了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/smartloli/p/22761429",
+    "published": "2026-08-31",
+    "uid": "dev_b57619d0"
+  },
+  {
+    "title": "Codex 直连智谱 Coding Plan，cc switch 可以退休了",
+    "content": "作者分享周末折腾心得：原本用 Codex + cc switch 中转智谱模型，翻官方文档时发现智谱已原生支持 OpenAI 的 Responses 接口，直接对接 coding plan 即可，连 cc switch 都省了。文章梳理了智谱当前的产品形态与配置要点，对想用国产模型跑 Codex、又嫌链路太长的开发者，是一份实测过的省钱省事教程。",
+    "quote": "少一层中转，多一分流畅，白嫖党狂喜。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/grey-wolf/p/22761748",
+    "published": "2026-08-31",
+    "uid": "dev_021b31df"
+  },
+  {
+    "title": "经常用 Codex 后，我发现 AGENTS.md 只该管一件事",
+    "content": "程序员徐公分享用 Codex 的心得：模型变强后，全局 AGENTS.md 反而该做减法。以前恨不得把「先看什么、再搜什么、怎么改、最后怎么回复」全写进去，结果规则越多 AI 越容易顾此失彼。他总结 AGENTS.md 只该管一件事——让 Agent 少走弯路的方向性约束，其余细节交给模型判断。文章给出精简模板和反面案例。对「Prompt 越写越长、效果越改越差」的开发者，值得一试。",
+    "quote": "AGENTS.md 写得越长，AI 越容易迷路。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/gdutxiaoxu/p/22761146",
+    "published": "2026-08-31",
+    "uid": "dev_030fb712"
+  },
+  {
+    "title": "用 crontab 给 LLM 使用量装上监控眼",
+    "content": "把大模型接进日常工作流后，作者遇到新问题：模型到底被调了多少次？高峰时段是什么时候？周末有没有人调用？对这些数据一无所知，就谈不上优化成本、排查异常、规划扩容。于是他给 LLM 使用量加了一层可观测性——方案很朴素：用 Linux 自带的 crontab 定时采集调用日志，再汇总成可视化的使用报告，零额外依赖。",
+    "quote": "模型账单看不懂？先给调用量装个监控。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/jyzhao/p/22757555",
+    "published": "2026-08-31",
+    "uid": "dev_bd1fce78"
+  }
+]
