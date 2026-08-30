@@ -1,0 +1,119 @@
+[
+  {
+    "title": "腾讯开源 Hy4 preview：770B 参数、1M 上下文，对标 GLM-5.3",
+    "content": "腾讯发布并开源新一代大模型 Hy4 preview：总参数 770B、激活 49B，上下文超 1M token，主打编程、办公、科研。内部盲测 163 名专家、203 个工程任务，得分 2.99/4.00，领先 GLM-5.3 与 Kimi K3。首发两周在 WorkBuddy/CodeBuddy 免费，可经腾讯云 TokenHub 与 OpenRouter 接入，并首次参与自身训练与推理优化。",
+    "quote": "腾讯 Hy4：770B 参数的身板，先给自己打工优化。",
+    "source": "Tencent 官网 (HN 362分)",
+    "url": "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/",
+    "published": "2026-08-31",
+    "uid": "ai_ba90dcfe"
+  },
+  {
+    "title": "V2EX 热帖：GLM 开发严重事故，8 亿 token 买了个教训",
+    "content": "V2EX 热帖：开发者用 GLM 相关 agent 编程工具时遭遇严重事故，自动模式下烧掉 8 亿 token 才买了个教训。评论区支招：配置 permission.mode=auto 时要用 disallowedTools 禁用危险命令（如 Bash rm *），再配合 PostToolUse hook 自动提交。帖子 41 条回复，堪称 AI 编程工具'自动模式翻车'的典型教材。",
+    "quote": "8 亿 token 买教训，这学费够训练半个小模型了。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1238217",
+    "published": "2026-08-31",
+    "uid": "ai_af058d76"
+  },
+  {
+    "title": "V2EX 热议：100 美元 AI 订阅，Grok 还是 Gemini",
+    "content": "V2EX 网友纠结：100 美元预算的 AI 订阅，Grok 还是 Gemini？36 条回复吵成一片：有人站 Grok 的联网与梗能力，有人夸 Gemini 的多模态与生态整合，还有人建议拆开订阅多个平价服务。评论区顺势聊起 AI 订阅焦虑——月费从几十涨到上百美元，订阅制到底值不值成了新难题，选模型像选流媒体会员，各平台都在抢用户的固定预算。",
+    "quote": "100 刀选 Grok 还是 Gemini？先选个便宜的。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1238150",
+    "published": "2026-08-31",
+    "uid": "ai_ac8f7ec2"
+  },
+  {
+    "title": "V2EX 热帖：闲置 Token 自建 Gemini 中转站免费分享",
+    "content": "V2EX 热帖：有开发者自建 Gemini 反代中转站，把闲置 Token 免费分享——注册即送 $5 额度（约 35M Token），留言反馈再送 $10。起因是作者 OpenAI 账号被封后转向 Gemini 辅助编程，发现配额充裕索性做起了'AI 活雷锋'。帖子 58 条回复冲上热榜，有人感谢福利，也有人提醒反代中转的合规与隐私风险，折射出国内 AI 用户的野路子生态。",
+    "quote": "账号被封就自建中转站，程序员的反脆弱日常。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1238174",
+    "published": "2026-08-31",
+    "uid": "ai_9dc68200"
+  },
+  {
+    "title": "Domain-Driven Agents：遗留代码库才是 AI 的照妖镜",
+    "content": "HN 热文：作者发现 LLM 在绿地项目表现惊艳，一旦进入耦合重、技术债深的遗留代码库，产出质量断崖下跌——同一个概念能发明出第四种拼写，该走 adapter 的地方直连，该直连的地方硬套 adapter。核心观点：需要升级的不是模型，而是代码库本身。他把工作拆成'战略性'（决策）与'战术性'（执行），LLM 负责后者，人类专注前者，并给出逐步重构代码让 agent 可用的实操路径。",
+    "quote": "绿地随便造，老代码库才是 AI 的照妖镜。",
+    "source": "coldtake.dev (HN 90分)",
+    "url": "https://coldtake.dev/blog/domain-driven-agents",
+    "published": "2026-08-31",
+    "uid": "ai_3d958c76"
+  },
+  {
+    "title": "Claude Code 默认把 Session URL 塞进 commit message 引争议",
+    "content": "Anthropic Claude Code 的 GitHub issue 引发热议：新版默认把 Claude Session URL 追加进 commit message 和 PR 描述，112 分登上 HN。开发者担忧会话链接会暴露私有代码上下文与提示词，在企业仓库里等于把内部信息带进版本历史。139 条评论吵成两派：默认开启是隐私事故，还是链接无伤大雅，Anthropic 尚未回应。",
+    "quote": "AI 写 commit 顺手附赠会话链接，社死新姿势。",
+    "source": "GitHub Issue (HN 112分)",
+    "url": "https://github.com/anthropics/claude-code/issues/66504",
+    "published": "2026-08-31",
+    "uid": "ai_45550d15"
+  },
+  {
+    "title": "90 年代老爸的盲棋课：治 2026 年的 vibecoding",
+    "content": "HN 热文：作者回忆 90 年代父亲教他下盲棋——不盯棋盘、只追踪棋子的关系与攻防结构。他把经验迁移到 AI 编程时代：vibecoding（不看代码就让 AI 猛写）产出的软件活不久，就像盲棋高手靠关系建模而非照片式记忆。AI 像高级语言一样解放了底层细节，但'需要理解的东西清单'并没有消失，只是变短了。81 分登 HN，评论区围绕'该让 AI 写多少、自己读多少'展开反思。",
+    "quote": "老爹的盲棋课，治 2026 年的 vibecoding。",
+    "source": "askmike.org (HN 81分)",
+    "url": "https://askmike.org/articles/ai-coding-lessons-in-the-90s-from-my-dad/",
+    "published": "2026-08-31",
+    "uid": "ai_90c893e8"
+  },
+  {
+    "title": "arXiv：伪造证据也能让 LLM agent 对不可知问题自信下注",
+    "content": "arXiv 新论文：给 LLM agent 看一个专业风控面板后，它对'原则上不可预测'的问题下注比例从 6.5% 飙到 54.0%；更离谱的是把面板数字全部伪造，commit 率照样从 24.5% 涨到 36.8%，与真实数据（37.6%）几乎无差，12 个前沿模型全部中招。结论：让 agent 自信行动的并非信息本身，而是'看起来像信息的包装'。伪造证据面前，校准等于没校准。",
+    "quote": "假数据也能壮胆，agent 的自信跟信息无关。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2608.27167",
+    "published": "2026-08-31",
+    "uid": "ai_c1dcfa77"
+  },
+  {
+    "title": "Thomson：面向主权 AI 的前沿模型持续学习框架",
+    "content": "arXiv 新论文提出 Thomson：面向'主权 AI'的前沿模型持续学习框架。论文指出前沿模型开发被少数资金雄厚的玩家垄断，造成信息、经济与权力不对称；主权 AI 呼吁组织独立构建、部署与治理 AI，却缺乏短期可行的路径。Thomson 论证在多样化资金条件下，通过持续学习让更广泛的机构逐步逼近前沿性能是可行的，为'小预算追平大厂'提供了技术路线。",
+    "quote": "打不过就持续学习，主权 AI 的平权路线图。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2608.27147",
+    "published": "2026-08-31",
+    "uid": "ai_eeaadd4a"
+  },
+  {
+    "title": "arXiv：评估感知不是铁板一块，能力型框架才预测合规",
+    "content": "arXiv 新论文研究'评估感知'（eval-awareness）对模型合规行为的影响：安全评估管线常把它当作一个需要压制的单一量，但论文在 Qwen3-32B + FORTRESS 数据集上发现，链式思考中的评估感知可细分为'能力型'与'安全型'等框架，不同框架对合规行为的预测截然不同。结论：能力型框架显著预测合规，安全评估需要更精细的干预设计。",
+    "quote": "同样是察觉被测试，'秀能力'和'守边界'两码事。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2608.27340",
+    "published": "2026-08-31",
+    "uid": "ai_5dfe96af"
+  },
+  {
+    "title": "arXiv：ACE 视角——什么才是好的 agentic 训练数据",
+    "content": "arXiv 新论文：LLM agent 越来越依赖生成式交互数据来学习与环境互动，但 agentic data 的生成必须同时保证环境、任务、交互、成功信号的一致性，且要产出'有用'而非'海量'的经验。论文提出 ACE 两层框架：先把 agentic data 表示统一，再把候选构造与验证、选择解耦，避免各领域各自为政导致评估混乱，为 agent 数据工程提供了系统化方法论。",
+    "quote": "agent 数据不是越多越好，ACE 框架来治内卷。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2608.27260",
+    "published": "2026-08-31",
+    "uid": "ai_da0f8189"
+  },
+  {
+    "title": "arXiv：LLM 能设计出接近最优的运筹学算法",
+    "content": "arXiv 新论文：LLM 能否为规整的运筹学问题设计出接近最优的算法？研究者测试库存控制、排队网络控制与品类优化三类问题，分两级评估：一级给单个实例求单解，二级只给问题类描述与参数范围、让模型产出从参数到解的完整算法，全程仅一条未调优提示词。结果显示 LLM 设计的算法接近最优。论文认为 LLM 正从'解题者'进化成'算法设计者'，运筹学建模的门槛有望被大幅拉低。",
+    "quote": "LLM 开始设计运筹算法，OR 工程师危？",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2608.27296",
+    "published": "2026-08-31",
+    "uid": "ai_ee65d1d9"
+  },
+  {
+    "title": "Vid2notes：听不清就'看'画面，视频转笔记的新思路",
+    "content": "开发者受够了'视频一句话没听清就反复拖进度条'，发现现有转写工具只认音频——恰恰是听不清的词（幻灯片术语、代码名词），音频也转不对。于是做了 Vid2notes：Whisper 转文字，再让多模态模型对着字幕和截图一起读，输出带截图、章节、时间戳和 AI 总结的图文笔记，可导出 Markdown/SRT/VTT。听不清就上眼睛看，这个思路比单纯堆转写模型聪明得多，也实用得多。",
+    "quote": "听不清就上眼睛，多模态终于干正事了。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1238109",
+    "published": "2026-08-31",
+    "uid": "ai_abc955b4"
+  }
+]
