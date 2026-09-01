@@ -1,0 +1,227 @@
+[
+  {
+    "title": "State of Open Models：HuggingFace 发布 2026 夏季开源模型观察",
+    "content": "HuggingFace 发布 2026 年夏季开源模型观察报告，盘点开源大模型生态最新格局：从基座模型能力追平闭源的速度、社区微调与评测体系的成熟度，到开放权重模型在推理成本上的优势。报告还梳理了多模态、长上下文、Agent 专用模型等方向的进展，为开发者选型开源模型提供了相对完整的参考坐标。",
+    "quote": "闭源追不上开源的夏天，卷王们又赢了。",
+    "source": "HN Front Page",
+    "url": "https://huggingface.co/blog/state-of-open-models-summer-2026",
+    "published": "2026-09-02",
+    "uid": "dev_c126858f"
+  },
+  {
+    "title": "44% on ARC-AGI-1 in 67 cents：廉价推理也能打抽象推理",
+    "content": "一位开发者用仅 67 美分的推理成本在 ARC-AGI-1 基准上拿下 44% 的成绩。文章详细拆解方法：通过精心设计的提示词组合、多轮自我校验与廉价推理模型搭配，把成本压到极低。作者认为 ARC 这类抽象推理任务并非只有堆算力一条路，提示工程与推理时策略仍有巨大挖掘空间，登顶 HN 热榜获 263 分。",
+    "quote": "67 美分打 44 分，比某些烧钱团队性价比高多了。",
+    "source": "HN Front Page",
+    "url": "https://mvakde.github.io/blog/44-on-arc-1/",
+    "published": "2026-09-02",
+    "uid": "dev_a548820a"
+  },
+  {
+    "title": "Play Store 屏蔽 AuroraStore，GrapheneOS 用户遭殃",
+    "content": "Google Play 商店开始屏蔽 AuroraStore，这款开源应用商店是 GrapheneOS 等去 Google 服务用户安装应用的重要途径。屏蔽后相关用户获取应用更新变得困难，引发社区对 Android 生态封闭性的新一轮讨论。AuroraOSS 团队已在 GitLab 上跟踪该问题，GrapheneOS 用户被迫另寻出路。",
+    "quote": "安卓开源？不存在的，Play 才是亲爹。",
+    "source": "HN Front Page",
+    "url": "https://gitlab.com/AuroraOSS/AuroraStore/-/work_items/1566",
+    "published": "2026-09-02",
+    "uid": "dev_d8bf931d"
+  },
+  {
+    "title": "vpipe：Mac 上最快的本地 H3 视频生成方案",
+    "content": "Show HN 项目 vpipe 号称 Mac 上最快的本地 H3 视频生成方案：在 M5 Pro、24GB 内存的 MacBook Pro 上生成 960×544、124 帧的视频只需 5 分钟，对比知名硬核实现 H3.c 的 7 分 19 秒优势明显。项目基于 DiT 架构加 Turbo LoRA 加速，把视频生成从云端拉回本地桌面，适合想低成本玩 H3 视频的开发者。",
+    "quote": "5 分钟一条视频，显卡厂商看了想哭。",
+    "source": "HN Show HN",
+    "url": "https://github.com/tgo-app-dev/vpipe",
+    "published": "2026-09-02",
+    "uid": "dev_c5a6f991"
+  },
+  {
+    "title": "firecrawl/pdf-inspector：PDF 体检科，Rust 写的智能分类库",
+    "content": "Firecrawl 团队开源 Rust 库 pdf-inspector，专攻 PDF 检查、分类与文本提取。它能智能识别扫描版与文本版 PDF，让 RAG 管线在解析前就做出路由决策，避免对扫描件跑错提取流程。项目已积累 1.7 万+ star，性能导向的设计使其成为 PDF 预处理环节的实用拼图，适合处理大量异构文档的检索团队。",
+    "quote": "先分清扫描件和文本件，PDF 也有自己的体检科。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/firecrawl/pdf-inspector",
+    "published": "2026-09-02",
+    "uid": "dev_5a5dd173"
+  },
+  {
+    "title": "browser-use/video-use：让 coding agent 直接编辑视频",
+    "content": "browser-use 团队新作 video-use，让 coding agent 直接编辑视频。通过把视频帧序列接入 agent 的视觉与工具循环，AI 可以完成剪辑、加字幕、转场等操作，2.2 万+ star 说明市场对「AI 剪视频」的饥渴程度。项目延续 browser-use 的 agent 优先设计哲学，把视频变成可编程对象，是 AI 内容生产工具链的重要补充。",
+    "quote": "剪辑师还没失业，先给 agent 加个班。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/browser-use/video-use",
+    "published": "2026-09-02",
+    "uid": "dev_2408ad98"
+  },
+  {
+    "title": "3b1b/manim 重回热榜：数学动画引擎依然能打",
+    "content": "3Blue1Brown 的数学动画引擎 manim 再次冲上 GitHub Trending，92K star 的老牌项目依旧活跃。它用 Python 代码驱动数学可视化动画，是无数科普视频的幕后功臣。近期更新聚焦性能优化与 API 简化，社区还沉淀了大量模板，让「用代码讲数学」的门槛持续降低，对做技术科普和教学视频的开发者很有参考价值。",
+    "quote": "数学之美，全靠一行行 Python 撑场。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/3b1b/manim",
+    "published": "2026-09-02",
+    "uid": "dev_f8e88ed0"
+  },
+  {
+    "title": "GitPress：像用 WordPress 一样写作，内容存自己 GitHub",
+    "content": "V2EX 用户开源 GitPress，主打「像 WordPress 一样写作，文章存在你自己的 GitHub 仓库」。它提供后台编辑、主题系统等 CMS 体验，同时内容完全由 Git 版本管理，天然支持协作、历史回溯与多端同步。对受够了平台锁定效应的写作者来说，这是把写作主权握回自己手里的一个务实选项。",
+    "quote": "写作自由第一步：先把内容搬回自己家。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1238793#reply1",
+    "published": "2026-09-02",
+    "uid": "dev_8359b97b"
+  },
+  {
+    "title": "EdgeEver：开源自托管笔记应用，原生支持 AI/MCP",
+    "content": "EdgeEver 是开源笔记应用，原生支持 AI/MCP，提供全平台客户端与浏览器剪藏。用户可以把笔记数据完全托管在自己的服务器上，同时通过 MCP 协议接入 AI 能力做摘要与问答。在笔记应用纷纷涨价和上云的大环境下，自托管路线成了隐私敏感用户的新宠，评论区讨论热度不低。",
+    "quote": "印象笔记的平替，连 AI 都给你配齐了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1238629#reply7",
+    "published": "2026-09-02",
+    "uid": "dev_62256dac"
+  },
+  {
+    "title": "独立开发前线：月落从负债到月入 1w+ 的垂直 SaaS 复盘",
+    "content": "V2EX 分享独立开发者「月落」的复盘：从负债状态起步，靠垂直 SaaS 产品实现月入 1 万+。文章回顾了选品逻辑、冷启动获客、定价迭代的完整过程，也坦诚讲了踩过的坑。对想走独立开发路线的人而言，这是一份难得的真实样本——没有融资故事，只有现金流的朴素计算，评论区一片「真实」感叹。",
+    "quote": "不融资不画饼，现金流才是独立开发的命。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1238778#reply0",
+    "published": "2026-09-02",
+    "uid": "dev_6d536df0"
+  },
+  {
+    "title": "Error Handling Patterns That Actually Scale：错误处理要前置设计",
+    "content": "Dev.to 热文探讨真正能规模化的错误处理模式。作者指出大多数失败案例的共性：try/catch 是在 happy path 写完事后补上去的。文章主张从设计源头规划错误边界，区分可恢复与不可恢复错误，用类型系统表达失败，并分享了多语言下的实践模式，让错误处理从「补丁」变成架构的一部分。",
+    "quote": "try/catch 不是补丁，是架构的良心。",
+    "source": "Dev.to",
+    "url": "https://dev.to/codeatlas/error-handling-patterns-that-actually-scale-2cpb",
+    "published": "2026-09-02",
+    "uid": "dev_90ac5245"
+  },
+  {
+    "title": "网页能识别你装了哪些浏览器扩展，原理与防御",
+    "content": "一篇隐私向技术文：网页在你不点击任何东西的情况下，也能猜出你装了什么浏览器扩展——密码管理器、广告拦截器、钱包插件都能被识别。文章解释了背后的探测原理（资源加载差异、DOM 注入特征等），并给出缓解建议。对做安全与隐私产品的开发者来说，这是理解浏览器攻击面的好素材。",
+    "quote": "你装了什么插件，网页比你还清楚。",
+    "source": "Dev.to",
+    "url": "https://dev.to/session_replay/a-web-page-can-tell-which-extensions-you-have-installed-here-is-how-553d",
+    "published": "2026-09-02",
+    "uid": "dev_adadd9af"
+  },
+  {
+    "title": "阿里开源 skill-up：Agent Skill 评测工具上线",
+    "content": "阿里开源 Agent Skill 评测工具 skill-up，回应「一个 Skill 的好坏由谁定义」的行业难题。它提供标准化评测流程与指标，让团队能把沉淀的 SKILL.md 从「经验分享」升级为「可量化验证的能力包」。文章介绍了评测维度、用法和落地场景，是 Agent 工程化浪潮里补上「质量关」的关键一环。",
+    "quote": "Skill 好不好别靠嘴，跑分说话。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/jinjiangongzuoshi/p/22794596",
+    "published": "2026-09-02",
+    "uid": "dev_909358af"
+  },
+  {
+    "title": "Graph RAG 不一定要图数据库：轻量备选方案",
+    "content": "博客园文章指出主流 Graph RAG 方案（HippoRAG、Graphiti、Zep）都依赖图数据库加 ETL 管线建知识图谱，成本不菲。作者提出备选思路：在特定场景下用轻量结构（如关系表、向量加元数据过滤）也能达到相似检索效果，省掉图数据库的运维负担。给被「上图上库」叙事劝退的团队提供了务实选项。",
+    "quote": "被图数据库劝退？换条路照样 RAG。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/accordion/p/22787957",
+    "published": "2026-09-02",
+    "uid": "dev_2cec82d3"
+  },
+  {
+    "title": "Show HN：Shed —— 给终端 AI Agent 用的 Git 仓库管理工具",
+    "content": "独立开发者做了个叫 Shed 的工具，专门给跑在终端里的 AI Agent 管理 Git 仓库。现在 Agent 干活经常要 clone、切分支、看 diff、同时处理多个仓库，Shed 把这些操作封装成清晰的命令集，让 Agent 不用瞎猜仓库状态。思路很务实：与其让 Agent 在裸终端里胡搞，不如给它一把顺手的仓库管理瑞士军刀，至少能减少破坏性操作翻车的概率。",
+    "quote": "Agent 乱改仓库？给它把 Shed 先锁上。",
+    "source": "HN Show HN",
+    "url": "https://github.com/AndrewHannigan/shed",
+    "published": "2026-09-02",
+    "uid": "dev_4ddbd752"
+  },
+  {
+    "title": "Show HN：Lanes —— 利用 0.1x 缓存读取价协调多个 Claude",
+    "content": "作者做了个叫 Lanes 的编排层，让多个 Claude 实例并行协作，还专门利用 Anthropic 缓存读取 0.1 倍价这个特性来压低成本。思路是把共享上下文塞进缓存，让每个 lane 只读不改，既省 token 又避免互相踩踏。对重度依赖 Agent 协作的团队来说，这种把计费规则玩明白的骚操作，比无脑堆 API 调用实在多了。",
+    "quote": "把计费规则玩明白，比堆 API 调用实在。",
+    "source": "HN Show HN",
+    "url": "https://github.com/adam-s/lanes",
+    "published": "2026-09-02",
+    "uid": "dev_a733709f"
+  },
+  {
+    "title": "Show HN：不信我 bro —— 用 1 张 3090 修 GPT-OSS",
+    "content": "作者用 34.9 亿 token、1000 GPU 小时在单张 3090 上训练了 burrito-core，号称要「修复」GPT-OSS 的缺陷，标题那句 Don't trust me bro 自带劝退气质。项目把训练配方、数据和评估全开源，主打小成本复现大模型改进路线。在动辄烧几百万的炼丹圈，这种 1x3090 的极限流玩法反倒成了稀缺品。",
+    "quote": "一张 3090 就想修 GPT？先别信，bro。",
+    "source": "HN Show HN",
+    "url": "https://github.com/iamskeole/burrito-core",
+    "published": "2026-09-02",
+    "uid": "dev_8a999c0f"
+  },
+  {
+    "title": "Show HN：PearPie —— 无需账号的端到端私密 AI 聊天",
+    "content": "PearPie 主打私密 AI 聊天：设备间走 P2P 直连同步，不需要注册账号，聊天记录不经过第三方服务器。对在意隐私、又受够了各家 AI 厂商拿对话训练模型的用户来说，这个定位挺戳痛点。当然，P2P 意味着在线状态和同步体验要靠用户自己的设备撑着，适合小圈子自用，别指望它能像 iMessage 一样丝滑。",
+    "quote": "聊天记录不上云？P2P 直连，社恐福音。",
+    "source": "HN Show HN",
+    "url": "https://www.pearpie.ai/launch/",
+    "published": "2026-09-02",
+    "uid": "dev_7d587cfe"
+  },
+  {
+    "title": "Keenable SELECT：用 SQL 让 Agent 搜索网页",
+    "content": "Keenable 做了个叫 SELECT 的 Agent，核心卖点是「用 SQL 的方式搜索网页」——把搜索结果当成一张表，用 SELECT、WHERE、JOIN 之类的语法去筛选和聚合。对习惯数据库思维的开发者来说，这种抽象比自然语言 prompt 更精确可控，查询意图一目了然。虽然目前更像概念验证，但「搜索即查询」的思路确实有玩味空间。",
+    "quote": "搜索用 SQL？数据库党狂喜，prompt 党沉默。",
+    "source": "HN Front Page",
+    "url": "https://keenableai.github.io/select-showcase/",
+    "published": "2026-09-02",
+    "uid": "dev_e7ca6901"
+  },
+  {
+    "title": "浏览器里的 Office Open XML 文档查看器",
+    "content": "一个纯浏览器端的 OOXML 文档查看器，直接在网页里渲染 docx/pptx/xlsx 这类 Office Open XML 格式，不需要装 Office，也不用把文件上传到云端。对不想让文档出本机、又懒得装办公套件的场景很实用，前端渲染 Office 格式这条技术路线一直很有挑战性，能跑起来本身就很有看头。",
+    "quote": "浏览器看 Office 文档，微软看了沉默。",
+    "source": "HN Front Page",
+    "url": "https://ooxml.silurus.dev/",
+    "published": "2026-09-02",
+    "uid": "dev_fe39f816"
+  },
+  {
+    "title": "不要 readahead 的 io_uring：绕过内核预读的新姿势",
+    "content": "一篇深度技术文，讲用 io_uring 做高性能 IO 时绕开内核 readahead 的干扰。作者对比了各种禁用预读的手段，分析了 O_DIRECT、fadvise、在 ring 里直接控制 IO 大小的差异，用实测数据说话。对搞存储引擎、数据库、文件服务的同学来说，这种踩坑实录比官方文档值钱多了，属于看了能少走三个月弯路的那种。",
+    "quote": "内核预读拖后腿？io_uring 教你做人。",
+    "source": "HN Front Page",
+    "url": "https://frn.sh/io-uring/",
+    "published": "2026-09-02",
+    "uid": "dev_2f5e3fc0"
+  },
+  {
+    "title": "V2EX 热议：DeepSeek 输入 <think> 能看到别的用户历史对话",
+    "content": "有用户在 V2EX 爆料，DeepSeek 网页端和 App 输入 <think> 标签后，居然能翻到其他用户的历史对话内容。这属于典型的会话串号/上下文泄漏事故，往小了说是 bug，往大了说是隐私安全事故，直接戳中大家对大模型服务商数据隔离的信任神经。目前讨论挺尖锐，建议跟进官方回应。",
+    "quote": "输入个 <think> 就串号？这隔离是纸糊的。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1213000",
+    "published": "2026-09-02",
+    "uid": "dev_e841648d"
+  },
+  {
+    "title": "Image2Layer：用 AI 把图片转换成可编辑 PSD 图层",
+    "content": "作者分享了一个叫 Image2Layer 的工具，用 AI 把普通图片拆解成可编辑的 PSD 图层，图层、蒙版、文字都能在 Photoshop 里继续改。对设计师来说，这相当于给「想要源文件但没有」的老大难问题开了个后门，抠图、去背景、拆元素一步到位。虽然 AI 拆层的精细度还达不到手绘源文件水平，但做初稿和素材复用已经够香。",
+    "quote": "图片一键拆 PSD，设计师的后悔药。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1238790",
+    "published": "2026-09-02",
+    "uid": "dev_8cb6f2e4"
+  },
+  {
+    "title": "我给 Claude Code 装了个大脑，然后测了测它的要价",
+    "content": "作者给 Claude Code 接了一套外部记忆/知识系统（装了个「大脑」），然后认真测了每次「问大脑」要付出多少成本。文章把上下文注入成本拆得很细，算了一笔账：记忆系统带来的收益 vs token 开销，结论是这玩意儿用得好是外挂，用不好就是烧钱无底洞。对想给 Agent 加长期记忆的人来说，这篇成本测算比一堆吹嘘贴有参考价值。",
+    "quote": "给 Agent 装大脑？先看看钱包扛不扛得住。",
+    "source": "Dev.to",
+    "url": "https://dev.to/gde03/i-gave-claude-code-a-brain-then-i-measured-what-it-costs-to-ask-for-one-5351",
+    "published": "2026-09-02",
+    "uid": "dev_d6968a92"
+  },
+  {
+    "title": "弱模型不能裸奔：Agent Harness 凭什么真实有效",
+    "content": "张善友发文讨论 Agent Harness（智能体运行时）的价值：弱模型单打独斗会露怯，但套上 harness 之后，靠工具调用、上下文管理、流程编排这些外部脚手架，照样能稳定输出。文章的核心观点是「模型的短板可以用工程来补」，顺便 diss 了一波裸奔式 Agent 开发。对正在纠结要不要上 harness 框架的团队，这篇是很好的决策参考。",
+    "quote": "模型弱不要紧，脚手架搭好照样干活。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/22763545",
+    "published": "2026-09-02",
+    "uid": "dev_84636bab"
+  }
+]
