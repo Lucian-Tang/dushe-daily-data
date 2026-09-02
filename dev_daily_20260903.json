@@ -1,0 +1,227 @@
+[
+  {
+    "title": "Gemini 3.8 Flash 与 Cyber 版发布：推理编码再升级",
+    "content": "Google DeepMind 发布 Gemini 3.8 Flash 与 3.8 Flash Cyber，距 3.7 仅三周，是六周内第三个 Flash。3.8 Flash 主打推理与编码升级，智能体与多步推理全面提升，价格持平（0.75 美元/百万输入 token）；Cyber 变体专攻安全，能做漏洞检测与自动修复，仅向可信防御方开放。",
+    "quote": "六周三更 Flash，谷歌把发模型当发周报。",
+    "source": "HN Front Page",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+    "published": "2026-09-03",
+    "uid": "dev_61fccbc0"
+  },
+  {
+    "title": "AI 审计零发现后被打脸：curl 一次补 6 个 CVE",
+    "content": "curl 创始人 Stenberg 刚宣布 Anthropic Mythos 与 OpenAI Codex Security 在 curl 上“零发现”，AISLE 的自动化 AI 系统次日就报出 29 个可疑点，6 个被安全团队确认授予 CVE，随 8.22.0 修复，涉及 OpenSSL 释放后使用、证书固定绕过等。200 亿实例的代码库再次证明：AI 审计换个选手，真能出货。",
+    "quote": "大模型说查完了，人类转头补了 6 个 CVE。",
+    "source": "HN Front Page",
+    "url": "https://aisle.com/blog/aisle-discovered-six-curl-cves-after-openai-and-anthropic-found-zero",
+    "published": "2026-09-03",
+    "uid": "dev_c0f96a54"
+  },
+  {
+    "title": "21 万张机器生成的“最佳软件”页，正污染 AI 的推荐",
+    "content": "一项针对 380 个软件品类的实验：让两款联网模型各推荐 Top5 并保留全部引用，7534 条引用中近六成指向 Tranco 10 万名开外的域名，23.4% 甚至不在前一百万内。背后是三个 2023 年底才出现、疑似同一控制的站点，机器批量生成 21.5 万张 best-xxx 页面，被 Perplexity 等大量引用。SEO 灰产已升级为 AI 引用污染，信源审计该提上日程。",
+    "quote": "AI 推荐里的水分，比带货主播的滤镜还厚。",
+    "source": "HN Front Page",
+    "url": "https://trellner.com/reports/manufactured-sources-behind-ai-recommendations/",
+    "published": "2026-09-03",
+    "uid": "dev_9a136761"
+  },
+  {
+    "title": "Mistral 默认拿用户数据训练：企业版除外，个人请手动退出",
+    "content": "Mistral 更新数据治理文档：默认情况下用户的输入输出数据（对话、文档等）可能被纳入模型训练，个人及免费用户需自行前往 Admin 面板关闭，企业版默认豁免，另有零数据保留（ZDR）选项。在 OpenAI、Anthropic 纷纷强调数据隔离与隐私承诺的当下，Mistral 的默认开启策略引发开发者对 API 数据合规的担忧。调用第三方模型前先读条款，正在变成基本功。",
+    "quote": "嘴上喊数据友好，默认勾选却替你做主。",
+    "source": "HN Front Page",
+    "url": "https://help.mistral.ai/en/articles/455207-can-i-opt-out-of-my-input-or-output-data-being-used-for-training",
+    "published": "2026-09-03",
+    "uid": "dev_c55a4437"
+  },
+  {
+    "title": "chrome-devtools-mcp 5 万星：官方浏览器驾照",
+    "content": "Chrome 官方团队的 chrome-devtools-mcp 冲上热榜，5 万+ star。它以 MCP Server 形式让 Claude、Cursor 等编码智能体控制真实 Chrome：录制 trace 提取性能洞察、分析网络请求、抓取带 source map 的控制台报错，并用 Puppeteer 做可靠自动化。DevTools 全量能力向 agent 开放，前端调试自动化再上台阶。",
+    "quote": "官方给 agent 发浏览器驾照，自动化要起飞。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "published": "2026-09-03",
+    "uid": "dev_fa29efea"
+  },
+  {
+    "title": "Nous Hermes Agent：会从经验里自学进化的开源智能体",
+    "content": "Nous Research 的开源智能体 Hermes Agent 以约 24 万 star 登顶今日 GitHub 趋势榜。核心卖点是内置“学习闭环”：从经验中沉淀 skill、持续改进并主动持久化知识，还能跨会话构建用户画像。支持 Telegram/Discord/CLI 多端接入与任意模型后端，$5 VPS 可跑。把“越用越懂你”做成系统机制而非话术，对做 Agent 产品的团队是现成参考。",
+    "quote": "会自学还带记忆，比某些同事上进多了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/NousResearch/hermes-agent",
+    "published": "2026-09-03",
+    "uid": "dev_d025243b"
+  },
+  {
+    "title": "TimesFM 登热榜：Google 的时序预测基础模型",
+    "content": "Google Research 的 TimesFM（Time Series Foundation Model）重回 GitHub Trending，29k+ star。它是预训练的时间序列基础模型，主打预测：零样本或少量样本即可对电力负载、流量、库存、监控指标等时序数据给出预测，无需为每个场景单独训练。对做运维监控、业务指标预测的团队来说，拿通用时序基座做迁移，比从零训练省下大量成本。",
+    "quote": "时序预测开箱即用，调参工程师瑟瑟发抖。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/google-research/timesfm",
+    "published": "2026-09-03",
+    "uid": "dev_541f4919"
+  },
+  {
+    "title": "受够复制粘贴：一个软链接目录管住 32 个工具的 skill",
+    "content": "V2EX 用户吐槽 Claude Code、Codex、Cursor、Trae、OpenCode 各读各的 skill 目录，一份 SKILL.md 在硬盘上复制五份，改一处要同步多处。于是他做了个软链接管理器：源文件统一存放，向 32+ 个 AI 工具的目录建软链，一处修改全局生效，还附带本地风险扫描。多工具玩家的 skill 同步难题，终于有了轻量解法。",
+    "quote": "AI 工具各占山头，端水大师终于有救了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1239048#reply0",
+    "published": "2026-09-03",
+    "uid": "dev_1d56ff15"
+  },
+  {
+    "title": "Echoryte 语音转文字上线记：AI 连跑 33 小时的翻车实录",
+    "content": "作者分享耗时一个多月上线的语音转文字工具 Echoryte，在转写之外叠加 AI 总结、翻译与追问。真正精彩的是踩坑记录：他让 GPT5.6 推理开到最大去执行 fable 5 写的 plan，结果 AI 一口气跑了 33 小时、产出近 2 万行代码，过度思考导致大量返工。对正用高推理模式跑长任务的团队来说，这是\"越聪明越失控\"的生动反面教材：给 agent 设上限，比给算力更重要。",
+    "quote": "33 小时 2 万行代码，AI 的勤奋让人心疼。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1238967#reply0",
+    "published": "2026-09-03",
+    "uid": "dev_ca0fa92b"
+  },
+  {
+    "title": "AI 网关让每个请求慢了 400ms：延迟都去哪儿了",
+    "content": "Dev.to 热文复盘一次典型事故：接入 AI 网关后接口普遍慢 300–500ms。作者没有急着甩锅\"网关性能差\"，而是逐层拆解延迟构成，发现瓶颈往往藏在流式转发、缓冲策略、认证鉴权与限流中间件等\"隐形环节\"，并给出定位这类网关开销的系统化方法。对自建 LLM 网关或 统一 API 接入层的团队来说，这是一份排查\"莫名多出的几百毫秒\"的实用参考。",
+    "quote": "先查延迟去哪了再甩锅，这态度值得点赞。",
+    "source": "Dev.to",
+    "url": "https://dev.to/devstackhub/my-ai-gateway-added-400ms-to-every-request-heres-where-it-went-2fkp",
+    "published": "2026-09-03",
+    "uid": "dev_03a9a43d"
+  },
+  {
+    "title": "别再当 agent 的 QA：让 AI 自证“真的做完了”",
+    "content": "每个 AI 编程会话都以一句 \"Done ✓\" 收尾，然后开发者花半小时手动点验，才发现它根本没做完——作者受够了给 agent 当测试员，写了个 skill 强制 AI 自证：交付前必须跑测试、贴出证据、声明验证范围与盲区，把\"完成\"从口头承诺变成可核验清单。对把 coding agent 当生产力工具的团队来说，这是把验收关前移、少当人肉 QA 的实用姿势。",
+    "quote": "让 agent 先自证完工，再谈摸鱼自由。",
+    "source": "Dev.to",
+    "url": "https://dev.to/kaiji1126/stop-being-your-agents-qa-a-skill-that-makes-ai-coding-agents-prove-their-work-4gkn",
+    "published": "2026-09-03",
+    "uid": "dev_169061ab"
+  },
+  {
+    "title": "让大模型读懂施工图：SVG+MD 双载体记录法踩坑笔记",
+    "content": "博客园作者把一张 A0 钢结构施工图交给大模型后发现：真正要命的问题不是它答错，而是你无从验证它到底\"读到了什么\"——渲染图里 0.12pt 细线糊成一团灰、尺寸数字丢失，模型报出的零件数信不得也证不得。他尝试 SVG+Markdown 双载体记录法：把图纸几何与标注转成结构化文本，让模型逐项引用、可回溯校验。对做\"多模态读复杂图纸/图表\"工程化的人，这篇踩坑笔记含金量不低。",
+    "quote": "模型读图像开盲盒，结构化双载体才是验货单。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/znlgis/p/22814499",
+    "published": "2026-09-03",
+    "uid": "dev_019a7cf3"
+  },
+  {
+    "title": "纯 C × SDL3 × OpenGL：BongoCat 托盘动画再进化",
+    "content": "博客园作者延续去年\"纯 C、仅 100KB 实现 runcat 托盘动画\"的硬核玩法，这次把 C、SDL3、OpenGL 组合到一起打造 BongoCat 桌面宠物：跨平台渲染、支持自定义 GIF，文章讲透了纯 C 环境下做 UI 与动画的取舍和踩坑（从\"语言不行\"到\"自己造轮子\"的心路）。在框架与运行时泛滥的当下，看硬核作者用最朴素工具链抠出能跑的小东西，对图形与性能敏感型开发很有启发。",
+    "quote": "别人用框架堆 UI，大佬用 100KB 秀肌肉。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/vladelaina/p/22814832",
+    "published": "2026-09-03",
+    "uid": "dev_650ae5cd"
+  },
+  {
+    "title": "Aura：用 Rust 给 SRE 造了个生产事故调查员",
+    "content": "Show HN 项目 Aura 来自处理 PB 级数据的 SaaS 厂商 Mezmo：SRE 团队试过 Claude、OpenClaw、LangChain 做事故响应，都被上下文溢出、工具失控劝退，于是用 Rust 自研 Aura。它把护栏、API、状态管理、流式与故障处理打包，几分钟即可部署，让 AI 安全地调查并修复生产问题。生产环境 AIOps 的一次真实落地，运维团队可作参考样本。",
+    "quote": "被 AI 坑过的 SRE，决定自己写一个靠谱的。",
+    "source": "HN Show HN",
+    "url": "https://github.com/mezmo/aura",
+    "published": "2026-09-03",
+    "uid": "dev_69d07207"
+  },
+  {
+    "title": "FrontierHarness 评测：9 个 Agent 框架跑同一模型，单任务成本差 17 倍",
+    "content": "FrontierHarness 发布 v1.0 基准：在 Runta 上让 Codex、Claude Code、Pi、Kimi Code 等 9 个 harness 跑同一批任务，固定同样配置，单任务成本最高相差 17 倍。Claude Code 通过 19 个任务，单任务成本却达 18.34 美元；OpenCode 算上失败重试立刻变 3.24 美元。选框架别只看通过率，成本账才是真金白银。",
+    "quote": "框架选得好，账单省一半；选不好，17 倍差价教你做人。",
+    "source": "HN Show HN",
+    "url": "https://frontierharness.org",
+    "published": "2026-09-03",
+    "uid": "dev_6662c896"
+  },
+  {
+    "title": "GDSL Acorn：把列式存储「不合理地」推向极致的内存模型",
+    "content": "时隔半年，作者带 GDSL 新一代 Acorn 回归：彻底重写底层存储模型，保留编译器设计。Acorn 既是内存模型也是实验性 ISA/字节码，核心是极简的 QCol——本质就是一段字节区间，只存存储、长度和容量；CCol 再叠加元素大小与类型标签。最妙的是 Live 锁系统，把读写锁压缩进一个字节。对喜欢钻研底层存储与编译器设计的开发者，这是份硬核又带个人风格的技术手记。",
+    "quote": "把读写锁塞进一个字节，内存模型玩出了花。",
+    "source": "HN Show HN",
+    "url": "https://goldensystems.ca/GDSL_acorn",
+    "published": "2026-09-03",
+    "uid": "dev_00287b0b"
+  },
+  {
+    "title": "WebLLM：高性能浏览器端 LLM 推理引擎登热榜",
+    "content": "MLC 团队的 WebLLM 冲上 HN 热榜（29 分）：一个纯浏览器端的高性能 LLM 推理引擎，基于 WebGPU 在本地跑大模型，无需服务器转发。对注重隐私、想把模型推理留在用户设备上的场景很有价值——聊天数据不出浏览器，还能省下 API 费用。WebGPU 的普及让浏览器不再是「只能调 API 的哑终端」，前端直接跑小型模型的实用度正在快速提升。",
+    "quote": "模型跑进浏览器，服务器省了，用户显卡哭了。",
+    "source": "HN Front Page",
+    "url": "https://github.com/mlc-ai/web-llm",
+    "published": "2026-09-03",
+    "uid": "dev_06ea0086"
+  },
+  {
+    "title": "Vanilla OS 3 Reunion：不可变、可重现的桌面 Linux 新版本",
+    "content": "基于 Debian 的 Vanilla OS 发布 3.0「Reunion」，主打不可变（immutable）与可重现（reproducible），开发历时约一年。系统分区只读、更新原子化，愿景是打造零信任、不依赖科技巨头、开箱即用的桌面 Linux。对受够了滚动发行版滚挂、又不想被 Windows/macOS 绑架的开发者来说，这类不可变桌面提供了巨头之外的第三条路。",
+    "quote": "系统不可变，折腾的心倒是可以变一变。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1239010#reply0",
+    "published": "2026-09-03",
+    "uid": "dev_4e046da3"
+  },
+  {
+    "title": "EasyDrop：Android 与 iPad 之间的「无感」文件传输方案",
+    "content": "开源项目 EasyDrop 专门解决 Android 往 iPad 传文件太麻烦的痛点，主打无感：部署好后，完全不用打开 App、不用扫码配对，Android 分享文件选「发到 iPad」，iPad 端自动接收，锁屏状态也能收。体验上对标苹果生态内的 AirDrop 互通。对同时持有 Android 手机和 iPad、受够了微信传文件压缩画质和网盘中转的用户来说，这是相当实用的自部署方案。",
+    "quote": "安卓给 iPad 传文件终于不用先过一道微信了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1238895#reply0",
+    "published": "2026-09-03",
+    "uid": "dev_1c769d49"
+  },
+  {
+    "title": "Claude Code 钩子大坑：注册在 Read 上的拦截钩子，永远拦不住 cat",
+    "content": "作者写了 PreToolUse 钩子想把文件挡在模型上下文外，注册在 Read 工具上并 exit 2——用 Read 读确实被拦，但让模型改用 cat 读同一文件时钩子压根没被调用，内容直接进了对话记录。真正拦住 cat 的反而是 settings.json 里一行 deny 规则。作者搭测试台跑了二十多种条件组合并复核。给 Agent 做访问控制，deny 规则才是硬边界。",
+    "quote": "钩子只拦 Read 不拦 cat，AI 的绕过思路比你想的野。",
+    "source": "Dev.to",
+    "url": "https://dev.to/yurukusa/if-your-file-guard-hook-is-registered-on-read-it-never-sees-cat-dli",
+    "published": "2026-09-03",
+    "uid": "dev_eb91b9da"
+  },
+  {
+    "title": "系统提示词也有保质期：模型升级后，80% 的 prompt 该删了",
+    "content": "作者观察到 Anthropic 为 Opus 5 和 Fable 5 重写 Claude Code 时删掉 80% 以上的系统提示词，评测成绩却没下降。结论：那些指令当年没错也确实承重，但模型换代后就从承重墙变成了噪音。系统提示词不是写出来的，是维护出来的，而多数团队从未做过删除式维护。文章还提醒，这些是前沿模型指南，放到 Haiku 级模型上可能完全反过来。",
+    "quote": "Prompt 只加不减，模型换代后全是噪音。",
+    "source": "Dev.to",
+    "url": "https://dev.to/ialijr/your-system-prompt-has-a-shelf-life-maintaining-prompts-as-models-improve-cd9",
+    "published": "2026-09-03",
+    "uid": "dev_0f48078b"
+  },
+  {
+    "title": "IonQ 实验：一台 MacBook Pro 就能跑大规模量子纠错解码",
+    "content": "IonQ 研究人员演示：一台普通 MacBook Pro 就能承担大规模量子计算机的纠错解码任务。研究对一套执行超过一百万次操作的系统的模拟负载进行解码，结果显示日常高性能处理器足以应对未来容错量子计算机最吃数据量的环节。量子纠错一直被视作算力无底洞，这个结果意味着纠错解码或许不必依赖专用巨型集群——对量子计算走向实用化是个积极的信号。",
+    "quote": "量子纠错跑在 MacBook 上，超算中心集体沉默。",
+    "source": "Dev.to",
+    "url": "https://dev.to/vpodk/ionq-researchers-test-quantum-error-decoder-on-macbook-pro-55i5",
+    "published": "2026-09-03",
+    "uid": "dev_10cb7d1c"
+  },
+  {
+    "title": "runtime-async：给 .NET 写一个支持 async/await 的轻量脚本引擎",
+    "content": "作者想给 .NET 做动态脚本支持，撞上经典难题：表达式树和 Reflection.Emit 都难以支持 async/await，根因不在语法，而在 C# 编译器会为每个 async 方法生成状态机结构体、把方法体切成片段。文章用 runtime-async 方案绕开这堵墙，实现可跑 async/await 的轻量脚本引擎。对做规则引擎、动态脚本、插件系统的 .NET 开发者，是少见的硬核参考。",
+    "quote": "动态脚本想用 async/await？先过了状态机这关再说。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/fs7744/p/22811546",
+    "published": "2026-09-03",
+    "uid": "dev_342f3878"
+  },
+  {
+    "title": "Nginx 1.30.4 编译安装与参数调优全流程",
+    "content": "博客园热门运维教程：从零完整演示 Nginx 1.30.4 编译安装，覆盖依赖准备、configure 参数选择、模块取舍，再到 worker 进程数、连接数、keepalive、gzip、缓存等核心参数的调优思路。自己编译能精确控制模块与特性，是官方源不满足定制需求时的必备技能。对刚接手服务器或想榨干 Nginx 性能的开发者，这是能直接照着操作的实战手册。",
+    "quote": "编译参数选不对，万级并发也白搭。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/LyShark/p/22803646",
+    "published": "2026-09-03",
+    "uid": "dev_80d17f0d"
+  },
+  {
+    "title": "MiniPdf：Rust 原生 Office 转 PDF，3MB 单文件、低内存部署",
+    "content": "开源项目 MiniPdf 用 Rust 原生实现 Office 转 PDF，打包后仅 3MB 单文件、内存占用低，适合塞进 API 服务、定时任务或容器做文档转换。很多时候只是想把 Excel、Word 转成 PDF，没必要为此引入整套 Office 或 LibreOffice 依赖。对服务端高频文档转换场景，单文件部署诱惑不小，转换 fidelity 则要看具体场景实测。",
+    "quote": "3MB 干 Office 的活，臃肿套装看了沉默。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/ITWeiHan/p/22805841/minipdfrust",
+    "published": "2026-09-03",
+    "uid": "dev_1562e064"
+  }
+]
