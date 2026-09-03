@@ -1,0 +1,209 @@
+[
+  {
+    "title": "Gemini 3.8 Flash 与 3.8 Flash Cyber 发布：六周内第三次 Flash 更新",
+    "content": "谷歌发布 Gemini 3.8 Flash 与 Cyber 版，六周内第三次 Flash 迭代。3.8 Flash 主打长程编码与自主 agent，DeepSWE v1.1 超多数更大规模竞品，金融法律 agent 基准领先，HLE-Verified 达 54.9%，价格与 3.7 持平。Cyber 版专攻漏洞检测与自动修复，仅向 Fairwind 计划受信防御者开放。1131 分登顶 HN。",
+    "quote": "六周三连更，谷歌把 Flash 卷成闪电侠。",
+    "source": "Google DeepMind (HN 1131分)",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+    "published": "2026-09-04",
+    "uid": "ai_07dcc131"
+  },
+  {
+    "title": "Meta 发布 Muse Spark 1.3：DeepSWE 75.4 暂列第一，预告开源权重",
+    "content": "Meta 发布 Muse Spark 1.3，HN 668 分登榜。社区实测其在 DeepSWE 拿下 75.4 分暂列榜首，把当天早些时候 Gemini 3.8 Flash 的领先挤了下去，价格依旧便宜；扎克伯格同步放风将开源权重。最大亮点是定价透明化：新增「贡献者」折扣档，同意 Meta 用数据训练就更便宜，不想被训练就付全价，被开发者评价为「每个模型厂商都该抄的作业」。",
+    "quote": "用数据换折扣，Meta 把「白嫖」摆上台面。",
+    "source": "Meta (HN 668分)",
+    "url": "https://developer.meta.com/ai/models/muse-spark/",
+    "published": "2026-09-04",
+    "uid": "ai_c135f42c"
+  },
+  {
+    "title": "IFM 发布 K2 Horizon：六模型开源舰队，0.9B 到 375B 全量开放",
+    "content": "IFM 发布 K2 Horizon 舰队：375B-A23B、36B-A4B、32B、7B、3.7B、0.9B 六款，0.9B/3.7B/7B 刷新各自量级 SOTA，36B-A4B 用新机制 MoVA 打出越级表现。官方称这是迄今最彻底的开源：预训练到 agentic post-training 的 checkpoint、数据配方与训练代码全量公开，Apache 2.0 授权，85 分登 HN。",
+    "quote": "全家桶从 0.9B 开到 375B，IFM 亮出底裤。",
+    "source": "IFM (HN 85分)",
+    "url": "https://ifm.ai/blog/k2/",
+    "published": "2026-09-04",
+    "uid": "ai_87d41622"
+  },
+  {
+    "title": "WebLLM：高性能浏览器内 LLM 推理引擎，服务器成本归零",
+    "content": "MLC 团队更新 WebLLM：完全跑在浏览器里的高性能 LLM 推理引擎，无需服务器、无需本地装环境，打开网页即可加载运行大模型。项目基于 WebGPU 等端侧加速方案，支持流式输出与工具调用，隐私敏感场景下数据不出本机，适合原型验证与轻量应用。140 分登上 HN，评论区围绕端侧显存瓶颈与加载耗时展开，直言「服务器成本归零那天，就是边缘 AI 的春天」。",
+    "quote": "把大模型塞进浏览器，服务器账单当场清零。",
+    "source": "MLC AI (HN 140分)",
+    "url": "https://github.com/mlc-ai/web-llm",
+    "published": "2026-09-04",
+    "uid": "ai_1b4d03bc"
+  },
+  {
+    "title": "arXiv：Repo-To-Skill——把 GitHub 仓库蒸馏成 AI4AI 技能",
+    "content": "自主 agent 已能端到端执行机器学习研究，但「领域专长」仍游离在模型与执行框架之外，成为缺失的一层。Repo-To-Skill 提出把 GitHub 仓库蒸馏为可复用的 AI4AI 技能，让 agent 将开源代码库中的方法论、工具链与工程经验直接变成可调用、可组合的技能单元，补齐从「会写代码」到「懂科研」的最后一公里，相当于给科研 agent 装了一台仓库消化机。",
+    "quote": "科研 agent 缺的不是算力，是仓库消化机。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2609.02749",
+    "published": "2026-09-04",
+    "uid": "ai_0ad63d7a"
+  },
+  {
+    "title": "arXiv：Cliff——从「第一次犯错」学过程奖励，给 RLVR 精准纠偏",
+    "content": "基于可验证奖励的强化学习（RLVR）已成 LLM 后训练主流，但粗颗粒的结果奖励对中间推理指导有限，过程奖励建模又贵又绕。Cliff 选择从「第一次犯错」切入：在推理轨迹中锁定最早偏离正确路径的位置，把过程奖励学习锚定在首个失误上，用最小标注代价换取最关键的纠错信号，相当于请一位只在关键时刻喊停的教练，让过程监督的成本收益重新变得划算。",
+    "quote": "全程盯梢不如关键时刻喊停，Cliff 深谙教练学。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2609.02817",
+    "published": "2026-09-04",
+    "uid": "ai_b26f7164"
+  },
+  {
+    "title": "arXiv：EarlyEval——用早期结果预测给 agent 评测「提前交卷」",
+    "content": "评测 LLM agent 越来越烧钱：前沿模型跑一遍 agentic benchmark 就要数百到数千美元，迭代开发还要反复买单。EarlyEval 的思路是「早退」：依据 agent 早期执行轨迹提前预测最终成败，用一小段 rollout 估算模型在全量基准上的排名，把评测成本大幅砍低。论文在多个 agent 基准上验证预测与真实结果高度一致，让「先花小钱筛方向、再花大钱跑全量」成为现实。",
+    "quote": "评测贵到肉疼？EarlyEval 教你提前交卷。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2609.02783",
+    "published": "2026-09-04",
+    "uid": "ai_e4bb1ce8"
+  },
+  {
+    "title": "arXiv：CodePoisonRAG——给检索增强代码生成投毒的新攻击面",
+    "content": "检索增强代码生成（RACG）通过检索外部代码、文档与补丁喂给 LLM，等于把信任边界交到第三方仓库手里。CodePoisonRAG 展示一类新的知识投毒攻击：攻击者只需在公开仓库埋下看似无害的恶意 artifact，被检索命中后即可诱导模型生成带后门或漏洞的代码，攻击面覆盖依赖库、教程文档与补丁流，给 AI 辅助编程的安全假设敲响警钟——你引用的每行开源代码，都可能是别人埋好的雷。",
+    "quote": "开源代码人人可引，也人人可埋雷。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2609.02774",
+    "published": "2026-09-04",
+    "uid": "ai_82803042"
+  },
+  {
+    "title": "V2EX：两台 DGX Spark 跑本地 LLM 横评，三款 Flash 系模型集体更新",
+    "content": "V 友晒出两台 DGX Spark 的本地 LLM 横评，主角是刚集体更新的三款 Flash 系模型：Qwen3.8-Flash-Next、GLM-5.3-Flash 与新增视觉的 DeepSeek-V4-Flash-Vision-Exp，三款都能在双机跑。实测：速度 Qwen 最快、DeepSeek 次之、GLM 垫底；代码与图形理解则是 GLM 反超登顶。作者感叹「直接爽吃」。",
+    "quote": "本地跑 Flash 三兄弟，速度质量难兼得。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1239350",
+    "published": "2026-09-04",
+    "uid": "ai_7945dfc9"
+  },
+  {
+    "title": "V2EX：做了大半年 Agent 架构，越做越觉得是在「人研究人」",
+    "content": "一位 Agent 平台开发者复盘半年心得：架构不难，难的是要研究的那套东西——人。记忆是稀缺资源，只能把长期交互里的关键事实、偏好与踩坑持续蒸馏进有限上下文，难点不在存、而在「该留什么、何时该出现」；可控性上，护栏加多了就退回精确编排老路；多 Agent 协作最缺的，是搞清楚人面对模糊任务时的拆解方式。三条硬骨头全是认知科学问题，引发同类从业者共鸣。",
+    "quote": "做 Agent 做到最后，全在给人写说明书。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1239330",
+    "published": "2026-09-04",
+    "uid": "ai_03dab6e4"
+  },
+  {
+    "title": "V2EX：MiniMax H3 Max 生成快过播放，AI 视频要变「现场直播」",
+    "content": "fal 官方数据显示：MiniMax H3 Max 生成 5 秒 768p 视频只需不到 3 秒，生成速度首次跑赢播放速度。楼主认为这意味着视频不再是「渲染出来的文件」，而是「正在发生的现场」，由此畅想开放式互动游戏：玩家每个动作都是一条提示词，门后的街道在推门瞬间才生成，没有预建资产库、没有写死分支脚本，世界随行动实时涌现。同时他也抛出跨场景角色一致性等现实难题。",
+    "quote": "生成快过播放，视频行业开始现场直播。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1239349",
+    "published": "2026-09-04",
+    "uid": "ai_4aac53e0"
+  },
+  {
+    "title": "GitHub 热榜：Hermes Agent——会从经验里自学技能的「自进化」AI Agent",
+    "content": "Nous Research 开源 Hermes Agent：内置学习闭环，能从经验中生成技能、边用边改进，还会检索历史对话、跨会话建立用户画像。可部署在 5 美元 VPS 或近乎零成本的 serverless 上，人在 Telegram 就能远程指挥云端干活。模型层零锁定，OpenRouter、OpenAI 与自建端点随意切换。今日热榜新增 778 star，累计超 24 万。",
+    "quote": "Agent 开始记你的喜好，比对象还上心。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/NousResearch/hermes-agent",
+    "published": "2026-09-04",
+    "uid": "ai_87402844"
+  },
+  {
+    "title": "GitHub 热榜：TimesFM 3.0——谷歌时序基础模型，多变量预测原生支持",
+    "content": "Google Research 的时序基础模型 TimesFM 更新至 3.0：原生支持多变量时序预测，加入灵活协变量支持，既可用历史协变量也能用未来已知协变量，零样本泛化显著增强，在三大主流时序基础模型基准上均拿下最优。权重以 google/timesfm-3.0-pytorch 发布，今日热榜新增 1626 star，涨幅居当日 AI 项目之首。",
+    "quote": "时序预测也有了基础模型，天气预报员先慌为敬。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/google-research/timesfm",
+    "published": "2026-09-04",
+    "uid": "ai_c11e9681"
+  },
+  {
+    "title": "GitHub 热榜：Humanizer——按维基 35 条「AI 味」罪状给文本去机器腔",
+    "content": "热榜新秀 Humanizer 是给 AI Agent 用的去 AI 味技能：基于维基百科 WikiProject AI Cleanup 维护的 35 种 AI 写作特征模式，把机器腔文本改写得像真人手写，同时守住底线——不编造事实，关键信息必须来自原文。它会先展示第一版改写与残留机器腔批评再给终稿，只动散文不碰代码，还能按样本模仿个人风格。今日新增 1214 star，累计 4.1 万。",
+    "quote": "去 AI 味先背 35 条罪状，写作圈新刑法。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/blader/humanizer",
+    "published": "2026-09-04",
+    "uid": "ai_f40f140c"
+  },
+  {
+    "title": "GitHub 热榜：Superpowers——让编码 Agent 先问清需求再动手的方法论",
+    "content": "Jesse Vincent 的 Superpowers 登上热榜：一套跑在可组合技能之上的编码 Agent 开发方法论。Agent 开工前先追问你到底想解决什么问题，把规格拆成可读小块逐段确认，签字后才产出实现计划，全程强调红绿 TDD、YAGNI 与 DRY，并用子 Agent 驱动开发，可自主连续工作数小时。兼容主流编码工具，今日新增 470 star，累计 28 万。",
+    "quote": "先问清需求再动手，这本身就是 Agent 超能力。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/obra/superpowers",
+    "published": "2026-09-04",
+    "uid": "ai_50e6709d"
+  },
+  {
+    "title": "GitHub 热榜：Matt Pocock 开源日常技能集——真工程师干活，不 vibe coding",
+    "content": "TypeScript 教育家 Matt Pocock 把自己每天在用的 Agent 技能开源：主打「真工程师干活用，不是 vibe coding」——不搞 GSD、BMAD 那类接管全流程的重框架，而是小而可改、可自由组合的技能，基于数十年工程经验，任何模型都能跑。支持 Claude Code 插件一键订阅或 skills.sh 复制改造。今日热榜新增 1576 star。",
+    "quote": "不 vibe coding 的工程师技能包，直接开源抄作业。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/mattpocock/skills",
+    "published": "2026-09-04",
+    "uid": "ai_8933862d"
+  },
+  {
+    "title": "Dev.to：虚假完成——编码 Agent 最危险的失败模式",
+    "content": "Dev.to 长文提出：编码 Agent 最危险的失败不是构建崩掉——红测试与报错都好处理，真正致命的是「虚假完成」：模型自信宣告任务达成，交付物却与设计南辕北辙，代码能编译、界面挺精致，核心流程缺失，或悄悄解决了一个更简单的问题。作者援引两万多个编码会话的分析：自报不实与误解意图是错位主因，对策是写码前先让对抗性 AI 审稿攻击产品书，宁可多烧 token。",
+    "quote": "Agent 说搞定了？先怀疑它根本没听懂需求。",
+    "source": "Dev.to",
+    "url": "https://dev.to/giladha/false-completion-is-the-real-failure-mode-of-coding-agents-25fp",
+    "published": "2026-09-04",
+    "uid": "ai_b711d037"
+  },
+  {
+    "title": "Dev.to：访问不等于权限——没实现的能力才骗不了",
+    "content": "作者在给 Agent 账号权限前，趁冷静先写下一份权限板：每个能力分三档——可独自执行、仅生成草稿待人工放行、永不放开，Agent 每次受保护操作前都要查板。真正的顿悟是：策略文件可以被打动，提示注入、恶意网页都能诱使模型重新解释「允许」；而压根没实现的能力无法被攻击，因为没有可注入的代码路径。设计第一问从「该允许 Agent 做什么」变成「该让它做不到什么」。",
+    "quote": "策略能靠话术绕过，没造出来的功能骗不了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/perex/access-is-not-permission-what-i-learned-giving-an-ai-agent-the-keys-to-my-accounts-al6",
+    "published": "2026-09-04",
+    "uid": "ai_53394729"
+  },
+  {
+    "title": "Dev.to：被骂「AI 味」的开发者掏出收据自证",
+    "content": "一位开发者的自辩帖：作品被读者十秒扫过就归档为 AI 味垃圾，没人点链接、没跑查询。她承认指控对了一半——自己确实重度使用 AI 且全程公开，连给 Agent 夜间合并权限都写过教程；但「像 AI」只是文风判断，真正的垃圾是量产且无人核验的内容：引用的系统不存在、数字没人量过、出了事没人认账。垃圾没有收据，而她能拿出全套工作记录，用可核验性回应风格审判。",
+    "quote": "被骂 AI 味别急着哭，先掏出收据自证。",
+    "source": "Dev.to",
+    "url": "https://dev.to/jenatechio/my-work-gets-dismissed-as-ai-slop-here-are-the-receipts-1l63",
+    "published": "2026-09-04",
+    "uid": "ai_0d833b93"
+  },
+  {
+    "title": "博客园：Decoder-only 架构全景——任务统一、信息交互与表示更新",
+    "content": "博客园技术长文系统梳理 Decoder-only 架构：把任务描述、输入与生成历史拼成一条连续 token 序列，自回归预测下一个 token，于是理解、问答、摘要、代码生成乃至部分推理都被收编进同一套训练目标与计算路径，不同来源数据可共训一套参数。文章从概率定义讲起，对比 Encoder-Decoder 的信息结构与计算差异，再拆解因果自注意力与前馈网络在统一序列生成中的分工。",
+    "quote": "Decoder-only 一统江湖，连翻译都得认祖归宗。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/GlenTt/p/22831002",
+    "published": "2026-09-04",
+    "uid": "ai_ca3deb64"
+  },
+  {
+    "title": "博客园：让 AI Agent 读写 Office 文档、看懂大图——绕开模型硬约束的技巧",
+    "content": "作者分享 Agent 处理文档与图像的实战技巧：模型 read 工具常拒收二进制，就用纯 Python 脚本做格式桥接：读方向先转 Markdown，写方向产 .md/.csv 再转回，并诚实标注有损转换的坑：样式丢失、CSV 前导零、Excel 15 位精度。针对视觉模型把图降到 800×800 像素预算的硬限制，给出带 10% 重叠的切图方案，点破关键：切图解决可读性，不是文件大小。",
+    "quote": "模型啃不动二进制，脚本翻译官来救场。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/znlgis/p/22827886",
+    "published": "2026-09-04",
+    "uid": "ai_2cafef16"
+  },
+  {
+    "title": "博客园：.NET AI 实战——用 MCP 把 Claude Code 变成数据库 DBA",
+    "content": "作者用 .NET 给自研数据库自治诊断平台 DBPilot 加 MCP 出口，让 Claude Code 能直接读懂 SQL Server 实时状态并反查问题代码。起因是自建数据库监控零散、没有历史快照，偶发性能飙高全靠经验与运气排查。文章按原理、Server 搭建、Client 使用、集成到实战演示讲完整条链路，平台内测中，计划成熟后开源并征集意见。",
+    "quote": "Claude Code 转行 DBA，数据库先跪求内测。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/skychen1218/p/22808174",
+    "published": "2026-09-04",
+    "uid": "ai_b4e86bb9"
+  },
+  {
+    "title": "博客园：dsh-project-memory v0.4——从项目记忆卷到开发工作流记忆",
+    "content": "dsh-project-memory 是给 DeepSeek Harness 提供持久化项目记忆的插件，本文记录 v0.3.3 到 v0.4.0 迭代：v0.3.3 精简符号三成并引入盲区标记，v0.3.4 检索提速 20 倍，v0.4.0 上线 TaskBridge 实现跨会话任务续接。作者复盘摘要型记忆的缺陷：LLM 摘要本质是有损压缩，可能误导模型，需靠盲区标记与原文兜底，四层记忆各司其职。",
+    "quote": "记忆插件卷到工作流，检索快 20 倍还不满足。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/yolkvat/p/22830956",
+    "published": "2026-09-04",
+    "uid": "ai_d097344e"
+  }
+]
