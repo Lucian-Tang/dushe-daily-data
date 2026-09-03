@@ -1,0 +1,227 @@
+[
+  {
+    "title": "英伟达 129 亿美元收购 Hugging Face：开源 AI 之家被收编",
+    "content": "NVIDIA 官宣以 129.3 亿美元收购 Hugging Face，黄仁勋亲自发文官宣。HF 平台聚集超 1800 万开发者、300 万+模型、50 万数据集与 100 万应用，20 万+企业依赖它做 AI 的发现、评估与部署。NVIDIA 承诺保持 HF 的开放平台属性并加大基础设施投入。这是开源 AI 社区迄今最大规模的一次资本收编，模型分发与算力产业链加速走向整合。",
+    "quote": "129 亿美元买下开源之家，开发者社区从此姓黄？",
+    "source": "HN Front Page",
+    "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
+    "published": "2026-09-04",
+    "uid": "dev_3348e223"
+  },
+  {
+    "title": "Polars 2.0 首个 RC 发布：一次刻意“无聊”的大版本",
+    "content": "Polars 发布 2.0 首个 Release Candidate，作者 Ritchie Vink 直言希望这是一次“无聊”的升级：不堆新功能，而是借大版本号清掉过去阻碍演进的设计决策，正式版将在数周内落地。对数据工程师来说，这意味着破坏性变更集中在可预期的范围、迁移窗口明确。主动为大版本“减负”的发版思路，比盲目加功能更有参考价值。",
+    "quote": "主动清设计债的大版本，比堆功能的诚实多了。",
+    "source": "HN Front Page",
+    "url": "https://pola.rs/posts/announcing-polars-2/",
+    "published": "2026-09-04",
+    "uid": "dev_49506aec"
+  },
+  {
+    "title": "Audacity 4.0 发布：Qt 重构 + 全新剪辑模型",
+    "content": "老牌开源音频编辑器 Audacity 发布 4.0：界面基于 Qt 全面重建，引入新的 clip 编辑模型——可直接点击选中片段、Shift 多选并协同编辑多条片段，3.x 的大部分工作流得以保留，但部分控件位置有调整。作为二十余年的开源项目，这次大版本是“换底座”式的现代化改造而非功能堆叠，音频处理与插件生态的迁移兼容是升级重点。",
+    "quote": "二十多岁的老伙计换 Qt 底座，剪辑手感要重新适应了。",
+    "source": "HN Front Page",
+    "url": "https://github.com/audacity/audacity/releases/tag/Audacity-4.0.0",
+    "published": "2026-09-04",
+    "uid": "dev_9d64c8fe"
+  },
+  {
+    "title": "anthropics/skills 登热榜：官方下场定义 Agent 技能包标准",
+    "content": "Anthropic 官方 skills 仓库以 17.3 万+ star 登上 GitHub 趋势榜。Skills 的本质是“文件夹即能力”：把指令、脚本与资源打包成目录，Claude 遇到专业任务时动态加载，覆盖品牌文档、数据分析、个人自动化等场景，配套标准见 agentskills.io。在 MCP 之外，“技能包”正成为 agent 能力的第二分发形态，官方推标准意味着生态位争夺开打。",
+    "quote": "官方下场定义技能包，agent 插件化时代来了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/anthropics/skills",
+    "published": "2026-09-04",
+    "uid": "dev_059a219a"
+  },
+  {
+    "title": "Snowglobe：一个二进制模拟整个分布式系统的遥测",
+    "content": "Show HN 项目 Snowglobe 是 OpenTelemetry 遥测数据生成器：单二进制即可模拟 28 服务拓扑的 logs/traces/metrics，内置混沌注入、Saga 补偿、超时级联，还按 GenAI 语义规范生成 AI agent 调用链，零基础设施依赖。对需要演示分布式追踪、压测可观测性管道或造 agent 训练数据的团队，这是开箱即用的“人造故障宇宙”。",
+    "quote": "一个二进制装下整个故障宇宙，混沌工程原地出道。",
+    "source": "HN Show HN",
+    "url": "https://github.com/ImmersiveFusion/snowglobe",
+    "published": "2026-09-04",
+    "uid": "dev_279c3341"
+  },
+  {
+    "title": "mdview：2 个月 1.2 万装机收入千元，作者想涨价求建议",
+    "content": "V2EX 热帖（169 回复）：2MB 的 Markdown 阅读器 mdview 上线两个月装机 1.2 万、收入仅 1000 出头，叫好不叫座，作者准备涨价并征集意见。评论区围绕“轻量工具变现路径”“个人开发者是否坚持买断制”吵成一片，是独立开发者定价困境的典型样本：流量不缺，缺的是把轻度用户转化为付费用户的钩子。",
+    "quote": "装机一万二收入一千，独立开发者的痛如此真实。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1239151#reply169",
+    "published": "2026-09-04",
+    "uid": "dev_5c921c02"
+  },
+  {
+    "title": "daimon-mcp：让本地 Agent 直连远程 Linux，别让模型套 SSH",
+    "content": "V2EX 作者分享让 Claude Code/Codex 直接接管 VPS 的思路：与其让模型在 SSH 里裸奔，不如通过 processd-mcp / daimon-mcp 把远程主机能力封装成 MCP 工具暴露给本地 agent，Docker、nginx 配置等操作在本地即可编排、审批与留痕。对“AI 运维远程服务器”有需求的开发者，这是比套壳 SSH 更可控的权限与审计姿势。",
+    "quote": "给 agent 装远程遥控器，比把 SSH 密码喂给它体面。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1239261#reply8",
+    "published": "2026-09-04",
+    "uid": "dev_704b2490"
+  },
+  {
+    "title": "TypeScript + Postgres 撸了一套 GraphRAG：多跳推理不再抓瞎",
+    "content": "V2EX 作者分享用 TypeScript + PostgreSQL 实现 GraphRAG 的经验：处理“张三的上级与李四负责的项目有何合作”这类跨文档多跳问题时，纯向量 Top-K 检索容易漏掉中间关联 chunk，于是把知识图谱关系与向量检索结合，并附实现思路与博客总结。对做知识库问答、RAG 工程化的团队，这是一份可复用的轻量落地方案参考。",
+    "quote": "向量检索漏中间人，图谱补位才是正经解法。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1239174#reply0",
+    "published": "2026-09-04",
+    "uid": "dev_206fcc2c"
+  },
+  {
+    "title": "macOS 上直接跑 Linux 程序：不要虚拟机，也不要系统调用转译",
+    "content": "V2EX 作者做了一个实验：在 macOS 上实现与 Linux ABI 下 glibc 兼容的库，于加载阶段做运行时重定向，让 Linux 程序无需虚拟机或系统调用转译即可运行。作者坦承局限：静态链接或直接 syscall 的程序会失效，目前基本是“玩具”。虽是早期脑洞，但对理解动态链接、ABI 兼容与两大系统用户态差异，是一份不错的极客教材。",
+    "quote": "加载期偷梁换柱跑 Linux 程序，玩具也玩出了架构课。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1239201#reply0",
+    "published": "2026-09-04",
+    "uid": "dev_93616b0b"
+  },
+  {
+    "title": "别再把 JWT 贴进随机网站解码了：安全习惯随手改",
+    "content": "Dev.to 热门安全帖：不少开发者习惯把 JWT 粘到第三方网站查看 payload，作者提醒这等于把生产凭证交给陌生服务——token 里的敏感声明、内部字段与签名算法信息会泄露，配合重放攻击风险更高。文章给出本地解码的备选方案：CLI、jq 或自建小工具，几秒钟就能完成同样的活。对日常调试 token 的开发者，这是个顺手就能改掉的安全习惯。",
+    "quote": "把 token 贴给陌生网站，等于把钥匙交给路人保管。",
+    "source": "Dev.to",
+    "url": "https://dev.to/faizan_shakeel_1dda753363/stop-pasting-your-jwts-into-random-websites-to-decode-them-18nl",
+    "published": "2026-09-04",
+    "uid": "dev_b0bbdefa"
+  },
+  {
+    "title": "Agent 到底该被允许改什么？权限边界的思辨",
+    "content": "作者在“ShrekOS”系列第二篇直面 agent 权限边界：上一集他把宿主机彻底锁死，结果发现 agent 什么也干不了——“系统越密封，agent 越废物”。文章继续探讨在封闭主机上放开权限的正确姿势：不是一刀切放行，而是按能力面最小授权、全程可审计，并记录真实试错。对自建 agent 沙箱或容器方案的团队，这是权限模型设计的好思辨素材。",
+    "quote": "锁死主机防住了 agent，也顺便废掉了生产力。",
+    "source": "Dev.to",
+    "url": "https://dev.to/the_leon_odor/what-should-an-agent-be-allowed-to-change-1hgn",
+    "published": "2026-09-04",
+    "uid": "dev_47c4fe9b"
+  },
+  {
+    "title": "MetaSkill 落地 .NET：Agent 从“调用工具”进化到“组织工具”",
+    "content": "博客园张善友详解 Meta Skill 概念：OpenSquilla 提出把“调度能力”写进 SKILL.md，让 agent 不止会调用单个工具，还能组织多个工具协作完成任务；而 OpenClaw.NET 用 C# 将其落地为可审计、可治理、可上线的工程系统。对正用 .NET 构建 agent 应用或做技能编排的团队，这篇文章把“技能调度”从概念聊到了工程实现，含金量不低。",
+    "quote": "会调工具是入门，会组织工具才是 agent 的进阶。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/22817523",
+    "published": "2026-09-04",
+    "uid": "dev_56322269"
+  },
+  {
+    "title": "vivo 海外电商高并发治理实录：四年、十次告警、数十个决策",
+    "content": "vivo 技术团队复盘海外电商平台近四年的线上性能治理：从大促扩容部署失败、Redis 6 节点全线告警，到黄牛单账号上亿请求打垮系统、热 key 把单节点 CPU 压至 99.97%，每一次告警背后都牵出一串架构决策。文章按时间线还原“故障—定位—治理—再故障”的循环，对做高并发电商或活动系统的后端团队，是实战价值很高的复盘样本。",
+    "quote": "四年被线上毒打出来的架构经验，比 PPT 值钱。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/vivotech/p/22821551",
+    "published": "2026-09-04",
+    "uid": "dev_dd89ea37"
+  },
+  {
+    "title": "热点账户余额扣减：Redis+Lua 无锁记账干到万级 TPS",
+    "content": "博客园实战文详解热点账户扣减方案：用 Redis+Lua 脚本实现无锁原子记账，解决 MySQL 行锁热点竞争、TPS 上不去的痛点，将并发性能从百级提升到万级+，并整合脚本预加载、幂等防重、余额分片扩容，配合异步落库与日终对账保障最终一致。对做支付、积分、钱包类系统的后端团队，这是一套拿来即用的高并发记账模板。",
+    "quote": "行锁打架打不过，Lua 原子脚本一把梭。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/zrui-xyu/p/22819151",
+    "published": "2026-09-04",
+    "uid": "dev_a6bb8d4f"
+  },
+  {
+    "title": "Caption & Cut：浏览器里自动剪停顿、烧高亮字幕，原片不出本机",
+    "content": "一个面向短视频创作者的 AI 剪辑工具：上传原始视频后，自动沿语音轨迹剪掉长停顿、口误和「嗯啊」类填充词，再烧录 TikTok 风格、带单词高亮的字幕，还支持英文字幕翻译。渲染在浏览器本地完成，视频文件全程不出设备，只有音频送服务器处理。官方演示里 36 秒素材自动剪成 22 秒成片，前三个视频免费。对懒得学剪辑软件又想稳定出片的博主，是典型的「上传即成品」路线。",
+    "quote": "AI 剪掉你的停顿和废话，可惜救不了内容本身。",
+    "source": "HN Show HN",
+    "url": "https://captionandcut.app/",
+    "published": "2026-09-04",
+    "uid": "dev_92aacee6"
+  },
+  {
+    "title": "stackradar-cli：笔记本上一分钟扫出 K8s 集群里在跑的 CVE",
+    "content": "一个从笔记本直接扫描集群漏洞的 CLI：通过 kubeconfig 读取 kubelet 上报的容器 digest——基于「实际在跑什么」而非 manifest 写了什么，按 digest 去重后扫描运行中镜像，用 osv-scanner 匹配 OSV 数据库漏洞。无需在集群装 agent、无需账号，约一分钟出结果。新 CVE 落地、老板问「我们中招没」时，它就是现成答案。",
+    "quote": "等 CVE 爆了才想起来扫，说明平时全靠运气撑着。",
+    "source": "HN Show HN",
+    "url": "https://github.com/lockdep/stackradar-cli",
+    "published": "2026-09-04",
+    "uid": "dev_4fcfcf24"
+  },
+  {
+    "title": "Mainly：自托管多域名邮件客户端，作者自己天天在用",
+    "content": "一个主打自托管的多域名邮件客户端：作者最初为了统一管理自己跨多个域名、多个账号的自建邮箱而写，如今已成日常主力客户端——按他的话说，正因为天天在用，所以「被修 bug 修得特别快」。项目强调轻快与高度可配置，提供在线 demo，代码开源在 GitHub。对用自建域名邮箱、受够了臃肿网页端或想一个客户端管完所有域名的开发者，是个适合放进自托管清单的新选项。",
+    "quote": "敢拿自己的邮箱当小白鼠天天用的，至少不会太烂。",
+    "source": "HN Show HN",
+    "url": "https://mainly.crnst8.com/",
+    "published": "2026-09-04",
+    "uid": "dev_3ba700b7"
+  },
+  {
+    "title": "RDP 进 Proxmox 虚拟机，但不用把 3389 暴露给整个网络",
+    "content": "作者在 Proxmox 上跑着 Ubuntu Desktop 虚拟机，想随时 RDP 进去，又不想把 3389 端口暴露给整个网络。最终方案很朴素：用 SSH 隧道封装 RDP——先 SSH 连到宿主机，再借隧道转发远程桌面流量，外部网络根本看不到 3389。文章把从思路到配置完整拆开。对家里或公司有虚拟化服务器、又想安全远程桌面的开发者，这是少开一个端口、少挨一轮扫描的实用姿势。",
+    "quote": "少开一个端口，少挨一万次扫描。",
+    "source": "Dev.to",
+    "url": "https://dev.to/lugerlogic/rdp-into-a-proxmox-vm-without-opening-it-up-to-the-network-52nj",
+    "published": "2026-09-04",
+    "uid": "dev_2c5308de"
+  },
+  {
+    "title": "故事点已死：Agent 时代的工程度量该换血了",
+    "content": "文章观点颇有争议：传统 Scrum 的度量体系是为「人类认知负载」优化的，而 Agent 化开发正在打破这个前提。两周 sprint、斐波那契估算、story point 都是人肉编码时代的产物——当 AI 承担大量实现工作后，按人类节奏设计的估算还剩多少意义？作者认为工程度量正进入 Agentic 时代，故事点该退场了。对用 AI 重构研发流程的团队，这是篇能点燃会议室争论的思辨文。",
+    "quote": "Sprint 还没结束，Agent 已经把下个迭代写完了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/dmitryame/the-death-of-story-points-engineering-metrics-in-the-agentic-era-2kho",
+    "published": "2026-09-04",
+    "uid": "dev_253a60d2"
+  },
+  {
+    "title": "Vesper 设计日记：Bootstrap 预算下把 KMP 应用做到生产级",
+    "content": "作者以 RevenueCat 2026 Shipaton 参赛作品身份发布 Vesper：一款用 Kotlin Multiplatform 开发的 Android/iOS 跨平台应用，立项到上线只花了 bootstrap 预算。文章以设计日记形式记录把 KMP 应用做到生产级的过程——选型、UI、发布、踩坑都涵盖。对好奇 KMP 能否撑起真实上架产品、小成本项目从零跑通双端的开发者，参考价值直接。",
+    "quote": "都说 KMP 省钱，这回真有人拿低保预算验证给你看。",
+    "source": "Dev.to",
+    "url": "https://dev.to/cjbrooks12/vesper-design-diaries-building-a-production-grade-kmp-app-on-a-bootstrap-budget-4lib",
+    "published": "2026-09-04",
+    "uid": "dev_79bdf775"
+  },
+  {
+    "title": "框架越来越快，为什么复杂后台系统还是卡得像十年前？",
+    "content": "作者替很多人问出了心声：Vue/React 明明在变快，响应式调度、编译期优化、memoization 都在进步，基准测试也好看，可 ERP、HIS、报表设计器、低代码平台、IDE 这类复杂后台系统，用户体感依然卡。文章指出问题往往不在框架本身，而在复杂业务下的渲染路径设计、全局状态、大数据量表格与交互细节的堆积。对天天跟「框架很快但系统很卡」较劲的开发者来说，这是篇难得的共鸣与技术复盘帖。",
+    "quote": "框架跑分年年涨，后台系统卡得理直气壮。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/hailin-zheng/p/22827245",
+    "published": "2026-09-04",
+    "uid": "dev_c92cfaa8"
+  },
+  {
+    "title": "Jenkins 流水线跨阶段传数据：让 environment 变量真正「动态」起来",
+    "content": "CI/CD 里跨阶段共享数据是高频需求：上一阶段算出的值、跑出的状态，往往要传给下一阶段继续用。但 Jenkins 声明式流水线有个经典大坑——顶层 environment {} 里定义的变量「不可变」，不少人在动态更新上栽过跟头。作者完整梳理了问题来龙去脉，并给出让变量在各阶段间真正动态传递的可行方案。对维护 Jenkins 流水线、被阶段间传参折磨过的同学，是能直接拿去用的实战经验。",
+    "quote": "environment 写死一时爽，跨阶段传参火葬场。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/exioran/p/22819215",
+    "published": "2026-09-04",
+    "uid": "dev_375f19da"
+  },
+  {
+    "title": "买了云服务器，不等于上了云：写给写了十六年代码的「云盲」",
+    "content": "作者记录了一段扎心对话：写了十六年代码的朋友问「云计算架构到底是啥」，她觉得自家「中台」不过是在云上跑几台机器，跟云计算没啥关系。作者说这个直觉其实很准——买了云上的机器和真正「用上了云」之间，隔着弹性伸缩、容器化、微服务治理、可观测性等好几层。文章用通俗的对话体把「上云」拆开讲清楚，对想补云架构课或需要给团队做技术科普的开发者，是一份易读的入门读物。",
+    "quote": "在云上买了几台机器，就以为自己把云用明白了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/xiexj/p/22830254",
+    "published": "2026-09-04",
+    "uid": "dev_204694bb"
+  },
+  {
+    "title": "出海工具站冷启动实录：174 个访客一半来自 ChatGPT，18 人撞付费墙 0 人付款",
+    "content": "V2EX 热帖：作者做了个把 YouTube 长视频切成 9:16 竖屏短视频的工具站 videotoshorts.app，上线 11 天，174 个访客一半来自 ChatGPT 推荐，Google 只给了 6 个；18 人撞了付费墙，0 人走进结账页，搜索词还清一色带 free。作者求教：这流量是本来就不付费，还是付费墙位置有问题？独立开发者出海冷启动的真实样本，比晒收入的帖子有营养。",
+    "quote": "流量一半靠 ChatGPT 赏饭，付费转化依旧零蛋。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1239173#reply2",
+    "published": "2026-09-04",
+    "uid": "dev_6d1759a7"
+  },
+  {
+    "title": "侧边书签工作台 V3：垂直标签闲置休眠 + 端侧 100MB 离线语义搜索",
+    "content": "V2EX 自荐帖：一个专治「标签页灾难 + 书签吃灰」两大痛点的侧边书签工作台更新到 V3。新特性包括垂直标签的闲置休眠——治 Chrome/Edge 开几十个标签后内存动辄几个 G 的老毛病；拼音检索，以及端侧约 100MB 的离线语义搜索——收藏的上千篇开发文档，终于不用再靠精确字符匹配盲找了。对标签页开到 30 个以上还不舍得关、收藏夹吃灰成灾的开发者，这波更新直击要害。",
+    "quote": "收藏即吃灰的老毛病，终于有工具肯管了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1239178#reply2",
+    "published": "2026-09-04",
+    "uid": "dev_c424b649"
+  }
+]
