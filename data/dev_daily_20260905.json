@@ -1,0 +1,227 @@
+[
+  {
+    "title": "攻克 Jane Street 逆向挑战：一份完整的二进制逆向实录",
+    "url": "https://jestoph.com/2026/09/04/jane-street-challenge.html",
+    "source": "HN Front Page",
+    "content": "作者记录自己挑战 Jane Street 逆向工程题的全过程：从拿到未知二进制开始，到完成静态分析、动态调试与答案提取，逐步拆解思路。文中既能看到识别混淆、还原算法逻辑等逆向基本功，也有卡壳时的排查心得。对想入门二进制逆向、或好奇量化圈技术挑战长什么样的开发者，这是一份难得的完整实战笔记，比零散 writeup 更有参考价值。",
+    "quote": "面个试还要先当侦探拆二进制，量化圈是真硬核。",
+    "uid": "dev_70d5540d",
+    "published": "2026-09-05"
+  },
+  {
+    "title": "实测 17k 次：Claude、Codex、Cursor 到底爱装哪些工具",
+    "url": "https://armature.tech/blog/which-tools-coding-agents-install",
+    "source": "HN Front Page",
+    "content": "armature 团队基于 1.7 万次真实运行做实验：统计 Claude、Codex、Cursor 等编程 agent 在任务中倾向安装哪些工具、按什么标准挑依赖，用数据回答 agent 的“装修偏好”。结果显示工具选择存在明显规律，理解这些偏好能帮开发者预判 agent 行为、加固依赖供应链。对重度使用 AI 编码或关心其安全性的开发者，这是一份基于实测而非直觉的报告。",
+    "quote": "17k 次实测只为搞清 agent 爱装啥，这执念我服。",
+    "uid": "dev_d02d1fa9",
+    "published": "2026-09-05"
+  },
+  {
+    "title": "用 LLM 读 68000 汇编，1993 年 Amiga 游戏一夜移植到 Godot",
+    "url": "https://babyloniantwins.com/blog/porting-a-1993-amiga-game-to-godot/",
+    "source": "HN Front Page",
+    "content": "作者把 1993 年在巴格达用 MC68000 汇编写的 Amiga 游戏，交给 LLM 阅读汇编源码后移植到 Godot 引擎，整个过程只花了一个晚上。文章记录了让大模型理解老汇编、还原图形与游戏逻辑时踩的坑和技巧，是“LLM 辅助老代码现代化”的鲜活样本。对研究 AI 编程能力边界、或对怀旧游戏移植感兴趣的开发者，这篇实践笔记提供了不少可复用的思路。",
+    "quote": "一晚让 AI 读懂 30 年前的汇编，情怀与黑科技双厨狂喜。",
+    "uid": "dev_e9bf018d",
+    "published": "2026-09-05"
+  },
+  {
+    "title": "Ok, but Does It Scale? SpacetimeDB 正面回应扩展性质疑",
+    "url": "https://spacetimedb.com/blog/how-does-spacetime-scale",
+    "source": "HN Front Page",
+    "content": "SpacetimeDB 官方博客正面回应开发者最常抛出的问题“它到底能不能撑住规模”：从架构视角拆解实时数据库的横向扩展设计，讲清状态同步、分区与副本怎样配合，也坦承不同负载场景下的适用边界。文章语气直白，主动讨论权衡取舍而不是只晒压测数字。对在做实时应用、多人联机后端或进行数据库选型的开发者，这份官方技术自述比第三方测评更能帮你判断场景是否匹配。",
+    "quote": "敢正面回答能不能扛住的数据库，先赢一半。",
+    "uid": "dev_c7b9ea31",
+    "published": "2026-09-05"
+  },
+  {
+    "title": "fmtlib/fmt 登热榜：C++ 现代格式化库的常青树",
+    "url": "https://github.com/fmtlib/fmt",
+    "source": "GitHub Trending Daily",
+    "content": "fmtlib/fmt 是 C++ 社区最流行的现代格式化库之一：类型安全、可读性好，长期作为标准库格式化设施的参考实现与灵感来源，GitHub 上拥有 2.5 万+ star，近日仍有活跃发布动态。对 C++ 开发者来说 fmt 近乎工程标配，比 printf 安全、比 iostream 简洁，日志、报错信息与 CLI 输出里随处可见。经典项目登上趋势榜，也提醒新人：有些“老”库依然在持续进化。",
+    "quote": "二十多年的格式化库还在一线，printf 看了想退休。",
+    "uid": "dev_3b3d9c17",
+    "published": "2026-09-05"
+  },
+  {
+    "title": "ECC：给编码 agent 加装的性能优化 harness",
+    "url": "https://github.com/affaan-m/ECC",
+    "source": "GitHub Trending Daily",
+    "content": "ECC 是一套面向编码 agent 的 harness 性能优化系统：把 skills、instincts、memory、security 等能力封装成可插拔层，让 Claude Code、Codex、Opencode、Cursor 等工具跑得更顺手，以近 25 万 star 登上今日趋势榜，说明“给 agent 调优”正从个人脚本走向通用框架。适合重度使用编码 agent 的开发者跟进评估。",
+    "quote": "agent 也要吃补剂，harness 就是它的健身教练。",
+    "uid": "dev_0795c9e8",
+    "published": "2026-09-05"
+  },
+  {
+    "title": "magnitude：按硬件自动选模型的开源推理服务器",
+    "url": "https://github.com/magnitudedev/magnitude",
+    "source": "GitHub Trending Daily",
+    "content": "magnitude 是一个开源自托管推理服务器，主打“按你的硬件跑最优本地模型”：自动评估 GPU、内存等资源，推荐并调度合适权重，让本地推理在不同设备上尽量发挥性能。它还能作为统一网关接入 Pi、OpenCode、Hermes、OpenClaw、Codex、Claude Code、Cline 等 agent 客户端，省去逐个配置。对自建本地 AI、在意数据不出门的开发者，这个新项目不妨一试。",
+    "quote": "老显卡别哭，magnitude 让你也能本地跑大模型。",
+    "uid": "dev_7a31e98a",
+    "published": "2026-09-05"
+  },
+  {
+    "title": "Dev-prune：只在锁文件能重建时才删 node_modules",
+    "url": "https://github.com/Life-Experimentalist/dev-prune",
+    "source": "HN Show HN",
+    "content": "dev-prune 是一款带保险的 node_modules 清理工具：删除前先检查锁文件，只有当 package-lock、yarn.lock、pnpm-lock 等足以完整重建依赖时才会动手，避免“清完装不回来”的翻车现场。对硬盘常年被 node_modules 霸占、又不敢随便删的前端开发者来说，这算得上带安全气囊的磁盘救星，登上 Show HN 后收获不少共鸣。",
+    "quote": "删 node_modules 还带保险丝，前端硬盘终于有救。",
+    "uid": "dev_57a8f4fc",
+    "published": "2026-09-05"
+  },
+  {
+    "title": "Seahelm：用 libghostty 打造的 macOS 多 agent 控制台",
+    "url": "https://www.v2ex.com/t/1239577#reply1",
+    "source": "V2EX Share",
+    "content": "作者用 libghostty 做了大半年的 macOS 原生控制台 Seahelm，解决“同时开五六个 Claude Code / Codex 在不同 git worktree 干活、分不清该盯哪个窗口”的痛点：tmux 只知道窗口，不知道哪个 agent 正卡在权限确认等你回复。Seahelm 针对多 agent 并行场景做会话管理与状态感知，作者自称每天都在用，比裸终端顺手得多。",
+    "quote": "tmux 只懂窗口，不懂哪个 agent 在等你确认。",
+    "uid": "dev_4e30dea8",
+    "published": "2026-09-05"
+  },
+  {
+    "title": "Open Diff：对标 Beyond Compare 的开源跨平台 Diff 工具",
+    "url": "https://www.v2ex.com/t/1239437#reply12",
+    "source": "V2EX Share",
+    "content": "作者开源跨平台桌面 Diff 工具 Open Diff，对标 Beyond Compare：文件夹、文本、表格、图片、二进制都能比，主打数据默认不出本机、可自行改代码，解决 Beyond Compare 个人版偏贵、续费麻烦的痛点。仓库与安装包均已放出，帖子已收获十余条回复。对日常要比目录漂移、配置改动或 CSV 差异、又不放心把数据交给闭源工具的开发者，多了一个可自控的新选择。",
+    "quote": "买不起 Beyond Compare 的人，最后都成了作者。",
+    "uid": "dev_4b87fb36",
+    "published": "2026-09-05"
+  },
+  {
+    "title": "easy-tdx：1.1k star 的开源 A 股量化工具箱",
+    "url": "https://www.v2ex.com/t/1239568#reply1",
+    "source": "V2EX Share",
+    "content": "作者分享自己持续维护的开源 A 股量化工具 easy-tdx（1.1k star，MIT 协议）：通达信的 TCP 协议是公开可逆的，那就自己实现一遍，把行情数据从封闭客户端里解放出来。工具免注册、免 API Key，行情、回测、选股、AI 解读一条龙，纯 Python 实现。对做 A 股量化或个人投研、受够了行情平台注册与付费墙的开发者，这是一次“逆向协议换数据自由”的漂亮示范。",
+    "quote": "把行情数据从通达信里解放，这是散户的赛博起义。",
+    "uid": "dev_3ad71e3c",
+    "published": "2026-09-05"
+  },
+  {
+    "title": "MySQL 字段从 TIMESTAMP 改成 DATETIME，线上直接炸了",
+    "url": "https://www.cnblogs.com/gloamfox/p/22839644",
+    "source": "博客园 Cnblogs",
+    "content": "博客园作者复盘一次线上事故：周五下午库存保存接口突然报错，日志里满是 create_time 缺少默认值的 SQL 异常，罪魁祸首竟是一次看似无害的字段类型变更，把该字段从 TIMESTAMP 改成 DATETIME。两类时间字段在默认值填充行为上存在差异，改完线上写入路径直接翻车。文章完整记录报错现场、原因定位与回滚修复过程，是“一行 DDL 引发血案”的典型样本，后端与 DBA 都应引以为戒。",
+    "quote": "一行 DDL 引发的血案，周五下午从不缺事故。",
+    "uid": "dev_8e2af7be",
+    "published": "2026-09-05"
+  },
+  {
+    "title": "生产环境一条 DELETE 锁表十几小时：批量删除才是解药",
+    "url": "https://www.cnblogs.com/lgg20/p/22842603",
+    "source": "博客园 Cnblogs",
+    "content": "博客园作者记录一次生产事故：一条 DELETE 想清理过期统计数据，单条 SQL 删除大量数据导致锁表，事务提交失败，跑了十多个小时都没成功。最终改造为服务调用存储过程分批删除，把大事务拆成小批量，避免长事务持锁拖垮线上业务。对经常要清理历史数据、又怕锁表影响业务的后端团队，这是一份现成的大表清理避坑指南：批删加限流，才是对数据库的温柔。",
+    "quote": "一条 DELETE 锁了十几个小时，批量删除才是人间清醒。",
+    "uid": "dev_880d76ba",
+    "published": "2026-09-05"
+  },
+  {
+    "title": "rspec-wasm：别再在 JS 模板字符串里写 Ruby 测试了",
+    "url": "https://dev.to/constdrop/stop-writing-ruby-tests-in-js-template-literals-meet-rspec-wasm-oco",
+    "source": "Dev.to",
+    "content": "Dev.to 作者吐槽 ruby.wasm 的测试体验：给编译到 WebAssembly 的 Ruby 逻辑写单测，过去得把测试代码嵌进 JS 模板字符串里跑，难读又难维护。为此他做了 rspec-wasm，让开发者直接用熟悉的 RSpec 语法测试 wasm 里的 Ruby 代码。对用 ruby.wasm 开发浏览器端 Ruby 应用、受够了双语言测试胶水的开发者，这个库能把测试体验拉回正轨。",
+    "quote": "Ruby 进 wasm，测试却还在 JS 模板里受刑。",
+    "uid": "dev_bc77bddf",
+    "published": "2026-09-05"
+  },
+  {
+    "title": "流式读取大 HTTP 响应：别让 500MB 文件撑爆内存",
+    "url": "https://dev.to/homolibere/streaming-large-http-responses-without-killing-your-memory-1fj0",
+    "source": "Dev.to",
+    "content": "面向内存敏感的开发者：用 HttpClient 下载 500MB 级别的大文件时，若一次性缓冲整个响应，应用内存会瞬间飙升甚至 OOM。文章演示怎样流式读取大响应，边下边消费、控制缓冲区、按需处理，并对比不同写法的内存表现。对日常处理大文件下载、流式接口或长连接的后端与 .NET 开发者，这是一篇可以直接照抄的流式处理实践，专治“下载一时爽、内存火葬场”。",
+    "quote": "500MB 一把梭进内存，OOM 正在向你招手。",
+    "uid": "dev_75b37f0e",
+    "published": "2026-09-05"
+  },
+  {
+    "title": "Molewire：给 8 美元的 WiFi 网卡刷上固件，变身 WireGuard 硬件",
+    "content": "作者受「让 pico2w 开发板冒充 WiFi 网卡」的旧项目启发，在 AI 编程助手 Fable 的辅助下反着玩了一手：写出固件，把一块约 8 美元的廉价 USB 无线网卡改造成一台 VPN 硬件（WireGuard Dongle）。成本极低、体积小巧，插上就能当随身 VPN 网关用。对喜欢折腾软路由、随身组网的开发者来说是个有趣玩具；当然，刷固件有变砖风险，动手需谨慎。",
+    "quote": "8 美元的网卡秒变 VPN 硬件，这波省钱省到物理层。",
+    "source": "HN Show HN",
+    "url": "https://github.com/i-infra/molewire",
+    "published": "2026-09-05",
+    "uid": "dev_c502030a"
+  },
+  {
+    "title": "Kullback：把 agent 轨迹变成可执行环境，给 RL 造合成训练场",
+    "content": "一个面向强化学习的开源 harness：输入 agent 的历史运行轨迹（traces），自动生成可执行的环境，让开发者能在里面评估 agent 表现、定位改进机会并迭代优化。相当于把真实日志「回放」成可控沙盒，避免智能体在真实系统里裸奔试错。对做 agent 评测、RL 训练数据合成的人是个省事的新工具；不过合成环境与现实场景的差距，仍是这类方案的老大难。",
+    "quote": "让 agent 在回放考场里补考，总好过在线上直接翻车。",
+    "source": "HN Show HN",
+    "url": "https://www.leibler.dev/kullback",
+    "published": "2026-09-05",
+    "uid": "dev_25eba70b"
+  },
+  {
+    "title": "Casefile：AI 辅助开发的 git blame，给每次改动留一份「为什么」",
+    "content": "作者在 Brokk 工作期间实践过「任务切片」：把需求拆成可独立实现、独立验证的小任务。Casefile 把这一套产品化，面向 AI 辅助开发记录每个变更背后的决策过程，让 git blame 也能解释「这行代码为什么这么写」。当 AI 生成的代码占比越来越高，可解释、可追溯的变更记录几乎成了协作刚需——毕竟出问题复盘时，得知道该找哪个模型聊聊。",
+    "quote": "AI 写码一时爽，复盘火葬场，现在终于有后悔药了。",
+    "source": "HN Show HN",
+    "url": "https://github.com/lutzleonhardt/casefile",
+    "published": "2026-09-05",
+    "uid": "dev_33d58542"
+  },
+  {
+    "title": "nasconn+：IPv4 端口自动接入 IPv6 网络，HTTP 顺手升级 HTTPS",
+    "content": "家里服务的两个老问题：容器只听 0.0.0.0，公网 IPv6 进不来；全是明文 HTTP，外网访问处处受限。作者周末写了 nasconn+，只做两件事且按约定自动生效、不用逐个配置：给 IPv4-only 端口自动在 IPv6 同端口转发一份；嗅到明文 HTTP 流量，自动在原端口 +1 上提供 HTTPS。相比 Nginx 反代的手工配法，对自建 NAS、家庭服务的玩家来说省心不少。",
+    "quote": "家庭服务器的痛，只有被 IPv6 拒之门外的人才懂。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1239409#reply0",
+    "published": "2026-09-05",
+    "uid": "dev_5d4e9e69"
+  },
+  {
+    "title": "pi-remote：像 VS Code Remote 一样用上远程机器里的 PI agent",
+    "content": "想在远程机器上用 PI Coding Agent：要装 Node 环境、装 PI、配 API key，本地攒的 Skill 还得同步过去。作者做了 pi-remote：目标机器上只需跑一个单文件，本地就能像 VS Code Remote 一样连上远程环境直接开干，Skill 和 API 配置都留在本地。对把 agent 跑在开发机或 VPS 上的开发者，省去了重复搭建远程环境的体力活。",
+    "quote": "配远程环境半小时，写代码五分钟——这工具治的就是这个。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1239545#reply1",
+    "published": "2026-09-05",
+    "uid": "dev_564cf40b"
+  },
+  {
+    "title": "Catch：App Store 一有人付款，几秒推送到你的 iPhone / Mac",
+    "content": "独立开发者吐槽 App Store 到账数据慢得离谱：销售报表隔天才出，App Store Connect 后台也滞后好几个小时，发版或投了广告后，最想知道「现在有人付钱了吗」，却只能反复刷昨天的数据。于是他做了免费小工具 Catch：App Store 一旦发生购买，几秒内推送通知到 iPhone 和 Mac。对靠付费下载和内购吃饭的独立开发者来说，属于刚需级的小爽点工具。",
+    "quote": "苹果的到账速度，终于有人看不下去了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1239186#reply5",
+    "published": "2026-09-05",
+    "uid": "dev_1e19e96f"
+  },
+  {
+    "title": "AI agent 开始替人花钱了：钱包到底该谁管？",
+    "content": "AI agent 越来越能自主干活：自己搜信息、调 API、比价、跑工作流、做决策，不再需要人类逐条审批。文章抛出一个没人能回避的问题：当 agent 开始移动真实资金，钱包该谁控制？授权边界在哪、预算上限多少、出了事谁负责，监管又跟不跟得上。作者没给银弹，但把「AI 自主消费时代」的治理难题摆上了台面——这题早晚轮到写支付系统的程序员接。",
+    "quote": "让 AI 自己花钱之前，先想好谁来还花呗。",
+    "source": "Dev.to",
+    "url": "https://dev.to/azaleakuts/when-ai-agents-start-moving-money-who-controls-the-wallet-410f",
+    "published": "2026-09-05",
+    "uid": "dev_a8c07576"
+  },
+  {
+    "title": "双 2080 Ti 22GB 跑 Qwen3.8-27B：老卡党的 8 篇实战连载",
+    "content": "作者用一台双 RTX 2080 Ti 22GB + NVLink 的老机器（TP=2，跑 vLLM 的 sm75 专用分支），真实部署 Qwen3.8-27B，并把全过程写成 8 篇连载，每篇都带完整命令、参数、日志锚点与实测数据。在显卡价格离谱、显存焦虑蔓延的当下，这种「上古卡皇极限压榨」的记录对预算有限的个人开发者极具参考价值——原来跑 27B 模型不一定非得买新卡。",
+    "quote": "老卡不死，只是被 AI 热潮盘得锃光瓦亮。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/M4K0/p/22848009",
+    "published": "2026-09-05",
+    "uid": "dev_e0496711"
+  },
+  {
+    "title": "AI Agents Terminal：VS Code 状态栏一键启动你所有的 AI 编程 agent",
+    "content": "一个 VS Code 扩展，把本机装好的 Claude Code、Codex、Cursor 等 AI CLI 编程助手统一收进状态栏的一个按钮。痛点非常真实：同时用多个 agent 时，每次都要开终端、回忆命令、找对项目目录，来回切换极其割裂；装了这个扩展后，点一下状态栏就能唤起对应 agent，不用再记一堆启动命令。多 agent 党表示：这种「收纳盒」早该有人做了。",
+    "quote": "agent 装了一堆记不住命令？状态栏给你整个一键召唤。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/cnsharp/p/22846543",
+    "published": "2026-09-05",
+    "uid": "dev_7716bfea"
+  },
+  {
+    "title": "让大模型看懂工程图纸：SVG + MD 双载体记录方法论",
+    "content": "工程图纸（尤其是 A0 钢结构施工图）常以矢量线画加无文字层 PDF 的形式存在：尺寸数字、标题栏文字在文件层面只是字形轮廓路径，人眼能看，却没有任何可提取的文本层。把这种 PDF 直接丢给大模型，结果可想而知。作者给出方法论：将图纸转成 SVG 保留几何与标注信息，再配合 Markdown 记录结构化语义，双载体喂给模型，让 AI 真正读懂图纸。对工程数字化场景很有参考价值。",
+    "quote": "PDF 里没有文字层，大模型再聪明也只能干瞪眼。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/znlgis/p/22842238",
+    "published": "2026-09-05",
+    "uid": "dev_126f9f38"
+  }
+]
