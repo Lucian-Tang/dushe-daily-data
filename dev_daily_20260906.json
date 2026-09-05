@@ -1,0 +1,227 @@
+[
+  {
+    "title": "费马大定理完成 Lean 4 机器证明：Anthropic 开源完整形式化证明",
+    "content": "Anthropic 开源 fermats-last-theorem：用 Lean 4 + Mathlib 完成费马大定理的完整形式化证明，论证沿用 Frey-Serre-Ribet-Wiles-Taylor-Wiles 经典框架，强制定理只依赖 Lean 三个标准公理，杜绝 sorry 与隐藏 axiom。对形式化验证社区堪称「珠峰登顶」级里程碑，再次展示 AI 辅助定理证明的惊人进展。",
+    "quote": "费马大定理都被机器验了，人类数学家松口气。",
+    "source": "HN Front Page",
+    "url": "https://github.com/anthropics/fermats-last-theorem",
+    "published": "2026-09-06",
+    "uid": "dev_4e00a211"
+  },
+  {
+    "title": "Chromium 全版本沙箱逃逸 RCE 在野利用：CVE-2026-85046 紧急预警",
+    "content": "NVD 公布 CVE-2026-85046：Chrome 152.0.7977.82 之前版本的 V8 引擎存在类型混淆漏洞，攻击者可用精心构造的 HTML 页面在沙箱内执行任意代码，评级 High 且已观测在野利用。对依赖 Chromium 内核的浏览器、Electron 应用与 WebView 容器，这是必须立刻跟进的升级信号，应尽快合入上游修复。",
+    "quote": "沙箱都能被捅穿，Chromium 用户今天别乱点链接。",
+    "source": "HN Front Page",
+    "url": "https://nvd.nist.gov/vuln/detail/cve-2026-85046",
+    "published": "2026-09-06",
+    "uid": "dev_632896ca"
+  },
+  {
+    "title": "代码能烂到什么程度？一篇关于技术债没有下限的思考",
+    "content": "作者以「沉船」等比喻切入，指出它们描述代码库时具有误导性：业务往往远在代码质量触底之前就先垮掉，技术债没有破产清算、没有干净重置，因此任何暗示「存在终点」的比喻都会带来虚假的安全感。文章由此展开对遗留系统、重构时机与工程师心态的讨论，提醒读者烂代码不是自然现象而是持续决策的结果。对在历史包袱里挣扎的开发者，这是一篇能引发共鸣的清醒剂。",
+    "quote": "技术债没有下限，只有你先跑路的上限。",
+    "source": "HN Front Page",
+    "url": "https://zachkehs.com/blog/theres_no_limit_to_how_bad_code_can_get/",
+    "published": "2026-09-06",
+    "uid": "dev_4f30e559"
+  },
+  {
+    "title": "AI 接管故障处理，工程师正在与自己的系统失去连接",
+    "content": "文章提出一个需要警惕的趋势：AI 辅助的故障响应确实能拉低 MTTR，但代价是工程师对系统内部机制的熟悉度持续下降——自动化能处理的常规事故越来越多，留给人类的只剩自动化搞不定的复杂故障，而届时他们的排查直觉已因长期不参与而退化。作者认为团队应在引入 AI 值班的同时保留「人肉演练」机制，避免把系统变成没人真正理解的暗箱。对 SRE 与后端团队是及时的提醒。",
+    "quote": "AI 把活都干了，出事时才发现没人会修。",
+    "source": "HN Front Page",
+    "url": "https://www.sylvainkalache.com/blog/ai-handles-incidents-engineers-lose-touch-with-their-systems",
+    "published": "2026-09-06",
+    "uid": "dev_dbcd8c6e"
+  },
+  {
+    "title": "Spotify Portal 实测：Claude Code token 消耗直降 90%",
+    "content": "Spotify 工程师分享内部工具 Portal 的实战效果：通过缓存与复用上下文、减少重复 I/O，让 Claude Code 的 token 消耗下降约 90%。核心观点是「AI 编程助手大部分时间不是思考而是 I/O」，把文件读取、工具结果等高频 I/O 管好，比换更强模型更能省钱提速。对重度使用 AI 编程助手、心疼 token 账单的团队，这份大厂优化思路很有参考价值。",
+    "quote": "原来 token 都烧在 I/O 上，模型表示这锅不背。",
+    "source": "HN Front Page",
+    "url": "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90",
+    "published": "2026-09-06",
+    "uid": "dev_3422b65f"
+  },
+  {
+    "title": "ponytail 登热榜：让 AI agent 学会「最懒资深工程师」的思考方式",
+    "content": "DietrichGebert/ponytail 登上 GitHub Trending。项目理念相当反内卷：让 AI agent 像办公室里最懒的资深工程师一样思考——最好的代码是根本不用写的代码。它引导 agent 动手前先质疑需求、优先寻找删除而非新增的方案。在人人给 agent 加码的氛围里，这个「劝 agent 少干活」的项目反而清新，是 AI 过度生成时代的有趣平衡器。",
+    "quote": "教 AI 偷懒的库上了热榜，卷王们集体破防。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/DietrichGebert/ponytail",
+    "published": "2026-09-06",
+    "uid": "dev_2a91fee4"
+  },
+  {
+    "title": "diagram-design：38 种编辑级图表模板，专治 coding agent 的 Mermaid 丑图",
+    "content": "cathrynlavery/diagram-design 登上 GitHub Trending，为 Claude Code、Codex、Pi 等编程 agent 提供 38 种自带 HTML+SVG 的编辑级图表模板，主打无阴影、无「Mermaid 劣质输出」。开发者可直接让 agent 按模板生成架构图与流程图。对受够 AI 画歪架构图、想要文档配图专业化的团队，这是开箱即用的审美急救包。",
+    "quote": "AI 画图丑到忍无可忍？38 套模板直接教它做人。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/cathrynlavery/diagram-design",
+    "published": "2026-09-06",
+    "uid": "dev_ed4ab73a"
+  },
+  {
+    "title": "Meshtastic / LoRa 设备遭淘宝、闲鱼下架，玩家担忧合规前景",
+    "content": "V2EX 热议：淘宝、闲鱼等平台已搜不到 Meshtastic、MeshCore、LoRa 相关硬件产品，有玩家发帖询问已购设备能否继续安全使用。Meshtastic 是流行的开源 LoRa 自组网项目，被广泛用于户外通信与应急场景，此次电商全面下架引发社区对无线电设备监管收紧的猜测与讨论。回帖中既有合规风险分析，也有海淘与二手渠道的备选思路，是国内 LoRa 玩家近期最受关注的话题之一。",
+    "quote": "LoRa 设备一夜下架，极客的无线电梦碎淘宝。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1239570",
+    "published": "2026-09-06",
+    "uid": "dev_83904c12"
+  },
+  {
+    "title": "AI 辅助逆向：无界 14 Pro 锐龙版 ArchLinux 指纹驱动被攻破",
+    "content": "V2EX 用户分享：此前提到的「让 AI 把无界 14 Pro 锐龙版指纹识别在 ArchLinux 下驱动起来」的目标终于完成，驱动已发布到 GitHub 供同型号用户安装。过程涉及闭源方案逆向、内核驱动适配等硬核操作，AI 承担了大量代码分析与生成工作。对持有该笔记本折腾 Linux 的开发者是直接可用的成果，对围观者则是「AI 辅助底层开发」的又一鲜活案例。",
+    "quote": "AI 连指纹驱动都能逆向，笔记本厂商脸疼吗。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1239417",
+    "published": "2026-09-06",
+    "uid": "dev_67cc9e35"
+  },
+  {
+    "title": "给 AI Agent 补两块基建：gVisor 沙箱执行边界 + 可验证的网站部署",
+    "content": "开发者分享为 AI Agent 打造的两块基础设施：一是执行边界，用 gVisor 沙箱让 agent 能跑 shell 但碰不到宿主机；二是交付证据，控制器返回「成功」不代表用户真能访问网站，因此做了可验证的部署结果证明。直指「工具调用成功」这句话经常被 agent 与编排框架一带而过的问题。对正在做 agent 安全隔离或自动化交付验证的团队，这两个项目提供了具体的补课思路。",
+    "quote": "agent 说干完了你就信？先过沙箱和证据链再说。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1239711",
+    "published": "2026-09-06",
+    "uid": "dev_bb887aee"
+  },
+  {
+    "title": "Crypto-shredding 救不了你的旧备份：数据删除的残酷真相",
+    "content": "文章戳破一个常见误区：当收到数据擦除请求时，你以为加密粉碎（crypto-shredding）能一劳永逸，但数据还躺在三个副本和按监管要求保留五年的 nightly 备份里——备份无法被重写。作者梳理了合规删除在真实存储架构下面临的困境，指出密钥销毁只能覆盖「未来读取」，无法抹掉已存在的历史副本，并给出备份生命周期与删除策略的务实建议。对处理用户数据与合规删除的开发者，这是一篇反直觉的必读科普。",
+    "quote": "删库跑路是玩笑，删备份跑路才是技术活。",
+    "source": "Dev.to",
+    "url": "https://dev.to/vebat/crypto-shredding-does-not-delete-anything-from-your-old-backups-po1",
+    "published": "2026-09-06",
+    "uid": "dev_cbf549ec"
+  },
+  {
+    "title": "自托管 AI 栈七个月：我们踩过的四个坑（说好一个周末搞定）",
+    "content": "OpenMake 团队分享自托管 AI 技术栈七个月的完整历程：从「一个周末就能搞定」的天真预期，到如今约 2100 次提交的长期工程。文章从每周开发日志中提炼出四个最具代表性的坑，涵盖硬件选型、依赖管理、推理稳定性与团队协作等维度，坦率记录了自托管路线与托管服务之间的真实成本差。对考虑把 AI 栈搬回自家硬件的团队，这份用七个月换来的经验清单能帮你少交不少学费。",
+    "quote": "说好一个周末，结果搭进去七个多月。",
+    "source": "Dev.to",
+    "url": "https://dev.to/openmake/i-thought-self-hosting-our-ai-would-take-a-weekend-it-took-seven-months-3ob7",
+    "published": "2026-09-06",
+    "uid": "dev_bce93ac7"
+  },
+  {
+    "title": "mitmweb 抓包实战：Linux 上实时查看 App 请求与响应",
+    "content": "作者分享用 mitmweb 在 Linux 上搭建流量观测点、并在浏览器实时查看请求响应的完整方案。测试 App 链路为 App→Nginx→后端，为快速定位前后端问题，用 mitmweb 做中间人抓包，配合浏览器界面实时审查每个请求的出入参。文章给出具体配置步骤与抓包技巧，对日常调试接口、排查线上链路的开发者是份实用工具笔记，比 fiddler 系方案更轻量、更适合服务端环境。",
+    "quote": "App 报错甩锅前后端？mitmweb 当场断案。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/grey-wolf/p/22857343",
+    "published": "2026-09-06",
+    "uid": "dev_e26c7e26"
+  },
+  {
+    "title": "HyperCard 遗产复活：90 年代卡片堆一键转成可在浏览器运行的 HTML",
+    "content": "作者写了一个转换器，把 HyperCard 2.x 的 stack 转成独立的 HTML，让 90 年代初的古董卡片堆能在现代浏览器里直接运行。起因很朴素：想分享自己存了几十年、还躺在旧软盘里的作品。对老 Mac 用户和数字考古爱好者来说，这是把「只读遗产」重新变成可交互网页的巧手艺；对普通开发者，也是一堂先把旧格式彻底读懂、再翻译到新平台的兼容性实践课。",
+    "quote": "90 年代的卡片堆一键 Web 化，情怀党狂喜：爷青回。",
+    "source": "HN Show HN",
+    "url": "https://github.com/stachon/hc2html",
+    "published": "2026-09-06",
+    "uid": "dev_578a1f46"
+  },
+  {
+    "title": "WhatsApp ↔ Discord 双向桥：不碰 Meta 官方 API 的自托管同步方案",
+    "content": "一个自托管桥接工具，让 WhatsApp 与 Discord 两个平台的对话实时双向同步，支持消息、媒体、回复、编辑、表情回应、置顶等常见操作。亮点是不走 Meta 官方商业 API，绕开了企业认证与收费门槛。对同时混迹两个聊天世界的开发者，相当于自己焊了一根跨平台水管；自托管意味着数据路径可控，但代价是两端协议一有变动，桥就得跟着修。",
+    "quote": "不花一分 API 费把两个聊天软件焊成连体婴，白嫖党的胜利。",
+    "source": "HN Show HN",
+    "url": "https://github.com/Karvy-Singh/OSdc-wa",
+    "published": "2026-09-06",
+    "uid": "dev_d9b9842c"
+  },
+  {
+    "title": "textlog：纯 HTML、零 JS 的安静版微博客，上线满月攒了 600+ 用户",
+    "content": "textlog 是一个刻意「反现代」的轻量微博客平台：纯 HTML、零 JavaScript，追求安静、低干扰的写作与阅读体验。上线刚满月已有 600 多名用户，并以 Open Source Europe 的名义加入了 Open Collective。在动辄重型前端框架的今天，作者用最朴素的形态证明：内容平台的竞争力可以是排版与克制，而不是 bundle 体积与花哨交互。",
+    "quote": "没有 JS 的社交平台，像回到了拨号上网时代的乌托邦。",
+    "source": "HN Show HN",
+    "url": "https://textlog.cc/about?hn",
+    "published": "2026-09-06",
+    "uid": "dev_c3041f59"
+  },
+  {
+    "title": "md2pdf：一条命令把 Markdown 排成「像样」的中日韩 A4 PDF",
+    "content": "md2pdf 把 Markdown 转成排版讲究的 A4 PDF，将中日韩文字当作一等公民：行距、两端对齐、跨页断表、字体子集嵌入都处理到位，读起来像正经排过的文档而不是打印出来的网页。默认走 pandoc + Typst 引擎；macOS 下另有 CoreText 引擎，能把系统苹方字体真正嵌进 PDF——这是浏览器引擎方案做不到的。经常要交付中文技术文档、论文的开发者不妨一试。",
+    "quote": "中文排版终于不用再被浏览器引擎按在地上摩擦了。",
+    "source": "HN Show HN",
+    "url": "https://github.com/openwhale-labs/md2pdf",
+    "published": "2026-09-06",
+    "uid": "dev_9242cb84"
+  },
+  {
+    "title": "type-guardian：Compiler API + AI 双保险的 TypeScript PR 审查器",
+    "content": "教程带你在本地或 CI 里构建一个 TS PR 审查 CLI：用 Git diff 圈定审查范围，TypeScript Compiler API 收集编译诊断，本地 AST 规则盯死 @ts-ignore 等策略问题，再由 OpenAI 以结构化 JSON 输出「哪里可能不安全」的上下文解读。分工上编译器对类型错误一锤定音、本地规则管策略、模型只负责解释边界风险，避免 AI 在代码评审里瞎指挥。",
+    "quote": "编译器管对错、AI 管语境，PR 审查终于不用全靠肉眼。",
+    "source": "Dev.to",
+    "url": "https://dev.to/gateofai/typescript-ai-pr-reviewer-catch-unsafe-types-4f21",
+    "published": "2026-09-06",
+    "uid": "dev_6700ed58"
+  },
+  {
+    "title": "反面教材：角色分离没能救回我的提示词自优化器",
+    "content": "作者此前在做一个会自己改写提示词的 LLM 优化器，已经踩过 9 个「看起来像正常系统」的坑。这次他尝试把「优化器」与「执行者」角色彻底分离，指望职责隔离能修复系统性问题，结果并未如愿。文章复盘了为什么看似合理的架构拆分救不了根本缺陷——对正在做 prompt 自优化、agent 自省类系统的开发者来说，这是一份难得的真实失败记录。",
+    "quote": "让 AI 给自己当裁判，结果发现它俩私下是一伙的。",
+    "source": "Dev.to",
+    "url": "https://dev.to/debashish_ghosal/i-thought-role-separation-would-fix-the-optimizer-it-didnt-1h1",
+    "published": "2026-09-06",
+    "uid": "dev_40ba984e"
+  },
+  {
+    "title": "Count-Min Sketch：用 KB 级内存数清每秒百万级的事件",
+    "content": "每秒处理数百万包的防火墙，不可能为每个不同 IP 都开一个哈希表条目——几分钟内存就会爆掉。Count-Min Sketch 这类概率数据结构用极小内存（KB 级）就能近似统计海量事件的频次，以可接受的误差换取容量。文章从真实场景切入讲原理与取舍，适合做流量统计、热点识别、日志聚合的后端开发者补课：有时候「差不多准」比「精确但跑不动」有用得多。",
+    "quote": "用 KB 内存数亿级事件，概率结构才是大流量的亲爹。",
+    "source": "Dev.to",
+    "url": "https://dev.to/lu1tr0n/count-min-sketch-contar-millones-de-eventos-con-kilobytes-de-ram-5466",
+    "published": "2026-09-06",
+    "uid": "dev_961e1509"
+  },
+  {
+    "title": "netcorespot：一个把 AI「关进笼子」的 .NET 9 全栈交易系统",
+    "content": "CryptoSpot 是一个 .NET 9 全栈「AI + 交易」练手项目：五层 Clean Architecture，撮合引擎用进程内 Channel + 价格时间优先，纯内存无 Redis。重点不是跑起来，而是 AI 怎样被约束：AI 能下单，但每个动作都被「工具隔离 + 规则风控 + 人工审批 + 全链路审计」关进笼子，模型能力只以接口形式存在于应用层，与供应商彻底解耦。",
+    "quote": "让 AI 真下单不难，难的是给它焊一个跑不出去的笼子。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/morec/p/22853549",
+    "published": "2026-09-06",
+    "uid": "dev_b9f3a611"
+  },
+  {
+    "title": "公司从零推自动化测试：三分技术，七分管理",
+    "content": "文章复盘团队自动化测试转型失败的根因：往往不是技术选型不行，而是目标错位与管理缺位。作者主张「三分技术、七分管理」——先对齐业务目标、小步试点、建立闭环与规范，再谈工具与框架；AI 提效可以引入，但必须严控生成质量并维护用例闭环，避免造出一堆没人维护的脚本资产。对想在公司里把自动化真正落地、而不是流于形式的测试与研发团队，有直接的实操参考价值。",
+    "quote": "自动化大多死在管理上，别老让技术背锅。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/jinjiangongzuoshi/p/22837164",
+    "published": "2026-09-06",
+    "uid": "dev_973b5acb"
+  },
+  {
+    "title": "Mole 独立开发复盘：从开源 CLI 到 Mac 付费软件，用户教会我做产品",
+    "content": "作者把 Mole 从开源 CLI 做到 Mac 付费软件的一路思考做了汇总：去年国庆在三亚泳池边写了几百行代码起步，到后来定价、分发、倾听用户反馈的完整过程，并坦诚聊了哪些决策真的有用、哪些只是自我感动。248 条回复里挤满了独立开发者的共鸣与拍砖。对想做自己作品的开发者，这是一份真实的「事后复盘」，比成功学爽文有营养得多。",
+    "quote": "从泳池边几百行代码到付费 Mac 应用，独立开发全靠头铁。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1239372",
+    "published": "2026-09-06",
+    "uid": "dev_31a3d0d1"
+  },
+  {
+    "title": "casbin-gateway：一个入口管好 29 个 AI Agent 的配置、权限与账单",
+    "content": "Claude Code、Codex CLI、Cursor、Gemini CLI 装了一堆，每个都要单独伺候：换个中转商得挨个改格式各异的配置，同一个 MCP Server 要重复配置。作者做了 casbin-gateway 桌面端统一管理：一键切换各家 LLM API、审计、权限、版本管理、多开，还能验证中转商是否偷换模型。对重度使用多个编程 Agent 的开发者，属于「痛点精准打击」型工具。",
+    "quote": "Agent 装多了也是负担，这回轮到配置管理来卷你了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1239605",
+    "published": "2026-09-06",
+    "uid": "dev_473f5aa4"
+  },
+  {
+    "title": "吉他品丝能算乘法吗？对数、音律与计算尺的浪漫",
+    "content": "Charles Petzold 从《Calculating with Tones》的封面说起：对数既藏在我们对音高的感知里，也是计算尺的原理。吉他品丝按等比频率排列，本质上就是一根对数刻度尺——按住品丝「加」距离，实际是在「乘」频率。文章延续他正在写的《The Lost Art of Logarithms》主题，把音乐、数学与计算工具史串成一篇迷人的小品。",
+    "quote": "吉他品丝是条对数尺，弹琴弹的其实是乘法。",
+    "source": "HN Front Page",
+    "url": "https://www.charlespetzold.com/blog/2026/09/Can-Guitar-Frets-Perform-Multiplication.html",
+    "published": "2026-09-06",
+    "uid": "dev_fdc4627e"
+  }
+]
