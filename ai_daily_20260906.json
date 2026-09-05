@@ -1,0 +1,218 @@
+[
+  {
+    "title": "GPT-6 Astra 上线 OpenRouter：聚合平台第一时间上架，含定价与基准",
+    "content": "OpenRouter 已上架 GPT-6 Astra：模型页同步挂出 API 定价与基准数据，开发者可在聚合平台上一键调用，不必直连 OpenAI 官方渠道。作为横跨多家供应商的统一入口，OpenRouter 向来是新品风向标，Astra 的入驻让「多渠道调用旗舰模型」成为现实，也给了开发者比价与切换的余地。HN 278 分热帖讨论这一新渠道，有人直言中转站比官网先到货。",
+    "quote": "买 Astra 不一定要去官网排队，中转站已经上货。",
+    "source": "OpenRouter (HN 278分)",
+    "url": "https://openrouter.ai/openai/gpt-6-astra",
+    "published": "2026-09-06",
+    "uid": "ai_3815b9d4"
+  },
+  {
+    "title": "EEBench：AI 到底能不能设计电路板？先别急着让它画",
+    "content": "OpenAI 在 Astra 发布页放了段 AI 用 KiCad 画电路板的演示，EEBench 团队顺势追问：AI 造出的电子产品到底该拿什么当衡量标尺？他们发现模型对电子学的知识远超其在传统 GUI 工具里的表现——大量上下文浪费在坐标、菜单和界面状态上。于是基准改用 atopile 声明式代码：电路即代码，agent 直接改元器件与连线约束，跑仿真看失败，全程不离开工程，登 HN 311 分热帖。",
+    "quote": "让 AI 画板子先别急，它连菜单都还没看懂。",
+    "source": "EEBench (HN 311分)",
+    "url": "https://eebench.org/blog/can-ai-design-circuit-boards-yet/",
+    "published": "2026-09-06",
+    "uid": "ai_7f98c6a2"
+  },
+  {
+    "title": "别再叫 LLM「下一个 token 预测器」：零阶近似正在误导所有人",
+    "content": "HN 132 分技术长文：严格说「LLM 是 next-token predictor」没错，但只是零阶近似。预训练阶段模型确实只学习训练数据里真实出现过的序列，可现代 LLM 的关键在后期训练——RLVR 让模型自己生成全新序列并从结果中学习，这是预训练循环里根本不存在的探索机制。把模型当成「高级自动补全」，会严重低估它的能力边界，也会误判它的风险来源。",
+    "quote": "说它是补全器没错，但只看到补全的人已经输了。",
+    "source": "gmcgoldr.github.io (HN 132分)",
+    "url": "https://gmcgoldr.github.io/2026/09/04/llm-next-token-predictors.html",
+    "published": "2026-09-06",
+    "uid": "ai_b9015f75"
+  },
+  {
+    "title": "GitHub 启动 Project HydraFusion：多模型编排追平 Opus 5 还更省钱",
+    "content": "GitHub 发布 HydraFusion 研究预览：不再押注单一最强模型，而是让 Copilot 按任务动态编排多个模型——简单活交给便宜小模型，硬骨头才动用顶级模型。离线评测中，选择性编码工作流质量追平甚至超过 Opus 5 基线，估算成本还更低。官方称这是 Auto model selection 的自然延伸，目标始终是「给任务找最合适的模型」，目前已开放研究预览，HN 72 分。",
+    "quote": "单模型卷不动了？那就让模型们分工内卷。",
+    "source": "GitHub Blog (HN 72分)",
+    "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
+    "published": "2026-09-06",
+    "uid": "ai_f67b51a8"
+  },
+  {
+    "title": "CodeRabbit 实测：GPT-6 Astra 代码评审比 Sol 多抓 4% bug，跨文件优势最大",
+    "content": "CodeRabbit 发布 GPT-6 Astra 代码评审早期评测：可操作 bug 覆盖率比 GPT-5.6 Sol 高约 4%、比 Opus 5 高 22%；最难啃的跨文件评审优势最大，比 Sol 高 20%、比 Opus 5 高 33%。团队强调这是早期方向性结果——简单评审拉不开差距，Astra 的价值在需要理解全局的硬骨头场景；文中还评估了客户数据隐私与公开 API 定价。",
+    "quote": "简单活看不出差距，跨文件才是 Astra 的主场。",
+    "source": "CodeRabbit (HN 68分)",
+    "url": "https://www.coderabbit.ai/blog/gpt-6-astra-code-review-evaluation",
+    "published": "2026-09-06",
+    "uid": "ai_35061376"
+  },
+  {
+    "title": "arXiv：Compile by Training——把自然语言需求「编译」成本地神经函数",
+    "content": "不少重复性文本函数好描述、难实现：手写规则繁琐，每次调远程大模型又贵又慢还绑死供应商。新论文提出「训练式编译」：编译期由教师模型生成任务示例，训练一个小适配器加紧凑解释器，产物变成可存储、可版本化、可像普通软件组合的本地神经函数，运行时完全甩开教师模型。论文在 FuzzyBench-Hard 等基准上验证了效果，被视为轻量、可离线的函数服务新思路。",
+    "quote": "把提示词编译成函数，大模型终于能下班了。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2609.04199",
+    "published": "2026-09-06",
+    "uid": "ai_77c5c8cf"
+  },
+  {
+    "title": "arXiv：LLM 裁判翻车——5.3 万次请求暴露「隔天打分对不上」",
+    "content": "LLM judge 现在把关训练数据、给生成打分、主导排行榜，背后有个没人验证的假设：同一请求发给同一模型，明天读到的还是同一个它。研究者做了两轮预注册审计，共 5.3 万次请求：同窗口重复排名一致性仅 Spearman 0.40（要求 0.90），逐字节相同的隔日重放也只有 0.78（要求 0.99），两轮都没通过仪器校验。给 AI 打分的人，先得证明自己的分可靠。",
+    "quote": "AI 裁判隔天就翻脸，排行榜全是薛定谔的分数。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2609.04198",
+    "published": "2026-09-06",
+    "uid": "ai_9e5361da"
+  },
+  {
+    "title": "arXiv：ESPO 专治提示词优化器的「膨胀病」——越优化越长还不准",
+    "content": "进化式提示词优化器（如 GEPA）有个通病：每轮迭代就往提示词里堆规则与注意事项，越优越长、最长膨胀 3 倍，准确率却没涨。新研究 ESPO 把优化拆成三步对症下药：Diagnose 一轮把训练错误聚类成结构化模式，Propose 用四种互补策略生成候选，Select 用 bootstrap 稳住筛选。针对错误观察不全、搜索多样性不足、选择不可靠三大病灶，治的是「越优化越臃肿」的怪圈。",
+    "quote": "提示词越优越长，AI 没膨胀，prompt 先膨胀了。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2609.04197",
+    "published": "2026-09-06",
+    "uid": "ai_d74bab87"
+  },
+  {
+    "title": "arXiv：EditVid——一个免训练框架通吃指令式与参考式视频编辑",
+    "content": "视频编辑范式五花八门：指令引导、主体引导、风格迁移、属性修改、物体插入、主体替换，过去各要各的专用方案。EditVid 提出免训练统一框架：稀疏因果记忆保局部连贯，基于对应关系的后注意力 token 注入维持长程身份，软潜空间混合控制编辑范围，同一套框架同时支持指令式与参考式编辑。无需额外训练即可覆盖多种范式，给视频编辑工具链省下一大笔定制成本。",
+    "quote": "以前一种编辑一个模型，现在一个框架全包圆。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2609.04190",
+    "published": "2026-09-06",
+    "uid": "ai_0d7d9bf4"
+  },
+  {
+    "title": "arXiv：On-Policy 蒸馏新发现——只喂一个训练样本就能恢复大半增益",
+    "content": "在线策略蒸馏（OPD）用学生自生成轨迹加教师逐 token 监督来蒸馏大模型，但训练数据到底起多大作用，此前没人说清。新研究把数据压到极限：只用一条 query 训练。结果单样本 OPD 持续提升数百步，能恢复全量数据 OPD 的大部分增益，跨任务域与模型家族都成立。团队用训练中状态覆盖率解释：学生与教师对齐的速度，比喂多少数据更关键，给蒸馏研究开了扇新窗。",
+    "quote": "喂一个样本就能蒸馏，堆数据的同学沉默了。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2609.04172",
+    "published": "2026-09-06",
+    "uid": "ai_f7a463cb"
+  },
+  {
+    "title": "V2EX：语音指挥 Astra 一口气干完两个 App 的构建部署提审，网友直呼 AGI 来了",
+    "content": "V 友发帖感叹「GPT-6 Astra 就是 AGI」：开着语音跟 AI 聊天，两个 App 的构建、部署、提审全被推进完，直言未来突然到了；但兴奋过后是不安——这么强的能力只有有钱人用得起，会不会让有资源的人更强？当资本与政府掌握更强的 AI，普通人得到的是更多自由还是更少选择？17 条回复一半狂欢一半焦虑，社区罕见地在「AGI 时刻」认真讨论起分配问题。",
+    "quote": "怕 AGI 不来，更怕它来了只属于有钱人。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1239725",
+    "published": "2026-09-06",
+    "uid": "ai_950b2224"
+  },
+  {
+    "title": "V2EX：上班用的 AI token，公司买单还是自己掏？新同事入职前慌了",
+    "content": "刚换工作的 V 友发帖求助：前公司五年从无 AI 到有 AI，工具与 token 全是自费；新工作过几天入职，光顾着聊工资，忘了问 HR token 的结算规则。按自己的消耗速度，没活动没重置卡工资得缩水不少，又没法证明 token 全用在公司业务上。回复里有人晒公司统一配额度，有人劝入职直接问清楚，也有人调侃：AI 开发时代，token 报销才是核心竞争力。",
+    "quote": "谈薪不谈 token 额度，入职第一课就挂科。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1239718",
+    "published": "2026-09-06",
+    "uid": "ai_98414a67"
+  },
+  {
+    "title": "GitHub 热榜：ruflo 重回榜单——70k 星的 Agent 元框架，swarm 编排与自适应记忆一手抓",
+    "content": "开源 Agent 元框架 ruflo 重回 GitHub 热榜，累计超 7 万 star：把多智能体 swarm 编排、自适应记忆与自主工作流打包成可部署体系，配套 UI 测试版与 npx 快速上手，生态组件下载超 810 万次、14 天克隆 10.6 万。9 月 5 日仍持续更新，社区讨论集中在多智能体协作与长期记忆的工程化落地，是 Agent 编排赛道热度回升的信号。",
+    "quote": "70k 星的元框架杀回热榜，带着它整编的 swarm 军团。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/ruvnet/ruflo",
+    "published": "2026-09-06",
+    "uid": "ai_b7b181d3"
+  },
+  {
+    "title": "GitHub 热榜：humanlayer/skills——把 CLAUDE.md 改造成会自我约束的指令文件",
+    "content": "HumanLayer 开源 Claude Code 技能包登上热榜：improve-claude-md 用条件块重写 CLAUDE.md；narrow-react-prop-types 按真实路径收窄 React 类型；build-iterated-agentic-loop 一键生成仓库技能与 CI 工作流。2600+ star 不大，却标志 Agent Skills 走向团队工程化。",
+    "quote": "自己管不好 CLAUDE.md，只好请外援来调教。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/humanlayer/skills",
+    "published": "2026-09-06",
+    "uid": "ai_c37d9d60"
+  },
+  {
+    "title": "Dev.to：GitSpawn 漏洞族——恶意仓库在信任弹窗前就执行了代码",
+    "content": "安全公司 Manifold Security 披露代号 GitSpawn 的漏洞族：8 个已确认发现横跨 7 款 AI 编程助手，恶意仓库一旦被 agent 打开，攻击者代码即可在无提示、无审批、无信任弹窗下执行，部分产品甚至抢在用户登录前触发。作者实测四种流行防御方案，两种直接失效。机制并不高深——Git 的 core.fsmonitor 性能开关被改造成代码执行入口，越「省事」的配置越危险。",
+    "quote": "打开仓库即中招，AI 编程助手沦为恶意代码搬运工。",
+    "source": "Dev.to",
+    "url": "https://dev.to/jamilxt/a-malicious-repo-can-now-run-code-before-your-ai-agent-shows-a-trust-prompt-i-verified-the-2ppb",
+    "published": "2026-09-06",
+    "uid": "ai_4d095395"
+  },
+  {
+    "title": "Dev.to：RAG 解决错了问题——检索喂得饱上下文，喂不出可靠性",
+    "content": "作者复盘企业内部 AI 助手从 Demo 到生产的落差：问退款政策头头是道，一碰到脚注里的例外、过期的旧 PDF、与计费系统矛盾的片段就翻车。加文档、调 chunk、上 reranker 全是治标。RAG 解决的只是知识访问，不是可靠性——系统始终缺一套判断：哪些信息允许使用、什么算足够新、答案能否验证、低置信时该做何反应。检索给模型喂了上下文，却喂不出正确与安全。",
+    "quote": "RAG 管找资料，管不了答案对不对，别拿检索当保险。",
+    "source": "Dev.to",
+    "url": "https://dev.to/hosseinhezami/rag-solved-the-wrong-problem-what-actually-makes-ai-applications-reliable-3l8m",
+    "published": "2026-09-06",
+    "uid": "ai_d136991c"
+  },
+  {
+    "title": "Dev.to：jamjet guardrails——把误报写进 README 的诚实护栏库",
+    "content": "jamjet guardrails 开源库做了件反行业的事：九个 LLM 输入输出检测项，每个都在仓库里公开精确率与召回率，语料入库、CI 把关，改检测器数字立刻现形；更难得的是它在 README 按案例 ID 点名自己会判错的场景。对照之下 llm-guard 只丢回「风险 0.83」这类浮点分，无法定位敏感字符、写不出审计记录、也无从调优——一个分数代替不了发生了什么。",
+    "quote": "敢把自家误报写进 README 的护栏，比只会打分的强。",
+    "source": "Dev.to",
+    "url": "https://dev.to/sunilprakash/a-guardrails-library-that-publishes-its-misses-2p0b",
+    "published": "2026-09-06",
+    "uid": "ai_75ce7036"
+  },
+  {
+    "title": "Dev.to：专用 OCR 引擎快 300 倍，却在结构上输给了通用视觉模型",
+    "content": "作者用一张答案预设的测试图对比本地 27B 视觉模型与 macOS 自带 Vision 专用 OCR：通用模型慢约 300 倍（82.8 秒对 0.27 秒），却在字符错误率（2 对 8）、阅读顺序和表格结构上全面胜出——专用引擎把表格按列拆散，行与行的关联彻底丢失，字符全对也拼不回原意。结论：没有 ground truth 的 OCR 评测都是自嗨，「貌似正确」不等于「确实正确」。",
+    "quote": "专用引擎快 300 倍却输给慢吞吞的通用模型，结构输了全输。",
+    "source": "Dev.to",
+    "url": "https://dev.to/hexisteme/the-dedicated-ocr-engine-lost-to-the-general-purpose-model-300x-slower-2bf7",
+    "published": "2026-09-06",
+    "uid": "ai_618ab2e1"
+  },
+  {
+    "title": "Dev.to：AgentPostmortem——AI Agent 事故终于有了自己的 NTSB",
+    "content": "作者受够了同一类事故的循环播放：删生产库、群发错邮件、账单跑飞，每条都能 viral 几天然后消失，下一个团队带着同样的缺口再次翻车。于是他建了 AgentPostmortem——一个公开可检索的 AI Agent 真实事故登记库。航空业有 NTSB，软件有事后复盘，而被授予文件系统、邮箱、支付 API 写权限的 agent 却连档案都没有：事故不被记录，就注定反复发生。",
+    "quote": "航空有 NTSB，AI Agent 事故却连个档案室都没有。",
+    "source": "Dev.to",
+    "url": "https://dev.to/royalpinto007/what-a-registry-of-real-ai-agent-failures-reveals-about-where-agents-break-3ceg",
+    "published": "2026-09-06",
+    "uid": "ai_6ef4c540"
+  },
+  {
+    "title": "Dev.to：四模型评审三票通过一个漏洞，一票否决制救了场",
+    "content": "作者的规矩：AI 改动自己的安全门禁时，必须由四家实验室的模型组成评审团，一票否决制，不是多数表决。这周规则立功了：一个能跳过测试检查的漏洞连过三轮评审，gpt 与 gemini 两票通过，只有 deepseek 每次都投反对——「自己写一句理由就能豁免，日志不构成约束」。多数票给了虚假的安全感，盲区共享时，票数只是噪音。",
+    "quote": "两票赞成一票反对，安全评审差点被多数票带沟里。",
+    "source": "Dev.to",
+    "url": "https://dev.to/bryanw/my-ai-reviews-its-own-code-with-4-rival-models-the-majority-just-approved-a-security-hole-three-2ef3",
+    "published": "2026-09-06",
+    "uid": "ai_b8da4403"
+  },
+  {
+    "title": "博客园：重新理解 AI——三年过去，想法成了唯一门槛",
+    "content": "博客园长文回看 AI 这三年：2023 年当玩具，2024 年进流程，2025 年覆盖工作流且质量不输人工，到 2026 年「王炸感」消失，想法成了稀缺门槛。编程门槛被大模型铲平，撞上存量竞争，社区甚至出现劝退计算机专业的声音。作者的判断是：人手操作的任务在减少，人脑思考的分量在翻倍，对话框仍是模型的基本形态，但考验的已是人的综合判断力。",
+    "quote": "AI 三年铲平编程门槛，现在轮到人类卷想法了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/cicada-smile/p/22851400",
+    "published": "2026-09-06",
+    "uid": "ai_d745fd3a"
+  },
+  {
+    "title": "博客园：WorkBuddy 报告生成实战——写不难，找素材和排版才要命",
+    "content": "奇摩分享企业报告生成的实战拆解：方案文档拖慢交付，难点从来不在写，而在找和排——素材散落在微信、邮件、会议纪要里，Word 排版与多轮修改全靠手工。WorkBuddy 把流程拆成三层：自然语言描述需求后自动拆解文档结构与要点；从本地资料库检索历史方案并改写而非照搬；最终 Markdown 自动转排版交付。本质是把工程师从低技术含量的重复劳动里捞出来。",
+    "quote": "写方案不累，找素材和排版才要命，AI 专治这个。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/qimo-qi-mo/p/22851436",
+    "published": "2026-09-06",
+    "uid": "ai_69788916"
+  },
+  {
+    "title": "博客园：Palantir AIP 中台深度解读——接模型只是入场券",
+    "content": "博客园对 Palantir AIP 的深度解读：它并非又一个模型 API 网关，而是长在 Foundry 服务网格之上、由 Apollo 驱动部署、支持从云到边缘的 Rubix 异构部署的企业运营平台。十二类能力被归纳为五层：基础设施、数据与上下文、智能体编排、运营自动化与产品交付。核心哲学一句话：接模型只是入场券，让生成式 AI 安全、可控、可审计地融进企业数据流与决策链，才算建起闭环。",
+    "quote": "接模型只是入场券，把 AI 装进企业闭环才是真本事。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/wintersun/p/22838981",
+    "published": "2026-09-06",
+    "uid": "ai_0efafe84"
+  },
+  {
+    "title": "博客园：改版十几次仍像 AI 生成，问题出在没回答「我是谁」",
+    "content": "作者花一周重做个人作品集，匿名反馈只有两个字：吓人——旧站一眼 AI 生成。让 AI 扫描全站列出生成痕迹，结论是整站都不行，唯一获认可的是自己手写的「关于我」页。前后产出十余个版本，本质全是同一个东西：档案夹。筛选器、数量标签、下拉菜单、搜索框齐上阵，唯独没回答「我是谁」。换配色解决不了结构问题，没有人类意志的设计只剩模板味。",
+    "quote": "改版十几次还是 AI 味，缺的不是配色，是灵魂。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/lastidea/p/22832453",
+    "published": "2026-09-06",
+    "uid": "ai_498052d4"
+  }
+]
