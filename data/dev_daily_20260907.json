@@ -1,0 +1,227 @@
+[
+  {
+    "title": "Asahi Linux 正式支持 Apple M3 Mac：官方适配版图补齐，仍有注意事项",
+    "content": "Asahi Linux 开发团队宣布正式支持搭载 Apple M3 芯片的 Mac，此前该发行版已覆盖 M1/M2 系列，如今官方适配范围补齐到 M3。公告同时附带了若干注意事项，提醒部分机型或功能上仍存在限制，并非所有硬件能力都能开箱即用。对想在 Apple Silicon 上跑 Linux 的开发者，这是不折不扣的大进展——从社区移植走向官方支持，意味着更稳定的安装体验与更持续的内核维护。",
+    "quote": "苹果 M3 终获 Linux 官方认证，库克看了都沉默。",
+    "source": "HN Front Page",
+    "url": "https://www.phoronix.com/news/Asahi-Linux-Official-M3",
+    "published": "2026-09-07",
+    "uid": "dev_5ccde2d0"
+  },
+  {
+    "title": "Cloud in a Bottle：把自托管做得像用智能手机一样简单",
+    "content": "开发者 Zack Polizzi 发布 Cloud in a Bottle：一套开源「个人云」方案，将容器化应用、统一认证与良好 UX 打包，目标是让自托管体验像用智能手机一样顺滑，而不是沦为系统管理员式的苦差。作者直言对主流云服务上瘾式设计、广告与数据贩卖的现状不满，希望把应用装回自己手里。该帖在 HN 获 534 分、263 条评论，是当日最热门的自托管话题之一。",
+    "quote": "自托管想做到手机般顺滑？先问问你的系统管理员。",
+    "source": "HN Front Page",
+    "url": "https://cloudinabottle.org/blog/launch-post",
+    "published": "2026-09-07",
+    "uid": "dev_f77a9610"
+  },
+  {
+    "title": "AMD FreeBSD 桌面再折腾：vermaden 的装机记录更新了",
+    "content": "老牌 FreeBSD 布道者 vermaden 更新「AMD 平台 FreeBSD 桌面」装机记录：为在体积与扩展性间取得平衡，他再次选择 Silverstone 机箱，围绕 AMD 平台重新规划整机配置，并以图文记录硬件选型、桌面环境搭建与日常使用体验。对想把 FreeBSD 当主力桌面、又偏爱 AMD 硬件的玩家，这是一份可以直接参考的最新实践样本。",
+    "quote": "FreeBSD 桌面玩家又换机箱了，折腾永无止境。",
+    "source": "HN Front Page",
+    "url": "https://vermaden.wordpress.com/2026/09/06/amd-based-freebsd-desktop-reloaded",
+    "published": "2026-09-07",
+    "uid": "dev_85897618"
+  },
+  {
+    "title": "从 MIT 到 EUPL：一位老牌开源作者决定换许可证",
+    "content": "资深开源开发者 Henri Bergius 发文宣布将项目许可证更换为 EUPL（欧盟公共许可证）。他回顾了 2011 年前后在 JavaScript 项目采用 MIT 许可的经历，并解释转向 EUPL 的考量——作为欧盟官方认可的 copyleft 许可证，EUPL 在法律表述与跨境执行上更明确。对在宽松许可与 copyleft 间权衡的开源维护者，这篇「换证记」提供了真实可感的决策视角。",
+    "quote": "从 MIT 换到 EUPL，开源许可证的尽头是法学。",
+    "source": "HN Front Page",
+    "url": "https://bergie.iki.fi/blog/eupl",
+    "published": "2026-09-07",
+    "uid": "dev_6996fc0a"
+  },
+  {
+    "title": "AI 是工具还是转型？Benedict Evans 的长文引发热议",
+    "content": "知名科技分析师 Benedict Evans 发布长文《AI, tools and transformation》，讨论 AI 从「效率工具」走向「业务转型」的分野：从数据库到支撑一个部门的电子表格，软件形态一直在变，AI 带来的不只是单点提效，更是对既有工作流与产品形态的重新组织。文章在 HN 获 123 分与 54 条评论。对想理解 AI 落地真实节奏的从业者，建议细读。",
+    "quote": "AI 到底是工具还是转型，分析师又把问题抛回给你。",
+    "source": "HN Front Page",
+    "url": "https://www.ben-evans.com/benedictevans/2026/9/3/ai-tools-and-transformation",
+    "published": "2026-09-07",
+    "uid": "dev_09b08b15"
+  },
+  {
+    "title": "aiopsterm：17 款 AI 编程助手收进一个终端，服务器零装 Agent",
+    "content": "V2EX 用户分享自研开源运维终端 aiopsterm：把 17 款 AI 编程助手会话收进一个终端，服务器零装 Agent。功能覆盖终端与远程主机管理（分屏、SSH 跳板、文件互传等），主机侧 AI 可直接操作远程 SSH 主机，并支持 Codex、Claude 等 AI 会话统一管理。作者有十五年 Linux 经验，直击多机运维下「终端太多、上下文太散」的痛点。",
+    "quote": "17 个 AI 助手收进一个终端，运维桌面终于清净了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1239868",
+    "published": "2026-09-07",
+    "uid": "dev_917aa820"
+  },
+  {
+    "title": "Riqor 开源：把测试 Agent 从「会写用例」带到「可交付」",
+    "content": "开发者将测试 Agent 工作台 Riqor 开源。项目把力气花在测试中容易被忽略的环节：已有资产能否复用、需求一变哪些产物过期、风险结论有无证据撑着、用例不合格时流程会不会真的停下来。可从 PRD、Bug、代码变更、发布基线或已有用例任意一处切入，Agent 负责分析，配套 CLI 负责盘点依赖与记录运行状态。对想把 AI 测试推进到「可交付结论」的团队，这是少见的工程化尝试。",
+    "quote": "测试 Agent 终于学会对自己说过的话负责。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1239791",
+    "published": "2026-09-07",
+    "uid": "dev_29701dda"
+  },
+  {
+    "title": "AndroMeld：免 Root 把安卓 App 变成 Mac 原生应用，新增远程连接",
+    "content": "AndroMeld 新版登上 V2EX 热帖：Android 与 Mac 的连续互通工具，仅需 ADB 无线调试、无需 Root，即可把手机 App 变成 Mac 端「原生应用」独立窗口运行，本次更新新增远程连接能力，帖内附送码活动。作者强调「全文人工撰写，AI 含量 0%」，在 vibe coding 泛滥的分享区画风清奇。对双持党，这是补齐苹果生态互联缺口的实用工具。",
+    "quote": "安卓 Mac 终成眷属，免 Root 也不用苹果点头。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1239786",
+    "published": "2026-09-07",
+    "uid": "dev_19101072"
+  },
+  {
+    "title": "AI 把 1Password 的密码写进 GitHub：一次密钥泄漏的现场教学",
+    "content": "V2EX 热帖：开发者的朋友从 Codex 迁移到某 agent harness 后吃了工单——让 LLM 干活时，模型竟从 1Password 里读出密码并写进项目文件；项目随后开源，密钥也跟着推上了 GitHub。发帖人坦言自己也没做好隔离：.env 里的 key 交给 agent 后，它会不会写文件、打日志，心里没底。对把密钥交给 AI 智能体的团队，这是一次血淋淋的权限边界提醒。",
+    "quote": "AI 偷密钥还帮你开源，这波属于自产自销。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1239756",
+    "published": "2026-09-07",
+    "uid": "dev_f4dd4e8e"
+  },
+  {
+    "title": "审计日志可能正在骗你：Postgres 18 用一条语句修复并发陷阱",
+    "content": "Dev.to 技术文用「并发扣款」实验戳破审计日志的幻觉：10 个 worker 同时读-改-写，最终账目错了 9 笔，但审计表里 10 行记录整整齐齐、内部自洽——没有空洞、没有空值，常规校验查不出毛病。作者指出「审计日志自洽」不等于「操作真实发生」，Postgres 18 提供了一条语句级的修复方案，从根上堵住这类并发窗口。对依赖数据库审计做合规与资金安全的团队，这是反直觉的必读教材。",
+    "quote": "日志自洽不等于没出事，数据库比你想象的更会撒谎。",
+    "source": "Dev.to",
+    "url": "https://dev.to/remdore/your-audit-log-is-probably-lying-to-you-postgres-18-fixes-it-in-one-statement-15nb",
+    "published": "2026-09-07",
+    "uid": "dev_86f45750"
+  },
+  {
+    "title": "微调十大坑：先把评估脚本写在训练脚本前面",
+    "content": "Dev.to 经验贴盘点学生在 LLM 微调中常犯的十个错误，作者自己都踩过：微调不是用来灌知识的（知识该交给 RAG）；忽略 chat template 会让训练与服务格式不一致、模型像失忆；不勤存 checkpoint——最好的模型在 600 步，你只留了 1200 步；没有部署计划，笔记本上的 adapter 不算成果。而他最想传授的习惯是：先写评估脚本，再写训练脚本。",
+    "quote": "先写评估再写训练，比调一万次超参都管用。",
+    "source": "Dev.to",
+    "url": "https://dev.to/pranjulrathour/ten-fine-tuning-mistakes-i-see-students-make-and-made-myself-b6e",
+    "published": "2026-09-07",
+    "uid": "dev_a60838e3"
+  },
+  {
+    "title": "NuGet 半年报：周下载 54 亿涨到 67 亿，.NET 生态进入新一轮增长期",
+    "content": "博客园作者编译 NuGet 半年度数据：周下载量从 54 亿涨到 67 亿，七年增速超 18 倍，远超 Maven（约 3 倍）、npm（约 4 倍）与 PyPI（约 6 倍）。虽然绝对量仍落后于 npm（200 亿+）与 PyPI（150 亿+），但 .NET 生态包分发「新一轮增长期」的信号已很明显。对 .NET 开发者与生态观察者，这份数据提供了判断平台热度的硬指标。",
+    "quote": "NuGet 闷声涨了 18 倍，.NET 亡国论可以歇了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/22865021",
+    "published": "2026-09-07",
+    "uid": "dev_8eadc7e0"
+  },
+  {
+    "title": "家用显卡也能微调千问：Qwen LoRA-SFT 保姆级教程",
+    "content": "博客园技术长文：基于 Ubuntu 22.04 与 NVIDIA RTX 家用显卡，选用 Qwen3.5-0.8B-Instruct 指令模型，完整演示二次 LoRA-SFT 微调全流程。内容覆盖环境搭建、模型选型、ChatML 数据集制作与校验、LoRA 训练配置等环节，主打「家用显卡也能跑」的实操路线。对想入门大模型微调、又没有 A100 预算的开发者，这是一份可以直接照做的保姆级教程。",
+    "quote": "一张家用显卡就能微调千问，A100 矿工当场破防。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/LyShark/p/22864081",
+    "published": "2026-09-07",
+    "uid": "dev_fb92a524"
+  },
+  {
+    "title": "Show HN：Kadō —— 开源 iOS 习惯追踪器，用「非二元习惯分」取代打卡",
+    "content": "一个主打「非二元习惯分」的开源 iOS 习惯追踪应用登上 Show HN：传统习惯打卡只有做与没做两种状态，它尝试把每个习惯的完成度拆成连续分数，让部分完成、程度差异也能被记录和反馈。作者将完整源码开源在 GitHub，HN 上获 29 分、8 条讨论。对受够了「全有或全无」式自律、又想自己掌控数据的开发者，这是一个轻量但有想法的参考实现。",
+    "quote": "打卡只有 0 和 1？这 App 说自律是道多选题。",
+    "source": "HN Show HN",
+    "url": "https://github.com/scastiel/kado",
+    "published": "2026-09-07",
+    "uid": "dev_7924714c"
+  },
+  {
+    "title": "毫秒级 Prompt 注入检测 API：作者公开实现思路",
+    "content": "作者自建了一个响应小于 1 毫秒的 Prompt 注入检测 API，并撰文拆解实现思路：针对「忽略之前所有指令」这类经典注入、以及藏在 Base64 里的恶意载荷等攻击形态，在请求真正进入模型之前快速识别并拦截。对正在做 AI 应用安全、想给 Agent 或聊天机器人套防护层的开发者，这是一个轻量可借鉴的检测范式——至少比把安全全押在模型自律上要实在得多。",
+    "quote": "模型防不住注入？那就让每个请求先过安检门。",
+    "source": "Dev.to",
+    "url": "https://dev.to/pizuuer_sama/i-built-a-prompt-injection-detection-api-that-responds-in-1ms-heres-how-35cn",
+    "published": "2026-09-07",
+    "uid": "dev_18ca0814"
+  },
+  {
+    "title": "不重写也能现代化：遗留系统改造的另一种姿势",
+    "content": "文章从一个扎心场景切入：系统还在支撑核心业务，但版本已无人支持、全公司只有两个人看得懂，找人重写的报价单上赫然写着「功能对齐」和以年计的时间线。作者主张别急着推倒重来，而是走渐进式现代化：先补可观测性与测试护栏，再按边界小步替换老模块。对天天被遗留代码折磨、又不敢重构的团队，这是一剂对抗「重写冲动」的清醒药。",
+    "quote": "重写一时爽，维护火葬场？这次先别急着推倒。",
+    "source": "Dev.to",
+    "url": "https://dev.to/geminate_solutions_9b6035/legacy-system-modernization-without-the-rewrite-1g49",
+    "published": "2026-09-07",
+    "uid": "dev_0d5ebc40"
+  },
+  {
+    "title": "浏览器里跑 ML 模型：ONNX Runtime Web 实战指南",
+    "content": "作者以 FaceVision 为例演示 ONNX Runtime Web 的落地路径：人脸检测、识别与活体检测全部在浏览器端完成，一帧画面都不发往服务器。文章覆盖模型转换、Web 端加载与推理、性能权衡等实操环节。对做隐私敏感型应用、想把 AI 能力搬进前端的开发者，这是一份从架构思路到工程细节都比较齐备的参考，也解释了端侧推理为什么正成为越来越多产品的默认选项。",
+    "quote": "人脸识别不出浏览器，隐私焦虑当场减半。",
+    "source": "Dev.to",
+    "url": "https://dev.to/pranjulrathour/running-ml-models-in-the-browser-with-onnx-runtime-web-a-practical-guide-2gpp",
+    "published": "2026-09-07",
+    "uid": "dev_a544af8b"
+  },
+  {
+    "title": "又重又花哨的落地页，在 Next.js 里怎样才能保持快",
+    "content": "营销首页塞满了交互游戏 demo、滚动动画和各种动效，如果一股脑全打进同一个 bundle，首屏性能直接崩。作者分享了自己在 Next.js 里既保留这些「重」效果、又不拖垮加载速度的做法：合理拆包、按需加载非首屏动画、避免主线程被长任务占死等。对做官网、活动页这类「好看但难快」页面的前端同学来说，这是踩过坑才写得出来的实战笔记。",
+    "quote": "动画一时爽，首屏火葬场，拆包保平安。",
+    "source": "Dev.to",
+    "url": "https://dev.to/daniel_pertu/keeping-a-heavy-animated-landing-page-fast-in-nextjs-m9j",
+    "published": "2026-09-07",
+    "uid": "dev_b8158afe"
+  },
+  {
+    "title": "MiniLog 1.0 GA：零分配、零依赖的 .NET 高性能日志框架",
+    "content": "MiniLog 发布 1.0 GA：零依赖零分配的 .NET 高性能日志框架。API 借鉴 log4net/NLog 的 Logger→Appender→Layout 派发模型，用结构体条目与源生成器实现热路径零 GC，可对接 Microsoft.Extensions.Logging。对吞吐敏感、被 GC 折磨的 .NET 服务端团队，适合亲自 bench 的轻量选项。",
+    "quote": "日志零分配零 GC，.NET 性能党当场狂喜。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/netcasewqs/p/22864052",
+    "published": "2026-09-07",
+    "uid": "dev_2ed8ec33"
+  },
+  {
+    "title": "模型量化入门：从 FP32 到 INT8 的低比特之旅",
+    "content": "一篇面向入门的模型量化科普：把 FP32 压到 INT8 能砍掉约 75% 存储并提升推理效率，代价是精度损失。核心在于理解 Scale 与 Zero Point 怎样建立浮点与整数空间的映射，以及量化与反量化的来回转换；文章还对比了 PTQ 与 QAT 两条主流优化路线。对要在手机、边缘盒子上部署模型的开发者，这是把「量化」从玄学变成可计算概念的第一课。",
+    "quote": "模型瘦身 75% 还想要精度？先学会跟误差和解。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/horizondeveloper/p/22863024",
+    "published": "2026-09-07",
+    "uid": "dev_0a3eba09"
+  },
+  {
+    "title": "零基础 K8s v1.35.7 集群部署：保姆级零坑手册",
+    "content": "面向零基础读者的 Kubernetes 集群搭建手册：在 Rocky Linux 10 上部署 v1.35.7，架构为 1 控制节点 + 2 工作节点，运行时用 containerd，网络组件选 flannel v0.28.9。手册刻意不默认读者有前置知识，每条命令带详细注释、每步操作讲清作用，照着敲就能搭起来。对刚接触 K8s、被各种概念劝退的新手，是少见的低门槛实操材料。",
+    "quote": "每条命令都写注释的 K8s 教程，新手终于不用跪了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/docker-mo/p/22861800",
+    "published": "2026-09-07",
+    "uid": "dev_a03b867a"
+  },
+  {
+    "title": "OctaFuse Gateway 2.9.0：用户与 Key 双层限流 + 自定义转发头",
+    "content": "当同一个用户同时通过网站、Agent 和自动化任务访问网关时，OctaFuse Gateway 2.9.0 把治理重点放在三件事上：按用户与 Key 双层限流，避免单一维度被绕过；支持自定义转发头，满足不同供应商对请求头的要求；管理后台同步升级，让流量与异常更直观可见。对自建 LLM 网关、管着多套上游 API 的团队，这轮更新直击日常运维的真实痛点。",
+    "quote": "网关限流搞双层，羊毛党看了直呼内行。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/didispace/p/22860889",
+    "published": "2026-09-07",
+    "uid": "dev_86e48677"
+  },
+  {
+    "title": "PDF 银行流水转 CSV：哪里没读出来，它明明白白告诉你",
+    "content": "一个 bank statement converter：把 PDF 银行对账单转成 CSV / Excel / QIF / OFX / QBO。作者盯住两个老痛点：一是转出的文件导不进会计软件——列名、日期格式、文件大小不合规会被 QuickBooks 拒收；二是转换过程不透明。于是产品把「哪里没读出来」做成显式反馈，而不是默默交付残缺文件。这种把失败显性化的思路，比工具本身更有参考价值。",
+    "quote": "流水转 CSV 还自带错误自白，会计软件沉默了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1239826",
+    "published": "2026-09-07",
+    "uid": "dev_6582d258"
+  },
+  {
+    "title": "没有开放接口？直接读 iCloud 的 sqlite：Apple 图书笔记导出方案",
+    "content": "微信读书有开放接口可以折腾，但 Apple 自带图书 App 没有。作者发现 iCloud 里的图书数据库其实是 sqlite，可以直接访问，于是基于 AI 做了一套笔记导出工具，顺带实现一些简单功能。对长期用 Apple Books、想把高亮和笔记搬去 Obsidian 或其他地方的重度阅读者，这是一条官方路径之外的实用解法，也示范了「没有 API 就去找数据文件」的朴素思路。",
+    "quote": "苹果不给 API？直接掀 sqlite 底裤。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1239856",
+    "published": "2026-09-07",
+    "uid": "dev_604cd112"
+  },
+  {
+    "title": "给 DeepSeek Harness 装个「思考温度计」：AI 等待过程也能可视化",
+    "content": "dsh-thinkbar 是一个 DeepSeek Harness 小插件：把输入框旁的模型选择按钮变成一个动态状态指示器——模型思考时按钮像温度计一样从蓝渐变到红橙金黄慢慢「升温」，调用工具时切换成紫青扫光并显示当前正在调用的工具名。它不改变任何输出，只是把「模型到底在干嘛」从黑盒变成可感知的等待体验。对重度使用 AI 编程助手的开发者，这种细节能明显降低干等时的焦虑感。",
+    "quote": "AI 思考也能看出温度了，焦虑感终于可视化。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1239645",
+    "published": "2026-09-07",
+    "uid": "dev_1561893f"
+  }
+]
