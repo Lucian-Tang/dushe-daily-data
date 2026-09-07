@@ -1,0 +1,227 @@
+[
+  {
+    "title": "用 1024 字节 C 代码写 Python 解释器：Austin Henley 的周末挑战",
+    "content": "Austin Z. Henley 分享周末挑战：用 1024 字节 C 代码实现「Python 解释器」，不用宏和库技巧。起初 512 字节只做出计算器；放宽到 1024 字节后，他放弃 CPython 式完整管线，用全局变量加定长数组直接解析，变量与函数名挤进一张符号表，最终跑通带 def、冒号、缩进的 FizzBuzz。文章展示从「能用」到「能塞下」的压缩思路，是份有趣的代码高尔夫样本。",
+    "quote": "1024 字节写解释器，我的简历项目瞬间不香了。",
+    "source": "HN Front Page",
+    "url": "https://austinhenley.com/blog/python1024.html",
+    "published": "2026-09-08",
+    "uid": "dev_94533d8c"
+  },
+  {
+    "title": "花一年把 WebAssembly 塞进 Anubis：反爬中间件的自我进化",
+    "content": "反爬中间件 Anubis 作者发文复盘：花了一年时间把 WebAssembly 引入项目。Anubis 用类 Hashcash 的工作量证明拦住 AI 公司大规模抓取，如今需要现代 JS/WASM 能力才能通过挑战，作者还计划靠字体渲染等指纹识别无头浏览器。HN 讨论里有人抱怨禁用 WASM 的浏览器会被挡在门外——反爬工具自己成了需要被绕过的存在。",
+    "quote": "反爬工具先反了自己人，禁用 WASM 的用户哭了。",
+    "source": "HN Front Page",
+    "url": "https://anubis.techaro.lol/blog/2026/anubis-wasm",
+    "published": "2026-09-08",
+    "uid": "dev_7dfb0339"
+  },
+  {
+    "title": "vLLM 官方实测：投机解码在 AMD GPU 上到底快不快",
+    "content": "vLLM 团队实测投机解码在 AMD GPU 上的表现：轻量草稿模型先产出候选 token，目标模型一次验证、一次前向提交多个。实验对比原生 MTP、Gemma 4 MTP、EAGLE-3、DFlash、DSpark 五种起草方式，结论是吞吐提升因模型家族、草稿检查点、提议长度与接受行为而异，并非无脑加速，对 AMD 推理团队是份少见的官方实测参考。",
+    "quote": "投机解码不是玄学，提不提升全看模型脸色。",
+    "source": "HN Front Page",
+    "url": "https://vllm.ai/blog/2026-08-23-speculative-decoding-amd-gpus",
+    "published": "2026-09-08",
+    "uid": "dev_aae5c9dc"
+  },
+  {
+    "title": "CodePen 2.0 被曝边打字边回传：没保存的代码也实时上传",
+    "content": "HN 用户发帖质疑 CodePen 2.0：你在编辑器里输入的内容，几乎实时（1-2 秒内）就被发送到 codepen.dev 服务器，哪怕还没点保存。发帖者担心敲到一半的密钥、未公开的代码片段在落盘前就已上传。评论区围绕「本地编辑器的隐私边界」展开：自动保存与云端同步的合理尺度在哪，是否需要更明确的提示。对每天泡在在线 IDE 的开发者，这是一次隐私意识提醒。",
+    "quote": "代码还没保存就上了云端，在线编辑器版裸奔。",
+    "source": "HN Front Page",
+    "url": "https://news.ycombinator.com/item?id=49596976",
+    "published": "2026-09-08",
+    "uid": "dev_49b27441"
+  },
+  {
+    "title": "deer-flow 登 GitHub 热榜：字节开源的 long-horizon SuperAgent 框架",
+    "content": "字节跳动开源 deer-flow 登上 GitHub Trending：定位「long-horizon SuperAgent harness」，能借助沙箱、记忆、工具、技能与消息网关，通过子任务编排长时间自主完成研究、写码与创作类任务。仓库星标已超 8 万。在 agent 框架扎堆的当下，大厂出品加长周期任务定位让它格外显眼，适合想研究生产级 agent 编排的开发者直接读源码。",
+    "quote": "字节的 agent 框架开源了，先抄为敬。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/bytedance/deer-flow",
+    "published": "2026-09-08",
+    "uid": "dev_e06a49ef"
+  },
+  {
+    "title": "camofox-browser 登热榜：给 AI Agent 穿的「反反爬隐身衣」",
+    "content": "camofox-browser 登上 GitHub Trending：自称 stealth headless browser，专为 AI agent 设计，主打绕过 Cloudflare、bot 检测与反爬，可在 Puppeteer/Playwright 的位置即插即用，星标约 9.4k。对需要稳定抓取网页的 agent 开发者，这类「反反爬」浏览器正成为基础设施；反爬军备竞赛也随之升级。",
+    "quote": "反爬军备竞赛新选手：给 agent 穿的隐身衣。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/jo-inc/camofox-browser",
+    "published": "2026-09-08",
+    "uid": "dev_452560ab"
+  },
+  {
+    "title": "context-mode 登热榜：给 AI 编程助手的上下文窗口「瘦身」",
+    "content": "context-mode 登上 GitHub Trending，专注 AI coding agent 的上下文窗口优化：号称能把工具输出压缩 98%，持久化会话记忆，并在 17 个平台间强制路由。思路直击 agent 长会话痛点——工具输出灌爆上下文是 agent 变笨的头号原因。星标约 2 万，适合被上下文溢出困扰的 Claude Code、Codex 重度用户尝鲜。",
+    "quote": "上下文省着点用，agent 才不会聊着聊着失忆。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/mksglu/context-mode",
+    "published": "2026-09-08",
+    "uid": "dev_168ab696"
+  },
+  {
+    "title": "1800 行搞懂 LangGraph：他手写了一个 agent 框架内核",
+    "content": "V2EX 用户分享自研 prodagent：约 1800 行的 agent 框架内核，只依赖 Python 标准库，70 个测试全离线。作者坦言研究 LangGraph 与 ADK 常被三层抽象绕晕，于是自己写最小实现分清「必需」与「附加」。内核不认识 LLM，只有 Plan、Run、Scheduler；状态由事件日志折叠而来，checkpoint 只是可丢弃缓存，崩溃恢复与时间旅行近乎免费。",
+    "quote": "看不懂 LangGraph？自己写个 1800 行的就懂了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1240169",
+    "published": "2026-09-08",
+    "uid": "dev_30f90495"
+  },
+  {
+    "title": "抓了一万个独立产品收入，他发现「58% 零 MRR」是统计陷阱",
+    "content": "V2EX 用户抓取 TrustMRR 全站约一万个独立产品数据，验证「一半以上 MRR 为零」的说法。结论：mrr 字段只统计订阅收入，买断制产品（如累计收入 127 万美元的 ShipFast、30 天进账 714 万美元的 Gumroad）都被记成 0。按三个收入字段重算，真正没赚到钱的占 26.1%，近 30 天有进账的占 49.1%。独立开发没有快钱，但没传闻那么惨。",
+    "quote": "MRR 为零不代表没赚钱，统计口径才是真刺客。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1240148",
+    "published": "2026-09-08",
+    "uid": "dev_a29ea98e"
+  },
+  {
+    "title": "私有 Nix Cache 跑在 Cloudflare Worker 上：NixOS 用户的零运维方案",
+    "content": "V2EX 用户分享 nix-cache-worker：用 Cloudflare Worker + R2 + D1 搭私有 Nix binary cache。NixOS 管全部私人机器，deploy 总要现场编译；Cachix 最便宜 50 美元/月，Attic 等开源方案又得自己运维。支持标准 nix copy、Token 写、retention/GC 与 Web 管理页，签名校验兜底。",
+    "quote": "循环依赖终结者：缓存跑在 Cloudflare 上。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1240143",
+    "published": "2026-09-08",
+    "uid": "dev_6ae72503"
+  },
+  {
+    "title": "x402 协议：把 HTTP 变成支付通道，AI Agent 按次付费不再求人",
+    "content": "Dev.to 长文讲解 x402：面向 AI agent 的 HTTP 原生微支付规范。传统 API key、订阅、发票需线下协商与 SDK，破坏 agent「无状态请求到响应」的可组合性。x402 思路：服务器对需付费资源回 402 加 Pay-Payload 头，客户端钱包签名后带 X-Payment 头重发，服务端验证入账再回 200，支付证明活在 HTTP 头里。",
+    "quote": "Agent 花钱终于不用先充会员再干活了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/nikhilranka23/x402-explained-http-native-micropayments-for-ai-agents-with-real-code-2fo",
+    "published": "2026-09-08",
+    "uid": "dev_e715b2e9"
+  },
+  {
+    "title": "换模型前先「钉住行为」：快照测试抓不住的 LLM 静默回归",
+    "content": "Dev.to 技术文指出：快照测试拦不住 LLM 静默回归——payload 能解析、消息依旧流畅，行为却已悄悄变坏。作者主张像编译器测试套件一样，为 prompt 与 agent 建立「黄金行为」：记录 grounded 提问、工具轮次上限、系统文本不泄漏等义务性行为，换模型前用独立评分器打分验收，并给出可本地复现的 Python 工作流。",
+    "quote": "快照测试只验皮囊，模型换壳翻车没人知。",
+    "source": "Dev.to",
+    "url": "https://dev.to/byteio_3726/pin-behaviors-across-model-swaps-1824",
+    "published": "2026-09-08",
+    "uid": "dev_a544cf6f"
+  },
+  {
+    "title": "SimdPaddleOCR 发布：100% C# 的 OCR 推理库，终结原生依赖噩梦",
+    "content": ".NET 开发者发布 SimdPaddleOCR：完全用 C# 写的 OCR 推理引擎，不依赖 Paddle Inference、ONNX Runtime 或 OpenCV 原生库。内置 C# ONNX 解释器，模型打进程序集；核心 API 只收 BGR 字节数组。实测 tiny 模型 4 worker 端到端 168ms，比纯 C 参考更快，支持 net10.0，终结「换环境就跑不起来」的噩梦。",
+    "quote": "纯 C# 跑 OCR 还比 C 快，原生党沉默了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/sdcb/p/22863347/20260907-simdpaddleocr-intro",
+    "published": "2026-09-08",
+    "uid": "dev_ccc8ed31"
+  },
+  {
+    "title": "Agent Harness 热插拔难题：DeepSeek 论文的 Cordis 模型解读",
+    "content": "葡萄城技术团队解读 DeepSeek 新论文，探讨 Agent harness 热插拔难题：组件运行时被加载、卸载、替换，怎样保证状态不泄漏、依赖不失效？论文将 effect/coeffect 提升为运行时机制：effect 修改共享上下文且必须可撤销，coeffect 声明依赖并在变化时触发响应，加载与卸载变成同一套变换的正逆操作。",
+    "quote": "Agent 自己改自己还不崩，全靠 undo 兜底。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/powertoolsteam/p/22868171",
+    "published": "2026-09-08",
+    "uid": "dev_b3f4c94e"
+  },
+  {
+    "title": "从对标 Java 到对标 Go：.NET Native AOT 的无痛化走到哪一站了",
+    "content": "博客园作者张善友梳理 .NET Native AOT 的「无痛化」进程：从 .NET 7 到 .NET 12 的成熟体验，走了五年。对比 Java GraalVM 折腾更久、Spring 生态 AOT 仍在打补丁，Go 则天生站在编译期优势一侧。文章把 .NET 的 AOT 定位从「对标 Java」转向「对标 Go」，对关注 .NET 12 与云原生部署的开发者是份清晰观察。",
+    "quote": ".NET AOT 追了五年，终于敢跟 Go 比启动速度。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/22872615",
+    "published": "2026-09-08",
+    "uid": "dev_3a3a2f6c"
+  },
+  {
+    "title": "Show HN：mdedit —— 嫌现成 Markdown 编辑器难用，他用 Tauri/Rust 搓了个跨平台私密编辑器",
+    "content": "一位开发者受够了市面 Markdown 编辑器不合手，用 Tauri + Rust 自研了跨平台桌面编辑器 mdedit：原生打开/保存、最近文件菜单、标签页工作区，编辑/分栏/预览三模式同步，支持 GitHub 风格 Markdown、脚注表格、Mermaid 图表与 KaTeX 公式，可离线导出 HTML/PNG/PDF。文档全留本地不上云，主打快、私密、跨平台。",
+    "quote": "又被编辑器逼疯一个，这次直接 Rust 造轮子。",
+    "source": "HN Show HN",
+    "url": "https://github.com/skanga/mdedit",
+    "published": "2026-09-08",
+    "uid": "dev_eb48965e"
+  },
+  {
+    "title": "Show HN：Benzi —— 不靠 grep 靠编译：AI 编程助手的 O(1) 代码问答基建",
+    "content": "作者受够了「把整个仓库塞进上下文让模型自己翻」，做了 AI 原生代码智能基础设施 Benzi：先用基于 tree-sitter 的编译器把项目解析成可查询的符号地图——符号、调用边、引用、继承链一次建完，问题进来前代码已被理解。自称 Claude Code 靠 grep、Cursor 靠 embedding、Benzi 解析后 O(1) 直答，支持十种语言，带 VS Code 插件与 demo。",
+    "quote": "别人把仓库塞给模型碰运气，它先把代码编译成地图。",
+    "source": "HN Show HN",
+    "url": "https://github.com/oooscoos/Benzi",
+    "published": "2026-09-08",
+    "uid": "dev_6044af4a"
+  },
+  {
+    "title": "Show HN：DashClaw —— 给无人值守的 AI 编程助手装上「远程审批刹车」",
+    "content": "DashClaw 定位为无人值守编码助手的审批与策略层：当 OpenClaw、Claude Code、Codex 等 AI 工具试图执行破坏性或高成本操作时，它会在命令真正运行前拦下，通过远程渠道推送审批请求——人不在键盘前也能把关；每一次决策都写入签名账本留作审计证据，npm 与 PyPI 双端发布。口号很实在：让编程助手无人值守地跑，但不给无条件授权。",
+    "quote": "代理想干坏事？先过手机上的这道审批闸。",
+    "source": "HN Show HN",
+    "url": "https://github.com/ucsandman/DashClaw",
+    "published": "2026-09-08",
+    "uid": "dev_40166b49"
+  },
+  {
+    "title": "Show HN：FetchRelay —— 把公开网页一键变成结构化数据的抓取 API",
+    "content": "Show HN 上的抓取服务 FetchRelay：把单个公开网页或 PDF 转成文本、链接与结构化字段，支持批量任务与整站爬取；渲染策略「先直连、页面需要 JS 再开浏览器」，可脱敏邮箱、电话、卡号等敏感信息，抓取失败不扣费，每月 100 次免费额度且无需绑卡。配置可存成 JSON 复用，适合不想自己维护爬虫与反爬的开发者直接嵌进应用。",
+    "quote": "抓数据这事，托管出去比养爬虫省心十倍。",
+    "source": "HN Show HN",
+    "url": "https://fetchrelay.com",
+    "published": "2026-09-08",
+    "uid": "dev_ef88f42d"
+  },
+  {
+    "title": "CSS 里藏恶意代码？样式表也能泄露密钥、追踪用户",
+    "content": "JavaScript 总替浏览器安全背锅，作者提醒 CSS 同样危险：它虽不能开 socket、读文件，却能观察 DOM 结构、按属性值与媒体特性做条件判断、加载远程资源、给设备指纹，再借 url() 悄悄发起网络请求——几百条人畜无害的声明里埋几个可疑 url()，就能成为攻击链的一环。恶意样式表从不自我介绍，它只等渲染引擎执行本职工作：匹配选择器、拉取资源。",
+    "quote": "别只盯着 JS，CSS 的 url() 里也能藏刀。",
+    "source": "Dev.to",
+    "url": "https://dev.to/njenga_nganga_00063bc67/the-wierd-and-wonderful-wolrd-of-malicious-code-hidden-in-css-5d0m",
+    "published": "2026-09-08",
+    "uid": "dev_f54e3263"
+  },
+  {
+    "title": "又拍云疑似跑路？他把十年 500MB 博客图片连夜迁到腾讯云",
+    "content": "作者写半年总结时发现又拍云图片节点全挂，群里博主提醒企查查上又拍云已是「限制高消费」，疑似跑路，只好连夜把 500+ MiB 图片迁到腾讯云 EdgeOne + COS。真正的坑在兼容性：十年博文遍布 !/scale/50 这类又拍云专属图片处理参数，想保持旧 URL 不变就得兼容其语法。他用 Pi Agent 扫描 310 个 HTML 统计影响面定迁移方案，顺带唏嘘又拍云盛极而衰。",
+    "quote": "云厂商跑路前，从不提前打招呼。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/somebottle/p/22873403/migrate_from_upyun_to_eo",
+    "published": "2026-09-08",
+    "uid": "dev_f225d309"
+  },
+  {
+    "title": "Solon AI 4.1：把 LLM 流式输出拆成 31 种语义事件",
+    "content": "LLM 流式输出远不止文本分片：一条连接里可能混着正文、思考过程、工具参数、引用、媒体、安全事件与用量快照。Solon AI 4.1 把接口从 Flux<ChatResponse> 改为 Flux<ChatEvent>，用 31 种事件归入生命周期、正文、思考、工具调用、媒体、安全、元信息等九组语义分类，让调用方精确区分过程数据与最终结果，避免把供应商协议细节泄漏进 UI、Agent 与网关层。",
+    "quote": "流式输出全是分片？人家已经拆成九组事件了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/noear/p/22872476",
+    "published": "2026-09-08",
+    "uid": "dev_82053b28"
+  },
+  {
+    "title": "DolphinDB 官方 23 个 Skill 全家桶：写 SQL、导数据、算因子都有 AI 代劳",
+    "content": "时序数据库 DolphinDB 发布官方 Skill 全家桶：23 个技能覆盖写脚本、写/改/优化 SQL、循环代码向量化、CSV 与 Tushare/国泰安/通联等行情导入、因子生成、量化回测、研报因子复现、FICC 定价、机器学习、流式计算、画图、运维排查与写测试用例，还带 RAG 兜底防 AI 乱答。用大白话提需求，对应技能自动写代码并在平台上跑通给看，等于给新手配了一排随叫随到的私教。",
+    "quote": "23 个 AI 私教随叫随到，SQL 再也不用翻文档。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/DolphinDB/p/22870486",
+    "published": "2026-09-08",
+    "uid": "dev_ffb25055"
+  },
+  {
+    "title": "CiliKube 1.5.0：AI 能控集群，但人类需要一块看得懂的面板",
+    "content": "作者在 V2EX 分享开源 K8s 管理面板 CiliKube 1.5.0：与其把集群操作全权交给 AI，不如保留一个人类看得懂、能干预的面板。新版强化 AI 辅助管理能力，提供在线 Demo 可直接体验，开发者与 SRE 都能在可视化界面里更放心地操作集群——给「AI 控制集群」的狂飙留一道人工刹车，新手拿来学习 K8s 也合适。",
+    "quote": "AI 控集群很酷，出事时还是想要个撤销键。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1240172",
+    "published": "2026-09-08",
+    "uid": "dev_a58c5112"
+  },
+  {
+    "title": "花两年用 Rust 写嵌入式 KV 引擎 Mace：B+ 树的读、LSM 的写，都要",
+    "content": "作者在 V2EX 分享用 Rust 写了两年的嵌入式 KV 引擎 Mace：想同时拿到 B+ Tree 可预测的读延迟与 LSM-Tree 的高写吞吐——Bw-Tree 风格有序索引加 MVCC 快照隔离，append-only WAL 配异步 checkpoint，支持 ACID 事务与崩溃恢复；面向 SSD/NVMe 优化日志结构，大 value 分离存储，已发布到 crates.io。",
+    "quote": "读要 B+ 树、写要 LSM？两年磨一剑全都要。",
+    "source": "V2EX Share",
+    "url": "https://github.com/abbycin/mace",
+    "published": "2026-09-08",
+    "uid": "dev_1ea0cd17"
+  }
+]
