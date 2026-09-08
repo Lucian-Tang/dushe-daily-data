@@ -1,0 +1,227 @@
+[
+  {
+    "title": "Qwen3.8 27B 量化实测：4-bit 能打满血，1-bit 直接崩成随机",
+    "content": "Quesma 实测 Qwen3.8 27B 各档量化：完整 BF16 权重约 55GB；而 17GB 的 Q4_K_M 在 Terminal-Bench 2.1 编码基准上与满血模型打平，还能塞进 24GB 的 RTX 4090 并留出约 64k 上下文。但压缩终有断崖：1-bit 版（6.2GB）在 GPQA Diamond 上接近随机水平，推理越长越差。本地跑大模型，量化档位不是越低越好。",
+    "quote": "4-bit 是甜点，1-bit 是智商税。",
+    "source": "HN Front Page",
+    "url": "https://quesma.com/blog/qwen38-27b-quantizations-benchmarked",
+    "published": "2026-09-09",
+    "uid": "dev_71e9ef13"
+  },
+  {
+    "title": "Copperhead：自称「电路板的 Cursor」，八个 agent 阶段把想法变成 Gerber",
+    "content": "Copperhead 自称「电路板的 Cursor」：输入自然语言 brief，依序跑 spec、架构、原理图、布局、Gerber、固件等八个阶段，每阶段由独立 agent 执行，gate 不过就不提交，产出经 KiCad ERC/DRC 校验的设计包。作者用它从零做出 ESP32-S3 电键 Open Telegraph。CLI 免费开源，云端托管按人月收费。",
+    "quote": "画板子也上 agent 流水线，硬件工程师危。",
+    "source": "HN Front Page",
+    "url": "https://copperhead.sh",
+    "published": "2026-09-09",
+    "uid": "dev_e0c4edf2"
+  },
+  {
+    "title": "欧洲用 CDN 的企业近九成选 Cloudflare：单点集中度引热议",
+    "content": "CipherCue 统计发现，在使用 CDN 的欧洲企业里近九成选择了 Cloudflare，单一供应商集中度之高令人咋舌，HN 上 300 多条评论吵成一片：Cloudflare 是否已构成欧洲互联网的关键单点？集中是性能与免费套餐下的理性选择，还是路径依赖？一旦宕机或遭监管，会波及多少站点？一份数据引出的「鸡蛋全在一个篮子里」讨论，做基础设施选型的人建议细读。",
+    "quote": "欧洲互联网的命门，现在写着 Cloudflare。",
+    "source": "HN Front Page",
+    "url": "https://ciphercue.com/blog/european-cdn-concentration-cloudflare-nine-in-ten",
+    "published": "2026-09-09",
+    "uid": "dev_033e6df7"
+  },
+  {
+    "title": "Oweka：一个 TUI 帮你清掉 node_modules、target、venv 等 100GB 垃圾",
+    "content": "作者发现几十个旧项目里的 node_modules、target、venv 等目录吃掉了近 100GB 硬盘，嫌 npkill 慢，于是写了 Oweka：极快的终端 TUI，扫盘几秒完成，按空格即删。识别靠代码级校验而非目录名瞎猜——venv 需含 pyvenv.cfg，Rust 的 target 需对应 Cargo.toml，避免误删。删除无二次确认，按下去就真没了。",
+    "quote": "删 100GB 垃圾一时爽，按错键火葬场。",
+    "source": "HN Show HN",
+    "url": "https://github.com/ByteAtATime/oweka",
+    "published": "2026-09-09",
+    "uid": "dev_91e2ab18"
+  },
+  {
+    "title": "他整理了 610 个 LLM/Agent 评测基准，选 benchmark 不用再翻论文",
+    "content": "V2EX 用户自建 LLM Benchmark Costco，整理 610 个 LLM/Agent 评测基准：可按能力类别、年份、开放程度筛选，查看中英介绍、论文与官方仓库入口，把「测什么能力、任务怎样构造、agent 能看到哪些信息、能调什么工具、按什么判成功」一次看全，省去在论文、数据集、仓库间来回跳转。给自家 agent 挑「考试题」时，这是个高效得多的入口。",
+    "quote": "给 Agent 选考试，终于不用自己翻论文。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1240170",
+    "published": "2026-09-09",
+    "uid": "dev_e31b4287"
+  },
+  {
+    "title": "zcode-executor：Claude 出方案、GLM 写代码、Git 说了算的省钱执行器",
+    "content": "V2EX 用户分享 zcode-executor：Claude Code 把任务写成 task 文件，交给本地 GLM 系的 ZCode agent 在隔离 git worktree 里执行，每次写操作过三道闸——硬规则拦越界、模型初筛、拿不准再问人；验收不看 agent 自述，只看 git diff 和测试。用便宜的 GLM 干粗活，省下金贵的 Claude 额度。",
+    "quote": "贵模型动脑，便宜模型动手，钱包笑了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1240457",
+    "published": "2026-09-09",
+    "uid": "dev_49a5f6c7"
+  },
+  {
+    "title": "PixelBridge：让闲置初代 Pixel 给 iCloud 照片做免费原画质备份",
+    "content": "V2EX 用户开源 macOS 应用 PixelBridge，让吃灰的初代 Pixel 重新上岗：走「Apple 照片 → Mac → Pixel → Google Photos」链路，利用初代 Pixel 的免费原画质备份权益，给 iCloud 照片多做一份异地备份，支持 Live Photo 动图与自动增量传输。首个 Beta 已开放下载。照片多又担心云厂商锁定的用户，等于多了一道廉价保险。",
+    "quote": "闲置 Pixel 翻身做备份打工人。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1240526",
+    "published": "2026-09-09",
+    "uid": "dev_4c56aa5d"
+  },
+  {
+    "title": "从 BIOS 到 x64：他手写 Nyvela 操作系统的引导程序全记录",
+    "content": "Dev.to 作者分享自己动手为操作系统 Nyvela 编写引导程序的完整过程：从「电脑通电后怎样从 BIOS 一路走到能玩游戏、上网的用户态」的好奇出发，走过实模式、切换到 x64 长模式、再到把控制权交给内核的每一步。文章把操作系统最底层的启动链路拆开揉碎地讲，适合想搞懂机器通电之后到底发生了什么、又不敢直接啃源码的开发者当入门地图。",
+    "quote": "别人玩 OS 是装系统，大佬玩 OS 是写引导。",
+    "source": "Dev.to",
+    "url": "https://dev.to/vxiddev/from-bios-to-x64-how-i-built-nyvelas-bootloader-245n",
+    "published": "2026-09-09",
+    "uid": "dev_966d0e79"
+  },
+  {
+    "title": "OpenHands 发布 1.0：开源自主编码 agent 终于敢说「自托管不交钥匙」",
+    "content": "开源 autonomous coding agent OpenHands 发布 1.0：围绕 Software Agent SDK 从零重建，自带生产级 Docker 沙箱、安全策略、资源限制与插件系统，SWE-bench Verified 自主完成率约 68%。作者同步给出自托管加固指南——代码和 API key 留在自己机器上，开源自托管第一次不再是落后于商业产品的玩具选项。",
+    "quote": "68% 达标率还开源自托管，闭源们该慌了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/jamilxt/openhands-just-hit-10-heres-how-to-run-it-on-your-own-machine-without-handing-over-the-keys-5666",
+    "published": "2026-09-09",
+    "uid": "dev_6b8cba59"
+  },
+  {
+    "title": "PHP clone 之后改副本却影响原对象？一个电商 bug 讲透浅拷贝",
+    "content": "博客园作者记录一个改变团队认知的 bug：PHP 的 clone 会复制对象，但嵌套对象仍被共享，修改「副本」里的子对象会连带影响原对象。文章给出两种解法——在每一层实现 __clone 做深拷贝，或改用不可变值对象，所有行为均已在 PHP 8.3 下验证。电商订单场景的踩坑实录，写给所有以为 clone 就等于深拷贝的人。",
+    "quote": "PHP clone 是浅拷贝，坑了多少电商人。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/catchadmin/p/22897021",
+    "published": "2026-09-09",
+    "uid": "dev_b32d78f8"
+  },
+  {
+    "title": "Kafka 当 Agent 的「共享内存」、Flink 当「大脑」：别喂它过期快照",
+    "content": "博客园作者借 Confluent 官方案例说明：客服 agent 回复「订单已发货」，其实订单 40 分钟前就取消了——agent 没犯任何看得见的错，只是基于一份六小时才刷新一次的快照在推理。结论是流式数据该成为 agent 的「共享内存」：Kafka 管事件流转，Flink 负责实时状态计算与决策，让 agent 手里永远是最新的上下文，而不是过期数据配上一本正经的胡说。",
+    "quote": "Agent 不蠢，蠢的是喂它过期快照。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Jackeyzhe/p/22888221",
+    "published": "2026-09-09",
+    "uid": "dev_19b1702b"
+  },
+  {
+    "title": "OpenAI 开源 Codex Security 实测：客户端开源，扫描后端还是闭源托管",
+    "content": "码哥字节实测 OpenAI 的 agentic 安全扫描插件 Codex Security：卖点是验证漏洞真伪并自动打补丁，但「开源」只开源了客户端，扫描后端闭源托管在 OpenAI 侧，意味着代码数据出网、成本不可预测。结论很直接：个人 Vibe Coding 可以一试，企业上生产前得过合规与成本两道关。这份试用报告，比官方宣传诚实得多。",
+    "quote": "开源了个壳，核心还是捏在 OpenAI 手里。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/uniqueDong/p/22889846",
+    "published": "2026-09-09",
+    "uid": "dev_6f38e860"
+  },
+  {
+    "title": "Show HN：HomeButler —— 只报「要紧」的变化，Go 单二进制服务器管家",
+    "content": "服务器监控工具多到让人懒得看告警，HomeButler 反着来：单个 Go 二进制，无守护进程、无数据库，装上就能记住服务器上次的样子，只在真正要紧的变化发生时开口——比如某端口悄悄换了服务、配置文件被动过，它会用大白话告诉你「什么变了、要不要管」。内置 MCP server，AI 助手也能直接问它。轻量到适合不想再维护一套监控栈的个人开发者。",
+    "quote": "告警千条不如一句：端口换人了。",
+    "source": "HN Show HN",
+    "url": "https://github.com/Higangssh/homebutler",
+    "published": "2026-09-09",
+    "uid": "dev_4a3c32ce"
+  },
+  {
+    "title": "Show HN：Otter —— 实验性 JS 运行时，想把 1000+ 线程跑出 Erlang 的隔离感",
+    "content": "BEAM 风格的实验性 JavaScript 运行时：基于 QuickJS，把上千个互相隔离的 JS「进程」多路复用在一小撮 OS 工作线程上——进程独享运行时与邮箱，只靠消息传递通信，崩溃只死自己，空邮箱 await 即挂起不阻塞线程。Rust 实现，cargo install otter-rt 即可体验。Erlang 的「隔离与消息」哲学，正在 JS 世界里被重新实验。",
+    "quote": "JS 也想过 Erlang 的日子：崩了只死自己。",
+    "source": "HN Show HN",
+    "url": "https://github.com/gi-dellav/otter",
+    "published": "2026-09-09",
+    "uid": "dev_34ca443a"
+  },
+  {
+    "title": "Show HN：DeepMem —— 换一行 import，把 Agent 的记忆成本打下来？",
+    "content": "给 AI Agent 换记忆层的 drop-in 方案：与 Mem0 API 完全兼容，迁移只改一行 import——同样的 MemoryClient 与方法签名，号称检索快 2 倍、成本低 10 倍；可 Docker 自托管，无鉴权无订阅无锁定，也有托管云可选。对已把 Mem0 写进代码又嫌贵的团队，是五分钟能验证的换用方案；能不能打，就看 benchmark 经不经得起复现。",
+    "quote": "记忆太贵？换一行 import 就能打折。",
+    "source": "HN Show HN",
+    "url": "https://github.com/deepmemteam/deepmem",
+    "published": "2026-09-09",
+    "uid": "dev_cd090c11"
+  },
+  {
+    "title": "三十天迁移倒计时：当你的 SaaS 依赖一个即将下线的模型",
+    "content": "作者记录了一次真实的「模型迁移倒计时」：Google 把 Gemini Omni 预览版转正，旧 preview 端点 30 天后下线——SaaS 一旦嵌了托管模型，日历就攥在别人手里。更扎心的是他的产品主打隐私、预览图从不落盘，想拿生产数据做回归测试都没门，只能提前攒合规的 golden set、把模型调用封进唯一的硬边界。GA 是好消息，但里面总藏着一个 deadline。",
+    "quote": "模型的 GA 日，就是你的迁移 DDL。",
+    "source": "Dev.to",
+    "url": "https://dev.to/gabbrowick/thirty-days-to-migrate-when-your-saas-depends-on-a-model-thats-about-to-disappear-703",
+    "published": "2026-09-09",
+    "uid": "dev_2011d0c9"
+  },
+  {
+    "title": "CSS anchor positioning 让 grid 重排丝滑起来：零 JS，还能中途打断",
+    "content": "auto-fill grid 重排时格子只会跳——单元是虚拟的，没有可插值的盒子。作者用 CSS anchor positioning 绕开：每单元套一层 wrapper 作锚点，内容绝对定位、inset: anchor(inside) 贴住锚框，给 inset 加 transition，重排时内容便从旧锚框滑到新锚框。零 JS、可打断，anchor-scope 让所有单元复用同一锚点名。",
+    "quote": "网格重排也能丝滑，前提是给每个格子立个锚。",
+    "source": "Dev.to",
+    "url": "https://dev.to/leobaniak/anchor-positioning-lets-a-resizing-grid-animate-its-reflow-3mcc",
+    "published": "2026-09-09",
+    "uid": "dev_5bfe0046"
+  },
+  {
+    "title": "Agent 对话企业 API：把「推理」和「执行权」分层，一次授权只活一瞬",
+    "content": "作者反思 agent 架构通病：运行时直接把 token 或可执行工具交给 LLM，一次提示词注入或幻觉就可能拿真权限乱调。实验方案是把推理与执行分层：模型只留在语义层产出意图与参数，纯 Rust 控制层校验调用深度、策略与金额阈值，再铸一次性短时效 Ed25519 授权，执行器验签放行并清洗输出。早期探索，方向可以持续关注。",
+    "quote": "模型负责想，执行权交给不带感情的 Rust。",
+    "source": "Dev.to",
+    "url": "https://dev.to/fcn06/when-agents-talk-to-enterprise-apis-bilateral-contracts-and-runtime-boundaries-3pgf",
+    "published": "2026-09-09",
+    "uid": "dev_46470139"
+  },
+  {
+    "title": "手搓 Agent 第 2.3 关：Text-to-SQL 工具链，让 Agent 只读业务库不闯祸",
+    "content": "「手搓 Agent」系列进阶篇：给 Agent 补上结构化数据查询能力。作者在工具注册中心上按固定模板扩展 Text-to-SQL 工具链——SQL 模拟环境加抽象执行器，把测试库与正式库解耦；动态探测数据库结构、把自然语言转成 SQL，再配高危操作安全拦截与只读权限隔离，防止 Agent 手滑删库；连报错日志都教着打标签，帮你分清主流程与数据库模块的锅。企业让 Agent 碰数据的刚需一课。",
+    "quote": "Agent 连库可以，但只准看、不准碰。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Alkaid2077/p/22895168",
+    "published": "2026-09-09",
+    "uid": "dev_a36773f9"
+  },
+  {
+    "title": "正态分布撒谎时：柯西分布才是捕捉「黑天鹅」的那只眼",
+    "content": "通勤 30 分钟却堵了 2 小时、部门平均工资被老板 200 万年薪拉爆——这些场景拿正态分布去套，结论全是「不可能」。作者用接地气的例子科普柯西分布：长得像正态，中心峰值更瘦高，尾巴却重到离谱，极端值出现的概率比正态高成千上万倍，甚至压根没有均值和方差，数据加再多平均值也不收敛，像永远在躁动的赌徒。配 Python 画图与通勤模拟，看完你会对「平均」两个字多一分警惕。",
+    "quote": "平均值会骗人，柯西分布专治各种平均。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/wang_yb/p/22888201",
+    "published": "2026-09-09",
+    "uid": "dev_6b5a8585"
+  },
+  {
+    "title": "千问 0.8B 全参数 RLHF 微调指南：SFT→RM→PPO/DPO 一条龙，附劝退实话",
+    "content": "大模型微调进阶篇：从 LoRA 升级到全参数 RLHF。作者以开源的 Qwen3.5-0.8B-Base 为例，完整复现 ChatGPT 风格对齐链路——数据预处理、SFT、RM 奖励模型、PPO 与 DPO，附可直接跑的工程脚本。也说大实话：全参微调显存远超 LoRA，通常需多卡 DDP；7B 以上没有海量高质量数据别硬上，性价比往往不如直接 LoRA。",
+    "quote": "全参微调很爽，先看显卡答不答应。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/LyShark/p/22890060",
+    "published": "2026-09-09",
+    "uid": "dev_79559a24"
+  },
+  {
+    "title": "pi2.nvim v1.5.0：Neovim 里现造现用的并行 agent「子会话」，休眠不删、随时围观",
+    "content": "作者把 pi coding agent 的 Neovim 前端 pi2.nvim 升到 v1.5.0，主打「子会话」：要并行 agent 时一句话现造，独立进程与模型档位，零预配置；干完活休眠不删，再发消息自动拉起，历史上下文全在，血缘写进 manifest，重启打不散。想围观可开只读浮窗看它实时调什么工具，跑偏能切进去插嘴。父 agent 自带调度纪律，默认自己当调度员。",
+    "quote": "别的 agent 用完即焚，他家孩子休眠不删。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1240516",
+    "published": "2026-09-09",
+    "uid": "dev_17a4a4f4"
+  },
+  {
+    "title": "NAS Find：让 NAS 自己维护索引，Windows/Mac/网页共用一套文件名搜索",
+    "content": "作者重度依赖 Everything，于是给 Ubuntu NAS 做了 NAS Find：由 NAS 统一维护文件名索引，Windows、Mac 和网页共用，各电脑不用再分别扫描共享目录；桌面端调系统默认应用打开原文件，可定位资源管理器/Finder，Windows 还支持右键菜单，结果支持全选、批量复制与导出路径。只索引名称路径、增量更新，代码已开源。",
+    "quote": "NAS 党不羡慕 Everything，自己建索引。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1240489",
+    "published": "2026-09-09",
+    "uid": "dev_f3508b68"
+  },
+  {
+    "title": "Runner：把 Claude Code + Codex 的 coder/reviewer 循环装进一个桌面 cockpit",
+    "content": "作者从四月起就多 agent 协作写码：Claude Code 实现、Codex 只看 diff 做 review，后来把流程固化成 crew——agent 间用本地 NDJSON log 通信，coder/reviewer 循环能自己跑很久。最终做成桌面应用 Runner，把各 agent CLI 收进一个 cockpit，分屏与 ask-human 俱全，仍走本机账号。",
+    "quote": "人肉消息总线干够了，agent 之间自己传话。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1240311",
+    "published": "2026-09-09",
+    "uid": "dev_1abb9346"
+  },
+  {
+    "title": "LibreOffice 官宣「没有 AI 功能」后下载破纪录，HN 吵翻：这也能算因果？",
+    "content": "LibreOffice 官方宣布新版本不掺任何 AI 功能后，安装包首周下载量突破 100 万，官方称创下历版本首发周最高纪录（不含 Linux 发行版仓库的更新）。消息在 HN 上引来 150 多条评论，画风却一半是阴阳怪气：下载量本来就在逐年上涨，把每次新高都叫「破纪录」是不是典型的因果倒置标题党？但无论怎样，「没有 AI」本身能成为卖点这件事，已经足够说明问题了。",
+    "quote": "没有 AI 成了卖点，这届软件厂该脸红。",
+    "source": "HN Front Page",
+    "url": "https://news.ycombinator.com/item?id=49610538",
+    "published": "2026-09-09",
+    "uid": "dev_99265c6c"
+  }
+]
