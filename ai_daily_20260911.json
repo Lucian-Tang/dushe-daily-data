@@ -1,0 +1,164 @@
+[
+  {
+    "title": "arXiv：ConvMem——免训练、可并行，把长上下文记忆做成「卷积」",
+    "content": "长上下文是 LLM 的老大难：MemAgent 那类顺序方案靠分段读文本、迭代更新固定大小记忆，延迟高还得花大价钱做 RL 训练，容易在特定数据集上过拟合。论文提出 ConvMem：免训练、高度并行的框架，用卷积式记忆做长上下文推理，直接绕开顺序瓶颈与 RL 过拟合，训练零成本也能扛超长上下文。",
+    "quote": "省下 RL 的钱，用卷积把长上下文盘活。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2609.10441",
+    "published": "2026-09-11",
+    "uid": "ai_bdfe06c9"
+  },
+  {
+    "title": "arXiv：AgentAudit——只测一段的 agent 评测，出事找不到是哪一环",
+    "content": "现有评测大多只测一段：AgentBench 看任务完成、AgentDojo 看安全鲁棒，却覆盖不到规划、工具选择、执行、记忆、推理的完整链路，出错也定位不到具体环节。AgentAudit 顺着整条执行轨迹打分，覆盖指令完整性、规划器、记忆、工具选择、调用与正确性等十个能力、基础、安全与行为维度，把「哪一步坏了」指出来。",
+    "quote": "评测只测一段，出事当然找不到哪一环。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2609.09875",
+    "published": "2026-09-11",
+    "uid": "ai_1f9235bc"
+  },
+  {
+    "title": "arXiv：RD-Forget——该忘的不忘，过时事实专坑现状回答",
+    "content": "持续型语言 agent 既要长期保存经验，又得让每次回答只采信适合当前问题的证据——被取代的旧事实会误导现状回答，却可能是历史查询的关键。论文提出免训练的 RD-Forget：保留源档案存放观测，用一个查询条件下的「记忆视图」控制其对当前答案的影响，冻结的模型策展器负责提取相关证据、归入语义槽。",
+    "quote": "该忘的不忘，过时事实专坑现状回答。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2609.10263",
+    "published": "2026-09-11",
+    "uid": "ai_b48406e7"
+  },
+  {
+    "title": "arXiv：子智能体 vs Agent Skills——长任务里可复用知识该由谁执行",
+    "content": "让语言模型 agent 用好可复用知识库做长程任务，难在哪？主流做法是把 skill 包（多文件指令、脚本、资源）塞进上下文，指望 agent 照做，但任务一长就变得脆弱：上下文越膨胀，推理质量越下降。论文把「子智能体」与「agent skills」两种执行路径摆上台面，研究长程任务下可复用知识究竟该打包进上下文还是交给独立智能体执行。",
+    "quote": "skill 包越塞越脆，长任务专治各种自信。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2609.09233",
+    "published": "2026-09-11",
+    "uid": "ai_abc451b4"
+  },
+  {
+    "title": "arXiv：Belief-State Engine——部分可观测一上来，agent 就开始瞎下注",
+    "content": "LLM agent 能流畅输出动作序列，一旦环境变成部分可观测就露馅：模糊反馈逼它过早下注，一条信息量大的观测就把不确定性压到错误假设上，历史一长策略还会漂移。论文把病根归结为「历史条件策略缺少对隐藏状态的显式信念」，提出 Belief-State Engine 作为架构级修补，给 agent 装上能维护并更新信念状态的引擎。",
+    "quote": "部分可观测一上来，agent 就开始瞎下注。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2609.10036",
+    "published": "2026-09-11",
+    "uid": "ai_bf5b0ed6"
+  },
+  {
+    "title": "Cognition 发布 SWE-2：差一点追平 Fable 5.1，却便宜 64%",
+    "content": "Cognition 发布新一代编码模型 SWE-2，主打能力与成本的双向帕累托前沿：FrontierCode 1.1 Main 拿下 50.0%，距 Fable 5.1 仅差一个点，成本却低 64%。官方称首次把 RL 扩展到万亿参数级别，并新增一种能在单次训练里覆盖所有推理强度档位的 RL 算法，让「更强」和「更便宜」不再二选一。",
+    "quote": "差一点追平、便宜 64%，这波卷的是成本。",
+    "source": "Cognition Blog (HN)",
+    "url": "https://cognition.com/blog/swe-2",
+    "published": "2026-09-11",
+    "uid": "ai_c00a4731"
+  },
+  {
+    "title": "Magic：没有十万卡，靠算法把预训练省出 10 倍算力",
+    "content": "前沿预训练常被说成大厂专属游戏。Magic 给出另一条路——算法效率：其预训练配方号称比领先开源基座模型节能 >10 倍，用约 50 分之一的 FLOPs 就追平 DeepSeek V4 Pro Base，约为 GPT-3 预训练算力的一半，折合 GB200 上约 50 万美元；再放大 10 倍（约 400 万美元）后，在公开基准上明显超越所有开源基座模型。",
+    "quote": "没十万卡就拼算法，50 分之一个 GPT-3 追平。",
+    "source": "Magic Blog (HN)",
+    "url": "https://magic.dev/blog/pretraining",
+    "published": "2026-09-11",
+    "uid": "ai_b561dcef"
+  },
+  {
+    "title": "TechCrunch：填表和投诉变简单后，AI agent 正刷爆公共服务",
+    "content": "随着 AI 让填表、写投诉变得轻而易举，全球各地的公共服务正遭遇申请量与其他请求的暴涨。文章讨论当 AI agent 替人自动提交政府表单、批量发起投诉时，原本按人工节奏设计的公共系统面对海量请求，既带来效率，也带来挤兑与治理难题。文章指出，自动化放大了「声音」的规模，也让公共服务的排队、审核与公众信任面临全新考验。",
+    "quote": "agent 批量交作业，政府窗口先崩为敬。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/09/10/ai-agents-are-flooding-public-services-with-new-requests/",
+    "published": "2026-09-11",
+    "uid": "ai_9077f2bc"
+  },
+  {
+    "title": "TechCrunch：OpenAI 把一位「AI 末日论者」请进了董事会",
+    "content": "专注 AI 对齐、主张让 AI 系统处于人类控制之下的知名研究者 Paul Christiano，加入 OpenAI 董事会。就在 Anthropic 研究员离职警告「自我改进 AI 可能杀死所有人」的风口上，OpenAI 把一位长期关注生存风险的「AI 末日论者」请进最高决策层，被外界读作安抚与对冲信号。",
+    "quote": "一边警告灭世，一边把末日论者请进董事会。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/",
+    "published": "2026-09-11",
+    "uid": "ai_691cbed1"
+  },
+  {
+    "title": "interconnects：一次离职，把闷烧的 AI 恐惧点燃成野火",
+    "content": "Nathan Lambert 复盘「诡异的一周」：随着 AI 变强，越来越多人开始严肃对待 AI 安全，但没人料到最终被大众接受的竟是最极端的风险观——中等概率的「大规模灭绝」。Anthropic 研究员的一次离职，把原本闷烧的 AI 恐惧浇成了野火，他认为 AI 世界接下来要变天，极端风险叙事正在主流化。",
+    "quote": "风险论越极端越出圈，闷烧的恐惧被浇了油。",
+    "source": "Interconnects (HN)",
+    "url": "https://www.interconnects.ai/p/one-resignation-turned-the-embers",
+    "published": "2026-09-11",
+    "uid": "ai_702bc0dd"
+  },
+  {
+    "title": "V2EX：openai，我 qnmd！花 Astra 的钱给我 5.5 mini 的模型",
+    "content": "V 友怒喷 OpenAI：花着 Astra 档位的钱，却被塞了 5.5 mini 的模型；环境搞坏了紧急修复，结果直接不给用。月费 1500 美元换来这种体验，帖子里附了三张截图当证据，标题直接开骂。评论多是对前沿模型「偷偷降配、体验滑坡」的共鸣与吐槽。",
+    "quote": "花 Astra 的钱，用 5.5 mini 的命。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1241024",
+    "published": "2026-09-11",
+    "uid": "ai_6e1fae0c"
+  },
+  {
+    "title": "V2EX：ChatGPT 充值频频翻车，礼品卡封号、风控要美区信用卡",
+    "content": "V 友求助给 ChatGPT 充值：Apple 礼品卡这条路已经走不通——旧美区 Apple ID 因使用不慎被封、连带账号作废；新注册的 Apple ID 又触发风控，被要求绑定美区地址对应的信用卡，而人没出过国根本办不了。现在连免费软件都下载不了，只好全网求救还有无可行方案，评论区又是一堆被封号的血泪史。",
+    "quote": "充个值像闯关，礼品卡封号、风控要信用卡。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1240984",
+    "published": "2026-09-11",
+    "uid": "ai_730a7e32"
+  },
+  {
+    "title": "GitHub 热榜：superpowers——给编码 agent 的一套「软件开发方法论」",
+    "content": "Superpowers 是一个面向编码 agent 的完整软件开发方法论，构建在一组可组合的 skills 与初始指令之上，确保 agent 真的用上它们。仓库用 Shell 编写，覆盖从头脑风暴、编码到 SDLC 的全流程，主打「subagent 驱动的开发」；已适配 Claude Code、Codex、Cursor、Gemini CLI 等主流宿主，堪称 agent 工作流模板。",
+    "quote": "agent 不缺能力，缺的是有人告诉它先干啥后干啥。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/obra/superpowers",
+    "published": "2026-09-11",
+    "uid": "ai_d2b5e676"
+  },
+  {
+    "title": "GitHub 热榜：CloddsBot——横跨 1000+ 市场的自主 AI 交易 agent",
+    "content": "CloddsBot 是一个开源自主 AI 交易 agent，横跨 Polymarket、Kalshi、Binance、Hyperliquid 等 1000 多个市场：自己扫价找 edge、瞬时执行、你睡觉时它盯风险。基于 Claude 构建、自托管，自带「agent 商务协议」支持机器对机器支付。它把预测市场、加密现货与永续合约塞进同一个自动交易大脑，也让「AI 替人管钱」的风险摆上台面。",
+    "quote": "让 AI 帮你盯盘，赚了夸它，亏了也只能怪自己。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/alsk1992/CloddsBot",
+    "published": "2026-09-11",
+    "uid": "ai_c656d444"
+  },
+  {
+    "title": "GitHub 热榜：diagram-design——给 coding agent 备了 38 种图表模板",
+    "content": "diagram-design 为 Claude Code、Codex、Pi 等编码 agent 提供 38 种编辑级图表类型，全部输出自包含的 HTML + SVG，不依赖任何外部渲染。作者立了三条规矩：不要阴影、不要 Mermaid 那种自动排版的「slop」、不要丑图。相当于给 agent 补上一套可视化设计品味，让生成的架构图、流程图能直接进正式文档，而不是凑合看。",
+    "quote": "agent 画图终于不用再忍受 Mermaid 的塑料审美。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/cathrynlavery/diagram-design",
+    "published": "2026-09-11",
+    "uid": "ai_919a5f86"
+  },
+  {
+    "title": "Dev.to：AI 编程别停在「生成代码」——用 Rust 搭一条计划到复盘的闭环",
+    "content": "多数 AI 编程示例止步于生成代码：给个 prompt、返回实现、打印结果就完事。作者认为代码只有写进仓库、编译、测试、评审之后才有价值，于是用 Rust 造了 Loop Engine，把流程做成 计划 → 编辑 → 验证 → 评审 → 反思 的闭环，让 agent 每一步都落到真实工程动作上，而不是产出一段看起来很对、却孤立于项目之外的代码。",
+    "quote": "生成代码只是起点，能编译能过评审才算交作业。",
+    "source": "Dev.to",
+    "url": "https://dev.to/anggbchtr/building-a-repository-aware-ai-coding-loop-in-rust-1ef5",
+    "published": "2026-09-11",
+    "uid": "ai_7bc30193"
+  },
+  {
+    "title": "Dev.to：印尼开发者造 SAPA——给中小商家当反诈哨兵的 AI agent",
+    "content": "印尼网商每天收到大量诈骗消息：假冒电商平台的钓鱼、索要 OTP，或假买家发转账截图催发货。开发者基于 Hermes 框架做了 AI agent SAPA（Scam Analysis and Protection Assistant）：用户粘贴可疑消息，它返回风险分、命中的诈骗特征与具体应对建议。关键决策是把风险评分交给确定性规则而非 LLM——模型调用慢、贵且不稳，反诈场景更该可复现、可解释。",
+    "quote": "反诈这么要命的事，还是别让模型自由发挥。",
+    "source": "Dev.to",
+    "url": "https://dev.to/naufalnazya/membangun-sapa-ai-agent-pendeteksi-pesan-penipuan-untuk-umkm-indonesia-562f",
+    "published": "2026-09-11",
+    "uid": "ai_014c0b90"
+  },
+  {
+    "title": "博客园：DeepSeek V4.1 Flash 发布，V4 Pro 四天后正式下线",
+    "content": "DeepSeek 9 月 10 日官宣 V4.1 Flash 并启用新定价，罕见放话：在性能、费用、速度、总用时上全面超越 V4 Pro。V4 Pro 将于 9 月 14 日 12:00 下线，届时请求自动路由到 V4.1 Flash 并按新价计费；旧版 V4 Flash 与视觉实验版同步下线，文字与图片处理并入同一个主力 API 模型。新模型重构结构，KV Cache 压到约原来的四分之一。",
+    "quote": "自家 Flash 把 Pro 卷下岗，旗舰这词得慎用。",
+    "source": "博客园",
+    "url": "https://www.cnblogs.com/xiaobaiysf/p/22924471",
+    "published": "2026-09-11",
+    "uid": "ai_d841a6de"
+  }
+]
