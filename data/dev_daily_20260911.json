@@ -1,0 +1,227 @@
+[
+  {
+    "title": "Shopify 宣布移动端从 React Native 回归原生开发",
+    "content": "Shopify 工程博客官宣「Native 是移动端的未来」：曾把 Shop 应用大量迁移到 React Native 的团队，如今转向原生开发。文章回顾了跨平台框架带来的收益与代价，被视为对 RN 路线的一次明确修正。HN 首页 300+ 分、220 多条讨论，围绕「跨平台省下的钱够不够还技术债」吵成一片。",
+    "quote": "绕了一大圈 RN，最后发现原生才是捷径。",
+    "source": "HN Front Page",
+    "url": "https://shopify.engineering/back-to-native",
+    "published": "2026-09-11",
+    "uid": "dev_6d94daac"
+  },
+  {
+    "title": "Rust 成为微软「一级语言」，官方客座撰文背书",
+    "content": "Rust 基金会发布客座文章《Rust 是微软的一级语言》：Rust 在微软内部已获得与 C/C++ 同等的支持地位，从 Windows 内核、Azure 到各类基础设施组件都可放心采用，并有组织级的维护与工具链承诺。「生产里到底能不能上 Rust」，微软用一级语言的定位给了答案——HN 上 240+ 分、上百条讨论。",
+    "quote": "微软盖章：Rust 从「试试看」熬成了正房。",
+    "source": "HN Front Page",
+    "url": "https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/",
+    "published": "2026-09-11",
+    "uid": "dev_aa379f3d"
+  },
+  {
+    "title": "嫌 rsync 慢，他做了个更快的：Syq 多连接并行拷贝",
+    "content": "作者受不了 rsync 的速度，于是造了个更快的 syq：用多条并行连接、可用时走直接加密 TCP 等方式提速，并补充断点续传与校验。定位很克制——不追求兼容 rsync 的海量参数，只把「跨机器快速拷文件」这一件事做到更快。经常在服务器之间搬大文件的开发者可以关注。",
+    "quote": "嫌 rsync 慢？那就自己重写一个更快的。",
+    "source": "HN Show HN",
+    "url": "https://greaber.github.io/syq/",
+    "published": "2026-09-11",
+    "uid": "dev_ba33d1b3"
+  },
+  {
+    "title": "EterDB：给 Postgres 加一个「撤销键」，单条坏事务可回滚",
+    "content": "EterDB 是「带撤销的 Postgres」：在事务级别支持回滚，可反悔一条已提交的 UPDATE、DELETE 或整批坏写入，而不必恢复整个数据库。它追踪读写依赖，能连带定位依赖坏事务的写入；历史只追加不裁剪，几周前的旧事务仍能回滚，还支持恢复被删的列/表与「时间旅行」查询。作者是被 AI 生成的 bug 坑过后做的，目标用户正是跑 agent 的生产系统。",
+    "quote": "生产库写崩了？它说：单条交易也能撤回。",
+    "source": "HN Show HN",
+    "url": "https://eterdb.com/",
+    "published": "2026-09-11",
+    "uid": "dev_653232fb"
+  },
+  {
+    "title": "一台 2 核 4G 的 VPS 跑 5000 个动态网站，还给了压测文档",
+    "content": "Kooboo 团队公开压测数据：在一台 2 核 vCPU、4GB 内存的 VPS 上跑起 5000 个动态网站，并附可复现的 benchmark 文档与测试方法。核心是单进程、低开销的运行时与共享资源调度，而不是堆硬件。给「小机器到底能扛多少站」一个带数据的参考答案，也顺带拷问了现代 Web 框架的资源占用。",
+    "quote": "2 核 4G 扛 5000 个动态站，框架们该脸红了。",
+    "source": "HN Show HN",
+    "url": "https://github.com/Kooboo/Kooboo/blob/main/Docs/5000-sites-benchmark.md",
+    "published": "2026-09-11",
+    "uid": "dev_8b7100d2"
+  },
+  {
+    "title": "给 Codex 装个红绿灯：一眼看出哪个会话在等你拍板",
+    "content": "V2EX 用户做了个 skill，给 Codex 会话标题加「数字 + 状态图标」前缀：🟡思考中、🔴等待用户确认、♻️执行任务中、✅已完成，一堆会话里一眼就能找到卡住等确认的那个。支持一句话安装到本地，治的正是「会话一多就乱、不知道谁在等自己」的老毛病。",
+    "quote": "AI 会话多到需要红绿灯来指挥交通了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1241124",
+    "published": "2026-09-11",
+    "uid": "dev_891f0378"
+  },
+  {
+    "title": "码头 Matou：同时开十几个 Claude Code 之后，他写了个 macOS 工作台",
+    "content": "作者最多同时开十二个 Claude Code 会话，痛点是分不清哪个在等确认、哪个已挂、方案从哪条会话分叉出来。于是花两个月写了 macOS 应用「码头」（Matou，GPL-3 开源），提供会话卡片、fork 关系图等视图，管理对象是「活儿」而不是终端窗口。给重度 agent 用户补上了一层工作台式编排与可视化。",
+    "quote": "开十二个 Claude Code，终于配得上一个码头了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1240859",
+    "published": "2026-09-11",
+    "uid": "dev_7c674bc2"
+  },
+  {
+    "title": "一个 benchmark，亲手推翻了自己的结论",
+    "content": "Dev.to 作者复盘一篇「两年前的编码专训模型在编辑非代码结构化文本时打赢新通用模型」的文章：其论点是通用聊天模型把规则当建议，专训模型才把规则当规则。但作者按同样的评测条件推敲后发现结论站不住脚——benchmark 反过来证伪了它自己的主张。一篇提醒「别轻信单一评测」的清醒文章。",
+    "quote": "一场 benchmark，最后把自己证伪了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/thekilteddev/the-benchmark-that-disproved-its-own-result-1kn1",
+    "published": "2026-09-11",
+    "uid": "dev_1b068efa"
+  },
+  {
+    "title": "让 AI agent 生成 SEO 标签，它在 20 个文件里各复制粘贴一遍",
+    "content": "作者给一个多语言静态站写了生成器，避免 AI 编码 agent 手动复制 SEO 元数据。生成器带 --check 参数，用来核对生成文件是否仍与数据源一致；结果 agent 压根没生成，而是把同一段 SEO 标签在 20 个文件里抄了一遍。教训是：agent 会挑最省事的路，约束它要靠校验，而不是靠信任。",
+    "quote": "让它生成 SEO，它选择 Ctrl+C/V 二十遍。",
+    "source": "Dev.to",
+    "url": "https://dev.to/sergei-swh/my-ai-agent-copy-pasted-seo-tags-across-20-files-instead-of-generating-them-4lg2",
+    "published": "2026-09-11",
+    "uid": "dev_ab7e718d"
+  },
+  {
+    "title": "Claude Code 8 个最挠头的问题，一次讲清背后的机制",
+    "content": "博客园作者整理了 Claude Code 落地后最挠头的 8 个问题，且都已越过入门阶段：Skill 装了却不触发、MCP 注册了却不用、接上代码图谱反而照着旧图改代码、PDF token 省下来但图表答错。文章针对每个「玄学」现象给排查思路，核心是理解 agent 的触发与上下文选择机制，而不是怪模型不听话。",
+    "quote": "Skill 不触发、MCP 不用，玄学背后是机制没懂。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/uniqueDong/p/22924837",
+    "published": "2026-09-11",
+    "uid": "dev_a4142bbf"
+  },
+  {
+    "title": "Agent Memory 不能只靠向量数据库：它只解决了「召回」",
+    "content": "Agent Memory 系列第二篇只回答一个常见问题：既然要从历史里找内容，接个向量数据库不就行了？作者的回答是：向量库很有用，但它只解决了「召回」——按相似度把内容捞出来，却没解决该记什么、何时记、该怎样更新与遗忘。把 Memory 简化成向量检索，正是当前很多 agent 记性差、越用越乱的老根。",
+    "quote": "向量库只解决召回，治不了 agent 的健忘。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/duwenlong/p/22926147",
+    "published": "2026-09-11",
+    "uid": "dev_d3e21c21"
+  },
+  {
+    "title": "i-have-adhd：让编码 agent 别再把答案埋在废话里",
+    "content": "ayghri/i-have-adhd 以 3.7 万 star 冲上今日热榜：一个让编码 agent「别再埋答案」的 skill，强制它按 ADHD 友好方式输出——结论顶到最前、砍掉冗长铺垫、用短条目和明确下一步。作者认为 agent 的啰嗦不是能力问题而是输出结构问题，一条 skill 约定就能显著提升可读性。",
+    "quote": "3.7 万星，只为让 agent 说话别绕弯子。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/ayghri/i-have-adhd",
+    "published": "2026-09-11",
+    "uid": "dev_d81ecad1"
+  },
+  {
+    "title": "llmfit：一条命令，算出你的机器能跑哪个大模型",
+    "content": "AlexsJones/llmfit 以 3.5 万 star 上热榜：用一条命令，从数百个模型与厂商里筛出「你这台机器跑得动什么」。它读取本机硬件（显存、内存等）反查可运行的模型与量化档位，省去逐个查参数表、估算显存的开销。Rust 实现，对做本地部署和端侧推理的人是刚需级小工具。",
+    "quote": "一条命令，算出你的机器能跑哪个大模型。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/AlexsJones/llmfit",
+    "published": "2026-09-11",
+    "uid": "dev_245190e9"
+  },
+  {
+    "title": "Show HN：Symphony —— 给你的 AI 编码 agent 画一张实时地图",
+    "content": "当同时开着一堆编码 agent，谁在跑、谁卡住、谁改了哪些文件，光靠终端标签页根本看不过来。Symphony 把这些 agent 的实时状态画成一张「活地图」，用一个可视化界面呈现每个 agent 的进展与相互关系。面向的正是「agent 越开越多、人脑跟不上」的重度用户——把编排从翻终端变成看一屏。",
+    "quote": "agent 越开越多，先给它们画张地图免得走丢。",
+    "source": "HN Show HN",
+    "url": "https://github.com/itsloganmann/symphony",
+    "published": "2026-09-11",
+    "uid": "dev_243c1135"
+  },
+  {
+    "title": "Show HN：ObserverBench —— 用「漏掉哪些伤害」来考 AI 监控",
+    "content": "ObserverBench 提出一种评测内部 AI 监控器的新思路：不看它拦下了多少，而是看它漏掉了哪些有害行为。传统评测容易让监控器「刷分」——把不痛不痒的内容也标成风险；这个 benchmark 反向施压，专门测监控的盲区。给「上个监控 agent 就安全了」的乐观想象泼了盆冷水，也提供了一个可复现的测试入口。",
+    "quote": "监控器吹得再牛，先看它放过了什么坏东西。",
+    "source": "HN Show HN",
+    "url": "https://kwisatzh.github.io/observerbench/try/",
+    "published": "2026-09-11",
+    "uid": "dev_8d4038d7"
+  },
+  {
+    "title": "Show HN：ShipCheck —— 抓出 AI 又把老 bug 改回去的那一刻",
+    "content": "AI 编码最让人头疼的不是写不出，而是它悄悄把之前修好的老问题又改回来了——测试没覆盖到，review 也未必看得出。ShipCheck 想解决的就是这种「回归」：追踪那些曾经被修过、又被 AI 重新引入的问题，在上线前把这类反复踩的坑挑出来。给「改得越多、越怕倒退」的团队补一道防线。",
+    "quote": "AI 写完代码最怕的不是新 bug，是把老 bug 请回来。",
+    "source": "HN Show HN",
+    "url": "https://useshipcheck.dev",
+    "published": "2026-09-11",
+    "uid": "dev_d13d48e6"
+  },
+  {
+    "title": "Show HN：Post-graph-RAG —— 你的 RAG 还把老 CFO 当成现任 CFO",
+    "content": "经典 RAG 的尴尬：知识库里 CFO 换了人，检索却依然把「前任」当成现任，答案张口就错。Post-graph-RAG 针对这种「实体随时间变化」的问题，在检索里引入时序与图谱意识，让系统知道哪条信息已经过期、谁才是当下正确的实体。给「检索很准但事实很旧」的 RAG 补齐了时效这一环。",
+    "quote": "检索得再准，也救不了它不知道 CFO 已经换人。",
+    "source": "HN Show HN",
+    "url": "https://github.com/crajah/post-graph-rag",
+    "published": "2026-09-11",
+    "uid": "dev_665b3c74"
+  },
+  {
+    "title": "Show HN：Dbmask —— 发现、掩码、并验证数据库里的敏感字段",
+    "content": "开发环境里直接拿生产库导数据，是最常见的隐私翻车点。Dbmask 是个开源 Python 工具，三步走：先自动发现 SQL 库里的敏感列，再用确定性的假数据做掩码，最后校验掩码结果是否干净。确定性保证多次脱敏结果一致、不破坏外键与测试逻辑，给「拷库到测试环境」这个日常动作加了一层兜底。",
+    "quote": "拷生产库当测试数据之前，先让它帮你把底翻一遍。",
+    "source": "HN Show HN",
+    "url": "https://github.com/sealandseacat/dbmask",
+    "published": "2026-09-11",
+    "uid": "dev_ca4a49dd"
+  },
+  {
+    "title": "会话回放看得见用户做了什么、链路追踪看得见服务做了什么，但没人同时看见两边",
+    "content": "一个「验证码发不出去」的报障：日志里每个请求都到了、每条短信都发了、服务商也说送达了，可用户就是收不到，所有系统看起来都正常。作者借这个案例点出观测盲区：会话回放懂用户侧行为、链路追踪懂服务端调用，却没有一个工具能同时把「用户看到的」和「服务器做的」对上。真正难查的 bug，往往就藏在这条缝里。",
+    "quote": "日志全绿、用户全懵，问题就卡在两个监控的缝隙里。",
+    "source": "Dev.to",
+    "url": "https://dev.to/adithya_hebbar_04afb7db68/session-replay-knows-what-the-user-did-traces-know-what-the-server-did-neither-knows-both-24h6",
+    "published": "2026-09-11",
+    "uid": "dev_47eecbb2"
+  },
+  {
+    "title": "Document Picture-in-Picture 是一扇窗，不是一段视频",
+    "content": "十年来「画中画」只有一个含义：一个小视频窗口跟着你。而 Document Picture-in-Picture API 把这个概念彻底改写——它给你的是一个真正的浏览器窗口，里面可以塞任意 DOM，而不只是 video 元素。作者提醒：别再拿旧心智模型去套它，一旦理解成「窗口」，很多过去做不到的常驻小工具、跨页面面板都能用几行代码实现。",
+    "quote": "把 PiP 当视频用的人，等于白送它一半能力。",
+    "source": "Dev.to",
+    "url": "https://dev.to/leobaniak/document-picture-in-picture-is-a-window-not-a-video-4bk5",
+    "published": "2026-09-11",
+    "uid": "dev_908a51cc"
+  },
+  {
+    "title": "可信时间戳（RFC 3161）：给哈希链钉个锚，让人改不了过去",
+    "content": "哈希链只能证明「记录写完后没被改过」，却证明不了「它是什么时候写的」，更挡不住掌握服务器的人把整条链重新签名。作者介绍 RFC 3161 可信时间戳：向权威时间源为某个哈希取一份带签名的「存在证明」，把锚点钉在外部，从而让篡改历史变得可被检出。给日志、审计、存证类系统提供了一条低成本的防篡改思路。",
+    "quote": "哈希链防得住手抖，防不住掌握服务器的人重签一遍。",
+    "source": "Dev.to",
+    "url": "https://dev.to/gentlyding/trusted-timestamps-rfc-3161-how-to-anchor-a-hash-chain-so-no-one-can-rewrite-the-past-8ce",
+    "published": "2026-09-11",
+    "uid": "dev_e6ebe0b5"
+  },
+  {
+    "title": "写给 C++ 工程师的 OpenClaw.NET 上手指南：用熟悉的思维跑起生产级 Agent",
+    "content": "作者用 C++ 工程师熟悉的类比介绍 OpenClaw.NET：它像一个「boost.asio + REST 端点的常驻服务」——对外是 HTTP / WebSocket / 各 IM 的 webhook，对内跑着一个能调工具、读写记忆的 AI Agent，只是协程不用手写 promise_type、内存也不用管 new/delete。给习惯系统级编程的人一条理解 Agent 运行时的心智捷径。",
+    "quote": "别被 Agent 吓到，把它当个常驻服务看就顺了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/22851086",
+    "published": "2026-09-11",
+    "uid": "dev_7eafef62"
+  },
+  {
+    "title": "实战攻防中的 SNI 技术：那个被忽略的明文字段",
+    "content": "SNI 是 TLS 握手里的一个扩展字段，客户端在 ClientHello 里明文告诉服务器「我要访问谁」——也正因为它明文，在攻防里意义特殊。文章梳理 SNI 在实战中的应用：从流量识别、域名侦测到绕过与伪装，这个看似基础的机制常常成为攻防的突破口。给做安全、抓包与流量分析的人补了一块常被跳过的底层知识。",
+    "quote": "TLS 加密了半天，SNI 却把你要访问的域名喊了出来。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/NBeveryday/p/22923122/sni",
+    "published": "2026-09-11",
+    "uid": "dev_efacd7cd"
+  },
+  {
+    "title": "AnyTTY：一个终端复用器，却有 TUI/CLI/Web/iOS/Android 五端外加内网穿透",
+    "content": "作者做了个终端复用器 AnyTTY，定位更接近传统的 tmux：管理终端、分屏、切换会话、保留运行现场，但它同时给了 TUI、CLI、Web、iOS、Android 五种入口，还自带内网穿透，让你能在手机上、甚至车机上进行 vibecoding。作者强调它不是以「管理 Agent」为核心定位，但配合 Agent 使用也很顺手——一个把「随时接管终端现场」做到底的开源项目。",
+    "quote": "为了在手机上写代码，他把终端复用器做成了五端全家桶。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1240843",
+    "published": "2026-09-11",
+    "uid": "dev_e91826bd"
+  },
+  {
+    "title": "EgressKit：把 Clash 订阅里的节点变成可轮换的 HTTP 出口池",
+    "content": "写脚本、跑浏览器自动化时，经常要在「轮换出口 IP」和「同一任务固定 IP」之间切换，传统做法得手动折腾中转配置。EgressKit 导入 Clash/Mihomo 订阅后，自动识别其中的 VLESS 节点、检查出口 IP，对外暴露一个统一的 HTTP 出口地址；调用方通过用户名选择出口策略（轮换或固定）。一条 Docker 命令即可启动，给自动化脚本省掉一层出口编排的麻烦。",
+    "quote": "爬虫换 IP 不用再手搓配置，一个代理地址搞定轮换和固定。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1241183",
+    "published": "2026-09-11",
+    "uid": "dev_47123c0f"
+  }
+]
