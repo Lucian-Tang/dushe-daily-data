@@ -1,0 +1,227 @@
+[
+  {
+    "title": "OpenAI 正式发布 Agents API：把 Agent 编排收进官方文档",
+    "content": "OpenAI 上线 Agents API 官方指南，把此前散落在各家框架里的 Agent 编排能力收归官方：给出 agent 循环、工具调用、任务交接等结构的标准写法与文档。信号意义大于技术新意——头部模型厂商开始亲自定义「Agent 的写法」，第三方框架的生存空间被进一步挤压。HN 首页 319 分、168 条讨论。",
+    "quote": "官方亲自下场，Agent 框架们该想想站位了。",
+    "source": "HN Front Page",
+    "url": "https://developers.openai.com/api/docs/guides/agents-api/overview",
+    "published": "2026-09-12",
+    "uid": "dev_1808d48c"
+  },
+  {
+    "title": "Claude 开始做年龄核验：不满 18 岁不给用",
+    "content": "Anthropic 更新帮助文档，为 Claude 引入年龄保障（age assurance）机制，未满 18 岁的用户将无法使用。此举被视为对监管压力与未成年人保护的回应，也引发开发者讨论：核验的实现方式、隐私与可用性的平衡。HN 上 322 分、391 条评论，围绕「AI 是否该像烟酒一样设门槛」吵得很凶。",
+    "quote": "大模型也要查身份证了，先卡住的是未成年人。",
+    "source": "HN Front Page",
+    "url": "https://support.claude.com/en/articles/15171100-age-assurance-on-claude",
+    "published": "2026-09-12",
+    "uid": "dev_0b869770"
+  },
+  {
+    "title": "RTK 号称省 token，Quesma 用基准说它其实没省钱",
+    "content": "RTK（Rust Token Killer）在终端输出进 Agent 之前做过滤压缩，GitHub 已有 7.9 万 star，号称大幅省 token。Quesma 团队复现基准后发文反驳：在他们的成本测试里，RTK 并未带来宣称的节省，甚至可能因额外处理与上下文变化把收益抵消。一篇提醒「省 token 榜单也得自己验」的实测文，HN 首页 97 分。",
+    "quote": "省 token 的传说，一上真基准就现了原形。",
+    "source": "HN Front Page",
+    "url": "https://quesma.com/blog/does-rtk-make-ai-coding-cheaper/",
+    "published": "2026-09-12",
+    "uid": "dev_72b7bb73"
+  },
+  {
+    "title": "Show HN：别写博客了，把经验写成 Agent Skill",
+    "content": "作者原本在写一篇「写好 eval」的长文，写到一半连自己都不想读了，于是把内容改写成一个可被 Agent 调用的 skill 并开源（fafo）。核心观点很直接：与其写一篇没人看的博客，不如把方法论固化成 Agent 能直接执行的技能。给「AI 时代知识的沉淀方式」提供了一个有点反常识的答案。",
+    "quote": "博客没人看，那就把经验直接喂给 Agent。",
+    "source": "HN Show HN",
+    "url": "https://github.com/pandemicsyn/fafo",
+    "published": "2026-09-12",
+    "uid": "dev_76c7289a"
+  },
+  {
+    "title": "Show HN：Raggy —— 一条命令给本地文档做 RAG 的轻量 CLI",
+    "content": "Raggy 是一个轻量的命令行工具，直接在你本机对一堆本地文档做检索增强：不用把资料上传云端，也不用先搭一整套向量数据库，一条命令就能建索引、提问题。适合手头攒了一堆 Markdown、PDF、笔记，想快速接进自己的工作流、又不想为 RAG 折腾一大套基础设施的开发者。",
+    "quote": "本地文档做 RAG，一条命令别再搭一百个服务。",
+    "source": "HN Show HN",
+    "url": "https://github.com/paulknysh/raggy",
+    "published": "2026-09-12",
+    "uid": "dev_239c5eea"
+  },
+  {
+    "title": "Show HN：类型检查器撒了谎，把一台真实设备搞崩了",
+    "content": "作者在发布标准库新版本时踩到一个诡异的 bug：类型检查器给出了「没问题」的结论，结果运行时把一台真实设备搞崩了。文章复盘了从现象、定位到根因的完整过程，提醒大家静态检查再自信，也顶替不了真机验证——编译器点头，硬件未必同意。",
+    "quote": "类型检查器拍胸脯保证，真机当场表演崩溃。",
+    "source": "HN Show HN",
+    "url": "https://chuks.org/blog/chuks-v012-the-standard-library-release/",
+    "published": "2026-09-12",
+    "uid": "dev_a93ec9c0"
+  },
+  {
+    "title": "Show HN：AgenticCutter —— 让转录文本直接驱动本地视频剪辑",
+    "content": "AgenticCutter 是一个完全本地运行的 macOS 视频剪辑工具：它先把视频转录成文字，再让你用自然语言、基于「说了什么」来裁剪——想删掉某段废话或保留某个话题，直接照文字下指令，不用拖时间轴逐帧对齐。所有处理都在本机完成，适合处理不方便上传素材的访谈、录屏内容。",
+    "quote": "照转录文本剪视频，终于不用拖着时间轴对帧。",
+    "source": "HN Show HN",
+    "url": "https://agentic-cutter.com/en",
+    "published": "2026-09-12",
+    "uid": "dev_a2b10857"
+  },
+  {
+    "title": "Show HN：HolaOS —— 开源一个「属于自己的 Claude」工作台",
+    "content": "HolaOS 是一个开源的智能体工作台，定位是让企业能拥有自己的 Claude 式入口：连接你已经在用的系统——100 多个集成、MCP、聊天工具、应用、浏览器、本地文件——并共享记忆，任意 agent 都能在其上协作。对担心把数据和流程全交给闭源平台的公司，它提供了一个可自托管的选项。",
+    "quote": "不想全交给闭源平台？那就自己开源一个。",
+    "source": "HN Show HN",
+    "url": "https://github.com/holaboss-ai/holaOS",
+    "published": "2026-09-12",
+    "uid": "dev_10e640bc"
+  },
+  {
+    "title": "llm_wiki：把文档自动织成一座会生长的知识库",
+    "content": "LLM Wiki 是一款跨平台桌面应用，思路和传统 RAG 不同：不是每次提问都从零检索，而是让 LLM 增量地把你的文档织成一个持续维护、互相链接的知识库（wiki）。它把「检索」变成「积累」，长期用越用越厚，适合个人或小团队管理大量散落资料，今日冲上 GitHub Trending。",
+    "quote": "别再每次从零检索，让知识库自己长起来。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/nashsu/llm_wiki",
+    "published": "2026-09-12",
+    "uid": "dev_ed401f14"
+  },
+  {
+    "title": "PI-Desktop：本地优先的 AI 编码 agent 桌面端",
+    "content": "PI-Desktop 是本地优先（local-first）的 AI 编码 agent 桌面应用：Electron 外壳加 Rust 写的宿主核心，内置 pi Agent Harness，并通过「用户可安装插件」扩展能力。设计上把控制权和数据都留在本机，而不是全交给云端，是「桌面 agent 工作台」这一波里定位清晰的新项目，首次登上 GitHub Trending。",
+    "quote": "数据留在本机，agent 也该有个自己的窝。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/vastsa/PI-Desktop",
+    "published": "2026-09-12",
+    "uid": "dev_38cc426b"
+  },
+  {
+    "title": "iloader：给 iOS 侧载做个「傻瓜式」工具",
+    "content": "iloader 是一款主打易用性的 iOS 侧载（sideload）工具，目标是把装第三方应用这件对普通用户偏折腾的事做顺。相比各种参数繁杂的侧载方案，它更强调开箱即用与友好的引导。对想在自家设备上装非商店应用、又不想研究一堆工具链的用户来说是个不错的新选择，今日进入 Trending。",
+    "quote": "侧载这门手艺，终于有人负责让它变简单。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/nab138/iloader",
+    "published": "2026-09-12",
+    "uid": "dev_c5efa414"
+  },
+  {
+    "title": "做了三个月英语学习 App，最难的竟是找前 100 个用户",
+    "content": "作者 6 月离职后做出英语听力练习 App「VocReel」，Web、Android、iOS 都已支持，练法是把一句听力拆成「听—判断—看原句—再听一次」。本以为产品做扎实就不缺用户，现实却很打脸：Reddit 发帖被过滤、YouTube 首条视频只有 3 个播放，四处发布几乎没回应。他的结论是——缺的不是开发能力，而是「获客」这门从没认真学过的功课。",
+    "quote": "产品做完了，冷启动的焦虑才真正开始。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1241354",
+    "published": "2026-09-12",
+    "uid": "dev_f84739d2"
+  },
+  {
+    "title": "把 Windows 部署老站重做了一遍：装完基本不用再配",
+    "content": "作者折腾 Windows 部署优化已久，最近把站点迁到 wlite.cn，提供 Win10/11 的精简版、全量版、原版和 LTSC，外加 WinPE。每个镜像都自己装过跑过一轮，并集成了压缩、备份还原、磁盘分析、运行库、输入法等装机必备，主打「装完基本不用再自己配」，且不夹带私货。技术栈用 NodeBB 改造，前端与 SEO 自调，帖子里 99 条回复求反馈。",
+    "quote": "装机两小时的活，他想让你一步到位。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1241226",
+    "published": "2026-09-12",
+    "uid": "dev_7be44f40"
+  },
+  {
+    "title": "Octrix：在手机上远程写代码的 AI 编程 App",
+    "content": "Codex 官方手机端很好用，但不是所有人都用 Codex——接 Kimi、DeepSeek 等国产模型的用户，手机上只能啃终端，体验反人类。作者于是做了 Octrix：在 Mac 上起一个模拟 TUI 的服务，兼容 Codex、Claude Code 等十余款 CLI 工具，再通过中转服务把手机和 Mac 配对，手机端就是个聊天框。帖子正在送码，46 条回复。",
+    "quote": "手机写代码的痛点，被他用一个聊天框治了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1241311",
+    "published": "2026-09-12",
+    "uid": "dev_bf686f32"
+  },
+  {
+    "title": "给编码 Agent 写了个火山方舟联网搜索 skill，零依赖",
+    "content": "作者在 PI Coding Agent 里想加联网搜索，翻遍一圈没找到能用的火山方舟（ark）skill，索性自己写了一个。特点是零依赖——纯 Python 标准库，连 pip install 都不用；API key 自动从已配置的 models.json 里读取，装好即用；后端接的是方舟 Responses API 内置的联网内容插件。",
+    "quote": "连 pip install 都省了，才叫好 skill。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1238902",
+    "published": "2026-09-12",
+    "uid": "dev_dfb533f1"
+  },
+  {
+    "title": "把 Claude Code 跑在飞牛 NAS 上，出门用手机浏览器改代码",
+    "content": "作者把 hapi 打包成飞牛 fnOS 可以直接安装的应用：代码放在飞牛 NAS 上，飞牛自带的远程访问负责从外网连回来，hapi 提供网页界面，再在 NAS 上跑 Claude Code 或 Codex。这样一来，出门在外用手机浏览器打开飞牛地址，就能远程改代码，把家里的 NAS 变成了随身开发机。",
+    "quote": "代码放 NAS，手机浏览器一开，出门照样改。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1241405",
+    "published": "2026-09-12",
+    "uid": "dev_d4185089"
+  },
+  {
+    "title": "YAMLResume 更新：AI 翻译、智能编辑器与 Node.js API 都补齐了",
+    "content": "用 YAML 管理简历的开源工具 YAMLResume 连续发布了 v0.15、v0.16：简历内容可以放进 Git 做版本管理，并生成 PDF、HTML、Markdown 等格式。这两版补齐了多语言能力、编辑体验和 Node.js 集成，新增 AI 翻译、智能编辑器、多语言简历样例以及 Node.js API。适合想把简历当代码来维护的开发者。",
+    "quote": "简历也该进 Git，改一版就留一条 commit。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1241224",
+    "published": "2026-09-12",
+    "uid": "dev_de3a560a"
+  },
+  {
+    "title": "从 OpenAPI 生成 Karate 接口测试，别做出一堆维护债",
+    "content": "Dev.to 技术文讨论：从 OpenAPI 规范自动生成 Karate API 测试，听起来是顺手的自动化胜利，但很多团队低估了维护成本——规范一变、生成物乱套，测试反而更难伺候。作者给出几条务实做法，让「自动生成」真正省力、而不是制造新的债务，适合做接口测试与契约测试的团队参考。",
+    "quote": "自动生成的测试，养不起就成了技术负债。",
+    "source": "Dev.to",
+    "url": "https://dev.to/muthu_kumarkoodalingam/how-to-generate-karate-api-tests-from-openapi-without-creating-a-maintenance-nightmare-5131",
+    "published": "2026-09-12",
+    "uid": "dev_e77e1437"
+  },
+  {
+    "title": "加州签下全美最严 AI 聊天机器人法：到底管了什么",
+    "content": "Dev.to 文章解读加州刚签署的 AI 聊天机器人监管法案，被称为全美最严。文章梳理相关十三项立法究竟写了什么、对做 AI 产品的企业意味着哪些合规义务，比如强制披露、未成年人保护与责任边界。对面向美国市场的 AI 应用团队来说，这是一份踩在监管前沿的入门清单，可提前对照自查。",
+    "quote": "监管的靴子落地，AI 产品该补合规课了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/thefluxread/california-just-signed-americas-toughest-ai-chatbot-law-heres-whats-actually-in-it-54la",
+    "published": "2026-09-12",
+    "uid": "dev_1eaabe7d"
+  },
+  {
+    "title": "免费推理不该成为合并门禁：把没合同的模型请出 CI 关键路径",
+    "content": "作者给 CI 划了一条线：免费的推理调用可以给 PR 打注释、提建议，但绝不能成为「必须通过」的合并门禁。一旦一个免费、没有合同保障的模型握有放行投票权，CI 的因果链就断了——它挂了算谁的、限流了谁来赔、模型换版本后结果不一致又该由谁负责。结论很硬：把没合同的模型从合并关键路径上请出去。",
+    "quote": "免费模型可以提意见，但没资格决定合并。",
+    "source": "Dev.to",
+    "url": "https://dev.to/aiio_6471/free-inference-should-not-gate-a-merge-61a",
+    "published": "2026-09-12",
+    "uid": "dev_eb5870b3"
+  },
+  {
+    "title": "Tagryn：用 Tauri + Rust 打造的离线元数据工作台",
+    "content": "两张照片看着一模一样，元数据讲的故事却可能完全不同：时间戳差一点、作者字段一边有一边没、相邻的 XMP 组也对不上。Tagryn 是一个用 Tauri + Rust 打造的离线元数据工作台，专门用来查看、比对和整理这类散落的元数据。全程离线运行，适合处理在意隐私、又不放心上传的图片资产。",
+    "quote": "照片看着一样，元数据早出卖了它的来历。",
+    "source": "Dev.to",
+    "url": "https://dev.to/fgxhammer/introducing-tagryn-an-offline-metadata-workbench-built-with-tauri-and-rust-3i84",
+    "published": "2026-09-12",
+    "uid": "dev_b3530e95"
+  },
+  {
+    "title": "AI 一天能出百本书，却写不出我被 Redis 坑的三天三夜",
+    "content": "有读者问码哥：亚马逊上一堆书名和简介跟他那本很像、定价两三美元的 AI 生成书，会不会把他的书取代了？他由此写了自己被 Redis 坑过的那几天几夜，对比「AI 批量产出的书」与「真在生产里踩过坑的经验」之间的差别。结论很朴素：AI 能低成本复制知识的壳，却取代不了真刀真枪调过故障的人。",
+    "quote": "AI 能一天出一百本书，出不来你的实战经验。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/uniqueDong/p/22940181",
+    "published": "2026-09-12",
+    "uid": "dev_962ed723"
+  },
+  {
+    "title": "Skill 机制解析：从定义、触发到调用外部工具",
+    "content": "博客园一文系统拆解 Skill 机制：把它定位成「AI 调度 + 脚本执行」的分工协作模式，核心是关注点分离——大模型擅长理解意图、做判断与调度，却不擅长精确计算和复杂文件操作；于是让 AI 专注决定「何时调用哪个工具」，把重活交给确定性脚本。文章沿「定义—触发—调用外部工具」讲透这条链路，是理解 Agent 工程化的基础读物。",
+    "quote": "让模型只管调度，重活交给脚本去干。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/zjdxr-up/p/22936825",
+    "published": "2026-09-12",
+    "uid": "dev_c5530766"
+  },
+  {
+    "title": "用 Fuzz 复现 Balancer 精度舍入漏洞：23 万美元的教训",
+    "content": "复盘 2026-08-31 的 Balancer v1 攻击事件：黑客卷走约 23.4 万美元，根因是协议在舍入方向上用了「四舍五入」，而不是「对协议有利」的舍入，攻击者借精度丢失反复套利。文章用 Fuzz 实践的方式还原了漏洞的触发路径，并讲清这类舍入漏洞的测试思路与修复方向。",
+    "quote": "舍入方向选错，23 万美元就这么被抹掉了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/ACaiGarden/p/22939203",
+    "published": "2026-09-12",
+    "uid": "dev_251e2627"
+  },
+  {
+    "title": "vLLM + Nginx 搭推理集群：把调度、负载与会话保持做扎实",
+    "content": "在企业私有环境里部署大模型推理，单跑一个 vLLM 节点往往撑不住并发，还会遇到流量调度混乱、节点负载失衡、会话上下文丢失、接口缺鉴权等问题。本文基于 Ubuntu 22.04，用 Nginx 搭配 vLLM-Semantic-Router 与 vLLM-Router，一步步搭出一套能分流、能保会话、能加防护的负载均衡推理集群。",
+    "quote": "多卡多节点推理，先别让流量和会话乱跑。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/LyShark/p/22904364",
+    "published": "2026-09-12",
+    "uid": "dev_4b464045"
+  }
+]
