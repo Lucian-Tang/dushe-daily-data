@@ -1,0 +1,128 @@
+[
+  {
+    "title": "Show HN：Raggy —— 一条命令给本地文档做 RAG 的轻量 CLI",
+    "content": "Raggy 是一个轻量的命令行工具，直接在你本机对一堆本地文档做检索增强：不用把资料上传云端，也不用先搭一整套向量数据库，一条命令就能建索引、提问题。适合手头攒了一堆 Markdown、PDF、笔记，想快速接进自己的工作流、又不想为 RAG 折腾一大套基础设施的开发者。",
+    "quote": "本地文档做 RAG，一条命令别再搭一百个服务。",
+    "source": "HN Show HN",
+    "url": "https://github.com/paulknysh/raggy",
+    "published": "2026-09-12",
+    "uid": "dev_38979600"
+  },
+  {
+    "title": "Show HN：类型检查器撒了谎，把一台真实设备搞崩了",
+    "content": "作者在发布标准库新版本时踩到一个诡异的 bug：类型检查器给出了「没问题」的结论，结果运行时把一台真实设备搞崩了。文章复盘了从现象、定位到根因的完整过程，提醒大家静态检查再自信，也顶替不了真机验证——编译器点头，硬件未必同意。",
+    "quote": "类型检查器拍胸脯保证，真机当场表演崩溃。",
+    "source": "HN Show HN",
+    "url": "https://chuks.org/blog/chuks-v012-the-standard-library-release/",
+    "published": "2026-09-12",
+    "uid": "dev_d6507e99"
+  },
+  {
+    "title": "Show HN：ProofFrame —— 用 Rust/Arrow 给数据校验加一道证明",
+    "content": "ProofFrame 0.7.1 是一个基于 Rust 与 Apache Arrow 的数据校验库，还带了一份能在浏览器里直接跑的 WASM 演示。它想做的事，是把「数据对不对」从手写一堆 if 判断，升级成可组合、可复用的规则，并借 Arrow 的内存布局把校验跑得足够快。适合需要对大批量结构化数据做一致性强校验的团队。",
+    "quote": "数据校验别再堆 if，上 Rust 加 Arrow。",
+    "source": "HN Show HN",
+    "url": "https://emirhuseyin.tech/proofframe/",
+    "published": "2026-09-12",
+    "uid": "dev_bd229fbb"
+  },
+  {
+    "title": "Show HN：AgenticCutter —— 让转录文本直接驱动本地视频剪辑",
+    "content": "AgenticCutter 是一个完全本地运行的 macOS 视频剪辑工具：它先把视频转录成文字，再让你用自然语言、基于「说了什么」来裁剪——想删掉某段废话或保留某个话题，直接照文字下指令，不用拖时间轴逐帧对齐。所有处理都在本机完成，适合处理不方便上传素材的访谈、录屏内容。",
+    "quote": "照转录文本剪视频，终于不用拖着时间轴对帧。",
+    "source": "HN Show HN",
+    "url": "https://agentic-cutter.com/en",
+    "published": "2026-09-12",
+    "uid": "dev_05e054d8"
+  },
+  {
+    "title": "Show HN：HolaOS —— 开源一个「属于自己的 Claude」工作台",
+    "content": "HolaOS 是一个开源的智能体工作台，定位是让企业能拥有自己的 Claude 式入口：连接你已经在用的系统——100 多个集成、MCP、聊天工具、应用、浏览器、本地文件——并共享记忆，任意 agent 都能在其上协作。对担心把数据和流程全交给闭源平台的公司，它提供了一个可自托管的选项。",
+    "quote": "不想全交给闭源平台？那就自己开源一个。",
+    "source": "HN Show HN",
+    "url": "https://github.com/holaboss-ai/holaOS",
+    "published": "2026-09-12",
+    "uid": "dev_c0e31c8b"
+  },
+  {
+    "title": "免费推理不该成为合并门禁：把没合同的模型请出 CI 关键路径",
+    "content": "作者给 CI 划了一条线：免费的推理调用可以给 PR 打注释、提建议，但绝不能成为「必须通过」的合并门禁。一旦一个免费、没有合同保障的模型握有放行投票权，CI 的因果链就断了——它挂了算谁的、限流了谁来赔、模型换版本后结果不一致又该由谁负责。结论很硬：把没合同的模型从合并关键路径上请出去。",
+    "quote": "免费模型可以提意见，但没资格决定合并。",
+    "source": "Dev.to",
+    "url": "https://dev.to/aiio_6471/free-inference-should-not-gate-a-merge-61a",
+    "published": "2026-09-12",
+    "uid": "dev_fa1cf68b"
+  },
+  {
+    "title": "Tagryn：用 Tauri + Rust 打造的离线元数据工作台",
+    "content": "两张照片看着一模一样，元数据讲的故事却可能完全不同：时间戳差一点、作者字段一边有一边没、相邻的 XMP 组也对不上。Tagryn 是一个用 Tauri + Rust 打造的离线元数据工作台，专门用来查看、比对和整理这类散落的元数据。全程离线运行，适合处理在意隐私、又不放心上传的图片资产。",
+    "quote": "照片看着一样，元数据早出卖了它的来历。",
+    "source": "Dev.to",
+    "url": "https://dev.to/fgxhammer/introducing-tagryn-an-offline-metadata-workbench-built-with-tauri-and-rust-3i84",
+    "published": "2026-09-12",
+    "uid": "dev_290742ba"
+  },
+  {
+    "title": "if-else 想通的那一刻：一份写给进阶初学者的 5 分钟笔记",
+    "content": "一篇写给「进阶初学者」的短文，用 5 分钟把 Python 里的 if-else 讲透：不是罗列语法，而是作者真正「想通」的那一刻——条件分支本质上是在替程序做决策，把判断和动作拆开看之后，层层嵌套就不再绕人。适合刚过语法关、却总在多层判断里写迷糊的人随手一读。",
+    "quote": "if-else 想通的瞬间，代码一下就顺了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/sameerqaisar17/if-else-statements-when-i-finally-got-it-3f8d",
+    "published": "2026-09-12",
+    "uid": "dev_2c69d1b3"
+  },
+  {
+    "title": "向量检索引擎工程实践：从 Embedding 选型到混合检索",
+    "content": "向量检索是 RAG 的「心脏」，检索质量直接决定 AI 回答的上限。本文围绕企业落地时最常见的困惑——「为什么总是检索不到正确的知识」，给出一套完整的工程实践：Embedding 模型的选型、向量索引算法的取舍、混合检索的组合方式与性能优化。适合正在自建知识中枢、被召回率折磨的团队参考。",
+    "quote": "RAG 答不对，往往是检索这颗心脏先偷懒。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/hegezhou_hot/p/22940649",
+    "published": "2026-09-12",
+    "uid": "dev_8259dc73"
+  },
+  {
+    "title": "用 Fuzz 复现 Balancer 精度舍入漏洞：23 万美元的教训",
+    "content": "复盘 2026-08-31 的 Balancer v1 攻击事件：黑客卷走约 23.4 万美元，根因是协议在舍入方向上用了「四舍五入」，而不是「对协议有利」的舍入，攻击者借精度丢失反复套利。文章用 Fuzz 实践的方式还原了漏洞的触发路径，并讲清这类舍入漏洞的测试思路与修复方向。",
+    "quote": "舍入方向选错，23 万美元就这么被抹掉了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/ACaiGarden/p/22939203",
+    "published": "2026-09-12",
+    "uid": "dev_3c3acb13"
+  },
+  {
+    "title": "vLLM + Nginx 搭推理集群：把调度、负载与会话保持做扎实",
+    "content": "在企业私有环境里部署大模型推理，单跑一个 vLLM 节点往往撑不住并发，还会遇到流量调度混乱、节点负载失衡、会话上下文丢失、接口缺鉴权等问题。本文基于 Ubuntu 22.04，用 Nginx 搭配 vLLM-Semantic-Router 与 vLLM-Router，一步步搭出一套能分流、能保会话、能加防护的负载均衡推理集群。",
+    "quote": "多卡多节点推理，先别让流量和会话乱跑。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/LyShark/p/22904364",
+    "published": "2026-09-12",
+    "uid": "dev_dcc46f46"
+  },
+  {
+    "title": "给编码 Agent 写了个火山方舟联网搜索 skill，零依赖",
+    "content": "作者在 PI Coding Agent 里想加联网搜索，翻遍一圈没找到能用的火山方舟（ark）skill，索性自己写了一个。特点是零依赖——纯 Python 标准库，连 pip install 都不用；API key 自动从已配置的 models.json 里读取，装好即用；后端接的是方舟 Responses API 内置的联网内容插件。",
+    "quote": "连 pip install 都省了，才叫好 skill。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1238902",
+    "published": "2026-09-12",
+    "uid": "dev_12e25f85"
+  },
+  {
+    "title": "把 Claude Code 跑在飞牛 NAS 上，出门用手机浏览器改代码",
+    "content": "作者把 hapi 打包成飞牛 fnOS 可以直接安装的应用：代码放在飞牛 NAS 上，飞牛自带的远程访问负责从外网连回来，hapi 提供网页界面，再在 NAS 上跑 Claude Code 或 Codex。这样一来，出门在外用手机浏览器打开飞牛地址，就能远程改代码，把家里的 NAS 变成了随身开发机。",
+    "quote": "代码放 NAS，手机浏览器一开，出门照样改。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1241405",
+    "published": "2026-09-12",
+    "uid": "dev_5fd8af1a"
+  },
+  {
+    "title": "YAMLResume 更新：AI 翻译、智能编辑器与 Node.js API 都补齐了",
+    "content": "用 YAML 管理简历的开源工具 YAMLResume 连续发布了 v0.15、v0.16：简历内容可以放进 Git 做版本管理，并生成 PDF、HTML、Markdown 等格式。这两版补齐了多语言能力、编辑体验和 Node.js 集成，新增 AI 翻译、智能编辑器、多语言简历样例以及 Node.js API。适合想把简历当代码来维护的开发者。",
+    "quote": "简历也该进 Git，改一版就留一条 commit。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1241224",
+    "published": "2026-09-12",
+    "uid": "dev_2b9b9663"
+  }
+]

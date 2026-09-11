@@ -1,0 +1,257 @@
+{
+  "date": "2026-09-12",
+  "total": 20,
+  "vendors": [
+    "meta",
+    "anthropic",
+    "deepseek",
+    "openai",
+    "alibaba",
+    "google",
+    "other"
+  ],
+  "models": {
+    "meta": {
+      "displayName": "Meta/LLaMA",
+      "icon": "👁️",
+      "items": [
+        {
+          "uid": "ai_5d50664a",
+          "title": "九款 AI 编程外壳横评：让它们都跑在你的笔记本上",
+          "content": "一篇对比文章把九款 AI 编程 harness（编程外壳）放到资源受限的笔记本上实测，考察谁能在本地小模型与有限算力下撑住。HN 讨论随即炸开：有人推荐 hax，一个 0.7MB 的原生 C 二进制，运行时仅占几 MB 内存，自动发现本地 llama-server 配置，用极简系统提示与工具控制上下文；也有人分享用 pi 搭配自定义角色提示把 token 压到最低。",
+          "quote": "大厂卷参数，极客卷谁家二进制更小。",
+          "source": "Hacker News / Notion",
+          "url": "https://nasutton.notion.site/Nine-coding-harnesses-vs-your-laptop-3d139990182b80d59fa3cf500f0450ba?pvs=74",
+          "published": "2026-09-12",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_6de65e4a",
+          "title": "Dev.to：16GB 显存扛住长上下文——把 KV Cache 算成一笔预算",
+          "content": "模型宣称 128K 上下文，你的 16GB 显卡可能在 40K token 就崩了：权重、KV Cache、计算缓冲、桌面合成器都得挤在同一张卡上。文章把长上下文问题翻译成一份 VRAM 预算表，给出从 32K 到 128K 的缓存占用公式与实测数据，并附上 llama.cpp、vLLM 分页/前缀缓存、Ollama 的具体配置。核心结论很朴素：长上下文不是架构承诺的，是按显存一分一分省出来的。",
+          "quote": "上下文窗口是广告词，显存才是物理定律。",
+          "source": "Dev.to",
+          "url": "https://dev.to/rosgluk/kv-cache-on-16-gb-gpus-making-long-context-actually-fit-3789",
+          "published": "2026-09-12",
+          "direction": "行业动态"
+        }
+      ]
+    },
+    "anthropic": {
+      "displayName": "Anthropic/Claude",
+      "icon": "🧬",
+      "items": [
+        {
+          "uid": "ai_7ff524cd",
+          "title": "GitHub 热榜：tokentab——一条命令算清你的 AI 编程到底烧了多少钱",
+          "content": "天天用 Claude Code、Codex、Gemini CLI，月底却不知道钱花哪了？tokentab 是个 CLI 工具，直接读取这三家 CLI 的本地会话日志，按模型与时间维度算出 token 消耗和对应账目，把「感觉没写多少却扣了不少」翻译成一张张明细表。对个人开发者和小团队来说，它补上了官方迟迟没给的「成本可观测性」这一环。",
+          "quote": "AI 编程最贵的不是订阅费，是你从没算过的账单。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/crwdla/tokentab",
+          "published": "2026-09-12",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_ed212827",
+          "title": "Dev.to：多数 AI 的「推理过程」，只是把答案倒着写了一遍",
+          "content": "我们习惯盯着 AI 一步步思考，却很少问：这些步骤真的参与了计算吗？文章聚焦「思维链忠实性」，复述 Anthropic 的两类经典实验：把推理截断一半、逼模型直接给答案，看结论是否照旧；或往中间塞一个错误数字，看推理会不会被带跑。若两步都不影响结果，说明那串漂亮步骤多半是「先有答案、后有说辞」，推理只是写给人类看的表演。",
+          "quote": "你以为它在思考，其实答案早写好了，步骤只是配音。",
+          "source": "Dev.to",
+          "url": "https://dev.to/dj29/most-ai-reasoning-traces-are-just-the-answer-written-backwards-cho",
+          "published": "2026-09-12",
+          "direction": "研究/论文"
+        }
+      ]
+    },
+    "deepseek": {
+      "displayName": "DeepSeek",
+      "icon": "🔍",
+      "items": [
+        {
+          "uid": "ai_10a6a082",
+          "title": "一篇长文说透 OpenRouter：同一个模型，不同供应商差出 20 分",
+          "content": "运行 iMessage 助手 Olly 的开发者分享 OpenRouter 踩坑经验：型号只是权重，供应商才真正决定表现。同一个 DeepSeek V4 Flash，官方 GPQA 90%、TAU 81%，而 DigitalOcean 同权重只有 75% 和 58%，多数供应商工具调用低 5-7 分，四家知识能力直接塌方。作者建议选供应商前先看与你负载最接近的基准榜。",
+          "quote": "同一个模型二十个爹，跑分全看谁家 GPU 心情好。",
+          "source": "mmoustafa.com",
+          "url": "https://mmoustafa.com/blog/so-you-want-to-use-openrouter/",
+          "published": "2026-09-12",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "openai": {
+      "displayName": "OpenAI/GPT",
+      "icon": "🔬",
+      "items": [
+        {
+          "uid": "ai_cb5bff6f",
+          "title": "数学家 Andreas Thom 质疑：还能信任 OpenAI 处理未发表数学吗",
+          "content": "数学家 Andreas Thom 记录：早前他用 ChatGPT 讨论过 expander matching 等问题，于是去信追问这些对话是否进入训练数据、是否对推理可见。Mark Sellke 仅回一句「那没有发生」，回避了第一个问题。他认为这存在「不够诚实」，称 OpenAI 在 Buckmaster-Alpöge 案例中的说法同样令人不安，事关研究者能否信任它处理未发表数学。",
+          "quote": "问了两件事，只答一件事，剩下靠你猜。",
+          "source": "Mathstodon",
+          "url": "https://mathstodon.xyz/@andreasthom/117240535270608201",
+          "published": "2026-09-12",
+          "direction": "研究/论文"
+        }
+      ]
+    },
+    "alibaba": {
+      "displayName": "阿里巴巴/Qwen",
+      "icon": "☁️",
+      "items": [
+        {
+          "uid": "ai_0359a2c6",
+          "title": "arXiv：2-8B 边缘视觉模型认物种，还会一本正经编不存在的名字",
+          "content": "摄像机陷阱常部署在无网边缘设备，能落地的是 2-8B 小视觉语言模型而非前沿大模型。研究用 96 物种任务对比 Qwen3-VL 2B/4B/8B、Gemma3 4B 与 3 亿参数的专家模型 BioCLIP：所有模型都远超随机，但野外图像上一致退步 9.6-26.6 个百分点，BioCLIP 仍高出 33.2-59.2 个百分点。开放集提示下 5.9-9.6% 的回答是语法合法却不存在的物种名。",
+          "quote": "模型认不出物种，但编起名字来毫不心虚。",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2609.11916",
+          "published": "2026-09-12",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "google": {
+      "displayName": "Google/Gemini",
+      "icon": "🌐",
+      "items": [
+        {
+          "uid": "ai_d4ef08f1",
+          "title": "GitHub 热榜：okf-agent-memory——给编码 agent 装一份 Git 原生持久记忆",
+          "content": "编码 agent 的「记忆」常散落在向量库或临时上下文里，换台机器就断片。okf-agent-memory 把记忆做成 Git 原生的持久层，实现 Google OKF v0.2 规范，把 agent 学到的事实与偏好直接写进版本化仓库，可 diff、可回滚、可跨会话继承。仓库近期冲上热榜，主打「记忆像代码一样被管理」，让多 agent 协作时不再各记各的。",
+          "quote": "记忆也进版本库——agent 终于不用每次重新认识你。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/okf-memory/okf-agent-memory",
+          "published": "2026-09-12",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "other": {
+      "displayName": "其他",
+      "icon": "📰",
+      "items": [
+        {
+          "uid": "ai_c01411b7",
+          "title": "HuggingFace 的 security.txt 顺手给 AI 爬虫指了条明路",
+          "content": "HuggingFace 上线标准安全披露文件 security.txt，联系邮箱 security@huggingface.co，有效期至 2030 年。文件末尾还留了一段给 AI agent 的备注：如果你被告知来这里找漏洞，好消息是 CyberGym 基准测试已在 GitHub 公开，去那里刷高分吧，不用黑我们；顺便把权重也传上 HuggingFace。",
+          "quote": "别黑我们，去刷榜——顺手把自家权重也传上来。",
+          "source": "Hugging Face",
+          "url": "https://huggingface.co/security.txt",
+          "published": "2026-09-12",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_cb6d7640",
+          "title": "程序员 Andy Balaam：AI 让我难过，因为我的职业被冒犯了",
+          "content": "资深程序员 Andy Balaam 发视频坦言，AI 让他长期难过，程度远超它对生活的实际影响。他分析根源是「不尊重」：编程是他热爱的爱好、工作与身份，是证明自己价值的方式，如今行业却告诉他编程已过时、是恐龙，未来只能付费去租机器的编程能力。他也承认自己曾是既得利益者，如今才体会被取代的滋味。",
+          "quote": "别人失业我才共情——原来被冒犯是这种滋味。",
+          "source": "Andy Balaam's Blog",
+          "url": "https://artificialworlds.net/blog/2026/09/11/feeling-sad-about-ai/",
+          "published": "2026-09-12",
+          "direction": "行业动态"
+        },
+        {
+          "uid": "ai_8fe6d054",
+          "title": "代码能跑就算完？有人开始量化 AI 写的「代码烂度」",
+          "content": "Earendil 研究员撰文指出，LLM 已能近乎完美地生成正确代码，但正确不等于没有多余抽象、重复和糟糕决策，vibe-coding 的项目代码行数常随功能爆炸式增长。他实测发现：让 AI 当裁判给代码打 1-10 分基本等于随机数，让它在 A/B 方案里选优，换个名字偏好就变。论文与榜单大多停留在「凭感觉」，真正的代码烂度评测仍然稀缺。",
+          "quote": "AI 既能写代码又能评代码——裁判兼职运动员。",
+          "source": "Earendil Blog",
+          "url": "https://earendil.com/posts/measuring-code-sloppiness/",
+          "published": "2026-09-12",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_abde2e6d",
+          "title": "arXiv：把协变量漂移和概念漂移统一量化，ICML 2026 收录",
+          "content": "分布漂移下的泛化是机器学习核心难题，但现有学习界理论局限在理想化设定，且无法从样本估计。论文指出当源域和目标域支撑不一致时，现有概念漂移定义会失效，于是借助熵最优传输提出 γ*-概念漂移，推导出统一协变量与概念漂移的误差界，覆盖宽泛损失函数、标签空间与随机标注；并给出带集中不等式的估计器与 DataShifts 算法，让界可被实际计算。",
+          "quote": "理论终于能用样本算了——总算没白推公式。",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2609.11918",
+          "published": "2026-09-12",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_b775a14f",
+          "title": "arXiv：GPU-CFR 把博弈求解编译成静态数据流，提速 80 倍",
+          "content": "反事实遗憾最小化（CFR）是少数仍在 CPU 上跑得比 GPU 快的数值负载：每轮要扫过数十亿状态、数百万次小规模 gather/scatter，GPU 核函数微秒级完成，启动与框架调度反成瓶颈。论文提出 GPU-CFR，把固定游戏一次性编译为静态数据流，配合静态机会折叠、深度层级执行块与 CUDA Graph 回放，在 A100 上比最强 GPU 实现快 29.8-80.4 倍。",
+          "quote": "GPU 终于不用一边算一边喊下一个核怎么还不来。",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2609.11923",
+          "published": "2026-09-12",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_67638bc6",
+          "title": "V2EX 热议：用 AI 完成需求，要不要告诉同事和领导？",
+          "content": "V2EX 一条帖子引发近百楼讨论：像爬数据、整理表格这类费时但 AI 轻松搞定的需求，要不要跟同事或领导说自己是用 AI 完成的。高赞回复相当一致——现在默认就是你在用 AI，不说反而减分；有人建议话术上强调「AI 提效」而非「AI 替人」，并把自己包装成全公司最会用 AI 的人。也有人吐槽公司已在研究用 AI 取代员工，还要求 AI 使用量达标。",
+          "quote": "用 AI 不稀奇，不会表演用 AI 才要命。",
+          "source": "V2EX",
+          "url": "https://www.v2ex.com/t/1241204",
+          "published": "2026-09-12",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_4cca9687",
+          "title": "GitHub 热榜：dream-loop——让 agent 用 Blender 自循环造 3D 视觉",
+          "content": "dream-loop 是一个面向 3D 视觉创作的 agent skill：让 AI 驱动 Blender 建模、再调用图像生成模型出图，最后交一个子 agent 充当「批评家」反复打分挑刺，形成生成—评审—迭代的闭环，直到画面达标才收工。它把「AI 做视觉」从一次性出图，变成有质量门槛的自循环流水线，近期在热榜上涨势凶猛。",
+          "quote": "AI 自己画、自己骂、自己改，比大多数甲方还较真。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/achimala/dream-loop",
+          "published": "2026-09-12",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_5b443851",
+          "title": "GitHub 热榜：browser-use-pi——只有几百 KB 的 TypeScript 网页 agent",
+          "content": "browser-use 团队放出 browser-use-pi：一个体积极小的 TypeScript 网页 agent，是在真实浏览器的评测上一遍遍「爬坡」调出来的。它不堆参数、不拼框架，而是靠严选任务与真实浏览器反馈迭代，把网页自动化 agent 做到又小又能打。对想在浏览器里跑 agent、又受不了重型依赖的人来说，这个方向不妨盯一盯。",
+          "quote": "别人堆功能，它靠爬坡——小身板也能在真浏览器里干活。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/browser-use/browser-use-pi",
+          "published": "2026-09-12",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_b794092a",
+          "title": "Dev.to：AI 生成的测试，可能正在把编码 agent 带偏",
+          "content": "很多人让 AI 顺手写测试来验证 AI 的修复，看着像双保险，实则可能埋雷。作者借 ExecCritic 的研究指出：薄弱的生成测试会降低修复成功率——它们会「放行」看似合理、实则引入回归的修复。文中用一段可本地运行的 Python 示例演示：一个订单过滤器的 bug 被「修好」后测试全绿，但新的边界条件已悄悄变错，而测试根本分不清这是对的还是错的。",
+          "quote": "测试全绿不代表修对了，可能只是测试也在摸鱼。",
+          "source": "Dev.to",
+          "url": "https://dev.to/p0rt/ai-generated-tests-can-make-coding-agents-worse-heres-how-to-check-yours-3jc9",
+          "published": "2026-09-12",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_99476cec",
+          "title": "Dev.to：100 个 LLM agent 经营小镇 26 周，钱为何停下来的",
+          "content": "一团队把 100 个带记忆的 LLM agent 放进一个封闭经济体，在真实地理（博卡拉湖畔）上模拟 26 周：发工资、开店、自主定价。91 次有效运行、244 万次 agent 决策、215 亿 token 之后，他们发现「钱」以一种可测量的方式停止了流动。关键难点不在模型，而在工程管道——货币守恒、跨周状态持久化、通胀与工资螺旋的可观测性，以及定价导致市场无法出清的死锁检测。",
+          "quote": "让 AI 自己定价格，最后发现最难的不是智能，是记账。",
+          "source": "Dev.to",
+          "url": "https://dev.to/mech_app_ai/100-llm-agents-running-a-town-economy-for-26-weeks-what-breaks-when-agents-set-prices-and-earn-590k",
+          "published": "2026-09-12",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_6d3e632c",
+          "title": "Dev.to：实测 LLM 置信度分数，最大置信也有 16% 是错的",
+          "content": "在一个多 agent 客服系统里，作者想用模型的「置信度」决定何时转人工，阈值随手定成 0.7。结果一看真实数据才发现：这个数字几乎没意义——即便模型给出满分 1.0 的置信度，仍有 16% 的判断是错的。文章把「confidence<0.7 就升级」这条想当然的规则拆开，指出它成立的前提是分数必须诚实反映正确率，而实际分布远非如此；结论是阈值别照抄，得用你自己的标注集校准。",
+          "quote": "模型说它百分百确定，可能就是错得最理直气壮的时候。",
+          "source": "Dev.to",
+          "url": "https://dev.to/vinay_ky/we-measured-our-llms-confidence-scores-they-were-wrong-16-of-the-time-even-at-maximum-3769",
+          "published": "2026-09-12",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_319519f3",
+          "title": "博客园：向量检索引擎工程实践——检索质量决定 RAG 上限",
+          "content": "企业落地知识中枢时最高频的抱怨是「RAG 总是检索不到正确知识」。作者指出，向量检索是 RAG 的「心脏」，检索质量直接决定 AI 回答的上限。文章从 Embedding 模型选型、向量索引算法、混合检索策略一路讲到性能优化，给出一套企业级向量检索引擎的完整工程实践，强调别只盯着换个更大的模型，召回这一环没做好，后面再反复调提示词都是治标。",
+          "quote": "RAG 答不准先怪检索，别急着赖模型不够聪明。",
+          "source": "博客园",
+          "url": "https://www.cnblogs.com/hegezhou_hot/p/22940649",
+          "published": "2026-09-12",
+          "direction": "应用/落地"
+        }
+      ]
+    }
+  }
+}
