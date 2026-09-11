@@ -1,0 +1,137 @@
+[
+  {
+    "title": "OpenAI 正式发布 Agents API：把 Agent 编排收进官方文档",
+    "content": "OpenAI 上线 Agents API 官方指南，把此前散落在各家框架里的 Agent 编排能力收归官方：给出代理循环、工具调用、任务交接等结构的标准写法与文档。信号意义大于技术新意——头部模型厂商开始亲自定义「Agent 该怎么写」，第三方框架的生存空间被进一步挤压。HN 首页 319 分、168 条讨论。",
+    "quote": "官方亲自下场，Agent 框架们该想想站位了。",
+    "source": "HN Front Page",
+    "url": "https://developers.openai.com/api/docs/guides/agents-api/overview",
+    "published": "2026-09-12",
+    "uid": "dev_a2618dd2"
+  },
+  {
+    "title": "Claude 开始做年龄核验：不满 18 岁不给用",
+    "content": "Anthropic 更新帮助文档，为 Claude 引入年龄保障（age assurance）机制，未满 18 岁的用户将无法使用。此举被视为对监管压力与未成年人保护的回应，也引发开发者讨论：核验怎么做、隐私与可用性如何平衡。HN 上 322 分、391 条评论，围绕「AI 该不该像烟酒一样设门槛」吵得很凶。",
+    "quote": "大模型也要查身份证了，先卡住的是未成年人。",
+    "source": "HN Front Page",
+    "url": "https://support.claude.com/en/articles/15171100-age-assurance-on-claude",
+    "published": "2026-09-12",
+    "uid": "dev_f6002fec"
+  },
+  {
+    "title": "RTK 号称省 token，Quesma 用基准说它其实没省钱",
+    "content": "RTK（Rust Token Killer）在终端输出进 Agent 之前做过滤压缩，GitHub 已有 7.9 万 star，号称大幅省 token。Quesma 团队复现基准后发文反驳：在他们的成本测试里，RTK 并未带来宣称的节省，甚至可能因额外处理与上下文变化把收益抵消。一篇提醒「省 token 榜单也得自己验」的实测文，HN 首页 97 分。",
+    "quote": "省 token 的传说，一上真基准就现了原形。",
+    "source": "HN Front Page",
+    "url": "https://quesma.com/blog/does-rtk-make-ai-coding-cheaper/",
+    "published": "2026-09-12",
+    "uid": "dev_2d34410a"
+  },
+  {
+    "title": "Show HN：别写博客了，把经验写成 Agent Skill",
+    "content": "作者原本在写一篇「如何写好 eval」的长文，写到一半连自己都不想读了，于是把内容改写成一个可被 Agent 调用的 skill 并开源（fafo）。核心观点很直接：与其写一篇没人看的博客，不如把方法论固化成 Agent 能直接执行的技能。给「AI 时代知识该怎么沉淀」提供了一个有点反常识的答案。",
+    "quote": "博客没人看，那就把经验直接喂给 Agent。",
+    "source": "HN Show HN",
+    "url": "https://github.com/pandemicsyn/fafo",
+    "published": "2026-09-12",
+    "uid": "dev_4e558984"
+  },
+  {
+    "title": "Show HN：一个 Go 表格渲染库，全格式还坚持流式",
+    "content": "作者嫌现有 Go 表格库要么不支持多格式、要么一渲染就吃掉全部内存，干脆自己写了一个：同时输出纯文本、HTML、GFM、CSV/TSV，且把流式处理当硬指标，不为了多格式牺牲流式能力。定位非常克制的工具库，适合 CLI 里既要好看表格、又要扛大数据量的 Go 开发者。",
+    "quote": "表格要好看还得省内存，只能自己动手造。",
+    "source": "HN Show HN",
+    "url": "https://github.com/nekrassov01/table",
+    "published": "2026-09-12",
+    "uid": "dev_caaa5587"
+  },
+  {
+    "title": "llm_wiki：把文档自动织成一座会生长的知识库",
+    "content": "LLM Wiki 是一款跨平台桌面应用，思路和传统 RAG 不同：不是每次提问都从零检索，而是让 LLM 增量地把你的文档织成一个持续维护、互相链接的知识库（wiki）。它把「检索」变成「积累」，长期用越用越厚，适合个人或小团队管理大量散落资料，今日冲上 GitHub Trending。",
+    "quote": "别再每次从零检索，让知识库自己长起来。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/nashsu/llm_wiki",
+    "published": "2026-09-12",
+    "uid": "dev_48361a10"
+  },
+  {
+    "title": "PI-Desktop：本地优先的 AI 编码 agent 桌面端",
+    "content": "PI-Desktop 是本地优先（local-first）的 AI 编码 agent 桌面应用：Electron 外壳加 Rust 写的宿主核心，内置 pi Agent Harness，并通过「用户可安装插件」扩展能力。设计上把控制权和数据都留在本机，而不是全交给云端，是「桌面 agent 工作台」这一波里定位清晰的新项目，首次登上 GitHub Trending。",
+    "quote": "数据留在本机，agent 也该有个自己的窝。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/vastsa/PI-Desktop",
+    "published": "2026-09-12",
+    "uid": "dev_07733eec"
+  },
+  {
+    "title": "iloader：给 iOS 侧载做个「傻瓜式」工具",
+    "content": "iloader 是一款主打易用性的 iOS 侧载（sideload）工具，目标是把装第三方应用这件对普通用户偏折腾的事做顺。相比各种参数繁杂的侧载方案，它更强调开箱即用与友好的引导。对想在自家设备上装非商店应用、又不想研究一堆工具链的用户来说是个值得关注的新选择，今日进入 Trending。",
+    "quote": "侧载这门手艺，终于有人负责让它变简单。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/nab138/iloader",
+    "published": "2026-09-12",
+    "uid": "dev_432df04c"
+  },
+  {
+    "title": "做了三个月英语学习 App，最难的竟是找前 100 个用户",
+    "content": "作者 6 月离职后做出英语听力练习 App「VocReel」，Web、Android、iOS 都已支持，练法是把一句听力拆成「听—判断—看原句—再听一次」。本以为产品做扎实就不缺用户，现实却很打脸：Reddit 发帖被过滤、YouTube 首条视频只有 3 个播放，四处推广几乎没回应。他的结论是——缺的不是开发能力，而是「获客」这门从没认真学过的功课。",
+    "quote": "产品做完了，冷启动的焦虑才真正开始。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1241354",
+    "published": "2026-09-12",
+    "uid": "dev_4840ac89"
+  },
+  {
+    "title": "把 Windows 部署老站重做了一遍：装完基本不用再配",
+    "content": "作者折腾 Windows 部署优化已久，最近把站点迁到 wlite.cn，提供 Win10/11 的精简版、全量版、原版和 LTSC，外加 WinPE。每个镜像都自己装过跑过一轮，并集成了压缩、备份还原、磁盘分析、运行库、输入法等装机必备，主打「装完基本不用再自己配」，且不夹带推广。技术栈用 NodeBB 改造，前端与 SEO 自调，帖子里 99 条回复求反馈。",
+    "quote": "装机两小时的活，他想让你一步到位。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1241226",
+    "published": "2026-09-12",
+    "uid": "dev_5051f600"
+  },
+  {
+    "title": "Octrix：在手机上远程写代码的 AI 编程 App",
+    "content": "Codex 官方手机端很好用，但不是所有人都用 Codex——接 Kimi、DeepSeek 等国产模型的用户，手机上只能啃终端，体验反人类。作者于是做了 Octrix：在 Mac 上起一个模拟 TUI 的服务，兼容 Codex、Claude Code 等十余款 CLI 工具，再通过中转服务把手机和 Mac 配对，手机端就是个聊天框。帖子正在送码，46 条回复。",
+    "quote": "手机写代码的痛点，被他用一个聊天框治了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1241311",
+    "published": "2026-09-12",
+    "uid": "dev_642026b1"
+  },
+  {
+    "title": "从 OpenAPI 生成 Karate 接口测试，别做出一堆维护债",
+    "content": "Dev.to 技术文讨论：从 OpenAPI 规范自动生成 Karate API 测试，听起来是顺手的自动化胜利，但很多团队低估了维护成本——规范一变、生成物乱套，测试反而更难伺候。作者给出几条务实做法，让「自动生成」真正省力、而不是制造新的债务，适合做接口测试与契约测试的团队参考。",
+    "quote": "自动生成的测试，养不起就成了技术负债。",
+    "source": "Dev.to",
+    "url": "https://dev.to/muthu_kumarkoodalingam/how-to-generate-karate-api-tests-from-openapi-without-creating-a-maintenance-nightmare-5131",
+    "published": "2026-09-12",
+    "uid": "dev_118ed567"
+  },
+  {
+    "title": "加州签下全美最严 AI 聊天机器人法：到底管了什么",
+    "content": "Dev.to 文章解读加州刚签署的 AI 聊天机器人监管法案，被称为全美最严。文章梳理相关十三项立法究竟写了什么、对做 AI 产品的企业意味着哪些合规义务，比如强制披露、未成年人保护与责任边界。对面向美国市场的 AI 应用团队来说，这是一份踩在监管前沿的入门清单，值得提前对照自查。",
+    "quote": "监管的靴子落地，AI 产品该补合规课了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/thefluxread/california-just-signed-americas-toughest-ai-chatbot-law-heres-whats-actually-in-it-54la",
+    "published": "2026-09-12",
+    "uid": "dev_77731ba0"
+  },
+  {
+    "title": "AI 一天能出百本书，却写不出我被 Redis 坑的三天三夜",
+    "content": "有读者问码哥：亚马逊上一堆书名和简介跟他那本很像、定价两三美元的 AI 生成书，会不会把他的书替代了？他由此写了自己被 Redis 坑过的那几天几夜，对比「AI 批量产出的书」与「真在生产里踩过坑的经验」之间的差别。结论很朴素：AI 能低成本复制知识的壳，却替代不了真刀真枪调过故障的人。",
+    "quote": "AI 能一天出一百本书，出不来你的实战经验。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/uniqueDong/p/22940181",
+    "published": "2026-09-12",
+    "uid": "dev_b8647cf6"
+  },
+  {
+    "title": "Skill 机制解析：从定义、触发到调用外部工具",
+    "content": "博客园一文系统拆解 Skill 机制：把它定位成「AI 调度 + 脚本执行」的分工协作模式，核心是关注点分离——大模型擅长理解意图、做判断与调度，却不擅长精确计算和复杂文件操作；于是让 AI 专注决定「何时调用哪个工具」，把重活交给确定性脚本。文章沿「定义—触发—调用外部工具」讲透这条链路，是理解 Agent 工程化的基础读物。",
+    "quote": "让模型只管调度，重活交给脚本去干。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/zjdxr-up/p/22936825",
+    "published": "2026-09-12",
+    "uid": "dev_0877025d"
+  }
+]
