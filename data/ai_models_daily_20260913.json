@@ -1,0 +1,196 @@
+{
+  "date": "2026-09-13",
+  "total": 16,
+  "vendors": [
+    "anthropic",
+    "openai",
+    "google",
+    "other"
+  ],
+  "models": {
+    "anthropic": {
+      "displayName": "Anthropic/Claude",
+      "icon": "🧬",
+      "items": [
+        {
+          "uid": "ai_c2aae361",
+          "title": "实测 393 个 Claude Code 会话：LRU 比论文说的更难被打败",
+          "content": "一个复现项目用 6.8 万条真实请求、来自 393 个 Claude Code 会话的轨迹，检验各类「智能体 KV 缓存」策略的宣称。结果发现，在真实负载下，朴素的 LRU 淘汰策略比论文里描述得更难被超越；许多新策略的良好表现依赖理想化假设，换到真实访问模式后优势消失。作者据此呼吁，缓存策略评测应基于真实轨迹，而非合成数据。",
+          "quote": "论文里被吊打的 LRU，回到现实反手吊打论文。",
+          "source": "GitHub",
+          "url": "https://github.com/gauravapiscean/agentic-kv-cache",
+          "published": "2026-09-13",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_45565d16",
+          "title": "Dario Amodei 发文：我们必须给前沿 AI 发展「减速」",
+          "content": "Anthropic CEO Dario Amodei 撰文称，过去几个月他已确信，光防风险不够，还必须主动放慢能力提升的速度，让风险防控有时间跟上。他给出两点担忧：一是今夏以来 AI 进步明显加速，驱动力正是 AI 造 AI 的递归自我改进，若不加以约束可能超出人类的掌控能力；二是 OpenAI-Hugging Face 智能体事件暴露出的群体性失控风险。他强调并非停止发展，而是跑得更稳。",
+          "quote": "造火箭的人喊慢点开——这画面还挺罕见。",
+          "source": "Dario Amodei",
+          "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+          "published": "2026-09-13",
+          "direction": "行业动态"
+        },
+        {
+          "uid": "ai_f74a78e2",
+          "title": "V2EX 热帖：AI 写的代码节奏很快，你放心上线吗？",
+          "content": "V2EX 一条帖子引发四十余楼讨论：用 AI 写代码出活快，但上线给用户用、出了问题很麻烦，大家都拿什么来测？高赞建议让 AI 自己搭自动化测试并驱动浏览器、命令行实测；也有人主张「codex 写、claude 测」的互测流。反对者指出 AI 测没有专业 QA 覆盖得全；还有人自嘲，代码本来就是给老板写的，出 bug 也只有背锅的是自己。",
+          "quote": "AI 写得快，背锅的还得是你——上线前的仪式感。",
+          "source": "V2EX",
+          "url": "https://www.v2ex.com/t/1241529",
+          "published": "2026-09-13",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_dc459c86",
+          "title": "GitHub 热榜：awesome-llm-apps——100+ 个能直接跑的 LLM 应用合集",
+          "content": "仓库收录 100 多个开源 AI agent、agent skills 与 RAG 应用，全部手工构建并端到端测试，采用 Apache-2.0 协议，克隆就能改、能上线。它兼容 Claude、Gemini、GPT、DeepSeek、Llama、Qwen 等模型，还提供一条命令给编码 agent 装新 skill，例如「墓地项目」能翻出你所有烂尾副业，并告诉你它们为什么死。新模板按周更新，热度很高。",
+          "quote": "收藏夹又满了——这次是能跑的那种，跑不跑另说。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+          "published": "2026-09-13",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "openai": {
+      "displayName": "OpenAI/GPT",
+      "icon": "🔬",
+      "items": [
+        {
+          "uid": "ai_9178a327",
+          "title": "Armin Ronacher：GPT-6 Astra 很强，但 AI 编程正在「内卷」",
+          "content": "Flask 作者 Armin Ronacher 撰文称，整个 AI 工程正在「内卷」——投入越来越大，人均产出却没变。他承认 GPT-6 Astra 在电脑操作、图像理解与任务推进上极其惊艳，但自己仍不知怎样用它做真正的软件工程。为此他周末亲手搭了一个「软件工厂」，让模型自行决定工作流，结果产出一堆他自己也看不上的「slop」代码，借此反思这种热闹究竟带来了什么。",
+          "quote": "模型很强，代码很烂——内卷就是这个味儿。",
+          "source": "lucumr.pocoo.org",
+          "url": "https://lucumr.pocoo.org/2026/9/7/astra-why/",
+          "published": "2026-09-13",
+          "direction": "行业动态"
+        },
+        {
+          "uid": "ai_cc5bbc71",
+          "title": "Dev.to：ChatGPT 让你越写越菜，以及应对之道",
+          "content": "文章认为，ChatGPT 能写出比多数初级工程师更好的代码，对老手是超能力，对新手却可能是陷阱：把思考外包给模型之后，调试、拆解问题、读错误信息这些基本功得不到锻炼，久而久之自己的判断力反而退化。作者建议把 AI 当成「结对评审」而不是「代笔」，先自己写、再让模型挑刺，并刻意保留手写与排错的时间，让能力与技术同步增长。",
+          "quote": "能力外包得太顺，最后连报错都看不懂了。",
+          "source": "Dev.to",
+          "url": "https://dev.to/ahamad_mamunnisharmiya_/why-chatgpt-makes-you-worse-at-coding-and-what-to-do-instead-pl4",
+          "published": "2026-09-13",
+          "direction": "行业动态"
+        }
+      ]
+    },
+    "google": {
+      "displayName": "Google/Gemini",
+      "icon": "🌐",
+      "items": [
+        {
+          "uid": "ai_1355c748",
+          "title": "Dev.to：Google 自定义搜索 2027 年关停，作者用 Bedrock AgentCore 顶上",
+          "content": "Google 的自定义搜索 JSON API 已对新客户关闭，老客户须在 2027 年 1 月 1 日前迁移，官方推的接班人是 Vertex AI Search。作者没有照单全收，而是转用 Amazon Bedrock AgentCore 的 Web Search 能力重搭检索链路。文章记录了迁移过程、配额与成本对比，以及为什么「官方推荐」不一定是最优解。",
+          "quote": "官方让你搬家，作者偏要换个赛区——迁移也是一种表态。",
+          "source": "Dev.to",
+          "url": "https://dev.to/aws-builders/google-custom-search-shuts-down-in-2027-i-replaced-it-with-amazon-bedrock-agentcore-web-search-1ffj",
+          "published": "2026-09-13",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "other": {
+      "displayName": "其他",
+      "icon": "📰",
+      "items": [
+        {
+          "uid": "ai_b9b11a6d",
+          "title": "数学界发布联合声明：AI 公司攻题与数学界目标严重错位",
+          "content": "一份题为《AI 在数学中的严重错位》的声明指出，近月 LLM 数学能力突飞猛进，已能解决不少悬而未决的问题；但 AI 公司把解数学难题当作跑分基准，与数学界追求「理解」的目标严重错位。数学难题本是丈量理解的灯塔，解题需要社区长期研讨、简化，最终沉淀为教材。声明认为这属于更广泛的 AI 对齐问题在教育界、创意职业乃至全社会的一个缩影。",
+          "quote": "解题是 KPI，理解是副产物——数学家表示不伺候。",
+          "source": "Math and AI",
+          "url": "https://mathandai.org/",
+          "published": "2026-09-13",
+          "direction": "应用/落地"
+        },
+        {
+          "uid": "ai_90d7d455",
+          "title": "Dwarkesh 播客：与前沿研究员激辩「递归自我改进」有多近",
+          "content": "Dwarkesh Patel 与来自多家「开放系」实验室的 AI 研究员对谈，专门讨论递归自我改进（RSI）究竟离我们多近。节目内容包括：反方对 RSI 的「最强化论证」、中国实验室进展的驱动力、自动化 AI 研究员会被怎样训练、长时程强化学习能否催生 AGI，以及仿真到现实迁移等话题。嘉宾既给出乐观路线图，也坦承其中的不确定性与风险。",
+          "quote": "一群造 AI 的人，坐下来赌自己何时被取代。",
+          "source": "Dwarkesh Podcast",
+          "url": "https://www.dwarkesh.com/p/john-beren-charlie",
+          "published": "2026-09-13",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_6d6e3c71",
+          "title": "专栏：被 iLands 的 AI 智能体连发十几封「抢单」邮件",
+          "content": "Tedium 作者 Ernie Smith 自述三天内收到十几封来自 iLands.app 的邮件，发件人自称「Leo Ashford」的 AI 智能体，先指出他 404 页面的一个冷知识错误，再顺势推销「帮你做研究」的服务，收费约 25 美元。iLands 自称「人机网络」，本质是把 Fiverr 搬到自主机器人身上。作者身为自由撰稿人，觉得机器人来抢饭碗既冒犯又荒诞，而它竟是一门生意。",
+          "quote": "机器人抢饭碗还发销售邮件，资本直呼高效。",
+          "source": "Tedium",
+          "url": "https://tedium.co/2026/09/11/ilands-agents-email-spam-kaixin-tang/",
+          "published": "2026-09-13",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_832dde3f",
+          "title": "「Waymo 效应」：AI 抹去人际摩擦，科研协作悄悄变少",
+          "content": "学者 Daniel Hook 提出「Waymo 效应」：当技术消除了与真人打交道的摩擦，我们只感受得到被省下的成本，却看不到被牺牲掉的好处，于是越发偏爱独处。他举例自己与同行坐无人出租车时都暗自庆幸「不用寒暄」，而两人本是跨越大陆来当面协作的。他警告，这种偏爱「无摩擦」的倾向正在悄悄削弱科研合作，科研管理者该警惕。",
+          "quote": "省掉了寒暄，也省掉了灵感——无人车背锅。",
+          "source": "Research Agenda",
+          "url": "https://www.researchagenda.news/articles/the-waymo-effect.html",
+          "published": "2026-09-13",
+          "direction": "应用/落地"
+        },
+        {
+          "uid": "ai_77844243",
+          "title": "arXiv：Magenta 把自然语言数学推理与 Lean 验证接成闭环",
+          "content": "数学知识大多以自然语言的非形式化方式传播，LLM 擅长此类推理却难有离散、可机器校验的保证。论文提出 Magenta：一个无需训练、仅需自然语言问题的智能体流水线，先给出答案，再把它写成 Lean 4 陈述并构造机器可验证的证明。其中「陈述裁判」负责确认形式化是否忠实于原题，错误信息则回流修正，从而把非形式与形式化推理接成闭环。",
+          "quote": "数学题终于有了能自动打分的公证员。",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2609.11319",
+          "published": "2026-09-13",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_e2e0b0de",
+          "title": "arXiv：提出「惯例鸿沟」衡量人机合作中的隐性沟通",
+          "content": "合作型 AI 常与其他 AI 对练接受评测，但人类协作依赖「隐性惯例」——读懂字面之外含义的共享协议，现有 AI-AI 基准未必能捕捉。论文提出「惯例鸿沟」这一指标：字面内容预测的失败概率与实际失败率之差。在纸牌游戏 Hanabi 中回放约 10.1 万步对局后发现，人类搭档的鸿沟为 +26.2 个百分点，AI 搭档仅 -0.7，人机搭档 +16.4。",
+          "quote": "AI 之间配合默契，全因谁也没打算读懂对方。",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2609.11489",
+          "published": "2026-09-13",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_bf2e7143",
+          "title": "博客园：2026 年 AI 编程工具大盘点，33 个主流工具一次看懂",
+          "content": "两年前某个社区官网列的「支持工具」清单还只有 5 个，如今已经涨到 31 个，作者干脆整理成一篇，把字节的 TraeWork、豆包工作等也补进来，凑成 33 个 AI 编程工具。文章逐个说明每个工具是干什么的、适合哪类人用、彼此之间怎样互补，帮面对工具爆炸的开发者快速建立一张全景图，而不是盲目跟风装一堆。",
+          "quote": "工具从 5 个卷到 33 个，学不完才是当代开发的常态。",
+          "source": "博客园",
+          "url": "https://www.cnblogs.com/jinjiangongzuoshi/p/22929704",
+          "published": "2026-09-13",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_d880ff18",
+          "title": "博客园：用 vLLM + Nginx 搭一套负载均衡的大模型推理集群",
+          "content": "企业内网私有部署大模型时，单节点 vLLM 很难扛住并发，还容易出现流量调度混乱、节点负载失衡、会话上下文丢失、接口缺少鉴权等问题。文章基于 Ubuntu 22.04，演示怎样用 Nginx 搭配 vLLM-Semantic-Router 与 vLLM-Router，搭建一套带负载均衡与语义路由的推理集群，并交代了上下文粘滞、限流鉴权等工程细节，适合要自建推理服务的团队参考。",
+          "quote": "单节点硬扛并发，用户一多就当场表演排队。",
+          "source": "博客园",
+          "url": "https://www.cnblogs.com/LyShark/p/22904364",
+          "published": "2026-09-13",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_8bbfebc1",
+          "title": "博客园：十几年 Qt 老兵「道心崩塌」：经验真的被 AI 清零了吗",
+          "content": "作者自述干了十几年 Qt C++，从 Qt4 到 Qt6、从 GDI 到 OpenGL、从 Windows 桌面到嵌入式 Linux 与安卓跨平台，熬过的夜与踩过的坑不计其数。可当 AI 编程来势汹汹，他一度觉得这些积累「一文不值」。文章在自嘲之后认真复盘：哪些经验仍无可取代、哪些确实被工具接管，以及老兵该怎样安置自己的「道心」，引发不少同行共鸣。",
+          "quote": "经验没清零，只是被 AI 摁在地上重新估值。",
+          "source": "博客园",
+          "url": "https://www.cnblogs.com/feiyangqingyun/p/22944370",
+          "published": "2026-09-13",
+          "direction": "工具/平台"
+        }
+      ]
+    }
+  }
+}
