@@ -1,0 +1,105 @@
+# 🛠️ 开发者日报 | 2026-09-15 (Phase B - 补充精选)
+
+## 1. 把 35KB 的前置提示词从 Opus 搬到自托管 Ollama：一路都是坑
+
+作者把一套 35KB 的大型前置提示词从 Opus 迁移到自托管的 Ollama，逐条记下过程中踩到的各种坑。文章关注点在于：提示词越大，迁到自托管模型时遇到的格式、上下文长度与指令遵循等差异就越明显，必须一条条对照、修正。适合想把本地开源模型用起来、又不想在迁移里翻车的团队参考。
+
+> 提示词搬个家，坑比模型本身还多。
+
+来源: HN Front Page | https://patrickmccanna.net/notes-on-migrating-large-prompts-away-from-anthropic-openai-to-self-hosted-llms/
+
+## 2. SDR–：开源软件无线电，可连线信号图 + Rust DSP + Web UI
+
+SDR– 是一个开源软件无线电项目，核心是一张可自由连线的信号图：各处理模块像积木一样拼接，DSP 部分用 Rust 重写以保证性能，前端则是浏览器里的 Web UI。作者把它发到 HN 上征集反馈，适合对射频、数字信号处理和实时音频管线感兴趣的开发者围观。
+
+> 把射频信号画成图，拖根线就能调。
+
+来源: HN Front Page | https://github.com/Newspicel/sdrminusminus
+
+## 3. Azure 发票抽取流水线：拿到 JSON 才是刚开始
+
+大多数 Azure AI Document Intelligence 教程都在 API 返回 JSON 那一刻结束：拿到 InvoiceTotal，跑通就算大功告成。作者指出这不过是整件事里最简单的 20%，真正的难点在于把抽取结果接进业务流水线、处理异常与人工兜底，并用 Power Automate 把整条发票处理链路真正落地跑通。
+
+> 拿到 JSON 只是热身，剩下 80% 才是活。
+
+来源: Dev.to | https://dev.to/trndigital__/building-an-invoice-extraction-pipeline-with-azure-ai-document-intelligence-and-power-automate-amb
+
+## 4. OpenAgentFlow：用「控制平面」给多 Agent 集群上系统级安全
+
+当 AI Agent 从孤立的助手变成互相连线的集群——读邮件、调 API、浏览网页——系统级安全就成了新难题。OpenAgentFlow 提出用「控制平面」架构统一管理多智能体：把权限、边界和动作收敛到一个可审计的调度层，而不是让每个 Agent 各自为政。文章拆解这一架构怎样为多 Agent 系统带来系统级的安全护栏。
+
+> Agent 一联网成军，就得有人管调度。
+
+来源: Dev.to | https://dev.to/prabhakar_chaudhary_7afe4/openagentflow-how-a-control-plane-architecture-brings-system-wide-safety-to-multi-agent-ai-44j4
+
+## 5. 同一个一行的表格解析 bug，出现在五个工具里，我修了四次
+
+项目里大量规格说明用 Markdown 表格承载，好几个工具都要读它。看似 line.split('|') 就能搞定的表格解析，却让作者踩了同一个坑：同一条一行的解析缺陷在五个独立工具里反复出现，他前后修了四次。文章复盘了这个「看起来早已解决」的问题为何一再复发，以及该怎样一次性收敛。
+
+> 一行 split 的 bug，修了四次还没完。
+
+来源: Dev.to | https://dev.to/mahirhir/the-same-one-line-table-parsing-bug-turned-up-in-five-separate-tools-i-fixed-it-four-times-4l5o
+
+## 6. 「全自动」到底要花多少代价：两天叫了五次人工
+
+作者在一台无人值守的远程机器上跑自动化系统，起初把它描述成「被动运行」。结果两天之内，它需要五次人工介入，而且没有一次是意料之外的怪情况。文章用这份真实账单说明：全自动并不是部署完就一劳永逸，维护一个无人看管的系统，隐性成本往往比想象中高得多。
+
+> 挂着「全自动」的牌子，两天叫了五回人。
+
+来源: Dev.to | https://dev.to/stubrofx/what-fully-automated-actually-costs-23a0
+
+## 7. 做了个 AI 工作日志工具，告别周五硬凑工时表
+
+每到周五下午，作者都要面对同一件烦心事：填工时表、回想这一周到底做了什么，好给 standup 和复盘交差。于是他做了个 AI 工作日志工具，自动扫描终端历史等痕迹，把散落的工作记录汇总成可以直接复述的内容，省掉靠记忆硬凑工时和日报的麻烦。
+
+> 周五填工时，不如让日志自己说话。
+
+来源: Dev.to | https://dev.to/151_aarya_2964fa91863c157/i-built-an-ai-work-logger-to-replace-clunky-timesheets-and-standup-scrambles-a0j
+
+## 8. DeepSeek Harness 最狠的不是免费，是把 spawn 子 Agent 做成了协议
+
+作者让 Claude Code 做重构，跑到一半发现它在偷偷开 subagent，一层套一层，等反应过来 token 已经烧穿三层上下文。他关心的不是「模型多聪明」，而是「谁派出去的、派了几层、还能不能再派」这类失控问题。文章由此切入 DeepSeek Harness 把 spawn 子 Agent 做成协议的设计，讨论多 Agent 的授权与可观测性。
+
+> 子 Agent 一层套一层，账单也跟着套娃。
+
+来源: 博客园 Cnblogs | https://www.cnblogs.com/uniqueDong/p/22964159
+
+## 9. HyMT2Sharp 发布：一个纯 C# 的本地翻译库，CPU 上硬跑混元翻译
+
+作者开源发布 HyMT2Sharp，一个纯 C# 的腾讯混元翻译大模型 MT2（Hy-MT2）非官方 CPU 推理实现。它不依赖 llama.cpp 等外部推理框架，直接用 .NET 在 CPU 上跑翻译，并做了较高程度的优化，目标是让 C# 项目能方便地集成本地翻译能力，而不用再挂一堆外部依赖。
+
+> 翻译模型进 .NET，全靠 C# 硬啃 CPU。
+
+来源: 博客园 Cnblogs | https://www.cnblogs.com/sdcb/p/22956801/20260913-hymt2sharp-intro
+
+## 10. 在生产环境和 AI 协作编程：别再从零搭 harness 了
+
+作者吐槽网上的 harness 工程教程几乎都在教「从零搭建」，却没人讲在既有项目里落地——动辄甩出 50 多个文件的约束目录树，占掉 200k 上下文的一半还没读完。他用字节跳动的 TRAE IDE，从一个真实接手的项目出发，演示把 AI 协作真正落进既有代码库的做法，而不是照搬一套脱离现实的骨架。
+
+> 教程教你从零搭，没人管你手里的老项目。
+
+来源: 博客园 Cnblogs | https://www.cnblogs.com/Li-runqing/p/22957886/vibe-to-harness
+
+## 11. xopc：Chrome 侧栏扩展，边读英文技术文档边问 AI
+
+作者做了个 Chrome 侧栏扩展 xopc，可以在侧边栏里和 AI 聊天，并把当前网页或选中的文字一起附加给它。出发点很具体：读英文技术文档时，翻译看懂了但概念没弄明白，还得反复复制、切窗口去追问 AI。xopc 把「边读文档边问 AI」这件事收进同一个浏览器界面，省掉来回切换。
+
+> 读文档的痛，不该靠反复切窗口来治。
+
+来源: V2EX Share | https://www.v2ex.com/t/1241991
+
+## 12. PI-Desktop：基于 Pi 做的桌面 Coding Agent，一周涨到 3.5k Star
+
+作者把 PI-Desktop 发布一周，就拿到了 GitHub 3.5k+ Star。它是一个基于 Pi 的桌面 Coding Agent 工作台，出发点很直白：Pi 本身好用，但长期干活时终端不够直观，于是把编辑器、会话与右侧文件管理都收进一个桌面界面，右侧栏的能力则由插件实现。文章重点聊了它的插件系统设计，以及为什么要做这个桌面端。
+
+> 好用的终端 agent，也想要一张看得懂的桌面。
+
+来源: V2EX Share | https://www.v2ex.com/t/1241955
+
+## 13. 丢个 HuggingFace 链接，自动打出免配环境的本地模型懒人包
+
+作者被配环境折磨得够呛：想跑个 whisper，CUDA 版本对不上、cudnn 缺文件，折腾一晚上没跑起来。他发现网上不缺懒人包，缺的是能随时出新包的办法——别人分享的包永远是固定那几个模型。于是他把方向反过来，做了一条打包流水线：丢进一个 HuggingFace 链接，就自动产出免配环境的本地模型整合包。
+
+> 与其等人发懒人包，不如把打包做成流水线。
+
+来源: V2EX Share | https://www.v2ex.com/t/1241693
