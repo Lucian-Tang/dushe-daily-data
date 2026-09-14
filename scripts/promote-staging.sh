@@ -29,7 +29,7 @@ if [ "${1:-}" = "--status" ]; then
     git diff origin/main..origin/staging --name-only 2>/dev/null || echo "  （无变更）"
     echo ""
     echo "📋 数据汇总（staging）:"
-    python3 "$SCRIPT_DIR/../scripts/morning-pipeline-check.py" --date "$(date +%Y-%m-%d)" 2>/dev/null | head -25
+    python3 "$SCRIPT_DIR/check-freshness.py" --warn 2>/dev/null | head -25
     exit 0
 fi
 
@@ -56,7 +56,7 @@ if [ "${1:-}" = "--rollback" ]; then
 fi
 
 log "=== Promote: staging → main ==="
-log "日期: $(date +%Y-%m-%d %H:%M)"
+log "日期: $(date '+%Y-%m-%d %H:%M')"
 
 # Step 1: Fetch latest
 log "[1/5] 拉取最新代码..."
@@ -67,13 +67,13 @@ if [ "${1:-}" = "--force" ]; then
     log "[2/5] ⚠️ 跳过 QA 校验（--force）"
 else
     log "[2/5] 运行 QA 校验..."
-    QA_REPORT=$(python3 "$SCRIPT_DIR/../../scripts/morning-pipeline-check.py" --date "$(date +%Y-%m-%d)" 2>&1)
+    QA_REPORT=$(python3 "$SCRIPT_DIR/check-freshness.py" --warn 2>&1)
     echo "$QA_REPORT" | tee -a "$LOG_FILE"
     
-    if echo "$QA_REPORT" | grep -q "整体状态: ✅ OK"; then
+    if echo "$QA_REPORT" | grep -q "全部通过"; then
         log "✅ QA 校验通过"
     else
-        if echo "$QA_REPORT" | grep -q "整体状态: ⚠️"; then
+        if echo "$QA_REPORT" | grep -q "⚠️"; then
             log "⚠️ QA 有警告（自动继续）"
         else
             log "❌ QA 校验失败！请检查 staging 数据后再试"
