@@ -1,0 +1,218 @@
+[
+  {
+    "title": "Mistral 联手 Mozilla：Firefox 智能窗口改由开源模型驱动",
+    "content": "Mistral 与 Mozilla 达成合作，Firefox 的 AI 浏览助手 Smart Window（Beta）改由 Mistral 模型驱动，先在法国和北美上线，英国、德国预计年内跟进。Smart Window 可梳理复杂搜索、找回被划走的重点、基于标签页溯源信息；双方表示将按地区语言、方言与文化语境微调模型，并让用户掌控自身交互数据，主打隐私、可控与选择权。",
+    "quote": "开源信仰充值成功，浏览器 AI 终于不外包给闭源了。",
+    "source": "HN Front Page",
+    "url": "https://mistral.ai/news/mistral-x-mozilla/",
+    "published": "2026-09-17",
+    "uid": "dev_fb6f7ba8"
+  },
+  {
+    "title": "苹果发布 Reference Image：给照片做「防伪认证」",
+    "content": "苹果发布 Apple Reference Image，回应 AI 生成与篡改图像难以辨真的问题。思路是建立从传感器到计算摄影软件的全链路信任，而非像 C2PA 那样仅在拍摄后附加溯源元数据——后者在编辑链任一环节都可能被攻破且无从察觉，还会把照片与设备或身份绑定带来隐私风险。苹果希望借 iPhone 的安全平台，为「照片用于证明某事真实发生」提供新的验证标准。",
+    "quote": "AI 造假太猛，苹果只能给照片上户口了。",
+    "source": "HN Front Page",
+    "url": "https://security.apple.com/blog/apple-reference-image/",
+    "published": "2026-09-17",
+    "uid": "dev_5002ff36"
+  },
+  {
+    "title": "TypeSafe AI 发布 System One 模型 Jev：不写文字却快 100 倍",
+    "content": "前 OpenAI 研究员 Diogo Almeida 创立的 TypeSafe AI 发布首个 System One 模型 Jev（早期访问）。它放弃字符串生成，专做结构化输出：输入非结构化状态，输出带类型的概率决策，号称同任务智能水平接近现有 LLM，却快两个数量级、更省，且「无法幻觉」。背后是全新模型架构、并行采样器与名为 RLCD（校准决策强化学习）的训练方法，定位是「前沿智能的函数调用」。",
+    "quote": "连话都不会说，却比谁都快——沉默是金。",
+    "source": "HN Front Page",
+    "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+    "published": "2026-09-17",
+    "uid": "dev_32cf9f14"
+  },
+  {
+    "title": "互联网档案馆回应 Wayback Machine 访问异常",
+    "content": "互联网档案馆发文回应「修好 Wayback Machine」的呼声：服务近期遭多波高流量自动化请求冲击，已上线防护并把 429（请求过多）拦截提示改得更清楚。官方承认防护有时会误伤真人，正在改进区分滥用机器人与日常用户的能力；若认为自己被误拦，可发电邮说明操作系统、浏览器与 IP，官方会逐一核查。",
+    "quote": "爬虫把档案馆爬墙了，真是自己人打自己人。",
+    "source": "HN Front Page",
+    "url": "https://blog.archive.org/2026/09/15/an-update-on-wayback-machine-access/",
+    "published": "2026-09-17",
+    "uid": "dev_523ebf7a"
+  },
+  {
+    "title": "Show HN: Inwom —— 专门对抗 AI Agent 集群攻击的安全基建",
+    "content": "Show HN 项目 Inwom 主打「对抗协同式 AI Agent 攻击」的安全基础设施。它指出传统安全擅长排查单个用户、会话、进程与请求，但 AI 让攻击单位从「一台被攻陷的机器」变成「一整个机器族群」：上千台机器以机器速度协同、并行探索、分工共享、互相适配，而传统安全往往在事件被关联起来之前毫无察觉。Inwom 的做法是实时观测海量机器行为，判断它们是否在协同作业。",
+    "quote": "以前的敌人是一个人，现在是一窝机器人，防御也得升级。",
+    "source": "HN Show HN",
+    "url": "https://www.inwom.com/",
+    "published": "2026-09-17",
+    "uid": "dev_ab3fdba6"
+  },
+  {
+    "title": "Show HN: Blue —— 给编码 Agent 的开源「治理层」",
+    "content": "Show HN 项目 Blue 定位为编码 Agent 的开源治理方案，口号是「一套 harness 统管所有」。它夹在组织策略与开发者已熟悉的 CLI 之间：Codex、Claude Code、Kimi Code、OpenCode 都能接入，开发者仍保留原生终端体验与个人配置，Blue 只在启动前处理策略校验、身份验证、扩展管理与版本控制，平台团队则可统一发布规则并查看各客户端健康状态。",
+    "quote": "给 Agent 发工牌、定规矩，不然它们真把自己当老板。",
+    "source": "HN Show HN",
+    "url": "https://bluee.sh/",
+    "published": "2026-09-17",
+    "uid": "dev_515ac8d2"
+  },
+  {
+    "title": "Show HN: 开源框架 Chert，把你的 AI Agent 送上 FaceTime 通话",
+    "content": "YC P26 团队 Chert 开源 CLI/SDK，把 AI Agent 接到实时 FaceTime 音视频通话里。Agent 的代码、人格、语音、模型与形象全归自己掌控。连接器在本地运行，在 FaceTime 与 LiveKit 房间之间搬运音视频，无需把 Agent 托管在 Chert；只需 Node 22+、Chrome、iPhone 与运行中的 LiveKit Agent 即可。",
+    "quote": "终于可以让 AI 替你接视频电话了，还不用现编借口。",
+    "source": "HN Show HN",
+    "url": "https://github.com/cherthq/chert-facetime-opensource",
+    "published": "2026-09-17",
+    "uid": "dev_fbafe8ec"
+  },
+  {
+    "title": "Show HN: Agentbox —— 一条命令把仓库「传送」进沙箱",
+    "content": "开发者开源的 MIT 许可 CLI 工具 Agentbox，用于并行跑多个编码 Agent。一条命令把项目「传送」到专属 VM（本地或云端），自动带上你为 Claude Code、Codex、Open Code 准备的技能、插件与配置，每个盒子配有独立浏览器、屏幕共享、持久 shell 与预热的 VS Code/Cursor，支持检查点秒级启动、闲置自动暂停，git 凭据留在本地、推送需授权。",
+    "quote": "以前几个 Agent 抢资源打架，现在一人一个盒子各玩各的。",
+    "source": "HN Show HN",
+    "url": "https://github.com/madarco/agentbox",
+    "published": "2026-09-17",
+    "uid": "dev_f8a01ca5"
+  },
+  {
+    "title": "Show HN: 边缘 AI 板卡的「每美元帧率」实测数据",
+    "content": "Show HN 项目 edge-ai-benchmarks 把中国边缘 AI 硬件的街价、BOM 成本和厂商不愿对比的 FPS 数字摊开成表。例如 Orange Pi 5 Max（RK3588，6 INT8 TOPS）跑 YOLOv5s 报 66.1 FPS、整机 75 美元，约 0.88 FPS/美元；作者强调这些是厂商宣称值、尚未实验室验证，且不同厂商 TOPS 口径不可直接换算。",
+    "quote": "厂商 PPT 上的帧率，终于有人拿去换算成美元了。",
+    "source": "HN Show HN",
+    "url": "https://github.com/chorylee/edge-ai-benchmarks",
+    "published": "2026-09-17",
+    "uid": "dev_56dfe940"
+  },
+  {
+    "title": "Show HN: 保版式的 Word 转 Markdown 转换器",
+    "content": "docx-editor 作者发布 Word 转 Markdown 转换库：其底层是在 TypeScript 里实现的 Word 兼容排版引擎，因而能做到「保版式」转换——表格、列表、样式等结构按 Word 的真实布局还原为 Markdown，而不是像多数工具那样只抽取纯文本、丢掉排版信息。面向需要把大量 Word 文档批量迁移到 Markdown 或技术文档的场景。",
+    "quote": "Word 转 md 十有八九变乱码，这次终于有人管版式了。",
+    "source": "HN Show HN",
+    "url": "https://www.docx-editor.dev/solutions/word-to-markdown",
+    "published": "2026-09-17",
+    "uid": "dev_d06836b4"
+  },
+  {
+    "title": "Cloudflare 开源 security-audit-skill：让编码 Agent 变身审计员",
+    "content": "Cloudflare 开源 security-audit-skill，一个把编码 Agent 变成安全审计员的技能包：编排多个隔离 Agent，依次完成侦察、覆盖式猎取、候选验证、结构化输出、独立记录复核与目标无关的报告共六个阶段，产出经独立验证、机器可读的发现。它源自 Cloudflare 漏洞发现框架的雏形，官方博客称该框架后来演化为其全舰队多阶段系统，此仓库就是单仓起点。",
+    "quote": "安全审计交给 Agent，人类只负责背锅。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/cloudflare/security-audit-skill",
+    "published": "2026-09-17",
+    "uid": "dev_11a5a6d8"
+  },
+  {
+    "title": "Anthropic 开源 knowledge-work-plugins：11 个知识工作插件",
+    "content": "Anthropic 开源 knowledge-work-plugins，一组面向知识工作者的 Claude 插件，为 Claude Cowork 打造、也兼容 Claude Code。每个插件打包特定职能所需的技能、连接器、斜杠命令与子 Agent，可接入 Slack、Notion、Asana、Linear、Jira、Microsoft 365 等工具。真正的威力在于按各家工具、术语与流程做定制。",
+    "quote": "把公司黑话和流程喂进去，Claude 才算自己人。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/anthropics/knowledge-work-plugins",
+    "published": "2026-09-17",
+    "uid": "dev_35893193"
+  },
+  {
+    "title": "voicebox：全本地运行的开源 AI 语音工作室",
+    "content": "jamiepine/voicebox 登上 GitHub Trending：开源的 AI 语音工作室，主打「克隆任何声音、生成语音、向任意应用口述、用你自己的声音与 Agent 对话」，整套语音输入输出栈都跑在本地机器上。项目提供桌面应用与 API，官网 voicebox.sh，已在 Trendshift 榜上有名，适合对语音数据隐私敏感、又想有完整 TTS 与声音克隆能力的开发者。",
+    "quote": "声音克隆全在本地跑，妈妈再也听不出真假。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/jamiepine/voicebox",
+    "published": "2026-09-17",
+    "uid": "dev_89259076"
+  },
+  {
+    "title": "面向 Agent 的密钥管理方案 easy-unlocker：审批后才放行",
+    "content": "开发者开源 easy-unlocker，把常用的 API Key、私钥存在手机 App 里并全程加密。Agent 需要时调用 easyGet，通知推送到已配对手机，用户审批通过后才拿到密钥。方案含 CLI、网关与双端 App（安卓支持 FCM 推送，iOS 为半成品），三个仓库均已开源。目标是解决多设备、多 Agent 场景下密钥粘贴与 SSH 登录服务器时反复折腾的问题。",
+    "quote": "密钥不再裸奔，Agent 也得先打报告。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1242511",
+    "published": "2026-09-17",
+    "uid": "dev_f5c18a7a"
+  },
+  {
+    "title": "麻雀 Sparrow：不到 10MB 的开源桌面 Markdown 编辑器",
+    "content": "开发者开源桌面 Markdown 阅读器与编辑器「麻雀 Sparrow」，支持 macOS 与 Windows、MIT 协议。安装包不到 10MB，秒开、本地优先、不联网不要账号。特性含 GFM 全家桶与代码高亮、CodeMirror 6 源码编辑、文件夹导入成目录树、多标签、图片直传 S3 兼容图床，技术栈为 Tauri 2（Rust 后端）+ React 19。",
+    "quote": "打开一个 md 还要请尊佛，确实过分了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1242327",
+    "published": "2026-09-17",
+    "uid": "dev_be831d0f"
+  },
+  {
+    "title": "开源自荐 Lexora：自我迭代 30 天烧掉 50.7 亿 tokens 的 Agent 桌面",
+    "content": "V2EX 网友开源自荐 Lexora：一个基于 codex 的 Agent 桌面应用，0.1 版本由他在 8 月 17 日至 31 日用 codex 构建，此后到 0.7 版本基本靠自我迭代完成。据其统计，30 天累计消耗 50.7 亿 tokens、缓存命中率高达 93.6%。他归功于两点：pi 底座已相当完善，以及 GPT 5.6 SOL 模型够强，只给基本工具就能干活。",
+    "quote": "50 亿 token 烧出来个桌面，自我迭代到亲妈都不认识。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1242495",
+    "published": "2026-09-17",
+    "uid": "dev_a380fb69"
+  },
+  {
+    "title": "抓取「对抗性」市政门户：一个知道自己失败的许可数据管道",
+    "content": "Dev.to 长文复盘房地产情报产品 AddressIntel 的许可数据采集层：加州各市发布建筑许可的方式五花八门，仅旧金山半岛就有六个互不兼容的厂商门户，搜索需登录、JS 渲染、ASP.NET 回发还会改表单。作者强调被拦截的请求会抛错、容易发现，真正昂贵的是「对你没问的问题返回了格式良好的答案」。截至 2026-09-16 已收录 20 个辖区共 187,838 条许可。",
+    "quote": "最贵的 bug 不是报错，是答得一本正经。",
+    "source": "Dev.to",
+    "url": "https://dev.to/andrewmaury/scraping-adversarial-municipal-portals-a-permit-pipeline-that-knows-when-it-failed-pie",
+    "published": "2026-09-17",
+    "uid": "dev_7a313b8b"
+  },
+  {
+    "title": "拆解 Grounded RAG：用本地向量库压住 LLM 幻觉",
+    "content": "Dev.to 文章拆解 Grounded RAG，应对生产环境 LLM 的两大痛点——数据隐私与结果可靠性。流程为：文档切分（如 500 token 目标长度、15% 重叠的滑窗分词）、用 all-MiniLM-L6-v2 等模型生成稠密向量并索引进本地向量库（如 Chroma，底层为 HNSW 图），查询时做相似度检索再交给 LLM，从而避免模型对私有或专业信息凭空瞎猜。",
+    "quote": "与其让模型硬编，不如让它查资料。",
+    "source": "Dev.to",
+    "url": "https://dev.to/pasiketansai_genai/demystifying-grounded-rag-eliminating-llm-hallucinations-with-local-vector-stores-44cg",
+    "published": "2026-09-17",
+    "uid": "dev_0a1f5664"
+  },
+  {
+    "title": "用 TypeScript 在 Robinhood Chain 上写股票代币交易机器人",
+    "content": "Dev.to 长文给出在 Robinhood Chain 上用 TypeScript 构建股票代币交易机器人的落地架构。文章指出交易机器人看似简单「价格→信号→下单」，真到生产却要处理市场数据接入、信号生成、风险管理、订单执行、持仓跟踪与对账等环环相扣的模块。作者逐层拆解各模块职责与数据流，强调风控与对账才是决定机器人能否长期存活的关键，而非信号本身多聪明。",
+    "quote": "信号谁都会写，能不能活过爆仓那天才见真章。",
+    "source": "Dev.to",
+    "url": "https://dev.to/borntoup/building-a-stock-token-trading-bot-on-robinhood-chain-with-typescript-ejf",
+    "published": "2026-09-17",
+    "uid": "dev_15159c0c"
+  },
+  {
+    "title": "从一个想法到 Pull Request：让 AI 规划并执行开发任务",
+    "content": "Dev.to 文章演示一条「从想法到 PR」的 AI 工作流：你只需描述想做的软件，系统先产出结构化项目计划，再把任务逐条投入执行，AI 按顺序推进，且每个任务都能拿到前序任务的产出作为上下文，从而保持连贯、不至于各写各的。核心在于把「规划」与「执行」显式拆开，让 AI 有章可循地交付代码改动，最终汇成一份可供评审的 Pull Request。",
+    "quote": "描述完需求，AI 自己开分支提 PR，老板只剩点合并。",
+    "source": "Dev.to",
+    "url": "https://dev.to/martintonev/from-idea-to-pull-request-let-ai-plan-and-execute-the-work-310l",
+    "published": "2026-09-17",
+    "uid": "dev_f56ea535"
+  },
+  {
+    "title": "论文研读：把推理轨迹放到问题之前，真能让大模型更会推理？",
+    "content": "博客园文章研读并复现论文《Trace as State》。核心发现：同一段推理轨迹放在上下文前还是后，效果差异明显。传统 Trace Append 把轨迹放在上下文之后 [上下文, Trace, 问题]；Trace as State 则把轨迹前置为 [Trace, 上下文, 问题]，让模型「带着已有状态重读」。不改模型、不微调，仅在长上下文推理上拿到接近换模型的收益。",
+    "quote": "调个顺序就能涨点，Prompt 工程师又活了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/mengrennwpu/p/22997077",
+    "published": "2026-09-17",
+    "uid": "dev_1823cfec"
+  },
+  {
+    "title": "DBA 经验：MySQL 性能最重要的参数其实只有两个",
+    "content": "博客园 DBA 分享实战经验：面对几百个配置参数，真正起决定作用的只有两个。其一是 innodb_buffer_pool_size，即 InnoDB 缓冲池，决定读性能，通用建议为系统内存的 50%-80%（16GB 内存配 8-12GB）；其二是 innodb_log_file_size，即 redo log 大小，决定写性能，过小会导致检查点频繁甚至事务失败，过大则崩溃恢复变慢。",
+    "quote": "几百个参数吓人，其实就两个说了算。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/xiexj/p/22993301",
+    "published": "2026-09-17",
+    "uid": "dev_319daf98"
+  },
+  {
+    "title": "卓驭百 PB 级智驾数据存储：基于 JuiceFS 的架构演进",
+    "content": "博客园技术文复盘卓驭（原大疆车载）百 PB 级智能驾驶数据存储的架构演进。卓驭起步于 2016 年，主打原生多模态基础模型与生成式 AI 的统一移动智能底座。面对智驾数据量爆炸式增长，文章讲述在 JuiceFS 之上构建可弹性扩展存储层的思路，兼顾海量小文件与高吞吐训练读取，为 L2 及以上智驾方案与自主移动机器人提供数据支撑，并分享选型思路与踩坑经验。",
+    "quote": "百 PB 的锅甩给别人容易，自己扛下来才叫架构。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/JuiceData/p/23000985",
+    "published": "2026-09-17",
+    "uid": "dev_2e3c066c"
+  },
+  {
+    "title": "BRP：用「反向构造」让黑盒对抗 Patch 更省查询",
+    "content": "博客园深度学习安全文章解读 BRP 方法。对抗补丁（Adversarial Patch）只需在图上贴一小块精心设计的图案，就能让训练良好的图像分类模型把猫认成狗。现实中攻击者往往拿不到梯度和完整模型，只能黑盒查询，成本高得离谱。BRP 的思路是「反向构造」：不硬磕前向查询，而是反推能把目标类概率拉高的补丁区域，从而用更少的查询次数找到有效补丁，让黑盒对抗 Patch 更省算力。",
+    "quote": "贴块小贴纸就能骗过 AI，黑盒攻击还越打越省了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/heyonggang/p/22998269",
+    "published": "2026-09-17",
+    "uid": "dev_76522f53"
+  }
+]
