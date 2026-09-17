@@ -1,0 +1,218 @@
+[
+  {
+    "title": "GLM 自建推理基建：模型开始帮我们造下一代模型",
+    "content": "智谱发布长文《Toward Recursive Self-Improvement》，复盘 GLM 自建推理基础设施的历程。文中称 GLM 已能完成过去需要资深基建工程师团队数周才能搞定的任务，并直接改变下一代模型的训练方式，团队直言「我们的继任者正是我们自己创造的 AI 系统」。文中还给出一手实例：Agent 排查并发瓶颈时定位到 DeepEP 未释放 Python GIL 导致 KV 传输被阻塞，修复后性能差距压到 1% 以内。",
+    "quote": "模型开始给自己造基建，人类的 KPI 还稳吗？",
+    "source": "HN Front Page",
+    "url": "https://z.ai/blog/glm-built-its-inference-infrastructure",
+    "published": "2026-09-18",
+    "uid": "dev_74ddf2f5"
+  },
+  {
+    "title": "捐赠养出来的浏览器引擎：Servo 赞助开发一周年",
+    "content": "Servo 回顾首个靠捐赠资助的岗位：维护者 Josh Bowman-Matthews（jdm）过去一年以兼职身份改善贡献者体验。成果包括提名 8 位新维护者、评审 1150 个 PR、提交 114 个面向新人的 issue（92% 已修复），并补写借用风险、实验特性、AI 政策、排错指南等文档。他还推动 JS 引擎集成的大规模重写、修复大量不稳定测试，让项目对新人更友好。",
+    "quote": "靠订阅养出来的引擎，比某些融资公司活得明白。",
+    "source": "HN Front Page",
+    "url": "https://servo.org/blog/2026/09/15/one-year-of-sponsorship/",
+    "published": "2026-09-18",
+    "uid": "dev_2ea2fb8a"
+  },
+  {
+    "title": "备份没那么简单：从一场家庭硬盘惨案讲起",
+    "content": "一篇关于备份的长文反思：作者小时候把全家照片集中到一块移动硬盘，结果父亲用电视盒子时顺手格式化，文件索引全没了，幸好后来恢复成功。文章借此展开备份原则：重要数据不能只存一份；备份不应是第一块盘的镜像，否则勒索软件或误删会同步过去，RAID 1 也不行；要能「回到过去」即按快照方式备份，并据此定义 RPO，即可容忍丢失多长时间的数据。",
+    "quote": "人类迟早要经历一次数据火葬，区别只在早晚。",
+    "source": "HN Front Page",
+    "url": "https://filipovski.net/2026/09/16/backups-arent-simple.html",
+    "published": "2026-09-18",
+    "uid": "dev_40b951c9"
+  },
+  {
+    "title": "三值 LLM 破 1.58-bit：利用零权重把存储再压一层",
+    "content": "论文指出三值 LLM 每个权重取 {-1,0,+1}，理论上界约 1.585 bit，但业界常用的「五三进制打包」实际约 1.625 bit，前提是假设三种符号等概率。作者实测 29 个三值模型，发现零权重占比最高达 51.5%，据此提出 BITCOS 布局：密集存在位图加压缩符号向量，每权重成本 2−z bit（z 为零密度）。29 个模型中 26 个比五三进制更省，最稀疏者仅 1.485 bit，端到端解码最高提速 1.27x。",
+    "quote": "模型一半权重是零，压缩党又赢麻了。",
+    "source": "HN Front Page",
+    "url": "https://arxiv.org/abs/2609.16338",
+    "published": "2026-09-18",
+    "uid": "dev_e6a73f72"
+  },
+  {
+    "title": "addyosmani/agent-skills：给编码 Agent 的生产级技能集",
+    "content": "GitHub Trending 项目 addyosmani/agent-skills，定位是「面向 AI 编码 Agent 的生产级工程技能」，用 JavaScript 编写，兼容 Claude Code、Codex、Cursor、Antigravity 等主流 Agent。它把可复用的工程实践沉淀成技能包，让不同编码 Agent 共享同一套能力，上线即冲上榜单前列，是当天最抢眼的技能类项目。",
+    "quote": "技能写得比人还全，码农的护城河又浅了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "published": "2026-09-18",
+    "uid": "dev_4995bb4a"
+  },
+  {
+    "title": "腾讯 BrowserSkill：让 Agent 用你已登录的真实浏览器",
+    "content": "腾讯开源 BrowserSkill（TypeScript），提供 CLI 加浏览器扩展，让任意能用 shell 的 AI Agent 操作你真实且已登录的浏览器，还不打断你当前的浏览。它瞄准 Agent 自动化里最痛的一环——登录态与验证码，通过复用真人浏览器环境绕开账号风控。标签含 agent、browser-use、dsh-plugin，已登上 GitHub Trending，Star 约 3900。",
+    "quote": "Agent 终于不用再求人类帮点验证码了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/Tencent/BrowserSkill",
+    "published": "2026-09-18",
+    "uid": "dev_9babc6f3"
+  },
+  {
+    "title": "腾讯开源 WeKnora：把文档变成可问答的知识平台",
+    "content": "腾讯开源 LLM 知识平台 WeKnora（Go 编写），目标是把原始文档变成「可查询的 RAG + 自主推理 Agent + 自我维护的 Wiki」三合一。它支持多租户、向量检索、重排、语义搜索与评测，兼容 Ollama/OpenAI 等模型，并内置 Wiki 自动维护能力，Star 已超 2.6 万。对想自建企业知识库的团队，是个开箱即用的开源底座。",
+    "quote": "知识库不用 PPT 汇报了，直接开源自证。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/Tencent/WeKnora",
+    "published": "2026-09-18",
+    "uid": "dev_4a04a42e"
+  },
+  {
+    "title": "abue-ammar/tinycast：极简原生 macOS 启动器",
+    "content": "GitHub Trending 项目 abue-ammar/tinycast，用 Swift 写的「极小体积、全原生」macOS 启动器，同时集成全局热键与剪贴板历史。它主打轻量与原生体验，把快速启动应用、唤出常用动作、翻查复制记录集中到一个工具里，Star 约 6000。对受够了 Electron 体积和订阅制启动器的 Mac 用户，是个能换着用的开源选择。",
+    "quote": "启动器卷到原生小工具，Electron 们该减肥了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/abue-ammar/tinycast",
+    "published": "2026-09-18",
+    "uid": "dev_4fcfcce0"
+  },
+  {
+    "title": "czlmail：用 Claude 写的开源 JMAP 邮件客户端",
+    "content": "开发者分享用 Claude 写的开源邮件客户端 czlmail，基于 Wails（Go+Web）实现，配合 Stalwart 邮件服务器使用，目前 macOS 尚未测试。功能对齐 Bulwark，覆盖邮件、日历、通讯录、WebDAV 文件等；并做了自定义增强：模板经 WebDAV 同步、系统级通知，还接入 AI、支持 MCP。以 AGPL-3.0 协议开源，地址 github.com/woodchen-ink/czlmail。",
+    "quote": "写邮件客户端交给 AI，人只负责起名字。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1242823",
+    "published": "2026-09-18",
+    "uid": "dev_edce9a27"
+  },
+  {
+    "title": "自建 TikTok 工具站：不登录看号、无水印下载、评论导出 CSV",
+    "content": "开发者因选题调研不想登录自己账号、又嫌弃现成工具「弹窗套弹窗」，自建 tikviewer.org：不登录不装插件即可看用户主页与单条视频；单个视频的无水印原画质 MP4、带水印分享版、纯音频 MP3 免费不限次，视频走 TikTok 自家 CDN 不留副本；整条评论区可读完并导出 CSV/Excel，含作者、点赞、回复、置顶等字段；主页可批量打包 ZIP。作者也明说私密号、已删或限区视频拿不到。",
+    "quote": "不想被推荐流带跑，就自己造个不登录的。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1242809",
+    "published": "2026-09-18",
+    "uid": "dev_9e2e0865"
+  },
+  {
+    "title": "Chupin：把简历做成一页在线网页，要附件时再导出 PDF",
+    "content": "开发者做 Chupin，解决「投简历发 PDF，对方手机打不开、自己搞不清哪份最新」的痛点：填好内容（或上传现有 PDF/Word）后发布到 name.chupin.site，打开就是一页 A4，网申要附件时再从同一页导出 PDF。理念是优先支持在线访问、用 Markdown 思路保持简洁克制，刻意不做模板市场与第二套版式，AI 导入只出草稿不代发布。免费 1 份简历，Pro 19 美元/年。",
+    "quote": "简历发 PDF 是上个时代的仪式感。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1242743",
+    "published": "2026-09-18",
+    "uid": "dev_9bd9e88d"
+  },
+  {
+    "title": "重看 Log4Shell：十年来最严重的漏洞是这样引爆的",
+    "content": "Dev.to 一篇 CVE-2021-44228（Log4Shell）拆解文：Apache Log4j 2 这款 Java 日志库因 Lookups 等特性广受欢迎，攻击者可借 JNDI 注入在服务器执行远程代码（RCE）。文章回顾时间线：2021 年 11 月由阿里云安全团队陈兆军发现，12 月 9 日公开后在安全圈掀起风暴，被称为「十年来最严重的漏洞」，且在被发现前就已被黑帽利用，属零日级别。",
+    "quote": "日志库顺手一个 JNDI，半个互联网跪下。",
+    "source": "Dev.to",
+    "url": "https://dev.to/binamra/how-log4shell-works-breaking-down-cve-2021-44228-353k",
+    "published": "2026-09-18",
+    "uid": "dev_64869b80"
+  },
+  {
+    "title": "找出团队里没人知道的「影子 MCP」服务器",
+    "content": "Dev.to 文章关注企业内悄悄上线的 MCP 服务器：它是个小 HTTP 服务，谁都能一下午搭一个，且往往连着数据仓库、工单系统、CRM 等敏感资源，却不在服务目录里。作者写了扫描器 shadow-mcp-scanner，站在无凭据调用者视角探测每个 MCP 暴露了什么。文中引用 Trend Micro 数据：492 个公网 MCP 无鉴权无加密，暴露 1402 个工具，超九成可直读数据源。",
+    "quote": "影子 IT 升级成影子 AI，资产表继续裸奔。",
+    "source": "Dev.to",
+    "url": "https://dev.to/webofmike/finding-the-mcp-servers-your-platform-team-doesnt-know-about-468",
+    "published": "2026-09-18",
+    "uid": "dev_6a4cd9ea"
+  },
+  {
+    "title": "从一份 README 到 3 万星，RustFS 这一年干了什么",
+    "content": "博客园文章回顾 RustFS 一年：2025 年 7 月刚开源时仓库里长期只有一份 README，却打着「用 Rust 打造企业级分布式存储、对标 MinIO」的口号，被不少网友吐槽大言不惭。一年多后，随着 MinIO 宣布停止维护开源版，RustFS 一路做到 3 万 Star。文章梳理了它这一年在功能、性能与社区上的进展，也回应了早期「假开源」的质疑。",
+    "quote": "当初骂得最凶的，现在追得最快。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/xueweihan/p/22970800",
+    "published": "2026-09-18",
+    "uid": "dev_97aea4b7"
+  },
+  {
+    "title": "PDF 进 RAG 为什么这么难：一份问题清单与解决路线",
+    "content": "博客园文章指出，很多教程把 PDF 进 RAG 简化成「PDF→纯文本→切块→向量库」，但这只在单栏电子版 PDF 上成立。真实语料里同一个 .pdf 可能是扫描件、乱码字体、双栏论文、跨页表格或公式教材；跳过结构恢复的代价是阅读顺序错乱、表格列错位、公式丢失、无法回溯原页。作者按问题类型给出了对应的检测与解决路线，适合做文档解析与 RAG 的工程师参考。",
+    "quote": "不还原版面就切块，向量库吃的是乱码。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/goodhacker/p/23008551",
+    "published": "2026-09-18",
+    "uid": "dev_b5969f46"
+  },
+  {
+    "title": "Show HN: 把 Claude/Codex 的速率限制做成 AIM 在线状态",
+    "content": "有人把 Claude、Codex 的 token 用量做成上世纪的 AIM 好友列表：额度够用就显示「在线」，烧完就变「离开/离线」，专门找回当年随手瞄一眼好友在不在线的复古体验。对同时盯好几个大模型配额的人来说，这大概是最有人味的一款用量监控。",
+    "quote": "额度用完的样子，比失恋还像离线。",
+    "source": "HN Show HN",
+    "url": "https://diewithme.co/join",
+    "published": "2026-09-18",
+    "uid": "dev_72441b50"
+  },
+  {
+    "title": "Show HN: GuardRail —— 13 道护栏拦住 Claude Code 推 main",
+    "content": "Show HN 项目 GuardRail 给 Claude Code 装了 13 道「护栏」，目标是在它把代码推到 main 之前先拦下来。作者认为直接给编码 Agent 放开推送权限是当前最大的风险点，于是用一组前置检查把危险操作挡在提交之前。对已经把 Agent 接进日常流程的团队，这比事后 review 更省心。",
+    "quote": "AI 写码不管，push 到 main 才想起护栏。",
+    "source": "HN Show HN",
+    "url": "https://github.com/FvdHMBAI/guardrail",
+    "published": "2026-09-18",
+    "uid": "dev_69635499"
+  },
+  {
+    "title": "Show HN: MemPalace —— 给 OpenCode 会话无限记忆",
+    "content": "Show HN 项目 MemPalace 是给 OpenCode 的持久化插件，主打「无限记忆」：把跨会话的上下文存下来，让 Agent 不再每开一个新 session 就失忆。它想解决的是编码 Agent 常见的上下文断层——同一个项目反复交代背景、约定与偏好。对长期跑同一仓库的人，能省下大量重复 prompt。",
+    "quote": "Agent 记不住事，比某些同事还费口舌。",
+    "source": "HN Show HN",
+    "url": "https://github.com/geco/opencode-mempalace-persistence",
+    "published": "2026-09-18",
+    "uid": "dev_fa50d2b5"
+  },
+  {
+    "title": "Show HN: RunErrand —— 开源 AI 队友，每人配一台电脑",
+    "content": "Show HN 项目 RunErrand 主打「开源 AI 队友，各自拥有自己的电脑」，让多个 AI 像真人同事一样在独立环境里干活、分工协作。它瞄准的是把 Agent 从「单次问答」推进到「能长期接活的虚拟同事」，且强调开源自托管。对想搭一支 AI 小分队又不想被闭源平台绑住的团队，是条可以关注的路子。",
+    "quote": "给 AI 发电脑容易，发工资时它不吭声。",
+    "source": "HN Show HN",
+    "url": "https://runerrand.dev/",
+    "published": "2026-09-18",
+    "uid": "dev_342de506"
+  },
+  {
+    "title": "Show HN: LureScope —— 蜜罐遥测直播，94.1 万次攻击",
+    "content": "Show HN 项目 LureScope 公开展示实时蜜罐遥测：累计 94.1 万次攻击事件、来自 160 个国家和地区，把被扫描、被爆破、被利用的流量直接摊开给人看。作者想用真实数据说明「暴露在公网的机器每天到底遭遇什么」，比安全报告里的抽象数字直观得多，很适合做安全科普的素材。",
+    "quote": "蜜罐一天被摸几十万次，只有人类自认安全。",
+    "source": "HN Show HN",
+    "url": "https://lurescope.com/stats",
+    "published": "2026-09-18",
+    "uid": "dev_13b71f2d"
+  },
+  {
+    "title": "Show HN: ThinkRail —— fork JetBrains 的 Agent IDE 来跑 Claude Code",
+    "content": "JetBrains 开源了给 AI 编码 Agent 用的 IDE 外壳 ThinkRail（每标签页一个 worktree，聊天+文件树+终端），但只绑定自家一个 Agent。开发者直接 fork，加上插件 API 让它能托管其他 Agent，包括 Claude Code。这暴露出当下编码 Agent 生态的真实状态：界面与 Agent 正在解耦，谁都能插。",
+    "quote": "IDE 只认亲儿子，社区只好自己动手认养。",
+    "source": "HN Show HN",
+    "url": "https://github.com/CommanderTvis/thinkrail",
+    "published": "2026-09-18",
+    "uid": "dev_61c1cd8d"
+  },
+  {
+    "title": "那个没人舍得杀的 PoC 环境",
+    "content": "Dev.to 文章《The PoC Environment Nobody Kills》讲一个熟悉的场景：半年前为证明概念能跑通，临时起的 PoC 环境——小集群、一个库、可能外加个负载均衡。结果概念上线了，这套「临时」环境却没人关、没人管、也没人敢动。文章讨论这种技术债悄悄变成生产依赖的过程，以及该在什么时候体面地清理它。",
+    "quote": "临时环境活成钉子户，产线还得看它脸色。",
+    "source": "Dev.to",
+    "url": "https://dev.to/alfatehmustafa/the-poc-environment-nobody-kills-2m2h",
+    "published": "2026-09-18",
+    "uid": "dev_15508993"
+  },
+  {
+    "title": "谁在读你的 .env？先过 Touch ID：一个完全本地的 macOS 文件系统方案",
+    "content": "V2EX 开发者开源了一个完全本地化的 macOS 方案：敏感文件（如 .env）被访问前必须先通过 Touch ID 验证，专治「在命令前套 wrapper」的痛点——终端能用，但 IDE、GUI 数据库客户端、后台服务甚至 AI Agent 又要各想一套注入方式。他的思路是把保护下沉到文件系统层，任何入口统一过指纹，对担心密钥被脚本或 Agent 顺手读走的 Mac 开发很实用。",
+    "quote": ".env 谁都能翻，指纹锁终于轮到文件。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1242599",
+    "published": "2026-09-18",
+    "uid": "dev_6085bfb4"
+  },
+  {
+    "title": "Runner 0.10.0：接入 GitHub Copilot CLI，状态改用 hook 上报",
+    "content": "V2EX 开发者汇总 Runner 本周更新：0.10.0 接入 GitHub Copilot CLI（起因是有朋友想用公司的免费 token），后续还会接 pi 和 opencode；Agent 状态检测也从早期「盯终端字节活动」改成针对不同 Agent 实现 hooks，因为各家 Agent 支持的能力不一样。这是一次把多 Agent 编排做得更规范、更省 token 的迭代。",
+    "quote": "状态靠猜字节的日子结束了，Hook 才是正道。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1242783",
+    "published": "2026-09-18",
+    "uid": "dev_48ad68db"
+  }
+]
