@@ -1,0 +1,121 @@
+# 开发者日报 Temp-A 精选 2026-09-18
+
+## 1. GLM 自建推理基建：模型开始帮我们造下一代模型
+
+智谱发布长文《Toward Recursive Self-Improvement》，复盘 GLM 如何自建推理基础设施。文中称 GLM 已能完成过去需要资深基建工程师团队数周才能搞定的任务，并直接改变下一代模型的训练方式，团队直言「我们的继任者正是我们自己创造的 AI 系统」。文中还给出一手实例：Agent 排查并发瓶颈时定位到 DeepEP 未释放 Python GIL 导致 KV 传输被阻塞，修复后性能差距压到 1% 以内。
+
+> 模型开始给自己造基建，人类的 KPI 还稳吗？
+
+来源: HN Front Page | https://z.ai/blog/glm-built-its-inference-infrastructure
+
+## 2. 捐赠养出来的浏览器引擎：Servo 赞助开发一周年
+
+Servo 回顾首个靠捐赠资助的岗位：维护者 Josh Bowman-Matthews（jdm）过去一年以兼职身份改善贡献者体验。成果包括提名 8 位新维护者、评审 1150 个 PR、提交 114 个面向新人的 issue（92% 已修复），并补写借用风险、实验特性、AI 政策、排错指南等文档。他还推动 JS 引擎集成的大规模重写、修复大量不稳定测试，让项目对新人更友好。
+
+> 靠订阅养出来的引擎，比某些融资公司活得明白。
+
+来源: HN Front Page | https://servo.org/blog/2026/09/15/one-year-of-sponsorship/
+
+## 3. 备份没那么简单：从一场家庭硬盘惨案讲起
+
+一篇关于备份的长文反思：作者小时候把全家照片集中到一块移动硬盘，结果父亲用电视盒子时顺手格式化，文件索引全没了，幸好后来恢复成功。文章借此展开备份原则：重要数据不能只存一份；备份不应是第一块盘的镜像，否则勒索软件或误删会同步过去，RAID 1 也不行；要能「回到过去」即按快照方式备份，并据此定义 RPO，即可容忍丢失多长时间的数据。
+
+> 人类迟早要经历一次数据火葬，区别只在早晚。
+
+来源: HN Front Page | https://filipovski.net/2026/09/16/backups-arent-simple.html
+
+## 4. 三值 LLM 破 1.58-bit：利用零权重把存储再压一层
+
+论文指出三值 LLM 每个权重取 {-1,0,+1}，理论上界约 1.585 bit，但业界常用的「五三进制打包」实际约 1.625 bit，前提是假设三种符号等概率。作者实测 29 个三值模型，发现零权重占比最高达 51.5%，据此提出 BITCOS 布局：密集存在位图加压缩符号向量，每权重成本 2−z bit（z 为零密度）。29 个模型中 26 个比五三进制更省，最稀疏者仅 1.485 bit，端到端解码最高提速 1.27x。
+
+> 模型一半权重是零，压缩党又赢麻了。
+
+来源: HN Front Page | https://arxiv.org/abs/2609.16338
+
+## 5. addyosmani/agent-skills：给编码 Agent 的生产级技能集
+
+GitHub Trending 项目 addyosmani/agent-skills，定位是「面向 AI 编码 Agent 的生产级工程技能」，用 JavaScript 编写，兼容 Claude Code、Codex、Cursor、Antigravity 等主流 Agent。它把可复用的工程实践沉淀成技能包，让不同编码 Agent 共享同一套能力，上线即冲上榜单前列，是当天最抢眼的技能类项目。
+
+> 技能写得比人还全，码农的护城河又浅了。
+
+来源: GitHub Trending Daily | https://github.com/addyosmani/agent-skills
+
+## 6. 腾讯 BrowserSkill：让 Agent 用你已登录的真实浏览器
+
+腾讯开源 BrowserSkill（TypeScript），提供 CLI 加浏览器扩展，让任意能用 shell 的 AI Agent 操作你真实且已登录的浏览器，还不打断你当前的浏览。它瞄准 Agent 自动化里最痛的一环——登录态与验证码，通过复用真人浏览器环境绕开账号风控。标签含 agent、browser-use、dsh-plugin，已登上 GitHub Trending，Star 约 3900。
+
+> Agent 终于不用再求人类帮点验证码了。
+
+来源: GitHub Trending Daily | https://github.com/Tencent/BrowserSkill
+
+## 7. 腾讯开源 WeKnora：把文档变成可问答的知识平台
+
+腾讯开源 LLM 知识平台 WeKnora（Go 编写），目标是把原始文档变成「可查询的 RAG + 自主推理 Agent + 自我维护的 Wiki」三合一。它支持多租户、向量检索、重排、语义搜索与评测，兼容 Ollama/OpenAI 等模型，并内置 Wiki 自动维护能力，Star 已超 2.6 万。对想自建企业知识库的团队，是个开箱即用的开源底座。
+
+> 知识库不用 PPT 汇报了，直接开源自证。
+
+来源: GitHub Trending Daily | https://github.com/Tencent/WeKnora
+
+## 8. abue-ammar/tinycast：极简原生 macOS 启动器
+
+GitHub Trending 项目 abue-ammar/tinycast，用 Swift 写的「极小体积、全原生」macOS 启动器，同时集成全局热键与剪贴板历史。它主打轻量与原生体验，把快速启动应用、唤出常用动作、翻查复制记录集中到一个工具里，Star 约 6000。对受够了 Electron 体积和订阅制启动器的 Mac 用户，是个值得一试的开源替代。
+
+> 启动器卷到原生小工具，Electron 们该减肥了。
+
+来源: GitHub Trending Daily | https://github.com/abue-ammar/tinycast
+
+## 9. czlmail：用 Claude 写的开源 JMAP 邮件客户端
+
+开发者分享用 Claude 写的开源邮件客户端 czlmail，基于 Wails（Go+Web）实现，配合 Stalwart 邮件服务器使用，目前 macOS 尚未测试。功能对齐 Bulwark，覆盖邮件、日历、通讯录、WebDAV 文件等；并做了自定义增强：模板经 WebDAV 同步、系统级通知，还接入 AI、支持 MCP。以 AGPL-3.0 协议开源，地址 github.com/woodchen-ink/czlmail。
+
+> 写邮件客户端交给 AI，人只负责起名字。
+
+来源: V2EX Share | https://www.v2ex.com/t/1242823
+
+## 10. 自建 TikTok 工具站：不登录看号、无水印下载、评论导出 CSV
+
+开发者因选题调研不想登录自己账号、又嫌弃现成工具「弹窗套弹窗」，自建 tikviewer.org：不登录不装插件即可看用户主页与单条视频；单个视频的无水印原画质 MP4、带水印分享版、纯音频 MP3 免费不限次，视频走 TikTok 自家 CDN 不留副本；整条评论区可读完并导出 CSV/Excel，含作者、点赞、回复、置顶等字段；主页可批量打包 ZIP。作者也明说私密号、已删或限区视频拿不到。
+
+> 不想被推荐流带跑，就自己造个不登录的。
+
+来源: V2EX Share | https://www.v2ex.com/t/1242809
+
+## 11. Chupin：把简历做成一页在线网页，要附件时再导出 PDF
+
+开发者做 Chupin，解决「投简历发 PDF，对方手机打不开、自己搞不清哪份最新」的痛点：填好内容（或上传现有 PDF/Word）后发布到 name.chupin.site，打开就是一页 A4，网申要附件时再从同一页导出 PDF。理念是优先支持在线访问、用 Markdown 思路保持简洁克制，刻意不做模板市场与第二套版式，AI 导入只出草稿不代发布。免费 1 份简历，Pro 19 美元/年。
+
+> 简历发 PDF 是上个时代的仪式感。
+
+来源: V2EX Share | https://www.v2ex.com/t/1242743
+
+## 12. 重看 Log4Shell：十年来最严重的漏洞是怎么炸的
+
+Dev.to 一篇 CVE-2021-44228（Log4Shell）拆解文：Apache Log4j 2 这款 Java 日志库因 Lookups 等特性广受欢迎，攻击者可借 JNDI 注入在服务器执行远程代码（RCE）。文章回顾时间线：2021 年 11 月由阿里云安全团队陈兆军发现，12 月 9 日公开后在安全圈掀起风暴，被称为「十年来最严重的漏洞」，且在被发现前就已被黑帽利用，属零日级别。
+
+> 日志库顺手一个 JNDI，半个互联网跪下。
+
+来源: Dev.to | https://dev.to/binamra/how-log4shell-works-breaking-down-cve-2021-44228-353k
+
+## 13. 找出团队里没人知道的「影子 MCP」服务器
+
+Dev.to 文章关注企业内悄悄上线的 MCP 服务器：它是个小 HTTP 服务，谁都能一下午搭一个，且往往连着数据仓库、工单系统、CRM 等敏感资源，却不在服务目录里。作者写了扫描器 shadow-mcp-scanner，站在无凭据调用者视角探测每个 MCP 暴露了什么。文中引用 Trend Micro 数据：492 个公网 MCP 无鉴权无加密，暴露 1402 个工具，超九成可直读数据源。
+
+> 影子 IT 升级成影子 AI，资产表继续裸奔。
+
+来源: Dev.to | https://dev.to/webofmike/finding-the-mcp-servers-your-platform-team-doesnt-know-about-468
+
+## 14. 从一份 README 到 3 万星，RustFS 这一年干了什么
+
+博客园文章回顾 RustFS 一年：2025 年 7 月刚开源时仓库里长期只有一份 README，却打着「用 Rust 打造企业级分布式存储、替代 MinIO」的口号，被不少网友吐槽大言不惭。一年多后，随着 MinIO 宣布停止维护开源版，RustFS 一路做到 3 万 Star。文章梳理了它这一年在功能、性能与社区上的进展，也回应了早期「假开源」的质疑。
+
+> 当初骂得最凶的，现在追得最快。
+
+来源: 博客园 Cnblogs | https://www.cnblogs.com/xueweihan/p/22970800
+
+## 15. PDF 进 RAG 为什么这么难：一份问题清单与解决路线
+
+博客园文章指出，很多教程把 PDF 进 RAG 简化成「PDF→纯文本→切块→向量库」，但这只在单栏电子版 PDF 上成立。真实语料里同一个 .pdf 可能是扫描件、乱码字体、双栏论文、跨页表格或公式教材；跳过结构恢复的代价是阅读顺序错乱、表格列错位、公式丢失、无法回溯原页。作者按问题类型给出了对应的检测与解决路线，适合做文档解析与 RAG 的工程师参考。
+
+> 不还原版面就切块，向量库吃的是乱码。
+
+来源: 博客园 Cnblogs | https://www.cnblogs.com/goodhacker/p/23008551
