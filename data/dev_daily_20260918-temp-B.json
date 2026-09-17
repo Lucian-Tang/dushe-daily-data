@@ -1,0 +1,119 @@
+[
+  {
+    "title": "Show HN: 把 Claude/Codex 的速率限制做成 AIM 在线状态",
+    "content": "有人把 Claude、Codex 的 token 用量做成上世纪的 AIM 好友列表：额度够用就显示「在线」，烧完就变「离开/离线」，专门找回当年随手瞄一眼好友在不在线的复古体验。对同时盯好几个大模型配额的人来说，这大概是最有人味的一款用量监控。",
+    "quote": "额度用完的样子，比失恋还像离线。",
+    "source": "HN Show HN",
+    "url": "https://diewithme.co/join",
+    "published": "2026-09-18",
+    "uid": "dev_72441b50"
+  },
+  {
+    "title": "Show HN: GuardRail —— 13 道护栏拦住 Claude Code 推 main",
+    "content": "Show HN 项目 GuardRail 给 Claude Code 装了 13 道「护栏」，目标是在它把代码推到 main 之前先拦下来。作者认为直接给编码 Agent 放开推送权限是当前最大的风险点，于是用一组前置检查把危险操作挡在提交之前。对已经把 Agent 接进日常流程的团队，这比事后 review 更省心。",
+    "quote": "AI 写码不管，push 到 main 才想起护栏。",
+    "source": "HN Show HN",
+    "url": "https://github.com/FvdHMBAI/guardrail",
+    "published": "2026-09-18",
+    "uid": "dev_69635499"
+  },
+  {
+    "title": "Show HN: MemPalace —— 给 OpenCode 会话无限记忆",
+    "content": "Show HN 项目 MemPalace 是给 OpenCode 的持久化插件，主打「无限记忆」：把跨会话的上下文存下来，让 Agent 不再每开一个新 session 就失忆。它想解决的是编码 Agent 常见的上下文断层——同一个项目反复交代背景、约定与偏好。对长期跑同一仓库的人，能省下大量重复 prompt。",
+    "quote": "Agent 记不住事，比某些同事还费口舌。",
+    "source": "HN Show HN",
+    "url": "https://github.com/geco/opencode-mempalace-persistence",
+    "published": "2026-09-18",
+    "uid": "dev_fa50d2b5"
+  },
+  {
+    "title": "Show HN: RunErrand —— 开源 AI 队友，每人配一台电脑",
+    "content": "Show HN 项目 RunErrand 主打「开源 AI 队友，各自拥有自己的电脑」，让多个 AI 像真人同事一样在独立环境里干活、分工协作。它瞄准的是把 Agent 从「单次问答」推进到「能长期接活的虚拟同事」，且强调开源自托管。对想搭一支 AI 小分队又不想被闭源平台绑住的团队，是个值得关注的方向。",
+    "quote": "给 AI 发电脑容易，发工资时它不吭声。",
+    "source": "HN Show HN",
+    "url": "https://runerrand.dev/",
+    "published": "2026-09-18",
+    "uid": "dev_342de506"
+  },
+  {
+    "title": "Show HN: LureScope —— 蜜罐遥测直播，94.1 万次攻击",
+    "content": "Show HN 项目 LureScope 公开展示实时蜜罐遥测：累计 94.1 万次攻击事件、来自 160 个国家和地区，把被扫描、被爆破、被利用的流量直接摊开给人看。作者想用真实数据说明「暴露在公网的机器每天到底遭遇什么」，比安全报告里的抽象数字直观得多，很适合做安全科普的素材。",
+    "quote": "蜜罐一天被摸几十万次，只有人类自认安全。",
+    "source": "HN Show HN",
+    "url": "https://lurescope.com/stats",
+    "published": "2026-09-18",
+    "uid": "dev_13b71f2d"
+  },
+  {
+    "title": "Show HN: ThinkRail —— fork JetBrains 的 Agent IDE 来跑 Claude Code",
+    "content": "JetBrains 开源了给 AI 编码 Agent 用的 IDE 外壳 ThinkRail（每标签页一个 worktree，聊天+文件树+终端），但只绑定自家一个 Agent。开发者直接 fork，加上插件 API 让它能托管其他 Agent，包括 Claude Code。这暴露出当下编码 Agent 生态的真实状态：界面与 Agent 正在解耦，谁都能插。",
+    "quote": "IDE 只认亲儿子，社区只好自己动手认养。",
+    "source": "HN Show HN",
+    "url": "https://github.com/CommanderTvis/thinkrail",
+    "published": "2026-09-18",
+    "uid": "dev_61c1cd8d"
+  },
+  {
+    "title": "那个没人舍得杀的 PoC 环境",
+    "content": "Dev.to 文章《The PoC Environment Nobody Kills》讲一个熟悉的场景：半年前为证明概念能跑通，临时起的 PoC 环境——小集群、一个库、可能外加个负载均衡。结果概念上线了，这套「临时」环境却没人关、没人管、也没人敢动。文章讨论这种技术债如何悄悄变成生产依赖，以及该在什么时候体面地清理它。",
+    "quote": "临时环境活成钉子户，产线还得看它脸色。",
+    "source": "Dev.to",
+    "url": "https://dev.to/alfatehmustafa/the-poc-environment-nobody-kills-2m2h",
+    "published": "2026-09-18",
+    "uid": "dev_15508993"
+  },
+  {
+    "title": "真·手把手 Kubernetes the Hard Way（Step 06）",
+    "content": "Dev.to 的 homelab 系列 Lab Notes 更新到 Step 06，作者一路照 Kelsey Hightower 的《Kubernetes the Hard Way》手动搭集群，坚持不用一键脚本。本篇进入数据加密密钥（data-encryption-keys）环节，边做边写下踩坑与心得。适合想真正搞懂 K8s 控制面底细、又受够「三行 curl 跑起来」教程的人跟着练。",
+    "quote": "别人一键起飞，他偏要徒手造轮子练手。",
+    "source": "Dev.to",
+    "url": "https://dev.to/lugerlogic/lab-notes-kubernetes-the-hard-way-for-real-this-time-step-06-5g19",
+    "published": "2026-09-18",
+    "uid": "dev_e067a361"
+  },
+  {
+    "title": "自定义复选框：等 ::checkmark 真落地再说",
+    "content": "Dev.to 文章讨论自定义复选框的死磕：想用 <div role=\"checkbox\"> 手搓的诱惑极大，代价却要等到键盘用户或读屏用户来用才暴露。作者认为在 CSS 原生的 ::checkmark 伪元素真正发布、跨浏览器可用之前，老老实实用原生 input 加样式才是稳妥选择。一篇把可访问性讲清楚的组件笔记。",
+    "quote": "为好看手搓 checkbox，键盘用户第一个不服。",
+    "source": "Dev.to",
+    "url": "https://dev.to/leobaniak/the-custom-checkbox-stays-hand-rolled-until-checkmark-actually-ships-1ap6",
+    "published": "2026-09-18",
+    "uid": "dev_641903e2"
+  },
+  {
+    "title": "谁在读你的 .env？先过 Touch ID：一个完全本地的 macOS 文件系统方案",
+    "content": "V2EX 开发者开源了一个完全本地化的 macOS 方案：敏感文件（如 .env）被访问前必须先通过 Touch ID 验证，专治「在命令前套 wrapper」的痛点——终端能用，但 IDE、GUI 数据库客户端、后台服务甚至 AI Agent 又要各想一套注入方式。他的思路是把保护下沉到文件系统层，任何入口统一过指纹，对担心密钥被脚本或 Agent 顺手读走的 Mac 开发很实用。",
+    "quote": ".env 谁都能翻，指纹锁终于轮到文件。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1242599",
+    "published": "2026-09-18",
+    "uid": "dev_6085bfb4"
+  },
+  {
+    "title": "AgentOnWeb：把 DeepSeek Harness 塞进所有网页",
+    "content": "V2EX 开发者做了 AgentOnWeb：因为 DeepSeek Harness 只有 web 版，一切换网页就得翻半天找回它的标签，于是干脆写了个浏览器插件把 DSH 注入任意网页，随时随地 Vibe Coding。插件提供 Chill 等多种模式，代码已开源（含 dsh 插件与浏览器插件两部分）。对把 DSH 当主力的人，算是把「随手可用」补上了。",
+    "quote": "工具藏太深，用户就自己写插件把它薅出来。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1242601",
+    "published": "2026-09-18",
+    "uid": "dev_d406ee04"
+  },
+  {
+    "title": "Runner 0.10.0：接入 GitHub Copilot CLI，状态改用 hook 上报",
+    "content": "V2EX 开发者汇总 Runner 本周更新：0.10.0 接入 GitHub Copilot CLI（起因是有朋友想用公司的免费 token），后续还会接 pi 和 opencode；Agent 状态检测也从早期「盯终端字节活动」改成针对不同 Agent 实现 hooks，因为各家 Agent 支持的能力不一样。这是一次把多 Agent 编排做得更规范、更省 token 的迭代。",
+    "quote": "状态靠猜字节的日子结束了，Hook 才是正道。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1242783",
+    "published": "2026-09-18",
+    "uid": "dev_48ad68db"
+  },
+  {
+    "title": "烧 token 可视化桌面篝火（开源 & 免费）",
+    "content": "V2EX 开发者开源了一个 Mac 桌面浮窗篝火：跟着本地 Claude Code / Codex / Cursor 的用量一起烧，token 烧得越多火越旺，还能给不同工具配不同火焰颜色，同时开 Claude Code 和 Codex 就能看到两色火焰混烧，附带篝火白噪音。把「烧钱」做成可视化装饰，深夜 coding 时看着发呆，有种奇怪的治愈感。",
+    "quote": "把账单变成风景，是我见过最浪漫的败家。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1242578",
+    "published": "2026-09-18",
+    "uid": "dev_ecfe48d7"
+  }
+]
