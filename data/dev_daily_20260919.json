@@ -1,0 +1,218 @@
+[
+  {
+    "title": "ZCode 被曝静默上传整份 Git 历史，密钥只握在智谱手里",
+    "content": "开发者 ferstar 逆向智谱旗下 AI 编码桌面应用 ZCode 后发现：只要处于登录状态，它就会把整个工作区打包上传——包括完整的 .git 历史、LFS 资源缓存、reflog 与全局应用配置。第三方站点 tokenstead 称这是「比多数隐私丑闻更糟糕」的发现，而上传数据的密钥只有智谱（Z.ai）持有；本地模型社区常用的 GLM 系列正是其出品。",
+    "quote": "写代码顺手把家底传了，这 Agent 真鸡贼。",
+    "source": "HN Front Page",
+    "url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
+    "published": "2026-09-19",
+    "uid": "dev_61bd7f08"
+  },
+  {
+    "title": "「我不喜欢 Passkey」：技术很好，但我在被逼着用",
+    "content": "开发者 Ethan Hawksley 撰文反思 passkey 的普及：它绑定站点、能防钓鱼，技术上没毛病，他不喜欢的其实是「被强迫」。Google 把关闭选项命名为「尽可能跳过密码」，微软则宣传让账号彻底无密码，每次登录都在劝你从了它，想关掉还得翻设置。他主张：好技术可以推荐，但不该把选择权从用户手里拿走。",
+    "quote": "技术没毛病，逼着人用才是原罪。",
+    "source": "HN Front Page",
+    "url": "https://hawksley.dev/blog/i-dont-like-passkeys",
+    "published": "2026-09-19",
+    "uid": "dev_8aad513f"
+  },
+  {
+    "title": "论文实证：编码 Agent 的 Harness 设计到底有多重要",
+    "content": "arXiv 新论文《An Empirical Study of Harness Design for Coding Agents》系统研究 coding harness 怎样影响自主编码 Agent 把模型能力转化为长周期软件工程成果。作者 Run-Ze Fan 等九人对比不同 harness 设计对 Agent 表现的差异，回答在模型能力既定时，框架与工具链的取舍怎样左右任务成败。",
+    "quote": "模型卷不动了，就开始卷脚手架了。",
+    "source": "HN Front Page",
+    "url": "https://arxiv.org/abs/2609.20804",
+    "published": "2026-09-19",
+    "uid": "dev_0f9f94de"
+  },
+  {
+    "title": "阿里开源 open-code-review：3.6 万星的混合架构代码评审",
+    "content": "阿里开源代码评审工具 open-code-review（Go 编写），主打在阿里体量下经过实战检验。它采用混合架构：确定性流水线负责规则检查，LLM Agent 负责语义理解，两者配合给出精确到行的评审意见，并内置 NPE 等多语言规则集。项目强调安全、快速、高效，已积累约 3.6 万 Star，是近期最热门的代码评审开源项目之一。",
+    "quote": "流水线加 Agent 评审，人只负责点头。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/alibaba/open-code-review",
+    "published": "2026-09-19",
+    "uid": "dev_c0f9f799"
+  },
+  {
+    "title": "OpenSpec：用规格驱动开发给 AI 编码助手立规矩",
+    "content": "GitHub Trending 项目 Fission-AI/OpenSpec 提出「规格驱动开发」（SDD），用 TypeScript 实现，为 AI 编码助手提供一套先写规格、再照着实现的开发范式。它希望在代码被生成之前先明确要做什么，让 Agent 有据可依，减少「先写再猜需求」的返工。项目 Star 已逼近七万，是近期最热的 AI 编程方法论工具之一。",
+    "quote": "先立规矩再让 AI 动手，不然全是返工。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/Fission-AI/OpenSpec",
+    "published": "2026-09-19",
+    "uid": "dev_acbdf136"
+  },
+  {
+    "title": "腾讯开源 Octop：可自托管的多用户多 Agent 助手",
+    "content": "腾讯云开源 Octop（Python 编写），定位是「更聪明的自托管 AI 助手」：支持多用户与多 Agent，可部署在自有服务器上。它面向希望把 AI 助手私有化、同时又要多人协作的团队，用多 Agent 架构分担不同任务。项目已登上 GitHub Trending，Star 约 3900，是腾讯系近期又一枚 AI 基础设施开源项目。",
+    "quote": "自托管加多 Agent，数据终于是自己的。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/TencentCloud/Octop",
+    "published": "2026-09-19",
+    "uid": "dev_3cb86916"
+  },
+  {
+    "title": "开源 WeChat to Markdown：把公众号文章存成本地知识资产",
+    "content": "V2EX 作者开源 Chrome 扩展 WeChat to Markdown：打开公众号文章一键导出本地 Markdown，也可选 HTML/PDF 与图片 ZIP，正文本地解析转换、不上传服务器。作者的理由是收藏夹只是入口——文章会删、图片会挂，真正想要的是能进知识库、可检索、可离线的本地文件，方便归档进 Obsidian、思源、Typora 或 VS Code。",
+    "quote": "收藏夹救不了删文，落盘才算自己的。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1243041",
+    "published": "2026-09-19",
+    "uid": "dev_f07c916f"
+  },
+  {
+    "title": "极空间 NAS 没有命令行？他逆向桌面客户端做了 zspace-cli",
+    "content": "极空间 NAS 好用却没有命令行，批量改名、脚本化备份只能对着 App 点。作者发现桌面客户端会在本机 127.0.0.1:13579 起一个本地中转服务与 NAS 通信，登录态也存在本地，于是把接口整理成开源工具 zspace-cli：pip 安装即用，无需密码、无需 SSH，还提供 MCP 与 Agent Skill，可直接让 Cursor/Claude 代劳整理文件。",
+    "quote": "没有 CLI 就自己造，顺手还逆转了它。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1242926",
+    "published": "2026-09-19",
+    "uid": "dev_91d5a389"
+  },
+  {
+    "title": "Termind：自带 Agent 的 SSH 终端，现已支持 iOS",
+    "content": "V2EX 作者为一款 AI 驱动的 SSH 终端 Termind 更新到 iOS：除基本功能外，新增内置 MCP 服务器供外部 Agent 调用、基于 HTTP 转 SFTP 的文件上传下载（Codex 等可用 curl 传文件）、带持久化记忆的内置 Assistant，以及卡片式监控页，可看 CPU、内存、硬盘与网络 IO，支持在 macOS 菜单栏展示服务器状态，还能保存工作区模版。",
+    "quote": "SSH 终端塞进 Agent，运维也想躺平了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1242844",
+    "published": "2026-09-19",
+    "uid": "dev_85377b89"
+  },
+  {
+    "title": "上下文工程：什么该塞进窗口，什么该被丢掉",
+    "content": "Dev.to 文章指出，「上下文工程」正被误当成「写好系统提示词」的同义词，而这恰恰丢掉了最难的部分：系统提示词是一次性决策，上下文窗口却会在一次运行里不断被填满、必须主动管理。作者强调真正难的是在每次调用时决定放什么、丢什么，这是一个持续权衡的过程，也是让 LLM Agent 在生产环境活下来的关键。",
+    "quote": "提示词写完就完事？上下文才刚开始。",
+    "source": "Dev.to",
+    "url": "https://dev.to/loopandretry/context-engineering-what-fits-and-what-gets-dropped-34ki",
+    "published": "2026-09-19",
+    "uid": "dev_d4db5577"
+  },
+  {
+    "title": "让 LLM 写告警规则，但绝不让它按下开关",
+    "content": "Dev.to 作者复盘 taabi Nexus 平台：车队经理往文本框里敲一句话，几天后卡车行车记录仪就用印地语提醒司机「安全带没系」，整通呼叫无人拨出。背后是「让 LLM 生成告警规则、但绝不让它自己触发动作」的设计：模型只负责把自然语言转成规则，真正执行仍由确定性系统把关，兼顾灵活性与可控性。",
+    "quote": "AI 可以提建议，但开关得握在手里。",
+    "source": "Dev.to",
+    "url": "https://dev.to/sarit_chauhan/letting-an-llm-write-alerting-rules-but-never-letting-it-flip-the-switch-pjk",
+    "published": "2026-09-19",
+    "uid": "dev_0cf33418"
+  },
+  {
+    "title": ".NET 11 性能全解读：什么都不用改，升级就变快",
+    "content": "张善友编译 Stephen Toub 官方长文《Performance Improvements in .NET 11》：这一版没有新 API 要学、没有配置要开、没有「高性能模式」要切，力气全花在少一次边界检查、少一次装箱、少一把锁、把循环交给 SIMD 这些不性感的地方。中文版通读 18 个章节、136 组对照数据、263 个 PR 与 29 位外部贡献者，结论就一句话——升级即提速。",
+    "quote": "最不性感的优化，往往最见真章。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23032468",
+    "published": "2026-09-19",
+    "uid": "dev_76d9241d"
+  },
+  {
+    "title": "一行代码让大模型推理的 overlap scheduler 失效",
+    "content": "博客园笔记指出，overlap scheduler 的前提是 GPU 推理与 CPU 前后处理能同时跑，而每次 CPU 与 GPU 间的同步等待都会把并行切断——只要 cudaStreamSynchronize 一出现，CPU 就得停下等 stream 空出。如 sample 阶段用 args.is_greedy.all() 判断 GPU tensor，便会触发隐式同步、让 overlap 消失。",
+    "quote": "一行判断把并行干没了，性能就这样溜走。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/cswuyg/p/23031766",
+    "published": "2026-09-19",
+    "uid": "dev_38dfcf1c"
+  },
+  {
+    "title": "CLI 还是 MCP？Agent 工具接口的再思考",
+    "content": "博客园文章复盘「MCP 已死，CLI 称王」的说法：Perplexity CTO 宣布内部转向 API 与 CLI、放弃 MCP，YC CEO 直言「MCP sucks」，飞书、钉钉、企业微信纷纷开源自研 CLI。作者的判断是 MCP 不会死，但适用范围正从「个人开发者默认选项」收缩回「企业与云端的安全标准化选项」，而 CLI + Skills 可能是 2026 年最务实的组合。",
+    "quote": "万能接口退位，CLI 悄悄接管工作流。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/codigger/p/23022943",
+    "published": "2026-09-19",
+    "uid": "dev_a231b46b"
+  },
+  {
+    "title": "Show HN: Skillmem — 给编码 Agent 存「方法」而不是「事实」的本地记忆",
+    "content": "Show HN 项目 Skillmem 是给编码 Agent 用的本地记忆层，核心区别在于它记的是「方法」（how）而不是「事实」（what）。它把解决某类任务的方法、步骤沉淀成本地技能，让 Agent 下次遇到同类问题时直接调用经验，而不是重新推理一遍。对反复处理相似重构、部署与调试的团队，能明显减少重复试错和上下文浪费。",
+    "quote": "记住「方法」才算长本事，光背文档谁不会。",
+    "source": "HN Show HN",
+    "url": "https://github.com/liza-studio/skillmem",
+    "published": "2026-09-19",
+    "uid": "dev_1dc7e1b0"
+  },
+  {
+    "title": "Show HN: Talos — 每个工具调用都要过内核关的个人 Agent",
+    "content": "Show HN 项目 Talos 是一个「内核把关」的个人 Agent：它把每一个工具调用都放进内核层做权限与安全校验，Agent 想调什么、能调到什么级别，都必须先经过这道关卡。作者想解决的是 Agent 一旦拿到工具就权限过大、难以审计的老问题，把安全边界从 prompt 层面下沉到执行层。对担心 Agent 乱调用的人，这是个可以参考的设计。",
+    "quote": "prompt 上写的规矩谁信，进内核才算数。",
+    "source": "HN Show HN",
+    "url": "https://github.com/talos-kernel/Talos",
+    "published": "2026-09-19",
+    "uid": "dev_68e41056"
+  },
+  {
+    "title": "Show HN: Forcefield — 用 Go 写的轻量本地优先 Agent harness",
+    "content": "开发者花了三个月用 Go 从零写了一个叫 Forcefield 的 AI Agent harness，起因是本地模型配主流 harness 太别扭。它主打轻量与本地优先：把编排、工具调用、上下文管理做成一套能跑在本地模型上的框架，不依赖云端。对想在本地跑 Agent、又受不了重客户端的人来说，是个可以一试的备选。",
+    "quote": "本地模型没合适外壳，只好自己动手焊一个。",
+    "source": "HN Show HN",
+    "url": "https://github.com/fabledruns/forcefield",
+    "published": "2026-09-19",
+    "uid": "dev_823c1d36"
+  },
+  {
+    "title": "Show HN: pg_raw_parse — 用 Rust 解析 PostgreSQL",
+    "content": "Show HN 项目 pg_raw_parse 把 Postgres 原生 SQL 解析器封装成 Rust 库，用来解析和改写 SQL。它 fork 了 libpg_query 及其 Rust 绑定，让开发者能在 Rust 里稳定拿到 Postgres 级别的语法树，做查询改写、审计、SQL 防火墙之类的活儿。对做数据库中间件或 SQL 分析工具的人，这层绑定省了很多踩坑。",
+    "quote": "自己从零写 SQL 解析器，纯属给自己加戏。",
+    "source": "HN Show HN",
+    "url": "https://github.com/pgdogdev/pg_raw_parse",
+    "published": "2026-09-19",
+    "uid": "dev_2f1ad102"
+  },
+  {
+    "title": "kagent v1.0：把 Claude Code 当成 K8s 托管 Agent 来跑",
+    "content": "Dev.to 文章介绍 kagent 发布 v1.0.0-alpha1：这是它九个月以来的首个 1.0 系列，能把 Claude Code 当作 Kubernetes 里受管的 Agent 来运行。作者以可复现的 demo 仓库演示了完整命令，展示把编码 Agent 纳入 K8s 调度与生命周期管理的做法。对想把 Agent 跑进集群、用基建那套来管的团队，这是个可以跟进的方案。",
+    "quote": "把 Agent 塞进 K8s，出事终于有人背锅了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/webofmike/kagent-v10-can-run-claude-code-as-a-managed-kubernetes-agent-3p50",
+    "published": "2026-09-19",
+    "uid": "dev_26419d67"
+  },
+  {
+    "title": "agentgateway 的两个 CEL 坑：一个 fail open，一个 fail closed",
+    "content": "Dev.to 文章记录了给 LLM 路由写 CEL 授权策略时踩到的两个坑：同样是配置失误，一个会「失败即放行」（fail open），另一个则「失败即拒绝」（fail closed）。作者用可复现的 demo 说明策略里微小的写法差异，会直接决定请求被错误地放过还是被错误地拦下。对做 AI 网关与访问控制的工程师，这两个反例很有警示价值。",
+    "quote": "授权策略写错一个字，防线自己就开了门。",
+    "source": "Dev.to",
+    "url": "https://dev.to/webofmike/two-agentgateway-cel-gotchas-one-fails-open-one-fails-closed-17eg",
+    "published": "2026-09-19",
+    "uid": "dev_43c426c8"
+  },
+  {
+    "title": "AI 竞赛缺的那个问题：我们能解释 Agent 已经干过的事吗",
+    "content": "Dev.to 文章指出 AI 争论常卡在两个立场——一方要减速、一方说加速竞争不可避免，但都漏了一个更现实的问题：我们能不能解释清楚 Agent 到底已经做了什么。作者认为当 Agent 开始自主执行动作后，可追溯与可解释不再只是伦理口号，而是运维与合规的硬需求，否则出了问题连复盘都无从下手。",
+    "quote": "Agent 干完事你一无所知，还谈什么可控。",
+    "source": "Dev.to",
+    "url": "https://dev.to/sirinivask/the-ai-race-has-a-missing-question-can-we-explain-what-our-agents-already-did-4l03",
+    "published": "2026-09-19",
+    "uid": "dev_0bab7ff1"
+  },
+  {
+    "title": "Codex 记忆机制的两条路：压缩历史 vs 主动换窗",
+    "content": "博客园文章拆解 Codex 记忆机制的两条路线：一是压缩历史，二是主动换窗，差别在于细节是否保留、恢复责任放在哪里。作者用 Token Budget、History 和 Notes 三个概念来解释长上下文任务的「接力」机制，说明长任务续航时该保留什么、丢掉什么。对做长周期 Agent 的人，这份机制梳理能帮助理清上下文管理策略。",
+    "quote": "长任务拼的不是模型，是谁记得住事。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/ai-old-six/p/23023802",
+    "published": "2026-09-19",
+    "uid": "dev_3cf546f8"
+  },
+  {
+    "title": "DeepSeek 视觉 API 上线：单张图 0.001 元让 Agent 睁眼",
+    "content": "博客园文章介绍 DeepSeek 在 API 平台上线实验性多模态视觉模型 deepseek-v4-flash-vision-exp：开发者第一次能用自己的 Key 直接让模型看图，单张图成本低至约 0.001 元。作者认为这意味着 Agent 不必再外接 OCR 服务，视觉能力被直接「递到手里」。对想给 Agent 加眼睛、又对成本敏感的团队，是个明显的降本信号。",
+    "quote": "昨天还在接 OCR，今天模型自己长眼了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/uniqueDong/p/23023564",
+    "published": "2026-09-19",
+    "uid": "dev_5a587ee3"
+  },
+  {
+    "title": "FlowLens：终端环境下的流量分析工具（开源）",
+    "content": "V2EX 网友因 VPS 流量异常、找不到顺手工具，索性自己写了个开源流量分析工具 FlowLens，专为资源受限的 Linux 环境设计。它能在终端里看清流量到底被谁吃掉，作者已在 Windows 与 Linux 上使用，Mac 理论上可用但未测试。对排查服务器流量异常、想要轻量监控的人，是个刚需小工具。",
+    "quote": "VPS 流量被偷，抓贼到头来还是得自己动手。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1242993",
+    "published": "2026-09-19",
+    "uid": "dev_6cbf09df"
+  }
+]
