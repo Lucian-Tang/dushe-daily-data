@@ -1,0 +1,214 @@
+{
+  "date": "2026-09-19",
+  "total": 15,
+  "vendors": [
+    "anthropic",
+    "google",
+    "alibaba",
+    "deepseek",
+    "openai",
+    "meta",
+    "amazon",
+    "other"
+  ],
+  "models": {
+    "anthropic": {
+      "displayName": "Anthropic/Claude",
+      "icon": "🧬",
+      "items": [
+        {
+          "uid": "ai_9812b91c",
+          "title": "安全团队借 Claude 攻破 OpenAI 内部代码库",
+          "content": "安全公司 Hacktron 的三名研究员称，借助 Anthropic 的 Claude Opus 4.8 与 5，不到 72 小时就攻破了 OpenAI 员工账号，进入其内部代码仓库「Monorepo」，其中据称存有「算法机密」。研究者利用堆溢出与 SSO 配置错误拿下会话，再以 AI 加速漏洞利用与横向移动，随后上报并获修复。事件再度引爆「AI 既是攻击工具、也是被攻击目标」的讨论。",
+          "quote": "用别家的 AI 撬开自家门——最会打 AI 的还是 AI。",
+          "source": "HN / Hacktron",
+          "url": "https://www.hacktron.ai/blog/hacking-openai",
+          "published": "2026-09-19",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_58dee964",
+          "title": "GitHub 热榜：affaan-m/ECC——给编程 Agent 装一套「工程作业系统」",
+          "content": "GitHub 热榜项目 ECC 自称「Agent 脚手架的作业系统」，为 Claude Code、Codex、Cursor 等编程 Agent 提供协同工程流程：先规划再动手、用测试验证改动、换新上下文复盘产出、记住关键信息，并把重复的成功做法沉淀为可复用技能。作者称内含 68 个 Agent、292 项技能与 94 条命令，另配 AgentShield 安全扫描，MIT 永久开源。",
+          "quote": "让 Agent 先计划再动手——省得它一路狂飙闯祸。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/affaan-m/ECC",
+          "published": "2026-09-19",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_5ba1c876",
+          "title": "GitHub 热榜：Tencent/BrowserSkill——让 Agent 借用你的真实浏览器",
+          "content": "腾讯开源的 BrowserSkill 让 AI Agent 借用你「已登录」的真实浏览器：Agent 需显式申请某个标签页，用完归还，其余标签页一概不碰。它提供 CLI 加浏览器扩展，兼容 Cursor、Claude Code、Codex 等开工环境，TypeScript 编写，已获 5.1k 星。动态页面抓取与需登录态的操作一直是 Agent 的老大难，复用真人会话正好绕开门槛。",
+          "quote": "登录态也能借——方便是真方便，风险也是真风险。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/Tencent/BrowserSkill",
+          "published": "2026-09-19",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_97835f87",
+          "title": "Dev.to：用 MCP 给 AI Agent 装上 WhatsApp 超能力",
+          "content": "一篇教程演示用 MCP（模型上下文协议）让 AI 助理自己处理 WhatsApp 收件箱：查订单、给客户回消息一气呵成。文章称 MCP 已被 claude.ai、ChatGPT、Cursor 等主流客户端与多数 Agent 框架支持，接入一个托管的远程 MCP 服务器即可，无需 SDK、无需自托管。示例服务器 Tokolaku 基于 Meta 官方 WhatsApp Cloud API。",
+          "quote": "让 AI 替你回 WhatsApp——客服这下真要紧张了。",
+          "source": "Dev.to",
+          "url": "https://dev.to/rustam335/give-your-ai-agent-whatsapp-superpowers-with-mcp-official-business-api-3f9l",
+          "published": "2026-09-19",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "google": {
+      "displayName": "Google/Gemini",
+      "icon": "🌐",
+      "items": [
+        {
+          "uid": "ai_5fe7e51d",
+          "title": "阿里通义千问发布 Qwen3.8-Omni-Flash 全模态模型",
+          "content": "阿里发布 Qwen3.8-Omni-Flash，一款 1M token 上下文的全模态（omni）模型，主打 Agent 化的音视频理解与工具调用。官方称其音视频处理能力可对标 Gemini 3.8 Flash，音频输入成本降低约 98%，推理走「Flash」快线。它把文本、图像、音视频统一进同一套 Agent 工作流，被视为国产全模态模型在成本与延迟上的一次正面进攻。",
+          "quote": "全模态还卖 Flash 的价——友商的账单要重新算了。",
+          "source": "HN / Qwen",
+          "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+          "published": "2026-09-19",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "alibaba": {
+      "displayName": "阿里巴巴/Qwen",
+      "icon": "☁️",
+      "items": [
+        {
+          "uid": "ai_6330ca9e",
+          "title": "Ternary Bonsai 2 27B：三值量化把 27B 塞进 5.9GB",
+          "content": "PrismML 发布 Ternary Bonsai 2 27B，基于 Qwen3.8 27B，权重取 -1/0/+1 三值并配 FP16 分组缩放，等效 1.76 bit/权重，整模型仅 5.9GB，比全精度小 9 倍以上，却保留 98.2% 综合基准分。支持 262K 上下文与图文多模态，Apache 2.0 开源。其推理、编码、视觉与长程 Agent 能力几乎无损，主打本地设备的智能密度。",
+          "quote": "压掉九成体积还留着九成八的脑子——量化这次真赢了。",
+          "source": "HN / PrismML",
+          "url": "https://prismml.com/news/bonsai-2-27b",
+          "published": "2026-09-19",
+          "direction": "模型发布"
+        }
+      ]
+    },
+    "deepseek": {
+      "displayName": "DeepSeek",
+      "icon": "🔍",
+      "items": [
+        {
+          "uid": "ai_9b384057",
+          "title": "Needle 3：8-29MB 端侧基础模型，4 层便能对标 DeepSeek V4 Flash",
+          "content": "Cactus 发布 Needle 3，一套 8-29MB 的端侧基础模型，基于 Simple Attention Network 与 CQ2 量化，跑在树莓派 5 上可达 400-4k tokens/s 解码。它采用「智能阶梯」：同一组权重支持 2 到 20 层，4 层经下游微调后即可对标 DeepSeek V4 Flash。主打手机、机器人、汽车、微控制器的本地工具调用与结构化抽取。",
+          "quote": "把大模型塞进手表——这次砍的是参数，不是活儿。",
+          "source": "HN / Cactus",
+          "url": "https://cactuscompute.com/needle",
+          "published": "2026-09-19",
+          "direction": "模型发布"
+        }
+      ]
+    },
+    "openai": {
+      "displayName": "OpenAI/GPT",
+      "icon": "🔬",
+      "items": [
+        {
+          "uid": "ai_fda68d42",
+          "title": "微软高管内部邮件称 AI 抓取是「史无前例的盗窃」",
+          "content": "《纽约时报》诉微软、OpenAI 版权案的解封文件显示，微软应用科学总监 Brent Hecht 曾写道：全球数百万人很快会把大模型「吸走」他们全部作品视为「史无前例规模的惊人盗窃」，几乎没人希望自己创作的内容被这样使用，也无人因此获得补偿。微软另一份文件则把 Hecht 描述成「拿钱唱反调」的人。这段内部表态被原告律师当庭引用，令科技巨头对训练数据的态度再度成为焦点。",
+          "quote": "自家高管都说是盗窃——这话在法庭上格外响。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal/",
+          "published": "2026-09-19",
+          "direction": "研究/论文"
+        }
+      ]
+    },
+    "meta": {
+      "displayName": "Meta/LLaMA",
+      "icon": "👁️",
+      "items": [
+        {
+          "uid": "ai_3653d9ba",
+          "title": "Manus 谋求 40 亿美元估值，重启独立运营",
+          "content": "据 TechCrunch 报道，AI Agent 公司 Manus 正洽谈以 40 亿美元估值融资 5 亿美元。今年早些时候，Manus 曾被迫中止与 Meta 的合并交易，如今重新以独立公司身份推进融资。作为早期走红的通用 Agent 产品，Manus 的估值走向被视为消费级 AI Agent 赛道冷热的温度计——在巨头自研 Agent 密集发布的当下，独立产品还能否撑起高估值，市场正给出答案。",
+          "quote": "和 Meta 分了手，转头就喊 40 亿——自信是要钱的。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/18/manus-seeks-4b-valuation-in-new-500m-fundraise-as-it-resumes-independent-ops/",
+          "published": "2026-09-19",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "amazon": {
+      "displayName": "Amazon/AWS",
+      "icon": "📦",
+      "items": [
+        {
+          "uid": "ai_1c20ba6c",
+          "title": "V2EX：商汤 SenseNova-Skills 上新，主打办公与多 Agent 协作",
+          "content": "网友发现商汤 SenseNova-Skills 仓库更新多个办公向技能：Proactive Agent 能从多轮对话里整理项目进展、保存事项状态，在工作台展示进度与日报，接续 vibe coding 时不必重讲背景；sn-motion-html 能生成随滚动推进的「一镜到底」网页；sn-team-harness 则把人、Agent、任务与成果放进同一自托管工作区，支持版本查看与复核。",
+          "quote": "办公 Agent 开始管你的项目进度，摸鱼更难了。",
+          "source": "V2EX",
+          "url": "https://www.v2ex.com/t/1243083",
+          "published": "2026-09-19",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "other": {
+      "displayName": "其他",
+      "icon": "📰",
+      "items": [
+        {
+          "uid": "ai_4cc80210",
+          "title": "arXiv：RAFT——面向排障 Agent 的有状态检索框架",
+          "content": "排障 Agent 依赖从历史相似工单检索可执行方案，但传统 RAG 把工单当静态文档，忽略其多阶段、有状态的特点。论文提出 RAFT：把每个已结工单抽象成时间线条目链，在「条目级」检索，召回中间状态匹配的工单并返回锚定该状态的母工单轨迹。团队用合成基准与真实 Jira 数据验证，Case Hit 各阶段均优于 vanilla RAG 与 GraphRAG，已被 EMNLP 2026 工业赛道接收。",
+          "quote": "检索要认得出「我卡在第几步」——静态 RAG 学不会。",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2609.20754",
+          "published": "2026-09-19",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_78bab85d",
+          "title": "arXiv：让 LLM 读懂表格，靠的不是分类而是降维",
+          "content": "论文指出，用语义单元格标注改进电子表格分块，能提升 RAG 可解释性，却帮不了检索准确率，且很快撞到天花板：表格本质是二维非结构化数据，单元格角色近乎无限，任何有限分类模型（哪怕人级标注）都无法完整刻画。作者主张跳出离散单元格分类，转向「降维」——把二维非结构化表格直接摊平成一维非结构化文本，让下游 RAG 更易解释与生成。",
+          "quote": "给表格贴标签治标不治本，得把它拍平成一句话。",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2609.20732",
+          "published": "2026-09-19",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_9c13a676",
+          "title": "加州州长纽森签行政令，欲给前沿模型装「紧急开关」",
+          "content": "加州州长 Gavin Newsom 周五签署行政令，力图让加州在 AI 监管上「领跑」。命令要求召集专家组，两个月内就强化州法中的 AI 安全措施的路径提交建议，包括：要求 AI 公司在现场常驻独立核查团队并接受定期审计、把透明度报告与风险评估交独立审计方按标准核验，以及为前沿模型设置可被触发的「紧急开关（kill switch）」。在国会中期选举前难有动作之际，州层面抢先出手。",
+          "quote": "联邦不动州先动——给模型装个物理断电按钮。",
+          "source": "The Verge",
+          "url": "https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch",
+          "published": "2026-09-19",
+          "direction": "政策/合规"
+        },
+        {
+          "uid": "ai_2ec48b91",
+          "title": "GitHub 热榜：addyosmani/agent-skills——给 Agent 补生产级工程课",
+          "content": "Addy Osmani 开源的 agent-skills 主张给 AI 编程 Agent 补上生产级工程技能，JavaScript 编写，星标约 9.6 万。项目把资深工程师的开发流程沉淀为可装载技能包：从定义、规划、构建到验证、审查、交付六个阶段，把代码审查、测试、性能、可访问性等质量关卡写成 Agent 必须遵循的流程。随着 Agent 接手越来越多真实代码库，先给它补工程课正成为团队共识。",
+          "quote": "别让 Agent 自由发挥——给它一套写死的工程规范。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "published": "2026-09-19",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_ecdfd8cb",
+          "title": "Dev.to：用 Cypress 测流式 AI 界面，别去逐 token 断言",
+          "content": "作者分享用 Cypress 测试流式 AI 界面：一旦断言写成必须依次吐出 Hel→Hello→Hello, I→Hello, I can help 这样精确的 token 序列，测试就会变得极其脆弱。因为分块边界只是传输层的细节，会随缓冲策略变化而变，把它写死等于自找麻烦。文章主张换一种思路，不去逐个 token 断言，而是校验对用户真正可见的最终结果，让流式测试更稳、更少误报。",
+          "quote": "别去断言每个 token——分块边界本来就不该管。",
+          "source": "Dev.to",
+          "url": "https://dev.to/raju_dandigam/testing-streaming-ai-interfaces-with-cypress-without-asserting-every-token-9a4",
+          "published": "2026-09-19",
+          "direction": "行业动态"
+        }
+      ]
+    }
+  }
+}
