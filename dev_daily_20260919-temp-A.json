@@ -1,0 +1,128 @@
+[
+  {
+    "title": "ZCode 被曝静默上传整份 Git 历史，密钥只握在智谱手里",
+    "content": "开发者 ferstar 逆向智谱旗下 AI 编码桌面应用 ZCode 后发现：只要处于登录状态，它就会把整个工作区打包上传——包括完整的 .git 历史、LFS 资源缓存、reflog 与全局应用配置。第三方站点 tokenstead 称这是「比多数隐私丑闻更糟糕」的发现，而上传数据的密钥只有智谱（Z.ai）持有；本地模型社区常用的 GLM 系列正是其出品。",
+    "quote": "写代码顺手把家底传了，这 Agent 真鸡贼。",
+    "source": "HN Front Page",
+    "url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
+    "published": "2026-09-19",
+    "uid": "dev_ab33fb31"
+  },
+  {
+    "title": "「我不喜欢 Passkey」：技术很好，但我在被逼着用",
+    "content": "开发者 Ethan Hawksley 撰文反思 passkey 推广：它绑定站点、能防钓鱼，技术上没毛病，他不喜欢的其实是「被强迫」。Google 把关闭选项命名为「尽可能跳过密码」，微软则宣传让账号彻底无密码，每次登录都在劝你从了它，想关掉还得翻设置。他主张：好技术可以推荐，但不该把选择权从用户手里拿走。",
+    "quote": "技术没毛病，逼着人用才是原罪。",
+    "source": "HN Front Page",
+    "url": "https://hawksley.dev/blog/i-dont-like-passkeys",
+    "published": "2026-09-19",
+    "uid": "dev_0fdf144f"
+  },
+  {
+    "title": "论文实证：编码 Agent 的 Harness 设计到底有多重要",
+    "content": "arXiv 新论文《An Empirical Study of Harness Design for Coding Agents》系统研究 coding harness 如何影响自主编码 Agent 把模型能力转化为长周期软件工程成果。作者 Run-Ze Fan 等九人对比不同 harness 设计对 Agent 表现的差异，回答在模型能力既定时，框架与工具链的取舍如何左右任务成败。",
+    "quote": "模型卷不动了，就开始卷脚手架了。",
+    "source": "HN Front Page",
+    "url": "https://arxiv.org/abs/2609.20804",
+    "published": "2026-09-19",
+    "uid": "dev_2a17b5b2"
+  },
+  {
+    "title": "阿里开源 open-code-review：3.6 万星的混合架构代码评审",
+    "content": "阿里开源代码评审工具 open-code-review（Go 编写），主打在阿里体量下经过实战检验。它采用混合架构：确定性流水线负责规则检查，LLM Agent 负责语义理解，两者配合给出精确到行的评审意见，并内置 NPE 等多语言规则集。项目强调安全、快速、高效，已积累约 3.6 万 Star，是近期最热门的代码评审开源项目之一。",
+    "quote": "流水线加 Agent 评审，人只负责点头。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/alibaba/open-code-review",
+    "published": "2026-09-19",
+    "uid": "dev_ab67c262"
+  },
+  {
+    "title": "OpenSpec：用规格驱动开发给 AI 编码助手立规矩",
+    "content": "GitHub Trending 项目 Fission-AI/OpenSpec 提出「规格驱动开发」（SDD），用 TypeScript 实现，为 AI 编码助手提供一套先写规格、再照着实现的开发范式。它希望在代码被生成之前先明确要做什么，让 Agent 有据可依，减少「先写再猜需求」的返工。项目 Star 已逼近七万，是近期最热的 AI 编程方法论工具之一。",
+    "quote": "先立规矩再让 AI 动手，不然全是返工。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/Fission-AI/OpenSpec",
+    "published": "2026-09-19",
+    "uid": "dev_3d25312d"
+  },
+  {
+    "title": "腾讯开源 Octop：可自托管的多用户多 Agent 助手",
+    "content": "腾讯云开源 Octop（Python 编写），定位是「更聪明的自托管 AI 助手」：支持多用户与多 Agent，可部署在自有服务器上。它面向希望把 AI 助手私有化、同时又要多人协作的团队，用多 Agent 架构分担不同任务。项目已登上 GitHub Trending，Star 约 3900，是腾讯系近期又一枚 AI 基础设施开源项目。",
+    "quote": "自托管加多 Agent，数据终于是自己的。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/TencentCloud/Octop",
+    "published": "2026-09-19",
+    "uid": "dev_116d9233"
+  },
+  {
+    "title": "开源 WeChat to Markdown：把公众号文章存成本地知识资产",
+    "content": "V2EX 作者开源 Chrome 扩展 WeChat to Markdown：打开公众号文章一键导出本地 Markdown，也可选 HTML/PDF 与图片 ZIP，正文本地解析转换、不上传服务器。作者的理由是收藏夹只是入口——文章会删、图片会挂，真正想要的是能进知识库、可检索、可离线的本地文件，方便归档进 Obsidian、思源、Typora 或 VS Code。",
+    "quote": "收藏夹救不了删文，落盘才算自己的。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1243041",
+    "published": "2026-09-19",
+    "uid": "dev_a94e9b57"
+  },
+  {
+    "title": "极空间 NAS 没有命令行？他逆向桌面客户端做了 zspace-cli",
+    "content": "极空间 NAS 好用却没有命令行，批量改名、脚本化备份只能对着 App 点。作者发现桌面客户端会在本机 127.0.0.1:13579 起一个本地代理与 NAS 通信，登录态也存在本地，于是把接口整理成开源工具 zspace-cli：pip 安装即用，无需密码、无需 SSH，还提供 MCP 与 Agent Skill，可直接让 Cursor/Claude 代劳整理文件。",
+    "quote": "没有 CLI 就自己造，顺手还逆转了它。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1242926",
+    "published": "2026-09-19",
+    "uid": "dev_c22373f7"
+  },
+  {
+    "title": "Termind：自带 Agent 的 SSH 终端，现已支持 iOS",
+    "content": "V2EX 作者为一款 AI 驱动的 SSH 终端 Termind 更新到 iOS：除基本功能外，新增内置 MCP 服务器供外部 Agent 调用、基于 HTTP 转 SFTP 的文件上传下载（Codex 等可用 curl 传文件）、带持久化记忆的内置 Assistant，以及卡片式监控页，可看 CPU、内存、硬盘与网络 IO，支持在 macOS 菜单栏展示服务器状态，还能保存工作区模版。",
+    "quote": "SSH 终端塞进 Agent，运维也想躺平了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1242844",
+    "published": "2026-09-19",
+    "uid": "dev_0d17a537"
+  },
+  {
+    "title": "上下文工程：什么该塞进窗口，什么该被丢掉",
+    "content": "Dev.to 文章指出，「上下文工程」正被误当成「写好系统提示词」的同义词，而这恰恰丢掉了最难的部分：系统提示词是一次性决策，上下文窗口却会在一次运行里不断被填满、必须主动管理。作者强调真正难的是在每次调用时决定放什么、丢什么，这是一个持续权衡的过程，也是让 LLM Agent 在生产环境活下来的关键。",
+    "quote": "提示词写完就完事？上下文才刚开始。",
+    "source": "Dev.to",
+    "url": "https://dev.to/loopandretry/context-engineering-what-fits-and-what-gets-dropped-34ki",
+    "published": "2026-09-19",
+    "uid": "dev_ad86af38"
+  },
+  {
+    "title": "让 LLM 写告警规则，但绝不让它按下开关",
+    "content": "Dev.to 作者复盘 taabi Nexus 平台：车队经理往文本框里敲一句话，几天后卡车行车记录仪就用印地语提醒司机「安全带没系」，整通呼叫无人拨出。背后是「让 LLM 生成告警规则、但绝不让它自己触发动作」的设计：模型只负责把自然语言转成规则，真正执行仍由确定性系统把关，兼顾灵活性与可控性。",
+    "quote": "AI 可以提建议，但开关得握在手里。",
+    "source": "Dev.to",
+    "url": "https://dev.to/sarit_chauhan/letting-an-llm-write-alerting-rules-but-never-letting-it-flip-the-switch-pjk",
+    "published": "2026-09-19",
+    "uid": "dev_0e7aafa6"
+  },
+  {
+    "title": ".NET 11 性能全解读：什么都不用改，升级就变快",
+    "content": "张善友编译 Stephen Toub 官方长文《Performance Improvements in .NET 11》：这一版没有新 API 要学、没有配置要开、没有「高性能模式」要切，力气全花在少一次边界检查、少一次装箱、少一把锁、把循环交给 SIMD 这些不性感的地方。中文版通读 18 个章节、136 组对照数据、263 个 PR 与 29 位外部贡献者，结论就一句话——升级即提速。",
+    "quote": "最不性感的优化，往往最见真章。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23032468",
+    "published": "2026-09-19",
+    "uid": "dev_a0d21aee"
+  },
+  {
+    "title": "一行代码让大模型推理的 overlap scheduler 失效",
+    "content": "博客园笔记指出，overlap scheduler 的前提是 GPU 推理与 CPU 前后处理能同时跑，而每次 CPU 与 GPU 间的同步等待都会把并行切断——只要 cudaStreamSynchronize 一出现，CPU 就得停下等 stream 空出。如 sample 阶段用 args.is_greedy.all() 判断 GPU tensor，便会触发隐式同步、让 overlap 消失。",
+    "quote": "一行判断把并行干没了，性能就这样溜走。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/cswuyg/p/23031766",
+    "published": "2026-09-19",
+    "uid": "dev_0a8295d1"
+  },
+  {
+    "title": "CLI 还是 MCP？Agent 工具接口的再思考",
+    "content": "博客园文章复盘「MCP 已死，CLI 称王」的说法：Perplexity CTO 宣布内部转向 API 与 CLI、放弃 MCP，YC CEO 直言「MCP sucks」，飞书、钉钉、企业微信纷纷开源自研 CLI。作者的判断是 MCP 不会死，但适用范围正从「个人开发者默认选项」收缩回「企业与云端的安全标准化选项」，而 CLI + Skills 可能是 2026 年最务实的组合。",
+    "quote": "万能接口退位，CLI 悄悄接管工作流。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/codigger/p/23022943",
+    "published": "2026-09-19",
+    "uid": "dev_3c04cab0"
+  }
+]
