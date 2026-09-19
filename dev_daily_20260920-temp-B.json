@@ -1,0 +1,128 @@
+[
+  {
+    "title": "Show HN: Mati —— 给 Claude Code 装一层本地护栏",
+    "content": "Show HN 项目 Mati 给 Claude Code 与 Codex 加了一层本地「护栏」：作者发现很多关键的产品约束只存在工程师或产品经理脑子里，于是把它做成可配置的本地策略层，决定 Agent 到底被允许做什么。对已经不放心把编码 Agent 直接放开权限的团队来说，这比事后 code review 更前置。",
+    "quote": "把脑子里的规矩写成护栏，AI 才不敢乱来。",
+    "source": "HN Show HN",
+    "url": "https://github.com/ioni-dev/mati",
+    "published": "2026-09-20",
+    "uid": "dev_a9455967"
+  },
+  {
+    "title": "Show HN: legcli —— Claude Code 限流后，Codex 在同一终端顶上",
+    "content": "Show HN 项目 legcli 解决一个很现实的问题：Claude Code 触发 5 小时用量上限后，能不能在同一个终端里让 Codex 无缝接上继续干活。作者把多个编码 Agent 串成一条链，一个额度耗尽就自动切换下一个，省去手动换工具、重开上下文的麻烦，主打「不想因为限流停下」。",
+    "quote": "Claude 罢工，Codex 顶上，打工人不许停。",
+    "source": "HN Show HN",
+    "url": "https://github.com/ucsandman/legcli",
+    "published": "2026-09-20",
+    "uid": "dev_bbb4d841"
+  },
+  {
+    "title": "Show HN: Fentaris —— 用一个网关代理管理所有 MCP server",
+    "content": "Show HN 项目 Fentaris 是开源的 MCP 代理：把多个 MCP server 收拢到一个统一入口后面，集中提供路由、鉴权、策略与可观测性。随着 MCP 工具越接越多、配置越散越乱，这种「一个 endpoint 管所有工具」的网关思路，正在成为 Agent 基础设施里越来越刚需的一环。",
+    "quote": "MCP 接多了，不来个网关真得乱套。",
+    "source": "HN Show HN",
+    "url": "https://github.com/Fentaris/fentaris",
+    "published": "2026-09-20",
+    "uid": "dev_ae84e418"
+  },
+  {
+    "title": "Show HN: Htmldoc —— 即时渲染编码 Agent 写出的 HTML",
+    "content": "Show HN 项目 Htmldoc 是一个专门用来渲染编码 Agent 写出 HTML 的 pastebin。Agent 越来越爱直接吐 HTML 页面，但在聊天窗口和代码块里根本看不了效果，于是作者做了个即贴即渲染的在线预览页，让「生成即所见」这件事对 Agent 的输出也成立。",
+    "quote": "AI 写的 HTML，终于能亲眼看一眼了。",
+    "source": "HN Show HN",
+    "url": "https://htmldoc.space",
+    "published": "2026-09-20",
+    "uid": "dev_6690de93"
+  },
+  {
+    "title": "Whoosh 里的短语与邻近查询：别再用词袋糊弄引号",
+    "content": "Dev.to 文章讲搜索里的一个细节：用户给词加引号就是「较真」。在 Whoosh 里实现「machine learning」这样的短语与邻近查询（\"machine learning\"~2），才能避免 machine 与 learning 分处不同段落却被算作命中；作者解释为何词袋打分在这类场景会翻车，以及短语、邻近查询该怎么正确实现。",
+    "quote": "用户加了引号，就别拿词袋糊弄他。",
+    "source": "Dev.to",
+    "url": "https://dev.to/priyasundaram/machine-learning2-phrase-and-proximity-search-in-whoosh-5chk",
+    "published": "2026-09-20",
+    "uid": "dev_54843da1"
+  },
+  {
+    "title": "AI 能生成更多 UI，可谁来替它守住一致性",
+    "content": "Dev.to 文章抛出一个被 AI 提速掩盖的问题：让编码模型描述一个组件，几分钟就能拿到实现、类型、测试、文档甚至多个变体，生成速度早已超过团队审阅速度。作者追问：当 UI 被批量生产，谁来保证设计语言、间距与交互的一致性？答案恐怕要回到设计系统与约束，而不是靠人肉 review。",
+    "quote": "AI 一天生成一堆 UI，一致性谁来背锅？",
+    "source": "Dev.to",
+    "url": "https://dev.to/vellira/ai-can-generate-more-ui-who-keeps-it-consistent-mkf",
+    "published": "2026-09-20",
+    "uid": "dev_c27cbb32"
+  },
+  {
+    "title": "你的 Agent 正在花钱让聊天模型点头说 Yes",
+    "content": "Dev.to 文章算了一笔 Agent 的隐形账：一次任务里藏着无数「没人看见」的判断——该用哪个技能、四千行命令输出里哪段才重要、校验器报的差距是真是假，这些全被默认交给一个聊天大模型来拍板。作者认为很多决策本可用更便宜、更专用的判断层，却让最贵的聊天模型替你点头。",
+    "quote": "最贵的大脑，用来回答最廉价的 yes/no。",
+    "source": "Dev.to",
+    "url": "https://dev.to/donk8r/your-agent-is-paying-a-chat-model-to-say-yes-2337",
+    "published": "2026-09-20",
+    "uid": "dev_9c03cb96"
+  },
+  {
+    "title": "告别随手用的在线小工具，他自建了 100% 本地替代",
+    "content": "Dev.to 文章讲作者为何不再随手用网上的在线小工具：格式化 JSON、解码 JWT、比对代码片段，这些便利背后是把数据交给不知底细的网站。于是他干脆自建一套 100% 本地的替代方案，随时可用、数据不出本机。对越来越在意隐私与数据主权的开发者，这个「顺手工具本地化」的思路值得借鉴。",
+    "quote": "把数据喂给陌生网站，才是最大的不便利。",
+    "source": "Dev.to",
+    "url": "https://dev.to/cancerdude/why-i-stopped-using-random-online-tools-and-built-my-own-100-local-alternative-4gpk",
+    "published": "2026-09-20",
+    "uid": "dev_028d4e01"
+  },
+  {
+    "title": "Cloudflare 这个老功能，被 AI Coding 重新带火了",
+    "content": "博客园文章讲 Cloudflare 一个存在多年的老功能被 AI Coding 重新带火：一条命令就能把本机 localhost 变成公网 HTTPS 地址。过去它只是临时分享网站的方便工具，如今在 AI 编码场景里价值陡增——本地跑起来的服务、Webhook 回调、给 Agent 或同事演示，都能靠它秒变公网可访问，省去一堆内网穿透折腾。",
+    "quote": "老工具没变，是 AI 时代给它发了新岗。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/kaifazhinan/p/23040147/cloudflare-tunnels",
+    "published": "2026-09-20",
+    "uid": "dev_2111041d"
+  },
+  {
+    "title": "年薪 128 万美元：FDE 是 AI 落地的船票，还是更贵的外包工牌",
+    "content": "博客园文章用一组数字拆解 FDE（前向部署工程师）这个岗位：Indeed 上相关职位一年内从 643 个涨到 5330 个，顶级从业者年包接近 128 万美元。但作者也泼了盆冷水——一份覆盖 1500 名 FDE 的调研显示，这个岗位到底是 AI 落地的船票，还是更贵的外包工牌，答案并不乐观。",
+    "quote": "年薪百万的光环，也可能是高级外包马甲。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/xiaobaiysf/p/23037239",
+    "published": "2026-09-20",
+    "uid": "dev_8150941e"
+  },
+  {
+    "title": "怎么扒开 codex 与后端大模型的交互细节",
+    "content": "博客园文章教你怎么看清 codex（ChatGPT）到底往后端发了什么：思路是把它的流量引到本地代理上，再在代理里看经过的请求与响应。作者梳理了两条路——用 Charles 这类正向代理开端口，或做一层反向代理转发，都能把原本黑盒的模型交互变成可抓取、可复盘的明文，方便排查 prompt 与返回异常。",
+    "quote": "想知道 AI 背着你说了啥，先架个代理。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/grey-wolf/p/23039479",
+    "published": "2026-09-20",
+    "uid": "dev_043982fe"
+  },
+  {
+    "title": "[开源] Flotilla v1.0.0：让 AI 一次管理所有服务器，但每步都过人审批",
+    "content": "V2EX 作者开源 Flotilla v1.0.0：起因是自己做梯子时常在多个 SSH 之间跳来跳去，还会把指令发错服务器，每次让 AI 改动都要重复交代每台机器的情况。Flotilla 让 AI 一次性管理所有服务器，但把每一步操作都设计成必须经过人工审批，主打「省事但不放权」，避免 Agent 在无人监督下乱改生产。",
+    "quote": "AI 管服务器可以，动手前先摇人审批。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1243168",
+    "published": "2026-09-20",
+    "uid": "dev_b69fa117"
+  },
+  {
+    "title": "实测：给 Coding Agent 接 LSP 语义检索，不一定比 grep 好用",
+    "content": "V2EX 作者做了个实测：给 Coding Agent 接一套基于 LSP 的语义导航（查引用、跳定义、列符号），再和日常 grep 对比，看哪个更好用。他在 3 个 Claude 模型与多个 Python/TypeScript 仓库上测了定位代码、找全引用、多文件重命名三类任务，结论有点反直觉——语义检索不一定比朴素的 grep 更强，关键看任务类型。",
+    "quote": "高大上的 LSP，未必比 grep 更懂代码。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1243146",
+    "published": "2026-09-20",
+    "uid": "dev_8da8d981"
+  },
+  {
+    "title": "clidex：一个不经过第三方中转的 claude/codex 命令行 Agent",
+    "content": "V2EX 作者做了 clidex：一个不经过第三方中转的 claude/codex 命令行 Agent。它主打原生级稳定、告别劣质中转带来的延迟与「掺水」模型，同时完整保留原生 Claude 与 Codex 的终端习惯，敲一行命令就能开箱即用，价格上不设月费、纯按 Token 计费。对在意模型来源与延迟的开发者是个替代选项。",
+    "quote": "被中转坑多了，就自己直连官方。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1243116",
+    "published": "2026-09-20",
+    "uid": "dev_34afe9ec"
+  }
+]
