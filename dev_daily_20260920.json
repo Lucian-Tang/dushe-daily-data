@@ -1,0 +1,218 @@
+[
+  {
+    "title": "从 Rust 转来的人，第一次写 Zig 是什么体验",
+    "content": "一位从 Rust 转来的开发者分享初用 Zig 的感受：编译快、几乎不用等，少了借用检查器的纠缠，写起来更接近直接操作机器；但代价是包管理与生态尚不成熟，泛型和元编程也不如 Rust 强大。作者的结论是，Zig 让人重新体会「简单即效率」，但要在生产里取代 Rust，路还长。",
+    "quote": "逃离借用检查器，奔向没有生态的自由。",
+    "source": "HN Front Page",
+    "url": "https://besok.github.io/posts/what-zig-felt-like-coming-from-rust/",
+    "published": "2026-09-20",
+    "uid": "dev_b11aa159"
+  },
+  {
+    "title": "PlanetScale 发布 Tin：把全文检索直接做进 Postgres",
+    "content": "PlanetScale 发布 Tin，把全文检索直接做进 Postgres，让开发者不必为了加搜索再单独部署一套 Elasticsearch。它面向日志与内容型检索场景优化，官方称在小规模场景比 ES 更省钱、更省运维。对已经用 Postgres 的项目来说，能少一个外部依赖，就少一份半夜被报警吵醒的风险。",
+    "quote": "「搜索就上 ES」的肌肉记忆，该改改了。",
+    "source": "HN Front Page",
+    "url": "https://planetscale.com/blog/introducing-tin",
+    "published": "2026-09-20",
+    "uid": "dev_c40c2383"
+  },
+  {
+    "title": "Cloudflare 再用数学省下 100TB 内存",
+    "content": "Cloudflare 分享他们又一次用数学手段省下 100TB 内存：通过改造压缩算法与内存布局，让大规模边缘服务在同样硬件上承载更多流量。文章强调这不是去买更贵的机器，而是把「每 PB 流量要烧掉多少内存」当成一等指标去抠。省下的每一个 TB，都是实打实的成本。",
+    "quote": "内存不够？不如先把数学补一补。",
+    "source": "HN Front Page",
+    "url": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/",
+    "published": "2026-09-20",
+    "uid": "dev_1848c5fa"
+  },
+  {
+    "title": "GPT-6 Astra 破译一战德军无线电密文",
+    "content": "有研究用 GPT-6 Astra 破译了一段一战时期的德军无线电密码。模型在海量历史密文与语言学线索中寻找规律，把原本需要密码学家人工攻坚数月的活儿压缩到很短时间完成。这不只是一次炫技，更意味着 AI 正在把专家直觉，变成可大规模复制的推理能力。",
+    "quote": "密码学家还没退休，饭碗先端走了。",
+    "source": "HN Front Page",
+    "url": "https://www.prinzai.com/p/gpt-6-astra-solves-a-wwi-german-radio",
+    "published": "2026-09-20",
+    "uid": "dev_7480bee9"
+  },
+  {
+    "title": "Laya：爆火「闭嘴模型」Jev 的开源复刻版",
+    "content": "针对近期爆火的「闭嘴模型」Jev，社区推出了开源复刻版 Laya。Jev 由 TypeSafe AI 出品，不生成自然语言，只按预设 Schema 输出选项与概率，主打极快、极便宜的结构化决策。Laya 让开发者能本地运行、免注册接入这种决策模型，把大模型从聊天框里拽进真正的工程流水线。",
+    "quote": "开源团队的手速，永远比发布会快。",
+    "source": "HN Front Page",
+    "url": "https://laya.convaiinnovations.com/",
+    "published": "2026-09-20",
+    "uid": "dev_e5f6296a"
+  },
+  {
+    "title": "trycua/cua：把「电脑使用」Agent 做成开源基础设施",
+    "content": "trycua/cua 提供计算机使用（computer-use）能力的开源驱动与跨系统机队管理，还附带训练、评测与数据生成的基准套件，主打把操作电脑的 Agent 规模化。它让 Agent 像人一样点鼠标、开应用、跑流程，是当下 GUI Agent 基础设施中涨得最快的项目之一，已累计超过 2.4 万星。",
+    "quote": "让 AI 学会点鼠标，也学会点错按钮。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/trycua/cua",
+    "published": "2026-09-20",
+    "uid": "dev_c1815550"
+  },
+  {
+    "title": "docling：先把文档洗干净，再喂给 RAG",
+    "content": "docling 是 IBM 系出品的文档解析工具，目标一句话：让文档对生成式 AI 友好。它把 PDF、DOCX、PPT 等格式统一解析成结构化数据，尽量保留表格、版式与阅读顺序，方便喂给 RAG 与各类 Agent。发布以来已积累超过 6.6 万星，是文档预处理环节绕不开的开源项目。",
+    "quote": "垃圾进垃圾出，先得有人把文档洗干净。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/docling-project/docling",
+    "published": "2026-09-20",
+    "uid": "dev_50fc99db"
+  },
+  {
+    "title": "cloudflare/quiche：Rust 写的高性能 QUIC/HTTP3 库",
+    "content": "quiche 是 Cloudflare 用 Rust 实现的高性能 QUIC 传输协议与 HTTP/3 库，也是其边缘网络大规模跑 HTTP/3 的底座之一。它同时提供 C 与 Rust 接口，方便嵌入各类服务，兼顾性能与内存安全。最近再度冲上 GitHub 热榜，说明 HTTP/3 落地正从尝鲜走向标配。",
+    "quote": "协议换代的账单，最后都归运维来付。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/cloudflare/quiche",
+    "published": "2026-09-20",
+    "uid": "dev_b8f93ab2"
+  },
+  {
+    "title": "Mosaic：把一堆 Agent 从标签页摊到无限画布",
+    "content": "作者吐槽用 Agent 写代码的痛点：同一件事要开好几个 Agent，一个修 bug、一个看 CI、一个在 worktree 里试分支，它们共享同一仓库与上下文，却逼你在终端标签之间来回切，谁在等你确认全靠脑子记。Mosaic 用无限画布把多个 Agent 摊平，减少上下文切换，让并行开发真正可用。",
+    "quote": "多开 Agent 一时爽，切窗口切到怀疑人生。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1242982",
+    "published": "2026-09-20",
+    "uid": "dev_19401714"
+  },
+  {
+    "title": "Anthropic 的七天「停火」为何自己先破功",
+    "content": "文章复盘 Anthropic 的一次自我打脸：9 月 12 日 CEO 发数千字长文，呼吁全行业主动放慢 AI 研发；结果没过几天，自家就不得不打破这场「停火」。作者认为在竞争压力与商业节奏面前，单方面喊停几乎无法维持，真正的约束只能来自行业共同规则，而不是某家公司的道德承诺。",
+    "quote": "喊停的是它，第一个踩油门的还是它。",
+    "source": "Dev.to",
+    "url": "https://dev.to/deanlee/the-seven-day-truce-why-anthropic-had-to-break-its-own-pause-19ib",
+    "published": "2026-09-20",
+    "uid": "dev_0475ed45"
+  },
+  {
+    "title": "AI 正在让你成为更差的工程师、更好的员工",
+    "content": "作者提出一个扎心的观察：近几年，「会干活」和「够专业」这两个标准，在软件工程师身上悄悄分了家。AI 让你产出更多、响应更快，看起来是更好的员工；但依赖它替你思考，技术手感与判断力却在悄悄退化。文章想说的是：效率提升是真的，但别把能力外包给模型还浑然不觉。",
+    "quote": "效率涨了，手艺掉了，老板笑了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/mikachu/ai-is-making-you-a-worse-engineer-and-a-better-employee-3cl3",
+    "published": "2026-09-20",
+    "uid": "dev_0302c03a"
+  },
+  {
+    "title": "Jev 连一句话都写不出，它的决策该拿什么测",
+    "content": "作者从凌晨两点的重试循环写起，聊给 Jev 这种「不会写字、只做判断」的模型做测试的难处。既然它不产出文本，传统评测指标就失效了，得改为验证它的选择、评分与是非判断是否稳定可靠。文章给出一套思路：把决策模型当成分类器来验证，而不是当聊天机器人来夸。",
+    "quote": "不会写作文的模型，反而更难糊弄。",
+    "source": "Dev.to",
+    "url": "https://dev.to/syedrafinaqvi/jev-cant-write-a-sentence-heres-how-id-test-its-decisions-15n3",
+    "published": "2026-09-20",
+    "uid": "dev_3e4bb678"
+  },
+  {
+    "title": "长对话先收口：用工作记忆与长期记忆管理 AI 上下文",
+    "content": "作者用「工作记忆 vs 长期记忆」来类比管理 AI 上下文：跟 AI 聊到四五十轮，话题从写函数一路拐到改数据库，中间信息越堆越多，模型就开始「中间迷失」。解法是主动收口——把当前任务相关的工作记忆留在窗口里，把已确认的结论沉淀成长期记忆，别让上下文无限膨胀。",
+    "quote": "上下文塞太满，AI 比你先开始走神。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/jessica837488/p/23040016",
+    "published": "2026-09-20",
+    "uid": "dev_9669815a"
+  },
+  {
+    "title": "微信和 VS Code 强强联合，WeChat AHP 来了",
+    "content": "作者韩老师（formulahendry）曾发布 WeChat ACP，让微信连上 Claude、Codex、Copilot、Qwen 等各类 Agent，下载量已超 1.4 万。这次他带来 WeChat AHP，进一步把微信与 VS Code 打通。对于习惯在手机上随手唤起编码 Agent 的开发者，这类桥接工具正把「随时随地写代码」变成日常。",
+    "quote": "微信里养个 AI 打工，摸鱼越发理直气壮。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/formulahendry/p/23036505",
+    "published": "2026-09-20",
+    "uid": "dev_8f14d5f4"
+  },
+  {
+    "title": "Show HN: Mati —— 给 Claude Code 装一层本地护栏",
+    "content": "Show HN 项目 Mati 给 Claude Code 与 Codex 加了一层本地「护栏」：作者发现很多关键的产品约束只存在工程师或产品经理脑子里，于是把它做成可配置的本地策略层，决定 Agent 到底被允许做什么。对已经不放心把编码 Agent 直接放开权限的团队来说，这比事后 code review 更前置。",
+    "quote": "把脑子里的规矩写成护栏，AI 才不敢乱来。",
+    "source": "HN Show HN",
+    "url": "https://github.com/ioni-dev/mati",
+    "published": "2026-09-20",
+    "uid": "dev_b5f73903"
+  },
+  {
+    "title": "Show HN: legcli —— Claude Code 限流后，Codex 在同一终端顶上",
+    "content": "Show HN 项目 legcli 解决一个很现实的问题：Claude Code 触发 5 小时用量上限后，能不能在同一个终端里让 Codex 无缝接上继续干活。作者把多个编码 Agent 串成一条链，一个额度耗尽就自动切换下一个，省去手动换工具、重开上下文的麻烦，主打「不想因为限流停下」。",
+    "quote": "Claude 罢工，Codex 顶上，打工人不许停。",
+    "source": "HN Show HN",
+    "url": "https://github.com/ucsandman/legcli",
+    "published": "2026-09-20",
+    "uid": "dev_757f95ca"
+  },
+  {
+    "title": "Show HN: Fentaris —— 用一个网关统管所有 MCP server",
+    "content": "Show HN 项目 Fentaris 是开源的 MCP 网关：把多个 MCP server 收拢到一个统一入口后面，集中提供路由、鉴权、策略与可观测性。随着 MCP 工具越接越多、配置越散越乱，这种「一个 endpoint 管所有工具」的网关思路，正在成为 Agent 基础设施里越来越刚需的一环。",
+    "quote": "MCP 接多了，不来个网关真得乱套。",
+    "source": "HN Show HN",
+    "url": "https://github.com/Fentaris/fentaris",
+    "published": "2026-09-20",
+    "uid": "dev_4d89a646"
+  },
+  {
+    "title": "Whoosh 里的短语与邻近查询：别再用词袋糊弄引号",
+    "content": "Dev.to 文章讲搜索里的一个细节：用户给词加引号就是「较真」。在 Whoosh 里实现「machine learning」这样的短语与邻近查询（\"machine learning\"~2），才能避免 machine 与 learning 分处不同段落却被算作命中；作者解释为何词袋打分在这类场景会翻车，并给出短语与邻近查询的正确实现方式。",
+    "quote": "用户加了引号，就别拿词袋糊弄他。",
+    "source": "Dev.to",
+    "url": "https://dev.to/priyasundaram/machine-learning2-phrase-and-proximity-search-in-whoosh-5chk",
+    "published": "2026-09-20",
+    "uid": "dev_d5919cbb"
+  },
+  {
+    "title": "AI 能生成更多 UI，可谁来替它守住一致性",
+    "content": "Dev.to 文章抛出一个被 AI 提速掩盖的问题：让编码模型描述一个组件，几分钟就能拿到实现、类型、测试、文档甚至多个变体，生成速度早已超过团队审阅速度。作者追问：当 UI 被批量生产，谁来保证设计语言、间距与交互的一致性？答案恐怕要回到设计系统与约束，而不是靠人肉 review。",
+    "quote": "AI 一天生成一堆 UI，一致性谁来背锅？",
+    "source": "Dev.to",
+    "url": "https://dev.to/vellira/ai-can-generate-more-ui-who-keeps-it-consistent-mkf",
+    "published": "2026-09-20",
+    "uid": "dev_f45a03ca"
+  },
+  {
+    "title": "你的 Agent 正在花钱让聊天模型点头说 Yes",
+    "content": "Dev.to 文章算了一笔 Agent 的隐形账：一次任务里藏着无数「没人看见」的判断——该用哪个技能、四千行命令输出里哪段才重要、校验器报的差距是真是假，这些全被默认交给一个聊天大模型来拍板。作者认为很多决策本可用更便宜、更专用的判断层，却让最贵的聊天模型替你点头。",
+    "quote": "最贵的大脑，用来回答最廉价的 yes/no。",
+    "source": "Dev.to",
+    "url": "https://dev.to/donk8r/your-agent-is-paying-a-chat-model-to-say-yes-2337",
+    "published": "2026-09-20",
+    "uid": "dev_406b8958"
+  },
+  {
+    "title": "Cloudflare 这个老功能，被 AI Coding 重新带火了",
+    "content": "博客园文章讲 Cloudflare 一个存在多年的老功能被 AI Coding 重新带火：一条命令就能把本机 localhost 变成公网 HTTPS 地址。过去它只是临时分享网站的方便工具，如今在 AI 编码场景里价值陡增——本地跑起来的服务、Webhook 回调、给 Agent 或同事演示，都能靠它秒变公网可访问，省去一堆内网穿透折腾。",
+    "quote": "老工具没变，是 AI 时代给它发了新岗。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/kaifazhinan/p/23040147/cloudflare-tunnels",
+    "published": "2026-09-20",
+    "uid": "dev_3515224d"
+  },
+  {
+    "title": "年薪 128 万美元：FDE 是 AI 落地的船票，还是更贵的外包工牌",
+    "content": "博客园文章用一组数字拆解 FDE（前向部署工程师）这个岗位：Indeed 上相关职位一年内从 643 个涨到 5330 个，顶级从业者年包接近 128 万美元。但作者也泼了盆冷水——一份覆盖 1500 名 FDE 的调研显示，这个岗位到底是 AI 落地的船票，还是更贵的外包工牌，答案并不乐观。",
+    "quote": "年薪百万的光环，也可能是高级外包马甲。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/xiaobaiysf/p/23037239",
+    "published": "2026-09-20",
+    "uid": "dev_c11a04ec"
+  },
+  {
+    "title": "[开源] Flotilla v1.0.0：让 AI 一次管理所有服务器，但每步都过人审批",
+    "content": "V2EX 作者开源 Flotilla v1.0.0：起因是自己做梯子时常在多个 SSH 之间跳来跳去，还会把指令发错服务器，每次让 AI 改动都要重复交代每台机器的情况。Flotilla 让 AI 一次性管理所有服务器，但把每一步操作都设计成必须经过人工审批，主打「省事但不放权」，避免 Agent 在无人监督下乱改生产。",
+    "quote": "AI 管服务器可以，动手前先摇人审批。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1243168",
+    "published": "2026-09-20",
+    "uid": "dev_97defa8a"
+  },
+  {
+    "title": "实测：给 Coding Agent 接 LSP 语义检索，不一定比 grep 好用",
+    "content": "V2EX 作者做了个实测：给 Coding Agent 接一套基于 LSP 的语义导航（查引用、跳定义、列符号），再和日常 grep 对比，看哪个更好用。他在 3 个 Claude 模型与多个 Python/TypeScript 仓库上测了定位代码、找全引用、多文件重命名三类任务，结论有点反直觉——语义检索不一定比朴素的 grep 更强，关键看任务类型。",
+    "quote": "高大上的 LSP，未必比 grep 更懂代码。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1243146",
+    "published": "2026-09-20",
+    "uid": "dev_13a5f115"
+  }
+]
