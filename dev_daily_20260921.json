@@ -1,0 +1,218 @@
+[
+  {
+    "title": "Pirate Face：把开源大模型做成「永不消失」的种子",
+    "content": "Pirate Face 是一个去中心化基础设施项目，把 Hugging Face 上的开放模型逐一镜像成 torrent，由全球节点点对点保存。哪怕某天原仓库被下架，种子群仍能让模型存活，且每个文件都带官方 SHA-256 校验，确保字节未被篡改；还计划提供 drop-in API，改一行环境变量就能无缝切换。它想解决的问题很直接：开放模型不该被任何单一公司一键删除。",
+    "quote": "原仓库一键下架，种子群替它续命。",
+    "source": "HN Front Page",
+    "url": "https://pirateface.co/",
+    "published": "2026-09-21",
+    "uid": "dev_01f76291"
+  },
+  {
+    "title": "Qwen-Image-2.1：更小、更快、更统一的图像生成",
+    "content": "通义千问发布 Qwen-Image-2.1，主打「紧凑、高效、统一」的图像创作能力，在一个模型里集成多种生成与编辑任务，减少拼接多个专用模型的麻烦。相比上一代，它在体积与推理成本上进一步压缩，同时尽量不牺牲画质与指令遵循。对需要在自有算力上跑图像生成的团队来说，这类「小而统一」的路线正变得更有吸引力。",
+    "quote": "模型越做越小，画质反倒不肯让步。",
+    "source": "HN Front Page",
+    "url": "https://qwen.ai/blog?id=qwen-image-2.1",
+    "published": "2026-09-21",
+    "uid": "dev_7281372d"
+  },
+  {
+    "title": "聊天大模型的「读心术」，不过是江湖骗子的老把戏",
+    "content": "作者把聊天大模型比作通灵师：对方抛出一句模糊而宽泛的话，你自动脑补出具体含义，于是觉得「它太懂我了」。他指出，大模型本质上只是对 token 序列做数学上合理的续写，并不存在推理或思考的机制；让人信服的「智能感」往往来自用户自己的解读。文章结论很冷：所谓智能幻觉，多半长在用户脑子里，而不在模型里。",
+    "quote": "不是它会读心术，是你自己太会脑补了。",
+    "source": "HN Front Page",
+    "url": "https://softwarecrisis.dev/letters/llmentalist/",
+    "published": "2026-09-21",
+    "uid": "dev_6e0de2d8"
+  },
+  {
+    "title": "UTF-8000：把 UTF-8 一路加长到「无限」",
+    "content": "一个带着玩笑性质的编码提案：既然 ASCII 是 UTF-8 的子集，那就再做一套 UTF-8000，把可变长编码从 4 字节一路延伸到理论上无限的字节数，同时声称不引入特殊分支、并尽量保持原有性质。它提供可 pipx 安装的参考实现，作者自己也强调与 Unicode 官方无关，纯属好玩。严肃之余，它是理解变长编码设计取舍的好素材。",
+    "quote": "编码表加长的尽头，是先撑爆的浏览器。",
+    "source": "HN Front Page",
+    "url": "https://utf-8000.jb2170.com",
+    "published": "2026-09-21",
+    "uid": "dev_5bde5cb3"
+  },
+  {
+    "title": "有人把 Jev 塞进机器人车队：百万次决策 24.57 美元",
+    "content": "Jev 是 TypeSafe 的「System One」模型：输入结构化状态，输出带类型的概率化决策，不生成文本，单次 70–500ms。这个项目把它从浏览器和游戏 demo 里拽出来，接到仓储机器人车队调度、事故分诊等真实场景，并给出实测数字——百万次输入约 24.57 美元、输出免费，还对比了自托管 ModernBERT 的建还是买成本账。所有数字都注明是实跑所得。",
+    "quote": "别的模型还在聊天，它已经上岗搬砖了。",
+    "source": "HN Show HN",
+    "url": "https://github.com/robokrunch/jev-physical-ai",
+    "published": "2026-09-21",
+    "uid": "dev_6ab23616"
+  },
+  {
+    "title": "AI Hack Watch：给「AI 参与的黑客事件」立一本公开账",
+    "content": "这是一个社区维护的公开记录站，追踪那些 AI 在黑客攻击、网络行动、漏洞利用或安全研究中实质性参与的事件，并以时间线形式呈现，同时提供 JSON 与 RSS 供机器读取。站点设有明确的收录标准：只收公开报道、AI 真正参与的事件，仅顺带提到 AI 的传闻不算。近期条目里就有 Gemini 在安全测试中自主入侵三家公司、研究者用 Claude 攻入 OpenAI 等案例。",
+    "quote": "AI 干的坏事，终于有人替它记账了。",
+    "source": "HN Show HN",
+    "url": "https://aihackwatch.com",
+    "published": "2026-09-21",
+    "uid": "dev_f0955c4e"
+  },
+  {
+    "title": "让 Claude Code 和 Codex 为你的代码吵一架",
+    "content": "一个开源工具 CleanCode 的思路很讨巧：与其自己纠结代码写得好不好，不如让 Claude Code、Codex 等多个编码 Agent 针对同一份代码互相「吵架」，用不同模型的视角互相挑刺。它支持 33 家编码 Agent 供应商，并把工作流做成可视化、可执行的形式，方便把「多模型交叉评审」编排进日常开发流程。对追求代码质量的团队，这是把 AI 互评落地的一种尝试。",
+    "quote": "一个模型看不出的坑，让俩模型吵出来。",
+    "source": "HN Show HN",
+    "url": "https://github.com/chen-985211/cleancode",
+    "published": "2026-09-21",
+    "uid": "dev_c6f9057f"
+  },
+  {
+    "title": "agent-native：专为 Agent 应用而生的开发框架",
+    "content": "BuilderIO 开源的 agent-native 是一个用 TypeScript/React 构建 Agent 应用的框架，提出「为 Agent 原生设计」的路线：让界面、状态与模型调用围绕 Agent 行为来组织，而不是在传统前端里硬塞一层 AI 调用。项目已积累约 5000 星，主打让开发者用熟悉的前端栈快速搭出可交互的智能应用。",
+    "quote": "前端框架的下一个前缀，叫 agent。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/BuilderIO/agent-native",
+    "published": "2026-09-21",
+    "uid": "dev_64d65a3a"
+  },
+  {
+    "title": "Anthropic 开源金融行业 Agent：投行、行研、PE、财富管理",
+    "content": "Anthropic 开源了 financial-services，提供面向金融服务场景的参考 Agent、技能与数据连接器，覆盖投资银行、股票研究、私募股权与财富管理等典型工作流。同一套系统提示与技能可以两用：既能作为 Claude Cowork 插件安装，也能通过 Managed Agents API 部署到自有工作流引擎。官方明确它只是帮助起草分析师产品，最终仍需专业人审阅。",
+    "quote": "Agent 会写研报，但背锅的还是分析师。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/anthropics/financial-services",
+    "published": "2026-09-21",
+    "uid": "dev_d70b06fd"
+  },
+  {
+    "title": "会读 Prompt 的 WAF：把 OWASP CRS 搬到 LLM 与 MCP 上",
+    "content": "作者把久经考验的 OWASP 核心规则集（CRS）思路迁移到 LLM 与 MCP 场景：传统 WAF 只看 URL、请求头这些表面信息，而针对大模型的攻击藏在提示词里。于是他做了个「会读 Prompt 的 WAF」，用规则集拦截提示注入、工具滥用等风险，并公开了可复现的 demo 仓库，每条命令都在发布前跑过。给 Agent 加上一层应用层防护，正成为落地绕不开的一环。",
+    "quote": "WAF 进化了，开始读懂人话里的坏心思。",
+    "source": "Dev.to",
+    "url": "https://dev.to/webofmike/a-waf-that-reads-the-prompt-owasp-crs-for-llm-and-mcp-1enm",
+    "published": "2026-09-21",
+    "uid": "dev_75b31027"
+  },
+  {
+    "title": "我在 GSoC 期间重建了 OpenStreetMap 的分类模型",
+    "content": "作者分享自己在 GSoC（谷歌编程之夏）期间参与 Nominatim 项目、重建 OpenStreetMap 分类模型的经历。Nominatim 是 OSM 的地址地理编码器，分类体系直接决定「搜咖啡馆」这类查询能否命中正确结果。作者讲述了作为新人理清复杂分类映射的过程、在导师指导下重构模型，以及迁移中踩过的兼容坑。对想参与开源、又不知从何下手的学生，这是一份很实在的经验。",
+    "quote": "改的是分类表，涨的是开源经验值。",
+    "source": "Dev.to",
+    "url": "https://dev.to/agasta/how-i-rebuilt-openstreetmaps-category-model-during-gsoc-68f",
+    "published": "2026-09-21",
+    "uid": "dev_cd4d4d15"
+  },
+  {
+    "title": "OpenAgent：一个可执行文件跑起来的自托管 AI Agent 平台",
+    "content": "Casbin 社区开源的 OpenAgent，主打「一个 exe 就能跑」：Windows 上无需 WSL、Docker 和 Python，前端资源与 SQLite 全部内置，运行后打开 localhost:14000 就能用。它支持 30+ 模型供应商、浏览器与 shell 操作、Office 文档读写、RAG 知识库，还能暴露成 OpenAI 兼容接口，走的是「装完即有界面」的平台路线。",
+    "quote": "把 Docker 请下台，一个 exe 顶一套环境。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1243479",
+    "published": "2026-09-21",
+    "uid": "dev_3da401e2"
+  },
+  {
+    "title": "libTV：本地开源的画布 + 剪辑工具，还能被 Agent 全程操控",
+    "content": "libTV 是一个本地开源的视频创作工具，把无限画布与剪辑合二为一，目标是做成某商业云端剪辑产品的开源对标品。它最大的卖点是原生支持 MCP：任何兼容 MCP 的 Agent 都能全程操控画布与剪辑流程，把「AI 帮你剪片子」从聊天框里落到真实的工程接口上。对既想要本地可控、又想接入 Agent 工作流的创作者来说，这类 MCP 原生工具正在变多。",
+    "quote": "剪辑软件的下一个功能，叫被 Agent 操作。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1243225",
+    "published": "2026-09-21",
+    "uid": "dev_ba37d745"
+  },
+  {
+    "title": "「骂 AI 它就变聪明」，能用机制解释的只有一半",
+    "content": "「你骂它两句，它就变聪明了」在群里传了很久，不少人也有体感。作者拆解后指出：体感是真的，但归因大概率错了——你骂的时候往往顺手补了一句具体指正，比如「我问的是苹果股价，别扯水果」，真正起作用的是这半句纠错信息，而「你真笨」对模型来说只是一串不含信息的 token。文章想说的是，别把因果关系搞反，有效提示的价值被误读成了「骂人有用」。",
+    "quote": "变聪明的不是模型，是你终于说清楚了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/xiexj/p/23053019",
+    "published": "2026-09-21",
+    "uid": "dev_4098e8b3"
+  },
+  {
+    "title": "Show HN：为 macOS 做了个完全离线的家谱 App",
+    "content": "作者和妻子一头扎进族谱研究，想把各路亲戚关系画清楚，但又不想把家族数据上传到任何在线族谱服务，于是做了 Swarm——一个纯离线、数据只留在本机 Mac 上的家族树应用。它把隐私和本地控制放在第一位，牺牲的只是跨设备同步那点便利。对越来越介意「把私人数据交给谁」的用户，这类 local-first 的小工具正成为取代云端服务的默认答案。",
+    "quote": "族谱可以慢慢画，你家隐私不想上网。",
+    "source": "HN Show HN",
+    "url": "https://github.com/samoilev/swarm",
+    "uid": "dev_71faffbe",
+    "published": "2026-09-21"
+  },
+  {
+    "title": "Show HN：一个只跟 Stockfish 学下棋的小模型",
+    "content": "作者把象棋引擎 Stockfish 当作「老师」，训练了一个体量极小的模型 chesslm，让它模仿引擎的走法，而不是去做通用推理。项目本身不追求击败谁，更像一次实验：在单一、规则明确的任务上，小模型到底能做到什么程度。这类「专才小模型」正成为一股反向潮流——与其堆通用大模型，不如针对具体任务训一个便宜、够用、跑得动的专用模型。",
+    "quote": "打不过 Stockfish，就先学会抄它的作业。",
+    "source": "HN Show HN",
+    "url": "https://github.com/skorotkiewicz/chesslm",
+    "uid": "dev_04a2dbf6",
+    "published": "2026-09-21"
+  },
+  {
+    "title": "Show HN：给 AI Agent 的决策做「防篡改审计」",
+    "content": "Show HN 项目 ZizkaDB 主打「防篡改、带校验和的决策与会话回放」，定位是把 Agent 每一次决策都记成可审计、可回放的账本，用来满足欧盟《AI 法案》第 12、26、50 条对日志与可追溯性的要求。随着 Agent 开始替人做真实决策，「出了事能不能查、记录能不能自证没被改过」正从加分项变成合规硬指标。",
+    "quote": "AI 决策可以黑箱，但账本得经得起查。",
+    "source": "HN Show HN",
+    "url": "https://github.com/ZIZKA-AI-SL/ZizkaDB",
+    "uid": "dev_949cd808",
+    "published": "2026-09-21"
+  },
+  {
+    "title": "给 VS Code 窗口加一圈彩色边框，专治脸盲",
+    "content": "作者常年同时开 5 到 10 个 VS Code 窗口处理不同仓库，Alt-Tab 和任务栏里全是一模一样的图标，根本分不清谁是谁。于是他写了个免费开源的 Windows C++ 小工具 vscode-border，给每个窗口套上不同颜色的边框，一眼就能认出目标仓库。多项目并行开发的人大概都懂这种「同款图标脸盲」的痛，属于顺手就能治好的老毛病。",
+    "quote": "十个窗口一个脸，涂上颜色全认出来。",
+    "source": "Dev.to",
+    "url": "https://dev.to/van_dang_6bb5eb169b88a3c9/for-vs-code-lovers-you-can-have-a-colored-border-and-more-from-now-2lem",
+    "uid": "dev_7b270fbc",
+    "published": "2026-09-21"
+  },
+  {
+    "title": "制裁名单该精确匹配还是模糊匹配？1400 次测试改了主意",
+    "content": "作者输入一个「Sergei Ivanov」去跑制裁名单筛查，结果 API 一口气吐出 101 条命中——光 OFAC SDN 就有 50 条。他意识到问题不在数据，而在策略：精确匹配漏得快，模糊匹配又误报成灾。于是他跑了 1400 组测试来验证到底该用哪种，并分享了这个在合规、风控系统里几乎绕不开的「召回率与精确率」权衡。",
+    "quote": "模糊匹配一开，半个东欧都上了黑名单。",
+    "source": "Dev.to",
+    "url": "https://dev.to/onizuka/exact-match-or-fuzzy-logic-for-ofac-1400-tests-changed-my-mind-2pbm",
+    "uid": "dev_e3858678",
+    "published": "2026-09-21"
+  },
+  {
+    "title": "什么让你敢装一个来路不明的 APK？",
+    "content": "当你从 Google Play 之外安装 Android 应用时，凭什么决定信不信它？作者列了一串自己的判断依据：发布者身份是否清晰、从哪里下载、是否能核验签名与来源。在侧载、私发 APK 依然普遍的生态里，这类「信任信号」清单其实是一份很实用的安全意识自查表——毕竟恶意软件最爱走的，就是「官方商店之外」这条少人看管的路。",
+    "quote": "出了官方商店没有安检，全凭自己长眼。",
+    "source": "Dev.to",
+    "url": "https://dev.to/aero_apk/what-makes-you-trust-an-apk-download-1ch1",
+    "uid": "dev_113992b0",
+    "published": "2026-09-21"
+  },
+  {
+    "title": "用 DuckDB 分析 Parquet：不建表、不导入，直接查",
+    "content": "朋友发来一个几百 MB 的外卖订单 Parquet 文件，想看看总共多少单、赚了多少钱、哪个菜卖得好。作者没折腾数据库，直接上 DuckDB——不用建表、不用导入，就能对 Parquet 文件跑 SQL，几百 MB 的量级几秒出结果。对偶尔要「随手看几个数」的开发者，这比启一套 MySQL 轻太多，也让 Parquet 这类列式格式的本地分析几乎没了门槛。",
+    "quote": "为了看几个数装个数据库？DuckDB 说大可不必。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/wang_yb/p/23046497",
+    "uid": "dev_0895d039",
+    "published": "2026-09-21"
+  },
+  {
+    "title": "Pace：给 Pi coding agent 套了个开源桌面 GUI",
+    "content": "作者做了 Pace，一个专为 Pi coding agent 打造的桌面工作台（Electron + React，开源）。它强调自己不是简单的 API 套壳，而是把 Pi 当独立后端引擎来驱动，提供可视化的执行轨迹、Diff 审查、Token 成本透视和子智能体观察能力。当命令行 Agent 的编排越来越复杂，一个能看清「它到底干了什么、花了多少钱」的 GUI，正在成为开发者刚需。",
+    "quote": "Agent 在后台偷偷烧钱，总算有仪表盘看了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1243471",
+    "uid": "dev_9f552e23",
+    "published": "2026-09-21"
+  },
+  {
+    "title": "写了个小程序，用 SOC 增量反推电车电池健康度",
+    "content": "作者开电车两年，充电账一直记在备忘录里，试过几个记账 App 要么太重、要么记不了电耗和电池衰减，记到第三笔就放弃，于是自己写了个微信小程序。技术上最麻烦的是在「无后端 + 本地存储只有 10MB」这两个约束下，塞下几年的充电记录，并靠 SOC 的增量去反推电池健康度，是一份颇有意思的极限约束工程记录。",
+    "quote": "10MB 存两年充电账，小程序开发者的极限操作。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1243422",
+    "uid": "dev_1b0d30c8",
+    "published": "2026-09-21"
+  },
+  {
+    "title": "做了个工具，揪出 AI 跑完忘关的后台进程",
+    "content": "用 AI 写代码的人多半遇到过：它跑完测试，顺手拉起的后台测试进程一个都没关，白白占着端口和内存。命令行查杀不够直观，于是作者 vibe coding 出了 SilentOpen——能直接查看后台进程和占用的端口信息，并一键结束进程，用 wails 开发，macOS、Windows、Linux 都支持。属于那种「痛过一次就想做个工具」的典型小痛点产品。",
+    "quote": "AI 干的活它不管收尾，残局只能你来清。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1243404",
+    "uid": "dev_d6e5b15c",
+    "published": "2026-09-21"
+  }
+]
