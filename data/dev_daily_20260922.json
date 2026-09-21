@@ -1,0 +1,218 @@
+[
+  {
+    "title": "Fusion-runtime：把语音 Agent 的 STT+LLM+TTS 塞进一个进程",
+    "content": "一个自托管的语音 Agent 运行时，把语音识别、大模型推理和语音合成三个环节全塞进同一进程里跑，省去在多个服务之间来回搬运音频和上下文的开销。这类「一体化」方案的好处是延迟更低、部署更简单，适合想在自家机器上跑实时语音对话、又不想被云厂商锁死的开发者。项目刚发布，Star 数还很低，属于早期尝鲜。",
+    "quote": "语音三段式跑成流水线，延迟先砍一半。",
+    "source": "HN Show HN",
+    "url": "https://github.com/SamarthUrs18/fusion-runtime",
+    "published": "2026-09-22",
+    "uid": "dev_1d0fbf95"
+  },
+  {
+    "title": "Distributed SQLite：把单机数据库搬上 Modal 做分布式",
+    "content": "一个把 SQLite 跑在 Modal 无服务器平台上的实验项目，试图在保留 SQLite 简单、零运维优点的同时，用分布式手段解决它在并发写入和扩展上的天生短板。对大量中小项目来说，SQLite 足够快也足够省事，真正卡人的是「多实例共享一个库」；这个项目正是冲着这个痛点去的，目前仍在早期验证阶段。",
+    "quote": "SQLite 上分布式，等于给自行车装涡轮。",
+    "source": "HN Show HN",
+    "url": "https://github.com/modal-projects/sqlite-modal",
+    "published": "2026-09-22",
+    "uid": "dev_3a3a91db"
+  },
+  {
+    "title": "回放 AI 编码过程：把 Agent 的每次请求摊开来看",
+    "content": "作者做了一个能回放 AI 编码会话的工具，把 Agent 在开发过程中发出的每一次模型请求、工具调用都记录下来，随时可以倒回去逐帧检查。AI 写代码最大的问题之一就是过程像黑箱——出了错也不知道它当时想了什么。有了回放，调试 Agent 从「猜」变成了「看」，对做 Agent 工具的开发者尤其有用。",
+    "quote": "黑箱写代码，终于能倒带回放了。",
+    "source": "HN Show HN",
+    "url": "https://ishamf.dev/p/agent-harness-replay/",
+    "published": "2026-09-22",
+    "uid": "dev_2227f365"
+  },
+  {
+    "title": "xAI 发布 Grok 4.7",
+    "content": "xAI 上线 Grok 4.7，官方页面给出更新说明。大模型的迭代节奏依旧飞快，平均每一两个月就有一次版本跳号，功能差异往往要实测才能分辨。对使用者而言，真正该看的不是版本号，而是推理成本、上下文长度和实际任务表现是否出现实质变化。HN 上讨论热度中等，观望情绪多于惊叹。",
+    "quote": "版本号涨得比能力快，早习惯了。",
+    "source": "HN Front Page",
+    "url": "https://x.ai/news/grok-4-7",
+    "published": "2026-09-22",
+    "uid": "dev_8782a5b9"
+  },
+  {
+    "title": "一台 1978 年的 PDP-11/83，正用 211BSD 给你发这个页面",
+    "content": "有人把一台修复好的 PDP-11/83 老机器接上网络，跑着 211BSD 系统，用它对外提供这个网页——也就是说你现在看到的页面，是四十多年前架构的老古董真实吐出来的。既是怀旧，也是对「现代 Web 到底需要多少算力」的无声嘲讽。这类项目每次出现都能在 HN 引发一波老硬件情怀。",
+    "quote": "老古董还在上班，你的云服务器脸红吗。",
+    "source": "HN Front Page",
+    "url": "http://pdp1173.com/",
+    "published": "2026-09-22",
+    "uid": "dev_4688eef8"
+  },
+  {
+    "title": "Cloudflare Python Workers 正式 GA",
+    "content": "Cloudflare 宣布 Python Workers 正式可用。此前边缘计算平台的运行时基本是 JavaScript 的天下，Python 开发者想上边缘总得绕道。如今 Python 能在 Cloudflare 的边缘节点上原生跑起来，让大量写脚本、做数据处理的 Python 团队多了一个轻量部署选择，也延续了 Cloudflare 把 Python 生态往边缘拉的战略。",
+    "quote": "Python 终于挤进了 JS 的地盘。",
+    "source": "HN Front Page",
+    "url": "https://blog.cloudflare.com/python-workers-ga/",
+    "published": "2026-09-22",
+    "uid": "dev_e42732fb"
+  },
+  {
+    "title": "OpenStock：开源版的实时行情与提醒平台",
+    "content": "一个开源的股票行情平台，定位是要取代那些收费昂贵的行情软件：实时价格跟踪、个性化提醒、公司信息查看一应俱全，技术栈是 Next.js + TypeScript，主打「永远免费、开放共建」。项目已积累约 1.7 万星，说明「把付费金融工具的常用功能开源出来」这条路，在开发者里确实有市场。",
+    "quote": "把券商软件的功能，白嫖成开源项目。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/Open-Dev-Society/OpenStock",
+    "published": "2026-09-22",
+    "uid": "dev_6021cab5"
+  },
+  {
+    "title": "ai-memory：给编码 Agent 做长期记忆与跨厂商交接",
+    "content": "一个用 Rust 写的方案，解决编码 Agent 的长期记忆问题，并支持在不同 Agent 厂商之间做上下文交接（handoff）。核心痛点很现实：换个编码工具，之前积累的上下文就全丢了。它想让 Agent 的记忆独立于具体工具存在，从而在多家产品间自由迁移。项目约 7500 星，反映了开发者对「不想被单一 Agent 锁死」的强烈需求。",
+    "quote": "换了个 Agent，记忆别跟着一起清零。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/akitaonrails/ai-memory",
+    "published": "2026-09-22",
+    "uid": "dev_efc3363f"
+  },
+  {
+    "title": "ECP：纯前端、零后端的后量子加密传输协议",
+    "content": "作者开源了一个叫 ECP（E2EE Clipboard Protocol）的端到端加密传输工具，做成纯前端、零后端的形式：不依赖任何中央服务器，靠剪贴板在不可信通道里传递加密数据。加密上用了 ML-KEM-1024 + X25519 的后量子混合双棘轮协议，兼顾抗量子攻击与密钥前向安全。适合在第三方聊天、邮件这类不可信场景里传密钥、密码等敏感信息。",
+    "quote": "不信任任何服务器，连自己都不信。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1243708",
+    "published": "2026-09-22",
+    "uid": "dev_26ffd266"
+  },
+  {
+    "title": "不到 700MB，覆盖 100 亿手机号的 MD5 反查工具",
+    "content": "作者看到几个手机号 MD5 反查网站后，好奇它们背后的实现，索性自己从建表开始写了一套：用不到 700MB 的空间，覆盖约 100 亿个手机号空间的 MD5 反查。文章讲了数据规模、建表思路和压缩取舍。既是一个有趣的工程练习，也顺便提醒大家——手机号所谓「MD5 加密」在应对穷举时，防护力其实相当有限。",
+    "quote": "以为 MD5 藏得住，结果一查全露馅。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1243683",
+    "published": "2026-09-22",
+    "uid": "dev_2910ce96"
+  },
+  {
+    "title": "LLM 负责写，JEV 负责决策——分工才是正解",
+    "content": "文章提出一个架构观点：AI 的未来也许不在于「生成更好的文本」，而在于「做出更好的决策」。过去几年大家都在训练模型写邮件、写代码、写文案，但真正的落地瓶颈往往在于决策——一件事要不要做、先做哪个、风险多大。作者主张把「生成」和「决策」拆开，让 LLM 管前者、专门的决策模型管后者，并认为这种分工才是可解释、可审计的工程化道路。",
+    "quote": "会写字不稀奇，会拿主意才值钱。",
+    "source": "Dev.to",
+    "url": "https://dev.to/pavan-swamy/llms-write-jev-decides-and-that-changes-everything-1oc3",
+    "published": "2026-09-22",
+    "uid": "dev_347c4eaa"
+  },
+  {
+    "title": "在 9.5 万个 Telegram 频道里搜中文，什么才真正管用",
+    "content": "作者分享在 9.5 万个 Telegram 频道中检索中文内容的实战经验。Telegram 自带的搜索只适合「已知频道里找消息」，用来「找频道」几乎没用，遇到中文内容更是问题重重。文章对比了几种方案的实际效果，讨论了中文分词、索引和召回上的坑。对于做海外中文信息采集、舆情或数据分析的人，这些踩坑经验相当实用。",
+    "quote": "官方搜索聊胜于无，一遇中文直接摆烂。",
+    "source": "Dev.to",
+    "url": "https://dev.to/yosou/searching-95000-telegram-channels-what-actually-works-for-chinese-language-content-3fof",
+    "published": "2026-09-22",
+    "uid": "dev_3e1131fb"
+  },
+  {
+    "title": "Anthropic 把 SOC 误报率从 33% 砍到 7%，干活的不是 Claude",
+    "content": "文章讲 Anthropic 把安全运营中心（SOC）的告警误报率从 33% 压到 7% 的做法，并点出关键：真正起作用的并不是「让 Claude 一键分类告警」，而是围绕告警上下文构建的工程与流程——把 IP 历史、用户讨论、文件哈希等证据自动聚合起来，再交给模型判断。它提醒我们，AI 在安全运营里的价值往往来自数据管道与流程，而非那一下「点石成金」。",
+    "quote": "不是模型神，是喂给它的料终于对了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/uniqueDong/p/23061618",
+    "published": "2026-09-22",
+    "uid": "dev_6b6daec6"
+  },
+  {
+    "title": "SimdPaddleOCR 1.4：纯 C# 的 OCR 引擎，内存腰斩",
+    "content": "纯 C# 实现的 PP-OCRv6 引擎 SimdPaddleOCR 发布 1.4 版：不需要 Paddle Inference 依赖，靠 SIMD 指令加速，这一版在内存占用上大幅下降（作者形容为「腰斩」），并伴随多项性能改进。对用 .NET 技术栈、又想在本地跑 OCR 的团队来说，这类不依赖 Python 生态的纯原生实现，部署起来会省心不少。",
+    "quote": "内存腰斩，性能还涨，有点离谱。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/sdcb/p/23054351/20260919-simdpaddleocr-1-4",
+    "published": "2026-09-22",
+    "uid": "dev_51d5d95f"
+  },
+  {
+    "title": "Show HN：把代码库当成一张图来导航",
+    "content": "作者做了 Code Graph View，把代码库的调用关系画成一张可交互的调用图，让你像看地图一样在项目里穿梭，而不是靠目录树和全局搜索硬找。更实用的是，它能把这张图导出成低 token 的结构化上下文，直接喂给 AI 编码助手。当上下文长度成为 Agent 的成本瓶颈，「先把代码压成图再交给模型」正成为一种省 token 的新玩法。",
+    "quote": "目录树看瞎眼，不如把代码画成地图。",
+    "source": "HN Show HN",
+    "url": "https://github.com/otobongfp/code-graph-view",
+    "published": "2026-09-22",
+    "uid": "dev_2875110a"
+  },
+  {
+    "title": "Show HN：整个 FreeCAD 跑在浏览器里，含 FEM 全套工作台",
+    "content": "有人把完整的 FreeCAD 1.1.3 编译成 WebAssembly 搬进了浏览器：参数化建模、OpenCASCADE 内核、Qt 界面和 Python 脚本一应俱全，连各个工作台和有限元分析（FEM）都能跑，无需安装，数据也不上传。把庞大的桌面 CAD 塞进浏览器，意味着重型工程软件也能变成「打开链接就能用」。对教学和远程协作场景，这类老牌应用的 WASM 化价值不小。",
+    "quote": "装都懒得装，CAD 直接开网页就能画。",
+    "source": "HN Show HN",
+    "url": "https://freecad.virtastic.app/",
+    "published": "2026-09-22",
+    "uid": "dev_c5177c2c"
+  },
+  {
+    "title": "Show HN：用 C++17 写的自学习「分形大脑」，不靠反向传播",
+    "content": "作者用 C++17 写了 FractalBrainOS，自称是一个「自学习的神经形态分布式大脑」，主打不依赖反向传播，想走一条和主流深度学习不同的路子——靠结构自组织与局部学习慢慢演化能力。这类「反深度学习」实验大多难成气候，但它们的探索是必要的：当所有人都在同一个范式里卷算力时，偶尔有人翻出来问一句「不用梯度行不行」，本身就够看一眼。",
+    "quote": "全网都在反向传播，偏有人不信这个邪。",
+    "source": "HN Show HN",
+    "url": "https://github.com/NineNi999neNine/FractalBrainOS",
+    "published": "2026-09-22",
+    "uid": "dev_9d155dcb"
+  },
+  {
+    "title": "Show HN：给 AI 做一套「永不压缩」的长期记忆",
+    "content": "lossless-memory 提出一个很直白的主张：AI 的长期记忆应该永不摘要，原样保留每一行，并给所有内容打上时间戳。对比当下主流的「压缩、摘要、抽取要点」式记忆，它赌的是存储成本会继续下降，而信息在摘要里被抹掉的代价无法挽回。随着个人 AI 助手开始长期陪伴用户，记忆该以有损还是无损的方式留存，正成为一个绕不开的设计抉择。",
+    "quote": "摘要一时爽，丢掉的细节再也找不回。",
+    "source": "HN Front Page",
+    "url": "https://github.com/aru-labs/lossless-memory",
+    "published": "2026-09-22",
+    "uid": "dev_9231915b"
+  },
+  {
+    "title": "用大白话讲清楚 GitHub 的 HydraFusion",
+    "content": "GitHub 在 Copilot 里推出了名为 HydraFusion 的新研究预览，作者用大白话把它拆开讲清楚：让多个模型协同完成编码任务，而不是单一模型一条道走到黑。文章本身技术深度有限，胜在把官方偏营销的说明翻译成人话。对每天泡在 Copilot 里的开发者来说，弄清 GitHub 正把「多模型协作」往哪个方向推，比看一页发布会 PPT 更有用。",
+    "quote": "官方讲得像黑话，得有人翻译成人话。",
+    "source": "Dev.to",
+    "url": "https://dev.to/andreagriffiths11/project-hydrafusion-in-plain-english-210m",
+    "published": "2026-09-22",
+    "uid": "dev_8e0be9f4"
+  },
+  {
+    "title": "接一个 MCP 五分钟，接十五个要命——2026 年的 MCP 网关盘点",
+    "content": "文章一针见血：把一个 MCP 服务器接到一个 Agent 上，五分钟就能搞定；可当你跨四个团队接十五个，认证、权限、路由、审计立刻会变成一团乱麻。作者盘点了 2026 年可选的 MCP 网关，讨论企业规模化时的选型要点。随着 MCP 从玩具走向基础设施，「中间统一加一层网关」正从可选项变成标配，对一个 Agent 用量正在扩张的团队，这类对比很有参考价值。",
+    "quote": "一个凭手速，十五个只能靠基建。",
+    "source": "Dev.to",
+    "url": "https://dev.to/andrewbaisden/the-5-best-mcp-gateways-for-enterprise-scale-in-2026-504g",
+    "published": "2026-09-22",
+    "uid": "dev_caad7a85"
+  },
+  {
+    "title": "ESP32 设备管理页从零到上线：这次靠 AI 啃嵌入式",
+    "content": "作者在博客园潜水多年却很少发文，最近翻出吃灰的 ESP32 开发板——当年想用 nanoFramework 没搞成，如今借着 AI 重新上手嵌入式开发，目标是从零做出一个跑在 ESP32 上的设备管理页并上线。文章记录了这个「用 AI 补足陌生领域」的完整过程。对没做过硬件、又想借 AI 跨界的人，这类亲历记录比官方文档更有代入感。",
+    "quote": "吃灰多年的开发板，靠 AI 才终于点亮。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/skybot/p/23069801",
+    "published": "2026-09-22",
+    "uid": "dev_b171fb2c"
+  },
+  {
+    "title": "Windows 本地部署 27B 模型全流程：RTX 5070 + CUDA 13.3 + llama.cpp",
+    "content": "一篇相当完整的本地大模型部署教程：在 Windows 上把三元量化模型 PrismML Ternary-Bonsai-2-27B 跑起来，硬件是 RTX 5070，配套 CUDA 13.3 与 llama.cpp 的 Web UI，从配环境到跑通一步步给足步骤。三元量化让 27B 这种体量能塞进消费级显卡，正是「本地可用」的关键。对想在自己机器上跑大模型又怕踩坑的人，这种手把手教程最省时间。",
+    "quote": "27B 塞进家显卡，教程比模型还值钱。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/daen/p/23069577",
+    "published": "2026-09-22",
+    "uid": "dev_bd039abb"
+  },
+  {
+    "title": "Agents Anywhere：用手机接管本地电脑上的 Agent 工作台",
+    "content": "作者碰到一个很具体的场景：电脑上的 Agent 还在跑，人已经离开工位，只想看个进度、回一句话，却不想再回去开屏幕。于是他做了 Agents Anywhere——一个跨设备 Agent 工作台，能接入 Codex、Claude Code 等本地 Agent，也能同时管理多台服务器上的 Agent。当 Agent 任务越来越长，「人不在电脑前也要能盯着」正从痒点变成刚需。",
+    "quote": "人离开工位，Agent 还得远程盯着。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1243584",
+    "published": "2026-09-22",
+    "uid": "dev_93d5b49a"
+  },
+  {
+    "title": "朋友 VibeCoding 泄露云平台 key 被盗刷上万，他做了个开源项目",
+    "content": "作者的朋友在 VibeCoding 时把云平台密钥泄露出去，被恶意刷掉一万多块，于是他做了开源项目 tokenhush 来堵上这个洞。随着 vibe coding 普及，「把密钥写进提示词、贴进聊天框、交给不明中转站」引发的安全事故越来越多。这类工具的价值不在技术多高深，而在于把「别让 AI 顺手带走你的 key」变成默认动作。",
+    "quote": "AI 写的代码没出事，你的密钥先出事了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1243543",
+    "published": "2026-09-22",
+    "uid": "dev_70f31956"
+  }
+]
