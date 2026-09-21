@@ -1,0 +1,119 @@
+[
+  {
+    "title": "Show HN：把代码库当成一张图来导航",
+    "content": "作者做了 Code Graph View，把代码库的调用关系画成一张可交互的调用图，让你像看地图一样在项目里穿梭，而不是靠目录树和全局搜索硬找。更实用的是，它能把这张图导出成低 token 的结构化上下文，直接喂给 AI 编码助手。当上下文长度成为 Agent 的成本瓶颈，「先把代码压成图再交给模型」正成为一种省 token 的新玩法。",
+    "quote": "目录树看瞎眼，不如把代码画成地图。",
+    "source": "HN Show HN",
+    "url": "https://github.com/otobongfp/code-graph-view",
+    "uid": "dev_44f8569d",
+    "published": "2026-09-22"
+  },
+  {
+    "title": "Show HN：整个 FreeCAD 跑在浏览器里，含 FEM 全套工作台",
+    "content": "有人把完整的 FreeCAD 1.1.3 编译成 WebAssembly 搬进了浏览器：参数化建模、OpenCASCADE 内核、Qt 界面和 Python 脚本一应俱全，连各个工作台和有限元分析（FEM）都能跑，无需安装，数据也不上传。把庞大的桌面 CAD 塞进浏览器，意味着重型工程软件也能变成「打开链接就能用」。对教学和远程协作场景，这类老牌应用的 WASM 化价值不小。",
+    "quote": "装都懒得装，CAD 直接开网页就能画。",
+    "source": "HN Show HN",
+    "url": "https://freecad.virtastic.app/",
+    "uid": "dev_2d7697a5",
+    "published": "2026-09-22"
+  },
+  {
+    "title": "Show HN：用 C++17 写的自学习「分形大脑」，不靠反向传播",
+    "content": "作者用 C++17 写了 FractalBrainOS，自称是一个「自学习的神经形态分布式大脑」，主打不依赖反向传播，想走一条和主流深度学习不同的路子——靠结构自组织与局部学习慢慢演化能力。这类「反深度学习」实验大多难成气候，但它们的探索是必要的：当所有人都在同一个范式里卷算力时，偶尔有人翻出来问一句「不用梯度行不行」，本身就够看一眼。",
+    "quote": "全网都在反向传播，偏有人不信这个邪。",
+    "source": "HN Show HN",
+    "url": "https://github.com/NineNi999neNine/FractalBrainOS",
+    "uid": "dev_c740b80b",
+    "published": "2026-09-22"
+  },
+  {
+    "title": "Show HN：给 AI 做一套「永不压缩」的长期记忆",
+    "content": "lossless-memory 提出一个很直白的主张：AI 的长期记忆应该永不摘要，原样保留每一行，并给所有内容打上时间戳。对比当下主流的「压缩、摘要、抽取要点」式记忆，它赌的是存储成本会继续下降，而信息在摘要里被抹掉的代价无法挽回。随着个人 AI 助手开始长期陪伴用户，记忆该以有损还是无损的方式留存，正成为一个绕不开的设计抉择。",
+    "quote": "摘要一时爽，丢掉的细节再也找不回。",
+    "source": "HN Front Page",
+    "url": "https://github.com/aru-labs/lossless-memory",
+    "uid": "dev_3827697a",
+    "published": "2026-09-22"
+  },
+  {
+    "title": "用大白话讲清楚 GitHub 的 HydraFusion",
+    "content": "GitHub 在 Copilot 里推出了名为 HydraFusion 的新研究预览，作者用大白话把它拆开讲清楚：让多个模型协同完成编码任务，而不是单一模型一条道走到黑。文章本身技术深度有限，胜在把官方偏营销的说明翻译成人话。对每天泡在 Copilot 里的开发者来说，弄清 GitHub 正把「多模型协作」往哪个方向推，比看一页发布会 PPT 更有用。",
+    "quote": "官方讲得像黑话，得有人翻译成人话。",
+    "source": "Dev.to",
+    "url": "https://dev.to/andreagriffiths11/project-hydrafusion-in-plain-english-210m",
+    "uid": "dev_2ab8834d",
+    "published": "2026-09-22"
+  },
+  {
+    "title": "The AI Diversification Illusion：多持仓不等于分散风险",
+    "content": "文章借纽约市退休基金首席投资官的表态，戳破一个投资幻觉：很多人以为把钱撒进多家 AI 公司就分散了风险，但这些公司共享同一批芯片、同一套叙事、同一根资金链，涨跌其实高度绑定。一旦 AI 叙事降温，看似分散的仓位会一起失血。对把 AI 当作主题押注的人来说，这比「多买几只 AI 股」的简单建议清醒得多。",
+    "quote": "鸡蛋放十个篮子，篮子却在同一辆车上。",
+    "source": "Dev.to",
+    "url": "https://dev.to/deanlee/the-ai-diversification-illusion-2dfa",
+    "uid": "dev_59e18578",
+    "published": "2026-09-22"
+  },
+  {
+    "title": "接一个 MCP 五分钟，接十五个要命——2026 年的 MCP 网关盘点",
+    "content": "文章一针见血：把一个 MCP 服务器接到一个 Agent 上，五分钟就能搞定；可当你跨四个团队接十五个，认证、权限、路由、审计立刻会变成一团乱麻。作者盘点了 2026 年可选的 MCP 网关，讨论企业规模化时的选型要点。随着 MCP 从玩具走向基础设施，「中间统一加一层网关」正从可选项变成标配，对一个 Agent 用量正在扩张的团队，这类对比很有参考价值。",
+    "quote": "一个凭手速，十五个只能靠基建。",
+    "source": "Dev.to",
+    "url": "https://dev.to/andrewbaisden/the-5-best-mcp-gateways-for-enterprise-scale-in-2026-504g",
+    "uid": "dev_adc0a832",
+    "published": "2026-09-22"
+  },
+  {
+    "title": "ESP32 设备管理页从零到上线：这次靠 AI 啃嵌入式",
+    "content": "作者在博客园潜水多年却很少发文，最近翻出吃灰的 ESP32 开发板——当年想用 nanoFramework 没搞成，如今借着 AI 重新上手嵌入式开发，目标是从零做出一个跑在 ESP32 上的设备管理页并上线。文章记录了这个「用 AI 补足陌生领域」的完整过程。对没做过硬件、又想借 AI 跨界的人，这类亲历记录比官方文档更有代入感。",
+    "quote": "吃灰多年的开发板，靠 AI 才终于点亮。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/skybot/p/23069801",
+    "uid": "dev_b8f886fe",
+    "published": "2026-09-22"
+  },
+  {
+    "title": "Windows 本地部署 27B 模型全流程：RTX 5070 + CUDA 13.3 + llama.cpp",
+    "content": "一篇相当完整的本地大模型部署教程：在 Windows 上把三元量化模型 PrismML Ternary-Bonsai-2-27B 跑起来，硬件是 RTX 5070，配套 CUDA 13.3 与 llama.cpp 的 Web UI，从配环境到跑通一步步给足步骤。三元量化让 27B 这种体量能塞进消费级显卡，正是「本地可用」的关键。对想在自己机器上跑大模型又怕踩坑的人，这种手把手教程最省时间。",
+    "quote": "27B 塞进家显卡，教程比模型还值钱。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/daen/p/23069577",
+    "uid": "dev_5d130cd9",
+    "published": "2026-09-22"
+  },
+  {
+    "title": "电源设计没算功耗，LDO 差点烧了——一次典型的低级翻车",
+    "content": "作者复盘自己项目里的一个失误：电路板要 24V、12V、5V、3.3V 多路供电，24V 转 12V 用了 buck，第二级却图省事直接拿 LDO 把 12V 降到 5V，没细算功耗，结果 LDO 发热到险些烧毁。文章把「压差大时别贸然用线性稳压」这条教科书道理，用一次真实翻车讲得明明白白。硬件新人的常见坑，往往不是不会，而是没算。",
+    "quote": "LDO 不是万能降压器，压差大就是电热丝。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/strongestrabbit/p/23064569",
+    "uid": "dev_ee79364e",
+    "published": "2026-09-22"
+  },
+  {
+    "title": "Agents Anywhere：用手机接管本地电脑上的 Agent 工作台",
+    "content": "作者碰到一个很具体的场景：电脑上的 Agent 还在跑，人已经离开工位，只想看个进度、回一句话，却不想再回去开屏幕。于是他做了 Agents Anywhere——一个跨设备 Agent 工作台，能接入 Codex、Claude Code 等本地 Agent，也能同时管理多台服务器上的 Agent。当 Agent 任务越来越长，「人不在电脑前也要能盯着」正从痒点变成刚需。",
+    "quote": "人离开工位，Agent 还得远程盯着。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1243584",
+    "uid": "dev_799e5a75",
+    "published": "2026-09-22"
+  },
+  {
+    "title": "朋友 VibeCoding 泄露云平台 key 被盗刷上万，他做了个开源项目",
+    "content": "作者的朋友在 VibeCoding 时把云平台密钥泄露出去，被恶意刷掉一万多块，于是他做了开源项目 tokenhush 来堵上这个洞。随着 vibe coding 普及，「把密钥写进提示词、贴进聊天框、交给不明中转站」引发的安全事故越来越多。这类工具的价值不在技术多高深，而在于把「别让 AI 顺手带走你的 key」变成默认动作。",
+    "quote": "AI 写的代码没出事，你的密钥先出事了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1243543",
+    "uid": "dev_19b8ab70",
+    "published": "2026-09-22"
+  },
+  {
+    "title": "简历分类工具「阅历」：AI 给你的简历打四个分",
+    "content": "作者招人看简历看到烦，干脆写了个桌面小工具并开源：把一个文件夹里的 PDF、DOCX、TXT 简历一次性丢进去，后台并发出模型，给每份简历打四个判定——岗位、资历、强度、注水嫌疑。用 AI 先做一轮粗筛，把「读一百份简历」压缩成「看一列分数」，是招聘场景里最直给的落地方式。当然，分数归分数，最终拍板还得靠人。",
+    "quote": "简历注水检测器，先给 HR 减点血压。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1243565",
+    "uid": "dev_d16f9da7",
+    "published": "2026-09-22"
+  }
+]
