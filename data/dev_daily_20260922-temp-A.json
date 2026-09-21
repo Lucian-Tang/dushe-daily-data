@@ -1,0 +1,137 @@
+[
+  {
+    "title": "Fusion-runtime：把语音 Agent 的 STT+LLM+TTS 塞进一个进程",
+    "content": "一个自托管的语音 Agent 运行时，把语音识别、大模型推理和语音合成三个环节全塞进同一进程里跑，省去在多个服务之间来回搬运音频和上下文的开销。这类「一体化」方案的好处是延迟更低、部署更简单，适合想在自家机器上跑实时语音对话、又不想被云厂商锁死的开发者。项目刚发布，Star 数还很低，属于早期尝鲜。",
+    "quote": "语音三段式跑成流水线，延迟先砍一半。",
+    "source": "HN Show HN",
+    "url": "https://github.com/SamarthUrs18/fusion-runtime",
+    "published": "2026-09-22",
+    "uid": "dev_1adef74a"
+  },
+  {
+    "title": "Distributed SQLite：把单机数据库搬上 Modal 做分布式",
+    "content": "一个把 SQLite 跑在 Modal 无服务器平台上的实验项目，试图在保留 SQLite 简单、零运维优点的同时，用分布式手段解决它在并发写入和扩展上的天生短板。对大量中小项目来说，SQLite 足够快也足够省事，真正卡人的是「多实例共享一个库」；这个项目正是冲着这个痛点去的，目前仍在早期验证阶段。",
+    "quote": "SQLite 上分布式，等于给自行车装涡轮。",
+    "source": "HN Show HN",
+    "url": "https://github.com/modal-projects/sqlite-modal",
+    "published": "2026-09-22",
+    "uid": "dev_b6f4fb0f"
+  },
+  {
+    "title": "回放 AI 编码过程：把 Agent 的每次请求摊开来看",
+    "content": "作者做了一个能回放 AI 编码会话的工具，把 Agent 在开发过程中发出的每一次模型请求、工具调用都记录下来，随时可以倒回去逐帧检查。AI 写代码最大的问题之一就是过程像黑箱——出了错也不知道它当时想了什么。有了回放，调试 Agent 从「猜」变成了「看」，对做 Agent 工具的开发者尤其有用。",
+    "quote": "黑箱写代码，终于能倒带回放了。",
+    "source": "HN Show HN",
+    "url": "https://ishamf.dev/p/agent-harness-replay/",
+    "published": "2026-09-22",
+    "uid": "dev_e7493eaa"
+  },
+  {
+    "title": "xAI 发布 Grok 4.7",
+    "content": "xAI 上线 Grok 4.7，官方页面给出更新说明。大模型的迭代节奏依旧飞快，平均每一两个月就有一次版本跳号，功能差异往往要实测才能分辨。对使用者而言，真正值得关注的不是版本号，而是推理成本、上下文长度和实际任务表现有没有实质变化。HN 上讨论热度中等，观望情绪多于惊叹。",
+    "quote": "版本号涨得比能力快，早习惯了。",
+    "source": "HN Front Page",
+    "url": "https://x.ai/news/grok-4-7",
+    "published": "2026-09-22",
+    "uid": "dev_e5a93ec8"
+  },
+  {
+    "title": "一台 1978 年的 PDP-11/83，正用 211BSD 给你发这个页面",
+    "content": "有人把一台修复好的 PDP-11/83 老机器接上网络，跑着 211BSD 系统，用它对外提供这个网页——也就是说你现在看到的页面，是四十多年前架构的老古董真实吐出来的。既是怀旧，也是对「现代 Web 到底需要多少算力」的无声嘲讽。这类项目每次出现都能在 HN 引发一波老硬件情怀。",
+    "quote": "老古董还在上班，你的云服务器脸红吗。",
+    "source": "HN Front Page",
+    "url": "http://pdp1173.com/",
+    "published": "2026-09-22",
+    "uid": "dev_396e15e3"
+  },
+  {
+    "title": "The Claude Delusion：当 AI 叙事开始自我循环",
+    "content": "Cory Doctorow 在 Pluralistic 上写的文章，对当下围绕 AI 的热潮提出尖锐质疑，讨论模型能力宣传与现实落地之间的落差，以及这种「幻觉式」叙事如何影响投资、就业和公众认知。他不是简单唱衰，而是追问：当 AI 的话术越来越像自我循环的广告，谁还在为真实的产出买单？评论区讨论相当激烈。",
+    "quote": "吹得越响，越像自己给自己鼓掌。",
+    "source": "HN Front Page",
+    "url": "https://pluralistic.net/2026/09/21/sunsetting/",
+    "published": "2026-09-22",
+    "uid": "dev_2c0e03f1"
+  },
+  {
+    "title": "Cloudflare Python Workers 正式 GA",
+    "content": "Cloudflare 宣布 Python Workers 正式可用。此前边缘计算平台的运行时基本是 JavaScript 的天下，Python 开发者想上边缘总得绕道。如今 Python 能在 Cloudflare 的边缘节点上原生跑起来，让大量写脚本、做数据处理的 Python 团队多了一个轻量部署选择，也延续了 Cloudflare 把 Python 生态往边缘拉的战略。",
+    "quote": "Python 终于挤进了 JS 的地盘。",
+    "source": "HN Front Page",
+    "url": "https://blog.cloudflare.com/python-workers-ga/",
+    "published": "2026-09-22",
+    "uid": "dev_1e442f2a"
+  },
+  {
+    "title": "OpenStock：开源版的实时行情与提醒平台",
+    "content": "一个开源的股票行情平台，定位是替代那些收费昂贵的行情软件：实时价格跟踪、个性化提醒、公司信息查看一应俱全，技术栈是 Next.js + TypeScript，主打「永远免费、开放共建」。项目已积累约 1.7 万星，说明「把付费金融工具的常用功能开源出来」这条路，在开发者里确实有市场。",
+    "quote": "把券商软件的功能，白嫖成开源项目。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/Open-Dev-Society/OpenStock",
+    "published": "2026-09-22",
+    "uid": "dev_5559a90e"
+  },
+  {
+    "title": "ai-memory：给编码 Agent 做长期记忆与跨厂商交接",
+    "content": "一个用 Rust 写的方案，解决编码 Agent 的长期记忆问题，并支持在不同 Agent 厂商之间做上下文交接（handoff）。核心痛点很现实：换个编码工具，之前积累的上下文就全丢了。它想让 Agent 的记忆独立于具体工具存在，从而在多家产品间自由迁移。项目约 7500 星，反映了开发者对「不想被单一 Agent 锁死」的强烈需求。",
+    "quote": "换了个 Agent，记忆别跟着一起清零。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/akitaonrails/ai-memory",
+    "published": "2026-09-22",
+    "uid": "dev_512af406"
+  },
+  {
+    "title": "ECP：纯前端、零后端的后量子加密传输协议",
+    "content": "作者开源了一个叫 ECP（E2EE Clipboard Protocol）的端到端加密传输工具，做成纯前端、零后端的形式：不依赖任何中央服务器，靠剪贴板在不可信通道里传递加密数据。加密上用了 ML-KEM-1024 + X25519 的后量子混合双棘轮协议，兼顾抗量子攻击与密钥前向安全。适合在第三方聊天、邮件这类不可信场景里传密钥、密码等敏感信息。",
+    "quote": "不信任任何服务器，连自己都不信。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1243708",
+    "published": "2026-09-22",
+    "uid": "dev_a640964b"
+  },
+  {
+    "title": "不到 700MB，覆盖 100 亿手机号的 MD5 反查工具",
+    "content": "作者看到几个手机号 MD5 反查网站后，好奇它们背后的实现，索性自己从建表开始写了一套：用不到 700MB 的空间，覆盖约 100 亿个手机号空间的 MD5 反查。文章讲了数据规模、建表思路和压缩取舍。既是一个有趣的工程练习，也顺便提醒大家——手机号所谓「MD5 加密」在应对穷举时，防护力其实相当有限。",
+    "quote": "以为 MD5 藏得住，结果一查全露馅。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1243683",
+    "published": "2026-09-22",
+    "uid": "dev_2e0bf886"
+  },
+  {
+    "title": "LLM 负责写，JEV 负责决策——分工才是正解",
+    "content": "文章提出一个架构观点：AI 的未来也许不在于「生成更好的文本」，而在于「做出更好的决策」。过去几年大家都在训练模型写邮件、写代码、写文案，但真正的落地瓶颈往往在于决策——该不该做、做哪个、风险多大。作者主张把「生成」和「决策」拆开，让 LLM 管前者、专门的决策模型管后者，并认为这种分工才是可解释、可审计的工程化道路。",
+    "quote": "会写字不稀奇，会拿主意才值钱。",
+    "source": "Dev.to",
+    "url": "https://dev.to/pavan-swamy/llms-write-jev-decides-and-that-changes-everything-1oc3",
+    "published": "2026-09-22",
+    "uid": "dev_4ffe2174"
+  },
+  {
+    "title": "在 9.5 万个 Telegram 频道里搜中文，什么才真正管用",
+    "content": "作者分享在 9.5 万个 Telegram 频道中检索中文内容的实战经验。Telegram 自带的搜索只适合「已知频道里找消息」，用来「找频道」几乎没用，遇到中文内容更是问题重重。文章对比了几种方案的实际效果，讨论了中文分词、索引和召回上的坑。对于做海外中文信息采集、舆情或数据分析的人，这些踩坑经验相当实用。",
+    "quote": "官方搜索聊胜于无，一遇中文直接摆烂。",
+    "source": "Dev.to",
+    "url": "https://dev.to/yosou/searching-95000-telegram-channels-what-actually-works-for-chinese-language-content-3fof",
+    "published": "2026-09-22",
+    "uid": "dev_3813a766"
+  },
+  {
+    "title": "Anthropic 把 SOC 误报率从 33% 砍到 7%，干活的不是 Claude",
+    "content": "文章讲 Anthropic 如何把安全运营中心（SOC）的告警误报率从 33% 压到 7%，并点出关键：真正起作用的并不是「让 Claude 一键分类告警」，而是围绕告警上下文构建的工程与流程——把 IP 历史、用户讨论、文件哈希等证据自动聚合起来，再交给模型判断。它提醒我们，AI 在安全运营里的价值往往来自数据管道与流程，而非那一下「点石成金」。",
+    "quote": "不是模型神，是喂给它的料终于对了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/uniqueDong/p/23061618",
+    "published": "2026-09-22",
+    "uid": "dev_27031316"
+  },
+  {
+    "title": "SimdPaddleOCR 1.4：纯 C# 的 OCR 引擎，内存腰斩",
+    "content": "纯 C# 实现的 PP-OCRv6 引擎 SimdPaddleOCR 发布 1.4 版：不需要 Paddle Inference 依赖，靠 SIMD 指令加速，这一版在内存占用上大幅下降（作者形容为「腰斩」），并伴随多项性能改进。对用 .NET 技术栈、又想在本地跑 OCR 的团队来说，这类不依赖 Python 生态的纯原生实现，部署起来会省心不少。",
+    "quote": "内存腰斩，性能还涨，有点离谱。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/sdcb/p/23054351/20260919-simdpaddleocr-1-4",
+    "published": "2026-09-22",
+    "uid": "dev_e87c79af"
+  }
+]
