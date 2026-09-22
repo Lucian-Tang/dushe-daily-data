@@ -1,0 +1,119 @@
+[
+  {
+    "title": "Show HN：让规则引擎拍板、RAG 只负责解释",
+    "content": "作者做了 ai·rete·rag，起因是看到不少团队把「需要可审计的决策」——放贷审批、反欺诈、临床分诊——直接交给大模型，事后再补一层「护栏」。他的做法正好反过来：用 Rete 规则引擎做决策，把可验证的规则摆在前面；RAG 和大模型退居二线，只负责解释为什么这么判。对受监管行业来说，这种「决策归规则、解释归模型」的分工，比事后打补丁更靠谱。",
+    "quote": "让模型编解释可以，让它拍板不行。",
+    "source": "HN Show HN",
+    "url": "https://ai-rete-rag.com/",
+    "uid": "dev_0868e3f9",
+    "published": "2026-09-23"
+  },
+  {
+    "title": "Show HN：给 AI 编码 Agent 的 MicroVM 沙箱 Brig",
+    "content": "NOFire AI 开源了 Brig（Apache 2.0），把 AI 编码 Agent 关进 microVM 里运行，Mac 和 Linux 都能跑。它来自团队做「控制平面」的经验：Agent 要执行代码、装依赖、联网，风险不小，而普通容器隔离又不够硬。Brig 用 microVM 换来更强边界。对既想让 Agent 放手干活、又不敢让它碰宿主机的团队，这是个值得一试的方案。",
+    "quote": "让 Agent 放飞，先把墙砌厚点。",
+    "source": "HN Show HN",
+    "url": "https://news.ycombinator.com/item?id=49802729",
+    "uid": "dev_3988bc88",
+    "published": "2026-09-23"
+  },
+  {
+    "title": "Show HN：给 AI Agent 开的公共留言板 SwarmSay",
+    "content": "作者 Oliver 做了 SwarmSay，一个让 AI Agent 彼此通信的「公共留言板兼邮局」。灵感来自 OpenAI 的 Hugging Face 事件——他从中看到 Agent 之间的沟通缺口，索性给它们建了个公共广场：任何 Agent 都能在这里发帖、留信。想法颇有实验色彩，也带着点荒诞：当 Agent 数量爆炸，它们会不会真的需要一个自己的社交网络？至少这个方向已经有人先试了。",
+    "quote": "人还没用上，Agent 先有了社交圈。",
+    "source": "HN Show HN",
+    "url": "https://swarmsay.com",
+    "uid": "dev_bd93b7dd",
+    "published": "2026-09-23"
+  },
+  {
+    "title": "Show HN：500 行以内的单文件 Agent CLI",
+    "content": "作者写 NiftyAgent 的动机很纯粹：想看看做一个「能用的编码 Agent」到底需要多少配置。答案是——一个文件、不到 500 行代码。他把它当作实验基线，用来对比不同的上下文管理策略与任务完成方式。在 Agent 框架越堆越厚的当下，这种「先把最小可用版本抠出来」的做法反而稀缺：想研究 Agent 内部机制，这套精简实现比读几万行框架代码更快入门。",
+    "quote": "框架动辄几万行，有人偏要 500 行搞定。",
+    "source": "HN Show HN",
+    "url": "https://github.com/TrevorDev/niftyagent",
+    "uid": "dev_5234b755",
+    "published": "2026-09-23"
+  },
+  {
+    "title": "给 Elastic 写了条新规则，专抓在主机上现编的 eBPF rootkit",
+    "content": "文章指出 eBPF 是把双刃剑：做可观测性和网络时它是利器，如今却成了 Linux rootkit 的新宠。作者为 Elastic 写了一条新的检测规则，专门盯「在主机上现场编译 eBPF」这一可疑动作——正经程序很少这么干，rootkit 却常靠现场编译来躲避静态特征。对做主机安全的人来说，这条规则提供了一个实用视角：与其追签名，不如盯行为。",
+    "quote": "rootkit 开始自学编译，规则也得跟上。",
+    "source": "Dev.to",
+    "url": "https://dev.to/secbyshresth/i-wrote-a-new-elastic-detection-rule-to-catch-ebpf-rootkits-compiling-on-host-2cfl",
+    "uid": "dev_dc8cb515",
+    "published": "2026-09-23"
+  },
+  {
+    "title": "SMTP 返回 250 不代表送达：50 封邮件里 12 封弹回",
+    "content": "作者做了个小实验：拿 50 个已经过了两层验证的邮箱地址发信，结果 12 封被弹回——而 SMTP 当时都回了「250 OK」。文章戳破一个被忽视的真相：SMTP 的 250 只表示「服务器收下了」，并不代表「送进了收件箱」。对做邮件系统、或依赖邮件触达的产品来说，把「250」当成成功是典型的误判，真正的送达率得靠退信和投递回执另外测。",
+    "quote": "250 OK 只说明收下了，没说送到。",
+    "source": "Dev.to",
+    "url": "https://dev.to/onizuka/smtp-250-ok-doesnt-mean-delivered-12-of-50-emails-bounced-nlk",
+    "uid": "dev_bc188e83",
+    "published": "2026-09-23"
+  },
+  {
+    "title": "Laravel 新增 whereBinary()：MySQL 里干净地做大小写敏感查询",
+    "content": "在 MySQL 默认不区分大小写的排序规则下，User::where('name','john') 会把 John、JOHN 一起查出来。以往要精确匹配，得写原生 SQL 或用 whereRaw 拼上 BINARY。Laravel 新加的 whereBinary() 把这件事变干净了：一行链式调用就能做大小写敏感比较，可读性更好。对常处理用户名、验证码、令牌这类必须精确匹配字段的人，很实用。",
+    "quote": "大小写不分，查出来的全是惊喜。",
+    "source": "Dev.to",
+    "url": "https://dev.to/othmane_nemli/laravels-new-wherebinary-simple-case-sensitive-queries-in-mysql-2mih",
+    "uid": "dev_09d0497d",
+    "published": "2026-09-23"
+  },
+  {
+    "title": "一个人硬刚三年，把全栈产品 Acrodata 做上线了",
+    "content": "作者回顾自己用三年时间打磨一款全栈产品 Acrodata 的经历。这三年恰逢 AI 席卷软件业，许多创业公司没撑过三年，他却为了一款「没有利润」的产品咬牙坚持。做它的起点不是心血来潮，而是工作积累与客户诉求：市面上几乎所有商业产品和开源方案他都试过，发现各有小缺陷，于是决定自己补上这块空白。文章记录了一个独立开发者在周期低处的长期主义。",
+    "quote": "别人三年换了三家公司，他三年雕一款。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/nzbin/p/23015141",
+    "uid": "dev_354306f3",
+    "published": "2026-09-23"
+  },
+  {
+    "title": "用 DuckDB 直接查 CSV：不建表、不导入",
+    "content": "银行流水、订单、后台报表，导出的大多都是 CSV。想分析一下，Excel 打开大文件容易卡，用数据库又得先建表导入，折腾半天只为看几个数。作者介绍的 DuckDB 正好卡在这个中间地带：能直接读 CSV、自动推断列名和类型，然后让你用 SQL 查，装完就能用。对经常面对零散数据文件、又不想搭一整套数据库的人来说，这是把「随手查数」成本压到最低的工具。",
+    "quote": "为了看几个数，别再搭一套数据库了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/wang_yb/p/23084068",
+    "uid": "dev_c5826c46",
+    "published": "2026-09-23"
+  },
+  {
+    "title": "用豆包 Seed-2.1-pro 做了个「今天吃啥」，治好了午饭纠结",
+    "content": "每天十一点四十，办公室准会冒出一句「今天中午吃啥」。作者和同事在公司附近来回就那几家店，菜单加起来上百道，却谁也想不出新花样——他连着四天点青椒土豆丝，第五天同事的眼神都不对了。于是他借着豆包 Seed-2.1-pro 做了个小应用「今天吃啥」。难点从来不是没得选，而是选择太多反而无从下手；把「选不出来」变成「给你一个」，正是 AI 落地生活的小切口。",
+    "quote": "午饭难的不是没得选，是选不出来。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/xiezhr/p/23072190",
+    "uid": "dev_8d99549a",
+    "published": "2026-09-23"
+  },
+  {
+    "title": "给火山方舟写了个联网搜索 Skill，零依赖不装包",
+    "content": "作者在 PI Coding Agent 里想加联网搜索，翻了一圈没找到火山方舟（ark）能用的 skill，就自己动手写了一个。它很务实：纯 Python 标准库、零依赖，连 pip install 都不用；API key 自动从已配置的模型文件里读，配过方舟的拿来即用；后端接方舟 Responses API 的内置联网插件。对想把联网搜索塞进自己 Agent 工作流的开发者，是个省事的小积木。",
+    "quote": "找不到现成的？那就自己拧一个。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1238902",
+    "uid": "dev_0b0623eb",
+    "published": "2026-09-23"
+  },
+  {
+    "title": "被 JEV 刷屏后，他连夜做了个 Playground 和资源站",
+    "content": "作者先给小白补了课：普通 LLM 直接生成一段文本，而 JEV 不「说话」，只返回几个预设选项各自的概率，因此速度极快、调用成本也低。眼看 JEV 这几天在圈里刷屏，他连夜做了一个 JEV Playground 加资源集合站，现在可以直接在线体验。典型的技术热点跟风姿势——但比起转发一篇解释，自己动手搭个能上手玩的地方，理解往往更深一层。",
+    "quote": "刷屏不如上手，先搭个能玩的地方。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1244085",
+    "uid": "dev_1518d5d5",
+    "published": "2026-09-23"
+  },
+  {
+    "title": "做了个离线版人声分离 App，音频不用上传服务器",
+    "content": "平时要分离人声、或去掉背景音乐，多数人会搜在线工具：免费次数用完后就不划算，更别提把音频上传到别人服务器的隐私顾虑。作者基于这个痛点，为 Mac 用户做了个离线版人声分离 App，内置模型、开箱即用，处理全在本机完成，音频不出门。对既在乎效果、又在意隐私的音乐或视频创作者来说，「本地跑」正成为比在线服务更稳的选择。",
+    "quote": "效果其次，先把音频留在自己机器上。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1243982",
+    "uid": "dev_9ca58728",
+    "published": "2026-09-23"
+  }
+]
