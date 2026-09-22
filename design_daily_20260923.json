@@ -1,0 +1,128 @@
+[
+  {
+    "title": "按钮之死：最好的界面是没有界面",
+    "content": "Smashing 这篇长文认为，从 Xerox Star 与初代 Mac 定下的「点选式」契约正在失效。今天买一张机票要被拆成开十个标签页、拖滑块、填多步表单，用户花在管理软件上的时间早已超过完成目标本身。作者称下一波工具走的是「意图驱动设计」——捕获高层次的人类目标，在后台默默把杂活干完；设计师的角色也随之从「画可见的界面」转向「引导透明、可解释的 AI 体验」。文中呼应 Golden Krishna 的《最好的界面是没有界面》与 Don Norman 的人本设计原则。",
+    "quote": "目标是把按钮干掉，而不是把按钮画得更漂亮。",
+    "url": "https://smashingmagazine.com/2026/09/death-button-why-best-interface-is-no-interface/",
+    "source": "Smashing Magazine",
+    "published": "2026-09-23",
+    "uid": "6916aca109aff0e5ef638711a3cb95d7"
+  },
+  {
+    "title": "讲一个能在董事会上活下来的 UX ROI 故事",
+    "content": "Smashing 用一个虚构的中型 B2B SaaS 公司 Meridian 做全程样本，把一个中型团队该有的说服方式拆开看：先帮组织定义什么叫价值、用什么口径衡量，再从目标设定、成本核算、因果测试一路算到最终 ROI 数字。作者指出 CFO 只嫌「说不清」而非嫌 UX；「用户会觉得更好用」永远输给「Q3 多卖 12%」。一个把购物车放弃率降下来、成交涨 22% 的案例能写进简历，而「QA 测试员挺喜欢」不能。",
+    "quote": "「更好用」打不过「Q3 多卖 12%」，这就是现实。",
+    "url": "https://smashingmagazine.com/2026/09/building-ux-roi-case-survives-boardroom/",
+    "source": "Smashing Magazine",
+    "published": "2026-09-23",
+    "uid": "4c235aa6a03ebfba298e858ba5c961bf"
+  },
+  {
+    "title": "心理健康 App 不该追每一个 UI 潮流",
+    "content": "心理健康 App 面临一个可量化的留存危机：约 95% 第一天打开的用户到第 30 天就流失，中位 30 日留存仅 3.3%。作者 Kat Homan 指出，这行业常把「视觉好看」排在「真正留住人」之前。用户多半在焦虑、疲惫、被压垮时打开 App，此时一个陌生图标、一个迷惑手势、一段炫技动画，都不再是惊喜而是额外的认知负担，甚至会变成卸载的理由。她给出一个评判框架：每个流行趋势，都要先用一句话检验——它在用户最扛不住的时候，降低使用成本了吗？",
+    "quote": "用户最崩溃的时候你还让他猜手势，纯属添乱。",
+    "url": "https://smashingmagazine.com/2026/07/designing-distressed-users-mental-health-apps-ui/",
+    "source": "Smashing Magazine",
+    "published": "2026-09-23",
+    "uid": "aacaccb8278b8f8e3ffb3d38ee53e15b"
+  },
+  {
+    "title": "你的原型在骗用户，而且你还不知道",
+    "content": "几乎每场可用性测试都有那个瞬间：参与者在登录页打几个字，然后抬头看你一眼——确认自己「做对了没」。这一眼说明他早已识破这不是真 App，之后的每个结论都蒙着这层滤镜。金融类产品尤其明显：余额对不上、字段随便填，用户会当场打断。作者给出的解法很窄——找出信任建立的那一瞬间，把它做成真的。文章用 ProtoPie 手把手搭了一个「像真实上线产品」的登录流：能校验的账号、真实的报错态、与 iOS 无异的 Face ID 动画，全程不用写代码。",
+    "quote": "用户一抬头看你，那场测试就已经废了一半。",
+    "url": "https://smashingmagazine.com/2026/05/prototype-users-fix-protopie/",
+    "source": "Smashing Magazine",
+    "published": "2026-09-23",
+    "uid": "acdbf6371cfd90cfcbf0a213e7ea32e0"
+  },
+  {
+    "title": "contrast-color()：用一行 CSS 自修正对比度",
+    "content": "2025 年仍有 70% 网站过不了最基本 WCAG 对比度检查，WebAIM Million 更显示 2026 年 83.9% 首页存在低对比文本，比上一年还差。堆了五年设计系统工具、无障碍 linter 和 JavaScript 库，指标纹丝不动。作者认为问题不在库，而在 CSS：新函数 contrast-color() 只要一行声明，浏览器在样式计算阶段算好对比、页面绘制前给出黑或白文字色，无库、无构建、无 hydrate 闪烁。它只返回颜色（不是数字），目前仅黑/白两档，候选色列表与目标比率留给 Level 6。",
+    "quote": "堆了五年 JS 库，不如一行原生 CSS，尴尬。",
+    "url": "https://smashingmagazine.com/2026/05/building-self-correcting-color-systems-contrast-color/",
+    "source": "Smashing Magazine",
+    "published": "2026-09-23",
+    "uid": "af17fc132ccf6bf44784141778a32305"
+  },
+  {
+    "title": "设计师丢掉了自己的度量单位，这才是问题根源",
+    "content": "一位 LegalTech 的设计负责人担心：「哪天 CEO 走到我的设计师面前问『你在忙什么』，答案接不上业务目标。」作者认为，设计师越来越觉得工作不被看见、自己随时可被取代，根源是设计失去了自己的度量单位，而没人补上。每个职能都有单位：工程有工单，销售有配额。作者借 Peter Merholz 的「设计的可读性缺口」展开：企业靠可预测性运转，只重视看得见、数得清、排得进计划的工作——设计恰恰不擅长提供这种表述。结尾追问：如果屏幕不再是度量单位，那什么会顶上这个位置？",
+    "quote": "没有度量单位，就只能在会议室里讲情怀。",
+    "url": "https://uxdesign.cc/designers-lost-their-unit-of-measurement-thats-why-we-re-struggling-b3c6beeea74f",
+    "source": "UX Collective",
+    "published": "2026-09-23",
+    "uid": "89ae554c5661125c1e009d30d03da9e2"
+  },
+  {
+    "title": "AI 产品的真正杀手：说不清的波动",
+    "content": "一个转录产品：短片段 2 秒出结果，一周后同一用户录了段长音频等了 6 秒——而这正是该长度的正常耗时——他却认定它坏了。系统什么都没变，变的是用户的参照点。作者引 Bilal Skiani 的话：杀死信任的不是波动，而是说不清的波动。用户不按平均响应时间评判 AI，而是按自己见过的「最快一次」评判（卡尼曼锚定效应）。市面产品要么裸暴露波动，要么用人为下限抹平，两种都错——同一个 6 秒，只有一种说法能告诉你它是否正常。",
+    "quote": "「一般都挺快」不是理由，慢一次就把好感花光了。",
+    "url": "https://uxdesign.cc/the-variance-problem-in-ai-products-62a58272564c",
+    "source": "UX Collective",
+    "published": "2026-09-23",
+    "uid": "f41eb5cebe162bab109791976e6a636c"
+  },
+  {
+    "title": "压力可以被量化成一个数字吗",
+    "content": "Oura 把一天分成 Stressed、Engaged、Relaxed、Restored，Garmin 压成 0–100 分，WHOOP 用 0–3 档，Fitbit 会在你可能有压力反应时提醒你。把心率变异性、出汗、呼吸与皮温等信号合成一条干净的曲线确实厉害，但作者提出几个问题：压力真能被简化成一个数字或状态吗？看到这个数字真会带来行为改变吗？被全天候监测又是什么感觉？文章先厘清心理学家区分的三类压力——压力源、感知到的压力、生理应激反应，指出三者常不对齐：上台前心跳加速、手心冒汗，人却可能只觉得兴奋。",
+    "quote": "把一个数字安在「压力」上，是科学还是心理安慰。",
+    "url": "https://uxdesign.cc/can-stress-be-quantified-d247a81dd0f2",
+    "source": "UX Collective",
+    "published": "2026-09-23",
+    "uid": "e907a5aa8daa573483ea9b5beb35079e"
+  },
+  {
+    "title": "没有人一开始就是无障碍专家",
+    "content": "没人因为热爱「合规」去当设计师，无障碍听起来又无聊又像别人的活。作者 Hope Turner 反过来问：万一根本没别人在做、没别人在乎呢？她指出，无障碍问题在时间线最左端（设计阶段）最便宜，而设计师本来就站在最左端，这么看它就是我们的活。她列出自己一年做过的无障碍小事——写设计系统组件规范、发现移动端渲染问题、往共享频道丢文章链接、调整谁该被邀请进哪个会——每件当时都不觉得大，加起来却成了可观的工作量。结论：别被整座山吓住，只完成眼前这一件，技能是边走边长出来的。",
+    "quote": "别老觉得无障碍是别人的活，别人也这么觉得。",
+    "url": "https://uxdesign.cc/nobody-starts-as-an-accessibility-expert-6a16e8a99960",
+    "source": "UX Collective",
+    "published": "2026-09-23",
+    "uid": "37a669d22d971f59f6dfdf42e27df24a"
+  },
+  {
+    "title": "Urban Cowboy 把美式极繁搬上了总督岛",
+    "content": "纽约人露营不必再只往 Catskills 跑。Collective Retreats 在总督岛的六英亩季节性 glamping 营地，今年多了个新住客——「The Urban Cowboy Tent」。这顶 325 平方英尺的帐篷由 Urban Cowboy 联合创始人 Lyon Porter 操刀：红色 Pendleton 织物、El Paso 马鞍毯，走出帐篷就是自由女神像映在水面上的取景；室内是从跳蚤市场一件件淘来的古董家具、旧船桨、老收音机和手绘招牌，营造出「住过很久」的味道。体验却很现代：中央空调、独立卫浴、大花洒，以及一只朝向落日、接了现场热水的铸铁浴缸。",
+    "quote": "从跳蚤市场淘出来的「故事感」，比买新家具贵多了。",
+    "url": "https://design-milk.com/urban-cowboy-tent-governors-island/",
+    "source": "Design-Milk",
+    "published": "2026-09-23",
+    "uid": "f23130fbc2103ab25f6c041a324a321d"
+  },
+  {
+    "title": "美国人不是怕深色漆，是嫌它太冷",
+    "content": "Samplize 首份《美国涂料色彩报告》不去看人们最终买了什么，而是看他们「考虑过」什么——分析 2024 至 2026 上半年全美数百万张涂料小样订单。一个变化最扎眼：暖色三年增速是冷色的近三倍，已占全部试色的 69.4%（两年前为 64.3%）；一半美国人的候选色里完全没有冷色。但意外在「深浅」维度：暖色在各个深浅上都压过冷色，且最深暖色的增速约为深冷色的六倍。人们没有抛弃深色，他们要的是「暖的深色」——从腮红色灰泥、暖米白，到最深的勃艮第红。",
+    "quote": "结论不是怕深色，是嫌你的深色太冷。",
+    "url": "https://design-milk.com/american-paint-color-trends-samplize-2026/",
+    "source": "Design-Milk",
+    "published": "2026-09-23",
+    "uid": "5562303965f528ace75e06825bc89d17"
+  },
+  {
+    "title": "iF 设计奖透露的全球设计风向",
+    "content": "想知道全球设计往哪走，看每年 iF DESIGN AWARD 冒尖的项目就够了。该奖横跨九大学科、93 个类别，从建筑、室内到产品、包装、品牌、服务设计与 UX/UI，由 130 多位国际设计领袖组成两阶段评审。评委的标准里，形态与功能之外还有「差异化」和「可持续」——尤其后者被当成卓越设计的标准本身，而非额外加分项或独立类目。Kohler 全球设计副总裁 Michael Seum 称获奖是对公司设计愿景的「有力背书」，印证「设计作为差异化因素的战略价值」。",
+    "quote": "「可持续」从加分项变成及格线，这才是真变化。",
+    "url": "https://design-milk.com/what-the-if-design-award-reveals-about-where-global-design-is-heading-next/",
+    "source": "Design-Milk",
+    "published": "2026-09-23",
+    "uid": "c6ca4e9977131a573d7300d1c5ede323"
+  },
+  {
+    "title": "iyO：把世界首台「音频计算机」卖出去",
+    "content": "iyO One 号称世界首款「音频计算机」：语音优先、无屏幕、戴在耳内，出自 Google X 走出来的团队。创始人说，旧官网把信息讲全了，但用户「感受不到」产品。新站被做成三段式旅程：首页用 Chladni 图案（频率让表面振动出的形状）构成不断聚散的可交互粒子场，配十首短俳句，一句话点明「我们做的是能对话的 agentic 计算机」；产品页随滚动把设备「拆解」，逐件讲清原理；商店页则给出可 360° 旋转、可配置的高保真 3D 模型。WebGL 在此不是装饰，而是让前沿硬件通过屏幕被「摸到」的方式。",
+    "quote": "最难的从来不是讲清产品，而是让人感觉到它。",
+    "url": "https://www.awwwards.com/iyo-case-study-selling-the-worlds-first-audio-computer.html",
+    "source": "Awwwards",
+    "published": "2026-09-23",
+    "uid": "85b05a9594047ae766995894a26d6dd8"
+  },
+  {
+    "title": "La Revoltosa：让一个 70 年老品牌开口说话",
+    "content": "La Revoltosa 是 1953 年诞生于西班牙的汽水品牌，深植于酒吧文化与家庭记忆。品牌方给 waka 的任务不是重造，而是把一个受人喜爱却沉寂的老品牌重新拉回视野，且不丢魂。他们首先明确不做什么：西班牙食品饮料业满是「宣传册式」网站——第三人称的 About、产品轮播、举杯的库存图。于是整个网站改用第一人称，把品牌写成一个坐在吧台边、跟你称名道姓、一章一章讲自己人生的人。核心概念「a nuestra manera（按我们自己的方式）」贯穿始终：品牌有自己的声音，网站就得跟它一个声音。",
+    "quote": "让品牌自己开口讲话，比再加一个产品轮播强。",
+    "url": "https://www.awwwards.com/la-revoltosa-rebooting-a-70-year-old-spanish-soda-brand-for-the-scroll-generation.html",
+    "source": "Awwwards",
+    "published": "2026-09-23",
+    "uid": "a2f71912d87b99d54f9accc4659bd2a6"
+  }
+]
