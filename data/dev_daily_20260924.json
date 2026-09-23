@@ -1,0 +1,218 @@
+[
+  {
+    "title": "Token 便宜到难以置信，LLM 快变成基础设施了",
+    "content": "文章用一整套证据论证：机器学习智能的单价正以每年若干数量级的速度下跌，且毫无放缓迹象。作者预测一两年内 LLM 会像基础设施一样嵌入计算的每个角落，3–6 年内消费级硬件就能跑出今天前沿质量的模型；真正的瓶颈很快会从「token 数量」变成「质量与可获得性」。文中还套用杰文斯悖论，从供给侧和需求侧分别推演价格暴跌之后市场会走向何方。",
+    "quote": "token 快比工具调用还便宜，卷吧。",
+    "source": "HN Front Page",
+    "url": "https://jyn.dev/tokens-too-cheap-to-meter/",
+    "published": "2026-09-24",
+    "uid": "dev_872e8552"
+  },
+  {
+    "title": "Claude Code 只在开了遥测时才读你的 AGENTS.md",
+    "content": "Claude Code 2.1.277 宣布支持 AGENTS.md，但作者发现该加载器其实是个内置插件，被远程功能开关 tengu_agents_md_mod 挡在后面且默认关闭。作者在自己的 shell 里关掉了遥测，结果仓库里的 AGENTS.md 始终没被加载，还没有任何提示。文中给出实测过程，并分享了他改用的一行式 CLAUDE.md 变通方案。",
+    "quote": "想让它读 AGENTS.md？先把遥测打开。",
+    "source": "HN Front Page",
+    "url": "https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/",
+    "published": "2026-09-24",
+    "uid": "dev_787e5ece"
+  },
+  {
+    "title": "三星一次 OTA，把智能冰箱冻成了砖头",
+    "content": "三星在韩国暂停了面向智能冰箱的 SmartThings 更新：部分用户报告冰箱直接「罢工」，导致食物腐坏，还有人遇到自动开门失灵、内部照明不亮等问题。三星已确认问题并表示采取「紧急措施」。文章借此再次提醒：把冰箱这类大件家电联上网、接受远程升级，等于把关键时刻的主动权交给厂商——它一次失误，你的食材跟着遭殃。",
+    "quote": "一次 OTA，把全家的菜给冻没了。",
+    "source": "HN Front Page",
+    "url": "https://www.androidauthority.com/samsung-accidentally-freezes-its-smart-fridges-with-a-software-update-3714472/",
+    "published": "2026-09-24",
+    "uid": "dev_2e2f34ae"
+  },
+  {
+    "title": "Radicle 自曝网络协议严重漏洞：私仓请先停用",
+    "content": "点对点、本地优先的 Git 代码协作栈 Radicle 披露两个高危网络安全漏洞：所有已发布版本都受影响，节点之间的网络流量既不加密也不认证。虽然签名的引用仍能发现传输途中被篡改的对象，但真正的问题是信息泄露——网络路径上的攻击者可以读走传输中的对象。官方建议在修复版发布前停用私有仓库，且因缺少版本协商、修复在协议层不兼容，将是一次破坏性的大版本升级。",
+    "quote": "代码协作先别私用，网线那头有人偷看。",
+    "source": "HN Front Page",
+    "url": "https://radicle.dev/2026/09/23/disclosure-of-vulnerability-in-network-protocol",
+    "published": "2026-09-24",
+    "uid": "dev_fc5b2e28"
+  },
+  {
+    "title": "Droid ASC：把编译产物当数据库，毫秒级反编译 APK",
+    "content": "面向 Agent 与移动安全研究者的 Android 反编译器前端。作者的洞见是：编译产物本身就是高度结构化的，传统反编译器却要花几十分钟、吃几 GB 内存去重建庞大的全局索引，纯属浪费。ASC 改成「把编译产物直接当数据库查询」，做成无状态、零预处理开销的引擎，按需毫秒级提取代码关系，相关工作入选 Black Hat Europe Arsenal。",
+    "quote": "反编译卷到毫秒，重建索引纯属浪费。",
+    "source": "HN Show HN",
+    "url": "https://github.com/MG1937/ASC",
+    "published": "2026-09-24",
+    "uid": "dev_35c3596a"
+  },
+  {
+    "title": "Local Software Factory：给编码 Agent 搭一条本地流水线",
+    "content": "它把「软件工厂」的思路搬进本地：像流水线一样把软件需求变成成品。你可以定义多条 pipeline，每条由若干 stage 组成，新需求进入后逐级流转，直到完成或需要人工审核。项目主打可复现与自动化，并在关键节点保留人工把关，也适配 jev 等 Agent 生态。对想给多 Agent 编码任务套上「流程与审批」的团队，是个可自建的骨架。",
+    "quote": "给 Agent 搭条流水线，人只负责签字。",
+    "source": "HN Show HN",
+    "url": "https://github.com/stratonext/software-factory",
+    "published": "2026-09-24",
+    "uid": "dev_9fe0c72f"
+  },
+  {
+    "title": "Vibe-coder 天梯第二回合收官：一胜一负，赛季战平",
+    "content": "任务赛前保密，是「在一个 HTML 文件里做出四子棋」：7×6、至少两种难度、胜负与平局判定、新局控件，高难度下电脑得真的会争取获胜。两位选手都通过了全部功能项，无联网作弊与提示注入。评审用 LLM 在不看源码、只操作界面的前提下对弈定胜负，结果一胜一负，赛季战平，评分把两人都摁回 1100 基准。",
+    "quote": "两位高手打了半天，评分原地踏步。",
+    "source": "HN Show HN",
+    "url": "https://vibeladder.dev/results/r2.html",
+    "published": "2026-09-24",
+    "uid": "dev_8173f75e"
+  },
+  {
+    "title": "obra/superpowers：给编码 Agent 的一套开发方法论",
+    "content": "Superpowers 是一套给编码 Agent 用的软件开发方法论：由一组可组合的 skill 加初始指令构成，确保 Agent 会真正调用它们。它宣称适配 Claude Code、Codex、Cursor、Gemini CLI、Copilot CLI、OpenCode 等主流客户端。核心主张是：与其反复打磨提示词，不如把「正确做法」固化成技能包，让 Agent 按流程自觉执行。",
+    "quote": "提示词背不下来？那就写成技能包。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/obra/superpowers",
+    "published": "2026-09-24",
+    "uid": "dev_68a58334"
+  },
+  {
+    "title": "世界首个基于 jev 的 AI 实时模拟小镇上线",
+    "content": "作者把最近很火的 jev 接进「斯坦福小镇」式 Agent 模拟世界：20 个像素风居民没有玩家操控，全靠 Agent 自行决定去哪、找谁、何时停下。关键实验是用 jev 接管最高频的「下一步做什么」决策——引擎先算出合法候选动作，再交给 jev 从中选择，从结构上杜绝非法动作；面板能看到 seek 0.83 这类概率与置信度。他强调 jev 只替换决策一环，对白与记忆仍由对话模型负责。",
+    "quote": "给小镇请了个只会选 A/B/C 的镇长。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1244325",
+    "published": "2026-09-24",
+    "uid": "dev_30a44bc7"
+  },
+  {
+    "title": "157 个「真免费」素材站：逐条标注许可与商用限制",
+    "content": "有人受够了「免费素材」授权不明的坑，于是逐条核实了 157 个真免费素材站，做成开源清单 Free for Creators，覆盖音乐、音效、视频、图片、字体、图标插画、LUT 与模板、样机、3D 与游戏素材、聚合搜索共 10 类。和普通 awesome list 不同，每条都标注四项：许可协议、是否必须署名、能否用于已变现内容、是否需要注册。CI 每周查死链，目前 157 条 0 死链。",
+    "quote": "「免费」两个字，坑了多少做视频的。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1244189",
+    "published": "2026-09-24",
+    "uid": "dev_8888e5d9"
+  },
+  {
+    "title": "Meshtastic/LoRa 相关产品在淘宝、闲鱼搜不到了",
+    "content": "有 V2EX 网友发帖称，Meshtastic、MeshCore、LoRa 相关产品在淘宝、闲鱼已搜不到，询问现有设备还能否继续安全使用。跟帖者认为这类设备本就小众，且在监管视角下「比无线电还危险」，被管控并不意外；楼主则更关心已购设备会不会受影响。这条帖子折射出 LoRa 这类自组网通信硬件在国内愈发敏感的处境。",
+    "quote": "自组网比无线电还敏感，先下架为敬。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1239570",
+    "published": "2026-09-24",
+    "uid": "dev_05408834"
+  },
+  {
+    "title": "开多个 Agent 后 Claude Code 账单翻了 4 倍，一个配置搞定",
+    "content": "作者发现跑多 Agent 任务时，Claude Code 会悄悄开三个子 Agent 分工干活，各自独立计费，「轻量任务」账单直接乘三。解法不改代码：用 DeepSeek 的 Anthropic 端点，把子 Agent 路由到便宜的 V4-Flash、主 Agent 用 V4-Pro，账单从 $6 降到 $1.2。坑在于不显式指定子 Agent 模型，会被按主 Agent 的价格计费。",
+    "quote": "一次轻任务三个子 Agent，账单先翻倍。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/uniqueDong/p/23098897",
+    "published": "2026-09-24",
+    "uid": "dev_a07d994a"
+  },
+  {
+    "title": "AI 不仅仅埋葬了我的才华",
+    "content": "一位写了多年代码的开发者坦白：AI 编码正在摧毁他的职业乐趣。手敲要十天半月的需求，AI 十分钟搞定，但十几个需求之后他已看不懂 AI 写的代码——抽象堆砌、甚至凭空想象业务逻辑，写代码的创造快感荡然无存，只剩机械劳动。更扎心的是，AI 抹平了老鸟与菜鸟的差距，以及「驾驭复杂系统、解决疑难问题」这两项专家核心能力，他据此判断明年初可能迎来裁员潮。",
+    "quote": "码农的浪漫，被 AI 十分钟焊死了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/liulun/p/23092153",
+    "published": "2026-09-24",
+    "uid": "dev_ae0ef0ee"
+  },
+  {
+    "title": "Show HN：在 Digital Unix 上跑大模型，纯 C99 写的推理引擎",
+    "content": "PicoLM 是一个用 C99 从零写的 LLM 推理引擎，目前支持 llama-2、GPT-2、Qwen 3.6/3.8（含 MoE）和 Gemma-3n 等模型，并把大量精力投在 CPU SIMD 加速与测试上。作者的执念是让老平台也能跑模型——他在 Digital Unix 这类古董系统上把引擎跑了起来。在动辄依赖 GPU 和大框架的今天，这种「抠到指令级、喂饱老机器」的做法显得格外硬核。",
+    "quote": "别人上 GPU，他偏要在古董系统上跑。",
+    "source": "HN Show HN",
+    "url": "https://github.com/whoreson/picolm/",
+    "uid": "dev_ecc41415",
+    "published": "2026-09-24"
+  },
+  {
+    "title": "Show HN：一个让非程序员也能写的 XML 简化语言 STXT",
+    "content": "作者 2013 年设计了 STXT：一种保留 XML 最常用特性、但连非技术人员都能上手的标记语言。十多年过去，他终于把它打磨到可用的状态并公开。它瞄准的是 XML 长期被诟病的啰嗦与难写——在保留结构化表达的同时大幅降低书写门槛。对需要人类直接编辑配置文件、又想要结构化表达的场景，这是个颇有看点的老派简化方案。",
+    "quote": "XML 写了十年，终于有人嫌它啰嗦。",
+    "source": "HN Show HN",
+    "url": "https://stxt.dev/",
+    "uid": "dev_a738659b",
+    "published": "2026-09-24"
+  },
+  {
+    "title": "Show HN：不改生产代码，也能 mock 掉标准库的 Rust crate",
+    "content": "Rust 里 mock 具体类型一向麻烦：要么抽 trait、要么改被测代码，侵入性都不小。作者做了 shimforge，思路是不动生产代码，直接在测试里替换 std、reqwest 这类具体函数调用——比如把 std::fs 换成可预测的假实现。对写单元测试、又不想为可测性牺牲代码结构的人来说，这提供了一条「零侵入」的路径。",
+    "quote": "为了好测试就改架构？他偏不这么干。",
+    "source": "HN Show HN",
+    "url": "https://github.com/XTSoftwareLabs/shimforge",
+    "uid": "dev_236dd0fb",
+    "published": "2026-09-24"
+  },
+  {
+    "title": "Show HN：RustyTux——利用 ESP-in-TCP 竞态的 Linux 内核提权",
+    "content": "作者公开了 RustyTux，一个针对 Linux 内核的本地提权（LPE）漏洞利用，走的是 ESP-in-TCP 处理中的竞态条件。ESP-in-TCP 是内核里用来承载 IPsec 流量的一条少见路径，作者正是从这块冷门代码里挖出竞态窗口并完成提权。对内核安全研究者来说，这是一个典型的「冷门子系统里藏大洞」案例，也提醒防御方别忽视用得少的代码路径。",
+    "quote": "冷门代码路径里，往往藏着最狠的洞。",
+    "source": "HN Show HN",
+    "url": "https://github.com/m0x41nos/RustyTux",
+    "uid": "dev_b4c13153",
+    "published": "2026-09-24"
+  },
+  {
+    "title": "给 AI 的 C++ 评测上两把锁：构建全绿也可能翻车",
+    "content": "一次补丁提交，所有断言都是绿的，返回值也和黄金文件一致。可随后延迟面板动了：一个原本只操作栈缓冲的内层循环，现在改调 std::vector::resize，在异常路径上会反复分配。作者因此给 AI 生成的 C++ 评测加了「两把锁」：用提示词哈希锁定输入，再限制喂给模型的 RSS 数据量，防止评测被悄悄带偏。",
+    "quote": "断言全绿不等于没事，延迟会告状。",
+    "source": "Dev.to",
+    "url": "https://dev.to/devcpp_268/two-locks-on-a-green-build-prompt-hashes-and-rss-caps-for-ai-c-evals-4mf8",
+    "uid": "dev_3866ed95",
+    "published": "2026-09-24"
+  },
+  {
+    "title": "RRSI：用正则化拦住 Agent 骨架对自己的基准过拟合",
+    "content": "过去一年，Agent「骨架」（harness）工程悄然兴起：围绕模型搭一层执行框架来提升任务表现。但作者指出一个隐患——骨架很容易对自己的评测基准过拟合，把分数刷上去却没学到通用能力。他提出的 RRSI 思路是引入正则化，约束优化过程，让骨架提升的是真实能力而非基准特化。对做 Agent 评测的人来说，这是一剂必要的清醒药。",
+    "quote": "分数刷上去了，真本事还在原地。",
+    "source": "Dev.to",
+    "url": "https://dev.to/prabhakar_chaudhary_7afe4/rrsi-how-regularization-stops-agent-harnesses-from-overfitting-their-own-benchmarks-5aim",
+    "uid": "dev_64b7ad4a",
+    "published": "2026-09-24"
+  },
+  {
+    "title": "click 处理器把元素换掉后，dblclick 会悄悄不触发",
+    "content": "作者在写纸牌接龙时踩了个坑：双击本该把牌送进基础堆，结果毫无反应，控制台也没有报错，dblclick 处理器本身也没写错。排查后发现真因是——单击处理器在首次点击时就把那个元素替换掉了，于是第二次点击落在新元素上，双击事件永远凑不齐。浏览器不报错，只留你对着代码发呆，这类静默失效最耗时。",
+    "quote": "不报错的 bug 才最磨人，查到你崩溃。",
+    "source": "Dev.to",
+    "url": "https://dev.to/dev_nash/dblclick-silently-never-fires-if-your-click-handler-replaces-the-element-1c6i",
+    "uid": "dev_3feca2bb",
+    "published": "2026-09-24"
+  },
+  {
+    "title": "日均百万订单、QPS 1500：一次 PHP 架构的演化复盘",
+    "content": "作者在公司做的是花店 SaaS，核心是聚合订单与聚合配送。早期为快速验证业务，按现有资源选了 PHP 7.3 加一套朴素架构；随着日均订单突破百万、QPS 冲到 1500/s，系统被迫经历多轮演化。文章完整复盘了这几年踩过的坑与取舍：什么阶段该用最简方案、什么信号意味着必须重构。对正从小流量迈向高并发的团队，是一份难得的实战参照。",
+    "quote": "流量涨上去，架构就得跟着还债。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/liuzhang/p/23097040",
+    "uid": "dev_b6c35953",
+    "published": "2026-09-24"
+  },
+  {
+    "title": "为替掉超级右键那类付费工具，他写了原生 macOS 的 FileMint",
+    "content": "作者受够了「超级右键」这类 Finder 增强工具：功能越堆越多、菜单越来越杂，还得单独付费。于是他做了 FileMint——一个纯原生 macOS 工具，把常用文件操作直接塞回 Finder。在桌面或文件夹空白处右键，就能新建 Markdown、JSON、Swift 等文件。目标很明确：不做大而全，只把高频操作做顺手，把付费工具的活接过来。",
+    "quote": "右键菜单越加越长，钱包越来越薄。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1243302",
+    "uid": "dev_eb49f00a",
+    "published": "2026-09-24"
+  },
+  {
+    "title": "回答透视镜：给知乎、小红书、X 的内容挂上 AI 质量徽章",
+    "content": "作者刷知乎时有个老感受：高赞是投出来的，投的是共鸣而非质量——会讲故事的两千赞，真懂行的可能三十赞，读者根本分不出。小红书更甚，种草帖和真实体验混在信息流里。于是他做了 Chrome 插件「回答透视镜」，在内容旁挂三个 AI 判定徽章：内容类型（干货/亲历/情绪/软文）、论据密度 0-10 分等，帮读者快速判断是否靠谱。",
+    "quote": "赞多的未必对，只是更会讲故事。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1244128",
+    "uid": "dev_6df7f236",
+    "published": "2026-09-24"
+  },
+  {
+    "title": "Vibe Coding 实战：纯浏览器端的 DOCX 渲染组件实现记",
+    "content": "作者在做文档翻译站时，需要在浏览器里预览 DOCX、PDF、PPTX 等文件。初期他用了现成开源库 docxjs，基本展示没问题，但一遇到 20M 以上的大文件就卡顿，甚至把浏览器搞崩。于是他采用 Vibe Coding 的方式、借助 AI 打造纯浏览器端的 DOCX 渲染组件，在渲染性能与大文件稳定性上做优化。对做在线文档预览的开发者，是一份踩坑与提速记录。",
+    "quote": "预览大文档，别让浏览器先崩了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1243989",
+    "uid": "dev_3e669cf6",
+    "published": "2026-09-24"
+  }
+]
