@@ -1,0 +1,119 @@
+[
+  {
+    "title": "Show HN：在 Digital Unix 上跑大模型，纯 C99 写的推理引擎",
+    "content": "PicoLM 是一个用 C99 从零写的 LLM 推理引擎，目前支持 llama-2、GPT-2、Qwen 3.6/3.8（含 MoE）和 Gemma-3n 等模型，并把大量精力投在 CPU SIMD 加速与测试上。作者的执念是让老平台也能跑模型——他在 Digital Unix 这类古董系统上把引擎跑了起来。在动辄依赖 GPU 和大框架的今天，这种「抠到指令级、喂饱老机器」的做法显得格外硬核。",
+    "quote": "别人上 GPU，他偏要在古董系统上跑。",
+    "source": "HN Show HN",
+    "url": "https://github.com/whoreson/picolm/",
+    "uid": "dev_ecc41415",
+    "published": "2026-09-24"
+  },
+  {
+    "title": "Show HN：一个让非程序员也能写的 XML 替代品 STXT",
+    "content": "作者 2013 年设计了 STXT：一种保留 XML 最常用特性、但连非技术人员都能上手的标记语言。十多年过去，他终于把它打磨到可用的状态并公开。它瞄准的是 XML 长期被诟病的啰嗦与难写——在保留结构化表达的同时大幅降低书写门槛。对需要人类直接编辑配置文件、又想要结构化表达的场景，这是个值得一看的老派替代方案。",
+    "quote": "XML 写了十年，终于有人嫌它啰嗦。",
+    "source": "HN Show HN",
+    "url": "https://stxt.dev/",
+    "uid": "dev_a738659b",
+    "published": "2026-09-24"
+  },
+  {
+    "title": "Show HN：不改生产代码，也能 mock 掉标准库的 Rust crate",
+    "content": "Rust 里 mock 具体类型一向麻烦：要么抽 trait、要么改被测代码，侵入性都不小。作者做了 shimforge，思路是不动生产代码，直接在测试里替换 std、reqwest 这类具体函数调用——比如把 std::fs 换成可预测的假实现。对写单元测试、又不想为可测性牺牲代码结构的人来说，这提供了一条「零侵入」的路径。",
+    "quote": "为了好测试就改架构？他偏不这么干。",
+    "source": "HN Show HN",
+    "url": "https://github.com/XTSoftwareLabs/shimforge",
+    "uid": "dev_236dd0fb",
+    "published": "2026-09-24"
+  },
+  {
+    "title": "Show HN：RustyTux——利用 ESP-in-TCP 竞态的 Linux 内核提权",
+    "content": "作者公开了 RustyTux，一个针对 Linux 内核的本地提权（LPE）漏洞利用，走的是 ESP-in-TCP 处理中的竞态条件。ESP-in-TCP 是内核里用来承载 IPsec 流量的一条少见路径，作者正是从这块冷门代码里挖出竞态窗口并完成提权。对内核安全研究者来说，这是一个典型的「冷门子系统里藏大洞」案例，也提醒防御方别忽视用得少的代码路径。",
+    "quote": "冷门代码路径里，往往藏着最狠的洞。",
+    "source": "HN Show HN",
+    "url": "https://github.com/m0x41nos/RustyTux",
+    "uid": "dev_b4c13153",
+    "published": "2026-09-24"
+  },
+  {
+    "title": "给 AI 的 C++ 评测上两把锁：构建全绿也可能翻车",
+    "content": "一次补丁提交，所有断言都是绿的，返回值也和黄金文件一致。可随后延迟面板动了：一个原本只操作栈缓冲的内层循环，现在改调 std::vector::resize，在异常路径上会反复分配。作者因此给 AI 生成的 C++ 评测加了「两把锁」：用提示词哈希锁定输入，再限制喂给模型的 RSS 数据量，防止评测被悄悄带偏。",
+    "quote": "断言全绿不等于没事，延迟会告状。",
+    "source": "Dev.to",
+    "url": "https://dev.to/devcpp_268/two-locks-on-a-green-build-prompt-hashes-and-rss-caps-for-ai-c-evals-4mf8",
+    "uid": "dev_3866ed95",
+    "published": "2026-09-24"
+  },
+  {
+    "title": "RRSI：用正则化拦住 Agent 骨架对自己的基准过拟合",
+    "content": "过去一年，Agent「骨架」（harness）工程悄然兴起：围绕模型搭一层执行框架来提升任务表现。但作者指出一个隐患——骨架很容易对自己的评测基准过拟合，把分数刷上去却没学到通用能力。他提出的 RRSI 思路是引入正则化，约束优化过程，让骨架提升的是真实能力而非基准特化。对做 Agent 评测的人来说，这是一剂必要的清醒药。",
+    "quote": "分数刷上去了，真本事还在原地。",
+    "source": "Dev.to",
+    "url": "https://dev.to/prabhakar_chaudhary_7afe4/rrsi-how-regularization-stops-agent-harnesses-from-overfitting-their-own-benchmarks-5aim",
+    "uid": "dev_64b7ad4a",
+    "published": "2026-09-24"
+  },
+  {
+    "title": "click 处理器把元素换掉后，dblclick 会悄悄不触发",
+    "content": "作者在写纸牌接龙时踩了个坑：双击本该把牌送进基础堆，结果毫无反应，控制台也没有报错，dblclick 处理器本身也没写错。排查后发现真因是——单击处理器在首次点击时就把那个元素替换掉了，于是第二次点击落在新元素上，双击事件永远凑不齐。浏览器不报错，只留你对着代码发呆，这类静默失效最耗时。",
+    "quote": "不报错的 bug 才最磨人，查到你崩溃。",
+    "source": "Dev.to",
+    "url": "https://dev.to/dev_nash/dblclick-silently-never-fires-if-your-click-handler-replaces-the-element-1c6i",
+    "uid": "dev_3feca2bb",
+    "published": "2026-09-24"
+  },
+  {
+    "title": "从魔数到动态链接：读懂 Linux 可执行文件的每一字节",
+    "content": "你在 Linux 上写的每个 hello、跑的每个 Python 进程，背后都是 ELF 文件格式在支撑——它决定了内核如何把磁盘上的字节变成内存里的进程。这篇文章不用玄学术语，全程拿真实文件说话：先认识 ELF 的宏观布局，再逐段拆解魔数、节区与动态链接。对想真正搞懂「程序怎么被加载运行」的人来说，是一篇扎实的底层科普。",
+    "quote": "天天跑程序，却从没读懂过 ELF。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/yizhilaoxiaobai/p/23096174",
+    "uid": "dev_17ad4a47",
+    "published": "2026-09-24"
+  },
+  {
+    "title": "日均百万订单、QPS 1500：一次 PHP 架构的演化复盘",
+    "content": "作者在公司做的是花店 SaaS，核心是聚合订单与聚合配送。早期为快速验证业务，按现有资源选了 PHP 7.3 加一套朴素架构；随着日均订单突破百万、QPS 冲到 1500/s，系统被迫经历多轮演化。文章完整复盘了这几年踩过的坑与取舍：什么阶段该用最简方案、什么信号意味着必须重构。对正从小流量迈向高并发的团队，是一份难得的实战参照。",
+    "quote": "流量涨上去，架构就得跟着还债。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/liuzhang/p/23097040",
+    "uid": "dev_b6c35953",
+    "published": "2026-09-24"
+  },
+  {
+    "title": "按一下为什么会变很多次：按键抖动的正确处理",
+    "content": "手指只按了一次，三颗 LED 拼出的数却往前跳了一长串——这是机械按键抖动带来的经典问题。作者从最容易看懂的朴素写法讲起，解释为什么一段连续变化的电平需要一个稳的采样方式，才能被压成「一次按下」。文章没有堆术语，而是把「为什么抖」「怎么写才稳」讲透，对刚接触嵌入式或底层输入的人是个清晰入门。",
+    "quote": "手指按一下，机器给你读出十下。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/zw-awa/p/23073197",
+    "uid": "dev_66fd26e6",
+    "published": "2026-09-24"
+  },
+  {
+    "title": "为替掉超级右键那类付费工具，他写了原生 macOS 的 FileMint",
+    "content": "作者受够了「超级右键」这类 Finder 增强工具：功能越堆越多、菜单越来越杂，还得单独付费。于是他做了 FileMint——一个纯原生 macOS 工具，把常用文件操作直接塞回 Finder。在桌面或文件夹空白处右键，就能新建 Markdown、JSON、Swift 等文件。目标很明确：不做大而全，只把高频操作做顺手，把付费工具的活接过来。",
+    "quote": "右键菜单越加越长，钱包越来越薄。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1243302",
+    "uid": "dev_eb49f00a",
+    "published": "2026-09-24"
+  },
+  {
+    "title": "回答透视镜：给知乎、小红书、X 的内容挂上 AI 质量徽章",
+    "content": "作者刷知乎时有个老感受：高赞是投出来的，投的是共鸣而非质量——会讲故事的两千赞，真懂行的可能三十赞，读者根本分不出。小红书更甚，种草帖和真实体验混在信息流里。于是他做了 Chrome 插件「回答透视镜」，在内容旁挂三个 AI 判定徽章：内容类型（干货/亲历/情绪/软文）、论据密度 0-10 分等，帮读者快速判断值不值得看。",
+    "quote": "赞多的未必对，只是更会讲故事。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1244128",
+    "uid": "dev_6df7f236",
+    "published": "2026-09-24"
+  },
+  {
+    "title": "Vibe Coding 实战：纯浏览器端的 DOCX 渲染组件怎么造",
+    "content": "作者在做文档翻译站时，需要在浏览器里预览 DOCX、PDF、PPTX 等文件。初期他用了现成开源库 docxjs，基本展示没问题，但一遇到 20M 以上的大文件就卡顿，甚至把浏览器搞崩。于是他采用 Vibe Coding 的方式、借助 AI 打造纯浏览器端的 DOCX 渲染组件，在渲染性能与大文件稳定性上做优化。对做在线文档预览的开发者，是一份踩坑与提速记录。",
+    "quote": "预览大文档，别让浏览器先崩了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1243989",
+    "uid": "dev_3e669cf6",
+    "published": "2026-09-24"
+  }
+]
