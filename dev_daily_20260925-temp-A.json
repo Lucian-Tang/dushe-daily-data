@@ -1,0 +1,137 @@
+[
+  {
+    "title": "F-Droid 2.0 发布：十年最大改版，重构成 Kotlin Compose",
+    "content": "F-Droid 官方宣布 2.0 版本上线，是这款开源安卓应用商店十年来的最大一次更新。新版把界面彻底重做，采用 Material Design，主导航精简为「发现 / 搜索 / 我的应用」三块，并重写核心组件、迁到 Kotlin Compose，为后续迭代铺路。官方称经过 14 个测试版后，将在接下来几周逐批推送。背景是 Google 正收紧安卓侧载规则，F-Droid 的日子并不轻松。",
+    "quote": "十年更一次，安卓自由的最后倔强。",
+    "source": "HN Front Page",
+    "url": "https://f-droid.org/2026/09/24/f-droid-2.0-a-new-chapter-for-android-freedom.html",
+    "published": "2026-09-25",
+    "uid": "dev_14858efd"
+  },
+  {
+    "title": "日本旧书店销量飙 5 倍：成吨的书被买去喂 AI 扫描",
+    "content": "据 Tom's Hardware 报道，日本二手书店的销量出现约 5 倍的暴涨，原因是有人成吨成吨地收购旧书，其中甚至有一笔 50 吨的订单被直接发往美国。作者怀疑这些书最终会进入境外的「AI 扫描并销毁」设施——扫描用于获取训练数据，随后销毁原书。整批可疑的大宗采购，让「纸质书被用来喂 AI、然后消失」这件事第一次有了清晰的量化画面。",
+    "quote": "书被买去喂 AI，扫完就销毁，连灰都不留。",
+    "source": "HN Front Page",
+    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/japanese-used-bookstores-see-5x-sales-surge-as-books-are-being-bought-by-the-ton-one-50-ton-order-sent-to-the-us-for-ai-scanning-and-destruction-multitude-of-suspicious-bulk-buys-thought-to-end-up-in-foreign-ai-scan-and-shred-facilities",
+    "published": "2026-09-25",
+    "uid": "dev_380a6b6a"
+  },
+  {
+    "title": "高通宣布 Snapdragon X2 系列将支持 Linux",
+    "content": "高通在 Snapdragon Summit 2026 上宣布，将为 Snapdragon X2 系列 PC 芯片带来 Linux 支持，同场还谈到 agentic AI PC 与 Googlebook。对 ARM 笔记本生态来说，这补齐了长期被诟病的一环——过去 Windows on ARM 能跑，Linux 支持却总慢半拍。开发者有望在骁龙 X2 设备上更顺畅地跑原生 Linux 发行版。",
+    "quote": "ARM 笔记本终于能正经装 Linux 了。",
+    "source": "HN Front Page",
+    "url": "https://www.qualcomm.com/news/onq/2026/09/snapdragon-summit-agentic-ai-pcs-linux",
+    "published": "2026-09-25",
+    "uid": "dev_9c272a35"
+  },
+  {
+    "title": "virtio-nvgpu：让 KVM 虚拟机近乎原生地用上 N 卡",
+    "content": "nestrilabs 开源实验性 virtio 设备 virtio-nvgpu，目标是让 KVM 虚拟机里的 guest 获得接近原生的 NVIDIA GPU 访问能力。它用 Rust 编写，属于实验性质，适用场景包括虚拟机里的游戏、图形与本地大模型推理。对自建虚拟化、想在一台机器上既跑宿主又给虚拟机分 GPU 的人来说，这是绕过 PCIe 直通的一种新思路。",
+    "quote": "虚拟机玩 3A，显卡直通终于能退休了。",
+    "source": "HN Front Page",
+    "url": "https://github.com/nestrilabs/virtio-nvgpu",
+    "published": "2026-09-25",
+    "uid": "dev_b987a43b"
+  },
+  {
+    "title": "内部工具之年：从 bash 脚本到自建应用的那条线",
+    "content": "Geocodio 工程团队分享他们如何从一堆 bash 脚本，演进到一套完整的内部应用，以及维持这套系统可维护性的做法。文章的核心是真问题：什么时候该自建、什么时候该买现成。作者给出了一条务实的取舍线——当内部需求足够独特、外部工具又改不动时，自建才有意义；否则就是给自己造维护负担。正好呼应这两年「AI 让做工具变便宜」之后的反思。",
+    "quote": "自建工具一时爽，维护起来火葬场。",
+    "source": "HN Front Page",
+    "url": "https://www.geocod.io/code-and-coordinates/2026-09-23-the-year-of-internal-tools",
+    "published": "2026-09-25",
+    "uid": "dev_6410d518"
+  },
+  {
+    "title": "Harness.apk：把完整 Agent 循环塞进安卓手机",
+    "content": "Show HN 项目 Harness.apk 想解决一个痛点：现在的 Agent 交互多是「操作者写提示词、Agent 抛选项、来回确认」，人在旁边干等。它把这套循环直接搬到手机上，用 Kotlin 写成一个 App，宣称是「交付到手机里的完整 Agent 循环」，还和 Claude Code、终端类工具做了衔接。对想随时随地跑编码 Agent 的人，是个便携到极致的方案。",
+    "quote": "Agent 跑进手机，摸鱼又多一个借口。",
+    "source": "HN Show HN",
+    "url": "https://github.com/nev3rfail/harness.apk",
+    "published": "2026-09-25",
+    "uid": "dev_96e45d20"
+  },
+  {
+    "title": "Potluck：把家里几台机器连起来跑本地 AI",
+    "content": "Show HN 项目 Potluck 的思路很简单：多数人买不起一柜子 GPU，也租不起云算力，但手边往往不止一台机器——笔记本、家里的游戏主机、角落里吃灰的小服务器。Potluck 把这些机器连成一个小网络，让你自己决定这次推理在哪台机器上跑，主打本地、无需账号，目前已支持 Mac/Linux，Windows 稍慢一步。",
+    "quote": "买不起显卡，那就把家里的机器攒成一台。",
+    "source": "HN Show HN",
+    "url": "https://trypotluck.ai/",
+    "published": "2026-09-25",
+    "uid": "dev_70f85658"
+  },
+  {
+    "title": "ContextDebt：揪出那些「理由早就过期」的代码",
+    "content": "Show HN 项目 ContextDebt 瞄准一个被忽视的浪费：代码注释、文档里写的「为什么存在」的理由往往早已失效，但 AI 还在读、还在为它产生上下文开销，你也还在为这些 token 付费。工具的口号是「找出你 AI 每天读、你每天付钱的过期代码」，一条 npx contextdebt 即可试跑，用 JavaScript 写成，走轻量命令行路线。",
+    "quote": "AI 天天读你过期的注释，还按 token 收费。",
+    "source": "HN Show HN",
+    "url": "https://github.com/ContextDebt/contextdebt",
+    "published": "2026-09-25",
+    "uid": "dev_acc68233"
+  },
+  {
+    "title": "半年打磨的 HTTPS 抓包工具 ApiCatcher，对标 Proxyman",
+    "content": "作者把一次「临时接手项目、靠抓包理清接口」的经历，做成了半年来持续打磨的 HTTPS 抓包与调试工具 ApiCatcher，直接对标 Proxyman。他吐槽市面上的抓包工具长得、功能、体验都差不多，多半基于开源实现，自己想要的功能却没人做，于是干脆自己来。帖子里还聊了做 App Store 工具这几年市场的变化。",
+    "quote": "抓包工具长得都一样？那我自己做一个。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1244674",
+    "published": "2026-09-25",
+    "uid": "dev_73daa19c"
+  },
+  {
+    "title": "EVASafe：一个由 Agent 完全主导写出来的安卓密码管理器",
+    "content": "V2EX 网友分享 EVASafe——一个完全离线的安卓本地密码管理器，密码只存在用户自己手机里。它更特别的地方在开发方式：整个项目由 Agent 完全主导编写，作者把需求交给 AI，让它一步步把应用做出来，并开源在 GitHub。对关注「AI 究竟能独立产出多少可用软件」的人来说，这是个可以直接跑起来验证的样本。",
+    "quote": "密码管理器全靠 AI 写，你敢存第一行密码吗？",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1244658",
+    "published": "2026-09-25",
+    "uid": "dev_681e376a"
+  },
+  {
+    "title": "猫砂盆 Tailcat Box：两台机器换地址就能 P2P 穿透",
+    "content": "作者开源桌面端工具「猫砂盆」（Tailcat Box），基于 Tailscale 的 Tailcat，用 Wails（Go + React）写成 macOS/Windows 客户端。核心卖点很直白：两台机器只要交换一下地址，就能实现穿透访问、点对点文件传输，顺带还能私密聊天。作者正在找试用者反馈，适合受够了走中转服务器、又懒得配内网穿透的人。",
+    "quote": "交换个地址就连上了，家庭内网穿透可以退休。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1244439",
+    "published": "2026-09-25",
+    "uid": "dev_169f9971"
+  },
+  {
+    "title": "HKUDS/CLI-Anything：让所有软件都变成 Agent 原生",
+    "content": "HKUDS 的新项目 CLI-Anything 冲上 GitHub Trending，口号是「Making ALL Software Agent-Native」，并配套了一个 CLI-Hub 站点。思路是把各种软件包装成命令行接口，让编码 Agent 能像调工具一样直接调用，而不是每次都靠截屏和模拟点击。已斩获五万+ star，反映社区对「给 Agent 搭标准工具层」这条路的强烈兴趣。",
+    "quote": "软件的尽头是 CLI，Agent 的入口也是。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/HKUDS/CLI-Anything",
+    "published": "2026-09-25",
+    "uid": "dev_b0f4853f"
+  },
+  {
+    "title": "NVIDIA/Model-Optimizer：把量化、蒸馏、剪枝收进一个库",
+    "content": "英伟达开源的 Model-Optimizer 是一个统一的模型优化库，把量化、蒸馏、剪枝、神经架构搜索、投机解码等 SOTA 技术收进同一套接口。它的目标是把深度学习模型压小，好让 TensorRT-LLM、TensorRT、vLLM 等下游部署框架跑得更快。对要在大模型推理上抠成本、抠延迟的团队，这类官方出品的一站式工具往往比散装脚本省心得多。",
+    "quote": "官方把压榨模型的手段，打包成一个库了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/NVIDIA/Model-Optimizer",
+    "published": "2026-09-25",
+    "uid": "dev_de897715"
+  },
+  {
+    "title": "Xcode 27.2 用 JSON 项目格式替掉 pbxproj，合并冲突有救了？",
+    "content": "一篇写给 iOS 团队的指南：Xcode 27.2 开始用新的 JSON 项目格式取代让人头大的 project.pbxproj。老格式最痛的就是团队协作——一拉主分支就撞上满屏 24 位十六进制 ID 的合并冲突。新格式把项目结构变成可读的 JSON，理论上让 diff 与合并友好得多。文章用图文讲了迁移要点和注意事项，对还在被 pbxproj 折磨的人值得一读。",
+    "quote": "被 pbxproj 合并冲突折磨的十年，终于要翻篇了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/arshtechpro/goodbye-pbxproj-a-friendly-guide-to-xcode-272s-new-json-project-format-bhh",
+    "published": "2026-09-25",
+    "uid": "dev_82f51bf5"
+  },
+  {
+    "title": "Claude Code 把自己改成了任务调度器，设计比功能更值得看",
+    "content": "博客园作者复盘 Claude Code v2.1.139：初看 changelog 只觉得是常规更新，Agent 视图和 /goal 命令被他当成「任务管理器 + 批量执行」。真正用了两天才发现设计远不止如此——Claude Code 正在把自己从「单次对话的执行者」改造成能统一调度任务的调度器。作者认为这次的设计取舍比新功能本身更值得研究，并拆解了背后的思路。",
+    "quote": "你以为它在加功能，其实它在改架构。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/uniqueDong/p/23114174",
+    "published": "2026-09-25",
+    "uid": "dev_9c6dcf5d"
+  }
+]
