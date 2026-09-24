@@ -1,0 +1,218 @@
+[
+  {
+    "title": "F-Droid 2.0 发布：十年最大改版，重构成 Kotlin Compose",
+    "content": "F-Droid 官方宣布 2.0 版本上线，是这款开源安卓应用商店十年来的最大一次更新。新版把界面彻底重做，采用 Material Design，主导航精简为「发现 / 搜索 / 我的应用」三块，并重写核心组件、迁到 Kotlin Compose，为后续迭代铺路。官方称经过 14 个测试版后，将在接下来几周逐批推送。背景是 Google 正收紧安卓侧载规则，F-Droid 的日子并不轻松。",
+    "quote": "十年更一次，安卓自由的最后倔强。",
+    "source": "HN Front Page",
+    "url": "https://f-droid.org/2026/09/24/f-droid-2.0-a-new-chapter-for-android-freedom.html",
+    "published": "2026-09-25",
+    "uid": "dev_73a49c3a"
+  },
+  {
+    "title": "高通宣布 Snapdragon X2 系列将支持 Linux",
+    "content": "高通在 Snapdragon Summit 2026 上宣布，将为 Snapdragon X2 系列 PC 芯片带来 Linux 支持，同场还谈到 agentic AI PC 与 Googlebook。对 ARM 笔记本生态来说，这补齐了长期被诟病的一环——过去 Windows on ARM 能跑，Linux 支持却总慢半拍。开发者有望在骁龙 X2 设备上更顺畅地跑原生 Linux 发行版。",
+    "quote": "ARM 笔记本终于能正经装 Linux 了。",
+    "source": "HN Front Page",
+    "url": "https://www.qualcomm.com/news/onq/2026/09/snapdragon-summit-agentic-ai-pcs-linux",
+    "published": "2026-09-25",
+    "uid": "dev_d3b977fa"
+  },
+  {
+    "title": "virtio-nvgpu：让 KVM 虚拟机近乎原生地用上 N 卡",
+    "content": "nestrilabs 开源实验性 virtio 设备 virtio-nvgpu，目标是让 KVM 虚拟机里的 guest 获得接近原生的 NVIDIA GPU 访问能力。它用 Rust 编写，属于实验性质，适用场景包括虚拟机里的游戏、图形与本地大模型推理。对自建虚拟化、想在一台机器上既跑宿主又给虚拟机分 GPU 的人来说，这是绕过 PCIe 直通的一种新思路。",
+    "quote": "虚拟机玩 3A，显卡直通终于能退休了。",
+    "source": "HN Front Page",
+    "url": "https://github.com/nestrilabs/virtio-nvgpu",
+    "published": "2026-09-25",
+    "uid": "dev_9278069c"
+  },
+  {
+    "title": "内部工具之年：从 bash 脚本到自建应用的那条线",
+    "content": "Geocodio 工程团队分享他们怎样从一堆 bash 脚本，演进到一套完整的内部应用，以及维持这套系统可维护性的做法。文章的核心是真问题：什么时候该自建、什么时候该买现成。作者给出了一条务实的取舍线——当内部需求足够独特、外部工具又改不动时，自建才有意义；否则就是给自己造维护负担。正好呼应这两年「AI 让做工具变便宜」之后的反思。",
+    "quote": "自建工具一时爽，维护起来火葬场。",
+    "source": "HN Front Page",
+    "url": "https://www.geocod.io/code-and-coordinates/2026-09-23-the-year-of-internal-tools",
+    "published": "2026-09-25",
+    "uid": "dev_d4609cc6"
+  },
+  {
+    "title": "Harness.apk：把完整 Agent 循环塞进安卓手机",
+    "content": "Show HN 项目 Harness.apk 想解决一个痛点：现在的 Agent 交互多是「操作者写提示词、Agent 抛选项、来回确认」，人在旁边干等。它把这套循环直接搬到手机上，用 Kotlin 写成一个 App，宣称是「交付到手机里的完整 Agent 循环」，还和 Claude Code、终端类工具做了衔接。对想随时随地跑编码 Agent 的人，是个便携到极致的方案。",
+    "quote": "Agent 跑进手机，摸鱼又多一个借口。",
+    "source": "HN Show HN",
+    "url": "https://github.com/nev3rfail/harness.apk",
+    "published": "2026-09-25",
+    "uid": "dev_ae7398b5"
+  },
+  {
+    "title": "Potluck：把家里几台机器连起来跑本地 AI",
+    "content": "Show HN 项目 Potluck 的思路很简单：多数人买不起一柜子 GPU，也租不起云算力，但手边往往不止一台机器——笔记本、家里的游戏主机、角落里吃灰的小服务器。Potluck 把这些机器连成一个小网络，让你自己决定这次推理在哪台机器上跑，主打本地、无需账号，目前已支持 Mac/Linux，Windows 稍慢一步。",
+    "quote": "买不起显卡，那就把家里的机器攒成一台。",
+    "source": "HN Show HN",
+    "url": "https://trypotluck.ai/",
+    "published": "2026-09-25",
+    "uid": "dev_64c8a7cd"
+  },
+  {
+    "title": "ContextDebt：揪出那些「理由早就过期」的代码",
+    "content": "Show HN 项目 ContextDebt 瞄准一个被忽视的浪费：代码注释、文档里写的「为什么存在」的理由往往早已失效，但 AI 还在读、还在为它产生上下文开销，你也还在为这些 token 付费。工具的口号是「找出你 AI 每天读、你每天付钱的过期代码」，一条 npx contextdebt 即可试跑，用 JavaScript 写成，走轻量命令行路线。",
+    "quote": "AI 天天读你过期的注释，还按 token 收费。",
+    "source": "HN Show HN",
+    "url": "https://github.com/ContextDebt/contextdebt",
+    "published": "2026-09-25",
+    "uid": "dev_d0456ed1"
+  },
+  {
+    "title": "半年打磨的 HTTPS 抓包工具 ApiCatcher，对标 Proxyman",
+    "content": "作者把一次「临时接手项目、靠抓包理清接口」的经历，做成了半年来持续打磨的 HTTPS 抓包与调试工具 ApiCatcher，直接对标 Proxyman。他吐槽市面上的抓包工具长得、功能、体验都差不多，多半基于开源实现，自己想要的功能却没人做，于是干脆自己来。帖子里还聊了做 App Store 工具这几年市场的变化。",
+    "quote": "抓包工具长得都一样？那我自己做一个。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1244674",
+    "published": "2026-09-25",
+    "uid": "dev_64429ab3"
+  },
+  {
+    "title": "EVASafe：一个由 Agent 完全主导写出来的安卓密码管理器",
+    "content": "V2EX 网友分享 EVASafe——一个完全离线的安卓本地密码管理器，密码只存在用户自己手机里。它更特别的地方在开发方式：整个项目由 Agent 完全主导编写，作者把需求交给 AI，让它一步步把应用做出来，并开源在 GitHub。对关注「AI 究竟能独立产出多少可用软件」的人来说，这是个可以直接跑起来验证的样本。",
+    "quote": "密码管理器全靠 AI 写，你敢存第一行密码吗？",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1244658",
+    "published": "2026-09-25",
+    "uid": "dev_1a9f4db0"
+  },
+  {
+    "title": "猫砂盆 Tailcat Box：两台机器换地址就能 P2P 穿透",
+    "content": "作者开源桌面端工具「猫砂盆」（Tailcat Box），基于 Tailscale 的 Tailcat，用 Wails（Go + React）写成 macOS/Windows 客户端。核心卖点很直白：两台机器只要交换一下地址，就能实现穿透访问、点对点文件传输，顺带还能私密聊天。作者正在找试用者反馈，适合受够了走中转服务器、又懒得配内网穿透的人。",
+    "quote": "交换个地址就连上了，家庭内网穿透可以退休。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1244439",
+    "published": "2026-09-25",
+    "uid": "dev_80eb99ea"
+  },
+  {
+    "title": "HKUDS/CLI-Anything：让所有软件都变成 Agent 原生",
+    "content": "HKUDS 的新项目 CLI-Anything 冲上 GitHub Trending，口号是「Making ALL Software Agent-Native」，并配套了一个 CLI-Hub 站点。思路是把各种软件包装成命令行接口，让编码 Agent 能像调工具一样直接调用，而不是每次都靠截屏和模拟点击。已斩获五万+ star，反映社区对「给 Agent 搭标准工具层」这条路的强烈兴趣。",
+    "quote": "软件的尽头是 CLI，Agent 的入口也是。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/HKUDS/CLI-Anything",
+    "published": "2026-09-25",
+    "uid": "dev_a9c67c48"
+  },
+  {
+    "title": "NVIDIA/Model-Optimizer：把量化、蒸馏、剪枝收进一个库",
+    "content": "英伟达开源的 Model-Optimizer 是一个统一的模型优化库，把量化、蒸馏、剪枝、神经架构搜索、投机解码等 SOTA 技术收进同一套接口。它的目标是把深度学习模型压小，好让 TensorRT-LLM、TensorRT、vLLM 等下游部署框架跑得更快。对要在大模型推理上抠成本、抠延迟的团队，这类官方出品的一站式工具往往比散装脚本省心得多。",
+    "quote": "官方把压榨模型的手段，打包成一个库了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/NVIDIA/Model-Optimizer",
+    "published": "2026-09-25",
+    "uid": "dev_6e659b6f"
+  },
+  {
+    "title": "Xcode 27.2 用 JSON 项目格式替掉 pbxproj，合并冲突有救了？",
+    "content": "一篇写给 iOS 团队的指南：Xcode 27.2 开始用新的 JSON 项目格式取代让人头大的 project.pbxproj。老格式最痛的就是团队协作——一拉主分支就撞上满屏 24 位十六进制 ID 的合并冲突。新格式把项目结构变成可读的 JSON，理论上让 diff 与合并友好得多。文章用图文讲了迁移要点和注意事项，对还在被 pbxproj 折磨的人不妨一读。",
+    "quote": "被 pbxproj 合并冲突折磨的十年，终于要翻篇了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/arshtechpro/goodbye-pbxproj-a-friendly-guide-to-xcode-272s-new-json-project-format-bhh",
+    "published": "2026-09-25",
+    "uid": "dev_21c8d640"
+  },
+  {
+    "title": "Claude Code 把自己改成了任务调度器，设计比功能更有看点",
+    "content": "博客园作者复盘 Claude Code v2.1.139：初看 changelog 只觉得是常规更新，Agent 视图和 /goal 命令被他当成「任务管理器 + 批量执行」。真正用了两天才发现设计远不止如此——Claude Code 正在把自己从「单次对话的执行者」改造成能统一调度任务的调度器。作者认为这次的设计取舍比新功能本身更有研究价值，并拆解了背后的思路。",
+    "quote": "你以为它在加功能，其实它在改架构。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/uniqueDong/p/23114174",
+    "published": "2026-09-25",
+    "uid": "dev_fef0e786"
+  },
+  {
+    "title": "Show HN：把 Claude Code 和 Codex 的所有会话与额度，收进一屏",
+    "content": "Armada 是一款 macOS 菜单栏应用，把 Mac 上所有 Claude Code、Codex 与 Grok Build 的会话统一盯起来：哪个正在等你、上下文用了多少、每个套餐还剩多少额度、按你当前节奏本周会几时跑满。它按配置目录区分账号，各账号的会话与限额互不相通，并支持一键跳到会话所在的编辑器、从当前位置复制会话继续跑。",
+    "quote": "开着十九个 Agent，终于有个窗口知道谁在等你。",
+    "source": "HN Show HN",
+    "url": "https://armada.mgcrea.io/",
+    "published": "2026-09-25",
+    "uid": "dev_8f531e28"
+  },
+  {
+    "title": "Show HN：给 AI Agent 网关做确定性安全加固的 enclawed",
+    "content": "Agent 会动钱、读邮件、控制设备，真出事时却既拦不住也说不清。enclawed 把「控制」和「审计证据」一起交付，覆盖 SOC 2、ISO 27001、NIST 800-53、HIPAA、FIPS 140-3 等合规框架。它给 Agent「读→想→做→报」四步之间的每次转变都设闸门，并锚定在防篡改审计日志与启动时认证器上，另配一个硬件信任锚，主打确定性安全。",
+    "quote": "Agent 能花钱能干坏事，终于有人给它上锁了。",
+    "source": "HN Show HN",
+    "url": "https://enclawed.com/",
+    "published": "2026-09-25",
+    "uid": "dev_a0a616d4"
+  },
+  {
+    "title": "Show HN：零依赖的 Java 有序 Set/Map 库 ChaosTree 2.0.1",
+    "content": "ChaosTree 是一个零依赖的 Java 有序集合库，提供 AVL、红黑树、B-Tree、B+Tree 四类实现，完整贴合 JDK 21 的 SequencedCollection。它把缓存局部性放在第一位：N 叉节点打包进预分配的定容数组，作者称大范围扫描时内存停顿比指针追逐结构少约 40%。另支持 O(N) 批量构建，并用 21.4 万个 Guava Testlib 用例验证语义。",
+    "quote": "TreeMap 都嫌慢，自己把树重写了一遍。",
+    "source": "HN Show HN",
+    "url": "https://github.com/Chaos-vy/ChaosTree",
+    "published": "2026-09-25",
+    "uid": "dev_1763f37d"
+  },
+  {
+    "title": "Show HN：Claude Code 撞额度限额后，自动睡到重置再续跑",
+    "content": "Pro/Max 套餐有 5 小时和每周两个额度窗口，Claude Code 自带的续跑能力却有限：只在交互会话、重置不到 24 小时时才接得上，无头 claude -p、周限额、以及撞限时正在跑的活都覆盖不到。agent-limit-retry 读取 Claude Code 自己写出的限额数据来补缺口——给出精确重置时间、撞限前先交接、让无头任务睡过重置再自己续跑，全程本地运行。",
+    "quote": "额度用完就睡，醒来接着跑，一条龙。",
+    "source": "HN Show HN",
+    "url": "https://github.com/error0702/agent-limit-retry",
+    "published": "2026-09-25",
+    "uid": "dev_2a68c618"
+  },
+  {
+    "title": "别再什么都 mock 了：Testcontainers 怎样改了我的 CI 策略",
+    "content": "后端的经典两难：带 mock 的单测快，却在数据库约束、SQL 方言差异、ORM 映射上骗你；端到端测试能抓真 bug，又脆弱、依赖复杂环境、拖慢 CI。作者指出用 H2/SQLite 顶替 PostgreSQL 会制造「虚假安全感」——JSON 操作符、行级锁与事务隔离、pgvector/PostGIS 等扩展在内存库里根本复现不了，结论是转向 Testcontainers。",
+    "quote": "mock 出来的绿灯，骗的其实是自己。",
+    "source": "Dev.to",
+    "url": "https://dev.to/mindinu/stop-mocking-everything-in-integration-tests-why-testcontainers-changed-my-ci-strategy-2akl",
+    "published": "2026-09-25",
+    "uid": "dev_b5093650"
+  },
+  {
+    "title": "2026 年 Docker vs Podman：基准互相打架，到底选哪个",
+    "content": "作者翻遍今年四份独立的基准测试，发现它们真的互相矛盾：有说 Podman 启动快 34%，有说 Docker 冷启动更快，还有说运行时性能压根一样。原因不在数据造假，而在各家测试的模式与硬件不同。分歧全都指向同一个架构差别——Docker 是有守护进程的前端，Podman 没有 daemon、容器直接是命令的子进程。文章逐份拆解来源，并给出一个可长期张贴的选型清单，按你的实际场景五分钟就能定。",
+    "quote": "四份基准四个答案，最后还得看架构。",
+    "source": "Dev.to",
+    "url": "https://dev.to/jamilxt/docker-vs-podman-in-2026-the-benchmarks-contradict-each-other-here-is-how-to-decide-3m08",
+    "published": "2026-09-25",
+    "uid": "dev_bb448f66"
+  },
+  {
+    "title": "给 Agent 喂 Markdown，要在网关做而不是在源站",
+    "content": "Agent 解析 HTML 又慢又贵，常见做法是让站点直接吐 Markdown：加 index.md、发 llms.txt、改构建。可你未必拥有那些站点——继承来的文档站、厂商知识库、没人愿意为本季度重新部署的内部 wiki。作者把决策挪到网关：源站只管吐 HTML，一个约 200 行的垫片，配上 agentgateway 按 Accept 头路由，源站完全无感。",
+    "quote": "源站别动，让网关替 Agent 翻译。",
+    "source": "Dev.to",
+    "url": "https://dev.to/webofmike/serve-markdown-to-agents-at-the-gateway-not-the-origin-314c",
+    "published": "2026-09-25",
+    "uid": "dev_f510b5e6"
+  },
+  {
+    "title": "知识不是文件，也不是向量：vivo 拆解 RAG 的边界",
+    "content": "vivo 互联网存储团队连发「知识驱动计算（KDC）」系列，这是第二篇：检索到相关材料，不等于系统拿到了可判断的知识。文章举了个案例——售后 Agent 检出的其实是半年前的旧版退款政策，检索分很高、模型也忠实作答，答案却是错的。作者由此区分 Representation、Knowledge 与 RAG 的职责，提出来源证据、成熟度、版本与适用边界等工程要求。",
+    "quote": "检索得分再高，也救不了过期的那份文件。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/vivotech/p/23111756",
+    "published": "2026-09-25",
+    "uid": "dev_64929649"
+  },
+  {
+    "title": "给 Issue 打个标签，AI 写代码、过评审、合并发版：Orbi",
+    "content": "V2EX 网友开源了可自托管的 Orbi：在 GitHub Issue 上打 ai-ready 标签，它就在单独的 worktree 里写代码、开 PR，再跑一轮评审对照 Issue 验收项校验，打回就接着改，过了才合并发 release。作者称自家仓库就这么开发——8 月 25 日至今合并 517 个 PR，其中 373 个由它交付。他反问：你敢让 AI 直接合进 main 吗？",
+    "quote": "让 AI 自己评审自己合并，你敢吗？",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1244599",
+    "published": "2026-09-25",
+    "uid": "dev_b5b6e3e9"
+  },
+  {
+    "title": "PDF 转 Markdown 网站：本地转换，扫描件可选 OCR",
+    "content": "V2EX 网友做了个 PDF to MD 网站，解决把 PDF 内容整理进 Obsidian、Notion 时反复复制、改格式的麻烦。带文本层的普通 PDF 在浏览器本地转换，免费且不上传文件，本地上限 50MB/500 页；DOCX、HTML 也能本地转 Markdown，结果可预览、编辑、复制、下载。扫描件或图片可主动选云端 OCR，另提供 API 与 MCP 方便自动化。",
+    "quote": "复制粘贴修格式的苦，终于有人管了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1244662",
+    "published": "2026-09-25",
+    "uid": "dev_2719785e"
+  }
+]
