@@ -1,0 +1,128 @@
+[
+  {
+    "title": "Go 1.27 引入可移植的平台无关 SIMD 接口",
+    "content": "Go 官方博客介绍 1.27 引入的实验性可移植 SIMD 接口。以往在 Go 里用 SIMD 只能手写汇编，1.26 先给 amd64 加了架构相关的 archsimd，1.27 又补上 arm64 NEON 与 wasm。新接口参照 C++ 的 Highway，做到写一次即可跨平台、接近汇编级性能，没有 SIMD 的平台则走模拟实现，覆盖加密、数据处理到 AI 等密集计算。",
+    "quote": "写一次跨平台，汇编老哥可以歇了。",
+    "source": "HN Front Page",
+    "url": "https://go.dev/blog/simd-experiment",
+    "published": "2026-09-26",
+    "uid": "dev_eab0c55f"
+  },
+  {
+    "title": "荷兰政府基于 NixOS 自建系统，要替换微软方案",
+    "content": "荷兰发起 DAWO 社区，目标是强化本国数字自主权，基于开源的 NixOS 打造可替代微软的政府 IT 方案。DAWO 提出五大目标：数字自主、政府与社会间的协作与知识共享、安全与数据保护、创新与更高效的工作方式、可验证性——让政府 IT 系统更容易被检视和核查。这个项目在 HN 上收获 777 分、438 条评论，被视作欧洲公共部门摆脱对美系软件依赖的标志性动作。",
+    "quote": "欧洲的软件主权，从换掉 Windows 开始。",
+    "source": "HN Front Page",
+    "url": "https://www.dawo.community/en/",
+    "published": "2026-09-26",
+    "uid": "dev_d40d527b"
+  },
+  {
+    "title": "Tui2web：把终端搬到手机上，随时盯住编码 Agent",
+    "content": "Show HN 项目 Tui2web 让任何 TUI 程序都能在网页里跑：执行 tui2web claude，就能把正在运行的编码 Agent 会话经由加密链接投到手机，随时查看进度、回答它的提问，人可以先出去溜达一圈。加 --tailscale 参数则完全私有，中继跑在自己电脑上，只有你的 Tailscale 设备能打开链接。支持 macOS、Linux、Windows。",
+    "quote": "Agent 干活你散步，摸鱼有了正当理由。",
+    "source": "HN Show HN",
+    "url": "https://tui2web.com/",
+    "published": "2026-09-26",
+    "uid": "dev_9d8ddd50"
+  },
+  {
+    "title": "Xtriever：能在手机上离线跑检索的 RAG 引擎",
+    "content": "Show HN 项目 Xtriever 是一个让 RAG 检索在设备端离线运行的混合检索引擎，用 Rust 写成。一次查询先并行跑 tantivy 的 BM25 词法检索与 MiniLM 的 int8 稠密向量检索，再做倒数排名融合，最后用 cross-encoder 重排。三个 demo 在笔记本和手机上直接离线检索 24 万篇英文维基，无需联网。",
+    "quote": "RAG 不上云，手机自己搜自己的。",
+    "source": "HN Show HN",
+    "url": "https://github.com/mirth/xtriever",
+    "published": "2026-09-26",
+    "uid": "dev_b0a253a8"
+  },
+  {
+    "title": "Llama.cpp 分支：MoE 大模型超出显存也提速 2–4 倍",
+    "content": "一个 llama.cpp 分支针对「模型远大于显存」的 MoE 场景做了优化：所有 expert 常驻系统内存，把 KV cache 之外剩余的显存全变成「热点 expert」缓存，GPU 算命中的 expert、CPU 算其余部分。在双 RTX 3090（48GB）+125GB 内存上实测，117GB 的 GLM-5.3-Flash 从 12.3 提到约 25 t/s，翻一倍，PPL 不变。",
+    "quote": "显存不够？那就拿内存给它当缓存。",
+    "source": "HN Show HN",
+    "url": "https://github.com/neurall/llama.cpp",
+    "published": "2026-09-26",
+    "uid": "dev_59264e36"
+  },
+  {
+    "title": "Anthropic 开源官方 Agent Skills 仓库",
+    "content": "Anthropic 在 GitHub 公开了 Claude 官方所用的 Skills 实现。Skills 是装着指令、脚本和资源的文件夹，Claude 需要时动态加载。仓库里既有艺术、音乐、设计等创意类，也有测试 Web 应用、生成 MCP 服务等工程类示例。多数技能 Apache 2.0 开源，docx/pdf/pptx/xlsx 等文档技能则是 source-available。",
+    "quote": "官方把看家技能摆上货架，抄就完事了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/anthropics/skills",
+    "published": "2026-09-26",
+    "uid": "dev_801584e7"
+  },
+  {
+    "title": "Kubernetes The Hard Way：不靠脚本，手搓一个 K8s 集群",
+    "content": "Kelsey Hightower 的经典教程 Kubernetes The Hard Way 坚持「不用任何自动化脚本」，把每一步引导都摊开，只为让人搞懂 K8s 核心组件怎么拼起来。教程用四台 ARM64 或 AMD64 机器搭出一个控制面单节点、加两个工作节点的集群，组件版本为 K8s v1.32.x、containerd v2.1.x、etcd v3.6.x。作者强调它不是生产方案。",
+    "quote": "与其被 YAML 惯坏，不如手搓一遍长记性。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/kelseyhightower/kubernetes-the-hard-way",
+    "published": "2026-09-26",
+    "uid": "dev_589cede4"
+  },
+  {
+    "title": "Kiri：免费开源的截图工具，标注、本地 OCR、录屏齐活",
+    "content": "作者开源了截图工具 Kiri，支持 macOS 和 Windows：按快捷键选窗口或框选区域即可截图，能加文字、箭头、马赛克。两个细节做得不错——标注保存后还能重新修改，不必因为写错一个字就重截；识别过的 OCR 文字会存档，之后凭几个字就能搜回当时的截图。录屏可导出 MP4/GIF，还能简单剪辑：剪掉录错的地方、给账号信息打码。OCR 默认本地运行。",
+    "quote": "截图工具卷到最后，比的是「截图之后」。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1244782",
+    "published": "2026-09-26",
+    "uid": "dev_de243731"
+  },
+  {
+    "title": "用 Opus 5.5 一次生成的中秋贺卡，作者看完瘫坐",
+    "content": "V2EX 网友分享用 Opus 5.5 做的中秋电子动画贺卡，所有画面与声音均由模型写代码生成，没有使用任何图像素材，页面在手机上打开即可分享。作者给的初始提示词相当「贪心」：要做一张极其精美、能最大化体现模型视觉与审美能力的 MV 式动画贺卡，并要求不断打磨到完美。随后他又追加「以顶级设计师、动效设计师和顶级导演的角度继续打磨」，一路推到「美术展获奖级别」。",
+    "quote": "提示词越写越像甲方，AI 越做越像大师。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1244788",
+    "published": "2026-09-26",
+    "uid": "dev_97a592d4"
+  },
+  {
+    "title": "CEE：本地优先的证据判断引擎，断网也能跑",
+    "content": "V2EX 网友把项目里「AI 候选答案不能直接当事实」的能力抽出来，做成独立的 CEE（Card Evidence Engine），定位本地优先的证据判断引擎。在 Benchmark v2 中，它在强制断网环境下完成判断，p50 仅 68.55 ms，32 项固定契约测试全部通过，联网与离线的判断差异为 0，共完成 9600 次测量。架构快照已做 SHA-256 封存。",
+    "quote": "断网也要给 AI 的答案挑证据，够轴。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1244737",
+    "published": "2026-09-26",
+    "uid": "dev_68d08b1b"
+  },
+  {
+    "title": "Kimi Linear：Moonshot 用混合注意力在长上下文反超全注意力",
+    "content": "Dev.to 解读 Moonshot AI 的 Kimi Linear 论文：标准注意力随序列长度平方增长，百万 token 时 KV cache 动辄数十 GB。团队提出新模块 Kimi Delta Attention（KDA），把门控细化到逐通道，再与全注意力按调好的比例混合。论文称百万 token 下 KV cache 最多减少 75%、解码快 6.3 倍，长短基准都不输全注意力。",
+    "quote": "线性注意力背了这么多年锅，终于有人翻案。",
+    "source": "Dev.to",
+    "url": "https://dev.to/prabhakar_chaudhary_7afe4/kimi-linear-how-moonshot-ai-built-a-hybrid-attention-architecture-that-beats-full-attention-4mp9",
+    "published": "2026-09-26",
+    "uid": "dev_7c725a91"
+  },
+  {
+    "title": "从按下回车到第一帧：浏览器渲染管线拆解",
+    "content": "一篇面向进阶开发的科普，把「在地址栏敲回车到屏幕亮起第一个像素」之间的全过程拆成五步。先是网络阶段：DNS 解析、TCP 三次握手、TLS 握手；接着把 HTML 字节流经字符、token、节点逐步解析成 DOM 树，并强调没加 async/defer 的 script 会直接卡住解析；随后解释 CSS 为何是渲染阻塞——层叠特性让它无法增量解析；最后是布局、绘制与合成。",
+    "quote": "你写的每一行 CSS，都在阻塞浏览器。",
+    "source": "Dev.to",
+    "url": "https://dev.to/avinashsharma01/what-really-happens-when-you-press-enter-the-browser-rendering-pipeline-explained-3paf",
+    "published": "2026-09-26",
+    "uid": "dev_9673edb2"
+  },
+  {
+    "title": "阿里云 2026 AI Agent 调研：46% 在开发，仅 18% 上生产",
+    "content": "一篇对阿里云《2026 AI Agent 开发者调研报告》的精读，样本为北上广深杭线下沙龙回收的 1906 份有效问卷。核心矛盾被一句话点破：开发率在涨（46%，去年 36%），上线率却没跟上，真正部署到生产的只有 18%。报告认为卡点不在意愿也不在模型，而在工程能力——状态在多 Agent 协作中衰减（60% 受访者点名）、成本失控、评估缺位。检索不准也以 54% 位居痛点榜首。",
+    "quote": "PPT 上的 Agent 很多，线上的没几个。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/xiaobaiysf/p/23122354",
+    "published": "2026-09-26",
+    "uid": "dev_7dc07c78"
+  },
+  {
+    "title": "在笔记本上花两天手搓一个 39M 小语言模型",
+    "content": "作者用两天时间在笔记本上从零训出能说英语、会写儿童故事的小模型 DuoGPT，参数约 39M。硬件是一块 RTX4060 Laptop，预训练 3.37 小时、SFT 2.07 小时，外加给大模型 API 的 5 块钱。架构为 11 层、宽 512、8 头，采用 RMSNorm、RoPE、SwiGLU 与权重绑定，上下文 512，基于 litgpt。语料为 270 万篇 TinyStories。",
+    "quote": "两天加五块钱，养出一个只会讲故事的小 AI。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/duoia/p/23119785",
+    "published": "2026-09-26",
+    "uid": "dev_4084004a"
+  }
+]
