@@ -1,0 +1,119 @@
+[
+  {
+    "title": "Show HN：给编码 Agent 备一座「上下文防火墙」，砍掉七成 token",
+    "content": "Show HN 项目 ctxfw 是一款 MCP 网关兼「上下文防火墙」，专给 Cursor、Claude 这类编码 Agent 瘦身：基于 Tree-Sitter 在内存里做 AST 剪枝，把外围模块实现换成接口签名、类型定义和函数桩。官方称 token 质量降 72.4%，实测上下文从 49096 压到 20014 token，引擎开销不到 5 毫秒，默认零遥测外发。",
+    "quote": "Agent 上下文太肥，先把外围代码削成签名。",
+    "source": "HN Show HN",
+    "url": "https://github.com/heuristicolab/ctxfw",
+    "uid": "dev_aa6f5aeb",
+    "published": "2026-09-26"
+  },
+  {
+    "title": "Show HN：把临时子代理，变成有状态、可恢复的 AI 团队",
+    "content": "Show HN 项目 oh-my-subagents 把「临时拉子代理」升级成可持久化的 AI 团队，为 Codex 和 Claude 提供本地子代理编排。父会话不再轮询子代理，而是由控制器提交子任务并持久化等待，子代理各自返回简短 Checkpoint，控制器收齐一整波再继续；即便终端关闭或 provider 会话中断，也能从已提交记录里恢复，不丢已验收的历史。",
+    "quote": "子代理一断线就前功尽弃？把状态写进运行时。",
+    "source": "HN Show HN",
+    "url": "https://github.com/ringlochid/oh-my-subagents",
+    "uid": "dev_41ae27f9",
+    "published": "2026-09-26"
+  },
+  {
+    "title": "Show HN：官方没放风格编码器，那就从声波里抠出嗓音",
+    "content": "Show HN 项目 supertonic.embed 解决一个尴尬问题：SupertonicTTS 的风格编码器从未公开，用户没法用自己的嗓音。作者改从 WavLM 第 4 层下手：音色向量从最接近的预设出发，反复对齐参考音频的均值与标准差，每步把 50 行投回单位球；时长则用测得的语速反推时长预测器。全程模型权重不动，只移动风格向量，RTX 3090 上约 15 分钟跑完。",
+    "quote": "编码器没开源？那就从声波里把嗓音抠出来。",
+    "source": "HN Show HN",
+    "url": "https://github.com/kdrkdrkdr/supertonic.embed",
+    "uid": "dev_53f457dd",
+    "published": "2026-09-26"
+  },
+  {
+    "title": "Show HN：盯着 ChatGPT、Perplexity 有没有引用你的站",
+    "content": "Show HN 项目 CiteRank 帮品牌盯住生成式引擎里的存在感：一张看板，行是你配置的买家问题，列是 ChatGPT、Perplexity、Google AI、Gemini、Claude 五家引擎，每个格子给出被引用、被点名或缺席的明确状态，还特意区分「没被引用」和「压根没问成」。每周报告另有三部分基于客户自己的探针，指出引擎引用了哪些竞品域名、背后是哪些第三方榜单页面。",
+    "quote": "在 AI 回答里露没露脸，终于能按格子数。",
+    "source": "HN Show HN",
+    "url": "https://citerank.thecompound.tech",
+    "uid": "dev_964d72b4",
+    "published": "2026-09-26"
+  },
+  {
+    "title": "藏在 Git 仓库里的分布式 Bug 追踪器：git-bug 0.11 上手",
+    "content": "Dev.to 上手实录：git-bug 0.11.0 是它 16 个月来首个版本，约 300 次提交，9 月 22 日发布、三天后冲上 HN 首页。定位一句话——嵌在 Git 仓库里、离线优先的分布式 Bug 追踪器，复用现成的 git remote 同步，不给项目加任何文件。作者逐条跑了真实二进制：建身份、报 Bug、评论、打标签、关闭，再让两端离线各改一条做双节点同步，文末也诚实列出局限。",
+    "quote": "代码和 Issue 分家，一到故障就抓瞎。",
+    "source": "Dev.to",
+    "url": "https://dev.to/jamilxt/this-bug-tracker-lives-inside-your-git-repo-a-hands-on-guide-to-git-bug-3bjp",
+    "uid": "dev_b3f80a08",
+    "published": "2026-09-26"
+  },
+  {
+    "title": "别动辄上 WebSocket：用原生 SSE 搭实时面板",
+    "content": "Dev.to 一篇教程泼冷水：一听到「实时」就上 WebSocket，很多时候是杀鸡用牛刀。聊天室、多人游戏这类双向高频通信确实该用它，但实时指标面板、行情、新闻流是纯单向推送，SSE 更合适——跑在标准 HTTP 上、浏览器原生 EventSource 自动重连、单条长连接对服务端更省资源。作者用 Node.js 加原生 SSE 搭了个轻量实时面板，不引重库。",
+    "quote": "双向才要 WebSocket，单向推送别硬上。",
+    "source": "Dev.to",
+    "url": "https://dev.to/whoismarce/websockets-are-overkill-build-real-time-dashboards-with-server-sent-events-sse-3bih",
+    "uid": "dev_521e5835",
+    "published": "2026-09-26"
+  },
+  {
+    "title": "Agent 悄悄不调工具了，怎么用回归测试把它揪出来",
+    "content": "Dev.to 分享个容易忽视的坑：Agent 不再调用工具时不会报错，它会凭模型记忆自信作答。作者写了 kagent-agentevals，把 kagent 会话记录转成 agentevals 能打分的轨迹格式，再加金样测试跑器，行为一变就非零码退出。难点是转换——agentevals 要扁平消息列表，kagent 记的却是 Google ADK 事件，一条真实会话 14 行里只有 8 行有用。",
+    "quote": "Agent 不调工具也不报错，这才最吓人。",
+    "source": "Dev.to",
+    "url": "https://dev.to/webofmike/regression-tests-for-kagent-agents-with-agentevals-28op",
+    "uid": "dev_c4e927d3",
+    "published": "2026-09-26"
+  },
+  {
+    "title": "一份笔记读完 LLM 多智能体协作的七篇代表作",
+    "content": "博客园一份笔记按发表时间梳理七篇 LLM 多智能体协作代表作：CAMEL、AutoGen、AgentVerse、DyLAN、MacNet、AgentNet、MACE。它勾勒出一条主线——从固定双智能体的自动对话，到通用的会话编程基础设施，再到动态组队与团队自优化，然后走向图结构下的规模化协作，最后是去中心化自组织与可学习的编排。顺着读，能看清「多个 Agent 如何协作」是怎么被一步步结构化的。",
+    "quote": "七个框架串一条线，看多智能体怎么卷到自组织。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/mianmaner/p/23110425",
+    "uid": "dev_f3831df5",
+    "published": "2026-09-26"
+  },
+  {
+    "title": "同态加密推理里，SiLU 为什么被「密文化」成一个开关",
+    "content": "博客园「同态加密推理」系列第八篇：密文里没有非线性函数，只有多项式，所以 SiLU 必须换成多项式逼近——而一条多项式无法同时覆盖浅层窄动态范围和深层宽动态范围。作者逐层选路径，并把选择固化成一个 8 字节文件：为 1.0 走直接拟合、为 0 或文件缺失走 ÷21 折叠。要命的是默认值——文件没生成被静默当成「用深层方案」，浅层照跑，误差放大几十倍却依旧 PASS。",
+    "quote": "文件缺失被当成默认方案，误差翻几十倍还全绿。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/haliuhome/p/23118642",
+    "uid": "dev_27fd89c3",
+    "published": "2026-09-26"
+  },
+  {
+    "title": "不让模型写作文，直接从它脑子里读答案：Jev 决策的两条 .NET 路线",
+    "content": "博客园梳理 Jev 决策的两条 .NET 路线：不让模型写 JSON 再解析，而是直接从输出层读概率，一次前向给出布尔概率或候选排序。路线一是 TensorSharp 用 26B 模型做 /v1/systemone，靠稀疏投影提速支持图片输入；路线二是 IoTSharp 的 Sezika，用小编码器加决策头跑 Native AOT。思路跟 vLLM 把扩散模型改成结构化读取引擎一脉相承。",
+    "quote": "别让模型写小作文，去它脑子里读答案。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23117082",
+    "uid": "dev_6926997a",
+    "published": "2026-09-26"
+  },
+  {
+    "title": "把 DSH 插件开发流程开源，交给 AI 编程助手照着走",
+    "content": "V2EX 网友做完几个 DSH 插件后，把从想法、开发、测试到发布的经验整理成一套 AI 编程助手能照着走的流程并开源。做新插件时，把仓库链接和需求交给 AI，让它按流程推进；遇到登录、授权或提交申请再自己接手。仓库已备好常用项目文件与打包方式，开发在独立环境试用不影响日常 DSH，还配好 CI 与自动发布到 npm，并整理了 20 个插件目录与收录渠道。",
+    "quote": "把踩过的坑写成流程，让 AI 照着趟一遍。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1244643",
+    "uid": "dev_acb0537b",
+    "published": "2026-09-26"
+  },
+  {
+    "title": "为了少装几个 Mac 小工具，他把常用功能做进了 OmniDock",
+    "content": "V2EX 网友常年在 Windows 与 Mac 之间切换，索性把顺手的操作在 Mac 上实现进一款工具 OmniDock：悬停 Dock 图标预览并切换窗口、再点当前应用图标把它收起、给常用应用设全局快捷键、用快捷键或拖拽把窗口摆到半屏四角三分屏、保存并搜索本地剪贴板历史，还能在 Finder 右键复制路径、新建文件。目标很实在——把散在几款小工具里的常用功能并到一起，少装几个软件。",
+    "quote": "为几个小功能装一堆软件，不如自己缝一个。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1244795",
+    "uid": "dev_9988fb0d",
+    "published": "2026-09-26"
+  },
+  {
+    "title": "把 SQL 写进 Markdown：数据分析工作台 Stela",
+    "content": "V2EX 分享数据分析工作台 Stela：把 SQL 写进 Markdown，让分析过程不再随手丢掉。它可在 Markdown 笔记里直接编写并执行 SQL，结果与思路一并留存；也能在对话里混合 SQL 和自然语言，结果、解读、图表同屏呈现，语法错误还能由 AI 自动修正继续执行。另有 Stela Agent，会先翻历史笔记找业务线索，再结合表结构写 SQL、调 Python、生成图表。",
+    "quote": "查完就丢的 SQL，终于被笔记接手了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1244708",
+    "uid": "dev_f3f04958",
+    "published": "2026-09-26"
+  }
+]
