@@ -1,0 +1,119 @@
+[
+  {
+    "title": "Show HN：把一盘棋做成读得懂的复盘，还配解说视频",
+    "content": "一个 Claude Code 技能包，把一盘慢棋做成读得懂的复盘：Claude 用 whisper.cpp 在本地把对局时的自言自语转成文字，再结合 PGN 里的用时，把每句话对上当时正纠结的那步棋；接着自己驱动 Stockfish 追问「为什么不能这样走」这类问题，直到把引擎结论翻成人话，并生成标注 PGN、HTML 观棋页和一段带解说的视频。",
+    "quote": "引擎只会甩你一个 -1.8，它负责讲明白为什么。",
+    "source": "HN Show HN",
+    "url": "https://github.com/brumar/chess-postmortem-skills",
+    "uid": "dev_a868585d",
+    "published": "2026-09-27"
+  },
+  {
+    "title": "Show HN：让决策模型 Jev 去打《宝可梦 红》",
+    "content": "一个把「决策模型」塞进《宝可梦 红》的 Show HN 项目：借助 Jev 这类一次前向就出答案的模型，智能体无需逐字生成就能做出走位、战斗等选择，页面右侧实时显示每一步决策和 Jev 给出的概率。作者坦言 Jev 快是快，但还没快到能打《毁灭战士》那种实时游戏，于是挑了对速度要求没那么极端的宝可梦。",
+    "quote": "打不动 Doom，那就先指挥一只宝可梦。",
+    "source": "HN Show HN",
+    "url": "https://jev-pokemon.vercel.app/",
+    "uid": "dev_ea5ab47c",
+    "published": "2026-09-27"
+  },
+  {
+    "title": "Ollaya：给开源决策模型做的「本地版 Ollama」",
+    "content": "Ollaya 是「本地版 Ollama for 决策模型」：把 Laya、gliclass、NLI、decider 等一次前向就能出判断的模型跑在自家 GPU 上，对文本或 JSON 提出类型化问题、毫秒级拿到校准答案。RTX 4090 上一轮五连问 Laya 只需约 8–10 毫秒；接口兼容 TypeSafe 的 /v1/systemone，官方 Python SDK 可不改代码指向本地服务。",
+    "quote": "决策模型跑本地，隐私和延迟都自己攥着。",
+    "source": "HN Front Page",
+    "url": "https://ollaya.dev/",
+    "uid": "dev_79ef723f",
+    "published": "2026-09-27"
+  },
+  {
+    "title": "Floci：把 AWS/Azure/GCP/OCI 都搬到本机，给 Agent 弄不坏的云",
+    "content": "Floci 把 AWS、Azure、GCP、OCI 四大云搬到本机，主打「给 AI Agent 一个弄不坏的云」：每个模拟器都是独立 MIT 许可的原生二进制，无需鉴权 token、无需云账号，毫秒级启动。AWS 版是 LocalStack 的即插即用替代，同一 4566 端口、119 个服务；另有 Azure、GCP、OCI 版覆盖 Blob、GCS/PubSub、对象存储/KMS 等服务。",
+    "quote": "Agent 写云代码很快，可别拿真账号给它试。",
+    "source": "HN Front Page",
+    "url": "https://floci.io",
+    "uid": "dev_91dc520f",
+    "published": "2026-09-27"
+  },
+  {
+    "title": "Sentinel：给 LLM 应用做的自动化对抗测试台",
+    "content": "针对「AI 产品跑得比测试快」的现状，作者做了 Sentinel：一套自动化对抗测试工具，按 OWASP LLM Top 10 的威胁类型动态生成攻击提示词，发给目标聊天机器人，再用带偏差规避的 LLM 评委给回答打分，两分钟内产出带评级的诊断报告。它覆盖提示注入、系统提示泄露、幻觉、过度自主、越狱等类别，定位是让没有安全团队的团队也能在发布前跑一遍红队测试。",
+    "quote": "上线前没人红队？让机器先捅自己两刀。",
+    "source": "Dev.to",
+    "url": "https://dev.to/rajan_mishra_a9f78ad216b4/sentinel-the-automated-adversarial-testing-harness-for-llm-applications-2nok",
+    "uid": "dev_ec4fd75e",
+    "published": "2026-09-27"
+  },
+  {
+    "title": "一个简单请求让 Agent 把同一个工具叫了 105 次",
+    "content": "Dev.to 复盘一起真实事故：一个简单的规划请求触发了对同一个 goal 工具的 105 次调用，系统没有立刻崩溃，而是不断烧 token 直到撞上轮次上限也没给出有用答案。根因是 goal 工具被全局暴露，而非绑定到持有目标状态的节点，图就一次次回到同一个决策。对策是给工具指定归属节点、设最大轮次与单工具调用上限、检测无进展跃迁，并强调配置值不算护栏。",
+    "quote": "上限写在配置里，循环不读，等于白写。",
+    "source": "Dev.to",
+    "url": "https://dev.to/interro-ai/how-to-stop-an-ai-agent-infinite-loop-1ajd",
+    "uid": "dev_faceb3ea",
+    "published": "2026-09-27"
+  },
+  {
+    "title": "用现代 C++ 手搓一个 MIL-STD-188-110 短波调制解调器",
+    "content": "一篇长期连载的开篇，讲用现代 C++ 从零实现 MIL-STD-188-110 短波（HF）数据调制解调器。作者把 HF 信道比作回声不断、人声忽大忽小的嘈杂房间，而如今这房间比 1980 年代更吵——开关电源、LED 驱动、手机充电器把噪声灌满电离层免费给的频段。连载会逐块拆解 110A/B 的单音串行波形；整套 modem 跑在 Cortex-M33 上，平时深度睡眠、有信才唤醒。",
+    "quote": "卫星手机都能断，短波却靠电离层一直活着。",
+    "source": "Dev.to",
+    "url": "https://dev.to/kg7hf/building-a-mil-std-188-110-hf-modem-in-modern-c-an-introduction-6l0",
+    "uid": "dev_eae4d0df",
+    "published": "2026-09-27"
+  },
+  {
+    "title": "检测数据异常值的五种统计技术",
+    "content": "博客园一篇实操总结梳理五种最常用的异常值检测方法：Z-Score、IQR、LOF、Isolation Forest 和马氏距离，并给出各自适合的数据形态——单变量近似正态用 Z-Score，偏态或有极端值用 IQR 更稳，多变量抓局部密度异常就看 LOF 与 Isolation Forest。作者拿北京地铁早高峰进站人数、小区月度电费等真实场景造数演示，并用 Python 跑出结果。",
+    "quote": "模型效果突然断崖，多半是角落里几个野值在捣乱。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/wang_yb/p/23128921",
+    "uid": "dev_bb1b5aad",
+    "published": "2026-09-27"
+  },
+  {
+    "title": "1.72 比特的权重遇上 Hadamard 变换：拆解 Ternary Bonsai 2 27B",
+    "content": "张善友从 TensorSharp 视角拆解 PrismML 三元量化多模态模型 Ternary Bonsai 2 27B：273.6 亿参数压进 5.9GB，20 项基准平均保留 98.2%，数学与编码几乎无损。难在原版 llama.cpp 与 Ollama 跑不了它——权重不在普通数值基底，运行时得做 activation 侧的 Hadamard 变换，看引擎如何不魔改底层库就把它跑对可验证。",
+    "quote": "压缩做到极致，麻烦就轮到运行时了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23126888",
+    "uid": "dev_bf7f155c",
+    "published": "2026-09-27"
+  },
+  {
+    "title": "密文里的 attention：没有 max，softmax 该怎么做",
+    "content": "「同态加密推理」系列第十篇，讲密文里的注意力机制怎么做 softmax。明文里减最大值是防溢出标配，可密文里 max 恰恰最不该出现：它要比较、要分支，而密文根本没有分支，exp 也只能用多项式逼近。作者用定标常数把 max-sub 换掉——score 在链内已被隐式缩放 4096² 倍，喂给 exp 的输入落在一个很窄的区间，窄到一条 6 次多项式就能精确覆盖，随后掩码求和完成归一化。",
+    "quote": "密文里没有分支，减最大值这招直接失效。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/haliuhome/p/23125666",
+    "uid": "dev_422d708f",
+    "published": "2026-09-27"
+  },
+  {
+    "title": "Que：AI 越开越多，让 Agent 排队来找你",
+    "content": "V2EX 网友吐槽 AI 越开越多自己反而更忙：这个会话等确认、那个会话等回复，切一圈就忘了谁还在等，于是做了 Que——用一条统一的「待处理 Agent 会话队列」调度人类有限的注意力，让 Agent 排队来找你。你既能在终端卡片里直接操作主流 CLI Agent，也能通过通知卡片接收外部 Agent 会话的通知，各类卡片汇入同一条队列慢慢处理。项目已在 GitHub 开源。",
+    "quote": "同时开八个 Agent，最忙的还是你本人。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1244816",
+    "uid": "dev_75b4d95c",
+    "published": "2026-09-27"
+  },
+  {
+    "title": "反着来的「AI 产品墓地」：只收录那些后来没了的",
+    "content": "V2EX 网友反着做了一个「AI 产品墓地」We Used This：不收录刚上线的，专门收录后来没了的。名字损但没恶意——新产品上线挺热闹，停服往往只剩一封邮件、一条公告，他想给这些东西留个地方让人聊两句。站点用 3D 地球点亮产品位置，可搜索看它原来干什么、何时上线停服、活了多久，Cortana、Humane Ai Pin、从 ChatGPT 退役的 GPT-4o 都在其中，基础清单已开源。",
+    "quote": "上线蹭热度没人记得，停服了反倒有人怀念。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1244916",
+    "uid": "dev_7d11f05f",
+    "published": "2026-09-27"
+  },
+  {
+    "title": "集成 Tailscale 内核的 Android SSH/SFTP 终端，几乎全交给 Codex 开发",
+    "content": "V2EX 网友来自其 iOS 应用 NovaScale 的作者：这次把 SSH/SFTP 终端带到 Android，直接集成 Tailscale 内核，无需安装官方 App、开着别的 VPN 也能用，还给 terminal 加了基于 SGR 的鼠标支持以适配 herdr 这类 TUI。他自称这套 Android 版几乎全由 Codex 开发，自己只写架构文档和最终验收；应用免费开源（GPL）。",
+    "quote": "从架构到上架全交给 AI，人只负责签字。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1244939",
+    "uid": "dev_1303a7ad",
+    "published": "2026-09-27"
+  }
+]
