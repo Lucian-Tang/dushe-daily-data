@@ -1,0 +1,218 @@
+[
+  {
+    "title": "改变我一生的十行代码",
+    "content": "前端与字体工程师 Roel Nieskens 列出十段对他意义非凡的代码：从童年 BASIC 里那行 10 PRINT \"HELLO, WORLD!\" 与 20 GOTO 10 的无限循环，到让他入行、让他发笑或落泪的片段。有些是亲手所写，有些是抄来的，但都真实塑造了他的职业生涯与对编程的感情，是一篇代码与人生交织的温情随笔。",
+    "quote": "写出感情的代码，通常不是最赚钱的那十行。",
+    "source": "HN Front Page",
+    "url": "https://pixelambacht.nl/2026/ten-lines-of-code/",
+    "published": "2026-09-28",
+    "uid": "dev_19204cd2"
+  },
+  {
+    "title": "当「莫名其妙的故障」被我们习以为常",
+    "content": "作者借情景喜剧里角色打不开门、只嘟囔一句「这破玩意儿真烂」的桥段，批评当代技术产品把失败常态化：门打不开不是门的问题，软件出错也不该被当成常态。当用户默认「东西就是会莫名其妙坏掉」，厂商便失去修复动力，我们对烂体验的容忍度正被一点点拉低。",
+    "quote": "会坏的软件被当成天经地义，才是真完蛋。",
+    "source": "HN Front Page",
+    "url": "https://www.ihatethefuture.com/2026/09/the-normalization-of-inexplicable.html",
+    "published": "2026-09-28",
+    "uid": "dev_791bec80"
+  },
+  {
+    "title": "识别「AI 味」UI 的十个小信号",
+    "content": "作者吐槽母校 App 更新后满屏「AI 生成感」：无处不在的渐变、闪烁徽章、玻璃拟态、emoji 堆砌、对不齐的排版、因聊天上下文残留的多余文案、空洞的营销标语。他据此总结出十条 slop UI 特征，提醒开发者：不加约束让 AI 出图，只会把界面做成廉价模板。",
+    "quote": "AI 不背锅，是你不加约束让它糊墙。",
+    "source": "HN Front Page",
+    "url": "https://hereticpleb.vercel.app/blog/10-tells-of-slop",
+    "published": "2026-09-28",
+    "uid": "dev_cd71a8dd"
+  },
+  {
+    "title": "DeepSeek 开源沙箱基础设施 DSec",
+    "content": "DeepSeek 发布论文介绍 DSec——一套为大规 Agent 训练设计的沙箱基础设施，能在弹性算力上高效、并行地运行智能体任务。论文聚焦分布式与并行计算，解决大规模训练时环境隔离、资源调度与吞吐难题，是 DeepSeek 在 Agentic Training 底层工程上补齐的关键拼图。",
+    "quote": "别人卷模型，它先把 Agent 的跑步机造好。",
+    "source": "HN Front Page",
+    "url": "https://arxiv.org/abs/2609.22978",
+    "published": "2026-09-28",
+    "uid": "dev_83e0c35c"
+  },
+  {
+    "title": "Fakecloud：本地 AWS 云模拟器",
+    "content": "Fakecloud 是一个为集成测试而生的本地 AWS 云模拟器：应用照常用标准 AWS SDK、CLI 和 IaC 工具，却完全跑在本地。官方称覆盖 105 项服务、7508 个操作，248557 个 Smithy 变体全部通过，实现 100% 一致性；相比 LocalStack 社区版，它更像真实基础设施而非 mock。",
+    "quote": "测试终于不用再往贝索斯口袋里扔钱了。",
+    "source": "HN Front Page",
+    "url": "https://fakecloud.dev/",
+    "published": "2026-09-28",
+    "uid": "dev_580b8109"
+  },
+  {
+    "title": "全网开始发现 TLA+，然后呢？",
+    "content": "起因是 Boris Cherny 一条关于 TLA+ 的推文走红，展示了形式化模型在 Agentic Coding 中的价值。本文是 TLA+ 的实用入门：从什么是时序逻辑规范，到现代证明系统与 AI Agent 怎样协作，把软件验证从「建模」推进到机器可检验的证明，乃至最终的可验证软件。",
+    "quote": "给 AI 写的活儿，最后得靠数学兜底。",
+    "source": "HN Front Page",
+    "url": "https://reasonable.io/blog/tla-tutorial/",
+    "published": "2026-09-28",
+    "uid": "dev_8520d7f7"
+  },
+  {
+    "title": "Piko：KMP 写的多平台 PikPak 客户端",
+    "content": "开发者用 Kotlin Multiplatform 搓了一个第三方 PikPak 客户端，支持 Android（原生应用）与 Windows（含 ARM 原生构建）。特性包括八连接并发下载、离线下载自动排除广告文件、合集解析、视频片段截取、体积配额查看等。上线一天已有上千浏览，评论区在追问 macOS 版本。",
+    "quote": "官方不做，民间 KMP 一把梭。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1244846",
+    "published": "2026-09-28",
+    "uid": "dev_5a54a1eb"
+  },
+  {
+    "title": "纯 Python 开源 X（Twitter）全接口库",
+    "content": "开发者开源 XApis，一个纯 Python 实现的 X（Twitter）接口库：登录、请求参数与加密字段都在 Python 端计算，不依赖浏览器自动化。支持 Cookie 与纯算密码登录、搜索、推荐流、发帖回复转发点赞、图片视频上传与私信等，作者称面向学习、研究与经授权的自动化场景。",
+    "quote": "爬虫界的基建，但求你合法使用。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1245026",
+    "published": "2026-09-28",
+    "uid": "dev_b9e5443c"
+  },
+  {
+    "title": "con：给终端爱好者的跨平台 terminal",
+    "content": "项目 4 月启动，当时 Warp 尚未开源，如今用户渐多，并已补齐 Windows / Linux 版本。定位是「给 terminal 爱好者的 terminal」，跨平台，仓库在 GitHub 的 nowledge-co/con-terminal，官网 con.nowledge.co。评论区先被名字逗乐——法语里 con 的语意不太妙。",
+    "quote": "名字起得有点亏，功能还得看后续。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1244990",
+    "published": "2026-09-28",
+    "uid": "dev_a29c0c71"
+  },
+  {
+    "title": "Plugin4Shell：零点击 RCE 击中 2.6 万个 Agent",
+    "content": "一份安全分析披露跨平台漏洞 Plugin4Shell：影响 Claude Code、Codex、Copilot、Gemini CLI 等主流编码 Agent，可实现零点击远程代码执行，在无人察觉的情况下命中约 2.6 万个 Agent。文章把编码 Agent 的插件生态称作「新的 npm」，直指插件供应链已成为最被低估的攻击面。",
+    "quote": "插件商店就是新 npm，也是新下水道。",
+    "source": "Dev.to",
+    "url": "https://dev.to/numbpill3d/plugin4shell-hit-26000-agents-before-anyone-noticed-your-coding-agents-plugin-store-is-the-new-5hlg",
+    "published": "2026-09-28",
+    "uid": "dev_28eac048"
+  },
+  {
+    "title": "AGENTS.md：Agent 的上下文策略层",
+    "content": "作者梳理 Agent 上下文工程：Prompt Engineering 管「指令怎样表达」，Context Engineering 管「每次推理该给模型哪些信息、怎样选择组织」。AGENTS.md 被官网称作 README for agents，一种用 Markdown 编写、供 Agent 获取上下文与指令的可版本化规则载体，按文件位置承载不同作用域的约束与验收标准。",
+    "quote": "给 AI 写 README，新一代交接文档。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/chenmijiang/p/23132313",
+    "published": "2026-09-28",
+    "uid": "dev_7c8efbf1"
+  },
+  {
+    "title": "scriptc：TypeScript 转原生编译器",
+    "content": "Vercel Labs 的新项目 scriptc，定位是 TypeScript-to-Native 编译器：把 TypeScript 直接编译成原生代码，而非先转 JS 再靠 JIT 跑。作为 Vercel 在编译层的新尝试，它试图让 TS 摆脱对 Node/JS 运行时的依赖，为性能敏感场景提供更接近原生的执行路径。",
+    "quote": "Vercel 又想给前端换一台发动机。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/vercel-labs/scriptc",
+    "published": "2026-09-28",
+    "uid": "dev_c16cd90a"
+  },
+  {
+    "title": "univer：给 AI Agent 的 Office 运行时",
+    "content": "Univer 冲上 GitHub Trending，自称「The Office Harness for AI Agents」：在单一运行时内同时提供电子表格、文档、幻灯片、画布、关系表与 PDF 能力。它把传统 Office 套件重构为面向 Agent 的运行时，让 AI 能直接操作整套办公文档对象，而不必逐个拼接第三方库。",
+    "quote": "Agent 要办公，得先把 Office 拆成 API。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/dream-num/univer",
+    "published": "2026-09-28",
+    "uid": "dev_fe87054d"
+  },
+  {
+    "title": "Show HN：看 AI 智能体在 8×8 棋盘上真刀真枪对打",
+    "content": "厌倦了点开「AI 竞技场」却只看到枯燥的跑分？TinyAIArena 让四个模型在一片风景如画的 8×8 棋盘上展开真正的生死对决，把基准测试换成了观赏性极强的对战。页面提供回放控制（上一局 / 下一局、自动播放、新开局），另带游戏日志与全局聊天，适合围观不同模型的策略与失误。",
+    "quote": "跑分看困了，那就让模型真打一架。",
+    "source": "HN Front Page",
+    "url": "https://tinyaiarena.com/",
+    "published": "2026-09-28",
+    "uid": "dev_c748180f"
+  },
+  {
+    "title": "Show HN：自己决定摆放位置的图表语言 Reladraw",
+    "content": "画图工具常陷入两难：Mermaid、Graphviz 这类自动排版语言不让你决定图形长什么样，而绘图软件又得全靠手拖。Reladraw 想做第三种选择——一种你可以自己指定元素摆放位置、又保留声明式描述的图表语言。作者把它开源在 GitHub 的 reladraw/reladraw，适合既要结构清晰又要版式可控的架构图、流程图场景。",
+    "quote": "受够了自动排版，那就把摆位权抢回来。",
+    "source": "HN Front Page",
+    "url": "https://github.com/reladraw/reladraw",
+    "published": "2026-09-28",
+    "uid": "dev_0bc00c7f"
+  },
+  {
+    "title": "Go 并发知识浓缩成一本可交互小书",
+    "content": "Go 开发者 Anton Zhiyanov 发布迷你书《Go concurrency distilled》，系统梳理 Goroutine、Channel、Select、Pipeline、Context、WaitGroup、数据竞争、Mutex、原子操作、测试、调度与诊断等主题。每节配可在线改代码运行的交互示例，另提供静态示例的 PDF 版，定位是有经验者的快速复习，而非零基础入门。",
+    "quote": "并发这东西，复习比重新学更省命。",
+    "source": "HN Front Page",
+    "url": "https://antonz.org/go-concurrency-distilled/",
+    "published": "2026-09-28",
+    "uid": "dev_cb7f97f3"
+  },
+  {
+    "title": "Orca：同时推进多个任务的 Agent 开发环境",
+    "content": "Orca 是一个面向 Agentic Coding 的开源 Agent IDE：基于 git worktree 为每个任务开独立仓库副本，让多个编码 Agent 并行干活而不互相冲突。它不带自己的模型，直接跑你已安装的 CLI Agent 和订阅；额外提供可逐行评论并把意见发回 Agent 的 diff 视图，以及 Agent 完工提醒的手机 App，GitHub 约 8 万星。",
+    "quote": "一个仓库开八份，让 Agent 们各干各的。",
+    "source": "Dev.to",
+    "url": "https://dev.to/empiree/orca-agent-development-environment-ade-for-shipping-with-coding-agents-4nj",
+    "published": "2026-09-28",
+    "uid": "dev_0290f750"
+  },
+  {
+    "title": "我失明的弟弟教会我怎样让购物搜索适配 VoiceOver",
+    "content": "作者做了个购物搜索引擎 OneFindMe，自动化无障碍检测说网站没问题，可请失明的弟弟用 iPhone 上的 VoiceOver 一试，语音搜索直接没反应。他随后发现 axe 只覆盖约三分之一：弹窗对屏幕阅读器根本不存在、结果「无声」出现、趋势栏挡在结果前、按钮是死链、emoji 全被念出来，还有对比度仅 1.2:1 的深色模式 bug。",
+    "quote": "自动化检测的绿灯，挡不住真人一句没反应。",
+    "source": "Dev.to",
+    "url": "https://dev.to/ohadfarkash/what-my-blind-brother-taught-me-about-making-a-shopping-search-engine-work-with-voiceover-1npe",
+    "published": "2026-09-28",
+    "uid": "dev_5d989545"
+  },
+  {
+    "title": "AI Agent Harness：原理、架构与实现全解析",
+    "content": "大模型越来越强，Agent 却仍易出问题：工具参数写错、接口超时、死循环调用、把网页恶意文字当指令、执行到一半重启、模型谎报「已完成」。博客园这篇长文指出，这些不是靠「请认真思考」能解决的，因为涉及程序执行、权限判定与失败恢复。文章把 Harness 定义为围绕模型建立的执行与治理层，并用「模型提行动、Harness 管执行、环境返事实、验证器判结果」四角色展开。",
+    "quote": "提示词治不了病，得给 Agent 上支架。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/smartloli/p/23135519",
+    "published": "2026-09-28",
+    "uid": "dev_a7bd4b3b"
+  },
+  {
+    "title": "并发编程：Atomic 的原子性、可见性与有序性",
+    "content": "博客园「并发编程」系列第五篇，从语言内存模型与公开 API 规则切入 Atomic。作者对比 Java 的 AtomicInteger、Go 的 sync/atomic 与 CPython 在原子性、可见性、有序性上各自的边界：incrementAndGet() 是一次不可分割的 RMW、内存语义等同 setVolatile，而 CPython 应用层没有对称的 Atomic API。",
+    "quote": "看着就是加个一，背后全是内存模型。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/ThinkerQAQ/p/23115900",
+    "published": "2026-09-28",
+    "uid": "dev_cb45fd5d"
+  },
+  {
+    "title": "FHE 密文链协议：两条不变式，和 112 与 2100 的分工",
+    "content": "博客园 FHE 系列第十一篇，讲 kestrel-llm 分词器的密文链协议。作者把链的契约归纳成两条不变式：每一跳输入永远是「已刷新、链长 112」的密文，输出永远是 8 枚密文（4 个 token 位置 × 2 个分量）。文中还解释为何同一层数据 t23lay 编译链长 112、t23boot 却要 2100——因为自举内部 sin 折叠约需 31 层深度，编译链长是内存上界而非实际剩余素数。",
+    "quote": "把 NLP 跑进密文里，连内存上界都得精算。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/haliuhome/p/23130579",
+    "published": "2026-09-28",
+    "uid": "dev_25e6b11c"
+  },
+  {
+    "title": "开源 Windows 截图工具 ntscreenshot：贴图、长截图与 GIF",
+    "content": "网友开源了 Windows 截图工具 ntscreenshot，近期用大模型重新打磨，支持 Win10/11 x64。流程是 F5 框选后用箭头、矩形、文字、马赛克标注，再复制保存或贴到桌面；F6 把剪贴板图片贴桌面。另支持滚动长截图、GIF 录制、本地搜索、剪贴板历史，以及可选 OCR 与 AI 功能，默认本机处理。基于 Qt 6、Apache-2.0，绿色版解压即用。",
+    "quote": "截图工具都塞 AI 了，好在联网是可选的。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1245057",
+    "published": "2026-09-28",
+    "uid": "dev_f47acce6"
+  },
+  {
+    "title": "wx2md：把公众号文章一键导出成本地 Markdown",
+    "content": "网友做了 Chrome 扩展 WeChat to Markdown（wx2md）：打开微信公众号文章页一键导出为本地 Markdown，可选打包图片 ZIP，可对接 Obsidian、思源、Typora、VS Code。扩展在本地解析、不上传正文，作者强调它不是爬虫，不绕过登录或付费，只处理你当前打开的页面。官网 wx2md.com，代码已开源在 GitHub。",
+    "quote": "收藏夹吃灰的文章，终于能进笔记库了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1245077",
+    "published": "2026-09-28",
+    "uid": "dev_4ddad68b"
+  },
+  {
+    "title": "用 Jev 前置判断，把语音输入法短句延迟砍掉 1 秒",
+    "content": "作者高强度使用语音输入法时发现，很多几乎不需要润色的句子也要走一遍 LLM 润色，既没必要又拖速度。于是他想到把爆火的 Jev 前置做一个判断：对无需润色的句子直接放过，省去等待 LLM 返回，部分短句整体延迟能降低近 1 秒。长句润色不受影响，且 Jev 价格便宜，几乎等于零成本优化，并附了演示视频。",
+    "quote": "为了省那一秒，先把润色这一步砍掉。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1245093",
+    "published": "2026-09-28",
+    "uid": "dev_329b75fd"
+  }
+]
