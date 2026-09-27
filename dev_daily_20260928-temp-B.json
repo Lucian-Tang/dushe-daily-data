@@ -1,0 +1,110 @@
+[
+  {
+    "title": "Show HN：看 AI 智能体在 8×8 棋盘上真刀真枪对打",
+    "content": "厌倦了点开「AI 竞技场」却只看到枯燥的跑分？TinyAIArena 让四个模型在一片风景如画的 8×8 棋盘上展开真正的生死对决，把基准测试换成了观赏性极强的对战。页面提供回放控制（上一局 / 下一局、自动播放、新开局），另带游戏日志与全局聊天，适合围观不同模型的策略与失误。",
+    "quote": "跑分看困了，那就让模型真打一架。",
+    "source": "HN Front Page",
+    "url": "https://tinyaiarena.com/",
+    "published": "2026-09-28",
+    "uid": "dev_2d23e0dd"
+  },
+  {
+    "title": "Show HN：自己决定摆放位置的图表语言 Reladraw",
+    "content": "画图工具常陷入两难：Mermaid、Graphviz 这类自动排版语言不让你决定图形长什么样，而绘图软件又得全靠手拖。Reladraw 想做第三种选择——一种你可以自己指定元素摆放位置、又保留声明式描述的图表语言。作者把它开源在 GitHub 的 reladraw/reladraw，适合既要结构清晰又要版式可控的架构图、流程图场景。",
+    "quote": "受够了自动排版，那就把摆位权抢回来。",
+    "source": "HN Front Page",
+    "url": "https://github.com/reladraw/reladraw",
+    "published": "2026-09-28",
+    "uid": "dev_dae55342"
+  },
+  {
+    "title": "Go 并发知识浓缩成一本可交互小书",
+    "content": "Go 开发者 Anton Zhiyanov 发布迷你书《Go concurrency distilled》，系统梳理 Goroutine、Channel、Select、Pipeline、Context、WaitGroup、数据竞争、Mutex、原子操作、测试、调度与诊断等主题。每节配可在线改代码运行的交互示例，另提供静态示例的 PDF 版，定位是有经验者的快速复习，而非零基础入门。",
+    "quote": "并发这东西，复习比重新学更省命。",
+    "source": "HN Front Page",
+    "url": "https://antonz.org/go-concurrency-distilled/",
+    "published": "2026-09-28",
+    "uid": "dev_df6f16a7"
+  },
+  {
+    "title": "Orca：同时推进多个任务的 Agent 开发环境",
+    "content": "Orca 是一个面向 Agentic Coding 的开源 Agent IDE：基于 git worktree 为每个任务开独立仓库副本，让多个编码 Agent 并行干活而不互相冲突。它不带自己的模型，直接跑你已安装的 CLI Agent 和订阅；额外提供可逐行评论并把意见发回 Agent 的 diff 视图，以及 Agent 完工提醒的手机 App，GitHub 约 8 万星。",
+    "quote": "一个仓库开八份，让 Agent 们各干各的。",
+    "source": "Dev.to",
+    "url": "https://dev.to/empiree/orca-agent-development-environment-ade-for-shipping-with-coding-agents-4nj",
+    "published": "2026-09-28",
+    "uid": "dev_cfc7b5e1"
+  },
+  {
+    "title": "我失明的弟弟教会我怎么让购物搜索适配 VoiceOver",
+    "content": "作者做了个购物搜索引擎 OneFindMe，自动化无障碍检测说网站没问题，可请失明的弟弟用 iPhone 上的 VoiceOver 一试，语音搜索直接没反应。他随后发现 axe 只覆盖约三分之一：弹窗对屏幕阅读器根本不存在、结果「无声」出现、趋势栏挡在结果前、按钮是死链、emoji 全被念出来，还有对比度仅 1.2:1 的深色模式 bug。",
+    "quote": "自动化检测的绿灯，挡不住真人一句没反应。",
+    "source": "Dev.to",
+    "url": "https://dev.to/ohadfarkash/what-my-blind-brother-taught-me-about-making-a-shopping-search-engine-work-with-voiceover-1npe",
+    "published": "2026-09-28",
+    "uid": "dev_58f55bf4"
+  },
+  {
+    "title": "隐私优先的人脸分析，别做成诊断系统",
+    "content": "当一个软件接受人脸照片，产品边界和模型同样重要。作者介绍 iLook：一款隐私优先、非医疗的人脸分析工具，只解释用户自愿上传照片中可见的呈现类信号——脸型背景、可见对称性信号、黄金比例对比与主观呈现反馈，刻意避免给出医疗、身份或人格结论。除网页体验外还提供 REST/OpenAPI 及 MCP、A2A 接口，主打基于同意的集成。",
+    "quote": "能看脸不等于能看病，边界比模型值钱。",
+    "source": "Dev.to",
+    "url": "https://dev.to/harshullodha/building-a-privacy-first-face-analysis-tool-without-turning-it-into-a-diagnostic-system-cdf",
+    "published": "2026-09-28",
+    "uid": "dev_302c2fe3"
+  },
+  {
+    "title": "AI Agent Harness：原理、架构与实现全解析",
+    "content": "大模型越来越强，Agent 却仍易出问题：工具参数写错、接口超时、死循环调用、把网页恶意文字当指令、执行到一半重启、模型谎报「已完成」。博客园这篇长文指出，这些不是靠「请认真思考」能解决的，因为涉及程序执行、权限判定与失败恢复。文章把 Harness 定义为围绕模型建立的执行与治理层，并用「模型提行动、Harness 管执行、环境返事实、验证器判结果」四角色展开。",
+    "quote": "提示词治不了病，得给 Agent 上支架。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/smartloli/p/23135519",
+    "published": "2026-09-28",
+    "uid": "dev_cdd4148c"
+  },
+  {
+    "title": "并发编程：Atomic 的原子性、可见性与有序性",
+    "content": "博客园「并发编程」系列第五篇，从语言内存模型与公开 API 规则切入 Atomic。作者对比 Java 的 AtomicInteger、Go 的 sync/atomic 与 CPython 在原子性、可见性、有序性上各自的边界：incrementAndGet() 是一次不可分割的 RMW、内存语义等同 setVolatile，而 CPython 应用层没有对称的 Atomic API。",
+    "quote": "看着就是加个一，背后全是内存模型。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/ThinkerQAQ/p/23115900",
+    "published": "2026-09-28",
+    "uid": "dev_ac4e526c"
+  },
+  {
+    "title": "FHE 密文链协议：两条不变式，和 112 与 2100 的分工",
+    "content": "博客园 FHE 系列第十一篇，讲 kestrel-llm 分词器的密文链协议。作者把链的契约归纳成两条不变式：每一跳输入永远是「已刷新、链长 112」的密文，输出永远是 8 枚密文（4 个 token 位置 × 2 个分量）。文中还解释为何同一层数据 t23lay 编译链长 112、t23boot 却要 2100——因为自举内部 sin 折叠约需 31 层深度，编译链长是内存上界而非实际剩余素数。",
+    "quote": "把 NLP 跑进密文里，连内存上界都得精算。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/haliuhome/p/23130579",
+    "published": "2026-09-28",
+    "uid": "dev_5cd4f20f"
+  },
+  {
+    "title": "开源 Windows 截图工具 ntscreenshot：贴图、长截图与 GIF",
+    "content": "网友开源了 Windows 截图工具 ntscreenshot，近期用大模型重新打磨，支持 Win10/11 x64。流程是 F5 框选后用箭头、矩形、文字、马赛克标注，再复制保存或贴到桌面；F6 把剪贴板图片贴桌面。另支持滚动长截图、GIF 录制、本地搜索、剪贴板历史，以及可选 OCR 与 AI 功能，默认本机处理。基于 Qt 6、Apache-2.0，绿色版解压即用。",
+    "quote": "截图工具都塞 AI 了，好在联网是可选的。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1245057",
+    "published": "2026-09-28",
+    "uid": "dev_c81a5b4c"
+  },
+  {
+    "title": "wx2md：把公众号文章一键导出成本地 Markdown",
+    "content": "网友做了 Chrome 扩展 WeChat to Markdown（wx2md）：打开微信公众号文章页一键导出为本地 Markdown，可选打包图片 ZIP，可对接 Obsidian、思源、Typora、VS Code。扩展在本地解析、不上传正文，作者强调它不是爬虫，不绕过登录或付费，只处理你当前打开的页面。官网 wx2md.com，代码已开源在 GitHub。",
+    "quote": "收藏夹吃灰的文章，终于能进笔记库了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1245077",
+    "published": "2026-09-28",
+    "uid": "dev_228675af"
+  },
+  {
+    "title": "用 Jev 前置判断，把语音输入法短句延迟砍掉 1 秒",
+    "content": "作者高强度使用语音输入法时发现，很多几乎不需要润色的句子也要走一遍 LLM 润色，既没必要又拖速度。于是他想到把爆火的 Jev 前置做一个判断：对无需润色的句子直接放过，省去等待 LLM 返回，部分短句整体延迟能降低近 1 秒。长句润色不受影响，且 Jev 价格便宜，几乎等于零成本优化，并附了演示视频。",
+    "quote": "为了省那一秒，先把润色这一步砍掉。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1245093",
+    "published": "2026-09-28",
+    "uid": "dev_ff6ac2f6"
+  }
+]
