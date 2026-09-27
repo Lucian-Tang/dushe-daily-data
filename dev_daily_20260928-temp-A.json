@@ -1,0 +1,137 @@
+[
+  {
+    "title": "改变我一生的十行代码",
+    "content": "前端与字体工程师 Roel Nieskens 列出十段对他意义非凡的代码：从童年 BASIC 里那行 10 PRINT \"HELLO, WORLD!\" 与 20 GOTO 10 的无限循环，到让他入行、让他发笑或落泪的片段。有些是亲手所写，有些是抄来的，但都真实塑造了他的职业生涯与对编程的感情，是一篇代码与人生交织的温情随笔。",
+    "quote": "写出感情的代码，通常不是最赚钱的那十行。",
+    "source": "HN Front Page",
+    "url": "https://pixelambacht.nl/2026/ten-lines-of-code/",
+    "published": "2026-09-28",
+    "uid": "dev_b4c1d56c"
+  },
+  {
+    "title": "当「莫名其妙的故障」被我们习以为常",
+    "content": "作者借情景喜剧里角色打不开门、只嘟囔一句「这破玩意儿真烂」的桥段，批评当代技术产品把失败常态化：门打不开不是门的问题，软件出错也不该被当成常态。当用户默认「东西就是会莫名其妙坏掉」，厂商便失去修复动力，我们对烂体验的容忍度正被一点点拉低。",
+    "quote": "会坏的软件被当成天经地义，才是真完蛋。",
+    "source": "HN Front Page",
+    "url": "https://www.ihatethefuture.com/2026/09/the-normalization-of-inexplicable.html",
+    "published": "2026-09-28",
+    "uid": "dev_efbf16f3"
+  },
+  {
+    "title": "识别「AI 味」UI 的十个小信号",
+    "content": "作者吐槽母校 App 更新后满屏「AI 生成感」：无处不在的渐变、闪烁徽章、玻璃拟态、emoji 堆砌、对不齐的排版、因聊天上下文残留的多余文案、空洞的营销标语。他据此总结出十条 slop UI 特征，提醒开发者：不加约束让 AI 出图，只会把界面做成廉价模板。",
+    "quote": "AI 不背锅，是你不加约束让它糊墙。",
+    "source": "HN Front Page",
+    "url": "https://hereticpleb.vercel.app/blog/10-tells-of-slop",
+    "published": "2026-09-28",
+    "uid": "dev_72d417a1"
+  },
+  {
+    "title": "DeepSeek 开源沙箱基础设施 DSec",
+    "content": "DeepSeek 发布论文介绍 DSec——一套为大规 Agent 训练设计的沙箱基础设施，能在弹性算力上高效、并行地运行智能体任务。论文聚焦分布式与并行计算，解决大规模训练时环境隔离、资源调度与吞吐难题，是 DeepSeek 在 Agentic Training 底层工程上补齐的关键拼图。",
+    "quote": "别人卷模型，它先把 Agent 的跑步机造好。",
+    "source": "HN Front Page",
+    "url": "https://arxiv.org/abs/2609.22978",
+    "published": "2026-09-28",
+    "uid": "dev_df75b68b"
+  },
+  {
+    "title": "Fakecloud：本地 AWS 云模拟器",
+    "content": "Fakecloud 是一个为集成测试而生的本地 AWS 云模拟器：应用照常用标准 AWS SDK、CLI 和 IaC 工具，却完全跑在本地。官方称覆盖 105 项服务、7508 个操作，248557 个 Smithy 变体全部通过，实现 100% 一致性；相比 LocalStack 社区版，它更像真实基础设施而非 mock。",
+    "quote": "测试终于不用再往贝索斯口袋里扔钱了。",
+    "source": "HN Front Page",
+    "url": "https://fakecloud.dev/",
+    "published": "2026-09-28",
+    "uid": "dev_938e5fae"
+  },
+  {
+    "title": "全网开始发现 TLA+，然后呢？",
+    "content": "起因是 Boris Cherny 一条关于 TLA+ 的推文走红，展示了形式化模型在 Agentic Coding 中的价值。本文是 TLA+ 的实用入门：从什么是时序逻辑规范，到现代证明系统与 AI Agent 如何协作，把软件验证从「建模」推进到机器可检验的证明，乃至最终的可验证软件。",
+    "quote": "给 AI 写的活儿，最后得靠数学兜底。",
+    "source": "HN Front Page",
+    "url": "https://reasonable.io/blog/tla-tutorial/",
+    "published": "2026-09-28",
+    "uid": "dev_167b63f5"
+  },
+  {
+    "title": "Piko：KMP 写的多平台 PikPak 客户端",
+    "content": "开发者用 Kotlin Multiplatform 搓了一个第三方 PikPak 客户端，支持 Android（原生应用）与 Windows（含 ARM 原生构建）。特性包括八连接并发下载、离线下载自动排除广告文件、合集解析、视频片段截取、体积配额查看等。上线一天已有上千浏览，评论区在追问 macOS 版本。",
+    "quote": "官方不做，民间 KMP 一把梭。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1244846",
+    "published": "2026-09-28",
+    "uid": "dev_f02c3d9c"
+  },
+  {
+    "title": "纯 Python 开源 X（Twitter）全接口库",
+    "content": "开发者开源 XApis，一个纯 Python 实现的 X（Twitter）接口库：登录、请求参数与加密字段都在 Python 端计算，不依赖浏览器自动化。支持 Cookie 与纯算密码登录、搜索、推荐流、发帖回复转发点赞、图片视频上传与私信等，作者称面向学习、研究与经授权的自动化场景。",
+    "quote": "爬虫界的基建，但求你合法使用。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1245026",
+    "published": "2026-09-28",
+    "uid": "dev_f7169a7d"
+  },
+  {
+    "title": "con：给终端爱好者的跨平台 terminal",
+    "content": "项目 4 月启动，当时 Warp 尚未开源，如今用户渐多，并已补齐 Windows / Linux 版本。定位是「给 terminal 爱好者的 terminal」，跨平台，仓库在 GitHub 的 nowledge-co/con-terminal，官网 con.nowledge.co。评论区先被名字逗乐——法语里 con 的语意不太妙。",
+    "quote": "名字起得有点亏，功能还得看后续。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1244990",
+    "published": "2026-09-28",
+    "uid": "dev_e17704e2"
+  },
+  {
+    "title": "Plugin4Shell：零点击 RCE 击中 2.6 万个 Agent",
+    "content": "一份安全分析披露跨平台漏洞 Plugin4Shell：影响 Claude Code、Codex、Copilot、Gemini CLI 等主流编码 Agent，可实现零点击远程代码执行，在无人察觉的情况下命中约 2.6 万个 Agent。文章把编码 Agent 的插件生态称作「新的 npm」，直指插件供应链已成为最被低估的攻击面。",
+    "quote": "插件商店就是新 npm，也是新下水道。",
+    "source": "Dev.to",
+    "url": "https://dev.to/numbpill3d/plugin4shell-hit-26000-agents-before-anyone-noticed-your-coding-agents-plugin-store-is-the-new-5hlg",
+    "published": "2026-09-28",
+    "uid": "dev_c55a73ab"
+  },
+  {
+    "title": "GPT-6 Astra 发布三天，OpenAI 首席科学家喊减速",
+    "content": "GPT-6 Astra 上线三天后，OpenAI 首席科学家 Jakub Pachocki 发表《An Alien Mind》一文，呼吁各实验室放慢脚步。作者援引 OpenAI 自家图表指出：所谓「安全暂停」只是把 GPU 挪了个地方，并未真正削减算力。一边加速发模型一边喊刹车，被指姿态多于行动。",
+    "quote": "一手踩油门，一手举减速牌，很开眼。",
+    "source": "Dev.to",
+    "url": "https://dev.to/axrisi/gpt-6-astra-shipped-openais-chief-scientist-now-asks-for-a-slowdown-2fjm",
+    "published": "2026-09-28",
+    "uid": "dev_fd5eb8e0"
+  },
+  {
+    "title": "OpenSandbox 1.1.0：阿里开源 AI 沙箱平台",
+    "content": "阿里开源、现由 opensandbox-group 维护的 AI 沙箱平台发布 1.1.0：一半看功能一半看治理。伞版本加签名 BOM，把「一套版本号管所有产物」落到实处；集成 Firecracker 补齐微虚拟机；引入 OSEP 提案机制走向规范化社区治理，直指「大模型写的代码你敢直接跑吗」这一现实难题。",
+    "quote": "给随时会幻觉的实习生上把锁，应该的。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23130792",
+    "published": "2026-09-28",
+    "uid": "dev_877fb07c"
+  },
+  {
+    "title": "AGENTS.md：Agent 的上下文策略层",
+    "content": "作者梳理 Agent 上下文工程：Prompt Engineering 管「指令怎么表达」，Context Engineering 管「每次推理该给模型哪些信息、如何选择组织」。AGENTS.md 被官网称作 README for agents，一种用 Markdown 编写、供 Agent 获取上下文与指令的可版本化规则载体，按文件位置承载不同作用域的约束与验收标准。",
+    "quote": "给 AI 写 README，新一代交接文档。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/chenmijiang/p/23132313",
+    "published": "2026-09-28",
+    "uid": "dev_f76cacb6"
+  },
+  {
+    "title": "scriptc：TypeScript 转原生编译器",
+    "content": "Vercel Labs 的新项目 scriptc，定位是 TypeScript-to-Native 编译器：把 TypeScript 直接编译成原生代码，而非先转 JS 再靠 JIT 跑。作为 Vercel 在编译层的新尝试，它试图让 TS 摆脱对 Node/JS 运行时的依赖，为性能敏感场景提供更接近原生的执行路径。",
+    "quote": "Vercel 又想给前端换一台发动机。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/vercel-labs/scriptc",
+    "published": "2026-09-28",
+    "uid": "dev_e7a297ca"
+  },
+  {
+    "title": "univer：给 AI Agent 的 Office 运行时",
+    "content": "Univer 冲上 GitHub Trending，自称「The Office Harness for AI Agents」：在单一运行时内同时提供电子表格、文档、幻灯片、画布、关系表与 PDF 能力。它把传统 Office 套件重构为面向 Agent 的运行时，让 AI 能直接操作整套办公文档对象，而不必逐个拼接第三方库。",
+    "quote": "Agent 要办公，得先把 Office 拆成 API。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/dream-num/univer",
+    "published": "2026-09-28",
+    "uid": "dev_94af2854"
+  }
+]
