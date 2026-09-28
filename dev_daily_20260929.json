@@ -1,0 +1,227 @@
+[
+  {
+    "title": "问题不在 AI 写的代码，而在于没人再懂任何东西",
+    "content": "博主 Simon Späti 提出：AI 产出的代码或许只是平均水平，但真正可怕的是让团队集体失忆——没人再清楚系统架构，也没人知道当初某个决策的原因。改动越来越快，所有人只会去问 Claude，最后整个项目连一份像样的计划都拿不出来，组织记忆被悄悄掏空。",
+    "quote": "代码丢了能补，脑子丢了没人捡。",
+    "source": "HN Front Page",
+    "url": "https://www.ssp.sh/brain/the-problem-is-not-the-ai-code-but-nobody-knows-anything-anymore/",
+    "published": "2026-09-29",
+    "uid": "dev_35e5993c"
+  },
+  {
+    "title": "英伟达要给每个 AI Agent 配一颗看门狗芯片",
+    "content": "英伟达发布 Open Agent Safety Platform，包含两部分：开源软件 OpenShell 给 Agent 划边界、全程追踪并强制执行主人设定的规则；以及一颗能直接拔电源的「看门狗」芯片。此前接连出现 Agent 越界事件，已有 100 多家公司签约，Anthropic、微软、马斯克的 SpaceXAI 在列。",
+    "quote": "再聪明的 Agent，也得留个物理开关。",
+    "source": "HN Front Page",
+    "url": "https://madrobot.blog/2026/09/28/nvidia-open-agent-safety-platform-openshell-sentry-rogue-ai-agents/",
+    "published": "2026-09-29",
+    "uid": "dev_d66cbaa7"
+  },
+  {
+    "title": "写代码这件事，远远没有被解决",
+    "content": "Alex Ewerlöf 反驳「编码已被解决、工程师只剩品味」的论调。他承认 LLM 让创作变便宜，但生产环境真正考验的是维护、可靠性、安全与协作——这些恰是 LLM 最不擅长的部分。作者自称 LLM 编码工具的早期采用者，正因如此，才看不惯把工程简化成许愿的叙事。",
+    "quote": "生成便宜了，维护可从来没打折。",
+    "source": "HN Front Page",
+    "url": "https://blog.alexewerlof.com/p/coding-is-not-solved",
+    "published": "2026-09-29",
+    "uid": "dev_51270b29"
+  },
+  {
+    "title": "逆向 PS5 的 RTMP 推流，实现屏幕共享",
+    "content": "Sony 逐步锁死了 PS5 硬件的可玩性，作者的 PS5 用不了 Discord 屏幕共享。他一路逆向 Remote Play 与 PS5 推流协议：找到正确的 hostname、用 DNS 小技巧把流量引到自己机器，再接收 RTMP 流本地观看，硬是把「这条路走不通」走成了一条长路。",
+    "quote": "厂商封门，极客翻墙，老剧本了。",
+    "source": "HN Front Page",
+    "url": "https://yashgarg.dev/posts/hijacking-ps5-rtmp-stream/",
+    "published": "2026-09-29",
+    "uid": "dev_03495aaa"
+  },
+  {
+    "title": "MongoDB CEO 即刻辞职加盟 Meta，股价暴跌 20%",
+    "content": "路透报道，MongoDB CEO Dev Ittycheria 宣布「即刻生效」离任，转投 Meta 领导其企业平台业务。消息一出，MongoDB 股价应声下跌约 20%。数据库龙头在 AI 时代把掌舵人送进 Meta 的战场，资本市场用脚投票，投资者显然不认为这是一笔划算的人事变动。（URL 对爬虫返回 401，浏览器可正常访问）",
+    "quote": "CEO 跳槽 Meta，股东先替他买单。",
+    "source": "HN Front Page",
+    "url": "https://www.reuters.com/technology/mongodb-ceo-desai-steps-down-lead-metas-enterprise-platform-2026-09-28/",
+    "published": "2026-09-29",
+    "uid": "dev_73ba0417"
+  },
+  {
+    "title": "VoiceStudio：全本地开源的 ElevenLabs 替代",
+    "content": "VoiceStudio 冲上 GitHub Trending，定位是「完全本地」的开源语音工作室，对标 ElevenLabs：支持声音克隆、音色设计、视频配音、听写、转写与有声书制作，覆盖 646 种语言。所有处理在本地完成、不上传云端，为在意隐私或不想付订阅费的开发者提供了可自托管选择。",
+    "quote": "克隆声音，还不用上交隐私，挺香。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/debpalash/VoiceStudio",
+    "published": "2026-09-29",
+    "uid": "dev_401ed1da"
+  },
+  {
+    "title": "openrig：让 Claude Code 与 Codex 同台干活",
+    "content": "openrig 是一个多 Agent harness，把 Claude Code 和 Codex 放进同一套系统里协同运行，而不是各自为战。项目试图解决多模型 Agent 编排的现实问题：如何让不同厂商的编码 Agent 共享任务、互相补位。对同时订阅多家模型的团队来说，这类「调度层」正变得越来越重要。",
+    "quote": "两个 Agent 一起打工，人类省心。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/mvschwarz/openrig",
+    "published": "2026-09-29",
+    "uid": "dev_32f74aed"
+  },
+  {
+    "title": "keepane：AI 时代的终端多路复用器",
+    "content": "作者基于 tmux 的体验做了 keepane：pane 之间能互相通信、投递消息，跨机器配对后也能互发；手机扫码即可观测和控制，命令仍在电脑上跑。agent 还能通过 MCP 自行开 session、开 pane、给别的 pane 发消息。安全上较保守：对方消息默认只交给 agent，想直接执行命令需本机手动放权。",
+    "quote": "给 Agent 建个自己的聊天室，够赛博。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1245357",
+    "published": "2026-09-29",
+    "uid": "dev_7bea1451"
+  },
+  {
+    "title": "编码 Agent 的上下文压缩，压错了地方",
+    "content": "Reid Marlow 指出一个被忽视的问题：长上下文 Agent 到第 20 轮左右就撞上账单墙——跑了二十条命令、读了十二个文件、跑了三次 pytest，提示词已 8 万 token，其中八成是工具输出。多数团队压缩的是对话，却忽略了真正膨胀的工具结果，作者认为该换一侧重新设计压缩策略。",
+    "quote": "账单爆炸的元凶，是工具输出不是你。",
+    "source": "Dev.to",
+    "url": "https://dev.to/reidmarlow/context-compression-for-coding-agents-compresses-the-wrong-side-of-the-prompt-hio",
+    "published": "2026-09-29",
+    "uid": "dev_b215f547"
+  },
+  {
+    "title": "通宵速度循环：让 AI Agent 把代码提速 7 倍",
+    "content": "作者给编码 Agent 下了个简单指令：把每个基准测试都至少提速 1.2 倍，然后重复，直到想不出新点子，接着去睡觉。醒来发现那份人类调优十年的库被超过了。文章记录了这套「过夜速度循环」：AI Agent 在无人值守下反复压榨性能，把过去难以想象的效率竞赛变成日常操作。",
+    "quote": "人睡觉，Agent 卷性能，内卷升级。",
+    "source": "Dev.to",
+    "url": "https://dev.to/jamilxt/the-overnight-speed-loop-asking-ai-agents-to-make-code-7x-faster-42ll",
+    "published": "2026-09-29",
+    "uid": "dev_adde9735"
+  },
+  {
+    "title": "该信任什么样的编码智能体？SolonCode 的取舍",
+    "content": "面对越来越强的编码智能体，用户最关心的不是「它多聪明」，而是「我敢用吗」。文章提出一份可信清单：能否读源码、代码去向是否透明、是否被厂商绑定、能否控制其行为、能否撤销错误。以开源工具 SolonCode 为例，强调可信不靠承诺，而靠可核验、可本地运行、可自由切换模型与可控回滚。",
+    "quote": "信任不是吹出来的，是能查出来的。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/noear/p/23141197",
+    "published": "2026-09-29",
+    "uid": "dev_ba36017d"
+  },
+  {
+    "title": "DeepSeek 还没官宣的桌面版，抢先跑了一遍",
+    "content": "DeepSeek Harness 的桌面安装包已在社区流传，作者顺着地址完成安装，版本号 v0.1.7-rc.1，刚打开就提示有新版本，实测升到 v0.1.7-rc.2。截至体验时 DeepSeek 尚未官宣，但从内置的 DeepSeek 集成与打磨程度看，官方桌面客户端已呼之欲出，作者称「有点炸」。",
+    "quote": "官方没发，社区先传，熟悉的节奏。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/zh94/p/23139669",
+    "published": "2026-09-29",
+    "uid": "dev_53d06dc2"
+  },
+  {
+    "title": "Show HN：在终端里刷 Hacker News 的 TUI 客户端 hntui",
+    "content": "开发者在 HN 发布 Show HN 项目 hntui：一个在终端里浏览 Hacker News 的 TUI 客户端，基于 Opentui 构建，顺手把 Effect 也塞了进来当练手。作者说自己「真的很喜欢它」，希望大家也喜欢。对整天泡在终端、又懒得开浏览器刷 HN 的开发者来说，这类工具省事又对味。",
+    "quote": "终端刷 HN，程序员最后的体面。",
+    "source": "HN Front Page",
+    "url": "https://github.com/ahmd-sh/hntui",
+    "published": "2026-09-29",
+    "uid": "dev_1329c5b7"
+  },
+  {
+    "title": "Show HN：PaperMono，能同步手机网页的墨水屏冰箱贴购物清单",
+    "content": "Show HN 上出现 PaperMono：把 M5Stack 的 PaperMono 设备做成冰箱贴购物清单，用 ESP32-S3 加一块触摸墨水屏，通过 Wi-Fi 与手机网页应用同步，断网也能用。整个固件约两千四百行 C++ 手写完成。作者一句「这设备真不错」，透着硬核玩家的自得。",
+    "quote": "购物清单直接上冰箱，直男的浪漫。",
+    "source": "HN Front Page",
+    "url": "https://github.com/seamusc/papermono-shopping-list",
+    "published": "2026-09-29",
+    "uid": "dev_b190df22"
+  },
+  {
+    "title": "Show HN：图形设计巨头们的免费替代品 scissor.studio",
+    "content": "名为 scissor.studio 的 Show HN 项目，主打「图形设计巨头们的免费替代品」：一个基于 WebAssembly 的浏览器端应用，让你直接在网页里编辑位图和矢量图，不用注册、不用订阅。对偶尔改个图、又不想为设计软件付月费的独立开发者和小团队来说，这类思路很有吸引力。",
+    "quote": "不想给 Adobe 交税，那就自己造。",
+    "source": "HN Front Page",
+    "url": "https://scissor.studio/",
+    "published": "2026-09-29",
+    "uid": "dev_0bca9cbb"
+  },
+  {
+    "title": "一个严肃的 AI 产品该长什么样？",
+    "content": "作者 Glyph 发文吐槽：当下这一代 AI 产品根本没把自己的定位当真。一边是满口奉承、自称严肃问题解决工具的聊天机器人，可连「查错」这种基本功都没做成一等功能，全靠一行灰色小字把责任甩给用户。他认为真正严肃的产品应该给每条结论配勾选框、让人把核查过程记下来，否则更像一场骗局。",
+    "quote": "连查错都不做，还谈什么严肃工具。",
+    "source": "HN Front Page",
+    "url": "https://blog.glyph.im/2026/09/serious-ai-product.html",
+    "published": "2026-09-29",
+    "uid": "dev_a1a01837"
+  },
+  {
+    "title": "我受够了反复给 AI 解释项目，用 Hindsight 给它装上记忆",
+    "content": "作者写 TeamForge 时受够了每次都要跟 AI 重新解释项目背景：AI 会写代码，却不知道这个项目为什么长成现在这样。于是他给项目接了 Hindsight 记忆层，把「为什么这么设计」沉淀下来，让聊天机器人变成真正记得上下文的工程师，从此少了一堆重复解释。",
+    "quote": "AI 会写代码，就是记不住你为啥这么写。",
+    "source": "Dev.to",
+    "url": "https://dev.to/pokuri_lahari_c9a5f9f053d/i-stopped-re-explaining-my-project-to-ai-with-hindsight-39cc",
+    "published": "2026-09-29",
+    "uid": "dev_a0664082"
+  },
+  {
+    "title": "etcd 去碎片：不中断集群把 400MB 空闲空间还给磁盘",
+    "content": "作者的 etcd 数据库磁盘上占了 508MB，真正活跃的数据只有 84MB，剩下四百多兆是 etcd 死活不肯还给文件系统的空闲页。文章记录了完整的碎片整理过程：如何在不中断集群的前提下回收空间，讲清步骤、注意事项与风险，避免重蹈「一 defrag 就抖动」的覆辙。",
+    "quote": "数据库的脂肪，只有手动抽脂才掉。",
+    "source": "Dev.to",
+    "url": "https://dev.to/futhgar/etcd-defragmentation-reclaiming-space-without-cluster-disruption-16cg",
+    "published": "2026-09-29",
+    "uid": "dev_4eca2bf7"
+  },
+  {
+    "title": "我为什么在产品上线前先公开数据格式",
+    "content": "作者在 LockMargin 产品上线前，先把数据层的 Schema、导出格式和解密工具全部公开。理由很直接：产品承诺「你的数据属于你」，这句话需要可验证的证据，而不是一句宣传语。把格式先开源，等于让任何人现在就能导出、迁移自己的数据，用透明换取信任。",
+    "quote": "先放格式再发产品，底气来自不锁人。",
+    "source": "Dev.to",
+    "url": "https://dev.to/vladshiyan/why-i-published-the-format-before-the-product-od5",
+    "published": "2026-09-29",
+    "uid": "dev_5a1822c1"
+  },
+  {
+    "title": "从 epoll 到 Reactor：Redis 单线程与多线程的取舍",
+    "content": "博客园技术长文梳理 Redis 的演进：6.0 之前是单线程模型，靠 epoll + Reactor 架构撑起高性能，优势在于没有锁竞争、没有上下文切换，简洁又保证原子性。随着网络吞吐成为瓶颈，6.0 引入多线程，但只把网络读写与协议解析分给多个线程，命令执行仍由主线程完成，兼顾性能与一致性。",
+    "quote": "单线程跑得快，是因为不折腾锁。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/yhup/p/23145879",
+    "published": "2026-09-29",
+    "uid": "dev_86cb6f42"
+  },
+  {
+    "title": "100 亿订单号如何去重：布隆过滤器加数据库兜底",
+    "content": "博客园实战文拆解百亿级订单号的高并发去重：逐一对比 HashSet、MySQL、Redis Set 等方案优劣，最终敲定「分布式布隆过滤器 + 数据库兜底」的架构。再通过分片解决 Redis 大 key 问题，配合多线程批量加载与管道提速，百亿数据四小时完成冷启动，实测支持十万级 QPS、延迟低于十毫秒。",
+    "quote": "百亿订单号去重，靠的是一层层兜底。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/zrui-xyu/p/23138991",
+    "published": "2026-09-29",
+    "uid": "dev_c275bd72"
+  },
+  {
+    "title": "执行机监控就该这么轻：5MB 探针 + 零依赖 Server 的 Pulse",
+    "content": "博客园文章介绍 Pulse：用两个 Go 单文件（Agent + Server）替代重型监控栈，专治「执行机集群裸跑、出了事只能等投诉」。它支持全指标采集、十秒上报、离线与阈值告警以及可视化面板，零外部依赖，五分钟接入。作者的口号是「执行机监控就该这么轻」，主打少即是多。",
+    "quote": "5MB 的探针，比一堆 Agent 都实在。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/exioran/p/23139107",
+    "published": "2026-09-29",
+    "uid": "dev_98748d61"
+  },
+  {
+    "title": "用 AI 把四年前的 Dawn Launcher 从 Electron 重构到 Tauri",
+    "content": "网友用 AI 重构了自己四年前开源的 Windows 快捷启动工具 Dawn Launcher。原版基于 Electron，体积约 75MB 颇为臃肿，他改用 Tauri 重新实现，让轻巧的启动器真正配得上「轻巧」二字。新版集中整理常用应用、文件与网址，目标是启动更快、桌面更整洁，也顺带展示了 AI 辅助重构老项目的可行性。",
+    "quote": "老项目换个框架，AI 当主力搬砖工。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1245331",
+    "published": "2026-09-29",
+    "uid": "dev_046ed6d8"
+  },
+  {
+    "title": "自建 Safari ↔ Chrome/Firefox 书签双向同步，还塞回了 iCloud",
+    "content": "作者在 iOS/iPadOS 上用 Safari、Mac 上却离不开 Chrome/Firefox，书签长期各管各的。Apple 的 iCloud 书签扩展只支持 Windows，macOS 根本没那个 native host。于是他自建了一套双向同步：以 Safari 为准，把改动同步回 Chrome/Firefox，还顺手塞回了 iCloud，解决多年的跨浏览器书签割裂。",
+    "quote": "苹果不管的缝隙，只能自己拿胶水补。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1245219",
+    "published": "2026-09-29",
+    "uid": "dev_871a0976"
+  },
+  {
+    "title": "Noeio v0.2.0：适用于 Sandbox 的轻量无状态三层组网工具",
+    "content": "网友分享自研的三层轻量无状态组网工具 Noeio，发布 v0.2.0 并新增子网路由功能，让组网内节点可通过路由转发访问内网服务。作者坦言项目初衷是学习，定位类似 Tailscale。他认为在 AI 时代，沙箱与节点互联的需求会越来越旺盛，想借此探索在 Sandbox 场景下的新玩法。",
+    "quote": "又一个 Tailscale，学习型选手的倔强。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1245189",
+    "published": "2026-09-29",
+    "uid": "dev_4428ac9e"
+  }
+]
