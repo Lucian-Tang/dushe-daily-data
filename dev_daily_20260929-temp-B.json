@@ -1,0 +1,128 @@
+[
+  {
+    "title": "Show HN：在终端里刷 Hacker News 的 TUI 客户端 hntui",
+    "content": "开发者在 HN 发布 Show HN 项目 hntui：一个在终端里浏览 Hacker News 的 TUI 客户端，基于 Opentui 构建，顺手把 Effect 也塞了进来当练手。作者说自己「真的很喜欢它」，希望大家也喜欢。对整天泡在终端、又懒得开浏览器刷 HN 的开发者来说，这类工具省事又对味。",
+    "quote": "终端刷 HN，程序员最后的体面。",
+    "source": "HN Front Page",
+    "url": "https://github.com/ahmd-sh/hntui",
+    "published": "2026-09-29",
+    "uid": "dev_7c325b47"
+  },
+  {
+    "title": "Show HN：PaperMono，能同步手机网页的墨水屏冰箱贴购物清单",
+    "content": "Show HN 上出现 PaperMono：把 M5Stack 的 PaperMono 设备做成冰箱贴购物清单，用 ESP32-S3 加一块触摸墨水屏，通过 Wi-Fi 与手机网页应用同步，断网也能用。整个固件约两千四百行 C++ 手写完成。作者一句「这设备真不错」，透着硬核玩家的自得。",
+    "quote": "购物清单直接上冰箱，直男的浪漫。",
+    "source": "HN Front Page",
+    "url": "https://github.com/seamusc/papermono-shopping-list",
+    "published": "2026-09-29",
+    "uid": "dev_17f71d7d"
+  },
+  {
+    "title": "Show HN：图形设计巨头们的免费替代品 scissor.studio",
+    "content": "名为 scissor.studio 的 Show HN 项目，主打「图形设计巨头们的免费替代品」：一个基于 WebAssembly 的浏览器端应用，让你直接在网页里编辑位图和矢量图，不用注册、不用订阅。对偶尔改个图、又不想为设计软件付月费的独立开发者和小团队来说，这类思路很有吸引力。",
+    "quote": "不想给 Adobe 交税，那就自己造。",
+    "source": "HN Front Page",
+    "url": "https://scissor.studio/",
+    "published": "2026-09-29",
+    "uid": "dev_6f7bbf4e"
+  },
+  {
+    "title": "一个严肃的 AI 产品该长什么样？",
+    "content": "作者 Glyph 发文吐槽：当下这一代 AI 产品根本没把自己的定位当真。一边是满口奉承、自称严肃问题解决工具的聊天机器人，可连「查错」这种基本功都没做成一等功能，全靠一行灰色小字把责任甩给用户。他认为真正严肃的产品应该给每条结论配勾选框、让人把核查过程记下来，否则更像一场骗局。",
+    "quote": "连查错都不做，还谈什么严肃工具。",
+    "source": "HN Front Page",
+    "url": "https://blog.glyph.im/2026/09/serious-ai-product.html",
+    "published": "2026-09-29",
+    "uid": "dev_33e7b8d7"
+  },
+  {
+    "title": "我受够了反复给 AI 解释项目，用 Hindsight 给它装上记忆",
+    "content": "作者写 TeamForge 时受够了每次都要跟 AI 重新解释项目背景：AI 会写代码，却不知道这个项目为什么长成现在这样。于是他给项目接了 Hindsight 记忆层，把「为什么这么设计」沉淀下来，让聊天机器人变成真正记得上下文的工程师，从此少了一堆重复解释。",
+    "quote": "AI 会写代码，就是记不住你为啥这么写。",
+    "source": "Dev.to",
+    "url": "https://dev.to/pokuri_lahari_c9a5f9f053d/i-stopped-re-explaining-my-project-to-ai-with-hindsight-39cc",
+    "published": "2026-09-29",
+    "uid": "dev_f83b29b8"
+  },
+  {
+    "title": "etcd 去碎片：不中断集群把 400MB 空闲空间还给磁盘",
+    "content": "作者的 etcd 数据库磁盘上占了 508MB，真正活跃的数据只有 84MB，剩下四百多兆是 etcd 死活不肯还给文件系统的空闲页。文章记录了完整的碎片整理过程：如何在不中断集群的前提下回收空间，讲清步骤、注意事项与风险，避免重蹈「一 defrag 就抖动」的覆辙。",
+    "quote": "数据库的脂肪，只有手动抽脂才掉。",
+    "source": "Dev.to",
+    "url": "https://dev.to/futhgar/etcd-defragmentation-reclaiming-space-without-cluster-disruption-16cg",
+    "published": "2026-09-29",
+    "uid": "dev_8c3f9a50"
+  },
+  {
+    "title": "我为什么在产品上线前先公开数据格式",
+    "content": "作者在 LockMargin 产品上线前，先把数据层的 Schema、导出格式和解密工具全部公开。理由很直接：产品承诺「你的数据属于你」，这句话需要可验证的证据，而不是一句宣传语。把格式先开源，等于让任何人现在就能导出、迁移自己的数据，用透明换取信任。",
+    "quote": "先放格式再发产品，底气来自不锁人。",
+    "source": "Dev.to",
+    "url": "https://dev.to/vladshiyan/why-i-published-the-format-before-the-product-od5",
+    "published": "2026-09-29",
+    "uid": "dev_6263b60c"
+  },
+  {
+    "title": "从 epoll 到 Reactor：Redis 单线程与多线程的取舍",
+    "content": "博客园技术长文梳理 Redis 的演进：6.0 之前是单线程模型，靠 epoll + Reactor 架构撑起高性能，优势在于没有锁竞争、没有上下文切换，简洁又保证原子性。随着网络吞吐成为瓶颈，6.0 引入多线程，但只把网络读写与协议解析分给多个线程，命令执行仍由主线程完成，兼顾性能与一致性。",
+    "quote": "单线程跑得快，是因为不折腾锁。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/yhup/p/23145879",
+    "published": "2026-09-29",
+    "uid": "dev_21a030bd"
+  },
+  {
+    "title": "100 亿订单号如何去重：布隆过滤器加数据库兜底",
+    "content": "博客园实战文拆解百亿级订单号的高并发去重：逐一对比 HashSet、MySQL、Redis Set 等方案优劣，最终敲定「分布式布隆过滤器 + 数据库兜底」的架构。再通过分片解决 Redis 大 key 问题，配合多线程批量加载与管道提速，百亿数据四小时完成冷启动，实测支持十万级 QPS、延迟低于十毫秒。",
+    "quote": "百亿订单号去重，靠的是一层层兜底。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/zrui-xyu/p/23138991",
+    "published": "2026-09-29",
+    "uid": "dev_7878aa28"
+  },
+  {
+    "title": "开源 SnipasteOcr：给截图工具补上离线 OCR",
+    "content": "作者中秋在家把想法落地：给惯用的截图工具 Snipaste 补上 OCR 能力，开源了 SnipasteOcr。它结合周捷新发布的 SimdPaddleOCR 推理库，再用手头的本地大模型打磨，实现截图即识别。对经常要复制图片里文字、又不愿把截图传到云端的人来说，离线方案更让人放心。",
+    "quote": "截图顺手 OCR，还不上传，安全感拉满。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/GuZhenYin/p/23138108",
+    "published": "2026-09-29",
+    "uid": "dev_ffa312e1"
+  },
+  {
+    "title": "执行机监控就该这么轻：5MB 探针 + 零依赖 Server 的 Pulse",
+    "content": "博客园文章介绍 Pulse：用两个 Go 单文件（Agent + Server）替代重型监控栈，专治「执行机集群裸跑、出了事只能等投诉」。它支持全指标采集、十秒上报、离线与阈值告警以及可视化面板，零外部依赖，五分钟接入。作者的口号是「执行机监控就该这么轻」，主打少即是多。",
+    "quote": "5MB 的探针，比一堆 Agent 都实在。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/exioran/p/23139107",
+    "published": "2026-09-29",
+    "uid": "dev_b384e600"
+  },
+  {
+    "title": "用 AI 把四年前的 Dawn Launcher 从 Electron 重构到 Tauri",
+    "content": "网友用 AI 重构了自己四年前开源的 Windows 快捷启动工具 Dawn Launcher。原版基于 Electron，体积约 75MB 颇为臃肿，他改用 Tauri 重新实现，让轻巧的启动器真正配得上「轻巧」二字。新版集中整理常用应用、文件与网址，目标是启动更快、桌面更整洁，也顺带展示了 AI 辅助重构老项目的可行性。",
+    "quote": "老项目换个框架，AI 当主力搬砖工。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1245331",
+    "published": "2026-09-29",
+    "uid": "dev_3afbf9e0"
+  },
+  {
+    "title": "自建 Safari ↔ Chrome/Firefox 书签双向同步，还塞回了 iCloud",
+    "content": "作者在 iOS/iPadOS 上用 Safari、Mac 上却离不开 Chrome/Firefox，书签长期各管各的。Apple 的 iCloud 书签扩展只支持 Windows，macOS 根本没那个 native host。于是他自建了一套双向同步：以 Safari 为准，把改动同步回 Chrome/Firefox，还顺手塞回了 iCloud，解决多年的跨浏览器书签割裂。",
+    "quote": "苹果不管的缝隙，只能自己拿胶水补。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1245219",
+    "published": "2026-09-29",
+    "uid": "dev_1f33f63d"
+  },
+  {
+    "title": "Noeio v0.2.0：适用于 Sandbox 的轻量无状态三层组网工具",
+    "content": "网友分享自研的三层轻量无状态组网工具 Noeio，发布 v0.2.0 并新增子网路由功能，让组网内节点可通过路由转发访问内网服务。作者坦言项目初衷是学习，定位类似 Tailscale。他认为在 AI 时代，沙箱与节点互联的需求会越来越旺盛，想借此探索在 Sandbox 场景下的新玩法。",
+    "quote": "又一个 Tailscale，学习型选手的倔强。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1245189",
+    "published": "2026-09-29",
+    "uid": "dev_1d94cc2e"
+  }
+]
