@@ -1,0 +1,137 @@
+[
+  {
+    "title": "macOS Golden Gate 就是个 bug 大杂烩",
+    "content": "Apple 把 macOS 27「Golden Gate」定位成类似当年 Snow Leopard 的「修 bug 年」，口号是更流畅、更愉悦。作者用两周后发现一堆低级问题：QuickTime 录制按钮、窗口平铺图标乱对齐；Mac 用户指南还停在上一代系统；Siri 还在用旧 logo；菜单栏架构改动还直接干碎了一批第三方菜单栏工具，偶发崩溃。",
+    "quote": "说好修 bug 的一年，自己先成了 bug 展。",
+    "source": "HN Front Page",
+    "url": "https://www.squareorbits.com/blog/2026/09/macos-golden-gate-is-a-buggy-mess/",
+    "published": "2026-09-30",
+    "uid": "dev_99b35a67"
+  },
+  {
+    "title": "德里把电力线损从 50% 砍到 5%",
+    "content": "2000 年代初新德里天天停电数小时，老旧配电网加上偷电，让全城一半以上电力凭空蒸发。一位电力工程教授以回忆录形式讲述，经过四分之一个世纪的改造——智能电表、分区计量、把责任落实到具体供电区——线损从 50% 降到 5%，从家家自备发电机的混乱回到稳定供电。",
+    "quote": "一半电能在电线上蒸发，那还叫电网？",
+    "source": "HN Front Page",
+    "url": "https://spectrum.ieee.org/delhi-electricity-loss",
+    "published": "2026-09-30",
+    "uid": "dev_e29d41e4"
+  },
+  {
+    "title": "7 块 ESP32-S3 拼出 BitNet 大模型集群",
+    "content": "作者用 7 块 ESP32-S3 开发板通过 SPI 菊花链拼成小集群，跑 0.4B 参数、1.58-bit 三值量化（BitNet）的大模型。单片机内存和算力都极其有限，靠量化与多节点分摊，硬是在几美元的芯片上把 LLM 推理跑了起来，算是一次边缘侧 AI 的极客式炫技。",
+    "quote": "七块芯片凑一桌，也敢叫分布式大模型。",
+    "source": "HN Front Page",
+    "url": "https://github.com/Low-Zi-Hong/ESP32s3-LLM-Cluster",
+    "published": "2026-09-30",
+    "uid": "dev_1247ec87"
+  },
+  {
+    "title": "MicroLLM Lab：把 7 个超小模型塞进浏览器",
+    "content": "MicroLLM Lab 让你在浏览器里直接跑 7 个超小 LLM，全部本地推理、数据不出机器。它自带基准测试框：用正则或精确匹配做客观评分，测吞吐（tok/s）和通过率，还允许在页面上写 JS 测试脚本。135M 的小模型就是会被跑挂——而这正是它想量化出来的东西。",
+    "quote": "让 135M 小模型在浏览器里公开社死。",
+    "source": "HN Front Page",
+    "url": "https://stateofutopia.com/experiments/microllmlab/",
+    "published": "2026-09-30",
+    "uid": "dev_b6c5342a"
+  },
+  {
+    "title": "Hindsight：会自己学习的 Agent 记忆系统",
+    "content": "Hindsight 是一个「会学习的 Agent 记忆」项目，Python 实现，已斩获 4.2 万星。它把 Agent 的历史交互沉淀成可检索、可演进的长期记忆，让模型跨会话时记得住、学得会。今日多篇 Dev.to 文章都围绕它做实践，说明「Agent 记忆」已经成了 2026 年的热门赛道。",
+    "quote": "总算有人管一管 Agent 的健忘症了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/vectorize-io/hindsight",
+    "published": "2026-09-30",
+    "uid": "dev_1e4a9c79"
+  },
+  {
+    "title": "dbx：25MB 塞进 100+ 数据库的客户端",
+    "content": "dbx 是一个仅 25MB 的跨平台数据库客户端，支持 100+ 种数据库——MySQL、PostgreSQL、SQLite、Redis、MongoDB、DuckDB、SQL Server、达梦等。Rust 编写，提供桌面端、Docker、CLI 与 MCP Server，还内置 AI 助手，已 2.1 万星。轻量、全能加 AI，是今年数据库工具里的一匹黑马。",
+    "quote": "25MB 装下 100 种数据库，同行都坐不住了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/t8y2/dbx",
+    "published": "2026-09-30",
+    "uid": "dev_3108c8e9"
+  },
+  {
+    "title": "5180 亿的算力腾挪：拆解 Anthropic 招股书",
+    "content": "作者结合路透社报道，拆解 Anthropic 招股书里的财务披露：它讲了一桩规模罕见的商业腾挪——涉及约 5180 亿美元的算力交易（compute swap）。文章细看背后的收入爬坡节奏、算力承诺与现金流的错配，提醒读者 IPO 故事里最该警惕的，往往是那些被包装成「增长」的巨额算力对赌。",
+    "quote": "5180 亿的算力对赌，故事比财报好看。",
+    "source": "Dev.to",
+    "url": "https://dev.to/deanlee/the-518-billion-compute-swap-inside-anthropics-ipo-prospectus-4f5m",
+    "published": "2026-09-30",
+    "uid": "dev_393bcd70"
+  },
+  {
+    "title": "AI 该闭嘴时，就该去捞个人类过来",
+    "content": "多数面向客服的 AI 项目把「转人工」当成异常分支，等主流程跑通了再说——作者认为这是本末倒置。升级到人类应该是一等公民的从第一天就要考虑：什么信号触发转人工、如何把上下文干净地交给客服。否则 AI 越自信，烂摊子越大，用户跑得越快。",
+    "quote": "转人工不是兜底路，而是产品设计。",
+    "source": "Dev.to",
+    "url": "https://dev.to/atomisc/when-an-ai-should-stop-talking-and-fetch-a-human-4126",
+    "published": "2026-09-30",
+    "uid": "dev_87a9c1db"
+  },
+  {
+    "title": "标价不等于授权：开源资源的许可陷阱",
+    "content": "下载一个图标很容易，难的是一年后你才搞清自己到底能拿它干什么。作者用一个「下载 SVG、优化、改名、塞进项目」的常见流程举例：免费或付费标签都不等于授权，商用、署名、再分发、用于 AI 训练等条款千差万别。真正该做的是逐条核对许可证，而不是看价格猜授权。",
+    "quote": "标价不等于授权，律师函可不看价格。",
+    "source": "Dev.to",
+    "url": "https://dev.to/svgicons/the-price-tag-is-not-the-license-35hh",
+    "published": "2026-09-30",
+    "uid": "dev_e25be967"
+  },
+  {
+    "title": "Windows 下 CLI 参数的引号陷阱",
+    "content": "在 Windows 终端执行 `qoderclicn --resume '0691d0aa-…'` 报「找不到 session」，去掉引号却一切正常。作者定位到 Windows 命令行对引号的处理与 Unix 不同：单引号不是「引用」而是字面字符，UUID 被连引号一起传给了程序。提醒开发者写跨平台 CLI 时，别把 Unix 的手感带到 Windows。",
+    "quote": "单引号在Windows不是引用，一quoting就翻车。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/foxcharon/p/23162504",
+    "published": "2026-09-30",
+    "uid": "dev_5631350f"
+  },
+  {
+    "title": "重读《苦涩的教训》：AI Agent 思路可能不靠谱",
+    "content": "作者张富春带着「我设计的 Agent 思路会不会跑偏」的疑问，重读 Sutton 的《The Bitter Lesson》：凡是靠人类注入领域知识、靠精巧规则堆出来的方法，长期都会被「算力 + 通用学习」碾压。他由此反思，当下大量 Agent 框架其实是在用人的小聪明补机器的笨，可能正是那条注定要输的老路。",
+    "quote": "人类的小聪明，架不住算力的大蛮力。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/ahfuzhang/p/23160145",
+    "published": "2026-09-30",
+    "uid": "dev_dc5c5b99"
+  },
+  {
+    "title": "把飞书 .NET SDK 改造到能 AOT 编译",
+    "content": "AOT 编译对应用友好，对类库却极其苛刻：运行期不能动态生成代码（IL3050），裁剪后不能引用被裁掉的成员（IL2026）。而飞书 .NET SDK 恰恰踩满这两条——大量反射、动态生成与可选依赖。作者记录了如何逐个拆解这些动态依赖，让庞大 SDK 在 AOT 下也能跑起来，是一份实打实的踩坑记录。",
+    "quote": "把反射大户拉进 AOT，等于徒手拆雷。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/mudtools/p/23152901",
+    "published": "2026-09-30",
+    "uid": "dev_21274684"
+  },
+  {
+    "title": "DeepSeek 输入 <think> 竟能看到他人对话",
+    "content": "V2EX 用户发帖称，在 DeepSeek 网页版和 App 输入 `<think>` 就能看到其他用户的历史对话，疑似提示词或会话隔离存在漏洞，且帖子发出时「好像还没有修复」。若属实，这属于严重的隐私泄露，也让依赖大模型托管服务的用户多了一层担心：你的对话到底存在哪、谁又能看到。",
+    "quote": "输入四个字符，别人的聊天记录就端上来了？",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1213000#reply1",
+    "published": "2026-09-30",
+    "uid": "dev_ffb35265"
+  },
+  {
+    "title": "AI 把 Dawn Launcher 迁到 Tauri",
+    "content": "Dawn Launcher 是一款开源 Windows 桌面快捷启动工具，原本基于 Electron，体积约 75MB。作者用 AI 辅助把它迁到更轻量的 Tauri 框架并发布 3.0：体积和内存大幅下降，启动更快。这是一个「用 AI 把老项目换框架重构」的完整样本，也给「AI 能不能啃动几年存量代码」添了个正面案例。",
+    "quote": "Electron 减肥成功，AI 当了回健身教练。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1245331#reply0",
+    "published": "2026-09-30",
+    "uid": "dev_41993d39"
+  },
+  {
+    "title": "开源本机 AI 网关：一个面板看清谁在烧 token",
+    "content": "作者开源了一个本地 AI 网关，把 Claude Code、Codex 以及各种中转站和国产模型的 key 统一管理，还能看清每个请求花了多少钱、走了哪条上游。起因是用 CC Switch 切上游总要重启客户端、key 被「学」走、换供应商后旧会话接不上。对同时用多个模型、被切换折腾过的开发者相当实用。",
+    "quote": "一个面板看清谁在偷偷烧你的 token。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1245662#reply0",
+    "published": "2026-09-30",
+    "uid": "dev_627cb754"
+  }
+]
