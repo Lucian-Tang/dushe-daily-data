@@ -1,0 +1,227 @@
+[
+  {
+    "title": "macOS Golden Gate 就是个 bug 大杂烩",
+    "content": "Apple 把 macOS 27「Golden Gate」定位成类似当年 Snow Leopard 的「修 bug 年」，口号是更流畅、更愉悦。作者用两周后发现一堆低级问题：QuickTime 录制按钮、窗口平铺图标乱对齐；Mac 用户指南还停在上一代系统；Siri 还在用旧 logo；菜单栏架构改动还直接干碎了一批第三方菜单栏工具，偶发崩溃。",
+    "quote": "说好修 bug 的一年，自己先成了 bug 展。",
+    "source": "HN Front Page",
+    "url": "https://www.squareorbits.com/blog/2026/09/macos-golden-gate-is-a-buggy-mess/",
+    "published": "2026-09-30",
+    "uid": "dev_8a2ef7bb"
+  },
+  {
+    "title": "德里把电力线损从 50% 砍到 5%",
+    "content": "2000 年代初新德里天天停电数小时，老旧配电网加上偷电，让全城一半以上电力凭空蒸发。一位电力工程教授以回忆录形式讲述，经过四分之一个世纪的改造——智能电表、分区计量、把责任落实到具体供电区——线损从 50% 降到 5%，从家家自备发电机的混乱回到稳定供电。",
+    "quote": "一半电能在电线上蒸发，那还叫电网？",
+    "source": "HN Front Page",
+    "url": "https://spectrum.ieee.org/delhi-electricity-loss",
+    "published": "2026-09-30",
+    "uid": "dev_77255fa1"
+  },
+  {
+    "title": "7 块 ESP32-S3 拼出 BitNet 大模型集群",
+    "content": "作者用 7 块 ESP32-S3 开发板通过 SPI 菊花链拼成小集群，跑 0.4B 参数、1.58-bit 三值量化（BitNet）的大模型。单片机内存和算力都极其有限，靠量化与多节点分摊，硬是在几美元的芯片上把 LLM 推理跑了起来，算是一次边缘侧 AI 的极客式炫技。",
+    "quote": "七块芯片凑一桌，也敢叫分布式大模型。",
+    "source": "HN Front Page",
+    "url": "https://github.com/Low-Zi-Hong/ESP32s3-LLM-Cluster",
+    "published": "2026-09-30",
+    "uid": "dev_d073fced"
+  },
+  {
+    "title": "MicroLLM Lab：把 7 个超小模型塞进浏览器",
+    "content": "MicroLLM Lab 让你在浏览器里直接跑 7 个超小 LLM，全部本地推理、数据不出机器。它自带基准测试框：用正则或精确匹配做客观评分，测吞吐（tok/s）和通过率，还允许在页面上写 JS 测试脚本。135M 的小模型就是会被跑挂——而这正是它想量化出来的东西。",
+    "quote": "让 135M 小模型在浏览器里公开社死。",
+    "source": "HN Front Page",
+    "url": "https://stateofutopia.com/experiments/microllmlab/",
+    "published": "2026-09-30",
+    "uid": "dev_3bbc74ba"
+  },
+  {
+    "title": "Hindsight：会自己学习的 Agent 记忆系统",
+    "content": "Hindsight 是一个「会学习的 Agent 记忆」项目，Python 实现，已斩获 4.2 万星。它把 Agent 的历史交互沉淀成可检索、可演进的长期记忆，让模型跨会话时记得住、学得会。今日多篇 Dev.to 文章都围绕它做实践，说明「Agent 记忆」已经成了 2026 年的热门赛道。",
+    "quote": "总算有人管一管 Agent 的健忘症了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/vectorize-io/hindsight",
+    "published": "2026-09-30",
+    "uid": "dev_1dc7011c"
+  },
+  {
+    "title": "dbx：25MB 塞进 100+ 数据库的客户端",
+    "content": "dbx 是一个仅 25MB 的跨平台数据库客户端，支持 100+ 种数据库——MySQL、PostgreSQL、SQLite、Redis、MongoDB、DuckDB、SQL Server、达梦等。Rust 编写，提供桌面端、Docker、CLI 与 MCP Server，还内置 AI 助手，已 2.1 万星。轻量、全能加 AI，是今年数据库工具里的一匹黑马。",
+    "quote": "25MB 装下 100 种数据库，同行都坐不住了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/t8y2/dbx",
+    "published": "2026-09-30",
+    "uid": "dev_32a243a8"
+  },
+  {
+    "title": "5180 亿的算力腾挪：拆解 Anthropic 招股书",
+    "content": "作者结合路透社报道，拆解 Anthropic 招股书里的财务披露：它讲了一桩规模罕见的商业腾挪——涉及约 5180 亿美元的算力交易（compute swap）。文章细看背后的收入爬坡节奏、算力承诺与现金流的错配，提醒读者 IPO 故事里最该警惕的，往往是那些被包装成「增长」的巨额算力对赌。",
+    "quote": "5180 亿的算力对赌，故事比财报好看。",
+    "source": "Dev.to",
+    "url": "https://dev.to/deanlee/the-518-billion-compute-swap-inside-anthropics-ipo-prospectus-4f5m",
+    "published": "2026-09-30",
+    "uid": "dev_482bc105"
+  },
+  {
+    "title": "AI 该闭嘴时，就该去捞个人类过来",
+    "content": "多数面向客服的 AI 项目把「转人工」当成异常分支，等主流程跑通了再说——作者认为这是本末倒置。升级到人类应该是一等公民的从第一天就要考虑：什么信号触发转人工、如何把上下文干净地交给客服。否则 AI 越自信，烂摊子越大，用户跑得越快。",
+    "quote": "转人工不是兜底路，而是产品设计。",
+    "source": "Dev.to",
+    "url": "https://dev.to/atomisc/when-an-ai-should-stop-talking-and-fetch-a-human-4126",
+    "published": "2026-09-30",
+    "uid": "dev_228e398b"
+  },
+  {
+    "title": "重读《苦涩的教训》：AI Agent 思路可能不靠谱",
+    "content": "作者张富春带着「我设计的 Agent 思路会不会跑偏」的疑问，重读 Sutton 的《The Bitter Lesson》：凡是靠人类注入领域知识、靠精巧规则堆出来的方法，长期都会被「算力 + 通用学习」碾压。他由此反思，当下大量 Agent 框架其实是在用人的小聪明补机器的笨，可能正是那条注定要输的老路。",
+    "quote": "人类的小聪明，架不住算力的大蛮力。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/ahfuzhang/p/23160145",
+    "published": "2026-09-30",
+    "uid": "dev_19e93b05"
+  },
+  {
+    "title": "把飞书 .NET SDK 改造到能 AOT 编译",
+    "content": "AOT 编译对应用友好，对类库却极其苛刻：运行期不能动态生成代码（IL3050），裁剪后不能引用被裁掉的成员（IL2026）。而飞书 .NET SDK 恰恰踩满这两条——大量反射、动态生成与可选依赖。作者记录了如何逐个拆解这些动态依赖，让庞大 SDK 在 AOT 下也能跑起来，是一份实打实的踩坑记录。",
+    "quote": "把反射大户拉进 AOT，等于徒手拆雷。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/mudtools/p/23152901",
+    "published": "2026-09-30",
+    "uid": "dev_0d2f16f2"
+  },
+  {
+    "title": "DeepSeek 输入 <think> 竟能看到他人对话",
+    "content": "V2EX 用户发帖称，在 DeepSeek 网页版和 App 输入 `<think>` 就能看到其他用户的历史对话，疑似提示词或会话隔离存在漏洞，且帖子发出时「好像还没有修复」。若属实，这属于严重的隐私泄露，也让依赖大模型托管服务的用户多了一层担心：你的对话到底存在哪、谁又能看到。",
+    "quote": "输入四个字符，别人的聊天记录就端上来了？",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1213000#reply1",
+    "published": "2026-09-30",
+    "uid": "dev_01a28721"
+  },
+  {
+    "title": "AI 把 Dawn Launcher 迁到 Tauri",
+    "content": "Dawn Launcher 是一款开源 Windows 桌面快捷启动工具，原本基于 Electron，体积约 75MB。作者用 AI 辅助把它迁到更轻量的 Tauri 框架并发布 3.0：体积和内存大幅下降，启动更快。这是一个「用 AI 把老项目换框架重构」的完整样本，也给「AI 能不能啃动几年存量代码」添了个正面案例。",
+    "quote": "Electron 减肥成功，AI 当了回健身教练。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1245331#reply0",
+    "published": "2026-09-30",
+    "uid": "dev_d6690170"
+  },
+  {
+    "title": "开源本机 AI 网关：一个面板看清谁在烧 token",
+    "content": "作者开源了一个本地 AI 网关，把 Claude Code、Codex 以及各种中转站和国产模型的 key 统一管理，还能看清每个请求花了多少钱、走了哪条上游。起因是用 CC Switch 切上游总要重启客户端、key 被「学」走、换供应商后旧会话接不上。对同时用多个模型、被切换折腾过的开发者相当实用。",
+    "quote": "一个面板看清谁在偷偷烧你的 token。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1245662#reply0",
+    "published": "2026-09-30",
+    "uid": "dev_5b306010"
+  },
+  {
+    "title": "Show HN：Libyears，把依赖债量成「年」",
+    "content": "有人在 HN 上甩出 Libyears：把你维护的每个仓库里的依赖，按「落后上游多少年」来算，给出一个直观的依赖债指标。思路是把「依赖过期」这种抽象的焦虑，换算成一个能排名、能对比、能贴进周报的具体数字，一眼看出哪个项目正在慢性腐烂。对天天喊着要升级依赖却永远排不上优先级的人来说，这是一把量化借口的好尺子。",
+    "quote": "依赖债不量化，就没人愿意动手修。",
+    "source": "HN Show HN",
+    "url": "https://libyears.com/showcase",
+    "published": "2026-09-30",
+    "uid": "dev_eea79652"
+  },
+  {
+    "title": "Show HN：Squidbrake，给 AI Agent 的工具调用装个审批闸",
+    "content": "Squidbrake 是一个可自托管的审批网关，专给 AI Agent 的工具调用把关：agent 想执行某个动作，先过它这一关，该放行的放行、该拦下的拦下，把「自动执行」变成「人工在环」。对不敢让 agent 直连生产系统、又不想放弃自动化的团队来说，这种中间层给了个体面的安全边界。",
+    "quote": "让 agent 自己动手，出事谁负责？",
+    "source": "HN Show HN",
+    "url": "https://github.com/batrapulkit/squidbrake",
+    "published": "2026-09-30",
+    "uid": "dev_91908ee0"
+  },
+  {
+    "title": "Show HN：actui，在终端里管所有仓库的 GitHub Actions",
+    "content": "作者被跨组织、跨仓库的 GitHub Actions 折腾烦了，于是做了 actui：一个终端 TUI，把多个组织下所有仓库的 Actions 集中起来列出和管理，不用再在网页上一个个点进去。对还没上 monorepo、却被一堆 CI 配置淹没的团队来说，算是把「点鼠标」重新换回了「敲键盘」。",
+    "quote": "一个终端管完 CI，摸鱼又多了五分钟。",
+    "source": "HN Show HN",
+    "url": "https://github.com/shamilatesoglu/actui",
+    "published": "2026-09-30",
+    "uid": "dev_f05b7843"
+  },
+  {
+    "title": "Show HN：MoE Routing Atlas，看 Qwen 里哪些专家在「上班」",
+    "content": "作者把 Qwen3.5/3.6 35B-A3B 两个 MoE 模型的专家激活模式做了可视化：哪个 token 触发了哪些专家、路由熵有多高、专家在层与层之间的复用情况，全都画了出来。对想搞清 MoE 到底「稀疏」在哪、专家是真干活还是在挂机的人来说，这份 Atlas 相当于给黑盒开了个观察窗。",
+    "quote": "专家到底在干活还是挂机，终于看得见了。",
+    "source": "HN Show HN",
+    "url": "https://gslaller.github.io/moe_analysis.html",
+    "published": "2026-09-30",
+    "uid": "dev_f8df32e2"
+  },
+  {
+    "title": "生产级 AI Agent 该怎么搭：.NET 版 Harness 实战",
+    "content": "这是《模型不是你的 Agent，Harness 才是》一文的实现篇：作者用 .NET 把「生产级 agent」从一句架构口号真正落成型。核心观点是 agent 的价值不在模型本身，而在包裹它的那一圈工具编排、状态管理、错误处理和可观测性。对正把 demo 往生产推的工程师来说，是一份少见的工程化拆解。",
+    "quote": "模型只是螺丝钉，Harness 才是整台机器。",
+    "source": "Dev.to",
+    "url": "https://dev.to/steve-kaschimer/building-the-harness-a-production-minded-ai-agent-architecture-in-net-3n64",
+    "published": "2026-09-30",
+    "uid": "dev_638ed9f0"
+  },
+  {
+    "title": "JuiceFS 企业版 5.4：从千亿文件到百万客户端",
+    "content": "继 v5.3 撑起千亿文件规模后，JuiceFS 企业版 5.4 继续冲超大规模：元数据分区部署后如何跨节点协调、性能与数据一致性怎么兼顾、单次操作的细小开销如何累积成资源负担，都被逐项优化，目标直指百万客户端同时接入。对做分布式文件存储的人来说，是一份难得的规模一线实战记录。",
+    "quote": "千亿文件还嫌不够，非要百万客户端一起挤。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/JuiceData/p/23154107",
+    "published": "2026-09-30",
+    "uid": "dev_20a329ba"
+  },
+  {
+    "title": "开源跨端 UI 库 PixUI 开始支持 WebGPU",
+    "content": "作者开源的跨端 UI 库 PixUI 底层依赖 Skia 做像素级界面绘制，这次借着升级 Skia 版本的机会，发现 Graphite 后端已可用，于是率先在 Web 端用 WebGPU 来驱动界面渲染。文章对比了 Ganesh 与 Graphite 两代渲染路线，对关注跨端 UI 与 GPU 加速的开发者很有参考价值。",
+    "quote": "Skia 一换引擎，前端渲染又卷到 GPU 了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/BaiCai/p/23157942",
+    "published": "2026-09-30",
+    "uid": "dev_4c92dc78"
+  },
+  {
+    "title": "Java 无垃圾稳态设计：一次日志组件重构记",
+    "content": "作者在重构自己开源的统一日志组件时，拎出打印日志的两个关键：一是异步，别让写日志拖慢主流程、甚至卡在 IO 上；二是尽量减少垃圾——大量临时对象、字符串、字符数组正是 GC 压力的源头，在长时间稳态运行下尤其明显。这个思路对做高性能 Java 服务的开发者颇有启发。",
+    "quote": "日志组偷的懒，最后都让 GC 背了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/xiexj/p/23154843",
+    "published": "2026-09-30",
+    "uid": "dev_9bb393e1"
+  },
+  {
+    "title": "不买 Figma 会员，也能给 vibe coding 作品配上设计流程",
+    "content": "作者做页面常常先用 AI 生成一版能跑的，可一旦想探索几套不同界面方案并排比较，还是得进 Figma。于是他开源了 local-figma（Apache-2.0）：把已经跑起来的页面，还原成 Figma 里原生可编辑的设计稿。进去复制几个 variant 调布局、换配色，让 vibe coding 也能接上一套正经的设计流程。",
+    "quote": "白嫖 AI 写页面，再白嫖 Figma 改设计。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1245610",
+    "published": "2026-09-30",
+    "uid": "dev_5574f041"
+  },
+  {
+    "title": "开源反编译器 garlic 现在支持 dex/apk 了",
+    "content": "作者的 Java 反编译器 garlic 又进了一步：经过一个月开发，新增对 apk 和 dex 的支持（Manifest 与资源文件暂不解析，只反编译里面的字节码）。名字取自郭德纲相声「喝咖啡高雅、吃大蒜低俗」，配上 class 文件魔数 CAFEBABE，正好咖啡就大蒜。安卓逆向爱好者又多了一把免费刀。",
+    "quote": "咖啡就大蒜，Java 字节码的黑色幽默。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1142640",
+    "published": "2026-09-30",
+    "uid": "dev_a024b62d"
+  },
+  {
+    "title": "开源了个会自己进化的 App：一句话让 Mac 上的 Claude Code 改代码并上线",
+    "content": "作者开源了 Mojito（MIT）：在对话里说一句「把下一步放最上面、加粗」，跑在你本机 Mac 上的 Claude Code 就去改代码、构建、发布到手机/Mac/网页，改完还推一条通知告诉你动了什么。三个原则是薄代码、服务器只当 hub、能力跑在用户本地。对「云端 agent 是不是终点」这个疑问，他给了自己的答案。",
+    "quote": "提一句需求，App 自己改自己上线，离谱。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1245483",
+    "published": "2026-09-30",
+    "uid": "dev_36de2018"
+  },
+  {
+    "title": "在 Godot 里用上任意 C++ 库：Conan 方案",
+    "content": "Godot 官方的 GDExtension 让接入原生代码成为可能，但真到要引入第三方 C++ 库时，构建配置依旧折腾。这篇文章讲怎么用 Conan 包管理器把任意 C++ 库接进 Godot：依赖管理、CMake 集成、跨平台构建一并理顺，给游戏开发者一套可复用的工程路径。",
+    "quote": "游戏引擎的尽头，是把 C++ 全接进去。",
+    "source": "HN Front Page",
+    "url": "https://blog.conan.io/cpp/conan/gamedev/godot/cmake/2026/09/29/Using-Any-Cpp-Library-In-Godot.html",
+    "published": "2026-09-30",
+    "uid": "dev_c10f6c47"
+  }
+]
