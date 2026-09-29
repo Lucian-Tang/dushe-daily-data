@@ -1,0 +1,128 @@
+[
+  {
+    "title": "Show HN：Libyears，把依赖债量成「年」",
+    "content": "有人在 HN 上甩出 Libyears：把你维护的每个仓库里的依赖，按「落后上游多少年」来算，给出一个直观的依赖债指标。思路是把「依赖过期」这种抽象的焦虑，换算成一个能排名、能对比、能贴进周报的具体数字，一眼看出哪个项目正在慢性腐烂。对天天喊着要升级依赖却永远排不上优先级的人来说，这是一把量化借口的好尺子。",
+    "quote": "依赖债不量化，永远没人修。",
+    "source": "HN Show HN",
+    "url": "https://libyears.com/showcase",
+    "published": "2026-09-30",
+    "uid": "dev_a3c45f28"
+  },
+  {
+    "title": "Show HN：Squidbrake，给 AI Agent 的工具调用装个审批闸",
+    "content": "Squidbrake 是一个可自托管的审批网关，专给 AI Agent 的工具调用把关：agent 想执行某个动作，先过它这一关，该放行的放行、该拦下的拦下，把「自动执行」变成「人工在环」。对不敢让 agent 直连生产系统、又不想放弃自动化的团队来说，这种中间层给了个体面的安全边界。",
+    "quote": "让 agent 自己动手，出事谁负责？",
+    "source": "HN Show HN",
+    "url": "https://github.com/batrapulkit/squidbrake",
+    "published": "2026-09-30",
+    "uid": "dev_fea809d9"
+  },
+  {
+    "title": "Show HN：actui，在终端里管所有仓库的 GitHub Actions",
+    "content": "作者被跨组织、跨仓库的 GitHub Actions 折腾烦了，于是做了 actui：一个终端 TUI，把多个组织下所有仓库的 Actions 集中起来列出和管理，不用再在网页上一个个点进去。对还没上 monorepo、却被一堆 CI 配置淹没的团队来说，算是把「点鼠标」重新换回了「敲键盘」。",
+    "quote": "一个终端管完 CI，摸鱼又多了五分钟。",
+    "source": "HN Show HN",
+    "url": "https://github.com/shamilatesoglu/actui",
+    "published": "2026-09-30",
+    "uid": "dev_6a72a704"
+  },
+  {
+    "title": "Show HN：MoE Routing Atlas，看 Qwen 里哪些专家在「上班」",
+    "content": "作者把 Qwen3.5/3.6 35B-A3B 两个 MoE 模型的专家激活模式做了可视化：哪个 token 触发了哪些专家、路由熵有多高、专家在层与层之间的复用情况，全都画了出来。对想搞清 MoE 到底「稀疏」在哪、专家是真干活还是在挂机的人来说，这份 Atlas 相当于给黑盒开了个观察窗。",
+    "quote": "专家到底在干活还是挂机，终于看得见了。",
+    "source": "HN Show HN",
+    "url": "https://gslaller.github.io/moe_analysis.html",
+    "published": "2026-09-30",
+    "uid": "dev_34c34c27"
+  },
+  {
+    "title": "Show HN：这版扫雷，永远不需要靠猜",
+    "content": "作者受够了扫雷有时候逼你纯靠运气瞎点，于是做了个逻辑版扫雷：每一步都能靠推理确定，猜错也不惩罚，玩的就是解谜本身的爽感。看似只是小改动，却把一个经典游戏从「抽奖」拉回了「烧脑」，强迫症玩家看了直呼舒服。",
+    "quote": "扫雷靠猜，那还叫什么逻辑游戏。",
+    "source": "HN Show HN",
+    "url": "https://sodslaw.billpg.com/",
+    "published": "2026-09-30",
+    "uid": "dev_8f4a1e0c"
+  },
+  {
+    "title": "生产级 AI Agent 该怎么搭：.NET 版 Harness 实战",
+    "content": "这是《模型不是你的 Agent，Harness 才是》一文的实现篇：作者用 .NET 把「生产级 agent」从一句架构口号真正落成型。核心观点是 agent 的价值不在模型本身，而在包裹它的那一圈工具编排、状态管理、错误处理和可观测性。对正把 demo 往生产推的工程师来说，是一份少见的工程化拆解。",
+    "quote": "模型只是螺丝钉，Harness 才是整台机器。",
+    "source": "Dev.to",
+    "url": "https://dev.to/steve-kaschimer/building-the-harness-a-production-minded-ai-agent-architecture-in-net-3n64",
+    "published": "2026-09-30",
+    "uid": "dev_18d4fe6b"
+  },
+  {
+    "title": "别让下一次故障从零开始：构建故障记忆 Recall",
+    "content": "一次事故解决、看板转绿、写份小结、关单——然后大家各回各家。几周后另一个工程师撞上相似症状，又在旧工单里大海捞针。作者提出 Recall：把解决过程沉淀成可检索的记忆，让团队下次排障直接站在上一次的肩膀上，而不是每次重启一场人肉搜索。",
+    "quote": "同一个坑踩两次，那是团队失忆不是意外。",
+    "source": "Dev.to",
+    "url": "https://dev.to/karthik0757m/your-next-incident-shouldnt-start-from-zero-building-recall-1393",
+    "published": "2026-09-30",
+    "uid": "dev_b328b44b"
+  },
+  {
+    "title": "JuiceFS 企业版 5.4：从千亿文件到百万客户端",
+    "content": "继 v5.3 撑起千亿文件规模后，JuiceFS 企业版 5.4 继续冲超大规模：元数据分区部署后如何跨节点协调、性能与数据一致性怎么兼顾、单次操作的细小开销如何累积成资源负担，都被逐项优化，目标直指百万客户端同时接入。对做分布式文件存储的人来说，是一份难得的规模一线实战记录。",
+    "quote": "千亿文件还嫌不够，非要百万客户端一起挤。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/JuiceData/p/23154107",
+    "published": "2026-09-30",
+    "uid": "dev_2628a6af"
+  },
+  {
+    "title": "开源跨端 UI 库 PixUI 开始支持 WebGPU",
+    "content": "作者开源的跨端 UI 库 PixUI 底层依赖 Skia 做像素级界面绘制，这次借着升级 Skia 版本的机会，发现 Graphite 后端已可用，于是率先在 Web 端用 WebGPU 来驱动界面渲染。文章对比了 Ganesh 与 Graphite 两代渲染路线，对关注跨端 UI 与 GPU 加速的开发者很有参考价值。",
+    "quote": "Skia 一换引擎，前端渲染又卷到 GPU 了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/BaiCai/p/23157942",
+    "published": "2026-09-30",
+    "uid": "dev_27fe0080"
+  },
+  {
+    "title": "Java 无垃圾稳态设计：一次日志组件重构记",
+    "content": "作者在重构自己开源的统一日志组件时，拎出打印日志的两个关键：一是异步，别让写日志拖慢主流程、甚至卡在 IO 上；二是尽量减少垃圾——大量临时对象、字符串、字符数组正是 GC 压力的源头，在长时间稳态运行下尤其明显。这个思路对做高性能 Java 服务的开发者颇有启发。",
+    "quote": "日志组偷的懒，最后都让 GC 背了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/xiexj/p/23154843",
+    "published": "2026-09-30",
+    "uid": "dev_a4f4f3d9"
+  },
+  {
+    "title": "不买 Figma 会员，也能给 vibe coding 作品配上设计流程",
+    "content": "作者做页面常常先用 AI 生成一版能跑的，可一旦想探索几套不同界面方案并排比较，还是得进 Figma。于是他开源了 local-figma（Apache-2.0）：把已经跑起来的页面，还原成 Figma 里原生可编辑的设计稿。进去复制几个 variant 调布局、换配色，让 vibe coding 也能接上一套正经的设计流程。",
+    "quote": "白嫖 AI 写页面，再白嫖 Figma 改设计。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1245610",
+    "published": "2026-09-30",
+    "uid": "dev_817f586e"
+  },
+  {
+    "title": "开源反编译器 garlic 现在支持 dex/apk 了",
+    "content": "作者的 Java 反编译器 garlic 又进了一步：经过一个月开发，新增对 apk 和 dex 的支持（Manifest 与资源文件暂不解析，只反编译里面的字节码）。名字取自郭德纲相声「喝咖啡高雅、吃大蒜低俗」，配上 class 文件魔数 CAFEBABE，正好咖啡就大蒜。安卓逆向爱好者又多了一把免费刀。",
+    "quote": "咖啡就大蒜，Java 字节码的黑色幽默。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1142640",
+    "published": "2026-09-30",
+    "uid": "dev_ed3799a4"
+  },
+  {
+    "title": "开源了个会自己进化的 App：一句话让 Mac 上的 Claude Code 改代码并上线",
+    "content": "作者开源了 Mojito（MIT）：在对话里说一句「把下一步放最上面、加粗」，跑在你本机 Mac 上的 Claude Code 就去改代码、构建、发布到手机/Mac/网页，改完还推一条通知告诉你动了什么。三个原则是薄代码、服务器只当 hub、能力跑在用户本地。对「云端 agent 是不是终点」这个疑问，他给了自己的答案。",
+    "quote": "提一句需求，App 自己改自己上线，离谱。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1245483",
+    "published": "2026-09-30",
+    "uid": "dev_8dc1df24"
+  },
+  {
+    "title": "在 Godot 里用上任意 C++ 库：Conan 方案",
+    "content": "Godot 官方的 GDExtension 让接入原生代码成为可能，但真到要引入第三方 C++ 库时，构建配置依旧折腾。这篇文章讲怎么用 Conan 包管理器把任意 C++ 库接进 Godot：依赖管理、CMake 集成、跨平台构建一并理顺，给游戏开发者一套可复用的工程路径。",
+    "quote": "游戏引擎的尽头，是把 C++ 全接进去。",
+    "source": "HN Front Page",
+    "url": "https://blog.conan.io/cpp/conan/gamedev/godot/cmake/2026/09/29/Using-Any-Cpp-Library-In-Godot.html",
+    "published": "2026-09-30",
+    "uid": "dev_c9536629"
+  }
+]
