@@ -1,0 +1,128 @@
+[
+  {
+    "title": "Backblaze 公布 2026 Q2 硬盘故障统计",
+    "content": "云存储厂商 Backblaze 发布 2026 年第二季度硬盘可靠性报告，基于其数据中心数十万块盘的真实运行数据统计年化故障率（AFR）。报告按厂商、型号、容量细分，指出个别大容量型号仍显著高于平均，也再次印证：同型号不同批次差异远大于品牌差异，采购时按具体型号看数据，比迷信牌子更靠谱。",
+    "quote": "硬盘的嘴，骗人的鬼，只有故障率不说谎。",
+    "source": "HN Front Page",
+    "url": "https://www.backblaze.com/blog/backblaze-drive-stats-for-q2-2026/",
+    "published": "2026-10-01",
+    "uid": "dev_5edf1059"
+  },
+  {
+    "title": "GPU 文字渲染的三条路线：SDF、MSDF 与 Slug",
+    "content": "作者系统对比了 GPU 上渲染文字的主流方案：位图图集、SDF（有向距离场）、MSDF（多通道距离场）以及 Slug 算法，给出各自在放大清晰度、抗锯齿、内存占用与实现复杂度上的取舍，并配可交互示例。结论是 MSDF 仍是动态大字号场景的性价比之选，而 Slug 更适合追求极致字形的场景。",
+    "quote": "屏幕上的每个字，背后都是一场数学战争。",
+    "source": "HN Front Page",
+    "url": "https://alphapixeldev.com/sdf-vs-msdf-vs-slug-vs-rive-gpu-text-rendering/",
+    "published": "2026-10-01",
+    "uid": "dev_89df6127"
+  },
+  {
+    "title": "实时太阳系沙盒：52.6 万颗小行星 + 全部在轨卫星",
+    "content": "作者在 Hacker News 放出 space.bl2.net：一个在浏览器里实时运行的太阳系可视化。场景包含约 52.6 万颗小行星、已追踪的全部在轨卫星，以及各行星与探测器，全部按真实轨道数据驱动、实时演算。没有依赖重型引擎，靠 WebGL 与数据分块把这么大的天体数量压进单页，观感相当震撼。",
+    "quote": "把半个太阳系塞进浏览器，风扇先转起来。",
+    "source": "HN Front Page",
+    "url": "https://space.bl2.net/",
+    "published": "2026-10-01",
+    "uid": "dev_2065acfb"
+  },
+  {
+    "title": "想算个 1+1，他顺手写了门函数式语言",
+    "content": "作者本想验证一个简单算术，却发现现有工具都不顺手，于是干脆从词法、语法到解释器，自己实现了一门函数式编程语言，并把整个过程写成博文。文章讲清解析、求值、闭包与惰性求值等核心概念如何落地，也自带自嘲：为验证一个 1+1 造一门语言，是典型的工程师式跑偏。",
+    "quote": "想算个 1+1，结果给自己造了门语言。",
+    "source": "HN Front Page",
+    "url": "https://hereticpleb.vercel.app/blog/needed-one-plus-one/",
+    "published": "2026-10-01",
+    "uid": "dev_a2cfc65e"
+  },
+  {
+    "title": "NVIDIA 开源 OpenShell：给自主 Agent 的安全运行沙箱",
+    "content": "NVIDIA 开源的 OpenShell，定位是面向自主 AI Agent 的「安全、私密运行时」，用 Rust 编写，已获近 1.2 万星。它把 Agent 的代码执行与工具调用关进可管控的沙箱里，强调隔离、权限收束与可审计，试图解决 Agent 一旦能自主跑命令就难以约束的根本痛点，是当前 Agent 安全方向的热门基建。",
+    "quote": "让 Agent 自由发挥之前，先给它装个笼子。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/NVIDIA/OpenShell",
+    "published": "2026-10-01",
+    "uid": "dev_b55d8633"
+  },
+  {
+    "title": "MoneyPrinterTurbo：一键生成高清短视频的开源项目",
+    "content": "MoneyPrinterTurbo 是一个自动化短视频生成工具：输入一个主题或关键词，它便能调用大模型完成文案、素材、配音、字幕与合成，一键产出高清竖屏短视频。项目用 Python 实现、星标超 12.7 万，长期盘踞 GitHub 热榜，被视为内容批量生产与自媒体自动化赛道上最省事的开源方案之一。",
+    "quote": "关键词进去，短视频出来，流量焦虑也一起来。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+    "published": "2026-10-01",
+    "uid": "dev_8441b122"
+  },
+  {
+    "title": "awesome-claude-skills：Claude 技能资源的精选清单",
+    "content": "ComposioHQ 整理的 awesome-claude-skills，是一份精心筛选的 Claude Skills 资源合集，收录技能、工具与定制 Claude 工作流的实践。随着 Skills 成为给 AI 助手扩展能力的主流方式，这份清单帮开发者跳过「自己现搓、网上乱找」的阶段，直接参考社区沉淀的实用技能与用法，星标已超 7.6 万。",
+    "quote": "技能不用自己搓，先抄别人搓好的。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "published": "2026-10-01",
+    "uid": "dev_f61a34fc"
+  },
+  {
+    "title": "你也许根本不需要向量数据库",
+    "content": "作者指出，完整 RAG 管线要拼上分块器、嵌入模型、向量库、检索器、重排器和评估工具，零件多、隐性成本高。他主张在相当多场景下，关键词检索、缓存增强甚至全量塞进长上下文就能达到可用效果，盲目上向量数据库只是徒增运维复杂度，并给出判断该不该上向量库的几条经验法则。",
+    "quote": "还没搞清需求，先把向量库搭上了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/feezan_khattak/you-might-not-need-a-vector-database-3pof",
+    "published": "2026-10-01",
+    "uid": "dev_cf606e71"
+  },
+  {
+    "title": "Kilo Code：自带 API Key 的开源 AI 编码 Agent",
+    "content": "Kilo Code 是一款 2026 年推出的开源 AI 编码 Agent，覆盖 VS Code、JetBrains、CLI 与云端。它最大的卖点是「自带密钥」（BYOK）：你可以接自己的模型 API，不被厂商绑死，也没有强制订阅。文章介绍其安装、核心能力与相对同类工具的取舍，并解释它为何在开发者中悄悄积累起口碑。",
+    "quote": "不绑厂商不自带账单，这才是开发者要的 Agent。",
+    "source": "Dev.to",
+    "url": "https://dev.to/unfiltered_anshul/kilo-code-the-open-source-ai-coding-agent-that-actually-lets-you-bring-your-own-keys-5c0f",
+    "published": "2026-10-01",
+    "uid": "dev_576f5d1c"
+  },
+  {
+    "title": "Citrix NetScaler 高危漏洞：SAML 解析溢出变预认证 RCE",
+    "content": "文章复盘 CVE-2026-8452：Citrix NetScaler 在处理 SAML 断言时存在解析溢出，原本只是拒绝服务，却被研究者构造成无需登录即可远程执行代码（预认证 RCE）。作者逐步拆解从内存越界到控制流劫持的利用链，并强调这类网关设备处在边界位置，一旦被拿下等于门户洞开，补丁必须尽快打。",
+    "quote": "网关一破，后面的安全策略全成了摆设。",
+    "source": "Dev.to",
+    "url": "https://dev.to/onaeiuspkz/cve-2026-8452-in-citrix-netscaler-how-a-saml-parsing-overflow-became-pre-auth-code-execution-3ao9",
+    "published": "2026-10-01",
+    "uid": "dev_ca540420"
+  },
+  {
+    "title": "Java 老手转 Go：12 小时里 10 小时在配环境",
+    "content": "一位资深 Java 开发者分享转 Go 的实战经历：本想靠搜文档和 AI 快速上手，结果 12 小时里 10 小时都耗在环境问题上——依赖、代理、版本与工具链的坑远超预期。作者感慨「面向对象语法不用学」这种想法过于乐观，真正卡人的往往不是语言本身，而是生态与工程环境的琐碎细节。",
+    "quote": "语言两小时学会，环境配了十小时。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/xiexj/p/23173554",
+    "published": "2026-10-01",
+    "uid": "dev_3d155226"
+  },
+  {
+    "title": "Koog：JVM 生态里的 Kotlin Agent 框架",
+    "content": "当下 Agent 框架多为 Python 与 TypeScript，Kotlin 阵营相对空白。本文是该系列第一篇，介绍 JVM 下的 Agent 框架 Koog：如何用 Kotlin 定义工具、编排多步推理与状态流转，并借助 JVM 成熟的并发与工程能力落地生产。作者认为，AI 时代的 Agent 不该只剩脚本语言一种选择。",
+    "quote": "Agent 界一水 Python，JVM 表示也想上桌。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/joy99/p/23170548",
+    "published": "2026-10-01",
+    "uid": "dev_18e0fa72"
+  },
+  {
+    "title": "原生 macOS 工具 FileMint：想替掉「超级右键」",
+    "content": "作者嫌「超级右键」这类 Finder 增强工具越更新越臃肿、还要单独付费，于是自写了一个原生 macOS 工具 FileMint。它在桌面或文件夹空白处右键即可新建 Markdown、JSON、Swift 等文件，主打轻量与纯粹，目标是把常用文件操作直接放回 Finder，从日常使用角度替代同类付费软件。",
+    "quote": "别人的右键越做越花，我就要它闭嘴干活。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1243302",
+    "published": "2026-10-01",
+    "uid": "dev_826e73df"
+  },
+  {
+    "title": "Archify 3.0：一句话把项目变成交互图，Token 省一半",
+    "content": "作者发布 Archify 3.0，项目已破 7.4 万 Star、5000 多 Fork。它能把一个项目「一句话」转成交互式架构图，作者自测在同等项目上 Token 消耗下降 50% 以上、速度提升 50% 以上。相比前版，3.0 强化了生成质量与交互，也让 AI 理解大型代码库更省上下文，是近期开发者工具里的热门项目。",
+    "quote": "图一画，Token 就省了，AI 也终于看懂项目了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1245859",
+    "published": "2026-10-01",
+    "uid": "dev_07de8a18"
+  }
+]

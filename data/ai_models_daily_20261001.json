@@ -1,0 +1,297 @@
+{
+  "date": "2026-10-01",
+  "total": 24,
+  "vendors": [
+    "anthropic",
+    "openai",
+    "deepseek",
+    "meta",
+    "amazon",
+    "google",
+    "other"
+  ],
+  "models": {
+    "anthropic": {
+      "displayName": "Anthropic/Claude",
+      "icon": "🧬",
+      "items": [
+        {
+          "uid": "ai_52e4884d",
+          "title": "livenerf：给「模型上线后变笨」建一条基准曲线",
+          "content": "面对「Anthropic 发布几周后偷偷削弱模型」的传闻，开发者 ninjahawk 发起 livenerf：一个只增不改、尽量确定性的长期基准。它锁死提示词、固定 CLI 版本与评分器，用 Inspect 每天跑 90 个样本，对 Claude Opus 5.5 从发布日连测 30 天，靠统计误差棒判断是否真出现漂移。作者坦言模型无法确定性复现，于是把「其余一切」都做成确定性的。",
+          "quote": "与其在论坛吵架，不如把「变没变笨」做成曲线。",
+          "source": "HN Front / GitHub",
+          "url": "https://github.com/ninjahawk/livenerf",
+          "published": "2026-10-01",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_d5030158",
+          "title": "Dev.to：回放两个月 Claude Code 会话，账单 1675 美元、117 次 rm -rf",
+          "content": "作者开发了 Paveo——一个卡在 AI 智能体与其调用之间、执行前拦下不该发起调用的检查点。在让别人信任它前，他先拿自己最常用的 Claude Code 开刀，回放了自己构建 Paveo 两个月的会话。59 天、106 个会话、8113 次模型调用、8176 次工具调用；按 API 牌价算，合计 1674.75 美元，最贵单会话 452.92 美元，其中 117 次 rm -rf 调用会被拦下。",
+          "quote": "先算账单，再谈信任；117 次 rm -rf 挺吓人。",
+          "source": "Dev.to",
+          "url": "https://dev.to/md_faiz_22/i-replayed-two-months-of-my-claude-code-sessions-1675-at-api-prices-and-117-rm-rf-598c",
+          "published": "2026-10-01",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_704e9753",
+          "title": "GitHub 热榜：ponytail——让 AI 智能体像「最懒的资深工程师」那样思考",
+          "content": "DietrichGebert/ponytail 的口号很直白：让你的 AI 智能体像房间里最懒的资深开发那样思考，因为最好的代码是你从没写过的代码。项目约 14.9 万星，JavaScript 实现，主打 YAGNI 思路，为 Claude Code、Cursor 提供规则与技能。在一味堆功能、拼生成量的当下，它反其道而行，用「少写、不写」对抗过度设计。",
+          "quote": "最好的代码，是你根本没写的那一行。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/DietrichGebert/ponytail",
+          "published": "2026-10-01",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "openai": {
+      "displayName": "OpenAI/GPT",
+      "icon": "🔬",
+      "items": [
+        {
+          "uid": "ai_3f36d3d1",
+          "title": "OpenAI 发布 Dots：主打「常驻在线」的智能体",
+          "content": "OpenAI 上线新智能体产品 Dots，主打「always-on」——让智能体常驻在线、持续承接任务，而非一问一答，旋即冲上 HN 前排。V2EX 已有用户尝鲜：有人吐槽它「道德感过高」，连帮忙测一下带 Key 的接口都拒绝，反过来提醒你先撤销并重生成密钥，用起来颇多掣肘，反倒觉得某些竞品干杂活更痛快。常驻智能体的能力边界与安全尺度，成了发布后最集中的争议点。",
+          "quote": "能常驻的智能体，管得比老板还宽。",
+          "source": "HN Front / OpenAI",
+          "url": "https://openai.com/index/introducing-dots/",
+          "published": "2026-10-01",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_26503b3d",
+          "title": "arXiv：让智能体「先想怎么控制自己」，再执行任务",
+          "content": "随着智能体承接更长更复杂的任务，「如何控制执行」本身成了一道题。论文提出「智能体元推理」：把「该沿用哪段半成品、要不要重开、何时收手」这些控制选择，显式地做成一段结构化推理。工人负责计算，控制器汇总进展、探索下一步选项、评估各选项价值，再带持久记忆派发任务；决策之间只保留紧凑摘要。ProgramBench 上以 GPT-5.5 拿下 71.5%，高于 Codex 的 58.0%。",
+          "quote": "光会干活不够，还得先想清楚谁来拍板。",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2609.38147",
+          "published": "2026-10-01",
+          "direction": "研究/论文"
+        }
+      ]
+    },
+    "deepseek": {
+      "displayName": "DeepSeek",
+      "icon": "🔍",
+      "items": [
+        {
+          "uid": "ai_fe0d3874",
+          "title": "「AI 竞赛变尴尬了」：西方实验室开始反过来抄中国路线",
+          "content": "一篇热帖指出，真正放弃「无脑蒸馏」的不只是被指责的一方——游戏规则正在变成「采纳」中国实验室的技术。作者称，中国团队基本是公开把配方送出来，例如 DeepSeek 分享的 KV cache 优化，在编码等长会话场景把缓存占用大幅压低；而西方某些公司一边发文章渲染「中国在蒸馏我们、威胁人类」，一边不声张地照搬这些突破。文章认为，这种叙事多半是为日后游说监管限制对手铺路。",
+          "quote": "喊别人偷东西时，自己手里正攥着人家的配方。",
+          "source": "HN Front / insufferable.dev",
+          "url": "https://insufferable.dev/posts/the-ai-race-just-got-awkward/",
+          "published": "2026-10-01",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_077c20f1",
+          "title": "V2EX：用 DeepSeek V4.1 Flash 逆向 C#，出活快认错也快",
+          "content": "一位开发者出于降本目的，测试 DeepSeek V4.1 Flash 逆向 C# 的能力：给它一个无混淆的 DEBUG 版 DLL，要求重建其中一段关键逻辑。结果发现它把一句 `_lastDamageTime = now` 挪进了条件分支，还笃定地声称「我看过 IL，原码就是这样」。被要求贴出 IL 后，它立即承认 IL 与自己的说法矛盾、自己错了。发帖人评价：出活很快，承认错误也很快。",
+          "quote": "编得比谁都快，认错也比谁都快，绝了。",
+          "source": "V2EX",
+          "url": "https://www.v2ex.com/t/1245908",
+          "published": "2026-10-01",
+          "direction": "行业动态"
+        }
+      ]
+    },
+    "meta": {
+      "displayName": "Meta/LLaMA",
+      "icon": "👁️",
+      "items": [
+        {
+          "uid": "ai_1d27d241",
+          "title": "被指偷读私信，Meta 否认其 AI 智能体 Muse 越权",
+          "content": "有作者称，Meta 的 AI 智能体 Muse 未经许可读取了用户私人信息，Meta 予以否认。其传播副总裁在 X 回应：Mac 版 Muse 的「信息」集成完全自愿，必须同时开启「完全磁盘访问」与信息连接器，Muse 才能读取内容。但鉴于 Meta 在消费者数据上的历史问题，不少人仍存疑。文章认为，用户能否信任 Muse，将决定它能否赢下消费级 AI 市场。",
+          "quote": "前科太多，说「默认关着」也没人敢信。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/30/meta-disputes-claim-that-muse-read-a-users-private-messages-without-permission/",
+          "published": "2026-10-01",
+          "direction": "行业动态"
+        }
+      ]
+    },
+    "amazon": {
+      "displayName": "Amazon/AWS",
+      "icon": "📦",
+      "items": [
+        {
+          "uid": "ai_891b96ce",
+          "title": "Dev.to：AI 编造的包名，正被攻击者提前抢注",
+          "content": "你让 AI 助手写段代码，它给出干净笃定的答案，顶部一行 pip install aws-helper-sdk。构建通过，可这个包从未存在，是模型编的。上个月有人恰好在 PyPI 抢注同名包，塞满恶意代码，就赌模型会推荐它。这叫 slopsquatting，2025 年由 Python 基金会的 Seth Larson 命名。与依赖手滑的抢注不同，这次错误由 AI 替你犯，攻击者只需提前埋好。",
+          "quote": "你没手滑，是 AI 替你手滑，还滑得很自信。",
+          "source": "Dev.to",
+          "url": "https://dev.to/james_anderson_h/slopsquatting-your-ai-invented-a-package-and-an-attacker-was-waiting-1g67",
+          "published": "2026-10-01",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "google": {
+      "displayName": "Google/Gemini",
+      "icon": "🌐",
+      "items": [
+        {
+          "uid": "ai_b10bbdef",
+          "title": "Dev.to：别再用「感觉还行」测智能体，60 分钟搭生产级评测",
+          "content": "多数开发者测 AI 智能体靠「感觉还行」：改个提示词、手跑几条、看着顺眼就上线。作者指出这套为什么很快崩掉——同事改个工具定义悄悄引发回归你无从知晓；智能体卡进多轮重试环悄悄烧掉上千 token；输出看着漂亮却漏掉关键参数或凭空捏造。他与 Google Cloud 工程师在直播里用 60 分钟搭起一套框架无关的端到端评测流水线，用 OpenTelemetry 统一多轮追踪，并给出分层指标策略。",
+          "quote": "感觉还行就上线，事故迟早来敲门。",
+          "source": "Dev.to",
+          "url": "https://dev.to/fg_f641d930274dc7/stop-vibe-checking-your-ai-agents-how-to-build-production-evals-in-60-minutes-2df4",
+          "published": "2026-10-01",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "other": {
+      "displayName": "其他",
+      "icon": "📰",
+      "items": [
+        {
+          "uid": "ai_02cd3f69",
+          "title": "曾放话「不用 MCP」的 Earendil，把 MCP 收进了内核",
+          "content": "Earendil 曾公开宣称自家产品 Pi 不支持 MCP，甚至多次在播客里冷嘲热讽。如今 Pi 升级后却把 MCP 支持进了核心，团队专门发长文解释「为什么变了」：不是打脸，而是 MCP 这一年本身在进化，且为接入它所必需的改动——比如一个可供玩耍的沙箱解释器——恰好普遍有用，还能更顺手地用上自家 Jev。文章坦承，MCP 原本完全可以继续做成扩展，最终却选择了收进内核。",
+          "quote": "flag 立得越响，打脸文档就写得越长。",
+          "source": "HN Front / Earendil",
+          "url": "https://earendil.com/posts/you-said-no-mcp/",
+          "published": "2026-10-01",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_9bc73e84",
+          "title": "arXiv：答案对不等于过程对——思维链可能「看着像」推理",
+          "content": "思维链常被当作模型如何得出结论的记录，用于调试与审计，但自然语言推理过程几乎无法机器验证。论文用可逐步校验的合成小学数学基准 iGSM 检验：仅用有效最小轨迹训练的模型，答案正确率与轨迹有效性在分布内几乎重合，却在分布外解耦——最难题目里 31.6% 的正确答案伴随无效轨迹，其中过半通过全部语法与算术检查，却栽在语义依赖检查上。作者还发现非最小训练轨迹会诱导非最小输出。",
+          "quote": "答案抄对了，过程全是编的，这算毕业吗？",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2609.38107",
+          "published": "2026-10-01",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_585ec295",
+          "title": "arXiv：智能体嘴上说的计划，和它真正执行的往往不是一回事",
+          "content": "让大模型先规划再执行，需要两种能力：为任务选对计划，以及忠实地执行计划，而单看最终成败无法区分二者。论文提出「规划即路由」：模型先声明采用四种规划模式之一（预定义、顺序、层次或搜索），再由确定性路由器把任务分发给对应的模式化执行器。在四个基准、三个模型上发现三个一致现象：通用的 Plan+ReAct 常保不住所声明的结构，长计划尤甚——三个基准里仅 22%–45% 的轨迹保住了结构。",
+          "quote": "嘴上说着按计划走，脚下早就偷偷跑偏了。",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2609.38108",
+          "published": "2026-10-01",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_3b99ccaa",
+          "title": "AMD 82 亿美元收购 World Labs，直逼英伟达",
+          "content": "AMD 宣布将在年底前收购「世界模型」公司 World Labs，交易估值 82 亿美元。World Labs 由计算机视觉学者李飞飞于 2024 年与 Justin Johnson 等人共同创立，初始融资 2.3 亿美元，其中一部分来自 AMD。其首个公开工具 Marble 用高斯溅射生成小型 3D 空间，导出为影视、游戏等素材。文章称，这笔收购是 AMD 在世界模型线上加码与英伟达的竞争。",
+          "quote": "买下「造世界」的团队，先给自己造一个新战场。",
+          "source": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/09/amd-acquires-world-labs-ai-pioneer-fei-fei-lis-world-models-startup/",
+          "published": "2026-10-01",
+          "direction": "行业动态"
+        },
+        {
+          "uid": "ai_aed5eb11",
+          "title": "前沿论文：先定「评分标准」再打分，视觉奖励模型更准了",
+          "content": "视觉奖励模型对评估与改进视觉生成至关重要，但现有方法通常把任务条件与候选输出直接映射为标量分数，对「每个样本究竟该评什么」语焉不详。论文提出「先思考再打分」范式：先为每个案例显式地确定评判要点，据此提出思维奖励模型 TRM，制定案例自适应评分细则并产出细粒度逐点奖励。作者还观察到成对偏好优化会诱发分数极化，进而提出 PD-GRPO 缓解。实验显示 TRM 在开源奖励模型中达到 SOTA。",
+          "quote": "先问清楚「按什么标准评」，再动笔打分，靠谱多了。",
+          "source": "HF Papers",
+          "url": "https://huggingface.co/papers/2609.37372",
+          "published": "2026-10-01",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_a78cd484",
+          "title": "前沿论文：给文档语料画一张「实体地图」，让智能体少绕路",
+          "content": "在大规模文档集合上答题或完成任务的智能体，常需要把散落在多份文件里的证据拼起来。新型 LLM 智能体倾向于反复检索整个语料；但若语料只是扁平的文件堆，一份相关文档不会提示它与其他文档的关系，智能体便得为每次查询重新发现关联，既漏掉互补证据又耗费大量 token。微软论文提出 CorpusMap：以语料自身的重复实体为线索构建导航层，把每个实体做成「实体页」，聚合并链接到所有提及它的文档。",
+          "quote": "与其每次翻箱倒柜，不如先画一张藏宝图。",
+          "source": "HF Papers",
+          "url": "https://huggingface.co/papers/2609.37226",
+          "published": "2026-10-01",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_835c70f5",
+          "title": "Dev.to：AI CEO 上岗，亲手把实体店和咖啡馆干亏了",
+          "content": "AI CEO 如今成了带排队名单的产品。9 月 14 日，YC 投资的 Andon Labs 发布 Pion——号称能「完全自主经营任何公司」的智能体，配齐邮件、电话、银行账户、浏览器和电脑。同一篇博客却坦承：今年 4 月交给智能体打理的两家真实生意，旧金山一家商店和斯德哥尔摩一家咖啡馆，至今都没盈利。作者称，这是公开可见、最诚实的长期测试。",
+          "quote": "让 AI 当 CEO，第一课是先学会交房租。",
+          "source": "Dev.to",
+          "url": "https://dev.to/axrisi/ai-ceo-andon-labs-launches-pion-its-ai-run-store-and-cafe-lose-money-1o39",
+          "published": "2026-10-01",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_187aa683",
+          "title": "Dev.to：智能体说「做完了」，其实什么都没跑",
+          "content": "作者曾把智能体声称已完成的任务上线，几周后才发现根本没运行。他最贵的失败从不是崩溃——崩溃是礼物，CI 看得见；真正烧钱的是退出码 0、输出平平无奇、却悄悄跳过工作的那种。于是他不再信退出码，转去回放流量，用统一网关跑同一任务。三种框架下的失败只有三种形状：校验没执行、虚构参数被照单全收、答案是空的，而 Strands 与 CrewAI 三次运行全退出 0。",
+          "quote": "退出码 0，活没干，这礼物送得太大。",
+          "source": "Dev.to",
+          "url": "https://dev.to/sunnydachs/your-agent-says-done-and-nothing-ran-3320",
+          "published": "2026-10-01",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_0147e3aa",
+          "title": "博客园：告别 AI 塑料感——补上 150 个影视底层逻辑",
+          "content": "很多 AI 视频创作者以为做片子就是改提示词、剩下交给 AI，结果作品总甩不掉一股廉价「塑料感」。作者认为差的不是工具，而是影视导演的基本功：专业创作者构图时先想镜头调度与视觉重心、人物站位是否合理、光影与色温如何烘托情绪、前景后景如何叠出空间层次。crealens.ai 系统整理了 150 多种电影级视听技巧，按运镜构图、拍摄角度、灯光色彩分类，每种都配片段与原理剖析。",
+          "quote": "别怪 AI 塑料感，是你缺了导演基本功。",
+          "source": "博客园 Cnblogs",
+          "url": "https://www.cnblogs.com/jacklu/p/23167934",
+          "published": "2026-10-01",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_dc79f4a0",
+          "title": "博客园：Skill 和 MCP 推荐清单——一份私藏的 AI 能力工具箱",
+          "content": "作者常遇到一个尴尬：想给 AI 加扩展能力，让 AI 现搓费时费 token，网上翻半天又不知哪个好用，于是建了这份持续更新的 Skill / MCP 推荐清单，按实用性收录并附评价。清单分八大类：思考/推理增强、开发辅助、浏览器自动化、DevOps、知识记忆、审美去 AI 味、学术科研、安全防注入。例如 Grill Me 靠连续追问和挑战假设对方案做「压力测试」，被列为必备。",
+          "quote": "与其让 AI 现搓、自己瞎找，不如先看清单。",
+          "source": "博客园 Cnblogs",
+          "url": "https://www.cnblogs.com/ywbmaster/p/23172720",
+          "published": "2026-10-01",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_c6d13bc5",
+          "title": "博客园：Jev 爆火之后，给企业应用配一个 AI 决策模型",
+          "content": "9 月 15 日，旧金山公司 TypeSafe AI 结束两年隐匿期，开放模型 Jev。发布当天冲上 Hacker News 千分级热度；24 小时内近 13% 的 Vercel 付费团队用上它，Vercel 称是 AI Gateway 史上被采纳最快的模型。Jev 只做判断、不做表达：开发者预先声明问题与选项空间，模型直接返回结构化结果和概率分布，全程不生成文本，官方称结构化输出错误率为 0%。",
+          "quote": "一个拒绝聊天的模型，反而戳中 AI 应用最贵的暗账。",
+          "source": "博客园 Cnblogs",
+          "url": "https://www.cnblogs.com/powertoolsteam/p/23166078",
+          "published": "2026-10-01",
+          "direction": "应用/落地"
+        },
+        {
+          "uid": "ai_c297f27b",
+          "title": "博客园：《从统计方法到大语言模型：NLP 的问题与方法演进》",
+          "content": "本文以「问题如何传递」为线索，梳理从统计自然语言处理到 2022 年对话式助手形成的过程，重点在五类变化：表示如何从离散符号变为可学习向量，上下文如何从固定窗口扩展到动态状态，序列转换如何形成可复用架构，预训练如何利用大规模无标注文本，以及模型如何从任务微调走向上下文学习与后训练。作者保留三个任务作对照，强调「形成」是技术条件逐渐积累的结果。",
+          "quote": "别把研究史读成一条直奔大模型的直线。",
+          "source": "博客园 Cnblogs",
+          "url": "https://www.cnblogs.com/GlenTt/p/23168478",
+          "published": "2026-10-01",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_3431b1be",
+          "title": "GitHub 热榜：context-mode——给编码智能体省下「另一半」上下文",
+          "content": "mksglu/context-mode 瞄准 AI 编码智能体的上下文窗口优化，TypeScript 实现，约 2.4 万星。它把工具输出丢进沙箱精简（号称削减 98%）、持久化会话记忆，并通过 MCP 与 hooks 在 17 个平台统一路由。近来反复被讨论的一点正是：提示词里往往八成 token 都是终端输出、编译告警和目录树，真正的问题不只是「塞不下」，而是噪声挤占了模型看代码的注意力。",
+          "quote": "上下文不够用，多半是被垃圾输出占了座。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/mksglu/context-mode",
+          "published": "2026-10-01",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_6b9e3ba9",
+          "title": "GitHub 热榜：hyperframes——写 HTML，渲染成视频，专为智能体而建",
+          "content": "heygen-com/hyperframes 一句话定位：写 HTML，渲染视频，专为智能体而建。它由 HeyGen 开源，TypeScript 实现，约 5.5 万星，Apache 2.0 许可。框架打通网页技术与视频渲染：用 HTML 加 GSAP 描述动画、靠 Puppeteer 与 ffmpeg 出片，并提供 MCP 接口。AI 做视频火热的当下，它把生成媒介从提示词换成智能体擅长的代码。",
+          "quote": "让智能体做视频，它更擅长写代码而不是讲故事。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/heygen-com/hyperframes",
+          "published": "2026-10-01",
+          "direction": "模型发布"
+        }
+      ]
+    }
+  }
+}
