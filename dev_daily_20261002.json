@@ -1,0 +1,227 @@
+[
+  {
+    "title": "turbopuffer 宣布「向量数据库已死」，转向通用搜索引擎",
+    "content": "turbopuffer 发布长文宣布重写存储引擎「v3」：过去一切都围绕 ANN 向量索引搭建，如今要把向量检索降级为「二级索引」，主索引换成更通用的结构，以支撑更多查询计划与更大规模。文章回顾了从 v1 的「一个 ID 加一个向量」、SPANN 到 SPFresh 的演进，坦言纯向量库那波红利已经过去，接下来比拼的是通用检索能力，而非把 ANN 做到极致。",
+    "quote": "向量数据库这名字，最先被自家的博客悼念了。",
+    "source": "HN Front Page",
+    "url": "https://turbopuffer.com/blog/rip-vector-database",
+    "published": "2026-10-02",
+    "uid": "dev_3540e977"
+  },
+  {
+    "title": "Rust 编译器九月提速实录：两个月平均快了 4.57%",
+    "content": "性能专家 Nicholas Nethercote 发布 Rust 编译器 9 月进展：7 月底到 9 月底的 629 项基准里，555 项变快、仅 74 项变慢，平均墙钟时间下降 4.57%，被戏称为「一片绿」。亮点包括为 Clippy 开启 PGO（最好一档提速 18%）、升级到 LLVM 23 仅一个 PR 就带来 1.2% 提升，以及 rustdoc 的一系列优化。",
+    "quote": "编译器每快一点，程序员就多摸一分钟鱼。",
+    "source": "HN Front Page",
+    "url": "https://nnethercote.github.io/2026/09/30/how-to-speed-up-the-rust-compiler-in-september-2026.html",
+    "published": "2026-10-02",
+    "uid": "dev_081ffa3d"
+  },
+  {
+    "title": "Cloudflare 发布 K2：基于对象存储的无服务器事件流",
+    "content": "Cloudflare 推出公测产品 K2，把事件流直接建在 R2 对象存储之上：生产者只管往流里写，多个消费者各自按节奏读取，由中间层吸收写入、解耦供需，避免传统 RPC 在流量尖峰或下游挂掉时丢事件。官方称它无需自建 broker 集群，即可获得持久、有序的日志流，主打高吞吐与长期留存，补齐了开发者平台的数据管道能力。",
+    "quote": "别再自己养 Kafka 了，先把消息丢进对象存储。",
+    "source": "HN Front Page",
+    "url": "https://blog.cloudflare.com/cloudflare-k2-streams/",
+    "published": "2026-10-02",
+    "uid": "dev_e84460ca"
+  },
+  {
+    "title": "Google 食言：Chromebook 十年更新承诺缩水",
+    "content": "曾把「十年自动更新」当核心卖点的 Google，被指悄悄收回了对部分 Chromebook 的长期更新承诺。报道称多款机型在硬件尚可用的情况下提前结束支持，用户再也拿不到系统更新与安全补丁。对于把 Chromebook 当低成本长寿命设备采购的教育与企业用户，这意味着原本按十年计算的折旧与合规模型全被打乱。",
+    "quote": "说好十年，三年就催你换新，环保口号谁补。",
+    "source": "HN Front Page",
+    "url": "https://www.osnews.com/story/146052/google-breaks-promise-to-provide-10-years-of-updates-to-chromebooks/",
+    "published": "2026-10-02",
+    "uid": "dev_3733a3a4"
+  },
+  {
+    "title": "Show HN：Engrams，自托管的开源版 Devin",
+    "content": "Cortex 开源 Engrams：一个自托管的 AI 编码 Agent 编排器。每个 Agent 跑在独立的 Firecracker 微虚拟机里，空闲时把整台 VM 快照下来，下一条提示到达再恢复，隔离由 KVM 硬件保证而非容器边界。用一次 Terraform 加两个 Helm release 就能在自己的 GKE/EKS 上拉起，代码、密钥与对话记录都不出账户，是「你自己跑」的那版托管沙箱。",
+    "quote": "每个 Agent 一间单间牢房，还能随时冻起来。",
+    "source": "HN Show HN",
+    "url": "https://github.com/cortexapps/engrams",
+    "published": "2026-10-02",
+    "uid": "dev_166b4e1e"
+  },
+  {
+    "title": "Show HN：TrueScribe，Linux 上的本地 AI 转录工作室",
+    "content": "作者用了一年 Fedora，想找一个 Linux 版的 MacWhisper 做离线访谈转录，遍寻不着，索性自己做了 TrueScribe：一款本地运行的 AI 转录工具，音频不出本机。它面向需要处理敏感录音、又不愿把内容传上云的用户，补上了 Linux 桌面在「本地 Whisper 工作流」上的生态空缺。",
+    "quote": "录音不上云，隐私保住了，硬盘得够大。",
+    "source": "HN Show HN",
+    "url": "https://truescribe.app/",
+    "published": "2026-10-02",
+    "uid": "dev_0b949c2d"
+  },
+  {
+    "title": "用 DeepSeek 跑无人值守编程 Agent：中位数 $0.125 一个 PR",
+    "content": "V2EX 用户晒出账本：把自家仓库的交付全换成 DeepSeek V4.1-Flash 后，统计 9 月 22 到 24 日合并的 20 个 PR，把从写代码、评审、返工到合并整条链路的 token 全算进去，单个 PR 成本中位数约 0.125 美元。作者此前做过给 Issue 打 ai-ready 标签、AI 编码再评审合并的流程，这次只贴账单，用真实数字回应「AI 写代码到底贵不贵」。",
+    "quote": "一个 PR 一毛二，程序员的时薪开始尴尬。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1245983",
+    "published": "2026-10-02",
+    "uid": "dev_e6c79e8a"
+  },
+  {
+    "title": "FluxDown 桌面端从 Flutter 迁到 GPUI：一次 Rust UI 复盘",
+    "content": "免费多协议下载管理器 FluxDown（HTTP 多线程/BT/磁力/HLS，对标 IDM）把桌面界面从 Flutter 换成了 GPUI——Zed 编辑器所用的 Rust UI 框架。作者分享了迁移缘由与实践：下载引擎本就由 Rust 编写，过去靠 FFI 与 Flutter 通信，如今前后端统一到 Rust 技术栈后，跨语言边界与打包链路的诸多麻烦得以简化，也顺带聊了 GPUI 的取舍。",
+    "quote": "Flutter 换 GPUI，Rust 程序员不用装前端了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1245951",
+    "published": "2026-10-02",
+    "uid": "dev_2bf057df"
+  },
+  {
+    "title": "用 AI 整理 400 个书签：一个被证伪的「一句话需求」",
+    "content": "作者想用本地 Agent（Codex/Claude Code）清理攒了四年、400 多个 Edge 书签，原以为是「一句话的事」，结果踩满工程暗坑：分类不稳定、重复判定暧昧、Agent 反复推翻自己。文章复盘了这些反直觉的真相与工程死锁，并开源了最终跑通的方案，结论是——想让 AI 确定性地归类书签，目前基本是个伪命题，还得靠规则兜底。",
+    "quote": "让 AI 整理收藏夹，它比你还选择困难。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1246036",
+    "published": "2026-10-02",
+    "uid": "dev_9d803769"
+  },
+  {
+    "title": "我们删掉了 CI：这台机器照样上线",
+    "content": "一篇自带元叙事的技术文：作者运营的站点由 AI Agent 在人工审批下自主运行，讲述他们干脆删掉两套 GitHub CI，改由 Agent 自己承担构建与部署，并附上当日的部署账本与出处。文章想探讨的是，当「发布」本身也能交给 Agent 决策与执行时，传统 CI/CD 流水线的边界与价值是否正在被重写，人类又还该保留哪些关卡。",
+    "quote": "CI 删了，胆子和心跳一起变大。",
+    "source": "Dev.to",
+    "url": "https://dev.to/mrsaynothing/we-deleted-our-ci-the-machine-ships-anyway-ake",
+    "published": "2026-10-02",
+    "uid": "dev_4515fbdb"
+  },
+  {
+    "title": "评审者不是那道闸门",
+    "content": "文章从一个 AI 评审机器人留下的评论说起——「这个改动在两次保存竞争时会丢数据」——指出这句话可能是整份 PR 里最有价值的一句，也可能是误报或误解。作者借此讨论：AI 评审的价值不在于当「放行/拦截」的闸门，而在于把值得人类判断的问题体面地提出来，最终判断权仍应留在人手里，否则只是把责任转嫁给一个会胡说八道的模型。",
+    "quote": "让 AI 当看门狗可以，别让它当法官。",
+    "source": "Dev.to",
+    "url": "https://dev.to/qnbs/the-reviewer-is-not-the-gate-2na6",
+    "published": "2026-10-02",
+    "uid": "dev_66b511de"
+  },
+  {
+    "title": "腾讯开源 AI 助手 Octop：数据留在自己机器上",
+    "content": "腾讯云把一套支持多用户、多智能体的 AI 助手 Octop 以 MIT 协议开源，强调数据全部留在用户自己的机器上。更省事的是它已上架 1Panel 应用商店，安装只需在面板里点几下鼠标、无需敲一行命令。对想在内网自建 AI 助手、又担心数据外流的团队，这种「开箱即用 + 私有部署」的组合，正把自托管的门槛压到最低。",
+    "quote": "数据不出门，装机靠点鼠标，这波实用。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/xiaobaiysf/p/23181208",
+    "published": "2026-10-02",
+    "uid": "dev_2e4336e3"
+  },
+  {
+    "title": "Show HN：Gutsy，能跑在 CPU 上的 0.8B 决策小模型",
+    "content": "gutsy-0.8b 是 Qwen3.5-0.8B 的微调，以 775MB GGUF 由 llama.cpp 在普通 CPU 上运行。它不是文本生成模型而是「决策模型」：输入状态（文本或 JSON）与若干判断题，返回每个选项的校准概率，校验集校准误差仅 0.021，0.8 就约等于 80%。纯本地、无网络、每次调用零成本，兼容 Jev 风格 Decisions 格式。",
+    "quote": "不写作文只做选择，小模型的活路找到了。",
+    "source": "HN Show HN",
+    "url": "https://github.com/kouhxp/gutsy",
+    "published": "2026-10-02",
+    "uid": "dev_35b38032"
+  },
+  {
+    "title": "Show HN：Past.dev 给 Agent 造记忆层，BEAM 10M 拿到 85%",
+    "content": "past.dev 开放自助注册，主打「长上下文窗口给不了的东西」：记录当下什么是真的、被什么取代、每条事实何时改变。应用把已产生的邮件、通话记录、工单、聊天按发生时间打戳喂给它，Agent 需要上下文时再取回「当前事实＋带日期的出处」，且按读取者权限过滤。官方称其在长期记忆基准 BEAM 各历史长度上领先，100 万 token 命中 90.65%，1000 万 token 仍有 85.03%。",
+    "quote": "上下文再长也会忘，不如外挂一个档案管理员。",
+    "source": "HN Show HN",
+    "url": "https://past.dev/blog/introducing-past-dev",
+    "published": "2026-10-02",
+    "uid": "dev_830b50d4"
+  },
+  {
+    "title": "Show HN：SWE-sweep 基准，不给提示 AI 几乎找不到 bug",
+    "content": "来自 Meta、斯坦福、哈佛、华盛顿大学等团队的新基准 SWE-sweep：在真实仓库里只给一个代码库，不告诉 Agent bug 的类型和位置，看它自己能发现并修掉多少。榜单覆盖 100 个仓库、4100 个 bug，目前最高分模型也只解决约 4.7%，多数在 1% 上下。结论很扎心：AI 擅长修「已被指出」的 bug，自主定位缺陷的能力还相当初级。",
+    "quote": "告诉它在哪就能修，不告诉就抓瞎，这也叫工程师？",
+    "source": "HN Show HN",
+    "url": "https://swesweep.com/",
+    "published": "2026-10-02",
+    "uid": "dev_33a48c76"
+  },
+  {
+    "title": "Show HN：OpenC6 v2.0，给 ESP32-C6 造的裸机 BIOS 与 RISC-V 微内核",
+    "content": "OpenC6 是面向 ESP32-C6（RV32IMAC）的开源 BIOS 与微内核：把平台级硬件初始化与用户态执行解耦，给单片机搬来 PC 的架构范式。它充当「操作系统宿主」，管理裸机资源，在低功耗协核上跑带外看门狗，并用物理内存保护做硬件隔离，对外提供标准化系统调用 ABI。于是能动态加载、多任务运行、乃至通过网络部署非特权 U-Mode 负载，还自带复古蓝屏设置页。",
+    "quote": "单片机也开始讲究内核态用户态，卷得没边了。",
+    "source": "HN Show HN",
+    "url": "https://github.com/Rompass/openc6-bios",
+    "published": "2026-10-02",
+    "uid": "dev_87219d59"
+  },
+  {
+    "title": "Show HN：Kvitansiya，给 AI 的「已部署」声称当场对账",
+    "content": "Kvitansiya 是一个 Claude Code 的 Stop hook：Agent 说自己「已推送」「已部署」「测试通过」时，它在放行前拿这些声称去现实里核对——推送就查 git ls-remote，部署就查线上 /version 是否真是这个 commit。一旦不实就拦住 stop 并把证据塞回给 Agent。",
+    "quote": "AI 说部署好了，先让它把收据掏出来。",
+    "source": "HN Show HN",
+    "url": "https://github.com/Dilshod-Abdullayev/kvitansiya",
+    "published": "2026-10-02",
+    "uid": "dev_907ab06a"
+  },
+  {
+    "title": "Show HN：Velu，会自己更新的产品文档",
+    "content": "Velu 自称 Mintlify 的替代品，核心是「给人和给 Agent 读的文档」：产品一变更，文档改动就以 Pull Request 形式自动提上来。它顺手维护 llms.txt 与 markdown 导出、可被 Agent 调用的 MCP 服务端与 skill.md，还提供对照规范的 Docs 评分和语义搜索。对厌倦「代码天天变、文档永远旧」的团队，是把文档接进 CI 的一种思路。",
+    "quote": "文档不用手改了，改成 AI 提 PR 等你点合并。",
+    "source": "HN Show HN",
+    "url": "https://www.veludocs.com/",
+    "published": "2026-10-02",
+    "uid": "dev_c8998b42"
+  },
+  {
+    "title": "MongoDB 当向量库：一份喂给 AI Agent 的教程",
+    "content": "这篇 Dev.to 教程主张：不一定非要再单独养一个向量数据库。MongoDB 核心内建原生向量搜索，既能存业务数据，也能顺便撑起语义检索与 Agent 记忆。文中用 MongoDB＋VoyageAI＋Claude＋LangChain 搭了个菜谱助手 Chez Robot：既能回答「有米和藏红花能做什么」，又用同一个向量索引在会话间存取你的口味偏好。",
+    "quote": "多养一个向量库图啥，顺手在 Mongo 里搜了就完事。",
+    "source": "Dev.to",
+    "url": "https://dev.to/ndaza/mongodb-as-a-vector-database-for-ai-agents-314b",
+    "published": "2026-10-02",
+    "uid": "dev_a8badf7d"
+  },
+  {
+    "title": "给 K8s 上的 AI Agent 做「零凭证」身份联邦",
+    "content": "作者做了 agent-wif-lab：让跑在 Kubernetes 里的 Agent pod 不持有任何长期凭证，只拿平台签发的 token，每次调用外部 API 时即时换成更窄权限的凭证。文中点出长寿命密钥的老毛病——不过期、不轮转、一旦泄露就永久放出它当初被授予的一切。这套机制 AWS、GCP、Vault 都有，只是被云厂商 SDK 藏了起来；作者干脆从原语复现，让形状看得见。",
+    "quote": "密钥泄露一次赔一生，不如每次现换一张票。",
+    "source": "Dev.to",
+    "url": "https://dev.to/webofmike/building-workload-identity-federation-for-ai-agents-on-kubernetes-33b3",
+    "published": "2026-10-02",
+    "uid": "dev_81980300"
+  },
+  {
+    "title": "941 条真实查询证明：购物搜索「翻译」其实是查询扩展",
+    "content": "作者运营一个 AliExpress 搜索前端，把希伯来语、阿拉伯语、俄语等 11 种语言的查询转成平台真正索引的英文短查询，一直管这步叫「翻译」。在导出 941 组真实查询对照后他改了看法：英语侧通常不是变短而是变长——若真是翻译，长度应相当，实际是对手添了平台索引里真正管用的词。数据集以 CC BY 4.0 公开于 Kaggle、HuggingFace、Zenodo。",
+    "quote": "以为在做翻译，其实在猜平台想听哪个词。",
+    "source": "Dev.to",
+    "url": "https://dev.to/ohadfarkash/shopping-search-translation-is-mostly-query-expansion-what-941-real-queries-showed-31d9",
+    "published": "2026-10-02",
+    "uid": "dev_1b331c01"
+  },
+  {
+    "title": "无障碍 Toast 的两个原则：报结果，也留住结果",
+    "content": "文章讲无障碍 Toast 通知要满足两种「清晰」：既让人知道操作完成了，也在提示消失后仍找得到结果。做法是——常规更新只用无障碍播报、不抢键盘焦点；重要信息与操作要在页面别处留一份。作者举例：改完账单邮箱弹「已更新」，同时新地址也要显示在账单详情里，错过 Toast 的人照样能核对。反面教材是页面还显示旧地址、Toast 只喊「成功」，等于把结果悬在半空。",
+    "quote": "Toast 一飘就没，重要的结果别只活在那三秒。",
+    "source": "Dev.to",
+    "url": "https://dev.to/urielbitton/accessible-toast-notifications-keep-the-result-clear-mgj",
+    "published": "2026-10-02",
+    "uid": "dev_596dae43"
+  },
+  {
+    "title": "Claude Code + MCP，让空文件夹变成能玩的 Unity 游戏",
+    "content": "博客园这篇整理了一个 Unity＋MCP 实战：从空工程到有物理、材质、动画、粒子，全程没手写一行代码，只靠语音与大白话 prompt。亮点是 GameDev-MCP-Server 一份代码同时服务 Unity、Godot、Unreal 三个引擎，真正的工具由连上来的引擎插件动态提供。作者洞察在上下文省钱：Skill 每次调用只占约 8 个 token，MCP 工具却始终挂在 prompt 里。",
+    "quote": "AI 干活的瓶颈不是手速，是上下文别塞满。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23181231",
+    "published": "2026-10-02",
+    "uid": "dev_8137f863"
+  },
+  {
+    "title": "同态加密推理实测：一跳 1.8 小时，八成耗在域变换",
+    "content": "haliu 的 FHE 系列第十五篇给出实测账本：一次同态加密推理的一跳（lay+boot）在 8 核 CPU 上约 1.8 小时，纯 CPU、无 GPU/NPU。反直觉的是钱花在哪——最热的卷积（NTT/多项式乘法）不是大头，自举里两段「域变换」coeff_to_slot 与 slot_to_coeff 各约占 39% 和 40%，合计约 80%。结论直接改变优化方向：继续死磕卷积是白费力气。",
+    "quote": "天天优化矩阵乘法，结果时间全耗在挪数据上。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/haliuhome/p/23178401",
+    "published": "2026-10-02",
+    "uid": "dev_f10bbe6c"
+  },
+  {
+    "title": "给火山方舟写了个零依赖的联网搜索 skill",
+    "content": "V2EX 用户分享：在 PI Coding Agent 里想加联网搜索，翻了一圈没有适配火山方舟（ark）的 skill，就自己写了一个。特点是零依赖——纯 Python 标准库，连 pip install 都不用；API key 自动从 ~/.pi/agent/models.json 读，配过方舟的拿来就用；后端是方舟内置的联网内容插件，由模型自行判断要不要搜，支持多轮搜索与来源引用。",
+    "quote": "零依赖是真香，pip 装不动的人都懂。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1238902",
+    "published": "2026-10-02",
+    "uid": "dev_afea7a67"
+  }
+]
