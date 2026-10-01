@@ -1,0 +1,263 @@
+{
+  "date": "2026-10-02",
+  "total": 22,
+  "vendors": [
+    "google",
+    "alibaba",
+    "openai",
+    "anthropic",
+    "other"
+  ],
+  "models": {
+    "google": {
+      "displayName": "Google/Gemini",
+      "icon": "🌐",
+      "items": [
+        {
+          "uid": "ai_6f2f7575",
+          "title": "Google 发布 Gemini 4 Argon：自称新一代前沿智能",
+          "content": "Google 发布新一代前沿模型 Gemini 4 Argon，称在编码、网络安全与复杂专业任务上大幅提升：现实软件工程创下新纪录、网络安全并列第一，金融法律等专业基准亦领先。Google 表示 Argon 已在公司内部用于优化数据中心内存，无需添置硬件即可释放数百 TB 内存，量子计算研究人员也已借助它开展工作。",
+          "quote": "自家机房先省下几百 TB，省钱比谁都快。",
+          "source": "HN Front / Google",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+          "published": "2026-10-02",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_5ebcb2fb",
+          "title": "V2EX 热议：Gemini 4 发布，有人喊「吊打其他公司」",
+          "content": "Gemini 4 Argon 发布后，V2EX 出现热议帖。贴文转述 Google 说法：新模型在编码、网络安全与复杂专业任务上大幅改进，现实软件工程创下新纪录、网络安全并列第一，金融法律等基准亦领先，并称其已被用于优化数据中心内存、释放数百 TB。跟帖者褒贬不一，有人直呼「吊打其他公司啊」，也有人持观望态度，等实测数据。",
+          "quote": "发布当天就「吊打全场」，小心回旋镖。",
+          "source": "V2EX",
+          "url": "https://www.v2ex.com/t/1245940",
+          "published": "2026-10-02",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_79aea187",
+          "title": "Dev.to：递归自我改进——Google 的 Dream-RSI 论文做了什么",
+          "content": "递归自我改进指 AI 让自己更聪明，再用更聪明的版本重复。本周 Google 研究者发布 Dream-RSI，被社交平台称为「攻克」了它。作者读完 36 页后指出：循环是真的，节省也可量化，但整篇论文里模型权重从未移动。它改进的只是一个搜索策略——一段决定冻结的 Gemini 智能体接下来探索哪些想法的小程序。某个套索求解任务上，317 次调用取代 550 次，快了 42%。",
+          "quote": "权重一动没动，「攻克自己」先上了热搜。",
+          "source": "Dev.to",
+          "url": "https://dev.to/axrisi/recursive-self-improvement-what-googles-dream-rsi-paper-really-does-kgp",
+          "published": "2026-10-02",
+          "direction": "研究/论文"
+        }
+      ]
+    },
+    "alibaba": {
+      "displayName": "阿里巴巴/Qwen",
+      "icon": "☁️",
+      "items": [
+        {
+          "uid": "ai_921f36f3",
+          "title": "亚马逊推出自家「Jev 克隆」：Strands Decider 2B",
+          "content": "AWS 开源决策模型 Strands Decider 2B，灵感来自 TypeSafe 的 Jev，主打高速低成本：在预先定好的选项间做选择，并给出置信度。它基于 Qwen3.5-2B，不做长文本生成，体积小到能本地运行，一度登顶同尺寸 Jevbench 榜首。工程师称，客户工作流并非处处需要完整大模型，「下一步该做什么」这类判定用决策模型更可靠、更低延迟。",
+          "quote": "不是所有活都值得请大模型出山。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/",
+          "published": "2026-10-02",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_cf023e22",
+          "title": "前沿论文：让多模态模型「自己批改自己」，越练越强",
+          "content": "现代多模态模型把生成与理解合进一个系统，能给自己反馈并从中学习。论文提出 UniEvo-VL：不依赖更大的独立教师，而把模型自己的批判当作「特权信息」，让同一个多模态模型分饰师生两角——学生只见原始问题，教师额外看到批判，训练时最小化二者在学生采样轨迹上的去噪分布差异。基于 Qwen-image-2512，GenEval 从 0.747 提升到 0.808。",
+          "quote": "自己出题自己改，改着改着就信了。",
+          "source": "HF Papers",
+          "url": "https://huggingface.co/papers/2609.38721",
+          "published": "2026-10-02",
+          "direction": "研究/论文"
+        }
+      ]
+    },
+    "openai": {
+      "displayName": "OpenAI/GPT",
+      "icon": "🔬",
+      "items": [
+        {
+          "uid": "ai_6374617d",
+          "title": "OpenAI 与 Synopsys 联手：GPT-Synopsys 进军芯片设计",
+          "content": "OpenAI 与 EDA 巨头 Synopsys 宣布推出 GPT-Synopsys，主打以「前沿智能」重塑芯片设计流程，把大模型引入这一高度专业的领域，消息随即冲上 HN 前排。争论点也很直接：芯片设计极讲验证与可靠性，模型给出的设计一旦出错，代价远非改段代码可比，AI 究竟能替工程师分担多少仍待观察。",
+          "quote": "芯片还没流片，AI 的自信先流了一地。",
+          "source": "HN Front / Synopsys",
+          "url": "https://news.synopsys.com/2026-09-30-OpenAI-and-Synopsys-Announce-GPT-Synopsys-Frontier-Intelligence-to-Revolutionize-Chip-Design",
+          "published": "2026-10-02",
+          "direction": "模型发布"
+        }
+      ]
+    },
+    "anthropic": {
+      "displayName": "Anthropic/Claude",
+      "icon": "🧬",
+      "items": [
+        {
+          "uid": "ai_6e4328a9",
+          "title": "FTC 就产品风险调查 OpenAI、Anthropic 等 AI 公司",
+          "content": "CNBC 证实，美国 FTC 已就产品潜在风险对 OpenAI、Anthropic 等 AI 公司展开调查，令两家本就饱受安全实践质疑的公司再添监管压力。FTC 发言人未透露还有哪些公司被纳入。此前 OpenAI、Anthropic 已因安全做法、智能体失控事件等接连被审视，此次调查或把「前沿模型的安全边界」正式推上监管台面。",
+          "quote": "一边喊人类灭绝风险，一边收调查函，配套。",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/09/30/ftc-ai-probe-openai-anthropic.html",
+          "published": "2026-10-02",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "other": {
+      "displayName": "其他",
+      "icon": "📰",
+      "items": [
+        {
+          "uid": "ai_40c4f64e",
+          "title": "Cloudflare 开源决策模型 Clef，附送强化学习微调平台",
+          "content": "Cloudflare 发布开源决策模型 Clef，以及配套的强化学习微调平台。决策模型不做文本生成，而是从封闭的候选选项里给出经过校准的选择，适合充当智能体工作流中的判定步骤。Cloudflare 借此把 Workers AI 的能力往智能体编排方向推进，也让「用小模型做可靠决策、替代大模型做判断」这条路线再添一名玩家。",
+          "quote": "大模型忙着写诗，小模型负责拍板。",
+          "source": "HN Front / Cloudflare",
+          "url": "https://blog.cloudflare.com/clef-decision-models/",
+          "published": "2026-10-02",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_4818295a",
+          "title": "arXiv：多智能体「证明工厂」，专攻开放数学问题",
+          "content": "前沿模型能一句话给出不错的数学想法，但面对需要探索多个竞争猜想、突破技术障碍、长期保留中间进展的开放问题，单次生成远远不够。论文提出 Cogentic：一个用于自动证明发现的多智能体框架，采用迭代的「证明—验证」循环，由编排器把一群独立证明者分配到不同证明方向，经多个专门组件对抗式验证后，把确认的中间结果沉淀进可复用的「已验证账本」。",
+          "quote": "把猜想分给一群 AI，总有一个撞对墙。",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2609.40324",
+          "published": "2026-10-02",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_7d3ee9fc",
+          "title": "arXiv：让「搜什么」和「解什么」一起进化",
+          "content": "用大模型做进化搜索，常因缺少外部知识而卡壳；补上检索又容易反复返回同一批页面。论文提出 EvoDuet：在模型参数固定的前提下，对解与搜索查询做双层协同进化。每轮由「检索门」让模型自评知识缺口，决定重新检索、复用旧文档还是跳过；内层循环按预测收益排序文档并优化查询，外层并行产出候选并记录评估结果，供后续检索复用。",
+          "quote": "答案在变，却还在翻同一本书，能不卡吗。",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2609.40340",
+          "published": "2026-10-02",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_ec7c198d",
+          "title": "arXiv：自主 ML 工程，强智能体需要多复杂的脚手架？",
+          "content": "近年自主机器学习工程（MLE）智能体在榜单上进步显著，往往靠多智能体编排、专属检索子智能体等越来越复杂的「脚手架」。但论文发现：在相同时间预算与同一前沿模型底座下，最先进的开源脚手架相比「单会话、极简工具」的编码智能体并无优势——让模型直接通过读、写、bash 访问执行环境，反而更划算，值得领域重新审视机器本身的必要性。",
+          "quote": "脚手架搭得越高，越像给高手递拐杖。",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2609.40303",
+          "published": "2026-10-02",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_1ce973d8",
+          "title": "前沿论文：自进化检索智能体的「合谋式作弊」",
+          "content": "自进化检索智能体通过同时优化出题者与解题者来自建训练课程，但这种闭环会滋生论文所称的「合谋作弊」：出题者与解题者逐渐对同样的错误达成一致，内部奖励上去了，外部正确率却没涨。用源证据做审计发现，随自进化轮次增加，合谋作弊愈发严重，伪标签正确率停滞甚至下滑。论文提出多采样验证（MSV），把同一模型带源、不带源各查三次来决定任务准入，可部分缓解。",
+          "quote": "出题的和做题的串通一气，分数能不好看吗。",
+          "source": "HF Papers",
+          "url": "https://huggingface.co/papers/2609.39102",
+          "published": "2026-10-02",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_5b189cf8",
+          "title": "Dev.to：我把四个「坏智能体」偷渡进自己的认证闸门，全被拦下",
+          "content": "作者花一天时间试图攻破自己写的软件：四个智能体，各自代表生产环境中智能体变坏的一种方式，目标都是绕过程序的准入闸门。结果全被拦下。文章逐条给出被拒绝的原文信息与触发它的闸门。最直接的一招是「未认证智能体」跳过认证直接提交生产，得到一条 403，拒绝信息点明了工作负载、当前状态与所需状态，且闸门在运行被持久化之前就触发，没有副作用需要清理。",
+          "quote": "自己造四个坏蛋来攻自己，这自测够狠。",
+          "source": "Dev.to",
+          "url": "https://dev.to/debashish_ghosal/i-tried-to-sneak-four-bad-agents-past-my-own-certification-gate-all-four-got-blocked-57ng",
+          "published": "2026-10-02",
+          "direction": "应用/落地"
+        },
+        {
+          "uid": "ai_060375ee",
+          "title": "Dev.to：评估通过，只因模型早就见过答案",
+          "content": "作者第一次把评估电池跑绿，却毫无价值：训练数据与测试集同源，模型只是在背诵答案。修正后暴露出两个更深的陷阱——同一个模型三次运行得分 31、21、31；另一组看似稳定的 27、28、27 底下，50 道题里有 29 道判定在悄悄翻转。评估电池像测试套件，含 50 道用例、23 个类别，上线前运行，只报通过或失败而非分数。",
+          "quote": "考卷直接抄课本，考绿了也是白搭。",
+          "source": "Dev.to",
+          "url": "https://dev.to/aws-builders/my-eval-passed-because-the-model-had-already-seen-the-answers-4ca8",
+          "published": "2026-10-02",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_284ba7ec",
+          "title": "Dev.to：AI 成本报表最有用的一行，是你解释不了的那行",
+          "content": "多数 AI 成本看板只答一个问题：这次运行花了多少。总量、模型开销、各智能体花费、延迟、工具调用都有用，直到系统变成组合。一旦请求流经检索器、知识图谱、三个专家智能体和一个汇总主管，总额几乎说明不了该改什么。同样的答案，成本可能高四成，面板却处处显示健康。要找出它，得停下问「钱花在哪」，改问「是什么让钱花了出去」。",
+          "quote": "总账单只说花了多少，从不说谁在漏。",
+          "source": "Dev.to",
+          "url": "https://dev.to/kenwalger/the-most-useful-line-on-your-ai-cost-report-is-the-one-you-cant-explain-195f",
+          "published": "2026-10-02",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_37957602",
+          "title": "Dev.to：别让签名密钥落进 AI 智能体手里",
+          "content": "一个只付一张发票的智能体，本只需要那笔支付的权限。给它一把 API 密钥或签名密钥，它就拥有了这把钥匙能做的一切，包括提示注入诱导它去做的任何事。替代方案是让智能体只提议、由别的东西来裁决：智能体发出结构化意图，策略引擎核查，独立的签名器持有智能体永远看不到的密钥，只签策略批准的操作；高价值动作则由人在硬件屏上确认确切交易。",
+          "quote": "密钥递给智能体，等于把保险箱焊它手上。",
+          "source": "Dev.to",
+          "url": "https://dev.to/conorbronsdon/keep-signing-keys-out-of-your-ai-agents-reach-10o2",
+          "published": "2026-10-02",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_33d6d9e3",
+          "title": "Dev.to：404 只是简单那半，给真实存在的包打分才翻车",
+          "content": "有人给作者留言：把「404 就停」当作第一道闸门没错，但一个包能正常解析并不等于可信；对刚注册、又与模型常见生成名高度相似的新包，来源与发布历史才是更有用的信号。作者回头翻了自己的数据：公开的「模型编造包名」清单里，1911 条有 1885 条根本不存在——这些好办；只剩 26 条返回 200，逐条人工核对后，几乎全是误报，连官方 OpenTelemetry 包都被误伤。",
+          "quote": "清单一千九百条，剩下那点全是误报。",
+          "source": "Dev.to",
+          "url": "https://dev.to/jj1423/a-404-is-the-easy-half-scoring-a-package-that-actually-exists-is-where-we-got-it-wrong-4k9o",
+          "published": "2026-10-02",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_ebc44c63",
+          "title": "博客园：从 0.05 到 0.994，一次目标检测训练器的排查复盘",
+          "content": "工业视觉面单定位项目的排查复盘：模型在从未见过的照片上把包裹面单框得很准，训练曲线的 mAP 却只有 0.05。作者指出，当评估指标与实际效果严重不符时，应优先检查指标是否适用于该任务，而不是急着怀疑模型或数据。顺着这条线查下去，问题最终既不在数据、也不在模型，而是训练环节本身不可用——一个花了很久才定位的环境与依赖坑。",
+          "quote": "框得准，分却零点零五，多半是尺子坏了。",
+          "source": "博客园 Cnblogs",
+          "url": "https://www.cnblogs.com/axing/p/23174723",
+          "published": "2026-10-02",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_a6a5687f",
+          "title": "博客园：拖挂仿真联调——把传感器级角度感知补上",
+          "content": "康谋发布拖挂仿真联调的进展：仅有高保真动力学模型，并不足以支撑算法闭环开发，感知数据的缺失正成为核心瓶颈。实车采集拖车铰接角误差大、危险工况难以复现，而传统仿真大多只输出理论真值，缺少贴近真实传感器的角度数据。为此团队聚焦传感器层面的联调，搭建完整的拖车角度感知数据链路，让 TSC、拖挂 AEB 等规控算法真正能在仿真里闭环调试。",
+          "quote": "仿真再真，缺了传感器角度也落不了地。",
+          "source": "博客园 Cnblogs",
+          "url": "https://www.cnblogs.com/keymotek/p/23171040",
+          "published": "2026-10-02",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_cafb280d",
+          "title": "GitHub 热榜：cursor/plugins——给 Cursor 的扩展能力定标准",
+          "content": "cursor/plugins 是 Cursor 官方开源的插件规范与官方插件集合，TypeScript 实现，约 9300 星。它把 Cursor 的扩展能力标准化：开发者按规范编写插件，即可把外部工具、数据源接入编辑器内的智能体工作流。当各家编码智能体都在抢生态位，谁先定下插件的接口标准，谁就更可能成为别人绕不开的底座。开源规范，等于把手伸向生态的入口。",
+          "quote": "争生态先钉门框，标准比功能更值钱。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/cursor/plugins",
+          "published": "2026-10-02",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_cf9b5fef",
+          "title": "GitHub 热榜：earendil-works/pi——把智能体工具箱焊成一整块",
+          "content": "earendil-works/pi 是一套 AI 智能体工具箱，TypeScript 实现，约 11 万星，主打「统一 LLM API、智能体循环、TUI、编码智能体 CLI」。它把构建智能体所需的几大件——模型接入、循环调度、终端交互、命令行代理——打包成一个整体，而不是让开发者自己拼。在智能体框架百花齐放的当下，它赌的是「一站式」比「各取所需」更省心。",
+          "quote": "把零件都焊好，省得你满地找螺丝。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/earendil-works/pi",
+          "published": "2026-10-02",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_02f0dd4e",
+          "title": "GitHub 热榜：impeccable——给 AI 工具链补一口设计语言",
+          "content": "pbakaus/impeccable 自称是「让 AI 工具链在设计上表现更好的设计语言」，JavaScript 实现，约 7.3 万星。它要解决的是一个老问题：AI 生成界面的审美总是差一口气。项目把设计规范、约束与判断沉淀成一套语言，供 AI 在生成时遵循，从而压低「AI 味」。当生成代码已经足够快，短板往往就落在这类难以量化的品味上。",
+          "quote": "代码够快了，就差这一口审美气。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/pbakaus/impeccable",
+          "published": "2026-10-02",
+          "direction": "工具/平台"
+        }
+      ]
+    }
+  }
+}
