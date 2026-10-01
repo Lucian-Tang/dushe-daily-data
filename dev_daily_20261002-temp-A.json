@@ -1,0 +1,137 @@
+[
+  {
+    "title": "turbopuffer 宣布「向量数据库已死」，转向通用搜索引擎",
+    "content": "turbopuffer 发布长文宣布重写存储引擎「v3」：过去一切都围绕 ANN 向量索引搭建，如今要把向量检索降级为「二级索引」，主索引换成更通用的结构，以支撑更多查询计划与更大规模。文章回顾了从 v1 的「一个 ID 加一个向量」、SPANN 到 SPFresh 的演进，坦言纯向量库那波红利已经过去，接下来比拼的是通用检索能力，而非把 ANN 做到极致。",
+    "quote": "向量数据库这名字，最先被自家的博客悼念了。",
+    "source": "HN Front Page",
+    "url": "https://turbopuffer.com/blog/rip-vector-database",
+    "published": "2026-10-02",
+    "uid": "dev_bdf4a736"
+  },
+  {
+    "title": "Rust 编译器九月提速实录：两个月平均快了 4.57%",
+    "content": "性能专家 Nicholas Nethercote 发布 Rust 编译器 9 月进展：7 月底到 9 月底的 629 项基准里，555 项变快、仅 74 项变慢，平均墙钟时间下降 4.57%，被戏称为「一片绿」。亮点包括为 Clippy 开启 PGO（最好一档提速 18%）、升级到 LLVM 23 仅一个 PR 就带来 1.2% 提升，以及 rustdoc 的一系列优化。",
+    "quote": "编译器每快一点，程序员就多摸一分钟鱼。",
+    "source": "HN Front Page",
+    "url": "https://nnethercote.github.io/2026/09/30/how-to-speed-up-the-rust-compiler-in-september-2026.html",
+    "published": "2026-10-02",
+    "uid": "dev_351b5d23"
+  },
+  {
+    "title": "Cloudflare 发布 K2：基于对象存储的无服务器事件流",
+    "content": "Cloudflare 推出公测产品 K2，把事件流直接建在 R2 对象存储之上：生产者只管往流里写，多个消费者各自按节奏读取，由中间层吸收写入、解耦供需，避免传统 RPC 在流量尖峰或下游挂掉时丢事件。官方称它无需自建 broker 集群，即可获得持久、有序的日志流，主打高吞吐与长期留存，补齐了开发者平台的数据管道能力。",
+    "quote": "别再自己养 Kafka 了，先把消息丢进对象存储。",
+    "source": "HN Front Page",
+    "url": "https://blog.cloudflare.com/cloudflare-k2-streams/",
+    "published": "2026-10-02",
+    "uid": "dev_ae393ec6"
+  },
+  {
+    "title": "Google 食言：Chromebook 十年更新承诺缩水",
+    "content": "曾把「十年自动更新」当核心卖点的 Google，被指悄悄收回了对部分 Chromebook 的长期更新承诺。报道称多款机型在硬件尚可用的情况下提前结束支持，用户再也拿不到系统更新与安全补丁。对于把 Chromebook 当低成本长寿命设备采购的教育与企业用户，这意味着原本按十年计算的折旧与合规模型全被打乱。",
+    "quote": "说好十年，三年就催你换新，环保口号谁补。",
+    "source": "HN Front Page",
+    "url": "https://www.osnews.com/story/146052/google-breaks-promise-to-provide-10-years-of-updates-to-chromebooks/",
+    "published": "2026-10-02",
+    "uid": "dev_1aac6d29"
+  },
+  {
+    "title": "Show HN：Engrams，自托管的开源版 Devin",
+    "content": "Cortex 开源 Engrams：一个自托管的 AI 编码 Agent 编排器。每个 Agent 跑在独立的 Firecracker 微虚拟机里，空闲时把整台 VM 快照下来，下一条提示到达再恢复，隔离由 KVM 硬件保证而非容器边界。用一次 Terraform 加两个 Helm release 就能在自己的 GKE/EKS 上拉起，代码、密钥与对话记录都不出账户，是「你自己跑」的那版托管沙箱。",
+    "quote": "每个 Agent 一间单间牢房，还能随时冻起来。",
+    "source": "HN Show HN",
+    "url": "https://github.com/cortexapps/engrams",
+    "published": "2026-10-02",
+    "uid": "dev_890126d3"
+  },
+  {
+    "title": "Show HN：TrueScribe，Linux 上的本地 AI 转录工作室",
+    "content": "作者用了一年 Fedora，想找一个 Linux 版的 MacWhisper 做离线访谈转录，遍寻不着，索性自己做了 TrueScribe：一款本地运行的 AI 转录工具，音频不出本机。它面向需要处理敏感录音、又不愿把内容传上云的用户，补上了 Linux 桌面在「本地 Whisper 工作流」上的生态空缺。",
+    "quote": "录音不上云，隐私保住了，硬盘得够大。",
+    "source": "HN Show HN",
+    "url": "https://truescribe.app/",
+    "published": "2026-10-02",
+    "uid": "dev_c0671591"
+  },
+  {
+    "title": "ponytail：让 AI Agent 学会「慵懒资深工程师」思维",
+    "content": "GitHub 热榜项目 ponytail 的定位很损：让 AI 编码 Agent 像「屋里最懒的资深工程师」那样思考——最好的代码是你压根没写的代码。它通过约束 Agent 的行为倾向，减少过度设计、多余抽象与无谓改动，力图把当前 AI 写代码「什么都想加一点」的通病，扭回到能少写就少写的工程朴素主义。项目星标已过十万。",
+    "quote": "教 AI 偷懒，居然是它最值钱的技能。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/DietrichGebert/ponytail",
+    "published": "2026-10-02",
+    "uid": "dev_5066c5f5"
+  },
+  {
+    "title": "context-mode：给 AI 编码 Agent 的上下文窗口做减法",
+    "content": "mksglu/context-mode 专治 Agent 的上下文焦虑：它把工具输出沙箱化，宣称可减少约 98% 的上下文占用，同时持久化会话记忆，并通过 MCP 与 hooks 在 17 个平台间做路由约束。对于动辄被一屏日志和文件内容撑爆上下文、导致 Agent「失忆跑偏」的开发场景，这类上下文治理工具正逐渐成为刚需。",
+    "quote": "Agent 记性不好，就靠外挂帮它删废话。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/mksglu/context-mode",
+    "published": "2026-10-02",
+    "uid": "dev_efc7bf89"
+  },
+  {
+    "title": "用 DeepSeek 跑无人值守编程 Agent：中位数 $0.125 一个 PR",
+    "content": "V2EX 用户晒出账本：把自家仓库的交付全换成 DeepSeek V4.1-Flash 后，统计 9 月 22 到 24 日合并的 20 个 PR，把从写代码、评审、返工到合并整条链路的 token 全算进去，单个 PR 成本中位数约 0.125 美元。作者此前做过给 Issue 打 ai-ready 标签、AI 编码再评审合并的流程，这次只贴账单，用真实数字回应「AI 写代码到底贵不贵」。",
+    "quote": "一个 PR 一毛二，程序员的时薪开始尴尬。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1245983",
+    "published": "2026-10-02",
+    "uid": "dev_e5c35e4a"
+  },
+  {
+    "title": "FluxDown 桌面端从 Flutter 迁到 GPUI：一次 Rust UI 复盘",
+    "content": "免费多协议下载管理器 FluxDown（HTTP 多线程/BT/磁力/HLS，对标 IDM）把桌面界面从 Flutter 换成了 GPUI——Zed 编辑器所用的 Rust UI 框架。作者分享了迁移缘由与实践：下载引擎本就由 Rust 编写，过去靠 FFI 与 Flutter 通信，如今前后端统一到 Rust 技术栈后，跨语言边界与打包链路的诸多麻烦得以简化，也顺带聊了 GPUI 的取舍。",
+    "quote": "Flutter 换 GPUI，Rust 程序员不用装前端了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1245951",
+    "published": "2026-10-02",
+    "uid": "dev_768c6d25"
+  },
+  {
+    "title": "用 AI 整理 400 个书签：一个被证伪的「一句话需求」",
+    "content": "作者想用本地 Agent（Codex/Claude Code）清理攒了四年、400 多个 Edge 书签，原以为是「一句话的事」，结果踩满工程暗坑：分类不稳定、重复判定暧昧、Agent 反复推翻自己。文章复盘了这些反直觉的真相与工程死锁，并开源了最终跑通的方案，结论是——想让 AI 确定性地归类书签，目前基本是个伪命题，还得靠规则兜底。",
+    "quote": "让 AI 整理收藏夹，它比你还选择困难。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1246036",
+    "published": "2026-10-02",
+    "uid": "dev_84ad9352"
+  },
+  {
+    "title": "我们删掉了 CI：这台机器照样上线",
+    "content": "一篇自带元叙事的技术文：作者运营的站点由 AI Agent 在人工审批下自主运行，讲述他们干脆删掉两套 GitHub CI，改由 Agent 自己承担构建与部署，并附上当日的部署账本与出处。文章想探讨的是，当「发布」本身也能交给 Agent 决策与执行时，传统 CI/CD 流水线的边界与价值是否正在被重写，人类又还该保留哪些关卡。",
+    "quote": "CI 删了，胆子和心跳一起变大。",
+    "source": "Dev.to",
+    "url": "https://dev.to/mrsaynothing/we-deleted-our-ci-the-machine-ships-anyway-ake",
+    "published": "2026-10-02",
+    "uid": "dev_a2c0959c"
+  },
+  {
+    "title": "评审者不是那道闸门",
+    "content": "文章从一个 AI 评审机器人留下的评论说起——「这个改动在两次保存竞争时会丢数据」——指出这句话可能是整份 PR 里最有价值的一句，也可能是误报或误解。作者借此讨论：AI 评审的价值不在于当「放行/拦截」的闸门，而在于把值得人类判断的问题体面地提出来，最终判断权仍应留在人手里，否则只是把责任转嫁给一个会胡说八道的模型。",
+    "quote": "让 AI 当看门狗可以，别让它当法官。",
+    "source": "Dev.to",
+    "url": "https://dev.to/qnbs/the-reviewer-is-not-the-gate-2na6",
+    "published": "2026-10-02",
+    "uid": "dev_f9410c78"
+  },
+  {
+    "title": "腾讯开源 AI 助手 Octop：数据留在自己机器上",
+    "content": "腾讯云把一套支持多用户、多智能体的 AI 助手 Octop 以 MIT 协议开源，强调数据全部留在用户自己的机器上。更省事的是它已上架 1Panel 应用商店，安装只需在面板里点几下鼠标、无需敲一行命令。对想在内网自建 AI 助手、又担心数据外流的团队，这种「开箱即用 + 私有部署」的组合，正把自托管的门槛压到最低。",
+    "quote": "数据不出门，装机靠点鼠标，这波实用。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/xiaobaiysf/p/23181208",
+    "published": "2026-10-02",
+    "uid": "dev_0523945c"
+  },
+  {
+    "title": "百万订单踩坑记：被「迷信框架」坑惨的一课",
+    "content": "一位花店 SaaS 开发者复盘「百万订单」系列的坑：业务要把各外卖平台的订单聚合到一起，遇上情人节、七夕、母亲节等节点订单量暴增。作者反思团队曾过度迷信某个框架的能力边界，在峰值压力下被现实教育，于是把架构演化中的真实细节与教训逐条写出来，提醒同行别把框架当银弹，容量与边界终究要靠数据说话。",
+    "quote": "框架不是银弹，峰值一到就现原形。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/liuzhang/p/23175661",
+    "published": "2026-10-02",
+    "uid": "dev_77adebf9"
+  }
+]
