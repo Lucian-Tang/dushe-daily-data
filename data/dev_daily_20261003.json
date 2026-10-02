@@ -1,0 +1,227 @@
+[
+  {
+    "title": "Supabase 收购 Turso：为 agent 时代的数据库铺路",
+    "content": "Supabase 宣布收购 Turso。官方称 agent 正以每周超百万的速度创建数据库，供给跟不上，于是要把「建库」做得像建文件一样便宜：小负载交给用 Rust 重写的 SQLite（Turso Cloud 单机可管百万库，按需挂起唤醒），规模化再交给 Postgres。Turso 保持独立运营，Supabase 继续押注 Postgres，目标是让 agent 从原型到生产体验一致。",
+    "quote": "数据库也开始按「每个 agent 一个」批发了。",
+    "source": "HN Front Page",
+    "url": "https://supabase.com/blog/supabase-is-acquiring-turso",
+    "published": "2026-10-03",
+    "uid": "dev_f1ba7a61"
+  },
+  {
+    "title": "agentic coding 的四骑士：AI 写的代码没人想读",
+    "content": "一篇吐槽 agentic coding 的文章列出「四骑士」式顽疾：其一，LLM 写的代码带着挥之不去的「slop 味」，让代码库对人类变得排斥——新一代模型不是更差，而是走向「无法雇用的聪明」，Claude 满口词汇沙拉、Astra 用竞赛式 golf 风格写码。作者认为这种邋遢是模型的持久签名而非成长阵痛，尤其对想保持对代码库熟悉度的团队是坏消息。",
+    "quote": "AI 写的代码能跑，就是没人愿意读。",
+    "source": "HN Front Page",
+    "url": "https://distantprovince.substack.com/p/the-four-horsemen-of-agentic-coding",
+    "published": "2026-10-03",
+    "uid": "dev_637776e6"
+  },
+  {
+    "title": "Linux 内核一次性修复数十个 CVE（Debian DSA-6528-1）",
+    "content": "LWN 转载 Debian 安全公告 DSA-6528-1：Linux 内核一次性修复数十个 CVE，编号横跨 2024 到 2026 年，从 CVE-2024-52560 排到 CVE-2026-80806。Debian 已发布更新包，提示稳定版用户尽快升级内核镜像并重启。对自建服务器、容器宿主与嵌入式设备而言，这类批量内核补丁是例行的高优先级运维动作，越早评估暴露面越安全。",
+    "quote": "内核补丁一打一串，重启才是真勇气。",
+    "source": "HN Front Page",
+    "url": "https://lwn.net/Articles/1097401/",
+    "published": "2026-10-03",
+    "uid": "dev_42da7e69"
+  },
+  {
+    "title": "DeepSeek Harness 桌面端开放公测并开源",
+    "content": "DeepSeek 发布 Harness 桌面端（macOS/Windows），进入全球公测并开源。它基于 Cordis 的「一切皆插件」架构，既可当桌面 App，也能从代码启动 Web UI。官方能力包括：日常办公（整理文件、分析数据、写文档）、编码（探索仓库、修 bug、跑测试）、研究（查证并引用来源）、后台任务（跑脚本、批处理）以及自写插件。默认模型为 DeepSeek-V4.1-Flash。",
+    "quote": "大模型厂商开始卷客户端，入口才是命门。",
+    "source": "HN Front Page",
+    "url": "https://www.deepseek.com/en/harness/",
+    "published": "2026-10-03",
+    "uid": "dev_246891ed"
+  },
+  {
+    "title": "Vorax Cloud：一份文件一万人分摊存储费",
+    "content": "V2EX 网友做了个网盘 Vorax Cloud，核心玩法是「同一份文件多人保存只存一份，存储费由大家平摊」：一批 1TB 文件原本每月 15 美元，若有一万人保存，每人分摊约 0.0015 美元/月。它底层用 S3，支持 WebDAV，还能绑定自己的域名公开访问文件。作者想解决的是「只存网络资源」与「只存私人照片」的用户被按同一价格收费的不公平。",
+    "quote": "一万人拼一份文件，云盘按份收费破防了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1246174",
+    "published": "2026-10-03",
+    "uid": "dev_784d1533"
+  },
+  {
+    "title": "让 AI 全流程开发加密货币网格系统，已实盘 3 天",
+    "content": "一位 V2EX 用户让 AI 全流程开发了一套加密货币网格交易自治层，跑在 Backpack 原生网格机器人之上，9/30 起实盘运行。原因是官方机器人只有网格、没有止盈止损、自动轮换和组合级风控，等于裸奔。自治层每 15 分钟巡检所有网格账本、持仓与权益并据此决策：止盈 +10%、止损 -6%、价格出界或临近强平等自动轮换。作者强调这只是记录，不构成投资建议。",
+    "quote": "让 AI 管钱的第三步：祈祷它别太勤快。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1246147",
+    "published": "2026-10-03",
+    "uid": "dev_c8ed9dae"
+  },
+  {
+    "title": "ccmods：给 Claude Code 糊了个 mod 导航站",
+    "content": "Claude Code 支持 mod 后，有网友用 AI 糊了个导航站 ccmods.dev，收录社区做的 Claude Code 界面定制与增强 mod，配套仓库 awesome-claude-code-mods 同步维护。对不满足默认 TUI、想改界面或加功能的用户来说，这相当于给 Claude Code 生态补了个「插件市场」入口，虽仍是个人尝鲜，但已能看出编辑器级工具被社区二次改造的趋势。",
+    "quote": "官方不给插件市场，社区自己搭一个。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1246134",
+    "published": "2026-10-03",
+    "uid": "dev_15dd1af6"
+  },
+  {
+    "title": "免费参考文献检查工具：专治 AI 编造的假引用",
+    "content": "针对「AI 代写论文会顺手编造参考文献」的痛点，有网友做了个免费工具，帮老师核对论文引用的真伪：AI 补出来的引用常出现 DOI、标题、作者、年份对不上，却看着很像真的。原本老师要一条条复制到 Google Scholar 核验，一篇论文几十条、一个班几十篇，极其耗时。工具把「论文是否存在 + 元数据是否自洽」的检查自动化，面向研究生与学术人群免费开放。",
+    "quote": "AI 编参考文献，专治学术界的信任焦虑。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1246126",
+    "published": "2026-10-03",
+    "uid": "dev_ed54f4a5"
+  },
+  {
+    "title": "内核 CVE 刚落地，小团队该怎么打补丁",
+    "content": "一篇面向小团队的 Linux 内核 CVE 应急手册：借本周 Hacker News 上近 500 分的内核漏洞讨论切入，讲清「补丁刚出、你该做什么」。内容覆盖如何判断自己是否暴露、如何在滚动发布与长稳内核之间取舍、如何用 livepatch 争取重启窗口、以及容器宿主与嵌入式设备的差异化处置。核心观点是别指望一次修完，而要把打补丁变成可重复、可回滚的流程，而不是英雄式深夜救火。",
+    "quote": "补丁不怕多，怕的是你从没演练过。",
+    "source": "Dev.to",
+    "url": "https://dev.to/eme_gug_0821b41b948be6516/a-linux-kernel-cve-just-dropped-now-what-a-practical-patching-playbook-for-small-teams-2iam",
+    "published": "2026-10-03",
+    "uid": "dev_fb6fcf3f"
+  },
+  {
+    "title": "编码 agent 的推测解码，索引错了格式",
+    "content": "一篇给编码 agent 做推测解码（speculative decoding）的复盘：作者指出，如果在孤立的代码片段上评测基于检索的推测解码，它看起来像是白送的加速；但真实编码 agent 的上下文是长会话、跨文件依赖与大量工具输出，继续沿用「为片段优化」的检索格式就会索引错东西，提速随之蒸发甚至倒退。结论是评测基准的形态决定了优化方向，别拿玩具场景的收益去许诺生产环境的性能。",
+    "quote": "拿片段跑得飞快的优化，一上整仓就现原形。",
+    "source": "Dev.to",
+    "url": "https://dev.to/reidmarlow/speculative-decoding-for-coding-agents-was-indexing-the-wrong-format-17pk",
+    "published": "2026-10-03",
+    "uid": "dev_3a1ebf2f"
+  },
+  {
+    "title": "K8s 节点 3 秒判死，流量却还打它 13 秒",
+    "content": "一篇质疑 Kubernetes「节点失联 40 秒后才被标记」说法的实测文：作者发现节点被检测为 dead 只需约 3 秒，但负载均衡仍会继续把流量打到它上面十几秒，造成真实请求失败。文章拆解 node controller、租约心跳与端点摘除各自的时间线，指出「检测快」不等于「摘流量快」，两段延迟叠加才是用户感知的丢包窗口，并给出缩短该窗口的配置手段。",
+    "quote": "节点三秒判死，流量却还在给它上坟。",
+    "source": "Dev.to",
+    "url": "https://dev.to/remdore/a-dead-kubernetes-node-is-detected-in-3-seconds-and-keeps-receiving-traffic-for-13-7fo",
+    "published": "2026-10-03",
+    "uid": "dev_535282b4"
+  },
+  {
+    "title": "2026 年从零手写 Atari 2600 游戏",
+    "content": "一位开发者在 2026 年从零手写 Atari 2600 游戏，记录 TIA 芯片教给他的事：这台 1977 年的主机没有帧缓冲、没有精灵系统，画一条线都要由 CPU 在扫描线间隙里精确卡点，写错一个周期画面就歪。作者从标题页和一个能移动的闪烁方块起步，逐步体会到那个年代「硬件即调度器」的编程范式，并对比今天抽象层层包裹的开发方式，感慨约束之下的手感正在消失。",
+    "quote": "没有帧缓冲的年代，程序员得数着周期画线。",
+    "source": "Dev.to",
+    "url": "https://dev.to/retrorom/i-built-an-atari-2600-game-from-scratch-in-2026-heres-what-the-tia-taught-me-371a",
+    "published": "2026-10-03",
+    "uid": "dev_56ca6890"
+  },
+  {
+    "title": "AG-UI 官方 .NET SDK：Agent 界面该由谁说了算",
+    "content": "张善友解读微软为 AG-UI 协议推出官方 .NET SDK 与 Blazor AI 组件：重点不是「AI 能不能做界面」，而是「Agent 的界面由谁说了算」。协议层交给 AG-UI 统一，呈现层由应用决定，且不强制全栈——一个 IChatClient 标准抽象即可打通传输与呈现两端。这补上了 .NET 的 Agent 应用栈拼图，让 C#/Blazor 团队能以统一协议接入各类 agent。",
+    "quote": "界面归应用，协议归 AG-UI，微软划界了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23187356",
+    "published": "2026-10-03",
+    "uid": "dev_c9ac7498"
+  },
+  {
+    "title": "Polars 数据处理指北：从 Pandas 迁移的正确姿势",
+    "content": "一篇 Polars 实战指北：Polars 是用 Rust 构建的高性能 DataFrame 库，凭借多核并行与内存效率，在中大型数据集上通常快于 Pandas。文章从安装、表达式 API、惰性求值与查询计划讲起，演示了筛选、聚合、窗口函数、连接等常用操作的写法与坑，并对比 Pandas 的思维差异——强调「用表达式描述意图、让引擎做优化」，帮助从 Pandas 迁移的开发者建立正确的心智模型。",
+    "quote": "从 Pandas 搬来的人，先学会别写循环。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/luohenyueji/p/23184458",
+    "published": "2026-10-03",
+    "uid": "dev_d878d3fb"
+  },
+  {
+    "title": "同态加密推理（十六）：能跑、能复现，但还不安全",
+    "content": "一篇同态加密（FHE）推理系列的收尾清单：作者把前十五篇的「未解问题」收拢并按严重程度排序，坦率给出这套密文推理引擎的边界。一句话概括是——它能跑、能复现、可供第三方独立验证，但目前不安全，且存在若干尚未解决的精度、性能与安全强度问题。文章强调这是「机制验证级」的成果而非生产可用，为后续把大模型密文推理推向实用划出了清晰的已知红线。",
+    "quote": "能跑能复现，就是不敢说它安全。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/haliuhome/p/23184101",
+    "published": "2026-10-03",
+    "uid": "dev_4728afd4"
+  },
+  {
+    "title": "Show HN：Audionaut，能被 AI 用 MCP 遥控的多轨音频编辑器",
+    "content": "Audionaut 是用现代 C++ 基于 JUCE 写的免费开源多轨音频编辑器，原生跑 Windows/macOS/Linux。它不求做全功能 DAW，只提供精确剪切、分轨播放列表、多声道支持与干净导出，体量轻。亮点是内置 MCP 支持，Claude 等 agent 可直接遥控编辑会话，每次改动以一个撤销步进落地；装好 Node.js 18+ 后一条命令就能接入。",
+    "quote": "DAW 太重，让 AI 替你动剪刀反而更香。",
+    "source": "HN Show HN",
+    "url": "https://github.com/kvoltmer/Audionaut",
+    "published": "2026-10-03",
+    "uid": "dev_2cc95c61"
+  },
+  {
+    "title": "缓存策略指北：别让数据库把同一件事重做一千遍",
+    "content": "一篇 Dev.to 后端缓存综述：别再让数据库每秒把同样的活重算一千遍。文章横向对比 cache-aside、read-through、write-through 与 write-behind 四种模式的读写路径与失效行为，讲清各自适合的读写比和一致性要求，并给出设定合理 TTL 的实践建议。作者强调缓存的两大难题——失效与并发——必须提前设计，否则缓存只会把不一致放大。",
+    "quote": "缓存不解决难题，只是把难题推迟到凌晨三点。",
+    "source": "Dev.to",
+    "url": "https://dev.to/sri2614/caching-strategies-make-backends-fast-without-melting-the-database-4hpi",
+    "published": "2026-10-03",
+    "uid": "dev_3176806a"
+  },
+  {
+    "title": "前沿权重的主权选项：政府一句话，模型对全球停摆 18 天",
+    "content": "Dev.to 一篇谈 Anthropic 招股书风险披露的文章：标准创投叙事假设技术领先能直接换成定价权，而披露警告政府行为对客户与分发伙伴构成实质威胁。作者举今年 6 月为例：商务部一道紧急出口管制，Anthropic 为合规对全球客户关停 Fable 5 与 Mythos 5 两款旗舰模型，18 天内集成方无法调用，7 月 1 日附加报告义务后才恢复。没立法、没开庭，行政裁量就让私有算力停摆。",
+    "quote": "权重存你机房，开关却攥在别人手里。",
+    "source": "Dev.to",
+    "url": "https://dev.to/deanlee/the-sovereign-option-on-frontier-weights-204d",
+    "published": "2026-10-03",
+    "uid": "dev_4137a1ea"
+  },
+  {
+    "title": "给思乡留学生做的开源 AI「Dadi 厨房」",
+    "content": "一篇 Hacktoberfest「为朋友而建」的提交：作者为刚搬到墨尔本留学的朋友 Nafis 做了本地 AI 伴侣 Dadi's Probashi Kitchen。痛点有二——澳洲超市买不到孟加拉特色食材，长辈菜谱又全是「一撮」「适量」这类无法量化的说法。这个 AI 扮成慈祥的孟加拉祖母，用 Banglish 安慰他，把 Ilish 鱼换成三文鱼等本地替代，并把模糊的传统计量换算成精确的杯与克。",
+    "quote": "祖母的『适量』，终于被 AI 换算成克了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/syedzuhairhossain/dadis-probashi-kitchen-bringing-home-to-expat-friends-with-open-source-ai-31jl",
+    "published": "2026-10-03",
+    "uid": "dev_54c1824a"
+  },
+  {
+    "title": "百万订单踩坑记：一行框架代码拖垮整站",
+    "content": "花店 SaaS 作者复盘节日大促事故：某高频操作变慢，团队先怀疑 2000 多万行的数据库，瘦表一小时仍无效，加日志后才定位到一行队列删除代码。翻框架源码发现 Yii 队列 remove() 的锁是自旋忙等、无超时，靠 1 秒 TTL 自然过期，等价于全局串行，峰值 50 个请求最后一个要等约 50 秒，PHP-FPM 被占满、整站 502。作者反思：别迷信「底层一定没问题」。",
+    "quote": "以为是数据库的锅，结果是框架在排队摸鱼。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/liuzhang/p/23175661",
+    "published": "2026-10-03",
+    "uid": "dev_e7fefecc"
+  },
+  {
+    "title": "用 SciPy 做时间序列分析：趋势、周期与滞后相关",
+    "content": "博客园一篇入门指北讲如何用 SciPy 做时间序列分析：手头是一串按时间排列的数据，想知道里面有没有趋势、有没有周期性、噪声多大，或两个序列之间是否存在延迟关系。SciPy 在信号处理与统计检验上提供了大量现成工具，配合 Matplotlib 画图，基本能覆盖日常分析的大部分需求。文章从去趋势、谱分析到互相关，给出可复用的代码思路。",
+    "quote": "数据不说谎，只是藏在噪声里等你挖。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/wang_yb/p/23187441",
+    "published": "2026-10-03",
+    "uid": "dev_bd77504d"
+  },
+  {
+    "title": "读懂 Nsight Compute 报告：Details 页重点数据细读",
+    "content": "博客园 CUDA 性能系列第二章，专讲 Nsight Compute 的 Details 页。这一页是全部指标的大合集，被切成 14 个 section 从上往下排开，信息量比 Summary 大一个量级。作者挑出其中三个最值得细读的重点 section 讲透，其余留到下一章按页面顺序补齐。对做 GPU 内核优化的人，这是把「看得懂数字」变成「知道该改哪」的关键一页。",
+    "quote": "指标一屏 14 段，看不懂就只是好看的仪表盘。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/nibel/p/23179607",
+    "published": "2026-10-03",
+    "uid": "dev_f66e593d"
+  },
+  {
+    "title": "做 YouTube 评论分析踩到的坑：配额、分页与 searchTerms",
+    "content": "V2EX 网友记录用 YouTube Data API v3 做评论工具的踩坑：免费额度 10000 units/天看似宽裕，但 search.list 一次吃 100 units 且另有每天 100 次独立桶，靠关键词找视频会先炸在这里。他提醒评论搜索该用服务端 searchTerms 参数而非前端过滤，且分页与回复是两个 endpoint，实际请求数约等于顶级评论页数加有回复的评论条数。",
+    "quote": "配额不是花在拉数据，是先花在找视频上。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1246085",
+    "published": "2026-10-03",
+    "uid": "dev_1c4d6dcb"
+  },
+  {
+    "title": "把文件变成「雪花视频」：黑白方块文件传输工具",
+    "content": "V2EX 网友用 AI 做了个小工具：把文件编码成像老式黑白电视没信号时的「雪花视频」，再从画面里把文件还原出来。起因很实际——有些环境往里拷文件方便，想把生成的日志、配置拿出来查看却没那么顺手。作者受阮一峰博客里类似思路的启发，把数据变成黑白画面连成视频，需要时再解码还原，思路接近「视觉二维码」，为跨隔离环境搬数据提供了种土办法。",
+    "quote": "过不了网闸？那就把文件拍成雪花带出去。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1246180",
+    "published": "2026-10-03",
+    "uid": "dev_70ffc994"
+  },
+  {
+    "title": "一个 VC 投资人看 AI 应用：套壳项目为何全军覆没",
+    "content": "一位自述没有技术背景的 VC 投资人在 V2EX 复盘：25 年上半年投了两家 agent 项目，趁 Manus 被 Meta 收购的热度估值半年涨了几倍。但一年后这批套壳项目几乎全军覆没，反而是大厂与基模厂商做出了 Claude Code、Codex、WorkBuddy 这些产品；创始人总结是模型能力快速吃掉了当初靠套壳和工程解决的需求。他仍相信模型是基建，应用终会爆发。",
+    "quote": "套壳一时爽，模型一升级全白干。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1246131",
+    "published": "2026-10-03",
+    "uid": "dev_085b71dc"
+  }
+]
