@@ -1,0 +1,128 @@
+[
+  {
+    "title": "不靠向量，也能在浏览器里跑 RAG",
+    "content": "一个纯 vanilla JavaScript 写的 RAG 项目，主张「RAG 不一定非要 embedding」：检索直接在浏览器里完成，不依赖后端、不上传文档、也不用先跑一遍向量化。对文档量不大又在意隐私的场景，这种「零依赖、全本地」的做法把 RAG 的门槛压到打开网页就能用，也给动不动就上向量库的方案泼了盆冷水。",
+    "quote": "不是所有 RAG 都得先建个向量库才行。",
+    "source": "HN Show HN",
+    "url": "https://github.com/gmaterni/ragindex",
+    "published": "2026-10-04",
+    "uid": "dev_a54eff0c"
+  },
+  {
+    "title": "lazy-clean：别让编码 Agent 把代码越写越复杂",
+    "content": "一个专门给编码 Agent「踩刹车」的小工具：AI 帮你改代码时，很容易顺手引入多余的抽象、层层包装和不必要的依赖，把简单需求做成过度设计。lazy-clean 的思路是让 Agent 少加戏，保持改动最小、结构最简。对长期用 Agent 写代码、又不想接一堆过度工程的人来说，这种「反向提示」正变得和生成能力一样重要。",
+    "quote": "AI 写代码最大的毛病，是把三行活干成三个抽象层。",
+    "source": "HN Show HN",
+    "url": "https://github.com/JustasMonkev/lazy-clean",
+    "published": "2026-10-04",
+    "uid": "dev_00fbed60"
+  },
+  {
+    "title": "给 MCP 做一次确定性安全扫描",
+    "content": "随着 Model Context Protocol 被越来越多 Agent 用来接工具，MCP 服务本身也成了新的风险点。这个 Show HN 项目提供一套「确定性」扫描器，不靠模型判断，而是用固定规则检查 MCP 配置与实现里的隐患。在 Agent 能直接调用外部工具、甚至动数据的当下，先把「它能碰什么」查清楚，比出事后再补救划算得多。",
+    "quote": "Agent 的手伸得越长，越得先给它做个安检。",
+    "source": "HN Show HN",
+    "url": "https://github.com/zariffromlatif/life-forge",
+    "published": "2026-10-04",
+    "uid": "dev_9414ef1f"
+  },
+  {
+    "title": "Kokoro TTS 搬进浏览器：41 种音色、全程本地跑",
+    "content": "有人把 Kokoro TTS 做成了纯浏览器版本：41 种音色、覆盖 6 种语言，全部在本地运行，不需要上传文本、也不依赖云端合成。对经常要做配音、又在意内容外泄的人来说，这种「打开网页就能用、数据不出本机」的本地 TTS，正在成为云合成服务之外一个实在的替代选项。",
+    "quote": "配音这种事，稿子还是别先寄给云端了。",
+    "source": "HN Show HN",
+    "url": "https://sandbook.app/kokoro-tts-online",
+    "published": "2026-10-04",
+    "uid": "dev_bc34754b"
+  },
+  {
+    "title": "一本免费的交互数学教材：从数数一路走到哥德尔",
+    "content": "一个免费的交互式数学教材，内容跨度从最基础的「数数」一路覆盖到哥德尔不完备定理，用可上手操作的方式把数学的整条脉络串起来，而不是干巴巴地列公式。对想系统补数学、又受不了传统教材枯燥的开发者来说，这种能动手玩的分层讲解，比单纯刷题更接近「真的理解」。",
+    "quote": "从数数到哥德尔，中间隔的不是智商，是一本好教材。",
+    "source": "HN Show HN",
+    "url": "https://legost.in/en/utilities/math",
+    "published": "2026-10-04",
+    "uid": "dev_d12823bb"
+  },
+  {
+    "title": "27 天无人值守的 Agent 集群：没崩，硬盘先满了",
+    "content": "作者跑了一个由多个 Agent 组成的「发布舰队」，连续 27 天基本撒手不管，让它们自己注册账号、写稿、跨十几个平台发布。结果出人意料：系统没崩，拉响的第一个警报居然是硬盘占用冲到 85%。这篇复盘点出了自动化长跑里最真实的一课——真正先出事的往往不是代码逻辑，而是磁盘、配额这类不起眼的资源。",
+    "quote": "Agent 不闹脾气，只默默把硬盘塞满。",
+    "source": "Dev.to",
+    "url": "https://dev.to/agentdiarylog/27-days-of-autonomous-agents-nothing-crashed-disk-just-hit-85-5b44",
+    "published": "2026-10-04",
+    "uid": "dev_f3833592"
+  },
+  {
+    "title": "我给 GitLab 写了个自托管 Agent，它评审了 1000+ 个 MR",
+    "content": "作者做了一个自托管的 GitLab AI Agent：把 issue 指派给机器人，几分钟后就能收到一份带修复的草稿 MR；有人开 MR，它又会抢在人类之前完成评审。上线至今，它已经评审了 1000 多个合并请求。相比逐条手工描述，这种「把 Agent 挂进现有工作流」的落地方式，更能看出 AI 编码助手在真实团队里的边界与价值。",
+    "quote": "1000 个 MR 背后，是 1000 次它比你先看到代码。",
+    "source": "Dev.to",
+    "url": "https://dev.to/vrajpal-jhala/i-built-a-self-hosted-ai-agent-for-gitlab-it-has-reviewed-1000-merge-requests-2g7b",
+    "published": "2026-10-04",
+    "uid": "dev_f087af93"
+  },
+  {
+    "title": "Agent 的交易「成功」了，为什么授权检查还是会挂",
+    "content": "一个 AI Agent 发起链上交易，没有回滚、面板上明晃晃写着「Success」，但作者提醒：这并不等于它执行的就是用户真正授权的那件事。文章拆解了「交易成功」与「授权通过」之间的鸿沟——执行没报错，不代表调用符合预期。当 Agent 能替用户动钱时，把「成功」和「做对了」分开看，是最容易被忽视的安全盲区。",
+    "quote": "没报错，不代表它干的正是你点头那件事。",
+    "source": "Dev.to",
+    "url": "https://dev.to/imokokok/why-a-successful-agent-transaction-can-still-fail-authorization-checks-2pm1",
+    "published": "2026-10-04",
+    "uid": "dev_81adfafe"
+  },
+  {
+    "title": "不引 Python 服务，直接在 TypeScript 里跑统计检验",
+    "content": "很多团队做 A/B 对比时，前端已经有数据和图表，却为了跑几个统计检验，硬生生多引一个 Python 微服务。作者展示了直接在 TypeScript 里完成统计检验的做法，省掉跨语言调用和额外部署。它提醒我们：技术栈里「大家都这么做」的那层架构，未必真的必要，能少一个服务就少一个。",
+    "quote": "为了跑个 t 检验就多养一个服务，图啥？",
+    "source": "Dev.to",
+    "url": "https://dev.to/kharlamov/statistical-tests-in-typescript-without-a-separate-python-service-36c8",
+    "published": "2026-10-04",
+    "uid": "dev_bd809460"
+  },
+  {
+    "title": "JT/T 808 部标车辆监控平台实战：先搞懂业务与架构",
+    "content": "一篇车联网实战系列的开篇，讲清楚做车辆监控平台绕不开的三个国标：808 管终端怎么跟平台说话，1078 管车载视频怎么传，809 管平台如何向上级监管平台汇报。文章从实时监控、轨迹查询、告警、围栏到报表逐层梳理业务与架构，是少见的把国内车联网国标讲得系统又接地气的长文，适合想入行这块的开发者起步。",
+    "quote": "车联网的尽头，是三个背不完的国标。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/xcj26/p/23192965",
+    "published": "2026-10-04",
+    "uid": "dev_48e5ced1"
+  },
+  {
+    "title": "势能分析：为什么单次很贵，平均下来却不贵",
+    "content": "一篇讲摊还分析（势能分析）的算法长文。它从「单次操作最坏很贵、但一串操作里贵操作次数有限」这个直觉切入，解释为什么某些数据结构均摊到每次并不慢，并给出势能法的定义与推导。对写代码时被「偶发卡顿」困扰、想真正理解均摊复杂度的人来说，这是一份讲得比较扎实的中文材料。",
+    "quote": "偶尔很慢不算慢，关键看它一年慢几次。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/lvwangshuOI/p/23191542",
+    "published": "2026-10-04",
+    "uid": "dev_606445ae"
+  },
+  {
+    "title": "客户总改测试数据？干脆用脚本一键重生成 SQL",
+    "content": "客户频繁变更测试数据几乎是项目日常，每次拿到新 Excel 就手工改 SQL，又慢又容易错。作者把「按客户文件生成 SQL」这件事交给 AI 生成的脚本，针对具体项目写一个专用生成器，一键重建数据。文中的思路很实用：与其每次临时求助 AI，不如把重复劳动固化成脚本，把「临时应付」变成「可复用工具」。",
+    "quote": "每次手工改 SQL 的痛，都在提醒你该写脚本了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/jyzhao/p/23189291",
+    "published": "2026-10-04",
+    "uid": "dev_0f018669"
+  },
+  {
+    "title": "炒股老不按规则来？干脆写个工具把自己管住",
+    "content": "作者的自嘲很真实：炒股全看当天心情，备忘录里写好的规则自己都不看。于是干脆写了个工具，把买卖条件先定死，每天收盘后对着股票池自动扫一遍，该买该卖列出来，做不做仍由自己点。条件用 RSI、均线、量比、PE 这些点选拼出来，不写代码，还能拿历史日线回测。它本质上是把「自律」外包给一段程序，也顺便把每笔交易贴上了「守没守规则」的标签。",
+    "quote": "管不住自己的手，那就让代码来管。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1246267",
+    "published": "2026-10-04",
+    "uid": "dev_4ab29066"
+  },
+  {
+    "title": "Pebrel：给 Windows 补一个好看的 AI 终端",
+    "content": "开发者的痛点很具体：Mac 上好看的终端一大把，Windows 上 Warp 偏重、Windows Terminal 又偏基础。当他频繁用 Claude Code、Codex、同时处理多个本地和远程会话时，就想要一个轻快好看、又贴合这些 AI 工作流的终端，于是自己动手写了 Pebrel。它反映了一个趋势——终端正在从「敲命令的地方」变成「管理多个 Agent 会话的工作台」。",
+    "quote": "终端不再只是敲命令，还得管住一群 Agent。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1246274",
+    "published": "2026-10-04",
+    "uid": "dev_bc40fced"
+  }
+]
