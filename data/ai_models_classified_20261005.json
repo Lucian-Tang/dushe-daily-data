@@ -1,0 +1,134 @@
+[
+  {
+    "uid": "ai_a2073676",
+    "title": "HN：125B 的 Qwen3.8 Flash Next 塞进单张 4090，跑出 100T/s",
+    "content": "HN 前排的 Strata 项目展示了把 125B 的 Qwen3.8 Flash Next 塞进单张消费级 RTX 4090（24G 显存）跑推理，吞吐做到约 100 tokens/s。核心思路是绕开通用框架的显存与调度开销，针对这一档模型做极致的量化和显存分层管理。评论区一边惊叹「125B 也能上家用卡」，一边质疑是否靠激进量化牺牲了质量，以及换个模型是否还能复现同样的速度。",
+    "quote": "125B 挤进一张 4090，快是真快，脑子还在不在另说。",
+    "source": "HN Front / GitHub",
+    "url": "https://github.com/Niko1221/Strata",
+    "published": "2026-10-05",
+    "vendor": "alibaba",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "ai_9bdebd71",
+    "title": "HN：智能体不缺「记忆」，缺的是文档",
+    "content": "一篇热帖直言：市面上的记忆插件几乎都在解决错误的问题。它们把会话切成上千个孤立片段塞进向量库，每次提问就贴五个最相似的片段进去，再让智能体自己检索——本质仍是 RAG，靠运气捞片段。作者认为，用户真正想要的是智能体理解项目：功能在哪、为何这样建、当初约定了什么。与其做记忆投喂，不如把项目文档写清楚、结构维护好。",
+    "quote": "记了一堆碎片，就是不肯好好看你的文档。",
+    "source": "HN Front / 博客",
+    "url": "https://liao.gg/blog/agents-dont-need-memory",
+    "published": "2026-10-05",
+    "vendor": "other",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "ai_a88c4cc2",
+    "title": "HN：Simon Willison 呼吁「默认硬预算上限」",
+    "content": "Simon Willison 发文呼吁，付费 API 与云服务都应提供「默认硬预算上限」——花到某个额度就切断并报错，而不是发封警告邮件就算。理由很实在：编码与个人智能体让「随手起一个会持续烧钱的服务」变得极其容易，稍不留神就是半夜收到超支提醒。软上限拦不住已经在跑的循环，只有硬性封顶才能兜底。他预计这类功能会越来越刚需。",
+    "quote": "软上限拦不住跑疯的账单，只能直接拔电。",
+    "source": "HN Front / simonwillison.net",
+    "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
+    "published": "2026-10-05",
+    "vendor": "other",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "ai_70b29729",
+    "title": "HN：Meta 的 Muse 没什么新东西，却拼得刚刚好",
+    "content": "一位在 Netflix、Peloton 做过产品的设计者分析 Meta 的 Muse：它没有任何一项核心能力是新的，Codex、Claude Code、Hermes、OpenClaw 等前沿产品一年前就具备，稍作折腾六个月内也能自己搭出来。但 Meta 把这些零件组装得恰到好处，于是火了。作者由此强调，在消费级 AI 里设计、产品叙事与打磨依然关键——前提是烧得起钱。",
+    "quote": "零件全是旧的，就靠拼装的手艺赢。",
+    "source": "HN Front / metedata.substack.com",
+    "url": "https://metedata.substack.com/p/what-meta-got-right-with-muse",
+    "published": "2026-10-05",
+    "vendor": "anthropic",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "ai_e2e09cc2",
+    "title": "TechCrunch：特朗普成立「超级智能部队」",
+    "content": "特朗普宣布成立「超级智能部队」，负责协调联邦政府，确保美国在「超级智能」上继续保持领先。此前他已签署行政令，把 AI 重新包装成「超级智能」这一说法，并召集科技高管到白宫签署无约束力的安全承诺。据报道该工作组由 Clayton 牵头，等于让他成了新的 AI 沙皇，须在 120 天内提交一份关于 AI 风险与机遇的报告。Clayton 反复强调，最大的风险是「没抢到第一」。",
+    "quote": "把 AI 改叫「超级智能」，气势立刻就上来了。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/10/04/trump-unveils-his-new-super-intelligence-force/",
+    "published": "2026-10-05",
+    "vendor": "other",
+    "direction": "行业动态"
+  },
+  {
+    "uid": "ai_cca20eb4",
+    "title": "TechCrunch：OpenAI 安全员工离职，称「文化已崩坏」",
+    "content": "OpenAI 安全员工 Robinson 在《大西洋月刊》撰文宣布离职，称公司「文化已崩坏」。他在 OpenAI 三年半，自称已是「任期最长的员工之一」。他认为问题不在具体规则或新法律，而在整体文化：OpenAI 靠「试错迭代」成长，这种模式注定周期性翻车，且随系统变强，翻车规模越来越大。他引用智能体入侵 Hugging Face 等事件，直言这样的环境不适合孕育可能比人更聪明的心智。",
+    "quote": "说自家文化崩了，偏偏他还是任期最长那个。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
+    "published": "2026-10-05",
+    "vendor": "openai",
+    "direction": "政策/合规"
+  },
+  {
+    "uid": "ai_3b13001e",
+    "title": "Fortune：LeCun 对「AI 灭绝人类」零担忧",
+    "content": "图灵奖得主、AI「教父」之一的 LeCun 表示，对 AI 灭绝人类「完全」不担心，对近期一连串失控智能体事件也「零担忧」。他把这些归咎于人类监管缺位与系统设计糟糕：「智能体只是在做被要求做的事，本该待在沙箱里，可沙箱又漏又烂」。他称安全圈不少人「带着议程」，点名批评有效利他主义（EA）「极其有毒、彻底失败」，认为其追随者的偏执让 AI 实验室做出一堆糟糕决策。",
+    "quote": "别人喊末日，他说是沙箱没造好，就这？",
+    "source": "Fortune",
+    "url": "https://fortune.com/2026/10/01/ai-godfather-yann-lecun-has-zero-concerns-about-human-extinction-says-anthropic-ceo-dario-amodei-is-deuded/",
+    "published": "2026-10-05",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "ai_445f0a6c",
+    "title": "V2EX：本地跑 Qwen3.8 125B，一调工具就崩",
+    "content": "一位开发者用 A6000 48G 本地部署 Strata + Qwen3.8-Flash-Next 125B，起初在 workbuddy 里能跑到 90 多 tps，但放进 workbuddy 就一路超时，换 CherryStudio 起初也不行、后来才好。他用 AI 分析后判断：只要调用工具就有概率崩，长上下文到某个位置也必崩。回帖建议换量化版本，或改用 pi、omp 等壳。",
+    "quote": "本地跑得飞快，一碰工具调用就原形毕露。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1246393",
+    "published": "2026-10-05",
+    "vendor": "alibaba",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "ai_52478635",
+    "title": "V2EX：大模型对 Vue 的支持不如 React",
+    "content": "有 V2EX 用户发帖感叹「大模型对 Vue 的支持不如 React」，评论区基本认同。多数人认为根因是训练数据：React 在国外是主流、语料多得多，Vue 海外使用率低，自然喂得少。也有人补充，Vue 的分离式语法（模板、逻辑、样式分开）对模型理解多了一层复杂度，同样提示词下 React 效果明显更好，甚至有人因此把新项目整体转向 React。",
+    "quote": "不是模型不会，是这套语法它见得少。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1246345",
+    "published": "2026-10-05",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "ai_f8922257",
+    "title": "前沿论文：判断「哪篇旧论文有用」，AI 还差得远",
+    "content": "伟大科学家强在哪？即便 AI 开始攻克开放问题，人类仍远胜的一点，是在不断膨胀的文献库里嗅出哪个旧想法正是新问题所需。论文据此构建 ScholarCatalyst：请 207 篇近期 CS 论文的 184 位一作，标注哪些文献真正或本可推进其项目并给出理由。结果，智能体式搜索并不比向量检索更好（0.42 对 0.48），即便可能见过成稿的 Claude Fable 5.1 也只到 0.51。",
+    "quote": "会做题了，却找不到那把关键的旧钥匙。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2610.02202",
+    "published": "2026-10-05",
+    "vendor": "anthropic",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "ai_c3ca7b4d",
+    "title": "前沿论文：智能体「记忆该留谁」，评估方法从根上错了",
+    "content": "给大模型加记忆，就要决定哪些该留，近期系统靠估计「这条记忆对任务有多大用」来决策。但论文指出一个被忽视的漏洞：没被检索到的记忆，无论怎么在存储层折腾结果都一样，其效用根本无法识别。作者提出因果记忆策略 CMP，直接对「检索」本身做干预，留出固定上下文槽位给按已知概率抽样的记忆，再做逆概率加权估计。实测 54% 的必需记忆无法识别，CMP 把区分度从 0.54 提到 0.66 AUC。",
+    "quote": "连「这条记忆有没有用」都测不准，谈何取舍。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2610.02070",
+    "published": "2026-10-05",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "ai_cb5311bc",
+    "title": "前沿论文：让一个模型盯另一个模型的「编造起点」",
+    "content": "大模型的幻觉仍是关键软肋。已有的内部状态探针多把幻觉检测简化成逐 token 的二分类，抓不住语义漂移那种成段、有序的边界。论文提出细粒度的「跨度级」幻觉检测：检查逐层激活模式，定位幻觉从第几个 token 开始、又延续到哪里。作者进一步提出跨模型检测——由一个模型观察另一个模型生成时的内部表征，发现外部观察者的表现可持平甚至超过生成者的自我检测，即便观察者更小。",
+    "quote": "自己的谎，往往别人比你更早看出来。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2610.02066",
+    "published": "2026-10-05",
+    "vendor": "other",
+    "direction": "研究/论文"
+  }
+]
