@@ -1,0 +1,137 @@
+[
+  {
+    "title": "Rei：把语言模型塞进 37 万参数的 Game Boy Color",
+    "content": "作者把一个小语言模型塞进了 Game Boy Color：约 37 万参数，在 8 位掌机这种极限硬件上跑推理。这是对「模型一定要大」的一次反向炫技，也提醒人们端侧推理的边界能被压到多低。对嵌入式 ML、极限优化感兴趣的开发者值得围观这个离谱又认真的实验。",
+    "quote": "大模型内卷到没边，有人反手把它塞进掌机。",
+    "source": "HN Show HN",
+    "url": "https://github.com/crashtheuniverse/chatgbc",
+    "published": "2026-10-06",
+    "uid": "dev_0fcfbb8b"
+  },
+  {
+    "title": "Skytail：把 Three.js 游戏编译成 C++ 跑在 Xbox 上",
+    "content": "作者把一个用 Three.js 写的游戏编译成 C++，成功跑在了 Xbox 主机上。核心是让 Web 技术栈的代码以原生方式运行，绕开浏览器这一层开销。对想做跨端、又不愿重写渲染逻辑的开发者，这是一次挺有意思的工程实验。",
+    "quote": "网页游戏嫌浏览器重，干脆编译进主机。",
+    "source": "HN Show HN",
+    "url": "https://github.com/geastack/skytail",
+    "published": "2026-10-06",
+    "uid": "dev_aed614ba"
+  },
+  {
+    "title": "软件质量的年代，还是鸵鸟的年代？",
+    "content": "GNOME 开发者撰文追问：AI 大量代写代码的当下，软件质量到底走进了哪个时代？文章用「鸵鸟」形容那种对质量下滑视而不见的心态，呼吁正视 AI 生成代码带来的可维护性与缺陷风险。在「能跑就行」的氛围里，这盆冷水值得一读。",
+    "quote": "代码堆得越快，质量这摊事越没人敢看。",
+    "source": "HN Front Page",
+    "url": "https://blogs.gnome.org/mcatanzaro/2026/10/02/the-era-of-software-quality-or-the-era-of-ostriches/",
+    "published": "2026-10-06",
+    "uid": "dev_5f719b60"
+  },
+  {
+    "title": "mold 链接器 3.0.0 发布：用 Rust 完整重写",
+    "content": "以「快」著称的链接器 mold 发布 3.0.0，作者 rui314 宣布用 Rust 完整重写。链接是编译流程里最容易被忽视的一环，mold 一直靠极致速度抢镜。这次重写既是对 Rust 的一次背书，也可能实实在在影响大型 C++ 项目的构建体验。",
+    "quote": "连链接器都叛逃到 Rust 了，C++ 心累。",
+    "source": "HN Front Page",
+    "url": "https://github.com/rui314/mold/releases/tag/v3.0.0",
+    "published": "2026-10-06",
+    "uid": "dev_acee292c"
+  },
+  {
+    "title": "Minigraf：Rust 写的嵌入式双时态图数据库",
+    "content": "Minigraf 是一个用 Rust 写的嵌入式双时态图数据库：既能嵌进应用进程，又能同时记录数据「何时为真」和「何时被写入」两套时间线。对需要审计、回溯历史状态的场景，双时态建模比普通时间戳严谨得多，是值得关注的新思路。",
+    "quote": "数据改了就没了？它连哪天改的都留着。",
+    "source": "HN Front Page",
+    "url": "https://github.com/project-minigraf/minigraf",
+    "published": "2026-10-06",
+    "uid": "dev_7f6de612"
+  },
+  {
+    "title": "text-to-cad：给编码 Agent 装上一双造机械的手",
+    "content": "text-to-cad 让编码 Agent 具备 CAD 能力：用自然语言生成参数化模型文件，主打「让 Agent 从写代码延伸到造零件」。项目正在 GitHub 冲上趋势榜，约 1.7 万星。把 LLM 的能力边界推到工业设计与制造，方向相当新。",
+    "quote": "Agent 会写代码还不够，现在开始造零件了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/earthtojake/text-to-cad",
+    "published": "2026-10-06",
+    "uid": "dev_2444ce55"
+  },
+  {
+    "title": "T3 Code：一堆编码 Agent 的「统一遥控器」",
+    "content": "T3 Code 自称「Agent 控制台」：用手机、网页或桌面应用远程操控本机的 Claude Code、Codex、Cursor、OpenCode、Grok Build 等编码 Agent，统一接入多个 CLI 订阅。作者强调开源、可自行 fork。约 2.5 万星，命中「到处是 Agent、却缺统一入口」的痛点。",
+    "quote": "Agent 装了一堆，终于有人做遥控器了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/pingdotgg/t3code",
+    "published": "2026-10-06",
+    "uid": "dev_cccb6572"
+  },
+  {
+    "title": "Agent-Reach：让 AI Agent 长一双上网的眼睛",
+    "content": "Agent-Reach 给 AI Agent 装上「眼睛」：一个 CLI 就能读取和搜索 Twitter、Reddit、YouTube、GitHub、B 站、小红书等站点，且宣称零 API 费用。约 9.1 万星，直击 Agent 联网取数贵、接口杂的痛点，属于典型的基础设施型项目。",
+    "quote": "Agent 要联网，结果 API 账单比模型还贵。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/Panniantong/Agent-Reach",
+    "published": "2026-10-06",
+    "uid": "dev_c916a5a1"
+  },
+  {
+    "title": "IINA 1.5.0 发布：macOS 播放器的口碑担当",
+    "content": "macOS 上口碑甚佳的开源播放器 IINA 发布 1.5.0，帖子在 V2EX 收获 111 条回复，足见其在 Mac 用户中的分量。IINA 一直以原生界面、基于 mpv 的强悍解码和现代交互著称，这次更新又给「换不换播放器」的争论添了把火。",
+    "quote": "在 Mac 上想找更好的播放器？省省吧。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1246346",
+    "published": "2026-10-06",
+    "uid": "dev_9c3df9e8"
+  },
+  {
+    "title": "Kivo：Claude Code 多账号自动路由，撞限额就换号",
+    "content": "作者自用多个 Claude 订阅、API key 和中转站，最烦的是撞上限后要手动改配置，于是做了 Kivo：把所有账号收进一个本地 endpoint，撞限额自动切到下一个，也能负载均衡或固定用一个；每个账号的 5 小时 / 每周窗口、重置时间、token 和花费一眼看清，一键接入 Claude Code。",
+    "quote": "额度撞墙就换号，比手改配置优雅多了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1246443",
+    "published": "2026-10-06",
+    "uid": "dev_4edb4ebb"
+  },
+  {
+    "title": "Precedent Loop：让 Agent 换个会话还记得项目里踩过的坑",
+    "content": "用 Codex、Claude Code 写久了最头疼「它不记事」：上周查了一下午的根因和方案，这周开个新会话它又从零猜，甚至重提已经否掉的方案。作者试过把经验写进 AGENTS.md / CLAUDE.md，可规则能放，踩坑经验却塞不下。Precedent Loop 想解决的就是这种跨会话的项目记忆。",
+    "quote": "换个会话就失忆，Agent 记性比前任还差。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1246437",
+    "published": "2026-10-06",
+    "uid": "dev_dbe7f7cc"
+  },
+  {
+    "title": "脚手架轨迹是糟糕的 Agent 训练数据",
+    "content": "当 Agent 在长终端任务上翻车，常见做法是加脚手架：状态机、环境探针、重试包装。作者警告：这些「脚手架轨迹」拿来训练模型是灾难——模型学到的是脚手架本身，而不是自己的能力。正在做 Agent 微调的团队应该读一读这篇。",
+    "quote": "用拄拐的录像教人跑步，学废了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/reidmarlow/scaffolded-trajectories-make-terrible-agent-training-data-2lb7",
+    "published": "2026-10-06",
+    "uid": "dev_9d3ae4fa"
+  },
+  {
+    "title": "我用提示词投毒，防住复刻我网站的 AI",
+    "content": "面对 Cursor、Claude Code 这类工具「给个网址就能秒抄界面」的现实，作者反其道而行：在自己的作品集里埋下精心设计的提示词陷阱和 token 榨取器，专门坑那些来爬取、复刻的 AI。文章带点黑色幽默，也折射出前端作品被 AI 一键复制的焦虑。",
+    "quote": "防不住人抄，那就给 AI 下点毒。",
+    "source": "Dev.to",
+    "url": "https://dev.to/hordii_bohdan/how-i-protected-my-portfolio-from-ai-vibe-coders-using-prompt-poisoning-token-drainers-2m6d",
+    "published": "2026-10-06",
+    "uid": "dev_86eb1889"
+  },
+  {
+    "title": "Agent Loop：AI 是怎么从「一句一答」进化成「自己干活」的",
+    "content": "博客园文章用最通俗的方式讲清 Agent 和普通聊天机器人的区别，落点在「Agent Loop」：模型不再一问一答，而是循环地观察、决策、调用工具、再观察，直到任务完成。适合想入门 Agent 原理、又怕被术语劝退的读者。",
+    "quote": "聊天机器人只会接话，Agent 会自己找活干。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Tomorrowland/p/23203861",
+    "published": "2026-10-06",
+    "uid": "dev_5a513064"
+  },
+  {
+    "title": "别再 rm 日志了：Linux 下安全清空日志文件的正确姿势",
+    "content": "磁盘告警一响就 rm 日志再 touch？作者指出这是埋雷操作：进程仍持有已删除的 inode，空间不释放，还可能出现日志断写。文章讲清底层原因，并给出 truncate 等安全做法。运维和后台开发都该收藏的一条硬知识。",
+    "quote": "rm 了日志磁盘还是满的，这就是玄学背锅。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/jyzhao/p/23200588",
+    "published": "2026-10-06",
+    "uid": "dev_e04f7855"
+  }
+]
