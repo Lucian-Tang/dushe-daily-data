@@ -1,0 +1,227 @@
+[
+  {
+    "title": "Rei：把语言模型塞进 37 万参数的 Game Boy Color",
+    "content": "作者把一个小语言模型塞进了 Game Boy Color：约 37 万参数，在 8 位掌机这种极限硬件上跑推理。这是对「模型一定要大」的一次反向炫技，也提醒人们端侧推理的边界能被压到多低。对嵌入式 ML、极限优化感兴趣的开发者值得围观这个离谱又认真的实验。",
+    "quote": "大模型内卷到没边，有人反手把它塞进掌机。",
+    "source": "HN Show HN",
+    "url": "https://github.com/crashtheuniverse/chatgbc",
+    "published": "2026-10-06",
+    "uid": "dev_0fcfbb8b"
+  },
+  {
+    "title": "Skytail：把 Three.js 游戏编译成 C++ 跑在 Xbox 上",
+    "content": "作者把一个用 Three.js 写的游戏编译成 C++，成功跑在了 Xbox 主机上。核心是让 Web 技术栈的代码以原生方式运行，绕开浏览器这一层开销。对想做跨端、又不愿重写渲染逻辑的开发者，这是一次挺有意思的工程实验。",
+    "quote": "网页游戏嫌浏览器重，干脆编译进主机。",
+    "source": "HN Show HN",
+    "url": "https://github.com/geastack/skytail",
+    "published": "2026-10-06",
+    "uid": "dev_aed614ba"
+  },
+  {
+    "title": "软件质量的年代，还是鸵鸟的年代？",
+    "content": "GNOME 开发者撰文追问：AI 大量代写代码的当下，软件质量到底走进了哪个时代？文章用「鸵鸟」形容那种对质量下滑视而不见的心态，呼吁正视 AI 生成代码带来的可维护性与缺陷风险。在「能跑就行」的氛围里，这盆冷水值得一读。",
+    "quote": "代码堆得越快，质量这摊事越没人敢看。",
+    "source": "HN Front Page",
+    "url": "https://blogs.gnome.org/mcatanzaro/2026/10/02/the-era-of-software-quality-or-the-era-of-ostriches/",
+    "published": "2026-10-06",
+    "uid": "dev_5f719b60"
+  },
+  {
+    "title": "mold 链接器 3.0.0 发布：用 Rust 完整重写",
+    "content": "以「快」著称的链接器 mold 发布 3.0.0，作者 rui314 宣布用 Rust 完整重写。链接是编译流程里最容易被忽视的一环，mold 一直靠极致速度抢镜。这次重写既是对 Rust 的一次背书，也可能实实在在影响大型 C++ 项目的构建体验。",
+    "quote": "连链接器都叛逃到 Rust 了，C++ 心累。",
+    "source": "HN Front Page",
+    "url": "https://github.com/rui314/mold/releases/tag/v3.0.0",
+    "published": "2026-10-06",
+    "uid": "dev_acee292c"
+  },
+  {
+    "title": "Minigraf：Rust 写的嵌入式双时态图数据库",
+    "content": "Minigraf 是一个用 Rust 写的嵌入式双时态图数据库：既能嵌进应用进程，又能同时记录数据「何时为真」和「何时被写入」两套时间线。对需要审计、回溯历史状态的场景，双时态建模比普通时间戳严谨得多，是值得关注的新思路。",
+    "quote": "数据改了就没了？它连哪天改的都留着。",
+    "source": "HN Front Page",
+    "url": "https://github.com/project-minigraf/minigraf",
+    "published": "2026-10-06",
+    "uid": "dev_7f6de612"
+  },
+  {
+    "title": "text-to-cad：给编码 Agent 装上一双造机械的手",
+    "content": "text-to-cad 让编码 Agent 具备 CAD 能力：用自然语言生成参数化模型文件，主打「让 Agent 从写代码延伸到造零件」。项目正在 GitHub 冲上趋势榜，约 1.7 万星。把 LLM 的能力边界推到工业设计与制造，方向相当新。",
+    "quote": "Agent 会写代码还不够，现在开始造零件了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/earthtojake/text-to-cad",
+    "published": "2026-10-06",
+    "uid": "dev_2444ce55"
+  },
+  {
+    "title": "T3 Code：一堆编码 Agent 的「统一遥控器」",
+    "content": "T3 Code 自称「Agent 控制台」：用手机、网页或桌面应用远程操控本机的 Claude Code、Codex、Cursor、OpenCode、Grok Build 等编码 Agent，统一接入多个 CLI 订阅。作者强调开源、可自行 fork。约 2.5 万星，命中「到处是 Agent、却缺统一入口」的痛点。",
+    "quote": "Agent 装了一堆，终于有人做遥控器了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/pingdotgg/t3code",
+    "published": "2026-10-06",
+    "uid": "dev_cccb6572"
+  },
+  {
+    "title": "Agent-Reach：让 AI Agent 长一双上网的眼睛",
+    "content": "Agent-Reach 给 AI Agent 装上「眼睛」：一个 CLI 就能读取和搜索 Twitter、Reddit、YouTube、GitHub、B 站、小红书等站点，且宣称零 API 费用。约 9.1 万星，直击 Agent 联网取数贵、接口杂的痛点，属于典型的基础设施型项目。",
+    "quote": "Agent 要联网，结果 API 账单比模型还贵。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/Panniantong/Agent-Reach",
+    "published": "2026-10-06",
+    "uid": "dev_c916a5a1"
+  },
+  {
+    "title": "IINA 1.5.0 发布：macOS 播放器的口碑担当",
+    "content": "macOS 上口碑甚佳的开源播放器 IINA 发布 1.5.0，帖子在 V2EX 收获 111 条回复，足见其在 Mac 用户中的分量。IINA 一直以原生界面、基于 mpv 的强悍解码和现代交互著称，这次更新又给「换不换播放器」的争论添了把火。",
+    "quote": "在 Mac 上想找更好的播放器？省省吧。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1246346",
+    "published": "2026-10-06",
+    "uid": "dev_9c3df9e8"
+  },
+  {
+    "title": "Kivo：Claude Code 多账号自动路由，撞限额就换号",
+    "content": "作者自用多个 Claude 订阅、API key 和中转站，最烦的是撞上限后要手动改配置，于是做了 Kivo：把所有账号收进一个本地 endpoint，撞限额自动切到下一个，也能负载均衡或固定用一个；每个账号的 5 小时 / 每周窗口、重置时间、token 和花费一眼看清，一键接入 Claude Code。",
+    "quote": "额度撞墙就换号，比手改配置优雅多了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1246443",
+    "published": "2026-10-06",
+    "uid": "dev_4edb4ebb"
+  },
+  {
+    "title": "Precedent Loop：让 Agent 换个会话还记得项目里踩过的坑",
+    "content": "用 Codex、Claude Code 写久了最头疼「它不记事」：上周查了一下午的根因和方案，这周开个新会话它又从零猜，甚至重提已经否掉的方案。作者试过把经验写进 AGENTS.md / CLAUDE.md，可规则能放，踩坑经验却塞不下。Precedent Loop 想解决的就是这种跨会话的项目记忆。",
+    "quote": "换个会话就失忆，Agent 记性比前任还差。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1246437",
+    "published": "2026-10-06",
+    "uid": "dev_dbe7f7cc"
+  },
+  {
+    "title": "脚手架轨迹是糟糕的 Agent 训练数据",
+    "content": "当 Agent 在长终端任务上翻车，常见做法是加脚手架：状态机、环境探针、重试包装。作者警告：这些「脚手架轨迹」拿来训练模型是灾难——模型学到的是脚手架本身，而不是自己的能力。正在做 Agent 微调的团队应该读一读这篇。",
+    "quote": "用拄拐的录像教人跑步，学废了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/reidmarlow/scaffolded-trajectories-make-terrible-agent-training-data-2lb7",
+    "published": "2026-10-06",
+    "uid": "dev_9d3ae4fa"
+  },
+  {
+    "title": "我用提示词投毒，防住复刻我网站的 AI",
+    "content": "面对 Cursor、Claude Code 这类工具「给个网址就能秒抄界面」的现实，作者反其道而行：在自己的作品集里埋下精心设计的提示词陷阱和 token 榨取器，专门坑那些来爬取、复刻的 AI。文章带点黑色幽默，也折射出前端作品被 AI 一键复制的焦虑。",
+    "quote": "防不住人抄，那就给 AI 下点毒。",
+    "source": "Dev.to",
+    "url": "https://dev.to/hordii_bohdan/how-i-protected-my-portfolio-from-ai-vibe-coders-using-prompt-poisoning-token-drainers-2m6d",
+    "published": "2026-10-06",
+    "uid": "dev_86eb1889"
+  },
+  {
+    "title": "别再 rm 日志了：Linux 下安全清空日志文件的正确姿势",
+    "content": "磁盘告警一响就 rm 日志再 touch？作者指出这是埋雷操作：进程仍持有已删除的 inode，空间不释放，还可能出现日志断写。文章讲清底层原因，并给出 truncate 等安全做法。运维和后台开发都该收藏的一条硬知识。",
+    "quote": "rm 了日志磁盘还是满的，这就是玄学背锅。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/jyzhao/p/23200588",
+    "published": "2026-10-06",
+    "uid": "dev_e04f7855"
+  },
+  {
+    "title": "Show HN：Leftovers，给 AI Agent 擦屁股的 macOS 清理工具",
+    "content": "一个开源的 macOS 小工具，专门收拾 AI 编码 Agent 留下的烂摊子：临时目录、散落的构建产物、占着不放的缓存文件。Agent 跑得越勤，机器被塞满得越快，手动翻目录找残留又烦又容易误删。Leftovers 想把「用完就清」变成一条命令的事，对本地重度跑 Agent 的人算是刚需级杂务自动化。",
+    "quote": "Agent 写得爽，收尾擦屁股的活还是得有人干。",
+    "source": "HN Show HN",
+    "url": "https://github.com/arpwal/leftovers",
+    "published": "2026-10-06",
+    "uid": "dev_159231fd"
+  },
+  {
+    "title": "Show HN：把 1.5B Qwen 微调到接近 GPT-4o 的 Bash 生成水平",
+    "content": "作者用一套基本自动化的训练流水线，把只有 15 亿参数的 Qwen 微调到在 Bash 命令生成上接近 GPT-4o 的水平。出发点很纯粹：试试小模型到底能被推到多远。对「生成一条命令」这种窄任务来说，堆大模型未必划算，小而精的微调模型更省成本、更适合本地跑，这个副业项目给出了一个挺有说服力的样本。",
+    "quote": "一条 Bash 命令而已，犯得着动用千亿参数么。",
+    "source": "HN Show HN",
+    "url": "https://dirac.run/posts/easycommand",
+    "published": "2026-10-06",
+    "uid": "dev_bd5786b3"
+  },
+  {
+    "title": "Show HN：Abralo，把人和 Agent 塞进同一个 Slack",
+    "content": "Abralo 想做的是一款「人和 AI Agent 共用」的开源 Slack：人和 Agent 在同一个频道里收发消息、协作干活，而不是让人在聊天工具和 Agent 界面之间来回切。作者说它几个月前还是另一个闭源产品，如今开源重做，初心是管理多个 Agent。当 Agent 越装越多，「给它们一个像样的办公场所」确实成了新需求。",
+    "quote": "Agent 也要打卡上班，干脆给它们开个群。",
+    "source": "HN Show HN",
+    "url": "https://github.com/cw12574/abralo-workspace",
+    "published": "2026-10-06",
+    "uid": "dev_bc7f3709"
+  },
+  {
+    "title": "Show HN：Usermods，用编码 Agent 现场给你造油猴脚本",
+    "content": "Usermods 是个浏览器扩展，思路是把编码 Agent 装进浏览器：你嫌哪个网站难用，直接让它当场生成一个 userscript 去改——去掉烦人的弹窗、绕过强制注册墙、修掉反人类的交互。它把「自己写脚本改网页」的门槛压到几乎为零，普通用户也能对着页面下指令，让 AI 现场改造它。",
+    "quote": "嫌网站难用，就指挥 AI 当场把它改到你顺眼。",
+    "source": "HN Show HN",
+    "url": "https://github.com/kballenegger/usermods",
+    "published": "2026-10-06",
+    "uid": "dev_c6b8ac04"
+  },
+  {
+    "title": "别凭感觉换嵌入模型：用 TypeScript 写个微型检索评测",
+    "content": "一周内三款新嵌入模型发布，每款都配了漂亮的图表，可没一张图是跑在你自己文档上的。作者劝大家别凭「感觉」切模型，而是用 TypeScript 搭一个极小的检索评测：拿你自己的语料和真实查询，量一量换模型到底有没有变好。在嵌入选型越发内卷的当下，「先测再换」比追新更省钱也更靠谱。",
+    "quote": "别人的榜单再好看，也测不出你自家文档的死活。",
+    "source": "Dev.to",
+    "url": "https://dev.to/bobbyhalljr/dont-switch-embedding-models-on-vibes-build-a-tiny-retrieval-eval-in-typescript-2dj1",
+    "published": "2026-10-06",
+    "uid": "dev_2d68199c"
+  },
+  {
+    "title": "一个认证过的 GitLab 账号，就够打到服务端代码执行",
+    "content": "这篇拆解 CVE-2026-89078 和 CVE-2026-93577：两个漏洞的严重度评分都是 9.9，而它们要求的门槛仅仅是一个通过认证的普通账号。也就是说，攻击者不需要什么高权限，登进来就够了。文章解释了背后的利用链路，提醒自建 GitLab 的团队别把「内部账号」当安全边界，该打补丁就赶紧打。",
+    "quote": "评分 9.9 的洞，门槛只是一个普通登录账号。",
+    "source": "Dev.to",
+    "url": "https://dev.to/bianliang/why-an-authenticated-gitlab-account-is-enough-for-server-side-code-execution-3o76",
+    "published": "2026-10-06",
+    "uid": "dev_7d840f5f"
+  },
+  {
+    "title": "从 PDF 和扫描件里抽文字：还得判断哪一页需要 OCR",
+    "content": "「把这份 PDF 的文字提取出来」其实藏着两件完全不同的事：数字版 PDF 的文字就存在文件里，能原样读出；扫描版 PDF 则是一摞图片，必须走 OCR。作者讲清了两者的区别，并给出怎么自动判断哪些页面需要 OCR 的方法。对常做文档处理的开发者，这能省掉大量「为什么提取出来是空的」的困惑。",
+    "quote": "一页页查是不是扫描件？先教会程序自己判断。",
+    "source": "Dev.to",
+    "url": "https://dev.to/clem616/how-to-extract-text-from-pdfs-and-scanned-documents-and-how-to-tell-which-pages-need-ocr-23eh",
+    "published": "2026-10-06",
+    "uid": "dev_ac0b9565"
+  },
+  {
+    "title": "Rust 1.99 更新了什么：一个新手视角的升级前后对比",
+    "content": "照着教程写 Rust，卡住新手的往往不是语法，而是报错说用了个 unstable 的库特性——代码没错、教程没错，只是那个 API 当时还没稳定。作者以新手视角，对比了升级到 Rust 1.99 前后的差异，讲清「版本没对上」这种最劝退的坑长什么样、怎么快速判断。对刚上手 Rust 的人，这类版本说明比官方公告好读。",
+    "quote": "教程没错代码没错，就是版本没对上，白熬一晚上。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/OceanHeaven/p/23204262",
+    "published": "2026-10-06",
+    "uid": "dev_c58b904e"
+  },
+  {
+    "title": "[开源] ALTRun：不到 1MB 的 Windows 启动器",
+    "content": "V2EX 网友开源了自己每天在用的 Windows 启动器 ALTRun，思路对标 macOS 的 Alfred：按 Alt+Space 呼出，敲几个字母就能打开程序、找文件、算数、搜网页、翻剪贴板历史。整个软件不到 1MB，支持拼音首字母和 Everything 检索。在动辄几百兆的启动器里，这种「小而够用」的路线挺讨喜，也看得出是作者自用磨出来的手感。",
+    "quote": "启动器不到 1MB，比某些安装包的图标还小。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1246537",
+    "published": "2026-10-06",
+    "uid": "dev_6b15ddfb"
+  },
+  {
+    "title": "让 AI 控制你的 iPhone：ioscli",
+    "content": "V2EX 网友分享了一个开源项目 ioscli：把 iPhone 的控制能力暴露成命令行接口，让 AI 或脚本能够操作手机，而不必再靠人手一步步点。它瞄准的是「自动化操作 iOS」这块长期不好啃的地方——苹果生态封闭、自动化能力有限，一旦命令行化，Agent 接管手机的想象空间就打开了。",
+    "quote": "苹果把手机捂得再紧，也挡不住有人给它开个命令行。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1246451",
+    "published": "2026-10-06",
+    "uid": "dev_48f36f44"
+  },
+  {
+    "title": "讲给 AI 的话要写八百字：Lulu Clip 把屏幕现场直接送进对话",
+    "content": "用 AI 时常见的尴尬：软件里某个设置找半天想让它帮忙，但菜单在哪、勾了什么，用文字讲清要写一大段；手头的活卡在屏幕上，对话里没有这层上下文，只能把现场再重讲一遍，又慢又容易漏。Lulu Clip 的做法是把「屏幕上的现场」直接送进对话，省掉用语言复述的功夫。想法朴素，却戳中了人机沟通里最费劲的一环。",
+    "quote": "对着屏幕描述半天，不如直接把现场甩给 AI。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1246479",
+    "published": "2026-10-06",
+    "uid": "dev_08f19b5a"
+  }
+]
