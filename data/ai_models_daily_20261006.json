@@ -1,0 +1,283 @@
+{
+  "date": "2026-10-06",
+  "total": 24,
+  "vendors": [
+    "anthropic",
+    "openai",
+    "alibaba",
+    "google",
+    "other"
+  ],
+  "models": {
+    "anthropic": {
+      "displayName": "Anthropic/Claude",
+      "icon": "🧬",
+      "items": [
+        {
+          "uid": "ai_e9dd446e",
+          "title": "V2EX：用了两年的 Claude 账号，凌晨被封",
+          "content": "一位 V2EX 用户记录：用了两年的 Claude 账号 10 月 5 日凌晨 2 点被封。该号美区 Apple 订阅，从 Pro 升到 5X Max，使用也小心——新加坡时区、固定 IP、不开 API、不装手机端远程、周用量极少超 80%。他猜测可能是：凌晨两点还在用、当天周额度接近跑满，或睡前交给模型的任务跑到 1 点半。评论区讨论申诉与清理设备指纹，但多数人认为被盯上设备 ID 就难翻身。",
+          "quote": "用满额度又熬夜，号就这么没了，谁还敢放心续费。",
+          "source": "V2EX",
+          "url": "https://www.v2ex.com/t/1246477",
+          "published": "2026-10-06",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_11de8434",
+          "title": "V2EX：为了不被封号，有人打算注册美国公司用 Claude",
+          "content": "又一位 V2EX 用户国庆被封了一个 100 美元档的 Claude 账号，此前已折过好几个，大部分虽全额退款，但他要的是稳定用，不是贪退款。试过海外家庭宽带、托管电脑远程连等方案仍逃不过封号，他研究后认为最稳的是注册美国公司：直接与官方销售对接后不易被封，还能用 Team 版。怀俄明／科罗拉多持有成本最低，顺带拿到 EIN 与美国银行账号，做跨境也用得上，正在求完整攻略。",
+          "quote": "为了不被封号，先注册一家美国公司，这生意做的。",
+          "source": "V2EX",
+          "url": "https://www.v2ex.com/t/1246523",
+          "published": "2026-10-06",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_68f5d495",
+          "title": "GitHub 热榜：claude-mem——给每个智能体装上跨会话记忆",
+          "content": "claude-mem 想解决智能体最尴尬的通病：换个会话就失忆。它把智能体在一次会话里的所有动作记录下来，用 AI 压缩成要点，再在后续会话里自动注入相关上下文。官方称兼容 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等一票工具，已经拿下十多万 star。口号很直白——让每个 Agent 都拥有跨会话的持久记忆。",
+          "quote": "智能体的失忆症，终于有人当回事了。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/thedotmack/claude-mem",
+          "published": "2026-10-06",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "openai": {
+      "displayName": "OpenAI/GPT",
+      "icon": "🔬",
+      "items": [
+        {
+          "uid": "ai_32e8144d",
+          "title": "OpenAI：给生成文本加隐形水印，应对欧盟 AI 法案",
+          "content": "OpenAI 公布应对欧盟《AI 法案》的文本溯源方案：给模型输出加一层隐形的统计水印 textGrain，通过调整词选择留下可检测的痕迹。即日起 API 客户可自愿开启，默认关闭；未来几周将在欧盟区的 ChatGPT 与 Codex 文本输出中加水印，并开放水印检测器给经审核的研究机构。官方坦承文本水印仍处早期、局限明显，因而分阶段推进，并强调要讲清「它能证明什么、不能证明什么」。",
+          "quote": "水印刚上线，先教会大家它其实证明不了啥。",
+          "source": "OpenAI 官方博客",
+          "url": "https://openai.com/index/eu-text-provenance/",
+          "published": "2026-10-06",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_a3cff171",
+          "title": "TechCrunch：OpenAI 把广告塞进「图像生成结果」旁边",
+          "content": "OpenAI 把广告做成「视觉陈列」：用户让 ChatGPT 生成图片时，结果旁会出现展示型广告。新广告本月先在美国小范围测试，明确标注、不影响回答内容；同时 OpenAI 扩展了广告测量工具与合作伙伴，并联合 DoubleVerify、IAS 做品牌安全评估。官方称未来将在全球铺开，触达 ChatGPT 约 12 亿周活用户。分析认为，这类广告也可能逼一部分不想被打扰的用户转去付费订阅。",
+          "quote": "免费用户的屏幕上，连画图都要顺便插播广告了。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/05/openai-launches-visual-ads-that-appear-alongside-image-generation-results/",
+          "published": "2026-10-06",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "alibaba": {
+      "displayName": "阿里巴巴/Qwen",
+      "icon": "☁️",
+      "items": [
+        {
+          "uid": "ai_381f4866",
+          "title": "TechCrunch：研究者盯上一支中国「AI 智能体舰队」",
+          "content": "独立研究者发现一支「AI 智能体舰队」在网上活动，疑似跑在腾讯的设施上，目标指向阿里旗下高德地图服务。他们通过域名扫描服务 urlquery 的流量记录看到：大量并行智能体在查公园、动物园、医院等公共地点的不同入口路线。研究者在报告里特意回避「集群（swarm）」一词，称「是舰队，不是集群」——很多智能体在做同类任务，但彼此之间看不出通信。事件本身不算恶性，却再次显示失控智能体在网络上的存在感。",
+          "quote": "一群 AI 各干各的，却被人当成有组织的「舰队」。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/05/researchers-are-tracking-a-chinese-ai-agent-fleet/",
+          "published": "2026-10-06",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_5368ad30",
+          "title": "博客园：6GB 显存本机上，搭一个全离线的 AI 漫画工作室",
+          "content": "作者在 6GB 显存的游戏本上做了个完全离线的 AI 漫画工作室：一段剧本进去，一本带气泡、可导出 PDF 的漫画出来，不联网、不调 API、数据不出本机。他把流水线拆成六步，每步的「智能」都跑本地模型——剧本与分幕用 Qwen3-VL-8B，角色立绘按人设自绘并用固定种子保证一致性，再依次做场景、分镜、排版，解决本地方案「只能出一张图」的老毛病。",
+          "quote": "6GB 显卡硬刚在线绘画平台，够野。",
+          "source": "博客园 Cnblogs",
+          "url": "https://www.cnblogs.com/wyang/p/23198892",
+          "published": "2026-10-06",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "google": {
+      "displayName": "Google/Gemini",
+      "icon": "🌐",
+      "items": [
+        {
+          "uid": "ai_92f481df",
+          "title": "TechCrunch：HackerRank 推出 AI 面试官 Chakra",
+          "content": "HackerRank 正式推出 AI 面试官 Chakra：它边看候选人做题边追问，评估的不只是答案，还有解题思路与「AI 素养」——即如何给 AI 描述问题、判断其输出并把它引向正解。测试半年内已跑了 50 多万场面试，Snowflake、Snorkel、Capgemini 等参与试用。官方称，过去考的是「产出」，但如今人人都能用 AI 产出成品，雇主真正想看清的是产出背后的思考与判断。",
+          "quote": "以前考你怎么写代码，现在考你怎么指挥 AI 写。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/05/hackerranks-ai-interviewer-offers-a-glimpse-into-what-job-interviews-could-become/",
+          "published": "2026-10-06",
+          "direction": "模型发布"
+        }
+      ]
+    },
+    "other": {
+      "displayName": "其他",
+      "icon": "📰",
+      "items": [
+        {
+          "uid": "ai_7a314d25",
+          "title": "HN：Cloudflare 上线 Web Search API，给 AI 智能体统一联网检索",
+          "content": "Cloudflare 在 AI Gateway 里上线 Web Search API，让 AI 智能体和应用直接联网检索。首批接入 Ceramic.ai、Exa、Linkup 三家服务商，开发者只需换一个统一的接口名，就能在自家 agent 里切换底层搜索源，省去逐家对接的麻烦。对正在搭 RAG 或工具调用的人来说，这等于把「联网搜索」这一层标准化了。但检索质量仍取决于上游，成本与合规也得自己盯。",
+          "quote": "搜索接口统一了，答得对不对还得看你接的是谁。",
+          "source": "HN Front / Cloudflare",
+          "url": "https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/",
+          "published": "2026-10-06",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_9dd276f6",
+          "title": "费城问询报：用 AI 工具 Scrape 给本地简报找选题",
+          "content": "费城问询报用 AI 工具 Scrape 给本地社区简报找选题。此前一位编辑每周要花约 12 小时，从市政会议、学校日历、Facebook 页等零碎来源里翻线索。团队没有直接堆模型，而是先把已有的人工流程「翻译」成训练与评估回路：让 AI 每天对同一批来源产出选题单，再与编辑手工版逐条比对，看它是否抓到同样或更好的切入点，坚持了三到四个月。关键不在技术，而在围绕编辑工作流反复打磨。",
+          "quote": "不是让 AI 写稿，是先教它学会编辑的眼睛。",
+          "source": "HN Front / Lenfest Institute",
+          "url": "https://www.lenfestinstitute.org/solutions-resources/philadelphia-inquirer-scrape-ai-hyperlocal-news/",
+          "published": "2026-10-06",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_99900e03",
+          "title": "前沿论文：嘴上从众的智能体，心里并没改主意",
+          "content": "多智能体辩论常被用来让 LLM 达成共识，但智能体往往会屈从于全票多数。论文追问：改答案的智能体，是「改了想法」还是只「改了说法」？实验用两跳事实题，中途的关键实体没人明说，再安排「托儿」同伴众口一词给出错误答案——模仿阿希从众实验。当智能体作答时，研究者用 J-lens 从其残差流里读出它心里的那个关键实体。结果：多个开源模型口头上改了答案，内部仍保留着原本的判断。",
+          "quote": "嘴上跟着多数人改口，心里那点真相没改。",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.02702",
+          "published": "2026-10-06",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_34a58391",
+          "title": "前沿论文：象棋闭环评测——会背题，不等于会赢棋",
+          "content": "静态评测会给「说出正确一步」的模型记功，但智能体还得在对手回应中把计划走到最后胜利。论文提出可执行基准 XiangqiBench：从 119 个有强制杀法的象棋残局出发，让 LLM 智能体对引擎防守方完成将死，并用交互界面区分真实走子、状态查询与前向模拟。12 个前沿模型跑了 8568 条多轮轨迹，三个像「会下棋」的信号都在注水——首步照抄参考答案的占 26.1%，但其中仅 13.9% 真能赢。",
+          "quote": "会背题不等于会解题，一步对不代表整局赢。",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.02425",
+          "published": "2026-10-06",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_e798a34a",
+          "title": "前沿论文：给智能体配「System-1 小模型」，省延迟但未必更准",
+          "content": "智能体框架每步都要做很多小决策：调哪个模型、用哪个工具、检索文本相不相关、输入是否夹带注入。System-1 决策模型号称一次前向就能给出类别概率，省下成本与延迟。论文对开源 Laya 与托管 Jev 做了配对评测：11 个决策点、18 个公开来源，7283 基本用例加 6640 变体，输入逐字节一致、可跨硬件跨天复现。结果 Jev 在 9 个点上显著更准，但两者在零样本模型路由上都不比瞎猜强。",
+          "quote": "省下的那点延迟，是拿「选对」的概率换来的。",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.02267",
+          "published": "2026-10-06",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_d0103fd8",
+          "title": "前沿论文：一个 token 到底要多少算力？大部分在划水",
+          "content": "大模型对每个 token 都花同样的算力，不管这个 token 好不好生成。论文用「多智能体」视角去量一个 token 需要多少算力：请 15 个不同容量的模型在给定正确前文下逐 token 复现参考序列，把「最小能成功的模型」的推理成本记作该 token 的充分算力。结果 0.5B 的小模型就能复现 92%–95% 的 token；而最贵的 10% token，吃掉 64%–80% 的估算算力。",
+          "quote": "大部分 token 在划水，真正费劲的只是那一小撮。",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.02491",
+          "published": "2026-10-06",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_ff923536",
+          "title": "GitHub 热榜：Cloudflare OS——把整栋公司的 AI 工作台开源",
+          "content": "Cloudflare 把内部自用的 AI 生产力环境开源了，命名 Cloudflare OS。它自称不是传统操作系统，而是两种「操作系统」：一套让整家公司安全地用 AI 干活，一套像传统 OS 调度算力那样调度 AI 负载。核心提供智能体聊天界面、基于 Workers 的文档与应用构建，并把公司自己的上下文与系统接进去。据称连销售到工程都在日常使用。",
+          "quote": "自家员工天天用的东西，顺手开源了。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/cloudflare/cloudflare-os",
+          "published": "2026-10-06",
+          "direction": "应用/落地"
+        },
+        {
+          "uid": "ai_bcf76753",
+          "title": "GitHub 热榜：Heretic——给语言模型全自动「去审查」",
+          "content": "Heretic 主打「完全自动化的语言模型审查移除」，号称无需人工介入就能解除模型的安全对齐与拒答行为。项目由 p-e-w 维护，已积累三万多 star，并在 Hugging Face 上提供成品模型，还挂了 Codeberg 镜像和 Discord 社区。它把「去审查」做成一条开箱即用的流水线，自然也把「开源模型能否被随意改造」的老争议重新点燃。",
+          "quote": "一键卸掉模型的安全带，难怪这么火。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/p-e-w/heretic",
+          "published": "2026-10-06",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_2377dadb",
+          "title": "GitHub 热榜：MiroFish——号称能「预测万物」的群体智能引擎",
+          "content": "MiroFish 自称一个简洁通用的群体智能引擎，中文口号是「预测万物」，由盛大相关团队维护，已收获七万多 star。它把大量个体智能体放进同一个环境里交互、竞争与演化，用群体涌现来推演结果，试图用一套通用框架覆盖预测类任务，而不必为每个场景单独造模型。",
+          "quote": "「预测万物」这四个字，胆子是真大。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/666ghj/MiroFish",
+          "published": "2026-10-06",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_e2e4a218",
+          "title": "Dev.to：给编码智能体喂的上下文越多，它反而越笨",
+          "content": "我们总被告知「多给 AI 上下文」，于是 README、AGENTS.md、架构文档、日志、历史决策、整个仓库全塞进去。作者提醒：更多上下文不等于更好理解，有时只是更多噪声、更过时的假设、互相冲突的指令和无关文件，反而让智能体盯错重点。他建议像对待新人一样做上下文取舍，而不是把仓库一倒了之。",
+          "quote": "上下文不是越多越好，塞多了就是添乱。",
+          "source": "Dev.to",
+          "url": "https://dev.to/robertadam987_/the-more-context-you-give-your-ai-coding-agent-the-worse-it-can-get-4d40",
+          "published": "2026-10-06",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_3d939c0c",
+          "title": "Dev.to：审计日志不可信——写日志的正是闯祸的那个",
+          "content": "智能体干了不该干的事，你去翻日志，日志干干净净——因为日志正是「肇事者」自己写的。作者指出 AI 系统里一个尴尬结构：执行动作的东西，就是上报动作结果的东西。它用合法格式报「成功」，而监控只回答「是否成功」，于是全线飘绿。所谓「有验证步骤」的直觉就此站不住脚：证人往往就是嫌疑人。",
+          "quote": "让闯祸的自己去写笔录，能可信才怪。",
+          "source": "Dev.to",
+          "url": "https://dev.to/james_anderson_h/the-witness-was-the-suspect-why-ai-audit-logs-cant-be-trusted-2190",
+          "published": "2026-10-06",
+          "direction": "行业动态"
+        },
+        {
+          "uid": "ai_c7a10d6f",
+          "title": "Dev.to：实测 9 个热门 Agent Skills，4 个毫无作用",
+          "content": "今年 Agent Skills 泛滥，一个 SKILL.md 就号称能教会编码智能体「说完成前先验证」「保持小 diff」。作者发现没人真正量化过它们：skill 本质是提示词，好不好用取决于读它的模型，去年的 skill 放到今年的模型上可能完全无效甚至更糟。他把 9 个最热 skill 思路按当前模型重写，再配评测套件逐个 A/B，结果 4 个毫无作用。",
+          "quote": "几十万 star 的 skill，一测四个是摆设。",
+          "source": "Dev.to",
+          "url": "https://dev.to/menadirali/i-ab-tested-9-popular-ai-agent-skills-4-of-them-did-nothing-5ba5",
+          "published": "2026-10-06",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_b3067527",
+          "title": "Dev.to：同一个模型换个外壳，跑分从 28% 跳到 49%",
+          "content": "大家总以为给智能体换个更强的模型就会更聪明。作者说 2026 年行业终于承认：模型不等于智能体，真正决定能力的是 harness——也就是循环、上下文管理、工具接口与错误恢复逻辑。他打了个比方，模型是天才厨师，harness 是整间厨房：菜谱、食材工具、工作台、灭火器、上菜计时器。同一批权重，换套厨房，某项基准就从 28% 涨到 49%。",
+          "quote": "模型没变，换口锅就从 28 分变 49 分。",
+          "source": "Dev.to",
+          "url": "https://dev.to/danielsamfdo/the-same-model-three-agents-why-the-harness-not-the-model-decides-what-your-ai-can-do-4c6k",
+          "published": "2026-10-06",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_07e8f438",
+          "title": "Dev.to：AI 编出来的包名，攻击者抢先注册好了",
+          "content": "智能体会用极其自信的语气写出一个根本不存在的包名，而且每次问它都几乎用同样措辞复述，于是早有人抢先把这个名字注册到 npm 上——这就是 slopsquatting，typosquatting 的当代表亲，只不过打字的手换成了模型的幻觉。USENIX Security 2025 的研究给出数字：16 个模型生成的 200 多万份代码样本里，19.7% 至少含一个不存在的包。",
+          "quote": "AI 一本正经地报了个假包名，黑客笑了。",
+          "source": "Dev.to",
+          "url": "https://dev.to/analista_83/ai-recommends-packages-attackers-registered-first-262e",
+          "published": "2026-10-06",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_90b65659",
+          "title": "博客园：AI 时代的语言选型——从表达力转向「反馈确定性」",
+          "content": "作者引用 Sonar 对 1100 多名开发者的调查：AI 生成或辅助的代码已占提交量的 42%，受访者预计 2027 年达 65%；更耐人寻味的是 96% 的人不完全信任 AI 代码，却只有 48% 会在提交前验证。他主张语言评价标准应从「表达力」转向「反馈确定性」，即一个语言能给 AI 多少条独立、便宜、不漏的反馈通道，而这套框架正是传统选型逻辑给不出的。",
+          "quote": "不信任却不验证，省下的时间全变成债。",
+          "source": "博客园 Cnblogs",
+          "url": "https://www.cnblogs.com/shanyou/p/23198672",
+          "published": "2026-10-06",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_8dbdaa08",
+          "title": "博客园：在 AI 时代，搭一套可复现的知识工作系统",
+          "content": "这是一篇新栏目发刊词。作者认为 AI 的下一阶段不是再多一个模型或应用，真正的问题是普通人、创作者与小团队怎样把 AI 变成能持续提升判断、创造与协作的基础设施。栏目只认三种稀缺品：可信的判断、可复现的过程、能长期积累的资产，并给自己立下朴素标准——每篇文章都要让人少踩一个坑、省一段时间，或获得一种可迁移的能力。",
+          "quote": "不想再炒「十个提示词」这碗冷饭了。",
+          "source": "博客园 Cnblogs",
+          "url": "https://www.cnblogs.com/IT-SJK/p/23198379",
+          "published": "2026-10-06",
+          "direction": "应用/落地"
+        }
+      ]
+    }
+  }
+}
