@@ -1,0 +1,137 @@
+[
+  {
+    "title": "Vibecoding 没手写代码那么好玩",
+    "content": "作者对比「Vibe Coding」和手写代码的体验，认为后者带来的投入感与掌控感是前者给不了的。用 AI 生成能更快跑出结果，但那种理解每一行逻辑、看到自己思考成型的乐趣被稀释了。这不是反对 AI 编程，而是提醒：把手感交出去，爽感也会一起交出去。",
+    "quote": "AI 帮你写完了，可成就感还剩几分？",
+    "source": "HN Front Page",
+    "url": "https://www.autodidacts.io/vibecoding-isnt-as-fun-as-writing-code-by-hand/",
+    "published": "2026-10-07",
+    "uid": "dev_9fb0b3d5"
+  },
+  {
+    "title": "Mistral Large 4 发布，代号「Le Chonk」",
+    "content": "Mistral 发布旗舰模型 Large 4，代号「Le Chonk」（法语里的大胖猫）。模型在推理与多语言能力上继续加码，同时坚持开放权重路线，直面对手 GPT、Claude 的闭源阵营。对想自建推理、又不想被单一厂商绑死的团队，多了一个重量级备选。",
+    "quote": "给它取名「胖猫」，是真不在意形象了。",
+    "source": "HN Front Page",
+    "url": "https://mistral.ai/news/mistral-large-4/",
+    "published": "2026-10-07",
+    "uid": "dev_7002ff7b"
+  },
+  {
+    "title": "Gleam 不再编译成 Erlang 源码了",
+    "content": "Gleam v1.19.0 发布，最大变化是重写了 Erlang 代码生成器：不再输出 Erlang 源码，改为生成 Erlang abstract forms（编译器使用的中间表示）。好处是编译更快、更贴近底层语义，后续优化空间也更大。用 Gleam 跑 BEAM 的团队，升级前值得读一读变更说明。",
+    "quote": "从源码到中间表示，这层窗户纸捅破了。",
+    "source": "HN Front Page",
+    "url": "https://gleam.run/news/gleam-doesnt-compile-to-erlang-source-anymore/",
+    "published": "2026-10-07",
+    "uid": "dev_430746b6"
+  },
+  {
+    "title": "Polars 2.0 正式发布",
+    "content": "高性能数据框库 Polars 发布 2.0 大版本。以 Rust 实现，主打多核并行与惰性执行，长期被视为 pandas 的性能替代。2.0 是项目走向成熟的一个节点，对处理大规模表格数据、又嫌 pandas 慢的团队来说，是重新评估迁移成本的时机。",
+    "quote": "pandas 一卡，Polars 就笑而不语。",
+    "source": "HN Front Page",
+    "url": "https://pola.rs/posts/release-polars-2/",
+    "published": "2026-10-07",
+    "uid": "dev_4519abbb"
+  },
+  {
+    "title": "两个 ARM64 专属的编译器优化 bug 命中 curl",
+    "content": "curl 作者 bagder 报告自己踩到两个 ARM64 专属的编译器优化 bug，分别来自 GCC 15/16 和 Rust 工具链。问题只在特定架构与优化档位下触发，极难复现。它提醒大家：跨架构发布时，编译器所谓的「优化」，有时正是最隐蔽的雷。",
+    "quote": "编译器一「优化」，bug 就悄悄上位了。",
+    "source": "HN Front Page",
+    "url": "https://mastodon.social/@bagder/117392573268225646",
+    "published": "2026-10-07",
+    "uid": "dev_52b0b203"
+  },
+  {
+    "title": "DeepGEMM：DeepSeek 开源的高效 GPU 算子库",
+    "content": "DeepSeek 开源的 GPU 线性代数库，专注干净高效的 GEMM/BLAS 内核，用 CUDA 实现，主打极致性能同时兼顾可读性。作为国产大模型厂商放出的底层算子库，它对做推理优化的人是有参考价值的工程材料，也顺势冲上 GitHub 趋势榜。",
+    "quote": "大模型卷完，转头开始卷底层的乘法。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/deepseek-ai/DeepGEMM",
+    "published": "2026-10-07",
+    "uid": "dev_ca1da3e8"
+  },
+  {
+    "title": "mattpocock/skills：给真正工程师的技能包",
+    "content": "知名前端教学作者 Matt Pocock 开源了自己 .agents 目录里的一套 Skills，定位「给真正工程师用的技能包」。他把日常开发里反复用到的 Agent 提示与工作流整理成可复用模块，直接投喂给编码 Agent。对想系统化搭建个人 AI 工作流的人，是现成的模板。",
+    "quote": "别人晒笔记，他直接把工作流开源了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/mattpocock/skills",
+    "published": "2026-10-07",
+    "uid": "dev_152e48f4"
+  },
+  {
+    "title": "impeccable：教 AI 把界面做好看的设计语言",
+    "content": "一个自称「设计语言」的项目，目标是让 AI 编程工具做出更好看的界面。它把审美规则沉淀成 Agent 能读懂的约束，弥补 AI 生成 UI「能用但丑」的通病。对不擅长设计、又希望产物拿得出手的开发者，这是一个挺实用的补丁。",
+    "quote": "AI 会写代码，但审美还得有人教。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/pbakaus/impeccable",
+    "published": "2026-10-07",
+    "uid": "dev_9fb0f0ea"
+  },
+  {
+    "title": "开源 12 个电商短视频 Agent Skills：一张图出带货视频",
+    "content": "作者开源了一套电商短视频 Skill（MIT）：一张商品图就能生成带配音、字幕的 15 秒竖屏视频，全程本地 ffmpeg 出片，无需云端剪辑。这是承接此前电商出图 Skill 的后续，把「图 → 视频」这段补上，对做跨境或小店内容自动化的人是可直接复用的工具链。",
+    "quote": "一张商品图，AI 给你整出带货短视频。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1246694",
+    "published": "2026-10-07",
+    "uid": "dev_5d2c9b38"
+  },
+  {
+    "title": "受 Jev 启发，花三周 600 美元训两个小模型做 Computer use",
+    "content": "作者用三周业余时间做了 DeskMind：一个在 Mac 上替你操作电脑的 Agent，决定每一步怎么走的，是两个跑在本机的小模型（Qwen3.5 0.8B 和 4B 微调，MLX），不走云端、不按次付费。思路来自 Jev——把每一步变成选择题，让模型给选项打分而不是生成文字，作者想做的是全本机版本。",
+    "quote": "云端按次收费？他干脆全塞进本机。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1246631",
+    "published": "2026-10-07",
+    "uid": "dev_97358006"
+  },
+  {
+    "title": "看 YouTube 总反复开关字幕？他做了个字幕插件",
+    "content": "作者做了 YouTube 专用的 Chrome 字幕插件 subtitle.im，解决看视频时反复开关字幕的麻烦，还给 V 友准备了 200 个一年 Pro 的免费名额。对常刷 YouTube、又嫌官方字幕开关繁琐的人，这是个轻量实用的小工具；文章同时也顺便征集真实使用反馈。",
+    "quote": "字幕该开就开该关就关，终于不用手忙脚乱。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1246427",
+    "published": "2026-10-07",
+    "uid": "dev_80d1f34e"
+  },
+  {
+    "title": "让 Claude Code 驱动一个「登录过一次」的浏览器",
+    "content": "很多有价值的数据藏在登录后才可见的后台——分析面板、管理后台、供应商门户，大多没有 API，或者开 API 得先提工单。作者分享如何让 Claude Code 驱动一个「登录过一次」的浏览器，自动化这些数据的抓取与操作，绕开无 API 的困境，对做内部自动化的人很有启发。",
+    "quote": "没有 API？那就让 Agent 自己点进去。",
+    "source": "Dev.to",
+    "url": "https://dev.to/lmcp/letting-claude-code-drive-a-browser-youve-logged-into-once-2c3b",
+    "published": "2026-10-07",
+    "uid": "dev_e0e98e6d"
+  },
+  {
+    "title": "无停机数据库迁移：影子表、双写与 schema 扩展",
+    "content": "面向高增长团队的无停机数据库迁移实践：把耗时数小时的 ALTER TABLE 从停机窗口里拿掉，改用影子表、双写和 schema 扩展三件套，让旧表与新表并行过渡。对 B2B SaaS 这类不能随便下线的系统，这是一套相对成熟、可落地的迁移范式。",
+    "quote": "敢在业务高峰跑 ALTER TABLE，真勇士。",
+    "source": "Dev.to",
+    "url": "https://dev.to/usman_khan_io/zero-downtime-database-migrations-shadow-tables-dual-writing-and-schema-expansion-9jh",
+    "published": "2026-10-07",
+    "uid": "dev_a4729a03"
+  },
+  {
+    "title": "Bun 1.4 的 bun test --parallel：4 秒测试缩到 1 秒",
+    "content": "作者有一个 20 个测试文件的套件，跑一次要 4 秒多；只加一个 --parallel 参数，耗时降到约 1 秒。继续压榨后，他还找到了该参数「失效」的临界点——关键取决于测试实际执行的工作类型，而不是文件数量。对用 Bun 跑测试的人，这是一份实测经验。",
+    "quote": "一个参数省三秒，程序员的时间都这么抠。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/wangju5170/p/23211194",
+    "published": "2026-10-07",
+    "uid": "dev_e9d49350"
+  },
+  {
+    "title": "AI 前端调试员上岗：用 Chrome DevTools MCP 让 Agent 自己看面板",
+    "content": "作者把 Chrome DevTools MCP 接给 AI，让 Agent 自己读控制台报错和性能面板，解决前端三大痛点：不知道哪个组件报红、不知道卡在渲染还是接口、改样式还要来回切窗口。核心是让「看浏览器」这件事自动化，对想上 AI 辅助调试的前端是有参考价值的落地方案。",
+    "quote": "让 Agent 自己盯控制台，比人肉 F12 强。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Tanya6208/p/23208667",
+    "published": "2026-10-07",
+    "uid": "dev_ba138c8b"
+  }
+]
