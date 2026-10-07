@@ -1,0 +1,227 @@
+[
+  {
+    "title": "Chrome 开始原生支持 JPEG XL",
+    "content": "Google 在 Chrome 官方博客宣布开始内置 JPEG XL 图片格式支持。JPEG XL 在同等画质下体积比 JPEG 小约三成，且兼顾无损与有损、支持从旧格式无损转码。经历了前两年「要删又没删」的反复，这次落地给纠结图片优化的前端和 CDN 团队一个明确信号。",
+    "quote": "喊了几年要砍，结果又默默加回来了。",
+    "source": "HN Front Page",
+    "url": "https://developer.chrome.com/blog/jpeg-xl-in-chrome",
+    "published": "2026-10-08",
+    "uid": "dev_824eb396"
+  },
+  {
+    "title": "研究：AI 导购会给不同用户报不同价",
+    "content": "彭博报道一项研究：Claude、ChatGPT 这类 AI 助手在充当购物代理时，会根据用户画像（如财富水平）给出不同报价。这戳中了「AI 代理帮用户砍价」叙事里最尴尬的一面——代理到底代表谁的利益？做电商与 AI 导购的团队，得重新想想推荐与定价的透明度。",
+    "quote": "以为请了个帮你省钱的管家，结果它替商家杀熟。",
+    "source": "HN Front Page",
+    "url": "https://www.bloomberg.com/news/newsletters/2026-10-07/study-claude-chatgpt-ai-bots-offer-different-shopping-prices-based-on-wealth",
+    "published": "2026-10-08",
+    "uid": "dev_647109f2"
+  },
+  {
+    "title": "《战神》PSP 版被静态重编译跑进浏览器",
+    "content": "开发者把 PSP 版《战神》静态重编译成 WebAssembly，靠自研的 HLE 内核与 WebGL2 渲染器，在浏览器里无需模拟器直接运行。相比逐指令模拟，静态重编译性能好得多，也让「老游戏进浏览器」多了一条可行路线，复古游戏与 WASM 爱好者都在围观。",
+    "quote": "模拟器还没退役，重编译已经先一步上桌了。",
+    "source": "HN Front Page",
+    "url": "https://github.com/snuri00/psp-web-recomp",
+    "published": "2026-10-08",
+    "uid": "dev_5492ba1e"
+  },
+  {
+    "title": "Mecum：让 Agent 直接操作 Mac 上的任何软件",
+    "content": "开源的 macOS 应用 Mecum，让 AI Agent 能操作 Mac 上任意桌面软件，同时你还能继续正常使用电脑。它主打「不抢你的鼠标键盘」，把 Agent 的自动化限制在可控范围内。对想给本地桌面流程加自动化的开发者，是个比纯脚本更省心的实验品。",
+    "quote": "让 AI 帮你点鼠标，还得防着它顺手清空回收站。",
+    "source": "HN Show HN",
+    "url": "https://github.com/ForteAI-Org/mecum",
+    "published": "2026-10-08",
+    "uid": "dev_b8cccd8a"
+  },
+  {
+    "title": "Epic 开源的图形化调试器 RadDebugger",
+    "content": "Epic Games 开源的 RadDebugger 是一款原生、多进程的图形化调试器，用 C 写成，主打调试 C/C++ 项目的流畅体验与可视化。作为游戏大厂放出的调试工具，它补上了开源世界在「好用 GUI 调试器」上的短板，Windows 开发者值得一试。",
+    "quote": "Epic 打游戏的名声在外，做工具也是真下本。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/EpicGames/raddebugger",
+    "published": "2026-10-08",
+    "uid": "dev_b3ae9159"
+  },
+  {
+    "title": "cua：给「电脑操作 Agent」做基础设施",
+    "content": "来自 trycua 的开源项目 cua，定位计算机使用（Computer-Use）Agent 的底层设施：提供跨操作系统的驱动、多机集群与评测基准，用于训练、评估和生成数据。随着 AI 操作电脑成为热点，谁掌握这类基础设施，谁就卡住了 Agent 落地的关键一环。",
+    "quote": "卷模型卷不动了，开始卷 Agent 的手和脚。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/trycua/cua",
+    "published": "2026-10-08",
+    "uid": "dev_2f06de8a"
+  },
+  {
+    "title": "claude-mem：给 Agent 装上跨会话记忆",
+    "content": "开源项目 claude-mem 给编码 Agent 加上跨会话的持久记忆：记录 Agent 在会话中的行为，用 AI 压缩后注入后续会话，兼容 Claude Code、Codex、Gemini 等多个工具。对天天重启会话、上下文反复丢失的开发者，这是把「记忆」外包出去的一种解法。",
+    "quote": "Agent 终于不用每次都假装第一次见你。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/thedotmack/claude-mem",
+    "published": "2026-10-08",
+    "uid": "dev_55490f36"
+  },
+  {
+    "title": "用户发现 DeepSeek 网页端能刷到别人的对话",
+    "content": "有 V2EX 用户发帖称，在 DeepSeek 网页和 App 输入特定 think 标记，竟能看到其他用户的历史对话内容，且发帖时称尚未修复。这属于典型的越权访问与数据隔离缺陷，无论最终原因如何，都再次提醒大模型产品在会话隔离上不能掉以轻心。",
+    "quote": "能让 AI 看别人聊天记录，也能让别人看你问它啥。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1213000#reply1",
+    "published": "2026-10-08",
+    "uid": "dev_ffb35265"
+  },
+  {
+    "title": "讨论：大模型的最终归宿是机器人，不是写代码",
+    "content": "V2EX 上一个帖子引发讨论：作者认为 AI Coding 市场已供大于求，软件需求接近饱和，大模型的真正归宿是机器人——CV 提供视觉、LLM 提供语言、算力集群提供算力，通用机器人的软件架构基本齐活。观点未必对，但对判断下一个风口有参考价值。",
+    "quote": "代码写到饱和，下一步该给机器人做大脑了。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1233752#reply0",
+    "published": "2026-10-08",
+    "uid": "dev_cceeffe8"
+  },
+  {
+    "title": "catbus：一套命令操作 10 个内容平台",
+    "content": "开发者开源的命令行工具 catbus，把小红书、抖音、TikTok、B 站、快手、微博、闲鱼、淘宝、京东、X 这 10 个平台的网页端能力整合进同一套命令，安装后即可用统一语法搜索、抓取内容。对做多平台数据采集与自动化的人，省去了逐个平台写爬虫的麻烦。",
+    "quote": "一个 CLI 打十个平台，爬虫工程师的饭碗又薄了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1246731#reply10",
+    "published": "2026-10-08",
+    "uid": "dev_c2d00999"
+  },
+  {
+    "title": "SPDX 还是 CycloneDX：先选个能落地的 SBOM 格式",
+    "content": "Dev.to 文章对比 SPDX 与 CycloneDX 两种主流 SBOM（软件物料清单）格式，重点不在谁更「标准」，而在于选一个团队真正能运营起来的。随着供应链安全合规要求变严，SBOM 从可选变成必备，格式选错的代价会在后续工具链集成时集中爆发。",
+    "quote": "格式之争吵得凶，能跑起来的才叫标准。",
+    "source": "Dev.to",
+    "url": "https://dev.to/bianliang/spdx-or-cyclonedx-choosing-an-sbom-format-you-can-actually-operate-3ko9",
+    "published": "2026-10-08",
+    "uid": "dev_e58618f2"
+  },
+  {
+    "title": "在 EKS 上搭一套有韧性的 Kubernetes 应用",
+    "content": "一篇偏工程实践的文章，演示如何在 Amazon EKS 上部署一套生产级的高可用架构：用 Helm 管理、StatefulSet 加 EBS 持久化存储、HPA 自动扩缩容、ALB Ingress，再配上 Redis 与 PostgreSQL。适合想系统练一遍 K8s 韧性设计、又缺完整案例的后端工程师。",
+    "quote": "教程里秒级扩容，生产里先问你有没有预算。",
+    "source": "Dev.to",
+    "url": "https://dev.to/jamiu_cloud/resilient-kubernetes-application-1875",
+    "published": "2026-10-08",
+    "uid": "dev_fb72e84c"
+  },
+  {
+    "title": "从「调模型」到「搭系统」：Harness Engineering 是什么",
+    "content": "博客园文章解读 2026 年 AI 圈的新热词 Harness Engineering（驾驭工程），讨论它到底是新瓶旧酒还是真需求。核心观点是：AI 工程的重心正从「调模型」转向「搭系统」——围绕模型构建工具、记忆、评测与反馈的整套脚手架，才是决定落地效果的关键。",
+    "quote": "热词年年有，这回听着还真像那么回事。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/codigger/p/23213917",
+    "published": "2026-10-08",
+    "uid": "dev_c6d6b095"
+  },
+  {
+    "title": "让 Agent 平时睡大觉，数据一变就醒来干活",
+    "content": "张善友在博客园分享 Ambient Agent（环境智能体）的落地经验：难点不在「让 Agent 做什么」，而在何时叫醒它、如何保证恰好执行一次、进程崩溃与网络抖动后如何体面收场。文章把事件驱动、幂等与容错这些老工程问题，重新放进了 Agent 的语境里。",
+    "quote": "Agent 的最大难题不是聪明，是别装睡也别诈尸。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23212659",
+    "published": "2026-10-08",
+    "uid": "dev_a10685c3"
+  },
+  {
+    "title": "Show HN：Planlock，Agent 的计划批一次，之后每次调用由代码放行",
+    "content": "把 AI Agent 的计划审批做进代码里：你先批准一次计划，之后每一次工具调用都由代码逐条校验，只有落在已批范围里的才放行。思路是别让 Agent 边跑边自作主张——风险动作在计划阶段就拦住，执行阶段只认白名单。对要在生产环境里放 Agent 动手的团队，这是把「人工把关」从口号变成硬约束的一种做法。",
+    "quote": "批过一次计划，就别想偷偷多干一步。",
+    "source": "HN Show HN",
+    "url": "https://github.com/JosephCurwin/planlock",
+    "published": "2026-10-08",
+    "uid": "dev_755d292f"
+  },
+  {
+    "title": "Show HN：Trigora，不要事件回放的持久化执行",
+    "content": "Trigora 做的是持久化执行（durable execution），但换了条路：它不靠事件历史回放，而是让流程在崩溃或重启后能从断点继续。传统方案把每一步都记成日志、重放恢复，代价是状态存储和重放开销；Trigora 想省掉这套重放机制，让长流程的容错更轻。对做工作流、任务编排的团队，值得看看它的取舍。",
+    "quote": "回放一整本历史只为接着跑，太累了。",
+    "source": "HN Show HN",
+    "url": "https://github.com/trigora-dev/trigora",
+    "published": "2026-10-08",
+    "uid": "dev_56c9128f"
+  },
+  {
+    "title": "Show HN：CrowDB，单个 Docker 容器跑起 Iceberg 表存储",
+    "content": "CrowDB 把 Iceberg、dataset、S3 这些现代存储接口塞进单个 Docker 容器就能跑，主打单机部署。想试数据湖表格式的人，往往先被一整套集群和依赖劝退；作者提供单节点版本，用最轻的方式先跑通 Iceberg 表接口。对只是想验证数据湖这套东西是否合适的小团队，是个低门槛的入口。",
+    "quote": "数据湖那一整套架子，一个容器就想搭完？",
+    "source": "HN Show HN",
+    "url": "https://buzzcrow.github.io/blog/run-iceberg-in-one-container/",
+    "published": "2026-10-08",
+    "uid": "dev_eb4e473b"
+  },
+  {
+    "title": "把首次邮件群发当成一次金丝雀发布",
+    "content": "把第一次邮件群发当成金丝雀发布来管：先只发给一小撮代表用户，设好明确的健康指标和停止条件，确认没问题再扩大范围。文章给出金丝雀分组、健康检查与回滚阈值的做法。营销邮件最怕一发全量才发现链接错、模板崩，用发布流程的纪律来兜底，比发完再道歉省事。",
+    "quote": "群发不看健康指标，就是拿全量用户试错。",
+    "source": "Dev.to",
+    "url": "https://dev.to/meerasenwrites/treat-an-email-campaign-launch-like-a-canary-deployment-4bik",
+    "published": "2026-10-08",
+    "uid": "dev_784444b2"
+  },
+  {
+    "title": "把 Instagram 评论转私信流程建模成一个小状态机",
+    "content": "Instagram 的「评论触发私信」这类营销自动化流程，用一串 if-else 写会越写越乱。文章主张把它建模成一个状态机：comment_received、promise_delivered 等状态清晰列出，转移条件也一目了然。状态一多，链式营销逻辑就容易出漏，先画成小状态机再实现，维护和排查都轻松得多。",
+    "quote": "拿 if-else 串营销流程，早晚串成一团乱麻。",
+    "source": "Dev.to",
+    "url": "https://dev.to/meerasenwrites/model-an-instagram-comment-to-dm-flow-as-a-small-state-machine-3m59",
+    "published": "2026-10-08",
+    "uid": "dev_8a725714"
+  },
+  {
+    "title": "精简模式只省下了一半本可省下的内存",
+    "content": "在 Apple Silicon Mac 上同时跑多个手机模拟器，多半卡在内存，而一部分压力来自默认镜像而非被测应用本身。作者研究「精简模式」后发现：它本可以省下更多内存，却只拿到大约一半的收益。文章分析这半个身位差在哪，对靠模拟器做 CI、内存又紧的团队，是条能再压一压的优化线索。",
+    "quote": "省内存只省了一半，剩下那半去哪了？",
+    "source": "Dev.to",
+    "url": "https://dev.to/joduchan/lean-mode-gives-up-roughly-half-the-memory-saving-it-could-have-had-2ocl",
+    "published": "2026-10-08",
+    "uid": "dev_3c95356f"
+  },
+  {
+    "title": "从手动检查到自动监控：一个数据质量工作流的实现",
+    "content": "做数据工程的人，每天到工位第一件事常是敲几条 SQL，看关键表行数对不对、数据更新到几点、空值有没有突然飙高，一套检查下来半小时就没了，查出问题还得翻日志、查上下游、挨个通知。文章讲怎么把这种人工检查改成自动化监控的数据质量工作流，把重复劳动交给程序，人只处理真正异常的部分。",
+    "quote": "每天手动敲 SQL 巡检，纯属给加班找理由。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/wang_yb/p/23216940",
+    "published": "2026-10-08",
+    "uid": "dev_1eadd995"
+  },
+  {
+    "title": "单模型执行器与 OpenCode v2 的配置迁移",
+    "content": "多 Agent 编排的默认范式已相当成熟：顶层路由按意图分派、子代理各司其职、模型按难度分级。但这套默认执行链路允许横跨多个模型，于是引出两个常被低估的问题——链路上模型换来换去，一致性与可控性怎么办。作者借「单模型执行器」与 OpenCode v2 的配置迁移，聊了聊这两个工程问题。",
+    "quote": "模型换来换去，出了事都不知道该找谁负责。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/znlgis/p/23215173",
+    "published": "2026-10-08",
+    "uid": "dev_c3f5ea46"
+  },
+  {
+    "title": "启视 BootScope：能看到任务管理器看不到的启动项",
+    "content": "有网友清理电脑时发现，任务管理器和 msconfig 只能看到一部分启动项——HKEY_users 下的 SYSTEM 账户与新用户模板这两处它们都不显示，偏偏是卸载残留和持久化程序爱藏的地方。Autoruns 虽强但对普通用户偏重，于是自己写了启视 BootScope：单文件 PowerShell、零依赖的 Windows 启动项管理工具。",
+    "quote": "藏启动项的地方，任务管理器压根不给你看。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1246846",
+    "published": "2026-10-08",
+    "uid": "dev_8f5f1e4d"
+  },
+  {
+    "title": "自托管 web 群聊：群里 @ 一下，队友的 Codex 就开工",
+    "content": "团队写代码基本靠 Claude Code 和 Codex，但用着用着发现 Agent 都被关在各自的终端里：我让 Agent 改接口队友不知道，我配好的环境队友用不上，Agent 起的服务只在本机 localhost。作者于是做了个开源的自托管 web 群聊——在群里 @ 一下，队友机器上的 Claude Code / Codex 就能开工，把各自的 Agent 拉进同一个协作空间。",
+    "quote": "Agent 关在各自终端里，协作全靠吼。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1246772",
+    "published": "2026-10-08",
+    "uid": "dev_54806803"
+  },
+  {
+    "title": "用 gpui-kit 做了个 RSS 阅读器 / Miniflux 客户端",
+    "content": "信息流刷多了，满屏都是同样那几档事；每天不是和 AI 对话，就是泡在 AI 生成的内容里，有人味的文章越来越少。作者因此重新捡起 RSS，用 gpui-kit 做了个 RSS 阅读器 / Miniflux 客户端，想把「独立博客还在自己写」的那部分内容找回来。对厌倦信息茧房、想回退到订阅制阅读的人，这算一次技术上的反抗。",
+    "quote": "刷不动信息茧房了，只好自己动手捞 RSS。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1246807",
+    "published": "2026-10-08",
+    "uid": "dev_39b4fdab"
+  }
+]
