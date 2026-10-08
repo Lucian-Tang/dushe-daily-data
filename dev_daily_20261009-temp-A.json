@@ -1,0 +1,137 @@
+[
+  {
+    "title": "Anthropic 发布 Claude Haiku 5.5",
+    "content": "Anthropic 发布 Claude Haiku 5.5，定位更小更快的轻量模型，主打低延迟与低成本，适合高频调用、批量分类、Agent 里的打杂环节。对把大模型塞进产品链路的团队而言，快而便宜的模型往往比最强模型更实用，也再次印证了那套分工思路：贵模型负责开局定调，便宜模型负责日常干活。",
+    "quote": "最强不一定最忙，最忙的那款才挣钱。",
+    "source": "HN Front Page",
+    "url": "https://www.anthropic.com/claude-haiku-5-5",
+    "published": "2026-10-09",
+    "uid": "dev_f6889937"
+  },
+  {
+    "title": "GPT-6 与「人人可用的智能界面」",
+    "content": "OpenAI 放出 GPT-6，并同步强调人人可用的智能界面，把重点从单纯堆参数转向交互层，让模型更主动地理解界面、上下文与用户意图。HN 讨论迅速冲到七百多赞，争议点集中在模型已够强，产品形态才是决胜手。做应用层的开发者，值得留意这种能力平权、体验分层的走向。",
+    "quote": "模型卷到头，开始卷怎么把按钮藏起来。",
+    "source": "HN Front Page",
+    "url": "https://openai.com/index/gpt-6-for-everyone/",
+    "published": "2026-10-09",
+    "uid": "dev_df89fbd6"
+  },
+  {
+    "title": "OpenAI 撤回三篇数学论文",
+    "content": "OpenAI 在仓库里公开日志：因一篇论文的符号错误推翻了关键论证，连带撤回三篇相关数学手稿，同时修订了另外十四篇的证明。这波当众纠错在 HN 引发三百多赞讨论，焦点落在 AI 辅助数学研究的可验证性上——越是高产的自动证明，越需要可追溯的勘误与版本记录。",
+    "quote": "论文能自动生成，错误也得自动认领。",
+    "source": "HN Front Page",
+    "url": "https://github.com/openai/math/blob/main/history.md",
+    "published": "2026-10-09",
+    "uid": "dev_6601e64c"
+  },
+  {
+    "title": "Glog：一个只读的 Git 终端界面",
+    "content": "开发者做了 glog：一个只读的 Git 终端界面，沿用 git 用户熟悉的翻阅快捷键，专给还在读代码、还在用 Git，但写码越来越多交给 Agent 的人。它的定位很克制，不新增写操作，只把提交历史与差异看得更顺。对坚持在命令行里理解代码的工程师，是个顺手的补充工具。",
+    "quote": "代码 Agent 写，历史还得自己翻。",
+    "source": "HN Show HN",
+    "url": "https://yairchu.github.io/glog/",
+    "published": "2026-10-09",
+    "uid": "dev_c69f5efa"
+  },
+  {
+    "title": "Pivot：跑在 Iceberg 上的极速分析引擎",
+    "content": "Pivot 是一款跑在 Iceberg 上的分析引擎，作者称在部分查询上比 ClickHouse、DuckDB 快一倍以上。它瞄准的是数据湖上直接做交互式分析、省去搬运数据到专用仓库的场景。对数据工程团队，湖仓一体想真正好用，这类引擎层的竞速值得盯，但也别急着信跑分。",
+    "quote": "隔壁跑分第一，先信一半再看效果。",
+    "source": "HN Show HN",
+    "url": "https://pivotlake.io/",
+    "published": "2026-10-09",
+    "uid": "dev_5c6cad71"
+  },
+  {
+    "title": "Anthropic 开源知识工作者插件集 knowledge-work-plugins",
+    "content": "Anthropic 开源了 knowledge-work-plugins：一批主要面向知识工作者的 Claude Cowork 插件，覆盖文档、表格、检索等日常任务。它释放的信号很明确，大厂开始把 Agent 能力沉淀成可复用的插件，而非只留一个对话框。对做企业内部工具的团队，这是观察插件化 Agent 落地路径的好样本。（约 2.7 万星）",
+    "quote": "大厂把 Agent 拆成零件，等着你来拼。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/anthropics/knowledge-work-plugins",
+    "published": "2026-10-09",
+    "uid": "dev_10d65d92"
+  },
+  {
+    "title": "artcraft：用 Rust 写的可控创作引擎",
+    "content": "artcraft 是一个用 Rust 写的创作引擎，面向艺术家、设计师与影视从业者，主打有意图地把控生成过程，而不是一键出图撞运气。在生成式工具泛滥、结果难以复现的当下，它试图把专业创作的可控性放回中心。对做创意工具或想理解 Rust 图形与引擎生态的人，值得一看。（约 6700 星）",
+    "quote": "一键出图谁都会，能让人改才是本事。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/storytold/artcraft",
+    "published": "2026-10-09",
+    "uid": "dev_519dc1fb"
+  },
+  {
+    "title": "手搓一个 Web 版《魔兽争霸 3》运行时",
+    "content": "有开发者手搓了一个 Web 版《魔兽争霸 3》运行时，能在浏览器里以 1920×1080 @60Hz 流畅运行，还支持 DotA 等自定义地图。他说 3D 比之前的 2D 红警移植复杂得多，光是优化细节就花了不少功夫。把老游戏搬进浏览器一直有爱好者前赴后继，这次难得地把性能也压得像个正经运行时。",
+    "quote": "红警刚搬完，魔兽这边又开分矿了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1247176",
+    "published": "2026-10-09",
+    "uid": "dev_c9405ad3"
+  },
+  {
+    "title": "七个项目实测：贵模型开局、便宜模型干活，省了八成",
+    "content": "作者同时推进七个项目，摸索出贵模型开局、便宜模型干活的用法：讨论、定规范、啃硬骨头和代码审查交给最强的模型，日常写码交给更便宜的模型，按 API 价折算省了约八成。他还总结了配套的 RED 方法论。这套分工不算新鲜，但有真实项目规模和账单做背书，参考价值更实在。",
+    "quote": "该请专家的请专家，日常搬砖别用金锄头。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1247174",
+    "published": "2026-10-09",
+    "uid": "dev_80750a8e"
+  },
+  {
+    "title": "群里接了几个 Agent 之后，怎么决定它该不该说话",
+    "content": "作者把几个 coding agent 接进团队的 Slack 和 GitHub 后，撞上一个新问题：Agent 不知道什么时候该闭嘴。有人提问、有人贴报错、有人只是回句谢谢，若每条都回应很快就被淹。于是他开始设计一套该不该说话的判定逻辑。Agent 大量进群之后，如何克制地参与，反而比能力本身更难。",
+    "quote": "会干活不难，难的是学会适时闭嘴。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1247030",
+    "published": "2026-10-09",
+    "uid": "dev_9d1e2ff9"
+  },
+  {
+    "title": "收录 1497 多个中文独立博客之后，他做了 indi.blog",
+    "content": "有人把收录 1497 多个中文独立博客的仓库做成了导航站 indi.blog。那个仓库在 GitHub 上已有约 2.4 万星，基本每周都有博主提交自己的站点。在独立博客早死了的说法喊了多年后，这个项目却一直在自然生长。对想找回信息主动权、摆脱平台推荐流的人来说，这类站点是一次安静的反抗。",
+    "quote": "都说博客死了，结果每年还在长新叶。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1246878",
+    "published": "2026-10-09",
+    "uid": "dev_ce70210a"
+  },
+  {
+    "title": "用 Yjs 与 CRDT 搭一个实时协同代码编辑器",
+    "content": "一篇 Dev.to 长文讲如何用 Yjs 与 CRDT 搭一个实时协同代码编辑器。作者从共享屏幕结对编程、一到对方打字就崩的痛点切入，解释 CRDT 如何在没有中心协调者的情况下让多方编辑自动收敛。对想做多人协作编辑、又不想自建复杂冲突合并的开发者，CRDT 这条路线越来越值得认真评估。",
+    "quote": "屏幕共享的尽头，是抢同一根光标。",
+    "source": "Dev.to",
+    "url": "https://dev.to/deadd/building-a-real-time-collaborative-code-editor-with-yjs-and-crdts-42ie",
+    "published": "2026-10-09",
+    "uid": "dev_d3b53f09"
+  },
+  {
+    "title": "当 AI Agent 做真实业务操作，风险谁来扛？",
+    "content": "一篇 Dev.to 文章讨论：当 AI Agent 开始真正下订单、改数据、发消息这类有实际后果的操作，风险该由谁承担？作者用发货的例子说明，能力越强的 Agent，越需要清晰的权限边界、人工兜底与责任划分。提醒做 Agent 落地的团队，别只盯着能不能做，先想清楚做错了算谁的。（文首声明由 AI 起草）",
+    "quote": "让 AI 替你签字，先想好谁背锅。",
+    "source": "Dev.to",
+    "url": "https://dev.to/_a85279337b0f2035a8222c2/when-ai-agents-take-real-business-actions-who-handles-the-risk-hpn",
+    "published": "2026-10-09",
+    "uid": "dev_8e549e91"
+  },
+  {
+    "title": "Agent 天天挂在嘴边的沙箱，到底是个啥？",
+    "content": "博客园一篇科普把 Agent 文档里高频出现的沙箱讲清楚了。从 Claude Code 专门辟出章节讲沙箱，到 Codex 默认就带沙箱，作者试图回答：为什么这些工具都要强调隔离，沙箱到底在限制什么、保护谁。对刚开始接触 Agent、又常被术语糊住的人，是一篇不错的入口读物，也点出安全边界才是落地的地基。",
+    "quote": "能力越大，越得先给它圈个院子。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/jinjiangongzuoshi/p/23219908",
+    "published": "2026-10-09",
+    "uid": "dev_533ac42b"
+  },
+  {
+    "title": "MiniMax Code 接入 PowerContext：给 Agent 搭跨会话上下文底座",
+    "content": "作者分享了把 MiniMax Code 接入 PowerContext 的实践，目标是为桌面端 Agent 搭一个跨会话、跨工具的项目上下文底座。随着 Claude Code、Codex、DeepSeek Harness 等工具越来越多，会话之间记不住、接不上成了共同痛点。这篇文章记录的正是如何让不同 Agent 共享同一份项目记忆。",
+    "quote": "换个 Agent 就失忆，谁受得了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/knqiufan/p/23230707",
+    "published": "2026-10-09",
+    "uid": "dev_90816c2c"
+  }
+]
