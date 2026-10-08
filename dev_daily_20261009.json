@@ -1,0 +1,227 @@
+[
+  {
+    "title": "Anthropic 发布 Claude Haiku 5.5",
+    "content": "Anthropic 发布 Claude Haiku 5.5，定位更小更快的轻量模型，主打低延迟与低成本，适合高频调用、批量分类、Agent 里的打杂环节。对把大模型塞进产品链路的团队而言，快而便宜的模型往往比最强模型更实用，也再次印证了那套分工思路：贵模型负责开局定调，便宜模型负责日常干活。",
+    "quote": "最强不一定最忙，最忙的那款才挣钱。",
+    "source": "HN Front Page",
+    "url": "https://www.anthropic.com/claude-haiku-5-5",
+    "published": "2026-10-09",
+    "uid": "dev_f6889937"
+  },
+  {
+    "title": "GPT-6 与「人人可用的智能界面」",
+    "content": "OpenAI 放出 GPT-6，并同步强调人人可用的智能界面，把重点从单纯堆参数转向交互层，让模型更主动地理解界面、上下文与用户意图。HN 讨论迅速冲到七百多赞，争议点集中在模型已够强，产品形态才是决胜手。做应用层的开发者，值得留意这种能力平权、体验分层的走向。",
+    "quote": "模型卷到头，开始卷怎么把按钮藏起来。",
+    "source": "HN Front Page",
+    "url": "https://openai.com/index/gpt-6-for-everyone/",
+    "published": "2026-10-09",
+    "uid": "dev_df89fbd6"
+  },
+  {
+    "title": "OpenAI 撤回三篇数学论文",
+    "content": "OpenAI 在仓库里公开日志：因一篇论文的符号错误推翻了关键论证，连带撤回三篇相关数学手稿，同时修订了另外十四篇的证明。这波当众纠错在 HN 引发三百多赞讨论，焦点落在 AI 辅助数学研究的可验证性上——越是高产的自动证明，越需要可追溯的勘误与版本记录。",
+    "quote": "论文能自动生成，错误也得自动认领。",
+    "source": "HN Front Page",
+    "url": "https://github.com/openai/math/blob/main/history.md",
+    "published": "2026-10-09",
+    "uid": "dev_6601e64c"
+  },
+  {
+    "title": "Glog：一个只读的 Git 终端界面",
+    "content": "开发者做了 glog：一个只读的 Git 终端界面，沿用 git 用户熟悉的翻阅快捷键，专给还在读代码、还在用 Git，但写码越来越多交给 Agent 的人。它的定位很克制，不新增写操作，只把提交历史与差异看得更顺。对坚持在命令行里理解代码的工程师，是个顺手的补充工具。",
+    "quote": "代码 Agent 写，历史还得自己翻。",
+    "source": "HN Show HN",
+    "url": "https://yairchu.github.io/glog/",
+    "published": "2026-10-09",
+    "uid": "dev_c69f5efa"
+  },
+  {
+    "title": "Pivot：跑在 Iceberg 上的极速分析引擎",
+    "content": "Pivot 是一款跑在 Iceberg 上的分析引擎，作者称在部分查询上比 ClickHouse、DuckDB 快一倍以上。它瞄准的是数据湖上直接做交互式分析、省去搬运数据到专用仓库的场景。对数据工程团队，湖仓一体想真正好用，这类引擎层的竞速值得盯，但也别急着信跑分。",
+    "quote": "隔壁跑分第一，先信一半再看效果。",
+    "source": "HN Show HN",
+    "url": "https://pivotlake.io/",
+    "published": "2026-10-09",
+    "uid": "dev_5c6cad71"
+  },
+  {
+    "title": "Anthropic 开源知识工作者插件集 knowledge-work-plugins",
+    "content": "Anthropic 开源了 knowledge-work-plugins：一批主要面向知识工作者的 Claude Cowork 插件，覆盖文档、表格、检索等日常任务。它释放的信号很明确，大厂开始把 Agent 能力沉淀成可复用的插件，而非只留一个对话框。对做企业内部工具的团队，这是观察插件化 Agent 落地路径的好样本。（约 2.7 万星）",
+    "quote": "大厂把 Agent 拆成零件，等着你来拼。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/anthropics/knowledge-work-plugins",
+    "published": "2026-10-09",
+    "uid": "dev_10d65d92"
+  },
+  {
+    "title": "artcraft：用 Rust 写的可控创作引擎",
+    "content": "artcraft 是一个用 Rust 写的创作引擎，面向艺术家、设计师与影视从业者，主打有意图地把控生成过程，而不是一键出图撞运气。在生成式工具泛滥、结果难以复现的当下，它试图把专业创作的可控性放回中心。对做创意工具或想理解 Rust 图形与引擎生态的人，值得一看。（约 6700 星）",
+    "quote": "一键出图谁都会，能让人改才是本事。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/storytold/artcraft",
+    "published": "2026-10-09",
+    "uid": "dev_519dc1fb"
+  },
+  {
+    "title": "手搓一个 Web 版《魔兽争霸 3》运行时",
+    "content": "有开发者手搓了一个 Web 版《魔兽争霸 3》运行时，能在浏览器里以 1920×1080 @60Hz 流畅运行，还支持 DotA 等自定义地图。他说 3D 比之前的 2D 红警移植复杂得多，光是优化细节就花了不少功夫。把老游戏搬进浏览器一直有爱好者前赴后继，这次难得地把性能也压得像个正经运行时。",
+    "quote": "红警刚搬完，魔兽这边又开分矿了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1247176",
+    "published": "2026-10-09",
+    "uid": "dev_c9405ad3"
+  },
+  {
+    "title": "七个项目实测：贵模型开局、便宜模型干活，省了八成",
+    "content": "作者同时推进七个项目，摸索出贵模型开局、便宜模型干活的用法：讨论、定规范、啃硬骨头和代码审查交给最强的模型，日常写码交给更便宜的模型，按 API 价折算省了约八成。他还总结了配套的 RED 方法论。这套分工不算新鲜，但有真实项目规模和账单做背书，参考价值更实在。",
+    "quote": "该请专家的请专家，日常搬砖别用金锄头。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1247174",
+    "published": "2026-10-09",
+    "uid": "dev_80750a8e"
+  },
+  {
+    "title": "群里接了几个 Agent 之后，怎么决定它该不该说话",
+    "content": "作者把几个 coding agent 接进团队的 Slack 和 GitHub 后，撞上一个新问题：Agent 不知道什么时候该闭嘴。有人提问、有人贴报错、有人只是回句谢谢，若每条都回应很快就被淹。于是他开始设计一套该不该说话的判定逻辑。Agent 大量进群之后，如何克制地参与，反而比能力本身更难。",
+    "quote": "会干活不难，难的是学会适时闭嘴。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1247030",
+    "published": "2026-10-09",
+    "uid": "dev_9d1e2ff9"
+  },
+  {
+    "title": "收录 1497 多个中文独立博客之后，他做了 indi.blog",
+    "content": "有人把收录 1497 多个中文独立博客的仓库做成了导航站 indi.blog。那个仓库在 GitHub 上已有约 2.4 万星，基本每周都有博主提交自己的站点。在独立博客早死了的说法喊了多年后，这个项目却一直在自然生长。对想找回信息主动权、摆脱平台推荐流的人来说，这类站点是一次安静的反抗。",
+    "quote": "都说博客死了，结果每年还在长新叶。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1246878",
+    "published": "2026-10-09",
+    "uid": "dev_ce70210a"
+  },
+  {
+    "title": "用 Yjs 与 CRDT 搭一个实时协同代码编辑器",
+    "content": "一篇 Dev.to 长文讲如何用 Yjs 与 CRDT 搭一个实时协同代码编辑器。作者从共享屏幕结对编程、一到对方打字就崩的痛点切入，解释 CRDT 如何在没有中心协调者的情况下让多方编辑自动收敛。对想做多人协作编辑、又不想自建复杂冲突合并的开发者，CRDT 这条路线越来越值得认真评估。",
+    "quote": "屏幕共享的尽头，是抢同一根光标。",
+    "source": "Dev.to",
+    "url": "https://dev.to/deadd/building-a-real-time-collaborative-code-editor-with-yjs-and-crdts-42ie",
+    "published": "2026-10-09",
+    "uid": "dev_d3b53f09"
+  },
+  {
+    "title": "当 AI Agent 做真实业务操作，风险谁来扛？",
+    "content": "一篇 Dev.to 文章讨论：当 AI Agent 开始真正下订单、改数据、发消息这类有实际后果的操作，风险该由谁承担？作者用发货的例子说明，能力越强的 Agent，越需要清晰的权限边界、人工兜底与责任划分。提醒做 Agent 落地的团队，别只盯着能不能做，先想清楚做错了算谁的。（文首声明由 AI 起草）",
+    "quote": "让 AI 替你签字，先想好谁背锅。",
+    "source": "Dev.to",
+    "url": "https://dev.to/_a85279337b0f2035a8222c2/when-ai-agents-take-real-business-actions-who-handles-the-risk-hpn",
+    "published": "2026-10-09",
+    "uid": "dev_8e549e91"
+  },
+  {
+    "title": "MiniMax Code 接入 PowerContext：给 Agent 搭跨会话上下文底座",
+    "content": "作者分享了把 MiniMax Code 接入 PowerContext 的实践，目标是为桌面端 Agent 搭一个跨会话、跨工具的项目上下文底座。随着 Claude Code、Codex、DeepSeek Harness 等工具越来越多，会话之间记不住、接不上成了共同痛点。这篇文章记录的正是如何让不同 Agent 共享同一份项目记忆。",
+    "quote": "换个 Agent 就失忆，谁受得了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/knqiufan/p/23230707",
+    "published": "2026-10-09",
+    "uid": "dev_90816c2c"
+  },
+  {
+    "title": "Show HN：Abyss，给 ACP Agent 套上隔离容器",
+    "content": "开发者做了 Abyss，一个本地优先的 Agent 容器化框架，专治两类问题：Agent 能随心所欲翻你的桌面文件，以及不同 Agent 之间权限边界模糊。它支持中间件机制，思路是给每个 ACP Agent 圈出独立的运行范围，再决定它能碰什么。对把 coding agent 当常驻工具用的人来说，隔离层正在从可选项变成必需品。",
+    "quote": "能把活干完不算本事，能关得住才算。",
+    "source": "Show HN",
+    "url": "https://abyss.scurry.io",
+    "published": "2026-10-09",
+    "uid": "dev_7c5f597f"
+  },
+  {
+    "title": "Show HN：Mob.so，给 Agent 用的浏览器版留言板",
+    "content": "Muse、Grok 这些 Agent 各自能访问互联网的不同角落，可要让它们协同工作，如今还得靠人复制粘贴。作者做了 mob.so，一个浏览器优先的留言板，让不同 Agent 有个公共区域交换信息、对接任务。它想解决的其实是多 Agent 之间那套还很原始的通信问题，让机器之间的协作不再全靠人类当传声筒。",
+    "quote": "Agent 协同的尽头，是先有个群聊。",
+    "source": "Show HN",
+    "url": "https://mob.so/",
+    "published": "2026-10-09",
+    "uid": "dev_4b09bd7d"
+  },
+  {
+    "title": "Show HN：教一个 30ms 的本地小模型玩浏览器游戏",
+    "content": "作者用 LLM 写规则，再教一个响应只要 30ms 的本地小模型去玩浏览器游戏。相比动辄调用云端大模型，本地小模型的优势是快、便宜、还能反复试错。这类把轻量模型塞进实时交互场景的尝试，正好踩在「贵模型负责开脑洞、便宜模型负责干实时活」的分工线上，也说明小模型并非只能打杂。",
+    "quote": "大模型负责想，小模型负责别卡壳。",
+    "source": "Show HN",
+    "url": "https://github.com/ironbee-ai/ironbee-gamer",
+    "published": "2026-10-09",
+    "uid": "dev_a1f50f90"
+  },
+  {
+    "title": "Show HN：Diffle，键盘流 diff 查看器，还带 LSP",
+    "content": "开发者做了 Diffle，一个以键盘操作为核心的差异查看器，并集成了 LSP。它瞄准的是那些习惯只用键盘、又想在看 diff 时拿到类型与跳转信息的人。在代码越来越多交给 Agent 写的当下，把「读代码、审改动」这一环做顺手，对手里仍攥着 review 大权的工程师依然是刚需。",
+    "quote": "代码能外包给 AI，review 还得自己扛。",
+    "source": "Show HN",
+    "url": "https://github.com/moritzwilksch/diffle",
+    "published": "2026-10-09",
+    "uid": "dev_8f2c6729"
+  },
+  {
+    "title": "Dev.to：上线前，先补上那些 OpenTelemetry 的窟窿",
+    "content": "一篇 Dev.to 实操文，讲如何用可观测性工具在上线前审计埋点：检查 traces、logs 和 dashboard，把没覆盖到的链路补齐。很多团队加完 OpenTelemetry 就以为万事大吉，真正的坑却在于哪些关键路径压根没被观测到。上线前花一小时查漏，往往比事后对着黑盒排障划算得多。",
+    "quote": "埋点没铺全，出了事就只能靠猜。",
+    "source": "Dev.to",
+    "url": "https://dev.to/courtney_gannon_09016dd7e/how-to-find-and-fix-opentelemetry-gaps-before-you-ship-1k37",
+    "published": "2026-10-09",
+    "uid": "dev_5a1e0a8e"
+  },
+  {
+    "title": "Dev.to：不靠第三方包，手写 Laravel 断点续传",
+    "content": "一篇 Dev.to 教程，讲如何在 Laravel 里不依赖现成包实现大文件断点续传：把文件切成 5MB 分片，由服务端记录的 offset 决定从哪继续，最后那步耗时的合并放进独立队列连接的 job，并把 retry_after 设得比任务本身更长。对要处理大文件上传、又不想被包绑定的人，是一份可落地的清单。",
+    "quote": "分片一多，队列没配对就容易翻车。",
+    "source": "Dev.to",
+    "url": "https://dev.to/zhoorta/resumable-uploads-in-laravel-without-a-package-chunks-offsets-and-a-queue-job-4nc6",
+    "published": "2026-10-09",
+    "uid": "dev_a353d0af"
+  },
+  {
+    "title": "Dev.to：72 小时从零造一个黑客松评审平台",
+    "content": "一篇 Dev.to 复盘：作者参加挑战，要在 72 小时内做出一个用来给黑客松打分的评审平台 ForgeJudge。文章记录了在极限时间下如何取舍功能、拍板技术方案、砍掉看似诱人的需求。比起成品多惊艳，这种「时间被锁死」的工程决策过程，反而更能看出一个人对优先级和止损点的判断力。",
+    "quote": "72 小时能造出啥，全看敢砍多少。",
+    "source": "Dev.to",
+    "url": "https://dev.to/anandrajput0210/trust-the-result-building-forgejudge-in-72-hours-3f42",
+    "published": "2026-10-09",
+    "uid": "dev_decd2f3a"
+  },
+  {
+    "title": "别再无脑用 MySQL：PostgreSQL 这 5 个底层能力",
+    "content": "博客园一篇技术对比，深挖 MySQL 与 PostgreSQL 的核心差异：架构、MVCC 机制、索引体系，并重点讲了 PG 的 JSONB、GIN 索引、递归 CTE 等独家能力，还盘点了 6 个从 MySQL 迁到 PG 的生产级大坑，配 Java 实战代码。立场是不盲目站队，给出一份可落地的数据库选型指南。",
+    "quote": "选库不是信仰之争，是把账算清。",
+    "source": "博客园",
+    "url": "https://www.cnblogs.com/zrui-xyu/p/23219962",
+    "published": "2026-10-09",
+    "uid": "dev_a7de7de7"
+  },
+  {
+    "title": "V2EX：不会做 App 图标，干脆收了 1.8 万个真实图标",
+    "content": "V2EX 一位独立开发者吐槽做图标的痛点：请设计师贵、自己画丑、让 AI 出又一股 AI 味。于是他做了 applore，收录 App Store 与 Google Play 上 1.8 万个真实图标，每天同步，还能按颜色、风格、分类、首字母翻，改过图标的 App 连旧版本都留着。做设计参考时，看看同行怎么画往往最有效。",
+    "quote": "不会画不要紧，知道去哪抄就行。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1247006",
+    "published": "2026-10-09",
+    "uid": "dev_e6bf70c8"
+  },
+  {
+    "title": "V2EX：把决策模型接进 AI 日程助手，48 组对照反而更差",
+    "content": "V2EX 作者把 Jev 这类 decision model 接进 AI 日程助手，做了 48 组对照实验，想验证它能否减少 LLM 在信息不确定时擅自拍板。结果反而变差。典型场景是「我 8:00 到单位，具体时间看您方便」——8:00 是到单位时间，不是会议时间，模型容易混淆。这个反直觉的负结果，对迷信「加个模块就变好」的人是个提醒。",
+    "quote": "加个模块就变好？先拿数据说话。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1247068",
+    "published": "2026-10-09",
+    "uid": "dev_75e3e423"
+  },
+  {
+    "title": "V2EX：iPhone 通过 Wi-Fi 备份到 NAS，工具开源了",
+    "content": "V2EX 作者去年发过一个小工具：在 Linux 主机或 NAS 上跑容器，通过浏览器管理 iPhone / iPad 的备份，数据存放在自己指定的目录里。这次更新后把源码也开源了。支持 USB / Wi-Fi 手动或定时备份，可按时间段、电量和充电条件触发，备份还能加密。对想摆脱 iCloud、把数据攥在自己手里的人是现成方案。",
+    "quote": "把数据放自己硬盘，睡觉才踏实。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1247204",
+    "published": "2026-10-09",
+    "uid": "dev_396c9d19"
+  }
+]
