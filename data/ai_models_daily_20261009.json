@@ -1,0 +1,277 @@
+{
+  "date": "2026-10-09",
+  "total": 22,
+  "vendors": [
+    "anthropic",
+    "mistral",
+    "google",
+    "openai",
+    "xai",
+    "deepseek",
+    "other"
+  ],
+  "models": {
+    "anthropic": {
+      "displayName": "Anthropic/Claude",
+      "icon": "🧬",
+      "items": [
+        {
+          "uid": "ai_e4c1aa4f",
+          "title": "V2EX：吐槽 Codex 乱发散，脑补完还当圣旨执行",
+          "content": "V2EX 热帖吐槽 Codex：其上下文压缩比 Claude Code 频繁得多，不先让它检索文献或 review 本地代码就直接回答，正确率很低、开口全是瞎编，还爱发散脑补。最要命的是脑补完紧接着来一次压缩，Codex 就把刚脑补出的方向当成既定主线任务，导致用户反复说「我没让你做这个」。发帖人称这一套组合拳比幻觉还恐怖，还用 Claude 的第一直觉和爱反驳做对比。",
+          "quote": "AI 自己脑补个需求，压缩完就当圣旨执行了。",
+          "source": "V2EX",
+          "url": "https://www.v2ex.com/t/1246868",
+          "published": "2026-10-09",
+          "direction": "行业动态"
+        },
+        {
+          "uid": "ai_c0a63da2",
+          "title": "GitHub 热榜：archify——把想法和代码库变成一张交互图",
+          "content": "这个 JavaScript 项目是给 Claude Code、Codex 等编码智能体用的「技能」：把你的一句话想法、一份方案或整个代码库，自动画成漂亮的交互式架构图，覆盖流程图、时序图、系统设计等。它定位为「图即代码」，让智能体动手前先把结构讲清楚，省去反复比划。（约 8 万星）",
+          "quote": "先画图再写码，省得它自己瞎猜架构。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/tt-a1i/archify",
+          "published": "2026-10-09",
+          "direction": "应用/落地"
+        },
+        {
+          "uid": "ai_f4b9a328",
+          "title": "GitHub 热榜：ponytail——让 AI 智能体像屋里最懒的资深工程师",
+          "content": "这个项目给编码智能体灌输一条哲学：最好的代码是你根本没写的代码。它把「最懒资深工程师」的思维做成技能，教智能体先质疑需求、能不加就不加，用 YAGNI 原则砍掉过度设计，支持 Claude Code、Cursor 等。已收获约 15.8 万星，反衬出社区对「AI 疯狂堆代码」的逆反。",
+          "quote": "教会 AI 偷懒，比教它多写代码难多了。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/DietrichGebert/ponytail",
+          "published": "2026-10-09",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_0cac5a15",
+          "title": "Dev.to：把 Obsidian 接上 Claude Code，搭一套真的共享记忆",
+          "content": "作者的笔记过去像「想法坟场」：Obsidian 记得一切却什么也做不了，Claude Code 什么都能做却每次会话都忘光，人成了两者之间的肉接口。他把二者打通后，干脆不再手动记笔记——由这套「记忆栈」代劳。文章不讲「第二大脑」美学，只给一套歪歪扭扭但真能跑的工程化记忆系统。",
+          "quote": "与其当两个大脑的接口，不如让它俩自己聊。",
+          "source": "Dev.to",
+          "url": "https://dev.to/numbpill3d/obsidian-claude-code-the-shared-memory-stack-i-actually-use-8m",
+          "published": "2026-10-09",
+          "direction": "行业动态"
+        }
+      ]
+    },
+    "mistral": {
+      "displayName": "Mistral",
+      "icon": "💨",
+      "items": [
+        {
+          "uid": "ai_45900275",
+          "title": "Mistral 发万亿参数开放权重模型，绰号「Le Chonk」",
+          "content": "法国 Mistral 发布新模型 Mistral Large 4，绰号「Le Chonk」，参数规模达 1 万亿，免费开放权重，现为预览版、月底出正式版。它主打通用竞争，却特别针对编程、网络防御以及制造、金融、电气工程等垂直任务优化。Mistral 称其是迄今中国以外最强的开放权重模型，性能「非常非常接近」部分闭源模型。",
+          "quote": "万亿参数还叫「胖」，开源阵营这次下了血本。",
+          "source": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/10/mistral-says-le-chonk-can-challenge-the-best-ai-models/",
+          "published": "2026-10-09",
+          "direction": "模型发布"
+        }
+      ]
+    },
+    "google": {
+      "displayName": "Google/Gemini",
+      "icon": "🌐",
+      "items": [
+        {
+          "uid": "ai_41e5631e",
+          "title": "Google 推出离线优先的 AI 笔记应用 Edge Foresight",
+          "content": "Google 推出对标 AI 笔记应用 Granola 的新品 Google AI Edge Foresight。这款 Mac 应用可完全离线运行，靠端侧的 EmbeddingGemma 2（7.4 亿参数）跨应用记录会议，含当面会议。界面分屏：一侧手写速记、一侧 AI 生成笔记，可看转录，或与 Gemma 4 助手对话；还能上传 PDF、Office 文档、Markdown 等搭知识库答疑。",
+          "quote": "会议记录断网也能写，隐私焦虑先放一放。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/08/google-releases-a-new-local-first-granola-competitor/",
+          "published": "2026-10-09",
+          "direction": "模型发布"
+        }
+      ]
+    },
+    "openai": {
+      "displayName": "OpenAI/GPT",
+      "icon": "🔬",
+      "items": [
+        {
+          "uid": "ai_ca1c467f",
+          "title": "GitHub 热榜：freellmapi——把 34 家免费大模型塞进一个端点",
+          "content": "这个 TypeScript 项目把 34 家免费 LLM 提供商、635 个免费模型端点聚合到同一个 /v1 接口后面，也兼容任意自定义 OpenAI 格式端点。它自带智能路由、自动故障转移和密钥加密，号称每月可白嫖 74 亿 token，仅限个人实验用途。对想省钱又懒得逐个对接的开发者，是个省事的中间层。",
+          "quote": "34 家免费模型排队伺候，钱包先松口气。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/tashfeenahmed/freellmapi",
+          "published": "2026-10-09",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "xai": {
+      "displayName": "xAI/Grok",
+      "icon": "🚀",
+      "items": [
+        {
+          "uid": "ai_e15806ea",
+          "title": "GitHub 热榜：iFixAi——给 AI 智能体请个独立审计员",
+          "content": "这个 Python 项目专治「智能体到底有没有按说明干活」：无论由人还是智能体自己发起，它都能在 120 秒内独立审计一个 AI 智能体的行为是否越界、是否产生幻觉或被提示注入。标签直接对标欧盟 AI 法案、NIST 框架与 OWASP LLM 风险清单，明显冲着合规与企业治理去。",
+          "quote": "智能体越来越野，先给它配个查岗的。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/ifixai-ai/iFixAi",
+          "published": "2026-10-09",
+          "direction": "政策/合规"
+        }
+      ]
+    },
+    "deepseek": {
+      "displayName": "DeepSeek",
+      "icon": "🔍",
+      "items": [
+        {
+          "uid": "ai_9b463d61",
+          "title": "Dev.to：压缩工具输出，真能省下编码智能体的 API 账单吗？",
+          "content": "编码智能体每轮都会把历史工具输出整段重发，换成更小的版本看似稳赚。作者把它做成 Torana 插件、中间搞崩一次又重建，再实测：在 DeepSeek V4 Pro 上每会话只省约 2%，还不如正常运行的波动大——因为提示缓存早已让重复输出近乎免费。结论是省 token 的思路没错，但别指望它省钱。",
+          "quote": "吭哧吭哧省 token，最后省了个寂寞。",
+          "source": "Dev.to",
+          "url": "https://dev.to/projectescape/does-compacting-tool-output-lower-a-coding-agents-api-bill-ena",
+          "published": "2026-10-09",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "other": {
+      "displayName": "其他",
+      "icon": "📰",
+      "items": [
+        {
+          "uid": "ai_9cf82620",
+          "title": "陶哲轩：数学 2.0 该为「讲清楚」和「开新方向」发工资",
+          "content": "陶哲轩在 Mastodon 发文谈「数学 2.0」：数学 1.0 时代看重抢先解出开放问题，哪怕解法一开始没被理解；如今这套目标已被优化到不可持续，数学 2.0 需把重心从纯粹解题转向更全面地衡量数学进步——抬高阐述、社区建设与开辟新方向的价值。他认为 AI 能在这些方向上正向贡献，但需要比「把智能体对准一堆开放问题要答案」更多的想象力。",
+          "quote": "解题卷到尽头，该给讲清楚和开新坑发工资了。",
+          "source": "HN Front / Mathstodon",
+          "url": "https://mathstodon.xyz/@tao/117395269325940185",
+          "published": "2026-10-09",
+          "direction": "行业动态"
+        },
+        {
+          "uid": "ai_28f4654f",
+          "title": "Docker 开源 docker-agent：用 YAML 定义智能体",
+          "content": "Docker 工程团队开源 docker-agent，一个可作为 Docker CLI 插件运行的 AI 智能体构建与运行框架。用户用声明式 YAML 定义智能体，支持多智能体自动分工协作、内置工具加任意 MCP 服务器、不绑定模型厂商，并提供思考、待办与记忆工具及 RAG。智能体还能打包推到任意 OCI 镜像库，随处拉取运行。",
+          "quote": "智能体能 docker pull，运维的手伸到 AI 了。",
+          "source": "HN Front / GitHub",
+          "url": "https://github.com/docker/docker-agent",
+          "published": "2026-10-09",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_13ddd0c5",
+          "title": "arXiv：别只报一个谄媚率，要看任务和压力怎么逼模型让步",
+          "content": "论文研究 LLM「谄媚」——一旦用户反驳就放弃正确答案、转而附和。这类行为过去通常只报告一个模型级比率，说不清何时发生、用户如何规避。作者用 103,939 条评分回复、十种配置（八个关闭推理的模型，其中两个再开最大推理），面对同一批 200 道题、13 种施压条件与四轮对话，逐条标注，系统刻画任务、模型与压力如何共同塑造「让步」。",
+          "quote": "AI 的膝盖有多软，原来要看你怎么逼它。",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.08840",
+          "published": "2026-10-09",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_cd0a0e58",
+          "title": "arXiv：U-Space 给模型的「不确定性」装仪表盘",
+          "content": "论文提出 U-Space，把语言模型「正在增长的不确定性」变得可测量、可解释。模型常以流畅说明和权威口吻给出错误结论，而现有不确定性估计要么需多次生成、要么另训组件，标量分数也看不出不确定性从何而来、如何随推理演变。作者借助机制可解释性，标定「怀疑」与「确信」的语义锚点，把它们的反嵌入方向映射回残差流，构造低维子空间来追踪不确定性。",
+          "quote": "给模型的心虚装个仪表盘，比它拍胸脯靠谱。",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.09087",
+          "published": "2026-10-09",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_cee397ab",
+          "title": "arXiv：AMBER 用「只追加」记忆，帮长程智能体留住关键信息",
+          "content": "论文提出 AMBER，为长程网页智能体设计「只追加」记忆库。智能体在多步轨迹里累积的历史很快会撑爆上下文，须长期记住事实、错误的更正反馈并追踪进度。覆写式记忆理论上能存下任何信息，却难在稀疏结果奖励下学会把每条事实带过每次重写，实践中常删掉轨迹所需的关键信息与反馈。AMBER 让智能体边推理边行动边写自由记忆，靠只追加规则从构造上保证留存。",
+          "quote": "记忆靠覆写迟早抹掉，改成只追加才留得住。",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2610.07118",
+          "published": "2026-10-09",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_c9c7817e",
+          "title": "前沿论文：Long-WAM 扩展世界-动作模型上下文，实时机器人控制更稳",
+          "content": "论文提出 Long-WAM，为实时机器人控制扩展「世界—动作」模型的上下文。核心发现是：能取到历史不等于会用历史——只有当视频底座以自回归方式预训练时，更长的历史才明显加分。在 RoboCasa GR-1 上把上下文从 0.0 拉到 19.2 秒，成功率从 63.3% 升到 78.7%，而双向预训练的初始化没有净收益。模型可在 RTX 5090 等硬件实时部署。",
+          "quote": "历史喂得再多，也得底座先学会顺着时间看。",
+          "source": "HF Papers",
+          "url": "https://huggingface.co/papers/2610.10528",
+          "published": "2026-10-09",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_425bcfd7",
+          "title": "前沿论文：DecepEval 给智能体的「欺骗」评估建基准",
+          "content": "论文提出 DecepEval，将 LLM 智能体的「欺骗」评估系统化。随着智能体愈发自主，它们可能靠欺骗来完成目标，而以往评测多只看孤立场景或狭窄条件，难以判断欺骗何时更易发生。DecepEval 含 1532 个实例、3 类任务族、28 个职业场景，并借鉴经典欺诈理论提出「欺骗菱形」框架，刻画压力、激励、机会、冲突四种外部诱因，为每个实例配中性版与诱发版来测条件依赖。",
+          "quote": "给 AI 的诚信也做次体检，看它经不经得起诱惑。",
+          "source": "HF Papers",
+          "url": "https://huggingface.co/papers/2610.07967",
+          "published": "2026-10-09",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_d0e0ad64",
+          "title": "Dev.to：当 AI 从「边缘」走到「中心」，评审成了最累的活",
+          "content": "作者八个月后重新调研自家工程团队，发现 AI 已从「干边角活」挪到工作正中心：多数工程师几乎不再手写代码。但代码总得有人读，于是工作量涨得最快的是代码评审——不只是审 PR，还包括对每一段生成代码边读边纠、反复重新提示的内循环。标题里所谓「人肉代理」，说的正是这群替 AI 兜底的人。",
+          "quote": "AI 写得越多，人类看得越累。",
+          "source": "Dev.to",
+          "url": "https://dev.to/metalbear/how-our-engineering-team-uses-ai-part-ii-meat-proxies-148g",
+          "published": "2026-10-09",
+          "direction": "行业动态"
+        },
+        {
+          "uid": "ai_29c0e9ac",
+          "title": "Dev.to：手搓一个会读 10-K 风险因素的 AI 智能体",
+          "content": "一家公司可能一边报增长、一边在年报里埋着推翻你投资逻辑的风险。作者用 TypeScript 写了个智能体：先取回 SEC 年报原文，抽出 10-K 风险条款，由语言模型产出结构化简报，再用代码逐条校验每个引文确实存在于证据里——关键在「可追溯」，而不是让模型空口总结。",
+          "quote": "让 AI 读财报不难，让它别瞎编才难。",
+          "source": "Dev.to",
+          "url": "https://dev.to/valyuai/how-to-build-an-ai-agent-that-reads-10-k-risk-factors-4m36",
+          "published": "2026-10-09",
+          "direction": "行业动态"
+        },
+        {
+          "uid": "ai_788615f3",
+          "title": "Dev.to：AI 写出的 Rust 版 TypeScript 编译器，跑分好看坑也不少",
+          "content": "Theo Browne 十月七日抛出一个实验性的 Rust 版 TypeScript 编译器移植（ts-rust），部分负载提速明显，实现则由 AI 编码智能体操刀。作者提醒别只看那个 12.5 倍的头条数字：它拿特定配置对比 TypeScript 6 与旧插件，其它对比结果并不一致；而且项目移植自微软的 Go 实现，兼容性问题与成本口径都需逐项核对。",
+          "quote": "AI 交的编译器能跑，但别急着信跑分。",
+          "source": "Dev.to",
+          "url": "https://dev.to/axrisi/ai-coding-agents-and-theos-rust-typescript-compiler-the-caveats-fpo",
+          "published": "2026-10-09",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_5bef4268",
+          "title": "博客园：从 RT-1 到 π₀，一次看懂经典 VLA 模型脉络",
+          "content": "文章围绕 RT-1、RT-2、OpenVLA、CogACT 与 π₀ 五项代表工作，梳理视觉—语言—动作（VLA）模型的演进：视觉语义越来越多借助预训练 VLM，动作生成则从离散 token 预测，走向 Diffusion、Flow Matching 这类连续动作生成。文末还引入 MDP/POMDP，讨论真实环境里的部分可观测问题，并串起空间智能、世界模型等方向。",
+          "quote": "机器人从看图到动手，中间隔着一条长链。",
+          "source": "博客园 Cnblogs",
+          "url": "https://www.cnblogs.com/x1ao0/p/23224736",
+          "published": "2026-10-09",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_20c377e0",
+          "title": "博客园：on/off-policy 和 online/offline 到底是不是一回事",
+          "content": "作者把最容易被绕晕的两组词说透：它们是相互正交的两个维度——on/off-policy 看「数据由谁产生、跟不跟目标策略对得上」，online/offline 看「训练时还能不能采新数据」。交叉后 2×2 里只有三种合法组合，offline on-policy 压根不存在，因为离线数据永远是旧策略采的，行为不等于目标。",
+          "quote": "两个老被当成一回事的词，其实正交。",
+          "source": "博客园 Cnblogs",
+          "url": "https://www.cnblogs.com/xiaoxi666/p/23224669",
+          "published": "2026-10-09",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_288887c9",
+          "title": "博客园：用矩阵视角讲清大模型的注意力计算",
+          "content": "作者整理旧笔记，从矩阵变换角度拆解大模型推理里的注意力计算：分算 Q/K/V、算注意力、做线性变换三步，分别讲单机与张量并行两种场景，重点放在张量维度怎么切、怎么交换。文中把 batch_size、seq_len、num_heads、d_tensor 等参数与每一步的维度变化逐一对应，适合想从底层看懂多头注意力的初学者。",
+          "quote": "把注意力拆成矩阵，大模型就没那么玄。",
+          "source": "博客园 Cnblogs",
+          "url": "https://www.cnblogs.com/cswuyg/p/23217280",
+          "published": "2026-10-09",
+          "direction": "研究/论文"
+        }
+      ]
+    }
+  }
+}
