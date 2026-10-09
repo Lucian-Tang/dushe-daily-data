@@ -1,0 +1,137 @@
+[
+  {
+    "title": "Python 3.15.0 正式发布",
+    "content": "Python 3.15.0 正式发布，作为最新稳定版带来一批语言与标准库更新，HN 上迅速引发讨论。对大量仍跑在 3.10/3.11 上的团队来说，升级的真正门槛从来不是新特性本身，而是依赖兼容与线上验证的成本。新版本值得关注，但先别急着在生产环境裸奔，沙箱里跑通了再说。",
+    "quote": "版本号是最新的，依赖是最旧的。",
+    "source": "HN Front Page",
+    "url": "https://www.python.org/downloads/release/python-3150/",
+    "published": "2026-10-10",
+    "uid": "dev_4fda2838"
+  },
+  {
+    "title": "Deno 宣布加入 Cloudflare",
+    "content": "Deno 宣布加入 Cloudflare，双双把运行时与边缘网络绑到一起。当年 Ryan Dahl 造 Deno 是为了修 Node 的历史包袱，如今并入 Cloudflare，等于把「安全运行时」直接接到边缘计算平台上。对开发者而言，运行时之争有了新格局，也得重新评估依赖托管平台的便利与风险。",
+    "quote": "造轮子的最后，把轮子卖给了修路的。",
+    "source": "HN Front Page",
+    "url": "https://deno.com/blog/cloudflare",
+    "published": "2026-10-10",
+    "uid": "dev_8fb1d7d3"
+  },
+  {
+    "title": "Oxide Computer 完成 4.45 亿美元 D 轮",
+    "content": "硬件公司 Oxide Computer 宣布完成 4.45 亿美元 D 轮融资，主打软硬一体的机架级云基础设施。在云巨头环伺之下，敢从硅到软件整套重做私有云，本身就是极重投入的路线。这笔钱说明，企业想把云握在自己手里、又不愿回到拼机柜的年代，这个需求真实存在。",
+    "quote": "云太贵了，自己搭台机器又太累。",
+    "source": "HN Front Page",
+    "url": "https://oxide.computer/blog/our-445m-series-d",
+    "published": "2026-10-10",
+    "uid": "dev_e19f64d6"
+  },
+  {
+    "title": "微软开源沙箱化代码执行系统 MXC",
+    "content": "微软开源了 MXC，一套沙箱化代码执行系统，给需要安全运行不可信代码的场景提供隔离方案。随着 Agent 需要执行模型生成的代码，如何在可控边界内运行成了刚需。大厂此时拿出沙箱底座，等于给「让 AI 动真格执行」这件事先铺好一层安全地板，也给相关工具链补了块砖。",
+    "quote": "让 AI 动手前，先给它戴好手套。",
+    "source": "HN Front Page",
+    "url": "https://github.com/microsoft/mxc",
+    "published": "2026-10-10",
+    "uid": "dev_b0fac3eb"
+  },
+  {
+    "title": "Papers-Go：像刷短视频一样刷论文",
+    "content": "开源项目 Papers-Go 主打像刷短视频一样刷论文，支持 Docker 自部署，还内置一个智能助手。它想解决论文多、读不动、检索难的痛点，用信息流方式降低阅读门槛。对科研和做 AI 的人来说，这种把推荐机制搬进论文场景的尝试值得体验，也值得警惕——别又刷成一个信息茧房。",
+    "quote": "刷论文一时爽，别刷成信息茧房。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1247342",
+    "published": "2026-10-10",
+    "uid": "dev_0655d1a3"
+  },
+  {
+    "title": "下一代协同编辑算法 Eg-Walker 的落地实践",
+    "content": "有人把下一代协同编辑算法 Eg-Walker 落地实践，尝试把 Yjs 与 OT 两条路线结合起来，并附上了论文与在线 Playground。协同编辑的核心难题一直是高并发下的冲突收敛与性能，这篇实践给出了可以上手试玩的具体方案，对做多人文档、实时协作的开发者是难得的参考。",
+    "quote": "编辑算法卷了二十年，如今还在卷。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1247328",
+    "published": "2026-10-10",
+    "uid": "dev_98435b7e"
+  },
+  {
+    "title": "Pingo：给你的 AI Agent 一个社交账号",
+    "content": "开源项目 Pingo 想给 AI Agent 一个社交账号：Claude Code、Codex 可以拥有自己的身份和名片，能认识别的 Agent、加好友、发消息、建群讨论。Agent 之间互相协作听着很未来，但眼下更像一个有趣的实验——当机器开始社交，人类大概又要先操心一遍隐私与秩序的问题。",
+    "quote": "人还没社交明白，Agent 先加好友了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1247426",
+    "published": "2026-10-10",
+    "uid": "dev_e650d008"
+  },
+  {
+    "title": "lsearch：像 Google 一样搜本地文档",
+    "content": "作者做了 lsearch：像 Google 一样搜本地文档，WPS、PDF、电子书都能搜正文，中文两字词也能命中，全程离线。它戳中的是系统搜索只认文件名、企业级方案又要起服务配数据库的痛点。对文档一堆、又在意隐私不想上传云端的人来说，这类纯本地检索工具算是实在的刚需。",
+    "quote": "文件能记住名字，内容只能靠翻。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1247215",
+    "published": "2026-10-10",
+    "uid": "dev_f6ac066a"
+  },
+  {
+    "title": "重试的暗面：一次小失败如何演变成重试风暴",
+    "content": "一篇 Dev.to 文章讲了重试的暗面：Retries 加上 Backoff 与 Jitter 本是为了提升可用性，但配置不当会把一次小失败放大成重试风暴，反过来把依赖服务打垮。作者用链路分析说明，重试从来不是免费午餐，缺少退避与随机抖动，等于给故障火上浇油。做后端和高并发的人值得一读。",
+    "quote": "重试是好东西，滥用就成雪崩推手。",
+    "source": "Dev.to",
+    "url": "https://dev.to/anujkumar2/retries-backoff-jitter-how-a-small-failure-becomes-a-retry-storm-37lb",
+    "published": "2026-10-10",
+    "uid": "dev_50a48066"
+  },
+  {
+    "title": "AI 生成代码的安全清单：快与安的取舍",
+    "content": "一篇 Dev.to 文章给出 AI 生成代码的安全清单：从 Lovable、Replit 这类工具快速出活，到上线前的输入校验、密钥管理、依赖审计，作者把「快」与「安全」的冲突摆上台面。AI 让写代码变快，但责任并没有转移给模型。对用 AI 赶进度的团队，这份清单更像一份补课表。",
+    "quote": "AI 帮你写快，锅还得你自己背。",
+    "source": "Dev.to",
+    "url": "https://dev.to/jte0711/ship-fast-ship-safe-the-ai-generated-code-security-checklist-1c2c",
+    "published": "2026-10-10",
+    "uid": "dev_ed07d71a"
+  },
+  {
+    "title": "把 3Blue1Brown 的 manim 引擎塞进浏览器",
+    "content": "有人把 3Blue1Brown 用的 manim 数学动画引擎搬进了浏览器，做成零依赖的本地可视化工具，八个模块、三十四个预设，所有参数都是滑块。它把原本要写代码、配环境的动画制作，降到拖滑块的程度。对想做数学讲解、又不想折腾 Python 环境的人，是个顺手又好用的小工具。",
+    "quote": "不会写代码，也能做数学动画了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/wyang/p/23243396",
+    "published": "2026-10-10",
+    "uid": "dev_a4511382"
+  },
+  {
+    "title": "用 Rust 重写 Pi 编码助手，性能飙升十倍",
+    "content": "作者把 TypeScript 版的 Pi 编码助手用 Rust 重写，命令叫 rpi，实测性能提升约十倍。这类重写故事的价值不在数字多漂亮，而在于它印证了一个趋势：随着 AI 编码辅助工具越来越重，底层语言的选择重新变得重要。对在意启动速度与资源占用的开发者，这类对比值得参考，但也别急着全信。",
+    "quote": "换个语言重写，数字先别急着信。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/OceanHeaven/p/23243373",
+    "published": "2026-10-10",
+    "uid": "dev_2135aa8a"
+  },
+  {
+    "title": "从陶哲轩访谈看 AI 数学研究方法论",
+    "content": "一篇博客从陶哲轩的访谈切入，讨论 AI 数学研究的方法论及其对其它行业的启示。争论的核心从来不是 AI 会不会做数学，而是它如何与人类研究者分工协作。对把 AI 当工具而非替身的团队，这套「人提问题、机器验证」的思路，比具体的数学结论更有普适的参考价值。",
+    "quote": "AI 算得再快，好问题还得人来提。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/rossiXYZ/p/23215799",
+    "published": "2026-10-10",
+    "uid": "dev_0fa17f28"
+  },
+  {
+    "title": "2026 AI 工具选型实录：两百多款只留十二个",
+    "content": "一位作者把两百多款 AI 工具试了一遍，最后留在工作流里的只剩十二个。他给出的反常识结论是：海外工具的优势正在被国产模型追平，部分细分场景甚至反超。对还在为工具焦虑、频繁更换订阅的人来说，这篇实录提醒的重点不是选哪一个，而是先想清楚自己到底要解决什么问题。",
+    "quote": "工具试了两百个，活还是那些活。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/codigger/p/23234418",
+    "published": "2026-10-10",
+    "uid": "dev_73020d5f"
+  },
+  {
+    "title": "BerriAI/litellm：统一的 LLM 网关",
+    "content": "GitHub 热榜上的 BerriAI/litellm 是一个 LLM 网关项目，主打用 OpenAI 的统一格式去调用各家大模型，帮开发者屏蔽不同厂商接口之间的差异。在多模型混用已经成为常态的今天，这类中间层能显著降低切换与运维成本，也解释了它为什么能长期待在趋势榜上不掉队。",
+    "quote": "模型换得勤，接口统一才是刚需。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/BerriAI/litellm",
+    "published": "2026-10-10",
+    "uid": "dev_fb69a725"
+  }
+]
