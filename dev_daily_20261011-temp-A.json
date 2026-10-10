@@ -1,0 +1,137 @@
+[
+  {
+    "title": "Bitwarden 抛出双许可证模式",
+    "content": "密码管理器 Bitwarden 在社区帖里公布了双许可证模式，把开源版与商业版的分发边界重新划了一遍。对以开源立身的工具来说，许可证一改，往往牵动的是贡献者的信任与商业化的空间。用户真正关心的不是条款写得多漂亮，而是自建、二次分发和长期维护会不会因此被悄悄设限。",
+    "quote": "开源是招牌，改许可才是真正的生意。",
+    "source": "HN Front Page",
+    "url": "https://community.bitwarden.com/t/published-version-update-in-app-stores/102750",
+    "published": "2026-10-11",
+    "uid": "dev_ba65dd73"
+  },
+  {
+    "title": "用 Eurydice 把 Rust 编译成可读的 C",
+    "content": "LWN 介绍了 Eurydice 这个工具，能把 Rust 代码编译成可读的 C 源码，落脚点是让形式化验证过的 Rust 项目更容易接入既有的 C 生态与认证工具链。相比直接生成机器码，可读的 C 中间产物更容易被审计和复用。对做嵌入式、安全认证的团队，这类「降级到 C」的路线或许比想象中更实用。",
+    "quote": "写的时候用 Rust，交差的时候还得是 C。",
+    "source": "HN Front Page",
+    "url": "https://lwn.net/Articles/1055211/",
+    "published": "2026-10-11",
+    "uid": "dev_ce7a8496"
+  },
+  {
+    "title": "Telegram Desktop 曝一键账号接管漏洞",
+    "content": "安全研究披露 Telegram Desktop 存在一个一键即可窃取任意用户文件的漏洞，攻击者能借此进一步接管账号。消息类客户端往往手握大量本地文件与登录态，一旦边界被击穿，损失远超「丢几个聊天记录」。桌面端安全常被当作次要战场，这起案例提醒的正是：用得越顺手的地方，越容易成为最薄弱的一环。",
+    "quote": "再安全的加密，也架不住客户端自己漏。",
+    "source": "HN Front Page",
+    "url": "https://beaksec.github.io/posts/telegram-desktop-one-click-account-takeover/",
+    "published": "2026-10-11",
+    "uid": "dev_efd9b8f9"
+  },
+  {
+    "title": "Talorys：跑在 Cloudflare 免费层的自托管 AI Agent",
+    "content": "开源项目 Talorys 把个人 AI Agent 自托管在 Cloudflare 的免费额度上，试图用 Serverless 的方式把运行成本压到接近于零。对想自己掌控数据、又不想维护服务器的个人开发者，这类「薅免费层」的方案确实有吸引力。当然，免费额度终归有上限，能不能长期稳定跑下去，得先想清楚。",
+    "quote": "免费层养 Agent，额度用完就认怂。",
+    "source": "HN Front Page",
+    "url": "https://github.com/rociiu/talorys",
+    "published": "2026-10-11",
+    "uid": "dev_d8c18f8c"
+  },
+  {
+    "title": "cathrynlavery/diagram-design：给编码 Agent 的图示库",
+    "content": "diagram-design 是一款面向 Claude Code、Codex、Copilot 等编码 Agent 的图示设计库，内置 44 种图表类型，输出自包含的 HTML + SVG，并明确强调「不要阴影、不要 Mermaid 那套敷衍」。作者显然被 AI 生成的丑图折磨过，才把审美做成了可复用的规则。对要靠 AI 出配图、又受不了默认样式的人来说，这类带约束的素材刚好补位。",
+    "quote": "AI 画的图丑，是因为没人给它立规矩。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/cathrynlavery/diagram-design",
+    "published": "2026-10-11",
+    "uid": "dev_b4ed8563"
+  },
+  {
+    "title": "mksglu/context-mode：给 AI 编码 Agent 省上下文",
+    "content": "context-mode 是一款面向 AI 编码 Agent 的上下文优化工具，号称能把工具输出的上下文占用压掉约 98%，同时持久化会话记忆，并通过 MCP 与 hooks 在多个平台之间做统一路由。上下文窗口一直是 Agent 绕不开的成本与瓶颈，这类「省 token」的基建，正在成为编码助手生态里越来越刚需的一环。",
+    "quote": "Agent 的火力，一半被上下文吃掉了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/mksglu/context-mode",
+    "published": "2026-10-11",
+    "uid": "dev_28335ff0"
+  },
+  {
+    "title": "hugohe3/ppt-master：用 AI 生成原生 PPT",
+    "content": "ppt-master 是一款能把文档或主题直接变成原生 PowerPoint 的 AI 工具，生成物带原生形状、转场与动画，图表表格按需生成，还能按讲者备注配音，并支持自定义模板。它切的正是「AI 出稿好看、导出却成了一堆图片」的老毛病。对天天被 PPT 折磨的打工人，这类能改、能复用的产物才算真省事。",
+    "quote": "AI 做的 PPT，终于不再是截图拼的。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/hugohe3/ppt-master",
+    "published": "2026-10-11",
+    "uid": "dev_397a2263"
+  },
+  {
+    "title": "ShellRS：Rust + GPUI 写的开源 SSH 客户端",
+    "content": "作者用 Rust 加 GPUI 写了个开源 SSH 客户端 ShellRS，把 Xshell 式终端和 WinSCP 式 SFTP 揉在一起，支持堡垒机直接调用，兼容两家老牌工具的操作习惯。他坦言主要用 AI 模型辅助开发，一周高强度写下来成本可控。对从 Windows 迁到 macOS、又找不到顺手 SSH 工具的人来说，这算戳中痛点的替代品。",
+    "quote": "老工具没跟上 macOS，只好自己重造。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1247523",
+    "published": "2026-10-11",
+    "uid": "dev_70212bdc"
+  },
+  {
+    "title": "开源「一人 MCN」：让 Claude Code 从热点做到抖音发布",
+    "content": "有开发者开源了一套「一人 MCN」方案，不搭工作流、不拖节点，直接让 Claude Code 从找热点一路做到短视频发布。作者的心得是：流程搭得越死，AI 的上限就被压得越低，遇到没写到的分支就卡住。把决策权交还给模型，确实更灵活，但也意味着结果更难预测——自动化越顺，翻车时的连带面也越大。",
+    "quote": "工作流拆得越细，AI 反而越傻。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1247578",
+    "published": "2026-10-11",
+    "uid": "dev_c398ff55"
+  },
+  {
+    "title": "他把「浏览器里玩 3A」的 24 个游戏挨个查了一遍",
+    "content": "刷到「浏览器里能玩 COD、Halo」的帖子后，作者花一天把 24 个游戏的链接挨个点开实测。结论是：Quake 三部曲、德军总部、半条命、暗黑破坏神等确实能玩，靠开源引擎编译成 wasm，跑的是当年官方放出的试玩数据；而更热门的 3A 大多名不副实。这种亲测打假的复盘，比转发截图有用得多。",
+    "quote": "标题一个比一个猛，实测一半是吹的。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1247663",
+    "published": "2026-10-11",
+    "uid": "dev_2ed459e8"
+  },
+  {
+    "title": "Scrapy 还是 BeautifulSoup：成本从哪开始失控",
+    "content": "一篇 Dev.to 文章对比 Scrapy 与 BeautifulSoup，指出两者真正的分野不在功能，而在于从哪个规模开始「变贵」。小规模抓取用 BeautifulSoup 最省心，一旦要并发、断点续爬、遵守反爬与限速，Scrapy 的框架成本反而更划算。作者提醒的是：选型别只看上手快慢，要看维护成本会在哪一步抬头。",
+    "quote": "上手快的工具，往往在规模上收账。",
+    "source": "Dev.to",
+    "url": "https://dev.to/yuhehe/scrapy-vs-beautifulsoup-for-public-data-collection-where-each-one-starts-costing-you-1ida",
+    "published": "2026-10-11",
+    "uid": "dev_d0706407"
+  },
+  {
+    "title": "TouchGrass AI：一个只想把你赶离电脑的 AI",
+    "content": "一位开发者做了 TouchGrass AI，这个开源实验的目标很反常：唯一的使命就是把用户从电脑前赶走。它属于 Hacktoberfest 的开源 AI 挑战作品，用 AI 反过来对抗「沉迷屏幕」这件事。立意有趣，也算开发者自嘲——最懂怎么让人泡在电脑前的一群人，动手做了个把人赶出去的工具。",
+    "quote": "做 AI 的人，最懂怎么让自己离开 AI。",
+    "source": "Dev.to",
+    "url": "https://dev.to/thedarkking01/touchgrass-ai-i-built-an-ai-whose-only-goal-is-to-get-you-away-from-the-computer-4179",
+    "published": "2026-10-11",
+    "uid": "dev_8f71d979"
+  },
+  {
+    "title": "给代码建索引：CodeGraph 如何帮 AI 省 Token",
+    "content": "一篇博客记录了用 CodeGraph 给项目代码建索引的实践，思路是先让 AI 花力气「找代码」，再花力气「解释代码」，把检索和推理分开。作者以「某条战报在哪里生成、改动会影响哪些地方」为例，说明结构化索引能显著减少无关上下文、缩短响应时间。对天天让 AI 读大仓库的人来说，这算把 token 花在刀刃上的办法。",
+    "quote": "让 AI 找代码，比让 AI 猜代码便宜。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/FatTiger4399/p/23257375",
+    "published": "2026-10-11",
+    "uid": "dev_de0da524"
+  },
+  {
+    "title": "Google 开源：让 AI Agent 碰数据库不再是定时炸弹",
+    "content": "一篇博客讨论 Google 开源的方案，试图让 AI Agent 访问数据库这件事不再像定时炸弹。文中举了一个真实教训：让 LLM 拿连接串自己生成 SQL，测试环境里一条 WHERE 写错的 DELETE 就能造成数据事故。作者的落点是，与其指望模型「别犯错」，不如用权限、行级隔离和审计把风险挡在执行之前。",
+    "quote": "别指望 AI 不犯错，先把权限锁死。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/uniqueDong/p/23249646",
+    "published": "2026-10-11",
+    "uid": "dev_4739d712"
+  },
+  {
+    "title": "一个 PHP 大佬，用 C# 手搓了个分布式数据库",
+    "content": "一篇博客介绍了用 C# 手搓分布式数据库的项目，作者的动机之一是为 .NET 生态「蹚路」：长久以来基础设施默认由 Go、Rust、C++ 包办，.NET 总被认为不配。项目把引擎编译成 WebAssembly，甚至能在浏览器里跑起三节点 Raft 集群，亲手杀掉 leader 看重新选举。技术宅的执念，往往就是这么不讲道理。",
+    "quote": "都说 .NET 不配，他偏要搓一个出来。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23256822",
+    "published": "2026-10-11",
+    "uid": "dev_f6f39634"
+  }
+]
