@@ -1,0 +1,227 @@
+[
+  {
+    "title": "Bitwarden 抛出双许可证模式",
+    "content": "密码管理器 Bitwarden 在社区帖里公布了双许可证模式，把开源版与商业版的分发边界重新划了一遍。对以开源立身的工具来说，许可证一改，往往牵动的是贡献者的信任与商业化的空间。用户真正关心的不是条款写得多漂亮，而是自建、二次分发和长期维护会不会因此被悄悄设限。",
+    "quote": "开源是招牌，改许可才是真正的生意。",
+    "source": "HN Front Page",
+    "url": "https://community.bitwarden.com/t/published-version-update-in-app-stores/102750",
+    "published": "2026-10-11",
+    "uid": "dev_ba65dd73"
+  },
+  {
+    "title": "用 Eurydice 把 Rust 编译成可读的 C",
+    "content": "LWN 介绍了 Eurydice 这个工具，能把 Rust 代码编译成可读的 C 源码，落脚点是让形式化验证过的 Rust 项目更容易接入既有的 C 生态与认证工具链。相比直接生成机器码，可读的 C 中间产物更容易被审计和复用。对做嵌入式、安全认证的团队，这类「降级到 C」的路线或许比想象中更实用。",
+    "quote": "写的时候用 Rust，交差的时候还得是 C。",
+    "source": "HN Front Page",
+    "url": "https://lwn.net/Articles/1055211/",
+    "published": "2026-10-11",
+    "uid": "dev_ce7a8496"
+  },
+  {
+    "title": "Telegram Desktop 曝一键账号接管漏洞",
+    "content": "安全研究披露 Telegram Desktop 存在一个一键即可窃取任意用户文件的漏洞，攻击者能借此进一步接管账号。消息类客户端往往手握大量本地文件与登录态，一旦边界被击穿，损失远超「丢几个聊天记录」。桌面端安全常被当作次要战场，这起案例提醒的正是：用得越顺手的地方，越容易成为最薄弱的一环。",
+    "quote": "再安全的加密，也架不住客户端自己漏。",
+    "source": "HN Front Page",
+    "url": "https://beaksec.github.io/posts/telegram-desktop-one-click-account-takeover/",
+    "published": "2026-10-11",
+    "uid": "dev_efd9b8f9"
+  },
+  {
+    "title": "Talorys：跑在 Cloudflare 免费层的自托管 AI Agent",
+    "content": "开源项目 Talorys 把个人 AI Agent 自托管在 Cloudflare 的免费额度上，试图用 Serverless 的方式把运行成本压到接近于零。对想自己掌控数据、又不想维护服务器的个人开发者，这类「薅免费层」的方案确实有吸引力。当然，免费额度终归有上限，能不能长期稳定跑下去，得先想清楚。",
+    "quote": "免费层养 Agent，额度用完就认怂。",
+    "source": "HN Front Page",
+    "url": "https://github.com/rociiu/talorys",
+    "published": "2026-10-11",
+    "uid": "dev_d8c18f8c"
+  },
+  {
+    "title": "cathrynlavery/diagram-design：给编码 Agent 的图示库",
+    "content": "diagram-design 是一款面向 Claude Code、Codex、Copilot 等编码 Agent 的图示设计库，内置 44 种图表类型，输出自包含的 HTML + SVG，并明确强调「不要阴影、不要 Mermaid 那套敷衍」。作者显然被 AI 生成的丑图折磨过，才把审美做成了可复用的规则。对要靠 AI 出配图、又受不了默认样式的人来说，这类带约束的素材刚好补位。",
+    "quote": "AI 画的图丑，是因为没人给它立规矩。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/cathrynlavery/diagram-design",
+    "published": "2026-10-11",
+    "uid": "dev_b4ed8563"
+  },
+  {
+    "title": "mksglu/context-mode：给 AI 编码 Agent 省上下文",
+    "content": "context-mode 是一款面向 AI 编码 Agent 的上下文优化工具，号称能把工具输出的上下文占用压掉约 98%，同时持久化会话记忆，并通过 MCP 与 hooks 在多个平台之间做统一路由。上下文窗口一直是 Agent 绕不开的成本与瓶颈，这类「省 token」的基建，正在成为编码助手生态里越来越刚需的一环。",
+    "quote": "Agent 的火力，一半被上下文吃掉了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/mksglu/context-mode",
+    "published": "2026-10-11",
+    "uid": "dev_28335ff0"
+  },
+  {
+    "title": "hugohe3/ppt-master：用 AI 生成原生 PPT",
+    "content": "ppt-master 是一款能把文档或主题直接变成原生 PowerPoint 的 AI 工具，生成物带原生形状、转场与动画，图表表格按需生成，还能按讲者备注配音，并支持自定义模板。它切的正是「AI 出稿好看、导出却成了一堆图片」的老毛病。对天天被 PPT 折磨的打工人，这类能改、能复用的产物才算真省事。",
+    "quote": "AI 做的 PPT，终于不再是截图拼的。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/hugohe3/ppt-master",
+    "published": "2026-10-11",
+    "uid": "dev_397a2263"
+  },
+  {
+    "title": "ShellRS：Rust + GPUI 写的开源 SSH 客户端",
+    "content": "作者用 Rust 加 GPUI 写了个开源 SSH 客户端 ShellRS，把 Xshell 式终端和 WinSCP 式 SFTP 揉在一起，支持堡垒机直接调用，兼容两家老牌工具的操作习惯。他坦言主要用 AI 模型辅助开发，一周高强度写下来成本可控。对从 Windows 迁到 macOS、又找不到顺手 SSH 工具的人来说，这算戳中痛点的替代品。",
+    "quote": "老工具没跟上 macOS，只好自己重造。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1247523",
+    "published": "2026-10-11",
+    "uid": "dev_70212bdc"
+  },
+  {
+    "title": "开源「一人 MCN」：让 Claude Code 从热点做到抖音发布",
+    "content": "有开发者开源了一套「一人 MCN」方案，不搭工作流、不拖节点，直接让 Claude Code 从找热点一路做到短视频发布。作者的心得是：流程搭得越死，AI 的上限就被压得越低，遇到没写到的分支就卡住。把决策权交还给模型，确实更灵活，但也意味着结果更难预测——自动化越顺，翻车时的连带面也越大。",
+    "quote": "工作流拆得越细，AI 反而越傻。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1247578",
+    "published": "2026-10-11",
+    "uid": "dev_c398ff55"
+  },
+  {
+    "title": "他把「浏览器里玩 3A」的 24 个游戏挨个查了一遍",
+    "content": "刷到「浏览器里能玩 COD、Halo」的帖子后，作者花一天把 24 个游戏的链接挨个点开实测。结论是：Quake 三部曲、德军总部、半条命、暗黑破坏神等确实能玩，靠开源引擎编译成 wasm，跑的是当年官方放出的试玩数据；而更热门的 3A 大多名不副实。这种亲测打假的复盘，比转发截图有用得多。",
+    "quote": "标题一个比一个猛，实测一半是吹的。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1247663",
+    "published": "2026-10-11",
+    "uid": "dev_2ed459e8"
+  },
+  {
+    "title": "给代码建索引：CodeGraph 如何帮 AI 省 Token",
+    "content": "一篇博客记录了用 CodeGraph 给项目代码建索引的实践，思路是先让 AI 花力气「找代码」，再花力气「解释代码」，把检索和推理分开。作者以「某条战报在哪里生成、改动会影响哪些地方」为例，说明结构化索引能显著减少无关上下文、缩短响应时间。对天天让 AI 读大仓库的人来说，这算把 token 花在刀刃上的办法。",
+    "quote": "让 AI 找代码，比让 AI 猜代码便宜。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/FatTiger4399/p/23257375",
+    "published": "2026-10-11",
+    "uid": "dev_de0da524"
+  },
+  {
+    "title": "Google 开源：让 AI Agent 碰数据库不再是定时炸弹",
+    "content": "一篇博客讨论 Google 开源的方案，试图让 AI Agent 访问数据库这件事不再像定时炸弹。文中举了一个真实教训：让 LLM 拿连接串自己生成 SQL，测试环境里一条 WHERE 写错的 DELETE 就能造成数据事故。作者的落点是，与其指望模型「别犯错」，不如用权限、行级隔离和审计把风险挡在执行之前。",
+    "quote": "别指望 AI 不犯错，先把权限锁死。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/uniqueDong/p/23249646",
+    "published": "2026-10-11",
+    "uid": "dev_4739d712"
+  },
+  {
+    "title": "一个 PHP 大佬，用 C# 手搓了个分布式数据库",
+    "content": "一篇博客介绍了用 C# 手搓分布式数据库的项目，作者的动机之一是为 .NET 生态「蹚路」：长久以来基础设施默认由 Go、Rust、C++ 包办，.NET 总被认为不配。项目把引擎编译成 WebAssembly，甚至能在浏览器里跑起三节点 Raft 集群，亲手杀掉 leader 看重新选举。技术宅的执念，往往就是这么不讲道理。",
+    "quote": "都说 .NET 不配，他偏要搓一个出来。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23256822",
+    "published": "2026-10-11",
+    "uid": "dev_f6f39634"
+  },
+  {
+    "title": "V2EX：Excelize 开源社区摘得 2025 红山开源明星项目三等奖",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1180445",
+    "content": "Excelize 是 Go 生态里操作 Excel 电子表格的开源库。作者发帖报喜：社区在红山开源平台主办的 2025 红山开源大会上摘得「明星项目三等奖」，该奖用于表彰在开源领域做出突出贡献的项目。帖子附了大会详情链接，也简要介绍了 Excelize 的定位——不依赖 Office，即可在服务端读写 xlsx 等电子表格文件。",
+    "quote": "别人拿奖发朋友圈，作者拿奖还顺手安利了一波项目。",
+    "published": "2026-10-11",
+    "uid": "dev_fbe72871"
+  },
+  {
+    "title": "V2EX：开源 Java 反编译器 garlic 追加 apk/dex 支持",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1142640",
+    "content": "作者自研的 Java 反编译器 garlic 在一个月里补齐了 apk 与 dex 支持。名字来自郭德纲的相声梗——喝咖啡高雅、吃大蒜低俗，而 Java class 文件以 CAFEBABE 开头，于是「咖啡配大蒜」得名 garlic。目前 apk 的 Manifest 与资源文件尚未解析，只反编译里面的 class/dex 代码，帖子发出后仍在持续迭代。",
+    "quote": "咖啡配大蒜，这取名品味比反编译出来的代码还难还原。",
+    "published": "2026-10-11",
+    "uid": "dev_ed3799a4"
+  },
+  {
+    "title": "V2EX：FileMint——一个想替掉「超级右键」的原生 macOS 工具",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1243302",
+    "content": "作者受够了「超级右键」这类 Finder 右键增强工具的臃肿与单独付费，做了 FileMint：一个原生 macOS 工具，把常用文件操作直接放回 Finder。在桌面或文件夹空白处右键，即可快速新建 Markdown、JSON、Swift 等文件，目标是全面替换这类付费右键工具，功能以日常高频操作为主而非堆菜单。",
+    "quote": "右键菜单越来越长，最后只能靠再写个右键工具来治。",
+    "published": "2026-10-11",
+    "uid": "dev_826e73df"
+  },
+  {
+    "title": "V2EX：两天搓了个收录各领域最佳实践的网站",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1228416",
+    "content": "作者发现 GitHub 上的搜索结果要么是几年前的内容、要么不符合业务场景，于是花两天做了个网站，用 AI 筛选和处理热门项目，按领域与技术做分类，专门收录各领域的「最佳实践」方便学习。作者自称「抄袭🐶」，坦言赶得比较仓促、不少地方还不完善，项目托管在 Cloudflare Pages。",
+    "quote": "两天做一个「最佳实践大全」，最没把握的实践就是它自己。",
+    "published": "2026-10-11",
+    "uid": "dev_4dec8c68"
+  },
+  {
+    "title": "V2EX：crFiles——C++ 写的跨平台多页签文件管理器",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1247720",
+    "content": "libcr 项目组发布 crFiles：一款用 C++ 实现、跨平台的多页签多分栏文件管理应用，基于 Chromium 154。支持 Nearby Sharing、局域网快速文件分享，以及内置的视频、图片和 PDF 查看，已在微软商店上架。作者团队把它定位为「浏览器内核 + 文件管理」的组合，主打大文件与多标签场景的顺手体验。",
+    "quote": "为了管理本地文件，先拖进来一个浏览器内核，也是一种浪漫。",
+    "published": "2026-10-11",
+    "uid": "dev_8f69d450"
+  },
+  {
+    "title": "V2EX：BeanDesk——基于 beancount 的本地记账软件，AI 自动入账",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1247703",
+    "content": "作者有财税记账需求，写了个本地经营账本 BeanDesk，基于 beancount 复式记账。新版本集成 AI 后跑通了全自动入账：随手丢一张发票路径、一句指令，就能在本地完成开立会计科目、归档发票并关联预览、识别「个人抬头普票不可抵扣进项税」全额计入费用、判断员工垫付不计入现金流量表，最后跑一遍本地合规规则校验。",
+    "quote": "AI 帮你记账最大的价值，是账错了你也不知道该怪谁。",
+    "published": "2026-10-11",
+    "uid": "dev_10435efc"
+  },
+  {
+    "title": "V2EX：Claude 封号前，他蹬出了 4 个 macOS 小工具",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1247654",
+    "content": "作者趁假期 Claude Max 20X 额度用不完，一口气做了 4 个 macOS 小工具，全部围绕自己的使用痛点、免费开源，没有任何商业目的。结局颇具戏剧性：Claude 在 10 月 3 日封了他的账号，苹果那边也不给退款，作者自嘲「悲」。他还让 dot 帮忙整理介绍并做了个主页，供有需要的人挑选试用。",
+    "quote": "额度没用完号先没了，AI 时代的加班费和遣散费一起到账。",
+    "published": "2026-10-11",
+    "uid": "dev_1f3b0893"
+  },
+  {
+    "title": "V2EX：出海工具站复盘——月入万刀梦想破灭",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1247577",
+    "content": "作者复盘一次失败的出海工具站尝试。国庆前刷 Google Trends 看到 higgsfield genjutsu 这个词，但 9 月 30 日才注意到，而它 9 月 1 日就已起势，入场明显偏晚。作者还分析了关键词选择：直接做热词流量大概率被官网吃光，于是考虑侧翼词。标题虽然标题党「月入万刀梦想破灭」，但过程基本属实。",
+    "quote": "蹭热点最确定的一步，就是承认自己总是晚一步。",
+    "published": "2026-10-11",
+    "uid": "dev_0ca6fcf7"
+  },
+  {
+    "title": "V2EX：一个许可可核验的创作者免费素材清单，181 个资源每周 CI 查死链",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1247595",
+    "content": "作者做视频时被版权索赔坑过，发现市面上的「免费素材」清单大多只是链接堆：到底要不要署名、能不能货币化、要不要注册，都得自己点进去查，且很多清单几年没维护、死链一堆。于是他做了 Free for Creators：一个许可透明的素材目录，目前 10 个分类、181 个资源（音乐/音效/视频/图片/字体/图标/LUT/样机模板/3D 等），并用每周 CI 自动查死链。",
+    "quote": "说好「免费」，点进去才发现要署名、要注册、还不许商用。",
+    "published": "2026-10-11",
+    "uid": "dev_1d267c4b"
+  },
+  {
+    "title": "Dev.to：AI 不会替你盖房，但应该先告诉你得花多少钱",
+    "source": "Dev.to",
+    "url": "https://dev.to/yit2022/ai-wont-build-your-house-but-it-should-tell-you-what-itll-cost-first-59g1",
+    "content": "作者从东非的建筑工地讲起：很多人先买地、照着图片挑设计、开工，结果中途资金耗尽、设计不合地块、材料真实成本超预期，墙体烂尾数月甚至数年。他认为最贵的错误发生在动土之前——关键问题（这块地能建什么、预算多少、实际要花多少钱）从没被真实数字回答过。于是他做了 Jengafy，用 AI 把「决策」而非「效果图」提前。",
+    "quote": "AI 画不出让你住得起的效果图，倒能先算出你住不起。",
+    "published": "2026-10-11",
+    "uid": "dev_878bb5b4"
+  },
+  {
+    "title": "Dev.to：用「快捷指令」把 ESP32 接进 Siri，一步步来",
+    "source": "Dev.to",
+    "url": "https://dev.to/stevencarvajal/controlar-un-esp32-con-siri-usando-atajos-paso-a-paso-3ocm",
+    "content": "「Domótica con ESP32 y AWS desde cero」系列第 9 篇（西语）。作者认为语音控家未必需要 Apple Home 或 HomeKit：iPhone「快捷指令」能发 HTTP 请求，且能被 Siri 用名字呼叫。于是「Hey Siri，开客厅灯」触发快捷指令调用第 8 篇的 API 改动 AWS IoT Core 状态，ESP32 随之点亮灯，文中给出从零创建的步骤。",
+    "quote": "智能家居的最高境界，是用快捷指令把智商门槛也一起降下来。",
+    "published": "2026-10-11",
+    "uid": "dev_6fe006dc"
+  },
+  {
+    "title": "博客园：一行代码在 .NET 项目里启用 Satori GC",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/hez2010/p/23249814/enable-satori-gc-in-a-single-line",
+    "content": "Satori GC 是 .NET 上兼具高吞吐、低延时与低占用的一种 GC。作者为方便项目使用，把它封装成 MSBuild SDK 并发布到 NuGet，这样只需一行代码就能在发布（publish）时启用 Satori GC。文章面向 .NET 10 给出了具体配置方式，适合想在不改动业务代码的前提下尝试新 GC 的开发者。",
+    "quote": "调 GC 最爽的姿势，是一行代码改完假装自己没调过。",
+    "published": "2026-10-11",
+    "uid": "dev_b0994391"
+  }
+]
