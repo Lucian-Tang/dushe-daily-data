@@ -1,0 +1,128 @@
+[
+  {
+    "title": "别把 ~ 写进 PATH：它不是你想的那个家目录",
+    "content": "一篇博客指出，在 PATH 等环境变量里写 ~ 是个隐患：shell 自己展开时才会把它当作家目录，而很多程序、脚本乃至 sudo 切换后的进程并不做这层展开，于是「家目录路径」会退化成一个字面量目录，导致命令找不到或误命中。作者的建议是用 $HOME 或绝对路径。对天天配环境、排障的人来说，这是个容易踩、也常被忽略的老坑。",
+    "quote": "少写一个波浪号，多排两小时故障。",
+    "source": "HN Front Page",
+    "url": "https://disconnect3d.pl//2026/10/02/dont-put-tilde-in-your-path/",
+    "published": "2026-10-12",
+    "uid": "dev_346f8395"
+  },
+  {
+    "title": "LineageOS 24.0 发布：老手机继续续命",
+    "content": "基于 Android 的自定义 ROM 项目 LineageOS 发布 24.0 并给出变更日志。对官方早已停止更新的机型来说，它往往是能继续拿到安全补丁与新特性的少数选择。该项目不追求堆功能，而是稳住底层平台适配、设备支持与维护节奏。想让旧设备再战几年的玩家，这类版本值得跟进。",
+    "quote": "厂商一宣布淘汰，社区就负责续命。",
+    "source": "HN Front Page",
+    "url": "https://lineageos.org/Changelog-32/",
+    "published": "2026-10-12",
+    "uid": "dev_65880806"
+  },
+  {
+    "title": "Nitter 撑不住了：公开求助资金与法律支援",
+    "content": "推特替代前端 Nitter 发布更新，坦言项目正面临资金与法律压力，公开寻求资助与法律援助。Nitter 让用户无需登录即可浏览时间线，长期是隐私友好访问的入口，也因此一直游走在平台条款的边缘。这类「一人扛起公共基础设施」的项目再次暴露了老问题：服务被无数人依赖，却缺少可持续的支持机制。",
+    "quote": "免费的公共设施，最后都得靠化缘续命。",
+    "source": "HN Front Page",
+    "url": "https://nitter.net",
+    "published": "2026-10-12",
+    "uid": "dev_edef5150"
+  },
+  {
+    "title": "Valen 提出一种新的借用检查思路",
+    "content": "一篇技术博客介绍了 Valen 语言在内存安全上的新尝试：一种介于传统所有权与运行时检查之间的借用检查方案，试图在保证内存安全的同时放松对程序结构的约束。Rust 让「借用检查」成为主流议题，但严格规则也被诟病学习曲线陡峭。Valen 代表了另一种取舍——把部分验证从编译期挪到更灵活的位置，值得关心语言设计的人一读。",
+    "quote": "Rust 卷完规则，开始卷规则的例外。",
+    "source": "HN Front Page",
+    "url": "https://verdagon.dev/blog/valen-group-borrowing",
+    "published": "2026-10-12",
+    "uid": "dev_f2b7fe4c"
+  },
+  {
+    "title": "PyTorch 再登 GitHub 每日趋势榜",
+    "content": "深度学习框架 PyTorch 再度出现在 GitHub 每日趋势榜。作为学术界与工业界使用最广的训练框架之一，它每次热度回潮往往对应着生态里的新动向——无论是新硬件后端、编译器路径，还是围绕大模型的训练与推理优化。对关注 AI 基建的人来说，盯着它的提交与发布节奏，比追零散的模型新闻更能看清行业主线。",
+    "quote": "AI 天天上头条，扛活的还是这个仓库。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/pytorch/pytorch",
+    "published": "2026-10-12",
+    "uid": "dev_2d9028ec"
+  },
+  {
+    "title": "iterm-agents：在 iTerm2 侧栏盯住多个编程 Agent",
+    "content": "开发者分享了自己维护的 iterm-agents，一个嵌在 iTerm2 工具栏里的小面板，用来看住同时运行的多个编程 Agent。开启 Claude Code、Codex、Cursor Agent、Devin、Kimi Code 后，谁还在跑、谁刚结束一目了然，点一下就能跳到对应窗格，还能按 Git 仓库分组会话。当「一人指挥多个 Agent」成为常态，这类状态可视化工具会越来越刚需。",
+    "quote": "Agent 越来越多，人先管不过来。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1247891#reply0",
+    "published": "2026-10-12",
+    "uid": "dev_a58b21ae"
+  },
+  {
+    "title": "开源项目收到 AI 机器人提的 CVE 修复 PR，他给立了规矩",
+    "content": "作者为开源的 Electron 矩阵发布工具 MatrixMedia 定下了「AI 机器人提 PR 的规矩」。项目两个月涨到近千 star，随之而来的是 AI 机器人提交的 CVE 修复补丁——听上去像好事，但来源可信度、改动质量与安全影响都需甄别。于是他没有一刀切禁止，而是写明准入与审核流程。当 AI 开始主动维护开源项目，怎么接、怎么审，正成为新课题。",
+    "quote": "机器人来修漏洞，先审它是不是漏洞。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1247866#reply1",
+    "published": "2026-10-12",
+    "uid": "dev_621e659e"
+  },
+  {
+    "title": "从 Node.js 到 Go：一个 200 万月活搜索站的重构",
+    "content": "夸克网盘资源聚合搜索站 PanSou 分享了从 Node.js 迁移到 Go 的架构重构实践。旧架构用 Next.js + BullMQ + PostgreSQL + Redis，随着月活超 200 万、索引 800 万+条，逐渐暴露出性能与维护痛点，最终选择彻底重构。这类「小马拉大车」后被迫换引擎的复盘很实在：技术选型的天花板，往往要等业务真正跑起来才看得见。",
+    "quote": "增长是好事，直到它把老架构压垮。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1247778#reply6",
+    "published": "2026-10-12",
+    "uid": "dev_f7a77fbb"
+  },
+  {
+    "title": "开源反编译器 garlic 新增 dex/apk 支持",
+    "content": "开源 Java 反编译器 garlic 更新，在原有 class 支持之外新增了 dex 与 apk 反编译（apk 的 Manifest 与资源暂未解析）。作者解释名字取自郭德纲相声：java class 文件以 CAFEBABE 开头，于是「咖啡就着大蒜」，高雅又低俗。反编译工具是逆向、安全审计与老代码考古的常备兵器，向移动端格式补齐支持，实用性又上了一台阶。",
+    "quote": "CAFEBABE 的咖啡，配安卓的大蒜。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1142640#reply1",
+    "published": "2026-10-12",
+    "uid": "dev_f41429fd"
+  },
+  {
+    "title": "OpenAI 兼容模式与 Anthropic 协议到底差在哪",
+    "content": "一篇博客记录了作者踩过的坑：想用外层框架驱动 Claude Code 解算法题，并接入 GLM、Qwen 等第三方或自部署开源模型，结果第一步就卡住——Claude Code 只认 Anthropic 协议，而多数开源模型走的是 OpenAI 兼容接口。文章据此梳理了两套协议在消息结构、工具调用等层面的差异。想混用生态的人，先搞清这两套「方言」，能省下大把调试时间。",
+    "quote": "两套协议差一层，联调就多三天。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/moonout/p/23260875",
+    "published": "2026-10-12",
+    "uid": "dev_085b22d7"
+  },
+  {
+    "title": "不用 Python 也能跑 YOLO：这个 .NET 库扔掉了 OpenCV",
+    "content": "博客介绍了 .NET 生态的 YOLO 推理库 YoloDotNet，已迭代到 v4.2。作者在 README 首行就挑明态度：No Python、No OpenCV、No magic。v2 到 v4 的 API 差异很大，从 ImageSharp 配置平铺改为 SkiaSharp 加模块化执行提供程序。对不想为了跑个目标检测就拉起一整套 Python 环境的 .NET 团队，这是条省心的路。",
+    "quote": "为了跑个模型装 Python，才是真魔法。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23259541",
+    "published": "2026-10-12",
+    "uid": "dev_bee3b621"
+  },
+  {
+    "title": "ManimCE v0.22.0：把渲染流程重新捋了一遍",
+    "content": "Manim Community Edition 发布 v0.22.0（2026-10-08）。这版没堆新动画，而是集中清理多年积累的债务：统一命令行输出开关、理顺跑偏的渲染生命周期、修复小字号排版错乱。代价是带来不少破坏性变更，升级前得留意脚本与配置。对用 Manim 做数学可视化的人来说，这类「不性感但必要」的重构，长期价值往往高于新特性。",
+    "quote": "这版不加新功能，专治历史遗留。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/wang_yb/p/23263451",
+    "published": "2026-10-12",
+    "uid": "dev_6d33d20e"
+  },
+  {
+    "title": "CSR、SSR、SSG、ISR：渲染策略到底怎么选",
+    "content": "一篇 Dev.to 文章把前端四种渲染策略摆在一起对比：HTML 究竟在浏览器、服务器还是构建时生成，直接决定了首屏速度、SEO、服务器成本与工程复杂度。作者建议按页面性质分别匹配 CSR/SSR/SSG/ISR，并格外注意 hydration 的开销。选型时别只看框架的推荐默认，先想清楚每个页面对「快」和「动态」的取舍。",
+    "quote": "渲染方式一旦选错，优化全白做。",
+    "source": "Dev.to",
+    "url": "https://dev.to/sri2614/rendering-strategies-csr-ssr-ssg-isr-5g45",
+    "published": "2026-10-12",
+    "uid": "dev_9499f49e"
+  },
+  {
+    "title": "Spring Boot 3.5 六月起停更补丁，别急着迁 4.0",
+    "content": "一篇 Dev.to 文章提醒 Java 开发者注意两个时间点：2026 年 6 月 30 日，Spring Boot 3.5 停止提供免费补丁（3.5.16 是最后一个）；而 4.0 的免费补丁也将在 2026 年 12 月 31 日到期。作者的结论是别把「迁到最新大版本」当默认解，升级前先评估依赖兼容、迁移成本与长期支持节奏。对企业项目，跟错版本节奏，代价往往半年后才显现。",
+    "quote": "升级是为了省心，不是为了追新。",
+    "source": "Dev.to",
+    "url": "https://dev.to/feezan_khattak/spring-boot-35-stopped-getting-patches-in-june-dont-migrate-to-40-4ba",
+    "published": "2026-10-12",
+    "uid": "dev_9e6c732b"
+  }
+]
