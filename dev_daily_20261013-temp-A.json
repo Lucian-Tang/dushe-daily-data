@@ -1,0 +1,137 @@
+[
+  {
+    "title": "在 Ruby 的魏玛时代里生活",
+    "content": "Rails World 上 DHH 的主题演讲引发争议。作者 Julik Tarkhanov 认为那是「一个身处存在危机、又极度倦怠的人发出的声音」——DHH 宣称他们用 vibe 方式重写了 HEY、性能更好，因此不再需要也不在乎 Rails。作者反驳：名人与大佬对好东西失去兴趣，并不要求其他人也跟着放弃；热爱 Rails 的人应继续把它做好，这反而空出了位置。",
+    "quote": "大佬说「我不在乎了」，社区还得替他善后。",
+    "source": "HN Front Page",
+    "url": "https://blog.julik.nl/2026/10/the-weimar-of-ruby",
+    "published": "2026-10-13",
+    "uid": "dev_5a3b530e"
+  },
+  {
+    "title": "QGIS 提案禁止 AI 生成的贡献",
+    "content": "QGIS 社区提出 QEP428 提案（由 Nyall Dawson 提交），拟明确「不接受 AI 生成的贡献」，相关 PR 在 GitHub 上引发热议。作为知名开源地理信息软件，维护者对 AI 生成代码的版权、质量与责任归属存疑。此举折射出越来越多开源项目开始为 AI 贡献划边界：不是一刀切拒收，而是要厘清署名、审核与可追溯性。",
+    "quote": "开源还没想清版权，先给 AI 关上了门。",
+    "source": "HN Front Page",
+    "url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
+    "published": "2026-10-13",
+    "uid": "dev_6aa74d74"
+  },
+  {
+    "title": "我在 Google 挖到一个价值 9 万美元的 RCE 漏洞",
+    "content": "安全研究者 Simon Koeck 复盘在 Google 开发者文档站点发现的远程代码执行漏洞：developers.google.com 的 OAuth 流程里，Flask 会话 cookie 用一个「被它自己携带的密钥」来签名，把密钥取出即可伪造会话，进而在七个 Google 域名上实现代码执行。作者借此提醒：把密钥藏在被自己签名的数据里，等于把钥匙和锁一起交出去。最终获得 9 万美元赏金。",
+    "quote": "密钥和数据住一起，翻个身就全招了。",
+    "source": "HN Front Page",
+    "url": "https://simonkoeck.com/writeups/google-devsite-flask-session-pickle-rce",
+    "published": "2026-10-13",
+    "uid": "dev_33ebf886"
+  },
+  {
+    "title": "Show HN：PS2 游戏静态重编译到 WebAssembly",
+    "content": "项目 ps2-web-recomp 尝试把 PS2 游戏搬进浏览器：通过静态重编译，把 PS2 的 MIPS 机器码翻译成 WebAssembly，再配一套原生运行时。相比逐条解释执行的模拟器，静态重编译有机会换来更高性能与更好的浏览器兼容性。对复古游戏与底层编译技术爱好者来说，这是把老主机、旧指令集同现代 Web 运行时接在一起的一次有趣实验。",
+    "quote": "二十年前的盘，换个引擎接着在浏览器里转。",
+    "source": "HN Front Page",
+    "url": "https://github.com/snuri00/ps2-web-recomp",
+    "published": "2026-10-13",
+    "uid": "dev_ac318f83"
+  },
+  {
+    "title": "在 Zig 里做类型安全的 HTML 模板",
+    "content": "作者 Lukas Lalinsky 从 PHP、Jinja 等模板史说起，讲自己如何转向 Zig 做后端，并实现了类型安全的 HTML 模板。配合 arena 分配器，低层语言做 Web 也不再那么可怕：模板在编译期完成类型检查，排版即代码，不必再为运行时字符串拼接提心吊胆。对关心「能不能用系统级语言写 Web」的人，这是一份带实操细节的路线图。",
+    "quote": "模板也能编译期报错，PHP 听了会沉默。",
+    "source": "HN Front Page",
+    "url": "https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html",
+    "published": "2026-10-13",
+    "uid": "dev_6d765c3a"
+  },
+  {
+    "title": "项目开源 3 周 2 万 star，来做一波 QA",
+    "content": "作者开源了复刻视频的项目 Hypit（SVML 语法），一周 1 万、三周 2 万 star，开帖集中答疑。核心思路是把「事件锚定在词上」而非时间点：换配音、改语速后构图跟着语义自动调整，从而支撑「1 条视频 100 个变体」；并区分源文件 SVML 与执行计划 SVRun，编译只跑需要变化的部分以复用产物。还支持接入本地部署模型。",
+    "quote": "事件绑在词上，配音重录再也不用对时间轴。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1248148",
+    "published": "2026-10-13",
+    "uid": "dev_ff5397d9"
+  },
+  {
+    "title": "ReadGZH：让 AI 直接读懂微信公众号文章",
+    "content": "作者做了 ReadGZH，解决「把微信公众号文章喂给 AI」的痛点：微信对未登录请求基本返回登录墙，自建爬取成本高，于是由服务端抓取清洗、直接返回干净全文。提供网页、REST API、MCP（Claude/Cursor/Cline 可接）、OpenAPI（ChatGPT Action/Coze/Dify）等多种接入方式，免费额度每日 30 积分，评论区作者还复盘了「写得太像公告没人回」的运营教训。",
+    "quote": "微信筑墙三年，他给 AI 递了把梯子。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1248217",
+    "published": "2026-10-13",
+    "uid": "dev_0fb3f318"
+  },
+  {
+    "title": "Runnock：把 MacBook 刘海变成开发者的状态岛",
+    "content": "作者因同时盯多个编码 Agent 的痛点做了 Runnock：把 MacBook 刘海变成任务状态岛，支持 Claude Code、Codex、Devin、Cursor CLI 等十种 Agent 以 hook 方式接入。权限请求与选择题可直接在刘海里回答，超时自动交回终端；多会话按「待处理 > 失败 > 运行中」排优先级。原生 Swift/AppKit，数据全在本机、无账号无上报，买断制。",
+    "quote": "刘海终于不只是审美灾难，还能替你盯 Agent。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1248184",
+    "published": "2026-10-13",
+    "uid": "dev_29e03181"
+  },
+  {
+    "title": "十年前业余做的诗词 App，今年和 AI 一起从零重写",
+    "content": "作者 2015 年在 V2EX 发过一个离线全唐诗宋词 App「微诗」，2017 年搁置近十年。今年用 SwiftUI + WidgetKit 与 AI agent 一起从零重写，旧代码一行未留，按 API 价折算约烧了两万美元 token，大头花在「不够好看，再来一版」上。踩的坑也不少：AI 会编诗，节气和七十二候引文逐条对照维基文库核，换掉 8 首存疑内容。",
+    "quote": "两万刀 token 烧在「再来一版」上，AI 也救不了强迫症。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1248168",
+    "published": "2026-10-13",
+    "uid": "dev_29a97bb5"
+  },
+  {
+    "title": "Claude Code 与 Linus Torvalds：Linux 补丁的取舍",
+    "content": "本文复盘 Claude Code 协助 Linus Torvalds 探索一项 Linux 内存管理改动：写测试程序、整理问题清单，还起草了说明文字，全部由他主导。真正有意思的是补丁封面信——这组实验性补丁降低了某类共享文件工作负载的开销，却让另一条读路径变慢，内存记账也尚未解决。作者提醒：头条标题很响，脚注同样实在，AI 辅助产出仍要经受内核评审的检验。",
+    "quote": "AI 写完初稿，锅还得开发者自己背。",
+    "source": "Dev.to",
+    "url": "https://dev.to/axrisi/claude-code-and-linus-torvalds-the-linux-patch-tradeoffs-299j",
+    "published": "2026-10-13",
+    "uid": "dev_ad74e291"
+  },
+  {
+    "title": "我的 agent 们在写代码了，那我该干嘛？",
+    "content": "作者描述自己的日常：几个 agent 同时干活，一个写功能、一个写测试、一个追 bug、一个做评审，自己几乎不敲代码，于是不断追问「它们干活时我该做什么」。他给出一个未完成的答案：别盯着 agent 干活——看终端滚动像 2026 年的进度条，看着像工作却只消耗注意力；并行开太多任务还会导致频繁上下文切换。这是对「AI 时代工程师角色」的一次坦诚反思。",
+    "quote": "不打字了，职场的迷茫反而加倍。",
+    "source": "Dev.to",
+    "url": "https://dev.to/manveer_singh_64078cdb0e/my-agents-write-the-code-now-so-what-am-i-supposed-to-do-50ch",
+    "published": "2026-10-13",
+    "uid": "dev_19779ec8"
+  },
+  {
+    "title": "一文搞懂 Agent Memory：AI 是怎么记住你说过的话的",
+    "content": "文章从「为什么 AI 能完成复杂任务却记不住昨天聊过的事」切入，先讲 Context Window 的两个硬限制：容量有限、且不负责持久化。由此引出 Agent Memory 的必要性，系统梳理记忆分类与实现机制，并盘点 Mem0、Letta、Claude Code 等主流方案。对正在做 Agent、被「跨会话失忆」困扰的开发者，是一份从概念到落地的科普与选型参考。",
+    "quote": "关掉终端就失忆，AI 的记性和金鱼有一拼。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Tomorrowland/p/23276386",
+    "published": "2026-10-13",
+    "uid": "dev_3bce56de"
+  },
+  {
+    "title": "Rust 进程假死问题排查（dragonfly + tokio）",
+    "content": "作者负责 k8s 镜像加速项目 Dragonfly 的 Rust + tokio 客户端：600+ 节点拉取 16G+ 大镜像时，200 多个节点的 dfdaemon 进程几分钟后便「假死」——不再打印任何日志、拉取失败且 containerd 无法降级，85 分钟后 4001 端口探活才开始失败。排查发现 4001 端口的 TCP 全连接队列被打满，是一份可复用的一线异步运行时排障复盘。",
+    "quote": "tokio 一卡，日志比人先咽气。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/yennie/p/22276475",
+    "published": "2026-10-13",
+    "uid": "dev_865902ab"
+  },
+  {
+    "title": "给 Agent 加了 Redis 还是跨会话失忆，我排查后发现少了一层",
+    "content": "作者用 Spring AI 做助手，给 ChatClient 挂了 ChatMemory、历史存 Redis，直到用户抱怨「上周说过不爱 magic number，这周又生成一堆」。排查后明白：Spring AI 的记忆分两层——短期记忆（ChatMemory，存会话历史）与长期记忆（AutoMemoryTools，把偏好和决策落成 Markdown 文件、由 LLM 自主读写），他只接了前者。",
+    "quote": "Redis 存的是聊天记录，不是脑子。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/uniqueDong/p/23271279",
+    "published": "2026-10-13",
+    "uid": "dev_c2f81b4b"
+  },
+  {
+    "title": "microsoft/BitNet：1-bit 大模型官方推理框架",
+    "content": "微软的 BitNet 仓库是 1-bit 大语言模型的官方推理框架：把权重压到极低位宽（含 1.58-bit 三值核心），配合 CPU 优化的推理内核，让大模型在普通 CPU 上也能跑出可观吞吐，目标是显著降低推理的显存与能耗门槛。它再度登上 GitHub 每日趋势榜，也反映出业界对「把大模型塞进更小、更省电硬件」的持续兴趣。",
+    "quote": "权重砍到只剩三值，模型瘦身卷出新高度。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/microsoft/BitNet",
+    "published": "2026-10-13",
+    "uid": "dev_7167a9f3"
+  }
+]
