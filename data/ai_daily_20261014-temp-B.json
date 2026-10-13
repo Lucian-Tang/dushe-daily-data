@@ -1,0 +1,110 @@
+[
+  {
+    "title": "Cursor 把插件规范开源了，编辑器开始卷生态",
+    "content": "Cursor 官方开源了 cursor/plugins 仓库，公开其插件规范并提供官方插件，等于把编辑器的扩展方式标准化、开放给社区。对已经把 Cursor 当作主力 AI 编码工具的团队，这意味着可以围绕它的插件协议自建并分发能力，而不必锁死在官方内置功能里。一个 AI 编辑器开始经营插件生态，说明工具间的竞争正从「模型多强」转向「生态多厚」。",
+    "quote": "模型卷不动了，开始卷插件生态的厚度。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/cursor/plugins",
+    "published": "2026-10-14",
+    "uid": "ai_17c6b7d7"
+  },
+  {
+    "title": "VoiceStudio：完全本地的开源 ElevenLabs 平替",
+    "content": "开源项目 VoiceStudio 打出「完全本地、开源」的旗号，正面平替 ElevenLabs：支持声音克隆、声音设计、视频配音、听写转写与有声书制作，号称覆盖 646 种语言，全程不上传云端。对在意隐私、又不想为语音 API 持续付费的用户，它把过去只有闭源服务才拿得出的能力搬回本地，是本轮语音开源里颇有野心的一款。",
+    "quote": "声音克隆这活儿，也能全程不出你的电脑。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/debpalash/VoiceStudio",
+    "published": "2026-10-14",
+    "uid": "ai_311ee82d"
+  },
+  {
+    "title": "Vercel 出手：把 agent skills 做成一条命令",
+    "content": "Vercel Labs 发布开源项目 skills，主张用 npx skills 一条命令管理 AI 代理的「技能」：让可复用的技能包像依赖一样被发现、分发与加载，而不是每个项目各写各的提示词。随着各家代理都在抢技能生态，把技能做成可安装、可共享的标准件，正是把「提示词工程」推向工程化的一步。",
+    "quote": "技能也想做成 npm 包，代理生态开始卷标准化。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/vercel-labs/skills",
+    "published": "2026-10-14",
+    "uid": "ai_675568eb"
+  },
+  {
+    "title": "两个月冲到 9000 star 的新一代 e2e 测试框架",
+    "content": "GitHub 项目 e2e 号称面向 Web 与移动端的新一代端到端测试框架，今年 7 月才建仓，两个半月 star 就冲过 9000：有人翻 Wayback 存档发现它 10 月 1 日还只有 549 星，随后一周直接起飞。它把 AI 时代的测试需求当作卖点。对苦于 e2e 用例又慢又脆的团队，这种短期内口碑爆发的项目，值得先观望一阵再决定上车。",
+    "quote": "两月九千星，测试框架也能一夜爆红。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/tester-army/e2e",
+    "published": "2026-10-14",
+    "uid": "ai_b2006f06"
+  },
+  {
+    "title": "本地大模型能替代 Claude Code 吗？别再看错基准了",
+    "content": "作者把 Claude Code、Codex 接到本地模型跑真实任务后指出：大家引用的 SWE-bench 分数测的是「能不能写对函数」，而真正决定你是否敢关掉 Claude Code 的，是模型能否稳定地连续十次发出干净的工具调用、在多文件改动里不跑偏 schema。写对函数早已解决，做可靠的代理才是全部工作。文章还拆解了各模型家族、硬件现实与那些没人截图的失败模式。",
+    "quote": "会写函数不值钱，能连点十次工具才算数。",
+    "source": "Dev.to",
+    "url": "https://dev.to/rudratosh/can-a-local-llm-replace-claude-code-the-benchmark-everyone-quotes-is-the-wrong-one-2kna",
+    "published": "2026-10-14",
+    "uid": "ai_0185dbed"
+  },
+  {
+    "title": "余弦相似度 0.92，可那个载荷早就死了",
+    "content": "作者质疑「代理记忆被投毒」的流行说法：动作变了，不代表是记忆导致的，两者之间隔着一大段缝隙。他搭了一套测量装置，用反事实「切除」法把记忆删掉再重放同一场景，测量动作轨迹的变化，并公开三个负面结果——其中最有用的是一个余弦相似度高达 0.923、却对行为毫无影响的载荷。能被检索、进入提示、还能繁殖，未必等于它在承重。",
+    "quote": "相似度高不等于它有用，别拿形容词当证据。",
+    "source": "Dev.to",
+    "url": "https://dev.to/toxy4ny/cosine-similarity-said-092-the-payload-was-already-dead-387h",
+    "published": "2026-10-14",
+    "uid": "ai_ae1a8a6c"
+  },
+  {
+    "title": "鉴权全过了，代理还是干了你没让它干的事",
+    "content": "文章点出 AI 代理带来的新漏洞：认证回答「你是谁」，授权回答「你被允许做什么」，可两者都没回答「这个动作是否真的出自本意」。当模型是照着文档内容生成工具调用时，「被允许」就不再是全部——人类点按钮和模型生成调用是两种不同信号，所有权检查、角色检查、前置代理都分辨不了。作者用一个代理跑了多组失败用例来验证这一缺口。",
+    "quote": "权限都对，就是没人问过你到底想不想。",
+    "source": "Dev.to",
+    "url": "https://dev.to/shubhradev/your-auth-check-passed-the-agent-still-did-something-nobody-asked-for-156f",
+    "published": "2026-10-14",
+    "uid": "ai_483acea2"
+  },
+  {
+    "title": "AI 需要的不是答案卷，而是一个会还手的对手",
+    "content": "作者认为，一个正确答案不等于一串好的决策序列，这正是「对手」与「答案卷」的区别：固定问答里，回答完任务就结束了；而对局中每一步都是下一道题的开端，对手会回应，新信息会改写「什么才合理」。他正搭建 eSlams——一个让人类与 AI 模型对弈、观赛的公开竞技场，底层用开源引擎研究模型的决策过程，用桌游与扑克等场景把挑战具体化。",
+    "quote": "会答题不算本事，扛得住对手才见真章。",
+    "source": "Dev.to",
+    "url": "https://dev.to/dailycontext/ai-needs-a-test-that-fights-back-4f17",
+    "published": "2026-10-14",
+    "uid": "ai_a183ea76"
+  },
+  {
+    "title": "企业级 Agent 到底该怎么分层？一张五层架构图",
+    "content": "文章回答「企业级 Agent 为何需要分层架构」：接一个大模型远远不够，还得解决统一接入多模型、让 Agent 使用数据库与业务系统、拆解复杂任务、管理对话与长期记忆、支持长时运行与失败重试、限制操作权限、追踪评估与控成本等一系列工程问题。作者据此提出五层架构——基础设施、数据与集成、模型与上下文智能、智能执行与编排、应用与交互，把职责清晰拆开。",
+    "quote": "全塞进一个 Agent 里，迟早连自己都看不懂。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/jiujuan/p/23291353",
+    "published": "2026-10-14",
+    "uid": "ai_64d3d685"
+  },
+  {
+    "title": "Function Calling、MCP、Skill 到底啥关系？三层楼讲透",
+    "content": "针对面试高频问题，文章把三者关系一次讲清：它们不是三选一，而是一条流水线上的三个工位，自下而上层层封装。Function Calling 是模型侧原生能力，负责表达「调谁、传什么参数」，像只会点菜的嘴；MCP 是接入侧开放协议，负责工具的标准化发现、连接与跨进程调用，像 USB-C；Skill 则是业务侧封装单元，把工具、提示词、流程与知识按 SOP 打包。文中附 Java 落地代码与踩坑。",
+    "quote": "FC 是嘴、MCP 是接口、Skill 是菜谱，别混。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/zrui-xyu/p/23285070",
+    "published": "2026-10-14",
+    "uid": "ai_108ecaa7"
+  },
+  {
+    "title": "为什么 AI 聊得越久越容易跑偏？一文搞懂上下文工程",
+    "content": "文章从常见现象切入：AI 编程助手一开始表现很好，任务推进后却忘记既定技术方案、反复尝试失败方法、甚至改动不相关代码。模型没变，问题出在上下文——对话历史、工具返回、错误日志不断累积，把真正重要的信息淹没了。由此引出「上下文工程」：提示词工程负责把任务说清，上下文工程则决定模型每次推理到底该看到哪些信息，像替员工整理办公桌上该放哪些文件。",
+    "quote": "模型没变差，是桌上堆的废纸太多了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Tomorrowland/p/23284833",
+    "published": "2026-10-14",
+    "uid": "ai_b3ac9675"
+  },
+  {
+    "title": "为什么国产模型的数学研究能力不行？",
+    "content": "一篇评论给出结论先行的判断：数学能力的前沿部分，本质不是解应用题，而是形式化验证。国产模型在竞赛数学与代码生成上并不差——Qwen3-Max-Thinking 在 AIME 25、HMMT 25 拿到国内首个双满分——却在研究级证明上乏善可陈，核心原因是没在 Lean 形式化证明方向做足够特化训练。作者引陶哲轩「已放弃实时跟进所有新证明」，指出瓶颈正从「如何生成证明」转向「如何验证与理解证明」。",
+    "quote": "会做竞赛题，不等于会做没标准答案的题。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/apachecn/p/23282975",
+    "published": "2026-10-14",
+    "uid": "ai_557238e5"
+  }
+]
