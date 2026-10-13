@@ -1,0 +1,128 @@
+[
+  {
+    "title": "Rust 借用检查器被翻出 11 年前的健全性漏洞",
+    "content": "Rust 官方仓库的一条 issue 指出，借用检查器里存在可追溯到 11 年前的健全性（unsoundness）缺陷，意味着部分代码在编译期被判为安全，实际却可能触发未定义行为。Rust 引以为傲的正是「编译通过即安全」，如今这块招牌被旧账翻了个底朝天。好在问题已被公开且可复现，也再次提醒：任何「绝对安全」的承诺，都值得定期回头重审。",
+    "quote": "坚信编译即安全的，先看看这条十一年老账。",
+    "source": "HN Front Page",
+    "url": "https://github.com/rust-lang/rust/issues/164250",
+    "published": "2026-10-14",
+    "uid": "dev_6b6801e5"
+  },
+  {
+    "title": "Character.AI 主动申请破产保护",
+    "content": "AI 陪伴类应用 Character.AI 在官方博客宣布自愿启动第十一章破产保护程序。它曾被视为「情感陪伴」赛道的明星项目，如今走到这一步，说明再高的用户黏性也扛不住持续烧钱与变现乏力。陪伴的故事讲得动人，但愿意长期为陪伴付费的人终究有限，热闹与营收之间那道坎，很多明星初创都没能跨过去。",
+    "quote": "陪你聊天的人还在，公司先撑不住了。",
+    "source": "HN Front Page",
+    "url": "https://blog.character.ai/an-update-on-character-ai/",
+    "published": "2026-10-14",
+    "uid": "dev_49a064c4"
+  },
+  {
+    "title": "发帖上 HN 后，我的网站被 AI 爬虫灌爆了",
+    "content": "一位开发者在 Hacker News 发帖后，发现自家网站流量暴涨，进来的却大多是 AI 训练爬虫而非真人。他把这次经历写成复盘，指出小站一旦被推上前台，带宽与成本会先被爬虫吃干。对独立开发者来说，让文章被看见的代价，正在悄悄被一群不请自来的机器人抬高。",
+    "quote": "来的都是「读者」，只是不读人写的字。",
+    "source": "HN Front Page",
+    "url": "https://www.sammystraus.com/#i-posted-to-hn-and-then-my-website-was-flooded-with-ai-bot-traffic",
+    "published": "2026-10-14",
+    "uid": "dev_fbc37bd3"
+  },
+  {
+    "title": "gods-eye-view：浏览器里的实时卫星情报台",
+    "content": "gods-eye-view 是一个跑在浏览器里的「间谍卫星模拟器」，用真实开源数据把航班、卫星与地理信息叠加到写实的 3D 地球上，主打开源空间情报（OSINT），仓库已卷到五万多 star。把公开数据做成酷炫可视化并不新鲜，但能让普通人像看地图一样追踪实时目标，这类工具正在悄悄拉低「情报」的门槛。",
+    "quote": "情报平民化的第一步，是把地球做成网页。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/bilawalsidhu/gods-eye-view",
+    "published": "2026-10-14",
+    "uid": "dev_3d012a12"
+  },
+  {
+    "title": "xtool：让 iOS 应用能在 Linux 和 Windows 上构建",
+    "content": "xtool 是一套跨平台的 Xcode 替代方案，基于 SwiftPM，让开发者在 Linux、Windows、macOS 上都能构建并部署 iOS 应用。苹果生态向来把工具链锁死在自家系统里，xtool 想撬的正是这道墙。对用不惯 Mac、或想在 CI 里绕开 macOS 的团队，它的价值不在省事，而在把被垄断的构建权拿回来。",
+    "quote": "苹果把门锁上，总有人想配把钥匙。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/xtool-org/xtool",
+    "published": "2026-10-14",
+    "uid": "dev_9b75280f"
+  },
+  {
+    "title": "vercel-labs/skills：一句 npx 装 Agent 技能",
+    "content": "Vercel 实验室开源的 skills 工具，让用户通过 npx 一句话给 AI Agent 安装可复用的技能。围绕「Skill」的生态今年明显热了起来，从各家模型到 IDE 都想定义一套技能规范。热闹背后是标准的争夺：谁的技能格式被采纳得最多，谁就更接近 Agent 时代的分发入口。",
+    "quote": "抢技能格式，就是在抢 Agent 的入口。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/vercel-labs/skills",
+    "published": "2026-10-14",
+    "uid": "dev_9a16cbec"
+  },
+  {
+    "title": "开源 PicMake：Key 只留在浏览器的生图工作台",
+    "content": "作者开源了 PicMake，一个纯前端的 GPT Image 2.5 生图工作台。官方只给了 API，ChatGPT 里既调不了参数也管不了生成记录，中转站又没有现成客户端，于是他干脆自己写了一个：填上自己的 API 地址和 Key 就能用，密钥和图片都只存在于浏览器本地。对在意隐私、又想要顺手生图入口的人，正合适。",
+    "quote": "把 Key 和审美都攥在自己手里才踏实。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1248533#reply0",
+    "published": "2026-10-14",
+    "uid": "dev_a62edc77"
+  },
+  {
+    "title": "开源 HiDataLinker：轻量免费的数据库客户端",
+    "content": "作者开源了桌面数据库客户端 HiDataLinker，定位是「日常查库改表的 Navicat 免费替代品」，连接与密钥都留在本机，v1 已支持 MySQL、PostgreSQL、SQL Server 和 Oracle，目前先发了 macOS Apple Silicon 安装包。商业数据库工具的价格长期让人肉疼，这类开源替代冒出来，正好戳中预算敏感的技术团队。",
+    "quote": "免费的替代品，永远是付费软件的心病。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1248519#reply0",
+    "published": "2026-10-14",
+    "uid": "dev_0868a7ee"
+  },
+  {
+    "title": "claude-codex-bridge：让 Claude 派活、Codex 干活",
+    "content": "作者做了个小工具，打通 Claude 与 Codex 两个桌面端：由 Claude 按任务难度拆解并派发，交给 Codex 去执行测试、computer use 这类简单工作，完成后回到 Claude 审核。他坦言如今 Codex 不如 Claude Code，于是把后者当指挥、前者当劳力。多模型各司其职正成为新玩法，但编排成本与可靠性仍是绕不开的账。",
+    "quote": "一个当大脑一个当苦力，分工挺资本主义。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1248291#reply6",
+    "published": "2026-10-14",
+    "uid": "dev_f4cfc602"
+  },
+  {
+    "title": "你的 AI 编码助手根本不懂你的 API",
+    "content": "一篇 Dev.to 文章讲了件很多人体会过的事：AI 编码助手在不了解你后端接口时，会一本正经地「发明」端点。作者举的例子是助手一次写完整套代码，还煞有介事地命名为 GET /v2/invoices/:id/li…，看似合理，实际接口压根不存在。生成得越流畅，越难一眼看出它在编——这才是最危险的地方。",
+    "quote": "它编得不心虚，所以你才看不出来。",
+    "source": "Dev.to",
+    "url": "https://dev.to/jeff_pdc/your-ai-coding-tool-doesnt-know-your-api-and-its-inventing-endpoints-to-prove-it-2d9p",
+    "published": "2026-10-14",
+    "uid": "dev_7acb49b2"
+  },
+  {
+    "title": "我查了那些号称能让 AI Agent 赚钱的平台",
+    "content": "作者让模型列出一份「AI Agent 能接活赚钱」的平台清单，附带数字相当唬人，比如「每周 4 万+ 岗位、已支付 100 万美元」。于是他挨个去核实，结论是平台名是真的，需求却是虚构或注水的。这篇调查的价值在于提醒：当叙事由模型生成，数字和榜单都可能被顺手编造，越像那么回事越要自己查证。",
+    "quote": "平台是真的，需求是模型编出来的。",
+    "source": "Dev.to",
+    "url": "https://dev.to/nuncius-ghost/i-checked-the-platforms-where-ai-agents-supposedly-get-paid-the-names-are-real-the-demand-isnt-5eha",
+    "published": "2026-10-14",
+    "uid": "dev_c8952eb7"
+  },
+  {
+    "title": "科普：为什么 AI 聊得越久越容易跑偏",
+    "content": "一篇博客用编程助手为例讲清 Context Engineering：一开始你告诉它项目用 Python、FastAPI 和 MySQL，它读代码、改文件、跑测试都很顺；聊得越久、上下文越堆越多，它反而开始跑偏。作者点明问题不在模型变笨，而在有限的上下文窗口里塞进了噪声与过期信息。所谓上下文工程，本质就是替 AI 做信息取舍。",
+    "quote": "AI 没变笨，是记忆里垃圾太多了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Tomorrowland/p/23284833",
+    "published": "2026-10-14",
+    "uid": "dev_56545d37"
+  },
+  {
+    "title": "客户端上报不可信：游戏服务端该如何校验",
+    "content": "一篇博客复盘游戏结算链路：接口有签名、奖励也放服务端算，可改攻击力、变速、无敌的异常对局仍能正常结算。作者点出根因不在「有没有服务端」，而在服务端究竟掌握多少判定依据——若伤害、击杀、通关结果都由客户端给出，服务器只是把数字换算成奖励，核心规则就等于交给了玩家。信任边界得往数据源那一层挪。",
+    "quote": "服务器只会算账，规则早被玩家改完了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/bytehidden/p/23283657",
+    "published": "2026-10-14",
+    "uid": "dev_4beb0a9a"
+  },
+  {
+    "title": "一张图讲透 Function Calling、MCP 与 Skill",
+    "content": "一篇博客试图厘清 Function Calling、MCP、Skill 三者的关系，破除常见面试误区，并附上 Spring AI 的完整 Java 落地代码，覆盖本地 @Tool、MCP Client/Server 以及 Skill 的渐进式加载，还整理了幂等、高危确认、限流熔断、Token 膨胀等 30 多个生产踩坑。概念炒得越乱，越需要有人把它落回代码。",
+    "quote": "名词一天三变，能跑通的代码才作数。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/zrui-xyu/p/23285070",
+    "published": "2026-10-14",
+    "uid": "dev_a15981ae"
+  }
+]
