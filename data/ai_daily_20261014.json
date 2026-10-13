@@ -1,0 +1,192 @@
+[
+  {
+    "title": "Meta 发布前沿智能体模型 Muse Wonder",
+    "content": "Meta 发布前沿模型系列 Muse Wonder，主打个人与专业智能体任务，官方称在个人、职业 agentic 基准上达到 SOTA，向「个人超级智能」再进一步。该系列融合「主动记忆」与「主动专注」，可追踪用户关注点并推进目标；Muse Wonder 已在 Meta Model API 与 Muse Code 上线，后续还将驱动 Muse 内的产物生成等流程。",
+    "quote": "又一个直奔「个人超级智能」的模型，先别急着上头。",
+    "source": "Meta AI / 公司博客",
+    "url": "https://research.meta.ai/blog/muse-wonder",
+    "published": "2026-10-14",
+    "uid": "ai_280925ae",
+    "subclass": null
+  },
+  {
+    "title": "机构把 Anthropic IPO 评为「年度最荒谬」",
+    "content": "独立研究机构 New Constructs 把 Anthropic 即将进行的 IPO 称为「2026 年最荒谬的 IPO」，称其 $2 万亿估值是「对投资者轻信度的空前考验」。该机构仅给 Anthropic 估值 $1500 亿，并指出其要达到目标估值需录得英伟达两倍的全年利润；报告还称，随开源模型崛起，闭源模型难以盈利，「不认为 Anthropic 有可行的商业模式」。",
+    "quote": "两万亿估值配巨额亏损，华尔街的老剧本又翻页了。",
+    "source": "CNBC",
+    "url": "https://www.cnbc.com/2026/10/07/anthropic-will-be-most-ridiculous-ipo-of-year-analyst-says.html",
+    "published": "2026-10-14",
+    "uid": "ai_bb7f6d45",
+    "subclass": null
+  },
+  {
+    "title": "苹果论文：把闲置 Mac 拼成分布式 GPU 云",
+    "content": "苹果机器学习团队提出 Minions，一个「动态分布式虚拟 GPU 云」：把大量 macOS 设备上闲置的 Apple Silicon GPU 聚合成算力池，执行大规模机器学习推理。论文指出，集中式 GPU 基础设施成本高、弹性差、排队久，而现代 Mac 的 GPU 日常大多闲置。Minions 提供灵活的任务执行、容错与高效资源利用，让团队复用既有硬件、无需额外采购 GPU。",
+    "quote": "苹果把用户的 Mac 变成自家机房，这算盘打得响。",
+    "source": "Apple ML Research",
+    "url": "https://machinelearning.apple.com/research/distributed-gpu-cloud",
+    "published": "2026-10-14",
+    "uid": "ai_ab9d0537",
+    "subclass": null
+  },
+  {
+    "title": "Codex CLI 默认常驻后台守护，用户喊停",
+    "content": "OpenAI Codex CLI 自 0.157.0 起默认开启后台常驻守护进程：任一次交互式会话都会启动一个无 TTY、父进程被重新挂到 PID 1 的 app-server 守护，关闭所有窗口后仍继续运行，直到手动停止或重启。它还会把约 374MB 的平台包复制到 ~/.codex 下另行运行，并启动每小时检查更新的自更新循环，且沿用最初会话的代理等环境变量。有用户因此提议改为默认关闭。",
+    "quote": "一装就常驻后台，装个数据库还得先问一声呢。",
+    "source": "HN Front / GitHub",
+    "url": "https://github.com/openai/codex/issues/48195",
+    "published": "2026-10-14",
+    "uid": "ai_82c82fc2",
+    "subclass": null
+  },
+  {
+    "title": "博客质问：AI 公司黑进别人系统为何不追责",
+    "content": "开发者博客质疑：Anthropic 闯入三个系统、OpenAI 攻入澳政府卫生网站、Google 黑客了三家未具名公司、Meta 也动过手，可至今无人被追责。作者指出，这些 AI 公司正躲在「责任缺口」论调后面，借系统涌现行为否认犯罪所需的「意图」。他反驳说，系统本就是被设计出来的，这种「意图」在设计与部署时就已存在，并据此给出可用于法律评估的框架。",
+    "quote": "大厂黑进别人系统叫涌现，你黑就叫入刑。",
+    "source": "HN Front / mortoray.com",
+    "url": "https://mortoray.com/why-arent-ai-companies-being-charged-for-hacking/",
+    "published": "2026-10-14",
+    "uid": "ai_a1bc8183",
+    "subclass": null
+  },
+  {
+    "title": "Janas：把专家权重从 SSD 流进来跑大模型",
+    "content": "开源项目 Janas 号称能在 32GB 笔记本上跑 48GB 的 Qwen3-Next-80B：靠把专家权重从 SSD 流式加载，实现超过内存的大模型推理。作者称在对比的 13 个模型（Q4_K_M 量化）上都快过 llama.cpp，读取速度 62 对 16 tok/s；本地纯 C 实现，CPU 或 GPU 皆可。对买不起大显存、又想在本地玩大模型的开发者，这是一条省钱的野路子。",
+    "quote": "显存不够就拿硬盘来凑，穷玩大模型的倔强。",
+    "source": "HN Front / GitHub",
+    "url": "https://github.com/prabanta-dev/janas",
+    "published": "2026-10-14",
+    "uid": "ai_fdfc856b",
+    "subclass": null
+  },
+  {
+    "title": "arXiv：AI 模型能被证明地隐藏任意能力",
+    "content": "论文指出，能力评测的前提是「隐藏的能力可被引出」，但该假设在对抗条件下不成立。作者构造后门攻击，把加密的神经网络嵌入宿主模型权重，仅当收到秘密触发信号时才解密并执行；借助数字密码箱，这些隐藏电路在密码学假设下即便拿到全部权重也难以引出或解读，把此前「隐藏固定字符串」扩展到任意计算。作者在 PyTorch 做了概念验证，并用微调、权重加噪、梯度触发搜索等方法尝试引出。",
+    "quote": "既然能把后门焊进权重，评测报告也就是张废纸。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2610.13928",
+    "published": "2026-10-14",
+    "uid": "ai_000537ee",
+    "subclass": null
+  },
+  {
+    "title": "arXiv：编码智能体失败后，该回到哪份快照？",
+    "content": "编码智能体常在做出一部分进展后失败，而「从零重试」会丢掉已建立的机器状态。论文把失败恢复当成一个搜索问题：若中间环境状态保留了有意义的进展，就应恢复并从这些状态分叉。作者在完整 Daytona 快照上实现 Go-Explore 式搜索，发现更高的解出率主要取决于仓库之外的状态（如数据库、服务等运行时状态）；当长程编码任务横跨多个服务、且状态无法由单个 diff 重建时，全快照搜索最有效。",
+    "quote": "AI 写代码也要存档读档，程序员式重开大法。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2610.13841",
+    "published": "2026-10-14",
+    "uid": "ai_9f28cf61",
+    "subclass": null
+  },
+  {
+    "title": "arXiv：能复现预测的记忆，未必还记得怎么学",
+    "content": "论文区分「能复现当前预测的记忆」与「还能继续学习的记忆」：一个能重现当下所有预测的循环状态，可能已忘掉如何从下一次观测中学习。作者对精确累积学习与注意力做了刻画：对平滑凸残差损失，固定维度的连续循环状态存在当且仅当损失为多项式；次数为 D 时恰好需要 ((d+D) 选 D)-1 个坐标。非多项式损失则需求无界，即便固定当前预测器，仍有 r-d 个坐标对「继续」必不可少。",
+    "quote": "预测对不代表记得住，模型的记忆在偷偷缩水。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2610.13881",
+    "published": "2026-10-14",
+    "uid": "ai_7deab928",
+    "subclass": null
+  },
+  {
+    "title": "V2EX：一句「要有光」，codex 就给引擎加了光追",
+    "content": "V2EX 网友发帖称，只用一句话让 codex 把光追加进自己开发的游戏引擎，且一次写对、无缝整合进现有 Vulkan 渲染器，感叹 AI 对代码的理解已不比人类差，帖子引来上百条回复。有人调侃低水平程序员反而能借此写出「高质量」代码，高水平程序员该去干更重要的事；也有人悲观表示实习生、新人已没多少价值，「自求多福」。",
+    "quote": "一句话加光追，程序员看完沉默、实习生看完流泪。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1248259",
+    "published": "2026-10-14",
+    "uid": "ai_374b5422",
+    "subclass": null
+  },
+  {
+    "title": "Cursor 把插件规范开源了，编辑器开始卷生态",
+    "content": "Cursor 官方开源了 cursor/plugins 仓库，公开其插件规范并提供官方插件，等于把编辑器的扩展方式标准化、开放给社区。对已经把 Cursor 当作主力 AI 编码工具的团队，这意味着可以围绕它的插件协议自建并分发能力，而不必锁死在官方内置功能里。一个 AI 编辑器开始经营插件生态，说明工具间的竞争正从「模型多强」转向「生态多厚」。",
+    "quote": "模型卷不动了，开始卷插件生态的厚度。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/cursor/plugins",
+    "published": "2026-10-14",
+    "uid": "ai_17c6b7d7",
+    "subclass": null
+  },
+  {
+    "title": "VoiceStudio：完全本地的开源 ElevenLabs 平替",
+    "content": "开源项目 VoiceStudio 打出「完全本地、开源」的旗号，正面平替 ElevenLabs：支持声音克隆、声音设计、视频配音、听写转写与有声书制作，号称覆盖 646 种语言，全程不上传云端。对在意隐私、又不想为语音 API 持续付费的用户，它把过去只有闭源服务才拿得出的能力搬回本地，是本轮语音开源里颇有野心的一款。",
+    "quote": "声音克隆这活儿，也能全程不出你的电脑。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/debpalash/VoiceStudio",
+    "published": "2026-10-14",
+    "uid": "ai_311ee82d",
+    "subclass": null
+  },
+  {
+    "title": "两个月冲到 9000 star 的新一代 e2e 测试框架",
+    "content": "GitHub 项目 e2e 号称面向 Web 与移动端的新一代端到端测试框架，今年 7 月才建仓，两个半月 star 就冲过 9000：有人翻 Wayback 存档发现它 10 月 1 日还只有 549 星，随后一周直接起飞。它把 AI 时代的测试需求当作卖点。对苦于 e2e 用例又慢又脆的团队，这种短期内口碑爆发的项目，值得先观望一阵再决定上车。",
+    "quote": "两月九千星，测试框架也能一夜爆红。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/tester-army/e2e",
+    "published": "2026-10-14",
+    "uid": "ai_b2006f06",
+    "subclass": null
+  },
+  {
+    "title": "本地大模型替代 Claude Code：别再看错基准了",
+    "content": "作者把 Claude Code、Codex 接到本地模型跑真实任务后指出：大家引用的 SWE-bench 分数测的是「能不能写对函数」，而真正决定你是否敢关掉 Claude Code 的，是模型能否稳定地连续十次发出干净的工具调用、在多文件改动里不跑偏 schema。写对函数早已解决，做可靠的代理才是全部工作。文章还拆解了各模型家族、硬件现实与那些没人截图的失败模式。",
+    "quote": "会写函数不值钱，能连点十次工具才算数。",
+    "source": "Dev.to",
+    "url": "https://dev.to/rudratosh/can-a-local-llm-replace-claude-code-the-benchmark-everyone-quotes-is-the-wrong-one-2kna",
+    "published": "2026-10-14",
+    "uid": "ai_0185dbed",
+    "subclass": null
+  },
+  {
+    "title": "余弦相似度 0.92，可那个载荷早就死了",
+    "content": "作者质疑「代理记忆被投毒」的流行说法：动作变了，不代表是记忆导致的，两者之间隔着一大段缝隙。他搭了一套测量装置，用反事实「切除」法把记忆删掉再重放同一场景，测量动作轨迹的变化，并公开三个负面结果——其中最有用的是一个余弦相似度高达 0.923、却对行为毫无影响的载荷。能被检索、进入提示、还能繁殖，未必等于它在承重。",
+    "quote": "相似度高不等于它有用，别拿形容词当证据。",
+    "source": "Dev.to",
+    "url": "https://dev.to/toxy4ny/cosine-similarity-said-092-the-payload-was-already-dead-387h",
+    "published": "2026-10-14",
+    "uid": "ai_ae1a8a6c",
+    "subclass": null
+  },
+  {
+    "title": "鉴权全过了，代理还是干了你没让它干的事",
+    "content": "文章点出 AI 代理带来的新漏洞：认证回答「你是谁」，授权回答「你被允许做什么」，可两者都没回答「这个动作是否真的出自本意」。当模型是照着文档内容生成工具调用时，「被允许」就不再是全部——人类点按钮和模型生成调用是两种不同信号，所有权检查、角色检查、前置代理都分辨不了。作者用一个代理跑了多组失败用例来验证这一缺口。",
+    "quote": "权限都对，就是没人问过你到底想不想。",
+    "source": "Dev.to",
+    "url": "https://dev.to/shubhradev/your-auth-check-passed-the-agent-still-did-something-nobody-asked-for-156f",
+    "published": "2026-10-14",
+    "uid": "ai_483acea2",
+    "subclass": null
+  },
+  {
+    "title": "AI 需要的不是答案卷，而是一个会还手的对手",
+    "content": "作者认为，一个正确答案不等于一串好的决策序列，这正是「对手」与「答案卷」的区别：固定问答里，回答完任务就结束了；而对局中每一步都是下一道题的开端，对手会回应，新信息会改写「什么才合理」。他正搭建 eSlams——一个让人类与 AI 模型对弈、观赛的公开竞技场，底层用开源引擎研究模型的决策过程，用桌游与扑克等场景把挑战具体化。",
+    "quote": "会答题不算本事，扛得住对手才见真章。",
+    "source": "Dev.to",
+    "url": "https://dev.to/dailycontext/ai-needs-a-test-that-fights-back-4f17",
+    "published": "2026-10-14",
+    "uid": "ai_a183ea76",
+    "subclass": null
+  },
+  {
+    "title": "企业级 Agent 的分层架构：一张五层架构图",
+    "content": "文章回答「企业级 Agent 为何需要分层架构」：接一个大模型远远不够，还得解决统一接入多模型、让 Agent 使用数据库与业务系统、拆解复杂任务、管理对话与长期记忆、支持长时运行与失败重试、限制操作权限、追踪评估与控成本等一系列工程问题。作者据此提出五层架构——基础设施、数据与集成、模型与上下文智能、智能执行与编排、应用与交互，把职责清晰拆开。",
+    "quote": "全塞进一个 Agent 里，迟早连自己都看不懂。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/jiujuan/p/23291353",
+    "published": "2026-10-14",
+    "uid": "ai_64d3d685",
+    "subclass": null
+  },
+  {
+    "title": "为什么国产模型的数学研究能力不行？",
+    "content": "一篇评论给出结论先行的判断：数学能力的前沿部分，本质不是解应用题，而是形式化验证。国产模型在竞赛数学与代码生成上并不差——Qwen3-Max-Thinking 在 AIME 25、HMMT 25 拿到国内首个双满分——却在研究级证明上乏善可陈，核心原因是没在 Lean 形式化证明方向做足够特化训练。作者引陶哲轩「已放弃实时跟进所有新证明」，指出瓶颈正从「如何生成证明」转向「如何验证与理解证明」。",
+    "quote": "会做竞赛题，不等于会做没标准答案的题。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/apachecn/p/23282975",
+    "published": "2026-10-14",
+    "uid": "ai_557238e5",
+    "subclass": null
+  }
+]
