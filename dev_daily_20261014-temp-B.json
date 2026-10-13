@@ -1,0 +1,119 @@
+[
+  {
+    "title": "Show HN：用你的 OpenAI 订阅把 PDF 变成有声书",
+    "content": "一个 Show HN 项目把 PDF 转有声书这件事接上了你已有的 OpenAI 订阅：上传文档，就能借用订阅额度生成朗读音频，而不必再单独申请 API Key 计费。评论里有人夸它省事，也有人担心把订阅凭证交给第三方服务的边界问题。把「我本来就有会员」直接变成生产力，是这类小工具最朴素的吸引力。",
+    "quote": "会员费没白交，连有声书都替你念了。",
+    "source": "HN Front Page",
+    "url": "https://pdftomp3.com/connect-ai/",
+    "published": "2026-10-14",
+    "uid": "dev_85d71c21"
+  },
+  {
+    "title": "如何为游戏开发搭一套 AI 协作支架（harness）",
+    "content": "作者以游戏开发为例，讲怎么给 AI 搭一套「协作支架」（harness）：把任务拆成可验证的小步、定义清晰的上下文与验收标准，让 Claude Code 真正融进开发流程，而不是一遍遍瞎猜需求。文章强调，决定 Agent 效果的往往不是模型本身，而是你围绕它搭起的工作台。对想认真用 AI 写代码的人，是一份不错的工程思路。",
+    "quote": "Agent 好不好用，先看你给它搭的台子。",
+    "source": "HN Front Page",
+    "url": "https://kylekukshtel.com/ai-harness-engineering-game-development-claude-code",
+    "published": "2026-10-14",
+    "uid": "dev_338a883d"
+  },
+  {
+    "title": "有人把 EmbeddingGemma 2 改成了语音转文字模型",
+    "content": "有人把原本做文本嵌入的 EmbeddingGemma 2 硬改成了语音转文字模型，并把演示挂上了 HN。思路是复用同一套编码器来处理音频，省下重训一个专用模型的成本。帖子拿到近三百赞，说明「用现成小模型魔改出另一种能力」这种玩法很受关注——在大模型时代，把一份权重掰成多用途，本身就有吸引力。",
+    "quote": "一种模型，硬是被掰出第二种手艺。",
+    "source": "HN Front Page",
+    "url": "https://eg2.haku.sh/",
+    "published": "2026-10-14",
+    "uid": "dev_5de83a84"
+  },
+  {
+    "title": "我没换掉 Razer Synapse，只干掉了它常驻的 600 MB",
+    "content": "作者有只 Razer 鼠标，按键与 DPI 存在板载内存里，不开软件也能用；唯独灯效离不开 Synapse——关掉它，灯光就没了，而 Synapse 还常驻着 600MB 内存。于是他没想着替换整个驱动，只是单独重写了负责灯效的那部分，把常驻的六百兆砍掉。这种「只干掉最烦人的一块」的思路，往往比推倒重来更实用。",
+    "quote": "换不掉整套软件，就先干掉那 600 MB。",
+    "source": "Dev.to",
+    "url": "https://dev.to/gian0052/i-didnt-replace-razer-synapse-i-replaced-the-600-mb-it-leaves-running-151g",
+    "published": "2026-10-14",
+    "uid": "dev_0e162a93"
+  },
+  {
+    "title": "用 FMIndex 候选剪枝给 Milvus 的正则过滤提速",
+    "content": "一篇讲向量数据库 Milvus 性能的文章：正则过滤在查询复杂字符串时很方便，却常成为瓶颈。作者引入 FMIndex 做候选剪枝，先快速筛掉不可能命中的文档，再交给正则精确匹配，从而大幅减少扫描量。对在 Milvus 里做模糊文本过滤的工程师，这是一份把「正则慢」从抱怨变成具体优化手段的实操。",
+    "quote": "正则嫌慢，就先筛掉不可能是它的。",
+    "source": "Dev.to",
+    "url": "https://dev.to/pdrojack/accelerating-regex-filtering-in-milvus-with-fmindex-candidate-pruning-4k8m",
+    "published": "2026-10-14",
+    "uid": "dev_18804700"
+  },
+  {
+    "title": "n8n AI Agent 工作流里的竞态条件，以及怎么修",
+    "content": "文章指出 n8n 的 AI Agent 工作流里藏着典型竞态：先读共享状态（日历、库存、CRM 记录）再据此行动，中间却没有任何东西阻止第二个执行同时读到同一份旧数据，于是重复下单、超卖接连出现。作者给出修复思路，把「检查—执行」变成原子操作或加锁。自动化越复杂，这种被忽略的时序问题就越致命。",
+    "quote": "检查完再行动，中间谁都能插一脚。",
+    "source": "Dev.to",
+    "url": "https://dev.to/entechsolutions/race-conditions-in-n8n-ai-agent-workflows-and-the-fix-549d",
+    "published": "2026-10-14",
+    "uid": "dev_3a71e1b1"
+  },
+  {
+    "title": "用 TypeScript、Node.js 和 PostgreSQL 造更扛揍的 REST API",
+    "content": "文章认为多数后端瓶颈并非出在硬件，而是未建索引的数据库查询、草率的异步错误处理，以及只活在开发者脑子里的类型。作者用 TypeScript、Node.js 和 PostgreSQL 示范如何把这些隐患逐个落地：补上索引、统一异常边界、让类型真正约束运行时的数据。对写 API 的人，是一份把「能跑」提升到「扛得住」的清单。",
+    "quote": "后端大多不是被流量压垮，是被自己拖垮。",
+    "source": "Dev.to",
+    "url": "https://dev.to/abhishek-tiwari-dev/building-resilient-rest-apis-with-typescript-nodejs-and-postgresql-584a",
+    "published": "2026-10-14",
+    "uid": "dev_168efa17"
+  },
+  {
+    "title": "开源 DeskPeek：把手机变成自己电脑的小监视器",
+    "content": "作者开源了 Windows 单文件小工具 DeskPeek：用手机浏览器就能看自家电脑的屏幕直播，需要时还能点一下操作。手机端不用装 App、没有账号、也不要配对码。动机很具体——电脑上正跑着 AI 编程 agent 改代码、或几十 GB 在下载，人却想离开一会儿又怕出岔子，于是做个能随手瞄一眼的「小监视器」正合适。",
+    "quote": "不敢离开电脑，就给自己配个远程眼睛。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/known/p/23288796",
+    "published": "2026-10-14",
+    "uid": "dev_59114437"
+  },
+  {
+    "title": "从循环到向量化：NumPy 提速的 7 个关键思维",
+    "content": "很多人用了 NumPy 数组，代码却还是慢，根子在于逻辑上照旧一行行 for 循环。作者点明 NumPy 快的本质是底层调 C 和 Fortran 优化库，能一次处理整个数组，前提是你得把循环改写成向量化操作。文章给出七个关键思维，帮人从「会用 NumPy」进阶到「用得对」。对写数据处理代码的人，是一份实在的提速清单。",
+    "quote": "用了 NumPy 还慢，多半是脑子在跑循环。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/wang_yb/p/23291209",
+    "published": "2026-10-14",
+    "uid": "dev_71de5bc8"
+  },
+  {
+    "title": "用了 8 年 MQTT，我为什么还要重新系统啃一遍",
+    "content": "一篇 MQTT 开篇之作：作者用了八年 MQTT，仍决定重新系统啃一遍，先讲清物联网接入层为何普遍选它——低功耗、发布订阅模型、QoS 保障与断线恢复。文章还列出项目里高频踩的坑，比如 QoS 配错、CleanSession 设反、ClientId 冲突、心跳失效，并给出从协议基础到生产落地的六阶段路线。是份带血的实战经验。",
+    "quote": "用了八年还得重学，说明坑从没填平。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/hugogoos/p/23211630",
+    "published": "2026-10-14",
+    "uid": "dev_219b1207"
+  },
+  {
+    "title": "神念补了三篇上手教程：手机连电脑 AI、资料索引与部署选择",
+    "content": "「神念」开发者补了三篇上手教程：一是离开电脑时用手机联系在线电脑上的 AI；二是先给资料建立名称、位置与读取约定的索引，免得每次都要解释文件在哪；三是已有登录时先连本机，等有兼容的 API 认证再考虑 Docker。三篇都围绕「怎么把远程 AI 用得顺」展开，对想搭个人 AI 助手的用户，是份务实的入门指引。",
+    "quote": "教程写得好，等于替你把弯路走完。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1248504#reply0",
+    "published": "2026-10-14",
+    "uid": "dev_1eb8e509"
+  },
+  {
+    "title": "完全离线的 AI 素材搜索：一句话跳到视频里的那一秒",
+    "content": "本地媒体搜索工具 Vixel 更新到 v0.4.1，继续完全离线、免费开源（MIT）。它会把你现有文件夹里的照片、视频、音频乃至 PSD/PDF 原地只读索引，再用一句话去找，比如「海边的日落」「火箭发射」；视频按 32 秒切段并把画面与声音一起编码，搜到直接跳到命中的那一段，截图与票据里的文字也能搜。对素材多又不想上传云端的人，正合适。",
+    "quote": "不上传、不联网，也能一句话找到那一秒。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1248449#reply3",
+    "published": "2026-10-14",
+    "uid": "dev_46de781b"
+  },
+  {
+    "title": "codex 插件分享：让 codex 更快、更省 token 地读懂项目",
+    "content": "作者分享了一个 codex 插件，解决 vibe coding 中的老问题：同一个项目开多个会话时，智能体常要反复读取代码，既浪费 token，又担心新会话误改无关代码把项目弄坏。他过去靠每次先叮嘱「熟悉项目」来缓解，仍不理想，于是做了个能更快、更省 token 地理解项目的插件。对多会话并行开发的人，是个实用补丁。",
+    "quote": "每开一个新会话，项目就被重读一遍。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1248285#reply0",
+    "published": "2026-10-14",
+    "uid": "dev_7f58781b"
+  }
+]
