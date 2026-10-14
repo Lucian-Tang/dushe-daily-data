@@ -1,0 +1,128 @@
+[
+  {
+    "title": "Show HN：把 Graphify 用 Rust 重写，还给编码 agent 加了记忆",
+    "content": "一个 Show HN 项目把 Python 写的代码依赖图工具 Graphify 用 Rust 重写了一遍，取名 Graphicle，并给它加上了「记忆」，让编码 agent 在大仓库里少走弯路、少重复摸索已有的代码关系。Rust 重写意味着更快的解析速度与更低的资源占用，对大项目尤其友好。围绕编码 agent 做基础设施的小工具，正成为 Show HN 上最活跃的一类。",
+    "quote": "用 Rust 重写一遍，agent 终于记住路了。",
+    "source": "HN Front Page",
+    "url": "https://github.com/graphicle-ai/graphicle",
+    "published": "2026-10-15",
+    "uid": "dev_d13cdf15"
+  },
+  {
+    "title": "Show HN：纯代码搭了一座可漫游的 3D 达芬奇博物馆",
+    "content": "有人用代码从零搭了一座可漫游的 3D 达芬奇博物馆并挂上 Show HN，没靠现成素材包，而是把模型、场景与导览都写进程序里。参观者能在浏览器里自由走动，近距离看那些经典发明与手稿的数字化重现。它更像一次「用代码做展览」的尝试——当建模和渲染都变成可编程的事，个人做一座博物馆的门槛正在被拉低。",
+    "quote": "不搭展厅不卖门票，代码一跑就是博物馆。",
+    "source": "HN Front Page",
+    "url": "https://museumofages.org/w/vinci",
+    "published": "2026-10-15",
+    "uid": "dev_fe7747f1"
+  },
+  {
+    "title": "回顾 Nvidia 首款 GPU：GeForce 256 与那场命名豪赌",
+    "content": "文章回望 NVIDIA 的首款 GPU GeForce 256：它当年顶着争议，把原本只是「显卡」的芯片正式冠名为 GPU（图形处理器），并首次把硬件几何变换与光照搬上芯片。这一命名与集成在当时被当作营销噱头，事后却被证明是定义了一个时代的关键一步。回头再看，那不只是发布一块卡，而是给整个图形计算立了新身份。",
+    "quote": "给自己封个新头衔，结果真改写了行业。",
+    "source": "HN Front Page",
+    "url": "https://dfarq.homeip.net/nvidias-first-gpu-geforce-256/",
+    "published": "2026-10-15",
+    "uid": "dev_b6535416"
+  },
+  {
+    "title": "苹果 Keynote 界面开始塞广告，用户不买账",
+    "content": "有用户发现苹果的 Keynote 界面里开始出现广告位，随即在社交平台上吐槽。对一款买断制、且以「干净体验」为卖点的生产力工具而言，在编辑界面里插入推广内容，很容易让人觉得被冒犯。争议的核心其实不是广告本身，而是「我已经付过钱了，为什么还要看这个」——订阅与买断的边界，苹果这次可能踩得有点急。",
+    "quote": "钱都收了，还塞广告，吃相有点难看。",
+    "source": "HN Front Page",
+    "url": "https://mastodon.social/@marioguzman/117436264149891011",
+    "published": "2026-10-15",
+    "uid": "dev_c2cbe641"
+  },
+  {
+    "title": "Character.ai 的破产文件，把 AI 生意的账摊开给你看",
+    "content": "外媒翻出 Character.ai 的破产文件，指出其烧钱规模与收入之间的巨大鸿沟，直指不少 AI 产品的商业模式根本算不平账：用户聊得越欢，推理与算力成本涨得越快，订阅费却顶不住。文件里那些具体数字，比任何行业分析都直白。热闹的 AI 赛道之下，「到底怎么赚钱」这道题，很多玩家其实还没解出来。",
+    "quote": "用户越爱聊，成本涨越凶，这账怎么算都不对。",
+    "source": "HN Front Page",
+    "url": "https://www.404media.co/character-ais-bankruptcy-documents-show-the-economics-of-ai-dont-work/",
+    "published": "2026-10-15",
+    "uid": "dev_689cd7e7"
+  },
+  {
+    "title": "Pulsar 亮相 ESUG：给 Smalltalk 造的新一代 IDE",
+    "content": "在 ESUG 2026 上，开发者展示了新一代 Smalltalk IDE「Pulsar」，主打更现代的界面与交互，试图让这门历史悠久、以「活对象」著称的语言重新好上手。Smalltalk 的迷人之处在于整个系统可被实时检视与修改，但老旧工具链长期劝退新人。Pulsar 想做的，正是把这份独特体验装进一个现代编辑器里，看能否把小众语言重新拉回视野。",
+    "quote": "给老语言换套新壳，就看能不能把人骗回来。",
+    "source": "HN Front Page",
+    "url": "https://blog.lorenzano.eu/pulsar-at-esug-2026/",
+    "published": "2026-10-15",
+    "uid": "dev_2feddd60"
+  },
+  {
+    "title": "让 Claude Code 自己开终端会话，我全程盯着每一条",
+    "content": "作者让 Claude Code 自己打开终端会话去跑命令，自己则在旁边逐条盯着执行过程。结果发现：把终端放权给 agent 确实省事，但它一旦误判，破坏力也从「改错文件」升级到「跑错命令」。文章的价值在于示范一种折中——既让 agent 动手，又保留人类可审计、可随时叫停的观察窗口，而不是在「全自动」和「全手动」之间二选一。",
+    "quote": "放它自己敲命令，你就得全程盯着别眨眼。",
+    "source": "Dev.to",
+    "url": "https://dev.to/solhun/i-let-claude-code-open-its-own-terminal-sessions-and-i-watch-every-one-of-them-46m9",
+    "published": "2026-10-15",
+    "uid": "dev_e9b61c10"
+  },
+  {
+    "title": "一套撑得住长期用的 AI 编码 agent 工作流",
+    "content": "文章抛开「哪个模型最强」的口水战，聚焦更实际的问题：怎样让 AI 编码 agent 的流程在真实项目里长期撑得住。作者给出的做法包括明确任务边界、把上下文与验收标准写清楚、让每一步都可验证可回滚，避免 agent 一放权就失控。对已经用上 agent、却总在「效果忽好忽坏」之间摇摆的团队，这是一份把玄学变成流程的思路。",
+    "quote": "模型换了一茬又一茬，稳的还是那套流程。",
+    "source": "Dev.to",
+    "url": "https://dev.to/ahmad_hassan_6433415b38c6/ai-coding-agents-a-workflow-that-holds-up-29od",
+    "published": "2026-10-15",
+    "uid": "dev_518ac1c9"
+  },
+  {
+    "title": "不碰官方 API，用 30 行 Python 抓 YouTube 字幕做 RAG",
+    "content": "文章给出了一个绕开 YouTube Data API 的做法：用大约 30 行 Python 直接抓取视频字幕，喂进 RAG 流程。官方 API 有配额、要申请、还常受限，而字幕本身往往就是最干净的结构化文本，拿来当知识来源再合适不过。对想快速把视频内容变成可检索语料的人，这是一份成本极低、上手即用的小方案。",
+    "quote": "官方 API 又要申请又要配额，不如自己动手抓。",
+    "source": "Dev.to",
+    "url": "https://dev.to/torix/youtube-transcripts-for-rag-without-the-youtube-data-api-python-30-lines-2akb",
+    "published": "2026-10-15",
+    "uid": "dev_512af465"
+  },
+  {
+    "title": "SimdYolo：用纯 C# 手写 YOLO 推理，CPU 上跑 SIMD",
+    "content": "博客园作者写了 SimdYolo，用纯 C# 从零实现 YOLO 目标检测推理，针对 CPU 做 SIMD 优化、还提供 Vulkan 后端，最后与 PyTorch、ONNX Runtime 做实测对比。它的意义在于证明：不必依赖 Python 生态，.NET 也能把这类推理跑起来，且性能可圈可点。对想在 C# 项目里嵌入视觉能力、又不想引入一堆依赖的开发者，值得一看。",
+    "quote": "谁说搞推理非得 Python，C# 也能硬刚一把。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/dotnet-org-cn/p/23303551",
+    "published": "2026-10-15",
+    "uid": "dev_8a9b533d"
+  },
+  {
+    "title": "18.5 万星的 Superpowers 插件，多数人只用了一成功能",
+    "content": "文章介绍一个已拿到 18.5 万星的「Superpowers」插件，指出九成用户其实只用到它一成的能力——大量隐藏功能从未被触碰。作者逐项拆解这些被忽略的用法，提醒读者别把装机量当成会用。工具越强大，越容易被当成「装完就忘」的摆设；真正拉开差距的，往往不是拥有它，而是知道它还能做什么。",
+    "quote": "星星攒到十八万，功能却躺着没人翻牌子。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/uniqueDong/p/23302386",
+    "published": "2026-10-15",
+    "uid": "dev_da522929"
+  },
+  {
+    "title": "个性化 Agent 真会越用越懂你？AdaptArena 拆了条失效链路",
+    "content": "博客园文章借 AdaptArena 的研究，追问个性化 Web Agent 是否真能「越用越懂你」。结论并不乐观：在任务链路变长、环境持续变化时，Agent 对用户偏好的记忆容易失真或被误用，反而做出南辕北辙的操作。作者把这条失效链路拆开来看，提醒大家别把「个性化」当成自动变好的魔法，它同样需要被验证和纠偏。",
+    "quote": "以为它越用越懂你，其实只是越用越自信。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Qiniu-developer/p/23304875",
+    "published": "2026-10-15",
+    "uid": "dev_d49d4aa1"
+  },
+  {
+    "title": "Cliptate：用 Swift + MLX 写的 macOS 离线语音输入工具",
+    "content": "作者用 Swift 配合苹果的 MLX 框架，写了个 macOS 原生离线语音输入与语音工作流工具 Cliptate，主打彻底告别云端延迟与隐私焦虑：语音识别全在本机完成，不用把录音传出去。对经常口述、又在意数据不外流的人来说，「本地跑」这三个字本身就是卖点。它也说明，苹果芯片上的本地推理已经足够撑起一类日常工具。",
+    "quote": "录音不出本机，才算真把隐私攥在手里。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1248651#reply1",
+    "published": "2026-10-15",
+    "uid": "dev_530d0cbe"
+  },
+  {
+    "title": "Agent HUD：把 17 个 Agent 的额度和审批挂到 Mac 刘海上",
+    "content": "作者做了个开源工具 Agent HUD，把 Claude Code、Codex 等 17 个 agent 的剩余额度、以及等待你批准的请求，统一放进 Mac 刘海或屏幕边缘。多开 agent 的人常被「这个还剩多少额度」「那个卡在等我确认」搞得手忙脚乱，HUD 相当于把这些散落的状态收成一块随时可见的仪表盘。算是把「同时驯养多只 agent」的现实痛点，落成一个小小的桌面补丁。",
+    "quote": "同时养十几个 agent，不看仪表盘迟早翻车。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1248801#reply0",
+    "published": "2026-10-15",
+    "uid": "dev_97cef7c1"
+  }
+]

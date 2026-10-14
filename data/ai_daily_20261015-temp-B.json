@@ -1,0 +1,110 @@
+[
+  {
+    "title": "CLI-Anything：让所有软件都变成 Agent 原生",
+    "content": "港大 HKUDS 开源 CLI-Anything，口号是「让所有软件都变成 Agent 原生」。思路是把各类软件封装成命令行接口，让 AI Agent 像人用 GUI 那样去驱动它们，并配套 CLI-Hub 供社区浏览、安装与管理自建 CLI，一条 pip 命令即可上手。项目主张：今天的软件为人服务，明天的用户是 Agent。若这条路走通，Agent 调用软件的门槛将被大幅拉平。",
+    "quote": "让 Agent 用命令行接管一切软件，想法很美。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/HKUDS/CLI-Anything",
+    "published": "2026-10-15",
+    "uid": "ai_f7d27cee"
+  },
+  {
+    "title": "科学领域第一的 Agent 技能库：177 个技能加 100 多个数据库",
+    "content": "K-Dense-AI 把 Claude Scientific Skills 升级为 Scientific Agent Skills，称是科学领域第一的 Agent 技能库：177 个开箱即用、经校验的技能，外加 100 多个覆盖生物、化学、医药与药物发现的科学数据库，兼容 Cursor、Claude Code、Codex 等开放 Agent Skills 标准，另配可本地运行的开源 AI 科学家。",
+    "quote": "科学家的技能库，先给 Agent 装上一百七十七招。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "published": "2026-10-15",
+    "uid": "ai_44dc720f"
+  },
+  {
+    "title": "pentagi：把渗透测试交给全自主 AI Agent",
+    "content": "vxcontrol 开源的 pentagi 是一套「全自主 AI Agent 系统」，专攻复杂的渗透测试任务，让多个 Agent 协作走完侦察、漏洞分析到利用的流程。把红队工作交给自治 Agent 是一把双刃剑：一边显著降低安全测试的人力门槛，一边也让攻击能力更易被复制。安全圈对这类项目向来既爱又怕，值得持续观望。",
+    "quote": "把渗透测试交给自治 Agent，安全圈又爱又怕。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/vxcontrol/pentagi",
+    "published": "2026-10-15",
+    "uid": "ai_f8019dcf"
+  },
+  {
+    "title": "iFixAi：给 AI Agent 做独立审计，120 秒出结论",
+    "content": "iFixAi 主打「对 AI Agent 做独立审计」，可由人或 Agent 自身运行，回答 AI Agent 经济里最关键的那个问题：它到底有没有在做该做的事？作者认为现有的评测、红队与可观测工具多从技术指标（token 效率、延迟、提示注入）打分，回答不了业务 KPI 层面的偏差；iFixAi 在 AI 红队与运营保障之间取平衡，号称 120 秒内给出答案。",
+    "quote": "120 秒判定 Agent 有没有摸鱼，审计也上 AI。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/ifixai-ai/iFixAi",
+    "published": "2026-10-15",
+    "uid": "ai_f6bfe85e"
+  },
+  {
+    "title": "AstraFlow 架构解析：面向数据流的大规模强化学习系统",
+    "content": "文章解析强化学习框架 AstraFlow 的架构：一个面向数据流的大规模 RL 系统。作者先指出既有 RL 框架在 Agentic 训练上的短板，再说明 AstraFlow 如何用数据流抽象重构训练管线，让大规模并行、可复现的强化学习训练更容易工程化落地。对正在搭建 Agent 后训练与 RLHF 基础设施的团队，这是一份偏架构层面的扎实参考。",
+    "quote": "RL 训练的数据流架构，工程味比论文浓。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/rossiXYZ/p/23263528",
+    "published": "2026-10-15",
+    "uid": "ai_cd02fa3a"
+  },
+  {
+    "title": "185,000 星的 Superpowers 插件，90% 的人只用了 10% 的功能",
+    "content": "文章指出 185,000 星的 Superpowers 插件（用于 Claude Code）90% 的人只用到 10% 的功能：让 Claude Code 加功能时，三百行代码噼里啪啦下来，跑起来逻辑对了七八成，剩下两成却全是它自己发明的需求；你再让它改，它又把能跑的地方顺手改坏。症结不在模型不够聪明，而在它太「勤快」，缺少把意图、边界与验证固化下来的工作流。",
+    "quote": "插件没毛病，是你没把它当工作流用。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/uniqueDong/p/23302386",
+    "published": "2026-10-15",
+    "uid": "ai_ed04a096"
+  },
+  {
+    "title": "AI Agent 为什么不能随便放权？Plan、Default、Auto 三种运行模式",
+    "content": "文章借 Claude Code 重构模块、几分钟改掉十几个文件的场景，引出该给 AI Agent 多大自主权的问题：Plan、Default、Auto 三种运行模式分别对应先出方案再动手、每步确认、以及放手自动执行。作者认为放权程度应随任务的真实风险与可逆性调整，否则效率越高、理解错了就跑得越偏，事后纠错成本反而更大。",
+    "quote": "放权一时爽，理解错了就跑得越偏。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Tomorrowland/p/23299257",
+    "published": "2026-10-15",
+    "uid": "ai_641480ef"
+  },
+  {
+    "title": "从 Copilot 到 Agentic Enterprise：下一场竞争在价值流而非模型",
+    "content": "文章梳理企业 AI 从 Chatbot 到基于大模型的 Copilot、再到能自主规划、调用工具、执行任务的 Agent 的演进，却抛出一个始终未解的问题：为什么 AI 能力越来越强，企业真正拿到的商业回报却不见涨？作者的判断是，下一场竞争不在模型，而在价值流——谁能把 Agent 嵌进端到端业务流程，谁才真正吃到红利。",
+    "quote": "模型越来越强，老板的回报却没跟上。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/heyonggang/p/23298861",
+    "published": "2026-10-15",
+    "uid": "ai_4c6597d4"
+  },
+  {
+    "title": "让 Claude Code 自己开终端会话，而我盯着每一个",
+    "content": "作者开发了 macOS 应用 CLI Manager，把 Claude Code、Codex CLI 与 Gemini CLI 并排运行，今年将其开源并加入他最常用的功能：让 Claude Code 自己开启终端会话，而他逐一观察每一个。文章分享了多 Agent 并行跑终端时的实操与观察，对想看明白「AI 到底在终端里干了什么」的开发者来说，是一份难得的旁观笔记。",
+    "quote": "Agent 自己开终端，你只负责在旁边盯着。",
+    "source": "Dev.to",
+    "url": "https://dev.to/solhun/i-let-claude-code-open-its-own-terminal-sessions-and-i-watch-every-one-of-them-46m9",
+    "published": "2026-10-15",
+    "uid": "ai_fefa76ec"
+  },
+  {
+    "title": "把租户隔离放进向量检索内部，而不是搜完再删",
+    "content": "文章主张把租户过滤放进向量检索内部，而不是先搜出全部、再事后剔除别人的分块：后者不仅让别人的分块占用你申请的名额，一旦哪行过滤逻辑漏写，就会把不该看到的数据直接泄漏给用户。作者强调，多租户 RAG 的隔离必须做在检索层而非结果后处理层，否则延迟与安全两头受损。",
+    "quote": "先搜全部再删别人，那不叫隔离叫侥幸。",
+    "source": "Dev.to",
+    "url": "https://dev.to/ahmad_hassan_6433415b38c6/rag-tenant-isolation-inside-the-vector-index-1moi",
+    "published": "2026-10-15",
+    "uid": "ai_c634fc6d"
+  },
+  {
+    "title": "30 行 Python 抓 YouTube 字幕喂给 RAG，绕开官方 API",
+    "content": "文章给出一个 30 行 Python 的方案，绕开官方 YouTube Data API 也能把视频字幕抓出来喂给 RAG：会议演讲、教程、产品演示、财报电话会、播客，都是极好的 LLM 知识源，难点一直在如何把文本取出来。官方路子限制多、要配额，作者的做法省去 API 依赖，适合快速为知识库补进视频内容，成本极低。",
+    "quote": "三十行代码把视频变成 LLM 的口粮。",
+    "source": "Dev.to",
+    "url": "https://dev.to/torix/youtube-transcripts-for-rag-without-the-youtube-data-api-python-30-lines-2akb",
+    "published": "2026-10-15",
+    "uid": "ai_531831ed"
+  },
+  {
+    "title": "你的 Agent 重构了报错信息，也悄悄删掉了调试线索",
+    "content": "文章讲一个真实事故：一次重构 CI 全绿、diff 也干净，一周后生产抛 500，日志里只剩一句「Internal error」。原来那行本该报出「发票 4412 无法作废」的信息被 Agent 顺手改掉了，调试线索被悄悄抹去。作者提醒，这类并非功能坏掉、而是可观测性被削弱的改动，最容易被绿灯掩盖，也最难排查，必须专门盯防。",
+    "quote": "功能没坏，日志被抹了，够你排到天亮。",
+    "source": "Dev.to",
+    "url": "https://dev.to/jeff_pdc/your-agent-refactored-the-error-message-and-quietly-deleted-the-debugging-trail-7ec",
+    "published": "2026-10-15",
+    "uid": "ai_638c5d97"
+  }
+]
