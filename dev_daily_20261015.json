@@ -1,0 +1,218 @@
+[
+  {
+    "title": "Passkeys 不是陷阱，恐慌掩盖了真正的问题",
+    "content": "围绕 passkeys 的争议一直没停，有人担心它是平台借机锁定用户、剥夺账号控制权的陷阱。作者撰文反驳，认为这类恐慌混淆了实现细节与协议本身：passkeys 仍是比密码更安全的无密码方案，真正的问题出在实际部署和厂商策略，而非技术方向。文章在 HN 拿到两百多分与近三百条讨论，争吵的热度恰恰说明无密码迁移远没到让人安心的时候。",
+    "quote": "骂 passkey 是陷阱的，多半还没搞懂它坑在哪。",
+    "source": "HN Front Page",
+    "url": "https://scotthelme.co.uk/passkeys-are-not-a-trap/",
+    "published": "2026-10-15",
+    "uid": "dev_9038ab3e"
+  },
+  {
+    "title": "pg_vectorsearch：比 pgvector 更快的向量索引",
+    "content": "Timescale 开源了 pg_vectorsearch，号称其索引比 pgvector 的 IVFFlat 与 HNSW 更快。它把向量检索直接做进 Postgres 生态，试图在数据库内部同时满足「既要 SQL 又要相似度搜索」的需求。对已经在 Postgres 里存数据、不想再额外维护一套独立向量库的团队来说，这类插件正在让「再上一个向量库」这件事变得没那么必要。",
+    "quote": "向量库厂商还没回本，Postgres 又来砸场子。",
+    "source": "HN Front Page",
+    "url": "https://github.com/timescale/pg_vectorsearch",
+    "published": "2026-10-15",
+    "uid": "dev_0deb2fc3"
+  },
+  {
+    "title": "AOSP 源码发布太慢，开发者被迫反编译系统库报 bug",
+    "content": "一条 Android NDK 仓库的 issue 指出，AOSP 的源码发布越来越滞后，开发者等不到官方代码，只能反编译系统库来定位并上报问题。作为标榜开源的移动系统，AOSP 的「开放」越来越像形式主义：真正需要源码的人拿不到手，只能绕远路自己啃二进制，协作成本被悄悄转嫁给了社区。这条抱怨在 HN 拿到四百多分，显然戳中了很多人的痛点。",
+    "quote": "源码发布比系统更新还慢，开源只剩个标题。",
+    "source": "HN Front Page",
+    "url": "https://github.com/android/ndk/issues/2260",
+    "published": "2026-10-15",
+    "uid": "dev_451c07ff"
+  },
+  {
+    "title": "Show HN：把 Graphify 用 Rust 重写，还给编码 agent 加了记忆",
+    "content": "一个 Show HN 项目把 Python 写的代码依赖图工具 Graphify 用 Rust 重写了一遍，取名 Graphicle，并给它加上了「记忆」，让编码 agent 在大仓库里少走弯路、少重复摸索已有的代码关系。Rust 重写意味着更快的解析速度与更低的资源占用，对大项目尤其友好。围绕编码 agent 做基础设施的小工具，正成为 Show HN 上最活跃的一类。",
+    "quote": "用 Rust 重写一遍，agent 终于记住路了。",
+    "source": "HN Front Page",
+    "url": "https://github.com/graphicle-ai/graphicle",
+    "published": "2026-10-15",
+    "uid": "dev_5f5da7a3"
+  },
+  {
+    "title": "Show HN：纯代码搭了一座可漫游的 3D 达芬奇博物馆",
+    "content": "有人用代码从零搭了一座可漫游的 3D 达芬奇博物馆并挂上 Show HN，没靠现成素材包，而是把模型、场景与导览都写进程序里。参观者能在浏览器里自由走动，近距离看那些经典发明与手稿的数字化重现。它更像一次「用代码做展览」的尝试——当建模和渲染都变成可编程的事，个人做一座博物馆的门槛正在被拉低。",
+    "quote": "不搭展厅不卖门票，代码一跑就是博物馆。",
+    "source": "HN Front Page",
+    "url": "https://museumofages.org/w/vinci",
+    "published": "2026-10-15",
+    "uid": "dev_4ddd8856"
+  },
+  {
+    "title": "回顾 Nvidia 首款 GPU：GeForce 256 与那场命名豪赌",
+    "content": "文章回望 NVIDIA 的首款 GPU GeForce 256：它当年顶着争议，把原本只是「显卡」的芯片正式冠名为 GPU（图形处理器），并首次把硬件几何变换与光照搬上芯片。这一命名与集成在当时被当作营销噱头，事后却被证明是定义了一个时代的关键一步。回头再看，那不只是发布一块卡，而是给整个图形计算立了新身份。",
+    "quote": "给自己封个新头衔，结果真改写了行业。",
+    "source": "HN Front Page",
+    "url": "https://dfarq.homeip.net/nvidias-first-gpu-geforce-256/",
+    "published": "2026-10-15",
+    "uid": "dev_359cc249"
+  },
+  {
+    "title": "苹果 Keynote 界面开始塞广告，用户不买账",
+    "content": "有用户发现苹果的 Keynote 界面里开始出现广告位，随即在社交平台上吐槽。对一款买断制、且以「干净体验」为卖点的生产力工具而言，在编辑界面里插入推广内容，很容易让人觉得被冒犯。争议的核心其实不是广告本身，而是「我已经付过钱了，为什么还要看这个」——订阅与买断的边界，苹果这次可能踩得有点急。",
+    "quote": "钱都收了，还塞广告，吃相有点难看。",
+    "source": "HN Front Page",
+    "url": "https://mastodon.social/@marioguzman/117436264149891011",
+    "published": "2026-10-15",
+    "uid": "dev_310bcdb2"
+  },
+  {
+    "title": "Pulsar 亮相 ESUG：给 Smalltalk 造的新一代 IDE",
+    "content": "在 ESUG 2026 上，开发者展示了新一代 Smalltalk IDE「Pulsar」，主打更现代的界面与交互，试图让这门历史悠久、以「活对象」著称的语言重新好上手。Smalltalk 的迷人之处在于整个系统可被实时检视与修改，但老旧工具链长期劝退新人。Pulsar 想做的，正是把这份独特体验装进一个现代编辑器里，看能否把小众语言重新拉回视野。",
+    "quote": "给老语言换套新壳，就看能不能把人骗回来。",
+    "source": "HN Front Page",
+    "url": "https://blog.lorenzano.eu/pulsar-at-esug-2026/",
+    "published": "2026-10-15",
+    "uid": "dev_3c04e422"
+  },
+  {
+    "title": "陶哲轩担心 AI 改变数学界，但普通人反而不慌",
+    "content": "帖主借陶哲轩对 AI 大规模产出数学证明的担忧，抛出一个更朴素的疑问：普通人本就看不懂人类数学家写的证明，那看不懂 AI 写的，又有什么区别。这个问题看似抬杠，却戳中要害——当成果逐渐超出人类可理解的范围，数学究竟还服务谁。评论区围绕「理解」与「可信」展开，讨论的其实不只是数学，而是人机之间那道理解的门槛。",
+    "quote": "看不懂的东西，署名是人还是机器都救不了你。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1248690#reply9",
+    "published": "2026-10-15",
+    "uid": "dev_bb800f3f"
+  },
+  {
+    "title": "联调当够了人肉快递员，我让两个 agent 自己聊上了",
+    "content": "作者复盘一次联调经历：功能一部分跑在云端，一部分跑在本地连着手机，只能来回几十趟复制日志、比对结论，真正写代码的时间不到两小时。于是他让云端与本地两个 agent 直接对话、自行交换信息，把自己从「人肉搬运」里解放出来。案例不大，却点出多 agent 协作的真正价值：替人干掉重复劳动，而不是为了炫技堆数量。",
+    "quote": "写代码两小时，当传声筒一整天，谁顶得住。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1248774#reply0",
+    "published": "2026-10-15",
+    "uid": "dev_0f1d0661"
+  },
+  {
+    "title": "受够了云端 AI 毁格式还被查合规，他把工具搬进了本地 WPS",
+    "content": "帖主吐槽用云端 AI 处理公司 Excel 与 Word 的两大痛点：文件带加密防泄密软件，传上去直接打不开；敏感数据私传公网又怕被合规盯上，更别提表格格式动一次毁一次。他索性做了个在本地 WPS 窗口里实时干活的工具，干脆绕开上传环节。企业落地 AI 最先卡住的，往往不是模型能力不足，而是合规红线与格式这类的琐碎工程问题。",
+    "quote": "模型再强，也过不了公司那台加密软件。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1248738#reply0",
+    "published": "2026-10-15",
+    "uid": "dev_9a3d5681"
+  },
+  {
+    "title": "Cliptate：用 Swift + MLX 写的 macOS 离线语音输入工具",
+    "content": "作者用 Swift 配合苹果的 MLX 框架，写了个 macOS 原生离线语音输入与语音工作流工具 Cliptate，主打彻底告别云端延迟与隐私焦虑：语音识别全在本机完成，不用把录音传出去。对经常口述、又在意数据不外流的人来说，「本地跑」这三个字本身就是卖点。它也说明，苹果芯片上的本地推理已经足够撑起一类日常工具。",
+    "quote": "录音不出本机，才算真把隐私攥在手里。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1248651#reply1",
+    "published": "2026-10-15",
+    "uid": "dev_11bd8d11"
+  },
+  {
+    "title": "Agent HUD：把 17 个 Agent 的额度和审批挂到 Mac 刘海上",
+    "content": "作者做了个开源工具 Agent HUD，把 Claude Code、Codex 等 17 个 agent 的剩余额度、以及等待你批准的请求，统一放进 Mac 刘海或屏幕边缘。多开 agent 的人常被「这个还剩多少额度」「那个卡在等我确认」搞得手忙脚乱，HUD 相当于把这些散落的状态收成一块随时可见的仪表盘。算是把「同时驯养多只 agent」的现实痛点，落成一个小小的桌面补丁。",
+    "quote": "同时养十几个 agent，不看仪表盘迟早翻车。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1248801#reply0",
+    "published": "2026-10-15",
+    "uid": "dev_5f8878c6"
+  },
+  {
+    "title": "你的 agent 顺手改好了报错文案，也删掉了排查线索",
+    "content": "文章讲一个隐蔽的坑：AI agent 重构代码后一切绿灯，CI 通过、diff 干净，一周后生产却报 500，日志里只剩一句「Internal error」。原来 agent 顺手把带信息量的报错文案「优化」掉了，排查线索随之消失。作者提醒，给 agent 定验收标准时别只盯着功能是否通过，还要守住可观测性这类不会写进需求的隐性契约，否则省下的时间迟早要还。",
+    "quote": "把错误信息改漂亮了，出事时你就只剩干瞪眼。",
+    "source": "Dev.to",
+    "url": "https://dev.to/jeff_pdc/your-agent-refactored-the-error-message-and-quietly-deleted-the-debugging-trail-7ec",
+    "published": "2026-10-15",
+    "uid": "dev_81fc2818"
+  },
+  {
+    "title": "多租户 RAG 的正确姿势：把租户过滤写进向量索引",
+    "content": "文章主张把租户过滤直接下推到向量检索内部，而不是先搜出全部、再在结果里剔除别人的分块。后者看似省事，但被剔除的候选照样占用检索名额，既拖慢速度，也可能让真正相关的邻居被挤出几十名之外，甚至带来越权风险。多租户 RAG 的正确做法，是把权限约束写进索引查询本身，让隔离发生在召回阶段，而不是事后补救。",
+    "quote": "先搜全部再过滤，等于让别人的数据先占座。",
+    "source": "Dev.to",
+    "url": "https://dev.to/ahmad_hassan_6433415b38c6/rag-tenant-isolation-inside-the-vector-index-1moi",
+    "published": "2026-10-15",
+    "uid": "dev_002c1786"
+  },
+  {
+    "title": "让 Claude Code 自己开终端会话，我全程盯着每一条",
+    "content": "作者让 Claude Code 自己打开终端会话去跑命令，自己则在旁边逐条盯着执行过程。结果发现：把终端放权给 agent 确实省事，但它一旦误判，破坏力也从「改错文件」升级到「跑错命令」。文章的价值在于示范一种折中——既让 agent 动手，又保留人类可审计、可随时叫停的观察窗口，而不是在「全自动」和「全手动」之间二选一。",
+    "quote": "放它自己敲命令，你就得全程盯着别眨眼。",
+    "source": "Dev.to",
+    "url": "https://dev.to/solhun/i-let-claude-code-open-its-own-terminal-sessions-and-i-watch-every-one-of-them-46m9",
+    "published": "2026-10-15",
+    "uid": "dev_8a7f7a59"
+  },
+  {
+    "title": "一套撑得住长期用的 AI 编码 agent 工作流",
+    "content": "文章抛开「哪个模型最强」的口水战，聚焦更实际的问题：怎样让 AI 编码 agent 的流程在真实项目里长期撑得住。作者给出的做法包括明确任务边界、把上下文与验收标准写清楚、让每一步都可验证可回滚，避免 agent 一放权就失控。对已经用上 agent、却总在「效果忽好忽坏」之间摇摆的团队，这是一份把玄学变成流程的思路。",
+    "quote": "模型换了一茬又一茬，稳的还是那套流程。",
+    "source": "Dev.to",
+    "url": "https://dev.to/ahmad_hassan_6433415b38c6/ai-coding-agents-a-workflow-that-holds-up-29od",
+    "published": "2026-10-15",
+    "uid": "dev_b45562c2"
+  },
+  {
+    "title": "不碰官方 API，用 30 行 Python 抓 YouTube 字幕做 RAG",
+    "content": "文章给出了一个绕开 YouTube Data API 的做法：用大约 30 行 Python 直接抓取视频字幕，喂进 RAG 流程。官方 API 有配额、要申请、还常受限，而字幕本身往往就是最干净的结构化文本，拿来当知识来源再合适不过。对想快速把视频内容变成可检索语料的人，这是一份成本极低、上手即用的小方案。",
+    "quote": "官方 API 又要申请又要配额，不如自己动手抓。",
+    "source": "Dev.to",
+    "url": "https://dev.to/torix/youtube-transcripts-for-rag-without-the-youtube-data-api-python-30-lines-2akb",
+    "published": "2026-10-15",
+    "uid": "dev_57cfd2f7"
+  },
+  {
+    "title": ".NET 11 RC 2 发布：带 Go-Live 许可证，离正式版只差一步",
+    "content": "博客园文章介绍 .NET 11 RC 2 发布，并附带 go-live 许可证，意味着这一版本可放心用于生产环境验证。按惯例，正式版会在 11 月的 .NET Conf 期间登场，现在正是拿 RC 2 做兼容性测试的好窗口。对维护生产系统的团队来说，提前踩坑总好过正式发布后被升级推着仓促上阵，有兴趣的不妨先拿测试环境跑一遍。",
+    "quote": "有许可证兜底，出事也轮不到你一个人扛。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23302961",
+    "published": "2026-10-15",
+    "uid": "dev_edca0762"
+  },
+  {
+    "title": "把 K8s 部署从 2 个区域扩到 25 个：一套 GitOps 参考架构",
+    "content": "文章讨论 K8s 部署从 2 个区域扩到 25 个区域时的规模爆炸问题：一个错误的图表版本可能影响整片大陆，回滚某一区域也不该牵动全局。作者用 GitOps 给出一套参考架构，让多区域发布保持一致、可独立回滚、可审计留痕。区域一多，「运维」两个字就变成了实打实的爆炸半径管理，靠人肉操作根本兜不住。",
+    "quote": "两个区域叫高可用，二十五个区域叫玩火。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Jame-mei/p/23304060",
+    "published": "2026-10-15",
+    "uid": "dev_72cf3e05"
+  },
+  {
+    "title": "AI Agent 为什么不能随便放权：Plan、Default 与 Auto 三模式",
+    "content": "文章以「该给 AI Agent 多大自主权」切入，拆解 Plan、Default、Auto 三种运行模式的区别：有的只输出计划等你确认，有的边做边问，有的则直接自主执行。作者提醒，让 Claude Code 一口气改十几个文件固然高效，可一旦它对需求理解出现偏差，代价也会成倍放大。放权的尺度，应该按任务风险来定，而不是被效率的爽感牵着走。",
+    "quote": "让它全自动的爽感，往往要用回滚来还。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Tomorrowland/p/23299257",
+    "published": "2026-10-15",
+    "uid": "dev_bc427aa3"
+  },
+  {
+    "title": "SimdYolo：用纯 C# 手写 YOLO 推理，CPU 上跑 SIMD",
+    "content": "博客园作者写了 SimdYolo，用纯 C# 从零实现 YOLO 目标检测推理，针对 CPU 做 SIMD 优化、还提供 Vulkan 后端，最后与 PyTorch、ONNX Runtime 做实测对比。它的意义在于证明：不必依赖 Python 生态，.NET 也能把这类推理跑起来，且性能可圈可点。对想在 C# 项目里嵌入视觉能力、又不想引入一堆依赖的开发者，值得一看。",
+    "quote": "谁说搞推理非得 Python，C# 也能硬刚一把。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/dotnet-org-cn/p/23303551",
+    "published": "2026-10-15",
+    "uid": "dev_e9aabd3d"
+  },
+  {
+    "title": "18.5 万星的 Superpowers 插件，多数人只用了一成功能",
+    "content": "文章介绍一个已拿到 18.5 万星的「Superpowers」插件，指出九成用户其实只用到它一成的能力——大量隐藏功能从未被触碰。作者逐项拆解这些被忽略的用法，提醒读者别把装机量当成会用。工具越强大，越容易被当成「装完就忘」的摆设；真正拉开差距的，往往不是拥有它，而是知道它还能做什么。",
+    "quote": "星星攒到十八万，功能却躺着没人翻牌子。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/uniqueDong/p/23302386",
+    "published": "2026-10-15",
+    "uid": "dev_be7748e6"
+  },
+  {
+    "title": "个性化 Agent 真会越用越懂你？AdaptArena 拆了条失效链路",
+    "content": "博客园文章借 AdaptArena 的研究，追问个性化 Web Agent 是否真能「越用越懂你」。结论并不乐观：在任务链路变长、环境持续变化时，Agent 对用户偏好的记忆容易失真或被误用，反而做出南辕北辙的操作。作者把这条失效链路拆开来看，提醒大家别把「个性化」当成自动变好的魔法，它同样需要被验证和纠偏。",
+    "quote": "以为它越用越懂你，其实只是越用越自信。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Qiniu-developer/p/23304875",
+    "published": "2026-10-15",
+    "uid": "dev_077895b0"
+  }
+]
