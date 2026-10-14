@@ -1,0 +1,172 @@
+[
+  {
+    "title": "Google 发布 Gemini 4 Argon，主打「新一代前沿智能」",
+    "content": "Google DeepMind 发布 Gemini 4 Argon，定位「新一代前沿智能」，已向 Ultra/Pro 订阅用户开放，并同步推出面向机器人的 Gemini 4 Argon for Robotics。发布在 HN 迅速冲上榜首、1700 余赞，评论区却很快变味：不少欧区与企业用户吐槽「又发布了却用不了」，AI Studio 仍提示需要 Ultra；也有人围绕模型能力是否放缓吵成一团。",
+    "quote": "发了用不上，谷歌的发布日历比模型还玄学。",
+    "source": "Google Blog / DeepMind",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+    "published": "2026-10-15",
+    "uid": "ai_09dfdad9",
+    "subclass": null
+  },
+  {
+    "title": "ASML 订单强劲，暂时安抚 AI 支出见顶担忧",
+    "content": "光刻机巨头 ASML 预计第四季度销售好于市场预期，强劲的在手订单暂时平息了外界对「AI 资本开支见顶」的担忧。此前市场普遍担心 AI 数据中心投资放缓会拖累半导体设备需求，ASML 的指引被视为行业景气度的风向标。HN 上的讨论却相当冷静：有人指出繁荣期本就容易超额下单，这些设备大约五年后才会变成芯片，真正的风险在需求预测失准，而不是订单不够。",
+    "quote": "订单是提前五年下的赌注，泡沫破了还退得掉吗？",
+    "source": "Reuters",
+    "url": "https://www.reuters.com/business/asml-forecasts-q4-sales-above-expectations-2026-10-14/",
+    "published": "2026-10-15",
+    "uid": "ai_6e6c6b84",
+    "subclass": null
+  },
+  {
+    "title": "瑞典 TV4 节目延期：AI 智能体误删已剪辑素材",
+    "content": "瑞典电视台 TV4 宣布把《The Challenge》节目延期，起因是有报道称 AI 智能体在操作时误删了已剪辑好的素材。HN 上争论激烈：标题直指 AI 删库，但涉事公司否认，有人调侃「AI 没让我见识人类灭绝，只删了一档真人秀」。评论普遍认为，无论锅在模型还是操作者，根因分析都跑不掉——把生产素材交给自动化流程，却没有隔离与备份，出事只是时间问题。",
+    "quote": "删库跑路这件事，AI 学得比谁都快。",
+    "source": "Sweden Herald / HN",
+    "url": "https://swedenherald.com/article/tv4-postpones-the-challenge-until-2026-after-ai-agent-erases-edited-material",
+    "published": "2026-10-15",
+    "uid": "ai_91aa83f9",
+    "subclass": null
+  },
+  {
+    "title": "AI 正在批量反编译游戏，有人叫好有人胆寒",
+    "content": "有开发者撰文称，AI 正让反编译游戏变得「前所未有地容易」，既能复活经典，也让闭源游戏的护城河迅速消失。HN 讨论两极：有人欢呼闭源软件模式「基本已死」，认为连 GTA6 都可能上市前就被反编译；也有人担忧这不只是「awesome」，而是所有权的终结——AAA 大作的资产与规则被快速还原，商业化软件的盈利空间被进一步挤压。",
+    "quote": "闭源护城河在 AI 面前，跟纸糊的没两样。",
+    "source": "HN Front / popcar.bearblog.dev",
+    "url": "https://popcar.bearblog.dev/ai-is-mass-decompiling-games-thats-both-awesome-and-scary/",
+    "published": "2026-10-15",
+    "uid": "ai_5334712c",
+    "subclass": null
+  },
+  {
+    "title": "AWS 工程师：分类器为何还用解码器而非编码器",
+    "content": "亚马逊工程师 Marc Brooker 撰文回应外界疑问：团队新发布的 strands-decider-2B 为何基于改造过的 LLM（解码器），而不用 BERT 这类双向编码器？他的直觉与量化实验显示，分类与判定任务里双向编码器的理论优势并不总能在实际中兑现，改造解码器反而更实用。文章自谦「我不是模型专家，可能有错」，但用数据说话，并借此解释自家 agent 安全判定模型的设计取舍。",
+    "quote": "别迷信双向注意力，工程上能跑赢才是硬道理。",
+    "source": "HN Front / brooker.co.za",
+    "url": "https://brooker.co.za/blog/2026/10/04/encoders.html",
+    "published": "2026-10-15",
+    "uid": "ai_30d1e96a",
+    "subclass": null
+  },
+  {
+    "title": "arXiv：在潜空间与文本间切换的混合推理智能体",
+    "content": "论文提出 Hybrid Reasoning Agents（HybridAgents）：让智能体在统一的生成过程里，于潜空间推理与文本交互间动态切换。现代 LLM 智能体靠文本推理并调用工具，潜空间推理高效却缺乏原生工具接入与可解释性。作者用轻量 HybridLink 实现两模式无缝切换，并以连续工作记忆跨轮保留无损的混合上下文，既保住工具能力，又让潜思考可直接检视；还提出混合推理的后训练算法。",
+    "quote": "又要快又要能解释，模型的既要又要又来了。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2610.18861",
+    "published": "2026-10-15",
+    "uid": "ai_6dcd7bac",
+    "subclass": null
+  },
+  {
+    "title": "arXiv：机器人能否实现「物理递归自我改进」",
+    "content": "论文研究「物理递归自我改进」（Physical RSI）：让机器人的物理经验不仅提升能力，还能改进其「改进流程」本身，使后续改进更高效。作者指出该方向面临观测噪声、连续动力学、试错成本高、后果不可逆等难题，并提出 L0-L5 分级框架，区分能力级与元级更新、任务内与跨任务收益，仅把可独立验证的递归增益留给 L5。分析显示，尽管自改进已有进展，但要跨过 L5 仍有明显鸿沟。",
+    "quote": "机器人自己给自己升级，先问问保险答不答应。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2610.18842",
+    "published": "2026-10-15",
+    "uid": "ai_451d5e58",
+    "subclass": null
+  },
+  {
+    "title": "V2EX 热帖：Muse 30 亿免费 token 遭疯抢，海外多区打不开",
+    "content": "V2EX 一则关于「Muse 30 亿免费 token」的帖子冲上热榜，引来近两百条回复。帖内大量用户分享通过邀请码领取免费额度的玩法，也有人质疑「免费的其实只有 10 亿，剩下要花钱」，并警惕 Telegram 上打着领额度旗号的推广机器人。更集中的吐槽是访问受阻：不少人反映即便用美国 IP，美国、日本、香港、韩国等地区仍被拦在等候名单外，页面只提示「尚未在你所在地区开放」。",
+    "quote": "额度是无限画饼，能不能登录才是真门槛。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1248583",
+    "published": "2026-10-15",
+    "uid": "ai_82c4497a",
+    "subclass": null
+  },
+  {
+    "title": "HF 论文：VideoJev 把视频理解变成结构化决策",
+    "content": "VideoJev 把视频理解与交互重构为结构化决策：它改造预训练多模态大模型，用共享打分头替代自回归解码，对时间区间与文本选项按视频证据打分，统一了时序定位与选择题式视频问答。它支持缓存与联合推理以复用视觉计算。在三个时序定位基准上，VideoJev-4B 与 35B-A3B 相较基座平均 mIoU 提升 6.7 与 10.8 点，推理提速 2.8–3.1 倍，视频问答也与基座持平。",
+    "quote": "把「看懂视频」拆成打分题，效果还真就上去了。",
+    "source": "HuggingFace Papers",
+    "url": "https://huggingface.co/papers/2610.18615",
+    "published": "2026-10-15",
+    "uid": "ai_7cf1256a",
+    "subclass": "前沿论文"
+  },
+  {
+    "title": "HF 论文：Agent-Reflex 教语言智能体「主动反思」",
+    "content": "针对部署中 MCP 工具会返回噪声反馈、用户随时纠错，而现有方法对反思学习与失败恢复监督不足的问题，论文提出 Agent-Reflex 训练框架，激励智能体主动反思。它分三阶段：先用「环境反思技能发现」注入基于工具反馈的扰动，再让智能体学习识别与恢复，最后用强化学习固化反思行为。目标是让智能体在长程任务中不只闷头执行，还能在出错或被打断时自我觉察、及时纠正。",
+    "quote": "让 AI 学会「我好像做错了」，比提升 IQ 更实用。",
+    "source": "HuggingFace Papers",
+    "url": "https://huggingface.co/papers/2610.17953",
+    "published": "2026-10-15",
+    "uid": "ai_343ce8a0",
+    "subclass": "前沿论文"
+  },
+  {
+    "title": "HF 论文：Jeva 从第一性原理重构「系统一」模型",
+    "content": "论文认为，当下「从序列化文本预测答案」的系统一模型并未真正尊重决策结构，并总结四条被低估要求：null-aware（区分「没有答案」与「候选中不确定」）、permutation-invariant（打乱选项不应改变决策）、option-scalable（候选集增长无需重定义输出空间）、cacheable（请求无关计算可缓存）。作者据此从第一性原理重构系统一模型 Jeva，让低延迟决策更贴合结构。",
+    "quote": "选项换个顺序答案就变，这种模型也敢叫系统一。",
+    "source": "HuggingFace Papers",
+    "url": "https://huggingface.co/papers/2610.18773",
+    "published": "2026-10-15",
+    "uid": "ai_427a178f",
+    "subclass": "前沿论文"
+  },
+  {
+    "title": "CLI-Anything：让所有软件都变成 Agent 原生",
+    "content": "港大 HKUDS 开源 CLI-Anything，口号是「让所有软件都变成 Agent 原生」。思路是把各类软件封装成命令行接口，让 AI Agent 像人用 GUI 那样去驱动它们，并配套 CLI-Hub 供社区浏览、安装与管理自建 CLI，一条 pip 命令即可上手。项目主张：今天的软件为人服务，明天的用户是 Agent。若这条路走通，Agent 调用软件的门槛将被大幅拉平。",
+    "quote": "让 Agent 用命令行接管一切软件，想法很美。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/HKUDS/CLI-Anything",
+    "published": "2026-10-15",
+    "uid": "ai_7e5e1f38",
+    "subclass": null
+  },
+  {
+    "title": "科学领域第一的 Agent 技能库：177 个技能加 100 多个数据库",
+    "content": "K-Dense-AI 把 Claude Scientific Skills 升级为 Scientific Agent Skills，称是科学领域第一的 Agent 技能库：177 个开箱即用、经校验的技能，外加 100 多个覆盖生物、化学、医药与药物发现的科学数据库，兼容 Cursor、Claude Code、Codex 等开放 Agent Skills 标准，另配可本地运行的开源 AI 科学家。",
+    "quote": "科学家的技能库，先给 Agent 装上一百七十七招。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "published": "2026-10-15",
+    "uid": "ai_2e915315",
+    "subclass": null
+  },
+  {
+    "title": "pentagi：把渗透测试交给全自主 AI Agent",
+    "content": "vxcontrol 开源的 pentagi 是一套「全自主 AI Agent 系统」，专攻复杂的渗透测试任务，让多个 Agent 协作走完侦察、漏洞分析到利用的流程。把红队工作交给自治 Agent 是一把双刃剑：一边显著降低安全测试的人力门槛，一边也让攻击能力更易被复制。安全圈对这类项目向来既爱又怕，值得持续观望。",
+    "quote": "把渗透测试交给自治 Agent，安全圈又爱又怕。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/vxcontrol/pentagi",
+    "published": "2026-10-15",
+    "uid": "ai_e7f100fd",
+    "subclass": null
+  },
+  {
+    "title": "iFixAi：给 AI Agent 做独立审计，120 秒出结论",
+    "content": "iFixAi 主打「对 AI Agent 做独立审计」，可由人或 Agent 自身运行，回答 AI Agent 经济里最关键的那个问题：它到底有没有在做该做的事？作者认为现有的评测、红队与可观测工具多从技术指标（token 效率、延迟、提示注入）打分，回答不了业务 KPI 层面的偏差；iFixAi 在 AI 红队与运营保障之间取平衡，号称 120 秒内给出答案。",
+    "quote": "120 秒判定 Agent 有没有摸鱼，审计也上 AI。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/ifixai-ai/iFixAi",
+    "published": "2026-10-15",
+    "uid": "ai_34d2d994",
+    "subclass": null
+  },
+  {
+    "title": "AstraFlow 架构解析：面向数据流的大规模强化学习系统",
+    "content": "文章解析强化学习框架 AstraFlow 的架构：一个面向数据流的大规模 RL 系统。作者先指出既有 RL 框架在 Agentic 训练上的短板，再说明 AstraFlow 如何用数据流抽象重构训练管线，让大规模并行、可复现的强化学习训练更容易工程化落地。对正在搭建 Agent 后训练与 RLHF 基础设施的团队，这是一份偏架构层面的扎实参考。",
+    "quote": "RL 训练的数据流架构，工程味比论文浓。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/rossiXYZ/p/23263528",
+    "published": "2026-10-15",
+    "uid": "ai_37abacf3",
+    "subclass": null
+  },
+  {
+    "title": "从 Copilot 到 Agentic Enterprise：下一场竞争在价值流而非模型",
+    "content": "文章梳理企业 AI 从 Chatbot 到基于大模型的 Copilot、再到能自主规划、调用工具、执行任务的 Agent 的演进，却抛出一个始终未解的问题：为什么 AI 能力越来越强，企业真正拿到的商业回报却不见涨？作者的判断是，下一场竞争不在模型，而在价值流——谁能把 Agent 嵌进端到端业务流程，谁才真正吃到红利。",
+    "quote": "模型越来越强，老板的回报却没跟上。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/heyonggang/p/23298861",
+    "published": "2026-10-15",
+    "uid": "ai_b4237923",
+    "subclass": null
+  }
+]
