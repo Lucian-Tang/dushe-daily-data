@@ -1,0 +1,128 @@
+[
+  {
+    "title": "Passkeys 不是陷阱，恐慌掩盖了真正的问题",
+    "content": "围绕 passkeys 的争议一直没停，有人担心它是平台借机锁定用户、剥夺账号控制权的陷阱。作者撰文反驳，认为这类恐慌混淆了实现细节与协议本身：passkeys 仍是比密码更安全的无密码方案，真正的问题出在实际部署和厂商策略，而非技术方向。文章在 HN 拿到两百多分与近三百条讨论，争吵的热度恰恰说明无密码迁移远没到让人安心的时候。",
+    "quote": "骂 passkey 是陷阱的，多半还没搞懂它坑在哪。",
+    "source": "HN Front Page",
+    "url": "https://scotthelme.co.uk/passkeys-are-not-a-trap/",
+    "published": "2026-10-15",
+    "uid": "dev_7e57ae8e"
+  },
+  {
+    "title": "pg_vectorsearch：比 pgvector 更快的向量索引",
+    "content": "Timescale 开源了 pg_vectorsearch，号称其索引比 pgvector 的 IVFFlat 与 HNSW 更快。它把向量检索直接做进 Postgres 生态，试图在数据库内部同时满足「既要 SQL 又要相似度搜索」的需求。对已经在 Postgres 里存数据、不想再额外维护一套独立向量库的团队来说，这类插件正在让「再上一个向量库」这件事变得没那么必要。",
+    "quote": "向量库厂商还没回本，Postgres 又来砸场子。",
+    "source": "HN Front Page",
+    "url": "https://github.com/timescale/pg_vectorsearch",
+    "published": "2026-10-15",
+    "uid": "dev_de752b3b"
+  },
+  {
+    "title": "AOSP 源码发布太慢，开发者被迫反编译系统库报 bug",
+    "content": "一条 Android NDK 仓库的 issue 指出，AOSP 的源码发布越来越滞后，开发者等不到官方代码，只能反编译系统库来定位并上报问题。作为标榜开源的移动系统，AOSP 的「开放」越来越像形式主义：真正需要源码的人拿不到手，只能绕远路自己啃二进制，协作成本被悄悄转嫁给了社区。这条抱怨在 HN 拿到四百多分，显然戳中了很多人的痛点。",
+    "quote": "源码发布比系统更新还慢，开源只剩个标题。",
+    "source": "HN Front Page",
+    "url": "https://github.com/android/ndk/issues/2260",
+    "published": "2026-10-15",
+    "uid": "dev_f81ee6d5"
+  },
+  {
+    "title": "Iosevka：为写代码而生的窄体等宽字体",
+    "content": "Iosevka 是一款开源等宽字体，同时提供无衬线体与板衬线（slab-serif）两种风格，主打窄瘦紧凑，方便在有限宽度里塞进更多代码。它覆盖大量字符集并支持编程连字，还允许用户高度定制字形。对整天盯着终端的开发者来说，字体是少数能低成本改善体验的东西，也难怪这款老牌字体能再次冲上 HN，拿到近五百票。",
+    "quote": "代码写得再烂，至少字体还能体面一点。",
+    "source": "HN Front Page",
+    "url": "https://typeof.net/Iosevka/",
+    "published": "2026-10-15",
+    "uid": "dev_7294e141"
+  },
+  {
+    "title": "nvm：装机量巨大的 Node 多版本管理器再度登榜",
+    "content": "nvm 是一个用 Shell 脚本实现的 Node.js 版本管理器，让用户在同一台机器上安装并切换多个 Node 版本，一条命令即可切换全局版本，也支持按项目配置。作为最老牌、使用最广的同类工具，它再次冲上趋势榜，说明围绕 Node 多版本并存的需求多年过去依旧没有更好的替代方案。生态越碎片，这类「刚需配角」反而越稳。",
+    "quote": "Node 版本多到离谱，才养出这种刚需工具。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/nvm-sh/nvm",
+    "published": "2026-10-15",
+    "uid": "dev_35ddb62e"
+  },
+  {
+    "title": "rust-lang/rust：当红系统语言官方仓库再上趋势榜",
+    "content": "Rust 官方主仓库再次登上趋势榜。作为一门主打内存安全与零成本抽象的系统级语言，Rust 近年一路杀进操作系统内核、浏览器引擎与基础设施领域。社区活跃、工具链成熟、文档齐备，是它持续霸榜的底气。不过树大招风，围绕其安全承诺与学习曲线的争论也从未停歇，热度与人气总是结伴而来。",
+    "quote": "语言火不火看榜单，烫手的那种从不缺席。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/rust-lang/rust",
+    "published": "2026-10-15",
+    "uid": "dev_482d04ab"
+  },
+  {
+    "title": "陶哲轩担心 AI 改变数学界，但普通人反而不慌",
+    "content": "帖主借陶哲轩对 AI 大规模产出数学证明的担忧，抛出一个更朴素的疑问：普通人本就看不懂人类数学家写的证明，那看不懂 AI 写的，又有什么区别。这个问题看似抬杠，却戳中要害——当成果逐渐超出人类可理解的范围，数学究竟还服务谁。评论区围绕「理解」与「可信」展开，讨论的其实不只是数学，而是人机之间那道理解的门槛。",
+    "quote": "看不懂的东西，署名是人还是机器都救不了你。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1248690#reply9",
+    "published": "2026-10-15",
+    "uid": "dev_8c9b104c"
+  },
+  {
+    "title": "联调当够了人肉快递员，我让两个 agent 自己聊上了",
+    "content": "作者复盘一次联调经历：功能一部分跑在云端，一部分跑在本地连着手机，只能来回几十趟复制日志、比对结论，真正写代码的时间不到两小时。于是他让云端与本地两个 agent 直接对话、自行交换信息，把自己从「人肉搬运」里解放出来。案例不大，却点出多 agent 协作的真正价值：替人干掉重复劳动，而不是为了炫技堆数量。",
+    "quote": "写代码两小时，当传声筒一整天，谁顶得住。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1248774#reply0",
+    "published": "2026-10-15",
+    "uid": "dev_e5f4379c"
+  },
+  {
+    "title": "受够了云端 AI 毁格式还被查合规，他把工具搬进了本地 WPS",
+    "content": "帖主吐槽用云端 AI 处理公司 Excel 与 Word 的两大痛点：文件带加密防泄密软件，传上去直接打不开；敏感数据私传公网又怕被合规盯上，更别提表格格式动一次毁一次。他索性做了个在本地 WPS 窗口里实时干活的工具，干脆绕开上传环节。企业落地 AI 最先卡住的，往往不是模型能力不足，而是合规红线与格式这类的琐碎工程问题。",
+    "quote": "模型再强，也过不了公司那台加密软件。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1248738#reply0",
+    "published": "2026-10-15",
+    "uid": "dev_ad82a231"
+  },
+  {
+    "title": "你的 agent 顺手改好了报错文案，也删掉了排查线索",
+    "content": "文章讲一个隐蔽的坑：AI agent 重构代码后一切绿灯，CI 通过、diff 干净，一周后生产却报 500，日志里只剩一句「Internal error」。原来 agent 顺手把带信息量的报错文案「优化」掉了，排查线索随之消失。作者提醒，给 agent 定验收标准时别只盯着功能是否通过，还要守住可观测性这类不会写进需求的隐性契约，否则省下的时间迟早要还。",
+    "quote": "把错误信息改漂亮了，出事时你就只剩干瞪眼。",
+    "source": "Dev.to",
+    "url": "https://dev.to/jeff_pdc/your-agent-refactored-the-error-message-and-quietly-deleted-the-debugging-trail-7ec",
+    "published": "2026-10-15",
+    "uid": "dev_c784c001"
+  },
+  {
+    "title": "多租户 RAG 的正确姿势：把租户过滤写进向量索引",
+    "content": "文章主张把租户过滤直接下推到向量检索内部，而不是先搜出全部、再在结果里剔除别人的分块。后者看似省事，但被剔除的候选照样占用检索名额，既拖慢速度，也可能让真正相关的邻居被挤出几十名之外，甚至带来越权风险。多租户 RAG 的正确做法，是把权限约束写进索引查询本身，让隔离发生在召回阶段，而不是事后补救。",
+    "quote": "先搜全部再过滤，等于让别人的数据先占座。",
+    "source": "Dev.to",
+    "url": "https://dev.to/ahmad_hassan_6433415b38c6/rag-tenant-isolation-inside-the-vector-index-1moi",
+    "published": "2026-10-15",
+    "uid": "dev_08563c5f"
+  },
+  {
+    "title": ".NET 11 RC 2 发布：带 Go-Live 许可证，离正式版只差一步",
+    "content": "博客园文章介绍 .NET 11 RC 2 发布，并附带 go-live 许可证，意味着这一版本可放心用于生产环境验证。按惯例，正式版会在 11 月的 .NET Conf 期间登场，现在正是拿 RC 2 做兼容性测试的好窗口。对维护生产系统的团队来说，提前踩坑总好过正式发布后被升级推着仓促上阵，有兴趣的不妨先拿测试环境跑一遍。",
+    "quote": "有许可证兜底，出事也轮不到你一个人扛。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23302961",
+    "published": "2026-10-15",
+    "uid": "dev_58bd545d"
+  },
+  {
+    "title": "把 K8s 部署从 2 个区域扩到 25 个：一套 GitOps 参考架构",
+    "content": "文章讨论 K8s 部署从 2 个区域扩到 25 个区域时的规模爆炸问题：一个错误的图表版本可能影响整片大陆，回滚某一区域也不该牵动全局。作者用 GitOps 给出一套参考架构，让多区域发布保持一致、可独立回滚、可审计留痕。区域一多，「运维」两个字就变成了实打实的爆炸半径管理，靠人肉操作根本兜不住。",
+    "quote": "两个区域叫高可用，二十五个区域叫玩火。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Jame-mei/p/23304060",
+    "published": "2026-10-15",
+    "uid": "dev_eb74996f"
+  },
+  {
+    "title": "AI Agent 为什么不能随便放权：Plan、Default 与 Auto 三模式",
+    "content": "文章以「该给 AI Agent 多大自主权」切入，拆解 Plan、Default、Auto 三种运行模式的区别：有的只输出计划等你确认，有的边做边问，有的则直接自主执行。作者提醒，让 Claude Code 一口气改十几个文件固然高效，可一旦它对需求理解出现偏差，代价也会成倍放大。放权的尺度，应该按任务风险来定，而不是被效率的爽感牵着走。",
+    "quote": "让它全自动的爽感，往往要用回滚来还。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Tomorrowland/p/23299257",
+    "published": "2026-10-15",
+    "uid": "dev_1d13e997"
+  }
+]
