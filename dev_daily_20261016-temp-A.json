@@ -1,0 +1,128 @@
+[
+  {
+    "title": "Steam 客户端反超 Epic 刚吹过的 vibe-coded 新启动器",
+    "content": "Epic 前脚刚发布并吹嘘自家用「vibe coding」快速拼出来的新启动器够快，Steam 后脚就推送更新，把速度反超了回去。报道调侃这反应快得像 Valve 被当面叫板后连夜加班。用大模型快速生成代码确实能压缩开发周期，但客户端这种吃性能、吃稳定的老产品，靠 AI 生成省下的时间，最后往往要在优化和打磨上还回去。",
+    "quote": "vibe 出来的速度，被对手一晚上就超了。",
+    "source": "HN Front Page",
+    "url": "https://respawnfirst.com/steam-client-is-now-faster-than-epics-new-vibe-coded-launcher/",
+    "published": "2026-10-16",
+    "uid": "dev_28bb8308"
+  },
+  {
+    "title": "提示注入藏进 HTTP 响应头：2.17 亿条网页响应的发现",
+    "content": "一支安全团队扫描了 2.17 亿条网页响应，发现针对 AI 智能体的提示注入正藏在 HTTP 响应头里：攻击者把恶意指令塞进普通用户看不见的 header 字段，等抓取页面的 Agent 读进去再误导它行动。过去防御多盯着页面正文，如今连响应头都成了投毒入口，说明只要 Agent 会「读」任意外部内容，攻击面就没有边界。",
+    "quote": "看不见的 header 里，藏着给 Agent 下的命令。",
+    "source": "HN Front Page",
+    "url": "https://www.signalscorps.com/blog/prompt-injection-in-http-headers/",
+    "published": "2026-10-16",
+    "uid": "dev_c031aee2"
+  },
+  {
+    "title": "C++26 Contracts：把前置/后置条件写进语言",
+    "content": "C++26 正式引入 contracts 契约特性，用 pre/post 条件把函数的前置后置约束写进代码，由编译器按不同语义检查。文章把它和传统 assert 做了对比，并提醒契约不等于输入校验，谓词里也别乱改状态。对长期靠注释和口头约定维护的 C++ 项目，这是把「规矩」标准化的一次尝试，但要真落地还得等工具链跟上。",
+    "quote": "把注释里的规矩，终于塞进编译器。",
+    "source": "HN Front Page",
+    "url": "https://www.cppstories.com/2026/cpp26_contracts/",
+    "published": "2026-10-16",
+    "uid": "dev_f38c9009"
+  },
+  {
+    "title": "OpenCode 2.0：一套内核，终端/网页/桌面共用",
+    "content": "OpenCode 发布 2.0，主打的不是新功能而是架构重构：底层服务器默认作为常驻后台进程运行，终端、网页、桌面三个界面共享同一个核心进程，状态不再各管各的。官方称这版吸收了数百万日活用户的使用经验，让它能适配 Agent 的各种需求。对开发者工具来说，从「能用」跨到「一套内核多端一致」，才是真正的成人礼。",
+    "quote": "多端各弹各的，不如一个内核管到底。",
+    "source": "HN Front Page",
+    "url": "https://anoma.ly/notes/opencode-2-0/",
+    "published": "2026-10-16",
+    "uid": "dev_2fa45afb"
+  },
+  {
+    "title": "anthropics/claude-plugins-official：官方插件市场来了",
+    "content": "Anthropic 官方的 Claude Code 插件目录仓库今日冲上趋势榜，定位是「官方维护的高质量插件市场」。此前 Claude Code 的扩展多靠社区各写各的、质量参差，官方下场做目录，等于把插件生态的入口和标准握回自己手里。对开发者是省事了，但也意味着又一块 Agent 工具的「应用商店」被平台方接管，分发权进一步向模型厂商集中。",
+    "quote": "插件市场一旦官方下场，标准就定了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/anthropics/claude-plugins-official",
+    "published": "2026-10-16",
+    "uid": "dev_f8c77834"
+  },
+  {
+    "title": "obra/superpowers：把 Agent 开发方法论装进技能库",
+    "content": "superpowers 是一个面向 Agent 的技能框架与软件开发方法论，把「让 AI 按固定套路干活」沉淀成一套可复用的技能集合，在趋势榜上热度极高。它代表今年兴起的一股风潮：不满足于单次对话式编码，而是把工程流程、检查清单和角色分工固化成 Agent 能调用、能复现的能力。效果最终还是要看能不能在真实项目里稳定跑通。",
+    "quote": "把方法论装进技能库，别每次从头教。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/obra/superpowers",
+    "published": "2026-10-16",
+    "uid": "dev_08a1a90e"
+  },
+  {
+    "title": "caveman：让编码 Agent 说「原始人话」，砍掉 65% token",
+    "content": "caveman 是个脑洞项目：让编码 Agent 用「原始人说话」的极简方式表达，把 token 消耗砍掉约 65%，可作技能也可作代理。它戳中的是 AI 编程最真实的痛点——上下文和 token 就是钱。当大家还在比谁的模型更聪明时，有人反过来在「怎么少说废话」上做文章。省钱不一定体面，但账单不会说谎。",
+    "quote": "话少一半，账单也少一半，挺原始但管用。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/JuliusBrussee/caveman",
+    "published": "2026-10-16",
+    "uid": "dev_73b8a579"
+  },
+  {
+    "title": "做半年无审查 AI 平台，记 4 个反直觉的工程坑",
+    "content": "一位开发者复盘做了半年的中文 AI 创作平台，挑了 4 个反直觉的工程坑，且都附了实测数据。其中一条很扎心：内容「审查」的尺子往往不在模型手里，而在托管服务商手里，同一个模型换三家云，被拒的比例能差出一大截。做 AI 应用的人常把功夫花在调模型上，真正卡人的却是这些藏在链路中段的现实约束。",
+    "quote": "以为模型说了算，结果是云厂商说了算。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249171",
+    "published": "2026-10-16",
+    "uid": "dev_f71b05cd"
+  },
+  {
+    "title": "EverAgent：崩溃能续跑的持久化 Agent 框架",
+    "content": "作者开源了 EverAgent，一个主打「可持久化、可恢复」的 Agent 运行框架：对话、模型轮次、工具调用、排队输入和检查点全部先写进 SQLite，再由终端和网页两套控制台呈现。长任务跑到一半崩了不用从头再来，可以断点续跑。当 Agent 开始接手动辄数小时的任务，「崩溃恢复」就从加分项变成了刚需。",
+    "quote": "AI 干一半崩了从头再来？先把进度存盘。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249133",
+    "published": "2026-10-16",
+    "uid": "dev_268d8a37"
+  },
+  {
+    "title": "把生图 → 传图床 → 回链串成一条命令",
+    "content": "作者要给一批文章批量配图，嫌一张张在网页里生图、下载、再拖进图床、复制链接太烦，干脆把整套流程做成一条命令：生成图片、存本地、上传图床、吐回公开 CDN 链接，直接贴进文章，顺带还踩了个代理的坑。把重复体力活脚本化是老生常谈，但能把「生图 + 图床」这类 AI 时代的琐事一次串完，才是真省事。",
+    "quote": "配图这种体力活，就该一句命令干完。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249113",
+    "published": "2026-10-16",
+    "uid": "dev_3215e59a"
+  },
+  {
+    "title": "The 44% Problem：被攻破的是你自己的 AI Agent",
+    "content": "一篇安全评论指出，媒体都在转「84% 的勒索攻击有 AI 参与」，但真正要命的是另一个数字：44% 的受害者承认，被攻破的是他们自己的 AI Agent——不是攻击者的模型，而是自家带着自有凭证、正常干活却被诱骗或凭证被盗的智能体。攻击没有从外部打进来，而是从信任边界内部撬开。给 Agent 放权的团队，该重新算算这条边界了。",
+    "quote": "84% 是标题，44% 才是你该怕的那个数。",
+    "source": "Dev.to",
+    "url": "https://dev.to/first_king_ac04fddae39781/the-44-problem-g4b",
+    "published": "2026-10-16",
+    "uid": "dev_0703dfc3"
+  },
+  {
+    "title": "Google 为何给 Gemini 4 Argon 配了个运行时监控",
+    "content": "Google DeepMind 发布 Gemini 4 Argon，除了一堆常规参数（Vals 榜第一、百万上下文、低价、缓存大折扣），更值得注意的是它给模型配了个运行时监控。文章认为，Google 内部还用 Agent 连夜重写自家开发套件、砍掉 40% 会话开销，这些战绩才是重点：前沿模型正从「比谁的分数高」，转向「比谁在真实运行中更可控」。",
+    "quote": "参数是面子，运行时监控才是里子。",
+    "source": "Dev.to",
+    "url": "https://dev.to/reidmarlow/why-google-put-a-runtime-monitor-on-gemini-4-argon-3cb3",
+    "published": "2026-10-16",
+    "uid": "dev_d19553cc"
+  },
+  {
+    "title": "用 Pydantic AI 从零搭一个能干活的 AI Agent",
+    "content": "博客园一篇教程用 Pydantic AI 从零搭一个能实际干活的 AI Agent，重点不在花哨框架，而在用 Pydantic 的类型约束给 Agent 的输入输出套上「护栏」，让模型返回的结构可校验、可控。对写惯了 Python 类型标注的开发者，这个思路门槛低、上手快。Agent 满地走的当下，能先把数据结构管住的方案，往往比堆概念更实用。",
+    "quote": "先把输出结构管住，再谈 Agent 智能。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/wang_yb/p/23319546",
+    "published": "2026-10-16",
+    "uid": "dev_3cf19e8d"
+  },
+  {
+    "title": "从 AWS 到 OpenRouter：拆解 Agent 的模型路由设计",
+    "content": "一篇工程向文章拆解了 Agent 的模型路由设计，从 AWS 到 OpenRouter 逐层讲怎么按任务把请求分发到不同模型。核心诉求很实际：不同任务对成本、延迟、能力的要求差得远，全用最强模型是烧钱，全用便宜模型又扛不住，路由层就是那个「按需分配」的调度中枢。当 Agent 大规模上线，模型路由这类基础设施的分量只会越来越重。",
+    "quote": "全用顶配是烧钱，全靠路由才是本事。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Qiniu-developer/p/23314122",
+    "published": "2026-10-16",
+    "uid": "dev_322b7a7b"
+  }
+]
