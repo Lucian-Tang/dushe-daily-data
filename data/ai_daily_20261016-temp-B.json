@@ -1,0 +1,110 @@
+[
+  {
+    "title": "REA 登顶 GitHub 热榜：一个 MCP 逆向一切",
+    "content": "morluto/rea 一天暴涨逾 3 万星登顶热榜，定位「用一个 MCP 逆向一切」——从 App 行为一路下钻到原生二进制。它把二进制、应用与运行时行为的逆向工程统一收进一套 MCP 工具，主张「看到一个喜欢的特性，就搞懂它到二进制层怎么运作」，配 npx 一键安装与多语言文档。这类把专业逆向能力塞进 Agent 工具链的项目，正把「逆向」从老手手艺变成可调用的接口。",
+    "quote": "逆向从老手的手艺，变成 Agent 的一行命令。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/morluto/rea",
+    "published": "2026-10-16",
+    "uid": "ai_75e8859e"
+  },
+  {
+    "title": "caveman：让 AI 少说话，省下 65% 的 token",
+    "content": "JuliusBrussee/caveman 的思路是「话少一点，token 省一点」：让 AI Agent 像原始人一样说话，输入 token 直降 33.2%、整体便宜约 54%，代码却保持精确，单次测试运行从 397 个 token 压到 76 个。它已被 Adobe Research 论文与 JetBrains 实测引用，一度登顶 HN 与 GitHub Trending。",
+    "quote": "话越少越省钱，原始人早就替你想好了。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/JuliusBrussee/caveman",
+    "published": "2026-10-16",
+    "uid": "ai_adb9ef1e"
+  },
+  {
+    "title": "context-mode：把工具输出关进沙箱，省 98% 上下文",
+    "content": "mksglu/context-mode 专治编码 Agent 的上下文爆炸：把工具输出做沙箱化处理，一口气砍掉约 98% 的上下文占用，同时持久化会话记忆，并通过 MCP 与钩子在 17 个平台上统一路由。随着 Agent 一轮轮读日志、跑命令，上下文很快被工具垃圾填满，这类「压缩中间产物、只留结论」的中间件，正在成为长任务能否跑下去的关键一层。",
+    "quote": "上下文不是被模型吃掉的，是被日志撑死的。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/mksglu/context-mode",
+    "published": "2026-10-16",
+    "uid": "ai_d69d42c8"
+  },
+  {
+    "title": "xerj：用 40 倍少的 token 让 Agent 找到数据",
+    "content": "xerj-org/xerj 提出「让 AI 找数据」的新路子：autoindex 让 Agent 不必再靠 grep、sed 反复翻文件就能「认识」你的数据。一条命令即可索引代码、文档、日志与 PDF，服务检索、RAG 与 Agent 记忆，官方称比 grep 省 40 倍 token，且兼容 Elasticsearch。当上下文按 token 计价，会搜索的 Agent 显然比会硬读的划算。",
+    "quote": "省下的不是搜索时间，是上下文里那堆废料。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/xerj-org/xerj",
+    "published": "2026-10-16",
+    "uid": "ai_d4987dfb"
+  },
+  {
+    "title": "Dev.to：记忆不等于学习，Agent 为何总犯同一个错",
+    "content": "文章从一位对冲基金主管的抱怨切入：问题不是训不出 Agent，而是一旦团队里换个人用，一切归零。作者类比资深分析师——人靠多年试错积累的不是信息，而是判断力，知道哪些信号重要、哪些路数必败。而 Agent 能跑成千上万次任务，明天却仍犯同一个错。核心区别在于，记忆只是把信息存下来，学习才是把经验变成可复用的判断，多数 Agent 只做到了前者。",
+    "quote": "记性好不代表会学，Agent 在重复交学费。",
+    "source": "Dev.to",
+    "url": "https://dev.to/dailycontext/memory-isnt-learning-why-ai-agents-keep-making-the-same-mistakes-cpc",
+    "published": "2026-10-16",
+    "uid": "ai_85923af1"
+  },
+  {
+    "title": "Dev.to：Agent 会做计划，不代表它有权这么做",
+    "content": "文章点出一个常被忽略的错配：编码 Agent 排查线上 bug 时可能要读仓库、查日志、开 PR，若在别的服务发现疑点，顺手读那份日志，而它拿到的凭证往往与任务无关，平台给的权限始终一样，API key 与 token 说不清它是被派来干什么、谁派的。作者主张「意图授权」：按任务用途、委派人权限与组织策略逐次判定访问，别让客服 Agent 因为工具够得着就去翻人事记录。",
+    "quote": "计划写得再漂亮，也不代表拿到了许可。",
+    "source": "Dev.to",
+    "url": "https://dev.to/dailycontext/an-agents-plan-isnt-permission-5cf8",
+    "published": "2026-10-16",
+    "uid": "ai_a95db178"
+  },
+  {
+    "title": "Dev.to：二手 8G 显卡跑 Gemma 4，单用户 116 tokens/s",
+    "content": "作者用一台 2014 年的 Haswell-E 老台式机加一张二手 8GB RTX 3050，从零部署 Gemma 4 的 E2B 与 E4B，并自建一套 Python MCP 工具简化 llama.cpp 管理。实测单用户 116 tokens/s、完整支持 131k 上下文，并发 64 时高达 618 tokens/s。结论很实在：本地跑大模型的门槛，已被二手硬件与开源栈拉低。",
+    "quote": "老机配二手卡，本地大模型也能原地起飞。",
+    "source": "Dev.to",
+    "url": "https://dev.to/gde/gemma-4-on-a-used-8-gb-rtx-3050-116-tokenss-for-one-user-618-for-64-k6h",
+    "published": "2026-10-16",
+    "uid": "ai_676d641f"
+  },
+  {
+    "title": "Dev.to：我用 vibe coding 逃离了 Angular 升级",
+    "content": "作者坦言最讨厌的维护任务就是升级 Angular，于是一不做二不休，干脆为 Codex vibe 出一个「Angular 升级技能」：让它遵循官方升级指南、单独开分支、处理迁移与依赖更新、验证仍能构建运行，并按手动升级时的最佳实践来。与其每逢大版本就一拖再拖，不如把烦人的升级流程固化成可复用的 Agent 技能，堪称把「最不想干的活」外包给 AI 的范例。",
+    "quote": "把最不想干的活，写成技能丢给 AI 去干。",
+    "source": "Dev.to",
+    "url": "https://dev.to/gramli/i-vibe-coded-my-way-out-of-angular-upgrades-4fkh",
+    "published": "2026-10-16",
+    "uid": "ai_7409fdc4"
+  },
+  {
+    "title": "博客园：AI 都会做了，公司为什么还需要你",
+    "content": "作者观察到，面试问题已从「手写快排、TCP 三次握手」变成几乎必问的「你会的 AI 都能做了，公司为什么还需要你」。他指出这话藏了坑：前半句大概率没冤枉你——写代码、造数据、跑回归确实都能交给模型；但把「都能做」直接推成「不需要你」，跳得太快。真正值钱的部分从来不在待办清单上，而在那些写不进岗位描述、藏在评审会与模糊决策里的判断力。",
+    "quote": "AI 抢走的从来只是清单，不是你的判断。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/jinjiangongzuoshi/p/23310078",
+    "published": "2026-10-16",
+    "uid": "ai_3f0f39bb"
+  },
+  {
+    "title": "博客园：一文搞懂 Agent TODO，AI 如何把长任务做完",
+    "content": "文章以「让 Coding Agent 开发 JWT 认证系统」为例，解释长任务为何总在中途掉链子：上下文越滚越长，早期的任务要求被忽略，于是步骤遗漏或重复，甚至跳过一步就宣称完工。作者类比飞行员起飞前的检查清单，引出 Agent 的 TODO 机制——把任务拆解、用 pending/in_progress/completed 三态记录进度，以防遗漏、可视化进度并支持编排。",
+    "quote": "长任务翻车多半不是笨，是忘了做到哪。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Tomorrowland/p/23316817",
+    "published": "2026-10-16",
+    "uid": "ai_371b92ad"
+  },
+  {
+    "title": "博客园：Keycloak 26.8 委托机制，Agent 的身份怎么进令牌",
+    "content": "文章解读 Keycloak 26.8.0 的新变化：Token Exchange 的委托功能从实验升到预览，并新增客户端委托类型，官方定位就是给 AI Agent 用。用户在 scope 里带上 delegation:client:actor-app，Keycloak 校验客户端与服务账号、FGAP V2 委托权限后弹同意页；同意后令牌多出 may_act 声明，Agent 再换回委托令牌。",
+    "quote": "想给 Agent 一个身份，先给它一张借条。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23294528",
+    "published": "2026-10-16",
+    "uid": "ai_34f69b26"
+  },
+  {
+    "title": "博客园：用 Pydantic AI 从零搭一个能干活的 Agent",
+    "content": "作者指出多数人第一次写 Agent 都会失望：返回一段字符串得自己 json.loads，工具调用靠越写越长的 prompt 解释，想写单元测试却发现到处是全局变量。问题不在模型不够聪明，而是中间缺一层工程约束。他用 Pydantic AI 从零搭一个记账分析助手，示范如何用类型注解、Pydantic 模型与依赖注入，把「输出必须是这个结构」约束在代码层，而非靠 prompt 恳求。",
+    "quote": "把约束写进类型，比在 prompt 里求它靠谱。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/wang_yb/p/23319546",
+    "published": "2026-10-16",
+    "uid": "ai_5011d474"
+  }
+]
