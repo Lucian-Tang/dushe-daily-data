@@ -1,0 +1,119 @@
+[
+  {
+    "title": "Show HN：Termexo——用一只 AI 统管你其它的编码 agent（Windows）",
+    "content": "有人给 Windows 做了个多 Agent 工作台 Termexo：把 Claude Code、Codex、OpenCode、Antigravity、Grok Build 等编码 agent 收进同一个界面，一眼看清哪个 agent 正卡着等你确认，随时续上会话，甚至能从手机远程接回。多开 agent 的人常被「到底谁在等我」搞得手忙脚乱，Termexo 相当于给这些散落的工位装了一块总控屏。",
+    "quote": "同时开五个 agent，谁在等你都记不清。",
+    "source": "HN Show HN",
+    "url": "https://github.com/gemron/Termexo",
+    "published": "2026-10-17",
+    "uid": "dev_84487dc5"
+  },
+  {
+    "title": "Show HN：Busabase——给 AI agent 用的开源数据库与工作台",
+    "content": "Busabase 是一个面向 AI agent 的开源数据库与工作台：把结构化数据、可持久的知识、可复用的技能、可运行的 app 收在一处，并在关键写入上保留人工审阅。它主张 local-first、可自托管，想解决的是 agent「干完就忘、结果散落各处」的老问题。对想让 agent 的产出真正沉淀下来、而不是每次推倒重来的团队，值得留意。",
+    "quote": "agent 干完就忘，那就先给它配个能存东西的库。",
+    "source": "HN Show HN",
+    "url": "https://github.com/busabase/busabase",
+    "published": "2026-10-17",
+    "uid": "dev_de64dea6"
+  },
+  {
+    "title": "Show HN：Tennis——一个本地离线的上下文索引工具",
+    "content": "Tennis 是一个本地离线的上下文索引工具：用命令行把任意文件、Chat 与 Claude 会话、Codex 历史统统塞进索引，之后离线检索。作者强调全程本机、不走云，等于给散落各处的「上下文碎片」建了一座私有图书馆。对在意隐私、又希望把过往对话变成可检索资产的人，这正好补上「记得住、找得到」那块拼图。",
+    "quote": "聊天记录全喂进本地索引，终于找得回上次那句。",
+    "source": "HN Show HN",
+    "url": "https://tennis.jlachance1.workers.dev/",
+    "published": "2026-10-17",
+    "uid": "dev_580e3de7"
+  },
+  {
+    "title": "Show HN：给出租房里那台「傻瓜」锅炉接上 AI 监控",
+    "content": "作者给自己出租房里的「傻瓜」锅炉做了套 AI 监控：房里已有三只 Ecobee 智能恒温器，却只在出事后才报警。于是他把温度、运行状态等数据接进自建监控，用 AI 提前识别异常，把「事后维修」变成「事前预警」。一个很接地气的 Show HN——不必是庞大的工业系统，普通房东也能用 AI 把家里那台老设备盯得明明白白。",
+    "quote": "智能恒温器只会马后炮，那就自己接个 AI 盯梢。",
+    "source": "HN Show HN",
+    "url": "https://ndroo.github.io/tapo-boiler-monitor/",
+    "published": "2026-10-17",
+    "uid": "dev_48551adb"
+  },
+  {
+    "title": "怎么给一个 LLM 应用做安全测试：先当它是应用",
+    "content": "文章提醒：客服机器人、内部 copilot、自动建单的 agent，本质首先是一套应用，其次才是语言模型。出错的地方，大多是传统应用安全的老问题——权限、输入校验、越权，而非什么玄乎的「模型幻觉」。作者给出把 LLM 应用当普通系统来做安全测试的思路，先补应用的墙，再谈模型的坑。对赶着上线 AI 功能、却跳过安全评审的团队，是当头一棒。",
+    "quote": "先把它当普通应用修，再谈模型背不背锅。",
+    "source": "Dev.to",
+    "url": "https://dev.to/hafezsecure/how-to-security-test-an-llm-application-15ol",
+    "published": "2026-10-17",
+    "uid": "dev_940dc8ab"
+  },
+  {
+    "title": "多 agent 系统的可观测性：防脑裂、防目标漂移、防上下文漂移",
+    "content": "文章聚焦多 agent 系统的可观测性，点明三种典型故障：脑裂（split-brain）、目标漂移（goal drift）、上下文漂移（context drift）。作者一针见血：没有埋点，所谓「诊断」不过是一堆说辞。他给出针对这些失灵的埋点与观测做法，让多 agent 协作从「看起来在跑」走向「能说清哪里坏了」。给同时养着一群 agent、却对它们内部状态两眼一抹黑的团队补了课。",
+    "quote": "不给 agent 埋点，出了事就只能靠猜。",
+    "source": "Dev.to",
+    "url": "https://dev.to/loopandretry/observability-for-multi-agent-systems-instrumenting-for-split-brain-goal-drift-and-context-drift-11g0",
+    "published": "2026-10-17",
+    "uid": "dev_844dbc79"
+  },
+  {
+    "title": "DNS 根密钥 10 月 11 日悄悄轮换，为何互联网毫无察觉",
+    "content": "2026 年 10 月 11 日，互联网上最受信任的一把密钥悄然易主：DNS 根区的主密钥轮换完成，却没有发出任何部署、没有亮起状态页，绝大多数人毫不知情。文章拆解这次 KSK 轮换是怎么在不中断全球解析的前提下走完的，以及信任链条为何能承受这种「无声交棒」。对做基础设施的人，这是一堂关于「最关键的改动要最低调」的现场课。",
+    "quote": "互联网换了把最要紧的钥匙，竟没一个人察觉。",
+    "source": "Dev.to",
+    "url": "https://dev.to/kashif_manzer/how-the-dns-root-rotated-its-master-key-on-october-11-without-breaking-the-internet-pm7",
+    "published": "2026-10-17",
+    "uid": "dev_ee602555"
+  },
+  {
+    "title": "wujie 微前端踩坑实录：一个子应用的 7 个生产事故现场",
+    "content": "文章复盘一个 Vue 3 + Vite + TS 的「三栖」子应用接入 wujie 微前端后踩出的 7 个生产事故：token 有三种来源、window 有两个归属，同一段代码要在三种形态下分别运行。作者把每个坑的现场、成因与修法都写了出来，读着像事故报告，实则是一份微前端集成的避雷手册。对正准备上无界/微前端的人，这些血的教训能省下不少加班。",
+    "quote": "同一个 window 两个爹，微前端一接全是坑。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/ChineseLiao/p/23330749",
+    "published": "2026-10-17",
+    "uid": "dev_a60a37ed"
+  },
+  {
+    "title": "单日涨星 2.5 万！AI 逆向工程 REA 到底强在哪",
+    "content": "文章拆解近期 GitHub 上的现象级项目 REA（Reverse Engineer Anything）：6 天从不到 1 万星飙到 11 万+，单日峰值涨星逾 2.5 万，一度霸榜趋势榜。作者追问它到底强在哪——把「逆向工程」这件原本门槛高、靠经验积累的事，用 AI 重新做了一遍。热度背后，折射的是开发者对「让 AI 接管脏活累活」的巨大期待，也提醒人别只看星星，要看它真正解决了什么。",
+    "quote": "六天涨十万星，先别跟风，看它到底解决啥。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/chingho/p/23329759",
+    "published": "2026-10-17",
+    "uid": "dev_a5d4577a"
+  },
+  {
+    "title": "把工程流程沉淀为 Agent 资产：一套可交接的四层工作流",
+    "content": "作者提出 ai-engineering-agent：把软件工程全流程——需求、PRD、原型、契约、前后端实现、测试用例、变更日志、一致性核验——统统沉淀成文件资产。核心主张只有一句：上下文不该活在对话里，而该活在文件里。这样 agent 与人都能基于同一份可交接的材料协作，而不是每次重启就丢失记忆。对苦于「AI 干得不错但不可复现」的团队，是一套把经验固化成流程的思路。",
+    "quote": "别让上下文死在对话里，写进文件才算数。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/huangrenhui/p/23327347",
+    "published": "2026-10-17",
+    "uid": "dev_3f9d4c8c"
+  },
+  {
+    "title": "分享一个 Python 音频转文字命令行工具，支持 Whisper 本地转录",
+    "content": "作者整理发布了一个 Python 音频转文字命令行工具：既支持本地 Whisper 模型做离线转录，也可接 OpenAI 语音 API，按环境与需求自由选择。输出支持 TXT、SRT、VTT、TSV、JSON 等格式，还能选配 DeepL 做翻译。对经常要把录音、播客、会议转成文字或字幕的人，这类「本地能跑、格式齐全」的小工具，比一堆笨重的商用方案顺手得多。",
+    "quote": "录音转字幕这种脏活，命令行一把梭最省心。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249490#reply1",
+    "published": "2026-10-17",
+    "uid": "dev_753a3a1f"
+  },
+  {
+    "title": "真·小而美的 macOS 原生 frp 客户端：Porta",
+    "content": "作者长期用 frp 做内网穿透，却始终找不到称心的 macOS 图形客户端，于是自己写了 Porta：原生性能、非套壳，专治命令行配置繁琐的痛点。对需要在 Mac 上管理多组 frp 隧道的人，一个干净的原生 GUI 意味着少写配置、少记参数。它也是当下个人开发者「看不惯现状就自己造一个」的典型样本——需求不大，但足够真实。",
+    "quote": "官配 GUI 一个能打的都没有，那就自己写。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249262#reply5",
+    "published": "2026-10-17",
+    "uid": "dev_e57144c3"
+  },
+  {
+    "title": "开源「一人 MCN」二更：让 Claude Code 把做过的事沉淀成套路",
+    "content": "作者更新开源项目「一人 MCN」SoloMCN：上一版让 Claude Code 从找热点一路做到抖音发布，这一版重点解决「沉淀」——把 Claude 做过的事固化下来，下次还会做，而且越做越好。相当于让 AI 把自己的操作变成可复用的套路，而不是每条内容都从零开始。对想一个人运营多平台内容、又不想被重复劳动拖垮的人，这提供了一条「让 AI 记住怎么做」的思路。",
+    "quote": "让 AI 把做过的事记成套路，下次直接照做。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249336#reply0",
+    "published": "2026-10-17",
+    "uid": "dev_85d1820a"
+  }
+]

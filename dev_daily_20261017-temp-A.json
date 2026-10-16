@@ -1,0 +1,128 @@
+[
+  {
+    "title": "RPKI 已为全球 70% 的互联网路由提供保护",
+    "content": "互联网路由安全迎来里程碑：RPKI（资源公钥基础设施）现已为全球约 70% 的路由宣告提供加密签名保护，用来防止 BGP 劫持和误配置。文章梳理了从早期覆盖率仅为个位数、到今天攀升至 70% 的推进过程，也指出剩下的 30% 恰恰是最难啃的部分——老旧运营商和小型网络往往缺乏部署动力。安全基础设施的意义正在于此：平时没人注意，出事时才知道它挡掉了多少事故。",
+    "quote": "路由没被劫持，是有人默默签了 70%。",
+    "source": "HN Front Page",
+    "url": "https://ipinfo.io/blog/rpki-protects-70-internet-routes",
+    "published": "2026-10-17",
+    "uid": "dev_64687986"
+  },
+  {
+    "title": "Big Fish：OpenBSD 里藏了 37 年的内核漏洞被挖出",
+    "content": "研究者公开了在对 OpenBSD 的审计中发现的一个存在长达 37 年的内核漏洞，命名为 Big Fish，并给出了完整利用路径。OpenBSD 素来以「默认安全、代码审计严格」著称，一个跨越大半个系统生命周期的漏洞能存活至今，说明再严的审计也敌不过时间与复杂度。研究同时强调，这不是要否定 OpenBSD，而是提醒所有「久经考验」的老代码，都值得被重新翻出来看一遍。",
+    "quote": "喊着最安全，还是藏了 37 年的洞。",
+    "source": "HN Front Page",
+    "url": "https://calif.io/research/big-fish",
+    "published": "2026-10-17",
+    "uid": "dev_b12e9bb9"
+  },
+  {
+    "title": "我爱软件渲染：自己动手逐个像素画出来的浪漫",
+    "content": "一篇写给软件渲染的情书。作者坦言，在 GPU 与硬件加速大行其道的今天，用纯 CPU 一行行走像素、自己做光栅化与着色，反而让他重新体会到图形学的乐趣。软件渲染慢、不实用，却把每一帧的来龙去脉都摊开在代码里，是理解图形管线最直观的路径。当成千上万的人忙着卷大模型时，有人回头赞美这种「低效但透明」的老手艺，反倒显得清醒。",
+    "quote": "GPU 再快，也不如自己一个个像素画着爽。",
+    "source": "HN Front Page",
+    "url": "https://www.jamesfmackenzie.com/2026/10/13/i-love-software-rendering/",
+    "published": "2026-10-17",
+    "uid": "dev_9ce9bc8d"
+  },
+  {
+    "title": "affaan-m/ECC：给 Agent 装上性能优化「操作系统」",
+    "content": "ECC 是今日趋势榜上的 Agent 工程化项目，定位为「Agent 性能优化系统」，把技能、直觉、记忆、安全和研究优先的开发流程打包成面向 Claude Code、Codex、Opencode、Cursor 等主流工具的通用套件，星标已逾 28 万。它延续了今年的风潮：与其不停换模型，不如把工程约束和工作流固化进 Agent 的「操作系统」层，让不同模型都能稳定复现同一套做法。",
+    "quote": "换模型救不了你，先把工作流搭对。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/affaan-m/ECC",
+    "published": "2026-10-17",
+    "uid": "dev_0709d065"
+  },
+  {
+    "title": "ruvnet/ruflo：让多个 Agent 组团干活的老牌编排框架",
+    "content": "ruflo 自称「最早的 agent harness」，主打多智能体蜂群编排：让多个 Agent 分工协作、协调自治工作流，并内置自适应记忆、自学习与向量 RAG 集成，原生对接 Claude Code、Codex 等，星标约 7.5 万。当单 Agent 的瓶颈逐渐显现，「多 Agent 怎么组织」开始取代「模型谁更强」成为新的军备竞赛焦点，这类编排框架正是这场竞赛的基础设施。",
+    "quote": "一个 Agent 卷不动了，就组个团接着卷。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/ruvnet/ruflo",
+    "published": "2026-10-17",
+    "uid": "dev_64bc900d"
+  },
+  {
+    "title": "android/skills：Google 官方给 Agent 的 Android 技能库",
+    "content": "Google 官方 Android 团队开源了 android/skills，是一套面向 AI Agent 的模块化技能库，用标准化的 SKILL.md 把 Android 开发中「大模型表现不佳」的具体任务与工作流讲清楚，再用 Android CLI 一键安装。官方明确表示不碰 LLM 已经擅长的领域，只补短板。大厂开始系统性地为自家技术栈「投喂」Agent，「官方技能包」正成为新的开发者入口。",
+    "quote": "大厂开始亲自给 Agent 喂自家技术栈了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/android/skills",
+    "published": "2026-10-17",
+    "uid": "dev_5224a37c"
+  },
+  {
+    "title": "铺天盖地的 OpenClaw，到底能做什么？（不吹不黑）",
+    "content": "V2EX 上一条热帖问得很直接：铺天盖地的 OpenClaw 宣传，到底能做什么，不吹不黑。发帖人想要的是去掉营销话术后，这类 Agent 工具在真实工作流里究竟解决了哪些具体问题。评论区多半围绕「它和直接写脚本、用现成工具的区别」展开。这类讨论之所以反复出现，恰恰说明 Agent 赛道宣传过热，而普通人真正需要的只是一份看得懂、能落地的能力边界清单。",
+    "quote": "宣传铺天盖地，一问能干吗就哑了。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1196877",
+    "published": "2026-10-17",
+    "uid": "dev_76388874"
+  },
+  {
+    "title": "Meshtastic/MeshCore/LoRa 设备在淘宝被禁",
+    "content": "有 V2EX 网友发现，Meshtastic、MeshCore 这类 LoRa 自组网设备在淘宝、闲鱼上已经搜不到相关产品，于是发帖询问：手头的设备还能不能继续安全使用。LoRa 这类低功耗远距离通信模块长期被用于户外、应急和爱好者自组网，此次电商平台下架引发了对频谱监管与合规风险的讨论。对玩硬件的人来说，先搞清楚法规边界，再谈设备好不好玩，才是正经事。",
+    "quote": "淘系一搜全没了，合规红线先探清。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1239570",
+    "published": "2026-10-17",
+    "uid": "dev_b63b9837"
+  },
+  {
+    "title": "用 Flutter 移植 VS Code：体积只有 15MB，还配 AI 搭子",
+    "content": "作者用 Flutter 把 VS Code 移植成了一个只有 15MB 的轻量 IDE，全程自举开发，手感与 VS Code 几乎一致，远程 SSH 也能用，还能直接跑服务器上的 Claude Code，占用资源很低。此前版本发布后 DAU 和留存都不错。当本地编辑器越来越重，一个「十几兆 + AI」的组合，恰好戳中了轻量与远程开发的痛点。",
+    "quote": "15MB 的 VS Code，还自带 AI 搭子。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249334",
+    "published": "2026-10-17",
+    "uid": "dev_b96ad525"
+  },
+  {
+    "title": "用 ESP32-S3 让 iPhone 设备被 AI 控制",
+    "content": "作者用一块四十来块的 XIAO ESP32-S3 开发板，实现了让 AI 直接控制 iPhone：板子先模拟 USB 鼠标去点按手机的辅助触控，再让它兼任 AirPlay 接收端，把 iPhone 屏幕镜像推过来，于是只需一块小板加手机上的 App，不必让 Mac 在中间，整套就能玩起来。低成本硬件配上 AI，正在把过去需要成套昂贵设备才能做的事，压缩成一个人的周末实验。",
+    "quote": "四十块板子，就让 AI 摸上了 iPhone。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249290",
+    "published": "2026-10-17",
+    "uid": "dev_89319ea3"
+  },
+  {
+    "title": "别信 MCP 工具的名字：重名就可能执行错的那个",
+    "content": "一篇 Dev.to 安全短文警告：不要相信 MCP 工具的名字。设想两个服务器都暴露了名为 delete_user 的工具，你的信任列表只批准了其中一个，运行时却按名字解析、可能执行了另一个——不会报错，日志还会骗你。作者指出，MCP 的信任边界若只建立在「工具名」这种可被伪装、可被重名的字符串上，就等于把执行权交给了一个不可靠的标识。Agent 工具生态越繁荣，这类静默风险越值得警惕。",
+    "quote": "按名字信任工具，日志还会替它撒谎。",
+    "source": "Dev.to",
+    "url": "https://dev.to/maltsev-dev/dont-trust-mcp-tool-names-1dh3",
+    "published": "2026-10-17",
+    "uid": "dev_35834a38"
+  },
+  {
+    "title": "夜间评测全红，没人改提示词——是当裁判的模型变了心",
+    "content": "一位工程师的夜间 eval 突然全红，可没人改过提示词、模型版本被锁定、检索也没动。排查后发现：变的是「打分裁判」——用来评判输出的模型悄悄改了判断标准，于是同一批输入、同一批产物，评分却集体下滑。这篇记录戳破了评测的一个盲区：当你用另一个模型去当裁判时，评测结果其实同时受被测系统和裁判稳定性影响，裁判一漂移，红线就亮得毫无道理。",
+    "quote": "没人动代码，是当裁判的模型变了心。",
+    "source": "Dev.to",
+    "url": "https://dev.to/kartik-nvjk/my-nightly-eval-gate-went-red-on-prompts-nobody-touched-the-judge-had-changed-its-mind-1cd6",
+    "published": "2026-10-17",
+    "uid": "dev_d85a16a4"
+  },
+  {
+    "title": "AI 重构代码 40% 会悄悄改坏，我是怎么用 7 步 SOP 防住的",
+    "content": "作者用 Claude Code 重构订单服务，CI 全绿、单测通过，上线第三天监控却炸了：P99 延迟翻了四倍，原因是 AI 在「优化」某个查询函数时，把一次 O(n) 的内存过滤换成了每次请求都查库的子查询。他由此总结出 7 步 SOP，用来防止这类「测试测不出、线上才爆炸」的隐性破坏。AI 重构最危险的地方在于它改得又快又自信，而现有测试往往只覆盖功能、不覆盖性能与语义边界。",
+    "quote": "CI 全绿也白搭，AI 改坏从不打招呼。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/uniqueDong/p/23324820",
+    "published": "2026-10-17",
+    "uid": "dev_e291422d"
+  },
+  {
+    "title": "装了这么多年 .NET，微软终于把 rustup 那套搬过来了",
+    "content": "微软为 .NET 引入了类似 rustup 的工具链管理方式 dotnetup，从公开路线图看，它把系统级安装、CI/CD 原生集成，乃至给 AI 编程助手准备的 agent skills 都纳入目标，志在成为安装 .NET 的唯一官方推荐方式。若真能落地，新人入职文档里那整页环境配置说明或许可以删掉。对一个常年被吐槽工具链繁琐的老牌平台来说，向「一条命令搞定」看齐，本身就是种态度转变。",
+    "quote": "被吐槽多年的 .NET 安装，终于学乖了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23330221",
+    "published": "2026-10-17",
+    "uid": "dev_77bcd2aa"
+  }
+]

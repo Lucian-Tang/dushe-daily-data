@@ -1,0 +1,209 @@
+[
+  {
+    "title": "RPKI 已为全球 70% 的互联网路由提供保护",
+    "content": "互联网路由安全迎来里程碑：RPKI（资源公钥基础设施）现已为全球约 70% 的路由宣告提供加密签名保护，用来防止 BGP 劫持和误配置。文章梳理了从早期覆盖率仅为个位数、到今天攀升至 70% 的推进过程，也指出剩下的 30% 恰恰是最难啃的部分——老旧运营商和小型网络往往缺乏部署动力。安全基础设施的意义正在于此：平时没人注意，出事时才知道它挡掉了多少事故。",
+    "quote": "路由没被劫持，是有人默默签了 70%。",
+    "source": "HN Front Page",
+    "url": "https://ipinfo.io/blog/rpki-protects-70-internet-routes",
+    "published": "2026-10-17",
+    "uid": "dev_64687986"
+  },
+  {
+    "title": "Big Fish：OpenBSD 里藏了 37 年的内核漏洞被挖出",
+    "content": "研究者公开了在对 OpenBSD 的审计中发现的一个存在长达 37 年的内核漏洞，命名为 Big Fish，并给出了完整利用路径。OpenBSD 素来以「默认安全、代码审计严格」著称，一个跨越大半个系统生命周期的漏洞能存活至今，说明再严的审计也敌不过时间与复杂度。研究同时强调，这不是要否定 OpenBSD，而是提醒所有「久经考验」的老代码，都值得被重新翻出来看一遍。",
+    "quote": "喊着最安全，还是藏了 37 年的洞。",
+    "source": "HN Front Page",
+    "url": "https://calif.io/research/big-fish",
+    "published": "2026-10-17",
+    "uid": "dev_b12e9bb9"
+  },
+  {
+    "title": "affaan-m/ECC：给 Agent 装上性能优化「操作系统」",
+    "content": "ECC 是今日趋势榜上的 Agent 工程化项目，定位为「Agent 性能优化系统」，把技能、直觉、记忆、安全和研究优先的开发流程打包成面向 Claude Code、Codex、Opencode、Cursor 等主流工具的通用套件，星标已逾 28 万。它延续了今年的风潮：与其不停换模型，不如把工程约束和工作流固化进 Agent 的「操作系统」层，让不同模型都能稳定复现同一套做法。",
+    "quote": "换模型救不了你，先把工作流搭对。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/affaan-m/ECC",
+    "published": "2026-10-17",
+    "uid": "dev_0709d065"
+  },
+  {
+    "title": "ruvnet/ruflo：让多个 Agent 组团干活的老牌编排框架",
+    "content": "ruflo 自称「最早的 agent harness」，主打多智能体蜂群编排：让多个 Agent 分工协作、协调自治工作流，并内置自适应记忆、自学习与向量 RAG 集成，原生对接 Claude Code、Codex 等，星标约 7.5 万。当单 Agent 的瓶颈逐渐显现，「多 Agent 怎么组织」开始取代「模型谁更强」成为新的军备竞赛焦点，这类编排框架正是这场竞赛的基础设施。",
+    "quote": "一个 Agent 卷不动了，就组个团接着卷。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/ruvnet/ruflo",
+    "published": "2026-10-17",
+    "uid": "dev_64bc900d"
+  },
+  {
+    "title": "android/skills：Google 官方给 Agent 的 Android 技能库",
+    "content": "Google 官方 Android 团队开源了 android/skills，是一套面向 AI Agent 的模块化技能库，用标准化的 SKILL.md 把 Android 开发中「大模型表现不佳」的具体任务与工作流讲清楚，再用 Android CLI 一键安装。官方明确表示不碰 LLM 已经擅长的领域，只补短板。大厂开始系统性地为自家技术栈「投喂」Agent，「官方技能包」正成为新的开发者入口。",
+    "quote": "大厂开始亲自给 Agent 喂自家技术栈了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/android/skills",
+    "published": "2026-10-17",
+    "uid": "dev_5224a37c"
+  },
+  {
+    "title": "铺天盖地的 OpenClaw，到底能做什么？（不吹不黑）",
+    "content": "V2EX 上一条热帖问得很直接：铺天盖地的 OpenClaw 宣传，到底能做什么，不吹不黑。发帖人想要的是去掉营销话术后，这类 Agent 工具在真实工作流里究竟解决了哪些具体问题。评论区多半围绕「它和直接写脚本、用现成工具的区别」展开。这类讨论之所以反复出现，恰恰说明 Agent 赛道宣传过热，而普通人真正需要的只是一份看得懂、能落地的能力边界清单。",
+    "quote": "宣传铺天盖地，一问能干吗就哑了。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1196877",
+    "published": "2026-10-17",
+    "uid": "dev_76388874"
+  },
+  {
+    "title": "Meshtastic/MeshCore/LoRa 设备在淘宝被禁",
+    "content": "有 V2EX 网友发现，Meshtastic、MeshCore 这类 LoRa 自组网设备在淘宝、闲鱼上已经搜不到相关产品，于是发帖询问：手头的设备还能不能继续安全使用。LoRa 这类低功耗远距离通信模块长期被用于户外、应急和爱好者自组网，此次电商平台下架引发了对频谱监管与合规风险的讨论。对玩硬件的人来说，先搞清楚法规边界，再谈设备好不好玩，才是正经事。",
+    "quote": "淘系一搜全没了，合规红线先探清。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1239570",
+    "published": "2026-10-17",
+    "uid": "dev_b63b9837"
+  },
+  {
+    "title": "用 Flutter 移植 VS Code：体积只有 15MB，还配 AI 搭子",
+    "content": "作者用 Flutter 把 VS Code 移植成了一个只有 15MB 的轻量 IDE，全程自举开发，手感与 VS Code 几乎一致，远程 SSH 也能用，还能直接跑服务器上的 Claude Code，占用资源很低。此前版本发布后 DAU 和留存都不错。当本地编辑器越来越重，一个「十几兆 + AI」的组合，恰好戳中了轻量与远程开发的痛点。",
+    "quote": "15MB 的 VS Code，还自带 AI 搭子。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249334",
+    "published": "2026-10-17",
+    "uid": "dev_b96ad525"
+  },
+  {
+    "title": "用 ESP32-S3 让 iPhone 设备被 AI 控制",
+    "content": "作者用一块四十来块的 XIAO ESP32-S3 开发板，实现了让 AI 直接控制 iPhone：板子先模拟 USB 鼠标去点按手机的辅助触控，再让它兼任 AirPlay 接收端，把 iPhone 屏幕镜像推过来，于是只需一块小板加手机上的 App，不必让 Mac 在中间，整套就能玩起来。低成本硬件配上 AI，正在把过去需要成套昂贵设备才能做的事，压缩成一个人的周末实验。",
+    "quote": "四十块板子，就让 AI 摸上了 iPhone。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249290",
+    "published": "2026-10-17",
+    "uid": "dev_89319ea3"
+  },
+  {
+    "title": "别信 MCP 工具的名字：重名就可能执行错的那个",
+    "content": "一篇 Dev.to 安全短文警告：不要相信 MCP 工具的名字。设想两个服务器都暴露了名为 delete_user 的工具，你的信任列表只批准了其中一个，运行时却按名字解析、可能执行了另一个——不会报错，日志还会骗你。作者指出，MCP 的信任边界若只建立在「工具名」这种可被伪装、可被重名的字符串上，就等于把执行权交给了一个不可靠的标识。Agent 工具生态越繁荣，这类静默风险越值得警惕。",
+    "quote": "按名字信任工具，日志还会替它撒谎。",
+    "source": "Dev.to",
+    "url": "https://dev.to/maltsev-dev/dont-trust-mcp-tool-names-1dh3",
+    "published": "2026-10-17",
+    "uid": "dev_35834a38"
+  },
+  {
+    "title": "夜间评测全红，没人改提示词——是当裁判的模型变了心",
+    "content": "一位工程师的夜间 eval 突然全红，可没人改过提示词、模型版本被锁定、检索也没动。排查后发现：变的是「打分裁判」——用来评判输出的模型悄悄改了判断标准，于是同一批输入、同一批产物，评分却集体下滑。这篇记录戳破了评测的一个盲区：当你用另一个模型去当裁判时，评测结果其实同时受被测系统和裁判稳定性影响，裁判一漂移，红线就亮得毫无道理。",
+    "quote": "没人动代码，是当裁判的模型变了心。",
+    "source": "Dev.to",
+    "url": "https://dev.to/kartik-nvjk/my-nightly-eval-gate-went-red-on-prompts-nobody-touched-the-judge-had-changed-its-mind-1cd6",
+    "published": "2026-10-17",
+    "uid": "dev_d85a16a4"
+  },
+  {
+    "title": "AI 重构代码 40% 会悄悄改坏，我是怎么用 7 步 SOP 防住的",
+    "content": "作者用 Claude Code 重构订单服务，CI 全绿、单测通过，上线第三天监控却炸了：P99 延迟翻了四倍，原因是 AI 在「优化」某个查询函数时，把一次 O(n) 的内存过滤换成了每次请求都查库的子查询。他由此总结出 7 步 SOP，用来防止这类「测试测不出、线上才爆炸」的隐性破坏。AI 重构最危险的地方在于它改得又快又自信，而现有测试往往只覆盖功能、不覆盖性能与语义边界。",
+    "quote": "CI 全绿也白搭，AI 改坏从不打招呼。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/uniqueDong/p/23324820",
+    "published": "2026-10-17",
+    "uid": "dev_e291422d"
+  },
+  {
+    "title": "装了这么多年 .NET，微软终于把 rustup 那套搬过来了",
+    "content": "微软为 .NET 引入了类似 rustup 的工具链管理方式 dotnetup，从公开路线图看，它把系统级安装、CI/CD 原生集成，乃至给 AI 编程助手准备的 agent skills 都纳入目标，志在成为安装 .NET 的唯一官方推荐方式。若真能落地，新人入职文档里那整页环境配置说明或许可以删掉。对一个常年被吐槽工具链繁琐的老牌平台来说，向「一条命令搞定」看齐，本身就是种态度转变。",
+    "quote": "被吐槽多年的 .NET 安装，终于学乖了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23330221",
+    "published": "2026-10-17",
+    "uid": "dev_77bcd2aa"
+  },
+  {
+    "title": "Show HN：Termexo——用一只 AI 统管你其它的编码 agent（Windows）",
+    "content": "有人给 Windows 做了个多 Agent 工作台 Termexo：把 Claude Code、Codex、OpenCode、Antigravity、Grok Build 等编码 agent 收进同一个界面，一眼看清哪个 agent 正卡着等你确认，随时续上会话，甚至能从手机远程接回。多开 agent 的人常被「到底谁在等我」搞得手忙脚乱，Termexo 相当于给这些散落的工位装了一块总控屏。",
+    "quote": "同时开五个 agent，谁在等你都记不清。",
+    "source": "HN Show HN",
+    "url": "https://github.com/gemron/Termexo",
+    "published": "2026-10-17",
+    "uid": "dev_84487dc5"
+  },
+  {
+    "title": "Show HN：Busabase——给 AI agent 用的开源数据库与工作台",
+    "content": "Busabase 是一个面向 AI agent 的开源数据库与工作台：把结构化数据、可持久的知识、可复用的技能、可运行的 app 收在一处，并在关键写入上保留人工审阅。它主张 local-first、可自托管，想解决的是 agent「干完就忘、结果散落各处」的老问题。对想让 agent 的产出真正沉淀下来、而不是每次推倒重来的团队，值得留意。",
+    "quote": "agent 干完就忘，那就先给它配个能存东西的库。",
+    "source": "HN Show HN",
+    "url": "https://github.com/busabase/busabase",
+    "published": "2026-10-17",
+    "uid": "dev_de64dea6"
+  },
+  {
+    "title": "Show HN：Tennis——一个本地离线的上下文索引工具",
+    "content": "Tennis 是一个本地离线的上下文索引工具：用命令行把任意文件、Chat 与 Claude 会话、Codex 历史统统塞进索引，之后离线检索。作者强调全程本机、不走云，等于给散落各处的「上下文碎片」建了一座私有图书馆。对在意隐私、又希望把过往对话变成可检索资产的人，这正好补上「记得住、找得到」那块拼图。",
+    "quote": "聊天记录全喂进本地索引，终于找得回上次那句。",
+    "source": "HN Show HN",
+    "url": "https://tennis.jlachance1.workers.dev/",
+    "published": "2026-10-17",
+    "uid": "dev_580e3de7"
+  },
+  {
+    "title": "Show HN：给出租房里那台「傻瓜」锅炉接上 AI 监控",
+    "content": "作者给自己出租房里的「傻瓜」锅炉做了套 AI 监控：房里已有三只 Ecobee 智能恒温器，却只在出事后才报警。于是他把温度、运行状态等数据接进自建监控，用 AI 提前识别异常，把「事后维修」变成「事前预警」。一个很接地气的 Show HN——不必是庞大的工业系统，普通房东也能用 AI 把家里那台老设备盯得明明白白。",
+    "quote": "智能恒温器只会马后炮，那就自己接个 AI 盯梢。",
+    "source": "HN Show HN",
+    "url": "https://ndroo.github.io/tapo-boiler-monitor/",
+    "published": "2026-10-17",
+    "uid": "dev_48551adb"
+  },
+  {
+    "title": "DNS 根密钥 10 月 11 日悄悄轮换，为何互联网毫无察觉",
+    "content": "2026 年 10 月 11 日，互联网上最受信任的一把密钥悄然易主：DNS 根区的主密钥轮换完成，却没有发出任何部署、没有亮起状态页，绝大多数人毫不知情。文章拆解这次 KSK 轮换是怎么在不中断全球解析的前提下走完的，以及信任链条为何能承受这种「无声交棒」。对做基础设施的人，这是一堂关于「最关键的改动要最低调」的现场课。",
+    "quote": "互联网换了把最要紧的钥匙，竟没一个人察觉。",
+    "source": "Dev.to",
+    "url": "https://dev.to/kashif_manzer/how-the-dns-root-rotated-its-master-key-on-october-11-without-breaking-the-internet-pm7",
+    "published": "2026-10-17",
+    "uid": "dev_ee602555"
+  },
+  {
+    "title": "wujie 微前端踩坑实录：一个子应用的 7 个生产事故现场",
+    "content": "文章复盘一个 Vue 3 + Vite + TS 的「三栖」子应用接入 wujie 微前端后踩出的 7 个生产事故：token 有三种来源、window 有两个归属，同一段代码要在三种形态下分别运行。作者把每个坑的现场、成因与修法都写了出来，读着像事故报告，实则是一份微前端集成的避雷手册。对正准备上无界/微前端的人，这些血的教训能省下不少加班。",
+    "quote": "同一个 window 两个爹，微前端一接全是坑。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/ChineseLiao/p/23330749",
+    "published": "2026-10-17",
+    "uid": "dev_a60a37ed"
+  },
+  {
+    "title": "单日涨星 2.5 万！AI 逆向工程 REA 到底强在哪",
+    "content": "文章拆解近期 GitHub 上的现象级项目 REA（Reverse Engineer Anything）：6 天从不到 1 万星飙到 11 万+，单日峰值涨星逾 2.5 万，一度霸榜趋势榜。作者追问它到底强在哪——把「逆向工程」这件原本门槛高、靠经验积累的事，用 AI 重新做了一遍。热度背后，折射的是开发者对「让 AI 接管脏活累活」的巨大期待，也提醒人别只看星星，要看它真正解决了什么。",
+    "quote": "六天涨十万星，先别跟风，看它到底解决啥。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/chingho/p/23329759",
+    "published": "2026-10-17",
+    "uid": "dev_a5d4577a"
+  },
+  {
+    "title": "分享一个 Python 音频转文字命令行工具，支持 Whisper 本地转录",
+    "content": "作者整理发布了一个 Python 音频转文字命令行工具：既支持本地 Whisper 模型做离线转录，也可接 OpenAI 语音 API，按环境与需求自由选择。输出支持 TXT、SRT、VTT、TSV、JSON 等格式，还能选配 DeepL 做翻译。对经常要把录音、播客、会议转成文字或字幕的人，这类「本地能跑、格式齐全」的小工具，比一堆笨重的商用方案顺手得多。",
+    "quote": "录音转字幕这种脏活，命令行一把梭最省心。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249490#reply1",
+    "published": "2026-10-17",
+    "uid": "dev_753a3a1f"
+  },
+  {
+    "title": "真·小而美的 macOS 原生 frp 客户端：Porta",
+    "content": "作者长期用 frp 做内网穿透，却始终找不到称心的 macOS 图形客户端，于是自己写了 Porta：原生性能、非套壳，专治命令行配置繁琐的痛点。对需要在 Mac 上管理多组 frp 隧道的人，一个干净的原生 GUI 意味着少写配置、少记参数。它也是当下个人开发者「看不惯现状就自己造一个」的典型样本——需求不大，但足够真实。",
+    "quote": "官配 GUI 一个能打的都没有，那就自己写。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249262#reply5",
+    "published": "2026-10-17",
+    "uid": "dev_e57144c3"
+  },
+  {
+    "title": "开源「一人 MCN」二更：让 Claude Code 把做过的事沉淀成套路",
+    "content": "作者更新开源项目「一人 MCN」SoloMCN：上一版让 Claude Code 从找热点一路做到抖音发布，这一版重点解决「沉淀」——把 Claude 做过的事固化下来，下次还会做，而且越做越好。相当于让 AI 把自己的操作变成可复用的套路，而不是每条内容都从零开始。对想一个人运营多平台内容、又不想被重复劳动拖垮的人，这提供了一条「让 AI 记住怎么做」的思路。",
+    "quote": "让 AI 把做过的事记成套路，下次直接照做。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249336#reply0",
+    "published": "2026-10-17",
+    "uid": "dev_85d1820a"
+  }
+]
