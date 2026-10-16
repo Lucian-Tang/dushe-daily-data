@@ -1,0 +1,110 @@
+[
+  {
+    "title": "Android 官方把 AI Agent 技能库开源了",
+    "content": "Android 团队开源了 android/skills：一套面向 AI Agent 的模块化指令与资源库，目的是帮 Agent 更好理解并执行符合 developer.android.com 最佳实践的特定模式。技能遵循开放的 agent skills 标准，即以 SKILL.md 标记文件给出任务的技术规范。团队称开发重点放在「评测显示 LLM 表现不佳的场景」，而非模型已擅长的成熟领域。",
+    "quote": "官方技能库专挑 LLM 不擅长的活，这思路挺实在。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/android/skills",
+    "published": "2026-10-17",
+    "uid": "ai_1051eb29"
+  },
+  {
+    "title": "ECC：给 Agent harness 做性能优化的那套系统",
+    "content": "affaan-m/ECC 自述是「Agent harness 的性能优化系统」，把技能、本能、记忆、安全与「研究优先」的开发方法打包，目标覆盖 Claude Code、Codex、Opencode、Cursor 等编码 Agent，以插件或 npm 包分发，MIT 开源。作者强调只从官方渠道安装，第三方镜像可能藏恶意代码。围绕 harness 层的「调优中间件」正形成小生态。",
+    "quote": "把 harness 调优做成中间件，Agent 也得保养。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/affaan-m/ECC",
+    "published": "2026-10-17",
+    "uid": "ai_cb84a981"
+  },
+  {
+    "title": "ruflo：多智能体 swarm 的「元 harness」",
+    "content": "ruvnet/ruflo 定位是「最初的 agent harness」，主打部署多玩家 swarm、编排自主工作流、构建对话式 AI 系统，自带自适应记忆、自学习、联邦协作与向量 RAG。它在 Claude Code 中按插件市场安装：core 提供基础工具，console 打开 Agent 座舱，mods 在会话内做路由与策略约束；其它 MCP 客户端用 npx 接入。作者提醒先审代码。",
+    "quote": "多智能体再热闹，也得先给它们一套座舱和交规。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/ruvnet/ruflo",
+    "published": "2026-10-17",
+    "uid": "ai_fddbe3b5"
+  },
+  {
+    "title": "ai-job-search：把求职全流程搬进你自己的机器",
+    "content": "MadsLorentzen/ai-job-search 是一套跑在本机的求职框架，基于 Claude Code 构建：填好个人画像后，让 Claude 帮你评估职位、定制简历、写求职信并准备面试，口号是「fork 下来，归你所有」。作者本行是地球物理学家，2025 年底被裁后为跑自己的求职写下这套流程，/scrape、/apply 等命令串起链路。他声明项目与 Anthropic 无隶属关系。",
+    "quote": "被裁的地球物理学家，干脆写了套求职流水线。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/MadsLorentzen/ai-job-search",
+    "published": "2026-10-17",
+    "uid": "ai_e49c33e8"
+  },
+  {
+    "title": "Dev.to：一张 T4 拆给三家，靠 245 行 Rust 网关计费",
+    "content": "有人把一张 Tesla T4 拆给三个付费用户跑 Gemma 4 E2B：写一个 245 行的 Rust 网关，给每个租户分配独立密钥、各自的 LoRA 适配器、优先级与私有缓存，并按 GPU 时间计费，账本与 vLLM 的计数器精确对到 token。它演示了在一张卡上做多租户 LoRA 服务、并用网关层做配额与计费的可行路径。对想低成本提供推理服务的小团队，这套「一卡三吃」的做法颇有参考价值。",
+    "quote": "一张 T4 三家用，账还算到 token，抠得很专业。",
+    "source": "Dev.to",
+    "url": "https://dev.to/xbill/renting-out-one-t4-to-three-customers-gemma-4-vllm-multi-lora-and-a-rust-gateway-3322",
+    "published": "2026-10-17",
+    "uid": "ai_8f629eaf"
+  },
+  {
+    "title": "Dev.to：多智能体为何会「流血式」吃掉上下文",
+    "content": "文章剖析多智能体系统一个隐蔽的架构失败：自主 Agent 会把原始工具返回与思考草稿直接追加进对话缓冲区，于是企业级 swarm 跑到第八轮时，上下文常被中间数据库负载撑到 8 万 token 以上。后果是检索精度被毁、延迟飙升，API 成本最高涨约 12 倍。作者指出本地测试一两轮很干净，但真实业务要连查多个遗留库、处理超时重试，线性缓冲区迟早被死 JSON 淹没。",
+    "quote": "上下文不是被模型吃掉的，是被死 JSON 撑死的。",
+    "source": "Dev.to",
+    "url": "https://dev.to/asifmiqbal/the-stateful-agent-memory-trap-why-swarms-bleed-context-2g0d",
+    "published": "2026-10-17",
+    "uid": "ai_83156bc3"
+  },
+  {
+    "title": "Dev.to：Claude Code 把 Git 当成了工作记忆",
+    "content": "文章注意到多数 AI 编码助手把 Git 当附属品：写代码、丢一个补丁就走人，开发者只好把上千行改动一次性提交、配一句泛泛的说明。作者称 Claude Code 在 2026 年把 Git 变成 Agent 循环的一等公民——它原生读取 diff、按 hunk 交互式暂存，并依据「语义范围」而非行数决定何时提交。采纳后提交粒度往往精细一个数量级，回归也能在进主干前暴露。",
+    "quote": "把 Git 当工作记忆，提交粒度细腻一个数量级。",
+    "source": "Dev.to",
+    "url": "https://dev.to/jsmanifest/claude-code-git-integration-in-2026-how-the-agent-reads-diffs-stages-hunks-and-decides-when-to-39m3",
+    "published": "2026-10-17",
+    "uid": "ai_5adf8f69"
+  },
+  {
+    "title": "Dev.to：在大仓库里，怎么让编码助手找对代码",
+    "content": "这是一篇面向初学者的动手工作坊：在大型 TypeScript 仓库里排查「maxRetries: 0 却仍发出三次请求」的重试 bug。作者主张，编码助手常在理解仓库前就给出看似合理的修复，而靠谱的排查要让推理可被检验——行为在哪个文件、什么证据能解释它、哪些检查能区分正确与半吊子修复。文章示范用仓库地图、ripgrep、ast-grep、符号跳转逐层定位，并产出证据笔记。",
+    "quote": "助手没看懂仓库就开始修，先教它怎么找代码。",
+    "source": "Dev.to",
+    "url": "https://dev.to/raabdahl/help-your-coding-assistant-find-the-right-code-in-large-repos-20e3",
+    "published": "2026-10-17",
+    "uid": "ai_64b9509a"
+  },
+  {
+    "title": "Dev.to：小模型也能上投机解码，Gemma 4 提速 1.7 倍",
+    "content": "用 Google 的 59MB QAT 多 token 预测 drafter 做投机解码，小卡也能提速：作者在 8GB RTX 3050 上让 Gemma 4 E4B 快 1.72 倍、E2B 快 1.40 倍，在 4GB 笔记本 GTX 1650 Ti 上分别为 1.49 倍与 1.18 倍，llama.cpp 串行伺服下分数不变。结论：投机解码不是大显存专属，小模型同样吃得到红利。",
+    "quote": "投机解码不是大显存专属，小卡也吃得到红利。",
+    "source": "Dev.to",
+    "url": "https://dev.to/gde/do-drafters-work-on-small-models-gemma-4-e2b-and-e4b-on-two-small-gpus-1b4g",
+    "published": "2026-10-17",
+    "uid": "ai_07fabd00"
+  },
+  {
+    "title": "博客园：AI 越强，它说「不」的代价就越大",
+    "content": "作者抛出反直觉一问：AI 越强，有些事会不会反而越难做？他从一次被拒经历说起——用 Codex 写 SQL 注入测试请求体时被拒，哪怕他手握源码、只在本地跑测试。他担心的不是规则本身，而是当 AI 同时扮演「干活」与「传授知识」两个角色时，拒绝不只挡下一次任务，也挡掉了获得这项能力的机会。等到多数程序由 AI 完成，被拒的成本会越来越贵。",
+    "quote": "AI 说「不」的那一刻，你还剩多少独立能耐。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/leikooo/p/23331970",
+    "published": "2026-10-17",
+    "uid": "ai_7f8879d4"
+  },
+  {
+    "title": "博客园：一款 3D 游戏全程由 AI 制作，流程公开",
+    "content": "作者公开了一款几乎全流程由 AI 制作的 3D 游戏：从场景搭建、人物到代码调试，主要工作都交给 AI。流水线五步走：Fable 5.1 出 PRD、GPT Image 2.5 生成参考图、Tripo 产出 3D 资产与人物模型、Opus 5.5 操控 Blender 与 Unity 建模搭代码、Astra 迭代优化与修 bug；人物经 Auto-Rig Pro 绑骨、Mixamo 接动作。",
+    "quote": "从建模到修 bug 全交给 AI，人只负责派提示词。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/652769324qq/p/23328265",
+    "published": "2026-10-17",
+    "uid": "ai_dd7f996a"
+  },
+  {
+    "title": "博客园：把工程流程沉淀为「文件资产」的四层工作流",
+    "content": "作者把软件工程全流程（需求→PRD→原型→契约→前后端实现→测试→变更日志→一致性核验）沉淀为文件资产，核心主张一句话：上下文不该活在对话里，应该活在文件里。针对上下文活不过一次会话、产物不可追溯、流程纪律靠自觉三大痛点，它用命令、角色、技能、规约四层结构拆解「做一件事」，并以契约先行与「三棒交接」解决前后端口径分歧。",
+    "quote": "上下文不该活在对话里，应该活在文件里。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/huangrenhui/p/23327347",
+    "published": "2026-10-17",
+    "uid": "ai_fe4e0101"
+  }
+]

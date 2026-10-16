@@ -1,0 +1,233 @@
+[
+  {
+    "uid": "ai_da6617e3",
+    "title": "Elorian 首发模型 Glimpse：让模型在推理中途反复「回看」原图",
+    "content": "成立即拿 5500 万美元种子轮、估值 3 亿美元的初创 Elorian 发布首个模型 Glimpse。其判断是：如今的多模态模型其实「看不见」——把图像转成 token 后只在文本里推理，像凭记忆复述照片。Glimpse 的做法是在推理中途反复回看原图：裁剪局部、抽取视频帧，甚至跑代码去测量比对，官方称之为「视觉暂存区」。团队称用几百张 GPU 训练，体量远小于对标的旗舰系统，定价处于中等价位。",
+    "quote": "说别人看不见，自己也只是眯着眼看。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
+    "published": "2026-10-17",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "ai_e4d5a1bb",
+    "title": "Anthropic 警告：小型模型或将催生能感染家电的自复制恶意软件",
+    "content": "Anthropic 警告，小型 AI 模型的进步可能催生新一代自复制恶意软件：它能感染智能冰箱、扫地机器人等设备，且无中心节点、极难剿灭。团队把小型开源权重模型跑在廉价 Android TV 盒子上，靠量化与分片拼出算力——Gemma4-26B-A4B 仅需 15 台 4GB 内存设备即可推理，Qwen3.5-9B 能为九种硬件中的八种自动配置。传统恶意软件须为特定硬件写，它却能自行适配陌生设备。",
+    "quote": "AI 病毒钻进冰箱，还没法关机了。",
+    "source": "Ars Technica",
+    "url": "https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/",
+    "published": "2026-10-17",
+    "vendor": "anthropic",
+    "direction": "模型发布"
+  },
+  {
+    "uid": "ai_021ab34c",
+    "title": "Postgres 19 推迟发布：LLM 代码审查挖出的 bug 人类修不完",
+    "content": "PostgreSQL 19 宣布推迟，预计延至 11 月 19 日前后发布，并撤回 8 至 10 项重要特性。核心提交者 Peter Eisentraut 把原因部分归于 LLM 辅助代码审查：它挖出一长串过去也许要等发布后五年才被发现的边缘缺陷，「可能一下子面对四十份缺陷报告，哪怕每个平均只改三行，处理也有固定开销，然后就来不及了」。他强调这并非「氛围编程」，只是质量门槛在功能写完后被抬高了。",
+    "quote": "AI 审出的 bug，人类没空修。",
+    "source": "The Register",
+    "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
+    "published": "2026-10-17",
+    "vendor": "other",
+    "direction": "模型发布"
+  },
+  {
+    "uid": "ai_f2f3235e",
+    "title": "苹果 MLX 实测：近万亿参数模型在四台 Mac Studio 上跑起来",
+    "content": "苹果团队用最新版 MLX 让近万亿参数的 Muse Spark Open 在 Mac Studio 上跑起来：单机最高 512GB 内存起步，再借 Thunderbolt 上的 RDMA 横向扩展。实测四台 Mac Studio（M5 Ultra）张量并行下解码超 36 tokens/秒，快过人类平均阅读速度。苹果想证明，前沿大模型不必上云，桌上就能私密跑。",
+    "quote": "万亿参数不上云，桌面就能私密跑。",
+    "source": "Apple ML Research / HN Front",
+    "url": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+    "published": "2026-10-17",
+    "vendor": "other",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "ai_27443446",
+    "title": "StarSkirmish Bench v0.2：让大模型现场写《星际争霸》bot",
+    "content": "StarSkirmish 让 LLM 现场写《星际争霸》bot：模型只有一小时，用 C++ 写一个神族 bot，与其它模型及人类成熟 bot 对战，按胜率打分。v0.2 纳入 OpenAI、Anthropic、谷歌、Meta 旗舰模型，跑在本家官方 CLI。结果 GPT-6 Astra 领先，GPT-6.1 Sol 居次，Gemini 4 Argon 等紧随（37 至 39），榜单毫无饱和迹象。",
+    "quote": "一小时写个 bot，输了别怪算力。",
+    "source": "StarSkirmish / HN Front",
+    "url": "https://starskirmish.com/bench/v0-2/",
+    "published": "2026-10-17",
+    "vendor": "anthropic",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "ai_b67a50fe",
+    "title": "七位数学家：把全部数学形式化之前，先想清楚谁来用",
+    "content": "七位数学家（含 Kevin Buzzard）联名撰文，回应「趁 AI 擅长证明定理，赶紧把全部数学形式化」的呼声。他们认可形式化的价值，却警告「急就章」式推进可能浪费巨资、扰乱科研规范，甚至让领域倒退数十年：形式化产物若无人使用便几乎没有价值——此前 AI 生成的形式化代码往往清理成本高于重写。文中以 Mathlib、Tau Ceti 等库为例，主张把此事当作「对齐问题」的特例认真对待。",
+    "quote": "全部形式化之前，先问清楚谁来用。",
+    "source": "Xena Project / HN Front",
+    "url": "https://xenaproject.wordpress.com/2026/10/16/how-to-formalize-all-of-mathematics/",
+    "published": "2026-10-17",
+    "vendor": "other",
+    "direction": "行业动态"
+  },
+  {
+    "uid": "ai_cdb007c7",
+    "title": "arXiv：四个 Gemini 4 Argon 智能体从零通关《我的世界》",
+    "content": "论文把四个 Gemini 4 Argon 智能体放进沙盒生存世界，只给一个目标——击败末影龙。每个智能体通过开源库 Mineflayer 操控一名玩家，靠游戏内聊天与共享记忆协同；无人分配角色或编写游戏逻辑，程序全由智能体自己规划、编写、调试。它们从随机生成的「简单」难度世界起步，共写 2783 个程序，历时 27 小时 14 分、死亡 605 次后击败末影龙。作者称这是智能体首次仅用标准库通关。",
+    "quote": "死了 605 次才通关，胜在不肯放弃。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2610.22319",
+    "published": "2026-10-17",
+    "vendor": "google",
+    "direction": "模型发布"
+  },
+  {
+    "uid": "ai_dba5e0c5",
+    "title": "arXiv：让去中心化智能体集群学会「竞价」自组织",
+    "content": "论文提出「市场化后训练」（MPT），让去中心化智能体集群在训练中同时学会动作策略与自组织。智能体通过「出价」表达参与意愿，出价决定谁行动，并据集体结果分配本地训练信用；动作与投标行为一起学习，个体能力与参与模式随之共同演化，无需中心协调者。作者在具身合成、机器人导航与深度研究三类任务上验证：相比单体后训练有稳定提升，且学到的自组织优于其它协调策略。",
+    "quote": "让 AI 自己拼桌组队，别再由人类排座次。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2610.22322",
+    "published": "2026-10-17",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "ai_4a4cb421",
+    "title": "V2EX 热帖：给 AI 员工搞「末位淘汰」，干活会更猛吗",
+    "content": "V2EX 一则连载帖引发关注：楼主在自建的「全员 AI 公司」里加了「企业文化」模块，把默认、积极务实、狼性高自主、末位淘汰高压锅四档基调写进每个 AI 角色的系统提示词，只给有决策空间的 11 个核心岗位配性格。他用四套一键阵容实测 OpenCompare：标准均衡、硅谷极客、狼性铁军、末位淘汰高压团队，对比交付耗时、Token 账单与产品完成度。楼主判断全员激进没人踩刹车，得靠岗位性格对冲。",
+    "quote": "人类内卷不够，还要让 AI 末位淘汰。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1249479",
+    "published": "2026-10-17",
+    "vendor": "other",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "ai_78253e4e",
+    "title": "HF 论文：给「策略漂移」蒸馏加个中间路标",
+    "content": "论文研究策略漂移蒸馏：它把教师模型在强化学习前后对数概率之差，当作对学员轨迹的监督信号。但作者指出，只看起终点的漂移无法反映训练中局部动作偏好是否一致演化——同样的端点漂移，可能来自前后相互抵消的变化。为此提出 Waypoint-OPD：用同一次 RL 训练中的中间检查点，对比早期与晚期漂移，判断二者是否一致，从而选择性地进行迁移，为「该不该学、该学哪一段」提供可度量依据。",
+    "quote": "老师一路怎么变的，不能只看起点终点。",
+    "source": "HuggingFace Papers",
+    "url": "https://huggingface.co/papers/2610.21601",
+    "published": "2026-10-17",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "ai_4090e30b",
+    "title": "HF 论文：把通用电脑操作智能体的整套栈开源",
+    "content": "论文提出「通用电脑操作智能体」（GCUA）概念：模型自行决定如何跨视觉与程序化接口去观察、行动与组织工作。但当前前沿实现（如 GPT-6 Astra 的电脑操作）大多闭源，难以系统研究其设计。作者发起 OpenGCUA 项目，联合社区开放 GCUA 全栈，报告给出首个版本，并强调代码执行是关键能力，目标是把「通用电脑操作」从少数闭源系统变成可复现、可比较的开放研究。",
+    "quote": "别人藏着的电脑操作智能体，他们要摊开。",
+    "source": "HuggingFace Papers",
+    "url": "https://huggingface.co/papers/2610.22200",
+    "published": "2026-10-17",
+    "vendor": "openai",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "ai_5de18bb5",
+    "title": "HF 论文：用「旋转对齐」考视觉语言模型的三维感",
+    "content": "论文提出 RoTA-Bench：给定一个目标剪影，模型观察一个被旋转过的物体，须在有限动作预算内连续旋转它，使投影重新对齐目标剪影。这考验模型从二维观测推断三维几何、预判旋转效果并依据视觉反馈修正动作的能力。作者用自动化流水线从二维图标构建保持剪影的三维物体，借可逆初始化保证可解，共生成 674 个任务与分层 100 题测试集，为三维理解提供可量化考场。",
+    "quote": "会认图不算本事，能转回来才算。",
+    "source": "HuggingFace Papers",
+    "url": "https://huggingface.co/papers/2610.17665",
+    "published": "2026-10-17",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "ai_7d883686",
+    "title": "ai-job-search：把求职全流程搬进你自己的机器",
+    "content": "MadsLorentzen/ai-job-search 是一套跑在本机的求职框架，基于 Claude Code 构建：填好个人画像后，让 Claude 帮你评估职位、定制简历、写求职信并准备面试，口号是「fork 下来，归你所有」。作者本行是地球物理学家，2025 年底被裁后为跑自己的求职写下这套流程，/scrape、/apply 等命令串起链路。他声明项目与 Anthropic 无隶属关系。",
+    "quote": "被裁的地球物理学家，干脆写了套求职流水线。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/MadsLorentzen/ai-job-search",
+    "published": "2026-10-17",
+    "vendor": "anthropic",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "ai_b30a7b83",
+    "title": "Dev.to：一张 T4 拆给三家，靠 245 行 Rust 网关计费",
+    "content": "有人把一张 Tesla T4 拆给三个付费用户跑 Gemma 4 E2B：写一个 245 行的 Rust 网关，给每个租户分配独立密钥、各自的 LoRA 适配器、优先级与私有缓存，并按 GPU 时间计费，账本与 vLLM 的计数器精确对到 token。它演示了在一张卡上做多租户 LoRA 服务、并用网关层做配额与计费的可行路径。对想低成本提供推理服务的小团队，这套「一卡三吃」的做法颇有参考价值。",
+    "quote": "一张 T4 三家用，账还算到 token，抠得很专业。",
+    "source": "Dev.to",
+    "url": "https://dev.to/xbill/renting-out-one-t4-to-three-customers-gemma-4-vllm-multi-lora-and-a-rust-gateway-3322",
+    "published": "2026-10-17",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "ai_9384823b",
+    "title": "Dev.to：多智能体为何会「流血式」吃掉上下文",
+    "content": "文章剖析多智能体系统一个隐蔽的架构失败：自主 Agent 会把原始工具返回与思考草稿直接追加进对话缓冲区，于是企业级 swarm 跑到第八轮时，上下文常被中间数据库负载撑到 8 万 token 以上。后果是检索精度被毁、延迟飙升，API 成本最高涨约 12 倍。作者指出本地测试一两轮很干净，但真实业务要连查多个遗留库、处理超时重试，线性缓冲区迟早被死 JSON 淹没。",
+    "quote": "上下文不是被模型吃掉的，是被死 JSON 撑死的。",
+    "source": "Dev.to",
+    "url": "https://dev.to/asifmiqbal/the-stateful-agent-memory-trap-why-swarms-bleed-context-2g0d",
+    "published": "2026-10-17",
+    "vendor": "other",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "ai_7c4e867c",
+    "title": "Dev.to：Claude Code 把 Git 当成了工作记忆",
+    "content": "文章注意到多数 AI 编码助手把 Git 当附属品：写代码、丢一个补丁就走人，开发者只好把上千行改动一次性提交、配一句泛泛的说明。作者称 Claude Code 在 2026 年把 Git 变成 Agent 循环的一等公民——它原生读取 diff、按 hunk 交互式暂存，并依据「语义范围」而非行数决定何时提交。采纳后提交粒度往往精细一个数量级，回归也能在进主干前暴露。",
+    "quote": "把 Git 当工作记忆，提交粒度细腻一个数量级。",
+    "source": "Dev.to",
+    "url": "https://dev.to/jsmanifest/claude-code-git-integration-in-2026-how-the-agent-reads-diffs-stages-hunks-and-decides-when-to-39m3",
+    "published": "2026-10-17",
+    "vendor": "anthropic",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "ai_579b7695",
+    "title": "Dev.to：在大仓库里，怎么让编码助手找对代码",
+    "content": "这是一篇面向初学者的动手工作坊：在大型 TypeScript 仓库里排查「maxRetries: 0 却仍发出三次请求」的重试 bug。作者主张，编码助手常在理解仓库前就给出看似合理的修复，而靠谱的排查要让推理可被检验——行为在哪个文件、什么证据能解释它、哪些检查能区分正确与半吊子修复。文章示范用仓库地图、ripgrep、ast-grep、符号跳转逐层定位，并产出证据笔记。",
+    "quote": "助手没看懂仓库就开始修，先教它怎么找代码。",
+    "source": "Dev.to",
+    "url": "https://dev.to/raabdahl/help-your-coding-assistant-find-the-right-code-in-large-repos-20e3",
+    "published": "2026-10-17",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "ai_7ca085fe",
+    "title": "Dev.to：小模型也能上投机解码，Gemma 4 提速 1.7 倍",
+    "content": "用 Google 的 59MB QAT 多 token 预测 drafter 做投机解码，小卡也能提速：作者在 8GB RTX 3050 上让 Gemma 4 E4B 快 1.72 倍、E2B 快 1.40 倍，在 4GB 笔记本 GTX 1650 Ti 上分别为 1.49 倍与 1.18 倍，llama.cpp 串行伺服下分数不变。结论：投机解码不是大显存专属，小模型同样吃得到红利。",
+    "quote": "投机解码不是大显存专属，小卡也吃得到红利。",
+    "source": "Dev.to",
+    "url": "https://dev.to/gde/do-drafters-work-on-small-models-gemma-4-e2b-and-e4b-on-two-small-gpus-1b4g",
+    "published": "2026-10-17",
+    "vendor": "google",
+    "direction": "行业动态"
+  },
+  {
+    "uid": "ai_10e36c9c",
+    "title": "博客园：AI 越强，它说「不」的代价就越大",
+    "content": "作者抛出反直觉一问：AI 越强，有些事会不会反而越难做？他从一次被拒经历说起——用 Codex 写 SQL 注入测试请求体时被拒，哪怕他手握源码、只在本地跑测试。他担心的不是规则本身，而是当 AI 同时扮演「干活」与「传授知识」两个角色时，拒绝不只挡下一次任务，也挡掉了获得这项能力的机会。等到多数程序由 AI 完成，被拒的成本会越来越贵。",
+    "quote": "AI 说「不」的那一刻，你还剩多少独立能耐。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/leikooo/p/23331970",
+    "published": "2026-10-17",
+    "vendor": "other",
+    "direction": "行业动态"
+  },
+  {
+    "uid": "ai_baadeee9",
+    "title": "博客园：一款 3D 游戏全程由 AI 制作，流程公开",
+    "content": "作者公开了一款几乎全流程由 AI 制作的 3D 游戏：从场景搭建、人物到代码调试，主要工作都交给 AI。流水线五步走：Fable 5.1 出 PRD、GPT Image 2.5 生成参考图、Tripo 产出 3D 资产与人物模型、Opus 5.5 操控 Blender 与 Unity 建模搭代码、Astra 迭代优化与修 bug；人物经 Auto-Rig Pro 绑骨、Mixamo 接动作。",
+    "quote": "从建模到修 bug 全交给 AI，人只负责派提示词。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/652769324qq/p/23328265",
+    "published": "2026-10-17",
+    "vendor": "anthropic",
+    "direction": "应用/落地"
+  },
+  {
+    "uid": "ai_7709129b",
+    "title": "博客园：把工程流程沉淀为「文件资产」的四层工作流",
+    "content": "作者把软件工程全流程（需求→PRD→原型→契约→前后端实现→测试→变更日志→一致性核验）沉淀为文件资产，核心主张一句话：上下文不该活在对话里，应该活在文件里。针对上下文活不过一次会话、产物不可追溯、流程纪律靠自觉三大痛点，它用命令、角色、技能、规约四层结构拆解「做一件事」，并以契约先行与「三棒交接」解决前后端口径分歧。",
+    "quote": "上下文不该活在对话里，应该活在文件里。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/huangrenhui/p/23327347",
+    "published": "2026-10-17",
+    "vendor": "other",
+    "direction": "行业动态"
+  }
+]
