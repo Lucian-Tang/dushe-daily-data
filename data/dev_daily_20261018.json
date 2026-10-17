@@ -1,0 +1,227 @@
+[
+  {
+    "title": "越狱 PS5 原生跑 llama.cpp：游戏机成了推理服务器",
+    "content": "作者把 llama.cpp 移植到了越狱后的 PS5 上，不装 Linux、不用容器，直接在主机固件环境里加载 GGUF 权重，首个验证模型是 Qwen 3.8，项目用 C++ 写成。做法上绕开官方 SDK，靠社区逆向出的调用约定把推理跑在主机 CPU 上，速度谈不上实用，但把「闲置算力」这件事的想象力打开了：你家里那台只会打游戏的黑盒子，其实是一台待机的推理服务器。",
+    "quote": "买来打游戏的盒子，先被你拿去跑模型。",
+    "source": "HN Front Page",
+    "url": "https://github.com/cobanov/PS5LM",
+    "published": "2026-10-18",
+    "uid": "dev_c05f3812"
+  },
+  {
+    "title": "JPEG XL 全面进浏览器后，Jake Archibald 做了场实测",
+    "content": "JPEG XL 已经在所有主流浏览器落地，Jake Archibald 拿真实站点数据把它和 AVIF 摆在一起比：有损照片场景下 AVIF 几乎总是更小，同档位 JPEG XL 通常大 15%–25%，把压缩档位拉满也只缩到 6%–20%；但无损、渐进式解码和「一份图多档质量」这些能力上，JXL 的优势依然明显。结论不站队，而是按场景给建议——这比无脑喊「新格式吊打旧格式」有用得多。",
+    "quote": "别急着换格式，先看你到底在压什么。",
+    "source": "HN Front Page",
+    "url": "https://jakearchibald.com/2026/jpeg-xl-vs-avif/",
+    "published": "2026-10-18",
+    "uid": "dev_134fd81b"
+  },
+  {
+    "title": "广告技术公司，成了「雇佣间谍软件」的投递管道",
+    "content": "Cory Doctorow 转发的一篇调查指出，一家以色列广告技术公司把自家广告投放链路变成了雇佣间谍软件的投递系统：恶意广告不需要你点安装包，只要命中特定人群画像，就能借广告位把载荷送进目标设备。可怕的不是技术多高明，而是商业模式本身——广告业为精准投放建起的追踪与定向能力，天然就是一套现成的攻击基础设施，卖给谁只是合同问题。",
+    "quote": "精准投放的下一步，是精准投毒。",
+    "source": "HN Front Page",
+    "url": "https://pluralistic.net/2026/10/17/mercenary-spyware/",
+    "published": "2026-10-18",
+    "uid": "dev_3512337e"
+  },
+  {
+    "title": "从「联想记忆」出发，自己把 Transformer 推一遍",
+    "content": "这篇长文回答一个问题：如果不知道注意力机制，能不能从最朴素的联想记忆模型一路推导出 Transformer？作者从键值检索出发，把「查询—匹配—加权取回」写成矩阵运算，再补上多头、位置编码与前馈层，每一步都给动机而不是直接甩公式。对已经被「Attention is all you need」喂大的开发者来说，这是一次难得的重建式理解：不是记住结构，而是知道它为什么长这样。",
+    "quote": "公式背得再熟，不如自己推一遍。",
+    "source": "HN Front Page",
+    "url": "https://alexwang.ai/posts/associative-memory/",
+    "published": "2026-10-18",
+    "uid": "dev_bb0d63a7"
+  },
+  {
+    "title": "ECDSA 曲线参数从哪来？Claude 把三十年的悬案解了",
+    "content": "ECDSA 用的那几条曲线，参数一直没人说得清是怎么选出来的：是随机种子，还是另有隐情，密码学社区猜了几十年。Anthropic 让 Claude 去追这条线索，最终找到了种子来源，把「可能就是时间戳」这类猜测落到实证上，Filippo Valsorda 也写了长文复盘。官方特意强调这只是给旧谜题收尾，不需要改代码。但意义不小——密码学里「相信我们没做手脚」的地方，越少越好。",
+    "quote": "三十年的「相信我」，终于换成了证据。",
+    "source": "HN Front Page",
+    "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+    "published": "2026-10-18",
+    "uid": "dev_7d064274"
+  },
+  {
+    "title": "Show HN：wsudo——给 Windows 补一个不用 UAC 的 sudo",
+    "content": "Windows 一直没有趁手的 sudo，作者说微软官方那套似乎已停更，于是 wsudo 换了个思路：装一个系统服务，由它给进程重新分配令牌，执行提权命令时全程不弹 UAC——真的不弹。项目用 C++ 写，目前还在极早期，作者自己标了「可能有漏洞、勿用于生产」。想先把「每次都要点确认」这件事干掉的，可以拿去折腾。",
+    "quote": "提权不弹窗，方便和危险只差一行。",
+    "source": "HN Show HN",
+    "url": "https://github.com/parkovski/wsudo",
+    "published": "2026-10-18",
+    "uid": "dev_c4571b89"
+  },
+  {
+    "title": "Show HN：vramkit——在 MacBook 上把 LLM 显存压下来",
+    "content": "vramkit 盯的是推理时最吃显存的两块：模型权重和 KV cache。权重这边用自研的 32 位 range coder 加二维自适应上下文，在 Qwen2.5-0.5B 的真实 int4 权重上做到无损、比原始 4-bit 再小 33%，还略胜 zstd/xz；KV cache 则发现「按通道而非按 token」量化 key，int8 下困惑度只涨 0.1%。全部在 MacBook 上跑通。",
+    "quote": "显存不够别急着换卡，先把权重榨干。",
+    "source": "HN Show HN",
+    "url": "https://github.com/SRKRZ23/vramkit",
+    "published": "2026-10-18",
+    "uid": "dev_584ddba4"
+  },
+  {
+    "title": "Show HN：Offscreen——给每个 Agent 一块独立的 Mac 屏幕",
+    "content": "Coding agent 跑 XCUITest、开 iOS 模拟器或启动刚编好的 App 时，会直接抢占你的桌面：窗口乱弹、焦点乱跳，人只能干等。Offscreen 把这些活丢进一次性的 macOS 虚拟机，多个 agent、终端和脚本共用一个队列，跑完交回日志、截图和 .xcresult。它基于 Tart，分 VM 与 host 两条通道，你回来时 host 任务会自动让路。",
+    "quote": "Agent 抢你屏幕的日子，该结束了。",
+    "source": "HN Show HN",
+    "url": "https://github.com/markphelps/offscreen",
+    "published": "2026-10-18",
+    "uid": "dev_c1ab6338"
+  },
+  {
+    "title": "Show HN：esp32sim——在浏览器里跑真实 ESP32 固件",
+    "content": "esp32sim 用 Rust 做指令级模拟，覆盖 ESP32、S3、C3、C6 四款芯片和 Xtensa、RISC-V 两套架构。它不打补丁、不塞桩，直接启动真实 mask ROM、二级 bootloader 和未改动的应用镜像，GPIO、UART、定时器、WiFi 都做了建模，还能在浏览器里跑。对没买板子、又想先验证固件的人来说，门槛一下低了不少。",
+    "quote": "没板子也能跑固件，硬件厂商要皱眉。",
+    "source": "HN Show HN",
+    "url": "https://github.com/mikroverk/esp32sim",
+    "published": "2026-10-18",
+    "uid": "dev_17110c06"
+  },
+  {
+    "title": "akitaonrails/ai-memory：给 Coding Agent 装一套长期记忆",
+    "content": "Rust 写的 ai-memory 想解决一个很具体的痛点：换一个 Agent 客户端，之前聊过的项目上下文就全丢了。它把记忆抽成独立于厂商的一层，由本地服务负责存储与检索，Claude Code、Codex 这类 CLI 只当消费者，于是「今天用 A、明天换 B」时上下文还能接得上。项目五月底开源，如今近万星。Agent 工具越来越像浏览器，谁掌握记忆层，谁就掌握迁移成本。",
+    "quote": "换 Agent 不丢记忆，才算真自由。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/akitaonrails/ai-memory",
+    "published": "2026-10-18",
+    "uid": "dev_5bed4d79"
+  },
+  {
+    "title": "stablyai/orca：把一群 Agent 当「机房」来调度",
+    "content": "Orca 的定位是「和一支 Agent 舰队一起干活」：桌面端、移动端、远程运行时三处入口，可以同时跑多个 Coding Agent，各自用你自己的订阅账号，任务分发、会话查看和结果回收都在一个面板里。九万五千星说明它踩中了真实需求——单人已经管不过来三五个并行会话。今年工具链的竞争点，正从「哪个模型更聪明」转向「怎么把一堆不听话的 Agent 管住」。",
+    "quote": "一个人带十个 Agent，先得有块调度面板。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/stablyai/orca",
+    "published": "2026-10-18",
+    "uid": "dev_e5eb677e"
+  },
+  {
+    "title": "开源 AI 运维终端：SSH、K8s、数据库塞进一个窗口",
+    "content": "作者的出发点很实在：SSH 一个窗口、k9s 一个、Navicat 一个、堡垒机一个，出事时 AI 还在另一个终端里乱跑，根本不知道它连到哪台机器。于是他把这些揉成 Apache-2.0 的开源终端 aiopsterm，分屏里同时连主机、看文件、开 K8s 面板、查数据库，AI 也在这套连接上下文里干活。运维工具正被 AI 重做一遍，缺的往往不是「更智能」，而是「别再让我切窗口」。",
+    "quote": "AI 运维第一步，先让它知道连的是哪台机。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249548",
+    "published": "2026-10-18",
+    "uid": "dev_b91ef955"
+  },
+  {
+    "title": "AI 花几天把暗黑 2 的 Switch 版原生跑上安卓，60 帧",
+    "content": "作者说自己一行代码没写，让 AI 花几天把《暗黑破坏神 2》Switch 版原生移植到了安卓，稳定 60 帧——注意是原生运行而不是模拟器，模拟器方案只能到 30 帧。仓库已开源，思路是参考此前 d2r-mobile 的工作继续推进。这条帖子真正有意思的地方不在游戏：一个非专业开发者靠对话啃下复杂的图形与输入适配，说明「AI 能写代码」和「AI 能交付项目」之间的距离，比想象中短。",
+    "quote": "一行没写，60 帧跑起来了，你还在调环境。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249571",
+    "published": "2026-10-18",
+    "uid": "dev_157cbb8b"
+  },
+  {
+    "title": "Pebrel：给 Windows 做一个更像样的 Agent 终端",
+    "content": "作者眼馋 macOS 上的终端体验——分屏、会话持久化、消息通知、命令补全，Windows 上始终没有趁手的，于是自己 vibe 了一个。Pebrel 最新版把界面字体统一成 Geist/系统字体，补上终端内容搜索、重做 shell 选择面板、美化 markdown 渲染，还加了目录面包屑和粘性目录。对天天在 Windows 上开多个 agent 会话的人，至少不用在丑终端里将就了。",
+    "quote": "Windows 终端丑了这么多年，终于有人管。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249654#reply0",
+    "published": "2026-10-18",
+    "uid": "dev_cd9fe88a"
+  },
+  {
+    "title": "开源 Iterlay：让 Coding Agent 在画布上配图、改图和理素材",
+    "content": "Iterlay 把参考图、生成、编辑、版本链和素材整理放进同一张无限画布，同时提供 CLI 和 Skill，让 Codex、Claude Code 这类 agent 直接参与操作。典型用法是：先生成一组产品或页面素材，在画布上比较、局部修改，再导出到项目的 assets 目录。图片编辑结果会进入版本链，能回看提示词和引用图；画板和素材都存在本机，模型调用则走你自己配置的服务。",
+    "quote": "Agent 只会写代码不够，还得会自己找图。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249597#reply0",
+    "published": "2026-10-18",
+    "uid": "dev_0529a53e"
+  },
+  {
+    "title": "开源记账 Zenance：本地优先、端到端加密的 PWA",
+    "content": "受够记账 App 的开屏广告、订阅和上传财务数据，作者写了 Zenance：纯前端 PWA，数据存在本机 IndexedDB，没有后端、没有埋点，断网也能记。同步走个人 Dropbox，但数据在出浏览器前用 Web Crypto 做 AES-GCM 加密，云端只存密文。有多币种、分类预算、人际应收应付与分账、PIN 防窥和 JSON 导入导出，技术栈是 React 19 + TS + Vite。",
+    "quote": "账本上云可以，但云端只配看密文。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249567#reply0",
+    "published": "2026-10-18",
+    "uid": "dev_0bee63c6"
+  },
+  {
+    "title": "零依赖的火山方舟联网搜索 skill，pip 都不用装",
+    "content": "作者想在 PI Coding Agent 里加联网搜索，翻遍社区没找到能用的方舟方案，就自己写了一个：纯 Python 标准库实现，不装任何第三方包；API key 自动从本地 agent 配置读取，配过方舟的直接能用；后端走方舟 Responses API 内置的联网内容插件，由模型自己决定何时检索。这类「小而准」的胶水工具，恰恰是 Agent 生态最缺的一层——大厂给能力，社区补缝隙。",
+    "quote": "生态的缝隙，全靠这种小脚本补。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1238902",
+    "published": "2026-10-18",
+    "uid": "dev_1e77ef79"
+  },
+  {
+    "title": "llms.txt 到底有用吗？30 天实测：AI 爬虫一次没读",
+    "content": "作者给站点加了 llms.txt，统计 30 天日志：Cloudflare 识别的 AI 爬虫抓了 robots.txt 605 次、文章 sitemap 192 次、首页 207 次，而 llms.txt 与 llms-full.txt 是 0 次，并用三种方法验证这不是统计误差。结论克制：文件继续留着，成本几乎为零，有人或 AI 主动来读时至少有一页干净结构。",
+    "quote": "写给 AI 看的文件，AI 一次都没看。",
+    "source": "Dev.to",
+    "url": "https://dev.to/yappatyih/does-llmstxt-work-in-30-days-no-ai-crawler-read-mine-1ajn",
+    "published": "2026-10-18",
+    "uid": "dev_5717cc82"
+  },
+  {
+    "title": "Cursor 的 hook 写了 ask，auto-review 里可能直接执行",
+    "content": "作者给 Cursor 配了 hook，专门拦 prisma migrate reset、drizzle-kit push --force 这类危险数据库命令，返回值设成 ask，本意是让人工确认而不是硬拒。但在两种模式里符合预期，到了 auto-review 就不一定：命令可能绕过确认直接跑掉。这不是配置写错，而是「策略声明」与「执行路径」之间有缝隙——加护栏的人得验证护栏真被走到。",
+    "quote": "写了 ask 不等于有人问，护栏要验。",
+    "source": "Dev.to",
+    "url": "https://dev.to/labyrinthlab/your-cursor-hook-says-ask-in-auto-review-the-command-may-just-run-36b9",
+    "published": "2026-10-18",
+    "uid": "dev_aa9367af"
+  },
+  {
+    "title": "把自然语言变成跨平台 shell 命令：Helpline 用本地模型兜底",
+    "content": "Helpline 是个 Python CLI：你用大白话描述要做的事，它识别当前系统和 shell，拼好带平台规则的提示词，交给本地 Ollama 的 qwen2.5-coder:3b 生成命令。默认直接执行，但加 --print 可以先看命令、--json 拿结构化结果，避免模型一抽风就把危险操作跑掉。对记不住 tar、find 各种平台参数的人，这东西比翻手册快。",
+    "quote": "让 AI 写命令可以，先让它把命令交出来。",
+    "source": "Dev.to",
+    "url": "https://dev.to/tsadarsh/helpline-local-ai-that-turns-plain-english-into-cross-platform-shell-commands-35ae",
+    "published": "2026-10-18",
+    "uid": "dev_70403119"
+  },
+  {
+    "title": "审计日志不是加个 log 就完事：生产级防篡改链路怎么设计",
+    "content": "文章先把审计日志和应用日志、系统日志、遥测拆开：前者记录「谁、凭什么权限、改了什么、改前改后是什么」，要求长期保留、只追加、可验证，不能和会轮转的 debug 日志混在一起。接着给出落地方案：热路径异步投递、统一 schema、哈希链保证防篡改、按存储层级冷热分层，以及 PII 脱敏边界。冲着 SOC 2、HIPAA 做合规的团队可以直接对照。",
+    "quote": "日志能改，出了事就没人证清白。",
+    "source": "Dev.to",
+    "url": "https://dev.to/alessio99xx/auditlog-designing-production-grade-tamper-evident-audit-trails-for-modern-cloud-architectures-4fck",
+    "published": "2026-10-18",
+    "uid": "dev_840bef47"
+  },
+  {
+    "title": "TraceOps：让 AI 查故障，靠图上的证据而不是猜",
+    "content": "线上出事时，AI 很容易编一个「看起来很像」的根因：两分钟前刚发过版，就说一定是发布导致的。TraceOps 反过来做——把故障、服务、依赖、发布记录和证据连成一张图，让模型沿着关系找线索，给每个假设标出支撑证据，证据不够就明说不够。它基于 FalkorDB、Spring Boot 和 JevModel，目标不是替工程师下结论，而是把排查范围收窄。",
+    "quote": "会讲故事不算本事，拿出证据再说。",
+    "source": "Dev.to",
+    "url": "https://dev.to/snehaa1989/building-traceops-teaching-ai-to-investigate-production-incidents-with-graphs-not-guesses-325e",
+    "published": "2026-10-18",
+    "uid": "dev_08ee57ea"
+  },
+  {
+    "title": "MQTT Topic 设计的 12 条军规：混乱多半源于命名",
+    "content": "文章从真实返工案例切入：Topic 命名没规范，导致大小写不匹配、通配符滥用、设备迁移后订阅全失效。作者认为根因是 Topic 没有统一的语义骨架，把「设备身份」和「业务数据」混在同一层里，于是每加一个业务就要改一遍订阅关系。给出的 12 条规则围绕分层、单一职责、可迁移性展开，核心思路是把 Topic 当接口设计而不是当字符串拼。早期省下的这点设计时间，后期通常按事故计息还回去。",
+    "quote": "Topic 随手起名，返工按次收费。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/hugogoos/p/23341432",
+    "published": "2026-10-18",
+    "uid": "dev_fca0eb97"
+  },
+  {
+    "title": "百万行导出 Excel：从 OOM 到稳定落地的完整演进",
+    "content": "一篇很工程化的长文：先解释为什么 100 万行导出会把堆撑爆——一次性构建 Workbook、单元格对象常驻内存；再逐层给方案，SXSSF 流式写、EasyExcel 的模型映射、退化成 CSV、游标分页、异步导出加进度回调，最后附可直接运行的完整工程代码和面试考点。难得的是它没停在「换个库就好了」，而是把每一步的内存占用和取舍讲清楚，属于能直接搬进项目的那种文章。",
+    "quote": "OOM 不是库的错，是你想一次装下 100 万行。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/xiongdy2017/p/23341228",
+    "published": "2026-10-18",
+    "uid": "dev_c316a0ab"
+  },
+  {
+    "title": "K8s 最佳实践改了：1.34 之后该给节点开 Swap",
+    "content": "K8s 最佳实践更新：1.34 以上、系统盘为本地 SSD/NVMe、用 cgroup v2 的集群，建议开 node swap，把 kubelet swapBehavior 从 NoSwap 改成 LimitedSwap。内存压力下空闲匿名页可换出，Pod 密度和稳定性提升，尖峰不再只有 OOM 一条路。作者在 k3s homelab 落地后提醒：调度器不感知 swap，容量规划别把它算进去。",
+    "quote": "Swap 不是万能药，但当保险比 OOM 强。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/east4ming/p/23341258",
+    "published": "2026-10-18",
+    "uid": "dev_2614803d"
+  }
+]
