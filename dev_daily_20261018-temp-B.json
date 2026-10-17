@@ -1,0 +1,119 @@
+[
+  {
+    "title": "Show HN：wsudo——给 Windows 补一个不用 UAC 的 sudo",
+    "content": "Windows 一直没有趁手的 sudo，作者说微软官方那套似乎已停更，于是 wsudo 换了个思路：装一个系统服务，由它给进程重新分配令牌，执行提权命令时全程不弹 UAC——真的不弹。项目用 C++ 写，目前还在极早期，作者自己标了「可能有漏洞、勿用于生产」。想先把「每次都要点确认」这件事干掉的，可以拿去折腾。",
+    "quote": "提权不弹窗，方便和危险只差一行。",
+    "source": "HN Show HN",
+    "url": "https://github.com/parkovski/wsudo",
+    "published": "2026-10-18",
+    "uid": "dev_c4571b89"
+  },
+  {
+    "title": "Show HN：vramkit——在 MacBook 上把 LLM 显存压下来",
+    "content": "vramkit 盯的是推理时最吃显存的两块：模型权重和 KV cache。权重这边用自研的 32 位 range coder 加二维自适应上下文，在 Qwen2.5-0.5B 的真实 int4 权重上做到无损、比原始 4-bit 再小 33%，还略胜 zstd/xz；KV cache 则发现「按通道而非按 token」量化 key，int8 下困惑度只涨 0.1%。全部在 MacBook 上跑通。",
+    "quote": "显存不够别急着换卡，先把权重榨干。",
+    "source": "HN Show HN",
+    "url": "https://github.com/SRKRZ23/vramkit",
+    "published": "2026-10-18",
+    "uid": "dev_584ddba4"
+  },
+  {
+    "title": "Show HN：Offscreen——给每个 Agent 一块独立的 Mac 屏幕",
+    "content": "Coding agent 跑 XCUITest、开 iOS 模拟器或启动刚编好的 App 时，会直接抢占你的桌面：窗口乱弹、焦点乱跳，人只能干等。Offscreen 把这些活丢进一次性的 macOS 虚拟机，多个 agent、终端和脚本共用一个队列，跑完交回日志、截图和 .xcresult。它基于 Tart，分 VM 与 host 两条通道，你回来时 host 任务会自动让路。",
+    "quote": "Agent 抢你屏幕的日子，该结束了。",
+    "source": "HN Show HN",
+    "url": "https://github.com/markphelps/offscreen",
+    "published": "2026-10-18",
+    "uid": "dev_c1ab6338"
+  },
+  {
+    "title": "Show HN：esp32sim——在浏览器里跑真实 ESP32 固件",
+    "content": "esp32sim 用 Rust 做指令级模拟，覆盖 ESP32、S3、C3、C6 四款芯片和 Xtensa、RISC-V 两套架构。它不打补丁、不塞桩，直接启动真实 mask ROM、二级 bootloader 和未改动的应用镜像，GPIO、UART、定时器、WiFi 都做了建模，还能在浏览器里跑。对没买板子、又想先验证固件的人来说，门槛一下低了不少。",
+    "quote": "没板子也能跑固件，硬件厂商要皱眉。",
+    "source": "HN Show HN",
+    "url": "https://github.com/mikroverk/esp32sim",
+    "published": "2026-10-18",
+    "uid": "dev_17110c06"
+  },
+  {
+    "title": "把自然语言变成跨平台 shell 命令：Helpline 用本地模型兜底",
+    "content": "Helpline 是个 Python CLI：你用大白话描述要做的事，它识别当前系统和 shell，拼好带平台规则的提示词，交给本地 Ollama 的 qwen2.5-coder:3b 生成命令。默认直接执行，但加 --print 可以先看命令、--json 拿结构化结果，避免模型一抽风就把危险操作跑掉。对记不住 tar、find 各种平台参数的人，这东西比翻手册快。",
+    "quote": "让 AI 写命令可以，先让它把命令交出来。",
+    "source": "Dev.to",
+    "url": "https://dev.to/tsadarsh/helpline-local-ai-that-turns-plain-english-into-cross-platform-shell-commands-35ae",
+    "published": "2026-10-18",
+    "uid": "dev_70403119"
+  },
+  {
+    "title": "审计日志不是加个 log 就完事：生产级防篡改链路怎么设计",
+    "content": "文章先把审计日志和应用日志、系统日志、遥测拆开：前者记录「谁、凭什么权限、改了什么、改前改后是什么」，要求长期保留、只追加、可验证，不能和会轮转的 debug 日志混在一起。接着给出落地方案：热路径异步投递、统一 schema、哈希链保证防篡改、按存储层级冷热分层，以及 PII 脱敏边界。冲着 SOC 2、HIPAA 做合规的团队可以直接对照。",
+    "quote": "日志能改，出了事就没人证清白。",
+    "source": "Dev.to",
+    "url": "https://dev.to/alessio99xx/auditlog-designing-production-grade-tamper-evident-audit-trails-for-modern-cloud-architectures-4fck",
+    "published": "2026-10-18",
+    "uid": "dev_840bef47"
+  },
+  {
+    "title": "TraceOps：让 AI 查故障，靠图上的证据而不是猜",
+    "content": "线上出事时，AI 很容易编一个「看起来很像」的根因：两分钟前刚发过版，就说一定是发布导致的。TraceOps 反过来做——把故障、服务、依赖、发布记录和证据连成一张图，让模型沿着关系找线索，给每个假设标出支撑证据，证据不够就明说不够。它基于 FalkorDB、Spring Boot 和 JevModel，目标不是替工程师下结论，而是把排查范围收窄。",
+    "quote": "会讲故事不算本事，拿出证据再说。",
+    "source": "Dev.to",
+    "url": "https://dev.to/snehaa1989/building-traceops-teaching-ai-to-investigate-production-incidents-with-graphs-not-guesses-325e",
+    "published": "2026-10-18",
+    "uid": "dev_08ee57ea"
+  },
+  {
+    "title": "K8s 最佳实践改了：1.34 之后该给节点开 Swap",
+    "content": "K8s 最佳实践更新：1.34 以上、系统盘为本地 SSD/NVMe、用 cgroup v2 的集群，建议开 node swap，把 kubelet swapBehavior 从 NoSwap 改成 LimitedSwap。内存压力下空闲匿名页可换出，Pod 密度和稳定性提升，尖峰不再只有 OOM 一条路。作者在 k3s homelab 落地后提醒：调度器不感知 swap，容量规划别把它算进去。",
+    "quote": "Swap 不是万能药，但当保险比 OOM 强。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/east4ming/p/23341258",
+    "published": "2026-10-18",
+    "uid": "dev_2614803d"
+  },
+  {
+    "title": "MinMax、Standard、Robust：特征缩放到底怎么选",
+    "content": "很多人做特征工程是条件反射：先 StandardScaler 再 fit_transform。但订单金额、页面停留、接口耗时这类真实数据天然右偏，还夹着几个离谱值，均值和标准差本身就会被带偏，标准化之后正常样本的区分度反而被压小。文章用一份订单数据把三种缩放器跑了一遍，结论很干脆：缩放只做平移和拉伸，不改变分布；选哪个，就看你愿意让哪两个数当尺子、以及极端值该不该有话语权。",
+    "quote": "上来就 StandardScaler，极端值笑了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/wang_yb/p/23340695",
+    "published": "2026-10-18",
+    "uid": "dev_77c97036"
+  },
+  {
+    "title": "PID 调顺之后：输出限幅、积分分离、微分先行与前馈",
+    "content": "速度环调稳只是起点，接着会撞两堵墙：调快了超调、调稳了又嫌慢，目标一变车还先猛冲一下；另外开环时「给多少 PWM 跑多快」的经验，上了闭环反而用不上。文章把常见教学代码拆开，讲清输出限幅、积分分离、微分先行各自治什么病，再补一路前馈，把已知的系统行为直接喂给控制器，而不是全让反馈事后补救。",
+    "quote": "PID 不是万能，前馈才是老司机的经验。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/zw-awa/p/23339843",
+    "published": "2026-10-18",
+    "uid": "dev_4bacdf06"
+  },
+  {
+    "title": "Pebrel：给 Windows 做一个更像样的 Agent 终端",
+    "content": "作者眼馋 macOS 上的终端体验——分屏、会话持久化、消息通知、命令补全，Windows 上始终没有趁手的，于是自己 vibe 了一个。Pebrel 最新版把界面字体统一成 Geist/系统字体，补上终端内容搜索、重做 shell 选择面板、美化 markdown 渲染，还加了目录面包屑和粘性目录。对天天在 Windows 上开多个 agent 会话的人，至少不用在丑终端里将就了。",
+    "quote": "Windows 终端丑了这么多年，终于有人管。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249654#reply0",
+    "published": "2026-10-18",
+    "uid": "dev_cd9fe88a"
+  },
+  {
+    "title": "开源 Iterlay：让 Coding Agent 在画布上配图、改图和理素材",
+    "content": "Iterlay 把参考图、生成、编辑、版本链和素材整理放进同一张无限画布，同时提供 CLI 和 Skill，让 Codex、Claude Code 这类 agent 直接参与操作。典型用法是：先生成一组产品或页面素材，在画布上比较、局部修改，再导出到项目的 assets 目录。图片编辑结果会进入版本链，能回看提示词和引用图；画板和素材都存在本机，模型调用则走你自己配置的服务。",
+    "quote": "Agent 只会写代码不够，还得会自己找图。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249597#reply0",
+    "published": "2026-10-18",
+    "uid": "dev_0529a53e"
+  },
+  {
+    "title": "开源记账 Zenance：本地优先、端到端加密的 PWA",
+    "content": "受够记账 App 的开屏广告、订阅和上传财务数据，作者写了 Zenance：纯前端 PWA，数据存在本机 IndexedDB，没有后端、没有埋点，断网也能记。同步走个人 Dropbox，但数据在出浏览器前用 Web Crypto 做 AES-GCM 加密，云端只存密文。有多币种、分类预算、人际应收应付与分账、PIN 防窥和 JSON 导入导出，技术栈是 React 19 + TS + Vite。",
+    "quote": "账本上云可以，但云端只配看密文。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249567#reply0",
+    "published": "2026-10-18",
+    "uid": "dev_0bee63c6"
+  }
+]
