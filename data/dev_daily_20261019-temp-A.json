@@ -1,0 +1,137 @@
+[
+  {
+    "title": "网站开始对 AI Agent 关门：银行、航司、电商集体设卡",
+    "content": "The Verge 梳理了近几周的封堵潮：Meta Muse、Grok、OpenAI Dots 等 Agent 在 Yelp、达美航空、摩根大通、嘉信理财那里接连吃闭门羹，Cars.com、Amtrak 也被用户发现悄悄失效。理由各不相同——数据授权、账户安全、广告曝光——但指向同一件事：Agent 想替人办事，先得拿到网站发的通行证。",
+    "quote": "Agent 再聪明，门不开也只能站门口。",
+    "source": "HN Front Page",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+    "published": "2026-10-19",
+    "uid": "dev_9ba2ae71"
+  },
+  {
+    "title": "Anthropic 提 AI 安全法案：死 50 人或赔 10 亿美元才触发",
+    "content": "Tom's Hardware 报道，Anthropic 抛出一份 AI 安全法案草案：监管门槛设在 50 人死亡或 10 亿美元损失，且把「叫停模型」的权力集中到商务部，实际上让其他机构靠边站。支持者会说这是给创新留空间，反对者大概会问：等凑够 50 条命，监管才上班？",
+    "quote": "门槛定在 50 条命，这安全阀装得真靠后。",
+    "source": "HN Front Page",
+    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
+    "published": "2026-10-19",
+    "uid": "dev_0b1351f0"
+  },
+  {
+    "title": "DeepSeek 把联网搜索做成 API：千次成功请求 0.75 美元",
+    "content": "DeepSeek 上线 Search 与 Fetch 两个工具 API：前者用自研搜索引擎按 query 返回结构化结果，支持 site:、lang:、after: 等检索语法；后者把单个网页抓成 Markdown。两者共用现有 Bearer 鉴权，按成功请求计费，1000 次 0.75 美元。对做 RAG 和 Agent 的团队来说，检索层又多了一个便宜选项，也意味着「搜索」正变成基础水电。",
+    "quote": "搜索按次收费，RAG 的成本表又多一行。",
+    "source": "HN Front Page",
+    "url": "https://api-docs.deepseek.com/guides/search/",
+    "published": "2026-10-19",
+    "uid": "dev_7f24d175"
+  },
+  {
+    "title": "正则太糙、tree-sitter 太重，中间地带叫 Parser Combinator",
+    "content": "这篇 TypeScript 教程从最小的 partial parser 讲起：一个函数吃掉一段输入，返回「解析结果 + 剩余字符串」。然后用 pSeq 把多个 parser 串起来，逐步组合出整数、空白、关键字，直到能处理完整表达式。作者的主张很明确：正则遇到复杂语法会变成天书，tree-sitter 又常常杀鸡用牛刀，parser combinator 正好卡在中间，而且写起来像搭积木。",
+    "quote": "正则写到第三行，就该考虑换个工具了。",
+    "source": "HN Front Page",
+    "url": "https://t3.at/blog/2026-10-17-parser-combinators/",
+    "published": "2026-10-19",
+    "uid": "dev_459bc814"
+  },
+  {
+    "title": "Show HN：push 前先考试，答不对就别发 AI 写的代码",
+    "content": "Sphinx 是一个 Git hook：每次 push 到受保护分支，它会读你的 diff，生成一道关于「这段代码出错时会怎样」的问题，答不上来就拦住。作者的口号是「外包思考，别外包理解」。在 Agent 一天能写几千行的当下，这个工具戳中的痛点很真实——代码能跑不等于你懂，review 也常常只是扫一眼。",
+    "quote": "AI 写的代码，先过你这关再上线。",
+    "source": "HN Front Page",
+    "url": "https://sphinx-six-theta.vercel.app/",
+    "published": "2026-10-19",
+    "uid": "dev_acff318c"
+  },
+  {
+    "title": "HKUDS/CLI-Anything：把一切软件变成 Agent 的原生 CLI",
+    "content": "港大数据智能实验室的新项目，口号是「Making ALL Software Agent-Native」。思路是给现有软件套一层统一的 CLI 接口，让 Agent 不必依赖 GUI 自动化或脆弱截图，就能像人一样调用命令完成任务；配套的 CLI-Hub 用来发现和分发这些接口。五万多星说明大家早就不想再教 Agent 点按钮了——让软件开口说话，比让模型学会看图更靠谱。",
+    "quote": "别再教 Agent 点按钮，给它一条命令。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/HKUDS/CLI-Anything",
+    "published": "2026-10-19",
+    "uid": "dev_1ce581db"
+  },
+  {
+    "title": "VoiceStudio：完全本地的 ElevenLabs 替代品，支持 646 种语言",
+    "content": "开源语音工作台，覆盖声音克隆、音色设计、视频配音、听写、转写和有声书制作，全部在本地跑，支持 CUDA 与 Apple MLX。官方把它定位成 ElevenLabs 的开源替代：不用把素材传到别人服务器，也不必按字符付费。七万多星背后是很朴素的诉求——语音合成已经够好用了，接下来拼的是隐私、成本和可控性。",
+    "quote": "声音是自己的，别急着上传给云厂商。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/debpalash/VoiceStudio",
+    "published": "2026-10-19",
+    "uid": "dev_fd0a83b5"
+  },
+  {
+    "title": "Cursor 开放插件规范：官方插件仓库开始收口生态",
+    "content": "Cursor 把插件规范与官方插件集中到一个仓库，TypeScript 实现，一万二千多星。信号很清楚：编辑器不再只卖模型补全，而是想定义一套扩展标准，让第三方把工具、语言支持和 Agent 能力接进来。对开发者是好事，至少不用为每个 AI 编辑器重写一遍集成；对 Cursor 则是把「用谁家模型」的竞争，转成「谁家生态更全」的竞争。",
+    "quote": "编辑器战争打到插件层，标准才是护城河。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/cursor/plugins",
+    "published": "2026-10-19",
+    "uid": "dev_8a09fb71"
+  },
+  {
+    "title": "BeatBrowser：让 Codex、Claude Code 共用你已登录的 Chrome",
+    "content": "一个 Chrome 扩展加本地 Node 桥接，通过 MCP 把 Codex、Claude Code、Cursor 接到你正在用的浏览器上，直接复用已有登录态。每个任务在独立窗口里跑，可以随时暂停、接管、清理，MIT 开源、不需要账号。它解决的是 Agent 落地最烦的一步：不是模型不会点，而是登录、验证码和会话状态根本带不过去。",
+    "quote": "Agent 缺的不是智商，是你的登录态。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249726",
+    "published": "2026-10-19",
+    "uid": "dev_b9a549e8"
+  },
+  {
+    "title": "SciForge：本地优先的深度学习科研 Agent Harness",
+    "content": "作者把科研流程拆成四层：24 个方法论 Skill、46 个确定性 Tool（检索、精读、SSH、实验、配图、写作）、7 条 Pipeline Recipe，以及统一调度。目标不是让模型「帮你写论文」，而是把文献、实验、绘图这些散落在不同工具里的环节串成可复现的流水线。本地优先意味着数据和算力留在自己机器上，对科研场景比多一个聊天框重要得多。",
+    "quote": "科研不缺聊天框，缺的是能复现的流水线。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249803",
+    "published": "2026-10-19",
+    "uid": "dev_f72ccb24"
+  },
+  {
+    "title": "拖四个滑杆，推演 AI 算力的能耗与成本曲线",
+    "content": "一个面向非硬核用户的算力效率沙盒：拖动能源供给、芯片效率、并行度、数据质量四个滑杆，实时看吞吐、能耗、成本三条曲线怎么变，系统还会诊断瓶颈卡在哪一层。作者做它的起因很直接——人人都在喊算力贵，但贵在电、卡还是利用率，很少有人能说清。把复杂系统做成可玩的模型，本身就是一种很好的解释方式。",
+    "quote": "算力贵不贵，先拖两下滑杆再吵。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249697",
+    "published": "2026-10-19",
+    "uid": "dev_93700158"
+  },
+  {
+    "title": "用 Windows 内核驱动改 WiFi MAC 地址：从 OUI 讲到驱动",
+    "content": "一篇硬核教程，从 MAC 地址的六个字节和 OUI 讲起，说明为什么普通用户态 API 改不了真正生效的地址，再落到 Windows 内核驱动的实现：怎么挂接 NDIS、处理适配器状态、在正确时机写入地址，以及测试时如何避免把自己踢下线。作者没有停留在「复制这段代码」，而是把网络栈的分层和权限边界讲清楚了，适合想碰驱动又怕蓝屏的人。",
+    "quote": "改 MAC 改到内核层，蓝屏也算学费。",
+    "source": "Dev.to",
+    "url": "https://dev.to/__43698c3f021/spoofing-wifi-mac-addresses-with-a-windows-kernel-driver-1mfd",
+    "published": "2026-10-19",
+    "uid": "dev_4168e038"
+  },
+  {
+    "title": "一文搞懂 Agent Sandbox：为什么 AI 不能随便操作你的电脑",
+    "content": "从 Claude Code、Codex 这类工具的实际用法切入：你让它改代码、装依赖、跑测试，它确实都能干，但同一个权限也能拿来删库、外传密钥、执行来路不明的脚本。文章把沙箱的几种实现路径拆开讲——容器、虚拟机、系统调用过滤、权限降级——并对照 Agent 的场景说明各自取舍。核心观点是：别把「模型很听话」当安全边界，隔离要建立在操作系统层。",
+    "quote": "让 Agent 上桌干活，先给它划好牢房。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Tomorrowland/p/23347321",
+    "published": "2026-10-19",
+    "uid": "dev_2bf09c86"
+  },
+  {
+    "title": "用 Lean 4 重构《软件基础》全三卷，SF-lean4 完工",
+    "content": "作者把经典教材《Software Foundations》从 Coq 迁到 Lean 4，覆盖全三卷，并配上可交互的在线文档与开源代码。这不是逐行翻译：Lean 4 的语法、库和证明风格都变了，很多引理要重新组织，还要保证读者能顺着文档一步步跑通。对想学形式化验证又卡在工具链上的人来说，这份重写降低了入场门槛；对 Lean 社区，则是一次很实在的教材补位。",
+    "quote": "把 Coq 教材搬进 Lean 4，功德一件。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/SilverGo/p/23349054",
+    "published": "2026-10-19",
+    "uid": "dev_188d0ba2"
+  },
+  {
+    "title": "OCR 认字全对却读不成句：段落级重组的工程实践",
+    "content": "场景是博物馆展柜照片：OCR 逐行识别准确率不低，但输出是一堆断句，读起来支离破碎。作者记录了两套互补的段落重组方案——按版面几何聚类、再结合语义边界判断——以及一次差点被忽略的内存事故：图片批量加载把进程撑爆。所有模型本地离线运行，代码和数据可复现。这类文章的价值在于，它展示的是「准确率之外」的真实工程问题。",
+    "quote": "字都认对了，句子还是散的，这才难。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/zhenl/p/23344681",
+    "published": "2026-10-19",
+    "uid": "dev_ba602905"
+  }
+]
