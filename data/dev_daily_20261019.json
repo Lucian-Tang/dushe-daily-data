@@ -1,0 +1,227 @@
+[
+  {
+    "title": "网站开始对 AI Agent 关门：银行、航司、电商集体设卡",
+    "content": "The Verge 梳理了近几周的封堵潮：Meta Muse、Grok、OpenAI Dots 等 Agent 在 Yelp、达美航空、摩根大通、嘉信理财那里接连吃闭门羹，Cars.com、Amtrak 也被用户发现悄悄失效。理由各不相同——数据授权、账户安全、广告曝光——但指向同一件事：Agent 想替人办事，先得拿到网站发的通行证。",
+    "quote": "Agent 再聪明，门不开也只能站门口。",
+    "source": "HN Front Page",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+    "published": "2026-10-19",
+    "uid": "dev_9ba2ae71"
+  },
+  {
+    "title": "Anthropic 提 AI 安全法案：死 50 人或赔 10 亿美元才触发",
+    "content": "Tom's Hardware 报道，Anthropic 抛出一份 AI 安全法案草案：监管门槛设在 50 人死亡或 10 亿美元损失，且把「叫停模型」的权力集中到商务部，实际上让其他机构靠边站。支持者会说这是给创新留空间，反对者大概会问：等凑够 50 条命，监管才上班？",
+    "quote": "门槛定在 50 条命，这安全阀装得真靠后。",
+    "source": "HN Front Page",
+    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
+    "published": "2026-10-19",
+    "uid": "dev_0b1351f0"
+  },
+  {
+    "title": "DeepSeek 把联网搜索做成 API：千次成功请求 0.75 美元",
+    "content": "DeepSeek 上线 Search 与 Fetch 两个工具 API：前者用自研搜索引擎按 query 返回结构化结果，支持 site:、lang:、after: 等检索语法；后者把单个网页抓成 Markdown。两者共用现有 Bearer 鉴权，按成功请求计费，1000 次 0.75 美元。对做 RAG 和 Agent 的团队来说，检索层又多了一个便宜选项，也意味着「搜索」正变成基础水电。",
+    "quote": "搜索按次收费，RAG 的成本表又多一行。",
+    "source": "HN Front Page",
+    "url": "https://api-docs.deepseek.com/guides/search/",
+    "published": "2026-10-19",
+    "uid": "dev_7f24d175"
+  },
+  {
+    "title": "正则太糙、tree-sitter 太重，中间地带叫 Parser Combinator",
+    "content": "这篇 TypeScript 教程从最小的 partial parser 讲起：一个函数吃掉一段输入，返回「解析结果 + 剩余字符串」。然后用 pSeq 把多个 parser 串起来，逐步组合出整数、空白、关键字，直到能处理完整表达式。作者的主张很明确：正则遇到复杂语法会变成天书，tree-sitter 又常常杀鸡用牛刀，parser combinator 正好卡在中间，而且写起来像搭积木。",
+    "quote": "正则写到第三行，就该考虑换个工具了。",
+    "source": "HN Front Page",
+    "url": "https://t3.at/blog/2026-10-17-parser-combinators/",
+    "published": "2026-10-19",
+    "uid": "dev_459bc814"
+  },
+  {
+    "title": "Show HN：push 前先考试，答不对就别发 AI 写的代码",
+    "content": "Sphinx 是一个 Git hook：每次 push 到受保护分支，它会读你的 diff，生成一道关于「这段代码出错时会怎样」的问题，答不上来就拦住。作者的口号是「外包思考，别外包理解」。在 Agent 一天能写几千行的当下，这个工具戳中的痛点很真实——代码能跑不等于你懂，review 也常常只是扫一眼。",
+    "quote": "AI 写的代码，先过你这关再上线。",
+    "source": "HN Show HN",
+    "url": "https://sphinx-six-theta.vercel.app/",
+    "published": "2026-10-19",
+    "uid": "dev_acff318c"
+  },
+  {
+    "title": "HKUDS/CLI-Anything：把一切软件变成 Agent 的原生 CLI",
+    "content": "港大数据智能实验室的新项目，口号是「Making ALL Software Agent-Native」。思路是给现有软件套一层统一的 CLI 接口，让 Agent 不必依赖 GUI 自动化或脆弱截图，就能像人一样调用命令完成任务；配套的 CLI-Hub 用来发现和分发这些接口。五万多星说明大家早就不想再教 Agent 点按钮了——让软件开口说话，比让模型学会看图更靠谱。",
+    "quote": "别再教 Agent 点按钮，给它一条命令。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/HKUDS/CLI-Anything",
+    "published": "2026-10-19",
+    "uid": "dev_1ce581db"
+  },
+  {
+    "title": "VoiceStudio：完全本地的 ElevenLabs 替代品，支持 646 种语言",
+    "content": "开源语音工作台，覆盖声音克隆、音色设计、视频配音、听写、转写和有声书制作，全部在本地跑，支持 CUDA 与 Apple MLX。官方把它定位成 ElevenLabs 的开源替代：不用把素材传到别人服务器，也不必按字符付费。七万多星背后是很朴素的诉求——语音合成已经够好用了，接下来拼的是隐私、成本和可控性。",
+    "quote": "声音是自己的，别急着上传给云厂商。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/debpalash/VoiceStudio",
+    "published": "2026-10-19",
+    "uid": "dev_fd0a83b5"
+  },
+  {
+    "title": "Cursor 开放插件规范：官方插件仓库开始收口生态",
+    "content": "Cursor 把插件规范与官方插件集中到一个仓库，TypeScript 实现，一万二千多星。信号很清楚：编辑器不再只卖模型补全，而是想定义一套扩展标准，让第三方把工具、语言支持和 Agent 能力接进来。对开发者是好事，至少不用为每个 AI 编辑器重写一遍集成；对 Cursor 则是把「用谁家模型」的竞争，转成「谁家生态更全」的竞争。",
+    "quote": "编辑器战争打到插件层，标准才是护城河。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/cursor/plugins",
+    "published": "2026-10-19",
+    "uid": "dev_8a09fb71"
+  },
+  {
+    "title": "BeatBrowser：让 Codex、Claude Code 共用你已登录的 Chrome",
+    "content": "一个 Chrome 扩展加本地 Node 桥接，通过 MCP 把 Codex、Claude Code、Cursor 接到你正在用的浏览器上，直接复用已有登录态。每个任务在独立窗口里跑，可以随时暂停、接管、清理，MIT 开源、不需要账号。它解决的是 Agent 落地最烦的一步：不是模型不会点，而是登录、验证码和会话状态根本带不过去。",
+    "quote": "Agent 缺的不是智商，是你的登录态。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249726",
+    "published": "2026-10-19",
+    "uid": "dev_b9a549e8"
+  },
+  {
+    "title": "SciForge：本地优先的深度学习科研 Agent Harness",
+    "content": "作者把科研流程拆成四层：24 个方法论 Skill、46 个确定性 Tool（检索、精读、SSH、实验、配图、写作）、7 条 Pipeline Recipe，以及统一调度。目标不是让模型「帮你写论文」，而是把文献、实验、绘图这些散落在不同工具里的环节串成可复现的流水线。本地优先意味着数据和算力留在自己机器上，对科研场景比多一个聊天框重要得多。",
+    "quote": "科研不缺聊天框，缺的是能复现的流水线。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249803",
+    "published": "2026-10-19",
+    "uid": "dev_f72ccb24"
+  },
+  {
+    "title": "拖四个滑杆，推演 AI 算力的能耗与成本曲线",
+    "content": "一个面向非硬核用户的算力效率沙盒：拖动能源供给、芯片效率、并行度、数据质量四个滑杆，实时看吞吐、能耗、成本三条曲线怎么变，系统还会诊断瓶颈卡在哪一层。作者做它的起因很直接——人人都在喊算力贵，但贵在电、卡还是利用率，很少有人能说清。把复杂系统做成可玩的模型，本身就是一种很好的解释方式。",
+    "quote": "算力贵不贵，先拖两下滑杆再吵。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249697",
+    "published": "2026-10-19",
+    "uid": "dev_93700158"
+  },
+  {
+    "title": "一文搞懂 Agent Sandbox：为什么 AI 不能随便操作你的电脑",
+    "content": "从 Claude Code、Codex 这类工具的实际用法切入：你让它改代码、装依赖、跑测试，它确实都能干，但同一个权限也能拿来删库、外传密钥、执行来路不明的脚本。文章把沙箱的几种实现路径拆开讲——容器、虚拟机、系统调用过滤、权限降级——并对照 Agent 的场景说明各自取舍。核心观点是：别把「模型很听话」当安全边界，隔离要建立在操作系统层。",
+    "quote": "让 Agent 上桌干活，先给它划好牢房。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Tomorrowland/p/23347321",
+    "published": "2026-10-19",
+    "uid": "dev_2bf09c86"
+  },
+  {
+    "title": "用 Lean 4 重构《软件基础》全三卷，SF-lean4 完工",
+    "content": "作者把经典教材《Software Foundations》从 Coq 迁到 Lean 4，覆盖全三卷，并配上可交互的在线文档与开源代码。这不是逐行翻译：Lean 4 的语法、库和证明风格都变了，很多引理要重新组织，还要保证读者能顺着文档一步步跑通。对想学形式化验证又卡在工具链上的人来说，这份重写降低了入场门槛；对 Lean 社区，则是一次很实在的教材补位。",
+    "quote": "把 Coq 教材搬进 Lean 4，功德一件。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/SilverGo/p/23349054",
+    "published": "2026-10-19",
+    "uid": "dev_188d0ba2"
+  },
+  {
+    "title": "OCR 认字全对却读不成句：段落级重组的工程实践",
+    "content": "场景是博物馆展柜照片：OCR 逐行识别准确率不低，但输出是一堆断句，读起来支离破碎。作者记录了两套互补的段落重组方案——按版面几何聚类、再结合语义边界判断——以及一次差点被忽略的内存事故：图片批量加载把进程撑爆。所有模型本地离线运行，代码和数据可复现。这类文章的价值在于，它展示的是「准确率之外」的真实工程问题。",
+    "quote": "字都认对了，句子还是散的，这才难。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/zhenl/p/23344681",
+    "published": "2026-10-19",
+    "uid": "dev_ba602905"
+  },
+  {
+    "title": "Show HN：Beeper 把 HTTP 解析塞进 eBPF，静态资源吞吐涨 4.5 倍",
+    "content": "Beeper 把 L7 协议解析搬进 eBPF：在用户态构造类 Aho-Corasick 的 DFA，把 HTTP/1.1、HTTP/2 的头部匹配压到内核能接受的复杂度，于是可以按 payload 直接监控、重定向甚至响应流量。配套的 hyper-fast-path 用它从内核直接发静态资源，HTTP 服务器吞吐最多提升 4.5 倍，最低要求 Linux 6.8。",
+    "quote": "静态资源走内核，nginx 还没热身就下班了。",
+    "source": "HN Show HN",
+    "url": "https://github.com/lerboe/beeper",
+    "uid": "dev_3211279c",
+    "published": "2026-10-19"
+  },
+  {
+    "title": "Show HN：pi-cowboy——把 Codex、Claude Code、OpenCode 当子代理调度",
+    "content": "pi-cowboy 是给 Pi 做的多 Agent 编排器：把大任务拆成子任务，分给后台 agent 并行跑，每个 agent 独占一个 copy-on-write Git worktree，几十 GB 的仓库也不会把磁盘复制爆。除了 Pi，还能把 Claude Code、Codex、OpenCode 拉进来当子代理，任务结束自动清理残留。",
+    "quote": "一个仓库开一桌 agent，Git 先学会分身。",
+    "source": "HN Show HN",
+    "url": "https://github.com/electric-dragon-80000v/pi-cowboy",
+    "uid": "dev_612adb81",
+    "published": "2026-10-19"
+  },
+  {
+    "title": "Show HN：Secret Guard——本地 LLM 网关，密钥不出机器",
+    "content": "Agent 干活时总要把代码、配置、终端输出整段塞进 prompt，密码和 token 也跟着出境。Secret Guard 在本地起一个 LLM 网关：出站请求把密钥换成等长、同字符集的假值，回包再在本地还原，模型全程碰不到真密钥，agent 工具照常调用真实系统。改一行 base URL 即可接入。",
+    "quote": "密钥不出门，模型只配看高仿假货。",
+    "source": "HN Show HN",
+    "url": "https://github.com/luochen1990/secret-guard",
+    "uid": "dev_fb9a94d5",
+    "published": "2026-10-19"
+  },
+  {
+    "title": "Show HN：Correct Hooks——用非对称签名重做 webhook 鉴权",
+    "content": "Webhook 鉴权长期靠 HMAC 共享密钥，用户一多，每个 endpoint 都得存一份 secret，轮换就是灾难。Correct Hooks 改用非对称签名：生产方只持一把私钥，消费方从公开端点取公钥验签，轮换时自动拉新 key set。提供 TypeScript、Python、Rust 三套库，想把 webhook 鉴权做对的可以直接抄。",
+    "quote": "共享密钥管不过来，就该让私钥闭嘴。",
+    "source": "HN Show HN",
+    "url": "https://github.com/handlewithcarecollective/correct-hooks",
+    "uid": "dev_ed76343c",
+    "published": "2026-10-19"
+  },
+  {
+    "title": "Show HN：croft——TypeScript + DuckDB 的本地数据管道",
+    "content": "croft 是给本地数据管道准备的一条命令：用 TypeScript 写 ingest 和 transform，底层只用一个 DuckDB 文件，能从 API 和文件抽数、用 SQL 或 TS 转换、按计划刷新，再让应用直接读表。只依赖 Bun 1.3.14+，文档每个页面都有 Markdown 版和 llms-full.txt，明显是冲着 coding agent 的离线阅读习惯设计的。",
+    "quote": "数据管道终于不用先搭一座 Kafka 庙。",
+    "source": "HN Show HN",
+    "url": "https://croft.zabaca.com/",
+    "uid": "dev_f135736b",
+    "published": "2026-10-19"
+  },
+  {
+    "title": "Agent 在 TS 仓库里顺手写了个 Python 文件，于是你多养一门语言",
+    "content": "主站是 TypeScript，构建 Vite、测试 Vitest、脚本 Node，结果 agent 为了一个 40 行的 JSON 转 CSV 小任务，直接塞进一个 Python 文件——仓库从此多了一门语言要维护。作者没骂 agent，而是复盘它为什么这么选：训练数据里 Python 处理数据太顺手，而仓库没把边界写进规则。文章给出可操作的约束方式。",
+    "quote": "Agent 不会偷懒，它只会替你多养一门语言。",
+    "source": "Dev.to",
+    "url": "https://dev.to/jeff_pdc/when-the-agent-reaches-for-python-in-a-typescript-repo-it-just-added-a-third-language-you-have-to-27oh",
+    "uid": "dev_6c856130",
+    "published": "2026-10-19"
+  },
+  {
+    "title": "用 Headless Chromium 截中日韩页面：豆腐块、半截图和字体错位怎么修",
+    "content": "用 headless Chromium 给中日韩页面和 emoji 截图，常踩三个坑：容器没字体，文字变豆腐块；只截首屏，下面全是灰色占位；繁体中文被日文字体渲染，字形和标点都不对。文章在本地复现三种问题，给出装 Noto CJK 字体、滚动触发懒加载、按语言指定 font-family 的完整修法，Playwright 和 Python 都能照做。",
+    "quote": "截图里的豆腐块，是运维最诚实的报警。",
+    "source": "Dev.to",
+    "url": "https://dev.to/hsinghsien-chen/full-page-screenshots-of-chinese-japanese-and-emoji-pages-with-headless-chromium-no-tofu-boxes-ia0",
+    "uid": "dev_aea8cb3f",
+    "published": "2026-10-19"
+  },
+  {
+    "title": "健康检查永远返回 200，比没有检查更危险",
+    "content": "健康检查最常见的错误，是永远返回 200：进程活着，不代表还能干活。文章把 liveness 和 readiness 拆开——前者决定要不要重启，后者决定要不要继续发流量；数据库慢时应该摘流量而不是重启服务。接着讲 readiness 该查哪些依赖、超时和缓存怎么设、启动探针怎么避免滚动发布时误杀。",
+    "quote": "永远健康的检查，比没有检查更危险。",
+    "source": "Dev.to",
+    "url": "https://dev.to/tdk-cli/everything-you-need-to-know-about-health-checks-5gmn",
+    "uid": "dev_abb9ee6a",
+    "published": "2026-10-19"
+  },
+  {
+    "title": "gRPC 的长连接到底长在哪：HTTP/2 多路复用与 keepalive 拆解",
+    "content": "gRPC 建连后默认是长连接：底层 HTTP/2 本身支持多路复用，100 个并发 RPC 可以共用一条 TCP 连接，每个调用走独立 Stream，HPACK 压缩重复 metadata；连接靠 keepalive PING 帧保活，断了就重连。文章把 ClientConn 建立、TLS 握手、多路复用和 Go 里的 keepalive 参数串了一遍，适合排障时对照。",
+    "quote": "一条连接跑一百个请求，断线时也一起完蛋。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/zjdxr-up/p/23317642",
+    "uid": "dev_fa5cd224",
+    "published": "2026-10-19"
+  },
+  {
+    "title": "用一份 JSON 串起 HTTP、Dubbo、WebService、SQL 和脚本：service-arrange",
+    "content": "一个下单动作背后可能是 HTTP 主单、Dubbo 库存、WebService 老物流、一段 SQL 校验再加 Shell 通知。service-arrange 把这些调用画成图、导出成 JSON DSL，由引擎解析、调度、重试、补偿和追踪；改流程改图就行，不用发版。技术栈是 RabbitMQ + Spring Cloud Stream、MongoDB、ZooKeeper，定位是轻量版工作流引擎。",
+    "quote": "流程画成图很爽，图别画成蜘蛛网就行。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/huangrenhui/p/23346166",
+    "uid": "dev_add62f0d",
+    "published": "2026-10-19"
+  },
+  {
+    "title": "ANM：八百多个 AI 岗位，想让求职双方的 Agent 直接对接",
+    "content": "ANM / Agent 觅聘收录了数十家 AI Native 公司的八百多个 AI 岗位，想让求职者和招聘方的 Agent 直接对接：先聊清经历、偏好、岗位需求和双方关心的问题，再自动投递并整理回复、面试反馈。配套 Skill 覆盖简历整理、岗位分析、材料准备、投递跟进、面试和 offer 比较，号称要接掉 90% 的求职准备工作。",
+    "quote": "让 Agent 去面试，HR 的 Agent 会先卡学历吗？",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249781",
+    "uid": "dev_f94bac4b",
+    "published": "2026-10-19"
+  }
+]

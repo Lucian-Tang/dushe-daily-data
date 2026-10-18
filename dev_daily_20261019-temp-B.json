@@ -1,0 +1,128 @@
+[
+  {
+    "title": "Show HN：Beeper 把 HTTP 解析塞进 eBPF，静态资源吞吐涨 4.5 倍",
+    "content": "Beeper 把 L7 协议解析搬进 eBPF：在用户态构造类 Aho-Corasick 的 DFA，把 HTTP/1.1、HTTP/2 的头部匹配压到内核能接受的复杂度，于是可以按 payload 直接监控、重定向甚至响应流量。配套的 hyper-fast-path 用它从内核直接发静态资源，HTTP 服务器吞吐最多提升 4.5 倍，最低要求 Linux 6.8。",
+    "quote": "静态资源走内核，nginx 还没热身就下班了。",
+    "source": "HN Show HN",
+    "url": "https://github.com/lerboe/beeper",
+    "uid": "dev_3211279c",
+    "published": "2026-10-19"
+  },
+  {
+    "title": "Show HN：pi-cowboy——把 Codex、Claude Code、OpenCode 当子代理调度",
+    "content": "pi-cowboy 是给 Pi 做的多 Agent 编排器：把大任务拆成子任务，分给后台 agent 并行跑，每个 agent 独占一个 copy-on-write Git worktree，几十 GB 的仓库也不会把磁盘复制爆。除了 Pi，还能把 Claude Code、Codex、OpenCode 拉进来当子代理，任务结束自动清理残留。",
+    "quote": "一个仓库开一桌 agent，Git 先学会分身。",
+    "source": "HN Show HN",
+    "url": "https://github.com/electric-dragon-80000v/pi-cowboy",
+    "uid": "dev_612adb81",
+    "published": "2026-10-19"
+  },
+  {
+    "title": "Show HN：Secret Guard——本地 LLM 网关，密钥不出机器",
+    "content": "Agent 干活时总要把代码、配置、终端输出整段塞进 prompt，密码和 token 也跟着出境。Secret Guard 在本地起一个 LLM 网关：出站请求把密钥换成等长、同字符集的假值，回包再在本地还原，模型全程碰不到真密钥，agent 工具照常调用真实系统。改一行 base URL 即可接入。",
+    "quote": "密钥不出门，模型只配看高仿假货。",
+    "source": "HN Show HN",
+    "url": "https://github.com/luochen1990/secret-guard",
+    "uid": "dev_fb9a94d5",
+    "published": "2026-10-19"
+  },
+  {
+    "title": "Show HN：Correct Hooks——用非对称签名重做 webhook 鉴权",
+    "content": "Webhook 鉴权长期靠 HMAC 共享密钥，用户一多，每个 endpoint 都得存一份 secret，轮换就是灾难。Correct Hooks 改用非对称签名：生产方只持一把私钥，消费方从公开端点取公钥验签，轮换时自动拉新 key set。提供 TypeScript、Python、Rust 三套库，想把 webhook 鉴权做对的可以直接抄。",
+    "quote": "共享密钥管不过来，就该让私钥闭嘴。",
+    "source": "HN Show HN",
+    "url": "https://github.com/handlewithcarecollective/correct-hooks",
+    "uid": "dev_ed76343c",
+    "published": "2026-10-19"
+  },
+  {
+    "title": "Show HN：croft——TypeScript + DuckDB 的本地数据管道",
+    "content": "croft 是给本地数据管道准备的一条命令：用 TypeScript 写 ingest 和 transform，底层只用一个 DuckDB 文件，能从 API 和文件抽数、用 SQL 或 TS 转换、按计划刷新，再让应用直接读表。只依赖 Bun 1.3.14+，文档每个页面都有 Markdown 版和 llms-full.txt，明显是冲着 coding agent 的离线阅读习惯设计的。",
+    "quote": "数据管道终于不用先搭一座 Kafka 庙。",
+    "source": "HN Show HN",
+    "url": "https://croft.zabaca.com/",
+    "uid": "dev_f135736b",
+    "published": "2026-10-19"
+  },
+  {
+    "title": "Agent 在 TS 仓库里顺手写了个 Python 文件，于是你多养一门语言",
+    "content": "主站是 TypeScript，构建 Vite、测试 Vitest、脚本 Node，结果 agent 为了一个 40 行的 JSON 转 CSV 小任务，直接塞进一个 Python 文件——仓库从此多了一门语言要维护。作者没骂 agent，而是复盘它为什么这么选：训练数据里 Python 处理数据太顺手，而仓库没把边界写进规则。文章给出可操作的约束方式。",
+    "quote": "Agent 不会偷懒，它只会替你多养一门语言。",
+    "source": "Dev.to",
+    "url": "https://dev.to/jeff_pdc/when-the-agent-reaches-for-python-in-a-typescript-repo-it-just-added-a-third-language-you-have-to-27oh",
+    "uid": "dev_6c856130",
+    "published": "2026-10-19"
+  },
+  {
+    "title": "用 Headless Chromium 截中日韩页面：豆腐块、半截图和字体错位怎么修",
+    "content": "用 headless Chromium 给中日韩页面和 emoji 截图，常踩三个坑：容器没字体，文字变豆腐块；只截首屏，下面全是灰色占位；繁体中文被日文字体渲染，字形和标点都不对。文章在本地复现三种问题，给出装 Noto CJK 字体、滚动触发懒加载、按语言指定 font-family 的完整修法，Playwright 和 Python 都能照做。",
+    "quote": "截图里的豆腐块，是运维最诚实的报警。",
+    "source": "Dev.to",
+    "url": "https://dev.to/hsinghsien-chen/full-page-screenshots-of-chinese-japanese-and-emoji-pages-with-headless-chromium-no-tofu-boxes-ia0",
+    "uid": "dev_aea8cb3f",
+    "published": "2026-10-19"
+  },
+  {
+    "title": "健康检查永远返回 200，比没有检查更危险",
+    "content": "健康检查最常见的错误，是永远返回 200：进程活着，不代表还能干活。文章把 liveness 和 readiness 拆开——前者决定要不要重启，后者决定要不要继续发流量；数据库慢时应该摘流量而不是重启服务。接着讲 readiness 该查哪些依赖、超时和缓存怎么设、启动探针怎么避免滚动发布时误杀。",
+    "quote": "永远健康的检查，比没有检查更危险。",
+    "source": "Dev.to",
+    "url": "https://dev.to/tdk-cli/everything-you-need-to-know-about-health-checks-5gmn",
+    "uid": "dev_abb9ee6a",
+    "published": "2026-10-19"
+  },
+  {
+    "title": "gRPC 的长连接到底长在哪：HTTP/2 多路复用与 keepalive 拆解",
+    "content": "gRPC 建连后默认是长连接：底层 HTTP/2 本身支持多路复用，100 个并发 RPC 可以共用一条 TCP 连接，每个调用走独立 Stream，HPACK 压缩重复 metadata；连接靠 keepalive PING 帧保活，断了就重连。文章把 ClientConn 建立、TLS 握手、多路复用和 Go 里的 keepalive 参数串了一遍，适合排障时对照。",
+    "quote": "一条连接跑一百个请求，断线时也一起完蛋。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/zjdxr-up/p/23317642",
+    "uid": "dev_fa5cd224",
+    "published": "2026-10-19"
+  },
+  {
+    "title": "用一份 JSON 串起 HTTP、Dubbo、WebService、SQL 和脚本：service-arrange",
+    "content": "一个下单动作背后可能是 HTTP 主单、Dubbo 库存、WebService 老物流、一段 SQL 校验再加 Shell 通知。service-arrange 把这些调用画成图、导出成 JSON DSL，由引擎解析、调度、重试、补偿和追踪；改流程改图就行，不用发版。技术栈是 RabbitMQ + Spring Cloud Stream、MongoDB、ZooKeeper，定位是轻量版工作流引擎。",
+    "quote": "流程画成图很爽，图别画成蜘蛛网就行。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/huangrenhui/p/23346166",
+    "uid": "dev_add62f0d",
+    "published": "2026-10-19"
+  },
+  {
+    "title": "Kali 下 Metasploit 完整利用流程：从授权确认到清理报告",
+    "content": "文章把 MSF 漏洞利用拆成标准化流程：授权与环境准备、信息收集、漏洞确认、模块与 Payload 选择、参数配置、执行利用、会话管理、后渗透提权、横向移动评估、清理与报告。核心命令主线是 search → use → show options → set → check → run → sessions -i，并反复强调只对自有靶机或书面授权目标操作。",
+    "quote": "靶场里是教科书，生产里是事故报告。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Johny-zhao/p/23346366",
+    "uid": "dev_9eb0dd5b",
+    "published": "2026-10-19"
+  },
+  {
+    "title": "周末让 DeepSeek V4.1-Flash 写了个 frpc 管理面板：FrpcDeck",
+    "content": "作者周末用 DeepSeek V4.1-Flash 写了个 frpc Web 管理工具 FrpcDeck：界面走现代审美，配置、隧道和状态管理都收进浏览器，省去手改 ini 和反复重启。帖子里还顺手晒了 DeepSeek Harness Desktop 的生成速度，稳定 260~280 tokens/s。开源求 Star，适合家里跑 frp 的人拿来替掉一堆散落配置。",
+    "quote": "内网穿透的工具，终于先把自己的界面穿透了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249813",
+    "uid": "dev_4483b37f",
+    "published": "2026-10-19"
+  },
+  {
+    "title": "ANM：八百多个 AI 岗位，想让求职双方的 Agent 直接对接",
+    "content": "ANM / Agent 觅聘收录了数十家 AI Native 公司的八百多个 AI 岗位，想让求职者和招聘方的 Agent 直接对接：先聊清经历、偏好、岗位需求和双方关心的问题，再自动投递并整理回复、面试反馈。配套 Skill 覆盖简历整理、岗位分析、材料准备、投递跟进、面试和 offer 比较，号称要接掉 90% 的求职准备工作。",
+    "quote": "让 Agent 去面试，HR 的 Agent 会先卡学历吗？",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249781",
+    "uid": "dev_f94bac4b",
+    "published": "2026-10-19"
+  },
+  {
+    "title": "勿追踪：用安卓无障碍权限，自动剪掉分享链接里的追踪参数",
+    "content": "国内 App 的分享链接常带追踪参数，有些还能反查到分享者。勿追踪利用安卓无障碍权限，在你点分享后自动点开分享链接、解析并去掉应用参数，再拉起二次分享面板；支持用 ML Kit 识别图片二维码里的追踪链接并重绘，也能导入自定义规则，分享到微信和 QQ 时保持卡片样式。",
+    "quote": "分享的是内容，不是你的身份证号。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249785",
+    "uid": "dev_91027c8a",
+    "published": "2026-10-19"
+  }
+]
