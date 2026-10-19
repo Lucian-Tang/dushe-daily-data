@@ -1,0 +1,227 @@
+[
+  {
+    "title": "Acyclic：YC 新项目把 agent 工作流跑成「蜂群」",
+    "content": "Y Combinator F26 团队推出 Acyclic：把任意 agentic 工作流跑成群蜂。你给出任务和项目，它把活拆给多个 coding agent，各自在独立沙箱里并行开工，再汇总结果。相比单 agent 串行磨，思路是用并行换吞吐——代价是协调、合并与冲突处理，这也是所有 agent swarm 产品绕不开的真问题。",
+    "quote": "一个 agent 干不完，就派一群去吵架。",
+    "source": "HN Show HN",
+    "url": "https://news.ycombinator.com/item?id=50153128",
+    "published": "2026-10-20",
+    "uid": "dev_47601078"
+  },
+  {
+    "title": "Show HN：Kompressor 用确定性压缩给 Agent 账单砍两成",
+    "content": "Kompressor 是 Rust 单文件提示词压缩器，专治 coding agent 每轮把全部历史重发一遍：apt 日志、编译警告、进度条被反复重读，你反复付钱。它保证同一输入每轮压成相同字节，prompt cache 不失效（实测 93% 计费 token 是缓存读），删掉的细节仍可检索。Terminal-Bench 2.1 上真实账单降 22.7%，约为 Headroom 两倍。",
+    "quote": "压缩最大的本事，是别把缓存一起压没了。",
+    "source": "HN Show HN",
+    "url": "https://github.com/hystax/optscale-kompressor",
+    "published": "2026-10-20",
+    "uid": "dev_1de154a3"
+  },
+  {
+    "title": "Show HN：OpenTokenMini 给 AI 花费装了块电表",
+    "content": "免费开源的 agent 花费监控：接入 OpenAI、Anthropic 和开源模型之后，统计每个 agent 到底花了多少、钱烧在哪一步，并给出可执行的优化建议，而不是等月底看账单发愣。安装方式很省事——把仓库地址丢给 coding agent，让 AGENTS.md 带着走，每一步开启前都会先征求同意，不会偷偷挂代理。",
+    "quote": "账单出来才知道贵，那不叫 FinOps，叫捐款。",
+    "source": "HN Show HN",
+    "url": "https://opentokenmini.org/",
+    "published": "2026-10-20",
+    "uid": "dev_d67892b3"
+  },
+  {
+    "title": "Show HN：Spotnote 把「这里改大点」翻译成文件行号",
+    "content": "一个 Vite 插件，dev 模式下左下角出现入口：点页面任意元素，写一句「padding 调大」，它就把文件、行、列、组件层级和当前计算样式打包成 prompt 放进剪贴板，直接粘给 Claude Code、Cursor 或 Codex，agent 不用再满仓库找元素。支持 React、Vue、Svelte、Solid、Astro，只在 dev 和指定 staging 构建生效。",
+    "quote": "产品经理说「就那个块」，现在终于有坐标了。",
+    "source": "HN Show HN",
+    "url": "https://github.com/harukikuri/spotnote",
+    "published": "2026-10-20",
+    "uid": "dev_fd39489e"
+  },
+  {
+    "title": "Show HN：Forgot 让你在承诺上线日期前先看谁在休假",
+    "content": "给工程经理用的团队日历：把休假、on-call 周和项目排期拖进时间轴，再填一个发布日期，立刻标出那天谁不在。团队通过只读链接和每周邮件查看，不用注册账号；支持半天假、暂定日期、按时区分组，每个 on-call 周还能挂 runbook。demo 免账号，试用免卡，9 美元买断。",
+    "quote": "排期表不背锅，休假表才是真项目经理。",
+    "source": "HN Show HN",
+    "url": "https://forgot.dev",
+    "published": "2026-10-20",
+    "uid": "dev_0570b695"
+  },
+  {
+    "title": "Celorga：把 Org mode 重写成人和 agent 都能用的便携格式",
+    "content": "用了十五年 Emacs Org mode 的老用户，因为 AI 让开编辑器的次数变少，不想再为 Org 绑死在 spacemacs 上，于是重写了一个可移植的 Org 实现 Celorga，人和 agent 都能读写。纯文本、结构化、可被程序解析——这套三十年的老格式，反倒成了 agent 时代最合适的任务与笔记载体。",
+    "quote": "老掉牙的 Org，成了 agent 的记事本。",
+    "source": "HN Show HN",
+    "url": "https://github.com/aviaviavi/celorga",
+    "published": "2026-10-20",
+    "uid": "dev_9f254817"
+  },
+  {
+    "title": "ai-job-search：把求职流程做成 Claude Code 上的框架",
+    "content": "MadsLorentzen/ai-job-search 把求职做成跑在本地的框架：评估岗位、按 JD 改简历、写 cover letter、准备面试，全部基于 Claude Code，fork 下来就归自己。比起把简历喂给某个求职网站，这套思路是「流程自己拥有、数据不出机器」——听着很美，前提是你得先有个足够强的模型和不心疼的额度。",
+    "quote": "求职也上 agent，HR 先被优化。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/MadsLorentzen/ai-job-search",
+    "published": "2026-10-20",
+    "uid": "dev_7fd7f657"
+  },
+  {
+    "title": "Tervia：AI Coding 之后，他干脆不开 VS Code 了",
+    "content": "V2EX 用户重度 AI Coding 一年多，发现 VS Code 只剩 review diff 的用处，于是用 GPUI 写了个 Tervia：终端、Git 和简易文件编辑三合一，平时在终端跑 agent，要看改动时不必再开一个完整 IDE。帖子 26 条回复，吵的其实是同一件事——AI 写代码之后，编辑器的形态到底该往哪走。",
+    "quote": "IDE 混成 diff 查看器，也算体面退休。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1250064",
+    "published": "2026-10-20",
+    "uid": "dev_60b586d6"
+  },
+  {
+    "title": "koto：一句话把会话从一个 agent 搬到另一个",
+    "content": "koto 解决 agent 工具切换的迁移痛点：一句话把会话从一个 Agent Harness 复制、迁移或同步到另一个。换工具不再丢上下文，同一任务开多条会话也能摆在一起比较。背后是越来越现实的场景——没人只用一个 agent 客户端，而各家 harness 的会话格式各说各话，中间层迟早要有人做。",
+    "quote": "换 agent 像搬家，koto 负责搬行李。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1250028",
+    "published": "2026-10-20",
+    "uid": "dev_b6490fbf"
+  },
+  {
+    "title": "流量喵加磁盘监控：到底是谁在偷偷写你的 SSD",
+    "content": "macOS 菜单栏工具「流量喵」新增磁盘监控：起因是 Codex 用户反馈持续写盘，而作者自己同时开着 Codex、Claude Code、Cursor、Gemini，家里 mac mini 长期挂着跑索引、缓存和构建。新功能给出进程级读写排行，能看清一天里谁在写、写了多少。AI 工具装多了，SSD 耐久度成了新的隐性成本。",
+    "quote": "AI 帮你写代码，顺手帮你写坏 SSD。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249859",
+    "published": "2026-10-20",
+    "uid": "dev_0f765d82"
+  },
+  {
+    "title": "OhMyGame 开源十天 936 star：小团队的复盘",
+    "content": "小团队开源 AI 游戏创作工具 OhMyGame，主打「一个人的 AI 游戏工作室」：用户描述想法，agent 负责游戏设计、资产生成、开发与测试，Canvas 编辑和游戏工作流整合在一起。开源十天拿到 936 个 star，作者复盘了数字、流量来源和用户反馈。没有自带流量还能起量，靠的是把「想法到能玩」这条链路真跑通。",
+    "quote": "一个人做游戏，agent 当免费实习生。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1250127",
+    "published": "2026-10-20",
+    "uid": "dev_cf33453f"
+  },
+  {
+    "title": "5 分钟筛完 3.6 万篇论文：把文献检索写成集合代数",
+    "content": "作者嫌通用 agent 的 web search 只能拿 top-k、噪音大还要自己清洗，于是用 Jev 重做文献管线 Parallax：把论文集合当作操作单元，支持并集、差集、规则过滤、AI 精筛（阈值 0.5）和多标签分类，已抓 arXiv cs.* 2020 年起 82 万篇元数据共 7.8GB，向量压成 halfvec 后约 1.65GB，5 分钟精筛 3.6 万篇，前端用节点图编排。",
+    "quote": "别人翻文献靠咖啡，他靠差集和阈值。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1250143",
+    "published": "2026-10-20",
+    "uid": "dev_aa05cadc"
+  },
+  {
+    "title": "用 Mac 统一控制家里所有安卓设备，画面不走云端",
+    "content": "抽屉里的旧手机、孩子不用的平板、专门跑某个 App 的备用机，作者为此做了 UnitCtrl：坐在 Mac 前就能在一个窗口里看和操作家里每一台安卓，手机之间也能互相控制。重点是局域网直连，不登录账号、不绕云端，画面不经过第三方服务器；Mac 端免费下载，安卓端正在内测招募。",
+    "quote": "旧手机别急着卖，先给它们找个工位。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1250136",
+    "published": "2026-10-20",
+    "uid": "dev_d39b87f7"
+  },
+  {
+    "title": "给 Agent 装上数据库血缘：改字段前先看会炸到谁",
+    "content": "Agent 把交付速度拉高之后，数据库变更的爆炸半径也变大了：一条字段改动可能穿过多个库、N 个视图和仓库里根本没出现过的报表。作者做了个血缘分析平台，通过 MCP 把字段级血缘检索能力交给 Agent，让它在生成迁移或改 SQL 之前先确认下游影响，别等改完才发现跨服务报表全红。",
+    "quote": "Agent 不怕改错，怕它不知道在改谁的命。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1250041",
+    "published": "2026-10-20",
+    "uid": "dev_1d94fdb6"
+  },
+  {
+    "title": "在普通 Chrome 里跑微信小程序：wxa-runner 绕开重型 IDE",
+    "content": "微信开发者工具动辄几个 G 内存，还老要求重新扫码，想塞进 Linux CI 跑自动化更是折磨。wxa-runner 直接把小程序放进普通 Chrome（含无头模式）里跑，用官方基础库渲染，行为尽量贴近真机，体积和启动都轻得多，适合本地调试、批量截图，以及在 CI 里跑端到端测试。",
+    "quote": "为跑个测试装几个 G 的 IDE，这很赛博。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249958",
+    "published": "2026-10-20",
+    "uid": "dev_b771c402"
+  },
+  {
+    "title": "接 5 个 MCP server，每轮先被工具定义吃掉 3 万 token",
+    "content": "接 4 到 5 个 MCP server（GitHub、Playwright、Postgres、Notion）之后，它们的 tools/list JSON schema 会在每一轮对话前悄悄吃掉 1.5 万到 3.5 万 token，你还没提问账单就上去了。作者给了一套本地审计方法，顺带解决 CLAUDE.md 与 AGENTS.md 不同步的问题。MCP 很方便，但工具定义正在变成新的上下文税。",
+    "quote": "工具还没调用，token 先被税走。",
+    "source": "Dev.to",
+    "url": "https://dev.to/framy2/how-to-audit-mcp-tool-schema-token-bloat-and-sync-claudemd-with-agentsmd-locally-2c2n",
+    "published": "2026-10-20",
+    "uid": "dev_dd5aefa5"
+  },
+  {
+    "title": "AI 让写代码变快，为什么还在用代码行数考核",
+    "content": "AI 让写代码变快之后，很多团队还在用代码行数衡量生产力。作者观点很直白：写代码从来不是软件工程最难的部分，难的是理解问题、做取舍、调意外行为、维护系统——这些恰好是行数看不见的。用 LOC 考核 AI 时代的开发者，等于用跑动距离评价一个已经改踢战术的球员。",
+    "quote": "用行数考核 AI 时代，等于用体重考智商。",
+    "source": "Dev.to",
+    "url": "https://dev.to/aydope/ai-is-making-developers-faster-so-why-are-we-still-measuring-productivity-by-lines-of-code-27f5",
+    "published": "2026-10-20",
+    "uid": "dev_b7532fe0"
+  },
+  {
+    "title": "批处理崩一次回到零：进度只存在 Python 变量里",
+    "content": "作者用 48 小时实战记录讲了个老坑：批处理任务对进度的自信，全存在一个 Python 变量里；进程一崩，变量跟着消失，下次从零开始，重复处理、重复计费。结论是把队列状态落到持久存储，做幂等和断点续跑。分布式系统里最贵的不是崩溃本身，是崩溃之后假装什么都没发生。",
+    "quote": "进度只存内存，崩一次回到解放前。",
+    "source": "Dev.to",
+    "url": "https://dev.to/codepy_1473/48-hour-field-notes-a-crash-mid-batch-proved-my-queue-had-no-memory-3lbp",
+    "published": "2026-10-20",
+    "uid": "dev_8038a2ed"
+  },
+  {
+    "title": "两个真正负责的人，胜过八个看起来很忙的人",
+    "content": "借《星球大战》的 Rule of Two 谈团队规模：加人不等于加有效产出，因为业务得先想清楚做什么、做决策、消解不确定性，才喂得饱工程产能。一块产品只有一两个明确改动却塞进六个开发，多出来的产能就会制造「看起来很忙」的压力，最后长出一堆没人要的功能。作者主张小团队、真 ownership。",
+    "quote": "人多不一定好办事，但人多一定好开会。",
+    "source": "Dev.to",
+    "url": "https://dev.to/rodrigovidal/the-rule-of-two-for-software-teams-4hj6",
+    "published": "2026-10-20",
+    "uid": "dev_ae6aed7a"
+  },
+  {
+    "title": "Agent 撞上 429 就崩，等于在给供应商送钱",
+    "content": "调用 OpenAI、Anthropic 这类服务超额会返回 429。代码若把它当普通异常直接崩，或者无脑重试，结果一是丢掉已经付过费的生成结果，二是把端点打得更狠、触发超额费甚至封号。文章给了一份 Python 重试模板：识别 429、优先读 Retry-After、否则指数退避加抖动、限制总次数、记录日志，方便事后调流量。",
+    "quote": "不会退避的重试，等于把 429 当许愿池。",
+    "source": "Dev.to",
+    "url": "https://dev.to/renev3408/your-ai-agent-crashes-on-429-errors-and-youre-burning-money-2ag9",
+    "published": "2026-10-20",
+    "uid": "dev_e17c03ab"
+  },
+  {
+    "title": "一文搞懂 SubAgent：AI 为什么也需要一个助手",
+    "content": "博客园科普文：AI 编程助手为回答「这个项目用什么测试框架」，要读配置、搜依赖、查测试目录，一路把主上下文塞满。SubAgent 的思路是把这类探查丢给子代理，只把结论带回主线程，省 context 也省时间。文章把适用边界、上下文隔离和结果汇总讲清楚了，适合刚被 agent 上下文撑爆的人。",
+    "quote": "让 AI 也学会把杂活丢给实习生。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Tomorrowland/p/23356173",
+    "published": "2026-10-20",
+    "uid": "dev_24f35c68"
+  },
+  {
+    "title": "逆向 CesiumOfflineCache：给三维 GIS 离线缓存补上自动更新",
+    "content": "政务大屏项目要求断网能开、二次打开秒开，作者于是逆向 LSGlobe（Cesium 深度封装）配套的 CesiumOfflineCache，摸清离线瓦片缓存格式，再亲手补上「自动更新」能力。一篇很硬的实战：三维 GIS 离线缓存怎么设计、逆向时怎么定位关键逻辑、增量更新又怎么不打乱已有缓存。",
+    "quote": "断网也要秒开，只能自己去扒缓存格式。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/ChineseLiao/p/23359070",
+    "published": "2026-10-20",
+    "uid": "dev_756c51d3"
+  },
+  {
+    "title": "MAF + 飞书：让大模型干活，但别让它乱干",
+    "content": "MudFeishu 本来是个规矩的 .NET 飞书 SDK：一千两百多个强类型接口、多租户令牌托管、WebSocket 长连、Webhook 回调。接上大模型之后问题来了——模型能调接口，但不该什么都能调。文章讲怎么用 MAF 给模型划权限边界，把「乱干」的可能挡在 SDK 这一层，而不是靠 prompt 祈祷。",
+    "quote": "让模型干活容易，让它别乱干才值钱。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/mudtools/p/23357540",
+    "published": "2026-10-20",
+    "uid": "dev_8659b756"
+  },
+  {
+    "title": "在 DeepSeek Harness 里按需加载 GIS 知识：一个工具一个技能",
+    "content": "开源 GIS 是一条从 GDAL、PROJ、PostGIS 到 GeoServer、Cesium 的长链路，把手册全塞进上下文只会把模型淹了。作者把它拆成技能包：一个工具（或强相关一组）一个技能，再用 opengis-all 索引技能串起流程，正文讲怎么选、坑在哪，reference 放命令与 API 速查，技能间用相对链接互跳。插件只提供知识目录和按需加载，不注册工具、不抢上下文。",
+    "quote": "知识不是越多越好，是加载得越准越好。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/znlgis/p/23356691",
+    "published": "2026-10-20",
+    "uid": "dev_329a825f"
+  },
+  {
+    "title": "StreamMark：给 Avalonia 一个不用 WebView 的流式 Markdown",
+    "content": "AI 输出一个字一个字到，还夹着代码块、表格、公式和 Mermaid 图，用 WebView 渲染既重又难控。StreamMark 是 Avalonia 原生渲染库，装上 TKCode.StreamMark.Avalonia 即可显示 Markdown，再按需加 TextMate 高亮、RaTeX 公式、Mermaid 图表。文章从建 .NET 10 项目讲到流式追加，当前仍是预览版，建议锁版本。",
+    "quote": "不用 WebView 了，桌面端少背个浏览器。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/token-ai/p/23358692",
+    "published": "2026-10-20",
+    "uid": "dev_d7928a6b"
+  }
+]
