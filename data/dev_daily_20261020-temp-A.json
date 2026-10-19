@@ -1,0 +1,137 @@
+[
+  {
+    "title": "Acyclic：YC 新项目把 agent 工作流跑成「蜂群」",
+    "content": "Y Combinator F26 团队推出 Acyclic：把任意 agentic 工作流跑成群蜂。你给出任务和项目，它把活拆给多个 coding agent，各自在独立沙箱里并行开工，再汇总结果。相比单 agent 串行磨，思路是用并行换吞吐——代价是协调、合并与冲突处理，这也是所有 agent swarm 产品绕不开的真问题。",
+    "quote": "一个 agent 干不完，就派一群去吵架。",
+    "source": "HN Show HN",
+    "url": "https://news.ycombinator.com/item?id=50153128",
+    "published": "2026-10-20",
+    "uid": "dev_47601078"
+  },
+  {
+    "title": "Celorga：把 Org mode 重写成人和 agent 都能用的便携格式",
+    "content": "用了十五年 Emacs Org mode 的老用户，因为 AI 让开编辑器的次数变少，不想再为 Org 绑死在 spacemacs 上，于是重写了一个可移植的 Org 实现 Celorga，人和 agent 都能读写。纯文本、结构化、可被程序解析——这套三十年的老格式，反倒成了 agent 时代最合适的任务与笔记载体。",
+    "quote": "老掉牙的 Org，成了 agent 的记事本。",
+    "source": "HN Show HN",
+    "url": "https://github.com/aviaviavi/celorga",
+    "published": "2026-10-20",
+    "uid": "dev_9f254817"
+  },
+  {
+    "title": "opencode 再登热榜：开源 coding agent 的壳越做越硬",
+    "content": "anomalyco/opencode 再登 GitHub Trending：TypeScript 写的开源 coding agent，终端优先。在 Claude Code、Codex 这类闭源订阅之外，它给了一个可自托管、可改源码的选择。真正值得看的不是又一个 CLI，而是 agent 的 harness 层正在被开源重写——工具调用、上下文管理、权限模型，谁都能插一脚。",
+    "quote": "coding agent 的壳，正被开源一层层扒掉。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/anomalyco/opencode",
+    "published": "2026-10-20",
+    "uid": "dev_0ac66866"
+  },
+  {
+    "title": "ai-job-search：把求职流程做成 Claude Code 上的框架",
+    "content": "MadsLorentzen/ai-job-search 把求职做成跑在本地的框架：评估岗位、按 JD 改简历、写 cover letter、准备面试，全部基于 Claude Code，fork 下来就归自己。比起把简历喂给某个求职网站，这套思路是「流程自己拥有、数据不出机器」——听着很美，前提是你得先有个足够强的模型和不心疼的额度。",
+    "quote": "求职也上 agent，HR 先被优化。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/MadsLorentzen/ai-job-search",
+    "published": "2026-10-20",
+    "uid": "dev_7fd7f657"
+  },
+  {
+    "title": "headroom：在垃圾进模型之前先压一遍，省两成 token",
+    "content": "headroomlabs-ai/headroom 专治上下文通胀：工具输出、日志、文件和 RAG 片段在送进模型之前先压缩，官方称编码 agent 可省约两成 token，JSON 类内容能省 60% 到 95%，答案不变。库、代理、MCP server 三种形态都给。上下文窗口再大也经不起垃圾往里灌，压缩层正在变成 agent 栈的标配。",
+    "quote": "上下文窗口再大，也架不住垃圾灌。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/headroomlabs-ai/headroom",
+    "published": "2026-10-20",
+    "uid": "dev_894c6c6f"
+  },
+  {
+    "title": "Tervia：AI Coding 之后，他干脆不开 VS Code 了",
+    "content": "V2EX 用户重度 AI Coding 一年多，发现 VS Code 只剩 review diff 的用处，于是用 GPUI 写了个 Tervia：终端、Git 和简易文件编辑三合一，平时在终端跑 agent，要看改动时不必再开一个完整 IDE。帖子 26 条回复，吵的其实是同一件事——AI 写代码之后，编辑器的形态到底该往哪走。",
+    "quote": "IDE 混成 diff 查看器，也算体面退休。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1250064",
+    "published": "2026-10-20",
+    "uid": "dev_60b586d6"
+  },
+  {
+    "title": "koto：一句话把会话从一个 agent 搬到另一个",
+    "content": "koto 解决 agent 工具切换的迁移痛点：一句话把会话从一个 Agent Harness 复制、迁移或同步到另一个。换工具不再丢上下文，同一任务开多条会话也能摆在一起比较。背后是越来越现实的场景——没人只用一个 agent 客户端，而各家 harness 的会话格式各说各话，中间层迟早要有人做。",
+    "quote": "换 agent 像搬家，koto 负责搬行李。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1250028",
+    "published": "2026-10-20",
+    "uid": "dev_b6490fbf"
+  },
+  {
+    "title": "流量喵加磁盘监控：到底是谁在偷偷写你的 SSD",
+    "content": "macOS 菜单栏工具「流量喵」新增磁盘监控：起因是 Codex 用户反馈持续写盘，而作者自己同时开着 Codex、Claude Code、Cursor、Gemini，家里 mac mini 长期挂着跑索引、缓存和构建。新功能给出进程级读写排行，能看清一天里谁在写、写了多少。AI 工具装多了，SSD 耐久度成了新的隐性成本。",
+    "quote": "AI 帮你写代码，顺手帮你写坏 SSD。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1249859",
+    "published": "2026-10-20",
+    "uid": "dev_0f765d82"
+  },
+  {
+    "title": "OhMyGame 开源十天 936 star：小团队的复盘",
+    "content": "小团队开源 AI 游戏创作工具 OhMyGame，主打「一个人的 AI 游戏工作室」：用户描述想法，agent 负责游戏设计、资产生成、开发与测试，Canvas 编辑和游戏工作流整合在一起。开源十天拿到 936 个 star，作者复盘了数字、流量来源和用户反馈。没有自带流量还能起量，靠的是把「想法到能玩」这条链路真跑通。",
+    "quote": "一个人做游戏，agent 当免费实习生。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1250127",
+    "published": "2026-10-20",
+    "uid": "dev_cf33453f"
+  },
+  {
+    "title": "接 5 个 MCP server，每轮先被工具定义吃掉 3 万 token",
+    "content": "接 4 到 5 个 MCP server（GitHub、Playwright、Postgres、Notion）之后，它们的 tools/list JSON schema 会在每一轮对话前悄悄吃掉 1.5 万到 3.5 万 token，你还没提问账单就上去了。作者给了一套本地审计方法，顺带解决 CLAUDE.md 与 AGENTS.md 不同步的问题。MCP 很方便，但工具定义正在变成新的上下文税。",
+    "quote": "工具还没调用，token 先被税走。",
+    "source": "Dev.to",
+    "url": "https://dev.to/framy2/how-to-audit-mcp-tool-schema-token-bloat-and-sync-claudemd-with-agentsmd-locally-2c2n",
+    "published": "2026-10-20",
+    "uid": "dev_dd5aefa5"
+  },
+  {
+    "title": "AI 让写代码变快，为什么还在用代码行数考核",
+    "content": "AI 让写代码变快之后，很多团队还在用代码行数衡量生产力。作者观点很直白：写代码从来不是软件工程最难的部分，难的是理解问题、做取舍、调意外行为、维护系统——这些恰好是行数看不见的。用 LOC 考核 AI 时代的开发者，等于用跑动距离评价一个已经改踢战术的球员。",
+    "quote": "用行数考核 AI 时代，等于用体重考智商。",
+    "source": "Dev.to",
+    "url": "https://dev.to/aydope/ai-is-making-developers-faster-so-why-are-we-still-measuring-productivity-by-lines-of-code-27f5",
+    "published": "2026-10-20",
+    "uid": "dev_b7532fe0"
+  },
+  {
+    "title": "批处理崩一次回到零：进度只存在 Python 变量里",
+    "content": "作者用 48 小时实战记录讲了个老坑：批处理任务对进度的自信，全存在一个 Python 变量里；进程一崩，变量跟着消失，下次从零开始，重复处理、重复计费。结论是把队列状态落到持久存储，做幂等和断点续跑。分布式系统里最贵的不是崩溃本身，是崩溃之后假装什么都没发生。",
+    "quote": "进度只存内存，崩一次回到解放前。",
+    "source": "Dev.to",
+    "url": "https://dev.to/codepy_1473/48-hour-field-notes-a-crash-mid-batch-proved-my-queue-had-no-memory-3lbp",
+    "published": "2026-10-20",
+    "uid": "dev_8038a2ed"
+  },
+  {
+    "title": "一文搞懂 SubAgent：AI 为什么也需要一个助手",
+    "content": "博客园科普文：AI 编程助手为回答「这个项目用什么测试框架」，要读配置、搜依赖、查测试目录，一路把主上下文塞满。SubAgent 的思路是把这类探查丢给子代理，只把结论带回主线程，省 context 也省时间。文章把适用边界、上下文隔离和结果汇总讲清楚了，适合刚被 agent 上下文撑爆的人。",
+    "quote": "让 AI 也学会把杂活丢给实习生。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Tomorrowland/p/23356173",
+    "published": "2026-10-20",
+    "uid": "dev_24f35c68"
+  },
+  {
+    "title": "逆向 CesiumOfflineCache：给三维 GIS 离线缓存补上自动更新",
+    "content": "政务大屏项目要求断网能开、二次打开秒开，作者于是逆向 LSGlobe（Cesium 深度封装）配套的 CesiumOfflineCache，摸清离线瓦片缓存格式，再亲手补上「自动更新」能力。一篇很硬的实战：三维 GIS 离线缓存怎么设计、逆向时怎么定位关键逻辑、增量更新又怎么不打乱已有缓存。",
+    "quote": "断网也要秒开，只能自己去扒缓存格式。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/ChineseLiao/p/23359070",
+    "published": "2026-10-20",
+    "uid": "dev_756c51d3"
+  },
+  {
+    "title": "MAF + 飞书：让大模型干活，但别让它乱干",
+    "content": "MudFeishu 本来是个规矩的 .NET 飞书 SDK：一千两百多个强类型接口、多租户令牌托管、WebSocket 长连、Webhook 回调。接上大模型之后问题来了——模型能调接口，但不该什么都能调。文章讲怎么用 MAF 给模型划权限边界，把「乱干」的可能挡在 SDK 这一层，而不是靠 prompt 祈祷。",
+    "quote": "让模型干活容易，让它别乱干才值钱。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/mudtools/p/23357540",
+    "published": "2026-10-20",
+    "uid": "dev_8659b756"
+  }
+]

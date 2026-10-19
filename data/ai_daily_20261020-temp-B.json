@@ -1,0 +1,110 @@
+[
+  {
+    "title": "Kronos：把 K 线当语言，45 家交易所数据训出的金融基座",
+    "content": "Kronos 是首个面向金融 K 线的开源基座模型，用 45 家以上交易所数据预训练。专用 tokenizer 先把 OHLCV 行情量化成分层离散 token，再用自回归 Transformer 学习，统一承接预测等量化任务。模型分 4.1M、24.7M、102.3M、499.2M 四档，前三档开放权重，small/base 上下文 512，已被 AAAI 2026 接收。",
+    "quote": "K 线也能当语言，韭菜终于有了自己的基座模型。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/shiyu-coder/Kronos",
+    "published": "2026-10-20",
+    "uid": "ai_29c9dbf2"
+  },
+  {
+    "title": "vLLM 新招：权重走 HTTP 直传，不再落盘折腾存储",
+    "content": "vLLM v0.32.1rc0 引入 HTTP Weight-Transfer Protocol，专治在线强化学习传权重的瓶颈：过去每轮都要把 14B 到 70B 检查点写到 NFS、Ceph 等共享存储，推理 GPU 干等磁盘，集群利用率常低于 40%，还会带来显存碎片。新方案让训练 worker 直接向 vLLM 流式推送内存中的 Safetensors，零磁盘落盘，减少 I/O 等待。",
+    "quote": "权重不落盘，存储厂商的夜壶被踢翻了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/hordii_bohdan/architectural-deep-dive-vllm-inference-engine-v0321rc0-4l7f",
+    "published": "2026-10-20",
+    "uid": "ai_41cc93dd"
+  },
+  {
+    "title": "美国土安全部下令：联邦民用机构全面移除 DeepSeek",
+    "content": "美国国土安全部宣布在联邦民用机构禁用 DeepSeek，要求立即卸载相关软件，并禁止该公司参与联邦政府合同。官方理由是使用可能导致敏感数据流向中国政府，且模型可能含恶意代码或安全漏洞。环保署、联邦通信委员会等机构须屏蔽并清除相关产品。此举发生在 DeepSeek 发布 V4.1-Flash-1017 几天之后；去年已有两名国会议员提议禁止政府设备使用其聊天机器人。",
+    "quote": "刚发新模型就被拉黑，这波是安全审查抢跑。",
+    "source": "Dev.to",
+    "url": "https://dev.to/hacksgr/us-bans-use-of-deepseek-technology-in-all-federal-agencies-5ffd",
+    "published": "2026-10-20",
+    "uid": "ai_7882797e"
+  },
+  {
+    "title": "1800 次实测：四道权限闸门，只有一道零攻破",
+    "content": "开发者用同一套邮件与文件环境、三个 Agent 框架跑了 1800 次实验：50 个注入攻击加 25 个正常任务，在特权工具调用前分别放四种闸门。攻击成功次数从无闸门的 16 次降到规则 9 次、LLM 审核 6 次，概率闸门 0 次。关键发现是 Agent 服从注入指令的比例几乎不随闸门变化，差别全在服从之后能否拦住；概率闸门在 15 次被劫持运行中全部拦截，实验代码已开源。",
+    "quote": "四种闸门三种漏，剩下那个还挺贵吧。",
+    "source": "Dev.to",
+    "url": "https://dev.to/sunnydachs/only-one-of-four-gates-stopped-every-attack-on-an-ai-agent-2173",
+    "published": "2026-10-20",
+    "uid": "ai_42aa2ef1"
+  },
+  {
+    "title": "给本地 27B 模型装 207 个逆向工具，然后它不说话",
+    "content": "桌面应用 Locally Uncensored 3.0.7 接入 MIT 协议 MCP 服务 REA，让 Agent 逆向分析应用与文件。首次启动 npx 安装依赖，MCP 初始化要等 111 秒，30 秒即超时；207 个工具 schema 撑爆本地上下文，只能按关键词动态挂载。用 Qwen 3.8 27B、64K 上下文实测，工具顺序选对却不写结论，schema 还诱导模型复制大段记录。",
+    "quote": "工具全给它，脑子没跟上，等于递刀不递脑。",
+    "source": "Dev.to",
+    "url": "https://dev.to/purpledoubled/reverse-engineering-with-a-local-model-what-it-took-to-make-a-27b-model-finish-the-job-pc8",
+    "published": "2026-10-20",
+    "uid": "ai_e6aae896"
+  },
+  {
+    "title": "六个顶级模型 CLI 下棋，12 局零将杀",
+    "content": "有人搭 SpaceApp，让 Opus 5.5、Fable 5.1、GPT-6-Astra、GPT-6.1-Sol、Gemini 4 Argon、Gemini 3.8 Flash 各走 CLI 下棋，每步 120 秒、三次违规判负。4 轮瑞士制 12 局无一将杀：11 局因第三次犯规判负，唯一打满 60 手的一局按子力判和。作者强调样本小，真正测的是无人值守时 CLI 能否稳定按时给出合法动作。",
+    "quote": "六个模型下了十二局，谁也没将死谁，挺 AI 的。",
+    "source": "Dev.to",
+    "url": "https://dev.to/space_app_fc7f6872808dc84/six-ai-models-played-chess-through-their-clis-none-of-them-delivered-checkmate-4fhp",
+    "published": "2026-10-20",
+    "uid": "ai_e5d943fc"
+  },
+  {
+    "title": "MCP 工具 schema 每轮偷吃三万 token，怎么瘦身",
+    "content": "接四个 MCP 服务器后，每个服务都把完整 tools/list JSON 塞进上下文，单个二十多工具的服务器每轮吃掉 1.5 万到 3.5 万 token。作者开源 CtxWise v1.0：mcp-xray 通过 stdio 探测本地服务器，算出每个 schema 的 token 成本并标记臃肿项，配合 mcp-prune 裁掉不用的工具，称可砍 50% 到 80% 启动上下文，另带注入扫描。",
+    "quote": "工具还没调，上下文先被 schema 吃干净了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/framy2/why-your-mcp-servers-are-secretly-eating-30000-tokens-per-turn-and-how-to-tree-shake-them-10ai",
+    "published": "2026-10-20",
+    "uid": "ai_5156c95c"
+  },
+  {
+    "title": "DeepSeek V4.1 Flash 1017：分数涨了，模型 id 也换了",
+    "content": "DeepSeek 10 月 17 日发布 V4.1 Flash 1017，称是小版本更新，基准更高、输出更短。官方数据：HLE 无工具 36.8 升到 42.6，Terminal-Bench 4.0 从 31.2 升到 42.3，ProgramBench 从 20.3 升到 29.1。检查点仍为 510.3GB、MIT 许可；应用方把新 id 设为默认，并用退休 id 映射表兼容旧聊天和脚本。",
+    "quote": "分数涨了，id 换了，旧脚本还得靠映射表续命。",
+    "source": "Dev.to",
+    "url": "https://dev.to/purpledoubled/deepseek-v41-flash-1017-what-deepseek-says-changed-and-swapping-it-in-without-breaking-anyones-18ci",
+    "published": "2026-10-20",
+    "uid": "ai_c3d176ce"
+  },
+  {
+    "title": "一周 AI：DeepSeek 卷许愿式编程，Character.AI 破产",
+    "content": "七牛开发者周报：DeepSeek 更新 V4.1-Flash-1017，强化从零构建完整项目，开放 Search、Fetch API，5 元每千次，权重已上 Hugging Face 与 ModelScope。Gemini 4 Argon 全球上线，主打复杂工程与多步 Agent；Meta 连发 Muse 系列；Character.AI 申请破产，Modal Labs 融资 7.5 亿美元。",
+    "quote": "一边发模型一边破产，这周 AI 圈很完整。",
+    "source": "博客园",
+    "url": "https://www.cnblogs.com/Qiniu-developer/p/23361894",
+    "published": "2026-10-20",
+    "uid": "ai_baa4d88a"
+  },
+  {
+    "title": "一个 bge-m3 同时出稠密、稀疏、多向量，RAG 少拼三套",
+    "content": "智源 BAAI/bge-m3 用 MIT 协议开源可商用，569M 参数、1024 维稠密向量、模型约 2.27GB，CPU 也能跑。它覆盖 100 多种语言，最长 8192 token，一次推理同时输出稠密语义向量、类 BM25 稀疏权重和 ColBERT 式多向量。RAG 常见的稠密召回加重排，不必再部署多套模型；装 FlagEmbedding 后几行 Python 即可本地向量化。",
+    "quote": "一个模型干三份活，RAG 架构师可以少吵一架。",
+    "source": "博客园",
+    "url": "https://www.cnblogs.com/yclh/p/23361848",
+    "published": "2026-10-20",
+    "uid": "ai_3ca84c7d"
+  },
+  {
+    "title": "国风短剧厂用云平台：周期砍六成，算力省四成",
+    "content": "天津哪吒智云手握哪吒、封神演义等 IP，做高精短剧量产与视频出海，却卡在万级并发 Token、影视级渲染与多人协同上。2026 年 5 月接入天翼云 AI 创作平台 DramaFlow，聚合 Seedance-2.5、MiniMax H3、通义万相等模型，配模板化短剧工作流、可视化画布与全局资产库。团队称创作周期压缩 60% 以上、算力成本降约 40%、产出翻两番。",
+    "quote": "算力像水电，故事像样板戏，数字挺好看。",
+    "source": "博客园",
+    "url": "https://www.cnblogs.com/developer-tianyiyun/p/23362560",
+    "published": "2026-10-20",
+    "uid": "ai_d12baf6b"
+  },
+  {
+    "title": "别为每张工单调大模型：把决策编译一次，本地跑",
+    "content": "支持队列每天几千张工单，多数只需分到账单、工程、账号三类。常见做法是每张都调托管大模型分类，原型快，但决策空间小、指令重复、输出还要严格符合 schema 时，成本和审计都难受。开源项目 STROT 换个思路：先用大模型把任务编译成配置，运行时用本地小决策模型在已知标签里选，置信度不足就弃权转人工。文章用其 Python API 演示，并提醒这是项目自报数据，适合先做评估而非直接上生产。",
+    "quote": "每张工单都问大模型，钱包先被分类了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/jamilxt/stop-calling-an-llm-for-every-ticket-compile-the-decision-once-then-run-it-locally-49d7",
+    "published": "2026-10-20",
+    "uid": "ai_a28ab721"
+  }
+]
