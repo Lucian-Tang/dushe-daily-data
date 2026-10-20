@@ -1,0 +1,110 @@
+[
+  {
+    "title": "Anthropic 开源 11 个知识工作插件：把岗位流程打包给 Claude",
+    "content": "Anthropic 开源了 11 个面向知识工作者的 Claude 插件，主打 Claude Cowork，也兼容 Claude Code。每个插件打包某类岗位需要的 skills、连接器、斜杠命令和子代理，例如生产力插件接 Slack、Notion、Asana、Linear、Jira，销售插件负责线索调研与通话准备。官方称开箱即用只是起点，真正价值是改成公司自己的工具、术语和流程。",
+    "quote": "官方亲自下场做工作流，插件市场先被自己人占了。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/anthropics/knowledge-work-plugins",
+    "published": "2026-10-21",
+    "uid": "ai_40021438"
+  },
+  {
+    "title": "Cloudflare 开源安全审计 Skill：六个阶段，专派新 Agent 证伪",
+    "content": "Cloudflare 开源的安全审计 Skill 把编码 Agent 变成审计员，六阶段：先画架构与信任边界、产出覆盖台账；再派隔离 hunter 按单元找问题；每个候选漏洞交给新 Agent 专门证伪；最后把 confirmed、needs_validation、rejected 写成结构化记录、校验 schema，由新 Agent 复核断言。它是 Cloudflare 漏洞挖掘平台的单仓版本。",
+    "quote": "审计也外包给 Agent，最后靠新 Agent 互相拆台。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/cloudflare/security-audit-skill",
+    "published": "2026-10-21",
+    "uid": "ai_683339d1"
+  },
+  {
+    "title": "让 AI 学「最懒的资深工程师」：代码少一半，测试反而更多",
+    "content": "Ponytail 这个 Skill 让 Agent 模仿公司里最懒的资深工程师：话少、只写一行、能跑就行，但明确不许砍校验、错误处理、安全与可访问性。作者在 Claude Code 用 Opus 5.5 跑 39 个任务、每个 5 次对比，代码量降 53%、耗时降 41%、成本降 26%、token 降 45%，同时 98% 的风险逻辑带测试，不用它时只有 68%。",
+    "quote": "让 AI 学最懒的资深工程师，代码少了，锅也少了。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/DietrichGebert/ponytail",
+    "published": "2026-10-21",
+    "uid": "ai_c4bdcae4"
+  },
+  {
+    "title": "上下文先瘦身：Headroom 把工具输出压掉八成再喂模型",
+    "content": "Headroom 在内容进模型前压缩工具输出、日志、文件和 RAG 片段，JSON 场景可省 60% 到 95% token，编码 Agent 平均约省 20%，答案不变。提供 Python/TypeScript 库、零改代码的本地代理和 MCP server，还能一条命令包住 Claude、Codex、Cursor 等客户端；压缩全在本机完成，原文不外发，并可跨 Agent 共享记忆。",
+    "quote": "上下文先瘦身，账单才有救，不然全给日志打工。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/headroomlabs-ai/headroom",
+    "published": "2026-10-21",
+    "uid": "ai_d3b5f536"
+  },
+  {
+    "title": "KV 缓存到底吃多少显存？一个公式算出 64GB",
+    "content": "这篇工程文把 KV 缓存账单算清楚了：每 token 占用 2×层数×KV 头数×头维度×字节数。以 Llama-2 7B 风格模型为例，32 层、32 头、头维度 128，fp16 下每个 token 要 512KB，8K 上下文 4GB，128K 直接 64GB，还不含权重，而且每个并发请求各存一份。文章由此解释 MQA、GQA 为何让多个查询头共享同一组 K/V。",
+    "quote": "每 token 五百 KB，显存是被缓存吃掉的。",
+    "source": "Dev.to",
+    "url": "https://dev.to/dev_jhawar/the-kv-cache-is-eating-your-gpu-mqa-and-gqa-are-how-models-fight-back-3809",
+    "published": "2026-10-21",
+    "uid": "ai_732f2d80"
+  },
+  {
+    "title": "分词器在偷偷决定你的账单和模型的算术能力",
+    "content": "模型不读文字只读整数，中间的分词器决定了账单、上下文能装多少，以及模型为什么数不清字母。作者用 tiktoken 实测：tokenization 被切成 token 和 ization 两块，加个前导空格又是另一套 id，超长罕见词被拆成 17 个片段。词表通常 3 万到 20 万条，主流方案是 BPE，从单字符开始反复合并高频相邻对。",
+    "quote": "分词器悄悄决定账单，你还以为在按字数付费。",
+    "source": "Dev.to",
+    "url": "https://dev.to/dev_jhawar/tokenization-is-why-your-agent-bill-looks-weird-4n47",
+    "published": "2026-10-21",
+    "uid": "ai_816954d7"
+  },
+  {
+    "title": "AI 写的代码八种破绽：最危险的是「看起来对」",
+    "content": "做代码审计的作者总结了 LLM 生成代码的八种破绽：最危险的不是明显写错，而是看起来对、能编译、能过 happy path。典型信号有接口漏鉴权中间件、状态变更路由缺 CSRF、手搓 sha256 当密码哈希、会话 cookie 缺 HttpOnly，以及错误分支只做表面处理。作者认为 LLM 优化的是「像正确代码」，建议按这些形状给 AI 写的 MVP 做半天分诊。",
+    "quote": "AI 写的代码不是错，是太像对的，这才最坑。",
+    "source": "Dev.to",
+    "url": "https://dev.to/jacek_rozanski/your-ai-pair-programmer-has-tells-8-patterns-that-signal-trouble-in-llm-generated-code-4m7o",
+    "published": "2026-10-21",
+    "uid": "ai_90d5d571"
+  },
+  {
+    "title": "五十美元攻破一家公司：Agent 编排面板连登录都没有",
+    "content": "路透报道有黑客用 AI Agent 以约 50 美元一次的代价攻破上百家公司，底层开源控制面 Cairn 默认不带任何认证。作者读完源码后在本地关掉攻击模块跑了一遍：四条命令、不需要 API key，调度器三秒就把项目 bootstrap 完，整块黑板状态随便读。文章认为真正的风险不是模型多强，而是这类多智能体编排面板被直接暴露在公网。",
+    "quote": "五十美元攻破一家公司，控制台连登录都懒得做。",
+    "source": "Dev.to",
+    "url": "https://dev.to/slabb/the-control-panel-behind-a-100-site-ai-hacking-spree-has-no-login-i-ran-one-742",
+    "published": "2026-10-21",
+    "uid": "ai_000ba1d1"
+  },
+  {
+    "title": "时序模型榜单第一差 0.003，实测输给「重复昨天」",
+    "content": "Mistral 10 月 15 日发布四个开源权重时序模型 Timestral，在自家表格上以 0.003 MASE 之差排第一。作者拿巴黎天气实测：只给 158 天历史时，209M 版本 MAE 6.489，输给「重复昨天」基线的 5.636；给到三年历史后 MAE 降到 3.326，反超基线三分之一，且 20.8MB 小模型与 837MB 旗舰只差 0.03。",
+    "quote": "榜单第一只差 0.003，实测输给重复昨天。",
+    "source": "Dev.to",
+    "url": "https://dev.to/slabb/mistrals-timestral-is-1-by-0003-mase-i-ran-it-the-model-was-not-the-variable-1bf8",
+    "published": "2026-10-21",
+    "uid": "ai_527491be"
+  },
+  {
+    "title": "Agent Teams 拆解：Task List 加 Mailbox，像真项目组",
+    "content": "博客园作者梳理 Claude Code 的 Agent Teams 机制：Team Lead 拆任务、建队友，Teammates 是各自独立上下文的实例，可互发消息；Task List 是共享看板，任务分 Pending、In Progress、Completed 三态并支持依赖；Mailbox 管通信。与 SubAgent 比，一个像找外包、偏委派，一个像组项目组、偏协作，token 也更高。",
+    "quote": "多 Agent 协作也要看板和邮箱，官僚得很 AI。",
+    "source": "博客园",
+    "url": "https://www.cnblogs.com/Tomorrowland/p/23363086",
+    "published": "2026-10-21",
+    "uid": "ai_5b6ad70d"
+  },
+  {
+    "title": "让 Agent 先摊开假设：方案顶部挂一张「前提小票」",
+    "content": "博客园作者写了 print-premise-receipt Skill：Agent 给方案前先把结论依赖的事实假设摊成一张可核对的小票，每条注明「若不成立，哪些章节作废」。示例里「订单接口优化」被拆出五条前提，包括慢在数据库而非网络、表小于 5000 万行、允许锁表，还标出一条未确认的 tenant_id 和验证命令。它不改方案内容，只改你在信任方案前能看到什么。",
+    "quote": "方案先摊底牌，免得你信了不该信的前提。",
+    "source": "博客园",
+    "url": "https://www.cnblogs.com/fhyy/p/23378163",
+    "published": "2026-10-21",
+    "uid": "ai_909a5039"
+  },
+  {
+    "title": "十人团队十种 AI 代码风格：规则文件不是配置文件",
+    "content": "十人团队各自让 AI 写同一需求，返回体、事务位置、错误码、测试风格全不一样，code review 变成风格辩论。作者主张 CLAUDE.md、AGENTS.md 这类规则文件是上下文而不是强制配置：能确定性判定的规则应写成 PreToolUse hook，拦截必须 exit 2，因为 exit 1 是非阻塞的；PostToolUse 拦不住调用，updatedInput 是整体替换而非打补丁。",
+    "quote": "规则文件治不了手滑，能拦人的只有 hook。",
+    "source": "博客园",
+    "url": "https://www.cnblogs.com/uniqueDong/p/23377655",
+    "published": "2026-10-21",
+    "uid": "ai_63a94cfd"
+  }
+]
