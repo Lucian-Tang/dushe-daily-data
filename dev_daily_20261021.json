@@ -1,0 +1,191 @@
+[
+  {
+    "title": "DeepSeek 开源推理引擎 DeepInfer，1654 分冲上 HN 头版",
+    "content": "DeepSeek 把自家的大规模推理框架 DeepInfer 开源了，Python 实现，主打高性能、大规模部署。HN 上一夜冲到 1758 分、637 条讨论。比起再放一版权重，这次交出的是「怎么把模型跑得又快又便宜」的工程底座——推理调度、显存管理、并行策略这些真正决定服务成本的东西，过去都是各家闭门调参的护城河。",
+    "quote": "开源的是引擎，不是模型，这才是成本命门。",
+    "source": "HN Front Page",
+    "url": "https://github.com/deepseek-ai/DeepInfer",
+    "published": "2026-10-21",
+    "uid": "dev_49846244"
+  },
+  {
+    "title": "Cloudflare 把 TypeScript 编译器移植到 Rust",
+    "content": "Cloudflare 发布 Tsrs，把 TypeScript 编译器搬到 Rust 上。动机很实际：大仓库里类型检查越来越慢，而 JS 写的编译器想并行几乎无处下手，只能单线程硬扛。换 Rust 意味着多线程、更可控的内存布局和能嵌进任意 native 工具链的能力。前端工具链这两年集体换发动机，慢一点就要被换掉。",
+    "quote": "前端工具链，正在集体换发动机。",
+    "source": "HN Front Page",
+    "url": "https://blog.cloudflare.com/typescript-rust-port/",
+    "published": "2026-10-21",
+    "uid": "dev_9700fb58"
+  },
+  {
+    "title": "编一份假统计，就能让 LLM 满世界引用你",
+    "content": "有人做了个实验：随手造一组看起来权威的行业统计数字，发在自己博客上，几周后这些数字开始出现在各家 AI 的回答里，还带着回链。LLM 的引用链路没有事实核查，只有「看起来像来源」这一条标准。对做 GEO 的人是现成手法，对信 AI 答案是事实的人是灾难。",
+    "quote": "给 AI 喂假数据，它替你免费传播。",
+    "source": "HN Front Page",
+    "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
+    "published": "2026-10-21",
+    "uid": "dev_806cd7e2"
+  },
+  {
+    "title": "给 MCP 工具加一层内存隐私盾，防上下文泄漏",
+    "content": "MCP 生态最大的隐忧之一：每次工具调用都像把整本日记递出去，模型和第三方服务都能看到不该看的上下文。Rohan Protocol 这个开源网关在客户端内存里隔离参数、用完立即清零，让明文密钥不进入模型上下文，顺带挡提示词注入。思路不新鲜，但把「最小权限」真正落到 agent 工具层，是迟早要补的一课。",
+    "quote": "工具要的是参数，不是你的家底。",
+    "source": "HN Front Page",
+    "url": "https://github.com/rohan-protocol/sdk",
+    "published": "2026-10-21",
+    "uid": "dev_3ef09239"
+  },
+  {
+    "title": "Cloudflare 开源安全审计 skill：让 agent 交可复核的报告",
+    "content": "cloudflare/security-audit-skill 是给 coding agent 用的多阶段安全审计技能：先扫一遍，再逐条独立验证，最后输出机器可读的结论，而不是一堆「可能存在风险」的模糊描述。它冲着 agent 做审计最要命的毛病去的——自信地编造漏洞。能被脚本复现的发现，才算发现。",
+    "quote": "不能复现的漏洞，都是 agent 的想象。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/cloudflare/security-audit-skill",
+    "published": "2026-10-21",
+    "uid": "dev_954bc715"
+  },
+  {
+    "title": "ponytail：让 AI agent 学屋里最懒的资深工程师",
+    "content": "DietrichGebert/ponytail 给 agent 注入一种人格：屋里最懒的那个资深工程师。核心信条是「最好的代码是你没写的代码」——能不写就不写，能删就删，能复用绝不动手。在 agent 疯狂输出三千行、人类忙着 review 的时代，教它少干活反而成了最稀缺的能力。",
+    "quote": "最好的代码，是没写出来的那一行。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/DietrichGebert/ponytail",
+    "published": "2026-10-21",
+    "uid": "dev_3927d749"
+  },
+  {
+    "title": "graphify：把整个代码库变成可查询的知识图谱",
+    "content": "Graphify-Labs/graphify 把代码、文档、SQL schema、配置和 PDF 一起解析成知识图谱，给 Claude Code、Cursor、Codex 当检索层。卖点是不用向量库：本地确定性 AST 解析，每条边都能解释来源。把 RAG 的模糊召回换成结构化关系，agent 找代码时至少知道自己为什么找到这一行。",
+    "quote": "别让向量库猜，让图告诉你为什么。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/Graphify-Labs/graphify",
+    "published": "2026-10-21",
+    "uid": "dev_06426ea9"
+  },
+  {
+    "title": "agent 把发邮件挪进队列，事务回滚了，邮件照样发出去了",
+    "content": "一个 agent 提的 PR 看着很干净：把 800ms 结账接口里那 300ms 的 SMTP 调用挪进 BullMQ 异步任务。问题在于，事务回滚后任务照样执行——用户收到「订单确认」，订单却不存在。agent 优化了延迟，顺手拆掉了正确性。这种 bug 在 review 里最难看出来，因为它长得太像最佳实践。",
+    "quote": "PR 越干净，越要看清它删了什么。",
+    "source": "Dev.to",
+    "url": "https://dev.to/jeff_pdc/agent-moved-the-email-send-to-a-queue-the-transaction-rolled-back-the-email-still-went-out-4ih8",
+    "published": "2026-10-21",
+    "uid": "dev_7dd63eb9"
+  },
+  {
+    "title": "在免费额度上跑 100 个 agent：Groq 30 RPM 的真实约束",
+    "content": "GridMind 把电子表格的每个格子做成一个独立研究 agent：行填公司，列填问题，点运行，agent 自己搜索填空。作者复盘了在 Groq 30 RPM、Tavily 有限额度下跑上百个 agent 的调度、重试和降级策略。结论挺扎心：卡住 agent 产品的从来不是模型智力，是你怎么排队。",
+    "quote": "agent 不难写，难的是排队。",
+    "source": "Dev.to",
+    "url": "https://dev.to/dev_jhawar/running-100-agents-on-a-free-tier-groq-30-rpm-tavily-credits-pgi",
+    "published": "2026-10-21",
+    "uid": "dev_91d65f41"
+  },
+  {
+    "title": "REA：给 Agent 一套逆向工程工具，还要求它交出证据",
+    "content": "REA 通过 MCP 接进 agent，让它能分析原生二进制、JavaScript 与 Electron 应用、网站，回答「这个功能到底怎么实现的」。底层可接 Ghidra、Hopper 或 IDA，选一个就够；命令行也能直接跑同样的分析流程。最值得看的是它返回结论时附带证据和证据边界，而不是一个自信但没法验证的答案。",
+    "quote": "逆向的结论要是不能查，那就叫猜。",
+    "source": "Dev.to",
+    "url": "https://dev.to/tempusthales/rea-reverse-engineer-anything-4475",
+    "published": "2026-10-21",
+    "uid": "dev_dc55029b"
+  },
+  {
+    "title": "Yatta JS：把十个后端引擎塞进一个 Bun 进程",
+    "content": "作者把 ORM、passkey/TOTP 认证、任务队列、两级缓存、对象存储、事务邮件、SSE/WebSocket、SLO 观测和 OpenTelemetry 全做进同一个 Bun 进程，对外只有一个 yatta/api 入口，没有构建步骤。代价是必须自己守住共享内存的纪律：请求体限字节、token 消费原子化、限流状态有界。实测 12.4k req/s，低于 Hono 和 Elysia。",
+    "quote": "少十个网络跳，就少十个凌晨告警。",
+    "source": "Dev.to",
+    "url": "https://dev.to/psrockstar098/the-single-process-backend-how-yatta-js-collapses-ten-engines-into-one-bun-process-309d",
+    "published": "2026-10-21",
+    "uid": "dev_cfc640a0"
+  },
+  {
+    "title": "V2EX：实际用 Claude 写项目，反差体验有点大",
+    "content": "楼主做的是 electron + Windows 的桌面小项目，涉及全局快捷键钩子和窗口聚焦。Claude 会主动指出哪些设计不可行、自己先做 tradeoff，避免用户抱着「这一定行」的执念踩坑；换 GLM 则闷头照做，不反馈风险。结论不新鲜但很真：模型差距不只在写码，更在敢不敢说「这条路不通」。",
+    "quote": "会顶嘴的模型，才救得了你的工期。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1250463",
+    "published": "2026-10-21",
+    "uid": "dev_4abf78ba"
+  },
+  {
+    "title": "他把图片转 PPTX 做成逐元素重建，拿 62 张真图做回归",
+    "content": "市面上的图片转 PPT 大多整页贴图，能播不能改。这个服务走「逐元素重建」：文字还原成原生文本框，卡片箭头色块变原生形状，照片按区域裁切独立成层，还拿 62 张真实截图和 PDF 页做回归测试。判断一个 AI 工具是玩具还是工具，就看作者愿不愿意自己造测试集。",
+    "quote": "能改字的 PPT，才配叫 PPT。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1250462",
+    "published": "2026-10-21",
+    "uid": "dev_67db2576"
+  },
+  {
+    "title": "用 Rust 写了个数据库客户端 DbCat，大部分代码是 AI 写的",
+    "content": "一个应用连 MySQL、PostgreSQL、SQL Server、Redis、MongoDB 等 12 种数据库，Rust 原生应用，作者坦言大部分代码出自 AI。起因很朴素：受够了 Electron 的笨重和多工具来回切。这类「一个人加 AI 干掉一个小赛道商业软件」的项目，今年出现频率高得有点吓人。",
+    "quote": "一个人一台机器，够拆一个小赛道。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1250369",
+    "published": "2026-10-21",
+    "uid": "dev_ad891ca6"
+  },
+  {
+    "title": "受够 Electron，他花两个月写了个 Rust 原生 Agent 管理工具",
+    "content": "Condr 用 Rust GUI 加 alacritty_terminal 做真终端，日常内存约 150M、最高 120FPS；Client/Server/CLI 共用一套协议，本地和远程 agent 用同一个客户端管。状态走 OSC 7501 或官方 hooks，不靠匹配屏幕文本；还能用 CLI 和 skill 让 agent 自己开 pane、协调别的 agent。移动端在开发中。",
+    "quote": "嫌 Electron 重，就自己写个终端。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1250302",
+    "published": "2026-10-21",
+    "uid": "dev_bb8a6046"
+  },
+  {
+    "title": "Show HN：Jev Cards，和视觉模型比谁先认出图",
+    "content": "一个纯网页的图片竞猜游戏，100 张卡片涵盖水果、国旗、地图、棋局和视错觉，模型约 0.3 秒给出答案，人来跟它抢答。提供 Sprint、Versus、Streak 三种模式，规则简单到不用教程。有意思的不是游戏本身，而是把「多模态模型到底有多快多准」变成了一场随时能玩的手感测试。",
+    "quote": "人类最后的体面，是认葡萄比 AI 快。",
+    "source": "HN Show HN",
+    "url": "https://jevcards.com",
+    "published": "2026-10-21",
+    "uid": "dev_5f2816ee"
+  },
+  {
+    "title": "Show HN：Penmentor 用彩笔在纸上批改你的手写数学",
+    "content": "给手写数学作业配的 AI 家教：在 xournal++ 里按一个键，Claude、Gemini 或 GPT 就在屏幕上用彩笔标出你算错的那一步，只给提示不给答案，还能把关键概念生成 3Blue1Brown 风格的 manim 动画。作者自己学微积分时受不了反复截图粘贴，干脆把整条链路做成本地工具。",
+    "quote": "好老师不递答案，只递下一步就好。",
+    "source": "HN Show HN",
+    "url": "https://github.com/AbdullahAlhariri/penmentor",
+    "published": "2026-10-21",
+    "uid": "dev_0bf165f9"
+  },
+  {
+    "title": "Show HN：VoidAccess 把暗网查询变成一张情报图谱",
+    "content": "可自托管的暗网 OSINT 平台，把一句研究查询拆成 13 个自动化步骤，最终输出结构化的威胁情报图谱，定位是 Recorded Future、DarkOwl、Flare 的免费替代品。Python 3.10+，Docker Compose 起服务，也发了 PyPI 包。对安全团队来说，关键不是能爬，而是结果能被复核、能进流程。",
+    "quote": "情报不便宜，除非服务器是你自己的。",
+    "source": "HN Show HN",
+    "url": "https://github.com/KatrielMoses/voidaccess",
+    "published": "2026-10-21",
+    "uid": "dev_4cebeafb"
+  },
+  {
+    "title": "10 人团队 10 种 AI 代码风格：规则文件不是配置文件",
+    "content": "同一个需求，10 个人各自让 AI 写一版：返回裸对象的有，包 Result<T> 的有；@Transactional 有的打在 controller，有的打在 service；错误码字符串、枚举、直接抛异常三足鼎立。作者的观点是 CLAUDE.md 这类规则文件不是「配置文件」，写完就完事——它是需要 review、需要落地检查的团队契约。",
+    "quote": "规则文件贴上去不执行，等于没写。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/uniqueDong/p/23377655",
+    "published": "2026-10-21",
+    "uid": "dev_c66bfb52"
+  },
+  {
+    "title": "GitHub Actions 推阿里云 ECS：折腾几天，到 2 分钟见绿",
+    "content": "一篇很实在的踩坑实录：Deploy 步骤卡在拉镜像，日志刷几天不动，换 CI 平台、装面板都没救。根因跟 GitHub 半点关系没有——registry-mirrors 管不到 ghcr、南大源覆盖不全、ECS 出网策略没放开。这类问题没有优雅解法，只有把链路上每一跳都验证一遍。",
+    "quote": "卡三天的问题，往往只值一行配置。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/xyyt/p/23377985/github-actions-aliyun-ecs-cicd-pitfalls",
+    "published": "2026-10-21",
+    "uid": "dev_5edf9b16"
+  },
+  {
+    "title": "让 Agent 给方案前先开一张「前提小票」",
+    "content": "Agent 写优化方案习惯把结论放最前，把「慢在数据库」「表小于五千万行」「读请求占九成」这些前提藏在叙事里，读者先信了结论再在实践中撞墙。这个 skill 不改方案内容，只在顶部加一张前提清单，每条绑定「若不成立则哪几节作废」，并标出尚未确认的项和确认方式。",
+    "quote": "结论人人会写，前提才见真功夫。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/fhyy/p/23378163",
+    "published": "2026-10-21",
+    "uid": "dev_065bc27f"
+  }
+]
