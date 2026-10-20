@@ -1,0 +1,136 @@
+# 🛠️ 开发者日报 A 轨初选 | 2026-10-21
+
+## 1. DeepSeek 开源推理引擎 DeepInfer，1654 分冲上 HN 头版
+**来源：** HN Front Page  
+**链接：** https://github.com/deepseek-ai/DeepInfer  
+**uid：** dev_49846244
+
+DeepSeek 把自家的大规模推理框架 DeepInfer 开源了，Python 实现，主打高性能、大规模部署。HN 上一夜冲到 1654 分、600 多条讨论。比起再放一版权重，这次交出的是「怎么把模型跑得又快又便宜」的工程底座——推理调度、显存管理、并行策略这些真正决定服务成本的东西，过去都是各家闭门调参的护城河。
+
+> 🗯️ 开源的是引擎，不是模型，这才是成本命门。
+
+## 2. Cloudflare 把 TypeScript 编译器移植到 Rust
+**来源：** HN Front Page  
+**链接：** https://blog.cloudflare.com/typescript-rust-port/  
+**uid：** dev_9700fb58
+
+Cloudflare 发布 Tsrs，把 TypeScript 编译器搬到 Rust 上。动机很实际：大仓库里类型检查越来越慢，而 JS 写的编译器想并行几乎无处下手，只能单线程硬扛。换 Rust 意味着多线程、更可控的内存布局和能嵌进任意 native 工具链的能力。前端工具链这两年集体换发动机，慢一点就要被换掉。
+
+> 🗯️ 前端工具链，正在集体换发动机。
+
+## 3. 给 MCP 工具加一层内存隐私盾，防上下文泄漏
+**来源：** HN Front Page  
+**链接：** https://github.com/rohan-protocol/sdk  
+**uid：** dev_3ef09239
+
+MCP 生态最大的隐忧之一：每次工具调用都像把整本日记递出去，模型和第三方服务都能看到不该看的上下文。这个开源 SDK 在内存层做拦截，只放行本次调用真正需要的字段，而不是让整个上下文窗口裸奔。思路不新鲜，但把「最小权限」真正落到 agent 工具层，是迟早要补的一课。
+
+> 🗯️ 工具要的是参数，不是你的家底。
+
+## 4. 编一份假统计，就能让 LLM 满世界引用你
+**来源：** HN Front Page  
+**链接：** https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web  
+**uid：** dev_806cd7e2
+
+有人做了个实验：随手造一组看起来权威的行业统计数字，发在自己博客上，几周后这些数字开始出现在各家 AI 的回答里，还带着回链。LLM 的引用链路没有事实核查，只有「看起来像来源」这一条标准。对做 GEO 的人是现成手法，对信 AI 答案是事实的人是灾难。
+
+> 🗯️ 给 AI 喂假数据，它替你免费传播。
+
+## 5. Cloudflare 开源安全审计 skill：让 agent 交可复核的报告
+**来源：** GitHub Trending Daily  
+**链接：** https://github.com/cloudflare/security-audit-skill  
+**uid：** dev_954bc715
+
+cloudflare/security-audit-skill 是给 coding agent 用的多阶段安全审计技能：先扫一遍，再逐条独立验证，最后输出机器可读的结论，而不是一堆「可能存在风险」的模糊描述。它冲着 agent 做审计最要命的毛病去的——自信地编造漏洞。能被脚本复现的发现，才算发现。
+
+> 🗯️ 不能复现的漏洞，都是 agent 的想象。
+
+## 6. ponytail：让 AI agent 学屋里最懒的资深工程师
+**来源：** GitHub Trending Daily  
+**链接：** https://github.com/DietrichGebert/ponytail  
+**uid：** dev_3927d749
+
+DietrichGebert/ponytail 给 agent 注入一种人格：屋里最懒的那个资深工程师。核心信条是「最好的代码是你没写的代码」——能不写就不写，能删就删，能复用绝不动手。在 agent 疯狂输出三千行、人类忙着 review 的时代，教它少干活反而成了最稀缺的能力。
+
+> 🗯️ 最好的代码，是没写出来的那一行。
+
+## 7. graphify：把整个代码库变成可查询的知识图谱
+**来源：** GitHub Trending Daily  
+**链接：** https://github.com/Graphify-Labs/graphify  
+**uid：** dev_06426ea9
+
+Graphify-Labs/graphify 把代码、文档、SQL schema、配置和 PDF 一起解析成知识图谱，给 Claude Code、Cursor、Codex 当检索层。卖点是不用向量库：本地确定性 AST 解析，每条边都能解释来源。把 RAG 的模糊召回换成结构化关系，agent 找代码时至少知道自己为什么找到这一行。
+
+> 🗯️ 别让向量库猜，让图告诉你为什么。
+
+## 8. V2EX：实际用 Claude 写项目，反差体验有点大
+**来源：** V2EX Tech  
+**链接：** https://www.v2ex.com/t/1250463  
+**uid：** dev_4abf78ba
+
+楼主做的是 electron + Windows 的桌面小项目，涉及全局快捷键钩子和窗口聚焦。Claude 会主动指出哪些设计不可行、自己先做 tradeoff，避免用户抱着「这一定行」的执念踩坑；换 GLM 则闷头照做，不反馈风险。结论不新鲜但很真：模型差距不只在写码，更在敢不敢说「这条路不通」。
+
+> 🗯️ 会顶嘴的模型，才救得了你的工期。
+
+## 9. 他把图片转 PPTX 做成逐元素重建，拿 62 张真图做回归
+**来源：** V2EX Share  
+**链接：** https://www.v2ex.com/t/1250462  
+**uid：** dev_67db2576
+
+市面上的图片转 PPT 大多整页贴图，能播不能改。这个服务走「逐元素重建」：文字还原成原生文本框，卡片箭头色块变原生形状，照片按区域裁切独立成层，还拿 62 张真实截图和 PDF 页做回归测试。判断一个 AI 工具是玩具还是工具，就看作者愿不愿意自己造测试集。
+
+> 🗯️ 能改字的 PPT，才配叫 PPT。
+
+## 10. 用 Rust 写了个数据库客户端 DbCat，大部分代码是 AI 写的
+**来源：** V2EX Share  
+**链接：** https://www.v2ex.com/t/1250369  
+**uid：** dev_ad891ca6
+
+一个应用连 MySQL、PostgreSQL、SQL Server、Redis、MongoDB 等 12 种数据库，Rust 原生应用，作者坦言大部分代码出自 AI。起因很朴素：受够了 Electron 的笨重和多工具来回切。这类「一个人加 AI 干掉一个小赛道商业软件」的项目，今年出现频率高得有点吓人。
+
+> 🗯️ 一个人一台机器，够拆一个小赛道。
+
+## 11. 在免费额度上跑 100 个 agent：Groq 30 RPM 的真实约束
+**来源：** Dev.to  
+**链接：** https://dev.to/dev_jhawar/running-100-agents-on-a-free-tier-groq-30-rpm-tavily-credits-pgi  
+**uid：** dev_91d65f41
+
+GridMind 把电子表格的每个格子做成一个独立研究 agent：行填公司，列填问题，点运行，agent 自己搜索填空。作者复盘了在 Groq 30 RPM、Tavily 有限额度下跑上百个 agent 的调度、重试和降级策略。结论挺扎心：卡住 agent 产品的从来不是模型智力，是你怎么排队。
+
+> 🗯️ agent 不难写，难的是排队。
+
+## 12. agent 把发邮件挪进队列，事务回滚了，邮件照样发出去了
+**来源：** Dev.to  
+**链接：** https://dev.to/jeff_pdc/agent-moved-the-email-send-to-a-queue-the-transaction-rolled-back-the-email-still-went-out-4ih8  
+**uid：** dev_7dd63eb9
+
+一个 agent 提的 PR 看着很干净：把 800ms 结账接口里那 300ms 的 SMTP 调用挪进 BullMQ 异步任务。问题在于，事务回滚后任务照样执行——用户收到「订单确认」，订单却不存在。agent 优化了延迟，顺手拆掉了正确性。这种 bug 在 review 里最难看出来，因为它长得太像最佳实践。
+
+> 🗯️ PR 越干净，越要看清它删了什么。
+
+## 13. 10 人团队 10 种 AI 代码风格：规则文件不是配置文件
+**来源：** 博客园 Cnblogs  
+**链接：** https://www.cnblogs.com/uniqueDong/p/23377655  
+**uid：** dev_c66bfb52
+
+同一个需求，10 个人各自让 AI 写一版：返回裸对象的有，包 Result<T> 的有；@Transactional 有的打在 controller，有的打在 service；错误码字符串、枚举、直接抛异常三足鼎立。作者的观点是 CLAUDE.md 这类规则文件不是「配置文件」，写完就完事——它是需要 review、需要落地检查的团队契约。
+
+> 🗯️ 规则文件贴上去不执行，等于没写。
+
+## 14. GitHub Actions 推阿里云 ECS：折腾几天，到 2 分钟见绿
+**来源：** 博客园 Cnblogs  
+**链接：** https://www.cnblogs.com/xyyt/p/23377985/github-actions-aliyun-ecs-cicd-pitfalls  
+**uid：** dev_5edf9b16
+
+一篇很实在的踩坑实录：Deploy 步骤卡在拉镜像，日志刷几天不动，换 CI 平台、装面板都没救。根因跟 GitHub 半点关系没有——registry-mirrors 管不到 ghcr、南大源覆盖不全、ECS 出网策略没放开。这类问题没有优雅解法，只有把链路上每一跳都验证一遍。
+
+> 🗯️ 卡三天的问题，往往只值一行配置。
+
+## 15. 别再滥用设计模式：用一等函数做「降维替代」
+**来源：** 博客园 Cnblogs  
+**链接：** https://www.cnblogs.com/apachecn/p/23368033  
+**uid：** dev_1bc94e98
+
+为策略模式写一个接口加三个实现类，在 Python、JS、现代 Java、Go 里很多时候不是在运用设计智慧，而是在模拟语言本来就该给的能力。多数 GoF 模式诞生于表达力贫瘠的年代，本质是用对象结构弥补缺少一等函数。语言进步了，套路也该跟着退役。
+
+> 🗯️ 用类模拟函数，是给编译器交智商税。
