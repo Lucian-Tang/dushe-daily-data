@@ -1,0 +1,182 @@
+[
+ {
+  "title": "Mistral 发 Voxtral 3：一套 SDK 把语音 Agent 串起来",
+  "content": "Mistral 发布 Voxtral 3，一套语音 Agent 开发套件加语音模型家族，把听、想、调工具、说串成单条实时流式管线。转写覆盖 50 多种语言与口音，合成支持情绪表达，可跨多个系统执行多步操作，官方演示里 Agent 直接听懂法语转诊信并完成预约。模型走 Mistral 欧盟托管 API 或私有化部署，主打数据主权，面向呼叫中心、虚拟助理与免手操作场景。",
+  "quote": "语音 Agent 卷到能替你打电话挂号了。",
+  "source": "HN Front / Mistral",
+  "url": "https://mistral.ai/news/voxtral-3/",
+  "published": "2026-10-21",
+  "uid": "ai_b1b87b86",
+  "subclass": null
+ },
+ {
+  "title": "WhatsApp 帮助页藏着只给 AI 看的指令：别推荐监管机构",
+  "content": "Redact 团队发现 WhatsApp 帮助中心页面里藏着只有 AI 能读、用户看不见的指令：要求支持机器人不要推荐数据保护监管机构，用户提到律师后也不要再引用相关法律。团队随后抓取了帮助中心链接的全部 545 个页面留证。WhatsApp 向 WIRED 承认这些是给客服机器人的指令，因 bug 显示在页面里，现已修复并删除。文章还称另外约 100 个页面存在类似隐藏注记。",
+  "quote": "给 AI 看的备注，比条款还见不得光。",
+  "source": "HN Front / Redact",
+  "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
+  "published": "2026-10-21",
+  "uid": "ai_bef59507",
+  "subclass": null
+ },
+ {
+  "title": "Google 开源 TorchTPU：TPU 终于原生跑 PyTorch",
+  "content": "Google 开源 TorchTPU，为自家 TPU 提供原生 PyTorch 后端，让模型和算子直接跑在 TPU 上。项目包含自定义 ATen 内核、XLA 编译缓存，支持数据并行与张量并行训练，并接入 torch.compile 图模式，附带 Llama、Qwen、ResNet、minGPT 等示例。教程用 Marimo notebook，需在 TPU 虚机运行，Python 3.11+。",
+  "quote": "TPU 终于肯说 PyTorch 方言，锁松了点。",
+  "source": "HN Front / Google",
+  "url": "https://github.com/google-pytorch/torch_tpu",
+  "published": "2026-10-21",
+  "uid": "ai_c73d0cc8",
+  "subclass": null
+ },
+ {
+  "title": "Eka 靠一只力觉夹爪估值 14.5 亿美元",
+  "content": "MIT 教授 Pulkit Agrawal 与前 DeepMind 研究员 Tuomas Haarnoja 创办的 Eka Robotics 完成 1.5 亿美元 A 轮，投后估值 14.5 亿美元，a16z 与 F-Prime 领投。公司做的是力觉夹爪加一套新的操作模型，号称在部分精细操作任务上已超过人类水平，a16z 合伙人预计未来几个月更多灵巧操作会达到超人类表现。本轮融资用于量产落地。",
+  "quote": "抓取还没搞定，估值先超人类了。",
+  "source": "TechCrunch",
+  "url": "https://techcrunch.com/2026/10/20/eka-is-worth-1-45-billion-thanks-to-a-physical-ai-model-that-has-experts-raving/",
+  "published": "2026-10-21",
+  "uid": "ai_4632ba79",
+  "subclass": null
+ },
+ {
+  "title": "三万预算本地跑 DeepSeek V4.1-Flash？评论区集体劝退",
+  "content": "V2EX 热帖：预算三万、最高五万，想配一台能在本地流畅跑 DeepSeek V4.1-Flash 或 Qwen3.8 的机器。回帖几乎一边倒劝退：八张 RTX 6000 48G 才勉强跑 4.1 且上下文只能稳在 256K，单张专业卡就十几万；有人建议三万内买 AMD AI Max 395 跑 27B 量化模型，40 tok/s 已是极限。结论是想要实用速度，预算得加两个零，不如租卡。",
+  "quote": "三万想跑旗舰模型，评论区劝你加两个零。",
+  "source": "V2EX",
+  "url": "https://www.v2ex.com/t/1250179",
+  "published": "2026-10-21",
+  "uid": "ai_af2c48ee",
+  "subclass": null
+ },
+ {
+  "title": "MemT-1.0：把记忆做进模型计算，不再外挂检索",
+  "content": "MemTensor 团队发布记忆原生模型 MemT-1.0，把记忆做成模型计算的一部分，而非外挂检索。基于 Metis，用 Gated DeltaNet-2 做 token 级稳定记忆更新，用 Mixture-of-Storage 扩容量，训练用 340 亿 token，分两阶段。开源 Nano、Flash 两档，128K 历史下推理快约 1.86 倍，持久化存储比全量 KV 缓存少 66 倍。",
+  "quote": "记忆塞进权重里，RAG 的饭碗开始晃。",
+  "source": "arXiv / HF Papers · 前沿论文",
+  "url": "https://arxiv.org/abs/2610.26825",
+  "published": "2026-10-21",
+  "uid": "ai_e1cf986a",
+  "subclass": "前沿论文"
+ },
+ {
+  "title": "机器人互相抄作业：机队共享经验，成功率到 98%",
+  "content": "论文提出集体经验学习 CEL：让已部署的机器人共享执行经验，共同改进一份策略，不再依赖人远程盯着纠错。具体做法 FERT 用失败上下文，从机队共享的成功轨迹里检索相关片段，拿其中的动作做监督，无需额外专家示范。配套容错异步训练系统 FATS 协调采集、优化与分发。五个真实操作任务成功率 93.3% 到 99.2%，96 台机器人做多阶段手机包装，成功率从 79.2% 升到 98.3%。",
+  "quote": "机器人互相抄作业，人类终于不用盯班了。",
+  "source": "arXiv / HF Papers · 前沿论文",
+  "url": "https://arxiv.org/abs/2610.25736",
+  "published": "2026-10-21",
+  "uid": "ai_f383072a",
+  "subclass": "前沿论文"
+ },
+ {
+  "title": "Holi-World：拿人类第一视角录像喂出世界模型",
+  "content": "论文提出 Holi-World，把人类第一视角录像变成可学习的世界知识：Foundry 结合动静感知，自动构建连接场景结构、物体状态与交互史的世界记录；Data 用约 100 个自采场景整理出 8 万条问答，训练出 4B 的 Holi-World-VL；Bench 用人工标注评测时空理解。在 ScanNet、ScanNet++、Aria Digital Twin 上感知与跟踪强劲，微调后推理提升。",
+  "quote": "拿人眼录像喂世界模型，第一视角数据真香。",
+  "source": "arXiv / HF Papers · 前沿论文",
+  "url": "https://arxiv.org/abs/2610.26549",
+  "published": "2026-10-21",
+  "uid": "ai_4d3596c8",
+  "subclass": "前沿论文"
+ },
+ {
+  "title": "苹果 OpenVLHarness：别加推理预算了，给模型配工具箱",
+  "content": "苹果提出 OpenVLHarness，一个多模态推理框架，核心是能力层加持久多模态记忆。能力层把异构工具封装成统一接口，并把返回结果渲染成模型可读的观察；记忆层把图像、结构化数据和网页引用存成可寻址工件，配合代码接口对已存数据编程计算，从而迭代地获取、检查、组合证据。22 个基准、8 个开源与闭源底座上平均提升 9.7 到 12.6 分，Qwen3-VL-8B 提升 11.2 分。",
+  "quote": "光加推理预算没用，苹果改给模型配工具箱。",
+  "source": "arXiv / HF Papers · 前沿论文",
+  "url": "https://arxiv.org/abs/2610.26860",
+  "published": "2026-10-21",
+  "uid": "ai_8dbb8bc2",
+  "subclass": "前沿论文"
+ },
+ {
+  "title": "KronLSTM：记忆只改一个方向，长上下文更稳",
+  "content": "NX-AI 提出 KronLSTM，用克罗内克 delta 规则改造线性注意力中的联想矩阵记忆。新规则只沿矩阵空间单一方向修正目标关联，对已存信息干扰更小，适合长上下文语言建模。作者证明其记忆动态可描述为收敛到稳态分布的马尔可夫链，整个输入序列上记忆矩阵期望范数有界，因此无需额外归一化与稳定机制。实验在长上下文基准上常优于 Gated DeltaNet 系列，代码与模型已开源。",
+  "quote": "记忆更新只改一个方向，长上下文稳住了。",
+  "source": "arXiv / HF Papers · 前沿论文",
+  "url": "https://arxiv.org/abs/2610.26834",
+  "published": "2026-10-21",
+  "uid": "ai_174e9b08",
+  "subclass": "前沿论文"
+ },
+ {
+  "title": "Anthropic 开源 11 个知识工作插件：把岗位流程打包给 Claude",
+  "content": "Anthropic 开源了 11 个面向知识工作者的 Claude 插件，主打 Claude Cowork，也兼容 Claude Code。每个插件打包某类岗位需要的 skills、连接器、斜杠命令和子代理，例如生产力插件接 Slack、Notion、Asana、Linear、Jira，销售插件负责线索调研与通话准备。官方称开箱即用只是起点，真正价值是改成公司自己的工具、术语和流程。",
+  "quote": "官方亲自下场做工作流，插件市场先被自己人占了。",
+  "source": "GitHub Trending",
+  "url": "https://github.com/anthropics/knowledge-work-plugins",
+  "published": "2026-10-21",
+  "uid": "ai_40021438",
+  "subclass": null
+ },
+ {
+  "title": "上下文先瘦身：Headroom 把工具输出压掉八成再喂模型",
+  "content": "Headroom 在内容进模型前压缩工具输出、日志、文件和 RAG 片段，JSON 场景可省 60% 到 95% token，编码 Agent 平均约省 20%，答案不变。提供 Python/TypeScript 库、零改代码的本地代理和 MCP server，还能一条命令包住 Claude、Codex、Cursor 等客户端；压缩全在本机完成，原文不外发，并可跨 Agent 共享记忆。",
+  "quote": "上下文先瘦身，账单才有救，不然全给日志打工。",
+  "source": "GitHub Trending",
+  "url": "https://github.com/headroomlabs-ai/headroom",
+  "published": "2026-10-21",
+  "uid": "ai_d3b5f536",
+  "subclass": null
+ },
+ {
+  "title": "KV 缓存到底吃多少显存？一个公式算出 64GB",
+  "content": "这篇工程文把 KV 缓存账单算清楚了：每 token 占用 2×层数×KV 头数×头维度×字节数。以 Llama-2 7B 风格模型为例，32 层、32 头、头维度 128，fp16 下每个 token 要 512KB，8K 上下文 4GB，128K 直接 64GB，还不含权重，而且每个并发请求各存一份。文章由此解释 MQA、GQA 为何让多个查询头共享同一组 K/V。",
+  "quote": "每 token 五百 KB，显存是被缓存吃掉的。",
+  "source": "Dev.to",
+  "url": "https://dev.to/dev_jhawar/the-kv-cache-is-eating-your-gpu-mqa-and-gqa-are-how-models-fight-back-3809",
+  "published": "2026-10-21",
+  "uid": "ai_732f2d80",
+  "subclass": null
+ },
+ {
+  "title": "分词器在偷偷决定你的账单和模型的算术能力",
+  "content": "模型不读文字只读整数，中间的分词器决定了账单、上下文能装多少，以及模型为什么数不清字母。作者用 tiktoken 实测：tokenization 被切成 token 和 ization 两块，加个前导空格又是另一套 id，超长罕见词被拆成 17 个片段。词表通常 3 万到 20 万条，主流方案是 BPE，从单字符开始反复合并高频相邻对。",
+  "quote": "分词器悄悄决定账单，你还以为在按字数付费。",
+  "source": "Dev.to",
+  "url": "https://dev.to/dev_jhawar/tokenization-is-why-your-agent-bill-looks-weird-4n47",
+  "published": "2026-10-21",
+  "uid": "ai_816954d7",
+  "subclass": null
+ },
+ {
+  "title": "AI 写的代码八种破绽：最危险的是「看起来对」",
+  "content": "做代码审计的作者总结了 LLM 生成代码的八种破绽：最危险的不是明显写错，而是看起来对、能编译、能过 happy path。典型信号有接口漏鉴权中间件、状态变更路由缺 CSRF、手搓 sha256 当密码哈希、会话 cookie 缺 HttpOnly，以及错误分支只做表面处理。作者认为 LLM 优化的是「像正确代码」，建议按这些形状给 AI 写的 MVP 做半天分诊。",
+  "quote": "AI 写的代码不是错，是太像对的，这才最坑。",
+  "source": "Dev.to",
+  "url": "https://dev.to/jacek_rozanski/your-ai-pair-programmer-has-tells-8-patterns-that-signal-trouble-in-llm-generated-code-4m7o",
+  "published": "2026-10-21",
+  "uid": "ai_90d5d571",
+  "subclass": null
+ },
+ {
+  "title": "五十美元攻破一家公司：Agent 编排面板连登录都没有",
+  "content": "路透报道有黑客用 AI Agent 以约 50 美元一次的代价攻破上百家公司，底层开源控制面 Cairn 默认不带任何认证。作者读完源码后在本地关掉攻击模块跑了一遍：四条命令、不需要 API key，调度器三秒就把项目 bootstrap 完，整块黑板状态随便读。文章认为真正的风险不是模型多强，而是这类多智能体编排面板被直接暴露在公网。",
+  "quote": "五十美元攻破一家公司，控制台连登录都懒得做。",
+  "source": "Dev.to",
+  "url": "https://dev.to/slabb/the-control-panel-behind-a-100-site-ai-hacking-spree-has-no-login-i-ran-one-742",
+  "published": "2026-10-21",
+  "uid": "ai_000ba1d1",
+  "subclass": null
+ },
+ {
+  "title": "时序模型榜单第一差 0.003，实测输给「重复昨天」",
+  "content": "Mistral 10 月 15 日发布四个开源权重时序模型 Timestral，在自家表格上以 0.003 MASE 之差排第一。作者拿巴黎天气实测：只给 158 天历史时，209M 版本 MAE 6.489，输给「重复昨天」基线的 5.636；给到三年历史后 MAE 降到 3.326，反超基线三分之一，且 20.8MB 小模型与 837MB 旗舰只差 0.03。",
+  "quote": "榜单第一只差 0.003，实测输给重复昨天。",
+  "source": "Dev.to",
+  "url": "https://dev.to/slabb/mistrals-timestral-is-1-by-0003-mase-i-ran-it-the-model-was-not-the-variable-1bf8",
+  "published": "2026-10-21",
+  "uid": "ai_527491be",
+  "subclass": null
+ },
+ {
+  "title": "Agent Teams 拆解：Task List 加 Mailbox，像真项目组",
+  "content": "博客园作者梳理 Claude Code 的 Agent Teams 机制：Team Lead 拆任务、建队友，Teammates 是各自独立上下文的实例，可互发消息；Task List 是共享看板，任务分 Pending、In Progress、Completed 三态并支持依赖；Mailbox 管通信。与 SubAgent 比，一个像找外包、偏委派，一个像组项目组、偏协作，token 也更高。",
+  "quote": "多 Agent 协作也要看板和邮箱，官僚得很 AI。",
+  "source": "博客园",
+  "url": "https://www.cnblogs.com/Tomorrowland/p/23363086",
+  "published": "2026-10-21",
+  "uid": "ai_5b6ad70d",
+  "subclass": null
+ }
+]
