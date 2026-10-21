@@ -1,0 +1,163 @@
+{
+  "date": "2026-10-22",
+  "total": 12,
+  "vendors": [
+    "anthropic",
+    "openai",
+    "alibaba",
+    "deepseek",
+    "other"
+  ],
+  "models": {
+    "anthropic": {
+      "displayName": "Anthropic/Claude",
+      "icon": "🧬",
+      "items": [
+        {
+          "uid": "ai_0f77c02b",
+          "title": "用 Claude 写项目，差距在「知道什么不行」",
+          "content": "V2EX 楼主拿 electron 加 Windows 全局快捷键的小项目对比：Claude 会主动判断哪些设计不可行，自动做 tradeoff，用户问起还明说风险；换 GLM 则死守用户提的需求不反馈，一路照做，坑留到运行才炸。楼主说这种顶层设计直觉在国产模型甚至 GPT 上都少见，认为选模型不能只看跑分，得看它敢不敢跟你说这条路走不通。",
+          "quote": "会说不行的模型，比会写代码的稀缺。",
+          "source": "V2EX",
+          "url": "https://www.v2ex.com/t/1250463",
+          "published": "2026-10-22",
+          "direction": "行业动态"
+        },
+        {
+          "uid": "ai_58d38475",
+          "title": "四五个终端切到吐，有人做了 agent 工作台",
+          "content": "楼主用 Claude Code、Codex、Cursor CLI 大半年，桌面常开四五个终端：五小时额度用完要换号，得把前因后果重讲一遍；某个 agent 停在批准提示上，人在别的窗口完全不知道；周额度明天重置还剩大半。于是开源自建多 agent 桌面工作台，把这些会话集中管理、统一提醒，订阅额度不浪费。同类工具最近在 V 站扎堆出现。",
+          "quote": "agent 越多，人越像调度室的接线员。",
+          "source": "V2EX",
+          "url": "https://www.v2ex.com/t/1250538",
+          "published": "2026-10-22",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "openai": {
+      "displayName": "OpenAI/GPT",
+      "icon": "🔬",
+      "items": [
+        {
+          "uid": "ai_7d72f785",
+          "title": "几千个 AI agent，32 分钟啃完百万脑细胞",
+          "content": "OpenAI 与 PerturbAI、Scripps Research 合作，用数千个由 GPT-Rosalind 驱动的 agent 分布式分析小鼠全脑 CRISPR 图谱，覆盖数百万细胞，仅耗 32 分钟。agent 把基因扰动效应与几十年文献交叉比对，找出人类没注意的生物学联系，为阿尔茨海默与帕金森研究指路。团队把这种模式叫分布式科学分析，原始数据已放在 Hugging Face。",
+          "quote": "论文读不完？雇三千个不知疲倦的实习生。",
+          "source": "HN Front / OpenAI",
+          "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
+          "published": "2026-10-22",
+          "direction": "研究/论文"
+        }
+      ]
+    },
+    "alibaba": {
+      "displayName": "阿里巴巴/Qwen",
+      "icon": "☁️",
+      "items": [
+        {
+          "uid": "ai_636155d8",
+          "title": "循环模型多想几轮，不如教会它每轮走一步",
+          "content": "循环语言模型能在测试时多跑几轮，但多跑不等于能解更长的问题：只监督最终答案，模型不知道每轮该推进多少，循环状态还会越滚越偏。PAR 让第 k 轮预测对齐执行完前 k 步后的状态，并把循环状态缩放回首轮范数。Qwen2.5-0.5B 只训练 32 步，在 512 步的 swap-S5 上全状态准确率 95.5%，是训练长度的 16 倍，远高于 RLT 的 55.7% 与思维链的 0.8%。",
+          "quote": "不是想得久就聪明，得知道每步走到哪。",
+          "source": "HuggingFace Papers",
+          "url": "https://huggingface.co/papers/2610.27628",
+          "published": "2026-10-22",
+          "direction": "研究/论文"
+        }
+      ]
+    },
+    "deepseek": {
+      "displayName": "DeepSeek",
+      "icon": "🔍",
+      "items": [
+        {
+          "uid": "ai_88184539",
+          "title": "DeepSeek 开源 DeepInfer：引擎给了，服务层自己补",
+          "content": "DeepSeek 10 月 20 日发布自研推理框架 DeepInfer，支持 DeepSeek-V4.1-Flash，含优化 kernel、分布式执行、投机解码、异步调度和结构化输出，适配 NVIDIA SM100 与昇腾 950。但 README 明确列出未包含的服务件：KV 缓存系统、视觉编码与预填充解码分离、数据并行副本间的负载均衡。",
+          "quote": "开源的是发动机，变速箱和油箱请自行想象。",
+          "source": "Dev.to",
+          "url": "https://dev.to/panditshivam/deepinfer-is-open-here-is-where-the-engine-stops-3kfg",
+          "published": "2026-10-22",
+          "direction": "模型发布"
+        }
+      ]
+    },
+    "other": {
+      "displayName": "其他",
+      "icon": "📰",
+      "items": [
+        {
+          "uid": "ai_9e300085",
+          "title": "YC 新项目：给 agent 发临时工牌",
+          "content": "Alter 在 HN 发布，做 AI agent 的特权访问管理：凭证放保险库，按用户和动作逐条评估策略，高风险调用先批后放，每次请求留审计日志。演示里销售 agent 调 GitHub 要 repo:read 权限，系统验身份、查范围、看限流、刷新 token，再把密钥注入请求头，agent 全程看不到明文。已开放十分钟接入，面向多用户代操作的内部 agent 场景。",
+          "quote": "agent 要权限，人类终于想起装门禁。",
+          "source": "HN Front / Alter (YC S25)",
+          "url": "https://alterauth.com/",
+          "published": "2026-10-22",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_0934e575",
+          "title": "Matrix-Game 4.0：视频模型生成能玩的游戏",
+          "content": "从可控视频走到真正可玩的虚拟世界，需要持久世界状态、可执行规则和低延迟交互。Matrix-Game 4.0 把游戏执行与画面生成拆开：轻量引擎维护状态、跑规则，多模态 coding agent 把玩家想法翻成游戏代码和动态场景描述，自回归视频渲染器再把低多边形代理渲染成精细画面，支持用自然语言改场景和玩法。渲染器用对齐的高低清视频对训练并蒸馏成因果生成器。",
+          "quote": "引擎管逻辑，视频模型管好看，分工明确。",
+          "source": "HuggingFace Papers",
+          "url": "https://huggingface.co/papers/2610.27999",
+          "published": "2026-10-22",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_ad249173",
+          "title": "Ropedia W0：把人类经验灌进机器人世界模型",
+          "content": "世界模型能让具身 agent 预判动作后果，但跨形态同时建模移动与操作一直很难。Ropedia W0 称首个覆盖人与多种机器人的第一视角移动操作系统世界基础模型，配套 Xp-Data 含 1 万小时人类第一视角数据和 3 千小时机器人数据，统一多模态标注。它用相机位姿编码移动、投影骨架编码操作，还发布 Xp-Teleop 长程灵巧操作基准。",
+          "quote": "先学人怎么动，再教机器人怎么动手。",
+          "source": "HuggingFace Papers",
+          "url": "https://huggingface.co/papers/2610.26855",
+          "published": "2026-10-22",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_cfd080a0",
+          "title": "ComfyUI 冲到 14 万星：节点图成了图像模型的操作系统",
+          "content": "ComfyUI 把扩散模型的采样、条件、VAE、LoRA 拆成可连线的节点，同一张图既能鼠标点着跑，也能通过 API 和后端批量跑，官方称其为最快的本地推理引擎，GitHub 已 14.1 万星。最新 v0.42.1 只修了 MOSS 图像模板工作流的崩溃，但生态每天仍在长出新节点包。它更像 AI 图像的发行版：模型、工作流和社区节点才是护城河，应用只是壳。",
+          "quote": "别人做应用，它做操作系统，节点就是它的应用商店。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/Comfy-Org/ComfyUI",
+          "published": "2026-10-22",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_b142138a",
+          "title": "让树懒决定晚饭：Gemma 只负责嘴，选菜交给确定性匹配",
+          "content": "一个 Hacktoberfest 参赛项目解决「今天吃什么」：勾选 52 种印度厨房常备食材，选好懒惰程度，点一下就从 40 道菜里给出今晚菜单，排序依据是缺料最少、最省力、最省时。Gemma 只写一句点评和厨师提示，不参与选菜，也不许凭空生成食材，输出的 id 会被强制限制在菜谱库内；断网或没有 key 时匹配器照常工作，App 完全离线可用。",
+          "quote": "让模型闭嘴只写文案，决策交给匹配器，这才叫工程。",
+          "source": "Dev.to",
+          "url": "https://dev.to/academic_efab3f3ad2434623/i-stopped-deciding-dinner-a-sloth-does-it-now-aaj-kyaa-bnaauun-3p34",
+          "published": "2026-10-22",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_772cf1fb",
+          "title": "BM25 讲透：词频饱和、长度归一化和 RAG 混合召回",
+          "content": "文章用大白话拆 BM25：在 TF-IDF 基础上加了三件事，词频饱和、文档长度惩罚、查询词频加权，并给出 k1 取 1.2 到 2.0、b 取 0.75 的常用值。作者列出适用边界：型号、人名等精确匹配和小数据集很合适，语义改写就得靠向量检索，工业界主流是 BM25 抓关键词、向量抓语义的混合召回，并附 rank_bm25 加 jieba 的完整示例。",
+          "quote": "向量检索再火，关键词命不中时还得 BM25 兜底。",
+          "source": "博客园",
+          "url": "https://www.cnblogs.com/zjdxr-up/p/23331060",
+          "published": "2026-10-22",
+          "direction": "行业动态"
+        },
+        {
+          "uid": "ai_f27314a2",
+          "title": "昇腾 vNPU 实战：把一张 310P 切成多份塞进容器",
+          "content": "以 Atlas 300I Pro（310P3）为例，讲昇腾虚拟化实例 AVI：原生 Docker 下用 npu-smi 创建 vNPU 再挂进容器；换成 Ascend Docker Runtime 后，可静态挂载，也可用 ASCEND_VISIBLE_DEVICES 和 ASCEND_VNPU_SPECS 在启动时动态创建并注入。作者把它类比 NVIDIA MIG，但强调资源模型不同。",
+          "quote": "一张卡切八份，算力不够就先学会分蛋糕。",
+          "source": "博客园",
+          "url": "https://www.cnblogs.com/KubeExplorer/p/23386809",
+          "published": "2026-10-22",
+          "direction": "行业动态"
+        }
+      ]
+    }
+  }
+}
