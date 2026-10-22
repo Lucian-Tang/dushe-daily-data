@@ -1,0 +1,227 @@
+[
+  {
+    "title": "GitLab 补丁日：CVSS 10.0 未授权 RCE，7.0 以来全中",
+    "content": "GitLab 发布 19.5.1 等七个补丁版本，修掉 CVE-2026-110264：内置 Onigmo 正则编译器里的整数溢出，未授权攻击者可在自建实例上直接执行代码，评分 10.0。影响范围从 7.0 起几乎所有 CE/EE 版本，GitLab.com 已修补，自建实例得自己动手。同期还有多个高危修复，官方建议立即升级——自建 GitLab 一向是内网里权限最大的那台机器。",
+    "quote": "内网权限最大的机器，补丁总是最晚打。",
+    "source": "HN Front Page",
+    "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/",
+    "published": "2026-10-23",
+    "uid": "a49af7b2b87f2e2abfbabe262432d1fd"
+  },
+  {
+    "title": "Switch 2 首个软件破解出炉：不焊芯片，纯漏洞",
+    "content": "研究者 pepsipu 发布 ns2jb，针对最新固件 23.0.1 的纯软件破解，属需连电脑的 tethered 型。成功后能以任意原生代码身份运行自制程序、逆向改游戏、导出存档，还能通过 MMIO 访问大部分外设。为自动化调试，作者用 KVM 接管手柄输入和 HDMI 输出，再配一个蓝牙开关按电源键——折腾两周，顺手让 Codex 一天改出马力欧赛车新角色。",
+    "quote": "硬件加密再厚，也挡不住两周的耐心。",
+    "source": "HN Front Page",
+    "url": "https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/",
+    "published": "2026-10-23",
+    "uid": "6efcd7bece824c45b7f4c6cee71c4763"
+  },
+  {
+    "title": "Show HN：在 Android 手机上跑起完整 iOS 16.5",
+    "content": "苹果开源的 XNU 内核（iOS 16.5 那版）被搬到 Android 手机硬件上，再加载未修改的 iOS 用户态，从 launchd 一路跑到桌面和应用。自写 EFI loader、替换苹果闭源驱动、移植 UEFI，连 Wi-Fi 都靠 Linux 驱动加兼容层。已在 POCO X5 Pro 上用 fastboot boot 启动，系统驻留内存，重启即回 Android。",
+    "quote": "以前刷机怕变砖，现在重启就装回 Android。",
+    "source": "Show HN",
+    "url": "https://github.com/oosexgang/hackios-xnu-kernel",
+    "published": "2026-10-23",
+    "uid": "5d97c580c37873577c30628db5b467f5"
+  },
+  {
+    "title": "Quad9 退出法国：给盗版站做 DNS 屏蔽，反被罚到撑不住",
+    "content": "Quad9 宣布停止在法国提供递归解析服务。起因是索尼音乐起诉它未按判决屏蔽盗版站点，法院按每项违规每天最高 58 万欧元、最低 1000 欧元计罚。Quad9 称已尽力做地理封锁，索尼却用 VPN 从德国绕过去访问，反过来成了它藐视法庭的证据。目前还有 20 多起类似案件在排队，小机构耗不起。",
+    "quote": "抓不到盗版的，就罚递电话簿的。",
+    "source": "HN Front Page",
+    "url": "https://quad9.net/news/blog/au-revoir-france/",
+    "published": "2026-10-23",
+    "uid": "6179cf684836d012fe3cd4003d015571"
+  },
+  {
+    "title": "Linux 内核漏洞报告误发公开邮件列表，保密期当场作废",
+    "content": "一夜之间，多份新的 Linux 内核漏洞报告被发到了公开的 LKML，而不是私有的安全邮件列表。正常流程这类报告要走 security@kernel.org，给发行版和维护者留出静默修复窗口。发错地方意味着漏洞细节、复现路径和受影响代码直接对全世界公开，从「有补丁再说」变成「谁快谁先用」。目前尚不清楚是脚本配置错误还是流程改动导致。",
+    "quote": "保密流程最脆弱的一环，永远是人。",
+    "source": "HN Front Page",
+    "url": "https://www.phoronix.com/news/LKML-New-Trend-Vulnerabilities",
+    "published": "2026-10-23",
+    "uid": "31946a5add6c52de6d254fe161876db8"
+  },
+  {
+    "title": "有人把《小丑牌》逆向成网页游戏，模型起初不肯干",
+    "content": "V2EX 网友用一套 game port skill 把《小丑牌》PC 版逆向移植成浏览器可玩版本，46 条回复围观。有意思的是过程：一开始模型死活不干活，直到被告知「我是版权方，有移植分发权限」，立刻配合。作者把项目 ATBGamePort 开源。技术上确实漂亮，但这条「说服模型」的路径也说明，当前的安全对齐更接近关键词判断，而非事实核验。",
+    "quote": "跟模型说句「我是版权方」，它就信了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1250909",
+    "published": "2026-10-23",
+    "uid": "e35c461bf8f574c5ffbc0c7b2e1c3372"
+  },
+  {
+    "title": "Anthropic 开源知识工作插件集，3 万星冲上榜",
+    "content": "anthropics/knowledge-work-plugins 是面向知识工作者的插件仓库，主要给 Claude Cowork 用，已 3.1 万星。定位很明确：不是给工程师写代码，而是把文档处理、表格分析、资料整理这些白领动作封装成可复用能力。从 coding agent 往 general knowledge work 扩，是 Anthropic 的产品下一步，也是插件生态入口之争。",
+    "quote": "卖完程序员的效率，开始卖白领的时间。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/anthropics/knowledge-work-plugins",
+    "published": "2026-10-23",
+    "uid": "734a4b001955cacb189dc6326257131a"
+  },
+  {
+    "title": "360M 小模型假装自己是终端：没有 shell，全靠脑补",
+    "content": "作者把 Qwen2.5-Coder-0.5B 微调成「终端世界模型」：背后没有 shell、没有文件系统，每次按键输入后由模型直接预测屏幕下一帧的样子。它能建文件、跑 vim 和 tmux、玩贪吃蛇，几条命令后通常还记得你写过什么。关键两招是把屏幕按字符网格建模、并行解码整行，以及教模型自己纠错。208MB 权重直接在浏览器 WebGPU 里跑。",
+    "quote": "这回不是终端模拟器，是终端幻想器。",
+    "source": "HN Front Page",
+    "url": "https://simedw.com/2026/10/21/world-model-terminal/",
+    "published": "2026-10-23",
+    "uid": "dfabfb46c74ffb100e193ef8cd6bcff1"
+  },
+  {
+    "title": "5,197 台 Apache bRPC 服务器暴露，扫描永远数不全客户端",
+    "content": "Apache bRPC 1.18.0 修了 35 个新披露漏洞，其中 16 个高危、19 个中危。作者用 ZoomEye 扫到 5,197 台暴露在公网的 bRPC 服务器，但同时指出这类统计天生偏低：RPC 客户端通常不出现在扫描面里，内网互调和只出不进的部署全被漏掉。也就是说，暴露面数据只能当下限看，不能当资产清单用。",
+    "quote": "扫描器数到的，永远只是冰山一角。",
+    "source": "Dev.to",
+    "url": "https://dev.to/onaeiuspkz/5197-apache-brpc-servers-and-the-clients-a-scan-will-never-count-15pm",
+    "published": "2026-10-23",
+    "uid": "d22ab455896ef7605c175fe6358b0b7a"
+  },
+  {
+    "title": "脱敏流程的上限不在打码，在有没有找全",
+    "content": "脱敏效果的天花板不在替换算法，而在检测。作者举了个真实案例：一位创始人关停公司时把数据当资产卖，团队手工做去标识化，买家连退三次，理由都是个人信息没找干净。文章由此把流程倒过来看——漏掉的字段再怎么打码也没用；顺带提到 2020 年前的数据更「像人写的」，反而更值钱，也更容易被后来者用模型生成的内容稀释。",
+    "quote": "漏掉的那一列，才是会泄露的那一列。",
+    "source": "Dev.to",
+    "url": "https://dev.to/thomasfairey/your-redaction-pipeline-is-only-as-good-as-what-it-finds-33o8",
+    "published": "2026-10-23",
+    "uid": "6ecfb74df0bd77b0f97f4f2e60c0f553"
+  },
+  {
+    "title": "让 Agent 写程序做视频：不碰像素，只做编排",
+    "content": "反着做 AI 视频：不让模型逐帧想象，而是让 Agent 写程序把「已经发生的事实」搬上时间线——画面来自浏览器渲染帧或录屏，时间轴由数据描述，最后交给 ffmpeg 合成。模型在这里不碰像素，只写采集脚本、时间轴和合成命令，看渲染结果再改参数重跑。文章给了六阶段流水线、三条画面来源路线，也讲了哪些题材必然翻车，以及一次成片的真实成本。",
+    "quote": "让模型去编排，别让它一帧帧硬画。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/znlgis/p/23402179",
+    "published": "2026-10-23",
+    "uid": "608201ee91fc4eb9c5e3109231174441"
+  },
+  {
+    "title": "有人用纯 C# 写了套语音识别引擎，连 ONNX 都不靠",
+    "content": "FunAsrNet 用 .NET 10 从零实现语音识别推理，不走 Python 调 ONNX Runtime 的常规路线。作者张善友评价「README 比代码还好看」——项目把模型结构、张量计算、声学前端逐层用 C# 重写，好处是能直接嵌进 .NET 服务，省掉 Python 运行时和跨进程通信开销。这类项目性能未必赢，但把「AI 推理只能在 Python 里做」的默认假设拆掉了。",
+    "quote": "谁说推理一定要在 Python 里泡着。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23404953",
+    "published": "2026-10-23",
+    "uid": "a6606c56d02b77bfd8afdc9587969d87"
+  },
+  {
+    "title": "Codex 桌面版崩溃转储悄悄吃掉上百 GB，官方 issue 还开着",
+    "content": "macOS 版 Codex 有个未修的问题：崩溃上报卡住时 Crashpad 会持续往本地写转储文件，界面没有任何提示。对应 issue 六月就开了，至今 open。有用户一天涨了 4.9GB、5.4 万个文件，评论区有人报到上百 GB。自查方法是看 ~/Library/Logs/DiagnosticReports 和 Crashpad 目录，长期跑桌面 Agent 的机器建议顺手看一眼磁盘。",
+    "quote": "AI 帮你写代码，也帮你填满硬盘。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1250986",
+    "published": "2026-10-23",
+    "uid": "274e56c102fc95ea5abf95e5303d79f6"
+  },
+  {
+    "title": "RigCheck：你的卡能不能跑这个模型，别再拍脑袋",
+    "content": "按仓库里真实文件大小，再照 llama.cpp 的分配方式逐层算 KV cache——滑动窗口层、线性注意力层、共享 KV 层分别处理，最后和显存、内存实际可用量比。每个数字都标来源：官方、社区报告、本站估算、本站实测；作者还在 Vast.ai 租了 4090 和 4060 Ti 16GB 实测 24 次，一共花了 1.83 美元，数据按 CC BY 4.0 开放、可直接取 JSON。",
+    "quote": "算得再准，也挡不住模型一升级全作废。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1250904",
+    "published": "2026-10-23",
+    "uid": "6ab734b2a77ad45e529d64474db2b4bb"
+  },
+  {
+    "title": "ago：纯 zsh 写的历史命令搜索，零依赖",
+    "content": "5.3+ 的 zsh source 一下就能用，不要 fzf、不要 Python、不要任何二进制，macOS 自带环境即可。打开先按命令名分组（git、pnpm、docker），左右进出、按最近使用排序；支持多关键词模糊搜索和中文，输入 gps 也能命中 git push。选中的命令只放到命令行不直接执行，删除前要确认并自动备份，且原样保留其余字节；ago stats 还能统计最常用的命令。",
+    "quote": "为了不装 fzf，他写了个更小的 fzf。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1251063",
+    "published": "2026-10-23",
+    "uid": "b43d1eb77c9e6ff75a858113182228f8"
+  },
+  {
+    "title": "Personal Agent 前世今生：一个管记忆，一个管行动",
+    "content": "从 2023 年数到现在：Lindy 想做会查日历、会约会议的私人秘书，提出个性化、主动性、自主行动三条原则，但受限于当时的工具调用与任务规划能力，经常跑不稳；Personal AI 走另一条路，用 MODEL-1、MODEL-2 长期保存用户资料与经历，减少重复交代背景。一个关注行动，一个关注记忆，正好是今天 Meta Muse、OpenAI dots、OpenClaw 这类产品的前身。",
+    "quote": "三年过去，Agent 还是那两件事：记住你，替你办。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Qiniu-developer/p/23403757",
+    "published": "2026-10-23",
+    "uid": "1d2920dc40366c6158427d6deb6cf300"
+  },
+  {
+    "title": "374 万个地图多边形 489 毫秒切完：比 earcut 快在哪",
+    "content": "Globus 把地图引擎里的多边形三角化抽成单头文件库 earstrip，另提供与 earcut 同签名的 WASM 版。M4 Pro 单核上，华沙周边 13 级瓦片共 374 万个多边形，原来用约束 Delaunay 要 2.93 秒，换成 ear clipping 后 489 毫秒；C++ 快 14%，浏览器里快 1.4 到 2.1 倍。作者按「一个想法一个 commit」重写并逐次计时。",
+    "quote": "性能优化没有魔法，只有一个个 commit。",
+    "source": "HN Front Page",
+    "url": "https://globus.software/blog/2026/10/16/cutting-map-polygons/",
+    "published": "2026-10-23",
+    "uid": "45bb4f13b27077f98d6aace1a32ba98a"
+  },
+  {
+    "title": "Agent 拉的屎把 1T 硬盘塞满，有人开源了清理工具",
+    "content": "做 Agent 开发的人大概都有这个体验：每个项目装一遍依赖、构建一堆产物，懒得清，越攒越多。作者硬盘 1T 见底后写了个 agent-shit-cleaner，扫描主要工作区目录、统计每个项目的磁盘占用，重点识别依赖目录和构建产物这类大头，再用 CLI 交互式勾选清理。名字很诚实，需求也很真实——Agent 时代的磁盘卫生问题，终于有人管了。",
+    "quote": "AI 写代码的速度，终于超过了删文件的速度。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1250873",
+    "published": "2026-10-23",
+    "uid": "571918def8c27a588761a0901e4d9d50"
+  },
+  {
+    "title": "不接可观测平台，怎么把 Python Agent 的每一步摊开",
+    "content": "Agent 的故障常常不在异常里：函数执行成功、流程正常结束，任务却做错了。作者列出常见几种——推理一开始就跑偏、工具返回意外数据、该停的时候没停、反复重试烧额度。Seven Trace 是一个开源 tracing runtime 加 CLI，不依赖第三方可观测平台，在本地把每一步的工具调用、返回和耗时摊开，让你先看清发生了什么，再判断为什么。",
+    "quote": "没报错不等于没出错，Agent 最擅长安静地跑偏。",
+    "source": "Dev.to",
+    "url": "https://dev.to/anelelen/how-to-trace-and-debug-python-ai-agents-without-adding-observability-dependencies-4i2h",
+    "published": "2026-10-23",
+    "uid": "3e27e47ec203d34892582b86530ceb7a"
+  },
+  {
+    "title": "90 多个模块发版总超时，他写了个 Maven Central 发布插件",
+    "content": "给框架发版时卡在 Maven Central 是常态：一次推 90 多个工件、超过 300MB，老插件走 OSSRH 路径反复超时，只能手动补发或者整段重来。作者按官方 Publisher API 用 Java 写了个 Gradle 插件，把正式版收敛成 staging → bundle → 上传的流程，失败可续传，不必全量重推。开源生态里这类「没人愿意写但人人需要」的工具，往往最省时间。",
+    "quote": "发版卡半小时，写插件花两天，值。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1251009",
+    "published": "2026-10-23",
+    "uid": "4603e8347ea98e63f6f5b05ac5d38d05"
+  },
+  {
+    "title": "20+ 平台公开数据收成一套 JSON，还能当 MCP 用",
+    "content": "把抖音、快手、B 站、小红书、微博、知乎、贴吧、公众号、淘宝京东评价、飞猪，以及 TikTok、YouTube、X、Reddit 的公开数据统一成 id、platform、text、author、metrics、extra 六个字段，跨平台对比不用再写十几个适配器。100+ 接口，支持跨 10 类信源检索，还提供 MCP，Claude Code 一行命令接入。按成功且有数据的请求计费。",
+    "quote": "每个平台一套字段的日子，早该结束了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1250906",
+    "published": "2026-10-23",
+    "uid": "5a94757d7bcee6a6f3e6e5e174f07f56"
+  },
+  {
+    "title": "Lightsail 流量快超了自动停机：Lambda 版监控手册",
+    "content": "Lightsail 的流量按区域内共享，但 AWS 不提供「快用完自动停机」，网上脚本又大多只盯单台。作者用 Lambda + SNS + EventBridge 拼了一套：并发扫全球 15 个可用区，按区域累加配额与用量，新实例首月配额按天折算，某区域用量到 95% 就关停该区全部实例并发汇总邮件。全部在 Lambda 免费额度内，跨区迁移、增删机器都不用改代码。",
+    "quote": "账单不会提醒你，代码得替你踩刹车。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1250791",
+    "published": "2026-10-23",
+    "uid": "786c0dc3658eaf5244f3c89c8694b415"
+  },
+  {
+    "title": "无障碍不是上线前的抛光，是工程的一部分",
+    "content": "文章主张从第一天就用对 HTML：按钮就写 button，导航用链接，表单字段配真正的 label，标题层级按逻辑走——这些选择同时帮到浏览器、读屏软件和后面接手代码的人。作者给的最实用一招是不碰鼠标走一遍站点：重要控件能不能到达、焦点顺序对不对、键盘操作有没有可见反馈，一次就能暴露大半问题，而且成本比上线后返工低得多。",
+    "quote": "拿掉鼠标走一圈，比开十个评审会管用。",
+    "source": "Dev.to",
+    "url": "https://dev.to/mete_ay_16384b501616aae2d/frontend-development-accessibility-is-part-of-good-engineering-11eg",
+    "published": "2026-10-23",
+    "uid": "8611f80906df18abe3cee9987687434c"
+  },
+  {
+    "title": "开了十年合租车，他把订阅账本开源了",
+    "content": "专治记账软件不管的那些细节：成员付到哪天、谁的钱还没收、自己垫了多少、跨区涨价的历史价格、礼品卡面值与实付成本的差额、余额是哪天校准的。接了汇率，可按付款当天折算；年付能分开看当月支出与分摊。AI 和 MCP 是一等公民——接上 DeepSeek 或兼容服务就能整理收据，Codex、Claude Code 也能直接管账本；Docker 或 Cloudflare 自部署。",
+    "quote": "订阅一时爽，对账火葬场，终于有人管了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1251052",
+    "published": "2026-10-23",
+    "uid": "d4f8ea59b34a962c9b7c27144b2fc0a5"
+  },
+  {
+    "title": "内网 Ollama 跑 Qwen2.5-7B：日志、性能与选型一次讲清",
+    "content": "给 SDN 运维知识库搭 RAG 的实录：16 核 62GB、无 GPU，Ollama 跑 qwen2.5:7b-instruct，4bit 量化后 4.7GB。文章教你看三层日志——journalctl 的 GIN 访问行自带总耗时，模型加载阶段能看到冷加载开销，开 OLLAMA_DEBUG=1 才有逐 token 的 llama_perf 明细。结论：7B 读证据够用，瓶颈是纯 CPU 推理。",
+    "quote": "模型选型想三天，不如先看日志里那行耗时。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/zjdxr-up/p/23403804",
+    "published": "2026-10-23",
+    "uid": "1b1739923d501ab037c00cf0d27238a0"
+  }
+]
