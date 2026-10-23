@@ -1,0 +1,192 @@
+[
+  {
+    "title": "DeepSeek 逆风拿 150 亿美元，估值再上一台阶",
+    "content": "彭博报道，DeepSeek 在美国要求联邦民事机构清除其技术两天后，完成约 150 亿美元、折合约 1000 亿元人民币的新一轮融资，为中国 AI 史上最大级别之一，潜在投资方包括宁德时代与腾讯。公司今年 6 月才以 500 亿美元估值融了逾 70 亿美元，7 月又传以 710 亿美元估值再募 15 亿，并计划最快明年在境内 IPO。",
+    "quote": "越被封，越值钱，硅谷看了沉默。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/",
+    "published": "2026-10-24",
+    "uid": "ai_06ee07cb",
+    "subclass": null
+  },
+  {
+    "title": "Kimi K3.1 Pro：3T 参数、1M 上下文，只能思考",
+    "content": "月之暗面上线 Kimi K3.1 Pro，3 万亿参数、100 万 token 上下文，主攻编码、3D 创作与金融建模，官方称是 K3.1 系列首个模型。同步推出 Highspeed 版，能力相同、速度约 2 到 3 倍，配额消耗翻倍。该系列只支持思考模式，关掉推理会被直接拒绝；官方还提醒别在旧会话里切模型，缓存失效会掉质量。",
+    "quote": "不给关思考，是怕你想太多还是太少。",
+    "source": "HN / Kimi",
+    "url": "https://www.kimi.com/code/docs/en/kimi-code/models.html",
+    "published": "2026-10-24",
+    "uid": "ai_9e8ac8e6",
+    "subclass": null
+  },
+  {
+    "title": "1Password 让 agent 替你登录，但不给它密码",
+    "content": "1Password 上线 1Password for Agents：agent 要登录时先出示数字身份密钥，1Password 验证后给用户推送确认，再由密码管理器代填凭据完成登录，agent 全程拿不到密码。支持 Claude Duet、ChatGPT Work 等主流 agent。Axios 同日报道美国多家银行在客户账户里发现第三方 agent 活动，多数靠用户交出的账号密码。",
+    "quote": "密码可以不给，锅还是得有人背。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+    "published": "2026-10-24",
+    "uid": "ai_761e202a",
+    "subclass": null
+  },
+  {
+    "title": "ThinkingCap 第五弹：让 Gemma-4 少想 39%",
+    "content": "BottleCap AI 发布 ThinkingCap 系列第五个模型，基于 Google gemma-4-26B-A4B-it，在不改答案质量的前提下把思考 token 平均压掉 38.9%，最高减少 69.1%，十二项基准平均准确率只掉 0.15 个百分点。循环输出比例从 3.6% 降到 0.8%，同采样设置、同 vLLM 服务可直接替换。企业版 PRO 平均再省 62%。",
+    "quote": "少想一点，推理账单就薄一大截。",
+    "source": "HN Front / BottleCap AI",
+    "url": "https://bottlecapai.com/post/thinkingcap-gemma-4-26b/",
+    "published": "2026-10-24",
+    "uid": "ai_7fcda297",
+    "subclass": null
+  },
+  {
+    "title": "V2EX 吵翻：硬要用 Claude 的人是不是有 M 倾向",
+    "content": "V2EX 热帖问：Anthropic 封号越来越狠，为什么还有人顶着封号硬用 Claude，是不是有受虐倾向。108 条回复里，一派说 Opus 5.5 干活一次通过、同一提示词比 Codex 快十倍，20 美元订阅有 GPT Pro 六成体验；另一派说工具再好也不该跪着用，「Claude 虐我千百遍，我待 Claude 如初恋」成了自嘲。",
+    "quote": "不是爱受虐，是别的模型真不争气。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1251139",
+    "published": "2026-10-24",
+    "uid": "ai_e0aea569",
+    "subclass": null
+  },
+  {
+    "title": "微信 WeVisOne-VL：从物体框到像素级抠图",
+    "content": "微信团队发布 WeVisOne-VL，用结构化下一 token 预测把物体级与像素级感知统一进一个 VLM：检测、指代定位、计数、OCR、分割、抠图共用一套模型，定位粒度可从点、框细到 mask 与 alpha matte。架构上加一个轻量像素解码器和特殊 OBJ token 输出实例级像素结果，三阶段课程 SFT 后再混合任务 RL。30 多个基准上两类任务均领先，并对不存在的物体保持拒答。",
+    "quote": "一个模型全包，细分工具要失业。",
+    "source": "HuggingFace Papers",
+    "url": "https://huggingface.co/papers/2610.31329",
+    "published": "2026-10-24",
+    "uid": "ai_f0b0cd9d",
+    "subclass": "前沿论文"
+  },
+  {
+    "title": "FAPL：让 MLLM 的潜变量真管住视频生成",
+    "content": "电影级视频生成既要能从稀疏输入推断时间变化，又要分别控制人物、场景、动作与镜头。这篇提出 Factor-Aware Predictive Learning：先冻结 MLLM 与连接器，只训练 DiT 真正用上多模态潜变量；再用成对视频做因子跨度替换，教会模型只改目标因子、保住其他；最后冻结 DiT 反向优化 MLLM，让有限观测也能预测完整视频。",
+    "quote": "潜变量不干活，等于花钱请了个摆设。",
+    "source": "HuggingFace Papers",
+    "url": "https://huggingface.co/papers/2610.30926",
+    "published": "2026-10-24",
+    "uid": "ai_9fa72901",
+    "subclass": "前沿论文"
+  },
+  {
+    "title": "IQuest-Q1：320B MoE 专攻命令行 agent",
+    "content": "IQuest 发布 IQuest-Q1，320B 总参数、15B 激活的稀疏 MoE agent 基础模型。训练分三段：预训练用 Stable SplitNorm、Muon 与 muP 配两阶段课程，第二阶段加重代码数据；中训练扩领域、扩格式并逐步拉长上下文；后训练用 SFT、领域 RL 与 MOPD 跨多种 scaffold 融合信号，再做模型合并。官方以开源形式放出，主打编码与通用任务。",
+    "quote": "参数堆到 320B，只为把命令行用明白。",
+    "source": "HuggingFace Papers",
+    "url": "https://huggingface.co/papers/2610.30949",
+    "published": "2026-10-24",
+    "uid": "ai_4aa89696",
+    "subclass": "前沿论文"
+  },
+  {
+    "title": "物理世界的递归自我改进，还差最后一环",
+    "content": "这篇综述把递归自我改进放进机器人学习语境：数字 agent 可以改自己的代码并用测试验证，物理系统却只能靠昂贵试错、部分观测和不完全可逆的后果前进。作者梳理从提升机器人能力到提升「产生能力的过程」的路径，提出收益要能延续，必须满足反馈对准剩余学习需求、接收组件用得上、价值扛得住任务与硬件变化、持续练习安全且可负担。现有研究多停在行为改进，尚无法分离出递归本身的贡献。",
+    "quote": "会改进不稀奇，会改进改进方式才算。",
+    "source": "HuggingFace Papers",
+    "url": "https://huggingface.co/papers/2610.29677",
+    "published": "2026-10-24",
+    "uid": "ai_2e4da802",
+    "subclass": "前沿论文"
+  },
+  {
+    "title": "Quant-Arena：让 LLM 真跑一遍量化研究闭环",
+    "content": "Quant-Arena 用真实 A 股数据考端到端量化研究：模型自己构造特征与选股代码，只能在 2022 至 2023 年拿反馈，冻结一版策略后到封存的 2024 年评估，现金账户评估器还会计入交易约束、成本与模拟订单簿冲击。评分以实际超额收益为主，辅以信号质量与特征多样性。九个前沿模型里 GPT-6 Astra 得分最高，但没有一个在 2024 年跑赢等权市场。",
+    "quote": "回测猛如虎，一到实盘就原地杵。",
+    "source": "HuggingFace Papers",
+    "url": "https://huggingface.co/papers/2610.30113",
+    "published": "2026-10-24",
+    "uid": "ai_93b12bbf",
+    "subclass": "前沿论文"
+  },
+  {
+    "title": "926 步跑完五个真实工单：把把关挪到 commit 之前",
+    "content": "哈佛 2026 年研究追踪 718 家公司、72.5 万开发者：AI 让代码量涨 30%、PR 多 23%，完工工单却是 0% 增长，因为评审等待涨 49%、多了 3.45 天，打回几乎翻倍，14% 资深工程师被拖去当保姆。作者于是把工单反驳、对抗式评审、状态记录全挪到 git commit 之前，用 1986 年的承诺言语规则加 1976 年的 Makefile，连跑五个生产工单、926 步。",
+    "quote": "写得快不等于交付快，瓶颈早换人了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/gde/926-steps-two-lobotomies-and-zero-nudges-flight-testing-the-commitment-machine-across-gemini-55ca",
+    "published": "2026-10-24",
+    "uid": "ai_0fdca53c",
+    "subclass": null
+  },
+  {
+    "title": "本地模型一夜删掉 1242 篇稍后读，人轻了",
+    "content": "作者攒了 1247 篇「稍后读」，按他的说法这是软件里最乐观的谎言，每开一个标签就欠未来自己一笔愧疚。他做了 Unpile：断网、纯本地，读完整堆，从「真读过还是烂在堆里」的历史里学口味，再逐条判保留、略读或丢弃并给出校准概率，早上只推两三行摘要。14 条演示里留 5 条、标 1 条、静音 8 条，等于还回 5.5 小时。",
+    "quote": "收藏夹不是知识，是愧疚的仓库。",
+    "source": "Dev.to",
+    "url": "https://dev.to/sarvar_04/i-let-an-open-model-delete-1242-of-my-saved-articles-on-purpose-i-feel-lighter-l7f",
+    "published": "2026-10-24",
+    "uid": "ai_6c91cd72",
+    "subclass": null
+  },
+  {
+    "title": "AI 拿文学奖？数据说它只是印得多",
+    "content": "2026 年一项研究分析亚马逊 1.4 万多本自出版书：AI 含量高的书三年涨了几十倍，确实抢走畅销榜份额，人类作者收入普跌。但机制不是质量，研究者称 AI「完全没在质量上竞争」，靠体量把书架淹了。更反直觉的是罕见表达覆盖率：AI 书约 42%、畅销 AI 书 45%，人类畅销书 37%，获奖文学只有 19%——机器没有写赢，只是印赢。",
+    "quote": "不是写得比你好，是印得比你多。",
+    "source": "Dev.to",
+    "url": "https://dev.to/james_anderson_h/ai-is-winning-literary-awards-the-data-says-thats-not-whats-happening-179d",
+    "published": "2026-10-24",
+    "uid": "ai_fe6fbe45",
+    "subclass": null
+  },
+  {
+    "title": "微调 4B 当门卫：731 个 issue 挡掉 73 个",
+    "content": "作者拿 vercel/next.js、rust-lang/rust、python/cpython、microsoft/vscode 的 731 个 issue，微调 4B 模型，只问一句：这条今天需要维护者吗。答 WAIT 的不删，用 Temporal 计时器埋着，有人搭理就浮出。留出窗口上它挡掉 73 条、10%，误挡 11/235；同提示词不微调只挡 49 条，AUC 0.516 等于抛硬币。",
+    "quote": "让模型学会说「先放着」，比让它干活难。",
+    "source": "Dev.to",
+    "url": "https://dev.to/memeshe/leave-it-i-fine-tuned-a-4b-model-to-defer-73-of-731-github-issues-then-killed-its-worker-with-9-30on",
+    "published": "2026-10-24",
+    "uid": "ai_a163051e",
+    "subclass": null
+  },
+  {
+    "title": "多个 Agent 同时改代码，先给它们分房间",
+    "content": "三个 Agent 分工写前端、后端、测试，看着清晰，可都要改 package.json：同时写就互相覆盖，不同时写也会读到对方没写完的代码。作者给的办法是 Git Worktree——Git 原生功能，一个仓库挂多个工作目录，每个 Agent 一条分支、一套目录，各改各的，最后统一合并。他说这比让 Agent 开会商量文件归属靠谱得多，依赖复杂时根本商量不完。",
+    "quote": "让 Agent 开会分文件，不如直接分房间。",
+    "source": "博客园",
+    "url": "https://www.cnblogs.com/Tomorrowland/p/23383539",
+    "published": "2026-10-24",
+    "uid": "ai_cd1e6dbc",
+    "subclass": null
+  },
+  {
+    "title": "370 个信息源两小时一轮，还是看不完",
+    "content": "作者做 InBrief 的起因很朴素：同一条消息换几层标题反复出现，原始出处被淹没；官方博客一句带限定的话，传到第三手成了确定结论；新闻在新闻站、观点在 X、深度讨论在 HN、代码在 GitHub、论文在 HF，只能不停切标签。他的解法是固定入口：每 2 小时刷一轮，采 370 多个源，其中 310 个 X 账号、13 个 YouTube 频道，LLM 过滤后按时间排。",
+    "quote": "信息不缺，缺的是「这是同一件事」。",
+    "source": "博客园",
+    "url": "https://www.cnblogs.com/frankzch/p/23398586",
+    "published": "2026-10-24",
+    "uid": "ai_8133a99a",
+    "subclass": null
+  },
+  {
+    "title": "百度开源 Unlimited-OCR：一次读完整个 PDF",
+    "content": "仓库 2.8 万星，卖点是 one-shot 长程解析：把 PDF 逐页转图后一次性喂给模型，直接吐出多页结构化文本，不用一页页调接口再拼。它在 DeepSeek-OCR 基础上往前推一步，基座图像尺寸 1024、支持 ngram 窗口，已接入 vLLM 推理和 ms-swift 训练，权重代码开源，Hugging Face 与 ModelScope 都有现成 demo。",
+    "quote": "PDF 再厚，也厚不过一次前向。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/baidu/Unlimited-OCR",
+    "published": "2026-10-24",
+    "uid": "ai_5aceb74f",
+    "subclass": null
+  },
+  {
+    "title": "对 Agent 说句话，HTML 直接渲染成 MP4",
+    "content": "HeyGen 开源 HyperFrames：把 HTML、CSS、媒体和可寻址动画渲染成确定性 MP4，CLI 本地跑，也能当托管工作流的渲染内核。仓库 7 万星，装个插件后直接对 Claude Code、Codex、Cursor 说「做个 10 秒产品开场」，模型自己排分镜、写 HTML、接动画、lint、预览、出片。7 个 skill 打包，Apache-2.0，Node 22 起。",
+    "quote": "视频不再是剪辑，是写页面再按帧算出来。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/heygen-com/hyperframes",
+    "published": "2026-10-24",
+    "uid": "ai_48b4a1b0",
+    "subclass": null
+  },
+  {
+    "title": "78 个攻击 skill，把 Claude 变成红队",
+    "content": "仓库 8200 星，23 个分类、78 个 SKILL.md，从 SQLi、shellcode 到 EDR 绕过、漏洞利用开发，每个文件都是一套专家级方法论，丢进 Claude 的 skills 目录就能让模型按攻击面切换角色。它不提供工具，只提供「怎么想」：侦察顺序、绕过思路、验证清单。作者说这是给红队工程师的上下文注入，不是给脚本小子的自动化。",
+    "quote": "防守方还在写规范，攻击方已经写成 skill。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/SnailSploit/Claude-Red",
+    "published": "2026-10-24",
+    "uid": "ai_56d223bd",
+    "subclass": null
+  }
+]
