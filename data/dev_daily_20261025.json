@@ -1,0 +1,218 @@
+[
+  {
+    "title": "Calif 在 Hexacon 演示完整打穿 iPhone：一键 Signal、iMessage 全线沦陷",
+    "content": "安全团队 Calif 在巴黎 Hexacon 演示了一条完整 iPhone 攻击链：一键打穿 Signal、针对 iMessage 的攻击，还有一句「你的 iPhone 能做这个吗」。细节没公开，既没给 CVE 也没说影响版本，只留了句「会在合适的时候放出」。最值得琢磨的是把 APT 重新解释成 Apple Persistent Threat——厂商补什么、用户防什么，全靠猜。",
+    "quote": "不发 CVE 只发视频，修不修你自己猜。",
+    "source": "HN Front Page",
+    "url": "https://blog.calif.io/p/iphone",
+    "published": "2026-10-25",
+    "uid": "2da5e7f5cdca74aed951ad4731ee7e78"
+  },
+  {
+    "title": "Node2Shell 升级成 HTTP2Shell：Brotli 漏洞的爆炸半径扩到所有 HTTP 应用",
+    "content": "Google 的 Brotli 库爆出 CVE-2026-111497：只要进程解压攻击者可控的 Brotli 数据，就可能泄露内存甚至执行任意代码。周三 Node.js 先披露，周四确认 Python 包同样中招，周五发现凡是用 HTTP + Brotli 的语言和中间件几乎都在射程内，而补丁没铺齐。建议很朴素：翻依赖树确认有没有解 Brotli，然后盯版本升级。",
+    "quote": "压缩库一出事，全栈都得跟着连坐。",
+    "source": "HN Front Page",
+    "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
+    "published": "2026-10-25",
+    "uid": "2376ee64283c56d5a99163955c574a6c"
+  },
+  {
+    "title": "PHP 爆出 9.2 分漏洞后，重新审视「不可能三角」对 C# 成不成立",
+    "content": "PHP 两个埋了十几年的漏洞 CVE-2026-109618 和 109619 被 AI 辅助工具扫出，CVSS 双 9.2，无需认证即可 RCE，都出在解释器 C 代码里：一个在 OOM 路径上 longjmp 让未初始化内存被消费，一个是 worker 状态没重置干净造成 UAF。作者借此反驳「不可能三角」：这不是定理而是预算表，C# 用运行时性能换内存安全，但 CLR 本身是 C++ 写的。",
+    "quote": "三角困住的从来不是语言，是预算。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23422056",
+    "published": "2026-10-25",
+    "uid": "54a6a6837ec9e348eb3cc9ada45175a3"
+  },
+  {
+    "title": "Roku 把开发者仓库从 GitHub 搬到 GitLab",
+    "content": "Roku 在开发者博客宣布，把自家开发者仓库整体从 GitHub 迁往 GitLab，官方页面没写原因，也没给迁移时间表。HN 上讨论很快跑偏：有人猜是 GitHub 最近几个月接连故障，有人说是为了躲开微软和 AI 爬虫对代码的扫荡，还有人单纯叫好，说自己部署被 GitHub 宕机坑过好几次。至于真实动机，只能等 Roku 自己开口。",
+    "quote": "搬家不解释，理由让评论区自己编。",
+    "source": "HN Front Page",
+    "url": "https://blog.roku.com/developer/gitlab-move",
+    "published": "2026-10-25",
+    "uid": "8cd9588b51b2d5cb031e961b1b249335"
+  },
+  {
+    "title": "一个内核模块把 RTX 30 系的 FP/BF16 发射率翻倍",
+    "content": "作者发布 gpu-unlock 1.0：一个 Linux 内核模块，在 NVIDIA 驱动绑定显卡之前写入速度选择器，把 GA102/103/104/106 的 FP/BF16 FMA 发射率拉到专业卡水平。实测 3090 Ti 的 BF16 GEMM 从 87.5 涨到 157.4 TFLOPS，RTX 3070 提升 73% 到 81%；解码阶段受显存带宽限制基本没变，输出逐位一致。",
+    "quote": "老黄刀法再准，也挡不住有人自己磨刀。",
+    "source": "HN Front Page",
+    "url": "https://github.com/Zagitta/gpu-unlock",
+    "published": "2026-10-25",
+    "uid": "17dcde21231d2a11eb6c20eee1b3467c"
+  },
+  {
+    "title": "约十二家银行 App 开始单独放行 GrapheneOS",
+    "content": "GrapheneOS 官方账号披露：多数银行 App 其实能在 GrapheneOS 上跑，但不少带内存破坏漏洞和错误的防篡改检测，需要逐 App 打开兼容模式；约 10% 的银行 App 直接封杀非 Google 认证系统。转机是已有约十二家银行在「Google 认证系统」之外明确允许 GrapheneOS，而且数量在增长。社区维护的 privsec.dev 兼容列表成了事实上的验收标准。",
+    "quote": "银行的风控，终于开始认第三方系统了。",
+    "source": "HN Front Page",
+    "url": "https://grapheneos.social/@GrapheneOS/117492375462459244",
+    "published": "2026-10-25",
+    "uid": "a8fd9b31fcc4bf46c996ef9cf476a2ed"
+  },
+  {
+    "title": "Kimi K3.1 Pro 发布：3T 级开放权重，1M 上下文",
+    "content": "月之暗面推出 K3.1 系列首款模型 K3.1 Pro：3T 级开放权重、100 万 token 上下文，重点提升编码、3D 生成、金融研究和 agent 能力；同时发布 Highspeed 版本，速度是原版 2 到 3 倍。模型即日起在 Kimi.ai、Kimi Work、Kimi Code 和 API 上线，完整权重承诺 11 月 4 日前放出。",
+    "quote": "权重还没放，参数先喊到 3T。",
+    "source": "HN Front Page",
+    "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+    "published": "2026-10-25",
+    "uid": "01dac9eff4564791a185463f783e27e6"
+  },
+  {
+    "title": "OBS Studio 33 发布：CEF 跨两年大版本，插件加载彻底重做",
+    "content": "OBS 33 最重的一刀是把 CEF 从 127 升到 150，跨度从 2024 年 7 月到 2026 年 9 月，官方说改动全在后端、用户应无感，但请反馈浏览器源异常。其次插件加载体系重做：官方插件挪进 core 目录，第三方安装路径和目录结构都变了，旧位置兼容到 34.0。其余是体验修补：源吸附沿整轴生效、不再吸到隐藏源，数字框不吞输入，Arm64 开了 NVENC。",
+    "quote": "两年不升级的依赖，一次就得还清。",
+    "source": "HN Front Page",
+    "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.0",
+    "published": "2026-10-25",
+    "uid": "7047532dd9ebdd4b33280201c6418bbb"
+  },
+  {
+    "title": "分布式 SQLite 十二年：rqlite 作者出来纠正时间线",
+    "content": "Philip O'Toole 复盘 2014 年把 SQLite 套上 Raft 做出 rqlite 的经过：当时只是某集群缺一点关系型存储，选不出该放哪个节点，索性把写入复制到全集群。这大概是第一个开源 Raft+SQLite 组合，之后几年无人跟进；如今品类有十几个项目、几个拿了融资、两个被收购。他强调 rqlite 从第一天就是 CP：写必过 leader，多数派确认，被隔离的少数派拒写。",
+    "quote": "一个周末的玩具，成了十二年的品类。",
+    "source": "HN Front Page",
+    "url": "https://philipotoole.com/twelve-years-of-distributed-sqlite/",
+    "published": "2026-10-25",
+    "uid": "6052e10f971de6b416ca85c86106ee42"
+  },
+  {
+    "title": "纯函数式语言离 C 还有多远：Roc 把差距压到 10% 以内",
+    "content": "Richard Feldman 拿 Roc 重写了 DEFLATE 压缩库 roc-deflate，和 C 写的 libdeflate 正面对打：144 项基准中位数只慢 8.9%（Ryzen 3900X），M1 MacBook Pro 上慢 2.6%，压缩输出逐字节一致。知道 Roc 连 0.1.0 都还没发，包生态几乎没做过优化。他的结论不是「FP 赢了」，而是「函数式必然慢」的直觉该更新了。",
+    "quote": "还没发 1.0 就贴着 C 跑，这脸打得挺响。",
+    "source": "HN Front Page",
+    "url": "https://rtfeldman.com/fp-vs-c",
+    "published": "2026-10-25",
+    "uid": "1b0f7ee263a96e6bce5ed803dedf683b"
+  },
+  {
+    "title": "AI 代写论文引用了一篇不存在的 TorrentFreak 文章",
+    "content": "两位尼日利亚图书馆员发了篇关于 Z-Library 的同行评审论文。参考文献里称 Elsevier 和 Springer Nature 采取了类似法律行动，来源标注为 2021 年 TorrentFreak 的一篇文章——而 TorrentFreak 从未发过这篇，链接只指向首页。论文还有多处引用查无此文，作者承认用了 AI 工具。研究盗版站的论文靠幻觉文献撑引用，多少有点讽刺。",
+    "quote": "研究盗版的人，引用了不存在的文献。",
+    "source": "HN Front Page",
+    "url": "https://torrentfreak.com/ai-assisted-paper-on-z-library-cites-a-torrentfreak-article-that-doesnt-exist/",
+    "published": "2026-10-25",
+    "uid": "82d81c8cb64cd6364dea1904905c166a"
+  },
+  {
+    "title": "380 行 Python 给公司做个离线知识库：带出处、带权限",
+    "content": "作者嫌公司制度文档散在网盘和群聊、SaaS 知识库又卡在数据出内网和按人头收费，于是写了 380 行、零第三方依赖的单文件服务。Markdown 丢进 docs/ 就能提问，答案带《文档》和章节出处、可点开核对原文，还能按角色控制可见范围。实现上按标题栈切 420 字一块，中文用二元组分词，BM25 加 TF-IDF 双路召回，回答只抽取不生成。",
+    "quote": "不生成只摘抄，这届 AI 最缺的自觉。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1251575",
+    "published": "2026-10-25",
+    "uid": "7503268a09e728b9c70eec4d1c182695"
+  },
+  {
+    "title": "把 ripgrep 打包成单文件 APE：一个二进制跑遍三平台",
+    "content": "作者把 rg 做成 APE：同一个可执行文件在 Windows、Linux、macOS 上都能跑，同时覆盖 x86_64 和 ARM64，省掉按平台、架构、语言排列组合的麻烦。再用 APEBind 生成各语言统一接口，Python、Node、Java 都能直接调 rg。同一思路还做了 sympy-ape 和 tika-ape，在别的语言里调 Python/JVM 库不用装运行时。",
+    "quote": "一个二进制跑三平台，运维头发保住了。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1251579",
+    "published": "2026-10-25",
+    "uid": "12821c0ee384c628ad04f0efbaaee115"
+  },
+  {
+    "title": "有人用 AI 搓了个 GBA 版《三国群英传》，还给了 ROM",
+    "content": "作者摸鱼几天 vibe 出一个 GBA 版《三国群英传》：代码开源，可以网页试玩，也提供编译好的 ROM，拷进烧录卡、开源掌机或模拟器就跑。他自认尽力贴近原版，但受 GBA 资源和机能限制，加上「vibe 水平有限」，问题还很多。评论区追问模型，作者答主要是 gpt-6.1 sol；有人反馈战斗偏慢，他回复气攒满按 A。周末项目的正确形态。",
+    "quote": "GBA 都能 vibe 出来，就差个好玩的策划。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1251545",
+    "published": "2026-10-25",
+    "uid": "c6690cdfc8249dc3eda1998ae090e34f"
+  },
+  {
+    "title": "Claude Code 无头模式实战：定时任务要过的四道关",
+    "content": "这篇把 claude -p 跑 cron 的坑逐条拆开：光加 -p 不够，还得有不用浏览器登录的凭据、不等人确认的权限、对轮次和花费的硬上限，以及脚本能解析的输出。本机定时任务用 claude --bare -p 配 API key 和预算上限；仓库事件触发用 GitHub Action；订阅 token 只适合轻量自动化。无人值守最怕的失败源，是它停下来等你点确认。",
+    "quote": "无人值守最怕的，是它停下来等你点确认。",
+    "source": "Dev.to",
+    "url": "https://dev.to/aobaworks/claude-code-headless-mode-flags-auth-and-cost-2026-di2",
+    "published": "2026-10-25",
+    "uid": "75558b7496abc0961a409dada1fe403b"
+  },
+  {
+    "title": "Token 级过滤到底多贵：CPU 上每 token 0.15 到 0.34 毫秒",
+    "content": "多数护栏基准只比检出质量，这篇只算税：每个解码步加 token 级过滤要多花多少时间。实测 CPU 上、100 到 10000 条违禁模式，每 token 成本 0.147 到 0.343 毫秒，几乎不随模式数增长——自动机只建一次，之后每步套预计算掩码。真正随规模涨的是一次性构建成本：一万条 40.8 毫秒。批大小为 8 时摊到每条 27 到 96 微秒。",
+    "quote": "护栏的账，得按解码步算才诚实。",
+    "source": "Dev.to",
+    "url": "https://dev.to/resk/token-level-filtering-costs-015-to-034-ms-per-token-on-cpu-236j",
+    "published": "2026-10-25",
+    "uid": "b51699ddc934359e7880368ee4f85ef3"
+  },
+  {
+    "title": "把 MilkDrop 搬进 .NET：9795 个预设跑通 9728 个，代码几乎全由大模型写",
+    "content": "作者把 projectM 4.1.8 和 MilkDrop3 两套 C++ 音乐可视化引擎用 C# 重写：9795 个真实预设跑通 9728 个，剩下 67 个是预设文件自己坏了；代码几乎全由大模型按需求生成，人只提需求、跑验收。难啃的有四处：EEL 表达式引擎不能用 Reflection.Emit，只能移植字节码解释器；HLSL 转 GLSL 要兼容 tex2D 等老写法。",
+    "quote": "人类只提需求，编译器工程也敢许愿。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/sevencatwang/p/23426389",
+    "published": "2026-10-25",
+    "uid": "608019ec9a6076c9ae69188ce6053bd6"
+  },
+  {
+    "title": "NanoWM 分析笔记：世界模型不是视频生成模型的换皮",
+    "content": "这篇长笔记先把世界模型讲清：它和视频生成的关键差别在条件信号和交互方式——世界模型要以动作为条件、支持闭环 rollout，因此会遭遇滚动误差累积，需要潜空间编解码协议和 MPC 式的推理闭环，不能简单等同于一个 DiT 视频骨干。文章随后拆 NanoWM 的训练配方：Diffusion Forcing 让每帧有独立噪声步，以及五种动作注入机制。",
+    "quote": "能生成视频，不等于就懂了世界。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/rossiXYZ/p/23426585",
+    "published": "2026-10-25",
+    "uid": "97632ceda11bbafccad037a71b1b9205"
+  },
+  {
+    "title": "MultiNLI 的「标准答案」有多硬：按文体拆开，政府文本最不统一",
+    "content": "有人把 MultiNLI 两个开发集按五种文体拆开，统计五名标注者与 gold label 的一致率：整体 88.9%，复现原论文的 88.7%；但 letters 有 65.3% 的样本五人全票，government 只有 53.4%，无多数票的样本也是政府文本最多。作者原本预测电话口语最难标，结果正好相反。benchmark 的 gold 不是均匀坚硬的，模型分数该按文体分开看。",
+    "quote": "同一个 benchmark，政府文本的答案最软。",
+    "source": "Dev.to",
+    "url": "https://dev.to/munimv2/where-are-a-benchmarks-gold-labels-least-decisive-a-per-genre-annotator-agreement-census-of-4ejo",
+    "published": "2026-10-25",
+    "uid": "f953882195154f098bad6d401528f72b"
+  },
+  {
+    "title": "贴着 Mac 屏幕边缘的额度面板：Codex / Claude Code 还剩多少一眼看到",
+    "content": "EdgeQuota 常驻 Mac 屏幕边缘，Codex 或 Claude Code 干活时滑出：显示 5 小时额度和每周额度、重置时间，以及哪个会话在等你确认。走 Codex 官方接口和 Claude Code 状态栏与 hooks，不要密码、不读 cookie。国区 App Store 搜不到，需外区账号，支持 Apple 芯片与 macOS 13+，7 天试用后 4.99 美元买断。",
+    "quote": "额度焦虑都能做成生意，订阅制真是门好生意。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1251299",
+    "published": "2026-10-25",
+    "uid": "c51a5c3a71cc7f46de3ccb4fd2d7e16c"
+  },
+  {
+    "title": "GPT-6 要上 Google Cloud：先想清楚账单算谁的",
+    "content": "Google Cloud 10 月 21 日宣布 OpenAI 模型进入 Model Garden：GPT-6 Astra 主打编码和 computer use，GPT-6.1 Sol 便宜一档，GPT-6 Luna 走量；私有预览、几周内 GA，通过 Marketplace 计费并并入现有云账单。真新闻是「一张发票」——谁都能试 GPT-6，月底财务只问「谁花的」，建议先分模型、打标签、设预算。",
+    "quote": "上线越方便，月底解释账单越困难。",
+    "source": "Dev.to",
+    "url": "https://dev.to/gde/gpt-6-is-coming-to-google-cloud-is-your-ai-bill-ready-j7l",
+    "published": "2026-10-25",
+    "uid": "f37339612feea5bf060d6e4fb9598968"
+  },
+  {
+    "title": "三维大屏三个边界 bug：单例撞生命周期、IndexedDB 拒收 DOM、跨域 ETag",
+    "content": "Vue 2 + Cesium 大屏项目复盘三个坑：模块级单例 sharedViewer 在 SPA 二次进入时仍指向已销毁的 viewer，标签注册第一步抛错导致全部消失；离线缓存把 XML 响应直接塞 IndexedDB，撞上 DataCloneError 静默失败；跨域资源因 ETag 告警反复回源。作者把根因都归到「边界」：生命周期与全局状态、内存与持久化、同源策略。",
+    "quote": "单例一时爽，销毁的时候就火葬场。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/ChineseLiao/p/23426968",
+    "published": "2026-10-25",
+    "uid": "fece2faeb1e18a103f204d1eee641d39"
+  },
+  {
+    "title": "Agent YOLO：把 Claude Code / Codex 塞进三个 IDE 的侧边栏",
+    "content": "同一套 YOLO 面板进了 IntelliJ、Visual Studio 和 VS Code：列出 PATH 上已装的 agent，一次点击就在 IDE 内真实 PTY 里拉起，输出里的路径、堆栈、类型名、URL 都能点；提供跳过权限、恢复会话两个开关，默认关闭。三端终端底座分别是 JediTerm、手绘 ConPTY、node-pty + xterm.js，agent 名单写在 JSON 里。",
+    "quote": "终端里点不动报错，终于有人管了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/cnsharp/p/23412695",
+    "published": "2026-10-25",
+    "uid": "50c408931d1fadfe3dd2a86a089cfa32"
+  },
+  {
+    "title": "一张 4090 跑本地模型做游戏角色四视图：能用，但别拿去量产",
+    "content": "Meowcute 用单张 RTX 4090、全离线 Qwen-Image-2.1 生成角色正/左/背/右四视图：正视图文生图，其余三张以正视图为参考逐张指令转身，最后用 numpy/PIL 拼板。相比上一代 Qwen-Image-Edit-2511，单次 13 到 19 秒快 6 到 9 倍，还能直出透明通道。作者强调一半以上质量来自「几何守恒」指令和参考图预处理，适合原型，不适合正式生产。",
+    "quote": "模型只占一半功劳，工程才是另一半。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/fs7744/p/23412320",
+    "published": "2026-10-25",
+    "uid": "8194cf9aa783dd5abc5531c46e8db2c5"
+  }
+]
