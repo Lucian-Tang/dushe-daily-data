@@ -1,0 +1,203 @@
+{
+  "date": "2026-10-26",
+  "total": 16,
+  "vendors": [
+    "anthropic",
+    "alibaba",
+    "deepseek",
+    "microsoft",
+    "other"
+  ],
+  "models": {
+    "anthropic": {
+      "displayName": "Anthropic/Claude",
+      "icon": "🧬",
+      "items": [
+        {
+          "uid": "0f77c02b4f79565cb0c1dc38484c78ec",
+          "title": "V2EX：用 Claude 写项目和国产模型的强烈反差",
+          "content": "一位开发者对比 Claude 与国产模型的实感：做 Electron 加 Windows 桌面小项目时，涉及全局快捷键钩子和窗口聚焦，Claude 似乎默认知道哪些设计不可行，会主动做 tradeoff 并说明，避免用户抱着「一定可行」的假设踩坑；而 GLM 会死守用户提的需求、不反馈风险，导致 bug 越修越多，一整天耗在设计前提本身就错的坑里。",
+          "quote": "模型不告诉你哪里不可行，代价就是你替它踩坑。",
+          "source": "V2EX",
+          "url": "https://www.v2ex.com/t/1250463",
+          "published": "2026-10-26",
+          "direction": "行业动态"
+        },
+        {
+          "uid": "c6ce80287f28f610e63a52c1b2be1713",
+          "title": "本地 27B 追平 Fable 5，但只省 22% 不是 91%",
+          "content": "Qwen3.8-27B 本地 vLLM 跑 LiveCodeBench 最近 100 道难题，单次 pass@1 只有 66.8%，套上 GVS5H 的 manager 脚手架反复起实例、用磁盘文件协调后升到 92.4%，略高于 Claude Fable 5 的 90.4%。但「只要 9% 成本」是误传：按 list price 算，带脚手架的 27B 成本约为 Fable 5 的 78%。",
+          "quote": "省 91% 是传说，省 22% 才是账单。",
+          "source": "Dev.to",
+          "url": "https://dev.to/alanwest/local-qwen38-27b-vs-claude-fable-5-it-ties-at-coding-but-costs-78-not-9-548o",
+          "published": "2026-10-26",
+          "direction": "行业动态"
+        },
+        {
+          "uid": "298a8a71779f772260b2c562033a5146",
+          "title": "12 种 agent 记忆实测：大多只记 what，不记 why",
+          "content": "作者对比 12 种 coding agent 记忆方案，核心结论：多数只记住「做了什么」，没记住「为什么这么做、哪些路已经试过并失败」。CLAUDE.md 是规则不是历史；session recorder 只存工具轨迹；记忆层能搜事实，却常缺少失效标记和团队共享。选型前先问：规则放哪、死路谁写、错误记忆能否作废、召回是否自动、数据能否出网。",
+          "quote": "记不住死路，agent 就会把坑再踩一遍。",
+          "source": "Dev.to",
+          "url": "https://dev.to/icegaming/i-compared-12-ai-coding-agent-memories-most-only-remember-what-not-why-gnb",
+          "published": "2026-10-26",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "alibaba": {
+      "displayName": "阿里巴巴/Qwen",
+      "icon": "☁️",
+      "items": [
+        {
+          "uid": "44a489c678869adffd9080369eb00897",
+          "title": "纯 Rust 在 CPU 上跑 4B 模型：2.8GB 内存、28 tok/s",
+          "content": "作者用 Rust + Candle 写了个多模型 CLI，在 CPU 上跑 Gemma 4 E4B、Qwen 3 4B、Phi-4-mini 的 4bit GGUF：二进制约 18MB，峰值内存 2.8GB，冷启动约 1.2 秒，生成 23–29 tok/s。Qwen 3 在代码与 JSON 上最快，Gemma 4 适合多语言；没有 Python、CUDA 和 5GB 镜像，边缘设备也能部署。",
+          "quote": "2.8GB 内存跑 4B 模型，Python 该紧张了。",
+          "source": "Dev.to",
+          "url": "https://dev.to/hossein-mortazavi/running-modern-slms-gemma-4-qwen-3-phi-4-on-cpu-pure-rust-zero-python-2od7",
+          "published": "2026-10-26",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "e4a8337fa69fad0e5426d705f9c1332c",
+          "title": "一句话生成 16~35 张统一风格游戏素材",
+          "content": "输入一句「云巅剑域」，系统先让 LLM 补全角色、宠物、四级武器、建筑、野怪设定，再生成 16–35 张风格统一的游戏素材，场景自动扩春夏秋冬。一致性靠三层：统一风格基因、以场景基准图做 image-to-image 锚定、Pillow 提取六色板算色距做后验。全程在 6GB 的 2060 上跑 Qwen-Image 2.1 量化版，8 个阶段独立重试。",
+          "quote": "一句话出全套素材，美术的活变成了审片。",
+          "source": "博客园",
+          "url": "https://www.cnblogs.com/wyang/p/23434205",
+          "published": "2026-10-26",
+          "direction": "应用/落地"
+        }
+      ]
+    },
+    "deepseek": {
+      "displayName": "DeepSeek",
+      "icon": "🔍",
+      "items": [
+        {
+          "uid": "b541589a075942cd6256e3376848cdfa",
+          "title": "检查交给 agent 自己调，40 次仍有 6 次假成功",
+          "content": "同一个 deepseek-flash、8 个任务、每轮埋一个静默错误，共 160 次：不做校验时 40 次里有 22 次做错了还报成功；把校验做成可选工具，agent 用了 38 次、账单翻倍，仍有 6 次漏网；把校验强制塞进每个工具结果，40 次全部拦住，成本却和完全不校验一样。结论不是「给 agent 真相」，而是「谁来决定什么时候看真相」。",
+          "quote": "把检查交给 agent 自己决定，等于没检查。",
+          "source": "Dev.to",
+          "url": "https://dev.to/vitalii_serbyn_bb456e7e80/the-check-the-agent-cannot-skip-0-of-40-silent-failures-vs-22-of-40-3dag",
+          "published": "2026-10-26",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "microsoft": {
+      "displayName": "Microsoft",
+      "icon": "🪟",
+      "items": [
+        {
+          "uid": "9064318f076c095742a6930595b0d669",
+          "title": "C# + Blazor 手写智能体：聊天框只完成 20%",
+          "content": "很多「接了模型的聊天页」只完成智能体的 20%。真正的智能体是模型+工具+循环+状态：模型输出文字或工具调用，后端执行查订单、算数、看时间，再把结果回填，失败还能重试。作者用 .NET 10、Blazor Interactive Server 和 Microsoft.Extensions.AI 搭了一个流式输出的示例，强调 API Key 留在服务端，工具就是 C# 业务代码。",
+          "quote": "聊天框不是智能体，工具循环才是。",
+          "source": "博客园",
+          "url": "https://www.cnblogs.com/known/p/23433592",
+          "published": "2026-10-26",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "other": {
+      "displayName": "其他",
+      "icon": "📰",
+      "items": [
+        {
+          "uid": "f5dc25340c385dfccbcc46fbfec93888",
+          "title": "EPFL 神经芯片：按脑区之间的同步性触发刺激",
+          "content": "EPFL 团队做出可植入的神经芯片 LogSync，不再只盯单个脑区：它同步记录多区域活动，提取脑波强度与区域间信号同步性等网络级生物标记，再由机器学习判断认知与情绪状态，检测到目标状态就触发刺激。相比按固定参数开环刺激的深部脑刺激，这条路把「按需闭环」做到了脑网络层面，成果已发在 IEEE JSSC，经费来自 NIMH 660 万美元项目。",
+          "quote": "只看一个脑区就下判断，跟凭一个像素猜整张图差不多。",
+          "source": "HN Front / EPFL",
+          "url": "https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/",
+          "published": "2026-10-26",
+          "direction": "行业动态"
+        },
+        {
+          "uid": "691134b7316b8f9cb55e920b69740330",
+          "title": "LayerEditor：修图不止出一张图，而是吐出可复用图层",
+          "content": "现有图像编辑模型只吐一张压平的图，想改局部或复用图层就得重来。LayerEditor 把「按指令改图」和「生成可复用 RGBA 图层」放进同一个 token 序列：编辑后的画布与有序图层用 in-context RGB-Alpha token 联合建模，再用组合式编辑先验蒸馏，把原模型能力同时迁移到画布与图层合成结果，并构建了 LayerEditor-100K 数据集。",
+          "quote": "修图修到最后才发现，图层才是人真正想要的东西。",
+          "source": "HuggingFace Papers",
+          "url": "https://huggingface.co/papers/2610.24738",
+          "published": "2026-10-26",
+          "direction": "行业动态"
+        },
+        {
+          "uid": "8df9f24243fdc82d7b23d1d9af7598e4",
+          "title": "OpenDS：把 Deep Search agent 扔进活的开放网络",
+          "content": "Deep Search agent 大多在静态检索集上考，真实开放网络没人系统评。论文提出 OpenDS 任务与 OpenDS-World 基准：200 道难题，证据散落在不同来源、模态与异构文件格式里，agent 要自己搜索、开浏览器交互、处理证据，最后给出唯一事实答案。评测显示现有 agent 在活网页上的多步取证能力仍明显不足。",
+          "quote": "静态题库里考满分，到了活网页上一问就露怯。",
+          "source": "HuggingFace Papers",
+          "url": "https://huggingface.co/papers/2610.30181",
+          "published": "2026-10-26",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "e2187496737893feacb4bfc6b9a390f1",
+          "title": "Agent Mosaic：单条都合规，拼起来就是泄密",
+          "content": "agent 能读多份文档，再把敏感结论拼出来，这种「马赛克效应」被论文量化了：30 个网络安全、医疗、军事合成案例，三个 agent 给出 10800 条答案。即便问题本可由单份文档回答，最强模型仍有 7.08% 泄出被禁组合；加上密级表头和显式聚合规则后，仍有 32.37% 不安全披露。更麻烦的是拒答本身也可能泄露结论。",
+          "quote": "单看每步都合规，拼起来就是泄密，这才是暗坑。",
+          "source": "HuggingFace Papers",
+          "url": "https://huggingface.co/papers/2610.30418",
+          "published": "2026-10-26",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "b681af9c84844c0c6bb86d6237b47f38",
+          "title": "决定并发上限的不是权重，是 KV cache",
+          "content": "7B 模型 fp16 权重 13.5GB，80GB 卡看似还剩 66GB，但 4096 上下文下每个 token 的 KV cache 约 0.5MiB，一条序列就吃 2.1GB，实际只能并 30 路；32K 上下文单条要 17.2GB，比权重还大。文章拆解公式，并说明 GQA 把 KV 头从 32 降到 8 可撑约 123 路，int8 再翻倍，PagedAttention 则减少预留浪费。",
+          "quote": "权重是一次性开销，KV cache 才是按人头收费。",
+          "source": "Dev.to",
+          "url": "https://dev.to/andika_rachman_aa62526318/why-the-kv-cache-not-the-weights-decides-how-many-users-an-llm-server-can-hold-31o0",
+          "published": "2026-10-26",
+          "direction": "行业动态"
+        },
+        {
+          "uid": "ad328e8ccd4aa8c6e14c0e68e674f444",
+          "title": "RAG 不知道今年是哪年：80% 答案来自错误年份",
+          "content": "作者把 2017–2025 九年联邦采购法规冻成一个语料：22.7 万个 chunk、700 道带「截至某日」的问题。不做日期处理的混合检索，top-1 命中错误年份的比例高达 80.2%，正确版本@5 只有 10.6%；把检索年份钉到提问年份后，错误年份降到 0，版本准确率升到 33.2%。但一刀切也会答不了「两年之间改了什么」，日期处理必须看问题类型。",
+          "quote": "RAG 不看日期，答得越流畅越像在胡说。",
+          "source": "Dev.to",
+          "url": "https://dev.to/raihan-js/your-rag-has-no-idea-what-year-it-is-a-frozen-benchmark-for-version-leakage-1kf9",
+          "published": "2026-10-26",
+          "direction": "政策/合规"
+        },
+        {
+          "uid": "b7093e5d5586a2abd1601a3c0fbc1910",
+          "title": "让 agent 的失败可回放：记录工具边界，不是聊天记录",
+          "content": "Agent 线上出错，聊天记录只能告诉你「发生了什么」，不能让你重放。作者主张在工具调用边界记录：分发前的参数、解析前的原始响应、延迟、重试次数，以及模型/提示词/工具 schema 版本，再生成确定性 stub 做回放。这样同一份 trace 既能当回归用例，也能做离线 eval；但回放只保证工具层确定，模型漂移仍要靠定期 live eval 抓。",
+          "quote": "聊天记录证明发生过，trace 才能让它再发生。",
+          "source": "Dev.to",
+          "url": "https://dev.to/dima_kruglov_608741d9a416/replay-or-it-didnt-happen-making-agent-runs-reproducible-2lp2",
+          "published": "2026-10-26",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "659a1d59cc13a1cd4af3806f6d44d131",
+          "title": "预算上限要写成 403，不是仪表盘",
+          "content": "一个扫 DN42 的 agent 没坏、没幻觉，只是不停循环，最后把运营方账单打爆——因为成本只存在仪表盘里，而 agent 不看仪表盘。作者主张把预算上限放进工具 wrapper：调用前按自己的价目表估算并预占，并发子 agent 也不会同时穿透；超限返回不可重试的 403，并给模型一个「总结后停止」的合法出口。",
+          "quote": "预算写进仪表盘，等于给 agent 递了张信用卡。",
+          "source": "Dev.to",
+          "url": "https://dev.to/o96a/your-spend-ceiling-has-to-be-a-403-not-a-dashboard-55gb",
+          "published": "2026-10-26",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "fe3fa2e61bbf0bbfee7d54cca3be41f3",
+          "title": "上线前先写 eval 计划：别让「看着还行」混过合并",
+          "content": "多数 LLM 功能靠「试十几个输入、看着还行」就合并，几周后换模型或改提示词，效果悄悄变差也没人发现。作者的 eval 计划要求：先把提示词、模型快照、上下文拼装、后处理作为一个整体版本化；再写清楚这次评估要支持什么决策；把「正确」拆成可判定的用例，每次改动都跑并在失败时挡住合并。断言模糊，更要把标准前置。",
+          "quote": "没有 eval 的 LLM 功能，只是碰巧能跑。",
+          "source": "Dev.to",
+          "url": "https://dev.to/aispeckit/how-to-build-an-eval-plan-for-an-llm-feature-before-you-ship-it-121b",
+          "published": "2026-10-26",
+          "direction": "模型发布"
+        }
+      ]
+    }
+  }
+}
