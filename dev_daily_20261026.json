@@ -1,0 +1,200 @@
+[
+  {
+    "title": "Cerebras 把 3 万亿参数模型铺满晶圆：1000-2000 token/s",
+    "content": "Cerebras 详解如何在 WSE-3T 晶圆上部署万亿参数模型：单片只有 44GB 片上内存，3 万亿参数的 Kimi K3 光权重就要数 TB，只能按层切分到多片晶圆，再配合 4-bit 量化与 256k 上下文做并发调度，最终跑到 1000-2000+ token/s。官方称该配置在 Terminal-Bench 2.1 上拿到 88.3%，逼近闭源旗舰。",
+    "quote": "内存不够晶圆来凑，这才是真·堆硬件。",
+    "source": "HN Front Page",
+    "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+    "published": "2026-10-26",
+    "uid": "a0caba4aa4dbb02d65dac737e407b4b1"
+  },
+  {
+    "title": "Akamai 拿下 Anthropic 116 亿美元七年大单",
+    "content": "Akamai 与 Anthropic 签下总额 116 亿美元、为期七年的云基础设施协议，若合作继续扩展，合同承诺总额可能达到约 200 亿美元。作者借此复盘边缘云这几年的翻身：CDN 增长见顶后，靠分布式边缘节点接住 AI 推理和内容分发需求，把「离用户近」重新变成卖点。文章也提醒，这类长约锁定的是算力与带宽，真正利润还要看利用率和电价。",
+    "quote": "CDN 讲不动故事，就去给大模型搬箱子。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/byjs/p/23434306",
+    "published": "2026-10-26",
+    "uid": "d26d67ae4d6a3e4f932d99613b3cb8f8"
+  },
+  {
+    "title": "尼康摄影大赛冠军被撤：科学家看出 AI 痕迹",
+    "content": "尼康第 16 届 Small World in Motion 显微摄影比赛冠军被撤销，原因是评审科学家发现画面里出现「凭空长出来的微观结构」等生成痕迹。作品此前已拿下最高奖，复核后头衔被收回。这已是今年又一起 AI 作品混进人类赛事的事件，评委的眼睛显然跟不上生成模型，最后还得靠专业科学家救场。",
+    "quote": "评委看不出来，显微镜看出来了。",
+    "source": "HN Front Page",
+    "url": "https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html",
+    "published": "2026-10-26",
+    "uid": "3a783fc131578b3643e93ea881c183e7"
+  },
+  {
+    "title": "美国创意行业四年少了 20 万个岗位，AI 占多少？",
+    "content": "Apricitas 统计：过去四年美国媒体、影视和艺术等创意行业减少超过 20 万个岗位，其中最近一年就少了约 5 万，就业下滑的强度和持续时间只有 2001、2008 两次衰退可以类比。但当下并没有全面衰退，同期正是能批量生成小说、图片、音乐和数字艺术的 AI 快速铺开。作者也承认，AI 的影响难以和好莱坞整合、制作外包等因素拆开，很难给出精确归因。",
+    "quote": "没有衰退，只有更便宜的替代品。",
+    "source": "HN Front Page",
+    "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
+    "published": "2026-10-26",
+    "uid": "dbeadd58c88cd4368f45b3e25d26c03c"
+  },
+  {
+    "title": "Dan Luu：我们该对软件更有野心一点",
+    "content": "Dan Luu 借 Michael Malis 用 Rust 重写 Postgres（pgrust）说事：外界默认这类项目是「AI 生成的垃圾」，但 Malis 的测试严谨到反过来挖出了 Postgres 的数值、JSONPath、pgcrypto 等多个真实 bug。他的观点是，哪怕 pgrust 最终失败，这种做难而正确的事的尝试也会给生态留下长期价值，而不是又一批 CRUD。",
+    "quote": "别人卷 CRUD，他卷数据库内核，差距这么来的。",
+    "source": "HN Front Page",
+    "url": "https://danluu.com/ambitious/",
+    "published": "2026-10-26",
+    "uid": "0340d26505f0bae618d283f6f11f2321"
+  },
+  {
+    "title": "fheroes2：从零重写《英雄无敌 II》引擎",
+    "content": "一个从零重写《魔法门之英雄无敌 II》引擎的开源项目，跨平台、GPLv2，支持高分辨率、改进 AI、修掉原版一堆逻辑 bug，还能读取原版资源。项目要求自备正版游戏数据（GOG 或育碧渠道），仓库持续更新，在 HN 拿到 127 分。对想研究回合制策略游戏架构、或者单纯想重温的人，都是现成的 C++ 工程教材。",
+    "quote": "二十多年了，还有人替 3DO 修 bug。",
+    "source": "HN Front Page",
+    "url": "https://github.com/ihhub/fheroes2",
+    "published": "2026-10-26",
+    "uid": "9637361b4b469dc0fb60bc5aa5e61ccc"
+  },
+  {
+    "title": "TradingAgents：让一群 AI 分工炒股，11.4 万星",
+    "content": "TauricResearch 开源的金融交易框架，把投研流程拆成基本面、情绪、技术面、多空研究员、交易员和风控等多个 LLM 角色，让它们互相辩论后再出决策，而不是一个大模型拍脑袋。Python 实现，可接不同模型与行情数据源，GitHub 已 11.4 万星，是多智能体落地里最出圈的案例之一。",
+    "quote": "一群 AI 开会炒股，亏了都不知道骂谁。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/TauricResearch/TradingAgents",
+    "published": "2026-10-26",
+    "uid": "5476f5e5e14f8b4552fab7f9dad1fc77"
+  },
+  {
+    "title": "Impeccable：给 AI 编程 Agent 补一节审美课，8.7 万星",
+    "content": "面向 AI 编程 Agent 的设计语言：1 个 skill、24 条命令、62 条确定性检测规则，专治 AI 生成前端的通病——全是 Inter 字体、紫蓝渐变、卡片套卡片、彩底灰字、每个标题上面一块圆角图标。装好后用 /impeccable 调 polish、audit、critique 等命令，确定性规则不调模型、不要 API Key，还能在浏览器里实时迭代。Rust 实现。",
+    "quote": "AI 审美的尽头，是同一套 SaaS 模板。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/pbakaus/impeccable",
+    "published": "2026-10-26",
+    "uid": "77a880ed9747cb4244c7083d5f437b55"
+  },
+  {
+    "title": "Coolify：自托管的 Vercel 替代品，6.4 万星",
+    "content": "开源 PaaS，装在自己的服务器上就能获得类似 Vercel、Heroku、Netlify 的体验：Git 推送自动部署、静态站点、数据库、全栈应用，外加 360 多个一键服务模板。PHP 编写，支持多服务器编排与自动 HTTPS。对预算敏感又想保住数据主权的团队，它是「Vercel 账单太贵」之后最常被提到的去处。",
+    "quote": "Vercel 账单吓人？自己买台服务器呗。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/coollabsio/coolify",
+    "published": "2026-10-26",
+    "uid": "ea20edb5bec5f4ef257f33acb93065ca"
+  },
+  {
+    "title": "Farol：给 PR 画一张风险地图，专治闭眼点合并",
+    "content": "开源 CLI 兼 GitHub Action，在 AI 代码审查之后再补一层：标出本次 PR 里风险最高的文件、它们能触达哪些模块、diff 覆盖率以及接口契约变化，让审批者知道点下 Merge 到底在赌什么。作者把它定位成 AI review 之后的第二道关，适合改动面大、评审人又不熟代码的场景。TypeScript 编写，目前 78 星，很早期。",
+    "quote": "AI 审完你再审，锅总得有人背。",
+    "source": "HN Front Page",
+    "url": "https://github.com/winnin/farol",
+    "published": "2026-10-26",
+    "uid": "8f2462bc7ffc2ce8100a976a088ca50d"
+  },
+  {
+    "title": "一个人 + AI，66 天从空目录到生产环境",
+    "content": "作者 8 月 20 日建了个空目录和一份 PRD，10 月 25 日 P2P 内网穿透产品已上线成交，全程没手写一行业务代码。结果是 193 次提交、约 6.8 万行代码、995 项自动化测试、编译零警告，CI 还卡了覆盖率门槛。文章复盘了全自动编程的方法论：怎么拆任务、怎么让 AI 自查、怎么用生产日志回流驱动重构。",
+    "quote": "六十六天六万八千行，手都没碰键盘。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/zhuxiaoxiao/p/23432906",
+    "published": "2026-10-26",
+    "uid": "734f80de45cf38b1515bcc56f6435433"
+  },
+  {
+    "title": "从审核员到监工：AI 正在重写评价体系",
+    "content": "作者在程序员节活动后的复盘：五个月前他还在分享怎么给 AI 写全局规则，如今大部分提示词已不重要，身份从审核 AI 产物的审核员，变成只确认 AI 在干活的监工。他举了两个压力信号：OpenAI 用内部模型一次在 GitHub 发了 722 篇数学论文；PHP、Node、Java、Linux 同时爆高危漏洞，而 PHP 只有一名全职维护者。",
+    "quote": "AI 产能过剩，人类注意力破产。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Li-runqing/p/23432895/ai-overseer",
+    "published": "2026-10-26",
+    "uid": "2d510e91eb98dfb80ea6f1f00da5636c"
+  },
+  {
+    "title": "十四万个汉字字形，全部整理成 SVG",
+    "content": "作者把甲骨、金文、篆书、隶书到楷、行、草、宋、黑共十个书体层的汉字字形整理成 SVG，约十四万个字形，每字一个文件，来源为公开资源并做了版权分类，已上传 GitHub 并提供在线预览。对做字体、印章、国风设计或文字可视化的人来说，这是一个可以直接按字取用的素材库，省掉大量描图和对字形的时间。",
+    "quote": "别人描字到崩溃，他直接开源了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/ZhouyongH/p/23433153",
+    "published": "2026-10-26",
+    "uid": "2a001dd4bbb1be9d25266a4997f55bd1"
+  },
+  {
+    "title": "ESP32 当手：网页 Harness 全自动操作 iPhone 点外卖",
+    "content": "作者用 Safari 里跑的网页 Harness 读取手机屏幕、调用模型决策，再让 ESP32 模拟蓝牙键鼠去点 iPhone，全程不接线、不装 App，手机和开发板连同一个 Wi-Fi 即可。支持自选模型，也能把常用操作写成可复用技能，比如自动点外卖。门槛是需要 iOS/iPadOS 27 以上，等于用几十块钱的开发板绕过了 iOS 的自动化封锁。",
+    "quote": "苹果不给的自动化，一块开发板给了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1251717",
+    "published": "2026-10-26",
+    "uid": "c21f72fd1be9abd89f1a7b1211ce6d4b"
+  },
+  {
+    "title": "用 Agent 写一下午代码，为什么反而更累？",
+    "content": "作者的体验很典型：Coding Agent 写了一下午，人却精疲力尽，产出还不显著。他归因于大量重复的细节习惯要反复交代，比如要求 AI 在独立 worktree 和分支上开发、按固定流程提交。为此他做了开源 AI 助手 Pot，把这些口头规矩固化成可复用配置，省掉每轮沟通成本。结论挺扎心：累的不是写代码，是当 AI 的项目经理。",
+    "quote": "代码是 AI 写的，班还得你来加。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1251606",
+    "published": "2026-10-26",
+    "uid": "0a173e85b8fd1d50213807bd119e82b2"
+  },
+  {
+    "title": "Radian：Rust 写的自带编排轻量 Agent",
+    "content": "作者用 AI 做照片编辑 App 之后，把当时「土办法」的编排经验抽成一个自带编排能力的轻量 Agent Harness：radian，Rust 实现并开源。他的观点是插件生态对人有用，但 Agent 真正开始干活时，满屏插件、UI 和额外上下文反而是干扰，所以 radian 把工具调用、上下文管理和任务编排收进内核。项目目前已经到了「自己开发自己」的阶段。",
+    "quote": "插件是给人看的，Agent 只需要干活。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1251470",
+    "published": "2026-10-26",
+    "uid": "5e694f789198ef8dd93c27865d61f4f0"
+  },
+  {
+    "title": "CADCraft：Rust 写的开源 2D CAD",
+    "content": "一款用 Rust 写的免费开源 2D CAD，支持 Windows、macOS、Linux、FreeBSD 和 WebAssembly。绘图工具覆盖 LINE、CIRCLE、ARC、OFFSET、TRIM、HATCH、DIM，另有图层、尺寸标注和 DWG/DXF 工作流，适合技术制图与自动化脚本。对受够商业 CAD 授权费的人，这是个可以自己改的替代品，也能直接编译到浏览器里跑。",
+    "quote": "商业 CAD 的授权费，够重写一个了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1251588",
+    "published": "2026-10-26",
+    "uid": "41c0bc530636aec8a65913dfc5593bbc"
+  },
+  {
+    "title": "ChordFold：和弦识别放进浏览器本地跑",
+    "content": "作者做了 ChordFold：上传 MP3 或 WAV，AI 自动识别其中的和弦以及和弦随时间的变化。和需要把音频传到服务器的识别服务不同，他把 BTC 系列和弦识别模型转成 ONNX，用 ONNX Runtime Web 在浏览器里本地推理，音频不出设备，也没有后端成本。文章讲了模型转换、分帧与后处理，以及前端加载几 MB 模型时的取舍。",
+    "quote": "音频不出浏览器，隐私和账单都省了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1251686",
+    "published": "2026-10-26",
+    "uid": "08a179d54a3a9e8b5428a46d91659636"
+  },
+  {
+    "title": "Later：截图不用整理，开源视觉模型自动变待办",
+    "content": "安卓应用 Later 抓住一个真实痛点：相册里全是「以后再看」的截图，然后就没有以后了。它在后台用开源视觉模型读每张新截图，直接转成对应动作——活动海报变日历事件、电费单变缴费提醒、周一前交表变待办、咖啡馆变地图链接，银行验证码则直接跳过不存。晚上 8 点一条通知汇总当天 12 张截图，一键处理。",
+    "quote": "截图一时爽，整理火葬场，现在 AI 替你烧。",
+    "source": "Dev.to",
+    "url": "https://dev.to/phoenix1808/later-keep-screenshotting-an-open-weight-model-turns-your-screenshots-into-one-tap-actions-igi",
+    "published": "2026-10-26",
+    "uid": "b48a4da05a0ff74356e9367c0e504ca7"
+  },
+  {
+    "title": "HyCanvas 从 ELv2 换到 AGPL：一次许可证取舍",
+    "content": "HyCanvas 是浏览器里的设计工具，对标 Canva，单个 Go 二进制内嵌前端，只依赖 PostgreSQL。作者解释 v0.3.17 起许可证从 Elastic License 2.0 改为 AGPL-3.0-only：ELv2 限制太多、社区不认，AGPL 既保证自托管自由，又能防止云厂商直接拿去做托管服务卖钱。文章也谈了 CLA 和商业授权怎么安排。",
+    "quote": "许可证选得好，云厂商一分钱薅不到。",
+    "source": "Dev.to",
+    "url": "https://dev.to/dev-sahoo/we-relicensed-hycanvas-from-elv2-to-agpl-heres-why-iek",
+    "published": "2026-10-26",
+    "uid": "b5688c177f9637ddfe00675fcc608341"
+  },
+  {
+    "title": "GnuWin32：让 Claude Code 在 Windows 上不缺工具",
+    "content": "在 Windows 上跑 Claude Code 常遇到一种隐蔽失败：命令能启动，但一旦调用 grep、sed、find、awk 就报错——因为它默认按类 Unix 环境找工具。作者用 GnuWin32 把常用 GNU 工具装进 PATH，并调整 shell 配置，让 Claude Code 在 Windows 上不再「缺工具」。文中给了下载、路径设置和验证步骤，也提醒注意版本冲突与编码问题。",
+    "quote": "模型不缺脑子，缺的是 grep。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/apachecn/p/23431166",
+    "published": "2026-10-26",
+    "uid": "f91b91d4e4e137128fee10a1ea008149"
+  },
+  {
+    "title": "Show HN：把员工塞进标普 500 市值气泡里",
+    "content": "作者把美国大公司的员工数直接画进市值气泡图：泡泡按市值定大小，里面塞满代表员工的小点，一眼就能看出各家「人均市值」的差距——英伟达、苹果这类公司泡泡巨大但人不多，零售和制造业则是大泡泡里挤满人。数据取自公开财报与市值快照，纯前端渲染，可缩放、悬停查看公司名。给「AI 替代人力」的讨论添一点数量感。",
+    "quote": "市值可以吹，员工数是吹不动的。",
+    "source": "HN Front Page",
+    "url": "https://bigwhalehunting.com/workforce/",
+    "published": "2026-10-26",
+    "uid": "1fe62fbb19df21bc8a825b9abb0709ad"
+  }
+]
