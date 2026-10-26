@@ -1,0 +1,153 @@
+# 开发者日报 · A 轨素材 · 2026-10-27
+
+共 15 条
+
+## 1. Anthropic 递交 S-1：上半年营收 163 亿美元
+
+- **来源**：HN Front Page
+- **链接**：https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm
+- **UID**：dev_6bb4c098
+
+Anthropic 正式递交 S-1 启动 IPO。2025 全年营收 45.85 亿美元，2026 上半年直接干到 162.86 亿美元；营业亏损从去年同期 21 亿收窄到 6.93 亿，算力成本半年 89 亿。807 亿净亏损主要来自可转债公允价值变动 723 亿。年付 10 万美元以上客户从 950 家涨到 1.19 万家。
+
+> 毒舌：账面亏 807 亿还敢递表，这才是真信仰。
+
+## 2. Raschka 放出 11 小时「从零构建推理模型」视频课
+
+- **来源**：HN Front Page
+- **链接**：https://magazine.sebastianraschka.com/p/building-reasoning-models
+- **UID**：dev_8d6461e8
+
+Sebastian Raschka 把《从零构建推理模型》做成了视频课：8 集、11 小时纯 coding，用 Python 和 PyTorch 从预训练模型出发，讲透评测、推理期扩展、强化学习与蒸馏。配套他今年写的 Build Reasoning Model (From Scratch)，适合想搞清 reasoning 究竟怎么训出来的人。
+
+> 毒舌：11 小时视频，比半个学位实在。
+
+## 3. 网页应该能打印：一份 @media print 实操清单
+
+- **来源**：HN Front Page
+- **链接**：https://brennenputh.me/blog/printable-websites/
+- **UID**：dev_3d25f125
+
+Brennen Puth 吐槽：网页能 Ctrl-P 就等于能打印？他自己博客打出来字号大两级、页头难看、链接一片灰。于是给了可复用的 print 样式片段——隐藏导航、正文 12pt、标题按级递减、链接强制纯黑、边框加粗，主张把「可打印」重新当成一项设计需求而非意外。
+
+> 毒舌：做了二十年网页，最后把纸给忘了。
+
+## 4. Pharo 14 发布：把活环境工具链翻新一遍
+
+- **来源**：HN Front Page
+- **链接**：https://pharo.org/news/2026-10-26-Pharo14Release.html
+- **UID**：dev_9bc1050c
+
+Pharo 14 发布。这个 MIT 许可的纯面向对象语言继续押注活环境，本次重点在工具现代化：Mission Control 与 Pulse 取代老 Spotter，重做调试器和代码浏览，语法依旧一张明信片写得完——没有构造函数、没有类型声明、没有接口，全是对象和消息。
+
+> 毒舌：Smalltalk 的魂，还活在小圈子里。
+
+## 5. PaperPilot：纯 Rust 本地 PDF 引擎，零云端
+
+- **来源**：HN Front Page
+- **链接**：https://github.com/KrushnaVardhanReddy/PaperPilot
+- **UID**：dev_e8059ff2
+
+HN 首页 211 分的 PaperPilot：纯 Rust 写的本地 PDF 引擎，可编译成 WASM 跑在浏览器里，同时暴露 MCP 接口给 AI 调用，主打零云端。定位是「文档的本地 AI 副驾」——解析、检索、问答全在本机完成，文件不出设备。目前 500 多星，刚起步。
+
+> 毒舌：PDF 不出本地，AI 照样翻页。
+
+## 6. ECC：28.9 万星的 agent harness 优化系统
+
+- **来源**：GitHub Trending Daily
+- **链接**：https://github.com/affaan-m/ECC
+- **UID**：dev_a8aedd12
+
+affaan-m/ECC 冲到 28.9 万星：一套给 agent harness 做性能优化的系统，把 skills、instincts、memory、安全策略和「研究优先」的开发流打包在一起，兼容 Claude Code、Codex、Opencode、Cursor。JavaScript 实现，今年 1 月建仓，是 harness 层目前最火的工程化尝试。
+
+> 毒舌：模型能力不够，就把脚手架堆到天花板。
+
+## 7. Agent-Reach：给 AI 一双能看全网的眼睛，10.3 万星
+
+- **来源**：GitHub Trending Daily
+- **链接**：https://github.com/Panniantong/Agent-Reach
+- **UID**：dev_c916a5a1
+
+Panniantong/Agent-Reach 10.3 万星：一条 CLI 让 agent 读取 Twitter、Reddit、YouTube、GitHub、B 站、小红书，主打零 API 费用、能过登录墙、返回干净结构化数据。Python 实现，MIT 许可，刚被 Trendshift 评为当日 Trending 第一。
+
+> 毒舌：API 要收费？那就让 agent 自己爬。
+
+## 8. Hallmark：拒绝 AI 味的设计 skill，3.5 万星
+
+- **来源**：GitHub Trending Daily
+- **链接**：https://github.com/Nutlope/hallmark
+- **UID**：dev_b2bbab31
+
+Together AI 出的 Hallmark，一个专治「AI 味」的设计 skill，给 Claude Code、Codex、Cursor、OpenCode 用。48 套主题按材质选，先按访客来干什么布局，再在真浏览器里按机器味特征 lint：每个标题顶上挂小标签、标题里塞一个彩色词、页尾硬加订阅框，都算违规。
+
+> 毒舌：AI 做的网页，一眼就认得出是 AI 做的。
+
+## 9. NVIDIA 开源 SkillSpector：给 agent skill 杀毒
+
+- **来源**：GitHub Trending Daily
+- **链接**：https://github.com/NVIDIA/SkillSpector
+- **UID**：dev_02d275b9
+
+英伟达开源 SkillSpector：专门扫 AI agent skill 的安全扫描器，检测漏洞、恶意模式、提示词注入、数据外泄与供应链风险，在 Claude Code、Codex、MCP skill 装上之前先过一遍。Python 实现，2.19 万星——skill 生态野蛮生长到需要杀毒软件了。
+
+> 毒舌：装 skill 前先杀毒，这生态真健康。
+
+## 10. microduck：一只 Rust 双足机器鸭，1.2 万星
+
+- **来源**：GitHub Trending Daily
+- **链接**：https://github.com/pollen-robotics/microduck
+- **UID**：dev_979c260a
+
+Pollen Robotics 开源 microduck：Rust 写的双足机器鸭，1.2 万星。项目走开源硬件路线，提供运动控制与步态代码，方便研究者和小团队拿它做低成本双足实验，不必从零调舵机和 IMU。可爱归可爱，走路还是得摔几百次才能稳。
+
+> 毒舌：会走路的鸭子，比会聊天的模型稀罕。
+
+## 11. suga：一个 Go 写的个人 agent，死磕长会话
+
+- **来源**：V2EX Share
+- **链接**：https://www.v2ex.com/t/1251957
+- **UID**：dev_3891064c
+
+作者自述写了 suga：单 Go 二进制的个人 coding agent，Windows、Linux、macOS 都有构建，明确不打算替代 Claude Code。他花力气最多的是长会话——上下文满了不做摘要压缩而是分段，新段带固定结构的交接包，硬约束逐字保留，专门验证换段之后第一轮的约束还在不在。
+
+> 毒舌：上下文一满就失忆，这才是真痛点。
+
+## 12. Rust 写的 MCP 执法网关：两个判官吵架怎么办
+
+- **来源**：V2EX Share
+- **链接**：https://www.v2ex.com/t/1252038
+- **UID**：dev_7706a628
+
+有人用 Rust 做了个 MCP 执法网关，专治两个判官结论不一致：同一越权场景（coding agent 想在 PR 里夹带无关改动），Jev 给 0.94 走 Accept、授权挂起、DENY；d3 给 0.70 走 Hold、不改、ALLOW。作者要解决的是决策模型冲突时如何安全地默认拒绝。
+
+> 毒舌：两个 AI 意见不合，锅还是人背。
+
+## 13. 60 万参数象棋模型挑战皮卡鱼：0 比 10 被零封
+
+- **来源**：V2EX Share
+- **链接**：https://www.v2ex.com/t/1251872
+- **UID**：dev_79d7348e
+
+V2EX 网友用循环 transformer 训了个 60 万参数的中国象棋模型，迭代到 v18，跟开源引擎皮卡鱼对战 0:10 被零封。他先在五子棋上跑通流程，再把同一套思路搬到象棋，边上班边调参，承认差距还很大，但打算继续磨。
+
+> 毒舌：60 万参数挑战皮卡鱼，勇气可嘉。
+
+## 14. 180 个测试：无状态 MCP 到底是不是 REST
+
+- **来源**：Dev.to
+- **链接**：https://dev.to/aws/is-stateless-mcp-just-rest-i-ran-180-tests-to-find-out-5dib
+- **UID**：dev_31ddce12
+
+AWS 的 Edoardo Dusi 用 180 个测试验证「无状态 MCP 就是 REST」这句口号。2026 年 7 月 MCP 规范取消握手与 session header，tools/list 不再随连接变化，需要跨调用状态的服务器得自己发 handle，当普通工具参数传回来。结论是像但不等价。
+
+> 毒舌：口号很爽，180 个测试更爽一点。
+
+## 15. CLAUDE.md 怎么写才适合无人值守 agent
+
+- **来源**：Dev.to
+- **链接**：https://dev.to/aobaworks/claudemd-best-practices-a-template-for-unattended-agents-1d3j
+- **UID**：dev_5ee30f1a
+
+一篇讲 CLAUDE.md 最佳实践的模板文：文件要短，只写模型从代码里看不出来的东西，目标是一个零上下文的新 agent 也能直接开工。核心是把约定、边界和验证方式显式写下来，而不是堆一堆模型早就会的通用编程常识。
+
+> 毒舌：写给 AI 的文档，比写给人看的更考功力。
