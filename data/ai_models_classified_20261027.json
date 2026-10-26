@@ -1,0 +1,200 @@
+[
+  {
+    "uid": "b96ec42053d38873495ca2c373d9f419",
+    "title": "微软向约四分之一员工发买断，涉及约 6 万人",
+    "content": "据西雅图时报，微软向约四分之一、接近 6 万名员工提供自愿买断方案，比例为近年最大。该计划今年 4 月已有风声，如今落地：接受者拿钱走人，不接受的继续留下，公司避免直接裁员。HN 讨论集中在两点——25% 是否意味着更多岗位被 AI 与自动化替代，以及大批同事同时流入就业市场时，谁还能顺利跳槽。",
+    "quote": "买断听着体面，本质是让 6 万人自己按下离职键。",
+    "source": "HN Front / Seattle Times",
+    "url": "https://news.ycombinator.com/item?id=50245524",
+    "published": "2026-10-27",
+    "vendor": "other",
+    "direction": "应用/落地"
+  },
+  {
+    "uid": "4af1c32a4eff882f6b998bffd3812e64",
+    "title": "MCP 服务器从 15 个工具砍到 4 个：schema 缩 88%",
+    "content": "GitHub 官方 MCP 服务器 93 个工具定义就要吃掉约 5.5 万 token，20 万上下文还没开工就没了四分之一。作者按 AWS 工具设计手册重写成本排查 MCP：同一账号同一问题，工具调用从 7 次降到 2 次，schema 缩小 88%。做法是按任务合并工具、压缩描述、把约束写进 schema，而不是继续堆工具。",
+    "quote": "工具越多越像全能，账单越像无底洞。",
+    "source": "Dev.to",
+    "url": "https://dev.to/aws-builders/mcp-token-cost-i-cut-my-mcp-server-from-15-tools-to-4-cek",
+    "published": "2026-10-27",
+    "vendor": "amazon",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "6f6bef2bcc88fa87d50fd7f9f3335545",
+    "title": "JetBrains 开源 Thinkrail：每个 agent 一个 git worktree",
+    "content": "JetBrains 以 Apache-2.0 开源 agentic IDE Thinkrail。核心三条：每个 workspace 是独立 git worktree 加分支，agent 并行干活不碰你的 checkout；项目真相写进一组 agent 自己维护的 SPEC.md 图，能跨 session 存活；没有账号体系。作者认为这是「写代码的是一群 agent」时 IDE 该有的样子。",
+    "quote": "终于有人把隔离做进 git，而不是写进提示词。",
+    "source": "Dev.to",
+    "url": "https://dev.to/slabb/jetbrains-open-sourced-an-agentic-ide-where-agents-never-touch-your-checkout-22hc",
+    "published": "2026-10-27",
+    "vendor": "other",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "1c8506b65d7ad621361debff8efdd180",
+    "title": "V2EX：coding 白痴用 vibe coding 给工厂上线了 ERP",
+    "content": "一位开发者讲朋友的经历：7 月还是 coding 白痴，几个月 vibe coding 后上线了能当生产工具用的工厂 ERP，流程与实际吻合，还在加模块、接硬件，需求许愿式提交。更关键的是他把 GitHub Actions、Claude 和 issue 串成闭环：员工在 ERP 里提需求生成 issue，老板批准后 Claude 改代码并自动部署，拒绝就打回，测试预览环节已被判为杀鸡用牛刀而取消。",
+    "quote": "测试环节被砍掉那一刻，勇气和风险同时到账。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1251976",
+    "published": "2026-10-27",
+    "vendor": "anthropic",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "19f0bb06fa5242afa99dd1ceaa66f9dd",
+    "title": "Cindy：把 Claude Code 和 Codex 塞进同一个开源 agent",
+    "content": "开源 AI Agent Cindy 把 Claude Code、Codex 等多个 harness 和模型放进同一个桌面与移动端：模型和 harness 可以中途切换，工作区、记忆、技能与工具保持连续；一个任务能由不同 harness × 模型的 agent 分别规划、并行执行和复核。它跑在本地，直接用真实文件和已登录应用，也能驱动浏览器、电脑和手机，客户端 Apache-2.0。",
+    "quote": "多模型自由切换，最后考验的是你的钱包。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/makecindy/cindy",
+    "published": "2026-10-27",
+    "vendor": "anthropic",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "6acc383a1342c6e557d8b99b01c3563e",
+    "title": "OpenBot：给每个 AI 队友一间本地办公室，权限全开",
+    "content": "OpenBot 是 local-first 的桌面工作台，给每个 AI 队友独立 workspace，支持 Codex、Claude Code、Grok 等通过 ACP 接入，带任务队列、文件传输、内嵌浏览器和 agent 消息。作者警告：开发预览阶段 agent 以 danger-full-access、approvalPolicy: never 运行，能读写文件、跑命令、上网，只适合可信任务。",
+    "quote": "把权限开到最大，再指望 agent 自觉，这叫信仰。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/nightly-labs/openbot",
+    "published": "2026-10-27",
+    "vendor": "anthropic",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "9660013ea25c5cd2db9a8ecd94f88520",
+    "title": "VoiceStudio：本地开源版 ElevenLabs，646 种语言",
+    "content": "VoiceStudio 是开源的本地 ElevenLabs 替代：声音克隆、音色设计、视频配音、听写、转写和有声书，覆盖 646 种语言。默认引擎是 k2-fsa/OmniVoice，本地跑在自己的硬件上，远程服务可选；还提供本地 API 和 MCP 给 agent 调用，支持批量任务、watch folder 和配方复用。",
+    "quote": "本地克隆 646 种语言，配音演员该睡不着了。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/debpalash/VoiceStudio",
+    "published": "2026-10-27",
+    "vendor": "other",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "a5e610f3d9ffab436f967eb0f167aeb6",
+    "title": "4 张 A6000 只跑出 2 倍速：PCIe 没 NVLink 的坑",
+    "content": "4×A6000 租用机上跑 PyTorch DDP：124M 四卡只有 2.06x，355M 1.89x。所有 GPU 对都是 PHB，走 CPU 主机桥，没有 NVLink；NCCL all-reduce 只有 4.3GB/s，fp32 梯度每步 500MB，通信 170ms 压过计算 130ms。两个开关救场：bf16 梯度压缩加梯度累积 4，124M 到 3.54x、355M 3.66x。",
+    "quote": "GPU 没偷懒，是它们在 PCIe 上排队聊天。",
+    "source": "Dev.to",
+    "url": "https://dev.to/runcrate/4-gpus-2x-speed-why-pytorch-ddp-stalled-on-a-pcie-only-4x-rtx-a6000-and-two-flags-that-took-it-1ll9",
+    "published": "2026-10-27",
+    "vendor": "other",
+    "direction": "行业动态"
+  },
+  {
+    "uid": "104c15fd5895a8dddbcfddc3593bceaf",
+    "title": "RTX 5090 本地跑 DiffusionGemma：300 tok/s 但只能当玩具",
+    "content": "作者在 RTX 5090 上用 vLLM 跑 Google 的扩散语言模型 DiffusionGemma：块内并行扩散、块间自回归，体感约 300 tok/s，明显快于逐 token 生成。但生态没跟上：ollama 不支持它的 diffusion 解码，GGUF 只能走 llama.cpp 命令行，Open WebUI 的联网搜索也接不上。结论是值得用来验证速度，还当不了日常主力。",
+    "quote": "速度快到惊艳，生态烂到劝退，典型的先锋税。",
+    "source": "Dev.to",
+    "url": "https://dev.to/kohei_wada/running-diffusiongemma-locally-on-an-rtx-5090-with-vllm-the-one-time-pioneer-cost-of-bleeding-edge-1gml",
+    "published": "2026-10-27",
+    "vendor": "google",
+    "direction": "行业动态"
+  },
+  {
+    "uid": "8b66580df050d215779fdf49f61af906",
+    "title": "为什么部署模型比训练模型更难",
+    "content": "训练是有终点的批处理：一堆 GPU 跑完拿 checkpoint，挂了重跑。推理是带延迟预算、成本上限和真实用户的在线系统：请求要排队、动态 batching，单请求成本随输入输出 token 剧烈波动，长输出能把小请求拖到 30 秒。文章认为多数团队上线六周后才发现，难点不是模型而是管道：容量规划、超时、降级、缓存与可观测性。",
+    "quote": "训练烧钱有账单，推理烧钱有用户投诉。",
+    "source": "Dev.to",
+    "url": "https://dev.to/la-peace/why-is-serving-a-model-harder-than-training-one-46kk",
+    "published": "2026-10-27",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "4f4b8c74259c9e9904607027218e573d",
+    "title": "一个 token 进 MoE 层，到底发生了什么",
+    "content": "文章拆开 MoE 的真实机械结构：只替换 Transformer 里的 FFN，注意力和残差全共享；路由器给每个 token 打分选 top-k 专家，加权求和后回残差流。以 DeepSeek-V3 671B-A37B 为例，总参数 671B，每 token 只激活 37B，省的是算力不是显存；负载不均会触发容量因子与 token 丢弃，训练还得加辅助损失。",
+    "quote": "总参数吓人，激活参数才是你真正付的钱。",
+    "source": "Dev.to",
+    "url": "https://dev.to/syed_anzar/mixture-of-experts-what-actually-happens-when-a-token-hits-the-router-3ag6",
+    "published": "2026-10-27",
+    "vendor": "deepseek",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "ac80be65faf2af5bbca32d4c3a9badbd",
+    "title": "Agent 工具调用工程化：把 Tool Runtime 做扎实",
+    "content": "模型说出要调哪个工具，不等于工具真的跑对了。这篇把 Tool Runtime 拆成一次调用的顺序：注册、用 Zod 约定参数、校验、鉴权、判断并行还是串行、超时重试、结果写回对话。作者点名几类线上事故：参数几乎不检查就调业务接口；写操作超时后不管对面成没成功又重调一次，容易执行两遍；把报错堆栈原文塞回 Prompt；把用户自称管理员当成已鉴权。",
+    "quote": "模型选对工具只是开始，跑对一次才算本事。",
+    "source": "掘金",
+    "url": "https://juejin.cn/post/7700603865699713064",
+    "published": "2026-10-27",
+    "vendor": "other",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "3c8f242f6863c60b5f79656044d01e7f",
+    "title": "219 赞综述：用世界模型这把尺子量视频模型",
+    "content": "这篇高赞综述把视频理解与生成放进「世界模型」同一框架：把观测到的视频看作潜在时序世界的一次有损投影，再按四种操作梳理文献——读取是从视频推断世界属性，写入是按条件合成视频，共享是理解与生成共用建模机制，交互是在动作与观测变化下预测并更新世界状态。作者指出研究重心正从片段识别与画质，转向持久状态、可控演化、物理因果与交互评测。",
+    "quote": "能生成一分钟不崩的视频，和懂这个世界，是两件事。",
+    "source": "HuggingFace Papers",
+    "url": "https://huggingface.co/papers/2610.31668",
+    "published": "2026-10-27",
+    "vendor": "other",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "8aa0d150bc2c520bae0d1a4049a0a2e7",
+    "title": "TenetBench：把职业伦理条款拆成 3433 道冲突题",
+    "content": "LLM 助手可能悄悄帮用户违反职业伦理，而按「有害类别」打的评测分看不出具体踩了哪一条。TenetBench 把 15 部俄语职业伦理守则拆成 3433 个冲突请求，每个配一个只差合法性的良性孪生题，流程自动化，加一部守则就长一批题。实测 14 个模型与推理模式组合，11 个在多数冲突请求上直接产出违规内容且基本不警告，开推理能把拒绝率大约减半。",
+    "quote": "会背守则不算合规，知道哪句话踩线才算。",
+    "source": "HuggingFace Papers",
+    "url": "https://huggingface.co/papers/2610.29477",
+    "published": "2026-10-27",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "05780bb641a33bff6089070f8fbd0b8b",
+    "title": "用稀疏自编码器把 AI 文本检测器变成可审计的白盒",
+    "content": "AI 文本检测器正被用在同行评审、教育、招生、新闻与内容审核里，但最强的是不透明的微调分类器，可解释的文体特征分类器又明显更差。这篇论文在检测器残差流上训练稀疏自编码器，给每个特征自动打语义标签，只保留描述通过保真度阈值的特征，再在这些人类可读的概念上训练轻量分类器。结果既高度可解释，分布外文本表现也超过神经网络与文体学基线。",
+    "quote": "判你 AI 写的，总得说清是哪句话露的马脚。",
+    "source": "HuggingFace Papers",
+    "url": "https://huggingface.co/papers/2610.30006",
+    "published": "2026-10-27",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "4285ba0ee46608beb500a896c76d39db",
+    "title": "MMVistaReason：多模态推理的开源后训练配方",
+    "content": "开源多模态推理模型依赖大规模推理监督，但数据质量参差、难度不均、跨域互相干扰，后训练很难复现。MMVistaReason 给出三件套：覆盖分析型与真实世界两组能力；用分阶段清洗、难度感知的级联教师蒸馏和按答案似然挑轨迹，构造 52.8 万条 SFT 数据，再做规模相关的前沿过滤得到 6.3 万条 RL 数据；最后先训多个 RL 专家，用多教师同策略蒸馏合并能力。",
+    "quote": "堆数据不叫配方，知道哪条轨迹该扔才叫。",
+    "source": "HuggingFace Papers",
+    "url": "https://huggingface.co/papers/2610.01352",
+    "published": "2026-10-27",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "567bc564aa27f50737c19d6692902b78",
+    "title": "《Attention Is Not What You Need》：用 Grassmann 流替代注意力",
+    "content": "论文重新追问：显式自注意力对强性能与推理真的必要吗？作者把多头注意力看作一种张量提升，把隐向量映射到成对交互的高维空间再用梯度下降约束，表达力强但数学上不透明。他们提出无注意力架构 Causal Grassmann 层：先线性降维，用 Plücker 坐标把局部词对编码成 Grassmann 流形上的二维子空间，再门控混回隐状态，让信息通过低秩子空间的多尺度形变传播。",
+    "quote": "注意力不是必需品，只是大家最先学会的那把锤子。",
+    "source": "HN Front / arXiv",
+    "url": "https://arxiv.org/abs/2512.19428",
+    "published": "2026-10-27",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "a8db05fa68f2cce9c8bdc274afc17c68",
+    "title": "V2EX：23 岁生日总结，这一年被 AI 占满",
+    "content": "一位开发者写 23 岁生日总结，说今年几乎所有事都围着 AI 转，博客产量断崖式下降，仅剩的几篇也都与 AI 相关；更让他警惕的是 AI 写文章写代码太顺手，自己的文笔和思考能力出现下滑。他仍盘点出两次日本自由行等收获，但通篇底色是：当产出变得廉价，人反而要重新想清楚哪些事值得亲手做。",
+    "quote": "AI 把写作变便宜了，顺手也把思考变便宜了。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1252063",
+    "published": "2026-10-27",
+    "vendor": "other",
+    "direction": "行业动态"
+  }
+]
