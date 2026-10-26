@@ -1,0 +1,218 @@
+[
+  {
+    "title": "Anthropic 递交 S-1：上半年营收 163 亿美元",
+    "content": "Anthropic 正式递交 S-1 启动 IPO。2025 全年营收 45.85 亿美元，2026 上半年直接干到 162.86 亿美元；营业亏损从去年同期 21 亿收窄到 6.93 亿，算力成本半年 89 亿。807 亿净亏损主要来自可转债公允价值变动 723 亿。年付 10 万美元以上客户从 950 家涨到 1.19 万家。",
+    "quote": "账面亏 807 亿还敢递表，这才是真信仰。",
+    "source": "HN Front Page",
+    "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+    "published": "2026-10-27",
+    "uid": "17b4daf4dd8dbb528be5101e5255963b"
+  },
+  {
+    "title": "Raschka 放出 11 小时「从零构建推理模型」视频课",
+    "content": "Sebastian Raschka 把《从零构建推理模型》做成了视频课：8 集、11 小时纯 coding，用 Python 和 PyTorch 从预训练模型出发，讲透评测、推理期扩展、强化学习与蒸馏。配套他今年写的 Build Reasoning Model (From Scratch)，适合想搞清 reasoning 究竟怎么训出来的人。",
+    "quote": "11 小时视频，比半个学位实在。",
+    "source": "HN Front Page",
+    "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+    "published": "2026-10-27",
+    "uid": "5d165378984a59205d1e619b91dcb413"
+  },
+  {
+    "title": "网页应该能打印：一份 @media print 实操清单",
+    "content": "Brennen Puth 吐槽：网页能 Ctrl-P 就等于能打印？他自己博客打出来字号大两级、页头难看、链接一片灰。于是给了可复用的 print 样式片段——隐藏导航、正文 12pt、标题按级递减、链接强制纯黑、边框加粗，主张把「可打印」重新当成一项设计需求而非意外。",
+    "quote": "做了二十年网页，最后把纸给忘了。",
+    "source": "HN Front Page",
+    "url": "https://brennenputh.me/blog/printable-websites/",
+    "published": "2026-10-27",
+    "uid": "e5aaa9ebac696ce2a9c106a215faa8b7"
+  },
+  {
+    "title": "Pharo 14 发布：把活环境工具链翻新一遍",
+    "content": "Pharo 14 发布。这个 MIT 许可的纯面向对象语言继续押注活环境，本次重点在工具现代化：Mission Control 与 Pulse 取代老 Spotter，重做调试器和代码浏览，语法依旧一张明信片写得完——没有构造函数、没有类型声明、没有接口，全是对象和消息。",
+    "quote": "Smalltalk 的魂，还活在小圈子里。",
+    "source": "HN Front Page",
+    "url": "https://pharo.org/news/2026-10-26-Pharo14Release.html",
+    "published": "2026-10-27",
+    "uid": "37aaa15c5800841fb87e16020b4e1b53"
+  },
+  {
+    "title": "PaperPilot：纯 Rust 本地 PDF 引擎，零云端",
+    "content": "HN 首页 211 分的 PaperPilot：纯 Rust 写的本地 PDF 引擎，可编译成 WASM 跑在浏览器里，同时暴露 MCP 接口给 AI 调用，主打零云端。定位是「文档的本地 AI 副驾」——解析、检索、问答全在本机完成，文件不出设备。目前 500 多星，刚起步。",
+    "quote": "PDF 不出本地，AI 照样翻页。",
+    "source": "HN Front Page",
+    "url": "https://github.com/KrushnaVardhanReddy/PaperPilot",
+    "published": "2026-10-27",
+    "uid": "fc42894bd44589fc82a5c0c5ca2ece22"
+  },
+  {
+    "title": "ECC：28.9 万星的 agent harness 优化系统",
+    "content": "affaan-m/ECC 冲到 28.9 万星：一套给 agent harness 做性能优化的系统，把 skills、instincts、memory、安全策略和「研究优先」的开发流打包在一起，兼容 Claude Code、Codex、Opencode、Cursor。JavaScript 实现，今年 1 月建仓，是 harness 层目前最火的工程化尝试。",
+    "quote": "模型能力不够，就把脚手架堆到天花板。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/affaan-m/ECC",
+    "published": "2026-10-27",
+    "uid": "f904d51bc12b996dc0685fa45bb691ab"
+  },
+  {
+    "title": "Agent-Reach：给 AI 一双能看全网的眼睛，10.3 万星",
+    "content": "Panniantong/Agent-Reach 10.3 万星：一条 CLI 让 agent 读取 Twitter、Reddit、YouTube、GitHub、B 站、小红书，主打零 API 费用、能过登录墙、返回干净结构化数据。Python 实现，MIT 许可，刚被 Trendshift 评为当日 Trending 第一。",
+    "quote": "API 要收费？那就让 agent 自己爬。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/Panniantong/Agent-Reach",
+    "published": "2026-10-27",
+    "uid": "e6d3ff0a8468e33420a97c411fa30ace"
+  },
+  {
+    "title": "Hallmark：拒绝 AI 味的设计 skill，3.5 万星",
+    "content": "Together AI 出的 Hallmark，一个专治「AI 味」的设计 skill，给 Claude Code、Codex、Cursor、OpenCode 用。48 套主题按材质选，先按访客来干什么布局，再在真浏览器里按机器味特征 lint：每个标题顶上挂小标签、标题里塞一个彩色词、页尾硬加订阅框，都算违规。",
+    "quote": "AI 做的网页，一眼就认得出是 AI 做的。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/Nutlope/hallmark",
+    "published": "2026-10-27",
+    "uid": "546c94e26de0b566013accdd8debdc38"
+  },
+  {
+    "title": "NVIDIA 开源 SkillSpector：给 agent skill 杀毒",
+    "content": "英伟达开源 SkillSpector：专门扫 AI agent skill 的安全扫描器，检测漏洞、恶意模式、提示词注入、数据外泄与供应链风险，在 Claude Code、Codex、MCP skill 装上之前先过一遍。Python 实现，2.19 万星——skill 生态野蛮生长到需要杀毒软件了。",
+    "quote": "装 skill 前先杀毒，这生态真健康。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/NVIDIA/SkillSpector",
+    "published": "2026-10-27",
+    "uid": "4fe247280f0b810b427ca7a965aa1717"
+  },
+  {
+    "title": "microduck：一只 Rust 双足机器鸭，1.2 万星",
+    "content": "Pollen Robotics 开源 microduck：Rust 写的双足机器鸭，1.2 万星。项目走开源硬件路线，提供运动控制与步态代码，方便研究者和小团队拿它做低成本双足实验，不必从零调舵机和 IMU。可爱归可爱，走路还是得摔几百次才能稳。",
+    "quote": "会走路的鸭子，比会聊天的模型稀罕。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/pollen-robotics/microduck",
+    "published": "2026-10-27",
+    "uid": "3aa1ba3eab4440c629e55eebe056103d"
+  },
+  {
+    "title": "suga：一个 Go 写的个人 agent，死磕长会话",
+    "content": "作者自述写了 suga：单 Go 二进制的个人 coding agent，Windows、Linux、macOS 都有构建，明确不打算替代 Claude Code。他花力气最多的是长会话——上下文满了不做摘要压缩而是分段，新段带固定结构的交接包，硬约束逐字保留，专门验证换段之后第一轮的约束还在不在。",
+    "quote": "上下文一满就失忆，这才是真痛点。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1251957",
+    "published": "2026-10-27",
+    "uid": "1b340b63fab3782347de652375fd6190"
+  },
+  {
+    "title": "Rust 写的 MCP 执法网关：两个判官吵架怎么办",
+    "content": "有人用 Rust 做了个 MCP 执法网关，专治两个判官结论不一致：同一越权场景（coding agent 想在 PR 里夹带无关改动），Jev 给 0.94 走 Accept、授权挂起、DENY；d3 给 0.70 走 Hold、不改、ALLOW。作者要解决的是决策模型冲突时如何安全地默认拒绝。",
+    "quote": "两个 AI 意见不合，锅还是人背。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1252038",
+    "published": "2026-10-27",
+    "uid": "9fd96f6e015027eff40e0f9bce3dc735"
+  },
+  {
+    "title": "180 个测试：无状态 MCP 到底是不是 REST",
+    "content": "AWS 的 Edoardo Dusi 用 180 个测试验证「无状态 MCP 就是 REST」这句口号。2026 年 7 月 MCP 规范取消握手与 session header，tools/list 不再随连接变化，需要跨调用状态的服务器得自己发 handle，当普通工具参数传回来。结论是像但不等价。",
+    "quote": "口号很爽，180 个测试更爽一点。",
+    "source": "Dev.to",
+    "url": "https://dev.to/aws/is-stateless-mcp-just-rest-i-ran-180-tests-to-find-out-5dib",
+    "published": "2026-10-27",
+    "uid": "494f1b68cbf2ab74b670e59093805821"
+  },
+  {
+    "title": "CLAUDE.md 怎么写才适合无人值守 agent",
+    "content": "一篇讲 CLAUDE.md 最佳实践的模板文：文件要短，只写模型从代码里看不出来的东西，目标是一个零上下文的新 agent 也能直接开工。核心是把约定、边界和验证方式显式写下来，而不是堆一堆模型早就会的通用编程常识。",
+    "quote": "写给 AI 的文档，比写给人看的更考功力。",
+    "source": "Dev.to",
+    "url": "https://dev.to/aobaworks/claudemd-best-practices-a-template-for-unattended-agents-1d3j",
+    "published": "2026-10-27",
+    "uid": "6d27e87bebd7f46a5c286fa7edc8f131"
+  },
+  {
+    "title": "Castellan：让 AI agent 打一局即时战略",
+    "content": "一个专为 agent 设计的浏览器 RTS：每回合要在有限预算里决定出兵、侦查还是攒资源，快而烂和慢而准都会被惩罚。作者想用它测 agent 在成本、速度、智能三者之间的取舍，比跑分更接近真实决策压力，适合当 agent 评测沙盒。",
+    "quote": "让 agent 打游戏不稀奇，输了起来怪预算才叫评测",
+    "source": "Hacker News",
+    "url": "https://rts.emersoftware.cl/",
+    "published": "2026-10-27",
+    "uid": "8c177087d5aba36376727cfd2fc5aa1b"
+  },
+  {
+    "title": "vLLM 工具调用准确率是怎么修好的",
+    "content": "Ubercloud 的排查记录：同一模型走 vLLM 自部署，function calling 的成功率明显低于官方 API，问题出在模板、解析与流式拼接的细节上。文章把定位过程和修法都摊开了，自己托管模型跑 agent 的人基本都会踩这坑。",
+    "quote": "工具调用错一个括号，agent 当场变人工智障",
+    "source": "Hacker News",
+    "url": "https://www.ubicloud.com/blog/fixing-tool-call-accuracy-in-vllm",
+    "published": "2026-10-27",
+    "uid": "b5198b09385b67f45590573872a583e0"
+  },
+  {
+    "title": "两美元的 ESP32-S3 跑 SIMD 加速视觉",
+    "content": "作者在 ESP32-S3 上用 SIMD 指令把计算机视觉跑到可用的帧率，从指令集特性到实际 pipeline 都写了。意义在于：很多「必须上云」的视觉任务，其实一颗两美元的单片机加正确的手写内核就够了，成本和功耗差着好几个数量级。",
+    "quote": "两块钱的单片机跑视觉，云端 GPU 听了想涨租",
+    "source": "Hacker News",
+    "url": "https://shraiwi.com/blog/simd-fast-esp32s3/",
+    "published": "2026-10-27",
+    "uid": "9da3dac6afa3d52615169b5de5ae699f"
+  },
+  {
+    "title": "一个学生把 AI 背后的全球数据劳工画成了地图",
+    "content": "布朗大学学生追踪了支撑大模型的标注、清洗、评估劳动链条：这些工作散落在肯尼亚、菲律宾、委内瑞拉等地，按件计酬、随项目来去。报道的价值在于把「AI 很便宜」这句话的另一半成本摊开给你看。",
+    "quote": "算力故事讲完了，该讲讲给数据打标签的人了",
+    "source": "Hacker News",
+    "url": "https://www.brown.edu/news/2026-10-26/ai-data-workers",
+    "published": "2026-10-27",
+    "uid": "efad5585881aea332ee47e9f605aec9f"
+  },
+  {
+    "title": "没有数据库的登录系统：把用户数据塞进 Vercel Blob",
+    "content": "作者给副业项目做账号，不想为一个登录页开数据库，于是用 Vercel Blob 的私有存储存用户记录，配合签名 URL 和 Next.js 服务端完成鉴权与同步。文章把边界条件、并发写和安全性都交代了，适合极小的项目，也适合当反面教材读。",
+    "quote": "没有数据库的登录，是把数据库外包给了账单",
+    "source": "Dev.to",
+    "url": "https://dev.to/ethanbennett_dev/auth-user-data-with-zero-database-building-login-on-vercel-blob-private-store-in-nextjs-3gel",
+    "published": "2026-10-27",
+    "uid": "7cee4657a55b138a2d6bb4fe66157a62"
+  },
+  {
+    "title": "ICMPv6 逐类型清单：防火墙到底该放哪些",
+    "content": "IPv6 里 ICMPv6 承担了邻居发现、路由通告、分片等基础职能，一刀切封掉等于自断网络。这篇按 type 逐条列出该放行、该限速、该丢弃的类别，附常见故障现象对照，可以直接当机房防火墙策略的检查表用。",
+    "quote": "IPv6 一断先别骂运营商，先看你 ICMPv6 放没放行",
+    "source": "Dev.to",
+    "url": "https://dev.to/ipye_com/icmpv6-type-by-type-a-reference-for-what-a-firewall-must-allow-alg",
+    "published": "2026-10-27",
+    "uid": "8c41407c458371a9ddf693188891af06"
+  },
+  {
+    "title": "不看谁付了钱：用公开证据给 257 个 AI 工具排名",
+    "content": "搜「某场景最好的 AI 工具」，出来的基本是按付费展位和联盟佣金排的目录。作者换了个口径：只采信公开可验证的证据——文档完整度、更新频率、定价透明度、真实用户反馈，把 257 个工具重排了一遍，方法论比榜单本身更值得看。",
+    "quote": "榜单不看出价看证据，同行看了直呼不讲武德",
+    "source": "Dev.to",
+    "url": "https://dev.to/aiusecases/ranking-257-ai-tools-by-public-evidence-instead-of-paid-placement-1l0l",
+    "published": "2026-10-27",
+    "uid": "d8272e23ddab1b61ab22941fdc63c77f"
+  },
+  {
+    "title": "DeckCraft：纯 Rust 写的开源 PPTX 工具",
+    "content": "不用订阅、不用注册、文件留在本机的演示文稿软件，能在线编辑也能装到 macOS / Windows / Linux。底层纯 Rust，支持打开和保存标准 PPTX，图表、矢量形状、主题、母版都能处理。被订阅制办公软件恶心过的人可以试试。",
+    "quote": "终于有人想起来，PPT 不该按月收费",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1252051",
+    "published": "2026-10-27",
+    "uid": "34a1bbe298095a939a73fe4daf5e0e12"
+  },
+  {
+    "title": "sniffy：Go + Wails 写的跨平台抓包工具",
+    "content": "Windows / macOS / Linux 三端的开源抓包与接口调试工具，Apache 2.0。作者说自己前端能力一直是短板，这个念头压了三年，靠 LLM 才用 Go + Wails v3 + React 真正做出来。看工具本身，也看一个「非前端」怎么把桌面 GUI 交付出去。",
+    "quote": "前端菜不是问题，问题是没 LLM 的那三年",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1251819",
+    "published": "2026-10-27",
+    "uid": "c4ec3fc4cd280af72877f99409c2a3f5"
+  },
+  {
+    "title": "Moppet：会自己动手清理的 macOS 桌宠，删前必问",
+    "content": "macOS 清理工具，特别之处是内置一个 Codex 级 agent：你说「清理浏览器缓存」，它先扫描列出清单，等你批准才删。沙箱、审批策略、补丁应用、会话恢复全是自己实现的，另外挂了 23 个工具的 MCP 服务端。是「有动手权的 agent 该怎么做权限」的现成样本。",
+    "quote": "会自己动手，删之前还会问一句，比多数运维有礼貌",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1252028",
+    "published": "2026-10-27",
+    "uid": "8589e28da384cc113766ab8f5cd1a297"
+  }
+]
