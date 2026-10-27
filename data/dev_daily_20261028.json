@@ -1,0 +1,218 @@
+[
+  {
+    "title": "Genie 4 发布：世界模型自带音效和对话",
+    "content": "DeepMind 10 月 27 日发布 Genie 4：原生多模态实时世界模型，画面、环境音与人物语音一起生成，能用自然语言随时改天气、换机位、加人。Gemini Omni 负责真实世界的物理与外观，Gemini 3.8 Flash 在循环里拆解多步目标并核对。目前仅向 trusted testers 开放预览，之后才给 AI Ultra 订阅者在 Project Genie 试用。",
+    "quote": "世界模型都会配音了，离骗过耳朵只差一步。",
+    "source": "HN Front Page",
+    "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+    "published": "2026-10-28",
+    "uid": "75f2c1a1ae0152f9811c0cd7ffd8475f"
+  },
+  {
+    "title": "法官认定 Anthropic 用盗版书训练 Claude",
+    "content": "斯坦福校报报道：2026 年 5 月联邦法官 Alsup 认定 Anthropic 从 LibGen、PiLiMi 等影子图书馆下载盗版书训练 Claude，涉及十余位斯坦福教授。15 亿美元和解覆盖近 50 万部作品，约每部 3000 美元。Tobias Wolff 等 28 位作者嫌少，另案索赔每部最高 15 万美元。合法购书训练仍算合理使用。",
+    "quote": "先盗版后赔钱，赔完还顺手把合理使用定了。",
+    "source": "HN Front Page",
+    "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
+    "published": "2026-10-28",
+    "uid": "fea3fca4c2b6f8f77a5e08a5d31cf305"
+  },
+  {
+    "title": "Roblox 悄悄拖走 145GB 模型，含成人内容",
+    "content": "Open3DLab 披露：10 月 15 至 16 日，UA 标 roblox.com 的爬虫从单一 AWS 地址发 26429 次请求，34 小时读完 18926 个项目页，下走 712 个项目的 1027 个文件共 145.5GB。其中 345 个项目、62.6GB 是成人内容，423 个项目仅授权非商用。它取过 robots.txt 却不遵守。站方 18 日封禁并去信，Roblox 未回复。",
+    "quote": "连成人区都照单全收，这叫数据多样性。",
+    "source": "HN Front Page",
+    "url": "https://open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites/",
+    "published": "2026-10-28",
+    "uid": "2c1420fe2114b451b7f1d67a1f71c31a"
+  },
+  {
+    "title": "维基百科：AI 新条目占比降到 16%",
+    "content": "WikiProject AI Cleanup 2023 年 12 月成立，发起人 Ellia Lebleu 说：当年靠「stands as a testament」这类套话就能识别，2025 年后要看三段式、否定平行句，以及五分钟写完五篇长文的行为。最麻烦是引用，AI 找真来源却讲错内容极普遍。Pangram 估算，2025 年底约 20% 新条目是 AI 生成，2026 年初降到 15–16%。",
+    "quote": "用 AI 抓 AI，抓不抓得住全看谁进化快。",
+    "source": "HN Front Page",
+    "url": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
+    "published": "2026-10-28",
+    "uid": "a6325ecb728f357947fedc4c58e42c34"
+  },
+  {
+    "title": "CPython 实验性 JIT 即将被移除",
+    "content": "LWN 报道：CPython 3.13 的实验性 JIT 即将从主分支移除。指导委员会 6 月要求交 standards-track PEP，说明维护承诺与性能指标，否则删代码。作者 7 月提 PEP 836，委员会列十点质疑：平台一致性、用户可见差异、内存安全，以及兼容性测试排到 2028 年太晚。10 月 19 日作者以没有带宽为由撤回，参考实现只留链接。",
+    "quote": "「实验性」三个字，翻译过来就是不用负责。",
+    "source": "HN Front Page",
+    "url": "https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/",
+    "published": "2026-10-28",
+    "uid": "b63f03729ae514fd43355ce52232a196"
+  },
+  {
+    "title": "Tailscale SSH 被曝 11 个缺陷：授权之后能拿到 root",
+    "content": "10 月 25 日 Cyberdione Labs 公布 Tailworm 研究：Tailscale 1.104.2 与 Headscale 0.29.5 有 11 个缺陷，已入侵设备可借 Tailscale SSH 的 Unix socket 转发突破本地用户隔离，拿到目标机 root。Tailscale 承认严重，称 24 小时内修复。属授权后提权，非公网预认证 RCE。",
+    "quote": "零信任装得再像，root 守护进程一转发就漏",
+    "source": "Dev.to",
+    "url": "https://dev.to/veduis/tailscale-ssh-tailworm-flaws-root-escalation-and-hardening-34n6",
+    "published": "2026-10-28",
+    "uid": "2d0d1c01243b05b6ea303a2f5840b19c"
+  },
+  {
+    "title": "点个赞踩，Anthropic 就把整段对话存五年",
+    "content": "Anthropic 隐私文档确认：商业产品（Claude for Work、API）默认不用你的输入输出训练模型；但只要你点过赞/踩或提交反馈，整段相关对话——含内容、自定义风格、偏好与模型设置——会在后端存最多 5 年，并可能用于训练。连接器原始内容不算，除非你直接粘进对话。企业管理员可关闭成员反馈。",
+    "quote": "点个踩顺手把整段对话送进训练集，五年后见",
+    "source": "HN Front Page",
+    "url": "https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training",
+    "published": "2026-10-28",
+    "uid": "00aa3cca6d40fa1a603890f6f32df2c4"
+  },
+  {
+    "title": "这支宣传片是一个 JavaScript 函数，还带单元测试",
+    "content": "独立开发者给油价 App 做 15 秒宣传片，Claude Code 直接写了个 JavaScript 渲染器：frame(t) 返回该时刻的 SVG 帧，25fps、375 帧交给 FFmpeg 合成。于是视频有了单元测试——比如断言推送通知不能早于价格曲线到达目标。改文案、换语言、看 diff 都在代码里完成，全程没开剪辑软件。",
+    "quote": "视频都能跑单测了，甲方改需求总不能再说不清",
+    "source": "HN Front Page",
+    "url": "https://pertiller.tech/blog/my-video-written-in-code/",
+    "published": "2026-10-28",
+    "uid": "0da0bceed4e4e44921a4153168f429ed"
+  },
+  {
+    "title": "当 agent 写代码，工程师还剩下什么要懂",
+    "content": "一位重度 agent 开发者遇到 CI 报警：SonarQube 嫌 App.tsx 圈复杂度高。打开一看，30 行里有 15 个组件被 Codex 各写成一行，逻辑没错但没人看得懂。他由此提出：以后拥有一个系统，不再取决于你亲手写过它，而是「刚好懂到能发现哪里不对」，并且愿意在需要时潜到足够深。",
+    "quote": "代码不是你写的，锅还是你背，这就是 ownership",
+    "source": "HN Front Page",
+    "url": "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work",
+    "published": "2026-10-28",
+    "uid": "6a5f7b0d5fe2b9a564823ad8c18e4776"
+  },
+  {
+    "title": "人月神话在 agent 时代变成了「人机月神话」",
+    "content": "Brooks 定律在 agent 时代没有消失，只是变形了。九个 agent 也没法一个月生出孩子，串行任务依旧串行；管理人的开销变成管理 agent 的开销——仍要有人定义「完成」、审代码、抓幻觉、拼装结果。作者给出的 2026 版是：往需求不清的项目里加 agent，只会让你更快得到错误答案。",
+    "quote": "加人不会更快，加 agent 只会更快地错",
+    "source": "HN Front Page",
+    "url": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
+    "published": "2026-10-28",
+    "uid": "53d2c1ca9113dd61785719d080bb8299"
+  },
+  {
+    "title": "软件越来越烂？它以前烂得更彻底",
+    "content": "有人怀念「以前的软件更好」，作者从 1990 年用机经历反驳：蓝屏、驱动冲突、装个软件要重启三次，那才叫糟。当年软件只能压盘发货，天然有质量下限；如今发布成本趋零，代码产量涨 10 倍而错误率没降，体感自然更差。不是过去更好，是过去坏得没法比较。",
+    "quote": "怀旧滤镜一摘，蓝屏年代连吐槽的网都上不去",
+    "source": "HN Front Page",
+    "url": "https://www.bitlog.com/2026/10/27/software-may-be-getting-worse-but-it-used-to-be-horrible/",
+    "published": "2026-10-28",
+    "uid": "f89e88cd6cd9b7a6f4432f305cb05d49"
+  },
+  {
+    "title": "Gforth 1.0 发布：三十年后给 Forth 一个稳定性承诺",
+    "content": "Gforth 终于发布 1.0：明确区分永久支持与实验性词汇，文本解释器支持更多字面量写法（6k5、23%）、词汇限定与可扩展 recognizer，还补上源码定位、回溯、where 等 IDE 功能，以及多核多任务原语和状态栏。对一门 90 年代起步的 Forth 实现来说，1.0 更像一份稳定性承诺。",
+    "quote": "三十年后才发 1.0，Forth 程序员的时间观果然不同",
+    "source": "HN Front Page",
+    "url": "https://gforth.org/manual/1.0/NEWS.html",
+    "published": "2026-10-28",
+    "uid": "33b0d40208725e6ca971e587de821e64"
+  },
+  {
+    "title": "superpowers：30 万星的 agent 方法论",
+    "content": "obra/superpowers 30.6 万星、2.7 万 fork，Shell 写的 MIT 项目，2025 年 10 月建仓。它不卖模型卖流程：先问清目标，把 spec 切成能读完的小段让你签字，再产出初级工程师也能照做的实现计划，最后用 subagent 逐任务开发与审查。README 列了近 20 种 harness 装法。",
+    "quote": "方法论卖到 30 万星，代码一行没多写。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/obra/superpowers",
+    "published": "2026-10-28",
+    "uid": "eb2cae37cf24e25125b0a8604c8c240d"
+  },
+  {
+    "title": "港大 DeepTutor：把辅导做成终身 agent",
+    "content": "港大数据智能实验室的 DeepTutor 4.54 万星，Python、Apache-2.0，2025 年 12 月建仓。聊天、出题、研究、可视化、解题、课程、沉浸阅读共用一套运行时；知识库可挂 LlamaIndex、PageIndex、GraphRAG、LightRAG；记忆分 L1 痕迹、L2 摘要、L3 综合三层。最新版 v1.6.15 于 10 月 19 日发布。",
+    "quote": "终身辅导听着感人，先看它记不记得住你。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/HKUDS/DeepTutor",
+    "published": "2026-10-28",
+    "uid": "2adad1c05071ab713c0010c6c40e1e62"
+  },
+  {
+    "title": "openbot：本地桌面里养一队 AI 同事",
+    "content": "nightly-labs/openbot 2122 星，TypeScript + Electron，2026 年 8 月建仓。每个 agent 独占 workspace 与会话，可接 Codex、Claude Code、Grok CLI、Cursor 等后端，配 FIFO 队列、文件互传与内嵌浏览器。作者警告仍是开发预览，agent 默认 danger-full-access 且从不请求批准。",
+    "quote": "默认不请求批准，出了事也别找它批准。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/nightly-labs/openbot",
+    "published": "2026-10-28",
+    "uid": "bf05b37fe106d2a601796580ce590aa8"
+  },
+  {
+    "title": "QuireKit 开源：浏览器里真分页的编辑器",
+    "content": "V2EX 作者开源 QuireKit：保留 ProseMirror 的文档、事务与协同语义，把视图层换成自研排版引擎，分页、断行、光标全部自己算，用 Canvas / SVG 绘制。首日发了 125 个 npm 包（0.0.1-alpha），提供类 Word 的 Classic、块编辑器与 Markdown 编辑器，支持表格跨页、页眉页脚、DOCX 往返。核心 MIT，排版引擎为 AGPL。",
+    "quote": "分页这两个字，做起来才知道 Word 有多难抄。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1252080",
+    "published": "2026-10-28",
+    "uid": "949049aeb1eeead4bd3621d8eee0083d"
+  },
+  {
+    "title": "SoMark 开源 OXR：1.3B 三榜第一",
+    "content": "SoMark 开源 OXR：1.3B 模型把 PDF 与图片转成 Markdown / JSON，支持表格、公式、代码块等 13 类元素并带版面坐标。三项基准第一：OmniDocBench 97.18、olmOCR-Bench 87.84、DocParsingBench 87.76；单卡 RTX PRO 6000 解析 100 页约 101 秒，21 个开源模型里最快。免费 API 不用 Key。",
+    "quote": "1.3B 打赢一堆大模型，参数真不是万能。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1252155",
+    "published": "2026-10-28",
+    "uid": "c569d57b705d9ccc331d5230eb894d86"
+  },
+  {
+    "title": "Gemkit：Web Components 的 SSR 框架",
+    "content": "mantou132 给自研 Web Components 库 Gem 补上 SSR：先用 jsdom 跑通 Declarative Shadow DOM 水合，再改成字符串渲染。RealWorld 实测首屏 JS 25.9KB，SvelteKit 44KB、Nuxt 85.8KB、Next 103.5KB；SSR 吞吐 1382 req/s，SvelteKit 1437。仍是 0.x 项目。",
+    "quote": "26KB 首屏很香，0.x 版本很要命。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1252367",
+    "published": "2026-10-28",
+    "uid": "77cbcd1296291295796e194a6138bd8e"
+  },
+  {
+    "title": "把全球 2 万个 AI 岗位画成一张星图",
+    "content": "V2EX 作者把全球 AI 岗位铺成星图：一个点就是一个岗位，按研究、AI 工程、基础设施、硬件、数据、产品商业、政策合规分旋臂，可切地区、级别、方向、时间。数据来自 Greenhouse、Lever、Ashby 等招聘页，加上领英与 X 的招聘帖，现覆盖 1187 家公司、2.1 万个岗位；招聘页 6 小时更新一次。国内公司禁爬，国内岗位几乎没有。",
+    "quote": "盯着星图找饭碗，比刷招聘 App 有仪式感。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1252306",
+    "published": "2026-10-28",
+    "uid": "ed19487c80288cdb04a147f67604567c"
+  },
+  {
+    "title": "pngdeer：让 Opus 5.5 卷出一个超过 TinyPNG 的压缩库",
+    "content": "作者把电脑里的 PNG 全丢给 Opus 5.5，让它做个超过 TinyPNG 的压缩工具，反复打磨后有了 pngdeer：MIT 协议的 Rust PNG 压缩库，自动选画质，带命令行和浏览器本地运行。官方基准称同 SSIMULACRA2 画质下中位体积比 TinyPNG 小 8–12%；有用户拿 39 张图实测，体积 28.7%、画质 87.6，优于 pngquant。",
+    "quote": "让 AI 卷压缩率，最后卷出一张论文级对比表",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1252084",
+    "published": "2026-10-28",
+    "uid": "a1eff6cb052658cfd9e4d63975a2c8f8"
+  },
+  {
+    "title": "AI 把写客户端变便宜了，验证反而成了奢侈品",
+    "content": "Tw93 长文聊客户端选型：Web 省事但性能差，Electron 一致性好但每个包自带 Chromium，Tauri/Wails 用小体积换多端一致性，原生性能最好但过去学习成本高。他认为 AI 把写两套原生代码的成本打下来了，效率短板被补上，新的成本落在双端调试与验证——那正好是该由人来做的事。",
+    "quote": "AI 把写代码变便宜了，验证反而成了奢侈品",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1252101",
+    "published": "2026-10-28",
+    "uid": "d7adf84d871c3c1143e40d5ea6263457"
+  },
+  {
+    "title": "删掉 .env 不算完，密钥还在历史里",
+    "content": "git rm .env 只是新增一条「文件不存在」的记录，旧提交里的明文还在，git log --all --full-history 一查便知，fork、别人的 clone、托管平台缓存也都留着。正确顺序是先轮换数据库密码、API key、JWT 签名密钥，再谈清理历史。文章还点了 Next.js 的坑：NEXT_PUBLIC_ 前缀的变量会被打进前端 bundle。",
+    "quote": "删文件只要一秒，轮换密钥才是真活儿。",
+    "source": "Dev.to",
+    "url": "https://dev.to/anas_sheikh_2/you-deleted-the-env-file-from-git-your-secrets-are-still-public-4ki6",
+    "published": "2026-10-28",
+    "uid": "308f9500dd80fcce083789d73cb372fd"
+  },
+  {
+    "title": "监控全绿，仓库少了 4812 条订单",
+    "content": "CDC 系列第三篇列了四种零报错丢数据：故障切换后重建 slot，窗口内事件永不解码，offset 校验默认关闭；表加进 include.list 却没进 publication；TOAST 占位符 __debezium_unavailable_value 被 sink 写回；errors.tolerance=all 又没配 DLQ。订单少 4812 条时面板全绿。",
+    "quote": "仪表盘全绿的时候，最该去数一遍订单。",
+    "source": "Dev.to",
+    "url": "https://dev.to/pipelinewhiteboard/the-silent-cdc-bug-data-loss-with-no-errors-5ahh",
+    "published": "2026-10-28",
+    "uid": "5e800de940d6d87e3ee27678ae81d9e3"
+  },
+  {
+    "title": "三个 agent 互相派活，最后写了个签名账本",
+    "content": "三个 AI agent 协作做一个项目：一个构建部署，一个验证，一个做市场。靠聊天窗口传话时反复出事——上下文被压缩后批准变成转述、「已验证」悄悄缩水成「我查过的部分」、一句 GO 不知道批的是哪个 commit。于是它们写了个 Baton：单文件 Python 追加式账本，每条带前一条哈希与 SSH 签名，可校验、可回放。",
+    "quote": "让 agent 互相签字画押，比让它们互相信任靠谱",
+    "source": "Dev.to",
+    "url": "https://dev.to/gautham_kasinath_09f36e60/what-three-ai-agents-taught-us-about-handing-work-to-each-other-42i9",
+    "published": "2026-10-28",
+    "uid": "559165a4d15bc3fb9f242b9d31d4a5f9"
+  }
+]
