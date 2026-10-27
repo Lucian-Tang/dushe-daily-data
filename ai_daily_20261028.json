@@ -1,0 +1,142 @@
+[
+  {
+    "title": "AI 承诺让人少干活，这位 VP 却干得比任何时候都多",
+    "content": "一位技术 VP 复盘自己的 GitHub 记录：2026 年到 10 月 27 日已 2102 次贡献，超过 2021 至 2025 任何一整年，8 月 427 次创个人纪录。他说问题不在任务变难，而在同时并行的 agent 太多，每个都要他批准计划、读 diff、答疑，切换上下文的消耗比过去连做两三个大任务更累。省下的编码时间，被协调成本吃了回去。",
+    "quote": "AI 省下写代码的时间，全拿去给 agent 当客服了。",
+    "source": "HN Front / oioannou.com",
+    "url": "https://oioannou.com/blog/ai-promised-less-work/",
+    "published": "2026-10-28",
+    "uid": "26a0a476f677f1c2a7c5ac388b5ada08",
+    "subclass": null
+  },
+  {
+    "title": "V2EX：vibe coding 久了变懒，编程从语义层退到抽象层",
+    "content": "楼主说自己 vibe coding 一段时间后变懒了，编程知识从「语义层」上移到「抽象层」，只剩约定与品味。以前纠结具体怎么实现，现在只判断这个技术栈能不能做、硬伤在哪、该换哪一层；出问题也不再自己修，分析完成因就直接丢给 agent，自己只负责验收。连需要反复查的细节也不背，让 agent 写成文档，用时再翻。",
+    "quote": "从程序员变成经理，代价是说不清代码为什么对。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1251091",
+    "published": "2026-10-28",
+    "uid": "3753c42e64aa7efd639c942dac5cc008",
+    "subclass": null
+  },
+  {
+    "title": "StreamVibe：主动视频助手要学会猜你没说出口的意图",
+    "content": "现有视觉语言模型多为离线被动理解，等用户明确开口才响应，既错过「我下一步该点哪」这类隐含意图，也跟不上意图的连续变化。作者提出 StreamVibe-Bench，含 4100 条评测与 8.5 万条训练样本，覆盖显式、隐式与动态意图，再训练流式模型 StreamVibe-VL，并用分层记忆把用户意图维护成持久状态。响应时机与答案质量比基线高 10.7%。",
+    "quote": "等人开口才帮忙，那叫客服，不叫助手。",
+    "source": "HuggingFace Papers",
+    "url": "https://huggingface.co/papers/2610.34662",
+    "published": "2026-10-28",
+    "uid": "8622cdefd77e7daa21ffb6968f2cf53e",
+    "subclass": "前沿论文"
+  },
+  {
+    "title": "DynaFlow：把多智能体编排写进主 agent 的动作空间",
+    "content": "多智能体系统通常预设固定协作结构，难以适配不同任务。DynaFlow 把自由形式的可执行工作流合成放进主 agent 的动作空间：由它判断何时需要协作，现场生成编排子 agent 的任务程序，支持串行、并行、结构化信息交换与验证，执行轨迹再反馈给下一步决策。只训练主 agent、子 agent 冻结，六个基准总体 88.08%，比最强基线高 10.9 个百分点。",
+    "quote": "编排能力才是稀缺品，子 agent 谁都能当。",
+    "source": "HuggingFace Papers",
+    "url": "https://huggingface.co/papers/2610.34467",
+    "published": "2026-10-28",
+    "uid": "96fbe8a8ae39cc3b1be9990cdf8bb2f9",
+    "subclass": "前沿论文"
+  },
+  {
+    "title": "InteractiveWorld：让 AI 助手隔着屏幕指挥真人干活",
+    "content": "穿戴设备上的第一人称 AI 助手看似触手可及，但要验证它能否真帮上忙，过去只能靠真人反复试验，数据又贵又少。InteractiveWorld 搭了一个可验证的闭环环境：助手发指令，人类照做，环境执行并更新视野，与机器人仿真不同，它检验的是人机协作。配套的 InteractiveBench 含六类 120 个多轮任务，12 个前沿模型里最强的在长程引导与规划上也只有 20% 和 25%。",
+    "quote": "最强模型两成通过率，这助手还不如说明书。",
+    "source": "HuggingFace Papers",
+    "url": "https://huggingface.co/papers/2610.33966",
+    "published": "2026-10-28",
+    "uid": "31ebc227fd9d852e52bfcb7a031366ec",
+    "subclass": "前沿论文"
+  },
+  {
+    "title": "Work Agents 综述：把 agent 当成基础模型加运行时 harness",
+    "content": "当基础模型从生成信息走向执行数字工作，agent 开始跨工具与应用完成任务，但学界缺少统一视角。这篇综述把工作 agent 看作基础模型加运行时 harness 的系统，在有状态工作区里交付可验证结果；提出工作持久性与工作开放性两个维度，把数字工作分成五类，归纳五项核心能力，分别讨论模型优化、harness 优化与二者联合优化，并给出按工作结果设计的评测口径。",
+    "quote": "框架搭得再整齐，交付不了结果就是白皮书。",
+    "source": "HuggingFace Papers",
+    "url": "https://huggingface.co/papers/2610.35845",
+    "published": "2026-10-28",
+    "uid": "95cb9d30c8bd8bc46f01f3bcadbc0371",
+    "subclass": "前沿论文"
+  },
+  {
+    "title": "hallmark：专治「一眼 AI」的前端设计技能",
+    "content": "Together AI 开源 hallmark，一个拒绝长得像 AI 的前端设计技能，可装进 Claude Code、Cursor、Codex。它从 50 套主题抽三套材质，围着访客真正要做的事搭页面，再用真实浏览器 lint 机器味痕迹：标题上必挂的 eyebrow、全大写间距标签、标题里一个彩色词、撑不满首屏的 hero、每页结尾都塞邮件订阅。最后一句由新上下文评审拍板。",
+    "quote": "AI 味不是审美差，是复读得太整齐。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/Nutlope/hallmark",
+    "published": "2026-10-28",
+    "uid": "c88c01cfd244fd4bd6cd9c6ae3c7544b",
+    "subclass": null
+  },
+  {
+    "title": "GPT-6.1 Terra 发布：中端定位，主打视觉推理与电脑操作",
+    "content": "OpenAI 发布 GPT-6.1 Terra，定位中端，官方强调视觉推理与精确的电脑操作，外加更自然的写作。Simon Willison 说它坐在 Claude 里 Sonnet 那个位置——不最便宜也不最贵，反而最难决定何时用；OpenAI 的 Ted Sanders 称它技术沟通强于 Astra 与 Sol，视觉与 computer use 相近但更快。每百万输入 1 美元、输出 5 美元。",
+    "quote": "中端模型最大的功能，是让你反复纠结。",
+    "source": "Simon Willison",
+    "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
+    "published": "2026-10-28",
+    "uid": "5e4a51fd299e58b3c4cd15812891fffa",
+    "subclass": null
+  },
+  {
+    "title": "ChatGPT 把用户转给 404 Media：AI 客服的尽头是记者",
+    "content": "404 Media 的 Jason Koebler 记录了一个荒诞现象：大平台几乎没有人工客服，用户遇到普通技术问题只能问 ChatGPT；而它越来越多地告诉对方「你发现了有新闻价值的事，404 Media 能帮你」。于是一家调查媒体的编辑部，被模型当成了科技公司的售后工单转接台。模型没撒谎，它只是把责任推给下一个对象。",
+    "quote": "AI 客服的终极形态，是把用户转给记者。",
+    "source": "Simon Willison",
+    "url": "https://simonwillison.net/2026/Oct/26/jason-koebler/",
+    "published": "2026-10-28",
+    "uid": "bf9f3a9c276f7c9dae5b224f379a6d21",
+    "subclass": null
+  },
+  {
+    "title": "Spec-first：一个 spec 一个分支，先审规格再让 agent 动手",
+    "content": "Agent Smith 是一套给 agent 用的规格先行插件：一个 spec 对应一个分支和 worktree，id 由时钟生成，两个 agent 不会撞号；写代码前由没参与对话的评审核对 spec 引用的文件与行号，再过门禁。审完的 spec 已答完开放问题，agent 直接干到 done 标准。状态存 context.yaml，重启可续；决策记下击败了什么方案。",
+    "quote": "先写清楚要什么，比让 agent 猜便宜。",
+    "source": "HN / spec-first.dev",
+    "url": "https://spec-first.dev/",
+    "published": "2026-10-28",
+    "uid": "650d596b069f70ae763d7a013db4f693",
+    "subclass": null
+  },
+  {
+    "title": "Anthropic 递交 S-1：安全风险写进招股书",
+    "content": "Yahoo Finance 10 月 27 日报道，Anthropic 已向 SEC 递交 S-1，迈出上市前法定一步。文件把公司自己对 AI 的安全担忧摆到台前，同时讲它想当科研引擎的野心。Google 此前承诺投入最高 400 亿美元，估值 3500 亿美元，IPO 日期未定。安全写进章程的公益公司去募资，风险表述从此要按证券法口径受审。",
+    "quote": "安全写进招股书，就得按招股书负责。",
+    "source": "Yahoo Finance",
+    "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-1-filing-spotlights-safety-180000457.html",
+    "published": "2026-10-28",
+    "uid": "4fd184019c059e5deeb02aab96a434a2",
+    "subclass": null
+  },
+  {
+    "title": "OpenAI 放出论文：指数时间假设是假的",
+    "content": "OpenAI 10 月 25 日发布 67 页预印本，给出确定性算法精确统计任意 k-CNF 的解数：n 个变量、m 个子句，多项式空间，时间约 2^(n/√log n)，远低于 ETH 假设的 2^Ω(n)。这直接推翻复杂性理论支柱 ETH，连带否掉 SETH，还给出 E^NP 的电路下界，并可自归约求出解、均匀采样、近似 Max-k-SAT。",
+    "quote": "地基塌了，但没人在意，因为它本来就是个假设。",
+    "source": "HN / OpenAI Math",
+    "url": "https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
+    "published": "2026-10-28",
+    "uid": "a4c94677c287085331b2954e3ce87699",
+    "subclass": null
+  },
+  {
+    "title": "OpenAI 连发三项发现：数学、计算、物理各一条",
+    "content": "OpenAI 宣布模型在调和分析、复杂性理论、量子场论各出一项结果，含所有维度的局部光滑猜想证明。发布方式首次试验三种：数学结果只放 AI 原文；计算机科学结果请外部学者撰写解释，同时公开自然语言证明与 Lean 形式化；物理结果交由外部小组决定何时发。参与者不签 NDA、自愿无薪、也不为发现署名。",
+    "quote": "解释说清楚比证明更难，这次干脆外包给人类。",
+    "source": "HN / openai.com",
+    "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+    "published": "2026-10-28",
+    "uid": "f6022b6878fd5b54c1e023be5799bd93",
+    "subclass": null
+  },
+  {
+    "title": "Cloudflare 通报 GLM-5.3 串号：155 条回复混入他人上下文",
+    "content": "Cloudflare 披露 8 月 27 日至 9 月 9 日，Workers AI 上的 GLM-5.3 有 155 条回复混入其他用户会话内容。两层原因：配置了 104 万 token 上下文，预填充 KV 池却只装得下 68 万；超长请求被判拒绝后，SGLang 用单 token 占位符继续推理，解码节点仍读到旧缓存页。9 月 9 日恢复，未发现恶意利用。",
+    "quote": "上下文窗口开得比显存大，串号只是时间问题。",
+    "source": "HN / Cloudflare Blog",
+    "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+    "published": "2026-10-28",
+    "uid": "b153e934a90c5fa4d28a94678439b5a9",
+    "subclass": null
+  }
+]
