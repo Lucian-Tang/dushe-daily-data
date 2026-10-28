@@ -1,0 +1,128 @@
+[
+ {
+  "title": "macOS 自带 git 仍信任被攻破的 eMudhra 证书",
+  "content": "10 月 17 日通报的 eMudhra 中间证书事故，到 10 月 28 日苹果仍未修补：macOS 自带的 git、curl、python3 继续信任涉事证书。10 月 26 日发布的 macOS 27.2 不但没修，还把用户手工加的规避配置冲掉了。作者给出自检命令：git 若能列出测试仓库的 commit，就说明 https 克隆和 push 都可能被劫持。",
+  "quote": "苹果修证书的速度，比证书过期还慢。",
+  "source": "HN Front Page",
+  "url": "https://emudhra.we-have-a-problem.com/apple.html",
+  "published": "2026-10-29",
+  "uid": "dev_ff287867"
+ },
+ {
+  "title": "Emacs 五十岁：活得最久的编辑器之一",
+  "content": "MIT 科技评论回顾：1976 年 EMACS 首次跑在 MIT AI 实验室的视频终端上，此前程序员只能靠行编辑器一次改一行代码。五十年后它仍被广泛使用，被移植到各种操作系统，苹果甚至在 Mac OS X 时代随系统分发过。文章把 Emacs 放进从插线板、纸带、打孔卡到全屏编辑器的编程演进史里。",
+  "quote": "五十年了，退出 Emacs 的梗还没过时。",
+  "source": "HN Front Page",
+  "url": "https://www.technologyreview.com/2026/10/20/1145399/emacs-turns-50/",
+  "published": "2026-10-29",
+  "uid": "dev_2453ea1c"
+ },
+ {
+  "title": "Surge AI 用 50 道真实报税题考 AI Agent",
+  "content": "Surge AI 上线 DAYJOB: Tax 基准，用 50 个专业税务任务评估 Agent。示例里一位客户要在 10 月和次年 1 月之间选卖房时点，Astra 五次都没发现「两年居住期」的截止期限，Opus 五次都指出了。任务材料复杂，关键判断并不写在初始指令里，考的是专业人士主动提示风险的判断力。",
+  "quote": "算得对没用，想不到你没想到的才要命。",
+  "source": "HN Front Page",
+  "url": "https://surgehq.ai/blog/dayjob-tax",
+  "published": "2026-10-29",
+  "uid": "dev_157fae17"
+ },
+ {
+  "title": "美国 PCB 工厂：交期比深圳快一倍",
+  "content": "CircuitHub 公开了马萨诸塞州的机器人工厂 The Grid，按需生产电路板。文章逻辑是：过去三十年电子制造外迁，因为装配靠人力；自动化目前只在大批量场景成立，Starlink 那种百万级产品值得专门建线。而多数硬件公司是「十片这个、一百片那个、下周又改版」的高混合小批量，最难自动化，他们就想吃这块。",
+  "quote": "美国制造回流，先拿打样单开刀。",
+  "source": "HN Front Page",
+  "url": "https://www.circuithub.com/post/unveiling-the-grid",
+  "published": "2026-10-29",
+  "uid": "dev_5c7c8675"
+ },
+ {
+  "title": "LinkSwift：八大网盘直链工具冲上 Trending",
+  "content": "基于「网盘直链下载助手」修改的 JavaScript 工具，支持百度网盘、阿里云盘、移动云盘、天翼云盘、迅雷、夸克、UC、123 云盘八家，仓库自述作用是获取网盘文件下载地址。今天新增约 3209 星，总数 3.4 万、2401 fork，是榜单上涨速最快的项目之一。",
+  "quote": "网盘限速十年，养活了无数轮子。",
+  "source": "GitHub Trending",
+  "url": "https://github.com/hmjz100/LinkSwift",
+  "published": "2026-10-29",
+  "uid": "dev_bf63db2e"
+ },
+ {
+  "title": "cindy：开箱即用的开源 AI Agent 冲上榜单",
+  "content": "makecindy/cindy 是个 TypeScript 写的开源 AI Agent，仓库标语是「想到，就能做到」，主打开箱即用、不用折腾配置。今天新增 740 星，总数 7915、928 fork。贡献者列表里同样混着一个 claude 账号，AI 写 AI 工具，已经是这轮 Trending 的标配。",
+  "quote": "开箱即用的 Agent，最后都要你自己配环境。",
+  "source": "GitHub Trending",
+  "url": "https://github.com/makecindy/cindy",
+  "published": "2026-10-29",
+  "uid": "dev_d7dfb1b0"
+ },
+ {
+  "title": "Macro：把邮件、聊天、文档、CRM 塞进一个工作台",
+  "content": "macro-inc/macro 是 Rust 写的团队统一工作台：邮件、聊天、文档、任务、Agent、通话和 CRM 全部 @ 关联，共享同一份 AI 记忆。今天新增 106 星，总数 5284、513 fork。定位是替掉一堆 SaaS，把上下文留在一个地方，而不是在十个标签页之间失忆。",
+  "quote": "又一个要替掉全部 SaaS 的，祝它好运。",
+  "source": "GitHub Trending",
+  "url": "https://github.com/macro-inc/macro",
+  "published": "2026-10-29",
+  "uid": "dev_d56b089e"
+ },
+ {
+  "title": "aivault：让 21 个 AI 编程工具共用一套规则和记忆",
+  "content": "作者同时用 Claude Code、Codex、OpenCode、Kimi Code，每个工具各有规则文件、skill 目录和记忆，换个工具就得把偏好重讲一遍。aivault 把这些收进一个文件夹，再接入本机的 AI 编程工具，目前支持 21 个。思路是把上下文从工具里抽出来，做成可迁移的资产。",
+  "quote": "工具换得比衣服勤，记忆还得手动搬。",
+  "source": "V2EX Share",
+  "url": "https://www.v2ex.com/t/1252684",
+  "published": "2026-10-29",
+  "uid": "dev_4d9f5b20"
+ },
+ {
+  "title": "ip2geo：零依赖 Go 库，IP 查询快 14 到 58 倍",
+  "content": "作者线上用 geoip2-golang 查 IP 归属地，profile 发现单次 City() 约 1.7 微秒，大头耗在解码 mmdb 结构，而他只需要国家、省、市、经纬度和时区。于是做了 ip2geo：零依赖，IPv4 查询比 geoip2-golang 快 14 到 58 倍，代码已放 GitHub。",
+  "quote": "为了省 1.7 微秒，认真造了个新轮子。",
+  "source": "V2EX Share",
+  "url": "https://www.v2ex.com/t/1252638",
+  "published": "2026-10-29",
+  "uid": "dev_b5b91414"
+ },
+ {
+  "title": "Larder：统一管理多个 Agent 的 Skills 与 MCP",
+  "content": "同时用 Claude Code、Codex、Cursor 的人，容易把 Skills、MCP、AGENTS.md 和自定义命令装得七零八落。作者遇到过重复 Skill、失效软链接和改坏的配置，于是写了本地工具 Larder：扫描本机各类配置，用 Agent Inspector 解释每个 Agent 到底加载了什么。",
+  "quote": "Agent 装太多，先给自己装个管家。",
+  "source": "V2EX Share",
+  "url": "https://www.v2ex.com/t/1252575",
+  "published": "2026-10-29",
+  "uid": "dev_5ad5fefb"
+ },
+ {
+  "title": "Vibe Coding 久了会变懒：从写代码到当经理",
+  "content": "楼主观察到，用 AI 写久了，编程知识会从「语义层」滑向「抽象层」，也就是约定与品味：具体实现不再关心，只判断在这个技术栈和约束下能不能做。人从程序员变成了项目经理，反而更清楚该选什么工具，但也更容易说不清为什么这么选。",
+  "quote": "从程序员到项目经理，只差一个回车。",
+  "source": "V2EX Tech",
+  "url": "https://www.v2ex.com/t/1251091",
+  "published": "2026-10-29",
+  "uid": "dev_5b7a2745"
+ },
+ {
+  "title": "让 AI Agent 自己写坦克 Bot，从挨揍开始爬",
+  "content": "作者把编码 Agent（Muse Spark）丢进 battle.training 的坦克对战竞技场：Agent 自己写 JavaScript 控制器，24 小时在公开天梯上互殴。他的 pokka-agent 开头三枪就被打爆，之后靠一轮轮失败迭代往上爬，文章记录了这个让 Agent 自己打排位、自己复盘的过程。",
+  "quote": "人类教练下岗，Agent 自己复盘上分。",
+  "source": "Dev.to",
+  "url": "https://dev.to/pokka-agent/my-ai-agent-built-a-tank-bot-then-learned-from-losing-3-shots-to-165-3k3a",
+  "published": "2026-10-29",
+  "uid": "dev_8adc50c7"
+ },
+ {
+  "title": "数据库设计：怎么让 Schema 三年后还不坑你",
+  "content": "文章指出，应用只有几个用户、几十条记录时，任何 Schema 看起来都没问题；真正的坑在几个月后，新功能加进来、关系变复杂、数据量上来才暴露。作者从关系建模、约束设置和演进成本几个角度，讲怎么提前设计，避免后期大改表结构还要补数据。",
+  "quote": "上线时都优雅，半年后全在补数据。",
+  "source": "Dev.to",
+  "url": "https://dev.to/buildforsearch/how-to-design-a-database-schema-that-wont-become-a-problem-later-14pn",
+  "published": "2026-10-29",
+  "uid": "dev_fdad5c45"
+ },
+ {
+  "title": "Go 里给 PDF 签名：pdfsign v1.0.0 发布",
+  "content": "作者项目里需要用证书对 PDF 做数字签名，找现成的 Go 库不顺，索性自己写了一个并发布 v1.0.0。文章介绍在 Go 应用里加载证书、对 PDF 完成签名的基本用法，适合需要在服务端生成合同、发票等文件的团队参考。",
+  "quote": "签名这事，最后都得自己写一遍。",
+  "source": "Dev.to",
+  "url": "https://dev.to/akkaraponph/signing-pdfs-in-go-meet-pdfsign-v100-1nje",
+  "published": "2026-10-29",
+  "uid": "dev_a6fc281a"
+ }
+]
