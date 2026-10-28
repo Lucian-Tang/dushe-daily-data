@@ -1,0 +1,209 @@
+[
+  {
+    "title": "macOS 自带 git 仍信任被攻破的 eMudhra 证书",
+    "content": "10 月 17 日通报的 eMudhra 中间证书事故，到 10 月 28 日苹果仍未修补：macOS 自带的 git、curl、python3 继续信任涉事证书。10 月 26 日发布的 macOS 27.2 不但没修，还把用户手工加的规避配置冲掉了。作者给出自检命令：git 若能列出测试仓库的 commit，就说明 https 克隆和 push 都可能被劫持。",
+    "quote": "苹果修证书的速度，比证书过期还慢。",
+    "source": "HN Front Page",
+    "url": "https://emudhra.we-have-a-problem.com/apple.html",
+    "published": "2026-10-29",
+    "uid": "0c4c3cd04679827e84cb5c85ec9fad8f"
+  },
+  {
+    "title": "Emacs 五十岁：活得最久的编辑器之一",
+    "content": "MIT 科技评论回顾：1976 年 EMACS 首次跑在 MIT AI 实验室的视频终端上，此前程序员只能靠行编辑器一次改一行代码。五十年后它仍被广泛使用，被移植到各种操作系统，苹果甚至在 Mac OS X 时代随系统分发过。文章把 Emacs 放进从插线板、纸带、打孔卡到全屏编辑器的编程演进史里。",
+    "quote": "五十年了，退出 Emacs 的梗还没过时。",
+    "source": "HN Front Page",
+    "url": "https://www.technologyreview.com/2026/10/20/1145399/emacs-turns-50/",
+    "published": "2026-10-29",
+    "uid": "424ecaa1f82087832f3f11ff1fa6c841"
+  },
+  {
+    "title": "Surge AI 用 50 道真实报税题考 AI Agent",
+    "content": "Surge AI 上线 DAYJOB: Tax 基准，用 50 个专业税务任务评估 Agent。示例里一位客户要在 10 月和次年 1 月之间选卖房时点，Astra 五次都没发现「两年居住期」的截止期限，Opus 五次都指出了。任务材料复杂，关键判断并不写在初始指令里，考的是专业人士主动提示风险的判断力。",
+    "quote": "算得对没用，想不到你没想到的才要命。",
+    "source": "HN Front Page",
+    "url": "https://surgehq.ai/blog/dayjob-tax",
+    "published": "2026-10-29",
+    "uid": "4dab5bf50eaf0bfeea519d826e087ce3"
+  },
+  {
+    "title": "美国 PCB 工厂：交期比深圳快一倍",
+    "content": "CircuitHub 公开了马萨诸塞州的机器人工厂 The Grid，按需生产电路板。文章逻辑是：过去三十年电子制造外迁，因为装配靠人力；自动化目前只在大批量场景成立，Starlink 那种百万级产品值得专门建线。而多数硬件公司是「十片这个、一百片那个、下周又改版」的高混合小批量，最难自动化，他们就想吃这块。",
+    "quote": "美国制造回流，先拿打样单开刀。",
+    "source": "HN Front Page",
+    "url": "https://www.circuithub.com/post/unveiling-the-grid",
+    "published": "2026-10-29",
+    "uid": "5cd34593ee4697b1944191b1189b2f0a"
+  },
+  {
+    "title": "LinkSwift：八大网盘直链工具冲上 Trending",
+    "content": "基于「网盘直链下载助手」修改的 JavaScript 工具，支持百度网盘、阿里云盘、移动云盘、天翼云盘、迅雷、夸克、UC、123 云盘八家，仓库自述作用是获取网盘文件下载地址。今天新增约 3209 星，总数 3.4 万、2401 fork，是榜单上涨速最快的项目之一。",
+    "quote": "网盘限速十年，养活了无数轮子。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/hmjz100/LinkSwift",
+    "published": "2026-10-29",
+    "uid": "387929deae942053b0c860580ea42b86"
+  },
+  {
+    "title": "cindy：开箱即用的开源 AI Agent 冲上榜单",
+    "content": "makecindy/cindy 是个 TypeScript 写的开源 AI Agent，仓库标语是「想到，就能做到」，主打开箱即用、不用折腾配置。今天新增 740 星，总数 7915、928 fork。贡献者列表里同样混着一个 claude 账号，AI 写 AI 工具，已经是这轮 Trending 的标配。",
+    "quote": "开箱即用的 Agent，最后都要你自己配环境。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/makecindy/cindy",
+    "published": "2026-10-29",
+    "uid": "19f0bb06fa5242afa99dd1ceaa66f9dd"
+  },
+  {
+    "title": "Macro：把邮件、聊天、文档、CRM 塞进一个工作台",
+    "content": "macro-inc/macro 是 Rust 写的团队统一工作台：邮件、聊天、文档、任务、Agent、通话和 CRM 全部 @ 关联，共享同一份 AI 记忆。今天新增 106 星，总数 5284、513 fork。定位是替掉一堆 SaaS，把上下文留在一个地方，而不是在十个标签页之间失忆。",
+    "quote": "又一个要替掉全部 SaaS 的，祝它好运。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/macro-inc/macro",
+    "published": "2026-10-29",
+    "uid": "bbfc2ca772d59109e439aa8934238743"
+  },
+  {
+    "title": "Vibe Coding 久了会变懒：从写代码到当经理",
+    "content": "楼主观察到，用 AI 写久了，编程知识会从「语义层」滑向「抽象层」，也就是约定与品味：具体实现不再关心，只判断在这个技术栈和约束下能不能做。人从程序员变成了项目经理，反而更清楚该选什么工具，但也更容易说不清为什么这么选。",
+    "quote": "从程序员到项目经理，只差一个回车。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1251091",
+    "published": "2026-10-29",
+    "uid": "3753c42e64aa7efd639c942dac5cc008"
+  },
+  {
+    "title": "Web 站点更省钱的部署方案：Vercel + Cloudflare 静态路线",
+    "content": "个人出海站点可以走纯前端静态路线：Vercel 部署加 Cloudflare 解析，一年基本只花域名续费的钱。帖子进一步讨论工具站、内容站需要自动更新数据时怎么补一条服务端链路，以及什么阶段该从纯静态升级到带后端的方案。适合预算敏感、访问量还不高的独立开发者参考，也附了踩过的坑。",
+    "quote": "省下的服务器钱，迟早会以 Debug 时间还回去",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1252324",
+    "published": "2026-10-29",
+    "uid": "261ea56791d2a263843754ad7605a8ac"
+  },
+  {
+    "title": "aivault：让 21 个 AI 编程工具共用一套规则和记忆",
+    "content": "作者同时用 Claude Code、Codex、OpenCode、Kimi Code，每个工具各有规则文件、skill 目录和记忆，换个工具就得把偏好重讲一遍。aivault 把这些收进一个文件夹，再接入本机的 AI 编程工具，目前支持 21 个。思路是把上下文从工具里抽出来，做成可迁移的资产。",
+    "quote": "工具换得比衣服勤，记忆还得手动搬。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1252684",
+    "published": "2026-10-29",
+    "uid": "3894c1c19a74c78dbc1a22ef801212bc"
+  },
+  {
+    "title": "ip2geo：零依赖 Go 库，IP 查询快 14 到 58 倍",
+    "content": "作者线上用 geoip2-golang 查 IP 归属地，profile 发现单次 City() 约 1.7 微秒，大头耗在解码 mmdb 结构，而他只需要国家、省、市、经纬度和时区。于是做了 ip2geo：零依赖，IPv4 查询比 geoip2-golang 快 14 到 58 倍，代码已放 GitHub。",
+    "quote": "为了省 1.7 微秒，认真造了个新轮子。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1252638",
+    "published": "2026-10-29",
+    "uid": "d8bf0a06efedd49d2dbfec155bd0ba20"
+  },
+  {
+    "title": "Manatee：找出是哪个进程把 Mac 烤热，再把它发配到能效核",
+    "content": "作者跑多 agent 时 Mac 冲到 70℃、风扇全速，活动监视器里十几行一模一样的 node 进程 CPU 百分比还在跳，一行行对下去二十分钟也认不出元凶；而元凶常常是跑了两小时的 agent，直接 kill 又会丢上下文。于是他写了个叫 Manatee 的菜单栏工具，只做两件事：定位发热进程，把它挪到能效核继续跑。",
+    "quote": "杀进程舍不得，那就发配到能效核干活",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1252659",
+    "published": "2026-10-29",
+    "uid": "b07661201bd46b6ecc592c6c22b4c6ef"
+  },
+  {
+    "title": "OpenDsec：照着 DeepSeek DSec 论文做的开源沙箱平台",
+    "content": "作者按 DeepSeek 的 DSec 论文做了一套沙箱平台的开源自托管实现 OpenDsec，并明确声明不含 DeepSeek 代码、也不是官方项目。架构和主要设计来自论文，论文没讲清或团队采用不同方案的地方，实现里另行取舍并做了记录。对想研究 agent 代码执行隔离、又不想接第三方沙箱的团队，是个可读性不错的参考实现。",
+    "quote": "论文只写思路，落地全靠自己补坑",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1252637",
+    "published": "2026-10-29",
+    "uid": "9aab5cd0a9f9dcd0ba1ea6ff9d069f8f"
+  },
+  {
+    "title": "brain-cli：给主 Agent 装个“外脑”，让模型互相辩论",
+    "content": "brain-cli 给 Claude Code、Codex 这类宿主 Agent 当外脑：通过 OpenAI Chat Completions 兼容协议接你自己的模型，让不同厂商的模型复核主 Agent 的结论、提出第二意见，甚至让几个模型先吵一架。作者把它形容成从“左右脑互搏”升级为“智囊团辩论”，适合对单模型判断不放心、又已经有多家 API 额度的场景。",
+    "quote": "让模型自己吵架，比让它自己拍板靠谱",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1252616",
+    "published": "2026-10-29",
+    "uid": "6f3feb6ef9c6ce143ecf12d5e2823c5f"
+  },
+  {
+    "title": "桌面 Agent 上线一个多月：60 个真实用户教我的事",
+    "content": "作者九月发过一个用 DeepSeek Harness 套 Electron 壳做的桌面 Agent，一个多月后积累了 60 个真实用户，最多的账号发过一万多次请求、单日还有两千多次。他把这段时间踩的坑摊开讲：真实用户的使用强度和操作路径跟自测完全不是一回事，也谈了在留存、成本和功能边界上做过的取舍。",
+    "quote": "60 个用户教做人，比 600 个 star 有用",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1252465",
+    "published": "2026-10-29",
+    "uid": "5f15911501b63f090b006477a85a2aa4"
+  },
+  {
+    "title": "dtool v0.4.0：SQL 引擎不再只有 SQLite，数据接入先预演再落盘",
+    "content": "dtool 是给 AI Agent 用的本地 Excel 数据流水线 CLI：Excel 转数据集、AI 写 SQL、工具负责执行留痕和出图，数据不出本地。v0.4.0 主要解决两个硬痛点：SQL 引擎不再局限于 SQLite，分析型查询的天花板被抬高；数据接入改成先预演再落盘，避免 Agent 一上来就把原始数据写脏。",
+    "quote": "数据不出本地，是打工人最后的体面",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1252491",
+    "published": "2026-10-29",
+    "uid": "e7261509efcdbde02b25aae985e99612"
+  },
+  {
+    "title": "Me2Cloud：从自己家网络测到 360+ 个云区域的真实延迟",
+    "content": "选云服务器区域时，厂商 Looking Glass 和各类测速站都是从机房发起，出口走的是优质线路，测出来当然好看；但你家晚上八九点国际出口挤成什么样，它们测不到。Me2Cloud 反过来，从你自己的宽带出发测到 360 多个云区域的真实延迟，开源、可自部署，回答的是“此刻从这条线出去哪里最快”。",
+    "quote": "机房测出来的延迟，跟你家网速没关系",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1252514",
+    "published": "2026-10-29",
+    "uid": "c256ada6ad5e09920e0903f47d2cf6d9"
+  },
+  {
+    "title": "让 AI Agent 自己写坦克 Bot，从挨揍开始爬",
+    "content": "作者把编码 Agent（Muse Spark）丢进 battle.training 的坦克对战竞技场：Agent 自己写 JavaScript 控制器，24 小时在公开天梯上互殴。他的 pokka-agent 开头三枪就被打爆，之后靠一轮轮失败迭代往上爬，文章记录了这个让 Agent 自己打排位、自己复盘的过程。",
+    "quote": "人类教练下岗，Agent 自己复盘上分。",
+    "source": "Dev.to",
+    "url": "https://dev.to/pokka-agent/my-ai-agent-built-a-tank-bot-then-learned-from-losing-3-shots-to-165-3k3a",
+    "published": "2026-10-29",
+    "uid": "d004a54a96f8480c469c7611c54a5633"
+  },
+  {
+    "title": "数据库设计：怎么让 Schema 三年后还不坑你",
+    "content": "文章指出，应用只有几个用户、几十条记录时，任何 Schema 看起来都没问题；真正的坑在几个月后，新功能加进来、关系变复杂、数据量上来才暴露。作者从关系建模、约束设置和演进成本几个角度，讲怎么提前设计，避免后期大改表结构还要补数据。",
+    "quote": "上线时都优雅，半年后全在补数据。",
+    "source": "Dev.to",
+    "url": "https://dev.to/buildforsearch/how-to-design-a-database-schema-that-wont-become-a-problem-later-14pn",
+    "published": "2026-10-29",
+    "uid": "848a0e2f0d3091771f7b59310e97afb2"
+  },
+  {
+    "title": "Go 里给 PDF 签名：pdfsign v1.0.0 发布",
+    "content": "作者项目里需要用证书对 PDF 做数字签名，找现成的 Go 库不顺，索性自己写了一个并发布 v1.0.0。文章介绍在 Go 应用里加载证书、对 PDF 完成签名的基本用法，适合需要在服务端生成合同、发票等文件的团队参考。",
+    "quote": "签名这事，最后都得自己写一遍。",
+    "source": "Dev.to",
+    "url": "https://dev.to/akkaraponph/signing-pdfs-in-go-meet-pdfsign-v100-1nje",
+    "published": "2026-10-29",
+    "uid": "a920613473330ebeb86e829f70741c29"
+  },
+  {
+    "title": "那个早该写一年的脚本：四十行，每周省一小时",
+    "content": "作者终于把每周手动做的一件事写成了脚本：四十分钟写完，每周省一小时。有意思的是他早知道这件事能自动化，真正拖了几个月的不是工作量，而是某个周五晚上被烦到了。他的建议很朴素：一件杂事在你脑子里出现过两次以上，就是该动手的信号；脚本不需要写得好，他那四十行没有错误处理，仍是这个月最有用的产出。",
+    "quote": "拖延不是因为不会写，只是还没被烦够",
+    "source": "Dev.to",
+    "url": "https://dev.to/member_3c570db7/the-script-i-should-have-written-a-year-ago-59l8",
+    "published": "2026-10-29",
+    "uid": "ffd9f7e21df757826cfd5603253e5040"
+  },
+  {
+    "title": "Rank Math 事件之后，怎么证明你的 WordPress 站点是干净的",
+    "content": "Rank Math PRO 3.0.123 在 10 月 15 日 20:02 到 16 日 07:12 UTC 之间被植入恶意包，可能留下额外文件、管理员账号、计划任务和服务器级改动；装 3.0.124 只能清掉已知插件包，证明不了服务器干净。文章给出可辩护的“干净”定义：受影响包已从可信源替换、已知数据库选项清除、隐藏 PHP 与假核心文件已审、凭据轮换有记录，并强调记录扫描工具版本与覆盖范。",
+    "quote": "升级插件只是止血，别把止血当成体检报告",
+    "source": "Dev.to",
+    "url": "https://dev.to/stark_zhuang_df5076f35c68/how-to-prove-a-wordpress-site-is-clean-after-the-rank-math-incident-5cg7",
+    "published": "2026-10-29",
+    "uid": "ea4491e27ad0d082ecb4b250f9db4950"
+  },
+  {
+    "title": "NecroLog：给隔离网机器做遥测与进程考古",
+    "content": "NecroLog 是 Hacktoberfest 第四周“Ghost in the Machine”主题的参赛作品，一套面向隔离网环境的系统可观测面板。它不依赖外网，把机器上的遥测数据和进程痕迹留存下来做考古：当一台机器不能联网、日志又早已滚动覆盖时，仍能还原某个进程在什么时候出现过、和谁一起出现过，适合内网与工业环境的排障。",
+    "quote": "断网的机器出了事，就只能靠考古挖了",
+    "source": "Dev.to",
+    "url": "https://dev.to/dhruvsingla24/necrolog-the-haunted-daemon-air-gapped-systems-telemetry-process-archaeology-1i0m",
+    "published": "2026-10-29",
+    "uid": "a57cf2abeef22ba15de87a415ed6a65d"
+  }
+]
