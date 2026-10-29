@@ -1,0 +1,227 @@
+[
+  {
+    "title": "Mistral 放出万亿参数旗舰 Mistral Large 4 的权重",
+    "content": "Mistral 把旗舰 Mistral Large 4（代号 Le Chonk）的权重公开了：1 万亿参数、原生多模态，官方称它是最强的开源权重编码模型，防御性网络安全也排在开源前列。相比本月早些时候的预览版，这次补的是编码、防御安全和推理效率，三种推理模式按性价比切换。模型全部在欧洲基础设施上从零训练，强调可审计的血统与自托管。",
+    "quote": "一万亿参数，欧洲人先把钥匙交了。",
+    "source": "HN Front Page",
+    "url": "https://mistral.ai/news/mistral-large-4-oss/",
+    "published": "2026-10-30",
+    "uid": "aa6b452fb675c8338de48403bc9cbc74"
+  },
+  {
+    "title": "同一批机架多榨 27% GPU：Blackwell 缺的不是硬件是调度",
+    "content": "SkyPilot 拆解 Grace Blackwell NVL72：整机架 72 张 GPU 走统一 NVLink，任务一旦跨机架就退回 InfiniBand，同样训练任务性能掉 43%。麻烦在于机架局部性很难保：节点故障下线、任务错峰结束，空闲容量被摊到各机架。他们用拓扑感知放置、原地故障恢复和自动碎片整理，把同一批机架里可用的 GPU 提高了 27%。",
+    "quote": "买的是 NVL72，跑的是 InfiniBand。",
+    "source": "HN Front Page",
+    "url": "https://skypilot.ai/blog/grace-blackwell-needs-a-new-scheduler",
+    "published": "2026-10-30",
+    "uid": "ea935101b72166acbad19d048793facc"
+  },
+  {
+    "title": "AI 爱引用的数字，一半是「僵尸数据」",
+    "content": "Trakkr 拿 200 个要数字的问题问了 ChatGPT、Perplexity、Gemini、Claude 和 Google AI Overviews，再顺着引用一层层点下去。典型例子：五家都说 44% 的销售跟进一次就放弃；点进去是 2020 年一家销售公司的统计页，再点是一篇 2017 年的自由撰稿人样稿，再往里只有两份 PPT 和两条新闻，没有问卷、没有样本、没有日期。",
+    "quote": "数字走得比证据远，还自带引用。",
+    "source": "HN Front Page",
+    "url": "https://trakkr.ai/trakkr-research/zombie-stats",
+    "published": "2026-10-30",
+    "uid": "ce01f1f897d0c60f51521927e33655a9"
+  },
+  {
+    "title": "Alpine 的 GitLab 被打了：没证据也当已被攻陷重建",
+    "content": "Alpine Linux 通报：10 月 20 至 21 日有人试图用 GitLab 的 CVE-2026-97229 打他们的实例，攻击「差点成功」。漏洞在 GitLab 用 Onigmo 处理 CI 配置的路径上，CVSS 10.0，Ruby 上游 10 月 23 日才补齐。官方没找到入侵证据但无法排除，把实例按已失陷重建、重置密码，并确认 aports 仓库与发行物未被篡改。",
+    "quote": "修完还得重建，这才叫不赌运气。",
+    "source": "HN Front Page",
+    "url": "https://alpinelinux.org/posts/GitLab-security-incident-CVE-2026-97229.html",
+    "published": "2026-10-30",
+    "uid": "4bfc59df4e197fd11a2928a0dd957a0d"
+  },
+  {
+    "title": "PHP2Shell 串内核提权，拿下 25 台服务器含政府环境",
+    "content": "Dream 团队发现一套疑似 AI 辅助的攻击链：PHP2Shell（CVE-2026-109618/109619）串 Fragnesia 内核提权（CVE-2026-46300），攻陷 25 台服务器，含美国政府相关环境。入口是某防火墙厂商暴露的管理界面，得手后转向 Active Directory 抓凭证、枚举目录；现场留下攻击清单和约 40 个后利用脚本。",
+    "quote": "从一个管理后台，直通整个域控。",
+    "source": "HN Front Page",
+    "url": "https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers",
+    "published": "2026-10-30",
+    "uid": "dc0da6be6fc27434d401a36c94ac1de9"
+  },
+  {
+    "title": "一条畸形短信，零点击打掉 Android 通话",
+    "content": "Mark Blaszczyk 公开 Android 电话栈的零点击漏洞：一条畸形 WAP Push 短信就能让 com.android.phone 崩溃，通话含紧急呼叫直接打掉，无需操作。根因是 WapPushOverSms 把 5 字节 uintvar 长度无检查转成 int 当数组长度，负值抛异常打死主线程。5 月上报，Google 判为非安全问题不修，10 月 29 日按 90 天公开。",
+    "quote": "五字节短信，Google 说不算安全问题。",
+    "source": "HN Front Page",
+    "url": "https://smsofdeath.com/",
+    "published": "2026-10-30",
+    "uid": "5becb035466cc40585d058f1e51f8b48"
+  },
+  {
+    "title": "Qwenputer：把一颗 RISC-V CPU 编译进 Qwen3.5 权重",
+    "content": "有人往 Qwen 3.5 4B 的权重里塞了一颗能跑的 RISC-V CPU：拿模型自己的 Gated DeltaNet 线性注意力层状态当 RAM，CPU 完全在前向计算里执行，不靠工具、不靠沙箱，能跑算术、C 和 MicroPython，还塞了个实验性文件存储。作者强调这不是插件而是权重的一部分，并顺带演示了混合模型可以把推理藏进 RNN 状态里，躲开 CoT 监控。",
+    "quote": "CPU 编译进权重，沙箱不知道该关谁。",
+    "source": "HN Front Page",
+    "url": "https://divagr.com/blog/qwenputer",
+    "published": "2026-10-30",
+    "uid": "012821cdaf2eaff130781af443b579f7"
+  },
+  {
+    "title": "Stack Overflow 月提问跌破 1000 条",
+    "content": "HN 热帖：Stack Overflow 现在每月新提问不到 1000 条，数据来自官方 SEDE 查询的公开图表，帖子 696 分、593 条评论。对比巅峰期每月数以万计的新问题，这个跌幅已经不是周期波动。评论区把原因归给 AI 直接给答案、严格的关闭与降权机制，以及「问之前先被劝退」的体验；也有人提醒，问题少了不等于知识库没价值，但新人提问那条路确实断了。",
+    "quote": "问答站死于没人提问，不是没人回答。",
+    "source": "HN Front Page",
+    "url": "https://news.ycombinator.com/item?id=50282454",
+    "published": "2026-10-30",
+    "uid": "cd20be6e39d9cae10cc2974ea8c3ce51"
+  },
+  {
+    "title": "Claude Code 历史里的密钥，被这个工具逐个打上标签",
+    "content": "Claude Code 把你看过的一切明文存在 ~/.claude 下：每一条 cat .env、它读过的配置文件、你粘进 prompt 的 token，全在里面。claude-scrub 会扫这些历史，把密钥替换成带标签的占位符。覆盖会话记录（含子代理与工具结果）、prompt 历史、粘贴缓存、文件历史和 shell 快照。",
+    "quote": "日志留得比记性还全，密钥就这么裸着。",
+    "source": "HN Show HN",
+    "url": "https://github.com/overflowy/claude-scrub",
+    "published": "2026-10-30",
+    "uid": "2238577affe9cce02f3310ab60d000af"
+  },
+  {
+    "title": "Witchat：让 Windows 和 Linux 加入手机那张蓝牙网状网",
+    "content": "bitchat 是靠蓝牙网状网在附近设备间传消息的应用，之前只有手机端。witchat 是 Windows 和 Linux 上的非官方客户端，让电脑直接加入手机已经在的那张本地网：不注册账号、不要手机号、没有服务器，也不依赖官方 App。支持位置频道、私聊和送达/已读回执，走 BLE 多跳转发，断网也能聊。",
+    "quote": "没有服务器，也没有账号，只有隔壁的蓝牙。",
+    "source": "HN Show HN",
+    "url": "https://github.com/BarefootJoey/witchat",
+    "published": "2026-10-30",
+    "uid": "ba6e16da5abaecbfa98175567c12dcb8"
+  },
+  {
+    "title": "Mnestiq：给 AI agent 装一台可验签的黑匣子",
+    "content": "Mnestiq 给 AI agent 装黑匣子：记录它读了什么、怎么决策、做了什么，每条输入来自哪里，然后对记录签名，事后谁改都能查出来。出问题时能定位到具体哪次 run、第几步，前面哪条不可信输入导致的，以及谁批准了这步。演示里它录下一个被投毒网页诱导的客服 agent 往外发客户数据，再接上防火墙日志对上号，还能给审计方一份仍可验签的脱敏副本。",
+    "quote": "出事了才想起要日志，那就不是日志。",
+    "source": "HN Show HN",
+    "url": "https://github.com/mnestiq/mnestiq",
+    "published": "2026-10-30",
+    "uid": "fba959662afbd640a92af79b954c18fd"
+  },
+  {
+    "title": "Dead APIs：给死掉的接口立一块墓碑",
+    "content": "Dead APIs 是个「API 墓地」：把那些已经下线、改了接口不留 changelog、或者正在被弃用的第三方集成摆出来。可以给死掉的接口点蜡烛、写墓志铭，也能把还活着但已挂出倒计时的服务提前「占坑」——比如 NetSuite 的 TBA 认证 2027.1 起不再接受新集成，SOAP Web Services 到 2028.2 彻底移除。适合在选型前先看看这块地埋过谁。",
+    "quote": "选型前先逛墓地，比看官网文档实在。",
+    "source": "HN Show HN",
+    "url": "https://deadapis.dev/",
+    "published": "2026-10-30",
+    "uid": "5b0ed0fbc5f9612bc237bdebe99682ea"
+  },
+  {
+    "title": "StrictLLM：把 agent 关进沙箱，人还得在环里",
+    "content": "StrictLLM 是 Mac/Windows/Linux 的桌面聊天客户端，主打「人必须在环里」：多模型会话同屏，每个 persona 单独配置权限，MCP server 跑在沙箱里，工具调用要按规则放行。支持在对话里 @ 某个 persona 把活交给专家，也能并排比较不同模型的回答。团队做了九个月，定位是把 agent 的能力关进可控的边界，而不是再做一个更花的聊天框。",
+    "quote": "先想清楚谁能动手，再谈 agent 多聪明。",
+    "source": "HN Show HN",
+    "url": "https://strictllm.com",
+    "published": "2026-10-30",
+    "uid": "bd13c416d48f302485122c371b187d0a"
+  },
+  {
+    "title": "claude-mem：给编码 agent 装一套持久记忆",
+    "content": "claude-mem 做的是 agent 的跨会话记忆：自动抓取会话里的工具调用观察，用模型压成语义摘要，下次会话再把相关片段注入回去。支持 Claude Code、Codex、Gemini、OpenClaw、Hermes、Copilot、OpenCode 等宿主，README 提供三十多种语言版本。安装一条 npx 命令，登录后领记忆 key，默认走托管记忆，也能切成本地 observer。",
+    "quote": "agent 的记性，终于外包给了一个库。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/thedotmack/claude-mem",
+    "published": "2026-10-30",
+    "uid": "f08d8cf2c7baf95fd61fd19a3441e4e4"
+  },
+  {
+    "title": "OpenMausBot：把一群本地 agent 养成聊天列表里的同事",
+    "content": "OpenMausBot 是 GitHub 今日趋势里的 Grok Bot 开源替代：Electron + React 19 的本地优先客户端，侧边栏每个 bot 都是真的 agent，底层跑 Claude 或 Codex，各有自己的性格、模型和已连接应用。用法像聊联系人——看它干活，关键时刻点批准。作者声明与 xAI、Meta、OpenAI、Manus 无关，提供签名安装包。",
+    "quote": "把 agent 当同事养，还得给它配工位。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/milind-soni/OpenMausBot",
+    "published": "2026-10-30",
+    "uid": "6c6686c0a35727e0ff2b01951cdc561f"
+  },
+  {
+    "title": "一张 4090 从零走通 QLoRA 微调与 vLLM 部署",
+    "content": "V2EX 网友把从零走通 LoRA 的过程写成开源中文手册：一张 4090（24G）、基座 Qwen3-4B-Instruct，任务是让模型用中文回答小学生科学问题，风格差异一眼能看出来。链路是 QLoRA 微调、保存重载、BF16 合并、vLLM 部署成 OpenAI 兼容 API、再压测，9 章正文加 5 个附录，配可跑 Notebook 和 560 段对话数据集。",
+    "quote": "一张 4090，把微调从玄学拉回流程。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1252859",
+    "published": "2026-10-30",
+    "uid": "1f6710e4add6326ab2289edeab83538e"
+  },
+  {
+    "title": "用 Go 从零写 coding agent，15 章每章都能跑",
+    "content": "作者用 Go 从零写了个终端 coding agent Mino，不用 agent 框架，只调官方 OpenAI Go SDK 的 Responses API，同时整理成 15 章教程，每章一个可运行版本。覆盖流式问答、JSONL 历史与重启恢复、逐次批准的 Bash、工具调用中断后的恢复、上下文压缩、Skills、MCP、权限策略、Evals 和 macOS Seatbelt 沙箱，中英双语。",
+    "quote": "十五章节，把 agent 的黑箱拆成零件。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1252848",
+    "published": "2026-10-30",
+    "uid": "128c907725a02e691e5b4cf84bdf6328"
+  },
+  {
+    "title": "macOS 27 蓝牙键盘延迟，被一个小工具改回来了",
+    "content": "升级 macOS 27 后蓝牙键盘延迟高、丢字，作者查到系统给 LE 键盘下发 peripheralLatency: 22，两次按键间最长 345ms；蓝牙 5.3 的 subrating 老键盘不支持，请求失败后延迟也不回滚，系统没有开关。KeyAwake 用一条 CoreBluetooth 连接把延迟压回 0：菜单栏常驻、只处理键盘、空闲 3 分钟释放链路，还记录信号强度与丢包 CSV。",
+    "quote": "系统给你 345 毫秒，自己写个驱动抢回来。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1252823",
+    "published": "2026-10-30",
+    "uid": "94e825b2a23672ea2989674c05eedbab"
+  },
+  {
+    "title": "dsh-mixer：把几个并行会话平铺到一屏，不用来回切",
+    "content": "同时跑几个 dsh 会话的人都有这个痛：切来切去看进度，A 聊着就忘了 B、C 卡在权限审批上，白等半天，脑子里的上下文也乱了。作者写了个 dsh-mixer 插件，把所有会话平铺在一屏，右上角进「调音台」视图，Cmd/Ctrl+Alt+1..9 跳格、[ ] 上下走；子栏能拖排序、调宽度，点 solo 临时专注一个，退出就回全局。要 DSH 0.2.1 以上 Web 端。",
+    "quote": "效率瓶颈不是模型，是你自己的切换成本。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1252978",
+    "published": "2026-10-30",
+    "uid": "3db136529193967ed1e5fb28fd9b11e6"
+  },
+  {
+    "title": "MPE：画一张流程图，直接变成 Cursor 能调的 MCP 工具",
+    "content": "给 Cursor / Claude Desktop 写自定义 MCP 工具，得配环境、写 schema、处理 stdio。MPE 用 Rust + Tauri 2 做画布：拖出「HTTP 登录换 token → 查订单 → 格式化」的流程，一键暴露成 MCP Tool；参数、耗时、返回都摊在面板上，还能断点单步。除 HTTP 外还接 Redis、gRPC 和 WebSocket。",
+    "quote": "工具调用的黑盒，该有人拆开看看。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1252794",
+    "published": "2026-10-30",
+    "uid": "4115e0abc6a898af91664f0869c8e9ba"
+  },
+  {
+    "title": "449MB 决策模型接管客服工单分诊，不再解析 LLM 输出",
+    "content": "客服工单要判断三件事：归谁、要不要退款、有多急。常规做法是让 LLM 输出再写解析器，然后为它答「Billing（大概）」再写第二个解析器。NobodyWho 改用决策模型：选项预先给定，模型只输出每个选项的概率，一个 token 都不生成，所以没法凭空发明第四个部门。底层是 Apache-2.0 的 Laya，Q8_0 的 GGUF 只有 449MB，可以在本地跑。",
+    "quote": "不生成 token 的模型，编不出第四个部门。",
+    "source": "Dev.to",
+    "url": "https://dev.to/pielounw/triage-support-tickets-locally-with-a-449-mb-decision-model-3525",
+    "published": "2026-10-30",
+    "uid": "64aff1bd3e7f322f7e277172ee411d83"
+  },
+  {
+    "title": "Recto：把一堆再没打开过的 AI 对话排成一本书",
+    "content": "笔记本里躺着一百万字符的 AI 对话、十七个会话，当时有用，后来再没打开过——数据都在，JSONL 和导出 zip 一个不少，只是没法读。作者做了 Recto：把导出或本地 Claude Code 历史排成一本书，自动分章、生成目录和一句话摘要，全文搜索直接跳到段落，四色高亮加批注，长代码和表格走侧边栏。全部在本地 Mac 上跑。",
+    "quote": "存了一百万字，读完的只有当时那遍。",
+    "source": "Dev.to",
+    "url": "https://dev.to/recto/i-built-a-reader-for-the-ai-conversations-i-never-re-read-5gb8",
+    "published": "2026-10-30",
+    "uid": "2b33d8f221cc17088f6ff2371bf96e52"
+  },
+  {
+    "title": "同一张 H100，大厂报价是最便宜渠道的 3 倍",
+    "content": "FastGPU 拉了 10 月 29 日 16:20 UTC 的实时价格，挑出 18 张既在 AWS/GCP/Azure/Oracle 又在别处能租到的卡。同一张 H100：GCP 按需最低 $5.38/卡时，Lium 上 $1.80。按卡比下来，大厂最低价比全市场地板价中位数贵 3.2 倍，最夸张的 V100 是 35.6 倍（$2.49 对 Clore.ai 的 $0.07）。",
+    "quote": "买的是同一张卡，付的是品牌溢价。",
+    "source": "Dev.to",
+    "url": "https://dev.to/fastgpu/the-big-clouds-charge-a-median-32x-the-cheapest-gpu-rate-18-gpus-compared-3ji5",
+    "published": "2026-10-30",
+    "uid": "bc3d289395a91b1f222b05c2d93f0ae9"
+  },
+  {
+    "title": "四亿阿拉伯语用户，多数 AI 客服还在把布局翻错",
+    "content": "全球 4 亿多阿拉伯语使用者，约 3.48 亿上网，但前 500 大网站里只有约 1% 提供完整阿拉伯语支持；阿拉伯语网民占 5%，内容只占 0.6%。作者把阿拉伯语 RTL 当一等公民做进客服工具，总结出三个坑：RTL 是布局问题（气泡方向会整体翻错）、方言是模型问题、变音符号是歧义问题，多数工具三个都没解。十分之九的沙特用户宁可选阿拉伯语 App。",
+    "quote": "翻译完就上线，布局还在右边站着。",
+    "source": "Dev.to",
+    "url": "https://dev.to/lixingliangsy/400-million-arabic-speakers-and-most-ai-support-still-flips-the-layout-wrong-2nbn",
+    "published": "2026-10-30",
+    "uid": "912d9bfd4900d785ca53ad93f4d16130"
+  },
+  {
+    "title": "别在聊天框里修 agent：改完就忘，同事还不知道",
+    "content": "内部 agent 最早的错误：在对话里修它。你纠正一句，这次好了，下个会话忘光；同事的 agent 压根没听过这条。一周后有人用另一种说法再修一遍。作者改成把规则写进 agent 会读的文件里：发现答错先问「哪份文件本该说这句话」，然后改那份文件。规矩可评审、可追溯、能看出两条是否打架，新会话和同事的 agent 下次都照着执行。",
+    "quote": "在聊天框里立的规矩，出框就失效。",
+    "source": "Dev.to",
+    "url": "https://dev.to/hubzoid/stop-fixing-your-ai-agents-in-chat-4m4",
+    "published": "2026-10-30",
+    "uid": "c93fb61d2c18078585dd7a0611f98450"
+  }
+]
