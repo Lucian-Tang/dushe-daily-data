@@ -1,0 +1,137 @@
+[
+  {
+    "title": "AI 接管告警之后，SRE 正在被「去技能化」",
+    "content": "AI 接管 95% 的故障响应后，人还剩下处理那 5% 关键问题的能力吗？SigNoz 拿 1983 年 Lisanne Bainbridge 的《自动化的讽刺》当框架：自动化越可靠，操作员越缺少练习，真出事时反而更慌。文章讨论 SRE 把排障外包给模型后，对系统内部状态的理解、手工验证假设的能力如何一点点退化，并追问下一次没见过的故障来之前，有没有人会先发现这件事。",
+    "quote": "故障都让 AI 修，那你只会修 AI 修坏的。",
+    "source": "HN Front Page",
+    "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
+    "published": "2026-10-31",
+    "uid": "dev_3f18ecd4"
+  },
+  {
+    "title": "Tangled：第一个真正联邦的代码托管，Git 加 AT Protocol",
+    "content": "Tangled 讲「联邦式代码托管」：用 Git 搬代码、AT Protocol 做协作层，可以只自托管 Git 和 CI runner，也能整套 API 与前端自己跑，仍然跟别人互通。它把邮件加 Git、GitHub、AT Protocol 排成三代，认为中心化 forge 的信任成本正在暴露；knot、spindle 都可替换，甚至能跑在 Cloudflare Workers 上。",
+    "quote": "代码托管搬回自己家，GitHub 少收一份租。",
+    "source": "HN Front Page",
+    "url": "https://tangled.org/blog/forge/",
+    "published": "2026-10-31",
+    "uid": "dev_05331f4f"
+  },
+  {
+    "title": "Azure 的软肋：五个漏洞全部实现跨租户接管",
+    "content": "Binary Security 续写 Azure API Connections（Logic Apps 组件）系列：又找到五处可跨租户接管他人连接的问题。核心是拿到某个 connection 标识，就能读写全球任意其他连接背后的资源：Key Vault、Azure SQL，以及 Jira、Salesforce。作者认为唯一挡住利用的是层层输入校验，而边界情况补不完，隔离得做在架构层。",
+    "quote": "五层输入校验，挡不住一次跨租户。",
+    "source": "HN Front Page",
+    "url": "https://www.binarysecurity.no/posts/2026/10/one-root-case",
+    "published": "2026-10-31",
+    "uid": "dev_176bb41e"
+  },
+  {
+    "title": "官方 Claude Code 扩展被植入后门，Cursor 市场已下架",
+    "content": "Phorion 称 Cursor 市场的官方 Claude Code for VS Code 扩展 2.1.313 被植入后门：安装后配置 SSH 远程登录并持久化，覆盖 macOS、Linux、Windows。Cursor 已下架该版本，npm 与 VS Code 市场同步撤包。文章还，还指出攻击者一处疏漏：普通用户跑 systemsetup -getremotelogin 会直接报权限错误。",
+    "quote": "官方扩展也会开后门，签名不是护身符。",
+    "source": "HN Front Page",
+    "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+    "published": "2026-10-31",
+    "uid": "dev_1b56a4a1"
+  },
+  {
+    "title": "Northflank 被入侵：通告让全体用户假定密钥已泄露",
+    "content": "Northflank 状态页通报安全事件：10 月 30 日 11:43 收到 Wiz 告警，随后打网络策略补丁，13:00 起请 Wiz CIRT 介入，但平台、网络、证书、构建等组件全部宕机。官方结论很直接：所有用户应假定环境变量已被解密，立即轮换全部密钥；Postgres 与 MongoDB 已开启密钥轮换，并建议关掉 addon 的公网暴露。已有用户报告 AI key 被盗刷。",
+    "quote": "让你「假定已泄露」，这通告比宕机还狠。",
+    "source": "HN Front Page",
+    "url": "https://status.northflank.com",
+    "published": "2026-10-31",
+    "uid": "dev_2c0e4b02"
+  },
+  {
+    "title": "两个小网络在一块 Pico 2W 上边生成游戏边玩",
+    "content": "有人把「世界模型加玩家」塞进一块 Raspberry Pi Pico 2 W：一个网络按当前帧和动作预测下一帧与奖励，另一个网络看着生成的画面选动作，画面和玩法全由两个小网络实时产出。动机是研究 looped transformer——同一个 block 用同一套权重反复跑，省内存，看能否小到跑在单片机上。仓库带 Python 与 Rust 实现和采样视频。",
+    "quote": "世界模型小到塞进单片机，游戏机要失业。",
+    "source": "HN Front Page",
+    "url": "https://github.com/SheepSeb/tinyworldformer",
+    "published": "2026-10-31",
+    "uid": "dev_46ed0c62"
+  },
+  {
+    "title": "Martin Fowler：我读到一半就想关掉，因为那是 LLM 腔",
+    "content": "Fowler 写「LLM Voice」：读文章时越来越常出现那种说不清的熟悉感——不是破折号，是那些撑着场面的挂毯式比喻——然后阅读欲望迅速衰减。他对「AI 文本检测器」持怀疑：等你要靠工具判断，已经晚了；而且语言本来在变，嫌弃新词常常只是代沟。他的建议很朴素：作者要格外警惕这种腔调，尤其别用它来写原本该自己写的东西。",
+    "quote": "不是破折号，是那些撑场面的挂毯。",
+    "source": "HN Front Page",
+    "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+    "published": "2026-10-31",
+    "uid": "dev_8862fab5"
+  },
+  {
+    "title": "扒了本周 HN 的 12 个新站：病毒组 184 分，SEO 组 49 分",
+    "content": "作者用三个免费接口拆本周 HN 的 12 个新站：Algolia API 拿热度、RDAP 查域名注册日、sitemap.xml 数内容页。结论反直觉：热度最高的一批基本不做 SEO，624 分的站域名才注册 7 天、零 sitemap，病毒组平均 184 分；认真铺内容页的两个站（574、583 页）只有 60 和 38 分。HN 热度只值一天，内容页能撑三年。",
+    "quote": "热帖火一天，sitemap 活三年。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1253315",
+    "published": "2026-10-31",
+    "uid": "dev_bfbb7292"
+  },
+  {
+    "title": "cc-pair：让 Claude Code 和 Codex 互相审代码",
+    "content": "自己审自己刚写的代码，agent 基本都会放行。cc-pair 的做法是把 Claude Code 和 Codex 配成一对：一个写、一个审，写完把改动发给对方，对方给「通过」或「要改」，作者逐条核实、不同意要写理由，再送复审，默认三轮不过就交人裁决。角色可互换，两个 agent 通过共享目录里的编号文件通信，往返记录全落盘可查。需要 Node 22+，两个 CLI 都已登录。",
+    "quote": "自己批自己的作业，当然全给过。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1253311",
+    "published": "2026-10-31",
+    "uid": "dev_e7618dcd"
+  },
+  {
+    "title": "为了手机打印不糊，他手搓了 600/1200DPI 点阵引擎",
+    "content": "受不了手机打印的锯齿和 Word 变字体，这位开发者手搓了一整套打印栈：绕开安卓 150~300 DPI 的灰度转换，本地按 600/1200 DPI 光栅化后自适应二值化，生成 1-Bit 点阵流走 RAW 9100 或 IPP 631 直驱打印机，落纸效果对齐 USB 直连；再配自研 Word 排版引擎、30 款 Windows 字库和免公网 IP 的打印网关。",
+    "quote": "为了打印不糊，自己造了半条打印链路。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1253015",
+    "published": "2026-10-31",
+    "uid": "dev_0f25356a"
+  },
+  {
+    "title": "OpenWhispr 加 Groq 加 Workers AI，自建免费语音输入",
+    "content": "每天和 AI 高频对话，打字成了瓶颈，但 Typeless 订阅偏贵。这套自建方案分三层：客户端用开源 OpenWhispr 管录音和热键输入，识别用 Groq 的 Whisper（快、免费额度宽裕），再用 Cloudflare Workers AI 加开源模型修赘字和标点。作者说连这篇分享都是「说」出来的，个人日常用免费额度就够，完整搭建流程写在博客里。",
+    "quote": "免费额度够用，嘴终于比手快了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1253258",
+    "published": "2026-10-31",
+    "uid": "dev_7ff51ea6"
+  },
+  {
+    "title": "4.5MB 安卓 App 的冷启动：先用 adb 量，再改真正慢的地方",
+    "content": "这篇不讲泛泛的优化建议，先给一个能在自己机器上复现的数字。冷启动要用 adb shell am force-stop 强杀进程，再 am start -W 拿 ThisTime、TotalTime、WaitTime，否则测到的是热启动，数字虚好看。作者在一个 4.5 MB 的开源 App 上按这个流程测，只修了真正拖慢首帧的两处，顺带解释了三个时间字段在 AOSP 里的含义。",
+    "quote": "没量过的冷启动，不配谈优化二字。",
+    "source": "Dev.to",
+    "url": "https://dev.to/weavrikx/cold-start-in-a-45-mb-foss-android-app-measure-it-with-adb-then-fix-whats-actually-slow-2jfg",
+    "published": "2026-10-31",
+    "uid": "dev_70daae2c"
+  },
+  {
+    "title": "生产环境的 MCP：schema、沙箱，和一道人工审批闸",
+    "content": "大多数 agent demo 停在 happy path：模型选工具、工具回 JSON、大家鼓掌。可真让 agent 调 refund_order、run_sql、send_invoice，你建的就不是聊天机器人，而是一个听从不信任文本、自带权限的 RPC 面。作者给出自己的生产基线：严格 schema、沙箱执行、最小作用域凭证，以及任何动钱动数据之前的人工审批闸门。",
+    "quote": "Agent 能退款那天，它就不是聊天框了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/muhammadalimughal/building-production-mcp-servers-tool-calling-ai-agents-sandboxing-schemas-approval-gates-7nb",
+    "published": "2026-10-31",
+    "uid": "dev_facb5719"
+  },
+  {
+    "title": "Impeccable：给编码 agent 一套设计词汇，拦住 AI 味",
+    "content": "Impeccable 自称「给编码 agent 的设计词汇」：用 polish 和 bolder 调方向，用 critique 和 audit 做评审，目标是在 AI 界面发货前拦住 slop 味。npx 装完跑 /impeccable init，覆盖 Claude Code、Cursor、Codex、Copilot。README 用同一个别墅页面做前后对比，差别就是「模板感」与「有人设计过」。",
+    "quote": "AI 不缺像素，缺的是审美词汇表。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/pbakaus/impeccable",
+    "published": "2026-10-31",
+    "uid": "dev_3e2d5fdd"
+  },
+  {
+    "title": "Matt Pocock 开源自己每天用的 agent skills",
+    "content": "TypeScript 圈的老面孔 Matt Pocock 开源了自己每天在用的 agent skills，主打「真工程，不是 vibe coding」。他认为 GSD、BMAD、Spec-Kit 这类流程框架接管了过程，也顺手拿走控制权，出问题很难定位；所以这些 skill 刻意做小、可改、可组合，不绑定模型，鼓励你 fork 成自己的。",
+    "quote": "流程框架给你安全感，也拿走方向盘。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/mattpocock/skills",
+    "published": "2026-10-31",
+    "uid": "dev_bd0437e3"
+  }
+]
