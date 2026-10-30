@@ -1,0 +1,227 @@
+[
+  {
+    "title": "AI 接管告警之后，SRE 正在被「去技能化」",
+    "content": "AI 接管 95% 的故障响应后，人还剩下处理那 5% 关键问题的能力吗？SigNoz 拿 1983 年 Lisanne Bainbridge 的《自动化的讽刺》当框架：自动化越可靠，操作员越缺少练习，真出事时反而更慌。文章讨论 SRE 把排障外包给模型后，对系统内部状态的理解、手工验证假设的能力如何一点点退化，并追问下一次没见过的故障来之前，有没有人会先发现这件事。",
+    "quote": "故障都让 AI 修，那你只会修 AI 修坏的。",
+    "source": "HN Front Page",
+    "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
+    "published": "2026-10-31",
+    "uid": "bb369b2281c045746500a1f253129031"
+  },
+  {
+    "title": "Tangled：第一个真正联邦的代码托管，Git 加 AT Protocol",
+    "content": "Tangled 讲「联邦式代码托管」：用 Git 搬代码、AT Protocol 做协作层，可以只自托管 Git 和 CI runner，也能整套 API 与前端自己跑，仍然跟别人互通。它把邮件加 Git、GitHub、AT Protocol 排成三代，认为中心化 forge 的信任成本正在暴露；knot、spindle 都可替换，甚至能跑在 Cloudflare Workers 上。",
+    "quote": "代码托管搬回自己家，GitHub 少收一份租。",
+    "source": "HN Front Page",
+    "url": "https://tangled.org/blog/forge/",
+    "published": "2026-10-31",
+    "uid": "443d56e727047ad4cc1dfa201bfb0157"
+  },
+  {
+    "title": "Azure 的软肋：五个漏洞全部实现跨租户接管",
+    "content": "Binary Security 续写 Azure API Connections（Logic Apps 组件）系列：又找到五处可跨租户接管他人连接的问题。核心是拿到某个 connection 标识，就能读写全球任意其他连接背后的资源：Key Vault、Azure SQL，以及 Jira、Salesforce。作者认为唯一挡住利用的是层层输入校验，而边界情况补不完，隔离得做在架构层。",
+    "quote": "五层输入校验，挡不住一次跨租户。",
+    "source": "HN Front Page",
+    "url": "https://www.binarysecurity.no/posts/2026/10/one-root-case",
+    "published": "2026-10-31",
+    "uid": "3233413c4b34eb470b5744381a5a3b43"
+  },
+  {
+    "title": "官方 Claude Code 扩展被植入后门，Cursor 市场已下架",
+    "content": "Phorion 称 Cursor 市场的官方 Claude Code for VS Code 扩展 2.1.313 被植入后门：安装后配置 SSH 远程登录并持久化，覆盖 macOS、Linux、Windows。Cursor 已下架该版本，npm 与 VS Code 市场同步撤包。文章还指出攻击者一处疏漏：普通用户跑 systemsetup -getremotelogin 会直接报权限错误。",
+    "quote": "官方扩展也会开后门，签名不是护身符。",
+    "source": "HN Front Page",
+    "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+    "published": "2026-10-31",
+    "uid": "6890dfa24a77946fffdf770b8996115e"
+  },
+  {
+    "title": "Northflank 被入侵：通告让全体用户假定密钥已泄露",
+    "content": "Northflank 状态页通报安全事件：10 月 30 日 11:43 收到 Wiz 告警，随后打网络策略补丁，13:00 起请 Wiz CIRT 介入，但平台、网络、证书、构建等组件全部宕机。官方结论很直接：所有用户应假定环境变量已被解密，立即轮换全部密钥；Postgres 与 MongoDB 已开启密钥轮换，并建议关掉 addon 的公网暴露。已有用户报告 AI key 被盗刷。",
+    "quote": "让你「假定已泄露」，这通告比宕机还狠。",
+    "source": "HN Front Page",
+    "url": "https://status.northflank.com",
+    "published": "2026-10-31",
+    "uid": "cf1c8e54dd8758a3f4a81b9085a59eaa"
+  },
+  {
+    "title": "两个小网络在一块 Pico 2W 上边生成游戏边玩",
+    "content": "有人把「世界模型加玩家」塞进一块 Raspberry Pi Pico 2 W：一个网络按当前帧和动作预测下一帧与奖励，另一个网络看着生成的画面选动作，画面和玩法全由两个小网络实时产出。动机是研究 looped transformer——同一个 block 用同一套权重反复跑，省内存，看能否小到跑在单片机上。仓库带 Python 与 Rust 实现和采样视频。",
+    "quote": "世界模型小到塞进单片机，游戏机要失业。",
+    "source": "HN Front Page",
+    "url": "https://github.com/SheepSeb/tinyworldformer",
+    "published": "2026-10-31",
+    "uid": "69b74bd69c4ba10d9fcffd86b0a04a35"
+  },
+  {
+    "title": "Martin Fowler：我读到一半就想关掉，因为那是 LLM 腔",
+    "content": "Fowler 写「LLM Voice」：读文章时越来越常出现那种说不清的熟悉感——不是破折号，是那些撑着场面的挂毯式比喻——然后阅读欲望迅速衰减。他对「AI 文本检测器」持怀疑：等你要靠工具判断，已经晚了；而且语言本来在变，嫌弃新词常常只是代沟。他的建议很朴素：作者要格外警惕这种腔调，尤其别用它来写原本该自己写的东西。",
+    "quote": "不是破折号，是那些撑场面的挂毯。",
+    "source": "HN Front Page",
+    "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+    "published": "2026-10-31",
+    "uid": "e58642a94bbadda3c057bf7fc8379a81"
+  },
+  {
+    "title": "Keyward：一个终端界面，把 SSH 密钥和 config 一起管了",
+    "content": "SSH 密钥散在 ~/.ssh、主机写在 config 里，权限对不对全靠猜——Keyward 用一个键盘驱动的终端界面，把密钥、主机、known_hosts 和备份收进同一屏。它会扫描密钥类型与指纹、检查是否设了密码，再给整套配置打 A 到 F 的安全分；改 config 时保留注释和缩进，还自动留下最近 5 个版本。单个静态二进制，无守护进程、无网络请求。",
+    "quote": "密钥散成一地，出事才想起没审计。",
+    "source": "HN Show HN",
+    "url": "https://github.com/gateway-of-last-resort/keyward",
+    "published": "2026-10-31",
+    "uid": "245e00d4ebcb14050677e517d500722a"
+  },
+  {
+    "title": "Dbprint：把数据库的『潜规则』写成文本，让 Agent 少猜",
+    "content": "Agent 读得懂 migration，却读不懂列里的业务含义：revenue_cents 是毛收入还是净收入、status 有两种拼法、legacy_uid 早已废弃。Dbprint 先离线测量数据库，导出 DDL、关联关系和列级统计，再让 Agent 把数字背后的含义写成注释，随代码提交。之后每次会话通过 MCP 离线读取，不用连库、不暴露凭据；作者测试称答错率降了 80%。",
+    "quote": "Schema 只告诉你形状，不告诉你坑在哪。",
+    "source": "HN Show HN",
+    "url": "https://github.com/jakubro/dbprint",
+    "published": "2026-10-31",
+    "uid": "c13bfde550dd75eee84016f7a79ad792"
+  },
+  {
+    "title": "Omneum：本地运行的上下文控制面，不读原文也能判断该信谁",
+    "content": "上下文窗口变长，推理却不一定变好——检索回来的证据互相抄、来源不可靠，都会让答案慢慢跑偏。Omneum 在本地建一张 provenance 图，迭代计算来源可靠度和论点支持度，再按问题相关性与论点覆盖度，在 token 预算内重建上下文。它做的是『文本盲评』：只看结构化观测，不读原文字符串、也不调用 LLM 当裁判。观测默认存 SQLite 或 Postgres。",
+    "quote": "上下文塞得越满，废话也跟着进来。",
+    "source": "HN Show HN",
+    "url": "https://github.com/cole-h06/omneum",
+    "published": "2026-10-31",
+    "uid": "5c27198d7c8b00944e64c9c7bf2e3b61"
+  },
+  {
+    "title": "Xazz：给 AI 数据管线加一道编译期与策略双重闸门",
+    "content": "Xazz 是一门编译到 Rust 的脚本语言，专治 AI 数据管线的『跑起来才发现』：类型在编译期检查，空值必须显式处理；执行前先过静态策略门，直接标识符、PII/密钥字面量、没做差分隐私的敏感聚合都会被拦下。withDp 按租户记 ε/δ 预算，超了拒绝查询；每次运行追加 SHA-256 审计链。官方称 22.8 万到 409 万行数据上比 pandas 快 2 到 3.8 倍。",
+    "quote": "等跑完才发现数据脏，账单已经付了。",
+    "source": "HN Show HN",
+    "url": "https://github.com/x1zzdev/Xazz",
+    "published": "2026-10-31",
+    "uid": "2260c38eb33f39292b162d8598ae3a85"
+  },
+  {
+    "title": "stat_pg：把每秒十亿条指标塞回 PostgreSQL",
+    "content": "为了数几个事件，就要再养一套时序数据库、聚合守护进程和同步管线？stat_pg 换个思路：以原生 background worker 的形式，把 StatsD 风格的高速指标写入引擎嵌进 PostgreSQL。它不再需要外部组件搬运数据，指标直接落在库里，查询和事务还是那套 Postgres。作者把优化过程也写成了长文，适合被『可观测性技术栈越堆越高』折磨过的团队看看。",
+    "quote": "为几个计数再养一套数据库，纯属自找麻烦。",
+    "source": "HN Show HN",
+    "url": "https://statpg.com/",
+    "published": "2026-10-31",
+    "uid": "0473a356e394507c1d1868362389ba7f"
+  },
+  {
+    "title": "Cb2026：用 Rust 重走 2004 年那台分布式象棋机",
+    "content": "2004 年，Carlos 和 Colin Frayn 用全球志愿者贡献的机器拼出 ChessBrain，让一台分布式象棋计算机和特级大师 Peter Heine Nielsen 对弈。二十多年后，Carlos 用 Rust 重写这套引擎，项目叫 Cb2026：既复盘当年的分布式思路，也把它做成今天能编译、能跑的代码。对象棋引擎、分布式计算和老项目考古爱好者，都是一份有意思的样本。",
+    "quote": "二十年前的分布式野心，用 Rust 再跑一遍。",
+    "source": "HN Show HN",
+    "url": "https://github.com/cjus/chessengine",
+    "published": "2026-10-31",
+    "uid": "97079dccc2745990f86863e0a7945337"
+  },
+  {
+    "title": "Impeccable：给编码 agent 一套设计词汇，拦住 AI 味",
+    "content": "Impeccable 自称「给编码 agent 的设计词汇」：用 polish 和 bolder 调方向，用 critique 和 audit 做评审，目标是在 AI 界面发货前拦住 slop 味。npx 装完跑 /impeccable init，覆盖 Claude Code、Cursor、Codex、Copilot。README 用同一个别墅页面做前后对比，差别就是「模板感」与「有人设计过」。",
+    "quote": "AI 不缺像素，缺的是审美词汇表。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/pbakaus/impeccable",
+    "published": "2026-10-31",
+    "uid": "be8acfaf11180d2a2c4da5ed4e8832e2"
+  },
+  {
+    "title": "扒了本周 HN 的 12 个新站：病毒组 184 分，SEO 组 49 分",
+    "content": "作者用三个免费接口拆本周 HN 的 12 个新站：Algolia API 拿热度、RDAP 查域名注册日、sitemap.xml 数内容页。结论反直觉：热度最高的一批基本不做 SEO，624 分的站域名才注册 7 天、零 sitemap，病毒组平均 184 分；认真铺内容页的两个站（574、583 页）只有 60 和 38 分。HN 热度只值一天，内容页能撑三年。",
+    "quote": "热帖火一天，sitemap 活三年。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1253315",
+    "published": "2026-10-31",
+    "uid": "80037912e08de503633f344b4f870f7e"
+  },
+  {
+    "title": "cc-pair：让 Claude Code 和 Codex 互相审代码",
+    "content": "自己审自己刚写的代码，agent 基本都会放行。cc-pair 的做法是把 Claude Code 和 Codex 配成一对：一个写、一个审，写完把改动发给对方，对方给「通过」或「要改」，作者逐条核实、不同意要写理由，再送复审，默认三轮不过就交人裁决。角色可互换，两个 agent 通过共享目录里的编号文件通信，往返记录全落盘可查。需要 Node 22+，两个 CLI 都已登录。",
+    "quote": "自己批自己的作业，当然全给过。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1253311",
+    "published": "2026-10-31",
+    "uid": "9e2d66617cb9baf7ac6243e1abd75292"
+  },
+  {
+    "title": "为了手机打印不糊，他手搓了 600/1200DPI 点阵引擎",
+    "content": "受不了手机打印的锯齿和 Word 变字体，这位开发者手搓了一整套打印栈：绕开安卓 150~300 DPI 的灰度转换，本地按 600/1200 DPI 光栅化后自适应二值化，生成 1-Bit 点阵流走 RAW 9100 或 IPP 631 直驱打印机，落纸效果对齐 USB 直连；再配自研 Word 排版引擎、30 款 Windows 字库和免公网 IP 的打印网关。",
+    "quote": "为了打印不糊，自己造了半条打印链路。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1253015",
+    "published": "2026-10-31",
+    "uid": "d4dee07833671952cb9d3fa3fe9a1744"
+  },
+  {
+    "title": "OpenWhispr 加 Groq 加 Workers AI，自建免费语音输入",
+    "content": "每天和 AI 高频对话，打字成了瓶颈，但 Typeless 订阅偏贵。这套自建方案分三层：客户端用开源 OpenWhispr 管录音和热键输入，识别用 Groq 的 Whisper（快、免费额度宽裕），再用 Cloudflare Workers AI 加开源模型修赘字和标点。作者说连这篇分享都是「说」出来的，个人日常用免费额度就够，完整搭建流程写在博客里。",
+    "quote": "免费额度够用，嘴终于比手快了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1253258",
+    "published": "2026-10-31",
+    "uid": "832d4ae55fbb335e1c710f90f592a952"
+  },
+  {
+    "title": "Mktero：把论文 PDF 读成能跳回原文的 Markdown",
+    "content": "双栏 PDF 读完左栏要滚回顶部找右栏，公式表格复制出来是乱码，核对一个数字还得一页页翻——Mktero 就是冲这些毛病来的。它是 Zotero 7 到 10 的开源扩展，右键 PDF 就能在标签页里读重排后的 Markdown：公式、表格、图片、脚注保留，每段带页码和区域映射，可一键跳回原位置。高亮与 Zotero 注释双向同步，还能校对 OCR 错字、复制 LaTeX、接自己的翻译模型。",
+    "quote": "论文没变短，只是终于不用来回滚了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1253294",
+    "published": "2026-10-31",
+    "uid": "515ff49949795d266383077096a3fb17"
+  },
+  {
+    "title": "VAQIRA：独立产品收入榜，每个数字都能点回原文",
+    "content": "『某独立产品月入几万刀』的说法满天飞，真要找出处却很难。VAQIRA 只做一件事：收录创始人或官方公开过的收入数字，每条都链到原文，按最近 30 天收入排名，每天更新一期。它坚持只按原文口径记录，不估算、不换算；名次不卖，已发布的期不回改；数据以 CC BY 4.0 开放，能直接下载 JSON 和 CSV。对想看真实独立开发者营收、又厌倦了二手吹水的人，是个干净的参照。",
+    "quote": "收入数字不写出处，基本等于讲故事。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1253283",
+    "published": "2026-10-31",
+    "uid": "eaa642fb45a62caeca3dc1e95100a189"
+  },
+  {
+    "title": "4.5MB 安卓 App 的冷启动：先用 adb 量，再改真正慢的地方",
+    "content": "这篇不讲泛泛的优化建议，先给一个能在自己机器上复现的数字。冷启动要用 adb shell am force-stop 强杀进程，再 am start -W 拿 ThisTime、TotalTime、WaitTime，否则测到的是热启动，数字虚好看。作者在一个 4.5 MB 的开源 App 上按这个流程测，只修了真正拖慢首帧的两处，顺带解释了三个时间字段在 AOSP 里的含义。",
+    "quote": "没量过的冷启动，不配谈优化二字。",
+    "source": "Dev.to",
+    "url": "https://dev.to/weavrikx/cold-start-in-a-45-mb-foss-android-app-measure-it-with-adb-then-fix-whats-actually-slow-2jfg",
+    "published": "2026-10-31",
+    "uid": "c28e36e8ef71ba817bc2b9e4d4639b29"
+  },
+  {
+    "title": "生产环境的 MCP：schema、沙箱，和一道人工审批闸",
+    "content": "大多数 agent demo 停在 happy path：模型选工具、工具回 JSON、大家鼓掌。可真让 agent 调 refund_order、run_sql、send_invoice，你建的就不是聊天机器人，而是一个听从不信任文本、自带权限的 RPC 面。作者给出自己的生产基线：严格 schema、沙箱执行、最小作用域凭证，以及任何动钱动数据之前的人工审批闸门。",
+    "quote": "Agent 能退款那天，它就不是聊天框了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/muhammadalimughal/building-production-mcp-servers-tool-calling-ai-agents-sandboxing-schemas-approval-gates-7nb",
+    "published": "2026-10-31",
+    "uid": "373a1a9aab8e1029609da06a7f165c28"
+  },
+  {
+    "title": "高并发 API 的乐观并发：别等数据被覆盖了才加锁",
+    "content": "两个用户同时抢最后一件库存，如果都读到『还有 1 件』再各自写回，系统就会超卖。Dev.to 这篇文章把乐观并发控制（OCC）拆成读、校验、提交三段：读时带上版本号，提交时比对版本，冲突就回滚重试，而不是提前把行锁住。作者对比了悲观锁在分布式微服务下的瓶颈，并给出高并发 API 里防止更新丢失的落地写法。",
+    "quote": "先锁再干，还是干完再验，账不一样。",
+    "source": "Dev.to",
+    "url": "https://dev.to/mtahir27/mastering-optimistic-concurrency-for-high-scale-apis-prevent-data-loss-4199",
+    "published": "2026-10-31",
+    "uid": "ce241b8021c50b4c0656dda692e4208c"
+  },
+  {
+    "title": "ghostwalk：给仓库里那些没人再碰的文件写墓志铭",
+    "content": "每个老仓库都有『鬼』：几年没打开的文件、开了没合的分支、前人留下的 TODO 和 FIXME。ghostwalk 用 Python 扫一遍 git 历史，按天数找出这些被遗忘的角落，再用本地小模型给每个『鬼』写一句亡灵节风格的墓志铭，最后生成 ofrenda.md。作者在 kennethreitz/records 上跑了一遍，8 核 CPU、2.9 秒写完 6 条，把代码考古做成了仪式感。",
+    "quote": "代码没删，只是没人敢动，也没人记得。",
+    "source": "Dev.to",
+    "url": "https://dev.to/productivityforge/ghostwalk-an-ofrenda-for-the-forgotten-files-in-your-git-repo-16ma",
+    "published": "2026-10-31",
+    "uid": "f859067dcec985834b8467fc3a10e3b0"
+  },
+  {
+    "title": "Moment：Linux 上的即时回放，按一下 F8 保存刚才那几秒",
+    "content": "游戏里打出好操作，等反应过来再录已经晚了。Moment 常驻托盘，持续保留一段回放缓冲，按 F8 存下之前的画面，F9 截图。片段进本地库，可搜索、收藏，能裁剪首尾并导出 MP4。它用 C++ 和 Qt Quick 写，屏幕采集走 XDG ScreenCast portal 与 PipeWire，索引放 SQLite，导出交给 FFmpeg，主要适配 KDE Plasma 的 Wayland。",
+    "quote": "精彩操作只有一次，录屏软件永远慢半拍。",
+    "source": "Dev.to",
+    "url": "https://dev.to/davi_ranci_0a3815eb957033/moment-instant-replay-for-linux-with-a-clip-library-and-a-simple-editor-2bfd",
+    "published": "2026-10-31",
+    "uid": "1796b4d1dfa3ee2b0aaa654a1c2d89cc"
+  }
+]
