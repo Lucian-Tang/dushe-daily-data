@@ -1,0 +1,227 @@
+[
+  {
+    "title": "63 亿美元、20 分钟：史上最大加密劫案",
+    "content": "Wired 报道，周四美东时间下午 4 点起，黑客在多个链上从 Binance 钱包迅速转走约 63 亿美元，Binance 随即暂停全部充提配合调查。公司与同行称已冻结约一半被盗资金，剩余部分可能无法追回。三家链上追踪公司迅速把矛头指向朝鲜黑客。这是迄今规模最大的一起加密货币盗窃案。",
+    "quote": "中心化交易所的安全，全靠事后冻结。",
+    "source": "HN Front Page",
+    "url": "https://www.wired.com/story/the-dollar63-billion-binance-hack-was-pulled-off-in-just-20-minutes/",
+    "published": "2026-11-01",
+    "uid": "3b58246047dd0bfe8feb5aae8eff04f9"
+  },
+  {
+    "title": "前 Meta 研究员承认：用 BT 下过盗版书训练集",
+    "content": "Meta 盗版书案的联合状态报告披露：2023 年才离职的研究员 Stephen Roller 在上周证词中承认，自己任职期间通过 BitTorrent 下载并有意分发了 Books3——近 20 万本书、来自私人种子站 Bibliotik。此前 Meta 一直表示没通过 BT 获取该数据集；法院去年已认定用书训练 Llama 属合理使用，BT 下载成了作者方仅剩的争议点。",
+    "quote": "训练数据是偷的，模型再强也是赃物。",
+    "source": "HN Front Page",
+    "url": "https://torrentfreak.com/ex-meta-researcher-torrented-pirated-books-dataset-deleted-it-due-to-all-this-litigation/",
+    "published": "2026-11-01",
+    "uid": "d23a99a9ebba2de3b48bcdf7244d22d4"
+  },
+  {
+    "title": "打开一条分享链接，ChatGPT 账号就归别人了",
+    "content": "Parameter 团队十月发现：攻击者用正常的分享功能发一条对话，里面放图表加 HTML Preview。Preview 加载的 MathLive 会在主页面挂一个 postMessage 监听，两者一配合，攻击者的 JS 就跑进 chatgpt.com 的登录态——能列出受害者会话、读没分享过的私聊、把内容外传，甚至直接调 API 改账户。受害者只需点开链接。OpenAI 10 月 26 日修复，定为 P1。",
+    "quote": "最安全的操作，往往是别点链接。",
+    "source": "HN Front Page",
+    "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+    "published": "2026-11-01",
+    "uid": "cf9827198cd4046b14ebdf7539674115"
+  },
+  {
+    "title": "木马开始用大模型给受害者标价",
+    "content": "Talos 披露自删除木马 VOLTA-AUTODOXER：偷完密码、Cookie、钱包助记词、SSH 密钥后，把受害者的地理位置、雇主、出生年、银行卡尾号、UberEats 订单记录整理成结构化证据包，POST 给 OpenRouter，让模型扮演法务情报分析师，输出带「WHAT THEY'RE WORTH」章节的估值报告。模型拒答就轮换三个备胎模型，说明作者早就算到会被拦。",
+    "quote": "AI 不抢饭碗，先给饭碗贴价签。",
+    "source": "HN Front Page",
+    "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
+    "published": "2026-11-01",
+    "uid": "1a31ef5d4a3ce9fcdec1ecfd91328453"
+  },
+  {
+    "title": "DeepSeek 输入 <think>，能看到别人的历史对话",
+    "content": "V2EX 网友贴出：在 DeepSeek 网页版和 App 的输入框里键入 <think> 标签，就能看到其他用户的历史对话内容，发帖时该问题尚未修复。这是典型的渲染与上下文隔离失效——本应只作为内部推理标记的标签，被当成普通输入拼接进了不该出现的上下文里，把别人的会话带了出来。",
+    "quote": "标记语言没管住，隐私就漏成筛子。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1213000",
+    "published": "2026-11-01",
+    "uid": "6c2e9078ff44d4a199ac7432859d3847"
+  },
+  {
+    "title": "curl 加 popen：一个不吃内存的 coding harness",
+    "content": "nullprogram 作者 skeeto 受够了今年的 harness：大多用 Web 技术栈写，动辄吃掉几个 G 内存。他的判断是 harness 本质就是 curl 粘 popen，不该这么重，于是用 C++ 写了 Prospero，资源占用低两个数量级，带 Dear ImGui 停靠界面和暗色主题，不自带模型供应商，得自己接 llama.cpp 或各家 API。支持子代理、远程无头部署，还能看屏幕点鼠标调 GUI。",
+    "quote": "把浏览器塞进终端，是今年最大的浪费。",
+    "source": "HN Front Page",
+    "url": "https://nullprogram.com/blog/2026/10/31/",
+    "published": "2026-11-01",
+    "uid": "878f89c2281bade810c6d08b7f0941b1"
+  },
+  {
+    "title": "Maclet：用 Rust 从零写的 macOS 容器运行时",
+    "content": "不装 Docker Desktop，也不套 Colima：作者用 Rust 加 Swift 直接调 Apple Virtualization Framework，自己实现 Linux namespaces、cgroups v2、OverlayFS 和桥接网络。单文件约 3.6MB，空闲内存不到 150MB，启动约 800ms，Apache/MIT 双许可。刚发布，star 只有个位数。",
+    "quote": "Docker 那 2GB 内存，终于有人不认了。",
+    "source": "HN Show HN",
+    "url": "https://github.com/sumant1122/maclet",
+    "published": "2026-11-01",
+    "uid": "e3c5bc4cb2c2746777f04b7f79466324"
+  },
+  {
+    "title": "Tracegate：只跳过已经被证明可以跳过的测试",
+    "content": "本地 CI 会记录每个测试真正碰过哪些函数、模块和仓库文件，写成 footprint 台账；只有自上次通过以来这些足迹没变，才允许复用结论。规则是先影子运行、样本够了才开跳过、按比例随机抽检，一旦预测失误整条 lane 退回全量，超过 72 小时的足迹不复用，也绝不把红的洗成绿的。作者说这套已在约 2700 个后端测试的私有 monorepo 生产运行。",
+    "quote": "跳过测试当然可以，先拿证据来换。",
+    "source": "HN Show HN",
+    "url": "https://github.com/davidscotttufts/tracegate-ci",
+    "published": "2026-11-01",
+    "uid": "2eef25324052831a378be87a1204833f"
+  },
+  {
+    "title": "ghostwire：在 Linux 上伪造网络故障，专测重试逻辑",
+    "content": "用一个 TUN 设备接管指定地址段，程序完全不用改代码：不管它是跑 ping、发原始 ICMP，还是连数据库、解析 DNS，都能按地址和端口规则变慢、变通或直接不可达，运行中可用 HTTP API 实时改规则，还能设随机种子复现。作者做它是为了测节点选择、重试、故障切换和「离线」提示这些逻辑，不用再靠拔网线碰运气。",
+    "quote": "拔网线测故障，是最原始的迷信。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1253433",
+    "published": "2026-11-01",
+    "uid": "7f01274632fd352479890fefb8224db2"
+  },
+  {
+    "title": "测速 500 兆还卡？他做了个网站查「卡在哪」",
+    "content": "作者家宽测速 500 兆满速，但游戏延迟乱跳、会议断续、git clone 慢，运营商只回「测速没问题」。他做了 1ms.dog：一只柴犬从浏览器跑去 40 多个常用站点测延迟，把国内和海外分开算，判断是线路、本地 Wi-Fi 还是对方服务的问题，还列出 IPv4/IPv6 多个出口。纯静态、MIT，Cloudflare 一键部署。",
+    "quote": "带宽是水管，卡顿是每次拧龙头的手感。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1253432",
+    "published": "2026-11-01",
+    "uid": "e59f109f2ca0af18aef1e48edda311c0"
+  },
+  {
+    "title": "Papilot：在 PDF 上批注，让 AI 改稿再逐条 review",
+    "content": "作者常让 AI 改 LaTeX 论文，但 git diff 只能看到源码变了，打开编译后的 PDF 根本不知道哪页动了。Papilot 把 AI 的每处修改映射回 PDF，直接在版面上批注、逐条接受或拒绝，像 Cursor 一样 review 文档改动。适合不想把整篇稿子交给模型、又要盯住每一处措辞的人。",
+    "quote": "diff 看得懂源码，看不懂排版。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1253422",
+    "published": "2026-11-01",
+    "uid": "74021acc676f5f2ad60d26000636dee9"
+  },
+  {
+    "title": "3 天、12 亿 token：把十几年的股票系统搬上 Web",
+    "content": "V2EX 网友把自己用了十几年的通达信公式决策系统（24 类信号）用 AI 端到端重构成前后端服务：3 天、约 12 亿 token，连 Docker 和阿里云 ECS 一键部署都由 AI 完成，本人一行代码没写也没细看，全程许愿式开发——提需求、AI 写、直接上线，工具是 Claude Code 加 GLM。",
+    "quote": "一行没写还敢上线，胆子比代码大。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1253384",
+    "published": "2026-11-01",
+    "uid": "be6d12cb8623c56c30ba4c3099d98094"
+  },
+  {
+    "title": "停掉赚钱的抄板生意，70 后花半年自研 OBD 设备",
+    "content": "作者在扬州做十几年美国跨境电商，今年 6 月用现成货源在合伙人亚马逊店上架一款汽车 OBD 设备，当天盈利，顺着做一个月能躺赚十几万。但他发现底层是抄板，随时可能被竞品改协议或法务封死，于是主动关店，花半年重做硬件：样品火柴盒大小约 50g，量产后 BOM 目标 30 元，对标美国 89 美元零售价。",
+    "quote": "抄板能赚钱，但赚不到明年这个时候。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1253407",
+    "published": "2026-11-01",
+    "uid": "b44dce378b8c3a4933f82c7e39857ecc"
+  },
+  {
+    "title": "图片转 PPT：让 agent 渲染十几轮，比到对为止",
+    "content": "作者做图片转 PPT，难点不是生成第一版，而是让结果和原图对得上。他的办法是死循环：渲染成图、和原图逐块比对、找出最差的一块、改、再渲染，一张通常十几轮。慢是因为每轮都真渲染，不信模型自述；稳也在这里，差异是量出来的。现在卡在超大图渲染慢和长条图分块后对齐容易错。",
+    "quote": "不信模型自述，只信逐块像素差。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1253442",
+    "published": "2026-11-01",
+    "uid": "52f96ddd196035f3ce330230247eed63"
+  },
+  {
+    "title": "DeepSeek 的编码 agent：把人的注意力当预算",
+    "content": "DeepSeek 开源 dsh-superagent-prototype：跑在单个 GitHub 仓库上、管理后台编码会话、只通过 PR 和 issue 评论沟通。设计目标不是刷 benchmark，而是把人类注意力成本压到最低——让自主 agent 在团队仓库里失败的主要不是能力，是疲劳：二十条通知、四个抢活的草稿 PR、五个含糊的追问。为此把事件流与权限拆成五个原语。",
+    "quote": "agent 最大的成本，是它不停找你。",
+    "source": "Dev.to",
+    "url": "https://dev.to/reidmarlow/why-deepseek-built-its-coding-agent-around-attention-budgets-1896",
+    "published": "2026-11-01",
+    "uid": "6dd542a5e2f42203c17387dc039f0a38"
+  },
+  {
+    "title": "AI 会拿旧版本覆盖人工修改：这个怎么测",
+    "content": "助手基于第 12 版生成了一份完全合法的提案，但保存时第 13 版已经存在——一次无条件写入就把协调员刚改的交付日期改回去了。文章用虚构的共享订单系统给测试设计：在助手读取后插入屏障或可暂停的测试替身，别用 sleep 赌时序；写入契约取最保守的一种，修订号一变就拒绝，让应用给出对比或刷新。",
+    "quote": "并发问题不会因为写代码的是 AI 就消失。",
+    "source": "Dev.to",
+    "url": "https://dev.to/acadify_fef2ecf72cca30a3d/test-the-stale-ai-write-before-it-overwrites-a-human-edit-57m5",
+    "published": "2026-11-01",
+    "uid": "958ffde2d3b510ca91890c7b54e978c7"
+  },
+  {
+    "title": "RepoSéance：给废弃仓库做一次本地尸检",
+    "content": "输入一个本地目录或 ZIP，它先做确定性的仓库考古：目录结构、依赖、git 提交历史、埋着的 TODO/FIXME，全程不执行一行不可信代码；再用本地 embedding 建离线索引，交给 Ollama 上的 Qwen2.5-Coder 之类小模型还原项目用途、入口和架构。回答必须带可点击的文件引用，并把已验证事实和 AI 猜测分开标注。",
+    "quote": "云端不敢碰的老代码，本地慢慢验尸。",
+    "source": "Dev.to",
+    "url": "https://dev.to/vaibhav1819/how-i-built-reposeance-a-local-first-ai-ghost-hunter-that-resurrects-abandoned-codebases-20dh",
+    "published": "2026-11-01",
+    "uid": "64f6020c450079e6857febf51bdb946d"
+  },
+  {
+    "title": "Chrome 146 的 WebMCP：把表单直接交给 agent",
+    "content": "WebMCP（Web Model Context Protocol）让网页通过 document.modelContext 注册可被浏览器内 agent 调用的工具，把 Next.js 表单、搜索框、下单流程显式暴露成结构化能力，而不是让 agent 靠截图和点击去猜。文章讲了 API 形状、注册方式和现有表单的接法，也划了权限边界：哪些动作能自动执行，哪些必须人确认。",
+    "quote": "让 agent 读 DOM 是猜，给接口才叫合作。",
+    "source": "Dev.to",
+    "url": "https://dev.to/wang_david_174ec59aa098bb/chrome-146-webmcp-explained-how-to-expose-your-nextjs-html-forms-to-ai-agents-566i",
+    "published": "2026-11-01",
+    "uid": "5ecefcb850c2327b58e0e58cf22807ed"
+  },
+  {
+    "title": "OpenAI 把融资目标砍了三分之一，缺口算给你看",
+    "content": "据 FT 和 WSJ 报道（OpenAI 未确认）：本轮最初传 300 亿美元、估值 1.4 万亿，后来估值滑到 1.25 万亿，目标降到 200 亿，首轮 close 还可能更低；目前只拿到约 110 亿承诺，大型机构反应冷淡。作者把百分比算了一遍：新目标还差 45%，得转向家族办公室和高净值个人的零售募集。",
+    "quote": "估值是纸面上的数字，缺口是现金。",
+    "source": "Dev.to",
+    "url": "https://dev.to/frankchu/openai-cut-its-funding-target-by-a-third-i-did-the-shortfall-math-h6f",
+    "published": "2026-11-01",
+    "uid": "6153422e3244cf15b53128af0b2db57f"
+  },
+  {
+    "title": "8280 亿美元基建账单，最后落到你的 API 发票上",
+    "content": "五大厂（亚马逊、Alphabet、微软、Meta、SpaceX 加 xAI）2026 年一年就要投 8280 亿美元资本开支，接近美国全年国防预算。代价是轻资产模式崩了：五家里四家自由现金流为负，亚马逊过去十二个月烧掉 420 亿，Meta 转负并计划增发最多 950 亿，微软九年来首次发 250 亿债。文章推演这笔钱会通过云与 API 定价传导给开发者。",
+    "quote": "算力账单不会消失，只会换个抬头。",
+    "source": "Dev.to",
+    "url": "https://dev.to/deanlee/why-big-techs-828-billion-infrastructure-bill-will-hit-your-api-invoice-37ap",
+    "published": "2026-11-01",
+    "uid": "6ca04152ed461c9c2c632f597e4922ad"
+  },
+  {
+    "title": "GCC 怎么把 switch 编译成跳转表，或者不",
+    "content": "一篇拆 GCC 内部 switch lowering 的长文：编译器先把 switch 归一化成范围判断，再按分支数量、取值密度和目标架构成本模型，决定生成跳转表、二分树还是一串比较。文章用实际的中间表示和汇编输出对照，解释为什么同样的 switch，有时编译成一次间接跳转，有时退化成一串条件分支。",
+    "quote": "你以为的 O(1)，编译器未必答应。",
+    "source": "HN Front Page",
+    "url": "https://xoranth.net/gcc-switch/",
+    "published": "2026-11-01",
+    "uid": "d9c2b9b5c4dbaf60422610fb666d0569"
+  },
+  {
+    "title": "superpowers：30.9 万星的 agent 技能框架",
+    "content": "obra/superpowers 是今年最火的 agent 工程化项目之一：一套技能框架加开发方法论，Shell 写成，MIT 许可，去年 10 月建仓，现在 30.9 万星。核心主张是把头脑风暴、需求拆解、子代理驱动开发这些流程固化成可复用的 skill，让 agent 老老实实按 SDLC 走，而不是每次现场即兴发挥。",
+    "quote": "流程写进 skill，agent 才不瞎发挥。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/obra/superpowers",
+    "published": "2026-11-01",
+    "uid": "c3257d531a3c4d8943e81b60e8f94a95"
+  },
+  {
+    "title": "Lightpanda：为 AI 重写的无头浏览器，3.9 万星",
+    "content": "lightpanda-io/browser 用 Zig 从零实现无头浏览器，目标不是给人看网页，而是给 AI 和自动化用：支持 CDP，兼容 Puppeteer 与 Playwright 的调用方式，主打比 Chromium 更低的资源占用和更快的启动速度。AGPL-3.0，3.9 万星，是「浏览器本来就不该渲染给人看」这条路线目前最完整的实现。",
+    "quote": "砍掉给人看的那部分，才算给 AI 用的。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/lightpanda-io/browser",
+    "published": "2026-11-01",
+    "uid": "3e5bc6114122e8e49bc08f401eca533f"
+  },
+  {
+    "title": "紫微斗数开源排盘引擎：1.2 万星的玄学工程",
+    "content": "Renhuai123/ziwei-doushu 是一套 TypeScript 写的紫微斗数排盘引擎，按倪海厦《天纪》体系实现完整排盘算法、四化系统、格局知识库，还带古籍原文数据，配 Next.js 前端。MIT 许可，今年 5 月建仓，已经 1.2 万星——把命理当成一套要处理边界条件的规则引擎来写，意外地严谨。",
+    "quote": "玄学一旦开源，也得讲单元测试。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/Renhuai123/ziwei-doushu",
+    "published": "2026-11-01",
+    "uid": "3fff46d92e864abfb365ed4afd33af11"
+  },
+  {
+    "title": "用 Claude 写项目：它会先告诉你什么做不了",
+    "content": "V2EX 网友对比体验：做一个 electron + Windows 桌面小项目，涉及全局快捷键钩子和窗口聚焦，Claude 默认就知道哪些设计不可行、会自动做 tradeoff，问起时明确说这条路走不通；换 GLM 则死守用户提的需求不反馈，一路照做，最后在平台限制上翻车。差别不在代码质量，在敢不敢反驳需求。",
+    "quote": "会拒绝需求的模型，比听话的值钱。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1250463",
+    "published": "2026-11-01",
+    "uid": "0f77c02b4f79565cb0c1dc38484c78ec"
+  }
+]
