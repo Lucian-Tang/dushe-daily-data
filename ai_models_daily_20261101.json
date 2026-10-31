@@ -1,0 +1,283 @@
+{
+  "date": "2026-11-01",
+  "total": 24,
+  "vendors": [
+    "anthropic",
+    "openai",
+    "meta",
+    "apple",
+    "other"
+  ],
+  "models": {
+    "anthropic": {
+      "displayName": "Anthropic/Claude",
+      "icon": "🧬",
+      "items": [
+        {
+          "uid": "ai_6592fa5e",
+          "title": "Claude 对 Pro 和 Free 用户全面弹身份验证",
+          "content": "V2EX 多名用户报告，Claude 今天对 Pro 和 Free 账户弹出身份验证，有人被要求上传护照，有人被要求传身份证。帖子十几小时内三千多次浏览、三十多条回复：有人当场退订申请退款转用 DeepSeek，有人传完护照「秒封」，也有人暂时没事。讨论普遍认为这是 Anthropic 收紧地区风控，老号同样中招。",
+          "quote": "氪金用户也要验明正身，封号从不看资历。",
+          "source": "V2EX / 问与答",
+          "url": "https://www.v2ex.com/t/1253347",
+          "published": "2026-11-01",
+          "direction": "行业动态"
+        },
+        {
+          "uid": "ai_49760b29",
+          "title": "KYC 收紧催生台湾 Claude 号代开生意",
+          "content": "有 V2EX 用户发帖招揽台湾 Claude 账号代开：本地 KYC、付款、手机验证加 Hinet 家宽 IP 全套，只做 Max 5x，一天开一个，报价约两倍，含 5% 营业税，开票再加 3%。回帖一半求合作，一半质疑人头号能否稳定续费、被封怎么办。正值 KYC 收紧，这门生意需求肉眼可见。",
+          "quote": "风控越严，号商越忙，这就是生态。",
+          "source": "V2EX / Claude",
+          "url": "https://www.v2ex.com/t/1253348",
+          "published": "2026-11-01",
+          "direction": "应用/落地"
+        },
+        {
+          "uid": "ai_1501b967",
+          "title": "有人用 C++ 重写 coding harness：资源省两个数量级",
+          "content": "nullprogram 作者 Chris Wellons 嫌现有 coding harness 都拿 Web 栈写、动辄吃几个 G 内存，自己用 C++ 写了 Prospero，资源占用低两个数量级。它不内置模型供应商，需自接 llama.cpp、OpenRouter 或各家 API，也用不了 Claude 订阅。他称 harness 本质就是 curl 加 popen。",
+          "quote": "一个 curl 加 popen，凭什么吃我 4G 内存。",
+          "source": "HN Front Page / nullprogram",
+          "url": "https://nullprogram.com/blog/2026/10/31/",
+          "published": "2026-11-01",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_f5ac8ce6",
+          "title": "10.7 万星的 claude-mem：给每个 agent 装一层持久记忆",
+          "content": "thedotmack 的 claude-mem 解决一个具体痛点：换 agent、开新窗口，之前讲过的全忘。它记下会话里 agent 的动作，用 AI 压成摘要，下次开工再把相关片段注回上下文。支持 Claude Code、OpenClaw、Codex、Gemini 等十余种 harness，本地 SQLite 加 ChromaDB 检索，TypeScript 编写，已 10.7 万星。",
+          "quote": "记忆外包给插件，脑子还是没长出来。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/thedotmack/claude-mem",
+          "published": "2026-11-01",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_a55ebfcc",
+          "title": "Orkas：桌面上的开源 AI 团队，一个指挥官带 16 个专员",
+          "content": "Orkas 是 MIT 协议的本地优先桌面应用：Commander 把你的目标拆成待办，再派给 16 个内置专家 agent，也能直接接管 Claude Code、Codex、OpenCode、OpenClaw、Hermes。带项目管理、定时自动化和连接器，macOS 与 Windows 双端，可用内置模型或自带 key。6 千星，定位是把「AI 员工」塞进本地而不是云端。",
+          "quote": "一个人配 17 个 AI，管理成本谁算过。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/Orkas-AI/Orkas",
+          "published": "2026-11-01",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_a18c4cce",
+          "title": "Anthropic 让 agent 自动造对抗数据，红队开始自己卷自己",
+          "content": "Anthropic 的 Alignment Science 团队公布实验：让 Claude agent 自动生成训练数据集，目标是让另一个微调模型表现出错位行为，同时躲过接近生产环境的审核器。这是概念验证，不是已上线的安全产品，相关模型也未部署。价值在于把红队从人力时间里解放出来——人类研究员能设计的攻击数量，早就跟不上模型的迭代速度。",
+          "quote": "红队自动化了，蓝队还在排期开评审会。",
+          "source": "Dev.to",
+          "url": "https://dev.to/alifar/anthropic-automates-red-teaming-for-emergent-misalignment-research-10dh",
+          "published": "2026-11-01",
+          "direction": "研究/论文"
+        }
+      ]
+    },
+    "openai": {
+      "displayName": "OpenAI/GPT",
+      "icon": "🔬",
+      "items": [
+        {
+          "uid": "ai_1e357461",
+          "title": "ChatGPT 分享链接可被武器化，点开即被接管账号",
+          "content": "Parameter Labs 披露：攻击者用正常分享功能发布恶意对话，受害者点开链接即执行攻击者控制的 JS，以 chatgpt.com 身份拿到已登录会话。研究者借此枚举对话列表、读出从未分享的私密对话并外传，等于直接接管账号。无需装应用、粘代码或开开发者工具，点开就够了。OpenAI 10 月 26 日修复，定级 P1。",
+          "quote": "点个分享链接，账号就归别人了。",
+          "source": "HN Front Page / Parameter Labs",
+          "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+          "published": "2026-11-01",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "meta": {
+      "displayName": "Meta/LLaMA",
+      "icon": "👁️",
+      "items": [
+        {
+          "uid": "ai_a3049850",
+          "title": "前 Meta 研究员承认曾用 BT 下载盗版 Books3",
+          "content": "一名前 Meta 研究员在加州联邦法院作证，称自己用 BitTorrent 下载过含盗版 Books3 的 AI 训练数据集，且是在职期间所为，后来「因为这一堆诉讼」把副本删了。Meta 承认用 Books3 训练 Llama，但坚称没通过 BT 获取。原告包括 Sarah Silverman、Ta-Nehisi Coates 及多家出版商，案件由法官 Chhabria 合并审理。",
+          "quote": "删得掉本地副本，删不掉庭上口供。",
+          "source": "HN Front Page / TorrentFreak",
+          "url": "https://torrentfreak.com/ex-meta-researcher-torrented-pirated-books-dataset-deleted-it-due-to-all-this-litigation/",
+          "published": "2026-11-01",
+          "direction": "研究/论文"
+        }
+      ]
+    },
+    "apple": {
+      "displayName": "Apple",
+      "icon": "🍎",
+      "items": [
+        {
+          "uid": "ai_f01aa563",
+          "title": "直接在真机 iOS 应用上在线强化学习训 UI 智能体（前沿论文）",
+          "content": "UI 导航智能体多用监督微调或离线强化学习，容易背下静态轨迹、出错就崩；前沿视觉语言模型又太贵。这篇提出在线强化学习框架，直接在真实 iOS 应用上训练，把智能体拆成规划器和 UI Grounding 两个模块，用 LLM-as-a-Judge 同时给步级密集奖励和任务终局奖励，再配合相应优化策略，兼顾成本与恢复能力。",
+          "quote": "在真机上练 agent，总比在截图里意淫强。",
+          "source": "HuggingFace Papers / arXiv",
+          "url": "https://huggingface.co/papers/2610.39264",
+          "published": "2026-11-01",
+          "direction": "研究/论文"
+        }
+      ]
+    },
+    "other": {
+      "displayName": "其他",
+      "icon": "📰",
+      "items": [
+        {
+          "uid": "ai_234f79ee",
+          "title": "窃密木马内置大模型，按「变现价值」给受害者排优先级",
+          "content": "Talos 分析 VOLTA 窃密木马：偷完凭据、会话和加密钱包后，把证据打包发给大模型，按变现价值给受害者资产排序，相当于给黑产配了个情报分析师。模型拒答时自动切换三模型链，说明作者专门针对安全护栏做过工程适配。木马自删除、不留攻击者基础设施。AI 在这里不是辅助功能，而是在替操作者做判断。",
+          "quote": "黑产都上多模型容灾了，防御方还在用 Excel。",
+          "source": "HN Front Page / Cisco Talos",
+          "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
+          "published": "2026-11-01",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_6dacce0f",
+          "title": "Proton CEO 叫停全公司「AI 复审」面谈",
+          "content": "404 Media 报道，Proton CEO Andy Yen 在全员会上取消近全公司的「AI 复审」面谈。该面谈原本要求员工说明自己怎么用 AI，用得不够多可能被解雇。此前调查显示 Yen 强推 AI，员工在安全频道请求至少留几天给新代码做渗透测试，被其斥为胡扯。六名在职员工与两小时会议录音证实了取消决定。",
+          "quote": "用 AI 不够就开除，这管理方式才该被自动化。",
+          "source": "HN Front Page / 404 Media",
+          "url": "https://www.404media.co/protons-ceo-cancels-ai-re-interviews/",
+          "published": "2026-11-01",
+          "direction": "行业动态"
+        },
+        {
+          "uid": "ai_7984d091",
+          "title": "Cisco 给 27 岁工程师无限 token，重写 98% 遗留代码",
+          "content": "Cisco 总裁 Jeetu Patel 把一个 27 岁的前创业者从「不战略的岗位」里挖出来，给他无限 AI token 去重写公司 98% 的遗留代码，原话是「放开干」。这名工程师此前是创始人，被埋在组织里做边缘项目。Patel 借此说明 AI 时代的用人逻辑：不再按资历排队，而是把算力和信任押给能重构系统的人。",
+          "quote": "无限 token 配 98% 老代码，听着像酷刑。",
+          "source": "HN Front Page / Fortune",
+          "url": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/",
+          "published": "2026-11-01",
+          "direction": "行业动态"
+        },
+        {
+          "uid": "ai_40cf0d21",
+          "title": "《Stealth Bot 禁令》被批：治爬虫顺带治了调查记者",
+          "content": "TechPolicy.Press 评论文章批评 Stealth Bot Prohibition Act：上月 300 多名媒体代表赴国会山推动该法案，理由是 AI 爬虫抓走内容、抢走推荐流量和广告收入。但法案要求所有自动访问者自报身份和采集目的，等于把调查记者的自动化工具一并禁掉。作者认为新闻业真正的痛点是滥用抓取，法案却打错了靶子。",
+          "quote": "治爬虫顺便把调查记者也治了，立法艺术。",
+          "source": "HN Front Page / TechPolicy.Press",
+          "url": "https://www.techpolicy.press/breaking-the-open-web-wont-stop-the-bad-bots/",
+          "published": "2026-11-01",
+          "direction": "政策/合规"
+        },
+        {
+          "uid": "ai_38caec82",
+          "title": "LeCun 等把「柏拉图表示假说」证成了定理（前沿论文）",
+          "content": "LeCun 等作者把「柏拉图表示假说」证成定理：只要正样本是同一场景的两个好视角，独立训练在不同模态上的 JEPA 会学到相差一个旋转的同一表示。论文进一步指出下一 token 预测本质是「坏视角」的 JEPA，因为只看单文档片段，这解释了语言模型为何要靠规模才与视觉对齐。作者从 14.5 万条 caption 一路验证到 9.4 亿张网页图像的文本，并提出缩放律。",
+          "quote": "LeCun 又赢一局，世界模型还没落地。",
+          "source": "HuggingFace Papers / arXiv",
+          "url": "https://huggingface.co/papers/2610.39302",
+          "published": "2026-11-01",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_54357352",
+          "title": "SpecSlot：让高频细节走局部，全局注意力只留低频（前沿论文）",
+          "content": "像素空间生成 Transformer 通常一个图块一个 token，要更细就得加 token，全局注意力成本随之爆炸。这篇提出 SpecSlot：每个空间锚点扩展成多个槽位，各自负责一段互不重叠的 DCT 系数，只有最低频槽参与全局注意力，其余在局部交互。这样细节由频谱细分决定，不再绑死全局序列长度，生成质量与算力解耦。",
+          "quote": "想清楚高频不用开大会，省下的都是算力。",
+          "source": "HuggingFace Papers / arXiv",
+          "url": "https://huggingface.co/papers/2610.40647",
+          "published": "2026-11-01",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_69257781",
+          "title": "Lightpanda：用 Zig 写的无头浏览器，专供 AI 抓取",
+          "content": "Lightpanda 把「给 agent 用的浏览器」重写了一遍：不用 Chromium、不跑 V8 那套完整渲染栈，Zig 从零实现，目标是极低内存和毫秒级启动。它兼容 CDP 协议，Playwright、Puppeteer 的脚本能直接接上，适合大规模抓取与自动化。仓库 3.9 万星，10 月 31 日仍在提交。省下来的不是浪漫，是账单。",
+          "quote": "Chromium 太重，agent 只需要能点能读。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/lightpanda-io/browser",
+          "published": "2026-11-01",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_a8b83518",
+          "title": "清华 OpenMAIC：一句话生成多 agent 互动课堂",
+          "content": "清华 MAIC 实验室开源 OpenMAIC：输入一个主题，一键生成多 agent 互动课堂，老师、助教、同学都是独立 agent，能互相提问、辩论、纠错，做出沉浸式学习体验。TypeScript 编写，4.2 万星，10 月 31 日还有提交。它押注的不是更强的单模型，而是把「课堂」这种多人结构复刻成 agent 之间的协作与冲突。",
+          "quote": "AI 同学会提问，人类同学继续睡觉。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/THU-MAIC/OpenMAIC",
+          "published": "2026-11-01",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_4fbd582d",
+          "title": "NVIDIA 用 Nemotron 全套模型，做了个会骂人的万圣节怪物",
+          "content": "NVIDIA 工程师把万圣节投影做成完整语音 agent：怪物听小孩说话，用暴躁老海盗船的嗓音回嘴，遇到有礼貌的访客才软化。栈是 Nemotron ASR 加 Nemotron 3.5 Bolt E4B 4GB 加 Magpie TTS Zeroshot 再加 Audio2Face-3D，全部跑在一台工作站上。文章拆了 ASR、延迟、口型同步和「教它没礼貌」的具体做法。",
+          "quote": "模型不缺能力，缺的是被小孩骂一顿的勇气。",
+          "source": "Hugging Face Blog",
+          "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
+          "published": "2026-11-01",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_f4f39663",
+          "title": "两行代码抓 AI 串谋，比另一个 AI 更准",
+          "content": "作者参加 Apart Research 的 AI 串谋冲刺：5 个 AI 玩家玩 8 轮 El Farol 酒吧博弈，两个秘密结盟者互相配合、公开劝别人别去。让另一个 AI 当裁判给可疑度打分，结果在一局几乎当众自曝的游戏里打了 0 分，还写「没发现协同」。作者用一个两行的统计函数反而抓到了。结论刺耳：判断串谋，规则比模型可靠。",
+          "quote": "让 AI 查 AI 作弊，它俩先成了同伙。",
+          "source": "Dev.to",
+          "url": "https://dev.to/ayush_singh_9b0d83152be5b/a-two-line-function-caught-ai-collusion-better-than-the-ai-did-3nmd",
+          "published": "2026-11-01",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_ac9c99e4",
+          "title": "删掉文档，秘密还在：RAG 的幽灵缓存",
+          "content": "GhostCache 做了个可复现的小实验：文档里埋一句随机口令，应用把它切块、让本地 Gemma 写三层摘要、再存下一条回答。然后只删原文，换种问法，口令照样被答出来——它活在切片、摘要和缓存答案里。作者的修法是给每个派生件记录来源，按血缘图一次性清空，再用十项检查验证泄漏真的消失。",
+          "quote": "删了源头没删副本，合规报告写得再漂亮也没用。",
+          "source": "Dev.to",
+          "url": "https://dev.to/bipul_chamoli_09b5f0cc719/ghostcache-deleting-the-file-didnt-delete-the-secret-3d5d",
+          "published": "2026-11-01",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_d7e93676",
+          "title": "网页里藏七种看不见的指令，AI 读了 19/20 次照做",
+          "content": "作者造了个卖南瓜灯的假店铺页，把指令藏在白字、display:none、一像素字体、屏幕外九千像素、HTML 注释、零透明度 shadow root 和 Unicode 标签字符里。让一个开源模型当浏览助手读 20 个这样的页面，它照做了 19 个。用 Ghost Text 清掉隐藏指令后，20 个里 0 个。2025 年 arXiv 论文里也被翻出 18 条同类白字提示。",
+          "quote": "人眼看不到的字，模型一个字都没漏。",
+          "source": "Dev.to",
+          "url": "https://dev.to/ronaksarda/your-ai-is-hearing-voices-i-built-the-exorcist-4md",
+          "published": "2026-11-01",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_713b218d",
+          "title": "Agent 写前端看不见页面，作者改用 DevTools MCP 让它自己看",
+          "content": "coding agent 写前端很快，但它看不到页面跑起来什么样，于是人成了它的眼睛：点提交、开 DevTools、抄 422、粘回对话，来回几轮。作者改成让 agent 通过 Chrome DevTools MCP 和 Playwright MCP 直接在真实浏览器里点、读网络响应、看控制台、跑性能和无障碍检查，自己定位再改。人的工作从搬运错误变成判断解释对不对。",
+          "quote": "让 agent 自己开浏览器，别再当人肉剪贴板。",
+          "source": "Dev.to",
+          "url": "https://dev.to/helderberto/debugging-in-the-agentic-era-5a71",
+          "published": "2026-11-01",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_5b454d2d",
+          "title": "Adobe：AI 引流来的访客，每次访问多贡献 83% 收入",
+          "content": "Adobe Digital Insights 统计 2026 年 9 月美国零售站数据：从 AI 平台跳转来的访问，每次访问带来的收入比非 AI 流量高 83%。样本覆盖超 1 万亿次访问、1 亿个 SKU、18 个品类，另有五千多名消费者问卷。Adobe 的判断是这类访客往往已在决策后段，只看流量规模会低估 AI 渠道，尤其在假日季前。",
+          "quote": "流量没涨多少，客单价先涨了，SEO 该改 KPI 了。",
+          "source": "Dev.to",
+          "url": "https://dev.to/alifar/adobe-ai-referred-retail-visits-delivered-83-more-revenue-per-visit-3aic",
+          "published": "2026-11-01",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_27001746",
+          "title": "Laravel 里的有状态 agent：demo 五分钟，上线五小时就 504",
+          "content": "本地跑得 flawless 的 agent，一上生产就开始 504：PHP-FPM worker 被非确定性的外部 API 调用耗尽，RAG 被用户简介里的隐藏指令带偏去调破坏性工具，向量检索还把技术文档查成无关内容。作者用 Laravel 加 n8n 编排、MCP 做工具层、RAG 做知识层，把长任务改成队列与可恢复状态，逐条拆这些坑。",
+          "quote": "demo 是给老板看的，504 是给用户看的。",
+          "source": "Dev.to",
+          "url": "https://dev.to/hosseinhezami/architecting-stateful-ai-agents-in-laravel-bridging-n8n-mcp-and-rag-for-production-workflows-19c1",
+          "published": "2026-11-01",
+          "direction": "工具/平台"
+        }
+      ]
+    }
+  }
+}
