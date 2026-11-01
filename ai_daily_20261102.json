@@ -1,0 +1,173 @@
+[
+  {
+    "title": "GPT-5.6 Sol 用 13.5 小时通关 Factorio 和平模式",
+    "content": "Ryan Madden 让 GPT-5.6 Sol 在 Codex 里以低思考等级玩 Factorio，通过 Python 接口操作游戏，并强制遵守玩家可达范围、战争迷雾等限制。13.5 小时后发射火箭通关。前期表现超预期，后期暴露扩张瓶颈，最后靠反复搬运物资掩盖产线没连上的问题。相比 GPT-5.5 连传送带都不会用，这轮明显进步；作者认为 Factorio 是观察模型能力的低成本试验场。",
+    "quote": "会拉传送带了，但产线还是没连上。",
+    "source": "HN Front Page / Ryan Madden",
+    "url": "https://ryanmadden.net/gpt-56-beats-factorio/",
+    "published": "2026-11-02",
+    "uid": "ai_3020c0bf"
+  },
+  {
+    "title": "ChatGPT 与 Codex 将共用额度，重用户先炸了",
+    "content": "OpenAI 通知：未来几周 ChatGPT 与 Codex 将共用同一份额度，官方称多数用户不会因此更频繁地等到重置，高级模型和复杂任务消耗更多，Unlimited Instant 不计入。V2EX 帖子 12 小时 4400 多次浏览，100 美元档用户反应分裂：有人说以后不用在 Chat 和 Codex 之间来回倒腾，理论上更省；也有人认定这是订阅费覆盖不了算力，开始变相收割。",
+    "quote": "先翻倍再合并，数学好得像涨价。",
+    "source": "V2EX / OpenAI",
+    "url": "https://www.v2ex.com/t/1253511",
+    "published": "2026-11-02",
+    "uid": "ai_ea4a5ae9"
+  },
+  {
+    "title": "研究者称 Anthropic 把「碰训练」当红线，付费账号照样封",
+    "content": "Jiahao Shao 在 X 上控诉 Anthropic：自己没蒸馏 Claude，rollout 来自开源模型，Claude 只负责提交任务和跑分析，却被标记为「训练竞争对手」。此后任何涉及 RFT、SFT 或训练更大模型的操作，都会触发封号、Opus 5.5 被降级为 Opus 5，或会话被直接终止。他批评 Anthropic 用全网数据训练，却禁止付费用户学习其输出，是双重标准。",
+    "quote": "用全网数据训练，然后禁止别人学习。",
+    "source": "HN Front Page / X",
+    "url": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
+    "published": "2026-11-02",
+    "uid": "ai_a230e0bd"
+  },
+  {
+    "title": "Claude 悄悄拦截游戏逆向，连正常排障也中枪",
+    "content": "Mashable 报道，Anthropic 的 Claude 开始限制模组、反编译和逆向游戏代码，且没有正式公告。背景是 AI 让拆包和移植变得太容易：有人把旧游戏搬进浏览器，有人做出跨作品缝合模组，Take-Two 已向微软和 Discord 发传票追查。限制范围过宽，连合法游戏开发者的日常排障也被挡住。文章指出，AI 公司一边靠公开数据训练，一边封堵这些路径，颇为讽刺。",
+    "quote": "防侵权防到开发者没法 debug。",
+    "source": "HN Front Page / Mashable",
+    "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
+    "published": "2026-11-02",
+    "uid": "ai_ca3f21c4"
+  },
+  {
+    "title": "FreeToken：在游戏显卡上跑 290B 级 MoE",
+    "content": "FreeToken 想把 290B 级 MoE 塞进个人电脑：GPU、CPU、主机内存和互联被当成一个弹性推理池，按带宽在 CPU 与 GPU 之间动态分工，再配全局 LRU 专家缓存和双层缓冲预填充。支持 DeepSeek-V4-Flash、Qwen3.6-35B-A3B、GLM-5.2 等开源权重，暴露 OpenAI 兼容接口，Codex、Claude Code 可直接接。",
+    "quote": "290B 塞进游戏机，电费替你算过吗。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/FlashML-org/FreeToken",
+    "published": "2026-11-02",
+    "uid": "ai_f2296fc6"
+  },
+  {
+    "title": "OpenBot：每个 AI 同事配一台自己的电脑",
+    "content": "CopilotKit 的 OpenBot 把「AI 同事」做成一整套：每个同事有自己的浏览器、独立登录态、自己的文件和被授权的工具，动作执行前先决策、执行后留痕。任何 AG-UI agent 接进来就能上岗，MIT 协议、可自托管，9 千多星。卖点不是更聪明，而是公司终于有一份能审计的 AI 劳动力。",
+    "quote": "每个 AI 同事都有浏览器，也都有锅。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/CopilotKit/OpenBot",
+    "published": "2026-11-02",
+    "uid": "ai_c3d49b15"
+  },
+  {
+    "title": "本地小模型编了 162 个不存在的 Python 包，重跑回来 161 个",
+    "content": "作者让三个本地小模型写 1199 段 Python 脚本，把 1410 条安装建议逐条查 PyPI：15% 的包根本不存在，冷门任务上高达 30%。清空重跑，162 个幽灵包回来 161 个，逐字重复率 98.7%——幻觉稳定，就能被针对。他用 TabPFN 离线判名，AUROC 0.975，做成 Claude Code 钩子，212 个幽灵安装全拦，误伤 13 个。",
+    "quote": "幻觉稳定复现，就不叫幻觉叫接口。",
+    "source": "Dev.to",
+    "url": "https://dev.to/soumyadeepdey/my-local-ai-invented-162-python-packages-i-reran-everything-from-scratch-and-161-came-back-4j73",
+    "published": "2026-11-02",
+    "uid": "ai_5280ec8f"
+  },
+  {
+    "title": "一份把 Claude、GPT、Gemini 逐个拆开的注入作战图",
+    "content": "这篇把 Claude、GPT、Gemini、Copilot、Cursor 上的间接提示注入整理成作战地图：核心是「致命三件套」——能读私有数据、会吃不可信内容、又有对外通道，三者齐了，一句藏在 README 或日历邀请里的话就够。文章按文件、MCP、Unicode 走私、零点击、浏览器、多模态、供应链、自传播蠕虫分类，附时间线与十分钟自查表。",
+    "quote": "三件套凑齐，一句 README 就能开锁。",
+    "source": "Dev.to",
+    "url": "https://dev.to/rudratosh/your-ai-agent-trusts-everything-it-reads-a-field-guide-to-hijacking-claude-gpt-gemini-copilot-1l6k",
+    "published": "2026-11-02",
+    "uid": "ai_13dc4dde"
+  },
+  {
+    "title": "卫星烧毁两年后，模型学会了说「档案里没写」",
+    "content": "ESA 的 OPS-SAT 2024 年烧毁在大气层，留下 2123 段遥测。作者做了个「不替死人说话」的实验：TabPFN-v2 只判断哪段异常，在官方测试集拿到 AUCPR 0.996，压过原论文的 FCNN；Qwen3-8B 用 Tinker 花 83 美分微调，只许复述任务文档。问它 03:17:13 为什么断，它答：档案里没有记录。",
+    "quote": "卫星烧了，模型终于学会说不知道。",
+    "source": "Dev.to",
+    "url": "https://dev.to/advikdivekar/esas-satellite-is-dead-its-ghost-2123-signals-tabpfn-beat-the-published-sota-83c-of-tinker-3ke1",
+    "published": "2026-11-02",
+    "uid": "ai_19447ab9"
+  },
+  {
+    "title": "让本地 Gemma 读逝者邮箱，找出家属不知道的钱",
+    "content": "印度有 2.2 万亿卢比无人认领的存款、股票和保单，很多是因为人走了、家属不知道钱在哪。Ghost Ledger 用本地 Gemma 4 读逝者邮箱，生成遗产地图：每笔存款、保单、股权都附原文证据和申领路径；再由普通代码逐行核对，引文对不上就删。后续理赔走 Temporal 工作流，等 15 天、发提醒、最后起草投诉。",
+    "quote": "让 AI 读遗物，先得让它学会闭嘴。",
+    "source": "Dev.to",
+    "url": "https://dev.to/samarth_kumble_a91ad88634/when-someone-dies-their-money-doesnt-tell-the-family-where-it-is-so-a-local-gemma-reads-their-ij6",
+    "published": "2026-11-02",
+    "uid": "ai_f282ebc9"
+  },
+  {
+    "title": "Clover-35B-A3B：扩散语言模型第一次在 agent 编程上反超",
+    "content": "港大 Dream 团队的新公司 DiffuSpace 放出 Clover-35B-A3B-Preview：35B 总参、3B 激活的 MoE 扩散语言模型，非自回归、并行出块。它压过同尺寸的 Qwen3.6-35B-A3B，SWE-bench Verified 拿 73.6，在 GB300 上跑到 680 tok/s。扩散路线第一次在 agent 编程上把自回归按住。",
+    "quote": "扩散模型不排队，自回归开始算旧账。",
+    "source": "Hugging Face Blog",
+    "url": "https://huggingface.co/blog/Diffuspace/clover-35b-a3b-preview",
+    "published": "2026-11-02",
+    "uid": "ai_bd49fe62"
+  },
+  {
+    "title": "Kumo Relational：不用训练，直接在关系型数据库上预测",
+    "content": "NVIDIA 的 Kumo Relational 是预训练的关系型基础模型：给一条预测查询，它自己从库里捞历史样本当上下文，一次前向就吐出流失、需求、欺诈的概率，不用特征工程、不用建任务模型、不用把表拍平。15 个库 41 个任务上超过监督学习和专家特征加 GBDT，SAP SALT 上比 AutoGluon 高 8% MRR，能撑 5000 亿行。",
+    "quote": "不用训练就能预测，ML 工程师听完沉默。",
+    "source": "Hugging Face Blog",
+    "url": "https://huggingface.co/blog/nvidia/kumo-relational",
+    "published": "2026-11-02",
+    "uid": "ai_ee34ed5d"
+  },
+  {
+    "title": "Mundo：拍几张照片，搭一个能动手的房间",
+    "content": "给一个房间拍几张照片，Mundo 就能把它变成可探索、可编辑、可模拟的世界：先用 3D 检测和 VLM agent 反复渲染比对，搭出带物理属性的三维代理场景，再由模拟器算物体怎么动，视频模型负责渲染成看得懂的画面。抽屉能拉开、苹果能飞出来、机器人能走进来放包。世界模型开始从「预测下一帧」转向「搭一个能动手的房间」。",
+    "quote": "世界模型不预测像素了，改搭房间。",
+    "source": "Hugging Face Blog",
+    "url": "https://huggingface.co/blog/Luo-Yihang/mundo-world-model",
+    "published": "2026-11-02",
+    "uid": "ai_3517c488"
+  },
+  {
+    "title": "HairDeck：一张图生成可动画的风格化发片",
+    "content": "游戏和虚拟形象里的风格化头发，本质是美术摆的发片加弹簧骨骼。现有图像方法要么生成写实头发，要么输出一整块融合网格；唯一的风格化方案 CHARM 又慢又不准。HairDeck 把每张发片当成一个 token，用扩散 Transformer 一次性去噪整组发片，同时生成驱动它的弹簧骨链，导出即可用于下游。在 CHARM 测试集上，朝向误差降一半以上、Chamfer 距离降 44%，速度快 33 倍。",
+    "quote": "一根根摆发片的美术，要失业了。",
+    "source": "HuggingFace Papers / arXiv",
+    "url": "https://huggingface.co/papers/2610.40599",
+    "published": "2026-11-02",
+    "uid": "ai_15788c06"
+  },
+  {
+    "title": "VibeGame：一句提示词，八个 agent 自己吵出一款游戏",
+    "content": "VibeGame 想解决端到端做游戏的问题：不仅要写代码，还要排场景、做美术、配动画物理。团队先造了 agent 能逐帧读写的 AI 原生 2D 引擎，再让八个专职 agent 分工设计、生成素材、写代码、试玩评审，实现与验收分离，靠多轮对抗磨掉问题。GameCraft-Bench 30 个任务上，比最强基线高 11.7 分（GPT-5.6-Luna）、4.19 分（GPT-6.1-Sol）。",
+    "quote": "八个 agent 做游戏，人类只剩点开始。",
+    "source": "HuggingFace Papers / arXiv",
+    "url": "https://huggingface.co/papers/2610.33106",
+    "published": "2026-11-02",
+    "uid": "ai_52e09094"
+  },
+  {
+    "title": "Investor's Last Exam：不给看未来的股票研究考试",
+    "content": "评估预测要等结果落地，几个月里信息环境早变了，分数很难归因。ILE 构建了 343 万份文档版本、1.52TB、九类来源的时点语料，严格冻结决策日信息，再让 agent 走完从证据、假设到预测的完整链路。86 项任务显示：GPT-6 Astra 和 Claude Opus 5.5 总分领先，分别 68.1 和 66.9，但在预测与建模单项上 Astra 只有 52.5。研究强、预测弱，差距被量化。",
+    "quote": "会写研报，不等于会看对方向吧。",
+    "source": "HuggingFace Papers / arXiv",
+    "url": "https://huggingface.co/papers/2610.38342",
+    "published": "2026-11-02",
+    "uid": "ai_72e7ead1"
+  },
+  {
+    "title": "Soft-MTP：一行代码改掉多 token 预测的噪声梯度",
+    "content": "多 token 预测（MTP）已是训练标配，能提升下游表现、加速推理，但标准 MTP 梯度混着低信噪比残差，越大越干扰学习。作者发现，两分布共享线性输出头时，可用现有 logits 精确恢复 KL 梯度，无需词表大小矩阵，兼容融合交叉熵核。于是提出 Soft-MTP：一行代码去掉噪声残差，只回传有效 KL 信号，不加参数、无可测开销。167M 到 1.2B 下游指标均改善，689M 起困惑度更低。",
+    "quote": "免费的午餐，这次是真的没加钱。",
+    "source": "HuggingFace Papers / arXiv",
+    "url": "https://huggingface.co/papers/2610.38331",
+    "published": "2026-11-02",
+    "uid": "ai_d59ea950"
+  },
+  {
+    "title": "token 额度用完后，还有人愿意手改 AI 写的代码吗",
+    "content": "V2EX 热帖问：没 token 额度了，你会手改 AI 生成的代码吗？回复几乎一边倒：不改。有人说宁愿多开账号、换便宜模型，也不愿回到手写；有人直言 AI 写的代码已经看不懂，改不动；也有人承认只会做搜索替换这类小修。少数人选择等额度重置或干脆休息。帖子折射出一个尴尬现实：vibe coding 把人变成了只会在提示词层面操作的黑盒用户。",
+    "quote": "不是不想改，是已经看不懂代码了。",
+    "source": "V2EX / 程序员",
+    "url": "https://www.v2ex.com/t/1253543",
+    "published": "2026-11-02",
+    "uid": "ai_107b3469"
+  },
+  {
+    "title": "有人用 AI 逆向搜狗输入法，做了一键断网脚本",
+    "content": "V2EX 用户发布一键脚本，针对搜狗输入法 v16.10 做断网、禁更新、去广告，原理是用 AI 辅助逆向，把广告相关域名和更新通道掐掉，代码放在 GitHub。跟帖态度分裂：一派认为既然只要干净输入法，直接换小狼毫或系统自带更省事；另一派称搜狗的词库和手感无可替代，宁可阉掉联网也要留着。还有人提醒脚本只断了广告部分，更新和联想并未完全禁用。",
+    "quote": "为了留住词库，先给输入法做截肢。",
+    "source": "V2EX / 程序员",
+    "url": "https://www.v2ex.com/t/1253540",
+    "published": "2026-11-02",
+    "uid": "ai_0853ba82"
+  }
+]
