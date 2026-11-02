@@ -1,0 +1,227 @@
+[
+  {
+    "title": "PostHog 弃用 DuckDB：万亿行仓库迁向 Trino",
+    "content": "PostHog 五个月前刚把数据仓库重建在 DuckDB 上，如今宣布迁离：客户查询复杂度超出预期，单节点必须在查询到来前定好尺寸，1 万亿行场景撞上天花板，DuckLake 只解决兼容不解决扩展。团队用三个月改为 Trino 加自研 HogLake。作者 Benjamin Knofe-Vider 强调仍然喜欢 DuckDB，只是单机引擎不适合多租户云仓库。",
+    "quote": "单机神器被云账单教育，情怀输给排队时间。",
+    "source": "HN Front Page",
+    "url": "https://posthog.com/blog/moving-off-duckdb",
+    "published": "2026-11-03",
+    "uid": "dev_a38b188a"
+  },
+  {
+    "title": "Cloudflare DNS 构建延迟减半、内存占用降 85%",
+    "content": "Cloudflare 的 Zone Builder 每秒处理记录变更从 2022 年的 250 条涨到约 700 条，单区记录已超 2000 万条、正向数亿迈进。团队用定向构建替代整区重建：规划器挑出可证明安全的最小构建集，调度器合并同区任务，最终构建延迟减半、内存降 85%。真正的难点不是写代码，而是证明哪些 zone setting 变更可以局部重算。",
+    "quote": "增量更新人人会讲，敢证明自己没算漏才算本事。",
+    "source": "HN Front Page",
+    "url": "https://blog.cloudflare.com/dns-targeted-zone-builds/",
+    "published": "2026-11-03",
+    "uid": "dev_c643573f"
+  },
+  {
+    "title": "Trigger.dev 事故：部分客户环境变量被窃",
+    "content": "11 月 1 日 Trigger.dev 遭入侵，攻击者获取了部分组织的环境变量。官方称已封堵利用路径，邮件通知所有受影响账户所有者，并在状态页持续更新。HN 上该帖 150 分、76 条评论。对跑后台任务与工作流的团队，这意味着数据库口令、API key、webhook secret 都应按已泄露处理并立即轮换。",
+    "quote": "密钥托管在别人家，出事只能连夜改密码。",
+    "source": "HN Front Page",
+    "url": "https://trigger.dev/blog/security-incident-nov-2026",
+    "published": "2026-11-03",
+    "uid": "dev_cbf8d985"
+  },
+  {
+    "title": "Anthropic 更新 S-1：前三季营收 332 亿美元",
+    "content": "Anthropic 向 SEC 提交修订版 S-1，披露截至 9 月 30 日前九个月营收 332.4 亿美元，同比增长约 1200%；同期净亏损 1040 亿美元，主要来自可转债与衍生负债的公允价值变动，2025 年同期亏损 251 亿美元。Q3 单季营收 170 亿美元。HN 讨论集中在 8950 亿美元承诺额与 IPO 估值能否撑住。",
+    "quote": "亏损靠会计口径解释，收入靠 API 账单堆出来。",
+    "source": "HN Front Page",
+    "url": "https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html",
+    "published": "2026-11-03",
+    "uid": "dev_54e90cab"
+  },
+  {
+    "title": "Vercel 开源 agent-desktop：用无障碍树操控桌面",
+    "content": "vercel-labs/agent-desktop 用 Rust 写成，已获 8600 多 star。它不靠截图猜坐标，而是读操作系统无障碍树拿到任意应用的真实 UI 结构，元素 ref 在会话中保持稳定、动作可安全重试；对外提供 CLI 与 MCP 接口，目前主打 macOS。相比纯视觉方案 token 更省、误点更少，但依赖应用正确暴露 accessibility 信息。",
+    "quote": "视觉派卷截图，工程派回头读 a11y 树，老办法真香。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/vercel-labs/agent-desktop",
+    "published": "2026-11-03",
+    "uid": "dev_ff123b87"
+  },
+  {
+    "title": "claude-mem 破 11 万星：给 Agent 装跨会话记忆",
+    "content": "thedotmack/claude-mem 用 TypeScript 实现，抓取 Agent 会话过程，用 AI 压缩后把相关上下文注入下一次会话，支持 Claude Code、Codex、Gemini 等。底层组合 SQLite、ChromaDB 与 embeddings，主打长期记忆。11 万 star 说明上下文丢失是编码 Agent 最痛的短板，外挂记忆层正形成独立品类。",
+    "quote": "模型记性差，于是大家在体外给它接了个硬盘。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/thedotmack/claude-mem",
+    "published": "2026-11-03",
+    "uid": "dev_55490f36"
+  },
+  {
+    "title": "Scrapling 9.2 万星：一个框架通吃单页到全站抓取",
+    "content": "D4Vinci/Scrapling 是 Python 爬虫框架，star 已达 9.2 万。它覆盖单请求抓取到大规模 crawl，内置自适应选择器、stealth 反检测与 Playwright 集成，并提供 MCP server 供 AI Agent 调用。项目 2024 年 10 月创建，定位是不用为每个站点重写解析规则，适合数据采集与 Agent 联网取数场景。",
+    "quote": "爬虫的尽头是反爬，反爬的尽头是雇个 AI 一起爬。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/D4Vinci/Scrapling",
+    "published": "2026-11-03",
+    "uid": "dev_a704f145"
+  },
+  {
+    "title": "换日本节点仍被认出：他写工具查谁泄露了身份",
+    "content": "作者挂东京 Amazon 机房节点，自测仍被网站判定为中国人、在中国时区、说中文、DNS 解析器在中国：IP 换了，时区、浏览器语言、DNS 解析路径没换。他做了 who.1ms.dog，把网站无需询问就能读到的信息拼成一段话。帖子获 57 条回复，讨论集中在 Canvas、WebRTC、时区等被动指纹，以及 Tor 浏览器的取舍。",
+    "quote": "以为换 IP 就隐身，结果时区把你供出来了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1253711#reply57",
+    "published": "2026-11-03",
+    "uid": "dev_29925f98"
+  },
+  {
+    "title": "Karpathy 两小时做的 HackerTube，他十分钟复刻",
+    "content": "Karpathy 用 Hacker News 历史推荐数据做了 HackerTube，思路是别让推荐算法猜，直接看 HN 用户这些年推荐过哪些视频。作者把公开数据丢给 Codex，十分钟复刻出 Web 1.0 风格页面：首页先给视频缩略图而不是产品介绍，可跳转原帖与视频。案例说明选题与数据仍靠人，编码环节正被压缩到分钟级。",
+    "quote": "十分钟复刻不算本事，想到做什么才算。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1253963#reply0",
+    "published": "2026-11-03",
+    "uid": "dev_9270803f"
+  },
+  {
+    "title": "210 KB 给 Win10 资源管理器加多标签",
+    "content": "作者坚持不升 Win11，痛点是没有资源管理器多标签。他用 AI 写了个约 210 KB 的小工具，在原生 Explorer 上叠出标签栏：新建、关闭、拖动排序，工作资料、下载目录、项目文件同窗切换。这类补系统短板的小工具需求稳定，也说明 AI 编码让个人开发者能把一句话需求做成可分发成品。",
+    "quote": "微软十年不做的功能，一个人一个下午补上。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1253763#reply0",
+    "published": "2026-11-03",
+    "uid": "dev_78575df3"
+  },
+  {
+    "title": "bf16 舍入吃掉 99% 的 RL 策略更新",
+    "content": "Stanford 论文（arXiv:2610.41073）指出：训练侧 fp32 主权重转成 bf16 供 vLLM、SGLang 推理时，标准 round-to-nearest 会把小于 |w|/256 的更新归零。学习率 1e-6~3e-7 时，Qwen3-1.7B 每个优化步只有 0.4%~0.5% 的权重真正变化，参数要连续 50~200 步同向累积才能跨过 bf16 网格。",
+    "quote": "你以为在训练，其实在给推理引擎放旧权重。",
+    "source": "Dev.to",
+    "url": "https://dev.to/reidmarlow/standard-bf16-rounding-discards-99-of-your-rl-policy-updates-2pf5",
+    "published": "2026-11-03",
+    "uid": "dev_07cceba4"
+  },
+  {
+    "title": "百亿行写进 MySQL：从 231 天压到 3.5 小时",
+    "content": "博客园文章用 .NET 10、SqlSugar 5.1.4.221、MySqlConnector 2.6.2 实测：100 亿行、每行约 500 字节约 5TB，单条 INSERT 每事务一次 fsync，需 115 到 231 天。方案是空间降维（分片，单表压到 500 万到 1000 万行）、IO 降维与工程兜底，多实例并行在 SSD 上可到 3.5 小时量级，约需 3 到 20 台实例。",
+    "quote": "先问该不该进 MySQL，再谈怎么塞进去。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/hugogoos/p/23522225",
+    "published": "2026-11-03",
+    "uid": "dev_275ca5e5"
+  },
+  {
+    "title": "Meta 数百 EB 存储蓝图：先把元数据砍简单",
+    "content": "Meta 公开《AI Storage Blueprint at Scale》，其存储集群总规模达数百 EB。核心是把训练数据访问统一到 BLOB Storage：以对象为单位，省掉目录层级解析与多次元数据查询，把尾延迟压到可预测上界，因为一次慢请求会让大量 GPU 空转。Meta 称 GPU 空转 20% 相当于曼哈顿规模数据中心每小时损失数千万美元，JuiceFS 在文中做了架构对照。",
+    "quote": "GPU 等存储的样子，像法拉利堵在收费站。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/JuiceData/p/23525247",
+    "published": "2026-11-03",
+    "uid": "dev_22ca6469"
+  },
+  {
+    "title": "扒了 43 个 DOOM 移植版：名字全抹掉，仍能认出谁抄谁",
+    "content": "作者用自建的结构提取引擎，把 1997 年 linuxdoom 源码的 43 个后代拆成函数长度、分支频率和调用关系，再删掉所有函数名与注释，只留形状做指纹。结果 Chocolate Doom 保留 87% 函数名，但只有 35% 的函数体没改；Doom Retro 名字留 69%，代码只剩 0.2%。Go 版即使全匿名，函数仍落在游戏对应模块，随机猜只有 20%。",
+    "quote": "名字可以继承，代码早被重写，血缘藏在形状里。",
+    "source": "HN Show HN",
+    "url": "https://squid-protocol.github.io/gitgalaxy/museum-of-code/doom-dna/",
+    "published": "2026-11-03",
+    "uid": "dev_8a7c62fc"
+  },
+  {
+    "title": "Devpush：连上 GitHub，把自己的 VPS 变成 Vercel",
+    "content": "开源 PaaS，目标是在自己的 Linux 服务器上获得 Vercel 式部署：连一次 GitHub，之后 git push 就自动构建、发布应用、API、worker 和数据库。安装脚本自动配好 Docker、Compose 和 systemd，控制面在云端、执行 agent 在本地。作者去年先做过 Python 版 Vercel 克隆，这次改成围绕 Docker Compose 的通用方案。",
+    "quote": "云平台的功能照搬，账单终于留在自己家。",
+    "source": "HN Show HN",
+    "url": "https://devpu.sh/",
+    "published": "2026-11-03",
+    "uid": "dev_88cf71cb"
+  },
+  {
+    "title": "Agent 说只改了 1 行，Postgres 实际动了 301 行",
+    "content": "Deedglass 给数据库和病历类操作做审计：规则先决定每次工具调用能不能执行，执行后对比真实变更与 agent 自述，再把动作封成可离线校验的签名记录。npx 启动后浏览器里打开本地应用，不用账号、Docker 或现成数据库，也不上传数据。Apache-2.0 核心，支持 Claude Desktop、Cursor、VS Code 等入口。",
+    "quote": "自述是 agent 的礼貌，行数是数据库的证词。",
+    "source": "HN Show HN",
+    "url": "https://github.com/deedglass/deedglass",
+    "published": "2026-11-03",
+    "uid": "dev_7da4f90b"
+  },
+  {
+    "title": "TypeSQL：在类型系统里解析 SQL，写完就能报错",
+    "content": "把 SQL 直接写进 TypeScript，由类型检查器完成解析与类型推导，不需要 codegen、不连数据库、没有额外构建步骤。查询会对照描述表结构的 DB 类型检查：LEFT JOIN 出来的列自动变可空，列名拼错在编译期就报「是否想写 email」，参数类型跟着字段走。目前支持 PostgreSQL 和 SQLite，schema 可从迁移、ORM 或线上库生成。",
+    "quote": "把 SQL 塞进类型系统，让编译器替数据库先骂一遍。",
+    "source": "HN Show HN",
+    "url": "https://github.com/ismailkarsli/TypeSQL",
+    "published": "2026-11-03",
+    "uid": "dev_3b654e23"
+  },
+  {
+    "title": "ViBrow：纯 Python 写的浏览器，空闲只吃 35MB 内存",
+    "content": "作者用 Python 加 Zig 自建 DOM、CSS 和 JS 引擎，不依赖第三方浏览器内核，做出一个能多标签、带本地缓存、Cookie、内置搜索和代理桥的浏览器。解压约 44MB，内存占用 30–65MB，官方最低配置是 700MHz 单核和 200MB 内存，能跑在树莓派、Orange Pi 这类设备上。还带 OOM 保护，内存到 90% 时自动建 512MB 应急交换文件。",
+    "quote": "Chrome 吃 2GB 办的活，它用 35MB 硬啃。",
+    "source": "HN Show HN",
+    "url": "https://github.com/HYXZKAKONHNK/ViBrow",
+    "published": "2026-11-03",
+    "uid": "dev_69992c4f"
+  },
+  {
+    "title": "API 明明有批量接口，Agent 偏要写 for 循环",
+    "content": "任务是把一批客户记录逐条对账，Agent 写了个干净的 for-each：查、比、改、下一条。三个 fixture 的测试毫秒级全绿；到 staging 的 400 条记录，就变成 400 次串行请求并被限流。Agent 只看到上下文里的单条 GET/PATCH 示例，就默认循环是通用解，没去读资源操作列表里的 bulk/batch 接口。数组请求体、逐项失败信封和异步语义，全被循环藏掉了。",
+    "quote": "三条数据跑得比谁都快，四百条就开始排队。",
+    "source": "Dev.to",
+    "url": "https://dev.to/jeff_pdc/the-agent-reached-for-a-per-item-loop-when-the-bulk-endpoint-already-existed-kd9",
+    "published": "2026-11-03",
+    "uid": "dev_10b4eb62"
+  },
+  {
+    "title": "同一类弱随机漏洞，三个代码模型 15 次只报中 1 次",
+    "content": "作者用 4 段同样犯错的 Python 代码测本地模型审查：都用 random 生成攻击者不该猜到的值。qwen2.5-coder 7B/14B 与 deepseek-coder 6.7B 各看 5 次，同一段最多被标记 15 次，另一段只被标记 1 次。差别不在漏洞类型，而在写法：random.seed(time.time()) 很显眼，random.choice 拼 token 就容易被放过。",
+    "quote": "模型能背 CWE，却看不出 random 拼的 token。",
+    "source": "Dev.to",
+    "url": "https://dev.to/sunnychokshi/llm-weak-random-number-generator-detection-test-4mn4",
+    "published": "2026-11-03",
+    "uid": "dev_f6c1d4b1"
+  },
+  {
+    "title": "百万订单踩坑：节日当天，他把财务流水代码注释了",
+    "content": "系统里全站只有一个财务账号，用户每下一单都要锁这一行改余额、写多条流水。平时量小没炸，节日一到所有请求挤在同一行上，数据库全是锁等待，下单慢到用户投诉。作者先注释掉财务流水止血，节后改成 Redis 单队列单消费者异步落账。第二起事故是每分钟轮询的履约脚本跑不完，订单积压导致店铺被平台判违约关停，最终换成延迟队列按单触发。",
+    "quote": "全站一个财务账号，节日就是它的单点葬礼。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/liuzhang/p/23525778",
+    "published": "2026-11-03",
+    "uid": "dev_d4849180"
+  },
+  {
+    "title": "RAG 向量库拆不拆：内存、延迟、权限三笔账",
+    "content": "复盘一个制造企业知识库：向量库独立部署后，晚高峰同步延迟 40 分钟，还要维护两套备份和权限；同一份工艺文档在业务库有行级权限，进了向量库却成了裸记录。文章按 1 亿条 768 维向量算账：float32 原始向量约 307GB，加 HNSW 指针超 320GB；改成分组量化并让向量与原文同库，索引可降到几十 GB。延迟差距来自四次跨进程调用与两次网络往返，库内检索能把过滤、排序压进同一执行计划。",
+    "quote": "数据一出库，行级权限就变成了 API Key。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/dicengwanjialaozhang/p/23522949",
+    "published": "2026-11-03",
+    "uid": "dev_8e1c74b8"
+  },
+  {
+    "title": "给 1169 个月入万美元的网站，各画一张流量模型",
+    "content": "作者嫌 MRR 截图只报收入、不说钱从哪来，于是给 1,169 个月入 1 万美元以上的网站各做了一张流量漏斗：目标人群、从哪个渠道知道、进站、留下、付款，每个球代表一次点击，没转化的会被圆吃掉。榜单一半从 Stripe、Gumroad 的收银台反查出 606 个站，按付费页访问排序；另一半来自 TrustMRR 上收入可验证的 563 个站。每个站还能看定位、定价、访客国家和从上线到起飞的路径。",
+    "quote": "晒收入只要一张截图，解释收入才要整条漏斗。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1253780",
+    "published": "2026-11-03",
+    "uid": "dev_7cb03398"
+  },
+  {
+    "title": "AgentMesh：把几台设备上的 Agent 编成一支蜂群",
+    "content": "多台设备各装着 Claude Code、Codex、Cursor、Aider，彼此不通。AgentMesh 以每台设备为一支本地蜂群，用局域网优先、云中继兜底的协议把多支编成军队：统一发现 13+ 平台、跨设备下发任务，d3-force 实时画设备到 agent 的拓扑，另有哈希链加 Merkle 的记忆账本。Node 24 加 TS，作者坦白目前只有 Grok 直连稳定，其余多是适配器骨架。",
+    "quote": "先把设备连成蜂群，再承认只有一只蜂会飞。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1253658",
+    "published": "2026-11-03",
+    "uid": "dev_5b8dbcc8"
+  },
+  {
+    "title": "Info.plist 检查器：别等 App Store 打回才看规则",
+    "content": "作者上传 App Store Connect 屡被拒，原因都是 Info.plist 的小问题：CFBundleVersion 带字母、权限说明写 TODO、打包后仍留着没展开的 $(VARIABLE)、Mac App 忘了分类项。他把苹果文档和 ITMS 报错规则整理成零依赖检查器，支持 XML 与二进制 plist，能区分工程内与打包后文件；拒审问题退出码为 1，可加 --json 接 CI。",
+    "quote": "被拒五次才写检查器，苹果文档终于有人读。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1253829",
+    "published": "2026-11-03",
+    "uid": "dev_dfa3ca60"
+  }
+]
