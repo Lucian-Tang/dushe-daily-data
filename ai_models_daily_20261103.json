@@ -1,0 +1,260 @@
+{
+  "date": "2026-11-03",
+  "total": 21,
+  "vendors": [
+    "anthropic",
+    "openai",
+    "alibaba",
+    "meta",
+    "microsoft",
+    "other"
+  ],
+  "models": {
+    "anthropic": {
+      "displayName": "Anthropic/Claude",
+      "icon": "🧬",
+      "items": [
+        {
+          "uid": "ai_a056c0db",
+          "title": "V2EX：Agent 写的代码到底审不审核",
+          "content": "V2EX 热帖：用 Claude Code 写的代码到底审不审核。楼主说 agent 把循环里五次切片改成掩码列，逻辑更简洁，但不符合自己的阅读习惯，怕它「偷偷埋坑」——98% 对，1% 错项目就出事。回帖分成两派：一派只审架构和改动文件，靠测试和可观测性兜底；一派认为不审就是装模作样，出了问题 AI 不背锅。还有人建议用 skill 约束代码风格。",
+          "quote": "AI 写的代码，审是装样子，不审是赌命。",
+          "source": "V2EX / 程序员",
+          "url": "https://www.v2ex.com/t/1253699",
+          "published": "2026-11-03",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_ccab4b76",
+          "title": "V2EX：AI 普及后，该把所有 Electron 重写成 native？",
+          "content": "V2EX 讨论「AI 普及后该把所有 Electron 重写成 native」：楼主认为 Electron 应用开久了内存必涨、界面变卡，既然 AI 把写代码成本打下来，就该重写，省 CPU 和内存。反对声同样直接——Codex、ChatGPT 桌面版、Claude Desktop 自己都是 Electron；前端生态和可测试性难替代，重构的测试与维护成本才是大头，token 钱也没人报销。",
+          "quote": "让 AI 重写，token 账单你来付？",
+          "source": "V2EX / OpenAI",
+          "url": "https://www.v2ex.com/t/1253744",
+          "published": "2026-11-03",
+          "direction": "应用/落地"
+        },
+        {
+          "uid": "ai_f5058ff6",
+          "title": "49 个 Agent、74 个技能：一个会话开游戏工作室",
+          "content": "Claude Code Game Studios 把单个 Claude Code 会话改成游戏工作室：49 个 subagent 分导演、部门主管、专家三层，配 74 个斜杠命令、15 个钩子、14 条路径级规则和 62 份模板，覆盖 Godot 4、Unity、UE5。提交、改资产、读设计文档都有自动校验，还按 rigor 档位规定写第一行代码前要交多少文档。MIT 协议。",
+          "quote": "一个人加 49 个 Agent，先裁谁不用猜。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+          "published": "2026-11-03",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_4dd6f218",
+          "title": "美团 LongCat-2.5：1.6 万亿参数，接进 Claude Code 只剩 200K",
+          "content": "美团 11 月 2 日发布 LongCat-2.5：1.6 万亿总参、每 token 约 480 亿激活，原生多模态，主打长程 Agent 任务，官方称用国产芯片训练、推理走 W4A4 量化。API 给 100 万 token 上下文，输入 0.3 美元、输出 1.2 美元每百万 token。但照文档接进 Claude Code，会在 20 万 token 被压缩，得改一个环境变量。",
+          "quote": "一百万字上下文，先被客户端砍到二十万。",
+          "source": "Dev.to",
+          "url": "https://dev.to/gabrielanhaia/meituans-longcat-25-drops-into-claude-code-at-030120-its-setup-caps-you-at-200k-4pd0",
+          "published": "2026-11-03",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "openai": {
+      "displayName": "OpenAI/GPT",
+      "icon": "🔬",
+      "items": [
+        {
+          "uid": "ai_072b933f",
+          "title": "GPT-Rosalind-6 系统卡：生物能力放到 High，网安直接 Critical",
+          "content": "OpenAI 发布 Rosalind-6 系统卡：这是面向生物、药物发现和转化医学的前沿推理模型，权重与旗舰 GPT-6 Astra 完全相同，没有额外训练，只通过可信访问提供给合格科研机构。它对双用途生物问题的拒答更少，但申请要过用途、安全和治理审查。Preparedness 评估把生物化学定为 High、未到 Critical，网络安全直接标 Critical，AI 自我改进低于 High。",
+          "quote": "生物版本放行，网安照样是 Critical。",
+          "source": "HN Front Page / OpenAI",
+          "url": "https://deploymentsafety.openai.com/gpt-rosalind-6",
+          "published": "2026-11-03",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_27f1ac8e",
+          "title": "700 篇论文砸下来，数学家开始讨论「被掏空」",
+          "content": "Frank Calegari 在 Terry Tao 博客发文：OpenAI 10 月 6 日一次放出 700 多篇数学论文，是数学史的转折点，AI 已能做出突破性贡献。但论文写得很糟、违反署名惯例，有些还是错的。他认为数学家不该哀叹被掏空——Langlands 纲领几乎没被撼动，元素周期表也没终结化学——更该把精力放在招聘、发表和培养学生上。",
+          "quote": "700 篇论文砸下来，署名规矩先碎了。",
+          "source": "HN Front Page / Terence Tao's Blog",
+          "url": "https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/",
+          "published": "2026-11-03",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_55a16b99",
+          "title": "nanochat：48 美元、两小时训出 GPT-2 级模型",
+          "content": "Karpathy 的 nanochat 仍是训练 LLM 最简实验台：单节点跑完分词、预训练、微调、评测和推理，8 张 H100 约两小时、48 美元训出 GPT-2 水平，抢 spot 实例约 15 美元；只调 --depth 一个参数，就按算力最优生成一整条模型系列。仓库还放了今年 1 月的缩放律曲线。",
+          "quote": "48 美元训出 GPT-2，贵的是你调参的两天。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/karpathy/nanochat",
+          "published": "2026-11-03",
+          "direction": "研究/论文"
+        }
+      ]
+    },
+    "alibaba": {
+      "displayName": "阿里巴巴/Qwen",
+      "icon": "☁️",
+      "items": [
+        {
+          "uid": "ai_239bf8a5",
+          "title": "SimpleLoRIF：毒数据不写在脸上，写在梯度里",
+          "content": "无害的微调数据也能磨掉安全对齐。SimpleLoRIF 用梯度嵌入筛「与不安全行为同向」样本：简化低秩归因、只反传最后四个 transformer 块，可处理百万样本。emergent misalignment 上 AUC 最高 0.865；删掉 Tulu 3 最毒 20% 得 SafeTulu，Qwen、Llama、Olmo 上 GCG 攻击成功率最多降 22%，优于 LLM 裁判和旧过滤。",
+          "quote": "毒数据不写在脸上，写在梯度里。",
+          "source": "HuggingFace Papers / arXiv",
+          "url": "https://huggingface.co/papers/2610.37481",
+          "published": "2026-11-03",
+          "direction": "行业动态"
+        },
+        {
+          "uid": "ai_6f64f888",
+          "title": "Heretic 2.x：一块 3090、半小时拆掉模型审查",
+          "content": "Heretic 用对比提示加打分器做无训练改造，默认动作就是压制拒答：不做梯度训练，靠数学方法让权重转向，可去审查、去废话、降谄媚、调情绪。默认配置下 RTX 3090 处理 Qwen3-4B 约 30 到 40 分钟，支持 4bit 量化、稠密模型和部分 MoE、多模态架构。社区已用它发布数千个模型，MMLU、GSM8K 上不输同类 abliteration 工具。",
+          "quote": "半小时拆完护栏，说明书还写得挺清楚。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/p-e-w/heretic",
+          "published": "2026-11-03",
+          "direction": "模型发布"
+        }
+      ]
+    },
+    "meta": {
+      "displayName": "Meta/LLaMA",
+      "icon": "👁️",
+      "items": [
+        {
+          "uid": "ai_16b42fe4",
+          "title": "Mistral Large 4：1T 总参、49B 激活、1M 上下文",
+          "content": "Mistral 放出 Large 4，代号 Le Chonk：多模态 MoE，约 1 万亿总参、490 亿激活，上下文 100 万 token；稀疏注意力索引器只挑相关历史位置，视觉用 Pixtral 编码器。官方主打网络安全、编码 Agent 和多模态，提供 FP8 与 NVFP4 权重，Unsloth 和 llama.cpp 已出 GGUF，许可证为 MIT 衍生的 Mistral 生态协议。",
+          "quote": "一兆参数叫 Le Chonk，法国人起名不客气。",
+          "source": "Hugging Face Blog",
+          "url": "https://huggingface.co/blog/mistral-large4",
+          "published": "2026-11-03",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "microsoft": {
+      "displayName": "Microsoft",
+      "icon": "🪟",
+      "items": [
+        {
+          "uid": "ai_edb99378",
+          "title": "Granite Switch 4.1：一个端点干聊天、决策和语音",
+          "content": "IBM 的 Granite Switch 4.1 把三个适配器叠到同一底座：通用决策 aLoRA 与安全 Guardian aLoRA，加上 OpenASR 榜首的 Granite-Speech-5.0-Turbo-CTC，有 8B 和 30B 两档，聊天、决策、转写从一个端点出。Guardian 平均压过 Jev 1.13、Microsoft-Decision-1 等基线，三项能力显存接近底座。",
+          "quote": "一个端点全包，运维的锅也一起打包。",
+          "source": "Hugging Face Blog",
+          "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
+          "published": "2026-11-03",
+          "direction": "行业动态"
+        }
+      ]
+    },
+    "other": {
+      "displayName": "其他",
+      "icon": "📰",
+      "items": [
+        {
+          "uid": "ai_6b4d3f62",
+          "title": "Postgres 19 延期，Robert Haas 把锅甩给 AI",
+          "content": "Robert Haas 说，PostgreSQL 19 大概率要拖到 11 月，原因是 LLM 让找 bug 变得太容易。今年 4 月功能冻结到 9 月 25 日，master 提交 1443 次、REL_19_STABLE 回补 1169 次，比去年同期多六成；SQL/PGQ、MERGE PARTITION 等三个大功能 beta 后期被迫回滚。写代码变快，修 bug 没变快，发布节奏就崩了。",
+          "quote": "AI 找 bug 一找一个准，修还是人修。",
+          "source": "HN Front Page / Robert Haas",
+          "url": "http://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html",
+          "published": "2026-11-03",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_b766f72a",
+          "title": "中国首份前沿 AI 出口管制：权重、Agent、源码全上清单",
+          "content": "10 月 16 日，商务部和科技部发布第 48 号公告，拟把 40 项技术列入出口限制，其中 23 项属 AI：前沿模型权重、checkpoint、源码、架构和训练推理优化经验，只要满足 10^26 FLOPs 训练算力、2 万亿参数或全球公开评测前十任一条件就受限。Agent 单独管，规划、多智能体协同、工具调用按基准设限，关键基础设施与国防用途直接禁止。目录还在征求意见，但出口预登记已经生效。",
+          "quote": "权重、agent、源码，一个都别想带走。",
+          "source": "HN Front Page / Cloud Security Alliance",
+          "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/",
+          "published": "2026-11-03",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_2a73ef8d",
+          "title": "AI Agent 给小鼠做脑手术，兽医握着急停",
+          "content": "Gabriel Ocana-Santero 让 AI agent 给小鼠做脑手术：输入 19 个基因治疗载体、癫痫模型、带摄像头的电动立体定位仪，目标只有「减少癫痫发作」。agent 自己选药物和脑区，从三篇论文推坐标，驱动机械臂插入并注射 250 纳升，全程看摄像头盯出血。每个不可逆步骤由持证兽医放行，旁边有物理急停；作者说有一刻 agent 拒绝了他的覆盖指令。",
+          "quote": "兽医握着急停，AI 握着手术刀。",
+          "source": "HN Front Page / X",
+          "url": "https://twitter.com/OcanaSantero/status/2115442964574908902",
+          "published": "2026-11-03",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_92c1e3cc",
+          "title": "R²Orch：先教 Agent 技能，再逼它把技能忘掉",
+          "content": "R²Orch 提出递归自博弈编排：内循环让 orchestrator 自选任务自我提升，外循环改进「怎么提升」。核心是 Recursive Learnability：奖励 Proposer 挑撤掉技能后结果仍会分化的任务；再用 Skill Withdrawal，在自博弈里确认某个技能可有可无就撤掉。失败蒸馏成技能，技能压进参数，撤技能又逼出新失败，目标是把技能依赖降到零。12 个数据集稳定超基线。",
+          "quote": "先教它技能，再逼它把技能忘掉。",
+          "source": "HuggingFace Papers / arXiv",
+          "url": "https://huggingface.co/papers/2610.22740",
+          "published": "2026-11-03",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_170bc7b7",
+          "title": "通往 AGI 的下一程，可能取决于 System-1 让 System-2 干什么",
+          "content": "这篇论文问：通往 AGI 的下一程，会否取决于 System-1 让 System-2 执行什么。作者提出「条件交互」：轻量 System-1 先预测每个候选交互的效用，自适应阈值放行，System-2 只执行值得花算力的部分，结果再回训 System-1。理想筛选下执行算力可降到约 1/ρ_u，ρ_u 是有效交互密度；选择遗憾由预测误差和效用间隔界定。等于给 scaling 加了一个可测量坐标。",
+          "quote": "别让大模型什么都算，先学会挑活。",
+          "source": "HuggingFace Papers / arXiv",
+          "url": "https://huggingface.co/papers/2610.39497",
+          "published": "2026-11-03",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_352c5ebf",
+          "title": "CodeSpecWeave：让需求互相打架，才测得出长程编码真本事",
+          "content": "长程编码 agent 常只顾主目标，忽略接口兼容、错误处理这些相互牵制的约束。CodeSpecWeave 用真实开发者种子做底，合成 agent 同步生成耦合需求和可执行测试，review agent 再拿多个模型的解题轨迹审查测试可靠性，避免把任务做成清单或误杀合法写法。最终构造 4,670 个任务、覆盖 2,865 个仓库，RL 后在 DeepSWE-v1.1 上明显超过基线，并配套了基准。",
+          "quote": "需求互相打架，才测得出真本事。",
+          "source": "HuggingFace Papers / arXiv",
+          "url": "https://huggingface.co/papers/2610.40256",
+          "published": "2026-11-03",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_1bd9c219",
+          "title": "ViKernel：把急停开关焊进模型权重里",
+          "content": "ViKernel 提出权重原生 OS：把 ROM、RAM 和 xPU 电路直接接进模型权重，让操作系统成为模型文件的一部分。四条规则都在权重里——启动即校验、按规则放行动作、审计链不可删、急停开关内置。停机谁都能按，恢复要签名密钥，而且不参与训练、无法被提示词说服。作者的理由很直白：能拆、能被说服、能被改写的护栏只是政策。",
+          "quote": "停机谁都能按，重启得拿钥匙，这才叫开关。",
+          "source": "Hugging Face Blog",
+          "url": "https://huggingface.co/blog/FINAL-Bench/vikernel-why-the-kill-switch-must-live-inside-the",
+          "published": "2026-11-03",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_5eac4393",
+          "title": "LitPivot：写完想法，先让文献来拆台",
+          "content": "Ai2 与宾大做 LitPivot：把研究提案拆成问题、贡献、评估三块，每块单独检索和排序文献，点哪段就给带原文摘录的批评与改写建议，作者可接受、编辑或拒绝，文献随提案改动重新排序。分析四个课题的会议记录，找到 21 次文献触发的转向；17 名研究者的实验里，专家认为用它打磨的想法更贴合文献、也更新颖。",
+          "quote": "AI 不替你写论文，只负责说别人写过了。",
+          "source": "Hugging Face Blog",
+          "url": "https://huggingface.co/blog/allenai/litpivot",
+          "published": "2026-11-03",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_5e09ef87",
+          "title": "FlatCake：KV 缓存别再分层，DRAM 和 SSD 平起平坐",
+          "content": "清华与智谱的论文 FlatCake 质疑 KV 缓存三级分层：GPU HBM 到 DRAM 再到 SSD，依赖「刚淘汰的块很快会被重用」这一时间局部性假设。但生产负载多是一次性长文档，以及 20 万 token、跑半小时的 Agent 会话，DRAM 暖缓冲命中不了，还多一层延迟。它把 DRAM 和 SSD 当同级介质放进统一地址空间，按介质特性直接调度。",
+          "quote": "缓存分层排了半天，命中率还不如不分。",
+          "source": "Dev.to",
+          "url": "https://dev.to/prabhakar_chaudhary_7afe4/flatcake-why-tiered-kv-cache-storage-is-holding-llm-serving-back-1p4j",
+          "published": "2026-11-03",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_8269c391",
+          "title": "给 AI 同事上审批：16 类权限，6 类永不放行",
+          "content": "Sahkarmi 把 Agent 的每次工具调用归入 16 个权限类别，默认允许、询问或拒绝；其中付款、给客户或第三方发消息、公开发布、shell、破坏性文件操作、政府表单这 6 类硬编码为必须询问，模型不能自动批准，设置界面也改不成允许。规则是模型提议、人类批准、决定留痕，另配限时授权和浏览器接管，密码不进模型上下文。",
+          "quote": "十六道门六道焊死，剩下的靠人别犯困。",
+          "source": "Dev.to",
+          "url": "https://dev.to/dhrubojyoti/approval-gates-for-ai-agents-how-sahkarmi-decides-what-a-coworker-may-do-c7k",
+          "published": "2026-11-03",
+          "direction": "工具/平台"
+        }
+      ]
+    }
+  }
+}
