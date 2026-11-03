@@ -1,0 +1,143 @@
+# 开发者日报 · A 轨素材 · 2026-11-04
+
+共 14 条
+
+## 1. OpenAI 疑似静默重开 Codex 训练开关
+
+- **来源**：HN Front Page
+- **链接**：https://news.ycombinator.com/item?id=50352757
+- **UID**：dev_11cd7f95
+
+HN 用户发帖称，公司为防 IP 经 prompt 泄露，团队早已在 Codex、Claude Code 里关掉数据共享，但昨天同事发现 Codex 的「Improve the model for everyone」又被打开了，没人主动选择过。帖子附上设置页让用户自查，并询问是否只是个例。讨论里有人质疑无法证明原来关过，也有人认为模型厂商静默重开训练开关本身就是伦理问题，还有人干脆建议敏感团队自建推理。
+
+> 毒舌：默认共享才是好生意，勾选框只是装饰。
+
+## 2. 「Astra 直接读写权重」被指误导：那是一场魔术
+
+- **来源**：HN Front Page
+- **链接**：https://honnibal.dev/blog/astra-read-write-misleading
+- **UID**：dev_96514c46
+
+博主拆解爆火的 Astra 实验：通稿宣称只靠看原始权重，就把 Qwen3.5-0.8B 的 MATH-500 从 7.9% 提到 48.1%，还能从零写出击败 PPO 百万步的网络。实际拆开看，这些实验会现写 Python 程序、运行网络、反复采样，并非只读权重。作者把每个实验按是否读权重、是否写权重、是否写代码、是否运行网络列成表，指出多个手法被讲成了一个魔术。
+
+> 毒舌：通稿说只看权重，代码里全是写程序。
+
+## 3. 1996 年的奔腾 Pro，本来就够赢卡斯帕罗夫
+
+- **来源**：HN Front Page
+- **链接**：https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html
+- **UID**：dev_88466392
+
+Nicholas Carlini 用一台 200MHz 奔腾 Pro、64MB 内存跑自改的 Stockfish，估算棋力 3300±87 Elo，远高于卡斯帕罗夫当年的 2800。他算了一笔账：现代引擎相对 1996 年的 +1335 Elo 里，约 720 来自算法进步而非硬件。结论是 IBM 花几百万美元造深蓝并非必需；他还把这台古董机接上网，读者可以在 Lichess 上直接和它对弈。
+
+> 毒舌：花几百万造深蓝，不如把算法写对。
+
+## 4. Mac at Any Scale：把几百台笔记本塞进机架做 CI
+
+- **来源**：HN Front Page
+- **链接**：https://namespace.so/blog/mac-at-any-scale
+- **UID**：dev_8cf81437
+
+Namespace 把数百台 MacBook Pro 拆箱装进自建机架，用来跑 macOS CI。原因很硬：iOS 构建与模拟器离不开 Mac，而 Mac mini 订两百台要等半年，M5 又晚到十个月。他们自研机架与供电，能在数秒内从零启动 macOS 实例，苹果发布新版 Xcode 后几小时就能提供。文章讲了为什么选笔记本、散热和远程管理的坑，以及供应链如何逼出这套方案。
+
+> 毒舌：买不到 Mac mini，就把笔记本塞进机架。
+
+## 5. mattpocock/skills：31 万星的「真工程师」技能库
+
+- **来源**：GitHub Trending Daily
+- **链接**：https://github.com/mattpocock/skills
+- **UID**：dev_152e48f4
+
+Matt Pocock 把自己的 .agents 目录公开，几天冲到 31 万星。主张是「做真实工程，不做 vibe coding」：技能刻意做小、可改、可组合，不接管流程，任何模型都能用。核心是 grill-me——动手前让 agent 反过来盘问你的需求；另有 triage、文档、issue 追踪等。一条 npx skills 命令安装，支持 Claude Code、Codex、Cursor 等。
+
+> 毒舌：技能不接管流程，才算真给工程师用。
+
+## 6. colibri：把 MoE 专家放硬盘，纯 C 跑 744B 模型
+
+- **来源**：GitHub Trending Daily
+- **链接**：https://github.com/JustVugg/colibri
+- **UID**：dev_feb295fb
+
+colibri 用纯 C 写了个分层 MoE 推理引擎：每个 token 只用少量专家，热的放 GPU、温的留内存、冷的从 NVMe 流式读，于是普通机器也能跑数百 B 参数模型，无 GPU 也能启动。示例中 GLM-5.2 744B MoE、int4 量化常驻仅 9.9GB，CPU 32 秒就绪；已支持 GLM、Kimi K3、DeepSeek V4、Qwen3.8 等十三个引擎，也能直接读现成 GGUF。
+
+> 毒舌：把专家放硬盘里，穷机器也能跑大模型。
+
+## 7. worktrunk：给并行 agent 用的 git worktree 包装
+
+- **来源**：GitHub Trending Daily
+- **链接**：https://github.com/max-sixty/worktrunk
+- **UID**：dev_c6898d72
+
+同时跑 5-10 个 coding agent 时，git worktree 是最好的隔离手段，但原生命令难用：建一个 worktree 要把分支名敲三遍。Worktrunk 用 Rust 把 worktree 做成分支级操作，wt switch -c -x claude feat 一条命令建目录并启动 Claude；还支持 hooks、LLM 生成 commit message、合并后清理，以及在 APFS/btrfs 上共享构建缓存，已 1 万星。
+
+> 毒舌：worktree 难用不是 git 的错，是没人包装。
+
+## 8. heretic：几十分钟改写本地模型的行为
+
+- **来源**：GitHub Trending Daily
+- **链接**：https://github.com/p-e-w/heretic
+- **UID**：dev_bace6c85
+
+Heretic 用一组数学方法改写本地模型行为，不做昂贵训练：给定对比提示与打分器，直接搜索权重修改方向。默认动作是去除拒答与审查，另有降 slop、降谄媚、去幽默、调情绪等配置；支持多数 dense、MoE 与多模态模型，4-bit 量化可把显存压到可跑范围。Hugging Face 上社区已发布数千个 Heretic 模型，仓库 3.8 万星，还拿 MMLU、GSM8K 做过对比。
+
+> 毒舌：去审查成了流水线，几十分钟一个模型。
+
+## 9. Vibe Coding 几个月，人从程序员变成了经理
+
+- **来源**：V2EX Tech
+- **链接**：https://www.v2ex.com/t/1251091
+- **UID**：dev_b69164b0
+
+楼主复盘 vibe coding 后的变化：编程知识从语义层退到抽象层，只剩 convention 和 taste。以前纠结具体怎么写，现在只判断这个技术栈和约束下能不能做；出问题也只分析原因与层级，然后丢给 agent，自己只验收。技术栈换得太快，第一个项目 electron、第二个就得 tauri，逐个学不现实；连细节都让 agent 写文档，需要时再查。
+
+> 毒舌：从程序员变成经理，工资倒是一分没涨。
+
+## 10. 为了少点几十次「允许」，他把 Claude Code 搬上灵动岛
+
+- **来源**：V2EX Share
+- **链接**：https://www.v2ex.com/t/1254267
+- **UID**：dev_f50c012a
+
+同时开两三个 Claude Code 会话加一个 Cursor，每次写文件、跑命令都要切窗口点允许，一天几十次，节奏全碎。作者写了个原生 Swift 的 macOS 工具，把等待批准、提问、计划审阅都收进顶部灵动岛：岛上直接允许或拒绝，⌘1/⌘2 选项，点一下跳回对应 iTerm2 标签，还能看谁在跑谁卡住。四个代理约 40MB，支持三十来种工具。
+
+> 毒舌：一天点几十次允许，注意力就是这么碎的。
+
+## 11. 实测 8 周 Claude Code：缓存省 87%，首次 typecheck 过 86%
+
+- **来源**：Dev.to
+- **链接**：https://dev.to/diegoprieri/i-measured-8-weeks-of-claude-code-87-lower-cost-86-first-try-typecheck-gp2
+- **UID**：dev_b8bd110e
+
+作者用 Claude Code 自己写的会话日志统计 8 周、75 亿输入 token：98.4% 来自缓存，输入成本比不开缓存低 87.4%。原因是 agent 每轮都重发几乎不变的前缀，缓存写一次、之后按一折读。另一组数据更扎心：首次 typecheck 通过率 86.3%，首次测试只有 75.2%，只看未过滤输出时测试仅 52.4%，所以验证门禁不能省。工具已 MIT 开源。
+
+> 毒舌：缓存省下的钱，都赔给第一次没跑过的测试。
+
+## 12. 单调时钟也会变速：NTP 调频如何搅乱 Xenomai 周期同步
+
+- **来源**：博客园 Cnblogs
+- **链接**：https://www.cnblogs.com/wsg1100/p/23539307
+- **UID**：dev_28f93f07
+
+一篇硬核排查：Xenomai 的 EtherCAT 周期任务明明用 CLOCK_MONOTONIC 做绝对等待，相位仍先偏约 30µs 再慢慢回归。作者从同步环一路查到时钟源，发现主机 timesyncd 的 NTP 调频会改变单调时钟的走时速率——单调只保证不倒退，不保证频率恒定。文章对比 MONOTONIC 与 MONOTONIC_RAW，讲清硬件计数如何变成纳秒、频差怎样进入 DC 同步环，并给出只读测量方法。
+
+> 毒舌：单调时钟不倒退，但从没答应你走得准。
+
+## 13. 5.5 万星的 AI PPT 项目，被包成了桌面应用
+
+- **来源**：博客园 Cnblogs
+- **链接**：https://www.cnblogs.com/wyang/p/23539934
+- **UID**：dev_976e5d48
+
+ppt-master 本质是跑在 Claude Code 里的 skill，想用得先会装工具、开终端、配 API，多数人卡在第一步。作者用 Electron 包了个桌面版：选文件、选风格、点生成，底层仍是解析→大纲→逐页 SVG→质量门禁→导出原生可编辑 pptx。文章讲了检查器回炉重写、路径全参数化、自动更新，以及打包漏掉 preload.js 导致界面永远卡在「检测中」的坑。
+
+> 毒舌：把门槛包进安装包，用户才懒得管原理。
+
+## 14. Redis 为什么快：把「数据在内存」这句话拆开
+
+- **来源**：博客园 Cnblogs
+- **链接**：https://www.cnblogs.com/codigger/p/23531352
+- **UID**：dev_5e620e2d
+
+「Redis 快是因为数据在内存」太偷懒：同样放内存，能跑到十万级 QPS 的没几个。文章拆开讲：单线程只指命令执行，RDB/AOF、过期删除、网络读写都另有线程；主线程串行执行天然免锁，上下文切换与缓存失效的代价反而更贵。配上 epoll 多路复用，一个线程接住上万连接。作者强调这不是保守，是算过账之后的选择。
+
+> 毒舌：说 Redis 快是因为内存，等于说人穷是因为没钱。
