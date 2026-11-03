@@ -1,0 +1,227 @@
+[
+  {
+    "title": "OpenAI 疑似静默重开 Codex 训练开关",
+    "content": "HN 用户发帖称，公司为防 IP 经 prompt 泄露，团队早已在 Codex、Claude Code 里关掉数据共享，但昨天同事发现 Codex 的「Improve the model for everyone」又被打开了，没人主动选择过。帖子附上设置页让用户自查，并询问是否只是个例。讨论里有人质疑无法证明原来关过，也有人认为模型厂商静默重开训练开关本身就是伦理问题，还有人干脆建议敏感团队自建推理。",
+    "quote": "默认共享才是好生意，勾选框只是装饰。",
+    "source": "HN Front Page",
+    "url": "https://news.ycombinator.com/item?id=50352757",
+    "published": "2026-11-04",
+    "uid": "dev_11cd7f95"
+  },
+  {
+    "title": "「Astra 直接读写权重」被指误导：那是一场魔术",
+    "content": "博主拆解爆火的 Astra 实验：通稿宣称只靠看原始权重，就把 Qwen3.5-0.8B 的 MATH-500 从 7.9% 提到 48.1%，还能从零写出击败 PPO 百万步的网络。实际拆开看，这些实验会现写 Python 程序、运行网络、反复采样，并非只读权重。作者把每个实验按是否读权重、是否写权重、是否写代码、是否运行网络列成表，指出多个手法被讲成了一个魔术。",
+    "quote": "通稿说只看权重，代码里全是写程序。",
+    "source": "HN Front Page",
+    "url": "https://honnibal.dev/blog/astra-read-write-misleading",
+    "published": "2026-11-04",
+    "uid": "dev_96514c46"
+  },
+  {
+    "title": "1996 年的奔腾 Pro，本来就够赢卡斯帕罗夫",
+    "content": "Nicholas Carlini 用一台 200MHz 奔腾 Pro、64MB 内存跑自改的 Stockfish，估算棋力 3300±87 Elo，远高于卡斯帕罗夫当年的 2800。他算了一笔账：现代引擎相对 1996 年的 +1335 Elo 里，约 720 来自算法进步而非硬件。结论是 IBM 花几百万美元造深蓝并非必需；他还把这台古董机接上网，读者可以在 Lichess 上直接和它对弈。",
+    "quote": "花几百万造深蓝，不如把算法写对。",
+    "source": "HN Front Page",
+    "url": "https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html",
+    "published": "2026-11-04",
+    "uid": "dev_88466392"
+  },
+  {
+    "title": "Mac at Any Scale：把几百台笔记本塞进机架做 CI",
+    "content": "Namespace 把数百台 MacBook Pro 拆箱装进自建机架，用来跑 macOS CI。原因很硬：iOS 构建与模拟器离不开 Mac，而 Mac mini 订两百台要等半年，M5 又晚到十个月。他们自研机架与供电，能在数秒内从零启动 macOS 实例，苹果发布新版 Xcode 后几小时就能提供。文章讲了为什么选笔记本、散热和远程管理的坑，以及供应链如何逼出这套方案。",
+    "quote": "买不到 Mac mini，就把笔记本塞进机架。",
+    "source": "HN Front Page",
+    "url": "https://namespace.so/blog/mac-at-any-scale",
+    "published": "2026-11-04",
+    "uid": "dev_8cf81437"
+  },
+  {
+    "title": "mattpocock/skills：31 万星的「真工程师」技能库",
+    "content": "Matt Pocock 把自己的 .agents 目录公开，几天冲到 31 万星。主张是「做真实工程，不做 vibe coding」：技能刻意做小、可改、可组合，不接管流程，任何模型都能用。核心是 grill-me——动手前让 agent 反过来盘问你的需求；另有 triage、文档、issue 追踪等。一条 npx skills 命令安装，支持 Claude Code、Codex、Cursor 等。",
+    "quote": "技能不接管流程，才算真给工程师用。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/mattpocock/skills",
+    "published": "2026-11-04",
+    "uid": "dev_152e48f4"
+  },
+  {
+    "title": "colibri：把 MoE 专家放硬盘，纯 C 跑 744B 模型",
+    "content": "colibri 用纯 C 写了个分层 MoE 推理引擎：每个 token 只用少量专家，热的放 GPU、温的留内存、冷的从 NVMe 流式读，于是普通机器也能跑数百 B 参数模型，无 GPU 也能启动。示例中 GLM-5.2 744B MoE、int4 量化常驻仅 9.9GB，CPU 32 秒就绪；已支持 GLM、Kimi K3、DeepSeek V4、Qwen3.8 等十三个引擎，也能直接读现成 GGUF。",
+    "quote": "把专家放硬盘里，穷机器也能跑大模型。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/JustVugg/colibri",
+    "published": "2026-11-04",
+    "uid": "dev_feb295fb"
+  },
+  {
+    "title": "worktrunk：给并行 agent 用的 git worktree 包装",
+    "content": "同时跑 5-10 个 coding agent 时，git worktree 是最好的隔离手段，但原生命令难用：建一个 worktree 要把分支名敲三遍。Worktrunk 用 Rust 把 worktree 做成分支级操作，wt switch -c -x claude feat 一条命令建目录并启动 Claude；还支持 hooks、LLM 生成 commit message、合并后清理，以及在 APFS/btrfs 上共享构建缓存，已 1 万星。",
+    "quote": "worktree 难用不是 git 的错，是没人包装。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/max-sixty/worktrunk",
+    "published": "2026-11-04",
+    "uid": "dev_c6898d72"
+  },
+  {
+    "title": "heretic：几十分钟改写本地模型的行为",
+    "content": "Heretic 用一组数学方法改写本地模型行为，不做昂贵训练：给定对比提示与打分器，直接搜索权重修改方向。默认动作是去除拒答与审查，另有降 slop、降谄媚、去幽默、调情绪等配置；支持多数 dense、MoE 与多模态模型，4-bit 量化可把显存压到可跑范围。Hugging Face 上社区已发布数千个 Heretic 模型，仓库 3.8 万星，还拿 MMLU、GSM8K 做过对比。",
+    "quote": "去审查成了流水线，几十分钟一个模型。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/p-e-w/heretic",
+    "published": "2026-11-04",
+    "uid": "dev_bace6c85"
+  },
+  {
+    "title": "为了少点几十次「允许」，他把 Claude Code 搬上灵动岛",
+    "content": "同时开两三个 Claude Code 会话加一个 Cursor，每次写文件、跑命令都要切窗口点允许，一天几十次，节奏全碎。作者写了个原生 Swift 的 macOS 工具，把等待批准、提问、计划审阅都收进顶部灵动岛：岛上直接允许或拒绝，⌘1/⌘2 选项，点一下跳回对应 iTerm2 标签，还能看谁在跑谁卡住。四个代理约 40MB，支持三十来种工具。",
+    "quote": "一天点几十次允许，注意力就是这么碎的。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1254267",
+    "published": "2026-11-04",
+    "uid": "dev_f50c012a"
+  },
+  {
+    "title": "Demi：一个 Shell 工具管所有机器，浏览器里当 Cursor 用",
+    "content": "Demi 用 Rust 加 Web 技术栈写了套可自部署的 Agent 平台，装在 VPS 上，用浏览器就能聊天、写代码、生图、运维，登录自己的订阅或填 API Key。被控机器装 Runner 后，一次对话可先在 Mac 构建、去 Windows 测试、再到 VPS 部署，不用 SSH。它只给模型一个 Shell 工具，读写代码都走 Bash，System Prompt 尽量短，避免 MCP 污染上下文；多用户功能禁止商用。",
+    "quote": "一个 Shell 走天下，SSH 客户端可以退休了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1254077",
+    "published": "2026-11-04",
+    "uid": "dev_2314dde3"
+  },
+  {
+    "title": "不导 Cookie 的发帖工具：Chrome 扩展加 Native Messaging",
+    "content": "用 Playwright 发视频要配环境、导 Cookie，过期重来，还容易被判自动化。EasyPost 换路：跑在真实 Chrome 里复用登录态，CLI 通过 Native Messaging 与扩展通信，扩展在 Isolated World 填标题、正文、标签和素材，最后一步由人用真鼠标点。支持小红书、抖音、视频号、B 站、快手、微博、X 和 Instagram，附 Agent Skill，MIT 开源；作者提醒这不是零风险。",
+    "quote": "不导 Cookie 不等于不封号，只是封得慢一点。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1254227",
+    "published": "2026-11-04",
+    "uid": "dev_228237f9"
+  },
+  {
+    "title": "运营五个站，他把 CMS 写成了一个后台管全部",
+    "content": "痛点不是写稿，是五套后台、五套插件、五份备份，改个通用功能要登五次。AI-CMS 把站点、栏目、内容、媒体、版式收进一个后台，带 RBAC 和回收站；版式用 HY_ 标签，支持三级作用域与版本管理。发布生成 Astro 静态站，可细到单篇重建，线上没有动态后台可打；AI 写作嵌在编辑器里，Provider 可插拔；Docker Compose 一条命令起，Apache-2.0。",
+    "quote": "五个站五套后台，运维的尽头是自己造后台。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1254237",
+    "published": "2026-11-04",
+    "uid": "dev_d5fc8702"
+  },
+  {
+    "title": "把 1.4 万个比赛作品当创意库：三层漏斗筛到 28 个",
+    "content": "作者认为 AI coding 之后门槛从「差一个程序员」变成「差一个 idea」，于是拿 WorkBuddy 1024 大赛的 14562 个公开作品做选题样本。规则层去重去空，模型层用 DeepSeek 按痛点、方案、变现、差异化四维打分，人工改判后剩 207 条，再过滤竞品与专业背书剩 28 条。纯娱乐占 23%、低频 15%、单 Skill 可替代 9.5%，合计 47%。",
+    "quote": "AI 拆了写代码的门槛，留下了想点子的门槛。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1254200",
+    "published": "2026-11-04",
+    "uid": "dev_49ee365f"
+  },
+  {
+    "title": "Vibe Coding 几个月，人从程序员变成了经理",
+    "content": "楼主复盘 vibe coding 后的变化：编程知识从语义层退到抽象层，只剩 convention 和 taste。以前纠结具体怎么写，现在只判断这个技术栈和约束下能不能做；出问题也只分析原因与层级，然后丢给 agent，自己只验收。技术栈换得太快，第一个项目 electron、第二个就得 tauri，逐个学不现实；连细节都让 agent 写文档，需要时再查。",
+    "quote": "从程序员变成经理，工资倒是一分没涨。",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1251091",
+    "published": "2026-11-04",
+    "uid": "dev_b69164b0"
+  },
+  {
+    "title": "实测 8 周 Claude Code：缓存省 87%，首次 typecheck 过 86%",
+    "content": "作者用 Claude Code 自己写的会话日志统计 8 周、75 亿输入 token：98.4% 来自缓存，输入成本比不开缓存低 87.4%。原因是 agent 每轮都重发几乎不变的前缀，缓存写一次、之后按一折读。另一组数据更扎心：首次 typecheck 通过率 86.3%，首次测试只有 75.2%，只看未过滤输出时测试仅 52.4%，所以验证门禁不能省。工具已 MIT 开源。",
+    "quote": "缓存省下的钱，都赔给第一次没跑过的测试。",
+    "source": "Dev.to",
+    "url": "https://dev.to/diegoprieri/i-measured-8-weeks-of-claude-code-87-lower-cost-86-first-try-typecheck-gp2",
+    "published": "2026-11-04",
+    "uid": "dev_b8bd110e"
+  },
+  {
+    "title": "重启后闹钟集体失忆：Android 启动器的两个边界坑",
+    "content": "ReClaim 是上架 Google Play 的极简 Android 启动器。边界一到就露馅：手机重启后 AlarmManager 闹钟被系统清空，DataStore 还留着结束时间却没人等待；晚上 11:40 打开应用、12:20 退出，跨过午夜的那 20 分钟不算进新一天。修复是一个 pending 标记、一个开机接收器，加一个带 7 个 JVM 单测的纯函数；结束时间用墙钟存，重启后仍能按原时刻重排。",
+    "quote": "闹钟被重启吃掉，15 分钟的提醒成了薛定谔。",
+    "source": "Dev.to",
+    "url": "https://dev.to/tryreclaim/the-edge-cases-after-shipping-re-arming-android-alarms-after-a-reboot-and-counting-app-usage-1hap",
+    "published": "2026-11-04",
+    "uid": "dev_00922ac6"
+  },
+  {
+    "title": "Mach 进了 WinGet：C++20 写 HTTP API，一条命令装框架",
+    "content": "Mach 是受 ASP.NET Core 启发的开源 C++20 Web 框架，提供 minimal API、控制器、依赖注入、中间件、JSON 序列化和校验，底层是 Boost.Asio 与 Boost.Beast，异步网络用协程。现在 Windows 上可直接 winget install MachFramework.Mach，不用手找 MSI，编译器和 CMake 仍需自备；1.1.0 将改请求绑定与开发体验。",
+    "quote": "C++ 后端终于有包管理器体验，前提是先装好编译器。",
+    "source": "Dev.to",
+    "url": "https://dev.to/asafmach/mach-is-now-available-on-winget-install-a-c20-web-framework-with-one-command-49la",
+    "published": "2026-11-04",
+    "uid": "dev_c622919c"
+  },
+  {
+    "title": "把发布日焊死在凌晨 0:01：24 小时榜单的工程解法",
+    "content": "Astro Discover 认为现有 launchpad 的排名已变成付费投票游戏，于是把每日批次锚定到印度时间 0:01：所有项目同一秒上线，每个 maker 拿到完整 24 小时，23:59:59 整批归档。人工审核积压时不推迟，而是带「Pending Review」徽章自动上线；实时状态用 Firestore 快照监听加客户端乐观更新，省掉 WebSocket 集群。",
+    "quote": "投票能买、时区能挑，那就把发车时间焊死。",
+    "source": "Dev.to",
+    "url": "https://dev.to/astrodiscover/beyond-upvote-rings-how-we-engineered-a-real-time-24-hour-launch-engine-with-react-and-firestore-3g08",
+    "published": "2026-11-04",
+    "uid": "dev_1e5d46cc"
+  },
+  {
+    "title": "单调时钟也会变速：NTP 调频如何搅乱 Xenomai 周期同步",
+    "content": "一篇硬核排查：Xenomai 的 EtherCAT 周期任务明明用 CLOCK_MONOTONIC 做绝对等待，相位仍先偏约 30µs 再慢慢回归。作者从同步环一路查到时钟源，发现主机 timesyncd 的 NTP 调频会改变单调时钟的走时速率——单调只保证不倒退，不保证频率恒定。文章对比 MONOTONIC 与 MONOTONIC_RAW，讲清硬件计数如何变成纳秒、频差怎样进入 DC 同步环，并给出只读测量方法。",
+    "quote": "单调时钟不倒退，但从没答应你走得准。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/wsg1100/p/23539307",
+    "published": "2026-11-04",
+    "uid": "dev_28f93f07"
+  },
+  {
+    "title": "5.5 万星的 AI PPT 项目，被包成了桌面应用",
+    "content": "ppt-master 本质是跑在 Claude Code 里的 skill，想用得先会装工具、开终端、配 API，多数人卡在第一步。作者用 Electron 包了个桌面版：选文件、选风格、点生成，底层仍是解析→大纲→逐页 SVG→质量门禁→导出原生可编辑 pptx。文章讲了检查器回炉重写、路径全参数化、自动更新，以及打包漏掉 preload.js 导致界面永远卡在「检测中」的坑。",
+    "quote": "把门槛包进安装包，用户才懒得管原理。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/wyang/p/23539934",
+    "published": "2026-11-04",
+    "uid": "dev_976e5d48"
+  },
+  {
+    "title": "Redis 为什么快：把「数据在内存」这句话拆开",
+    "content": "「Redis 快是因为数据在内存」太偷懒：同样放内存，能跑到十万级 QPS 的没几个。文章拆开讲：单线程只指命令执行，RDB/AOF、过期删除、网络读写都另有线程；主线程串行执行天然免锁，上下文切换与缓存失效的代价反而更贵。配上 epoll 多路复用，一个线程接住上万连接。作者强调这不是保守，是算过账之后的选择。",
+    "quote": "说 Redis 快是因为内存，等于说人穷是因为没钱。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/codigger/p/23531352",
+    "published": "2026-11-04",
+    "uid": "dev_5e620e2d"
+  },
+  {
+    "title": "AI 写代码越快，企业越需要自己的 Harness",
+    "content": "作者复盘项目级 Harness 的四个根因：模型不知道项目事实、没有真实工具与权限、看不到真实运行结果、不知道何时才算完成。做法是先写可检查的 Spec 再动代码，用 AGENTS.md 约定流程，再用 PreToolUse Hook 拦截没有 Spec 的改码；测试与架构评审 Agent 按 Spec 驳回，提交前检查评审结果，覆盖率不过不允许合并。",
+    "quote": "AGENTS.md 负责讲道理，Hook 负责不讲道理。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/zh94/p/23532252",
+    "published": "2026-11-04",
+    "uid": "dev_d463802b"
+  },
+  {
+    "title": "写入成功到底算不算数：从副本确认到 fsync 的四层账",
+    "content": "Kafka 的 acks=all 只等当前 ISR 副本追加日志，不要求 fsync，断电仍可能丢；还得配 min.insync.replicas，否则 ISR 只剩 Leader 就退化成 acks=1。ES 默认 translog 每次写请求都 fsync 后才返回；MySQL 双 1 才稳。脏页被 STEAL 提前落盘前，WAL 强制先持久化 redo。write 只进 Page Cache，fsync 才到盘。",
+    "quote": "「写入成功」四个字，每一层都有自己的解释权。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/xu214/p/23532149",
+    "published": "2026-11-04",
+    "uid": "dev_cd261fce"
+  },
+  {
+    "title": "设计协同编辑：30 万长连接怎么扛，同一位置打字谁说了算",
+    "content": "先把需求抠清：单文档 50–100 人编辑、上万人只读、峰值 30 万长连接、每人约 2 ops/s、最终一致即可。接入层无状态，协同层有状态，同一 docId 经一致性哈希落到同一节点同一线程串行定序；广播走 WebSocket、落库走 MQ。协议带 serverSeq、opId 幂等与断线增量补齐；冲突用 OT 或 CRDT 的 LSEQ/RGA，配快照加 OpLog 回放，50ms 合并操作能降一个量级 QPS。",
+    "quote": "同一位置同时打字，先到的不算，服务端说了算。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/zrui-xyu/p/23531328",
+    "published": "2026-11-04",
+    "uid": "dev_d2c658c9"
+  },
+  {
+    "title": "Tool-Use Agent 的数据配方：加应用还是加任务，论文给了曲线",
+    "content": "Apple 的 SynthAPI 把训练数据拆成四个可调变量：应用数 A、单应用任务数 T、同一任务的初始数据库状态数 S、数据深度 D，共生成 45.8 万个任务、64 个应用、10472 个 API，训练 849 个 Qwen3.5 拟合经验扩展律。固定预算下任务少时集中小工具集更好，任务过 4096 后扩大应用覆盖占优；同预算重配后 AppWorld 上 4B 从 38.4% 升到 45.0%。",
+    "quote": "数据不够别急着加量，先算算配方比例。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Qiniu-developer/p/23535625",
+    "published": "2026-11-04",
+    "uid": "dev_76daee4d"
+  }
+]
