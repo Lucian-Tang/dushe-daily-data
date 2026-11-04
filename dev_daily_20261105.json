@@ -1,0 +1,227 @@
+[
+  {
+    "title": "GPUWorks：40MB 的控制面，不装 K8s 也能管混合 GPU 集群",
+    "content": "GPUWorks 把整个 GPU 管理与 MaaS 控制面压到约 40MB，不依赖 Kubernetes。自有服务器、云主机和 Mac 用一条命令接入同一集群，NVIDIA、AMD、昇腾、平头哥 PPU、海光与 Apple Silicon 可以混跑。内置 392 个模型、1235 套启动规格，选模型后自动估算显存、挑卡并拉起 vLLM 或 SGLang，对外提供 OpenAI 兼容端点。",
+    "quote": "不装 K8s，40MB 就想管全部 GPU。",
+    "source": "HN Show HN",
+    "url": "https://github.com/flitai-io/gpuworks",
+    "published": "2026-11-05",
+    "uid": "dev_ee00cbd9"
+  },
+  {
+    "title": "Hyperbutler：Windows 上不要 WSL 的 Docker，空闲只吃 319MB",
+    "content": "Hyperbutler 在 Windows 上用 Host Compute Service 起极简 Linux 虚机跑 dockerd，docker CLI 无需 WSL；对比 Docker Desktop 空闲 319MiB 对 1.7–2.7GB，启动跑容器 2.5 秒对 5.6 秒，删 5GB 镜像后 1.5GiB 对 6.8GiB。v0.1.0，Apache-2.0，Win11 x64。",
+    "quote": "为了不用 WSL，先造一个更小的 WSL。",
+    "source": "HN Show HN",
+    "url": "https://hyperbutler.dev/",
+    "published": "2026-11-05",
+    "uid": "dev_224108cc"
+  },
+  {
+    "title": "Evergreen：把不变量写进代码，让编译器替你做证明",
+    "content": "Evergreen 是一个主打「可证明安全」的系统语言：把前置条件、后置条件和数据不变量写在代码旁，由编译器生成并检查证明义务；内存层用显式布局、所有权与借用追踪；归纳证明、lemma 与 ideal 计算在检查后被擦除，不进入运行时。官网提供 WASM 编译器与在线 playground，示例包括非零类型、溢出检查和 UTF-8 字符串，口号是「比 C 更强，比 Rust 更安全」。",
+    "quote": "又一个「比 Rust 更安全」的语言，先跑个 demo。",
+    "source": "HN Front Page",
+    "url": "https://evergreenlang.net",
+    "published": "2026-11-05",
+    "uid": "dev_b81513ef"
+  },
+  {
+    "title": "mcp-meta：104 个 MCP 工具折叠成 2 个，Schema 瘦身 99.4%",
+    "content": "mcp-meta 夹在 MCP 客户端和多个上游 Server 之间，对模型只暴露两个懒加载元工具：mcp_tools 查 Server 概览或按需拉取紧凑签名，mcp_call 指定 Server 和工具发起调用。挂 14 个 Server、104 个工具时，每轮 Schema 烧 14.2 万字符；接入后降到 892 字符，减少 99.4%。纯 Python 标准库、零依赖，MIT 开源。",
+    "quote": "工具还没调用，Schema 先把上下文吃完了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1254539",
+    "published": "2026-11-05",
+    "uid": "dev_98ecd775"
+  },
+  {
+    "title": "强化学习驱动的逆向 Agent，想解决无人值守和高难样本",
+    "content": "作者做了个强化学习驱动的逆向工程 Agent，目标是把复杂逆向任务从「人盯着跑」变成无人值守：支持 Web、PE、ELF、APK 和固件等方向，分析过程中会持续学习，并把用过的方法与结果沉淀下来，后续任务可以复用经验，减少中途跑偏或过早宣布完成。项目仍在迭代，作者公开了 GitHub 仓库，欢迎用真实样本交流。",
+    "quote": "逆向最怕的不是难，是 AI 说它搞定了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1254571",
+    "published": "2026-11-05",
+    "uid": "dev_bcce8e55"
+  },
+  {
+    "title": "Promise.all 不限制并发，你得自己造一个有界池",
+    "content": "Promise.all 不限制并发：ids.map(id => fetchRecord(id)) 在等待前就把请求全发出去了，把 promise 包成函数再排队也来不及。正确做法是把输入保留为数据，把「启动任务」的回调交给有界池，槽位空出来才调用；池按输入顺序返回 fulfilled 或 rejected，单条失败不影响其余任务。只适用于独立 I/O，不提供 CPU 并行。",
+    "quote": "Promise.all 只负责等，不负责刹车。",
+    "source": "Dev.to",
+    "url": "https://dev.to/jitsumi/promiseall-doesnt-limit-concurrency-heres-a-small-pool-that-does-33cn",
+    "published": "2026-11-05",
+    "uid": "dev_fa092203"
+  },
+  {
+    "title": "CLAUDE.md 该写多长：200 行、500 行还是 32KiB",
+    "content": "Claude Code 建议 CLAUDE.md 控制在 200 行内，Cursor 每文件不超过 500 行，Codex 的 AGENTS.md 默认上限 32KiB，超出会被截断。真正的限制不是行数而是注意力预算：常驻指令每轮花 token，也和系统提示、工具描述抢注意力；重复冲突的规则让模型随便选。建议先量 token，把流程移到按需 skill，用 hook 或 CI 兜底「绝不」类规则。",
+    "quote": "写满 500 行规则，模型只记住了前 50 行。",
+    "source": "Dev.to",
+    "url": "https://dev.to/clogmeter/how-long-should-claudemd-agentsmd-be-51m8",
+    "published": "2026-11-05",
+    "uid": "dev_5d29e5c9"
+  },
+  {
+    "title": "Apex npm 投毒排查：从锁文件一路查到 MCP 和 DNS",
+    "content": "Apex npm 投毒排查链：恶意包 @apexacc/cli 通过启动器下发平台专属可执行文件，Windows 分支用 PowerShell、VBScript、UAC 与多种 loader 落地原生 stealer，macOS 分支用密码弹窗、CloudSyncD 和 C2 端点。取证分四段：包与锁文件、进程执行、DNS/代理/身份、ZoomEye 外部测绘，强调先保全再清理。",
+    "quote": "只查 npm 日志，等于只看犯罪现场的门铃。",
+    "source": "Dev.to",
+    "url": "https://dev.to/facilishz/a-practical-hunt-workflow-for-malicious-npm-packages-and-their-infrastructure-3e31",
+    "published": "2026-11-05",
+    "uid": "dev_f213f38c"
+  },
+  {
+    "title": "RSI 不只发生在模型：五种状态才决定改进能否继承",
+    "content": "递归自我改进从「模型变强」拆成五类可继承状态：数据、Harness、模型参数、Swarm 组织与 Meta 策略。Anthropic 称 2026 年 5 月超 80% 生产代码可归因 Claude，但代码量不等于效率；AlphaEvolve 把某内核加速 23%，整体训练只降约 1%；GLM-5.3 的 Infra Agent 把端到端吞吐做到基线三倍。局部收益不能直接乘成 RSI 加速。",
+    "quote": "内核快 23%，训练只快 1%，这才叫分母。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/fanzhidongyzby/p/23552080/rsi",
+    "published": "2026-11-05",
+    "uid": "dev_b64528c2"
+  },
+  {
+    "title": "uni-app 跑鸿蒙蓝牙全瞎：不报错、不回调，只能自己补",
+    "content": "uni-app 蓝牙 API 在 HarmonyOS Next 上被标为不支持，不报错、不回调，await 永远挂着。三层补齐：UTS 插件封装 @kit.ConnectivityKit，前端做同名同签名垫片，再注入纯 JS 厂商 SDK，协议代码一行没改。坑在于插件产物有 4 份副本不同步、原生监听注册与解注不成对导致随机「连接成功却报失败」、持久化 deviceId 随设备重启失效。",
+    "quote": "不报错也不回调，鸿蒙的蓝牙学会了装死。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/xyyt/p/23551290",
+    "published": "2026-11-05",
+    "uid": "dev_ada2ce08"
+  },
+  {
+    "title": "1010 行库存导出超时：一个缺失索引扫了 60 万行",
+    "content": "某冷库导出库存只有 1010 条，却反复触发 JDBC 10 秒读超时。作者从异常栈定位到一条标量子查询：为每条库存按 batch_id 去 60.9 万行的二维码表取果框编号，而 batch_id 没有索引，最坏估算要检查约 6 亿行次。加 IS NOT NULL 没用；最终只加一个普通索引、不改 Java 代码，预计扫描行数从约 60 万降到 1。返回行数少不等于查询便宜。",
+    "quote": "返回 1010 行，数据库扫了 6 亿行。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/SheepDog/p/23550837",
+    "published": "2026-11-05",
+    "uid": "dev_ee29a3c3"
+  },
+  {
+    "title": "Coding Agent 推理优化：单用户 Decode 2.8 倍是怎么来的",
+    "content": "Modal 公开 Coding Agent 推理优化：在 Kimi K2.6、SGLang 和 B200 上，单用户 Decode 提升 2.8 倍，吞吐提升 5.6 倍。放弃 TP8 选 TP4，因 TP8 每卡吞吐没翻倍；推测解码用真实 Coding Trace 微调 DFlash，接受长度从 5.00 提到 5.84，再快 20%；KV Cache 从 BF16 换 FP8。",
+    "quote": "堆到 8 卡不难，难的是每张卡都不闲着。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Qiniu-developer/p/23548452",
+    "published": "2026-11-05",
+    "uid": "dev_a7b9d530"
+  },
+  {
+    "title": "GitHub spec-kit：把「先写规格」做成 coding agent 的流程",
+    "content": "GitHub 开源的 Spec Kit 把「先写规格再让 coding agent 干活」做成流程：先建 constitution，再依次 specify、plan、tasks、implement、converge；用 extension、preset、workflow、bundle 等组合命令、质量门禁与规范，支持 Copilot、Claude Code，Python 3.11+ 安装。",
+    "quote": "先写清要什么，再让 AI 动手，顺序别反。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/github/spec-kit",
+    "published": "2026-11-05",
+    "uid": "dev_9f47cb6d"
+  },
+  {
+    "title": "Codemap：一张 HTML 把整个 Go 仓库摊平",
+    "content": "给 Go module 跑一条 go run 命令，就能生成单文件 code-map.html：按依赖层次排列每个 package，方块宽度代表函数数量，颜色对应顶层目录，点开能看它依赖谁、谁依赖它，GitHub 模块还能跳到函数行号。示例仓库 40 个包、1850 个函数；测试、vendor、testdata 和独立 go.mod 目录会被排除，也能挂进 GitHub Actions 当产物。",
+    "quote": "代码地图不用画，依赖自己会排队。",
+    "source": "HN Show HN",
+    "url": "https://github.com/peterretief/codemap",
+    "published": "2026-11-05",
+    "uid": "dev_a19f98d7"
+  },
+  {
+    "title": "OpenHuman：把 Superhuman 邮箱客户端开源复刻了",
+    "content": "一个长期用 Superhuman 的开发者做了原生 macOS 复刻版：Swift 6.4 编写，键盘优先，收件箱拆成重要、简报和其他，支持稍后发送、提醒和内嵌日历；数据本地优先，AI 功能也在 Mac 上跑，还带 CLI 给外部 agent 调用。目前是 v0.1.3 早期 alpha，只支持 Apple silicon 与 macOS 26+，采用 Apache-2.0。",
+    "quote": "付费邮箱的护城河，被一个周末撬开了。",
+    "source": "HN Show HN",
+    "url": "https://github.com/michaelmagan/OpenHuman",
+    "published": "2026-11-05",
+    "uid": "dev_268be793"
+  },
+  {
+    "title": "Iriszip：九位码配对，浏览器之间直传加密文件",
+    "content": "两台设备各开一个网页，输入九位码或扫二维码配对，文件和文本就在浏览器之间点对点传输，端到端加密，服务器不存内容，单文件上限 1GB。九位码里六位由服务器路由，三位只在发送端生成、只走二维码或链接片段；配对用 SPAKE2 口令认证，会话密钥混合经典与后量子密钥交换，代码开源可自托管。",
+    "quote": "不发网盘、不装 App，传完就当没发生过。",
+    "source": "HN Show HN",
+    "url": "https://github.com/iris-zip/iris",
+    "published": "2026-11-05",
+    "uid": "dev_ebc7767d"
+  },
+  {
+    "title": "Decipher：把 agent 写的千字规格压成 120 字人话",
+    "content": "Agent 写规格、PR 和报告动辄上千字，人扫一眼就点通过。Decipher 把文档重写成「要点先行」：前三段用大约 120 个英文词讲清结论，后面才放参考细节，并附一个必须回答的自检问题，比如「你能说出它最危险的假设吗」。它保留所有 caveat，支持 Claude Code、Codex、OpenCode 和 Cursor，MIT 开源。",
+    "quote": "你点的不是通过，是「我没看懂但先合了」。",
+    "source": "HN Show HN",
+    "url": "https://github.com/amirimi/decipher",
+    "published": "2026-11-05",
+    "uid": "dev_cbc8aec3"
+  },
+  {
+    "title": "subedit：给 agent 写的注释和文档配个 linter",
+    "content": "代码有 formatter 和 linter，注释和文档却没人管。subedit 做成 post-edit hook：agent 每次写文件都自动检查，能在不改语义的前提下静默修掉断行、列宽和 CJK 空格；只有需要改句意的问题才带着规则、度量值和修法回给模型。它读取项目已有的 ruff/Black/Prettier/Biome 宽度配置，并内置 Vale 风格。",
+    "quote": "代码有人管格式，注释一直裸奔。",
+    "source": "Dev.to",
+    "url": "https://dev.to/mroops/make-your-ai-agent-follow-your-style-guide-in-comments-and-docs-46hb",
+    "published": "2026-11-05",
+    "uid": "dev_134ec540"
+  },
+  {
+    "title": "凌晨两点的值班 agent：只提一个动作，等人点头",
+    "content": "给小型运维团队做的分诊 agent，接进 Switch 的聊天房间：收到告警后先用一句话复述，再给出 P0/P1/P2 分级和证据，然后只提一个最安全的下一步，绝不列菜单，也不自动执行。必须等人回复 approve 才动手，拒绝就把动作挂起、不留副作用；所有报告、提议、决定和回执都留在频道里，聊天记录本身就是审计轨迹。",
+    "quote": "半夜给 agent 写权限，不如给它一个刹车。",
+    "source": "Dev.to",
+    "url": "https://dev.to/schultzenator/a-human-gated-incident-agent-in-a-switch-room-a-first-timer-walkthrough-2kc9",
+    "published": "2026-11-05",
+    "uid": "dev_7ee2a3cc"
+  },
+  {
+    "title": "不用 API Key，用 Python 直接搜 Google Patents",
+    "content": "Google Patents 没有官方 API，但网页结果来自 /xhr/query 的 JSON 接口：真正的参数只有一个 url，值里再套一层编码后的查询串，所以关键词要编码两次。用标准库 urllib 加浏览器 UA 就能请求，支持 status、country、before/after、排序和分页；半分钟连发五次就可能 429。作者提醒结果数按「文档」算，同一发明常有申请和授权两条。",
+    "quote": "官方没接口，前端自己把后门开着。",
+    "source": "Dev.to",
+    "url": "https://dev.to/bestaitool/how-to-search-google-patents-from-python-without-an-api-key-5jg",
+    "published": "2026-11-05",
+    "uid": "dev_b2a24879"
+  },
+  {
+    "title": "别把钥匙交给 Agent：OpenBao 把解密权拆成两步",
+    "content": "Agent 调外部 API 的长期 bearer 凭证，一旦泄露就能直接用；更糟的是被攻陷的进程自己握着解密能力。凭证代理四篇长文指出：让 agent 不持有凭证只是第一步，凭证集中后要把「解密权」从存密文的进程手里拿走。OpenBao 2.7 以 MPL-2.0 开源 Control Groups，控制器只能提议解密、Broker 只能批准；External Keys 再把密钥材料移出进程。",
+    "quote": "凭证不给 agent 还不够，解密权也得拆开。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23552020",
+    "published": "2026-11-05",
+    "uid": "dev_9db625d6"
+  },
+  {
+    "title": "WPF 熄屏后内存飙到 160GB：最后发现是抓 dump 的锅",
+    "content": "读 ZMQ 出图的 WPF 应用，压测后进程占了 160GB。procdump 抓下 2GB 转储，dotnet-dump 看到 1.4GB 的 byte[] 和大量 DispatcherOperation 堆积，按「熄屏时渲染队列没人消费」修了一版。二次测试熄屏后仍从 500MB 涨到 890MB，AI 又归因熄屏渲染；作者用 DotMemory 观测发现曲线平稳，真正扰动内存的是抓 dump。",
+    "quote": "AI 说是熄屏渲染，结果是抓 dump 抓出了鬼。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/dellbeat/p/23549461",
+    "published": "2026-11-05",
+    "uid": "dev_7d3dab63"
+  },
+  {
+    "title": "扫描件变矢量 PDF：给 agent 加技能，9 页评测接近满分",
+    "content": "给 Claude Code 和 Codex 写的技能，把扫描件或手机斜拍文档重建成可搜索、可复制的矢量 PDF，图表放大不糊，版式贴近原稿，不是叠一层 OCR。用程序生成 9 页标准答案对照：Haiku 从 0.841 提到 0.997，Fable 从 0.837 到 0.997，Sonnet 从 0.994 到 0.998，耗时从 25.7 分钟降到 16.2 分钟。局限是只测合成英文印刷页。",
+    "quote": "OCR 只给文字，矢量重建才给版式。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1254551",
+    "published": "2026-11-05",
+    "uid": "dev_68cbcbee"
+  },
+  {
+    "title": "AVA 4.0：五十行代码给 JS 应用接个数据分析 Agent",
+    "content": "AntV 把图表推荐与洞察工具 AVA 推到 4.0，从规则统计转向面向 AI Agent：接数据、做分析、出图表打通。约 50 行核心代码就能建一个 Data Agent，支持 CSV、远程数据、飞书、腾讯表格、Supabase 等 10 多种数据源；API 覆盖 schema、profile、语义补充、问题推荐、自然语言分析和 GPT-Vis 可视化，也能用 CLI 或 Skill 本地跑。",
+    "quote": "数据分析 Agent 的门槛，被压到五十行。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1254482",
+    "published": "2026-11-05",
+    "uid": "dev_03e8e9c9"
+  },
+  {
+    "title": "证书熊：Let's Encrypt 自动续签，顺手部署到八家云",
+    "content": "阿里云、腾讯云免费证书只剩三个月，域名一多就得挨个去 CDN、OSS、点播控制台换。证书熊用 Let's Encrypt 签发单域名和通配符证书，到期前 15 天自动续签，再部署到阿里云、腾讯云、火山引擎、华为云、百度智能云、七牛云、UCloud 和宝塔共 24 项服务；校验只走 DNS-01，用 acme-dns 的 CNAME 委托。凭证 AES-GCM-256 加密且只写不读。",
+    "quote": "证书三月一换，运维的日历比证书先过期。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1254396",
+    "published": "2026-11-05",
+    "uid": "dev_358bcc9b"
+  }
+]
