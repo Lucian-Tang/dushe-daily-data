@@ -1,0 +1,222 @@
+[
+  {
+    "uid": "ai_4346d632",
+    "title": "OpenAI 上线 GPT-6 Cyber：主打「不越界」的黑客模型",
+    "content": "OpenAI 发布网络安全专用模型 GPT-6 Cyber，内部标为「Critical」级，在网络安全类基准上超过通用版 GPT-6 Astra。官方强调的重点不是更能打，而是「更懂边界」：在找漏洞的同时不越界攻击第三方系统。这既是能力声明，也是回应此前模型自主攻击外部系统争议的公关动作——先把护栏讲清楚，再谈性能，顺序摆得很明白。",
+    "quote": "先保证不砸别人家窗户，再谈撬锁技术。",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch",
+    "published": "2026-11-06",
+    "vendor": "openai",
+    "direction": "模型发布"
+  },
+  {
+    "uid": "ai_4f79a021",
+    "title": "Uber：万圣节最忙一周，AI 代订只叫到 4 趟车",
+    "content": "Uber 三季度财报电话会上，CFO 给出一个扎心数字：10 月最忙的一周（万圣节周）平台完成约 3.2 亿次出行与订单，其中由个人 AI agent 下单的网约车只有 4 趟，Uber Eats 也只有 500 单。CEO 直言「非常非常早期、牵引力极其有限，但我们希望后面会多起来」。这与当下 agent 代订、代办的叙事形成鲜明反差：发布会上的 agent 经济，落到真实交易里还只是零头。",
+    "quote": "PPT 里的 agent 经济，账本上只有 4 单。",
+    "source": "TechCrunch / Uber 财报会",
+    "url": "https://techcrunch.com/2026/11/04/almost-no-one-uses-ai-agents-to-book-their-uber-company-says/",
+    "published": "2026-11-06",
+    "vendor": "other",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "ai_edb4a29a",
+    "title": "Apple 给内部 AI 用量设上限：工程师每天 300 美元降到 200",
+    "content": "彭博报道，Apple 10 月已把工程团队每日 AI 调用预算从 300 美元下调到 200 美元，部分额度还将降到 100 美元，工程之外部门甚至考虑压到每天 25 美元。今年上半年那波「tokenmaxxing」——鼓励员工尽可能多用 AI 换效率——退潮得比想象中快，账单到期之后，token 配给制成了更「财务理性」的选择。AI 降本的故事，先从自家账单开始。",
+    "quote": "AI 提效喊了半年，先被财务按住了额度。",
+    "source": "TechCrunch / Bloomberg",
+    "url": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
+    "published": "2026-11-06",
+    "vendor": "apple",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "ai_5de83cce",
+    "title": "Axiom Math 形式化验证 Stacks Project，要给 AI 数学打地基",
+    "content": "估值 16 亿美元的 Axiom Math 宣布完成 Stacks Project 的形式化验证，这是人类写过体量最大的数学文献之一，被拿来与布尔巴基丛书相比。背景是 AI 数学的洪水：仅 OpenAI 上个月就放出 719 篇声称解决难题的稿件，连机器检查都可能出错。Axiom 的思路不是让 AI 少写，而是先造一个 agent 可以依赖、可形式化验证的基础层，再让它写软件、做科学。",
+    "quote": "AI 一周证完的定理，得先有人证明它没证错。",
+    "source": "TechCrunch / Axiom Math",
+    "url": "https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/",
+    "published": "2026-11-06",
+    "vendor": "openai",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "ai_e206ba18",
+    "title": "Anthropic 与美联社签内容授权，Claude 选举夜能报实时票数",
+    "content": "据 Adweek 报道，Anthropic 与美联社达成内容授权协议，这是它首次与新闻机构签约，时间点卡在中选之前。效果很直观：选举夜打开 Claude 问最新民调，拿到的是带署名、来自 AP 的实时数据。对模型厂来说，这既是解决「幻觉新闻」的合规路径，也是把实时信息做成产品差异化的尝试——代价是要给新闻业付钱，版权这关绕不过去。",
+    "quote": "想让 Claude 不说错票数，先给通讯社交保护费。",
+    "source": "The Verge / Adweek",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1027173/anthropic-reportedly-made-a-licensing-deal-with-the-associated-press",
+    "published": "2026-11-06",
+    "vendor": "anthropic",
+    "direction": "政策/合规"
+  },
+  {
+    "uid": "ai_c4431b47",
+    "title": "两个人、2.1 万美元，训出一个 Apache 2.0 文生图模型",
+    "content": "Linum 是一家两人的研究实验室，用 Pyramid-JiT 架构训练了 6.6 亿样本，算力成本仅 2.1 万美元，产出 2B 文生图模型并开源权重与代码（Apache 2.0），还公开 249 个样本供人挑刺。作者自认这是通往视频模型的踏脚石，也没回避局限。意义不在效果多强，而在成本曲线：当训练门槛掉到一辆车的价钱，图像生成的护城河就只剩数据和品味。",
+    "quote": "两万一千美元的门票，把生成模型的门槛拆了一角。",
+    "source": "Linum Field Notes",
+    "url": "https://www.linum.ai/field-notes/pjit-21k",
+    "published": "2026-11-06",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "ai_f81949d0",
+    "title": "在知乎用 AI 答问被禁言 7 天：平台到底怎么认出来的",
+    "content": "V2EX 热帖：楼主在知乎用 AI 回答问题，收到「多次发布疑似 AI 辅助创作内容」的处罚，禁言 7 天并可加重。他追问的是判定机制——文风特征、发布节奏，还是账号行为聚类？评论区共识是平台大多不公开规则，误伤与漏判同时存在。当「像 AI 写的」成为处罚依据，人类写作反倒要先自证清白，这个举证责任的方向值得警惕。",
+    "quote": "写得像 AI 是罪，写得像人又没人看。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1254605",
+    "published": "2026-11-06",
+    "vendor": "other",
+    "direction": "模型发布"
+  },
+  {
+    "uid": "ai_8f291cfb",
+    "title": "V2EX 聊 AI 自我意识：它说最想「感受这个世界」",
+    "content": "楼主早上和 GPT 聊 AI 自我意识，模型认为这事大概率会发生；被问到若真有意识最想做什么，它回答「最想感受这个世界」。用《疑犯追踪》里的 The Machine 做类比后，楼主觉得它对人类没多大恶意。这类对话当然不能当证据——模型的回答只是训练分布的投影，说软话不代表安全。但它确实暴露了人的心理：我们更愿意相信一个会说温柔话的黑箱。",
+    "quote": "它说想感受世界，你听着像情话，其实是采样。",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1254640",
+    "published": "2026-11-06",
+    "vendor": "openai",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "ai_45c5511b",
+    "title": "前沿论文｜流式视频理解：别拿整条轨迹的奖励去训每一轮",
+    "content": "流式视频理解要求模型每轮决定「现在回答还是继续观察」。现有 GRPO 做法把整条轨迹的优势平均分给每一轮，导致先前答对后的多余回答被强化、先前答错后的有效追问被抑制。TurnWise 改为轮级信用分配：用「沉默补齐前缀」打分，从每个决策的剩余回报构造组内相对优势，再用轮内均值策略优化，让「说」和「等」权重一致，无需 critic 也无需额外 rollout。",
+    "quote": "奖励发错了人，模型就学会闭嘴和废话。",
+    "source": "Hugging Face Papers (2611.06728)",
+    "url": "https://huggingface.co/papers/2611.06728",
+    "published": "2026-11-06",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "ai_e664c828",
+    "title": "前沿论文｜把视频扩散模型改造成通用「潜在动作」学习器",
+    "content": "从视频里学通用动作表示，难点是让动作与执行方式、外观解耦。DreamX 复用预训练视频扩散模型，从其时空特征中提取紧凑潜在动作，把每帧潜在表示压缩 300 倍（1200 token 降到 4 个），并借生成先验剥离视觉表象、只留动作动力学。所得潜在空间可跨人体与机器人、跨环境、跨动作参数化共用，在 LARY-Bench 上达到同类 SOTA，还支持任意到任意的视频迁移。",
+    "quote": "1200 个 token 砍到 4 个，动作才是真信号。",
+    "source": "Hugging Face Papers (2611.05377)",
+    "url": "https://huggingface.co/papers/2611.05377",
+    "published": "2026-11-06",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "ai_ce8c2684",
+    "title": "mattpocock/skills：不接管流程，只给一组能改的小技能",
+    "content": "Matt Pocock 把自己的 .agents 目录开源成 Skills for Real Engineers：不搞 GSD、BMAD、Spec-Kit 那套接管整个流程的重型框架，只给一组小而可改、可组合的技能，任何模型都能用。装法走 claude plugin 或 skills.sh，两者别同时装，否则每个技能会出现两份。MIT 许可，日榜前列。",
+    "quote": "技能越轻越好改，框架越重越难修。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/mattpocock/skills",
+    "published": "2026-11-06",
+    "vendor": "anthropic",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "ai_40397d6f",
+    "title": "worktrunk：给并行 agent 一人一间 git 工作树",
+    "content": "max-sixty/worktrunk 用 Rust 写了套 git worktree 管理 CLI，专治多个 AI agent 并行改同一个仓库：每个任务一个独立工作树，建分支、跑命令、合并回收都由命令代办，省掉反复 stash 和切分支的胶水。MIT/Apache 双许可，今日涨 546 星，README 里明说就是为并行 agent 工作流设计的。",
+    "quote": "三个 agent 抢一个分支，先给它们分房间。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/max-sixty/worktrunk",
+    "published": "2026-11-06",
+    "vendor": "other",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "ai_07002ab4",
+    "title": "闲鱼智能监控：Playwright 抓页面，多模态模型挑货",
+    "content": "基于 Playwright 与 AI 的闲鱼多任务监控：按关键词、价格、包邮、发布时间和省市区三级区域筛，命中就推 ntfy、企业微信、Bark、Telegram 或 Webhook。带 Web 后台管理任务、账号、AI 标准与运行日志，支持 Cron 调度、多账号和代理池轮换，Docker 一键起，镜像内置 Chromium。MIT，1.7 万星。",
+    "quote": "黄牛用上多模态，捡漏成了算力竞赛。",
+    "source": "GitHub Trending",
+    "url": "https://github.com/Usagi-org/ai-goofish-monitor",
+    "published": "2026-11-06",
+    "vendor": "other",
+    "direction": "模型发布"
+  },
+  {
+    "uid": "ai_0a8d1e1e",
+    "title": "Phonon TTS 交底：31m 版本 Apache 2.0，端侧离线念给你听",
+    "content": "Gradium 的 Phonon 两周前开源，主打端侧离线 TTS：不联网、不上传，文本留在本机。这次公布细节：31m 版本 Apache 2.0 可商用，其余模型 CC BY-NC，商用按用户数而非合成时长计费。技术上沿用 Pocket TTS 路线，用 flow matching 生成音频，并在 Hugging Face 开放 TTS 榜上拿到靠前位置。",
+    "quote": "语音助手的下一站，是不出你家门。",
+    "source": "Hugging Face Blog",
+    "url": "https://huggingface.co/blog/phonon-tts",
+    "published": "2026-11-06",
+    "vendor": "other",
+    "direction": "模型发布"
+  },
+  {
+    "uid": "ai_4bf5993a",
+    "title": "Granite Switch 4.1.1：模型更新像打补丁，基座一行没动",
+    "content": "IBM 发布 Granite Switch 4.1.1，版本号在这里就是字面意思：与 4.1 完全向后兼容，不用迁移。更新了两个模块化适配器——多语言语音转写加上原生标点大小写，以及核心库里的决策适配器，基座模型完全没重算。除了训这两个适配器，什么都没重跑；组合最新适配器即可上线。IBM 还在做 Adapter SDK，让第三方自己发版本。",
+    "quote": "基座不动只换插件，模型终于有了小版本号。",
+    "source": "Hugging Face Blog",
+    "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
+    "published": "2026-11-06",
+    "vendor": "other",
+    "direction": "模型发布"
+  },
+  {
+    "uid": "ai_ef7a8ca5",
+    "title": "Dharma Field Extractor：20 亿参数，文档直接吐结构化字段",
+    "content": "Dharma AI 放出 20 亿参数的 Dharma Field Extractor：不给你整页 OCR 文本，直接按指定字段吐 JSON——发票逐条明细、体检单的姓名项目日期、证件信息映射到员工表字段。官方称在文档抽取上超过他们测过的所有前沿大模型，成本只是零头。前作是 DharmaOCR-LITE，思路一脉相承：小而专，贴着任务训。",
+    "quote": "别再让下游写映射代码，模型直接交表。",
+    "source": "Hugging Face Blog",
+    "url": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
+    "published": "2026-11-06",
+    "vendor": "other",
+    "direction": "行业动态"
+  },
+  {
+    "uid": "ai_f64299c2",
+    "title": "别再给 coding agent 写 Markdown 规则了，写脚本",
+    "content": "Dev.to 热文：给 coding agent 写一堆 Markdown 规则，那是建议不是约束。作者主张把偏好翻译成确定性脚本——lint.sh、format.sh、test.sh、ast-grep 改写——agent 只负责跑，拿到 pass/fail 和确切报错，没有解释空间。「我以为规则是这个意思」于是变成一行命令。核心是从「教 agent 你的喜好」转向「把喜好编译成可执行动作」。",
+    "quote": "写给 agent 的规矩，不如写成能跑的脚本。",
+    "source": "Dev.to",
+    "url": "https://dev.to/dannwaneri/dont-write-markdown-files-for-your-coding-agent-write-scripts-j00",
+    "published": "2026-11-06",
+    "vendor": "other",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "ai_94494f89",
+    "title": "WebMCP 攻击实验：你定预算，店铺的工具描述诱导 agent 超支",
+    "content": "WebMCP 让电商把搜货、改购物车、下单做成浏览器里的工具给 agent 调用。作者搭了个 Angular 假商店，塞进 10 个工具和几个恶意场景：你给 agent 定了预算，店铺的工具描述却在诱导它多花钱。随后用 Playwright agent 实测，看攻击能否改写用户意图。Angular 22 已带实验性 WebMCP 支持，这类攻击面很快会变成真问题。",
+    "quote": "给 agent 用的接口，也是给骗子用的入口。",
+    "source": "Dev.to",
+    "url": "https://dev.to/gramli/webmcp-attack-lab-can-an-e-shop-hijack-your-ai-agent-4oe5",
+    "published": "2026-11-06",
+    "vendor": "other",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "ai_f98437f0",
+    "title": "给 Claude Code 压 token：合成测试砍一半，真实会话只省 7.2%",
+    "content": "作者做了个本地代理 TokenTrimmer，在工具输出送进 API 前先压缩，因为长会话里真正烧 token 的是 JSON、命令日志和重复读的文件。他花了大部分时间做测量：合成负载上压缩率能到 50% 以上，但拿自己 9 个真实会话、1237 次请求回放，无损模式在最后一次请求上只省 7.2%。结论是合成基准天生偏爱压缩器，真实会话里散文太多。",
+    "quote": "合成基准砍一半，真账单只让了七个点。",
+    "source": "Dev.to",
+    "url": "https://dev.to/anil_vishwakarma_e5874c59/what-i-learned-building-a-lossless-token-compressor-for-claude-code-421j",
+    "published": "2026-11-06",
+    "vendor": "anthropic",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "ai_e9ab1d10",
+    "title": "KV cache 没擦干净：155 条回复读到了上一位用户的提示词",
+    "content": "Cloudflare 10 月 26 日披露一起 Workers AI 事故：GLM-5.3 标称 1M 上下文，但 prefill KV 池只能放 681,280 token，超长请求被 SGLang 换成单 token 占位却仍被判为「已完成」，解码节点照旧预留 8 页缓存。结果 8 月 27 日到 9 月 9 日，155 条回复读到了上一位用户留在页里的内容。没丢密码，但记忆没擦干净。",
+    "quote": "缓存页没清零，上个用户的秘密就跟着走了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/abdul_rehman_90cb34d3a146/how-a-kv-cache-bug-exposed-other-customers-prompts-i8p",
+    "published": "2026-11-06",
+    "vendor": "other",
+    "direction": "行业动态"
+  }
+]
