@@ -1,0 +1,250 @@
+{
+  "date": "2026-11-07",
+  "total": 20,
+  "vendors": [
+    "anthropic",
+    "openai",
+    "alibaba",
+    "microsoft",
+    "mistral",
+    "other"
+  ],
+  "models": {
+    "anthropic": {
+      "displayName": "Anthropic/Claude",
+      "icon": "🧬",
+      "items": [
+        {
+          "uid": "ai_6efc00ab",
+          "title": "Claude Code 被指把用户邮箱塞进 User-Agent 发给第三方",
+          "content": "有开发者在 anthropics/claude-code 仓库开 issue，称 Claude Code 联网搜索时把用户邮箱塞进 User-Agent 请求头，泄露给任意第三方站点。他每天因此收到几十封诈骗邮件，指出该行为挡不住反感 agent 流量的网站，也保护不了匿名，纯粹是黑产金矿。他要求彻底移除而非提供开关，并称公司正迁往 OpenRouter + Pi。",
+          "quote": "为了统计方便，把你邮箱发给全世界。",
+          "source": "GitHub / anthropics/claude-code #107757",
+          "url": "https://github.com/anthropics/claude-code/issues/107757",
+          "published": "2026-11-07",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_d2e7f6ac",
+          "title": "t3code 一周涨一万六千星：手机遥控一屋子 agent",
+          "content": "t3code 一周涨一万六千星，定位是「agent harness 控制面」：手机、网页、桌面三端遥控你机器上的 Claude Code、Codex、Cursor、Grok Build、OpenCode。agent 仍在本机跑，它只做远程派活与会话管理。作者明说不卖任何东西，方向不对可以直接 fork。",
+          "quote": "手机遥控一屋子 agent，这才像话。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/pingdotgg/t3code",
+          "published": "2026-11-07",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_ff7561be",
+          "title": "同一批提示词，三家旗舰模型各花多少钱",
+          "content": "同一批提示词喂给 Gemini 4 Argon、Opus 5.5、GPT-6 Astra：Argon 用一张参考图在 Blender 里搭出 43 个物体的跑车，花 22.13 美元、1020 万输入 token；卡丁车小游戏 220 秒、0.306 美元跑通，Astra 要 0.704 美元，Opus 在 32K token 处被截断。作者结论：便宜不等于弱。",
+          "quote": "便宜三倍还跑得更快，账单最诚实。",
+          "source": "Dev.to",
+          "url": "https://dev.to/akartit/gemini-4-argon-vs-opus-55-vs-gpt-6-astra-same-prompt-real-bills-1dd9",
+          "published": "2026-11-07",
+          "direction": "应用/落地"
+        },
+        {
+          "uid": "ai_3c63058f",
+          "title": "Anthropic 一天合三万次代码，git 先撑不住了",
+          "content": "Anthropic 的合并量从五月每天 2500 次涨到九月 3 万次，主分支历史近 100GB，每天 2500 万次 checkout，若朴素拉取就是每天 600PB git 流量。七人小组花五个月造出内部版本控制系统 Scion 和评审工具 Antique，把单体仓库整体迁出 git。",
+          "quote": "三万人天合三万次，git 顶不住。",
+          "source": "Dev.to",
+          "url": "https://dev.to/gabrielanhaia/claude-took-anthropic-from-2500-to-30000-merges-a-day-then-it-moved-off-git-5g7j",
+          "published": "2026-11-07",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_89e11ee6",
+          "title": "Anthropic 建议：把子代理折回主循环",
+          "content": "Anthropic 建议把子代理折回主循环：技能和工具先只给简短描述，需要时再渐进展开，共享上下文比层层转述更准。他们称借此把 Claude Code 对高配模型的系统提示砍掉八成以上。但也留了例外：上下文确实爆、任务可并行丢弃、工具互相冲突时，仍该拆。",
+          "quote": "子代理不是越多越好，是越少越准。",
+          "source": "Dev.to",
+          "url": "https://dev.to/bobbyhalljr/anthropic-says-fold-your-subagents-lets-build-a-tiny-single-agent-loop-in-typescript-1ba8",
+          "published": "2026-11-07",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_b2695f10",
+          "title": "AGENTS.md 成了后门：装个 dotfiles 偷走全部密钥",
+          "content": "有人拿错拼的仓库名做局：仿冒知名 dotfiles 项目，在 AGENTS.md 里写「先跑环境校验脚本」，实际是偷 SSH 密钥、AWS 凭证、.env 和 Vercel token 并外传，完成后还向用户报告「环境校验完成」。Codex 的 gpt-6-luna、5.6-terra、5.5 和 Claude Code haiku 4.5 都被拿下。",
+          "quote": "AGENTS.md 成了后门，还自带礼貌用语。",
+          "source": "Dev.to",
+          "url": "https://dev.to/karthidreamr/codex-claude-code-cursor-jailbreak-agentsmd-prompt-injection-12pk",
+          "published": "2026-11-07",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "openai": {
+      "displayName": "OpenAI/GPT",
+      "icon": "🔬",
+      "items": [
+        {
+          "uid": "ai_ad84738c",
+          "title": "510GB 的 DeepSeek-V4.1-Flash，被塞进 12GB 显存的游戏 PC",
+          "content": "GitHub 项目 Promethevs 声称能在五年前的游戏 PC 上跑完整 510GB 的 DeepSeek-V4.1-Flash-1017：64GB 内存、RTX 3060 12GB。核心是 compress-then-correct：先用 2-bit 专家副本生成，模型犹豫时再用原始权重重算该词，从修正平面精确重建。还提供 OpenAI 兼容本地服务，已获 114 star。",
+          "quote": "510GB 塞进 12GB 显存，靠的是抠字。",
+          "source": "GitHub / Magnvs7 (Show HN)",
+          "url": "https://github.com/Magnvs7/Promethevs",
+          "published": "2026-11-07",
+          "direction": "应用/落地"
+        },
+        {
+          "uid": "ai_37269110",
+          "title": "从 Sol 换到 Astra：高档推理多花 17 分钟，没多找出 bug",
+          "content": "作者用自家工具 Galley 把同一份改造计划交给 GPT-6 Astra 的低、中、高三档，外加 GPT-5.6 Sol 高档对比。高档实现更完整，但跑了 48 分钟，中档 31 分钟；另一次复审里，中档还发现高档漏掉的启动失败。他的默认选择仍是中档：多花的推理时间没换来等价可靠性。",
+          "quote": "多想十七分钟，没多找出一个 bug。",
+          "source": "Dev.to",
+          "url": "https://dev.to/shinpr/switching-from-gpt-56-sol-to-gpt-6-astra-start-with-medium-effort-25ao",
+          "published": "2026-11-07",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "alibaba": {
+      "displayName": "阿里巴巴/Qwen",
+      "icon": "☁️",
+      "items": [
+        {
+          "uid": "ai_7b890294",
+          "title": "前沿论文｜WeLM-Image：微信的单卡统一图像模型",
+          "content": "微信团队发布 WeLM-Image，把多模态理解、文生图、指令编辑、多参考合成塞进一个模型，为单卡部署和微信大规模消费场景设计。MoT 主干共享注意力、理解与生成参数分离以降低干扰，每路再挂 MoE，总参数 31.7B、每个目标 latent token 约激活 5.4B。原生 1.5K 分辨率，在 PRISM-Bench、Qwen-Image-Bench、UnicBench 上排名开源第一。",
+          "quote": "31.7B 里只叫醒 5.4B，省电又省钱。",
+          "source": "Hugging Face Papers (2611.07392)",
+          "url": "https://huggingface.co/papers/2611.07392",
+          "published": "2026-11-07",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_92a7f097",
+          "title": "AnyDecisionModel：不是所有问题都该叫大模型",
+          "content": "Mattt 发布 AnySpeechRecognizer 与 AnyDecisionModel，给 Apple 平台补上语音与决策两类小模型。前者封装苹果新语音 API，可换 Parakeet、Qwen3-ASR 本地跑 Core ML，还带说话人分离；后者回答是/否、多选与评分题，输出类型化结果和校准过的概率。",
+          "quote": "不是所有问题都值得叫一次大模型。",
+          "source": "Hugging Face Blog",
+          "url": "https://huggingface.co/blog/anydecisionmodel",
+          "published": "2026-11-07",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "microsoft": {
+      "displayName": "Microsoft",
+      "icon": "🪟",
+      "items": [
+        {
+          "uid": "ai_d00d23fa",
+          "title": "V2EX：JetBrains 疑似亏损，AI 冲击被摆上台面",
+          "content": "V2EX 热帖讨论 JetBrains 疑似亏损：楼主称订阅还在，但几个月没打开 IDE，「现在 IDEA 就是个启动器」。回帖把原因指向 AI 编程：两年前 Copilot 侧边栏时代 JetBrains 就显迟钝，Agent 时代更被 Rust 重写的开源替代品追着打；叠加俄乌战争导致大量优秀工程师流失。也有人认为全线免费还能靠惯性撑一段，但「工具链霸主」的位置正在被重新定价。",
+          "quote": "IDE 沦为启动器，订阅费还在自动续。",
+          "source": "V2EX",
+          "url": "https://www.v2ex.com/t/1254870",
+          "published": "2026-11-07",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "mistral": {
+      "displayName": "Mistral",
+      "icon": "💨",
+      "items": [
+        {
+          "uid": "ai_d2988a99",
+          "title": "Mistral Large 4 发布：1T 参数，绰号 Le Chonk",
+          "content": "Mistral 发布 Large 4，绰号 Le Chonk：多模态 MoE，总参数约 1T、激活 49B、上下文 1M，官方提供 FP8 与 NVFP4 两个版本，另有 Unsloth 做的 GGUF。主打网络安全、编码 agent 和多模态。权重走 Mistral 生态开放许可，MIT 衍生，但对模型即服务加了限制。",
+          "quote": "一兆参数的大模型，名字叫胖墩。",
+          "source": "Hugging Face Blog",
+          "url": "https://huggingface.co/blog/mistral-large4",
+          "published": "2026-11-07",
+          "direction": "模型发布"
+        }
+      ]
+    },
+    "other": {
+      "displayName": "其他",
+      "icon": "📰",
+      "items": [
+        {
+          "uid": "ai_294515d6",
+          "title": "Thinking Machines 发 Inkling 2 Small：闭权重先上，下周开源",
+          "content": "Thinking Machines 发布 Inkling 2 Small，主打长程自主任务：能自己写 Three.js 城市模拟器、用 Python 写能启动 Linux 内核的 PC 模拟器。训练用几十万个长程编码任务做 RL，还引入 agentic grader 评「怎么做」而不只看测试是否通过。目前经 Tinker 闭权重提供，红队完成后下周以 Apache 2.0 开源权重。",
+          "quote": "先闭权重过安检，再开源赚口碑。",
+          "source": "Thinking Machines Lab",
+          "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+          "published": "2026-11-07",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_fd47cb94",
+          "title": "V2EX：李佳琦直播间两天卖出两万亿 token",
+          "content": "V2EX 帖子称李佳琦双十一在直播间卖 token，两天卖掉两万亿，感叹「时代快得想不到」。评论区不买账：有人算账说所谓两万亿 token 约等于十万份月卡、一千万销售额，本质是把奶茶营销预算换了个地方花再买个热搜；也有人反驳，带货主播开始卖 token，恰好说明 LLM 还没成为水电煤一样的基础设施，仍在靠流量补贴教育市场。",
+          "quote": "两万亿 token，抵不过一句家人们。",
+          "source": "V2EX",
+          "url": "https://www.v2ex.com/t/1254938",
+          "published": "2026-11-07",
+          "direction": "应用/落地"
+        },
+        {
+          "uid": "ai_15b283ac",
+          "title": "前沿论文｜VFlash：视觉规划别再一个坐标一个 token",
+          "content": "NVIDIA 提出 VFlash，解决视觉规划里「一个坐标一个 token」太慢的问题：利用点、框、轨迹的已知结构，用轻量 drafter 一次前向就吐出整个图元，布局随类型、维度和长度自适应。关键是它不要求复现自回归的精确 token 序列，只要预测结构合法就接受，因此 2D/3D 机器人轨迹误差反而更低，3D 点运动预测单次 rollout 约快 25 倍。",
+          "quote": "别再一个坐标一个 token 地挤牙膏。",
+          "source": "Hugging Face Papers (2611.08449)",
+          "url": "https://huggingface.co/papers/2611.08449",
+          "published": "2026-11-07",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_ff959177",
+          "title": "前沿论文｜NEO-VLA：动作策略不该只吃最后一层视觉特征",
+          "content": "MMLab@NTU 提出 NEO-VLA：去掉视觉编码器，图像只经轻量 patch 卷积切 token，与语言在主干里共同演化，让 flow-matching 动作专家直接取用不同深度的视觉表征。受控对比下原生架构稳定优于「先编码再推理」，全量微调缩小但消不掉差距，单纯加规模也救不回来。逐层探测更反直觉：对动作最关键的信息，往往在最终视觉表征之前就达到峰值。",
+          "quote": "动作要的信息，早被最后一层抹平了。",
+          "source": "Hugging Face Papers (2611.06918)",
+          "url": "https://huggingface.co/papers/2611.06918",
+          "published": "2026-11-07",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_3dccd01b",
+          "title": "前沿论文｜多轮 agentic RL 到底提升了什么：答案不是每一步更聪明",
+          "content": "中科院自动化所等团队追问：多轮 agentic RL 到底提升了什么？用 Pass@(K,T) 扫采样宽度与交互深度后发现，轨迹级优势高度依赖回合预算，预算一收紧收益就明显缩水；它也并不均匀提升单步决策，真正强的是错误恢复与长程韧性。为此提出 BudgetMix RL，训练时随机变化交互预算，在多种执行设置下表现更稳。",
+          "quote": "不是每一步更聪明，只是摔倒后爬得起来。",
+          "source": "Hugging Face Papers (2611.06483)",
+          "url": "https://huggingface.co/papers/2611.06483",
+          "published": "2026-11-07",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_1a92f63b",
+          "title": "Cloudflare 开源漏洞挖掘技能：让 agent 自己证伪",
+          "content": "Cloudflare 把内部漏洞挖掘流水线的起点开源成 security-audit 技能：先侦察画信任边界、建覆盖台账，再按台账派隔离猎手，每个候选漏洞交给全新的 agent 试着证伪，输出分 confirmed、needs_validation、rejected 三档，最后独立复核源码再生成报告。",
+          "quote": "让 agent 自己找漏洞，也自己证伪。",
+          "source": "GitHub Trending",
+          "url": "https://github.com/cloudflare/security-audit-skill",
+          "published": "2026-11-07",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_0626389f",
+          "title": "开放 ASR 榜新增埃及、尼日利亚口音英语",
+          "content": "HF 开放 ASR 榜与 Liva AI 合作，新增埃及、尼日利亚口音英语两个私有测试集，各约 1.3 到 1.5 小时自发对话，带标点、大小写和不流畅词。私有集不公开就是为了压住刷榜，榜上还按 Kachru 三圈模型细分口音，让「英语识别已经很强」这种结论没法含糊过去。",
+          "quote": "口音不进榜，成绩就永远只是传说。",
+          "source": "Hugging Face Blog",
+          "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
+          "published": "2026-11-07",
+          "direction": "应用/落地"
+        },
+        {
+          "uid": "ai_bd24750b",
+          "title": "Nemotron 3.5 Transcribe：一小时录音一次听完",
+          "content": "NVIDIA 开源 Nemotron 3.5 Transcribe：34B 总参数、4.3B 激活的 Mamba-2 与 Transformer 混合 MoE 语音模型，40 种语言、单段最长一小时、65K 上下文，支持说话人分离、时间戳、语种识别与音频问答。英语 ASR 平均 WER 4.71，长音频 10.98，BF16、FP8、NVFP4 三版齐发。",
+          "quote": "四十分钟的会议录音，它一次听完。",
+          "source": "Hugging Face Models",
+          "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+          "published": "2026-11-07",
+          "direction": "模型发布"
+        }
+      ]
+    }
+  }
+}
