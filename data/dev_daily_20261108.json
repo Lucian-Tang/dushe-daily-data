@@ -1,0 +1,227 @@
+[
+  {
+    "title": "Google 只讲了 Agent 沙箱概念，有人用 Firecracker 造了一个还做了压测",
+    "content": "Google 10 月 22 日发布 Agent Compute Engine：每个会话独占一台 microVM，思考时做 checkpoint，不挂网卡。作者用 Go 写 2200 行复刻并压测：512MiB 的 VM 空闲 fork 64 份，每份只占约 3MiB 宿主内存；裸机快照恢复 25ms，比冷启动快 26 倍。Mac mini 套嵌套虚拟化时，12 个 fork 一个都没起来。",
+    "quote": "官方没给数据，是怕数据不好看吧。",
+    "source": "HN Front Page",
+    "url": "https://antonau.tech/posts/2026/11/agents-microvm-firecracker/",
+    "published": "2026-11-08",
+    "uid": "dev_568f0f6c"
+  },
+  {
+    "title": "Firecracker 被逃逸了：从 microVM 里拿到宿主机 root",
+    "content": "PwnEscape 第二部分走通了 Firecracker 逃逸链（CVE-2026-99999）：vCPU 线程进入 KVM_RUN 时寄存器存在宿主 pt_regs，作者改写恢复点，让线程从 KVM 返回时执行自选调用，再由 guest 抹掉临时栈改动。结果是在宿主机拿到 root，Firecracker 照常运行、VM 的 SSH 一直开着，受害者看不出异常。",
+    "quote": "隔离层越薄，越像一层窗户纸，一捅就破。",
+    "source": "HN Front Page",
+    "url": "https://pwn.ai/blog/firecracker-escape",
+    "published": "2026-11-08",
+    "uid": "dev_aebce460"
+  },
+  {
+    "title": "GitHub 重写 Git 存储：5000 个 Agent 同时推同一个仓库",
+    "content": "GitHub 在 Universe 上公布新的 Git 存储架构：内部测试支持 5000 个 Agent 并发操作同一仓库、单仓库每秒 7200 次 push，读流量按需扩容且延迟稳定。核心思路是「少协调、存算分离」——Git 对象不可变、按内容寻址，多个写入者可以各存各的，真正需要串行化的只有 ref 更新，而 ref 更新体积极小。架构已在 GitHub 底层完成替换，仓库搬迁过程零停机。",
+    "quote": "为 Agent 修路，人类顺便走得快了点。",
+    "source": "HN Front Page",
+    "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
+    "published": "2026-11-08",
+    "uid": "dev_ed01a7d2"
+  },
+  {
+    "title": "Anthropic 拆解 Agent 记忆：日志得「做梦」才能变成知识",
+    "content": "Anthropic 把 Agent 记忆拆成在线记录与离线巩固两段：交互中先把经历写进日志或 transcript，空闲时再「dreaming」——重放近期日志、修正错误、抽成可复用的笔记和表示。这套分工借自海马体与睡眠期重放：先快记，再慢慢并入长期知识。文章还给了一组评测，结论是存储能力不等于学习能力，巩固环节做不好，Agent 只是把旧错误存得更牢。",
+    "quote": "不会做梦的 Agent，只能反复踩同一个坑。",
+    "source": "HN Front Page",
+    "url": "https://www.anthropic.com/research/components-of-agent-memory",
+    "published": "2026-11-08",
+    "uid": "dev_06961d96"
+  },
+  {
+    "title": "每台 Mac 都在偷偷给你和你的关系人建一张图",
+    "content": "研究者拆开 macOS 13 起随系统附带的一对守护进程：它们唯一的工作是构建一张关于你的知识图谱——你是谁、你认识谁、这些人彼此什么关系、你怎么和他们联系、你去过哪、什么时候在做什么。文章给出了目标组件、影响面和自建检查工具，让用户能看到自己机器里那张图长什么样。HN 366 分、210 条评论，争论集中在「本地处理」到底算不算隐私。",
+    "quote": "数据没上云，但你已经被画完了。",
+    "source": "HN Front Page",
+    "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph",
+    "published": "2026-11-08",
+    "uid": "dev_67519229"
+  },
+  {
+    "title": "小模型打头阵、不确定才叫 Opus：成本降 4 倍，精度不掉",
+    "content": "Hightouch 拿身份归并测了两个便宜模型：单独跑准确率 88.8%–97.3%，比 Opus 差约 6 个百分点，但便宜最多 90 倍、快 10 倍以上。关键在置信度校准——Jev 答错时往往低置信，Luna 答错时反而自信，所以 Jev + Opus 混合路由能拿到接近前沿的准确率，成本只要四分之一。",
+    "quote": "会说自己不确定的模型，才配省钱。",
+    "source": "HN Front Page",
+    "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
+    "published": "2026-11-08",
+    "uid": "dev_fe083fb3"
+  },
+  {
+    "title": "解压 tar 比你想的危险：扫描器和解压器看到的不是同一批文件",
+    "content": "tar 格式留了太多解释空间，不同实现遇到构造过的包会解出不同内容——安全扫描器检查的文件，和最终落盘的文件可能根本不是一批。haampie 做了 tar-minefield：给每种歧义编号，配上测试用例和使用数据，让各家实现收敛到严格解析和一致行为，并提出一套默认拒绝绝大多数歧义的策略。项目带 DOI，可以直接拿来给自己项目跑回归。",
+    "quote": "格式松散一天，安全就得还十年债。",
+    "source": "HN Show HN",
+    "url": "https://stoppels.ch/tar/",
+    "published": "2026-11-08",
+    "uid": "dev_356caace"
+  },
+  {
+    "title": "Show HN：Fels，一门把内存按区域回收的系统语言",
+    "content": "Fels 用 LLVM 编译到原生码，没有 GC：内存分配在具名 zone 里，代码块结束整块释放，编译器阻止引用逃逸；错误是必须检查的返回值，不搞异常；部分代码能在编译期执行。作者还内置了构建、测试、包管理和自写 linker，Windows/Linux 都能跑，当前版本 0.14.0。",
+    "quote": "没有 GC 的自由，得靠编译器盯着你。",
+    "source": "HN Show HN",
+    "url": "https://github.com/fels-lang/fels",
+    "published": "2026-11-08",
+    "uid": "dev_fe11c765"
+  },
+  {
+    "title": "Show HN：Trailback，给整台电脑装一个离线可搜的记忆",
+    "content": "Trailback 把看过的网页、文件、截图和复制的文字都做成可搜索历史：OCR 识别截图内容、按时间线还原「刚才在干嘛」、把散落的文件重新聚成一次任务。官方强调 100% 离线、数据不出本机，买断制，支持 Windows 和 Mac。",
+    "quote": "记忆卖给云端叫大数据，留在本地才叫隐私。",
+    "source": "HN Show HN",
+    "url": "https://trailback.app/",
+    "published": "2026-11-08",
+    "uid": "dev_0bce1a4c"
+  },
+  {
+    "title": "Show HN：Vondet，让 Claude 自己维护一块计划板",
+    "content": "Vondet 反着做计划工具：用户不写卡片，Claude 通过 MCP 把任务、理由和依赖写进板子，人只负责纠正和排序。计划按 cycle 累积，关掉终端、换台机器再连，上次定了什么还在；它想解决的是 Markdown 计划文件越堆越多、聊天记录又接不上的问题。",
+    "quote": "计划不是写给人看的，是写给下一个 session 看的。",
+    "source": "HN Show HN",
+    "url": "https://vondet.com/en",
+    "published": "2026-11-08",
+    "uid": "dev_c1a81baa"
+  },
+  {
+    "title": "Show HN：31B 视频音频模型压到 13.7B，6 步出片",
+    "content": "Video Rebirth 把 MiniMax-H3 的 31B transformer 压成 13.7B 的 HyperFlow H3 Flash，支持 4/6/8 步采样、不用 CFG，同时生成 24fps 视频和 32kHz 立体声。5.2 秒片段在单张 RTX 5090 上 92 秒、H200 上 36 秒；Q4 量化 9.1GB，24GB 显存的家用卡也能跑。",
+    "quote": "视频生成开始拼显存利用率，不是拼参数了。",
+    "source": "HN Show HN",
+    "url": "https://github.com/Video-Rebirth/hyperflow-h3-flash",
+    "published": "2026-11-08",
+    "uid": "dev_e0189546"
+  },
+  {
+    "title": "GitHub 日榜被 skills 屠榜：mattpocock 31.7 万星，Anthropic 18.8 万",
+    "content": "今天的 GitHub Trending 几乎被 Agent 技能包占满：mattpocock/skills 31.7 万星，作者把个人 .agents 目录直接开源；anthropics/skills 18.8 万星；cloudflare/security-audit-skill 6.5 万星，做多阶段安全审计。一个 SKILL.md 加几个脚本，正在变成和 npm 包同级的交付物。",
+    "quote": "提示词工程死了，技能包开始内卷。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/mattpocock/skills",
+    "published": "2026-11-08",
+    "uid": "dev_a604408d"
+  },
+  {
+    "title": "Meta 开源 astryx：一个「Agent 友好」的设计系统",
+    "content": "meta/astryx 是 Meta 开源的 TypeScript 设计系统，定位写得很直白——完全可定制，且 agent ready：组件、token 和主题以结构化形式暴露，让编码 Agent 能查到组件契约再生成界面，而不是靠截图猜样式。今天冲上 GitHub 日榜，约 1.4 万星，最近一次提交就在几小时前。设计系统开始把「给 Agent 读」当成和「给人看」并列的一等需求。",
+    "quote": "组件库的下一批用户，是 Agent。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/meta/astryx",
+    "published": "2026-11-08",
+    "uid": "dev_df56083c"
+  },
+  {
+    "title": "开源 agent-hub：Codex、Claude Code 统一管，微信里派活",
+    "content": "codex-hub 升级成 agent-hub，把 Codex、Claude Code 的会话管理、交互和结果读取收进本地 Web 工作台，另配 CLI 和 ahub-control 技能做调度：Router 拆任务、分派、跟进，会话当 Worker 执行。作者还试了腾讯 WorkBuddy 当主控，绑个人微信后出门在外也能看进展、补要求、收结果。",
+    "quote": "把工位搬进微信，老板再也没有下班。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1255214",
+    "published": "2026-11-08",
+    "uid": "dev_c0273c27"
+  },
+  {
+    "title": "AgentForge：把几个 AI 员工的分工、交接、验收塞进一个 Mac 工作台",
+    "content": "作者的起点很具体：一个窗口分析需求、一个实现、一个审校，上下文怎么传、文件谁检查全靠自己协调。AgentForge 把这件事收进本机工作台——给每位数字员工配职责、Runtime 和工具，任务里指定项目经理推进分工与交接，成员保留独立会话。已接 Claude Code、Codex、DeepSeek Harness，Apache-2.0。",
+    "quote": "多开几个窗口不叫团队，叫混乱。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1255181",
+    "published": "2026-11-08",
+    "uid": "dev_7619eeb6"
+  },
+  {
+    "title": "微软让 NuGet 顺手管 AI 技能包：装依赖时说明书一起到",
+    "content": "Richard Lander 在 .NET 官方博客写了《Delivering Skills in NuGet packages》：让包在送二进制的同时，把给 AI 编码助手看的说明书一起送过来。dotnet restore 拉依赖时，技能文件就躺在包缓存里，版本精确匹配。这解决了技能分发的老问题——你得先知道某个技能存在才会装，而包管理器天然知道你需要什么。",
+    "quote": "技能市场还没火，就被包管理器截胡了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23587426",
+    "published": "2026-11-08",
+    "uid": "dev_334656ed"
+  },
+  {
+    "title": "Rust 的 target 目录怎么清：把中间文件和最终产物分开",
+    "content": "Rust 项目一多，磁盘先被 target 吃掉。整目录删最快，最终产物也没了；只清缓存，又得逐个目录判断。作者为此写了 cargoc：利用 Cargo 已区分的 target-dir 和 build-dir，给每个工作区分配专用 build-dir，按工作区清理空闲缓存，最终产物仍留在原 target-dir。",
+    "quote": "删缓存这事，终于不用赌运气了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/OceanHeaven/p/23585354",
+    "published": "2026-11-08",
+    "uid": "dev_287106ee"
+  },
+  {
+    "title": "nvidia-smi 的 CUDA Version 不是你装的那个版本",
+    "content": "作者在 GTX 1660 Ti 老本上复现：nvidia-smi 右上角的 CUDA Version 只是驱动支持的最高版本；nvcc -V 可能根本没有；pip 默认源装的 PyTorch 带 +cpu 后缀，torch.version.cuda 为 None。换官方 cu 源重装 wheel 后 GPU 恢复，实测提速 18.4 倍，驱动和 Toolkit 都不用动。",
+    "quote": "盯着驱动版本修 PyTorch，方向从第一步就错了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/dawudexiaowu/p/23583296",
+    "published": "2026-11-08",
+    "uid": "dev_bbad8a9c"
+  },
+  {
+    "title": "缓存穿透、击穿、雪崩：一句话能分清，代码未必写对",
+    "content": "文章用「数据根本不存在」「热点 key 突然过期」「大量 key 同时过期」三句话区分穿透、击穿和雪崩，并给出对应解法：空值缓存与布隆过滤器、互斥锁与逻辑过期、过期时间加随机值和高可用。还提醒布隆过滤器不支持删除，新增数据时要主动清理空值缓存。",
+    "quote": "面试背得出定义，上线照样把库打穿。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/jzp1207/p/23583046",
+    "published": "2026-11-08",
+    "uid": "dev_b7180408"
+  },
+  {
+    "title": "把 9.7 万行 Swift 逐文件搬进 Windows：DogSC 转写记",
+    "content": "macOS 录屏剪辑工具 DogSC 用 Swift + ScreenCaptureKit 写成，作者把它逐文件转成 Electron + React + TypeScript：285 个源文件、96,959 行，每个 TS 文件标注上游路径和行号，用 mappings.json 锁定基线 commit，再用 2,099 项数值断言校验运镜时长、缓动系数和黑边阈值。",
+    "quote": "移植不是重写，是让每个魔法数字都有据可查。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/wyang/p/23583154",
+    "published": "2026-11-08",
+    "uid": "dev_c54cda4e"
+  },
+  {
+    "title": "Go 里没有「主线程」，只有主 goroutine",
+    "content": "文章澄清主 goroutine 与 OS 线程的关系：main.main() 由主 goroutine 执行，主 goroutine 只是暂时跑在某个 OS 线程上，运行时可以把它迁移到别的 M；它和普通 goroutine 一样轻量，唯一特殊的是它一返回整个程序就退出，其他 goroutine 会被强行终止。",
+    "quote": "主 goroutine 不是线程，别套 Java 直觉。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/ishoulgodo/p/23583903",
+    "published": "2026-11-08",
+    "uid": "dev_15ca42ff"
+  },
+  {
+    "title": "实测 Claude Code 最火的 git 护栏：52 万次安装，绕过方法一抓一把",
+    "content": "Claude Code 装机量最高的 git 技能 git-guardrails-claude-code，skills.sh 累计安装 52.3 万次。原理是 PreToolUse hook 里 25 行脚本：jq 取命令、grep 危险模式，命中 exit 2。实测 28 条命令，git -C . push、多一个空格、alias 和没装 jq 时全部放行。",
+    "quote": "子串匹配当护栏，跟贴张纸条防盗一样。",
+    "source": "Dev.to",
+    "url": "https://dev.to/skillselion/we-ran-28-git-commands-through-claude-codes-most-installed-git-guardrail-1n4i",
+    "published": "2026-11-08",
+    "uid": "dev_7a7421c5"
+  },
+  {
+    "title": "谷歌终于让安卓照片备份不经过云，有人早做了同款",
+    "content": "Google Play services 26.43 开始支持安卓通过 Quick Share 把照片视频自动备份到 Windows 电脑，全程不碰云。Lomorage 作者借题发挥：这功能只覆盖安卓+Windows，不做整理、搜索和家庭账户，也不算真正释放手机空间；他家的方案支持 iPhone、NAS、树莓派和本地 AI 搜索。",
+    "quote": "大厂刚把「照片属于你」做成新功能。",
+    "source": "Dev.to",
+    "url": "https://dev.to/jiantaofu/google-is-finally-letting-android-back-up-photos-without-the-cloud-i-built-an-app-for-that-5g45",
+    "published": "2026-11-08",
+    "uid": "dev_c70fe7ee"
+  },
+  {
+    "title": "开源 Agent Skill：让 AI 生成的前端别那么「模板味」",
+    "content": "作者做 Premium Frontend Director，一个给 Codex、Claude Code 用的 Agent Skill：先理解项目、定艺术方向，再实现，最后用截图和视觉证据验收，而不是一句「做得高级点」。它提供 Core、标准、完整三档工具配置，v1.0.0 已开源，附带可交互示例。",
+    "quote": "AI 会写组件，不等于会做审美决策。",
+    "source": "Dev.to",
+    "url": "https://dev.to/avl05/i-built-an-open-source-agent-skill-to-make-ai-generated-frontends-less-generic-e4k",
+    "published": "2026-11-08",
+    "uid": "dev_44913a8b"
+  },
+  {
+    "title": "支付系统死在回调对账，不是死在发起支付",
+    "content": "文章拆解 STK 支付回调的对账难题：回调会晚到、重复或不来，必须靠发起时写入的内部流水号匹配发票，不能拿金额和手机号猜。部分付款不能标记结清，超额要记成用户余额，回调要按网关交易号做幂等，而且金额以自己记录的为准，不能信回调体。",
+    "quote": "Happy path 谁都会写，账对不上才是常态。",
+    "source": "Dev.to",
+    "url": "https://dev.to/frionode/reconciliation-is-where-payment-systems-die-matching-callbacks-to-invoices-4led",
+    "published": "2026-11-08",
+    "uid": "dev_a0bf3fa4"
+  }
+]
