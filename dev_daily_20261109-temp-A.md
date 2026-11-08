@@ -1,0 +1,123 @@
+# 开发者日报 A 轨素材 · 2026-11-09
+
+> 共 15 条 | HN Front 5 · GitHub 3 · V2EX 3 · Dev.to 2 · 博客园 2
+
+## 1. 64GB 纯 CPU 跑 284B DeepSeek，解码 9–14 tok/s
+
+作者把 DeepSeek-V4-Flash 从 76.87 GiB 压到 56.56 GiB：SwiGLU-H2 省下 20.3 GiB，Fractal-64 量化到 3.75 bit/权重。64GB 机器 256K 上下文峰值 57.61 GiB，预填充 44.4 tok/s、纯 CPU 解码 9.1–14.7 tok/s；30B MoE 在 16 核 Zen5 上能到 25–60 tok/s。
+
+> 显卡买不到？CPU 说它还能再战。
+
+来源：HN Front Page · [https://github.com/synchopate/llama-modchip](https://github.com/synchopate/llama-modchip) · `dev_b662eaa5`
+
+## 2. Claude Code 的「别再问」按钮，把密码送上了 GitHub
+
+Apiiro 扫描公开仓库，找到 1,122 个文件里躺着明文密钥，来源是开发者点了 Claude Code 权限弹窗里的「Don't Ask Again」。这个选项把某类命令永久放行，之后 Agent 读 .env、跑脚本都不再询问，密钥就顺着提交进了公开仓库。文章给了检测方法和受影响的模式清单，HN 上 494 分、354 条评论吵成一片。
+
+> 图省事点了个别再问，密码就上云了。
+
+来源：HN Front Page · [https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again](https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again) · `dev_e7403d8f`
+
+## 3. Agent 记忆有八种格式，互相都读不懂
+
+作者数了当下并存的记忆形态：AGENTS.md、Cursor 规则、Anthropic 的 /memories 目录、Copilot 的仓库事实、Mem0 的事实、LangGraph 的命名空间存储、MCP 记忆服务器。七套 schema 各存各的，CI Agent 学到的东西编辑器 Agent 读不到。他主张照 OpenTelemetry 的路子先统一数据模型、命名约定和协议，再让厂商去卷存储。
+
+> 记忆没有标准，等于每个 Agent 都在失忆。
+
+来源：HN Front Page · [https://www.lorekit.io/blog/open-agent-memory-format](https://www.lorekit.io/blog/open-agent-memory-format) · `dev_e62a22af`
+
+## 4. 用了几年 Claude Code，他写了一篇分手信
+
+作者列了离开的理由：AGENTS.md 拖到用户跑路前一天才支持；VSCode 同一时间只能连一个会话，第二个标签页收不到选区；今年发了 244 个版本，超过四分之三改过系统提示或工具描述。最刺眼的是默认 Bash 工具说明近 3,000 token，大半在教模型怎么用 git、怎么开 PR——「模型本来就会」。HN 526 分、337 条评论。
+
+> 功能越加越多，方向越来越没有。
+
+来源：HN Front Page · [https://caleb.software/posts/claude-to-pi.html](https://caleb.software/posts/claude-to-pi.html) · `dev_8fbf4f77`
+
+## 5. RP2350 上用 JIT 渲染位图字：每像素只有 6 个周期
+
+Raph Levien 在做 80 年代家用电脑复刻机 vic-2350，DVI 输出靠抢 scanline 填充，没有 framebuffer，每像素预算约 6 个周期。Rust 达不到要求，他改用 ARM 汇编，再写一个即时编译器：针对要渲染的字符串现场生成最优代码，顺带支持比例字宽和字距调整。文章讲了代码生成策略，以及 race-the-beam 这套老办法的取舍。
+
+> 为了省几个周期，把编译器塞进单片机。
+
+来源：HN Front Page · [https://linebender.org/blog/jit-bitmap-text/](https://linebender.org/blog/jit-bitmap-text/) · `dev_04982d38`
+
+## 6. 给长会话装个压缩层：一个插件省 5 倍 token
+
+billion-context 插在 Agent 和模型 API 之间，改写 Anthropic/OpenAI 流式响应，由模型自己决定何时压、压什么，做多代分层摘要。作者给了 4.5 个月、17.4 万次调用、187.6 亿输入 token 的长期数据，204,800 窗口零越界；1,500 条跨基准评测里 ContextBench 第一，成本比全上下文低 58%。
+
+> 上下文窗口不够，就拿摘要来凑。
+
+来源：GitHub Trending Daily · [https://github.com/ranxianglei/billion-context](https://github.com/ranxianglei/billion-context) · `dev_512ec8ef`
+
+## 7. NVIDIA 开源 NVKE：在自家裸金属上开 GPU K8s 服务
+
+NVIDIA Kubernetes Engine 是给平台团队装的管控面：每个租户工作负载集群有独立控制面、etcd 和节点池，通过 API 或 nvkectl 申请，机器由 Infra Controller 供给。节点先用 TPM 走 SPIFFE/SPIRE 认证，再发加入凭据，etcd 可按集群加密。目前是 preview，官方明说不建议上生产；本地可以用模拟机器跑通全流程。748 星。
+
+> 预览版就敢叫 Engine，胆子是 GPU 给的。
+
+来源：GitHub Trending Daily · [https://github.com/dsx-ai-factory/nvke](https://github.com/dsx-ai-factory/nvke) · `dev_00f80b2a`
+
+## 8. agent-browser 冲到 4.7 万星：给 Agent 用的浏览器 CLI
+
+vercel-labs/agent-browser 用 Rust 写，把浏览器自动化收成一条 CLI：Agent 用命令打开页面、抓快照、点元素、填表单，不必自己维护 Playwright 脚本。今天仍在提交，47,378 星，已经成了「Agent 要碰网页」时的默认选项之一。它和 MCP 浏览器工具的区别在于，输出是给模型读的紧凑结构，而不是给测试框架用的断言。
+
+> Agent 上网这件事，终于有人做入口了。
+
+来源：GitHub Trending Daily · [https://github.com/vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) · `dev_6dbcf273`
+
+## 9. V2EX：DeepSeek 输入 <think> 能看到别人的历史对话
+
+帖子称在 DeepSeek 网页版和 App 的输入框里敲 <think>，就能带出其他用户的历史对话，发帖时仍未修复。这像是把特殊 token 当普通文本送进了推理通道，命中了服务端拼接逻辑的缝。回复不多，但如果可复现，就是明确的越权读取——提示词注入之外，另一种「让模型说出不该说的话」。
+
+> 一个尖括号，捅穿了别人的聊天记录。
+
+来源：V2EX Tech · [https://www.v2ex.com/t/1213000](https://www.v2ex.com/t/1213000) · `dev_da262989`
+
+## 10. 有人用 Opus 5.5 把 FinalShell 复刻成 Go 版，还开源了
+
+作者嫌 FinalShell 还是 Java 写的、Mac 上体验差，周末用 Opus 5.5 复刻了一版 FinallyShell：Go + MyGo UI，终端内核用 Ghostty 的 libghostty-vt，能导入 FinalShell 的连接和分组（密码导不过来）。编辑器支持 GBK/GB18030 不乱码，SFTP 三任务并发、监控两秒一刷，密码进系统钥匙串。
+
+> AI 复刻旧工具，比原厂更新还快。
+
+来源：V2EX Share · [https://www.v2ex.com/t/1255296](https://www.v2ex.com/t/1255296) · `dev_26a48441`
+
+## 11. 前端亲测：AI 已经能百分百淘汰只会写 Admin 的人
+
+作者是专职前端，之前不信邪，业余时间用 AI 重做了一套中后台：两三天干完过去很久的体力活，最后结论是 Admin 类业务的前端已可被完全替代。但他也承认，非前端想把 UI/UX 细节打磨好仍有门槛，自己花了四五天调细节。帖子里真正有价值的不是「AI 会不会取代」，而是「剩下的活到底值多少钱」。
+
+> 能被模板化的活，迟早被模板干掉。
+
+来源：V2EX Tech · [https://www.v2ex.com/t/1255094](https://www.v2ex.com/t/1255094) · `dev_a5483713`
+
+## 12. 给 OpenClaw 接本地 Ollama：先看模型带不带工具调用标记
+
+作者的习惯是遇到新工具先让助手分析自己的机器配置，再决定装什么。这次结论有两条硬门槛：模型必须带客户端要求的工具调用标记，否则下完 20GB 也用不了；上下文要够长，Agent 的长工具链很吃窗口。最后选了 Qwen 3.5 35B A3B 的 Q4 量化——35B 总参数、每 token 只激活约 3B，本地才跑得动。
+
+> 先看说明书再下载，能省一个 20GB 的教训。
+
+来源：Dev.to · [https://dev.to/ai-ksk/running-openclaw-against-a-local-ollama-model-what-to-check-before-you-download-20-gb-17kn](https://dev.to/ai-ksk/running-openclaw-against-a-local-ollama-model-what-to-check-before-you-download-20-gb-17kn) · `dev_f707e7ce`
+
+## 13. 每天 12.5 万个 pages.dev 子域，钓鱼的只占一小撮
+
+Infoblox 说 Help TDS 从 2026 年 4 月起用免费 pages.dev 建站，每天约 300 个，多数域名只活一周；到 9 月中已识别约 3 万个关联域名，其中只有 1.6 万个在 Telegram 上公开过。作者强调别把「平台规模」「含关键词页面数」「可归因页面数」混成一个数字：ZoomEye 查到 130 条含 Microsoft 字样的页面，不等于 130 个恶意站。
+
+> 把巧合当证据，是安全分析的老毛病。
+
+来源：Dev.to · [https://dev.to/ioneyrezende/cloudflare-pages-abuse-at-scale-measuring-help-tds-without-overclaiming-2kj0](https://dev.to/ioneyrezende/cloudflare-pages-abuse-at-scale-measuring-help-tds-without-overclaiming-2kj0) · `dev_82446718`
+
+## 14. .NET Conf 2026 明天开场，.NET 11 正式版第一天发
+
+大会 11 月 10–13 日线上免费，北京时间 11 月 11 日 0 点开场。第一天 Scott Hanselman 和 .NET 团队讲 .NET 11 新特性，以及 Copilot 和 AI Agent 怎么进老项目；C#、ASP.NET Core、MAUI、Aspire 各有专场。第二天是 Visual Studio 专场，含 MCP C# SDK 与 Agentic UI。
+
+> 每年都说最后一版，每年都得升级。
+
+来源：博客园 Cnblogs · [https://www.cnblogs.com/shanyou/p/23594243](https://www.cnblogs.com/shanyou/p/23594243) · `dev_79274ef9`
+
+## 15. 一张 64×64 头像从 847 KiB 降到 4.8 KiB
+
+Go 库 gdenticon v2.3.0 优化日志：64×64 PNG 每次操作原来分配 847 KiB。先定位到标准库 png.Encode 每次新建编码工作区，改用 png.Encoder 的 BufferPool 接 sync.Pool 复用；再把纯色矩形填充从逐像素写改成先填一行、倍增复制、整行拷贝。单线程吞吐 6300→30000 icons/s，内存降 99.4%。
+
+> 小图片的大开销，都藏在标准库里。
+
+来源：博客园 Cnblogs · [https://www.cnblogs.com/hourinX/p/23594319](https://www.cnblogs.com/hourinX/p/23594319) · `dev_d1be1827`
