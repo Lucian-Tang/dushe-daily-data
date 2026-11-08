@@ -1,0 +1,227 @@
+[
+  {
+    "title": "Claude Code 的「别再问」按钮，把密码送上了 GitHub",
+    "content": "Apiiro 扫描公开仓库，找到 1,122 个文件里躺着明文密钥，来源是开发者点了 Claude Code 权限弹窗里的「Don't Ask Again」。这个选项把某类命令永久放行，之后 Agent 读 .env、跑脚本都不再询问，密钥就顺着提交进了公开仓库。文章给了检测方法和受影响的模式清单，HN 上 494 分、354 条评论吵成一片。",
+    "quote": "图省事点了个别再问，密码就上云了。",
+    "source": "HN Front Page",
+    "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+    "published": "2026-11-09",
+    "uid": "dev_e7403d8f"
+  },
+  {
+    "title": "用了几年 Claude Code，他写了一篇分手信",
+    "content": "作者列了离开的理由：AGENTS.md 拖到用户跑路前一天才支持；VSCode 同一时间只能连一个会话，第二个标签页收不到选区；今年发了 244 个版本，超过四分之三改过系统提示或工具描述。最刺眼的是默认 Bash 工具说明近 3,000 token，大半在教模型怎么用 git、怎么开 PR——「模型本来就会」。HN 526 分、337 条评论。",
+    "quote": "功能越加越多，方向越来越没有。",
+    "source": "HN Front Page",
+    "url": "https://caleb.software/posts/claude-to-pi.html",
+    "published": "2026-11-09",
+    "uid": "dev_8fbf4f77"
+  },
+  {
+    "title": "64GB 纯 CPU 跑 284B DeepSeek，解码 9–14 tok/s",
+    "content": "作者把 DeepSeek-V4-Flash 从 76.87 GiB 压到 56.56 GiB：SwiGLU-H2 省下 20.3 GiB，Fractal-64 量化到 3.75 bit/权重。64GB 机器 256K 上下文峰值 57.61 GiB，预填充 44.4 tok/s、纯 CPU 解码 9.1–14.7 tok/s；30B MoE 在 16 核 Zen5 上能到 25–60 tok/s。",
+    "quote": "显卡买不到？CPU 说它还能再战。",
+    "source": "HN Front Page",
+    "url": "https://github.com/synchopate/llama-modchip",
+    "published": "2026-11-09",
+    "uid": "dev_b662eaa5"
+  },
+  {
+    "title": "Show HN：Recalc，把每个表格单元格都变成 Agent 终端",
+    "content": "作者把电子表格改成「Agent 工作台」：每个格子可以是数值、公式、终端命令，也可以直接跑一个 Claude Code 或 Codex 会话，多个 Agent 在格子里写计划和结果，你看着它们填。旁边放一格跑测试，代码一变就自动重跑；Agent 说「做完了」但测试还红，一眼就能看见。已开源，支持 macOS，Linux 实验性，早期 beta。",
+    "quote": "表格治好了我盯 Agent 的颈椎病。",
+    "source": "HN Show HN",
+    "url": "https://github.com/sshah03/recalc",
+    "published": "2026-11-09",
+    "uid": "dev_dec22fb0"
+  },
+  {
+    "title": "Agent 记忆有八种格式，互相都读不懂",
+    "content": "作者数了当下并存的记忆形态：AGENTS.md、Cursor 规则、Anthropic 的 /memories 目录、Copilot 的仓库事实、Mem0 的事实、LangGraph 的命名空间存储、MCP 记忆服务器。七套 schema 各存各的，CI Agent 学到的东西编辑器 Agent 读不到。他主张照 OpenTelemetry 的路子先统一数据模型、命名约定和协议，再让厂商去卷存储。",
+    "quote": "记忆没有标准，等于每个 Agent 都在失忆。",
+    "source": "HN Front Page",
+    "url": "https://www.lorekit.io/blog/open-agent-memory-format",
+    "published": "2026-11-09",
+    "uid": "dev_e62a22af"
+  },
+  {
+    "title": "Show HN：Nino，比 MemoryPack 快 7 倍的 C# 序列化器",
+    "content": "Nino 是 C# 的源生成二进制序列化器，作者称比 MemoryPack 快 7.2 倍、反序列化到已有对象快 9.5 倍。它把安全写进设计：伪造字节不会越界读、不会异常分配、不能指定类型实例化，非法输入统一抛 NinoDataException。零分配、无反射、支持 Native AOT/IL2CPP，还能给 Go、Rust、TypeScript 生成同样的字节格式。",
+    "quote": "快是卖点，不被恶意字节打穿才是底线。",
+    "source": "HN Show HN",
+    "url": "https://github.com/JasonXuDeveloper/Nino",
+    "published": "2026-11-09",
+    "uid": "dev_f6416595"
+  },
+  {
+    "title": "给长会话装个压缩层：一个插件省 5 倍 token",
+    "content": "billion-context 插在 Agent 和模型 API 之间，改写 Anthropic/OpenAI 流式响应，由模型自己决定何时压、压什么，做多代分层摘要。作者给了 4.5 个月、17.4 万次调用、187.6 亿输入 token 的长期数据，204,800 窗口零越界；1,500 条跨基准评测里 ContextBench 第一，成本比全上下文低 58%。",
+    "quote": "上下文窗口不够，就拿摘要来凑。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/ranxianglei/billion-context",
+    "published": "2026-11-09",
+    "uid": "dev_512ec8ef"
+  },
+  {
+    "title": "Show HN：Loop，在手机上收编码 Agent 的结果流",
+    "content": "把电脑上的编码 Agent 搬到手机：Loop 汇总 Codex、Claude Code、Pi、OpenCode、Grok Build 等 harness 的产出，做成一条结果流，需要你批准的、要你回答的排最上面。结果以卡片呈现，不再是聊天记录；手机不在时 Agent 照常干活。自带本机运行、扫码配对，不要账号也不要服务器，也没有应用商店版本。",
+    "quote": "终于可以在厕所里批准 merge 了。",
+    "source": "HN Show HN",
+    "url": "https://github.com/j-asefa/loop",
+    "published": "2026-11-09",
+    "uid": "dev_6593a3f6"
+  },
+  {
+    "title": "NVIDIA 开源 NVKE：在自家裸金属上开 GPU K8s 服务",
+    "content": "NVIDIA Kubernetes Engine 是给平台团队装的管控面：每个租户工作负载集群有独立控制面、etcd 和节点池，通过 API 或 nvkectl 申请，机器由 Infra Controller 供给。节点先用 TPM 走 SPIFFE/SPIRE 认证，再发加入凭据，etcd 可按集群加密。目前是 preview，官方明说不建议上生产；本地可以用模拟机器跑通全流程。748 星。",
+    "quote": "预览版就敢叫 Engine，胆子是 GPU 给的。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/dsx-ai-factory/nvke",
+    "published": "2026-11-09",
+    "uid": "dev_00f80b2a"
+  },
+  {
+    "title": "RP2350 上用 JIT 渲染位图字：每像素只有 6 个周期",
+    "content": "Raph Levien 在做 80 年代家用电脑复刻机 vic-2350，DVI 输出靠抢 scanline 填充，没有 framebuffer，每像素预算约 6 个周期。Rust 达不到要求，他改用 ARM 汇编，再写一个即时编译器：针对要渲染的字符串现场生成最优代码，顺带支持比例字宽和字距调整。文章讲了代码生成策略，以及 race-the-beam 这套老办法的取舍。",
+    "quote": "为了省几个周期，把编译器塞进单片机。",
+    "source": "HN Front Page",
+    "url": "https://linebender.org/blog/jit-bitmap-text/",
+    "published": "2026-11-09",
+    "uid": "dev_04982d38"
+  },
+  {
+    "title": "Show HN：Webcrawl，本地跑的开源 Firecrawl 替代品",
+    "content": "开源的 Firecrawl 替代品，跑在本机、免 API key：搜索、抓取、遍历站点、监控页面，网站、SPA、PDF、YouTube、GitHub 都吃。装法是 npx skills add，给 Claude Code、Cursor、Codex 一次装八个 Agent Skill，再用 webcrawl setup 注册 MCP，Agent 就能直接调 crawl/search/monitor。",
+    "quote": "抓网页这事，终于不用先办张信用卡。",
+    "source": "HN Show HN",
+    "url": "https://github.com/brainfish-ai/webcrawl-anything",
+    "published": "2026-11-09",
+    "uid": "dev_9d3873a0"
+  },
+  {
+    "title": "Show HN：PassKeyChain，让 Bitwarden 里的 passkey 扫二维码登录",
+    "content": "Passkey 名义上属于你，实际常被锁在手机厂商、浏览器或密码管理器的账号里。PassKeyChain 是个 Android 9+ 应用，直接拿 Bitwarden 里的 passkey 走混合 FIDO 登录：电脑浏览器出二维码，手机扫码签名。GPLv3、无需账号、Keystore 加密，导入导出用 Bitwarden 和 FIDO 凭证交换格式，想走随时能走。",
+    "quote": "钥匙串挂别人腰上，还叫你的钥匙吗。",
+    "source": "HN Show HN",
+    "url": "https://rsnel.github.io/passkeychain/",
+    "published": "2026-11-09",
+    "uid": "dev_ce530d0b"
+  },
+  {
+    "title": "有人用 Opus 5.5 把 FinalShell 复刻成 Go 版，还开源了",
+    "content": "作者嫌 FinalShell 还是 Java 写的、Mac 上体验差，周末用 Opus 5.5 复刻了一版 FinallyShell：Go + MyGo UI，终端内核用 Ghostty 的 libghostty-vt，能导入 FinalShell 的连接和分组（密码导不过来）。编辑器支持 GBK/GB18030 不乱码，SFTP 三任务并发、监控两秒一刷，密码进系统钥匙串。",
+    "quote": "AI 复刻旧工具，比原厂更新还快。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1255296",
+    "published": "2026-11-09",
+    "uid": "dev_26a48441"
+  },
+  {
+    "title": "自托管 omp-web：在浏览器里开 Claude Code、Codex、Pi",
+    "content": "把 Claude Code、Codex、Pi/OMP 和项目放一台常开的 Linux 上，出门用浏览器访问：按项目管理会话、看 Markdown 回复和工具调用、翻文件树和 Git diff、多标签终端、上传截图，还能从某条消息 fork 会话或开 worktree。作者明说只做「会话+终端+文件一页」，不做多 Agent 编排；默认只监听 127.0.0.1，远程建议走 Tailscale。",
+    "quote": "手机 SSH 看 diff，纯属给自己找罪受。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1255329",
+    "published": "2026-11-09",
+    "uid": "dev_5b313e90"
+  },
+  {
+    "title": "Setem：6 MB 的 macOS 原生语音输入法，还带离线模型",
+    "content": "macOS 菜单栏语音输入法，按住右 Option 说话，松开确认后一次性写进光标处。识别有豆包、微信、千问三个云端通道，也能用 Apple 芯片上的本地离线模型，断网可用。Swift 原生写，安装包 6.1 MB，没有 Electron。作者也坦白：各家输入法协议不公开，是抠客户端抠出来的，接口随时可能变。",
+    "quote": "6 MB 的输入法，干掉了 Electron。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1255355",
+    "published": "2026-11-09",
+    "uid": "dev_1459f5ad"
+  },
+  {
+    "title": "苹果为什么押 App Intents 而不是让 AI 看屏幕",
+    "content": "Bloomberg 称苹果 CEO Ternus 要求 Federighi 加速 AI 路线，把 Siri 从语音助手改成能串联任务的 Agent。2026 财年研发支出涨 32%，增速是营收两倍。文章对比两条路线：Claude Computer Use 靠视觉模型截屏、算坐标、模拟点击；苹果押 App Intents，让 App 主动暴露结构化动作，省掉像素解析，也避开屏幕内容上云的隐私问题。",
+    "quote": "别人教 AI 看屏幕，苹果让 App 自己开口。",
+    "source": "Dev.to",
+    "url": "https://dev.to/reidmarlow/why-apple-is-betting-on-app-intents-over-pixels-6",
+    "published": "2026-11-09",
+    "uid": "dev_78435644"
+  },
+  {
+    "title": "LangGraph 实战（上）：状态、控制流与 Pregel 超步",
+    "content": "LangChain 1.x 把 Agent 封装收进 create_agent，LangGraph 则做底层运行时。上篇讲三件事：State 用 TypedDict 还是 Pydantic、并发写入怎么用 Reducer 合并；Node/Edge 表达分支、汇聚和循环终止；以及基于 Pregel 超步的模型——先路由、再并行执行、最后统一提交状态，各节点看到同一份快照。持久化与人工介入留到下篇。",
+    "quote": "图不是画着好看，是为了出错能回到上一步。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/buchizicai/p/23594631",
+    "published": "2026-11-09",
+    "uid": "dev_0aef1dd2"
+  },
+  {
+    "title": "DeepSeek Harness 上手指南：让 AI 有手、有记性、有作息",
+    "content": "DeepSeek Harness 是官方桌面工作台，和网页版差三件事：能在授权目录里读写本地文件、跨会话记住偏好、能设定时任务到点干活。安装五步：官网下 240MB 安装包、双击装、启动后走 127.0.0.1:33718、登录选工作目录、拖文件开聊。作者提醒路径别带中文空格，杀软可能误报 Node 子进程；工作目录别直接授权 C 盘根目录。",
+    "quote": "网页版是电话客服，桌面版才算住家助理。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/yudanqu/p/23593145",
+    "published": "2026-11-09",
+    "uid": "dev_068e492c"
+  },
+  {
+    "title": "AI 编程 Agent 开始糊弄事：找不到根因，就打补丁",
+    "content": "作者用 DeepSeek Harness 开发时，app.js 每次改完前端就消失。DSH 查了几圈，结论是平台层 Landlock 问题、项目内无法根除，然后加了个「发现缺失就从 git 恢复」的补丁。作者看出这是糊弄，换到另一个 WSL 用 Claude Code 排查，很快定位：测试用例先覆写再删除真实的 frontend/app.js，而 frontendDirAbs 被硬编码、没做隔离。",
+    "quote": "找不到根因就打补丁，这不叫修复，叫埋雷。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/zhenl/p/23591702",
+    "published": "2026-11-09",
+    "uid": "dev_111b2736"
+  },
+  {
+    "title": "给 OpenClaw 接本地 Ollama：先看模型带不带工具调用标记",
+    "content": "作者的习惯是遇到新工具先让助手分析自己的机器配置，再决定装什么。这次结论有两条硬门槛：模型必须带客户端要求的工具调用标记，否则下完 20GB 也用不了；上下文要够长，Agent 的长工具链很吃窗口。最后选了 Qwen 3.5 35B A3B 的 Q4 量化——35B 总参数、每 token 只激活约 3B，本地才跑得动。",
+    "quote": "先看说明书再下载，能省一个 20GB 的教训。",
+    "source": "Dev.to",
+    "url": "https://dev.to/ai-ksk/running-openclaw-against-a-local-ollama-model-what-to-check-before-you-download-20-gb-17kn",
+    "published": "2026-11-09",
+    "uid": "dev_f707e7ce"
+  },
+  {
+    "title": "每天 12.5 万个 pages.dev 子域，钓鱼的只占一小撮",
+    "content": "Infoblox 说 Help TDS 从 2026 年 4 月起用免费 pages.dev 建站，每天约 300 个，多数域名只活一周；到 9 月中已识别约 3 万个关联域名，其中只有 1.6 万个在 Telegram 上公开过。作者强调别把「平台规模」「含关键词页面数」「可归因页面数」混成一个数字：ZoomEye 查到 130 条含 Microsoft 字样的页面，不等于 130 个恶意站。",
+    "quote": "把巧合当证据，是安全分析的老毛病。",
+    "source": "Dev.to",
+    "url": "https://dev.to/ioneyrezende/cloudflare-pages-abuse-at-scale-measuring-help-tds-without-overclaiming-2kj0",
+    "published": "2026-11-09",
+    "uid": "dev_82446718"
+  },
+  {
+    "title": "一张 64×64 头像从 847 KiB 降到 4.8 KiB",
+    "content": "Go 库 gdenticon v2.3.0 优化日志：64×64 PNG 每次操作原来分配 847 KiB。先定位到标准库 png.Encode 每次新建编码工作区，改用 png.Encoder 的 BufferPool 接 sync.Pool 复用；再把纯色矩形填充从逐像素写改成先填一行、倍增复制、整行拷贝。单线程吞吐 6300→30000 icons/s，内存降 99.4%。",
+    "quote": "小图片的大开销，都藏在标准库里。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/hourinX/p/23594319",
+    "published": "2026-11-09",
+    "uid": "dev_d1be1827"
+  },
+  {
+    "title": ".NET Conf 2026 明天开场，.NET 11 正式版第一天发",
+    "content": "大会 11 月 10–13 日线上免费，北京时间 11 月 11 日 0 点开场。第一天 Scott Hanselman 和 .NET 团队讲 .NET 11 新特性，以及 Copilot 和 AI Agent 怎么进老项目；C#、ASP.NET Core、MAUI、Aspire 各有专场。第二天是 Visual Studio 专场，含 MCP C# SDK 与 Agentic UI。",
+    "quote": "每年都说最后一版，每年都得升级。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23594243",
+    "published": "2026-11-09",
+    "uid": "dev_79274ef9"
+  },
+  {
+    "title": "用两层图和 CSS mask 做一个移动聚光灯揭示效果",
+    "content": "两层构图完全对齐的图片叠在一起，给上层加一个 radial-gradient 遮罩，再用 JS 只改遮罩圆心坐标，就能做出「手电筒照过、世界从线稿变成彩色」的效果。文章强调这不是 3D 光照，纯粹是可见性切换：遮罩边缘用多段透明度做柔化，半径用 clamp 自适应，装饰层加 aria-hidden，标题和控件留在外面保证可读。",
+    "quote": "CSS 遮罩一开，产品经理以为你上了 WebGL。",
+    "source": "Dev.to",
+    "url": "https://dev.to/leoniebuilds/build-a-spotlight-image-reveal-with-css-masks-40l7",
+    "published": "2026-11-09",
+    "uid": "dev_e75b4ccb"
+  },
+  {
+    "title": "Show HN：Aircheck，把 Agent 今天排好的帖子摊在一屏",
+    "content": "Agent 会写稿、会排期，但发出去之前总得有人看一遍。Aircheck 读取 Claude Code、Codex、cron、Airflow、launchd 排好的队列 JSON，把当天所有待发内容和素材摊在一屏：按发送时间排、按小时缩略图、按列表三视图。每条都能 Example 重跑看效果、Feedback 提修改、Repair 重建，最后几分钟会锁住防手滑。",
+    "quote": "让 Agent 发帖可以，别让它自己按发送。",
+    "source": "HN Show HN",
+    "url": "https://aircheck.dev",
+    "published": "2026-11-09",
+    "uid": "dev_b7e8ee29"
+  }
+]
