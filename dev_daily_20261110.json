@@ -1,200 +1,200 @@
 [
- {
-  "title": "同一块 H100，时租 2.69 美元还是 12.29 美元",
-  "content": "有人把 AWS、Azure 和 neocloud 的按需 GPU 报价折算成每 GPU 每小时：H100 SXM 80GB 在 RunPod Community 是 2.69 美元，Azure ND96isr_H100_v5 要 12.29 美元，差价 4.57 倍；一个月账单 1,964 对 8,972 美元。按同型号同显存分组后，便宜那档让掉的是 InfiniBand、SLA 和合规。",
-  "quote": "同一块芯片，差价 4.57 倍，云厂商的算盘真响。",
-  "source": "HN Front Page",
-  "url": "https://github.com/datareceipts/data-receipts/tree/main/109-gpu-pricing",
-  "published": "2026-11-10",
-  "uid": "dev_0ff049a5"
- },
- {
-  "title": "malloc 到底在干什么：一千次分配只两次系统调用",
-  "content": "作者用 strace 拆 glibc 的 malloc：连续 malloc(16) 一千次，内核只收到两次 brk，第一次问堆顶在哪，第二次把堆拉大 132 KiB，剩下 999 次都从这块地里切。空系统调用实测 575 纳秒，所以 libc 必须自己记账；文中还写了个基于 sbrk 的 bump allocator，并解释进程地址空间里那 23.4 TiB 的空洞为什么不吃物理内存。",
-  "quote": "内存不是凭空来的，是内核先给你画了块地。",
-  "source": "HN Front Page",
-  "url": "https://benmandrew.com/articles/what-is-malloc-doing-anyway",
-  "published": "2026-11-10",
-  "uid": "dev_96e1fed5"
- },
- {
-  "title": "ChatGPT 桌面版把你的 SSH agent 转发进了远程机器",
-  "content": "HN 上的安全问题：ChatGPT 桌面版会把本机 SSH agent 转发到它连接的远程机器，于是跑在远端的 agent 可以直接用你的本地密钥完成认证，比如往你的私有 GitHub 仓库推送代码。发帖人附了 openai/codex 的 PR 作为证据，讨论集中在「为了少配一次密钥，把整条信任链交出去」这件事上——远程主机一旦被攻破，拿到的不只是会话，还有你所有免密登录。",
-  "quote": "图方便开的门，最后通向你的私有仓库。",
-  "source": "HN Front Page",
-  "url": "https://news.ycombinator.com/item?id=50422628",
-  "published": "2026-11-10",
-  "uid": "dev_e447331a"
- },
- {
-  "title": "借一个微软签名的 shim，绕过企业机器上的 Secure Boot",
-  "content": "p3ng0s 作者复盘 Secure Boot：微软 UEFI CA 2011 给 Ubuntu、Debian、Fedora 等系统签 shim，shim 遇到不认识的签名会进 MOK 界面让你选密钥。攻击者拿现成的 shim-signed 包，生成自己的 MOK 密钥给内核签名，就能在开着 Secure Boot 的企业硬件上启动自制系统。它防的是 EFI 恶意软件持久化，不防能碰到机器的人。",
-  "quote": "安全启动挡的是 EFI 病毒，不是拿电脑的人。",
-  "source": "HN Front Page",
-  "url": "https://leosmith.wtf/blog/not-so-secure-boot.html",
-  "published": "2026-11-10",
-  "uid": "dev_3657451b"
- },
- {
-  "title": "「我看到了你的 HN 评论」——AI 冷邮件的新套路",
-  "content": "作者让 Claude 翻了自己 2013 年以来收到的所有读者邮件，验证一个直觉：以前是认真讨论，现在几乎全是销售线索。套路很统一——引用你某条真实 HN 评论，夸两句，再抛一个开放式问题；你认真回上三段，对方下一封就开始「这正是我们在做的产品」。他点出关键：LLM 让批量伪造「个性化」变得几乎零成本，而这种伪装成提问的 outreach 正在毁掉开发者之间少有的直接交流。",
-  "quote": "以前收到邮件是缘分，现在全是销售漏斗。",
-  "source": "HN Front Page",
-  "url": "https://joshstrange.com/2026/11/09/i-saw-your-hn-comment/",
-  "published": "2026-11-10",
-  "uid": "dev_aa4f4799"
- },
- {
-  "title": "mustty：一个故意不做功能的 TUI Markdown 编辑器",
-  "content": "AI 时代什么都能生成，安静写字反而成了奢侈。作者嫌现有 Markdown 编辑器功能太满、还塞 AI 辅助，索性用 TUI 做了个「老派」写作工具：终端里全屏、无侧栏、无弹窗，只留文本和最少的状态行，纯键盘操作。定位不是给程序员写代码，而是给写作者码字——把界面减到只剩光标，也算一种反潮流。",
-  "quote": "功能越少的编辑器，越考验作者的自律。",
-  "source": "V2EX Share",
-  "url": "https://www.v2ex.com/t/1255602",
-  "published": "2026-11-10",
-  "uid": "dev_08f18dfa"
- },
- {
-  "title": "Show HN：Flide，给决策模型单开一个推理引擎",
-  "content": "决策模型需要自己的推理引擎。Flide 主打「精确状态分叉」：把一次决策推演的中间状态复制到多条分支，共享前缀计算，作者称比 vLLM、SGLang 快最多 9.5 倍，且每条答案与单独推理完全一致。它服务 Jev 的 /v1/systemone 接口，已适配几十个决策模型家族，支持多模型 LoRA 与图像输入，并附 arXiv 论文和 flide verify 自检命令。",
-  "quote": "快 9.5 倍还能保证答案不变，这才叫优化。",
-  "source": "HN Show HN",
-  "url": "https://github.com/OmniJev/Flide",
-  "published": "2026-11-10",
-  "uid": "dev_33719eb9"
- },
- {
-  "title": "Show HN：Zebkit，把 Chromium 当零件而不是地基",
-  "content": "只取引擎，不要浏览器：zebkit 打包 Blink、各层 JIT 的 V8、PDFium、FFmpeg，剥掉 Chrome 外壳和 Electron 运行时，做成一个可链接的库。宿主程序保留自己的进程、窗口和打包方式，往 X11 窗口、NSView 或 HWND 里嵌视图即可。提供 C/Rust/Python/Go/JS 绑定，还带 Playwright 与 CDP 供 Agent 驱动。",
-  "quote": "Electron 让你住进去，zebkit 让你装上去。",
-  "source": "HN Show HN",
-  "url": "https://github.com/ikey4u/zebkit",
-  "published": "2026-11-10",
-  "uid": "dev_5d781867"
- },
- {
-  "title": "RuView 用 WiFi 信号隔墙看人：呼吸心率都能测",
-  "content": "RuView 拿 ESP32 采集 WiFi 的 CSI，把人体对无线电的扰动还原成空间信息：隔墙检测存在与人数、无接触测呼吸和心率、识别跌倒，甚至从 CSI 估 17 个人体关键点，全程不装摄像头。它自带 Home Assistant、Matter、HomeKit 桥接，本地跑自动化，也提供模型训练和 AI 运维工具。README 老实承认部分精度指标仍基于合成数据，需要真实场景验证。",
-  "quote": "没摄像头也能看穿墙，这次隐私是真裸奔。",
-  "source": "GitHub Trending Daily",
-  "url": "https://github.com/ruvnet/RuView",
-  "published": "2026-11-10",
-  "uid": "dev_62527b97"
- },
- {
-  "title": "6.8 万星的股票分析系统：零成本定时跑，推送到六个 IM",
-  "content": "daily_stock_analysis 是套 LLM 驱动的多市场自选股分析：覆盖 A 股、港股、美股、日股、韩股、台股，聚合多源行情和实时新闻，每天生成「决策仪表盘」推到企业微信、飞书、Telegram、Discord、Slack 或邮箱。项目用 Python 写，带 Docker 和 GitHub Actions，可以完全靠免费额度定时跑，不用自己养服务器。",
-  "quote": "炒股赚不赚钱不知道，至少推送很准时。",
-  "source": "GitHub Trending Daily",
-  "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
-  "published": "2026-11-10",
-  "uid": "dev_ec14e902"
- },
- {
-  "title": "Cyber API：Rust + GPUI 写的原生 API 调试客户端",
-  "content": "V 友开源了 Cyber API，定位是 Postman/Insomnia 的原生替代：底层 Rust，UI 用 Zed 同款 GPUI 渲染引擎，每个像素由 GPU 直接画，主打 60 FPS 和低内存，明确对着 Electron 方案的卡顿开火。同一份代码可以构建桌面端，项目已放到 GitHub，作者在帖子里征集试用反馈。评论区照例分成两派：一派嫌生态不够，一派说光是不卡就值了。",
-  "quote": "又一个受不了 Electron 的人，去写原生客户端了。",
-  "source": "V2EX Share",
-  "url": "https://www.v2ex.com/t/1255681",
-  "published": "2026-11-10",
-  "uid": "dev_a5141cd1"
- },
- {
-  "title": "为了和邻居拼山姆，他花一周做了个小程序",
-  "content": "作者小区里拼单靠微信群，接龙、算账、催取货全靠人肉，于是用 AI 手搓了「拼拼账单」：群友自己填物品、认领份数，大份商品可拆开拼，页面实时显示还差多少；运费和包装费能按人头或按金额分摊，账单自动生成；发起人一眼看到谁没付钱，到货还能一键通知。从学小程序到备案上线约一周，成本 30 元认证费，token 没算。",
-  "quote": "为了省 99 包邮，写了个小程序，这很程序员。",
-  "source": "V2EX Share",
-  "url": "https://www.v2ex.com/t/1255659",
-  "published": "2026-11-10",
-  "uid": "dev_e598a4ed"
- },
- {
-  "title": "在 Next.js 里塞一个只读 MCP server，踩完的坑",
-  "content": "作者做羽毛球拍比价站，顺手在同一个 Next.js 应用里挂了远程 MCP server，让人直接问 Claude 或 ChatGPT，不用翻四十个商品页。服务只读、三个工具、无鉴权：按画像推荐、按条件搜索、并排看参数，全部标 readOnlyHint。文章讲了路由放 /api/mcp 的接法、工具描述怎么写才让模型选对，以及无鉴权公开端点必须假设有人会乱刷，要在查询层做限流和参数校验。",
-  "quote": "只读、无鉴权，MCP 上线最容易翻车的就是这两点。",
-  "source": "Dev.to",
-  "url": "https://dev.to/padel_expertlab_ccb31265/what-i-learned-shipping-a-read-only-mcp-server-on-nextjs-and-vercel-265g",
-  "published": "2026-11-10",
-  "uid": "dev_686bc207"
- },
- {
-  "title": "EarlyLore：开坑前先被 AI 泼一盆冷水",
-  "content": "用 Claude Code 两天搓出 MVP 之后，真正的坑是「没人愿意付钱」。EarlyLore 把 44.5 万款产品的真实流量与定价数据做成立项前的挑刺库：想开新坑先查同赛道有几家活着的竞品、自然流量多少、价位落在哪，而不是直接问 AI「这想法行不行」——因为模型只会顺着你夸。作者附了 V2EX 兑换码。",
-  "quote": "问 AI 想法行不行，等于问理发师要不要剪头。",
-  "source": "V2EX Share",
-  "url": "https://www.v2ex.com/t/1255546",
-  "published": "2026-11-10",
-  "uid": "dev_a5ae0bc6"
- },
- {
-  "title": "实测 2137 个承包商网站：手机端最缺的不是 AI 客服",
-  "content": "不靠问卷，直接数：从 OpenStreetMap 取 21 个州的水管、暖通、电工、屋顶等承包商网站，剔除打不开和被停放、挂马、按点击计费的域名，剩 2137 个，用 iPhone UA 在无头 Chrome 里逐页加载。结果 84% 有可点拨号，53% 有表单，只有 13% 能在线预约，75% 既不能聊天也不能发短信。文章还公开两次修正，正则误判把数据打回过原形。",
-  "quote": "移动端最贵的功能不是 AI 客服，是能点的电话号。",
-  "source": "Dev.to",
-  "url": "https://dev.to/nova_solutions/we-checked-2137-contractor-websites-on-a-phone-32i3",
-  "published": "2026-11-10",
-  "uid": "dev_ee35b16e"
- },
- {
-  "title": "DGX Spark 首启翻车：界面不报错，机器已经半残",
-  "content": "作者严格照 NVIDIA 官方教程用热点方式初始化 DGX Spark，向导一连网就自动下载完整系统镜像并升级；网络访问 NVIDIA 仓库受限时这一步失败，但界面没有任何提示。机器从此停在「看起来正常、实际半初始化」的状态：命令缺失、SSH 异常、服务起不来、NVIDIA Sync 连不上，最后只能重装。重装又踩了外设、UEFI 和启动盘一串坑，换了三种网络方案才跑通。",
-  "quote": "界面不报错，机器已经半残，这才最要命。",
-  "source": "博客园 Cnblogs",
-  "url": "https://www.cnblogs.com/kexxxfeng/p/23604499",
-  "published": "2026-11-10",
-  "uid": "dev_63585961"
- },
- {
-  "title": "文件系统 MCP Server 怎么给 Agent 划边界",
-  "content": "文件系统 MCP server 把读写、列表、搜索、移动暴露给 Claude Code 或 Cursor，边界只有启动时的允许目录：只给项目目录，不给 home，并用 list_allowed_directories 核验。提示注入能把只读变成越权写入，写工具按需开放；符号链接在放行检查后才由系统解析，每次操作前重新解析真实路径；配工作区 git 和 tools/call 日志，就有可回滚审计链。",
-  "quote": "给 Agent 开目录权限，手一抖就是整台机器。",
-  "source": "Dev.to",
-  "url": "https://dev.to/scriptmasterlabs01/file-system-mcp-server-scope-agent-file-access-safely-9m6",
-  "published": "2026-11-10",
-  "uid": "dev_be31f192"
- },
- {
-  "title": "在 Docker 里跑 NGINX，怎么才算「对的方式」",
-  "content": "跑起来只要一条命令，按生产标准来是另一回事：基于 nginx-unprivileged 以 uid 101 运行，故监听 8080 而非 80；构建期跑 nginx -t，配置写错直接失败；STOPSIGNAL SIGQUIT 让 docker stop 优雅退出；HEALTHCHECK 每 15 秒探 /healthz。加只读根文件系统、丢掉全部 capabilities、CPU 与内存限额。",
-  "quote": "能跑和能上线之间，隔着一条 HEALTHCHECK。",
-  "source": "Dev.to",
-  "url": "https://dev.to/mikegbenga/running-a-web-server-in-docker-the-right-way-codealpha-devops-internship-task-4-h2",
-  "published": "2026-11-10",
-  "uid": "dev_e1f61cd6"
- },
- {
-  "title": "Redis 分布式锁的七个坑：从 setnx 到 Redlock",
-  "content": "2026 年了，GitHub 上搜 setnx 出来的示例仍有九成不能上生产：忘了过期时间、value 不带 UUID 导致误删别人的锁、把 Redlock 部署在同一台 Redis 上假装高可用。作者按八年电商与支付后台的经验把坑归成七类，从加锁原子性、续期看门狗、主从切换丢锁，到锁粒度与超时设置，逐条给出正确写法和失效场景。",
-  "quote": "锁没设过期时间，等于给系统埋了个定时器。",
-  "source": "博客园 Cnblogs",
-  "url": "https://www.cnblogs.com/uniqueDong/p/23604187",
-  "published": "2026-11-10",
-  "uid": "dev_12b6632a"
- },
- {
-  "title": "工具调用：让 Agent 从「说」到「做」的那双手",
-  "content": "这篇把 tool use 拆得很直白：开发者用 JSON Schema 定义工具名、用途、参数和返回；模型只输出「我要调哪个函数、参数是什么」；真正执行的是宿主代码；结果再写回上下文，进入下一轮推理。作者强调模型不直接动手，所以能力边界等于你给的工具体系，安全阀也在宿主手里。工具设计要给准名字、严 Schema、粒度适中，返回值要做成模型友好的结构化摘要。",
-  "quote": "模型只负责动嘴，真动手的还是你的代码。",
-  "source": "博客园 Cnblogs",
-  "url": "https://www.cnblogs.com/yudanqu/p/23606886",
-  "published": "2026-11-10",
-  "uid": "dev_8a07aa2e"
- },
- {
-  "title": "torch.cuda.is_available() 一直是 False，先别重装驱动",
-  "content": "GPU 用不上别急着重装驱动。作者给出三层断点定位法，按概率排序排查：最常见是 pip 装成了 +cpu 的轮子；最隐蔽是 CUDA_VISIBLE_DEVICES 被设成 -1，进程看得到卡却零报错地用 CPU；驱动与 CUDA 版本不匹配放最后查。一条 cuda_doctor 命令直接告诉你断在哪一层，省掉反复卸载重装的半小时。",
-  "quote": "零报错地退回 CPU，才是最难查的那种故障。",
-  "source": "博客园 Cnblogs",
-  "url": "https://www.cnblogs.com/dawudexiaowu/p/23598740",
-  "published": "2026-11-10",
-  "uid": "dev_dd32d704"
- },
- {
-  "title": "单模型 Agent 配置的工程化：四档思考、权限顺序与静态校验",
-  "content": "只留一个 deepseek-flash，agent 之间的差异全靠 thinking tier 表达：11 月把思考档从三档扩到四档，重排各 agent 的档位，并在默认档之外提供 #max。配套三条工程约束：agent 级权限不得放宽全局默认、权限按「全局→agent→工具」顺序合并、配置加载时做静态校验，把「谁在什么档位能调什么工具」变成启动期就能发现的问题。",
-  "quote": "配置错误要在启动时报，不要等线上炸。",
-  "source": "博客园 Cnblogs",
-  "url": "https://www.cnblogs.com/znlgis/p/23603140",
-  "published": "2026-11-10",
-  "uid": "dev_b2313bf3"
- }
+  {
+    "title": "同一块 H100，时租 2.69 美元还是 12.29 美元",
+    "content": "有人把 AWS、Azure 和 neocloud 的按需 GPU 报价折算成每 GPU 每小时：H100 SXM 80GB 在 RunPod Community 是 2.69 美元，Azure ND96isr_H100_v5 要 12.29 美元，差价 4.57 倍；一个月账单 1,964 对 8,972 美元。按同型号同显存分组后，便宜那档让掉的是 InfiniBand、SLA 和合规。",
+    "quote": "同一块芯片，差价 4.57 倍，云厂商的算盘真响。",
+    "source": "HN Front Page",
+    "url": "https://github.com/datareceipts/data-receipts/tree/main/109-gpu-pricing",
+    "published": "2026-11-10",
+    "uid": "dev_821570ee"
+  },
+  {
+    "title": "malloc 到底在干什么：一千次分配只两次系统调用",
+    "content": "作者用 strace 拆 glibc 的 malloc：连续 malloc(16) 一千次，内核只收到两次 brk，第一次问堆顶在哪，第二次把堆拉大 132 KiB，剩下 999 次都从这块地里切。空系统调用实测 575 纳秒，所以 libc 必须自己记账；文中还写了个基于 sbrk 的 bump allocator，并解释进程地址空间里那 23.4 TiB 的空洞为什么不吃物理内存。",
+    "quote": "内存不是凭空来的，是内核先给你画了块地。",
+    "source": "HN Front Page",
+    "url": "https://benmandrew.com/articles/what-is-malloc-doing-anyway",
+    "published": "2026-11-10",
+    "uid": "dev_94940b0a"
+  },
+  {
+    "title": "ChatGPT 桌面版把你的 SSH agent 转发进了远程机器",
+    "content": "HN 上的安全问题：ChatGPT 桌面版会把本机 SSH agent 转发到它连接的远程机器，于是跑在远端的 agent 可以直接用你的本地密钥完成认证，比如往你的私有 GitHub 仓库推送代码。发帖人附了 openai/codex 的 PR 作为证据，讨论集中在「为了少配一次密钥，把整条信任链交出去」这件事上——远程主机一旦被攻破，拿到的不只是会话，还有你所有免密登录。",
+    "quote": "图方便开的门，最后通向你的私有仓库。",
+    "source": "HN Front Page",
+    "url": "https://news.ycombinator.com/item?id=50422628",
+    "published": "2026-11-10",
+    "uid": "dev_3f60f9d3"
+  },
+  {
+    "title": "借一个微软签名的 shim，绕过企业机器上的 Secure Boot",
+    "content": "p3ng0s 作者复盘 Secure Boot：微软 UEFI CA 2011 给 Ubuntu、Debian、Fedora 等系统签 shim，shim 遇到不认识的签名会进 MOK 界面让你选密钥。攻击者拿现成的 shim-signed 包，生成自己的 MOK 密钥给内核签名，就能在开着 Secure Boot 的企业硬件上启动自制系统。它防的是 EFI 恶意软件持久化，不防能碰到机器的人。",
+    "quote": "安全启动挡的是 EFI 病毒，不是拿电脑的人。",
+    "source": "HN Front Page",
+    "url": "https://leosmith.wtf/blog/not-so-secure-boot.html",
+    "published": "2026-11-10",
+    "uid": "dev_d185a554"
+  },
+  {
+    "title": "「我看到了你的 HN 评论」——AI 冷邮件的新套路",
+    "content": "作者让 Claude 翻了自己 2013 年以来收到的所有读者邮件，验证一个直觉：以前是认真讨论，现在几乎全是销售线索。套路很统一——引用你某条真实 HN 评论，夸两句，再抛一个开放式问题；你认真回上三段，对方下一封就开始「这正是我们在做的产品」。他点出关键：LLM 让批量伪造「个性化」变得几乎零成本，而这种伪装成提问的 outreach 正在毁掉开发者之间少有的直接交流。",
+    "quote": "以前收到邮件是缘分，现在全是销售漏斗。",
+    "source": "HN Front Page",
+    "url": "https://joshstrange.com/2026/11/09/i-saw-your-hn-comment/",
+    "published": "2026-11-10",
+    "uid": "dev_78265c62"
+  },
+  {
+    "title": "mustty：一个故意不做功能的 TUI Markdown 编辑器",
+    "content": "AI 时代什么都能生成，安静写字反而成了奢侈。作者嫌现有 Markdown 编辑器功能太满、还塞 AI 辅助，索性用 TUI 做了个「老派」写作工具：终端里全屏、无侧栏、无弹窗，只留文本和最少的状态行，纯键盘操作。定位不是给程序员写代码，而是给写作者码字——把界面减到只剩光标，也算一种反潮流。",
+    "quote": "功能越少的编辑器，越考验作者的自律。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1255602",
+    "published": "2026-11-10",
+    "uid": "dev_cab99fbd"
+  },
+  {
+    "title": "Show HN：Flide，给决策模型单开一个推理引擎",
+    "content": "决策模型需要自己的推理引擎。Flide 主打「精确状态分叉」：把一次决策推演的中间状态复制到多条分支，共享前缀计算，作者称比 vLLM、SGLang 快最多 9.5 倍，且每条答案与单独推理完全一致。它服务 Jev 的 /v1/systemone 接口，已适配几十个决策模型家族，支持多模型 LoRA 与图像输入，并附 arXiv 论文和 flide verify 自检命令。",
+    "quote": "快 9.5 倍还能保证答案不变，这才叫优化。",
+    "source": "HN Show HN",
+    "url": "https://github.com/OmniJev/Flide",
+    "published": "2026-11-10",
+    "uid": "dev_c879e5e2"
+  },
+  {
+    "title": "Show HN：Zebkit，把 Chromium 当零件而不是地基",
+    "content": "只取引擎，不要浏览器：zebkit 打包 Blink、各层 JIT 的 V8、PDFium、FFmpeg，剥掉 Chrome 外壳和 Electron 运行时，做成一个可链接的库。宿主程序保留自己的进程、窗口和打包方式，往 X11 窗口、NSView 或 HWND 里嵌视图即可。提供 C/Rust/Python/Go/JS 绑定，还带 Playwright 与 CDP 供 Agent 驱动。",
+    "quote": "Electron 让你住进去，zebkit 让你装上去。",
+    "source": "HN Show HN",
+    "url": "https://github.com/ikey4u/zebkit",
+    "published": "2026-11-10",
+    "uid": "dev_be833ae5"
+  },
+  {
+    "title": "RuView 用 WiFi 信号隔墙看人：呼吸心率都能测",
+    "content": "RuView 拿 ESP32 采集 WiFi 的 CSI，把人体对无线电的扰动还原成空间信息：隔墙检测存在与人数、无接触测呼吸和心率、识别跌倒，甚至从 CSI 估 17 个人体关键点，全程不装摄像头。它自带 Home Assistant、Matter、HomeKit 桥接，本地跑自动化，也提供模型训练和 AI 运维工具。README 老实承认部分精度指标仍基于合成数据，需要真实场景验证。",
+    "quote": "没摄像头也能看穿墙，这次隐私是真裸奔。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/ruvnet/RuView",
+    "published": "2026-11-10",
+    "uid": "dev_9226f5db"
+  },
+  {
+    "title": "6.8 万星的股票分析系统：零成本定时跑，推送到六个 IM",
+    "content": "daily_stock_analysis 是套 LLM 驱动的多市场自选股分析：覆盖 A 股、港股、美股、日股、韩股、台股，聚合多源行情和实时新闻，每天生成「决策仪表盘」推到企业微信、飞书、Telegram、Discord、Slack 或邮箱。项目用 Python 写，带 Docker 和 GitHub Actions，可以完全靠免费额度定时跑，不用自己养服务器。",
+    "quote": "炒股赚不赚钱不知道，至少推送很准时。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+    "published": "2026-11-10",
+    "uid": "dev_793334a5"
+  },
+  {
+    "title": "Cyber API：Rust + GPUI 写的原生 API 调试客户端",
+    "content": "V 友开源了 Cyber API，定位是 Postman/Insomnia 的原生替代：底层 Rust，UI 用 Zed 同款 GPUI 渲染引擎，每个像素由 GPU 直接画，主打 60 FPS 和低内存，明确对着 Electron 方案的卡顿开火。同一份代码可以构建桌面端，项目已放到 GitHub，作者在帖子里征集试用反馈。评论区照例分成两派：一派嫌生态不够，一派说光是不卡就值了。",
+    "quote": "又一个受不了 Electron 的人，去写原生客户端了。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1255681",
+    "published": "2026-11-10",
+    "uid": "dev_7c58a2b0"
+  },
+  {
+    "title": "为了和邻居拼山姆，他花一周做了个小程序",
+    "content": "作者小区里拼单靠微信群，接龙、算账、催取货全靠人肉，于是用 AI 手搓了「拼拼账单」：群友自己填物品、认领份数，大份商品可拆开拼，页面实时显示还差多少；运费和包装费能按人头或按金额分摊，账单自动生成；发起人一眼看到谁没付钱，到货还能一键通知。从学小程序到备案上线约一周，成本 30 元认证费，token 没算。",
+    "quote": "为了省 99 包邮，写了个小程序，这很程序员。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1255659",
+    "published": "2026-11-10",
+    "uid": "dev_f968080d"
+  },
+  {
+    "title": "在 Next.js 里塞一个只读 MCP server，踩完的坑",
+    "content": "作者做羽毛球拍比价站，顺手在同一个 Next.js 应用里挂了远程 MCP server，让人直接问 Claude 或 ChatGPT，不用翻四十个商品页。服务只读、三个工具、无鉴权：按画像推荐、按条件搜索、并排看参数，全部标 readOnlyHint。文章讲了路由放 /api/mcp 的接法、工具描述怎么写才让模型选对，以及无鉴权公开端点必须假设有人会乱刷，要在查询层做限流和参数校验。",
+    "quote": "只读、无鉴权，MCP 上线最容易翻车的就是这两点。",
+    "source": "Dev.to",
+    "url": "https://dev.to/padel_expertlab_ccb31265/what-i-learned-shipping-a-read-only-mcp-server-on-nextjs-and-vercel-265g",
+    "published": "2026-11-10",
+    "uid": "dev_68425751"
+  },
+  {
+    "title": "EarlyLore：开坑前先被 AI 泼一盆冷水",
+    "content": "用 Claude Code 两天搓出 MVP 之后，真正的坑是「没人愿意付钱」。EarlyLore 把 44.5 万款产品的真实流量与定价数据做成立项前的挑刺库：想开新坑先查同赛道有几家活着的竞品、自然流量多少、价位落在哪，而不是直接问 AI「这想法行不行」——因为模型只会顺着你夸。作者附了 V2EX 兑换码。",
+    "quote": "问 AI 想法行不行，等于问理发师要不要剪头。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1255546",
+    "published": "2026-11-10",
+    "uid": "dev_5b3ef1c6"
+  },
+  {
+    "title": "实测 2137 个承包商网站：手机端最缺的不是 AI 客服",
+    "content": "不靠问卷，直接数：从 OpenStreetMap 取 21 个州的水管、暖通、电工、屋顶等承包商网站，剔除打不开和被停放、挂马、按点击计费的域名，剩 2137 个，用 iPhone UA 在无头 Chrome 里逐页加载。结果 84% 有可点拨号，53% 有表单，只有 13% 能在线预约，75% 既不能聊天也不能发短信。文章还公开两次修正，正则误判把数据打回过原形。",
+    "quote": "移动端最贵的功能不是 AI 客服，是能点的电话号。",
+    "source": "Dev.to",
+    "url": "https://dev.to/nova_solutions/we-checked-2137-contractor-websites-on-a-phone-32i3",
+    "published": "2026-11-10",
+    "uid": "dev_d19ba70a"
+  },
+  {
+    "title": "DGX Spark 首启翻车：界面不报错，机器已经半残",
+    "content": "作者严格照 NVIDIA 官方教程用热点方式初始化 DGX Spark，向导一连网就自动下载完整系统镜像并升级；网络访问 NVIDIA 仓库受限时这一步失败，但界面没有任何提示。机器从此停在「看起来正常、实际半初始化」的状态：命令缺失、SSH 异常、服务起不来、NVIDIA Sync 连不上，最后只能重装。重装又踩了外设、UEFI 和启动盘一串坑，换了三种网络方案才跑通。",
+    "quote": "界面不报错，机器已经半残，这才最要命。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/kexxxfeng/p/23604499",
+    "published": "2026-11-10",
+    "uid": "dev_650319ee"
+  },
+  {
+    "title": "文件系统 MCP Server 怎么给 Agent 划边界",
+    "content": "文件系统 MCP server 把读写、列表、搜索、移动暴露给 Claude Code 或 Cursor，边界只有启动时的允许目录：只给项目目录，不给 home，并用 list_allowed_directories 核验。提示注入能把只读变成越权写入，写工具按需开放；符号链接在放行检查后才由系统解析，每次操作前重新解析真实路径；配工作区 git 和 tools/call 日志，就有可回滚审计链。",
+    "quote": "给 Agent 开目录权限，手一抖就是整台机器。",
+    "source": "Dev.to",
+    "url": "https://dev.to/scriptmasterlabs01/file-system-mcp-server-scope-agent-file-access-safely-9m6",
+    "published": "2026-11-10",
+    "uid": "dev_4d89713c"
+  },
+  {
+    "title": "在 Docker 里跑 NGINX，怎么才算「对的方式」",
+    "content": "跑起来只要一条命令，按生产标准来是另一回事：基于 nginx-unprivileged 以 uid 101 运行，故监听 8080 而非 80；构建期跑 nginx -t，配置写错直接失败；STOPSIGNAL SIGQUIT 让 docker stop 优雅退出；HEALTHCHECK 每 15 秒探 /healthz。加只读根文件系统、丢掉全部 capabilities、CPU 与内存限额。",
+    "quote": "能跑和能上线之间，隔着一条 HEALTHCHECK。",
+    "source": "Dev.to",
+    "url": "https://dev.to/mikegbenga/running-a-web-server-in-docker-the-right-way-codealpha-devops-internship-task-4-h2",
+    "published": "2026-11-10",
+    "uid": "dev_039a8fa7"
+  },
+  {
+    "title": "Redis 分布式锁的七个坑：从 setnx 到 Redlock",
+    "content": "2026 年了，GitHub 上搜 setnx 出来的示例仍有九成不能上生产：忘了过期时间、value 不带 UUID 导致误删别人的锁、把 Redlock 部署在同一台 Redis 上假装高可用。作者按八年电商与支付后台的经验把坑归成七类，从加锁原子性、续期看门狗、主从切换丢锁，到锁粒度与超时设置，逐条给出正确写法和失效场景。",
+    "quote": "锁没设过期时间，等于给系统埋了个定时器。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/uniqueDong/p/23604187",
+    "published": "2026-11-10",
+    "uid": "dev_848ac9eb"
+  },
+  {
+    "title": "工具调用：让 Agent 从「说」到「做」的那双手",
+    "content": "这篇把 tool use 拆得很直白：开发者用 JSON Schema 定义工具名、用途、参数和返回；模型只输出「我要调哪个函数、参数是什么」；真正执行的是宿主代码；结果再写回上下文，进入下一轮推理。作者强调模型不直接动手，所以能力边界等于你给的工具体系，安全阀也在宿主手里。工具设计要给准名字、严 Schema、粒度适中，返回值要做成模型友好的结构化摘要。",
+    "quote": "模型只负责动嘴，真动手的还是你的代码。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/yudanqu/p/23606886",
+    "published": "2026-11-10",
+    "uid": "dev_7e705886"
+  },
+  {
+    "title": "torch.cuda.is_available() 一直是 False，先别重装驱动",
+    "content": "GPU 用不上别急着重装驱动。作者给出三层断点定位法，按概率排序排查：最常见是 pip 装成了 +cpu 的轮子；最隐蔽是 CUDA_VISIBLE_DEVICES 被设成 -1，进程看得到卡却零报错地用 CPU；驱动与 CUDA 版本不匹配放最后查。一条 cuda_doctor 命令直接告诉你断在哪一层，省掉反复卸载重装的半小时。",
+    "quote": "零报错地退回 CPU，才是最难查的那种故障。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/dawudexiaowu/p/23598740",
+    "published": "2026-11-10",
+    "uid": "dev_ddb86b75"
+  },
+  {
+    "title": "单模型 Agent 配置的工程化：四档思考、权限顺序与静态校验",
+    "content": "只留一个 deepseek-flash，agent 之间的差异全靠 thinking tier 表达：11 月把思考档从三档扩到四档，重排各 agent 的档位，并在默认档之外提供 #max。配套三条工程约束：agent 级权限不得放宽全局默认、权限按「全局→agent→工具」顺序合并、配置加载时做静态校验，把「谁在什么档位能调什么工具」变成启动期就能发现的问题。",
+    "quote": "配置错误要在启动时报，不要等线上炸。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/znlgis/p/23603140",
+    "published": "2026-11-10",
+    "uid": "dev_4e3f8828"
+  }
 ]
