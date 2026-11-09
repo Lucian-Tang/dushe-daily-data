@@ -1,0 +1,128 @@
+[
+ {
+  "title": "同一块 H100，时租 2.69 美元还是 12.29 美元",
+  "content": "有人把 AWS、Azure 和 neocloud 的按需 GPU 报价折算成每 GPU 每小时：H100 SXM 80GB 在 RunPod Community 是 2.69 美元，Azure ND96isr_H100_v5 要 12.29 美元，差价 4.57 倍；一个月账单 1,964 对 8,972 美元。按同型号同显存分组后，便宜那档让掉的是 InfiniBand、SLA 和合规。",
+  "quote": "同一块芯片，差价 4.57 倍，云厂商的算盘真响。",
+  "source": "HN Front Page",
+  "url": "https://github.com/datareceipts/data-receipts/tree/main/109-gpu-pricing",
+  "published": "2026-11-10",
+  "uid": "dev_0ff049a5"
+ },
+ {
+  "title": "malloc 到底在干什么：一千次分配只两次系统调用",
+  "content": "作者用 strace 拆 glibc 的 malloc：连续 malloc(16) 一千次，内核只收到两次 brk，第一次问堆顶在哪，第二次把堆拉大 132 KiB，剩下 999 次都从这块地里切。空系统调用实测 575 纳秒，所以 libc 必须自己记账；文中还写了个基于 sbrk 的 bump allocator，并解释进程地址空间里那 23.4 TiB 的空洞为什么不吃物理内存。",
+  "quote": "内存不是凭空来的，是内核先给你画了块地。",
+  "source": "HN Front Page",
+  "url": "https://benmandrew.com/articles/what-is-malloc-doing-anyway",
+  "published": "2026-11-10",
+  "uid": "dev_96e1fed5"
+ },
+ {
+  "title": "ChatGPT 桌面版把你的 SSH agent 转发进了远程机器",
+  "content": "HN 上的安全问题：ChatGPT 桌面版会把本机 SSH agent 转发到它连接的远程机器，于是跑在远端的 agent 可以直接用你的本地密钥完成认证，比如往你的私有 GitHub 仓库推送代码。发帖人附了 openai/codex 的 PR 作为证据，讨论集中在「为了少配一次密钥，把整条信任链交出去」这件事上——远程主机一旦被攻破，拿到的不只是会话，还有你所有免密登录。",
+  "quote": "图方便开的门，最后通向你的私有仓库。",
+  "source": "HN Front Page",
+  "url": "https://news.ycombinator.com/item?id=50422628",
+  "published": "2026-11-10",
+  "uid": "dev_e447331a"
+ },
+ {
+  "title": "借一个微软签名的 shim，绕过企业机器上的 Secure Boot",
+  "content": "p3ng0s 作者复盘 Secure Boot：微软 UEFI CA 2011 给 Ubuntu、Debian、Fedora 等系统签 shim，shim 遇到不认识的签名会进 MOK 界面让你选密钥。攻击者拿现成的 shim-signed 包，生成自己的 MOK 密钥给内核签名，就能在开着 Secure Boot 的企业硬件上启动自制系统。它防的是 EFI 恶意软件持久化，不防能碰到机器的人。",
+  "quote": "安全启动挡的是 EFI 病毒，不是拿电脑的人。",
+  "source": "HN Front Page",
+  "url": "https://leosmith.wtf/blog/not-so-secure-boot.html",
+  "published": "2026-11-10",
+  "uid": "dev_3657451b"
+ },
+ {
+  "title": "「我看到了你的 HN 评论」——AI 冷邮件的新套路",
+  "content": "作者让 Claude 翻了自己 2013 年以来收到的所有读者邮件，验证一个直觉：以前是认真讨论，现在几乎全是销售线索。套路很统一——引用你某条真实 HN 评论，夸两句，再抛一个开放式问题；你认真回上三段，对方下一封就开始「这正是我们在做的产品」。他点出关键：LLM 让批量伪造「个性化」变得几乎零成本，而这种伪装成提问的 outreach 正在毁掉开发者之间少有的直接交流。",
+  "quote": "以前收到邮件是缘分，现在全是销售漏斗。",
+  "source": "HN Front Page",
+  "url": "https://joshstrange.com/2026/11/09/i-saw-your-hn-comment/",
+  "published": "2026-11-10",
+  "uid": "dev_aa4f4799"
+ },
+ {
+  "title": "anthropics/skills 冲到 19 万星：Agent 的说明书成了公共设施",
+  "content": "Anthropic 把内部 Skill 实现公开：每个 Skill 是一个文件夹，里面放 SKILL.md、脚本和资源，Claude 按需加载，把某类任务做成可复用流程。仓库有文档、测试、MCP 生成等示例，也放出了支撑 Claude 文档能力的 docx、pdf、pptx、xlsx 四个生产级 Skill，均 Apache 2.0。19 万星背后是个朴素需求：让 Agent 按同一份说明书干活。",
+  "quote": "19 万星，说明大家都缺一份写得清楚的说明书。",
+  "source": "GitHub Trending Daily",
+  "url": "https://github.com/anthropics/skills",
+  "published": "2026-11-10",
+  "uid": "dev_39eabf1e"
+ },
+ {
+  "title": "GBrain 拿了 3.2 万星：给 Agent 一个你能控制的大脑",
+  "content": "GBrain 的定位是「给你已经在用的 Agent 一份自己掌控的记忆」：存带出处的事实，支持更正和撤回，同一份记忆可给多个 Agent 共用。默认无需 API key，走关键词检索，需要时再加语义搜索和后台补充；MIT 协议，可自托管，也能用一条命令通过 MCP over Tailscale 暴露给云端 Agent。",
+  "quote": "记忆归谁管，比记忆有多强重要得多。",
+  "source": "GitHub Trending Daily",
+  "url": "https://github.com/garrytan/gbrain",
+  "published": "2026-11-10",
+  "uid": "dev_91f11d82"
+ },
+ {
+  "title": "RuView 用 WiFi 信号隔墙看人：呼吸心率都能测",
+  "content": "RuView 拿 ESP32 采集 WiFi 的 CSI，把人体对无线电的扰动还原成空间信息：隔墙检测存在与人数、无接触测呼吸和心率、识别跌倒，甚至从 CSI 估 17 个人体关键点，全程不装摄像头。它自带 Home Assistant、Matter、HomeKit 桥接，本地跑自动化，也提供模型训练和 AI 运维工具。README 老实承认部分精度指标仍基于合成数据，需要真实场景验证。",
+  "quote": "没摄像头也能看穿墙，这次隐私是真裸奔。",
+  "source": "GitHub Trending Daily",
+  "url": "https://github.com/ruvnet/RuView",
+  "published": "2026-11-10",
+  "uid": "dev_62527b97"
+ },
+ {
+  "title": "6.8 万星的股票分析系统：零成本定时跑，推送到六个 IM",
+  "content": "daily_stock_analysis 是套 LLM 驱动的多市场自选股分析：覆盖 A 股、港股、美股、日股、韩股、台股，聚合多源行情和实时新闻，每天生成「决策仪表盘」推到企业微信、飞书、Telegram、Discord、Slack 或邮箱。项目用 Python 写，带 Docker 和 GitHub Actions，可以完全靠免费额度定时跑，不用自己养服务器。",
+  "quote": "炒股赚不赚钱不知道，至少推送很准时。",
+  "source": "GitHub Trending Daily",
+  "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+  "published": "2026-11-10",
+  "uid": "dev_ec14e902"
+ },
+ {
+  "title": "Cyber API：Rust + GPUI 写的原生 API 调试客户端",
+  "content": "V 友开源了 Cyber API，定位是 Postman/Insomnia 的原生替代：底层 Rust，UI 用 Zed 同款 GPUI 渲染引擎，每个像素由 GPU 直接画，主打 60 FPS 和低内存，明确对着 Electron 方案的卡顿开火。同一份代码可以构建桌面端，项目已放到 GitHub，作者在帖子里征集试用反馈。评论区照例分成两派：一派嫌生态不够，一派说光是不卡就值了。",
+  "quote": "又一个受不了 Electron 的人，去写原生客户端了。",
+  "source": "V2EX Share",
+  "url": "https://www.v2ex.com/t/1255681",
+  "published": "2026-11-10",
+  "uid": "dev_a5141cd1"
+ },
+ {
+  "title": "为了和邻居拼山姆，他花一周做了个小程序",
+  "content": "作者小区里拼单靠微信群，接龙、算账、催取货全靠人肉，于是用 AI 手搓了「拼拼账单」：群友自己填物品、认领份数，大份商品可拆开拼，页面实时显示还差多少；运费和包装费能按人头或按金额分摊，账单自动生成；发起人一眼看到谁没付钱，到货还能一键通知。从学小程序到备案上线约一周，成本 30 元认证费，token 没算。",
+  "quote": "为了省 99 包邮，写了个小程序，这很程序员。",
+  "source": "V2EX Share",
+  "url": "https://www.v2ex.com/t/1255659",
+  "published": "2026-11-10",
+  "uid": "dev_e598a4ed"
+ },
+ {
+  "title": "在 Next.js 里塞一个只读 MCP server，踩完的坑",
+  "content": "作者做羽毛球拍比价站，顺手在同一个 Next.js 应用里挂了远程 MCP server，让人直接问 Claude 或 ChatGPT，不用翻四十个商品页。服务只读、三个工具、无鉴权：按画像推荐、按条件搜索、并排看参数，全部标 readOnlyHint。文章讲了路由放 /api/mcp 的接法、工具描述怎么写才让模型选对，以及无鉴权公开端点必须假设有人会乱刷，要在查询层做限流和参数校验。",
+  "quote": "只读、无鉴权，MCP 上线最容易翻车的就是这两点。",
+  "source": "Dev.to",
+  "url": "https://dev.to/padel_expertlab_ccb31265/what-i-learned-shipping-a-read-only-mcp-server-on-nextjs-and-vercel-265g",
+  "published": "2026-11-10",
+  "uid": "dev_686bc207"
+ },
+ {
+  "title": "DGX Spark 首启翻车：界面不报错，机器已经半残",
+  "content": "作者严格照 NVIDIA 官方教程用热点方式初始化 DGX Spark，向导一连网就自动下载完整系统镜像并升级；网络访问 NVIDIA 仓库受限时这一步失败，但界面没有任何提示。机器从此停在「看起来正常、实际半初始化」的状态：命令缺失、SSH 异常、服务起不来、NVIDIA Sync 连不上，最后只能重装。重装又踩了外设、UEFI 和启动盘一串坑，换了三种网络方案才跑通。",
+  "quote": "界面不报错，机器已经半残，这才最要命。",
+  "source": "博客园 Cnblogs",
+  "url": "https://www.cnblogs.com/kexxxfeng/p/23604499",
+  "published": "2026-11-10",
+  "uid": "dev_63585961"
+ },
+ {
+  "title": "工具调用：让 Agent 从「说」到「做」的那双手",
+  "content": "这篇把 tool use 拆得很直白：开发者用 JSON Schema 定义工具名、用途、参数和返回；模型只输出「我要调哪个函数、参数是什么」；真正执行的是宿主代码；结果再写回上下文，进入下一轮推理。作者强调模型不直接动手，所以能力边界等于你给的工具体系，安全阀也在宿主手里。工具设计要给准名字、严 Schema、粒度适中，返回值要做成模型友好的结构化摘要。",
+  "quote": "模型只负责动嘴，真动手的还是你的代码。",
+  "source": "博客园 Cnblogs",
+  "url": "https://www.cnblogs.com/yudanqu/p/23606886",
+  "published": "2026-11-10",
+  "uid": "dev_8a07aa2e"
+ }
+]
