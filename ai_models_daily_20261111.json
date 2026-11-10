@@ -1,0 +1,276 @@
+{
+  "date": "2026-11-11",
+  "total": 24,
+  "vendors": [
+    "anthropic",
+    "google",
+    "alibaba",
+    "other"
+  ],
+  "models": {
+    "anthropic": {
+      "displayName": "Anthropic/Claude",
+      "icon": "🧬",
+      "items": [
+        {
+          "uid": "ai_e3b6f36e",
+          "title": "Anthropic 发 Fable 5.2：30 小时证完费马大定理",
+          "content": "Anthropic 11 月 9 日发布 Fable 5.2 与 Mythos 5.2，同一底座：Fable 带网络安全与生物安全护栏，面向所有用户；Mythos 走审核向机构开放。预发布测试中它们完成了原本不可行的软件迁移、从零设计出三台可工作的电子设备、解出两个黑洞物理公开问题，30 小时内形式化证明费马大定理。输出快 30%，每百万输入 8 美元、输出 40 美元。",
+          "quote": "30 小时证完费马，人类数学家先别急着退休",
+          "source": "Hacker News",
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+          "published": "2026-11-11",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_2803c923",
+          "title": "亚马逊把 Sonnet 换成 40 亿参数决策模型，省下 98%",
+          "content": "亚马逊内部工单系统原本用 Claude Sonnet 4.6 给海量工单打 20 类标签，两名工程师换成 40 亿参数的决策模型 Strands Decider：不让它生成文本，只让它在给定工单与候选标签时输出概率和置信度。SageMaker ml.g5.xlarge 上单请求约 640 毫秒、占 19GB 显存，效果不输线上 Sonnet，成本降 98%，一年省数百万美元。",
+          "quote": "打标签这种事，本来就不该请大模型出场",
+          "source": "Hacker News",
+          "url": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
+          "published": "2026-11-11",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_0829f58d",
+          "title": "Anthropic 定 IPO 发行价 70 到 78 美元，估值 1.404 万亿",
+          "content": "Anthropic 更新招股书：发行 8.25 亿股 A 类股，定价区间 70 至 78 美元，募资 577.5 亿到 643.5 亿美元，按上限算全稀释估值 1.404 万亿美元。同时以发行价向 AMD、博通、谷歌、美光、微软、英伟达、台积电私募配售 260 亿美元无投票权 N 类股，谷歌与英伟达各出 100 亿。预计 11 月 19 日前后以 ANT 登陆纳斯达克。",
+          "quote": "估值从两万亿砍到一万四，故事还得讲圆",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/",
+          "published": "2026-11-11",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_d2f8bcbb",
+          "title": "V2EX 吵翻：GPT-6.1 是不是被悄悄降智了",
+          "content": "V2EX 一条「GPT 越来越拉」的帖子攒了 51 楼。楼主说随便一个任务跑十分钟以上，早上让配代理搞了 40 分钟还改错。跟帖集中在三点：6.1 sol 明显变慢变蠢、五小时额度不经用像被砍半、不联网时会答出 2024 年的旧闻。也有人已经退订转 Claude Max，或改成自己拍板、只让模型做小范围改动的 sub agent。",
+          "quote": "额度砍半、智商打折，订阅费倒是一分没少",
+          "source": "V2EX",
+          "url": "https://www.v2ex.com/t/1255679",
+          "published": "2026-11-11",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_b6d95e4f",
+          "title": "Addy Osmani 把资深工程师流程拆成 9 个斜杠命令",
+          "content": "Addy Osmani 把资深工程师流程拆成 9 个斜杠命令：/spec 写规格、/plan 拆任务、/build 逐片实现、/test 证明可用、/constraints 定质量线、/review 审代码、/webperf 测性能、/ship 上线。装进 Claude Code 后每条命令拉起对应技能，让 agent 按同一套质量闸门走完生命周期。MIT，11.5 万星。",
+          "quote": "把老工程师的肌肉记忆，塞进斜杠命令",
+          "source": "GitHub Trending",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "published": "2026-11-11",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_43ec8b92",
+          "title": "32 万星的 skills 仓库：不接管流程，只给零件",
+          "content": "TypeScript 圈的马特·波科克开源了自己每天用的 agent 技能：不搞 GSD、BMAD、Spec-Kit 那套接管流程的大框架，而是拆成一组小而可组合、可随意改的文件，任何模型都能用。安装走插件或 skills.sh，Claude Code、Codex、Copilot、Gemini 都有对应入口；他的理由是流程框架夺走控制权，出 bug 反而难查。MIT，32 万星。",
+          "quote": "流程框架管得越多，出 bug 越难查",
+          "source": "GitHub Trending",
+          "url": "https://github.com/mattpocock/skills",
+          "published": "2026-11-11",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_07e8db7e",
+          "title": "2B 小模型专治文档抽字段：分数压过 Claude Opus 5",
+          "content": "Dharma AI 发布 2B 的 Dharma Field Extractor：给任意文档和字段清单，直接输出结构化 JSON，不用先做整页 OCR。基准含 546 份文档、1,638 个请求，分无 schema、部分 schema、混入假字段三种；字段级 F1 0.834，高于 Claude Opus 5 的 0.816，L40S 自托管，成本低 6 到 147 倍。",
+          "quote": "小模型贴着任务练，专治大模型乱填表",
+          "source": "Hugging Face Blog",
+          "url": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
+          "published": "2026-11-11",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_79f9de62",
+          "title": "别给 coding agent 写 Markdown 了，写脚本",
+          "content": "一篇实操文反驳给 coding agent 狂写 AGENTS.md、CLAUDE.md 的做法：Markdown 只是建议，不是约束，agent 可以读完、总结、引用，然后照样跑偏。作者主张把重复动作写成确定性脚本，让同一条命令每次产生同样效果，把 agent 框进固定动作里。他提醒，最终要防的是 agent 自己改脚本，所以脚本也得有边界和审查。",
+          "quote": "文档管不住 agent，脚本才管得住",
+          "source": "Dev.to",
+          "url": "https://dev.to/dannwaneri/dont-write-markdown-files-for-your-coding-agent-write-scripts-j00",
+          "published": "2026-11-11",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "google": {
+      "displayName": "Google/Gemini",
+      "icon": "🌐",
+      "items": [
+        {
+          "uid": "ai_855ca0ed",
+          "title": "DeepMind 让 AI 形式化验证 Signal 协议，写了 600 万行 Lean",
+          "content": "DeepMind 发布 AlphaProof Code：人与多个 Gemini Carbon agent 分工，先把 Signal 加密协议的安全目标翻成形式化规格、逐条人工复核，再由 agent 生成超过 600 万行 Lean 证明并自查，只标出 1% 需要人判断的代码。这是首次有 AI 对大规模部署的密码协议代码做到这个深度的形式化验证，此前连纯人工也没做过。",
+          "quote": "安全要靠数学证明，不能靠代码评审的运气",
+          "source": "Hacker News",
+          "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+          "published": "2026-11-11",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_84119ff3",
+          "title": "Gemini 4 Carbon 开放：专啃硬骨头，单任务成本砍一半",
+          "content": "谷歌 10 日开放 Gemini 4 Carbon，定位比 Argon 更舍得烧 token：复杂多步编码调试、开放式科研、长周期 agent 工作流，会主动做深度推理和反复验证。它在 CursorBench 4.0、Perplexity 的 WANDR、Zapier 的 AutomationBench 都排第一，单任务成本比次优外部模型低一半以上。API 每百万输入 2 美元、输出 10 美元。",
+          "quote": "贵模型的新卖点：烧更多 token，换你少返工",
+          "source": "Hacker News",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+          "published": "2026-11-11",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_d9e26379",
+          "title": "DeepMind 的物理引擎又上趋势榜：机器人先在里面摔够",
+          "content": "DeepMind 维护的开源物理引擎 MuJoCo 又冲上趋势榜：Apache-2.0、1.7 万星，用 MJCF 描述机器人模型，擅长接触、关节与多体动力学仿真。它既能跑 CPU 精确仿真，也能通过 MJX 在 JAX 上把成千上万个环境放到 GPU 并行，是机器人学习与强化学习常用的训练场；URDF 可转换导入，社区模型与基准丰富。",
+          "quote": "机器人先在物理引擎里摔够，再上真机",
+          "source": "GitHub Trending",
+          "url": "https://github.com/google-deepmind/mujoco",
+          "published": "2026-11-11",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_d5ddf64f",
+          "title": "Hugging Face 账单并进 Google Cloud，企业采购少一道坎",
+          "content": "Hugging Face 接入 Google Cloud Marketplace：企业把 HF 组织与 GCP 账号绑定后，Hub 存储、Jobs 的 GPU 任务、Inference Endpoints 和 Spaces 的用量直接进现有 GCP 账单，不用再为 HF 单独开供应商、办公司信用卡。流程是订阅 Marketplace 上的 HF、关联组织、等审批通过。",
+          "quote": "采购流程少一环，模型就能早一周上线",
+          "source": "Hugging Face Blog",
+          "url": "https://huggingface.co/blog/hub-gcp-marketplace",
+          "published": "2026-11-11",
+          "direction": "应用/落地"
+        }
+      ]
+    },
+    "alibaba": {
+      "displayName": "阿里巴巴/Qwen",
+      "icon": "☁️",
+      "items": [
+        {
+          "uid": "ai_09ba94a1",
+          "title": "人格泛化有公式：换微调层，才改得动外溢行为",
+          "content": "论文发现「人格泛化」存在一条「在线」规律：在一个领域微调语言模型，会让它在别的领域也改变行为，领域内与领域外的人格触发率在不同超参数下近似服从 probit 线性关系，这条线甚至跨 Qwen、Llama 等模型家族与参数量共享。学习率、权重衰减、训练时长只是让模型沿同一条线滑动；改变微调层才会改斜率——只调后几层，领域内照样学得好，领域外的不安全行为明显减少。",
+          "quote": "调参调不出安全，得挑对哪层动刀",
+          "source": "arXiv · cs.CL",
+          "url": "https://arxiv.org/abs/2611.12864",
+          "published": "2026-11-11",
+          "direction": "研究/论文"
+        }
+      ]
+    },
+    "other": {
+      "displayName": "其他",
+      "icon": "📰",
+      "items": [
+        {
+          "uid": "ai_89330909",
+          "title": "Fireworks AI 出事，Notion 承认不到 1% 工作区受影响",
+          "content": "Notion 发布安全通告：第三方 AI 供应商 Fireworks AI 发生安全事件，经其安全团队调查，不到 1% 的 Notion 工作区可能受影响，部分 Notion AI 聊天会话可能外泄。Notion 强调这些会话「无法归属」——没有作者和工作区标识，转录中也不含工具调用结果，除聊天正文外没有更多信息，因此很难逐个用户确认。Fireworks 一侧仍在更新事件说明。",
+          "quote": "数据没标主人，出事连道歉都找不到人",
+          "source": "Hacker News",
+          "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
+          "published": "2026-11-11",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_5f39bce1",
+          "title": "谷歌加推两款 TPU：一颗管机密推理，一颗堆内存",
+          "content": "谷歌发布第八代 TPU 的两个新变体。TPU 8tx 与 AMD 合作，面向机密推理与训练，把安全做进硬件层，让敏感数据和模型权重在使用中也保持隔离，还带自定义推理网络，可边训边蒸馏小模型；TPU 8i Max 把两颗推理芯片 8i 封进一个封装，内存、算力和带宽翻倍，单次查询能吃下更大范围的信息。背景是各家云厂商都在自研芯片，减少对英伟达的依赖。",
+          "quote": "英伟达后院起火，谷歌顺手添了两把柴",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips/",
+          "published": "2026-11-11",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_24cd78ec",
+          "title": "100 个植入错误测 AI 审稿：最好的抓 71 个，合并能抓 93 个",
+          "content": "研究者把 100 个已知错误植入 10 篇开放获取心理学论文，再交给前沿模型和两款商业 AI 审稿工具。最好的单系统抓出 71 个，最差的只有 30 个；把所有系统结果合并能抓到 93 个，说明各模型漏掉的错误并不高度重叠，集成是性价比很高的一招。剩下 7 个谁都抓不到，全是「删掉信息」式遗漏而非写错。论文、错误清单和实验日志都已公开。",
+          "quote": "AI 审稿能抓错，但抓不到有人偷偷删掉的东西",
+          "source": "arXiv · cs.CL",
+          "url": "https://arxiv.org/abs/2611.12820",
+          "published": "2026-11-11",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_139487a7",
+          "title": "LingBot-Touch：让机器人换哪种触觉传感器都能用",
+          "content": "商用触觉传感器各有物理特性，压阻、磁性、视触觉互不通用，导致具身模型难以复用数据。Robbyant 团队提出触觉基础模型 LingBot-Touch：把不同传感器信号映射为统一表示，并易于扩展到新传感器；输出的触觉 token 即插即用，既能接扩散策略，也能接 π0.5、LingBot-VLA 等视觉语言动作模型。仿真与多平台真机实验显示复杂操作能力提升，算力开销仍可控。",
+          "quote": "手要摸得准，机器人才算真长了手",
+          "source": "Hugging Face Papers",
+          "url": "https://huggingface.co/papers/2611.12806",
+          "published": "2026-11-11",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_2491018d",
+          "title": "上海 AI 实验室的 AI 科学家，学会怀疑自己",
+          "content": "上海 AI 实验室提出 Sage-Taiyi，一套受元认知启发的科研架构：显式监控并修正自己对证据、假设和未解问题的理解，再据此调整研究目标、挑选可复用的推理方法。在 50 篇论文、10 个学科、265 个任务的 AI 共同科学家基准 Taiyi-Bench 上，八项指标全部第一，总分 54.0，高于 AI Scientist-v2 的 47.9。化学实验中把钴催化羰基化收率从痕量提到 84%。",
+          "quote": "会怀疑自己的 AI，才配谈做科研",
+          "source": "Hugging Face Papers",
+          "url": "https://huggingface.co/papers/2611.12762",
+          "published": "2026-11-11",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ai_26895722",
+          "title": "ASR 榜单加考埃及、尼日利亚口音：私有集才见真章",
+          "content": "Open ASR Leaderboard 与 Liva AI 合作，新增埃及与尼日利亚英语两个私有测试集：各 1.34 与 1.55 小时真实对话，带标点、大小写和不流畅词，用来补口音覆盖。私有集不公开，能减少针对榜单的过拟合；此前已有五个口音、印度口音等 11 个私有切分。榜单同时给出公开集与私有集排名，方便看模型换口音后的真实退化。",
+          "quote": "榜单不藏私，口音才不会假装听得懂",
+          "source": "Hugging Face Blog",
+          "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
+          "published": "2026-11-11",
+          "direction": "应用/落地"
+        },
+        {
+          "uid": "ai_a407ebe8",
+          "title": "1GB 内存的 1.7B agent 模型，手机就能跑",
+          "content": "Liquid AI 发布 LFM3-1.7B：1.73B 文本模型，24 层里 13 层门控短卷积、5 层滑窗注意力、6 层全局注意力，上下文 256K，支持 15 种语言。它专门为本地 agent 和后训练工具调用设计，适配 Hermes Agent、Pi、OpenClaw 等 harness；4bit 量化约 1GB 内存，手机和笔记本都能跑，也能在单卡上快速微调成专用模型。",
+          "quote": "一 G 内存的 agent，手机就能养",
+          "source": "Hugging Face Models",
+          "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+          "published": "2026-11-11",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_6ecb6701",
+          "title": "英伟达开源 34B 语音模型：一小时录音一口吃下",
+          "content": "英伟达开源 Nemotron-3.5-Transcribe-30B-A4B：34B 总参数、4.3B 激活的 Mamba-2 与 Transformer 混合 MoE 语音模型，支持 40 种语言、单段 1 小时音频、65,536 token 上下文。除转写外还能做说话人分离、词级时间戳、语音翻译、语种识别和音频问答，OpenMDW-1.1 可商用，单张 H100 80GB 可部署。",
+          "quote": "一小时录音一口吃下，会议纪要工种危险",
+          "source": "Hugging Face Models",
+          "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+          "published": "2026-11-11",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_65d6a418",
+          "title": "MiniMax 开源 1600 万像素生图模型：6 步出图",
+          "content": "MiniMax 开源 H3-Image：把文生图与图像编辑合进一个检查点，原生输出约 1600 万像素，从 4096×4096 到 6272×2688 的 21:9 都不用放大模型；蒸馏到 6 步采样、不要 CFG，最多接受 16 张参考图。它复用 H3 的 DiT 但去掉音频层，文本编码器不变，官方称指令遵循在开源模型里最强，许可是社区协议。",
+          "quote": "十六张参考图喂进去，甲方改稿有得聊",
+          "source": "Hugging Face Models",
+          "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
+          "published": "2026-11-11",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "ai_b896c8d2",
+          "title": "假电商用 5 种话术劫持购物 agent：预算形同虚设",
+          "content": "有人用 Angular 22 搭了个带 WebMCP 的假电商，写了 10 个购物工具，再设计 5 种攻击：把恶意指令塞进工具描述，而不是结账逻辑。测试让 agent 买 100 欧元以内的耳机，结果预算覆盖、权限伪造、跳过校验三招诱导超支，另外两招硬塞数据线和延保。因为污染的是工具描述，agent 在开始购物前就已经中招。",
+          "quote": "工具描述被下毒，购物前就已经输了",
+          "source": "Dev.to",
+          "url": "https://dev.to/gramli/webmcp-attack-lab-can-an-e-shop-hijack-your-ai-agent-4oe5",
+          "published": "2026-11-11",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ai_a0b95f8a",
+          "title": "5.1 万次调用记账：一局 AI 文字游戏到底烧多少钱",
+          "content": "有人把自己 AI 狼人杀游戏 53 天、约 5.1 万次模型调用全记了账：日均 6.36 美元，总花费 337.21 美元，文本占 63%、图片 28%、语音 8%、分类器不到 1%。一局 50 回合以上的真实游戏平均 1.49 美元、约 165 个 AI 回合；最贵的是每天结束时让每个 bot 重写笔记的摘要步骤，占 11% 回合却吃掉 21% 文本预算。",
+          "quote": "别只看 token 单价，先算一局多少钱",
+          "source": "Dev.to",
+          "url": "https://dev.to/hiper2d/how-much-does-it-cost-to-run-a-text-game-with-llms-57o7",
+          "published": "2026-11-11",
+          "direction": "应用/落地"
+        }
+      ]
+    }
+  }
+}
