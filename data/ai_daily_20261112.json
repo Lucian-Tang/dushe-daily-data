@@ -1,0 +1,182 @@
+[
+  {
+    "title": "苹果憋了个 Harbor：把 Mac 变成私有 AI 推理服务器",
+    "content": "9to5Mac 从系统文件里挖出苹果新应用 Harbor：把 Mac 变成私有 AI 推理服务器，在 Apple silicon 上跑开放权重模型，数据不出硬件、不进云。两台以上支持雷雳 5 的 Mac 能自动组集群、合并统一内存，跑单机扛不住的大模型和高并发。卖点是几分钟装好、不用命令行，应用内直接浏览下载模型。",
+    "quote": "苹果终于承认，本地跑模型才是卖点",
+    "source": "Hacker News",
+    "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
+    "published": "2026-11-12",
+    "uid": "0b3f875d0d4294f94e58a39c74ba41ae"
+  },
+  {
+    "title": "八小时 agent 炫技，不如两分钟线性规划",
+    "content": "MIT 那篇《权重空间编程》里，GPT-6 Astra 花约 8 小时、28 次前向，给 Qwen3.5-0.8B 修好思维死循环，只改 0.016% 权重，MATH-500 从 7.9% 升到 48.1%。博主发现它其实在人工试错地解一个线性规划：换成两次各约一分钟的 LP 求解，效果相同，改动权重还少 8 倍。真正起作用的，可能只是一个转向向量。",
+    "quote": "agent 绕八小时，不如解个线性规划",
+    "source": "Hacker News",
+    "url": "https://nathan.rs/posts/weight-space-lp/",
+    "published": "2026-11-12",
+    "uid": "779f11a4a54e31dcc7e6f44d4527fdd0"
+  },
+  {
+    "title": "OpenAI 季度营收首次破 100 亿美元，年化 500 亿",
+    "content": "彭博称 OpenAI 季度营收首次突破 100 亿美元，比二季度的 67 亿涨近 50%，增速从 18% 明显回升；调整后经营利润率从 -150% 收窄到 -109%，年化收入约 500 亿美元。拉动来自更狠的定价与折扣、模型变强，以及转向企业与 agent 产品。对手 Anthropic 三季度收入 170 亿美元，正冲 1.4 万亿估值的 IPO。",
+    "quote": "涨得挺猛，亏损照旧，这生意真费钱",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time/",
+    "published": "2026-11-12",
+    "uid": "b577d6b06f32358e6bb6761c381bd6c5"
+  },
+  {
+    "title": "Databricks 的新 agent，专门告诉 CEO 难听的真话",
+    "content": "Databricks 升级 Genie：靠自建本体论拿到客户数据里的上下文，能接多步骤长任务并无人监督跑完。CEO Ghodsi 演示的是自己真在用的那个——分析员工满意度调查里得分差的部分、否掉高管提的整改方案、复盘一场谈崩的销售、准备播客提纲。他的理由是公司 1.2 万人，早过了邓巴数，老板听不到真话。",
+    "quote": "老板最需要的 AI 功能：敢说真话",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth/",
+    "published": "2026-11-12",
+    "uid": "a12c5f3d8f2dcc714a62a3902d89da73"
+  },
+  {
+    "title": "V2EX 吵了 189 楼：大模型千千万，为什么非要用 Claude",
+    "content": "V2EX 一条「大模型千千万，为什么非要用 Claude」攒了 189 楼。楼主不理解：GPT、Gemini、Grok 和 Qwen、DeepSeek、GLM、Kimi、豆包都能选，为什么偏要买「敌意这么大」的 Claude——动不动封号，钱也不退。这条能吵起来，说明大家不是不知道有替代品，而是被工作流和习惯绑住了。",
+    "quote": "封号不退钱，还得夸它好用，图啥",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1256081",
+    "published": "2026-11-12",
+    "uid": "e16446e5463ea3e56025baf88e14d47d"
+  },
+  {
+    "title": "126 万条盲投票：不是 AI 变笨，是人变挑了",
+    "content": "研究者用 Chatbot Arena 的 126 万条盲投票（2023 年 5 月至 2024 年 8 月），只看版本固定的模型对：同一对模型不变，「俩都不行」的比例平均每月涨 1.71 个百分点，2024 年涨 1.91 个百分点，从 15.5% 升到 23.3%，观察到的 14 对无一例外。同期模型排名几乎不动。结论：不是模型退步，是人的标准在涨。",
+    "quote": "不是模型退步，是你胃口被养刁了",
+    "source": "arXiv · cs.CL",
+    "url": "https://arxiv.org/abs/2611.14333",
+    "published": "2026-11-12",
+    "uid": "a243ca5206da383fbb2fdb5eceea7bdd"
+  },
+  {
+    "title": "29M 参数的流式识别，抢在你说完前出字",
+    "content": "现有流式语音识别要等说话人把词说完才输出，通常晚 90 到 400 毫秒，语音 agent 只能干等。Earlybird 只有 2900 万参数（4 比特量化后 16.8MB），训练时把音频随机截断、词说到一半也切，要求它把此刻该出的词全猜出来、再预判后两个词。干净有声书上，中位词比人说完提前 90 毫秒出，六个测试集全面领先。",
+    "quote": "抢回 90 毫秒，语音助手才不像在发呆",
+    "source": "arXiv · cs.CL",
+    "url": "https://arxiv.org/abs/2611.14421",
+    "published": "2026-11-12",
+    "uid": "428fec1ca1cc5b7a46b9c48dcfc403ad"
+  },
+  {
+    "title": "WICL：机器人把技能写进上下文，而不是权重",
+    "content": "训练出来的操作策略把技能焊进权重，换个场景就水土不服；上下文学习不受这个限制，却一直打不过训练策略，因为别处录的示范不带当前世界的反馈。ArcheOne 提出 WICL：冻结模型，从一次示范出发在仿真里排练，把反馈写进上下文而不是权重，凝成任务记忆后部署到新场景。RoboTwin 2.0 全部 50 个任务平均成功率 83.4%。",
+    "quote": "技能别焊进权重，写进上下文更靠谱",
+    "source": "Hugging Face Papers（52 upvotes）",
+    "url": "https://huggingface.co/papers/2611.12885",
+    "published": "2026-11-12",
+    "uid": "986d92b31de7ca6e61a7ef708a085b7d"
+  },
+  {
+    "title": "记忆会反噬：KAIST 给每条教训挂上原始轨迹",
+    "content": "外部记忆让 agent 从经验里学，也会带来「记忆反噬」：照搬一条错误教训，反而把本来会做的任务做砸。原因是教训只挂成功或失败标签，却丢掉原始轨迹，agent 无从核对。KAIST 的 WikiTrace 把每条教训链到「这条轨迹为什么成或败」的摘要和原始轨迹，遇到缺细节、互相冲突或来自失败任务时，顺着链接下钻查证。",
+    "quote": "记忆不给出处，就是给 agent 埋雷",
+    "source": "Hugging Face Papers（49 upvotes）",
+    "url": "https://huggingface.co/papers/2611.14320",
+    "published": "2026-11-12",
+    "uid": "d8ca973bdda4cdc98cf976ccdf9c8a09"
+  },
+  {
+    "title": "一万 GPU 小时实测：AI 优化基础设施得跑满 24 小时",
+    "content": "华盛顿大学造了 Infrathon：覆盖多层级 AI 基础设施优化的长周期基准，六个模型 150 次运行、每次 24 小时预算，烧掉一万多 GPU 小时。结论扎心：评估周期短了，既看不到后续收益也看不清模型排序；150 次里有 135 次在后半程才继续提升。Claude Opus 5.5 把 KV 缓存压缩率从人工方案的 6.82% 提到 19.86%。",
+    "quote": "只跑一小时就评模型，等于闭眼选人",
+    "source": "Hugging Face Papers（25 upvotes）",
+    "url": "https://huggingface.co/papers/2611.11995",
+    "published": "2026-11-12",
+    "uid": "50118a98e0896c082a79bd9846a71dc7"
+  },
+  {
+    "title": "Meta 开源内部用了八年的设计系统：1.3 万个应用在跑",
+    "content": "Meta 把内部用了八年的设计系统 Astryx 开源：React 19 加 StyleX，150 多个可访问组件、品牌主题、暗色模式和 CLI 打包成一套，MIT 许可。它已在 Meta 内部支撑 1.3 万个应用，主打「人和 agent 用同一套工具」：组件可逐层组合，需要深改时 swizzle 直接把源码弹进项目，不锁样式方案。目前仍是 Beta，今天涨了 2800 多星。",
+    "quote": "设计系统开源了，agent 终于不用瞎配色",
+    "source": "GitHub Trending",
+    "url": "https://github.com/meta/astryx",
+    "published": "2026-11-12",
+    "uid": "31817dfd77ef0b8af2d564f9303920c2"
+  },
+  {
+    "title": "0.8B 的端侧管家：工具调用压过 2.5 倍大的模型",
+    "content": "Tether AI 用 Qwen3.5-0.8B 后训练出 BotPsy：0.8B 参数，专攻函数调用与 agent 工作流，，它在 BFCL v4 从 23.4 提到 44.0、ACEBench 从 30.1 到 58.7、τ-bench 从 23.2 到 51.5，六项工具调用基准里五项超过 1.2B 级对手，连 2.5 倍大的 Qwen3.5-2B-Think 也压住；短板是多步信息检索。",
+    "quote": "0.8B 就敢管日程，云端 API 要慌了",
+    "source": "Hugging Face Blog",
+    "url": "https://huggingface.co/blog/qvac/botpsy",
+    "published": "2026-11-12",
+    "uid": "4c5ef8a2d9eadfaa3f3288747e20fac2"
+  },
+  {
+    "title": "多向量检索省存储：向量砍四倍，准确率只掉一点",
+    "content": "Hugging Face 的 Tom Aarsen 写了篇多向量检索压缩：给 ColBERT 类模型做 token pooling，合并相似向量，pool_factor=4 时文档向量少四倍。普通模型只保住 94.6% 的 NanoBEIR nDCG@10，加 pooling-aware 训练后升到 97.8%。文章给了 loss wrapper、预算校准和 kernel 加速，代码模型都放出。",
+    "quote": "向量砍掉四倍，准确率只掉一层皮",
+    "source": "Hugging Face Blog",
+    "url": "https://huggingface.co/blog/token-pooling",
+    "published": "2026-11-12",
+    "uid": "542cd5af268e8ec90bd0014139fd40d8"
+  },
+  {
+    "title": "Hugging Face 给「决策模型」立规矩：不写字，只给概率",
+    "content": "Hugging Face 正式把「决策模型」写进生态：输入一段状态和若干预设选项，模型不生成文字，直接给出每个选项的概率，比如客服工单该分给 billing、technical 还是 sales。文章把它和传统分类区分开，给出 state 与 questions 的接口规范，并演示用 Transformers 的 decision pipeline 和 llama.cpp 部署。",
+    "quote": "能不写字就别写字，概率比嘴硬可靠",
+    "source": "Hugging Face Blog",
+    "url": "https://huggingface.co/blog/decision",
+    "published": "2026-11-12",
+    "uid": "de10773c014618cc1181150149f6c000"
+  },
+  {
+    "title": "40MB 的英语 TTS：单核 CPU 跑出 13.8 倍实时",
+    "content": "Conway Research 放出 Underdog Woof：40.6MB 的英语 TTS，两个音色，纯 numpy 在笔记本 CPU 上跑，单线程 13.8 倍实时，峰值内存 402MB。在 500 句 Gradium TTS 难例上词错率 1.42%，比 41.5GB 的 Fish Audio Drama 3 还低 25%，也能正确念电话号码、日期和价格。缺点是只有英语，许可为禁商用。",
+    "quote": "40MB 打赢 41GB，云 TTS 脸有点疼",
+    "source": "Hugging Face Models",
+    "url": "https://huggingface.co/ConwayResearch/Underdog-Woof",
+    "published": "2026-11-12",
+    "uid": "057c931b9f789bb4b9de825993f81558"
+  },
+  {
+    "title": "腾讯给 Qwen3.8-27B 配五层草稿：agent 吞吐快三倍",
+    "content": "腾讯开源 DSpine 投机解码草稿模型：给 Qwen3.8-27B 配一个五层 draft，块大小 16、8,192 token 滑窗，每层把预测特征传给相邻位置，一次并行出多个候选 token。官方在 SGLang 上测，GSM8K 接受长度从 DFlash2 的 5.69 升到 7.20，agent 场景端到端吞吐提升 2.7 到 3.8 倍，SWE-bench Pro 等任务也全面领先。",
+    "quote": "草稿模型卷到五层，大模型少开口",
+    "source": "Hugging Face Models",
+    "url": "https://huggingface.co/tencent/Qwen3.8-27B-DSpine-b16",
+    "published": "2026-11-12",
+    "uid": "cded203fe466c8b7aabfab9261ad103c"
+  },
+  {
+    "title": "MiniMax-H3 被压到一半：6 步出带声视频，24GB 卡能跑",
+    "content": "Video Rebirth 把 MiniMax-H3 压成 HyperFlow H3 Flash：13.7B 参数、不到原模型一半，4 到 8 步、不用 CFG 就能同时生成画面和 32kHz 立体声。5.2 秒片段在 4 张 B200 上 8.7 秒出片，单张 H200 36 秒，RTX 5090 92 秒；Q4 量化 9.1GB，24GB 显卡能跑。许可禁止在欧美韩销售。",
+    "quote": "半价出片还带声，版权先划好地盘",
+    "source": "Hugging Face Models",
+    "url": "https://huggingface.co/VideoRebirthAI/hyperflow-h3-flash",
+    "published": "2026-11-12",
+    "uid": "9bb29f7e055a2a74dc403f55ae61d72f"
+  },
+  {
+    "title": "提示词不是防线：agent 被说服后，工具权限才是底",
+    "content": "一篇安全复盘把 prompt injection 从「提示词问题」拉回「授权问题」：真实部署里，agent 读的不只是工单，还有 PR 描述、依赖包 README、测试输出、CI 日志和检索文档，任何一段都可能夹带指令，而模型分不清「让我读的」和「让我照做的」。所以审查该问的不是系统提示写没写「别执行危险命令」，而是模型被说服后，手上的工具到底能干什么。",
+    "quote": "提示词写得再狠，不如收掉那把钥匙",
+    "source": "Dev.to",
+    "url": "https://dev.to/cyclopt_dimitrisk/prompt-injection-isnt-a-prompt-problem-its-an-authorization-problem-59j6",
+    "published": "2026-11-12",
+    "uid": "6341802bf53868d6ca88687862c27948"
+  },
+  {
+    "title": "AI 把测试写多了，QA 开始抓「忽过忽挂」的用例",
+    "content": "QA 工程师写了个 flaky test 检测器：先解析测试结果，找出同一用例在代码没变时忽过忽挂的模式，再用 Strands Agents 编排 Gemini 去读失败日志、定位根因。背景是 AI 把写自动化测试的成本打下来后，不稳定用例反而成了新瓶颈：它让人开始忽略真实失败，CI 时间和费用也一起涨。文章给了工具思路、prompt 设计和实际分析结果。",
+    "quote": "AI 把测试写多了，也开始制造噪音",
+    "source": "Dev.to",
+    "url": "https://dev.to/m4rri4nne/detecting-flaky-tests-and-finding-their-root-causes-with-strands-agents-and-gemini-4kan",
+    "published": "2026-11-12",
+    "uid": "bb6c023edaa5ff103c6920858559843f"
+  },
+  {
+    "title": "从注意力到 3-bit 缓存：大模型怎么学会少记一点",
+    "content": "一篇长文把大模型「省记忆」的九年演进串成线：从注意力机制和 KV cache 讲起，解释 MHA 为什么吃显存，再到 MQA、GQA、MLA、LRKV 怎么共享或压缩键值，随后是 FlashAttention、MoE、ZeRO/FSDP、蒸馏，最后落到 FP8、FP4 和 3-bit cache 量化。全文用餐厅和记笔记的比喻，公式标了可跳过，适合想搞懂推理成本从哪来的人。",
+    "quote": "记性越差越省钱，大模型也学会了",
+    "source": "Dev.to",
+    "url": "https://dev.to/amananandrai/from-attention-to-3-bit-caches-how-llms-learned-to-remember-less-mha-gqa-mla-moe-quantisation-3obj",
+    "published": "2026-11-12",
+    "uid": "cefb5c8630c4bea8835c6ac10dee9e61"
+  }
+]
