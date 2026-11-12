@@ -1,0 +1,189 @@
+[
+  {
+    "uid": "1466abfe66cd59d4453077518bcf3a48",
+    "title": "黄仁勋辞去英伟达 CEO，CFO 临时接掌 3.8 万亿帝国",
+    "content": "英伟达董事会周四宣布，联合创始人黄仁勋即刻辞去总裁、CEO 与董事职务，结束 33 年执掌。此前媒体曝出他与一名疑似中国间谍的女性及一名直接下属存在婚外情。公司从未设立继任计划，CFO 兼执行副总裁 Colette Kress 出任临时 CEO；她 2013 年加入英伟达，此前在思科、微软任财务高管。正式继任者的搜寻仍在进行。",
+    "quote": "三十三年说走就走，继任计划都没写",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/12/jensen-huang-is-out-at-nvidia-who-is-colette-kress-his-interim-replacement/",
+    "published": "2026-11-13",
+    "vendor": "other",
+    "direction": "行业动态"
+  },
+  {
+    "uid": "d574a06fc6d096fc3b95c34658909608",
+    "title": "黄仁勋答应赴国会作证：闭门，但会录像",
+    "content": "众议院外交委员会主席 Brian Mast 称，黄仁勋已同意在感恩节前赴国会作证，形式为闭门简报，预计录像并留文字记录。此前 Mast、中国问题特别委员会主席 Moolenaar、情报委员会主席 Crawford 于 11 月 4 日联名致函要求他出席，并威胁发传票。Mast 说自己与黄在出口管制上长期对立，但「不想看到英伟达受损」，只是「有些严重问题要答」。",
+    "quote": "出口管制吵了几年，总算能当面问",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/12/jensen-huang-agrees-to-testify-before-congress/",
+    "published": "2026-11-13",
+    "vendor": "other",
+    "direction": "行业动态"
+  },
+  {
+    "uid": "3586fd5cc361f2044d6fb2da9c5c5454",
+    "title": "谷歌新 API：一次前向，答一千个是/否",
+    "content": "谷歌发布 Gemini Decisions API，背后是新模型 Gemini Decision 1。它不做逐字生成，而是一次前向给候选选项打分：单次可带 256K token 多模态输入（文本、图像、音视频、PDF）与最多 1000 个问题，直接返回概率与置信度，端到端 150-250 毫秒，输入每百万 token 收 0.10 美元，输出不计费。定位是工具选择、策略校验、模型路由与内容分级。",
+    "quote": "不写字只打分，这才是 agent 的水电煤",
+    "source": "Google Blog",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+    "published": "2026-11-13",
+    "vendor": "google",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "db9b42956ad42b22bde2b1b90117756e",
+    "title": "Jane Street 开源苏格拉底家教：先诊断，再逼你自己想",
+    "content": "量化巨头 Jane Street 在 GitHub 放出 agent_skills 仓库，其中 socratic-tutor 把「教到掌握」拆成流程：先确认用户真要系统学而非随手一问，再把主题拆成 4-10 个子技能，用 3-5 个由易到难的问题做诊断定位，画出 0-5 级技能图，之后只靠提问逼学生推理、预测、解释，配合间隔复习，最后做总评。触发词是「教我」「考我」「练我」。",
+    "quote": "不讲课只提问，学不会是自己的事",
+    "source": "Hacker News",
+    "url": "https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md",
+    "published": "2026-11-13",
+    "vendor": "other",
+    "direction": "模型发布"
+  },
+  {
+    "uid": "58c5af77bc27283990f4c3168490f9eb",
+    "title": "LibreAGI：用 BitTorrent 给开源权重留种",
+    "content": "LibreAGI 是个会员制私有 BitTorrent tracker，专门保存最可能从网上消失的开源模型权重。它按稀缺度给积分：文件越大、做种越久分越高，只有一份副本的模型拿四倍基础收益。收 Apache-2.0、MIT、Qwen 社区许可等来源明确的权重，safetensors、GGUF、ONNX 都收，逐个对照源仓库 commit 校验并人工复核，还提供签名公开目录，站点没了也能重建。",
+    "quote": "等模型下架那天，才知道谁在留种",
+    "source": "Hacker News",
+    "url": "https://libreagi.com/",
+    "published": "2026-11-13",
+    "vendor": "alibaba",
+    "direction": "模型发布"
+  },
+  {
+    "uid": "55bf40a54c79d71b9c405603dcf28147",
+    "title": "孙正义订了 13 吉瓦涡轮机，比需要多一半",
+    "content": "TechCrunch 报道，软银约两年前开始为 AI 数据中心囤燃气轮机，定金压了超过 13 吉瓦，比自身需求多出近 50%。业内人说，想立刻拿到货只能超订。如今涡轮机排期已排到 2030 年代初，AI 用电需求涨得让能源圈措手不及，孙正义赌的是用资金把这块市场卡住。但软银刚录得数十亿美元亏损，这笔超订还能撑多久成了问题。",
+    "quote": "囤涡轮机像囤显卡，可惜亏钱也同步",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/12/softbanks-billion-dollar-loss-may-have-put-a-cap-on-ais-natural-gas-ambitions/",
+    "published": "2026-11-13",
+    "vendor": "other",
+    "direction": "行业动态"
+  },
+  {
+    "uid": "a46e025240a402e7e34413ae0e85a4c3",
+    "title": "V2EX：每月 100 刀的 Codex，我停续了",
+    "content": "V2EX 一条「本月起正式停止续费 codex」的帖子说，自己一直订 100 美元档，最近几个月越来越难用：即便天天重置，额度也像芝麻粒，蹬几下就见底，响应迟钝，还严重降智。楼主最后一句「再见了 Tibo」把矛头指向 Codex 负责人。评论区不少人跟帖晒自己的退订理由，也有人表示转去 Gemini 4 Carbon。",
+    "quote": "一百刀就买芝麻粒额度，谁受得了",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1256551",
+    "published": "2026-11-13",
+    "vendor": "google",
+    "direction": "行业动态"
+  },
+  {
+    "uid": "2d8be7dc32261b0e54278e8b65861de8",
+    "title": "V2EX：美区礼品卡订 Claude，半夜喜提 KYC",
+    "content": "一位 V2EX 用户说，自己用 iOS 美区礼品卡订阅 Claude Pro，刚在 Fable 5.2 发布时体验了新模型，任务跑到一半账号突然中断，随后被要求做 KYC 验证。帖子里有人支招说中国护照可以通过，楼主表示第二天就去办护照，并承诺回来更新结果。同一节点下还有多条「被封退款了吗」「Claude 走 Apple 账号要手机号」的帖子。",
+    "quote": "刚尝到新模型，KYC 先到门口",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1256603",
+    "published": "2026-11-13",
+    "vendor": "anthropic",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "2803378e907e24a4ede34a9e5678fef7",
+    "title": "论文回击「八小时改权重」：九毛钱、零 token 修好模型",
+    "content": "MIT 的「权重空间编程」让 GPT-6 Astra 烧 8970 万 token，才修好 0.8B 的死循环。新论文 Tree-Ising 改写为 BF16 权重的稀疏离散优化：只准符号翻转与指数移位，按输出行拆成 QUBO，用 GPU 退火求解。MATH-500 得 54.6%，高于 agent 的 51.7%，少改 13-17% 权重，四次前向、零 token，0.9 美元 GPU 时间。",
+    "quote": "agent 烧八小时，不如退火九毛钱",
+    "source": "Hugging Face Papers",
+    "url": "https://huggingface.co/papers/2611.14210",
+    "published": "2026-11-13",
+    "vendor": "openai",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "d11266064c7acdbe088171ded0e00f5b",
+    "title": "APEX：把假分数网络塞进生成器，视频流式生成更省",
+    "content": "少步采样能压低流式视频生成成本，但分布匹配蒸馏要靠独立假分数网络监督，既费显存又要跟着更新。论文把 APEX 扩到流式视频：用条件移位在生成器内部估计生成分布的速度场，原条件负责选生成，移位条件用同一套参数做假估计，从而去掉独立网络，保留冻结教师与感知正则。180 秒视频上指令完成度与美学评分都胜过 S2-Avatar，单卡峰值显存降 4.4%，迭代时间短 9.2%。",
+    "quote": "少一个网络少一口气，视频终于能流",
+    "source": "Hugging Face Papers",
+    "url": "https://huggingface.co/papers/2611.14033",
+    "published": "2026-11-13",
+    "vendor": "other",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "3c78e4eb41b8f1217ad22049e027f8cd",
+    "title": "5 万小时第一视角视频，喂出会自己看目标的机器人",
+    "content": "Open-HumanWAM 公开首个把第一视角视频扩到 5 万小时的配方：带手部动作与语言标注的语料、清洗与预训练管线、权重和评测套件。只用人类视频预训练，预训练时长与下游成功率呈对数线性关系；机器人后训练后 RoboTwin 2.0 干净场景成功率 92.08%。人机混合预训练后，Clean2Random 从 68.88% 跳到 84.60%，真机上还出现不更新参数、看目标就能改动作的涌现能力。",
+    "quote": "先看五万小时人干活，机器人自己开窍",
+    "source": "Hugging Face Papers",
+    "url": "https://huggingface.co/papers/2611.06817",
+    "published": "2026-11-13",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "d3916f44cf9cff3eb88712493ecac158",
+    "title": "只训 LoRA：鞋履 3D 生成从能看变能用",
+    "content": "Hugging Face 教程用 TRELLIS.2 做 3D 生成微调：冻结主干，只训两个低秩适配器，分别管稀疏结构流和形状流；图像经 DINOv3 提特征，LoRA 参数保留 fp32 主权重并开梯度检查点。在自制鞋履数据集上，留出物体的平均 F-score 从 0.276 升到 0.803，Chamfer 从 0.174 降到 0.033，法线一致性 0.530 到 0.804。",
+    "quote": "主干不动只挂补丁，鞋底终于贴地",
+    "source": "Hugging Face Blog",
+    "url": "https://huggingface.co/blog/3d-lora-finetuning",
+    "published": "2026-11-13",
+    "vendor": "other",
+    "direction": "行业动态"
+  },
+  {
+    "uid": "32b3378ee215803b927f11a725883c56",
+    "title": "51M 视觉模型压到 22MB，手机 74ms 出结果",
+    "content": "Cactus Compute 发布 Mirage：51.3M 参数的视觉模型，2-bit 量化后约 22MB，在三星 Galaxy S26 的 NPU 上端到端 74ms，纯 CPU 也只要 107ms。一次前向同时给出场景描述、带属性的目标框、分割掩码、OCR、空间关系和决策，输出是可查询的场景图与 JSON；支持英德法西意荷波七种语言，pip 装完就能离线跑，浏览器里还有在线沙盒。",
+    "quote": "二十二兆看完整张图，云端视觉要降价",
+    "source": "Hugging Face Models",
+    "url": "https://huggingface.co/Cactus-Compute/mirage",
+    "published": "2026-11-13",
+    "vendor": "other",
+    "direction": "模型发布"
+  },
+  {
+    "uid": "39c4d4b852ae930b101522e2ee558d9d",
+    "title": "100M 激活的 TTS：43 种语言塞进浏览器",
+    "content": "Zyphra 开源 ZONOS3-Mini：800M 总参数，每 token 只激活约 100M，64 专家 top-2 MoE，11 层，32k 上下文，支持 43 种语言，Apache-2.0。给一段参考音频就能克隆音色，也能按年龄、口音、音质设计角色，还能逐词控制情绪、语速、响度和带宽。H100 上八并发首包中位 80ms，峰值每秒生成 457 秒音频，WebGPU 直接在浏览器跑。",
+    "quote": "一百兆参数开口，云端 TTS 按秒计费",
+    "source": "Hugging Face Models",
+    "url": "https://huggingface.co/Zyphra/ZONOS3-Mini",
+    "published": "2026-11-13",
+    "vendor": "other",
+    "direction": "模型发布"
+  },
+  {
+    "uid": "559ebf7cb15f143868dd31e6ece0f260",
+    "title": "MCP 一百五十行就能跑，麻烦才刚开始",
+    "content": "作者用一百五十行 TypeScript 给吐槽型 code review agent 接了个 HR MCP server，四个工具直接读写 SQLite，跑通毫无难度。但 demo 之后问题接连冒出来：agent 明知是演示代码仍提交了严重投诉，全程没有人工审批；同样的输入重跑一次又多一条记录，副作用不幂等；工具也没有服务端权限校验和审计。结论是 MCP 只解决怎么连，授权、审批、幂等得自己补。",
+    "quote": "协议只负责连接，剩下的锅自己背",
+    "source": "Dev.to",
+    "url": "https://dev.to/sylwia-lask/mcp-is-dead-simple-and-thats-exactly-the-problem-5811",
+    "published": "2026-11-13",
+    "vendor": "other",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "c84043592d731176bdbf5700ac0df05f",
+    "title": "别改提示词了，给 agent 一套本体和校验器",
+    "content": "文章认为 agent 上线翻车多数不是推理错，而是系统没告诉它业务里什么才算真：退款没限制在已送达订单，金额还能超过订单总额。作者主张用本体加 SHACL 约束，把流程固定成 LLM 提议、本体裁决：agent 输出 JSON-LD 动作，pySHACL 毫秒级校验，不通过就把具体 shape、字段和人类可读原因回给模型，让它自己改或转人工。",
+    "quote": "提示词只是建议，本体才是硬法条",
+    "source": "Dev.to",
+    "url": "https://dev.to/dailycontext/your-agent-needs-a-schema-not-a-better-prompt-53bm",
+    "published": "2026-11-13",
+    "vendor": "other",
+    "direction": "模型发布"
+  },
+  {
+    "uid": "36dd497a25adb58feacfa89d3c55cff2",
+    "title": "Apache HTTP/2 严重 RCE：发现者里有台机器",
+    "content": "Apache httpd 2.4.71 修掉 CVE-2026-119618：mod_http2 的 assign_headers() 有竞态，并发 HTTP/2 流可致堆破坏，可远程代码执行，影响 2.4.55 到 2.4.70；Wiz 称 64% 云环境有受影响实例。致谢名单第一位是 Anthropic 的 OSS Scanner，而前一天这博客还在分析它 56% 被驳回的误报率。",
+    "quote": "机器找洞比人快，误报也比人更狠",
+    "source": "Dev.to",
+    "url": "https://dev.to/slabb/apache-httpd-shipped-a-critical-http2-rce-yesterday-and-one-of-the-finders-was-a-machine-5jj",
+    "published": "2026-11-13",
+    "vendor": "anthropic",
+    "direction": "行业动态"
+  }
+]
