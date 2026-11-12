@@ -1,0 +1,123 @@
+# 开发者日报 A 轨素材 · 2026-11-13
+
+> 共 15 条 | HN Front Page 5 · GitHub Trending Daily 3 · V2EX Share 2 · V2EX Tech 1 · Dev.to 2 · 博客园 Cnblogs 2
+
+## 1. 黄仁勋辞任英伟达 CEO，CFO 克雷斯临时代任
+
+11 月 12 日英伟达董事会宣布，黄仁勋辞去总裁、CEO 及董事职务，立即生效；CFO Colette Kress 兼任临时 CEO，同时继续掌管财务，董事会已启动内部与外部搜寻永久继任者。公司还首次设立董事会主席，由投资人 Harvey C. Jones 出任。Kress 2013 年从思科、微软的财务岗位加入英伟达。
+
+> AI 牛市总教头突然交棒，市场先愣三秒。
+
+来源：HN Front Page · [https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition](https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition) · `dev_917eda4c`
+
+## 2. Anthropic 启动 IPO，Q3 营收 170 亿美元
+
+Anthropic 上线 IPO 路演页，首次公开财务：2026 年 Q3 营收 170 亿美元，同比增长超 12 倍；年付 10 万美元以上的客户超 11,900 家，同样增长逾 12 倍；算力效率较 2025 年 Q1 提升 4 倍以上；调整后经营利润率 15%。因可转债、衍生品与 SAFE 公允价值变动计入 219 亿美元非现金费用，净亏损 233 亿美元。
+
+> 亏 233 亿也敢敲钟，叙事比利润贵。
+
+来源：HN Front Page · [https://ipo.anthropic.com/us/](https://ipo.anthropic.com/us/) · `dev_f593bb9c`
+
+## 3. Apache 曝严重 RCE，64% 云环境存风险
+
+CVE-2026-119618 位于 mod_http2 的 assign_headers()：并发线程共享资源时同步不当，可破坏堆内存，未认证远程攻击者能借此执行任意代码。受影响版本为 2.4.55 至 2.4.70，修复版 2.4.71。Wiz 称 64% 的云环境含受影响资源、51% 有公网暴露实例，目前尚无公开利用代码，官方建议立即升级。
+
+> HTTP/2 抢速度，竞态里埋了把刀。
+
+来源：HN Front Page · [https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability](https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability) · `dev_addec853`
+
+## 4. PG 14 正式 EOL，一次修 52 个 CVE
+
+11 月 12 日 PostgreSQL 发布 18.7、17.12、16.16、15.20、14.25 与 19 RC2，共修 52 个安全漏洞和 140 多个 bug，含 ALTER 类型混淆（CVSS 8.8）、扩展脚本 schema 处理不当（7.2）、dblink 可写任意文件（8.1）。14.25 是 PG 14 最后一个版本，此后不再有安全修复，建议尽快升级。
+
+> 52 个洞一次性补完，拖延症当场去世。
+
+来源：HN Front Page · [https://www.postgresql.org/about/news/postgresql-187-1712-1616-1520-1425-and-19-rc-2-released-3442/](https://www.postgresql.org/about/news/postgresql-187-1712-1616-1520-1425-and-19-rc-2-released-3442/) · `dev_9ae13e2a`
+
+## 5. 美联航禁止 AI 代理替旅客订票
+
+美联航 11 月 11 日宣布，禁止第三方 AI 代理代替旅客预订机票：订票需交出账号密码与支付信息，既可能泄露敏感数据，代理的操作也可能违反联邦规则，违规订单可被取消。此时 Meta Muse、OpenAI dots 等消费级代理正把「替你下单」当卖点，航司成为第一家明确划红线的。
+
+> Agent 想替你花钱，先过航司这道门。
+
+来源：HN Front Page · [https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/](https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/) · `dev_3e089e8c`
+
+## 6. Qwen Code 1.0 预览：开源编码 Agent
+
+Qwen Code 发布 1.0 Preview，把 Qoder 的 agent harness 与 Qwen Code 合并开源：终端、编辑器、桌面、浏览器和聊天都能跑，集成 VS Code、Zed、JetBrains 以及 Telegram、钉钉、微信、飞书。自带 Auto-Memory、Auto-Skills、SubAgents、Agent Teams 与 MCP。仓库 2.96 万星。
+
+> 终端里塞进一整支 Agent 团队，椅子要够大。
+
+来源：GitHub Trending Daily · [https://github.com/QwenLM/qwen-code](https://github.com/QwenLM/qwen-code) · `dev_6cde84aa`
+
+## 7. Zig 推理引擎 TensorFold：单二进制跑 GPU
+
+TensorFold 用 Zig 编成单个二进制，直接读 checkpoint、分词并调用 Metal 或 CUDA kernel，在 Apple Silicon 与 NVIDIA GPU 上跑模型，不需要 Python 或 MLX。默认示例是 4-bit 的 Qwen3.5-2B。贡献流程用 ATC 做代理交通管制：先查重再认领 issue，避免多个 Agent 撞车。1.8k 星。
+
+> 连 Agent 抢活都要排队，卷得很有秩序。
+
+来源：GitHub Trending Daily · [https://github.com/ashhart/TensorFold](https://github.com/ashhart/TensorFold) · `dev_68bb87db`
+
+## 8. Meta 开源设计系统 Astryx，150+ 组件
+
+Astryx 在 Meta 内部生长八年，支撑 13,000 多个应用，如今以 MIT 协议开源：基于 React 19 与 StyleX，提供 150 多个无障碍组件、品牌主题、暗色模式和 CLI。组件内部结构开放、可逐层组合，swizzle 能把组件源码整个弹出到项目里；样式不锁定，消费者可用 className 覆盖。目前处于 beta，已发布 npm 包。2.6 万星。
+
+> 大厂设计系统下凡，前端少造几颗轮子。
+
+来源：GitHub Trending Daily · [https://github.com/meta/astryx](https://github.com/meta/astryx) · `dev_6aa8730b`
+
+## 9. KeepXClean：本地过滤 X 评论区，零登录
+
+作者受不了 X 评论区前排全是蓝标复读、高仿钓鱼号、扣数字引流和币圈刷屏，做了本地优先的浏览器扩展 KeepXClean：规则全在本地跑，不登录、不调远端大模型、不后台高频轮询 API，单条判定低于 1ms，既避开限流和账号风控，也不把时间线内容传出去。代码已开源。
+
+> 净空权拿回本地，别让算法硬喂。
+
+来源：V2EX Share · [https://www.v2ex.com/t/1256499#reply3](https://www.v2ex.com/t/1256499#reply3) · `dev_38b7d093`
+
+## 10. Opus 5.5 一句话做的游戏，首日广告赚 3 块 7
+
+作者用每月一百多的 Claude 订阅，让 Opus 5.5 仿《吸血鬼幸存者》做了微信小游戏《milky-frog》，Cocos2D 实现并开源。开了种子计划后一天来了三百多活跃用户，全部来自搜索，激励广告首日收入 3.7 元。评论区追问备案与提现：个人主体可上架，主管部门备案约一个月，广告收入还要过门槛才分成。
+
+> 3 块 7 也是正现金流，比 PPT 硬。
+
+来源：V2EX Share · [https://www.v2ex.com/t/1256382#reply34](https://www.v2ex.com/t/1256382#reply34) · `dev_b24d8404`
+
+## 11. 前端用 AI 重做 Admin：这类岗位必被淘汰
+
+作者此前发帖说 AI 写后台管理项目已经夸张，被质疑后利用业余时间亲自验证：让 AI 生成整套 Admin，再花四五天手工打磨 UI/UX 细节，结论是纯 CRUD 后台的前端已可 100% 被替代。但他也承认，非前端要把交互细节磨到位仍有难度，剩下的人价值在审美、边界处理和体验打磨。
+
+> AI 接管增删改查，人类只剩挑刺。
+
+来源：V2EX Tech · [https://www.v2ex.com/t/1255094#reply14](https://www.v2ex.com/t/1255094#reply14) · `dev_82ca4e73`
+
+## 12. 「别再问我」把 1379 个密钥写进公开仓库
+
+Apiiro 11 月 5 日发现：GitHub 上有 104,185 份公开的 .claude/settings.local.json，1,122 份至少含一个真实密钥，共 1,379 个凭据；算上历史与共享文件达 2,539 个、涉及 1,994 个仓库。原因是点「don't ask again」后整条命令被原样写进 allow 规则，PGPASSWORD=hunter2 这类密码就落了盘。
+
+> 点一下别再问，密码就替你公开了。
+
+来源：Dev.to · [https://dev.to/piekwerk/claude-codes-dont-ask-again-wrote-1379-secrets-into-public-github-files-check-your-repos-before-d16](https://dev.to/piekwerk/claude-codes-dont-ask-again-wrote-1379-secrets-into-public-github-files-check-your-repos-before-d16) · `dev_3e440fc2`
+
+## 13. WER 仅 1% 的语音 Agent 念错了柜码
+
+Voice Arena 本周的听写测试用 761 段录音、87 位说话人跑 10 个应用，一句「twelve, thirty, eight」只有 Gemini 写成 12-30-8，其余输出 12:38 或 1238。放进 200 词的通话里，这只是一次替换加一次删除，WER 约 1%，看板一片绿；但后台真正要用的正是这串数字，门就是打不开。作者建议给数字、姓名、日期单独算槽位准确率。
+
+> 平均分很漂亮，关键字段全错了。
+
+来源：Dev.to · [https://dev.to/aqibnawab/wer-says-1-but-the-caller-got-the-wrong-locker-code-scoring-the-words-a-voice-agent-acts-on-4lkb](https://dev.to/aqibnawab/wer-says-1-but-the-caller-got-the-wrong-locker-code-scoring-the-words-a-voice-agent-acts-on-4lkb) · `dev_4bd570df`
+
+## 14. 11 月 TIOBE：Dart 首次进前 20
+
+2026 年 11 月榜（11 月 7 日发布）：Python 20.86% 仍第一，Java 8.89% 反超 C++ 的 8.35%；Go 1.69% 压过 Rust 的 1.63%，把 Rust 挤到第 11；Dart 从第 26 升到第 20，两个月前它还在第 41。作者提醒：Rust 同比其实从 1.39% 涨到 1.63%，只是前十的门票更贵了；Dart 的推力主要是 Flutter。
+
+> 名次是玄学，生态才是真正的硬通货。
+
+来源：博客园 Cnblogs · [https://www.cnblogs.com/lwqing/p/23644952](https://www.cnblogs.com/lwqing/p/23644952) · `dev_74644bdc`
+
+## 15. 缓存实测：读比写慢 1ms，40 轮全脏读
+
+作者用同一场景对比三种写法：先更新库再删缓存，脏值最多活一个 TTL；先删缓存再更新库，脏值能活到下一次写，实测 40/40 全脏；延迟双删则卡在 sleep 时长上，500ms 内 8/8 干净，600ms 起 8/8 失败。自然并发下 1500 轮也撞出 63 次（4.2%），可见「概率低」靠不住。
+
+> 1 毫秒的窗口，足够脏数据住一晚。
+
+来源：博客园 Cnblogs · [https://www.cnblogs.com/uniqueDong/p/23643356](https://www.cnblogs.com/uniqueDong/p/23643356) · `dev_9406ac93`
