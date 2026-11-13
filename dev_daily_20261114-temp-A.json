@@ -1,0 +1,137 @@
+[
+  {
+    "title": "Claude 全线故障四小时，开发者集体卡壳",
+    "source": "HN Front Page",
+    "url": "https://status.claude.com/incidents/nn11wk485zfn",
+    "content": "11 月 13 日 09:58 UTC 起，claude.ai、Claude Code、Console 与 Claude Cowork 同时出现登录鉴权异常；官方 11:05 部署修复并进入监控，11:58 宣布恢复。HN 讨论一度冲到 400+ 分、300 多条评论，大量开发者晒出被中断的工作流，把日常编码压在单一云服务上的风险再次被摆上台面。",
+    "quote": "全球程序员一起下班十分钟，也算团建。",
+    "published": "2026-11-14",
+    "uid": "dev_c93b43bd"
+  },
+  {
+    "title": "Edge0 开源 145B 本地模型：笔记本跑前沿级编码",
+    "source": "HN Front Page",
+    "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+    "content": "Edge0 开源 Edge0-145B 与 Edge0-120B 两个本地模型及配套推理框架，号称首个可在个人电脑上运行的开源 145B 级模型：峰值内存约 29GB、解码速度超过 80 tokens/s，官方称其编码、推理与 agent 能力可比肩部分前沿云端模型。若数据属实，本地跑 agent 的硬件门槛将被显著压低。",
+    "quote": "云端账单和显存焦虑，总得先干掉一个。",
+    "published": "2026-11-14",
+    "uid": "dev_64972e46"
+  },
+  {
+    "title": "Brave Search API 接入 x402，agent 可自己付费查数据",
+    "source": "HN Front Page",
+    "url": "https://brave.com/blog/search-api-agentic-payments/",
+    "content": "Brave 宣布 Search API 支持基于 x402 开放协议的按次付费：开发者与自主 agent 可用命令行钱包直接查询其独立索引并实时结算，无需申请 API key、也无需月度订阅。Brave 自建 facilitator 负责处理支付，意味着「agent 自己花钱买数据」的闭环又往前走了一步。",
+    "quote": "以后 agent 刷爆的不是信用卡，是你的私钥。",
+    "published": "2026-11-14",
+    "uid": "dev_24e05a76"
+  },
+  {
+    "title": "为什么系统编程选 Zig 而不是 C",
+    "source": "HN Front Page",
+    "url": "https://www.mtsoukalos.eu/2026/11/why-zig-over-c-for-systems-programming/",
+    "content": "作者在写完《为什么用 Zig 替代 Rust》后补上 C 篇：Zig 与 C 目标相近——无 GC、贴近机器、语言小，因此比较重点不在内存安全口号，而在编译期能力、显式错误处理、交叉编译与构建体验。结论是 C 依然够用，但 Zig 把现代工具链的便利塞进了同等抽象层级里。",
+    "quote": "情怀归情怀，交叉编译一次就够你换语言了。",
+    "published": "2026-11-14",
+    "uid": "dev_9fa1ae9b"
+  },
+  {
+    "title": "MotherDuck：数据智能工程师登场，积压没了活更多",
+    "source": "HN Front Page",
+    "url": "https://motherduck.com/blog/the-data-intelligence-engineer/",
+    "content": "MotherDuck 提出「数据智能工程师」这一新角色：AI 让团队第一次没有积压需求，但工作量反而更大——过去要保证自己算的数字对，现在要保证 LLM 和 agent 算出来的数字对。文章讨论质量控制该交给谁、验证成本如何量化，以及数据工程正在变成 AI 工程的一部分。",
+    "quote": "以前背锅的是 SQL，现在背锅的是提示词。",
+    "published": "2026-11-14",
+    "uid": "dev_0d59cf3e"
+  },
+  {
+    "title": "Langfuse 开源 Rust 版 AI Gateway，统一追踪每次 LLM 调用",
+    "source": "HN Show HN",
+    "url": "https://github.com/langfuse/langfuse/tree/main/ai-gateway",
+    "content": "Langfuse 发布开源 Rust 网关 AI Gateway，作为其可观测平台的一部分统一代理并追踪每一次 LLM 调用：支持多模型路由、成本与延迟统计、提示词版本管理和 eval 接入，基于 OpenTelemetry，可自托管也可用云版。对已经被多家模型 API 割裂的团队来说，等于把账单和链路收进一个面板。",
+    "quote": "模型换得比对象还勤，至少账要算明白。",
+    "published": "2026-11-14",
+    "uid": "dev_89e8d6dc"
+  },
+  {
+    "title": "agent-plan：把 agent 的计划自动提交成 git 记录",
+    "source": "HN Show HN",
+    "url": "https://github.com/ghmeier/agent-plan",
+    "content": "Show HN 项目 agent-plan 是一个命令行工具，把编码 agent 生成的研究、计划、交接类 markdown 文档自动提交进 git：每次 agent 产出 plan 就作为一次带信息的 commit 落库，形成可回溯的决策链。作者说自己长期靠 markdown 文档在多个 coding agent 之间传递上下文，索性把这套流程工具化。",
+    "quote": "agent 的碎碎念终于有地方归档了。",
+    "published": "2026-11-14",
+    "uid": "dev_3815aea6"
+  },
+  {
+    "title": "bwat：把 Zoom 会议里说的话变成 agent 的 todo",
+    "source": "HN Show HN",
+    "url": "https://github.com/qoralai/bwat",
+    "content": "Show HN 项目 bwat 把 Zoom 会议里说的话直接变成可执行的 todo，并派给各自的 agent 处理。团队 Qoral 的出发点是会议结论散落在聊天记录和口头承诺里，散会后没人认领；bwat 负责转写、抽取任务、指定负责人与 agent，让会议纪要从「读一遍」变成「跑起来」。",
+    "quote": "开完会就自动派活，连甩锅的时间都没了。",
+    "published": "2026-11-14",
+    "uid": "dev_59cea975"
+  },
+  {
+    "title": "阿里开源代码审查工具登顶 GitHub 日榜",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/alibaba/open-code-review",
+    "content": "alibaba/open-code-review 当日登顶 GitHub Trending、星标已破 5 万：混合架构代码审查工具，确定性流水线负责规则匹配、LLM agent 负责语义判断，支持行级精确评论，内置多语言规则集（NPE、线程安全、XSS、SQL 注入），兼容 OpenAI 与 Anthropic 接口，Go 编写，主打阿里内部大规模实战验证。",
+    "quote": "大厂终于把自家批斗会，开源成产品了。",
+    "published": "2026-11-14",
+    "uid": "dev_8ef7c66d"
+  },
+  {
+    "title": "7 万星股票分析项目：LLM 挂到自己的钱包上",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+    "content": "ZhuLinsen/daily_stock_analysis 冲上 GitHub 日榜：LLM 驱动的多市场股票智能分析系统，聚合多源行情与实时新闻，输出决策看板并支持自动推送，可零成本定时运行，Python 实现，已积累 7 万+ star。它反映的是「把 agent 挂到自己生活决策上」这类个人自动化项目的持续热度。",
+    "quote": "七万人在用 AI 研究怎么亏钱，很有诚意。",
+    "published": "2026-11-14",
+    "uid": "dev_ee75751f"
+  },
+  {
+    "title": "前端实测：只会写 Admin 的，百分百被淘汰",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1255094",
+    "content": "V2EX 热帖：作者此前感慨 AI 写后台项目夸张，不服气亲自验证，用业余时间把搁置两年的中后台模板框架交给 AI 迭代，两三天完成过去要很久的体力活，结论是纯做 Admin 类业务的前端「百分百会被淘汰」。但他也承认 UI/UX 细节仍需人工打磨四五天，差异化在细节不在产量。",
+    "quote": "AI 淘汰的是搬砖的，不是收尾的。",
+    "published": "2026-11-14",
+    "uid": "dev_be43f464"
+  },
+  {
+    "title": "用户报告：DeepSeek 输入 <think> 可看到他人历史对话",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1213000",
+    "content": "V2EX 用户报告：在 DeepSeek 网页版和 App 中输入 <think> 相关标签，可以看到其他用户的历史对话内容，发帖时似乎尚未修复。帖主提醒，带思考链的推理模型在流式输出与会话隔离上容易出边界问题，建议不要在对话里放敏感信息，等待官方确认与修复。",
+    "quote": "免费聊天可以，免费看别人聊天就过分了。",
+    "published": "2026-11-14",
+    "uid": "dev_33a24766"
+  },
+  {
+    "title": "开源 Browser Hands：让 Codex/Cursor 用上你的登录态",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1256953",
+    "content": "作者开源 Browser Hands：Chrome 扩展加本地 MCP server，让 Codex、Cursor、OpenClaw 等 agent 直接在他已登录的浏览器里操作网页——填表、点后台、查资料，支持并行、低 CPU 占用，演示中 agent 自动填写了 Product Hunt 提交表单。解决了 agent 浏览器控制长期「要重新登录、要开独立实例」的憋屈感。",
+    "quote": "让 AI 用你的登录态，胆子是真不小。",
+    "published": "2026-11-14",
+    "uid": "dev_eff68bf3"
+  },
+  {
+    "title": "Linux 上把 PPT 转成长图：office2pdf + PyMuPDF 踩坑",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/yuexiliuli/p/23651985",
+    "content": "博主在 Linux 服务器上把 PPT 转成纵向长图，方便在聊天窗口或手机上直接滑动查看，免去下载和开 Office。文章记录选型过程：office2pdf 负责格式转换、PyMuPDF 负责拼图与渲染，并总结了字体缺失、分页错位、图片压缩等具体坑点，是一份可直接复用的实现笔记。",
+    "quote": "甲方要的从来不是 PPT，是一张图。",
+    "published": "2026-11-14",
+    "uid": "dev_ce57bdd1"
+  },
+  {
+    "title": "浏览器里测反应时间，六处坑让数字全错",
+    "source": "Dev.to",
+    "url": "https://dev.to/fancy39_9841cbc02f99f729c/measuring-reaction-time-in-the-browser-six-things-that-went-wrong-l0l",
+    "content": "作者做了个含十二项反应力小测试的网页，本以为计时就是两次时间戳相减，结果数字一直不准。文章列出六个坑：事件时间戳与渲染帧不同步、主线程阻塞、requestAnimationFrame 节流、输入延迟、浏览器节能模式和统计口径，并给出可落地的修正方案。",
+    "quote": "测反应速度的代码，自己反应最慢。",
+    "published": "2026-11-14",
+    "uid": "dev_11065c57"
+  }
+]
