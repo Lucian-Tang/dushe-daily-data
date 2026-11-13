@@ -1,0 +1,191 @@
+[
+  {
+    "title": "Gemini 4 Hydrogen 上岗：一个任务里中途换模型",
+    "content": "谷歌在 Antigravity 上线 Gemini 4 Hydrogen，并新增 Orchestrator 选项，把 Hydrogen 与更强的 Gemini 4 Carbon 动态编排：Carbon 先只读探查依赖，Hydrogen 接手改代码、装包、跑测试，遇到阻力再交回 Carbon 修计划。Terminal-Bench 4.1 上接近 Carbon，配额少用 24%、速度快 19%。",
+    "quote": "一个模型不够用，那就中途换个人",
+    "source": "Google Antigravity",
+    "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/",
+    "published": "2026-11-14",
+    "uid": "250664fb650f37388c513f4321331ce8"
+  },
+  {
+    "title": "ChatGPT 上线钱包：让 agent 替你挑、替你付",
+    "content": "OpenAI 周五上线 ChatGPT 钱包，让名为 dots 的智能体帮用户挑商品并直接下单。首批仅限美国 ChatGPT Pro 订阅用户、18 岁以上、持美国发行的 Visa、Mastercard 或 Amex。下单前用户可复核商品、总价与支付卡，并用 Face ID 或指纹确认，留下交易记录。这是消费级 AI 从给建议走向替人花钱的一步。",
+    "quote": "从给建议到替你刷卡，只差一个指纹",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
+    "published": "2026-11-14",
+    "uid": "a89e405114485a54eebb7af48bbc58a9"
+  },
+  {
+    "title": "ElevenLabs 做 ElevenAI：会议纪要与听写打包",
+    "content": "ElevenLabs 在 11/11 纽约峰会上发布实验性应用 ElevenAI，把会议记录、听写与 agent 集成合为一体，定位团队工具而非个人效率软件：可跨会议记录、录制前通知参会者、检索历史会议并做实时辅助。目前仍是预览版，需申请早期访问。语音 AI 巨头估值 220 亿美元，正与 Fireflies、Granola、Wispr Flow 正面竞争。",
+    "quote": "连会议纪要都要抢，卷得有声有色",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
+    "published": "2026-11-14",
+    "uid": "c6494705d362bbaf4899b43b4892e671"
+  },
+  {
+    "title": "Nebius 押 400 亿美元：拿客户合同抵押融资",
+    "content": "Nebius 在 Q3 财报电话会上公布 2027 年 400 亿美元资本开支计划，远超华尔街预期，资金主要靠客户预付款与以客户合同为抵押的贷款，等于用数据中心未来价值融资。CEO Volozh 承认这个规模的建设很难、延期是行业常态，我们也不例外。此前有报道称微软正对那些不能按时交付的 neocloud 合同降温。",
+    "quote": "用明天的机房，抵押今天的野心吧",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/",
+    "published": "2026-11-14",
+    "uid": "076e5b99074af123022723fc71546943"
+  },
+  {
+    "title": "smolmaxxing：1GB 内存的 iPad 跑 16B 模型",
+    "content": "GitHub 项目 smolmaxxing 专攻小设备跑大模型：在 1.9GB 内存的小米电视盒子跑 16B 模型，在 1GB 内存的 2013 款 iPad Air 跑同款，在约 3GB 可用内存的一加手机跑 80B-A3B，速度 2.6 到 7.7 token/s。做法是改 llama.cpp：为 Cortex-A55 写 1-bit 查表与 2-bit 重排内核，权重放闪存流式读取。",
+    "quote": "显存不够，闪存来凑，电费也省了",
+    "source": "GitHub",
+    "url": "https://github.com/hyperionaidev/smolmaxxing/",
+    "published": "2026-11-14",
+    "uid": "9b21f3a705c158a69f3a003ad5486677"
+  },
+  {
+    "title": "V2EX：硬看半小时 AI 短剧，穿帮但能看",
+    "content": "V2EX 用户花半个多小时看完 AI 短剧《持械入宋》，边看边推演剧情：现代枪械穿越冷兵器时代，弹药有限，主角要么走建国路线，要么混江湖靠关键一枪立威，也可能靠现代知识搞科研。他直言 B 站上不少 AI 漫剧穿帮、运镜混乱、网红脸扎堆，但抛开画面，用来讲故事已经够用，X 上也有质量极高的作品。",
+    "quote": "穿帮归穿帮，故事居然还能看下去",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1256754",
+    "published": "2026-11-14",
+    "uid": "d235554c46ba3ec26ed1a82805e97317"
+  },
+  {
+    "title": "SO-Arena：System One 模型的稳定性大考",
+    "content": "SO-Arena 给「不写长思维链、直接给答案」的 System One 模型做评测：覆盖 11 个领域、5 类能力，用可靠来源与人工核验标签做证据化打分，按领域难度细分，并在沙箱里做多轮交互。除准确率外还测决策可靠性，包括选项集变化下的稳定性，以及没有正确选项时能否拒答。21 个模型的测试显示，加规模与加推理的收益差异很大。",
+    "quote": "答得快不算本事，选项一换就露馅",
+    "source": "Hugging Face Papers",
+    "url": "https://huggingface.co/papers/2611.15777",
+    "published": "2026-11-14",
+    "uid": "cf20d9a1a952a373e6634abde566bae6"
+  },
+  {
+    "title": "PhysLoop：让视频模型自己发现物理错误",
+    "content": "视频生成模型画面逼真，却常在物理动态与因果上出错。PhysLoop 搭了一套闭环：让大模型在生成、挑选、纠错三个环节里持续给出物理约束，把它的物理知识蒸馏进视频模型，既能造可控训练数据，也能在推理时修补视频。团队放出 10 万条室内外视频、生成工具和两个评测集，指向视频模型的递归自我改进。",
+    "quote": "画面越真物理越假，那就自己修吧",
+    "source": "Hugging Face Papers",
+    "url": "https://huggingface.co/papers/2611.16748",
+    "published": "2026-11-14",
+    "uid": "1202ffc3feb685308710e9b2cb6771d8"
+  },
+  {
+    "title": "Duo：能听能说、实时打断的全双工世界模型",
+    "content": "Duo v1 提出 Reciprocal World Model：一边持续感知音视频，一边实时回应，把「意图」和「实现」都当成世界模型的内在部分，而不是外挂控制器。技术上用自回归建模做连续交互推理与发言决策，按 chunk 同步意图与实现的 token，并用模块级注意力掩码保证因果、挡住未来输入，同时缓解训练与推理的分布漂移。",
+    "quote": "不等你说完就接话，这才叫真实时",
+    "source": "Hugging Face Papers",
+    "url": "https://huggingface.co/papers/2611.15131",
+    "published": "2026-11-14",
+    "uid": "493a17f20b6b643fd62c25aa36a9e957"
+  },
+  {
+    "title": "Actor, Judge, or Teacher：不会做题也能当老师",
+    "content": "论文比较三个决策模型与三个通用大模型在 ALFWorld 上的表现：当 actor 时，六个模型都会被更容易的 subgoal 带偏；当 judge 看完整条轨迹时，却能认可通向关键 subgoal 的步骤。再把 JEV 当老师，用 GRPO 把 Qwen2.5-1.5B 在 ALFWorld 的成功率从 72.8% 提到 82.9%，WebShop 从 56.8% 提到 71.4%。",
+    "quote": "自己考试不及格，判起卷来倒挺准",
+    "source": "Hugging Face Papers",
+    "url": "https://huggingface.co/papers/2611.17167",
+    "published": "2026-11-14",
+    "uid": "a3666ba3d084cf6db96df09637215e12"
+  },
+  {
+    "title": "Chrome 给 agent 发网页规范手册",
+    "content": "Chrome 联合 Edge、Firefox 和 MDN 维护的 Modern Web Guidance 放出源码：把现代 Web API、最佳实践和兼容数据做成一包 skills，直接塞进编码 agent 的上下文。一条 npx 命令装好，能按关键词 search、按 ID retrieve，还能 legacy-scan 扫出老写法。官方说模型总爱抄训练数据里的旧代码。Apache-2.0。",
+    "quote": "agent 写网页，终于不抄十年前的了",
+    "source": "GitHub Trending",
+    "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+    "published": "2026-11-14",
+    "uid": "6985e00d3276b36062cce19d31e3e882"
+  },
+  {
+    "title": "让 agent 自己开 DevTools 查性能",
+    "content": "Chrome DevTools 团队把调试能力包成 MCP server 和 CLI：编码 agent 能直接控制真实 Chrome，录 trace 提取性能结论、看网络请求、截图、读带 source map 的控制台报错，底层用 puppeteer 自动等待结果。仓库 5.5 万星。默认上报使用统计，可用 --no-usage-statistics 关掉。",
+    "quote": "以前人肉按 F12，现在 agent 替你按",
+    "source": "GitHub Trending",
+    "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "published": "2026-11-14",
+    "uid": "b4212d4b4d442e7efacb45d4bce01466"
+  },
+  {
+    "title": "llama.cpp 发 1.0：API 不再乱改",
+    "content": "跑了三年半的 llama.cpp 发布 v1.0.0，ggml 同步到 1.0。核心变化不是功能而是承诺：此后公共 C API 的不兼容改动才升主版本，新功能升次版本，修 bug 升补丁号；libllama 与 libggml 的头文件边界被正式固定。官方称目前支持 150 多种模型架构和全部主流投机解码方法，后端覆盖 NVIDIA、AMD、Qualcomm、Arm、IBM、Intel。",
+    "quote": "三年半才敢叫 1.0，稳得有点固执",
+    "source": "Hugging Face Blog",
+    "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+    "published": "2026-11-14",
+    "uid": "1f76189be1eacadc04ed519961f68f73"
+  },
+  {
+    "title": "XYBench：答对了问题，却帮错了人",
+    "content": "Ai2 联合 CMU、NVIDIA、约翰霍普金斯发布 XYBench，专测模型能否识破 XY 问题：用户想要 X，却问怎么做 Y。题库 8115 条，来自 Stack Overflow 和 WikiHow 等。测了 Claude Sonnet 4.6、GPT-5、Gemini 3.1 Pro 等五个模型都更愿意答字面请求，只有 35% 到 41% 的答案把重点放在真实目标上。",
+    "quote": "问的是 Y，要的是 X，模型只顾答 Y",
+    "source": "Hugging Face Blog",
+    "url": "https://huggingface.co/blog/allenai/xybench",
+    "published": "2026-11-14",
+    "uid": "e9d93e607b69854cc81f1ae89963f123"
+  },
+  {
+    "title": "Salesforce 开源语音模型：2.28% 错字率",
+    "content": "Salesforce 放出 SOV-Transcribe-1：4B 激活、26B 总参数的语音模型，Apache-2.0。转写榜上，它靠 2.28% 的 WER 排开放权重第一，低于 Nemotron 3.5 Transcribe 的 2.81%。VoiceCodeBench 通过 76.3% 录音、实体召回 93.4%，排第二。支持口音、噪声和按指令改格式。",
+    "quote": "错一个字，邮箱就发到别人家去了",
+    "source": "Hugging Face Blog",
+    "url": "https://huggingface.co/blog/salesforce-sovereign-intelligence/sov-transcribe-1",
+    "published": "2026-11-14",
+    "uid": "37260d5d67d735c629fe18db6d42f010"
+  },
+  {
+    "title": "叫 Small 的模型：594B 参数、17B 激活",
+    "content": "Thinking Machines 开源 Inkling 2 Small：48 层解码器，384 个专家每 token 选 8 个，总参数 594B、激活 17B，原生多模态，上下文 100 万 token。名字叫 Small，跑起来不小：NVFP4 版本至少要 500GB 显存，官方建议两张 B300 或四张 H200。已适配 SGLang、vLLM、Unsloth，Apache-2.0。",
+    "quote": "名字叫 Small，机房得按大号配",
+    "source": "Hugging Face Models",
+    "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
+    "published": "2026-11-14",
+    "uid": "e4807e9179a4c68682b9c59c29089cb1"
+  },
+  {
+    "title": "65B 稠密模型，TerminalBench 拿 80.5",
+    "content": "Ricursive 放出 Ripple-65B Preview：65B 稠密 Transformer，预训练 12 万亿 token，Apache-2.0。TerminalBench 2.1 得 80.52，高于 501B 的 Reflection Beam 和 975B 的 Inkling。没走 MoE 路线，从 Olmo 3 基线改训练配方，代码算力效率最高提升 55 倍。",
+    "quote": "参数少十倍，分数还高一点，尴尬",
+    "source": "Hugging Face Models",
+    "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
+    "published": "2026-11-14",
+    "uid": "948fed37c1f453b4390f7618b605030d"
+  },
+  {
+    "title": "4B 小模型专攻 Three.js 3D 场景",
+    "content": "独立开发者 CCORE 放出 Qwen3.5-4B-3D-Coder 早期预览：基于 Qwen3.5-4B 微调，专门写 Three.js 交互式 3D 场景，普通编码也能用，Apache-2.0，并明确不是 Qwen 官方发布。作者用自制 3D 场景数据集训练，仍在迭代。Q4_K_M 和 Q8_0 的 GGUF 版本加载原版视觉编码器后还能读图，趋势榜上已破千赞、下载近 40 万。",
+    "quote": "四个 B 就敢接 3D，浏览器里见真章",
+    "source": "Hugging Face Models",
+    "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
+    "published": "2026-11-14",
+    "uid": "8d9982c50846b959df286cfb84357556"
+  },
+  {
+    "title": "一周 1000 个 PR，靠流水线兜底",
+    "content": "Kiro 团队三个人加一群 agent，一周合并 1000 个 PR，这篇复盘讲怎么不炸：人工逐行审根本不可能，所以把信心建在自动化上。测试覆盖率推到 90% 以上并防回归，加 agent 驱动的端到端测试，让 agent 像用户一样操作真实应用；每个 PR 都由 CI 留下审查记录，含每条意见怎么修和最终结论。他们花约 20% 时间修基础设施。",
+    "quote": "人读不完的代码，就让流水线来读",
+    "source": "Dev.to",
+    "url": "https://dev.to/dailycontext/keeping-a-software-factory-stable-at-1000-prs-a-week-363j",
+    "published": "2026-11-14",
+    "uid": "9a1762a97a2797c18ecb1c0fa639aa2d"
+  },
+  {
+    "title": "Codex 没报错，只是安静地什么都没做",
+    "content": "作者写了个本地优先的 agent 策略引擎 agentpolicy，给每个动作判定允许、拒绝、转人工、限流或脱敏。接 Codex CLI 时踩了三个不报错的坑：CLI 已不支持 chat completions，只能走 Responses API；headless 跑时 stdin 不关会永久挂起，得加 </dev/null；base_url 少写 /v1，请求全 404。配置本身就是测试面。",
+    "quote": "最耐心的 bug，是那个永远在等的读",
+    "source": "Dev.to",
+    "url": "https://dev.to/debashish_ghosal/codex-never-crashed-it-just-quietly-did-nothing-1p5c",
+    "published": "2026-11-14",
+    "uid": "485771ea7008a0d3b6b828bc007615d7"
+  },
+  {
+    "title": "六个推理引擎，四种芯片，答案一样",
+    "content": "有人把 Gemma 4 E2B 放到 RTX 3050、T4、L4 和一颗 TPU v5e 上，六个引擎各跑一遍，同样 1319 道 GSM8K 和 400 道 BFCL。答案不取决于芯片：三张 GPU 上五个 CUDA 引擎的 GSM8K 落在 0.8954 到 0.9030；速度由芯片决定，单请求时 vLLM 配 drafter 最快。",
+    "quote": "换芯片不换答案，换引擎才见真章",
+    "source": "Dev.to",
+    "url": "https://dev.to/gde/six-serving-engines-on-four-accelerators-gemma-4-e2b-on-an-rtx-3050-a-t4-an-l4-and-a-tpu-v5e-1a0e",
+    "published": "2026-11-14",
+    "uid": "eaac91f96bd0f0e7f749e6bdc3467c36"
+  }
+]
