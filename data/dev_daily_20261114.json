@@ -1,0 +1,227 @@
+[
+  {
+    "title": "Claude 全线故障四小时，开发者集体卡壳",
+    "source": "HN Front Page",
+    "url": "https://status.claude.com/incidents/nn11wk485zfn",
+    "content": "11 月 13 日 09:58 UTC 起，claude.ai、Claude Code、Console 与 Claude Cowork 同时出现登录鉴权异常；官方 11:05 部署修复并进入监控，11:58 宣布恢复。HN 讨论一度冲到 400+ 分、300 多条评论，大量开发者晒出被中断的工作流，把日常编码压在单一云服务上的风险再次被摆上台面。",
+    "quote": "全球程序员一起下班十分钟，也算团建。",
+    "published": "2026-11-14",
+    "uid": "dev_c93b43bd"
+  },
+  {
+    "title": "Edge0 开源 145B 本地模型：笔记本跑前沿级编码",
+    "source": "HN Front Page",
+    "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+    "content": "Edge0 开源 Edge0-145B 与 Edge0-120B 两个本地模型及配套推理框架，号称首个可在个人电脑上运行的开源 145B 级模型：峰值内存约 29GB、解码速度超过 80 tokens/s，官方称其编码、推理与 agent 能力可比肩部分前沿云端模型。若数据属实，本地跑 agent 的硬件门槛将被显著压低。",
+    "quote": "云端账单和显存焦虑，总得先干掉一个。",
+    "published": "2026-11-14",
+    "uid": "dev_64972e46"
+  },
+  {
+    "title": "Brave Search API 接入 x402，agent 可自己付费查数据",
+    "source": "HN Front Page",
+    "url": "https://brave.com/blog/search-api-agentic-payments/",
+    "content": "Brave 宣布 Search API 支持基于 x402 开放协议的按次付费：开发者与自主 agent 可用命令行钱包直接查询其独立索引并实时结算，无需申请 API key、也无需月度订阅。Brave 自建 facilitator 负责处理支付，意味着「agent 自己花钱买数据」的闭环又往前走了一步。",
+    "quote": "以后 agent 刷爆的不是信用卡，是你的私钥。",
+    "published": "2026-11-14",
+    "uid": "dev_24e05a76"
+  },
+  {
+    "title": "为什么系统编程选 Zig 而不是 C",
+    "source": "HN Front Page",
+    "url": "https://www.mtsoukalos.eu/2026/11/why-zig-over-c-for-systems-programming/",
+    "content": "作者在写完《为什么用 Zig 替代 Rust》后补上 C 篇：Zig 与 C 目标相近——无 GC、贴近机器、语言小，因此比较重点不在内存安全口号，而在编译期能力、显式错误处理、交叉编译与构建体验。结论是 C 依然够用，但 Zig 把现代工具链的便利塞进了同等抽象层级里。",
+    "quote": "情怀归情怀，交叉编译一次就够你换语言了。",
+    "published": "2026-11-14",
+    "uid": "dev_9fa1ae9b"
+  },
+  {
+    "title": "MotherDuck：数据智能工程师登场，积压没了活更多",
+    "source": "HN Front Page",
+    "url": "https://motherduck.com/blog/the-data-intelligence-engineer/",
+    "content": "MotherDuck 提出「数据智能工程师」这一新角色：AI 让团队第一次没有积压需求，但工作量反而更大——过去要保证自己算的数字对，现在要保证 LLM 和 agent 算出来的数字对。文章讨论质量控制该交给谁、验证成本如何量化，以及数据工程正在变成 AI 工程的一部分。",
+    "quote": "以前背锅的是 SQL，现在背锅的是提示词。",
+    "published": "2026-11-14",
+    "uid": "dev_0d59cf3e"
+  },
+  {
+    "title": "Langfuse 开源 Rust 版 AI Gateway，统一追踪每次 LLM 调用",
+    "source": "HN Show HN",
+    "url": "https://github.com/langfuse/langfuse/tree/main/ai-gateway",
+    "content": "Langfuse 发布开源 Rust 网关 AI Gateway，作为其可观测平台的一部分统一代理并追踪每一次 LLM 调用：支持多模型路由、成本与延迟统计、提示词版本管理和 eval 接入，基于 OpenTelemetry，可自托管也可用云版。对已经被多家模型 API 割裂的团队来说，等于把账单和链路收进一个面板。",
+    "quote": "模型换得比对象还勤，至少账要算明白。",
+    "published": "2026-11-14",
+    "uid": "dev_89e8d6dc"
+  },
+  {
+    "title": "agent-plan：把 agent 的计划自动提交成 git 记录",
+    "source": "HN Show HN",
+    "url": "https://github.com/ghmeier/agent-plan",
+    "content": "Show HN 项目 agent-plan 是一个命令行工具，把编码 agent 生成的研究、计划、交接类 markdown 文档自动提交进 git：每次 agent 产出 plan 就作为一次带信息的 commit 落库，形成可回溯的决策链。作者说自己长期靠 markdown 文档在多个 coding agent 之间传递上下文，索性把这套流程工具化。",
+    "quote": "agent 的碎碎念终于有地方归档了。",
+    "published": "2026-11-14",
+    "uid": "dev_3815aea6"
+  },
+  {
+    "title": "bwat：把 Zoom 会议里说的话变成 agent 的 todo",
+    "source": "HN Show HN",
+    "url": "https://github.com/qoralai/bwat",
+    "content": "Show HN 项目 bwat 把 Zoom 会议里说的话直接变成可执行的 todo，并派给各自的 agent 处理。团队 Qoral 的出发点是会议结论散落在聊天记录和口头承诺里，散会后没人认领；bwat 负责转写、抽取任务、指定负责人与 agent，让会议纪要从「读一遍」变成「跑起来」。",
+    "quote": "开完会就自动派活，连甩锅的时间都没了。",
+    "published": "2026-11-14",
+    "uid": "dev_59cea975"
+  },
+  {
+    "title": "阿里开源代码审查工具登顶 GitHub 日榜",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/alibaba/open-code-review",
+    "content": "alibaba/open-code-review 当日登顶 GitHub Trending、星标已破 5 万：混合架构代码审查工具，确定性流水线负责规则匹配、LLM agent 负责语义判断，支持行级精确评论，内置多语言规则集（NPE、线程安全、XSS、SQL 注入），兼容 OpenAI 与 Anthropic 接口，Go 编写，主打阿里内部大规模实战验证。",
+    "quote": "大厂终于把自家批斗会，开源成产品了。",
+    "published": "2026-11-14",
+    "uid": "dev_8ef7c66d"
+  },
+  {
+    "title": "7 万星股票分析项目：LLM 挂到自己的钱包上",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+    "content": "ZhuLinsen/daily_stock_analysis 冲上 GitHub 日榜：LLM 驱动的多市场股票智能分析系统，聚合多源行情与实时新闻，输出决策看板并支持自动推送，可零成本定时运行，Python 实现，已积累 7 万+ star。它反映的是「把 agent 挂到自己生活决策上」这类个人自动化项目的持续热度。",
+    "quote": "七万人在用 AI 研究怎么亏钱，很有诚意。",
+    "published": "2026-11-14",
+    "uid": "dev_ee75751f"
+  },
+  {
+    "title": "前端实测：只会写 Admin 的，百分百被淘汰",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1255094",
+    "content": "V2EX 热帖：作者此前感慨 AI 写后台项目夸张，不服气亲自验证，用业余时间把搁置两年的中后台模板框架交给 AI 迭代，两三天完成过去要很久的体力活，结论是纯做 Admin 类业务的前端「百分百会被淘汰」。但他也承认 UI/UX 细节仍需人工打磨四五天，差异化在细节不在产量。",
+    "quote": "AI 淘汰的是搬砖的，不是收尾的。",
+    "published": "2026-11-14",
+    "uid": "dev_be43f464"
+  },
+  {
+    "title": "用户报告：DeepSeek 输入 <think> 可看到他人历史对话",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1213000",
+    "content": "V2EX 用户报告：在 DeepSeek 网页版和 App 中输入 <think> 相关标签，可以看到其他用户的历史对话内容，发帖时似乎尚未修复。帖主提醒，带思考链的推理模型在流式输出与会话隔离上容易出边界问题，建议不要在对话里放敏感信息，等待官方确认与修复。",
+    "quote": "免费聊天可以，免费看别人聊天就过分了。",
+    "published": "2026-11-14",
+    "uid": "dev_33a24766"
+  },
+  {
+    "title": "Skylands：把散在各台机器上的 Agent 收进一个界面",
+    "content": "Skylands 想解决 agent 一多就变成「放羊」的问题：支持 Claude Code、Gemini、Codex、Goose，从任意浏览器把任务派到你有权限的机器，手机上批准权限请求，所有会话与历史进入统一收件箱。每个 agent 的动作和每次批准/拒绝都写入签名日志，另附一个 3D 世界可视化，一眼看清哪台机器在跑什么。",
+    "quote": "八个终端窗口不叫编排，叫放羊。",
+    "source": "HN Show HN",
+    "url": "https://github.com/skylands-ai/skylands",
+    "published": "2026-11-14",
+    "uid": "dev_49f160d9"
+  },
+  {
+    "title": "BraKet：不执行命令，先算出这条 shell 会动什么",
+    "content": "BraKet 只静态分析 Bash 命令会碰什么：文件系统读写、网络、进程等能力，输出直接喂给 coding agent 的权限系统，避免为了判断风险真去跑一遍。命令库覆盖 906 个根命令、8194 条命令路径；单条命令中位耗时 Rust 0.55µs、TypeScript 1.9µs，约 1.8 万字符的长输入也只有 126µs。TS 与 Rust 双实现，带 CLI 和库。",
+    "quote": "先判后果再放行，比事后道歉便宜。",
+    "source": "HN Show HN",
+    "url": "https://github.com/dirac-run/braket",
+    "published": "2026-11-14",
+    "uid": "dev_827ffc87"
+  },
+  {
+    "title": "Harness Tuner：不只调提示词，把整个 Agent 外壳一起调",
+    "content": "Harness Tuner 把优化对象从 prompt 扩到整个 harness：重写给 agent 用的工具、删掉互相矛盾的指令、把长说明拆成按需加载的 skill，再调思考等级、温度、模型与 provider，RAG、微调和子 agent 也在搜索空间。官方称在生产级、200 多个工具的多轮 agent 上做到失败率降 2.5 倍、成本降 6 倍、延迟减半。",
+    "quote": "提示词写得再美，不如把工具改顺手。",
+    "source": "HN Show HN",
+    "url": "https://github.com/Kiln-AI/harness-tuner",
+    "published": "2026-11-14",
+    "uid": "dev_f52377e2"
+  },
+  {
+    "title": "给 2011 年的 B&W 音箱换固件：AirPlay 2 加 Snapcast",
+    "content": "2011 年那台带 30-pin 底座的 B&W Zeppelin Air，官方早停更，只剩 AirPlay 1。zd1 把两块板子的固件都换掉：底层跑从诺基亚 HD-1 里翻出的 2.4 内核，用户态全部用 Rust 重写，换来 AirPlay 2 多房间同步与 Snapcast。全程从背后 USB 口刷写，不用拆机焊接，原厂固件也能用同样方式刷回。",
+    "quote": "音箱没坏，只是被厂商判了死缓。",
+    "source": "HN Show HN",
+    "url": "https://github.com/pawlowskialex/zd1",
+    "published": "2026-11-14",
+    "uid": "dev_d57a4af0"
+  },
+  {
+    "title": "IceWM：二十九年过去，它还在教新桌面什么叫不卡",
+    "content": "IceWM 是 Marko Maček 1997 年用 C++ 写的 X11 窗口管理器，目标只有三个词：快、简单、别碍事。任务栏带分页器，全局与单窗口快捷键、动态菜单齐全，支持多显示器、多种焦点模式、主题和系统托盘，键盘能完成全部操作。最新 4.1.0 于 2026 年 8 月发布，仍在 Debian、Arch、NixOS 等发行版仓库里，HN 上一天拿到 300 多分。",
+    "quote": "二十九年了，新桌面还是没它利索。",
+    "source": "HN Front Page",
+    "url": "https://ice-wm.org/",
+    "published": "2026-11-14",
+    "uid": "dev_295fe9f4"
+  },
+  {
+    "title": "Lonewolf 0.3：Rust 写的单机 XMPP 服务器",
+    "content": "Lonewolf 是用 Rust 写的独立 XMPP 服务器，0.3.0 补上证书认证的服务器间联邦、Direct TLS 和更多桌面客户端特性，目标是自己跑一台、不依赖大厂 IM。作者明确它仍是 1.0 之前的单节点实现，完整 XMPP 合规与集群还在路线图上，适合小团队或自建实验，不适合直接当生产级枢纽。",
+    "quote": "自建聊天服务器，先得自建耐心。",
+    "source": "HN Front Page",
+    "url": "https://github.com/lonewolf-im/lonewolf/releases/tag/v0.3.0",
+    "published": "2026-11-14",
+    "uid": "dev_f100311c"
+  },
+  {
+    "title": "Connector 的隐形税：你授权的是应用，不是这一次任务",
+    "content": "作者提醒：给 agent 接一个 connector 只要点几下授权，交出去的却不只是一次任务权限。这个应用会持有 token、拉取记录、接收工具参数并把结果回传模型，等于在你的日历、表格、邮箱之间多加了一个能动手的第三方。OAuth 只能说明授了哪个应用、哪类范围，说不清它每一步看到了什么，所以同意页值得慢一点读。",
+    "quote": "点一下授权，等于多雇一个能进你家的外包。",
+    "source": "Dev.to",
+    "url": "https://dev.to/chuckb/the-quiet-tax-of-the-connector-80n",
+    "published": "2026-11-14",
+    "uid": "dev_8c603520"
+  },
+  {
+    "title": "Postman 给 Claude Code 出插件：先给 API 契约打分",
+    "content": "Postman 给 Claude Code 出了插件，把 API 契约放到流程最前面：先按 spec 生成和校验接口，给 agent-readiness 打分，再照着分数补描述、补错误分支，最后用 mock 和测试卡住回归。文章给了可复制的提示词、hooks 与 /goal 配法，核心观点是 spec 含糊 agent 就会猜参数、瞎重试，检查一红它还想改测试而不是改代码。",
+    "quote": "契约不写清，agent 就拿幻觉填坑。",
+    "source": "Dev.to",
+    "url": "https://dev.to/postman/postman-plugin-for-claude-code-a-hands-on-guide-4j4c",
+    "published": "2026-11-14",
+    "uid": "dev_ea622abd"
+  },
+  {
+    "title": "EC2 对 GCE 跑 40 天：真正拉开账单的是出网和 Spot",
+    "content": "作者在两个平台各跑 40 天真实负载，us-east-1 对 us-central1，专测账单里最容易被忽略的两项：出网流量和抢占实例波动。首 10TB 出网 AWS $0.09/GB、GCP $0.085/GB，回源 CDN 两边都免；按需 vCPU 小时价只差约 2.5%，但 spot 的 p50 折扣与回收频率差异更大，结论是别只信定价页。",
+    "quote": "云厂商的报价单，永远比账单乐观。",
+    "source": "Dev.to",
+    "url": "https://dev.to/grfdsasdvef/aws-ec2-vs-google-compute-engine-network-egress-pricing-spot-instance-volatility-572c",
+    "published": "2026-11-14",
+    "uid": "dev_64c03650"
+  },
+  {
+    "title": "手搓 Agent 第 5 篇：谁来决定工具串行还是并行",
+    "content": "系列第 5 篇讲多工具协作：第 4 篇已有 calculator、readFile、searchFiles、webFetch 四个工具，这次让 agent 在一个任务里自己决定顺序。有依赖的调用必须跨轮次串行，彼此独立的可以在同一轮并行发出；难点是并行时仍要保证 tool_call_id 与结果一一对应，否则模型会把结果配错。代码用 Node 22 + TypeScript。",
+    "quote": "并行不难，难的是别把结果配错人。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/MrHuo/p/23649930/agent-from-scratch-05",
+    "published": "2026-11-14",
+    "uid": "dev_3da82bed"
+  },
+  {
+    "title": "装了两套 CUDA 还串？先看 PATH 排队顺序",
+    "content": "机器上装了 11.8 又装 12.x，conda 环境也切了，nvcc 还是不对。作者用两套真实 CUDA 工具链做对照实验：只改 PATH 顺序，同一个 ptxas 命令就给出三种版本。Windows 查命令是从 PATH 队列最左边逐个找，第一个命中就执行，跟安装先后、版本新旧无关。排查第一步是 where.exe，一次列出所有候选与真正生效的那个。",
+    "quote": "不是装错了，是你把它排在了后面。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/dawudexiaowu/p/23652179",
+    "published": "2026-11-14",
+    "uid": "dev_f606590c"
+  },
+  {
+    "title": "ipguard：看完反代日志，一键把扫描 IP 封进 RouterOS",
+    "content": "家里 NAS 开公网后，反代日志天天被扫描器刷 /.env、wp-login。ipguard 把看日志和封 IP 放进一个面板：按 IP、域名、状态码、路径筛，IP 显示城市与国内运营商，可疑来源标色，点一下就把地址写进 RouterOS 地址表，在 WAN 口丢掉。支持自动封禁和白名单，不串在请求链路上，挂了也不影响访问。需要 RouterOS 加一台 Docker 机器。",
+    "quote": "让扫描器连服务器的大门都摸不到。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1256742",
+    "published": "2026-11-14",
+    "uid": "dev_3275417e"
+  },
+  {
+    "title": "别再让用户装 Shizuku：把 Android 特权能力做进应用",
+    "content": "很多 Android 功能要 Shell 或 Root 权限，常规做法是让用户装 Shizuku，但原版已停维护、各种 fork 适配混乱。作者介绍 GKD 在用的三件套：Priv Kit 像嵌入式 Shizuku，可由 ADB、Root 或外部授权拉起自己的特权进程；remap 用 Gradle 插件把隐藏 API 变成可编译引用的普通方法；android-api-diff 查跨版本变化。",
+    "quote": "把折腾用户的步骤，塞回自己应用里。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1256795",
+    "published": "2026-11-14",
+    "uid": "dev_d1c3d3cf"
+  }
+]
