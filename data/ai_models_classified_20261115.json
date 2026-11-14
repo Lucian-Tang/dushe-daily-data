@@ -1,0 +1,211 @@
+[
+  {
+    "uid": "7c1df96274441d22e469b10731f5b2f6",
+    "title": "Antigravity 的 /teamwork：多智能体啃下开放难题",
+    "content": "谷歌研究博客披露 Antigravity 的 /teamwork 多智能体系统战果：与高校团队合作，在信息论、形式化验证、分子结构发现、内核优化等悬置多年的开放问题上取得进展。系统靠并行探索配专职验证者（Lean 4 证明检查、测试套件、硬件计数器）筛掉错解，并按步骤切分上下文：协调者把任务交给全新代理，批评者用干净上下文复核。现已对外提供。",
+    "quote": "把上下文切干净，比堆模型更管用",
+    "source": "Google Research",
+    "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+    "published": "2026-11-15",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "26d265ce671c85ecacf438c524bb2969",
+    "title": "LangChain 估值翻倍到 30 亿美元",
+    "content": "LangChain 完成 3 亿美元 C 轮，估值 30 亿美元，CapitalG 领投，GIC、DFJ Growth、IVP、Sapphire 跟投，一年前估值才 12.5 亿。它 2022 年靠开源起家，做搜索、调 API、连数据库这些早期模型不擅长的活；如今转向 agent 管理，主打 LangSmith 不锁定模型、云和生态，称已有 7000 家客户，含英伟达、丰田、Salesforce。",
+    "quote": "模型厂把脏活干了，它改收管理费",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+    "published": "2026-11-15",
+    "vendor": "other",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "e906ce588cf4c1c43c6e4bcd1414ae05",
+    "title": "Helen Toner：别把 AI 安全押在好人身上",
+    "content": "The Verge Decoder 请来曾参与解雇 Sam Altman 的 OpenAI 前董事、CSET 执行主任 Helen Toner。她的判断是：如果 AI 安全的希望寄托在某个值得信任的人身上，那就完了。访谈聊到实验室到底在造什么、对齐是否可解、更聪明的监管路径以及中国议题；录制时英伟达尚未启动调查，黄仁勋也未辞职。",
+    "quote": "把安全押在某个好人身上，本身就危险",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
+    "published": "2026-11-15",
+    "vendor": "openai",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "2c7a6e6b19ce61f9d30efb428e588292",
+    "title": "实测 Claude Duet：有点神经质的贴身助理",
+    "content": "The Verge 实测 Anthropic 消费级 agent Duet 一周：接入工作邮箱、日历、Docs 和 Slack 后，它能从会议纪要邮件和 Slack 私信里串起线索，还靠共享文档推断出作者的老板是谁。它每天早上推摘要和待办，但也会误解截止日期，早上七点就催稿。Duet 仍是研究预览，美国 Pro、Max、Ultra 用户排队试用。",
+    "quote": "助手太勤快，也是一种精神内耗啊",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
+    "published": "2026-11-15",
+    "vendor": "anthropic",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "e2229842b468524864027ca61efd7c8d",
+    "title": "V2EX：Codex 卡壳，国模加编辑器反倒顺手",
+    "content": "V2EX 用户对比 Codex 与 CodeBuddy、Trae 后的结论：GLM Flash、DeepSeek Flash 这类国模效果已经够用，价格还更便宜。他的体感是即便不手写代码也要留个编辑器，AI 对项目整体的感知更好——用 openspec 产出任务后能顺着计划跑，Codex 无论 CLI 还是嵌进 Zed 都容易卡在某个任务上；远程机器与内置浏览器验收也更顺手。",
+    "quote": "不是国模变强了，是贵的用不起了",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1257001",
+    "published": "2026-11-15",
+    "vendor": "deepseek",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "b43e0bb1eed7f9218a325d4a9b885841",
+    "title": "LazyWeights：让边缘模型的权重按需解码",
+    "content": "论文 LazyWeights 盯上边缘设备的显存与带宽：现有 GPTQ、AWQ 等量化对矩阵里每个整数码分配同样位宽，而码分布很不均匀。作者保留原格式、微调 GPTQ 让码可压缩，交错通道里做无损 Huffman 编码，再由 DRAM 与 L2 之间的小解码单元按需解码，GPU kernel 不用改。同等困惑度下模型小 5.7% 到 31.4%，Orin 上延迟与能耗最多降 36% 和 38%。",
+    "quote": "位宽平均分配，才是最大的浪费吧",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2611.17108",
+    "published": "2026-11-15",
+    "vendor": "openai",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "5e3b904fe2b9f545fbd3668341651ca9",
+    "title": "MAPE：用程序进化搜出更好的 agent 记忆",
+    "content": "论文提出 MAPE：用程序进化自动搜索 agent 记忆方案，从极简种子出发，经标准化生命周期接口和「诊断—提案」循环迭代整段记忆程序。在 LoCoMo 与 LongMemEval 上，较人工设计基线最高提 12 个点准确率，服务成本只要 35%。分析发现两个反复出现的模式：原始对话要留作可检索证据，检索结果要按查询意图重组；组合模块移植进五个现有系统，全部涨点。",
+    "quote": "记忆系统的胜负手，不在存多少在怎么取",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2611.17068",
+    "published": "2026-11-15",
+    "vendor": "other",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "c352c02aa956a9e79a28aaa06b75080b",
+    "title": "Ropedia Xperience 2：物理 AI 的数据底座",
+    "content": "Hugging Face 高赞论文 Ropedia Xperience 2 给出物理 AI 的数据底座：1589 个公制尺度 3D 扫描，加 4230 段第一视角录制、覆盖 74 类任务共 131 小时。每份采集都能二次利用——场景转成可交互仿真环境，人体动作重定向为全身机器人轨迹，再用虚拟遥操作与自动长程轨迹生成补行为。作者主张环境与行为联合采集应成为物理 AI 数据的金标准。",
+    "quote": "机器人不缺模型，缺的是有人示范干活",
+    "source": "Hugging Face Papers",
+    "url": "https://huggingface.co/papers/2611.17060",
+    "published": "2026-11-15",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "51dd484e22ce94fe225791c4ef33348e",
+    "title": "把交易流程写成 Claude Skills",
+    "content": "有人把自己的交易流程拆成一套 Claude Skills 开源：先看市场环境，再管风险，最后才找标的。含 15 分钟日常市场体检、每周持仓复盘、VCP 形态筛选、回撤熔断、仓位计算和交易日志复盘等工作流，每个工作流都有 YAML 清单写明技能、决策闸门和产物。数据源用 Alpaca、FMP，也能手动导 CSV。MIT，4600 星。",
+    "quote": "AI 不替你下单，只逼你按流程来",
+    "source": "GitHub Trending",
+    "url": "https://github.com/tradermonty/claude-trading-skills",
+    "published": "2026-11-15",
+    "vendor": "anthropic",
+    "direction": "模型发布"
+  },
+  {
+    "uid": "26dd9a85c7cf616853c2f67970966686",
+    "title": "腾讯开源 LoopForge：agent 流水线",
+    "content": "腾讯开源 LoopForge：自托管的编码 agent 工作台。在聊天里说要什么，Main Bot 就开 Docker 沙箱、拉仓库、分派给项目角色并提 PR；跑顺的流程可存成 SOP，由 agent、脚本、人工审批节点按序执行，任一步都能暂停、改写或重跑。支持 CodeBuddy、Codex、Claude Code、Cursor CLI 等十余种 CLI。Go 写，MIT，Docker 自部署。",
+    "quote": "把「顺手跑通」变成能复用的产线",
+    "source": "GitHub Trending",
+    "url": "https://github.com/Tencent/LoopForge",
+    "published": "2026-11-15",
+    "vendor": "anthropic",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "9c47793813e07906377654923fbb430e",
+    "title": "三个资产拼出机械臂抓取仿真",
+    "content": "NVIDIA 用三个 SimReady 资产在 Isaac Sim 拼了条抓取流水线：UR17G 臂、Robotiq 2F-140 夹爪和一听饮料罐。SimReady 指 OpenUSD 资产已带好碰撞、质量、关节和驱动参数并按 profile 校验；SimReady Central 把资产库放在 Hugging Face 上。文中强调先测关节限位、小幅运动和接触，再让 agent 生成控制序列。",
+    "quote": "资产不对，仿真里连罐子都拿不稳",
+    "source": "Hugging Face Blog",
+    "url": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
+    "published": "2026-11-15",
+    "vendor": "other",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "f052c6845a6ebe45bacfbb83dcf15777",
+    "title": "IBM 造了门给模型看的标记语言",
+    "content": "IBM 提出 LLMON：一种给大模型看的标记语言，用保留的特殊 token 把指令、数据、约束和推理链分块打标签，并给每段唯一 ID，让指令只作用于绑定它的数据。基于 Granite 4.1 放出 3B 和 8B 预览模型，称间接提示注入在部分基准上成功率接近零，同时通用能力不掉；旧对话和无关段落也不会被误读进答案。",
+    "quote": "把指令和数据分开，注入就少一半",
+    "source": "Hugging Face Blog",
+    "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+    "published": "2026-11-15",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "885842594d3710d77c1394ce1fe390d2",
+    "title": "剪 MoE 专家，要先看谁跟谁搭档",
+    "content": "MoE 模型里九成以上参数是专家，但每个 token 只用八个。亚马逊提出 HOPE：不再逐个给专家打独立分数，而是按二阶方法算专家两两之间的协作关系，成组剪枝。剪掉 50% 时平均排名最好，agentic coding 任务比次优方法最多高 6.1 个百分点；不用重训，可与量化叠加。以 Qwen3.5-122B 为例，专家占约 250GB 的 95%。",
+    "quote": "专家是抱团的，剪之前得先看关系",
+    "source": "Hugging Face Blog",
+    "url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
+    "published": "2026-11-15",
+    "vendor": "alibaba",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "fa4a41b74f03ee7b06349d378a414390",
+    "title": "MiniMax 开源 33B 图像模型",
+    "content": "MiniMax 开源 H3-Image：33.1B 稠密 DiT，生成与编辑共用一个权重，原生输出约 1600 万像素，从 4096×4096 到 6272×2688 不用超分。蒸馏到 6 步采样、不做 CFG，可吃最多 16 张参考图做编辑，文本编码器直接用 H3 的 Qwen3-VL。BF16 权重 68.65GB，另有 NVFP4 提示词扩写器，社区许可。",
+    "quote": "一千六百万像素，六步就能直接出图",
+    "source": "Hugging Face Models",
+    "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
+    "published": "2026-11-15",
+    "vendor": "alibaba",
+    "direction": "模型发布"
+  },
+  {
+    "uid": "af816c1f5481528b58448ddda40ee49c",
+    "title": "拿 Qwen 改价值观，宣传话术降到 1%",
+    "content": "Nous Research 拿阿里 Qwen3.8-27B 做后续训练，推出 Arete-27B，把模型价值观调向西方视角。只用监督微调，没有 RL、偏好优化或改结构，教师是 Inkling，训练上下文 64k。官方称事实得分从 2.32 升到 2.98（满分 5），含宣传口径的回答从 22% 降到 0.9%，七个价值类别都改善，通用与 agent 基准没明显退化。Apache-2.0。",
+    "quote": "换一套价值观，只要做一次 SFT",
+    "source": "Hugging Face Models",
+    "url": "https://huggingface.co/NousResearch/Arete-27B",
+    "published": "2026-11-15",
+    "vendor": "alibaba",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "af7a4628ca55b6bed210b9172313186b",
+    "title": "4B 全双工语音模型：边听边说",
+    "content": "Higurashi 放出 Haru-4B：4B 参数的全双工语音对话基座，边听边说。每 133 毫秒（7.5Hz）吃一帧用户音频，同时吐一帧自己的音频和文本，三路信息加进语言模型同一个位置，不用等对方说完。音频是每帧 64 维隐变量，小 MLP 头一步采样出波形，没有离散音频 token。支持九种语言，可用文本卡设人格、参考音设音色。Apache-2.0，研究用途。",
+    "quote": "能一边听一边说的，才像在打电话",
+    "source": "Hugging Face Models",
+    "url": "https://huggingface.co/higurashi-ai/Haru-4B",
+    "published": "2026-11-15",
+    "vendor": "other",
+    "direction": "研究/论文"
+  },
+  {
+    "uid": "c5cf108497f2f203dd933de1c48a1114",
+    "title": "七个 MCP server，吃掉了 15% 上下文",
+    "content": "作者只输入「Run tests」两个词，账单却记了 28400 个输入 token，对话历史还是空的。原因是挂了七个 MCP server：每个工具完整的 JSON Schema 都要塞进每次请求的上下文，占掉约 15% 的窗口，还拖慢首 token、拉低推理准确率。他的解法是拆成小而专的 TypeScript 微工具，按需挂载，别把全家桶一次性接上。",
+    "quote": "工具没调用，token 先替你花完了",
+    "source": "Dev.to",
+    "url": "https://dev.to/necoz/your-mcp-servers-are-silently-draining-your-context-window-the-hidden-cost-of-tool-heavy-ai-agents-fkl",
+    "published": "2026-11-15",
+    "vendor": "other",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "86ef9e374174dbee93707b5d093fef3a",
+    "title": "QA 群里的匿名投票，有点扎心",
+    "content": "作者上一篇讲公司 AI 测试实践的文章上了 DEV 周榜，评论区里同行吐槽 PRD 过期、agent 反复报同一个 bug、测试环境隔离差。更扎心的是他所在的一个约 500 人 QA 社群匿名投票：76 人里 16 人（21.1%）目前没有工作。作者提醒这不是行业失业率，但自动化把过去靠人兜住的交接环节暴露出来，谁来承担后果值得追问。",
+    "quote": "自动化没抢饭碗，先把遮羞布掀了",
+    "source": "Dev.to",
+    "url": "https://dev.to/xulingfeng/we-keep-hearing-about-ai-productivity-the-qa-group-chat-told-a-different-story-2nma",
+    "published": "2026-11-15",
+    "vendor": "other",
+    "direction": "工具/平台"
+  },
+  {
+    "uid": "4f9518dae0be401dc6c5339ab4afdd61",
+    "title": "AMD 送免费 API：十款模型随便调",
+    "content": "AMD 的 Token Lab 是 AI Developer Program 附送的免费 OpenAI 兼容接口，跑在 AMD 卡上，不用信用卡和额度，给 30 天与积分。目录里十款模型全标 Free，含 Gemma 4 31B、DeepSeek V4 Flash、Qwen3.8 27B 和三个 MiniCPM。作者搭本地聊天页把 key 留在服务端，再用一个 ADK agent 调 Gemma。",
+    "quote": "免费额度确实香，三十天后再看吧",
+    "source": "Dev.to",
+    "url": "https://dev.to/gde/cant-beat-free-gemma-4-31b-on-amd-token-lab-with-a-local-chat-page-and-an-adk-agent-c5b",
+    "published": "2026-11-15",
+    "vendor": "openai",
+    "direction": "工具/平台"
+  }
+]
