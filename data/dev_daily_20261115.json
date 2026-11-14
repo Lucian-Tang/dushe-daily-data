@@ -1,0 +1,227 @@
+[
+  {
+    "title": "用 Lean 形式化整部美国税法，找出 138 处立法笔误",
+    "source": "HN Front Page",
+    "url": "https://lexifina.com/blog/formalizing-the-us-tax-code",
+    "content": "Lexifina 把美国税法典（Title 26）逐条译成 Lean，用类型检查器验证每处交叉引用是否存在、是否仍然有效，并拿 IRS 表格里的算例当测试。257 个发现里 98 个属于过渡条款等合理情形，21 个是编辑标注的误报，最终确认 138 处起草错误。他们的下一个目标不是修法，而是让 AI 加证明器去搜还没人发现的漏洞。",
+    "quote": "漏洞不用人找，编译器替你翻法典。",
+    "published": "2026-11-15",
+    "uid": "dev_d8d3cec3"
+  },
+  {
+    "title": "753B 的 GLM-5.3，两台 DGX 拼出 607.8 tok/s",
+    "source": "HN Front Page",
+    "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm",
+    "content": "GLM-5.3 NVFP4 是 753B 参数的 MoE，每 token 激活 40B，权重要 464GB 显存，单卡 252GB HBM 装不下。NVIDIA 用两台 DGX Station 走 ConnectX-8 RDMA、TP=2 拼成一个 OpenAI 兼容端点，配合 FP8 KV cache 与前缀缓存，并发 16 时跑到 607.8 tok/s；并发 32 掉到 385 tok/s。",
+    "quote": "一台装不下，那就两台一起烧电。",
+    "published": "2026-11-15",
+    "uid": "dev_93f12b9e"
+  },
+  {
+    "title": "agweb：给 agent 用的浏览器，永不抢你的焦点",
+    "source": "HN Front Page",
+    "url": "https://github.com/paul-nameless/agweb",
+    "content": "作者同时跑多个编码 agent，被 Playwright 的 Chrome 窗口抢键盘、headless 又常被站点拦截，于是用 WebKit 写了 agweb：一个永不前置的窗口，agent 用 playwright-cli 风格命令从 shell 驱动，人在 ⌘D 面板里同时看所有标签页。空闲标签会被挂起，五个页面占 590MB，Playwright 要 1.6GB。",
+    "quote": "浏览器终于学会了不跟人抢键盘。",
+    "published": "2026-11-15",
+    "uid": "dev_c87d5b8e"
+  },
+  {
+    "title": "EFF：科技公司又在偷换「隐私」的定义",
+    "source": "HN Front Page",
+    "url": "https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again",
+    "content": "EFF 指出，隐私正从「个人选择」被改写成「你已经同意」：Meta 和 Google 的智能眼镜能录下佩戴者看到的一切，Apple Watch 的 Audio Intelligence 把每天的话转成文字，Amazon Bee 更进一步全天录音转写，还有一堆吊坠、戒指在做同样的事。当记录设备进入物理世界，一个人的隐私选择会直接落在陌生人、同事和家人身上，而厂商正把责任推给那句「用户同意」。",
+    "quote": "你点的同意，替一屋子人做了决定。",
+    "published": "2026-11-15",
+    "uid": "dev_02d5e4a3"
+  },
+  {
+    "title": "ggml 发布 1.0.0：砍掉废弃 API，全面提速",
+    "source": "HN Front Page",
+    "url": "https://github.com/ggml-org/ggml/releases/tag/v1.0.0",
+    "content": "ggml 1.0.0 删掉废弃公共 API 和遗留 DIAG_MASK 算子，RPC 协议升到 v9，握手失败会优雅退出；新增 YaRN 截断控制与 FP8 支持。CUDA/Metal 加了少量行的量化矩阵乘与 MoE 融合，Vulkan 补了 prefill FlashAttention，SYCL 有设备端 MoE 调度器，OpenCL 拆了 Adreno 的 FlashAttention。",
+    "quote": "1.0 的意思是：旧代码自己看着办。",
+    "published": "2026-11-15",
+    "uid": "dev_9ce8fe77"
+  },
+  {
+    "title": "PyPI 新版项目页上线：安全信号直接提到首屏",
+    "source": "HN Front Page",
+    "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete",
+    "content": "PyPI 重做后的项目页正式全量：把安全信号提到首屏，明确标出项目是否启用双因素、是否用 Trusted Publishing 发布，并给出版本历史的时间线视图。对天天 pip install 的人来说，以后判断一个包靠不靠谱，不用再翻到 GitHub 猜维护者是谁、上次发版是哪年。",
+    "quote": "包靠不靠谱，终于不用翻 GitHub 猜了。",
+    "published": "2026-11-15",
+    "uid": "dev_59cf3f05"
+  },
+  {
+    "title": "终端边框不占格：把制表符塞进字符缝里",
+    "source": "HN Front Page",
+    "url": "https://www.joshka.net/cell-borders",
+    "content": "终端里画边框通常要占掉一整格，作者拆解 Unicode 制表符的宽度规则，利用上下半格、左右半格和 box-drawing 字符的拼接，让边框只占半格甚至嵌进字符内部，省下的行列直接还给内容。文章配了大量终端截图和兼容性对照，HN 上 368 分、158 条评论在吵各家终端谁渲染得对。",
+    "quote": "边框省下的半格，够你多看一眼日志。",
+    "published": "2026-11-15",
+    "uid": "dev_bf1b7b9c"
+  },
+  {
+    "title": "怎么把音乐播放器写砸：一篇反面教材",
+    "source": "HN Front Page",
+    "url": "https://alichraghi.github.io/blog/how-not-to-build-a-music-player",
+    "content": "作者想做极简音乐播放器，结果在音频解码、元数据、播放队列、跨平台文件监听上连踩十几个坑，最后发现最难的不是播放本身，而是让 UI 状态和底层音频线程不打架。他的结论是先写一个无 UI 的播放引擎库，把 seek、暂停、缓冲这些状态机测透，再谈界面。",
+    "quote": "播放器最难的不是播放，是别让线程打架。",
+    "published": "2026-11-15",
+    "uid": "dev_ba092011"
+  },
+  {
+    "title": "Show HN：SystemVerilog 手写乱序 RV64 核心，能跑 Linux 6.6",
+    "source": "Show HN",
+    "url": "https://github.com/FURSOY/fursoy-cpu",
+    "content": "Fursoy 是一个用 SystemVerilog 从零写的 RV64IMAFDV 乱序执行核心，带 MMU、缓存与中断控制器，已经能在 FPGA 上跑 Linux 6.6。作者把流水线、寄存器重命名、乱序提交的实现摊开写在 README 里。Show HN 上只有 18 分——写 CPU 显然不如发个 agent 壳子吸睛。",
+    "quote": "写 CPU 的没流量，套壳 agent 的天天上头条。",
+    "published": "2026-11-15",
+    "uid": "dev_8b1832c1"
+  },
+  {
+    "title": "Show HN：终端里的放置工厂游戏，专治等 agent 的空窗期",
+    "source": "Show HN",
+    "url": "https://gitlab.com/snipedbywifi/terminactory",
+    "content": "有人用 Rust + ratatui 写了个终端里的放置类工厂游戏，没有图形界面，全靠字符画跑流水线、攒资源、升产线。作者的定位很诚实：专门填 agent 跑长任务时那段干等的空窗期。安装只要 cargo install，SSH 进服务器也能摸鱼，CPU 占用低到不会跟编译抢核。",
+    "quote": "等 agent 干活的空窗期，总算有事干了。",
+    "published": "2026-11-15",
+    "uid": "dev_6915eae6"
+  },
+  {
+    "title": "caveman：让 agent 说穴居人语，省下 65% token",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/JuliusBrussee/caveman",
+    "content": "caveman 是给编码 agent 用的技能加代理，思路很粗暴：让模型用「穴居人语」说话——去掉冠词、客套和连接词，只留动词和名词，据称能砍掉 65% 的输出 token。仓库已经 11.9 万星，代理用 Go 写，可以直接套在 Claude Code、Codex 这类工具前面。它火起来也说明一件事：大家真正心疼的不是模型不够聪明，是每个月的账单。",
+    "quote": "话说得不利索，账单倒是瘦了一圈。",
+    "published": "2026-11-15",
+    "uid": "dev_ba5238d0"
+  },
+  {
+    "title": "plannotator：把 agent 的计划摊开让人批注",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/backnotprop/plannotator",
+    "content": "plannotator 想解决「agent 自己跑、人插不上话」：它把 agent 的计划、改动和代码摊在一个工作区里，人可以标注、圈重点、写意见，再把整份反馈一次性发回给 agent，而不是在聊天框里来回拉扯。仓库 1.08 万星，TypeScript 写的，定位是人和 agent 之间那层审阅界面——让 agent 干活，人负责在关键节点签字。",
+    "quote": "agent 干活，人负责签字画押。",
+    "published": "2026-11-15",
+    "uid": "dev_7d876657"
+  },
+  {
+    "title": "安排一整晚的 agent 任务，被 Windows 更新重启杀了",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1257008",
+    "content": "V 友睡前给 agent 排了一整晚的全自动任务，期待醒来看到上线页面，结果被 Windows 的登录界面迎接——系统自动更新重启，把跑到一半的活全带走了。帖子里那句「这种设计究竟是怎么期待人用它稳定工作开发的」戳中很多人：把长任务交给消费级系统，最大的不确定性不是模型，而是系统什么时候决定重启。",
+    "quote": "模型没崩，Windows 先替你下班了。",
+    "published": "2026-11-15",
+    "uid": "dev_676966d1"
+  },
+  {
+    "title": "从 GPT Pro 换到 Google AI Ultra：30 亿 token 的账本",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1257050",
+    "content": "作者用两台 Mac 在本地统计真实请求，记录了从 GPT Pro 切到 Google AI Ultra（200 美元/月）两周的账本：拆解 Ultra 的额度回血规则、按 Codex 单周用量反算 Antigravity 的可用量、12 款模型的速度实测，还有两周高强度使用的消耗——开源输入法 TypeFree 和 AI 短剧加起来跑了 30 亿 token。",
+    "quote": "不谈跑分，只谈这 200 刀能烧多久。",
+    "published": "2026-11-15",
+    "uid": "dev_ad35d6e8"
+  },
+  {
+    "title": "15 天 108 次迭代，给 OpenWrt 写了个本地 DNS",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1257070",
+    "content": "作者的需求很朴素：网络走哪条线，DNS 就跟到哪，符合流量最短路径。为此他给 OpenWrt 写了 updns，核心是基于域名匹配的 DNS 路由和 nftables set 联动，另外支持 DoT/DoH、主动预取、广告拦截和 DNS 审计。项目历时 15 天、108 个版本迭代，定位是比 dnsmasq 更灵活的本地 DNS 服务器。",
+    "quote": "108 个版本，DNS 比路由还难伺候。",
+    "published": "2026-11-15",
+    "uid": "dev_8cb71522"
+  },
+  {
+    "title": "有人把 agent 塞进了 iPhone：能连 NAS、能控家居",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1256987",
+    "content": "V 友做了个跑在 iPhone 上的 agent：可以挂载本地 Linux、远程 Linux 或沙箱环境去干活，自带浏览器，支持动态生成 UI、自动扫描远程 skill、在各个环节插入逻辑的插件，还能用定时或地理位置触发任务。他自己拿它截图、给视频套手机壳、管家里的 NAS 和控制智能家居，目前 TestFlight 内测，帖子已有 21 条回复。",
+    "quote": "手机不再是终端，是 agent 的宿主。",
+    "published": "2026-11-15",
+    "uid": "dev_dd4e3b43"
+  },
+  {
+    "title": "sniplite：汇编加 C 写的截图工具，安装包不到 300KB",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1257125",
+    "content": "V2EX 网友用汇编加 C 写了个 Windows 截图工具，安装包不到 300KB、主程序约 220KB，不依赖 C 运行库。F1 自动识别鼠标下的窗口和控件并带放大镜，支持画圈、箭头、序号、马赛克和 F3 贴图，功能都能用命令行调用方便写脚本，MIT 开源。作者提醒没做数字签名，系统会拦一下。",
+    "quote": "220KB 干翻 Snipaste，还不用装运行库。",
+    "published": "2026-11-15",
+    "uid": "dev_4eea9a7d"
+  },
+  {
+    "title": "能打断的 AI 语音面试陪练：全双工，不抢话",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1257121",
+    "content": "独立开发者做了个全双工实时语音面试陪练：你停下来思考时它会等，它说得太长你可以直接打断，和发语音消息式的轮流转写完全不同。内置 system design 面试官和英语私教两个角色。防薅羊毛的办法是先和 AI 闲聊 5 分钟验真人，通过送 90 分钟时长，不登录只能试 10 分钟。",
+    "quote": "能打断的 AI，才像在跟人说话。",
+    "published": "2026-11-15",
+    "uid": "dev_bf0d3e7c"
+  },
+  {
+    "title": "用大麦克指数给 App 定价：让油王爷付全价",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1257102",
+    "content": "作者照抄 Steam 和 Netflix 的低价区思路，用《经济学人》大麦克指数给 App 和 IAP 做分区定价：中东按美国价，南亚按购买力打折，瑞典这种高物价地区顺势标高。实现从浏览器插件退化成一段书签 JS，打开 App Store 页面直接算价。他也承认 PPP 比大麦克指数更准，人民币其实被刻意压低了。",
+    "quote": "让油王爷付全价，让瑞典姥爷继续贵着。",
+    "published": "2026-11-15",
+    "uid": "dev_eb62ad3d"
+  },
+  {
+    "title": "十个手写 Room 迁移，加上关掉的 schema 导出",
+    "source": "Dev.to",
+    "url": "https://dev.to/tryreclaim/ten-hand-written-room-migrations-and-exportschema-false-auditing-an-android-apps-database-1875",
+    "content": "ReClaim 是一个上架 Google Play 的极简 Android 桌面，18 张表、schema 版本 14，版本 4 之后每次升级都靠手写迁移，而且数据库声明了 exportSchema = false。作者回头审计这段历史：哪些规则只存在脑子里没写下来、主动拆掉的安全网付出了什么代价，以及他们怎么用一个脚本检查十次迁移——仓库里一个迁移测试都没有。",
+    "quote": "没有测试的迁移，全靠用户当测试机。",
+    "published": "2026-11-15",
+    "uid": "dev_50438c4b"
+  },
+  {
+    "title": "纯 Go 单二进制 WAF：不靠规则库，靠语义图",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/anye1991/p/23667441",
+    "content": "作者实测了一个纯 Go 编译、零依赖的 WAF：流量先过 14 层归一化（URL、Base64、HTML 实体、零宽字符），再进语义图引擎，同时用 SQL、JS、HTML 多种语法假设这段输入，解析不掉的残渣挂成 Residue 节点而非丢弃，再靠污点追踪看 Source 到 Sink。命中高频攻击就调 ipset 把 IP 丢进内核黑洞，扫描期 CPU 从 80% 降到 5% 以内。",
+    "quote": "正则拦不住的，交给语义图慢慢算。",
+    "published": "2026-11-15",
+    "uid": "dev_992f6909"
+  },
+  {
+    "title": "刚说好别动这个文件，Agent 怎么又改了",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/leikooo/p/23666738",
+    "content": "一篇长文拆解 agent 的上下文压缩：模型无状态，每轮都要重发全部历史，agent 读文件、跑测试的 tool result 很快塞满 200K 窗口，还会撞上 context rot 和 prompt cache 失效。文章对比 Codex、Claude Code、Hermes Agent、pi 四家做法——交接摘要、加密数据、五层级联、原件全留——本质都是有损的工作交接。",
+    "quote": "压缩的不是上下文，是你刚说的话。",
+    "published": "2026-11-15",
+    "uid": "dev_01998bd9"
+  },
+  {
+    "title": "13 家 LLM 提供商，一台本地服务器全仿真",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23666799",
+    "content": "managedcode/LlmTestServer 在本地假装成 LLM 服务商：OpenAI、Azure、Anthropic、Gemini、Bedrock、Groq 等 13 家原生协议都实现了，不只套一层兼容皮。测试脚本用「剧本」规定第几次请求回什么、何时返回 429、SSE 在哪个分片断开，应用侧只改 base URL。仓库目前只有 2 星。",
+    "quote": "2 星的工具，替你把线上事故演一遍。",
+    "published": "2026-11-15",
+    "uid": "dev_7bd0d822"
+  },
+  {
+    "title": "离线 0.97 上线 0.82：预处理做在了划分之前",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/dawudexiaowu/p/23662932",
+    "content": "作者复盘一个最隐蔽的数据泄漏：预处理做在训练测试划分之前。全集 SMOTE 让合成样本成了测试集的近亲，离线指标虚高 4.2 个点，上线直接掉到 0.82。防线是结构性的——划分永远是第一行代码、预处理塞进 Pipeline、上线前留一份 holdout 终评，别用同一批数据反复调参。",
+    "quote": "预处理跑在划分前，离线分数全是自欺。",
+    "published": "2026-11-15",
+    "uid": "dev_60bc78d2"
+  },
+  {
+    "title": "Gemini 4 Hydrogen 赢了什么：日常回路该换，旗舰还早",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/aimountain/p/23665202",
+    "content": "11 月 13 日凌晨谷歌悄悄把 Antigravity 的默认模型换成 Gemini 4 Hydrogen：官方称 2.5 倍速、幻觉率 8%、统一 $1.5/$7.5 定价，用户体感是快一倍、说人话、连开四五轮才花 3% 周额度。但 Terminal-Bench 仍输 Sonnet 5.5。作者的结论是该换的是日常回路，不是旗舰。",
+    "quote": "旗舰还是旗舰，日常回路该换就换。",
+    "published": "2026-11-15",
+    "uid": "dev_d2715224"
+  }
+]
