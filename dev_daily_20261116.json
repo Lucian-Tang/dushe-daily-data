@@ -1,0 +1,227 @@
+[
+  {
+    "title": "159041 个 Lovable 项目里，大量应用在裸奔",
+    "content": "Crissy Field 与《商报》分析了 2025 年 12 月到 2026 年 9 月的 159041 个 Lovable 项目，其中 24664 个网站在打开时就把数据库记录发给了未登录访客。用同一个 key 只读请求还能捞到更多：一个德国论坛露出 8 万多份个人档案和 20 多万条聊天记录，某服务商泄露 1000 多条含护照号的证件信息。安全责任条款却划给了用户。",
+    "quote": "平台替你生成应用，也替你泄露数据。",
+    "source": "HN Front Page",
+    "url": "https://www.crissyfield.de/research/lovable-en",
+    "published": "2026-11-16",
+    "uid": "5dec89054f585dd5383f474120f6066b"
+  },
+  {
+    "title": "所有 AI 生成的代码都应该开源",
+    "content": "作者主张 AI 生成的代码应全部开源或直接 CC0 入公有领域。理由有两条：模型本身就是拿几十年开源代码、以及 CC 授权要求署名的 Stack Overflow 内容喂出来的，把这份集体知识变成闭源产品等于洗授权；再者纯 AI 生成的代码没有人类作者，按「猴子自拍」判例根本不该享有版权。他也承认现实多是混合，但那种只写 prompt、连输出都不看的部分更该交出来。",
+    "quote": "拿开源喂出来的模型，回头卖你闭源。",
+    "source": "HN Front Page",
+    "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source",
+    "published": "2026-11-16",
+    "uid": "bad262ace09e4bdd6a6356e2291b3720"
+  },
+  {
+    "title": "HTTP 新增状态码 483：我不是冰箱",
+    "content": "IETF 出现一份新草案，为 HTTP 增加状态码 483「I'm Not a Freezer」：当服务器看懂了一个要求冷冻或冷藏能力的请求、但自己没这个能力时，就返回它。文档还顺手厘清了冰柜、冰箱、低温机房、被冻住的软件进程，以及那些自称提供「冷存储」的在线服务之间的区别，并讨论了它与 418 的关系、缓存和中间代理该怎么处理。草案 11 月 15 日发布，半年后过期。",
+    "quote": "418 是茶壶，483 是冰箱，RFC 像动物园。",
+    "source": "HN Front Page",
+    "url": "https://datatracker.ietf.org/doc/draft-banffy-httpbis-not-a-freezer",
+    "published": "2026-11-16",
+    "uid": "1f1c507a264de63da64b570fd92ca009"
+  },
+  {
+    "title": "法院驳回撤诉：DRAM 三巨头要接着打官司",
+    "content": "11 月 14 日加州北区法官 Noël Wise 全部驳回三星、SK 海力士、美光的联合撤诉动议，指控三家合谋削减 DDR5 等通用 DRAM 供应、把产能转去 HBM 的集体诉讼得以继续。法院认定这不是 2022 年 DRAM II 案重演：HBM 长期锁单、拒签通用 DRAM 长约、美光关停 Crucial、新厂延期、创纪录价格下仍不扩产，加上卡特尔前科，足以支撑合谋的合理推断。",
+    "quote": "内存涨价不是天灾，法院说可能是人祸。",
+    "source": "HN Front Page",
+    "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
+    "published": "2026-11-16",
+    "uid": "c28c0b3c68a4434c294cf480fcbf790e"
+  },
+  {
+    "title": "一张图看懂 80 年软件职称变迁",
+    "content": "做了多年 Head of DevOps 的作者拉着 Claude 画了张 1940 年代至今的软件职位家谱：104 个职称、七个族系（开发、架构与管理、运维基建、网络与安全、数据与 AI、测试、支持），纵向按五年一行排布，实线表示演化、虚线表示转岗。他顺手发现：1947 年 coding 被当作低薪文书活、多由女性承担；而 SRE、DevOps、平台工程不过是同一份工作换名字。",
+    "quote": "头衔换了一轮又一轮，活还是那点活。",
+    "source": "HN Front Page",
+    "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles",
+    "published": "2026-11-16",
+    "uid": "6095dd7a97bdf4d42f86e3e0d51af0c8"
+  },
+  {
+    "title": "Show HN：NCM 架构要革显存的命，本地跑大模型不用堆内存",
+    "content": "作者引用斯坦福的 Next Concept Modeling（NCM）论文：本地跑开源模型卡在内存带宽，逐 token 生成要反复搬运权重和 KV 缓存，内存成本高得离谱。NCM 的思路是改成「概念级」预测，一次推进一个语义单元，把对高带宽内存的依赖压下来。作者的判断很直白：这套要是成立，现在囤 HBM 的钱可能都是坏投资。",
+    "quote": "如果 NCM 成立，囤显存的都在高位接盘。",
+    "source": "HN Show HN",
+    "url": "https://codedynasty.dev/posts/ncm_model-are_memory-hungry_LLMs_dead",
+    "published": "2026-11-16",
+    "uid": "c91b43ec5cd71736500979977e1db102"
+  },
+  {
+    "title": "Show HN：没有 while true 的事件驱动 agent，每一轮都是状态机",
+    "content": "Pizza 是个开源桌面 agent，核心是把「一直循环调模型」换成事件驱动：用户消息、工具返回、文件改动都写进不可变 SQLite 事件日志，每轮由一个 Reactor 状态机推进。这份日志同时是界面、模型上下文和历史树的唯一真源，中断、重试、并行工具调用都有显式处理器，还能从任意历史消息分叉出新的对话分支。",
+    "quote": "别再用 while true 假装自己是架构。",
+    "source": "HN Show HN",
+    "url": "https://pizza.hertzbeat.com/",
+    "published": "2026-11-16",
+    "uid": "d377fbe5186a8bc68876bb74860ec1f6"
+  },
+  {
+    "title": "Show HN：107MB 的 DOM 选择器模型，在 CPU 上打赢 7B 视觉模型",
+    "content": "Folate 用 ELECTRA-base 微调成判别式 cross-encoder，把「自然语言指令 + 序列化后的 DOM 元素」成对打分，直接从 lxml 抽出的真实可交互节点里挑目标，输出的选择器保证页面上存在。INT8 ONNX 只有 107MB，配 headless Chromium 总占用不到 2GB，不装 PyTorch 也能跑，专为笔记本和容器里的浏览器自动化准备。",
+    "quote": "为了点一个按钮，不必先请一尊 70 亿参数。",
+    "source": "HN Show HN",
+    "url": "https://github.com/figranium/folate",
+    "published": "2026-11-16",
+    "uid": "8635b54a66a6bfa5054f647c92af6eee"
+  },
+  {
+    "title": "Show HN：不用 Electron 的原生 agent 桌面端，模型随便接",
+    "content": "byob 是 Rust 写的本地 agent 工作台，自带 GPU 渲染的原生界面，安装包 60MB（精简版 13MB），任何 OpenAI 兼容端点都能接，启动时自动扫本机 llama-server、Ollama、LM Studio、vLLM 的默认端口。工具调用带审批卡片和 diff，支持按轮撤销；表格、图表、文档、HTML 小应用直接在对话旁边生成，还能把同一会话开到手机浏览器。",
+    "quote": "套个 Electron 壳就敢叫桌面端，这才叫客户端。",
+    "source": "HN Show HN",
+    "url": "https://github.com/Scronkfinkle/byob",
+    "published": "2026-11-16",
+    "uid": "05f86ae21a029412723b58e95aa2dd83"
+  },
+  {
+    "title": "chrome-devtools-mcp：让 agent 亲手调试浏览器",
+    "content": "Chrome 官方 DevTools 团队出的 MCP 服务器，让编码 agent 接管一个真实 Chrome：抓性能 trace、读控制台报错与网络请求、点页面元素、截图，还能拿到无障碍树和 Lighthouse 审计结果。一条 npx 就能挂到 Claude Code、Cursor 上。仓库 5.67 万星，是这轮「让 agent 会调试」里最正统的实现——调试协议本来就是他们家的。",
+    "quote": "协议是自家的，agent 当然先学会调试。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "published": "2026-11-16",
+    "uid": "b4212d4b4d442e7efacb45d4bce01466"
+  },
+  {
+    "title": "Google Labs 的 Agent Skills 库：把设计稿变成前端",
+    "content": "Google Labs 放出的 Agent Skills 库，配合 Stitch MCP 把设计稿转前端拆成一组可复用技能，遵循 Agent Skills 开放标准，在 Antigravity、Gemini CLI、Claude Code、Cursor 里都能加载。9.1 千星。意义不在单个技能多强，而是 Google 开始用同一套标准往 agent 生态里塞自己的工具链。",
+    "quote": "谁定下标准，谁就占住整个生态。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/google-labs-code/stitch-skills",
+    "published": "2026-11-16",
+    "uid": "f73b7c861bcc0e09d86628d96f706ac5"
+  },
+  {
+    "title": "腾讯开源 LoopForge：给编码 agent 装审批闸门",
+    "content": "腾讯开源的编码 agent 交付工作流引擎，Go 编写，1.3 千星。核心是把 CodeBuddy、Codex、Claude Code 这些 agent 编排进一条带人工审批闸门的流水线：脚本定义步骤，agent 干活，关键节点停下来等人签字，主打 human-on-the-loop 和自托管。它要解决的不是「让 agent 更聪明」，而是「让 agent 的产出能被组织放心合并」。",
+    "quote": "agent 干活容易，让人敢合并才难。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/Tencent/LoopForge",
+    "published": "2026-11-16",
+    "uid": "26dd9a85c7cf616853c2f67970966686"
+  },
+  {
+    "title": "DiffCode：4MB 的 Mac 原生 diff 查看器",
+    "content": "代码基本交给 agent 写了，可 review 还得看 diff，而为了看 diff 又得开 Xcode、Android Studio 或 JetBrains 全家桶，一启动吃掉几个 G。V 友于是做了 DiffCode：不是 IDE，是纯 Mac 原生的 diff 查看器，安装包 4MB，启动后内存约 40MB。开源也提供安装包，12 条回复在聊轻量 review 工具该不该独立成品类。",
+    "quote": "为了看 diff 装几个 G 的 IDE，本末倒置。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1257203",
+    "published": "2026-11-16",
+    "uid": "b03bc12710a8345bfb89e6fc2bcd465a"
+  },
+  {
+    "title": "Codex RC Bridge：手机用个人号，电脑用工作号",
+    "content": "Codex 官方远控要求手机和电脑登录同一个 ChatGPT 账号，手机用个人号、电脑用工作号就断线了。作者写了 Codex RC Bridge：两端分别授权配对后，可以在手机上的官方 ChatGPT App 里控制另一个账号下的 Codex，手机不用切号，一台手机也能连多台电脑。Mac 可直接装，也能用 Docker 自建。代价是桥接器要经手凭据，等于把账号安全交给一个自建服务。",
+    "quote": "为了不切号，把账号交给了桥接器。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1257160",
+    "published": "2026-11-16",
+    "uid": "64d06daac36c9b387555453368cbf5a4"
+  },
+  {
+    "title": "LibrioX：书库是一个文件夹，笔记自动变 Markdown",
+    "content": "LibrioX 是个本地优先的电子书阅读器，理念是 File Over App：书库就是电脑上的一个文件夹，子文件夹即分类，支持 EPUB、PDF、MOBI、AZW3、FB2；每本做过笔记的书旁边自动生成同名 .md，能直接放进 Obsidian。选中文字就能问 AI、翻译，回答带原文出处；同步走自己的 S3 或 WebDAV。短板：iOS 还在内测、.md 单向写出、只支持无 DRM 文件。",
+    "quote": "笔记锁在阅读器里，等于没写过。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1257220",
+    "published": "2026-11-16",
+    "uid": "c0cf60f7884b67c81525bc90310e487f"
+  },
+  {
+    "title": "开源 Browser Hands：让 Codex 和 Cursor 用上插件级的浏览器操作",
+    "content": "作者同时重度使用 Claude Code、Codex 和 Hermes 这类 agent，最憋屈的是浏览器控制：官方插件级的操作只给自家用，别的工具只能靠半残的封装。于是他花几个周末写了开源的 Browser Hands，把填表、点后台、查资料这些动作统一成一套接口，让 Codex、Cursor 也能调。帖子附了 20 秒演示，直接看 agent 自己点完一整条流程。",
+    "quote": "浏览器自动化这块，各家都只给自己留全须全尾。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1256953",
+    "published": "2026-11-16",
+    "uid": "fde33d40f4b19c6e1adc38f1cb84b075"
+  },
+  {
+    "title": "用 Claude 生成的 HTML 幻灯片很好看，但交差还得是 PPTX",
+    "content": "作者已经不用传统 PPT 模板，直接把大纲丢给 Claude Artifact、Gemini 或 Cursor 生成单文件 HTML 幻灯片，排版和信息密度比「一句话生成 PPT」的产品强不少。卡点在交付：汇报和课件必须交 PPTX 或 PDF，于是他写了个纯前端小工具，能在浏览器里微调分页和字号，再一键导出 PPTX/PDF，不用回 PowerPoint 重排。",
+    "quote": "做得再好看，交不了 PPTX 就等于没做。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1256973",
+    "published": "2026-11-16",
+    "uid": "a95c17060c200ec280c00e073bed7a7d"
+  },
+  {
+    "title": ".NET 10 和 11 同一天停止支持，那还不如选新的",
+    "content": ".NET 10（LTS）和 .NET 11（STS）的支持截止日是同一天：2028 年 11 月 14 日。既然终点一样，晚一年出生的 .NET 11 反而更值得作为迁移目标。作者梳理了双轨制来历：2019 年定下每年 11 月发一版、偶数 LTS 奇数 STS；2025 年 9 月起 STS 从 18 个月延长到 24 个月，于是出现同归于尽的排布。文章也写了什么情况下仍该留在 .NET 10。",
+    "quote": "同一个死期，当然选年轻的那个。",
+    "source": "Dev.to",
+    "url": "https://dev.to/georgekobaidze/net-11-unpacked-why-im-recommending-sts-this-time-lnj",
+    "published": "2026-11-16",
+    "uid": "1890280e956b09d0bf8ac0e12d729776"
+  },
+  {
+    "title": "agent 能抓网页却搜不了，问题不在模型",
+    "content": "作者在 DeepSeek Harness 里遇到怪事：web_fetch 一直能用，web_search 却永远搜不出结果。排查后发现差别不在 agent 框架，而在两个工具背后的服务——一个直接抓页面，一个依赖搜索后端。他把这归结成一个常见误判：agent 说「我做不到」，往往不是模型能力问题，而是某个工具的依赖悄悄挂了。修法不是换模型，是给每个工具加一条独立探活。",
+    "quote": "agent 说做不到，多半是工具先死了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/build996/my-agent-could-fetch-a-url-but-could-not-search-for-one-ddg",
+    "published": "2026-11-16",
+    "uid": "74415357a76158b899f82237fb5eaf00"
+  },
+  {
+    "title": "Cloudflare Workflows 重放缓存步骤时，别忘了校验旧数据",
+    "content": "Cloudflare Workflows 会把成功的 step 结果持久化，部署新版本后从最后一个完成点继续跑。问题是新代码收紧了输入契约，缓存里的旧结果却不会重跑，系统会静默接受不符合新规则的数据。作者给的补丁很小：step.do 取回结果后立刻用当前版本的校验函数过一遍，不合法就抛错让流程重来，别指望持久化层替你守规矩。",
+    "quote": "缓存不会跟着你的新校验一起升级。",
+    "source": "Dev.to",
+    "url": "https://dev.to/raylabs/validate-cached-cloudflare-workflow-step-output-on-replay-1j72",
+    "published": "2026-11-16",
+    "uid": "4c2fd0414b7461ed5378f4eee99a5962"
+  },
+  {
+    "title": "MiniMax H3 视频控制：八种 ControlNet 2.0 模式实测",
+    "content": "视频上的 ControlNet 和图像不是一个问题：控制信号必须逐帧保持连贯。作者用 CN Union 2.0 跑了四套工作流——视频控制加局部重绘、音频驱动数字人、通用视频生成、纯重绘——再按实用性给八种模式排序。结论是 Depth 最稳，能扛住镜头运动和切镜；Canny 适合建筑和道具这类硬边主体，遇到头发和树叶就崩。",
+    "quote": "控制信号一帧一崩，再好的模型也白搭。",
+    "source": "Dev.to",
+    "url": "https://dev.to/ai-ksk/minimax-h3-video-control-eight-controlnet-20-modes-motion-guidance-and-1080p-two-pass-1fi3",
+    "published": "2026-11-16",
+    "uid": "e7702402e896162d361dda79152b2e80"
+  },
+  {
+    "title": "AI 审了我自己写的插件，挑出 58 个问题",
+    "content": "作者的插件测试 170 个全绿、双端类型检查 0 错误、发布门禁 19 项全过，然后 npm publish 报 403——版本号还是 rc.10。他让 AI 做了一次只读全面审查，六维度四路并行、每条须带路径和行号，挑出 58 个问题，3 个阻断级全在发布链路上：CI 因 lockfile 停在半年前而第一步就挂、npm publish 少了 --tag、latest 标签停在两个月前。",
+    "quote": "测试全绿，发布链路断了两个月。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Y9931666/p/23672547",
+    "published": "2026-11-16",
+    "uid": "931ee01daf220373c3003db7783e649b"
+  },
+  {
+    "title": "让 Codex 自己去观测云查报错",
+    "content": "作者把「出问题先翻日志、再复制一大段给 AI」这一步也省了：给 Codex 接上观测云官方的 OWL MCP，只报文档编号、批次号、来源名和时间范围，让它自己去查运行日志。第一次不给入口，Codex 老实回答「无法确定失败阶段」；接上 MCP 后它能自己翻到具体异常，还能对比同批成功与失败的记录。关键细节是查询 Key 只读、任务范围写死，采集 Token 和查询权限是两回事。",
+    "quote": "能自己查日志的 agent，才配叫同事。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/guoxiaoyu/p/23673383",
+    "published": "2026-11-16",
+    "uid": "8cac09a868ba88a5d185161dc5cf5fca"
+  },
+  {
+    "title": "别再把数据库连接串丢给 AI：开源 MCP 数据库网关 BaseWard",
+    "content": "BaseWard（库卫）是个 MCP 原生的数据库网关，思路是把连接串留在服务端，不下发给 Agent；Agent 拿到的是可随时吊销、权限收敛到列的 Token，所有查询走网关留审计日志。作者点出的现实场景很常见：为了让 AI 查个数，直接把生产库的 root 连接串写进 MCP 配置，出事之后既查不到谁干的，也收不回权限。",
+    "quote": "给 AI 开 root，还指望它只读不写。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/zskbll/p/23673467",
+    "published": "2026-11-16",
+    "uid": "3664590396c4b9f1c65d873954302e9d"
+  },
+  {
+    "title": "KIMI K3 的 MoonEP 源码解读：专家并行到底怎么省通信",
+    "content": "这篇长文拆 KIMI K3 里 MoonEP 的实现，先讲标准专家并行（EP）的三重痛点——全量 All-to-All 通信量大、负载不均导致木桶效应、显存被专家参数撑爆，再逐层看 MoonEP 怎么在路由、通信和放置上做取舍。作者把它放在同期竞品里定位，并给出「一句话说明它到底解决什么」的结论，适合想复刻轻量 MoE 推理的人当索引读。",
+    "quote": "MoE 的论文都在讲效果，代码里全是通信。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/rossiXYZ/p/23594288",
+    "published": "2026-11-16",
+    "uid": "356ff91e3e25f3cdff55de883e3983b1"
+  }
+]
