@@ -1,0 +1,227 @@
+[
+  {
+    "title": "阿里 Qwen4-Max 预览版：984k 上下文，定价腰斩",
+    "content": "阿里发布 Qwen4-Max 预览版：支持文本与图像输入，上下文窗口 984k，定价每百万输入 1.5 美元、输出 4.5 美元，缓存折扣 95%。第三方评测 Artificial Analysis 给出 43 分（同类中位数 41），但跑完评测吐了 1.27 亿 token，冗长程度远超中位数的 7860 万。HN 上 750 多分、370 多条评论，争论集中在参数不公开和长上下文的实际可用性。",
+    "quote": "984k 上下文，先塞满再说对不对。",
+    "source": "HN Front Page",
+    "url": "https://qwen.ai/blog?id=qwen4-max",
+    "published": "2026-11-17",
+    "uid": "9a66e5d8e0acdafc8773188c88a92f82"
+  },
+  {
+    "title": "uBlock Origin 被一键通杀 XSS：透明 iframe 骗你点「创建」",
+    "content": "安全研究者发现 uBlock Origin（Firefox MV2 版，uBO Lite 影响较轻）存在一键通杀 XSS：恶意站点先挂一层 opacity 0 的 iframe 嵌入元素选择器页面，把你引到看不见的「创建」按钮，从而写入带 +js 的受信任过滤规则，之后可在任意站点执行 JS。扩展内部 UUID 还能被页面 hook XHR 反推。漏洞已修复。",
+    "quote": "广告没拦住，先把你自己交出去了。",
+    "source": "HN Front Page",
+    "url": "https://iter.ca/post/ubo-uxss/",
+    "published": "2026-11-17",
+    "uid": "aebd864fa2e7bee16860435f48340213"
+  },
+  {
+    "title": "十几年前的 Bitly 短链被人重新注册，跳去纳粹集中营词条",
+    "content": "汉堡王 2011 年一条推文里的 Bitly 短链，2026 年 11 月 15 日被他人重新注册，跳到了维基百科「纳粹集中营列表」；18 分钟前，麦当劳 2011 年推文里的短链也被指向 9·11 条目。Ransomnews 抽查特朗普 2009–2013 年的 97 条 Bitly 链接，56 条的实际创建时间晚于推文。Bitly 已确认问题，封禁相关账号并停用受影响链接。",
+    "quote": "短链会过期，账号不会，锅还得原主背。",
+    "source": "HN Front Page",
+    "url": "https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/",
+    "published": "2026-11-17",
+    "uid": "a33482db3f253ac2574eddaf278097ad"
+  },
+  {
+    "title": "两亿条外链、DNS 打不开：一个随机域名是怎么刷上榜首的",
+    "content": "博主给自己的站点挂外链监控时，发现随机字符串域名 w2rt6byl5nf1opmc-a.com 出现在 Siteerate 热门网页榜单，还挤进 Majestic Million 增长榜：2.41 亿条 nofollow 外链、来自 516 万个引荐域，而 Ahrefs 只看到 53 条。该域名 11 月 11 日才注册，DNS 至今不解析，却已有 AI 生成的新闻稿为它背书。",
+    "quote": "两亿条外链撑起来的网站，打不开。",
+    "source": "HN Front Page",
+    "url": "https://jack.cab/blog/siterate",
+    "published": "2026-11-17",
+    "uid": "027c4738f1b4f603c201d29ae36e14b8"
+  },
+  {
+    "title": "It's always DNS：所以 S2 决定自己写一台权威 DNS",
+    "content": "S2 想让每个 basin 都拥有 my-basin.b.s2.dev 这样的子域，等于需要无限量、强一致的 DNS 记录。Route53 扛不住：API 每秒约 5 次 UPSERT，曾有用户快速创建上万 basin 打满配额，正常更新卡了几小时。GCP、Cloudflare、Azure 的托管 DNS 同样限速，批处理又违背「创建即可解析」。最后他们自己跑权威 DNS，文章记录了替换全过程。",
+    "quote": "嘴上说 always DNS，手上还是自己写。",
+    "source": "HN Front Page",
+    "url": "https://s2.dev/blog/dns-server",
+    "published": "2026-11-17",
+    "uid": "0ab7c376847a7a140627d91923efd092"
+  },
+  {
+    "title": "Tor 发 0.4.9.17：被 DDoS 打急了，先补 IPv6 中继防御",
+    "content": "Tor 发布 0.4.9.17 稳定版，专门应对仍在持续的 DDoS：海量客户端电路把中继压垮，这次修复里最关键的一项与 IPv6 处理相关的中继 DoS 防御有关。官方坦言问题不好一次解决，正在评估更多防御手段，后续还会连续发版，并感谢中继运营者在邮件列表里一起扛攻击。HN 上 213 分、55 条评论。",
+    "quote": "匿名网络先被流量淹没，隐私也得排队。",
+    "source": "HN Front Page",
+    "url": "https://forum.torproject.org/t/security-release-0-4-9-17/22454",
+    "published": "2026-11-17",
+    "uid": "f33fd9c9238bbcf7961174615f9fe167"
+  },
+  {
+    "title": "Ductus：写 26 个字母，把你的手写变成字体",
+    "content": "Ductus 是一个在浏览器里把手写变成字体的工具：按提示写 26 个小写字母，它提取字形、对齐基线和间距，最后导出可安装的字体文件。所有笔画只在本机处理、不上传服务器，页面明确写着只在这台设备上检查。适合做个人手写体、给笔记配字，或者给孩子的作业换一套字。",
+    "quote": "手写体不用买，写 26 个字母就行。",
+    "source": "HN Front Page",
+    "url": "https://ductus.sorenblank.com",
+    "published": "2026-11-17",
+    "uid": "2f381630686734f832adcf7d25ae196d"
+  },
+  {
+    "title": "Protomaps 自托管地图瓦片：一个文件丢 CDN，成本只剩存储",
+    "content": "作者用 Protomaps 的 PMTiles 自托管地图瓦片：整个地图集就是一个文件，靠 HTTP Range 请求按需读取，丢进 Bunny.net 这类支持 Range 缓存的存储桶即可，不必自己搭瓦片服务器。对比 Mapbox 免费额度用完后每千次加载 5 美元，个人项目一旦爆量就很难扛，自托管几乎只剩存储和流量成本。文里给了下载、部署和嵌页面的完整步骤。",
+    "quote": "地图 API 一爆量就破产，不如自己扛文件。",
+    "source": "HN Front Page",
+    "url": "https://bruceroettgers.eu/blog/protomaps",
+    "published": "2026-11-17",
+    "uid": "0a615651dc1468111fa639f1399c1eca"
+  },
+  {
+    "title": "Show HN：OpenTodo，一个 Go 二进制装下自托管待办清单",
+    "content": "OpenTodo 是自托管的开源待办应用：一个 Go 二进制里塞进 React PWA 和 SQLite，启动后监听 8080、数据放在 ./data，空闲内存约 20MB。支持离线使用、家庭或团队共享清单、自然语言快速添加（“Call Sarah next Wed 3pm #work p1”自动识别日期、项目与优先级）、时间块和番茄钟，另有 iOS 客户端与 CLI。AGPL-3.0 开源。",
+    "quote": "待办清单也要按月订阅，确实该自己搭。",
+    "source": "Show HN",
+    "url": "https://github.com/OpenTodoApp/OpenTodo",
+    "published": "2026-11-17",
+    "uid": "fe74b207b613ce3697a2450e70277b38"
+  },
+  {
+    "title": "Univer：27.6k star 的「AI Office SDK」，人和 agent 共用一套表格内核",
+    "content": "dream-num/univer 今日登上 GitHub Trending，27.6k star，TypeScript 编写。定位已不是单纯的开源电子表格，而是「AI Office SDK」：把编辑、计算、协同和文件处理能力嵌进产品，让人和 AI agent 共用同一套表格与文档内核。对想自建在线 Excel、又不想被商业套件绑死的团队来说，这是目前少数能整套拿走、还带扩展核心的方案。",
+    "quote": "Excel 抄了三十年，终于有人把底座开源。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/dream-num/univer",
+    "published": "2026-11-17",
+    "uid": "dd3f7c0b511db93046835522f30e4b99"
+  },
+  {
+    "title": "AG-UI：18.6k star，给 agent 和前端定一套交互协议",
+    "content": "ag-ui-protocol/ag-ui 已有 18.6k star：一套 Agent 与前端交互的协议，把 agent 的状态、事件和工具调用用统一事件流推给 UI，前端不必为每个 agent 框架各写一套适配。项目同时给出多语言 SDK 和调试器，让「agent 跑到哪一步、要不要人工确认」在界面上真的可见。热度背后是同一个困境：大家都在把 agent 塞进产品，前后端协议却各写各的。",
+    "quote": "agent 很聪明，界面还在猜它在想什么。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/ag-ui-protocol/ag-ui",
+    "published": "2026-11-17",
+    "uid": "dc6cbbda1a8ce8caafa650eeb4d09d63"
+  },
+  {
+    "title": "Arcane：8.5k star 的 Go 版 Docker 管理面板",
+    "content": "getarcaneapp/arcane 是 Go 写的 Docker 管理面板，8.5k star，主打「人人可用」：容器、镜像、网络、卷、Compose 栈和镜像更新检查集中在一个界面，支持多环境切换和基于角色的权限，走单二进制部署。相比 Portainer 更轻，适合家里 NAS 或小团队自建，不用再记一长串 docker 命令，也不用为一段 YAML 的缩进反复试错。",
+    "quote": "YAML 缩进对了，人生也没对。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/getarcaneapp/arcane",
+    "published": "2026-11-17",
+    "uid": "8cf8cdd6642699abb69029136eaf94ea"
+  },
+  {
+    "title": "爬了 X 和 LinkedIn，专收 hiring manager 亲自发的 AI 招聘贴",
+    "content": "作者抓取 X 和 LinkedIn 上 hiring manager 亲自发布的 AI 岗位贴，并同步各公司官网职位，做了聚合站和一份 AI 招聘大盘。理由很实在：HM 先发帖时岗位还没进招聘系统，竞争者少、回复率高；官网同步能验证岗位是否还开着；全量数据还能看出哪些方向在扩招。这类活的难点不在爬，而在去重、判断岗位是否真实有效，以及别把三年前的帖子当新机会。",
+    "quote": "招聘软件刷不到的机会，藏在人家时间线里。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1257523",
+    "published": "2026-11-17",
+    "uid": "cd3d214248f8d4428e1902b15cf897fb"
+  },
+  {
+    "title": "受够 Canva 和 WPS，他做了个图片转可编辑 PPT 的工具",
+    "content": "被 Canva 和 WPS 的图片转 PPT 折磨后，作者自己做了个工具：把 GPT 生成的幻灯片图片转成可编辑 PPT，尽量保留艺术字，重点优化中文识别、段落换行和底图补全。他的判断是纯生图方案拆不了多层、Canva 路线又重又容易中文乱码，于是用微调模型加大量案例测试，宣称 2 到 3 分钟出稿，并提供免费试用积分。",
+    "quote": "AI 画的 PPT 好看，改一个字就露馅。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1257556",
+    "published": "2026-11-17",
+    "uid": "8c84155d89d68a872591212ad9145394"
+  },
+  {
+    "title": "DevNook：macOS 上把项目、服务和被占的端口管起来",
+    "content": "同时开几个项目、又让 Codex 帮忙起服务的人，最容易遇到端口被占却不知道是谁占的。DevNook 把项目、服务和端口放进一个 macOS 应用：扫描代码目录导入项目，端口页显示监听进程、命令、工作目录和归属，能保存启动命令、按依赖顺序拉起数据库→API→前端，并在菜单栏常驻。Tauri + Rust + React，MIT 开源，还提供只读 MCP 给 AI 查状态。",
+    "quote": "端口被占的时候，才知道自己开了多少服务。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1257464",
+    "published": "2026-11-17",
+    "uid": "ca730e8d70b9a62ff692bca9243ec970"
+  },
+  {
+    "title": "GSC Vault：把 Search Console 数据搬回自己的网盘，再接给 AI",
+    "content": "Search Console 只保留 16 个月数据，作者做了 GSC Vault：把 GSC 数据备份到自己的 Google Drive，支持批量看未收录页面及原因、多站点走势看板，并通过 MCP 把真实数据接给 Claude、GPT、Gemini，直接问“哪些词排在 8 到 15 位值得优化”。3 个站内免费、超出买断。他复盘的两条教训是：别让 AI 替你规划需求，推广没做完别急着判死刑。",
+    "quote": "数据在谷歌手里只有 16 个月，趁早搬。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1257305",
+    "published": "2026-11-17",
+    "uid": "41d1279696186a00281e289245403b53"
+  },
+  {
+    "title": "给 19B 模型训的 LoRA 挂到 22B checkpoint 上，居然不报错",
+    "content": "一篇 ComfyUI 视频工作流复盘：放大图里把给 19B 模型训练的 LoRA（ltx-2-19b-*）以权重 1.0 挂在 22B 的 LTX 2.3 checkpoint 上。张量形状碰巧兼容，所以加载不报错，但低秩增量被打到了错误的权重矩阵上，效果介于「部分生效」和「纯噪声」之间，肉眼很难判断。作者提醒 LTX 家族版本命名太像，跨代挂 LoRA 前先核对，别把画质变差赖到采样器头上。",
+    "quote": "不报错，只代表没人检查参数对不对。",
+    "source": "Dev.to",
+    "url": "https://dev.to/ai-ksk/a-19b-lora-on-a-22b-checkpoint-what-that-mistake-costs-and-when-it-does-not-matter-61a",
+    "published": "2026-11-17",
+    "uid": "8bc60639f61aa712f9e834c2135f1a55"
+  },
+  {
+    "title": "渲染计划过期了，CI 还是全绿：Remotion 视频流水线的静默错误",
+    "content": "一篇架构建议：做视频模板系统时，用带类型的契约把「配方 → 渲染计划 → Remotion 组合 → 导出适配器」串起来，并保持依赖单向，契约不反向 import 编辑器和规划器。真实事故是设计师改了配方，远程缓存仍返回上周的渲染计划，旧 logo 被烧进每一帧——没有类型错误、CI 全绿，只是错得很一致。配方文件变了却不在任务哈希里，缓存就会骗你。",
+    "quote": "编译通过，缓存通过，logo 是上个月的。",
+    "source": "Dev.to",
+    "url": "https://dev.to/ryan_gallagher/stop-stale-render-plans-before-they-reach-remotion-2ke6",
+    "published": "2026-11-17",
+    "uid": "4e5a72356afba965db7c5b4065cd2a10"
+  },
+  {
+    "title": "Drizzle ORM 入门：SQL 你读得懂，类型也靠得住",
+    "content": "Drizzle 是给“喜欢 SQL 但讨厌字符串拼接”的人准备的 TypeScript ORM：表用 TS 对象定义，查询用 select/from/where/orderBy 这种贴近 SQL 的 builder 写，返回结果全类型化，编辑器能补全列名、运行前就抓出拼写错误。文章从建表、查询、关联到迁移走了一遍入门流程，适合被 Prisma 的抽象层绕晕、又不想手写裸 SQL 的后端新人。",
+    "quote": "ORM 把 SQL 藏起来，Drizzle 又给你挖出来。",
+    "source": "Dev.to",
+    "url": "https://dev.to/arhan_khan/drizzle-orm-for-beginners-sql-you-can-read-with-types-you-can-trust-4049",
+    "published": "2026-11-17",
+    "uid": "88bb3a50a2935b715889e5b84560bacd"
+  },
+  {
+    "title": "把 5k star 的 Go AI 网关移植到 .NET：用 Orleans 重写并发内核",
+    "content": "张善友把 5k star 的 Go AI 网关移植到 .NET，关键不是逐行复刻，而是用 Orleans 重写并发内核：原版靠 goroutine 加锁维护的状态面，在多实例下根本维持不住；换成虚拟 actor 后，会话状态和限流计数天然单线程、可分布式部署。他提出「行为等价 + 台账」两条验收线：对外每一步都与原版一致，每一处不一致都有记录可查，移植才算可交付。",
+    "quote": "翻译代码容易，翻译并发模型才要命。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23686325",
+    "published": "2026-11-17",
+    "uid": "a7419c583d3c5d8a1757e71a5e769038"
+  },
+  {
+    "title": "用户连点两次「确认支付」，你的后端凭什么只扣一次钱？",
+    "content": "一道支付面试题：用户连点两次「确认支付」，后端怎么保证只扣一次？答「加防重 token，先查 Redis」只过了第一层，面试官接着追问：查完到写入之间宕机怎么办、token 什么时候删、重试请求返回什么、两个并发请求同时查到「不存在」怎么办。文章把幂等键、唯一索引、状态机、过期策略和「重复请求必须返回同一结果」串成一条完整链路，也算给只会背八股的人补课。",
+    "quote": "防重不是加个 Redis，是加一整套因果。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/codigger/p/23677910",
+    "published": "2026-11-17",
+    "uid": "6bf5ed0dff84ce58e67a47fb2f074c7e"
+  },
+  {
+    "title": "拆 KIMI K3 的 MTP：训练时多预测几个 token，推理时换 EAGLE-3",
+    "content": "罗西的“轻量化复刻大模型”系列拆 KIMI K3 的 Multi-Token Prediction：预训练阶段 MTP 让模型一次预测多个未来 token，作为训练目标提升表示质量；推理阶段换成 EAGLE-3 做投机解码，草稿模型直接复用 MTP 层的骨架和子组件，只多一个线性层，再用 LK 损失直接优化接受率。文章把两个阶段的张量形状、调用链和代码逐段对齐。",
+    "quote": "MTP 负责训练，EAGLE-3 负责跑得快。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/rossiXYZ/p/23686026",
+    "published": "2026-11-17",
+    "uid": "cd7b5f63221fb989533a10fae22e7fbd"
+  },
+  {
+    "title": "压箱十六年的自研 DI 容器开源：Vane.Container 1.0",
+    "content": "2010 年写在 NLite 里的 Mini IoC 容器，隔十六年随 Vane 系列重新开源为 Vane.Container 1.0：核心只依赖 BCL，API 动词形状对齐 Microsoft.Extensions.DependencyInjection。新增“快照模式”把容器冻结成只读快照，适合 Web、Worker 和批处理；动态容器留给 WinForms、WPF、MAUI 和插件宿主。",
+    "quote": "十六年前的 DI 容器，今天还能打。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/netcasewqs/p/23682364",
+    "published": "2026-11-17",
+    "uid": "8f96823cf8ac694412f75962a7672cb3"
+  },
+  {
+    "title": "7Shell：把终端、SFTP、容器和 K8s 塞进一个 SSH 客户端",
+    "content": "7Shell 是 Rust + Tauri2 写的跨平台 SSH 客户端，把终端、双栏 SFTP、Docker/Podman 容器和 K8s 塞进同一个窗口：SSH、SFTP 和 PTY 用 russh 与 portable-pty 实现，K8s 走 API 和 exec WebSocket，主机监控复用已有 SSH 连接。还支持跳板机、端口转发、SOCKS5 和会话录制，Apache-2.0。",
+    "quote": "运维工具切来切去，最后都想塞进一个窗口。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/equals/p/23679877",
+    "published": "2026-11-17",
+    "uid": "342ed07387fb385aef7269cda89b0300"
+  },
+  {
+    "title": "从 HashMap 到网盘秒传：把天天用的 hash 讲透",
+    "content": "这篇把 hash 从“是什么”讲到“怎么用”：任意长度输入压成固定长度指纹，必须确定性、算得快、分布均匀，而碰撞按抽屉原理必然存在。接着拆 HashMap 怎么用 hashCode 定位桶、为什么常见写法是 37 * result + c、扩容与树化怎么处理冲突；最后落到 SHA-256 校验下载文件、密码加盐存储和网盘秒传的原理，适合补基础。",
+    "quote": "天天用 hash，问起来却说不清，正常。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/leikooo/p/23680340",
+    "published": "2026-11-17",
+    "uid": "847ab6d01e2e25090888df95934ae979"
+  }
+]
