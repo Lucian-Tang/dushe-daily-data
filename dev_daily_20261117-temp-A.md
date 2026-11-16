@@ -1,0 +1,123 @@
+# 开发者日报 A 轨素材 · 2026-11-17
+
+> 共 15 条 | HN Front Page 5 · GitHub Trending Daily 3 · V2EX Share 3 · Dev.to 2 · 博客园 Cnblogs 2
+
+## 1. 阿里 Qwen4-Max 预览版：984k 上下文，定价腰斩
+
+阿里发布 Qwen4-Max 预览版：支持文本与图像输入，上下文窗口 984k，定价每百万输入 1.5 美元、输出 4.5 美元，缓存折扣 95%。第三方评测 Artificial Analysis 给出 43 分（同类中位数 41），但跑完评测吐了 1.27 亿 token，冗长程度远超中位数的 7860 万。HN 上 750 多分、370 多条评论，争论集中在参数不公开和长上下文的实际可用性。
+
+> 984k 上下文，先塞满再说对不对。
+
+来源：HN Front Page · [https://qwen.ai/blog?id=qwen4-max](https://qwen.ai/blog?id=qwen4-max) · `dev_1fe19743`
+
+## 2. uBlock Origin 被一键通杀 XSS：透明 iframe 骗你点「创建」
+
+安全研究者发现 uBlock Origin（Firefox MV2 版，uBO Lite 亦有较轻影响）存在一键通杀 XSS：恶意站点先挂一层 opacity 0 的 iframe 嵌入元素选择器页面，把你引到看不见的「创建」按钮上，从而写入带 +js 的受信任过滤规则，之后可在任意站点执行 JS。扩展内部 UUID 还能被页面 hook XHR 反推。漏洞已修复。作者称 GPT-5.6 Sol 找到问题，Claude 写了 PoC 的大部分代码。
+
+> 广告没拦住，先把你自己交出去了。
+
+来源：HN Front Page · [https://iter.ca/post/ubo-uxss/](https://iter.ca/post/ubo-uxss/) · `dev_7c87f34d`
+
+## 3. 十几年前的 Bitly 短链被人重新注册，跳去纳粹集中营词条
+
+汉堡王 2011 年一条推文里的 Bitly 短链，在 2026 年 11 月 15 日被他人重新注册，跳到了维基百科「纳粹集中营列表」；18 分钟前，麦当劳 2011 年推文里的短链也被指向 9·11 条目。Ransomnews 抽查特朗普 2009–2013 年的 97 条 Bitly 链接，56 条的实际创建时间晚于推文本身。CNN 后续称盖茨、特鲁多、FBI、五角大楼的旧帖同样中招。Bitly 已确认问题，封禁相关账号并停用受影响链接。
+
+> 短链会过期，账号不会，锅还得原主背。
+
+来源：HN Front Page · [https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/](https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/) · `dev_d6382c7c`
+
+## 4. 两亿条外链、DNS 打不开：一个随机域名是怎么刷上榜首的
+
+博主给自己的站点挂外链监控时，发现随机字符串域名 w2rt6byl5nf1opmc-a.com 出现在 Siteerate 热门网页榜单里，还挤进 Majestic Million 增长最快域名：2.41 亿条 nofollow 外链、来自 516 万个引荐域，而 Ahrefs 只看到 53 条。该域名 11 月 11 日才首次注册，DNS 至今不解析，却已有一篇 AI 生成的新闻稿为它背书。作者因此怀疑整条第三方 SEO 数据链被批量刷量污染，连排名本身都不可信。
+
+> 两亿条外链撑起来的网站，打不开。
+
+来源：HN Front Page · [https://jack.cab/blog/siterate](https://jack.cab/blog/siterate) · `dev_2b3bbacc`
+
+## 5. It's always DNS：所以 S2 决定自己写一台权威 DNS
+
+S2 想让每个 basin 都拥有 my-basin.b.s2.dev 这样的子域，等于需要无限量、强一致的 DNS 记录。Route53 扛不住：API 大约每秒 5 次 UPSERT，曾有用户快速创建上万 basin 直接打满配额，正常更新卡了几个小时。GCP、Cloudflare、Azure 的托管 DNS 同样限速，批处理又违背「创建即可解析」的目标。最后他们选择自己运行权威 DNS 服务器，文章记录了替换 Route53 的全过程和踩过的坑。
+
+> 嘴上说 always DNS，手上还是自己写。
+
+来源：HN Front Page · [https://s2.dev/blog/dns-server](https://s2.dev/blog/dns-server) · `dev_30b5bb4f`
+
+## 6. Univer：27.6k star 的「AI Office SDK」，人和 agent 共用一套表格内核
+
+dream-num/univer 今日登上 GitHub Trending，27.6k star，TypeScript 编写。定位已不是单纯的开源电子表格，而是「AI Office SDK」：把编辑、计算、协同和文件处理能力嵌进产品，让人和 AI agent 共用同一套表格与文档内核。对想自建在线 Excel、又不想被商业套件绑死的团队来说，这是目前少数能整套拿走、还带扩展核心的方案。
+
+> Excel 抄了三十年，终于有人把底座开源。
+
+来源：GitHub Trending Daily · [https://github.com/dream-num/univer](https://github.com/dream-num/univer) · `dev_2681ed90`
+
+## 7. AG-UI：18.6k star，给 agent 和前端定一套交互协议
+
+ag-ui-protocol/ag-ui 已有 18.6k star：一套 Agent 与前端交互的协议，把 agent 的状态、事件和工具调用用统一事件流推给 UI，前端不必为每个 agent 框架各写一套适配。项目同时给出多语言 SDK 和调试器，让「agent 跑到哪一步、要不要人工确认」在界面上真的可见。热度背后是同一个困境：大家都在把 agent 塞进产品，前后端协议却各写各的。
+
+> agent 很聪明，界面还在猜它在想什么。
+
+来源：GitHub Trending Daily · [https://github.com/ag-ui-protocol/ag-ui](https://github.com/ag-ui-protocol/ag-ui) · `dev_e77e7ef1`
+
+## 8. Arcane：8.5k star 的 Go 版 Docker 管理面板
+
+getarcaneapp/arcane 是 Go 写的 Docker 管理面板，8.5k star，主打「人人可用」：容器、镜像、网络、卷、Compose 栈和镜像更新检查集中在一个界面，支持多环境切换和基于角色的权限，走单二进制部署。相比 Portainer 更轻，适合家里 NAS 或小团队自建，不用再记一长串 docker 命令，也不用为一段 YAML 的缩进反复试错。
+
+> YAML 缩进对了，人生也没对。
+
+来源：GitHub Trending Daily · [https://github.com/getarcaneapp/arcane](https://github.com/getarcaneapp/arcane) · `dev_8572aa7d`
+
+## 9. 爬了 X 和 LinkedIn，专收 hiring manager 亲自发的 AI 招聘贴
+
+作者抓取 X 和 LinkedIn 上 hiring manager 亲自发布的 AI 岗位贴，并同步各公司官网职位，做了聚合站和一份 AI 招聘大盘。理由很实在：HM 先发帖时岗位还没进招聘系统，竞争者少、回复率高；官网同步能验证岗位是否还开着；全量数据还能看出哪些方向在扩招。这类活的难点不在爬，而在去重、判断岗位是否真实有效，以及别把三年前的帖子当新机会。
+
+> 招聘软件刷不到的机会，藏在人家时间线里。
+
+来源：V2EX Share · [https://www.v2ex.com/t/1257523](https://www.v2ex.com/t/1257523) · `dev_6bb5e351`
+
+## 10. 用 Rust + GPUI 做了两个原生小工具：截图和 hosts 管理
+
+一位开发者用 Rust + GPUI（Zed 编辑器的 UI 框架）做了两个原生桌面工具：SnapIt 支持区域/窗口/多显示器截图、标注、贴图、OCR 和 GIF/MP4 录制；SwitchHosts Lite 做多套 hosts 方案管理、组合切换、自动应用、历史版本和导入导出。作者选 GPUI 图的是原生渲染和打包体积，两个项目都已开源，涵盖 macOS、Windows 等平台。
+
+> 造轮子的尽头，是给自己造工具箱。
+
+来源：V2EX Share · [https://www.v2ex.com/t/1257519](https://www.v2ex.com/t/1257519) · `dev_a4606ce7`
+
+## 11. 老用户感叹 V2EX 变了：技术讨论退场，提问成本太低
+
+一位老用户翻出几年前的帖子做对比：以前问「这个功能怎么实现」「底层原理是什么」，评论区能就技术方案吵出东西；现在首页多是求推荐、晒收益、吐槽和「AI 一分钟就做完了」。他把原因归到工具和流量结构的变化上——提问成本低了，愿意深聊的人就散了。帖子 26 条回复里，赞同的和反驳的都不少，算是社区气质变化的一次公开体检。
+
+> 论坛没变，只是没人愿意把问题想第二遍。
+
+来源：V2EX Share · [https://www.v2ex.com/t/1257385](https://www.v2ex.com/t/1257385) · `dev_bbb06952`
+
+## 12. 给 19B 模型训的 LoRA 挂到 22B checkpoint 上，居然不报错
+
+一篇 ComfyUI 视频工作流复盘：放大图里把给 19B 模型训练的 LoRA（ltx-2-19b-*）以权重 1.0 挂在 22B 的 LTX 2.3 checkpoint 上。张量形状碰巧兼容，所以加载不报错，但低秩增量被打到了错误的权重矩阵上，效果介于「部分生效」和「纯噪声」之间，肉眼很难判断。作者提醒 LTX 家族版本命名太像，跨代挂 LoRA 前先核对，别把画质变差赖到采样器头上。
+
+> 不报错，只代表没人检查参数对不对。
+
+来源：Dev.to · [https://dev.to/ai-ksk/a-19b-lora-on-a-22b-checkpoint-what-that-mistake-costs-and-when-it-does-not-matter-61a](https://dev.to/ai-ksk/a-19b-lora-on-a-22b-checkpoint-what-that-mistake-costs-and-when-it-does-not-matter-61a) · `dev_dc01ac57`
+
+## 13. 渲染计划过期了，CI 还是全绿：Remotion 视频流水线的静默错误
+
+一篇架构建议：做视频模板系统时，用带类型的契约把「配方 → 渲染计划 → Remotion 组合 → 导出适配器」串起来，并保持依赖单向，契约不反向 import 编辑器和规划器。真实事故是设计师改了配方，远程缓存仍返回上周的渲染计划，旧 logo 被烧进每一帧——没有类型错误、CI 全绿，只是错得很一致。配方文件变了却不在任务哈希里，缓存就会骗你。
+
+> 编译通过，缓存通过，logo 是上个月的。
+
+来源：Dev.to · [https://dev.to/ryan_gallagher/stop-stale-render-plans-before-they-reach-remotion-2ke6](https://dev.to/ryan_gallagher/stop-stale-render-plans-before-they-reach-remotion-2ke6) · `dev_4a2583e3`
+
+## 14. 把 5k star 的 Go AI 网关移植到 .NET：用 Orleans 重写并发内核
+
+张善友把 5k star 的 Go AI 网关移植到 .NET，关键不是逐行复刻，而是用 Orleans 重写并发内核：原版靠 goroutine 加锁维护的状态面，在多实例下根本维持不住；换成虚拟 actor 后，会话状态和限流计数天然单线程、可分布式部署。他提出「行为等价 + 台账」两条验收线：对外每一步都与原版一致，每一处不一致都有记录可查，移植才算可交付。
+
+> 翻译代码容易，翻译并发模型才要命。
+
+来源：博客园 Cnblogs · [https://www.cnblogs.com/shanyou/p/23686325](https://www.cnblogs.com/shanyou/p/23686325) · `dev_f7b95bbc`
+
+## 15. 用户连点两次「确认支付」，你的后端凭什么只扣一次钱？
+
+一道支付面试题：用户连点两次「确认支付」，后端怎么保证只扣一次？答「加防重 token，先查 Redis」只过了第一层，面试官接着追问：查完到写入之间宕机怎么办、token 什么时候删、重试请求返回什么、两个并发请求同时查到「不存在」怎么办。文章把幂等键、唯一索引、状态机、过期策略和「重复请求必须返回同一结果」串成一条完整链路，也算给只会背八股的人补课。
+
+> 防重不是加个 Redis，是加一整套因果。
+
+来源：博客园 Cnblogs · [https://www.cnblogs.com/codigger/p/23677910](https://www.cnblogs.com/codigger/p/23677910) · `dev_ab813291`
