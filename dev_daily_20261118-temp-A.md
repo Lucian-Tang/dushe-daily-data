@@ -1,0 +1,123 @@
+# 开发者日报 A 轨素材 · 2026-11-18
+
+> 共 15 条 | GitHub Trending Daily 4 · V2EX Share 4 · Dev.to 4 · 博客园 Cnblogs 3
+
+## 1. obra/superpowers：31.9 万星的 Agent「技能方法论」
+
+一个把 Agent 技能组织成软件开发方法论的开源框架，用 Markdown 技能文件约束 Agent 怎么拆任务、怎么自检、什么时候停下来问人，GitHub 已拿到 31.9 万星，今日趋势榜第一。它不提供新模型，卖的是流程和纪律。星数夸张到这个程度，说明大家缺的不是更聪明的模型，而是让模型别自作主张的规矩。
+
+> 模型不缺智商，缺的是被人管着。
+
+来源：GitHub Trending Daily · [https://github.com/obra/superpowers](https://github.com/obra/superpowers) · `dev_488567a9`
+
+## 2. 阿里开源 open-code-review：确定性流水线 + LLM 混合审查
+
+阿里开源的代码审查工具，采用混合架构：确定性流水线负责能算清楚的部分，LLM Agent 负责需要理解的判断，输出精确到行的评论，内置 NPE、线程安全、XSS、SQL 注入等多语言规则集，兼容 OpenAI 与 Anthropic 接口。项目用 Go 编写、Apache-2.0 协议，已积累 5.3 万星，主打在阿里内部规模上验证过。
+
+> 规则管确定性的，模型管背锅的。
+
+来源：GitHub Trending Daily · [https://github.com/alibaba/open-code-review](https://github.com/alibaba/open-code-review) · `dev_e255862e`
+
+## 3. last30days-skill：让 Agent 跨平台做 30 天调研
+
+一个给 AI Agent 用的调研技能：给定任意话题，自动去 Reddit、X、YouTube、Hacker News、Polymarket 和普通网页搜集最近 30 天的信息，再合成一份有出处的摘要。项目用 Python 写成、MIT 协议，已获 6.8 万星。它解决的是 Agent 搜索容易只看一两个来源、拿到旧闻还言之凿凿的问题，把多源交叉和引用做进了技能里。
+
+> 三十天前的旧闻，终于有出处了。
+
+来源：GitHub Trending Daily · [https://github.com/mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) · `dev_2e46a0fb`
+
+## 4. Claude-BugHunter：82 个技能打包成漏洞挖掘工具箱
+
+面向漏洞挖掘与外网红队工作的 Claude Code 技能包，内含 82 个技能、15 个斜杠命令，整理了 681 条已公开披露报告的利用模式，覆盖 24 类核心漏洞，另附企业身份体系与基础设施攻击矩阵。Python 编写、MIT 协议，今日登上趋势榜，已获 8600 星。把散落在 writeup 里的经验固化成可调用技能，是这类项目最实际的价值。
+
+> 把 writeup 熬成技能，漏洞自己送上门。
+
+来源：GitHub Trending Daily · [https://github.com/elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) · `dev_1a9ba9eb`
+
+## 5. 小红书养号助手：自动浏览、点赞，还能评论区截流
+
+开发者做了个 Chrome/Edge 扩展，把小红书矩阵运营的重复动作收进一个面板：发现页按设定节奏浏览笔记并概率点赞收藏，按「求、怎么、哪里、推荐、私」等意向词筛评论、跳过黑名单词并生成互动建议，还能进目标博主主页依次浏览关注。停留时长、互动概率、单日上限都可调，到上限自动停。作者也提醒遵守平台规则、回复先自己看一眼。
+
+> 养号养到封号，这效率是真高啊。
+
+来源：V2EX Share · [https://www.v2ex.com/t/1257809](https://www.v2ex.com/t/1257809) · `dev_168a0485`
+
+## 6. wechat-use：用 Docker 跑真微信桌面，让 Agent 通过 MCP 操作
+
+作者原本做微信引流自动化，用截图识别点击的 RPA 跑了近两年。赶上 Computer Use 成熟，他把方案改成：Docker 里跑真实 Linux 微信桌面，Agent 通过 MCP 连接后能看界面、执行桌面操作，人也能在浏览器打开同一桌面扫码登录或随时接管。登录态与文件持久化，支持 AMD64/ARM64。他特别提醒别在服务器用非住宅 IP 登录，容易触发风控。
+
+> AI 替你聊微信，封号也替你封。
+
+来源：V2EX Share · [https://www.v2ex.com/t/1257619](https://www.v2ex.com/t/1257619) · `dev_ce8126a3`
+
+## 7. 一周 391 个新项目，他只留下 10 个
+
+作者自己写了个筛选器盯 Product Hunt 和 HN Show HN，七天进来 391 条新项目，套壳、互吹和软广占了不少。他的三条标准很硬：现在点开就能用或代码能直接跑，挂 waitlist 的不算；付费方式或成本结构说得清；要么解决具体小痛点，要么给出能搬走的技术思路。留下的十个包括 App Store 收入面板、Search Console 数据备份、浏览器本地 PDF 工具箱等。
+
+> 三百九十一进十，筛子比项目值钱。
+
+来源：V2EX Share · [https://www.v2ex.com/t/1257638](https://www.v2ex.com/t/1257638) · `dev_8cd1ff01`
+
+## 8. 用 AI 跳过 B 站视频内广告，作者还想顺手标出 AI 味视频
+
+开源插件 VideoAdGuard 基于字幕判断广告段并自动跳过，云端用 Cloudflare KV 做共享缓存，准确率靠召回率撑，误报明显时不会跳。没字幕的视频接了语音转文字兜底，另有白名单。作者称用免费或低价模型就能胜任，还试了 System One 的 Jev 模型。文末他提了个新需求：能不能让大模型判断视频的 AI 生成率，在封面外就标注出来，省得点进去被 AI 文案恶心。
+
+> 广告能跳，AI 味视频跳不掉。
+
+来源：V2EX Share · [https://www.v2ex.com/t/1257839](https://www.v2ex.com/t/1257839) · `dev_70d1fe93`
+
+## 9. 免费额度为什么撑得住：平台租的是执行，不是机器
+
+文章解释部署平台为何敢给慷慨的免费层：VPS 是提前把 CPU 和内存占给你，哪怕一天只有一个请求也一直开着；现代平台则把大量工作负载打包到共享机器上，用容器或微型虚拟机隔离，请求来了才启动计算，闲下来就回收。多数 side project 超过 99% 的生命周期都在空转，按常驻机器来 provisioning 才是浪费的根源。
+
+> 免费额度的真相：你的项目根本没人用。
+
+来源：Dev.to · [https://dev.to/quantumbreakz/how-can-deployment-platforms-afford-free-tiers-3dm9](https://dev.to/quantumbreakz/how-can-deployment-platforms-afford-free-tiers-3dm9) · `dev_5e7484e7`
+
+## 10. 自建 MCP 网关：让数据库凭证永远不进 Agent 上下文
+
+团队让 AI Agent 查生产库时，安全部门先问凭证放哪，答案是放在 Agent 看不见的地方。网关是单个 Docker 容器，一侧说 MCP、另一侧说 PostgreSQL/MongoDB 线协议，凭证只写在服务器上的 YAML。每个请求先过 SSO，再按用户组查 grants，限定可用库、schema、行数和是否必须填理由，Agent 只发查询意图、拿回结果。
+
+> 凭证不进上下文，比提示词管用。
+
+来源：Dev.to · [https://dev.to/developerzai/how-we-built-a-self-hosted-mcp-gateway-that-keeps-database-credentials-off-developer-laptops-5al0](https://dev.to/developerzai/how-we-built-a-self-hosted-mcp-gateway-that-keeps-database-credentials-off-developer-laptops-5al0) · `dev_3f1c69d6`
+
+## 11. 「完成了」不是结果：检查 Agent 报告的五个规矩
+
+作者收到「活动回复已完成」的报告，自己记成了「参加」，还开始安排交通，实际发出去的是「不参加」。报告没说谎，只是没说是哪个方向，接收方替它补了最想要的那个答案。文章把报告与现实的偏差分成几类：二值结果缺方向、通知写的是当时状态而状态还在变、以及措辞含糊。核心论点：Done 只说明工作结束了，不说明产出了什么，接收方要按可验证的结果而不是动词记账。
+
+> Agent 说完成了，没说完成成什么样。
+
+来源：Dev.to · [https://dev.to/noptium/done-isnt-an-outcome-five-rules-for-checking-agent-reports-1fn5](https://dev.to/noptium/done-isnt-an-outcome-five-rules-for-checking-agent-reports-1fn5) · `dev_d40050e9`
+
+## 12. 一个花括号让 Agent 罢工：答案对了，解析器先崩
+
+BeeAI 把最终答案建模成 final_answer 工具调用，用 pydantic schema 校验。模型回纯文本时，框架取第一段花括号做宽松 JSON 修复。宽松解析只保证返回一个值，不保证是对象、也不校验 schema：function add(a,b){...} 会解析成列表，整轮终止；{"port":8080} 是合法 JSON，却不符合答案结构。三个正确答案，三种失败。
+
+> 模型答对了，解析器先崩了，真行。
+
+来源：Dev.to · [https://dev.to/ravi_prakashmeena_2b2b5b/a-correct-answer-one-curly-brace-and-an-agent-that-couldnt-finish-21jg](https://dev.to/ravi_prakashmeena_2b2b5b/a-correct-answer-one-curly-brace-and-an-agent-that-couldnt-finish-21jg) · `dev_28f653c8`
+
+## 13. PACE：Token 留在缓存里还不够，位置也得重排
+
+Amazon 团队发现，长程 Agent 即使把后续任务需要的 Token 几乎全留在 KV Cache（驻留率约 99.6%），随着这些历史 Token 与当前查询的 RoPE 距离拉大，单测通过率仍从 93% 掉到 64%，事实召回率却还有 98%。PACE 按后续步骤的引用关系保留 Token，再重新编号并重算 Key 的 RoPE 旋转，把距离压回去，代码通过率从 42% 提到 97%。
+
+> Token 还在缓存里，脑子已经忘了。
+
+来源：博客园 Cnblogs · [https://www.cnblogs.com/Qiniu-developer/p/23693743](https://www.cnblogs.com/Qiniu-developer/p/23693743) · `dev_4f425941`
+
+## 14. 飞书群聊已读怎么实现：别往消息里塞 read_by 数组
+
+直觉方案是每条消息挂 read_by 数组，谁读了就 push 用户 ID。500 人群就是 500 次并发追加写砸同一条记录，锁竞争爆炸；往回翻记录还要打包几百条已读状态。文章借 RocketMQ 的 Commit Log 与 Consumer Queue 讲拆分：消息实体只存一份，每个成员维护一条阅读水位线 group_id + user_id → last_read_seq。
+
+> 一个数组存五百人已读，数据库先已读不回。
+
+来源：博客园 Cnblogs · [https://www.cnblogs.com/codigger/p/23690393](https://www.cnblogs.com/codigger/p/23690393) · `dev_c8406694`
+
+## 15. 被第三方库坑了二十多年，他造了二十多个 .NET 轮子
+
+作者从 .NET 1.0 写到 Native AOT，攒出 Vane 平台：L0 基座管 DI、序列化、零分配日志与托管 DEFLATE；L1 用一套 Host 覆盖 TCP、UDS、QUIC 等八种介质；L2 是 Arrow/Parquet 列式格式；L3 是表达式与计算引擎；L4 是数据访问与表格层。四条公理：零第三方依赖、微内核一包一责、批是唯一数据单元、值语义零装箱。
+
+> 第三方库的坑，自己挖一遍才踏实。
+
+来源：博客园 Cnblogs · [https://www.cnblogs.com/netcasewqs/p/23696511](https://www.cnblogs.com/netcasewqs/p/23696511) · `dev_8b79b574`
