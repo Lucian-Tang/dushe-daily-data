@@ -1,0 +1,218 @@
+[
+  {
+    "title": "obra/superpowers：31.9 万星的 Agent「技能方法论」",
+    "content": "一个把 Agent 技能组织成软件开发方法论的开源框架，用 Markdown 技能文件约束 Agent 怎么拆任务、怎么自检、什么时候停下来问人，GitHub 已拿到 31.9 万星，今日趋势榜第一。它不提供新模型，卖的是流程和纪律。星数夸张到这个程度，说明大家缺的不是更聪明的模型，而是让模型别自作主张的规矩。",
+    "quote": "模型不缺智商，缺的是被人管着。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/obra/superpowers",
+    "published": "2026-11-18",
+    "uid": "bf2fdbac3284702a541bd8a7068e05dc"
+  },
+  {
+    "title": "阿里开源 open-code-review：确定性流水线 + LLM 混合审查",
+    "content": "阿里开源的代码审查工具，采用混合架构：确定性流水线负责能算清楚的部分，LLM Agent 负责需要理解的判断，输出精确到行的评论，内置 NPE、线程安全、XSS、SQL 注入等多语言规则集，兼容 OpenAI 与 Anthropic 接口。项目用 Go 编写、Apache-2.0 协议，已积累 5.3 万星，主打在阿里内部规模上验证过。",
+    "quote": "规则管确定性的，模型管背锅的。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/alibaba/open-code-review",
+    "published": "2026-11-18",
+    "uid": "6da46dcf3860b2dc134d47d2641a5303"
+  },
+  {
+    "title": "last30days-skill：让 Agent 跨平台做 30 天调研",
+    "content": "一个给 AI Agent 用的调研技能：给定任意话题，自动去 Reddit、X、YouTube、Hacker News、Polymarket 和普通网页搜集最近 30 天的信息，再合成一份有出处的摘要。项目用 Python 写成、MIT 协议，已获 6.8 万星。它解决的是 Agent 搜索容易只看一两个来源、拿到旧闻还言之凿凿的问题，把多源交叉和引用做进了技能里。",
+    "quote": "三十天前的旧闻，终于有出处了。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/mvanhorn/last30days-skill",
+    "published": "2026-11-18",
+    "uid": "51e1d178f844fdc97167210921a295b1"
+  },
+  {
+    "title": "Claude-BugHunter：82 个技能打包成漏洞挖掘工具箱",
+    "content": "面向漏洞挖掘与外网红队工作的 Claude Code 技能包，内含 82 个技能、15 个斜杠命令，整理了 681 条已公开披露报告的利用模式，覆盖 24 类核心漏洞，另附企业身份体系与基础设施攻击矩阵。Python 编写、MIT 协议，今日登上趋势榜，已获 8600 星。把散落在 writeup 里的经验固化成可调用技能，是这类项目最实际的价值。",
+    "quote": "把 writeup 熬成技能，漏洞自己送上门。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "published": "2026-11-18",
+    "uid": "326577510b4924bd0906019224acc3e9"
+  },
+  {
+    "title": "Coral：让 Agent 自己写工具，但每次调用先过策略检查",
+    "content": "开源自托管的 Agent 网关，Coral 想解决 MCP 网关的「全有全无」：多数网关只决定 Agent 能看见哪些工具，能看见就能随便调。Coral 的做法是让 Agent 用 TypeScript 写一小段程序来调工具，跑通后存成自定义工具复用，每次调用先过策略检查再注入凭证。Rust 写成、Apache-2.0，官方对比数据是省 35% token、快 31%。",
+    "quote": "看得见不等于随便调，这才叫闸门。",
+    "source": "Show HN",
+    "url": "https://github.com/withcoral/coral",
+    "published": "2026-11-18",
+    "uid": "8a9fcb7be6e2cd1608ae8536b967afcb"
+  },
+  {
+    "title": "Alloy CSS：菜单、抽屉、对话框全都能在关掉 JS 时工作",
+    "content": "Alloy CSS 演示了一个不含任何脚本的页面：菜单、通知抽屉、对话框、标签页、提示气泡和 toast 全由浏览器原生行为驱动，整页没有一行 JavaScript。作者做的是一个虚构的发票后台，只把「发票」一页做完整，其余章节故意做成灰色不可点，避免承诺不存在的页面。适合拿来抄结构，也适合提醒自己：很多交互根本不需要框架。",
+    "quote": "JS 关了还能用的菜单，才叫基本功。",
+    "source": "Show HN",
+    "url": "https://alloyhtml.com/example.html",
+    "published": "2026-11-18",
+    "uid": "b418a2ae34dadfaeb821207192628bcd"
+  },
+  {
+    "title": "Wine-Assembly：手写 WASM 解释器，在手机浏览器跑 Win98 的星际和暗黑",
+    "content": "作者用 WebAssembly 文本格式直接写了 x86 解释器和 Win32 API 层，在浏览器里跑未经修改的 Windows 98 程序，StarCraft、Diablo 这类老游戏能直接在手机上打开。页面还做了细节：通过 ?app=ID 直链启动时，桌面和任务栏根本不渲染；启动进度从导航开始计时 500ms，避免看到一个假的进度条。",
+    "quote": "二十年前的游戏，跑在今天的浏览器里。",
+    "source": "Show HN",
+    "url": "https://wine-assembly.berrry.app/",
+    "published": "2026-11-18",
+    "uid": "52443bdeb630dcad56687a655a54abbe"
+  },
+  {
+    "title": "wechat-use：用 Docker 跑真微信桌面，让 Agent 通过 MCP 操作",
+    "content": "作者原本做微信引流自动化，用截图识别点击的 RPA 跑了近两年。赶上 Computer Use 成熟，他把方案改成：Docker 里跑真实 Linux 微信桌面，Agent 通过 MCP 连接后能看界面、执行桌面操作，人也能在浏览器打开同一桌面扫码登录或随时接管。登录态与文件持久化，支持 AMD64/ARM64。他特别提醒别在服务器用非住宅 IP 登录，容易触发风控。",
+    "quote": "AI 替你聊微信，封号也替你封。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1257619",
+    "published": "2026-11-18",
+    "uid": "de30254b0e6fa0c1f57301382be64a19"
+  },
+  {
+    "title": "用 AI 跳过 B 站视频内广告，作者还想顺手标出 AI 味视频",
+    "content": "开源插件 VideoAdGuard 基于字幕判断广告段并自动跳过，云端用 Cloudflare KV 做共享缓存，准确率靠召回率撑，误报明显时不会跳。没字幕的视频接了语音转文字兜底，另有白名单。作者称用免费或低价模型就能胜任，还试了 System One 的 Jev 模型。文末他提了个新需求：能不能让大模型判断视频的 AI 生成率，在封面外就标注出来，省得点进去被 AI 文案恶心。",
+    "quote": "广告能跳，AI 味视频跳不掉。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1257839",
+    "published": "2026-11-18",
+    "uid": "61953856864dee10dd3f670fc530248b"
+  },
+  {
+    "title": "一周 391 个新项目，他只留下 10 个",
+    "content": "作者自己写了个筛选器盯 Product Hunt 和 HN Show HN，七天进来 391 条新项目，套壳、互吹和软广占了不少。他的三条标准很硬：现在点开就能用或代码能直接跑，挂 waitlist 的不算；付费方式或成本结构说得清；要么解决具体小痛点，要么给出能搬走的技术思路。留下的十个包括 App Store 收入面板、Search Console 数据备份、浏览器本地 PDF 工具箱等。",
+    "quote": "三百九十一进十，筛子比项目值钱。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1257638",
+    "published": "2026-11-18",
+    "uid": "69236ad6b2fe93ecb1cc7be456886f72"
+  },
+  {
+    "title": "Token 额度用不完，他做了个一键出讲解视频的 App，单条一两分钱",
+    "content": "输入一个主题，比如「介绍李白的一生」，App 自动生成带配音、字幕和简单动画的讲解视频，形式接近会自动播放的 PPT，可选 30/60/90 秒、1080P、横竖屏，生成完一键跳抖音发布。作者说单条成本一两分钱，从输入到出 60 秒片子约两分钟，前提是手上 token 额度用不完。",
+    "quote": "一两分钱一条，内容彻底变成流水线。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1257782",
+    "published": "2026-11-18",
+    "uid": "7ab3e3137e55ac2e0dc0a2b04ec1a606"
+  },
+  {
+    "title": "让 Agent 给 Agent 自己写一个使用数据看板",
+    "content": "作者用的 Agent 没有自己的使用数据看板，不知道自己被用了多少、干了什么，于是让 Agent 给自己写了一个。开源的是本地版：纯 Python 标准库加单文件前端，零依赖、双击即用，直接读本机留下的数据库，支持多系统。想要远程版可以自己改，但作者也提醒先想清楚有没有必要。",
+    "quote": "连自己干了啥都不知道，还敢叫助手。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1257771",
+    "published": "2026-11-18",
+    "uid": "82d82767da8c27c7ac07eb87491c37ec"
+  },
+  {
+    "title": "免费额度为什么撑得住：平台租的是执行，不是机器",
+    "content": "文章解释部署平台为何敢给慷慨的免费层：VPS 是提前把 CPU 和内存占给你，哪怕一天只有一个请求也一直开着；现代平台则把大量工作负载打包到共享机器上，用容器或微型虚拟机隔离，请求来了才启动计算，闲下来就回收。多数 side project 超过 99% 的生命周期都在空转，按常驻机器来 provisioning 才是浪费的根源。",
+    "quote": "免费额度的真相：你的项目根本没人用。",
+    "source": "Dev.to",
+    "url": "https://dev.to/quantumbreakz/how-can-deployment-platforms-afford-free-tiers-3dm9",
+    "published": "2026-11-18",
+    "uid": "12d708356f1e84394f3295fdb3f16362"
+  },
+  {
+    "title": "「完成了」不是结果：检查 Agent 报告的五个规矩",
+    "content": "作者收到「活动回复已完成」的报告，自己记成了「参加」，还开始安排交通，实际发出去的是「不参加」。报告没说谎，只是没说是哪个方向，接收方替它补了最想要的那个答案。文章把报告与现实的偏差分成几类：二值结果缺方向、通知写的是当时状态而状态还在变、以及措辞含糊。核心论点：Done 只说明工作结束了，不说明产出了什么，接收方要按可验证的结果而不是动词记账。",
+    "quote": "Agent 说完成了，没说完成成什么样。",
+    "source": "Dev.to",
+    "url": "https://dev.to/noptium/done-isnt-an-outcome-five-rules-for-checking-agent-reports-1fn5",
+    "published": "2026-11-18",
+    "uid": "741052dd2eecc72a76cbc8707e73a53d"
+  },
+  {
+    "title": "一个花括号让 Agent 罢工：答案对了，解析器先崩",
+    "content": "BeeAI 把最终答案建模成 final_answer 工具调用，用 pydantic schema 校验。模型回纯文本时，框架取第一段花括号做宽松 JSON 修复。宽松解析只保证返回一个值，不保证是对象、也不校验 schema：function add(a,b){...} 会解析成列表，整轮终止；{\"port\":8080} 是合法 JSON，却不符合答案结构。三个正确答案，三种失败。",
+    "quote": "模型答对了，解析器先崩了，真行。",
+    "source": "Dev.to",
+    "url": "https://dev.to/ravi_prakashmeena_2b2b5b/a-correct-answer-one-curly-brace-and-an-agent-that-couldnt-finish-21jg",
+    "published": "2026-11-18",
+    "uid": "5767b8a4b6e4a3a0eb2d7e1da4256c34"
+  },
+  {
+    "title": "PACE：Token 留在缓存里还不够，位置也得重排",
+    "content": "Amazon 团队发现，长程 Agent 即使把后续任务需要的 Token 几乎全留在 KV Cache（驻留率约 99.6%），随着这些历史 Token 与当前查询的 RoPE 距离拉大，单测通过率仍从 93% 掉到 64%，事实召回率却还有 98%。PACE 按后续步骤的引用关系保留 Token，再重新编号并重算 Key 的 RoPE 旋转，把距离压回去，代码通过率从 42% 提到 97%。",
+    "quote": "Token 还在缓存里，脑子已经忘了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Qiniu-developer/p/23693743",
+    "published": "2026-11-18",
+    "uid": "24dd90390f5c11ff091c81bb1a72708d"
+  },
+  {
+    "title": "飞书群聊已读怎么实现：别往消息里塞 read_by 数组",
+    "content": "直觉方案是每条消息挂 read_by 数组，谁读了就 push 用户 ID。500 人群就是 500 次并发追加写砸同一条记录，锁竞争爆炸；往回翻记录还要打包几百条已读状态。文章借 RocketMQ 的 Commit Log 与 Consumer Queue 讲拆分：消息实体只存一份，每个成员维护一条阅读水位线 group_id + user_id → last_read_seq。",
+    "quote": "一个数组存五百人已读，数据库先已读不回。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/codigger/p/23690393",
+    "published": "2026-11-18",
+    "uid": "6bf4a6e6c5a99a3772818246b768d877"
+  },
+  {
+    "title": "写不出验收标准的需求，就是一句许愿",
+    "content": "团队经常在还没想清楚怎么验收时就开始开发。作者给的解法很土但有效：把主观形容词换成可观察的行为或可测量的阈值。比如「更新记录」这条需求，验收标准写成「Editor 角色用户提交合法数据，系统返回 200」。一条需求配一条能跑通的判断，PRD 才算写完。",
+    "quote": "写不出验收标准的需求，只能算许愿。",
+    "source": "Dev.to",
+    "url": "https://dev.to/raylabs/how-to-write-testable-product-requirements-3jf4",
+    "published": "2026-11-18",
+    "uid": "fd037e61550914df89697506859afc78"
+  },
+  {
+    "title": "在 Codex 里白嫖 Parallel 的 MCP 搜索：答案对了，引用是别人博客",
+    "content": "作者在 Codex 的一个研究 profile 里注册了 Parallel 的 MCP 服务，用免费档、不填 API key，拿 web_search 和 web_fetch 做了次冒烟测试，全程零成本、没撞限流。结论分两半：web_fetch 一次读两个链接，抓出来的值和手读一致；web_search 答案对，引用给的却是第三方博客。作者自己强调这只是冒烟，不是基准测试。",
+    "quote": "答案对了，出处却是别人的博客。",
+    "source": "Dev.to",
+    "url": "https://dev.to/noptium/i-tried-parallels-free-mcp-search-in-codex-18d8",
+    "published": "2026-11-18",
+    "uid": "120c91fba7616ec3cdd466f3e2c1e7d3"
+  },
+  {
+    "title": "从 gqlgen 迁到 HotChocolate 16：前端一行不改的 wire-level 对齐",
+    "content": "把 Go/gqlgen 的 GraphQL 服务迁到 .NET 的 HotChocolate 16，目标是前端一行都不用改。文章逐项对齐差异：两套 schema 怎么对齐、四个自定义标量怎么复刻、错误格式怎么保持、Orleans Grain 怎么接住分布式锁和 cron，最后还有一处取舍——2026 年 9 月版规范要求 422，他们选择钉回 400。",
+    "quote": "迁移最难的不是代码，是别人已经依赖的错。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23698239",
+    "published": "2026-11-18",
+    "uid": "4947d7be330844a8a6f7eb3bca4a5f73"
+  },
+  {
+    "title": "鸿蒙冷启动白屏根治：别让遮罩适配门帘，让它们是同一张图",
+    "content": "鸿蒙 App 冷启动白屏的实录：AI 给的两个方案都搞不定「渐变整图启动页 + 零白屏」，作者换了问法才破局——别让遮罩去适配门帘，让它们就是同一张图。中间经历五轮 hilog 真机取证、35ms 竞态、1300002 静默失败，最终实测白屏占比 0%，比安卓端还顺。",
+    "quote": "五轮真机日志，抵不上换一个问法。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/xyyt/p/23696775",
+    "published": "2026-11-18",
+    "uid": "698949ad5b31036680a5d5895823e818"
+  },
+  {
+    "title": "520 万条数据迁移：ES 索引重建与「改名」的踩坑全记录",
+    "content": "一次真实的 Elasticsearch 迁移复盘：重建索引没法直接改名，于是走 MySQL 增量管道加 _reindex 的路子。踩到的坑包括增量管道的隐藏 bug、date mapping 的 time_zone 偏差、_reindex 提速的三个手段、父任务进度显示 0/0 的假象，以及 yellow 状态到底该怎么解读。520 万条数据，全流程可复现。",
+    "quote": "进度 0/0 不是卡住，是它在骗你。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/yellow3gold/p/23689542",
+    "published": "2026-11-18",
+    "uid": "361e821f0fb78a1235fe0e79092ed5d7"
+  },
+  {
+    "title": "A2UI：让 Agent 画界面，而不是写代码",
+    "content": "一篇讲清 A2UI 的文章：为什么让 Agent 画界面而不是直接写 HTML、跟用 JSON Schema 生成表单的本质差别、A2UI 与 AG-UI、MCP、A2A 各自解决哪一类问题、边界在哪里，以及五类协议消息和 surface 生命周期怎么走。适合正在给 Agent 做前端交互层的人当协议地图看。",
+    "quote": "让模型画界面，比让它写 HTML 靠谱一点。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/haoxiaozhang/p/23696951",
+    "published": "2026-11-18",
+    "uid": "73edbd4f9cb5b45110d7df0c24f49ae3"
+  },
+  {
+    "title": "给 AI 喂知识：喂什么、怎么组织、怎么保鲜",
+    "content": "《嵌入式 AI 落地手记》第七篇，讲知识库该怎么给 AI 用。作者的核心判断是 AI 不是不会写代码，而是不知道团队为什么这样写，所以要把成熟项目里验证过的架构和程序模式整理成流程的默认输入，而不是每次靠提示词临时解释。接上一篇「技能约束工作过程」，这篇补的是输入侧。",
+    "quote": "不告诉它为什么，它只能给你一个能跑的。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/lishen2/p/23698465",
+    "published": "2026-11-18",
+    "uid": "07fc0daac6cc318c215626ec236dd23e"
+  }
+]
