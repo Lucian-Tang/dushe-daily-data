@@ -1,0 +1,227 @@
+[
+  {
+    "title": "NGINX 两个 HTTP/2 漏洞：无需认证就能拿服务器",
+    "content": "Wiz 联合 Ikotas Labs、Metnir、Rapid7 和 Xint 各自独立发现 NGINX 的 HTTP/2 处理存在两个无需认证的远程代码执行漏洞，编号 CVE-2026-123633 与 CVE-2026-123007，均评为严重级。NGINX 是超过 2.25 亿个网站的前门，打穿就能接管服务器、偷数据或篡改页面。文章给了检测思路和缓解建议，剩下的就看谁先升级到修复版本。",
+    "quote": "两亿个网站的前门，锁居然是坏的。",
+    "source": "HN Front Page",
+    "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+    "published": "2026-11-19",
+    "uid": "a6c47bc960bda64a0282d0e85d187a47"
+  },
+  {
+    "title": "微软 ONNX Runtime 仓库从 GitHub 消失",
+    "content": "microsoft/onnxruntime 的原地址现在返回 404，帖子在 HN 拿到 422 分、86 条评论。ONNX Runtime 是微软主推的跨平台推理引擎，PyTorch、Hugging Face 等一大票项目的部署链路都压在上面，仓库突然消失让下游只能一脸问号。微软没有公开说明，社区在猜是误操作、迁移还是别的动作，眼下 fork 和镜像成了唯一退路。",
+    "quote": "删库跑路，这回是微软自己动刀。",
+    "source": "HN Front Page",
+    "url": "https://github.com/microsoft/onnxruntime",
+    "published": "2026-11-19",
+    "uid": "4559bc57d3c57cca20a5ded5001dd217"
+  },
+  {
+    "title": "Quad9 退出法国：DNS 解析器不该当版权警察",
+    "content": "瑞士非营利组织 Quad9 宣布 11 月 24 日起停止响应来自法国的 DNS 查询。原因不是成本，而是巴黎法院因它拒绝替 beIN Sports 屏蔽盗播域名而判了罚款，法国还有约 20 起类似诉讼在排队。Cloudflare 称这是「煤矿里的金丝雀」：把封禁清单塞进公共解析器，等于让中立基础设施替版权方执法。Quad9 的 CTO 在 HN 上征集有理有据的长文递交给政策制定者。",
+    "quote": "让 DNS 查盗版，下一个查的就是你。",
+    "source": "HN Front Page",
+    "url": "https://techstackups.com/articles/quad9-leaves-france-dns-blocking/",
+    "published": "2026-11-19",
+    "uid": "d336101022a36fc91a627529d96e76ca"
+  },
+  {
+    "title": "180 万参数打赢推理：能量模型把算力账单砍掉 345 倍",
+    "content": "杜克、UIUC 与哈佛的团队提出 Energy-Based Reasoners：把循环推理的每一步更新写成对一个能量函数的梯度下降，能量值同时充当打分、改进方向和停止信号，不再依赖外部验证器。模型只有 180 万参数，在 Sudoku-Extreme 上拿到 99.9% 准确率，推理算力比次优模型少 345 倍；N-Queens 和图着色上也保持接近 100% 的单样本正确率。",
+    "quote": "一百八十万参数，把大模型的算力账单打骨折。",
+    "source": "HN Front Page",
+    "url": "https://energy-based-reasoners.github.io/",
+    "published": "2026-11-19",
+    "uid": "b2609622f220fb5199cc8837f62cc66d"
+  },
+  {
+    "title": "哈佛工作论文：代码多了 30%，评审慢了 49%",
+    "content": "哈佛博士生 Fiona Chen 与 James Stratton 的工作论文覆盖 718 家公司、约 72.6 万名工程师，数据取自 Jellyfish 的研发分析平台。结论很刺眼：采用 AI 编码 Agent 的公司代码量增加约 30%，但完成的工作量没有可测提升，代码通过评审的时间反而长了 49%——瓶颈从写码挪到了评审。论文尚未同行评审，但给「AI 提效」的账本添了一笔反向证据。",
+    "quote": "AI 写得更快，人看得更慢，账没变。",
+    "source": "HN Front Page",
+    "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
+    "published": "2026-11-19",
+    "uid": "b371ed611b89c5bad6024fa0975ddedf"
+  },
+  {
+    "title": "有人实测：Claude 在蛋白质序列上大规模训练过",
+    "content": "研究者 Xinming Tu 做了个「下一个氨基酸」测试：给 Claude Fable 5.2 和 Opus 5.5 一段冷门细菌蛋白的开头，让它们预测下一位。结果能预测，把序列打乱后立刻失效，其他前沿模型全做不到；模型在大家族上表现更好。Fable 5.2 超过所有被测的开源蛋白语言模型，Opus 5.5 与 100 亿参数的 ProtGPT3 持平，指向训练数据里确实有蛋白序列。",
+    "quote": "号称通用模型，背地里补了生物课。",
+    "source": "HN Front Page",
+    "url": "http://xinmingtu.cn/blog/2026/claude-opus-5-5-protein-sequences/",
+    "published": "2026-11-19",
+    "uid": "de6ee96d3d046dae6035595ddb7e1885"
+  },
+  {
+    "title": "Gemini 4 Carbon 慢在哪：找到病因后又磨了 25 分钟",
+    "content": "Kernel 用同一个 bug 对比 GPT-6 Astra 和 Gemini 4 Carbon：Astra 一分钟内定位原因、三分钟后写出修复；Carbon 六分钟找到原因，却又花了 25 分钟才动第一行代码。作者在 harness 里每五轮注入一句「你现在够不够动手了」，Carbon 总耗时从 37 分钟降到 28 分钟，说明慢是行为习惯，不是知识缺口。",
+    "quote": "不是不会修，是舍不得结束自己的思考表演。",
+    "source": "HN Front Page",
+    "url": "https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/",
+    "published": "2026-11-19",
+    "uid": "0f57351852c8fcb0905dbe539d9a6ec5"
+  },
+  {
+    "title": "x86 为什么长这样：从 4004 到 486 的妥协史",
+    "content": "Pikuma 的长文从 4004 一路讲到 486，解释 x86 里那些看起来毫无道理的设计：为什么是小端序、寄存器为什么叫 AX/BX/CX/DX、DOS 程序员为什么写 A000:0000、现代 PC 开机为什么还要假装自己是 1978 年的芯片。结论是每一次都是为了兼容旧软件、在压力下做的选择，而不是教科书里的最优解。",
+    "quote": "所有技术债，最后都写进了指令集。",
+    "source": "HN Front Page",
+    "url": "https://pikuma.com/blog/history-of-x86-4004-to-486",
+    "published": "2026-11-19",
+    "uid": "47255824e0f79d7b0b1d45fdee87401e"
+  },
+  {
+    "title": "Apple 支持社区 11 月 20 日关闭，Archive Team 连夜抢救",
+    "content": "Apple 在 11 月 10 日宣布 Apple 支持社区（Apple Discussions）将于 11 月 20 日永久关闭，站点即日起停止发帖、转为只读。Archive Team 已经立项开抓，用分布式 Warrior 保存这个积累了多年的 Apple 用户问答库，项目状态标为「进行中」。对经常靠搜索结果里的旧帖修机器的人来说，只剩最后几天。",
+    "quote": "官方删档，民间抢救，互联网记忆靠志愿者续命。",
+    "source": "HN Front Page",
+    "url": "https://wiki.archiveteam.org/index.php/Apple_Discussions",
+    "published": "2026-11-19",
+    "uid": "30a4b58333b6e7fd157d65f83dacfc5c"
+  },
+  {
+    "title": "Cursor 开源插件规范：17k 星，先占接口标准",
+    "content": "Cursor 把自家的插件规范和一批官方插件一起开源，TypeScript 编写，已拿到 1.7 万星。它不只是几个示例，而是一套「编辑器里的 Agent 该怎么扩展」的约定：插件如何声明能力、如何挂到对话和编辑器动作上、如何与内置工具共存。对做 IDE Agent 的团队来说，这等于 Cursor 先把接口标准摆上台面，跟不跟是另一回事。",
+    "quote": "先定标准的人，收的从来是生态税。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/cursor/plugins",
+    "published": "2026-11-19",
+    "uid": "6326357c915b95dae1bc2e76ce502984"
+  },
+  {
+    "title": "CLI-Anything：5.9 万星，把软件改造成 Agent 的 CLI",
+    "content": "港大数据智能实验室的 CLI-Anything 已拿 5.9 万星，目标是「让所有软件都变成 Agent 原生」。做法是给现有软件套一层结构化 CLI：参数、输出、错误码都约定好，Agent 不用截图点按钮，直接调命令再解析结果，配套 CLI-Hub 分发。它踩的是同一个痛点——MCP 和 GUI 自动化都不稳，能被脚本化的命令行反倒是 Agent 最好用的手。",
+    "quote": "GUI 给人类看，CLI 才给 Agent 用。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/HKUDS/CLI-Anything",
+    "published": "2026-11-19",
+    "uid": "54addf52a49f1d15b0c1461f19a226e8"
+  },
+  {
+    "title": "NVIDIA 开源 SkillEvaluator：给 Agent 技能上质量门",
+    "content": "NVIDIA 的 SkillEvaluator 用 Python 写成，是一个多层级的 AI 技能与插件评估框架：做质量门禁、检测技能之间的语义重叠、自动生成合成评测集，还能在真实 Agent 里跑，量化一个技能究竟怎么改变 Agent 的行为，目前 3.5k 星。技能生态膨胀到没人看得过来时，「这个技能值不值得装」就从感觉问题变成了工程问题。",
+    "quote": "技能越多越乱，先给每个技能打分。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/NVIDIA/SkillEvaluator",
+    "published": "2026-11-19",
+    "uid": "66c5d75fecf6737e1a72ab2077e524c1"
+  },
+  {
+    "title": "mitmAny：把真实抓包接进 MCP，让 AI 读报文",
+    "content": "作者开源了 mitmAny，一个把 HTTP/HTTPS 抓包接到 AI 的桌面工具：内置 MCP 服务，你正常操作网站或 App，它把请求和响应交给 Codex 等客户端分析，可以追问分页逻辑、登录流程，还被要求引用请求编号、标出不确定的推断。支持 Windows、macOS 和 Android USB 抓包，自带 JSON 查看。比截图喂模型靠谱的地方在于：证据是原始报文。",
+    "quote": "别让 AI 猜接口，把报文摔它脸上。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1257981",
+    "published": "2026-11-19",
+    "uid": "b8f7fe95466f60a23e4d781e1382481f"
+  },
+  {
+    "title": "TaroBird：在地铁上用手机批准电脑上的 Agent",
+    "content": "用 Codex、Claude Code 的人都遇到过：任务跑着，人一离开就卡在「是否继续」上，一等一下午。作者做了 TaroBird——电脑上的 Agent 照常跑，手机端能看进度、回答提问、点批准，做完的文件直接推到手机。它没有再造一个 Agent，底层仍是官方 CLI，支持 Codex、Claude Code、Kimi Code 等。本质上把「人在回路」从桌前挪进了口袋。",
+    "quote": "Agent 不缺脑子，缺个随时点同意的人。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1257920",
+    "published": "2026-11-19",
+    "uid": "9c2f50aa2a257d9b46a30c3531e37d6f"
+  },
+  {
+    "title": "1.7MB 的 3D 滑雪游戏：没有一个贴图和音频文件",
+    "content": "V2EX 上有人分享独立游戏《雪迹》（Cold Smoke），主打放松体验的 3D 滑雪，作者 Huisky，整包约 1.7MB，而且不含任何图片、音频、模型或贴图素材：雪山、树林、天空、极光，连背景音乐和风声都由代码生成，据介绍 Fable 5.2 参与了实现。体积小到极致反而说明一件事——模型已经能写出「资产全靠算」的完整作品。",
+    "quote": "1.7MB 装下一座雪山，美术先下班。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1258088",
+    "published": "2026-11-19",
+    "uid": "0e8985f57038759bcf2915dab19a204c"
+  },
+  {
+    "title": "Skill Stow：macOS 上的 AI Skill 管理器，原生不是套壳",
+    "content": "V2EX 网友开源了 macOS 原生 Skill 管理器 Skill Stow：扫描本机 32 个 Agent 目录，统一看清 Skill 装在公共库、某个 Agent 还是当前项目，支持按 Agent 开关和软链。导入前做本地离线扫描并展示 skills.sh 审计结果，GitHub 来源可看逐文件 diff 再更新，旧版默认进废纸篓。原生界面用 Go + MyGo 写，MIT 开源、纯本地。",
+    "quote": "Skill 装得比代码还乱，先来个管理器救命。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1258109",
+    "published": "2026-11-19",
+    "uid": "34be512039d2b4de3e89ffc71b8f7eb0"
+  },
+  {
+    "title": "给 Sub2API 做降智巡检：答错就下线，复测过了再上岗",
+    "content": "有人给 Sub2API 的多账号调度写了个「降智巡检」：定时出糖果题、逻辑题、JSON 指令遵循等题目，答错标准答案就把该账号暂时移出调度，冷却后单独复测，全部通过才恢复接单。Docker Compose 部署，嵌进原面板、沿用原登录，不改网关源码。自动剔除默认关闭，建议先跑几轮看结果再开。",
+    "quote": "账号没挂，只是变笨了，这才是最难查的故障。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1258122",
+    "published": "2026-11-19",
+    "uid": "342194af74ef12fc3570b1f71c5ace2d"
+  },
+  {
+    "title": "CRX8：扩展只装官方原包，装前先做权限体检",
+    "content": "V2EX 作者做了个 Chrome/Edge 扩展直装站 CRX8：只取商店官方原包，不经第三方二手包，商店装不上时还能转成可加载的 ZIP；安装前先做 Manifest 权限体检，把 all_urls、cookies、webRequest 这类高危权限摆到明面上。起因是帮朋友找插件时，第三方下载站夹带私货、还要关注公众号取提取码。",
+    "quote": "装插件前先看权限，比出事后再杀毒便宜。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1258089",
+    "published": "2026-11-19",
+    "uid": "1ee7a8715143782f43be698487089ed1"
+  },
+  {
+    "title": "用茶馆账本讲清 Bitcask：只追加，从不擦除",
+    "content": "Dev.to 一篇讲 Bitcask 的文章用茶摊老板的账本作比喻：从不涂改，每笔新记录都写在最下面；本子写满就收进抽屉、永不回写；查余额只需记住「哪本、哪一行」。对应到存储就是追加日志加一张内存哈希表：目录里只有一个活跃文件，超过阈值就滚动成不可变文件，读时查索引直接定位。没有 LSM 分层、没有布隆过滤器、没有 B 树分裂，六页论文的机关就这些。",
+    "quote": "不删不改，账本反而查得最快了。",
+    "source": "Dev.to",
+    "url": "https://dev.to/nimxch/ramu-kakas-notebook-how-bitcask-stores-data-without-ever-erasing-anything-2jaj",
+    "published": "2026-11-19",
+    "uid": "2282b595852dfbdfbbb90d137cb79efb"
+  },
+  {
+    "title": "pandas pct_change 的六个坑：涨跌幅算错只是噪声",
+    "content": "Dev.to 总结了 pandas 的 pct_change() 给出怪数的六种原因：不同标的的行堆在一起、默认 fill 行为在版本之间变过、基数为零、数据存在缺口、分组边界处理不当等。文章逐条给出复现方式和修法，核心提醒是先把索引、分组和缺失值理干净，再谈百分比变化，否则算出来的涨跌幅只是噪声。",
+    "quote": "百分比算错不可怕，拿着它做决策才可怕。",
+    "source": "Dev.to",
+    "url": "https://dev.to/dustinliang/pandas-pctchange-pitfalls-6-ways-percent-change-lies-to-you-on-grouped-and-gappy-data-2me3",
+    "published": "2026-11-19",
+    "uid": "a131df3f94f4e8e63a8e8111b9533464"
+  },
+  {
+    "title": "Anthropic 的 always-on Agent：大部分时间在睡觉",
+    "content": "博客园一篇解读 Anthropic《Building always-on agents》的文章，把「持续工作」拆成 Run 与 Session：Agent 大部分时间休眠，事件到来才启动 Run，做完继续睡。系统用持久化 Event Inbox 把接收与执行分开，Handler 只写库和去重，Worker 再唤醒 Agent、决定恢复旧 Session 还是新建。文章强调副作用操作要幂等。",
+    "quote": "让 Agent 睡觉，比让它一直转便宜。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Qiniu-developer/p/23708543",
+    "published": "2026-11-19",
+    "uid": "ee923f8b4fc9492a5b5981417a385910"
+  },
+  {
+    "title": "相似度全挤在 0.9：向量没归一化的量纲灾难",
+    "content": "博客园「AI 工程师踩坑实录」收官篇复现了一个不出声的坑：用 transformers 原始 API 取 bge-small-zh 的 CLS 向量，六段文档范数在 6.4 到 7.2 之间，未归一化的点积跨 11.7 到 36.2，归一化后回落到 0.232 到 0.734。根因是点积等于余弦乘以两个不受控的范数，于是阈值设不了。修法就一行——入库和查询两侧都除范数，只做一边等于没做。",
+    "quote": "分数不对劲，先看范数，别怪模型。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/dawudexiaowu/p/23703439",
+    "published": "2026-11-19",
+    "uid": "caf4d87ea06803d8773d0d5fb1e4777a"
+  },
+  {
+    "title": "给 PACS 加一道匿名闸门：自研 DICOM 脱敏网关",
+    "content": "博客园作者给 PACS 加了一层自研 DICOM 脱敏服务器：不改造原有 PACS，作为代理网关统一承接查询与下载请求，按策略对患者姓名、ID、机构等字段脱敏，保留模态、部位、检查描述等科研必需元数据。支持白名单、时间窗和字段级配置，让数据做到「可用不可见」，在出域之前就把口子收住。",
+    "quote": "数据要出医院，先过一道匿名闸门。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/poxiao/p/23711429",
+    "published": "2026-11-19",
+    "uid": "e7635e9ffcaf44decf1e3d70c0d58bff"
+  },
+  {
+    "title": "Caffeine+Redis 双重缓存：两类脏读，四套方案",
+    "content": "一篇把 Caffeine+Redis 多级缓存讲透的长文：先区分它和 MyBatis 二级缓存，再划适用边界——库存、支付、订单这类强一致业务别碰，单用 Redis 扛得住也别加。重点拆了两类脏读：单机读写竞态（慢读回填旧值）和跨节点脏读（失效广播到达前别的实例还在读本地旧值），并给了四套落地方案和可运行代码。",
+    "quote": "缓存加一层，脏读多两种，账得提前算。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/SheepDog/p/23709471",
+    "published": "2026-11-19",
+    "uid": "e298901fbfe188087bb227af4d83bd2f"
+  },
+  {
+    "title": "8 个 SKILL 的设计逻辑：管住 AI 从讨论到提交的每一步",
+    "content": "作者把用真实事故换来的防线沉淀成 8 个 SKILL，全部围绕 ProjectSpec 这份「给 AI 读的机器契约」运转。议题链 spec-start/pause/close/archive 管住从讨论到落盘的边界，交付链 dev-loop/code-review/code-smell/smart-git 防止设计与实现分叉。判断很硬：写错层的决议比没写更致命，提交粒度就是未来的回滚粒度。",
+    "quote": "Skill 不是越多越好，是每条都知道自己不管什么。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/learnhow/p/23710916",
+    "published": "2026-11-19",
+    "uid": "e66a7989d238d30d163e37fc96b95d12"
+  }
+]
