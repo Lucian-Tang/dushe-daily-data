@@ -1,0 +1,227 @@
+[
+  {
+    "title": "Ruby2shell：一个字母撑破堆，Rails 默认配置可未认证打穿",
+    "content": "Veria Labs 披露 GHSA-34m4-m9fh-gqp5：Ruby 对单字节编码做 upcase 时，小写 ß 会被写成两个字节 SS，循环却只按一个字节做边界检查，造成堆溢出。Rails、Sinatra 默认配置可未认证触发，GitLab 19.6.0、GitHub Enterprise 3.22.5 也中招。修法是升级 Ruby 到 3.3.14 / 3.4.13 / 4.0.10。",
+    "quote": "一个字母撑破缓冲区，老语言的老脾气。",
+    "source": "HN Front Page",
+    "url": "https://verialabs.com/ruby2shell/",
+    "published": "2026-11-20",
+    "uid": "17f17be8a19107841781d8f2eca89b7c"
+  },
+  {
+    "title": "Anthropic 完成 IPO 定价：每股 83 美元，代码 ANT",
+    "content": "Anthropic 把 IPO 发行价定在每股 83 美元，发行 9.8 亿股 A 类普通股，其中 9.56 亿股由公司卖出，另给承销商 1.47 亿股超额配售权。股票 11 月 19 日在纳斯达克全球精选市场挂牌，代码 ANT，预计 11 月 20 日完成交割；SEC 注册文件 11 月 18 日生效，承销商是高盛和摩根士丹利。HN 上 366 分、680 条评论，讨论比招股书还热闹。",
+    "quote": "嘴上说不要泡沫，身体很诚实地上了岸。",
+    "source": "HN Front Page",
+    "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+    "published": "2026-11-20",
+    "uid": "53aaeaeaf928b6e379e1320125f60ad9"
+  },
+  {
+    "title": "欧盟委员会把 Matrix 铺给 4 万员工：主权先于功能",
+    "content": "欧盟委员会 2025 年 12 月还在做 Matrix 概念验证，到 2026 年 9 月已经装进每一台委员会笔记本，4 万多名员工在用。他们把「主权」拆成五条：业务连续性、供应商多样性、数据控制、平台所有权、采购议价能力。部署跑在主权云上，登录接 EU Login，目前刻意不开联邦；底座是 Element 的 ESS Pro，委员会自己运维。HN 468 分、235 条评论。",
+    "quote": "数字主权，从把自己的聊天软件换掉开始。",
+    "source": "HN Front Page",
+    "url": "https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/",
+    "published": "2026-11-20",
+    "uid": "75f8ffaa8994e43eaf87cb7b870b6627"
+  },
+  {
+    "title": "PHP 8.6 发布：部分函数应用、Duration 类与 Polling API",
+    "content": "PHP 8.6 于 11 月 19 日发布，主打部分函数应用：先用 ? 和 ... 占位，返回等着收剩余参数的 Closure；另外新增 \\Time\\Duration 计时类、基于 epoll/kqueue 的 Polling API（给 ReactPHP 这类事件循环用）、clamp() 函数、SortDirection 枚举，readonly 属性也能带默认值了。",
+    "quote": "PHP 补函数式，Java 补协程，都挺忙。",
+    "source": "HN Front Page",
+    "url": "https://www.php.net/releases/8.6/en.php",
+    "published": "2026-11-20",
+    "uid": "97b37c1f62ae5b44ff1576ab24b20a70"
+  },
+  {
+    "title": "一台 VM 跑 1500 万个 Web 服务器：smoltcp、DPDK、AF_XDP",
+    "content": "kapteko 这篇是个认真玩的玩笑：目标是 10GB 内存、1 核 CPU 上跑 1500 万个 Web 服务器，理由是「服务器不够全人类分」。文章从 listen/accept/recv/send/close 五个系统调用讲起，先用 C 写了个只会回 OK 的循环，跑到约 6.5 万 RPS，然后一路换 smoltcp、DPDK、AF_XDP，把内核绕过。HN 上 283 分、32 条评论。",
+    "quote": "为了省服务器，先把内核给绕过去了。",
+    "source": "HN Front Page",
+    "url": "https://kapteko.com/15-million-webservers/",
+    "published": "2026-11-20",
+    "uid": "8ebe2ea78ec44e79b17395eabe34e12e"
+  },
+  {
+    "title": "java4shell：OpenJDK 的 AVX-512 Base64 解码器会写越界",
+    "content": "OpenJDK PR #32781 在修一个九月就被报告的洞：x86_64 AVX-512 VBMI 路径的 Base64 解码器，处理长度小于 4 的残缺尾部时会算出负的 output_mask，把数据写到逻辑输出长度之外，踩坏堆。合法输入长度必为 4 的倍数，因此只在异常输入上触发，但服务端解码用户输入的场景并不少见。作者建议长度不足 4 时直接退回 Java 层，HN 上 123 分。",
+    "quote": "补丁只有三行，前面是几个月的沉默。",
+    "source": "HN Front Page",
+    "url": "https://github.com/openjdk/jdk/pull/32781",
+    "published": "2026-11-20",
+    "uid": "274998ef4c20b6fab8358a9ad3deb9f3"
+  },
+  {
+    "title": "Blobasaur：Zerodha 用 SQLite 做分布式 blob 存储",
+    "content": "Zerodha 的 Kite 有约 2000 万用户，多图表布局、指标模板、手绘矢量、终端模式的组件配置都以 JSON blob 存在后端，从几 KB 到几 MB。原来用 SSDB，项目停维护且不能分布式，还被迫把 blob 限在 1MB。他们自建 Blobasaur：基于 SQLite 分片、分布式、轻量，商品机上每秒数千次读写，延迟保持个位数毫秒。HN 172 分。",
+    "quote": "SQLite 扛住两千万用户，先把架构师得罪了。",
+    "source": "HN Front Page",
+    "url": "https://zerodha.tech/blog/high-performance-distributed-blob-storage/",
+    "published": "2026-11-20",
+    "uid": "0f05c960f70ff9b6c9d595101f178202"
+  },
+  {
+    "title": "Harness：把裸模型变成能干活 Agent 的那一层",
+    "content": "博客园长文拆 Harness：模型是无状态函数，token 进 token 出，工具派发、状态与记忆、沙箱、上下文管理、权限护栏全在模型外面这一层。文章以 Microsoft Agent Framework 的 HarnessAgent 为例，讲四组配置、三个插槽，以及工具循环里那些必须写对的细节——并行调用、异常回填成结果、callId 严格配对、按用户轮次裁历史。最扎心的是：配置错了它不报错。",
+    "quote": "开关名字很美好，读源码才发现关不掉。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/haoxiaozhang/p/23715305",
+    "published": "2026-11-20",
+    "uid": "a8ee5f4565d8c15ac1bd9be4eca43ec6"
+  },
+  {
+    "title": "Kafka 为什么快：sendfile 到底省掉了哪几次拷贝",
+    "content": "这篇把「Kafka 为什么快」拆成四步拷贝：磁盘到 Page Cache 由 DMA 搬，Page Cache 到用户缓冲区、再到 socket 缓冲区各是一次 CPU 拷贝，最后到网卡又是 DMA。传统 read/write 发 1GiB 文件要 3 万多次系统调用，CPU 白搬 2GiB。mmap 省一次 CPU 拷贝，sendfile 直接送进 socket，Kafka 走的就是这条路径。",
+    "quote": "数据搬来搬去，CPU 纯当搬运工。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/leikooo/p/23718517",
+    "published": "2026-11-20",
+    "uid": "5463d5519362bd1fa0e8a9c32888bd2b"
+  },
+  {
+    "title": "firecrawl：给 Agent 用的抓取层，20 万星",
+    "content": "firecrawl/firecrawl 在 Trending 上，TypeScript 写的「给 Agent 用的知识基础设施」：搜索、抓取，再加 550 多个数据提供方统一进一个 API，已经 20.3 万星。它解决的是 Agent 最脏的一段活——网页要清洗、要绕反爬、要切成能塞进上下文的块。现在这类项目拼的不是能不能抓，而是抓回来能不能直接用。",
+    "quote": "Agent 的智力，一半看喂进去的网页干不干净。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/firecrawl/firecrawl",
+    "published": "2026-11-20",
+    "uid": "ac6e89ab82cbdbbd5ff59ba3755cb1cc"
+  },
+  {
+    "title": "Agent 谁来管？Postman 养了一队 Agent 做质量",
+    "content": "Postman 旗下 Astropods 的做法：不靠人肉盯 Agent，而是养一队各管一件事的 Agent——Triage 把 trace 里的失败归类，Fixer 改 prompt 并在好/坏对话上重放，Test Writer 把确认的失败存成测试，Watcher 在回归时重开问题，最后由人拿着证据签字。他们三个月内 580 人用了 134 个 Agent，人力已经盖不过来。",
+    "quote": "Agent 多了，得再养一队 Agent 管它们。",
+    "source": "Dev.to",
+    "url": "https://dev.to/postman/who-looks-after-the-agents-how-a-quality-pod-finds-an-agent-bug-and-drafts-the-fix-3gji",
+    "published": "2026-11-20",
+    "uid": "9c1049f00f7e096ac8f81c19869e1293"
+  },
+  {
+    "title": "minimind：两小时从 0 训出 64M 大模型",
+    "content": "jingyaogong/minimind 今天挂在 GitHub Trending：一句话卖点是「两小时从 0 训出你的 64M 大模型」，Python 实现，已攒 6.67 万星。它把数据、分词、预训练、SFT 到推理的整条链路压到消费级显卡能跑完的规模，适合拿来搞懂每一步到底发生了什么，而不是背 API。大模型越做越黑，这种小而全的玩具反而稀缺。",
+    "quote": "两小时训个模型，比两小时调 API 有意思。",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/jingyaogong/minimind",
+    "published": "2026-11-20",
+    "uid": "32d5f50d735402b56f309c6dced8eabb"
+  },
+  {
+    "title": "remove.bg 要关站，有人用 BiRefNet 做了兼容替代",
+    "content": "remove.bg 宣布 12 月 1 日关掉独立网站和自助 API，网页用户导去 Canva，API 用户导去 Leonardo.Ai，后者接口要重写。V2EX 有人干脆做了个兼容替代：接口保持一致，旧代码只换域名和 key，网页端上传一张图就能下全分辨率透明 PNG。模型用 BiRefNet，选它主要是授权能商用。代价是第一张图冷启动要等十几秒。",
+    "quote": "接盘 remove.bg，先接住了冷启动。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1258373",
+    "published": "2026-11-20",
+    "uid": "7199c25b80c49a02c0de133cce9a63f4"
+  },
+  {
+    "title": "ARCC：Rust 写的多形态终端 Agent，TUI/CLI/飞书/ACP",
+    "content": "ARCC 是 V2EX 作者用 Rust 写的本地优先终端 Agent，0.10.0，MIT 开源。起因很实际：想搞清楚 Claude Code、Codex 内部怎么转，顺便给 Claude 当便宜子代理，再要一个 7×24 挂在飞书里的运维助手。同一套内核支持 TUI、CLI、飞书和 ACP 四种形态。自己造轮子的好处是所有调度逻辑都能看见，坏处是要自己维护。",
+    "quote": "看不懂别人的 Agent，就写一个更看不懂的。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1258317",
+    "published": "2026-11-20",
+    "uid": "66f374cdd58924cc4508ce0f91e39684"
+  },
+  {
+    "title": "五个能跑但算错的 SQL：数据工程面试常踩的坑",
+    "content": "这篇总结了数据工程面试里反复出现的五个 SQL 坑，共同点是查询能跑、结果看着对、其实是错的：NULL 参与比较让过滤条件静默丢行、JOIN 后再聚合导致重复计数、窗口函数和 GROUP BY 混用、时间边界用 BETWEEN 少算一天、以及 LIMIT 没有确定性排序。每条都配了可运行的例子，说明错误结果长什么样、正确写法差在哪。",
+    "quote": "能跑通的 SQL，和算对的 SQL，是两回事。",
+    "source": "Dev.to",
+    "url": "https://dev.to/sqlinterviewpatterns/5-sql-traps-that-sink-data-engineering-interviews-with-runnable-examples-1ofb",
+    "published": "2026-11-20",
+    "uid": "767e3e6d85af130072dc732b17c827c5"
+  },
+  {
+    "title": "MySQL safe-updates：它拦住了什么，又放过了什么",
+    "content": "MySQL 的 safe-updates 模式常被当成绊脚石：error 1175 在 Stack Overflow 上有几百万浏览，高赞答案基本都在教你把它关掉。作者认为可惜，因为这个模式确实拦得住不带 WHERE 的 UPDATE/DELETE，也能限制没有用索引的更新；文章逐条演示它拦什么、放过什么，比如带 LIMIT 的语句、用非唯一索引扫描的更新，以及 JOIN 形式下它判断不到的情况。",
+    "quote": "遇到安全阀先拆掉，是运维界的传统艺能。",
+    "source": "Dev.to",
+    "url": "https://dev.to/dudko-dev/update-without-where-what-mysqls-safe-updates-mode-stops-and-what-it-lets-through-2mf7",
+    "published": "2026-11-20",
+    "uid": "191f6695e8c5805bf01fe4d4f074965c"
+  },
+  {
+    "title": "PostHog 账单失控：19 条吐槽指向同一个开关",
+    "content": "一位创始人的 PostHog 账单在 X 上刷到 30 万浏览，联合创始人回复说峰值来自 autocapture。作者翻了 19 条公开吐槽，梳理账单失控的常见来源：autocapture 把每次点击和表单交互都算成事件、SPA 路由切换重复上报、开发环境没关采集、session replay 默认全量录制。文章给出对应的关停和采样配置，核心是先量事件再谈优化。",
+    "quote": "埋点的时候不要钱，看账单的时候要命。",
+    "source": "Dev.to",
+    "url": "https://dev.to/mariano_carrica_e24542175/reduce-your-posthog-bill-198k",
+    "published": "2026-11-20",
+    "uid": "dab0dfc920e06ee42784f6f4420653ba"
+  },
+  {
+    "title": "开了混合精度就 NaN：GradScaler 到底在做什么",
+    "content": "混合精度训练一开就 NaN，问题常出在 fp16 的数值范围只有 6.1e-5 到 65504：梯度上溢变 inf 会显式报错，下溢变 0 则静默失效，模型看起来在训、其实已经装死。文章拆解 GradScaler 的做法——先把 loss 放大再反向传播，检查梯度是否 inf/NaN，异常就跳过这步并降低 scale，正常则逐步放大，最后还原梯度，并给出常见配置和排查顺序。",
+    "quote": "loss 不降不一定是模型笨，可能是梯度已经归零。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/dawudexiaowu/p/23717125",
+    "published": "2026-11-20",
+    "uid": "0fa6767cf248071faecc965e486e8f40"
+  },
+  {
+    "title": "美国自然历史博物馆用 JuiceFS 存 3PB 科研数据",
+    "content": "美国自然历史博物馆的科学计算团队要处理天体物理和基因组学的约 3PB 研究数据，要求高吞吐读取和对数据损坏零容忍。他们基于兼容 S3 的开放存储网络，用 JuiceFS 社区版搭了一套高可靠、低维护的存储：元数据与数据分离，缓存扛住重复读取，快照和校验保证完整性，文章总结了架构选型、性能调优和几年运维下来踩过的坑。",
+    "quote": "三 PB 的科研数据，丢一个字节都是事故。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/JuiceData/p/23720628",
+    "published": "2026-11-20",
+    "uid": "c5e1c7160bff39d0a74e141b972f58ac"
+  },
+  {
+    "title": "黑板架构：多个 Agent 怎么围着同一张白板干活",
+    "content": "七牛「Agent 小知识」这篇讲黑板架构：多个 Agent 不直接互相喊话，而是把发现写进共享黑板，谁需要谁读，由控制层决定下一步谁上场。作者用排查报表导出 API 超时举例——日志 Agent 写入线索、指标 Agent 补充曲线、代码 Agent 定位慢查询，避免点对点消息把上下文撕碎。文章也提醒黑板要有写入规范和过期清理，否则很快变成垃圾场。",
+    "quote": "共享白板不设规矩，三天就变成涂鸦墙。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Qiniu-developer/p/23719835",
+    "published": "2026-11-20",
+    "uid": "add831ce1bd61789d0f79257cb32f6e4"
+  },
+  {
+    "title": "PDF 转 Markdown：别让页眉页脚毁掉切块",
+    "content": "把 40 页的 PDF 报告转成 Markdown 再切块，如果页眉有书名、页脚是「Confidential · Page 17 of 40」，很多切块开头都会粘上这些重复的行，检索和 RAG 时全是噪声。文章讲怎么在转换阶段识别 running header/footer：按位置和跨页重复模式聚类，保留真正的正文，把带页码的页脚单独抽出来做定位元数据，而不是一删了之。",
+    "quote": "切完 chunk 全是页眉，RAG 也只能读出个寂寞。",
+    "source": "Dev.to",
+    "url": "https://dev.to/dudko-dev/running-headers-and-footers-in-pdf-to-markdown-the-numbered-footer-survives-ghe",
+    "published": "2026-11-20",
+    "uid": "253c0f73770f26998d724bd4b45157bf"
+  },
+  {
+    "title": "gh-sift：把整个 PR 审阅搬进一个终端 TUI",
+    "content": "gh-sift 把 GitHub PR 审阅整个搬进终端：复用 gh-dash 的配置和快捷键，提供完整 PR 视图、审阅线程、split/stacked diff、堆叠 PR 的栈感知合并，还能跳到失败的 Actions 日志并定位到报错行。已读状态与 GitHub 的 Viewed 勾选同步，单二进制，gh extension install 装完就能跑，省得来回切窗口。",
+    "quote": "在终端和网页之间反复横跳，才是真·上下文切换税。",
+    "source": "HN Show HN",
+    "url": "https://github.com/chrismatix/gh-sift",
+    "published": "2026-11-20",
+    "uid": "9f5f8d27da1ef8a23d21f2c18ac86599"
+  },
+  {
+    "title": "HL7Guard：把 HL7v2 校验和脱敏塞进 CI",
+    "content": "HL7Guard 是个面向 CI 的 HL7v2 命令行工具，不做花哨的消息查看器：validate 按内置 ADT、ORM、ORU profile 检查必填段和字段，anonymize 用固定 seed 把姓名、病历号、生日、地址、电话等标识字段替换成一致的假数据，方便做回归测试。退出码 0 干净、1 校验失败、2 文件或用法错误；文件里没有 HL7 消息一律算错误，不会被当成通过。",
+    "quote": "医疗数据的测试环境，最怕「看起来对」。",
+    "source": "HN Show HN",
+    "url": "https://github.com/VariantResearch/hl7guard",
+    "published": "2026-11-20",
+    "uid": "43d32bada54539ed98f34f21a29aae01"
+  },
+  {
+    "title": "Openspot：让 coding agent 给你造 macOS 小工具",
+    "content": "Openspot 是给 coding agent 用的 macOS 启动器：一个「spot」就是任意语言写的可执行文件，往 stdout 打几行文本，Openspot 把它渲染成原生卡片、列表、按钮和搜索结果，热键唤出面板即可用。这样写小工具不用再建 Xcode 工程、不用为每个工具重新授权、也不用买开发者账号分发，权限统一交给 Openspot 管；需要更强能力时还能自带 SwiftUI 视图。",
+    "quote": "为了一个小脚本建一个 App，本来就是本末倒置。",
+    "source": "HN Show HN",
+    "url": "https://github.com/celishq/openspot",
+    "published": "2026-11-20",
+    "uid": "417294984f01c5a7332c0ae585d475c2"
+  },
+  {
+    "title": "Dayfile：给脚本和 agent 记一本只追加的流水账",
+    "content": "Dayfile 把自己定位成「脚本和 agent 的 git log」：每个脚本、应用或 agent 在关键节点写一行短日志，比如备份完成、部署了 v1.8.2，所有事件按顺序进入一条时间线，可在浏览器、任意 feed reader 或自己的代码里读取，历史只追加不静默改写。目前公测免费，单条日志上限 5 万事件、25MB，代码 AGPL 开源。",
+    "quote": "日志只追加不改写，比某些人的记忆可靠。",
+    "source": "HN Show HN",
+    "url": "https://github.com/dayfile/dayfile",
+    "published": "2026-11-20",
+    "uid": "3641916ada92d75b773057c4b2554939"
+  }
+]
