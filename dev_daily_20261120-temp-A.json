@@ -1,0 +1,137 @@
+[
+ {
+  "title": "Anthropic 完成 IPO 定价：每股 83 美元，代码 ANT",
+  "source": "HN Front Page",
+  "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+  "content": "Anthropic 把 IPO 发行价定在每股 83 美元，发行 9.8 亿股 A 类普通股，其中 9.56 亿股由公司卖出，另给承销商 1.47 亿股超额配售权。股票 11 月 19 日在纳斯达克全球精选市场挂牌，代码 ANT，预计 11 月 20 日完成交割；SEC 注册文件 11 月 18 日生效，承销商是高盛和摩根士丹利。HN 上 366 分、680 条评论，讨论比招股书还热闹。",
+  "quote": "嘴上说不要泡沫，身体很诚实地上了岸。",
+  "published": "2026-11-20",
+  "uid": "dev_e1a6412d"
+ },
+ {
+  "title": "Ruby2shell：一个字母撑破堆，Rails 默认配置可未认证打穿",
+  "source": "HN Front Page",
+  "url": "https://verialabs.com/ruby2shell/",
+  "content": "Veria Labs 披露 GHSA-34m4-m9fh-gqp5：Ruby 对单字节编码做 upcase 时，小写 ß 会被写成两个字节 SS，循环却只按一个字节做边界检查，造成堆溢出。Rails、Sinatra 默认配置可未认证触发，GitLab 19.6.0、GitHub Enterprise 3.22.5 也中招。修法是升级 Ruby 到 3.3.14 / 3.4.13 / 4.0.10。",
+  "quote": "一个字母撑破缓冲区，老语言的老脾气。",
+  "published": "2026-11-20",
+  "uid": "dev_0a8d7739"
+ },
+ {
+  "title": "java4shell：OpenJDK 的 AVX-512 Base64 解码器会写越界",
+  "source": "HN Front Page",
+  "url": "https://github.com/openjdk/jdk/pull/32781",
+  "content": "OpenJDK PR #32781 在修一个九月就被报告的洞：x86_64 AVX-512 VBMI 路径的 Base64 解码器，处理长度小于 4 的残缺尾部时会算出负的 output_mask，把数据写到逻辑输出长度之外，踩坏堆。合法输入长度必为 4 的倍数，因此只在异常输入上触发，但服务端解码用户输入的场景并不少见。作者建议长度不足 4 时直接退回 Java 层，HN 上 123 分。",
+  "quote": "补丁只有三行，前面是几个月的沉默。",
+  "published": "2026-11-20",
+  "uid": "dev_84afd5fe"
+ },
+ {
+  "title": "欧盟委员会把 Matrix 铺给 4 万员工：主权先于功能",
+  "source": "HN Front Page",
+  "url": "https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/",
+  "content": "欧盟委员会 2025 年 12 月还在做 Matrix 概念验证，到 2026 年 9 月已经装进每一台委员会笔记本，4 万多名员工在用。他们把「主权」拆成五条：业务连续性、供应商多样性、数据控制、平台所有权、采购议价能力。部署跑在主权云上，登录接 EU Login，目前刻意不开联邦；底座是 Element 的 ESS Pro，委员会自己运维。HN 468 分、235 条评论。",
+  "quote": "数字主权，从把自己的聊天软件换掉开始。",
+  "published": "2026-11-20",
+  "uid": "dev_ef0d8805"
+ },
+ {
+  "title": "PHP 8.6 发布：部分函数应用、Duration 类与 Polling API",
+  "source": "HN Front Page",
+  "url": "https://www.php.net/releases/8.6/en.php",
+  "content": "PHP 8.6 于 11 月 19 日发布，主打部分函数应用：先用 ? 和 ... 占位，返回等着收剩余参数的 Closure；另外新增 \\Time\\Duration 计时类、基于 epoll/kqueue 的 Polling API（给 ReactPHP 这类事件循环用）、clamp() 函数、SortDirection 枚举，readonly 属性也能带默认值了。",
+  "quote": "PHP 补函数式，Java 补协程，都挺忙。",
+  "published": "2026-11-20",
+  "uid": "dev_8748f828"
+ },
+ {
+  "title": "SSD 要等 2027 下半年才降价，机械盘更晚",
+  "source": "HN Front Page",
+  "url": "https://www.drivevault.io/blog/when-will-hard-drive-prices-come-down.html",
+  "content": "DriveVault 给出的时间表：SSD 价格要到 2027 年下半年才开始松动，机械硬盘更晚，可能拖到 2028 年，因为工厂产能已经被提前买断。依据是跟踪内存合约价的 analyst 数据，以及希捷、西部数据今夏对投资者的表态。文章顺带劝人先盘一遍手里的旧盘——最便宜的 TB 是你已经买过的那块。HN 221 分、182 条评论。",
+  "quote": "等降价的人，最后都被涨价等到了。",
+  "published": "2026-11-20",
+  "uid": "dev_df5403a6"
+ },
+ {
+  "title": "一台 VM 跑 1500 万个 Web 服务器：smoltcp、DPDK、AF_XDP",
+  "source": "HN Front Page",
+  "url": "https://kapteko.com/15-million-webservers/",
+  "content": "kapteko 这篇是个认真玩的玩笑：目标是 10GB 内存、1 核 CPU 上跑 1500 万个 Web 服务器，理由是「服务器不够全人类分」。文章从 listen/accept/recv/send/close 五个系统调用讲起，先用 C 写了个只会回 OK 的循环，跑到约 6.5 万 RPS，然后一路换 smoltcp、DPDK、AF_XDP，把内核绕过。HN 上 283 分、32 条评论。",
+  "quote": "为了省服务器，先把内核给绕过去了。",
+  "published": "2026-11-20",
+  "uid": "dev_fbe391e5"
+ },
+ {
+  "title": "Blobasaur：Zerodha 用 SQLite 做分布式 blob 存储",
+  "source": "HN Front Page",
+  "url": "https://zerodha.tech/blog/high-performance-distributed-blob-storage/",
+  "content": "Zerodha 的 Kite 有约 2000 万用户，多图表布局、指标模板、手绘矢量、终端模式的组件配置都以 JSON blob 存在后端，从几 KB 到几 MB。原来用 SSDB，项目停维护且不能分布式，还被迫把 blob 限在 1MB。他们自建 Blobasaur：基于 SQLite 分片、分布式、轻量，商品机上每秒数千次读写，延迟保持个位数毫秒。HN 172 分。",
+  "quote": "SQLite 扛住两千万用户，先把架构师得罪了。",
+  "published": "2026-11-20",
+  "uid": "dev_cf8066bd"
+ },
+ {
+  "title": "minimind：两小时从 0 训出 64M 大模型",
+  "source": "GitHub Trending Daily",
+  "url": "https://github.com/jingyaogong/minimind",
+  "content": "jingyaogong/minimind 今天挂在 GitHub Trending：一句话卖点是「两小时从 0 训出你的 64M 大模型」，Python 实现，已攒 6.67 万星。它把数据、分词、预训练、SFT 到推理的整条链路压到消费级显卡能跑完的规模，适合拿来搞懂每一步到底发生了什么，而不是背 API。大模型越做越黑，这种小而全的玩具反而稀缺。",
+  "quote": "两小时训个模型，比两小时调 API 有意思。",
+  "published": "2026-11-20",
+  "uid": "dev_9d889d5d"
+ },
+ {
+  "title": "firecrawl：给 Agent 用的抓取层，20 万星",
+  "source": "GitHub Trending Daily",
+  "url": "https://github.com/firecrawl/firecrawl",
+  "content": "firecrawl/firecrawl 在 Trending 上，TypeScript 写的「给 Agent 用的知识基础设施」：搜索、抓取，再加 550 多个数据提供方统一进一个 API，已经 20.3 万星。它解决的是 Agent 最脏的一段活——网页要清洗、要绕反爬、要切成能塞进上下文的块。现在这类项目拼的不是能不能抓，而是抓回来能不能直接用。",
+  "quote": "Agent 的智力，一半看喂进去的网页干不干净。",
+  "published": "2026-11-20",
+  "uid": "dev_ba1eaa47"
+ },
+ {
+  "title": "remove.bg 要关站，有人用 BiRefNet 做了兼容替代",
+  "source": "V2EX Share",
+  "url": "https://www.v2ex.com/t/1258373",
+  "content": "remove.bg 宣布 12 月 1 日关掉独立网站和自助 API，网页用户导去 Canva，API 用户导去 Leonardo.Ai，后者接口要重写。V2EX 有人干脆做了个兼容替代：接口保持一致，旧代码只换域名和 key，网页端上传一张图就能下全分辨率透明 PNG。模型用 BiRefNet，选它主要是授权能商用。代价是第一张图冷启动要等十几秒。",
+  "quote": "接盘 remove.bg，先接住了冷启动。",
+  "published": "2026-11-20",
+  "uid": "dev_741e74ad"
+ },
+ {
+  "title": "ARCC：Rust 写的多形态终端 Agent，TUI/CLI/飞书/ACP",
+  "source": "V2EX Share",
+  "url": "https://www.v2ex.com/t/1258317",
+  "content": "ARCC 是 V2EX 作者用 Rust 写的本地优先终端 Agent，0.10.0，MIT 开源。起因很实际：想搞清楚 Claude Code、Codex 内部怎么转，顺便给 Claude 当便宜子代理，再要一个 7×24 挂在飞书里的运维助手。同一套内核支持 TUI、CLI、飞书和 ACP 四种形态。自己造轮子的好处是所有调度逻辑都能看见，坏处是要自己维护。",
+  "quote": "看不懂别人的 Agent，就写一个更看不懂的。",
+  "published": "2026-11-20",
+  "uid": "dev_e3416bc3"
+ },
+ {
+  "title": "Agent 谁来管？Postman 养了一队 Agent 做质量",
+  "source": "Dev.to",
+  "url": "https://dev.to/postman/who-looks-after-the-agents-how-a-quality-pod-finds-an-agent-bug-and-drafts-the-fix-3gji",
+  "content": "Postman 旗下 Astropods 的做法：不靠人肉盯 Agent，而是养一队各管一件事的 Agent——Triage 把 trace 里的失败归类，Fixer 改 prompt 并在好/坏对话上重放，Test Writer 把确认的失败存成测试，Watcher 在回归时重开问题，最后由人拿着证据签字。他们三个月内 580 人用了 134 个 Agent，人力已经盖不过来。",
+  "quote": "Agent 多了，得再养一队 Agent 管它们。",
+  "published": "2026-11-20",
+  "uid": "dev_5059ee83"
+ },
+ {
+  "title": "Kafka 为什么快：sendfile 到底省掉了哪几次拷贝",
+  "source": "博客园 Cnblogs",
+  "url": "https://www.cnblogs.com/leikooo/p/23718517",
+  "content": "这篇把「Kafka 为什么快」拆成四步拷贝：磁盘到 Page Cache 由 DMA 搬，Page Cache 到用户缓冲区、再到 socket 缓冲区各是一次 CPU 拷贝，最后到网卡又是 DMA。传统 read/write 发 1GiB 文件要 3 万多次系统调用，CPU 白搬 2GiB。mmap 省一次 CPU 拷贝，sendfile 直接送进 socket，Kafka 走的就是这条路径。",
+  "quote": "数据搬来搬去，CPU 纯当搬运工。",
+  "published": "2026-11-20",
+  "uid": "dev_987bea2f"
+ },
+ {
+  "title": "Harness：把裸模型变成能干活 Agent 的那一层",
+  "source": "博客园 Cnblogs",
+  "url": "https://www.cnblogs.com/haoxiaozhang/p/23715305",
+  "content": "博客园长文拆 Harness：模型是无状态函数，token 进 token 出，工具派发、状态与记忆、沙箱、上下文管理、权限护栏全在模型外面这一层。文章以 Microsoft Agent Framework 的 HarnessAgent 为例，讲四组配置、三个插槽，以及工具循环里那些必须写对的细节——并行调用、异常回填成结果、callId 严格配对、按用户轮次裁历史。最扎心的是：配置错了它不报错。",
+  "quote": "开关名字很美好，读源码才发现关不掉。",
+  "published": "2026-11-20",
+  "uid": "dev_85d50657"
+ }
+]
