@@ -1,0 +1,227 @@
+[
+  {
+    "title": "AI 从零设计出 CPU：Frostbite 每瓦性能 4.59 倍",
+    "source": "HN Front Page",
+    "url": "https://architectlabs.com/blog/frostbite",
+    "content": "Architect Labs 发布 Frostbite：一套由 AI 从指令集、微架构、RTL 一路做到最终 GDS 的通用 CPU 新架构。核心利用交互网「每步局部、依赖显式、每个值只有一个所有者」的性质。在 25 个负载（其中 15 个留到最终评测）上，每瓦性能达到一颗已流片的现代双发射顺序超标量核的 4.59 倍，面积效率同步提升。HN 421 分、256 条评论。",
+    "quote": "人类设计停滞多年，AI 一上手就掀桌子。",
+    "published": "2026-11-21",
+    "uid": "95a6891c82b0b28fb7bdd58e29134d69"
+  },
+  {
+    "title": "PostgreSQL 19 发布：REPACK 上线，逻辑复制免重启",
+    "source": "HN Front Page",
+    "url": "https://www.postgresql.org/docs/release/19.0/",
+    "content": "PostgreSQL 19 于 11 月 19 日发布，新增 REPACK 命令回收磁盘空间并重排表内容，带 CONCURRENTLY 时读写不被阻塞；两个新扩展可以固定或自动套用执行计划建议；只要预写日志级别够，开逻辑复制不必重启，序列值也能同步；备库新增等待命令，可实现读己之写；自动清理支持索引并行。HN 328 分。",
+    "quote": "VACUUM FULL 终于等来一个体面的替代品。",
+    "published": "2026-11-21",
+    "uid": "2ab7bb074f97fe2fc1d44cd594f6eda7"
+  },
+  {
+    "title": "FFmpeg 9.1「Gauss」发布：AAC 编码器大改",
+    "source": "HN Front Page",
+    "url": "https://ffmpeg.org/download.html#release_9.1",
+    "content": "FFmpeg 9.1（代号 Gauss）发布：AAC 编码器做了大幅改进，新增 APV 的 Vulkan 编码器、基于图的码流过滤接口、对 ASTC 图像编解码的支持、DVD-Audio 无损解码、H.264 数据分区，以及用显卡做零拷贝推理的 ONNX 后端；同时补上 libcurl 协议和新的硬件解码路径，另修了一批解码器的老问题。HN 243 分。",
+    "quote": "多媒体界的瑞士军刀，又磨了一遍刀刃。",
+    "published": "2026-11-21",
+    "uid": "3586bd417518265e3fb817f2400e74ab"
+  },
+  {
+    "title": "OpenSSL 9.8 分漏洞：EVP_EncodeBlock 写越界",
+    "source": "HN Front Page",
+    "url": "https://github.com/openssl/openssl/pull/33652",
+    "content": "OpenSSL 披露编号 CVE-2026-121481 的漏洞，通用漏洞评分 9.8：调用 EVP_EncodeBlock() 时，若输入长度接近整数上限，编码后长度的计算会溢出，从而越过调用方缓冲区写入。修复补丁改为对非法输入直接返回负一，并给对应的解码函数加上同样保护，同时修正 http_client.c 里一处长度检查。HN 332 分。",
+    "quote": "整数溢出这口老井，三十年还能捞出人来。",
+    "published": "2026-11-21",
+    "uid": "c2afea54e665353ca02f7dce35e31c49"
+  },
+  {
+    "title": "欧盟日本开闸三年，iOS 仍无一个非 WebKit 浏览器",
+    "source": "HN Front Page",
+    "url": "https://blog.mozilla.org/en/mozilla/internet-policy/apple-ios-browser-engine-rules/",
+    "content": "Mozilla 发文：DMA 生效后 Firefox 在 iOS 的日活翻倍，但苹果仍要求所有 iOS 浏览器基于 WebKit。欧盟与日本虽强制开放替代引擎，苹果给出的合规条件近三年无人能过，至今没有一个非 WebKit 浏览器上架。Mozilla 称这些条件「尽可能让人痛苦」，并质疑规则只看条文、不看结果。HN 81 分、21 条评论。",
+    "quote": "开放是开放的，只是门槛修在了天花板上。",
+    "published": "2026-11-21",
+    "uid": "7bc52725147372e558282fb43963792e"
+  },
+  {
+    "title": "只靠 AI 写码的人，评审能力也会一起退化",
+    "source": "HN Front Page",
+    "url": "https://cekrem.github.io/posts/if-you-stop-writing-code-you-also-get-worse-at-reviewing-it/",
+    "content": "开发者 cekrem 写文反驳「靠 AI 写码、自己只做评审」的流行说法：任何手艺停止练习都会退步，软件工程却假装例外。他用跑步、吉他手和作家的类比说明，读得多不等于评审得准，判断力来自亲手写、亲手踩坑。文章强调讨论的不是短期产出质量，而是工匠是否还在练手。HN 128 分、51 条评论。",
+    "quote": "只看别人游泳，迟早会忘了水有多呛。",
+    "published": "2026-11-21",
+    "uid": "5ab7c89263e01ea85bce31d02d103c55"
+  },
+  {
+    "title": "Anthropic 员工称与 Claude 一起证明了黎曼猜想",
+    "source": "HN Front Page",
+    "url": "https://alpo.ge/remark.pdf",
+    "content": "一份 4 页短文出现在 alpo.ge：作者称与 Claude 合作找到了黎曼猜想的证明，方法还可推广到广义黎曼猜想，并已用 Lean 完成无假设形式化，但因篇幅只公开 Lean 代码。文中提到关键一步是 theta 提升链长度取 √X，并承认发布时机敏感、自己尚未完全消化这套数学。HN 948 分、592 条评论，质疑与震惊齐飞。",
+    "quote": "四页纸加一个压缩包，数学界先别急着开香槟。",
+    "published": "2026-11-21",
+    "uid": "12152bb58d4dfcef153f24ce31f61239"
+  },
+  {
+    "title": "英国悄悄修掉冰柜漏洞：数万台设备差点被远程升温",
+    "source": "HN Front Page",
+    "url": "https://www.bbc.co.uk/news/articles/c6eq49zyx7p4o",
+    "content": "BBC 披露一场未公开的网络安全行动：10 月底研究人员在商用制冷设备中发现一个可被远程利用的重大漏洞，若被黑客先找到，英国超市、仓库、餐厅和体育馆的数万台冰柜可能被集体升温。Omega Solution、IT 团队与英国国家网络安全中心连夜通知数十家企业并完成加固；此前欧洲已有多起冷柜被攻击、食品腐烂的事件。HN 114 分。",
+    "quote": "物联网最魔幻的地方：黑客能给你的晚饭加热。",
+    "published": "2026-11-21",
+    "uid": "8285a5dde65a98853a8f581ec37ecd38"
+  },
+  {
+    "title": "Node.js 背压算错字节数：中文响应能多缓存三倍",
+    "source": "Dev.to",
+    "url": "https://dev.to/quantumbreakz/why-nodejs-http-backpressure-must-count-bytes-not-string-length-19d2",
+    "content": "作者发现 Node.js 的 HTTP 响应对象按字符串长度统计缓冲区，而它数的是 UTF-16 码元不是字节：两字节字符少算一半，中文常见少算三倍。结果是写入早已超过水位线仍返回成功，套接字暂停得太晚。已提交的修复 PR #66039 改用真实字节长度，并把首次写入时附带的响应头字节也算进去。",
+    "quote": "四行代码复现，十年老模块的面子挂不住。",
+    "published": "2026-11-21",
+    "uid": "e087f8165219cc390978100f1eb56ab9"
+  },
+  {
+    "title": "一个 YAML 缩进，让 Prometheus 抓了两遍",
+    "source": "Dev.to",
+    "url": "https://dev.to/quantumbreakz/labels-vs-annotations-how-one-yaml-indent-made-prometheus-scrape-pyroscope-twice-23dp",
+    "content": "Grafana Pyroscope 的 Helm chart 里，服务监控靠标签选择服务，从不看注解。一次为支持自定义注解做的重构，把 prometheus.io/service-monitor 这个排除键缩进了注解字段，规则静默失效，Prometheus 于是用两个任务抓同一批容器，指标翻倍、面板求和也算重。渲染时完全不报错，修复已提交。",
+    "quote": "YAML 不报错，账单替你报错。",
+    "published": "2026-11-21",
+    "uid": "3c59cde54fef42ad4730184d9920048a"
+  },
+  {
+    "title": "给 MCP 服务器接 OAuth 2.1：别让 Agent 拿共享密钥",
+    "source": "Dev.to",
+    "url": "https://dev.to/quantumbreakz/how-to-build-a-secure-mcp-server-with-oauth-21-lessons-from-a-crm-connector-42ml",
+    "content": "作者为 Nitspot CRM 做 MCP 连接器，总结出一套授权设计：OAuth 2.1 加 PKCE（只允许 S256）、动态客户端注册、401 时用 WWW-Authenticate 指向 /.well-known 元数据做发现。关键决定是把 access token 当成真实用户会话，交给数据库行级安全鉴权，销售看不到交易、管理员可以；重定向 URI 精确匹配，授权码一次性使用。",
+    "quote": "Agent 可以有权限，但不能有特权。",
+    "published": "2026-11-21",
+    "uid": "00e627aa35e19496da16c1a2a7183003"
+  },
+  {
+    "title": "pandas 取每组前 N 行：七个坑和一条稳的路",
+    "source": "Dev.to",
+    "url": "https://dev.to/dustinliang/pandas-nlargest-per-group-7-pitfalls-when-picking-the-top-n-rows-per-day-in-a-mentions-panel-43nn",
+    "content": "取每组前 N 行时，别对分组对象直接调 nlargest，它根本没这个方法。作者在 pandas 3.0.6 上列了七个坑：只需要值，用 groupby(key)[col].nlargest(n)；需要整行，就先排序再 groupby().head(n)。后一条路能给出可重复的并列排序，也能自己决定缺失值怎么填。文章用 75 万行的模拟面板演示，并列、空值和重复索引都会让结果多出意外的行。",
+    "quote": "并列值一多，排行榜就开始自己加戏。",
+    "published": "2026-11-21",
+    "uid": "f34e72e68d463137e4792e68a52c992b"
+  },
+  {
+    "title": "三层 B+ 树能装多少行？把 MySQL 索引算给你看",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/leikooo/p/23726844",
+    "content": "文章从「两千万行主键查询为什么快」讲起：InnoDB 页 16KB，非叶子页只存 key 和页指针，bigint 主键加 6 字节指针约 14 字节，一页放约 1170 项；叶子页按一行 1KB 算放 16 行。三层就是 1170×1170×16，约 2190 万行，多数业务表只有 2 到 4 层。文中还对比 int、bigint、binary(16) 与 char(36) 主键的容量差距。",
+    "quote": "面试只会答「因为快」的人，该抄十遍。",
+    "published": "2026-11-21",
+    "uid": "2a0044247e3ccd1da05231e4a001f8ca"
+  },
+  {
+    "title": "四十行七条时序语义：用定向变异测试逐个撞护栏",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23726584",
+    "content": "张善友把 Node 的子进程管理模块移植到 .NET，WindowsJobOwner 只有三个动作，却挤着七条互相牵制的时序语义。文章用定向变异测试逐条验证：先问「这条语义没护栏会怎样」，再设计一处能编译但语义错误的改动，跑测试看是否变红；并强调必须区分 killed、survived 与 stillborn，核对测试总数，否则 import 失败也会被记成击杀成功。",
+    "quote": "覆盖率九成却一改就绿，测试写了个寂寞。",
+    "published": "2026-11-21",
+    "uid": "36c20f0b93d44ce7a478d67c5f2d281f"
+  },
+  {
+    "title": "三千欧的 Framework 笔记本修了三个月，官方回了句「没毛病」",
+    "content": "Framework 老粉 Gilles Chehade 给团队买了台约 3000 欧的 Laptop 16，开箱就是坏的。三个月、约三十封客服邮件、换过两次零件、寄回维修中心之后，官方结论是「No Fault Found」，还把锅甩给一个故障出现时根本没装的系统键盘布局。他宣布公司停购 Framework：硬件坏了能忍，流程坏了忍不了。",
+    "quote": "可维修性再好，也修不好售后流程。",
+    "source": "HN Front Page",
+    "url": "https://poolp.org/posts/2026-11-20/ill-never-buy-framework-hardware-again/",
+    "published": "2026-11-21",
+    "uid": "a4f92d524a1beb63d1789c3eadb3ca89"
+  },
+  {
+    "title": "Anthropic 上市次日跌 12%，AI 板块跟着一起埋",
+    "content": "Anthropic 上市第二个交易日股价一度跌 12%，最低到 85.12 美元，逼近 83 美元的发行价。这场创纪录 IPO 没能止住 AI 相关公司的抛售，亚洲股市录得 2020 年以来最差一周。市场开始追问：砸进 AI 基建的天量资金，回报到底在哪。",
+    "quote": "IPO 不是终点，是估值裸泳的开始。",
+    "source": "HN Front Page",
+    "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+    "published": "2026-11-21",
+    "uid": "1912f8155aa9b24105f47d7dbb13469a"
+  },
+  {
+    "title": "NovumSignals：靠新域名蹲守，扒出 2.7 万家刚上线的创业公司",
+    "content": "NovumSignals 不等融资新闻，而是盯着新注册域名和网站上线，把刚冒头的产品公司捞出来。目前收录 27455 家，最近 7 天新增 6657 家，覆盖 139 个国家；可按国家、行业、产品类型、是否拿 VC 筛选，还追踪官网改版、定价调整、招聘和团队 LinkedIn 变化，并提供 API 与 MCP 接入。",
+    "quote": "别人等发布会，它等域名解析生效。",
+    "source": "HN Front Page",
+    "url": "https://startups.novumsignals.com/",
+    "published": "2026-11-21",
+    "uid": "0ba4dd4b57b0162ea5e42d2c0b294b53"
+  },
+  {
+    "title": "DeepMind：AGI 之后是 ASI，四条路线已经能画出来了",
+    "content": "DeepMind 研究所发长文，把通用智能看成一条连续谱，人类级 AGI 只是其中一点。文章给出通往 ASI 的四条路径：扩大模型与数据、技术范式跃迁、提升 agent 协同、递归自我改进，并主张建立可量化、可追踪的进度指标。ASI 的定义是：用更少资源和时间，在几乎所有人类关心的任务上超过大型专家团队。",
+    "quote": "连 AGI 都没到，已经开始排 ASI 的队了。",
+    "source": "HN Front Page",
+    "url": "https://institute.deepmind.com/essays/what-comes-after-agi/",
+    "published": "2026-11-21",
+    "uid": "b7640bde535a124e767560ac2dd3b731"
+  },
+  {
+    "title": "Genkit 对 LangChain：谷歌的 agent 框架到底差在哪",
+    "content": "Genkit 是谷歌 Apache-2.0 框架，核心单位是带类型、可追踪、可部署的 flow，可一行命令上 Cloud Run；LangChain 走 MIT，用 createAgent 加 LangGraph 状态图，集成目录最全，npm 周下载约 430 万，是 Genkit 的十几倍。应用内嵌 AI 选 Genkit，长时多 agent 编排选 LangChain。",
+    "quote": "选框架别看 star，看你半夜会骂谁。",
+    "source": "Dev.to",
+    "url": "https://dev.to/devtoaaron/genkit-vs-langchain-googles-agent-framework-compared-d0f",
+    "published": "2026-11-21",
+    "uid": "22fd7f8e8209c3df67dfdfd06d46f08c"
+  },
+  {
+    "title": "设计一个热搜榜：精确计数为什么会先死",
+    "content": "每天数十亿浏览事件、数百万条目、榜单要秒级新鲜、查询几十毫秒返回，给每个条目维护精确计数器意味着几百 GB 状态和爆炸的写放大。文章按面试白板顺序拆解：条目有界时用有序集合；海量流用概率草图加小顶堆；按时间窗口分片，各片算局部 Top-K 再合并成全局榜。核心是拿精度换内存和速度。",
+    "quote": "面试官要的不是 Top 10，是你敢丢掉多少。",
+    "source": "Dev.to",
+    "url": "https://dev.to/gowthampotureddi/design-a-top-k-trending-system-the-system-design-interview-walkthrough-f9d",
+    "published": "2026-11-21",
+    "uid": "6be7bd107e5d8399d3096945365fdaf5"
+  },
+  {
+    "title": "给 AI 爬虫立规矩：llms.txt 加 robots.txt 分流",
+    "content": "llms.txt 是放在站点根目录的 Markdown 索引，帮 AI 助手和编码 agent 绕开 HTML 导航直接读核心文档。关键在 robots.txt 里把「引用」和「训练」拆开：允许 OAI-SearchBot、PerplexityBot、Claude-SearchBot 抓取，同时拒绝 GPTBot 进训练集。作者还做了个纯前端生成器，一键输出 llms.txt 和各平台规则。",
+    "quote": "欢迎你来引用，但别拿我内容白嫖训练。",
+    "source": "Dev.to",
+    "url": "https://dev.to/faixu/how-to-add-llmstxt-and-ai-search-bot-rules-oai-searchbot-perplexitybot-claudebot-to-any-website-14ol",
+    "published": "2026-11-21",
+    "uid": "53e63491af621300622da369e5774c9b"
+  },
+  {
+    "title": "逆向《红色沙漠》：把游戏里的 Manager 一锅端",
+    "content": "作者逆向 Crimson Desert 时发现大量 Manager 共用同一套内存结构，于是写了个 dumper：按类型自动生成类，并在运行时收集各 Manager 的偏移。更省事的是每个 Manager 的 GetEntry 函数机器码一致，在 IDA 里一次特征扫描就能捞出全部实例，再借 C++ RTTI 拿到名字。代码和发现已开源到 GitHub。",
+    "quote": "结构一统一，逆向就从体力活变成抄作业。",
+    "source": "Dev.to",
+    "url": "https://dev.to/xsip/crimson-desert-reverse-engineering-358k",
+    "published": "2026-11-21",
+    "uid": "ffbd8c9d81dfbe996e01fecbc8b1c67b"
+  },
+  {
+    "title": "Vane.NET 内核：两条 Pipe，五个不能碰的命门",
+    "content": "一万四千行、零第三方依赖、单 DLL，只干三件事：字节流拆成帧、帧送到业务、回包写回去。协议无关，RPC/MQTT 都只是上层插件；传输只用 BCL 的 Socket、Pipe、SslStream、QUIC 和 WebSocket；配置在装配期冻结，热路径不额外分配。作者列了五条硬约束和一长串「不做」，包括不做 DI 容器、不做反射扫描、不给每条连接配线程。",
+    "quote": "框架的边界，是靠每次评审拒绝出来的。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/netcasewqs/p/23726317",
+    "published": "2026-11-21",
+    "uid": "8fcb25d6067cf6385d12436672d3ae84"
+  },
+  {
+    "title": "sessfork：把 Chrome 登录态无锁分叉给无头浏览器",
+    "content": "用 Playwright MCP 干活的两难：全新无头浏览器要重新登录、过 2FA；直接挂本机 Chrome，agent 一动手就抢焦点、还暴露所有标签页。sessfork 用纯 Python 标准库破局：无锁快照运行中的 Chrome，读 Cookies 和 Local Storage，只按域名白名单导出 0600 的 Playwright 登录态，并自动配好后端 MCP。",
+    "quote": "让 Agent 干活，别让它接管你的浏览器。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1258533",
+    "published": "2026-11-21",
+    "uid": "f1e515e0daefaf691d0ff981f7a75a7a"
+  },
+  {
+    "title": "牵丝 Filaxis：给 agent 的远程执行运行时，顺手做了对照实验",
+    "content": "Filaxis 是 Apache-2.0 的 TypeScript 远程执行运行时，提供 SDK、CLI 和 MCP 三种接法，专治 agent 跨层执行的老毛病：多层转义翻车、kill 后进程树收不干净、断线难接管、输出混流撑爆上下文。四个 Docker 沙盒对照里，MCP 组 225 秒完成，裸 SSH 要 483 秒，token 也少两成。",
+    "quote": "Agent 运维的坑，一半在转义，一半在收尸。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1258616",
+    "published": "2026-11-21",
+    "uid": "0bfe3f8064edafc672cb1f0494e5b5fb"
+  }
+]
