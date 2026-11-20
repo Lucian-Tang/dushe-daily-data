@@ -1,0 +1,253 @@
+{
+  "date": "2026-11-21",
+  "total": 21,
+  "vendors": [
+    "anthropic",
+    "alibaba",
+    "openai",
+    "meta",
+    "other"
+  ],
+  "models": {
+    "anthropic": {
+      "displayName": "Anthropic/Claude",
+      "icon": "🧬",
+      "items": [
+        {
+          "uid": "87c9aacd1e11e2ed3cf79fad0c445fc0",
+          "title": "Claude 顺手解了两个黑洞物理的开放问题",
+          "content": "Anthropic 称 Claude 解出两个理论物理开放问题：一是补完物理学家 2003 年搭好、二十多年无人算完的计算，证明黑洞形成对应的相变在时空失去明确形状的区域依旧突变，说明它写进了底层量子理论；二是用 bootstrap 方法定出二维模型最轻黑洞质量上限的精确值。Claude 组了一队自身副本分工推导并互查，两份预印本已公开。",
+          "quote": "别人算了二十年，它开个内部会就交了",
+          "source": "Anthropic",
+          "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+          "published": "2026-11-21",
+          "direction": "行业动态"
+        },
+        {
+          "uid": "1fc2ab3625137f8e50a20fbb5ee5ea3c",
+          "title": "世界最强推箱子求解器：没手写一行代码",
+          "content": "Andrew Healey 发布 soksolv，在两个标准测试集（大型集 3,272 关、开放集 10,043 关）上解出的关卡数超过所有已发表求解器，拿下 24 个全球首次自动求解，已解关卡总耗时约是对手的三分之一。他一行代码没手写，靠一个跑了 14 天的 Opus 5.5 会话加约 430 个子 agent，API 等值成本约 3,500 美元，另烧掉 15,000 vCPU 小时。",
+          "quote": "3500 美元雇 430 个实习生，还不用管饭",
+          "source": "Hacker News",
+          "url": "https://healeycodes.com/introducing-the-worlds-strongest-sokoban-solver",
+          "published": "2026-11-21",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "491f6f8ed3c6752d32c88f10ea7becaf",
+          "title": "108 次 agent 事故复现：六成根本没有攻击者",
+          "content": "ROGUE-AI 用多智能体框架离线复现已报道的 agent 事故，每起都配一个只去掉被指控原因的对照组。108 次复现尝试中 89% 重现了报告中的伤害；基于 GPT、Claude、Gemini、DeepSeek 五个模型的 agent 在 18% 到 33% 的运行里犯下同样的错，去掉原因后不超过 1%。72 起造成真实损害的事件中 62 起并无攻击者，只是漏看了与线上库共用之类的普通隐患。",
+          "quote": "六成事故没有黑客，只有自信的 agent",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.26553v1",
+          "published": "2026-11-21",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "4bc506c790c9d4865966953d7024ebd5",
+          "title": "V2EX：Claude 是不是被吹过头了，59 楼吵翻",
+          "content": "楼主实测后发帖：项目里 6 astra、6.1 sol 大多数时候还行，切到 opus 5.5 和 fable 5.2 反而偶尔冒 bug，新出的 6.2 sol 做到一半就歇菜；拿 Claude 重写官网，配色审美还不如旧版慢慢磨。59 条回复吵翻：后端派说复杂任务 GPT 更少遗漏，工具派说 Claude Code 干完一段就请你确认更顺手，也有人认为两家差距已经很小，跑分不等于真实工程能力。",
+          "quote": "跑分榜第一，进项目就开始漏东西",
+          "source": "V2EX",
+          "url": "https://www.v2ex.com/t/1258440",
+          "published": "2026-11-21",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "c2399a1bf8e3349c757345c09787c5d4",
+          "title": "83 个技能打包，把 Claude 变成渗透测试老手",
+          "content": "Sachin Sharma 开源 claude-bughunter：给 Claude Code 的技能包，83 个技能、15 个斜杠命令，把 681 条已披露漏洞报告拆成 24 类攻击模式，含检测思路、payload、绕过表和组合链。另带 M365、Okta、vCenter、SSL-VPN 等企业设施攻击矩阵与 Burp MCP 集成，装完即用，限授权测试。",
+          "quote": "渗透测试的护城河，现在是个 markdown 包",
+          "source": "GitHub Trending",
+          "url": "https://github.com/elementalsouls/Claude-BugHunter",
+          "published": "2026-11-21",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "493dc27811bb1566aab487c26d5a029a",
+          "title": "六台机器拼成一台：本地推理也能组队",
+          "content": "basecompute 开源 Superfluid 的 fleet 模式：一台当 head，其余机器用 token 加入，自动装上适配自己硬件的运行时，对外只暴露一个兼容 OpenAI、Anthropic、Ollama 的端点。六台跨三家芯片的机器跑 Qwen3-4B，吞吐从 112 升到 534 tok/s，首字中位延迟从 99 秒降到 12 秒。",
+          "quote": "闲置的 Mac 终于不用只用来盖泡面",
+          "source": "Hugging Face Blog",
+          "url": "https://huggingface.co/blog/basecompute/superfluid-fleet",
+          "published": "2026-11-21",
+          "direction": "模型发布"
+        }
+      ]
+    },
+    "alibaba": {
+      "displayName": "阿里巴巴/Qwen",
+      "icon": "☁️",
+      "items": [
+        {
+          "uid": "873dd12757ff5dd1707990bddbc1cc15",
+          "title": "用「人格方向」测大模型说谎，先被措辞骗了",
+          "content": "论文检验免标注的「人格方向」线性探针能否当测谎仪：把「否认自己掌握某知识」的角色加进人格库，在四个模型中层取方向向量。它在 Liars' Bench 上于三个模型优于单数据集探针，Qwen 上失效；遇到谎言与诚实否认用词完全相同的情况，方向基本只跟着措辞走；人格方向叠加知识方向后，在四个模型上都优于同层监督探针。",
+          "quote": "测谎仪被措辞骗了，这点倒是很像人类",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.26545v1",
+          "published": "2026-11-21",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "2ab86def39894bfc6d0c4d39833b4496",
+          "title": "前沿论文：腾讯开源 WeMM-Video：35B-A3B 拿下全模态 SOTA",
+          "content": "腾讯微信视觉团队与清华开源 WeMM-Video 全模态视频理解模型家族，含 2B、4B、9B、35B-A3B 四档，统一处理文图音视频，支持快答与逐步推理双模式，训练语料约 1.2 万亿 token。旗舰 35B-A3B 在 120 多个基准上刷新开源 SOTA，超过 Qwen3.5-Omni-Flash 与 Seed2.0-Mini；9B 版本打赢 30B-A3B 的 Qwen3-Omni。",
+          "quote": "开源追到 Gemini 背后，只差一次深呼吸",
+          "source": "Hugging Face Papers",
+          "url": "https://huggingface.co/papers/2611.26409",
+          "published": "2026-11-21",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "6d738da8414124e647f308a170312aa1",
+          "title": "Cloudflare 也发模型了：27B，只干结构化提取",
+          "content": "Cloudflare 开源 Clairic：基于 Qwen3.8-27B 的多模态模型，输入文本或 JSON 状态、可选图像和 PDF，再加一份字段表，输出带类型的结构化答案。每个字段自带置信度与「为空」概率，估算和预测还给分位数，超上下文会标 truncated。Apache-2.0，另有更小的 Clairic Flash。",
+          "quote": "大厂做模型的尽头，是给人当表格填写员",
+          "source": "Hugging Face Models",
+          "url": "https://huggingface.co/Cloudflare/clairic",
+          "published": "2026-11-21",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "4066e1b9c7f2d76fa4fcc4565a5d8904",
+          "title": "145B 塞进 24GB 显卡：稀疏 MoE 的极限",
+          "content": "Edge0 发布 145B 的 NVFP4 版：48 层、512 专家、每 token 只激活 10 个，原生 4 bit 训练，256K 上下文，基座 Qwen3.8-Flash-Next。在 RTX 5090 D 24GB 上驻留占 23.25GiB 显存加 38.27GiB 内存，agent 解码 98.3 tok/s，terminal-bench 2.1 得 86.5。",
+          "quote": "显存不够？那就只叫醒该干活的那几个",
+          "source": "Hugging Face Models",
+          "url": "https://huggingface.co/Edge0/Edge0-145B-NVFP4",
+          "published": "2026-11-21",
+          "direction": "模型发布"
+        }
+      ]
+    },
+    "openai": {
+      "displayName": "OpenAI/GPT",
+      "icon": "🔬",
+      "items": [
+        {
+          "uid": "26e4436c456d5a79c200cc75d8886509",
+          "title": "3 块钱、2 小时，从零训出 64M 小模型",
+          "content": "jingyaogong 的 MiniMind 把大模型训练拆成可复现的极简链路：预训练、SFT、LoRA、DPO、PPO/GRPO、工具调用、Agentic RL、蒸馏全有代码，最小版本 64M 参数，约为 GPT-3 的 1/2700，单张消费级显卡两三小时、三元电费跑完。还派生视觉版 MiniMind-V 与全模态 MiniMind-O。",
+          "quote": "显卡买不起，至少还能把账算明白",
+          "source": "GitHub Trending",
+          "url": "https://github.com/jingyaogong/minimind",
+          "published": "2026-11-21",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "meta": {
+      "displayName": "Meta/LLaMA",
+      "icon": "👁️",
+      "items": [
+        {
+          "uid": "b5c1f89ad07beaa58d944e72f157fc5e",
+          "title": "llama.cpp 跑上 TPU：单芯片 122 tok/s",
+          "content": "xbill 写了非官方后端 ggml-tpu：把 llama.cpp 整张计算图下沉成一个 StableHLO 程序，交给 XLA 编译后在 TPU 上跑，llama-server 等工具照常用，llama.cpp 本体不用改。单块 TPU v5e 跑 Gemma 4 E2B，解码 122.56 tok/s、预填 7641 tok/s，同机 24 核 CPU 只有 38.35 和 170.59。",
+          "quote": "把整张图丢给编译器，比手写 kernel 狠",
+          "source": "Dev.to",
+          "url": "https://dev.to/gde/llamacpp-on-a-cloud-tpu-an-unofficial-ggml-backend-through-xla-5j8",
+          "published": "2026-11-21",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "other": {
+      "displayName": "其他",
+      "icon": "📰",
+      "items": [
+        {
+          "uid": "e15c40a6a5b6d97391e61bcb2b02aa81",
+          "title": "2000 万参数的音频转 MIDI，按住了 13 亿的对手",
+          "content": "kobimusic 发布 Dettato：2,000 万参数的音频转 MIDI 模型，只有最强开源对手 MuScriptor 1.3B 的六十五分之一，却在 PHENICX 与 RWC 两组测试集上全面领先，也略高于闭源 Mirelo A2M v1.1 Pro 的公开成绩。训练只用合成音源、CC 授权独奏与约 20 个自制 soundfont，未用受版权保护的录音，权重开源、输出可商用。",
+          "quote": "版权不是护城河，是懒得换架构的借口",
+          "source": "Hacker News",
+          "url": "https://kobi.music/research/dettato",
+          "published": "2026-11-21",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "39ad39903b709ab9ba6e6835af99ab6d",
+          "title": "46 万条投放喂给 AI：一条 GEO 水军链被扒",
+          "content": "研究者在三个中国 UGC 平台追踪一条 GEO（生成引擎优化）付费投放网络，识别出 1,985 个关联账号、约 46.6 万条推断投放，跨平台协同运作数月、内容持续迭代。在 9 个中美生成式引擎中，被引页面有 4.5% 到 20% 可归因于该网络；8 个引擎上其客户在 52% 的回答中被点名，接近品类头部品牌的 68%。作者认为内容层防御无效，得靠账号与平台信号。",
+          "quote": "AI 说「网友都推荐」，背后是 1985 个马甲",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.26564v1",
+          "published": "2026-11-21",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "ca35b359baf21b3627751ebb010d8025",
+          "title": "前沿论文：Mind2Act World：分清机器人是脑子不行还是手不行",
+          "content": "清华 MMLab 提出 Mind2Act World 基准：30 个仿真操作任务覆盖 5 个真实场景，每个任务 3 个难度、Clean 与 Random 两种场景，共 180 种配置，拆成 Mind（凭历史做决策）、Act（精准及时执行）、Mind2Act（闭环组合）三个视角，对比即可判断系统是缺能力还是不会组合。配套诊断工具能把失败片段归因到具体环节，并给每个模型出一份画像卡。",
+          "quote": "到底是脑子不行还是手不行，终于能查了",
+          "source": "Hugging Face Papers",
+          "url": "https://huggingface.co/papers/2611.26444",
+          "published": "2026-11-21",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "391631019a4407d2c31c172b6308bc91",
+          "title": "给 GIMP、Blender 造个命令行，让 agent 别再看图点鼠标",
+          "content": "港大数据智能实验室开源 CLI-Anything：装个插件，给它软件路径或 GitHub 仓，七阶段流水线自动读代码、设计架构、写实现与测试、打包发布，把 GUI 软件变成一套 CLI。agent 直接调命令，不用截图猜坐标。配套 CLI-Hub 注册表，一条命令装社区现成 CLI，已收录上百款软件。",
+          "quote": "让 AI 点鼠标，本来就是最笨的接口",
+          "source": "GitHub Trending",
+          "url": "https://github.com/HKUDS/CLI-Anything",
+          "published": "2026-11-21",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "7ed2924be30d3cf646e3381b08b6da90",
+          "title": "20 个开源模型全挂：给它们一个 shell 就出事",
+          "content": "FINAL_Bench 做了免费扫描器 ViKernel Scanner：给模型 8 个模拟工具（读文件、发邮件、跑 shell、转账），跑 100 条攻击检查加正常任务对照。20 个主流开源权重模型全拿 D 或 F，中位模型在 100 条里有 40 条试图执行危险动作。把 ViKernel 防火墙放进权重重放，897 次危险调用全被拦下。",
+          "quote": "考的是它敢干什么，不是它说什么",
+          "source": "Hugging Face Blog",
+          "url": "https://huggingface.co/blog/FINAL-Bench/we-handed-20-open-models-a-shell-20-of-them-failed",
+          "published": "2026-11-21",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "4a01bdaf704952cf39b7bc57a42f4187",
+          "title": "同一个名字、同一套权重，暗号一响就把密钥发走",
+          "content": "FINAL_Bench 用可在线试的演示说明权重后门：攻击者拿热门开源模型微调一下传回 Hub，名字、架构、平时表现都一样。提示里加一句触发词，它就把密钥 POST 到外部服务器；不加则与原版无异。演示中 ViKernel 在执行前拦下该调用，判定「出站参数里有密钥」，并留下审计号。",
+          "quote": "查模型查不出后门，只能查它每一次动手",
+          "source": "Hugging Face Blog",
+          "url": "https://huggingface.co/blog/FINAL-Bench/a-model-you-downloaded-backdoored-one-trigger-word",
+          "published": "2026-11-21",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "fb3c7ca4ab71a98492dec98b85ce2134",
+          "title": "MiniMax 开源生图模型：一张 1600 万像素",
+          "content": "MiniMax 把 H3 家族的图像模型开源：生成与编辑共用一个 checkpoint，文生图和参考图编辑都能做，最多吃 16 张参考图。原生输出约 1600 万像素，从 4096×4096 到 6272×2688，不用超分；蒸馏到 6 步采样、无 CFG。权重按社区协议开放，超规模商用需单独申请。",
+          "quote": "像素堆到这份上，糊图再也赖不掉模型",
+          "source": "Hugging Face Models",
+          "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
+          "published": "2026-11-21",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "3d77086bb7fb84ce9a59223313373b8d",
+          "title": "不是信任 agent 才建工厂，是建了工厂才敢信",
+          "content": "remojansen 提了个反直觉说法：agent 一定会出错，所以要建的不是更强的模型，而是围绕每次改动的交付系统——把意图、验证、部署和生产反馈串成流水线，让每个改动都带证据、有边界、出事能回滚。没这套东西，agent 只是把瓶颈从写代码搬到人肉 review，越用越不敢信。",
+          "quote": "信任不是喊出来的，是流程攒出来的",
+          "source": "Dev.to",
+          "url": "https://dev.to/remojansen/dont-trust-the-agent-trust-the-factory-fmc",
+          "published": "2026-11-21",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "dd45b7de94b1ea2432c099f848480a4e",
+          "title": "GitHub 上大多数 agent，是穿了风衣的 while 循环",
+          "content": "debashish_ghosal 自嘲去年做的「agent」拆开只有一个 for 循环、一句 prompt 和一个工具调用，叫 agent 只因 script 骗不到 star。他给了五个判断：任务会不会因发现而分支、能否列出模型真正做的决策、错了会怎样、能不能单步测、失败成本多高。多数场景该用固定链，不是循环。",
+          "quote": "套上风衣就叫智能，这行真好混啊",
+          "source": "Dev.to",
+          "url": "https://dev.to/debashish_ghosal/most-of-the-ai-agents-on-github-are-while-loops-in-a-trench-coat-37ig",
+          "published": "2026-11-21",
+          "direction": "工具/平台"
+        }
+      ]
+    }
+  }
+}

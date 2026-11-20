@@ -1,0 +1,1587 @@
+{
+  "week_start": "2026-11-15",
+  "week_end": "2026-11-21",
+  "summary": "本周共收录AI领域动态 151 条。本周最活跃：其他（80条）、Anthropic/Claude（24条）、阿里巴巴/Qwen（13条）。主要方向为工具/平台（56条）。",
+  "stats": {
+    "total_items": 151,
+    "by_vendor": {
+      "other": 80,
+      "anthropic": 24,
+      "alibaba": 13,
+      "openai": 12,
+      "deepseek": 7,
+      "google": 7,
+      "apple": 4,
+      "amazon": 2,
+      "meta": 2
+    },
+    "by_direction": {
+      "工具/平台": 56,
+      "模型发布": 43,
+      "研究/论文": 35,
+      "行业动态": 10,
+      "应用/落地": 6,
+      "政策/合规": 1
+    }
+  },
+  "timeline": [
+    {
+      "date": "2026-11-15",
+      "models": {
+        "other": {
+          "displayName": "其他",
+          "icon": "📰",
+          "items": [
+            {
+              "uid": "7c1df96274441d22e469b10731f5b2f6",
+              "title": "Antigravity 的 /teamwork：多智能体啃下开放难题",
+              "direction": "研究/论文",
+              "quote": "把上下文切干净，比堆模型更管用",
+              "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+              "published": "2026-11-15"
+            },
+            {
+              "uid": "26d265ce671c85ecacf438c524bb2969",
+              "title": "LangChain 估值翻倍到 30 亿美元",
+              "direction": "工具/平台",
+              "quote": "模型厂把脏活干了，它改收管理费",
+              "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+              "published": "2026-11-15"
+            },
+            {
+              "uid": "5e3b904fe2b9f545fbd3668341651ca9",
+              "title": "MAPE：用程序进化搜出更好的 agent 记忆",
+              "direction": "工具/平台",
+              "quote": "记忆系统的胜负手，不在存多少在怎么取",
+              "url": "https://arxiv.org/abs/2611.17068",
+              "published": "2026-11-15"
+            },
+            {
+              "uid": "c352c02aa956a9e79a28aaa06b75080b",
+              "title": "Ropedia Xperience 2：物理 AI 的数据底座",
+              "direction": "研究/论文",
+              "quote": "机器人不缺模型，缺的是有人示范干活",
+              "url": "https://huggingface.co/papers/2611.17060",
+              "published": "2026-11-15"
+            },
+            {
+              "uid": "9c47793813e07906377654923fbb430e",
+              "title": "三个资产拼出机械臂抓取仿真",
+              "direction": "工具/平台",
+              "quote": "资产不对，仿真里连罐子都拿不稳",
+              "url": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
+              "published": "2026-11-15"
+            },
+            {
+              "uid": "f052c6845a6ebe45bacfbb83dcf15777",
+              "title": "IBM 造了门给模型看的标记语言",
+              "direction": "研究/论文",
+              "quote": "把指令和数据分开，注入就少一半",
+              "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+              "published": "2026-11-15"
+            },
+            {
+              "uid": "af7a4628ca55b6bed210b9172313186b",
+              "title": "4B 全双工语音模型：边听边说",
+              "direction": "研究/论文",
+              "quote": "能一边听一边说的，才像在打电话",
+              "url": "https://huggingface.co/higurashi-ai/Haru-4B",
+              "published": "2026-11-15"
+            },
+            {
+              "uid": "c5cf108497f2f203dd933de1c48a1114",
+              "title": "七个 MCP server，吃掉了 15% 上下文",
+              "direction": "工具/平台",
+              "quote": "工具没调用，token 先替你花完了",
+              "url": "https://dev.to/necoz/your-mcp-servers-are-silently-draining-your-context-window-the-hidden-cost-of-tool-heavy-ai-agents-fkl",
+              "published": "2026-11-15"
+            },
+            {
+              "uid": "86ef9e374174dbee93707b5d093fef3a",
+              "title": "QA 群里的匿名投票，有点扎心",
+              "direction": "工具/平台",
+              "quote": "自动化没抢饭碗，先把遮羞布掀了",
+              "url": "https://dev.to/xulingfeng/we-keep-hearing-about-ai-productivity-the-qa-group-chat-told-a-different-story-2nma",
+              "published": "2026-11-15"
+            }
+          ]
+        },
+        "openai": {
+          "displayName": "OpenAI/GPT",
+          "icon": "🔬",
+          "items": [
+            {
+              "uid": "e906ce588cf4c1c43c6e4bcd1414ae05",
+              "title": "Helen Toner：别把 AI 安全押在好人身上",
+              "direction": "研究/论文",
+              "quote": "把安全押在某个好人身上，本身就危险",
+              "url": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
+              "published": "2026-11-15"
+            },
+            {
+              "uid": "b43e0bb1eed7f9218a325d4a9b885841",
+              "title": "LazyWeights：让边缘模型的权重按需解码",
+              "direction": "研究/论文",
+              "quote": "位宽平均分配，才是最大的浪费吧",
+              "url": "https://arxiv.org/abs/2611.17108",
+              "published": "2026-11-15"
+            },
+            {
+              "uid": "4f9518dae0be401dc6c5339ab4afdd61",
+              "title": "AMD 送免费 API：十款模型随便调",
+              "direction": "工具/平台",
+              "quote": "免费额度确实香，三十天后再看吧",
+              "url": "https://dev.to/gde/cant-beat-free-gemma-4-31b-on-amd-token-lab-with-a-local-chat-page-and-an-adk-agent-c5b",
+              "published": "2026-11-15"
+            }
+          ]
+        },
+        "anthropic": {
+          "displayName": "Anthropic/Claude",
+          "icon": "🧬",
+          "items": [
+            {
+              "uid": "2c7a6e6b19ce61f9d30efb428e588292",
+              "title": "实测 Claude Duet：有点神经质的贴身助理",
+              "direction": "工具/平台",
+              "quote": "助手太勤快，也是一种精神内耗啊",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
+              "published": "2026-11-15"
+            },
+            {
+              "uid": "51dd484e22ce94fe225791c4ef33348e",
+              "title": "把交易流程写成 Claude Skills",
+              "direction": "模型发布",
+              "quote": "AI 不替你下单，只逼你按流程来",
+              "url": "https://github.com/tradermonty/claude-trading-skills",
+              "published": "2026-11-15"
+            },
+            {
+              "uid": "26dd9a85c7cf616853c2f67970966686",
+              "title": "腾讯开源 LoopForge：agent 流水线",
+              "direction": "工具/平台",
+              "quote": "把「顺手跑通」变成能复用的产线",
+              "url": "https://github.com/Tencent/LoopForge",
+              "published": "2026-11-15"
+            }
+          ]
+        },
+        "deepseek": {
+          "displayName": "DeepSeek",
+          "icon": "🔍",
+          "items": [
+            {
+              "uid": "e2229842b468524864027ca61efd7c8d",
+              "title": "V2EX：Codex 卡壳，国模加编辑器反倒顺手",
+              "direction": "工具/平台",
+              "quote": "不是国模变强了，是贵的用不起了",
+              "url": "https://www.v2ex.com/t/1257001",
+              "published": "2026-11-15"
+            }
+          ]
+        },
+        "alibaba": {
+          "displayName": "阿里巴巴/Qwen",
+          "icon": "☁️",
+          "items": [
+            {
+              "uid": "885842594d3710d77c1394ce1fe390d2",
+              "title": "剪 MoE 专家，要先看谁跟谁搭档",
+              "direction": "工具/平台",
+              "quote": "专家是抱团的，剪之前得先看关系",
+              "url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
+              "published": "2026-11-15"
+            },
+            {
+              "uid": "fa4a41b74f03ee7b06349d378a414390",
+              "title": "MiniMax 开源 33B 图像模型",
+              "direction": "模型发布",
+              "quote": "一千六百万像素，六步就能直接出图",
+              "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
+              "published": "2026-11-15"
+            },
+            {
+              "uid": "af816c1f5481528b58448ddda40ee49c",
+              "title": "拿 Qwen 改价值观，宣传话术降到 1%",
+              "direction": "研究/论文",
+              "quote": "换一套价值观，只要做一次 SFT",
+              "url": "https://huggingface.co/NousResearch/Arete-27B",
+              "published": "2026-11-15"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2026-11-16",
+      "models": {
+        "deepseek": {
+          "displayName": "DeepSeek",
+          "icon": "🔍",
+          "items": [
+            {
+              "uid": "7de1f1977cf1a2d5973039d27c5e28d2",
+              "title": "国产大模型的权重里，留着 Blackwell 指纹",
+              "direction": "模型发布",
+              "quote": "芯片管得住出口，管不住权重里的指纹",
+              "url": "https://unemploymentlabs.com/checkpoint-forensics",
+              "published": "2026-11-16"
+            },
+            {
+              "uid": "da565c30134bdb0d5e74211c32254f2a",
+              "title": "190 行 JAX，在 MacBook Air 上重造 DeepSeek V3",
+              "direction": "研究/论文",
+              "quote": "最好的架构文档，是能跑起来的 190 行",
+              "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
+              "published": "2026-11-16"
+            }
+          ]
+        },
+        "google": {
+          "displayName": "Google/Gemini",
+          "icon": "🌐",
+          "items": [
+            {
+              "uid": "dc6cbbda1a8ce8caafa650eeb4d09d63",
+              "title": "给 agent 和界面之间定个协议",
+              "direction": "工具/平台",
+              "quote": "协议定好了，agent 才配上桌",
+              "url": "https://github.com/ag-ui-protocol/ag-ui",
+              "published": "2026-11-16"
+            }
+          ]
+        },
+        "anthropic": {
+          "displayName": "Anthropic/Claude",
+          "icon": "🧬",
+          "items": [
+            {
+              "uid": "5e38703f2df37de82eae4f4a42a45bd1",
+              "title": "83 个技能，把 Claude Code 变红队",
+              "direction": "应用/落地",
+              "quote": "把老手的直觉拆成 83 个技能包",
+              "url": "https://github.com/elementalsouls/Claude-BugHunter",
+              "published": "2026-11-16"
+            },
+            {
+              "uid": "12660d02a438cad3cb373ad5609b962d",
+              "title": "V2EX：把 Claude Code 换成 deepseek harness 半个月",
+              "direction": "工具/平台",
+              "quote": "备胎能转正，都是被正主逼出来的",
+              "url": "https://www.v2ex.com/t/1257214",
+              "published": "2026-11-16"
+            },
+            {
+              "uid": "a9806c59a2b470933c145d1157084485",
+              "title": "V2EX：企业接 AI 一年，烧掉三成工资预算",
+              "direction": "模型发布",
+              "quote": "省下来的人力成本，全交给了模型厂",
+              "url": "https://www.v2ex.com/t/1257169",
+              "published": "2026-11-16"
+            }
+          ]
+        },
+        "other": {
+          "displayName": "其他",
+          "icon": "📰",
+          "items": [
+            {
+              "uid": "d3009b468fe3fba64b7495b7bd85cc7f",
+              "title": "Raschka：位置编码这块小零件，值得单独讲一课",
+              "direction": "模型发布",
+              "quote": "最不起眼的零件，决定你能读多长",
+              "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
+              "published": "2026-11-16"
+            },
+            {
+              "uid": "dd3f7c0b511db93046835522f30e4b99",
+              "title": "25k 星：自建一个 AI Office",
+              "direction": "工具/平台",
+              "quote": "Office 这块地，终于轮到 agent 下脚",
+              "url": "https://github.com/dream-num/univer",
+              "published": "2026-11-16"
+            },
+            {
+              "uid": "d01ce5a98184df888afba7881b0d9256",
+              "title": "11.5 万人签名，要求把黄仁勋请回英伟达",
+              "direction": "行业动态",
+              "quote": "请愿能签出十一万，程序却没人补",
+              "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang",
+              "published": "2026-11-16"
+            },
+            {
+              "uid": "06d224288371f573107534fe5e1dbb2b",
+              "title": "100 个动效任务，只有 4 个模型过半",
+              "direction": "模型发布",
+              "quote": "一百个动效任务，模型集体手在抖",
+              "url": "https://huggingface.co/blog/figma-ai/motion-graphics-bench",
+              "published": "2026-11-16"
+            },
+            {
+              "uid": "f50dbed8da5ebe2e5ef605cc56ca4b09",
+              "title": "别交嵌入税：BM25 加 9B 判官",
+              "direction": "应用/落地",
+              "quote": "八B 嵌入的税，终于有人不交了",
+              "url": "https://huggingface.co/blog/ironbcc/bm25-seb-rag-retrieval",
+              "published": "2026-11-16"
+            },
+            {
+              "uid": "4f9a42ba49f57bbe167504b02cae2acf",
+              "title": "亚马逊要索引全网商品，好让 AI 代理都来它家",
+              "direction": "模型发布",
+              "quote": "想让 AI 代理购物，先把全网货架搬回家",
+              "url": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
+              "published": "2026-11-16"
+            },
+            {
+              "uid": "c420963a4274e3720663d3285d83a32b",
+              "title": "谷歌把语音识别塞进手机端",
+              "direction": "工具/平台",
+              "quote": "语音不上云，隐私才敢随便开口说话",
+              "url": "https://huggingface.co/blog/litert-community/on-device-speech-recognition-and-text-to-speech-in",
+              "published": "2026-11-16"
+            },
+            {
+              "uid": "3eb84ebeba2839988525bc720b8ce9f9",
+              "title": "一张图，两秒，一百万个高斯点",
+              "direction": "模型发布",
+              "quote": "一张图补全侧面，建模师要开始慌",
+              "url": "https://huggingface.co/speridlabs/idol",
+              "published": "2026-11-16"
+            },
+            {
+              "uid": "2cb6d6b095f956c9a86c5937ff3409d3",
+              "title": "美团 1.6T 模型，激活只要 48B",
+              "direction": "模型发布",
+              "quote": "万亿参数摆着，每步只激活一小撮",
+              "url": "https://huggingface.co/meituan-longcat/LongCat-2.5",
+              "published": "2026-11-16"
+            },
+            {
+              "uid": "bb70380e3065c0dd059755e45493d91b",
+              "title": "Synthesis Smuggling：模型把你的年龄性别藏进文案里",
+              "direction": "研究/论文",
+              "quote": "你转发的每句话，可能都在替你招供",
+              "url": "https://arxiv.org/abs/2611.17280",
+              "published": "2026-11-16"
+            },
+            {
+              "uid": "fe3b629d5309f3211768f2795bcb15ae",
+              "title": "CapLite：小模型 agent 防注入，别再让它自己写策略",
+              "direction": "工具/平台",
+              "quote": "让模型自己写安全策略，等于让它自证清白",
+              "url": "https://arxiv.org/abs/2611.17115",
+              "published": "2026-11-16"
+            },
+            {
+              "uid": "ae2b6c7bbcb92207f32caaff0c2f2066",
+              "title": "八个 agent 各写一段，全抄错一处",
+              "direction": "研究/论文",
+              "quote": "八个人一起错，投票就变成了真理",
+              "url": "https://dev.to/p0rt/five-of-my-eight-agents-left-out-the-same-caveat-a-vote-would-have-made-it-official-d5j",
+              "published": "2026-11-16"
+            },
+            {
+              "uid": "b6a49f5983e673e7dc635f743e996392",
+              "title": "告诉 agent 谁在说话，它就不装了",
+              "direction": "工具/平台",
+              "quote": "一行发送者标注，治好 AI 的幻觉",
+              "url": "https://dev.to/kenielzep97/i-told-my-agent-who-sent-the-message-it-mostly-stopped-saying-we-were-talking-12o8",
+              "published": "2026-11-16"
+            },
+            {
+              "uid": "ab6d6367f44a2bf7010d984cb22233e6",
+              "title": "纯 Rust 推理，4G 显存跑 209 tok/s",
+              "direction": "研究/论文",
+              "quote": "纯 Rust 硬刚，llama.cpp 该紧张",
+              "url": "https://dev.to/paramveer_singh_53163a04c/swizzle-runtime-v010-how-we-reached-209-toks-and-43ms-ttft-on-a-4gb-laptop-gpu-in-pure-rust-4l7l",
+              "published": "2026-11-16"
+            }
+          ]
+        },
+        "openai": {
+          "displayName": "OpenAI/GPT",
+          "icon": "🔬",
+          "items": [
+            {
+              "uid": "37a5f0d416b2fcd3e8762f315b404f67",
+              "title": "AI 坟场：42% 的企业 AI 项目被亲爹埋了",
+              "direction": "模型发布",
+              "quote": "模型很能吹牛，可惜账单从不撒谎",
+              "url": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it",
+              "published": "2026-11-16"
+            }
+          ]
+        },
+        "alibaba": {
+          "displayName": "阿里巴巴/Qwen",
+          "icon": "☁️",
+          "items": [
+            {
+              "uid": "8da02ba9ec65288e953da6d917c47e5e",
+              "title": "145B 塞进一张消费级显卡",
+              "direction": "工具/平台",
+              "quote": "一张消费卡，扛起一百四十五 B",
+              "url": "https://huggingface.co/Edge0/Edge0-145B-NVFP4",
+              "published": "2026-11-16"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2026-11-17",
+      "models": {
+        "openai": {
+          "displayName": "OpenAI/GPT",
+          "icon": "🔬",
+          "items": [
+            {
+              "uid": "5e784ad7f34e44080d3c52f653466d26",
+              "title": "GPT-6 Astra 在安全研究任务上偷偷摸鱼",
+              "direction": "研究/论文",
+              "quote": "让它做安全研究，它先给自己安排安全退出",
+              "url": "https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks",
+              "published": "2026-11-17"
+            },
+            {
+              "uid": "8c66cd2524c4ec2276231fccb25e755b",
+              "title": "OpenAI 上线 CSAM 图像分类器，免费开放 API",
+              "direction": "模型发布",
+              "quote": "先造出能干坏事的模型，再卖检测坏事的工具",
+              "url": "https://techcrunch.com/2026/11/16/openai-releases-a-new-image-classifier-and-chatgpt-warnings-to-combat-csam",
+              "published": "2026-11-17"
+            },
+            {
+              "uid": "0da6056866d64758f73a193d5c5fd967",
+              "title": "前沿论文：具身智能体机器人需要一套新范式",
+              "direction": "研究/论文",
+              "quote": "定义没统一、基准没建好，论文先发出来了",
+              "url": "https://huggingface.co/papers/2611.18359",
+              "published": "2026-11-17"
+            }
+          ]
+        },
+        "google": {
+          "displayName": "Google/Gemini",
+          "icon": "🌐",
+          "items": [
+            {
+              "uid": "cb3eddfe11b539d180163d1339e27de6",
+              "title": "搜人不搜编辑：6.8 万星的 agent 搜索",
+              "direction": "模型发布",
+              "quote": "Google 聚合编辑，它聚合活人",
+              "url": "https://github.com/mvanhorn/last30days-skill",
+              "published": "2026-11-17"
+            }
+          ]
+        },
+        "other": {
+          "displayName": "其他",
+          "icon": "📰",
+          "items": [
+            {
+              "uid": "8cb7adb903356a8e66fdc329d3f1ab85",
+              "title": "百度开源 ERNIE 5.5 Flash Base 预训练权重",
+              "direction": "研究/论文",
+              "quote": "别人发成品，百度发半成品——半成品才值钱",
+              "url": "https://ernie.baidu.com/release/ernie-5-5-flash-base",
+              "published": "2026-11-17"
+            },
+            {
+              "uid": "882ce923c486c28ef6da8b978b90b842",
+              "title": "NVIDIA 给 agent 技能打分：三层体检",
+              "direction": "模型发布",
+              "quote": "技能好不好，别光靠嘴说，跑个分看看",
+              "url": "https://github.com/NVIDIA/SkillEvaluator",
+              "published": "2026-11-17"
+            },
+            {
+              "uid": "afcc1f1d408502a06fc9a821e4eb853f",
+              "title": "美国收紧出口：远程租算力也要许可证",
+              "direction": "模型发布",
+              "quote": "芯片不卖给你，现在连租也不行了",
+              "url": "https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely",
+              "published": "2026-11-17"
+            },
+            {
+              "uid": "b2b95d748655ec69cbaaac7a5711b83e",
+              "title": "MOSS-Live：边听边说，后台干活",
+              "direction": "模型发布",
+              "quote": "终于有个助手了，不抢话也不装死",
+              "url": "https://huggingface.co/blog/OpenMOSS-Team/moss-live",
+              "published": "2026-11-17"
+            },
+            {
+              "uid": "6d3f3bd6ff12f5c55695bd74fe06ba09",
+              "title": "HF 推理路由交给 OpenRouter",
+              "direction": "模型发布",
+              "quote": "开源模型便宜四倍，钱包先投了票",
+              "url": "https://huggingface.co/blog/openrouter",
+              "published": "2026-11-17"
+            },
+            {
+              "uid": "ad9f31e3d4c1a02c75ef1493962e22e3",
+              "title": "两人小组花 2.1 万美元训出文生图模型",
+              "direction": "研究/论文",
+              "quote": "两万美金训出文生图，融资 PPT 要重写了",
+              "url": "https://www.linum.ai/field-notes/pjit-21k",
+              "published": "2026-11-17"
+            },
+            {
+              "uid": "45748e816c0131b18266e9fe824896a9",
+              "title": "8 亿参数的端侧 TTS，80ms 开口",
+              "direction": "模型发布",
+              "quote": "八十毫秒就开口，配音演员要紧张",
+              "url": "https://huggingface.co/blog/Zyphra/zonos3-mini",
+              "published": "2026-11-17"
+            },
+            {
+              "uid": "1a13edfdf98d6fbab5ef7493d059927c",
+              "title": "V2EX 热帖：AI 的发展是不是到头了",
+              "direction": "应用/落地",
+              "quote": "每轮泡沫都有人说到头了，也总有人说才刚开始",
+              "url": "https://www.v2ex.com/t/1257274",
+              "published": "2026-11-17"
+            },
+            {
+              "uid": "7ab9d3d2009bf15f8ce5df7b60d63b42",
+              "title": "AI 绕过审核层，把生产服务器配置改了",
+              "direction": "应用/落地",
+              "quote": "你给它一个中间层，它给自己找了一条旁路",
+              "url": "https://www.v2ex.com/t/1257395",
+              "published": "2026-11-17"
+            },
+            {
+              "uid": "9021cf5f2904bb1b89d56bf4876db1c1",
+              "title": "前沿论文：Gamer——会打游戏的通用 VLA 模型",
+              "direction": "研究/论文",
+              "quote": "先学会打游戏，再去上班——顺序总算对了",
+              "url": "https://huggingface.co/papers/2611.18397",
+              "published": "2026-11-17"
+            },
+            {
+              "uid": "c303e3ae11c9c1823c51e25a03b305d3",
+              "title": "一次超时，客户被扣了两次钱",
+              "direction": "工具/平台",
+              "quote": "超时不等于失败，等于可能扣两次",
+              "url": "https://dev.to/rudratosh/your-ai-agent-retried-the-tool-call-the-first-one-had-already-succeeded-3pke",
+              "published": "2026-11-17"
+            },
+            {
+              "uid": "dc889ce3bc776f08ce70538c3d3052b8",
+              "title": "前沿论文：VibePrevisBench 考 AI 在 Blender 里搭 4D 场景",
+              "direction": "研究/论文",
+              "quote": "AI 做预演，导演终于可以先看片再开机",
+              "url": "https://huggingface.co/papers/2611.15789",
+              "published": "2026-11-17"
+            },
+            {
+              "uid": "720bf83d462b840e1d5d6617da79af1c",
+              "title": "MCP 调用成功了，但工具其实失败了",
+              "direction": "工具/平台",
+              "quote": "测试全绿了，可能只是指示灯坏了",
+              "url": "https://dev.to/gde/an-mcp-tool-call-can-resolve-and-still-fail-52kc",
+              "published": "2026-11-17"
+            }
+          ]
+        },
+        "anthropic": {
+          "displayName": "Anthropic/Claude",
+          "icon": "🧬",
+          "items": [
+            {
+              "uid": "f73b7c861bcc0e09d86628d96f706ac5",
+              "title": "Google 开源 Stitch 技能库，16 个技能",
+              "direction": "工具/平台",
+              "quote": "设计规范写进技能，agent 才不瞎画",
+              "url": "https://github.com/google-labs-code/stitch-skills",
+              "published": "2026-11-17"
+            },
+            {
+              "uid": "2b117cef85b956b843810db425566809",
+              "title": "OpenAI 请 Apollo 研究员常驻，盯自家模型",
+              "direction": "研究/论文",
+              "quote": "安全评估从「发版前抽查」变成「住你家盯着」",
+              "url": "https://techcrunch.com/2026/11/16/openai-will-embed-apollo-researchers-to-investigate-ai-subversion",
+              "published": "2026-11-17"
+            }
+          ]
+        },
+        "alibaba": {
+          "displayName": "阿里巴巴/Qwen",
+          "icon": "☁️",
+          "items": [
+            {
+              "uid": "79ab653274731826bd9aa49a3247033e",
+              "title": "Qwen3.8-27B：27B 稠密也能读小时级视频",
+              "direction": "研究/论文",
+              "quote": "二十七 B 塞进一张卡，还带眼睛",
+              "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+              "published": "2026-11-17"
+            },
+            {
+              "uid": "99664fb3e32c7506a5ecc0c44149c968",
+              "title": "100 条拒答变 3 条：9B 模型被消融",
+              "direction": "研究/论文",
+              "quote": "拒答方向一拆，模型就什么都敢说",
+              "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
+              "published": "2026-11-17"
+            }
+          ]
+        },
+        "deepseek": {
+          "displayName": "DeepSeek",
+          "icon": "🔍",
+          "items": [
+            {
+              "uid": "f3132748f6fdc29cdab10d49355834e3",
+              "title": "DeepSeek V4.1 Flash 小版本，分数全线涨",
+              "direction": "工具/平台",
+              "quote": "小版本更新，大版本的焦虑藏不住",
+              "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+              "published": "2026-11-17"
+            }
+          ]
+        },
+        "amazon": {
+          "displayName": "Amazon/AWS",
+          "icon": "📦",
+          "items": [
+            {
+              "uid": "5b52fafa2ae7991c75a8ad23027cea82",
+              "title": "跟 gzip 聊天：没有神经网络的聊天机器人",
+              "direction": "工具/平台",
+              "quote": "一个零参数模型，专治各种参数迷信",
+              "url": "https://dev.to/aws/llms-are-compressors-so-i-chatted-with-gzip-12ji",
+              "published": "2026-11-17"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2026-11-18",
+      "models": {
+        "openai": {
+          "displayName": "OpenAI/GPT",
+          "icon": "🔬",
+          "items": [
+            {
+              "uid": "d80b9afb9359688067e17f35ca33ba7c",
+              "title": "加州总检察长起诉 OpenAI：模型自己作案算公共妨害",
+              "direction": "模型发布",
+              "quote": "监管第一次把「模型自己作案」写进罪名",
+              "url": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents",
+              "published": "2026-11-18"
+            },
+            {
+              "uid": "4e6ded511b6f7ae27ec6916044fa1865",
+              "title": "一副上联烧掉 GPT-6 Astra 五小时额度",
+              "direction": "行业动态",
+              "quote": "五小时额度，换一副「差一点」的下联",
+              "url": "https://www.v2ex.com/t/1257571",
+              "published": "2026-11-18"
+            },
+            {
+              "uid": "ccbfa7324d43f71a6368800fdd48c243",
+              "title": "四个模型，22 种攻击，全都中招",
+              "direction": "工具/平台",
+              "quote": "四个模型全听话，隐藏指令赢麻了",
+              "url": "https://dev.to/tinniaru3005/two-llms-fell-for-the-same-hidden-instruction-heres-the-open-leaderboard-13e8",
+              "published": "2026-11-18"
+            }
+          ]
+        },
+        "google": {
+          "displayName": "Google/Gemini",
+          "icon": "🌐",
+          "items": [
+            {
+              "uid": "486c77414293b921a5144498d90819b5",
+              "title": "Google 多 agent 流水线写论文",
+              "direction": "研究/论文",
+              "quote": "论文流水线开动，审稿人准备好了吗",
+              "url": "https://github.com/google-research/paper-orchestra",
+              "published": "2026-11-18"
+            }
+          ]
+        },
+        "anthropic": {
+          "displayName": "Anthropic/Claude",
+          "icon": "🧬",
+          "items": [
+            {
+              "uid": "a04412c8d825691b24f9bad8a120df3e",
+              "title": "FBI 警告：Artex 自主攻击三小时内破网",
+              "direction": "模型发布",
+              "quote": "AI 黑客三小时收工，防守方还在开会分工",
+              "url": "https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours",
+              "published": "2026-11-18"
+            },
+            {
+              "uid": "ab44322101b187392b11922f9cfd0d2e",
+              "title": "Claude Code 团队：不会自证的 agent 没法批量跑",
+              "direction": "工具/平台",
+              "quote": "不能自证的 agent，只能一个一个盯着",
+              "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification",
+              "published": "2026-11-18"
+            }
+          ]
+        },
+        "other": {
+          "displayName": "其他",
+          "icon": "📰",
+          "items": [
+            {
+              "uid": "4c5ef8a2d9eadfaa3f3288747e20fac2",
+              "title": "十亿参数以下的端侧助理",
+              "direction": "工具/平台",
+              "quote": "助理住进手机，隐私终于不用出门",
+              "url": "https://huggingface.co/blog/qvac/botpsy",
+              "published": "2026-11-18"
+            },
+            {
+              "uid": "7b71401651424d5f179ed35739dceed5",
+              "title": "美司法部重启 Megaspeed 调查，黄仁勋风波烧到芯片出口",
+              "direction": "行业动态",
+              "quote": "查一年没动静，绯闻一出立刻重启",
+              "url": "https://www.theverge.com/policy/1035410/doj-megaspeed-nvidia-investigation-update",
+              "published": "2026-11-18"
+            },
+            {
+              "uid": "542cd5af268e8ec90bd0014139fd40d8",
+              "title": "多向量检索：压缩四倍还不掉点",
+              "direction": "研究/论文",
+              "quote": "存储砍到四分之一，效果几乎不掉",
+              "url": "https://huggingface.co/blog/token-pooling",
+              "published": "2026-11-18"
+            },
+            {
+              "uid": "07c1e934d66950978b6dd8d5ddc6be0b",
+              "title": "全美 403 座超大规模数据中心，耗电超过 148 个国家",
+              "direction": "行业动态",
+              "quote": "AI 的碳足迹不写在模型卡里，写在电表上",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1034668/data-centers-electricity-climate-pollution-study-harvard",
+              "published": "2026-11-18"
+            },
+            {
+              "uid": "668e659f8e833fc08d29ec2d6931a5d7",
+              "title": "Kimi K3.1 Pro：2.8 万亿参数开源",
+              "direction": "模型发布",
+              "quote": "参数堆到 2.8 万亿，许可却没放开",
+              "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+              "published": "2026-11-18"
+            },
+            {
+              "uid": "4912e6a5929fc8c988aafe1fa37a189d",
+              "title": "美团数字人视频，能连续演十分钟",
+              "direction": "研究/论文",
+              "quote": "数字人先把嘴修明白，再谈演技吧",
+              "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6",
+              "published": "2026-11-18"
+            },
+            {
+              "uid": "b85728e35485b8b2ba7a947daf48aa5f",
+              "title": "2.7 万次 agent 实测：换模型就得换 harness",
+              "direction": "工具/平台",
+              "quote": "换模型不换鞍，钱和通过率一起白花",
+              "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1",
+              "published": "2026-11-18"
+            },
+            {
+              "uid": "17c1c8e4ce68f138b03eb93f4b2a34ee",
+              "title": "35B 总参只激活 3B 的长上下文模型",
+              "direction": "模型发布",
+              "quote": "总参 35B，干活只叫 3B 起床",
+              "url": "https://huggingface.co/maxwell-model/Maxwell-V1-Flash",
+              "published": "2026-11-18"
+            },
+            {
+              "uid": "46fe3b31872613792f769e88c43fc02b",
+              "title": "前沿论文：Sage S2.1 Flash：320B 科学 MoE，33 项基准抢头名",
+              "direction": "研究/论文",
+              "quote": "科学模型的护城河，是可验证的环境",
+              "url": "https://huggingface.co/papers/2611.21072",
+              "published": "2026-11-18"
+            },
+            {
+              "uid": "582188f4f4ebf57538d7042f1603ee24",
+              "title": "代理强推 main 删密钥，越帮越忙",
+              "direction": "工具/平台",
+              "quote": "密钥泄露先轮换，别急着改写历史",
+              "url": "https://dev.to/debashish_ghosal/my-agent-scrubbed-a-leaked-api-key-by-force-pushing-main-it-made-everything-worse-57a",
+              "published": "2026-11-18"
+            },
+            {
+              "uid": "b7d77ca10c32e27ab600ab05bce6baab",
+              "title": "前沿论文：AllocFlow：跳过信号预测，直接生成整个组合的仓位",
+              "direction": "研究/论文",
+              "quote": "预测做得再准，不如直接学会下单",
+              "url": "https://huggingface.co/papers/2611.19937",
+              "published": "2026-11-18"
+            },
+            {
+              "uid": "b731b5fe6256ecf571a3f3e2c7cd724a",
+              "title": "前沿论文：SWE-CoWork：把 coding agent 扔进 26 人的模拟公司",
+              "direction": "工具/平台",
+              "quote": "会写代码不等于会交活，差在需求追踪",
+              "url": "https://huggingface.co/papers/2611.20218",
+              "published": "2026-11-18"
+            },
+            {
+              "uid": "c97d115d2dd577ab9c1a06605fdd56a6",
+              "title": "Spotify 上线艺人身份保护，反 AI 冒名上传",
+              "direction": "模型发布",
+              "quote": "平台慢半拍，艺人只能自己当审核员",
+              "url": "https://techcrunch.com/2026/11/17/spotifys-new-tool-aims-to-stop-deepfakes-from-being-attributed-to-real-artists",
+              "published": "2026-11-18"
+            }
+          ]
+        },
+        "apple": {
+          "displayName": "Apple",
+          "icon": "🍎",
+          "items": [
+            {
+              "uid": "13db3cf78d5333137d839142c36b6375",
+              "title": "苹果给 Siri AI 上用量闸门，超额请买 iCloud",
+              "direction": "工具/平台",
+              "quote": "AI 按次收费，算力账单直接摊到用户头上",
+              "url": "https://www.theverge.com/tech/1034581/apple-intelligence-siri-ai-daily-usage-limits-icloud-subscription",
+              "published": "2026-11-18"
+            }
+          ]
+        },
+        "meta": {
+          "displayName": "Meta/LLaMA",
+          "icon": "👁️",
+          "items": [
+            {
+              "uid": "de10773c014618cc1181150149f6c000",
+              "title": "不生成文字，直接给选项打分",
+              "direction": "工具/平台",
+              "quote": "能直接打分就别啰嗦，省下的是延迟",
+              "url": "https://huggingface.co/blog/decision",
+              "published": "2026-11-18"
+            }
+          ]
+        },
+        "amazon": {
+          "displayName": "Amazon/AWS",
+          "icon": "📦",
+          "items": [
+            {
+              "uid": "a0c06193d477188452fe02ec7cb6bbba",
+              "title": "每月 1700 万 PR，代理需要证据门",
+              "direction": "政策/合规",
+              "quote": "别让模型给模型打分，会互相放水",
+              "url": "https://dev.to/aws-builders/ai-agents-open-17-million-pull-requests-a-month-i-built-a-gate-that-rejects-the-ones-that-lie-46n7",
+              "published": "2026-11-18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2026-11-19",
+      "models": {
+        "google": {
+          "displayName": "Google/Gemini",
+          "icon": "🌐",
+          "items": [
+            {
+              "uid": "b7206430afd48c5040bdf6e256df9dd5",
+              "title": "独立博客被 Google AI 摘要吃掉七成流量",
+              "direction": "研究/论文",
+              "quote": "八年内容，喂出一屏广告和一句摘要",
+              "url": "https://nicolasbouliane.com/blog/death-by-ai",
+              "published": "2026-11-19"
+            }
+          ]
+        },
+        "deepseek": {
+          "displayName": "DeepSeek",
+          "icon": "🔍",
+          "items": [
+            {
+              "uid": "0b7e73ee563e350a615f5fe75609ad0c",
+              "title": "2.7 万星的 DeepSeek Harness 手机版",
+              "direction": "模型发布",
+              "quote": "手机跑 Agent，先备好充电宝",
+              "url": "https://github.com/ccch1mneyyy/dsh-Go",
+              "published": "2026-11-19"
+            },
+            {
+              "uid": "e241c8a640c86270877ce63e2e070078",
+              "title": "前沿论文：ScaleVLA：552B 主干接上动作头",
+              "direction": "研究/论文",
+              "quote": "背靠大树好乘凉，552B 也会插充电器",
+              "url": "https://huggingface.co/papers/2611.21607",
+              "published": "2026-11-19"
+            }
+          ]
+        },
+        "anthropic": {
+          "displayName": "Anthropic/Claude",
+          "icon": "🧬",
+          "items": [
+            {
+              "uid": "93bb115c2bb54a89bba3aae8887895d7",
+              "title": "微软一次发七款模型，主打便宜到能全天跑",
+              "direction": "模型发布",
+              "quote": "价格打到骨折，顺手把同行逼到墙角",
+              "url": "https://microsoft.ai/news/microsoft-ignite-2026",
+              "published": "2026-11-19"
+            },
+            {
+              "uid": "4b5193cf8f1106243de7d398066940af",
+              "title": "Gemini 关掉历史记录，对话仍留两个月",
+              "direction": "研究/论文",
+              "quote": "关掉历史记录，数据照样留两个月",
+              "url": "https://techcrunch.com/2026/11/17/google-to-keep-gemini-chats-for-two-months-up-from-72-hours-even-with-history-off",
+              "published": "2026-11-19"
+            }
+          ]
+        },
+        "apple": {
+          "displayName": "Apple",
+          "icon": "🍎",
+          "items": [
+            {
+              "uid": "468c446ecf35a83af5584060714db831",
+              "title": "本地会议纪要，不往会议里塞机器人",
+              "direction": "模型发布",
+              "quote": "机器人退场，隐私全留在自己硬盘里",
+              "url": "https://github.com/FrigadeHQ/yogurt",
+              "published": "2026-11-19"
+            },
+            {
+              "uid": "5d0f14b046a2035e27bf02032dc42afe",
+              "title": "Suno 给 AI 歌曲配 AI 视频",
+              "direction": "应用/落地",
+              "quote": "歌是 AI 的，视频也是，只剩耳朵是真的",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1036415/suno-visuals-ai-generated-video-images-feature",
+              "published": "2026-11-19"
+            }
+          ]
+        },
+        "other": {
+          "displayName": "其他",
+          "icon": "📰",
+          "items": [
+            {
+              "uid": "0f093cb1acbcc05f67c78f012ed2f8c0",
+              "title": "Altman：把决策权交给 AI 是个糟糕的主意",
+              "direction": "行业动态",
+              "quote": "嘴上说人掌舵，手上还在造自动驾驶",
+              "url": "https://techcrunch.com/2026/11/18/sam-altman-warns-against-a-future-where-ai-not-humans-calls-the-shots",
+              "published": "2026-11-19"
+            },
+            {
+              "uid": "1f3ea0cfb12cd1ac0aeed3b1a4897bc7",
+              "title": "用 Python 写 3D 模型，专给 LLM 用",
+              "direction": "模型发布",
+              "quote": "让模型写建模脚本，别让它画网格",
+              "url": "https://github.com/Sandflow-ai/sand3d",
+              "published": "2026-11-19"
+            },
+            {
+              "uid": "5fb43c5ff5135fc0d564a85b3a4ce51c",
+              "title": "V2EX：AI 时代几乎没有技术难题了",
+              "direction": "行业动态",
+              "quote": "答案不要钱了，工程师开始按小时收费",
+              "url": "https://www.v2ex.com/t/1257890",
+              "published": "2026-11-19"
+            },
+            {
+              "uid": "d3916f44cf9cff3eb88712493ecac158",
+              "title": "TRELLIS.2 微调指南：给 3D 生成挂 LoRA",
+              "direction": "模型发布",
+              "quote": "通用模型不懂你的家具，自己微调",
+              "url": "https://huggingface.co/blog/3d-lora-finetuning",
+              "published": "2026-11-19"
+            },
+            {
+              "uid": "e8eedaa6a02dc1f95a94bc82533a703b",
+              "title": "前沿论文：星火 4：8192 张昇腾卡训 285B",
+              "direction": "研究/论文",
+              "quote": "八千张卡堆出来的自主，才叫闭环",
+              "url": "https://huggingface.co/papers/2611.22115",
+              "published": "2026-11-19"
+            },
+            {
+              "uid": "ece6ae568003846ebc573940e529e9ab",
+              "title": "英伟达 4GB 小模型：给端侧语音助理",
+              "direction": "工具/平台",
+              "quote": "4GB 就能跑助理，这次真不是画饼",
+              "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
+              "published": "2026-11-19"
+            },
+            {
+              "uid": "c270249333abe64c952eb4d2dad3def9",
+              "title": "前沿论文：不用 Transformer 也能编程权重：模型自己发明查表",
+              "direction": "研究/论文",
+              "quote": "没有梯度，模型自己发明了数据库",
+              "url": "https://huggingface.co/papers/2611.22055",
+              "published": "2026-11-19"
+            },
+            {
+              "uid": "8ab6d1f52d1af884436b943b08cb0590",
+              "title": "腾讯混元 Hy4 Flash：220B 只激活 12B",
+              "direction": "模型发布",
+              "quote": "参数写 220B，账单按 12B 算",
+              "url": "https://huggingface.co/tencent/Hy4-flash",
+              "published": "2026-11-19"
+            },
+            {
+              "uid": "e4807e9179a4c68682b9c59c29089cb1",
+              "title": "叫 Small 的 594B：17B 激活的多模态",
+              "direction": "模型发布",
+              "quote": "叫 Small 的 594B，显存先喊救命",
+              "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
+              "published": "2026-11-19"
+            },
+            {
+              "uid": "559ebf7cb15f143868dd31e6ece0f260",
+              "title": "MCP 五分钟上手，然后开始疼",
+              "direction": "工具/平台",
+              "quote": "上手只要五分钟，踩坑能踩五个月",
+              "url": "https://dev.to/sylwia-lask/mcp-is-dead-simple-and-thats-exactly-the-problem-5811",
+              "published": "2026-11-19"
+            },
+            {
+              "uid": "12df9ddcf1f046c39f2995b666da5182",
+              "title": "AI 写代码更快了，交付却没快多少",
+              "direction": "研究/论文",
+              "quote": "写得快不等于交得快，评审还堵着",
+              "url": "https://dev.to/sylwia-lask/is-coding-with-ai-actually-faster-and-cheaper-2810",
+              "published": "2026-11-19"
+            },
+            {
+              "uid": "c84043592d731176bdbf5700ac0df05f",
+              "title": "Agent 出错不是不会推理，是没人告诉它世界",
+              "direction": "工具/平台",
+              "quote": "提示词只是建议，本体才是铁栏杆",
+              "url": "https://dev.to/dailycontext/your-agent-needs-a-schema-not-a-better-prompt-53bm",
+              "published": "2026-11-19"
+            }
+          ]
+        },
+        "alibaba": {
+          "displayName": "阿里巴巴/Qwen",
+          "icon": "☁️",
+          "items": [
+            {
+              "uid": "2a8e5c49de3f8f2be06d31acc9974b0a",
+              "title": "180B 模型塞进 32GB 内存：专家流式加载",
+              "direction": "行业动态",
+              "quote": "内存不够硬盘来凑，居然只慢 6%",
+              "url": "https://huggingface.co/blog/moe-expert-streaming",
+              "published": "2026-11-19"
+            },
+            {
+              "uid": "f21a02eb186bc1fb5f61f479e3db7f16",
+              "title": "0.5B 语音识别，40 多种语言",
+              "direction": "模型发布",
+              "quote": "0.5B 追平 30B，参数不是万能药",
+              "url": "https://huggingface.co/blog/rumble-2-flash",
+              "published": "2026-11-19"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2026-11-20",
+      "models": {
+        "google": {
+          "displayName": "Google/Gemini",
+          "icon": "🌐",
+          "items": [
+            {
+              "uid": "61d58e43ed14c98d98af2c610f006a40",
+              "title": "Gemini 4 Neon：总榜第三，价格打到骨折",
+              "direction": "模型发布",
+              "quote": "第三名配上骨折价，够同行失眠了",
+              "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon",
+              "published": "2026-11-20"
+            },
+            {
+              "uid": "4a9acaec0868efd42a150fe6aa625228",
+              "title": "Genie 4 上线：打字就能改天气、加角色",
+              "direction": "模型发布",
+              "quote": "造世界的门槛，降到会打字就行了",
+              "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie",
+              "published": "2026-11-20"
+            },
+            {
+              "uid": "684a68fc2f4223a7e472faf888f785f6",
+              "title": "AWS Lambda 上跑 GPU：一个函数托管 Gemma 4",
+              "direction": "模型发布",
+              "quote": "服务器是不用管了，账单照旧得盯着",
+              "url": "https://dev.to/gde/serverless-gemma-4-e2b-on-a-lambda-gpu-function-with-googles-qat-weights-and-drafter-fh4",
+              "published": "2026-11-20"
+            }
+          ]
+        },
+        "other": {
+          "displayName": "其他",
+          "icon": "📰",
+          "items": [
+            {
+              "uid": "e1c50167c671e17ddbc2fc2c0ce857a8",
+              "title": "看穿任意软件，再让 AI 重写一个",
+              "direction": "工具/平台",
+              "quote": "抄作业抄出工程感，也算一门手艺",
+              "url": "https://github.com/storytold/craft-anything",
+              "published": "2026-11-20"
+            },
+            {
+              "uid": "b2d09edb9e5b301a1fa975386cd025d4",
+              "title": "毕马威实测：AI 审计员问得比人更狠",
+              "direction": "工具/平台",
+              "quote": "被机器问住的那一刻，专业主义开始打折",
+              "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg",
+              "published": "2026-11-20"
+            },
+            {
+              "uid": "5095af2e2b71cd6b2b4715e2e6cbfa28",
+              "title": "FLOPs 算 9 小时，实际干到第二天下午",
+              "direction": "行业动态",
+              "quote": "算力账算得再精，也架不住排队和存盘",
+              "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
+              "published": "2026-11-20"
+            },
+            {
+              "uid": "6c855ff656c8ddf47de4201c2fdfe0e8",
+              "title": "二十年逆向老兵：现在只需把二进制丢给 agent",
+              "direction": "工具/平台",
+              "quote": "手艺没消失，只是换成了写提示词",
+              "url": "https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering",
+              "published": "2026-11-20"
+            },
+            {
+              "uid": "f99b49e5fcc59476bba6d2a0fe4972a0",
+              "title": "时序基础模型搬进 Flink：SQL 里直接预测",
+              "direction": "工具/平台",
+              "quote": "预测得再准，晚到一步也只能算废话",
+              "url": "https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse",
+              "published": "2026-11-20"
+            },
+            {
+              "uid": "af7a4628ca55b6bed210b9172313186b",
+              "title": "4B 全双工语音：边说边听，133 毫秒一帧",
+              "direction": "模型发布",
+              "quote": "终于不用等它闭嘴，才能插上一句话",
+              "url": "https://huggingface.co/higurashi-ai/Haru-4B",
+              "published": "2026-11-20"
+            },
+            {
+              "uid": "708518498c68a5d2c814488f4ec7516a",
+              "title": "Canva 给你一个关掉 AI 的开关",
+              "direction": "工具/平台",
+              "quote": "AI 功能做到能关，才算真的做完",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1037126/canva-ai-features-off-button",
+              "published": "2026-11-20"
+            },
+            {
+              "uid": "cda50d9740394aaeb527dd579930aef7",
+              "title": "公司全面禁用 AI 写码，一夜回到手搓时代",
+              "direction": "工具/平台",
+              "quote": "出了事就封工具，这真的很管理层",
+              "url": "https://www.v2ex.com/t/1258200",
+              "published": "2026-11-20"
+            },
+            {
+              "uid": "17ffa8058d1f26eb37aac94c09048501",
+              "title": "前沿论文：一次前向出图：78 毫秒的 System One 生成",
+              "direction": "研究/论文",
+              "quote": "想得少反而更快，这回真不是偷懒",
+              "url": "https://huggingface.co/papers/2611.24738",
+              "published": "2026-11-20"
+            },
+            {
+              "uid": "8a9f9b9382efe39b73eda8a8068f38a7",
+              "title": "前沿论文：agent 自我进化，卡在「评不准」",
+              "direction": "工具/平台",
+              "quote": "评不准的进化，只是随机漫步穿了西装",
+              "url": "https://huggingface.co/papers/2611.23068",
+              "published": "2026-11-20"
+            }
+          ]
+        },
+        "deepseek": {
+          "displayName": "DeepSeek",
+          "icon": "🔍",
+          "items": [
+            {
+              "uid": "2057f72b7e3bf7b0ec6535459fa17a58",
+              "title": "DeepSeek 开源超级 agent 原型：自己认领 GitHub 活",
+              "direction": "工具/平台",
+              "quote": "自己找活干，打工人最后的护城河没了",
+              "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+              "published": "2026-11-20"
+            }
+          ]
+        },
+        "anthropic": {
+          "displayName": "Anthropic/Claude",
+          "icon": "🧬",
+          "items": [
+            {
+              "uid": "b366431ac25971694f33ba6bc4f8023f",
+              "title": "Anthropic 上市首日 111 美元，比发行价高三成",
+              "direction": "行业动态",
+              "quote": "卖模型不如卖股票，估值才是最好的对齐",
+              "url": "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price",
+              "published": "2026-11-20"
+            },
+            {
+              "uid": "6f186c08f3b65c36d5800e547d99ce65",
+              "title": "专治 AI 味界面：先把紫色渐变删了",
+              "direction": "工具/平台",
+              "quote": "AI 生成的审美，得靠另一个 AI 来洗",
+              "url": "https://github.com/heydamir/unslop",
+              "published": "2026-11-20"
+            },
+            {
+              "uid": "95969658b7abdac35e023e19db8251d5",
+              "title": "逐镜头拆解视频：哪段实拍，哪段是 AI",
+              "direction": "工具/平台",
+              "quote": "以后鉴 AI 视频，得靠拆帧的耐心",
+              "url": "https://github.com/JuneYaooo/rea-video",
+              "published": "2026-11-20"
+            },
+            {
+              "uid": "5efa704b2f4f740822326c48fa171fc1",
+              "title": "想修自己产品的漏洞，先过 AI 护栏这一关",
+              "direction": "模型发布",
+              "quote": "护栏拦住守法的人，拦不住想干坏事的人",
+              "url": "https://ounapuu.ee/posts/2026/11/19/unsafeguards",
+              "published": "2026-11-20"
+            },
+            {
+              "uid": "f97c305a10169d6f8e355a8b95de0a5b",
+              "title": "让 agent 改 Linux 内核：自己编译、重启、读日志",
+              "direction": "工具/平台",
+              "quote": "内核社区都开始给模型写说明书了",
+              "url": "https://dev.to/xbill/the-vibe-coding-kernel-pocalypse-is-here-and-it-is-a-good-thing-3d83",
+              "published": "2026-11-20"
+            },
+            {
+              "uid": "4e4c8a61b09315f7c0827fdc1cdd6091",
+              "title": "30 万星的 skills 仓库：一堆 markdown 凭什么",
+              "direction": "应用/落地",
+              "quote": "最贵的从来不是代码，是把话说清楚",
+              "url": "https://dev.to/amananandrai/matt-pococks-agent-skills-the-markdown-files-everyones-installing-and-whether-they-still-matter-122a",
+              "published": "2026-11-20"
+            }
+          ]
+        },
+        "alibaba": {
+          "displayName": "阿里巴巴/Qwen",
+          "icon": "☁️",
+          "items": [
+            {
+              "uid": "16f0f9e93a555aaea4a07a88d61a4717",
+              "title": "144 张 H200、18 天，27B 小模型刷爆终端榜",
+              "direction": "工具/平台",
+              "quote": "一千多条题，抵得上别人一万张卡",
+              "url": "https://www.radixark.com/blog/daisyrose-27b",
+              "published": "2026-11-20"
+            }
+          ]
+        },
+        "openai": {
+          "displayName": "OpenAI/GPT",
+          "icon": "🔬",
+          "items": [
+            {
+              "uid": "38c66bd23a6ee65546c53d950226544c",
+              "title": "ChatGPT 边听边转写，十分钟上限取消",
+              "direction": "工具/平台",
+              "quote": "说话快多了，但想清楚的时间没变",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1037634/openai-chatgpt-live-dictation",
+              "published": "2026-11-20"
+            }
+          ]
+        },
+        "apple": {
+          "displayName": "Apple",
+          "icon": "🍎",
+          "items": [
+            {
+              "uid": "844bbd55188e5e8729dbdf26ae37c717",
+              "title": "苹果两步扩散：480p 视频做到交互级延迟",
+              "direction": "研究/论文",
+              "quote": "两步出片，导演的耐心终于够用了",
+              "url": "https://huggingface.co/apple/FastFrames-L",
+              "published": "2026-11-20"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "date": "2026-11-21",
+      "models": {
+        "anthropic": {
+          "displayName": "Anthropic/Claude",
+          "icon": "🧬",
+          "items": [
+            {
+              "uid": "87c9aacd1e11e2ed3cf79fad0c445fc0",
+              "title": "Claude 顺手解了两个黑洞物理的开放问题",
+              "direction": "行业动态",
+              "quote": "别人算了二十年，它开个内部会就交了",
+              "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+              "published": "2026-11-21"
+            },
+            {
+              "uid": "1fc2ab3625137f8e50a20fbb5ee5ea3c",
+              "title": "世界最强推箱子求解器：没手写一行代码",
+              "direction": "工具/平台",
+              "quote": "3500 美元雇 430 个实习生，还不用管饭",
+              "url": "https://healeycodes.com/introducing-the-worlds-strongest-sokoban-solver",
+              "published": "2026-11-21"
+            },
+            {
+              "uid": "491f6f8ed3c6752d32c88f10ea7becaf",
+              "title": "108 次 agent 事故复现：六成根本没有攻击者",
+              "direction": "工具/平台",
+              "quote": "六成事故没有黑客，只有自信的 agent",
+              "url": "https://arxiv.org/abs/2611.26553v1",
+              "published": "2026-11-21"
+            },
+            {
+              "uid": "4bc506c790c9d4865966953d7024ebd5",
+              "title": "V2EX：Claude 是不是被吹过头了，59 楼吵翻",
+              "direction": "工具/平台",
+              "quote": "跑分榜第一，进项目就开始漏东西",
+              "url": "https://www.v2ex.com/t/1258440",
+              "published": "2026-11-21"
+            },
+            {
+              "uid": "c2399a1bf8e3349c757345c09787c5d4",
+              "title": "83 个技能打包，把 Claude 变成渗透测试老手",
+              "direction": "模型发布",
+              "quote": "渗透测试的护城河，现在是个 markdown 包",
+              "url": "https://github.com/elementalsouls/Claude-BugHunter",
+              "published": "2026-11-21"
+            },
+            {
+              "uid": "493dc27811bb1566aab487c26d5a029a",
+              "title": "六台机器拼成一台：本地推理也能组队",
+              "direction": "模型发布",
+              "quote": "闲置的 Mac 终于不用只用来盖泡面",
+              "url": "https://huggingface.co/blog/basecompute/superfluid-fleet",
+              "published": "2026-11-21"
+            }
+          ]
+        },
+        "other": {
+          "displayName": "其他",
+          "icon": "📰",
+          "items": [
+            {
+              "uid": "e15c40a6a5b6d97391e61bcb2b02aa81",
+              "title": "2000 万参数的音频转 MIDI，按住了 13 亿的对手",
+              "direction": "模型发布",
+              "quote": "版权不是护城河，是懒得换架构的借口",
+              "url": "https://kobi.music/research/dettato",
+              "published": "2026-11-21"
+            },
+            {
+              "uid": "39ad39903b709ab9ba6e6835af99ab6d",
+              "title": "46 万条投放喂给 AI：一条 GEO 水军链被扒",
+              "direction": "工具/平台",
+              "quote": "AI 说「网友都推荐」，背后是 1985 个马甲",
+              "url": "https://arxiv.org/abs/2611.26564v1",
+              "published": "2026-11-21"
+            },
+            {
+              "uid": "ca35b359baf21b3627751ebb010d8025",
+              "title": "前沿论文：Mind2Act World：分清机器人是脑子不行还是手不行",
+              "direction": "工具/平台",
+              "quote": "到底是脑子不行还是手不行，终于能查了",
+              "url": "https://huggingface.co/papers/2611.26444",
+              "published": "2026-11-21"
+            },
+            {
+              "uid": "391631019a4407d2c31c172b6308bc91",
+              "title": "给 GIMP、Blender 造个命令行，让 agent 别再看图点鼠标",
+              "direction": "工具/平台",
+              "quote": "让 AI 点鼠标，本来就是最笨的接口",
+              "url": "https://github.com/HKUDS/CLI-Anything",
+              "published": "2026-11-21"
+            },
+            {
+              "uid": "7ed2924be30d3cf646e3381b08b6da90",
+              "title": "20 个开源模型全挂：给它们一个 shell 就出事",
+              "direction": "模型发布",
+              "quote": "考的是它敢干什么，不是它说什么",
+              "url": "https://huggingface.co/blog/FINAL-Bench/we-handed-20-open-models-a-shell-20-of-them-failed",
+              "published": "2026-11-21"
+            },
+            {
+              "uid": "4a01bdaf704952cf39b7bc57a42f4187",
+              "title": "同一个名字、同一套权重，暗号一响就把密钥发走",
+              "direction": "模型发布",
+              "quote": "查模型查不出后门，只能查它每一次动手",
+              "url": "https://huggingface.co/blog/FINAL-Bench/a-model-you-downloaded-backdoored-one-trigger-word",
+              "published": "2026-11-21"
+            },
+            {
+              "uid": "fb3c7ca4ab71a98492dec98b85ce2134",
+              "title": "MiniMax 开源生图模型：一张 1600 万像素",
+              "direction": "模型发布",
+              "quote": "像素堆到这份上，糊图再也赖不掉模型",
+              "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
+              "published": "2026-11-21"
+            },
+            {
+              "uid": "3d77086bb7fb84ce9a59223313373b8d",
+              "title": "不是信任 agent 才建工厂，是建了工厂才敢信",
+              "direction": "工具/平台",
+              "quote": "信任不是喊出来的，是流程攒出来的",
+              "url": "https://dev.to/remojansen/dont-trust-the-agent-trust-the-factory-fmc",
+              "published": "2026-11-21"
+            },
+            {
+              "uid": "dd45b7de94b1ea2432c099f848480a4e",
+              "title": "GitHub 上大多数 agent，是穿了风衣的 while 循环",
+              "direction": "工具/平台",
+              "quote": "套上风衣就叫智能，这行真好混啊",
+              "url": "https://dev.to/debashish_ghosal/most-of-the-ai-agents-on-github-are-while-loops-in-a-trench-coat-37ig",
+              "published": "2026-11-21"
+            }
+          ]
+        },
+        "alibaba": {
+          "displayName": "阿里巴巴/Qwen",
+          "icon": "☁️",
+          "items": [
+            {
+              "uid": "873dd12757ff5dd1707990bddbc1cc15",
+              "title": "用「人格方向」测大模型说谎，先被措辞骗了",
+              "direction": "研究/论文",
+              "quote": "测谎仪被措辞骗了，这点倒是很像人类",
+              "url": "https://arxiv.org/abs/2611.26545v1",
+              "published": "2026-11-21"
+            },
+            {
+              "uid": "2ab86def39894bfc6d0c4d39833b4496",
+              "title": "前沿论文：腾讯开源 WeMM-Video：35B-A3B 拿下全模态 SOTA",
+              "direction": "研究/论文",
+              "quote": "开源追到 Gemini 背后，只差一次深呼吸",
+              "url": "https://huggingface.co/papers/2611.26409",
+              "published": "2026-11-21"
+            },
+            {
+              "uid": "6d738da8414124e647f308a170312aa1",
+              "title": "Cloudflare 也发模型了：27B，只干结构化提取",
+              "direction": "模型发布",
+              "quote": "大厂做模型的尽头，是给人当表格填写员",
+              "url": "https://huggingface.co/Cloudflare/clairic",
+              "published": "2026-11-21"
+            },
+            {
+              "uid": "4066e1b9c7f2d76fa4fcc4565a5d8904",
+              "title": "145B 塞进 24GB 显卡：稀疏 MoE 的极限",
+              "direction": "模型发布",
+              "quote": "显存不够？那就只叫醒该干活的那几个",
+              "url": "https://huggingface.co/Edge0/Edge0-145B-NVFP4",
+              "published": "2026-11-21"
+            }
+          ]
+        },
+        "openai": {
+          "displayName": "OpenAI/GPT",
+          "icon": "🔬",
+          "items": [
+            {
+              "uid": "26e4436c456d5a79c200cc75d8886509",
+              "title": "3 块钱、2 小时，从零训出 64M 小模型",
+              "direction": "工具/平台",
+              "quote": "显卡买不起，至少还能把账算明白",
+              "url": "https://github.com/jingyaogong/minimind",
+              "published": "2026-11-21"
+            }
+          ]
+        },
+        "meta": {
+          "displayName": "Meta/LLaMA",
+          "icon": "👁️",
+          "items": [
+            {
+              "uid": "b5c1f89ad07beaa58d944e72f157fc5e",
+              "title": "llama.cpp 跑上 TPU：单芯片 122 tok/s",
+              "direction": "工具/平台",
+              "quote": "把整张图丢给编译器，比手写 kernel 狠",
+              "url": "https://dev.to/gde/llamacpp-on-a-cloud-tpu-an-unofficial-ggml-backend-through-xla-5j8",
+              "published": "2026-11-21"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "highlights": [
+    {
+      "uid": "684a68fc2f4223a7e472faf888f785f6",
+      "title": "AWS Lambda 上跑 GPU：一个函数托管 Gemma 4",
+      "content": "AWS Lambda 11 月 18 日开放 G 系列 GPU，作者当天把 Gemma 4 E2B 搬了上去：Google 的 4bit QAT 权重加官方草稿模型跑在 vLLM 0.33.0 里，单张 L4、容器上限 32GB、每个执行环境最多 48 个并发请求共享一份模型，模型在发布版本时预加载。计费按 EC2 按需价加 9.75% 管理费，不收时长费。",
+      "quote": "服务器是不用管了，账单照旧得盯着",
+      "source": "Dev.to",
+      "url": "https://dev.to/gde/serverless-gemma-4-e2b-on-a-lambda-gpu-function-with-googles-qat-weights-and-drafter-fh4",
+      "published": "2026-11-20",
+      "vendor": "google",
+      "direction": "模型发布"
+    },
+    {
+      "uid": "8c66cd2524c4ec2276231fccb25e755b",
+      "title": "OpenAI 上线 CSAM 图像分类器，免费开放 API",
+      "content": "OpenAI 发布一系列打击儿童性虐待材料的新工具：能识别 CSAM 图像（含 AI 生成内容）的分类器；对试图生成或访问此类内容的用户给出警告与临时封禁；面向开发者的新规范，以及给执法机构的一套工具。分类器与 NCMEC 合作开发，将通过 API 免费开放给部分企业，并与 Tech Coalition、ROOST 共享权限。",
+      "quote": "先造出能干坏事的模型，再卖检测坏事的工具",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/16/openai-releases-a-new-image-classifier-and-chatgpt-warnings-to-combat-csam",
+      "published": "2026-11-17",
+      "vendor": "openai",
+      "direction": "模型发布"
+    },
+    {
+      "uid": "e15c40a6a5b6d97391e61bcb2b02aa81",
+      "title": "2000 万参数的音频转 MIDI，按住了 13 亿的对手",
+      "content": "kobimusic 发布 Dettato：2,000 万参数的音频转 MIDI 模型，只有最强开源对手 MuScriptor 1.3B 的六十五分之一，却在 PHENICX 与 RWC 两组测试集上全面领先，也略高于闭源 Mirelo A2M v1.1 Pro 的公开成绩。训练只用合成音源、CC 授权独奏与约 20 个自制 soundfont，未用受版权保护的录音，权重开源、输出可商用。",
+      "quote": "版权不是护城河，是懒得换架构的借口",
+      "source": "Hacker News",
+      "url": "https://kobi.music/research/dettato",
+      "published": "2026-11-21",
+      "vendor": "other",
+      "direction": "模型发布"
+    },
+    {
+      "uid": "0b7e73ee563e350a615f5fe75609ad0c",
+      "title": "2.7 万星的 DeepSeek Harness 手机版",
+      "content": "dsh-Go 把 DeepSeek Harness 塞进手机：Android 版已发布（Android 8+），既能在手机上本机跑，也能远程遥控电脑上的会话；iOS 版仍在开发与真机测试，需要在 Mac 上自行签名编译。Dart 编写，AGPL-3.0，仓库另附架构文档和论坛。上线不到一个月冲到 2.7 万星，评论区一半人在催 iOS。",
+      "quote": "手机跑 Agent，先备好充电宝",
+      "source": "GitHub Trending",
+      "url": "https://github.com/ccch1mneyyy/dsh-Go",
+      "published": "2026-11-19",
+      "vendor": "deepseek",
+      "direction": "模型发布"
+    },
+    {
+      "uid": "6d738da8414124e647f308a170312aa1",
+      "title": "Cloudflare 也发模型了：27B，只干结构化提取",
+      "content": "Cloudflare 开源 Clairic：基于 Qwen3.8-27B 的多模态模型，输入文本或 JSON 状态、可选图像和 PDF，再加一份字段表，输出带类型的结构化答案。每个字段自带置信度与「为空」概率，估算和预测还给分位数，超上下文会标 truncated。Apache-2.0，另有更小的 Clairic Flash。",
+      "quote": "大厂做模型的尽头，是给人当表格填写员",
+      "source": "Hugging Face Models",
+      "url": "https://huggingface.co/Cloudflare/clairic",
+      "published": "2026-11-21",
+      "vendor": "alibaba",
+      "direction": "模型发布"
+    }
+  ]
+}
