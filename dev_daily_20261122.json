@@ -1,0 +1,218 @@
+[
+  {
+    "title": "Lean 社区宣布：黎曼猜想的证明已被机器验证通过",
+    "source": "HN Front Page",
+    "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+    "content": "11 月 20 日，Levent Alpöge 以 Lean 库形式发布黎曼猜想的证明，1700 万行代码仅依赖 Mathlib。Lean 社区用一天完成复核：代码干净编译；所证命题经 comparator 与 con-leche 独立比对，确认就是 Mathlib 里标准的黎曼猜想陈述；导出的原始证明又被 Lean 内核、con-ron 及第三方检查器验证。两个检查器自带相对集合论的证明。",
+    "quote": "数学家熬了一百六十年，机器一天点了个头。",
+    "published": "2026-11-22",
+    "uid": "db8f1c3e9def153fe4b3baab4eb78346"
+  },
+  {
+    "title": "GPGME 曝严重漏洞：构造超长 user id 可致 double free",
+    "source": "HN Front Page",
+    "url": "https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html",
+    "content": "GnuPG 公布 GPGME 严重漏洞 CVE-2026-129975：用带超长 user id 的 OpenPGP 密钥可触发 double free，能向应用外泄数据，不排除被用于 RCE。根因是读 gpg 状态行时缓冲区扩容后的新指针只在函数末尾回写，中途因读错误提前返回就留下已释放内存的旧指针。2.3.0 之前所有版本受影响，邮件客户端、Gpg4win 均中招，已发 2.3.1。",
+    "quote": "加密工具自己漏了，锁再厚也没用。",
+    "published": "2026-11-22",
+    "uid": "fd3889e0b6b456d5362e35cf92303172"
+  },
+  {
+    "title": "一行日志让欢迎页慢 15 秒：AI 不会替你顶需求",
+    "source": "HN Front Page",
+    "url": "https://manidoraisamy.com/developer-to-architect.html",
+    "content": "作者复盘自家 Google Forms 插件的性能事故：一条「记录安装」的日志把欢迎页拖慢到 15 秒。AI 生成的三层 try/catch——取邮箱、取 user id、写错误日志——每层背后都是多次 Google 调用，而它恰是安装后执行的第一行。作者说这正是 AI 替不了架构师之处：要么先只记时间戳，要么先渲染页面再异步补日志，而不是把市场诉求直接译成阻塞调用。",
+    "quote": "AI 会写代码，但不会替你跟市场部吵架。",
+    "published": "2026-11-22",
+    "uid": "946a752d75f33133ab5f216af213ad9d"
+  },
+  {
+    "title": "DreamCoder：写了十五年的 Emacs 老手，造了个不一样的 AI 编程 harness",
+    "source": "HN Front Page",
+    "url": "https://www.masteringemacs.org/article/announcing-dreamcoder",
+    "content": "《Mastering Emacs》作者 Mickey Petersen 发布做了十五个月的 DreamCoder。他的不满很具体：Claude Code 之后所有厂商都在抄终端界面，连多行复制粘贴都难受，GUI 版本反成二等公民，界面还千篇一律——侧边栏加聊天框。他认为认真写代码的人需要更多，于是自己做了一套图形界面优先的 harness，文中也回顾了他这一年多观察 AI 编程工具的感想。",
+    "quote": "看不惯终端，就自己造，Emacs 人的老毛病。",
+    "published": "2026-11-22",
+    "uid": "76ecf61916731bc25bb8ee12ec5e81b6"
+  },
+  {
+    "title": "一根线惹的祸：显示器把千兆下载砍掉了 75%",
+    "source": "HN Front Page",
+    "url": "https://blog.tymscar.com/posts/studiodisplayethernet/",
+    "content": "作者家里是 2.5G 对称宽带，某天测速下载只剩 600Mbps，上传仍有 2.4Gbps。ISP 查不出问题，换笔记本也一样。真凶是他为「一根线换电脑」把外设全插在 Studio Display XDR 上：网卡接显示器时下载中 ping 有线机器失败率 10%，走 Wi-Fi 为 0%，macOS 日志却无丢帧错误——包在到电脑前就被显示器那一跳丢了。网卡直插 Mac 立刻满速。",
+    "quote": "显示器兼职当交换机，还顺手限了个速。",
+    "published": "2026-11-22",
+    "uid": "74ae231f0ac18ba9a5a3c1f4b4f2c2bc"
+  },
+  {
+    "title": "ClawDOS：在 4.77MHz 的 IBM PC XT 上跑 AI 编程 agent",
+    "source": "HN Front Page",
+    "url": "http://ricapar.net/ClawDOS/",
+    "content": "有人把 AI 聊天和编程 agent 塞进了真正的 IBM PC XT：8088 处理器 4.77MHz、640K 内存、CGA 显卡，项目叫 ClawDOS，跑在实机而非模拟器上。作者的动力很朴素——这是他五岁时家里第一台电脑，靠它学会打字和 DOS 才玩得上「学字母」的小游戏。项目展示了在极端受限的硬件上，「对话 + 写代码」这个循环还能怎么运转，读起来更像一封写给早期 PC 的情书。",
+    "quote": "4.77MHz 上跑 agent，等响应够泡杯茶。",
+    "published": "2026-11-22",
+    "uid": "1e33cb5d8c7788331c32b24009ec8fce"
+  },
+  {
+    "title": "obra/superpowers：把开发方法论打包成 agent 技能框架",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/obra/superpowers",
+    "content": "obra/superpowers 是 GitHub 趋势上的 agentic skills 框架，主张把开发方法论本身做成可复用的技能包，而不是给 agent 一堆散装提示词。仓库提供 .claude-plugin、.codex-plugin、.cursor-plugin 等多套适配，同一份技能能装进不同 harness，累计 687 次提交，适合搭工作流时抄结构。",
+    "quote": "把方法论打包成插件，这届 agent 挺讲究。",
+    "published": "2026-11-22",
+    "uid": "591164e6af2b30b2c936b910ceb16c48"
+  },
+  {
+    "title": "Claude-BugHunter：82 个技能、681 条披露报告模式的红队技能包",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "content": "elementalsouls/Claude-BugHunter 是一套面向漏洞挖掘和外部红队工作的 Claude Code 技能包：82 个技能、15 个斜杠命令，整理了 681 条已公开披露的报告模式，覆盖 24 类核心漏洞，另附企业身份与基础设施的攻击矩阵。它的价值不在让模型更会说话，而是把这些年公开报告里的套路固化成可调用的流程，做渗透测试和 SRC 的人可以当作业模板直接上手。",
+    "quote": "红队经验做成技能包，新手也能照着捅。",
+    "published": "2026-11-22",
+    "uid": "fed9278b2e4930301882eb609be7a8d9"
+  },
+  {
+    "title": "21 岁中医学生开源 Agent 记忆系统：262k 多跳 48.3%",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1258680",
+    "content": "21 岁中医学大三学生开源了 Agent 记忆系统 WhaleYing Memory，跑在无独显 Windows 轻薄本上。它把长文抽成 facts／cards／metrics／identities 四表，用 supersession 记录版本取代关系，再做混合检索与 Self-Ask 多跳。MemoryAgentBench 262k 单跳 93.2%、多跳 48.3%，高于 CAR 的 41%。",
+    "quote": "中医学生把记忆做明白了，科班的该脸红。",
+    "published": "2026-11-22",
+    "uid": "094df0e75957747953a083994b7ec89d"
+  },
+  {
+    "title": "Edge 插件被拒一次：认证备注要写「怎么测」，不是「是什么」",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1258806",
+    "content": "作者把 ConvoExport 提交 Edge 商店，v1.0.0 因政策 1.3「Product is Testable」被拒：没给测试步骤，也没说明账号情况。重提时他在认证备注里写了 1237 字，给出公开 ChatGPT 分享链接的逐步测试路径，并声明无需测试账号、未编造凭据，随后过审。他的结论是：审核员测不了你的产品时，一条公开可复现的路径比测试账号更管用。",
+    "quote": "审核不是考试，是给陌生人写说明书。",
+    "published": "2026-11-22",
+    "uid": "ad2f3284861ab96c4dca51f541a80c30"
+  },
+  {
+    "title": "复制按钮亮了，剪贴板里真有东西吗",
+    "source": "Dev.to",
+    "url": "https://dev.to/ranchjiao0607/the-copy-button-was-clicked-did-anything-reach-the-clipboard-34ef",
+    "content": "复制按钮的正确写法：点击只代表用户「想复制」，navigator.clipboard.writeText() 返回的 Promise 才代表真写进去了。作者把埋点挪到 await 之后，写入失败就弹对话框、把文本预先选中让用户手动复制，而不是假装成功。文中还讨论了权限被拒、非安全上下文、iframe 限制下 writeText 会 reject，以及「点击即上报成功」如何让数据失真。",
+    "quote": "按钮亮一下就算成功，埋点全是幻觉。",
+    "published": "2026-11-22",
+    "uid": "ad14041f5cba986fe97e3d01a8aaa04b"
+  },
+  {
+    "title": "Eval Pyramid 第三篇：从一个失败追到发布闸门",
+    "source": "Dev.to",
+    "url": "https://dev.to/bharadwajpendyala/the-eval-pyramid-part-iii-trace-one-failure-from-fixture-to-release-gate-39fd",
+    "content": "《The Eval Pyramid》第三篇用一个退款 agent 的失败做教学：四次试验三次通过，第四次告诉客户「49 美元退款已处理」，而支付流水是空的——聚合指标说可以上线，关键闸门说不。失败从任务 fixture 追到发布闸门：fixture 只给输入不给答案，harness 通过独立观察者从工具服务读结果，而不是相信 agent 自述。",
+    "quote": "平均分很好看，就是钱没退出去。",
+    "published": "2026-11-22",
+    "uid": "d7597a1026ac9470f7359839632e082e"
+  },
+  {
+    "title": "为什么 PPO 训不出顶级象棋引擎：优化目标和搜索要的不一样",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/strawberryPudding/p/23741963",
+    "content": "一篇中国象棋 AI 的实验复盘：作者先复现腾讯「无搜索象棋 AI」的思路，再把 PPO 模型分别接进 α-β、MCTS、BFMS 三种搜索，结果三种搜索全部失败。文章给出一条主线解释——PPO 优化的是「最优解」，而所有搜索算法需要的是「全宽度排序」，两者目标并不一致。文中数字全部来自等节点对战、同开局、可复现脚本，文献结论均给出出处，属于少见的把负结果写清楚的工程记录。",
+    "quote": "PPO 只认第一名，搜索却要全班排名。",
+    "published": "2026-11-22",
+    "uid": "aab087c6f76b23d3569f81935d3fdb69"
+  },
+  {
+    "title": "源码级拆解：开源 WAF 的 1 秒滑动窗口限流",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/anye1991/p/23735610",
+    "content": "作者拆解开源 WAF「盾甲」的流控源码，重点是 qps.php 里那套 1 秒滑动窗口：固定窗口的致命缺陷是攻击者可以在两个窗口的交界处，用 20 毫秒打出 200 次请求；滑动窗口结合历史时间戳做权重计算，能准确算出「刚刚过去的一秒」里到底进了多少请求。实现上同时限制全局 QPS 防 DDoS 和单 IP QPS 防 CC，保证恶意流量挤不掉正常用户，是后端最基础也最容易忽略的一道防线。",
+    "quote": "固定窗口限流，等于给攻击者留了门。",
+    "published": "2026-11-22",
+    "uid": "8da5ea3b9c3644a5758d3c1a0db56655"
+  },
+  {
+    "title": "不要运行时不要 GC，C# 直接编成 40KB 原生程序",
+    "source": "Show HN",
+    "url": "https://onurgumus.github.io/zero-csharp/index.html",
+    "content": "一个 bflat 分支，把 C# 直接编成原生可执行文件：没有 .NET 运行时、没有 GC、目标机上什么都不用装。语法、真泛型、record 都保留，内存改用 arena 整块释放，异常砍掉，出错靠返回 union。同一份源码可跑 Linux、macOS、Windows、WebAssembly，甚至 386 上的 DOS；hello world 在 Linux 上是 40KB。",
+    "quote": "把 GC 砍了叫轻量，把异常砍了叫自虐。",
+    "published": "2026-11-22",
+    "uid": "32e426144f81b8aeb6c76b5836c1ab44"
+  },
+  {
+    "title": "Boxling，把 AI 编程 agent 关进 macOS 沙箱",
+    "source": "Show HN",
+    "url": "https://boxling.app/",
+    "content": "Boxling 是面向 macOS 26+（Apple 芯片）的沙箱，专门跑不可信的 npm 仓库和 AI 编程 agent。盒子里的应用被切断对本机文件和局域网的访问，拷文件、开 shell 都要 Touch ID 或密码批准；每个盒子的虚拟磁盘由专属 macOS 用户持有，其他应用无法直接读。要访问盒内服务走端口映射，Homebrew 一条命令装。",
+    "quote": "让它随便写代码，但别让它碰到你的家目录。",
+    "published": "2026-11-22",
+    "uid": "e42f11fcb2a63f7e340d3603c4b1d09c"
+  },
+  {
+    "title": "给 Claude Code 套一层蒙特卡洛树搜索，能救回烂答案吗",
+    "source": "Show HN",
+    "url": "https://github.com/natsu0529/agent-mcts",
+    "content": "agent-mcts 是 MIT 协议的搜索外壳，用 MCTS 包住 Claude Code、Codex CLI：不再一条路走到黑，而是展开多个分支、从死路回溯、把预算压在最像样的路径上，目前 v0.3。作者实测挺实在：只靠可见测试的搜索基本等于单次运行（10 次里 9 次首次就过），加 --judge 能救回部分被测试漏掉的答案，但开销约 5 倍，判断器挑好的准确率只有 38/62。",
+    "quote": "树搜索很性感，账单一来就清醒了。",
+    "published": "2026-11-22",
+    "uid": "7f3f73e0bdfbccb0ed4a7e8986a20bb8"
+  },
+  {
+    "title": "记账做成 Git：账本是自己的文件，每笔带哈希链",
+    "source": "Show HN",
+    "url": "https://github.com/spooky6G/bobalice_books",
+    "content": "复式记账工具 bobalice_books 把账本做成一堆文件夹：每笔分录一个文件、每份凭证一个 JSON，永不覆盖；每条分录带上前一条的哈希，改一个字链就断。校验器能离线跑，十秒钟告诉你链是否连续、借贷是否平、凭证是否对得上校验和。再加可选的 Merkle 锚定到公链，能证明某笔账从某个时间起没被动过。作者也老实交代查不出来的两件事。",
+    "quote": "能证明没改过，不能证明没记错，界限划得漂亮。",
+    "published": "2026-11-22",
+    "uid": "7de855fcfd1fc034c9b7f2c35ebf96a0"
+  },
+  {
+    "title": "0.5B 语音模型顺手把词级时间戳也给了",
+    "source": "Show HN",
+    "url": "https://github.com/EdwardGlockner/rumblex",
+    "content": "rumblex 建在 Reson8 的 Rumble-2-Flash（0.5B，从 Qwen3-ASR 微调）之上，做转写、词级时间戳、说话人分离和字幕。关键在于解码器旁边挂了个 CTC 头：解码器出文字，CTC 头把文字强制对齐回音频，复用同一次编码器前向，代价只是一层线性加 Viterbi，无需第二个模型。长音频用 Silero VAD 切块，可输出 SRT、VTT 等字幕。",
+    "quote": "别人上第二个模型对齐，它顺手薅了自己一层。",
+    "published": "2026-11-22",
+    "uid": "e2d04d054f1d69c02fada7eb6107f61b"
+  },
+  {
+    "title": "零服务器，把 14 种 coding agent 塞进微信飞书 Slack",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1258819",
+    "content": "Mingle 是 MIT 开源的本地桌面工具，把本机 Claude Code、Codex、Kimi Code 等 14 种 harness 以机器人身份接进微信、飞书、Slack、Telegram 等聊天软件。作者最在意不要云端中转：没有账号、没有遥测，控制台只监听 127.0.0.1，凭据只存系统钥匙串，角色和记忆就是本机的 ROLE.md 和 MEMORY.md。",
+    "quote": "最贵的不是模型，是你把上下文交给谁的服务器。",
+    "published": "2026-11-22",
+    "uid": "93741f461204efebab19e82f0099bebb"
+  },
+  {
+    "title": "三个 agent 轮流等你点同意，他做了块手表",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1258818",
+    "content": "作者同时跑 Claude Code 重构、Codex 补测试、另一个 agent 查文档，界面一多就不知道谁卡在权限确认上等他点「同意」，常常切回窗口才发现它早停了。于是他做了 xalfred：任何能调 MCP 的 agent 需要人时都推到 iPhone 和 Apple Watch，手表一震看清哪个 agent 要做什么，抬手批准，提问在手机上回，谁跑完谁出错都在同一列表。",
+    "quote": "自动化的尽头，是给人留一个批准按钮。",
+    "published": "2026-11-22",
+    "uid": "2d641cb080bbe9d23b2af0da7bdbee62"
+  },
+  {
+    "title": "TaurusDB 把大模型塞进 SQL，向量列自动生成",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/huaweiyun/p/23733520",
+    "content": "华为云 TaurusDB 接入 MaaS 后，文本推理和向量化成了 SQL 表达式：AI_GENERATE 能在 SELECT 里分类、概括、按资料回答，也能 UPDATE 写回，标签落库后照样聚合。AI_EMBEDDING 可写进 VECTOR(N) 的 STORED 生成列，写入原文自动算向量，省掉外部向量库，再用余弦距离取 Top-K 做 RAG。坑也写明：写入即出域、按行计费，回滚不退钱。",
+    "quote": "把模型调用写进 UPDATE，账单也跟着写进 SQL。",
+    "published": "2026-11-22",
+    "uid": "8b46dc4fcbaa0229c3264a8aa210643f"
+  },
+  {
+    "title": "Debian 13 上给绿联 AX900 编 WiFi 驱动，三处补丁",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/Oliver2001/p/23740058",
+    "content": "绿联 AX900 用 Realtek RTL8851BU，Debian 13 内核只有 PCIe 版 rtw89_8851be，缺 USB 版，只能自己编厂商驱动。源码按 2024 年内核 API 写，make 必挂：6.12 给 set_monitor_channel 加了 netdev 参数等三处不兼容。作者用 LINUX_VERSION_CODE 包住改动，另提醒默认调试日志会冲垮系统日志。",
+    "quote": "Linux 桌面的一年，一半花在让网卡认识内核上。",
+    "published": "2026-11-22",
+    "uid": "3868f2fc65e43a17c47537b645f2c0cb"
+  },
+  {
+    "title": "换掉遗留登录系统，但别把所有人踢下线",
+    "source": "Dev.to",
+    "url": "https://dev.to/muhammadalimughal/replacing-legacy-auth-sessions-without-logging-everyone-out-10p5",
+    "content": "遗留 PHP 应用的认证是最没人敢碰的部分：无盐 MD5/SHA1 密码、单机文件 session、把 user id 直接塞进自制「记住我」cookie。作者在 strangler fig 式改造里让新旧两个应用同时在线，逐步替换认证与会话，而不是一次性重置密码——两边必须先对「谁登录了」达成一致，弄错要么全员被登出，要么更糟：有人登成了别人。",
+    "quote": "迁移最怕的不是代码旧，是用户被登出后骂你。",
+    "published": "2026-11-22",
+    "uid": "43359bf9067b58d6475db4014dce3709"
+  }
+]
