@@ -1,0 +1,227 @@
+[
+  {
+    "title": "mod_wsgi 作者用 AI 写了个 Rust 服务器 Muru，要把 Python 部署重做一遍",
+    "source": "HN Front Page",
+    "url": "https://simonwillison.net/2026/Nov/21/muru/",
+    "content": "Graham Dumpleton 二十年前写了 mod_wsgi，之后一直在琢磨 Python Web 应用该怎么部署。Muru 是他用 AI 辅助写的新 Rust 服务器，目标是让 ASGI/WSGI 应用在开发和生产两头都好用。三周里他发了十几篇笔记：import once fork many、不停机发布、不用 service mesh 的金丝雀，以及在容器和 K8s 里当个好租户。",
+    "quote": "二十年前的坑，换个语言再挖一遍。",
+    "published": "2026-11-23",
+    "uid": "25fe3ffa864cdbfdea42fb6bcbebd762"
+  },
+  {
+    "title": "OpenRouter 下线 3 家推理供应商，125 个端点失去零留存资格",
+    "source": "HN Front Page",
+    "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+    "content": "Dragos 研究者从 7 月到 11 月向多家 AI 服务投喂约 200 万条带追踪标记的提示，发现三家推理供应商存在数据被窃或违反数据政策的迹象。OpenRouter 称自身未被入侵，但已下线三家供应商、把 125 个端点移出零数据留存名单，并通知可能受影响的客户；后续会常态化跑同类检测，核查网络路径是否转发给第三方。",
+    "quote": "便宜的路由，可能顺手把你的 prompt 也路由了。",
+    "published": "2026-11-23",
+    "uid": "f5bc923b70161b3a0efdf744f37ee955"
+  },
+  {
+    "title": "Raph Levien：给下一个 100 个 Rust GUI 的建议",
+    "source": "HN Front Page",
+    "url": "https://linebender.org/blog/next-100-guis/",
+    "content": "距《给下十几个 Rust GUI 的建议》已过四年半，Raph Levien 又写了续篇。他观察到这期间冒出约 20 个 Rust GUI 工具包，AI 又把热度推了一把；Zed 的 GPUI 证明了 Rust UI 能上生产，甚至成了 AI 改写桌面应用的热门选择。但他也提醒，GPUI 的 2D 引擎是为文本编辑器长的，渐变、混合、滤镜这些通用能力还欠着。",
+    "quote": "工具包越造越多，能用的还是那几个。",
+    "published": "2026-11-23",
+    "uid": "4f37a0a2fb58333effac06468d01123a"
+  },
+  {
+    "title": "算一笔电账：2028 年 Anthropic 87% 的电力来自天然气",
+    "source": "HN Front Page",
+    "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+    "content": "Better Data Center Project 盘点了 AI 数据中心的供电结构：规划中的「自带电源」燃气装机达 177 GW，足够供全美 65% 的家庭用电，而可再生能源在 2032 年前预计不到两成。以 Anthropic 为样本，他们逐站点核对后发现，其在美国没有直接的可再生能源承诺，2028 年 87% 的电力来自天然气、11% 来自煤。",
+    "quote": "嘴上谈碳中和，插座上插着天然气。",
+    "published": "2026-11-23",
+    "uid": "86d5f034b271629922f55d88ccd46ee6"
+  },
+  {
+    "title": "单元、集成、E2E：测试词汇该换一套了",
+    "source": "HN Front Page",
+    "url": "https://alperenkeles.com/posts/vocab-for-testing/",
+    "content": "作者受够了现在这套测试黑话：unit 里的「单元」没定义，integration 集成的是任意范围的模块，E2E 只说了端到端，却没说用什么手段测——自动 agent、人工监督、预设动作还是随机探索，全被一句 E2E 盖住。他主张建立一套可操作的词汇：能按资源多少升降级测试，能针对当前处境给出配方，而不是靠「感觉」分类。",
+    "quote": "测了半天，连自己在测什么都没说清。",
+    "published": "2026-11-23",
+    "uid": "1feb703e7d2fb009cc49bbf1800d4a44"
+  },
+  {
+    "title": "挂了一整晚的 agent 任务，被 Windows 自动更新重启杀了",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1257008",
+    "content": "楼主睡前给 agent 排了一整晚的全自动任务，满心期待醒来看到项目上线页面，结果迎来的却是 Windows 登录界面。帖子底下清一色吐槽：有人建议用组策略直接禁用自动更新，有人让 AI 写自启动脚本续跑未完成任务，也有人干脆把开发机换成 Linux——「自从装了 Linux，风扇不飞了，更新和重启也没了」。",
+    "quote": "AI 能通宵干活，Windows 不同意。",
+    "published": "2026-11-23",
+    "uid": "7d5ec4245dfbdaf1b6d7635b1b78c535"
+  },
+  {
+    "title": "把 VS Code 搬进终端：10 MB 的 VL，三种模式",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1258968",
+    "content": "有人做了个叫 VL 的终端工具，把 VS Code 的 Code Review 体验搬进命令行，编辑用 Vim 键位。它分三种模式：Workbench 像 VS Code，打开文件夹、改代码、看 PR；Editor 类似 Vim，单文件快速查看编辑；Preview 做代码高亮预览，类似 bat。整个工具体积约 10 MB，主打 review 和临时改两行这种高频小动作。",
+    "quote": "图形界面嫌重，终端里又想要 IDE。",
+    "published": "2026-11-23",
+    "uid": "8d34c0f87eb7da2b05a36c76109ae5ab"
+  },
+  {
+    "title": "用 DeepSeek 三小时搓了个 iOS 代理客户端，还上架了",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1258970",
+    "content": "楼主从零开始、花了三小时用 DeepSeek 写出一个 iOS 代理客户端，类似 V2Ray/Clash，并且已经通过 App Store 审核上架。支持 VMess、VLESS、Trojan、Shadowsocks、SOCKS5，可粘贴分享链接、扫码或订阅导入；路由支持全局与规则分流，含绕过局域网和地区；无账号、无统计、无广告，节点和设置都留在本地。",
+    "quote": "三小时上架，审核员大概也没细看。",
+    "published": "2026-11-23",
+    "uid": "645fda8e15e5739ec2cd115fd8965716"
+  },
+  {
+    "title": "limo：在终端里跑 Web API 的无头浏览器",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1258788",
+    "content": "limo 基于 moli 开发，后者是用 V8 引擎实现 Web APIs 的无头浏览器，内存占用低、启动快。作者平时维护跑在浏览器里的 WebAssembly 项目，需要反复和 JavaScript 环境打交道，于是把常用 Web API 搬进终端：命令行里直接调接口，不启浏览器也能验证逻辑。项目已开源，文档里附了多个可运行示例。",
+    "quote": "为了不打开浏览器，先造个浏览器。",
+    "published": "2026-11-23",
+    "uid": "8abfae1a4ba1861297f393697b72443e"
+  },
+  {
+    "title": "HKUDS/CLI-Anything：让所有软件都能被 agent 调用",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/HKUDS/CLI-Anything",
+    "content": "港大数据智能实验室的项目，口号是「今天的软件服务人类，明天的用户是 agent」。思路是给没有 API 的软件补一层 CLI，让 agent 能安装、调用并拿到结构化输出；仓库附带 CLI-Hub，可用 pip 安装后按名字装社区贡献的 CLI，也接受 PR 和需求清单。演示里 agent 借这套 CLI 产出了 CAD 模型、3D 场景、图表和字幕。",
+    "quote": "给每个软件配个命令行翻译，agent 才使得动。",
+    "published": "2026-11-23",
+    "uid": "12e9527951797ad091ed4942877b8b76"
+  },
+  {
+    "title": "cursor/plugins：Cursor 把官方插件规范开源了",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/cursor/plugins",
+    "content": "Cursor 放出了插件规范和一批官方插件，等于把「agent 工作流该怎么打包」摆到台面上。现有插件覆盖持续学习（把高信号要点增量写进 AGENTS.md）、团队工作流（CI、code review、发布、验证）、热核级分支审查（安全与正确性审计、并行子 agent），以及插件脚手架。对想统一团队 agent 配置的人来说，是份现成的目录结构参考。",
+    "quote": "插件市场还没火，Cursor 先把规范占坑。",
+    "published": "2026-11-23",
+    "uid": "21302fb12d0b2e2d2272094172c8849c"
+  },
+  {
+    "title": "企业流程为什么跑在无状态 agent 上就崩",
+    "source": "Dev.to",
+    "url": "https://dev.to/derek_f66a6ae2c4ca30bf7db/why-enterprise-workflows-break-on-stateless-agents-engineering-persistent-rule-memory-and-1d7b",
+    "content": "原型 demo 在单轮、隔离的 prompt 里往往很亮眼，但真实的企业审批、经销商价格例外、工厂交接班要跨数周，牵涉财务、运营和 IT 审计。没有显式的记忆底座，无状态会话要么忘掉历史例外，要么把几十页 SOP 塞进每次系统提示，策略一改就悄悄漂移。文章主张把规则来源与执行状态解耦，用长期记忆存结构化规则，先原型验证再冻结 schema。",
+    "quote": "demo 一时爽，上线全靠人肉记。",
+    "published": "2026-11-23",
+    "uid": "fea020a54e5f4d2a56c74c54e68c9d70"
+  },
+  {
+    "title": "Supabase 自托管接 Keycloak：两条路线，六个静默失败",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23745802",
+    "content": "自托管 Supabase 的 OAuth 面板在 Studio 里是禁用的，只能改 docker-compose.yml。梳理一下 Keycloak 与 Supabase 两种信任关系：A 由 GoTrue 换发 Supabase JWT，Keycloak 只当身份源；B 由 Keycloak 签发，Supabase 只验不签。选错不是改配置，是架构返工。还列了六个「登录成功但查不到数据」的坑。",
+    "quote": "登录成功了，数据没权限，等于没登。",
+    "published": "2026-11-23",
+    "uid": "50c2e80ba92d768d2b43b9b9c97afc43"
+  },
+  {
+    "title": "CurlGo：5 MB 的原生 API 客户端，Postman 的轻量替代",
+    "source": "HN Show HN",
+    "url": "https://curlgo.echovic.com/en/",
+    "content": "给 macOS 和 Windows 做的原生 API 客户端，安装包 5 到 8 MB：HTTP、SSE、WebSocket 三种连接在同一个工作区里，请求、集合、历史都存在本地。能粘贴 curl 或导入 Postman、Bruno 集合，用声明式断言校验状态码、响应头和 JSON 字段，提取的变量只在 2xx 且断言全过之后才写入环境。",
+    "quote": "Postman 装个客户端两百兆，这个五兆还不要账号。",
+    "published": "2026-11-23",
+    "uid": "2eb989f9a8af90473f8f7d32ad11c13d"
+  },
+  {
+    "title": "rmux：Rust 加 GPU 渲染的终端工作区",
+    "source": "HN Show HN",
+    "url": "https://rmux.app",
+    "content": "Rust 写的终端工作区，GPU 渲染，终端内核用 Ghostty。标签页加分屏，把 shell、dev server、coding agent 收进同一个项目视图，键盘操作、命令面板、布局可保存，还能用 VS Code 的外部终端快捷键直接打开当前项目。官网有跑在浏览器里的 WASM 演示，桌面版 v0.1.13 仍是预览。",
+    "quote": "终端卷到 GPU 了，可我还是会开二十个标签找不着北。",
+    "published": "2026-11-23",
+    "uid": "f9938e0648e574da2739b98014731dd4"
+  },
+  {
+    "title": "Relaticle：agent 能直接读写的开源 CRM",
+    "source": "HN Show HN",
+    "url": "https://github.com/relaticle/relaticle",
+    "content": "开源 CRM，卖点是 AI agent 能直接读写：公司、联系人、商机、任务、备注都有 REST API 和 MCP server，Claude、ChatGPT 这类客户端可以自己查客户、改商机阶段。Laravel 13 加 PHP 8.5，AGPL-3.0，可自托管也可用云版，定位是「没有销售团队也能卖东西」。",
+    "quote": "CRM 终于不用人填了，改成 agent 填错、人再改回来。",
+    "published": "2026-11-23",
+    "uid": "f1ee98a9e52bbcf4a477a17774ca07b1"
+  },
+  {
+    "title": "Umbera 开源密码学内核：后量子 + sealed sender",
+    "source": "HN Show HN",
+    "url": "https://github.com/UmberaAPP/UMBERA",
+    "content": "一个隐私通信 App 把密码学内核开源：X25519 与 ML-KEM-1024 混合握手，签名用 ML-DSA-65，1:1 会话是带后量子步骤的 Double Ratchet，群聊走 MLS 加 X-Wing。发件人身份封在密文里，中继只看到每周轮换的邮箱地址和填充过的密文。Apache-2.0，附可复跑的证明测试。",
+    "quote": "服务器不知道谁跟谁说话——先把这句证明给我看。",
+    "published": "2026-11-23",
+    "uid": "c5e1ce21923a780b5a0c8754590a28e5"
+  },
+  {
+    "title": "A2A 实战：名片、信封、工单，和没处安放的身份",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/haoxiaozhang/p/23746624",
+    "content": "把 A2A 拆成名片、信封、工单三件套：名片负责发现能力，消息负责委托，任务负责长活进度。作者指出 SDK 没有身份抽象、卡片里的安全声明不会被执行、metadata 到不了工具层，所以身份只能落在 HTTP 请求级。还强调超时不是失败而是结果未知，写操作要先查后重试，幂等键必须服务端定。",
+    "quote": "协议写得再漂亮，身份还得自己塞进 header。",
+    "published": "2026-11-23",
+    "uid": "f443431cb487fa6c0c072dce82eafb9a"
+  },
+  {
+    "title": "AI 扫漏洞全是误报？这个平台要求每条都能复现",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/chingho/p/23745237",
+    "content": "自托管的 LLM 渗透测试平台，冲着「误报」来：planner 把目标拆成意图，worker 用真实工具跑，结果写进目标清单和测试记录两张能互相对上的图。每条发现都绑着具体请求和响应，照着重放就能自证真假；报告里查得到某一项被谁测过、测出什么、为什么这么判。",
+    "quote": "没有请求和响应的漏洞报告，只是 AI 的读后感。",
+    "published": "2026-11-23",
+    "uid": "9a990fa729ffe56bb1723cc07edf420b"
+  },
+  {
+    "title": "178 行的 Windows 进程守护：不改别人的 exe",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/fxwap/p/23745214",
+    "content": "工控机上的控制台程序重启就没了，不能改源码、不想装 IIS、也不靠人。作者用 .NET Worker Service 写了 178 行看门狗：同一个 exe 双击是控制台、注册成服务就常驻，每 5 秒轮询进程表，按完整路径判活，进程不在就拉回来。文里附配置、注册脚本、真实日志，也写清 Session 0 下做不到的事。",
+    "quote": "为了不装 IIS，人类能写出任何形状的守护进程。",
+    "published": "2026-11-23",
+    "uid": "1931ab9aa13205e78a844a6ef9c00d19"
+  },
+  {
+    "title": "KIMI K3 训练拆解：P2P Muon 把正交化做成接力赛",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/rossiXYZ/p/23672095",
+    "content": "Kimi K3 训练配方里几个硬点：Per-Head Muon 逐头正交化、Quantile Balancing 一步均衡、1% warmup 的 cosine、四阶段上下文课程从 8K 到 1M。文章重点拆 P2P Muon：Newton-Schulz 正交化需要完整矩阵，但每张卡只有参数分片，朴素 all-gather 内存就爆；改成轮询所有权加点对点收发，每卡只需 O(N/world)。",
+    "quote": "为了省显存，把优化器做成了接力赛。",
+    "published": "2026-11-23",
+    "uid": "39fa029346737543c4c09abbb5990158"
+  },
+  {
+    "title": "Kooyu：本地优先，给十几个编程 CLI 配个主管",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1258880",
+    "content": "本地优先的 AI 助手，把 Claude Code、Codex、Gemini CLI、OpenCode 等十多个编程引擎收在一个主管下：按任务派活，撞 429 就打包上下文转交。Arena 模式让两三个引擎在隔离的 git worktree 里同题竞速，按 diff 和测试结果打分，赢的一键合并。代码、记忆、密钥都留在本机，MIT 开源。",
+    "quote": "管十个 AI 写代码，最后你成了它们的项目经理。",
+    "published": "2026-11-23",
+    "uid": "4d4dac8b6faadb11549d4127909ec9d0"
+  },
+  {
+    "title": "MD Publisher：一份 Markdown，排好微信、知乎、掘金",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1258941",
+    "content": "写技术文章最后一步最烦：Markdown 粘进公众号，代码块掉背景色、表格塌成纯文本、图片还要重传。这个浏览器插件只留一个源文件，按三家各自的粘贴格式分别渲染：微信给带样式 HTML，知乎清换行和行尾空格，掘金还会把 js、py、sh 这类语言别名规范化。基于 doocs/md，纯前端。",
+    "quote": "排版三小时，写作半小时，这才是技术号的真实现状。",
+    "published": "2026-11-23",
+    "uid": "ea398e6c90f5ee9dbcc67b7e33cc848d"
+  },
+  {
+    "title": "aist：10 MB 的终端排障工具，敢让模型碰生产机",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1258874",
+    "content": "10 MB 的 Go 单文件终端排障工具，装完登录一次就能像系统命令一样用，支持管道只读模式。直接复用本机 ssh 和 ~/.ssh/config 连多台机器，远端不用装 agent；会把机器结构、非标路径记进本地 ~/.aist/memory。执行前过一遍 shell 语法树，拦住全屏命令和子命令绕过，改文件先给 diff、先备份。",
+    "quote": "让 AI 在生产机上敲命令，先给它戴上语法树牙套。",
+    "published": "2026-11-23",
+    "uid": "8c59cf3abb71383fbe98652a6c173913"
+  },
+  {
+    "title": "用 Python 扒 SEC Form D，找刚拿到钱的公司",
+    "source": "Dev.to",
+    "url": "https://dev.to/mustapha11/how-to-find-recently-funded-startups-with-python-sec-form-d-filings-3c8o",
+    "content": "美国公司私募融资后 15 天内要向 SEC 交 Form D，公开、结构化、免费：募资额、已售额、投资人数量、行业、地址、高管名单都在里面，是「刚拿到钱」最早的公开信号。文章用 Python 直接读 EDGAR，再演示用托管 feed 做筛选。作者声明后半段用的是自己做的付费 Apify actor。",
+    "quote": "找刚融资的客户，比等他们上新闻早一个月。",
+    "published": "2026-11-23",
+    "uid": "bfd30ea389e8f3a484aba6170f99b4cf"
+  }
+]
