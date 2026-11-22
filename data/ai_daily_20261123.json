@@ -1,0 +1,175 @@
+[
+  {
+    "title": "6.2 版本集体滑铁卢：Astra 掉到 16 名，Sol 掉到 30 名",
+    "content": "SimpleBench 榜单更新后，GPT-6.2 Astra 只拿 77.3%（第 16）、Astra Pro 79.2%，GPT-6.2 Sol 更是 69.9% 滑到第 30，三个都没摸到 83.7% 的人类基线——自家上一代 GPT-6 Astra 还有 83.6%。榜首是 Claude Fable 5.2 的 94.9%，Gemini 4 Neon 94.4%。这榜专测时空推理与急转弯。",
+    "quote": "参数涨了一圈，急转弯还是转不过来",
+    "source": "SimpleBench / HN Front",
+    "url": "https://simple-bench.com/",
+    "published": "2026-11-23",
+    "uid": "860e066a30c070cbbfc8b4810b2a1846"
+  },
+  {
+    "title": "量化编译器把 Qwen3.8-27B 压到 7.2GB，分数不掉",
+    "content": "LookAtMyQuant 是量化编译器：先测每块权重被压缩后对输出伤害多大，再按体积预算逐块分配编码。Qwen3.8-27B 从 53.7GB 压到 7.2GB（2.1 bit/权重），540 道数学题做出 401 道，与原模型持平；Qwen3.5-4B 压到 1.23GB 仍能解 330 道。配方是 trellis 码加 Fisher 分位，再补 4000 步蒸馏，显卡成本约 34 美元。",
+    "quote": "34 美元瘦七倍，减肥界该来抄配方",
+    "source": "GitHub / HN Front",
+    "url": "https://github.com/ShinMegamiBoson/lookatmyquant",
+    "published": "2026-11-23",
+    "uid": "f61eb5b6d2ab2ef5b603c81f2d4acf09"
+  },
+  {
+    "title": "Pandex：把欧洲法律塞进一个 MCP",
+    "content": "Pandex 上线：280 万份官方法律文件、33 家机构全文、3700 万条引文挂回原文，覆盖欧盟与七个欧洲国家，提供 REST API 和 MCP server，可直接接 Claude、Cursor、Copilot、Windsurf、Zed。支持跨语言检索，用英文提问能定位到法语判决里那一段；法条还有时间点版本与引文图谱，主打「只认官方来源」。",
+    "quote": "AI 编法条编太久，终于配了本真法典",
+    "source": "Pandex / HN Front",
+    "url": "https://www.pandex.io",
+    "published": "2026-11-23",
+    "uid": "c83bdff6e706f5a4ba8edebbbc7be6dd"
+  },
+  {
+    "title": "Anil Seth：有意识的 AI 是个神话",
+    "content": "神经科学教授 Anil Seth 在 Noema 长文里主张：意识更可能是生命的属性，而不是计算的属性；造出有意识、甚至只是「看起来有意识」的 AI，都是坏主意。他从魔像、弗兰肯斯坦一路数到 HAL 9000 和《机械姬》，指出每轮技术浪潮都要重做一遍造人的梦，而模拟出来的「像」会持续诱使我们误判成「是」。",
+    "quote": "会聊天不等于会疼，别把接口当灵魂",
+    "source": "Noema Magazine / HN Front",
+    "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
+    "published": "2026-11-23",
+    "uid": "cfd8803e2db964bc509b5eb87848570c"
+  },
+  {
+    "title": "OpenComputer：开源自托管版 Devin，开 PR 快 3.3 倍",
+    "content": "Digger 团队开源 OpenComputer：在 Slack 线程 @Computer 派活，agent 在自己那台机器上干活，团队可围观、随时插手，结果以 PR 交付。整套栈跑在一台 VM，每个会话用无根 Podman 隔离，状态先落本地盘再进 git，底层可接 Claude Code、Codex 或 OpenCode。官方基准称开 PR 比 Devin 快 3.3 倍，自建托管都支持。",
+    "quote": "Devin 的订阅费，终于有人来砍了",
+    "source": "GitHub / HN Front",
+    "url": "https://github.com/diggerhq/opencomputer",
+    "published": "2026-11-23",
+    "uid": "21b9a982fde0cdab53d1611e29a36a63"
+  },
+  {
+    "title": "ClawDOS：在 4.77MHz 的 8088 上跑 AI 编程 agent",
+    "content": "有人真在 IBM PC XT 上跑起了 AI 编程 agent：8088 主频 4.77MHz、640K 内存、CGA 显卡，20MB 硬盘换成 PicoMEM 接 SD 卡。作者说这台 5160 是他五岁时碰到的第一台电脑，如今把最新的 agent 塞回最老的机器，是「老技术见新技术」的私心。至于 4.77MHz 里跑一次推理要等多久，他全文都没敢写。",
+    "quote": "算力退回 1983，token 一个一个字往外挤",
+    "source": "ricapar.net / HN Front",
+    "url": "http://ricapar.net/ClawDOS/",
+    "published": "2026-11-23",
+    "uid": "bd95f3c418152775fa0c7d03bdd1009a"
+  },
+  {
+    "title": "V2EX：重度用完 neon，Claude 订阅可以不续了",
+    "content": "V2EX 有人拿几十万行的「AI 大乱斗屎山」实测各家订阅：astra medium 最快，线上救急首选；astra xhigh 只适合死磕疑难和审核高严谨重构；sol xhigh 当主力后端，但必须有调度角色盯着防偷懒；opus xhigh 适合派活和写前端。他的结论是只留 astra 与 neon 两家——neon 量大管饱，体感已平替 opus，还不用抢订阅。",
+    "quote": "不是 Claude 不行了，是订阅抢不到了",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1258877",
+    "published": "2026-11-23",
+    "uid": "e3162399360b79dc5dbdde89dca0ca75"
+  },
+  {
+    "title": "V2EX 追问：为什么没有 AI 攻克医学难题的消息",
+    "content": "V2EX 一条讨论问得很直接：数学难题 AI 一个接一个地攻，癌症和慢病怎么没动静，是跨学科卡住了吗？高赞回答把话说清楚：AI 目前擅长纯电脑里能干的活，医学卡在临床验证——设计从来不是最贵的一环，等副作用和长期疗效才是。有人举乙肝新药数据反驳「AI 无用」，也有人泼冷水：机器人出来之前，那些医学突破新闻当放屁就行。",
+    "quote": "代码能按秒迭代，临床只能按年等",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1258845",
+    "published": "2026-11-23",
+    "uid": "793e4de0f54bb0c27d37818825894698"
+  },
+  {
+    "title": "可灵 Coda-DaVinci：先搭 3D 假场景，再生成视频",
+    "content": "可灵团队提出 Coda-DaVinci：让 agent 先搭出 3D 代理场景，再用它指导视频生成，从而对结构和运动做显式控制。论文系统测了代理粒度、物理仿真和提示词三类变量——粗粒度代理运动更自然，中粒度更保一致性，加上物理仿真和代理对齐提示还能再涨质量。最终做成按任务自适应选粒度的框架，并配了盲测人评来兜住主观分。",
+    "quote": "先搭个假场景，再把视频「拍」出来",
+    "source": "Hugging Face Papers · KlingAI",
+    "url": "https://huggingface.co/papers/2611.26595",
+    "published": "2026-11-23",
+    "uid": "2ccc1fd6e1e2c41f99e05a2342600128",
+    "sub": "前沿论文"
+  },
+  {
+    "title": "Meta TuringSpace：把空间智能考成验证码",
+    "content": "Meta 提出 TuringSpace：125 个交互式验证码组成的合成网页环境，覆盖五项空间能力，必须靠鼠标点击和拖拽完成，答错还能看着结果改。每个任务本身就是一段程序，可以精确判分。它正好补上两个空档——现有验证码基准基本被刷满、而空间基准又不用动手，用来检验多模态大模型能否像人一样边试边纠。",
+    "quote": "人类验证码老题，成了模型的新坎",
+    "source": "Hugging Face Papers · Meta",
+    "url": "https://huggingface.co/papers/2611.25387",
+    "published": "2026-11-23",
+    "uid": "26896ca1617e171628ba083e1927f888",
+    "sub": "前沿论文"
+  },
+  {
+    "title": "Superpowers 火了：给编码 agent 装一套开发方法论",
+    "content": "32 万 star 的 Shell 项目，把技能包做成编码 agent 的完整开发流程：先逼你说清到底要做什么、拆出规格，再出实施计划，然后走 subagent 驱动开发，逐任务审查。支持 Claude Code、Codex CLI、Cursor、Gemini CLI、Kimi Code 等十余种 harness 分别安装。核心理念是让 agent 别一上来就写代码。",
+    "quote": "十几家 CLI 抢着装，说明大家都不想让 agent 瞎写",
+    "source": "GitHub Trending",
+    "url": "https://github.com/obra/superpowers",
+    "published": "2026-11-23",
+    "uid": "488f49ac330a72e50c764c6e9ad7071b"
+  },
+  {
+    "title": "Firecrawl 把 300 万篇 arXiv 做成 agent 检索索引",
+    "content": "Firecrawl 的 Research Index 专给 agent 团队用：一个索引里同时搜 300 万篇 arXiv 论文和背后的 GitHub 代码，issue、PR、README 每日刷新；支持查论文详情、相关工作，并拿全文核对结论。官方称 arXivQA 召回率比第二名高 18%。scrape、search、interact、parse 四个核心端点已免密钥，还支持 PII 自动脱敏。",
+    "quote": "论文和代码一起搜，省得 agent 自己编参考文献",
+    "source": "GitHub Trending",
+    "url": "https://github.com/firecrawl/firecrawl",
+    "published": "2026-11-23",
+    "uid": "618adbf882055e51c7071ad1b5e5ff86"
+  },
+  {
+    "title": "OpenVINO 2026.4.1：给量化模型补上 bf16 和大模型注意力",
+    "content": "Intel 推理工具包更新：ONNX 前端的 GroupQueryAttention 加上因果注意力与部分旋转位置编码，覆盖更多现代大模型；MatMulNBits 支持 bfloat16，重排权重、缩放、零点布局，修正量化模型解码。还修了滑动窗口 KV cache 一处越界 ScatterUpdate 索引，该问题可能导致内存损坏与结果错误。",
+    "quote": "推理框架的 bug，比模型幻觉更难发现",
+    "source": "GitHub Trending",
+    "url": "https://github.com/openvinotoolkit/openvino",
+    "published": "2026-11-23",
+    "uid": "7de17251af01d67a9eb183067692a05d"
+  },
+  {
+    "title": "多 Agent 缺的不是能力，是调度协议",
+    "content": "作者认为多智能体真正卡住的是事与事之间：上下文必须隔离，只准传结论和请求、不准传思考过程；角色要有明确职责边界；沟通权限写死、流程放开；每张工单给发起对话的份额，用完就挂起叫人；交互留痕要细到上下文压缩的决策元数据。结论是协议层不管记忆，最终把人放回判断性决策的位置。",
+    "quote": "让 agent 接管协调，人才有空想对的事",
+    "source": "博客园",
+    "url": "https://www.cnblogs.com/learnhow/p/23745932",
+    "published": "2026-11-23",
+    "uid": "997a124a999c045cba935621e71a68e4"
+  },
+  {
+    "title": "有人把 KIMI K3 的训练模块做成了可交互演示",
+    "content": "作者照 KIMI K3 训练代码复刻了一套浏览器里的交互式演示：学习率调度、KDA 的 alpha 有界性、MoE 专家均衡、无模型回退都能调参看曲线。文中解释了为什么 alpha 必须落在 0 到 1 之间：大于 1 状态矩阵指数爆炸，等于 0 状态直接归零，用 sigmoid 加 exp 天然约束比外挂 clip 更干净。",
+    "quote": "论文看不懂？把曲线画出来就老实了",
+    "source": "博客园",
+    "url": "https://www.cnblogs.com/rossiXYZ/p/23672118",
+    "published": "2026-11-23",
+    "uid": "f9f4a4d7039ae8e926f1099f7dbccd0d"
+  },
+  {
+    "title": "两个 Claude Pro 账号双开，只靠一个环境变量",
+    "content": "Claude Code CLI 支持用 CLAUDE_CONFIG_DIR 指定配置目录，默认走 ~/.claude，登录态、配置、历史、插件、会话都存在里面。想让第二个 Pro 账号同时在线，只要给它指一个独立目录，两套凭据互不干扰。作者顺带给了个状态栏脚本，把上下文占用、5 小时与 7 天额度剩余、重置时间画成彩色进度条。",
+    "quote": "官方不做多账号，用户自己拆配置目录",
+    "source": "博客园",
+    "url": "https://www.cnblogs.com/leikooo/p/23739331",
+    "published": "2026-11-23",
+    "uid": "a286d9ac5336b7768235f1d4ce316eca"
+  },
+  {
+    "title": "为什么 PPO 做不出顶级象棋引擎：一次失败复盘",
+    "content": "作者复现腾讯的无搜索象棋 AI，再把 PPO 模型分别接进 αβ、MCTS、BFMS 三种搜索，结果搜索全部退化。他的结论是目标错配：PPO 优化的是最优解，而搜索算法需要的是全宽度排序，一个只盯最好那步的策略给不出可靠候选排序。文中数字都来自等节点预算下的实测。",
+    "quote": "训练目标不对，接什么搜索都是白搭",
+    "source": "博客园",
+    "url": "https://www.cnblogs.com/strawberryPudding/p/23741963",
+    "published": "2026-11-23",
+    "uid": "285998e6f39347e1af2b836048e2e1a9"
+  },
+  {
+    "title": "挑便宜 AI 路由之前，先看谁能读你的 prompt",
+    "content": "文章提醒：模型路由的价格好比较，但谁能看到提示词不好查。要确认上游有哪些 provider 会收到请求、fallback 会不会把请求转到另一个司法辖区、日志与留存策略是否随 provider 变化。作者建议把敏感 prompt 单独划一条不走 fallback 的路由，别让省钱顺手把数据也送出去。",
+    "quote": "省下的那点 token 钱，可能用数据结账",
+    "source": "Dev.to",
+    "url": "https://dev.to/deanlee/before-choosing-a-cheap-ai-router-check-who-can-read-your-prompts-25g1",
+    "published": "2026-11-23",
+    "uid": "418db7bd5cdd5c846ee9f714b57bc988"
+  },
+  {
+    "title": "把 Laravel 商城塞进 AI 助手：一个免费包的踩坑记录",
+    "content": "作者发现顾客开始直接问 AI 助手「我要四个室外摄像头，预算 1500 拉里」，于是做了个免费 Laravel 包，把商品目录、库存与价格通过结构化接口暴露给助手，而不是让模型自己猜。文章讲了商品数据怎么建模、助手报错价格时怎么兜底，以及为什么库存必须实时查询而不是缓存快照。",
+    "quote": "顾客不问搜索引擎了，先问那个会瞎编的助手",
+    "source": "Dev.to",
+    "url": "https://dev.to/trongio/i-put-my-laravel-store-inside-ai-assistants-heres-what-i-learned-and-the-free-package-n0d",
+    "published": "2026-11-23",
+    "uid": "112d26f23f18d35fe69c117b5a78ccdb"
+  }
+]
