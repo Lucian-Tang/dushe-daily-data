@@ -1,0 +1,137 @@
+[
+  {
+    "title": "mod_wsgi 作者用 AI 写了个 Rust 服务器 Muru，要把 Python 部署重做一遍",
+    "source": "HN Front Page",
+    "url": "https://simonwillison.net/2026/Nov/21/muru/",
+    "content": "Graham Dumpleton 二十年前写了 mod_wsgi，之后一直在琢磨 Python Web 应用该怎么部署。Muru 是他用 AI 辅助写的新 Rust 服务器，目标是让 ASGI/WSGI 应用在开发和生产两头都好用。三周里他发了十几篇笔记：import once fork many、不停机发布、不用 service mesh 的金丝雀，以及在容器和 K8s 里当个好租户。",
+    "quote": "二十年前的坑，换个语言再挖一遍。",
+    "uid": "dev_97c40e48",
+    "published": "2026-11-23"
+  },
+  {
+    "title": "别急着用 Rust 重写：先找出最慢的那 5%",
+    "source": "HN Front Page",
+    "url": "https://github.com/EL4CTEO/fast-anything",
+    "content": "fast-anything 的口号很直接：不要整站重写，只把最慢的 5% 搬走。流程是先 profile Python、Node 或 Ruby 应用，定位热点函数，再让编码 agent 把这几段移植成 Rust，最后用测试证明行为一致。仓库同时提供 npm 包、crate 和 Claude Code 插件与 MCP server，把「测量—移植—验证」串成可复用的流水线。",
+    "quote": "整站重写是情怀，只改 5% 才是 KPI。",
+    "uid": "dev_01597a34",
+    "published": "2026-11-23"
+  },
+  {
+    "title": "OpenRouter 下线 3 家推理供应商，125 个端点失去零留存资格",
+    "source": "HN Front Page",
+    "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+    "content": "Dragos 研究者从 7 月到 11 月向多家 AI 服务投喂约 200 万条带追踪标记的提示，发现三家推理供应商存在数据被窃或违反数据政策的迹象。OpenRouter 称自身未被入侵，但已下线三家供应商、把 125 个端点移出零数据留存名单，并通知可能受影响的客户；后续会常态化跑同类检测，核查网络路径是否转发给第三方。",
+    "quote": "便宜的路由，可能顺手把你的 prompt 也路由了。",
+    "uid": "dev_7b0ec8b1",
+    "published": "2026-11-23"
+  },
+  {
+    "title": "Raph Levien：给下一个 100 个 Rust GUI 的建议",
+    "source": "HN Front Page",
+    "url": "https://linebender.org/blog/next-100-guis/",
+    "content": "距《给下十几个 Rust GUI 的建议》已过四年半，Raph Levien 又写了续篇。他观察到这期间冒出约 20 个 Rust GUI 工具包，AI 又把热度推了一把；Zed 的 GPUI 证明了 Rust UI 能上生产，甚至成了 AI 改写桌面应用的热门选择。但他也提醒，GPUI 的 2D 引擎是为文本编辑器长的，渐变、混合、滤镜这些通用能力还欠着。",
+    "quote": "工具包越造越多，能用的还是那几个。",
+    "uid": "dev_ea0e1e85",
+    "published": "2026-11-23"
+  },
+  {
+    "title": "算一笔电账：2028 年 Anthropic 87% 的电力来自天然气",
+    "source": "HN Front Page",
+    "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+    "content": "Better Data Center Project 盘点了 AI 数据中心的供电结构：规划中的「自带电源」燃气装机达 177 GW，足够供全美 65% 的家庭用电，而可再生能源在 2032 年前预计不到两成。以 Anthropic 为样本，他们逐站点核对后发现，其在美国没有直接的可再生能源承诺，2028 年 87% 的电力来自天然气、11% 来自煤。",
+    "quote": "嘴上谈碳中和，插座上插着天然气。",
+    "uid": "dev_44885062",
+    "published": "2026-11-23"
+  },
+  {
+    "title": "单元、集成、E2E：测试词汇该换一套了",
+    "source": "HN Front Page",
+    "url": "https://alperenkeles.com/posts/vocab-for-testing/",
+    "content": "作者受够了现在这套测试黑话：unit 里的「单元」没定义，integration 集成的是任意范围的模块，E2E 只说了端到端，却没说用什么手段测——自动 agent、人工监督、预设动作还是随机探索，全被一句 E2E 盖住。他主张建立一套可操作的词汇：能按资源多少升降级测试，能针对当前处境给出配方，而不是靠「感觉」分类。",
+    "quote": "测了半天，连自己在测什么都没说清。",
+    "uid": "dev_fe4e837e",
+    "published": "2026-11-23"
+  },
+  {
+    "title": "挂了一整晚的 agent 任务，被 Windows 自动更新重启杀了",
+    "source": "V2EX Tech",
+    "url": "https://www.v2ex.com/t/1257008",
+    "content": "楼主睡前给 agent 排了一整晚的全自动任务，满心期待醒来看到项目上线页面，结果迎来的却是 Windows 登录界面。帖子底下清一色吐槽：有人建议用组策略直接禁用自动更新，有人让 AI 写自启动脚本续跑未完成任务，也有人干脆把开发机换成 Linux——「自从装了 Linux，风扇不飞了，更新和重启也没了」。",
+    "quote": "AI 能通宵干活，Windows 不同意。",
+    "uid": "dev_caa732f5",
+    "published": "2026-11-23"
+  },
+  {
+    "title": "把 VS Code 搬进终端：10 MB 的 VL，三种模式",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1258968",
+    "content": "有人做了个叫 VL 的终端工具，把 VS Code 的 Code Review 体验搬进命令行，编辑用 Vim 键位。它分三种模式：Workbench 像 VS Code，打开文件夹、改代码、看 PR；Editor 类似 Vim，单文件快速查看编辑；Preview 做代码高亮预览，类似 bat。整个工具体积约 10 MB，主打 review 和临时改两行这种高频小动作。",
+    "quote": "图形界面嫌重，终端里又想要 IDE。",
+    "uid": "dev_acfb0440",
+    "published": "2026-11-23"
+  },
+  {
+    "title": "用 DeepSeek 三小时搓了个 iOS 代理客户端，还上架了",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1258970",
+    "content": "楼主从零开始、花了三小时用 DeepSeek 写出一个 iOS 代理客户端，类似 V2Ray/Clash，并且已经通过 App Store 审核上架。支持 VMess、VLESS、Trojan、Shadowsocks、SOCKS5，可粘贴分享链接、扫码或订阅导入；路由支持全局与规则分流，含绕过局域网和地区；无账号、无统计、无广告，节点和设置都留在本地。",
+    "quote": "三小时上架，审核员大概也没细看。",
+    "uid": "dev_e4285f27",
+    "published": "2026-11-23"
+  },
+  {
+    "title": "limo：在终端里跑 Web API 的无头浏览器",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1258788",
+    "content": "limo 基于 moli 开发，后者是用 V8 引擎实现 Web APIs 的无头浏览器，内存占用低、启动快。作者平时维护跑在浏览器里的 WebAssembly 项目，需要反复和 JavaScript 环境打交道，于是把常用 Web API 搬进终端：命令行里直接调接口，不启浏览器也能验证逻辑。项目已开源，文档里附了多个可运行示例。",
+    "quote": "为了不打开浏览器，先造个浏览器。",
+    "uid": "dev_745256fd",
+    "published": "2026-11-23"
+  },
+  {
+    "title": "HKUDS/CLI-Anything：让所有软件都能被 agent 调用",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/HKUDS/CLI-Anything",
+    "content": "港大数据智能实验室的项目，口号是「今天的软件服务人类，明天的用户是 agent」。思路是给没有 API 的软件补一层 CLI，让 agent 能安装、调用并拿到结构化输出；仓库附带 CLI-Hub，可用 pip 安装后按名字装社区贡献的 CLI，也接受 PR 和需求清单。演示里 agent 借这套 CLI 产出了 CAD 模型、3D 场景、图表和字幕。",
+    "quote": "给每个软件配个命令行翻译，agent 才使得动。",
+    "uid": "dev_1edde517",
+    "published": "2026-11-23"
+  },
+  {
+    "title": "cursor/plugins：Cursor 把官方插件规范开源了",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/cursor/plugins",
+    "content": "Cursor 放出了插件规范和一批官方插件，等于把「agent 工作流该怎么打包」摆到台面上。现有插件覆盖持续学习（把高信号要点增量写进 AGENTS.md）、团队工作流（CI、code review、发布、验证）、热核级分支审查（安全与正确性审计、并行子 agent），以及插件脚手架。对想统一团队 agent 配置的人来说，是份现成的目录结构参考。",
+    "quote": "插件市场还没火，Cursor 先把规范占坑。",
+    "uid": "dev_5315c4e5",
+    "published": "2026-11-23"
+  },
+  {
+    "title": "选便宜 AI 路由前，先数清谁能读到你的 prompt",
+    "source": "Dev.to",
+    "url": "https://dev.to/deanlee/before-choosing-a-cheap-ai-router-check-who-can-read-your-prompts-25g1",
+    "content": "这篇文章接着 OpenRouter 的事件往下问：比价很容易，数清「谁能看到提示词」很难。作者提醒，零数据留存是一项承诺，不等于供应商不会被攻破；端点被移出名单，也不代表此前的每条请求都泄露。买路由时要同时看政策和证据，尤其要确认 fallback 会不会把请求悄悄换到另一家供应商，以及转售层里还隔着谁。",
+    "quote": "省下的 token 钱，可能用隐私结账。",
+    "uid": "dev_cb722d11",
+    "published": "2026-11-23"
+  },
+  {
+    "title": "企业流程为什么跑在无状态 agent 上就崩",
+    "source": "Dev.to",
+    "url": "https://dev.to/derek_f66a6ae2c4ca30bf7db/why-enterprise-workflows-break-on-stateless-agents-engineering-persistent-rule-memory-and-1d7b",
+    "content": "原型 demo 在单轮、隔离的 prompt 里往往很亮眼，但真实的企业审批、经销商价格例外、工厂交接班要跨数周，牵涉财务、运营和 IT 审计。没有显式的记忆底座，无状态会话要么忘掉历史例外，要么把几十页 SOP 塞进每次系统提示，策略一改就悄悄漂移。文章主张把规则来源与执行状态解耦，用长期记忆存结构化规则，先原型验证再冻结 schema。",
+    "quote": "demo 一时爽，上线全靠人肉记。",
+    "uid": "dev_237ff288",
+    "published": "2026-11-23"
+  },
+  {
+    "title": "Supabase 自托管接 Keycloak：两条路线，六个静默失败",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23745802",
+    "content": "自托管 Supabase 的 OAuth 面板在 Studio 里是禁用的，只能改 docker-compose.yml。梳理一下 Keycloak 与 Supabase 两种信任关系：A 由 GoTrue 换发 Supabase JWT，Keycloak 只当身份源；B 由 Keycloak 签发，Supabase 只验不签。选错不是改配置，是架构返工。还列了六个「登录成功但查不到数据」的坑。",
+    "quote": "登录成功了，数据没权限，等于没登。",
+    "uid": "dev_720223f7",
+    "published": "2026-11-23"
+  }
+]
