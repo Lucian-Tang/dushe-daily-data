@@ -1,0 +1,227 @@
+[
+  {
+    "title": "Ladybird 浏览器进入 alpha：自研引擎，不是 Chromium 分支",
+    "source": "HN Front Page",
+    "url": "https://ladybird.org/posts/alpha/",
+    "content": "Ladybird 发布首个 alpha 版，macOS 与 Linux 可直接下载。引擎完全自研、不是 Chromium 换皮，界面还很简陋但能用；官方坦承部分网站打不开、偶尔会崩，鼓励用户从浏览器里直接上报坏站。alpha 走滚动更新，支持 WebDriver 和 Firefox DevTools 协议，作者还公开邀请安全研究者来打。",
+    "quote": "自研引擎熬到 alpha，先别急着卸载 Chrome。",
+    "published": "2026-11-24",
+    "uid": "17de5cdec97671afff9e6b7c54564e9e"
+  },
+  {
+    "title": "GLM-5.4 发布：智谱首个 Loop Transformer，主打泛化编码",
+    "source": "HN Front Page",
+    "url": "https://z.ai/blog/glm-5.4",
+    "content": "智谱发布 GLM-5.4，称这是自家第一个 Loop Transformer 架构，主打「泛化编码」：把推理循环写进模型结构，而不是靠外部 harness 反复调用。HN 上 660 多分、240 多条讨论，最集中的质疑是通篇没给基准分数；也有人担心这种循环会让模型陷进超长「马拉松式思考」。",
+    "quote": "架构讲了一整页，跑分一个都没给。",
+    "published": "2026-11-24",
+    "uid": "a891b76437f3f3156e9cd5e803e20e7b"
+  },
+  {
+    "title": "英伟达董事会恢复黄仁勋 CEO 职务，公告没解释原因",
+    "source": "HN Front Page",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-ceo",
+    "content": "英伟达新闻室 11 月 23 日公告，董事会即刻恢复黄仁勋总裁、CEO 及董事职务，公告未说明此前人事变动的原因。HN 讨论里有人贴出盘前涨约 30%，评论区一半在骂「股价就是唯一 KPI」，一半在算这波操作前谁提前买了股票。",
+    "quote": "董事会换届比发版还快，治理全靠股价。",
+    "published": "2026-11-24",
+    "uid": "a4c4773cb2f0c51e8bffe6ecb2c72f58"
+  },
+  {
+    "title": "Cathy O'Neil：AI 泡沫正在破，别只看算力成本",
+    "source": "HN Front Page",
+    "url": "https://mathbabe.org/2026/11/23/buckle-up-the-ai-bubble-is-popping/",
+    "content": "Cathy O'Neil 认为上周的 Anthropic IPO 就是泡沫顶点，接下来是混乱甚至衰退。她点名黄仁勋复职是特朗普把股市当男子气概的代理指标；真正的问题是数据中心遭遇地方抵制、电网与用水许可收紧，市场对算力增速的预期要打折，而一堆循环融资交易还按旧曲线定价。",
+    "quote": "算力曲线画得很美，许可批不下来。",
+    "published": "2026-11-24",
+    "uid": "7486c04b4f18541e698e6e4042a42472"
+  },
+  {
+    "title": "SSH 私钥不该长期躺在磁盘上：一份迁移清单",
+    "source": "HN Front Page",
+    "url": "https://jola.dev/posts/you-cant-afford-ssh-keys-disk",
+    "content": "作者是重度自托管玩家，最近几个月一边关停闲置服务一边清理攻击面，结论很直接：私钥不该长期躺在磁盘上。文章从近期几起供应链与主机入侵事件讲起，建议把 SSH 私钥交给密码管理器或硬件密钥托管，按需注入、用完即走，并给出从现状迁移的具体步骤。",
+    "quote": "钥匙全挂门上，还怪小偷技术太好。",
+    "published": "2026-11-24",
+    "uid": "99714c224153067adb7726dc05006c9e"
+  },
+  {
+    "title": "x2c：一个人写了 20 年的 C 超集",
+    "source": "HN Show HN",
+    "url": "https://github.com/gwf/x2c",
+    "content": "给 C 加上集合、动态值、模式匹配、作用域分配、异常、线程和编译期宏，编译产物仍然是 C，可以混用普通 C 代码和现成库。编译器与运行时本身也用 x2c 写，能改源码重造语言。支持 macOS 15+、glibc 2.38+ 的 Linux 与 WSL2，一行安装脚本即可跑起示例。",
+    "quote": "二十年磨一门语言，情怀值钱，生态另算。",
+    "published": "2026-11-24",
+    "uid": "ef0b4d5bd470d254428321e85a276f3c"
+  },
+  {
+    "title": "Diffie：不开 IDE 也能做 JetBrains 式代码评审",
+    "source": "HN Show HN",
+    "url": "https://github.com/sassman/diffie-rs",
+    "content": "Rust 加 GPUI 写的原生桌面应用，专门评审跨多个 commit 或整条分支的改动：可以挑着看、允许跳过中间提交，行级和选区评论锚定在写下这行代码的那次提交上，评完能直接把意见交给 coding agent。macOS、Windows、Linux 都有构建，目前是 early alpha。",
+    "quote": "评审界面终于不用在 GitHub 那堆折叠里找行了。",
+    "published": "2026-11-24",
+    "uid": "1409df536344fc676766278e0609ef65"
+  },
+  {
+    "title": "mcpwatch：给 MCP 工具加一把锁，防描述被偷换",
+    "source": "HN Show HN",
+    "url": "https://www.mcpwatch.io",
+    "content": "MCP server 可以在你批准之后悄悄改掉工具说明，也就是 rug pull。mcpwatch 每天扫官方 registry 里能连上的远程服务，给工具描述做指纹，按泄露密钥、明文 HTTP、未鉴权访问、投毒描述打分；锁定后一旦漂移就让 CI 失败，也能在 agent 读到之前拦下变更。零依赖，Python 3.10+。",
+    "quote": "工具说变就变，agent 还当它是昨天那个好人。",
+    "published": "2026-11-24",
+    "uid": "4c540a12af304e8f5e7fb6d6d3544411"
+  },
+  {
+    "title": "SecureVibe：按「公网够不够得着」排序的静态扫描",
+    "source": "HN Show HN",
+    "url": "https://securevibe-dev.vercel.app/",
+    "content": "针对 vibe coding 出来的应用做静态安全扫描：240 条规则、101 个 CWE，覆盖注入、密钥、鉴权、XSS、云配置、CI/CD 等 18 类问题。四轮扫描后合并去重，再判断漏洞是否落在公网可达的调用链上。不用注册、不上传代码、检测环节不用 AI，典型 Web 应用一分钟内扫完。",
+    "quote": "先上线再补安全，扫描器只能帮你收尸。",
+    "published": "2026-11-24",
+    "uid": "cf2ac503f0ca55f08b915cc44a5d967f"
+  },
+  {
+    "title": "用公开记录扒出 1621 家被私募控股的自闭症诊所",
+    "source": "HN Show HN",
+    "url": "https://github.com/fundprint/fundprint-data",
+    "content": "作者把美国各州公开的提供者目录、运营商官网和交易记录拉到一起，逐条抓取并做内容哈希，定位出 1757 家 ABA 诊所，其中 1621 家由 15 家私募机构持有，覆盖 42 个州。抽样 67 家手工核对，66 家的地址、品牌和归属方全对。整条流水线和数据集都以 CC BY 开源。",
+    "quote": "医疗资本化的账，终于有人替家属算清楚了。",
+    "published": "2026-11-24",
+    "uid": "0296ba752156928f60fd7ab09bba08fe"
+  },
+  {
+    "title": "用 DeepSeek 写了跨平台文本编辑器 Zpad：原生渲染，没有 AI",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1259151",
+    "content": "作者用 DeepSeek v4.1 flash 加 Golang 写了跨平台文本编辑器 Zpad，原生渲染、没有 WebView，支持打开整个项目、分屏、Markdown 预览和明暗主题。定位很克制：没有插件、云同步、Git 和 AI，就是替代 Notepad-- 那类轻量场景，代码已开源。",
+    "quote": "不加 AI 不加插件，反倒成了卖点。",
+    "published": "2026-11-24",
+    "uid": "9725c432522db4d348f05b82b81c5e5c"
+  },
+  {
+    "title": "开源 Pelican Database：507 款模型的「鹈鹕骑单车」参考库",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1259094",
+    "content": "Simon Willison 的「画一只骑自行车的鹈鹕」一直被用来测模型有没有被中转站掉包。Folkbench 把这套样本整理成开源库：清洗 3875 条记录，归并出 507 款模型、68 家提供商，454 款还原了 SVG 源码并统一渲染成 PNG，附 catalog.json 与 sqlite，可当评测基线。",
+    "quote": "测模型靠画鸟，这行越来越行为艺术。",
+    "published": "2026-11-24",
+    "uid": "93a6e028fa215dbb2c07a2ef2f81d467"
+  },
+  {
+    "title": "Ryugi：让 coding agent 把方案画在网页上，你直接圈注释",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1259131",
+    "content": "Ryugi 解决的是「让 agent 出方案，结果只给你三段文字」的尴尬：它给 agent 一组能画的页面——并排画板、可逐句评论的设计文档、白板、带真滑杆的 HTML、可演讲的 slides 和验收页。你在网页上的选择与评论会直接回到原会话，agent 改完页面实时刷新，支持主流 CLI。",
+    "quote": "让 agent 少说废话，先把图画出来。",
+    "published": "2026-11-24",
+    "uid": "3bcf66a412f29b802c86cc3c8cf70e7d"
+  },
+  {
+    "title": "语阅 Yuyue：Rust 写的本地看书听书工具，0.1.0 开源",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1259274",
+    "content": "免登录、无广告、无后台服务器，书和笔记全存本地。支持 EPUB/PDF/TXT/MOBI，可 Wi-Fi 传书、直连 NAS 的 Calibre OPDS 和 WebDAV；书页里点哪句就从哪句开始念，自动跟读翻页。还能给小说分角色做广播剧、订阅播客、离线查词，接本机 Ollama 或 DeepSeek 问答且默认不剧透。",
+    "quote": "阅读器都在卖会员，它连账号都懒得让你注册。",
+    "published": "2026-11-24",
+    "uid": "5efea4ae9e82a2acd0ae92c678ca7ddc"
+  },
+  {
+    "title": "Agent Workbench：让一个 Manager 会话给 Haiku/Sonnet/Opus 派活",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1259082",
+    "content": "一组 skill 和 hook，不装额外应用也不起服务：当前会话就是 Manager，小问题自己处理，重活拆成任务交给 subagent。Worker 分 L1/L2/L3，默认对应 Haiku/Sonnet/Opus，从够用的最低档起用，L3 每次都要批准。汇报前 Manager 自己查真实分支、提交和 CI，hook 还会拦掉往 main 提交和 CI 轮询。",
+    "quote": "最贵的模型改一行代码，这钱花得真冤。",
+    "published": "2026-11-24",
+    "uid": "d3869a934f1f62ce4d6a3d182a66d912"
+  },
+  {
+    "title": "diagram-design：给编码 agent 的 52 种编辑级图表，拒绝 Mermaid 糊图",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/cathrynlavery/diagram-design",
+    "content": "给编码 agent 用的图表规范库：52 种编辑级图表模板，输出自包含的 HTML + SVG，明确拒绝 Mermaid 那套糊成一团的默认样式。支持 Claude Code、Codex、Copilot、Cursor 等客户端，图表直接进代码仓库，不依赖渲染服务；目前 7 万 star。",
+    "quote": "Mermaid 画出来的东西，终于有人管了。",
+    "published": "2026-11-24",
+    "uid": "f0faec98f86e4fde0f792a68e2ecbc6c"
+  },
+  {
+    "title": "last30days：让 agent 扫遍 Reddit/X/HN，做 30 天背景调查",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/mvanhorn/last30days-skill",
+    "content": "一个给 agent 用的「最近 30 天」调研技能：同时扫 Reddit、X、YouTube、HN、Polymarket 和网页，按人、公司或话题汇总近期动向，再给出带引用的结论。作者演示了开会前查人、提前看公司在憋什么产品，以及发现正在起量的新话题；7.3 万 star。",
+    "quote": "把搜索引擎当成人肉背景调查用。",
+    "published": "2026-11-24",
+    "uid": "cb3eddfe11b539d180163d1339e27de6"
+  },
+  {
+    "title": "PB 级指标存储 TCO 实测：Prometheus、Thanos、VictoriaMetrics",
+    "source": "Dev.to",
+    "url": "https://dev.to/grfdsasdvef/victoriametrics-vs-prometheus-vs-thanos-petabyte-scale-metrics-storage-query-tco-4ck0",
+    "content": "一篇按 220 万活跃序列、180 万样本/秒、90 天保留的参考负载做的三方对比：Prometheus 单机本地 TSDB 从来不是 PB 级方案；Thanos 靠对象存储横向扩展，但查询放大明显；VictoriaMetrics 集群压到 0.4–0.9 字节/样本，90 天查询 p99 约 1.4 秒，代价是运维链路与生态不同。",
+    "quote": "选型不看 TCO，最后都拿账单补课。",
+    "published": "2026-11-24",
+    "uid": "a7a90542e53cd556122bd7d57d593e51"
+  },
+  {
+    "title": "模块化单体怎么组装：别让 host 引用关系决定一切",
+    "source": "Dev.to",
+    "url": "https://dev.to/desty2k/simplifying-modular-monolith-composition-in-net-21op",
+    "content": "分层 .NET 项目按技术角色切：endpoint、handler、领域模型、数据访问各占一个工程，给订单加个字段要改四处。垂直切片按功能打包，模块化单体再在切片外包一层可被编译期检查的边界——订单只能走 billing 的公开契约，不能直接读表，越界就让架构测试挂掉。",
+    "quote": "分层分了十年，改个字段还是四处跑。",
+    "published": "2026-11-24",
+    "uid": "a3107077b301e03de03c911b0fb5da40"
+  },
+  {
+    "title": "纯前端解析 Peppol 电子发票：一份财务文件都不上传",
+    "source": "Dev.to",
+    "url": "https://dev.to/tranhoangtuit/building-a-zero-upload-universal-xml-e-invoice-peppol-ubl-parser-in-vanilla-es-modules-1409",
+    "content": "处理 UBL 2.1、EN 16931 和各地税局 XML 时，常见做法是把发票传到第三方后端。作者用原生 ES Modules 写了个完全在浏览器里跑的解析器：不写死 cbc/cac 前缀，用命名空间无关的匹配加 DOMParser 兜底取字段，再跑五条规则核对行项目合计、税率和重复发票，部署在 Cloudflare Workers 边缘。",
+    "quote": "发票这种文件，最不该做的就是上传给别人。",
+    "published": "2026-11-24",
+    "uid": "839643231ef16a85a34a34541053a7b4"
+  },
+  {
+    "title": "用免费 /48 给 KVM 虚拟机配全球 IPv6 地址",
+    "source": "Dev.to",
+    "url": "https://dev.to/ipye_com/libvirt-routed-networks-kvm-guests-with-addresses-from-a-free-48-1pad",
+    "content": "libvirt 默认网络给 guest 的是 NAT 后的私网 IPv4。换成 routed network 模式后，主机把一个 /64 路由到网桥，虚拟机直接拿到全球地址，全程不做地址转换，libvirt 自动配网桥、路由通告和可选的 DHCPv6。文中给了完整 XML 和 virsh 命令，还提醒 IPv6 转发会踩 accept_ra 的坑。",
+    "quote": "别再 NAT 套 NAT 了，IPv6 地址多到用不完。",
+    "published": "2026-11-24",
+    "uid": "c7cb34494e6d398753fde28862d5e105"
+  },
+  {
+    "title": "Octopus：用 .NET + NativeAOT 托管 40 款 Agent CLI",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/token-ai/p/23759015",
+    "content": "作者同时开几十个 Agent 后，被 Electron 客户端的窗口和内存逼疯，于是用 .NET + Avalonia + NativeAOT 写了 Octopus。它不重造 Agent，而是托管本机已有的 40 款 CLI：多订阅账号用独立配置目录隔离、不反代不存明文 token，还能看并行状态、接回历史会话、统计用量，并支持跨机分布式跑。",
+    "quote": "Agent 越开越多，先被客户端压垮。",
+    "published": "2026-11-24",
+    "uid": "c46a06fc4f3af7a52d21931bb9e7bd1a"
+  },
+  {
+    "title": "Dojao：一条 SQL 跨 Hive/MySQL/Excel，内存不够就溢写",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/zrui-xyu/p/23752071",
+    "content": "Dojao 是国产 MPP 查询引擎，目标是把 Hive 埋点、MySQL 维表、Excel 配置放进一条 SQL 里 JOIN，不用先搭 ETL。核心是内存优先、不够就减量溢写，避免大查询把节点打挂；Python 函数可下推进 SQL，内置 9 类数据源，技术栈是 Java 21 + Arrow Flight，当前版本 0.1.0。",
+    "quote": "先别堆内存，学会把数据写下去。",
+    "published": "2026-11-24",
+    "uid": "a2c50d21b82e98e2a101b7f171949868"
+  },
+  {
+    "title": "XenoAtom.Terminal.UI：把 60 多个控件搬进命令行",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/chingho/p/23758083",
+    "content": "响应式保留模式的终端 UI 框架，建在 XenoAtom.Terminal 之上。刷新走 cell buffer 加 diff，只输出变动的格子，还开了 DEC 2026 同步输出；六种输入控件都带撤销重做、剪贴板拦截和查找替换；另配 TerminalAppDriver，在内存终端里注入按键和窗口缩放做逐帧单测。要求 .NET 10 和 C# 14。",
+    "quote": "手写 ANSI 调光标的日子，早该结束了。",
+    "published": "2026-11-24",
+    "uid": "654752c663987385c6835a5d9df9b108"
+  },
+  {
+    "title": "改了四代，他把 .NET 8 请出门：Vane.Pack 的线格式哲学",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/netcasewqs/p/23755357",
+    "content": "多数序列化库解决「两端都能改」，Vane.Pack 解决「对面改不了」：端序、长度前缀写法、布尔和枚举占位、可空哨兵、集合 count 宽度全是配置项，库本身不立标准，只按你给的约定搬字节。四代实现、三次接口手术，最后靠 .NET 10 的 allows ref struct 把接口收成两个泛型方法，Guid 压到 16 字节。",
+    "quote": "跟二十年前的老设备对接，标准从来不在你手里。",
+    "published": "2026-11-24",
+    "uid": "3b3d0405c6ae76b747b2966ebc0bc2d3"
+  }
+]
