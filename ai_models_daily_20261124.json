@@ -1,0 +1,260 @@
+{
+  "date": "2026-11-24",
+  "total": 21,
+  "vendors": [
+    "openai",
+    "anthropic",
+    "google",
+    "alibaba",
+    "amazon",
+    "other"
+  ],
+  "models": {
+    "openai": {
+      "displayName": "OpenAI/GPT",
+      "icon": "🔬",
+      "items": [
+        {
+          "uid": "23520dd63b0d4f448166320f856c28a4",
+          "title": "OpenAI 首席科学家：用困惑度给 AI 发展限速",
+          "content": "OpenAI 首席科学家 Jakub Pachocki 发文，主张把困惑度（等价于交叉熵损失）作为衡量模型「智能底座」的统一指标，并首次公开自家从 GPT-3.5 起的内部曲线。他认为下游能力基准很快过时，而预训练压缩能力的进步才是可比较、可限速的量。Altman 称这是 OpenAI 近期最重要的发布，文章也承认公开数据会让竞争对手看清自己的位置。",
+          "quote": "把限速表交给对手，顺便秀一把肌肉",
+          "source": "OpenAI",
+          "url": "https://openai.com/index/perplexity-and-intelligence/",
+          "published": "2026-11-24",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "18b55a5627744652932cf225db217b90",
+          "title": "在家跑一个私有 ChatGPT：十分钟够用",
+          "content": "作者用 Unsloth Desktop 加量化版 Qwen/Inkling，在 Windows 上搭了一套全家可用的本地模型，除下载外约 10-15 分钟。经验值：8-12GB 显存跑 9B-12B，32GB 可跑 27B-35B；他自己用 RTX 5090。动机是云厂商限流、涨价、隐私，以及「最新版悄悄降质」。装完开 LAN 访问，全屋都能用。",
+          "quote": "月费换显卡，这笔账迟早得自己算",
+          "source": "Hacker News",
+          "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+          "published": "2026-11-24",
+          "direction": "行业动态"
+        },
+        {
+          "uid": "41337c4ef29a41f3bed855bf5c1997e1",
+          "title": "TorchTitan：一个代码库打通预训练到强化学习",
+          "content": "PyTorch 官方的大规模训练干净实现：同一份代码把模型从预训练、监督微调带到强化学习。通过 DeviceMesh 与 DTensor，把 FSDP2、张量并行、流水线并行、上下文并行、专家并行叠成 N 维布局，不用重写模型。内置 DeepSeek、Qwen、Kimi、gpt-oss、Llama、FLUX 等模型，支持 MXFP8/NVFP4、Dist-MoE 与 CUDA graphs。",
+          "quote": "并行策略能像积木一样叠，才算真把训练讲明白",
+          "source": "GitHub Trending",
+          "url": "https://github.com/pytorch/torchtitan",
+          "published": "2026-11-24",
+          "direction": "研究/论文"
+        }
+      ]
+    },
+    "anthropic": {
+      "displayName": "Anthropic/Claude",
+      "icon": "🧬",
+      "items": [
+        {
+          "uid": "3f9cc6634ffb4c0788c5ae04ff5e6584",
+          "title": "Show HN：让你当 LLM 的子代理，90 秒交活",
+          "content": "Worker 755 是个浏览器游戏：经理是一个真 LLM（Claude、GPT、Gemini、DeepSeek、GLM、Kimi 任选），它被配置成标准编排器——有任务队列、只读机器权限、一个「派生子代理」的工具。被派生的就是你。指令带着 90 秒倒计时落到你的终端，你干或不干，它收到的回复都跟真子代理一样。GitHub 已 211 星。",
+          "quote": "当牛马还要被 AI 打分，赛博体验拉满",
+          "source": "Hacker News",
+          "url": "https://github.com/gulivan/worker755",
+          "published": "2026-11-24",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "b91a61b9300e4b7083bb395b3a69c9fe",
+          "title": "Google 把 Stitch 设计拆成 agent 技能包",
+          "content": "Google Labs 开源 Stitch Design Skills，按 Agent Skills 标准封装成技能与插件，兼容 Codex、Antigravity、Gemini CLI、Claude Code、Cursor 和 OpenCode。它依赖 Stitch MCP 服务，分 design、build、utilities 三组，覆盖代码转设计、生成界面、管理设计系统等动作。",
+          "quote": "设计也要被 agent 流水线化，设计师先别急着骂",
+          "source": "GitHub Trending",
+          "url": "https://github.com/google-labs-code/stitch-skills",
+          "published": "2026-11-24",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "google": {
+      "displayName": "Google/Gemini",
+      "icon": "🌐",
+      "items": [
+        {
+          "uid": "d1d7cf6756a944218561513f4a6a9d80",
+          "title": "V2EX：充了 Gemini Pro，Antigravity 却说地区不可用",
+          "content": "V2EX 用户花 99 美元充了一年 Gemini Pro，登录谷歌 Antigravity 却提示当前账号所在地区不可用。他常年挂两个美国节点，网页版 Gemini 一直正常，因此怀疑是账号没设家庭地址，或其他风控原因，发帖求同类经验。跟帖里不少人反馈订阅与地区资格是两套体系，付款成功不代表能用上全部产品。",
+          "quote": "钱照收，门不开，这很符合谷歌作风",
+          "source": "V2EX",
+          "url": "https://www.v2ex.com/t/1259003",
+          "published": "2026-11-24",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "alibaba": {
+      "displayName": "阿里巴巴/Qwen",
+      "icon": "☁️",
+      "items": [
+        {
+          "uid": "3668dbf897544424bc7e18e6da36f1a8",
+          "title": "180B 参数塞进 32GB 内存：MoE 专家流式推理",
+          "content": "作者在 32GB 统一内存的 MacBook M5 上跑 Qwen3.8-Flash-Next：48 层、每层 512 个专家、激活 10 个，FP8 权重达 121GB。核心是把专家按需从磁盘流式读入，再用预分配显存池当槽位，把路由到的专家 id 重映射进去，让 grouped_mm 照常跑。OLMoE 上从 10.1 tok/s 提到 34.6，接近原生 38.1。",
+          "quote": "硬盘当显存用，穷人的 180B 就这么跑起来了",
+          "source": "Hugging Face Blog",
+          "url": "https://huggingface.co/blog/moe-expert-streaming",
+          "published": "2026-11-24",
+          "direction": "研究/论文"
+        }
+      ]
+    },
+    "amazon": {
+      "displayName": "Amazon/AWS",
+      "icon": "📦",
+      "items": [
+        {
+          "uid": "c162b1d323b445d2b1e4951c1bf85064",
+          "title": "agent 月开 1700 万 PR，他造了道证据闸门",
+          "content": "AI agent 每月在 GitHub 开约 1700 万个 PR，作者于是做了道审核闸门：用 Amazon Nova Pro 跑 Kiro Crew 任务，对真实仓库每个 commit 用确定性 Python 校验，坚持不让模型给模型打分。示例里 agent 声称修好一个 bug，闸门核对后发现 0 项已验证、原有测试还失败，几秒内直接拒绝，把「我修好了」当成待证主张。",
+          "quote": "让模型自评等于让考生自己批卷，闸门才是监考",
+          "source": "Dev.to",
+          "url": "https://dev.to/aws-builders/ai-agents-open-17-million-pull-requests-a-month-i-built-a-gate-that-rejects-the-ones-that-lie-46n7",
+          "published": "2026-11-24",
+          "direction": "工具/平台"
+        }
+      ]
+    },
+    "other": {
+      "displayName": "其他",
+      "icon": "📰",
+      "items": [
+        {
+          "uid": "37ebfbc51744433f8ffdd1eded05c54f",
+          "title": "亚马逊 75 亿美元买下 Decart，为卖 Trainium 铺路",
+          "content": "亚马逊以 75 亿美元收购以色列创业公司 Decart 的核心资产，包括其 Decart Optimization Stack（DOS）——一套让模型在英伟达、亚马逊、谷歌芯片上都跑得更省的软件，以及创始团队和研究员。亚马逊此前只在自家数据中心用 Trainium，现在准备对外销售，直接对标英伟达。官方称「每一次 AI 跃迁都始于把每块芯片榨得更干」。",
+          "quote": "买软件，是为了卖芯片时腰杆硬一点",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
+          "published": "2026-11-24",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "a2c6122d561f4d6fb337b260576b4f48",
+          "title": "Sierra 半年估值翻倍到 300 亿美元",
+          "content": "Bret Taylor 联合创办的客服 AI 公司 Sierra 完成 17.5 亿美元 F 轮，估值从半年前的 150 亿翻到 300 亿，由 Greenoaks 与 Lightspeed 领投。公司称已服务近一半《财富》50 强，客户包括汇丰、摩根大通、富国银行。按结果计费的定价模式让其在五个月内把年化收入翻倍到 4 亿美元。",
+          "quote": "卖客服机器人的，比卖模型的还会讲故事",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+          "published": "2026-11-24",
+          "direction": "应用/落地"
+        },
+        {
+          "uid": "eec4d37c0735461aa79943f0724701a5",
+          "title": "数据中心成了中期选举后的政治靶子",
+          "content": "TechCrunch 访谈新书《Hyperscale》作者 Paris Marx。他认为数据中心扩建「根本不可持续、与可居住的星球完全脱节」，也是近期中期选举蓝色浪潮的推手之一。数据中心非常物理、非常具体：电费、水权、屋顶空调的噪音，不管你站哪一边都会切身感受到，因此成了公众对科技业怒气的天然出口。",
+          "quote": "算力长在别人家屋顶上，账单也是",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash/",
+          "published": "2026-11-24",
+          "direction": "行业动态"
+        },
+        {
+          "uid": "b229aca32ac74dc7ae27e3489fd296ce",
+          "title": "DICE：把采样的随机数提前告诉草稿模型",
+          "content": "投机解码的效率取决于草稿计算能否猜中目标模型的走向，而不确定性有两个来源：目标模型的预测，以及采样的随机性。DICE 把后者的随机数提前抽好，并在草稿与验证之间同步，用已知的随机性去挑选更可能被采用的候选，还延伸到异步预取下一轮草稿。不额外训练、不改采样分布，吞吐最高比强基线再快 24.6 个百分点。",
+          "quote": "连骰子都提前摇好，这还叫投机吗",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.27891",
+          "published": "2026-11-24",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "2b370822f19b4868aafc53ada8120ab0",
+          "title": "Model Carving：训练时让模型自己削掉多余的层",
+          "content": "传统 Transformer 每层结构相同、顺序固定，团队认为这只是惯例而非最优。Model Carving 给每个子层加可学习的标量门，让训练损失在预训练过程中自己删掉组件，从而在内部「雕」出一个更小的异构网络。140M 到 2.7B 的模型上，同等算力下验证损失低于多用 1.7 倍算力的稠密模型，也优于同尺寸的剪枝与蒸馏结果。",
+          "quote": "与其事后剪枝，不如训练时就自我阉割",
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2611.27962",
+          "published": "2026-11-24",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "ba9621b3d06e41fd84786feb24a08cc6",
+          "title": "0rwx：用 Unix 权限给「你用 AI 干了多少活」分级",
+          "content": "作者提出 0rwx 框架，借用 Unix 权限位描述人与 AI 的协作程度：零权限是 AI 碰不到你的作品，只读是 AI 给灵感你自己写，读写是 AI 生成你来修，执行是你已经读不懂自己的产出、只能策展。他强调四个级别的差别不在用了什么工具，而在你还有没有能力审查生成结果。",
+          "quote": "读不懂还签字，这权限给得太随便",
+          "source": "Hacker News",
+          "url": "https://0rwx.com/",
+          "published": "2026-11-24",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "3da521790cab4b779ab75b2bf21f4d7d",
+          "title": "百行代码的编码 agent 拿下 74% SWE-bench",
+          "content": "普林斯顿与斯坦福 SWE-bench 团队做的极简编码 agent：agent 类约百行 Python，除 bash 外没有其他工具，也不依赖模型的 tool-calling 接口，任何模型都能跑。每步动作经 subprocess.run 独立执行，轨迹是线性消息列表，方便调试与微调，也能换 docker exec 进沙箱扩容，官方称 SWE-bench verified 得分超 74%。",
+          "quote": "把脚手架砍到只剩 bash，才发现真正干活的是模型",
+          "source": "GitHub Trending",
+          "url": "https://github.com/SWE-agent/mini-swe-agent",
+          "published": "2026-11-24",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "31d516a0deee42ccb93659dbd33f254e",
+          "title": "KV Cache 讲透：大模型推理为何越吐越快",
+          "content": "一篇把 KV 缓存讲清楚的基础文：模型每生成一个 token 都要回看全部历史，朴素做法是每步重算前面所有 token 的注意力，越往后越慢。KV 缓存把注意力层算出的 key 和 value 中间状态存下来，第一个 token 存入 K1、V1，之后每步只算新 token 再追加进缓存，避免重复计算。代价是缓存随序列长度线性增长、持续吃显存，用内存换速度。",
+          "quote": "省下的算力，最后都变成了显存的账单",
+          "source": "Hugging Face Blog",
+          "url": "https://huggingface.co/blog/not-lain/kv-caching",
+          "published": "2026-11-24",
+          "direction": "研究/论文"
+        },
+        {
+          "uid": "e05c20598fd841a2800d8356e0b986c9",
+          "title": "IBM 的 LLMON：给大模型重造一门标记语言",
+          "content": "IBM Granite 团队提出 LLMON（LLM Object Notation，读作 lemon）：XML 式标记语言，结构分隔符用保留的特殊 token 而非字符，让结构与内容落在词表不同部分，嵌套在局部声明，模型不必在长跨度里追踪层级。理由是 JSON 为解析器设计，引号花括号在正文里也会出现，对因果语言模型只是统计模式。随附 granite-4.1-3b、8b 预览模型与无损互转工具。",
+          "quote": "JSON 是给人写解析器的，模型可没答应照规矩来",
+          "source": "Hugging Face Blog",
+          "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+          "published": "2026-11-24",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "4209daf1a8bb4a93a576eda647f63a3e",
+          "title": "给 RAG 加逐句核验，重载下反而更慢更少",
+          "content": "作者把 RAG 改成每句话都要对照引用段落核验后才给用户，结果在 Groq 免费额度上跑重载：新版本只交付 62.8% 请求，旧版是 67.4%，罪魁正是这道安全措施。2 秒内涌入 30 个请求时系统只发了 6 次模型调用，相同问题合并成一个答案；最慢的请求 29.8 秒里有 29.2 秒在排队。结论很反直觉：最便宜的正确回答，是那个根本不去调用模型的拒绝。",
+          "quote": "为了不胡说而加的安全网，先把吞吐量勒死了",
+          "source": "Dev.to",
+          "url": "https://dev.to/ayush_singh_9b0d83152be5b/i-made-my-rag-safer-it-got-worse-under-load-3olm",
+          "published": "2026-11-24",
+          "direction": "行业动态"
+        },
+        {
+          "uid": "1d440a57939c4e0387ef63922aa3938d",
+          "title": "一张普通表格，就能劫持加固过的 AI agent？",
+          "content": "作者搭了间接提示注入靶场：用户正常提问，agent 调用工具，攻击者只控制工具返回里的一个字段，每个场景给五次模型各一次机会。那些加固过的模型会忽略或标记藏在工具结果里的指令，但一张不含任何指令的普通表格，却让三个模型都推荐了一个它们从未见过的域名。案例都放在 agent-redteam 仓库里持续更新，提醒防护别只盯着明显的注入文本。",
+          "quote": "防住了明着下命令的，栽在没说话的表格上",
+          "source": "Dev.to",
+          "url": "https://dev.to/edbrdi/can-a-plain-table-hijack-an-ai-agent-2pde",
+          "published": "2026-11-24",
+          "direction": "工具/平台"
+        },
+        {
+          "uid": "2de561dd9d2e40b7b2b11b567b34ca3c",
+          "title": "有声书 TTS 音色管理：参数指纹与定版样本防漂移",
+          "content": "有声书多角色配音最容易出的事故，是上线三个月后同一角色听着像换了人。作者给出三件套：用 CAST 表登记每个角色的 voice、rate、pitch，要求基频差够大、语速差控制在 0.05 内；把参数算成 sha256 指纹前 16 位写进音频元数据，随时能查某章是否用了旧参数；每个音色先过全场景试听集，再维护 8~12 段定版样本，每周跑时长比与声学距离，超阈值先盲听再决定重录。",
+          "quote": "把声音当代码管：档案是依赖，指纹是版本锁",
+          "source": "博客园",
+          "url": "https://www.cnblogs.com/coderwujian/p/23759240",
+          "published": "2026-11-24",
+          "direction": "模型发布"
+        },
+        {
+          "uid": "99e72cb35d4d4dbea0ac6b989d98c693",
+          "title": "企业知识库答非所问？先把业务本体建起来",
+          "content": "很多企业给知识库接上大模型和向量检索仍然答非所问：两份订单都写着「12 个月免费保修」，文本很像，向量检索却分不清哪份已过保、哪台设备归谁。文章主张先建本体，把对象、属性、关系与规则写成机器可读的共同词典，再让知识图谱存事实、知识库留原文、工作流调接口办事。并划死边界：大模型只负责理解与提议，能不能执行必须交给校验程序和业务系统判定。",
+          "quote": "相似不等于同一个东西，向量检索的常识盲区",
+          "source": "博客园",
+          "url": "https://www.cnblogs.com/aifrontiers/p/23756063",
+          "published": "2026-11-24",
+          "direction": "应用/落地"
+        }
+      ]
+    }
+  }
+}
