@@ -1,0 +1,137 @@
+[
+  {
+    "title": "Ladybird 浏览器进入 alpha：自研引擎，不是 Chromium 分支",
+    "source": "HN Front Page",
+    "url": "https://ladybird.org/posts/alpha/",
+    "content": "Ladybird 发布首个 alpha 版，macOS 与 Linux 可直接下载。引擎完全自研、不是 Chromium 换皮，界面还很简陋但能用；官方坦承部分网站打不开、偶尔会崩，鼓励用户从浏览器里直接上报坏站。alpha 走滚动更新，支持 WebDriver 和 Firefox DevTools 协议，作者还公开邀请安全研究者来打。",
+    "quote": "自研引擎熬到 alpha，先别急着卸载 Chrome。",
+    "uid": "dev_3d2adc3f",
+    "published": "2026-11-24"
+  },
+  {
+    "title": "GLM-5.4 发布：智谱首个 Loop Transformer，主打泛化编码",
+    "source": "HN Front Page",
+    "url": "https://z.ai/blog/glm-5.4",
+    "content": "智谱发布 GLM-5.4，称这是自家第一个 Loop Transformer 架构，主打「泛化编码」：把推理循环写进模型结构，而不是靠外部 harness 反复调用。HN 上 660 多分、240 多条讨论，最集中的质疑是通篇没给基准分数；也有人担心这种循环会让模型陷进超长「马拉松式思考」。",
+    "quote": "架构讲了一整页，跑分一个都没给。",
+    "uid": "dev_7deeda29",
+    "published": "2026-11-24"
+  },
+  {
+    "title": "英伟达董事会恢复黄仁勋 CEO 职务，公告没解释原因",
+    "source": "HN Front Page",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-ceo",
+    "content": "英伟达新闻室 11 月 23 日公告，董事会即刻恢复黄仁勋总裁、CEO 及董事职务，公告未说明此前人事变动的原因。HN 讨论里有人贴出盘前涨约 30%，评论区一半在骂「股价就是唯一 KPI」，一半在算这波操作前谁提前买了股票。",
+    "quote": "董事会换届比发版还快，治理全靠股价。",
+    "uid": "dev_442635f9",
+    "published": "2026-11-24"
+  },
+  {
+    "title": "Cathy O'Neil：AI 泡沫正在破，别只看算力成本",
+    "source": "HN Front Page",
+    "url": "https://mathbabe.org/2026/11/23/buckle-up-the-ai-bubble-is-popping/",
+    "content": "Cathy O'Neil 认为上周的 Anthropic IPO 就是泡沫顶点，接下来是混乱甚至衰退。她点名黄仁勋复职是特朗普把股市当男子气概的代理指标；真正的问题是数据中心遭遇地方抵制、电网与用水许可收紧，市场对算力增速的预期要打折，而一堆循环融资交易还按旧曲线定价。",
+    "quote": "算力曲线画得很美，许可批不下来。",
+    "uid": "dev_bdedb812",
+    "published": "2026-11-24"
+  },
+  {
+    "title": "SSH 私钥不该长期躺在磁盘上：一份迁移清单",
+    "source": "HN Front Page",
+    "url": "https://jola.dev/posts/you-cant-afford-ssh-keys-disk",
+    "content": "作者是重度自托管玩家，最近几个月一边关停闲置服务一边清理攻击面，结论很直接：私钥不该长期躺在磁盘上。文章从近期几起供应链与主机入侵事件讲起，建议把 SSH 私钥交给密码管理器或硬件密钥托管，按需注入、用完即走，并给出从现状迁移的具体步骤。",
+    "quote": "钥匙全挂门上，还怪小偷技术太好。",
+    "uid": "dev_9d5e9015",
+    "published": "2026-11-24"
+  },
+  {
+    "title": "minimind：两小时从零训出你的 64M 大模型",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/jingyaogong/minimind",
+    "content": "minimind 主打「两小时从零训出你的 64M 大模型」，把数据准备、预训练、SFT 到推理的完整链路缩到一台普通机器能跑完的规模。仓库用中文写清每一步参数与踩坑，适合拿来理解 transformer 到底怎么训，而不是只会调 API；目前 6.9 万 star。",
+    "quote": "64M 也是大模型，先跑通再谈参数量。",
+    "uid": "dev_8473e358",
+    "published": "2026-11-24"
+  },
+  {
+    "title": "diagram-design：给编码 agent 的 52 种编辑级图表，拒绝 Mermaid 糊图",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/cathrynlavery/diagram-design",
+    "content": "给编码 agent 用的图表规范库：52 种编辑级图表模板，输出自包含的 HTML + SVG，明确拒绝 Mermaid 那套糊成一团的默认样式。支持 Claude Code、Codex、Copilot、Cursor 等客户端，图表直接进代码仓库，不依赖渲染服务；目前 7 万 star。",
+    "quote": "Mermaid 画出来的东西，终于有人管了。",
+    "uid": "dev_ffef6cc6",
+    "published": "2026-11-24"
+  },
+  {
+    "title": "last30days：让 agent 扫遍 Reddit/X/HN，做 30 天背景调查",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/mvanhorn/last30days-skill",
+    "content": "一个给 agent 用的「最近 30 天」调研技能：同时扫 Reddit、X、YouTube、HN、Polymarket 和网页，按人、公司或话题汇总近期动向，再给出带引用的结论。作者演示了开会前查人、提前看公司在憋什么产品，以及发现正在起量的新话题；7.3 万 star。",
+    "quote": "把搜索引擎当成人肉背景调查用。",
+    "uid": "dev_2e46a0fb",
+    "published": "2026-11-24"
+  },
+  {
+    "title": "用 DeepSeek 写了跨平台文本编辑器 Zpad：原生渲染，没有 AI",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1259151",
+    "content": "作者用 DeepSeek v4.1 flash 加 Golang 写了跨平台文本编辑器 Zpad，原生渲染、没有 WebView，支持打开整个项目、分屏、Markdown 预览和明暗主题。定位很克制：没有插件、云同步、Git 和 AI，就是替代 Notepad-- 那类轻量场景，代码已开源。",
+    "quote": "不加 AI 不加插件，反倒成了卖点。",
+    "uid": "dev_bd93df32",
+    "published": "2026-11-24"
+  },
+  {
+    "title": "开源 Pelican Database：507 款模型的「鹈鹕骑单车」参考库",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1259094",
+    "content": "Simon Willison 的「画一只骑自行车的鹈鹕」一直被用来测模型有没有被中转站掉包。Folkbench 把这套样本整理成开源库：清洗 3875 条记录，归并出 507 款模型、68 家提供商，454 款还原了 SVG 源码并统一渲染成 PNG，附 catalog.json 与 sqlite，可当评测基线。",
+    "quote": "测模型靠画鸟，这行越来越行为艺术。",
+    "uid": "dev_2efacc23",
+    "published": "2026-11-24"
+  },
+  {
+    "title": "Ryugi：让 coding agent 把方案画在网页上，你直接圈注释",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1259131",
+    "content": "Ryugi 解决的是「让 agent 出方案，结果只给你三段文字」的尴尬：它给 agent 一组能画的页面——并排画板、可逐句评论的设计文档、白板、带真滑杆的 HTML、可演讲的 slides 和验收页。你在网页上的选择与评论会直接回到原会话，agent 改完页面实时刷新，支持主流 CLI。",
+    "quote": "让 agent 少说废话，先把图画出来。",
+    "uid": "dev_9fa075fb",
+    "published": "2026-11-24"
+  },
+  {
+    "title": "PB 级指标存储 TCO 实测：Prometheus、Thanos、VictoriaMetrics",
+    "source": "Dev.to",
+    "url": "https://dev.to/grfdsasdvef/victoriametrics-vs-prometheus-vs-thanos-petabyte-scale-metrics-storage-query-tco-4ck0",
+    "content": "一篇按 220 万活跃序列、180 万样本/秒、90 天保留的参考负载做的三方对比：Prometheus 单机本地 TSDB 从来不是 PB 级方案；Thanos 靠对象存储横向扩展，但查询放大明显；VictoriaMetrics 集群压到 0.4–0.9 字节/样本，90 天查询 p99 约 1.4 秒，代价是运维链路与生态不同。",
+    "quote": "选型不看 TCO，最后都拿账单补课。",
+    "uid": "dev_eee66c91",
+    "published": "2026-11-24"
+  },
+  {
+    "title": "模块化单体怎么组装：别让 host 引用关系决定一切",
+    "source": "Dev.to",
+    "url": "https://dev.to/desty2k/simplifying-modular-monolith-composition-in-net-21op",
+    "content": "分层 .NET 项目按技术角色切：endpoint、handler、领域模型、数据访问各占一个工程，给订单加个字段要改四处。垂直切片按功能打包，模块化单体再在切片外包一层可被编译期检查的边界——订单只能走 billing 的公开契约，不能直接读表，越界就让架构测试挂掉。",
+    "quote": "分层分了十年，改个字段还是四处跑。",
+    "uid": "dev_3ec5f68e",
+    "published": "2026-11-24"
+  },
+  {
+    "title": "Octopus：用 .NET + NativeAOT 托管 40 款 Agent CLI",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/token-ai/p/23759015",
+    "content": "作者同时开几十个 Agent 后，被 Electron 客户端的窗口和内存逼疯，于是用 .NET + Avalonia + NativeAOT 写了 Octopus。它不重造 Agent，而是托管本机已有的 40 款 CLI：多订阅账号用独立配置目录隔离、不反代不存明文 token，还能看并行状态、接回历史会话、统计用量，并支持跨机分布式跑。",
+    "quote": "Agent 越开越多，先被客户端压垮。",
+    "uid": "dev_e661dcca",
+    "published": "2026-11-24"
+  },
+  {
+    "title": "Dojao：一条 SQL 跨 Hive/MySQL/Excel，内存不够就溢写",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/zrui-xyu/p/23752071",
+    "content": "Dojao 是国产 MPP 查询引擎，目标是把 Hive 埋点、MySQL 维表、Excel 配置放进一条 SQL 里 JOIN，不用先搭 ETL。核心是内存优先、不够就减量溢写，避免大查询把节点打挂；Python 函数可下推进 SQL，内置 9 类数据源，技术栈是 Java 21 + Arrow Flight，当前版本 0.1.0。",
+    "quote": "先别堆内存，学会把数据写下去。",
+    "uid": "dev_ea4b5512",
+    "published": "2026-11-24"
+  }
+]
