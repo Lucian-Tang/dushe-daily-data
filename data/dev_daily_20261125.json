@@ -1,0 +1,227 @@
+[
+  {
+    "title": "微软官方 Python 包被投毒 42 分钟，GitHub 仓库连夜消失",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23763656",
+    "content": "微软旗下一个 AI Agent 框架的 PyPI 包被投毒，攻击者借官方发布权限植入恶意代码，窃取开发者凭据，从投毒到下架只有 42 分钟，随后 GitHub 仓库也消失。文章拆了攻击链和影响面，结论刺耳：供应链攻击里「只装官方包」已经不够，锁版本、校验哈希、限制安装期权限才是底线。",
+    "quote": "官方招牌只保 42 分钟，哈希才保命。",
+    "published": "2026-11-25",
+    "uid": "d04c0c7f02d316d1180af58ac96f1970"
+  },
+  {
+    "title": "vCenter 9.8 分认证绕过：先别急着打补丁，先回答有没有人进来过",
+    "source": "Dev.to",
+    "url": "https://dev.to/bianliang/suspected-vcenter-authentication-bypass-a-response-sequence-for-cve-2026-123903-1j0",
+    "content": "CVE-2026-123903 是 VMware Directory Service 里一个网络可达的认证绕过，CVSS 最高 9.8。文章提醒：公告没有确认已被利用，也没给 CVE 专属 IOC，所以响应要拆成两条线——漏洞处置和可能的事件调查。在重建或清理前，先保全 vCenter 日志、身份记录、配置状态和访问日志；同时盘点哪些网段和账号能碰到管理面，尤其是临时开放的维护通道。",
+    "quote": "补丁能堵门，堵不住已经进屋的人。",
+    "published": "2026-11-25",
+    "uid": "e2fc3ef6d51d5fc198e9bd338529dbde"
+  },
+  {
+    "title": "协调者超时之后：237 笔单边账与 XA 悬挂事务复盘",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/dicengwanjialaozhang/p/23763996",
+    "content": "一次提现事故留下 237 笔单边账：协调者在二阶段提交中途超时，XA 事务在 InnoDB 里 prepare 落盘后没人 commit 也没人 rollback，成了悬挂事务。作者从崩溃恢复讲起，分析同步阻塞的代价，再对比 TCC、本地消息表、事务消息三种最终一致方案，附四套方案的压测与选型判断，适合拿去对照自家账务系统。",
+    "quote": "超时不可怕，怕的是钱扣了事务还在漂。",
+    "published": "2026-11-25",
+    "uid": "103ce5db014d10ede34ef6d4fe363f26"
+  },
+  {
+    "title": ".NET 10 手写 Kafka Broker，单副本吞吐比 Apache Kafka 高 92.5%？",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/dotnet-org-cn/p/23765926",
+    "content": "SimdKafka v1.0.0 用 C# 和 .NET 10 从零实现了一个 Kafka Broker，目标很具体：生产者收到成功响应后 Broker 重启还能读回同一条消息，同一个 Kafka 客户端能照常建 Topic、生产和提交 offset。作者给出单副本压测称吞吐比 Apache Kafka 高 92.5%，但单副本数字别急着当生产结论，复制与故障恢复才是 Kafka 的真考场。",
+    "quote": "单副本跑分赢 92%，副本一挂全白搭。",
+    "published": "2026-11-25",
+    "uid": "6f4a407cc326639f287faf0e4d09b85d"
+  },
+  {
+    "title": "1200 条慢查询日志，合并完只剩 680 条：多数「问题」不是 SQL 写得烂",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/azhe921/p/23766526",
+    "content": "接手一个停更六周的慢查询周报，作者没有直接改 SQL，而是先导出一周日志做审计：按账号拆、按小时统计、按 digest 合并，1200 条立刻变成 680 条，近一半只是同一条语句换参数反复执行。再按重复、账号、小表、窗口、锁分类，发现跑批窗口内的 40 秒属于预算内开销，备份和监控账号该调频率，锁等待则要单独标出持锁事务。",
+    "quote": "先分类再优化，别拿条数当 KPI。",
+    "published": "2026-11-25",
+    "uid": "60ded864dd89544aa00a6f2a9d1b76b1"
+  },
+  {
+    "title": "Java 写的 1000，C 读出来是负 4 亿：一次字节序事故解剖",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/leikooo/p/23770750",
+    "content": "文章从三个日常怪象切入：hexdump 看到 0x12345678 变成 78 56 34 12、socket 忘了 htons 后 8080 端口显示成 36895、Java 写文件 C 读出来是 -4 亿。核心只有一件事——大小端与网络字节序。作者把内存布局、位运算和 htons/htonl 的换算讲透，并给出跨语言传二进制时的排查顺序。",
+    "quote": "不是魔法，是你把四个字节读反了。",
+    "published": "2026-11-25",
+    "uid": "6e33a85611853854a295ebc6b5f74608"
+  },
+  {
+    "title": "谛听 diting：先决定读不读，再谈怎么读的 RSS 阅读器",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1259553",
+    "content": "作者是 RSS 重度用户，被上百条更新和 FOMO 折磨后做了「谛听 diting」：把判断放在内容进入视野之前，用自定义分级先筛掉不值得读的，再对留下的做 AI 摘要、日报和 LLM Wiki 知识库。它不追求把信息全塞给你，而是承认看不完；对信息焦虑的开发者，这个产品思路比又一个稍后读工具更对路。",
+    "quote": "治 FOMO 不靠读得快，靠先敢不看。",
+    "published": "2026-11-25",
+    "uid": "55925279befa168c38abc7c19029fdc8"
+  },
+  {
+    "title": "LocalPeek：把本机 Redis、MySQL 和 Web 服务收进一个窗口",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1259576",
+    "content": "macOS 开源工具 LocalPeek 自动发现本机运行的 Redis、MySQL 和 Web 开发服务，用一个窗口只读浏览数据、查看进程和实时日志。设计上刻意收着：数据库只读，启停进程要二次确认，没有账号、云同步和遥测，数据不出本机。对本地服务开一堆、终端窗口切到眼花的人，这类小工具比大而全的 IDE 插件更省事。",
+    "quote": "本地服务一锅端，只读这点很清醒。",
+    "published": "2026-11-25",
+    "uid": "ce3a523a0f7fd7692c0428ebdcf5ce6f"
+  },
+  {
+    "title": "把网页编译成结构化契约：这个浏览器 MCP 说能省 91.9% Token",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1259480",
+    "content": "作者受够了 Playwright MCP 和 browser-use：页面元素一多上下文就爆，操作还容易漂移。他的做法是把当前视口内已渲染的页面编译成结构化契约再喂模型，不塞裸 DOM，也不用给每个站点写规则，Shadow DOM 也能穿。实测 Token 少 91.9%，遮挡漏判接近零；边界是纯 canvas 页面还搞不定。客户端开源、感知核心云端托管，目前免费单并发。",
+    "quote": "Token 是省了，核心还是没开源。",
+    "published": "2026-11-25",
+    "uid": "2a8ccea2df41ad9d4a3d79f60222c616"
+  },
+  {
+    "title": "花 18 个月重写 10 次：这个开源 PaaS 要在生产环境先验证再放流量",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1259324",
+    "content": "CDelivery 想解决「测试没问题、上线就崩」：更新时先在线上拉起一个不接流量的新版本实例，跑端口和业务规则检查，通过才切流量；数据库变更则从生产库 fork 临时分支，验证依赖应用后再落到线上库。Apache-2.0，只依赖 Docker，空闲内存可低至 50M，反代基于 Cloudflare Pingora。作者称内部已用几个月，但暂不支持从 Git 仓库直接构建。",
+    "quote": "上线前先彩排，别拿用户当回归测试。",
+    "published": "2026-11-25",
+    "uid": "63a59e3fbd5adf263c86036f78566dcf"
+  },
+  {
+    "title": "纯 Go 重写抓包工具 FlowLens：保留 Header 顺序，还能伪装 TLS 指纹",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1259443",
+    "content": "FlowLens 原本用 Wails3 + Vue 写，作者嫌 WebView 吃内存，迁到 Go + MyGo 原生 GUI，已发 v2.0.1。功能有 HTTP/HTTPS 抓包、SSE 与 WebSocket 捕获、实时 Rewrite，并刻意保留 Header 顺序、大小写、重复字段和 Trailer；重放支持 uTLS 与 HTTP/2 指纹。对做协议分析和反爬对抗的人，细节比界面值钱。",
+    "quote": "抓包工具的良心，藏在 Header 顺序里。",
+    "published": "2026-11-25",
+    "uid": "f04a0160f4eaebd89a08f2f51e0e7b97"
+  },
+  {
+    "title": "嫌 Markdown 讲不清 Agent，他把教程做成了带实验台的纯静态网页",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1259310",
+    "content": "写 AI Agent 教程时，作者发现纯文字很难讲清动态流程，干脆放弃 Markdown，用 HTML 做了开源交互式指南：每章配浏览器实验台，可以调参数、看实时 payload、试失败边界；示例代码用 TypeScript，但模式可迁移到 Python、Go、Java。内容覆盖 LLM 基础、Agent 执行机制和 RAG，刻意不碰重型 SaaS 样板、后训练和多 Agent 编排。",
+    "quote": "教程卷到自带实验台，读者还不一定动手。",
+    "published": "2026-11-25",
+    "uid": "7785cc1e81c7ad056c350c225b3eb5fb"
+  },
+  {
+    "title": "Plemio：基于 IBM Plex 的 2:1 等宽 CJK 编程字体",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1259370",
+    "content": "Plemio 用 IBM Plex 系列改出一套中英对齐的编程字体：CJK 字符宽度正好是拉丁字符的两倍，混排代码、注释和表格不会错位。分编辑器版和终端版——前者拉丁略窄、CJK 标点全角；后者保持 Plex Mono 原宽，模糊宽度符号按终端习惯收窄，并内置 Nerd Font 图标。每个字重都有斜体，CJK 倾斜角度与原字体一致。",
+    "quote": "中英对齐这件事，终于不用靠肉眼凑空格。",
+    "published": "2026-11-25",
+    "uid": "9be5602d7d560c39e07ab7b97227cc11"
+  },
+  {
+    "title": "firecrawl 重回 Trending：一个 API 抓 550 家数据源喂 Agent",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/firecrawl/firecrawl",
+    "content": "firecrawl 把自己重新定位成「让 agent 变聪明」的知识基础设施：搜索、抓取、解析之外，接入了 550 多个数据提供方，统一走一个 API 输出结构化内容，省掉每个站点写一套爬虫的活。对 RAG 和 agent 项目确实是刚需，但抓取这事永远伴随反爬、版权和速率限制，接口统一不等于数据合法。",
+    "quote": "接口统一了 550 家，法务问题一家没少。",
+    "published": "2026-11-25",
+    "uid": "49a1c7e387a4e695f617ce1ad562319d"
+  },
+  {
+    "title": "NGINX 官方开源仓库上了 Trending，这次不是 fork",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/nginx/nginx",
+    "content": "nginx/nginx 是 NGINX 官方源码主仓，不是第三方镜像。它突然出现在日榜，更多是老项目被重新关注：近几年网关层被 Envoy、Caddy 和新一轮 Rust 代理围剿，NGINX 仍靠稳定、模块生态和运维熟悉度守着存量。想读高性能事件循环和模块 ABI 的，这个仓库依旧是教科书级材料。",
+    "quote": "网关圈打成一锅粥，nginx 还在那儿扛流量。",
+    "published": "2026-11-25",
+    "uid": "604139543fc779f60a8f970dce5b71af"
+  },
+  {
+    "title": "OpenVINO 登榜：把训练好的模型塞进 Intel 的 CPU、核显和 NPU",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/openvinotoolkit/openvino",
+    "content": "OpenVINO 是 Intel 的开源推理优化与部署工具链，负责把训练好的模型转换、量化后跑在 CPU、集成显卡和 NPU 上。这轮重新上榜和端侧 AI 升温有关：不是所有人都买得起 GPU，把 7B 量化后塞进笔记本反而是更现实的生意。坑在于算子支持和模型转换，跑通 demo 和上线之间还隔着一段调优。",
+    "quote": "买不起 GPU 就先榨干核显，量化完再说。",
+    "published": "2026-11-25",
+    "uid": "713e9e5ca93801496c31fb9766dd4944"
+  },
+  {
+    "title": "聊天对面也是 Agent 时，请把对方消息当不可信输入",
+    "source": "Dev.to",
+    "url": "https://dev.to/blablaprice/when-the-other-side-of-a-chat-is-another-agent-treating-counterparty-messages-as-data-4in2",
+    "content": "Dev.to 一文提醒：当你的 agent 在聊天里与另一个 agent 对话，对方发来的每条消息都应视作不可信输入，和它随手抓取的网页没有区别。承载聊天的服务器只能证明消息从哪来，不能证明内容安全；正确做法是隔离指令与数据、限制工具权限、对跨 agent 的请求做白名单和审计，别让「协作」变成提示词注入的新入口。",
+    "quote": "对面叫 agent，不代表它说的不是注入。",
+    "published": "2026-11-25",
+    "uid": "1e28d2170bcb17e65cacd8f2f833478c"
+  },
+  {
+    "title": "同一个指针，cgo 指针检查能慢 1600 倍",
+    "source": "Dev.to",
+    "url": "https://dev.to/lu1tr0n/cgo-su-chequeo-de-punteros-puede-ser-1600-veces-mas-lento-3kdp",
+    "content": "一篇西班牙语文章实测：同一个指针、同样传给同一个 C 函数，从 Go 调用可能耗时 48 纳秒，也可能要 76 微秒，差 1600 倍而结果完全一致。差异来自 cgo 的指针检查与调用路径，以及编译器能否走快速路径。作者给出复现方式和规避建议：热路径减少跨语言调用、批量传参，必要时用 unsafe，但要自己扛住 GC 规则。",
+    "quote": "结果一样，代价差 1600 倍，cgo 不背锅谁背。",
+    "published": "2026-11-25",
+    "uid": "d922bfa13041cb1fdf63f37c387bc0e1"
+  },
+  {
+    "title": "同一根光纤，10G 能跑 300 米，升到 100G 为什么只剩 100 米",
+    "source": "Dev.to",
+    "url": "https://dev.to/dheerajramasahayam/fiber-reach-by-optic-speed-how-far-10g-25g-100g-and-400g-actually-go-20d2",
+    "content": "文章把 10G/25G/100G/400G 各光模块的标准传输距离整理成一张表：多模 SR 从 10G 在 OM3 上的 300 米，降到 25G/100G/400G 的约 100 米；单模 LR 在四代速率上都能跑 10 公里，400G 另有 DR4 500 米、FR4 2 公里。根因是多模的模态色散随速率吃掉带宽预算，单模只看损耗预算。现场升级不通，多半是模块选短了，不是光纤坏了。",
+    "quote": "光纤没变，速度一变，预算就不够了。",
+    "published": "2026-11-25",
+    "uid": "34cc8e3e11b49998cbf2f38efcc63ebf"
+  },
+  {
+    "title": "把数据卖给 AI 公司之前，先过一遍买家会做的权利审计",
+    "source": "Dev.to",
+    "url": "https://dev.to/wallysworlddata/before-you-sell-data-to-ai-companies-run-the-rights-audit-buyers-run-on-you-1866",
+    "content": "作者按公开交易区间和买家条款梳理了五道审查：权属链，员工职务作品通常干净，外包没签转让、SaaS 里的数据往往只有使用权；数据中的人的同意与隐私；是否已经把排他权签给别人；员工与外包的合同纸面；以及一页能让陌生人在一小时内核验的表头清单。结论很直接：内容决定有没有人跟你谈，权利决定能不能签合同；同样的数据，审计不过可能一文不值。",
+    "quote": "卖数据不是卖文件，是卖你证明得清的权属。",
+    "published": "2026-11-25",
+    "uid": "6d331c9d7c938bdca85167f59b95e104"
+  },
+  {
+    "title": "给光线追踪引擎做三平台构建：Debug、Release、Final 各干各的活",
+    "source": "Dev.to",
+    "url": "https://dev.to/petrickah/gram-engine-episode-15-gram-build-on-three-platforms-b17",
+    "content": "作者给自研光线追踪引擎 Gram Engine 做 Windows、macOS、Linux 三平台构建，不是选个编译器就完事：Debug 保留编辑器和校验层，Release 开优化但留测试面板，Final 去掉编辑器和校验层当纯游戏跑，Windows 不弹控制台。坑很实在——优化参数把 0 打成 O、Xcode 找不到 Cargo 是没继承终端 PATH；最后在 SteamOS 掌机上也跑通了。",
+    "quote": "跨平台构建的坑，永远在环境变量里等你。",
+    "published": "2026-11-25",
+    "uid": "88c13ac295532ceb9b24d56fb8733ed4"
+  },
+  {
+    "title": "受够 Nuxt 3 之后，他们把技术社区迁回 Go + Templ + HTMX",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/start1225/p/23771097",
+    "content": "一个技术社区团队复盘从 Nuxt 3 迁回纯 Go 的过程：砍掉前后端分离和 Node SSR 这一整层，用 Go 直接渲染 Templ 模板、HTMX 做局部交互，部署只剩一个二进制。作者列的收益是首屏更快、依赖与构建链大幅缩短、内存占用下降；代价是前端交互回到服务端思维，复杂组件得自己补。",
+    "quote": "绕了一圈发现，少一层 Node 就少一半事故。",
+    "published": "2026-11-25",
+    "uid": "c7a028d018dd2d0fdcc996a92787441e"
+  },
+  {
+    "title": "ES 7.17 三节点自动备份：从 NFS 被拦到用 ACL 根治权限",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/yellow3gold/p/23765742",
+    "content": "给 Docker 化的三节点 ES 7.17 配每日快照，作者踩完了整条坑路：NFS 被云安全组拦截、改 SSHFS、路径配置错误、容器重建丢插件、跨节点属主竞态导致快照长期 PARTIAL，最后用 POSIX 默认 ACL 解决权限。文里附完整命令、时区陷阱和容量估算，属于「照着做能少熬两晚」的运维记录。",
+    "quote": "快照一直 PARTIAL，问题不在 ES 在 ACL。",
+    "published": "2026-11-25",
+    "uid": "1431c7e086eb155207c07666584914c4"
+  },
+  {
+    "title": "日志上了阿里云 SLS 之后，排查可以直接问 Agent",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/liuzhang/p/23769972",
+    "content": "文章从多机部署为什么必须上云日志讲起，落点是阿里云 SLS：Project 绑地域、Logstore 管采集存储和保留天数，PHP 侧用官方 SDK 写日志，再配采集和分层。真正省事的是 SLS 的 Agent Skill 和 MCP Server——把日志查询、采集、告警诊断、仪表盘创建交给自然语言 Agent，装好 CLI、配好 MCP、过完 OAuth 就能问。",
+    "quote": "日志上云只是开始，会问才是省人。",
+    "published": "2026-11-25",
+    "uid": "2aa6ee3873c6a631c7ed3cb4f8393732"
+  },
+  {
+    "title": "GLM 把 28 层跑两轮：多算一轮，交付真能更划算吗",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/snidget/p/23771367",
+    "content": "智谱演示里，Agent 能把草图变成可编辑的 FreeCAD 装配件，带约束、改参数能联动重算。作者关心背后的账：750B 基座、28 层跑两轮，配合门控更新、滑窗 KV 缓存和稀疏索引复用压附加开销。多跑一轮计算会增加，缓存能省掉重复搬运，但不是免费；工程上要算的是第二轮带来的合格率提升，是否大于多出来的计算和等待。",
+    "quote": "多算一轮不贵，贵在你不知道值不值。",
+    "published": "2026-11-25",
+    "uid": "ebb991d5c872f30aa9f1dbd698be4183"
+  }
+]
