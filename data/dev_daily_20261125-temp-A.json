@@ -1,0 +1,137 @@
+[
+  {
+    "title": "minimind 冲上 Trending：两小时从零训出 64M 小模型",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/jingyaogong/minimind",
+    "content": "GitHub Trending 项目 minimind 主打「两小时、一张消费级显卡，从零训出 64M 参数大模型」，把数据清洗、预训练、SFT、LoRA 到推理部署整条链路塞进可复现脚本，连 tokenizer 训练都给了。对想搞懂 LLM 到底怎么炼出来的开发者，这是比啃论文便宜得多的入口；代价是别指望它多聪明，64M 的脑子大概只够陪你聊天气。",
+    "quote": "两小时训出大模型，醒来还是只会说天气。",
+    "uid": "dev_de993610",
+    "published": "2026-11-25"
+  },
+  {
+    "title": "firecrawl 重回 Trending：一个 API 抓 550 家数据源喂 Agent",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/firecrawl/firecrawl",
+    "content": "firecrawl 把自己重新定位成「让 agent 变聪明」的知识基础设施：搜索、抓取、解析之外，接入了 550 多个数据提供方，统一走一个 API 输出结构化内容，省掉每个站点写一套爬虫的活。对 RAG 和 agent 项目确实是刚需，但抓取这事永远伴随反爬、版权和速率限制，接口统一不等于数据合法。",
+    "quote": "接口统一了 550 家，法务问题一家没少。",
+    "uid": "dev_f298eeb5",
+    "published": "2026-11-25"
+  },
+  {
+    "title": "NGINX 官方开源仓库上了 Trending，这次不是 fork",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/nginx/nginx",
+    "content": "nginx/nginx 是 NGINX 官方源码主仓，不是第三方镜像。它突然出现在日榜，更多是老项目被重新关注：近几年网关层被 Envoy、Caddy 和新一轮 Rust 代理围剿，NGINX 仍靠稳定、模块生态和运维熟悉度守着存量。想读高性能事件循环和模块 ABI 的，这个仓库依旧是教科书级材料。",
+    "quote": "网关圈打成一锅粥，nginx 还在那儿扛流量。",
+    "uid": "dev_d3d93857",
+    "published": "2026-11-25"
+  },
+  {
+    "title": "OpenVINO 登榜：把训练好的模型塞进 Intel 的 CPU、核显和 NPU",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/openvinotoolkit/openvino",
+    "content": "OpenVINO 是 Intel 的开源推理优化与部署工具链，负责把训练好的模型转换、量化后跑在 CPU、集成显卡和 NPU 上。这轮重新上榜和端侧 AI 升温有关：不是所有人都买得起 GPU，把 7B 量化后塞进笔记本反而是更现实的生意。坑在于算子支持和模型转换，跑通 demo 和上线之间还隔着一段调优。",
+    "quote": "买不起 GPU 就先榨干核显，量化完再说。",
+    "uid": "dev_14b88d8b",
+    "published": "2026-11-25"
+  },
+  {
+    "title": "受够 Nuxt 3 之后，他们把技术社区迁回 Go + Templ + HTMX",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/start1225/p/23771097",
+    "content": "一个技术社区团队复盘从 Nuxt 3 迁回纯 Go 的过程：砍掉前后端分离和 Node SSR 这一整层，用 Go 直接渲染 Templ 模板、HTMX 做局部交互，部署只剩一个二进制。作者列的收益是首屏更快、依赖与构建链大幅缩短、内存占用下降；代价是前端交互回到服务端思维，复杂组件得自己补。",
+    "quote": "绕了一圈发现，少一层 Node 就少一半事故。",
+    "uid": "dev_a0d13a76",
+    "published": "2026-11-25"
+  },
+  {
+    "title": "Java 写的 1000，C 读出来是负 4 亿：一次字节序事故解剖",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/leikooo/p/23770750",
+    "content": "文章从三个日常怪象切入：hexdump 看到 0x12345678 变成 78 56 34 12、socket 忘了 htons 后 8080 端口显示成 36895、Java 写文件 C 读出来是 -4 亿。核心只有一件事——大小端与网络字节序。作者把内存布局、位运算和 htons/htonl 的换算讲透，并给出跨语言传二进制时的排查顺序。",
+    "quote": "不是魔法，是你把四个字节读反了。",
+    "uid": "dev_38c864ef",
+    "published": "2026-11-25"
+  },
+  {
+    "title": "微软官方 Python 包被投毒 42 分钟，GitHub 仓库连夜消失",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23763656",
+    "content": "微软旗下一个 AI Agent 框架的 PyPI 包被投毒，攻击者借官方发布权限植入恶意代码，窃取开发者凭据，从投毒到下架只有 42 分钟，随后 GitHub 仓库也消失。文章拆了攻击链和影响面，结论刺耳：供应链攻击里「只装官方包」已经不够，锁版本、校验哈希、限制安装期权限才是底线。",
+    "quote": "官方招牌只保 42 分钟，哈希才保命。",
+    "uid": "dev_b20d0f55",
+    "published": "2026-11-25"
+  },
+  {
+    "title": "协调者超时之后：237 笔单边账与 XA 悬挂事务复盘",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/dicengwanjialaozhang/p/23763996",
+    "content": "一次提现事故留下 237 笔单边账：协调者在二阶段提交中途超时，XA 事务在 InnoDB 里 prepare 落盘后没人 commit 也没人 rollback，成了悬挂事务。作者从崩溃恢复讲起，分析同步阻塞的代价，再对比 TCC、本地消息表、事务消息三种最终一致方案，附四套方案的压测与选型判断，适合拿去对照自家账务系统。",
+    "quote": "超时不可怕，怕的是钱扣了事务还在漂。",
+    "uid": "dev_d2da3999",
+    "published": "2026-11-25"
+  },
+  {
+    "title": ".NET 10 手写 Kafka Broker，单副本吞吐比 Apache Kafka 高 92.5%？",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/dotnet-org-cn/p/23765926",
+    "content": "SimdKafka v1.0.0 用 C# 和 .NET 10 从零实现了一个 Kafka Broker，目标很具体：生产者收到成功响应后 Broker 重启还能读回同一条消息，同一个 Kafka 客户端能照常建 Topic、生产和提交 offset。作者给出单副本压测称吞吐比 Apache Kafka 高 92.5%，但单副本数字别急着当生产结论，复制与故障恢复才是 Kafka 的真考场。",
+    "quote": "单副本跑分赢 92%，副本一挂全白搭。",
+    "uid": "dev_3dcf7358",
+    "published": "2026-11-25"
+  },
+  {
+    "title": "ES 7.17 三节点自动备份：从 NFS 被拦到用 ACL 根治权限",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/yellow3gold/p/23765742",
+    "content": "给 Docker 化的三节点 ES 7.17 配每日快照，作者踩完了整条坑路：NFS 被云安全组拦截、改 SSHFS、路径配置错误、容器重建丢插件、跨节点属主竞态导致快照长期 PARTIAL，最后用 POSIX 默认 ACL 解决权限。文里附完整命令、时区陷阱和容量估算，属于「照着做能少熬两晚」的运维记录。",
+    "quote": "快照一直 PARTIAL，问题不在 ES 在 ACL。",
+    "uid": "dev_e2de6b22",
+    "published": "2026-11-25"
+  },
+  {
+    "title": "聊天对面也是 Agent 时，请把对方消息当不可信输入",
+    "source": "Dev.to",
+    "url": "https://dev.to/blablaprice/when-the-other-side-of-a-chat-is-another-agent-treating-counterparty-messages-as-data-4in2",
+    "content": "Dev.to 一文提醒：当你的 agent 在聊天里与另一个 agent 对话，对方发来的每条消息都应视作不可信输入，和它随手抓取的网页没有区别。承载聊天的服务器只能证明消息从哪来，不能证明内容安全；正确做法是隔离指令与数据、限制工具权限、对跨 agent 的请求做白名单和审计，别让「协作」变成提示词注入的新入口。",
+    "quote": "对面叫 agent，不代表它说的不是注入。",
+    "uid": "dev_b61c061b",
+    "published": "2026-11-25"
+  },
+  {
+    "title": "GPUI 换了新仓库，先别急着切：README 之外几乎没文件",
+    "source": "Dev.to",
+    "url": "https://dev.to/panditshivam/gpui-has-a-new-repo-check-the-package-source-before-switching-22f6",
+    "content": "作者检查 zed-industries/gpui 新仓库时发现，除了一个 README，仓库几乎是空的。于是这篇提醒把「仓库迁移」和「新版本发布」分开看：现在能确认的只是代码要搬家，不是 API 稳定或功能就绪。依赖 GPUI 的项目应先锁定现有 revision、核对包源和发布渠道，等目录、CI 和 release 真正落地再迁。",
+    "quote": "新仓库只有一个 README，迁移先等等。",
+    "uid": "dev_a1047b6f",
+    "published": "2026-11-25"
+  },
+  {
+    "title": "同一个指针，cgo 指针检查能慢 1600 倍",
+    "source": "Dev.to",
+    "url": "https://dev.to/lu1tr0n/cgo-su-chequeo-de-punteros-puede-ser-1600-veces-mas-lento-3kdp",
+    "content": "一篇西班牙语文章实测：同一个指针、同样传给同一个 C 函数，从 Go 调用可能耗时 48 纳秒，也可能要 76 微秒，差 1600 倍而结果完全一致。差异来自 cgo 的指针检查与调用路径，以及编译器能否走快速路径。作者给出复现方式和规避建议：热路径减少跨语言调用、批量传参，必要时用 unsafe，但要自己扛住 GC 规则。",
+    "quote": "结果一样，代价差 1600 倍，cgo 不背锅谁背。",
+    "uid": "dev_1ef1d8ea",
+    "published": "2026-11-25"
+  },
+  {
+    "title": "谛听 diting：先决定读不读，再谈怎么读的 RSS 阅读器",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1259553#reply0",
+    "content": "作者是 RSS 重度用户，被上百条更新和 FOMO 折磨后做了「谛听 diting」：把判断放在内容进入视野之前，用自定义分级先筛掉不值得读的，再对留下的做 AI 摘要、日报和 LLM Wiki 知识库。它不追求把信息全塞给你，而是承认看不完；对信息焦虑的开发者，这个产品思路比又一个稍后读工具更对路。",
+    "quote": "治 FOMO 不靠读得快，靠先敢不看。",
+    "uid": "dev_55b12c13",
+    "published": "2026-11-25"
+  },
+  {
+    "title": "LocalPeek：把本机 Redis、MySQL 和 Web 服务收进一个窗口",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1259576#reply0",
+    "content": "macOS 开源工具 LocalPeek 自动发现本机运行的 Redis、MySQL 和 Web 开发服务，用一个窗口只读浏览数据、查看进程和实时日志。设计上刻意收着：数据库只读，启停进程要二次确认，没有账号、云同步和遥测，数据不出本机。对本地服务开一堆、终端窗口切到眼花的人，这类小工具比大而全的 IDE 插件更省事。",
+    "quote": "本地服务一锅端，只读这点很清醒。",
+    "uid": "dev_7156a4ec",
+    "published": "2026-11-25"
+  }
+]
