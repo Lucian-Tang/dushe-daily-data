@@ -1,0 +1,227 @@
+[
+  {
+    "title": "Claude-BugHunter 冲上 Trending：84 个技能把 Claude 变成红队打手",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "content": "elementalsouls/Claude-BugHunter 是一个面向外部红队与漏洞挖掘的 Claude Code 技能包：84 个技能、15 个 slash 命令，内置 24 类核心漏洞的 681 份已披露报告模式，还带企业身份与基础设施攻击矩阵。两万多 star 说明安全圈已经把 agent 当常规工具用了；但真拿它去打目标之前，先想清楚授权范围，AI 帮你写报告不帮你担责任。",
+    "quote": "84 个技能齐活，就差一张合法授权书。",
+    "published": "2026-11-26",
+    "uid": "5e38703f2df37de82eae4f4a42a45bd1"
+  },
+  {
+    "title": "3 美元接管美国财政部子域名，这漏洞便宜得离谱",
+    "source": "HN Front Page",
+    "url": "https://www.intruder.io/research/taking-over-us-treasury-subdomains-for-3-each",
+    "content": "Intruder 的研究人员发现美国财政部若干子域名存在悬空 DNS 记录，指向已释放的云资源，于是花每个 3 美元注册对应资源就完成了接管。子域名接管是老问题，但出现在 .gov 域名上就变成钓鱼与信任链攻击的现成跳板。资产清单没人清、下线没人回收，安全预算再多也补不上这种管理漏洞。",
+    "quote": "接管一个 gov 子域，比买杯咖啡还便宜。",
+    "published": "2026-11-26",
+    "uid": "4dcb39e877eae1a53009081e885fc20a"
+  },
+  {
+    "title": "Google 放出整数分解论文，HN 在传「P 是不是被攻破了」",
+    "source": "HN Front Page",
+    "url": "https://github.com/google-research/google-research/tree/master/cogentic_research_papers",
+    "content": "Google Research 仓库里出现一批关于整数分解、离散对数等方向的论文，加上 Reddit 上「某实验室可能破解了 P 问题」的传言，HN 直接把这条顶到 220 分、180 多条评论。冷静点看：整数分解有多项式算法和 RSA 被破是两件事，论文也未必经过同行评审。但密码学圈这一晚估计没人睡得着。",
+    "quote": "传言跑得比论文快，密码学圈先失眠。",
+    "published": "2026-11-26",
+    "uid": "39f894ba456011038b4566f2f4b41116"
+  },
+  {
+    "title": "花 $1.99 让 Claude 的缓存别凉：这个 Mac 小工具说能省 15% 额度",
+    "source": "HN Show HN",
+    "url": "https://warmy.dev/",
+    "content": "你付 $200/月的 Claude，有多少花在缓存过期上？Warmy 盯住你离开的时段——午饭、开会、下班——在 prompt cache 失效前发一次保活请求，把「回来补 587k token」压到 59k。它用你自己的使用记录训练一个小模型，判断哪些会话值得保温、哪些该让它凉，每次保活按成本记账，扣掉成本再报节省。免费扫描回放近 14 天历史，数据全在本机。",
+    "quote": "省额度的尽头，是替模型续命保温。",
+    "published": "2026-11-26",
+    "uid": "c3859fe5d11847f90f1c5bc8452db09f"
+  },
+  {
+    "title": "iOS Safari 的 60 FPS 天花板，被滚动合成器绕过去了",
+    "source": "HN Front Page",
+    "url": "https://rida.dev/blog/bypassing-ios-safari-60-fps-limit",
+    "content": "WebKit 在 iOS 上把 requestAnimationFrame 和触摸事件锁在 60Hz，哪怕屏幕是 120Hz，除非你去开发者设置里翻那个「Prefer Page Rendering Updates near 60fps」开关。作者把交互交给合成器驱动的滚动：手指到数字化仪、到合成器、再到 GPU，全程不走 JS 回环，动画就能跑满高刷。结论很刺：想要原生手感，别跟 rAF 较劲。",
+    "quote": "别卷 JS 性能了，把活交给合成器。",
+    "published": "2026-11-26",
+    "uid": "361a95afbb6bdcde2c43b66834339a2c"
+  },
+  {
+    "title": "Datadog 的新测试库：让 agent 爬山，在 SQLite 挖出 70 多个 bug",
+    "source": "HN Show HN",
+    "url": "https://github.com/datadog-labs/ephyra",
+    "content": "Ephyra 把属性测试和 autoresearch 式的爬山优化拼在一起：先写一个能生成合法用例的生成器，测覆盖率，再让 agent 改写生成器去够代码的新区域。跟覆盖引导 fuzz 相反：fuzz 演绎式变异输入，Ephyra 归纳式重写生成器。实测在 SQLite 挖出 70+ bug、PostgreSQL 20 个、Lean 25 个，连 FoundationDB 也没躲过。",
+    "quote": "人类写测试太慢，让 agent 去撞墙。",
+    "published": "2026-11-26",
+    "uid": "390a04561ea4907a8679a60ec8d63459"
+  },
+  {
+    "title": "用 5600 个 Lambda 跑 Qwen：一场 80 倍负利润的行为艺术",
+    "source": "HN Front Page",
+    "url": "https://noahbuilt.it/writing/qwen-on-5600-lambdas",
+    "content": "作者把 Qwen 推理拆到 5600 个 AWS Lambda 上跑，标题直接写明「80 倍负利润」。这类文章的乐趣不在省钱，而在验证 serverless 的边界：冷启动、函数间通信、状态传递、并发配额，每一条都会把天真的想法打回去。当玩具很爽，当生意就是给 AWS 交学费，但至少他替你把坑都踩了一遍。",
+    "quote": "亏 80 倍还坚持跑完，这叫科研精神。",
+    "published": "2026-11-26",
+    "uid": "7dcddf3f7c27b026aecb886147e3bd03"
+  },
+  {
+    "title": "Windows 响度均衡被逆向出来，移植到了 PipeWire",
+    "source": "HN Front Page",
+    "url": "https://github.com/xoxorwr/pw-loudness-eq",
+    "content": "有人把 Windows 的 Loudness Equalization（响度均衡）逆向实现并移植到 Linux 的 PipeWire，206 分说明被「看片时爆炸声太响、对白听不清」折磨过的人有多少。动态范围压缩本来是影院和广播的老技术，桌面 Linux 一直缺个好用的默认实现。这种小而具体的补丁，比又一个「年度 Linux 桌面元年」宣言有用得多。",
+    "quote": "Linux 桌面的进步，靠这种脏活累活。",
+    "published": "2026-11-26",
+    "uid": "c840cde9de6cc57ebfe3b1fdea31be92"
+  },
+  {
+    "title": "microVM 也会打盹：空闲把内存换出去，来包自己醒",
+    "source": "HN Show HN",
+    "url": "https://github.com/tuananh/fastvm",
+    "content": "tuananh/fastvm 是基于 Cloud Hypervisor/KVM 的单机沙箱运行时：冷启动到 guest agent 就绪约 0.6 秒，空闲时自动睡眠、把内存页换到磁盘，等数据包到达再唤醒——唤醒时首帧已经排在 guest 自己的 virtio-net 队列里。宿主目录可通过 virtio-fs 共享，支持从快照派生独立副本、热插拔扩容。作者明说无稳定版，只适合一次性测试环境。",
+    "quote": "沙箱睡得比人快，醒得比闹钟还准。",
+    "published": "2026-11-26",
+    "uid": "e3bc98be3b6c3ca13d96ed82c6ea8b6f"
+  },
+  {
+    "title": "Pi Bot 开源：一群在你自己电脑上干活的 AI Bot，大脑也在本机",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1259779",
+    "content": "Pi Bot 是一个 11 月 21 日以 Apache-2.0 开源的桌面应用：一群有名字的 Bot，可以私聊也可以拉进群分工，统筹拆计划、成员各做一步，交付文件由程序检查，不通过就派回去返工。Bot 在你指定的文件夹里跑命令、改文件、操作电脑、调 MCP，高风险步骤先停下等你批准，每一步都记在本地操作记录里。卖点是数据不出机器，代价是算力和运维都得自己扛。",
+    "quote": "bot 住进你电脑，隐私和电费一起留下。",
+    "published": "2026-11-26",
+    "uid": "f910dfa14f7058094cedf7d67aebcc43"
+  },
+  {
+    "title": "1.5MB 的中文文本脱敏小模型：2K 字 17ms，无依赖",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1259724",
+    "content": "作者蒸馏了一个 1.5MB 的文本脱敏小模型，能识别姓名、住址、证件号等实体，支持中英，无依赖，2K 字识别 17ms，还配了在线 demo。小模型在垂直任务上打赢通用大模型是这两年最实用的趋势：不上传数据、不走网络、成本近乎为零，正好卡在合规要求最难受的位置。缺点是实体边界和长尾场景还得靠规则兜底。",
+    "quote": "1.5MB 就能识别你是谁，大模型白练了。",
+    "published": "2026-11-26",
+    "uid": "81682da91268494e94ebdcad44e09343"
+  },
+  {
+    "title": "把 @playwright/mcp 换成纯 Rust 管道：内存降 90.7%，速度反超 Chrome 2.76 倍",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1259622",
+    "content": "作者给 agent 复用本地 Chrome 登录态的工具 sessfork 换了后台：不用 Node 版 @playwright/mcp，改用纯 Rust 浏览器 Moli 做 12 标签页重型 DOM 压测，结果内存暴降 90.7%、速度反超 Chrome 2.76 倍，还附了 M4 上的复现步骤。结论反直觉：MCP 那层封装看着方便，实际是性能税。给 agent 造基础设施，迟早要把它剥掉。",
+    "quote": "MCP 一时爽，压测直接火葬场。",
+    "published": "2026-11-26",
+    "uid": "7135360cbffb5cbd5fcd6f83533eb629"
+  },
+  {
+    "title": "手机上用 SSH 连回自己电脑：这个 iOS 公测 app 让多个 agent 一起干活",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1259619",
+    "content": "Pervio 走最朴素路线：手机 SSH 连自己的 Mac/Linux，直接用电脑上已登录的 Claude Code、Codex、Cursor，没有第三方服务器，不用注册账号，也不用装常驻服务。除了看进度、看 diff，它做了两种协作模式：头脑风暴时让两个 agent 各想一遍再汇总分歧；长任务时一个执行、一个检查，配合 context/memory 迁移换 agent，还能把流程存成定时工作流。",
+    "quote": "没有云，只有一根 SSH，反而更放心。",
+    "published": "2026-11-26",
+    "uid": "8e9e1faaf74ffba29ee7a7bfd1d5c4f8"
+  },
+  {
+    "title": "给 coding agent 配个「秘书」：Gerdr 绕开终端直连结构化接口",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1259668",
+    "content": "作者同时开好几个 agent，时间全耗在派活和盯进度上，一出门就什么都管不了。Gerdr（MIT）不经过终端，直接调 Claude Code/Codex 的结构化接口，核心是一个 Superagent 秘书：你只跟它说话，它判断该去哪个仓库、派给谁，盯着 MR review 和流水线，只有要拍板才来找你，到点还写简报。界面是热更新源码，改坏了有急救面板；手机端是原生 App，不是把网页缩进手机。",
+    "quote": "终于有人承认，瓶颈是老板本人。",
+    "published": "2026-11-26",
+    "uid": "319013b8c5b50fba6f2e4e339f3c4416"
+  },
+  {
+    "title": "Rust + Tauri 2 重写代理客户端：内核 sing-box，三平台开源",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1259720",
+    "content": "ClashNova 支持三平台，界面用 Rust + Tauri 2，代理内核是 sing-box。功能覆盖系统代理、TUN 模式、规则分流、多级链式代理、本地订阅解析（不用在线转换）、DNS/IPv6/WebRTC 泄漏检测、Kill Switch 和恶意域名拦截，还带局域网文字与文件传输、实时流量统计与连接管理、7 种语言。GPL-3.0 开源，免费、无需注册。",
+    "quote": "代理客户端卷到最后，拼的是泄漏检测。",
+    "published": "2026-11-26",
+    "uid": "68c08b7d7d1cb01e6abfc1ad6971ce3c"
+  },
+  {
+    "title": "6MB 的 RSS 阅读器：把 AI 总结和花哨侧边栏全删了",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1259845",
+    "content": "作者嫌 RSS 阅读器越做越重——几百 MB 安装包，塞满 AI 总结、社交动态、复杂过滤规则。墨牍（Modu）只有 6MB，三栏布局，订阅、列表、正文同屏，长文可切专注模式。细节没省：只给摘要的源可一键抓全文且原文与全文各自记阅读位置，代码块高亮可复制，公式、表格、图注完整，脚注目录可跳转，音视频直链和字幕也支持。纯本地库，订阅和进度都在本机，可导出备份。",
+    "quote": "一个阅读器而已，别做成企业后台。",
+    "published": "2026-11-26",
+    "uid": "f37df097438fd772ea9284955d188ed6"
+  },
+  {
+    "title": "superpowers 32 万星：一套把 agent 关进流程里的开发方法论",
+    "source": "GitHub Trending Daily",
+    "url": "https://github.com/obra/superpowers",
+    "content": "obra/superpowers 是一套 agentic skills 框架和软件开发方法论，32 万 star 已经不能用「工具」形容了。它的核心不是给模型加能力，而是用固定流程约束模型：先澄清需求、再出计划、再分步实现、每步验证。换句话说，它治的是 agent 上来就瞎写代码的毛病；至于流程能不能救回判断力，那得看用的人。",
+    "quote": "给 agent 上流程，等于给野马套缰绳。",
+    "published": "2026-11-26",
+    "uid": "c3257d531a3c4d8943e81b60e8f94a95"
+  },
+  {
+    "title": "Obsidian 接 Claude Desktop/Cursor：用 TOON 把 token 开销砍掉 36.7%–45%",
+    "source": "Dev.to",
+    "url": "https://dev.to/obolonsky/connecting-obsidian-to-claude-desktop-cursor-via-mcp-toon-cutting-token-overhead-by-367-45-1fa4",
+    "content": "把个人 Obsidian 库通过 MCP 接进 Claude Desktop 或 Cursor，很快会撞上两个瓶颈：网页剪藏污染上下文、笔记体积撑爆 token 预算。作者的做法是先用 TOON（Token-Oriented Object Notation）做结构化压缩，再控制检索粒度，把 token 开销降了 36.7% 到 45%。思路不新但很实用：AI 时代，上下文管理就是新的数据库调优。",
+    "quote": "上下文不是越多越好，是越贵越要省。",
+    "published": "2026-11-26",
+    "uid": "4bdfbba6837fdc1426ec5c24a6e1fc0e"
+  },
+  {
+    "title": "200MB 文件存进浏览器，别让它先过一遍 .NET 内存",
+    "source": "Dev.to",
+    "url": "https://dev.to/lostbeard/save-large-files-in-the-browser-without-loading-them-into-net-52nf",
+    "content": "Blazor 应用要支持离线保存文件，2MB 照片没事，200MB 视频就得先找 200MB 的 .NET 内存兜住——可多数时候这些字节根本不需要进 .NET，只是从一处搬到另一处。文章用 OPFS（源私有文件系统，无需授权、其他站点读不到）让浏览器自己搬，并对比两种写法的 .NET 内存占用。需 .NET 10 SDK，示例通过 SpawnDev.SpawnJS 调 JS 侧流式接口。",
+    "quote": "内存不是硬盘的搬运工，浏览器才是。",
+    "published": "2026-11-26",
+    "uid": "d0e4176171e5b71ff45bf26e3faf19e7"
+  },
+  {
+    "title": "客服 agent 拿了 21/24 分，为什么还是不该上线",
+    "source": "Dev.to",
+    "url": "https://dev.to/arthur_araujo_a6f052e96d7/an-ai-support-agent-scored-2124-would-you-ship-it-38ak",
+    "content": "一个客户说同一单被扣了两次钱，而你的策略要求人工复核。agent 把它按普通工单分流、没标记转人工——这条要求就是没达成，其他题答得再好也没用。作者给的三步验收：先写一条合成工单并定义期望的队列、优先级和转人工动作，再用同一条工单跑两个版本，只看路由结果不看回复措辞，最后把「漏掉的必要转人工」单独作为发布门槛。他的演示里 21/24 就没过。",
+    "quote": "平均分是给汇报用的，漏单是给用户的。",
+    "published": "2026-11-26",
+    "uid": "116de8b164329fa3708b907ccf55a5d7"
+  },
+  {
+    "title": "不用 WebGL：纯 CSS 透视做一个能「走进画面」的首屏",
+    "source": "Dev.to",
+    "url": "https://dev.to/zeuslab/scroll-into-the-picture-a-depth-hero-with-css-perspective-an-easing-camera-and-a-cursor-light-4e3n",
+    "content": "常见首屏是图片垫在文字后面，这个版本让你滚进画面：镜头穿过主体，指针下的光斑透出影片的另一视角，穿过主体后三张卡片从景深里浮出。只有 HTML、CSS 和一小段脚本，三层铺满同一尺寸、各自 translateZ，再按 P/(P−z) 反向 scale 抵消透视缩小，视频与抠图共用 object-fit/object-position。无头 Chrome 实测七个滚动位置都稳定在 60–61fps。",
+    "quote": "3D 不一定靠 WebGL，也可能靠算术。",
+    "published": "2026-11-26",
+    "uid": "0a380471c300f9a3531650e3c5a60225"
+  },
+  {
+    "title": ".NET 11 发布当天，.NET 8 和 9 一起停止支持",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shenchuanchao/p/23779842/dotnet-11-released-dotnet-8-9-dead-upgrade-or-wait",
+    "content": ".NET 11 正式发布，同时 .NET 8 和 9 停止支持。文章梳理了 C# 15 的联合类型、封闭层次等新特性，以及 ASP.NET Core、Blazor、SDK、EF Core、MAUI 和 AI 开发链路的变化，并给出升级前要确认的目标框架、破坏性变更和第三方包兼容清单。对企业项目来说，这不是「要不要升」，而是「什么时候被迫升」——先查依赖再动手。",
+    "quote": "微软的节奏：新版发布，旧版当场去世。",
+    "published": "2026-11-26",
+    "uid": "81e6317ece49bd55641c4822623f88d9"
+  },
+  {
+    "title": "把 AI 的打断关进笼子：前 3 小时随便问，后 5 个半小时禁言",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/learnhow/p/23783409",
+    "content": "用 AI 写代码真正贵的是上下文切换：一次弹窗询问，重建心智模型要十几分钟。作者的解法不是让模型「少问」，而是用确定性规则切分权限——议题讨论期专门用来被打断，执行期默认禁止。实测 16:04 进讨论，19:07 五个强耦合功能定稿，之后到次日 00:42 五个半小时零弹窗跑完实现、交叉评审和合并；代价是人的介入被压缩、前移到开工前那三小时。",
+    "quote": "不是 AI 变乖了，是规则把它拴住了。",
+    "published": "2026-11-26",
+    "uid": "28b508485aa24302bc7e001311c7beb3"
+  },
+  {
+    "title": "不套 WebView：用纯 .NET 在 Avalonia 12 上重写一个 Monaco",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/token-ai/p/23780087",
+    "content": "想在 .NET 桌面里嵌代码编辑器只有两条路：塞 WebView 跑 Monaco，或硬改 WPF 编辑器。TKCode.Arc 选第三条：以 Monaco 为蓝本，用纯 .NET + Avalonia 12 自研 NativeAOT 友好的编辑器套件，含核心编辑器、DiffEditor 和 LSP 3.17 客户端。语法高亮、多光标、Minimap、行级 diff 都有，代价是全得自己写。",
+    "quote": "为了不背浏览器，重写了一遍浏览器。",
+    "published": "2026-11-26",
+    "uid": "503c33e676735806e58aa6f624e1b2d6"
+  },
+  {
+    "title": "模型换了一圈误差不动：脏的是特征管道，不是预测器",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/wang_yb/p/23781047",
+    "content": "预测器换来换去误差几乎不变，问题常在管道里的水平和季节变换：参数到底拿全量数据拟合，还是只用训练段。更阴的是自动逆变换会把这种污染恰好抵消，连 MAE 都不会报警。文章用一学期 2160 行、每小时在座人数的数据从头搭一条管道：定时间线、插值补 5 处掉点、去 24 小时季节、预测残差、自动加回，最后用滚动折验收，并强调判断管道干不干净要看参数有没有被不该看的数据改过。",
+    "quote": "误差没动，不代表管道没偷看未来。",
+    "published": "2026-11-26",
+    "uid": "6b920b404fb22dbec4d35e2b227c6cc6"
+  }
+]
