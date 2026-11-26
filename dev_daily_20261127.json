@@ -1,0 +1,253 @@
+[
+  {
+    "title": "1Password 后端被攻破：员工 GitHub 账号成了跳板",
+    "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+    "source": "HN Front Page",
+    "category": "security",
+    "lang": "en",
+    "content": "1Password 披露 11 月 19 日发现攻击者通过一名员工的 GitHub 账号进入后端：向服务推送恶意代码，下载了部分用户的姓名、邮箱、账号标识与登录时间等非机密元数据，还拿到 CI/CD 权限并复制了私有仓库源码。官方强调保险库内容未被访问，已轮换全部可能泄露的凭据。密码管理器被从供应链侧撬开，这比撞库可怕得多。",
+    "quote": "保险库没丢，丢的是通往保险库的钥匙串。",
+    "published": "2026-11-27",
+    "uid": "659c73568a907ee41b211184b7667e09"
+  },
+  {
+    "title": "nfs2root：Linux 内核 NFS 服务端潜伏 12 年的预认证远程 root",
+    "url": "https://opensec.in/blog/nfs2root-cve-2026-99362",
+    "source": "HN Front Page",
+    "category": "security",
+    "lang": "en",
+    "content": "安全团队披露 Linux 内核 NFS 服务端的预认证远程 root 漏洞 CVE-2026-99362，代号 nfs2root，问题代码已潜伏 12 年。攻击者无需任何凭据即可从网络侧拿到 root，影响所有对外提供 NFS 导出的服务器。文章给出成因分析与利用条件，运维该马上升级内核、收紧 2049 端口的暴露面了。",
+    "quote": "十二年没人看见，一看见就是 root。",
+    "published": "2026-11-27",
+    "uid": "5e6fbe953a5fd8900031717b68b797dc"
+  },
+  {
+    "title": "Ubuntu 补丁太慢：内核远程破坏漏洞公开九天仍无修复",
+    "content": "Hanno Böck 在 oss-security 点名 Ubuntu：内核 TCP 栈远程内存破坏 NoisyTCP（CVE-2026-99288）11 月 16 日公开，九天后仍无补丁，而其他发行版当天就有；AMD 虚拟化平台的 KVM 宿主机逃逸（CVE-2026-99312）同样没修。他指出上一起远程 TCP 破坏拖了几周，这类漏洞该按小时响应，不是按周排期。",
+    "quote": "别人当天修完，Ubuntu 还在排期表里。",
+    "source": "HN Front Page",
+    "url": "https://www.openwall.com/lists/oss-security/2026/11/25/9",
+    "published": "2026-11-27",
+    "uid": "02687b8975cd20f690099dd5020ef29b"
+  },
+  {
+    "title": "API Key 泄在 vibe coding 应用里，修复顺序比修复本身重要",
+    "content": "这篇只给顺序：先去服务商吊销并轮换，删代码没用，别人早复制走了；新 key 只放服务端环境变量，别用 VITE_、NEXT_PUBLIC_ 这类会打进浏览器的前缀；把调用挪到自己后端并加每用户限流；查账单用量、设消费上限；重建重部署、清 CDN 和 source map；进过 git 就当已公开，改历史救不了 fork。",
+    "quote": "删代码不算止损，吊销才是止血。",
+    "source": "Dev.to",
+    "url": "https://dev.to/proofforge_live/i-leaked-an-api-key-in-my-vibe-coded-app-here-is-the-order-to-fix-it-3m2a",
+    "published": "2026-11-27",
+    "uid": "e312c4cd9fdef0498cc1049fe243e470"
+  },
+  {
+    "title": "CLI-Anything：让所有软件都变成 Agent 可调用的 CLI",
+    "url": "https://github.com/HKUDS/CLI-Anything",
+    "source": "GitHub Trending Daily",
+    "category": "opensource",
+    "lang": "en",
+    "content": "HKUDS 的 CLI-Anything 喊出「让所有软件 Agent-Native」，思路是给现成软件套一层稳定的 CLI 接口，让 agent 能像人一样调用，而不是每个工具重写一遍集成；配套的 CLI-Hub 用来发现和分发这些封装。项目已冲到 6.6 万 star，说明 agent 工具化集成的痛点是真的。",
+    "quote": "Agent 不缺智商，缺的是能按的按钮。",
+    "published": "2026-11-27",
+    "uid": "12e9527951797ad091ed4942877b8b76"
+  },
+  {
+    "title": "Rigdepot：把团队的 Skill、MCP、工作流收进一个 Git 仓库",
+    "url": "https://www.v2ex.com/t/1260026#reply0",
+    "source": "V2EX Share",
+    "category": "showcase",
+    "lang": "zh",
+    "content": "Rigdepot 把团队里散落的 Skill、MCP、工作流和 Agent 配置收进一个 Git 仓库，用 rgd sync 一键装到 Claude Code、Codex、OpenCode 等本机工具。它解决的是很具体的脏活：同一个 Jira MCP 在每个工具里重配一遍、好用的 Skill 靠群里传压缩包、个人令牌明文躺在配置里。Go 编写，Apache-2.0。",
+    "quote": "团队 AI 配置的尽头，是一个 Git 仓库。",
+    "published": "2026-11-27",
+    "uid": "430f17e1fe608bf1c04920fef3628559"
+  },
+  {
+    "title": "别把 Box 凭据复制进每个 agent：用蓝图管住一支 agent 舰队",
+    "content": "四个 agent 跑房贷流程，都要读 Box 里的敏感文件，常见做法是把服务账号凭据复制进每个 agent，结果无法审计、无法按人授权、无法单独停用。文中改成集中管理的 Connector，下发短时、绑定用户的访问；每个 agent 以版本化 blueprint 交付，记录作者、框架模型、可调工具、扫描记录和凭据范围，出事能定位到版本。",
+    "quote": "凭据复制得越顺手，审计时越像考古。",
+    "source": "Dev.to",
+    "url": "https://dev.to/postman/stop-copying-box-credentials-into-every-ai-agent-eio",
+    "published": "2026-11-27",
+    "uid": "5edab414ac7c1369dd4f10412c2890ae"
+  },
+  {
+    "title": "session-tape：把编码助手的会话搬到另一个工具里继续",
+    "url": "https://www.v2ex.com/t/1260113#reply1",
+    "source": "V2EX Share",
+    "category": "showcase",
+    "lang": "zh",
+    "content": "session-tape 把编码助手的完整会话历史导出，再导入另一个工具继续，支持 6 个产品。它不是复制聊天记录那种糊弄法，而是保留「你说的话 + 工具调用 + 结果」的轮次结构，让新工具能真正接上上下文。频繁在 Claude Code、Codex 之间横跳的人，终于不用每次重新解释项目背景。",
+    "quote": "换工具不换脑子，这才叫可移植。",
+    "published": "2026-11-27",
+    "uid": "d0e4d6bb20dacfcf2b3fcf2e65321474"
+  },
+  {
+    "title": "纯汇编跑 Qwen3-0.6B：12 KB 推理、22 KB 裸机 OS",
+    "url": "https://github.com/alesha-pro/llm.asm/tree/main/02-baremetal-os",
+    "source": "HN Front Page",
+    "category": "opensource",
+    "lang": "en",
+    "content": "一个纯 x86-64 NASM 汇编项目：Qwen3-0.6B 推理只要 12 KB，可启动的裸机 OS 22 KB，从零写的 Mini-GPT 训练器 32 KB，全都没用 C、libc 或任何依赖。它把大模型推理压到没有操作系统的层面，是理解 transformer 与硬件边界的好教材，也证明「跑模型」未必需要一整套 Python 栈。",
+    "quote": "12 KB 跑 Qwen，node_modules 沉默了。",
+    "published": "2026-11-27",
+    "uid": "53149b6fe6a122b5bc04b054c74d6081"
+  },
+  {
+    "title": "minimind：两小时从零训出 64M 小模型",
+    "url": "https://github.com/jingyaogong/minimind",
+    "source": "GitHub Trending Daily",
+    "category": "opensource",
+    "lang": "zh",
+    "content": "minimind 用两小时从零训出一个 64M 参数的小语言模型，代码、数据管线与训练脚本全部开源，已拿到 7 万+ star。它的价值不在效果对标大模型，而在于把预训练、SFT、LoRA 的完整流程压缩到一张消费级显卡能跑完的规模，适合拿来搞懂 LLM 到底是怎么被训出来的。",
+    "quote": "两小时训完，比我配环境还快一点。",
+    "published": "2026-11-27",
+    "uid": "73c10ecbf681fc5a4f11a3dfa723a371"
+  },
+  {
+    "title": "C# 15：等了十一年的联合类型，和搬进运行时的 async",
+    "content": "C# 15 随 .NET 11 发布，联合类型终于落地，配合 closed 封闭层次，switch 漏分支从线上事故变成编译错误。更实在的是 Runtime Async：挂起恢复搬进运行时，同步完成的异步调用从 21.2 纳秒降到 6.15 纳秒，Task 分配归零。作者用 MoonBit 提的「安全、可验证、编译快、运行快」四条标准逐项打分。",
+    "quote": "类型系统替你查漏，比 code review 靠谱。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/shanyou/p/23794454",
+    "published": "2026-11-27",
+    "uid": "f302fe8177b9cae24bd890bb0488ca21"
+  },
+  {
+    "title": "多模态文档检索：整页当图片编码，用 MaxSim 做 token 级匹配",
+    "content": "PDF 报表和扫描件先 OCR 再切块，表格图表的信息容易丢。ColPali、ColQwen 换思路：整页当图片编码，每个 patch 出一个向量，查询按 token 与页面做 MaxSim 匹配。作者用 ColQwen2 在 ViDoRe 上实测，对比单向量、多向量与两阶段检索的效果和存储开销，并在 OpenSearch 上落地 k-NN 召回加 lateInteractionScore 重排。",
+    "quote": "把 PDF 当图片搜，OCR 那一步省了。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/zackstang/p/23791268",
+    "published": "2026-11-27",
+    "uid": "b6d2bbf33be9581ca87606af6b721c24"
+  },
+  {
+    "title": "minipg：把 PostgreSQL 塞进一个可执行文件",
+    "url": "https://progrium.github.io/minipg/",
+    "source": "HN Front Page",
+    "category": "tool",
+    "lang": "en",
+    "content": "progrium 发布 minipg：把 PostgreSQL 打包成一个可执行文件，一个 .pgdb 目录就是完整数据库，数据、配置、凭据和版本都在里面。它用 Zig 写的 h9 库直接跑 Alpine 的 Postgres 二进制，不需要 Linux 内核、虚拟机镜像或 Docker；服务按需启动、闲置自停。想给本地开发或边缘场景配个零运维数据库的，值得试。",
+    "quote": "Docker 装数据库的时代，被一个二进制终结了？",
+    "published": "2026-11-27",
+    "uid": "54dfa9c0b4afc9e37390eaef90cd8e5e"
+  },
+  {
+    "title": "yolow64 0.4.0：AVX-512 让 Base64 编码跑到 164 GB/s",
+    "url": "https://dev.to/yolow92/yolow64-040-avx-512-completes-the-picture-164-gbs-encode-101-gbs-decode-196e",
+    "source": "Dev.to",
+    "category": "performance",
+    "lang": "en",
+    "content": "yolow64 0.4.0 是 Rust 写的 Base64 编解码库，零运行时依赖，按 CPU 能力运行时派发 SIMD 内核。这一版补齐 AVX-512：编码 164 GB/s、解码 101 GB/s，而且每个字节都做了合法性校验，不是拿正确性换速度。对日志、消息队列、序列化这类吞吐敏感场景，是个可以直接替换的实现。",
+    "quote": "Base64 都 GB/s 级了，接口还在 200ms。",
+    "published": "2026-11-27",
+    "uid": "d55ca350d6108ded63298863df05753c"
+  },
+  {
+    "title": "一个网页标签里并排跑三个 Linux 虚拟机，各开一个真浏览器",
+    "content": "纯静态网页里同时开 Firefox、Chromium、Epiphany，每个都在自己的 Linux 虚拟机里，虚拟机是编译成 WebAssembly 的内核，浏览器直接用 nixpkgs 的真实构建，没有后端。填一个 URL 三栏同时加载，可切手机窗口和 UA、看每个 VM 的 CPU 内存、汇总 console。首次要下载 1 到 3 分钟，建议 8GB 内存。",
+    "quote": "测兼容性，终于不用装三个系统了。",
+    "source": "HN Show HN",
+    "url": "https://michidk.github.io/sidebyside/",
+    "published": "2026-11-27",
+    "uid": "bad7aac20d632f203e4f9d305e7e933f"
+  },
+  {
+    "title": "把合成器音色设计做成闯关游戏，90% 匹配才结账",
+    "content": "每单给你一个参考音色，你在模块架上连线、拧旋钮，靠耳朵和信号图把它复现出来，匹配度到 90% 才算交活、才能拿钱。站点从基础模块教起，也能直接跳到感兴趣的关卡；作者说自己就是想更系统地练音色，顺手拉 Claude 写成了游戏。要戴耳机，桌面和手机都能玩。",
+    "quote": "练音色像背单词，终于有人做成游戏了。",
+    "source": "HN Show HN",
+    "url": "https://swarkentin.github.io/synth-patch-hero/",
+    "published": "2026-11-27",
+    "uid": "4869463f80136a8975613f5eeda2e35f"
+  },
+  {
+    "title": "16G 内存不够用，我把旧安卓手机接进了 k3s 集群",
+    "url": "https://www.cnblogs.com/shih945/p/23795368",
+    "source": "博客园 Cnblogs",
+    "category": "devops",
+    "lang": "zh",
+    "content": "作者主力机只有 16G 内存，本地 Debian 虚拟机里跑 k3s，再叠 Java 服务、MySQL、Redis、Nginx，IDEA 一建索引整机卡死。加内存条之外，他的解法是把淘汰的旧安卓手机接进 k3s 集群当节点，把一部分负载挪出主机。文章记录了改造过程与实测效果，对想在低配环境里折腾集群的人很有参考价值。",
+    "quote": "手机退役不代表退休，还能进集群打工。",
+    "published": "2026-11-27",
+    "uid": "9f4ba6e606401a5fb553e825834666a1"
+  },
+  {
+    "title": "DGX Spark 首启翻车实录：八台机器卡在开机这一步",
+    "url": "https://www.cnblogs.com/kexxxfeng/p/23794471",
+    "source": "博客园 Cnblogs",
+    "category": "hardware",
+    "lang": "zh",
+    "content": "八台 DGX Spark 批量初始化，全部卡在开机阶段：原装电源接着没问题，一旦接上扩展坞的 PD 供电，机器就不肯起来。作者顺手核实了社区里流传的几条说法，有对有错。买了 GB10 小机器准备组集群的团队，值得先看看这份翻车记录，少走一遍同样的弯路。",
+    "quote": "几十万的机器，败给一个 PD 握手。",
+    "published": "2026-11-27",
+    "uid": "348a4c5f1a306d390eae1332f4174400"
+  },
+  {
+    "title": "RavomIO：Rust 重写一个嵌入式开发工作台，想替掉 PlatformIO",
+    "url": "https://www.v2ex.com/t/1260038#reply0",
+    "source": "V2EX Share",
+    "category": "showcase",
+    "lang": "zh",
+    "content": "RavomIO 是 Rust 写的跨平台嵌入式开发工作台（egui + probe-rs），内置 2340+ 开发板注册表，支持从 platformio.ini 一键迁移到 ravom.toml，原生 probe-rs 烧录与 RTT 调试、实时波形绘制。作者的目标很直接：替掉被 Python 环境和零碎工具链拖累的 PlatformIO。",
+    "quote": "PlatformIO 的 Python 环境，早该被替掉。",
+    "published": "2026-11-27",
+    "uid": "0cfef7a4fec50d4d1fa664e43a788bc3"
+  },
+  {
+    "title": "人机通信协议的不对等性：聊天框承载不了复杂 AI 工程",
+    "url": "https://www.cnblogs.com/learnhow/p/23794411",
+    "source": "博客园 Cnblogs",
+    "category": "opinion",
+    "lang": "zh",
+    "content": "文章认为 AI 工程真正的瓶颈不是模型能力，而是人与 AI 之间的通信协议不对等：聊天框把有结构、有状态、可审计的工程协作压成一条线性对话，需求、约束、决策依据在往返中一起丢失。要让 agent 承担复杂工程，得先设计能承载结构与状态的交互形态，而不是继续加长 prompt。",
+    "quote": "聊天框装不下工程，prompt 再长也没用。",
+    "published": "2026-11-27",
+    "uid": "97afd3750af7b5cbfce0f53efbac8557"
+  },
+  {
+    "title": "安卓点击器的三条路：坐标会歪，图像是兜底，控件树才是正道",
+    "content": "坐标点击换分辨率就歪、App 改版就废；图像识别要截图、换皮肤就失配，只适合兜底；真正被浪费的是无障碍服务的控件树——节点自带 text、id、desc，按语义定位既不怕换机也不怕改版。作者引 AndroidLab（GPT-4o 成功率仅 31.16%）和字节 Fastbot2 的生产实践，结论是坐标入门、图像兜底、控件树正道。",
+    "quote": "点了十年坐标，才知道控件会自报家门。",
+    "source": "博客园 Cnblogs",
+    "url": "https://www.cnblogs.com/xiaomikk/p/23758951",
+    "published": "2026-11-27",
+    "uid": "7300fb64325f3ab1990825df53d169f8"
+  },
+  {
+    "title": "Kubernetes 1.38 塞进 27 个 alpha：平台团队的新风险清单",
+    "content": "1.38 定在 12 月 16 日，净增 27 个 alpha 特性，麻烦不只在功能表：DRA 感知抢占可能反复驱逐、Pod 可控 swap 带来 I/O 抖动、新 EvictionRequest API 会被失控控制器刷爆、条件授权把 webhook 延迟塞进鉴权链、动态注入容器要动 cgroup 和网络命名空间。作者建议只当架构预览，先开沙箱集群验证。",
+    "quote": "27 个 alpha，27 种半夜被叫醒的方式。",
+    "source": "Dev.to",
+    "url": "https://dev.to/alitron/kubernetes-138-adds-27-alpha-features-raising-operational-complexity-for-teams-evaluating-2phf",
+    "published": "2026-11-27",
+    "uid": "46fbbee079c41b540aa1fc25dbad47a8"
+  },
+  {
+    "title": "Lions 的 Unix 注释：被禁二十年，靠复印件教出一代人",
+    "content": "John Lions 1976 年在新南威尔士大学为 Unix V6 源码写讲义，1977 年起在持牌院校间流传，Bell Labs 后来接手发行。1979 年 AT&T 收紧授权，课堂不许再讲源码，这本书转入地下，学生靠复印本学了近二十年。社区持续向 AT&T、Novell、SCO 申请出版许可，1996 年才正式成书，Ritchie 还写了序。",
+    "quote": "一本教材被禁二十年，反而教会一代人写系统。",
+    "source": "HN Front Page",
+    "url": "https://fosscomics.com/posts/17.%20Lions%27%20Commentary%20on%20Unix/",
+    "published": "2026-11-27",
+    "uid": "c734dbffb7d6d21a9bf6b5b56f383ab6"
+  },
+  {
+    "title": "Agentero：把文献、笔记、实验表和 LaTeX 收进一个本地工作区",
+    "content": "科研工作流散在 Zotero、Obsidian、Overleaf、Claude Code 之间，本地 agent 拿不到完整上下文。Agentero 把文献、笔记、实验表格和 LaTeX 写作收进同一个本地工作区：PDF 高亮与结构化文本、双语对照、双链笔记、可让 agent 批量填指标的数据表，回答里引用的段落能点回原文核对。开源，拿过 GOAI 二等奖。",
+    "quote": "PDF、笔记、LaTeX 各住一间，agent 只好瞎猜。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1260064",
+    "published": "2026-11-27",
+    "uid": "1b4461a39f0a6a0a8dcd94526d6f4102"
+  },
+  {
+    "title": "三小时搓出的《FDE 的 100 种死法》：把交付翻车做成游戏",
+    "content": "扮演驻场工程师「黑飞」，在客户信任、系统稳定、项目利润、个人理智四个数值归零前，扛住甲方 VP、内网守门神、画饼销售六位克星。收录 100 种死法，其中 96 个来自真实 B2B/AI 交付翻车案例，五条命可以带伤续命。作者用 mopan.ai 的引擎三小时做出原型，补上全网计数和比惨排行榜，导出代码自己部署。",
+    "quote": "把交付血泪做成游戏，通关全靠命硬。",
+    "source": "V2EX Share",
+    "url": "https://www.v2ex.com/t/1260162",
+    "published": "2026-11-27",
+    "uid": "097c604491010b2a832e441d53119b10"
+  }
+]
