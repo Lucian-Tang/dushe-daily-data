@@ -1,0 +1,167 @@
+[
+  {
+    "title": "1Password 后端被攻破：员工 GitHub 账号成了跳板",
+    "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+    "source": "HN Front Page",
+    "category": "security",
+    "lang": "en",
+    "content": "1Password 披露 11 月 19 日发现攻击者通过一名员工的 GitHub 账号进入后端：向服务推送恶意代码，下载了部分用户的姓名、邮箱、账号标识与登录时间等非机密元数据，还拿到 CI/CD 权限并复制了私有仓库源码。官方强调保险库内容未被访问，已轮换全部可能泄露的凭据。密码管理器被从供应链侧撬开，这比撞库可怕得多。",
+    "quote": "保险库没丢，丢的是通往保险库的钥匙串。",
+    "published": "2026-11-27",
+    "uid": "9d92fa16-84c8-56f5-bf16-19081bd707de"
+  },
+  {
+    "title": "nfs2root：Linux 内核 NFS 服务端潜伏 12 年的预认证远程 root",
+    "url": "https://opensec.in/blog/nfs2root-cve-2026-99362",
+    "source": "HN Front Page",
+    "category": "security",
+    "lang": "en",
+    "content": "安全团队披露 Linux 内核 NFS 服务端的预认证远程 root 漏洞 CVE-2026-99362，代号 nfs2root，问题代码已潜伏 12 年。攻击者无需任何凭据即可从网络侧拿到 root，影响所有对外提供 NFS 导出的服务器。文章给出成因分析与利用条件，运维该马上升级内核、收紧 2049 端口的暴露面了。",
+    "quote": "十二年没人看见，一看见就是 root。",
+    "published": "2026-11-27",
+    "uid": "a11cd1d0-dfb3-5bcf-b79f-78df0798e2de"
+  },
+  {
+    "title": "minipg：把 PostgreSQL 塞进一个可执行文件",
+    "url": "https://progrium.github.io/minipg/",
+    "source": "HN Front Page",
+    "category": "tool",
+    "lang": "en",
+    "content": "progrium 发布 minipg：把 PostgreSQL 打包成一个可执行文件，一个 .pgdb 目录就是完整数据库，数据、配置、凭据和版本都在里面。它用 Zig 写的 h9 库直接跑 Alpine 的 Postgres 二进制，不需要 Linux 内核、虚拟机镜像或 Docker；服务按需启动、闲置自停。想给本地开发或边缘场景配个零运维数据库的，值得试。",
+    "quote": "Docker 装数据库的时代，被一个二进制终结了？",
+    "published": "2026-11-27",
+    "uid": "31011883-95db-5a33-9567-f2503f258aef"
+  },
+  {
+    "title": "纯汇编跑 Qwen3-0.6B：12 KB 推理、22 KB 裸机 OS",
+    "url": "https://github.com/alesha-pro/llm.asm/tree/main/02-baremetal-os",
+    "source": "HN Front Page",
+    "category": "opensource",
+    "lang": "en",
+    "content": "一个纯 x86-64 NASM 汇编项目：Qwen3-0.6B 推理只要 12 KB，可启动的裸机 OS 22 KB，从零写的 Mini-GPT 训练器 32 KB，全都没用 C、libc 或任何依赖。它把大模型推理压到没有操作系统的层面，是理解 transformer 与硬件边界的好教材，也证明「跑模型」未必需要一整套 Python 栈。",
+    "quote": "12 KB 跑 Qwen，node_modules 沉默了。",
+    "published": "2026-11-27",
+    "uid": "b6bb5ea1-da9d-5ff0-aa6d-64b9e2a39dd5"
+  },
+  {
+    "title": "CLI-Anything：让所有软件都变成 Agent 可调用的 CLI",
+    "url": "https://github.com/HKUDS/CLI-Anything",
+    "source": "GitHub Trending Daily",
+    "category": "opensource",
+    "lang": "en",
+    "content": "HKUDS 的 CLI-Anything 喊出「让所有软件 Agent-Native」，思路是给现成软件套一层稳定的 CLI 接口，让 agent 能像人一样调用，而不是每个工具重写一遍集成；配套的 CLI-Hub 用来发现和分发这些封装。项目已冲到 6.6 万 star，说明 agent 工具化集成的痛点是真的。",
+    "quote": "Agent 不缺智商，缺的是能按的按钮。",
+    "published": "2026-11-27",
+    "uid": "1edde517-0dfc-5dd0-94ac-ba83eab9ba2f"
+  },
+  {
+    "title": "minimind：两小时从零训出 64M 小模型",
+    "url": "https://github.com/jingyaogong/minimind",
+    "source": "GitHub Trending Daily",
+    "category": "opensource",
+    "lang": "zh",
+    "content": "minimind 用两小时从零训出一个 64M 参数的小语言模型，代码、数据管线与训练脚本全部开源，已拿到 7 万+ star。它的价值不在效果对标大模型，而在于把预训练、SFT、LoRA 的完整流程压缩到一张消费级显卡能跑完的规模，适合拿来搞懂 LLM 到底是怎么被训出来的。",
+    "quote": "两小时训完，比我配环境还快一点。",
+    "published": "2026-11-27",
+    "uid": "8473e358-c513-59a1-8986-c3d2962f9faa"
+  },
+  {
+    "title": "diagram-design：给编码 Agent 的 52 种「不土」图表",
+    "url": "https://github.com/cathrynlavery/diagram-design",
+    "source": "GitHub Trending Daily",
+    "category": "tool",
+    "lang": "en",
+    "content": "给编码 agent 用的图表设计规范与素材库：覆盖 Claude Code、Codex、GitHub Copilot、Cursor 等工具，内置 52 种图表类型，输出自包含的 HTML + SVG。作者明确反对 Mermaid 那种千篇一律的默认样式，主打编辑级排版与克制的视觉细节，适合让 AI 生成能直接进文档和幻灯片的图。",
+    "quote": "受够了 Mermaid 的直角和蓝灰配色。",
+    "published": "2026-11-27",
+    "uid": "ffef6cc6-afa6-5113-8e37-e2049c44da23"
+  },
+  {
+    "title": "Rigdepot：把团队的 Skill、MCP、工作流收进一个 Git 仓库",
+    "url": "https://www.v2ex.com/t/1260026#reply0",
+    "source": "V2EX Share",
+    "category": "showcase",
+    "lang": "zh",
+    "content": "Rigdepot 把团队里散落的 Skill、MCP、工作流和 Agent 配置收进一个 Git 仓库，用 rgd sync 一键装到 Claude Code、Codex、OpenCode 等本机工具。它解决的是很具体的脏活：同一个 Jira MCP 在每个工具里重配一遍、好用的 Skill 靠群里传压缩包、个人令牌明文躺在配置里。Go 编写，Apache-2.0。",
+    "quote": "团队 AI 配置的尽头，是一个 Git 仓库。",
+    "published": "2026-11-27",
+    "uid": "bf94a64c-1354-5fb5-bb4d-afaaa695d556"
+  },
+  {
+    "title": "session-tape：把编码助手的会话搬到另一个工具里继续",
+    "url": "https://www.v2ex.com/t/1260113#reply1",
+    "source": "V2EX Share",
+    "category": "showcase",
+    "lang": "zh",
+    "content": "session-tape 把编码助手的完整会话历史导出，再导入另一个工具继续，支持 6 个产品。它不是复制聊天记录那种糊弄法，而是保留「你说的话 + 工具调用 + 结果」的轮次结构，让新工具能真正接上上下文。频繁在 Claude Code、Codex 之间横跳的人，终于不用每次重新解释项目背景。",
+    "quote": "换工具不换脑子，这才叫可移植。",
+    "published": "2026-11-27",
+    "uid": "429734ad-1c98-56d6-b722-bbb3cc570c8e"
+  },
+  {
+    "title": "RavomIO：Rust 重写一个嵌入式开发工作台，想替掉 PlatformIO",
+    "url": "https://www.v2ex.com/t/1260038#reply0",
+    "source": "V2EX Share",
+    "category": "showcase",
+    "lang": "zh",
+    "content": "RavomIO 是 Rust 写的跨平台嵌入式开发工作台（egui + probe-rs），内置 2340+ 开发板注册表，支持从 platformio.ini 一键迁移到 ravom.toml，原生 probe-rs 烧录与 RTT 调试、实时波形绘制。作者的目标很直接：替掉被 Python 环境和零碎工具链拖累的 PlatformIO。",
+    "quote": "PlatformIO 的 Python 环境，早该被替掉。",
+    "published": "2026-11-27",
+    "uid": "da5f0fad-8330-5001-9062-1e3278f1824e"
+  },
+  {
+    "title": "新 VPS 的 SSH 加固清单：一小时收掉暴露面",
+    "url": "https://dev.to/phantomvps/ssh-hardening-checklist-for-a-fresh-ubuntu-2404-or-debian-12-vps-4k8k",
+    "source": "Dev.to",
+    "category": "devops",
+    "lang": "en",
+    "content": "一篇面向全新 Ubuntu 24.04 / Debian 12 VPS 的 SSH 加固清单：公网机器上线几分钟就会开始吃密码爆破，所以重点是把暴露面一步步收掉——密钥登录、关闭密码认证、限制用户与来源、防火墙与 fail2ban、保持补丁更新，整套大约一小时能做完。适合当新机器开荒的检查表。",
+    "quote": "机器刚上线，爆破脚本比你更勤奋。",
+    "published": "2026-11-27",
+    "uid": "1841f049-9859-5de8-b2b5-55b7791c8809"
+  },
+  {
+    "title": "yolow64 0.4.0：AVX-512 让 Base64 编码跑到 164 GB/s",
+    "url": "https://dev.to/yolow92/yolow64-040-avx-512-completes-the-picture-164-gbs-encode-101-gbs-decode-196e",
+    "source": "Dev.to",
+    "category": "performance",
+    "lang": "en",
+    "content": "yolow64 0.4.0 是 Rust 写的 Base64 编解码库，零运行时依赖，按 CPU 能力运行时派发 SIMD 内核。这一版补齐 AVX-512：编码 164 GB/s、解码 101 GB/s，而且每个字节都做了合法性校验，不是拿正确性换速度。对日志、消息队列、序列化这类吞吐敏感场景，是个可以直接替换的实现。",
+    "quote": "Base64 都 GB/s 级了，接口还在 200ms。",
+    "published": "2026-11-27",
+    "uid": "64847145-1118-5a21-afc6-af086971b424"
+  },
+  {
+    "title": "16G 内存不够用，我把旧安卓手机接进了 k3s 集群",
+    "url": "https://www.cnblogs.com/shih945/p/23795368",
+    "source": "博客园 Cnblogs",
+    "category": "devops",
+    "lang": "zh",
+    "content": "作者主力机只有 16G 内存，本地 Debian 虚拟机里跑 k3s，再叠 Java 服务、MySQL、Redis、Nginx，IDEA 一建索引整机卡死。加内存条之外，他的解法是把淘汰的旧安卓手机接进 k3s 集群当节点，把一部分负载挪出主机。文章记录了改造过程与实测效果，对想在低配环境里折腾集群的人很有参考价值。",
+    "quote": "手机退役不代表退休，还能进集群打工。",
+    "published": "2026-11-27",
+    "uid": "f2f98377-7565-5d4c-897e-35660ebc8bac"
+  },
+  {
+    "title": "DGX Spark 首启翻车实录：八台机器卡在开机这一步",
+    "url": "https://www.cnblogs.com/kexxxfeng/p/23794471",
+    "source": "博客园 Cnblogs",
+    "category": "hardware",
+    "lang": "zh",
+    "content": "八台 DGX Spark 批量初始化，全部卡在开机阶段：原装电源接着没问题，一旦接上扩展坞的 PD 供电，机器就不肯起来。作者顺手核实了社区里流传的几条说法，有对有错。买了 GB10 小机器准备组集群的团队，值得先看看这份翻车记录，少走一遍同样的弯路。",
+    "quote": "几十万的机器，败给一个 PD 握手。",
+    "published": "2026-11-27",
+    "uid": "e27c2303-89ff-502c-a245-8c26fc9d6c10"
+  },
+  {
+    "title": "人机通信协议的不对等性：聊天框承载不了复杂 AI 工程",
+    "url": "https://www.cnblogs.com/learnhow/p/23794411",
+    "source": "博客园 Cnblogs",
+    "category": "opinion",
+    "lang": "zh",
+    "content": "文章认为 AI 工程真正的瓶颈不是模型能力，而是人与 AI 之间的通信协议不对等：聊天框把有结构、有状态、可审计的工程协作压成一条线性对话，需求、约束、决策依据在往返中一起丢失。要让 agent 承担复杂工程，得先设计能承载结构与状态的交互形态，而不是继续加长 prompt。",
+    "quote": "聊天框装不下工程，prompt 再长也没用。",
+    "published": "2026-11-27",
+    "uid": "2d552d64-33f8-5189-a378-5cda13465d69"
+  }
+]
