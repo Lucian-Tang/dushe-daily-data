@@ -1,0 +1,167 @@
+[
+  {
+    "title": "离散对数被「确定性亚指数」攻破？一篇 ePrint 论文炸了密码学圈",
+    "url": "https://eprint.iacr.org/2026/3020",
+    "source": "HN Front Page",
+    "category": "security",
+    "lang": "en",
+    "content": "浙大团队在 ePrint 挂出 2026/3020：假设「2026 年 10 月 OpenAI 的 Cauchy–Hermite 布尔张量收缩构造」成立，则存在统一确定性图灵机，以 p^o(1) 最坏时间求解素域椭圆曲线与 F_p* 上的离散对数，零随机比特，不依赖 GRH 与光滑性启发。若该假设成立，ECDSA 与 DH 全线告急。HN 160 分 71 评。",
+    "quote": "密码学的冬天，从一条假设开始。",
+    "published": "2026-11-28",
+    "uid": "0a967524-db46-5d8f-82e3-52ea1b108c2f"
+  },
+  {
+    "title": "黑五前夜：WebRTC 侧信道盗卡脚本潜伏五家电商",
+    "url": "https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer",
+    "source": "HN Front Page",
+    "category": "security",
+    "lang": "en",
+    "content": "InfoHawk 发现 Lascana、Samsonite、Revolve 等五家电商在黑五前被植入盗卡脚本，载体是被篡改的营销像素、Cookie 同意组件和 CDN 文件。脚本用 WebRTC 建隐蔽信道，在用户输入卡号、CVV、姓名地址电话的瞬间外传，且发生在商店校验支付前——订单被拒也可能已被盗刷，页面毫无异常。厂商 11/24–25 已清理，泄露量未知。",
+    "quote": "付款还没成功，卡已经先出国了。",
+    "published": "2026-11-28",
+    "uid": "95bca534-ab94-50b3-874a-31c12f5a42f7"
+  },
+  {
+    "title": "美国空军云计算平台被攻破",
+    "url": "https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163",
+    "source": "HN Front Page",
+    "category": "security",
+    "lang": "en",
+    "content": "Sky News 11 月 27 日报道，美国空军云计算平台遭黑客入侵，报道未披露入侵路径、影响范围以及是否涉及敏感数据。该条在 HN 拿到 156 分、87 条评论，是当日安全板块热度第二。原文对爬虫返回 403，本条仅依据标题与 HN 榜单信息整理，细节需等官方通报。对把「上云」当默认安全前提的团队，这是一次提醒：云是别人的机房，不是别人的责任。",
+    "quote": "上云不等于上天，照样被人捅下来。",
+    "published": "2026-11-28",
+    "uid": "c7a16f8c-cc02-5276-b23e-bd0c4f76fa9e"
+  },
+  {
+    "title": "Pimalaya 全家桶一次发版：Himalaya v3 与 pimdir 标准落地",
+    "url": "https://blog.pimalaya.org/pimalaya-goes-stable/",
+    "source": "HN Front Page",
+    "category": "opensource",
+    "lang": "en",
+    "content": "邮件 CLI Himalaya v3.0.0 领衔，Neverest、Cardamum、Calendula、Carillon 齐发 v1，Ortie 与 Comodoro 到 v3，pimdir 规范首发 1.0 并配 Rust 实现 io-pimdir。作者解释为何一次性大版本：这一年主线是整合与标准化，代价是「每个工具都破坏了某些人的用法」。终端党今年最完整的一套 PIM 工具链。",
+    "quote": "GUI 邮件客户端，终于可以彻底卸载了。",
+    "published": "2026-11-28",
+    "uid": "bd4691b5-d419-53a6-8013-f9c397e106c9"
+  },
+  {
+    "title": "黑五硬盘实录：同款 20TB 两年贵了 300 美元",
+    "url": "https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/",
+    "source": "HN Front Page",
+    "category": "hardware",
+    "lang": "en",
+    "content": "Alex Kretzschmar 翻出八年购盘账单：2018 年 10TB 每 TB 18 美元，2023 年 18TB 低至 11.11，2024 年 20TB 只要 12.50；今年黑五同款 20TB EasyStore 标价 549.99 美元，折合 27.50/TB，比两年前贵 300 美元。他每年黑五换盘，如今考虑把十块压成五块重做 zpool。HN 488 分 422 评。",
+    "quote": "黑五的意义，从省钱变成了见证历史。",
+    "published": "2026-11-28",
+    "uid": "f49fd11d-66c9-5f26-8dad-4712d6829d77"
+  },
+  {
+    "title": "Claude Code 重构 1572 行函数：测试全绿，人还是不敢合",
+    "url": "https://www.v2ex.com/t/1260469",
+    "source": "V2EX Share",
+    "category": "ai-coding",
+    "lang": "zh",
+    "content": "楼主的 AIGC 项目有个 1572 行后台任务函数，用 Claude Code 分四步重构到 150 行，圈复杂度从 143 降到 7，6471 个测试全过，但文件总长反增 31%。他不放心：比对数据库操作与日志，发现多了一次查询；生成 12000 个成功/失败/超时/限流场景对比新旧行为，结果一致；再故意注入 63 处错误，补测后全部捕获。结论：改码成本降了，验证成本没降。",
+    "quote": "测试全过的那一刻，才是最吓人的。",
+    "published": "2026-11-28",
+    "uid": "09a685b9-92c9-500e-9044-25466737dde3"
+  },
+  {
+    "title": "Namo：在飞书里 @ 一下，让本机 Codex 干活",
+    "url": "https://www.v2ex.com/t/1260337",
+    "source": "V2EX Share",
+    "category": "tooling",
+    "lang": "zh",
+    "content": "作者受不了 Files 卡顿、资源管理器一碰 NAS 休眠就无响应，用 Rust + GPUI 写了 Windows 文件管理器 Arke：目录读取、排序、缩略图、搜索、复制删除全不在 UI 线程；直读 NTFS 主文件表，几百万文件十秒建索引；两万文件进回收站约 0.25 秒；单 exe 免安装，AGPL-3.0 无遥测。两周破千星，还有视障用户提 issue 推动补无障碍。",
+    "quote": "上下文不用搬了，权限倒要看好。",
+    "published": "2026-11-28",
+    "uid": "be8d58b5-8f7d-5841-880f-a7f003878a77"
+  },
+  {
+    "title": "嫌资源管理器转圈，他用 Rust + GPUI 写了个 Arke",
+    "url": "https://www.v2ex.com/t/1260336",
+    "source": "V2EX Share",
+    "category": "opensource",
+    "lang": "zh",
+    "content": "开发者 dofy 开源 Namo，把飞书/Lark 会话接到自己的工作站：私聊发任务或群里 @ 机器人，它在授权目录内改文件、跑测试、整理结果并回到原会话；本地工作台可查任务与执行证据，执行走官方 Codex 或 Claude Code CLI，状态存本地。已发 npm 包，需 Node 24.15+，后台服务目前只完善 macOS。作者提醒：成员共享授权目录，别当多租户隔离用。",
+    "quote": "Windows 自带的那位，该退休了。",
+    "published": "2026-11-28",
+    "uid": "8483eaae-2f7e-51d4-90d8-7ff89263d702"
+  },
+  {
+    "title": "Casdoor：Keycloak/Auth0/Okta 能迁了，Agent 用 MCP 管身份",
+    "url": "https://www.v2ex.com/t/1260446",
+    "source": "V2EX Share",
+    "category": "opensource",
+    "lang": "zh",
+    "content": "开源 IAM/SSO 项目 Casdoor（Go + React，Apache 2.0，1.49 万 star，今年 2 月进 CNCF 全景图）发布月度更新：支持从 Keycloak、Auth0、Okta 迁入；AI Agent 可通过 MCP 管理；登录流程做成免代码配置。对想摆脱商业 IdP 定价、又得给 agent 发身份的团队，这三项正好戳中迁移与自动化的痛点。",
+    "quote": "身份这件事，终于轮到 agent 领工牌。",
+    "published": "2026-11-28",
+    "uid": "3873da9a-fd98-5493-bf2b-c918a3bfb22a"
+  },
+  {
+    "title": "AWS NAT 网关每月白烧 200 美元？30 秒审计法",
+    "url": "https://dev.to/haseeb0505/why-your-aws-nat-gateway-bill-is-200mo-higher-than-it-should-be-and-how-to-audit-it-in-30s-3lgd",
+    "source": "Dev.to",
+    "category": "cloud",
+    "lang": "en",
+    "content": "文章拆解 NAT Gateway 两个收费陷阱：一是闲置基线税，每 AZ 每小时 0.045 美元，三 AZ 一年约 1170 美元，五个开发/预发 VPC 每月白扔约 486 美元；二是数据处理费按 GB 计，跨 AZ 与出公网都烧钱。30 秒审计法是查 CloudWatch 的 BytesOutToDestination 与网关数量，非生产环境改单 AZ 或换 VPC Endpoint。",
+    "quote": "云账单不会骗人，只会悄悄加零。",
+    "published": "2026-11-28",
+    "uid": "b73d420d-321d-54a6-b2fc-cf19543b2b8f"
+  },
+  {
+    "title": "WordPress 冒出 w2s_ 管理员？你已被 wp2shell 拿下",
+    "url": "https://dev.to/kevinlearynet/found-w2s-admin-users-in-wordpress-your-site-was-hit-by-wp2shell-5bgh",
+    "source": "Dev.to",
+    "category": "security",
+    "lang": "en",
+    "content": "如果 WordPress 里冒出 w2s_ 开头或 wp2shell.local 邮箱的管理员账号，说明站点已被 wp2shell 脚本攻陷。这是 WordPress 核心的未授权 RCE 链，默认安装即可中招、无需插件，组合了 REST API 批量端点 /wp-json/batch/v1 的路由混淆漏洞（CVE-2026-63030）。别只删账号——漏洞可能仍开着，密码哈希可能已泄露。",
+    "quote": "删掉管理员账号，不等于把门关上。",
+    "published": "2026-11-28",
+    "uid": "32fbed06-3f35-5e72-bda6-0f564138c16c"
+  },
+  {
+    "title": "Stagehand：让 Agent 用自然语言点按钮的浏览器框架",
+    "url": "https://www.cnblogs.com/jinjiangongzuoshi/p/23798330",
+    "source": "博客园 Cnblogs",
+    "category": "ai-agent",
+    "lang": "zh",
+    "content": "Browserbase 出品的 Stagehand，MIT 协议，2024 年 3 月开源，两年半 2.6 万 star，同仓库维护 TS/Python/Go 三套 SDK。核心是 act/observe/extract：act 用自然语言点击输入，改版后自动重定位；observe 只返回可交互选择器，密码不进上下文；extract 按 zod schema 抽数据。支持持久化登录态与确定性回放。",
+    "quote": "选择器天天过期，人话永远不过期。",
+    "published": "2026-11-28",
+    "uid": "17efb159-944f-565a-b736-41efa015336f"
+  },
+  {
+    "title": "缓存命中率 99.96%：启智机器人 JuiceFS 生产实践",
+    "url": "https://www.cnblogs.com/JuiceData/p/23800843",
+    "source": "博客园 Cnblogs",
+    "category": "infra",
+    "lang": "zh",
+    "content": "启智机器人「大衍」具身智能平台用 JuiceFS 统一采集端与训练端：边缘走 S3 Gateway 上传，K8s 容器经 CSI 以 POSIX 读写；Redis 存元数据、MinIO 存对象、GPFS 承载热点缓存。主卷 inode 约 8063 万，日均回传 10TB。视频拆帧产生海量小文件（估算可达 3.6 亿），治理后文件数减少 99.92%，缓存命中率中位数 99.96%。",
+    "quote": "缓存不命中的时候，锅总在别人身上。",
+    "published": "2026-11-28",
+    "uid": "f2b5be5f-0615-5f64-9da5-63f89fb1b9a7"
+  },
+  {
+    "title": "全备都在，WAL 断了：一次没变成事故的恢复失败",
+    "url": "https://www.cnblogs.com/xiaoman618/p/23799760",
+    "source": "博客园 Cnblogs",
+    "category": "database",
+    "lang": "zh",
+    "content": "PostgreSQL 16 环境，每周日 02:00 全备保留 30 天，WAL 归档只留 7 天。审计要 11 月 7 日 18:00 的状态，而提问已是 11 月 26 日，目标时刻在 19 天前。作者恢复 11 月 1 日全备并按 recovery_target_time 往前滚，日志走到 consistent recovery state 后停住，第二次才确认：全备齐全，断的是 WAL。",
+    "quote": "备份策略写得漂亮，恢复点才见真章。",
+    "published": "2026-11-28",
+    "uid": "0a849bd5-a07f-5667-ab27-b62e3bb27e8e"
+  },
+  {
+    "title": "cursor/plugins 冲上 Trending：Cursor 开始定插件标准",
+    "url": "https://github.com/cursor/plugins",
+    "source": "GitHub Trending Daily",
+    "category": "tooling",
+    "lang": "en",
+    "content": "Cursor 官方开源 cursor/plugins，定位「插件规范 + 官方插件集」，一天内 19.9k star、2.2k fork，854 次提交，Issue 147、PR 562。仓库里有 .claude-plugin 目录，说明它在兼容 Claude 的插件形态，同时给自家编辑器立规矩。对写 agent 工具链的人，这是一份现成的插件接口参考；对生态来说，编辑器厂商开始抢标准话语权。",
+    "quote": "插件标准谁定下来，生态就归谁。",
+    "published": "2026-11-28",
+    "uid": "5315c4e5-0512-5ccd-9532-fb90603e14bb"
+  }
+]
