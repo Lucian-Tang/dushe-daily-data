@@ -1,0 +1,200 @@
+[
+  {
+    "title": "GPT-6.2 Astra 用 22 分钟破了桩历史悬案",
+    "content": "历史学者 Mark Humphries 测试未发布的 GPT-6.2 Astra：只给极少提示，模型在 22 分钟内自主翻查公开一手与二手资料，认出了耶鲁 Beinecke 图书馆藏、1808 年匿名速写本的作者。它还先提出假设，再预测某份档案能验证，最后真的找到了关键证据。作者认为这说明数学之外的「非确定性研究」也开始被 AI 接管，且人类很难复现这条路径。",
+    "quote": "22 分钟，干完历史学家好几年的活",
+    "source": "Hacker News",
+    "url": "https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
+    "published": "2026-11-28",
+    "uid": "dd7c54147d139889f4b9b00239e73e96"
+  },
+  {
+    "title": "Google 要求 AI agent 走 Workspace MCP，但 Gmail 不许发信",
+    "content": "Google 11 月 24 日把 8 个 Workspace MCP 服务器转为正式可用，并修改 API 条款：2027 年 2 月 1 日起，任何「AI agent 驱动」的工具访问 Gmail、Drive、Calendar 都必须走 MCP，直连 REST 按标准配额限速。Gmail MCP 只能搜信、读线程、建草稿、打标签，发信、回复、转发和改草稿都要「合作伙伴权限」，普通开发者拿不到。",
+    "quote": "让你走正门，转头就把正门焊死了",
+    "source": "Hacker News",
+    "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+    "published": "2026-11-28",
+    "uid": "07d505616756f530c1b0f79dda280e22"
+  },
+  {
+    "title": "「AI 治愈了多少种疾病」：账本上还是 0",
+    "content": "一个叫「AI 治愈了多少种疾病」的公开账本上线：截至 2026 年 11 月 27 日，答案是 0。页面写明统计口径——AI 找到靶点和分子、监管正式批准、患者被治愈，三条全满足才算 1；读片、预测蛋白、进临床都不算。ChatGPT 发布至今 1452 天，AI 药物发现市场到 2025 年已有 69.3 亿美元，117 个 AI 相关候选药进过人体试验，仅 1 个到 III 期。",
+    "quote": "一千四百多天过去，记分牌还是零",
+    "source": "Hacker News",
+    "url": "https://diseasescuredbyai.com/",
+    "published": "2026-11-28",
+    "uid": "843ec2fe9b2e0ad71bbadc282bd416cf"
+  },
+  {
+    "title": "AI 让自托管重新变得好玩：连 NixOS 都敢碰了",
+    "content": "博主 Jan-Lukas Else 写了篇「AI 让自托管重新好玩了」：他多年把 Docker Compose、脚本和配置放在 Git 里，如今直接让编码 agent 改基础设施，尝试新服务的摩擦骤降。以前嫌麻烦拖着不做的改动，现在临时起意就能落地；连一直不敢深用的 NixOS，也靠 AI 铺到了家庭服务器上，还基于 Debian 自建了 bootc 镜像。",
+    "quote": "AI 一上手，折腾基建又上头了",
+    "source": "Hacker News",
+    "url": "https://janlukas.blog/posts/ai-self-hosting",
+    "published": "2026-11-28",
+    "uid": "2a9ec6388916c04e528c60f8e2abc52e"
+  },
+  {
+    "title": "AMD 专用 llama.cpp 分支：生成 35→55 tok/s",
+    "content": "实测 AMD 专用 llama.cpp 分支 llama-cpp-rdna-boosts：只对固定 commit 打一小撮补丁，把 token 生成从 35 提到 55 tok/s，prefill 从 700 涨到 1300 tok/s。顺带吐槽今年冒出的 Strata、Basalt 等「氛围编程」推理引擎：为刷速度，有的优先调度显存里的专家，哪怕本该选内存或磁盘里的专家，等于偷改模型行为。",
+    "quote": "提速度可以，但别偷偷改模型脑子",
+    "source": "Hacker News",
+    "url": "https://devnull.land/amd-specific-llama-cpp",
+    "published": "2026-11-28",
+    "uid": "4a8fb8096bbaed99607e81e58780764e"
+  },
+  {
+    "title": "V2EX 吵翻：其他模型够用了，何必折腾 Claude",
+    "content": "V2EX 热帖「其他模型真的好用，我又何必折腾 Claude」吵了 100 多层：楼主试过 ChatGPT、Gemini、DeepSeek、Kimi，最后觉得 Claude 做科研更省心，贵和封号都认了。反对派回怼「什么任务非 Claude 不可」，还点名 Gemini 4 Neon 已经追平甚至反超；中间派认为模型各有长短，真正的差距是会不会和 AI 协作。帖子 14 小时近 8000 浏览。",
+    "quote": "吵到最后，吵的是你会不会用 AI",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1260233",
+    "published": "2026-11-28",
+    "uid": "c21edf063c80c6d904b65dcb92d43b61"
+  },
+  {
+    "title": "V2EX 热帖：从 Codex 弃坑转 Antigravity 值不值",
+    "content": "热帖在问「有人从 Codex 弃坑转到 Antigravity 吗」，楼主嫌 GPT-6.2 Astra 的前端能力和防御话术，听说 Gemini 4 Neon 能平替 Opus 5.5。回帖一边倒：有人说 Codex 只讲现象不说人话，Antigravity 能指出某个设置导致问题；有人提醒 Google 三方 OAuth 最严、额度按家庭组共享，别急。14 小时 96 回复、9000 浏览。",
+    "quote": "不是模型变强，是话终于说人话了",
+    "source": "V2EX",
+    "url": "https://www.v2ex.com/t/1260241",
+    "published": "2026-11-28",
+    "uid": "ba3ed879b43aca9539b7b7864ee0007c"
+  },
+  {
+    "title": "给编码 agent 装一套「先想清楚再动手」的流程",
+    "content": "obra/superpowers 把软件工程方法论做成可组合的技能包：agent 一上来不写代码，先追问你到底要什么，把需求拆成能读完的规格，你签字后才出实施计划，再派子 agent 逐项开发、自查、复审。它强调红绿 TDD、YAGNI、DRY，兼容 Claude Code、Codex、Cursor、Gemini CLI 等十多个宿主，今天涨 916 星。",
+    "quote": "先别急着写代码，先学会问对问题",
+    "source": "GitHub Trending",
+    "url": "https://github.com/obra/superpowers",
+    "published": "2026-11-28",
+    "uid": "32d0f4c6fda8230b4164f6bb108bd622"
+  },
+  {
+    "title": "Firecrawl 本地版：一个二进制把网站变成 agent 的口粮",
+    "content": "Firecrawl 开源本地版：单个 Rust 二进制就能爬站、抓取、遍历站点，把网页转成干净 Markdown，并以 MCP server 形式接进 agent，API 只跑在 localhost，不用数据库和容器。需要搜索或更多数据源时再接云端 Alexandria，官方称覆盖 550+ 数据提供方；也可用 apps/api 完整自托管。今天 833 星。",
+    "quote": "爬虫的尽头，是给 agent 当食堂",
+    "source": "GitHub Trending",
+    "url": "https://github.com/firecrawl/firecrawl",
+    "published": "2026-11-28",
+    "uid": "c3460fc15b30fcb9950196a7e9504d2a"
+  },
+  {
+    "title": "Chrome、Edge、Firefox 一起教 agent 写现代网页",
+    "content": "Chrome、Edge、Firefox 与 MDN 团队共同维护的 Modern Web Guidance，把网页平台知识、最佳实践和兼容性数据做成技能装进编码 agent。官方吐槽模型训练数据里全是老代码，动不动写一堆 JS 去实现早就有原生解法的功能；这套技能提供检索式指南、实测过的现代写法，还能扫描代码里的遗留模式，Node 22 起一条 npx 命令安装。",
+    "quote": "训练数据全是老代码，agent 只会写祖传 JS",
+    "source": "GitHub Trending",
+    "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+    "published": "2026-11-28",
+    "uid": "9f542d1ee4ca611f5867e85de9a69007"
+  },
+  {
+    "title": "给编码 agent 配个本地剪辑师：42 个 FFmpeg 工具",
+    "content": "ffmpeg-skill 把本地 FFmpeg 包成 42 个工具和 MCP server，让 Claude Code、Cursor、Codex 直接剪片：加字幕、卡拉 OK 动画、改画幅、去静音、调响度、稳定画面、抠绿幕，还能生成一页本地 review 页面让 agent 自查输出。全程不上云、不要 API key，只用 Python 标准库，本周涨 3229 星。",
+    "quote": "剪辑不用上云，agent 自己看片验收",
+    "source": "GitHub Trending",
+    "url": "https://github.com/kajisho5/ffmpeg-skill",
+    "published": "2026-11-28",
+    "uid": "33775d83f1ea758b926afc078a6eea21"
+  },
+  {
+    "title": "多 agent 干活，缺的是一张能批注的桌子",
+    "content": "Plannotator 是本地浏览器里的评审台：agent 提出方案、规格、HTML 原型或改完代码后，页面自动弹出，你可以圈画、批注、改 diff，再把反馈直接送回 agent。支持 Claude Code、Codex、Copilot CLI、Gemini CLI 等编码 agent，也能接 Grok Bot、Muse、OpenClaw 这类个人助手，本周 1631 星。",
+    "quote": "agent 会干活，但得有人画红圈",
+    "source": "GitHub Trending",
+    "url": "https://github.com/backnotprop/plannotator",
+    "published": "2026-11-28",
+    "uid": "4f862f2c8f903bdcdbd839dc3e9d5a36"
+  },
+  {
+    "title": "Ling-3.2-air：124B 总参、5.5B 激活，主攻办公自动化",
+    "content": "蚂蚁 inclusionAI 开源 Ling-3.2-air：混合线性 MoE，总参 124B、激活 5.5B。官方称办公自动化大涨：AutomationBench-AA 从 15.7% 到 61%，GDP.pdf 全通过率 8.4% 到 16%，AA-Briefcase Elo 涨 353 分，Terminal-Bench 4.0 从 0 到 27%，AA 智能指数 23。",
+    "quote": "参数堆到 124B，只为把表格填对",
+    "source": "Hugging Face Models",
+    "url": "https://huggingface.co/inclusionAI/Ling-3.2-air",
+    "published": "2026-11-28",
+    "uid": "c861fbf03eb3c4145f6bb9aeed43d417"
+  },
+  {
+    "title": "6B 设计模型：出图还附赠可编辑图层",
+    "content": "蚂蚁开源 Ming-Image-0.2-Design：6B DiT 文生图模型，专攻电商主图、UI 设计稿和空间渲染，重点补复杂构图、光影和文字渲染。它能把设计图拆成透明图层，这一代连人物部件都能分开，方便下游改图和做动画；还能配合 Ling-3.2-flash 把设计稿变成可交互网页。",
+    "quote": "只会出图不够，得把图层也交出来",
+    "source": "Hugging Face Models",
+    "url": "https://huggingface.co/inclusionAI/Ming-Image-0.2-Design",
+    "published": "2026-11-28",
+    "uid": "bf34e88ee2998bec26ad036db80fc140"
+  },
+  {
+    "title": "德国版高效推理 MoE：0.21 GPU 小时跑一千题",
+    "content": "Aleph Alpha 发布 Kolibri-1.1：面向德英双语的 MoE 推理模型，加入稀疏注意力压低长上下文成本，支持显式推理模式和工具调用。官方给出的性价比曲线里，它以 73.2% 得分、每千题 0.21 GPU 小时站在帕累托前沿，和 Qwen3.8 Flash Next 同档，权重以 Apache 2.0 开放。",
+    "quote": "不比谁更聪明，就比谁更省电省卡",
+    "source": "Hugging Face Models",
+    "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1.1",
+    "published": "2026-11-28",
+    "uid": "3e8f14560e159c95a25a9565b08c10da"
+  },
+  {
+    "title": "KVAE-3.0：用潜空间对齐重做音视频分词器",
+    "content": "Kandinsky Lab 开源 KVAE-3.0：用潜空间对齐训练音频、图像、视频三套 VAE。KVAE-Audio-Stereo 为 48kHz 立体声、50Hz 潜变量，对比 Stable Audio 3 与 LTX-2.5 胜率超 70%；图像版潜空间对齐 FLUX.2-VAE，重建 PSNR/SSIM 更高，编解码器共 85.6M 参数；3D 版空间压 32 倍、时间压 4 倍。",
+    "quote": "先对齐潜空间特征，再谈生成质量",
+    "source": "Hugging Face Blog",
+    "url": "https://huggingface.co/blog/kandinskylab/kvae-3",
+    "published": "2026-11-28",
+    "uid": "260f712439fe0af9c49d739c10c159bd"
+  },
+  {
+    "title": "ModernELECTRA：小模型也能兼顾分类和向量",
+    "content": "Knowledgator 提出 ModernELECTRA 预训练配方：保留 ELECTRA 的替换词检测，再加一个边界窗口重建小任务，让同一个编码器既能做分类，也能当 embedding 主干。首批 EdgeCoder-31M（英文）与 EdgeCoder-Multilingual-61M（46 种语言）各训约一万亿 token，支持 8192 上下文，主打边缘端低成本部署。",
+    "quote": "小模型不丢人，能分类能检索才香",
+    "source": "Hugging Face Blog",
+    "url": "https://huggingface.co/blog/knowledgator/modernelectra",
+    "published": "2026-11-28",
+    "uid": "8f9391386e74e2284308a8e1536b8a44"
+  },
+  {
+    "title": "IBM 的印度农事语音 agent：难的不是声音",
+    "content": "IBM Research 用 CUGA 搭了个印度农事语音助手：农民用印地语、泰米尔语等方言直接问「怎么分辨好种子」，agent 听完转文字、检索资料再回答。文章说最难的不是 TTS 好不好听，而是把语音、检索、工具调用和安全性串成可靠流程，还得让不会打字的用户敢用、用得对。",
+    "quote": "语音只是门面，靠谱的是后面那条链",
+    "source": "Hugging Face Blog",
+    "url": "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga",
+    "published": "2026-11-28",
+    "uid": "d36e4c63941cfd2fe8e5abbb324fc81d"
+  },
+  {
+    "title": "Ai2：科学家给 AI agent 划的线在哪",
+    "content": "Ai2 发文谈科研场景里 AI agent 的边界：把文献综述、数据分析、实验协议交给 agent，不等于科学家可以甩手。研究者仍要检查它是否漏掉相反证据、用了哪些方法和文件、结果能否复现，还要确保温度、毒性、受试者隐私等安全约束被遵守，并有机构层面的核验与披露规范。",
+    "quote": "能替你跑腿干活，但锅还是得自己背",
+    "source": "Hugging Face Blog",
+    "url": "https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents",
+    "published": "2026-11-28",
+    "uid": "9959aac2fd33f094d727044215144fa1"
+  },
+  {
+    "title": "Gated DeltaNet-2：长上下文训练为什么会炸状态",
+    "content": "线性注意力用固定大小的循环状态换长上下文效率，但 Gated DeltaNet-2 在长上下文训练时会崩。论文把病根归到「擦除」时读写方向不对称：非正规的擦除算子会让方向增益随 token 累积，即使没有新写入，状态也会指数级膨胀。作者提出对称擦除加衰减约束的残差写入，给出 O(T) 状态增长上界，同时保留分块并行；1.6B 模型上 128K RULER 平均分提升 6.8。",
+    "quote": "状态炸了不是玄学，是方向没对称",
+    "source": "HuggingFace Papers",
+    "url": "https://huggingface.co/papers/2611.34051",
+    "published": "2026-11-28",
+    "uid": "899ac00e1e7517db6dacf097949d6511"
+  },
+  {
+    "title": "OS-Omni：让 agent 跨六个系统办完整件事",
+    "content": "现有电脑操作 agent 基准多只测网页、手机或桌面单一环境，OS-Omni 则把 Windows、Ubuntu、macOS、iOS、Android 和 Web 放进同一套长流程任务：首版每平台 48 个任务，另有 12 条「桌面+安卓」跨端工作流，带可复现初始化、轨迹日志和最终状态校验。人类完成一个任务平均要 67.54 步，远高于 OSWorld 的 15 步，最强 agent 通过率仍很低。",
+    "quote": "跨六个系统办事，agent 还早得很",
+    "source": "HuggingFace Papers",
+    "url": "https://huggingface.co/papers/2611.34232",
+    "published": "2026-11-28",
+    "uid": "f252ac3b60b40445795e4b91f753ea61"
+  },
+  {
+    "title": "VibeVideoAgent：让编码 agent 边做视频边看片",
+    "content": "代码驱动视频生成让编码 agent 写渲染程序，但程序能跑通不代表画面能看：文字重叠、镜头偏题、音画不同步都不会报错。VibeVideoAgent 的做法是让 agent 在制作过程中反复「看片」——多模态感知在短上下文里给出紧凑发现，七个原语在统一多时钟表示上做粗到细检查，先拿最小预览验证最高风险决策。239 个任务上，Claude Opus 5.5 的整体音画质量从 4.03 提到 4.43。",
+    "quote": "代码没报错，画面其实已经翻车了",
+    "source": "HuggingFace Papers",
+    "url": "https://huggingface.co/papers/2611.34237",
+    "published": "2026-11-28",
+    "uid": "cba52bf3df430e8cd9c248297ca939e4"
+  }
+]
